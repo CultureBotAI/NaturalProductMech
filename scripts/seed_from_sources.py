@@ -267,6 +267,7 @@ INTERNAL_PREFIX = "_"
 CURATOR_OWNED_CARRIED_FIELDS = (
     "biosynthetic_pathway",
     "causal_graphs",
+    "causal_graph_refs",
 )
 
 #: Slots on a Discussion that belong to whoever worked it, not to the seeder.

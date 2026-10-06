@@ -40,6 +40,8 @@ import yaml
 REPO_ROOT = Path(__file__).resolve().parents[1]
 CORPUS_DIR = REPO_ROOT / "data" / "natural_products"
 PATHS_FILE = CORPUS_DIR / "PATHS.tsv"
+sys.path.insert(0, str(REPO_ROOT / "src"))
+from naturalproductmech.graph_components import audit_graph_components  # noqa: E402
 
 
 def read_lockfile() -> list[dict[str, str]]:
@@ -53,6 +55,7 @@ def main() -> int:
     args = parser.parse_args()
 
     rows = read_lockfile()
+    audit_graph_components(CORPUS_DIR)
     on_disk = sorted(p for p in CORPUS_DIR.rglob("*.yaml"))
 
     problems: list[str] = []

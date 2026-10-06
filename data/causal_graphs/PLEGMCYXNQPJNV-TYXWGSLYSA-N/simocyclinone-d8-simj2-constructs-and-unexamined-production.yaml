@@ -1,0 +1,255 @@
+record_id: naturalproductmech:mibig-e03313fa44
+standard_inchi_key: PLEGMCYXNQPJNV-TYXWGSLYSA-N
+graph:
+  graph_id: simocyclinone-d8-simj2-constructs-and-unexamined-production
+  scope: BIOSYNTHESIS
+  description: 'Native SimJ2/SimD4 Q9F5I9 and genetically targeted constructs from
+    the Galm 2003 and Schafer 2016 primary theses (review #546). Historical SimC6
+    maps this protein by literal primers, not by the current GenBank gene name alone.
+    The Galm single-crossover clones were genotyped, but their metabolite production
+    was explicitly not examined. Reported deletion/frame and fragment sizes remain
+    separate from native and literal-primer reconstructions. The later PAC construct
+    is a source-listed resource, not a measured catalytic or production outcome. No
+    purified SimJ2 reaction, functional-null allele or established modular-PKS tetraene
+    role is asserted. Existing simD4-region DNA assays and promoter reporters are
+    preserved without promotion to protein activity. Galm PDF page numbers exceed
+    printed pages by four; Schafer numbers coincide.'
+  nodes:
+  - node_id: gene
+    label: Native simJ2 locus, also named simD4
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: simj2
+    label: Native SimJ2 (SimD4; historical SimC6) protein
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F5I9
+  - node_id: pug014
+    label: pUG014 source-reported internal simJ2-deletion construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pug015
+    label: pUG015 apramycin-selectable simJ2 targeting construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: sc_clones
+    label: Source-listed S. antibioticus simJ2 single-crossover clone set
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: wildtype
+    label: S. antibioticus Tu6040 wild-type Southern comparator
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: southern
+    label: Reported EcoRV/PvuII Southern genotyping profiles
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: probe
+    label: S-simJ2 DIG-labelled downstream DNA probe
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pac_parent
+    label: PAC-12I sim-cluster parent construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pac_delta
+    label: Source-listed PAC-12I-deltaC6 construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: gene
+    predicate: encodes_native_protein
+    object: simj2
+    notes: 'Three 741-nt CDSs including stop translate exactly to the 246-aa native
+      Q9F5I9 sequence using CDS-aware table 11: AAL15605.1 at AF322256.1:25806..26546(+),
+      AAG34189.1 at AF321122.1:9018..9758(+) and AAK06809.1 at AF324838.2:70601..71341(+).
+      The first two deposits call the gene simJ2; the third calls it simD4. All identify
+      S. antibioticus Tu6040/Tue6040, taxon 1890. This native protein is distinct
+      from 273-aa SimJ1 and the 487-aa AEU17894.1 putative halogenase currently named
+      simC6 in AF324838.2. It does not identify either engineered allele. Database
+      oxidoreductase annotations do not constitute purified native activity measurements.'
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native simJ2/AAL15605.1 CDS and strain.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF321122.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native simJ2/AAG34189.1 CDS and strain.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Native simD4/AAK06809.1 and distinct simC6/AEU17894.1 CDSs.
+    - reference: https://www.uniprot.org/uniprotkb/Q9F5I9
+      evidence_type: DATABASE_ASSERTION
+      notes: Q9F5I9, unreviewed, taxon 1890, entry 88, sequence 1, annotation 2026-09-02;
+        retrieved 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS-aware/deposited/UniProt sequence agreement.
+  - subject: pug014
+    predicate: was_designed_for_internal_deletion_of
+    object: gene
+    notes: The source describes pUG010 then pUG014 assembly in pBSKT from cosmid VII-8g
+      upstream XbaI/EcoRI and downstream EcoRI/HindIII PCR fragments, and calls the
+      resulting deletion 639 bp and in frame. Literal primers are P01f CAGACGATCTAGATCGACGG,
+      P01r CCACATCGAATTCCTCGCGA, P02f TCGACGGCGGAATTCCGATCTGAC and P02r CTCCTCGCCAAGCTTGATGATCTG.
+      Their printed coordinates reproduce the reported 1379/1409-nt amplicons, but
+      EcoRI fusion gives a 640-nt net deletion and a 101-nt residual coding span,
+      which is not divisible by three. This is an unresolved source-versus-primer-model
+      discrepancy, not proof of the actual allele or its expression. No primer is
+      silently repaired and no residual protein is assigned.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 14/15 and section 7.5.2, Galm PDF pp.40-41,50-51.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer EcoRI cut positions 25894 and 26534 in the native coordinate
+        system; reconstructed allele only.
+  - subject: pug015
+    predicate: derives_targeting_insert_from
+    object: pug014
+    notes: The reported approximately 2.8-kb XbaI/HindIII insert was transferred from
+      pUG014 to the apramycin-selectable suicide vector pKC1132. Table 14 lists pUG014
+      at 7.2 kb and pUG015 at 6.3 kb. These are source-reported sizes, not independently
+      sequenced full plasmids or evidence that the actual deletion resolves the 639/640-nt
+      conflict.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 14 and sections 7.5.2/1.4.1, Galm PDF pp.40,51,85.
+  - subject: sc_clones
+    predicate: were_generated_with
+    object: pug015
+    notes: PEG-mediated protoplast transformation of native S. antibioticus Tu6040
+      and apramycin selection yielded the three examined clones. Table 16 lists UG
+      J2-7, UG J2-8 and UG J2-10 as pUG015-containing simJ2 single-crossover mutants.
+      The results describe three clones collectively, without pictured individual
+      Southern lanes or clone-specific production measurements. The pUG014/thiostrepton
+      route instead gave many spontaneous-resistant colonies, so resistance alone
+      is not equated with targeted integration. These are not three production-assay
+      replicates.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 16 and sections 1.4.1/follow-up genotyping, Galm PDF pp.42,85-86.
+  - subject: sc_clones
+    predicate: have_reported_genotyping_readout
+    object: southern
+    notes: After EcoRV/PvuII digestion and S-simJ2 hybridization, all three examined
+      clones reportedly had both the 1.9-kb WT-associated and 1.2-kb construct-associated
+      bands. The Southern is explicitly not pictured. These source-assigned single
+      crossovers are not clean double-crossover replacements or proof of protein abundance,
+      intact-copy expression or complete junction sequences. Their secondary-metabolite
+      production was explicitly not examined. No D8 loss, retained production, dispensability
+      or catalytic rate is inferred. The thesis stopped this follow-up based on its
+      separate SimJ1 observations; those do not supply a SimJ2-mutant outcome.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Galm PDF p.86: unpictured Southern and explicit unexamined production.'
+      snippet: Die Sekundärstoffproduktion der Single Crossover-Mutanten wurde nicht
+        untersucht.
+  - subject: wildtype
+    predicate: provides_genomic_DNA_control_for
+    object: southern
+    notes: The source reports only a 1.9-kb hybridizing band for WT genomic DNA. Native
+      AF322256.1 has a probe-containing EcoRV/PvuII interval of 1826 bp, between cut
+      positions 25791 and 27617. The source band label and native reconstruction remain
+      separately attributed; no unshown gel is remeasured or assigned greater precision.
+      This control concerns genotyping, not a simultaneous product titer.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: WT comparator in the Southern description, Galm PDF p.86.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Native probe-containing restriction interval.
+  - subject: pug015
+    predicate: provides_plasmid_DNA_control_for
+    object: southern
+    notes: The source reports only a 1.2-kb hybridizing band for pUG015 DNA. The literal-primer
+      deletion model yields a 1186-bp EcoRV/PvuII interval, consistent with that coarse
+      label. This does not verify the complete experimental plasmid or make the source-reported
+      in-frame allele consistent with the printed primers.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Plasmid-DNA comparator, Galm PDF p.86.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Primer-derived deletion-fragment model, not sequenced sample.
+  - subject: probe
+    predicate: was_generated_from
+    object: pug014
+    notes: Methods describe a 1.1-kb EcoRI/PvuII fragment from pUG014, gel isolation
+      and DIG labelling. The introduced EcoRI cut maps to 26534 in the primer-derived
+      model; the downstream native PvuII cut is 27617, giving 1083 bp. This supports
+      the reported approximate probe size, not a deposited sequence of the experimental
+      probe.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 7.9.1, Galm PDF p.58.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer/native restriction reconstruction.
+  - subject: probe
+    predicate: was_used_in
+    object: southern
+    notes: S-simJ2 hybridization is the locus-probing readout for the three selected
+      clones and the WT/plasmid controls. Band presence is not a measurement of SimJ2
+      RNA, protein or biosynthetic catalytic function.
+    evidence:
+    - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 7.9 and 1.4.1, Galm PDF pp.58,86.
+  - subject: pac_delta
+    predicate: is_listed_as_derivative_of
+    object: pac_parent
+    notes: The Schafer vector table lists PAC-12I-deltaC6 as an in-frame simC6 deletion
+      and attributes it to T. Le and O. Shorinola, unpublished. This is a later cluster
+      construct, not one of the Galm native single-crossover clones. The inspected
+      listing and primer tables do not supply a SimC6-specific production or activity
+      outcome. Separate SimC7 experiments and historical pathway drawings are not
+      substituted for such an outcome.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Vector table, Schafer thesis PDF p.52; context on pp.36,121.
+  - subject: pac_delta
+    predicate: targets_same_native_locus
+    object: gene
+    notes: 'The later del_simC6-F and del_simC6-R native arms are ggatcgaccgggaatgacgatatccggagttgcgtgatg
+      and tgaacaggtcggcccgcggcaggccgggtcagaccgtca. Both 39-nt arms match AF324838.2
+      exactly and uniquely: 70565..70603(+) and 71339..71377(-), retaining native
+      start/stop boundaries around AAK06809.1/simD4. The appended cassette tails are
+      ATTCCGGGGATCCGTCGACC and TGTAGGCTGGAGCTGCTTC. The 24-nt check primers caggcctgtccactggaaccttgc
+      and gagggacgccgacctcgtgaagcg map 70446..70469(+) and 71471..71494(-). Thus this
+      historical SimC6 denotes SimJ2/SimD4, not AEU17894.1. These mappings identify
+      the intended target; the complete experimental cassette, scar and expressed
+      allele are not independently sequenced.'
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Literal checking and deletion primers, Schafer PDF pp.58,60.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Unique native primer-arm mappings and CDS identity.
+curation_history:
+- timestamp: '2026-10-04T14:38:10Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added ten nodes and eleven stable-URL-cited edges, with one eight-word
+    exact primary snippet. Three native CDS translations and eight literal primers
+    establish identity and intended loci. Source versus reconstructed deletion/frame
+    and Southern sizes remain explicit; no production phenotype or catalytic activity
+    is invented from genotyping, unshown bands or an unpublished construct listing.
+  llm_assisted: true
+- timestamp: '2026-10-04T15:25:44Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Corrected the unnamed-clone claim using Galm Table 16: UG J2-7, UG J2-8
+    and UG J2-10 are source-listed pUG015 simJ2 single crossovers (review #547). Retained
+    graph IDs/topology, unpictured Southern limitations, explicitly unexamined production
+    and all prior evidence/history.'
+  llm_assisted: true

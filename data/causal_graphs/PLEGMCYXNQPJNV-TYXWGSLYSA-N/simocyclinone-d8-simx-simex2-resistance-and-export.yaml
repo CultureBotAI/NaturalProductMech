@@ -1,0 +1,510 @@
+record_id: naturalproductmech:mibig-e03313fa44
+standard_inchi_key: PLEGMCYXNQPJNV-TYXWGSLYSA-N
+graph:
+  graph_id: simocyclinone-d8-simx-simex2-resistance-and-export
+  scope: BIOSYNTHESIS
+  description: 'Producer-cluster SimX/SimEx2 resistance genetics and the proposed
+    SD8 export role. The two deposited SimX variants remain distinct, and the tested
+    residue-126 allele is unresolved. Native simX::apr genetics, heterologous expression,
+    MIC and disk readouts are separate; no direct transport flux or SimEx2 functional-null
+    claim is inferred (review #537). Existing owner stereochemistry and mechanism
+    are unchanged.'
+  nodes:
+  - node_id: simx_tested
+    label: Assayed SimX protein, residue-126 allele unresolved
+    node_type: PROTEIN
+    grounding_status: REVIEW_NEEDED
+  - node_id: simx_a
+    label: Deposited native SimX / SimEx with Ala126
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9AMH8
+  - node_id: simx_g
+    label: Deposited native SimX / Sim17 with Gly126
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q93FA2
+  - node_id: simex2
+    label: Deposited native SimEx2 protein
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:G9VYV7
+  - node_id: simex2_tested
+    label: Intended SimEx2 product of pIJ10481
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: px
+    label: pIJ10480 ermEp*-simX expression construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pex2
+    label: pIJ10481 ermEp*-simEX2 expression construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pnative
+    label: Reported native-promoter simX construct without simR
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: host_x
+    label: S. lividans 1326 carrying pIJ10480
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: host_ex2
+    label: S. lividans 1326 carrying pIJ10481
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: host_native
+    label: S. lividans 1326 carrying native-promoter simX
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: controls
+    label: S. lividans 1326 host-only and pIJ10257 controls
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: mic65
+    label: Reported SD8 MIC of 65 ug/mL
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: mic2
+    label: Reported SD8 MIC of 2 ug/mL
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: mic4
+    label: Reported SD8 MIC of 4 ug/mL
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: sd8
+    label: Source-assigned simocyclinone D8 used in sensitivity assays
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: gene
+    label: simX locus of the assayed native stock
+    node_type: GENE
+    grounding_status: REVIEW_NEEDED
+  - node_id: mutant
+    label: S. antibioticus Tu6040 simX::apr mutant
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: wt
+    label: S. antibioticus Tu6040 wild-type comparator
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: sensitivity
+    label: Increased native-mutant SD8 disk sensitivity
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: export
+    label: Proposed SimX-mediated SD8 export
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: other_drugs
+    label: No reported extra resistance to selected other antibiotics
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: simx_tested
+    predicate: has_candidate_native_sequence
+    object: simx_a
+    notes: This 534-aa deposited SimX has Ala at residue 126. Both deposited candidates
+      fit the expression primers, but their internal CDS nucleotide 377 and protein
+      residue 126 differ. The thesis identifies native Tu6040 and the cloning primers
+      without depositing the assayed expression allele. Do not assign either accession
+      as uniquely identical to the assayed protein, treat them as two demonstrated
+      paralogs, or assume one is a sequencing error. Canonical nodes denote the individual
+      deposited sequences.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.10.1, primer table pp.65-66, results 4.2; assayed allele limitation.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAK06799.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native S. antibioticus simEx, AAK06799.1, AF324838.2:58180..59784(+),
+        534 aa. This is a deposited native sequence, not an independently sequenced
+        assay plasmid.
+    - reference: https://www.uniprot.org/uniprotkb/Q9AMH8
+      evidence_type: DATABASE_ASSERTION
+      notes: Active unreviewed UniProtKB:Q9AMH8, taxon 1890, entry version 87, sequence
+        version 1, inspected 2026-10-04; EMBL AAK06799.1 cross-reference. UniProt
+        annotation is not an independent transport assay.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: CDS-aware table-11 translation, GenPept and UniProt sequences agree exactly.
+        BGC0001072.5 agrees for this native protein. The comparison does not determine
+        the assayed stock or full engineered sequence.
+  - subject: simx_tested
+    predicate: has_candidate_native_sequence
+    object: simx_g
+    notes: This 534-aa deposited SimX has Gly at residue 126. Both deposited candidates
+      fit the expression primers, but their internal CDS nucleotide 377 and protein
+      residue 126 differ. The thesis identifies native Tu6040 and the cloning primers
+      without depositing the assayed expression allele. Do not assign either accession
+      as uniquely identical to the assayed protein, treat them as two demonstrated
+      paralogs, or assume one is a sequencing error. Canonical nodes denote the individual
+      deposited sequences.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.10.1, primer table pp.65-66, results 4.2; assayed allele limitation.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAL15595.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native S. antibioticus sim17, AAL15595.1, AF322256.1:13386..14990(+),
+        534 aa. This is a deposited native sequence, not an independently sequenced
+        assay plasmid.
+    - reference: https://www.uniprot.org/uniprotkb/Q93FA2
+      evidence_type: DATABASE_ASSERTION
+      notes: Active unreviewed UniProtKB:Q93FA2, taxon 1890, entry version 84, sequence
+        version 1, inspected 2026-10-04; EMBL AAL15595.1 cross-reference. UniProt
+        annotation is not an independent transport assay.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: CURATOR_INFERENCE
+      notes: CDS-aware table-11 translation, GenPept and UniProt sequences agree exactly.
+        The comparison does not determine the assayed stock or full engineered sequence.
+  - subject: simx_a
+    predicate: differs_at_one_residue_from
+    object: simx_g
+    notes: 'Direct sequence comparison: Ala126 versus Gly126; coding nucleotide 377
+      C versus G. All other aligned coding nucleotides and protein residues agree.
+      This is a deposited-sequence comparison, not a mutation experiment, an activity
+      comparison or a demonstrated evolutionary event.'
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Pairwise comparison of AF324838.2/AAK06799.1 and AF322256.1/AAL15595.1.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Alternate native sim17 sequence used in the same comparison.
+  - subject: px
+    predicate: is_reported_to_express
+    object: simx_tested
+    notes: simEX1-F-NdeI/simEX1-R-HindIII PCR product was cloned into NdeI/HindIII-cut
+      integrative pIJ10257 under ermEp*, yielding pIJ10480. Literal reconstruction
+      against either native sequence predicts the full 1605-bp CDS (534 aa plus stop),
+      1620 bp including primer tails, without an encoded terminal tag. Matching terminal
+      primers does not resolve Ala/Gly126 or prove the full plasmid sequence, expression
+      level or membrane localization.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.10.1, plasmid/primer tables and results 4.2.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Native-primer reconstruction, not observed plasmid sequencing.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: CURATOR_INFERENCE
+      notes: The same terminal primers also fit the alternate full SimX CDS.
+  - subject: pex2
+    predicate: is_reported_to_express
+    object: simex2_tested
+    notes: simEX2-F-NdeI/simEX2-R-HindIII PCR product was inserted into NdeI/HindIII-cut
+      pIJ10257 under ermEp* as pIJ10481. This denotes the intended expression construct;
+      the resistance experiment does not separately quantify its protein abundance,
+      folding or localization, so a negative phenotype cannot establish a native transport-function
+      null.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.10.1, plasmid/primer tables and results 4.2.
+  - subject: simex2_tested
+    predicate: has_predicted_native_protein_sequence
+    object: simex2
+    notes: Literal primer reconstruction changes native GTG to ATG but preserves the
+      1242-bp coding span including its stop, predicting the same 413-aa CDS-aware
+      translated protein. The 1298-bp tailed amplicon includes sequence beyond the
+      stop; its maximal matching native suffix is 12946..14227, not evidence for a
+      one-base gene truncation. This is a primer-derived intended product, not an
+      independently sequenced whole plasmid or an experimentally verified mature protein.
+      The native Na/H-antiporter annotation is a prediction, not a measured ion-transport
+      mechanism.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: CURATOR_INFERENCE
+      notes: Primer table and methods 2.10.1; native GTG-to-ATG reconstruction.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AEU17895.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native S. antibioticus simEx2, AEU17895.1, AF324838.2:12945..14186(+),
+        413 aa. This is a deposited native sequence, not an independently sequenced
+        assay plasmid.
+    - reference: https://www.uniprot.org/uniprotkb/G9VYV7
+      evidence_type: DATABASE_ASSERTION
+      notes: Active unreviewed UniProtKB:G9VYV7, taxon 1890, entry version 35, sequence
+        version 1, inspected 2026-10-04; EMBL AEU17895.1 cross-reference. UniProt
+        annotation is not an independent transport assay.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: CDS-aware table-11 translation, GenPept and UniProt sequences agree exactly.
+        BGC0001072.5 agrees for this native protein. The comparison does not determine
+        the assayed stock or full engineered sequence.
+  - subject: pnative
+    predicate: is_reported_to_express
+    object: simx_tested
+    notes: The source reports integrative simX under its native promoter with simR
+      absent. No construct identifier or complete insert sequence is established for
+      this paragraph; do not substitute pIJ10480 (ermEp*) or a simXp-luxAB reporter.
+      The result is a heterologous expression phenotype, not native-promoter activity
+      measured in Tu6040.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results 4.2, p.97, native-promoter resistance paragraph.
+  - subject: host_x
+    predicate: carries
+    object: px
+    notes: S. lividans 1326 is the heterologous host, not the native SD8 producer.
+      Transfer of this expression construct does not establish heterologous SD8 biosynthesis.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Strain table, methods 2.10 and results 4.2.
+  - subject: host_ex2
+    predicate: carries
+    object: pex2
+    notes: S. lividans 1326 is the heterologous host, not the native SD8 producer.
+      Transfer of this expression construct does not establish heterologous SD8 biosynthesis.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Strain table, methods 2.10 and results 4.2.
+  - subject: host_native
+    predicate: carries
+    object: pnative
+    notes: S. lividans 1326 is the heterologous host, not the native SD8 producer.
+      Transfer of this expression construct does not establish heterologous SD8 biosynthesis.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Strain table, methods 2.10 and results 4.2.
+  - subject: host_x
+    predicate: has_assay_phenotype
+    object: mic65
+    notes: 'MIC assay: approximately 5e4 spores per well in a 96-well plate, two-fold
+      SD8 dilutions in SMMS, scored daily for five days; endpoint is the lowest concentration
+      without observed growth. DMSO is at most 1% v/v. Methods name medium and subsequently
+      agar, so this is not relabelled broth microdilution. No replicate count or uncertainty
+      is given for these MIC values; they are not ug-per-disk measurements. The ermEp*-simX
+      strain is reported at 65 ug/mL, compared with 2 ug/mL controls.'
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.10.2 and results 4.2, p.97; text-reported MIC.
+      snippet: had an MIC of 65
+  - subject: host_ex2
+    predicate: has_assay_phenotype
+    object: mic2
+    notes: 'MIC assay: approximately 5e4 spores per well in a 96-well plate, two-fold
+      SD8 dilutions in SMMS, scored daily for five days; endpoint is the lowest concentration
+      without observed growth. DMSO is at most 1% v/v. Methods name medium and subsequently
+      agar, so this is not relabelled broth microdilution. No replicate count or uncertainty
+      is given for these MIC values; they are not ug-per-disk measurements. The ermEp*-simEX2
+      strain is reported at 2 ug/mL, matching host-only and empty-vector controls.
+      This is not proof that SimEx2 cannot transport any substrate.'
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.10.2 and results 4.2, p.97; text-reported MIC.
+  - subject: controls
+    predicate: has_assay_phenotype
+    object: mic2
+    notes: 'MIC assay: approximately 5e4 spores per well in a 96-well plate, two-fold
+      SD8 dilutions in SMMS, scored daily for five days; endpoint is the lowest concentration
+      without observed growth. DMSO is at most 1% v/v. Methods name medium and subsequently
+      agar, so this is not relabelled broth microdilution. No replicate count or uncertainty
+      is given for these MIC values; they are not ug-per-disk measurements. Both the
+      host-only strain and the pIJ10257 empty-vector strain are reported at 2 ug/mL.'
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.10.2 and results 4.2, p.97; text-reported MIC.
+  - subject: host_native
+    predicate: has_assay_phenotype
+    object: mic4
+    notes: 'MIC assay: approximately 5e4 spores per well in a 96-well plate, two-fold
+      SD8 dilutions in SMMS, scored daily for five days; endpoint is the lowest concentration
+      without observed growth. DMSO is at most 1% v/v. Methods name medium and subsequently
+      agar, so this is not relabelled broth microdilution. No replicate count or uncertainty
+      is given for these MIC values; they are not ug-per-disk measurements. The source
+      reports 4 ug/mL for native-promoter simX without simR, a modest change rather
+      than the ermEp* result.'
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.10.2 and results 4.2, p.97; text-reported MIC.
+      snippet: only mildly enhanced resistance
+  - subject: mic65
+    predicate: is_measured_against
+    object: sd8
+    notes: The assay compound is source-assigned SD8, distinct from SC4 in Figure
+      4.1. No complete stereochemical identity is reconstructed from the drawing or
+      MIC. The owner remains PLEGMCYXNQPJNV-TYXWGSLYSA-N with unresolved stereocentres;
+      this assay node does not resolve the shared-MIBiG discussion or merge it with
+      a fully specified structural deposition.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.10.2, Figure 4.1 and results 4.2.
+  - subject: mic2
+    predicate: is_measured_against
+    object: sd8
+    notes: The assay compound is source-assigned SD8, distinct from SC4 in Figure
+      4.1. No complete stereochemical identity is reconstructed from the drawing or
+      MIC. The owner remains PLEGMCYXNQPJNV-TYXWGSLYSA-N with unresolved stereocentres;
+      this assay node does not resolve the shared-MIBiG discussion or merge it with
+      a fully specified structural deposition.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.10.2, Figure 4.1 and results 4.2.
+  - subject: mic4
+    predicate: is_measured_against
+    object: sd8
+    notes: The assay compound is source-assigned SD8, distinct from SC4 in Figure
+      4.1. No complete stereochemical identity is reconstructed from the drawing or
+      MIC. The owner remains PLEGMCYXNQPJNV-TYXWGSLYSA-N with unresolved stereocentres;
+      this assay node does not resolve the shared-MIBiG discussion or merge it with
+      a fully specified structural deposition.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.10.2, Figure 4.1 and results 4.2.
+  - subject: controls
+    predicate: provides_controls_for
+    object: mic65
+    notes: 'Host-only and empty-vector MIC values provide the comparison for the ermEp*-simX
+      result. Figure 4.2 separately displays empty vector, ermEp*-simX and ermEp*-simEX2
+      disk assays: approximately 5e4 spores on R2 agar, 0/0.2/0.5/1/10 ug SD8 per
+      disk, 30 C for four days. The plate images support the qualitative resistance
+      contrast, not the numerical MIC or a transport rate; no zone diameters are extracted.'
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 4.2 and results 4.2; distinct disk and MIC experiments.
+  - subject: controls
+    predicate: provides_controls_for
+    object: mic4
+    notes: The native-promoter simX MIC is compared with the text-reported host-only/parent-vector
+      baseline. No separately identified matched native-promoter empty construct is
+      supplied in this result; do not infer equal copy number, expression or vector
+      context solely from the word integrative.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results 4.2, p.97.
+  - subject: host_x
+    predicate: has_text_reported_assay_phenotype
+    object: other_drugs
+    notes: The source states that ermEp*-simX did not add resistance to novobiocin,
+      erythromycin, lincomycin, rifampicin, bacitracin or nisin. The inspected paragraph
+      does not provide their doses, individual MICs or a displayed panel. Keep this
+      as a limited source-reported negative comparison, not demonstrated exclusive
+      substrate specificity under all conditions.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results 4.2, p.97; text-only additional-antibiotic comparison.
+  - subject: gene
+    predicate: encodes
+    object: simx_tested
+    notes: The study names the native producer-cluster gene simEX1/simX. Its allele
+      in the assayed stock is not resolved to either deposited residue-126 variant.
+      The gene and canonical protein sequences are distinct identity levels.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results 4.1-4.2, native strain table and deletion methods 2.8.
+  - subject: mutant
+    predicate: disrupts
+    object: gene
+    notes: The strain table specifies simX::apr. PCR targeting used the pIJ773 apr/oriT
+      cassette with 39-nt homologous arms and lambda RED/pIJ790 in the Galm et al.
+      VII-8g cosmid; transfer was into native Tu6040. Literal arms map to AF324838.2
+      58144..58182(+) and 59782..59820(-), retaining ATG and TAG while replacing 58183..59781
+      (1599 bp) in the model. This is not a demonstrated marker-free allele, observed
+      mutant sequence, or proof of no polar effects. Cosmid provenance alone does
+      not resolve the assayed wild-type or expression-plasmid Ala/Gly126 identity.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Strain table p.53; methods 2.8, literal DelsimX primers and Figure 2.1
+        generic workflow.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Native deletion-arm/reading-frame reconstruction; cassette junctions
+        are not sequenced here.
+  - subject: wt
+    predicate: retains_native_locus
+    object: gene
+    notes: The native comparator is S. antibioticus Tu6040, distinct from the heterologous
+      S. lividans strains. The wild-type label does not independently identify its
+      deposited SimX sequence variant.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Native strain table and Figure 4.3.
+  - subject: mutant
+    predicate: has_assay_phenotype
+    object: sensitivity
+    notes: 'Relative to wild type, simX::apr is more sensitive to exogenous SD8 in
+      the displayed disk assay: approximately 5e4 spores on SMMS agar, 0/1/10/100
+      ug SD8 per disk, 30 C for four days. This is not the heterologous R2 plate or
+      the five-day MIC assay. No native-mutant MIC, quantified zone diameter, statistical
+      effect size or displayed complementation experiment is supplied by these inspected
+      results.'
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results 4.2 and Figure 4.3.
+      snippet: more sensitive to exogenous SD8
+  - subject: wt
+    predicate: provides_native_comparator_for
+    object: sensitivity
+    notes: Figure 4.3 displays wild-type and simX::apr plates at the same listed disk
+      doses. The images are a qualitative comparison; differences in lawn growth and
+      photography are not normalized into a quantitative resistance ratio. No rescue
+      or independent replicate panel is inferred.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 4.3 and caption.
+  - subject: sensitivity
+    predicate: is_measured_against
+    object: sd8
+    notes: Exogenous SD8 is the applied compound. The source does not measure native
+      SD8 production yield or intracellular/extracellular concentration in this disk
+      experiment.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 4.3 and results 4.2.
+  - subject: simx_tested
+    predicate: is_proposed_to_mediate
+    object: export
+    notes: 'The author interprets pump-like sequence context, heterologous resistance
+      and native disruption sensitivity as support for SD8 efflux. This graph retains
+      that mechanism as an inference: these experiments do not directly measure transport,
+      membrane localization, proton coupling, kinetics or intracellular drug depletion.
+      There is no independent transport comparison between the two deposited SimX
+      variants.'
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: CURATOR_INFERENCE
+      notes: Results 4.2 and discussion 4.10; interpretation of genetic sensitivity
+        evidence.
+  - subject: export
+    predicate: has_proposed_substrate
+    object: sd8
+    notes: SD8 is the proposed exported product. This is not an experimentally demonstrated
+      exclusive substrate list, direct SimX-SD8 binding measurement or demonstrated
+      SC4 transport. Other regulatory experiments do not by themselves prove either
+      transport claim.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/35207/
+      evidence_type: CURATOR_INFERENCE
+      notes: Results 4.2 and discussion 4.10; source-proposed efflux role.
+curation_history:
+- timestamp: '2026-10-04T09:18:10Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added source-checked SimX/SimEx2 graph from owner base e1c4aa02d69423ae7d811e1039ede28fa319f579;
+    Le 2011 thesis https://ueaeprints.uea.ac.uk/id/eprint/35207/ and exact deposited
+    sequences. Retained review #537 allele, construct, MIC/disk, native-deletion and
+    inference limits; no claim to have read the inaccessible full 2009 journal article.'
+  llm_assisted: true

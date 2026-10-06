@@ -1,0 +1,289 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novp-docking-and-untested-mechanistic-proposals
+  scope: BIOSYNTHESIS
+  description: 'NovP substrate docking and structural hypotheses are explicitly computational,
+    not observed catalytic complexes, engineered-mutant results or protein interactions.
+    Review #558. The 2010 page locators refer to the 30-page author manuscript, not
+    journal pagination. The cathomycin owner retains its unspecified sugar stereocentre;
+    no exact merge with fully specified novobiocin or new mature-product synthesis
+    claim is made.'
+  nodes:
+  - node_id: structure
+    label: 2WK1 NovP-SAH crystallographic model
+    node_type: OTHER
+    grounding_status: GROUNDED
+    identifier: PDB:2WK1
+  - node_id: model
+    label: Manually prepared NovP-SAM-Mg docking receptor
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: ddn
+    label: Docked desmethyldescarbamoylnovobiocin
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: sam
+    label: Modeled S-adenosyl-L-methionine donor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: mg
+    label: Modeled magnesium ion
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: search
+    label: AutoDock4 NovP substrate-pose search
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: pre
+    label: Pre-deprotonation docking scenario
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: post
+    label: Post-deprotonation docking scenario
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: poses
+    label: Twelve retained post-deprotonation pose clusters
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: triad
+    label: Proposed Asp196/Asp223/Asp224 metal-binding roles
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: base
+    label: Proposed Asp198 general-base role
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: trp
+    label: Proposed Trp58 sugar-ring contact
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: arg
+    label: Proposed Arg146 aminocoumarin contact
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: order
+    label: Proposed SAM-first and SAH-last binding order
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: metal_report
+    label: Undisplayed personal-communication metal tests
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: interactions
+    label: Untested NovP-NovM/NovN interaction proposal
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: deletion
+    label: Suggested untested deletion of lid residues 126-151
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: crystal_trials
+    label: Unsuccessful reported additional ligand-complex trials
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: structure
+    predicate: was_template_for_docking_receptor
+    object: model
+    notes: The authors removed solvent, replaced SAH with SAM, inserted Mg2+ using
+      homolog structures and manually adjusted Asp196/Asp223/Asp224. They performed
+      300 CNS maximum-likelihood minimization cycles with Wa set to zero. This is
+      an engineered computational receptor, not an experimentally observed NovP-SAM-Mg
+      complex.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        p.11, Substrate docking.
+  - subject: sam
+    predicate: was_modeled_into
+    object: model
+    notes: SAM replaces the observed SAH before docking; no experimental SAM electron
+      density is supplied by 2WK1.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        p.11.
+  - subject: mg
+    predicate: was_modeled_into
+    object: model
+    notes: Metal placement and Asp conformations are assumptions guided by homologs,
+      not an observed catalytic metal or measured metal affinity.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        pp.7-8,11.
+  - subject: model
+    predicate: was_used_in
+    object: search
+    notes: AutoDock4 treated the receptor as rigid except Asp198/Trp58 side chains.
+      The search used a 26-A cube, 0.375-A grid, 100 runs, population 150, 25000000
+      energy evaluations, 27000 generations, one surviving conformation per generation,
+      300 local iterations and 2-A clustering tolerance.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        p.11.
+  - subject: ddn
+    predicate: was_flexible_ligand_in
+    object: search
+    notes: DDN had a random starting position and rotatable single bonds. The authors
+      defined a productive pose as placing noviose 4-OH within 4 A of the SAM methyl
+      group. This geometric filter does not demonstrate catalysis.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        pp.9,11.
+  - subject: search
+    predicate: has_pre_deprotonation_result
+    object: pre
+    notes: With protonated noviose 4-OH and deprotonated Asp198, 3 of 100 poses passed
+      the geometric filter; best docking energy was printed as -8.68 kJ/mol. These
+      are source model units/counts, not measured turnover, a 3% chemical conversion
+      or experimental binding free energy.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        pp.9,11.
+  - subject: search
+    predicate: has_post_deprotonation_result
+    object: post
+    notes: With deprotonated noviose 4-OH and protonated Asp198, 98 of 100 poses passed
+      the filter; best docking energy was printed as -15.88 kJ/mol. Proton transfer
+      is assumed in this scenario, not observed by the simulation or an assay.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        pp.9,11.
+  - subject: post
+    predicate: was_clustered_into
+    object: poses
+    notes: The 98 retained poses formed 12 clusters. Their lowest-energy representatives
+      place ring C similarly, ring B in roughly four orientational groups and ring
+      A more variably outside the channel. This is not a new experimental substrate-tolerance
+      panel. The lid is removed graphically in Figure 9, not deleted from an assayed
+      protein.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        p.9 and Figure 9, PDF p.27.
+  - subject: model
+    predicate: assumes_metal_binding_by
+    object: triad
+    notes: Asp196/Asp223/Asp224 are proposed ligands from geometry/conservation and
+      homolog comparisons. No catalytic metal is observed in 2WK1 and no metal-site
+      mutant panel is reported in this paper.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        pp.7-8 and Figure 8, PDF p.26.
+  - subject: model
+    predicate: assumes_general_base_role_for
+    object: base
+    notes: Asp198 is proposed to deprotonate noviose 4-OH. Its orientation and homolog
+      comparisons motivate the model, but there is no reported D198 mutant assay or
+      directly measured proton-transfer step here.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        p.8 and Figure 8, PDF p.26.
+  - subject: poses
+    predicate: suggest_contact_with
+    object: trp
+    notes: The Trp58 side chain was flexible in the docking and is proposed to contact
+      the noviose ring oxygen. No substrate-bound experimental NovP structure establishes
+      this contact.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        pp.7,9,11 and Figure 8.
+  - subject: poses
+    predicate: suggest_contact_with
+    object: arg
+    notes: Arg146 points toward ring B in the models and is proposed to recognize
+      its C8 substituent. This is neither a demonstrated residue-specific binding
+      energy nor an assayed R146 mutant.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        pp.7,9 and Figure 9.
+  - subject: structure
+    predicate: motivates_binding_order_hypothesis
+    object: order
+    notes: Buried SAH/lid geometry and comparison to TylF motivate SAM binding before
+      DDN and SAH leaving last. This is not a directly measured NovP ordered Bi Bi
+      mechanism or a kinetic inhibition experiment.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        p.8, putative mechanism.
+  - subject: structure
+    predicate: is_discussed_with_undisplayed_assay_report
+    object: metal_report
+    notes: 'The paper relays Freel Meyers personal communication: 10 mM MgCl2 or MnCl2
+      had no measurable effect, and 10 mM CaCl2 reduced product. No underlying data,
+      quantitative effect size, replication or assay recipe is displayed. The source
+      proposes competition with trace preferred metals, but this is not an independently
+      inspected metal-dependence or inhibition experiment.'
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: REVIEW
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        p.8, relayed personal communication and interpretation.
+  - subject: structure
+    predicate: motivates_unverified_interaction_hypothesis
+    object: interactions
+    notes: The authors speculate that NovM or NovN interactions could assist lid opening
+      or channel intermediates, explicitly stating that there is no evidence either
+      way. No binding edge, observed complex, stoichiometry or functional interaction
+      is asserted here.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        p.6, untested proposal.
+      snippet: no evidence either for or against
+  - subject: structure
+    predicate: motivates_untested_deletion_proposal
+    object: deletion
+    notes: Complete removal of residues 126..151 is proposed for future engineering.
+      The paper does not report constructing, purifying or assaying this deletion;
+      graphical lid omission does not create a tested mutant protein entry.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        p.10, conclusion; Figure 9.
+  - subject: structure
+    predicate: has_reported_unsuccessful_extension
+    object: crystal_trials
+    notes: Trials used descarbamoylnovobiocin or methylrhamnoside, with SAM/SAH and
+      with/without MgCl2, but yielded no successful complexes and are data-not-shown.
+      DDN was insufficient for these experiments. Failure to obtain crystals is not
+      evidence that the enzyme cannot bind these molecules in solution.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        pp.8-9, Substrate docking.
+curation_history:
+- timestamp: '2026-10-04T20:58:20Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cathomycin-novp-docking-and-untested-mechanistic-proposals with source-checked
+    NovP evidence and review #558 limits.'
+  llm_assisted: true

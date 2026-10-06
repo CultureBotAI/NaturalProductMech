@@ -190,6 +190,2819 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">22 nodes, 25 edges</span></h2>
+<p class="sub">CouL native sequence versions and recombinant amide formation (review #549), from Schmutz 2003 and the corresponding primary paper. Current Q9F8U8 is not assigned as the uniquely identified 2003 assay sequence. Native deposits, the printed historical alignment and the His6 preparation remain distinct. Measured monoamide/diamide formation is not mature glycosylated coumermycin A1 synthesis. Conditional kinetics, conflicting assay units, unresolved monoamide regiochemistry and inferred adenylate/amide order are explicit. Schmutz PDF pages exceed printed pages by ten.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native couL locus from S. rishiriensis DSM 40489</td>
+  <td>has_current_deposited_translation</td>
+  <td>Current deposited native CouL sequence</td>
+  <td>AF235050.4 couL/AAG29784.2 at 10634..12223(+) is a 1590-nt CDS including stop. CDS-aware table-11 translation exactly matches deposited protein and 529-aa Q9F8U8. The strain is DSM 40489, S. rishiriensis taxon 68264. Other gene-name search hits from Rhodococcus are not selected.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4<br>https://www.uniprot.org/uniprotkb/Q9F8U8<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Native couL locus from S. rishiriensis DSM 40489</td>
+  <td>has_historical_deposited_translation</td>
+  <td>Historical deposited CouL sequence</td>
+  <td>AF235050.3 couL/AAG29784.1 at 10632..12221(+) is also 1590 nt including stop. Its CDS-aware translation, historical GenPept record and complete 529-aa CouL alignment in Figure III-16 agree. A printed alignment is reported sequence evidence, not sequencing of the experimental pMS90 sample.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.3<br>https://www.ncbi.nlm.nih.gov/protein/AAG29784.1<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.3</td>
+</tr>
+<tr>
+  <td>Historical deposited CouL sequence</td>
+  <td>differs_in_deposit_version_from</td>
+  <td>Current deposited native CouL sequence</td>
+  <td>Historical residues Arg384/Ala385 are Glu384/Gly385 in the current deposit; the remaining 527 residues agree. These are deposit-version differences, not proof of two biological alleles or identification of the internal sequence of the measured recombinant protein.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.3<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>pMS90-derived C-terminal His6 CouL preparation</td>
+  <td>was_constructed_from</td>
+  <td>Native couL locus from S. rishiriensis DSM 40489</td>
+  <td>The pZW11 subclone of cosmid 4-2H supplied couL for SphI/BglII cloning into pQE70 to make pMS90 (5010 bp in the thesis map), with a reported C-terminal His6 tag. Literal primers are couL-1 TAGTCACTGCATGCCGAACAGGGAC and couL-2 TGACTCAGATCTCCTGTCCACCAG. Their unique 3-prime matches extrapolate to 10622..10646(+) and 12230..12207(-) on AF235050.3, shifted +2 nt on AF235050.4. Both 1609-nt literal-primer models predict GTG-to-ATG start recoding, Ala2Pro in the native-length core, and TGA-to-AGA stop replacement. These models do not sequence the full fusion or select which internal 384/385 version was present in the experimental sample.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.3<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>E. coli XL1 Blue MRF&#39; expression host</td>
+  <td>expressed</td>
+  <td>pMS90-derived C-terminal His6 CouL preparation</td>
+  <td>The thesis describes 100 mL LB, 50 ug/mL carbenicillin, 30 C and 170 rpm, induction at OD600 0.7-0.8 with 0.5 mM IPTG and three hours expression. This host prepares a biosynthetic protein; it is not reported as producing mature coumermycin A1 in this experiment.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1<br>DOI:10.1046/j.1432-1033.2003.03830.x</td>
+</tr>
+<tr>
+  <td>pMS90-derived C-terminal His6 CouL preparation</td>
+  <td>has_purification_readouts</td>
+  <td>CouL Ni-NTA purification and protein-yield readouts</td>
+  <td>Ni-NTA yielded a near-homogeneous band near 60 kDa (calculated tagged mass 58.9 kDa). The paper reports 8-9% of total soluble protein, whereas the thesis reports 10-11% and 21 mg/L culture. These remain source-specific yield statements, not harmonized purity percentages, assay concentrations or native abundance.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pMS90-derived C-terminal His6 CouL preparation</td>
+  <td>has_size_exclusion_readout</td>
+  <td>Active CouL size-exclusion fraction near 59-60 kDa</td>
+  <td>HiLoad 26/60 Superdex 200 in 150 mM NaCl, 50 mM Tris-HCl pH 8 at 1 mL/min gave a thesis elution volume of 204 mL and apparent mass near 59-60 kDa. The eluate retained enzyme activity. This is an apparent hydrodynamic mass for the recombinant preparation.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1<br>DOI:10.1046/j.1432-1033.2003.03830.x</td>
+</tr>
+<tr>
+  <td>Active CouL size-exclusion fraction near 59-60 kDa</td>
+  <td>supports_interpretation</td>
+  <td>Inferred monomeric recombinant CouL under SEC conditions</td>
+  <td>The apparent SEC mass is near the tagged monomer mass and supports the authors&#39; monomer interpretation under these conditions. It does not directly establish native-cell oligomeric stoichiometry or exclude condition-dependent assemblies.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pMS90-derived C-terminal His6 CouL preparation</td>
+  <td>catalysed_in</td>
+  <td>CouL pyrrole-acid and ring-B ligation assay</td>
+  <td>The paper describes 100 uL, 1 mM each pyrrole acid and ring B, 5 mM MnCl2, 50 mM Tris-HCl pH 8, 4 ug protein and 5-10 min at 30 C. Its Methods specify 1 mM ATP but Results 5 mM. The thesis method uses 5 mM ATP, one minute preincubation without ring B, ring-B initiation, 5-7 min reaction and 5 uL 1.5 M TCA stop. The ATP discrepancy is not silently resolved.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>3-Methylpyrrole-2,4-dicarboxylic acid</td>
+  <td>was_acyl_substrate_in</td>
+  <td>CouL pyrrole-acid and ring-B ligation assay</td>
+  <td>The 3-methylpyrrole-2,4-dicarboxylic acid substrate provides the central dicarboxylate scaffold. Its two carboxyl groups allow one- and two-amide products; use in vitro does not measure cellular concentration.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>3-Amino-4,7-dihydroxy-8-methylcoumarin (ring B)</td>
+  <td>was_amine_substrate_in</td>
+  <td>CouL pyrrole-acid and ring-B ligation assay</td>
+  <td>The supplied ring B is 3-amino-4,7-dihydroxy-8-methylcoumarin, not a glycosylated mature antibiotic. One ring-B unit enters the monoamide and two enter the diamide.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Heat-denatured CouL negative control</td>
+  <td>was_negative_control_for</td>
+  <td>CouL pyrrole-acid and ring-B ligation assay</td>
+  <td>Figure III-19 curve b uses heat-denatured enzyme and provides the displayed negative comparator to active CouL. No numerical zero background, replicate count or uncertainty is inferred from this chromatogram.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1<br>DOI:10.1046/j.1432-1033.2003.03830.x</td>
+</tr>
+<tr>
+  <td>CouL pyrrole-acid and ring-B ligation assay</td>
+  <td>formed_assigned_product</td>
+  <td>CouL monoamide with unresolved amidated carboxyl position</td>
+  <td>HPLC detects the monoamide at about 15 min (15.1 min in the thesis); positive SRM 359-to-152 and negative 357-to-206 support the assignment. The 1H-NMR sample contained impurities and did not distinguish amidation at pyrrole carboxyl position 2 versus 4. Thesis HMBC/NOESY follow-up did not resolve that position. The displayed regioisomer is not a secured structure. Quantification used substrate depletion versus heat controls at 260 nm with product detection at 340 nm, not a weighed authentic monoamide standard.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>CouL pyrrole-acid and ring-B ligation assay</td>
+  <td>formed_assigned_product</td>
+  <td>CouL diamide of pyrrole acid and two ring-B units</td>
+  <td>HPLC detects the diamide at about 20 min (19.6 min in the thesis), with positive SRM 548-to-341 and negative 546-to-206. This is the pyrrole dicarboxylate amide of two unglycosylated ring-B units, not mature coumermycin A1. Product quantification is based on the source&#39;s depletion calibration rather than an independently weighed diamide standard.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>CouL monoamide with unresolved amidated carboxyl position</td>
+  <td>was_substrate_in</td>
+  <td>Isolated-monoamide refeeding assay</td>
+  <td>Isolated monoamide was supplied with ring B, ATP and Mn2+ to CouL. Its unresolved initial amide position is retained rather than assigned by the fact that a second amide can form.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pMS90-derived C-terminal His6 CouL preparation</td>
+  <td>catalysed_in</td>
+  <td>Isolated-monoamide refeeding assay</td>
+  <td>The second amide-forming reaction is reported at about 43% of the first reaction&#39;s velocity under the comparison conditions. This is not a universal turnover ratio or a separately established native flux.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Isolated-monoamide refeeding assay</td>
+  <td>formed_assigned_product</td>
+  <td>CouL diamide of pyrrole acid and two ring-B units</td>
+  <td>Isolated-monoamide refeeding gave the diamide by HPLC. Separately, the starting-substrate assay with 1 mM ring B and 0.1 mM pyrrole acid for one hour lost the monoamide peak, described as complete conversion by the authors. Peak disappearance is not an independent mass balance or exact isolated yield.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pMS90-derived C-terminal His6 CouL preparation</td>
+  <td>was_tested_in</td>
+  <td>CouL nucleotide, metal and CoA assay comparisons</td>
+  <td>The source reports a requirement for Mg2+ or Mn2+ and inhibition by 0.5 mM EDTA. Relative to ATP at 100%, GTP gave about 5% activity; CTP/TTP gave no reported product in the 5 mM nucleotide comparison. Thus absolute ATP-only specificity is not asserted. Adding 0.5 mM CoA did not increase activity; this does not directly identify an intermediate.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pMS90-derived C-terminal His6 CouL preparation</td>
+  <td>has_conditional_kinetics</td>
+  <td>Conditional apparent monoamide-formation kinetics</td>
+  <td>Monoamide formation, with no detectable diamide in these kinetic conditions, gave apparent Km 26 uM for acid and 44 uM for ring B in the paper. Thesis Figure III-22 gives 26.4 and 44.2 uM, with Vmax 0.34 and 7.4 nkat/mg for the respective titrations. The other substrate was fixed at 1 mM with 5 mM ATP/Mn in the thesis. Acid titration used 10 ug/mL protein and six minutes. For ring-B titration the thesis says 1 mg/mL despite calling it reduced; the paper says 1 ug/mL, with five minutes. The unit discrepancy is preserved. The paper associates 7.4 nkat/mg with turnover 0.4 s^-1; neither is a universal native rate. Error bars are shown but replicate counts and SD/SE assignment are not supplied in the inspected sections. Apparent Km is not binding Kd.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>3-Amino-4,7-dihydroxy-8-methylcoumarin (ring B)</td>
+  <td>showed_substrate_inhibition</td>
+  <td>Ring-B substrate inhibition at high concentrations</td>
+  <td>Ring B above 100 uM inhibited activity. The thesis reports about 6% of maximal activity at 1 mM ring B in the comparison with 5 ug/mL enzyme, 1 mM acid and five minutes incubation. This is a conditional substrate-inhibition readout, not cellular toxicity.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Ring-B substrate inhibition at high concentrations</td>
+  <td>limits_interpretation_of</td>
+  <td>Conditional apparent monoamide-formation kinetics</td>
+  <td>The thesis explicitly attributes the lower 0.34 nkat/mg acid-titration Vmax to the inhibitory fixed 1 mM ring-B concentration. The two conditional Vmax values are not conflicting measurements of one universal rate and are not silently collapsed.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pMS90-derived C-terminal His6 CouL preparation</td>
+  <td>was_tested_in</td>
+  <td>Relative CouL acid-substrate panel</td>
+  <td>Table III-8 tests acids at 1 mM and reports relative activity, not absolute conversion. The first three starred entries concern monoamide formation: genuine acid 100%, 4-methylpyrrole-2,3-dicarboxylic acid 94%, and 3,5-dimethylpyrrole-2,4-dicarboxylic acid 110%. The latter&#39;s 2-ethyl ester is &lt;0.05% and 4-ethyl ester 7.7%. Its diamide-forming activity is about 17% of the genuine-acid comparator, distinct from 110% monoamide activity. Source-labelled other pyrrole mono/tricarboxylates and four tested pyridines are &lt;0.05%; differing positional names in table/prose are not converted here to exact chemical identifiers.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Relative CouL acid-substrate panel</td>
+  <td>formed_surrogate_product</td>
+  <td>Novobiocic acid from the DMAHB surrogate assay</td>
+  <td>DMAHB is accepted at 36% of the reference relative activity. Novobiocic acid was assigned by HPLC comparison with authentic standard at 305 nm. This is a surrogate aromatic-acid reaction, not mature coumermycin or native pathway substrate preference.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>CouL nucleotide, metal and CoA assay comparisons</td>
+  <td>is_consistent_with_proposed_model</td>
+  <td>Proposed CouL adenylate intermediate</td>
+  <td>A CouL adenylate intermediate was proposed by analogy to NovL. The thesis explicitly says the ATP-PPi exchange experiment was not repeated for CouL. Nucleotide requirements and lack of CoA stimulation are not direct observation of a CouL-bound adenylate.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Relative CouL acid-substrate panel</td>
+  <td>supports_proposed_order</td>
+  <td>Proposed pyrrole 2-first then 4 amidation order</td>
+  <td>Acceptance of the 4-ethyl ester but not the 2-ethyl ester, and the weaker second reaction of the 3,5-dimethyl acid, support a proposed position-2 first, position-4 second order. This is inference from surrogate substrates, not direct resolution of the monoamide regiochemistry or native-cell order.</td>
+  <td class="mono">DOI:10.1046/j.1432-1033.2003.03830.x<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48521/pdf/Dissertation_ESchmutz.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">10 nodes, 9 edges</span></h2>
+<p class="sub">Exact native CouO identity and abstract-limited 2005 precursor chemistry. Author-agent review #556. Native identity, engineered preparations and measured or inferred outcomes remain distinct; these precursor/surrogate studies do not demonstrate synthesis of mature coumermycin A1.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Deposited coumermycin A1 biosynthetic cluster</td>
+  <td>contains</td>
+  <td>Native couO locus from S. rishiriensis DSM 40489</td>
+  <td>The owner links MIBiG BGC0000833.4 and AF235050.4. couO lies at 20892..21584(+) with a 693-nt CDS including its stop; the native source is S. rishiriensis DSM 40489, taxon 68264.</td>
+  <td class="mono">https://mibig.secondarymetabolites.org/go/BGC0000833.4<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Native couO locus from S. rishiriensis DSM 40489</td>
+  <td>encodes_native_protein</td>
+  <td>Deposited native CouO sequence reference</td>
+  <td>CDS-aware table-11 translation matches AAG29793.1 and all 230 residues of Q9F8T9. AF235050.3 has the same CDS/protein at 20888..21580(+); the coordinate shift is not a protein substitution. Native sequence identity does not identify a full mutant plasmid or experimental aliquot.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.3<br>https://www.uniprot.org/uniprotkb/Q9F8T9<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Deposited native CouO sequence reference</td>
+  <td>is_database_reference_for_studied_enzyme</td>
+  <td>Pacholec 2005 recombinant CouO preparation</td>
+  <td>UniProt links the function to Pacholec 2005. The primary abstract reports expression and purification from E. coli, but the full paper and exact construct sequence were not obtained. Neither the 2017 lysate protocol nor the structural preparation is substituted for it.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8T9<br>DOI:10.1021/bi051599o</td>
+</tr>
+<tr>
+  <td>Pacholec 2005 recombinant CouO preparation</td>
+  <td>catalyzes_reported_methylation</td>
+  <td>Abstract-reported CouO precursor C-methylation</td>
+  <td>The abstract reports SAM-dependent methylation adjacent to the phenolic hydroxyl on the aminocoumarin scaffold. It does not provide assay loading, full constructs or numerical kinetic conditions here.</td>
+  <td class="mono">DOI:10.1021/bi051599o</td>
+</tr>
+<tr>
+  <td>CouL-derived unglycosylated monoamide precursor</td>
+  <td>is_reported_acceptor_for</td>
+  <td>Abstract-reported CouO precursor C-methylation</td>
+  <td>The abstract identifies the monoamide made during CouL ligation as a CouO acceptor. This is not free aminocoumarin, the 2017 benzamide surrogate or mature glycosylated coumermycin A1.</td>
+  <td class="mono">DOI:10.1021/bi051599o</td>
+</tr>
+<tr>
+  <td>CouL-derived unglycosylated bis-amide precursor</td>
+  <td>is_reported_acceptor_for</td>
+  <td>Abstract-reported CouO precursor C-methylation</td>
+  <td>CouO also accepts the CouL bis-amide formed from two aminocoumarins and a dicarboxypyrrole. The abstract does not establish a unique microscopic methylation sequence or the kinetic equivalence of both sites.</td>
+  <td class="mono">DOI:10.1021/bi051599o</td>
+</tr>
+<tr>
+  <td>Abstract-reported CouO precursor C-methylation</td>
+  <td>forms_reported_precursors</td>
+  <td>Reported mono- and di-C-methylated precursors</td>
+  <td>Mono- and di-C-methylation are reported before glycosylation. This does not establish a mature-antibiotic titer or resolve the positional limits already recorded for the separate CouL experiments.</td>
+  <td class="mono">DOI:10.1021/bi051599o</td>
+</tr>
+<tr>
+  <td>Pacholec 2005 recombinant CouO preparation</td>
+  <td>has_reported_negative_substrate_results</td>
+  <td>Reported nonacceptance of earlier pathway intermediates</td>
+  <td>Neither CouO nor NovO is reported to act on NovH-tethered tyrosyl-derived S-pantetheinyl intermediates or subsequently released free aminocoumarin. No detection limit or quantitative absence is supplied in the abstract.</td>
+  <td class="mono">DOI:10.1021/bi051599o</td>
+</tr>
+<tr>
+  <td>Abstract-reported CouO precursor C-methylation</td>
+  <td>precedes_reported_glycosylation</td>
+  <td>Source-supported methylation before CouM glycosylation</td>
+  <td>The source places CouO C-methylation before CouM O-glycosylation. This is the reported pathway interpretation, not directly measured native-cell flux or a universal order for every accepted analogue.</td>
+  <td class="mono">DOI:10.1021/bi051599o</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">26 nodes, 45 edges</span></h2>
+<p class="sub">Ten CouO mutant constructs, their separate protein products and the WT expression comparator, with literal-primer and solubility limits. Author-agent review #556. Native identity, engineered preparations and measured or inferred outcomes remain distinct; these precursor/surrogate studies do not demonstrate synthesis of mature coumermycin A1.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Deposited native CouO sequence reference</td>
+  <td>is_core_sequence_reference_for</td>
+  <td>Reported pET26b-CouO PCR-template plasmid</td>
+  <td>The paper names pET26b-CouO as the PCR template and cites Stecher 2009. Its literal terminal primers match the deposited native CDS, but the complete template plasmid was not independently sequenced. The historical Strep-tag preparation is not silently assigned to the 2017 assay or crystallization sample.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1002/anie.200905095<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Reported pET26b-CouO PCR-template plasmid</td>
+  <td>was_PCR_template_for</td>
+  <td>pMS470delta8 CouO-WT expression construct</td>
+  <td>The outer primers are 5-prime AATAATTTTGTTTAACTTTAAGAAGGAGATATACATATGAAGATTGAACCGATTACGGG and 5-prime TGAAAATCTTCTCTCATCCGCCAAAACAGCCAAGCTTTCAGGCAGCGGCCC. Gibson assembly used pMS470delta8 linearized with NdeI/HindIII. Literal native-template reconstruction gives a 766-nt amplicon retaining the 693-nt CDS, native start/stop and 230-aa core; it is a model, not a sequenced experimental plasmid. The additionally listed CouO(NdeI)_for AATCACATATGAAGATTGAACCGATTACGGG and CouO(HindIII)_rev AATCAAAGCTTTCAGGCAGCGGC give a separate 712-nt literal amplicon model and are not substituted for the pMS outer pair.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s009<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>pMS470delta8 CouO-WT expression construct</td>
+  <td>encodes_engineered_preparation</td>
+  <td>Pavkov-Keller CouO-WT protein in cleared lysate</td>
+  <td>WT denotes the recombinant expression comparator. The outer primer model retains the native stop and predicts no encoded terminal extension; it does not justify assigning native Q9F8T9 as the unique identity of the full assayed aliquot. The authors report sequencing all constructs.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s009</td>
+</tr>
+<tr>
+  <td>E. coli TOP10F&#39; CouO expression host</td>
+  <td>expressed</td>
+  <td>Pavkov-Keller CouO-WT protein in cleared lysate</td>
+  <td>TOP10F&#39; cells carrying pMS470 constructs were grown in 2xTY with 100 mg/L ampicillin, induced near OD600 0.8 with 0.1 mM IPTG, then cultivated 20 h at 25 C and 130 rpm. Pellets were resuspended in 50 mM sodium phosphate pH 7.5, sonicated and cleared at 48000 g for one hour at 4 C. These are protein preparations, not demonstrated whole-cell coumermycin A1 production.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-WT protein in cleared lysate</td>
+  <td>has_reported_expression_readout</td>
+  <td>Paired soluble and insoluble CouO expression gels</td>
+  <td>S7 lane 11 is WT and lane 12 is empty pMS470d8, in both soluble and insoluble panels; lanes 1-10 follow the mutant list. The arrow marks the expected roughly 26-kDa protein. Bands do not establish complete sequence, folding or equal active fraction.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s007</td>
+</tr>
+<tr>
+  <td>Reported pET26b-CouO PCR-template plasmid</td>
+  <td>was_mutagenesis_template_for</td>
+  <td>pMS470delta8 CouO-H15A expression construct</td>
+  <td>Overlap-extension PCR used literal forward 5-prime CGAAGCCTTTGCCCGGATGGG and reverse 5-prime CCCATCCGGGCAAAGGCTTCG, followed by the pMS outer primers and Gibson assembly. The mutagenic pair is reverse-complementary and a native-template reconstruction gives only H15A in the 230-aa core. The reported sequencing confirmation is not an independently obtained full experimental construct sequence.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s009<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>pMS470delta8 CouO-H15A expression construct</td>
+  <td>encodes_engineered_variant</td>
+  <td>Pavkov-Keller CouO-H15A protein in cleared lysate</td>
+  <td>The source names the H15A substitution in the CouO construct panel. DNA and protein are distinct nodes; the native UniProt accession is not assigned to this engineered variant.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s009</td>
+</tr>
+<tr>
+  <td>E. coli TOP10F&#39; CouO expression host</td>
+  <td>expressed</td>
+  <td>Pavkov-Keller CouO-H15A protein in cleared lysate</td>
+  <td>This member of the pMS470 series uses the reported TOP10F&#39; expression and cleared-lysate protocol, not purified-enzyme or native-cell assay conditions.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-H15A protein in cleared lysate</td>
+  <td>has_reported_expression_readout</td>
+  <td>Paired soluble and insoluble CouO expression gels</td>
+  <td>S7 lane 1 is H15A in paired soluble/insoluble panels. The displayed band is an expression readout, not proof of equal folding, purity or active fraction.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s007</td>
+</tr>
+<tr>
+  <td>Reported pET26b-CouO PCR-template plasmid</td>
+  <td>was_mutagenesis_template_for</td>
+  <td>pMS470delta8 CouO-H15N expression construct</td>
+  <td>Overlap-extension PCR used literal forward 5-prime CCGAAGCCTTTAACCGGATGGG and reverse 5-prime CCCATCCGGTTAAAGGCTTCGG, followed by the pMS outer primers and Gibson assembly. The mutagenic pair is reverse-complementary and a native-template reconstruction gives only H15N in the 230-aa core. The reported sequencing confirmation is not an independently obtained full experimental construct sequence.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s009<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>pMS470delta8 CouO-H15N expression construct</td>
+  <td>encodes_engineered_variant</td>
+  <td>Pavkov-Keller CouO-H15N protein in cleared lysate</td>
+  <td>The source names the H15N substitution in the CouO construct panel. DNA and protein are distinct nodes; the native UniProt accession is not assigned to this engineered variant.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s009</td>
+</tr>
+<tr>
+  <td>E. coli TOP10F&#39; CouO expression host</td>
+  <td>expressed</td>
+  <td>Pavkov-Keller CouO-H15N protein in cleared lysate</td>
+  <td>This member of the pMS470 series uses the reported TOP10F&#39; expression and cleared-lysate protocol, not purified-enzyme or native-cell assay conditions.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-H15N protein in cleared lysate</td>
+  <td>has_reported_expression_readout</td>
+  <td>Paired soluble and insoluble CouO expression gels</td>
+  <td>S7 lane 2 is H15N in paired soluble/insoluble panels. The displayed band is an expression readout, not proof of equal folding, purity or active fraction.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s007</td>
+</tr>
+<tr>
+  <td>Reported pET26b-CouO PCR-template plasmid</td>
+  <td>was_mutagenesis_template_for</td>
+  <td>pMS470delta8 CouO-R24A expression construct</td>
+  <td>Overlap-extension PCR used literal forward 5-prime CCGGGCGTTCGAAGCGTACAACGAGTTC and reverse 5-prime GAACTCGTTGTACGCTTCGAACGCCCGG, followed by the pMS outer primers and Gibson assembly. The mutagenic pair is reverse-complementary and a native-template reconstruction gives only R24A in the 230-aa core. The reported sequencing confirmation is not an independently obtained full experimental construct sequence.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s009<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>pMS470delta8 CouO-R24A expression construct</td>
+  <td>encodes_engineered_variant</td>
+  <td>Pavkov-Keller CouO-R24A protein in cleared lysate</td>
+  <td>The source names the R24A substitution in the CouO construct panel. DNA and protein are distinct nodes; the native UniProt accession is not assigned to this engineered variant.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s009</td>
+</tr>
+<tr>
+  <td>E. coli TOP10F&#39; CouO expression host</td>
+  <td>expressed</td>
+  <td>Pavkov-Keller CouO-R24A protein in cleared lysate</td>
+  <td>This member of the pMS470 series uses the reported TOP10F&#39; expression and cleared-lysate protocol, not purified-enzyme or native-cell assay conditions.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-R24A protein in cleared lysate</td>
+  <td>has_reported_expression_readout</td>
+  <td>Paired soluble and insoluble CouO expression gels</td>
+  <td>S7 lane 3 is R24A in paired soluble/insoluble panels. The displayed band is an expression readout, not proof of equal folding, purity or active fraction.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s007</td>
+</tr>
+<tr>
+  <td>Reported pET26b-CouO PCR-template plasmid</td>
+  <td>was_mutagenesis_template_for</td>
+  <td>pMS470delta8 CouO-H117A expression construct</td>
+  <td>Overlap-extension PCR used literal forward 5-prime GTGGTCTCGCGGGCCGCGTTCCACCG and reverse 5-prime CGGTGGAACGCGGCCCGCGAGACCAC, followed by the pMS outer primers and Gibson assembly. The mutagenic pair is reverse-complementary and a native-template reconstruction gives only H117A in the 230-aa core. The reported sequencing confirmation is not an independently obtained full experimental construct sequence.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s009<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>pMS470delta8 CouO-H117A expression construct</td>
+  <td>encodes_engineered_variant</td>
+  <td>Pavkov-Keller CouO-H117A protein in cleared lysate</td>
+  <td>The source names the H117A substitution in the CouO construct panel. DNA and protein are distinct nodes; the native UniProt accession is not assigned to this engineered variant.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s009</td>
+</tr>
+<tr>
+  <td>E. coli TOP10F&#39; CouO expression host</td>
+  <td>expressed</td>
+  <td>Pavkov-Keller CouO-H117A protein in cleared lysate</td>
+  <td>This member of the pMS470 series uses the reported TOP10F&#39; expression and cleared-lysate protocol, not purified-enzyme or native-cell assay conditions.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-H117A protein in cleared lysate</td>
+  <td>has_reported_expression_readout</td>
+  <td>Paired soluble and insoluble CouO expression gels</td>
+  <td>S7 lane 4 is H117A in paired soluble/insoluble panels. The displayed band is an expression readout, not proof of equal folding, purity or active fraction.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s007</td>
+</tr>
+<tr>
+  <td>Reported pET26b-CouO PCR-template plasmid</td>
+  <td>was_mutagenesis_template_for</td>
+  <td>pMS470delta8 CouO-H117S expression construct</td>
+  <td>Overlap-extension PCR used literal forward 5-prime GTGGTCTCGCGGTCCGCGTTCCACCG and reverse 5-prime CGGTGGAACGCGGACCGCGAGACCAC, followed by the pMS outer primers and Gibson assembly. The mutagenic pair is reverse-complementary and a native-template reconstruction gives only H117S in the 230-aa core. The reported sequencing confirmation is not an independently obtained full experimental construct sequence.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s009<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>pMS470delta8 CouO-H117S expression construct</td>
+  <td>encodes_engineered_variant</td>
+  <td>Pavkov-Keller CouO-H117S protein in cleared lysate</td>
+  <td>The source names the H117S substitution in the CouO construct panel. DNA and protein are distinct nodes; the native UniProt accession is not assigned to this engineered variant.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s009</td>
+</tr>
+<tr>
+  <td>E. coli TOP10F&#39; CouO expression host</td>
+  <td>expressed</td>
+  <td>Pavkov-Keller CouO-H117S protein in cleared lysate</td>
+  <td>This member of the pMS470 series uses the reported TOP10F&#39; expression and cleared-lysate protocol, not purified-enzyme or native-cell assay conditions.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-H117S protein in cleared lysate</td>
+  <td>has_reported_expression_readout</td>
+  <td>Paired soluble and insoluble CouO expression gels</td>
+  <td>S7 lane 5 is H117S in paired soluble/insoluble panels. The displayed band is an expression readout, not proof of equal folding, purity or active fraction.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s007</td>
+</tr>
+<tr>
+  <td>Reported pET26b-CouO PCR-template plasmid</td>
+  <td>was_mutagenesis_template_for</td>
+  <td>pMS470delta8 CouO-H120A expression construct</td>
+  <td>Overlap-extension PCR used literal forward 5-prime GGCACGCGTTCGCCCGGCTCACCC and reverse 5-prime GGGTGAGCCGGGCGAACGCGTGCC, followed by the pMS outer primers and Gibson assembly. The mutagenic pair is reverse-complementary and a native-template reconstruction gives only H120A in the 230-aa core. The reported sequencing confirmation is not an independently obtained full experimental construct sequence.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s009<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>pMS470delta8 CouO-H120A expression construct</td>
+  <td>encodes_engineered_variant</td>
+  <td>Pavkov-Keller CouO-H120A protein in cleared lysate</td>
+  <td>The source names the H120A substitution in the CouO construct panel. DNA and protein are distinct nodes; the native UniProt accession is not assigned to this engineered variant.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s009</td>
+</tr>
+<tr>
+  <td>E. coli TOP10F&#39; CouO expression host</td>
+  <td>expressed</td>
+  <td>Pavkov-Keller CouO-H120A protein in cleared lysate</td>
+  <td>This member of the pMS470 series uses the reported TOP10F&#39; expression and cleared-lysate protocol, not purified-enzyme or native-cell assay conditions.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-H120A protein in cleared lysate</td>
+  <td>has_reported_expression_readout</td>
+  <td>Paired soluble and insoluble CouO expression gels</td>
+  <td>S7 lane 6 is H120A in paired soluble/insoluble panels. H120A is poorly represented in the soluble fraction; densitometry estimates 5.5% CouO, so the source does not establish an absent protein or purified functional null.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s007<br>DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Reported pET26b-CouO PCR-template plasmid</td>
+  <td>was_mutagenesis_template_for</td>
+  <td>pMS470delta8 CouO-H120N expression construct</td>
+  <td>Overlap-extension PCR used literal forward 5-prime GGCACGCGTTCAACCGGCTCACC and reverse 5-prime GGTGAGCCGGTTGAACGCGTGCC, followed by the pMS outer primers and Gibson assembly. The mutagenic pair is reverse-complementary and a native-template reconstruction gives only H120N in the 230-aa core. The reported sequencing confirmation is not an independently obtained full experimental construct sequence.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s009<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>pMS470delta8 CouO-H120N expression construct</td>
+  <td>encodes_engineered_variant</td>
+  <td>Pavkov-Keller CouO-H120N protein in cleared lysate</td>
+  <td>The source names the H120N substitution in the CouO construct panel. DNA and protein are distinct nodes; the native UniProt accession is not assigned to this engineered variant.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s009</td>
+</tr>
+<tr>
+  <td>E. coli TOP10F&#39; CouO expression host</td>
+  <td>expressed</td>
+  <td>Pavkov-Keller CouO-H120N protein in cleared lysate</td>
+  <td>This member of the pMS470 series uses the reported TOP10F&#39; expression and cleared-lysate protocol, not purified-enzyme or native-cell assay conditions.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-H120N protein in cleared lysate</td>
+  <td>has_reported_expression_readout</td>
+  <td>Paired soluble and insoluble CouO expression gels</td>
+  <td>S7 lane 7 is H120N in paired soluble/insoluble panels. The displayed band is an expression readout, not proof of equal folding, purity or active fraction.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s007</td>
+</tr>
+<tr>
+  <td>Reported pET26b-CouO PCR-template plasmid</td>
+  <td>was_mutagenesis_template_for</td>
+  <td>pMS470delta8 CouO-R121A expression construct</td>
+  <td>Overlap-extension PCR used literal forward 5-prime CACGCGTTCCACGCGCTCACCCGGC and reverse 5-prime GCCGGGTGAGCGCGTGGAACGCGTG, followed by the pMS outer primers and Gibson assembly. The mutagenic pair is reverse-complementary and a native-template reconstruction gives only R121A in the 230-aa core. The reported sequencing confirmation is not an independently obtained full experimental construct sequence.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s009<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>pMS470delta8 CouO-R121A expression construct</td>
+  <td>encodes_engineered_variant</td>
+  <td>Pavkov-Keller CouO-R121A protein in cleared lysate</td>
+  <td>The source names the R121A substitution in the CouO construct panel. DNA and protein are distinct nodes; the native UniProt accession is not assigned to this engineered variant.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s009</td>
+</tr>
+<tr>
+  <td>E. coli TOP10F&#39; CouO expression host</td>
+  <td>expressed</td>
+  <td>Pavkov-Keller CouO-R121A protein in cleared lysate</td>
+  <td>This member of the pMS470 series uses the reported TOP10F&#39; expression and cleared-lysate protocol, not purified-enzyme or native-cell assay conditions.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-R121A protein in cleared lysate</td>
+  <td>has_reported_expression_readout</td>
+  <td>Paired soluble and insoluble CouO expression gels</td>
+  <td>S7 lane 8 is R121A in paired soluble/insoluble panels. The displayed band is an expression readout, not proof of equal folding, purity or active fraction.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s007</td>
+</tr>
+<tr>
+  <td>Reported pET26b-CouO PCR-template plasmid</td>
+  <td>was_mutagenesis_template_for</td>
+  <td>pMS470delta8 CouO-R121L expression construct</td>
+  <td>Overlap-extension PCR used literal forward 5-prime CACGCGTTCCACCTGCTCACCCGGC and reverse 5-prime GCCGGGTGAGCAGGTGGAACGCGTG, followed by the pMS outer primers and Gibson assembly. The mutagenic pair is reverse-complementary and a native-template reconstruction gives only R121L in the 230-aa core. The reported sequencing confirmation is not an independently obtained full experimental construct sequence.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s009<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>pMS470delta8 CouO-R121L expression construct</td>
+  <td>encodes_engineered_variant</td>
+  <td>Pavkov-Keller CouO-R121L protein in cleared lysate</td>
+  <td>The source names the R121L substitution in the CouO construct panel. DNA and protein are distinct nodes; the native UniProt accession is not assigned to this engineered variant.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s009</td>
+</tr>
+<tr>
+  <td>E. coli TOP10F&#39; CouO expression host</td>
+  <td>expressed</td>
+  <td>Pavkov-Keller CouO-R121L protein in cleared lysate</td>
+  <td>This member of the pMS470 series uses the reported TOP10F&#39; expression and cleared-lysate protocol, not purified-enzyme or native-cell assay conditions.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-R121L protein in cleared lysate</td>
+  <td>has_reported_expression_readout</td>
+  <td>Paired soluble and insoluble CouO expression gels</td>
+  <td>S7 lane 9 is R121L in paired soluble/insoluble panels. The displayed band is an expression readout, not proof of equal folding, purity or active fraction.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s007</td>
+</tr>
+<tr>
+  <td>Reported pET26b-CouO PCR-template plasmid</td>
+  <td>was_mutagenesis_template_for</td>
+  <td>pMS470delta8 CouO-Y216F expression construct</td>
+  <td>Overlap-extension PCR used literal forward 5-prime GATGACCAGGGCTTCGGCGTTGCCAC and reverse 5-prime GTGGCAACGCCGAAGCCCTGGTCATC, followed by the pMS outer primers and Gibson assembly. The mutagenic pair is reverse-complementary and a native-template reconstruction gives only Y216F in the 230-aa core. The reported sequencing confirmation is not an independently obtained full experimental construct sequence.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s009<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>pMS470delta8 CouO-Y216F expression construct</td>
+  <td>encodes_engineered_variant</td>
+  <td>Pavkov-Keller CouO-Y216F protein in cleared lysate</td>
+  <td>The source names the Y216F substitution in the CouO construct panel. DNA and protein are distinct nodes; the native UniProt accession is not assigned to this engineered variant.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s009</td>
+</tr>
+<tr>
+  <td>E. coli TOP10F&#39; CouO expression host</td>
+  <td>expressed</td>
+  <td>Pavkov-Keller CouO-Y216F protein in cleared lysate</td>
+  <td>This member of the pMS470 series uses the reported TOP10F&#39; expression and cleared-lysate protocol, not purified-enzyme or native-cell assay conditions.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-Y216F protein in cleared lysate</td>
+  <td>has_reported_expression_readout</td>
+  <td>Paired soluble and insoluble CouO expression gels</td>
+  <td>S7 lane 10 is Y216F in paired soluble/insoluble panels. The displayed band is an expression readout, not proof of equal folding, purity or active fraction.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s007</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">21 nodes, 31 edges</span></h2>
+<p class="sub">Complete eleven-row protein-content table and ten mutant endpoint comparisons, with WT, buffer and empty-vector controls; min/max uncertainty and the S6 product-label conflict remain explicit. Author-agent review #556. Native identity, engineered preparations and measured or inferred outcomes remain distinct; these precursor/surrogate studies do not demonstrate synthesis of mature coumermycin A1.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>N-(4,7-Dihydroxy-2-oxo-2H-chromen-3-yl)benzamide</td>
+  <td>is_acceptor_in</td>
+  <td>Twenty-four-hour CouO surrogate methylation assay</td>
+  <td>The 0.1-mL reactions used 0.5 mM synthetic benzamide substrate (10 mM stock in DMSO), 50 mM sodium phosphate pH 7, 0.1 mg/mL BSA, 30 C and 1000 rpm for 24 h. Reactions were stopped at 80 C for 15 min, clarified and passed through a 3-kDa filter. This substrate is not the native CouL mono-/bis-amide or mature antibiotic.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s006</td>
+</tr>
+<tr>
+  <td>Directly supplied S-adenosyl-L-methionine donor</td>
+  <td>is_donor_in</td>
+  <td>Twenty-four-hour CouO surrogate methylation assay</td>
+  <td>SAM dihydrochloride was directly supplied at 2 mM. No auxiliary SAM-regeneration enzyme or nonnatural donor is reported in this assay.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Densitometric soluble-CouO loading normalization</td>
+  <td>sets_calculated_target_loading_for</td>
+  <td>Twenty-four-hour CouO surrogate methylation assay</td>
+  <td>The authors calculate 28.6 ug CouO per reaction, chosen to match the least-soluble H120A preparation. Figure 7 is normalized to apparent expressed-protein content; S2 values are target abundance within cleared lysates, not purified sample concentrations.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s010</td>
+</tr>
+<tr>
+  <td>Densitometric soluble-CouO loading normalization</td>
+  <td>does_not_equalize</td>
+  <td>Unequal lysate background and unknown active fraction</td>
+  <td>The target-content fractions range from 5.5% to 33.5%; therefore equal estimated target mass does not equalize total lysate protein or host background. Densitometry also does not measure the folded active fraction. Differences can constrain but do not uniquely isolate residue-specific catalytic chemistry.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s010<br>DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Reported empty-pMS470d8 lysate control</td>
+  <td>was_reported_negative_control_for</td>
+  <td>Twenty-four-hour CouO surrogate methylation assay</td>
+  <td>The authors report no CouO activity with empty pMS470d8. Because of that observation they used buffer-only blanks; no numerical empty-vector readout or detection limit is supplied.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Displayed sodium-phosphate-buffer blank</td>
+  <td>was_displayed_negative_control_for</td>
+  <td>Twenty-four-hour CouO surrogate methylation assay</td>
+  <td>Figure 7 Blank and S1 File panel B concern 50 mM sodium phosphate pH 7, not an equal-protein host-lysate control. The plotted blank does not establish absence of all lysate matrix effects.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s008</td>
+</tr>
+<tr>
+  <td>Twenty-four-hour CouO surrogate methylation assay</td>
+  <td>has_reported_chromatographic_readouts</td>
+  <td>Twelve HPLC/MS supplement panels</td>
+  <td>A Shimadzu Nexera HPLC-MS with an Agilent Poroshell 120 EC-C18 100x3-mm, 2.7-um column was used. All twelve displayed chromatograms have PDA 305-nm headers; captions E/G call them HPLC(MS), a retained label discrepancy. Panels A/B are WT/buffer and C-L follow the ten mutants. They are not raw triplicate integration tables or a full calibration curve; exact numerical means are not invented.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s008</td>
+</tr>
+<tr>
+  <td>Twenty-four-hour CouO surrogate methylation assay</td>
+  <td>forms_source_assigned_surrogate</td>
+  <td>Source-assigned C8-methylated benzamide surrogate</td>
+  <td>The study assigns C8 methylation. WT panel A reports nominal m/z 312 [M+H]+, 334 [M+Na]+ and 350 [M+K]+, whereas blank panel B reports substrate ions 298/320. These support the source assignment but are not a new independent regiochemical determination for each variant or evidence of mature-antibiotic synthesis.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s008</td>
+</tr>
+<tr>
+  <td>Source-assigned C8-methylated benzamide surrogate</td>
+  <td>has_conflicting_supplement_label</td>
+  <td>S6 methyl drawing versus 8-allyl product label</td>
+  <td>S6 draws a methyl substituent and names SAM as donor but prints 8-allyl in the product name. The methylation paper and m/z 312 WT product readout are retained alongside this conflict. The label alone is not curated as an allylation experiment.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s006<br>DOI:10.1371/journal.pone.0171056.s008</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-WT protein in cleared lysate</td>
+  <td>is_reference_endpoint_for</td>
+  <td>Twenty-four-hour CouO surrogate methylation assay</td>
+  <td>Figure 7 uses WT product formation as the 100% reference. Bars are triplicate means with observed minima/maxima, not SD, SE, confidence intervals, kcat or absolute molar conversion. The source does not establish independent biological replication.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-WT protein in cleared lysate</td>
+  <td>has_reported_content_estimate_for</td>
+  <td>Densitometric soluble-CouO loading normalization</td>
+  <td>S2 Table reports 28.4% CouO in cleared lysate, 8.86 mg/mL total protein and 2.52 mg/mL estimated methyltransferase. Target fraction was measured by Coomassie-band densitometry and total protein by the Bio-Rad assay. These are preparation concentrations, not assay conversion, final loading or purified-protein purity.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s010<br>DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-H15A protein in cleared lysate</td>
+  <td>has_reported_content_estimate_for</td>
+  <td>Densitometric soluble-CouO loading normalization</td>
+  <td>S2 Table reports 29.4% CouO in cleared lysate, 7.54 mg/mL total protein and 2.22 mg/mL estimated methyltransferase. Target fraction was measured by Coomassie-band densitometry and total protein by the Bio-Rad assay. These are preparation concentrations, not assay conversion, final loading or purified-protein purity.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s010<br>DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-H15A protein in cleared lysate</td>
+  <td>has_measured_relative_endpoint_in</td>
+  <td>Twenty-four-hour CouO surrogate methylation assay</td>
+  <td>The product bar is near WT; the source groups this as little affected. The result is the stated 24-hour lysate assay with triplicate min/max bars; no exact unreported mean, rate constant or native precursor turnover is inferred.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s008</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-H15N protein in cleared lysate</td>
+  <td>has_reported_content_estimate_for</td>
+  <td>Densitometric soluble-CouO loading normalization</td>
+  <td>S2 Table reports 28.6% CouO in cleared lysate, 9.13 mg/mL total protein and 2.61 mg/mL estimated methyltransferase. Target fraction was measured by Coomassie-band densitometry and total protein by the Bio-Rad assay. These are preparation concentrations, not assay conversion, final loading or purified-protein purity.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s010<br>DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-H15N protein in cleared lysate</td>
+  <td>has_measured_relative_endpoint_in</td>
+  <td>Twenty-four-hour CouO surrogate methylation assay</td>
+  <td>The product bar is visibly about two-thirds of WT, despite prose grouping H15N with little-affected H15A. This is a visual approximation, not a tabulated numerical mean. The result is the stated 24-hour lysate assay with triplicate min/max bars; no exact unreported mean, rate constant or native precursor turnover is inferred.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s008</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-R24A protein in cleared lysate</td>
+  <td>has_reported_content_estimate_for</td>
+  <td>Densitometric soluble-CouO loading normalization</td>
+  <td>S2 Table reports 28.6% CouO in cleared lysate, 10.77 mg/mL total protein and 3.08 mg/mL estimated methyltransferase. Target fraction was measured by Coomassie-band densitometry and total protein by the Bio-Rad assay. These are preparation concentrations, not assay conversion, final loading or purified-protein purity.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s010<br>DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-R24A protein in cleared lysate</td>
+  <td>has_measured_relative_endpoint_in</td>
+  <td>Twenty-four-hour CouO surrogate methylation assay</td>
+  <td>The product bar is near WT; no statistically established enhancement is inferred from its slightly higher displayed height. The result is the stated 24-hour lysate assay with triplicate min/max bars; no exact unreported mean, rate constant or native precursor turnover is inferred.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s008</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-H117A protein in cleared lysate</td>
+  <td>has_reported_content_estimate_for</td>
+  <td>Densitometric soluble-CouO loading normalization</td>
+  <td>S2 Table reports 20.3% CouO in cleared lysate, 13.80 mg/mL total protein and 2.80 mg/mL estimated methyltransferase. Target fraction was measured by Coomassie-band densitometry and total protein by the Bio-Rad assay. These are preparation concentrations, not assay conversion, final loading or purified-protein purity.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s010<br>DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-H117A protein in cleared lysate</td>
+  <td>has_measured_relative_endpoint_in</td>
+  <td>Twenty-four-hour CouO surrogate methylation assay</td>
+  <td>A low but nonzero product bar is displayed, well below WT; no absolute zero or uniquely catalytic impairment is asserted. The result is the stated 24-hour lysate assay with triplicate min/max bars; no exact unreported mean, rate constant or native precursor turnover is inferred.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s008</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-H117S protein in cleared lysate</td>
+  <td>has_reported_content_estimate_for</td>
+  <td>Densitometric soluble-CouO loading normalization</td>
+  <td>S2 Table reports 14.3% CouO in cleared lysate, 5.32 mg/mL total protein and 0.76 mg/mL estimated methyltransferase. Target fraction was measured by Coomassie-band densitometry and total protein by the Bio-Rad assay. These are preparation concentrations, not assay conversion, final loading or purified-protein purity.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s010<br>DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-H117S protein in cleared lysate</td>
+  <td>has_measured_relative_endpoint_in</td>
+  <td>Twenty-four-hour CouO surrogate methylation assay</td>
+  <td>Product formation is strongly reduced but retained; the preparation also has reduced soluble expression. The result is the stated 24-hour lysate assay with triplicate min/max bars; no exact unreported mean, rate constant or native precursor turnover is inferred.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s008</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-H120A protein in cleared lysate</td>
+  <td>has_reported_content_estimate_for</td>
+  <td>Densitometric soluble-CouO loading normalization</td>
+  <td>S2 Table reports 5.5% CouO in cleared lysate, 6.50 mg/mL total protein and 0.36 mg/mL estimated methyltransferase. Target fraction was measured by Coomassie-band densitometry and total protein by the Bio-Rad assay. These are preparation concentrations, not assay conversion, final loading or purified-protein purity.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s010<br>DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-H120A protein in cleared lysate</td>
+  <td>has_measured_relative_endpoint_in</td>
+  <td>Twenty-four-hour CouO surrogate methylation assay</td>
+  <td>A small residual product bar is displayed despite the weak soluble band; the source does not establish a functional-null protein. The result is the stated 24-hour lysate assay with triplicate min/max bars; no exact unreported mean, rate constant or native precursor turnover is inferred.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s008</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-H120N protein in cleared lysate</td>
+  <td>has_reported_content_estimate_for</td>
+  <td>Densitometric soluble-CouO loading normalization</td>
+  <td>S2 Table reports 15.8% CouO in cleared lysate, 8.45 mg/mL total protein and 1.34 mg/mL estimated methyltransferase. Target fraction was measured by Coomassie-band densitometry and total protein by the Bio-Rad assay. These are preparation concentrations, not assay conversion, final loading or purified-protein purity.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s010<br>DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-H120N protein in cleared lysate</td>
+  <td>has_measured_relative_endpoint_in</td>
+  <td>Twenty-four-hour CouO surrogate methylation assay</td>
+  <td>Residual product is displayed below WT; its soluble target fraction is also reduced. The result is the stated 24-hour lysate assay with triplicate min/max bars; no exact unreported mean, rate constant or native precursor turnover is inferred.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s008</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-R121A protein in cleared lysate</td>
+  <td>has_reported_content_estimate_for</td>
+  <td>Densitometric soluble-CouO loading normalization</td>
+  <td>S2 Table reports 33.5% CouO in cleared lysate, 8.49 mg/mL total protein and 2.84 mg/mL estimated methyltransferase. Target fraction was measured by Coomassie-band densitometry and total protein by the Bio-Rad assay. These are preparation concentrations, not assay conversion, final loading or purified-protein purity.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s010<br>DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-R121A protein in cleared lysate</td>
+  <td>has_measured_relative_endpoint_in</td>
+  <td>Twenty-four-hour CouO surrogate methylation assay</td>
+  <td>The product bar is near baseline, described as almost complete loss, not a demonstrated absolute zero. The result is the stated 24-hour lysate assay with triplicate min/max bars; no exact unreported mean, rate constant or native precursor turnover is inferred.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s008</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-R121L protein in cleared lysate</td>
+  <td>has_reported_content_estimate_for</td>
+  <td>Densitometric soluble-CouO loading normalization</td>
+  <td>S2 Table reports 28.9% CouO in cleared lysate, 7.00 mg/mL total protein and 2.02 mg/mL estimated methyltransferase. Target fraction was measured by Coomassie-band densitometry and total protein by the Bio-Rad assay. These are preparation concentrations, not assay conversion, final loading or purified-protein purity.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s010<br>DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-R121L protein in cleared lysate</td>
+  <td>has_measured_relative_endpoint_in</td>
+  <td>Twenty-four-hour CouO surrogate methylation assay</td>
+  <td>The product bar is near baseline, described as almost complete loss, not a demonstrated absolute zero. The result is the stated 24-hour lysate assay with triplicate min/max bars; no exact unreported mean, rate constant or native precursor turnover is inferred.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s008</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-Y216F protein in cleared lysate</td>
+  <td>has_reported_content_estimate_for</td>
+  <td>Densitometric soluble-CouO loading normalization</td>
+  <td>S2 Table reports 19.2% CouO in cleared lysate, 10.78 mg/mL total protein and 2.07 mg/mL estimated methyltransferase. Target fraction was measured by Coomassie-band densitometry and total protein by the Bio-Rad assay. These are preparation concentrations, not assay conversion, final loading or purified-protein purity.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s010<br>DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Pavkov-Keller CouO-Y216F protein in cleared lysate</td>
+  <td>has_measured_relative_endpoint_in</td>
+  <td>Twenty-four-hour CouO surrogate methylation assay</td>
+  <td>The product bar is near WT; retained endpoint activity does not prove unchanged initial kinetics or binding. The result is the stated 24-hour lysate assay with triplicate min/max bars; no exact unreported mean, rate constant or native precursor turnover is inferred.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s008</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">12 nodes, 13 edges</span></h2>
+<p class="sub">CouO-SAH coordinates, chain-B terminal omission, Glu4/Glu6 disagreement and bounded SEC/PISA dimer evidence, distinct from docking and catalytic interpretations. Author-agent review #556. Native identity, engineered preparations and measured or inferred outcomes remain distinct; these precursor/surrogate studies do not demonstrate synthesis of mature coumermycin A1.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Deposited native CouO sequence reference</td>
+  <td>is_deposited_sequence_reference_for</td>
+  <td>Purified CouO crystallization preparation</td>
+  <td>5M58 deposits a 230-aa entity exactly matching Q9F8T9 with no encoded extension in the entity sequence. The 2012 primary abstract identifies recombinant CouO Q9F8T9, cloning, expression, purification and crystallization. Its full paper was not obtained here, so no uninspected tag-removal or expression protocol is assigned. Native sequence equality does not make this a native-cell protein sample.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8T9<br>https://files.rcsb.org/download/5M58.cif<br>DOI:10.1107/S1744309112017137</td>
+</tr>
+<tr>
+  <td>Purified CouO crystallization preparation</td>
+  <td>was_used_for_structure_determination</td>
+  <td>Deposited 5M58 CouO-SAH structural model</td>
+  <td>The 2017 study reports molecular replacement and refinement at 2.05 A, with two CouO chains in the asymmetric unit. Although prose says both molecules were completely modeled, current coordinates model A1-230 and B1-229; chain-B Ala230 is explicitly unobserved. No tag cleavage or truncation is inferred from missing density.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>https://files.rcsb.org/download/5M58.cif</td>
+</tr>
+<tr>
+  <td>Deposited 5M58 CouO-SAH structural model</td>
+  <td>contains_observed_ligand</td>
+  <td>S-Adenosyl-L-homocysteine in 5M58</td>
+  <td>Each chain has one SAH with 26 heavy atoms. The only other nonprotein species in the coordinate model is water. S1 Figure shows an SAH omit map at 3 sigma. Neither SAM nor coumarin is deposited as an observed bound ligand.</td>
+  <td class="mono">https://files.rcsb.org/download/5M58.cif<br>DOI:10.1371/journal.pone.0171056.s001</td>
+</tr>
+<tr>
+  <td>S-Adenosyl-L-homocysteine in 5M58</td>
+  <td>has_observed_polar_contacts</td>
+  <td>Observed Glu4/Asp70-SAH polar geometry</td>
+  <td>Independent chain-A/B distances are 4-OE1 to SAH-N6 2.652/2.858 A; 70-OD1 to SAH-O2&#39; 2.648/2.700 A; 70-OD2 to SAH-O3&#39; 2.669/2.642 A. These are polar-contact geometries, not measured proton transfer or ligand binding constants. The N-terminal access/flexibility explanation in the paper remains a structural interpretation, not a measured trajectory.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>https://files.rcsb.org/download/5M58.cif</td>
+</tr>
+<tr>
+  <td>Observed Glu4/Asp70-SAH polar geometry</td>
+  <td>has_conflicting_residue_label</td>
+  <td>Main-text Glu4 versus supplement Glu6 label</td>
+  <td>The main text names Glu4; S3 Figure and its caption label Glu6. Both native sequence and 5M58 identify residue 4 as Glu and residue 6 as Ile. The source discrepancy is retained; a nonexistent native Glu6 is not assigned as the measured contact.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s003<br>https://files.rcsb.org/download/5M58.cif</td>
+</tr>
+<tr>
+  <td>Purified CouO crystallization preparation</td>
+  <td>has_size_exclusion_readout</td>
+  <td>CouO SEC peak B with apparent mass 52.4 kDa</td>
+  <td>S2 reports HiLoad 16/60 Superdex 200 pg, 1 mL/min, Hepes pH 7 and 100 mM NaCl. A standard-based log-mass/elution-volume fit gave apparent mass 52.4 kDa for peak B, whose material was used for crystallization. Peak A is labelled aggregates. A prominent later peak is not assigned in the caption; it is not silently identified as CouO or omitted from interpretation of the trace.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s002</td>
+</tr>
+<tr>
+  <td>CouO SEC peak B with apparent mass 52.4 kDa</td>
+  <td>supports_assembly_interpretation</td>
+  <td>PISA-assigned and SEC-supported CouO homodimer</td>
+  <td>The apparent mass is near twice the roughly 26-kDa subunit mass, supporting a solution-dimer interpretation for the selected fraction. SEC hydrodynamic mass does not uniquely establish native-cell stoichiometry or the identity of every peak.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056.s002<br>DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Deposited 5M58 CouO-SAH structural model</td>
+  <td>has_software_assigned_assembly</td>
+  <td>PISA-assigned and SEC-supported CouO homodimer</td>
+  <td>5M58 biological assembly 1 is PISA-defined and dimeric. The paper describes a mainly hydrophobic cap-helix interface. This is a structural assembly model, not a direct in-vivo oligomer count.</td>
+  <td class="mono">https://files.rcsb.org/download/5M58.cif<br>DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s002</td>
+</tr>
+<tr>
+  <td>Deposited 5M58 CouO-SAH structural model</td>
+  <td>served_as_template_for</td>
+  <td>VINA coumarin docking models</td>
+  <td>VINA in YASARA used AMBER03 charges and 25 runs per ligand without water during docking; water was added during energy minimization. SAH/SAM-containing models and protonated or unprotonated substrates were tested. The roughly 3-A H120/R121 to substrate-7-OH geometry is modeled, not observed in 5M58.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Three modeled coumarin scaffolds</td>
+  <td>were_modelled_in</td>
+  <td>VINA coumarin docking models</td>
+  <td>The modeled scaffolds are the benzamide assay substrate, 3-amino-4,7-dihydroxycoumarin and 4,7-dihydroxycoumarin. Docking a scaffold is not evidence that it was converted in the 2017 variant assay or crystallized as a bound substrate.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>VINA coumarin docking models</td>
+  <td>supports_proposed_catalytic_model</td>
+  <td>Proposed His120/Arg121-assisted C8 methylation</td>
+  <td>The authors propose His120-assisted 7-OH deprotonation, Arg121 stabilization and C8 attack on SAM, followed by rearomatization. H120/Phe147 stacking and H117/Arg116 positioning are mechanistic interpretations. Variant effects and residual activity at pH 7 do not directly observe proton transfer or uniquely exclude folding/binding contributions.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056</td>
+</tr>
+<tr>
+  <td>Deposited 5M58 CouO-SAH structural model</td>
+  <td>was_template_for_homology_model</td>
+  <td>CouO-template NovO homology model</td>
+  <td>This paper generated a NovO homology model from CouO and compared H117/N117 and V145/C145. It is not a deposited experimental NovO complex in this source, nor an additional assayed CouO variant. Other structural homologs are not promoted to coumermycin biosynthetic participants.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056<br>DOI:10.1371/journal.pone.0171056.s004</td>
+</tr>
+<tr>
+  <td>CouO-template NovO homology model</td>
+  <td>supports_proposed_shared_mechanism</td>
+  <td>Proposed His120/Arg121-assisted C8 methylation</td>
+  <td>Active-site similarity motivates a shared-mechanism hypothesis. It does not replace enzyme-specific assays, make all substrate preferences identical or turn suggested future mutations into measured protein preparations.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0171056</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">9 nodes, 10 edges</span></h2>
+<p class="sub">Native CouN1/CouN7 identities and database-versus-assay boundaries. Partial curation; review #570. Native references, experimental preparations and inferred states remain distinct. Source fields and SEEDED status are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Deposited coumermycin cluster locus</td>
+  <td>contains</td>
+  <td>Native couN1 locus</td>
+  <td>AF235050.4 plus-strand CDS 13526..13813, 1-based inclusive. Source: S. rishiriensis DSM 40489, taxon 68264.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Native couN1 locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native CouN1 sequence reference</td>
+  <td>Table-11 CDS-aware translation equals AAG29786.1 and all 95 UniProt residues. Historical name cumI in .1; AF235050.1/.2:9413..9700; .3:13524..13811. All four deposited protein sequences agree.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U6<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>CouN1 database annotation</td>
+  <td>does_not_identify_experimental_sample</td>
+  <td>Native reference versus assay identity limits</td>
+  <td>Native sequence agreement does not identify a complete recombinant fusion, expression strain or experimental aliquot.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U6</td>
+</tr>
+<tr>
+  <td>Deposited coumermycin cluster locus</td>
+  <td>contains</td>
+  <td>Native couN7 locus</td>
+  <td>AF235050.4 plus-strand CDS 19697..20542, 1-based inclusive. Source: S. rishiriensis DSM 40489, taxon 68264.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Native couN7 locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native CouN7 sequence reference</td>
+  <td>Table-11 CDS-aware translation equals AAG29792.1 and all 281 UniProt residues. Historical name cumL in .1; AF235050.1:15099..15944; .2:15582..16427; .3:19693..20538. All four deposited protein sequences agree.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U0<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>CouN7 database annotation</td>
+  <td>does_not_identify_experimental_sample</td>
+  <td>Native reference versus assay identity limits</td>
+  <td>Native sequence agreement does not identify a complete recombinant fusion, expression strain or experimental aliquot.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U0</td>
+</tr>
+<tr>
+  <td>Native CouN1 sequence reference</td>
+  <td>has_database_annotation</td>
+  <td>CouN1 database annotation</td>
+  <td>UniProt calls this an uncharacterized protein, with an inferred carrier domain at residues 32-81. Its automated phosphopantetheine annotation does not measure modification occupancy.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U6</td>
+</tr>
+<tr>
+  <td>Native CouN7 sequence reference</td>
+  <td>has_database_annotation</td>
+  <td>CouN7 database annotation</td>
+  <td>The submitted name is putative hydrolase. GO:0004806 triacylglycerol lipase activity is IEA:TreeGrafter, not a measured coumermycin-pathway reaction; it is not adopted as such.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U0</td>
+</tr>
+<tr>
+  <td>Native CouN7 sequence reference</td>
+  <td>contains_reference_residue</td>
+  <td>Native CouN7 Ser101</td>
+  <td>Positions 96-106 are YLFASSGGGVT; residue 101 is Ser in all four deposits. This does not independently establish experimental construct numbering or a complete S101A sequence.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U0</td>
+</tr>
+<tr>
+  <td>Native CouN7 Ser101</td>
+  <td>has_construct_mapping_limit</td>
+  <td>Native reference versus assay identity limits</td>
+  <td>No experimental plasmid sequence or tag-junction reconstruction was obtained for the abstract-level study.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">15 nodes, 16 edges</span></h2>
+<p class="sub">Abstract-bounded 2006 loading and transfer evidence. Partial curation; review #570. Native references, experimental preparations and inferred states remain distinct. Source fields and SEEDED status are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native CouN1 sequence reference</td>
+  <td>is_native_reference_for</td>
+  <td>Experimental apo-CouN1</td>
+  <td>Reported E. coli-purified protein; tags unspecified.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U6<br>DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Native CouN7 sequence reference</td>
+  <td>is_native_reference_for</td>
+  <td>Experimental CouN7</td>
+  <td>Reported E. coli-purified enzyme; exact fusion unspecified.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U0<br>DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Assay Sfp reagent</td>
+  <td>catalyzed</td>
+  <td>Carrier loading</td>
+  <td>Sfp installs the supplied acyl-pantetheinyl moieties.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Experimental apo-CouN1</td>
+  <td>was_substrate_in</td>
+  <td>Carrier loading</td>
+  <td>Apo carrier, not already loaded donor.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Synthetic pyrrolyl and methylpyrrolyl CoAs</td>
+  <td>provided_donors_for</td>
+  <td>Carrier loading</td>
+  <td>Chemically supplied substrates, not native precursor flux.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Carrier loading</td>
+  <td>formed</td>
+  <td>Acyl-holo CouN1 donor forms</td>
+  <td>Carrier-linked thioesters.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Acyl-holo CouN1 donor forms</td>
+  <td>was_donor_in</td>
+  <td>Surrogate transfer assay</td>
+  <td>Carrier-tethered acyl transfer.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Descarbamoylnovobiocin acceptor</td>
+  <td>was_acceptor_in</td>
+  <td>Surrogate transfer assay</td>
+  <td>Noviose-sugar acceptor.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Experimental CouN7</td>
+  <td>catalyzed</td>
+  <td>Surrogate transfer assay</td>
+  <td>Acyltransferase activity.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Surrogate transfer assay</td>
+  <td>formed_reported_product</td>
+  <td>Methylpyrrolyl surrogate product</td>
+  <td>With methylpyrrolyl donor, the product has CH3 instead of clorobiocin ring Cl; not clorobiocin.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Acyl-holo CouN1 donor forms</td>
+  <td>provided_methylpyrrolyl_donor_for</td>
+  <td>Double-transfer assay</td>
+  <td>This result concerns the methylated donor form.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Coumermycin penultimate precursor</td>
+  <td>was_acceptor_in</td>
+  <td>Double-transfer assay</td>
+  <td>Distinct from the monomeric surrogate.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Experimental CouN7</td>
+  <td>catalyzed</td>
+  <td>Double-transfer assay</td>
+  <td>Two acyl transfers.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Double-transfer assay</td>
+  <td>formed_reported_product</td>
+  <td>coumermycin A1</td>
+  <td>Source-reported pathway completion in vitro.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Surrogate transfer assay</td>
+  <td>has_evidence_limit</td>
+  <td>Abstract-access limits</td>
+  <td>No assay concentrations, kinetics, yields or exact Sfp accession inferred.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+<tr>
+  <td>Double-transfer assay</td>
+  <td>has_evidence_limit</td>
+  <td>Abstract-access limits</td>
+  <td>No native-cell flux, microscopic site order or stable protein complex established here.</td>
+  <td class="mono">DOI:10.1021/bi060784e</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">12 nodes, 13 edges</span></h2>
+<p class="sub">Abstract-bounded 2007 reversible transfer and intermediate evidence. Partial curation; review #570. Native references, experimental preparations and inferred states remain distinct. Source fields and SEEDED status are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native CouN7 sequence reference</td>
+  <td>is_native_reference_for</td>
+  <td>Experimental CouN7</td>
+  <td>Reference identity is not complete assay-construct identity.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U0<br>DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+<tr>
+  <td>Experimental CouN7</td>
+  <td>has_reported_engineered_variant</td>
+  <td>Reported CouN7 S101A preparation</td>
+  <td>S101A is not assigned the native accession; primers and complete sequence were not obtained.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+<tr>
+  <td>Radiolabeled acetyl-S-CouN1 donor</td>
+  <td>was_used_in</td>
+  <td>Transient enzyme labeling</td>
+  <td>The donor carried carbon-14-labeled acetyl.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+<tr>
+  <td>Experimental CouN7</td>
+  <td>was_transiently_labeled_in</td>
+  <td>Transient enzyme labeling</td>
+  <td>Covalent-label evidence, not an atomic structure.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+<tr>
+  <td>Transient enzyme labeling</td>
+  <td>supports_reported_intermediate</td>
+  <td>Reported O-acyl-Ser101-CouN7 intermediate</td>
+  <td>Combined labeling and mutational evidence supports the reported intermediate assignment.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+<tr>
+  <td>Reported CouN7 S101A preparation</td>
+  <td>had_reported_activity_loss</td>
+  <td>Reported S101A activity loss</td>
+  <td>The source calls the substitution inactivating; no quantitative residual activity is supplied here.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+<tr>
+  <td>Reported S101A activity loss</td>
+  <td>supports_reported_intermediate</td>
+  <td>Reported O-acyl-Ser101-CouN7 intermediate</td>
+  <td>Mutation supports but does not independently image the acylated serine.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+<tr>
+  <td>Experimental CouN7</td>
+  <td>catalyzed</td>
+  <td>Bidirectional coumermycin-arm transfer</td>
+  <td>Both directions on both coumermycin arms.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+<tr>
+  <td>Experimental CouN7</td>
+  <td>catalyzed</td>
+  <td>Inter-scaffold acyl shuttling</td>
+  <td>Net acyl exchange between scaffolds, including surrogate groups.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+<tr>
+  <td>Descarbamoylnovobiocin scaffold</td>
+  <td>participated_in</td>
+  <td>Inter-scaffold acyl shuttling</td>
+  <td>Source-named scaffold; no universal substrate preference inferred.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+<tr>
+  <td>coumermycin A1</td>
+  <td>participated_in</td>
+  <td>Inter-scaffold acyl shuttling</td>
+  <td>Transfer reported in both directions.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+<tr>
+  <td>Reported O-acyl-Ser101-CouN7 intermediate</td>
+  <td>has_interpretation_limit</td>
+  <td>Mechanistic and construct limits</td>
+  <td>No independently reconstructed mutant, folding control, equilibrium constant or catalytic rate is supplied by the inspected abstract.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+<tr>
+  <td>Bidirectional coumermycin-arm transfer</td>
+  <td>has_interpretation_limit</td>
+  <td>Mechanistic and construct limits</td>
+  <td>No stable assembly or native-cell reverse flux follows from this in-vitro result.</td>
+  <td class="mono">DOI:10.1016/j.chembiol.2007.05.007</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">14 nodes, 15 edges</span></h2>
+<p class="sub">Abstract-level substrate breadth with separately inspected chemical supporting material. Partial curation; review #570. Native references, experimental preparations and inferred states remain distinct. Source fields and SEEDED status are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native CouN1 sequence reference</td>
+  <td>is_native_reference_for</td>
+  <td>Experimental CouN1</td>
+  <td>Native reference, not an experimental fusion sequence.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U6<br>DOI:10.1021/bi700433v</td>
+</tr>
+<tr>
+  <td>Native CouN7 sequence reference</td>
+  <td>is_native_reference_for</td>
+  <td>Experimental CouN7</td>
+  <td>Native reference, not an experimental fusion sequence.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U0<br>DOI:10.1021/bi700433v</td>
+</tr>
+<tr>
+  <td>Experimental CouN1</td>
+  <td>was_substrate_in</td>
+  <td>Carrier-loading panel</td>
+  <td>Purified carrier tested for priming.</td>
+  <td class="mono">DOI:10.1021/bi700433v</td>
+</tr>
+<tr>
+  <td>Assay Sfp reagent</td>
+  <td>catalyzed</td>
+  <td>Carrier-loading panel</td>
+  <td>Assay reagent, not a proven native cluster partner; accession unresolved.</td>
+  <td class="mono">DOI:10.1021/bi700433v</td>
+</tr>
+<tr>
+  <td>Synthetic CoA donor panel</td>
+  <td>were_tested_in</td>
+  <td>Carrier-loading panel</td>
+  <td>Synthetic acyl-CoA analogues.</td>
+  <td class="mono">DOI:10.1021/bi700433v</td>
+</tr>
+<tr>
+  <td>Carrier-loading panel</td>
+  <td>formed_loaded_carrier_forms</td>
+  <td>Acyl-S-CouN1 panel</td>
+  <td>Acyl-carrier thioesters used in the transfer tests.</td>
+  <td class="mono">DOI:10.1021/bi700433v</td>
+</tr>
+<tr>
+  <td>Acyl-S-CouN1 panel</td>
+  <td>were_donors_in</td>
+  <td>Acyl-transfer panel</td>
+  <td>Carrier-linked substrates.</td>
+  <td class="mono">DOI:10.1021/bi700433v</td>
+</tr>
+<tr>
+  <td>Experimental CouN7</td>
+  <td>catalyzed</td>
+  <td>Acyl-transfer panel</td>
+  <td>Acyltransferase tested on the supplied panel.</td>
+  <td class="mono">DOI:10.1021/bi700433v</td>
+</tr>
+<tr>
+  <td>Descarbamoylnovobiocin</td>
+  <td>was_acceptor_in</td>
+  <td>Acyl-transfer panel</td>
+  <td>Transfer to the noviosyl 3-prime hydroxyl.</td>
+  <td class="mono">DOI:10.1021/bi700433v</td>
+</tr>
+<tr>
+  <td>Acyl-transfer panel</td>
+  <td>yielded_reported_panel</td>
+  <td>Reported 21 engineered variants</td>
+  <td>Aggregate reported count, not individually resolved product identities or coumermycin congeners.</td>
+  <td class="mono">DOI:10.1021/bi700433v</td>
+</tr>
+<tr>
+  <td>Supporting chemical-donor synthesis</td>
+  <td>prepared_reagents_for</td>
+  <td>Synthetic CoA donor panel</td>
+  <td>The sixteen-page supplement describes chemical synthesis and NMR/MS characterization of donors numbered 5-prime through 27-prime. These are precursor-reagent preparations, not protein purification or an enzyme-activity table.</td>
+  <td class="mono">DOI:10.1021/bi700433v.s002</td>
+</tr>
+<tr>
+  <td>Synthetic CoA donor panel</td>
+  <td>have_source_label_conflicts</td>
+  <td>Supplement name and drawing conflicts</td>
+  <td>For 9-prime, the heading says Thiaoxazole while the reagent text names thiazole and the drawing has N/S. For 17-prime, the heading says 2,5-dimethylisooxazole while reagent text says 3,5-dimethyl. The discrepancies remain unresolved; no exact chemical identifiers are assigned from these headings.</td>
+  <td class="mono">DOI:10.1021/bi700433v.s002</td>
+</tr>
+<tr>
+  <td>Supplement name and drawing conflicts</td>
+  <td>constrain_exact_identity</td>
+  <td>Individual acceptance and identity limits</td>
+  <td>No complete chemical reconstruction or silent correction is asserted.</td>
+  <td class="mono">DOI:10.1021/bi700433v.s002</td>
+</tr>
+<tr>
+  <td>Reported 21 engineered variants</td>
+  <td>have_evidence_limit</td>
+  <td>Individual acceptance and identity limits</td>
+  <td>Do not assign individual yields, rates, stereochemical structures or antibacterial observations from the abstract-level count.</td>
+  <td class="mono">DOI:10.1021/bi700433v</td>
+</tr>
+<tr>
+  <td>Supporting chemical-donor synthesis</td>
+  <td>does_not_establish_individual_conversion</td>
+  <td>Individual acceptance and identity limits</td>
+  <td>Twenty-three donor headings (5-prime through 27-prime) are not a one-to-one list of the twenty-one reported products. The inspected supplement cannot establish which two donors failed, or whether that is the explanation for the differing counts.</td>
+  <td class="mono">DOI:10.1021/bi700433v.s002<br>DOI:10.1021/bi700433v</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">19 nodes, 25 edges</span></h2>
+<p class="sub">Seven native CouR references and version-specific identity boundaries. Partial curation; author-agent review #571. Native sequences, engineered samples, host-conditioned findings and hypotheses remain distinct; source-owned fields and SEEDED status are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Deposited coumermycin locus</td>
+  <td>contains</td>
+  <td>couR1 native locus</td>
+  <td>AF235050.4 CDS 22911..24335, 1-based inclusive, strand 1; deposited strain DSM 40489.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>couR1 native locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native CouR1 sequence reference</td>
+  <td>Current table-11 CDS-aware translation equals AAG29795.1 and all 474 UniProt residues. Historical AF235050.1 name cumO; protein sequence unchanged across AF235050.1-.4.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8T7<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Native CouR1 sequence reference</td>
+  <td>has_annotation_and_sample_limit</td>
+  <td>Native annotation and experimental identity limits</td>
+  <td>Submitted uncharacterized protein; no direct catalytic substrate assignment in the database. Native sequence agreement does not identify a complete experimental construct or aliquot.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8T7<br>https://www.uniprot.org/uniprotkb/Q9F8T7</td>
+</tr>
+<tr>
+  <td>Deposited coumermycin locus</td>
+  <td>contains</td>
+  <td>couR2a native locus</td>
+  <td>AF235050.4 CDS 24335..24853, 1-based inclusive, strand 1; deposited strain DSM 40489.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>couR2a native locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native CouR2a sequence reference</td>
+  <td>Current table-11 CDS-aware translation equals AEO99210.1 and all 172 UniProt residues. No separate R2a/R2b CDS before AF235050.4.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/G1XVC1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Native CouR2a sequence reference</td>
+  <td>has_annotation_and_sample_limit</td>
+  <td>Native annotation and experimental identity limits</td>
+  <td>Submitted decarboxylase subunit; automated cofactor annotations do not measure substrate specificity or assembly. Native sequence agreement does not identify a complete experimental construct or aliquot.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/G1XVC1<br>https://www.uniprot.org/uniprotkb/G1XVC1</td>
+</tr>
+<tr>
+  <td>Deposited coumermycin locus</td>
+  <td>contains</td>
+  <td>couR2b native locus</td>
+  <td>AF235050.4 CDS 24850..25467, 1-based inclusive, strand 1; deposited strain DSM 40489.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>couR2b native locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native CouR2b sequence reference</td>
+  <td>Current table-11 CDS-aware translation equals AEO99211.1 and all 205 UniProt residues. No separate R2a/R2b CDS before AF235050.4.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/G1XVC2<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Native CouR2b sequence reference</td>
+  <td>has_annotation_and_sample_limit</td>
+  <td>Native annotation and experimental identity limits</td>
+  <td>Submitted decarboxylase subunit; automated cofactor annotations do not measure substrate specificity or assembly. Native sequence agreement does not identify a complete experimental construct or aliquot.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/G1XVC2<br>https://www.uniprot.org/uniprotkb/G1XVC2</td>
+</tr>
+<tr>
+  <td>Deposited coumermycin locus</td>
+  <td>contains</td>
+  <td>couR3 native locus</td>
+  <td>AF235050.4 CDS 25500..26408, 1-based inclusive, strand 1; deposited strain DSM 40489.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>couR3 native locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native CouR3 sequence reference</td>
+  <td>Current table-11 CDS-aware translation equals AAG29797.1 and all 302 UniProt residues. Historical AF235050.1 name cumQ; protein sequence unchanged across AF235050.1-.4.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8T5<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Native CouR3 sequence reference</td>
+  <td>has_annotation_and_sample_limit</td>
+  <td>Native annotation and experimental identity limits</td>
+  <td>Submitted CouR3; automated ATP-binding annotation is not a measured threonine-kinase reaction. Native sequence agreement does not identify a complete experimental construct or aliquot.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8T5<br>https://www.uniprot.org/uniprotkb/Q9F8T5</td>
+</tr>
+<tr>
+  <td>Deposited coumermycin locus</td>
+  <td>contains</td>
+  <td>couR4 native locus</td>
+  <td>AF235050.4 CDS 26463..27632, 1-based inclusive, strand 1; deposited strain DSM 40489.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>couR4 native locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native CouR4 sequence reference</td>
+  <td>Current table-11 CDS-aware translation equals AAG29798.1 and all 389 UniProt residues. Historical AF235050.1 name cumR; protein sequence unchanged across AF235050.1-.4.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8T4<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Native CouR4 sequence reference</td>
+  <td>has_annotation_and_sample_limit</td>
+  <td>Native annotation and experimental identity limits</td>
+  <td>Submitted dehydrogenase; automated FMN/oxidoreductase annotation is not a demonstrated CPM reaction. Native sequence agreement does not identify a complete experimental construct or aliquot.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8T4<br>https://www.uniprot.org/uniprotkb/Q9F8T4</td>
+</tr>
+<tr>
+  <td>Deposited coumermycin locus</td>
+  <td>contains</td>
+  <td>couR5 native locus</td>
+  <td>AF235050.4 CDS 27686..29161, 1-based inclusive, strand -1; deposited strain DSM 40489.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>couR5 native locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native CouR5 sequence reference</td>
+  <td>Current table-11 CDS-aware translation equals AAG29799.1 and all 491 UniProt residues. Historical AF235050.1 name cumS; protein sequence unchanged across AF235050.1-.4.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8T3<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Native CouR5 sequence reference</td>
+  <td>has_annotation_and_sample_limit</td>
+  <td>Native annotation and experimental identity limits</td>
+  <td>Submitted putative resistance protein; transporter similarity does not demonstrate export, resistance or drug targeting. Native sequence agreement does not identify a complete experimental construct or aliquot.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8T3<br>https://www.uniprot.org/uniprotkb/Q9F8T3</td>
+</tr>
+<tr>
+  <td>Deposited coumermycin locus</td>
+  <td>contains</td>
+  <td>couR6 native locus</td>
+  <td>AF235050.4 CDS 29296..30171, 1-based inclusive, strand 1; deposited strain DSM 40489.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>couR6 native locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native CouR6 sequence reference</td>
+  <td>Current table-11 CDS-aware translation equals AAG29800.2 and all 291 UniProt residues. Historical AF235050.1 name cumT; the older CouR6 sequence differs as separately recorded.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8T2<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Native CouR6 sequence reference</td>
+  <td>has_annotation_and_sample_limit</td>
+  <td>Native annotation and experimental identity limits</td>
+  <td>Submitted transcript regulatory protein; automated DNA-binding/complex annotation does not identify an experimentally assembled CouR complex. Native sequence agreement does not identify a complete experimental construct or aliquot.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8T2<br>https://www.uniprot.org/uniprotkb/Q9F8T2</td>
+</tr>
+<tr>
+  <td>Historical 377-aa CouR2 annotation</td>
+  <td>was_replaced_by_annotation</td>
+  <td>CouR2 split annotation</td>
+  <td>AF235050.1-.3 AAG29796.1 is a 377-aa sequence, not either current subunit. Thesis resequencing reports deletion of C24843; sequence comparison permits four equivalent deleted C positions 24843-24846 in AF235050.3. Current R2a/R2b start-stop overlap is GTGA at AF235050.4:24850..24853.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>CouR2 split annotation</td>
+  <td>defines_current_native_reference</td>
+  <td>Native CouR2a sequence reference</td>
+  <td>172 residues; not a fusion subunit inferred only from homology.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>CouR2 split annotation</td>
+  <td>defines_current_native_reference</td>
+  <td>Native CouR2b sequence reference</td>
+  <td>205 residues; no measured stoichiometry or physical interaction asserted.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>Historical 290-aa CouR6 reference</td>
+  <td>differs_from_current_reference</td>
+  <td>Native CouR6 sequence reference</td>
+  <td>AF235050.1-.3 AAG29800.1 is 290 aa. AF235050.4 AAG29800.2 and UniProt sequence version 2 add Val after initial Met. This deposit revision does not prove which complete sequence was present in the unsequenced experimental construct.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">18 nodes, 26 edges</span></h2>
+<p class="sub">Five individual heterologous deletion constructs with explicit coordinate and PCR boundaries. Partial curation; author-agent review #571. Native sequences, engineered samples, host-conditioned findings and hypotheses remain distinct; source-owned fields and SEEDED status are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Intact couMW16 cluster cosmid</td>
+  <td>was_integrated_in</td>
+  <td>S. coelicolor M1146 expression host</td>
+  <td>PhiC31 attP/int construct. M1146 is an M145 derivative lacking act/red/cda/cpk, SCP1 and SCP2.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>Intact couMW16 cluster cosmid</td>
+  <td>was_modified_to_make</td>
+  <td>couAK06 deletion construct</td>
+  <td>Reported deletion of internal sequence of approximately half the gene; RED/ET aac(3)IV cassette from pIJ773, removed by XbaI/SpeI and religation to leave a 6-bp scar. Table II.9 gives unversioned AF235050 coordinates 21980-22753; these are not current CDS coordinates. Original Knuplesch 2008 construct thesis not obtained.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>couAK06 deletion construct</td>
+  <td>targets_coding_locus_of</td>
+  <td>Native CouR1 sequence reference</td>
+  <td>Targets the named gene, not a sequenced full mutant-protein preparation.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf<br>https://www.uniprot.org/uniprotkb/Q9F8T7</td>
+</tr>
+<tr>
+  <td>couAK06 deletion construct</td>
+  <td>was_introduced_into</td>
+  <td>S. coelicolor M1146 expression host</td>
+  <td>Conjugation via E. coli ET12567/pUB307; 3 independent clones were reported.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>couAK06 deletion construct</td>
+  <td>was_checked_by</td>
+  <td>couAK06 genotype PCR</td>
+  <td>Table II.11 literal kont_couR1_f / _r primers: CGGGTATGTGGACCACCCGG / CGACCGGTCGTCAGGATCCG. They each match AF235050.4, bracketing a native 1570-bp interval 22836..24405. Native amplicon geometry is not a measured mutant band length or full allele sequence.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>couAK06 genotype PCR</td>
+  <td>has_verification_limit</td>
+  <td>Deletion-coordinate and allele-verification limits</td>
+  <td>PCR genotype checking does not rule out every polar effect or identify a complete resequenced mutant allele.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>Intact couMW16 cluster cosmid</td>
+  <td>was_modified_to_make</td>
+  <td>couAK07 deletion construct</td>
+  <td>Reported deletion of internal sequence of approximately half the gene; RED/ET aac(3)IV cassette from pIJ773, removed by XbaI/SpeI and religation to leave a 6-bp scar. Table II.9 gives unversioned AF235050 coordinates 23206-23472; these are not current CDS coordinates. Original Knuplesch 2008 construct thesis not obtained.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>couAK07 deletion construct</td>
+  <td>targets_coding_locus_of</td>
+  <td>Native CouR2a sequence reference</td>
+  <td>Targets the named gene, not a sequenced full mutant-protein preparation.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf<br>https://www.uniprot.org/uniprotkb/G1XVC1</td>
+</tr>
+<tr>
+  <td>couAK07 deletion construct</td>
+  <td>was_introduced_into</td>
+  <td>S. coelicolor M1146 expression host</td>
+  <td>Conjugation via E. coli ET12567/pUB307; 2 independent clones were reported.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>couAK07 deletion construct</td>
+  <td>was_checked_by</td>
+  <td>couAK07 genotype PCR</td>
+  <td>Table II.11 literal kont_couR2a_f / _r primers: CTGTTGCGCGGCGCCGACTT / ACTCGGCGGCCAGCAACAGC. They each match AF235050.4, bracketing a native 1070-bp interval 24066..25135. Native amplicon geometry is not a measured mutant band length or full allele sequence.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>couAK07 genotype PCR</td>
+  <td>has_verification_limit</td>
+  <td>Deletion-coordinate and allele-verification limits</td>
+  <td>PCR genotype checking does not rule out every polar effect or identify a complete resequenced mutant allele.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>Intact couMW16 cluster cosmid</td>
+  <td>was_modified_to_make</td>
+  <td>couAK08 deletion construct</td>
+  <td>Reported deletion of internal sequence of approximately half the gene; RED/ET aac(3)IV cassette from pIJ773, removed by XbaI/SpeI and religation to leave a 6-bp scar. Table II.9 gives unversioned AF235050 coordinates 23752-24056; these are not current CDS coordinates. Original Knuplesch 2008 construct thesis not obtained.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>couAK08 deletion construct</td>
+  <td>targets_coding_locus_of</td>
+  <td>Native CouR2b sequence reference</td>
+  <td>Targets the named gene, not a sequenced full mutant-protein preparation.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf<br>https://www.uniprot.org/uniprotkb/G1XVC2</td>
+</tr>
+<tr>
+  <td>couAK08 deletion construct</td>
+  <td>was_introduced_into</td>
+  <td>S. coelicolor M1146 expression host</td>
+  <td>Conjugation via E. coli ET12567/pUB307; 3 independent clones were reported.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>couAK08 deletion construct</td>
+  <td>was_checked_by</td>
+  <td>couAK08 genotype PCR</td>
+  <td>Table II.11 literal kont_couR2b_f / _r primers: ACGGTCATCAGCGTCCGGGG / CATCGCACATCCGGCGGACC. They each match AF235050.4, bracketing a native 1061-bp interval 24635..25695. Native amplicon geometry is not a measured mutant band length or full allele sequence.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>couAK08 genotype PCR</td>
+  <td>has_verification_limit</td>
+  <td>Deletion-coordinate and allele-verification limits</td>
+  <td>PCR genotype checking does not rule out every polar effect or identify a complete resequenced mutant allele.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>Intact couMW16 cluster cosmid</td>
+  <td>was_modified_to_make</td>
+  <td>couAK09 deletion construct</td>
+  <td>Reported deletion of coding region except start and stop codons; RED/ET aac(3)IV cassette from pIJ773, removed by XbaI/SpeI and religation to leave a 6-bp scar. Table II.9 gives unversioned AF235050 coordinates 24248-25150; these are not current CDS coordinates. Original Knuplesch 2008 construct thesis not obtained.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>couAK09 deletion construct</td>
+  <td>targets_coding_locus_of</td>
+  <td>Native CouR3 sequence reference</td>
+  <td>Targets the named gene, not a sequenced full mutant-protein preparation.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf<br>https://www.uniprot.org/uniprotkb/Q9F8T5</td>
+</tr>
+<tr>
+  <td>couAK09 deletion construct</td>
+  <td>was_introduced_into</td>
+  <td>S. coelicolor M1146 expression host</td>
+  <td>Conjugation via E. coli ET12567/pUB307; 3 independent clones were reported.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>couAK09 deletion construct</td>
+  <td>was_checked_by</td>
+  <td>couAK09 genotype PCR</td>
+  <td>Table II.11 literal kont_couR3_f / _r primers: GCCGCCGAGTTCACCGGGTT / CGATCCTGCTACCGGCTGCG. They each match AF235050.4, bracketing a native 1680-bp interval 25126..26805. Native amplicon geometry is not a measured mutant band length or full allele sequence.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>couAK09 genotype PCR</td>
+  <td>has_verification_limit</td>
+  <td>Deletion-coordinate and allele-verification limits</td>
+  <td>PCR genotype checking does not rule out every polar effect or identify a complete resequenced mutant allele.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>Intact couMW16 cluster cosmid</td>
+  <td>was_modified_to_make</td>
+  <td>couAK10 deletion construct</td>
+  <td>Reported deletion of coding region except start and stop codons; RED/ET aac(3)IV cassette from pIJ773, removed by XbaI/SpeI and religation to leave a 6-bp scar. Table II.9 gives unversioned AF235050 coordinates 25211-26374; these are not current CDS coordinates. Original Knuplesch 2008 construct thesis not obtained.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>couAK10 deletion construct</td>
+  <td>targets_coding_locus_of</td>
+  <td>Native CouR4 sequence reference</td>
+  <td>Targets the named gene, not a sequenced full mutant-protein preparation.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf<br>https://www.uniprot.org/uniprotkb/Q9F8T4</td>
+</tr>
+<tr>
+  <td>couAK10 deletion construct</td>
+  <td>was_introduced_into</td>
+  <td>S. coelicolor M1146 expression host</td>
+  <td>Conjugation via E. coli ET12567/pUB307; 3 independent clones were reported.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>couAK10 deletion construct</td>
+  <td>was_checked_by</td>
+  <td>couAK10 genotype PCR</td>
+  <td>Table II.11 literal kont_couR4_f / _r primers: TGGACCGGGGATTCCGGCTG / AGCGGGCTGGTGATCGGACC. They each match AF235050.4, bracketing a native 1924-bp interval 26086..28009. Native amplicon geometry is not a measured mutant band length or full allele sequence.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>couAK10 genotype PCR</td>
+  <td>has_verification_limit</td>
+  <td>Deletion-coordinate and allele-verification limits</td>
+  <td>PCR genotype checking does not rule out every polar effect or identify a complete resequenced mutant allele.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">18 nodes, 23 edges</span></h2>
+<p class="sub">Individual production phenotypes, chemical feeding and partial genetic rescue. Partial curation; author-agent review #571. Native sequences, engineered samples, host-conditioned findings and hypotheses remain distinct; source-owned fields and SEEDED status are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>M1146 with intact couMW16</td>
+  <td>produced_in</td>
+  <td>Seven-day coumermycin HPLC analysis</td>
+  <td>Table III.1 intact-cluster reference: 10.20 mg/L; CPM-fed control not determined.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>Seven-day coumermycin HPLC analysis</td>
+  <td>measured</td>
+  <td>coumermycin A1</td>
+  <td>HPLC-UV/MS; authentic coumermycin A1 standard. Coumermycin production medium 2; harvest after seven days. HPLC-UV 345 nm, 0.6 mL/min, 40 C, water/acetonitrile each with 1% formic acid, 70-100% acetonitrile from 2-22 min.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>Fed 3-methylpyrrole-2,4-dicarboxylic acid</td>
+  <td>was_supplied_for</td>
+  <td>Seven-day coumermycin HPLC analysis</td>
+  <td>Two equal feeds after 24 and 48 h; final 0.1 mmol/L (16.9 mg/L). Chemical rescue is not gene complementation.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>M1146(couAK06) deletion strain</td>
+  <td>has_deleted_locus_for</td>
+  <td>Native CouR1 sequence reference</td>
+  <td>Named heterologous deletion; not a native S. rishiriensis knockout.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>M1146(couAK06) deletion strain</td>
+  <td>had_reported_titers_in</td>
+  <td>Seven-day coumermycin HPLC analysis</td>
+  <td>Table III.1 without CPM &lt;0.01 mg/L; with CPM 3.8 mg/L. No SD supplied in this table; values below detection are not zero.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>M1146(couAK06) deletion strain</td>
+  <td>supports_pathway_involvement</td>
+  <td>Host-conditioned central-pyrrole involvement</td>
+  <td>Chemical rescue supports central-pyrrole involvement, not a specific catalytic reaction or physical assembly.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>M1146(couAK07) deletion strain</td>
+  <td>has_deleted_locus_for</td>
+  <td>Native CouR2a sequence reference</td>
+  <td>Named heterologous deletion; not a native S. rishiriensis knockout.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>M1146(couAK07) deletion strain</td>
+  <td>had_reported_titers_in</td>
+  <td>Seven-day coumermycin HPLC analysis</td>
+  <td>Table III.1 without CPM 0.02 mg/L; with CPM 0.2 mg/L. No SD supplied in this table; values below detection are not zero.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>M1146(couAK07) deletion strain</td>
+  <td>supports_pathway_involvement</td>
+  <td>Host-conditioned central-pyrrole involvement</td>
+  <td>Chemical rescue supports central-pyrrole involvement, not a specific catalytic reaction or physical assembly. Only two clones, few integration colonies and slow growth limit the R2a interpretation; thesis calls its involvement probable.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>M1146(couAK08) deletion strain</td>
+  <td>has_deleted_locus_for</td>
+  <td>Native CouR2b sequence reference</td>
+  <td>Named heterologous deletion; not a native S. rishiriensis knockout.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>M1146(couAK08) deletion strain</td>
+  <td>had_reported_titers_in</td>
+  <td>Seven-day coumermycin HPLC analysis</td>
+  <td>Table III.1 without CPM 0.80 mg/L; with CPM 5.1 mg/L. No SD supplied in this table; values below detection are not zero.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>M1146(couAK08) deletion strain</td>
+  <td>supports_pathway_involvement</td>
+  <td>Host-conditioned central-pyrrole involvement</td>
+  <td>Chemical rescue supports central-pyrrole involvement, not a specific catalytic reaction or physical assembly.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>M1146(couAK09) deletion strain</td>
+  <td>has_deleted_locus_for</td>
+  <td>Native CouR3 sequence reference</td>
+  <td>Named heterologous deletion; not a native S. rishiriensis knockout.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>M1146(couAK09) deletion strain</td>
+  <td>had_reported_titers_in</td>
+  <td>Seven-day coumermycin HPLC analysis</td>
+  <td>Table III.1 without CPM 0.10 mg/L; with CPM 6.6 mg/L. No SD supplied in this table; values below detection are not zero.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>M1146(couAK09) deletion strain</td>
+  <td>supports_pathway_involvement</td>
+  <td>Host-conditioned central-pyrrole involvement</td>
+  <td>Chemical rescue supports central-pyrrole involvement, not a specific catalytic reaction or physical assembly.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>M1146(couAK10) deletion strain</td>
+  <td>has_deleted_locus_for</td>
+  <td>Native CouR4 sequence reference</td>
+  <td>Named heterologous deletion; not a native S. rishiriensis knockout.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>M1146(couAK10) deletion strain</td>
+  <td>had_reported_titers_in</td>
+  <td>Seven-day coumermycin HPLC analysis</td>
+  <td>Table III.1 without CPM &lt;0.01 mg/L; with CPM 5.0 mg/L. No SD supplied in this table; values below detection are not zero.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>M1146(couAK10) deletion strain</td>
+  <td>supports_pathway_involvement</td>
+  <td>Host-conditioned central-pyrrole involvement</td>
+  <td>Chemical rescue supports central-pyrrole involvement, not a specific catalytic reaction or physical assembly.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>pAK06 genetic-complementation plasmid</td>
+  <td>was_introduced_into</td>
+  <td>M1146(couAK06) deletion strain</td>
+  <td>1.4-kb HindIII/SpeI insert in pUWL-Apra-oriT under ermE*; gene amplified via pGEM-T intermediate. Five named clones 1.1-1.5. Vector is ApraR; methods state kanamycin selection without documenting a full dual-drug selection protocol.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>pAK06 genetic-complementation plasmid</td>
+  <td>partially_restored_production_in</td>
+  <td>Seven-day coumermycin HPLC analysis</td>
+  <td>Reported genetic rescue reached only 2-3% of the intact-cluster reference. Only R1/R4 were complemented in the inspected thesis; the broader wording in the 2013 introduction is not adopted as evidence for all five.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf<br>DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>pAK10 genetic-complementation plasmid</td>
+  <td>was_introduced_into</td>
+  <td>M1146(couAK10) deletion strain</td>
+  <td>1.2-kb HindIII/SpeI insert in pUWL-Apra-oriT under ermE*; gene amplified via pGEM-T intermediate. Five named clones 1.1-1.5. Vector is ApraR; methods state kanamycin selection without documenting a full dual-drug selection protocol.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>pAK10 genetic-complementation plasmid</td>
+  <td>partially_restored_production_in</td>
+  <td>Seven-day coumermycin HPLC analysis</td>
+  <td>Reported genetic rescue reached only 2-3% of the intact-cluster reference. Only R1/R4 were complemented in the inspected thesis; the broader wording in the 2013 introduction is not adopted as evidence for all five.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf<br>DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>Host-conditioned central-pyrrole involvement</td>
+  <td>has_interpretation_limit</td>
+  <td>Residual production and rescue limits</td>
+  <td>SCO6824/NP_733715 and SCO0991/NP_625287 were proposed host compensators by similarity; no measured rescue by these genes is established. Low complementation hypotheses about regulation, folding and interactions remain hypotheses.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 8 edges</span></h2>
+<p class="sub">Bounded feeding evidence distinct from direct enzyme activity. Partial curation; author-agent review #571. Native sequences, engineered samples, host-conditioned findings and hypotheses remain distinct; source-owned fields and SEEDED status are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Reported M1146 delta-couR3 strain</td>
+  <td>has_deleted_locus_for</td>
+  <td>Native CouR3 sequence reference</td>
+  <td>Thesis methods map R3 to couAK09; no reconstructed mutant protein.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>Reported M1146 delta-couR3 strain</td>
+  <td>was_used_in</td>
+  <td>Three-clone feeding experiment</td>
+  <td>Three independently generated clones; four independent feeding experiments per clone; seven-day HPLC readout.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>L-threonine feed</td>
+  <td>was_fed_in</td>
+  <td>Three-clone feeding experiment</td>
+  <td>Two equal aliquots after 24/48 h; final 0.1 mmol/L.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>O-phospho-L-threonine feed</td>
+  <td>was_fed_in</td>
+  <td>Three-clone feeding experiment</td>
+  <td>Same timing and final 0.1 mmol/L concentration.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>Three-clone feeding experiment</td>
+  <td>measured</td>
+  <td>coumermycin A1</td>
+  <td>Table III.2 mean +/- SD, mg/L, columns no feed / Thr / Thr-P: clone1 0.14+/-0.05 / 0.16+/-0.03 / 0.24+/-0.08; clone2 0.15+/-0.07 / 0.14+/-0.03 / 0.17+/-0.05; clone3 0.12+/-0.01 / 0.13+/-0.01 / 0.18+/-0.02. Source averages 0.137 / 0.143 / 0.197; aggregate SD not supplied.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>Three-clone feeding experiment</td>
+  <td>has_source_identity_conflict</td>
+  <td>R3 strain-label conflict</td>
+  <td>Table III.2 footnote says M1146(couAK08); methods assign couAK08 to R2b and couAK09 to R3. Retain the conflict instead of silently correcting the tested strain.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>Three-clone feeding experiment</td>
+  <td>has_interpretation_limit</td>
+  <td>Weak feeding-effect interpretation</td>
+  <td>Thr-P increased the source average by 44%; this small increase does not demonstrate a CouR3 threonine-kinase reaction. The source reports no significant Thr effect but supplies no statistical test or p-value here.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>R3 strain-label conflict</td>
+  <td>limits_construct_specificity</td>
+  <td>Weak feeding-effect interpretation</td>
+  <td>Treat the assay as source-reported delta-couR3 evidence, not an independently verified allele.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">14 nodes, 14 edges</span></h2>
+<p class="sub">Direct precursor tracing separated from historical reaction proposals. Partial curation; author-agent review #571. Native sequences, engineered samples, host-conditioned findings and hypotheses remain distinct; source-owned fields and SEEDED status are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>M1146(couSS01) delta-couM-couN7 host</td>
+  <td>accumulated_reported_product</td>
+  <td>Reported CPM 4-carboxyl monoamide</td>
+  <td>CDM, seven-day HPLC-UV/MS: 12 mg/L; monoamide quantified against novobiocin, not an identical-compound response calibration. Construct replaced the couM-N7 region with pIJ773 cassette, then XbaI-only excision left 49 bp and changed the CouN7 stop region. Reported 7097-bp deletion differs from the unversioned Table II.9 coordinate span 10985-19284; full allele sequence unresolved.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>M1146(couSS01) delta-couM-couN7 host</td>
+  <td>accumulated_reported_product</td>
+  <td>Reported CPM diamide</td>
+  <td>Same experiment: 4 mg/L using authentic coumermycin A1 calibration. Joint deletion retaining these products supports no obligatory CouM/N1-N7 requirement for CPM in this host/context; not universal dispensability.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>[U-13C,15N]L-threonine feed</td>
+  <td>was_supplied_to</td>
+  <td>M1146(couSS01) delta-couM-couN7 host</td>
+  <td>Large-scale 360 mL in five deepwell plates; 96 mg label, final 2.15 mmol/L, five equal feeds at 72/84/96/108/120 h; harvest at 144 h. Isolated monoamide yield 2.1 mg. Separate preliminary small-scale experiment used 6 mL.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>Reported CPM 4-carboxyl monoamide</td>
+  <td>was_analyzed_by</td>
+  <td>MS/MS and NMR isotope analysis</td>
+  <td>Preliminary unlabeled 8.3-mg material assigned by 2D NMR to the pure 4-carboxyl-amide regioisomer. Small-scale feeding shifted [M-H]- from 357 to 362; MS/MS 206 represents unlabeled aminocoumarin, and 232 supports the reported regioisomer. These are source assignments, not independently reprocessed raw spectra or NMR of final coumermycin A1.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>MS/MS and NMR isotope analysis</td>
+  <td>supports_intact_precursor_origin</td>
+  <td>Threonine-derived CPM atoms</td>
+  <td>NMR C2/C3/C6/C7 enrichment 20/19/19/20%, mean 19.5%; C-C and C-N couplings support incorporation of threonine four-carbon skeleton and nitrogen into CPM. Table III.3 also reports C11-prime enrichment 1.8%; label was not exclusively in the pyrrole.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>[U-13C]fumarate feeding</td>
+  <td>was_tested_in</td>
+  <td>M1146(couSS01) delta-couM-couN7 host</td>
+  <td>Final [U-13C]fumarate 2.3 mmol/L under the five-feed protocol; no enrichment detected in isolated monoamide. This was not a direct labeled-oxaloacetate feeding experiment.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>Threonine-derived CPM atoms</td>
+  <td>informed_historical_model</td>
+  <td>Historical hypothetical CPM pathway</td>
+  <td>Threonine precursor identity does not establish the first enzyme reaction, all remaining atoms, or the order of steps.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>Native CouR3 sequence reference</td>
+  <td>was_proposed_to_phosphorylate_threonine_in</td>
+  <td>Historical hypothetical CPM pathway</td>
+  <td>Historical GHMP/PduX sequence-similarity hypothesis, not demonstrated substrate chemistry; later assay did not confirm it.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf<br>DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>Native CouR1 sequence reference</td>
+  <td>was_proposed_to_catalyze_beta_replacement_in</td>
+  <td>Historical hypothetical CPM pathway</td>
+  <td>PLP-enzyme fold analogy; putative phosphothreonine/oxaloacetate reaction and possibly spontaneous Schiff-base formation remain proposals.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>Native CouR2a sequence reference</td>
+  <td>was_proposed_to_participate_in_decarboxylation_in</td>
+  <td>Historical hypothetical CPM pathway</td>
+  <td>TPP-decarboxylase similarity; ComDE comparison does not measure CouR2 complex assembly or stoichiometry.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>Native CouR2b sequence reference</td>
+  <td>was_proposed_to_participate_in_decarboxylation_in</td>
+  <td>Historical hypothetical CPM pathway</td>
+  <td>No purified reaction or physical CouR2a/CouR2b complex is asserted from this homology-based assignment.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>Native CouR4 sequence reference</td>
+  <td>was_proposed_to_oxidize_pyrroline_in</td>
+  <td>Historical hypothetical CPM pathway</td>
+  <td>FMN-dehydrogenase analogy; no experimentally identified intermediate or measured catalytic sequence.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>Historical hypothetical CPM pathway</td>
+  <td>has_unresolved_precursor_and_order</td>
+  <td>Precursor and hypothetical-reaction limits</td>
+  <td>Origin of the other three CPM carbons remained unknown. Oxaloacetate is hypothetical; failed fumarate feeding does not exclude it. No exact intermediate identifiers or experimentally proven step order are assigned.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+<tr>
+  <td>[U-13C]fumarate feeding</td>
+  <td>does_not_resolve_other_carbon_origin</td>
+  <td>Precursor and hypothetical-reaction limits</td>
+  <td>Non-detection is not zero incorporation or proof that every possible precursor route is absent.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">16 nodes, 18 edges</span></h2>
+<p class="sub">Five- and seven-gene expression constructs and bounded native sequence mapping. Partial curation; author-agent review #571. Native sequences, engineered samples, host-conditioned findings and hypotheses remain distinct; source-owned fields and SEEDED status are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Intact couMW16 cosmid</td>
+  <td>was_modified_to_make</td>
+  <td>couMW16/deltaR5-parY</td>
+  <td>Reported 14.5-kb R5-parY region replaced by aac(3)IV/oriT cassette from pIJ773 using RED/ET.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>Intact couMW16 cosmid</td>
+  <td>was_modified_to_make</td>
+  <td>couMW16/deltaS-parY</td>
+  <td>Reported 12-kb S-parY region replaced; retains R5/R6 unlike the other deletion.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>couMW16/deltaR5-parY</td>
+  <td>was_modified_to_make</td>
+  <td>couMW16/deltaR5-parYdeltaE-P</td>
+  <td>21.4-kb couE-couP region replaced by aadA spectinomycin cassette from pIJ778.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>couMW16/deltaS-parY</td>
+  <td>was_modified_to_make</td>
+  <td>couMW16/deltaS-parYdeltaE-P</td>
+  <td>Methods distinguish this lineage, but the results paragraph duplicates deltaR5-parY where it describes both starting constructs. The discrepancy is retained; this lineage follows the explicit methods description.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>couMW16/deltaR5-parYdeltaE-P</td>
+  <td>provided_fragment_for</td>
+  <td>pUWL201/couR1-4 expression construct</td>
+  <td>6144-bp SpeI fragment includes five couR genes plus aac(3)IV/oriT; inserted into SpeI site of pUWL201 under ermE*. Correct orientation was checked by restriction analysis, not a deposited complete insert sequence.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>couMW16/deltaS-parYdeltaE-P</td>
+  <td>provided_fragment_for</td>
+  <td>pUWL201/couR1-6 expression construct</td>
+  <td>8683-bp SpeI fragment includes R1/R2a/R2b/R3/R4/R5/R6. Construct reported; no separate verified CPM yield assigned here.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>pUWL201/couR1-4 expression construct</td>
+  <td>was_introduced_into</td>
+  <td>S. coelicolor M1146</td>
+  <td>E. coli ET12567/pUZ8002 conjugation and apramycin selection. Cosmid integrations used ET12567/pUB307 and apramycin/kanamycin.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>pUWL201/couR1-4 expression construct</td>
+  <td>has_sequence_verification_limit</td>
+  <td>Construct-label and sequence-coverage limits</td>
+  <td>Four literal 40-nt Table 1 homology arms match AF235050.4: R5rightend_F27593..27632(+), Srightend_F30132..30171(+), leftendR1_F1476..1515(+), leftendR1_R22911..22950(-). Published coordinates refer to couMW16, not AF235050.4; these four hits differ by +1255. R5rightend_R has no exact match in AF235050.1-.4. Extending that offset would place it beyond the 40210-bp current deposit; absence is not proof of a faulty primer, and the distal cosmid junction is not reconstructed.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>couMW16/deltaS-parYdeltaE-P</td>
+  <td>has_source_label_conflict</td>
+  <td>Construct-label and sequence-coverage limits</td>
+  <td>Duplicated results-line construct name is not silently repaired; full experimental cosmid sequences were not obtained.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>pUWL201/couR1-4 expression construct</td>
+  <td>contains_gene_for_native_reference</td>
+  <td>Native CouR1 sequence reference</td>
+  <td>Named native protein reference, not proof of complete experimental sequence identity.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6<br>https://www.uniprot.org/uniprotkb/Q9F8T7</td>
+</tr>
+<tr>
+  <td>pUWL201/couR1-4 expression construct</td>
+  <td>contains_gene_for_native_reference</td>
+  <td>Native CouR2a sequence reference</td>
+  <td>Named native protein reference, not proof of complete experimental sequence identity.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6<br>https://www.uniprot.org/uniprotkb/G1XVC1</td>
+</tr>
+<tr>
+  <td>pUWL201/couR1-4 expression construct</td>
+  <td>contains_gene_for_native_reference</td>
+  <td>Native CouR2b sequence reference</td>
+  <td>Named native protein reference, not proof of complete experimental sequence identity.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6<br>https://www.uniprot.org/uniprotkb/G1XVC2</td>
+</tr>
+<tr>
+  <td>pUWL201/couR1-4 expression construct</td>
+  <td>contains_gene_for_native_reference</td>
+  <td>Native CouR3 sequence reference</td>
+  <td>Named native protein reference, not proof of complete experimental sequence identity.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6<br>https://www.uniprot.org/uniprotkb/Q9F8T5</td>
+</tr>
+<tr>
+  <td>pUWL201/couR1-4 expression construct</td>
+  <td>contains_gene_for_native_reference</td>
+  <td>Native CouR4 sequence reference</td>
+  <td>Named native protein reference, not proof of complete experimental sequence identity.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6<br>https://www.uniprot.org/uniprotkb/Q9F8T4</td>
+</tr>
+<tr>
+  <td>pUWL201/couR1-6 expression construct</td>
+  <td>contains_gene_for_native_reference</td>
+  <td>Native CouR5 sequence reference</td>
+  <td>Adjacently encoded reference, not an experimentally established enzyme/complex component.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6<br>https://www.uniprot.org/uniprotkb/Q9F8T3</td>
+</tr>
+<tr>
+  <td>couMW16/deltaR5-parY</td>
+  <td>deletes_coding_region_for</td>
+  <td>Native CouR5 sequence reference</td>
+  <td>Joint downstream-region deletion; not an isolated single-gene functional test.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>pUWL201/couR1-6 expression construct</td>
+  <td>contains_gene_for_native_reference</td>
+  <td>Native CouR6 sequence reference</td>
+  <td>Adjacently encoded reference, not an experimentally established enzyme/complex component.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6<br>https://www.uniprot.org/uniprotkb/Q9F8T2</td>
+</tr>
+<tr>
+  <td>couMW16/deltaR5-parY</td>
+  <td>deletes_coding_region_for</td>
+  <td>Native CouR6 sequence reference</td>
+  <td>Joint downstream-region deletion; not an isolated single-gene functional test.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 13 edges</span></h2>
+<p class="sub">Minimal expression and adjacent-gene exclusion bounded to the tested host and analytical evidence. Partial curation; author-agent review #571. Native sequences, engineered samples, host-conditioned findings and hypotheses remain distinct; source-owned fields and SEEDED status are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>M1146/pUWL201/couR1-4</td>
+  <td>was_tested_in</td>
+  <td>CPM HPLC and LC-MS/MS analysis</td>
+  <td>3-mL cultures in 24-deepwell plates, CDM, 30 C/300 rpm, eight-day harvest; three individual wells analyzed separately. Medium included thiamine 10 ug/mL, pyridoxine 8 ug/mL, Q2-5247 0.6% w/v and CoCl2 0.2 ug/mL; the Fig.3 experiment omitted Q2-5247/CoCl2.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>CPM HPLC and LC-MS/MS analysis</td>
+  <td>identified_reported_product</td>
+  <td>3-methylpyrrole-2,4-dicarboxylic acid</td>
+  <td>CPM matched authentic standard by HPLC and positive-mode LC-MS/MS, precursor m/z170.1 and fragmentation. HPLC at 259 nm, 0.6 mL/min, 5-100% methanol/0.1% formic acid over20min; LC-MS used a separate chromatographic method. The retention times from different methods must not be interchanged.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>Unmodified M1146 control</td>
+  <td>was_negative_control_in</td>
+  <td>CPM HPLC and LC-MS/MS analysis</td>
+  <td>No CPM-matching peak reported; authentic CPM added to host culture immediately before extraction was an analytical recovery control, not biosynthetic rescue. No empty-vector control was identified in the inspected text.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>3-methylpyrrole-2,4-dicarboxylic acid</td>
+  <td>was_extracted_for</td>
+  <td>CPM HPLC and LC-MS/MS analysis</td>
+  <td>For free CPM: 1 mL culture treated with lysozyme1.9mg/mL for60min at30C, acidified pH2, extracted three times with equal-volume EtOAc, dissolved in100uL ethanol. Mono/diamide analysis omitted lysozyme and used345nm/acetonitrile with novobiocin/coumermycin standards.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>M1146 downstream-deletion panel</td>
+  <td>accumulated_reported_products</td>
+  <td>CPM monoamide and diamide</td>
+  <td>Both deltaS-parY and deltaR5-parY strains yielded HPLC peaks matching CPM monoamide/diamide; couSS01 was positive and host alone negative control.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>CPM monoamide and diamide</td>
+  <td>have_unresolved_absolute_titer_units</td>
+  <td>Indexed concentration and amount ambiguity</td>
+  <td>Indexed Table2 headings literally use mg ml^-1. Values monoamide+/-SD / diamide+/-SD: couSS-01 5.69+/-0.98 / 5.60+/-0.49; deltaS-parY4.13+/-0.71 / 6.20+/-0.22; deltaR5-parY2.81+/-0.29 / 5.95+/-0.57. Retained as unresolved source-unit data, not normalized or adopted as verified absolute concentrations.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>M1146/pUWL201/couR1-4</td>
+  <td>was_monitored_in</td>
+  <td>CPM production and recovery time course</td>
+  <td>Days1-5, mycelium and medium, triplicate measurements; source reports highest CPM at day3 and little subsequent change. No bar heights digitized from uninspected figures.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>CPM production and recovery time course</td>
+  <td>has_recovery_and_unit_limit</td>
+  <td>Indexed concentration and amount ambiguity</td>
+  <td>Externally supplied CPM nearly fully recovered immediately, but source reports20% after3days. Indexed text also says2.2mg ml^-1 added and0.45mg recovered; the concentration/mass/volume basis is unresolved. Degradation or modification is a proposed explanation, not a measured enzyme reaction.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>CPM HPLC and LC-MS/MS analysis</td>
+  <td>supports_host_conditioned_sufficiency</td>
+  <td>Host-dependent sufficiency and exclusion limits</td>
+  <td>Expression of the five-gene set supports CPM production in M1146, not purified reconstitution, absence of host contributions, native-cell essentiality or physical assembly.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>Native CouR5 sequence reference</td>
+  <td>is_not_obligatory_in_tested_expression_context</td>
+  <td>Host-dependent sufficiency and exclusion limits</td>
+  <td>CPM formation without this adjacent gene does not demonstrate a transporter substrate, exclude other biological roles or measure resistance.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>Native CouR6 sequence reference</td>
+  <td>is_not_obligatory_in_tested_expression_context</td>
+  <td>Host-dependent sufficiency and exclusion limits</td>
+  <td>Same host/context exclusion; not a measured transcriptional-regulation assay or universal dispensability.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>M1146 downstream-deletion panel</td>
+  <td>supports_host_conditioned_exclusion</td>
+  <td>Host-dependent sufficiency and exclusion limits</td>
+  <td>Joint deletion evidence complements minimal expression; no single-protein reaction is assigned from the panel.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>Indexed concentration and amount ambiguity</td>
+  <td>limits_quantitative_interpretation</td>
+  <td>Host-dependent sufficiency and exclusion limits</td>
+  <td>Qualitative CPM production can be retained without silently repairing absolute units or reconstructing unseen plots.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">13 nodes, 13 edges</span></h2>
+<p class="sub">Engineered CouR3 preparation, controls and unresolved physiological substrate. Partial curation; author-agent review #571. Native sequences, engineered samples, host-conditioned findings and hypotheses remain distinct; source-owned fields and SEEDED status are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native CouR3 sequence reference</td>
+  <td>is_native_reference_for</td>
+  <td>pCR2.1/His8/couR3</td>
+  <td>Native Q9F8T5 is302aa, not the complete codon-optimized His8 fusion. Commercial synthetic DNA included promoter/linker/tag based on pHis8 in pCR2.1. Full engineered DNA/protein sequence and tag junction were not obtained.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6<br>https://www.uniprot.org/uniprotkb/Q9F8T5</td>
+</tr>
+<tr>
+  <td>pCR2.1/His8/couR3</td>
+  <td>was_expressed_in</td>
+  <td>E. coli Rosetta2(DE3)pLysS expression host</td>
+  <td>Synthetic GeneDesigner codon optimization, Eurofins synthesis; pCR2.1 construct used directly.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>E. coli Rosetta2(DE3)pLysS expression host</td>
+  <td>was_used_in</td>
+  <td>Expression and Ni-NTA purification</td>
+  <td>Terrific Medium, kanamycin50ug/mL/chloramphenicol25ug/mL,37C250rpm to A6000.8; induce0.5mMIPTG,16C20h.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>Expression and Ni-NTA purification</td>
+  <td>yielded</td>
+  <td>Purified His8-CouR3 preparation</td>
+  <td>Mostly insoluble; source reports7.6mg purified soluble protein/L culture. Ni-NTA,50-300mMimidazole gradient60min; PD10 into50mMTris pH7.5,10mMNaCl,15%glycerol; stored-80C. SDS-PAGE/caption report near homogeneity, calculated34.8kDa; no independent densitometry or physical-complex determination.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>Purified His8-CouR3 preparation</td>
+  <td>was_tested_in</td>
+  <td>ADP Quest coupled-fluorescence assay</td>
+  <td>ADPQuest couples ADP/PEP through pyruvate kinase, pyruvate oxidase and peroxidase to resorufin fluorescence. Coupling enzymes are assay reagents, not native CouR interaction partners.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>ATP assay substrate</td>
+  <td>was_supplied_to</td>
+  <td>ADP Quest coupled-fluorescence assay</td>
+  <td>15mMHEPES pH7.5,20mMNaCl,10mMMgCl2,100uL black96well; TecanInfinite200 ex530/em590nm. ADP standard curve; triplicate measurements. ATP/Thr/enzyme concentrations and reaction temperature were not supplied in the inspected text; no values borrowed from PduX.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>L-threonine assay reagent</td>
+  <td>was_tested_as_candidate_substrate_in</td>
+  <td>ADP Quest coupled-fluorescence assay</td>
+  <td>Testing a proposed substrate is not demonstration of its phosphorylation.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>ADP Quest coupled-fluorescence assay</td>
+  <td>reported</td>
+  <td>Reported ATP-dependent ADP formation</td>
+  <td>Specific activity45nmol min^-1 mgprotein^-1 with ATP, measured as ADP formation. No kinetic Km, product-specific phosphothreonine measurement or error estimate supplied here.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>No-ATP control</td>
+  <td>was_control_for</td>
+  <td>ADP Quest coupled-fluorescence assay</td>
+  <td>No ADP formation detected when ATP was omitted.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>No-CouR3 control</td>
+  <td>was_control_for</td>
+  <td>ADP Quest coupled-fluorescence assay</td>
+  <td>Omitting CouR3 reduced ADP formation by94%; remaining6% was proposed background, not independently identified as a specific chemical process.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>No-threonine control</td>
+  <td>was_control_for</td>
+  <td>ADP Quest coupled-fluorescence assay</td>
+  <td>Omitting L-threonine did not reduce ADP formation.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>Reported ATP-dependent ADP formation</td>
+  <td>does_not_demonstrate_threonine_phosphorylation</td>
+  <td>Unresolved physiological substrate and construct limits</td>
+  <td>ATP-dependent ADP formation supports the reported ATPase activity of this preparation, not the historical threonine-kinase assignment. Alternative substrate or suboptimal assay conditions remain possibilities; not proof threonine can never be a substrate.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+<tr>
+  <td>pCR2.1/His8/couR3</td>
+  <td>has_identity_limit</td>
+  <td>Unresolved physiological substrate and construct limits</td>
+  <td>No exact fusion sequence or allelic resequencing establishes that the native reference is identical to the entire assayed preparation.</td>
+  <td class="mono">DOI:10.1007/s10295-013-1266-6</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">16 nodes, 19 edges</span></h2>
+<p class="sub">Five native CouN references with historical revisions and a rejected cross-species protein pointer. Partial curation; author-agent review #572. Native references, engineered alleles, genetic phenotypes and direct biochemical evidence are distinct; prior graphs and SEEDED status are preserved.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Deposited coumermycin biosynthetic locus</td>
+  <td>contains</td>
+  <td>couN2 native locus</td>
+  <td>AF235050.4 CDS 13824..14891, plus strand, 1-based inclusive; native DSM 40489.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>couN2 native locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native CouN2 sequence reference</td>
+  <td>Current table-11 CDS translation equals AAG29787.2 and all 355 UniProt residues. Historical AF235050.1 gene name cumJ. Version changes are recorded separately.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U5<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Native CouN2 sequence reference</td>
+  <td>has_annotation_limit</td>
+  <td>Annotation and experimental-sample boundaries</td>
+  <td>Submitted name 3-ketoacyl-[ACP]-synthase; not a measured CouN5-to-CouN1 transfer reaction. A native accession is not the complete identity of an experimental fusion or deleted allele.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U5</td>
+</tr>
+<tr>
+  <td>Deposited coumermycin biosynthetic locus</td>
+  <td>contains</td>
+  <td>couN3 native locus</td>
+  <td>AF235050.4 CDS 14881..16011, plus strand, 1-based inclusive; native DSM 40489.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>couN3 native locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native CouN3 sequence reference</td>
+  <td>Current table-11 CDS translation equals AAG29788.2 and all 376 UniProt residues. Historical AF235050.1 gene name proA. Version changes are recorded separately.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U4<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Native CouN3 sequence reference</td>
+  <td>has_annotation_limit</td>
+  <td>Annotation and experimental-sample boundaries</td>
+  <td>Submitted name acyl-CoA dehydrogenase; native genetic evidence does not establish purified-protein oxidation chemistry. A native accession is not the complete identity of an experimental fusion or deleted allele.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U4</td>
+</tr>
+<tr>
+  <td>Deposited coumermycin biosynthetic locus</td>
+  <td>contains</td>
+  <td>couN4 native locus</td>
+  <td>AF235050.4 CDS 16130..17635, plus strand, 1-based inclusive; native DSM 40489.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>couN4 native locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native CouN4 sequence reference</td>
+  <td>Current table-11 CDS translation equals AAG29789.1 and all 501 UniProt residues. Historical AF235050.1 gene name proB. Protein sequence identical across AF235050.1-.4.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U3<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Native CouN4 sequence reference</td>
+  <td>has_annotation_limit</td>
+  <td>Annotation and experimental-sample boundaries</td>
+  <td>Submitted name acyl-CoA synthetase; specific proline activation has separate primary biochemical support. A native accession is not the complete identity of an experimental fusion or deleted allele.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U3</td>
+</tr>
+<tr>
+  <td>Deposited coumermycin biosynthetic locus</td>
+  <td>contains</td>
+  <td>couN5 native locus</td>
+  <td>AF235050.4 CDS 17639..17908, plus strand, 1-based inclusive; native DSM 40489.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>couN5 native locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native CouN5 sequence reference</td>
+  <td>Current table-11 CDS translation equals AAG29790.1 and all 89 UniProt residues. Historical AF235050.1 gene name proC. Protein sequence identical across AF235050.1-.4.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U2<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Native CouN5 sequence reference</td>
+  <td>has_annotation_limit</td>
+  <td>Annotation and experimental-sample boundaries</td>
+  <td>Submitted name CouN5; the native sequence does not by itself specify apo, holo or acyl-loaded state. A native accession is not the complete identity of an experimental fusion or deleted allele.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U2</td>
+</tr>
+<tr>
+  <td>Deposited coumermycin biosynthetic locus</td>
+  <td>contains</td>
+  <td>couN6 native locus</td>
+  <td>AF235050.4 CDS 17966..19648, plus strand, 1-based inclusive; native DSM 40489.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>couN6 native locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native CouN6 sequence reference</td>
+  <td>Current table-11 CDS translation equals AAG29791.2 and all 560 UniProt residues. Historical AF235050.1 gene name cumK. Version changes are recorded separately.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Native CouN6 sequence reference</td>
+  <td>has_annotation_limit</td>
+  <td>Annotation and experimental-sample boundaries</td>
+  <td>Submitted name uncharacterized protein couN6; no direct methylation, cofactor-dependence or reaction order is measured by this database record. A native accession is not the complete identity of an experimental fusion or deleted allele.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8U1</td>
+</tr>
+<tr>
+  <td>Historical 355-aa CouN2 reference</td>
+  <td>differs_from_current_reference</td>
+  <td>Native CouN2 sequence reference</td>
+  <td>AF235050.1-.3 AAG29787.1 and current AAG29787.2 are both 355 aa; positional differences are A22D, C23A and N118S. These are deposit-version differences, not independently demonstrated natural polymorphisms.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Historical 373-aa CouN3 reference</td>
+  <td>differs_from_current_reference</td>
+  <td>Native CouN3 sequence reference</td>
+  <td>AF235050.1-.3 AAG29788.1 is 373 aa; current AAG29788.2 is 376 aa with N-terminal/internal sequence changes, not merely a three-residue insertion. The historical 213-aa deletion description is not silently converted to 216 aa.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4<br>https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Historical 399-aa CouN6 reference</td>
+  <td>differs_from_current_reference</td>
+  <td>Native CouN6 sequence reference</td>
+  <td>AF235050.1 AAG29791.1 is 399 aa and lacks current residues 131-291; AF235050.2-.4 AAG29791.2 agree with the current 560-aa reference. This is an annotation/deposit revision, not proof of an experimentally observed shortened enzyme.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Wolpert CouN3 protein-pointer conflict</td>
+  <td>does_not_identify</td>
+  <td>Native CouN3 sequence reference</td>
+  <td>Wolpert 2007 Table 5 lists AAN65232 for CouN3; official records map AAN65232.1 to CloN3/Q8GHB9 from S. roseochromogenus subsp. oscitans. Reject that pointer as an exact CouN3 example; retain native AAG29788.2/Q9F8U4.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1<br>https://www.uniprot.org/uniprotkb/Q8GHB9<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 9 edges</span></h2>
+<p class="sub">Native couN3 deletion construction, genotype controls and historical sequence boundaries. Partial curation; author-agent review #572. Native references, engineered alleles, genetic phenotypes and direct biochemical evidence are distinct; prior graphs and SEEDED status are preserved.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>pN3 deletion vector</td>
+  <td>targets_coding_locus_of</td>
+  <td>Native CouN3 sequence reference</td>
+  <td>Reported 480-bp PstI in-frame deletion in the C-terminal coding region, predicted 373 to 213 aa. Approximately 1.7-kb flanks in non-replicative pKC1132 with apramycin resistance.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pN3 deletion vector</td>
+  <td>was_constructed_from_historical_interval</td>
+  <td>Historical 213-aa deletion model</td>
+  <td>Table 14 pZW334: EcoRI-PstI interval 13696..17594 and deletion 15449..15928 in unversioned AF235050. AF235050.3 cut coordinates 13696/17595 enclose 3899 bp; subtracting 480 gives reported 3419 bp. pN3 receives its approximately 3.4-kb EcoRV-XbaI fragment. CDS-aware removal at historical PstI cuts 15449/15929 yields 642 bp including stop and 213 aa; this is a curator reconstruction, not resequencing of an experimental allele.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.3</td>
+</tr>
+<tr>
+  <td>pN3 deletion vector</td>
+  <td>was_introduced_into</td>
+  <td>S. rishiriensis DSM 40489 wild type</td>
+  <td>PEG-mediated protoplast transformation; apramycin-resistant integrants sporulated and screened with and without antibiotic.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. rishiriensis DSM 40489 wild type</td>
+  <td>yielded_gene_replacement_strains</td>
+  <td>XH12, XH13 and XH14 deletion strains</td>
+  <td>Four antibiotic-sensitive double crossovers; Southern analysis identified XH12/XH13/XH14 as the desired deletion genotypes.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. rishiriensis DSM 40489 wild type</td>
+  <td>yielded_reversion_control</td>
+  <td>Fourth antibiotic-sensitive wild-type revertant</td>
+  <td>The fourth antibiotic-sensitive isolate had reverted to wild type; antibiotic sensitivity alone did not identify the deletion.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>XH12, XH13 and XH14 deletion strains</td>
+  <td>were_checked_by</td>
+  <td>couN3 Southern genotype analysis</td>
+  <td>Figure 5B SphI/ClaI digest: wild type 2.04 kb and mutants 1.56 kb. Lanes 1 WT, 2-3 single crossovers, 4 revertant, 5-7 XH12/XH13/XH14. Historical AF235050.1/.2 cuts 10512/12551 give 2039 bp; removing 480 bp gives 1559 bp, consistent with rounded bands.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.1</td>
+</tr>
+<tr>
+  <td>Fourth antibiotic-sensitive wild-type revertant</td>
+  <td>was_compared_in</td>
+  <td>couN3 Southern genotype analysis</td>
+  <td>Figure 5B lane 4 matches the wild-type-sized product rather than the deletion product.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>couN3 Southern genotype analysis</td>
+  <td>has_probe_version_limit</td>
+  <td>Historical allele and probe boundaries</td>
+  <td>Table 17 gives an 826-bp SphI-PstI probe at 10512-11338. These are AF235050.1/.2 cut coordinates and yield 826 bp; AF235050.3 equivalent cuts 14623/15449 also yield 826 bp. The table is not a current-coordinate declaration.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4</td>
+</tr>
+<tr>
+  <td>Historical 213-aa deletion model</td>
+  <td>has_experimental_identity_limit</td>
+  <td>Historical allele and probe boundaries</td>
+  <td>Construct geometry and Southern genotype do not establish the full experimental mutant sequence, protein expression, or absence of all polar effects. No couN3 genetic complementation was identified in the inspected relevant thesis sections; this is not an exhaustive literature absence.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 9 edges</span></h2>
+<p class="sub">Native couN4 insertion with Southern/PCR support and unrepaired source conflicts. Partial curation; author-agent review #572. Native references, engineered alleles, genetic phenotypes and direct biochemical evidence are distinct; prior graphs and SEEDED status are preserved.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>pN4 aphII insertion vector</td>
+  <td>targets_coding_locus_of</td>
+  <td>Native CouN4 sequence reference</td>
+  <td>A 0.99-kb aphII cassette interrupts the EcoRI site in the same orientation as couN4. The disrupted 2.65-kb PstI fragment is in pBluescript SK(-); intermediates pZW331/pZW32/pZW2/pZW3 are source-described.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pN4 aphII insertion vector</td>
+  <td>was_introduced_into</td>
+  <td>S. rishiriensis DSM 40489 wild type</td>
+  <td>Native protoplast transformation and neomycin selection, not heterologous M1146 expression.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. rishiriensis DSM 40489 wild type</td>
+  <td>yielded_gene_replacement_strains</td>
+  <td>ZW20 and ZW21 insertion strains</td>
+  <td>Two double-crossovers, ZW20/ZW21, carried disrupted rather than intact couN4 by the reported genotype analyses.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>ZW20 and ZW21 insertion strains</td>
+  <td>were_checked_by</td>
+  <td>couN4 Southern genotype analysis</td>
+  <td>Figure 5D PstI digest: wild type 1.66 kb, mutants 2.65 kb; lanes 1 WT, 2 ZW20, 3 ZW21. Historical AF235050.1/.2 PstI cuts 11818/13484 give 1666 bp; adding approximately 0.99 kb is consistent with the rounded mutant size, not a fully sequenced construct.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.1</td>
+</tr>
+<tr>
+  <td>ZW20 and ZW21 insertion strains</td>
+  <td>were_checked_by</td>
+  <td>Reported two-pair couN4 genotype PCR</td>
+  <td>Source reports two primer pairs confirming absence of the intact gene and presence of the disrupted gene. Inspected Table 16 contains no corresponding couN4 primer sequences, so no literal-primer match or complete allele sequence is asserted.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pN4 aphII insertion vector</td>
+  <td>has_source_naming_conflict</td>
+  <td>pN4 naming and probe-coordinate conflicts</td>
+  <td>Methods 8.1 twice call the pN4 3-prime/disrupted fragments couN3; Table 14, Figure 5C/D and the results identify couN4. Preserve the inconsistency rather than silently changing the source labels.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>couN4 Southern genotype analysis</td>
+  <td>has_source_probe_conflict</td>
+  <td>pN4 naming and probe-coordinate conflicts</td>
+  <td>Table 17 reports an 870-bp PstI-EcoRI probe at 11338-12688. The AF235050.1/.2 cut interval is 1350 bp; the distinct PstI site 11818 to EcoRI 12688 gives 870 bp and fits the downstream schematic. This is a possible explanation, not proof of which probe was actually used or an authorized correction.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.1</td>
+</tr>
+<tr>
+  <td>Reported two-pair couN4 genotype PCR</td>
+  <td>has_verification_limit</td>
+  <td>Insertion-allele verification limits</td>
+  <td>Genotype PCR without inspected oligonucleotides or full allele sequencing does not establish complete mutant identity or eliminate polar effects.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pN4 naming and probe-coordinate conflicts</td>
+  <td>limits_construct_reconstruction</td>
+  <td>Insertion-allele verification limits</td>
+  <td>Do not assign the current full-length native UniProt sequence to this aphII-disrupted allele. No couN4 genetic complementation was identified in the inspected relevant thesis sections; no exhaustive absence is claimed.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 18 edges</span></h2>
+<p class="sub">Native culture phenotypes distinguish terminal-pyrrole involvement from central-pyrrole biosynthesis. Partial curation; author-agent review #572. Native references, engineered alleles, genetic phenotypes and direct biochemical evidence are distinct; prior graphs and SEEDED status are preserved.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native couN3 deletion strains</td>
+  <td>has_disrupted_locus_for</td>
+  <td>Native CouN3 sequence reference</td>
+  <td>Native deletion series XH12/XH13/XH14; Figure 6 shows XH13, not separate chromatograms for every clone.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Native couN4 insertion strains</td>
+  <td>has_disrupted_locus_for</td>
+  <td>Native CouN4 sequence reference</td>
+  <td>Native insertion series ZW20/ZW21; Figure 6 shows ZW20, not separate chromatograms for both clones.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. rishiriensis DSM 40489 wild type</td>
+  <td>was_cultured_for</td>
+  <td>Native-culture extraction and HPLC analysis</td>
+  <td>Wild type and mutants: 50 mL HA preculture, 28 C, 180 rpm, 2 days; 2 mL into 100 mL SK in 500-mL baffled flask, 28 C, 180 rpm, 7-10 days.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Native couN3 deletion strains</td>
+  <td>was_analyzed_by</td>
+  <td>Native-culture extraction and HPLC analysis</td>
+  <td>6 mL whole culture, acidified to pH 6, washed twice with 6 mL petroleum ether, extracted twice with 6 mL ethyl acetate; dried residue in 0.6 mL ethanol.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Native couN4 insertion strains</td>
+  <td>was_analyzed_by</td>
+  <td>Native-culture extraction and HPLC analysis</td>
+  <td>Same coumermycin extraction method. HPLC Nucleosil RP 120-5, 5 um, 250x2 mm, 30-100% acetonitrile in 0.1% aqueous phosphoric acid, 0.2 mL/min, UV 345 nm.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. rishiriensis DSM 40489 wild type</td>
+  <td>produced_identified_product</td>
+  <td>coumermycin A1</td>
+  <td>Dominant WT product matched authentic coumermycin A1 by HPLC; LC/MS [M-H]-=1108. Source reports approximately 2.7 umol/L.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>S. rishiriensis DSM 40489 wild type</td>
+  <td>also_contained_minor_product</td>
+  <td>Source-assigned coumermycin D</td>
+  <td>The discussion reports minor wild-type coumermycin D, confirmed by LC/MS [M-H]-=894. D is enriched in the mutants, not uniquely present there.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Native couN3 deletion strains</td>
+  <td>lost_detectable_reported_production_of</td>
+  <td>coumermycin A1</td>
+  <td>Source reports complete abolishment under these culture/HPLC conditions; no numerical detection limit or zero absolute production is supplied.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Native couN4 insertion strains</td>
+  <td>lost_detectable_reported_production_of</td>
+  <td>coumermycin A1</td>
+  <td>Source reports complete abolishment under the same analysis; no numerical detection limit or universal essentiality across hosts is inferred.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Native couN3 deletion strains</td>
+  <td>accumulated_assigned_product</td>
+  <td>Source-assigned coumermycin D</td>
+  <td>Dominant product assigned by LC/MS [M-H]-=894; UV lacks the 275-nm maximum observed for A1. No fresh raw-spectrum reprocessing or independent full structure determination is claimed.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Native couN4 insertion strains</td>
+  <td>accumulated_assigned_product</td>
+  <td>Source-assigned coumermycin D</td>
+  <td>Assignment by HPLC and UV spectroscopy; this result paragraph does not independently report N4-mutant LC/MS. Do not transfer the N3 mass measurement to a separately characterized N4 sample.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Source-assigned coumermycin D</td>
+  <td>has_reported_mutant_titer_in</td>
+  <td>Native-culture extraction and HPLC analysis</td>
+  <td>Reported mutant range 12-17 umol/L, without clone-specific values, replicate count or uncertainty. Methods name authentic A1 as standard but no D-specific calibration/response factor; retain the source-reported D titers with this limitation.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Native couN3 deletion strains</td>
+  <td>supports_pathway_involvement</td>
+  <td>Terminal-pyrrole pathway involvement</td>
+  <td>Accumulation of D without the two terminal pyrrole units supports CouN3 involvement in terminal-pyrrole biosynthesis, not its purified-protein mechanism.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1<br>DOI:10.1007/s00438-002-0759-1</td>
+</tr>
+<tr>
+  <td>Native couN4 insertion strains</td>
+  <td>supports_pathway_involvement</td>
+  <td>Terminal-pyrrole pathway involvement</td>
+  <td>Native insertion phenotype supports CouN4 involvement; specific proline activation/loading is supported separately by the 2005 biochemical abstract.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Source-assigned coumermycin D</td>
+  <td>supports_distinct_biosynthetic_route</td>
+  <td>Distinct central-pyrrole pathway inference</td>
+  <td>The central pyrrole remains in D from both mutants despite loss of terminal units. This supports different biosynthetic requirements, not precursor atom identities, every central-pathway enzyme or a physical CouN assembly.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Native-culture extraction and HPLC analysis</td>
+  <td>has_comparison_limit</td>
+  <td>Detection, calibration and genetic-causality limits</td>
+  <td>The 12-17 umol/L D range and approximately 2.7 umol/L WT A1 value concern different compounds; they do not demonstrate a fivefold increase in A1 production. No replicate statistics, exact D recovery or independent D response calibration are inferred.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Terminal-pyrrole pathway involvement</td>
+  <td>has_causal_specificity_limit</td>
+  <td>Detection, calibration and genetic-causality limits</td>
+  <td>Native genetics do not by themselves identify the acyl carrier, oxidized intermediates, direct catalytic rate, or absence of polar effects. No gene complementation is supplied in the inspected relevant result sections.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Distinct central-pyrrole pathway inference</td>
+  <td>has_precursor_attribution_limit</td>
+  <td>Detection, calibration and genetic-causality limits</td>
+  <td>Historical proline feeding discussed in the thesis did not distinguish terminal and central pyrroles. Do not assign all three pyrroles to proline from that older experiment; later central-pyrrole evidence is preserved in separate CouR components.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 11 edges</span></h2>
+<p class="sub">Primary CouN4/CouN5 activation and carrier loading, without transferring the CloN3 oxidation assay. Partial curation; author-agent review #572. Native references, engineered alleles, genetic phenotypes and direct biochemical evidence are distinct; prior graphs and SEEDED status are preserved.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Reported experimental CouN4 preparation</td>
+  <td>has_native_sequence_reference</td>
+  <td>Native CouN4 sequence reference</td>
+  <td>Native 501-aa reference is grounded independently to the producer deposit. The primary abstract names CouN4 but does not identify the complete tagged construct, strain-specific sample sequence or purity.</td>
+  <td class="mono">DOI:10.1021/bi0476329<br>https://www.uniprot.org/uniprotkb/Q9F8U3</td>
+</tr>
+<tr>
+  <td>Reported holo-CouN5 preparation</td>
+  <td>has_native_sequence_reference</td>
+  <td>Native CouN5 sequence reference</td>
+  <td>Native 89-aa reference is grounded independently. Holo status denotes phosphopantetheinylation, not a separately sequenced UniProt isoform; the abstract does not specify complete experimental fusion or modified-residue evidence.</td>
+  <td class="mono">DOI:10.1021/bi0476329<br>https://www.uniprot.org/uniprotkb/Q9F8U2</td>
+</tr>
+<tr>
+  <td>Reported experimental CouN4 preparation</td>
+  <td>catalyzed_reported_activation_in</td>
+  <td>Reported proline activation and carrier loading</td>
+  <td>The 2005 primary abstract explicitly includes CouN4 in L-proline selection and activation as L-prolyl-AMP. No quantitative specificity panel, ATP-exchange rate or reaction concentration is available from this abstract.</td>
+  <td class="mono">DOI:10.1021/bi0476329</td>
+</tr>
+<tr>
+  <td>L-proline substrate</td>
+  <td>was_selected_substrate_in</td>
+  <td>Reported proline activation and carrier loading</td>
+  <td>Adenylate activation precedes carrier loading in the reported biochemical scheme, not inferred from gene order.</td>
+  <td class="mono">DOI:10.1021/bi0476329</td>
+</tr>
+<tr>
+  <td>Reported proline activation and carrier loading</td>
+  <td>formed_reported_intermediate</td>
+  <td>Reported L-prolyl-AMP intermediate</td>
+  <td>L-prolyl-AMP is explicitly named; no raw intermediate spectrum or detailed assay method was inspected.</td>
+  <td class="mono">DOI:10.1021/bi0476329</td>
+</tr>
+<tr>
+  <td>Reported holo-CouN5 preparation</td>
+  <td>was_carrier_in</td>
+  <td>Reported proline activation and carrier loading</td>
+  <td>The abstract explicitly includes the holo form of CouN5 among the peptidyl carrier proteins loaded as a phosphopantetheinyl thioester.</td>
+  <td class="mono">DOI:10.1021/bi0476329</td>
+</tr>
+<tr>
+  <td>Reported proline activation and carrier loading</td>
+  <td>produced_reported_carrier_state</td>
+  <td>Reported prolyl-S-CouN5</td>
+  <td>Prolyl thioester on holo-CouN5 is the reported carrier-bound state; no residue-specific site, stoichiometric loading fraction or physical CouN4-CouN5 complex is inferred.</td>
+  <td class="mono">DOI:10.1021/bi0476329</td>
+</tr>
+<tr>
+  <td>Reported prolyl-S-CouN5</td>
+  <td>has_downstream_assay_identity_limit</td>
+  <td>CloN3 rapid-quench oxidation experiment</td>
+  <td>The next rapid-quench/ESI-FTMS result in the abstract names flavoprotein CloN3, not CouN3. The abstract alone does not unambiguously identify which PCP sample was used in that oxidation experiment.</td>
+  <td class="mono">DOI:10.1021/bi0476329</td>
+</tr>
+<tr>
+  <td>CloN3 rapid-quench oxidation experiment</td>
+  <td>does_not_directly_measure</td>
+  <td>Native CouN3 sequence reference</td>
+  <td>Do not transfer the CloN3 oxidation experiment, transient pyrrolinyl state or four-electron endpoint to purified CouN3. CouN3 has native genetic evidence and a homolog-based dehydrogenase proposal, not that exact assay identity.</td>
+  <td class="mono">DOI:10.1021/bi0476329<br>https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Reported proline activation and carrier loading</td>
+  <td>has_source_access_limit</td>
+  <td>Abstract-only construct, specificity and assembly limits</td>
+  <td>Full 2005 paper and supporting methods were not obtained. Constructs, concentrations, kinetic values, carrier specificity and sample-level sequence agreement remain unresolved.</td>
+  <td class="mono">DOI:10.1021/bi0476329</td>
+</tr>
+<tr>
+  <td>Native CouN3 sequence reference</td>
+  <td>has_reaction_assignment_limit</td>
+  <td>Abstract-only construct, specificity and assembly limits</td>
+  <td>The 2004 homology-based proposal is not promoted to an experimentally measured CouN3 reaction. No ordered native seven-protein reconstitution or physical complex is established by these sources.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&amp;sequence=1<br>DOI:10.1021/bi0476329</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

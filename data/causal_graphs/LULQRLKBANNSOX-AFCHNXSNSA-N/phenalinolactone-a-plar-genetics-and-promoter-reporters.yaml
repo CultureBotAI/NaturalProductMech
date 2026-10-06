@@ -1,0 +1,582 @@
+record_id: naturalproductmech:mibig-e29f83c77b
+standard_inchi_key: LULQRLKBANNSOX-AFCHNXSNSA-N
+graph:
+  graph_id: phenalinolactone-a-plar-genetics-and-promoter-reporters
+  scope: BIOSYNTHESIS
+  description: Myronovskyi et al. 2011 regulator genetics in the phenalinolactone-producing
+    Tu6071 locus. Marker-free internal disruptions and integrated promoter-GusA reporters
+    are separate from exact native PlaR1/PlaR2/PlaR3 proteins. Reporter changes are
+    not direct DNA binding, native RNA measurements or native protein abundance. Production
+    results are reported as phenalinolactone without a congener-resolved titer here;
+    do not generalize them to every congener. Results report trace production for
+    deltaR2, despite cessation wording in Discussion. The plaM1/plaM2 text discrepancy
+    and construct limitations remain explicit. Quantities below come from paper text;
+    Figure 6 bars/error bars were not independently digitized or visually verified.
+  nodes:
+  - node_id: plar1
+    label: Native PlaR1 parent (SARP-family annotation)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:ABB69733.1
+  - node_id: plar2
+    label: Native PlaR2 parent (TetR-family annotation)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:ABB69734.1
+  - node_id: plar3
+    label: Native PlaR3 parent (HxlR-related interpretation)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:ABB69766.1
+  - node_id: delta_r1
+    label: Tu6071 deltaR1 marker-free internal disruption
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: delta_r2
+    label: Tu6071 deltaR2 marker-free internal disruption
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: delta_r3
+    label: Tu6071 deltaR3 marker-free internal disruption
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: r1_output
+    label: Phenalinolactone production reported abolished in deltaR1
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: r2_output
+    label: Trace phenalinolactone production reported in deltaR2
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: r3_output
+    label: Phenalinolactone production reported unchanged in deltaR3
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: p_r1
+    label: Engineered plaR1 promoter-GusA reporter activity
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: p_r2
+    label: Engineered plaR2 promoter-GusA reporter activity
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: p_r3
+    label: Engineered plaR3 promoter-GusA reporter activity
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: p_m2
+    label: Engineered plaM2 promoter-GusA reporter activity
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: p_o2
+    label: Engineered plaO2 promoter-GusA reporter activity
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: delta_r1
+    predicate: targets_gene_encoding
+    object: plar1
+    notes: 'Native parent ABB69733.1: 265 aa, DQ230532.1:complement(6556..7353), Tu6071
+      taxon 355249. Native GenBank, MIBiG and GenPept translations match. The study
+      used pKGLP2-based replacement with a loxP-flanked apramycin marker, followed
+      by Cre-mediated marker excision; marker-free is not a claim of scarless editing.
+      PCR verified R1/R3 replacements and Southern hybridization R2. Curator alignment
+      of Table 2 inner homology arms places an internal native interval between them
+      at 6615..7201 (587 bp); residual coding sequence remains. These are native-coordinate
+      reconstructions, not sequenced mutant alleles or measured residual protein products.
+      Q2I751 is deleted as redundant; UniParc UPI000068F38F retains the exact sequence
+      but no active UniProtKB cross-reference in the inspected entry. The exact 265-aa
+      native parent is grounded, not an inferred mutant protein.'
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gene-inactivation construction, Table 2 and results, pp. 5371-5374.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABB69733.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native parent, 265 aa, complement(6556..7353); Streptomyces sp. Tu6071,
+        taxon 355249.
+      retrieved_on: '2026-10-04'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator exact native GenBank/MIBiG/GenPept sequence comparison and Table
+        2 primer homology alignment. Not a complete construct or mutant sequence.
+    - reference: https://rest.uniprot.org/uniprotkb/Q2I751.json
+      evidence_type: DATABASE_ASSERTION
+      notes: 'Official UniProt response inspected 2026-10-04: Q2I751 is inactive,
+        deleted for redundant sequence; not adopted as an active protein example.'
+    - reference: https://rest.uniprot.org/uniparc/UPI000068F38F.json
+      evidence_type: DATABASE_ASSERTION
+      notes: Official UniParc entry inspected 2026-10-04 retains the exact native
+        parent sequence and inactive UniProt cross-reference; no active UniProtKB
+        cross-reference listed.
+  - subject: delta_r2
+    predicate: targets_gene_encoding
+    object: plar2
+    notes: 'Native parent ABB69734.1: 200 aa, DQ230532.1:complement(7806..8408), Tu6071
+      taxon 355249. Native GenBank, MIBiG and GenPept translations match. The study
+      used pKGLP2-based replacement with a loxP-flanked apramycin marker, followed
+      by Cre-mediated marker excision; marker-free is not a claim of scarless editing.
+      PCR verified R1/R3 replacements and Southern hybridization R2. Curator alignment
+      of Table 2 inner homology arms places an internal native interval between them
+      at 7829..8386 (558 bp); residual coding sequence remains. These are native-coordinate
+      reconstructions, not sequenced mutant alleles or measured residual protein products.
+      Q2I750 is deleted as redundant; UniParc UPI000068F390 retains the exact sequence
+      but no active UniProtKB cross-reference in the inspected entry. A TetR-family
+      annotation does not by itself establish direct repression of these promoters.'
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gene-inactivation construction, Table 2 and results, pp. 5371-5374.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABB69734.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native parent, 200 aa, complement(7806..8408); Streptomyces sp. Tu6071,
+        taxon 355249.
+      retrieved_on: '2026-10-04'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator exact native GenBank/MIBiG/GenPept sequence comparison and Table
+        2 primer homology alignment. Not a complete construct or mutant sequence.
+    - reference: https://rest.uniprot.org/uniprotkb/Q2I750.json
+      evidence_type: DATABASE_ASSERTION
+      notes: 'Official UniProt response inspected 2026-10-04: Q2I750 is inactive,
+        deleted for redundant sequence; not adopted as an active protein example.'
+    - reference: https://rest.uniprot.org/uniparc/UPI000068F390.json
+      evidence_type: DATABASE_ASSERTION
+      notes: Official UniParc entry inspected 2026-10-04 retains the exact native
+        parent sequence and inactive UniProt cross-reference; no active UniProtKB
+        cross-reference listed.
+  - subject: delta_r3
+    predicate: targets_gene_encoding
+    object: plar3
+    notes: 'Native parent ABB69766.1: 119 aa, DQ230532.1:complement(47334..47693),
+      Tu6071 taxon 355249. Native GenBank, MIBiG and GenPept translations match. The
+      study used pKGLP2-based replacement with a loxP-flanked apramycin marker, followed
+      by Cre-mediated marker excision; marker-free is not a claim of scarless editing.
+      PCR verified R1/R3 replacements and Southern hybridization R2. Curator alignment
+      of Table 2 inner homology arms places an internal native interval between them
+      at 47381..47678 (298 bp); residual coding sequence remains. These are native-coordinate
+      reconstructions, not sequenced mutant alleles or measured residual protein products.
+      The legacy GenPept protein name says putative TetR regulator, whereas the paper
+      and the GenPept domain annotation support an HxlR-related interpretation. Neither
+      demonstrates a formaldehyde response. Methods describe R3.2 cloning with XbaI/BamHI,
+      while Table 2 primers carry BamHI/EcoRV tails; the exact engineered junction
+      is not asserted. A bounded official gene/taxon and EMBL cross-reference query
+      found no active exact UniProtKB entry.'
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gene-inactivation construction, Table 2 and results, pp. 5371-5374.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABB69766.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native parent, 119 aa, complement(47334..47693); Streptomyces sp. Tu6071,
+        taxon 355249.
+      retrieved_on: '2026-10-04'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator exact native GenBank/MIBiG/GenPept sequence comparison and Table
+        2 primer homology alignment. Not a complete construct or mutant sequence.
+  - subject: delta_r1
+    predicate: has_reported_production_phenotype
+    object: r1_output
+    notes: LC-MS analysis reports abolished phenalinolactone production in the marker-free
+      deltaR1 strain. Production cultures used NL111. This is the reported detection
+      phenotype, not a numerical zero titer, quantified detection limit, purified
+      PlaR1 reaction or direct promoter binding. The assayed congener breakdown is
+      not given in this account; no complementation-based exclusion of polar effects
+      is asserted.
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Culture/LC-MS methods p. 5371; gene-inactivation results pp. 5374-5375.
+  - subject: delta_r2
+    predicate: has_reported_production_phenotype
+    object: r2_output
+    notes: Results report trace phenalinolactone production in deltaR2, whereas Discussion
+      calls it cessation. Preserve this disagreement and the trace result; do not
+      encode complete abolition. NL111 production cultures and LC-MS are distinct
+      from TSB-grown promoter-reporter assays. No exact residual titer, congener ratio
+      or universal PlaR2 requirement is assigned.
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results pp. 5374-5375 versus Discussion p. 5381; methods p. 5371.
+      snippet: phenalinolactone in trace amounts.
+  - subject: delta_r3
+    predicate: has_reported_production_phenotype
+    object: r3_output
+    notes: The LC-MS account describes deltaR3 phenalinolactone production as the
+      same as wild type under the tested conditions. This is bounded negative evidence,
+      not statistical equivalence, all-condition dispensability or absence of regulatory
+      effects. The same mutant changes reporter outputs.
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gene-inactivation results pp. 5374-5375; Discussion p. 5381.
+  - subject: delta_r1
+    predicate: has_reported_promoter_reporter_effect
+    object: p_r1
+    notes: Reported activity is 168% of the corresponding wild-type reporter; wild
+      type is the relative 100% reference. The pGUS promoter-GusA fusion was integrated
+      in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis
+      (OD415, 20 min at 37 C). The study states means with standard errors from three
+      independent experiments. No significance test or exact reporter-culture harvest
+      time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough.
+      The native homology span of the cloned promoter fragment is 7365..7864 (-) by
+      curator primer alignment, not an exact minimal promoter or regulator-binding
+      site. This assay supports a regulatory effect in an engineered reporter context,
+      not direct binding or native protein abundance.
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Promoter-vector methods pp. 5372-5373; Results pp. 5375-5376 and Figure
+        6 caption p. 5377. Percentages/no-change statements taken from text, not digitized
+        bars.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Table 2 primer suffixes aligned to native DQ230532.1; genomic strand
+        and homologous fragment span, not a sequenced full reporter construct.
+  - subject: delta_r1
+    predicate: has_reported_promoter_reporter_effect
+    object: p_r2
+    notes: The text reports no detected change versus the corresponding wild-type
+      reporter; do not replace that statement with an invented exact 100% measurement.
+      The pGUS promoter-GusA fusion was integrated in Tu6071 and assayed in TSB-grown
+      cultures by p-nitrophenyl-glucuronide hydrolysis (OD415, 20 min at 37 C). The
+      study states means with standard errors from three independent experiments.
+      No significance test or exact reporter-culture harvest time is inferred here.
+      Upstream aadA/T4 terminators were designed to block readthrough. The native
+      homology span of the cloned promoter fragment is 8428..8934 (-) by curator primer
+      alignment, not an exact minimal promoter or regulator-binding site. This assay
+      supports a regulatory effect in an engineered reporter context, not direct binding
+      or native protein abundance.
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Promoter-vector methods pp. 5372-5373; Results pp. 5375-5376 and Figure
+        6 caption p. 5377. Percentages/no-change statements taken from text, not digitized
+        bars.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Table 2 primer suffixes aligned to native DQ230532.1; genomic strand
+        and homologous fragment span, not a sequenced full reporter construct.
+  - subject: delta_r1
+    predicate: has_reported_promoter_reporter_effect
+    object: p_r3
+    notes: Reported activity is 35.5% of the corresponding wild-type reporter; wild
+      type is the relative 100% reference. The pGUS promoter-GusA fusion was integrated
+      in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis
+      (OD415, 20 min at 37 C). The study states means with standard errors from three
+      independent experiments. No significance test or exact reporter-culture harvest
+      time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough.
+      The native homology span of the cloned promoter fragment is 47714..48213 (-)
+      by curator primer alignment, not an exact minimal promoter or regulator-binding
+      site. This assay supports a regulatory effect in an engineered reporter context,
+      not direct binding or native protein abundance.
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Promoter-vector methods pp. 5372-5373; Results pp. 5375-5376 and Figure
+        6 caption p. 5377. Percentages/no-change statements taken from text, not digitized
+        bars.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Table 2 primer suffixes aligned to native DQ230532.1; genomic strand
+        and homologous fragment span, not a sequenced full reporter construct.
+  - subject: delta_r1
+    predicate: has_reported_promoter_reporter_effect
+    object: p_m2
+    notes: Reported activity is 81.5% of the corresponding wild-type reporter; wild
+      type is the relative 100% reference. The pGUS promoter-GusA fusion was integrated
+      in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis
+      (OD415, 20 min at 37 C). The study states means with standard errors from three
+      independent experiments. No significance test or exact reporter-culture harvest
+      time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough.
+      The native homology span of the cloned promoter fragment is 22371..22863 (+)
+      by curator primer alignment, not an exact minimal promoter or regulator-binding
+      site. This assay supports a regulatory effect in an engineered reporter context,
+      not direct binding or native protein abundance. One Results sentence names plaM1,
+      but Table 1, Table 2, the methods, reporter labels and detailed results identify
+      plaM2. Primer alignment supports the plaM2 region; no plaM1 regulatory edge
+      is inferred.
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Promoter-vector methods pp. 5372-5373; Results pp. 5375-5376 and Figure
+        6 caption p. 5377. Percentages/no-change statements taken from text, not digitized
+        bars.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Table 2 primer suffixes aligned to native DQ230532.1; genomic strand
+        and homologous fragment span, not a sequenced full reporter construct.
+  - subject: delta_r1
+    predicate: has_reported_promoter_reporter_effect
+    object: p_o2
+    notes: Reported activity is 58% of the corresponding wild-type reporter; wild
+      type is the relative 100% reference. The pGUS promoter-GusA fusion was integrated
+      in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis
+      (OD415, 20 min at 37 C). The study states means with standard errors from three
+      independent experiments. No significance test or exact reporter-culture harvest
+      time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough.
+      The native homology span of the cloned promoter fragment is 22650..23150 (-)
+      by curator primer alignment, not an exact minimal promoter or regulator-binding
+      site. This assay supports a regulatory effect in an engineered reporter context,
+      not direct binding or native protein abundance.
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Promoter-vector methods pp. 5372-5373; Results pp. 5375-5376 and Figure
+        6 caption p. 5377. Percentages/no-change statements taken from text, not digitized
+        bars.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Table 2 primer suffixes aligned to native DQ230532.1; genomic strand
+        and homologous fragment span, not a sequenced full reporter construct.
+  - subject: delta_r2
+    predicate: has_reported_promoter_reporter_effect
+    object: p_r1
+    notes: The text reports no detected change versus the corresponding wild-type
+      reporter; do not replace that statement with an invented exact 100% measurement.
+      The pGUS promoter-GusA fusion was integrated in Tu6071 and assayed in TSB-grown
+      cultures by p-nitrophenyl-glucuronide hydrolysis (OD415, 20 min at 37 C). The
+      study states means with standard errors from three independent experiments.
+      No significance test or exact reporter-culture harvest time is inferred here.
+      Upstream aadA/T4 terminators were designed to block readthrough. The native
+      homology span of the cloned promoter fragment is 7365..7864 (-) by curator primer
+      alignment, not an exact minimal promoter or regulator-binding site. This assay
+      supports a regulatory effect in an engineered reporter context, not direct binding
+      or native protein abundance.
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Promoter-vector methods pp. 5372-5373; Results pp. 5375-5376 and Figure
+        6 caption p. 5377. Percentages/no-change statements taken from text, not digitized
+        bars.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Table 2 primer suffixes aligned to native DQ230532.1; genomic strand
+        and homologous fragment span, not a sequenced full reporter construct.
+  - subject: delta_r2
+    predicate: has_reported_promoter_reporter_effect
+    object: p_r2
+    notes: The text reports no detected change versus the corresponding wild-type
+      reporter; do not replace that statement with an invented exact 100% measurement.
+      The pGUS promoter-GusA fusion was integrated in Tu6071 and assayed in TSB-grown
+      cultures by p-nitrophenyl-glucuronide hydrolysis (OD415, 20 min at 37 C). The
+      study states means with standard errors from three independent experiments.
+      No significance test or exact reporter-culture harvest time is inferred here.
+      Upstream aadA/T4 terminators were designed to block readthrough. The native
+      homology span of the cloned promoter fragment is 8428..8934 (-) by curator primer
+      alignment, not an exact minimal promoter or regulator-binding site. This assay
+      supports a regulatory effect in an engineered reporter context, not direct binding
+      or native protein abundance.
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Promoter-vector methods pp. 5372-5373; Results pp. 5375-5376 and Figure
+        6 caption p. 5377. Percentages/no-change statements taken from text, not digitized
+        bars.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Table 2 primer suffixes aligned to native DQ230532.1; genomic strand
+        and homologous fragment span, not a sequenced full reporter construct.
+  - subject: delta_r2
+    predicate: has_reported_promoter_reporter_effect
+    object: p_r3
+    notes: Reported activity is 19% of the corresponding wild-type reporter; wild
+      type is the relative 100% reference. The pGUS promoter-GusA fusion was integrated
+      in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis
+      (OD415, 20 min at 37 C). The study states means with standard errors from three
+      independent experiments. No significance test or exact reporter-culture harvest
+      time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough.
+      The native homology span of the cloned promoter fragment is 47714..48213 (-)
+      by curator primer alignment, not an exact minimal promoter or regulator-binding
+      site. This assay supports a regulatory effect in an engineered reporter context,
+      not direct binding or native protein abundance.
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Promoter-vector methods pp. 5372-5373; Results pp. 5375-5376 and Figure
+        6 caption p. 5377. Percentages/no-change statements taken from text, not digitized
+        bars.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Table 2 primer suffixes aligned to native DQ230532.1; genomic strand
+        and homologous fragment span, not a sequenced full reporter construct.
+  - subject: delta_r2
+    predicate: has_reported_promoter_reporter_effect
+    object: p_m2
+    notes: Reported activity is 46% of the corresponding wild-type reporter; wild
+      type is the relative 100% reference. The pGUS promoter-GusA fusion was integrated
+      in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis
+      (OD415, 20 min at 37 C). The study states means with standard errors from three
+      independent experiments. No significance test or exact reporter-culture harvest
+      time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough.
+      The native homology span of the cloned promoter fragment is 22371..22863 (+)
+      by curator primer alignment, not an exact minimal promoter or regulator-binding
+      site. This assay supports a regulatory effect in an engineered reporter context,
+      not direct binding or native protein abundance. One Results sentence names plaM1,
+      but Table 1, Table 2, the methods, reporter labels and detailed results identify
+      plaM2. Primer alignment supports the plaM2 region; no plaM1 regulatory edge
+      is inferred.
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Promoter-vector methods pp. 5372-5373; Results pp. 5375-5376 and Figure
+        6 caption p. 5377. Percentages/no-change statements taken from text, not digitized
+        bars.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Table 2 primer suffixes aligned to native DQ230532.1; genomic strand
+        and homologous fragment span, not a sequenced full reporter construct.
+  - subject: delta_r2
+    predicate: has_reported_promoter_reporter_effect
+    object: p_o2
+    notes: Reported activity is 58% of the corresponding wild-type reporter; wild
+      type is the relative 100% reference. The pGUS promoter-GusA fusion was integrated
+      in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis
+      (OD415, 20 min at 37 C). The study states means with standard errors from three
+      independent experiments. No significance test or exact reporter-culture harvest
+      time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough.
+      The native homology span of the cloned promoter fragment is 22650..23150 (-)
+      by curator primer alignment, not an exact minimal promoter or regulator-binding
+      site. This assay supports a regulatory effect in an engineered reporter context,
+      not direct binding or native protein abundance.
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Promoter-vector methods pp. 5372-5373; Results pp. 5375-5376 and Figure
+        6 caption p. 5377. Percentages/no-change statements taken from text, not digitized
+        bars.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Table 2 primer suffixes aligned to native DQ230532.1; genomic strand
+        and homologous fragment span, not a sequenced full reporter construct.
+  - subject: delta_r3
+    predicate: has_reported_promoter_reporter_effect
+    object: p_r1
+    notes: The text reports no detected change versus the corresponding wild-type
+      reporter; do not replace that statement with an invented exact 100% measurement.
+      The pGUS promoter-GusA fusion was integrated in Tu6071 and assayed in TSB-grown
+      cultures by p-nitrophenyl-glucuronide hydrolysis (OD415, 20 min at 37 C). The
+      study states means with standard errors from three independent experiments.
+      No significance test or exact reporter-culture harvest time is inferred here.
+      Upstream aadA/T4 terminators were designed to block readthrough. The native
+      homology span of the cloned promoter fragment is 7365..7864 (-) by curator primer
+      alignment, not an exact minimal promoter or regulator-binding site. This assay
+      supports a regulatory effect in an engineered reporter context, not direct binding
+      or native protein abundance.
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Promoter-vector methods pp. 5372-5373; Results pp. 5375-5376 and Figure
+        6 caption p. 5377. Percentages/no-change statements taken from text, not digitized
+        bars.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Table 2 primer suffixes aligned to native DQ230532.1; genomic strand
+        and homologous fragment span, not a sequenced full reporter construct.
+  - subject: delta_r3
+    predicate: has_reported_promoter_reporter_effect
+    object: p_r2
+    notes: Reported activity is 207% of the corresponding wild-type reporter; wild
+      type is the relative 100% reference. The pGUS promoter-GusA fusion was integrated
+      in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis
+      (OD415, 20 min at 37 C). The study states means with standard errors from three
+      independent experiments. No significance test or exact reporter-culture harvest
+      time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough.
+      The native homology span of the cloned promoter fragment is 8428..8934 (-) by
+      curator primer alignment, not an exact minimal promoter or regulator-binding
+      site. This assay supports a regulatory effect in an engineered reporter context,
+      not direct binding or native protein abundance.
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Promoter-vector methods pp. 5372-5373; Results pp. 5375-5376 and Figure
+        6 caption p. 5377. Percentages/no-change statements taken from text, not digitized
+        bars.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Table 2 primer suffixes aligned to native DQ230532.1; genomic strand
+        and homologous fragment span, not a sequenced full reporter construct.
+  - subject: delta_r3
+    predicate: has_reported_promoter_reporter_effect
+    object: p_r3
+    notes: Reported activity is 63% of the corresponding wild-type reporter; wild
+      type is the relative 100% reference. The pGUS promoter-GusA fusion was integrated
+      in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis
+      (OD415, 20 min at 37 C). The study states means with standard errors from three
+      independent experiments. No significance test or exact reporter-culture harvest
+      time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough.
+      The native homology span of the cloned promoter fragment is 47714..48213 (-)
+      by curator primer alignment, not an exact minimal promoter or regulator-binding
+      site. This assay supports a regulatory effect in an engineered reporter context,
+      not direct binding or native protein abundance.
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Promoter-vector methods pp. 5372-5373; Results pp. 5375-5376 and Figure
+        6 caption p. 5377. Percentages/no-change statements taken from text, not digitized
+        bars.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Table 2 primer suffixes aligned to native DQ230532.1; genomic strand
+        and homologous fragment span, not a sequenced full reporter construct.
+  - subject: delta_r3
+    predicate: has_reported_promoter_reporter_effect
+    object: p_m2
+    notes: Reported activity is 209% of the corresponding wild-type reporter; wild
+      type is the relative 100% reference. The pGUS promoter-GusA fusion was integrated
+      in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis
+      (OD415, 20 min at 37 C). The study states means with standard errors from three
+      independent experiments. No significance test or exact reporter-culture harvest
+      time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough.
+      The native homology span of the cloned promoter fragment is 22371..22863 (+)
+      by curator primer alignment, not an exact minimal promoter or regulator-binding
+      site. This assay supports a regulatory effect in an engineered reporter context,
+      not direct binding or native protein abundance. One Results sentence names plaM1,
+      but Table 1, Table 2, the methods, reporter labels and detailed results identify
+      plaM2. Primer alignment supports the plaM2 region; no plaM1 regulatory edge
+      is inferred.
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Promoter-vector methods pp. 5372-5373; Results pp. 5375-5376 and Figure
+        6 caption p. 5377. Percentages/no-change statements taken from text, not digitized
+        bars.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Table 2 primer suffixes aligned to native DQ230532.1; genomic strand
+        and homologous fragment span, not a sequenced full reporter construct.
+  - subject: delta_r3
+    predicate: has_reported_promoter_reporter_effect
+    object: p_o2
+    notes: Reported activity is 139% of the corresponding wild-type reporter; wild
+      type is the relative 100% reference. The pGUS promoter-GusA fusion was integrated
+      in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis
+      (OD415, 20 min at 37 C). The study states means with standard errors from three
+      independent experiments. No significance test or exact reporter-culture harvest
+      time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough.
+      The native homology span of the cloned promoter fragment is 22650..23150 (-)
+      by curator primer alignment, not an exact minimal promoter or regulator-binding
+      site. This assay supports a regulatory effect in an engineered reporter context,
+      not direct binding or native protein abundance.
+    evidence:
+    - reference: DOI:10.1128/AEM.00434-11
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Promoter-vector methods pp. 5372-5373; Results pp. 5375-5376 and Figure
+        6 caption p. 5377. Percentages/no-change statements taken from text, not digitized
+        bars.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Table 2 primer suffixes aligned to native DQ230532.1; genomic strand
+        and homologous fragment span, not a sequenced full reporter construct.
+curation_history:
+- timestamp: '2026-10-04T04:13:55Z'
+  curator: codex
+  action: GRAPH_CURATED
+  changes: 'Added primary-cited regulator or PlaM2 reporter evidence, exact native
+    parents and explicit engineered contexts. Addressed #528: trace-versus-cessation
+    and plaM1/plaM2 discrepancies, internal disruption/construct limits, inference
+    versus measured reporter output, and rejected inactive UniProt identities. Figure
+    bars not independently inspected or digitized.'
+  llm_assisted: true

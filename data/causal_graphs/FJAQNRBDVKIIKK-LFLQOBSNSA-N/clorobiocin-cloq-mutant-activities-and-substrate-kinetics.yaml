@@ -1,0 +1,415 @@
+record_id: naturalproductmech:mibig-619480541f
+standard_inchi_key: FJAQNRBDVKIIKK-LFLQOBSNSA-N
+graph:
+  graph_id: clorobiocin-cloq-mutant-activities-and-substrate-kinetics
+  scope: BIOSYNTHESIS
+  description: 'CloQ WT and eleven mutant activity comparisons, with separate WT substrate-conditioned
+    kinetic fits and endpoint product checks from Metzger 2010 (review #553). All
+    measurements concern recombinant enzyme assays, not native clorobiocin production
+    or each mutant binding a donor in a crystal. WT/variant preparations remain distinct
+    from native Q8GHB2. PDF pages are twelve above printed pages.'
+  nodes:
+  - node_id: wt
+    label: pET28_CloQ-derived WT comparator
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: c215s
+    label: CloQ-C215S engineered protein (pUM28)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: c215a
+    label: CloQ-C215A engineered protein (pUM29)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: e281g
+    label: CloQ-E281G engineered protein (pUM32)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: r160a
+    label: CloQ-R160A engineered protein (pUM35)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: r160q
+    label: CloQ-R160Q engineered protein (pUM36)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: r66s
+    label: CloQ-R66S engineered protein (pUM31)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: k54s
+    label: CloQ-K54S engineered protein (pUM37)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: e290stop
+    label: CloQ-E290stop engineered protein (pUM44)
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+  - node_id: f68s
+    label: CloQ-F68S engineered protein (pUM30)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: r66s_f68s
+    label: CloQ-R66S+F68S engineered protein (pUM33)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: r66s_f68s_e281g
+    label: CloQ-R66S+F68S+E281G engineered protein (pUM34)
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+  - node_id: assay
+    label: CloQ mutant PPi-coupled specific-activity panel
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: kinetics
+    label: WT substrate-conditioned PPi-coupled kinetic fits
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hplc
+    label: WT endpoint HPLC product check
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hpp
+    label: 4-HPP
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: tyr
+    label: L-Tyrosine
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: coumarate
+    label: p-Coumaric acid
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: dmapp
+    label: DMAPP
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: gpp
+    label: GPP
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: tyr_product
+    label: Assay-assigned dimethylallyl-tyrosine
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: gpp_product
+    label: Assay-assigned geranyl-4-HPP
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: covalent_limit
+    label: Cys215 covalent tether is dispensable in the tested assay
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: tautomer
+    label: Unresolved physiological keto-versus-enol substrate choice
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: wt
+    predicate: was_reference_preparation_in
+    object: assay
+    notes: The coupled assay used 200 uL, 75 mM Tris-HCl pH 7.5, 2.5 mM MgCl2, 0.5
+      mM 4-HPP and 0.5 mM DMAPP or GPP, plus 66.7 uL PPi reagent prepared in 4 mL
+      water. Following five minutes preincubation at 30 C, enzyme started a 15-minute
+      NADH trace at 340 nm. Four coupling reactions oxidize two mol NADH per mol PPi,
+      with extinction coefficient 6.22 mM^-1 cm^-1. The reported mutant loads vary
+      from 5 to 50 ug according to activity; individual loads and an exact WT panel
+      load are not assigned here. PPi-coupled rates are not direct structural identification
+      of every product. MgCl2 was supplied despite CloQ being characterized as Mg-independent
+      elsewhere.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Coupled assay and Figure 3.20, PDF pp.48-49,81.
+  - subject: c215s
+    predicate: has_reported_activity_in
+    object: assay
+    notes: Source text reports 36% increased activity over WT with 4-HPP/DMAPP; the
+      bar plot is consistent with retained or increased activity. GPP was not separately
+      tested for this mutant in Figure 3.20. Figure 3.20 has no supplied error-bar
+      definition or replicate count; no exact bar height, mutant Km/kcat, or in-vivo
+      flux is inferred.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Mutant assay, activity text and Figure 3.20, PDF pp.49,76,81-83.
+  - subject: c215a
+    predicate: has_reported_activity_in
+    object: assay
+    notes: Source text reports 13% increased activity over WT with 4-HPP/DMAPP; the
+      bar plot is consistent with retained or increased activity. GPP was not separately
+      tested for this mutant in Figure 3.20. Figure 3.20 has no supplied error-bar
+      definition or replicate count; no exact bar height, mutant Km/kcat, or in-vivo
+      flux is inferred.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Mutant assay, activity text and Figure 3.20, PDF pp.49,76,81-83.
+  - subject: e281g
+    predicate: has_reported_activity_in
+    object: assay
+    notes: The source describes almost no activity with 4-HPP/DMAPP. The small plotted
+      signal is not replaced by an exact zero. GPP was not separately tested for this
+      mutant in Figure 3.20. Figure 3.20 has no supplied error-bar definition or replicate
+      count; no exact bar height, mutant Km/kcat, or in-vivo flux is inferred.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Mutant assay, activity text and Figure 3.20, PDF pp.49,76,81-83.
+      snippet: nahezu keine
+  - subject: r160a
+    predicate: has_reported_activity_in
+    object: assay
+    notes: The source reports approximately 20% residual WT activity with 4-HPP/DMAPP.
+      GPP was not separately tested for this mutant in Figure 3.20. Figure 3.20 has
+      no supplied error-bar definition or replicate count; no exact bar height, mutant
+      Km/kcat, or in-vivo flux is inferred.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Mutant assay, activity text and Figure 3.20, PDF pp.49,76,81-83.
+  - subject: r160q
+    predicate: has_reported_activity_in
+    object: assay
+    notes: The source reports approximately 20% residual WT activity with 4-HPP/DMAPP.
+      GPP was not separately tested for this mutant in Figure 3.20. Figure 3.20 has
+      no supplied error-bar definition or replicate count; no exact bar height, mutant
+      Km/kcat, or in-vivo flux is inferred.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Mutant assay, activity text and Figure 3.20, PDF pp.49,76,81-83.
+  - subject: r66s
+    predicate: has_reported_activity_in
+    object: assay
+    notes: The source reports a 98% decrease relative to WT with 4-HPP/DMAPP. This
+      is not a 98% loss of measured DMAPP binding affinity. GPP was not separately
+      tested for this mutant in Figure 3.20. Figure 3.20 has no supplied error-bar
+      definition or replicate count; no exact bar height, mutant Km/kcat, or in-vivo
+      flux is inferred.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Mutant assay, activity text and Figure 3.20, PDF pp.49,76,81-83.
+  - subject: k54s
+    predicate: has_reported_activity_in
+    object: assay
+    notes: Source-described loss of activity applies to the supplied 4-HPP/DMAPP conditions.
+      There is no stated quantitative detection threshold or displayed K54S CD spectrum.
+      GPP was not separately tested for this mutant in Figure 3.20. Figure 3.20 has
+      no supplied error-bar definition or replicate count; no exact bar height, mutant
+      Km/kcat, or in-vivo flux is inferred.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Mutant assay, activity text and Figure 3.20, PDF pp.49,76,81-83.
+  - subject: e290stop
+    predicate: has_reported_activity_in
+    object: assay
+    notes: The truncated preparation is source-described as inactive with 4-HPP/DMAPP.
+      Its recovery, purity, absent displayed CD and 35-versus-37-residue truncation
+      discrepancy prevent attributing this solely to a barrel-access effect. GPP was
+      not separately tested for this mutant in Figure 3.20. Figure 3.20 has no supplied
+      error-bar definition or replicate count; no exact bar height, mutant Km/kcat,
+      or in-vivo flux is inferred.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Mutant assay, activity text and Figure 3.20, PDF pp.49,76,81-83.
+  - subject: f68s
+    predicate: has_reported_activity_in
+    object: assay
+    notes: The approximately 50% WT activity statement refers to GPP turnover with
+      4-HPP, not DMAPP. Figure 3.20 also shows strongly reduced DMAPP activity, without
+      an exact numerical bar table. Removing F68 did not improve GPP turnover in this
+      experiment. Figure 3.20 has no supplied error-bar definition or replicate count;
+      no exact bar height, mutant Km/kcat, or in-vivo flux is inferred.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Mutant assay, activity text and Figure 3.20, PDF pp.49,76,81-83.
+      snippet: 50 %
+  - subject: r66s_f68s
+    predicate: has_reported_activity_in
+    object: assay
+    notes: The source describes the double mutant as inactive. Figure 3.20 includes
+      both DMAPP and GPP conditions; inactivity is conditional, with no stated quantitative
+      detection threshold. Figure 3.20 has no supplied error-bar definition or replicate
+      count; no exact bar height, mutant Km/kcat, or in-vivo flux is inferred.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Mutant assay, activity text and Figure 3.20, PDF pp.49,76,81-83.
+  - subject: r66s_f68s_e281g
+    predicate: has_reported_activity_in
+    object: assay
+    notes: The source describes the named triple mutant as inactive and Figure 3.20
+      includes DMAPP and GPP. The conflicting pUM34 template descriptions remain unresolved;
+      actual full-sample sequence is not established by a literal-primer model. Figure
+      3.20 has no supplied error-bar definition or replicate count; no exact bar height,
+      mutant Km/kcat, or in-vivo flux is inferred.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Mutant assay, activity text and Figure 3.20, PDF pp.49,76,81-83.
+  - subject: c215s
+    predicate: supports_bounded_covalent_link_interpretation
+    object: covalent_limit
+    notes: Retained activity despite replacing the cysteine supports dispensability
+      of the Cys215-substrate covalent tether in these in-vitro conditions. It does
+      not measure the reversibility/rate of thiohemiketal formation in native cells
+      or establish that the adduct never contributes physiologically.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Structural and mutagenesis interpretation, PDF pp.76,81.
+    - reference: DOI:10.1016/j.jmb.2010.09.067
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Inspected journal abstract: covalent link not essential for activity
+        in vitro; full article not obtained.'
+  - subject: c215a
+    predicate: supports_bounded_covalent_link_interpretation
+    object: covalent_limit
+    notes: Retained activity despite replacing the cysteine supports dispensability
+      of the Cys215-substrate covalent tether in these in-vitro conditions. It does
+      not measure the reversibility/rate of thiohemiketal formation in native cells
+      or establish that the adduct never contributes physiologically.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Structural and mutagenesis interpretation, PDF pp.76,81.
+    - reference: DOI:10.1016/j.jmb.2010.09.067
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Inspected journal abstract: covalent link not essential for activity
+        in vitro; full article not obtained.'
+  - subject: wt
+    predicate: was_measured_in
+    object: kinetics
+    notes: The same PPi/NADH method, with 2.5 mM MgCl2 at 30 C, was used for WT kinetic
+      fits after checking enzyme-dose linearity. Aromatic-substrate series held DMAPP
+      at 0.5 mM; donor series held 4-HPP at 0.5 mM. Table 3.4/Figure 3.21 give fitted
+      Km, turnover and efficiencies, using GraphPad Prism 5.01. The printed +/- values
+      lack a stated error definition in the inspected relevant methods/results, and
+      no replicate count is assigned. Fits at a fixed cosubstrate concentration are
+      not independent binding constants or kinetic measurements for every mutant.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Kinetic methods, Table 3.4 and Figure 3.21, PDF pp.48-49,83-84.
+  - subject: kinetics
+    predicate: has_substrate_conditioned_fit_for
+    object: hpp
+    notes: For 4-HPP, reported Km is 16 +/- 3.9 uM, kcat 0.159 s^-1 and kcat/Km 10000
+      M^-1 s^-1. The fixed cosubstrate is DMAPP at 0.5 mM; enzyme load is 2 ug in
+      200 uL. Values are transcribed from Table 3.4, including its rounding; uncertainty
+      type and independent replication are unspecified. They are WT-preparation values,
+      not intrinsic constants assigned to every engineered protein.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods and Table 3.4, PDF pp.49,83.
+  - subject: kinetics
+    predicate: has_substrate_conditioned_fit_for
+    object: tyr
+    notes: For L-Tyrosine, reported Km is 680 +/- 129 uM, kcat 0.0083 s^-1 and kcat/Km
+      12 M^-1 s^-1. The fixed cosubstrate is DMAPP at 0.5 mM; enzyme load is 16 ug
+      in 200 uL. Values are transcribed from Table 3.4, including its rounding; uncertainty
+      type and independent replication are unspecified. They are WT-preparation values,
+      not intrinsic constants assigned to every engineered protein.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods and Table 3.4, PDF pp.49,83.
+  - subject: kinetics
+    predicate: has_substrate_conditioned_fit_for
+    object: coumarate
+    notes: For p-Coumaric acid, reported Km is 874 +/- 227 uM, kcat 0.0138 s^-1 and
+      kcat/Km 16 M^-1 s^-1. The fixed cosubstrate is DMAPP at 0.5 mM; enzyme load
+      is 16 ug in 200 uL. Values are transcribed from Table 3.4, including its rounding;
+      uncertainty type and independent replication are unspecified. They are WT-preparation
+      values, not intrinsic constants assigned to every engineered protein.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods and Table 3.4, PDF pp.49,83.
+  - subject: kinetics
+    predicate: has_substrate_conditioned_fit_for
+    object: dmapp
+    notes: For DMAPP, reported Km is 25 +/- 4.0 uM, kcat 0.253 s^-1 and kcat/Km 10000
+      M^-1 s^-1. The fixed cosubstrate is 4-HPP at 0.5 mM; enzyme load is 2 ug in
+      200 uL. Values are transcribed from Table 3.4, including its rounding; uncertainty
+      type and independent replication are unspecified. They are WT-preparation values,
+      not intrinsic constants assigned to every engineered protein.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods and Table 3.4, PDF pp.49,83.
+  - subject: kinetics
+    predicate: has_substrate_conditioned_fit_for
+    object: gpp
+    notes: For GPP, reported Km is 307 +/- 55 uM, kcat 0.0291 s^-1 and kcat/Km 95
+      M^-1 s^-1. The fixed cosubstrate is 4-HPP at 0.5 mM; enzyme load is 16 ug in
+      200 uL. Values are transcribed from Table 3.4, including its rounding; uncertainty
+      type and independent replication are unspecified. They are WT-preparation values,
+      not intrinsic constants assigned to every engineered protein.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods and Table 3.4, PDF pp.49,83.
+  - subject: wt
+    predicate: was_tested_in
+    object: hplc
+    notes: Separate endpoint assays used 100 uL, 75 mM Tris-HCl pH 7.5, 2.5 mM MgCl2,
+      0.5 mM aromatic acceptor and 0.5 mM donor, 2 or 16 ug enzyme, ten minutes at
+      30 C, then 2 uL formic acid. Products were extracted with 500 uL ethyl acetate.
+      HPLC monitored 275 nm for keto-4-HPP/tyrosine and 300 nm for enol-4-HPP/p-coumarate.
+      Tautomerism complicated HPLC quantitation, motivating the separate coupled kinetic
+      assay. Methods do not establish an identical product-validation panel for each
+      mutant.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Endpoint assay and kinetic rationale, PDF p.48; product checks, PDF p.83.
+  - subject: hplc
+    predicate: formed_source_assigned_product
+    object: tyr_product
+    notes: Dimethylallyl-tyrosine from L-tyrosine and DMAPP was additionally examined
+      by LC-MS (performed by Stefanie Siebenberg). These source-assigned products
+      are not mature clorobiocin, and LC-MS alone is not an independent full NMR/regiochemical/stereochemical
+      reconstruction. No natural occurrence or new product record is inferred.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: LC-MS method and product assignment, PDF pp.48,83.
+  - subject: hplc
+    predicate: formed_source_assigned_product
+    object: gpp_product
+    notes: Geranyl-4-HPP from 4-HPP and GPP was additionally examined by LC-MS (performed
+      by Stefanie Siebenberg). These source-assigned products are not mature clorobiocin,
+      and LC-MS alone is not an independent full NMR/regiochemical/stereochemical
+      reconstruction. No natural occurrence or new product record is inferred.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: LC-MS method and product assignment, PDF pp.48,83.
+  - subject: kinetics
+    predicate: does_not_resolve
+    object: tautomer
+    notes: L-tyrosine and p-coumarate were used as analogues of keto- and enol-like
+      acceptors. Their low but nonzero efficiencies do not identify the physiological
+      4-HPP tautomer used by CloQ. The source concludes this comparison did not establish
+      a preference. Relative alternative-substrate efficiencies also do not measure
+      intracellular substrate availability or flux.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Analogue rationale and limitations, PDF pp.83-84.
+curation_history:
+- timestamp: '2026-10-04T17:51:03Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add clorobiocin-cloq-mutant-activities-and-substrate-kinetics with exact
+    native grounding, engineered-identity and assay/structural limits from primary
+    sources (#553).
+  llm_assisted: true

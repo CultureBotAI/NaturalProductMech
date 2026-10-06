@@ -1,0 +1,234 @@
+record_id: naturalproductmech:mibig-619480541f
+standard_inchi_key: FJAQNRBDVKIIKK-LFLQOBSNSA-N
+graph:
+  graph_id: clorobiocin-clon3456-native-identities-and-motif-limits
+  scope: BIOSYNTHESIS
+  description: 'Four exact native references and bounded motif/database interpretation.
+    Review #569. Native identity, experimental preparations, observations and inferred
+    mechanisms remain distinct. This partial curation does not change compound identity,
+    source-owned fields, earlier graphs or SEEDED status.'
+  nodes:
+  - node_id: cluster
+    label: Deposited clorobiocin cluster
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000832
+  - node_id: motif
+    label: CloN6 CxxxCxxC motif at native residues 219-226
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: annotation
+    label: Automated CloN6 [4Fe-4S] cofactor annotation
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: conflict
+    label: Thesis native-length and homolog-label discrepancies
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: proposal
+    label: Proposed radical-SAM and cobalamin-associated methylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: gcloN3
+    label: Native cloN3 locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: cloN3
+    label: Native cloN3 protein reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHB9
+  - node_id: gcloN4
+    label: Native cloN4 locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: cloN4
+    label: Native cloN4 protein reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHB8
+  - node_id: gcloN5
+    label: Native cloN5 locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: cloN5
+    label: Native cloN5 protein reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHB7
+  - node_id: gcloN6
+    label: Native cloN6 locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: cloN6
+    label: Native cloN6 protein reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHB6
+  edges:
+  - subject: cluster
+    predicate: contains
+    object: gcloN3
+    notes: AF329398.1 CDS 22207..23337(+), AAN65232.1.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited native cluster feature.
+  - subject: gcloN3
+    predicate: encodes_native_reference
+    object: cloN3
+    notes: CDS-aware table-11 translation yields 376 aa exactly matching AAN65232.1
+      and Q8GHB9. UniProt subspecies taxon149682 and deposited DS12.976 strain taxon1352936
+      differ in resolution, not protein identity. No tagged, truncated or cassette-altered
+      construct inherits this accession.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB9
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB9, entry 81, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS and independent translation comparison.
+  - subject: cluster
+    predicate: contains
+    object: gcloN4
+    notes: AF329398.1 CDS 23456..24961(+), AAN65233.1.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited native cluster feature.
+  - subject: gcloN4
+    predicate: encodes_native_reference
+    object: cloN4
+    notes: CDS-aware table-11 translation yields 501 aa exactly matching AAN65233.1
+      and Q8GHB8. UniProt subspecies taxon149682 and deposited DS12.976 strain taxon1352936
+      differ in resolution, not protein identity. No tagged, truncated or cassette-altered
+      construct inherits this accession.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB8
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB8, entry 80, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS and independent translation comparison.
+  - subject: cluster
+    predicate: contains
+    object: gcloN5
+    notes: AF329398.1 CDS 24965..25234(+), AAN65234.1.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited native cluster feature.
+  - subject: gcloN5
+    predicate: encodes_native_reference
+    object: cloN5
+    notes: CDS-aware table-11 translation yields 89 aa exactly matching AAN65234.1
+      and Q8GHB7. UniProt subspecies taxon149682 and deposited DS12.976 strain taxon1352936
+      differ in resolution, not protein identity. No tagged, truncated or cassette-altered
+      construct inherits this accession.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB7
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB7, entry 57, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS and independent translation comparison.
+  - subject: cluster
+    predicate: contains
+    object: gcloN6
+    notes: AF329398.1 CDS 25292..26977(+), AAN65235.1.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited native cluster feature.
+  - subject: gcloN6
+    predicate: encodes_native_reference
+    object: cloN6
+    notes: CDS-aware table-11 translation yields 561 aa exactly matching AAN65235.1
+      and Q8GHB6. UniProt subspecies taxon149682 and deposited DS12.976 strain taxon1352936
+      differ in resolution, not protein identity. No tagged, truncated or cassette-altered
+      construct inherits this accession.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB6, entry 73, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS and independent translation comparison.
+  - subject: cloN6
+    predicate: has_sequence_motif
+    object: motif
+    notes: Native CAHDCGWC occupies residues219-226 and matches CxxxCxxC. This sequence
+      observation does not measure iron-sulfur occupancy or activity.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB6, entry 73, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence interval; no cofactor experiment.
+  - subject: cloN6
+    predicate: has_database_annotation
+    object: annotation
+    notes: UniProt cofactor statement is automated ECO:0000256/ARBA:ARBA00001966,
+      not a measured CloN6 cofactor stoichiometry.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB6, entry 73, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+  - subject: cloN6
+    predicate: has_source_discrepancy
+    object: conflict
+    notes: The thesis text and FigureIII.4a use560aa, whereas the deposit and current
+      UniProt sequence have561aa. PDF p.82 prints94% identity to CouL while elsewhere
+      discussing CouN6; no corrected homolog identity or94% comparison is asserted
+      here.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.82,85; PDF pages are twelve above
+        printed pages.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB6, entry 73, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+  - subject: motif
+    predicate: motivated_sequence_based_proposal
+    object: proposal
+    notes: The source invokes an N-terminal cobalamin-binding region and radical-SAM-family
+      motifs. Genetics and sequence similarity do not reconstitute the proposed chemistry.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Anderle 2007 primary thesis, PDF p.82; PDF pages are twelve above printed
+        pages.
+    - reference: DOI:10.1002/cbic.200300609
+      evidence_type: CURATOR_INFERENCE
+      notes: Inspected PubMed-indexed primary abstract only; full journal methods
+        not obtained.
+  - subject: annotation
+    predicate: is_not_experimental_confirmation_of
+    object: proposal
+    notes: Automated cofactor assignment is not direct catalysis, B12 dependence or
+      evidence for the proposed physiological substrate.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB6, entry 73, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Anderle 2007 primary thesis, PDF pp.82,91; PDF pages are twelve above
+        printed pages.
+curation_history:
+- timestamp: '2026-10-05T05:03:35Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add clorobiocin-clon3456-native-identities-and-motif-limits; preserve source,
+    identity, construct and causal limits (#569).
+  llm_assisted: true

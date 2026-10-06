@@ -1,0 +1,178 @@
+record_id: CHEBI:3907
+standard_inchi_key: WTIJXIZOODAMJT-DHFGXMAYSA-N
+graph:
+  graph_id: coumermycin-a1-coun23456-coun3-deletion-and-historical-allele-limits
+  scope: BIOSYNTHESIS
+  description: 'Native couN3 deletion construction, genotype controls and historical
+    sequence boundaries. Partial curation; author-agent review #572. Native references,
+    engineered alleles, genetic phenotypes and direct biochemical evidence are distinct;
+    prior graphs and SEEDED status are preserved.'
+  nodes:
+  - node_id: couN3
+    label: Native CouN3 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8U4
+  - node_id: wt
+    label: S. rishiriensis DSM 40489 wild type
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: vector
+    label: pN3 deletion vector
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: model
+    label: Historical 213-aa deletion model
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: mutants
+    label: XH12, XH13 and XH14 deletion strains
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: revertant
+    label: Fourth antibiotic-sensitive wild-type revertant
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: southern
+    label: couN3 Southern genotype analysis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Historical allele and probe boundaries
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  edges:
+  - subject: vector
+    predicate: targets_coding_locus_of
+    object: couN3
+    notes: Reported 480-bp PstI in-frame deletion in the C-terminal coding region,
+      predicted 373 to 213 aa. Approximately 1.7-kb flanks in non-replicative pKC1132
+      with apramycin resistance.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 57-58,66-67 (printed page offset +19).
+        Relevant text and selected figures/tables inspected; not a complete thesis
+        review.
+      retrieved_on: '2026-10-05'
+  - subject: vector
+    predicate: was_constructed_from_historical_interval
+    object: model
+    notes: 'Table 14 pZW334: EcoRI-PstI interval 13696..17594 and deletion 15449..15928
+      in unversioned AF235050. AF235050.3 cut coordinates 13696/17595 enclose 3899
+      bp; subtracting 480 gives reported 3419 bp. pN3 receives its approximately 3.4-kb
+      EcoRV-XbaI fragment. CDS-aware removal at historical PstI cuts 15449/15929 yields
+      642 bp including stop and 213 aa; this is a curator reconstruction, not resequencing
+      of an experimental allele.'
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 43,57-58,66-67 (printed page offset
+        +19). Relevant text and selected figures/tables inspected; not a complete
+        thesis review.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.3
+      evidence_type: CURATOR_INFERENCE
+      notes: Restriction-cut and CDS-aware in-frame deletion model.
+      retrieved_on: '2026-10-05'
+  - subject: vector
+    predicate: was_introduced_into
+    object: wt
+    notes: PEG-mediated protoplast transformation; apramycin-resistant integrants
+      sporulated and screened with and without antibiotic.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 52-53,66 (printed page offset +19).
+        Relevant text and selected figures/tables inspected; not a complete thesis
+        review.
+      retrieved_on: '2026-10-05'
+  - subject: wt
+    predicate: yielded_gene_replacement_strains
+    object: mutants
+    notes: Four antibiotic-sensitive double crossovers; Southern analysis identified
+      XH12/XH13/XH14 as the desired deletion genotypes.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 44,66-67 (printed page offset +19).
+        Relevant text and selected figures/tables inspected; not a complete thesis
+        review.
+      retrieved_on: '2026-10-05'
+  - subject: wt
+    predicate: yielded_reversion_control
+    object: revertant
+    notes: The fourth antibiotic-sensitive isolate had reverted to wild type; antibiotic
+      sensitivity alone did not identify the deletion.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 66-67 (printed page offset +19). Relevant
+        text and selected figures/tables inspected; not a complete thesis review.
+      retrieved_on: '2026-10-05'
+  - subject: mutants
+    predicate: were_checked_by
+    object: southern
+    notes: 'Figure 5B SphI/ClaI digest: wild type 2.04 kb and mutants 1.56 kb. Lanes
+      1 WT, 2-3 single crossovers, 4 revertant, 5-7 XH12/XH13/XH14. Historical AF235050.1/.2
+      cuts 10512/12551 give 2039 bp; removing 480 bp gives 1559 bp, consistent with
+      rounded bands.'
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 67 (printed page offset +19). Relevant
+        text and selected figures/tables inspected; not a complete thesis review.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Historical native digest geometry, not measurement of gel pixels.
+      retrieved_on: '2026-10-05'
+  - subject: revertant
+    predicate: was_compared_in
+    object: southern
+    notes: Figure 5B lane 4 matches the wild-type-sized product rather than the deletion
+      product.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 67 (printed page offset +19). Relevant
+        text and selected figures/tables inspected; not a complete thesis review.
+      retrieved_on: '2026-10-05'
+  - subject: southern
+    predicate: has_probe_version_limit
+    object: limits
+    notes: Table 17 gives an 826-bp SphI-PstI probe at 10512-11338. These are AF235050.1/.2
+      cut coordinates and yield 826 bp; AF235050.3 equivalent cuts 14623/15449 also
+      yield 826 bp. The table is not a current-coordinate declaration.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 45,67 (printed page offset +19). Relevant
+        text and selected figures/tables inspected; not a complete thesis review.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Deposit-version-aware restriction-site comparison.
+      retrieved_on: '2026-10-05'
+  - subject: model
+    predicate: has_experimental_identity_limit
+    object: limits
+    notes: Construct geometry and Southern genotype do not establish the full experimental
+      mutant sequence, protein expression, or absence of all polar effects. No couN3
+      genetic complementation was identified in the inspected relevant thesis sections;
+      this is not an exhaustive literature absence.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Xu 2004 primary thesis, PDF pages 57-58,66-70 (printed page offset +19).
+        Relevant text and selected figures/tables inspected; not a complete thesis
+        review.
+      retrieved_on: '2026-10-05'
+curation_history:
+- timestamp: '2026-10-05T19:13:43Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add coumermycin-a1-coun23456-coun3-deletion-and-historical-allele-limits;
+    retain native/historical/engineered identities, genetic and biochemical limits,
+    and source conflicts (#572).
+  llm_assisted: true

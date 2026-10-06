@@ -1,0 +1,378 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novhi-native-identities-and-early-precursor-reactions
+  scope: BIOSYNTHESIS
+  description: 'NovH/NovI deposited identities and bounded 2001 activation, loading
+    and hydroxylation evidence. Review #561. The cathomycin/BGC0000834 owner retains
+    its unspecified sugar stereocentre and SEEDED status; these precursor assays do
+    not establish an exact-structure merge with fully specified novobiocin. Boll page
+    locators are PDF pages, five above printed pages. Native references, DNA constructs
+    and engineered preparations are distinct.'
+  nodes:
+  - node_id: cluster
+    label: Deposited novobiocin cluster underlying the cathomycin owner
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000834
+  - node_id: h_gene
+    label: Deposited novH locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: i_gene
+    label: Deposited novI locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: h_native
+    label: Current deposited native NovH sequence
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9G0
+  - node_id: h_old
+    label: Historical deposited NovH sequence
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:AAF67501.1
+  - node_id: i_native
+    label: Deposited native NovI cytochrome P450 sequence
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F9
+  - node_id: identity_limit
+    label: Historical strain and experimental sequence limits
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: h_prep
+    label: Chen 2001 recombinant NovH preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: i_prep
+    label: Chen 2001 recombinant NovI preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: tyr
+    label: L-Tyrosine supplied for NovH activation
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: adenylation
+    label: Abstract-reported NovH tyrosine adenylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: adenylate
+    label: L-Tyrosyl-AMP intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: holo
+    label: Phosphopantetheinylated NovH PCP state
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: tethered
+    label: Covalently loaded L-tyrosyl-S-NovH
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: oxygenation
+    label: NovI-catalyzed tethered-tyrosine hydroxylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hydroxylated
+    label: Beta-hydroxytyrosyl-S-NovH
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: release
+    label: Alkaline release and product analysis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: amino_acid
+    label: Released (3R,2S)-3-hydroxytyrosine
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: aldehyde
+    label: Detected 4-hydroxybenzaldehyde breakdown product
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: contains
+    object: h_gene
+    notes: BGC0000834.5 is the owner-linked locus. Current novH is 7934..9736(+),
+      1803 nt including stop; cluster membership does not determine the owner sugar
+      stereochemistry.
+    evidence:
+    - reference: https://mibig.secondarymetabolites.org/go/BGC0000834.5
+      evidence_type: DATABASE_ASSERTION
+      notes: Owner/locus association.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: novH CDS/source qualifiers.
+  - subject: cluster
+    predicate: contains
+    object: i_gene
+    notes: Current novI is 9740..10963(+), 1224 nt including stop, in the same deposited
+      locus.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: novI CDS/source qualifiers.
+  - subject: h_gene
+    predicate: encodes_native_reference
+    object: h_native
+    notes: CDS-aware table-11 translation, including the alternative TTG initiation
+      codon, matches all 600 residues of AAF67501.2 and reviewed Q9L9G0. GenBank identifies
+      S. niveus NCIMB 9219; UniProt uses S. niveus/common S. spheroides, taxon 193462.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current deposited translation.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9G0
+      evidence_type: DATABASE_ASSERTION
+      notes: Entry 102, sequence 2; annotation 2026-09-02, sequence date 2012-07-11.
+        Retrieved 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent CDS/deposited/UniProt comparison.
+  - subject: h_gene
+    predicate: has_earlier_deposited_translation
+    object: h_old
+    notes: AF170880.2 and .3 encode 600-aa AAF67501.1 at 7882..9684(+). Relative to
+      that version, current NovH has R269P, R271A, R272A and S273V. These are deposit
+      revisions, not independently demonstrated biological alleles.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Historical novH CDS.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Intermediate novH CDS.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent three-version alignment.
+  - subject: i_gene
+    predicate: encodes_native_reference
+    object: i_native
+    notes: All 407 residues of AAF67502.1 in AF170880.2/.3/.4 match reviewed Q9L9F9
+      exactly. The earlier CDS coordinates are 9688..10911(+); .4 shifts them by 52
+      nt without changing this protein. This is native reference identity, not a tagged
+      sample sequence.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current novI CDS.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Historical novI CDS.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Intermediate novI CDS.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F9
+      evidence_type: DATABASE_ASSERTION
+      notes: Entry 78, sequence 1; annotation 2025-04-09, sequence date 2000-10-01.
+        Retrieved 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent three-version CDS/UniProt comparison.
+  - subject: h_old
+    predicate: constrains_experimental_identity
+    object: identity_limit
+    notes: Both UniProt entries retain reference strain comments including NCIMB 11891/DSM
+      40292, whereas the current locus identifies NCIMB 9219. The primary strain correction
+      distinguishes those strains. Neither current sequence nor historical source
+      labels retrospectively sequence the complete 2001 or 2011 preparations.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9G0
+      evidence_type: DATABASE_ASSERTION
+      notes: Reference strain comments, not an independently tested sample assignment.
+        Retrieved 2026-10-04.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F9
+      evidence_type: DATABASE_ASSERTION
+      notes: Reference strain comments. Retrieved 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Corrected source strain.
+    - reference: DOI:10.1128/genomeA.01146-13
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Previously inspected indexed primary strain-correction text; not a new
+        audit of every historical sample.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Sample-identity limitation.
+  - subject: h_gene
+    predicate: is_reported_source_of
+    object: h_prep
+    notes: The primary abstract reports E. coli expression, purification and characterization
+      of approximately 65-kDa NovH with predicted A and PCP domains. It does not supply
+      a complete construct or detailed preparation protocol in the inspected text.
+    evidence:
+    - reference: DOI:10.1016/S1074-5521(01)00009-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Chen and Walsh 2001 primary abstract, PMID 11325587. Results. Full paper
+        and supporting methods were not obtained.
+  - subject: i_gene
+    predicate: is_reported_source_of
+    object: i_prep
+    notes: The same abstract reports recombinant approximately 45-kDa NovI as a heme
+      protein functioning as a P450-type monooxygenase. The native accession is not
+      assigned to this incompletely specified preparation.
+    evidence:
+    - reference: DOI:10.1016/S1074-5521(01)00009-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Chen and Walsh 2001 primary abstract, PMID 11325587. Results. Full paper
+        and supporting methods were not obtained.
+  - subject: identity_limit
+    predicate: limits_accession_assignment_to
+    object: h_prep
+    notes: Keep the 2001 NovH preparation separate from both native sequence versions
+      and from the later pBB44 His6 preparation. Do not transfer the 2011 host, tag
+      or buffers.
+    evidence:
+    - reference: DOI:10.1016/S1074-5521(01)00009-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Chen and Walsh 2001 primary abstract, PMID 11325587. Results. Full paper
+        and supporting methods were not obtained.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Native sequence is not retrospective preparation sequencing.
+  - subject: identity_limit
+    predicate: limits_accession_assignment_to
+    object: i_prep
+    notes: Do not infer a particular tag, reductase partner or full construct from
+      the abstract or the matching native NovI reference.
+    evidence:
+    - reference: DOI:10.1016/S1074-5521(01)00009-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Chen and Walsh 2001 primary abstract, PMID 11325587. Results. Full paper
+        and supporting methods were not obtained.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native identity does not identify the engineered sample.
+  - subject: h_prep
+    predicate: catalyzes
+    object: adenylation
+    notes: Purified NovH catalyzes L-tyrosyl-AMP formation through its adenylation
+      domain. No detailed kinetic condition or negative substrate panel is extracted
+      from the abstract.
+    evidence:
+    - reference: DOI:10.1016/S1074-5521(01)00009-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Chen and Walsh 2001 primary abstract, PMID 11325587. Results. Full paper
+        and supporting methods were not obtained.
+  - subject: tyr
+    predicate: is_substrate_for
+    object: adenylation
+    notes: L-Tyrosine is the named activation substrate, not free beta-hydroxytyrosine.
+    evidence:
+    - reference: DOI:10.1016/S1074-5521(01)00009-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Chen and Walsh 2001 primary abstract, PMID 11325587. Results. Full paper
+        and supporting methods were not obtained.
+  - subject: adenylation
+    predicate: forms
+    object: adenylate
+    notes: The reported activated intermediate is L-tyrosyl-AMP. This precursor activation
+      does not establish mature antibiotic formation.
+    evidence:
+    - reference: DOI:10.1016/S1074-5521(01)00009-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Chen and Walsh 2001 primary abstract, PMID 11325587. Results. Full paper
+        and supporting methods were not obtained.
+  - subject: h_prep
+    predicate: can_be_phosphopantetheinylated_to
+    object: holo
+    notes: The abstract reports posttranslational phosphopantetheinylation on the
+      PCP domain. The modifying enzyme and conditions are not supplied here; the later
+      Sfp coexpression protocol is not silently substituted.
+    evidence:
+    - reference: DOI:10.1016/S1074-5521(01)00009-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Chen and Walsh 2001 primary abstract, PMID 11325587. Results. Full paper
+        and supporting methods were not obtained.
+  - subject: holo
+    predicate: accumulates_covalently_loaded_state
+    object: tethered
+    notes: The reported L-tyrosyl-S-enzyme intermediate is covalently attached to
+      the holo PCP domain. It is not a free tyrosine product or an assembly stoichiometry
+      measurement.
+    evidence:
+    - reference: DOI:10.1016/S1074-5521(01)00009-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Chen and Walsh 2001 primary abstract, PMID 11325587. Results. Full paper
+        and supporting methods were not obtained.
+      snippet: covalent L-tyrosyl-S-enzyme intermediate
+  - subject: adenylate
+    predicate: is_activation_intermediate_for
+    object: tethered
+    notes: The abstract connects NovH adenylation with accumulation of the covalently
+      loaded holo-PCP intermediate; no additional rate or independently resolved coupling
+      stoichiometry is asserted.
+    evidence:
+    - reference: DOI:10.1016/S1074-5521(01)00009-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Chen and Walsh 2001 primary abstract, PMID 11325587. Results. Full paper
+        and supporting methods were not obtained.
+  - subject: i_prep
+    predicate: catalyzes
+    object: oxygenation
+    notes: NovI acts as the reported P450 monooxygenase on the NovH-tethered tyrosyl
+      acyl enzyme.
+    evidence:
+    - reference: DOI:10.1016/S1074-5521(01)00009-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Chen and Walsh 2001 primary abstract, PMID 11325587. Results. Full paper
+        and supporting methods were not obtained.
+  - subject: tethered
+    predicate: is_substrate_for
+    object: oxygenation
+    notes: The abstract specifies tyrosyl-S-NovH as the substrate. This statement
+      is not expanded into an uninspected quantitative free-amino-acid rejection panel.
+    evidence:
+    - reference: DOI:10.1016/S1074-5521(01)00009-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Chen and Walsh 2001 primary abstract, PMID 11325587. Results. Full paper
+        and supporting methods were not obtained.
+  - subject: oxygenation
+    predicate: forms
+    object: hydroxylated
+    notes: The reported product remains attached to NovH as beta-hydroxytyrosyl-S-NovH.
+    evidence:
+    - reference: DOI:10.1016/S1074-5521(01)00009-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Chen and Walsh 2001 primary abstract, PMID 11325587. Results. Full paper
+        and supporting methods were not obtained.
+  - subject: hydroxylated
+    predicate: was_examined_by
+    object: release
+    notes: Alkaline release, HPLC analysis of radioactive [3H]beta-hydroxytyrosine
+      and mass spectrometry support the abstract-reported product assignment.
+    evidence:
+    - reference: DOI:10.1016/S1074-5521(01)00009-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Chen and Walsh 2001 primary abstract, PMID 11325587. Results. Full paper
+        and supporting methods were not obtained.
+  - subject: release
+    predicate: supports_stereochemical_assignment_of
+    object: amino_acid
+    notes: Comparison with authentic standards assigns the released amino acid as
+      (3R,2S)-3-hydroxytyrosine. This assignment concerns the released precursor,
+      not the owner sugar stereocentre.
+    evidence:
+    - reference: DOI:10.1016/S1074-5521(01)00009-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Chen and Walsh 2001 primary abstract, PMID 11325587. Results. Full paper
+        and supporting methods were not obtained.
+      snippet: comparison with authentic standards.
+  - subject: release
+    predicate: also_detected
+    object: aldehyde
+    notes: The abstract reports 4-hydroxybenzaldehyde as a retro-aldol breakdown product
+      of beta-hydroxytyrosine, not a second direct NovI-catalyzed product.
+    evidence:
+    - reference: DOI:10.1016/S1074-5521(01)00009-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Chen and Walsh 2001 primary abstract, PMID 11325587. Results. Full paper
+        and supporting methods were not obtained.
+curation_history:
+- timestamp: '2026-10-04T22:55:50Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cathomycin-novhi-native-identities-and-early-precursor-reactions with
+    source-checked NovH/NovI evidence and #561 boundaries.'
+  llm_assisted: true

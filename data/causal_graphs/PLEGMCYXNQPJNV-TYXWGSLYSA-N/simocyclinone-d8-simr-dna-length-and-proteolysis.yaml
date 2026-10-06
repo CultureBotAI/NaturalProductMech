@@ -1,0 +1,258 @@
+record_id: naturalproductmech:mibig-e03313fa44
+standard_inchi_key: PLEGMCYXNQPJNV-TYXWGSLYSA-N
+graph:
+  graph_id: simocyclinone-d8-simr-dna-length-and-proteolysis
+  scope: BIOSYNTHESIS
+  description: 'DNA-length and sequence dependence of tagged SimR binding and trypsin
+    protection. Distinct oligonucleotides, mixed proteolysis products and the S5B-versus-crystal
+    sequence discrepancy remain explicit (review #536); no universal no-binding or
+    native protein-processing claim.'
+  nodes:
+  - node_id: simr
+    label: Native SimR / SimReg2 protein
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9AMH9
+  - node_id: tagged
+    label: Assayed codon-optimized C-terminally tagged SimR
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: dna15
+    label: Wild-type OX-region 15-bp duplex
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: dna17
+    label: Wild-type OX-region 17-bp duplex
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: dna23
+    label: Wild-type OX-region 23-bp duplex
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: dna25
+    label: Wild-type OX-region 25-bp duplex
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: dna31
+    label: Wild-type OX-region 31-bp duplex
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: left
+    label: Supplement S5B left-repeat 17-bp duplex
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: right
+    label: Supplement S5B right-repeat 17-bp duplex
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: crystal_dna
+    label: Deposited 3ZQL engineered 17-bp duplex
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: fragments
+    label: Co-migrating tryptic SimR fragments
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: tagged
+    predicate: has_native_sequence_parent
+    object: simr
+    notes: The paper calls its parent 259 aa. Supplement S2 exactly matches native
+      Q9AMH9 residues 3..261, omitting the native MW start; deposited protein is those
+      259 residues plus LEHHHHHH (267 aa). Paper positions map to UniProt with +2.
+      Synthetic codon-optimized simR, pIJ10499, was expressed in E. coli and purified
+      by nickel affinity. This edge does not assert native N-terminal processing,
+      a corrected native annotation, or equivalence of tagged and native proteins.
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods and Supplement S2; C-terminal tag construction.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAK06798.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native AAK06798.1, simReg2, S. antibioticus Tue6040, 261 aa; AF324838.2
+        complement(57298..58083).
+    - reference: https://www.uniprot.org/uniprotkb/Q9AMH9
+      evidence_type: DATABASE_ASSERTION
+      notes: Active unreviewed Q9AMH9, taxon 1890, entry version 132, sequence version
+        1; inspected 2026-10-04. The simReg2 gene and EMBL AAK06798.1 cross-reference
+        identify this native entry, not a convenient homolog.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Native GenPept, GenBank CDS-aware table-11 translation, MIBiG BGC0001072.5
+        and UniProt sequences agree exactly. Supplement S2/deposited entity comparison
+        establishes the two-residue offset; no claim of identity to the alternate
+        AF322256.1 cluster or all engineered nucleotide sequences.
+    - reference: https://www.rcsb.org/structure/3ZQL
+      evidence_type: DATABASE_ASSERTION
+      notes: PDB sequence mapping 1..259 to Q9AMH9 3..261; tag is outside this alignment.
+        The deposited entity sequence is not a claim that every residue is modeled.
+  - subject: tagged
+    predicate: yields_tryptic_products
+    object: fragments
+    notes: 'Trypsin assay: 1 nmol tagged SimR with 1 pmol bovine trypsin in 100 uL,
+      50 mM Tris pH 8, 20 mM CaCl2, 150 mM NaCl at 4 C. DNA preincubation is equimolar
+      for 5 min; SDS-PAGE samples at 0/5/10/15 min. Band persistence is not a measured
+      protease-rate constant or an in vivo half-life. Without operator DNA, the dominant
+      band contains two Edman-identified species: paper Ser23 start (4 pmol) and Ser20
+      start (2-3 pmol), mapping to native Ser25 and Ser22. Supplement S4 also shows
+      30/60-min lanes. Do not represent this as one homogeneous product or physiological
+      proteolytic activation.'
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3 and Supplement S4, including Edman result.
+      snippet: two closely-migrated SimR fragments
+  - subject: tagged
+    predicate: no_shift_detected_in_emsa
+    object: dna15
+    notes: Supplement S5 uses radiolabelled duplex and 8% native PAGE, not the 5%
+      gel for the 138-bp probe. Displayed SimR series is 0/1.5/3.1/6.2/12.5/25/50
+      nM. No binding detected for the displayed 15mer through 50 nM. This is a bounded
+      negative result, not absence at every concentration or for every 15-bp sequence.
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Supplement S5A.
+  - subject: tagged
+    predicate: shifts_in_emsa
+    object: dna17
+    notes: Supplement S5 uses radiolabelled duplex and 8% native PAGE, not the 5%
+      gel for the 138-bp probe. Displayed SimR series is 0/1.5/3.1/6.2/12.5/25/50
+      nM. The native OX core sequence is TTCGTACGGTGTATGAA, matching AF324838.2 58132..58148(+).
+      This is not the mutated crystallization duplex.
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Supplement S5A.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact 17-nt native match, not an assay boundary reconstruction for the
+        longer PCR probe.
+  - subject: tagged
+    predicate: shows_stronger_emsa_binding_to
+    object: dna23
+    notes: Supplement S5 uses radiolabelled duplex and 8% native PAGE, not the 5%
+      gel for the 138-bp probe. Displayed SimR series is 0/1.5/3.1/6.2/12.5/25/50
+      nM. Relative to the nested 17mer, the 23mer gives stronger binding in this comparison.
+      Do not assign a fitted Kd or a numerical fold change from the picture.
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Supplement S5A and DNA-flanking-sequence results.
+  - subject: dna15
+    predicate: does_not_detectably_protect_from_trypsin
+    object: tagged
+    notes: 'Trypsin assay: 1 nmol tagged SimR with 1 pmol bovine trypsin in 100 uL,
+      50 mM Tris pH 8, 20 mM CaCl2, 150 mM NaCl at 4 C. DNA preincubation is equimolar
+      for 5 min; SDS-PAGE samples at 0/5/10/15 min. Band persistence is not a measured
+      protease-rate constant or an in vivo half-life. Figure 3 compares the 15mer
+      condition with no-DNA protein and longer DNA conditions. Lack of protection
+      is not itself an independent thermodynamic binding assay.'
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3 and protease-protection methods.
+  - subject: dna17
+    predicate: protects_less_well_from_trypsin
+    object: tagged
+    notes: 'Trypsin assay: 1 nmol tagged SimR with 1 pmol bovine trypsin in 100 uL,
+      50 mM Tris pH 8, 20 mM CaCl2, 150 mM NaCl at 4 C. DNA preincubation is equimolar
+      for 5 min; SDS-PAGE samples at 0/5/10/15 min. Band persistence is not a measured
+      protease-rate constant or an in vivo half-life. Supplement S8 compares the binding
+      17mer with the 23mer. Its caption says the 17mer does not protect as well, while
+      the main text uses stronger wording. Retain the observed comparison, not an
+      absolute claim of zero protection.'
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Supplement S8 and main results; source wording difference retained.
+  - subject: tagged
+    predicate: shifts_in_emsa
+    object: left
+    notes: Supplement S5 uses radiolabelled duplex and 8% native PAGE, not the 5%
+      gel for the 138-bp probe. Displayed SimR series is 0/1.5/3.1/6.2/12.5/25/50
+      nM. S5B prints TTCGTACGGTGTACGAA, changing native position 14 T to C. Binding
+      is shown for this sequence; its label is not proof that it is identical to the
+      crystallized DNA.
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Supplement S5B sequence and gel.
+  - subject: tagged
+    predicate: no_shift_detected_in_emsa
+    object: right
+    notes: Supplement S5 uses radiolabelled duplex and 8% native PAGE, not the 5%
+      gel for the 138-bp probe. Displayed SimR series is 0/1.5/3.1/6.2/12.5/25/50
+      nM. S5B prints TTCATACGGTGTATGAA (native position 4 G to A); no evident shifted
+      band is displayed through 50 nM. Do not generalize this to all symmetric repeats.
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Supplement S5B sequence and gel.
+  - subject: left
+    predicate: differs_in_sequence_from
+    object: crystal_dna
+    notes: Deposited 3ZQL/main-text TTCGTACGGCGTACGAA has native positions 10 and
+      14 changed T to C. S5B left-repeat TTCGTACGGTGTACGAA has only position 14 changed;
+      the sequences differ at position 10. The main text cites S5B for the crystal
+      oligo's affinity, but the literal panel does not establish that comparison for
+      the exact deposited sequence. This is an evidence-identity comparison, not a
+      biochemical causal edge or a source correction.
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: CURATOR_INFERENCE
+      notes: Main crystal-DNA description versus Supplement S5B.
+    - reference: https://www.rcsb.org/structure/3ZQL
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited DNA entity sequences; the other strand is TTCGTACGCCGTACGAA.
+  - subject: dna23
+    predicate: slows_observed_tryptic_digestion_of
+    object: tagged
+    notes: 'Trypsin assay: 1 nmol tagged SimR with 1 pmol bovine trypsin in 100 uL,
+      50 mM Tris pH 8, 20 mM CaCl2, 150 mM NaCl at 4 C. DNA preincubation is equimolar
+      for 5 min; SDS-PAGE samples at 0/5/10/15 min. Band persistence is not a measured
+      protease-rate constant or an in vivo half-life. The 23mer retains more full-length
+      band than its relevant shorter/no-DNA comparison. This supports protection in
+      the reconstituted assay, not absolute protease resistance or independent measurement
+      of a disorder-to-order transition.'
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Supplement S8.
+  - subject: dna25
+    predicate: slows_observed_tryptic_digestion_of
+    object: tagged
+    notes: 'Trypsin assay: 1 nmol tagged SimR with 1 pmol bovine trypsin in 100 uL,
+      50 mM Tris pH 8, 20 mM CaCl2, 150 mM NaCl at 4 C. DNA preincubation is equimolar
+      for 5 min; SDS-PAGE samples at 0/5/10/15 min. Band persistence is not a measured
+      protease-rate constant or an in vivo half-life. The 25mer retains more full-length
+      band than its relevant shorter/no-DNA comparison. This supports protection in
+      the reconstituted assay, not absolute protease resistance or independent measurement
+      of a disorder-to-order transition.'
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3 and protease-protection results.
+  - subject: dna31
+    predicate: slows_observed_tryptic_digestion_of
+    object: tagged
+    notes: 'Trypsin assay: 1 nmol tagged SimR with 1 pmol bovine trypsin in 100 uL,
+      50 mM Tris pH 8, 20 mM CaCl2, 150 mM NaCl at 4 C. DNA preincubation is equimolar
+      for 5 min; SDS-PAGE samples at 0/5/10/15 min. Band persistence is not a measured
+      protease-rate constant or an in vivo half-life. The 31mer retains more full-length
+      band than its relevant shorter/no-DNA comparison. This supports protection in
+      the reconstituted assay, not absolute protease resistance or independent measurement
+      of a disorder-to-order transition.'
+    evidence:
+    - reference: DOI:10.1093/nar/gkr640
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3 and protease-protection results.
+curation_history:
+- timestamp: '2026-10-04T08:38:46Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added source-checked SimR evidence for naturalproductmech:mibig-e03313fa44
+    from owner base 55a50439cce011731f550baf85b25aa2c47ac43e; DOI:10.1093/nar/gkr640,
+    native sequence and public depositions. Native/engineered identities and review
+    #536 limits retained; no changes to prior SimReg1 evidence.'
+  llm_assisted: true

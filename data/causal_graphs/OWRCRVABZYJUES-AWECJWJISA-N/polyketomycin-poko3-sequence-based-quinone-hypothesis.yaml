@@ -1,0 +1,57 @@
+record_id: naturalproductmech:mibig-96ff336a6a
+standard_inchi_key: OWRCRVABZYJUES-AWECJWJISA-N
+graph:
+  graph_id: polyketomycin-poko3-sequence-based-quinone-hypothesis
+  scope: BIOSYNTHESIS
+  description: PokO3 quinone-formation hypothesis, not an experimentally demonstrated
+    reaction. The owner's unresolved stereochemical identity is unchanged.
+  nodes:
+  - node_id: poko3
+    label: Native PokO3, proposed oxygenase
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:C0JWC9
+  - node_id: quinone
+    label: Proposed outer-ring quinone formation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: poko3
+    predicate: has_proposed_biosynthetic_role
+    object: quinone
+    notes: 'Sequence similarity suggests an anthrone-type oxygenase forming the outer-ring
+      quinone. The thesis did not inactivate pokO3 and leaves biochemical testing
+      open. Cofactor independence, catalytic residue functions and isotope incorporation
+      were not tested for PokO3. Figure 4.7 places this step after hydroxylation and
+      before late tailoring, but neither order nor exact substrate was measured. IP3
+      is a shunt and IP5 lacks an established structure; neither demonstrates PokO3
+      turnover. No essentiality or physical-complex claim is made. See source-review
+      issue #533.'
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/5426
+      evidence_type: CURATOR_INFERENCE
+      snippet: eine Geninaktivierung zunächst nicht rentierte.
+      notes: Table 3.1 p. 19; sections 3.1.1 p. 20, 4.1.1 p. 72 and 4.1.5 pp. 85-86/Fig.
+        4.7.
+    - reference: https://www.uniprot.org/uniprotkb/C0JWC9
+      evidence_type: DATABASE_ASSERTION
+      notes: Active unreviewed PokO3, 109 aa, taxon 42236; protein existence predicted.
+        EMBL FJ483966/ACN64849.1 and Tu6028 sequence reference match. Entry version
+        25, sequence version 1; inspected 2026-10-04. ABM domain annotation is not
+        an activity assay.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ACN64849.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native Tu6028 PokO3, FJ483966.1:complement(41747..42076); putative monooxygenase.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: GenPept, UniProt and native/MIBiG BGC0001061.4 CDS translations agree
+        exactly. P46/G47/Y54/E65/A67/W69/H75 match the printed residues, not seven
+        experimentally validated catalytic functions or seven identical residues in
+        ActVA-Orf6. No whole-locus identity is asserted.
+curation_history:
+- timestamp: '2026-10-04T07:20:59Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added exact native PokO3 C0JWC9 with one explicitly inferred, cited role
+    and verified snippet. Preserved #533 evidence limits.'
+  llm_assisted: true

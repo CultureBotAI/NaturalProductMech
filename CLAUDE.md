@@ -117,6 +117,14 @@ in the extractor or seeder, and curator decisions in `curation/decisions.tsv`.
 runs closed-schema validation before writing. Every mutation must also append a
 `CurationEvent` via `naturalproductmech.curate.curation_event.record_curation_event`.
 
+**Read the complete mechanism.** Records may reference exact-owner components
+through `causal_graph_refs`. Use `read_natural_product` for mechanism analysis;
+use raw YAML for mutations and `write_validated_graph_bundle` for component
+changes. Each changed artifact needs its own event. Both owners and components
+retain the 64-KiB review limit. See `docs/CURATION.md` for storage, migration,
+reader/writer distinctions and interruption recovery. Full validation, corpus
+integrity and reproduction audits reject orphaned components.
+
 **Re-emitting an unchanged record must be byte-identical**, timestamp
 included. Two things enforce it: the YAML emission contract in
 `tests/test_write_validated.py`, and the seeder's rule that a record whose

@@ -1,0 +1,509 @@
+record_id: naturalproductmech:mibig-e03313fa44
+standard_inchi_key: PLEGMCYXNQPJNV-TYXWGSLYSA-N
+graph:
+  graph_id: simocyclinone-d8-simc7-mutant-activities-and-cd-controls
+  scope: BIOSYNTHESIS
+  description: 'Six engineered SimC7 variants constrain the proposed ketoreduction
+    mechanism through HPLC activity measurements and a displayed subset of far-UV
+    CD controls. Native G9VYV4 is distinct from every tagged assay protein. The paper/thesis
+    uncertainty disagreement, residual activity and limited structural control remain
+    explicit (review #539). The 2016 main paper was inspected in the public author-thesis
+    appendix, not as an independently fetched final PDF; the journal supplement was
+    not obtained. This graph does not turn mutant phenotypes into direct observation
+    of proton transfer or a phenolate intermediate.'
+  nodes:
+  - node_id: native
+    label: Deposited native SimC7 ketoreductase
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:G9VYV4
+  - node_id: template
+    label: Reported pET15b-NB-C7 mutagenesis template
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: wt
+    label: N-terminally His-tagged wild-type SimC7 comparator
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: s95a
+    label: N-terminally His-tagged SimC7 S95A
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: i108a
+    label: N-terminally His-tagged SimC7 I108A
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: i108d
+    label: N-terminally His-tagged SimC7 I108D
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: h112a
+    label: N-terminally His-tagged SimC7 H112A
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: h112n
+    label: N-terminally His-tagged SimC7 H112N
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: h112q
+    label: N-terminally His-tagged SimC7 H112Q
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: HPLC quantification of SimC7-dependent SD8 formation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: oxo
+    label: Source-assigned 7-oxo-simocyclinone D8 assay substrate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: sd8
+    label: Source-assigned simocyclinone D8 assay product
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: nadh
+    label: NADH used in the SimC7 mutant assay
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: cd
+    label: Displayed far-UV CD comparison of wild type and four SimC7 mutants
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: template
+    predicate: is_reported_to_express
+    object: wt
+    notes: The pET15b-NB-C7 construct supplies the tagged wild-type comparator and
+      the template for PCR-based Q5 mutagenesis. The paper reports N-terminally His-tagged
+      E. coli expression, Ni-affinity purification and sequence verification. Thesis
+      pp.87-88 distinguishes a later low-salt protocol for crystal and mutant proteins
+      (18 C induction with 0.5 mM IPTG for 16 h) from earlier production. The historical
+      template promoter/primer discrepancies remain documented in the existing SimC7
+      graphs; no uninspected complete plasmid junction is asserted here.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2016.07.018
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main experimental procedures p.1096.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.5.9 p.85 and protein expression/purification pp.87-88.
+  - subject: wt
+    predicate: has_native_parent_sequence
+    object: native
+    notes: The intended 304-aa recombinant protein comprises the 20-aa N-terminal
+      extension MGSSHHHHHHSSGLVPRGSH plus native 284-aa SimC7. There is no claim of
+      tag removal. The native accession identifies the parent, not an exact tagged
+      or mutant experimental molecule. Residue labels S95/I108/H112 use native numbering;
+      their positions would be 115/128/132 when the extension is counted.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Native SimC7, AEU17892.1, AF324838.2:9344..10198(+), taxon 1890; CDS-aware
+        native translation agrees exactly with G9VYV4 and pinned MIBiG.
+    - reference: https://www.uniprot.org/uniprotkb/G9VYV4
+      evidence_type: DATABASE_ASSERTION
+      notes: G9VYV4, unreviewed entry version 41, sequence version 1; inspected 2026-10-04.
+        This is native parent-sequence identity.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: N-terminal extension and tagged-protein mass, p.87.
+  - subject: s95a
+    predicate: is_site_directed_variant_of
+    object: wt
+    notes: S95A denotes the engineered tagged protein, using native residue numbering.
+      The printed replacement codon is TCG to GCC. Q5 amplification used pET15b-NB-C7,
+      DpnI template digestion, kinase/ligase treatment and E. coli DH5alpha transformation;
+      sequencing was reported. The independent primer audit reconstructs the intended
+      local substitution, not the full experimental plasmid or protein sample. No
+      exact UniProt accession is assigned to this variant.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2016.07.018
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Main experimental procedures: site-directed mutants and sequencing.'
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 2.5 p.63 and Q5 mutagenesis method p.85.
+      snippet: Mutations were verified by sequencing.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Literal primer reconstruction against AF324838.2: S95Anew-F at 9618..9644(+)
+        with S95AT-R at 9600..9617(-); the primer flanks match and the opposing primers
+        are back-to-back. Translation predicts exactly the named amino-acid substitution
+        without another coding change.'
+  - subject: i108a
+    predicate: is_site_directed_variant_of
+    object: wt
+    notes: I108A denotes the engineered tagged protein, using native residue numbering.
+      The printed replacement codon is ATC to GCG. Q5 amplification used pET15b-NB-C7,
+      DpnI template digestion, kinase/ligase treatment and E. coli DH5alpha transformation;
+      sequencing was reported. The independent primer audit reconstructs the intended
+      local substitution, not the full experimental plasmid or protein sample. No
+      exact UniProt accession is assigned to this variant.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2016.07.018
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Main experimental procedures: site-directed mutants and sequencing.'
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 2.5 p.63 and Q5 mutagenesis method p.85.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Literal primer reconstruction against AF324838.2: I108A-F at 9659..9682(+)
+        with I108A-R at 9637..9658(-); the primer flanks match and the opposing primers
+        are back-to-back. Translation predicts exactly the named amino-acid substitution
+        without another coding change.'
+  - subject: i108d
+    predicate: is_site_directed_variant_of
+    object: wt
+    notes: I108D denotes the engineered tagged protein, using native residue numbering.
+      The printed replacement codon is ATC to GAT. Q5 amplification used pET15b-NB-C7,
+      DpnI template digestion, kinase/ligase treatment and E. coli DH5alpha transformation;
+      sequencing was reported. The independent primer audit reconstructs the intended
+      local substitution, not the full experimental plasmid or protein sample. No
+      exact UniProt accession is assigned to this variant.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2016.07.018
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Main experimental procedures: site-directed mutants and sequencing.'
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 2.5 p.63 and Q5 mutagenesis method p.85.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Literal primer reconstruction against AF324838.2: I108D-F at 9659..9682(+)
+        with I108A-R at 9637..9658(-); the primer flanks match and the opposing primers
+        are back-to-back. Translation predicts exactly the named amino-acid substitution
+        without another coding change.'
+  - subject: h112a
+    predicate: is_site_directed_variant_of
+    object: wt
+    notes: H112A denotes the engineered tagged protein, using native residue numbering.
+      The printed replacement codon is CAC to GCC. Q5 amplification used pET15b-NB-C7,
+      DpnI template digestion, kinase/ligase treatment and E. coli DH5alpha transformation;
+      sequencing was reported. The independent primer audit reconstructs the intended
+      local substitution, not the full experimental plasmid or protein sample. No
+      exact UniProt accession is assigned to this variant.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2016.07.018
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Main experimental procedures: site-directed mutants and sequencing.'
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 2.5 p.63 and Q5 mutagenesis method p.85.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Literal primer reconstruction against AF324838.2: H112A-F at 9672..9690(+)
+        with H112R-R at 9655..9671(-); the primer flanks match and the opposing primers
+        are back-to-back. Translation predicts exactly the named amino-acid substitution
+        without another coding change.'
+  - subject: h112n
+    predicate: is_site_directed_variant_of
+    object: wt
+    notes: H112N denotes the engineered tagged protein, using native residue numbering.
+      The printed replacement codon is CAC to AAC. Q5 amplification used pET15b-NB-C7,
+      DpnI template digestion, kinase/ligase treatment and E. coli DH5alpha transformation;
+      sequencing was reported. The independent primer audit reconstructs the intended
+      local substitution, not the full experimental plasmid or protein sample. No
+      exact UniProt accession is assigned to this variant.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2016.07.018
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Main experimental procedures: site-directed mutants and sequencing.'
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 2.5 p.63 and Q5 mutagenesis method p.85.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Literal primer reconstruction against AF324838.2: H112N-F at 9672..9693(+)
+        with H112R-R at 9655..9671(-); the primer flanks match and the opposing primers
+        are back-to-back. Translation predicts exactly the named amino-acid substitution
+        without another coding change.'
+  - subject: h112q
+    predicate: is_site_directed_variant_of
+    object: wt
+    notes: H112Q denotes the engineered tagged protein, using native residue numbering.
+      The printed replacement codon is CAC to CAG. Q5 amplification used pET15b-NB-C7,
+      DpnI template digestion, kinase/ligase treatment and E. coli DH5alpha transformation;
+      sequencing was reported. The independent primer audit reconstructs the intended
+      local substitution, not the full experimental plasmid or protein sample. No
+      exact UniProt accession is assigned to this variant.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2016.07.018
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Main experimental procedures: site-directed mutants and sequencing.'
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 2.5 p.63 and Q5 mutagenesis method p.85.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Literal primer reconstruction against AF324838.2: H112Q-F at 9672..9693(+)
+        with H112R-R at 9655..9671(-); the primer flanks match and the opposing primers
+        are back-to-back. Translation predicts exactly the named amino-acid substitution
+        without another coding change.'
+  - subject: wt
+    predicate: has_measured_activity_in
+    object: assay
+    notes: 'Tagged wild type: reported conversion 100.0 +/- 7.3% relative to tagged
+      wild type; specific activity 13.9 +/- 1.0 nmol/min/mg in Figure 4C. The paper
+      calls the errors standard errors for three independent experiments. Thesis Table
+      5.6 calls the errors standard deviations; the same means are not pooled or treated
+      as independent replication. Normalization to 100% does not establish absolute
+      substrate depletion. These are HPLC-derived specific activities, not kcat/Km
+      or independently reconstructed initial rates.'
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2016.07.018
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 4C, p.1095; numerical table and uncertainty caption visually checked.
+      snippet: three independent experiments
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 5.6 p.190 and variant assay methods p.99; uncertainty conflict
+        retained rather than silently reconciled.
+  - subject: s95a
+    predicate: has_measured_activity_in
+    object: assay
+    notes: 'S95A: reported conversion 86.1 +/- 7.1% relative to tagged wild type;
+      specific activity 11.9 +/- 1.0 nmol/min/mg in Figure 4C. The paper calls the
+      errors standard errors for three independent experiments. Thesis Table 5.6 calls
+      the errors standard deviations; the same means are not pooled or treated as
+      independent replication. Normalization to 100% does not establish absolute substrate
+      depletion. These are HPLC-derived specific activities, not kcat/Km or independently
+      reconstructed initial rates. Retained activity under this condition is not proof
+      of complete mechanistic dispensability or unchanged substrate/cofactor binding.'
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2016.07.018
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 4C, p.1095; numerical table and uncertainty caption visually checked.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 5.6 p.190 and variant assay methods p.99; uncertainty conflict
+        retained rather than silently reconciled.
+  - subject: i108a
+    predicate: has_measured_activity_in
+    object: assay
+    notes: 'I108A: reported conversion 91.5 +/- 13.8% relative to tagged wild type;
+      specific activity 12.7 +/- 1.9 nmol/min/mg in Figure 4C. The paper calls the
+      errors standard errors for three independent experiments. Thesis Table 5.6 calls
+      the errors standard deviations; the same means are not pooled or treated as
+      independent replication. Normalization to 100% does not establish absolute substrate
+      depletion. These are HPLC-derived specific activities, not kcat/Km or independently
+      reconstructed initial rates. Retained activity under this condition is not proof
+      of complete mechanistic dispensability or unchanged substrate/cofactor binding.'
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2016.07.018
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 4C, p.1095; numerical table and uncertainty caption visually checked.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 5.6 p.190 and variant assay methods p.99; uncertainty conflict
+        retained rather than silently reconciled.
+  - subject: i108d
+    predicate: has_measured_activity_in
+    object: assay
+    notes: 'I108D: reported conversion 1.2 +/- 0.8% relative to tagged wild type;
+      specific activity 0.2 +/- 0.1 nmol/min/mg in Figure 4C. The paper calls the
+      errors standard errors for three independent experiments. Thesis Table 5.6 calls
+      the errors standard deviations; the same means are not pooled or treated as
+      independent replication. Normalization to 100% does not establish absolute substrate
+      depletion. These are HPLC-derived specific activities, not kcat/Km or independently
+      reconstructed initial rates. The nonzero reported mean is retained despite prose
+      describing activity as abolished; no detection limit or exact zero is inferred.'
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2016.07.018
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 4C, p.1095; numerical table and uncertainty caption visually checked.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 5.6 p.190 and variant assay methods p.99; uncertainty conflict
+        retained rather than silently reconciled.
+  - subject: h112a
+    predicate: has_measured_activity_in
+    object: assay
+    notes: 'H112A: reported conversion 12.5 +/- 3.6% relative to tagged wild type;
+      specific activity 1.7 +/- 0.5 nmol/min/mg in Figure 4C. The paper calls the
+      errors standard errors for three independent experiments. Thesis Table 5.6 calls
+      the errors standard deviations; the same means are not pooled or treated as
+      independent replication. Normalization to 100% does not establish absolute substrate
+      depletion. These are HPLC-derived specific activities, not kcat/Km or independently
+      reconstructed initial rates.'
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2016.07.018
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 4C, p.1095; numerical table and uncertainty caption visually checked.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 5.6 p.190 and variant assay methods p.99; uncertainty conflict
+        retained rather than silently reconciled.
+  - subject: h112n
+    predicate: has_measured_activity_in
+    object: assay
+    notes: 'H112N: reported conversion 5.8 +/- 2.5% relative to tagged wild type;
+      specific activity 0.8 +/- 0.4 nmol/min/mg in Figure 4C. The paper calls the
+      errors standard errors for three independent experiments. Thesis Table 5.6 calls
+      the errors standard deviations; the same means are not pooled or treated as
+      independent replication. Normalization to 100% does not establish absolute substrate
+      depletion. These are HPLC-derived specific activities, not kcat/Km or independently
+      reconstructed initial rates. H112N has an additional numeric conflict: Table
+      5.6 gives 0.8 +/- 0.3 nmol/min/mg, not the paper''s 0.8 +/- 0.4.'
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2016.07.018
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 4C, p.1095; numerical table and uncertainty caption visually checked.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 5.6 p.190 and variant assay methods p.99; uncertainty conflict
+        retained rather than silently reconciled.
+  - subject: h112q
+    predicate: has_measured_activity_in
+    object: assay
+    notes: 'H112Q: reported conversion 1.0 +/- 1.4% relative to tagged wild type;
+      specific activity 0.1 +/- 0.2 nmol/min/mg in Figure 4C. The paper calls the
+      errors standard errors for three independent experiments. Thesis Table 5.6 calls
+      the errors standard deviations; the same means are not pooled or treated as
+      independent replication. Normalization to 100% does not establish absolute substrate
+      depletion. These are HPLC-derived specific activities, not kcat/Km or independently
+      reconstructed initial rates. The nonzero reported mean is retained despite prose
+      describing activity as abolished; no detection limit or exact zero is inferred.'
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2016.07.018
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 4C, p.1095; numerical table and uncertainty caption visually checked.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 5.6 p.190 and variant assay methods p.99; uncertainty conflict
+        retained rather than silently reconciled.
+  - subject: assay
+    predicate: uses_substrate
+    object: oxo
+    notes: Thesis mutant methods specify 0.2 mM source-assigned 7-oxo-SD8, 500 nM
+      enzyme (reported as 16.12 ug/mL) and 50 mM HEPES pH 7.2. This mutant paragraph
+      is distinct from the conflicting 24.18 ug/mL in the generic assay paragraph.
+      Reaction duration and temperature were not independently established for this
+      mutant table in the inspected methods; the earlier one-hour assay and CD temperature
+      are not substituted. The final physiological substrate and pathway order remain
+      unresolved, as in the prior SimC7 component.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2016.07.018
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 4C and experimental procedures; detailed methods referred to supplement.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.8.5 p.99, variant-specific paragraph.
+  - subject: assay
+    predicate: quantifies_product
+    object: sd8
+    notes: The variant method quantifies the SD8 HPLC peak against purified standards
+      spanning 7.5-9000 pmol, using a 70-95% methanol gradient over 10 min. Three
+      independent experiments and two technical replicates are reported. Methanol
+      quenching, heating for ten minutes at 100 C and centrifugation precede analysis;
+      the heating step is not the enzyme reaction temperature. Chemical assignments
+      and the owner's incomplete stereochemistry are not upgraded by this relative-conversion
+      assay.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2016.07.018
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 4C and main experimental procedures.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Variant-specific HPLC methods p.99 and Table 5.6 p.190.
+  - subject: nadh
+    predicate: is_reduced_cofactor_in
+    object: assay
+    notes: The mutant methods specify 0.3 mM NADH. They do not report an NADPH mutant
+      comparison or measure cofactor-binding affinity; the prior wild-type NADH/NADPH
+      activity experiments are a separate claim.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Variant assay methods 2.8.5 p.99.
+  - subject: cd
+    predicate: provides_limited_structural_control_for
+    object: assay
+    notes: The displayed CD experiment compares tagged wild type with I108D, H112A,
+      H112N and H112Q. The main paper and thesis methods more broadly report CD integrity
+      checks, but the inspected thesis panel does not display S95A or I108A. Similar
+      far-UV spectra constrain gross secondary-structure changes; they do not exclude
+      local active-site rearrangements or prove the proposed proton-transfer mechanism.
+      This comparison is an experimental control, not a biochemical interaction between
+      CD and ketoreduction.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2016.07.018
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main experimental procedures p.1096, structural-integrity statement.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods p.88 and Figure 5.12 pp.190-191; exact displayed subset.
+  - subject: wt
+    predicate: has_reference_spectrum_in
+    object: cd
+    notes: The tagged wild-type spectrum is the comparator. Thesis methods use 0.2
+      mg/mL protein in 20 mM potassium phosphate pH 7.2 and 5% glycerol, measured
+      at 20 C with a 0.5-mm cuvette. Four scans over 190-260 nm are averaged (2-nm
+      bandwidth, 0.5-nm step). These are CD conditions, not the kinetic assay. The
+      plot does not establish identical tertiary structure, local binding geometry
+      or statistical equivalence.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.8.3 p.98 and Figure 5.12 p.191; panel and legend visually checked.
+  - subject: i108d
+    predicate: has_reported_similar_spectrum_in
+    object: cd
+    notes: The displayed I108D spectrum is reported as similar to tagged wild type.
+      Thesis methods use 0.2 mg/mL protein in 20 mM potassium phosphate pH 7.2 and
+      5% glycerol, measured at 20 C with a 0.5-mm cuvette. Four scans over 190-260
+      nm are averaged (2-nm bandwidth, 0.5-nm step). These are CD conditions, not
+      the kinetic assay. The plot does not establish identical tertiary structure,
+      local binding geometry or statistical equivalence.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.8.3 p.98 and Figure 5.12 p.191; panel and legend visually checked.
+  - subject: h112a
+    predicate: has_reported_similar_spectrum_in
+    object: cd
+    notes: The displayed H112A spectrum is reported as similar to tagged wild type.
+      Thesis methods use 0.2 mg/mL protein in 20 mM potassium phosphate pH 7.2 and
+      5% glycerol, measured at 20 C with a 0.5-mm cuvette. Four scans over 190-260
+      nm are averaged (2-nm bandwidth, 0.5-nm step). These are CD conditions, not
+      the kinetic assay. The plot does not establish identical tertiary structure,
+      local binding geometry or statistical equivalence.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.8.3 p.98 and Figure 5.12 p.191; panel and legend visually checked.
+  - subject: h112n
+    predicate: has_reported_similar_spectrum_in
+    object: cd
+    notes: The displayed H112N spectrum is reported as similar to tagged wild type.
+      Thesis methods use 0.2 mg/mL protein in 20 mM potassium phosphate pH 7.2 and
+      5% glycerol, measured at 20 C with a 0.5-mm cuvette. Four scans over 190-260
+      nm are averaged (2-nm bandwidth, 0.5-nm step). These are CD conditions, not
+      the kinetic assay. The plot does not establish identical tertiary structure,
+      local binding geometry or statistical equivalence.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.8.3 p.98 and Figure 5.12 p.191; panel and legend visually checked.
+  - subject: h112q
+    predicate: has_reported_similar_spectrum_in
+    object: cd
+    notes: The displayed H112Q spectrum is reported as similar to tagged wild type.
+      Thesis methods use 0.2 mg/mL protein in 20 mM potassium phosphate pH 7.2 and
+      5% glycerol, measured at 20 C with a 0.5-mm cuvette. Four scans over 190-260
+      nm are averaged (2-nm bandwidth, 0.5-nm step). These are CD conditions, not
+      the kinetic assay. The plot does not establish identical tertiary structure,
+      local binding geometry or statistical equivalence.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.8.3 p.98 and Figure 5.12 p.191; panel and legend visually checked.
+curation_history:
+- timestamp: '2026-10-04T10:40:26Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added source-checked SimC7 mutant component from owner base 56d820cd3dbb70f952fae95e9732553de46cb4bb;
+    DOI:10.1016/j.chembiol.2016.07.018 and primary author thesis https://ueaeprints.uea.ac.uk/id/eprint/61276/.
+    Main paper read in the thesis appendix; journal supplement not obtained. Literal
+    primers, displayed activities and CD panel audited; review #539 limitations preserved.'
+  llm_assisted: true

@@ -1,0 +1,312 @@
+record_id: naturalproductmech:mibig-619480541f
+standard_inchi_key: FJAQNRBDVKIIKK-LFLQOBSNSA-N
+graph:
+  graph_id: clorobiocin-clou-heterologous-production-and-rescue-limits
+  scope: BIOSYNTHESIS
+  description: 'Eight reported titers and bounded nondetection under a shared culture/HPLC
+    protocol; deletion, intact-cluster and complemented hosts remain separate. Review
+    #565. Host-conditioned genetic and source-assigned product evidence does not change
+    the owner identity, source fields, previous graphs or SEEDED status.'
+  nodes:
+  - node_id: wt
+    label: S. coelicolor M512 clo-BG1 comparator
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: mutant
+    label: S. coelicolor M512 clo-AF2 deletion host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: rescued
+    label: S. coelicolor M512 clo-AF2 plus pAF16
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: Culture-extract HPLC-UV production workflow
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: wt_readout
+    label: Intact-cluster production profile
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: mutant_readout
+    label: Deletion-host production profile
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: rescue_readout
+    label: Complemented-host production profile
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: clorobiocin
+    label: Source-assigned clorobiocin
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: isoclorobiocin
+    label: Source-assigned isoclorobiocin
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: '101'
+    label: Source-assigned novclobiocin101
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: acid
+    label: Source-assigned clorobiocic acid
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: '106'
+    label: Source-assigned novclobiocic acid106
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: '122'
+    label: Source-assigned novclobiocin122
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: '123'
+    label: Source-assigned novclobiocin123
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Host, quantitation and rescue interpretation limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: wt
+    predicate: was_cultured_and_extracted_in
+    object: assay
+    notes: Source methods use a two-day YMG preculture at30 C/210rpm, two days in
+      corn-starch medium at33 C/210rpm, then5mL into50mL distillers-solubles production
+      medium in a500-mL flask for nine days at33 C/210rpm. The same protocol is specified
+      for S. coelicolor cluster strains; these are not native-producer titers.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.58,96,100; PDF pages are ten above
+        printed pages.
+  - subject: wt
+    predicate: had_reported_profile
+    object: wt_readout
+    notes: One intact-cluster comparator and five independent deletion isolates were
+      reported as cultured. The printed titers lack clone-specific replicate values
+      and uncertainty estimates; five genotyped isolates do not become five quantitative
+      replicates for every value.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.96-100; PDF pages are ten above printed
+        pages.
+  - subject: assay
+    predicate: measured
+    object: wt_readout
+    notes: One-mL culture aliquots were acidified to pH4 and extracted twice with1mL
+      ethyl acetate. Dried extracts were dissolved in200-500uL methanol;50-100uL was
+      injected on RP18 at1mL/min with340-nm detection. Authentic clorobiocin was the
+      stated standard. Distinct congener response factors and detection thresholds
+      are not supplied.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.78-79,96-98; PDF pages are ten above
+        printed pages.
+  - subject: mutant
+    predicate: was_cultured_and_extracted_in
+    object: assay
+    notes: Source methods use a two-day YMG preculture at30 C/210rpm, two days in
+      corn-starch medium at33 C/210rpm, then5mL into50mL distillers-solubles production
+      medium in a500-mL flask for nine days at33 C/210rpm. The same protocol is specified
+      for S. coelicolor cluster strains; these are not native-producer titers.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.58,96,100; PDF pages are ten above
+        printed pages.
+  - subject: mutant
+    predicate: had_reported_profile
+    object: mutant_readout
+    notes: One intact-cluster comparator and five independent deletion isolates were
+      reported as cultured. The printed titers lack clone-specific replicate values
+      and uncertainty estimates; five genotyped isolates do not become five quantitative
+      replicates for every value.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.96-100; PDF pages are ten above printed
+        pages.
+  - subject: assay
+    predicate: measured
+    object: mutant_readout
+    notes: One-mL culture aliquots were acidified to pH4 and extracted twice with1mL
+      ethyl acetate. Dried extracts were dissolved in200-500uL methanol;50-100uL was
+      injected on RP18 at1mL/min with340-nm detection. Authentic clorobiocin was the
+      stated standard. Distinct congener response factors and detection thresholds
+      are not supplied.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.78-79,96-98; PDF pages are ten above
+        printed pages.
+  - subject: rescued
+    predicate: was_cultured_and_extracted_in
+    object: assay
+    notes: Source methods use a two-day YMG preculture at30 C/210rpm, two days in
+      corn-starch medium at33 C/210rpm, then5mL into50mL distillers-solubles production
+      medium in a500-mL flask for nine days at33 C/210rpm. The same protocol is specified
+      for S. coelicolor cluster strains; these are not native-producer titers.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.58,96,100; PDF pages are ten above
+        printed pages.
+  - subject: rescued
+    predicate: had_reported_profile
+    object: rescue_readout
+    notes: One intact-cluster comparator and five independent deletion isolates were
+      reported as cultured. The printed titers lack clone-specific replicate values
+      and uncertainty estimates; five genotyped isolates do not become five quantitative
+      replicates for every value.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.96-100; PDF pages are ten above printed
+        pages.
+  - subject: assay
+    predicate: measured
+    object: rescue_readout
+    notes: One-mL culture aliquots were acidified to pH4 and extracted twice with1mL
+      ethyl acetate. Dried extracts were dissolved in200-500uL methanol;50-100uL was
+      injected on RP18 at1mL/min with340-nm detection. Authentic clorobiocin was the
+      stated standard. Distinct congener response factors and detection thresholds
+      are not supplied.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.78-79,96-98; PDF pages are ten above
+        printed pages.
+  - subject: wt_readout
+    predicate: has_reported_titer_for
+    object: clorobiocin
+    notes: Reported 9.0 mg/L by culture-extract HPLC. This is a source production
+      estimate, not purified enzyme activity, an error-bounded mean or evidence that
+      this congener is the exact parent structure.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.96-98; PDF pages are ten above printed
+        pages.
+  - subject: wt_readout
+    predicate: has_reported_titer_for
+    object: isoclorobiocin
+    notes: Reported 2.8 mg/L by culture-extract HPLC. This is a source production
+      estimate, not purified enzyme activity, an error-bounded mean or evidence that
+      this congener is the exact parent structure.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.96-98; PDF pages are ten above printed
+        pages.
+  - subject: wt_readout
+    predicate: has_reported_titer_for
+    object: '101'
+    notes: Reported 5.3 mg/L by culture-extract HPLC. This is a source production
+      estimate, not purified enzyme activity, an error-bounded mean or evidence that
+      this congener is the exact parent structure.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.96-98; PDF pages are ten above printed
+        pages.
+  - subject: mutant_readout
+    predicate: has_reported_titer_for
+    object: acid
+    notes: Reported 20 mg/L by culture-extract HPLC. This is a source production estimate,
+      not purified enzyme activity, an error-bounded mean or evidence that this congener
+      is the exact parent structure.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.96-98; PDF pages are ten above printed
+        pages.
+  - subject: mutant_readout
+    predicate: has_reported_titer_for
+    object: '106'
+    notes: Reported 39 mg/L by culture-extract HPLC. This is a source production estimate,
+      not purified enzyme activity, an error-bounded mean or evidence that this congener
+      is the exact parent structure.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.96-98; PDF pages are ten above printed
+        pages.
+  - subject: mutant_readout
+    predicate: has_reported_titer_for
+    object: '122'
+    notes: Reported 1.5 mg/L by culture-extract HPLC. This is a source production
+      estimate, not purified enzyme activity, an error-bounded mean or evidence that
+      this congener is the exact parent structure.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.96-98; PDF pages are ten above printed
+        pages.
+  - subject: mutant_readout
+    predicate: has_reported_titer_for
+    object: '123'
+    notes: Reported 0.4 mg/L by culture-extract HPLC. This is a source production
+      estimate, not purified enzyme activity, an error-bounded mean or evidence that
+      this congener is the exact parent structure.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.96-98; PDF pages are ten above printed
+        pages.
+  - subject: mutant_readout
+    predicate: has_reported_nondetection_for
+    object: clorobiocin
+    notes: Clorobiocin was not detected under the reported conditions; no numerical
+      detection limit or universal zero-production claim is supplied.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF p.96; PDF pages are ten above printed
+        pages.
+      snippet: keine Clorobiocin-Produktion nachgewiesen
+  - subject: rescue_readout
+    predicate: has_reported_titer_for
+    object: clorobiocin
+    notes: Reported10 mg/L clorobiocin versus9.0 mg/L in the intact-cluster comparator.
+      The source calls the amounts comparable; no statistical equivalence test or
+      confidence interval is supplied.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.98,100; PDF pages are ten above printed
+        pages.
+      snippet: vergleichbaren Mengen (10 mg/l)
+  - subject: rescue_readout
+    predicate: has_interpretation_limit
+    object: limits
+    notes: Genetic complementation supports a cloU-specific contribution. No direct
+      cloV/cloW transcript or protein measurement is supplied; a rescue does not exclude
+      every possible polar effect or establish isolated catalytic parameters. The
+      displayed CloU rescue comparison has no separate empty-pUWL201 production panel.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006 primary thesis, PDF pp.96-100,126; PDF pages are ten above
+        printed pages.
+  - subject: mutant_readout
+    predicate: has_interpretation_limit
+    object: limits
+    notes: Most reported mutant products are aglycones. Later pRHAM/pMPU sugar-supply
+      engineering is a distinct experiment, not interchangeable with these baseline1.5/0.4-mg/L
+      congeners or the pAF16 complementation measurement.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006 primary thesis, PDF pp.96,100,128-129; PDF pages are ten
+        above printed pages.
+curation_history:
+- timestamp: '2026-10-05T01:31:28Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add clorobiocin-clou-heterologous-production-and-rescue-limits with native
+    identity, source-bounded genetics and #565 findings.'
+  llm_assisted: true

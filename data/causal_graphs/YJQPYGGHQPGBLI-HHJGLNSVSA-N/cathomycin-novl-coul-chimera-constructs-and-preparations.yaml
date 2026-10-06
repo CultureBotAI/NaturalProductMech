@@ -1,0 +1,520 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novl-coul-chimera-constructs-and-preparations
+  scope: BIOSYNTHESIS
+  description: 'Ten engineered NovL/CouL amide-synthetase chimeras from Metzger 2010
+    (review #551), associated with the NovL precursor mechanism of the cathomycin/BGC0000834
+    owner. These are experimental fusion proteins, not ten native UniProt entries
+    or ten natural-product structures. Parent sequence references, schematic swaps,
+    literal-primer models and actual assayed preparations are distinct. The thesis
+    reports sequence verification, but complete experimental plasmids were not independently
+    obtained. Figure 3.27 CouL does not exactly match any of AF235050.1-.4. All page
+    locators below are PDF pages, twelve above printed pages.'
+  nodes:
+  - node_id: native_nov
+    label: Deposited native NovL sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F6
+  - node_id: cou_alignment
+    label: Printed CouL parent and deposit-version discrepancy
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: nov_parent
+    label: pUM07 NovL parental DNA construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: cou_parent
+    label: pUM05 CouL parental DNA construct
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: chim1
+    label: Chim1 NovL/CouL His-tagged fusion (pUM27)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: chim2
+    label: Chim2 NovL/CouL His-tagged fusion (pSF06)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: chim3
+    label: Chim3 NovL/CouL His-tagged fusion (pSF09)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: chim4
+    label: Chim4 NovL/CouL His-tagged fusion (pUM24)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: chim5
+    label: Chim5 NovL/CouL His-tagged fusion (pUM43)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: chim8
+    label: Chim8 NovL/CouL His-tagged fusion (pSF07)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: chim9
+    label: Chim9 NovL/CouL His-tagged fusion (pSF04)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: chim10
+    label: Chim10 NovL/CouL His-tagged fusion (pUM25)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: chim11
+    label: Chim11 NovL/CouL His-tagged fusion (pSF05)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: chim12
+    label: Chim12 NovL/CouL His-tagged fusion (pUM40)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: panel
+    label: Four-stage fusion-PCR and pHis8 construct panel
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: primer_audit
+    label: Literal-primer reconstruction and schematic-boundary limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: host
+    label: E. coli BL21(DE3)pLysS expression host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: purification
+    label: Chimera IMAC and PD-10 preparation workflow
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: sds
+    label: Reported chimera SDS-PAGE purification readout
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: native_nov
+    predicate: is_sequence_reference_for
+    object: nov_parent
+    notes: All 527 NovL residues printed in Figure 3.27 match the CDS-aware AF170880.4/AAF67505.1
+      translation and Q9L9F6. pUM07 is an engineered N-terminal His-tag construct,
+      not native Q9L9F6. Current AF170880.4 is attributed to NCIMB 9219 following
+      the published strain correction; historical strain labels do not uniquely identify
+      each assay sample. No matched parent batch or tag-cleavage state is supplied
+      in the chimera activity table.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Plasmid table and Figure 3.27, PDF pp.29,91.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Native deposited CDS.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F6
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed Q9L9F6, entry 67, sequence 1, retrieved 2026-10-04.
+    - reference: DOI:10.1128/genomeA.01146-13
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Indexed primary strain-correction text.
+  - subject: cou_alignment
+    predicate: limits_exact_identity_of
+    object: cou_parent
+    notes: Figure 3.27 prints a 529-aa CouL with EA384-385. AF235050.1-.3/AAG29784.1
+      have RA, whereas AF235050.4/AAG29784.2 has EG. All other printed residues agree.
+      Thus neither historical nor current deposit exactly identifies the printed parent.
+      A printing error or sample difference is unresolved; this is not proof of a
+      third biological allele. pUM05 was derived from couMW12 via pUM10. The table
+      reports a 1607-bp PCR product and a 1615-bp BspHI/NotI subclone; without the
+      full vector sequence, these do not establish exact junctions or an impossible
+      cloning event. CouL-derived segments in Chim1-4 and Chim12 include positions
+      384-385.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Plasmid table and full Figure 3.27 alignment, PDF pp.29,91.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native CouL CDS and translation.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native CouL CDS and translation.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native CouL CDS and translation.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native CouL CDS and translation.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact comparison of all 529 printed residues to four deposited CDS translations.
+  - subject: nov_parent
+    predicate: supplied_template_segments_to
+    object: panel
+    notes: Table 2.5 identifies pUM07 as NovL template. Region I is 161-171; IIa is
+      192-214; IIb is 215-229; the C-terminal region starts at 413. These source-defined
+      regions guide the schematic swaps, not uniquely sequenced crossover coordinates.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 2.5 and Figure 3.27, PDF pp.40-41,91.
+  - subject: cou_parent
+    predicate: supplied_template_segments_to
+    object: panel
+    notes: Table 2.5 identifies pUM05 as CouL template. Region I is 161-171; IIa is
+      192-216; IIb is 217-231; the C-terminal region starts at 415. The source informally
+      calls the C terminus the last 100 residues, but 415-529 comprises 115 residues.
+      No exact 100-residue construct boundary is inferred.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 2.5 and Figure 3.27, PDF pp.40-41,91.
+  - subject: panel
+    predicate: has_literal_primer_audit
+    object: primer_audit
+    notes: All 15 printed primer strings were checked; each of the six internal forward/reverse
+      pairs is reverse-complementary. Full-length ungapped matches within the deposited
+      parent CDSs uniquely localize the internal primers despite template mismatches;
+      short exact suffixes alone can select unrelated genomic positions. The shared
+      reverse primer GAATGAAGCTTCTCACCTGTCCACCAGGACGTC differs from CouL six bases
+      from its 3-prime end, reconstructing synonymous GTG-to-GTC at native CouL V525.
+      The models use NovL AF170880.4 and historical CouL AF235050.3, not a recovered
+      pUM05 sequence. Relative to simple concatenation at the stated region boundaries,
+      Chim4 retains NovL R241/A245 in place of CouL K243/T247; Chim8 retains NovL
+      S154/V155 in place of CouL T154/A155. The other eight modeled internal cores
+      match that simple combination. Conserved sequence can make a crossover nonunique.
+      These are inferred models excluding native residues 1-2 and unknown vector-derived
+      sequence, not experimental sequence determinations.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Literal primers, Table 2.5 and Figure 3.27, PDF pp.31-32,40-41,91.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: CDS-local primer matching and reading-frame reconstruction.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.3
+      evidence_type: CURATOR_INFERENCE
+      notes: Historical template model; actual CouL parent identity unresolved.
+  - subject: host
+    predicate: supplied_expression_material_for
+    object: purification
+    notes: Expression used 1 L TB culture, cooling at OD600 0.6, 0.5 mM IPTG and six
+      hours at 20 C/250 rpm. Proteins were expressed with an N-terminal His tag and
+      purified by IMAC. For chimeras, pooled fractions underwent PD-10 desalting,
+      addition of 15% glycerol and storage at -70 C. The separate thrombin/size-exclusion
+      protocol for crystallization proteins does not establish tag removal for these
+      chimeras.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.6.1-2.6.2, PDF pp.43-45.
+  - subject: purification
+    predicate: has_reported_readout
+    object: sds
+    notes: Figure 3.28 displays all ten chimeras at 20 ug per lane and labels them
+      57 kDa, but their apparent migrations differ. Near purity is the author description,
+      not a quantified purity percentage, folding/stability control or biological
+      oligomer determination. Table 3.7 gives dashes for both parental yield/concentration
+      rows; earlier NovL preparations must not be substituted as matched measurements.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 3.7 and Figure 3.28, PDF p.92.
+  - subject: panel
+    predicate: generated_expression_construct_for
+    object: chim1
+    notes: 'Chim1: NovL-derived N-terminal segment and CouL-derived C-terminal segment,
+      schematic transition before region I. Table 2.5 uses NovCouMut2f/r for the internal
+      overlap. pGEM-T intermediate pUM18 precedes pHis8 construct pUM27. The reported
+      1608-bp PCR and 1592-bp BspHI/HindIII fragment agree with the literal deposited-template
+      model. This does not resolve parent sequence differences, tag/junction sequence
+      or the independently unobserved full experimental fusion. No native UniProt
+      accession is assigned.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Plasmid/primer tables, Table 2.5 and Table 3.7, PDF pp.29-32,40-41,92.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer fragment-length reconstruction, not observed plasmid sequence.
+  - subject: purification
+    predicate: yielded_preparation
+    object: chim1
+    notes: Table 3.7 reports 105 mg recovered protein per L culture and final concentration
+      1.0 mg/mL for pUM27. These values are neither assay load nor natural-product
+      titer. Purified-protein quantification methods describe A280 with sequence-derived
+      extinction coefficients; per-chimera coefficients and measurement uncertainties
+      are not tabulated here.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.7.1 and Table 3.7, PDF pp.46,92.
+  - subject: panel
+    predicate: generated_expression_construct_for
+    object: chim2
+    notes: 'Chim2: NovL-derived N-terminal segment and CouL-derived C-terminal segment,
+      schematic transition after region I. Table 2.5 uses NovCouMut1f/r for the internal
+      overlap. pGEM-T intermediate pSF01 precedes pHis8 construct pSF06. The reported
+      1608-bp PCR and 1592-bp BspHI/HindIII fragment agree with the literal deposited-template
+      model. This does not resolve parent sequence differences, tag/junction sequence
+      or the independently unobserved full experimental fusion. No native UniProt
+      accession is assigned.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Plasmid/primer tables, Table 2.5 and Table 3.7, PDF pp.29-32,40-41,92.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer fragment-length reconstruction, not observed plasmid sequence.
+  - subject: purification
+    predicate: yielded_preparation
+    object: chim2
+    notes: Table 3.7 reports 127 mg recovered protein per L culture and final concentration
+      4.1 mg/mL for pSF06. These values are neither assay load nor natural-product
+      titer. Purified-protein quantification methods describe A280 with sequence-derived
+      extinction coefficients; per-chimera coefficients and measurement uncertainties
+      are not tabulated here.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.7.1 and Table 3.7, PDF pp.46,92.
+  - subject: panel
+    predicate: generated_expression_construct_for
+    object: chim3
+    notes: 'Chim3: NovL-derived N-terminal segment and CouL-derived C-terminal segment,
+      schematic transition after region IIa. Table 2.5 uses NovCouMut4af/r for the
+      internal overlap. pGEM-T intermediate pSF08 precedes pHis8 construct pSF09.
+      The reported 1602-bp PCR and 1586-bp BspHI/HindIII fragment agree with the literal
+      deposited-template model. This does not resolve parent sequence differences,
+      tag/junction sequence or the independently unobserved full experimental fusion.
+      No native UniProt accession is assigned.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Plasmid/primer tables, Table 2.5 and Table 3.7, PDF pp.29-32,40-41,92.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer fragment-length reconstruction, not observed plasmid sequence.
+  - subject: purification
+    predicate: yielded_preparation
+    object: chim3
+    notes: Table 3.7 reports 90 mg recovered protein per L culture and final concentration
+      4.0 mg/mL for pSF09. These values are neither assay load nor natural-product
+      titer. Purified-protein quantification methods describe A280 with sequence-derived
+      extinction coefficients; per-chimera coefficients and measurement uncertainties
+      are not tabulated here.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.7.1 and Table 3.7, PDF pp.46,92.
+  - subject: panel
+    predicate: generated_expression_construct_for
+    object: chim4
+    notes: 'Chim4: NovL-derived N-terminal segment and CouL-derived C-terminal segment,
+      schematic transition after region IIb. Table 2.5 uses NovCouMut3f/r for the
+      internal overlap. pGEM-T intermediate pUM20 precedes pHis8 construct pUM24.
+      The reported 1602-bp PCR and 1586-bp BspHI/HindIII fragment agree with the literal
+      deposited-template model. This does not resolve parent sequence differences,
+      tag/junction sequence or the independently unobserved full experimental fusion.
+      No native UniProt accession is assigned.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Plasmid/primer tables, Table 2.5 and Table 3.7, PDF pp.29-32,40-41,92.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer fragment-length reconstruction, not observed plasmid sequence.
+  - subject: purification
+    predicate: yielded_preparation
+    object: chim4
+    notes: Table 3.7 reports 82 mg recovered protein per L culture and final concentration
+      5.6 mg/mL for pUM24. These values are neither assay load nor natural-product
+      titer. Purified-protein quantification methods describe A280 with sequence-derived
+      extinction coefficients; per-chimera coefficients and measurement uncertainties
+      are not tabulated here.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.7.1 and Table 3.7, PDF pp.46,92.
+  - subject: panel
+    predicate: generated_expression_construct_for
+    object: chim5
+    notes: 'Chim5: NovL-derived N-terminal segment and CouL-derived C-terminal segment,
+      schematic transition before the C-terminal region. Table 2.5 uses NovCouMut5f/r
+      for the internal overlap. pGEM-T intermediate pUM45 precedes pHis8 construct
+      pUM43. The reported 1602-bp PCR and 1586-bp BspHI/HindIII fragment agree with
+      the literal deposited-template model. This does not resolve parent sequence
+      differences, tag/junction sequence or the independently unobserved full experimental
+      fusion. No native UniProt accession is assigned.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Plasmid/primer tables, Table 2.5 and Table 3.7, PDF pp.29-32,40-41,92.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer fragment-length reconstruction, not observed plasmid sequence.
+  - subject: purification
+    predicate: yielded_preparation
+    object: chim5
+    notes: Table 3.7 reports 113 mg recovered protein per L culture and final concentration
+      7.5 mg/mL for pUM43. These values are neither assay load nor natural-product
+      titer. Purified-protein quantification methods describe A280 with sequence-derived
+      extinction coefficients; per-chimera coefficients and measurement uncertainties
+      are not tabulated here.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.7.1 and Table 3.7, PDF pp.46,92.
+  - subject: panel
+    predicate: generated_expression_construct_for
+    object: chim8
+    notes: 'Chim8: CouL-derived N-terminal segment and NovL-derived C-terminal segment,
+      schematic transition before region I. Table 2.5 uses NovCouMut2f/r for the internal
+      overlap. pGEM-T intermediate pSF03 precedes pHis8 construct pSF07. The reported
+      1602-bp PCR and 1586-bp BspHI/HindIII fragment agree with the literal deposited-template
+      model. This does not resolve parent sequence differences, tag/junction sequence
+      or the independently unobserved full experimental fusion. No native UniProt
+      accession is assigned.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Plasmid/primer tables, Table 2.5 and Table 3.7, PDF pp.29-32,40-41,92.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer fragment-length reconstruction, not observed plasmid sequence.
+  - subject: purification
+    predicate: yielded_preparation
+    object: chim8
+    notes: Table 3.7 reports 50 mg recovered protein per L culture and final concentration
+      3.4 mg/mL for pSF07. These values are neither assay load nor natural-product
+      titer. Purified-protein quantification methods describe A280 with sequence-derived
+      extinction coefficients; per-chimera coefficients and measurement uncertainties
+      are not tabulated here.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.7.1 and Table 3.7, PDF pp.46,92.
+  - subject: panel
+    predicate: generated_expression_construct_for
+    object: chim9
+    notes: 'Chim9: CouL-derived N-terminal segment and NovL-derived C-terminal segment,
+      schematic transition after region I. Table 2.5 uses NovCouMut1f/r for the internal
+      overlap. pGEM-T intermediate pUM21 precedes pHis8 construct pSF04. The reported
+      1602-bp PCR and 1586-bp BspHI/HindIII fragment agree with the literal deposited-template
+      model. This does not resolve parent sequence differences, tag/junction sequence
+      or the independently unobserved full experimental fusion. No native UniProt
+      accession is assigned.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Plasmid/primer tables, Table 2.5 and Table 3.7, PDF pp.29-32,40-41,92.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer fragment-length reconstruction, not observed plasmid sequence.
+  - subject: purification
+    predicate: yielded_preparation
+    object: chim9
+    notes: Table 3.7 reports 94 mg recovered protein per L culture and final concentration
+      5.2 mg/mL for pSF04. These values are neither assay load nor natural-product
+      titer. Purified-protein quantification methods describe A280 with sequence-derived
+      extinction coefficients; per-chimera coefficients and measurement uncertainties
+      are not tabulated here.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.7.1 and Table 3.7, PDF pp.46,92.
+  - subject: panel
+    predicate: generated_expression_construct_for
+    object: chim10
+    notes: 'Chim10: CouL-derived N-terminal segment and NovL-derived C-terminal segment,
+      schematic transition after region IIa. Table 2.5 uses NovCouMut4bf/r for the
+      internal overlap. pGEM-T intermediate pUM22 precedes pHis8 construct pUM25.
+      The reported 1608-bp PCR and 1592-bp BspHI/HindIII fragment agree with the literal
+      deposited-template model. This does not resolve parent sequence differences,
+      tag/junction sequence or the independently unobserved full experimental fusion.
+      No native UniProt accession is assigned.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Plasmid/primer tables, Table 2.5 and Table 3.7, PDF pp.29-32,40-41,92.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer fragment-length reconstruction, not observed plasmid sequence.
+  - subject: purification
+    predicate: yielded_preparation
+    object: chim10
+    notes: Table 3.7 reports 76 mg recovered protein per L culture and final concentration
+      3.8 mg/mL for pUM25. These values are neither assay load nor natural-product
+      titer. Purified-protein quantification methods describe A280 with sequence-derived
+      extinction coefficients; per-chimera coefficients and measurement uncertainties
+      are not tabulated here.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.7.1 and Table 3.7, PDF pp.46,92.
+  - subject: panel
+    predicate: generated_expression_construct_for
+    object: chim11
+    notes: 'Chim11: CouL-derived N-terminal segment and NovL-derived C-terminal segment,
+      schematic transition after region IIb. Table 2.5 uses NovCouMut3f/r for the
+      internal overlap. pGEM-T intermediate pUM23 precedes pHis8 construct pSF05.
+      The reported 1608-bp PCR and 1592-bp BspHI/HindIII fragment agree with the literal
+      deposited-template model. This does not resolve parent sequence differences,
+      tag/junction sequence or the independently unobserved full experimental fusion.
+      No native UniProt accession is assigned.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Plasmid/primer tables, Table 2.5 and Table 3.7, PDF pp.29-32,40-41,92.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer fragment-length reconstruction, not observed plasmid sequence.
+  - subject: purification
+    predicate: yielded_preparation
+    object: chim11
+    notes: Table 3.7 reports 68 mg recovered protein per L culture and final concentration
+      3.8 mg/mL for pSF05. These values are neither assay load nor natural-product
+      titer. Purified-protein quantification methods describe A280 with sequence-derived
+      extinction coefficients; per-chimera coefficients and measurement uncertainties
+      are not tabulated here.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.7.1 and Table 3.7, PDF pp.46,92.
+  - subject: panel
+    predicate: generated_expression_construct_for
+    object: chim12
+    notes: 'Chim12: CouL-derived N-terminal segment and NovL-derived C-terminal segment,
+      schematic transition before the C-terminal region. Table 2.5 uses NovCouMut5f/r
+      for the internal overlap. pGEM-T intermediate pUM39 precedes pHis8 construct
+      pUM40. The reported 1608-bp PCR and 1592-bp BspHI/HindIII fragment agree with
+      the literal deposited-template model. This does not resolve parent sequence
+      differences, tag/junction sequence or the independently unobserved full experimental
+      fusion. No native UniProt accession is assigned.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Plasmid/primer tables, Table 2.5 and Table 3.7, PDF pp.29-32,40-41,92.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer fragment-length reconstruction, not observed plasmid sequence.
+  - subject: purification
+    predicate: yielded_preparation
+    object: chim12
+    notes: Table 3.7 reports 83 mg recovered protein per L culture and final concentration
+      6.3 mg/mL for pUM40. These values are neither assay load nor natural-product
+      titer. Purified-protein quantification methods describe A280 with sequence-derived
+      extinction coefficients; per-chimera coefficients and measurement uncertainties
+      are not tabulated here.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.7.1 and Table 3.7, PDF pp.46,92.
+curation_history:
+- timestamp: '2026-10-04T17:07:54Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add cathomycin-novl-coul-chimera-constructs-and-preparations from Metzger
+    primary evidence; preserve construct, sequence and endpoint-assay limits (#551).
+  llm_assisted: true
+- timestamp: '2026-10-04T17:10:34Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Correct DNA-template versus enzyme-comparator entity types and construction-workflow
+    predicates; preserve all numerical/source evidence and topology (#552).
+  llm_assisted: true

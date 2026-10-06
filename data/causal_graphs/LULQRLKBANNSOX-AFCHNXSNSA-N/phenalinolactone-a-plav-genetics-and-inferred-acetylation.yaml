@@ -1,0 +1,143 @@
+record_id: naturalproductmech:mibig-e29f83c77b
+standard_inchi_key: LULQRLKBANNSOX-AFCHNXSNSA-N
+graph:
+  graph_id: phenalinolactone-a-plav-genetics-and-inferred-acetylation
+  scope: BIOSYNTHESIS
+  description: Daum 2009 native Tu6071 PlaV genetics. NL111 cultures harvested after
+    7-8 days; ethyl-acetate supernatant extracts analyzed by HPLC/ESI-MS (plaESI).
+    Production phenotypes and genomic-fragment rescue support inferred 3-O-acetylation,
+    not purified-protein catalysis.
+  nodes:
+  - node_id: plav
+    label: Native PlaV parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:ABB69758.1
+  - node_id: lesion
+    label: Tu6071 delta-plaV internal deletion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: production
+    label: Detectable phenalinolactone A and D production
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: products
+    label: PL-X1 and PL-MD1/MD2 mutant profile
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: rescue
+    label: pSET-plaV genomic-fragment complementation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: acetylation
+    label: Proposed phenalinolactone 3-O-acetylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: lesion
+    predicate: inactivates_encoding_gene_of
+    object: plav
+    notes: pKC1132-Vdel gives a reported internal 378-bp in-frame deletion, not whole-gene
+      removal. Apramycin-sensitive double crossover has 1.4-kb PCR versus 1.8-kb wild
+      type; single-crossover/plasmid controls are shown. Native GenPept/GenBank/MIBiG
+      translations agree; curator BstEII reconstruction predicts 378 bp but does not
+      sequence the mutant. Native S65/K68 and Figure 3-16 disagree with thesis prose
+      S66/K69. No catalytic-residue or beta-lactam-resistance function is established.
+      Exact gene/taxon and accession-xref UniProt searches returned no rows; no homolog
+      mapping substituted.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.3.1-3.3.2, 5.6.1.5, 5.7.2.3; printed pp. 48-50, 143, 156,
+        163, 166; Figures 3-16/3-17, Table 5-32.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABB69758.1
+      evidence_type: DATABASE_ASSERTION
+      notes: 484 aa; DQ230532.1 complement(36051..37505); Streptomyces sp. Tu6071,
+        taxon 355249.
+      retrieved_on: '2026-10-03'
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator GenPept/GenBank/MIBiG sequence comparison and primer/BstEII mapping;
+        compatible native cuts 378 bp apart. Motif numbering comparison is not site-directed-mutagenesis
+        evidence.
+  - subject: lesion
+    predicate: abolishes_detectable
+    object: production
+    notes: Mutant extract lacked A/D seen in wild type, while other phenalinolactones
+      remained. This is assay-limited production loss, not loss of all metabolites
+      or a quantified detection limit.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.3.3, pp. 50-52; Table 3-5/Figure 3-18. Methods 5.10.2.1, 5.10.3.1
+        and 5.10.4.1, pp. 189-190, 195-196.
+      snippet: Die Mutante produzierte weder PL-A noch PL-D.
+  - subject: lesion
+    predicate: changes_production_profile_to
+    object: products
+    notes: 'Major PL-X1/PL-MD1 and minor PL-MD2. PL-X1 NMR/HRMS supports 3-O-deacetyl-D,
+      but C-3 hydroxyl relative configuration is unresolved. PL-MD1 is a proposed
+      X1 aglycone: HRMS formula C29H39NO8, 26/29 13C signals, three possibly solvent-hidden;
+      less than 1 mg measured, no informative HSQC/HMBC, and ethyl-acetate contamination
+      noted. PL-MD2 is only an MS/UV-based hydroxylated-X1 proposal, without confirmed
+      hydroxylation site. No exact structure grounding for these congeners.'
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.3.3-3.3.4, 4.2.1 and 7.2.2-7.2.3; pp. 50-54, 100, 227-231;
+        Figures 3-18 to 3-20, 7-3/7-4; Tables 3-6, 7-4/7-5. NMR/HRMS methods 5.10.4.2-5.10.4.3,
+        pp. 197-198.
+  - subject: rescue
+    predicate: supplies_wild_type_encoding_gene_for
+    object: plav
+    notes: 'pSET152-derived pSET-plaV uses ermE-up. Curator plaV-F/R mapping gives
+      DQ230532.1:35941..37726 (1786 bp): primer changes outside PlaV CDS, but partial
+      plaU/plaO4 included. Not isolated CDS or a separately deposited rescue-plasmid
+      sequence.'
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 5.6.4.5 and 5.8.2.1-5.8.2.2; pp. 156, 168; Table 5-32.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native plaV and neighboring CDS coordinates.
+      retrieved_on: '2026-10-03'
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator primer/native-locus comparison; all mapped introduced changes
+        are outside PlaV, not independent plasmid sequencing.
+  - subject: rescue
+    predicate: restores_detectable
+    object: production
+    notes: 'Complementation restored A/D; amounts described as wild-type-like, without
+      a quantified fold change here. Methods compare three complemented clones with
+      wild type and mutant+pSET-1cerm vector control (not claimed empty: vector carries
+      urdGT1c). Genetic support does not prove isolated PlaV sufficiency or exclude
+      every off-target effect.'
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.3.3, pp. 51-52, Figure 3-18; sections 5.8.2.1 and 5.8.3, pp.
+        168-169.
+  - subject: plav
+    predicate: is_proposed_to_catalyze
+    object: acetylation
+    notes: Deletion/rescue and deacetylated products support 3-O-acetylation, including
+      proposed X1-to-D conversion. Donor, reversibility, exact pathway order and SxxK
+      catalytic mechanism are hypotheses, not purified-PlaV results. Motif mutagenesis
+      was ongoing, not reported as completed; lack of marked mutant growth inhibition
+      does not establish self-resistance. No bioactivity target is inferred.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: CURATOR_INFERENCE
+      notes: Section 4.2.1, pp. 98-101; Figures 4-6/4-7; interpreted with primary
+        results 3.3.2-3.3.4, pp. 49-54.
+curation_history:
+- timestamp: '2026-10-04T02:16:47Z'
+  curator: codex
+  action: GRAPH_COMPONENT_MIGRATED
+  changes: Lossless migration of graph phenalinolactone-a-plav-genetics-and-inferred-acetylation
+    from data/natural_products/unclassified/phenalinolactone-a.yaml at aa0e38c4ac899ca5534b4ce02318c019fc44db29.
+    Prior claim curation history remains on the owning record; graph content and evidence
+    are unchanged.
+  llm_assisted: true

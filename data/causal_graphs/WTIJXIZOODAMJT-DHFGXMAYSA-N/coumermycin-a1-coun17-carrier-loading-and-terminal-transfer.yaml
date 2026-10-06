@@ -1,0 +1,224 @@
+record_id: CHEBI:3907
+standard_inchi_key: WTIJXIZOODAMJT-DHFGXMAYSA-N
+graph:
+  graph_id: coumermycin-a1-coun17-carrier-loading-and-terminal-transfer
+  scope: BIOSYNTHESIS
+  description: 'Abstract-bounded 2006 loading and transfer evidence. Partial curation;
+    review #570. Native references, experimental preparations and inferred states
+    remain distinct. Source fields and SEEDED status are unchanged.'
+  nodes:
+  - node_id: n1
+    label: Native CouN1 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8U6
+  - node_id: n7
+    label: Native CouN7 sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8U0
+  - node_id: apo
+    label: Experimental apo-CouN1
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: enzyme
+    label: Experimental CouN7
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: sfp
+    label: Assay Sfp reagent
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: loading
+    label: Carrier loading
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: coas
+    label: Synthetic pyrrolyl and methylpyrrolyl CoAs
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: loaded
+    label: Acyl-holo CouN1 donor forms
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: acceptor
+    label: Descarbamoylnovobiocin acceptor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: transfer
+    label: Surrogate transfer assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: surrogate
+    label: Methylpyrrolyl surrogate product
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: penultimate
+    label: Coumermycin penultimate precursor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: completion
+    label: Double-transfer assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: product
+    label: coumermycin A1
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:3907
+  - node_id: limits
+    label: Abstract-access limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: n1
+    predicate: is_native_reference_for
+    object: apo
+    notes: Reported E. coli-purified protein; tags unspecified.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8U6
+      evidence_type: DATABASE_ASSERTION
+      notes: Native sequence reference.
+    - reference: DOI:10.1021/bi060784e
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: n7
+    predicate: is_native_reference_for
+    object: enzyme
+    notes: Reported E. coli-purified enzyme; exact fusion unspecified.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8U0
+      evidence_type: DATABASE_ASSERTION
+      notes: Native sequence reference.
+    - reference: DOI:10.1021/bi060784e
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: sfp
+    predicate: catalyzed
+    object: loading
+    notes: Sfp installs the supplied acyl-pantetheinyl moieties.
+    evidence:
+    - reference: DOI:10.1021/bi060784e
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: apo
+    predicate: was_substrate_in
+    object: loading
+    notes: Apo carrier, not already loaded donor.
+    evidence:
+    - reference: DOI:10.1021/bi060784e
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: coas
+    predicate: provided_donors_for
+    object: loading
+    notes: Chemically supplied substrates, not native precursor flux.
+    evidence:
+    - reference: DOI:10.1021/bi060784e
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: loading
+    predicate: formed
+    object: loaded
+    notes: Carrier-linked thioesters.
+    evidence:
+    - reference: DOI:10.1021/bi060784e
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: loaded
+    predicate: was_donor_in
+    object: transfer
+    notes: Carrier-tethered acyl transfer.
+    evidence:
+    - reference: DOI:10.1021/bi060784e
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: acceptor
+    predicate: was_acceptor_in
+    object: transfer
+    notes: Noviose-sugar acceptor.
+    evidence:
+    - reference: DOI:10.1021/bi060784e
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: enzyme
+    predicate: catalyzed
+    object: transfer
+    notes: Acyltransferase activity.
+    evidence:
+    - reference: DOI:10.1021/bi060784e
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: transfer
+    predicate: formed_reported_product
+    object: surrogate
+    notes: With methylpyrrolyl donor, the product has CH3 instead of clorobiocin ring
+      Cl; not clorobiocin.
+    evidence:
+    - reference: DOI:10.1021/bi060784e
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: loaded
+    predicate: provided_methylpyrrolyl_donor_for
+    object: completion
+    notes: This result concerns the methylated donor form.
+    evidence:
+    - reference: DOI:10.1021/bi060784e
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: penultimate
+    predicate: was_acceptor_in
+    object: completion
+    notes: Distinct from the monomeric surrogate.
+    evidence:
+    - reference: DOI:10.1021/bi060784e
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: enzyme
+    predicate: catalyzed
+    object: completion
+    notes: Two acyl transfers.
+    evidence:
+    - reference: DOI:10.1021/bi060784e
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+      snippet: Double transfer
+  - subject: completion
+    predicate: formed_reported_product
+    object: product
+    notes: Source-reported pathway completion in vitro.
+    evidence:
+    - reference: DOI:10.1021/bi060784e
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: transfer
+    predicate: has_evidence_limit
+    object: limits
+    notes: No assay concentrations, kinetics, yields or exact Sfp accession inferred.
+    evidence:
+    - reference: DOI:10.1021/bi060784e
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract only.
+  - subject: completion
+    predicate: has_evidence_limit
+    object: limits
+    notes: No native-cell flux, microscopic site order or stable protein complex established
+      here.
+    evidence:
+    - reference: DOI:10.1021/bi060784e
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract only.
+curation_history:
+- timestamp: '2026-10-05T05:40:40Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add coumermycin-a1-coun17-carrier-loading-and-terminal-transfer; preserve
+    native, assay, source-access and inference limits (#570).
+  llm_assisted: true
+- timestamp: '2026-10-05T05:42:21Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Final review marks native-to-sample limits as curator inference and uses
+    the exact compound label for CHEBI:3907-grounded nodes. Preserve topology, source
+    facts and owner bytes (#570).
+  llm_assisted: true

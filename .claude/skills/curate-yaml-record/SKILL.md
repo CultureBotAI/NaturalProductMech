@@ -63,7 +63,10 @@ an independent source.
 
 ### 1. Establish a baseline
 
-Read the entire YAML, not selected fields. Record its identifier, InChIKey,
+Read the entire owner YAML and every `causal_graph_refs` component, not selected
+fields. Use `read_natural_product` for the complete mechanism view and the raw
+YAML plus guarded bundle writer for component edits, as specified in
+`docs/CURATION.md`. Record its identifier, InChIKey,
 `stereo_complete`, grounding state, source concepts, filing class and its
 provenance (asserted or computed), producers with their `evidence_basis`,
 occurrences, BGCs, curation status, existing citations, existing discussions,

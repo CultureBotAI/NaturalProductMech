@@ -1,0 +1,192 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novjk-database-mutants-and-residue-evidence-limits
+  scope: BIOSYNTHESIS
+  description: 'Three database-described engineered NovJ variants and subunit/residue
+    annotations, explicitly not primary-panel reanalysis. Review #562. The cathomycin/BGC0000834
+    owner retains its unspecified sugar stereocentre and SEEDED status. Precursor
+    and recombinant protein evidence does not resolve that stereocentre or establish
+    an exact-key merge with fully specified novobiocin. Main-paper evidence is abstract-only;
+    the official four-page supplement and native deposits were inspected directly.'
+  nodes:
+  - node_id: j_native
+    label: Native NovJ reference for database annotations
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F8
+  - node_id: k_native
+    label: Native NovK reference for database annotations
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F7
+  - node_id: complex
+    label: Database-annotated NovJ2K2 complex
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Database residue annotations without independently inspected primary panels
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: s152a
+    label: Database-described engineered NovJ S152A
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: s152a_outcome
+    label: Database-reported lower beta-ketotyrosine product formation
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: y164f
+    label: Database-described engineered NovJ Y164F
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: y164f_outcome
+    label: Database-reported lower catalytic activity
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: k168i
+    label: Database-described engineered NovJ K168I
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: k168i_outcome
+    label: Database-reported unchanged catalytic turnover
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: j_native
+    predicate: is_annotated_catalytic_subunit_of
+    object: complex
+    notes: UniProt assigns NovJ the catalytic-subunit role in the heterotetramer.
+      This edge cites the database as such; it does not claim a newly inspected isolated-subunit
+      activity assay.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F8
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 89, sequence 1; annotation 2026-01-28, sequence date 2000-10-01;
+        retrieved 2026-10-04. FUNCTION and SUBUNIT assertions.
+  - subject: k_native
+    predicate: is_annotated_noncatalytic_subunit_of
+    object: complex
+    notes: UniProt assigns NovK the non-catalytic-subunit role. That annotation does
+      not mean the protein is dispensable, or establish inactivity in every untested
+      condition.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F7
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 89, sequence 1; annotation 2025-04-09, sequence date 2000-10-01;
+        retrieved 2026-10-04. FUNCTION and SUBUNIT assertions.
+  - subject: j_native
+    predicate: is_sequence_reference_for_variant
+    object: s152a
+    notes: The Q9L9F8 mutagenesis feature specifies S152A and cites PMID 16171397.
+      The indicated original residue agrees with the 262-aa deposited sequence. Native
+      Q9L9F8 is not assigned as the engineered protein identifier; tag, partner preparation
+      and complete construct remain unresolved.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F8
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 89, sequence 1; annotation 2026-01-28, sequence date 2000-10-01;
+        retrieved 2026-10-04. Mutagenesis feature S152A.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Original-residue check against deposited native sequence.
+  - subject: s152a
+    predicate: has_database_reported_outcome
+    object: s152a_outcome
+    notes: The database describes a 2-3-fold decrease in beta-ketotyrosine product
+      formation, not a directly re-extracted kcat or binding affinity. Quantitative
+      assay conditions, loading, replicate count and uncertainty were not independently
+      obtained.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F8
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 89, sequence 1; annotation 2026-01-28, sequence date 2000-10-01;
+        retrieved 2026-10-04. Mutagenesis feature S152A; database evidence links the
+        2005 paper.
+  - subject: j_native
+    predicate: is_sequence_reference_for_variant
+    object: y164f
+    notes: The Q9L9F8 mutagenesis feature specifies Y164F and cites PMID 16171397.
+      The indicated original residue agrees with the 262-aa deposited sequence. Native
+      Q9L9F8 is not assigned as the engineered protein identifier; tag, partner preparation
+      and complete construct remain unresolved.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F8
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 89, sequence 1; annotation 2026-01-28, sequence date 2000-10-01;
+        retrieved 2026-10-04. Mutagenesis feature Y164F.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Original-residue check against deposited native sequence.
+  - subject: y164f
+    predicate: has_database_reported_outcome
+    object: y164f_outcome
+    notes: The database describes a 50-fold activity reduction. The primary abstract
+      also mentions a 50-fold effect but does not name the residue, so the Y164F identity
+      remains a database assertion, not an independently read primary panel. Quantitative
+      assay conditions, loading, replicate count and uncertainty were not independently
+      obtained.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F8
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 89, sequence 1; annotation 2026-01-28, sequence date 2000-10-01;
+        retrieved 2026-10-04. Mutagenesis feature Y164F; database evidence links the
+        2005 paper.
+  - subject: j_native
+    predicate: is_sequence_reference_for_variant
+    object: k168i
+    notes: The Q9L9F8 mutagenesis feature specifies K168I and cites PMID 16171397.
+      The indicated original residue agrees with the 262-aa deposited sequence. Native
+      Q9L9F8 is not assigned as the engineered protein identifier; tag, partner preparation
+      and complete construct remain unresolved.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F8
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 89, sequence 1; annotation 2026-01-28, sequence date 2000-10-01;
+        retrieved 2026-10-04. Mutagenesis feature K168I.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Original-residue check against deposited native sequence.
+  - subject: k168i
+    predicate: has_database_reported_outcome
+    object: k168i_outcome
+    notes: The database describes no alteration of catalytic turnover. Without the
+      full primary panel this is not a demonstrated equivalence bound, unchanged substrate
+      affinity or universal absence of a phenotype. Quantitative assay conditions,
+      loading, replicate count and uncertainty were not independently obtained.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F8
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 89, sequence 1; annotation 2026-01-28, sequence date 2000-10-01;
+        retrieved 2026-10-04. Mutagenesis feature K168I; database evidence links the
+        2005 paper.
+  - subject: j_native
+    predicate: has_annotation_evidence_limits
+    object: limits
+    notes: NovJ Tyr164 proton-acceptor and Ser152 substrate-binding annotations use
+      ECO:0000305; NADP-binding positions 23-26, 73-74 and 164-168 use ECO:0000250.
+      These are not newly observed atomic contacts. The primary mutant panel and a
+      relevant experimental structure were not inspected.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F8
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 89, sequence 1; annotation 2026-01-28, sequence date 2000-10-01;
+        retrieved 2026-10-04. Active-site and binding-site feature evidence codes.
+  - subject: k_native
+    predicate: has_annotation_evidence_limits
+    object: limits
+    notes: NovK NADP-binding positions 9-12, 59-60 and 154-158 carry ECO:0000250 similarity
+      evidence. Do not convert them into measured binding constants or structural
+      contacts.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F7
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 89, sequence 1; annotation 2025-04-09, sequence date 2000-10-01;
+        retrieved 2026-10-04. Binding-site feature evidence codes.
+curation_history:
+- timestamp: '2026-10-04T23:33:05Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cathomycin-novjk-database-mutants-and-residue-evidence-limits with
+    bounded NovJ/NovK evidence and #562 review findings.'
+  llm_assisted: true

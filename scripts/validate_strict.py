@@ -16,7 +16,8 @@ Paths may be files or directories; directories are walked for *.yaml.
 Default scope when no paths given:
     data/natural_products/
 
-NaturalProductMech has a single root class (NaturalProductRecord); no class routing required.
+Owner validation includes its referenced CausalGraphDocuments. Full default runs
+also audit component inventory, including orphaned files.
 """
 
 from __future__ import annotations
@@ -40,6 +41,13 @@ SCHEMA_PATH = _REPO_ROOT / "src" / "naturalproductmech" / "schema" / "naturalpro
 DEFAULT_ROOTS = [_REPO_ROOT / "data" / "natural_products"]
 LOCKFILE_PATH = _REPO_ROOT / "data" / "natural_products" / "PATHS.tsv"
 TARGET_CLASS = "NaturalProductRecord"
+sys.path.insert(0, str(_REPO_ROOT / "src"))
+from naturalproductmech.graph_components import (  # noqa: E402
+    audit_graph_components,
+    check_size,
+    resolve_graphs,
+    validate_component_file,
+)
 
 # Per-worker singleton — built lazily after fork so the schema parses once per
 # worker process, not once per file.
@@ -96,7 +104,7 @@ def validate_one(path: Path) -> list[dict]:
     try:
         with path.open() as f:
             instance = yaml.safe_load(f)
-    except yaml.YAMLError as e:
+    except (yaml.YAMLError, OSError) as e:
         return [{
             "file": str(path),
             "category": "yaml_parse_error",
@@ -114,7 +122,9 @@ def validate_one(path: Path) -> list[dict]:
         }]
 
     try:
-        report = validator.validate(instance, target_class=TARGET_CLASS)
+        is_component = path.parent.parent.name == "causal_graphs"
+        target_class = "CausalGraphDocument" if is_component else TARGET_CLASS
+        report = validator.validate(instance, target_class=target_class)
     except Exception as e:  # noqa: BLE001 — surface anything weird as a row
         return [{
             "file": str(path),
@@ -136,6 +146,16 @@ def validate_one(path: Path) -> list[dict]:
             "path": result.instance_index or "",
             "message": result.message[:300],
         })
+    if not rows:
+        try:
+            check_size(path.read_bytes(), path)
+            if is_component:
+                validate_component_file(path)
+            else:
+                resolve_graphs(instance, path)
+        except Exception as exc:
+            rows.append({"file": str(path), "category": "graph_integrity", "detail": "",
+                         "path": "", "message": str(exc)[:300]})
     return rows
 
 
@@ -214,6 +234,14 @@ def main() -> int:
             if not args.quiet and done % 50 == 0:
                 print(f"  {done}/{len(files)} files processed, {len(all_rows)} ERROR rows so far",
                       file=sys.stderr)
+
+    if not args.paths and not args.sample:
+        try:
+            audit_graph_components(DEFAULT_ROOTS[0])
+        except Exception as exc:
+            all_rows.append({"file": str(DEFAULT_ROOTS[0].parent / "causal_graphs"),
+                             "category": "graph_inventory", "detail": "", "path": "",
+                             "message": str(exc)[:300]})
 
     # Sort for deterministic TSV output (avoids noisy diffs from worker scheduling).
     all_rows.sort(key=lambda r: (r["file"], r["path"], r["category"], r["message"]))

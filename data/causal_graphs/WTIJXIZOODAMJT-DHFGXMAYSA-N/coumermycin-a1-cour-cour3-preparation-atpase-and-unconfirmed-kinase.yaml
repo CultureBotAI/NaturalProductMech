@@ -1,0 +1,228 @@
+record_id: CHEBI:3907
+standard_inchi_key: WTIJXIZOODAMJT-DHFGXMAYSA-N
+graph:
+  graph_id: coumermycin-a1-cour-cour3-preparation-atpase-and-unconfirmed-kinase
+  scope: BIOSYNTHESIS
+  description: 'Engineered CouR3 preparation, controls and unresolved physiological
+    substrate. Partial curation; author-agent review #571. Native sequences, engineered
+    samples, host-conditioned findings and hypotheses remain distinct; source-owned
+    fields and SEEDED status are unchanged.'
+  nodes:
+  - node_id: couR3
+    label: Native CouR3 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8T5
+  - node_id: construct
+    label: pCR2.1/His8/couR3
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: host
+    label: E. coli Rosetta2(DE3)pLysS expression host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: prep
+    label: Purified His8-CouR3 preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: purification
+    label: Expression and Ni-NTA purification
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: ADP Quest coupled-fluorescence assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: atp
+    label: ATP assay substrate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: thr
+    label: L-threonine assay reagent
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: activity
+    label: Reported ATP-dependent ADP formation
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: noatp
+    label: No-ATP control
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: noenzyme
+    label: No-CouR3 control
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: nothr
+    label: No-threonine control
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Unresolved physiological substrate and construct limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: couR3
+    predicate: is_native_reference_for
+    object: construct
+    notes: Native Q9F8T5 is302aa, not the complete codon-optimized His8 fusion. Commercial
+      synthetic DNA included promoter/linker/tag based on pHis8 in pCR2.1. Full engineered
+      DNA/protein sequence and tag junction were not obtained.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, expression methods/results. Primary indexed text
+        inspected; journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8T5
+      evidence_type: DATABASE_ASSERTION
+      notes: Native reference only.
+      retrieved_on: '2026-10-05'
+  - subject: construct
+    predicate: was_expressed_in
+    object: host
+    notes: Synthetic GeneDesigner codon optimization, Eurofins synthesis; pCR2.1 construct
+      used directly.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, expression methods. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: host
+    predicate: was_used_in
+    object: purification
+    notes: Terrific Medium, kanamycin50ug/mL/chloramphenicol25ug/mL,37C250rpm to A6000.8;
+      induce0.5mMIPTG,16C20h.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, expression methods. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: purification
+    predicate: yielded
+    object: prep
+    notes: Mostly insoluble; source reports7.6mg purified soluble protein/L culture.
+      Ni-NTA,50-300mMimidazole gradient60min; PD10 into50mMTris pH7.5,10mMNaCl,15%glycerol;
+      stored-80C. SDS-PAGE/caption report near homogeneity, calculated34.8kDa; no
+      independent densitometry or physical-complex determination.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, purification methods/results and Fig.6 caption.
+        Primary indexed text inspected; journal PDF unavailable and journal figures
+        not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: prep
+    predicate: was_tested_in
+    object: assay
+    notes: ADPQuest couples ADP/PEP through pyruvate kinase, pyruvate oxidase and
+      peroxidase to resorufin fluorescence. Coupling enzymes are assay reagents, not
+      native CouR interaction partners.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, activity methods. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: atp
+    predicate: was_supplied_to
+    object: assay
+    notes: 15mMHEPES pH7.5,20mMNaCl,10mMMgCl2,100uL black96well; TecanInfinite200
+      ex530/em590nm. ADP standard curve; triplicate measurements. ATP/Thr/enzyme concentrations
+      and reaction temperature were not supplied in the inspected text; no values
+      borrowed from PduX.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, activity methods. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: thr
+    predicate: was_tested_as_candidate_substrate_in
+    object: assay
+    notes: Testing a proposed substrate is not demonstration of its phosphorylation.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, activity results. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: assay
+    predicate: reported
+    object: activity
+    notes: Specific activity45nmol min^-1 mgprotein^-1 with ATP, measured as ADP formation.
+      No kinetic Km, product-specific phosphothreonine measurement or error estimate
+      supplied here.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, activity results. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+      snippet: ATPase activity
+  - subject: noatp
+    predicate: was_control_for
+    object: assay
+    notes: No ADP formation detected when ATP was omitted.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, activity results. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: noenzyme
+    predicate: was_control_for
+    object: assay
+    notes: Omitting CouR3 reduced ADP formation by94%; remaining6% was proposed background,
+      not independently identified as a specific chemical process.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, activity results. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: nothr
+    predicate: was_control_for
+    object: assay
+    notes: Omitting L-threonine did not reduce ADP formation.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, activity results. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+      snippet: did not reduce
+  - subject: activity
+    predicate: does_not_demonstrate_threonine_phosphorylation
+    object: limits
+    notes: ATP-dependent ADP formation supports the reported ATPase activity of this
+      preparation, not the historical threonine-kinase assignment. Alternative substrate
+      or suboptimal assay conditions remain possibilities; not proof threonine can
+      never be a substrate.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: CURATOR_INFERENCE
+      notes: Novotna et al. 2013, activity discussion. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: construct
+    predicate: has_identity_limit
+    object: limits
+    notes: No exact fusion sequence or allelic resequencing establishes that the native
+      reference is identical to the entire assayed preparation.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: CURATOR_INFERENCE
+      notes: Novotna et al. 2013, expression methods. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+curation_history:
+- timestamp: '2026-10-05T06:43:03Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add coumermycin-a1-cour-cour3-preparation-atpase-and-unconfirmed-kinase;
+    preserve sequence, host, construct, assay, inference and source-access limits
+    (#571).
+  llm_assisted: true

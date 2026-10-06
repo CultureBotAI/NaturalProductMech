@@ -1,0 +1,308 @@
+record_id: naturalproductmech:mibig-e03313fa44
+standard_inchi_key: PLEGMCYXNQPJNV-TYXWGSLYSA-N
+graph:
+  graph_id: simocyclinone-d8-simh-simy-association-and-stoichiometry-limits
+  scope: BIOSYNTHESIS
+  description: 'Association of separately prepared recombinant SimH and SimY, with
+    apparent gel-filtration masses and an activity titration supporting a proposed
+    heterotetramer (review #543). The observed co-eluting complex is not assigned
+    a subunit accession or a verified native in-vivo stoichiometry. Source-reported
+    tag removal and the different Figure S2 label remain explicit. The public primary
+    author manuscript and supplement were inspected; final journal full text was not
+    independently retrieved.'
+  nodes:
+  - node_id: simh
+    label: Native SimH tyrosine-adenylating enzyme
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F5J4
+  - node_id: simy
+    label: Native SimY MbtH-like protein
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F5J2
+  - node_id: his_simh
+    label: Purified His6-SimH used in association experiments
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: prepared_simy
+    label: Purified recombinant SimY with reported tag removal
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: complex
+    label: Observed co-eluting recombinant SimH/SimY complex
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: simh_sec
+    label: Dominant apparent 650-kDa SimH-alone aggregate peak
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: mixture_sec
+    label: Dominant apparent 208-kDa SimH/SimY mixture peak
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: ratio
+    label: Activity plateau at a 1:1 SimY:SimH molar ratio
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: gel
+    label: SimH and SimY bands in the isolated 208-kDa fraction
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: model
+    label: Source-proposed (SimH)2(SimY)2 heterotetramer
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: his_simh
+    predicate: was_prepared_from_native_sequence_named_as
+    object: simh
+    notes: The source links SimH to AAL15600, whose 997-aa native sequence matches
+      Q9F5J4 and the independent AAG34184.1 deposit. The protein used in association
+      experiments is a recombinant N-His6 preparation, not the accession-defined native
+      sequence. General methods describe pBB25 in BL21(DE3) with or without ybdZ deletion
+      and with pSU20_sfp; the analytical SEC section does not separately identify
+      which host preparation supplied that experiment. It is not silently assigned
+      the deletion-host provenance of Figure 3. Entire gene sequences were reported
+      checked by the authors, but complete experimental vector and tag junctions were
+      not independently obtained. The literal primers cannot distinguish paper-linked
+      SimH from the two-residue-different shortened product of alternate simD6/AAK06804.1.
+      The explicit paper accession supports the selected native grounding, not a claim
+      to have sequenced the complete assayed protein.
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.288092
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods and results, thesis PDF pp.91-96. Inspected in the author-reproduced
+        manuscript, marked publication ahead of print; final journal full text not
+        independently retrieved.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods and results, thesis PDF pp.91-96. Public primary thesis, Chapter
+        7; PDF page numbers are five greater than the printed page numbers.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native AAL15600.1 CDS and deposited translation.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF321122.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent AAG34184.1 deposit with identical 997-aa translation.
+    - reference: https://www.uniprot.org/uniprotkb/Q9F5J4
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed SimH Q9F5J4, taxon 1890; entry 118, sequence version 1, annotation
+        2026-09-02; inspected 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS/UniProt comparison and literal-primer amplicon model; complete
+        experimental vector and tag junctions not inspected.
+  - subject: prepared_simy
+    predicate: was_prepared_from_native_sequence_named_as
+    object: simy
+    notes: The paper names AAG34186 but reports 69 aa. AAG34186.1 at AF321122.1:6727..6939(+),
+      AAL15602.1 at AF322256.1:23515..23727(+) and AAK06806.1 at AF324838.2:68309..68521(+)
+      all have 213-nt CDSs including stop and translate exactly to the 70-aa Q9F5J2
+      sequence. The 69/70-aa discrepancy is unresolved; initiator removal or an error
+      is not assumed. pBB28 in E. coli Rosetta2(DE3) initially produced N-His6-SimY.
+      General methods and results report MbtH-tag removal with 0.4 units thrombin/mg
+      protein for 8 h at 4 C before gel filtration, yet Figure S2 labels N-His6-SimY
+      and a calculated 9.4-kDa mass. The gel may depict a different purification stage;
+      it does not identify the functional-assay tag state. No exact cleavage scar
+      or complete assay sequence is independently verified. Primers GGGAATTCCATATGGCCAACCCGTTTGACGA
+      and GCCCTCGAGTCAGCTGGGGTCCGTCG predict a 233-nt amplicon retaining the native
+      coding start and stop; this is not a sequenced plasmid. The reported yield is
+      27 mg/liter culture, not an assay concentration. The native accession is not
+      assigned to the recombinant preparation.
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.288092
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods/results, thesis PDF pp.92-96; Figure S2, PDF p.109. Inspected
+        in the author-reproduced manuscript, marked publication ahead of print; final
+        journal full text not independently retrieved.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods/results, thesis PDF pp.92-96; Figure S2, PDF p.109. Public primary
+        thesis, Chapter 7; PDF page numbers are five greater than the printed page
+        numbers.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF321122.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Paper-named AAG34186.1 native CDS.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native AAL15602.1 CDS.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Native AAK06806.1 CDS.
+    - reference: https://www.uniprot.org/uniprotkb/Q9F5J2
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q9F5J2, SimY/simX1, taxon 1890; entry 45, sequence version
+        1, annotation 2025-02-05; inspected 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF321122.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Three exact native translations and the primer-derived coding region
+        agree at 70 aa; source length remains discrepant.
+  - subject: his_simh
+    predicate: is_a_component_of_observed_fraction
+    object: complex
+    notes: Analytical gel filtration of a mixture and SDS-PAGE of the isolated approximately
+      208-kDa fraction support association of the recombinant proteins. This is not
+      a structure-based interface determination or native-cell oligomer measurement.
+      The SimH native accession is not an identifier for the whole complex.
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.288092
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 5A/B and results, thesis PDF pp.99-100. Inspected in the author-reproduced
+        manuscript, marked publication ahead of print; final journal full text not
+        independently retrieved.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 5A/B and results, thesis PDF pp.99-100. Public primary thesis,
+        Chapter 7; PDF page numbers are five greater than the printed page numbers.
+  - subject: prepared_simy
+    predicate: is_a_component_of_observed_fraction
+    object: complex
+    notes: A SimY band accompanies SimH in the isolated fraction. General methods
+      report tag cleavage; the N-His6-SimY label in Figure S2 does not independently
+      establish the exact SimY sequence used in this fraction. The protein complex
+      is left ungrounded rather than assigned a subunit accession or an unverified
+      ComplexPortal record.
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.288092
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods, Figure 5B and Figure S2; thesis PDF pp.94-95,99-100,109. Inspected
+        in the author-reproduced manuscript, marked publication ahead of print; final
+        journal full text not independently retrieved.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods, Figure 5B and Figure S2; thesis PDF pp.94-95,99-100,109. Public
+        primary thesis, Chapter 7; PDF page numbers are five greater than the printed
+        page numbers.
+  - subject: his_simh
+    predicate: has_analytical_gel_filtration_readout
+    object: simh_sec
+    notes: SimH alone eluted predominantly near an apparent mass of 650 kDa, interpreted
+      by the source as aggregation. The source gives 107.3 kDa as the calculated tagged
+      monomer mass; neither value is a measured native monomer mass or an exact number
+      of aggregate subunits. Analytical SEC used a Superdex 200 10/300 GL, 24-mL bed,
+      20 mM Tris-HCl pH 8 and 150 mM NaCl with log-mass/Kav calibration standards.
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.288092
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Analytical gel-filtration methods and Figure 5A, thesis PDF pp.95,99-100.
+        Inspected in the author-reproduced manuscript, marked publication ahead of
+        print; final journal full text not independently retrieved.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Analytical gel-filtration methods and Figure 5A, thesis PDF pp.95,99-100.
+        Public primary thesis, Chapter 7; PDF page numbers are five greater than the
+        printed page numbers.
+  - subject: complex
+    predicate: has_mixture_gel_filtration_readout
+    object: mixture_sec
+    notes: The SimH/SimY mixture has a dominant approximately 208-kDa peak by calibrated
+      SEC. Figure 5A also shows residual approximately 650-kDa and <=15-kDa signals;
+      not all material became one homogeneous complex. These are hydrodynamic apparent
+      masses. The inspected SEC method does not specify the sample loading concentration,
+      injection volume or mixture ratio; the separate 1:1.2 activity-assay ratio is
+      not substituted for a missing SEC loading ratio.
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.288092
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods and visually inspected Figure 5A, thesis PDF pp.95,99-100. Inspected
+        in the author-reproduced manuscript, marked publication ahead of print; final
+        journal full text not independently retrieved.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods and visually inspected Figure 5A, thesis PDF pp.95,99-100. Public
+        primary thesis, Chapter 7; PDF page numbers are five greater than the printed
+        page numbers.
+  - subject: complex
+    predicate: has_isolated_fraction_SDS_PAGE_readout
+    object: gel
+    notes: SDS-PAGE of the isolated 208-kDa peak shows bands assigned to SimH and
+      SimY. Band presence supports composition and co-elution, not an exact molar
+      ratio from staining intensity, a unique oligomer size or a mapped binding interface.
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.288092
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 5B and associated results, thesis PDF pp.99-100. Inspected in
+        the author-reproduced manuscript, marked publication ahead of print; final
+        journal full text not independently retrieved.
+      snippet: both SimH and SimY protein
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 5B and associated results, thesis PDF pp.99-100. Public primary
+        thesis, Chapter 7; PDF page numbers are five greater than the printed page
+        numbers.
+  - subject: his_simh
+    predicate: has_helper_titration_response
+    object: ratio
+    notes: The L-tyrosine adenylation activity increased as SimY was added and plateaued
+      at approximately equimolar SimY:SimH. Figure 4 measures activity, not directly
+      bound subunits. No dissociation constant, Hill coefficient or binding occupancy
+      is inferred from this curve.
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.288092
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 4 and results, thesis PDF p.99. Inspected in the author-reproduced
+        manuscript, marked publication ahead of print; final journal full text not
+        independently retrieved.
+      snippet: molar ratio of 1:1
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 4 and results, thesis PDF p.99. Public primary thesis, Chapter
+        7; PDF page numbers are five greater than the printed page numbers.
+  - subject: prepared_simy
+    predicate: was_varied_in_activity_titration
+    object: ratio
+    notes: Different SimY amounts were assayed with SimH. Further helper beyond the
+      approximately 1:1 ratio did not increase activity in the displayed experiment.
+      This does not prove a heterodimer, and it is not the distinct CloH/CloY pETDUET
+      coexpression experiment.
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.288092
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 4 and results, thesis PDF pp.99-100. Inspected in the author-reproduced
+        manuscript, marked publication ahead of print; final journal full text not
+        independently retrieved.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 4 and results, thesis PDF pp.99-100. Public primary thesis, Chapter
+        7; PDF page numbers are five greater than the printed page numbers.
+  - subject: mixture_sec
+    predicate: is_consistent_with_source_proposed_model
+    object: model
+    notes: The authors compare the apparent 208-kDa complex with a calculated 229-kDa
+      (SimH)2(SimY)2 assembly. The 229-kDa value is the source calculation, not independently
+      verified from complete assayed tag/cleavage sequences. SEC alone does not directly
+      count subunits or exclude alternative shapes or oligomers. This remains the
+      source-supported model, not an experimentally solved native structure.
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.288092
+      evidence_type: CURATOR_INFERENCE
+      notes: Inference from Figure 5 and discussion, thesis PDF pp.99-102.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Author manuscript with the proposed rather than directly determined heterotetramer
+        interpretation.
+  - subject: ratio
+    predicate: supports_relative_composition_in_proposed_model
+    object: model
+    notes: The activity plateau is compatible with equal relative amounts of helper
+      and adenylating enzyme. Combined with SEC it motivated the 2:2 proposal; it
+      does not uniquely determine that stoichiometry or establish which oligomer exists
+      in the native producer.
+    evidence:
+    - reference: DOI:10.1074/jbc.M111.288092
+      evidence_type: CURATOR_INFERENCE
+      notes: Bounded interpretation of Figure 4 and the discussion, thesis PDF pp.99,102.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary author manuscript; source model remains inference.
+curation_history:
+- timestamp: '2026-10-04T13:15:08Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added 10 nodes and 11 individually DOI/stable-URL-cited edges. Native sequence,
+    69/70-aa SimY discrepancy, preparation tags, experimental controls and measurement-versus-inference
+    boundaries are explicit. Four exact primary snippets across the two new graphs
+    total nineteen words. Author manuscript and supplement were inspected; final journal
+    full text and complete experimental constructs were not independently obtained.
+  llm_assisted: true

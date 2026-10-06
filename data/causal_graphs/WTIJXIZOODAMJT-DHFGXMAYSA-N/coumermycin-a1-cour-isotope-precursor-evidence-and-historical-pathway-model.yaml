@@ -1,0 +1,265 @@
+record_id: CHEBI:3907
+standard_inchi_key: WTIJXIZOODAMJT-DHFGXMAYSA-N
+graph:
+  graph_id: coumermycin-a1-cour-isotope-precursor-evidence-and-historical-pathway-model
+  scope: BIOSYNTHESIS
+  description: 'Direct precursor tracing separated from historical reaction proposals.
+    Partial curation; author-agent review #571. Native sequences, engineered samples,
+    host-conditioned findings and hypotheses remain distinct; source-owned fields
+    and SEEDED status are unchanged.'
+  nodes:
+  - node_id: strain
+    label: M1146(couSS01) delta-couM-couN7 host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: feed
+    label: '[U-13C,15N]L-threonine feed'
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: mono
+    label: Reported CPM 4-carboxyl monoamide
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: diamide
+    label: Reported CPM diamide
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: isotope
+    label: MS/MS and NMR isotope analysis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: origin
+    label: Threonine-derived CPM atoms
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: fumarate
+    label: '[U-13C]fumarate feeding'
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: model
+    label: Historical hypothetical CPM pathway
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Precursor and hypothetical-reaction limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: couR1
+    label: Native CouR1 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8T7
+  - node_id: couR2a
+    label: Native CouR2a sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:G1XVC1
+  - node_id: couR2b
+    label: Native CouR2b sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:G1XVC2
+  - node_id: couR3
+    label: Native CouR3 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8T5
+  - node_id: couR4
+    label: Native CouR4 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8T4
+  edges:
+  - subject: strain
+    predicate: accumulated_reported_product
+    object: mono
+    notes: 'CDM, seven-day HPLC-UV/MS: 12 mg/L; monoamide quantified against novobiocin,
+      not an identical-compound response calibration. Construct replaced the couM-N7
+      region with pIJ773 cassette, then XbaI-only excision left 49 bp and changed
+      the CouN7 stop region. Reported 7097-bp deletion differs from the unversioned
+      Table II.9 coordinate span 10985-19284; full allele sequence unresolved.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 40,49,54,66-68 (printed Arabic
+        page offset +18). Selected text and relevant page images inspected; not all
+        appendix spectra.
+      retrieved_on: '2026-10-05'
+  - subject: strain
+    predicate: accumulated_reported_product
+    object: diamide
+    notes: 'Same experiment: 4 mg/L using authentic coumermycin A1 calibration. Joint
+      deletion retaining these products supports no obligatory CouM/N1-N7 requirement
+      for CPM in this host/context; not universal dispensability.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 54,66-68 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: feed
+    predicate: was_supplied_to
+    object: strain
+    notes: Large-scale 360 mL in five deepwell plates; 96 mg label, final 2.15 mmol/L,
+      five equal feeds at 72/84/96/108/120 h; harvest at 144 h. Isolated monoamide
+      yield 2.1 mg. Separate preliminary small-scale experiment used 6 mL.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 51,71-72 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: mono
+    predicate: was_analyzed_by
+    object: isotope
+    notes: Preliminary unlabeled 8.3-mg material assigned by 2D NMR to the pure 4-carboxyl-amide
+      regioisomer. Small-scale feeding shifted [M-H]- from 357 to 362; MS/MS 206 represents
+      unlabeled aminocoumarin, and 232 supports the reported regioisomer. These are
+      source assignments, not independently reprocessed raw spectra or NMR of final
+      coumermycin A1.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 71-73 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: isotope
+    predicate: supports_intact_precursor_origin
+    object: origin
+    notes: NMR C2/C3/C6/C7 enrichment 20/19/19/20%, mean 19.5%; C-C and C-N couplings
+      support incorporation of threonine four-carbon skeleton and nitrogen into CPM.
+      Table III.3 also reports C11-prime enrichment 1.8%; label was not exclusively
+      in the pyrrole.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 72-74 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: fumarate
+    predicate: was_tested_in
+    object: strain
+    notes: Final [U-13C]fumarate 2.3 mmol/L under the five-feed protocol; no enrichment
+      detected in isolated monoamide. This was not a direct labeled-oxaloacetate feeding
+      experiment.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Siebenberg 2011 primary thesis, PDF pages 51,72 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: origin
+    predicate: informed_historical_model
+    object: model
+    notes: Threonine precursor identity does not establish the first enzyme reaction,
+      all remaining atoms, or the order of steps.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Siebenberg 2011 primary thesis, PDF pages 84-86 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couR3
+    predicate: was_proposed_to_phosphorylate_threonine_in
+    object: model
+    notes: Historical GHMP/PduX sequence-similarity hypothesis, not demonstrated substrate
+      chemistry; later assay did not confirm it.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Siebenberg 2011 primary thesis, PDF pages 70,84-86 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: CURATOR_INFERENCE
+      notes: Novotna et al. 2013, CouR3 activity. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: couR1
+    predicate: was_proposed_to_catalyze_beta_replacement_in
+    object: model
+    notes: PLP-enzyme fold analogy; putative phosphothreonine/oxaloacetate reaction
+      and possibly spontaneous Schiff-base formation remain proposals.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Siebenberg 2011 primary thesis, PDF pages 84-86 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couR2a
+    predicate: was_proposed_to_participate_in_decarboxylation_in
+    object: model
+    notes: TPP-decarboxylase similarity; ComDE comparison does not measure CouR2 complex
+      assembly or stoichiometry.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Siebenberg 2011 primary thesis, PDF pages 84-86 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couR2b
+    predicate: was_proposed_to_participate_in_decarboxylation_in
+    object: model
+    notes: No purified reaction or physical CouR2a/CouR2b complex is asserted from
+      this homology-based assignment.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Siebenberg 2011 primary thesis, PDF pages 84-86 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: couR4
+    predicate: was_proposed_to_oxidize_pyrroline_in
+    object: model
+    notes: FMN-dehydrogenase analogy; no experimentally identified intermediate or
+      measured catalytic sequence.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Siebenberg 2011 primary thesis, PDF pages 84-86 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+  - subject: model
+    predicate: has_unresolved_precursor_and_order
+    object: limits
+    notes: Origin of the other three CPM carbons remained unknown. Oxaloacetate is
+      hypothetical; failed fumarate feeding does not exclude it. No exact intermediate
+      identifiers or experimentally proven step order are assigned.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Siebenberg 2011 primary thesis, PDF pages 72,86 (printed Arabic page
+        offset +18). Selected text and relevant page images inspected; not all appendix
+        spectra.
+      retrieved_on: '2026-10-05'
+      snippet: Hypothetical biosynthetic pathway
+  - subject: fumarate
+    predicate: does_not_resolve_other_carbon_origin
+    object: limits
+    notes: Non-detection is not zero incorporation or proof that every possible precursor
+      route is absent.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49601/pdf/Dissertation_Siebenberg_Online.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Siebenberg 2011 primary thesis, PDF pages 72 (printed Arabic page offset
+        +18). Selected text and relevant page images inspected; not all appendix spectra.
+      retrieved_on: '2026-10-05'
+curation_history:
+- timestamp: '2026-10-05T06:43:03Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add coumermycin-a1-cour-isotope-precursor-evidence-and-historical-pathway-model;
+    preserve sequence, host, construct, assay, inference and source-access limits
+    (#571).
+  llm_assisted: true

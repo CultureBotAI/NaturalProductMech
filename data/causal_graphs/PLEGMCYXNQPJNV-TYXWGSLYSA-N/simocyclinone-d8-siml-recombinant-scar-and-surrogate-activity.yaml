@@ -1,0 +1,198 @@
+record_id: naturalproductmech:mibig-e03313fa44
+standard_inchi_key: PLEGMCYXNQPJNV-TYXWGSLYSA-N
+graph:
+  graph_id: simocyclinone-d8-siml-recombinant-scar-and-surrogate-activity
+  scope: BIOSYNTHESIS
+  description: 'Primary Metzger thesis experiments characterize a distinct pUM06-derived
+    SimL preparation. N-terminal His8-tag removal leaves a reported cloning scar;
+    neither recombinant state is exact native Q9F5J5. HPLC specific activity on prenylhydroxybenzoate
+    and a methylated aminocoumarin is a surrogate-substrate result, not native C4
+    turnover or D8 reconstitution. Literal primers, fragment sizes, purification data
+    and the SimL-specific gel were checked; review #540 limitations remain.'
+  nodes:
+  - node_id: native
+    label: Native SimL / SimD5 amide synthetase
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F5J5
+  - node_id: pum06
+    label: Reported SimL expression construct pUM06
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: tagged
+    label: pUM06-derived N-terminal His8-tagged SimL
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: cleaved
+    label: Thrombin-cleaved SimL retaining the reported N-terminal scar
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: Metzger SimL surrogate-substrate HPLC assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: acid
+    label: 3-Dimethylallyl-4-hydroxybenzoic acid assay substrate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: amino
+    label: 3-Amino-4,7-dihydroxy-8-methylcoumarin assay substrate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: atp
+    label: ATP used in the Metzger amide-synthetase assay
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: standard
+    label: Novobiocic acid HPLC standard
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: pum06
+    predicate: is_reported_to_express
+    object: tagged
+    notes: Metzger cloned simL from pSH2 by PCR into pGEM-T as pUM01, then subcloned
+      its reported 1560-bp NcoI-BglII fragment into pHis8 as pUM06. The reported PCR
+      length is 1569 bp. Construct sequencing was reported. Expression used E. coli
+      BL21(DE3)pLysS, 0.5 mM IPTG and 6 h at 20 C after growth to OD600 0.6. This
+      is a later, distinct preparation, not the full construct from either 2005 study.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Printed pp.16-19,27,31-32,73: plasmids, primers, cloning and expression;
+        PCR and restriction sizes independently reconstructed.'
+  - subject: tagged
+    predicate: has_native_sequence_core_from
+    object: native
+    notes: Native SimL has 519 residues. The literal forward primer GACCATGGAGGCAACGAGCACTACGTCCGG
+      and reverse primer GAGATCTCATTCGCCATGCGTGGCCTCCCG reconstruct a 1569-bp product
+      with NcoI and BglII top-strand cuts at 4 and 1564, a 1560-bp cut-to-cut span.
+      The reverse primer changes native CDS nt1548 C to G (ACC to ACG at Thr516),
+      without changing the amino acid. The BglII site overlaps the final base of the
+      retained native stop. The in-frame insert core preserves native residues3-519.
+      This local reconstruction is not an independent complete-plasmid sequence or
+      verification of every tag/vector junction.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Literal primers, printed p.19; source reports N-terminal His8-tag and
+        thrombin site on p.73.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator reconstruction from the literal primers against AF324838.2 and
+        its CDS, not experimental sequencing of pUM06.
+    - reference: https://www.uniprot.org/uniprotkb/Q9F5J5
+      evidence_type: DATABASE_ASSERTION
+      notes: Q9F5J5 is an unreviewed native Streptomyces antibioticus SimL entry,
+        synonym SimD5, taxon 1890, 519 aa; entry version 62, sequence version 1, annotation
+        updated 2026-09-02; inspected 2026-10-04. Sequence identity does not establish
+        the exact recombinant sample sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: CDS-aware table-11 translation, including native TTG initiation, exactly
+        matches Q9F5J5 for AAK06803.1, AF324838.2:62429..63988(+). Independent translations
+        of AAL15599.1, AF322256.1:17635..19194(+), and AAG34183.1, AF321122.1:847..2406(+),
+        give the same 519-aa sequence. All three 1560-nt coding sequences including
+        stop agree exactly.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent native simL CDS AAL15599.1; sequence deposit, not an assay.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF321122.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent native simL CDS AAG34183.1; sequence deposit, not an assay.
+  - subject: tagged
+    predicate: is_processed_to
+    object: cleaved
+    notes: His-affinity purification is followed by thrombin cleavage (0.1 U/mg, 15
+      h at 4 C), removal of thrombin and tag, and Superdex200 purification. The source
+      reports post-cleavage GSHGGN... for SimL; native protein instead begins MEGNEH....
+      Tag removal therefore does not restore exact native sequence. No complete experimental
+      protein sequence is assigned to either state.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Printed pp.32-33,73: purification and post-cleavage sequence.'
+      snippet: mit einem N-terminalen His8-tag und einer Thrombinschnittstelle
+  - subject: cleaved
+    predicate: has_measured_specific_activity_in
+    object: assay
+    notes: Table3.5 reports 1.0 nkat/mg for the purified SimL preparation with 3-dimethylallyl-4-hydroxybenzoic
+      acid and the methylated aminocoumarin. Methods specify a 100-uL reaction, 50
+      mM Tris-HCl pH8.0, 5 mM MgCl2 and 15 min at 30 C. The cited assay paragraph
+      does not specify the SimL enzyme loading, and this table supplies no replicate
+      count or uncertainty. This is a reported specific activity, not kcat/Km or an
+      independently reconstructed initial rate. The acid is a surrogate, not simocyclinone
+      C4.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Printed p.37, amide-synthetase method; pp.73-74, substrate assignment
+        and Table3.5. The cited 0.6 nkat/mg Luft value is a literature comparison,
+        not another measurement in this thesis.
+  - subject: cleaved
+    predicate: is_characterized_as_the_preparation_used_in
+    object: assay
+    notes: Table3.5 reports 20 mg protein per 1 L culture and final concentration
+      19.5 mg/mL, not assay enzyme loading. Mass-specific extinction coefficients
+      are 0.91 with tag and 0.94 without tag L/g/cm; the methods use sequence-derived
+      coefficients and A280. Figure3.23 shows the SimL final preparation, 15 ug loaded,
+      and gives an expected mass of 55.3 kDa, not a precise measured mass. Figure3.22,
+      SeMet yields/activity and the subsequently obtained crystals concern NovL, not
+      SimL. The thesis reports no SimL crystals in its own screening; no global structural-data
+      absence or equivalence with the separately reported 60-kDa preparation is claimed.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Printed p.34 protein quantification; pp.73-75, Table3.5, Figures3.22-3.24
+        and protein-specific screening results.
+  - subject: acid
+    predicate: is_acid_substrate_in
+    object: assay
+    notes: The method uses 1 mM acid; results specifically identify 3-dimethylallyl-4-hydroxybenzoic
+      acid for SimL. This experimental substrate is not relabelled as the native simocyclinone
+      acyl moiety.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Printed pp.37 and73; distinguish the different CouL acid substrate.
+  - subject: amino
+    predicate: is_amine_substrate_in
+    object: assay
+    notes: The assay uses 1 mM 3-amino-4,7-dihydroxy-8-methylcoumarin. This specified
+      surrogate is not silently equated with the aminocoumarin reagent in the abstract-only
+      Luft experiment.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Printed p.37, amide-synthetase assay composition.
+  - subject: atp
+    predicate: is_assay_reagent_in
+    object: assay
+    notes: The method uses 1 mM ATP with 5 mM MgCl2. Including ATP in this assay is
+      not itself a no-ATP control or metal-selectivity test.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Printed p.37, amide-synthetase assay; not the adjacent CloQ assay.
+  - subject: standard
+    predicate: is_quantification_standard_for
+    object: assay
+    notes: The method specifies 1 mM novobiocic acid as standard. Reactions are stopped
+      with 5 uL 1.5 M trichloroacetic acid, ethyl-acetate extracted and analyzed by
+      Eclipse XDB-C18 HPLC at 330 nm, 1 mL/min, with the Table2.7 methanol/water gradient
+      containing 1% formic acid. The use of this standard does not assign an exact
+      chemical identifier to every assay product or to native D8.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Printed p.37 and Table2.7; Novobiocinsaeure is the named standard.
+curation_history:
+- timestamp: '2026-10-04T11:17:15Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added source-checked SimL component from owner base a141fd1887d303cf9727e67ebbe5592f703cbe7b;
+    native Q9F5J5 is not an engineered assay identity. Primary 2005 sources were inspected
+    at abstract level only; relevant Metzger thesis methods/results and figures were
+    inspected in full. Every edge cites a DOI or stable URL; review #540 limitations
+    retained.'
+  llm_assisted: true

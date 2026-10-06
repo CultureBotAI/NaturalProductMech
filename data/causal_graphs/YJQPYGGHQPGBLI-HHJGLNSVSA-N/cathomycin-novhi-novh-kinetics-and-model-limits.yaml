@@ -1,0 +1,223 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novhi-novh-kinetics-and-model-limits
+  scope: BIOSYNTHESIS
+  description: 'Three preparation-conditioned NovH kinetic fits, inferred YbdZ carryover
+    and bounded homology models. Review #561. The cathomycin/BGC0000834 owner retains
+    its unspecified sugar stereocentre and SEEDED status; these precursor assays do
+    not establish an exact-structure merge with fully specified novobiocin. Boll page
+    locators are PDF pages, five above printed pages. Native references, DNA constructs
+    and engineered preparations are distinct.'
+  nodes:
+  - node_id: delta
+    label: 2011 His6-NovH from deletion host
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: intact
+    label: 2011 His6-NovH from intact-ybdZ host
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: cloy
+    label: 2011 processed CloY preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: ATP-[32P]PPi exchange assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: fit_delta
+    label: NovH-alone deletion-host kinetic fit
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: fit_intact
+    label: NovH-alone intact-host kinetic fit
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: fit_cloy
+    label: NovH plus CloY kinetic fit
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: ybdz
+    label: Endogenous E. coli YbdZ candidate copurifying partner
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: background
+    label: Inferred YbdZ explanation for host-dependent kinetics
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: model
+    label: PheA-based NovH/CloH homology models
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: conformation
+    label: Proposed Met383-linked active-site conformation
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: assembly
+    label: Unresolved NovH partner binding and complex stoichiometry
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  edges:
+  - subject: delta
+    predicate: was_assayed_by
+    object: assay
+    notes: The default 100-uL exchange assay contains 95 mM Tris-HCl pH 8, 5 mM MgCl2,
+      5 mM TCEP, 2 mM ATP, 1.5 mM L-tyrosine, 1 uM adenylating enzyme and 1 mM [32P]pyrophosphate,
+      with 1.2 uM MbtH partner when included. Incubation is 5 min at 30 C; charcoal
+      capture and scintillation measure exchanged label. This is not a direct PCP-loading
+      or mature-product flux assay.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Exchange methods, PDF pp.94-95.
+  - subject: intact
+    predicate: was_assayed_by
+    object: assay
+    notes: The intact-host preparation was compared by the same exchange method, not
+      a separate native producer experiment.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. PDF pp.94-95,98.
+  - subject: cloy
+    predicate: was_added_in
+    object: assay
+    notes: The NovH/CloY kinetic comparison used the reported 1:1.2 enzyme:partner
+      molar ratio. Addition does not itself measure binding affinity or complex stoichiometry.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Table 1 and methods, PDF pp.94,98.
+  - subject: assay
+    predicate: gave_deletion_host_fit
+    object: fit_delta
+    notes: NovH alone from the deletion host has Figure S3 Km 274.5 +/- 39.5 uM for
+      L-tyrosine, kcat 0.079 s^-1 and kcat/Km 290 s^-1 M^-1. Table 1 rounds Km to
+      275 uM. Nonlinear fits used Prism 5.0 and the method reports means of two independent
+      reactions. The displayed plus/minus statistic is not defined in the inspected
+      methods/caption; do not relabel it SD or SEM.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Methods, Table 1 and visually inspected Figure S3,
+        PDF pp.95,98,110.
+  - subject: delta
+    predicate: retains_activity_in
+    object: fit_delta
+    notes: Deletion-host NovH is active without added MbtH protein, as also shown
+      in Figure 3. This is a positive result in this preparation, not proof that every
+      NovH preparation or native-cell pathway is MbtH-independent.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Figure 3/results, PDF p.97.
+  - subject: assay
+    predicate: gave_intact_host_fit
+    object: fit_intact
+    notes: NovH alone from intact-ybdZ E. coli has Km 1278 +/- 106 uM, kcat 0.120
+      s^-1 and kcat/Km 94 s^-1 M^-1. Figure S3 prints kcat as 0.12. The same uncertainty-definition
+      limitation applies. These values are not assigned to the deletion-host protein.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Table 1 and Figure S3, PDF pp.98,110.
+  - subject: assay
+    predicate: gave_cloy_supplemented_fit
+    object: fit_cloy
+    notes: Deletion-host NovH plus CloY has Figure S3 Km 276.5 +/- 20.5 uM, kcat 0.438
+      s^-1 and kcat/Km 1580 s^-1 M^-1; Table 1 rounds Km to 277 uM. The close Km values
+      and increased turnover are source-reported assay comparisons, not a direct observation
+      of a catalytic conformational change.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Table 1 and Figure S3, PDF pp.98,110.
+  - subject: fit_intact
+    predicate: motivates_source_hypothesis
+    object: background
+    notes: The authors infer YbdZ copurification from the host-dependent NovH kinetics.
+      They compare the intact-host Km with the 1390-uM value cited from Chen 2001;
+      that historical value is not independently re-extracted from the unobtained
+      full 2001 methods. Higher kcat coincides with lower reported catalytic efficiency
+      because Km also rises.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Kinetic interpretation, PDF p.98.
+      snippet: YbdZ had been copurified
+  - subject: ybdz
+    predicate: is_proposed_copurifying_factor_in
+    object: background
+    notes: YbdZ is the named endogenous host MbtH-like protein. The NovH comparison
+      does not directly identify or quantify a copurifying YbdZ band or supply a NovH-YbdZ
+      binding constant. No convenient K-12 accession is substituted for the incompletely
+      sequenced BL21(DE3) experimental preparation.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. PDF pp.95,98.
+  - subject: fit_delta
+    predicate: motivated_computational_comparison
+    object: model
+    notes: The 2011 authors modeled NovH and CloH after the PheA adenylation domain
+      of GrsA, naming PDB 1AMU. Their statement that no experimental NovH/CloH structure
+      was available is historical, not a current exhaustive structure search.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Model construction and comparison, PDF pp.101,103.
+  - subject: model
+    predicate: supports_source_hypothesis
+    object: conformation
+    notes: The model compares NovH Met383, CloH Leu383 and PheA Lys396, proposing
+      effects on Tyr397/Glu316 positioning near the Mg site. These are modeled positions,
+      not experimentally observed NovH contacts. The reported L383M intervention was
+      in CloH, not a NovH mutant. No CloH mutant activity is reassigned to a NovH
+      sequence or to this compound owner.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. PDF pp.101-104.
+  - subject: background
+    predicate: does_not_resolve
+    object: assembly
+    notes: Activity stimulation and inferred copurification do not determine NovH
+      oligomer stoichiometry. The analytical SEC mass and proposed 2:2 complex in
+      this study concern SimH/SimY; the CloH/CloY coexpression experiments also remain
+      separate. Neither is transferred as a measured NovH assembly.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. SEC methods and complex/results discussion, PDF pp.95,99-102.
+curation_history:
+- timestamp: '2026-10-04T22:55:50Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cathomycin-novhi-novh-kinetics-and-model-limits with source-checked
+    NovH/NovI evidence and #561 boundaries.'
+  llm_assisted: true

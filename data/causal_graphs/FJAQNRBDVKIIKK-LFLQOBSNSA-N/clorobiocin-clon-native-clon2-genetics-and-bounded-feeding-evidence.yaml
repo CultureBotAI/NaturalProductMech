@@ -1,0 +1,216 @@
+record_id: naturalproductmech:mibig-619480541f
+standard_inchi_key: FJAQNRBDVKIIKK-LFLQOBSNSA-N
+graph:
+  graph_id: clorobiocin-clon-native-clon2-genetics-and-bounded-feeding-evidence
+  scope: BIOSYNTHESIS
+  description: 'Native-producer genetics and later feeding challenge a historical
+    pathway-order proposal. Review #568. Native references, constructs and source-assigned
+    products remain distinct; owner identity and SEEDED status are unchanged.'
+  nodes:
+  - node_id: cloN2
+    label: CloN2 native reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHC0
+  - node_id: cloN7
+    label: CloN7 native reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHB5
+  - node_id: mutant
+    label: Native-producer cloN2 deletion mutant
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: n104
+    label: Source-assigned novclobiocin104
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: pyrrole
+    label: Source-assigned free pyrrole-2-carboxylic acid
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: rescue
+    label: cloN2 plasmid-complemented native producer
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: cloro
+    label: Source-assigned clorobiocin
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: feed
+    label: Later pyrrolyl-SNAC feeding study
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: n1n2
+    label: Fed cloN1/cloN2 mutant observations
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: n7
+    label: Fed cloN7 mutant observation
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: n109
+    label: Source-assigned novclobiocin109
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: order
+    label: Conflicting historical methylation-order interpretations
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: model
+    label: Proposed coordinated CloN6/CloN7 process
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Abstract-access and mechanistic limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cloN2
+    predicate: is_native_reference_for_disrupted_locus_in
+    object: mutant
+    notes: DS12.976; in-frame deletion, not the M512 experiment.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHC0
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry 71, sequence 1, taxon149682; retrieved2026-10-05.
+    - reference: DOI:10.1099/mic.0.26314-0
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher primary abstract; full experimental text not obtained.
+  - subject: mutant
+    predicate: accumulated_source_assigned_product
+    object: n104
+    notes: NMR/LC-MS-supported assignment lacking the sugar acyl substituent.
+    evidence:
+    - reference: DOI:10.1099/mic.0.26314-0
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher primary abstract; full experimental text not obtained.
+  - subject: mutant
+    predicate: accumulated_source_assigned_product
+    object: pyrrole
+    notes: Free acid observed in culture extract.
+    evidence:
+    - reference: DOI:10.1099/mic.0.26314-0
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher primary abstract; full experimental text not obtained.
+  - subject: mutant
+    predicate: was_complemented_to_form
+    object: rescue
+    notes: Replicative plasmid carrying cloN2.
+    evidence:
+    - reference: DOI:10.1099/mic.0.26314-0
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher primary abstract; full experimental text not obtained.
+  - subject: rescue
+    predicate: restored_production_of
+    object: cloro
+    notes: Restoration reported; no quantitative degree invented.
+    evidence:
+    - reference: DOI:10.1099/mic.0.26314-0
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher primary abstract; full experimental text not obtained.
+      snippet: successfully restored
+  - subject: mutant
+    predicate: motivated_historical_interpretation
+    object: order
+    notes: 2003 proposed methylation after transfer; this is not established ordering.
+    evidence:
+    - reference: DOI:10.1099/mic.0.26314-0
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher primary abstract; full experimental text not obtained.
+  - subject: cloN2
+    predicate: is_native_reference_for_targeted_locus_in
+    object: feed
+    notes: Distinct later mutant-feeding study.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHC0
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry 71, sequence 1, taxon149682; retrieved2026-10-05.
+    - reference: DOI:10.1007/s00203-006-0190-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubMed-indexed primary abstract; full paper not obtained.
+  - subject: cloN7
+    predicate: is_native_reference_for_targeted_locus_in
+    object: feed
+    notes: No assumption of identical earlier constructs.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB5
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry 51, sequence 1, taxon149682; retrieved2026-10-05.
+    - reference: DOI:10.1007/s00203-006-0190-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubMed-indexed primary abstract; full paper not obtained.
+  - subject: feed
+    predicate: reported
+    object: n1n2
+    notes: HPLC/HPLC-MS after pyrrolyl-2-carboxyl-N-acetylcysteamine thioester feeding.
+    evidence:
+    - reference: DOI:10.1007/s00203-006-0190-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubMed-indexed primary abstract; full paper not obtained.
+  - subject: n1n2
+    predicate: includes_source_assigned_product
+    object: n109
+    notes: Pyrrolyl transfer observed in cloN1 and cloN2 mutants.
+    evidence:
+    - reference: DOI:10.1007/s00203-006-0190-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubMed-indexed primary abstract; full paper not obtained.
+  - subject: feed
+    predicate: reported
+    object: n7
+    notes: Transfer not observed in cloN7 mutant; no detection limit supplied.
+    evidence:
+    - reference: DOI:10.1007/s00203-006-0190-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PubMed-indexed primary abstract; full paper not obtained.
+  - subject: n109
+    predicate: challenged_historical_interpretation
+    object: order
+    notes: No further methylation to clorobiocin reported; contrasts with2003 proposal.
+    evidence:
+    - reference: DOI:10.1007/s00203-006-0190-9
+      evidence_type: CURATOR_INFERENCE
+      notes: PubMed-indexed primary abstract; full paper not obtained.
+      snippet: was not further methylated
+  - subject: feed
+    predicate: motivated
+    object: model
+    notes: Additional mutant/acid observations support a coordinated-process proposal.
+    evidence:
+    - reference: DOI:10.1007/s00203-006-0190-9
+      evidence_type: CURATOR_INFERENCE
+      notes: PubMed-indexed primary abstract; full paper not obtained.
+  - subject: model
+    predicate: has_assembly_evidence_limit
+    object: limits
+    notes: Not direct physical-complex or stoichiometry evidence.
+    evidence:
+    - reference: DOI:10.1007/s00203-006-0190-9
+      evidence_type: CURATOR_INFERENCE
+      notes: PubMed-indexed primary abstract; full paper not obtained.
+  - subject: order
+    predicate: has_access_limit
+    object: limits
+    notes: Uninspected doses, titers, construct endpoints and isolated-enzyme kinetics
+      are not supplied.
+    evidence:
+    - reference: DOI:10.1099/mic.0.26314-0
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher primary abstract; full experimental text not obtained.
+    - reference: DOI:10.1007/s00203-006-0190-9
+      evidence_type: CURATOR_INFERENCE
+      notes: PubMed-indexed primary abstract; full paper not obtained.
+curation_history:
+- timestamp: '2026-10-05T04:01:54Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add clorobiocin-clon-native-clon2-genetics-and-bounded-feeding-evidence;
+    preserve native, construct, assay and inference limits (#568).
+  llm_assisted: true
+- timestamp: '2026-10-05T04:04:08Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Clarify native-reference versus targeted locus and observation versus product-forming
+    entity predicates; preserve all claims and sources (#568).
+  llm_assisted: true

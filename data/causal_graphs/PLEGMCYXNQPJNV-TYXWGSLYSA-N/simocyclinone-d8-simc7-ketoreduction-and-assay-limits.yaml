@@ -1,0 +1,305 @@
+record_id: naturalproductmech:mibig-e03313fa44
+standard_inchi_key: PLEGMCYXNQPJNV-TYXWGSLYSA-N
+graph:
+  graph_id: simocyclinone-d8-simc7-ketoreduction-and-assay-limits
+  scope: BIOSYNTHESIS
+  description: 'Purified N-terminally His-tagged SimC7 converts source-assigned 7-oxo-SD8
+    to SD8 with NADH or NADPH and supports the slower reverse reaction with NAD+.
+    Controls, construct discrepancies and concentration conflicts remain explicit
+    (review #538). The earlier physiological substrate is a hypothesis, so no terminal
+    in-vivo pathway order or kinetic constants are invented. This graph does not duplicate
+    gyrase-target bioactivity mechanisms.'
+  nodes:
+  - node_id: native
+    label: Deposited native SimC7 ketoreductase
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:G9VYV4
+  - node_id: plasmid
+    label: Reported pET15b-NB-C7 expression construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: tagged
+    label: Assayed N-terminally His-tagged SimC7
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: reduction
+    label: Assayed C-7 ketoreduction
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: oxidation
+    label: Assayed reverse C-7 oxidation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: oxo
+    label: Source-assigned 7-oxo-simocyclinone D8
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: sd8
+    label: Source-assigned simocyclinone D8
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: nadh
+    label: NADH in the reduction assay
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: nadph
+    label: NADPH in the reduction assay
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: nadplus
+    label: NAD+ in the reverse assay
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: noenzyme
+    label: NADH/NADPH reduction controls without SimC7
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: nocofactor
+    label: SimC7 reduction control without reduced cofactor
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: reversecontrol
+    label: NAD+ oxidation control without SimC7
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: preference
+    label: Text-reported NADPH preference without kinetic constants
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: earlier
+    label: Proposed earlier 7-oxo A-group angucyclinone substrate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: plasmid
+    predicate: is_reported_to_express
+    object: tagged
+    notes: The article describes PCR from PAC-12I, pJET1.2/blunt cloning, NdeI/BamHI
+      subcloning into pET15b and sequencing for errors. Protein was expressed in E.
+      coli Rosetta (DE3)pLysS at 25 C, induced near OD600 0.4 with 0.5 mM IPTG for
+      16 h, purified on Ni-NTA and quantified by Bradford assay. The thesis also describes
+      later altered temperature/salt protocols; those are not substituted for the
+      2015 method. Table 2.4 p.53 labels the pET15b insert ptipA::simC7 despite its
+      parent-vector T7 description; retain the discrepancy.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Overexpression and purification methods, p.2202.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Tables 2.4-2.5 and protein methods pp.87-88.
+  - subject: tagged
+    predicate: has_native_parent_sequence
+    object: native
+    notes: The intended recombinant product adds MGSSHHHHHHSSGLVPRGSH at the N terminus
+      (304 aa total), without claiming tag removal. Native CDS translation agrees
+      with G9VYV4. Both printed reverse primers share the native stop-region suffix
+      and predict the full 855-nt CDS and 870-bp tailed amplicon with the NdeI forward
+      primer. However, the primer named simC7-HindIII-R contains GGATCC, while simC7-BamHI-R
+      contains AGGCTT and neither a BamHI nor HindIII site. The paper reports sequence
+      checking, but its complete plasmid sequence was not inspected here; literal
+      primer names do not prove the final junction or expressed sequence.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 2.5 p.60 and N-terminal extension p.87.
+      snippet: 20 additional amino acids
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Expression-construct sequencing statement, main methods.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AEU17892.1
+      evidence_type: DATABASE_ASSERTION
+      notes: 'Native S. antibioticus Tu6040 simC7: AEU17892.1, AF324838.2:9344..10198(+),
+        855 nt including stop, 284 aa. The historical hydroxylase/dehydratase product
+        label is an annotation, not the experimentally revised reaction.'
+    - reference: https://www.uniprot.org/uniprotkb/G9VYV4
+      evidence_type: DATABASE_ASSERTION
+      notes: Active unreviewed G9VYV4, taxon 1890, entry version 41, sequence version
+        1; inspected 2026-10-04. Native sequence grounding, not assignment of a canonical
+        accession to an engineered tagged protein.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: CDS-aware table-11 translation, GenPept, UniProt and pinned BGC0001072.5
+        agree exactly for the 284-aa native protein. This does not independently sequence
+        the experimental PAC, expression plasmid or deletion junction.
+  - subject: tagged
+    predicate: catalyzes
+    object: reduction
+    notes: Purified tagged SimC7 converts 7-oxo-SD8 to SD8 in the Figure 6b assay.
+      Main methods report 25-200 uM substrate, 0.3 mM NAD(P)H, 50 mM HEPES pH 7.2
+      and 500 nM enzyme; Figure 6 incubates for one hour at room temperature. The
+      thesis Figure 4.17 specifies 100 uM substrate and 250 uL reactions. Thesis p.99
+      also equates 500 nM with 24.18 ug/mL, inconsistent with its reported 32,235-Da
+      tagged mass (500 nM implies about 16.12 ug/mL). Neither concentration is silently
+      corrected or used to calculate catalytic efficiency. This direct enzyme experiment,
+      not the knockout alone, establishes ketoreduction.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 6b and ketoreductase assay methods.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods pp.87/99 and Figure 4.17 p.149; concentration discrepancy.
+  - subject: reduction
+    predicate: uses_substrate
+    object: oxo
+    notes: Purified, source-assigned 7-oxo-SD8 is the tested substrate. Its use does
+      not establish that complete 7-oxo-SD8 is the physiological substrate or that
+      SimC7 acts after attachment of every other SD8 moiety.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 6a-b, structural assignment and discussion.
+  - subject: reduction
+    predicate: forms_product
+    object: sd8
+    notes: Product is assigned as SD8 by HPLC against a standard, with tandem-MS confirmation
+      reported. Equal-volume methanol quenching, 100 C for ten minutes and centrifugation
+      stop the assay. Main quantification uses reversed-phase HPLC at 360 nm, 25-95%
+      methanol over 20 min then five minutes at 95%, against 0.1% formic acid in water;
+      standards span 7.5-2100 pmol. The journal supplemental standard curve was not
+      inspected. Thesis methods report duplicate sample analyses and triplicate standards,
+      not a reported number of independent biological enzyme preparations.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 6 and ketoreductase assay methods; product confirmation in results.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.8.5 p.99, Figures 2.3-2.4.
+  - subject: nadh
+    predicate: supports
+    object: reduction
+    notes: Figure 6b shows SD8 product with SimC7 and this reduced cofactor; the main
+      method reports 0.3 mM NAD(P)H. This establishes activity under the assayed conditions,
+      not an in-vivo cofactor preference or measured Km.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 6b and ketoreductase assay methods.
+  - subject: nadph
+    predicate: supports
+    object: reduction
+    notes: Figure 6b shows SD8 product with SimC7 and this reduced cofactor; the main
+      method reports 0.3 mM NAD(P)H. This establishes activity under the assayed conditions,
+      not an in-vivo cofactor preference or measured Km.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 6b and ketoreductase assay methods.
+  - subject: noenzyme
+    predicate: provides_omission_controls_for
+    object: reduction
+    notes: Separate minus-SimC7 traces containing NADH or NADPH retain the 7-oxo-SD8
+      peak instead of the SD8 product peak. These are assay controls for the displayed
+      conditions, not numerical upper bounds on spontaneous conversion.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 6b, two no-enzyme control traces.
+  - subject: nocofactor
+    predicate: provides_omission_control_for
+    object: reduction
+    notes: The plus-SimC7/minus-NAD(P)H trace retains 7-oxo-SD8. It constrains the
+      cofactor requirement in this assay without establishing all possible electron
+      donors or excluding every trace side reaction.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 6b, no-reduced-cofactor control.
+  - subject: tagged
+    predicate: catalyzes
+    object: oxidation
+    notes: The reverse experiment converts some SD8 to 7-oxo-SD8 and is reported as
+      much slower. Residual SD8 is visible in Figure 6c. This is not an equilibrium
+      constant, a quantitative rate comparison or evidence that reverse oxidation
+      is the physiological direction.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 6c and associated results.
+  - subject: oxidation
+    predicate: uses_substrate
+    object: sd8
+    notes: In the reverse experiment the input is SD8, despite the general method
+      and thesis Figure 4.17 caption describing 7-oxo-SD8 as substrate. The panel
+      and results define the reversed substrate/product direction.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 6c and reverse-reaction results.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 4.17c and associated caption.
+  - subject: oxidation
+    predicate: forms_product
+    object: oxo
+    notes: The new reverse-reaction peak is assigned as 7-oxo-SD8; tandem-MS confirmation
+      is reported. This does not revise the owner structure or merge 7-oxo-SD8 into
+      the SD8 record as an equivalent compound.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 6c and product-identification results.
+  - subject: nadplus
+    predicate: supports
+    object: oxidation
+    notes: The displayed and described reverse assay uses 300 mM NAD+. The scheme
+      and caption say NAD(P)+, but direct reverse activity with NADP+ is not demonstrated
+      in the inspected panel. The very high oxidized-cofactor concentration must not
+      be relabelled 0.3 mM or physiological.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 6a/c, reverse-reaction results and assay methods.
+  - subject: reversecontrol
+    predicate: provides_omission_control_for
+    object: oxidation
+    notes: The minus-SimC7/plus-NAD+ trace retains the SD8 peak without the displayed
+      7-oxo-SD8 product peak. This is the relevant reverse-assay control, distinct
+      from the NADH/NADPH reduction controls.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 6c, no-enzyme trace.
+  - subject: tagged
+    predicate: has_text_reported_assay_phenotype
+    object: preference
+    notes: Both sources report NADPH preference but mark the comparison data not shown.
+      The thesis says conversion was nearly complete by 30 seconds and attempts at
+      lower enzyme concentration did not yield sufficient kinetic data; below 10 nM
+      the reaction was too slow. Do not derive kcat, Km, cofactor specificity ratios
+      or a quantitative initial rate from endpoint chromatograms or the unshown comparison.
+      Absorbance overlap prevented a simple NAD(P)H spectrophotometric assay.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Ketoreductase results, cofactor preference reported without displayed
+        data.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 4.4 p.148.
+      snippet: showed a preference for NADPH
+  - subject: native
+    predicate: has_proposed_physiological_substrate
+    object: earlier
+    notes: The authors infer that SimC7 normally reduces an earlier angucyclinone
+      intermediate, before glycosylation and attachment of the tetraene and aminocoumarin.
+      Appropriate-mass A-group species in the mutant are supporting observations,
+      not a purified assay of a fully resolved earlier substrate. The exact physiological
+      substrate and pathway position are therefore not encoded as a demonstrated ordered
+      step.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: CURATOR_INFERENCE
+      notes: Discussion, proposed A-group physiological substrate.
+curation_history:
+- timestamp: '2026-10-04T10:00:59Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added source-checked SimC7 component from owner base 18a4bf228d83b0404cc77b4301067ad6039e588e;
+    DOI:10.1016/j.jmb.2015.03.019 and author thesis https://ueaeprints.uea.ac.uk/id/eprint/61276/.
+    Exact native sequence and literal primer audit; review #538 limitations retained.
+    Main article and relevant thesis sections inspected, journal supplement not obtained.'
+  llm_assisted: true

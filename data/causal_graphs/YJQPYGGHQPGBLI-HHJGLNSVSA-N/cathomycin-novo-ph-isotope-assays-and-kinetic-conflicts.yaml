@@ -1,0 +1,224 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novo-ph-isotope-assays-and-kinetic-conflicts
+  scope: BIOSYNTHESIS
+  description: 'Two additional NovO lysine variants, the WT comparator and auxiliary
+    SalL in Sadler 2017 pH, substrate-analogue and coupled isotope experiments. Reported
+    measurements remain separate from uncertain scale, substrate-axis identity and
+    mechanistic inference. Review #555. PDF locators refer to the 60-page accepted
+    manuscript/SI, not final journal pagination; SI printed pages are seven lower.
+    The cathomycin owner retains its unspecified sugar stereocentre.'
+  nodes:
+  - node_id: wt
+    label: Sadler NovO-His6 WT kinetic comparator
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: h120k
+    label: Sadler NovO-H120K assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: r121k
+    label: Sadler NovO-R121K assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: ph
+    label: NovO WT and lysine-variant pH comparison
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: analogs
+    label: Four 7-position substrate-analogue comparisons
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: coupled
+    label: SalL-assisted isotope donor-supply assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: sall
+    label: SalL preparation used for coupled donor supply
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: donors
+    label: Me-SAM, carbon-13 SAM and deuterated SAM assay conditions
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: fits
+    label: Reported apparent kinetic fits with unresolved scale conflict
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: primary_kie
+    label: Reported primary carbon-13 kinetic isotope effect
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: secondary_kie
+    label: Reported nonsignificant secondary isotope effect
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: model
+    label: Proposed substrate activation and methyl-transfer limitation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: wt
+    predicate: was_comparator_in
+    object: ph
+    notes: Figure 3b compares WT, H120K and R121K over pH 5-8 using benzamide substrate
+      6. The y-axis is percent conversion, not initial turnover or binding affinity.
+      No per-point numerical table, uncertainty or replicate count is supplied; exact
+      points are not digitized.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; Main Figure 3b and
+        text, PDF p.3.
+  - subject: h120k
+    predicate: has_displayed_pH_response_in
+    object: ph
+    notes: H120K is a separately named lysine mutant, not H120A or H120N. The source
+      text reports inactivity over pH 5-7; the displayed curve remains near baseline
+      through pH 8. This is an assay-bound result, not a proven functional-null enzyme.
+      The inspected SDM list does not provide H120K primers or an individual preparation
+      gel.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; Main Figure 3b, PDF
+        p.3; SI primer list, PDF pp.33-34.
+  - subject: r121k
+    predicate: has_displayed_pH_response_in
+    object: ph
+    notes: The source describes R121K as retaining approximately 20% of WT activity
+      above pH 6.5. This approximation is not a precise kinetic constant or a fitted
+      catalytic pKa. The inspected SDM list does not provide R121K primers or an individual
+      preparation gel.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; Main Figure 3b/text,
+        PDF p.3; SI primer list, PDF pp.33-34.
+  - subject: wt
+    predicate: was_tested_against
+    object: analogs
+    notes: Replacing the 7-OH of substrate 6 with Cl, NO2, NH2 or OMe (S1-S4) yielded
+      0% reported conversion in SI Scheme S1 under the 24-h endpoint conditions, versus
+      98% for substrate 6. These are condition-specific HPLC negatives with no stated
+      detection limit, not universal exclusion of all related substrates.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; Main p.3; SI section
+        7/Scheme S1, PDF p.17.
+  - subject: wt
+    predicate: was_used_in
+    object: coupled
+    notes: 'KIE reactions were run in triplicate at 200 uL: the general recipe lists
+      0.5 mM substrate 6, 2 mM ClDA, 2.5 mM methionine or isotopic methionine and
+      0.1 mg/mL SalL in 50 mM phosphate pH 6.5, incubated 2 h at 37 C and 750 rpm.
+      Addition of NovO to 0.5 mg/mL began the methylation phase; aliquots were quenched
+      after 3 min at 97 C for 10 min, then analyzed by HPLC at 320 nm.'
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI section 11, PDF
+        p.30.
+  - subject: sall
+    predicate: was_used_for_donor_supply_in
+    object: coupled
+    notes: SalL is the named enzyme in the ClDA/methionine preincubation. It is an
+      auxiliary assay protein, not assigned as a native novobiocin BGC component.
+      This source does not supply a full SalL construct sequence; no convenient native
+      accession is substituted for it.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI section 11 and references
+        13-14, PDF pp.30,59.
+  - subject: donors
+    predicate: define_isotopic_conditions_for
+    object: coupled
+    notes: Methionine, methionine-13C and methionine-d3 supply the three conditions
+      labelled Me-SAM, 13CH3-SAM and CD3-SAM. The supplied precursor concentration
+      is not a direct measurement of generated SAM concentration, purity or stereoisomer
+      composition.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI Figure S10/section
+        11, PDF pp.18,30.
+  - subject: coupled
+    predicate: yielded_reported_kinetic_fits
+    object: fits
+    notes: Table 1 gives Km values 43.7 +/- 2.8, 41.6 +/- 5.1 and 52.8 +/- 5.3 uM
+      for Me-SAM/13CH3-SAM/CD3-SAM-labelled conditions, with kcat 2.1e-3 +/- 0.0004,
+      1.7e-3 +/- 0.0008 and 2.0e-3 +/- 0.0009 s^-1. Nearby prose instead states 20.1e-3,
+      17.0e-3 and 20.1e-3 s^-1, approximately tenfold higher. Both are preserved as
+      an accepted-manuscript conflict. SI Figure S10 plots initial velocity in nmol/min
+      versus generic substrate concentration in mM; the fixed general recipe does
+      not explain which species was varied. No unique acceptor/donor Km, binding affinity,
+      corrected turnover or uncertainty type is inferred.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; Main Table 1/text,
+        PDF p.3; SI Figure S10/section 11, PDF pp.18,30.
+  - subject: fits
+    predicate: has_reported_primary_isotope_comparison
+    object: primary_kie
+    notes: The source reports a primary KIE of 1.22 +/- 0.04. It is retained as reported,
+      not recomputed from rounded and inconsistent turnover entries or promoted to
+      a directly observed transition-state structure.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; Main Table 1/text,
+        PDF p.3.
+  - subject: fits
+    predicate: has_reported_secondary_isotope_comparison
+    object: secondary_kie
+    notes: The reported secondary KIE is 1.03 +/- 0.03 and is explicitly described
+      as not statistically significant. No significance or new confidence interval
+      is manufactured from the rounded table.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; Main Table 1/text,
+        PDF p.3.
+      snippet: not statistically significant
+  - subject: primary_kie
+    predicate: supports_proposed_rate_limitation
+    object: model
+    notes: The authors interpret the primary effect as consistent with rate-limiting
+      methyl transfer and an SN2-like transition state. This is a mechanistic inference
+      from a coupled assay, not direct observation or a uniquely proven microscopic
+      rate-limiting step.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Sadler 2017 accepted manuscript with appended SI; Main pp.3-4.
+  - subject: ph
+    predicate: supports_proposed_substrate_activation
+    object: model
+    notes: The pH and lysine-substitution patterns are used to propose an H120 base
+      and R121 stabilization role. They do not independently measure residue-specific
+      protonation or eliminate local folding and binding effects.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Sadler 2017 accepted manuscript with appended SI; Main pp.3-4.
+  - subject: analogs
+    predicate: supports_proposed_substrate_activation
+    object: model
+    notes: The four negative 7-position analogues support the source 7-OH-dependent
+      activation model under these conditions; they do not establish the same chemistry
+      for mature antibiotic or every NovO substrate.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Sadler 2017 accepted manuscript with appended SI; Main pp.3-4; SI p.17.
+curation_history:
+- timestamp: '2026-10-04T19:05:52Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add cathomycin-novo-ph-isotope-assays-and-kinetic-conflicts with bounded
+    primary protein evidence and source conflicts (#555).
+  llm_assisted: true

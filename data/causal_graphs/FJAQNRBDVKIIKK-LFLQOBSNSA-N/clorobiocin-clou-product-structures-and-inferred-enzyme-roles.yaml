@@ -1,0 +1,321 @@
+record_id: naturalproductmech:mibig-619480541f
+standard_inchi_key: FJAQNRBDVKIIKK-LFLQOBSNSA-N
+graph:
+  graph_id: clorobiocin-clou-product-structures-and-inferred-enzyme-roles
+  scope: BIOSYNTHESIS
+  description: 'Primary product structures, nominal ions, solvent conflicts and explicitly
+    inferred CloU/CloW roles; no transfer of congener antibacterial assays. Review
+    #565. Host-conditioned genetic and source-assigned product evidence does not change
+    the owner identity, source fields, previous graphs or SEEDED status.'
+  nodes:
+  - node_id: u
+    label: Native CloU sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHA8
+  - node_id: w
+    label: Native CloW reference for the proposed epimerase
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHA6
+  - node_id: mutant
+    label: S. coelicolor M512 clo-AF2 deletion host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: isolation
+    label: Preparative isolation and structure assignment
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: assignments
+    label: Study product-assignment evidence
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: acid
+    label: Source-assigned clorobiocic acid
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: '106'
+    label: Source-assigned novclobiocic acid106
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: '122'
+    label: Source-assigned novclobiocin122
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: '123'
+    label: Source-assigned novclobiocin123
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: nmr122
+    label: Novclobiocin122 sugar NMR assignment
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: nmr123
+    label: Novclobiocin123 acyl-position NMR assignment
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: mass
+    label: Negative FAB-MS product readouts
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: solvent
+    label: Acid NMR solvent-label discrepancy
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: methylation
+    label: Genetically supported axial5-C-methylation role
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: epimerization
+    label: Source-inferred sugar3,5-epimerization
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Genetic inference versus purified catalysis boundary
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: mutant
+    predicate: supplied_culture_for
+    object: isolation
+    notes: A deletion host was grown in5L for preparative ethyl-acetate extraction
+      and HPLC isolation. The general methods describe pH4 extraction, petroleum-ether
+      pretreatment, Sephadex LH20 and preparative RP18 purification. Spectra concern
+      isolated products, not direct purified CloU catalysis.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.81-83,96; PDF pages are ten above
+        printed pages.
+  - subject: isolation
+    predicate: provided_congener_data_for
+    object: assignments
+    notes: The stated 5-L preparation targets novclobiocin 122 and 123. Aglycone assignments
+      are also discussed and appendix spectra are supplied, but their exact aliquots
+      are not identified as this same 5-L culture.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.96,99-101,152-155; PDF pages are
+        ten above printed pages.
+  - subject: assignments
+    predicate: documents_source_assigned_product
+    object: acid
+    notes: Product assignment follows the thesis MS/NMR results and depicted structures.
+      No new exact-structure record or parent-identity equivalence is inferred.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.99-101,152-155; PDF pages are ten
+        above printed pages.
+  - subject: assignments
+    predicate: documents_source_assigned_product
+    object: '106'
+    notes: Product assignment follows the thesis MS/NMR results and depicted structures.
+      No new exact-structure record or parent-identity equivalence is inferred.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.99-101,152-155; PDF pages are ten
+        above printed pages.
+  - subject: assignments
+    predicate: documents_source_assigned_product
+    object: '122'
+    notes: Product assignment follows the thesis MS/NMR results and depicted structures.
+      No new exact-structure record or parent-identity equivalence is inferred.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.99-101,152-155; PDF pages are ten
+        above printed pages.
+  - subject: assignments
+    predicate: documents_source_assigned_product
+    object: '123'
+    notes: Product assignment follows the thesis MS/NMR results and depicted structures.
+      No new exact-structure record or parent-identity equivalence is inferred.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.99-101,152-155; PDF pages are ten
+        above printed pages.
+  - subject: '122'
+    predicate: has_reported_nmr_assignment
+    object: nmr122
+    notes: In DMSO, TableIII.2 reports 4''-H3.44ppm triplet(J9.6Hz),5''-H3.71ppm dq(J6.4,9.2Hz),
+      and a single 5-position methyl signal7''-H3 at1.18ppm doublet(J6.4Hz). The6''
+      methyl signal is absent. The source assigns an L-rhamnose-derived sugar with
+      the axial5-methyl group replaced by H; this is the source structural interpretation,
+      not an independently solved absolute structure.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.99,101,154; PDF pages are ten above
+        printed pages.
+      snippet: nur eine Methylgruppe
+  - subject: '123'
+    predicate: has_reported_nmr_assignment
+    object: nmr123
+    notes: TableIII.2 gives2''-H5.36ppm triplet(overlap,Jundetermined),3''-H4.29ppm
+      dd(J2.8,9.0Hz),4''-H3.38ppm triplet(J9.0Hz), and7''-H3 at1.19ppm doublet(J6.4Hz).
+      The source places the5-methylpyrrole-2-carbonyl substituent at2''-O rather than3''-O.
+      The two desmethyl products are positional congeners, not interchangeable parent
+      identities.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.100-101,155; PDF pages are ten above
+        printed pages.
+  - subject: '122'
+    predicate: has_reported_ion_in
+    object: mass
+    notes: Results text assigns nominal m/z681 [M-H]- and a14-mass-unit decrease relative
+      to clorobiocin. The negative FAB appendix labels681.0; this is not a high-resolution
+      neutral exact mass.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.82,99,154; PDF pages are ten above
+        printed pages.
+  - subject: '123'
+    predicate: has_reported_ion_in
+    object: mass
+    notes: Results describe the same nominal negative ion as122; the appendix labels681.3.
+      Preserve the displayed value without calling the two decimal values identical
+      exact-mass measurements.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.82,100,155; PDF pages are ten above
+        printed pages.
+  - subject: acid
+    predicate: has_reported_ion_in
+    object: mass
+    notes: Prose p.99 calls415 a molecular weight, whereas the negative FAB appendix
+      labels414.1. Retain this distinction; do not silently turn either into a neutral
+      monoisotopic mass.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.82,99,153; PDF pages are ten above
+        printed pages.
+  - subject: '106'
+    predicate: has_reported_ion_in
+    object: mass
+    notes: Prose reports380 and the negative FAB appendix labels379.9. The nonchlorinated
+      aglycone assignment also uses an8'-H signal at6.66ppm; the source's stated35-Da
+      comparison is not an independently reconciled exact-mass difference.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.99,101,152; PDF pages are ten above
+        printed pages.
+  - subject: acid
+    predicate: has_nmr_source_discrepancy
+    object: solvent
+    notes: TableIII.2 and the appendix heading specify methanol/CD3OD for the acids,
+      but the acquisition text on the appendix acid spectra reads DMSO. Methods also
+      use the unusual word Dimethylsulfonamid, while TableIII.2 names Dimethylsulfoxid
+      for122/123. No harmonized acid solvent is asserted.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.82,101,152-153; PDF pages are ten
+        above printed pages.
+  - subject: nmr122
+    predicate: supports_genetic_role_assignment
+    object: methylation
+    notes: The source combines loss of the axial5-methyl group in the cloU mutant
+      with complementation to assign a5-C-methylation role. It does not supply a purified
+      CloU substrate panel, SAM stoichiometry or a kinetic constant.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006 primary thesis, PDF pp.99-101,125; PDF pages are ten above
+        printed pages.
+    - reference: DOI:10.1099/mic.0.28931-0
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Inspected primary abstract only; full publisher endpoint returned403.
+  - subject: u
+    predicate: has_genetically_supported_role
+    object: methylation
+    notes: This assignment concerns CloU in clorobiocin biosynthesis. Homology to
+      NovU/CouU is not a substitute for experiments on those proteins.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006 primary thesis, PDF p.125; PDF pages are ten above printed
+        pages.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHA8
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHA8, entry 49, sequence 1, taxon149682; retrieved 2026-10-04.
+        Exact native reference, not an experimentally verified construct.
+  - subject: nmr122
+    predicate: motivates_pathway_inference
+    object: epimerization
+    notes: Source-assigned L-rhamnose-derived stereochemistry supports3,5-epimerization
+      somewhere in the sugar pathway. End-product genetics is not direct observation
+      of each nucleotide-sugar intermediate or a uniquely assigned epimerase reaction.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006 primary thesis, PDF pp.125,127-128; PDF pages are ten above
+        printed pages.
+    - reference: DOI:10.1099/mic.0.28931-0
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract gives the authors' pathway interpretation; not a purified
+        CloW assay.
+  - subject: w
+    predicate: is_proposed_to_mediate
+    object: epimerization
+    notes: The thesis proposes CloW as the3,5-epimerase, informed by sequence similarity
+      and the CloU-mutant products. No CloW deletion, purified CloW turnover or exclusion
+      of heterologous host-enzyme contributions is shown in this experiment.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006 primary thesis, PDF pp.127-128; PDF pages are ten above
+        printed pages.
+      snippet: sehr wahrscheinlich
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHA6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHA6, entry 69, sequence 1, taxon149682; retrieved 2026-10-05.
+        Exact native reference, not an experimentally verified construct.
+  - subject: epimerization
+    predicate: has_attribution_limit
+    object: limits
+    notes: Do not transfer this CloU-deletion interpretation into direct in-vivo NovW
+      or CouW evidence. The separately curated NovW in-vitro isotope/kinetic study
+      and this heterologous clorobiocin genetic experiment answer different questions.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006 primary thesis, PDF pp.127-128; PDF pages are ten above
+        printed pages.
+  - subject: methylation
+    predicate: has_assay_limit
+    object: limits
+    notes: These data support a genetic biosynthetic role, not observed physical assembly,
+      purified catalysis or proof of a unique native intermediate order.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006 primary thesis, PDF pp.95-100,125; PDF pages are ten above
+        printed pages.
+  - subject: solvent
+    predicate: limits_comparison
+    object: limits
+    notes: Clorobiocin and the acids are listed in methanol whereas122/123 are listed
+      in DMSO. Cross-solvent chemical shifts cannot be treated as isolated effects
+      of methyl removal; the conflicting acid acquisition labels remain unresolved.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006 primary thesis, PDF pp.101,152-155; PDF pages are ten above
+        printed pages.
+curation_history:
+- timestamp: '2026-10-05T01:31:29Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add clorobiocin-clou-product-structures-and-inferred-enzyme-roles with
+    native identity, source-bounded genetics and #565 findings.'
+  llm_assisted: true

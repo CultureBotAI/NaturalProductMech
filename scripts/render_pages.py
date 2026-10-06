@@ -74,6 +74,7 @@ COVERAGE_FIELDS = [
 
 sys.path.insert(0, str(REPO_ROOT / "src"))
 from naturalproductmech.grading import CAUSAL_BASES  # noqa: E402
+from naturalproductmech.graph_components import read_natural_product  # noqa: E402
 
 
 def corpus_commit() -> str:
@@ -93,7 +94,7 @@ def corpus_commit() -> str:
 def load_records() -> list[tuple[Path, dict[str, Any]]]:
     out = []
     for path in sorted(CORPUS_DIR.rglob("*.yaml")):
-        doc = yaml.safe_load(path.read_text(encoding="utf-8"))
+        doc = read_natural_product(path)
         if isinstance(doc, dict) and doc.get("identifier"):
             out.append((path, doc))
     return out

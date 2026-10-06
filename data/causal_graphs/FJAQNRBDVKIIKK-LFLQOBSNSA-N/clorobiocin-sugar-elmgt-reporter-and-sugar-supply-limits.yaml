@@ -1,0 +1,196 @@
+record_id: naturalproductmech:mibig-619480541f
+standard_inchi_key: FJAQNRBDVKIIKK-LFLQOBSNSA-N
+graph:
+  graph_id: clorobiocin-sugar-elmgt-reporter-and-sugar-supply-limits
+  scope: BIOSYNTHESIS
+  description: 'Elloramycin serves as a heterologous pathway reporter, not as the
+    clorobiocin owner identity. Review #566. Constructs, source-assigned congeners
+    and inferred roles do not change the exact owner identity or SEEDED status.'
+  nodes:
+  - node_id: cosmid
+    label: cos16F4 reporter construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: control
+    label: M512 plus cos16F4 reporter control
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: mutant
+    label: M512 clo-AF2 plus cos16F4 reporter host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: Reporter HPLC and LC-MS workflow
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: control_profile
+    label: FigureIII.9A reporter profile
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: mutant_profile
+    label: FigureIII.9B reporter profile
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: dmtc
+    label: Source-assigned 8-demethyltetracenomycin C
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: elloramycin
+    label: Source-assigned elloramycin
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: supply
+    label: Inferred limited dTDP-L-rhamnose supply
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Reporter interpretation limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: elmGT
+    label: ElmGT native reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F2F9
+  edges:
+  - subject: elmGT
+    predicate: is_deposited_reference_for
+    object: cosmid
+    notes: Native cos16F4 reference, not an experimentally sequenced protein preparation.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AM900040.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited sequence and feature table.
+    - reference: https://www.uniprot.org/uniprotkb/Q9F2F9
+      evidence_type: DATABASE_ASSERTION
+      notes: UniProtKB reviewed (Swiss-Prot); entry 79, sequence 2; taxon 47716; retrieved
+        2026-10-05. Native reference only.
+  - subject: cosmid
+    predicate: was_introduced_into
+    object: control
+    notes: Source reports no sugar-biosynthesis genes on cos16F4.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.104-105 (printed pagination is ten lower).
+  - subject: control
+    predicate: was_analysed_in
+    object: assay
+    notes: TSB preculture; R5A,5days,30C,240rpm.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.58-59 (printed pagination is ten lower).
+  - subject: assay
+    predicate: yielded_profile
+    object: control_profile
+    notes: Supernatant pH3 extraction; HPLC386nm and authentic-reference LC-MS.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.80,104-105 (printed pagination is ten lower).
+  - subject: control_profile
+    predicate: contained_assigned_product
+    object: dmtc
+    notes: Conditional product assignment.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.104-105 (printed pagination is ten lower).
+  - subject: cosmid
+    predicate: was_introduced_into
+    object: mutant
+    notes: Separate reporter host.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.104-105 (printed pagination is ten lower).
+  - subject: mutant
+    predicate: was_analysed_in
+    object: assay
+    notes: TSB preculture; R5A,5days,30C,240rpm.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.58-59 (printed pagination is ten lower).
+  - subject: assay
+    predicate: yielded_profile
+    object: mutant_profile
+    notes: Supernatant pH3 extraction; HPLC386nm and authentic-reference LC-MS.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.80,104-105 (printed pagination is ten lower).
+  - subject: mutant_profile
+    predicate: contained_assigned_product
+    object: dmtc
+    notes: Conditional product assignment.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.104-105 (printed pagination is ten lower).
+  - subject: mutant_profile
+    predicate: contained_assigned_product
+    object: elloramycin
+    notes: 19.7-min shoulder beside20.1-min peak; glycosylation plus cosmid-encoded
+      methylation, not a quantified sugar pool.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.104-105 (printed pagination is ten lower).
+      snippet: nur eine kleine Menge
+  - subject: mutant_profile
+    predicate: motivates
+    object: supply
+    notes: Pathway-level inference.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF p.104 (printed pagination is ten lower).
+  - subject: control_profile
+    predicate: has_interpretation_limit
+    object: limits
+    notes: No glycosides reported; differing plot scales preclude direct height comparisons.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF pp.104-105 (printed pagination is ten lower).
+  - subject: supply
+    predicate: has_attribution_limit
+    object: limits
+    notes: No intracellular concentration or unique enzyme attribution established.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF p.104 (printed pagination is ten lower).
+  - subject: control
+    predicate: has_own_control_profile
+    object: control_profile
+    notes: FigureIII.9A is the M512 plus cos16F4 control.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.104-105, FigureIII.9A (printed pagination is ten
+        lower).
+  - subject: mutant
+    predicate: has_own_product_profile
+    object: mutant_profile
+    notes: FigureIII.9B is the M512 clo-AF2 plus cos16F4 reporter host.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.104-105, FigureIII.9B (printed pagination is ten
+        lower).
+curation_history:
+- timestamp: '2026-10-05T02:17:56Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add clorobiocin-sugar-elmgt-reporter-and-sugar-supply-limits; native references
+    and source-bounded sugar-engineering evidence (#566).
+  llm_assisted: true
+- timestamp: '2026-10-05T02:24:08Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Make FigureIII.9A control and FigureIII.9B reporter host-to-profile mappings
+    explicit; preserve all previous evidence and values (#566).
+  llm_assisted: true

@@ -1,0 +1,327 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novwus-novw-preparation-support-proteins-and-functional-revision
+  scope: BIOSYNTHESIS
+  nodes:
+  - node_id: native
+    label: Native NovW sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9E5
+  - node_id: prep
+    label: Tello N-terminal His-tagged NovW preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: host
+    label: E. coli BL21(DE3) expression host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: groes
+    label: Reported GroES coexpression partner
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: groel
+    label: Reported GroEL coexpression partner
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: rmlb
+    label: Substrate-preparation RmlB reagent
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: substrate_prep
+    label: Enzymatic assay-substrate preparation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: substrate
+    label: dTDP-6-deoxy-D-xylo-4-hexulose assay substrate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: rmld
+    label: Coupling-assay RmlD reagent
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: coupled
+    label: NADPH-coupled double-epimerase assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: kinetics
+    label: NovW coupled-assay kinetic estimates
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: rmlc
+    label: Tello isotope-assay RmlC comparator preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: literature_rmlc
+    label: Literature RmlC kinetic comparator
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: evad
+    label: Literature EvaD kinetic comparator
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: comparison
+    label: Cross-study kinetic comparator values
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: isotope
+    label: Solvent-deuterium incorporation assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: readout
+    label: Workup-dependent GC-MS isotope readout
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: revision
+    label: Bounded NovW 3-epimerase functional revision
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: conflict
+    label: In-vitro experiment versus in-vivo database wording
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: limits
+    label: Assay/support-protein and uncertainty limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: native
+    predicate: is_native_reference_for
+    object: prep
+    notes: The preparation is N-His NovW from pET-15b, not native Q9L9E5 itself. No
+      full experimental fusion sequence or identity with the scar-bearing 2C0Z entity
+      is established.
+    evidence:
+    - reference: DOI:10.1039/B515763C
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Author-uploaded primary PDF text, p.1081, note 15; all three pages read,
+        figures/table images not visually verified.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9E5
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed Q9L9E5, entry 81, sequence 1, taxon 193462; retrieved 2026-10-04.
+        Native reference only.
+  - subject: host
+    predicate: expressed
+    object: prep
+    notes: Ni-NTA then SEC purification; reported yield about 13 mg/L, not assay loading.
+    evidence:
+    - reference: DOI:10.1039/B515763C
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Author-uploaded primary PDF text, p.1081, note 15; all three pages read,
+        figures/table images not visually verified.
+  - subject: groes
+    predicate: was_coexpressed_with
+    object: prep
+    notes: Reported production partner; sequence-specific grounding is unavailable.
+    evidence:
+    - reference: DOI:10.1039/B515763C
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Author-uploaded primary PDF text, p.1081, note 15; all three pages read,
+        figures/table images not visually verified.
+      snippet: coexpressed with GroES/GroEL
+  - subject: groel
+    predicate: was_coexpressed_with
+    object: prep
+    notes: No omission-tested necessity or native biosynthetic subunit is asserted.
+    evidence:
+    - reference: DOI:10.1039/B515763C
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Author-uploaded primary PDF text, p.1081, note 15; all three pages read,
+        figures/table images not visually verified.
+  - subject: rmlb
+    predicate: was_used_in
+    object: substrate_prep
+    notes: RmlB 1.5 mg; dTDP-glucose 10 mg; NAD(+) 1 mM; overnight at 37 C.
+    evidence:
+    - reference: DOI:10.1039/B515763C
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Author-uploaded primary PDF text, p.1081, note 18; all three pages read,
+        figures/table images not visually verified.
+  - subject: substrate_prep
+    predicate: supplied
+    object: substrate
+    notes: Proton NMR was used for purity checking; no numerical purity is supplied.
+    evidence:
+    - reference: DOI:10.1039/B515763C
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Author-uploaded primary PDF text, p.1081, note 18; all three pages read,
+        figures/table images not visually verified.
+  - subject: substrate
+    predicate: was_used_in
+    object: coupled
+    notes: The readout couples double-epimerized product reduction to NADPH consumption.
+    evidence:
+    - reference: DOI:10.1039/B515763C
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Author-uploaded primary PDF text, p.1080; all three pages read, figures/table
+        images not visually verified.
+  - subject: rmld
+    predicate: was_supplied_in
+    object: coupled
+    notes: RmlD is the coupling reductase, not a demonstrated native NovW partner.
+    evidence:
+    - reference: DOI:10.1039/B515763C
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Author-uploaded primary PDF text, p.1080; all three pages read, figures/table
+        images not visually verified.
+  - subject: prep
+    predicate: was_tested_in
+    object: coupled
+    notes: Coupled assay, not a direct binding or native-flux measurement.
+    evidence:
+    - reference: DOI:10.1039/B515763C
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Author-uploaded primary PDF text, p.1080; all three pages read, figures/table
+        images not visually verified.
+  - subject: coupled
+    predicate: yielded_reported_fit
+    object: kinetics
+    notes: 'Table 2 text: Km 0.97 +/- 0.01 mM; kcat 0.020 +/- 0.001 s^-1; kcat/Km
+      0.021 s^-1 mM^-1. Uncertainty type, replicate count and full referenced protocol
+      remain unresolved; table pixels were unavailable.'
+    evidence:
+    - reference: DOI:10.1039/B515763C
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Author-uploaded primary PDF text, p.1080, Table 2 text; all three pages
+        read, figures/table images not visually verified.
+  - subject: kinetics
+    predicate: was_compared_in
+    object: comparison
+    notes: Nonzero double-epimerase turnover is retained; Km is not a binding Kd and
+      these values are not specific 3-epimerase kinetics.
+    evidence:
+    - reference: DOI:10.1039/B515763C
+      evidence_type: CURATOR_INFERENCE
+      notes: Author-uploaded primary PDF text, pp.1080-1081; all three pages read,
+        figures/table images not visually verified.
+  - subject: evad
+    predicate: has_literature_comparator_row
+    object: comparison
+    notes: 'Cited EvaD row: Km 0.27 +/- 0.03 mM; kcat 0.08 +/- 0.01 s^-1; efficiency
+      0.33 s^-1 mM^-1. Source reference 12, not a new measurement on the NovW preparation.'
+    evidence:
+    - reference: DOI:10.1039/B515763C
+      evidence_type: REVIEW
+      notes: Author-uploaded primary PDF text, p.1080, Table 2; cited comparator;
+        all three pages read, figures/table images not visually verified.
+  - subject: literature_rmlc
+    predicate: has_literature_comparator_row
+    object: comparison
+    notes: 'Cited S. enterica RmlC row: Km 0.71 +/- 0.03 mM; kcat 39 +/- 6.6 s^-1;
+      efficiency 54.9 s^-1 mM^-1. Source reference 17; preserve printed values without
+      inventing a shared uncertainty model or identity with the 2006 isotope-assay
+      preparation.'
+    evidence:
+    - reference: DOI:10.1039/B515763C
+      evidence_type: REVIEW
+      notes: Author-uploaded primary PDF text, p.1080, Table 2; cited comparator;
+        all three pages read, figures/table images not visually verified.
+  - subject: prep
+    predicate: was_tested_in
+    object: isotope
+    notes: NovW was incubated with substrate in D2O.
+    evidence:
+    - reference: DOI:10.1039/B515763C
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Author-uploaded primary PDF text, pp.1080-1081; all three pages read,
+        figures/table images not visually verified.
+  - subject: substrate
+    predicate: was_used_in
+    object: isotope
+    notes: Solvent exchange was monitored on substrate, not a demonstrated isolated
+      physiological product.
+    evidence:
+    - reference: DOI:10.1039/B515763C
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Author-uploaded primary PDF text, p.1080; all three pages read, figures/table
+        images not visually verified.
+  - subject: rmlc
+    predicate: was_comparator_in
+    object: isotope
+    notes: The text reports parallel equimolar RmlC; do not identify an exact accession
+      from the comparator name alone.
+    evidence:
+    - reference: DOI:10.1039/B515763C
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Author-uploaded primary PDF text, pp.1080-1081; all three pages read,
+        figures/table images not visually verified.
+  - subject: isotope
+    predicate: yielded_reported_readout
+    object: readout
+    notes: Reduction/cleavage/reduction/acetylation preceded GC-MS. Text assigns 6.57/6.65-min
+      derivatives and ions 218/232 for NovW versus 218/233 for RmlC. Figure 4 images
+      were not independently inspected.
+    evidence:
+    - reference: DOI:10.1039/B515763C
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Author-uploaded primary PDF text, pp.1080-1081, prose; all three pages
+        read, figures/table images not visually verified.
+  - subject: readout
+    predicate: supports_bounded_assignment
+    object: revision
+    notes: The reported labeling supports position 3 exchange for NovW versus positions
+      3 and 5 for RmlC under the tested conditions, not universal absence of any position
+      5 chemistry.
+    evidence:
+    - reference: DOI:10.1039/B515763C
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Author-uploaded primary PDF text, pp.1080-1081; all three pages read,
+        figures/table images not visually verified.
+  - subject: kinetics
+    predicate: supports_bounded_assignment
+    object: revision
+    notes: The conclusion retains chemical competence for double epimerization while
+      assigning kinetically significant 3-epimerase activity.
+    evidence:
+    - reference: DOI:10.1039/B515763C
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Author-uploaded primary PDF text, p.1081; abstract; all three pages read,
+        figures/table images not visually verified.
+      snippet: only significant 3-epimerase activity
+  - subject: revision
+    predicate: has_database_scope_conflict
+    object: conflict
+    notes: UniProt CAUTION calls the later result in vivo; the primary paper describes
+      recombinant in-vitro kinetic/isotope assays. The graph does not repeat the in-vivo
+      claim as experiment.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9E5
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed Q9L9E5, entry 81, sequence 1, taxon 193462; retrieved 2026-10-04.
+        CAUTION annotation.
+    - reference: DOI:10.1039/B515763C
+      evidence_type: CURATOR_INFERENCE
+      notes: Author-uploaded primary PDF text, pp.1079-1081; all three pages read,
+        figures/table images not visually verified.
+  - subject: comparison
+    predicate: has_interpretation_limit
+    object: limits
+    notes: Comparator rows originate in other papers. Full RmlB/RmlC/RmlD/EvaD construct
+      sequences and matched assay conditions were not established here.
+    evidence:
+    - reference: DOI:10.1039/B515763C
+      evidence_type: CURATOR_INFERENCE
+      notes: Author-uploaded primary PDF text, pp.1080-1081; all three pages read,
+        figures/table images not visually verified.
+  - subject: conflict
+    predicate: has_interpretation_limit
+    object: limits
+    notes: Family similarity and a single structural conformation do not uniquely
+      determine catalytic regiospecificity.
+    evidence:
+    - reference: DOI:10.1039/B515763C
+      evidence_type: CURATOR_INFERENCE
+      notes: Author-uploaded primary PDF text, p.1080; all three pages read, figures/table
+        images not visually verified.
+  description: 'New support proteins, source-reported kinetics and solvent-exchange
+    evidence with explicit primary-text and database limits. Review #564. The BGC0000834
+    owner retains its unspecified sugar stereocentre and SEEDED status; precursor
+    evidence does not resolve that centre or justify an exact-key novobiocin merge.'
+curation_history:
+- timestamp: '2026-10-05T00:49:45Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cathomycin-novwus-novw-preparation-support-proteins-and-functional-revision
+    with source-bounded NovW/NovU/NovS evidence and #564 findings.'
+  llm_assisted: true

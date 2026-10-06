@@ -1,0 +1,234 @@
+record_id: naturalproductmech:mibig-619480541f
+standard_inchi_key: FJAQNRBDVKIIKK-LFLQOBSNSA-N
+graph:
+  graph_id: clorobiocin-clon3456-bounded-pyrrole-precursor-reactions
+  scope: BIOSYNTHESIS
+  description: 'Primary-abstract evidence for activation, carrier loading and staged
+    oxidation. Review #569. Native identity, experimental preparations, observations
+    and inferred mechanisms remain distinct. This partial curation does not change
+    compound identity, source-owned fields, earlier graphs or SEEDED status.'
+  nodes:
+  - node_id: cloN3
+    label: Native cloN3 protein reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHB9
+  - node_id: cloN4
+    label: Native cloN4 protein reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHB8
+  - node_id: cloN5
+    label: Native cloN5 protein reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHB7
+  - node_id: n4prep
+    label: Reported experimental CloN4 adenylation enzyme
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: n5prep
+    label: Reported holo-CloN5 carrier preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: n3prep
+    label: Reported CloN3 flavoprotein preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: proline
+    label: L-proline substrate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: amp
+    label: L-prolyl-AMP intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: clo_loaded
+    label: Reported prolyl-S-CloN5 carrier form
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: loaded
+    label: Prolyl-S-PCP substrate of unspecified carrier identity
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: Rapid-quench ESI-FTMS CloN3 oxidation experiment
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: two
+    label: Transient two-electron-oxidized pyrrolinyl-S-enzyme
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: four
+    label: Four-electron-oxidized pyrrolyl-2-carboxy-S-PCP
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Carrier assignment and abstract-access limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cloN3
+    predicate: is_native_reference_for
+    object: n3prep
+    notes: The native reference is distinct from an experimental preparation whose
+      tag, construct endpoints and purification are not supplied in the inspected
+      abstract.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB9
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB9, entry 81, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: DOI:10.1021/bi0476329
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Inspected PubMed-indexed primary abstract only; full journal methods
+        not obtained.
+  - subject: cloN4
+    predicate: is_native_reference_for
+    object: n4prep
+    notes: The native reference is distinct from an experimental preparation whose
+      tag, construct endpoints and purification are not supplied in the inspected
+      abstract.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB8
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB8, entry 80, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: DOI:10.1021/bi0476329
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Inspected PubMed-indexed primary abstract only; full journal methods
+        not obtained.
+  - subject: cloN5
+    predicate: is_native_reference_for
+    object: n5prep
+    notes: The native reference is distinct from an experimental preparation whose
+      tag, construct endpoints and purification are not supplied in the inspected
+      abstract.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB7
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB7, entry 57, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: DOI:10.1021/bi0476329
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Inspected PubMed-indexed primary abstract only; full journal methods
+        not obtained.
+  - subject: proline
+    predicate: was_activated_by
+    object: n4prep
+    notes: The abstract identifies CloN4 and CouN4 as adenylation enzymes selecting
+      L-proline.
+    evidence:
+    - reference: DOI:10.1021/bi0476329
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Inspected PubMed-indexed primary abstract only; full journal methods
+        not obtained.
+      snippet: adenylation domain enzymes
+  - subject: n4prep
+    predicate: formed_activation_intermediate
+    object: amp
+    notes: The reported activation intermediate is L-prolyl-AMP; no rate or assay
+      composition invented.
+    evidence:
+    - reference: DOI:10.1021/bi0476329
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Inspected PubMed-indexed primary abstract only; full journal methods
+        not obtained.
+  - subject: amp
+    predicate: was_installed_on
+    object: n5prep
+    notes: The abstract reports subsequent thioester loading on holo-CloN5 and holo-CouN5.
+      This does not establish all cross-pairings or an exact assay-specific carrier
+      assignment.
+    evidence:
+    - reference: DOI:10.1021/bi0476329
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Inspected PubMed-indexed primary abstract only; full journal methods
+        not obtained.
+  - subject: n5prep
+    predicate: provided_carrier_form_for
+    object: clo_loaded
+    notes: Phosphopantetheinyl thioester linkage, not free proline oxidation or mature
+      clorobiocin production.
+    evidence:
+    - reference: DOI:10.1021/bi0476329
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Inspected PubMed-indexed primary abstract only; full journal methods
+        not obtained.
+  - subject: clo_loaded
+    predicate: has_assay_assignment_limit
+    object: limits
+    notes: Reported CloN5 loading does not identify the exact carrier in the rapid-quench
+      MS experiment. The assay substrate is therefore a separate node with unspecified
+      CloN5/CouN5 identity.
+    evidence:
+    - reference: DOI:10.1021/bi0476329
+      evidence_type: CURATOR_INFERENCE
+      notes: Inspected PubMed-indexed primary abstract only; full journal methods
+        not obtained.
+  - subject: loaded
+    predicate: was_substrate_in
+    object: assay
+    notes: The rapid-quench MS experiment is described at PCP level; its exact CloN5/CouN5
+      carrier is not assigned from this abstract.
+    evidence:
+    - reference: DOI:10.1021/bi0476329
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Inspected PubMed-indexed primary abstract only; full journal methods
+        not obtained.
+  - subject: n3prep
+    predicate: catalysed_oxidation_in
+    object: assay
+    notes: CloN3 is described as a flavoprotein dehydrogenase. No FAD occupancy, added-cofactor
+      concentration or kinetic constant is inferred.
+    evidence:
+    - reference: DOI:10.1021/bi0476329
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Inspected PubMed-indexed primary abstract only; full journal methods
+        not obtained.
+  - subject: assay
+    predicate: detected_transient_intermediate
+    object: two
+    notes: Rapid quench and electrospray ionization-Fourier transform mass spectrometry
+      detect a two-electron-oxidized intermediate before the fully oxidized product.
+    evidence:
+    - reference: DOI:10.1021/bi0476329
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Inspected PubMed-indexed primary abstract only; full journal methods
+        not obtained.
+      snippet: transiently accumulates
+  - subject: assay
+    predicate: detected_oxidized_product
+    object: four
+    notes: The heteroaromatic pyrrole remains carrier-tethered. This is not methylation
+      or transfer to clorobiocin sugar.
+    evidence:
+    - reference: DOI:10.1021/bi0476329
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Inspected PubMed-indexed primary abstract only; full journal methods
+        not obtained.
+  - subject: assay
+    predicate: has_evidence_limit
+    object: limits
+    notes: Only the primary abstract was inspected. No unique MS carrier, all crossover
+      combinations, tag sequences, time points, concentrations, enzyme kinetics or
+      stoichiometric complex is asserted.
+    evidence:
+    - reference: DOI:10.1021/bi0476329
+      evidence_type: CURATOR_INFERENCE
+      notes: Inspected PubMed-indexed primary abstract only; full journal methods
+        not obtained.
+curation_history:
+- timestamp: '2026-10-05T05:03:35Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add clorobiocin-clon3456-bounded-pyrrole-precursor-reactions; preserve
+    source, identity, construct and causal limits (#569).
+  llm_assisted: true
+- timestamp: '2026-10-05T05:05:47Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Final author-agent review separates the reported prolyl-S-CloN5 form from
+    the rapid-quench MS substrate of unspecified carrier identity. Preserve primary
+    evidence and prevent an implied exact assay-carrier assignment (#569).
+  llm_assisted: true

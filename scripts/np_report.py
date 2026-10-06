@@ -20,8 +20,6 @@ import sys
 from pathlib import Path
 from typing import Any
 
-import yaml
-
 REPO_ROOT = Path(__file__).resolve().parents[1]
 CORPUS_DIR = REPO_ROOT / "data" / "natural_products"
 SCHEMA_PATH = REPO_ROOT / "src" / "naturalproductmech" / "schema" / "naturalproductmech.yaml"
@@ -29,12 +27,13 @@ SCHEMA_PATH = REPO_ROOT / "src" / "naturalproductmech" / "schema" / "naturalprod
 sys.path.insert(0, str(REPO_ROOT / "src"))
 
 from naturalproductmech.grading import CAUSAL_BASES  # noqa: E402
+from naturalproductmech.graph_components import read_natural_product  # noqa: E402
 
 
 def load_records(root: Path) -> list[dict[str, Any]]:
     records = []
     for path in sorted(root.rglob("*.yaml")):
-        doc = yaml.safe_load(path.read_text(encoding="utf-8"))
+        doc = read_natural_product(path)
         if isinstance(doc, dict) and "identifier" in doc:
             records.append(doc)
     return records

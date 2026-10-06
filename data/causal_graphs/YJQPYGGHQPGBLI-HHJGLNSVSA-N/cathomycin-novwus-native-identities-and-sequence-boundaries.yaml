@@ -1,0 +1,228 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novwus-native-identities-and-sequence-boundaries
+  scope: BIOSYNTHESIS
+  nodes:
+  - node_id: cluster
+    label: Deposited novobiocin cluster
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000834
+  - node_id: historical_u
+    label: Historical deposited NovU Val62 sequence
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:AAF67514.1
+  - node_id: limits
+    label: Native sequence and historical sample boundaries
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: gw
+    label: Deposited novW locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: w
+    label: Current deposited native novW reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9E5
+  - node_id: gu
+    label: Deposited novU locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: u
+    label: Current deposited native novU reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9E7
+  - node_id: gs
+    label: Deposited novS locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: s
+    label: Current deposited native novS reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9E9
+  edges:
+  - subject: cluster
+    predicate: contains
+    object: gw
+    notes: Current CDS 25046..25669(+); historical AF170880.2/.3 coordinates are 24994..25617(+).
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: CDS location.
+    - reference: https://mibig.secondarymetabolites.org/go/BGC0000834.5
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact owner/locus association.
+  - subject: gw
+    predicate: encodes_native_reference
+    object: w
+    notes: 207 aa; AAF67516.1; CDS-aware table-11 translation matches the current
+      UniProt sequence exactly. Historical AF170880.2/.3 translations are also exact
+      matches.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current CDS translation.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9E5
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed Q9L9E5, entry 81, sequence 1, taxon 193462; retrieved 2026-10-04.
+        Native sequence; not an engineered preparation.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Historical CDS.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Intermediate CDS.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent exact CDS/protein/UniProt comparison.
+  - subject: w
+    predicate: has_identity_boundary
+    object: limits
+    notes: Current GenBank names S. niveus NCIMB 9219; UniProt retains historical
+      ATCC 23965/NCIMB 11891 reference comments. Sequence identity does not prove
+      strain synonymy or identify every historical tagged sample.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current source qualifiers.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9E5
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed Q9L9E5, entry 81, sequence 1, taxon 193462; retrieved 2026-10-04.
+        Historical strain comments.
+  - subject: cluster
+    predicate: contains
+    object: gu
+    notes: Current CDS 22832..24094(+); historical AF170880.2/.3 coordinates are 22780..24042(+).
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: CDS location.
+    - reference: https://mibig.secondarymetabolites.org/go/BGC0000834.5
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact owner/locus association.
+  - subject: gu
+    predicate: encodes_native_reference
+    object: u
+    notes: 420 aa; AAF67514.2; CDS-aware table-11 translation matches the current
+      UniProt sequence exactly. Historical NovU differs at residue 62, as separately
+      represented.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current CDS translation.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9E7
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed Q9L9E7, entry 64, sequence 2, taxon 193462; retrieved 2026-10-04.
+        Native sequence; not an engineered preparation.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Historical CDS.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Intermediate CDS.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent exact CDS/protein/UniProt comparison.
+  - subject: u
+    predicate: has_identity_boundary
+    object: limits
+    notes: Current GenBank names S. niveus NCIMB 9219; UniProt retains historical
+      ATCC 23965/NCIMB 11891 reference comments. Sequence identity does not prove
+      strain synonymy or identify every historical tagged sample.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current source qualifiers.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9E7
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed Q9L9E7, entry 64, sequence 2, taxon 193462; retrieved 2026-10-04.
+        Historical strain comments.
+  - subject: cluster
+    predicate: contains
+    object: gs
+    notes: Current CDS 20870..21736(+); historical AF170880.2/.3 coordinates are 20818..21684(+).
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: CDS location.
+    - reference: https://mibig.secondarymetabolites.org/go/BGC0000834.5
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact owner/locus association.
+  - subject: gs
+    predicate: encodes_native_reference
+    object: s
+    notes: 288 aa; AAF67512.1; CDS-aware table-11 translation matches the current
+      UniProt sequence exactly. Historical AF170880.2/.3 translations are also exact
+      matches.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current CDS translation.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9E9
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed Q9L9E9, entry 70, sequence 1, taxon 193462; retrieved 2026-10-04.
+        Native sequence; not an engineered preparation.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Historical CDS.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Intermediate CDS.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent exact CDS/protein/UniProt comparison.
+  - subject: s
+    predicate: has_identity_boundary
+    object: limits
+    notes: Current GenBank names S. niveus NCIMB 9219; UniProt retains historical
+      ATCC 23965/NCIMB 11891 reference comments. Sequence identity does not prove
+      strain synonymy or identify every historical tagged sample.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current source qualifiers.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9E9
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed Q9L9E9, entry 70, sequence 1, taxon 193462; retrieved 2026-10-04.
+        Historical strain comments.
+  - subject: gu
+    predicate: has_historical_translation
+    object: historical_u
+    notes: AF170880.2 and .3 both encode 420-aa AAF67514.1; it differs from current
+      Q9L9E7/AAF67514.2 only at Val62 versus Leu62.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Historical novU CDS.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Intermediate novU CDS.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent three-version translation comparison.
+  - subject: historical_u
+    predicate: must_not_be_conflated_with
+    object: u
+    notes: The historical Val62 reference is not the current Leu62 sequence. Experimental
+      allele identity remains unresolved without the complete construct sequence;
+      this difference is not an engineered mutant claim.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Version-specific sequence comparison.
+  description: 'Three grounded native references and a separate historical NovU sequence;
+    no retrospectively identified assay fusion. Review #564. The BGC0000834 owner
+    retains its unspecified sugar stereocentre and SEEDED status; precursor evidence
+    does not resolve that centre or justify an exact-key novobiocin merge.'
+curation_history:
+- timestamp: '2026-10-05T00:49:45Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cathomycin-novwus-native-identities-and-sequence-boundaries with source-bounded
+    NovW/NovU/NovS evidence and #564 findings.'
+  llm_assisted: true

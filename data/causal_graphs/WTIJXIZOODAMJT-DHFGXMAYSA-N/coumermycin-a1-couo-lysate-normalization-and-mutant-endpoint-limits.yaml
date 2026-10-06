@@ -1,0 +1,540 @@
+record_id: CHEBI:3907
+standard_inchi_key: WTIJXIZOODAMJT-DHFGXMAYSA-N
+graph:
+  graph_id: coumermycin-a1-couo-lysate-normalization-and-mutant-endpoint-limits
+  scope: BIOSYNTHESIS
+  description: 'Complete eleven-row protein-content table and ten mutant endpoint
+    comparisons, with WT, buffer and empty-vector controls; min/max uncertainty and
+    the S6 product-label conflict remain explicit. Author-agent review #556. Native
+    identity, engineered preparations and measured or inferred outcomes remain distinct;
+    these precursor/surrogate studies do not demonstrate synthesis of mature coumermycin
+    A1.'
+  nodes:
+  - node_id: wt
+    label: Pavkov-Keller CouO-WT protein in cleared lysate
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: h15a
+    label: Pavkov-Keller CouO-H15A protein in cleared lysate
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: h15n
+    label: Pavkov-Keller CouO-H15N protein in cleared lysate
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: r24a
+    label: Pavkov-Keller CouO-R24A protein in cleared lysate
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: h117a
+    label: Pavkov-Keller CouO-H117A protein in cleared lysate
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: h117s
+    label: Pavkov-Keller CouO-H117S protein in cleared lysate
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: h120a
+    label: Pavkov-Keller CouO-H120A protein in cleared lysate
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: h120n
+    label: Pavkov-Keller CouO-H120N protein in cleared lysate
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: r121a
+    label: Pavkov-Keller CouO-R121A protein in cleared lysate
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: r121l
+    label: Pavkov-Keller CouO-R121L protein in cleared lysate
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: y216f
+    label: Pavkov-Keller CouO-Y216F protein in cleared lysate
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: Twenty-four-hour CouO surrogate methylation assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: substrate
+    label: N-(4,7-Dihydroxy-2-oxo-2H-chromen-3-yl)benzamide
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: product
+    label: Source-assigned C8-methylated benzamide surrogate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: sam
+    label: Directly supplied S-adenosyl-L-methionine donor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: normalization
+    label: Densitometric soluble-CouO loading normalization
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: background
+    label: Unequal lysate background and unknown active fraction
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: blank
+    label: Displayed sodium-phosphate-buffer blank
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: empty_vector
+    label: Reported empty-pMS470d8 lysate control
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: chromatograms
+    label: Twelve HPLC/MS supplement panels
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: label_conflict
+    label: S6 methyl drawing versus 8-allyl product label
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  edges:
+  - subject: substrate
+    predicate: is_acceptor_in
+    object: assay
+    notes: The 0.1-mL reactions used 0.5 mM synthetic benzamide substrate (10 mM stock
+      in DMSO), 50 mM sodium phosphate pH 7, 0.1 mg/mL BSA, 30 C and 1000 rpm for
+      24 h. Reactions were stopped at 80 C for 15 min, clarified and passed through
+      a 3-kDa filter. This substrate is not the native CouL mono-/bis-amide or mature
+      antibiotic.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Activity assay, PDF p.5.
+    - reference: DOI:10.1371/journal.pone.0171056.s006
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S6 Figure; substrate and assay conditions.
+  - subject: sam
+    predicate: is_donor_in
+    object: assay
+    notes: SAM dihydrochloride was directly supplied at 2 mM. No auxiliary SAM-regeneration
+      enzyme or nonnatural donor is reported in this assay.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Activity assay, PDF p.5.
+  - subject: normalization
+    predicate: sets_calculated_target_loading_for
+    object: assay
+    notes: The authors calculate 28.6 ug CouO per reaction, chosen to match the least-soluble
+      H120A preparation. Figure 7 is normalized to apparent expressed-protein content;
+      S2 values are target abundance within cleared lysates, not purified sample concentrations.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Activity assay and Figure 7 discussion, PDF pp.5,10.
+      snippet: normalized to the apparent expressed protein content
+    - reference: DOI:10.1371/journal.pone.0171056.s010
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S2 Table; eleven target-content and total-protein rows.
+  - subject: normalization
+    predicate: does_not_equalize
+    object: background
+    notes: The target-content fractions range from 5.5% to 33.5%; therefore equal
+      estimated target mass does not equalize total lysate protein or host background.
+      Densitometry also does not measure the folded active fraction. Differences can
+      constrain but do not uniquely isolate residue-specific catalytic chemistry.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s010
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S2 Table.
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: CURATOR_INFERENCE
+      notes: Pavkov-Keller 2017; Interpretation of the reported normalization, PDF
+        p.5.
+  - subject: empty_vector
+    predicate: was_reported_negative_control_for
+    object: assay
+    notes: The authors report no CouO activity with empty pMS470d8. Because of that
+      observation they used buffer-only blanks; no numerical empty-vector readout
+      or detection limit is supplied.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Activity assay, PDF p.5.
+  - subject: blank
+    predicate: was_displayed_negative_control_for
+    object: assay
+    notes: Figure 7 Blank and S1 File panel B concern 50 mM sodium phosphate pH 7,
+      not an equal-protein host-lysate control. The plotted blank does not establish
+      absence of all lysate matrix effects.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Activity assay and Figure 7, PDF pp.5,10.
+    - reference: DOI:10.1371/journal.pone.0171056.s008
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 File, Figure B, PDF p.2.
+  - subject: assay
+    predicate: has_reported_chromatographic_readouts
+    object: chromatograms
+    notes: A Shimadzu Nexera HPLC-MS with an Agilent Poroshell 120 EC-C18 100x3-mm,
+      2.7-um column was used. All twelve displayed chromatograms have PDA 305-nm headers;
+      captions E/G call them HPLC(MS), a retained label discrepancy. Panels A/B are
+      WT/buffer and C-L follow the ten mutants. They are not raw triplicate integration
+      tables or a full calibration curve; exact numerical means are not invented.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; HPLC-MS, PDF p.5.
+    - reference: DOI:10.1371/journal.pone.0171056.s008
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 File, all twelve figures A-L.
+  - subject: assay
+    predicate: forms_source_assigned_surrogate
+    object: product
+    notes: The study assigns C8 methylation. WT panel A reports nominal m/z 312 [M+H]+,
+      334 [M+Na]+ and 350 [M+K]+, whereas blank panel B reports substrate ions 298/320.
+      These support the source assignment but are not a new independent regiochemical
+      determination for each variant or evidence of mature-antibiotic synthesis.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Figure 7 and mechanism discussion, PDF pp.9-10.
+    - reference: DOI:10.1371/journal.pone.0171056.s008
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 File, Figures A/B, PDF pp.1-2.
+  - subject: product
+    predicate: has_conflicting_supplement_label
+    object: label_conflict
+    notes: S6 draws a methyl substituent and names SAM as donor but prints 8-allyl
+      in the product name. The methylation paper and m/z 312 WT product readout are
+      retained alongside this conflict. The label alone is not curated as an allylation
+      experiment.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s006
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S6 Figure; visually inspected product drawing and name.
+    - reference: DOI:10.1371/journal.pone.0171056.s008
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 File, Figure A.
+  - subject: wt
+    predicate: is_reference_endpoint_for
+    object: assay
+    notes: Figure 7 uses WT product formation as the 100% reference. Bars are triplicate
+      means with observed minima/maxima, not SD, SE, confidence intervals, kcat or
+      absolute molar conversion. The source does not establish independent biological
+      replication.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Figure 7 caption, PDF p.10.
+      snippet: minimum and maximum values obtained
+  - subject: wt
+    predicate: has_reported_content_estimate_for
+    object: normalization
+    notes: S2 Table reports 28.4% CouO in cleared lysate, 8.86 mg/mL total protein
+      and 2.52 mg/mL estimated methyltransferase. Target fraction was measured by
+      Coomassie-band densitometry and total protein by the Bio-Rad assay. These are
+      preparation concentrations, not assay conversion, final loading or purified-protein
+      purity.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s010
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S2 Table; WT row.
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Protein expression, PDF p.5.
+  - subject: h15a
+    predicate: has_reported_content_estimate_for
+    object: normalization
+    notes: S2 Table reports 29.4% CouO in cleared lysate, 7.54 mg/mL total protein
+      and 2.22 mg/mL estimated methyltransferase. Target fraction was measured by
+      Coomassie-band densitometry and total protein by the Bio-Rad assay. These are
+      preparation concentrations, not assay conversion, final loading or purified-protein
+      purity.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s010
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S2 Table; H15A row.
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Protein expression, PDF p.5.
+  - subject: h15a
+    predicate: has_measured_relative_endpoint_in
+    object: assay
+    notes: The product bar is near WT; the source groups this as little affected.
+      The result is the stated 24-hour lysate assay with triplicate min/max bars;
+      no exact unreported mean, rate constant or native precursor turnover is inferred.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Figure 7 and discussion, PDF p.10; H15A.
+    - reference: DOI:10.1371/journal.pone.0171056.s008
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 File, Figure C, PDF p.3.
+  - subject: h15n
+    predicate: has_reported_content_estimate_for
+    object: normalization
+    notes: S2 Table reports 28.6% CouO in cleared lysate, 9.13 mg/mL total protein
+      and 2.61 mg/mL estimated methyltransferase. Target fraction was measured by
+      Coomassie-band densitometry and total protein by the Bio-Rad assay. These are
+      preparation concentrations, not assay conversion, final loading or purified-protein
+      purity.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s010
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S2 Table; H15N row.
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Protein expression, PDF p.5.
+  - subject: h15n
+    predicate: has_measured_relative_endpoint_in
+    object: assay
+    notes: The product bar is visibly about two-thirds of WT, despite prose grouping
+      H15N with little-affected H15A. This is a visual approximation, not a tabulated
+      numerical mean. The result is the stated 24-hour lysate assay with triplicate
+      min/max bars; no exact unreported mean, rate constant or native precursor turnover
+      is inferred.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Figure 7 and discussion, PDF p.10; H15N.
+    - reference: DOI:10.1371/journal.pone.0171056.s008
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 File, Figure D, PDF p.4.
+  - subject: r24a
+    predicate: has_reported_content_estimate_for
+    object: normalization
+    notes: S2 Table reports 28.6% CouO in cleared lysate, 10.77 mg/mL total protein
+      and 3.08 mg/mL estimated methyltransferase. Target fraction was measured by
+      Coomassie-band densitometry and total protein by the Bio-Rad assay. These are
+      preparation concentrations, not assay conversion, final loading or purified-protein
+      purity.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s010
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S2 Table; R24A row.
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Protein expression, PDF p.5.
+  - subject: r24a
+    predicate: has_measured_relative_endpoint_in
+    object: assay
+    notes: The product bar is near WT; no statistically established enhancement is
+      inferred from its slightly higher displayed height. The result is the stated
+      24-hour lysate assay with triplicate min/max bars; no exact unreported mean,
+      rate constant or native precursor turnover is inferred.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Figure 7 and discussion, PDF p.10; R24A.
+    - reference: DOI:10.1371/journal.pone.0171056.s008
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 File, Figure E, PDF p.5.
+  - subject: h117a
+    predicate: has_reported_content_estimate_for
+    object: normalization
+    notes: S2 Table reports 20.3% CouO in cleared lysate, 13.80 mg/mL total protein
+      and 2.80 mg/mL estimated methyltransferase. Target fraction was measured by
+      Coomassie-band densitometry and total protein by the Bio-Rad assay. These are
+      preparation concentrations, not assay conversion, final loading or purified-protein
+      purity.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s010
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S2 Table; H117A row.
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Protein expression, PDF p.5.
+  - subject: h117a
+    predicate: has_measured_relative_endpoint_in
+    object: assay
+    notes: A low but nonzero product bar is displayed, well below WT; no absolute
+      zero or uniquely catalytic impairment is asserted. The result is the stated
+      24-hour lysate assay with triplicate min/max bars; no exact unreported mean,
+      rate constant or native precursor turnover is inferred.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Figure 7 and discussion, PDF p.10; H117A.
+    - reference: DOI:10.1371/journal.pone.0171056.s008
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 File, Figure F, PDF p.6.
+  - subject: h117s
+    predicate: has_reported_content_estimate_for
+    object: normalization
+    notes: S2 Table reports 14.3% CouO in cleared lysate, 5.32 mg/mL total protein
+      and 0.76 mg/mL estimated methyltransferase. Target fraction was measured by
+      Coomassie-band densitometry and total protein by the Bio-Rad assay. These are
+      preparation concentrations, not assay conversion, final loading or purified-protein
+      purity.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s010
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S2 Table; H117S row.
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Protein expression, PDF p.5.
+  - subject: h117s
+    predicate: has_measured_relative_endpoint_in
+    object: assay
+    notes: Product formation is strongly reduced but retained; the preparation also
+      has reduced soluble expression. The result is the stated 24-hour lysate assay
+      with triplicate min/max bars; no exact unreported mean, rate constant or native
+      precursor turnover is inferred.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Figure 7 and discussion, PDF p.10; H117S.
+    - reference: DOI:10.1371/journal.pone.0171056.s008
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 File, Figure G, PDF p.7.
+  - subject: h120a
+    predicate: has_reported_content_estimate_for
+    object: normalization
+    notes: S2 Table reports 5.5% CouO in cleared lysate, 6.50 mg/mL total protein
+      and 0.36 mg/mL estimated methyltransferase. Target fraction was measured by
+      Coomassie-band densitometry and total protein by the Bio-Rad assay. These are
+      preparation concentrations, not assay conversion, final loading or purified-protein
+      purity.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s010
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S2 Table; H120A row.
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Protein expression, PDF p.5.
+  - subject: h120a
+    predicate: has_measured_relative_endpoint_in
+    object: assay
+    notes: A small residual product bar is displayed despite the weak soluble band;
+      the source does not establish a functional-null protein. The result is the stated
+      24-hour lysate assay with triplicate min/max bars; no exact unreported mean,
+      rate constant or native precursor turnover is inferred.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Figure 7 and discussion, PDF p.10; H120A.
+    - reference: DOI:10.1371/journal.pone.0171056.s008
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 File, Figure H, PDF p.8.
+  - subject: h120n
+    predicate: has_reported_content_estimate_for
+    object: normalization
+    notes: S2 Table reports 15.8% CouO in cleared lysate, 8.45 mg/mL total protein
+      and 1.34 mg/mL estimated methyltransferase. Target fraction was measured by
+      Coomassie-band densitometry and total protein by the Bio-Rad assay. These are
+      preparation concentrations, not assay conversion, final loading or purified-protein
+      purity.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s010
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S2 Table; H120N row.
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Protein expression, PDF p.5.
+  - subject: h120n
+    predicate: has_measured_relative_endpoint_in
+    object: assay
+    notes: Residual product is displayed below WT; its soluble target fraction is
+      also reduced. The result is the stated 24-hour lysate assay with triplicate
+      min/max bars; no exact unreported mean, rate constant or native precursor turnover
+      is inferred.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Figure 7 and discussion, PDF p.10; H120N.
+    - reference: DOI:10.1371/journal.pone.0171056.s008
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 File, Figure I, PDF p.9.
+  - subject: r121a
+    predicate: has_reported_content_estimate_for
+    object: normalization
+    notes: S2 Table reports 33.5% CouO in cleared lysate, 8.49 mg/mL total protein
+      and 2.84 mg/mL estimated methyltransferase. Target fraction was measured by
+      Coomassie-band densitometry and total protein by the Bio-Rad assay. These are
+      preparation concentrations, not assay conversion, final loading or purified-protein
+      purity.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s010
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S2 Table; R121A row.
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Protein expression, PDF p.5.
+  - subject: r121a
+    predicate: has_measured_relative_endpoint_in
+    object: assay
+    notes: The product bar is near baseline, described as almost complete loss, not
+      a demonstrated absolute zero. The result is the stated 24-hour lysate assay
+      with triplicate min/max bars; no exact unreported mean, rate constant or native
+      precursor turnover is inferred.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Figure 7 and discussion, PDF p.10; R121A.
+    - reference: DOI:10.1371/journal.pone.0171056.s008
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 File, Figure J, PDF p.10.
+  - subject: r121l
+    predicate: has_reported_content_estimate_for
+    object: normalization
+    notes: S2 Table reports 28.9% CouO in cleared lysate, 7.00 mg/mL total protein
+      and 2.02 mg/mL estimated methyltransferase. Target fraction was measured by
+      Coomassie-band densitometry and total protein by the Bio-Rad assay. These are
+      preparation concentrations, not assay conversion, final loading or purified-protein
+      purity.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s010
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S2 Table; R121L row.
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Protein expression, PDF p.5.
+  - subject: r121l
+    predicate: has_measured_relative_endpoint_in
+    object: assay
+    notes: The product bar is near baseline, described as almost complete loss, not
+      a demonstrated absolute zero. The result is the stated 24-hour lysate assay
+      with triplicate min/max bars; no exact unreported mean, rate constant or native
+      precursor turnover is inferred.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Figure 7 and discussion, PDF p.10; R121L.
+    - reference: DOI:10.1371/journal.pone.0171056.s008
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 File, Figure K, PDF p.11.
+  - subject: y216f
+    predicate: has_reported_content_estimate_for
+    object: normalization
+    notes: S2 Table reports 19.2% CouO in cleared lysate, 10.78 mg/mL total protein
+      and 2.07 mg/mL estimated methyltransferase. Target fraction was measured by
+      Coomassie-band densitometry and total protein by the Bio-Rad assay. These are
+      preparation concentrations, not assay conversion, final loading or purified-protein
+      purity.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s010
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S2 Table; Y216F row.
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Protein expression, PDF p.5.
+  - subject: y216f
+    predicate: has_measured_relative_endpoint_in
+    object: assay
+    notes: The product bar is near WT; retained endpoint activity does not prove unchanged
+      initial kinetics or binding. The result is the stated 24-hour lysate assay with
+      triplicate min/max bars; no exact unreported mean, rate constant or native precursor
+      turnover is inferred.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Figure 7 and discussion, PDF p.10; Y216F.
+    - reference: DOI:10.1371/journal.pone.0171056.s008
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 File, Figure L, PDF p.12.
+curation_history:
+- timestamp: '2026-10-04T19:54:53Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add coumermycin-a1-couo-lysate-normalization-and-mutant-endpoint-limits
+    with bounded primary CouO evidence and review #556 limits.'
+  llm_assisted: true
