@@ -1282,6 +1282,125 @@ causal_graphs:
       evidence_type: PRIMARY_EXPERIMENT
       notes: Abstract and figure captions inspected.
       retrieved_on: '2026-10-06'
+- graph_id: pyrrolnitrin-2007-orf2-surrogate-coupling
+  scope: BIOSYNTHESIS
+  description: Candidate ORF2 coupling experiment for the pyrrolnitrin-associated
+    PrnD system, using a surrogate substrate. Current native reference and unresolved
+    study preparations remain distinct. No direct ORF2-PrnD binding, complete physiological
+    pathway, endogenous necessity, quantitative flux, antimicrobial mechanism or full-record
+    sign-off asserted.
+  nodes:
+  - node_id: pf5
+    label: Pseudomonas protegens Pf-5
+    node_type: ORGANISM
+    grounding_status: GROUNDED
+    identifier: NCBITaxon:220664
+  - node_id: native_orf2
+    label: ORF2 candidate native sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4KAM9
+  - node_id: prepared_orf2
+    label: Study ORF2 preparation (sequence unresolved)
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+  - node_id: prepared_prnd
+    label: Study PrnD preparation (sequence unresolved)
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+  - node_id: paba
+    label: p-Aminobenzylamine surrogate substrate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: readout
+    label: Reported pABA N-oxygenation readout
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: coupled_assay
+    label: Reported ORF2/PrnD surrogate oxidation assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: pf5
+    predicate: encodes_native_reference
+    object: native_orf2
+    notes: PFL_3602/AAY92868.1, 360 aa; CP000076.1 CDS 4153602..4154684(+), 1-based
+      inclusive. CDS-aware table 11 translation equals GenPept and UniProt Q4KAM9,
+      unreviewed sequence version 1. Not a historical stock sequence.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAY92868.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned protein and source qualifiers inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4KAM9
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence, locus, strain and taxon comparison.
+      retrieved_on: '2026-10-06'
+  - subject: prepared_orf2
+    predicate: has_candidate_native_locus_reference
+    object: native_orf2
+    notes: Figure 2 position and 360-aa length suggest PFL_3602, but cloning primers,
+      tags and exact translated stock are not established. BAB51856 is a similarity
+      reference, not the tested sequence. Candidate mapping only.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: CURATOR_INFERENCE
+      notes: Main text and Figure 2 inspected; supplement unread. Historical constructs
+        unverified.
+      retrieved_on: '2026-10-06'
+  - subject: prepared_orf2
+    predicate: supported_reported_coupled_assay
+    object: coupled_assay
+    notes: The purified ORF2 preparation supported lower surrogate conversion than
+      PrnF. Exact assay conditions are insufficiently resolved for a quantitative
+      rate claim. No endogenous partner exclusivity or necessity inferred.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main text and Figure 2 inspected; supplement unread. Historical constructs
+        unverified.
+      retrieved_on: '2026-10-06'
+  - subject: prepared_prnd
+    predicate: catalyzed_reported_surrogate_oxidation
+    object: coupled_assay
+    notes: Unresolved preparation from the cited prior method. Published primers disagree
+      with Pf-5 Q4KAM4 termini; no exact native identifier adopted.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main text and Figure 2 inspected; supplement unread. Historical constructs
+        unverified.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1074/jbc.M505334200
+      evidence_type: CURATOR_INFERENCE
+      notes: Prior-method primers inspected; mismatch with CP000076.1 retained.
+      retrieved_on: '2026-10-06'
+  - subject: paba
+    predicate: was_reported_substrate_of
+    object: coupled_assay
+    notes: Surrogate arylamine, not aminopyrrolnitrin.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main text and Figure 2 inspected; supplement unread. Historical constructs
+        unverified.
+      retrieved_on: '2026-10-06'
+  - subject: coupled_assay
+    predicate: had_reported_readout
+    object: readout
+    notes: Qualitative N-oxygenation readout only. No independently inspected ORF2-specific
+      product chromatogram, exact product identity or pyrrolnitrin production result
+      adopted.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main text and Figure 2 inspected; supplement unread. Historical constructs
+        unverified.
+      retrieved_on: '2026-10-06'
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -1339,4 +1458,21 @@ curation_history:
     PA23 graph/four proposed pathway steps, preceding bounded PrnF graph, source fields/evidence
     grades, stereochemistry, SEEDED status, AntibioticMech link and prior history.
     No producer-grade upgrade or full-record sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-06T17:19:13Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added one bounded BIOSYNTHESIS graph with 7 nodes and 6 DOI-or-stable-URL-cited
+    edges for the reported ORF2/PrnD surrogate-substrate experiment. Native candidate
+    Pf-5 Q4KAM9/PFL_3602/AAY92868.1 is verified by exact CP000076.1 CDS-aware table-11
+    translation, GenPept and UniProt comparison. Primary DOI:10.1128/JB.01050-07 main
+    and Figure2 inspected; supplement unread. Figure position and360aa length support
+    only a candidate native-locus correspondence, not complete historical construct
+    identity. ORF2 and PrnD preparations remain REVIEW_NEEDED without protein identifiers;
+    prior-method PrnD primer mismatch remains explicit. Zero new quotes. The qualitative
+    p-aminobenzylamine N-oxygenation readout does not establish an independently inspected
+    ORF2-specific product identity, pyrrolnitrin production, binding, endogenous necessity
+    or physiological flux. Preserved all PA23 pathway/graph, PrnF and BL915 graphs,
+    source fields/grades, stereochemistry, SEEDED status, AntibioticMech link and
+    prior history. No antimicrobial mechanism or full-record sign-off.
   llm_assisted: true
