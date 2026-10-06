@@ -1,0 +1,144 @@
+record_id: CHEBI:78688
+standard_inchi_key: PIFFQYJYNWXNGE-UHFFFAOYSA-N
+graph:
+  graph_id: dapg-2025-gaca-reporter-genetics
+  scope: BIOSYNTHESIS
+  description: Bounded Pf-5 GacA genetics in a DAPG regulatory study. Native references,
+    reporter-bearing cultures and GFP readouts remain distinct. RNA-probe assignments,
+    antimicrobial phenotypes and full-record sign-off are excluded.
+  nodes:
+  - node_id: pf5
+    label: Pseudomonas protegens Pf-5
+    node_type: ORGANISM
+    grounding_status: GROUNDED
+    identifier: NCBITaxon:220664
+  - node_id: gaca
+    label: Native GacA sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4KAR8
+  - node_id: mutant
+    label: JL4975-derived reporter culture
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: control
+    label: LK099-derived reporter culture
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: reporter
+    label: Study phlD translation GFP reporter
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: mutant_signal
+    label: Mutant normalized GFP readout
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: control_signal
+    label: Control normalized GFP readout
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: pf5
+    predicate: encodes_native_reference
+    object: gaca
+    notes: CP000076.1 CDS4110513..4111154(-), 1-based inclusive; PFL_3563, AAY92829.1,213aa.
+      CDS-aware table11 translation equals GenPept and UniProt sequence version1,
+      unreviewed, taxon220664. Historical P.fluorescens display name retains the exact
+      Pf-5 strain. Not a complete engineered stock or a protein asserted present in
+      the mutant.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAY92829.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent versioned sequence inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4KAR8
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence, strain and gene comparison.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: has_reported_deletion_of_coding_locus_for
+    object: gaca
+    notes: Unmarked in-frame gacA deletion; exact junctions and residual product unverified.
+    evidence:
+    - reference: DOI:10.1128/aem.01546-25
+      evidence_type: CURATOR_INFERENCE
+      notes: Table1 inspected.
+      retrieved_on: '2026-10-06'
+  - subject: control
+    predicate: has_native_background_reference
+    object: pf5
+    notes: LK099 background with reporter, not an unmodified genome-equivalent stock.
+    evidence:
+    - reference: DOI:10.1128/aem.01546-25
+      evidence_type: CURATOR_INFERENCE
+      notes: Table1/Methods inspected.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: carries_reporter
+    object: reporter
+    notes: pPROBE-NT derivative; full plasmid sequence unverified.
+    evidence:
+    - reference: DOI:10.1128/aem.01546-25
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods inspected.
+      retrieved_on: '2026-10-06'
+  - subject: control
+    predicate: carries_reporter
+    object: reporter
+    notes: Promoter and six phlD codons fused to GFP; no native protein abundance
+      measurement.
+    evidence:
+    - reference: DOI:10.1128/aem.01546-25
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods inspected.
+      retrieved_on: '2026-10-06'
+      snippet: first six codons
+  - subject: mutant
+    predicate: yielded
+    object: mutant_signal
+    notes: PDB,28C; fluorescence normalized to OD600 after empty-vector correction.
+    evidence:
+    - reference: DOI:10.1128/aem.01546-25
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure3A/Methods inspected.
+      retrieved_on: '2026-10-06'
+  - subject: control
+    predicate: yielded
+    object: control_signal
+    notes: Matched reporter comparison at10,16,24h; Figure3A mean and SE, n=3.
+    evidence:
+    - reference: DOI:10.1128/aem.01546-25
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure3A/Methods inspected.
+      retrieved_on: '2026-10-06'
+  - subject: mutant_signal
+    predicate: was_lower_than
+    object: control_signal
+    notes: Clear separation at16/24h; no numerical fold change or significance at10h
+      asserted. Not direct DNA binding, isolated translation rate, DAPG flux or RsmE
+      independence.
+    evidence:
+    - reference: DOI:10.1128/aem.01546-25
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure3A inspected.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T15:57:29Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component; reviewed baseline 08022e3acff65a9783de6e2ae3d8c415fe6b0cf2.
+    Added one exact-owner BIOSYNTHESIS component with 7 nodes and 8 cited edges for
+    native Pf-5 GacA/Q4KAR8 and bounded phlD reporter genetics. CP000076.1 CDS-aware
+    table-11 translation matches AAY92829.1 and UniProt. DOI:10.1128/aem.01546-25
+    main, Table1 and Figure3A inspected; three quoted words. Native reference, JL4975/LK099-derived
+    reporter cultures and normalized GFP readouts stay distinct. No exact deletion
+    junction, complete plasmid, direct DNA binding, isolated translation rate, DAPG
+    flux, 10h significance or RsmE independence asserted. Ambiguous RNA-probe mapping
+    excluded. All four inline graphs, two pathway steps, source fields/grades, stereochemistry,
+    SEEDED status, discussion, AntibioticMech link and history retained. No antimicrobial
+    mechanism or full-record sign-off.
+  llm_assisted: true
