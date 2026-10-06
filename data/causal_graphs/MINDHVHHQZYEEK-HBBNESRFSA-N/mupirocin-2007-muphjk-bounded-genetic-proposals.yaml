@@ -1,0 +1,304 @@
+record_id: CHEBI:7025
+standard_inchi_key: MINDHVHHQZYEEK-HBBNESRFSA-N
+graph:
+  graph_id: mupirocin-2007-muphjk-bounded-genetic-proposals
+  scope: BIOSYNTHESIS
+  description: Reported paired cotranscription and proposed methyl-addition participants.
+    Native examples, unverified study gene products and gene loci remain distinct.
+    Only the primary 2007 abstract was inspected; it names P. fluorescens but not
+    strain. Full text, figures and SI unread. No purified chemistry, stable complex,
+    complete stock or direct PA-A formation assay asserted. CHEBI:7025 is the PA-A
+    owner, not the clinical mixture. No full-record sign-off.
+  nodes:
+  - node_id: cluster
+    label: NCIMB 10586 reference mupirocin locus
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000182
+  - node_id: methyl_role
+    label: Proposed methyl-addition role in the mupirocin pathway
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: paired_transcription
+    label: Study mupJ/mupK paired cotranscription
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: normal_function
+    label: Reported normal function of the mupJ/mupK pair
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: coassembly
+    label: Author-proposed cotranslational coassembly
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: native_mupH
+    label: MupH native sequence example (NCIMB 10586)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL63
+  - node_id: study_mupH
+    label: Study MupH gene product (sequence unverified)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: native_mupJ
+    label: MupJ native sequence example (NCIMB 10586)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL62
+  - node_id: study_mupJ
+    label: Study MupJ gene product (sequence unverified)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: study_gene_mupJ
+    label: Study mupJ locus (allele unverified)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: native_mupK
+    label: MupK native sequence example (NCIMB 10586)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL61
+  - node_id: study_mupK
+    label: Study MupK gene product (sequence unverified)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: study_gene_mupK
+    label: Study mupK locus (allele unverified)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference_example
+    object: native_mupH
+    notes: AF318063.3 CDS 46964..48229(+), 1-based inclusive; AAM12922.1, 421 aa.
+      CDS-aware table-11 translation exactly matches GenPept and current UniProt;
+      unreviewed sequence version 1, NCIMB 10586, taxon 294. Deliberately selected
+      gene-matched reference, not confirmed historical experimental stock.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12922.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native translation.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL63
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native CDS/GenPept/UniProt comparison.
+      retrieved_on: '2026-10-06'
+  - subject: study_mupH
+    predicate: has_gene_matched_native_reference_example
+    object: native_mupH
+    notes: Gene-name/pathway correspondence; not evidence of sequence equality, assay
+      construct or historical strain.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: study_mupH
+    predicate: is_proposed_to_participate_in
+    object: methyl_role
+    notes: The abstract implicates these gene products in methyl addition. No direct
+      enzyme assay, substrate identity, carbon numbering, dehydration or decarboxylation
+      step is adopted.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference_example
+    object: native_mupJ
+    notes: AF318063.3 CDS 48226..48993(+), 1-based inclusive; AAM12923.1, 255 aa.
+      CDS-aware table-11 translation exactly matches GenPept and current UniProt;
+      unreviewed sequence version 1, NCIMB 10586, taxon 294. Deliberately selected
+      gene-matched reference, not confirmed historical experimental stock.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12923.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native translation.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL62
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native CDS/GenPept/UniProt comparison.
+      retrieved_on: '2026-10-06'
+  - subject: study_mupJ
+    predicate: has_gene_matched_native_reference_example
+    object: native_mupJ
+    notes: Gene-name/pathway correspondence; not evidence of sequence equality, assay
+      construct or historical strain.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: study_mupJ
+    predicate: is_proposed_to_participate_in
+    object: methyl_role
+    notes: The abstract implicates these gene products in methyl addition. No direct
+      enzyme assay, substrate identity, carbon numbering, dehydration or decarboxylation
+      step is adopted.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: study_gene_mupJ
+    predicate: encodes_named_study_gene_product
+    object: study_mupJ
+    notes: Locus-to-gene-product correspondence only; not a sequence-resolved allele
+      or expression measurement.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: study_gene_mupJ
+    predicate: is_member_of_reported_cotranscription_pair
+    object: paired_transcription
+    notes: The source reports a paired cotranscription requirement; no promoter sequence
+      or experimental construct adopted.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference_example
+    object: native_mupK
+    notes: AF318063.3 CDS 49047..49790(+), 1-based inclusive; AAM12924.1, 247 aa.
+      CDS-aware table-11 translation exactly matches GenPept and current UniProt;
+      unreviewed sequence version 1, NCIMB 10586, taxon 294. Deliberately selected
+      gene-matched reference, not confirmed historical experimental stock.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12924.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native translation.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL61
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native CDS/GenPept/UniProt comparison.
+      retrieved_on: '2026-10-06'
+  - subject: study_mupK
+    predicate: has_gene_matched_native_reference_example
+    object: native_mupK
+    notes: Gene-name/pathway correspondence; not evidence of sequence equality, assay
+      construct or historical strain.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: study_mupK
+    predicate: is_proposed_to_participate_in
+    object: methyl_role
+    notes: The abstract implicates these gene products in methyl addition. No direct
+      enzyme assay, substrate identity, carbon numbering, dehydration or decarboxylation
+      step is adopted.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: study_gene_mupK
+    predicate: encodes_named_study_gene_product
+    object: study_mupK
+    notes: Locus-to-gene-product correspondence only; not a sequence-resolved allele
+      or expression measurement.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: study_gene_mupK
+    predicate: is_member_of_reported_cotranscription_pair
+    object: paired_transcription
+    notes: The source reports a paired cotranscription requirement; no promoter sequence
+      or experimental construct adopted.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: paired_transcription
+    predicate: was_reported_required_for
+    object: normal_function
+    notes: Abstract-level genetic expression requirement. No quantitative yield, assay
+      endpoint or exact stock is specified here.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+  - subject: paired_transcription
+    predicate: supports_proposed_cotranslational_coassembly
+    object: coassembly
+    notes: Author inference from the paired expression requirement, not measured physical
+      binding, a stable complex or stoichiometry.
+    evidence:
+    - reference: DOI:10.1074/jbc.M701490200
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary author abstract inspected through PMID17383964 and retained NCBI
+        XML. Full text, figures and supporting information not inspected. The abstract
+        names P. fluorescens but no strain or complete engineered stocks. No numerical
+        yield, detection threshold, rescue protocol or direct enzyme assay imported.
+      retrieved_on: '2026-10-06'
+      snippet: co-assembly during translation
+curation_history:
+- timestamp: '2026-10-06T09:34:40Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component for CHEBI:7025; reviewed owner baseline eff8bdbd4ad5af13f2ea018c210a4c4650bb2e06.
+    Reported paired cotranscription and proposed methyl-addition participants. Native
+    examples, unverified study gene products and gene loci remain distinct. Only the
+    primary 2007 abstract was inspected; it names P. fluorescens but not strain. Full
+    text, figures and SI unread. No purified chemistry, stable complex, complete stock
+    or direct PA-A formation assay asserted. CHEBI:7025 is the PA-A owner, not the
+    clinical mixture. No full-record sign-off. Each edge cites the inspected primary
+    abstract DOI10.1074/jbc.M701490200 or official sequence records. Full main text,
+    figures and supporting information unread. No prior component migration or independent
+    approval.
+  llm_assisted: true

@@ -184,6 +184,7 @@ causal_graph_refs:
 - mupirocin-2007-tailoring-cf-single-mutant-phenotypes
 - mupirocin-2007-tailoring-ouve-single-mutant-phenotypes
 - mupirocin-2007-tailoring-c-double-mutants-and-order
+- mupirocin-2007-muphjk-bounded-genetic-proposals
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -299,4 +300,22 @@ curation_history:
     or full-record sign-off. Preserved all21 previous graph objects/component bytes,
     source fields, stereochemistry, SEEDED status, name discussion, AntibioticMech
     link and prior history. Exact PA-A owner, not the clinical mixture.
+  llm_assisted: true
+- timestamp: '2026-10-06T09:34:40Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added one exact-owner BIOSYNTHESIS component, 13 nodes and 15 DOI-or-URL-cited
+    edges, bounded to the inspected primary abstract DOI10.1074/jbc.M701490200/PMID17383964.
+    Three native sequence examples (MupH/Q8RL63, MupJ/Q8RL62 and MupK/Q8RL61) match
+    AF318063.3 CDS-aware table-11 translations, versioned GenPept and current UniProt.
+    Native NCIMB10586 examples are not confirmed historical stocks; the abstract gives
+    no strain. Study gene products and loci remain separately ungrounded. Paired mupJ/mupK
+    cotranscription requirement is an abstract-level observation; methyl addition
+    and cotranslational coassembly remain inferred, not isolated catalysis or measured
+    physical complex formation. One three-word exact snippet verified in retained
+    PubMed XML; eight total source words with the prior tailoring graphs. Full text,
+    figures and SI unread; no assay endpoint, quantitative yield, carbon numbering,
+    stoichiometry or direct PA-A formation asserted. Preserved all24 prior graph objects/component
+    bytes, source fields, stereochemistry, SEEDED status, name discussion, AntibioticMech
+    link and prior history. No full-record sign-off.
   llm_assisted: true
