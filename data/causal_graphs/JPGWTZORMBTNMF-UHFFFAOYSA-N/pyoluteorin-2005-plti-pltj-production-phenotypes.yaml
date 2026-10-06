@@ -1,0 +1,191 @@
+record_id: CHEBI:156453
+standard_inchi_key: JPGWTZORMBTNMF-UHFFFAOYSA-N
+graph:
+  graph_id: pyoluteorin-2005-plti-pltj-production-phenotypes
+  scope: BIOSYNTHESIS
+  description: Two transport-associated reporter-insertion production phenotypes,
+    bounded to the inspected 2005 abstract and named insertion contexts in PubMed
+    figure captions. Native references and engineered alleles are distinct. No unique
+    exporter, direct transport, defined transporter assembly, pathway order or antimicrobial
+    resistance mechanism asserted. Source-owned producer/cluster grades unchanged.
+    Main text, figure images, tables and SI unread; no full-record sign-off.
+  nodes:
+  - node_id: cluster
+    label: Pf-5 reference pyoluteorin locus
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000127
+  - node_id: production
+    label: Study pyoluteorin production readout
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: native_pltI
+    label: PltI native sequence example (Pf-5)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4KCY2
+  - node_id: insertion_pltI
+    label: Study pltI::inaZ disruption (junctions unresolved)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: pltI_culture
+    label: Study Pf-5 pltI::inaZ production-assay culture
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: native_pltJ
+    label: PltJ native sequence example (Pf-5)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4KCY1
+  - node_id: insertion_pltJ
+    label: Study pltJ::inaZ disruption (junctions unresolved)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: pltJ_culture
+    label: Study Pf-5 pltJ::inaZ production-assay culture
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference_example
+    object: native_pltI
+    notes: AF081920.3 CDS 23452..24465(+), 1-based inclusive; AAV66098.1, 337 aa.
+      CDS-aware table-11 translation matches independent GenPept and current UniProt,
+      unreviewed sequence version1, Pf-5/taxon220664. Native reference is not an intact
+      protein asserted present in the reporter-insertion mutant.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAV66098.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native translation inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4KCY2
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence/strain correspondence; not complete historical
+        assay-stock identity.
+      retrieved_on: '2026-10-06'
+  - subject: insertion_pltI
+    predicate: affects_coding_locus_of
+    object: native_pltI
+    notes: Gene-name correspondence only, not a sequence-resolved mutant protein or
+      a direct transport assay. No isolated protein function inferred.
+    evidence:
+    - reference: DOI:10.1128/AEM.71.11.6900-6909.2005
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract PMID16269724 read and retained as NCBI XML; PubMed figure
+        captions also inspected. Full main text, figure images, tables and SI unread.
+        No exact reporter junctions, polar-effect exclusion, quantitative yield or
+        isolated transport assay adopted.
+      retrieved_on: '2026-10-06'
+  - subject: insertion_pltI
+    predicate: was_present_in
+    object: pltI_culture
+    notes: Reporter insertion rather than a clean deletion. Exact junctions and any
+      downstream polar effects remain unresolved here.
+    evidence:
+    - reference: DOI:10.1128/AEM.71.11.6900-6909.2005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID16269724 read and retained as NCBI XML; PubMed figure
+        captions also inspected. Full main text, figure images, tables and SI unread.
+        No exact reporter junctions, polar-effect exclusion, quantitative yield or
+        isolated transport assay adopted.
+      retrieved_on: '2026-10-06'
+  - subject: pltI_culture
+    predicate: was_reported_to_reduce
+    object: production
+    notes: Reduced production in the study, not abolished production or a measured
+      zero. The abstract does not establish an exclusive pyoluteorin exporter. This
+      edge does not assign direct efflux, physical complex assembly, antimicrobial
+      resistance or a biosynthetic substrate-to-product reaction.
+    evidence:
+    - reference: DOI:10.1128/AEM.71.11.6900-6909.2005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID16269724 read and retained as NCBI XML; PubMed figure
+        captions also inspected. Full main text, figure images, tables and SI unread.
+        No exact reporter junctions, polar-effect exclusion, quantitative yield or
+        isolated transport assay adopted.
+      retrieved_on: '2026-10-06'
+      snippet: greatly reduced pyoluteorin production
+  - subject: cluster
+    predicate: encodes_native_reference_example
+    object: native_pltJ
+    notes: AF081920.3 CDS 24462..26231(+), 1-based inclusive; AAV66099.1, 589 aa.
+      CDS-aware table-11 translation matches independent GenPept and current UniProt,
+      unreviewed sequence version1, Pf-5/taxon220664. Native reference is not an intact
+      protein asserted present in the reporter-insertion mutant.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAV66099.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native translation inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4KCY1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence/strain correspondence; not complete historical
+        assay-stock identity.
+      retrieved_on: '2026-10-06'
+  - subject: insertion_pltJ
+    predicate: affects_coding_locus_of
+    object: native_pltJ
+    notes: Gene-name correspondence only, not a sequence-resolved mutant protein or
+      a direct transport assay. No isolated protein function inferred.
+    evidence:
+    - reference: DOI:10.1128/AEM.71.11.6900-6909.2005
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract PMID16269724 read and retained as NCBI XML; PubMed figure
+        captions also inspected. Full main text, figure images, tables and SI unread.
+        No exact reporter junctions, polar-effect exclusion, quantitative yield or
+        isolated transport assay adopted.
+      retrieved_on: '2026-10-06'
+  - subject: insertion_pltJ
+    predicate: was_present_in
+    object: pltJ_culture
+    notes: Reporter insertion rather than a clean deletion. Exact junctions and any
+      downstream polar effects remain unresolved here.
+    evidence:
+    - reference: DOI:10.1128/AEM.71.11.6900-6909.2005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID16269724 read and retained as NCBI XML; PubMed figure
+        captions also inspected. Full main text, figure images, tables and SI unread.
+        No exact reporter junctions, polar-effect exclusion, quantitative yield or
+        isolated transport assay adopted.
+      retrieved_on: '2026-10-06'
+  - subject: pltJ_culture
+    predicate: was_reported_to_reduce
+    object: production
+    notes: Reduced production in the study, not abolished production or a measured
+      zero. The abstract does not establish an exclusive pyoluteorin exporter. This
+      edge does not assign direct efflux, physical complex assembly, antimicrobial
+      resistance or a biosynthetic substrate-to-product reaction.
+    evidence:
+    - reference: DOI:10.1128/AEM.71.11.6900-6909.2005
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract PMID16269724 read and retained as NCBI XML; PubMed figure
+        captions also inspected. Full main text, figure images, tables and SI unread.
+        No exact reporter junctions, polar-effect exclusion, quantitative yield or
+        isolated transport assay adopted.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T12:07:58Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component; reviewed baseline 35f8bc3299f577a46ec097e3fee3b8aa9c697aff.
+    Added one exact-owner BIOSYNTHESIS component with 8 nodes and 8 DOI-or-stable-URL-cited
+    edges. Native Pf-5 PltI/Q4KCY2 and PltJ/Q4KCY1 references exactly match AF081920.3
+    CDS-aware table-11 translations, independently retrieved GenPept and current UniProt.
+    Native references are distinct from unresolved inaZ insertion alleles and historical
+    study cultures. The inspected primary abstract DOI:10.1128/AEM.71.11.6900-6909.2005,
+    PMID:16269724 supports reduced production, not complete loss, exclusive export,
+    direct transport or isolated catalysis. Exact insertion junctions and polar effects
+    remain unresolved. Four quoted words checked in retained PubMed XML. Main text,
+    figure images and SI unread. Preserved all three prior inline graphs, source fields,
+    stereochemistry, SEEDED status, discussion, AntibioticMech link and history. Component
+    layout avoids the 64-KiB owner limit without removing evidence. No antimicrobial-resistance
+    claim or full-record sign-off.
+  llm_assisted: true

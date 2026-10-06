@@ -1213,6 +1213,8 @@ causal_graphs:
         exact lesions, culture endpoints, detection thresholds and isolated activities
         not established here.
       retrieved_on: '2026-10-06'
+causal_graph_refs:
+- pyoluteorin-2005-plti-pltj-production-phenotypes
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -1258,4 +1260,20 @@ curation_history:
     the complete prior 6O6E graph, source fields, stereochemistry, SEEDED status,
     shared-structure discussion, AntibioticMech link and prior history. No producer-grade
     upgrade or full-record sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-06T12:07:58Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added one exact-owner BIOSYNTHESIS component with 8 nodes and 8 DOI-or-stable-URL-cited
+    edges. Native Pf-5 PltI/Q4KCY2 and PltJ/Q4KCY1 references exactly match AF081920.3
+    CDS-aware table-11 translations, independently retrieved GenPept and current UniProt.
+    Native references are distinct from unresolved inaZ insertion alleles and historical
+    study cultures. The inspected primary abstract DOI:10.1128/AEM.71.11.6900-6909.2005,
+    PMID:16269724 supports reduced production, not complete loss, exclusive export,
+    direct transport or isolated catalysis. Exact insertion junctions and polar effects
+    remain unresolved. Four quoted words checked in retained PubMed XML. Main text,
+    figure images and SI unread. Preserved all three prior inline graphs, source fields,
+    stereochemistry, SEEDED status, discussion, AntibioticMech link and history. Component
+    layout avoids the 64-KiB owner limit without removing evidence. No antimicrobial-resistance
+    claim or full-record sign-off.
   llm_assisted: true
