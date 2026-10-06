@@ -1,0 +1,144 @@
+record_id: naturalproductmech:mibig-6fc5164982
+standard_inchi_key: JIEMCPGFAXNCQW-BFHPBESDSA-N
+graph:
+  graph_id: thiomarinol-tmlwz-tmlw-resting-cell-assay
+  scope: BIOSYNTHESIS
+  description: TmlW whole-cell activity on a mupirocin surrogate, with cellular redox
+    context retained. Source-assigned surrogate products remain ungrounded. Native
+    sequence references do not establish complete engineered proteoforms, native pathway
+    timing or full thiomarinol reconstitution. Main-text-bounded curation, not full-method
+    or full-record sign-off.
+  nodes:
+  - node_id: cluster
+    label: Thiomarinol locus on native pTML1
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0001115
+  - node_id: TmlW
+    label: Native deposited TmlW sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:CBK62744.1
+  - node_id: expressed
+    label: Study heterologously expressed TmlW
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: cells
+    label: Study TmlW-overexpressing resting E. coli cells
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: w5
+    label: Supplied mupirocin W5
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: conversion
+    label: TmlW whole-cell biotransformation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: z2
+    label: Source-assigned mupirocin Z2
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: TmlW
+    notes: FN689524.1 CDS 83143..84546(+),1-based inclusive; CBK62744.1,467 aa. CDS-aware
+      table-11 translation matches original GenPept,WP_013933296.1 and UPI00021172A4.
+      Native source is Pseudoalteromonas sp. SANK 73390,taxon747457,pTML1. This identifies
+      the native reference, not a complete engineered construct.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native deposited CDS and source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBK62744.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native sequence.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/WP_013933296.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS/GenPept/RefSeq/archive sequence comparison.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/F8J3E2
+      evidence_type: DATABASE_ASSERTION
+      notes: Inactive/deleted because not part of a reference proteome; not selected
+        as a live UniProt example.
+      retrieved_on: '2026-10-06'
+  - subject: TmlW
+    predicate: is_native_sequence_reference_for
+    object: expressed
+    notes: Gene-matched reference only; complete insert, fusion and mature sequence
+      remain unverified.
+    evidence:
+    - reference: DOI:10.1039/C9SC06192D
+      evidence_type: CURATOR_INFERENCE
+      notes: Public PMC8159325 main scientific text inspected. SI and separate figure
+        routes were challenge-blocked; no detailed construct sequence, preparation
+        recipe, quantitative kinetics or figure-level visual audit is claimed.
+      retrieved_on: '2026-10-06'
+  - subject: expressed
+    predicate: was_heterologously_expressed_in
+    object: cells
+    notes: Main-text expression context; no exact host-strain identifier, vector or
+      tag is selected here.
+    evidence:
+    - reference: DOI:10.1039/C9SC06192D
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Public PMC8159325 main scientific text inspected. SI and separate figure
+        routes were challenge-blocked; no detailed construct sequence, preparation
+        recipe, quantitative kinetics or figure-level visual audit is claimed.
+      retrieved_on: '2026-10-06'
+  - subject: cells
+    predicate: were_used_in
+    object: conversion
+    notes: Whole-cell experiment with glucose and endogenous redox support, not isolated
+      TmlW catalysis.
+    evidence:
+    - reference: DOI:10.1039/C9SC06192D
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Public PMC8159325 main scientific text inspected. SI and separate figure
+        routes were challenge-blocked; no detailed construct sequence, preparation
+        recipe, quantitative kinetics or figure-level visual audit is claimed.
+      retrieved_on: '2026-10-06'
+      snippet: whole-cell system
+  - subject: w5
+    predicate: was_supplied_in
+    object: conversion
+    notes: Surrogate substrate; no native marinolic-acid identity or quantitative
+      input measurement adopted.
+    evidence:
+    - reference: DOI:10.1039/C9SC06192D
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Public PMC8159325 main scientific text inspected. SI and separate figure
+        routes were challenge-blocked; no detailed construct sequence, preparation
+        recipe, quantitative kinetics or figure-level visual audit is claimed.
+      retrieved_on: '2026-10-06'
+  - subject: conversion
+    predicate: yielded_source_assigned_product
+    object: z2
+    notes: Main text reports LC-MS followed by product isolation/NMR assignment. No
+      kinetic rate, replicate count, isolated epoxide intermediate or purified-enzyme
+      sufficiency inferred.
+    evidence:
+    - reference: DOI:10.1039/C9SC06192D
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Public PMC8159325 main scientific text inspected. SI and separate figure
+        routes were challenge-blocked; no detailed construct sequence, preparation
+        recipe, quantitative kinetics or figure-level visual audit is claimed.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T04:51:34Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a new exact-owner component for naturalproductmech:mibig-6fc5164982,
+    owner baseline commit b288c2ecca395c874b2b12bd163be3ade837e4bd; no prior graph
+    migrated. TmlW whole-cell activity on a mupirocin surrogate, with cellular redox
+    context retained. Source-assigned surrogate products remain ungrounded. Native
+    sequence references do not establish complete engineered proteoforms, native pathway
+    timing or full thiomarinol reconstitution. Main-text-bounded curation, not full-method
+    or full-record sign-off. Every edge cites DOI10.1039/C9SC06192D or official native-sequence
+    URLs. Main text only; SI/figure routes blocked, no full-method or visual figure
+    review. Native GenPept references are not complete engineered proteins; deleted
+    UniProt examples rejected. Author-agent issue#597 review, not independent approval.
+  llm_assisted: true
