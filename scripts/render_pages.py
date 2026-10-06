@@ -26,6 +26,7 @@ says which model version decided it rather than presenting it as an assertion.
 from __future__ import annotations
 
 import argparse
+import csv
 import filecmp
 import json
 import shutil
@@ -33,8 +34,10 @@ import subprocess
 import sys
 import tempfile
 from collections import Counter
+from functools import lru_cache
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote
 
 import yaml
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -43,6 +46,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 TEMPLATES_DIR = REPO_ROOT / "src" / "naturalproductmech" / "templates"
 CORPUS_DIR = REPO_ROOT / "data" / "natural_products"
 PAGES_DIR = REPO_ROOT / "pages"
+SITE_BASE = "https://culturebotai.github.io/NaturalProductMech/pages/"
 CHEMICAL_MAP_ARTIFACT = REPO_ROOT / "data" / "embeddings" / "chemical-structure-map.json"
 
 PATHWAY_TITLES = {
@@ -131,6 +135,40 @@ def pathway_endpoint(item: dict[str, Any], singular: str, plural: str) -> str:
     return item.get(singular) or "ungrounded"
 
 
+def search_identifiers(doc: dict[str, Any]) -> list[str]:
+    """Presentation aliases from the record; no identity or map changes."""
+    return list(dict.fromkeys(filter(None, [doc["identifier"],
+        (doc.get("chemical_structure") or {}).get("standard_inchi_key"),
+        *(doc.get("xrefs") or []),
+        *(s.get("source_id") for s in doc.get("source_concepts") or [])])))
+
+
+@lru_cache(maxsize=1)
+def antibiotic_routes() -> dict[str, list[dict[str, str]]]:
+    """Use the target's routes in the already pinned structure-join inventory."""
+    result: dict[str, list[dict[str, str]]] = {}
+    source = REPO_ROOT / "data/raw/antibioticmech_inchikeys.tsv"
+    if source.exists():
+        with source.open(encoding="utf-8", newline="") as stream:
+            for row in csv.DictReader(stream, delimiter="\t"):
+                result.setdefault(row["identifier"], []).append(row)
+    return result
+
+
+def related_link(link: dict[str, Any], structure: dict[str, Any]) -> dict[str, Any]:
+    result = dict(link)
+    if link.get("corpus") == "AntibioticMech":
+        rows = [r for r in antibiotic_routes().get(link.get("identifier"), [])
+                if r["standard_inchi_key"] == structure.get("standard_inchi_key")
+                and r["corpus_commit"].startswith(link.get("source_version") or "")]
+        routes = {(r["antimicrobial_class"].lower(), r["slug"]) for r in rows}
+        if len(routes) == 1:
+            category, slug = next(iter(routes))
+            result["url"] = ("https://culturebotai.github.io/AntibioticMech/pages/"
+                             f"{quote(category, safe='')}/{quote(slug, safe='')}.html")
+    return result
+
+
 def build_record(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
     producers = []
     for p in doc.get("producer_organisms") or []:
@@ -146,14 +184,24 @@ def build_record(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
     for t in doc.get("molecular_targets") or []:
         targets.append({**t, "measurement": measurement(t), "reference": first_reference(t)})
     bioactivities = []
+    seen_bioactivities: set[str] = set()
+    duplicate_bioactivities = 0
     for b in doc.get("bioactivities") or []:
+        # Full source equality only: a missing target, changed condition, or
+        # different evidence makes a distinct entry even if its value matches.
+        key = json.dumps(b, sort_keys=True, ensure_ascii=False)
+        if key in seen_bioactivities:
+            duplicate_bioactivities += 1
+            continue
+        seen_bioactivities.add(key)
         result = b.get("call") or measurement({
             "measurement_type": b.get("measurement_type"),
             "measurement_value": b.get("value"),
             "measurement_units": b.get("units"),
         })
         bioactivities.append({"assay": b.get("assay", ""), "result": result,
-                              "reference": first_reference(b)})
+                              "reference": first_reference(b), "source": b,
+                              "target": b.get("target_enzyme") or "Not recorded"})
     steps = []
     for s in doc.get("biosynthetic_pathway") or []:
         steps.append({
@@ -180,6 +228,8 @@ def build_record(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
         "synonyms": [s["value"] for s in doc.get("synonyms") or []],
         "definition": doc.get("definition"),
         "grounding_status": doc.get("grounding_status", ""),
+        "grounding_note": doc.get("grounding_notes"),
+        "search_identifiers": search_identifiers(doc),
         "curation_status": doc.get("curation_status", ""),
         "bioactivity_summary": doc.get("bioactivity_summary") or [],
         "structure": doc.get("chemical_structure") or {},
@@ -194,9 +244,11 @@ def build_record(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
         "occurrences_capped": None,
         "clusters": clusters,
         "targets": targets,
-        "bioactivities": bioactivities[:25],
+        "bioactivities": bioactivities,
+        "bioactivity_duplicates": duplicate_bioactivities,
         "bioactivity_total": len(bioactivities),
-        "related": doc.get("related_records") or [],
+        "related": [related_link(link, doc.get("chemical_structure") or {})
+                    for link in doc.get("related_records") or []],
         "discussions": [d for d in doc.get("discussions") or []
                         if (d.get("status") or "OPEN") == "OPEN"],
         "pathway_steps": steps,
@@ -254,6 +306,11 @@ def build(out_dir: Path) -> tuple[int, int]:
         causal_claims += built["causal"]
         occurrence_records += 1 if built["occurrences"] else 0
 
+    label_counts = Counter(doc.get("label", "").casefold() for _, doc in records)
+    for items in by_pathway.values():
+        for item in items:
+            item["duplicate_label"] = label_counts[item["label"].casefold()] > 1
+
     pathways = []
     for key in PATHWAY_TITLES:
         items = sorted(by_pathway.get(key, []), key=lambda r: (r["label"].lower(), r["identifier"]))
@@ -289,7 +346,7 @@ def build(out_dir: Path) -> tuple[int, int]:
     (out_dir / "browse.html").write_text(env.get_template("browse.html").render(
         root="", total=len(records), pathways=pathways), encoding="utf-8")
     (out_dir / "404.html").write_text(env.get_template("not_found.html").render(
-        root=""), encoding="utf-8")
+        root=SITE_BASE), encoding="utf-8")
 
     # The corpus map, when its JSON has been built. Committed and small, so the
     # site renders it whenever it is there and skips it otherwise — a checkout
@@ -328,6 +385,10 @@ def build(out_dir: Path) -> tuple[int, int]:
             encoding="utf-8")
         shutil.copyfile(TEMPLATES_DIR / "chemical_map.js", out_dir / "chemical-map.js")
         (out_dir / "data").mkdir(exist_ok=True)
+        (out_dir / "data" / "chemical-search.json").write_text(
+            json.dumps({doc["identifier"]: search_identifiers(doc) for _, doc in records},
+                       ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n",
+            encoding="utf-8")
         shutil.copyfile(CHEMICAL_MAP_ARTIFACT,
                         out_dir / "data" / "chemical-structure-map.json")
 
@@ -369,6 +430,8 @@ def main(argv: list[str] | None = None) -> int:
 
     if not args.check:
         written, pathways = build(args.out)
+        if args.out.resolve() == PAGES_DIR.resolve():
+            shutil.copyfile(args.out / "404.html", REPO_ROOT / "404.html")
         print(f"rendered {written} record pages across {pathways} pathways "
               f"-> {args.out.relative_to(REPO_ROOT)} (corpus at {corpus_commit()})")
         return 0
@@ -380,6 +443,10 @@ def main(argv: list[str] | None = None) -> int:
             print("pages/ is not rendered; run `just render`", file=sys.stderr)
             return 1
         differences = _diff(expected, args.out)
+        if args.out.resolve() == PAGES_DIR.resolve():
+            root_404 = REPO_ROOT / "404.html"
+            if not root_404.exists() or root_404.read_bytes() != (expected / "404.html").read_bytes():
+                differences.append("../404.html: missing or stale publication-root recovery page")
         if differences:
             print("pages/ is out of step with the corpus:", file=sys.stderr)
             for line in differences[:20]:

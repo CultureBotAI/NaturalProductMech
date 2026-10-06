@@ -24,6 +24,10 @@
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 <span class="tag">enzyme inhibitor</span></p>
+<div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/amino_acids_and_peptides/polymyxin.yaml">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
 
 <h2>Structure</h2>
 <div class="scroll"><table>
@@ -54,9 +58,9 @@ same claim.</p>
 </tr>
 </table></div>
 
-<h2>Occurrences <span class="tag">0</span></h2>
+<h2 id="occurrences">Occurrences <span class="tag">0</span></h2>
 <p class="sub">None cited.</p>
-<h2>Biosynthetic gene clusters <span class="tag">1</span></h2>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
 <div class="scroll"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
@@ -75,27 +79,85 @@ isolation report left it.</p>
 
 
 <h2>Bioactivities <span class="tag">19</span></h2>
+<p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
 <div class="scroll"><table>
-<tr><th>Assay</th><th>Result</th><th>Reference</th></tr>
-<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in MCF 10a normal breast cells.</td><td>16.7889 uM</td><td class="mono">pubchem.aid:624296</td></tr>
-<tr><td>Confirmation of Inhibitors Targeting the Menin-MLL Interaction in MLL Related Leukemias: Competition With Fluorescein Labeled MLL-derived Peptide</td><td>10 uM</td><td class="mono">pubchem.aid:2783</td></tr>
-<tr><td>Confirmation of Inhibitors Targeting the Menin-MLL Interaction in MLL Related Leukemias: Competition With Fluorescein Labeled MLL-derived Peptide</td><td>10 uM</td><td class="mono">pubchem.aid:2783</td></tr>
-<tr><td>Confirmation of Inhibitors Targeting the Menin-MLL Interaction in MLL Related Leukemias: Competition With Texas Red Labeled MLL-derived Mutant Peptide</td><td>7.0795 uM</td><td class="mono">pubchem.aid:2782</td></tr>
-<tr><td>Confirmation of Inhibitors Targeting the Menin-MLL Interaction in MLL Related Leukemias: Competition With Texas Red Labeled MLL-derived Mutant Peptide</td><td>7.0795 uM</td><td class="mono">pubchem.aid:2782</td></tr>
-<tr><td>Confirmation qHTS Assay for Inhibitors of RecQ-Like Dna Helicase 1 (RECQ1)</td><td>2.8184 uM</td><td class="mono">pubchem.aid:2708</td></tr>
-<tr><td>Counterscreen for BLMA Inhibitors: ADP Fluorescence Polarization Displacement Assay</td><td>4.4668 uM</td><td class="mono">pubchem.aid:2712</td></tr>
-<tr><td>Counterscreen for RECQ1 Inhibitors: ADP Fluorescence Polarization Displacement Assay</td><td>4.4668 uM</td><td class="mono">pubchem.aid:2711</td></tr>
-<tr><td>Inhibitors of USP1/UAF1: Pilot qHTS</td><td>50.1187 uM</td><td class="mono">pubchem.aid:504865</td></tr>
-<tr><td>S16 Schwann cell viability assay (CellTiter-Glo assay)</td><td>0.0102 uM</td><td class="mono">pubchem.aid:624031</td></tr>
-<tr><td>qHTS Assay for Compounds Blocking the Interaction Between CBF-beta and RUNX1 for the Treatment of Acute Myeloid Leukemia</td><td>4.4668 uM</td><td class="mono">pubchem.aid:1477</td></tr>
-<tr><td>qHTS Assay for Inhibitors of 12-hLO (12-human lipoxygenase)</td><td>8.9125 uM</td><td class="mono">pubchem.aid:1452</td></tr>
-<tr><td>qHTS Assay for Inhibitors of 15-hLO-2 (15-human lipoxygenase 2)</td><td>0.631 uM</td><td class="mono">pubchem.aid:881</td></tr>
-<tr><td>qHTS Assay for Inhibitors of Bacillus subtilis Sfp phosphopantetheinyl transferase (PPTase)</td><td>28.1838 uM</td><td class="mono">pubchem.aid:1490</td></tr>
-<tr><td>qHTS Assay for Inhibitors of Bloom&#39;s syndrome helicase (BLM)</td><td>7.9433 uM</td><td class="mono">pubchem.aid:2528</td></tr>
-<tr><td>qHTS Assay for Inhibitors of RecQ-Like Dna Helicase 1 (RECQ1)</td><td>5.0119 uM</td><td class="mono">pubchem.aid:2549</td></tr>
-<tr><td>qHTS Assay for Lipid Storage Modulators</td><td>11.2202 uM</td><td class="mono">pubchem.aid:1519</td></tr>
-<tr><td>qHTS Assay to Find Inhibitors of T. brucei phosphofructokinase: hit validation</td><td>3.9811 uM</td><td class="mono">pubchem.aid:492961</td></tr>
-<tr><td>A screen for compounds that inhibit replication of Vibrio cholerae chromosome II</td><td>ACTIVE</td><td class="mono">pubchem.aid:504770</td></tr>
+<tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
+<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in MCF 10a normal breast cells.</td><td>16.7889 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624296</summary><dl><dt>assay</dt><dd>A quantitative high throughput screen for small molecules that induce DNA re-replication in MCF 10a normal breast cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624296</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory. Target accession NP_056979 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>16.7889</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Confirmation of Inhibitors Targeting the Menin-MLL Interaction in MLL Related Leukemias: Competition With Fluorescein Labeled MLL-derived Peptide</td><td>10 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2783</summary><dl><dt>assay</dt><dd>Confirmation of Inhibitors Targeting the Menin-MLL Interaction in MLL Related Leukemias: Competition With Fluorescein Labeled MLL-derived Peptide</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2783</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2783, deposited by NCGC; assay type Confirmatory. Target accession NP_000235 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>10.0</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Confirmation of Inhibitors Targeting the Menin-MLL Interaction in MLL Related Leukemias: Competition With Fluorescein Labeled MLL-derived Peptide</td><td>10 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2783</summary><dl><dt>assay</dt><dd>Confirmation of Inhibitors Targeting the Menin-MLL Interaction in MLL Related Leukemias: Competition With Fluorescein Labeled MLL-derived Peptide</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2783</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2783, deposited by NCGC; assay type Confirmatory. Target accession NP_005924 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>10.0</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Confirmation of Inhibitors Targeting the Menin-MLL Interaction in MLL Related Leukemias: Competition With Texas Red Labeled MLL-derived Mutant Peptide</td><td>7.0795 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2782</summary><dl><dt>assay</dt><dd>Confirmation of Inhibitors Targeting the Menin-MLL Interaction in MLL Related Leukemias: Competition With Texas Red Labeled MLL-derived Mutant Peptide</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2782</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2782, deposited by NCGC; assay type Confirmatory. Target accession NP_000235 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>7.0795</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Confirmation of Inhibitors Targeting the Menin-MLL Interaction in MLL Related Leukemias: Competition With Texas Red Labeled MLL-derived Mutant Peptide</td><td>7.0795 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2782</summary><dl><dt>assay</dt><dd>Confirmation of Inhibitors Targeting the Menin-MLL Interaction in MLL Related Leukemias: Competition With Texas Red Labeled MLL-derived Mutant Peptide</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2782</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2782, deposited by NCGC; assay type Confirmatory. Target accession NP_005924 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>7.0795</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Confirmation qHTS Assay for Inhibitors of RecQ-Like Dna Helicase 1 (RECQ1)</td><td>2.8184 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2708</summary><dl><dt>assay</dt><dd>Confirmation qHTS Assay for Inhibitors of RecQ-Like Dna Helicase 1 (RECQ1)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2708</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2708, deposited by NCGC; assay type Confirmatory. Target accession 2WWY_A was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>2.8184</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Counterscreen for BLMA Inhibitors: ADP Fluorescence Polarization Displacement Assay</td><td>4.4668 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2712</summary><dl><dt>assay</dt><dd>Counterscreen for BLMA Inhibitors: ADP Fluorescence Polarization Displacement Assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2712</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2712, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>4.4668</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Counterscreen for RECQ1 Inhibitors: ADP Fluorescence Polarization Displacement Assay</td><td>4.4668 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2711</summary><dl><dt>assay</dt><dd>Counterscreen for RECQ1 Inhibitors: ADP Fluorescence Polarization Displacement Assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2711</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2711, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>4.4668</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Inhibitors of USP1/UAF1: Pilot qHTS</td><td>50.1187 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:504865</summary><dl><dt>assay</dt><dd>Inhibitors of USP1/UAF1: Pilot qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:504865</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504865, deposited by NCGC; assay type Confirmatory. Target accession AAH18745 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>50.1187</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>S16 Schwann cell viability assay (CellTiter-Glo assay)</td><td>0.0102 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624031</summary><dl><dt>assay</dt><dd>S16 Schwann cell viability assay (CellTiter-Glo assay)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624031</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624031, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0102</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Compounds Blocking the Interaction Between CBF-beta and RUNX1 for the Treatment of Acute Myeloid Leukemia</td><td>4.4668 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1477</summary><dl><dt>assay</dt><dd>qHTS Assay for Compounds Blocking the Interaction Between CBF-beta and RUNX1 for the Treatment of Acute Myeloid Leukemia</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1477</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1477, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>4.4668</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Inhibitors of 12-hLO (12-human lipoxygenase)</td><td>8.9125 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1452</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of 12-hLO (12-human lipoxygenase)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1452</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1452, deposited by NCGC; assay type Confirmatory. Target accession NP_000688 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>8.9125</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Inhibitors of 15-hLO-2 (15-human lipoxygenase 2)</td><td>0.631 uM</td><td class="mono">UniProtKB:O15296</td><td><details><summary>pubchem.aid:881</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of 15-hLO-2 (15-human lipoxygenase 2)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:881</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 881, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.631</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:O15296</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Inhibitors of Bacillus subtilis Sfp phosphopantetheinyl transferase (PPTase)</td><td>28.1838 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1490</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of Bacillus subtilis Sfp phosphopantetheinyl transferase (PPTase)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1490</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1490, deposited by NCGC; assay type Confirmatory. Target accession AAG24257 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>28.1838</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Inhibitors of Bloom&#39;s syndrome helicase (BLM)</td><td>7.9433 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2528</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of Bloom&#39;s syndrome helicase (BLM)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2528</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2528, deposited by NCGC; assay type Confirmatory. Target accession NP_000048 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>7.9433</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Inhibitors of RecQ-Like Dna Helicase 1 (RECQ1)</td><td>5.0119 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2549</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of RecQ-Like Dna Helicase 1 (RECQ1)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2549</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2549, deposited by NCGC; assay type Confirmatory. Target accession 2WWY_A was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>5.0119</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Lipid Storage Modulators</td><td>11.2202 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1519</summary><dl><dt>assay</dt><dd>qHTS Assay for Lipid Storage Modulators</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1519</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1519, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>11.2202</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay to Find Inhibitors of T. brucei phosphofructokinase: hit validation</td><td>3.9811 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:492961</summary><dl><dt>assay</dt><dd>qHTS Assay to Find Inhibitors of T. brucei phosphofructokinase: hit validation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:492961</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 492961, deposited by NCGC; assay type Confirmatory. Target accession XP_843920 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>3.9811</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>A screen for compounds that inhibit replication of Vibrio cholerae chromosome II</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:504770</summary><dl><dt>assay</dt><dd>A screen for compounds that inhibit replication of Vibrio cholerae chromosome II</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:504770</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504770, deposited by ICCB-Longwood/NSRB Screening Facility, Harvard Medical School; assay type Other. Target accession AAF95916 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd></dl>
+</details></td></tr>
 </table></div>
 
 

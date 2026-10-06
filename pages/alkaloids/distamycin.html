@@ -24,6 +24,10 @@
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 <span class="tag">antiparasitic</span><span class="tag">enzyme inhibitor</span></p>
+<div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/distamycin.yaml">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
 
 <h2>Structure</h2>
 <div class="scroll"><table>
@@ -53,9 +57,9 @@ same claim.</p>
 </tr>
 </table></div>
 
-<h2>Occurrences <span class="tag">0</span></h2>
+<h2 id="occurrences">Occurrences <span class="tag">0</span></h2>
 <p class="sub">None cited.</p>
-<h2>Biosynthetic gene clusters <span class="tag">1</span></h2>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
 <div class="scroll"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
@@ -73,16 +77,34 @@ isolation report left it.</p>
 
 
 
-<h2>Bioactivities <span class="tag">7</span></h2>
+<h2>Bioactivities <span class="tag">6</span></h2>
+<p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences. 1 identical imported entry was collapsed for display only.</p>
 <div class="scroll"><table>
-<tr><th>Assay</th><th>Result</th><th>Reference</th></tr>
-<tr><td>Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 48 hour incubation</td><td>3.3808 uM</td><td class="mono">pubchem.aid:504832</td></tr>
-<tr><td>S16 Schwann cell PMP22 intronic element firefly luciferase assay</td><td>36.1254 uM</td><td class="mono">pubchem.aid:624032</td></tr>
-<tr><td>qHTS assay for small molecule disruptors of the mitochondrial membrane potential</td><td>33.4915 uM</td><td class="mono">pubchem.aid:720635</td></tr>
-<tr><td>qHTS for Inhibitors of Polymerase Kappa</td><td>0.7943 uM</td><td class="mono">pubchem.aid:588579</td></tr>
-<tr><td>qHTS for Inhibitors of human tyrosyl-DNA phosphodiesterase 1 (TDP1): qHTS in cells in presence of CPT</td><td>0.0188 uM</td><td class="mono">pubchem.aid:686979</td></tr>
-<tr><td>qHTS profiling for inhibitors of Plasmodium falciparum proliferation</td><td>ACTIVE</td><td class="mono">PMID:21817045</td></tr>
-<tr><td>qHTS profiling for inhibitors of Plasmodium falciparum proliferation</td><td>ACTIVE</td><td class="mono">PMID:21817045</td></tr>
+<tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
+<tr><td>Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 48 hour incubation</td><td>3.3808 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:504832</summary><dl><dt>assay</dt><dd>Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 48 hour incubation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:504832</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504832, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>3.3808</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>S16 Schwann cell PMP22 intronic element firefly luciferase assay</td><td>36.1254 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624032</summary><dl><dt>assay</dt><dd>S16 Schwann cell PMP22 intronic element firefly luciferase assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624032</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624032, deposited by NCGC; assay type Confirmatory. Target accession NP_058733 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>36.1254</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>qHTS assay for small molecule disruptors of the mitochondrial membrane potential</td><td>33.4915 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:720635</summary><dl><dt>assay</dt><dd>qHTS assay for small molecule disruptors of the mitochondrial membrane potential</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:720635</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 720635, deposited by 824; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>33.4915</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>qHTS for Inhibitors of Polymerase Kappa</td><td>0.7943 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:588579</summary><dl><dt>assay</dt><dd>qHTS for Inhibitors of Polymerase Kappa</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:588579</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 588579, deposited by NCGC; assay type Confirmatory. Target accession NP_057302 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.7943</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>qHTS for Inhibitors of human tyrosyl-DNA phosphodiesterase 1 (TDP1): qHTS in cells in presence of CPT</td><td>0.0188 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:686979</summary><dl><dt>assay</dt><dd>qHTS for Inhibitors of human tyrosyl-DNA phosphodiesterase 1 (TDP1): qHTS in cells in presence of CPT</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:686979</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 686979, deposited by NCGC; assay type Confirmatory. Target accession AAI07878 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0188</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>qHTS profiling for inhibitors of Plasmodium falciparum proliferation</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>PMID:21817045</summary><dl><dt>assay</dt><dd>qHTS profiling for inhibitors of Plasmodium falciparum proliferation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:21817045</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504749, deposited by NCGC; assay type Other.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>ANTIPARASITIC</dd></dl>
+</details></td></tr>
 </table></div>
 
 

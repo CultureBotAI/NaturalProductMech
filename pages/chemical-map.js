@@ -6,6 +6,9 @@
 
   const canvas = document.getElementById("map-canvas");
   const context = canvas.getContext("2d");
+  const resultCount = document.getElementById("map-search-count");
+  const showMore = document.getElementById("map-show-more");
+  let resultLimit = 20;
   const search = document.getElementById("map-search");
   const classFilter = document.getElementById("map-class");
   const colorMode = document.getElementById("map-color");
@@ -198,20 +201,24 @@
   function updateResults() {
     const query = search.value.trim().toLocaleLowerCase();
     results.replaceChildren();
+    showMore.hidden = true;
+    resultCount.textContent = "";
     if (!query) {
       const item = document.createElement("li");
       item.textContent = "Enter a name, synonym, or identifier.";
       results.append(item);
       return;
     }
-    const matches = state.visible.filter((record) => record.search.includes(query)).slice(0, 20);
+    const matches = state.visible.filter((record) => record.search.includes(query));
+    resultCount.textContent = `${matches.length} matching compounds; ${Math.min(matches.length, resultLimit)} shown.`;
+    showMore.hidden = matches.length <= resultLimit;
     if (!matches.length) {
       const item = document.createElement("li");
       item.textContent = "No visible compounds match.";
       results.append(item);
       return;
     }
-    matches.forEach((record) => {
+    matches.slice(0, resultLimit).forEach((record) => {
       const item = document.createElement("li");
       const button = document.createElement("button");
       button.type = "button";
@@ -225,6 +232,7 @@
   }
 
   function applyFilters() {
+    resultLimit = 20;
     const selectedClass = classFilter.value;
     state.visible = state.records.filter(
       (record) => !selectedClass || record.np_pathway === selectedClass
@@ -256,9 +264,15 @@
       const response = await fetch(root.dataset.source);
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const artifact = await response.json();
+      const aliasesResponse = await fetch(root.dataset.identifiers);
+      if (!aliasesResponse.ok) throw new Error(`Identifier index HTTP ${aliasesResponse.status}`);
+      const aliases = await aliasesResponse.json();
+      if (Object.keys(aliases).length !== artifact.records.length || artifact.records.some(
+        (record) => !Array.isArray(aliases[record.identifier]) || aliases[record.identifier].some(
+          (value) => typeof value !== "string"))) throw new Error("Identifier index does not match map records");
       state.records = artifact.records.map((record) => ({
         ...record,
-        search: [record.identifier, record.label, record.compound_classes, ...record.synonyms]
+        search: [record.identifier, record.label, record.compound_classes, ...record.synonyms, ...aliases[record.identifier]]
           .join("\n").toLocaleLowerCase()
       }));
       state.records.forEach((record) => state.byId.set(record.identifier, record));
@@ -289,7 +303,8 @@
     }
   }
 
-  search.addEventListener("input", updateResults);
+  search.addEventListener("input", () => { resultLimit = 20; updateResults(); });
+  showMore.addEventListener("click", () => { resultLimit += 20; updateResults(); });
   classFilter.addEventListener("change", applyFilters);
   colorMode.addEventListener("change", () => {
     rebuildLegend();

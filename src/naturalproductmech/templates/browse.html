@@ -14,7 +14,7 @@
 <h2>{{ pathway.title }} <span class="tag">{{ pathway.count }}</span></h2>
 <ul class="records">
 {% for record in pathway.records %}
-  <li data-search="{{ record.label }} {{ record.identifier }} {{ record.synonyms|join(' ') }} {{ pathway.title }}"><a href="{{ pathway.slug }}/{{ record.slug }}.html">{{ record.label }}</a></li>
+  <li data-search="{{ record.label }} {{ record.search_identifiers|join(' ') }} {{ record.synonyms|join(' ') }} {{ pathway.title }}"><a href="{{ pathway.slug }}/{{ record.slug }}.html">{{ record.label }}</a>{% if record.duplicate_label %} <span class="mono">{{ record.identifier }}</span>{% endif %}</li>
 {% endfor %}
 </ul>
 </section>

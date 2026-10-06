@@ -49,14 +49,14 @@ some records would be an accessibility failure rather than a limitation.</p>
   var data = JSON.parse(document.getElementById("map-data").textContent);
   var cv = document.getElementById("corpus-map"), cx = cv.getContext("2d");
   var hover = document.getElementById("map-hover");
-  var css = getComputedStyle(document.documentElement);
-  var colors = data.classes.map(function (_, i) {
-    return css.getPropertyValue("--cls" + i).trim() || "#888";
-  });
   var on = data.classes.map(function () { return true; });
   var pad = 24, W = cv.width, H = cv.height;
   function px(p) { return [pad + p[0] * (W - 2 * pad), pad + (1 - p[1]) * (H - 2 * pad)]; }
   function draw() {
+    var css = getComputedStyle(document.documentElement);
+    var colors = data.classes.map(function (_, i) {
+      return css.getPropertyValue("--cls" + i).trim() || "#888";
+    });
     cx.clearRect(0, 0, W, H);
     data.points.forEach(function (p) {
       if (!on[p[2]]) return;
@@ -97,6 +97,7 @@ some records would be an accessibility failure rather than a limitation.</p>
       draw();
     });
   });
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", draw);
   draw();
 })();
 </script>

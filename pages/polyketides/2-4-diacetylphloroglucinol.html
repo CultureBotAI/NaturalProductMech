@@ -24,6 +24,10 @@
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">antifungal</span><span class="tag">antiviral</span><span class="tag">cytotoxic</span><span class="tag">enzyme inhibitor</span></p>
+<details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/2-4-diacetylphloroglucinol.yaml">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
 <p>A benzenetriol that is phloroglucinol in which two of the ring hydrogens are replaced by acetyl groups.</p>
 <h2>Structure</h2>
 <div class="scroll"><table>
@@ -59,7 +63,7 @@ same claim.</p>
 </tr>
 </table></div>
 
-<h2>Occurrences <span class="tag">9</span></h2>
+<h2 id="occurrences">Occurrences <span class="tag">9</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
 <div class="scroll"><table>
@@ -111,7 +115,7 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 </tr>
 </table></div>
 
-<h2>Biosynthetic gene clusters <span class="tag">2</span></h2>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">2</span></h2>
 <div class="scroll"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
@@ -205,38 +209,113 @@ by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">25</span></h2>
+<p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
 <div class="scroll"><table>
-<tr><th>Assay</th><th>Result</th><th>Reference</th></tr>
-<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</td><td>1.4581 uM</td><td class="mono">pubchem.aid:624297</td></tr>
-<tr><td>Counterscreen for agonists of nuclear receptor subfamily 2, group E, member 3 (NR2E3):Luminescence-based cell-based high throughput dose response assay to identify inhibitors of the Herpes Virus Virion Protein 16 (VP16)</td><td>IC50 4.561 uM</td><td class="mono">pubchem.aid:624395</td></tr>
-<tr><td>High Throughput Screening for Foot and Mouth Disease Virus Antivirals</td><td>35.4813 uM</td><td class="mono">pubchem.aid:1159524</td></tr>
-<tr><td>Luminescence Microorganism-Based Dose Confirmation HTS to Identify Compounds Cytotoxic to SK(-)GAS Group A Streptococcus</td><td>EC50 3.897 uM</td><td class="mono">pubchem.aid:1900</td></tr>
-<tr><td>Luminescence Microorganism-Based Dose Confirmation HTS to Identify Inhibitors of Streptokinase Promotor Activity</td><td>EC50 2.635 uM</td><td class="mono">pubchem.aid:1902</td></tr>
-<tr><td>Luminescence Microorganism-Based Dose Response HTS to Identify Compounds Cytotoxic to Streptococcus</td><td>EC50 3.976 uM</td><td class="mono">pubchem.aid:1915</td></tr>
-<tr><td>Luminescence-based cell-based high throughput dose response assay for agonists of nuclear receptor subfamily 2, group E, member 3 (NR2E3)</td><td>IC50 3.238 uM</td><td class="mono">pubchem.aid:624394</td></tr>
-<tr><td>Nrf2 qHTS screen for inhibitors</td><td>25.929 uM</td><td class="mono">pubchem.aid:504444</td></tr>
-<tr><td>Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 48 hour incubation</td><td>10.4179 uM</td><td class="mono">pubchem.aid:504832</td></tr>
-<tr><td>VP16 counterscreen qHTS for inhibitors of ROR gamma transcriptional activity</td><td>10 uM</td><td class="mono">pubchem.aid:2546</td></tr>
-<tr><td>Viability Counterscreen for Primary qHTS for Inhibitors of ATXN expression</td><td>7.0795 uM</td><td class="mono">PMID:35787375</td></tr>
-<tr><td>Viability Counterscreen for Primary qHTS for Inhibitors of ATXN expression</td><td>7.0795 uM</td><td class="mono">PMID:35787375</td></tr>
-<tr><td>qHTS Assay for Inhibitors of Hepatitis C Virus (HCV)</td><td>3.5481 uM</td><td class="mono">pubchem.aid:651820</td></tr>
-<tr><td>qHTS Assay for Inhibitors of Influenza NS1 Protein Function</td><td>10 uM</td><td class="mono">pubchem.aid:2326</td></tr>
-<tr><td>qHTS Assay for Lipid Storage Modulators in Drosophila S3 Cells</td><td>16.3601 uM</td><td class="mono">pubchem.aid:2685</td></tr>
-<tr><td>qHTS Assay for Modulators of miRNAs and/or Inhibitors of miR-21</td><td>26.1216 uM</td><td class="mono">pubchem.aid:2289</td></tr>
-<tr><td>qHTS Assay for Modulators of miRNAs and/orActivators of miR-21</td><td>26.1216 uM</td><td class="mono">pubchem.aid:2288</td></tr>
-<tr><td>qHTS Assay for Small Molecule Inhibitors of Mitochondrial Division or Activators of Mitochondrial Fusion</td><td>11.2202 uM</td><td class="mono">pubchem.aid:485298</td></tr>
-<tr><td>qHTS Assay to Find Inhibitors of Chronic Active B-Cell Receptor Signaling</td><td>35.4813 uM</td><td class="mono">pubchem.aid:493014</td></tr>
-<tr><td>qHTS Assay to Find Inhibitors of Pin1</td><td>25.1189 uM</td><td class="mono">pubchem.aid:504891</td></tr>
-<tr><td>qHTS for Antagonists of gsp, the Etiologic Mutation Responsible for Fibrous Dysplasia/McCune-Albright Syndrome: qHTS</td><td>35.4813 uM</td><td class="mono">pubchem.aid:624288</td></tr>
-<tr><td>qHTS for Inhibitors of TGF-b</td><td>22.3872 uM</td><td class="mono">pubchem.aid:588855</td></tr>
-<tr><td>qHTS for Inhibitors of TGF-b: Cytotox Counterscreen</td><td>3.9811 uM</td><td class="mono">pubchem.aid:588856</td></tr>
-<tr><td>qHTS for Inhibitors of human tyrosyl-DNA phosphodiesterase 1 (TDP1): qHTS in cells in absence of CPT</td><td>25.929 uM</td><td class="mono">pubchem.aid:686978</td></tr>
-<tr><td>qHTS for Inhibitors of human tyrosyl-DNA phosphodiesterase 1 (TDP1): qHTS in cells in presence of CPT</td><td>20.5962 uM</td><td class="mono">pubchem.aid:686979</td></tr>
+<tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
+<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</td><td>1.4581 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624297</summary><dl><dt>assay</dt><dd>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624297</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory. Target accession NP_056979 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>1.4581</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Counterscreen for agonists of nuclear receptor subfamily 2, group E, member 3 (NR2E3):Luminescence-based cell-based high throughput dose response assay to identify inhibitors of the Herpes Virus Virion Protein 16 (VP16)</td><td>IC50 4.561 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624395</summary><dl><dt>assay</dt><dd>Counterscreen for agonists of nuclear receptor subfamily 2, group E, member 3 (NR2E3):Luminescence-based cell-based high throughput dose response assay to identify inhibitors of the Herpes Virus Virion Protein 16 (VP16)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624395</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624395, deposited by The Scripps Research Institute Molecular Screening Center; assay type Confirmatory. Target accession NP_044650 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>4.561</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>High Throughput Screening for Foot and Mouth Disease Virus Antivirals</td><td>35.4813 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1159524</summary><dl><dt>assay</dt><dd>High Throughput Screening for Foot and Mouth Disease Virus Antivirals</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1159524</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1159524, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>35.4813</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ANTIVIRAL</dd></dl>
+</details></td></tr>
+<tr><td>Luminescence Microorganism-Based Dose Confirmation HTS to Identify Compounds Cytotoxic to SK(-)GAS Group A Streptococcus</td><td>EC50 3.897 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1900</summary><dl><dt>assay</dt><dd>Luminescence Microorganism-Based Dose Confirmation HTS to Identify Compounds Cytotoxic to SK(-)GAS Group A Streptococcus</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1900</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1900, deposited by Broad Institute; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>measurement type</dt><dd>EC50</dd><dt>value</dt><dd>3.897</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
+</details></td></tr>
+<tr><td>Luminescence Microorganism-Based Dose Confirmation HTS to Identify Inhibitors of Streptokinase Promotor Activity</td><td>EC50 2.635 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1902</summary><dl><dt>assay</dt><dd>Luminescence Microorganism-Based Dose Confirmation HTS to Identify Inhibitors of Streptokinase Promotor Activity</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1902</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1902, deposited by Broad Institute; assay type Confirmatory. Target accession NP_269944 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>measurement type</dt><dd>EC50</dd><dt>value</dt><dd>2.635</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Luminescence Microorganism-Based Dose Response HTS to Identify Compounds Cytotoxic to Streptococcus</td><td>EC50 3.976 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1915</summary><dl><dt>assay</dt><dd>Luminescence Microorganism-Based Dose Response HTS to Identify Compounds Cytotoxic to Streptococcus</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1915</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1915, deposited by Broad Institute; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>measurement type</dt><dd>EC50</dd><dt>value</dt><dd>3.976</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
+</details></td></tr>
+<tr><td>Luminescence-based cell-based high throughput dose response assay for agonists of nuclear receptor subfamily 2, group E, member 3 (NR2E3)</td><td>IC50 3.238 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624394</summary><dl><dt>assay</dt><dd>Luminescence-based cell-based high throughput dose response assay for agonists of nuclear receptor subfamily 2, group E, member 3 (NR2E3)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624394</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624394, deposited by The Scripps Research Institute Molecular Screening Center; assay type Confirmatory. Target accession BAH02301 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>3.238</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Nrf2 qHTS screen for inhibitors</td><td>25.929 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:504444</summary><dl><dt>assay</dt><dd>Nrf2 qHTS screen for inhibitors</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:504444</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504444, deposited by NCGC; assay type Confirmatory. Target accession NP_001138884 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>25.929</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 48 hour incubation</td><td>10.4179 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:504832</summary><dl><dt>assay</dt><dd>Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 48 hour incubation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:504832</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504832, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>10.4179</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>VP16 counterscreen qHTS for inhibitors of ROR gamma transcriptional activity</td><td>10 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2546</summary><dl><dt>assay</dt><dd>VP16 counterscreen qHTS for inhibitors of ROR gamma transcriptional activity</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2546</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2546, deposited by NCGC; assay type Confirmatory. Target accession NP_035411 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>10.0</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Viability Counterscreen for Primary qHTS for Inhibitors of ATXN expression</td><td>7.0795 uM</td><td class="mono">Not recorded</td><td><details><summary>PMID:35787375</summary><dl><dt>assay</dt><dd>Viability Counterscreen for Primary qHTS for Inhibitors of ATXN expression</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:35787375</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 651635, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>7.0795</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Viability Counterscreen for Primary qHTS for Inhibitors of ATXN expression</td><td>7.0795 uM</td><td class="mono">UniProtKB:Q99700</td><td><details><summary>PMID:35787375</summary><dl><dt>assay</dt><dd>Viability Counterscreen for Primary qHTS for Inhibitors of ATXN expression</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:35787375</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 651635, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>7.0795</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:Q99700</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Inhibitors of Hepatitis C Virus (HCV)</td><td>3.5481 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:651820</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of Hepatitis C Virus (HCV)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:651820</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 651820, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>3.5481</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Inhibitors of Influenza NS1 Protein Function</td><td>10 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2326</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of Influenza NS1 Protein Function</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2326</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2326, deposited by NCGC; assay type Confirmatory. Target accession ACF54603 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>10.0</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ANTIVIRAL</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Lipid Storage Modulators in Drosophila S3 Cells</td><td>16.3601 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2685</summary><dl><dt>assay</dt><dd>qHTS Assay for Lipid Storage Modulators in Drosophila S3 Cells</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2685</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2685, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>16.3601</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Modulators of miRNAs and/or Inhibitors of miR-21</td><td>26.1216 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2289</summary><dl><dt>assay</dt><dd>qHTS Assay for Modulators of miRNAs and/or Inhibitors of miR-21</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2289</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2289, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>26.1216</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Modulators of miRNAs and/orActivators of miR-21</td><td>26.1216 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2288</summary><dl><dt>assay</dt><dd>qHTS Assay for Modulators of miRNAs and/orActivators of miR-21</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2288</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2288, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>26.1216</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Small Molecule Inhibitors of Mitochondrial Division or Activators of Mitochondrial Fusion</td><td>11.2202 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:485298</summary><dl><dt>assay</dt><dd>qHTS Assay for Small Molecule Inhibitors of Mitochondrial Division or Activators of Mitochondrial Fusion</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:485298</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 485298, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>11.2202</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay to Find Inhibitors of Chronic Active B-Cell Receptor Signaling</td><td>35.4813 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:493014</summary><dl><dt>assay</dt><dd>qHTS Assay to Find Inhibitors of Chronic Active B-Cell Receptor Signaling</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:493014</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 493014, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>35.4813</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay to Find Inhibitors of Pin1</td><td>25.1189 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:504891</summary><dl><dt>assay</dt><dd>qHTS Assay to Find Inhibitors of Pin1</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:504891</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504891, deposited by NCGC; assay type Confirmatory. Target accession NP_006212 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>25.1189</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>qHTS for Antagonists of gsp, the Etiologic Mutation Responsible for Fibrous Dysplasia/McCune-Albright Syndrome: qHTS</td><td>35.4813 uM</td><td class="mono">UniProtKB:P63092</td><td><details><summary>pubchem.aid:624288</summary><dl><dt>assay</dt><dd>qHTS for Antagonists of gsp, the Etiologic Mutation Responsible for Fibrous Dysplasia/McCune-Albright Syndrome: qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624288</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624288, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>35.4813</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P63092</dd></dl>
+</details></td></tr>
+<tr><td>qHTS for Inhibitors of TGF-b</td><td>22.3872 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:588855</summary><dl><dt>assay</dt><dd>qHTS for Inhibitors of TGF-b</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:588855</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 588855, deposited by NCGC; assay type Confirmatory. Target accession AAL68976 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>22.3872</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>qHTS for Inhibitors of TGF-b: Cytotox Counterscreen</td><td>3.9811 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:588856</summary><dl><dt>assay</dt><dd>qHTS for Inhibitors of TGF-b: Cytotox Counterscreen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:588856</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 588856, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>3.9811</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
+</details></td></tr>
+<tr><td>qHTS for Inhibitors of human tyrosyl-DNA phosphodiesterase 1 (TDP1): qHTS in cells in absence of CPT</td><td>25.929 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:686978</summary><dl><dt>assay</dt><dd>qHTS for Inhibitors of human tyrosyl-DNA phosphodiesterase 1 (TDP1): qHTS in cells in absence of CPT</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:686978</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 686978, deposited by NCGC; assay type Confirmatory. Target accession AAI07878 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>25.929</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>qHTS for Inhibitors of human tyrosyl-DNA phosphodiesterase 1 (TDP1): qHTS in cells in presence of CPT</td><td>20.5962 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:686979</summary><dl><dt>assay</dt><dd>qHTS for Inhibitors of human tyrosyl-DNA phosphodiesterase 1 (TDP1): qHTS in cells in presence of CPT</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:686979</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 686979, deposited by NCGC; assay type Confirmatory. Target accession AAI07878 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>20.5962</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd><dt>notes</dt><dd>32 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but not written here.</dd></dl>
+</details></td></tr>
 </table></div>
 
 <h2>Elsewhere in the fleet</h2>
-<ul><li>AntibioticMech — <span class="mono">CHEBI:78688</span>
-    (same structure, same inchikey)</li>
+<ul><li>AntibioticMech — <a class="mono" href="https://culturebotai.github.io/AntibioticMech/pages/antifungal/2-4-diacetylphloroglucinol.html">CHEBI:78688</a>    (same structure, same inchikey)</li>
 </ul>
 
 <h2>Open questions <span class="tag">1</span></h2>

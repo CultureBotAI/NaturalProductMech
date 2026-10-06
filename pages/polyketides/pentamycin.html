@@ -24,6 +24,10 @@
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 <span class="tag">enzyme inhibitor</span></p>
+<div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/pentamycin.yaml">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
 
 <h2>Structure</h2>
 <div class="scroll"><table>
@@ -54,9 +58,9 @@ same claim.</p>
 </tr>
 </table></div>
 
-<h2>Occurrences <span class="tag">0</span></h2>
+<h2 id="occurrences">Occurrences <span class="tag">0</span></h2>
 <p class="sub">None cited.</p>
-<h2>Biosynthetic gene clusters <span class="tag">1</span></h2>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
 <div class="scroll"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
@@ -75,18 +79,49 @@ isolation report left it.</p>
 
 
 <h2>Bioactivities <span class="tag">10</span></h2>
+<p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
 <div class="scroll"><table>
-<tr><th>Assay</th><th>Result</th><th>Reference</th></tr>
-<tr><td>Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione Peroxidase 4 (GPX4)</td><td>22.3872 uM</td><td class="mono">pubchem.aid:1845192</td></tr>
-<tr><td>Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione Peroxidase 4 (GPX4)</td><td>22.3872 uM</td><td class="mono">pubchem.aid:1845192</td></tr>
-<tr><td>Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)</td><td>1.122 uM</td><td class="mono">pubchem.aid:1645887</td></tr>
-<tr><td>Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)</td><td>1.122 uM</td><td class="mono">pubchem.aid:1645887</td></tr>
-<tr><td>Validation qHTS for antagonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)</td><td>3.1623 uM</td><td class="mono">pubchem.aid:1645886</td></tr>
-<tr><td>Validation qHTS for antagonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)</td><td>3.1623 uM</td><td class="mono">pubchem.aid:1645886</td></tr>
-<tr><td>qHTS assay to identify small molecule agonists of the estrogen receptor alpha (ER-alpha) signaling pathway</td><td>15.089 uM</td><td class="mono">pubchem.aid:743075</td></tr>
-<tr><td>qHTS assay to identify small molecule antagonists of the androgen receptor (AR) signaling pathway</td><td>0.0076 uM</td><td class="mono">pubchem.aid:743035</td></tr>
-<tr><td>qHTS assay to identify small molecule antagonists of the thyroid receptor (TR) signaling pathway - cell viability counter screen</td><td>0.266 uM</td><td class="mono">pubchem.aid:743064</td></tr>
-<tr><td>qHTS for Inhibitors of binding or entry into cells for Marburg Virus</td><td>15.8489 uM</td><td class="mono">pubchem.aid:720532</td></tr>
+<tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
+<tr><td>Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione Peroxidase 4 (GPX4)</td><td>22.3872 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1845192</summary><dl><dt>assay</dt><dd>Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione Peroxidase 4 (GPX4)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1845192</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1845192, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>22.3872</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione Peroxidase 4 (GPX4)</td><td>22.3872 uM</td><td class="mono">UniProtKB:P36969</td><td><details><summary>pubchem.aid:1845192</summary><dl><dt>assay</dt><dd>Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione Peroxidase 4 (GPX4)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1845192</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1845192, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>22.3872</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P36969</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)</td><td>1.122 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645887</summary><dl><dt>assay</dt><dd>Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645887</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>1.122</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)</td><td>1.122 uM</td><td class="mono">UniProtKB:Q8WZA2</td><td><details><summary>pubchem.aid:1645887</summary><dl><dt>assay</dt><dd>Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645887</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>1.122</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:Q8WZA2</dd></dl>
+</details></td></tr>
+<tr><td>Validation qHTS for antagonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)</td><td>3.1623 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645886</summary><dl><dt>assay</dt><dd>Validation qHTS for antagonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645886</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645886, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>3.1623</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Validation qHTS for antagonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)</td><td>3.1623 uM</td><td class="mono">UniProtKB:Q8WZA2</td><td><details><summary>pubchem.aid:1645886</summary><dl><dt>assay</dt><dd>Validation qHTS for antagonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645886</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645886, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>3.1623</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:Q8WZA2</dd></dl>
+</details></td></tr>
+<tr><td>qHTS assay to identify small molecule agonists of the estrogen receptor alpha (ER-alpha) signaling pathway</td><td>15.089 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:743075</summary><dl><dt>assay</dt><dd>qHTS assay to identify small molecule agonists of the estrogen receptor alpha (ER-alpha) signaling pathway</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:743075</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 743075, deposited by 824; assay type Confirmatory. Target accession AEP43755 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>15.089</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>qHTS assay to identify small molecule antagonists of the androgen receptor (AR) signaling pathway</td><td>0.0076 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:743035</summary><dl><dt>assay</dt><dd>qHTS assay to identify small molecule antagonists of the androgen receptor (AR) signaling pathway</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:743035</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 743035, deposited by 824; assay type Confirmatory. Target accession AAI32976 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0076</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>qHTS assay to identify small molecule antagonists of the thyroid receptor (TR) signaling pathway - cell viability counter screen</td><td>0.266 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:743064</summary><dl><dt>assay</dt><dd>qHTS assay to identify small molecule antagonists of the thyroid receptor (TR) signaling pathway - cell viability counter screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:743064</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 743064, deposited by 824; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.266</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>qHTS for Inhibitors of binding or entry into cells for Marburg Virus</td><td>15.8489 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:720532</summary><dl><dt>assay</dt><dd>qHTS for Inhibitors of binding or entry into cells for Marburg Virus</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:720532</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 720532, deposited by NCGC; assay type Confirmatory. Target accession B45705 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>15.8489</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
 </table></div>
 
 
