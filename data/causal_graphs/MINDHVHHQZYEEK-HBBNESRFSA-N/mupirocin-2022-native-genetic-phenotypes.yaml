@@ -1,0 +1,350 @@
+record_id: CHEBI:7025
+standard_inchi_key: MINDHVHHQZYEEK-HBBNESRFSA-N
+graph:
+  graph_id: mupirocin-2022-native-genetic-phenotypes
+  scope: BIOSYNTHESIS
+  description: Separate MmpF-KS,MacpA and MacpB genetic phenotypes. Source-assigned
+    products remain ungrounded; no biosynthetic ordering from gene order. Native reference,
+    engineered preparation and study readout remain distinct. Partial primary-main-text
+    curation, not complete pathway reconstitution or full-record sign-off. The exact
+    PAA owner is not the clinical mupirocin mixture.
+  nodes:
+  - node_id: cluster
+    label: Native mupirocin locus in NCIMB 10586
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000182
+  - node_id: mmpF
+    label: Native MmpF sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL51
+  - node_id: macpA
+    label: Native MacpA sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL70
+  - node_id: macpB
+    label: Native MacpB sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL67
+  - node_id: paa
+    label: Source-assigned pseudomonic acid A
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: h
+    label: Source-assigned mupirocin H
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: acid
+    label: Source-assigned mupiric acid
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: mmpF_allele
+    label: Reported mmpF KS-domain deletion allele
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: mmpF_culture
+    label: Study P. fluorescens mmpF mutant culture
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: macpA_allele
+    label: Reported macpA deletion allele
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: macpA_culture
+    label: Study P. fluorescens macpA mutant culture
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: macpB_allele
+    label: Reported macpB deletion allele
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: macpB_culture
+    label: Study P. fluorescens macpB mutant culture
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: mmpF
+    notes: AF318063.3 CDS 63348..65585(+),1-based inclusive; AAM12934.1,745 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12934.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL51
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: macpA
+    notes: AF318063.3 CDS 41870..42175(+),1-based inclusive; AAM12915.1,101 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12915.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL70
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: macpB
+    notes: AF318063.3 CDS 44062..44313(+),1-based inclusive; AAM12918.1,83 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12918.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL67
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: mmpF_allele
+    predicate: affects_coding_locus_of
+    object: mmpF
+    notes: The mmpF intervention targets its KS region, not a demonstrated deletion
+      of the entire KS/AT-like protein. Complete junction/residual sequences remain
+      unverified.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpF_allele
+    predicate: was_introduced_in
+    object: mmpF_culture
+    notes: Native-producer genetic intervention, not a purified-protein assay. Complete
+      mutant stock identity, complementation and all polar effects are not established
+      here.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpF_culture
+    predicate: lacked_detected_production_of
+    object: paa
+    notes: Bounded culture-extract report; no universal zero, detection limit, numerical
+      titre or replicate-level estimate. This endpoint does not by itself assign a
+      catalytic step.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpF_culture
+    predicate: yielded_source_assigned_metabolite
+    object: h
+    notes: Source-assigned extract products, not direct substrates or products of
+      the missing protein.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpF_culture
+    predicate: yielded_source_assigned_metabolite
+    object: acid
+    notes: Source-assigned extract products, not direct substrates or products of
+      the missing protein.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA_allele
+    predicate: affects_coding_locus_of
+    object: macpA
+    notes: Reported gene deletion; exact endpoints and residual-protein sequence remain
+      unverified.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA_allele
+    predicate: was_introduced_in
+    object: macpA_culture
+    notes: Native-producer genetic intervention, not a purified-protein assay. Complete
+      mutant stock identity, complementation and all polar effects are not established
+      here.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA_culture
+    predicate: lacked_detected_production_of
+    object: paa
+    notes: Bounded culture-extract report; no universal zero, detection limit, numerical
+      titre or replicate-level estimate. This endpoint does not by itself assign a
+      catalytic step.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA_culture
+    predicate: yielded_source_assigned_metabolite
+    object: h
+    notes: Source-assigned extract products, not direct substrates or products of
+      the missing protein.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA_culture
+    predicate: yielded_source_assigned_metabolite
+    object: acid
+    notes: Source-assigned extract products, not direct substrates or products of
+      the missing protein.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpB_allele
+    predicate: affects_coding_locus_of
+    object: macpB
+    notes: Reported gene deletion; exact endpoints and residual-protein sequence remain
+      unverified.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpB_allele
+    predicate: was_introduced_in
+    object: macpB_culture
+    notes: Native-producer genetic intervention, not a purified-protein assay. Complete
+      mutant stock identity, complementation and all polar effects are not established
+      here.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpB_culture
+    predicate: lacked_detected_production_of
+    object: paa
+    notes: Bounded culture-extract report; no universal zero, detection limit, numerical
+      titre or replicate-level estimate. This endpoint does not by itself assign a
+      catalytic step.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpB_culture
+    predicate: yielded_source_assigned_metabolite
+    object: h
+    notes: Source-assigned extract products, not direct substrates or products of
+      the missing protein. The main text describes these products as trace amounts
+      for this mutant.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpB_culture
+    predicate: yielded_source_assigned_metabolite
+    object: acid
+    notes: Source-assigned extract products, not direct substrates or products of
+      the missing protein. The main text describes these products as trace amounts
+      for this mutant.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T05:42:46Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component for CHEBI:7025,owner baseline commit edbd74cf58fae62cbf8207453d4b583c31706575;
+    no prior graph migration. Separate MmpF-KS,MacpA and MacpB genetic phenotypes.
+    Source-assigned products remain ungrounded; no biosynthetic ordering from gene
+    order. Native reference, engineered preparation and study readout remain distinct.
+    Partial primary-main-text curation, not complete pathway reconstitution or full-record
+    sign-off. The exact PAA owner is not the clinical mupirocin mixture. Every edge
+    cites DOI10.1002/anie.202212393 or official native-sequence URLs. Primary main
+    HTML only; SI inaccessible/unread and figures not visually inspected. Native references
+    do not identify complete engineered preparations. Author-agent issues#599/#600
+    review,not independent approval or full-record sign-off.
+  llm_assisted: true

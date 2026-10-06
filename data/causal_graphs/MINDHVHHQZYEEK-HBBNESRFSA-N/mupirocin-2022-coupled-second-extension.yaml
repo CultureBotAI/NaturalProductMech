@@ -1,0 +1,629 @@
+record_id: CHEBI:7025
+standard_inchi_key: MINDHVHHQZYEEK-HBBNESRFSA-N
+graph:
+  graph_id: mupirocin-2022-coupled-second-extension
+  scope: BIOSYNTHESIS
+  description: MmpF/MupD DCC2 donor and acceptor tests. Pantetheine donors, carrier-bound
+    donors and their negative readouts remain separate. Native reference, engineered
+    preparation and study readout remain distinct. Partial primary-main-text curation,
+    not complete pathway reconstitution or full-record sign-off. The exact PAA owner
+    is not the clinical mupirocin mixture.
+  nodes:
+  - node_id: cluster
+    label: Native mupirocin locus in NCIMB 10586
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000182
+  - node_id: mmpF
+    label: Native MmpF sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL51
+  - node_id: mupD
+    label: Native MupD sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL69
+  - node_id: macpA
+    label: Native MacpA sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL70
+  - node_id: macpB
+    label: Native MacpB sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL67
+  - node_id: mmpF_prep
+    label: Study purified MmpF preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: mupD_prep
+    label: Study purified MupD preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: cofactor
+    label: Assay NAD(P)H as reported
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: pant5
+    label: Synthetic 5-hydroxypentanoyl pantetheine donor
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: product
+    label: Source-assigned 3,7-dihydroxyheptanoyl-MacpA
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: holoB
+    label: Source-assigned holo-MacpB after donor hydrolysis
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: macpA_malonyl
+    label: Study malonyl-MacpA preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: macpA_hp5
+    label: Study 5-hydroxypentanoyl-MacpA preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: macpB_malonyl
+    label: Study malonyl-MacpB preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: macpB_hp5
+    label: Study 5-hydroxypentanoyl-MacpB preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: pant_A
+    label: Study 5HP-pantetheine/MacpA acceptor DCC2 assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: pant_B
+    label: Study 5HP-pantetheine/MacpB acceptor DCC2 assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: pant_B_readout
+    label: No detected 3,7-dihydroxyheptanoyl-MacpB product
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: donor_A
+    label: Study 5HP-MacpA/MacpA acceptor DCC2 assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: donor_B
+    label: Study 5HP-MacpB/MacpA acceptor DCC2 assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: donor_B_readout
+    label: No detected C7 product with 5HP-MacpB donor
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: mmpF
+    notes: AF318063.3 CDS 63348..65585(+),1-based inclusive; AAM12934.1,745 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12934.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL51
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: mupD
+    notes: AF318063.3 CDS 42216..42959(+),1-based inclusive; AAM12916.1,247 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12916.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL69
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: macpA
+    notes: AF318063.3 CDS 41870..42175(+),1-based inclusive; AAM12915.1,101 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12915.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL70
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: macpB
+    notes: AF318063.3 CDS 44062..44313(+),1-based inclusive; AAM12918.1,83 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12918.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL67
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: mmpF
+    predicate: is_native_sequence_reference_for
+    object: mmpF_prep
+    notes: Gene-matched reference; complete engineered sequence and assay preparation
+      remain unverified from inaccessible SI.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mupD
+    predicate: is_native_sequence_reference_for
+    object: mupD_prep
+    notes: Gene-matched reference; complete engineered sequence and assay preparation
+      remain unverified from inaccessible SI.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA
+    predicate: is_native_carrier_reference_for
+    object: macpA_malonyl
+    notes: Gene-matched carrier reference; acyl state does not identify the complete
+      engineered sequence or establish its concentration in native cells.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA
+    predicate: is_native_carrier_reference_for
+    object: macpA_hp5
+    notes: Gene-matched carrier reference; acyl state does not identify the complete
+      engineered sequence or establish its concentration in native cells.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpB
+    predicate: is_native_carrier_reference_for
+    object: macpB_malonyl
+    notes: Gene-matched carrier reference; acyl state does not identify the complete
+      engineered sequence or establish its concentration in native cells.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpB
+    predicate: is_native_carrier_reference_for
+    object: macpB_hp5
+    notes: Gene-matched carrier reference; acyl state does not identify the complete
+      engineered sequence or establish its concentration in native cells.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA
+    predicate: is_native_carrier_reference_for
+    object: product
+    notes: Source-assigned carrier state, not an exact engineered-proteoform identifier.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpB
+    predicate: is_native_carrier_reference_for
+    object: holoB
+    notes: Source-assigned carrier state, not an exact engineered-proteoform identifier.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpF_prep
+    predicate: was_component_in
+    object: pant_A
+    notes: Coupled purified-system test. Donor, acceptor and cofactor roles are confined
+      to this assay; no individual sufficiency or complete in-vivo cycle inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mupD_prep
+    predicate: was_component_in
+    object: pant_A
+    notes: Coupled purified-system test. Donor, acceptor and cofactor roles are confined
+      to this assay; no individual sufficiency or complete in-vivo cycle inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: cofactor
+    predicate: was_component_in
+    object: pant_A
+    notes: Coupled purified-system test. Donor, acceptor and cofactor roles are confined
+      to this assay; no individual sufficiency or complete in-vivo cycle inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: pant5
+    predicate: was_component_in
+    object: pant_A
+    notes: Coupled purified-system test. Donor, acceptor and cofactor roles are confined
+      to this assay; no individual sufficiency or complete in-vivo cycle inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA_malonyl
+    predicate: was_component_in
+    object: pant_A
+    notes: Coupled purified-system test. Donor, acceptor and cofactor roles are confined
+      to this assay; no individual sufficiency or complete in-vivo cycle inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: pant_A
+    predicate: yielded_source_assigned_product
+    object: product
+    notes: ESI-MS/Ppant-ejection assignment of the C7 dihydroxy carrier product, not
+      full 9HN or PAA. The main text reports no such product with C183A MmpF; full
+      mutant construct and control recipe remain unverified.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpF_prep
+    predicate: was_component_in
+    object: pant_B
+    notes: Coupled purified-system test. Donor, acceptor and cofactor roles are confined
+      to this assay; no individual sufficiency or complete in-vivo cycle inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mupD_prep
+    predicate: was_component_in
+    object: pant_B
+    notes: Coupled purified-system test. Donor, acceptor and cofactor roles are confined
+      to this assay; no individual sufficiency or complete in-vivo cycle inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: cofactor
+    predicate: was_component_in
+    object: pant_B
+    notes: Coupled purified-system test. Donor, acceptor and cofactor roles are confined
+      to this assay; no individual sufficiency or complete in-vivo cycle inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: pant5
+    predicate: was_component_in
+    object: pant_B
+    notes: Coupled purified-system test. Donor, acceptor and cofactor roles are confined
+      to this assay; no individual sufficiency or complete in-vivo cycle inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpB_malonyl
+    predicate: was_component_in
+    object: pant_B
+    notes: Coupled purified-system test. Donor, acceptor and cofactor roles are confined
+      to this assay; no individual sufficiency or complete in-vivo cycle inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: pant_B
+    predicate: yielded_reported_readout
+    object: pant_B_readout
+    notes: Bounded failure to detect the stated assay product, not universal nonreactivity
+      or absence of a native biosynthetic role.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpF_prep
+    predicate: was_component_in
+    object: donor_A
+    notes: Coupled purified-system test. Donor, acceptor and cofactor roles are confined
+      to this assay; no individual sufficiency or complete in-vivo cycle inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mupD_prep
+    predicate: was_component_in
+    object: donor_A
+    notes: Coupled purified-system test. Donor, acceptor and cofactor roles are confined
+      to this assay; no individual sufficiency or complete in-vivo cycle inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: cofactor
+    predicate: was_component_in
+    object: donor_A
+    notes: Coupled purified-system test. Donor, acceptor and cofactor roles are confined
+      to this assay; no individual sufficiency or complete in-vivo cycle inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA_hp5
+    predicate: was_component_in
+    object: donor_A
+    notes: Coupled purified-system test. Donor, acceptor and cofactor roles are confined
+      to this assay; no individual sufficiency or complete in-vivo cycle inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA_malonyl
+    predicate: was_component_in
+    object: donor_A
+    notes: Coupled purified-system test. Donor, acceptor and cofactor roles are confined
+      to this assay; no individual sufficiency or complete in-vivo cycle inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: donor_A
+    predicate: yielded_source_assigned_product
+    object: product
+    notes: ESI-MS/Ppant-ejection assignment of the C7 dihydroxy carrier product, not
+      full 9HN or PAA. The paper also reports a side-product assignment; no exclusive
+      product selectivity is asserted.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpF_prep
+    predicate: was_component_in
+    object: donor_B
+    notes: Coupled purified-system test. Donor, acceptor and cofactor roles are confined
+      to this assay; no individual sufficiency or complete in-vivo cycle inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mupD_prep
+    predicate: was_component_in
+    object: donor_B
+    notes: Coupled purified-system test. Donor, acceptor and cofactor roles are confined
+      to this assay; no individual sufficiency or complete in-vivo cycle inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: cofactor
+    predicate: was_component_in
+    object: donor_B
+    notes: Coupled purified-system test. Donor, acceptor and cofactor roles are confined
+      to this assay; no individual sufficiency or complete in-vivo cycle inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpB_hp5
+    predicate: was_component_in
+    object: donor_B
+    notes: Coupled purified-system test. Donor, acceptor and cofactor roles are confined
+      to this assay; no individual sufficiency or complete in-vivo cycle inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA_malonyl
+    predicate: was_component_in
+    object: donor_B
+    notes: Coupled purified-system test. Donor, acceptor and cofactor roles are confined
+      to this assay; no individual sufficiency or complete in-vivo cycle inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: donor_B
+    predicate: yielded_reported_readout
+    object: donor_B_readout
+    notes: Bounded failure to detect the stated assay product, not universal nonreactivity
+      or absence of a native biosynthetic role.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: donor_B
+    predicate: yielded_source_assigned_carrier_state
+    object: holoB
+    notes: The main text reports donor hydrolysis to holo-MacpB with malonyl-MacpA
+      remaining unchanged. No hydrolysis enzyme or rate is assigned.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T05:42:46Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component for CHEBI:7025,owner baseline commit edbd74cf58fae62cbf8207453d4b583c31706575;
+    no prior graph migration. MmpF/MupD DCC2 donor and acceptor tests. Pantetheine
+    donors, carrier-bound donors and their negative readouts remain separate. Native
+    reference, engineered preparation and study readout remain distinct. Partial primary-main-text
+    curation, not complete pathway reconstitution or full-record sign-off. The exact
+    PAA owner is not the clinical mupirocin mixture. Every edge cites DOI10.1002/anie.202212393
+    or official native-sequence URLs. Primary main HTML only; SI inaccessible/unread
+    and figures not visually inspected. Native references do not identify complete
+    engineered preparations. Author-agent issues#599/#600 review,not independent approval
+    or full-record sign-off.
+  llm_assisted: true
