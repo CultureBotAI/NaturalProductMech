@@ -1,0 +1,457 @@
+record_id: CHEBI:7025
+standard_inchi_key: MINDHVHHQZYEEK-HBBNESRFSA-N
+graph:
+  graph_id: mupirocin-2022-coupled-first-extension
+  scope: BIOSYNTHESIS
+  description: Coupled MmpF/MupD first-extension assays with separate MacpA and MacpB
+    acceptors. No native pathway redundancy inferred. Native reference, engineered
+    preparation and study readout remain distinct. Partial primary-main-text curation,
+    not complete pathway reconstitution or full-record sign-off. The exact PAA owner
+    is not the clinical mupirocin mixture.
+  nodes:
+  - node_id: cluster
+    label: Native mupirocin locus in NCIMB 10586
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000182
+  - node_id: mmpF
+    label: Native MmpF sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL51
+  - node_id: mupD
+    label: Native MupD sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL69
+  - node_id: macpD
+    label: Native MacpD sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL52
+  - node_id: macpA
+    label: Native MacpA sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL70
+  - node_id: macpB
+    label: Native MacpB sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL67
+  - node_id: mmpF_prep
+    label: Study purified MmpF preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: mupD_prep
+    label: Study purified MupD preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: donor
+    label: Study 3-hydroxypropionyl-MacpD preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: cofactor
+    label: Assay NAD(P)H as reported
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: macpA_malonyl
+    label: Study malonyl-MacpA preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: macpA_dcc1
+    label: Coupled DCC1/ketoreduction with MacpA
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: macpA_c5
+    label: Source-assigned 3,5-dihydroxypentanoyl-MacpA
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: macpB_malonyl
+    label: Study malonyl-MacpB preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: macpB_dcc1
+    label: Coupled DCC1/ketoreduction with MacpB
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: macpB_c5
+    label: Source-assigned 3,5-dihydroxypentanoyl-MacpB
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: mmpF
+    notes: AF318063.3 CDS 63348..65585(+),1-based inclusive; AAM12934.1,745 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12934.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL51
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: mupD
+    notes: AF318063.3 CDS 42216..42959(+),1-based inclusive; AAM12916.1,247 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12916.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL69
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: macpD
+    notes: AF318063.3 CDS 63031..63351(+),1-based inclusive; AAM12933.1,106 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12933.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL52
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: macpA
+    notes: AF318063.3 CDS 41870..42175(+),1-based inclusive; AAM12915.1,101 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12915.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL70
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: macpB
+    notes: AF318063.3 CDS 44062..44313(+),1-based inclusive; AAM12918.1,83 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12918.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL67
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: mmpF
+    predicate: is_native_sequence_reference_for
+    object: mmpF_prep
+    notes: Gene-matched reference; full fusion identity, vector, purification recipe
+      and exact assay concentration were not verified from SI.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mupD
+    predicate: is_native_sequence_reference_for
+    object: mupD_prep
+    notes: Gene-matched reference; full fusion identity, vector, purification recipe
+      and exact assay concentration were not verified from SI.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpD
+    predicate: is_native_carrier_reference_for
+    object: donor
+    notes: Acyl-loaded carrier is not the unmodified native reference. The donor is
+      used in a purified system, not measured as a native-producer pool.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA
+    predicate: is_native_carrier_reference_for
+    object: macpA_malonyl
+    notes: Carrier identity is gene-matched. Acyl loading describes a chemical state,
+      not a demonstrated amino-acid sequence change. Complete engineered sequence
+      and proteoform identity remain unverified.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA
+    predicate: is_native_carrier_reference_for
+    object: macpA_c5
+    notes: Carrier identity is gene-matched. Acyl loading describes a chemical state,
+      not a demonstrated amino-acid sequence change. Complete engineered sequence
+      and proteoform identity remain unverified.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpF_prep
+    predicate: was_component_in
+    object: macpA_dcc1
+    notes: Coupled purified-system assay; participation is not proof of individual-component
+      sufficiency. NAD(P)H wording does not establish a cofactor-preference ratio.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mupD_prep
+    predicate: was_component_in
+    object: macpA_dcc1
+    notes: Coupled purified-system assay; participation is not proof of individual-component
+      sufficiency. NAD(P)H wording does not establish a cofactor-preference ratio.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: donor
+    predicate: was_component_in
+    object: macpA_dcc1
+    notes: Coupled purified-system assay; participation is not proof of individual-component
+      sufficiency. NAD(P)H wording does not establish a cofactor-preference ratio.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA_malonyl
+    predicate: was_component_in
+    object: macpA_dcc1
+    notes: Coupled purified-system assay; participation is not proof of individual-component
+      sufficiency. NAD(P)H wording does not establish a cofactor-preference ratio.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: cofactor
+    predicate: was_component_in
+    object: macpA_dcc1
+    notes: Coupled purified-system assay; participation is not proof of individual-component
+      sufficiency. NAD(P)H wording does not establish a cofactor-preference ratio.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA_dcc1
+    predicate: yielded_source_assigned_product
+    object: macpA_c5
+    notes: ESI-MS/Ppant-ejection assignment, not a quantitative rate or complete native
+      reconstitution. The paper reports poor conversion without MupD and a C183A MmpF
+      control without product; complete carrier-specific control details remain unverified
+      from inaccessible SI.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpB
+    predicate: is_native_carrier_reference_for
+    object: macpB_malonyl
+    notes: Carrier identity is gene-matched. Acyl loading describes a chemical state,
+      not a demonstrated amino-acid sequence change. Complete engineered sequence
+      and proteoform identity remain unverified.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpB
+    predicate: is_native_carrier_reference_for
+    object: macpB_c5
+    notes: Carrier identity is gene-matched. Acyl loading describes a chemical state,
+      not a demonstrated amino-acid sequence change. Complete engineered sequence
+      and proteoform identity remain unverified.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpF_prep
+    predicate: was_component_in
+    object: macpB_dcc1
+    notes: Coupled purified-system assay; participation is not proof of individual-component
+      sufficiency. NAD(P)H wording does not establish a cofactor-preference ratio.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mupD_prep
+    predicate: was_component_in
+    object: macpB_dcc1
+    notes: Coupled purified-system assay; participation is not proof of individual-component
+      sufficiency. NAD(P)H wording does not establish a cofactor-preference ratio.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: donor
+    predicate: was_component_in
+    object: macpB_dcc1
+    notes: Coupled purified-system assay; participation is not proof of individual-component
+      sufficiency. NAD(P)H wording does not establish a cofactor-preference ratio.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpB_malonyl
+    predicate: was_component_in
+    object: macpB_dcc1
+    notes: Coupled purified-system assay; participation is not proof of individual-component
+      sufficiency. NAD(P)H wording does not establish a cofactor-preference ratio.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: cofactor
+    predicate: was_component_in
+    object: macpB_dcc1
+    notes: Coupled purified-system assay; participation is not proof of individual-component
+      sufficiency. NAD(P)H wording does not establish a cofactor-preference ratio.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpB_dcc1
+    predicate: yielded_source_assigned_product
+    object: macpB_c5
+    notes: ESI-MS/Ppant-ejection assignment, not a quantitative rate or complete native
+      reconstitution. The paper reports poor conversion without MupD and a C183A MmpF
+      control without product; complete carrier-specific control details remain unverified
+      from inaccessible SI.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T05:42:46Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component for CHEBI:7025,owner baseline commit edbd74cf58fae62cbf8207453d4b583c31706575;
+    no prior graph migration. Coupled MmpF/MupD first-extension assays with separate
+    MacpA and MacpB acceptors. No native pathway redundancy inferred. Native reference,
+    engineered preparation and study readout remain distinct. Partial primary-main-text
+    curation, not complete pathway reconstitution or full-record sign-off. The exact
+    PAA owner is not the clinical mupirocin mixture. Every edge cites DOI10.1002/anie.202212393
+    or official native-sequence URLs. Primary main HTML only; SI inaccessible/unread
+    and figures not visually inspected. Native references do not identify complete
+    engineered preparations. Author-agent issues#599/#600 review,not independent approval
+    or full-record sign-off.
+  llm_assisted: true

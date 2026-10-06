@@ -1,0 +1,614 @@
+record_id: CHEBI:7025
+standard_inchi_key: MINDHVHHQZYEEK-HBBNESRFSA-N
+graph:
+  graph_id: mupirocin-2022-bounded-nmr-partner-tests
+  scope: BIOSYNTHESIS
+  description: NMR partner screening with native references separate from excised/isotope-labelled
+    preparations. TacpB is a mixed-origin surrogate, not MacpB. Native reference,
+    engineered preparation and study readout remain distinct. Partial primary-main-text
+    curation, not complete pathway reconstitution or full-record sign-off. The exact
+    PAA owner is not the clinical mupirocin mixture.
+  nodes:
+  - node_id: cluster
+    label: Native mupirocin locus in NCIMB 10586
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000182
+  - node_id: mmpF
+    label: Native MmpF sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL51
+  - node_id: macpD
+    label: Native MacpD sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL52
+  - node_id: macpA
+    label: Native MacpA sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL70
+  - node_id: mmpB
+    label: Native MmpB sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL74
+  - node_id: mupB
+    label: Native MupB sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL75
+  - node_id: mmpF_prep
+    label: Study purified MmpF preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: macpD_prep
+    label: Study 15N-labelled apo-MacpD preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: macpA_prep
+    label: Study 15N-labelled MacpA preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: mmpB_prep
+    label: Study excised MmpB KS-domain preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: mupB_prep
+    label: Study purified MupB preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: tml_cluster
+    label: Thiomarinol native pTML1 locus
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0001115
+  - node_id: tacpB
+    label: Native TacpB sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:CBK62717.1
+  - node_id: tacpB_prep
+    label: Study 15N-labelled TacpB surrogate preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: assay_0
+    label: Study MacpD/MmpF NMR titration
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: readout_0
+    label: Reported MacpD line broadening
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: assay_1
+    label: Study MacpA/MmpF NMR titration
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: readout_1
+    label: Reported MacpA line broadening
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: assay_2
+    label: Study TacpB/MmpF NMR titration
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: readout_2
+    label: Reported TacpB NMR response
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: assay_3
+    label: Study MacpD/MmpB-KS NMR titration
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: readout_3
+    label: No detected MacpD NMR perturbation with MmpB-KS
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: assay_4
+    label: Study MacpD/MupB NMR titration
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: readout_4
+    label: No detected MacpD NMR perturbation with MupB
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: acp5_prep
+    label: Study 15N-labelled excised MmpB-ACP5 preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: acp5_assay
+    label: Study MmpB-ACP5/MmpF NMR titration
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: acp5_readout
+    label: No discernible MmpB-ACP5/MmpF NMR interaction
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: mmpF
+    notes: AF318063.3 CDS 63348..65585(+),1-based inclusive; AAM12934.1,745 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12934.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL51
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: macpD
+    notes: AF318063.3 CDS 63031..63351(+),1-based inclusive; AAM12933.1,106 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12933.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL52
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: macpA
+    notes: AF318063.3 CDS 41870..42175(+),1-based inclusive; AAM12915.1,101 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12915.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL70
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: mmpB
+    notes: AF318063.3 CDS 11325..17555(+),1-based inclusive; AAM12911.1,2076 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12911.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL74
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: mupB
+    notes: AF318063.3 CDS 10278..11183(+),1-based inclusive; AAM12910.1,301 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12910.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL75
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: mmpF
+    predicate: is_native_sequence_reference_for
+    object: mmpF_prep
+    notes: Gene-matched reference, not complete fusion/insert or isotopic/proteoform
+      identity.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpD
+    predicate: is_native_sequence_reference_for
+    object: macpD_prep
+    notes: Gene-matched reference, not complete fusion/insert or isotopic/proteoform
+      identity.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA
+    predicate: is_native_sequence_reference_for
+    object: macpA_prep
+    notes: Gene-matched reference, not complete fusion/insert or isotopic/proteoform
+      identity.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpB
+    predicate: is_native_sequence_reference_for
+    object: mmpB_prep
+    notes: Gene-matched reference, not complete fusion/insert or isotopic/proteoform
+      identity. The assay uses an excised KS domain, not the full 2076-aa protein
+      or its ACP tridomain.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mupB
+    predicate: is_native_sequence_reference_for
+    object: mupB_prep
+    notes: Gene-matched reference, not complete fusion/insert or isotopic/proteoform
+      identity.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: tml_cluster
+    predicate: encodes_native_reference
+    object: tacpB
+    notes: FN689524.1 complement10748..11083,1-based inclusive; CBK62717.1,111aa,alias
+      tacp13. CDS/GenPept/UniParc match; SANK73390,taxon747457,pTML1. Deleted F8J3F1
+      is not a live UniProt example; inactive archived RefSeq cross-references are
+      not selected.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBK62717.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native TacpB.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniparc/UPI000211726D
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact sequence/MD5 comparison.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/F8J3F1
+      evidence_type: DATABASE_ASSERTION
+      notes: Inactive/deleted; not selected as a live identifier.
+      retrieved_on: '2026-10-06'
+  - subject: tacpB
+    predicate: is_native_sequence_reference_for
+    object: tacpB_prep
+    notes: TacpB substitutes for MacpB in the labelled NMR experiment because labelled
+      MacpB was insoluble in the reported minimal-media expression. This is not direct
+      MacpB NMR data or proof that the native carrier proteins are functionally identical.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpD_prep
+    predicate: was_tested_in
+    object: assay_0
+    notes: Reported NMR titration, not a catalytic assay or direct native-producer
+      experiment. No unverified dose, stoichiometry, equilibrium affinity or tag sequence
+      adopted.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpF_prep
+    predicate: was_tested_in
+    object: assay_0
+    notes: Reported NMR titration, not a catalytic assay or direct native-producer
+      experiment. No unverified dose, stoichiometry, equilibrium affinity or tag sequence
+      adopted.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: assay_0
+    predicate: yielded_reported_readout
+    object: readout_0
+    notes: Qualitative NMR readout supports a possible interaction but not a stable
+      native complex, substrate transfer or quantified affinity.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+      snippet: line broadening
+  - subject: macpA_prep
+    predicate: was_tested_in
+    object: assay_1
+    notes: Reported NMR titration, not a catalytic assay or direct native-producer
+      experiment. No unverified dose, stoichiometry, equilibrium affinity or tag sequence
+      adopted.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpF_prep
+    predicate: was_tested_in
+    object: assay_1
+    notes: Reported NMR titration, not a catalytic assay or direct native-producer
+      experiment. No unverified dose, stoichiometry, equilibrium affinity or tag sequence
+      adopted.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: assay_1
+    predicate: yielded_reported_readout
+    object: readout_1
+    notes: Qualitative NMR readout supports a possible interaction but not a stable
+      native complex, substrate transfer or quantified affinity.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: tacpB_prep
+    predicate: was_tested_in
+    object: assay_2
+    notes: Reported NMR titration, not a catalytic assay or direct native-producer
+      experiment. No unverified dose, stoichiometry, equilibrium affinity or tag sequence
+      adopted.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpF_prep
+    predicate: was_tested_in
+    object: assay_2
+    notes: Reported NMR titration, not a catalytic assay or direct native-producer
+      experiment. No unverified dose, stoichiometry, equilibrium affinity or tag sequence
+      adopted.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: assay_2
+    predicate: yielded_reported_readout
+    object: readout_2
+    notes: Qualitative NMR readout supports a possible interaction but not a stable
+      native complex, substrate transfer or quantified affinity. The response is described
+      as less pronounced than MacpA, not a quantitative affinity ranking.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpD_prep
+    predicate: was_tested_in
+    object: assay_3
+    notes: Reported NMR titration, not a catalytic assay or direct native-producer
+      experiment. No unverified dose, stoichiometry, equilibrium affinity or tag sequence
+      adopted.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpB_prep
+    predicate: was_tested_in
+    object: assay_3
+    notes: Reported NMR titration, not a catalytic assay or direct native-producer
+      experiment. No unverified dose, stoichiometry, equilibrium affinity or tag sequence
+      adopted.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: assay_3
+    predicate: yielded_reported_readout
+    object: readout_3
+    notes: No observable line broadening or chemical-shift perturbation under the
+      reported test. Not proof of universal absence of binding, turnover or an in-vivo
+      role.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpD_prep
+    predicate: was_tested_in
+    object: assay_4
+    notes: Reported NMR titration, not a catalytic assay or direct native-producer
+      experiment. No unverified dose, stoichiometry, equilibrium affinity or tag sequence
+      adopted.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mupB_prep
+    predicate: was_tested_in
+    object: assay_4
+    notes: Reported NMR titration, not a catalytic assay or direct native-producer
+      experiment. No unverified dose, stoichiometry, equilibrium affinity or tag sequence
+      adopted.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: assay_4
+    predicate: yielded_reported_readout
+    object: readout_4
+    notes: No observable line broadening or chemical-shift perturbation under the
+      reported test. Not proof of universal absence of binding, turnover or an in-vivo
+      role.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpB
+    predicate: is_native_parent_sequence_reference_for
+    object: acp5_prep
+    notes: An individually excised,isotope-labelled ACP5 domain,not complete MmpB
+      or an independent native protein. Exact boundaries and expressed sequence remain
+      unverified.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: acp5_prep
+    predicate: was_tested_in
+    object: acp5_assay
+    notes: ACP5 was selected as a representative domain. This does not establish equivalent
+      NMR results for ACP6 or ACP7,or quantitative binding affinity.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpF_prep
+    predicate: was_tested_in
+    object: acp5_assay
+    notes: ACP5 was selected as a representative domain. This does not establish equivalent
+      NMR results for ACP6 or ACP7,or quantitative binding affinity.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: acp5_assay
+    predicate: yielded_reported_readout
+    object: acp5_readout
+    notes: Bounded main-text NMR nondetection,not universal absence of binding or
+      native function.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T05:42:46Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component for CHEBI:7025,owner baseline commit edbd74cf58fae62cbf8207453d4b583c31706575;
+    no prior graph migration. NMR partner screening with native references separate
+    from excised/isotope-labelled preparations. TacpB is a mixed-origin surrogate,
+    not MacpB. Native reference, engineered preparation and study readout remain distinct.
+    Partial primary-main-text curation, not complete pathway reconstitution or full-record
+    sign-off. The exact PAA owner is not the clinical mupirocin mixture. Every edge
+    cites DOI10.1002/anie.202212393 or official native-sequence URLs. Primary main
+    HTML only; SI inaccessible/unread and figures not visually inspected. Native references
+    do not identify complete engineered preparations. Author-agent issues#599/#600
+    review,not independent approval or full-record sign-off.
+  llm_assisted: true

@@ -1,0 +1,469 @@
+record_id: CHEBI:7025
+standard_inchi_key: MINDHVHHQZYEEK-HBBNESRFSA-N
+graph:
+  graph_id: mupirocin-2022-bounded-dh-domain-tests
+  scope: BIOSYNTHESIS
+  description: Separate MmpD-DH1 and MmpB-DH supplementation tests with no reported
+    dehydration. No native dehydratase assignment inferred. Native reference, engineered
+    preparation and study readout remain distinct. Partial primary-main-text curation,
+    not complete pathway reconstitution or full-record sign-off. The exact PAA owner
+    is not the clinical mupirocin mixture.
+  nodes:
+  - node_id: cluster
+    label: Native mupirocin locus in NCIMB 10586
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000182
+  - node_id: mmpB
+    label: Native MmpB sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL74
+  - node_id: mmpF
+    label: Native MmpF sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL51
+  - node_id: mupD
+    label: Native MupD sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL69
+  - node_id: macpD
+    label: Native MacpD sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL52
+  - node_id: macpB
+    label: Native MacpB sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL67
+  - node_id: mmpD
+    label: Native MmpD sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL72
+  - node_id: dh1
+    label: Study excised MmpD-DH1 preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: dhB
+    label: Study excised MmpB-DH preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: mmpF_prep
+    label: Study purified MmpF preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: mupD_prep
+    label: Study purified MupD preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: donor
+    label: Study 3-hydroxypropionyl-MacpD preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: acceptor
+    label: Study malonyl-MacpB preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: dh1_assay
+    label: Extended DCC1 assay supplemented with MmpD-DH1
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: dh1_outcome
+    label: No detected dehydration with added MmpD-DH1
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: dhB_assay
+    label: Extended DCC1 assay supplemented with MmpB-DH
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: dhB_outcome
+    label: No detected dehydration with added MmpB-DH
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: mmpB
+    notes: AF318063.3 CDS 11325..17555(+),1-based inclusive; AAM12911.1,2076 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12911.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL74
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: mmpF
+    notes: AF318063.3 CDS 63348..65585(+),1-based inclusive; AAM12934.1,745 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12934.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL51
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: mupD
+    notes: AF318063.3 CDS 42216..42959(+),1-based inclusive; AAM12916.1,247 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12916.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL69
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: macpD
+    notes: AF318063.3 CDS 63031..63351(+),1-based inclusive; AAM12933.1,106 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12933.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL52
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: macpB
+    notes: AF318063.3 CDS 44062..44313(+),1-based inclusive; AAM12918.1,83 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12918.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL67
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: mmpD
+    notes: AF318063.3 CDS20958..40526(+),1-based inclusive; AAM12913.2,6522aa. Exact
+      CDS-aware table11/GenPept/current UniProt match,NCIMB10586,taxon294. Q8RL72
+      sequenceversion2, not version1. This is the native parent,not the excised DH1
+      preparation.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12913.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact versioned native parent.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL72
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact sequence/xref audit; current entry is unreviewed. The other gene/taxon
+        search result,A0A097C0T1,223aa from a different deposit,was not selected as
+        the full parent.
+      retrieved_on: '2026-10-06'
+  - subject: mmpD
+    predicate: is_native_parent_sequence_reference_for
+    object: dh1
+    notes: Excised domain from the named native parent,not the complete protein. Exact
+      boundaries,tags and full expressed sequence remain unverified from inaccessible
+      SI.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpB
+    predicate: is_native_parent_sequence_reference_for
+    object: dhB
+    notes: Excised domain from the named native parent,not the complete protein. Exact
+      boundaries,tags and full expressed sequence remain unverified from inaccessible
+      SI.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpF
+    predicate: is_native_sequence_reference_for
+    object: mmpF_prep
+    notes: Gene-matched native reference,not complete tagged/acylated preparation
+      identity.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mupD
+    predicate: is_native_sequence_reference_for
+    object: mupD_prep
+    notes: Gene-matched native reference,not complete tagged/acylated preparation
+      identity.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpD
+    predicate: is_native_sequence_reference_for
+    object: donor
+    notes: Gene-matched native reference,not complete tagged/acylated preparation
+      identity.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpB
+    predicate: is_native_sequence_reference_for
+    object: acceptor
+    notes: Gene-matched native reference,not complete tagged/acylated preparation
+      identity.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: dh1
+    predicate: was_component_in
+    object: dh1_assay
+    notes: Main-text extended Claisen-condensation assay,using MacpB acceptor. Complete
+      recipe,concentrations and cofactor composition were not verified from SI.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpF_prep
+    predicate: was_component_in
+    object: dh1_assay
+    notes: Main-text extended Claisen-condensation assay,using MacpB acceptor. Complete
+      recipe,concentrations and cofactor composition were not verified from SI.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mupD_prep
+    predicate: was_component_in
+    object: dh1_assay
+    notes: Main-text extended Claisen-condensation assay,using MacpB acceptor. Complete
+      recipe,concentrations and cofactor composition were not verified from SI.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: donor
+    predicate: was_component_in
+    object: dh1_assay
+    notes: Main-text extended Claisen-condensation assay,using MacpB acceptor. Complete
+      recipe,concentrations and cofactor composition were not verified from SI.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: acceptor
+    predicate: was_component_in
+    object: dh1_assay
+    notes: Main-text extended Claisen-condensation assay,using MacpB acceptor. Complete
+      recipe,concentrations and cofactor composition were not verified from SI.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: dh1_assay
+    predicate: yielded_reported_readout
+    object: dh1_outcome
+    notes: No dehydration reported in this supplied-domain context. Not a universal
+      claim that the domain is inactive,that full-length parent lacks function,or
+      that a particular native replacement enzyme was established. No rate or detection
+      limit adopted.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: dhB
+    predicate: was_component_in
+    object: dhB_assay
+    notes: Main-text extended Claisen-condensation assay,using MacpB acceptor. Complete
+      recipe,concentrations and cofactor composition were not verified from SI.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpF_prep
+    predicate: was_component_in
+    object: dhB_assay
+    notes: Main-text extended Claisen-condensation assay,using MacpB acceptor. Complete
+      recipe,concentrations and cofactor composition were not verified from SI.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mupD_prep
+    predicate: was_component_in
+    object: dhB_assay
+    notes: Main-text extended Claisen-condensation assay,using MacpB acceptor. Complete
+      recipe,concentrations and cofactor composition were not verified from SI.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: donor
+    predicate: was_component_in
+    object: dhB_assay
+    notes: Main-text extended Claisen-condensation assay,using MacpB acceptor. Complete
+      recipe,concentrations and cofactor composition were not verified from SI.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: acceptor
+    predicate: was_component_in
+    object: dhB_assay
+    notes: Main-text extended Claisen-condensation assay,using MacpB acceptor. Complete
+      recipe,concentrations and cofactor composition were not verified from SI.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: dhB_assay
+    predicate: yielded_reported_readout
+    object: dhB_outcome
+    notes: No dehydration reported in this supplied-domain context. Not a universal
+      claim that the domain is inactive,that full-length parent lacks function,or
+      that a particular native replacement enzyme was established. No rate or detection
+      limit adopted.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T05:42:46Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component for CHEBI:7025,owner baseline commit edbd74cf58fae62cbf8207453d4b583c31706575;
+    no prior graph migration. Separate MmpD-DH1 and MmpB-DH supplementation tests
+    with no reported dehydration. No native dehydratase assignment inferred. Native
+    reference, engineered preparation and study readout remain distinct. Partial primary-main-text
+    curation, not complete pathway reconstitution or full-record sign-off. The exact
+    PAA owner is not the clinical mupirocin mixture. Every edge cites DOI10.1002/anie.202212393
+    or official native-sequence URLs. Primary main HTML only; SI inaccessible/unread
+    and figures not visually inspected. Native references do not identify complete
+    engineered preparations. Author-agent issues#599/#600 review,not independent approval
+    or full-record sign-off.
+  llm_assisted: true

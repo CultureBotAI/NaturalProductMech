@@ -159,6 +159,15 @@ discussions:
   prompt: ChEBI calls this structure 'mupirocin' and MIBiG calls it 'pseudomonic acid
     A'. They share a Standard InChIKey, so if the names denote different compounds
     then one upstream record has the wrong structure. Check which.
+causal_graph_refs:
+- mupirocin-2022-native-genetic-phenotypes
+- mupirocin-2022-bounded-nmr-partner-tests
+- mupirocin-2022-coupled-first-extension
+- mupirocin-2022-mupe-surrogate-reduction
+- mupirocin-2022-coupled-second-extension
+- mupirocin-2022-mmpb-ks-self-loading
+- mupirocin-2022-mmpb-ks-third-extension
+- mupirocin-2022-bounded-dh-domain-tests
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -168,3 +177,25 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-06T05:42:46Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added eight exact-owner BIOSYNTHESIS components,159nodes/218DOI-or-URL-cited
+    edges, for MmpF,MmpB,MmpD,MupB,MupD,MupE,MacpA,MacpB,MacpD and mixed-origin TacpB.
+    Exact AF318063.3 CDS/GenPept/current UniProt sequence audits ground nine native
+    references; FN689524.1 CDS/GenPept/UniParc grounds TacpB CBK62717.1, with deleted
+    F8J3F1 rejected. DOI10.1002/anie.202212393 main text supports separate genetic,NMR,coupled
+    DCC1/DCC2, MupE surrogate-reduction,MmpB-KS self-loading,DCC3 and DH-domain negative-assay
+    graphs. NMR ACP5,acceptor-substitution and C5/C6 controls remain bounded to the
+    inspected text. Native references remain distinct from engineered,isotope-labelled,excised-domain
+    and acyl-loaded preparations. TacpB NMR is not direct MacpB binding; self-loading
+    is not turnover; coupled assays do not imply individual sufficiency. Source-assigned
+    products and negative results remain bounded. One exact two-word HTML snippet
+    manually checked and audited across corpus DOI/PMID/bothPMC aliases. SI inaccessible
+    and unread; figures not visually inspected. No complete engineered-sequence,kinetic,stable-complex,
+    native timing or full-pathway reconstitution claim. Addressed author-agent issues#599/#600;
+    not independent approval,exhaustive paper annotation or full-record sign-off.
+    Owner is exact pseudomonic acid A,not clinical mupirocin mixture. Preserved source
+    fields,stereochemistry,SEEDED status,discussion,AntibioticMech link and prior
+    history.
+  llm_assisted: true

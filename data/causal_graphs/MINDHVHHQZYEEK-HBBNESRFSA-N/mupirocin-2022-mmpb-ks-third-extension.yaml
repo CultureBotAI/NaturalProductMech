@@ -1,0 +1,867 @@
+record_id: CHEBI:7025
+standard_inchi_key: MINDHVHHQZYEEK-HBBNESRFSA-N
+graph:
+  graph_id: mupirocin-2022-mmpb-ks-third-extension
+  scope: BIOSYNTHESIS
+  description: MmpB-KS DCC3 with separately excised ACP5/6/7 acceptors and bounded
+    carrier-donor comparisons. No full reductive cycle inferred. Native reference,
+    engineered preparation and study readout remain distinct. Partial primary-main-text
+    curation, not complete pathway reconstitution or full-record sign-off. The exact
+    PAA owner is not the clinical mupirocin mixture.
+  nodes:
+  - node_id: cluster
+    label: Native mupirocin locus in NCIMB 10586
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000182
+  - node_id: mmpB
+    label: Native MmpB sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL74
+  - node_id: macpA
+    label: Native MacpA sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL70
+  - node_id: macpB
+    label: Native MacpB sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL67
+  - node_id: ks
+    label: Study excised MmpB KS-domain preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: pant7
+    label: Synthetic 7-hydroxyheptanoyl pantetheine donor
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: acp5_malonyl
+    label: Study malonyl-MmpB-ACP5 excised-domain preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: pant7_acp5
+    label: MmpB-KS DCC3 with pantetheine donor and ACP5
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: acp5_c9
+    label: Source-assigned 9-hydroxy-3-oxononanoyl-ACP5
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: acp6_malonyl
+    label: Study malonyl-MmpB-ACP6 excised-domain preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: pant7_acp6
+    label: MmpB-KS DCC3 with pantetheine donor and ACP6
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: acp6_c9
+    label: Source-assigned 9-hydroxy-3-oxononanoyl-ACP6
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: acp7_malonyl
+    label: Study malonyl-MmpB-ACP7 excised-domain preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: pant7_acp7
+    label: MmpB-KS DCC3 with pantetheine donor and ACP7
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: acp7_c9
+    label: Source-assigned 9-hydroxy-3-oxononanoyl-ACP7
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: macpA_hp7
+    label: Study 7-hydroxyheptanoyl-MacpA donor preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: macpB_hp7
+    label: Study 7-hydroxyheptanoyl-MacpB donor preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: acp5_hp7
+    label: Study 7-hydroxyheptanoyl-MmpB-ACP5 donor preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: macpA_hp7_transfer
+    label: MmpB-KS DCC3 with MacpA donor and ACP5 acceptor
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: macpB_hp7_transfer
+    label: MmpB-KS DCC3 with MacpB donor and ACP5 acceptor
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: macpB_hp7_readout
+    label: No detected transfer or DCC3 turnover from MacpB donor
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: acp5_hp7_transfer
+    label: MmpB-KS DCC3 with MmpB-ACP5 donor and ACP5 acceptor
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: acp5_hp7_readout
+    label: No detected transfer or DCC3 turnover from MmpB-ACP5 donor
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pant5
+    label: Synthetic 5-hydroxypentanoyl pantetheine donor
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: control5
+    label: Reported MmpB-KS C5 DCC3 substrate-control assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: control5_readout
+    label: No detected DCC3 turnover with C5 pantetheine
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pant6
+    label: Synthetic 6-hydroxyhexanoyl pantetheine donor
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: control6
+    label: Reported MmpB-KS C6 DCC3 substrate-control assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: control6_readout
+    label: No detected DCC3 turnover with C6 pantetheine
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: macpA_malonyl
+    label: Study malonyl-MacpA preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: macpA_acceptor_test
+    label: Reported DCC3 MacpA acceptor-substitution assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: macpA_acceptor_readout
+    label: No successful DCC3 acceptor substitution by MacpA
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: macpB_malonyl
+    label: Study malonyl-MacpB preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: macpB_acceptor_test
+    label: Reported DCC3 MacpB acceptor-substitution assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: macpB_acceptor_readout
+    label: No successful DCC3 acceptor substitution by MacpB
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: mmpB
+    notes: AF318063.3 CDS 11325..17555(+),1-based inclusive; AAM12911.1,2076 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12911.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL74
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: macpA
+    notes: AF318063.3 CDS 41870..42175(+),1-based inclusive; AAM12915.1,101 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12915.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL70
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: macpB
+    notes: AF318063.3 CDS 44062..44313(+),1-based inclusive; AAM12918.1,83 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12918.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL67
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: mmpB
+    predicate: is_native_sequence_reference_for
+    object: ks
+    notes: Excised KS, not the full-length native MmpB; complete domain boundaries
+      and construct sequence remain unverified.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpB
+    predicate: is_native_parent_sequence_reference_for
+    object: acp5_malonyl
+    notes: The ACP is an individual excised MmpB domain, not an independent native
+      gene product or the complete protein. Acyl state and engineered sequence are
+      distinct.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpB
+    predicate: is_native_parent_sequence_reference_for
+    object: acp5_c9
+    notes: The ACP is an individual excised MmpB domain, not an independent native
+      gene product or the complete protein. Acyl state and engineered sequence are
+      distinct.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: ks
+    predicate: was_component_in
+    object: pant7_acp5
+    notes: Purified excised-domain extension assay; no assertion that full-length
+      tandem ACPs are interchangeable in native cells.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: pant7
+    predicate: was_component_in
+    object: pant7_acp5
+    notes: Purified excised-domain extension assay; no assertion that full-length
+      tandem ACPs are interchangeable in native cells.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: acp5_malonyl
+    predicate: was_component_in
+    object: pant7_acp5
+    notes: Purified excised-domain extension assay; no assertion that full-length
+      tandem ACPs are interchangeable in native cells.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: pant7_acp5
+    predicate: yielded_source_assigned_product
+    object: acp5_c9
+    notes: Source MS/Ppant assignment of the C9 beta-keto product, not fully reduced
+      9HN or complete PAA. Main text reports loss of activity upon KS denaturation;
+      full carrier-specific control recipes remain unverified.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpB
+    predicate: is_native_parent_sequence_reference_for
+    object: acp6_malonyl
+    notes: The ACP is an individual excised MmpB domain, not an independent native
+      gene product or the complete protein. Acyl state and engineered sequence are
+      distinct.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpB
+    predicate: is_native_parent_sequence_reference_for
+    object: acp6_c9
+    notes: The ACP is an individual excised MmpB domain, not an independent native
+      gene product or the complete protein. Acyl state and engineered sequence are
+      distinct.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: ks
+    predicate: was_component_in
+    object: pant7_acp6
+    notes: Purified excised-domain extension assay; no assertion that full-length
+      tandem ACPs are interchangeable in native cells.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: pant7
+    predicate: was_component_in
+    object: pant7_acp6
+    notes: Purified excised-domain extension assay; no assertion that full-length
+      tandem ACPs are interchangeable in native cells.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: acp6_malonyl
+    predicate: was_component_in
+    object: pant7_acp6
+    notes: Purified excised-domain extension assay; no assertion that full-length
+      tandem ACPs are interchangeable in native cells.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: pant7_acp6
+    predicate: yielded_source_assigned_product
+    object: acp6_c9
+    notes: Source MS/Ppant assignment of the C9 beta-keto product, not fully reduced
+      9HN or complete PAA. Main text reports loss of activity upon KS denaturation;
+      full carrier-specific control recipes remain unverified.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpB
+    predicate: is_native_parent_sequence_reference_for
+    object: acp7_malonyl
+    notes: The ACP is an individual excised MmpB domain, not an independent native
+      gene product or the complete protein. Acyl state and engineered sequence are
+      distinct.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpB
+    predicate: is_native_parent_sequence_reference_for
+    object: acp7_c9
+    notes: The ACP is an individual excised MmpB domain, not an independent native
+      gene product or the complete protein. Acyl state and engineered sequence are
+      distinct.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: ks
+    predicate: was_component_in
+    object: pant7_acp7
+    notes: Purified excised-domain extension assay; no assertion that full-length
+      tandem ACPs are interchangeable in native cells.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: pant7
+    predicate: was_component_in
+    object: pant7_acp7
+    notes: Purified excised-domain extension assay; no assertion that full-length
+      tandem ACPs are interchangeable in native cells.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: acp7_malonyl
+    predicate: was_component_in
+    object: pant7_acp7
+    notes: Purified excised-domain extension assay; no assertion that full-length
+      tandem ACPs are interchangeable in native cells.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: pant7_acp7
+    predicate: yielded_source_assigned_product
+    object: acp7_c9
+    notes: Source MS/Ppant assignment of the C9 beta-keto product, not fully reduced
+      9HN or complete PAA. Main text reports loss of activity upon KS denaturation;
+      full carrier-specific control recipes remain unverified.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA
+    predicate: is_native_carrier_reference_for
+    object: macpA_hp7
+    notes: Gene-matched carrier reference only; full construct sequence and chemical-state
+      identity are not represented by the native accession.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpB
+    predicate: is_native_carrier_reference_for
+    object: macpB_hp7
+    notes: Gene-matched carrier reference only; full construct sequence and chemical-state
+      identity are not represented by the native accession.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: mmpB
+    predicate: is_native_parent_sequence_reference_for
+    object: acp5_hp7
+    notes: Acylated excised ACP5 domain, not the complete MmpB protein or an independently
+      encoded ACP.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: ks
+    predicate: was_component_in
+    object: macpA_hp7_transfer
+    notes: Donor-ACP comparison with malonyl-ACP5 acceptor. No complete native pathway
+      timing or stable protein-complex claim.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA_hp7
+    predicate: was_component_in
+    object: macpA_hp7_transfer
+    notes: Donor-ACP comparison with malonyl-ACP5 acceptor. No complete native pathway
+      timing or stable protein-complex claim.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: acp5_malonyl
+    predicate: was_component_in
+    object: macpA_hp7_transfer
+    notes: Donor-ACP comparison with malonyl-ACP5 acceptor. No complete native pathway
+      timing or stable protein-complex claim.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA_hp7_transfer
+    predicate: yielded_source_assigned_product
+    object: acp5_c9
+    notes: MS/Ppant assignment supports C7-chain delivery from MacpA and C9 beta-keto
+      product formation in this assay, not the remaining reductive steps.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: ks
+    predicate: was_component_in
+    object: macpB_hp7_transfer
+    notes: Donor-ACP comparison with malonyl-ACP5 acceptor. No complete native pathway
+      timing or stable protein-complex claim.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpB_hp7
+    predicate: was_component_in
+    object: macpB_hp7_transfer
+    notes: Donor-ACP comparison with malonyl-ACP5 acceptor. No complete native pathway
+      timing or stable protein-complex claim.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: acp5_malonyl
+    predicate: was_component_in
+    object: macpB_hp7_transfer
+    notes: Donor-ACP comparison with malonyl-ACP5 acceptor. No complete native pathway
+      timing or stable protein-complex claim.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpB_hp7_transfer
+    predicate: yielded_reported_readout
+    object: macpB_hp7_readout
+    notes: Bounded negative assay; not universal lack of binding or function. The
+      source reports stable 7HH-MacpB, unlike 5HP-MacpB hydrolysis in the distinct
+      DCC2 assay.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: ks
+    predicate: was_component_in
+    object: acp5_hp7_transfer
+    notes: Donor-ACP comparison with malonyl-ACP5 acceptor. No complete native pathway
+      timing or stable protein-complex claim.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: acp5_hp7
+    predicate: was_component_in
+    object: acp5_hp7_transfer
+    notes: Donor-ACP comparison with malonyl-ACP5 acceptor. No complete native pathway
+      timing or stable protein-complex claim.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: acp5_malonyl
+    predicate: was_component_in
+    object: acp5_hp7_transfer
+    notes: Donor-ACP comparison with malonyl-ACP5 acceptor. No complete native pathway
+      timing or stable protein-complex claim.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: acp5_hp7_transfer
+    predicate: yielded_reported_readout
+    object: acp5_hp7_readout
+    notes: Bounded negative assay; not universal lack of binding or function.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: ks
+    predicate: was_tested_in
+    object: control5
+    notes: Main-text substrate-control report. Exact ACP acceptor and complete control
+      recipe are not verified from inaccessible SI; no particular ACP5/6/7 assignment.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: pant5
+    predicate: was_tested_in
+    object: control5
+    notes: Main-text substrate-control report. Exact ACP acceptor and complete control
+      recipe are not verified from inaccessible SI; no particular ACP5/6/7 assignment.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: control5
+    predicate: yielded_reported_readout
+    object: control5_readout
+    notes: No reported turnover under these conditions,not universal substrate exclusion.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: ks
+    predicate: was_tested_in
+    object: control6
+    notes: Main-text substrate-control report. Exact ACP acceptor and complete control
+      recipe are not verified from inaccessible SI; no particular ACP5/6/7 assignment.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: pant6
+    predicate: was_tested_in
+    object: control6
+    notes: Main-text substrate-control report. Exact ACP acceptor and complete control
+      recipe are not verified from inaccessible SI; no particular ACP5/6/7 assignment.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: control6
+    predicate: yielded_reported_readout
+    object: control6_readout
+    notes: No reported turnover under these conditions,not universal substrate exclusion.
+      C6 self-loading in a distinct assay did not establish catalytic chain extension.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA
+    predicate: is_native_carrier_reference_for
+    object: macpA_malonyl
+    notes: Gene-matched reference; acyl state does not identify the complete engineered
+      preparation.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: ks
+    predicate: was_tested_in
+    object: macpA_acceptor_test
+    notes: Main text reports inability to substitute for MmpB ACP domains as malonyl
+      acceptor. Complete donor/acceptor-control recipe remains unverified from SI.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA_malonyl
+    predicate: was_tested_in
+    object: macpA_acceptor_test
+    notes: Main text reports inability to substitute for MmpB ACP domains as malonyl
+      acceptor. Complete donor/acceptor-control recipe remains unverified from SI.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA_acceptor_test
+    predicate: yielded_reported_readout
+    object: macpA_acceptor_readout
+    notes: Bounded acceptor-substitution result,not universal absence of native function.
+      MacpA supported donor transfer in the distinct 7HH-MacpA assay.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpB
+    predicate: is_native_carrier_reference_for
+    object: macpB_malonyl
+    notes: Gene-matched reference; acyl state does not identify the complete engineered
+      preparation.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: ks
+    predicate: was_tested_in
+    object: macpB_acceptor_test
+    notes: Main text reports inability to substitute for MmpB ACP domains as malonyl
+      acceptor. Complete donor/acceptor-control recipe remains unverified from SI.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpB_malonyl
+    predicate: was_tested_in
+    object: macpB_acceptor_test
+    notes: Main text reports inability to substitute for MmpB ACP domains as malonyl
+      acceptor. Complete donor/acceptor-control recipe remains unverified from SI.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpB_acceptor_test
+    predicate: yielded_reported_readout
+    object: macpB_acceptor_readout
+    notes: Bounded acceptor-substitution result,not universal absence of native function.
+      MacpB donor nondetection was separately measured with 7HH-MacpB; it is not inferred
+      from this acceptor test.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T05:42:46Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component for CHEBI:7025,owner baseline commit edbd74cf58fae62cbf8207453d4b583c31706575;
+    no prior graph migration. MmpB-KS DCC3 with separately excised ACP5/6/7 acceptors
+    and bounded carrier-donor comparisons. No full reductive cycle inferred. Native
+    reference, engineered preparation and study readout remain distinct. Partial primary-main-text
+    curation, not complete pathway reconstitution or full-record sign-off. The exact
+    PAA owner is not the clinical mupirocin mixture. Every edge cites DOI10.1002/anie.202212393
+    or official native-sequence URLs. Primary main HTML only; SI inaccessible/unread
+    and figures not visually inspected. Native references do not identify complete
+    engineered preparations. Author-agent issues#599/#600 review,not independent approval
+    or full-record sign-off.
+  llm_assisted: true
