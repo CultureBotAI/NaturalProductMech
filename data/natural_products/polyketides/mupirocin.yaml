@@ -178,6 +178,9 @@ causal_graph_refs:
 - mupirocin-2023-mupa-free-substrate-negative-controls
 - mupirocin-2023-mupa-isotope-nmr-ms-readouts
 - mupirocin-2023-mupa-bounded-ks-transfer
+- mupirocin-2017-muppv-native-deletion-metabolites
+- mupirocin-2017-muppv-desepoxy-feeding
+- mupirocin-2017-muppv-bounded-functional-proposals
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -255,4 +258,23 @@ curation_history:
     approval. Preserved all12older graph objects/component bytes,source fields,stereochemistry,SEEDED
     status,name discussion, AntibioticMech link and prior history. Exact PAA owner,not
     clinical mupirocin mixture.
+  llm_assisted: true
+- timestamp: '2026-10-06T08:10:59Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added three exact-owner BIOSYNTHESIS components, 31 nodes and 33 DOI-or-URL-cited
+    edges, from DOI10.1002/anie.201611590. Native MupP/Q8RL55, MupV/Q8RL47, MmpE/Q8RL60
+    and MupW/Q8RL46 match AF318063.3 CDS-aware table-11 translations, versioned GenPept
+    and current UniProt sequences. Rejected name-collision A0ACD4XY39; native references
+    do not identify full engineered stocks. Separate deletion-metabolite, desepoxy
+    feeding and proposed-function graphs preserve experimental versus inferred evidence
+    and PA-C versus PA-A identity. Supporting information unread; retained author
+    manuscript main text fully read and relevant Schemes 1-3/Figures 1-2 visually
+    inspected. One exact five-word snippet manually checked; corpus DOI/PMID/author-URL
+    aliases total seven quoted words including two previously curated words. Author-agent
+    issue#608 fixed by separating mutant alleles; not independent approval. No isolated-enzyme
+    turnover, full pathway reconstitution or full-record sign-off. Preserved all 18
+    older graphs/component bytes, source fields, stereochemistry, SEEDED status, name
+    discussion, AntibioticMech link and previous history. Exact PA-A owner, not the
+    mixture.
   llm_assisted: true

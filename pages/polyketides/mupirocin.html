@@ -3300,6 +3300,255 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 11 edges</span></h2>
+<p class="sub">Single and double mutant product assignments. Owner CHEBI:7025 denotes pseudomonic acid A, not the clinical mixture. Desepoxy feeding outcomes concern the parallel PA-C branch; PA-C is not this owner&#39;s structure. Native references, engineered genotypes, source-assigned metabolites and mechanistic proposals remain distinct. No purified-enzyme turnover, complete pathway reconstitution or full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native NCIMB 10586 mupirocin locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native MupP sequence reference</td>
+  <td>AF318063.3 CDS 59935..60864(+), 1-based inclusive; AAM12930.2, 309 aa. NCIMB 10586, taxon 294; unreviewed UniProt sequence version 2. CDS-aware table-11 translation matches GenPept and UniProt. Native reference, not an expressed full-length protein in a deletion strain or a complete engineered allele. Rejected A0ACD4XY39: same gene label and species taxon but different 223 aa phosphatase sequence, CP140009/WQD73931.1; a name match does not establish cluster identity.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3<br>https://www.ncbi.nlm.nih.gov/protein/AAM12930.2<br>https://www.uniprot.org/uniprotkb/Q8RL55<br>https://www.uniprot.org/uniprotkb/A0ACD4XY39</td>
+</tr>
+<tr>
+  <td>Native NCIMB 10586 mupirocin locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native MmpE sequence reference</td>
+  <td>AF318063.3 CDS 49802..53377(+), 1-based inclusive; AAM12925.2, 1191 aa. NCIMB 10586, taxon 294; unreviewed UniProt sequence version 2. CDS-aware table-11 translation matches GenPept and UniProt. Native reference, not an expressed full-length protein in a deletion strain or a complete engineered allele.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3<br>https://www.ncbi.nlm.nih.gov/protein/AAM12925.2<br>https://www.uniprot.org/uniprotkb/Q8RL60</td>
+</tr>
+<tr>
+  <td>Single-mutant mupP deletion</td>
+  <td>affects_coding_locus_of</td>
+  <td>Native MupP sequence reference</td>
+  <td>Native reference anchors the affected locus. Deletion junctions, residual sequence and possible polar effects are unverified; not a claim that the intact enzyme remains present.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>Single-mutant mupP deletion</td>
+  <td>was_present_in</td>
+  <td>Study NCIMB 10586 mupP-deletion culture</td>
+  <td>Reported engineered genotype; complete stock and expression state not established.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>Double-mutant mupP deletion</td>
+  <td>affects_coding_locus_of</td>
+  <td>Native MupP sequence reference</td>
+  <td>Native reference anchors the affected locus. Deletion junctions, residual sequence and possible polar effects are unverified; not a claim that the intact enzyme remains present.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>Double-mutant mupP deletion</td>
+  <td>was_present_in</td>
+  <td>Study NCIMB 10586 mmpE-OR/mupP double-deletion culture</td>
+  <td>Reported engineered genotype; complete stock and expression state not established.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>Reported deletion of MmpE OR domain</td>
+  <td>affects_coding_locus_of</td>
+  <td>Native MmpE sequence reference</td>
+  <td>Native reference anchors the affected locus. Deletion junctions, residual sequence and possible polar effects are unverified; not a claim that the intact enzyme remains present.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>Reported deletion of MmpE OR domain</td>
+  <td>was_present_in</td>
+  <td>Study NCIMB 10586 mmpE-OR/mupP double-deletion culture</td>
+  <td>Reported engineered genotype; complete stock and expression state not established.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>Study NCIMB 10586 mupP-deletion culture</td>
+  <td>yielded_source_assigned_metabolite</td>
+  <td>Source-assigned mupirocin P (13)</td>
+  <td>Unstable major MW 514 metabolite; fractionation and NMR support the source assignment.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>Study NCIMB 10586 mmpE-OR/mupP double-deletion culture</td>
+  <td>yielded_major_source_assigned_metabolite</td>
+  <td>Source-assigned desepoxy-mupirocin P (16)</td>
+  <td>Crude-extract HPLC Figure 2 and isolation account; no numerical yield or replicate precision adopted.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>Study NCIMB 10586 mmpE-OR/mupP double-deletion culture</td>
+  <td>yielded_minor_source_assigned_metabolite</td>
+  <td>Source-assigned desepoxy-PA-B (17)</td>
+  <td>Source reports a small accompanying amount; not a universal production ratio.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">13 nodes, 15 edges</span></h2>
+<p class="sub">Two culture contexts retain separate evidentiary detail. Owner CHEBI:7025 denotes pseudomonic acid A, not the clinical mixture. Desepoxy feeding outcomes concern the parallel PA-C branch; PA-C is not this owner&#39;s structure. Native references, engineered genotypes, source-assigned metabolites and mechanistic proposals remain distinct. No purified-enzyme turnover, complete pathway reconstitution or full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native NCIMB 10586 mupirocin locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native MmpE sequence reference</td>
+  <td>AF318063.3 CDS 49802..53377(+), 1-based inclusive; AAM12925.2, 1191 aa. NCIMB 10586, taxon 294; unreviewed UniProt sequence version 2. CDS-aware table-11 translation matches GenPept and UniProt. Native reference, not an expressed full-length protein in a deletion strain or a complete engineered allele.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3<br>https://www.ncbi.nlm.nih.gov/protein/AAM12925.2<br>https://www.uniprot.org/uniprotkb/Q8RL60</td>
+</tr>
+<tr>
+  <td>Native NCIMB 10586 mupirocin locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native MupW sequence reference</td>
+  <td>AF318063.3 CDS 70055..71446(+), 1-based inclusive; AAM12939.1, 463 aa. NCIMB 10586, taxon 294; unreviewed UniProt sequence version 1. CDS-aware table-11 translation matches GenPept and UniProt. Native reference, not an expressed full-length protein in a deletion strain or a complete engineered allele.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3<br>https://www.ncbi.nlm.nih.gov/protein/AAM12939.1<br>https://www.uniprot.org/uniprotkb/Q8RL46</td>
+</tr>
+<tr>
+  <td>Native NCIMB 10586 mupirocin locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native MupV sequence reference</td>
+  <td>AF318063.3 CDS 68027..70015(+), 1-based inclusive; AAM12938.1, 662 aa. NCIMB 10586, taxon 294; unreviewed UniProt sequence version 1. CDS-aware table-11 translation matches GenPept and UniProt. Native reference, not an expressed full-length protein in a deletion strain or a complete engineered allele.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3<br>https://www.ncbi.nlm.nih.gov/protein/AAM12938.1<br>https://www.uniprot.org/uniprotkb/Q8RL47</td>
+</tr>
+<tr>
+  <td>Reported deletion of MmpE OR domain</td>
+  <td>affects_coding_locus_of</td>
+  <td>Native MmpE sequence reference</td>
+  <td>Native reference anchors the affected locus. Deletion junctions, residual sequence and possible polar effects are unverified; not a claim that the intact enzyme remains present.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>Reported deletion of MmpE OR domain</td>
+  <td>was_present_in</td>
+  <td>Study mmpE-OR/mupW double-deletion culture</td>
+  <td>Reported engineered genotype; complete stock and expression state not established.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>Reported mupW deletion</td>
+  <td>affects_coding_locus_of</td>
+  <td>Native MupW sequence reference</td>
+  <td>Native reference anchors the affected locus. Deletion junctions, residual sequence and possible polar effects are unverified; not a claim that the intact enzyme remains present.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>Reported mupW deletion</td>
+  <td>was_present_in</td>
+  <td>Study mmpE-OR/mupW double-deletion culture</td>
+  <td>Reported engineered genotype; complete stock and expression state not established.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>Reported mupV deletion</td>
+  <td>affects_coding_locus_of</td>
+  <td>Native MupV sequence reference</td>
+  <td>Native reference anchors the affected locus. Deletion junctions, residual sequence and possible polar effects are unverified; not a claim that the intact enzyme remains present.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>Reported mupV deletion</td>
+  <td>was_present_in</td>
+  <td>Study mupV-deletion culture</td>
+  <td>Reported engineered genotype; complete stock and expression state not established.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>Study mmpE-OR/mupW double-deletion culture</td>
+  <td>was_culture_in</td>
+  <td>Desepoxy-P (16) feeding to mmpE-OR/mupW mutant</td>
+  <td>Separate reported whole-culture feeding context.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>Fed source-assigned desepoxy-mupirocin P (16)</td>
+  <td>was_supplied_to</td>
+  <td>Desepoxy-P (16) feeding to mmpE-OR/mupW mutant</td>
+  <td>Not an isolated-enzyme substrate assay.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>Desepoxy-P (16) feeding to mmpE-OR/mupW mutant</td>
+  <td>yielded_source_assigned_product</td>
+  <td>Source-assigned PA-C (9) feeding product</td>
+  <td>LCMS MW 484 peak followed by isolation/NMR assignment.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>Study mupV-deletion culture</td>
+  <td>was_culture_in</td>
+  <td>Desepoxy-P (16) feeding to mupV mutant</td>
+  <td>Separate reported whole-culture feeding context.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>Fed source-assigned desepoxy-mupirocin P (16)</td>
+  <td>was_supplied_to</td>
+  <td>Desepoxy-P (16) feeding to mupV mutant</td>
+  <td>Not an isolated-enzyme substrate assay.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>Desepoxy-P (16) feeding to mupV mutant</td>
+  <td>yielded_source_assigned_product</td>
+  <td>Source-assigned PA-C (9) feeding product</td>
+  <td>Main text and Scheme 2 report PA-C; the separate isolation/NMR description is not restated for this host.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 7 edges</span></h2>
+<p class="sub">Inferred reaction and ordering remain explicitly proposed. Owner CHEBI:7025 denotes pseudomonic acid A, not the clinical mixture. Desepoxy feeding outcomes concern the parallel PA-C branch; PA-C is not this owner&#39;s structure. Native references, engineered genotypes, source-assigned metabolites and mechanistic proposals remain distinct. No purified-enzyme turnover, complete pathway reconstitution or full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native NCIMB 10586 mupirocin locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native MupP sequence reference</td>
+  <td>AF318063.3 CDS 59935..60864(+), 1-based inclusive; AAM12930.2, 309 aa. NCIMB 10586, taxon 294; unreviewed UniProt sequence version 2. CDS-aware table-11 translation matches GenPept and UniProt. Native reference, not an expressed full-length protein in a deletion strain or a complete engineered allele. Rejected A0ACD4XY39: same gene label and species taxon but different 223 aa phosphatase sequence, CP140009/WQD73931.1; a name match does not establish cluster identity.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3<br>https://www.ncbi.nlm.nih.gov/protein/AAM12930.2<br>https://www.uniprot.org/uniprotkb/Q8RL55<br>https://www.uniprot.org/uniprotkb/A0ACD4XY39</td>
+</tr>
+<tr>
+  <td>Native NCIMB 10586 mupirocin locus</td>
+  <td>encodes_native_reference</td>
+  <td>Native MupV sequence reference</td>
+  <td>AF318063.3 CDS 68027..70015(+), 1-based inclusive; AAM12938.1, 662 aa. NCIMB 10586, taxon 294; unreviewed UniProt sequence version 1. CDS-aware table-11 translation matches GenPept and UniProt. Native reference, not an expressed full-length protein in a deletion strain or a complete engineered allele.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3<br>https://www.ncbi.nlm.nih.gov/protein/AAM12938.1<br>https://www.uniprot.org/uniprotkb/Q8RL47</td>
+</tr>
+<tr>
+  <td>Native MupP sequence reference</td>
+  <td>is_proposed_to_catalyze</td>
+  <td>Proposed mupirocin-P (13) dehydration</td>
+  <td>Genetic/metabolite interpretation; no isolated MupP turnover is reported here.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>Source-assigned mupirocin P (13)</td>
+  <td>is_proposed_substrate_of</td>
+  <td>Proposed mupirocin-P (13) dehydration</td>
+  <td>Scheme 1 proposal.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>Proposed mupirocin-P (13) dehydration</td>
+  <td>is_proposed_to_yield</td>
+  <td>Proposed enol-ketone mupirocin C1 (14) product</td>
+  <td>Scheme 1 proposal, not a purified-enzyme product assay.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>Native MupV sequence reference</td>
+  <td>is_proposed_to_act_before</td>
+  <td>Native MupP sequence reference</td>
+  <td>Order inferred from mutant feeding, not a demonstrated protein interaction or timed catalytic sequence.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>Native MupV sequence reference</td>
+  <td>has_proposed_unresolved_function</td>
+  <td>Unresolved MupV hydrolysis or carrier-transfer role</td>
+  <td>Sequence comparison suggests alternatives; neither chemistry is directly established by the feeding result.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
