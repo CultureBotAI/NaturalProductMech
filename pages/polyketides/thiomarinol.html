@@ -360,6 +360,290 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">17 nodes, 17 edges</span></h2>
+<p class="sub">Native TmlF deletion genetics and source-assigned metabolites, with a separately inferred 7-ketoreductase role. No isolated-enzyme turnover or complete pathway reconstitution is asserted. Exact congener/tautomer/stereochemical identities remain ungrounded; the owner retains SEEDED status.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Thiomarinol locus on native pTML1</td>
+  <td>encodes_native_reference</td>
+  <td>Native deposited TmlF sequence reference</td>
+  <td>FN689524.1 CDS 73267..74319(+), 1-based inclusive; CBK62736.1, 350 aa. Table-11 CDS translation, original GenPept and UPI000211729C archive sequences match exactly. Native source is Pseudoalteromonas sp. SANK 73390, taxon 747457, pTML1.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1<br>https://www.ncbi.nlm.nih.gov/protein/CBK62736.1<br>https://www.uniprot.org/uniparc/UPI000211729C<br>https://www.uniprot.org/uniprotkb/F8J3D7</td>
+</tr>
+<tr>
+  <td>Reported tmlF in-frame deletion allele</td>
+  <td>affects_coding_locus_of</td>
+  <td>Native deposited TmlF sequence reference</td>
+  <td>The source reports removal from aa 10 to aa 327 using approximately 500-bp arms. These are reported native numbering boundaries, not a reconstructed junction or complete residual-protein sequence.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>Reported tmlF in-frame deletion allele</td>
+  <td>was_introduced_in</td>
+  <td>SANK 73390 tmlF deletion culture</td>
+  <td>Native SANK 73390 genetic intervention, distinct from heterologous mupirocin-host deletions. No complementation result, whole mutant-genome identity or full polarity exclusion is asserted.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>SANK 73390 tmlF deletion culture</td>
+  <td>lacked_detected_production_of</td>
+  <td>Source-assigned thiomarinol A</td>
+  <td>Source extract analysis reports loss of thiomarinol A. Bounded detection claim; no detection-limit, numerical zero, replicate count or titer estimate is inferred.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>SANK 73390 tmlF deletion culture</td>
+  <td>lacked_detected_production_of</td>
+  <td>Source-assigned thiomarinol C</td>
+  <td>The same mutant also loses detected thiomarinol C. The congener remains separate from thiomarinol A and from the stereochemically incomplete owner identity.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>SANK 73390 tmlF deletion culture</td>
+  <td>retained_reported_production_of</td>
+  <td>Source-assigned xenorhabdin acylpyrrothines</td>
+  <td>The paper reports continued acylpyrrothine production; Figure 4 labels this chromatographic region. No equality of quantitative wild-type and mutant titers is asserted.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>SANK 73390 tmlF deletion culture</td>
+  <td>yielded_source_assigned_metabolite</td>
+  <td>Source-assigned 8-hydroxythiomarinol C (22)</td>
+  <td>Figure 4/source text assign a minor metabolite from the mutant extract using reported NMR/HR-ESI-MS. Detailed spectra and replicate-level data were not inspected. This is not proof of a sole direct TmlF substrate.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>SANK 73390 tmlF deletion culture</td>
+  <td>yielded_source_assigned_metabolite</td>
+  <td>Source-assigned 6,7-diketothiomarinol C (23)</td>
+  <td>Figure 4/source text assign a minor metabolite from the mutant extract using reported NMR/HR-ESI-MS. Detailed spectra and replicate-level data were not inspected. This is not proof of a sole direct TmlF substrate. The source represents this group as enol-ketone tautomers; no exact tautomer identifier is chosen.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>SANK 73390 tmlF deletion culture</td>
+  <td>yielded_source_assigned_metabolite</td>
+  <td>Source-assigned 6,7-diketothiomarinol A (24)</td>
+  <td>Figure 4/source text assign a minor metabolite from the mutant extract using reported NMR/HR-ESI-MS. Detailed spectra and replicate-level data were not inspected. This is not proof of a sole direct TmlF substrate. The source represents this group as enol-ketone tautomers; no exact tautomer identifier is chosen.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>SANK 73390 tmlF deletion culture</td>
+  <td>yielded_source_assigned_metabolite</td>
+  <td>Source-assigned 6,7-diketomarinolic acid C6 (25)</td>
+  <td>Figure 4/source text assign a minor metabolite from the mutant extract using reported NMR/HR-ESI-MS. Detailed spectra and replicate-level data were not inspected. This is not proof of a sole direct TmlF substrate. The source represents this group as enol-ketone tautomers; no exact tautomer identifier is chosen.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>SANK 73390 tmlF deletion culture</td>
+  <td>yielded_source_assigned_metabolite</td>
+  <td>Source-assigned 7-ketothiomarinol C (26)</td>
+  <td>Figure 4/source text assign a minor metabolite from the mutant extract using reported NMR/HR-ESI-MS. Detailed spectra and replicate-level data were not inspected. This is not proof of a sole direct TmlF substrate.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>SANK 73390 tmlF deletion culture</td>
+  <td>yielded_source_assigned_metabolite</td>
+  <td>Source-assigned 7-ketothiomarinol A (27)</td>
+  <td>Figure 4/source text assign a minor metabolite from the mutant extract using reported NMR/HR-ESI-MS. Detailed spectra and replicate-level data were not inspected. This is not proof of a sole direct TmlF substrate.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>SANK 73390 tmlF deletion culture</td>
+  <td>yielded_source_assigned_metabolite</td>
+  <td>Source-assigned 8-epi-7-ketothiomarinol C (28)</td>
+  <td>Figure 4/source text assign a minor metabolite from the mutant extract using reported NMR/HR-ESI-MS. Detailed spectra and replicate-level data were not inspected. This is not proof of a sole direct TmlF substrate. Keto-enol tautomerism/epimerization may generate this product; do not force a linear biosynthetic step.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>SANK 73390 tmlF deletion culture</td>
+  <td>yielded_source_assigned_metabolite</td>
+  <td>Source-assigned 8-epi-7-ketothiomarinol A (29)</td>
+  <td>Figure 4/source text assign a minor metabolite from the mutant extract using reported NMR/HR-ESI-MS. Detailed spectra and replicate-level data were not inspected. This is not proof of a sole direct TmlF substrate. Keto-enol tautomerism/epimerization may generate this product; do not force a linear biosynthetic step.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>SANK 73390 tmlF deletion culture</td>
+  <td>yielded_source_assigned_metabolite</td>
+  <td>Source-assigned 8-epi-7-epi-6-ketothiomarinol A (30)</td>
+  <td>Figure 4/source text assign a minor metabolite from the mutant extract using reported NMR/HR-ESI-MS. Detailed spectra and replicate-level data were not inspected. This is not proof of a sole direct TmlF substrate. Keto-enol tautomerism/epimerization may generate this product; do not force a linear biosynthetic step.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>SANK 73390 tmlF deletion culture</td>
+  <td>supports_genetic_interpretation</td>
+  <td>Inferred TmlF 7-ketoreductase role</td>
+  <td>Accumulated oxidation-state variants are consistent with a late reductive role. They do not establish isolated TmlF catalysis, cofactor specificity, kinetics or a fixed order for all shunt products.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+<tr>
+  <td>Native deposited TmlF sequence reference</td>
+  <td>has_inferred_role</td>
+  <td>Inferred TmlF 7-ketoreductase role</td>
+  <td>The authors combine the deletion phenotype with 33% amino-acid identity to mupirocin MupF to propose a 7-ketoreductase role. MupF is an analogy, not a substitute protein identifier or direct TmlF assay.</td>
+  <td class="mono">DOI:10.1002/anie.201611590</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 6 edges</span></h2>
+<p class="sub">Native TmuB I109N genetics and source-assigned thiomarinol C, without claiming an exact mutant proteoform or universal loss of product. Native references do not establish complete engineered proteoforms. Source-assigned congeners remain ungrounded; owner identity, incomplete stereochemistry and SEEDED status are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Thiomarinol locus on native pTML1</td>
+  <td>encodes_native_reference</td>
+  <td>Native deposited TmuB sequence reference</td>
+  <td>FN689524.1 CDS 82295..83089(+), 1-based inclusive; CBK62743.1,264 aa. CDS-aware table-11 translation matches original GenPept, WP_013933295.1 and UPI00021172A3. Native source is Pseudoalteromonas sp. SANK 73390,taxon747457,pTML1. The generic RefSeq family name is not itself experimental substrate evidence.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1<br>https://www.ncbi.nlm.nih.gov/protein/CBK62743.1<br>https://www.ncbi.nlm.nih.gov/protein/WP_013933295.1<br>https://www.uniprot.org/uniprotkb/F8J3G9<br>DOI:10.1002/cbic.201800036</td>
+</tr>
+<tr>
+  <td>Reported tmuB I109N allele</td>
+  <td>affects_coding_locus_of</td>
+  <td>Native deposited TmuB sequence reference</td>
+  <td>Native reference position109 is Ile; the reported substitution is I109N. This is a point-mutant allele, not a complete deletion or a claim that the mutant sequence is identical to the native accession.</td>
+  <td class="mono">DOI:10.1002/cbic.201800036</td>
+</tr>
+<tr>
+  <td>Reported tmuB I109N allele</td>
+  <td>was_introduced_in</td>
+  <td>SANK 73390 tmuB I109N culture</td>
+  <td>The source describes pAKE604-mediated allelic replacement, E. coli S17-1 mobilization, kanamycin selection for integrants, followed by sucrose-resistant colonies screened for kanamycin sensitivity and PCR/sequencing checks. The target native locus is on pTML1; the methods&#39; generic chromosome wording does not relocate it. No whole mutant-stock sequence is established.</td>
+  <td class="mono">DOI:10.1002/cbic.201800036</td>
+</tr>
+<tr>
+  <td>SANK 73390 tmuB I109N culture</td>
+  <td>yielded_source_assigned_metabolite</td>
+  <td>Source-assigned thiomarinol C</td>
+  <td>The source prepared thiomarinol C after recombining I109N into the producer. This does not supply a quantitative native yield or prove complete absence of thiomarinol A in every condition.</td>
+  <td class="mono">DOI:10.1002/cbic.201800036</td>
+</tr>
+<tr>
+  <td>SANK 73390 tmuB I109N culture</td>
+  <td>supports_genetic_interpretation</td>
+  <td>TmuB contribution to native 4-hydroxylation</td>
+  <td>Native point-mutant/product evidence supports a biosynthetic contribution; full complementation and exclusion of all secondary effects are not established here.</td>
+  <td class="mono">DOI:10.1002/cbic.201800036</td>
+</tr>
+<tr>
+  <td>Native deposited TmuB sequence reference</td>
+  <td>has_genetically_supported_role</td>
+  <td>TmuB contribution to native 4-hydroxylation</td>
+  <td>Keep this genetic interpretation separate from the purified preparation&#39;s conversion of thiomarinol C to A. No antimicrobial target mechanism or MIC claim is copied into this biosynthesis graph.</td>
+  <td class="mono">DOI:10.1002/cbic.201800036</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">14 nodes, 15 edges</span></h2>
+<p class="sub">Purified TmuB tailoring with separate native and surrogate substrates, I109N negative control and delayed PA-B activity. Homology-model templates are not presented as TmuB crystal structures; unaudited kinetic values remain unasserted. Purified conversion does not establish native reaction order. Native references do not establish complete engineered proteoforms. Source-assigned congeners remain ungrounded; owner identity, incomplete stereochemistry and SEEDED status are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Thiomarinol locus on native pTML1</td>
+  <td>encodes_native_reference</td>
+  <td>Native deposited TmuB sequence reference</td>
+  <td>FN689524.1 CDS 82295..83089(+), 1-based inclusive; CBK62743.1,264 aa. CDS-aware table-11 translation matches original GenPept, WP_013933295.1 and UPI00021172A3. Native source is Pseudoalteromonas sp. SANK 73390,taxon747457,pTML1. The generic RefSeq family name is not itself experimental substrate evidence.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1<br>https://www.ncbi.nlm.nih.gov/protein/CBK62743.1<br>https://www.ncbi.nlm.nih.gov/protein/WP_013933295.1<br>https://www.uniprot.org/uniprotkb/F8J3G9<br>DOI:10.1002/cbic.201800036</td>
+</tr>
+<tr>
+  <td>Native deposited TmuB sequence reference</td>
+  <td>is_native_sequence_reference_for</td>
+  <td>Study N-terminal His-tagged WT TmuB preparation</td>
+  <td>Gene-matched reference for the WT preparation, not complete fusion-sequence equality. The source specifies pET28a,N-terminal His-tag,E. coli BL21(DE3),Ni-NTA and gel filtration. SI uses both SANK73390 and SANK73309 in strain/cloning text; retain that apparent typo rather than inventing a second strain or verified stock identity.</td>
+  <td class="mono">DOI:10.1002/cbic.201800036</td>
+</tr>
+<tr>
+  <td>Native deposited TmuB sequence reference</td>
+  <td>is_native_sequence_reference_for</td>
+  <td>Study N-terminal His-tagged TmuB I109N preparation</td>
+  <td>Gene-matched reference for the I109N preparation, not complete fusion-sequence equality. The source specifies pET28a,N-terminal His-tag,E. coli BL21(DE3),Ni-NTA and gel filtration. SI uses both SANK73390 and SANK73309 in strain/cloning text; retain that apparent typo rather than inventing a second strain or verified stock identity.</td>
+  <td class="mono">DOI:10.1002/cbic.201800036</td>
+</tr>
+<tr>
+  <td>Assayed pseudomonic acid A</td>
+  <td>was_substrate_in</td>
+  <td>Purified WT TmuB pseudomonic-acid-A hydroxylation</td>
+  <td>Purified WT activity requires the reported iron cofactor and alpha-ketoglutarate co-substrate in the pseudomonic-acid-A assay. This control is not silently transferred to every other experiment.</td>
+  <td class="mono">DOI:10.1002/cbic.201800036</td>
+</tr>
+<tr>
+  <td>Study N-terminal His-tagged WT TmuB preparation</td>
+  <td>catalyzed</td>
+  <td>Purified WT TmuB pseudomonic-acid-A hydroxylation</td>
+  <td>Source enzymatic experiment; no numerical turnover/efficiency, replicate count or complete tagged-proteoform identity is inferred.</td>
+  <td class="mono">DOI:10.1002/cbic.201800036</td>
+</tr>
+<tr>
+  <td>Purified WT TmuB pseudomonic-acid-A hydroxylation</td>
+  <td>yielded_source_assigned_product</td>
+  <td>Source-assigned 4-hydroxypseudomonic acid A</td>
+  <td>Retain the source chemical assignment and its congener boundary; no exact structure CURIE is selected.</td>
+  <td class="mono">DOI:10.1002/cbic.201800036</td>
+</tr>
+<tr>
+  <td>Assayed thiomarinol C</td>
+  <td>was_substrate_in</td>
+  <td>Purified WT TmuB thiomarinol-C hydroxylation</td>
+  <td>Source-assigned thiomarinol C is converted to thiomarinol A by purified WT TmuB. This demonstrates capacity for late tailoring, but native pathway timing remains inferred. It is not de novo reconstitution or independent verification of the owner&#39;s exact stereochemistry.</td>
+  <td class="mono">DOI:10.1002/cbic.201800036</td>
+</tr>
+<tr>
+  <td>Study N-terminal His-tagged WT TmuB preparation</td>
+  <td>catalyzed</td>
+  <td>Purified WT TmuB thiomarinol-C hydroxylation</td>
+  <td>Source enzymatic experiment; no numerical turnover/efficiency, replicate count or complete tagged-proteoform identity is inferred.</td>
+  <td class="mono">DOI:10.1002/cbic.201800036</td>
+</tr>
+<tr>
+  <td>Purified WT TmuB thiomarinol-C hydroxylation</td>
+  <td>yielded_source_assigned_product</td>
+  <td>Source-assigned thiomarinol A</td>
+  <td>Retain the source chemical assignment and its congener boundary; no exact structure CURIE is selected.</td>
+  <td class="mono">DOI:10.1002/cbic.201800036</td>
+</tr>
+<tr>
+  <td>Assayed pseudomonic acid B</td>
+  <td>was_substrate_in</td>
+  <td>Delayed pseudomonic-acid-B hydroxylation in vitro</td>
+  <td>Detectable conversion follows prolonged in vitro incubation. The abstract&#39;s blocked-action wording must not become an absolute zero; lack of detectable conversion in culture is a different observation.</td>
+  <td class="mono">DOI:10.1002/cbic.201800036</td>
+</tr>
+<tr>
+  <td>Study N-terminal His-tagged WT TmuB preparation</td>
+  <td>catalyzed</td>
+  <td>Delayed pseudomonic-acid-B hydroxylation in vitro</td>
+  <td>Source enzymatic experiment; no numerical turnover/efficiency, replicate count or complete tagged-proteoform identity is inferred.</td>
+  <td class="mono">DOI:10.1002/cbic.201800036</td>
+</tr>
+<tr>
+  <td>Delayed pseudomonic-acid-B hydroxylation in vitro</td>
+  <td>yielded_source_assigned_product</td>
+  <td>Source-assigned 4-hydroxypseudomonic acid B</td>
+  <td>Retain the source chemical assignment and its congener boundary; no exact structure CURIE is selected.</td>
+  <td class="mono">DOI:10.1002/cbic.201800036</td>
+</tr>
+<tr>
+  <td>Study N-terminal His-tagged TmuB I109N preparation</td>
+  <td>was_tested_in</td>
+  <td>Purified I109N preparation with pseudomonic acid A</td>
+  <td>I109N was expressed and purified in parallel; this control pertains to pseudomonic acid A, not all possible substrates or proof of an experimentally determined binding pose.</td>
+  <td class="mono">DOI:10.1002/cbic.201800036</td>
+</tr>
+<tr>
+  <td>Assayed pseudomonic acid A</td>
+  <td>was_substrate_in</td>
+  <td>Purified I109N preparation with pseudomonic acid A</td>
+  <td>Same named substrate as the WT comparison; no unsupported concentration matching or statistical replicate design asserted.</td>
+  <td class="mono">DOI:10.1002/cbic.201800036</td>
+</tr>
+<tr>
+  <td>Purified I109N preparation with pseudomonic acid A</td>
+  <td>lacked_detected_formation_of</td>
+  <td>Source-assigned 4-hydroxypseudomonic acid A</td>
+  <td>Reported negative preparation control, not a universal absence of catalytic potential or a measured binding-affinity change.</td>
+  <td class="mono">DOI:10.1002/cbic.201800036</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

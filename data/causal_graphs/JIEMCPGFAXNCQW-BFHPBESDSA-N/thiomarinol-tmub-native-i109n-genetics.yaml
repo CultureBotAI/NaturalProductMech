@@ -1,0 +1,147 @@
+record_id: naturalproductmech:mibig-6fc5164982
+standard_inchi_key: JIEMCPGFAXNCQW-BFHPBESDSA-N
+graph:
+  graph_id: thiomarinol-tmub-native-i109n-genetics
+  scope: BIOSYNTHESIS
+  description: Native TmuB I109N genetics and source-assigned thiomarinol C, without
+    claiming an exact mutant proteoform or universal loss of product. Native references
+    do not establish complete engineered proteoforms. Source-assigned congeners remain
+    ungrounded; owner identity, incomplete stereochemistry and SEEDED status are unchanged.
+  nodes:
+  - node_id: cluster
+    label: Thiomarinol locus on native pTML1
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0001115
+  - node_id: TmuB
+    label: Native deposited TmuB sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:CBK62743.1
+  - node_id: allele
+    label: Reported tmuB I109N allele
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: mutant
+    label: SANK 73390 tmuB I109N culture
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: tm_c
+    label: Source-assigned thiomarinol C
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: role
+    label: TmuB contribution to native 4-hydroxylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: TmuB
+    notes: FN689524.1 CDS 82295..83089(+), 1-based inclusive; CBK62743.1,264 aa. CDS-aware
+      table-11 translation matches original GenPept, WP_013933295.1 and UPI00021172A3.
+      Native source is Pseudoalteromonas sp. SANK 73390,taxon747457,pTML1. The generic
+      RefSeq family name is not itself experimental substrate evidence.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS and source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBK62743.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned protein; SI explicitly names CBK62743 and FN689524.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/WP_013933295.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native CDS/GenPept/RefSeq/UniParc sequence comparison.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/F8J3G9
+      evidence_type: DATABASE_ASSERTION
+      notes: Inactive/deleted because not part of a reference proteome; not selected
+        as a live UniProt example.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1002/cbic.201800036
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Accepted author manuscript/SI inspected: SI PDF page6,section11. No
+        tabulated turnover values are adopted without a separate units/concentration
+        audit.'
+      retrieved_on: '2026-10-06'
+  - subject: allele
+    predicate: affects_coding_locus_of
+    object: TmuB
+    notes: Native reference position109 is Ile; the reported substitution is I109N.
+      This is a point-mutant allele, not a complete deletion or a claim that the mutant
+      sequence is identical to the native accession.
+    evidence:
+    - reference: DOI:10.1002/cbic.201800036
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Accepted author manuscript/SI inspected: main PDF pages4-6; SI PDF page6.
+        No tabulated turnover values are adopted without a separate units/concentration
+        audit.'
+      retrieved_on: '2026-10-06'
+  - subject: allele
+    predicate: was_introduced_in
+    object: mutant
+    notes: The source describes pAKE604-mediated allelic replacement, E. coli S17-1
+      mobilization, kanamycin selection for integrants, followed by sucrose-resistant
+      colonies screened for kanamycin sensitivity and PCR/sequencing checks. The target
+      native locus is on pTML1; the methods' generic chromosome wording does not relocate
+      it. No whole mutant-stock sequence is established.
+    evidence:
+    - reference: DOI:10.1002/cbic.201800036
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Accepted author manuscript/SI inspected: SI PDF page6,section12. No
+        tabulated turnover values are adopted without a separate units/concentration
+        audit.'
+      retrieved_on: '2026-10-06'
+      snippet: PCR and DNA sequencing
+  - subject: mutant
+    predicate: yielded_source_assigned_metabolite
+    object: tm_c
+    notes: The source prepared thiomarinol C after recombining I109N into the producer.
+      This does not supply a quantitative native yield or prove complete absence of
+      thiomarinol A in every condition.
+    evidence:
+    - reference: DOI:10.1002/cbic.201800036
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Accepted author manuscript/SI inspected: main PDF pages5-6,Figure5.
+        No tabulated turnover values are adopted without a separate units/concentration
+        audit.'
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: supports_genetic_interpretation
+    object: role
+    notes: Native point-mutant/product evidence supports a biosynthetic contribution;
+      full complementation and exclusion of all secondary effects are not established
+      here.
+    evidence:
+    - reference: DOI:10.1002/cbic.201800036
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Accepted author manuscript/SI inspected: main PDF pages5-6. No tabulated
+        turnover values are adopted without a separate units/concentration audit.'
+      retrieved_on: '2026-10-06'
+  - subject: TmuB
+    predicate: has_genetically_supported_role
+    object: role
+    notes: Keep this genetic interpretation separate from the purified preparation's
+      conversion of thiomarinol C to A. No antimicrobial target mechanism or MIC claim
+      is copied into this biosynthesis graph.
+    evidence:
+    - reference: DOI:10.1002/cbic.201800036
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Accepted author manuscript/SI inspected: main PDF pages5-6. No tabulated
+        turnover values are adopted without a separate units/concentration audit.'
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T04:14:35Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added a new exact-owner component for naturalproductmech:mibig-6fc5164982;
+    owner baseline commit 19559c0338e4eeee56a2067c62434f73abc3bb66. No preexisting
+    graph migrated. Native I109N allele construction and source-assigned thiomarinol
+    C, with selection directions and pTML1 locus retained; no universal product-loss
+    assertion. Every edge has DOI 10.1002/cbic.201800036 or an official sequence URL.
+    Native CBK62743.1 matches FN689524.1/RefSeq/UniParc; deleted F8J3G9 is not selected.
+    Issue #595 author-agent review, not independent approval or full-record sign-off;
+    source-assigned congeners remain ungrounded.'
+  llm_assisted: true
