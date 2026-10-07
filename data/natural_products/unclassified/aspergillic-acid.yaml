@@ -166,6 +166,263 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0001516, BGC0002602.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+causal_graphs:
+- graph_id: aspergillic-acid-asad-database-hydroxylation
+  scope: BIOSYNTHESIS
+  description: Database-asserted AsaD N-hydroxylation yielding the owner's stereochemically
+    unspecified aspergillic acid structure. The current NRRL3357 reference is distinguished
+    from the legacy N-terminally truncated protein. No stereoisomer, historical assay
+    construct or stock identity is inferred. Both source clusters, their grades and
+    the shared-structure discussion remain unchanged; not full-record sign-off.
+  nodes:
+  - node_id: asad_reference
+    label: AsaD current NRRL3357 sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:B8N0E9
+  - node_id: deoxyaspergillic_acid
+    label: Deoxyaspergillic acid, database-reported substrate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: n_hydroxylation
+    label: Database-reported AsaD N-hydroxylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: aspergillic_acid
+    label: Aspergillic acid, owner structure with unspecified stereo
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: naturalproductmech:mibig-89037aa699
+  edges:
+  - subject: asad_reference
+    predicate: is_database_reported_catalyst_of
+    object: n_hydroxylation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000297.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000297 version1, active, assigns deoxyaspergillic acid N-hydroxylation
+        to AsaD, yielding aspergillic acid. Its knockout code is not an independently
+        inspected experiment; the cited primary papers were inaccessible. No mutant
+        phenotype is adopted.
+      snippet: Conversion of deoxyaspergillic acid into aspergillic acid
+    - reference: https://www.uniprot.org/uniprotkb/B8N0E9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Reviewed entry69, sequence2, 519 residues, asaD, NRRL3357/taxon332952.
+        FUNCTION assigns oxidation of deoxyaspergillic acid to aspergillic acid. Experiment-coded
+        annotations remain database assertions here. Current sequence updated2026-06-10;
+        legacy EED55032.1 is explicitly flagged for erroneous initiation and an N-terminal
+        truncation.
+      snippet: asaD oxidizes the pyrazinone
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QRD83397.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: 'Complete conceptual translation and independent coded_by inspected:
+        F9C07_2278499, A.flavus strain NRRL3357, 519 residues. The deposit uses species
+        taxon5059 while UniProt uses strain taxon332952; the submitted strain labels
+        are retained.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP044622.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: 'Complete1560-nt/three-exon negative-strand CDS, default table1: complement(join(6272333..6273533,6273592..6273779,6273840..6274010)).
+        Full translation equals its annotation, independent QRD83397.1 and current
+        UniProt519aa; independent coded_by coordinates/DNA match.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EED55032.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Legacy AFLA_023030 reference from A.flavus NRRL3357/taxon332952, 513
+        residues. It is not the full current519-residue reference.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/EQ963473.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: 'Complete deposited1542-nt/three-exon plus-strand CDS, default table1:
+        join(38036..38188,38249..38436,38495..39695). Translation equals independent
+        EED55032.1 and current UniProt residues7..519. Current reference adds N-terminal
+        MPSVPN; the remaining coding DNA matches exactly. This verifies reference
+        sequences, not historical assay stock, transcript or construct identity.'
+    notes: MITE and UniProt supply functional attribution; genomic deposits establish
+      identity only. The modern assembly is not silently substituted into the owner's
+      NW_002477238.1 or MH898736.1 cluster coordinates. No induction, knockout phenotype,
+      membrane topology, glycosylation, heme-binding residue, physiological complex,
+      rate or assay condition is asserted.
+  - subject: deoxyaspergillic_acid
+    predicate: is_database_reported_substrate_of
+    object: n_hydroxylation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000297.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000297 version1, active, assigns deoxyaspergillic acid N-hydroxylation
+        to AsaD, yielding aspergillic acid. Its knockout code is not an independently
+        inspected experiment; the cited primary papers were inaccessible. No mutant
+        phenotype is adopted.
+    - reference: https://www.uniprot.org/uniprotkb/B8N0E9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Reviewed entry69, sequence2, 519 residues, asaD, NRRL3357/taxon332952.
+        FUNCTION assigns oxidation of deoxyaspergillic acid to aspergillic acid. Experiment-coded
+        annotations remain database assertions here. Current sequence updated2026-06-10;
+        legacy EED55032.1 is explicitly flagged for erroneous initiation and an N-terminal
+        truncation.
+    notes: The databases name deoxyaspergillic acid and MITE encodes the example substrate.
+      No external substrate identifier, complete stereochemistry or upstream AsaC
+      step is assigned.
+  - subject: n_hydroxylation
+    predicate: has_database_reported_product
+    object: aspergillic_acid
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000297.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000297 version1, active, assigns deoxyaspergillic acid N-hydroxylation
+        to AsaD, yielding aspergillic acid. Its knockout code is not an independently
+        inspected experiment; the cited primary papers were inaccessible. No mutant
+        phenotype is adopted.
+    - reference: https://www.uniprot.org/uniprotkb/B8N0E9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Reviewed entry69, sequence2, 519 residues, asaD, NRRL3357/taxon332952.
+        FUNCTION assigns oxidation of deoxyaspergillic acid to aspergillic acid. Experiment-coded
+        annotations remain database assertions here. Current sequence updated2026-06-10;
+        legacy EED55032.1 is explicitly flagged for erroneous initiation and an N-terminal
+        truncation.
+    notes: Pinned MITE product matches owner InChIKey IUZCDJYHMMWBBE-UHFFFAOYSA-N
+      using the repository helper and RDKit2026.03.5; both structures have stereo_complete:false.
+      This is not a defined stereoisomer claim. No downstream AsaB step, ferric complex
+      or pathway finality is inferred. SOURCE_ASSERTION producers, CLUSTER_UNSTATED
+      BGC0001516/BGC0002602, occurrences and open shared-structure discussion are
+      preserved.
+- graph_id: aspergillic-acid-asab-database-substrate-hydroxylation
+  scope: BIOSYNTHESIS
+  description: Separate database-reported AsaB aliphatic hydroxylation consuming the
+    owner's stereo-unspecified aspergillic acid model. Current NRRL3357 reference
+    B8N0E7 is distinguished from the legacy erroneous gene model. The preserved AsaD
+    graph concerns a different N-hydroxylation step; no cross-graph reaction order,
+    direct assay or complete stereoisomer identity is established by this addition.
+  nodes:
+  - node_id: asab_reference
+    label: AsaB current NRRL3357 sequence reference
+    node_type: ENZYME
+    identifier: UniProtKB:B8N0E7
+    grounding_status: GROUNDED
+  - node_id: aspergillic_acid
+    label: Aspergillic acid, owner structure with unspecified stereo
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-89037aa699
+    grounding_status: GROUNDED
+  - node_id: hydroxylation
+    label: Database-reported AsaB aliphatic hydroxylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hydroxyaspergillic_acid
+    label: Hydroxyaspergillic acid, database-reported product
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: asab_reference
+    predicate: is_database_reported_catalyst_of
+    object: hydroxylation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000298.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Active MITE0000298 version1 assigns AsaB aliphatic hydroxylation of aspergillic
+        acid to hydroxyaspergillic acid. Its knock-out code is not independently inspected
+        genetic or biochemical evidence here. Cited primary papers were inaccessible.
+        The listed iron cofactor does not establish measured binding or native occupancy,
+        and the isIntermediate flag does not prove pathway finality.
+      snippet: Hydroxylation of aspergillic acid to hydroxyaspergillic acid
+    - reference: https://www.uniprot.org/uniprotkb/B8N0E7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Reviewed entry52/sequence2,298aa, asaB/AFLA_023010/F9C07_1358552, Aspergillus
+        flavus NRRL3357/taxon332952. FUNCTION assigns conversion of aspergillic acid
+        to hydroxyaspergillic acid. Experiment-coded annotations remain database assertions
+        in this graph. Sequence updated2026-06-10; legacy EED55030.1 is flagged as
+        an erroneous gene model, not an exact current sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QRD83399.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Complete current conceptual translation,298aa, F9C07_1358552, strain
+        NRRL3357. Native deposit uses species taxon5059 while UniProt uses strain
+        taxon332952; the strain labels agree. Its family product annotation alone
+        is not compound-specific function evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP044622.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Complete897-nt/two-exon reverse CDS complement(join(6278214..6278832,6278932..6279209)),
+        codon1/defaulttable1. Full translation equals annotation, independent QRD83399.1
+        and current UniProt298aa; independent coded_by DNA/coordinates agree. Native
+        metadata and target features read, not all unrelated chromosome annotations.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EED55030.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Legacy AFLA_023010 reference,227aa, NRRL3357/taxon332952. It is not the
+        exact current298aa reference and is not adopted as an experimentally demonstrated
+        shorter isoform.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/EQ963473.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Complete legacy684-nt/two-exon plus CDS join(32819..33049,33362..33814),
+        codon1/defaulttable1, equals annotation and independent EED55030.1. Current
+        and legacy996-nt genomic spans are identical in biological orientation but
+        CDS models differ. Protein alignment has227 identities, zero mismatches and
+        one internal71-residue gap with two tied placements; not a measured biological
+        deletion, transcript isoform or historical assay-construct identity.
+    notes: MITE and UniProt supply functional attribution; sequence records establish
+      current/legacy reference identity only. No purified-enzyme turnover, genetic
+      phenotype, induction, physiological assembly, iron occupancy, metal-binding
+      residue or assay-stock equivalence is asserted.
+  - subject: aspergillic_acid
+    predicate: is_database_example_substrate_of
+    object: hydroxylation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000298.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Active MITE0000298 version1 assigns AsaB aliphatic hydroxylation of aspergillic
+        acid to hydroxyaspergillic acid. Its knock-out code is not independently inspected
+        genetic or biochemical evidence here. Cited primary papers were inaccessible.
+        The listed iron cofactor does not establish measured binding or native occupancy,
+        and the isIntermediate flag does not prove pathway finality.
+    - reference: https://www.uniprot.org/uniprotkb/B8N0E7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Reviewed entry52/sequence2,298aa, asaB/AFLA_023010/F9C07_1358552, Aspergillus
+        flavus NRRL3357/taxon332952. FUNCTION assigns conversion of aspergillic acid
+        to hydroxyaspergillic acid. Experiment-coded annotations remain database assertions
+        in this graph. Sequence updated2026-06-10; legacy EED55030.1 is flagged as
+        an erroneous gene model, not an exact current sequence.
+    notes: Pinned MITE reaction0/example0 substrate matches full owner InChI/key IUZCDJYHMMWBBE-UHFFFAOYSA-N
+      with stereo_complete:false. The substrate is the owner compound rather than
+      an added production claim. No resolved stereoisomer, AsaC step, source-coordinate
+      replacement or producer-grade change is inferred.
+  - subject: hydroxylation
+    predicate: has_database_example_product
+    object: hydroxyaspergillic_acid
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000298.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Active MITE0000298 version1 assigns AsaB aliphatic hydroxylation of aspergillic
+        acid to hydroxyaspergillic acid. Its knock-out code is not independently inspected
+        genetic or biochemical evidence here. Cited primary papers were inaccessible.
+        The listed iron cofactor does not establish measured binding or native occupancy,
+        and the isIntermediate flag does not prove pathway finality.
+    - reference: https://www.uniprot.org/uniprotkb/B8N0E7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Reviewed entry52/sequence2,298aa, asaB/AFLA_023010/F9C07_1358552, Aspergillus
+        flavus NRRL3357/taxon332952. FUNCTION assigns conversion of aspergillic acid
+        to hydroxyaspergillic acid. Experiment-coded annotations remain database assertions
+        in this graph. Sequence updated2026-06-10; legacy EED55030.1 is flagged as
+        an erroneous gene model, not an exact current sequence.
+    notes: The named encoded product remains externally ungrounded and stereochemically
+      unspecified. No exact external stereoisomer, native iron chelate/ferriaspergillin
+      identity, final-product claim or complete pathway is inferred. Both source clusters,
+      SOURCE_ASSERTION producers, CLUSTER_UNSTATED grades, occurrences and open shared-structure
+      discussion remain unchanged.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -175,3 +432,37 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-07T05:06:11Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added AsaD biosynthesis context: four nodes and three database-qualified
+    functional edges with stable MITE/UniProt URLs. Current UniProtKB:B8N0E9 is verified
+    against the complete1560-nt/three-exon negative-strand CDS on CP044622.1 and independent
+    QRD83397.1, all519residues. Legacy EED55032.1/EQ963473.1 is verified separately
+    as residues7..519; the current reference adds MPSVPN and remaining coding DNA
+    is identical. Two exact source snippets total11words. Product matches the owner
+    with stereo_complete:false; no defined stereoisomer or substrate identifier is
+    inferred. Primary experiments were inaccessible. No historical assay-stock/construct/transcript,
+    membrane, residue, knockout, rate, physical-complex or downstream-step claim is
+    adopted. Preserved both source clusters, grades, occurrences, open shared-structure
+    discussion, all source fields, SEEDED status and history. Not full-record sign-off.'
+  llm_assisted: true
+- timestamp: '2026-10-07T13:37:43Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a separate AsaB substrate-context graph with four nodes and three
+    database-qualified edges, each citing stable MITE/UniProt URLs. Current UniProtKB:B8N0E7
+    (entry52/sequence2,298aa) equals the complete897-nt/two-exon negative-strand CDS
+    on CP044622.1 and independent QRD83399.1. Legacy EED55030.1 equals its684-nt/two-exon
+    plus-strand EQ963473.1 annotation,227aa; UniProt flags an erroneous gene model.
+    The identical996-nt genomic spans have different CDS models, with an internal71-residue
+    alignment gap and two tied placements; not a demonstrated biological deletion
+    or isoform. One exact seven-word MITE snippet included. Both encoded substrate
+    and product are stereo-incomplete; substrate matches the owner, product stays
+    externally ungrounded. Functional evidence remains database-level because primary
+    papers were inaccessible. No historical assay-stock/construct, transcript, iron
+    binding, ferric complex, knockout phenotype, rate, pathway finality or additional
+    upstream step inferred. Preserved complete prior AsaD graph, both source clusters/grades,
+    occurrences, classifications, open shared-structure discussion, SEEDED status
+    and history; not full-record sign-off.
+  llm_assisted: true

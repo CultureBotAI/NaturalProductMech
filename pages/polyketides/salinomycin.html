@@ -24,6 +24,10 @@
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 </p>
+<div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/salinomycin.yaml">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
 
 <h2>Structure</h2>
 <div class="scroll"><table>
@@ -54,7 +58,7 @@ same claim.</p>
 </tr>
 </table></div>
 
-<h2>Occurrences <span class="tag">12</span></h2>
+<h2 id="occurrences">Occurrences <span class="tag">12</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
 <div class="scroll"><table>
@@ -121,7 +125,7 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 </tr>
 </table></div>
 
-<h2>Biosynthetic gene clusters <span class="tag">1</span></h2>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
 <div class="scroll"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
@@ -137,6 +141,33 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">MITE-reported SlnM double-bond and bis(spiroacetal) formation in a salinomycin biosynthesis context. Native Streptomyces albus XM211 reference identity is independently sequence-verified, not its catalytic activity. The database example matches this owner&#39;s incomplete stereochemical resolution, not a fully resolved stereoisomer. No methylation, native cofactor state, primary assay or pathway finality is inferred; not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>SlnM native XM211 reference</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>MITE-reported double-bond and bis(spiroacetal) formation</td>
+  <td>MITE supplies the functional assignment; sequence evidence establishes identity only. Exact NCBIProtein grounding is used without substituting an arbitrary current UniProt homolog. No assay, activity magnitude, knockout phenotype, methylation, site, SAM state or physical complex is inferred.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000441.json<br>https://www.ncbi.nlm.nih.gov/protein/AEZ53956.1<br>https://www.ncbi.nlm.nih.gov/nuccore/JN033543.1<br>https://www.uniprot.org/uniparc/UPI000247F579</td>
+</tr>
+<tr>
+  <td>SlnM substrate, database example</td>
+  <td>is_database_example_substrate_of</td>
+  <td>MITE-reported double-bond and bis(spiroacetal) formation</td>
+  <td>MITE encodes a substrate example; its external identity remains ungrounded. No upstream reaction order, kinetic substrate preference or executable transformation rule is inferred from the example or SMARTS.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000441.json</td>
+</tr>
+<tr>
+  <td>MITE-reported double-bond and bis(spiroacetal) formation</td>
+  <td>has_database_example_product</td>
+  <td>salinomycin</td>
+  <td>Pinned MITE product matches full key KQXDHUJYNAXLNZ-SDCJTGBBSA-N in the retained repository-helper/RDKit2026.03.5 screen, with stereo_complete:false in source and owner. This is correspondence at incomplete stereo resolution, not fully resolved stereoisomer identity. The different full-key salinomycin-2 record is not merged or changed. No pathway finality or producer-grade upgrade; existing BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED grades and all occurrences are preserved.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000441.json</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

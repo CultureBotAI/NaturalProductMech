@@ -135,6 +135,107 @@ causal_graphs:
       notes: UniProtKB:Q9FI37 resolves to the Arabidopsis thaliana THAS1/At5g48010
         gene product, maps to EMBL AY327541 protein AAP92117.1, and annotates RHEA:26160
         for the cyclization of (S)-2,3-epoxysqualene to thalianol.
+- graph_id: thalianol-thah-lyrata-database-hydroxylation
+  scope: BIOSYNTHESIS
+  description: MITE-reported THAH hydroxylation consuming exact thalianol, represented
+    separately from the existing A.thaliana THAS1 synthesis pathway. The sequence-verified
+    D7MKC1 reference is A.lyrata subsp. lyrata donor MN47, not A.thaliana as implied
+    by the MITE prose. Database function is not an independently inspected primary
+    assay. Product identity/stereo remains unresolved; no producer upgrade or full-record
+    sign-off.
+  nodes:
+  - node_id: thah_reference
+    label: Database-named THAH A.lyrata MN47 reference
+    node_type: ENZYME
+    identifier: UniProtKB:D7MKC1
+    grounding_status: GROUNDED
+  - node_id: thalianol
+    label: thalianol
+    node_type: COMPOUND
+    identifier: CHEBI:52317
+    grounding_status: GROUNDED
+  - node_id: hydroxylation
+    label: MITE-reported THAH substrate hydroxylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hydroxylated_product
+    label: Database-encoded hydroxylated thalianol intermediate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: thah_reference
+    predicate: is_database_reported_catalyst_of
+    object: hydroxylation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000133.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000133 version3, active, names THAH/D7MKC1/EFH41844.1. Its heterologous-expression
+        evidence code remains a database assertion; the primary paper was inaccessible.
+        The prose organism name is inconsistent with both independent sequence records,
+        which identify Arabidopsis lyrata subsp. lyrata, not A.thaliana. Retired BGC0002857
+        was removed from this version.
+      snippet: Hydroxylates Thalianol
+    - reference: https://www.uniprot.org/uniprotkb/D7MKC1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Current TrEMBL75/sequence1,477aa, ARALYDRAFT_684148/taxon81972; direct
+        EMBL GL348720/EFH41844.1 cross-reference, cv.MN47. No FUNCTION or CATALYTIC
+        ACTIVITY comment. Automated P450, GO, cofactor, membrane and binding annotations
+        are not thalianol assay evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EFH41844.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Complete477-residue predicted reference, Arabidopsis lyrata subsp. lyrata/taxon81972,
+        NASC<UK> donor MN47, locusARALYDRAFT_684148. Full coded_by inspected; no historical
+        assay-stock or construct mapping.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/GL348720.1?from=10405500&to=10409700
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Complete1434-nt eight-exon minus-strand CDS spans10405619..10409607 in
+        forward4201-bp window10405500..10409700. Codon1/default table1 translation
+        equals native annotation, independent EFH41844.1 and current D7MKC1, all477aa.
+        All exact absolute coded_by exon coordinates map to native window features
+        and identical DNA; donor/taxon agree. Full-CDS window, not full genome; sequence
+        identity only.
+    notes: Functional attribution is MITE's, while independent sequences establish
+      the explicitly named A.lyrata reference despite the inconsistent source prose.
+      No native heme/iron occupancy, electron donor, assay, knockout phenotype, binding
+      site, kinetics or complex is adopted.
+  - subject: thalianol
+    predicate: is_database_example_substrate_of
+    object: hydroxylation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000133.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000133 version3, active, names THAH/D7MKC1/EFH41844.1. Its heterologous-expression
+        evidence code remains a database assertion; the primary paper was inaccessible.
+        The prose organism name is inconsistent with both independent sequence records,
+        which identify Arabidopsis lyrata subsp. lyrata, not A.thaliana. Retired BGC0002857
+        was removed from this version.
+    notes: Pinned example substrate matches full key DGAGPZOBTQYNRE-VMSIWEJCSA-N and
+      complete stereo in the repository-helper/RDKit2026.03.5 screen. This is a substrate-consumption
+      context, not a new thalianol production claim, and not an independently mapped
+      native assay substrate.
+  - subject: hydroxylation
+    predicate: has_database_example_product
+    object: hydroxylated_product
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000133.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000133 version3, active, names THAH/D7MKC1/EFH41844.1. Its heterologous-expression
+        evidence code remains a database assertion; the primary paper was inaccessible.
+        The prose organism name is inconsistent with both independent sequence records,
+        which identify Arabidopsis lyrata subsp. lyrata, not A.thaliana. Retired BGC0002857
+        was removed from this version.
+    notes: The hydroxylated example is marked intermediate. Its encoded product omits
+      side-chain double-bond stereo present in the substrate, so no exact external
+      product identity or complete product stereo is asserted. No downstream order
+      or pathway finality. Preserve the separate A.thaliana THAS1/Q9FI37 pathway/graph
+      and BGC0000670, existing BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED grades and SEEDED
+      status; no retired BGC transfer.
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
@@ -156,4 +257,23 @@ curation_history:
   action: RECORD_CURATED
   changes: Replaced title-only thalianol THAS1 pathway and causal-edge evidence snippets
     with a narrow verbatim passage from DOI:10.1021/ja0318784.
+  llm_assisted: true
+- timestamp: '2026-10-07T09:18:12Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added a separate MITE-database-asserted THAH thalianol-consumption context:
+    four nodes/three edges with stable URLs and one exact two-word snippet. UniProtKB:D7MKC1
+    is A.lyrata subsp.lyrata/taxon81972 donor MN47, not A.thaliana as implied by MITE
+    prose. Full1434-nt eight-exon/default-table1 minus-CDS spanning 10405619..10409607
+    in GL348720.1 forward4201-bp window translates exactly to native annotation, independent
+    EFH41844.1 and TrEMBL75/seq1, all477aa; all exon coordinates/DNA and donor/taxon
+    agree. Native reference identity only, not a full-genome or historical assay-stock/construct
+    proof. Automated UniProt annotations are not functional evidence; primary paper
+    inaccessible. No primary assay, native cofactor, electron donor, site, kinetics,
+    phenotype or complex. Exact substrate key/stereo matches; hydroxylated product
+    remains ungrounded/intermediate and its encoded side-chain stereo is incomplete.
+    No thalianol production claim, downstream order, finality or retired BGC0002857
+    transfer. Preserved all prior fields, existing A.thaliana THAS1/Q9FI37 pathway/graph/evidence
+    and BGC0000670 grades, SEEDED status and append-only history. Not full-record
+    sign-off.'
   llm_assisted: true

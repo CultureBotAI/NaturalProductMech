@@ -1,0 +1,600 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novq-e281-variants-and-surrogate-assay-limits
+  scope: BIOSYNTHESIS
+  description: 'Nine NovQ E281 variants and bounded menadione-hydroquinol assays from
+    Ni 2020 (review #554), linked to the NovQ precursor mechanism as engineered substrate-scope
+    evidence. The full public ten-page supplement was inspected; main-article and
+    correction access was limited to abstracts/metadata. Native sequence references,
+    literal-primer models, actual preparations, docking and engineered-host product
+    measurements are distinct. No native-product identity or full experimental sequence
+    is inferred.'
+  nodes:
+  - node_id: native
+    label: Deposited native NovQ sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F1
+  - node_id: vector
+    label: pMBPtev expression-vector design
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: wt_construct
+    label: pMBPtev-NovQ parental DNA construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: panel
+    label: Ni 2020 NovQ point-mutant construct panel
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: wt
+    label: Ni 2020 pMBPtev-NovQ-derived WT assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: host
+    label: E. coli BL21(DE3) mutant expression host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: kinetics
+    label: Supplementary menadione-hydroquinol rate series
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: mhq
+    label: Menadione hydroquinol
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: dmapp
+    label: Dimethylallyl diphosphate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: ratio
+    label: Abstract-reported E281Q activity comparison
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: model
+    label: Docking-based NovQ substrate-contact hypothesis
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: product
+    label: Source-assigned C3-prenylated menadione product
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: spectra
+    label: Supplementary product MS, UV and proton-NMR evidence
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: mva
+    label: pMVA engineered precursor-supply construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: s1
+    label: 'Ni 2020 S1 host: pMVA only'
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: s2
+    label: 'Ni 2020 S2 host: pMVA plus pMBPtevQ'
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: s3
+    label: 'Ni 2020 S3 host: pMBPtevQ only'
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: s4
+    label: 'Ni 2020 S4 host: pMBPtev vector'
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: production
+    label: Reported engineered-host prenylated-menadione output
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: e281q
+    label: Ni 2020 NovQ-E281Q assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: e281d
+    label: Ni 2020 NovQ-E281D assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: e281t
+    label: Ni 2020 NovQ-E281T assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: e281s
+    label: Ni 2020 NovQ-E281S assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: e281a
+    label: Ni 2020 NovQ-E281A assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: e281v
+    label: Ni 2020 NovQ-E281V assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: e281m
+    label: Ni 2020 NovQ-E281M assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: e281r
+    label: Ni 2020 NovQ-E281R assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: e281k
+    label: Ni 2020 NovQ-E281K assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: native
+    predicate: is_sequence_reference_for_primer_model
+    object: wt_construct
+    notes: The 323-aa native sequence supplies an explicit reconstruction reference,
+      not proof of the full experimental construct. Table S2 names S. niveus for gene
+      amplification without a strain number; the 16259 taxonomy conflict is not resolved
+      or transferred to this sample by matching short primers.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F1
+      evidence_type: DATABASE_ASSERTION
+      notes: Q9L9F1 entry 57, sequence 2; retrieved 2026-10-04.
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Tables S1/S2, PDF pp.8-9.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: CDS reference for literal-primer reconstruction.
+  - subject: vector
+    predicate: is_reported_backbone_for
+    object: wt_construct
+    notes: Table S2 describes pMBPtev as pET30a-derived with MBP and a TEV site before
+      the cloning site. Figure S1 shows the 6.4-kbp vector and NotI position. This
+      schematic does not provide a complete plasmid sequence or every processed terminus.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure S1 and Table S2, PDF pp.2,9.
+  - subject: wt_construct
+    predicate: encodes_engineered_preparation
+    object: wt
+    notes: 'Table S1 gives WT-F ATAAGAATGCGGCCGCAATGCCCGCACTCCCGATG and WT-R ATAAGAATGCGGCCGCTCAGTGGTGGTGGTGGTGGTGTCGGGCACCTCCGGTGAT
+      (both 5-prime). Their native ends match the first and last 18 coding nt in both
+      AF170880.4 and AB496950.1. The reverse-primer extension encodes six C-terminal
+      histidines followed by stop: the reconstructed native-core-plus-His6 segment
+      is 329 aa. This excludes unknown N-terminal vector/fusion sequence. The TEV
+      site does not demonstrate tag cleavage in every kinetic aliquot, and cleavage
+      would not by itself remove this C-terminal extension.'
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Literal WT primers and vector/strain table, PDF pp.2,8-9.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer reading-frame model, not experimental sequencing.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB496950.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Same native-end and His6 model on second deposited CDS.
+  - subject: wt_construct
+    predicate: is_parental_reference_for
+    object: panel
+    notes: The source names nine E281 substitutions in pMBPtev-derived constructs.
+      All nine literal forward/reverse pairs are exact reverse complements and uniquely
+      match native CDS nt826..858 with the designed mismatches. Models change only
+      residue 281 in the native core; full plasmids and individual assayed aliquots
+      were not independently sequenced.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Tables S1/S2, PDF pp.8-9.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: CDS-local primer matching and translated-core comparison.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB496950.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent second deposited template model.
+  - subject: host
+    predicate: was_expression_host_for
+    object: panel
+    notes: Table S2 lists a BL21(DE3) strain for each pMBPtev mutant. The same table
+      separately lists Rosetta(DE3)/pET28a-NovQ; do not assign that construct or host
+      to all mutant preparations.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table S2, PDF p.9.
+  - subject: wt
+    predicate: was_compared_in
+    object: kinetics
+    notes: Figure S5 shows a menadione-hydroquinol concentration series through 500
+      uM, with rate in nM/min, alongside the stated DMAPP cosubstrate. The supplement
+      does not provide the complete assay recipe, protein loading, fixed DMAPP concentration
+      or a fitted-parameter table. No exact Km/kcat or detection limit is digitized
+      from the curve.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure S5 and caption, PDF p.6.
+  - subject: mhq
+    predicate: was_varied_in
+    object: kinetics
+    notes: The horizontal axis names the reduced aromatic substrate. It is not 4-HPP
+      or an assay of the mature cathomycin structure.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figures S5/S6, PDF pp.6-7.
+      snippet: menadione hydroquinol and DMAPP
+  - subject: dmapp
+    predicate: was_reported_cosubstrate_in
+    object: kinetics
+    notes: DMAPP is named in the captions. The displayed x-axis varies menadione hydroquinol,
+      not DMAPP; a separate donor concentration series is not invented from those
+      figures.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figures S5/S6, PDF pp.6-7.
+  - subject: e281q
+    predicate: has_reported_activity_summary
+    object: ratio
+    notes: The primary abstract reports 2.05-fold activity and an aggregate 8.4-88.6%
+      of WT range for the other variants. Without the full kinetic table, this is
+      not assigned as a specific kcat/Km ratio, separate substrate-dependent constants
+      or a value for any particular other mutant.
+    evidence:
+    - reference: DOI:10.1007/s00253-020-10470-w
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+      snippet: 2.05-fold activities
+  - subject: panel
+    predicate: tests_functional_consequences_near_hypothesis
+    object: model
+    notes: The study motivates E281 substitutions using substrate docking; Figure
+      S2 is a docking-energy distribution. This is computational contact evidence,
+      not a solved NovQ-substrate complex or direct proton-transfer observation. The
+      publisher records a Figure 1 correction dated 2020-04-14; its full correction
+      and main article were not obtained. No uninspected atom-level contact map or
+      corrected Figure 1 geometry is asserted.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Figure S2, PDF p.3.
+    - reference: DOI:10.1007/s00253-020-10470-w
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract and public publisher change-history metadata.
+    - reference: DOI:10.1007/s00253-020-10557-4
+      evidence_type: DATABASE_ASSERTION
+      notes: Correction metadata only; full correction text not obtained.
+  - subject: kinetics
+    predicate: has_study_product_assignment
+    object: product
+    notes: The study assigns C3-prenylated menadione. This is a surrogate-product
+      claim; it does not establish synthesis of mature novobiocin/cathomycin or the
+      redox state/order of every catalytic intermediate.
+    evidence:
+    - reference: DOI:10.1007/s00253-020-10470-w
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract.
+  - subject: spectra
+    predicate: supports_source_product_assignment
+    object: product
+    notes: Figure S3 shows an MS peak labelled m/z 241.1222 and UV markers at 244,
+      248, 261 and 269 nm. Figure S4 supplies a proton-NMR spectrum in CDCl3 with
+      TMS. These are the source product-characterization figures, not separate structural
+      determinations for each mutant or fermentation sample. No independent full spectral
+      assignment or exact chemical record is constructed here.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figures S3/S4, PDF pp.4-5.
+  - subject: mva
+    predicate: was_present_in
+    object: s1
+    notes: Table S2 identifies S1 as BL21(DE3) with pMVA alone. pMVA lists atoB-HMGS-HMGR-ERG12-ERG8-MVD1-idi
+      on pCDFDuet-1. The gene list does not establish exact protein accessions, expression
+      stoichiometry or a measured intracellular donor concentration.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table S2, PDF p.9.
+  - subject: mva
+    predicate: was_present_in
+    object: s2
+    notes: Table S2 identifies S2 as BL21(DE3) carrying pMVA plus pMBPtevQ. This is
+      an engineered precursor-supply context, not the native BGC.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table S2, PDF p.9.
+  - subject: e281q
+    predicate: was_construct_encoded_in
+    object: s2
+    notes: pMBPtevQ is the E281Q expression construct in S2. This associates the engineered
+      sequence design with the host; it does not measure protein abundance or show
+      in-vivo TEV processing.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table S2, PDF p.9.
+  - subject: e281q
+    predicate: was_construct_encoded_in
+    object: s3
+    notes: S3 carries pMBPtevQ without pMVA. Its definition is distinct from the S2
+      coexpression strain; the supplement alone does not supply a quantitative product
+      titer for S3.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table S2, PDF p.9.
+  - subject: vector
+    predicate: was_present_in
+    object: s4
+    notes: S4 carries the pMBPtev vector. This records the source comparator design,
+      not a measured zero-product result.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table S2, PDF p.9.
+  - subject: s2
+    predicate: matches_reported_production_configuration
+    object: production
+    notes: The abstract reports up to 4.7 mg/L C3-prenylated menadione for E281Q expression
+      plus engineered MVA supply and exogenous aromatic substrate. S2 matches that
+      listed configuration. This is an author-reported engineered-host titer, not
+      enzyme specific activity, native antibiotic flux or a de-novo-from-glucose yield;
+      detailed culture and uncertainty were not obtained.
+    evidence:
+    - reference: DOI:10.1007/s00253-020-10470-w
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: S2 configuration in Table S2, PDF p.9.
+  - subject: production
+    predicate: concerns_source_assigned_product
+    object: product
+    notes: The fermentation claim concerns a fed-substrate prenylation product, not
+      the complete cathomycin molecule or its unresolved sugar stereocentre.
+    evidence:
+    - reference: DOI:10.1007/s00253-020-10470-w
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract.
+  - subject: panel
+    predicate: generated_expression_construct_for
+    object: e281q
+    notes: Table S2 names BL21-MBP-NovQ-E281Q with pMBPtevQ. Forward primer 5-prime
+      GACTACGTCAAGGCCCAACGCAGCTACACCGGG; reverse primer 5-prime CCCGGTGTAGCTGCGTTGGGCCTTGACGTAGTC.
+      The deposited-template model changes only native E281 to Q. Tag, junction and
+      cleavage state are not fully specified for the assayed protein; no native accession
+      is assigned.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Tables S1/S2, PDF pp.8-9.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer translated-core reconstruction.
+  - subject: e281q
+    predicate: has_displayed_rate_series_in
+    object: kinetics
+    notes: Figure S6 panel a is labelled NovQ E281Q and plots rate against menadione
+      hydroquinol through 500 uM. Panels have different vertical scales. The caption
+      does not define error bars or replicate count; no exact digitized rate, mutant
+      kinetic constant, binding affinity or universal activity ranking is assigned.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure S6 panel a, PDF p.7.
+  - subject: panel
+    predicate: generated_expression_construct_for
+    object: e281d
+    notes: Table S2 names BL21-MBP-NovQ-E281D with pMBPtevD. Forward primer 5-prime
+      GACTACGTCAAGGCCGACCGCAGCTACACCGGG; reverse primer 5-prime CCCGGTGTAGCTGCGGTCGGCCTTGACGTAGTC.
+      The deposited-template model changes only native E281 to D. Tag, junction and
+      cleavage state are not fully specified for the assayed protein; no native accession
+      is assigned.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Tables S1/S2, PDF pp.8-9.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer translated-core reconstruction.
+  - subject: e281d
+    predicate: has_displayed_rate_series_in
+    object: kinetics
+    notes: Figure S6 panel b is labelled NovQ E281D and plots rate against menadione
+      hydroquinol through 500 uM. Panels have different vertical scales. The caption
+      does not define error bars or replicate count; no exact digitized rate, mutant
+      kinetic constant, binding affinity or universal activity ranking is assigned.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure S6 panel b, PDF p.7.
+  - subject: panel
+    predicate: generated_expression_construct_for
+    object: e281t
+    notes: Table S2 names BL21-MBP-NovQ-E281T with pMBPtevT. Forward primer 5-prime
+      GACTACGTCAAGGCCACACGCAGCTACACCGGG; reverse primer 5-prime CCCGGTGTAGCTGCGTGTGGCCTTGACGTAGTC.
+      The deposited-template model changes only native E281 to T. Tag, junction and
+      cleavage state are not fully specified for the assayed protein; no native accession
+      is assigned.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Tables S1/S2, PDF pp.8-9.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer translated-core reconstruction.
+  - subject: e281t
+    predicate: has_displayed_rate_series_in
+    object: kinetics
+    notes: Figure S6 panel c is labelled NovQ E281T and plots rate against menadione
+      hydroquinol through 500 uM. Panels have different vertical scales. The caption
+      does not define error bars or replicate count; no exact digitized rate, mutant
+      kinetic constant, binding affinity or universal activity ranking is assigned.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure S6 panel c, PDF p.7.
+  - subject: panel
+    predicate: generated_expression_construct_for
+    object: e281s
+    notes: Table S2 names BL21-MBP-NovQ-E281S with pMBPtevS. Forward primer 5-prime
+      GACTACGTCAAGGCCAGCCGCAGCTACACCGGG; reverse primer 5-prime CCCGGTGTAGCTGCGGCTGGCCTTGACGTAGTC.
+      The deposited-template model changes only native E281 to S. Tag, junction and
+      cleavage state are not fully specified for the assayed protein; no native accession
+      is assigned.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Tables S1/S2, PDF pp.8-9.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer translated-core reconstruction.
+  - subject: e281s
+    predicate: has_displayed_rate_series_in
+    object: kinetics
+    notes: Figure S6 panel d is labelled NovQ E281S and plots rate against menadione
+      hydroquinol through 500 uM. Panels have different vertical scales. The caption
+      does not define error bars or replicate count; no exact digitized rate, mutant
+      kinetic constant, binding affinity or universal activity ranking is assigned.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure S6 panel d, PDF p.7.
+  - subject: panel
+    predicate: generated_expression_construct_for
+    object: e281a
+    notes: Table S2 names BL21-MBP-NovQ-E281A with pMBPtevA. Forward primer 5-prime
+      GACTACGTCAAGGCCGCACGCAGCTACACCGGG; reverse primer 5-prime CCCGGTGTAGCTGCGTGCGGCCTTGACGTAGTC.
+      The deposited-template model changes only native E281 to A. Tag, junction and
+      cleavage state are not fully specified for the assayed protein; no native accession
+      is assigned.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Tables S1/S2, PDF pp.8-9.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer translated-core reconstruction.
+  - subject: e281a
+    predicate: has_displayed_rate_series_in
+    object: kinetics
+    notes: Figure S6 panel e is labelled NovQ E281A and plots rate against menadione
+      hydroquinol through 500 uM. Panels have different vertical scales. The caption
+      does not define error bars or replicate count; no exact digitized rate, mutant
+      kinetic constant, binding affinity or universal activity ranking is assigned.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure S6 panel e, PDF p.7.
+  - subject: panel
+    predicate: generated_expression_construct_for
+    object: e281v
+    notes: Table S2 names BL21-MBP-NovQ-E281V with pMBPtevV. Forward primer 5-prime
+      GACTACGTCAAGGCCGTACGCAGCTACACCGGG; reverse primer 5-prime CCCGGTGTAGCTGCGTACGGCCTTGACGTAGTC.
+      The deposited-template model changes only native E281 to V. Tag, junction and
+      cleavage state are not fully specified for the assayed protein; no native accession
+      is assigned.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Tables S1/S2, PDF pp.8-9.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer translated-core reconstruction.
+  - subject: e281v
+    predicate: has_displayed_rate_series_in
+    object: kinetics
+    notes: Figure S6 panel f is labelled NovQ E281V and plots rate against menadione
+      hydroquinol through 500 uM. Panels have different vertical scales. The caption
+      does not define error bars or replicate count; no exact digitized rate, mutant
+      kinetic constant, binding affinity or universal activity ranking is assigned.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure S6 panel f, PDF p.7.
+  - subject: panel
+    predicate: generated_expression_construct_for
+    object: e281m
+    notes: Table S2 names BL21-MBP-NovQ-E281M with pMBPtevM. Forward primer 5-prime
+      GACTACGTCAAGGCCATGCGCAGCTACACCGGG; reverse primer 5-prime CCCGGTGTAGCTGCGCATGGCCTTGACGTAGTC.
+      The deposited-template model changes only native E281 to M. Tag, junction and
+      cleavage state are not fully specified for the assayed protein; no native accession
+      is assigned.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Tables S1/S2, PDF pp.8-9.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer translated-core reconstruction.
+  - subject: e281m
+    predicate: has_displayed_rate_series_in
+    object: kinetics
+    notes: Figure S6 panel g is labelled NovQ E281M and plots rate against menadione
+      hydroquinol through 500 uM. Panels have different vertical scales. The caption
+      does not define error bars or replicate count; no exact digitized rate, mutant
+      kinetic constant, binding affinity or universal activity ranking is assigned.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure S6 panel g, PDF p.7.
+  - subject: panel
+    predicate: generated_expression_construct_for
+    object: e281r
+    notes: Table S2 names BL21-MBP-NovQ-E281R with pMBPtevR. Forward primer 5-prime
+      GACTACGTCAAGGCCCGACGCAGCTACACCGGG; reverse primer 5-prime CCCGGTGTAGCTGCGTCGGGCCTTGACGTAGTC.
+      The deposited-template model changes only native E281 to R. Tag, junction and
+      cleavage state are not fully specified for the assayed protein; no native accession
+      is assigned.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Tables S1/S2, PDF pp.8-9.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer translated-core reconstruction.
+  - subject: e281r
+    predicate: has_displayed_rate_series_in
+    object: kinetics
+    notes: Figure S6 panel h is labelled NovQ E281R and plots rate against menadione
+      hydroquinol through 500 uM. Panels have different vertical scales. The caption
+      does not define error bars or replicate count; no exact digitized rate, mutant
+      kinetic constant, binding affinity or universal activity ranking is assigned.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure S6 panel h, PDF p.7.
+  - subject: panel
+    predicate: generated_expression_construct_for
+    object: e281k
+    notes: Table S2 names BL21-MBP-NovQ-E281K with pMBPtevK. Forward primer 5-prime
+      GACTACGTCAAGGCCAAACGCAGCTACACCGGG; reverse primer 5-prime CCCGGTGTAGCTGCGTTTGGCCTTGACGTAGTC.
+      The deposited-template model changes only native E281 to K. Tag, junction and
+      cleavage state are not fully specified for the assayed protein; no native accession
+      is assigned.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Tables S1/S2, PDF pp.8-9.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer translated-core reconstruction.
+  - subject: e281k
+    predicate: has_displayed_rate_series_in
+    object: kinetics
+    notes: Figure S6 panel i is labelled NovQ E281K and plots rate against menadione
+      hydroquinol through 500 uM. Panels have different vertical scales. The caption
+      does not define error bars or replicate count; no exact digitized rate, mutant
+      kinetic constant, binding affinity or universal activity ranking is assigned.
+    evidence:
+    - reference: https://static-content.springer.com/esm/art%3A10.1007%2Fs00253-020-10470-w/MediaObjects/253_2020_10470_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure S6 panel i, PDF p.7.
+curation_history:
+- timestamp: '2026-10-04T18:21:51Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add cathomycin-novq-e281-variants-and-surrogate-assay-limits with native
+    identity, source conflicts and bounded engineered-preparation evidence (#554).
+  llm_assisted: true

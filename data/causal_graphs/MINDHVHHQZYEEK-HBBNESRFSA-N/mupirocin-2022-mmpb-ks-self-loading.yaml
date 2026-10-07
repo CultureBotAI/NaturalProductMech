@@ -1,0 +1,330 @@
+record_id: CHEBI:7025
+standard_inchi_key: MINDHVHHQZYEEK-HBBNESRFSA-N
+graph:
+  graph_id: mupirocin-2022-mmpb-ks-self-loading
+  scope: BIOSYNTHESIS
+  description: MmpB-KS self-loading tests of synthetic chain-length analogues. Priming
+    is not catalytic turnover. Native reference, engineered preparation and study
+    readout remain distinct. Partial primary-main-text curation, not complete pathway
+    reconstitution or full-record sign-off. The exact PAA owner is not the clinical
+    mupirocin mixture.
+  nodes:
+  - node_id: cluster
+    label: Native mupirocin locus in NCIMB 10586
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000182
+  - node_id: mmpB
+    label: Native MmpB sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL74
+  - node_id: prep
+    label: Study excised MmpB KS-domain preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: pant7
+    label: Synthetic 7-hydroxyheptanoyl pantetheine
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: loading7
+    label: MmpB-KS C7 self-loading assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: readout7
+    label: Reported C7 self-loading
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pant6
+    label: Synthetic 6-hydroxyhexanoyl pantetheine
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: loading6
+    label: MmpB-KS C6 self-loading assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: readout6
+    label: Reported C6 self-loading
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pant5
+    label: Synthetic 5-hydroxypentanoyl pantetheine
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: loading5
+    label: MmpB-KS C5 self-loading assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: readout5
+    label: No detected C5 self-loading
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pant9
+    label: Synthetic 9-hydroxynonanoyl pantetheine
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: loading9
+    label: MmpB-KS C9 self-loading assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: readout9
+    label: No detected C9 self-loading
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pant4
+    label: Synthetic 4-hydroxybutanoyl pantetheine
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: loading4
+    label: MmpB-KS C4 self-loading assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: readout4
+    label: No detected C4 self-loading
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: mmpB
+    notes: AF318063.3 CDS 11325..17555(+),1-based inclusive; AAM12911.1,2076 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12911.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL74
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: mmpB
+    predicate: is_native_sequence_reference_for
+    object: prep
+    notes: The tested KS domain is excised from MmpB, not the full 2076-aa protein.
+      Exact domain boundaries, tags and complete construct sequence remain unverified.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: prep
+    predicate: was_tested_in
+    object: loading7
+    notes: Purified-domain self-loading test, not an ACP-dependent extension assay
+      or evidence of iterative full-length MmpB turnover.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: pant7
+    predicate: was_tested_in
+    object: loading7
+    notes: Purified-domain self-loading test, not an ACP-dependent extension assay
+      or evidence of iterative full-length MmpB turnover.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: loading7
+    predicate: yielded_reported_readout
+    object: readout7
+    notes: Reported priming is not demonstration of chain-extension turnover.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: prep
+    predicate: was_tested_in
+    object: loading6
+    notes: Purified-domain self-loading test, not an ACP-dependent extension assay
+      or evidence of iterative full-length MmpB turnover.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: pant6
+    predicate: was_tested_in
+    object: loading6
+    notes: Purified-domain self-loading test, not an ACP-dependent extension assay
+      or evidence of iterative full-length MmpB turnover.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: loading6
+    predicate: yielded_reported_readout
+    object: readout6
+    notes: Reported priming is not demonstration of chain-extension turnover. The
+      non-natural C6 analogue showed less loading than C7; no quantitative selectivity
+      ratio is adopted.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: prep
+    predicate: was_tested_in
+    object: loading5
+    notes: Purified-domain self-loading test, not an ACP-dependent extension assay
+      or evidence of iterative full-length MmpB turnover.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: pant5
+    predicate: was_tested_in
+    object: loading5
+    notes: Purified-domain self-loading test, not an ACP-dependent extension assay
+      or evidence of iterative full-length MmpB turnover.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: loading5
+    predicate: yielded_reported_readout
+    object: readout5
+    notes: No self-loading reported under the tested conditions; not universal substrate
+      exclusion.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: prep
+    predicate: was_tested_in
+    object: loading9
+    notes: Purified-domain self-loading test, not an ACP-dependent extension assay
+      or evidence of iterative full-length MmpB turnover.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: pant9
+    predicate: was_tested_in
+    object: loading9
+    notes: Purified-domain self-loading test, not an ACP-dependent extension assay
+      or evidence of iterative full-length MmpB turnover.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: loading9
+    predicate: yielded_reported_readout
+    object: readout9
+    notes: No self-loading reported under the tested conditions; not universal substrate
+      exclusion.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: prep
+    predicate: was_tested_in
+    object: loading4
+    notes: Purified-domain self-loading test, not an ACP-dependent extension assay
+      or evidence of iterative full-length MmpB turnover.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: pant4
+    predicate: was_tested_in
+    object: loading4
+    notes: Purified-domain self-loading test, not an ACP-dependent extension assay
+      or evidence of iterative full-length MmpB turnover.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: loading4
+    predicate: yielded_reported_readout
+    object: readout4
+    notes: No self-loading reported under the tested conditions; not universal substrate
+      exclusion.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T05:42:46Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component for CHEBI:7025,owner baseline commit edbd74cf58fae62cbf8207453d4b583c31706575;
+    no prior graph migration. MmpB-KS self-loading tests of synthetic chain-length
+    analogues. Priming is not catalytic turnover. Native reference, engineered preparation
+    and study readout remain distinct. Partial primary-main-text curation, not complete
+    pathway reconstitution or full-record sign-off. The exact PAA owner is not the
+    clinical mupirocin mixture. Every edge cites DOI10.1002/anie.202212393 or official
+    native-sequence URLs. Primary main HTML only; SI inaccessible/unread and figures
+    not visually inspected. Native references do not identify complete engineered
+    preparations. Author-agent issues#599/#600 review,not independent approval or
+    full-record sign-off.
+  llm_assisted: true

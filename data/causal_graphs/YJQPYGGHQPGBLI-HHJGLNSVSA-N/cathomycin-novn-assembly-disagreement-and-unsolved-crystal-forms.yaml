@@ -1,0 +1,205 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novn-assembly-disagreement-and-unsolved-crystal-forms
+  scope: BIOSYNTHESIS
+  description: 'Distinct NovN preparation sizes and the explicitly unsolved 2008 crystal
+    forms. Review #560. Xu locators are PDF pages, nineteen higher than printed main-text
+    pages. The owner retains its unspecified sugar stereocentre and SEEDED status;
+    source-assigned novobiocin is not an exact structure-key merge with cathomycin.
+    Native reference, engineered protein and DNA construct are separate entities.'
+  nodes:
+  - node_id: native
+    label: Current deposited native NovN sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F4
+  - node_id: xu
+    label: Xu N-terminal His6 NovN preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: sec
+    label: Xu calibrated NovN size-exclusion result
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: monomer
+    label: Xu preparation monomer-like hydrodynamic interpretation
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: construct
+    label: 2008 NovN pET37b expression construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: tagged
+    label: 2008 C-terminal LE-His8 NovN preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: dls
+    label: 2008 NovN dynamic-light-scattering result
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: dimer
+    label: 2008 preparation dimer-like hydrodynamic interpretation
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: conflict
+    label: NovN preparation-specific assembly and tag-attribution limits
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: form1
+    label: 2008 ATP-supplemented unsolved NovN crystal form I
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: form2
+    label: 2008 novobiocin-supplemented unsolved NovN crystal form II
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: native
+    predicate: is_gene_product_reference_for
+    object: xu
+    notes: The thesis identifies the protein as novN-derived; current Q9L9F4 is the
+      native reference, not a verified full sequence for the N-terminal His6 sample.
+      Historical sequence-version ambiguity remains.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Construct/preparation results, PDF pp.59,85-86.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F4
+      evidence_type: DATABASE_ASSERTION
+      notes: Native reference only.
+  - subject: xu
+    predicate: was_measured_by
+    object: sec
+    notes: The methods name Hiload 26/60 Superdex 200 at 1 mL/min and 4 C; Table 19
+      instead heads the column Sephadex 200. Standards used G1 (50 mM Tris-HCl pH
+      8, 5 mM DTT, 50 uM PMSF), sample G2 with additional 150 mM NaCl. NovN eluted
+      at 182 mL. Preserve the column-name and sample-versus-standard buffer differences.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Table 12, SEC methods, Table 19 and results,
+        PDF pp.40,54-55,88.
+  - subject: sec
+    predicate: supports_source_interpretation
+    object: monomer
+    notes: 'The source assigns an apparent 79 kDa, near its 78.5-kDa calculated tagged
+      monomer. Standards were blue dextran 2000 kDa/107.9 mL, aldolase 158/158.6,
+      albumin 66/178.4, ovalbumin 45/212.4 and ribonuclease 13.7/252.4; acetone gave
+      total volume 294 mL. This is preparation-specific hydrodynamic inference, not
+      native in-cell stoichiometry. The reported 79 kDa is not independently recalibrated
+      here: 182 mL lies between the 66- and 45-kDa standard elutions, which were measured
+      in a different buffer from the NovN sample. Preserve that numerical and protocol
+      context rather than silently replacing the reported mass.'
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Table 19 and results, PDF pp.55,88.
+  - subject: native
+    predicate: is_native_core_reference_for
+    object: construct
+    notes: The 2008 source describes novN in pET37b with a C-terminal LEHHHHHHHH extension.
+      Its stated 677-residue native protein plus ten-residue extension gives 687 residues
+      and 75839 Da. No complete experimental vector sequence was independently inspected.
+    evidence:
+    - reference: DOI:10.1107/S1744309108030145
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2008 primary HTML, Methods section 2.1; text/table/captions
+        inspected, not the journal PDF or figure image.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F4
+      evidence_type: DATABASE_ASSERTION
+      notes: Native sequence length.
+  - subject: construct
+    predicate: encodes_engineered_protein
+    object: tagged
+    notes: The C-terminal LE-His8 preparation is not the Xu N-terminal His6 fusion.
+      Expression used E. coli BL21(DE3), 1 L LB with 50 mg kanamycin, growth at 310
+      K to OD600 0.4, 0.1 mM IPTG and overnight expression at 288 K. Nickel affinity
+      and Superdex 200 purification gave about 10 mg/L culture, >95% SDS-PAGE purity
+      and final 10 mg/mL. These are protein yields, not catalytic rates.
+    evidence:
+    - reference: DOI:10.1107/S1744309108030145
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2008 primary HTML, Methods section 2.1 and purification
+        results; text/table/captions inspected, not the journal PDF or figure image.
+  - subject: tagged
+    predicate: was_measured_by
+    object: dls
+    notes: DLS at 293 K with at least 15 measurements gave 19% polydispersity and
+      apparent mass 160 kDa. These are not the Xu SEC data, and no equilibrium association
+      constant was reported.
+    evidence:
+    - reference: DOI:10.1107/S1744309108030145
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2008 primary HTML, Dynamic-light-scattering methods/results;
+        text/table/captions inspected, not the journal PDF or figure image.
+  - subject: dls
+    predicate: supports_source_interpretation
+    object: dimer
+    notes: The source compares 160 kDa with the calculated tagged dimer 151.7 kDa.
+      This supports a dimer-like preparation under the reported conditions, not a
+      uniquely established physiological oligomer.
+    evidence:
+    - reference: DOI:10.1107/S1744309108030145
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2008 primary HTML, DLS results; text/table/captions inspected,
+        not the journal PDF or figure image.
+  - subject: monomer
+    predicate: contributes_to
+    object: conflict
+    notes: The SEC estimate is retained rather than replaced by the later DLS or deposited
+      assembly. Different tags, methods, buffers and sample histories prevent assigning
+      the disagreement to one tested cause.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Xu 2004 primary dissertation; SEC methods/results, PDF pp.54-55,88.
+  - subject: dimer
+    predicate: contributes_to
+    object: conflict
+    notes: The later dimer-like estimate does not invalidate the earlier preparation
+      result. Xu PDF p.85 calls the Freel Meyers 2004 preparation N-terminal His8,
+      while the 2008 methods specify C-terminal LE-His8. The complete earlier paper
+      was not inspected; this is an attributed source difference, not a reconstructed
+      2004 sequence.
+    evidence:
+    - reference: DOI:10.1107/S1744309108030145
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2008 primary HTML, Methods/results; comparison boundary;
+        text/table/captions inspected, not the journal PDF or figure image.
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; PDF p.85.
+  - subject: tagged
+    predicate: formed
+    object: form1
+    notes: With 1 mM added ATP, form I is reported as C2 with 2.9-A diffraction. Matthews
+      analysis suggests two protomers/asymmetric unit and 52.7% solvent; the self-rotation
+      twofold is 24% of the origin peak. These are crystallographic inferences from
+      an unsolved form, not observed ATP density or an atomic dimer structure. Crystallization
+      methods say 291 K whereas the results say 293 K.
+    evidence:
+    - reference: DOI:10.1107/S1744309108030145
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2008 primary HTML, Crystallization methods/results and Table
+        1; text/table/captions inspected, not the journal PDF or figure image.
+  - subject: tagged
+    predicate: formed
+    object: form2
+    notes: 'With 1 mM added novobiocin, form II is reported as I222 or I212121, about
+      2.3-A diffraction (Table 1: 2.29 A), one inferred asymmetric-unit protomer and
+      62.9% solvent. The paper explicitly plans future phasing. No bound novobiocin,
+      catalytic contacts or identity with the later 9S2T diffraction dataset is asserted.'
+    evidence:
+    - reference: DOI:10.1107/S1744309108030145
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2008 primary HTML, Crystallization results, Table 1 and
+        future-phasing discussion; text/table/captions inspected, not the journal
+        PDF or figure image.
+curation_history:
+- timestamp: '2026-10-04T22:05:23Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cathomycin-novn-assembly-disagreement-and-unsolved-crystal-forms with
+    source-checked NovN evidence and review #560 limits.'
+  llm_assisted: true

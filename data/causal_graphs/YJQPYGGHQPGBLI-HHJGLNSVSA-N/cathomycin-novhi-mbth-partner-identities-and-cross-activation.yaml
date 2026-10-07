@@ -1,0 +1,406 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novhi-mbth-partner-identities-and-cross-activation
+  scope: BIOSYNTHESIS
+  description: 'Four heterologous MbtH partners, exact native reference boundaries
+    and complete NovH cross-activation scope. Review #561. The cathomycin/BGC0000834
+    owner retains its unspecified sugar stereocentre and SEEDED status; these precursor
+    assays do not establish an exact-structure merge with fully specified novobiocin.
+    Boll page locators are PDF pages, five above printed pages. Native references,
+    DNA constructs and engineered preparations are distinct.'
+  nodes:
+  - node_id: novh
+    label: 2011 deletion-host His6-NovH preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: panel
+    label: Four-partner NovH cross-activation assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: cloy_native
+    label: Deposited CloY sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHC8
+  - node_id: simy_native
+    label: Deposited SimY sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F5J2
+  - node_id: cdax_native
+    label: Deposited CdaX SCO3218 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9Z388
+  - node_id: orf_native
+    label: Deposited Orf1van sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:AAL90876.1
+  - node_id: cloy
+    label: pBB37-derived processed CloY preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: simy
+    label: pBB28-derived SimY preparation with tag-stage limitation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: cdax
+    label: pBB32-derived processed CdaX preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: orf
+    label: pBB34-derived processed synthetic Orf1van preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: processing
+    label: MbtH partner expression and thrombin-processing workflow
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: lengths
+    label: SimY and Orf1van reported-length discrepancies
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: tag_limit
+    label: Figure S2 SimY tag-stage ambiguity
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: primers
+    label: Literal CloY, SimY and CdaX primer models
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: control
+    label: MbtH-only assay control
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: scope
+    label: Bounded heterologous activation without native-partner assignment
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: novh
+    predicate: was_tested_in
+    object: panel
+    notes: Figure 6 tests deletion-host NovH with CloY, CdaX, SimY or Orf1van at enzyme:partner
+      1:1.2 by the 5-min, 30-C ATP-PPi exchange assay. The panel is heterologous functional
+      stimulation, not four endogenous novobiocin-cluster partners or direct physical
+      binding measurements.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Methods/results and Figure 6, PDF pp.94-95,101,104.
+  - subject: cloy_native
+    predicate: is_native_reference_for
+    object: cloy
+    notes: 'CloY is 71 aa: AF329398.1 positions 12920..13135(+), AAN65223.1 and Q8GHC8
+      match exactly. The GenBank source is S. roseochromogenus subsp. oscitans DS
+      12.976 (strain taxon 1352936); UniProt uses subspecies taxon 149682. The paper
+      amplifies cloY from a cluster-containing cosmid for pBB37.'
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited protein/CDS identity.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHC8
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry 34, sequence 1; annotation 2025-02-05. Retrieved 2026-10-04.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Cloning and source accessions, PDF pp.91-92,96.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent CDS/deposited/UniProt comparison.
+  - subject: simy_native
+    predicate: is_native_reference_for
+    object: simy
+    notes: SimY Q9F5J2 exactly matches the 70-aa AAL15602.1 translation in AF322256.1
+      and the previously checked AAG34186.1/AAK06806.1 deposits. The paper names AAG34186
+      and uses a sim-cluster cosmid for pBB28; the native accession does not denote
+      the processed fusion.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited protein/CDS identity.
+    - reference: https://www.uniprot.org/uniprotkb/Q9F5J2
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry 45, sequence 1; annotation 2025-02-05; taxon 1890. Retrieved
+        2026-10-04.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Cloning and source accessions, PDF pp.91-92,96.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent CDS/deposited/UniProt comparison.
+  - subject: cdax_native
+    predicate: is_native_reference_for
+    object: cdax
+    notes: CdaX is the source-named CAB38589.1/SCO3218, 71 aa, exactly matching Q9Z388
+      and CDS-aware translation of AL939115.1:183050..183265(-). The genomic GTG start
+      translates as initiator methionine. UniProt names S. coelicolor A3(2)/M145,
+      taxon 100226, whereas the paper amplified cdaX from M512 to make pBB32. The
+      reference match is not independent sequencing of the complete M512-derived experimental
+      construct.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAB38589.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited protein/CDS identity.
+    - reference: https://www.uniprot.org/uniprotkb/Q9Z388
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry 112, sequence 1; annotation 2026-06-10. Retrieved 2026-10-04.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Cloning and source accessions, PDF pp.91-92,96.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAB38589.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent CDS/deposited/UniProt comparison.
+  - subject: orf_native
+    predicate: is_native_reference_for
+    object: orf
+    notes: The source-named AAL90876.1 is a 69-aa conceptual translation from Amycolatopsis
+      orientalis, taxon 31958, at AF486630.1:720..929(+). The 210-nt CDS including
+      stop matches the protein deposit. The paper used a commercially synthesized,
+      E. coli-codon-optimized orf1van in pET28a/pBB34, not a directly assayed native
+      preparation. No full synthetic construct sequence or defensible exact UniProt
+      mapping was obtained in the bounded accession queries; the named NCBI accession
+      is retained.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAL90876.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Source-named protein record.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF486630.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS; conceptual translation.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Synthetic gene and protein accession, PDF pp.92,96.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF486630.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent CDS/protein comparison.
+  - subject: simy_native
+    predicate: exposes_reported_length_difference
+    object: lengths
+    notes: The paper lists SimY as 69 aa and Orf1van as 70 aa, whereas the named native
+      deposits give SimY 70 aa and Orf1van 69 aa. No initiator-removal, swapped-label
+      correction or altered experimental sequence is inferred.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Protein-length paragraph, PDF p.96.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAG34186.1
+      evidence_type: DATABASE_ASSERTION
+      notes: 70-aa SimY reference.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAL90876.1
+      evidence_type: DATABASE_ASSERTION
+      notes: 69-aa Orf1van reference.
+  - subject: orf_native
+    predicate: also_exposes_reported_length_difference
+    object: lengths
+    notes: The Orf1van discrepancy concerns the native accession versus the source
+      description; it does not establish the length of an independently sequenced
+      thrombin-processed synthetic protein.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. PDF pp.92,94,96.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAL90876.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native reference length.
+  - subject: processing
+    predicate: has_checked_primer_models
+    object: primers
+    notes: The six printed CloY/SimY/CdaX primers were visually checked and modeled
+      against their native CDSs. PCR lengths including 11-nt forward and 9-nt reverse
+      tails are 236, 233 and 236 nt, respectively. CloY and SimY cores are unchanged;
+      CdaX GTG is recoded to ATG without changing its CDS-aware protein translation.
+      These models do not establish complete vector junctions or post-thrombin scars.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Literal primer sequences, PDF p.92.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: CloY literal-primer model.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: CURATOR_INFERENCE
+      notes: SimY literal-primer model.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AL939115.1?from=183000&to=183300
+      evidence_type: CURATOR_INFERENCE
+      notes: CdaX interval and literal-primer model.
+  - subject: processing
+    predicate: produced
+    object: cloy
+    notes: This partner was expressed in E. coli Rosetta2(DE3) as an N-terminal His6
+      fusion. Methods report thrombin removal of MbtH tags (0.4 U/mg, 8 h at 4 C)
+      before gel filtration, with Ni-NTA and Superdex purification. The reported preparation
+      yield is 6.9 mg/L culture. A280-derived concentration and tag removal do not
+      establish active fraction or restoration of the exact native N terminus.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Expression and purification, PDF pp.92-95.
+  - subject: cloy
+    predicate: stimulated_novh_in
+    object: panel
+    notes: Figure 6 shows higher NovH exchange activity with this partner than without
+      added MbtH. The NovH panel normalizes its CloY condition to 100%; the other
+      enzyme panels have their own denominators. No precise percentage is newly estimated
+      from the bars, and stimulation alone is not direct binding or native pathway
+      flux.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Cross-activation results and Figure 6, PDF pp.101,104.
+  - subject: processing
+    predicate: produced
+    object: simy
+    notes: This partner was expressed in E. coli Rosetta2(DE3) as an N-terminal His6
+      fusion. Methods report thrombin removal of MbtH tags (0.4 U/mg, 8 h at 4 C)
+      before gel filtration, with Ni-NTA and Superdex purification. The reported preparation
+      yield is 27 mg/L culture. A280-derived concentration and tag removal do not
+      establish active fraction or restoration of the exact native N terminus.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Expression and purification, PDF pp.92-95.
+  - subject: simy
+    predicate: stimulated_novh_in
+    object: panel
+    notes: Figure 6 shows higher NovH exchange activity with this partner than without
+      added MbtH. The NovH panel normalizes its CloY condition to 100%; the other
+      enzyme panels have their own denominators. No precise percentage is newly estimated
+      from the bars, and stimulation alone is not direct binding or native pathway
+      flux.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Cross-activation results and Figure 6, PDF pp.101,104.
+  - subject: processing
+    predicate: produced
+    object: cdax
+    notes: This partner was expressed in E. coli Rosetta2(DE3) as an N-terminal His6
+      fusion. Methods report thrombin removal of MbtH tags (0.4 U/mg, 8 h at 4 C)
+      before gel filtration, with Ni-NTA and Superdex purification. The reported preparation
+      yield is 23.8 mg/L culture. A280-derived concentration and tag removal do not
+      establish active fraction or restoration of the exact native N terminus.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Expression and purification, PDF pp.92-95.
+  - subject: cdax
+    predicate: stimulated_novh_in
+    object: panel
+    notes: Figure 6 shows higher NovH exchange activity with this partner than without
+      added MbtH. The NovH panel normalizes its CloY condition to 100%; the other
+      enzyme panels have their own denominators. No precise percentage is newly estimated
+      from the bars, and stimulation alone is not direct binding or native pathway
+      flux.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Cross-activation results and Figure 6, PDF pp.101,104.
+  - subject: processing
+    predicate: produced
+    object: orf
+    notes: This partner was expressed in E. coli Rosetta2(DE3) as an N-terminal His6
+      fusion. Methods report thrombin removal of MbtH tags (0.4 U/mg, 8 h at 4 C)
+      before gel filtration, with Ni-NTA and Superdex purification. The reported preparation
+      yield is 30.2 mg/L culture. A280-derived concentration and tag removal do not
+      establish active fraction or restoration of the exact native N terminus.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Expression and purification, PDF pp.92-95.
+  - subject: orf
+    predicate: stimulated_novh_in
+    object: panel
+    notes: Figure 6 shows higher NovH exchange activity with this partner than without
+      added MbtH. The NovH panel normalizes its CloY condition to 100%; the other
+      enzyme panels have their own denominators. No precise percentage is newly estimated
+      from the bars, and stimulation alone is not direct binding or native pathway
+      flux.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Cross-activation results and Figure 6, PDF pp.101,104.
+  - subject: simy
+    predicate: has_tag_stage_ambiguity
+    object: tag_limit
+    notes: Methods report cleavage of MbtH tags, but Figure S2 explicitly labels N-His6-SimY
+      and gives 9.4 kDa. These may represent different preparation stages; the figure
+      does not independently prove that the activation assays used retained-tag SimY
+      or that cleavage restored an exact native sequence.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Methods and Figure S2, PDF pp.94-95,109.
+  - subject: control
+    predicate: constrains_interpretation_of
+    object: panel
+    notes: The results report no activity from MbtH-like proteins alone. This is the
+      study-level control for exchange activity, not a separately quantified zero
+      with a supplied detection limit for every Figure 6 pair.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. Figure 3/results, PDF p.97.
+  - subject: panel
+    predicate: supports_limited_partner_scope
+    object: scope
+    notes: All four partners stimulated NovH and CloY gave the highest displayed activity.
+      The 2011 partial-genome discussion reports no mbtH-like gene in the nov cluster/immediate
+      vicinity but at least two distant orthologs. That historical, strain-label-qualified
+      observation is not a present-day genome-wide absence claim or assignment of
+      the tested heterologous partners as native NovH cofactors.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
+        and supplement, marked publication ahead of print; final journal text not
+        independently retrieved. PDF pp.101,104-105.
+    - reference: DOI:10.1128/genomeA.01146-13
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Previously inspected primary strain correction; NCIMB 11891 and NCIMB
+        9219 are not synonyms.
+curation_history:
+- timestamp: '2026-10-04T22:55:50Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cathomycin-novhi-mbth-partner-identities-and-cross-activation with
+    source-checked NovH/NovI evidence and #561 boundaries.'
+  llm_assisted: true

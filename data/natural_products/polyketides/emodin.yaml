@@ -724,6 +724,217 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       notes: RCSB PDB identifies 3ED0 as emodin-bound H. pylori FabZ with EMO ligands
         and maps entity 1 to UniProtKB:Q5G940.
+- graph_id: emodin-phog-database-anthrone-oxidation
+  scope: BIOSYNTHESIS
+  description: MITE-asserted PhoG oxidation of emodin anthrone yielding the exact
+    emodin structure as an intermediate in the reported phomoxanthone A pathway. The
+    native Diaporthe SYSU-MS4722 reference is grounded in NCBIProtein, not a UniParc
+    ID relabeled as UniProtKB. It is not assigned to the owner's distinct Aspergillus/BGC0000101
+    source. Existing CK2/FabZ bioactivity graphs and all source fields and grades
+    are preserved; not full-record sign-off.
+  nodes:
+  - node_id: phog_reference
+    label: PhoG native reference from Diaporthe SYSU-MS4722
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:UPG58736.1
+  - node_id: emodin_anthrone
+    label: Emodin anthrone, MITE-reported substrate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: anthrone_oxidation
+    label: MITE-reported emodin anthrone oxidation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: emodin
+    label: emodin
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:42223
+  edges:
+  - subject: phog_reference
+    predicate: is_database_reported_catalyst_of
+    object: anthrone_oxidation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000162.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000162 version 2, active, at the pinned commit. It assigns emodin
+        anthrone oxidation to PhoG, yielding emodin during phomoxanthone A biosynthesis.
+        Its heterologous-expression code is not personally inspected experimental
+        data; the cited primary paper was inaccessible. MITE removed a retired BGC0003093
+        link; it is not restored or treated as active here.
+      snippet: conversion of emodin anthrone to emodin
+    - reference: https://www.ncbi.nlm.nih.gov/protein/UPG58736.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: 'Complete GenPept and independent coded_by inspected: phoG, Diaporthe
+        sp. strain SYSU-MS4722, taxon 1756133, 174 residues. Its phomoxanthone G product
+        label denotes this gene product, not a chemical identifier. The anthrone-oxygenase
+        family annotation is not an independently inspected compound-specific assay.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/OL450412.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Genomic DNA deposit with complete exact CDS complement(join(1..434,513..603)),
+        525nt, codon_start1, default translation table1. Biological exon order is
+        513..603 then 1..434, both negative-strand. Full translation equals the annotation,
+        independent UPG58736.1 and UniParc174aa; coded_by DNA/coordinates match. Fuzzy
+        gene/mRNA boundaries do not establish a complete transcript/promoter or historical
+        construct/stock.
+    - reference: https://www.uniprot.org/uniparc/UPI00206D4B6A
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Sequence archive matches all 174 residues and links active EMBL UPG58736
+        version1. The inspected record has no UniProtKB cross-reference, and the exact
+        taxon/gene query returned no current entry. No UniProtKB example was selected;
+        this bounded check is not proof of global or all-alias absence.
+    notes: MITE supplies functional attribution; sequence deposits establish identity
+      only. The Diaporthe reference is not inferred to be an Aspergillus nidulans
+      FGSC A4 protein. No physiological membrane topology, complex, active-site residue,
+      rate, assay condition, oxygen-donor identity or inspected primary experiment
+      is claimed.
+  - subject: emodin_anthrone
+    predicate: is_database_reported_substrate_of
+    object: anthrone_oxidation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000162.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000162 version 2, active, at the pinned commit. It assigns emodin
+        anthrone oxidation to PhoG, yielding emodin during phomoxanthone A biosynthesis.
+        Its heterologous-expression code is not personally inspected experimental
+        data; the cited primary paper was inaccessible. MITE removed a retired BGC0003093
+        link; it is not restored or treated as active here.
+    notes: MITE names emodin anthrone and supplies the corresponding example substrate.
+      No external substrate identifier, additional precursor-generation step or independently
+      inspected assay is adopted.
+  - subject: anthrone_oxidation
+    predicate: has_database_reported_product
+    object: emodin
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000162.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000162 version 2, active, at the pinned commit. It assigns emodin
+        anthrone oxidation to PhoG, yielding emodin during phomoxanthone A biosynthesis.
+        Its heterologous-expression code is not personally inspected experimental
+        data; the cited primary paper was inaccessible. MITE removed a retired BGC0003093
+        link; it is not restored or treated as active here.
+    notes: Pinned MITE product matches full owner InChIKey RHMXXJGYXNZAPX-UHFFFAOYSA-N
+      and complete stereochemical status using the repository helper and RDKit2026.03.5.
+      MITE explicitly places emodin in the phomoxanthone A pathway; no downstream
+      step or final-product claim is invented. The owner's BGC_CHARACTERIZED Aspergillus
+      producer, CLUSTER_DEMONSTRATED BGC0000101/BN001308.1, occurrences, targets and
+      prior bioactivity graphs stay unchanged.
+- graph_id: emodin-phok-database-substrate-reduction
+  scope: BIOSYNTHESIS
+  description: Separate MITE-reported PhoK reduction consuming exact emodin. The sequence-verified
+    native Diaporthe SYSU-MS4722 reference is grounded in NCBIProtein; no current
+    UniProtKB example was selected. Its encoded product is not the anthrone substrate
+    of the preserved PhoG graph, so this does not form a reverse reaction or closed
+    cycle. Functional evidence remains database-level. Existing CK2/FabZ bioactivity
+    graphs, PhoG synthesis, source claims and SEEDED status remain unchanged.
+  nodes:
+  - node_id: phok_reference
+    label: PhoK native Diaporthe SYSU-MS4722 reference
+    node_type: ENZYME
+    identifier: NCBIProtein:UPG58740.1
+    grounding_status: GROUNDED
+  - node_id: emodin
+    label: emodin
+    node_type: COMPOUND
+    identifier: CHEBI:42223
+    grounding_status: GROUNDED
+  - node_id: reduction
+    label: MITE-reported PhoK emodin reduction
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: reduced_intermediate
+    label: MITE-encoded reduced emodin intermediate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: phok_reference
+    predicate: is_database_reported_catalyst_of
+    object: reduction
+    notes: MITE supplies the exact-compound functional assertion, while sequence deposits
+      establish native reference identity. GenPept's YwnB/NADH-flavin reductase region
+      is explicitly a general function prediction, not a cofactor measurement or compound-specific
+      assay. No purified-enzyme sufficiency, rates, binding sites, cofactor occupancy
+      or physical complex is claimed. Native reference equality is not historical
+      assay-stock or construct identity.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000161.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: 'Active MITE0000161 version 2 names reductase PhoK and GenPept UPG58740.1.
+        Only its third reaction object (zero-based index 2), example 0, is used: exact
+        emodin is the substrate and the encoded reduced product is marked intermediate.
+        Heterologous expression is a database evidence code, not an independently
+        inspected primary assay. DOI10.1021/acs.orglett.2c01050 was inaccessible.
+        Its other acetylation/reduction examples concern different substrates and
+        are not transferred. Retired BGC0003093 was removed by MITE and is not restored
+        here.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/UPG58740.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      snippet: General function prediction only
+      notes: Complete 265-residue PhoK reference, gene phoK, Diaporthe sp. SYSU-MS4722/taxon
+        1756133. The deposited phomoxanthone K label denotes this gene product, not
+        a chemical identity. Its coded_by is complement(OL450416.1:141..938). The
+        snippet is from the CDD YwnB region's prediction disclaimer, not primary functional
+        evidence. Current exact taxon/gene and EMBL protein queries returned no UniProt
+        entries on 2026-10-07; no UniProtKB or UniParc example selected, not a global
+        absence claim.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/OL450416.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Complete 798-nt reverse CDS 141..938, codon 1/default table 1, translates
+        to the native annotation and independent GenPept, all 265 residues. Independent
+        coded_by DNA/coordinates and SYSU-MS4722/taxon 1756133 agree. The complete
+        938-bp genomic deposit was read. CDS boundaries are exact but gene/mRNA boundaries
+        are fuzzy; no full transcript/promoter or historical construct/stock proof.
+  - subject: emodin
+    predicate: is_database_example_substrate_of
+    object: reduction
+    notes: Pinned repository chemistry checks match reaction index 2's substrate to
+      full owner key RHMXXJGYXNZAPX-UHFFFAOYSA-N with complete stereochemistry. PhoK
+      consumes the owner compound, rather than producing it as in the separate PhoG
+      context. No other MITE substrate, native producer-grade upgrade or transfer
+      of this Diaporthe reference to Aspergillus nidulans FGSC A4 is inferred.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000161.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: 'Active MITE0000161 version 2 names reductase PhoK and GenPept UPG58740.1.
+        Only its third reaction object (zero-based index 2), example 0, is used: exact
+        emodin is the substrate and the encoded reduced product is marked intermediate.
+        Heterologous expression is a database evidence code, not an independently
+        inspected primary assay. DOI10.1021/acs.orglett.2c01050 was inaccessible.
+        Its other acetylation/reduction examples concern different substrates and
+        are not transferred. Retired BGC0003093 was removed by MITE and is not restored
+        here.'
+  - subject: reduction
+    predicate: has_database_example_product
+    object: reduced_intermediate
+    notes: The source-marked intermediate remains externally ungrounded. Pinned RDKit
+      2026.03.5 gives C15H12O5 and key LJRSVKUSUARDIJ-UHFFFAOYSA-N for the encoded
+      product; the PhoG anthrone substrate instead has C15H12O4 and key LAJSXCAVRQXZIO-UHFFFAOYSA-N.
+      Those distinct models must not be equated or joined as a reverse reaction. No
+      final product, downstream step, cofactor stoichiometry or exact named external
+      product identifier is asserted.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000161.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: 'Active MITE0000161 version 2 names reductase PhoK and GenPept UPG58740.1.
+        Only its third reaction object (zero-based index 2), example 0, is used: exact
+        emodin is the substrate and the encoded reduced product is marked intermediate.
+        Heterologous expression is a database evidence code, not an independently
+        inspected primary assay. DOI10.1021/acs.orglett.2c01050 was inaccessible.
+        Its other acetylation/reduction examples concern different substrates and
+        are not transferred. Retired BGC0003093 was removed by MITE and is not restored
+        here.'
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -752,3 +963,50 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-07T04:23:33Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added PhoG biosynthesis context alongside preserved CK2/FabZ bioactivity
+    graphs: four nodes and three MITE-database-asserted functional edges with stable
+    URLs. Native Diaporthe SYSU-MS4722 reference NCBIProtein:UPG58736.1 is verified
+    against the complete 525-nt/two-exon negative-strand CDS on OL450412.1, table1,
+    independent GenPept and UniParc174aa. No current UniProtKB example selected. Pinned
+    MITE product matches the complete owner structure; named emodin anthrone remains
+    ungrounded. One exact six-word snippet retained. Primary experiments were inaccessible;
+    no full transcript, historical construct/stock, membrane topology, complex, site,
+    rate, assay condition, oxygen-donor or downstream-step claim adopted. No transfer
+    to the owner''s Aspergillus/BGC0000101 source or restoration of retired BGC0003093.
+    Preserved old graphs/evidence, fields, grades, structure, occurrences, targets,
+    SEEDED status and history. Not full-record sign-off.'
+  llm_assisted: true
+- timestamp: '2026-10-07T04:29:19Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Corrected the newly added biosynthesis product node label to the canonical
+    ChEBI label after local identifier-label validation. Exact structure, identifier,
+    graph semantics, evidence, source fields, grades, status, earlier graphs and all
+    prior curation events are unchanged.
+  llm_assisted: true
+- timestamp: '2026-10-07T14:29:16Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added a separate four-node/three-edge PhoK database substrate-reduction
+    graph, preserving the complete CK2, HpFabZ and PhoG graphs and all prior fields/history.
+    Only reaction index 2/example 0 in pinned MITE0000161 version 2 consumes this
+    exact emodin structure; every functional edge has its stable source URL. Grounded
+    native Diaporthe SYSU-MS4722 PhoK to NCBIProtein:UPG58740.1: complete 798-nt reverse
+    CDS 141..938 on OL450416.1, codon 1/default table 1, equals native annotation
+    and independent GenPept, all 265 residues. Independent coded_by DNA/coordinates
+    and strain/taxon 1756133 agree. Two bounded current UniProt searches returned
+    no entries; no UniProtKB or UniParc example selected. Functional evidence remains
+    database-level because the cited primary paper was inaccessible. One exact four-word
+    GenPept snippet preserves the predicted status of its general domain annotation,
+    not an inspected primary assay. The encoded C15H12O5 product is distinct from
+    PhoG''s C15H12O4 anthrone substrate; no reverse reaction, closed cycle or product
+    equivalence is inferred. Product remains externally ungrounded. No other MITE
+    reaction, cofactor binding, single-enzyme sufficiency, kinetics, physiological
+    complex or historical stock/construct identity adopted. No retired BGC0003093
+    restoration or transfer to the distinct Aspergillus/BGC0000101 source. Preserved
+    source grades, targets, activities, plant/fungal occurrences, stereochemistry,
+    classifications, SEEDED status and all old history; not full-record sign-off.'
+  llm_assisted: true

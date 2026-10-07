@@ -65,7 +65,8 @@ ungrounded locus are different claims.
   `CausalGraphScopeEnum` and `CausalNodeTypeEnum`.
 - `.claude/skills/curate-yaml-record/references/review-checklist.md` for the
   per-record audit standard.
-- The full target YAML, not just `causal_graphs`.
+- The full target YAML and every `causal_graph_refs` component, not just inline
+  `causal_graphs`. Follow `docs/CURATION.md` for complete mechanism reads/writes.
 - Any MIBiG, BindingDB, PubChem or curator evidence blocks that already mention
   the protein, target, assay organism, BGC accession or source paper.
 
@@ -179,7 +180,13 @@ expected identifier, appends a `record_curation_event`, and calls
 Use a `/tmp` mutator for one-off curation. Keep only reusable graph-building
 code in `scripts/` or `src/`, with tests.
 
-When adding the first `causal_graphs`, `biosynthetic_pathway`, or other
+When evidence exceeds the 64-KiB record limit, use exact-owner graph components
+as described in `docs/CURATION.md`; keep the same limit on each component.
+Load raw owner/component YAML for edits, append events to each changed artifact,
+and call `write_validated_graph_bundle`. Never write the expanded dictionary
+returned by `read_natural_product`, or drop old evidence to make space.
+
+When adding the first `causal_graphs`, `causal_graph_refs`, `biosynthetic_pathway`, or other
 curator-owned top-level section to a seeded record, make the mutator insert it
 before `curation_history` or immediately run `just seed-apply` to canonicalize
 the record. Appending a new top-level key after `curation_history` is

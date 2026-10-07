@@ -1,0 +1,271 @@
+record_id: naturalproductmech:mibig-619480541f
+standard_inchi_key: FJAQNRBDVKIIKK-LFLQOBSNSA-N
+graph:
+  graph_id: clorobiocin-clon-recombinant-constructs-and-expression-limits
+  scope: BIOSYNTHESIS
+  description: 'Four recombinant constructs and unsuccessful soluble-enzyme preparation.
+    Review #568. Native references, constructs and source-assigned products remain
+    distinct; owner identity and SEEDED status are unchanged.'
+  nodes:
+  - node_id: cloN1
+    label: CloN1 native reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHC1
+  - node_id: cloN2
+    label: CloN2 native reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHC0
+  - node_id: cloN7
+    label: CloN7 native reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHB5
+  - node_id: parent
+    label: clo-BG1 PCR template
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: host
+    label: E. coli XL1 Blue MRF- expression host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: IPTG induction and SDS-PAGE comparison
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Expression and preparation limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: paf27
+    label: pAF27 C-His6 CloN1 construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: c1
+    label: pAF27-derived CloN1 expression attempt
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: paf21
+    label: pAF21 C-His6 CloN2 construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: c2
+    label: pAF21-derived insoluble CloN2 preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: paf20
+    label: pAF20 N-His6 CloN2 construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: n2
+    label: pAF20-derived CloN2 expression attempt
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: paf23
+    label: pAF23 N-His6 CloN7 construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: n7
+    label: pAF23-derived CloN7 expression attempt
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: host
+    predicate: was_used_in
+    object: assay
+    notes: Four constructs were tested; FigureIII.4 shows pAF21 at1.5-3.0mM IPTG,
+      not all preparations.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.92-94; printed pagination is ten lower.
+  - subject: parent
+    predicate: was_pcr_template_for
+    object: paf27
+    notes: pGEM-T/pAF26 then NcoI/BglII into pQE60. Literal310-nt amplicon retains
+      the95-aa core but replaces stop by Arg. Forward20841..20864 and reverse21150..21124
+      differ from printed endpoints. Full fusion sequence is unverified. Primers GAATTACGCGCCATGGTAAGTGGG
+      and CTGTTGCAGATCTGGCCTCGGCAGCGG.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.52-55,66,92-93; printed pagination is ten lower.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent literal-primer reconstruction, not full fusion sequencing.
+  - subject: paf27
+    predicate: was_expression_construct_for
+    object: c1
+    notes: Separate engineered preparation, not the native UniProt reference.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.92-93; printed pagination is ten lower.
+  - subject: cloN1
+    predicate: is_native_reference_for
+    object: c1
+    notes: Reference only; tag and primer-dependent changes are not assigned the native
+      accession.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHC1
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry 68, sequence 1, taxon149682; retrieved2026-10-05.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF pp.55,66; printed pagination is ten lower.
+  - subject: c1
+    predicate: has_reported_outcome_in
+    object: assay
+    notes: Expected10-kDa overexpression not detected; source says not shown. This
+      does not establish native absence or inactivity.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.93-94; printed pagination is ten lower.
+  - subject: parent
+    predicate: was_pcr_template_for
+    object: paf21
+    notes: pLitmus28/pAF17 then NcoI/BglII into pQE60. Literal1092-nt amplicon predicts
+      Arg2Gly in the native-length core and stop replacement by Arg; not a sequenced
+      experimental protein. Primers AGGCGCAACCCATGGGGACATCAGGT and CTGTGGGCTGAGATCTAAGTCCATCG.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.52-55,66,92-93; printed pagination is ten lower.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent literal-primer reconstruction, not full fusion sequencing.
+  - subject: paf21
+    predicate: was_expression_construct_for
+    object: c2
+    notes: Separate engineered preparation, not the native UniProt reference.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.92-93; printed pagination is ten lower.
+  - subject: cloN2
+    predicate: is_native_reference_for
+    object: c2
+    notes: Reference only; tag and primer-dependent changes are not assigned the native
+      accession.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHC0
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry 71, sequence 1, taxon149682; retrieved2026-10-05.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF pp.55,66; printed pagination is ten lower.
+  - subject: c2
+    predicate: has_reported_outcome_in
+    object: assay
+    notes: Source-assigned38.1-kDa band; insoluble under tested conditions and not
+      cleanly purified. No activity assay established.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.93-94; printed pagination is ten lower.
+  - subject: parent
+    predicate: was_pcr_template_for
+    object: paf20
+    notes: pLitmus28/pAF19 then BamHI/PstI into pRSETB. Literal1094-nt amplicon changes
+      the native-start region; forward span21137..21163 differs from the printed start21136.
+      Full vector-fusion sequence is unverified. Primers CATAGGCGCAACGGATCCGACATCAGG
+      and CTGTGGGCTGCAGTCAAAGTCCATCG.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.52-55,66,92-93; printed pagination is ten lower.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent literal-primer reconstruction, not full fusion sequencing.
+  - subject: paf20
+    predicate: was_expression_construct_for
+    object: n2
+    notes: Separate engineered preparation, not the native UniProt reference.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.92-93; printed pagination is ten lower.
+  - subject: cloN2
+    predicate: is_native_reference_for
+    object: n2
+    notes: Reference only; tag and primer-dependent changes are not assigned the native
+      accession.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHC0
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry 71, sequence 1, taxon149682; retrieved2026-10-05.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF pp.55,66; printed pagination is ten lower.
+  - subject: n2
+    predicate: has_reported_outcome_in
+    object: assay
+    notes: CloN2 detected only with pAF21 in the reported comparison; no successful
+      pAF20 purification is established.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.93-94; printed pagination is ten lower.
+  - subject: parent
+    predicate: was_pcr_template_for
+    object: paf23
+    notes: pLitmus28/pAF22 then PstI/HindIII into pRSETB. Literal861-nt amplicon alters
+      the native-start region; forward span27014..27040 differs from printed27013..27040.
+      The fusion is not unmodified native278-aa CloN7. Primers GGACCAACTGAGCCTGCAGATGACAAA
+      and CGACAAGAAGCTTTATGCGGGACGTG.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.52-55,66,92-93; printed pagination is ten lower.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent literal-primer reconstruction, not full fusion sequencing.
+  - subject: paf23
+    predicate: was_expression_construct_for
+    object: n7
+    notes: Separate engineered preparation, not the native UniProt reference.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.92-93; printed pagination is ten lower.
+  - subject: cloN7
+    predicate: is_native_reference_for
+    object: n7
+    notes: Reference only; tag and primer-dependent changes are not assigned the native
+      accession.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB5
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry 51, sequence 1, taxon149682; retrieved2026-10-05.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF pp.55,66; printed pagination is ten lower.
+  - subject: n7
+    predicate: has_reported_outcome_in
+    object: assay
+    notes: Expected34.4-kDa overexpression not detected; source says not shown. No
+      purified CloN7 measurement follows.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.93-94; printed pagination is ten lower.
+  - subject: assay
+    predicate: has_interpretation_limit
+    object: limits
+    notes: Changes to IPTG, temperature and other hosts did not improve the reported
+      results. FigureIII.4 is a whole-expression comparison, not a purity, solubility
+      or kinetic panel by itself. No native-protein abundance, universal inactivity
+      or stable CloN complex is inferred.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF pp.93-94; printed pagination is ten lower.
+curation_history:
+- timestamp: '2026-10-05T04:01:54Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add clorobiocin-clon-recombinant-constructs-and-expression-limits; preserve
+    native, construct, assay and inference limits (#568).
+  llm_assisted: true

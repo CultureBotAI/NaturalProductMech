@@ -1,0 +1,168 @@
+record_id: CHEBI:3907
+standard_inchi_key: WTIJXIZOODAMJT-DHFGXMAYSA-N
+graph:
+  graph_id: coumermycin-a1-couo-native-identity-and-precursor-evidence
+  scope: BIOSYNTHESIS
+  description: 'Exact native CouO identity and abstract-limited 2005 precursor chemistry.
+    Author-agent review #556. Native identity, engineered preparations and measured
+    or inferred outcomes remain distinct; these precursor/surrogate studies do not
+    demonstrate synthesis of mature coumermycin A1.'
+  nodes:
+  - node_id: cluster
+    label: Deposited coumermycin A1 biosynthetic cluster
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000833
+  - node_id: gene
+    label: Native couO locus from S. rishiriensis DSM 40489
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: native
+    label: Deposited native CouO sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8T9
+  - node_id: prep2005
+    label: Pacholec 2005 recombinant CouO preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: monoamide
+    label: CouL-derived unglycosylated monoamide precursor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: bisamide
+    label: CouL-derived unglycosylated bis-amide precursor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: reaction
+    label: Abstract-reported CouO precursor C-methylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: products
+    label: Reported mono- and di-C-methylated precursors
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: earlier
+    label: Reported nonacceptance of earlier pathway intermediates
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: order
+    label: Source-supported methylation before CouM glycosylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: contains
+    object: gene
+    notes: The owner links MIBiG BGC0000833.4 and AF235050.4. couO lies at 20892..21584(+)
+      with a 693-nt CDS including its stop; the native source is S. rishiriensis DSM
+      40489, taxon 68264.
+    evidence:
+    - reference: https://mibig.secondarymetabolites.org/go/BGC0000833.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Owner cluster association.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: DATABASE_ASSERTION
+      notes: CDS and source qualifiers.
+  - subject: gene
+    predicate: encodes_native_protein
+    object: native
+    notes: CDS-aware table-11 translation matches AAG29793.1 and all 230 residues
+      of Q9F8T9. AF235050.3 has the same CDS/protein at 20888..21580(+); the coordinate
+      shift is not a protein substitution. Native sequence identity does not identify
+      a full mutant plasmid or experimental aliquot.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current native CDS.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Historical native CDS.
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8T9
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 60, sequence 1; annotation 2026-06-10, retrieved 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent comparison of both CDS translations and UniProt.
+  - subject: native
+    predicate: is_database_reference_for_studied_enzyme
+    object: prep2005
+    notes: UniProt links the function to Pacholec 2005. The primary abstract reports
+      expression and purification from E. coli, but the full paper and exact construct
+      sequence were not obtained. Neither the 2017 lysate protocol nor the structural
+      preparation is substituted for it.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8T9
+      evidence_type: DATABASE_ASSERTION
+      notes: Function annotation and PubMed 16274243.
+    - reference: DOI:10.1021/bi051599o
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: prep2005
+    predicate: catalyzes_reported_methylation
+    object: reaction
+    notes: The abstract reports SAM-dependent methylation adjacent to the phenolic
+      hydroxyl on the aminocoumarin scaffold. It does not provide assay loading, full
+      constructs or numerical kinetic conditions here.
+    evidence:
+    - reference: DOI:10.1021/bi051599o
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: monoamide
+    predicate: is_reported_acceptor_for
+    object: reaction
+    notes: The abstract identifies the monoamide made during CouL ligation as a CouO
+      acceptor. This is not free aminocoumarin, the 2017 benzamide surrogate or mature
+      glycosylated coumermycin A1.
+    evidence:
+    - reference: DOI:10.1021/bi051599o
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: bisamide
+    predicate: is_reported_acceptor_for
+    object: reaction
+    notes: CouO also accepts the CouL bis-amide formed from two aminocoumarins and
+      a dicarboxypyrrole. The abstract does not establish a unique microscopic methylation
+      sequence or the kinetic equivalence of both sites.
+    evidence:
+    - reference: DOI:10.1021/bi051599o
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: reaction
+    predicate: forms_reported_precursors
+    object: products
+    notes: Mono- and di-C-methylation are reported before glycosylation. This does
+      not establish a mature-antibiotic titer or resolve the positional limits already
+      recorded for the separate CouL experiments.
+    evidence:
+    - reference: DOI:10.1021/bi051599o
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+      snippet: mono- and di-C-methylation
+  - subject: prep2005
+    predicate: has_reported_negative_substrate_results
+    object: earlier
+    notes: Neither CouO nor NovO is reported to act on NovH-tethered tyrosyl-derived
+      S-pantetheinyl intermediates or subsequently released free aminocoumarin. No
+      detection limit or quantitative absence is supplied in the abstract.
+    evidence:
+    - reference: DOI:10.1021/bi051599o
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: reaction
+    predicate: precedes_reported_glycosylation
+    object: order
+    notes: The source places CouO C-methylation before CouM O-glycosylation. This
+      is the reported pathway interpretation, not directly measured native-cell flux
+      or a universal order for every accepted analogue.
+    evidence:
+    - reference: DOI:10.1021/bi051599o
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+curation_history:
+- timestamp: '2026-10-04T19:54:52Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add coumermycin-a1-couo-native-identity-and-precursor-evidence with bounded
+    primary CouO evidence and review #556 limits.'
+  llm_assisted: true

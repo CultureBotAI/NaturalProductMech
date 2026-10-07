@@ -1,0 +1,148 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novjk-reported-assembly-and-sec-interpretation-limits
+  scope: BIOSYNTHESIS
+  description: 'Source-reported J2K2 assembly and three directly inspected concentration-labeled
+    SEC traces. Review #562. The cathomycin/BGC0000834 owner retains its unspecified
+    sugar stereocentre and SEEDED status. Precursor and recombinant protein evidence
+    does not resolve that stereocentre or establish an exact-key merge with fully
+    specified novobiocin. Main-paper evidence is abstract-only; the official four-page
+    supplement and native deposits were inspected directly.'
+  nodes:
+  - node_id: sample
+    label: NovJ/NovK sample used for supporting gel-filtration traces
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: sec
+    label: Analytical gel filtration of NovJ/NovK samples
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: high
+    label: Trace labeled [J], [K] = 155 uM
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: middle
+    label: Trace labeled [J], [K] = 22.5 uM
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: low
+    label: Trace labeled [J], [K] = 2.5 uM
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: reported
+    label: Separately reported J2K2 assembly assignment
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Limits of independent assembly inference
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  edges:
+  - subject: sample
+    predicate: was_analyzed_by
+    object: sec
+    notes: Supporting Figures 1-3 plot analytical gel-filtration absorbance against
+      retention volume. The four SI pages do not identify a complete sample sequence,
+      unique tag combination, buffer, column or mass-calibration method for these
+      traces.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Official four-page supporting information; all pages read as text and
+        visually. pp.1-2, all three captions and plots.
+  - subject: sample
+    predicate: has_study_level_assembly_context
+    object: reported
+    notes: The main abstract separately reports purification as a J2K2 heterotetramer.
+      This does not identify every SEC peak or establish that the individual SI constructs
+      are the same assayed preparation.
+    evidence:
+    - reference: DOI:10.1021/bi051297m
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pacholec et al. 2005 primary abstract, PMID 16171397. Source-reported
+        assembly, not a reanalysis of SEC plots. Main article methods/results were
+        not obtained; the four-page SI was inspected separately.
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Official four-page supporting information; all pages read as text and
+        visually. pp.1-4, limited sample/preparation context.
+  - subject: sec
+    predicate: has_concentration_labeled_trace
+    object: high
+    notes: Figure 1 labels both [J] and [K] as 155 uM, not total tetramer concentration.
+      The plot has early and later absorbance peaks; the red pseudo-Gaussian overlay
+      fits the later peak rather than the entire trace. No exact peak area or fitted
+      retention volume is extracted from the raster.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Official four-page supporting information; all pages read as text and
+        visually. p.1, Supporting Figure 1, visually inspected.
+  - subject: high
+    predicate: constrains_assembly_interpretation
+    object: limits
+    notes: The panels use different plotting scales and provide no fit parameter table,
+      uncertainty or replicate information. These plots alone do not establish a binding
+      constant, unique molecular mass, monomer-versus-aggregate assignment or native
+      in-cell stoichiometry.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Official four-page supporting information; all pages read as text and
+        visually. pp.1-2, scope of displayed analytical SEC data.
+  - subject: sec
+    predicate: has_concentration_labeled_trace
+    object: middle
+    notes: Figure 2 labels both [J] and [K] as 22.5 uM, not total tetramer concentration.
+      The plot has early and later absorbance peaks; the red pseudo-Gaussian overlay
+      fits the later peak rather than the entire trace. No exact peak area or fitted
+      retention volume is extracted from the raster.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Official four-page supporting information; all pages read as text and
+        visually. p.2, Supporting Figure 2, visually inspected.
+  - subject: middle
+    predicate: constrains_assembly_interpretation
+    object: limits
+    notes: The panels use different plotting scales and provide no fit parameter table,
+      uncertainty or replicate information. These plots alone do not establish a binding
+      constant, unique molecular mass, monomer-versus-aggregate assignment or native
+      in-cell stoichiometry.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Official four-page supporting information; all pages read as text and
+        visually. pp.1-2, scope of displayed analytical SEC data.
+  - subject: sec
+    predicate: has_concentration_labeled_trace
+    object: low
+    notes: Figure 3 labels both [J] and [K] as 2.5 uM, not total tetramer concentration.
+      The plot has early and later absorbance peaks; the red pseudo-Gaussian overlay
+      fits the later peak rather than the entire trace. No exact peak area or fitted
+      retention volume is extracted from the raster.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Official four-page supporting information; all pages read as text and
+        visually. p.2, Supporting Figure 3, visually inspected.
+  - subject: low
+    predicate: constrains_assembly_interpretation
+    object: limits
+    notes: The panels use different plotting scales and provide no fit parameter table,
+      uncertainty or replicate information. These plots alone do not establish a binding
+      constant, unique molecular mass, monomer-versus-aggregate assignment or native
+      in-cell stoichiometry.
+    evidence:
+    - reference: DOI:10.1021/bi051297m.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Official four-page supporting information; all pages read as text and
+        visually. pp.1-2, scope of displayed analytical SEC data.
+curation_history:
+- timestamp: '2026-10-04T23:33:05Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cathomycin-novjk-reported-assembly-and-sec-interpretation-limits with
+    bounded NovJ/NovK evidence and #562 review findings.'
+  llm_assisted: true

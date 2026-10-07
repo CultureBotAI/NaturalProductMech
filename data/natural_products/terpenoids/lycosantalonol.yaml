@@ -64,6 +64,519 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: lycosantalonol-cpt2-2015-assay-and-transgenic-comparison
+  scope: BIOSYNTHESIS
+  nodes:
+  - node_id: cpt2_reference
+    label: Current tomato CPT2 native sequence example
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:K7WQ45
+  - node_id: cpt2_preparation
+    label: Study recombinant CPT2 preparation lacking the first 51 residues
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+  - node_id: ipp
+    label: Assayed isopentenyl diphosphate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: zzfpp
+    label: Assayed Z,Z-farnesyl diphosphate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: Recombinant CPT2 radiolabeled substrate-condensation assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: nnpp
+    label: Source-assigned nerylneryl diphosphate product
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: cpt2_construct
+    label: CPT2 gene in the study 35S overexpression construct
+    node_type: GENE
+    grounding_status: REVIEW_NEEDED
+  - node_id: transgenic
+    label: Selected CPT2-overexpressing tomato plants
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: wild_type
+    label: Non-transformed tomato comparator
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: comparison
+    label: Petiolule-extract GC-MS comparison
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: lycosantalonol
+    label: Source-assigned lycosantalonol in transgenic petiolules
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cpt2_reference
+    predicate: is_native_sequence_example_for
+    object: cpt2_preparation
+    notes: The full native reference is not the truncated, affinity-purified preparation.
+      Spliced CDS translations from JX943884.1/AFW98426.1 and KC807995.1/AGK82801.1
+      independently equal the 314-residue UniProt sequence. Nucleotide source qualifiers
+      establish species but not cultivar. The study describes deletion of residues1-51,
+      not UniProt's predicted transit-peptide boundary1-61; exact insert, tag and
+      experimental stock sequence remain unverified.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/K7WQ45
+      evidence_type: DATABASE_ASSERTION
+      notes: K7WQ45, reviewed entry51/sequence1, 314 residues; annotation2026-09-02.
+        Species Solanum lycopersicum, taxon4081. Current reference, not the complete
+        historical experimental construct or MP1 allele.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/JX943884.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Complete spliced-CDS/table1 translation equals GenPept and UniProt; reference
+        equivalence does not establish historical preparation identity.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KC807995.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent genomic CPT2 reference encodes AGK82801.1; complete CDS within
+        a partial genomic locus.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: CURATOR_INFERENCE
+      notes: Retained full main paper, main figures, tables and S2 mass-spectrum figure
+        inspected; other SI assets unread. Methods page5; deliberately selected gene-matched
+        example only.
+      retrieved_on: '2026-10-06'
+  - subject: cpt2_preparation
+    predicate: was_tested_as_catalyst_in
+    object: assay
+    notes: The recombinant protein was produced in E. coli and purified by nickel
+      affinity. This is an in-vitro substrate-condensation experiment, not direct
+      synthesis of lycosantalonol by CPT2 or a native plant multi-enzyme complex.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained full main paper, main figures, tables and S2 mass-spectrum figure
+        inspected; other SI assets unread. Methods page5; results page9 and Table2
+        page10.
+      retrieved_on: '2026-10-06'
+  - subject: ipp
+    predicate: was_substrate_in
+    object: assay
+    notes: Radiolabeled IPP was used with zzFPP for the reported kinetic assessment.
+      No binding constant, native cellular rate or exact-isomer yield is inferred.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained full main paper, main figures, tables and S2 mass-spectrum figure
+        inspected; other SI assets unread. Methods page5; results page9 and Table2
+        page10.
+      retrieved_on: '2026-10-06'
+  - subject: zzfpp
+    predicate: was_cosubstrate_in
+    object: assay
+    notes: The tested acceptor is Z,Z-farnesyl diphosphate, not E,E-farnesyl diphosphate.
+      This supports the last condensation attributed to NNPP synthesis, not all earlier
+      substrate preferences described from previous studies.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained full main paper, main figures, tables and S2 mass-spectrum figure
+        inspected; other SI assets unread. Methods page5; results page9 and Table2
+        page10.
+      retrieved_on: '2026-10-06'
+  - subject: assay
+    predicate: supported_source_assigned_formation_of
+    object: nnpp
+    notes: The authors assign the zzFPP-plus-IPP step to NNPP formation. The reported
+      readout hydrolyzes diphosphate groups and counts extracted radiolabel; this
+      kinetic assay alone is not independent structural or stereochemical proof. No
+      direct CPT2-to-lycosantalonol catalytic edge is asserted.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained full main paper, main figures, tables and S2 mass-spectrum figure
+        inspected; other SI assets unread. Methods page5; results page9 and Table2
+        page10.
+      retrieved_on: '2026-10-06'
+  - subject: cpt2_reference
+    predicate: is_gene_product_example_for
+    object: cpt2_construct
+    notes: The selected full-length native protein exemplifies the named CPT2 gene
+      product. It is not an identifier for the gene construct, promoter, insertion
+      site or cultivar-specific allele. Transgenic plants are explicitly MP1 in the
+      study; that does not establish a cultivar for the native sequence deposit.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/K7WQ45
+      evidence_type: DATABASE_ASSERTION
+      notes: K7WQ45, reviewed entry51/sequence1, 314 residues; annotation2026-09-02.
+        Species Solanum lycopersicum, taxon4081. Current reference, not the complete
+        historical experimental construct or MP1 allele.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: CURATOR_INFERENCE
+      notes: Retained full main paper, main figures, tables and S2 mass-spectrum figure
+        inspected; other SI assets unread. Transgenic-plant methods page4.
+      retrieved_on: '2026-10-06'
+  - subject: cpt2_construct
+    predicate: was_used_for_overexpression_in
+    object: transgenic
+    notes: The study uses first-generation 35S-CPT2 transgenic tomato plants. Three
+      plants selected for high leaflet lycosantalene were examined by petiolule GC-MS;
+      they are selected individuals, not an unbiased yield estimate for all lines
+      or evidence that all plants accumulate the product.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained full main paper, main figures, tables and S2 mass-spectrum figure
+        inspected; other SI assets unread. Methods page4; results pages8-9 and Figure4B-D.
+      retrieved_on: '2026-10-06'
+      snippet: three individual transgenic tomato lines
+  - subject: transgenic
+    predicate: was_profiled_in
+    object: comparison
+    notes: Hexane extracts of whole petiolules from all three selected plants had
+      source-assigned lycosantalonol peaks. Figure4 displays selected-ion traces and
+      a standard comparison. In S2, peak4 from chromatogramD has a dominant m/z69
+      signal rather than the dominant m/z109 in B, C and standardE; the cause of that
+      relative-pattern difference is unresolved. The source's three-plant assignment
+      is retained, not independently confirmed for each plant or used as exact stereochemical
+      proof. The tissue-ratio experiment in Table1 measured lycosantalene, not lycosantalonol.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained full main paper, main figures, tables and S2 mass-spectrum figure
+        inspected; other SI assets unread. Methods pages4-5; results pages8-9 and
+        Figure4B-E.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1371/journal.pone.0119302.s002
+      evidence_type: CURATOR_INFERENCE
+      notes: Complete official supplementary TIFF and enlarged peak4 panels visually
+        inspected. Relative spectral-pattern discrepancy not assigned to contamination,
+        coelution, annotation error or another cause.
+      retrieved_on: '2026-10-06'
+  - subject: wild_type
+    predicate: was_profiled_in
+    object: comparison
+    notes: The study did not detect lycosantalonol in non-transformed samples with
+      the reported methods. This is bounded non-detection, not a demonstrated absence
+      of natural synthesis or of undetected downstream derivatives.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained full main paper, main figures, tables and S2 mass-spectrum figure
+        inspected; other SI assets unread. Results pages8-9, Figure4A and discussion
+        pages10-11.
+      retrieved_on: '2026-10-06'
+  - subject: comparison
+    predicate: supports_cpt2_associated_detection_of
+    object: lycosantalonol
+    notes: CPT2 overexpression is associated with detection of source-assigned lycosantalonol
+      in the engineered context. This does not establish CPT2 as its direct final-step
+      catalyst, a unique rate-limiting step, an exact stereochemical assignment to
+      this owner, or native wild-type production. TPS21 and CYP71BN1 chemistry is
+      described partly from earlier work whose full evidence was not inspected; those
+      reactions are not added here.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: CURATOR_INFERENCE
+      notes: Retained full main paper, main figures, tables and S2 mass-spectrum figure
+        inspected; other SI assets unread. Results pages8-9, Figure4 and discussion
+        pages10-11.
+      retrieved_on: '2026-10-06'
+  description: CPT2 evidence from a recombinant precursor-condensation assay and an
+    engineered tomato comparison, kept distinct from native sequence identity and
+    wild-type occurrence. K7WQ45 is a deliberate current native example, not an exact
+    assay-stock assignment. No TPS21/CYP71BN1 reaction, physical complex, exact final-product
+    stereochemistry or producer-grade upgrade is asserted. SEEDED status and source-owned
+    classifications remain unchanged; this is not full-record sign-off.
+- graph_id: lycosantalonol-2015-transcript-context
+  scope: BIOSYNTHESIS
+  nodes:
+  - node_id: cpt2_reference
+    label: Current tomato CPT2 native protein example
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:K7WQ45
+  - node_id: cpt2_gene
+    label: Study CPT2 gene assayed by transcript measurement
+    node_type: GENE
+    grounding_status: REVIEW_NEEDED
+  - node_id: tps21_reference
+    label: Current tomato TPS21 native protein example
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:R9R6P6
+  - node_id: tps21_gene
+    label: Study TPS21 gene assayed by transcript measurement
+    node_type: GENE
+    grounding_status: REVIEW_NEEDED
+  - node_id: cyp71bn1_reference
+    label: Current tomato CYP71BN1 native protein example
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:K4CI56
+  - node_id: cyp71bn1_gene
+    label: Study CYP71BN1 gene assayed by transcript measurement
+    node_type: GENE
+    grounding_status: REVIEW_NEEDED
+  - node_id: tissue_comparison
+    label: Study tissue and developmental-stage qRT-PCR comparison
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: fraction_comparison
+    label: Study whole-petiolule and trichome-fraction qRT-PCR comparison
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: transcript_pattern
+    label: Reported overlapping petiolule transcript distributions
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: pathway_context
+    label: Source-discussed lycosantalonol biosynthesis context
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cpt2_reference
+    predicate: is_gene_product_example_for
+    object: cpt2_gene
+    notes: Deliberately selected species-matched native example, not the historical
+      tissue allele. Complete spliced CDS translation equals AGK82801.1 and the 314-residue
+      UniProt sequence. The S1 qRT-PCR primer pair has one correctly oriented exact
+      match at spliced-CDS positions54..261, 1-based inclusive, among the11 annotated
+      CDSs of KC807995.1. This bounded match is not genome-wide primer specificity,
+      full experimental transcript sequencing or a measurement of protein abundance.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/K7WQ45
+      evidence_type: DATABASE_ASSERTION
+      notes: Solanum lycopersicum taxon4081; reviewed entry51/sequence1, 314 residues;
+        last annotation2026-09-02. Native reference only.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KC807995.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Complete spliced-CDS/table1 translation independently equals GenPept
+        and UniProt; genomic source qualifiers establish species but not cultivar.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1371/journal.pone.0119302.s006
+      evidence_type: CURATOR_INFERENCE
+      notes: Official one-page S1 table visually read; forward/reverse primer rows
+        checked verbatim and compared with spliced reference CDSs. No assay-stock
+        identity inferred.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: CURATOR_INFERENCE
+      notes: Retained complete main paper and Figures2-3 visually inspected; S1 primer
+        table and S2 figure inspected, other supplementary assets unread. Gene-named
+        qRT-PCR methods page4 and results pages6-7.
+      retrieved_on: '2026-10-06'
+  - subject: tps21_reference
+    predicate: is_gene_product_example_for
+    object: tps21_gene
+    notes: Deliberately selected species-matched native example, not the historical
+      tissue allele. Complete spliced CDS translation equals AGK82800.1 and the 792-residue
+      UniProt sequence. The S1 qRT-PCR primer pair has one correctly oriented exact
+      match at spliced-CDS positions1454..1560, 1-based inclusive, among the11 annotated
+      CDSs of KC807995.1. This bounded match is not genome-wide primer specificity,
+      full experimental transcript sequencing or a measurement of protein abundance.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/R9R6P6
+      evidence_type: DATABASE_ASSERTION
+      notes: Solanum lycopersicum taxon4081; unreviewed entry53/sequence1, 792 residues;
+        last annotation2026-06-10. Native reference only.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KC807995.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Complete spliced-CDS/table1 translation independently equals GenPept
+        and UniProt; genomic source qualifiers establish species but not cultivar.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1371/journal.pone.0119302.s006
+      evidence_type: CURATOR_INFERENCE
+      notes: Official one-page S1 table visually read; forward/reverse primer rows
+        checked verbatim and compared with spliced reference CDSs. No assay-stock
+        identity inferred.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: CURATOR_INFERENCE
+      notes: Retained complete main paper and Figures2-3 visually inspected; S1 primer
+        table and S2 figure inspected, other supplementary assets unread. Gene-named
+        qRT-PCR methods page4 and results pages6-7.
+      retrieved_on: '2026-10-06'
+  - subject: cyp71bn1_reference
+    predicate: is_gene_product_example_for
+    object: cyp71bn1_gene
+    notes: Deliberately selected species-matched native example, not the historical
+      tissue allele. Complete spliced CDS translation equals AGK82807.1 and the 506-residue
+      UniProt sequence. The S1 qRT-PCR primer pair has one correctly oriented exact
+      match at spliced-CDS positions752..909, 1-based inclusive, among the11 annotated
+      CDSs of KC807995.1. This bounded match is not genome-wide primer specificity,
+      full experimental transcript sequencing or a measurement of protein abundance.
+      K4CI56 is an unreviewed reference with Heinz1706 source metadata and generic
+      Cytochrome P450-1/LOC101251011 annotation; exact CDS and primer correspondence,
+      not the generic name, supports the CYP71BN1 example. No MP1 stock assignment.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/K4CI56
+      evidence_type: DATABASE_ASSERTION
+      notes: Solanum lycopersicum taxon4081; unreviewed entry71/sequence1, 506 residues;
+        last annotation2026-09-02. Native reference only.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KC807995.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Complete spliced-CDS/table1 translation independently equals GenPept
+        and UniProt; genomic source qualifiers establish species but not cultivar.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1371/journal.pone.0119302.s006
+      evidence_type: CURATOR_INFERENCE
+      notes: Official one-page S1 table visually read; forward/reverse primer rows
+        checked verbatim and compared with spliced reference CDSs. No assay-stock
+        identity inferred.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: CURATOR_INFERENCE
+      notes: Retained complete main paper and Figures2-3 visually inspected; S1 primer
+        table and S2 figure inspected, other supplementary assets unread. Gene-named
+        qRT-PCR methods page4 and results pages6-7.
+      retrieved_on: '2026-10-06'
+  - subject: cpt2_gene
+    predicate: had_transcripts_measured_in
+    object: tissue_comparison
+    notes: qRT-PCR measured RNA across the study's tissue and developmental-stage
+      panel. Methods describe EF-1a normalization and a standard-curve approach for
+      cross-gene comparison; Figure2 has three biological replicates and three technical
+      replicates. This does not identify a historical full-length allele or measure
+      the corresponding protein, catalytic flux or cell-specific localization.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained complete main paper and Figures2-3 visually inspected; S1 primer
+        table and S2 figure inspected, other supplementary assets unread. Methods
+        page4; results page6 and Figure2.
+      retrieved_on: '2026-10-06'
+  - subject: cpt2_gene
+    predicate: had_transcripts_measured_in
+    object: fraction_comparison
+    notes: RNA was compared between whole petiolules, trichome-depleted petiolules
+      and isolated trichomes. Figure3 has four biological replicates with three technical
+      replicates each. These tissue fractions are not single-cell measurements, proof
+      of fraction purity or direct evidence of a protein's location.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained complete main paper and Figures2-3 visually inspected; S1 primer
+        table and S2 figure inspected, other supplementary assets unread. Fraction
+        preparation pages3-4; results pages6-7 and Figure3.
+      retrieved_on: '2026-10-06'
+  - subject: tps21_gene
+    predicate: had_transcripts_measured_in
+    object: tissue_comparison
+    notes: qRT-PCR measured RNA across the study's tissue and developmental-stage
+      panel. Methods describe EF-1a normalization and a standard-curve approach for
+      cross-gene comparison; Figure2 has three biological replicates and three technical
+      replicates. This does not identify a historical full-length allele or measure
+      the corresponding protein, catalytic flux or cell-specific localization.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained complete main paper and Figures2-3 visually inspected; S1 primer
+        table and S2 figure inspected, other supplementary assets unread. Methods
+        page4; results page6 and Figure2.
+      retrieved_on: '2026-10-06'
+  - subject: tps21_gene
+    predicate: had_transcripts_measured_in
+    object: fraction_comparison
+    notes: RNA was compared between whole petiolules, trichome-depleted petiolules
+      and isolated trichomes. Figure3 has four biological replicates with three technical
+      replicates each. These tissue fractions are not single-cell measurements, proof
+      of fraction purity or direct evidence of a protein's location.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained complete main paper and Figures2-3 visually inspected; S1 primer
+        table and S2 figure inspected, other supplementary assets unread. Fraction
+        preparation pages3-4; results pages6-7 and Figure3.
+      retrieved_on: '2026-10-06'
+  - subject: cyp71bn1_gene
+    predicate: had_transcripts_measured_in
+    object: tissue_comparison
+    notes: qRT-PCR measured RNA across the study's tissue and developmental-stage
+      panel. Methods describe EF-1a normalization and a standard-curve approach for
+      cross-gene comparison; Figure2 has three biological replicates and three technical
+      replicates. This does not identify a historical full-length allele or measure
+      the corresponding protein, catalytic flux or cell-specific localization.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained complete main paper and Figures2-3 visually inspected; S1 primer
+        table and S2 figure inspected, other supplementary assets unread. Methods
+        page4; results page6 and Figure2.
+      retrieved_on: '2026-10-06'
+  - subject: cyp71bn1_gene
+    predicate: had_transcripts_measured_in
+    object: fraction_comparison
+    notes: RNA was compared between whole petiolules, trichome-depleted petiolules
+      and isolated trichomes. Figure3 has four biological replicates with three technical
+      replicates each. These tissue fractions are not single-cell measurements, proof
+      of fraction purity or direct evidence of a protein's location.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained complete main paper and Figures2-3 visually inspected; S1 primer
+        table and S2 figure inspected, other supplementary assets unread. Fraction
+        preparation pages3-4; results pages6-7 and Figure3.
+      retrieved_on: '2026-10-06'
+  - subject: tissue_comparison
+    predicate: supports_reported_transcript_pattern
+    object: transcript_pattern
+    notes: The authors report the highest transcript levels for all three genes in
+      young petiolules within the examined panel. TPS21 is broadly expressed across
+      several tissues, unlike the more pronounced CPT2/CYP71BN1 petiolule pattern.
+      Figure2 error bars overlap for some comparisons; no new significance test or
+      exclusive tissue expression is asserted.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained complete main paper and Figures2-3 visually inspected; S1 primer
+        table and S2 figure inspected, other supplementary assets unread. Results
+        page6 and Figure2; source interpretation, not re-estimated bar values.
+      retrieved_on: '2026-10-06'
+  - subject: fraction_comparison
+    predicate: supports_reported_transcript_pattern
+    object: transcript_pattern
+    notes: Normalized transcript levels are higher in trichome-depleted petiolules
+      than in whole petiolules and lower in isolated trichomes. This supports the
+      source's predominantly non-trichome transcript interpretation, not an absence
+      from every trichome cell, protein localization, or evidence that one of the
+      three genes regulates another.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained complete main paper and Figures2-3 visually inspected; S1 primer
+        table and S2 figure inspected, other supplementary assets unread. Results
+        pages6-7 and Figure3.
+      retrieved_on: '2026-10-06'
+      snippet: mostly in non-trichome cells
+  - subject: transcript_pattern
+    predicate: provides_correlative_expression_context_for
+    object: pathway_context
+    notes: The transcript distributions provide context for the lycosantalonol pathway
+      discussed in this paper. They do not establish direct TPS21/CYP71BN1 reactions,
+      coordinated protein abundance, a physical complex, wild-type product detection,
+      unique rate limitation or the owner's exact stereochemistry. This graph does
+      not borrow reaction claims from earlier papers whose full evidence remains uninspected.
+      The separate CPT2 intervention graph retains the engineered-product comparison;
+      no cross-graph node edge is asserted.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0119302
+      evidence_type: CURATOR_INFERENCE
+      notes: Retained complete main paper and Figures2-3 visually inspected; S1 primer
+        table and S2 figure inspected, other supplementary assets unread. Results
+        pages6-11 and discussion pages11-13.
+      retrieved_on: '2026-10-06'
+  description: Transcript-level context for CPT2, TPS21 and CYP71BN1 in the lycosantalonol
+    study, with native protein examples explicitly distinct from gene assays and historical
+    alleles. Adds TPS21 and CYP71BN1 reference examples without asserting their reaction
+    chemistry from incompletely inspected earlier work. Tissue-level RNA distributions
+    are not protein abundance, single-cell localization, direct regulation or a physical
+    complex. No source-grade, origin, stereochemistry or SEEDED-status upgrade; not
+    full-record sign-off.
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -73,3 +586,39 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-06T22:54:56Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a separate CPT2 BIOSYNTHESIS graph, 11 nodes and 10 individually
+    cited edges, from retained DOI:10.1371/journal.pone.0119302 main text, figures
+    and tables. K7WQ45 is a deliberate current native sequence example, verified against
+    two independently deposited complete spliced CDSs, not a historical assay-stock
+    or MP1 allele assignment. Truncated recombinant preparation and 35S gene construct
+    remain REVIEW_NEEDED without identifiers. Precursor condensation and transgenic
+    petiolule detection are separate observations; no direct CPT2-to-lycosantalonol
+    catalysis, unique rate limitation, native wild-type production or exact owner
+    stereochemistry inferred. Five-word snippet verified with the source quote-budget
+    audit. S2 mass-spectrum figure inspected; peak4 chromatogramD has a different
+    dominant-ion pattern from B, C and standardE, with cause unresolved and source
+    assignments not independently confirmed for every plant. Other SI assets remain
+    unread, and TPS21/CYP71BN1 reactions from earlier incompletely inspected papers
+    are not added. Preserved all source fields, computed classification, SOURCE_ASSERTION/CLUSTER_UNSTATED
+    grades, SEEDED status, incomplete stereo and prior history. No full-record sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-06T23:35:24Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the separate 2015 transcript-context graph, 10 nodes and 12 individually
+    DOI-cited edges. TPS21 R9R6P6 and CYP71BN1 K4CI56 are deliberate current native
+    protein examples, with CPT2 K7WQ45 retained as context. Complete spliced-CDS translations
+    equal GenPept and UniProt; all three S1 qRT-PCR primer pairs map to their expected
+    CDSs among the 11 annotated KC807995.1 CDSs. This bounded reference check does
+    not prove genome-wide primer specificity, historical alleles or the MP1 cultivar.
+    K4CI56's Heinz1706 source is explicit. Main Figures2-3 and S1 table support transcript
+    measurements, not protein abundance, single-cell localization, direct gene regulation,
+    physical assembly or TPS21/CYP71BN1 reaction chemistry from incompletely inspected
+    earlier papers. Four-word verbatim snippet; source quote-budget audit passed.
+    Preserved the prior CPT2 assay/intervention graph exactly, all source fields,
+    evidence grades, computed classification, SEEDED status, incomplete stereo and
+    prior history. No origin or producer upgrade and no full-record sign-off.
+  llm_assisted: true

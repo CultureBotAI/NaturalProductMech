@@ -1,0 +1,147 @@
+record_id: naturalproductmech:mibig-e29f83c77b
+standard_inchi_key: LULQRLKBANNSOX-AFCHNXSNSA-N
+graph:
+  graph_id: phenalinolactone-a-plao1-genetics-and-inferred-function
+  scope: BIOSYNTHESIS
+  description: PlaO1 evidence in Streptomyces sp. Tu6071 from the Duerr 2005 thesis.
+    Native protein identity is separate from the mutant and rescue constructs; culture
+    phenotypes are distinct from inferred chemistry. Cultures were grown in NL111V
+    at 28 C; analytical harvests were after 6-7 days.
+  nodes:
+  - node_id: plao1
+    label: Native PlaO1 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:ABB69741.1
+  - node_id: mutation
+    label: Internal plaO1 deletion in Tu6071-derived 24.4.3
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: production
+    label: Detectable phenalinolactone A and D production
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: products
+    label: PL CD6 and PL CD7 accumulation
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: rescue
+    label: pSET-plaO1 genomic-fragment complementation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: function
+    label: Proposed oxidative contribution to gamma-butyrolactone formation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: feeding
+    label: PL CD1 feeding to delta-plaO1 cultures
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: mutation
+    predicate: inactivates_encoding_gene_of
+    object: plao1
+    notes: 'Double-crossover 24.4.3 has an internal 264-bp PstI deletion, distinguished
+      from its single-crossover parent by colony PCR. Results 3.4.3 says in-frame;
+      methods 5.9.3 says frameshift. Native sites 264 bp apart support in-frame; exact
+      mutant junction is unverified. Curator comparison: appendix page 127 has C at
+      16420 versus deposited T (GTG versus ATG initiator). Code 11 initiator-Met gives
+      identical complete protein, not DNA. GenPept/GenBank/MIBiG and translated thesis
+      proteins agree. UniProt mapping failed; no homolog substituted.'
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.4.3.1, 5.9.3 and 5.12.4; printed pages 57-58, 110, 113-114;
+        Figure 34.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABB69741.1
+      evidence_type: DATABASE_ASSERTION
+      notes: 288 aa; DQ230532.1 complement(15554..16420). GenPept identifies the named
+        native protein from taxon 355249.
+      retrieved_on: '2026-10-03'
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator thesis/DQ230532.1/GenPept/MIBiG comparison; nucleotide versus
+        protein agreement detailed on edge.
+  - subject: mutation
+    predicate: abolishes_detectable
+    object: production
+    notes: 'Mutant HPLC/ESI-MS extracts lacked wild-type phenalinolactones. Different
+      metabolites appeared at 235 nm but poorly at 280 nm: not abolition of all secondary
+      metabolism.'
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.4.3.2 and 3.4.3.4; printed pages 59-62; Tables 6-7, Figures
+        35-37.
+  - subject: mutation
+    predicate: causes_accumulation_of
+    object: products
+    notes: HR-ESI-MS/NMR identify C23 terpene CD6 (m/z 373 [M-H]-) with a C-14 beta,gamma-unsaturated
+      alpha-ketoacid side chain, no gamma-butyrolactone; CD7 (m/z 371 [M-H]-) has
+      a C-3 ketone instead of alcohol. Table 7 formulas are deprotonated ions, not
+      neutral molecules. Neither is A.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.4.3.2 and 3.4.3.4; printed pages 59-62; Tables 6-7, Figures
+        35-37.
+  - subject: rescue
+    predicate: supplies_wild_type_encoding_gene_for
+    object: plao1
+    notes: ermE*-driven pSET-plaO1 carries a genomic fragment. Curator mapping places
+      24c_F/24c_R changes outside PlaO1 but includes partial plaP6/plaT1. The native
+      accession does not denote the deleted mutant as full-length active enzyme.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 5.11.2 and 5.12.4.2; printed pages 111, 114.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: DATABASE_ASSERTION
+      notes: DQ230532.1 provides the native target CDS and neighboring gene coordinates.
+      retrieved_on: '2026-10-03'
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator section 5.12 primer/DQ230532.1 comparison: changes outside CDS,
+        partial neighboring genes included; not separate rescue-plasmid sequencing.'
+  - subject: rescue
+    predicate: restores_detectable
+    object: production
+    notes: 'All three complemented-conjugant cultures recovered A/D by HPLC/MS: genetic
+      support, not a purified-enzyme reaction.'
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.4.3.3; printed page 60.
+      snippet: die Produktion der Wildtypderivate
+  - subject: plao1
+    predicate: is_proposed_to_catalyze
+    object: function
+    notes: Mutant and precursor structures support lactone biosynthesis. Genetic/isotope
+      evidence suggests C-16 hydroxylation/rearrangement, not purified PlaO1 turnover.
+      No demonstrated cyclopropanone intermediate, enzyme-specific closure, measured
+      cofactor requirement or proven sequence is asserted.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: CURATOR_INFERENCE
+      notes: Sections 3.4.3.4-3.4.3.5 and 4.3(B,D); printed pages 61-63, 77-78, 81-83.
+  - subject: feeding
+    predicate: restores_detectable
+    object: production
+    notes: 'Whole-cell feeding: 1 mg CD1/20 ml mutant culture after 28 h growth yielded
+      A/D, methylated A-2/D-2 and CD1-2 after 63 h. This bypass supports CD1 biosynthetic
+      competence, not PlaO1 turnover or isolated PlaM1 activity. Methods specify medium-only
+      control; its outcome is not reported here as a separate negative.'
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.4.3.6 and Figure 39, printed pages 63-64; feeding methods section
+        5.6.3, printed page 99.
+curation_history:
+- timestamp: '2026-10-04T02:16:47Z'
+  curator: codex
+  action: GRAPH_COMPONENT_MIGRATED
+  changes: Lossless migration of graph phenalinolactone-a-plao1-genetics-and-inferred-function
+    from data/natural_products/unclassified/phenalinolactone-a.yaml at aa0e38c4ac899ca5534b4ce02318c019fc44db29.
+    Prior claim curation history remains on the owning record; graph content and evidence
+    are unchanged.
+  llm_assisted: true

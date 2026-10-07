@@ -124,6 +124,681 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000270, BGC0001072.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+causal_graphs:
+- graph_id: simocyclinone-d8-simreg1-native-genetics
+  scope: BIOSYNTHESIS
+  description: 'SimReg1 genetics in S. antibioticus Tu6040: insertional disruption,
+    text-reported complementation and wild-type extra-copy production. The source''s
+    unresolved construct and figure discrepancies are retained (review #534). No change
+    to the owner''s incomplete stereochemistry or open shared-structure discussion.'
+  nodes:
+  - node_id: simreg1
+    label: Native SimReg1 regulatory protein
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9AMH3
+  - node_id: gene
+    label: Native simReg1 locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: mutant
+    label: Tu6040 simReg1::hyg insertion mutant
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: loss
+    label: Simocyclinones and precursors not detected
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: rescue
+    label: Reported mutant carrying pSSimR1-1
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: restored
+    label: Text-reported wild-type-like production
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: extra
+    label: Wild type carrying pSSimR1-1
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: increase
+    label: Reported 2.5-fold simocyclinone production
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: gene
+    predicate: encodes
+    object: simreg1
+    notes: Exact native sequence grounding; no engineered allele is assigned the canonical
+      protein accession.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAK06808.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native S. antibioticus Tue6040 simReg1, AF324838.2:69523..70278(+), AAK06808.1,
+        251 aa; GTG start. This is the native parent, not a deposited sequence of
+        an engineered expression construct.
+    - reference: https://www.uniprot.org/uniprotkb/Q9AMH3
+      evidence_type: DATABASE_ASSERTION
+      notes: Active unreviewed Q9AMH3; simReg1 gene and EMBL AF324838/AAK06808.1 cross-reference.
+        Taxon 1890; entry version 130, sequence version 1; inspected 2026-10-04. Protein
+        existence remains predicted in this entry. Its automatic RegX3 name does not
+        establish RegX3 physiology.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Native CDS, GenPept, UniProt and BGC0001072.5 protein sequences agree
+        exactly; CDS-aware table-11 DNA translations agree. This is a protein-level
+        comparison, not a demonstrated identity of every base of the loci or the alternate
+        AF322256.1 cluster.
+  - subject: mutant
+    predicate: disrupts
+    object: gene
+    notes: The hyg cassette was inserted at the unique BsaAI site within simReg1 carried
+      on a reported 4.3-kb BamHI fragment, then transferred through pKC1139 and double
+      crossover selection (39 C for 3 days, subsequent loss of apramycin resistance).
+      This is an insertion, not a clean whole-gene deletion. Southern signals are
+      reported as 4.3 kb in wild type and 6.3 kb in mutant. Results name a KpnI probe
+      from pKCEsimR1; Figure 4 caption instead names a 1.4-kb SmaI probe. Native AF324838.2
+      BamHI reconstruction spans 4576 bp between 0-based cuts 67163 and 71739, with
+      one internal BsaAI cut at 70167. This discrepancy is not silently corrected
+      or treated as a sequenced mutant/plasmid.
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods, results and Figure 4.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: BamHI/BsaAI native-locus reconstruction; not an observed construct sequence.
+  - subject: mutant
+    predicate: has_assay_phenotype
+    object: loss
+    notes: 'Native S. antibioticus Tu6040 production assay: TSB preculture for 2 days
+      at 30 C, 5 mL into 100 mL NL5 for 5 days at 30 C; ethyl-acetate extraction and
+      methanol reconstitution, HPLC/TLC analysis (methods specify HPLC-MS). NL5 includes
+      glycerol 25 g/L and L-glutamine 5.84 g/L, pH 7.3. Antibiotic amounts were normalized
+      to dry biomass; the methods state at least three independent production experiments.
+      These results concern source-assigned simocyclinones/precursors, not a separately
+      quantified yield of chemically pure D8 or all possible culture conditions. Growth
+      and morphology were reported similar to wild type. No detection is not a quantified
+      zero or proof of an isolated catalytic step.'
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results and Figure 5a.
+      snippet: no simocyclinone and its precursors
+  - subject: rescue
+    predicate: reportedly_carries_intact_copy_of
+    object: gene
+    notes: Table 1 describes mutant plus pSSimR1-1, containing native-promoter simReg1
+      in integrative pSET152. Methods derive it via a 2.3-kb BamHI segment and a reported
+      1.4-kb SmaI segment. Native-locus SmaI cuts at 0-based 68877/70373 span 1496
+      bp and include full simReg1 plus 476 bp of simD2, not a second complete simD2
+      CDS. This reconstruction does not establish the exact cloning junctions, functional
+      neighbor rescue or the experimental plasmid sequence.
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods and Table 1.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Native SmaI interval and CDS overlap, not a sequenced rescue construct.
+  - subject: rescue
+    predicate: reportedly_restores
+    object: restored
+    notes: 'Native S. antibioticus Tu6040 production assay: TSB preculture for 2 days
+      at 30 C, 5 mL into 100 mL NL5 for 5 days at 30 C; ethyl-acetate extraction and
+      methanol reconstitution, HPLC/TLC analysis (methods specify HPLC-MS). NL5 includes
+      glycerol 25 g/L and L-glutamine 5.84 g/L, pH 7.3. Antibiotic amounts were normalized
+      to dry biomass; the methods state at least three independent production experiments.
+      These results concern source-assigned simocyclinones/precursors, not a separately
+      quantified yield of chemically pure D8 or all possible culture conditions. The
+      text reports mutant rescue comparable to wild type, but the same paragraph names
+      wild type as the recipient and cites Figure 5b, whose caption identifies wild
+      type versus wild type with an extra copy. Keep the text-reported rescue, not
+      an independently illustrated rescue comparison or universal exclusion of polar
+      effects. No matched empty-vector production control is shown in the inspected
+      article and supplements.'
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Complementation paragraph, Table 1 and conflicting Figure 5b caption.
+  - subject: extra
+    predicate: carries_additional_native_promoter_copy_of
+    object: gene
+    notes: Wild-type Tu6040 received integrative pSSimR1-1. This native-promoter extra-copy
+      experiment differs from the constitutive ermE reporter construct and from the
+      mutant complementation claim; the same rescue-fragment uncertainty applies.
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results and Figure 5b.
+  - subject: extra
+    predicate: increases_assayed_production_to
+    object: increase
+    notes: 'Native S. antibioticus Tu6040 production assay: TSB preculture for 2 days
+      at 30 C, 5 mL into 100 mL NL5 for 5 days at 30 C; ethyl-acetate extraction and
+      methanol reconstitution, HPLC/TLC analysis (methods specify HPLC-MS). NL5 includes
+      glycerol 25 g/L and L-glutamine 5.84 g/L, pH 7.3. Antibiotic amounts were normalized
+      to dry biomass; the methods state at least three independent production experiments.
+      These results concern source-assigned simocyclinones/precursors, not a separately
+      quantified yield of chemically pure D8 or all possible culture conditions. The
+      reported average is 2.5 times wild type; this is not a purified SimReg1 reaction
+      rate, a measured intracellular SimReg1 concentration or an independently quantified
+      effect of every sim cluster gene.'
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results, wild-type extra-copy experiment.
+      snippet: 2.5 times more simocyclinone
+- graph_id: simocyclinone-d8-simreg1-bounded-dna-binding
+  scope: BIOSYNTHESIS
+  description: 'His-SimReg1 DNA-shift assays and mixed-extract perturbation. Promoter-region
+    labels, reported fragment lengths and native-locus reconstructions remain distinct;
+    assay fragments are not grounded as whole genes or proteins. No pure-D8 binding,
+    SimR competition, physical protein complex or phosphorylation-independence claim
+    is made (review #534).'
+  nodes:
+  - node_id: simreg1
+    label: Native SimReg1 regulatory protein
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9AMH3
+  - node_id: his
+    label: Assayed codon-optimized His-SimReg1
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: pd4
+    label: PD4 simD4-region DNA
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pr1
+    label: PR1 simReg1-region DNA
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pd3
+    label: PD3 simD3-region DNA
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: px4
+    label: PX4 simX4-region DNA
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pr2ex
+    label: PR2Ex simR/simX-region DNA
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pa7
+    label: PA7 simA7-region DNA
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pex2
+    label: PEx2 fragment as labelled in the study
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: psr3
+    label: PSR3 simB7-upstream DNA
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: psex1
+    label: PSEx1 simX-region DNA
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: psr2
+    label: PSR2 simR-region DNA
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: d4_internal
+    label: Internal simD4 DNA negative control
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: extract
+    label: Simocyclinone-enriched culture extract
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: his
+    predicate: has_reported_native_parent
+    object: simreg1
+    notes: Synthetic simReg1s from pMA-simR1 was amplified with SSR1F/R, cloned NcoI/EcoRI
+      into pET21d as pETSR1c-15, and expressed in E. coli BL21(DE3)pLysS. His-resin
+      purification and SDS-PAGE appear in methods and supplement 2. Full engineered
+      DNA/protein sequence and tag junctions are not established here; canonical Q9AMH3
+      denotes only the native parent. The apparent band near 35 kDa is not an exact
+      mass/identity measurement or proof of absolute purity. Predicted REC 15-123
+      and DNA-binding 167-239 domains, three of six conserved PhoB residues and no
+      cluster kinase do not prove independence from phosphorylation or rule out an
+      external kinase.
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods, Figure 3 and supplement 2.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAK06808.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native S. antibioticus Tue6040 simReg1, AF324838.2:69523..70278(+), AAK06808.1,
+        251 aa; GTG start. This is the native parent, not a deposited sequence of
+        an engineered expression construct.
+    - reference: https://www.uniprot.org/uniprotkb/Q9AMH3
+      evidence_type: DATABASE_ASSERTION
+      notes: Active unreviewed Q9AMH3; simReg1 gene and EMBL AF324838/AAK06808.1 cross-reference.
+        Taxon 1890; entry version 130, sequence version 1; inspected 2026-10-04. Protein
+        existence remains predicted in this entry. Its automatic RegX3 name does not
+        establish RegX3 physiology.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Native CDS, GenPept, UniProt and BGC0001072.5 protein sequences agree
+        exactly; CDS-aware table-11 DNA translations agree. This is a protein-level
+        comparison, not a demonstrated identity of every base of the loci or the alternate
+        AF322256.1 cluster.
+  - subject: his
+    predicate: shifts_in_emsa
+    object: pd4
+    notes: EMSA with His-SimReg1, 50 ng DNA in 20 uL, 25 min at room temperature;
+      20 mM Tris-HCl pH 8, 1 mM each EDTA/DTT/MgCl2, 100 mM KCl and 10% glycerol,
+      4.5% native gel at 4 C, ethidium-bromide readout. Figure 6 tests 1.8 and 4.5
+      ug protein against a no-protein lane; not every fragment shifts equally at both
+      doses. This does not measure a footprint, Kd, transcriptional direction or native
+      enzyme activity. The methods report 513 bp. Literal Table 2 primers yield a
+      native coverage model of 516 bp (530 bp including unmatched 5-prime tails).
+      SR1D4F/R; native bases 70099..70614 include 180 bp simReg1 and 14 bp simD4.
+      This fragment differs from the GusA-reporter insert. Native-primer mappings
+      are curator reconstructions, not sequenced assay constructs or corrected source
+      values.
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods, Table 2 and Figure 6a.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer mapping against AF324838.2; exact fragment and tail boundaries
+        are not proven from gel mobility.
+  - subject: his
+    predicate: shifts_in_emsa
+    object: pr1
+    notes: EMSA with His-SimReg1, 50 ng DNA in 20 uL, 25 min at room temperature;
+      20 mM Tris-HCl pH 8, 1 mM each EDTA/DTT/MgCl2, 100 mM KCl and 10% glycerol,
+      4.5% native gel at 4 C, ethidium-bromide readout. Figure 6 tests 1.8 and 4.5
+      ug protein against a no-protein lane; not every fragment shifts equally at both
+      doses. This does not measure a footprint, Kd, transcriptional direction or native
+      enzyme activity. The methods report 490 bp. Literal Table 2 primers yield a
+      native coverage model of 487 bp (498 bp including unmatched 5-prime tails).
+      SD2R1F/R; native bases 69150..69636 include 204 bp simD2 and 114 bp simReg1.
+      Binding to this region alone does not establish activation versus repression
+      of its own gene. Native-primer mappings are curator reconstructions, not sequenced
+      assay constructs or corrected source values.
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods, Table 2 and Figure 6b.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer mapping against AF324838.2; exact fragment and tail boundaries
+        are not proven from gel mobility.
+  - subject: his
+    predicate: shifts_in_emsa
+    object: pd3
+    notes: EMSA with His-SimReg1, 50 ng DNA in 20 uL, 25 min at room temperature;
+      20 mM Tris-HCl pH 8, 1 mM each EDTA/DTT/MgCl2, 100 mM KCl and 10% glycerol,
+      4.5% native gel at 4 C, ethidium-bromide readout. Figure 6 tests 1.8 and 4.5
+      ug protein against a no-protein lane; not every fragment shifts equally at both
+      doses. This does not measure a footprint, Kd, transcriptional direction or native
+      enzyme activity. The methods report 300 bp. Literal Table 2 primers yield a
+      native coverage model of 367 bp (381 bp including unmatched 5-prime tails).
+      simX5D3F/R; native bases 61331..61697 overlap annotated simC8 and simD3. The
+      primer label is not evidence for a separate simX5-promoter assay. Native-primer
+      mappings are curator reconstructions, not sequenced assay constructs or corrected
+      source values.
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods, Table 2 and Figure 6c.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer mapping against AF324838.2; exact fragment and tail boundaries
+        are not proven from gel mobility.
+  - subject: his
+    predicate: shifts_in_emsa
+    object: px4
+    notes: EMSA with His-SimReg1, 50 ng DNA in 20 uL, 25 min at room temperature;
+      20 mM Tris-HCl pH 8, 1 mM each EDTA/DTT/MgCl2, 100 mM KCl and 10% glycerol,
+      4.5% native gel at 4 C, ethidium-bromide readout. Figure 6 tests 1.8 and 4.5
+      ug protein against a no-protein lane; not every fragment shifts equally at both
+      doses. This does not measure a footprint, Kd, transcriptional direction or native
+      enzyme activity. The methods report 350 bp. Literal Table 2 primers yield a
+      native coverage model of 406 bp (422 bp including unmatched 5-prime tails).
+      simEXX4F/R; native bases 59598..60003 overlap simEx and simX4. Native-primer
+      mappings are curator reconstructions, not sequenced assay constructs or corrected
+      source values.
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods, Table 2 and Figure 6d.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer mapping against AF324838.2; exact fragment and tail boundaries
+        are not proven from gel mobility.
+  - subject: his
+    predicate: shifts_in_emsa
+    object: pr2ex
+    notes: EMSA with His-SimReg1, 50 ng DNA in 20 uL, 25 min at room temperature;
+      20 mM Tris-HCl pH 8, 1 mM each EDTA/DTT/MgCl2, 100 mM KCl and 10% glycerol,
+      4.5% native gel at 4 C, ethidium-bromide readout. Figure 6 tests 1.8 and 4.5
+      ug protein against a no-protein lane; not every fragment shifts equally at both
+      doses. This does not measure a footprint, Kd, transcriptional direction or native
+      enzyme activity. The methods report 780 bp. Literal Table 2 primers yield a
+      native coverage model of 883 bp (902 bp including unmatched 5-prime tails).
+      SR2ExXF/R; native bases 57298..58180 contain the full annotated simReg2 CDS,
+      50 bp of simC5 and one base of simEx. The reported intergenic-region label must
+      not be mistaken for a fragment consisting only of intergenic DNA. Native-primer
+      mappings are curator reconstructions, not sequenced assay constructs or corrected
+      source values.
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods, Table 2 and Figure 6e.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer mapping against AF324838.2; exact fragment and tail boundaries
+        are not proven from gel mobility.
+  - subject: his
+    predicate: shifts_in_emsa
+    object: pa7
+    notes: EMSA with His-SimReg1, 50 ng DNA in 20 uL, 25 min at room temperature;
+      20 mM Tris-HCl pH 8, 1 mM each EDTA/DTT/MgCl2, 100 mM KCl and 10% glycerol,
+      4.5% native gel at 4 C, ethidium-bromide readout. Figure 6 tests 1.8 and 4.5
+      ug protein against a no-protein lane; not every fragment shifts equally at both
+      doses. This does not measure a footprint, Kd, transcriptional direction or native
+      enzyme activity. The methods report 300 bp. Literal Table 2 primers yield a
+      native coverage model of 356 bp (376 bp including unmatched 5-prime tails).
+      simA7F/R; native bases 41493..41848 include two bases of annotated simA7. Native-primer
+      mappings are curator reconstructions, not sequenced assay constructs or corrected
+      source values.
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods, Table 2 and Figure 6f.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer mapping against AF324838.2; exact fragment and tail boundaries
+        are not proven from gel mobility.
+  - subject: his
+    predicate: shifts_in_emsa
+    object: pex2
+    notes: EMSA with His-SimReg1, 50 ng DNA in 20 uL, 25 min at room temperature;
+      20 mM Tris-HCl pH 8, 1 mM each EDTA/DTT/MgCl2, 100 mM KCl and 10% glycerol,
+      4.5% native gel at 4 C, ethidium-bromide readout. Figure 6 tests 1.8 and 4.5
+      ug protein against a no-protein lane; not every fragment shifts equally at both
+      doses. This does not measure a footprint, Kd, transcriptional direction or native
+      enzyme activity. The methods report 550 bp. Literal PEx2F and PEx2R map at 12396..12409
+      and 12930..12943 on the same positive strand of AF324838.2. They do not define
+      a facing PCR pair as written. Retain Figure 6g's reported fragment label; exact
+      construct identity remains unresolved, and no primer is silently reverse-complemented
+      to repair it. Native-primer mappings are curator reconstructions, not sequenced
+      assay constructs or corrected source values.
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods, Table 2 and Figure 6g.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer mapping against AF324838.2; exact fragment and tail boundaries
+        are not proven from gel mobility.
+  - subject: his
+    predicate: shifts_in_emsa
+    object: psr3
+    notes: EMSA with His-SimReg1, 50 ng DNA in 20 uL, 25 min at room temperature;
+      20 mM Tris-HCl pH 8, 1 mM each EDTA/DTT/MgCl2, 100 mM KCl and 10% glycerol,
+      4.5% native gel at 4 C, ethidium-bromide readout. Figure 6 tests 1.8 and 4.5
+      ug protein against a no-protein lane; not every fragment shifts equally at both
+      doses. This does not measure a footprint, Kd, transcriptional direction or native
+      enzyme activity. The methods report 319 bp. Literal Table 2 primers yield a
+      native coverage model of 319 bp (325 bp including unmatched 5-prime tails).
+      PR3F/R; native bases 3908..4226 include 15 bp of simB7. The study proposes co-transcription
+      with simB5/B4/X5/X7/Reg3; this is not a separately tested simReg3 promoter or
+      an experimentally confirmed operon. Native-primer mappings are curator reconstructions,
+      not sequenced assay constructs or corrected source values.
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods, Table 2 and Figure 6h.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer mapping against AF324838.2; exact fragment and tail boundaries
+        are not proven from gel mobility.
+  - subject: his
+    predicate: shifts_in_emsa
+    object: psex1
+    notes: 'Figure 7b has seven lanes, although the caption describes four: PSR2 with
+      0/1.8 ug His-SimReg1, then PSEx1 with 0.9/1.8/0/3.6/4.5 ug. The assay uses the
+      methods'' EMSA conditions. Methods report a 280-bp PSEx1 amplicon; results instead
+      call a 69-bp region a fragment. Literal PEx1F/R map a 280-bp span at 58111..58390
+      containing 211 bp of annotated simEx (simX). This does not localize binding
+      to only 69 bp or prove overlap/competition with SimR operators.'
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods, Table 2, Figure 7 and its discordant caption.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal PEx1F/R native mapping; not an observed footprint.
+  - subject: his
+    predicate: no_shift_detected_in_emsa
+    object: psr2
+    notes: Figure 7b compares PSR2 without protein and with 1.8 ug His-SimReg1; do
+      not generalize this negative result to all concentrations or native regulation.
+      Methods report 300 bp; results describe a 67-bp upstream region. Literal PSR2F/R
+      define 303 native bp (57851..58153), including 233 bp of simReg2. These are
+      different descriptions, not a demonstrated 67-bp footprint.
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 7b and results.
+      snippet: No binding was identified
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: PSR2 literal-primer reconstruction.
+  - subject: his
+    predicate: no_shift_detected_in_emsa
+    object: d4_internal
+    notes: Supplement 3 shows no shifted internal-simD4 DNA band at 0, 0.9, 1.8 or
+      4.5 ug protein. This is the actual negative-control DNA, not an unspecified
+      random sequence. D4For/Rev map native bases 70651..70917, 267 bp wholly inside
+      simD4. Separate E. coli crude-extract controls are described as data not shown;
+      they were not independently inspected as gels.
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods, Table 2 and supplement 3.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Internal simD4 literal-primer reconstruction.
+  - subject: extract
+    predicate: abolishes_his_simreg1_emsa_shift_of
+    object: pr1
+    notes: At 5% and 10% final reaction volume, ethyl-acetate culture extract reconstituted
+      in methanol removed the PR1 shift. Figure 8a includes matched methanol-only
+      controls retaining the shift. Extract source is extra-copy Tu6040 cultured 72
+      hours; the paragraph alternates pSSimR1 and pSSimR1-1. The source reports roughly/more
+      than 95% combined simocyclinones, not pure D8. Supplement 1 has a major simB
+      peak and simA/C/D peaks; its caption gives SD8 retention at 24.7 min. UV peak
+      size is not a measured mass fraction. Loss of the gel shift does not establish
+      direct D8 binding, a ligand Kd or a uniquely identified active constituent.
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods, extract results, Figure 8a and supplement 1.
+      snippet: no shifted bands occurred
+  - subject: extract
+    predicate: abolishes_his_simreg1_emsa_shift_of
+    object: pa7
+    notes: Figure 8b shows loss of the PA7 shift with the same mixed extract at 5%
+      and 10% final volume. Only four lanes are displayed; unlike Figure 8a, this
+      panel does not show methanol-only lanes even though the text makes a general
+      solvent-control statement. The PR1 extract identity and ligand-attribution limitations
+      also apply; this is not pure-D8 feedback.
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 8b, extract results and supplement 1.
+- graph_id: simocyclinone-d8-simreg1-heterologous-promoter-reporter
+  scope: BIOSYNTHESIS
+  description: 'SimReg1-dependent activation of a simD4-region gusA reporter in S.
+    lividans 1326. Heterologous transcriptional reporter output is distinct from native
+    SimD4 protein abundance, ketoreductase activity and activation of every EMSA-positive
+    region (review #534).'
+  nodes:
+  - node_id: simreg1
+    label: Native SimReg1 regulatory protein
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9AMH3
+  - node_id: reg_plasmid
+    label: pUWLsimReg1 constitutive regulator construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: reporter_plasmid
+    label: pSimD4script promoter-gusA construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: with_reg
+    label: S. lividans 1326 with reporter and regulator
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: without_reg
+    label: S. lividans 1326 with reporter only
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: activity
+    label: Increased PD4-driven glucuronidase activity
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: controls
+    label: Promoterless pGUS strains with or without regulator
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: background
+    label: Low promoterless glucuronidase activity
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: reg_plasmid
+    predicate: is_reported_to_express
+    object: simreg1
+    notes: Native simReg1 PCR product was cloned HindIII/BamHI in pUWL-oriT under
+      constitutive ermE promoter control. Literal primers cover native bases 69486..70300
+      (815 bp; 832 with unmatched tails), including the complete native CDS. The source
+      calls it 0.8 kb. No His-tag or codon-optimized construct is assigned to this
+      reporter experiment; the whole experimental plasmid sequence is not established.
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Reporter-construction methods and Table 2.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAK06808.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native S. antibioticus Tue6040 simReg1, AF324838.2:69523..70278(+), AAK06808.1,
+        251 aa; GTG start. This is the native parent, not a deposited sequence of
+        an engineered expression construct.
+    - reference: https://www.uniprot.org/uniprotkb/Q9AMH3
+      evidence_type: DATABASE_ASSERTION
+      notes: Active unreviewed Q9AMH3; simReg1 gene and EMBL AF324838/AAK06808.1 cross-reference.
+        Taxon 1890; entry version 130, sequence version 1; inspected 2026-10-04. Protein
+        existence remains predicted in this entry. Its automatic RegX3 name does not
+        establish RegX3 physiology.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Native CDS, GenPept, UniProt and BGC0001072.5 protein sequences agree
+        exactly; CDS-aware table-11 DNA translations agree. This is a protein-level
+        comparison, not a demonstrated identity of every base of the loci or the alternate
+        AF322256.1 cluster.
+  - subject: with_reg
+    predicate: carries
+    object: reg_plasmid
+    notes: S. lividans 1326 is the heterologous reporter host, not the native Tu6040
+      simocyclinone producer. Transfer of the regulatory construct does not establish
+      heterologous synthesis of simocyclinone D8.
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 1, reporter results and Figure 9 strain 3.
+  - subject: with_reg
+    predicate: carries
+    object: reporter_plasmid
+    notes: The putative simD4 promoter fragment was cloned XbaI/KpnI upstream of gusA
+      in pGUS. The source reports 0.5 kb; literal reporter primers map native bases
+      70071..70570 (500 bp, 518 with unmatched tails), including 208 bp of simReg1.
+      This differs from the PD4 EMSA fragment and does not imply transfer of a complete
+      additional simReg1 gene.
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods, Table 2 and Figure 9.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal reporter-primer/native-locus reconstruction, not a sequenced
+        expression plasmid.
+  - subject: without_reg
+    predicate: carries
+    object: reporter_plasmid
+    notes: Reporter-only strain is the comparison for adding pUWLsimReg1; it is not
+      a matched pUWL empty-vector strain. The pGUS controls instead address promoterless
+      reporter background.
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 1 and Figure 9 strain 1.
+  - subject: with_reg
+    predicate: increases_reporter_readout_to
+    object: activity
+    notes: Relative to reporter-only S. lividans 1326, source-reported GusA activity
+      increases from 3.3 +/- 0.24 to 6.25 +/- 0.43 munits/mg (Figure 9 axis), approximately
+      1.9-fold. TSB preculture 2 days then 5 days at 30 C; lysates assayed with p-nitrophenyl-beta-D-glucuronide
+      at 37 C, absorbance 415 nm every minute for 20 minutes. Error type and reporter
+      replicate count are not specified here; do not transfer the production assay's
+      replicate count. This is a promoter-reporter readout, not direct native SimD4
+      enzyme activity, an RNA-polymerase interaction assay or a demonstration of activation
+      at every bound region.
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Reporter methods/results and Figure 9, including plotted units.
+      snippet: the activity was 6.25
+  - subject: controls
+    predicate: have_assay_phenotype
+    object: background
+    notes: Promoterless pGUS strains with and without pUWLsimReg1 show roughly 0.25
+      +/- 0.06 munits/mg in the same assay. These controls support promoter-dependent
+      reporter output, not the assertion that SimReg1 binds only simD4 or that all
+      host-mediated effects are excluded.
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Reporter results and Figure 9 strains 2 and 4.
+  - subject: controls
+    predicate: provides_promoterless_controls_for
+    object: activity
+    notes: Figure 9 compares promoterless pGUS strains, with and without pUWLsimReg1
+      (strains 2 and 4), to PD4-gusA reporter strains without and with regulator (strains
+      1 and 3). This edge records the experimental comparison linking background controls
+      to the reported activation readout; it is not a biochemical causal interaction
+      or a matched pUWL empty-vector control.
+    evidence:
+    - reference: DOI:10.1186/2191-0855-2-1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Reporter methods/results, Table 1 and Figure 9.
+causal_graph_refs:
+- simocyclinone-d8-simr-binding-and-footprints
+- simocyclinone-d8-simr-dna-length-and-proteolysis
+- simocyclinone-d8-simr-structural-contacts-and-states
+- simocyclinone-d8-simx-simex2-resistance-and-export
+- simocyclinone-d8-simc7-heterologous-genetics
+- simocyclinone-d8-simc7-ketoreduction-and-assay-limits
+- simocyclinone-d8-simc7-mutant-activities-and-cd-controls
+- simocyclinone-d8-siml-amide-ligation-and-substrate-scope
+- simocyclinone-d8-siml-recombinant-scar-and-surrogate-activity
+- simocyclinone-d8-simb3-insertion-genetics-and-sequence-limits
+- simocyclinone-d8-simc1b-ks-replacement-and-retained-production
+- simocyclinone-d8-simh-simy-identities-and-adenylation
+- simocyclinone-d8-simh-simy-association-and-stoichiometry-limits
+- simocyclinone-d8-simj1-crossover-genetics-and-feeding-limits
+- simocyclinone-d8-simj2-constructs-and-unexamined-production
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
   curator: seed_from_sources
@@ -133,3 +808,114 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-04T07:54:50Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added three SimReg1 graphs: 30 nodes and 27 cited edges with verified
+    snippets and exact native Q9AMH3 grounding. Kept #534 construct, rescue, primer,
+    mixed-extract and reporter limits; source-owned fields, shared-structure discussion
+    and SEEDED status unchanged.'
+  llm_assisted: true
+- timestamp: '2026-10-04T08:07:08Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Connected the promoterless-control pair to its reporter readout with a
+    cited experimental-comparison edge, addressing review #535. All three SimReg1
+    graphs are connected; now 30 nodes and 28 edges. Preserved all prior claims, qualifiers
+    and history.'
+  llm_assisted: true
+- timestamp: '2026-10-04T08:38:45Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added three SimR graph references covering binding/footprints, DNA-length/proteolysis
+    and structural contacts/states. Grounded native Q9AMH9 with +2 paper-residue offset;
+    preserved #536 construct, operator and chemical-identity limits. Existing SimReg1
+    graphs, source fields, shared-structure discussion and SEEDED status unchanged.'
+  llm_assisted: true
+- timestamp: '2026-10-04T09:18:10Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added SimX/SimEx2 resistance/export graph reference with native Q9AMH8,
+    Q93FA2 and G9VYV7 sequences, unresolved assayed SimX allele, bounded resistance
+    phenotypes and inferred export. Preserved review #537 limits, all six existing
+    graphs, source fields, shared-structure discussion and SEEDED status.'
+  llm_assisted: true
+- timestamp: '2026-10-04T10:00:59Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added two primary-backed SimC7 graphs: heterologous scar genetics and
+    complementation, plus purified tagged-protein reduction/oxidation. Grounded native
+    G9VYV4 without conflating the engineered protein; retained review #538 construct,
+    promoter, concentration, yield and physiological-substrate limits. Preserved all
+    seven older graphs, source fields, history and SEEDED status.'
+  llm_assisted: true
+- timestamp: '2026-10-04T10:40:26Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added the 2016 SimC7 mutant-activity and CD-control graph with six engineered
+    variants, native G9VYV4 parent, tagged comparator, nine-primer audit and individually
+    cited measurements. Retained review #539 uncertainty conflicts, residual activity
+    and limited CD interpretation. Preserved all nine earlier graphs, source fields,
+    history, incomplete stereochemistry and SEEDED status.'
+  llm_assisted: true
+- timestamp: '2026-10-04T11:17:15Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added two SimL/SimD5 protein graphs, grounding native Q9F5J5 through three
+    exact CDS translations while separating the 2005 recombinant preparations and
+    the later His8-tagged/thrombin-cleaved states. Preserved abstract-only limits,
+    literal primer/synonymous codon audit, cloning scar and surrogate-specific activity
+    (review #540). All ten previous graphs, source fields, history, incomplete stereochemistry
+    and SEEDED status remain unchanged.'
+  llm_assisted: true
+- timestamp: '2026-10-04T11:59:28Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added bounded native SimB3 insertion genetics with separately grounded
+    Q9AMH2 and Q93F99 deposit variants, the uncorrected primer discrepancy, source-assigned
+    HPLC phenotypes and inferred sugar-pathway role (review #541). All twelve prior
+    graphs, source fields, history, incomplete stereochemistry and SEEDED status remain
+    unchanged.'
+  llm_assisted: true
+- timestamp: '2026-10-04T12:33:35Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added native SimC1B G9VYV9 with bounded KS-region replacement, source/primer-site
+    discrepancy, genotyping and retained D8/D6 signal evidence (review #542). All
+    thirteen previous graphs, source fields, history, incomplete stereochemistry and
+    SEEDED status remain unchanged.'
+  llm_assisted: true
+- timestamp: '2026-10-04T13:15:08Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added SimH Q9F5J4 and SimY Q9F5J2 with alternate SimD6 Q9AMH5 identity
+    limits, bounded adenylation and association evidence (review #543). Native proteins,
+    recombinant preparations, assay readouts and proposed 2:2 complex remain distinct.
+    All fourteen earlier graphs, source-owned fields, prior history, SEEDED status
+    and unresolved stereochemistry are preserved.'
+  llm_assisted: true
+- timestamp: '2026-10-04T13:50:58Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added native SimJ1/SimD2 Q9F5J1 with bounded crossover genetics, methyl-aminocoumarin
+    feeding and shared double-crossover/revertant production-loss confound (review
+    #544). All sixteen previous graphs, source fields, prior history, SEEDED status
+    and unresolved stereochemistry remain unchanged; oxidation is explicit inference.'
+  llm_assisted: true
+- timestamp: '2026-10-04T14:38:10Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added native SimJ2/SimD4 Q9F5I9, bounded Galm single-crossover genotyping
+    and the later source-listed SimC6 construct (review #546). Preserved the 639/640-nt
+    frame discrepancy and explicitly unexamined metabolite production. All seventeen
+    earlier graphs, source-owned fields, prior history, SEEDED status and stereo limits
+    are unchanged.'
+  llm_assisted: true
+- timestamp: '2026-10-04T15:25:44Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Corrected the SimJ2 component clone-set label and strain-table citation
+    (review #547); source lists UG J2-7, UG J2-8 and UG J2-10. No new phenotype or
+    individual gel lane is inferred. All eighteen graph topologies and source-owned
+    fields are unchanged.'
+  llm_assisted: true

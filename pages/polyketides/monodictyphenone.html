@@ -24,6 +24,10 @@
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 </p>
+<details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/monodictyphenone.yaml">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
 <p>A member of the class of benzophenones in which one phenyl group is substituted at positions 2 and 6 by hydroxy groups while the other is substituted at positions 2, 4, and 6 by hydroxy, methyl, and carboxy groups, respectively. First obtained from the fungal strain Monodictys putredinis, isolated from the inner tissue of a marine green alga, it was subsequently obtained from the fungus Aspergillus nidulans.</p>
 <h2>Structure</h2>
 <div class="scroll"><table>
@@ -53,7 +57,7 @@ same claim.</p>
 </tr>
 </table></div>
 
-<h2>Occurrences <span class="tag">3</span></h2>
+<h2 id="occurrences">Occurrences <span class="tag">3</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
 <div class="scroll"><table>
@@ -75,7 +79,7 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 </tr>
 </table></div>
 
-<h2>Biosynthetic gene clusters <span class="tag">1</span></h2>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
 <div class="scroll"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
@@ -91,6 +95,60 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">MITE-asserted PhoJ ring-opening step yielding the exact monodictyphenone structure as a reported intermediate in phomoxanthone A biosynthesis. The native Diaporthe SYSU-MS4722 reference is grounded in NCBIProtein, not a UniParc ID relabeled as UniProtKB. This does not assign PhoJ to the owner&#39;s distinct Aspergillus/BGC0000101 source or change producer, cluster or occurrence evidence; not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>PhoJ native reference from Diaporthe SYSU-MS4722</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>MITE-reported PhoJ ring opening</td>
+  <td>MITE supplies the compound-specific functional assertion; sequence deposits establish identity only. The Diaporthe reference is not inferred to be the owner&#39;s Aspergillus nidulans FGSC A4 protein. No rates, assay conditions, active-site residues, cofactor state or physiological complex is claimed; no inaccessible primary data are adopted.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000158.json<br>https://www.ncbi.nlm.nih.gov/protein/UPG58739.1<br>https://www.ncbi.nlm.nih.gov/nuccore/OL450415.1<br>https://www.uniprot.org/uniparc/UPI00204975FE</td>
+</tr>
+<tr>
+  <td>MITE-encoded ring-opening substrate</td>
+  <td>is_database_reported_substrate_of</td>
+  <td>MITE-reported PhoJ ring opening</td>
+  <td>The node denotes the pinned MITE example substrate. It remains ungrounded; no external compound identifier, complete substrate stereochemistry or additional pathway step is inferred from the encoded ring system.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000158.json</td>
+</tr>
+<tr>
+  <td>MITE-reported PhoJ ring opening</td>
+  <td>has_database_reported_product</td>
+  <td>monodictyphenone</td>
+  <td>Pinned MITE product matches full owner InChIKey UMNWQJSVQOCNEM-UHFFFAOYSA-N and complete stereochemical status using the repository helper and RDKit 2026.03.5. MITE&#39;s description places it as a phomoxanthone A intermediate; no downstream transformation or final-product claim is added. The owner&#39;s BGC_CHARACTERIZED Aspergillus producer, CLUSTER_DEMONSTRATED BGC0000101/BN001308.1 and separate Monodictys occurrences remain unchanged.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000158.json</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Separate MITE-reported PhoL reduction consuming exact monodictyphenone as substrate. Native Diaporthe SYSU-MS4722 PhoL is sequence-grounded in NCBIProtein, not a UniParc accession relabeled as UniProtKB. This context preserves the prior PhoJ graph that forms the owner compound and does not transfer either reference to the distinct imported Aspergillus/BGC0000101 source. Functional evidence is database-level; no primary assay or full-record sign-off is claimed.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>PhoL native Diaporthe SYSU-MS4722 reference</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>MITE-reported PhoL net reduction</td>
+  <td>MITE supplies the compound-specific functional assertion. Its encoded net carboxyl-to-hydroxymethyl change is not an independently inspected purified-enzyme assay or proof of PhoL-alone sufficiency and intervening reaction steps. CDD/UniParc NAD(P)-binding and SDR annotations do not establish a measured cofactor, binding site or occupancy. Native sequence identity is not historical assay-stock or construct identity.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000157.json<br>https://www.ncbi.nlm.nih.gov/protein/UPG58741.1<br>https://www.ncbi.nlm.nih.gov/nuccore/OL450417.1<br>https://www.uniprot.org/uniparc/UPI00205DA260</td>
+</tr>
+<tr>
+  <td>monodictyphenone</td>
+  <td>is_database_example_substrate_of</td>
+  <td>MITE-reported PhoL net reduction</td>
+  <td>Pinned exact-structure screening matches the MITE substrate to full owner key UMNWQJSVQOCNEM-UHFFFAOYSA-N with complete stereochemistry. This context consumes the owner, whereas its preserved PhoJ graph forms it. No source producer-grade transfer, Monodictys occurrence upgrade or claim that this Diaporthe reference is an Aspergillus nidulans FGSC A4 protein is made.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000157.json</td>
+</tr>
+<tr>
+  <td>MITE-reported PhoL net reduction</td>
+  <td>has_database_example_product</td>
+  <td>MITE-encoded reduced hydroxymethyl intermediate</td>
+  <td>The encoded hydroxymethyl product remains externally ungrounded and source-marked intermediate. No exact named product ID, phomoxanthone A final-product claim, downstream sequence or cofactor stoichiometry is inferred. The original PhoJ graph, Aspergillus producer/BGC0000101, occurrence evidence and SEEDED status remain unchanged; retired BGC0003093 is not restored.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000157.json</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

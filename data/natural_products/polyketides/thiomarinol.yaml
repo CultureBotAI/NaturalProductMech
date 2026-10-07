@@ -67,6 +67,1014 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: thiomarinol-tmluh-native-deletion-phenotype
+  scope: BIOSYNTHESIS
+  description: Native tmlU genetics with source-assigned products and bounded loss
+    of detection. Partial biosynthesis curation, not full-record sign-off. The owner
+    retains unspecified stereochemistry and SEEDED status; source-assigned products
+    remain ungrounded. Native sequence references do not identify complete engineered
+    preparations or deletion alleles.
+  nodes:
+  - node_id: cluster
+    label: Thiomarinol locus on native pTML1
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0001115
+  - node_id: TmlU
+    label: Native deposited TmlU sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:F8J3D9
+  - node_id: deletion
+    label: Reported tmlU in-frame deletion allele
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: mutant
+    label: SANK 73390 tmlU deletion culture
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: marinolic
+    label: Source-assigned marinolic acid
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: pyrrothines
+    label: Source-assigned acylpyrrothine products
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: thiomarinol
+    label: Source-assigned thiomarinol product
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: role
+    label: TmlU contribution to pathway convergence
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: TmlU
+    notes: FN689524.1 CDS 76680..78644(-), 1-based inclusive; CBK62739.1, 654 aa.
+      CDS-aware table-11 translation exactly matches the deposited protein and selected
+      UniProt sequence. Deposit source is Pseudoalteromonas sp. SANK 73390, taxon
+      747457, plasmid pTML1.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Pinned native sequence and source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/F8J3D9
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 43, sequence version 1; sequence 2011-09-21, annotation
+        2026-09-02; protein existence at protein level. Entry review is not complete
+        assay-preparation identification.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1
+      evidence_type: CURATOR_INFERENCE
+      notes: CDS-aware exact translation comparison with native UniProt sequence.
+      retrieved_on: '2026-10-06'
+  - subject: deletion
+    predicate: affects_coding_locus_of
+    object: TmlU
+    notes: Native accession anchors the affected gene, not a full protein present
+      in the deletion strain. Exact deletion endpoints and residual protein sequence
+      are not established here.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0018031
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher primary paper PDF pages 5,7-8 inspected.
+      retrieved_on: '2026-10-06'
+      snippet: in-frame deletion
+  - subject: deletion
+    predicate: was_introduced_in
+    object: mutant
+    notes: PCR flanks joined through PstI were cloned into pAKE604; transfer used
+      E. coli S17-1. Figure 3 calls the producer P. rava SANK 73390, while the text
+      and current deposit use Pseudoalteromonas sp.; no taxonomic rename or stock-sequence
+      equivalence is inferred.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0018031
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher primary paper PDF pages 4,7-8 inspected.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: retained_reported_production_of
+    object: marinolic
+    notes: Figure 3 shows culture-medium HPLC traces at 233 nm with source LCMS assignments.
+      No replicate count, uncertainty or detection limit is given there; absence of
+      a reported peak is not a universal or numerical zero-production assertion. Growth
+      methods specify marine medium at 23 C.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0018031
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher primary paper PDF pages 4-5,7-8 inspected.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: retained_reported_production_of
+    object: pyrrothines
+    notes: Figure 3 shows culture-medium HPLC traces at 233 nm with source LCMS assignments.
+      No replicate count, uncertainty or detection limit is given there; absence of
+      a reported peak is not a universal or numerical zero-production assertion. Growth
+      methods specify marine medium at 23 C.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0018031
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher primary paper PDF pages 4-5,7-8 inspected.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: lacked_detected_production_of
+    object: thiomarinol
+    notes: Figure 3 shows culture-medium HPLC traces at 233 nm with source LCMS assignments.
+      No replicate count, uncertainty or detection limit is given there; absence of
+      a reported peak is not a universal or numerical zero-production assertion. Growth
+      methods specify marine medium at 23 C.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0018031
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher primary paper PDF pages 4-5,7-8 inspected.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: supports_genetic_interpretation
+    object: role
+    notes: The deletion phenotype supports a contribution to joining the pathways,
+      not direct amide catalysis by isolated TmlU. No complementation result or full
+      exclusion of polarity is asserted for this experiment.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0018031
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher primary paper PDF pages 4-5 inspected.
+      retrieved_on: '2026-10-06'
+  - subject: TmlU
+    predicate: has_genetically_supported_role
+    object: role
+    notes: The 2011 direct-amide-synthetase proposal is narrowed by the later TmlU
+      CoA-ligase/HolE acyltransferase evidence. A genetic requirement alone does not
+      establish a catalytic step.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0018031
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher primary paper PDF pages 5,7 inspected.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1002/anie.201411667
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract inspected; complete 2015 paper, figures and supporting
+        methods not obtained. No detailed kinetic or preparation claim is based on
+        uninspected methods.
+      retrieved_on: '2026-10-06'
+- graph_id: thiomarinol-tmluh-bounded-tandem-biochemistry
+  scope: BIOSYNTHESIS
+  description: Primary-abstract-supported TmlU activation followed by HolE amidation,
+    not a physical complex. Detailed kinetic values and native-substrate reconstitution
+    remain unasserted. Partial biosynthesis curation, not full-record sign-off. The
+    owner retains unspecified stereochemistry and SEEDED status; source-assigned products
+    remain ungrounded. Native sequence references do not identify complete engineered
+    preparations or deletion alleles.
+  nodes:
+  - node_id: cluster
+    label: Thiomarinol locus on native pTML1
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0001115
+  - node_id: TmlU
+    label: Native deposited TmlU sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:F8J3D9
+  - node_id: HolE
+    label: Native deposited HolE sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:F8J3H2
+  - node_id: TmlU_prep
+    label: Study TmlU preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: HolE_prep
+    label: Study HolE preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: acid
+    label: Assayed pseudomonic acid substrate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: activation
+    label: Pseudomonic acid CoA activation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: thioester
+    label: Activated pseudomonic-acid thioester
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: holothin
+    label: Assayed holothin acceptor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: amidation
+    label: HolE-dependent amidation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: analogue
+    label: Pseudomonic-acid holothin hybrid analogue
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: TmlU
+    notes: FN689524.1 CDS 76680..78644(-), 1-based inclusive; CBK62739.1, 654 aa.
+      CDS-aware table-11 translation exactly matches the deposited protein and selected
+      UniProt sequence. Deposit source is Pseudoalteromonas sp. SANK 73390, taxon
+      747457, plasmid pTML1.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Pinned native sequence and source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/F8J3D9
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 43, sequence version 1; sequence 2011-09-21, annotation
+        2026-09-02; protein existence at protein level. Entry review is not complete
+        assay-preparation identification.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1
+      evidence_type: CURATOR_INFERENCE
+      notes: CDS-aware exact translation comparison with native UniProt sequence.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: HolE
+    notes: FN689524.1 CDS 92330..93214(+), 1-based inclusive; CBK62750.1, 294 aa.
+      CDS-aware table-11 translation exactly matches the deposited protein and selected
+      UniProt sequence. Deposit source is Pseudoalteromonas sp. SANK 73390, taxon
+      747457, plasmid pTML1.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Pinned native sequence and source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/F8J3H2
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 45, sequence version 1; sequence 2011-09-21, annotation
+        2026-09-02; protein existence at protein level. Entry review is not complete
+        assay-preparation identification.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1
+      evidence_type: CURATOR_INFERENCE
+      notes: CDS-aware exact translation comparison with native UniProt sequence.
+      retrieved_on: '2026-10-06'
+  - subject: TmlU
+    predicate: is_native_sequence_reference_for
+    object: TmlU_prep
+    notes: Gene-matched native reference only. Tags, insert sequence, host, culture,
+      purity and complete fusion identity were not verified from the inaccessible
+      2015 methods.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/F8J3D9
+      evidence_type: DATABASE_ASSERTION
+      notes: Native SANK 73390 reference with PMID 25726835 cross-reference.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1002/anie.201411667
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract inspected; complete 2015 paper, figures and supporting
+        methods not obtained. No detailed kinetic or preparation claim is based on
+        uninspected methods.
+      retrieved_on: '2026-10-06'
+  - subject: HolE
+    predicate: is_native_sequence_reference_for
+    object: HolE_prep
+    notes: Gene-matched native reference only. Tags, insert sequence, host, culture,
+      purity and complete fusion identity were not verified from the inaccessible
+      2015 methods.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/F8J3H2
+      evidence_type: DATABASE_ASSERTION
+      notes: Native SANK 73390 reference with PMID 25726835 cross-reference.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1002/anie.201411667
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract inspected; complete 2015 paper, figures and supporting
+        methods not obtained. No detailed kinetic or preparation claim is based on
+        uninspected methods.
+      retrieved_on: '2026-10-06'
+  - subject: acid
+    predicate: is_substrate_in
+    object: activation
+    notes: The abstract identifies pseudomonic acid, not the native marinolic acid
+      substrate. No exact congener-specific structure identifier is selected.
+    evidence:
+    - reference: DOI:10.1002/anie.201411667
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; complete 2015 paper, figures and supporting
+        methods not obtained. No detailed kinetic or preparation claim is based on
+        uninspected methods.
+      retrieved_on: '2026-10-06'
+  - subject: TmlU_prep
+    predicate: catalyzes
+    object: activation
+    notes: TmlU is supported as a CoA ligase, not a stand-alone amide synthetase.
+    evidence:
+    - reference: DOI:10.1002/anie.201411667
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; complete 2015 paper, figures and supporting
+        methods not obtained. No detailed kinetic or preparation claim is based on
+        uninspected methods.
+      retrieved_on: '2026-10-06'
+      snippet: CoA ligase
+  - subject: activation
+    predicate: forms
+    object: thioester
+    notes: Reported activation product; ATP/CoA stoichiometry and detailed kinetic
+      values are not supplied here.
+    evidence:
+    - reference: DOI:10.1002/anie.201411667
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; complete 2015 paper, figures and supporting
+        methods not obtained. No detailed kinetic or preparation claim is based on
+        uninspected methods.
+      retrieved_on: '2026-10-06'
+  - subject: thioester
+    predicate: is_acyl_donor_in
+    object: amidation
+    notes: Sequential activation and amidation do not establish physical enzyme association
+      or substrate channeling.
+    evidence:
+    - reference: DOI:10.1002/anie.201411667
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; complete 2015 paper, figures and supporting
+        methods not obtained. No detailed kinetic or preparation claim is based on
+        uninspected methods.
+      retrieved_on: '2026-10-06'
+  - subject: holothin
+    predicate: is_acceptor_in
+    object: amidation
+    notes: Holothin is the amine partner of the reported hybrid product, not a native-producer
+      abundance measurement.
+    evidence:
+    - reference: DOI:10.1002/anie.201411667
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; complete 2015 paper, figures and supporting
+        methods not obtained. No detailed kinetic or preparation claim is based on
+        uninspected methods.
+      retrieved_on: '2026-10-06'
+  - subject: HolE_prep
+    predicate: catalyzes
+    object: amidation
+    notes: Abstract-supported acyltransferase activity. Qualitative substrate breadth
+      is not a measured kinetic panel here.
+    evidence:
+    - reference: DOI:10.1002/anie.201411667
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; complete 2015 paper, figures and supporting
+        methods not obtained. No detailed kinetic or preparation claim is based on
+        uninspected methods.
+      retrieved_on: '2026-10-06'
+  - subject: amidation
+    predicate: forms_assayed_hybrid
+    object: analogue
+    notes: A pseudomonic-acid-derived hybrid is not exact-identity native thiomarinol.
+      No complete native marinolic-acid turnover experiment or mature-owner synthesis
+      is asserted.
+    evidence:
+    - reference: DOI:10.1002/anie.201411667
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; complete 2015 paper, figures and supporting
+        methods not obtained. No detailed kinetic or preparation claim is based on
+        uninspected methods.
+      retrieved_on: '2026-10-06'
+- graph_id: thiomarinol-tmluh-complementary-pathway-genetics-and-culture-rescue
+  scope: BIOSYNTHESIS
+  description: Separate TmpD/HolA genetic disruptions, cofermentation and culture
+    feeding. Predicted module intermediates and HolA dimerization are not asserted
+    as measured results. Native proteins use original GenPept accessions; deleted
+    UniProt entries are not selected as live examples. Partial biosynthesis curation,
+    not full-record sign-off. The owner retains unspecified stereochemistry and SEEDED
+    status; source-assigned products remain ungrounded. Native sequence references
+    do not identify complete engineered preparations or deletion alleles.
+  nodes:
+  - node_id: cluster
+    label: Thiomarinol locus on native pTML1
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0001115
+  - node_id: TmpD
+    label: Native deposited TmpD sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:CBK62733.1
+  - node_id: HolA
+    label: Native deposited HolA sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:CBK62746.1
+  - node_id: tmpD_insertion
+    label: tmpD internal-fragment suicide construct
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: holA_insertion
+    label: holA internal-fragment suicide construct
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: tmpD_mutant
+    label: SANK 73390 tmpD-disrupted culture
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: holA_mutant
+    label: SANK 73390 holA-disrupted culture
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: marinolic
+    label: Source-assigned marinolic acid
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: pyrrothines
+    label: Source-assigned pyrrothine-containing products
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: thiomarinol
+    label: Source-assigned thiomarinol product
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: cofermentation
+    label: Paired-mutant cofermentation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: marinolic_feeding
+    label: Marinolic-acid feeding of tmpD-disrupted culture
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: pseudomonic
+    label: Fed pseudomonic acid A
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: pseudomonic_feeding
+    label: Pseudomonic-acid-A feeding of tmpD-disrupted culture
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: analogues
+    label: Source-assigned novel pseudomonic-acid pyrrothine amides
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: TmpD
+    notes: FN689524.1 CDS 50878..70959(+), 1-based inclusive; 6693 aa. CDS-aware table-11
+      translation exactly matches CBK62733.1, WP_013933285.1 and archive UPI000211AE5B.
+      SANK 73390, taxon 747457, pTML1. RefSeq's generic SDR-family label is not a
+      complete functional description of this multidomain protein.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS and source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBK62733.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned protein record from the exact deposited locus.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/WP_013933285.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS/GenPept/RefSeq/UniParc sequence audit, not independent assay-preparation
+        identification.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/F8J3G5
+      evidence_type: DATABASE_ASSERTION
+      notes: 'Official record is inactive/deleted: not part of a reference proteome.
+        Not selected as a live UniProtKB example; no homolog substituted.'
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: HolA
+    notes: FN689524.1 CDS 85410..88778(+), 1-based inclusive; 1122 aa. CDS-aware table-11
+      translation exactly matches CBK62746.1, WP_013933298.1 and archive UPI00021172A6.
+      SANK 73390, taxon 747457, pTML1. HolA has an annotated possible non-Met start
+      at 85542..85544; the deposited 1122-aa reference is not a verified mature proteoform.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS and source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBK62746.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned protein record from the exact deposited locus.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/WP_013933298.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS/GenPept/RefSeq/UniParc sequence audit, not independent assay-preparation
+        identification.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/F8J3E3
+      evidence_type: DATABASE_ASSERTION
+      notes: 'Official record is inactive/deleted: not part of a reference proteome.
+        Not selected as a live UniProtKB example; no homolog substituted.'
+      retrieved_on: '2026-10-06'
+  - subject: tmpD_insertion
+    predicate: targets_coding_locus_of
+    object: TmpD
+    notes: An approximately 1-kb internal segment, reported tmpD positions 5182..6158
+      in KS-D2. This is internal-fragment suicide mutagenesis, not a reconstructed
+      complete coding deletion.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0018031
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher primary paper PDF pages 2,7 inspected.
+      retrieved_on: '2026-10-06'
+  - subject: holA_insertion
+    predicate: targets_coding_locus_of
+    object: HolA
+    notes: The methods call the fragment 480 bp but give positions 1509..1990, whose
+      inclusive span is 482 bp. Preserve the source discrepancy; exact vector junction
+      and allele sequence remain unverified.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0018031
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher primary paper PDF pages 7 inspected.
+      retrieved_on: '2026-10-06'
+  - subject: tmpD_insertion
+    predicate: was_introduced_in
+    object: tmpD_mutant
+    notes: pAKE604 suicide vector mobilized via E. coli S17-1 into SANK 73390; native
+      reference does not identify an intact protein in the mutant. Possible polar
+      effects remain unexcluded.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0018031
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher primary paper PDF pages 2,7 inspected.
+      retrieved_on: '2026-10-06'
+  - subject: holA_insertion
+    predicate: was_introduced_in
+    object: holA_mutant
+    notes: pAKE604 suicide vector mobilized via E. coli S17-1 into SANK 73390; distinct
+      from the tmlU in-frame deletion. The resulting mutants lacked yellow pigment;
+      no mature HolA sequence inferred.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0018031
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher primary paper PDF pages 5,7 inspected.
+      retrieved_on: '2026-10-06'
+  - subject: tmpD_mutant
+    predicate: retained_reported_production_of
+    object: pyrrothines
+    notes: Figure 3 culture-medium HPLC traces at 233 nm, with source LCMS assignments;
+      no numerical zero, detection limit, titers or replicate statistics inferred.
+      No direct purified-protein catalysis follows from this genetic phenotype.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0018031
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher primary paper PDF pages 2,4-5 inspected.
+      retrieved_on: '2026-10-06'
+  - subject: tmpD_mutant
+    predicate: lacked_detected_production_of
+    object: thiomarinol
+    notes: Figure 3 culture-medium HPLC traces at 233 nm, with source LCMS assignments;
+      no numerical zero, detection limit, titers or replicate statistics inferred.
+      No direct purified-protein catalysis follows from this genetic phenotype.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0018031
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher primary paper PDF pages 2,4-5 inspected.
+      retrieved_on: '2026-10-06'
+  - subject: holA_mutant
+    predicate: retained_reported_production_of
+    object: marinolic
+    notes: Figure 3 culture-medium HPLC traces at 233 nm, with source LCMS assignments;
+      no numerical zero, detection limit, titers or replicate statistics inferred.
+      No direct purified-protein catalysis follows from this genetic phenotype.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0018031
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher primary paper PDF pages 4-5 inspected.
+      retrieved_on: '2026-10-06'
+  - subject: holA_mutant
+    predicate: lacked_detected_production_of
+    object: thiomarinol
+    notes: Figure 3 culture-medium HPLC traces at 233 nm, with source LCMS assignments;
+      no numerical zero, detection limit, titers or replicate statistics inferred.
+      No direct purified-protein catalysis follows from this genetic phenotype.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0018031
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher primary paper PDF pages 4-5 inspected.
+      retrieved_on: '2026-10-06'
+  - subject: tmpD_mutant
+    predicate: participated_in
+    object: cofermentation
+    notes: The source uses delta-tmpD shorthand; methods describe the internal-fragment
+      suicide mutant. Co-culture is not a protein complex or a claim that both lesions
+      occur in one strain.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0018031
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher primary paper PDF pages 5,7 inspected.
+      retrieved_on: '2026-10-06'
+  - subject: holA_mutant
+    predicate: participated_in
+    object: cofermentation
+    notes: The complementary holA-disrupted culture participates separately. No cell-to-cell
+      transfer kinetics or transport protein identity is established.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0018031
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher primary paper PDF pages 5 inspected.
+      retrieved_on: '2026-10-06'
+  - subject: cofermentation
+    predicate: restored_reported_production_of
+    object: thiomarinol
+    notes: Source LCMS confirmation of restored production; not a reported quantitative
+      wild-type titer or an exact owner-stereochemistry determination.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0018031
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher primary paper PDF pages 5 inspected.
+      retrieved_on: '2026-10-06'
+  - subject: tmpD_mutant
+    predicate: was_recipient_in
+    object: marinolic_feeding
+    notes: Culture feeding, not purified TmpD or TmlU turnover.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0018031
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher primary paper PDF pages 5 inspected.
+      retrieved_on: '2026-10-06'
+  - subject: marinolic
+    predicate: was_added_in
+    object: marinolic_feeding
+    notes: Source-assigned precursor supplied exogenously; no dose or time inferred
+      from the inspected paragraph.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0018031
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher primary paper PDF pages 5 inspected.
+      retrieved_on: '2026-10-06'
+  - subject: marinolic_feeding
+    predicate: restored_reported_production_of
+    object: thiomarinol
+    notes: Qualitative biosynthetic rescue supports precursor use by the remaining
+      culture machinery; it does not identify a sole amide-forming enzyme.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0018031
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher primary paper PDF pages 5 inspected.
+      retrieved_on: '2026-10-06'
+  - subject: tmpD_mutant
+    predicate: was_recipient_in
+    object: pseudomonic_feeding
+    notes: Separate mutasynthesis condition, not native precursor feeding.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0018031
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher primary paper PDF pages 5 inspected.
+      retrieved_on: '2026-10-06'
+  - subject: pseudomonic
+    predicate: was_added_in
+    object: pseudomonic_feeding
+    notes: Pseudomonic acid A is chemically distinct from the native marinolic-acid
+      moiety.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0018031
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher primary paper PDF pages 2,5 inspected.
+      retrieved_on: '2026-10-06'
+  - subject: pseudomonic_feeding
+    predicate: yielded_reported_hybrids
+    object: analogues
+    notes: Two novel pyrrothine amides are reported. Do not label these native thiomarinol
+      or assign the stereochemically incomplete owner's exact identifier to them.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0018031
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher primary paper PDF pages 2,5 inspected.
+      retrieved_on: '2026-10-06'
+- graph_id: thiomarinol-tmlf-native-deletion-and-inferred-reductase-role
+  scope: BIOSYNTHESIS
+  description: Native TmlF deletion genetics and source-assigned metabolites, with
+    a separately inferred 7-ketoreductase role. No isolated-enzyme turnover or complete
+    pathway reconstitution is asserted. Exact congener/tautomer/stereochemical identities
+    remain ungrounded; the owner retains SEEDED status.
+  nodes:
+  - node_id: cluster
+    label: Thiomarinol locus on native pTML1
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0001115
+  - node_id: TmlF
+    label: Native deposited TmlF sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:CBK62736.1
+  - node_id: deletion
+    label: Reported tmlF in-frame deletion allele
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: mutant
+    label: SANK 73390 tmlF deletion culture
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: tm_a
+    label: Source-assigned thiomarinol A
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: tm_c
+    label: Source-assigned thiomarinol C
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: xenorhabdins
+    label: Source-assigned xenorhabdin acylpyrrothines
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: role
+    label: Inferred TmlF 7-ketoreductase role
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: p22
+    label: Source-assigned 8-hydroxythiomarinol C (22)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: p23
+    label: Source-assigned 6,7-diketothiomarinol C (23)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: p24
+    label: Source-assigned 6,7-diketothiomarinol A (24)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: p25
+    label: Source-assigned 6,7-diketomarinolic acid C6 (25)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: p26
+    label: Source-assigned 7-ketothiomarinol C (26)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: p27
+    label: Source-assigned 7-ketothiomarinol A (27)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: p28
+    label: Source-assigned 8-epi-7-ketothiomarinol C (28)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: p29
+    label: Source-assigned 8-epi-7-ketothiomarinol A (29)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: p30
+    label: Source-assigned 8-epi-7-epi-6-ketothiomarinol A (30)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: TmlF
+    notes: FN689524.1 CDS 73267..74319(+), 1-based inclusive; CBK62736.1, 350 aa.
+      Table-11 CDS translation, original GenPept and UPI000211729C archive sequences
+      match exactly. Native source is Pseudoalteromonas sp. SANK 73390, taxon 747457,
+      pTML1.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native deposited CDS and source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBK62736.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native sequence, not the mutant allele or residual
+        protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniparc/UPI000211729C
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS/GenPept/archive sequence comparison. No active UniProtKB cross-reference
+        in this snapshot.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/F8J3D7
+      evidence_type: DATABASE_ASSERTION
+      notes: Inactive/deleted because not part of a reference proteome; not selected
+        as a live UniProt example.
+      retrieved_on: '2026-10-06'
+  - subject: deletion
+    predicate: affects_coding_locus_of
+    object: TmlF
+    notes: The source reports removal from aa 10 to aa 327 using approximately 500-bp
+      arms. These are reported native numbering boundaries, not a reconstructed junction
+      or complete residual-protein sequence.
+    evidence:
+    - reference: DOI:10.1002/anie.201611590
+      evidence_type: CURATOR_INFERENCE
+      notes: Accepted author manuscript PDF page 4, Figures 3/4 and associated text
+        inspected. Supporting information not inspected; not a complete allele-sequence
+        verification.
+      retrieved_on: '2026-10-06'
+      snippet: in-frame deletion
+  - subject: deletion
+    predicate: was_introduced_in
+    object: mutant
+    notes: Native SANK 73390 genetic intervention, distinct from heterologous mupirocin-host
+      deletions. No complementation result, whole mutant-genome identity or full polarity
+      exclusion is asserted.
+    evidence:
+    - reference: DOI:10.1002/anie.201611590
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Accepted author manuscript PDF page 4, Figures 3/4 and associated text
+        inspected. Supporting information not inspected; not a complete allele-sequence
+        verification.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: lacked_detected_production_of
+    object: tm_a
+    notes: Source extract analysis reports loss of thiomarinol A. Bounded detection
+      claim; no detection-limit, numerical zero, replicate count or titer estimate
+      is inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.201611590
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Accepted author manuscript PDF page 4, Figures 3/4 and associated text
+        inspected. Supporting information not inspected; not a complete allele-sequence
+        verification.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: lacked_detected_production_of
+    object: tm_c
+    notes: The same mutant also loses detected thiomarinol C. The congener remains
+      separate from thiomarinol A and from the stereochemically incomplete owner identity.
+    evidence:
+    - reference: DOI:10.1002/anie.201611590
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Accepted author manuscript PDF page 4, Figures 3/4 and associated text
+        inspected. Supporting information not inspected; not a complete allele-sequence
+        verification.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: retained_reported_production_of
+    object: xenorhabdins
+    notes: The paper reports continued acylpyrrothine production; Figure 4 labels
+      this chromatographic region. No equality of quantitative wild-type and mutant
+      titers is asserted.
+    evidence:
+    - reference: DOI:10.1002/anie.201611590
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Accepted author manuscript PDF page 4, Figures 3/4 and associated text
+        inspected. Supporting information not inspected; not a complete allele-sequence
+        verification.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: yielded_source_assigned_metabolite
+    object: p22
+    notes: Figure 4/source text assign a minor metabolite from the mutant extract
+      using reported NMR/HR-ESI-MS. Detailed spectra and replicate-level data were
+      not inspected. This is not proof of a sole direct TmlF substrate.
+    evidence:
+    - reference: DOI:10.1002/anie.201611590
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Accepted author manuscript PDF page 4, Figures 3/4 and associated text
+        inspected. Supporting information not inspected; not a complete allele-sequence
+        verification.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: yielded_source_assigned_metabolite
+    object: p23
+    notes: Figure 4/source text assign a minor metabolite from the mutant extract
+      using reported NMR/HR-ESI-MS. Detailed spectra and replicate-level data were
+      not inspected. This is not proof of a sole direct TmlF substrate. The source
+      represents this group as enol-ketone tautomers; no exact tautomer identifier
+      is chosen.
+    evidence:
+    - reference: DOI:10.1002/anie.201611590
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Accepted author manuscript PDF page 4, Figures 3/4 and associated text
+        inspected. Supporting information not inspected; not a complete allele-sequence
+        verification.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: yielded_source_assigned_metabolite
+    object: p24
+    notes: Figure 4/source text assign a minor metabolite from the mutant extract
+      using reported NMR/HR-ESI-MS. Detailed spectra and replicate-level data were
+      not inspected. This is not proof of a sole direct TmlF substrate. The source
+      represents this group as enol-ketone tautomers; no exact tautomer identifier
+      is chosen.
+    evidence:
+    - reference: DOI:10.1002/anie.201611590
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Accepted author manuscript PDF page 4, Figures 3/4 and associated text
+        inspected. Supporting information not inspected; not a complete allele-sequence
+        verification.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: yielded_source_assigned_metabolite
+    object: p25
+    notes: Figure 4/source text assign a minor metabolite from the mutant extract
+      using reported NMR/HR-ESI-MS. Detailed spectra and replicate-level data were
+      not inspected. This is not proof of a sole direct TmlF substrate. The source
+      represents this group as enol-ketone tautomers; no exact tautomer identifier
+      is chosen.
+    evidence:
+    - reference: DOI:10.1002/anie.201611590
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Accepted author manuscript PDF page 4, Figures 3/4 and associated text
+        inspected. Supporting information not inspected; not a complete allele-sequence
+        verification.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: yielded_source_assigned_metabolite
+    object: p26
+    notes: Figure 4/source text assign a minor metabolite from the mutant extract
+      using reported NMR/HR-ESI-MS. Detailed spectra and replicate-level data were
+      not inspected. This is not proof of a sole direct TmlF substrate.
+    evidence:
+    - reference: DOI:10.1002/anie.201611590
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Accepted author manuscript PDF page 4, Figures 3/4 and associated text
+        inspected. Supporting information not inspected; not a complete allele-sequence
+        verification.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: yielded_source_assigned_metabolite
+    object: p27
+    notes: Figure 4/source text assign a minor metabolite from the mutant extract
+      using reported NMR/HR-ESI-MS. Detailed spectra and replicate-level data were
+      not inspected. This is not proof of a sole direct TmlF substrate.
+    evidence:
+    - reference: DOI:10.1002/anie.201611590
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Accepted author manuscript PDF page 4, Figures 3/4 and associated text
+        inspected. Supporting information not inspected; not a complete allele-sequence
+        verification.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: yielded_source_assigned_metabolite
+    object: p28
+    notes: Figure 4/source text assign a minor metabolite from the mutant extract
+      using reported NMR/HR-ESI-MS. Detailed spectra and replicate-level data were
+      not inspected. This is not proof of a sole direct TmlF substrate. Keto-enol
+      tautomerism/epimerization may generate this product; do not force a linear biosynthetic
+      step.
+    evidence:
+    - reference: DOI:10.1002/anie.201611590
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Accepted author manuscript PDF page 4, Figures 3/4 and associated text
+        inspected. Supporting information not inspected; not a complete allele-sequence
+        verification.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: yielded_source_assigned_metabolite
+    object: p29
+    notes: Figure 4/source text assign a minor metabolite from the mutant extract
+      using reported NMR/HR-ESI-MS. Detailed spectra and replicate-level data were
+      not inspected. This is not proof of a sole direct TmlF substrate. Keto-enol
+      tautomerism/epimerization may generate this product; do not force a linear biosynthetic
+      step.
+    evidence:
+    - reference: DOI:10.1002/anie.201611590
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Accepted author manuscript PDF page 4, Figures 3/4 and associated text
+        inspected. Supporting information not inspected; not a complete allele-sequence
+        verification.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: yielded_source_assigned_metabolite
+    object: p30
+    notes: Figure 4/source text assign a minor metabolite from the mutant extract
+      using reported NMR/HR-ESI-MS. Detailed spectra and replicate-level data were
+      not inspected. This is not proof of a sole direct TmlF substrate. Keto-enol
+      tautomerism/epimerization may generate this product; do not force a linear biosynthetic
+      step.
+    evidence:
+    - reference: DOI:10.1002/anie.201611590
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Accepted author manuscript PDF page 4, Figures 3/4 and associated text
+        inspected. Supporting information not inspected; not a complete allele-sequence
+        verification.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: supports_genetic_interpretation
+    object: role
+    notes: Accumulated oxidation-state variants are consistent with a late reductive
+      role. They do not establish isolated TmlF catalysis, cofactor specificity, kinetics
+      or a fixed order for all shunt products.
+    evidence:
+    - reference: DOI:10.1002/anie.201611590
+      evidence_type: CURATOR_INFERENCE
+      notes: Accepted author manuscript PDF page 4, Figures 3/4 and associated text
+        inspected. Supporting information not inspected; not a complete allele-sequence
+        verification.
+      retrieved_on: '2026-10-06'
+  - subject: TmlF
+    predicate: has_inferred_role
+    object: role
+    notes: The authors combine the deletion phenotype with 33% amino-acid identity
+      to mupirocin MupF to propose a 7-ketoreductase role. MupF is an analogy, not
+      a substitute protein identifier or direct TmlF assay.
+    evidence:
+    - reference: DOI:10.1002/anie.201611590
+      evidence_type: CURATOR_INFERENCE
+      notes: Accepted author manuscript PDF page 4, Figures 3/4 and associated text
+        inspected. Supporting information not inspected; not a complete allele-sequence
+        verification.
+      retrieved_on: '2026-10-06'
+causal_graph_refs:
+- thiomarinol-tmub-native-i109n-genetics
+- thiomarinol-tmub-bounded-purified-preparation-biochemistry
+- thiomarinol-tmlwz-tmlw-resting-cell-assay
+- thiomarinol-tmlwz-mixed-mupw-tmlz-cell-assay
+- thiomarinol-tmlwz-tmlw-heterologous-genetic-rescue
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -76,3 +1084,51 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-06T03:29:09Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added three BIOSYNTHESIS graphs with 34 nodes and 38 cited edges for native
+    TmlU/HolE and TmpD/HolA sequence references, bounded genetic phenotypes, culture
+    rescue and abstract-supported tandem biochemistry. UniProt F8J3D9/F8J3H2 and GenPept
+    CBK62733.1/CBK62746.1 match FN689524.1 CDS translations; deleted F8J3G5/F8J3E3
+    were not selected. DOI 10.1371/journal.pone.0018031 and 10.1002/anie.201411667
+    plus official sequence URLs support each new edge. Preserved native-versus-preparation
+    and native-versus-surrogate distinctions, HolA alternative-start and fragment-size
+    uncertainties, and the inaccessible 2015 full-methods limitation. Two short verbatim
+    snippets total four words. Addressed author-agent review issues #591 and #592;
+    no independent approval or full-record sign-off. Retained all source-owned fields,
+    prior history, SEEDED status and incomplete stereochemistry.'
+  llm_assisted: true
+- timestamp: '2026-10-06T04:14:35Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added native TmlF reference CBK62736.1 and TmuB reference CBK62743.1 in
+    three BIOSYNTHESIS graphs (37 nodes,38 cited edges). TmlF deletion phenotypes
+    and inferred 7-ketoreductase role are inline; native TmuB I109N genetics and purified
+    preparation biochemistry use two new exact-owner graph components to keep every
+    artifact below 64 KiB. Preserved the three prior graphs without migration. Native
+    CDS/GenPept/UniParc comparisons support the versioned references; deleted UniProt
+    F8J3D7/F8J3G9 were rejected. DOI 10.1002/anie.201611590 and 10.1002/cbic.201800036
+    plus official sequence URLs support every new edge. Three exact snippets total
+    eight words. Retained source-assigned congener and tautomer limits, native-versus-engineered
+    identity, inferred native timing, delayed PA-B conversion and unaudited quantitative
+    kinetics. TmlF SI was not inspected. Addressed author-agent review issues #594/#595,
+    not independent approval or full-record sign-off. Source-owned fields, prior history,
+    SEEDED status and incomplete stereochemistry remain unchanged.'
+  llm_assisted: true
+- timestamp: '2026-10-06T04:51:34Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added three exact-owner BIOSYNTHESIS components with24nodes/23DOI-or-URL-cited
+    edges for native TmlW CBK62744.1 and TmlZ CBK62745.1. Preserved four inline and
+    two prior component graphs without migration. Native FN689524.1 CDS/GenPept/RefSeq/UniParc
+    sequence audits support these references; deleted F8J3E2/F8J3H0 were not selected.
+    DOI10.1039/C9SC06192D main text supports TmlW whole-cell activity, the distinct
+    mixed MupW/TmlZ whole-cell experiment and TmlW knockin rescue in two mupirocin-host
+    backgrounds. One exact two-word HTML snippet manually source-checked. Preserved
+    cellular redox context, surrogate products, genotype distinctions and native-versus-engineered
+    identity. SI/figure routes were inaccessible; no full-method, isolated-enzyme,
+    kinetic or native full-reconstitution claim. Addressed author-agent review issue#597,
+    not independent approval or full-record sign-off. Retained all source-owned fields,
+    prior history, SEEDED status and incomplete stereochemistry.
+  llm_assisted: true

@@ -24,6 +24,10 @@
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 </p>
+<div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/2-3-4-5-tetrabromopyrrole.yaml">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
 
 <h2>Structure</h2>
 <div class="scroll"><table>
@@ -59,9 +63,9 @@ same claim.</p>
 </tr>
 </table></div>
 
-<h2>Occurrences <span class="tag">0</span></h2>
+<h2 id="occurrences">Occurrences <span class="tag">0</span></h2>
 <p class="sub">None cited.</p>
-<h2>Biosynthetic gene clusters <span class="tag">2</span></h2>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">2</span></h2>
 <div class="scroll"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
@@ -84,6 +88,40 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">PS5 bmp2 in-frame deletion and loss of detected tetrabromopyrrole production, with a separately grounded native reference protein. A genetic-production context, not direct Bmp2 catalysis. Reference correspondence is not proof of experimental-stock sequence identity. Only extracted main text was inspected; no successful visual figure or supplementary-method review, rescue, quantitative yield or pathway-finality claim.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>bmp2 gene, PS5 reference locus</td>
+  <td>encodes_reference_protein</td>
+  <td>Bmp2, native PS5 reference protein</td>
+  <td>Reference-locus mapping only. Native PS5 Bmp2 is not O-BC30 A0A0S2JXW2 (43-aa difference) or the PDB-linked 409-aa GSH construct A0A140UHM3 with conflicting Streptomyces taxonomy. Neither selected as a PS5 UniProt example. Bounded official gene/taxon and AKJ75108 queries returned no current entry, not universal absence of aliases.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/protein/AKJ75108.1<br>https://www.ncbi.nlm.nih.gov/nuccore/KR011923.1<br>DOI:10.1038/s43705-023-00309-6</td>
+</tr>
+<tr>
+  <td>PS5 bmp2 in-frame deletion</td>
+  <td>targets</td>
+  <td>bmp2 gene, PS5 reference locus</td>
+  <td>Reported in-frame deletion in PS5. No exact deletion junctions, off-target exclusion or complementation/rescue adopted.</td>
+  <td class="mono">DOI:10.1038/s43705-023-00309-6</td>
+</tr>
+<tr>
+  <td>PS5 bmp2 in-frame deletion</td>
+  <td>eliminates_detected_production</td>
+  <td>Detected TBP production in PS5 under tested conditions</td>
+  <td>Qualitative mutant-versus-wild-type production readout under tested conditions only. Not proof of absence under every condition or Bmp2-alone catalytic sufficiency. No quantitative concentrations or normalization adopted without supplementary methods.</td>
+  <td class="mono">DOI:10.1038/s43705-023-00309-6</td>
+</tr>
+<tr>
+  <td>Detected TBP production in PS5 under tested conditions</td>
+  <td>has_measured_product</td>
+  <td>2,3,4,5-tetrabromopyrrole</td>
+  <td>Reported TBP identity in culture extracts, not a new structural determination, purified-enzyme conversion or pure-compound bioactivity assay.</td>
+  <td class="mono">DOI:10.1038/s43705-023-00309-6</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

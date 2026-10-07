@@ -85,6 +85,7 @@ def cid_to_key() -> dict[str, str]:
     Read from the records rather than an inventory because the xrefs are what
     the seeder actually wrote, so this queries exactly the compounds the corpus
     claims a PubChem identity for.
+    Raw owner YAML is sufficient: this reads chemical identity, not mechanisms.
     """
     mapping: dict[str, str] = {}
     for path in sorted(CORPUS_DIR.rglob("*.yaml")):

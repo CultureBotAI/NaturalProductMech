@@ -24,6 +24,10 @@
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 </p>
+<details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/solanapyrone-a.yaml">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
 
 <h2>Structure</h2>
 <div class="scroll"><table>
@@ -53,7 +57,7 @@ same claim.</p>
 </tr>
 </table></div>
 
-<h2>Occurrences <span class="tag">8</span></h2>
+<h2 id="occurrences">Occurrences <span class="tag">8</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
 <div class="scroll"><table>
@@ -100,7 +104,7 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 </tr>
 </table></div>
 
-<h2>Biosynthetic gene clusters <span class="tag">1</span></h2>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
 <div class="scroll"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
@@ -116,6 +120,33 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">UniProt-reported A.solani Sol5 cycloisomerization of prosolanapyrone III to solanapyrone A, distinct from the existing D-product graph. The full genomic precursor reference is sequence-verified; neither deposit specifies a strain. The owner&#39;s source producer is A.rabiei, not this protein&#39;s organism. MITE flags Sol5 functionality as unclear; this graph records UniProt&#39;s specific annotation, not a primary-evidence resolution. No producer upgrade or pathway finality; not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Sol5 A.solani reference precursor</td>
+  <td>is_uniprot_reported_catalyst_of</td>
+  <td>UniProt-reported Sol5 A-product cycloisomerization</td>
+  <td>Current UniProt supplies activity attribution, not sequence matching alone. The precursor accession does not assert a native mature/secreted construct, signal cleavage, glycosylation, FAD state, binding site, complex or kinetic measurement. No A.rabiei sequence or activity is mapped to this A.solani protein.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/D7UQ40<br>https://www.ncbi.nlm.nih.gov/protein/BAJ09785.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AB514562.1</td>
+</tr>
+<tr>
+  <td>prosolanapyrone III</td>
+  <td>is_uniprot_reported_substrate_of</td>
+  <td>UniProt-reported Sol5 A-product cycloisomerization</td>
+  <td>ChEBI63164 is the specific substrate cross-reference in UniProt&#39;s A-product reaction. This is the cycloisomerization half-reaction; the separate prosolanapyrone-II oxidation, upstream genes, order and cofactors are not adopted.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/D7UQ40</td>
+</tr>
+<tr>
+  <td>UniProt-reported Sol5 A-product cycloisomerization</td>
+  <td>has_uniprot_reported_product</td>
+  <td>solanapyrone A</td>
+  <td>Exact A product, not D full key AWQLNKJBXASXDU-IPJQOSJUSA-N. The D owner&#39;s existing graph, pathway and history stay unchanged. A.rabiei source producer/BGC grades and separate A.solani/other occurrences are preserved. No new producer, BGC linkage, phenotype or pathway finality is inferred.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/D7UQ40<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000455.json</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

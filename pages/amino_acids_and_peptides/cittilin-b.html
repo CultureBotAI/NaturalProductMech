@@ -24,6 +24,10 @@
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 </p>
+<div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/amino_acids_and_peptides/cittilin-b.yaml">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
 
 <h2>Structure</h2>
 <div class="scroll"><table>
@@ -53,7 +57,7 @@ same claim.</p>
 </tr>
 </table></div>
 
-<h2>Occurrences <span class="tag">2</span></h2>
+<h2 id="occurrences">Occurrences <span class="tag">2</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
 <div class="scroll"><table>
@@ -70,7 +74,7 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 </tr>
 </table></div>
 
-<h2>Biosynthetic gene clusters <span class="tag">1</span></h2>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
 <div class="scroll"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
@@ -86,6 +90,81 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
+<p class="sub">MITE-narrated CitB precursor crosslinking followed by MxPep-mediated leader removal to yield the intermediate cittilin B. Separate database assertions, not a CitB-alone free-product assay. CitB and the unmodified precursor have sequence-verified native DK1622 references; the CitA alias is a curator mapping, not an assay-stock claim. MxPep and the modified precursor remain ungrounded. No primary assay, physical complex or pathway finality is inferred; not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>CitB native DK1622 reference</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>MITE-reported CitB precursor crosslinking</td>
+  <td>The assigned reaction is oxidative C-C and C-O crosslink formation in the precursor core. No native heme/iron occupancy, electron donor, binding site, kinetics, knockout phenotype or physical complex is inferred.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json<br>https://www.ncbi.nlm.nih.gov/protein/QLH55579.1<br>https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1<br>https://www.uniprot.org/uniparc/UPI0002F6195D</td>
+</tr>
+<tr>
+  <td>CitA unmodified precursor, native DK1622 reference</td>
+  <td>is_database_reported_substrate_of</td>
+  <td>MITE-reported CitB precursor crosslinking</td>
+  <td>The native unmodified27-aa reference MKKALYSLAVLMRFARADKLSAPYIYY contains the database-narrated YIYY core; it is not the free tetrapeptide or the modified precursor state. CitA alias assignment is curator-inferred, while function remains MITE&#39;s database assertion. No historical assay stock, construct or exact leader-cleavage site is established. The encoded free tetrapeptide example does not prove that leader-free substrate was assayed with CitB alone.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json<br>https://www.ncbi.nlm.nih.gov/protein/QLH55578.1<br>https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1<br>https://www.uniprot.org/uniparc/UPI001751B65D</td>
+</tr>
+<tr>
+  <td>MITE-reported CitB precursor crosslinking</td>
+  <td>has_database_narrated_precursor_product</td>
+  <td>Crosslinked CitA precursor, database narrative</td>
+  <td>An ungrounded precursor state represents the database narrative before leader removal, not an independently isolated or chemically resolved intermediate. It is not identified with free cittilin B.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</td>
+</tr>
+<tr>
+  <td>MxPep, database-named maturation protein</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>MITE-reported MxPep leader removal</td>
+  <td>MITE names MxPep for maturation but provides no MxPep accession in this entry. No arbitrary protease homolog, native strain mapping, exact cleavage site, construct, assay or physical association with CitB is adopted.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</td>
+</tr>
+<tr>
+  <td>Crosslinked CitA precursor, database narrative</td>
+  <td>is_database_narrated_substrate_of</td>
+  <td>MITE-reported MxPep leader removal</td>
+  <td>This order follows the source narrative, not genomic gene order or an independently inspected time-course. No additional processing step is inferred.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</td>
+</tr>
+<tr>
+  <td>MITE-reported MxPep leader removal</td>
+  <td>has_database_reported_product</td>
+  <td>cittilin B</td>
+  <td>MITE names cittilin B as an intermediate and encodes a product matching owner full key LRYMXYNLAMRRTH-CIWZQKDMSA-N and complete stereo in the pinned repository-helper/RDKit2026.03.5 screen. This supports product correspondence, not a CitB-only assay. Cittilin A, its separate CitC graph, all source fields, BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED grades and occurrences are unchanged. No pathway finality or producer upgrade is inferred.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Substrate-owner context for MITE-reported CitC O-methylation of cittilin B to cittilin A. CitC is already represented on the product owner; this is not a new global protein or assay. Exact neutral compound forms match the database example. Native-reference identity does not establish experimental function. Existing CitB/MxPep maturation and CitA grounding are preserved separately; no physical assembly or cross-graph edge is inferred.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>CitC native DK1622 reference</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>MITE-reported CitC O-methylation</td>
+  <td>MITE supplies the functional attribution; reference translation establishes identity only. No primary assay, rate, knockout phenotype, native cofactor state, site or physical complex is adopted. Automated ubiquinone/mitochondrial family labels are not cittilin chemistry.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json<br>https://www.uniprot.org/uniprotkb/Q1DEH3<br>https://www.uniprot.org/uniparc/UPI00004FDDBF<br>https://www.ncbi.nlm.nih.gov/protein/QLH55580.1<br>https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1</td>
+</tr>
+<tr>
+  <td>cittilin B</td>
+  <td>is_database_reported_substrate_of</td>
+  <td>MITE-reported CitC O-methylation</td>
+  <td>Pinned MITE substrate matches this cittilin B owner&#39;s full InChIKey LRYMXYNLAMRRTH-CIWZQKDMSA-N and complete stereo in the verified repository-helper/RDKit2026.03.5 calculation. This is the exact neutral substrate, not the CitA precursor or a different congener. The existing CitB/MxPep maturation graph and its CitA grounding are unchanged.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json</td>
+</tr>
+<tr>
+  <td>MITE-reported CitC O-methylation</td>
+  <td>has_database_reported_product</td>
+  <td>cittilin A</td>
+  <td>Pinned MITE product matches the separate cittilin A owner&#39;s full InChIKey WKYLONYSKYXJSJ-UJGPGMDKSA-N and complete stereo in the verified repository-helper/RDKit2026.03.5 calculation. That owner and its CitC graph remain unchanged. No pathway finality, primary assay or producer upgrade; existing source grades are preserved.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

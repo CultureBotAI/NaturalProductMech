@@ -24,6 +24,10 @@
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 </p>
+<div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/unclassified/aspergillic-acid.yaml">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
 
 <h2>Structure</h2>
 <div class="scroll"><table>
@@ -60,7 +64,7 @@ same claim.</p>
 </tr>
 </table></div>
 
-<h2>Occurrences <span class="tag">5</span></h2>
+<h2 id="occurrences">Occurrences <span class="tag">5</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
 <div class="scroll"><table>
@@ -92,7 +96,7 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 </tr>
 </table></div>
 
-<h2>Biosynthetic gene clusters <span class="tag">2</span></h2>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">2</span></h2>
 <div class="scroll"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
@@ -115,6 +119,60 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Database-asserted AsaD N-hydroxylation yielding the owner&#39;s stereochemically unspecified aspergillic acid structure. The current NRRL3357 reference is distinguished from the legacy N-terminally truncated protein. No stereoisomer, historical assay construct or stock identity is inferred. Both source clusters, their grades and the shared-structure discussion remain unchanged; not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>AsaD current NRRL3357 sequence reference</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>Database-reported AsaD N-hydroxylation</td>
+  <td>MITE and UniProt supply functional attribution; genomic deposits establish identity only. The modern assembly is not silently substituted into the owner&#39;s NW_002477238.1 or MH898736.1 cluster coordinates. No induction, knockout phenotype, membrane topology, glycosylation, heme-binding residue, physiological complex, rate or assay condition is asserted.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000297.json<br>https://www.uniprot.org/uniprotkb/B8N0E9<br>https://www.ncbi.nlm.nih.gov/protein/QRD83397.1<br>https://www.ncbi.nlm.nih.gov/nuccore/CP044622.1<br>https://www.ncbi.nlm.nih.gov/protein/EED55032.1<br>https://www.ncbi.nlm.nih.gov/nuccore/EQ963473.1</td>
+</tr>
+<tr>
+  <td>Deoxyaspergillic acid, database-reported substrate</td>
+  <td>is_database_reported_substrate_of</td>
+  <td>Database-reported AsaD N-hydroxylation</td>
+  <td>The databases name deoxyaspergillic acid and MITE encodes the example substrate. No external substrate identifier, complete stereochemistry or upstream AsaC step is assigned.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000297.json<br>https://www.uniprot.org/uniprotkb/B8N0E9</td>
+</tr>
+<tr>
+  <td>Database-reported AsaD N-hydroxylation</td>
+  <td>has_database_reported_product</td>
+  <td>Aspergillic acid, owner structure with unspecified stereo</td>
+  <td>Pinned MITE product matches owner InChIKey IUZCDJYHMMWBBE-UHFFFAOYSA-N using the repository helper and RDKit2026.03.5; both structures have stereo_complete:false. This is not a defined stereoisomer claim. No downstream AsaB step, ferric complex or pathway finality is inferred. SOURCE_ASSERTION producers, CLUSTER_UNSTATED BGC0001516/BGC0002602, occurrences and open shared-structure discussion are preserved.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000297.json<br>https://www.uniprot.org/uniprotkb/B8N0E9</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Separate database-reported AsaB aliphatic hydroxylation consuming the owner&#39;s stereo-unspecified aspergillic acid model. Current NRRL3357 reference B8N0E7 is distinguished from the legacy erroneous gene model. The preserved AsaD graph concerns a different N-hydroxylation step; no cross-graph reaction order, direct assay or complete stereoisomer identity is established by this addition.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>AsaB current NRRL3357 sequence reference</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>Database-reported AsaB aliphatic hydroxylation</td>
+  <td>MITE and UniProt supply functional attribution; sequence records establish current/legacy reference identity only. No purified-enzyme turnover, genetic phenotype, induction, physiological assembly, iron occupancy, metal-binding residue or assay-stock equivalence is asserted.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000298.json<br>https://www.uniprot.org/uniprotkb/B8N0E7<br>https://www.ncbi.nlm.nih.gov/protein/QRD83399.1<br>https://www.ncbi.nlm.nih.gov/nuccore/CP044622.1<br>https://www.ncbi.nlm.nih.gov/protein/EED55030.1<br>https://www.ncbi.nlm.nih.gov/nuccore/EQ963473.1</td>
+</tr>
+<tr>
+  <td>Aspergillic acid, owner structure with unspecified stereo</td>
+  <td>is_database_example_substrate_of</td>
+  <td>Database-reported AsaB aliphatic hydroxylation</td>
+  <td>Pinned MITE reaction0/example0 substrate matches full owner InChI/key IUZCDJYHMMWBBE-UHFFFAOYSA-N with stereo_complete:false. The substrate is the owner compound rather than an added production claim. No resolved stereoisomer, AsaC step, source-coordinate replacement or producer-grade change is inferred.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000298.json<br>https://www.uniprot.org/uniprotkb/B8N0E7</td>
+</tr>
+<tr>
+  <td>Database-reported AsaB aliphatic hydroxylation</td>
+  <td>has_database_example_product</td>
+  <td>Hydroxyaspergillic acid, database-reported product</td>
+  <td>The named encoded product remains externally ungrounded and stereochemically unspecified. No exact external stereoisomer, native iron chelate/ferriaspergillin identity, final-product claim or complete pathway is inferred. Both source clusters, SOURCE_ASSERTION producers, CLUSTER_UNSTATED grades, occurrences and open shared-structure discussion remain unchanged.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000298.json<br>https://www.uniprot.org/uniprotkb/B8N0E7</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

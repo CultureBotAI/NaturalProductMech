@@ -1,0 +1,188 @@
+record_id: CHEBI:3907
+standard_inchi_key: WTIJXIZOODAMJT-DHFGXMAYSA-N
+graph:
+  graph_id: coumermycin-a1-coun17-reversible-shuttling-and-covalent-intermediate
+  scope: BIOSYNTHESIS
+  description: 'Abstract-bounded 2007 reversible transfer and intermediate evidence.
+    Partial curation; review #570. Native references, experimental preparations and
+    inferred states remain distinct. Source fields and SEEDED status are unchanged.'
+  nodes:
+  - node_id: native
+    label: Native CouN7 sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8U0
+  - node_id: enzyme
+    label: Experimental CouN7
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: mutant
+    label: Reported CouN7 S101A preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: loss
+    label: Reported S101A activity loss
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: donor
+    label: Radiolabeled acetyl-S-CouN1 donor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: labeling
+    label: Transient enzyme labeling
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: intermediate
+    label: Reported O-acyl-Ser101-CouN7 intermediate
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: reversible
+    label: Bidirectional coumermycin-arm transfer
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: exchange
+    label: Inter-scaffold acyl shuttling
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: nov
+    label: Descarbamoylnovobiocin scaffold
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: cou
+    label: coumermycin A1
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:3907
+  - node_id: limits
+    label: Mechanistic and construct limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: native
+    predicate: is_native_reference_for
+    object: enzyme
+    notes: Reference identity is not complete assay-construct identity.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8U0
+      evidence_type: DATABASE_ASSERTION
+      notes: Native reference.
+    - reference: DOI:10.1016/j.chembiol.2007.05.007
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: enzyme
+    predicate: has_reported_engineered_variant
+    object: mutant
+    notes: S101A is not assigned the native accession; primers and complete sequence
+      were not obtained.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2007.05.007
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: donor
+    predicate: was_used_in
+    object: labeling
+    notes: The donor carried carbon-14-labeled acetyl.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2007.05.007
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: enzyme
+    predicate: was_transiently_labeled_in
+    object: labeling
+    notes: Covalent-label evidence, not an atomic structure.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2007.05.007
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: labeling
+    predicate: supports_reported_intermediate
+    object: intermediate
+    notes: Combined labeling and mutational evidence supports the reported intermediate
+      assignment.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2007.05.007
+      evidence_type: CURATOR_INFERENCE
+      notes: Interpretation of the primary abstract, not an inspected atomic structure.
+  - subject: mutant
+    predicate: had_reported_activity_loss
+    object: loss
+    notes: The source calls the substitution inactivating; no quantitative residual
+      activity is supplied here.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2007.05.007
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: loss
+    predicate: supports_reported_intermediate
+    object: intermediate
+    notes: Mutation supports but does not independently image the acylated serine.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2007.05.007
+      evidence_type: CURATOR_INFERENCE
+      notes: Interpretation of the primary abstract, not an inspected folding-control
+        panel.
+  - subject: enzyme
+    predicate: catalyzed
+    object: reversible
+    notes: Both directions on both coumermycin arms.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2007.05.007
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+      snippet: forward and back reaction
+  - subject: enzyme
+    predicate: catalyzed
+    object: exchange
+    notes: Net acyl exchange between scaffolds, including surrogate groups.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2007.05.007
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: nov
+    predicate: participated_in
+    object: exchange
+    notes: Source-named scaffold; no universal substrate preference inferred.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2007.05.007
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: cou
+    predicate: participated_in
+    object: exchange
+    notes: Transfer reported in both directions.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2007.05.007
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: intermediate
+    predicate: has_interpretation_limit
+    object: limits
+    notes: No independently reconstructed mutant, folding control, equilibrium constant
+      or catalytic rate is supplied by the inspected abstract.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2007.05.007
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract only.
+  - subject: reversible
+    predicate: has_interpretation_limit
+    object: limits
+    notes: No stable assembly or native-cell reverse flux follows from this in-vitro
+      result.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2007.05.007
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract only.
+curation_history:
+- timestamp: '2026-10-05T05:40:40Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add coumermycin-a1-coun17-reversible-shuttling-and-covalent-intermediate;
+    preserve native, assay, source-access and inference limits (#570).
+  llm_assisted: true
+- timestamp: '2026-10-05T05:42:21Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Final review marks native-to-sample limits as curator inference and uses
+    the exact compound label for CHEBI:3907-grounded nodes. Preserve topology, source
+    facts and owner bytes (#570).
+  llm_assisted: true

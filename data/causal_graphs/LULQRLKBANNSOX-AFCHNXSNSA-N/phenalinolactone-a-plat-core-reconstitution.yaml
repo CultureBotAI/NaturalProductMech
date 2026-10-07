@@ -1,0 +1,323 @@
+record_id: naturalproductmech:mibig-e29f83c77b
+standard_inchi_key: LULQRLKBANNSOX-AFCHNXSNSA-N
+graph:
+  graph_id: phenalinolactone-a-plat-core-reconstitution
+  scope: BIOSYNTHESIS
+  description: Alsup et al. 2024 heterologous backbone reconstitution with native
+    Tu6071 genes. Hosts were S. albus J1074 and S. venezuelae ATCC 10712; HA cultures
+    were screened after 7 days at 28 C by LC-MS against empty-vector controls. The
+    four-gene cassette makes scaffold analogs, not phenalinolactone A. Enzyme roles
+    and order below are inferences from gene combinations, not purified-protein turnover.
+    All four full-cassette genes were amplified from genomic DNA and TEDA-assembled
+    under sp44 promoter/sr40 RBS. Authors report sequence-confirming plasmids; curator
+    primer mapping supports native CDS boundaries, not independent full-plasmid sequencing.
+    UniProt mapping was unverified after service failures; exact native GenPept accessions
+    are used.
+  nodes:
+  - node_id: plat1
+    label: Native PlaT1 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:ABB69742.1
+  - node_id: plat2
+    label: Native PlaT2 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:ABB69743.1
+  - node_id: plat3
+    label: Native PlaT3 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:ABB69744.1
+  - node_id: plat4
+    label: Native PlaT4 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:ABB69754.1
+  - node_id: full
+    label: pJR3008 plaT4321 heterologous cultures
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: cyclic
+    label: Cyclized amino-acid-tail products 1 and 2
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: omit_t2
+    label: pJR3007 plaT431 cultures lacking plaT2
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: linear
+    label: Metabolites 3-10 lacking the tricyclic diterpene core
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: omit_t3
+    label: plaT4, plaT41 and plaT421 host cultures lacking plaT3
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: d67a
+    label: pJR3004 plaT43(D67A) heterologous cultures
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: ggpp
+    label: Proposed geranylgeranyl diphosphate supply
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: prenylation
+    label: Proposed prenylation of a three-carbon acceptor
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: epoxidation
+    label: Proposed terminal epoxidation of the prenylated intermediate
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: cyclization
+    label: Proposed epoxide-initiated tricyclic-core formation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: full
+    predicate: supplies_wild_type_encoding_gene_for
+    object: plat1
+    notes: PlaT1 in pJR3008; shared construction/identity qualifications in graph
+      description.
+    evidence:
+    - reference: DOI:10.1039/D4CB00138A
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: SI pages 3-4 and 8-10; Tables S1-S3; Figures S2 and S16.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABB69742.1
+      evidence_type: DATABASE_ASSERTION
+      notes: 449 aa; complement(16422..17771) in DQ230532.1; Streptomyces sp. Tu6071,
+        taxon 355249. GenPept identifies the named native protein.
+      retrieved_on: '2026-10-03'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator comparison, not database assertion: GenBank/MIBiG BGC0000654.4
+        CDS translations match GenPept.'
+    - reference: DOI:10.1039/D4CB00138A
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator Table S3 primer/DQ230532.1 CDS-boundary alignment, not independent
+        expression-plasmid sequencing.
+  - subject: full
+    predicate: supplies_wild_type_encoding_gene_for
+    object: plat2
+    notes: PlaT2 in pJR3008; shared construction/identity qualifications in graph
+      description.
+    evidence:
+    - reference: DOI:10.1039/D4CB00138A
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: SI pages 3-4 and 8-10; Tables S1-S3; Figures S2 and S16.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABB69743.1
+      evidence_type: DATABASE_ASSERTION
+      notes: 571 aa; complement(17768..19483) in DQ230532.1; Streptomyces sp. Tu6071,
+        taxon 355249. GenPept identifies the named native protein.
+      retrieved_on: '2026-10-03'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator comparison, not database assertion: GenBank/MIBiG BGC0000654.4
+        CDS translations match GenPept.'
+    - reference: DOI:10.1039/D4CB00138A
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator Table S3 primer/DQ230532.1 CDS-boundary alignment, not independent
+        expression-plasmid sequencing.
+  - subject: full
+    predicate: supplies_wild_type_encoding_gene_for
+    object: plat3
+    notes: PlaT3 in pJR3008; shared construction/identity qualifications in graph
+      description.
+    evidence:
+    - reference: DOI:10.1039/D4CB00138A
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: SI pages 3-4 and 8-10; Tables S1-S3; Figures S2 and S16.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABB69744.1
+      evidence_type: DATABASE_ASSERTION
+      notes: 337 aa; complement(19499..20512) in DQ230532.1; Streptomyces sp. Tu6071,
+        taxon 355249. GenPept identifies the named native protein.
+      retrieved_on: '2026-10-03'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator comparison, not database assertion: GenBank/MIBiG BGC0000654.4
+        CDS translations match GenPept.'
+    - reference: DOI:10.1039/D4CB00138A
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator Table S3 primer/DQ230532.1 CDS-boundary alignment, not independent
+        expression-plasmid sequencing.
+  - subject: full
+    predicate: supplies_wild_type_encoding_gene_for
+    object: plat4
+    notes: PlaT4 in pJR3008; shared construction/identity qualifications in graph
+      description.
+    evidence:
+    - reference: DOI:10.1039/D4CB00138A
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: SI pages 3-4 and 8-10; Tables S1-S3; Figures S2 and S16.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABB69754.1
+      evidence_type: DATABASE_ASSERTION
+      notes: 359 aa; 31153..32232 in DQ230532.1; Streptomyces sp. Tu6071, taxon 355249.
+        GenPept identifies the named native protein.
+      retrieved_on: '2026-10-03'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator comparison, not database assertion: GenBank/MIBiG BGC0000654.4
+        CDS translations match GenPept.'
+    - reference: DOI:10.1039/D4CB00138A
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator Table S3 primer/DQ230532.1 CDS-boundary alignment, not independent
+        expression-plasmid sequencing.
+  - subject: full
+    predicate: produces_detectable
+    object: cyclic
+    notes: 'S. albus produced 1/2; S. venezuelae only 1. Isolated S. albus products
+      have HRMS/NMR support: C-3 ketone in 1, hydroxyl in 2. Both bear amino-acid
+      tails without the CD6/CD7 C-15/C-16 olefin; neither is CD6/CD7 or mature A.
+      C-17 absolute configuration, host amination and 2-to-1 oxidation remain unresolved.'
+    evidence:
+    - reference: DOI:10.1039/D4CB00138A
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 2; SI pages 4-6, Tables S4-S5 and Figures S3-S15.
+      snippet: only 1 was produced
+  - subject: omit_t2
+    predicate: omits_encoding_gene_of
+    object: plat2
+    notes: pJR3007 encodes plaT4/plaT3/plaT1, omitting plaT2 in heterologous hosts;
+      not a native deletion.
+    evidence:
+    - reference: DOI:10.1039/D4CB00138A
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: SI Tables S1-S3 and Figure S16.
+  - subject: omit_t2
+    predicate: abolishes_detectable
+    object: cyclic
+    notes: Removing plaT2 abolished detectable 1/2 and other tricyclic products in
+      both hosts under the reported screening conditions.
+    evidence:
+    - reference: DOI:10.1039/D4CB00138A
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Results: Epoxidation and prenylation precede cyclization; Figure 3.'
+  - subject: omit_t2
+    predicate: produces_detectable
+    object: linear
+    notes: 'S. venezuelae::plaT431 produced 3-10; S. albus::plaT431 8-10. Isolated
+      3-7/10 were structurally characterized; 8/9 are MS proposals. All lack the tricyclic
+      diterpene core, but 6/7 retain tetrahydrofuran rings: not all acyclic, native
+      intermediates or direct PlaT1 products.'
+    evidence:
+    - reference: DOI:10.1039/D4CB00138A
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3A-C; SI pages 4-7, Tables S6-S11 and Figures S17-S51.
+  - subject: omit_t3
+    predicate: omits_encoding_gene_of
+    object: plat3
+    notes: pJR3001, pJR3002 and pJR3005 encode plaT4, plaT41 and plaT421 respectively.
+    evidence:
+    - reference: DOI:10.1039/D4CB00138A
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: SI Tables S1-S3 and Figure S16.
+  - subject: omit_t3
+    predicate: fails_to_produce_detectable
+    object: linear
+    notes: No-plaT3 constructs lacked monitored diterpenoids. PlaT3-dependent 11-13
+      are proposed unoxidized-prenyl-tail structures, MS-only after failed NMR isolation.
+      Compound 11 negative-ion masses conflict between Figure 3D and HRESIMS text/Figure
+      S54; no corrected exact identity/mass is chosen.
+    evidence:
+    - reference: DOI:10.1039/D4CB00138A
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Results: Prenylation by PlaT3 is the first step; Figure 3A,B,D; SI Figure
+        S54.'
+  - subject: d67a
+    predicate: tests_substitution_in
+    object: plat3
+    notes: Accession denotes native PlaT3, not D67A. Curator SI-primer alignment changes
+      residue-67 GAC to GCC; F1 maps upstream to plaT4 in the coupled construct. No
+      independent mutant-plasmid deposit inspected.
+    evidence:
+    - reference: DOI:10.1039/D4CB00138A
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: SI General Cloning and Table S3, pages 3 and 10.
+    - reference: DOI:10.1039/D4CB00138A
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator primer/native-CDS comparison.
+  - subject: d67a
+    predicate: fails_to_produce_detectable
+    object: linear
+    notes: plaT43(D67A) cultures lacked 3-10 in both hosts; S. albus traces also lacked
+      11-13. Supports a PlaT3-dependent step, not isolated-protein activity or abundance/stability.
+    evidence:
+    - reference: DOI:10.1039/D4CB00138A
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3A,B,D and associated Results.
+  - subject: plat4
+    predicate: is_proposed_to_catalyze
+    object: ggpp
+    notes: 'Model assigns GGPP synthesis to PlaT4. All combinations include plaT4:
+      no independent omission test or purified turnover.'
+    evidence:
+    - reference: DOI:10.1039/D4CB00138A
+      evidence_type: CURATOR_INFERENCE
+      notes: Figures 1 and 4A; SI Tables S1-S3.
+  - subject: plat3
+    predicate: is_proposed_to_catalyze
+    object: prenylation
+    notes: 'Gene combinations/D67A support prenylation before oxidation/cyclization.
+      Proposed substrates: GGPP and a three-carbon alpha-keto acid of unresolved identity/origin;
+      amino-acid acceptor not excluded.'
+    evidence:
+    - reference: DOI:10.1039/D4CB00138A
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Figures 3-4 and Results: Prenylation by PlaT3 is the first step.'
+  - subject: plat1
+    predicate: is_proposed_to_catalyze
+    object: epoxidation
+    notes: 'Revised model: prenylation then terminal epoxidation, without purified
+      PlaT1 turnover or isolated epoxy intermediate. Oxidized 3-10 also occur without
+      plaT1, host-dependently; not all oxidation is PlaT1''s.'
+    evidence:
+    - reference: DOI:10.1039/D4CB00138A
+      evidence_type: CURATOR_INFERENCE
+      notes: Figures 3-4 and associated Results.
+  - subject: plat2
+    predicate: is_proposed_to_catalyze
+    object: cyclization
+    notes: Omission/product structures support epoxide-initiated anti/anti/syn-core
+      cyclization with observed C-3 hydroxyl orientation, not isolated-enzyme kinetics
+      or complete 1/2 absolute configuration.
+    evidence:
+    - reference: DOI:10.1039/D4CB00138A
+      evidence_type: CURATOR_INFERENCE
+      notes: Figures 2-4; SI Tables S4-S5.
+  - subject: ggpp
+    predicate: is_proposed_to_supply_substrate_for
+    object: prenylation
+    notes: GGPP supply precedes inferred prenylation; not physical gene order or observed
+      purified-enzyme cascade.
+    evidence:
+    - reference: DOI:10.1039/D4CB00138A
+      evidence_type: CURATOR_INFERENCE
+      notes: Figure 4A.
+  - subject: prenylation
+    predicate: is_inferred_to_precede
+    object: epoxidation
+    notes: 2024 reconstitution revises epoxidation-first proposal; older native knockouts
+      did not resolve order.
+    evidence:
+    - reference: DOI:10.1039/D4CB00138A
+      evidence_type: CURATOR_INFERENCE
+      notes: Figures 3-4 and Conclusions.
+  - subject: epoxidation
+    predicate: is_inferred_to_precede
+    object: cyclization
+    notes: Order concerns productive backbone formation, not every extract host-oxidation/degradation
+      reaction.
+    evidence:
+    - reference: DOI:10.1039/D4CB00138A
+      evidence_type: CURATOR_INFERENCE
+      notes: Figures 3-4 and Conclusions.
+curation_history:
+- timestamp: '2026-10-04T02:16:47Z'
+  curator: codex
+  action: GRAPH_COMPONENT_MIGRATED
+  changes: Lossless migration of graph phenalinolactone-a-plat-core-reconstitution
+    from data/natural_products/unclassified/phenalinolactone-a.yaml at aa0e38c4ac899ca5534b4ce02318c019fc44db29.
+    Prior claim curation history remains on the owning record; graph content and evidence
+    are unchanged.
+  llm_assisted: true

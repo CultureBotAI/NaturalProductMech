@@ -1,0 +1,199 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novn-9s2t-structure-and-partial-metal-limits
+  scope: BIOSYNTHESIS
+  description: 'The 2025 NovN deposit, engineered sequence, coordinate coverage and
+    bounded local geometry. Review #560. Xu locators are PDF pages, nineteen higher
+    than printed main-text pages. The owner retains its unspecified sugar stereocentre
+    and SEEDED status; source-assigned novobiocin is not an exact structure-key merge
+    with cathomycin. Native reference, engineered protein and DNA construct are separate
+    entities.'
+  nodes:
+  - node_id: native
+    label: Current deposited native NovN sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F4
+  - node_id: tagged
+    label: 9S2T deposited C-terminal LE-His8 NovN entity
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: structure
+    label: 9S2T NovN crystallographic model
+    node_type: OTHER
+    grounding_status: GROUNDED
+    identifier: PDB:9S2T
+  - node_id: coverage
+    label: 9S2T observed and missing protein coordinates
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: dimer
+    label: 9S2T author-defined symmetry-generated NovN dimer
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: iron
+    label: 9S2T partially occupied deposited Fe(III) ion
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: contacts
+    label: Selected 9S2T Fe-neighbor coordinate distances
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: quality
+    label: 9S2T local metal-site validation context
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: phosphate
+    label: Six deposited 9S2T phosphate ions
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: water
+    label: 9S2T water-residue and alternate-atom inventory
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Unestablished NovN catalytic-complex and metal requirements
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: native
+    predicate: is_exact_native_core_of
+    object: tagged
+    notes: The 687-residue deposited entity is exactly the 677-aa Q9L9F4 sequence
+      plus LEHHHHHHHH. Its source is S. niveus, taxon 193462, and expression host
+      E. coli BL21(DE3); source strain and vector are unspecified. The native accession
+      is not assigned to the fusion and sequence agreement does not prove it is the
+      exact 2008 sample.
+    evidence:
+    - reference: https://files.rcsb.org/download/9S2T.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: 9S2T version 1.0, released 2025-07-30; Entity polymer sequence and source
+        metadata.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent native/deposited-entity alignment.
+  - subject: tagged
+    predicate: is_deposited_entity_in
+    object: structure
+    notes: 9S2T was released 2025-07-30 with primary citation To Be Published; the
+      2008 paper is a secondary citation. The I222 model has 2.240-A resolution, Rwork
+      0.1599 and Rfree 0.2000. This is a public structural deposit, not a claimed
+      new peer-reviewed paper or a retrospective assertion that the 2008 structure
+      was solved.
+    evidence:
+    - reference: DOI:10.2210/pdb9S2T/pdb
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposit/release and citation metadata.
+    - reference: https://files.rcsb.org/download/9S2T.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: 9S2T version 1.0, released 2025-07-30; Refinement and symmetry fields.
+  - subject: structure
+    predicate: has_coordinate_coverage
+    object: coverage
+    notes: 'One asymmetric-unit chain models native residues 1..669 with 5275 protein
+      atom records. Native 670..677 and the ten-residue tag are unmodeled, eighteen
+      residues total; missing tag density is not proof of tag cleavage. Lys444 lacks
+      CD/CE/NZ; Arg601 lacks CG/CD/NE/CZ/NH1/NH2. Eleven protein residues have alternatives:
+      63,86,116,148,246,315,418,468,501,592,629.'
+    evidence:
+    - reference: https://files.rcsb.org/download/9S2T.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: 9S2T version 1.0, released 2025-07-30; Atom and unobserved-residue/atom
+        tables; independently grouped.
+  - subject: structure
+    predicate: has_author_assigned_assembly
+    object: dimer
+    notes: Assembly 1 is author-defined with operations x,y,z and -x,-y,z, generating
+      a dimer from one asymmetric-unit chain. Light scattering is the deposited support
+      annotation, not an independently supplied new raw solution dataset or direct
+      native-cell stoichiometry measurement.
+    evidence:
+    - reference: https://files.rcsb.org/download/9S2T.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: 9S2T version 1.0, released 2025-07-30; Assembly, operator and author-evidence
+        tables.
+  - subject: structure
+    predicate: contains_deposited_ion
+    object: iron
+    notes: The single FE residue, author number 706, is modeled at occupancy 0.25.
+      FE(III) is the deposited chemical identity, not an independent determination
+      of oxidation state or evidence that NovN physiologically requires iron. No modeled
+      ATP, Mg or carbamoyl phosphate is present.
+    evidence:
+    - reference: https://files.rcsb.org/download/9S2T.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: 9S2T version 1.0, released 2025-07-30; Chemical-component and atom records.
+  - subject: iron
+    predicate: has_selected_coordinate_neighbors
+    object: contacts
+    notes: Independent Euclidean distances from Fe706 are Asp333 OD1 1.970 A, water842
+      O 2.190 A, His133 NE2 2.251 A, Asp156 OD1 2.291 A, His137 NE2 2.325 A and water1083
+      O 2.467 A. The six deposited metalc connections agree. These are coordinate-derived
+      geometry, not metal-binding affinity, catalytic necessity or measured turnover.
+    evidence:
+    - reference: https://files.rcsb.org/download/9S2T.cif
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent atom selection/distance calculations and struct_conn comparison.
+  - subject: iron
+    predicate: has_validation_context
+    object: quality
+    notes: The 2026-03-08 validation report gives Fe706 RSCC 0.98, RSR 0.06 and B
+      27 A^2 with one atom below 0.9 occupancy, consistent with the CIF 0.25. Its
+      displayed density contours are 0.7 rmsd 2mFo-DFc and 3 rmsd difference density.
+      Asp156 has a CA-CB-CG angle outlier Z 5.44. These quality observations do not
+      independently identify the element, oxidation state or catalytic role.
+    evidence:
+    - reference: https://files.rcsb.org/validation/view/9s2t_full_validation.pdf
+      evidence_type: DATABASE_ASSERTION
+      notes: Report pages 4,19,26 and protein-geometry table; full text read, selected
+        pages visually checked.
+  - subject: structure
+    predicate: contains_deposited_ions
+    object: phosphate
+    notes: Six phosphate ions comprise thirty atom records. Validation gives phosphate705
+      RSCC 0.73, RSR 0.22, B 116-134 A^2, and phosphate707 RSCC 0.80/RSR 0.16. The
+      phosphates are not equally well fitted catalytic groups or evidence for bound
+      carbamoyl phosphate.
+    evidence:
+    - reference: https://files.rcsb.org/download/9S2T.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: 9S2T version 1.0, released 2025-07-30; Heteroatom inventory.
+    - reference: https://files.rcsb.org/validation/view/9s2t_full_validation.pdf
+      evidence_type: DATABASE_ASSERTION
+      notes: Ligand-quality table, report p.19.
+  - subject: structure
+    predicate: has_solvent_inventory
+    object: water
+    notes: 'There are 434 distinct water residues represented by 441 atom records:
+      seven waters have alternate positions. Neither count should be substituted for
+      the other or interpreted as catalytic-water occupancy.'
+    evidence:
+    - reference: https://files.rcsb.org/download/9S2T.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: 9S2T version 1.0, released 2025-07-30; Independent residue/atom grouping.
+    - reference: https://files.rcsb.org/validation/view/9s2t_full_validation.pdf
+      evidence_type: DATABASE_ASSERTION
+      notes: Composition table, report p.4.
+  - subject: structure
+    predicate: constrains_mechanistic_interpretation
+    object: limits
+    notes: The only modeled nonprotein species are phosphate, Fe and water. No ATP,
+      Mg, carbamoyl phosphate, organic acceptor or novobiocin product is modeled.
+      This deposit therefore does not supply a catalytic substrate complex or establish
+      an iron requirement. The absence of modeled species is not evidence that the
+      enzyme cannot bind them in other conditions.
+    evidence:
+    - reference: https://files.rcsb.org/download/9S2T.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: 9S2T version 1.0, released 2025-07-30; Complete heteroatom inventory.
+    - reference: https://files.rcsb.org/download/9S2T.cif
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator interpretation bounded by deposited coordinates.
+curation_history:
+- timestamp: '2026-10-04T22:05:23Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cathomycin-novn-9s2t-structure-and-partial-metal-limits with source-checked
+    NovN evidence and review #560 limits.'
+  llm_assisted: true

@@ -159,6 +159,33 @@ discussions:
   prompt: ChEBI calls this structure 'mupirocin' and MIBiG calls it 'pseudomonic acid
     A'. They share a Standard InChIKey, so if the names denote different compounds
     then one upstream record has the wrong structure. Check which.
+causal_graph_refs:
+- mupirocin-2022-native-genetic-phenotypes
+- mupirocin-2022-bounded-nmr-partner-tests
+- mupirocin-2022-coupled-first-extension
+- mupirocin-2022-mupe-surrogate-reduction
+- mupirocin-2022-coupled-second-extension
+- mupirocin-2022-mmpb-ks-self-loading
+- mupirocin-2022-mmpb-ks-third-extension
+- mupirocin-2022-bounded-dh-domain-tests
+- mupirocin-2020-priming-coupled-starter-assays
+- mupirocin-2020-priming-cross-origin-loading
+- mupirocin-2020-priming-cross-origin-reduction
+- mupirocin-2020-priming-a-carrier-substitution-controls
+- mupirocin-2023-mupa-native-deletion-phenotypes
+- mupirocin-2023-mupa-bounded-nmr-partner-tests
+- mupirocin-2023-mupa-carrier-dependent-ms-assays
+- mupirocin-2023-mupa-free-substrate-negative-controls
+- mupirocin-2023-mupa-isotope-nmr-ms-readouts
+- mupirocin-2023-mupa-bounded-ks-transfer
+- mupirocin-2017-muppv-native-deletion-metabolites
+- mupirocin-2017-muppv-desepoxy-feeding
+- mupirocin-2017-muppv-bounded-functional-proposals
+- mupirocin-2007-tailoring-cf-single-mutant-phenotypes
+- mupirocin-2007-tailoring-ouve-single-mutant-phenotypes
+- mupirocin-2007-tailoring-c-double-mutants-and-order
+- mupirocin-2007-muphjk-bounded-genetic-proposals
+- mupirocin-2001-mupri-regulatory-deletions
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -168,3 +195,145 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-06T05:42:46Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added eight exact-owner BIOSYNTHESIS components,159nodes/218DOI-or-URL-cited
+    edges, for MmpF,MmpB,MmpD,MupB,MupD,MupE,MacpA,MacpB,MacpD and mixed-origin TacpB.
+    Exact AF318063.3 CDS/GenPept/current UniProt sequence audits ground nine native
+    references; FN689524.1 CDS/GenPept/UniParc grounds TacpB CBK62717.1, with deleted
+    F8J3F1 rejected. DOI10.1002/anie.202212393 main text supports separate genetic,NMR,coupled
+    DCC1/DCC2, MupE surrogate-reduction,MmpB-KS self-loading,DCC3 and DH-domain negative-assay
+    graphs. NMR ACP5,acceptor-substitution and C5/C6 controls remain bounded to the
+    inspected text. Native references remain distinct from engineered,isotope-labelled,excised-domain
+    and acyl-loaded preparations. TacpB NMR is not direct MacpB binding; self-loading
+    is not turnover; coupled assays do not imply individual sufficiency. Source-assigned
+    products and negative results remain bounded. One exact two-word HTML snippet
+    manually checked and audited across corpus DOI/PMID/bothPMC aliases. SI inaccessible
+    and unread; figures not visually inspected. No complete engineered-sequence,kinetic,stable-complex,
+    native timing or full-pathway reconstitution claim. Addressed author-agent issues#599/#600;
+    not independent approval,exhaustive paper annotation or full-record sign-off.
+    Owner is exact pseudomonic acid A,not clinical mupirocin mixture. Preserved source
+    fields,stereochemistry,SEEDED status,discussion,AntibioticMech link and prior
+    history.
+  llm_assisted: true
+- timestamp: '2026-10-06T06:29:40Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added four exact-owner BIOSYNTHESIS components,74nodes/93DOI-or-URL-cited
+    edges, for supplement-bounded priming-cassette assays. Native MupQ/Q8RL54 and
+    MupS/Q8RL53 CDS/GenPept/current UniProt matches supplement reused MacpA/Q8RL70
+    and MacpD/Q8RL52. Mixed-origin TacpA/CBK62742.1,TacpD/CBK62719.1,TmlQ/CBK62721.1,TmlS/CBK62720.1
+    use exact native CDS/GenPept/UniParc matches; deleted UniProt entries are not
+    selected. DOI10.1021/acschembio.9b00969.s001 supports coupled starter/boiled-control,swapped
+    carrier-loading,mixed-origin reduction and A-carrier substitution graphs. Publisher
+    supplement text and relevant rendered figures/tables inspected; main article inaccessible
+    and unread. TableS1/native comparisons distinguish tagged constructs,MacpD C80A
+    and TmlQ initiator-M omission; no assay-by-assay stock identity asserted. Joint
+    boiled Q/S control is not individual omission; partial intact mass is not decisive
+    without Ppant; bis-thioesters are not reduced endpoints; high-energy-MS decarboxylation
+    is not a biosynthetic enzyme. One exact three-word snippet qualifies an unshown
+    MupS substitution. Addressed author-agent issue#601; not independent approval
+    or full-record sign-off. No complete native reconstitution,uninspected recipes
+    or numerical kinetics inferred. Preserved all eight older graphs/component bytes,source
+    fields,stereochemistry,SEEDED status,name discussion,AntibioticMech link and prior
+    owner history. Exact PAA owner, not the clinical mupirocin mixture.
+  llm_assisted: true
+- timestamp: '2026-10-06T07:10:52Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added six exact-owner BIOSYNTHESIS components,101nodes/130DOI-or-URL-cited
+    edges, for main-text-bounded MupA deletion,NMR,carrier-assay,free-substrate,isotope-readout
+    and KS-transfer evidence in DOI10.1002/anie.202312514. Exact CDS/table11/GenPept/UniProt
+    audits ground native MupA/Q9AH80,MmpA/Q8RL76 and reused MmpD/Q8RL72 from NCIMB10586;
+    Fre/P0AEN1 matches the paper-named M61182 deposit but remains an E.coli K12 surrogate,
+    not a native cluster reductase. Full native parents and ungrounded excised,tagged,
+    acylated or isotope-labelled preparations remain distinct. KS0 native28..570 matches
+    both versioned MmpA parents,which differ outside that segment; exact-version citations
+    support the curator comparison. Residual PAA,source10585/10586 strain discrepancy,
+    substrate9 wording inconsistency,three separate NMR pairs and assay-specific negative
+    recipes are retained. Coupled MS/Ppant and isotope-substrate depletion do not
+    establish a directly observed transient hydroxylated-carbon NMR peak. KS transfer
+    assignments retain observed/calculated mass disagreement and unresolved alpha-hydroxylated
+    transfer. Two exact snippets,total7words,manually rechecked in publisher HTML
+    and audited across corpus DOI/PMID/PMC aliases. Main scientific text/captions
+    inspected; figure images not visually inspected and SI inaccessible/unread. No
+    complete assay-stock,quantitative kinetic,stable-complex,native pathway-reconstitution
+    or full-record sign-off claim. Addressed author-agent issue#606,not independent
+    approval. Preserved all12older graph objects/component bytes,source fields,stereochemistry,SEEDED
+    status,name discussion, AntibioticMech link and prior history. Exact PAA owner,not
+    clinical mupirocin mixture.
+  llm_assisted: true
+- timestamp: '2026-10-06T08:10:59Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added three exact-owner BIOSYNTHESIS components, 31 nodes and 33 DOI-or-URL-cited
+    edges, from DOI10.1002/anie.201611590. Native MupP/Q8RL55, MupV/Q8RL47, MmpE/Q8RL60
+    and MupW/Q8RL46 match AF318063.3 CDS-aware table-11 translations, versioned GenPept
+    and current UniProt sequences. Rejected name-collision A0ACD4XY39; native references
+    do not identify full engineered stocks. Separate deletion-metabolite, desepoxy
+    feeding and proposed-function graphs preserve experimental versus inferred evidence
+    and PA-C versus PA-A identity. Supporting information unread; retained author
+    manuscript main text fully read and relevant Schemes 1-3/Figures 1-2 visually
+    inspected. One exact five-word snippet manually checked; corpus DOI/PMID/author-URL
+    aliases total seven quoted words including two previously curated words. Author-agent
+    issue#608 fixed by separating mutant alleles; not independent approval. No isolated-enzyme
+    turnover, full pathway reconstitution or full-record sign-off. Preserved all 18
+    older graphs/component bytes, source fields, stereochemistry, SEEDED status, name
+    discussion, AntibioticMech link and previous history. Exact PA-A owner, not the
+    mixture.
+  llm_assisted: true
+- timestamp: '2026-10-06T08:50:09Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added three exact-owner BIOSYNTHESIS components, 46 nodes and 62 DOI-or-URL-cited
+    edges, bounded by the inspected primary abstract DOI10.1074/jbc.M701490200/PMID17383964.
+    Five additional native sequence examples (MupC/Q8RL71, MupF/Q8RL66, MupO/Q8RL56,
+    MacpE/Q8RL50 and MupU/Q8RL48) plus reused MupV/Q8RL47 match AF318063.3 CDS-aware
+    table-11 translations, versioned GenPept and current UniProt. NCIMB10586 native
+    references are deliberately selected gene-matched examples, not confirmed historical
+    experimental stocks; the abstract does not specify strain and MupO version2 postdates
+    the experiment. Full text, figures and supporting information unread. Distinct
+    single/double-mutant alleles, source-assigned metabolites, eight bounded PA-A-negative
+    culture reports and three inferred ordering edges; no silent MacpE ordering. One
+    exact five-word snippet verified in retained primary PubMed XML; source DOI/PMID/PII
+    aliases checked. No measured-zero yield, purified-enzyme sufficiency, stable complex
+    or full-record sign-off. Preserved all21 previous graph objects/component bytes,
+    source fields, stereochemistry, SEEDED status, name discussion, AntibioticMech
+    link and prior history. Exact PA-A owner, not the clinical mixture.
+  llm_assisted: true
+- timestamp: '2026-10-06T09:34:40Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added one exact-owner BIOSYNTHESIS component, 13 nodes and 15 DOI-or-URL-cited
+    edges, bounded to the inspected primary abstract DOI10.1074/jbc.M701490200/PMID17383964.
+    Three native sequence examples (MupH/Q8RL63, MupJ/Q8RL62 and MupK/Q8RL61) match
+    AF318063.3 CDS-aware table-11 translations, versioned GenPept and current UniProt.
+    Native NCIMB10586 examples are not confirmed historical stocks; the abstract gives
+    no strain. Study gene products and loci remain separately ungrounded. Paired mupJ/mupK
+    cotranscription requirement is an abstract-level observation; methyl addition
+    and cotranslational coassembly remain inferred, not isolated catalysis or measured
+    physical complex formation. One three-word exact snippet verified in retained
+    PubMed XML; eight total source words with the prior tailoring graphs. Full text,
+    figures and SI unread; no assay endpoint, quantitative yield, carbon numbering,
+    stoichiometry or direct PA-A formation asserted. Preserved all24 prior graph objects/component
+    bytes, source fields, stereochemistry, SEEDED status, name discussion, AntibioticMech
+    link and prior history. No full-record sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-06T10:13:05Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added one exact-owner BIOSYNTHESIS component, 8 nodes and 8 DOI-or-URL-cited
+    edges, bounded to the inspected primary abstract DOI10.1099/00221287-147-8-2127/PMID11495990.
+    Two native NCIMB10586 references MupR/Q9AH79 and MupI/Q9AH78 match AF318063.3
+    CDS-aware table-11 translations, independently retrieved GenPept and current UniProt.
+    Native proteins, ungrounded deletion alleles and deletion cultures remain distinct;
+    no exact mutant junctions or complete historical stock sequences asserted. Generic
+    mupirocin biosynthesis readout remains congener-unresolved, not a PA-A-specific
+    yield or measured zero. No direct DNA binding, purified signal synthesis, exact
+    signal identity or complete regulatory circuit inferred. Four-word exact snippet
+    verified in retained PubMed XML. Full main text, figures and SI unread. Preserved
+    all25 prior graph objects/component bytes, source fields, stereochemistry, SEEDED
+    status, name discussion, AntibioticMech link and prior history. No full-record
+    sign-off.
+  llm_assisted: true

@@ -341,6 +341,108 @@ discussions:
   prompt: ChEBI calls this structure 'cardol' and MIBiG calls it 'Adipostatin A'.
     They share a Standard InChIKey, so if the names denote different compounds then
     one upstream record has the wrong structure. Check which.
+causal_graphs:
+- graph_id: cardol-agqb-database-substrate-hydroxylation
+  scope: BIOSYNTHESIS
+  description: MITE-reported hydroxylation of exact linear-C15 cardol as a substrate
+    in an alkylresorcinol tailoring context. AgqB's native Actinoplanes missouriensis
+    431 reference is sequence-verified. This graph consumes cardol; it does not establish
+    cardol production by that organism. Current UniProt automated dibenzothiophene
+    annotations are not cardol activity evidence. The owner's distinct source producer/locus
+    and open name disagreement are retained; not full-record sign-off.
+  nodes:
+  - node_id: agqb_reference
+    label: AgqB native 431 reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:I0HIZ0
+  - node_id: cardol
+    label: cardol
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:2120
+  - node_id: hydroxylation
+    label: MITE-reported AgqB substrate hydroxylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hydroxylated_product
+    label: AgqB hydroxylated linear-C15 example product
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: agqb_reference
+    predicate: is_database_reported_catalyst_of
+    object: hydroxylation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000081.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000081 version 3, active, names AgqB/I0HIZ0/BAL92977.1 and BGC0001077.
+        Its fourth enumerated reaction hydroxylates linear-C15 alkylresorcinol; the
+        product is flagged intermediate. The heterologous expression code is database-level;
+        the cited primary paper was inaccessible. This is not independently inspected
+        primary assay evidence.
+      snippet: Hydroxylation of alkylresorcinol substrate.
+    - reference: https://www.uniprot.org/uniprotkb/I0HIZ0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Current TrEMBL entry56/sequence1,384aa, agqB/AMIS_77570, taxon512565,
+        inferred-from-homology existence. Direct EMBL AP012319/BAL92977.1 link and
+        full sequence support identity. Its automated ARBA dibenzothiophene name,
+        reactions and pathway, and predicted cofactor/domain annotations, are not
+        independent alkylresorcinol evidence. No FUNCTION comment.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAL92977.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Complete independent384-residue GenPept alkylresorcinol hydroxylase reference,
+        agqB/AMIS_77570, A.missouriensis431, NBRC102363/taxon512565; complete coded_by
+        inspected. This reference does not establish a historical assay stock or construct.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AP012319.1?from=8381000&to=8382500
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Complete1155-nt minus-strand CDS8381171..8382325 in a forward 1501-bp
+        genomic window8381000..8382500. Codon1/table11 translation equals native annotation,
+        independent BAL92977.1 and current I0HIZ0, all384aa. Independent absolute
+        coded_by coordinates map to local 172..1326 and yield identical DNA; native431/NBRC102363/taxon512565
+        source qualifiers match. A full-CDS window, not a full-genome read.
+    notes: MITE supplies functional attribution; native translation and current UniProt
+      establish identity only. No primary assay, native cofactor occupancy, electron
+      donor, rate, site, phenotype or complex is adopted.
+  - subject: cardol
+    predicate: is_database_example_substrate_of
+    object: hydroxylation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000081.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000081 version 3, active, names AgqB/I0HIZ0/BAL92977.1 and BGC0001077.
+        Its fourth enumerated reaction hydroxylates linear-C15 alkylresorcinol; the
+        product is flagged intermediate. The heterologous expression code is database-level;
+        the cited primary paper was inaccessible. This is not independently inspected
+        primary assay evidence.
+    notes: The fourth MITE example substrate matches full key KVVSCMOUFCNCGX-UHFFFAOYSA-N
+      and complete stereo in the pinned repository-helper/RDKit2026.03.5 screen. It
+      is linear-C15 cardol, not the other branched-chain examples. The owner's existing
+      cardol/Adipostatin-A name disagreement stays OPEN. No upstream synthesis or
+      exact native assay substrate is inferred.
+  - subject: hydroxylation
+    predicate: has_database_example_product
+    object: hydroxylated_product
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000081.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000081 version 3, active, names AgqB/I0HIZ0/BAL92977.1 and BGC0001077.
+        Its fourth enumerated reaction hydroxylates linear-C15 alkylresorcinol; the
+        product is flagged intermediate. The heterologous expression code is database-level;
+        the cited primary paper was inaccessible. This is not independently inspected
+        primary assay evidence.
+    notes: The encoded hydroxylated product is intermediate and remains externally
+      ungrounded; it is not cardol. No downstream sequence or pathway finality is
+      inferred. MITE's BGC0001077 and the AgqB reference organism are not transferred
+      to the owner's source producer Candidatus Entotheonella sp./BGC0002332. Existing
+      SOURCE_ASSERTION/CLUSTER_DEMONSTRATED grades, occurrences and SEEDED status
+      are preserved.
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -350,3 +452,24 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-07T08:24:11Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added a MITE-database-asserted AgqB hydroxylation context with exact linear-C15
+    cardol as SUBSTRATE: four nodes, three qualified edges with stable URLs and one
+    exact four-word snippet. UniProtKB:I0HIZ0 is the native Actinoplanes missouriensis
+    431/NBRC102363/taxon512565 reference, matching full1155-nt/table11 minus-CDS 8381171..8382325
+    on AP012319.1, independent BAL92977.1 and all384residues. The complete CDS was
+    inspected within a1501-bp forward genomic window, not the full genome. Absolute
+    coded_by/window coordinates and source qualifiers agree. Current TrEMBL56/seq1
+    directly cross-links the deposit; its automated ARBA dibenzothiophene reactions
+    and predicted cofactor/domain annotations are not independent cardol evidence.
+    Pinned MITE fourth substrate matches the owner''s full key and complete stereo;
+    the hydroxylated product remains ungrounded and intermediate. The primary paper
+    was inaccessible. No historical assay stock, construct, native cofactor, electron
+    donor, rate, site, phenotype, complex, upstream synthesis, downstream order or
+    pathway finality is inferred. AgqB consumes cardol; no cardol production claim
+    or BGC0001077 transfer is added. Preserved all source fields, Entotheonella/BGC0002332
+    attribution, SOURCE_ASSERTION/CLUSTER_DEMONSTRATED grades, occurrences, open cardol/Adipostatin-A
+    name disagreement, SEEDED status and append-only history. Not full-record sign-off.'
+  llm_assisted: true

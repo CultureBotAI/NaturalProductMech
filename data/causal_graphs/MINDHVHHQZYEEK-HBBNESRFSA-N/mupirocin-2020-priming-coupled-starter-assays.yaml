@@ -1,0 +1,525 @@
+record_id: CHEBI:7025
+standard_inchi_key: MINDHVHHQZYEEK-HBBNESRFSA-N
+graph:
+  graph_id: mupirocin-2020-priming-coupled-starter-assays
+  scope: BIOSYNTHESIS
+  description: Coupled MupQ/MupS starter assay, joint boiled control and lower-NADH
+    partial-turnover readout. Candidate owner CHEBI:7025 denotes exact pseudomonic
+    acid A, not the clinical mixture. Mixed-origin carrier/enzyme tests are methodological
+    cross-compatibility evidence, not native thiomarinol or complete mupirocin biosynthesis.
+    Supplement-only partial curation,not full-record sign-off.
+  nodes:
+  - node_id: mup_cluster
+    label: Native NCIMB 10586 mupirocin locus
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000182
+  - node_id: MacpD
+    label: Native MacpD sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL52
+  - node_id: MacpD_prep
+    label: Study holo-MacpD preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: MupQ
+    label: Native MupQ sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL54
+  - node_id: MupQ_prep
+    label: Study MupQ preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: MupS
+    label: Native MupS sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL53
+  - node_id: MupS_prep
+    label: Study MupS preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: malonyl
+    label: Supplied malonyl-CoA
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: atp
+    label: Supplied ATP
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: nadh
+    label: Supplied NADH
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: standard
+    label: S5A coupled starter-unit assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: product
+    label: Source-assigned 3-hydroxypropionyl-MacpD
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: boiled_Q
+    label: Boiled MupQ preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: boiled_S
+    label: Boiled MupS preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: control
+    label: S5B joint boiled-protein control
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: control_readout
+    label: Holo-MacpD Ppant ion in boiled control
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: limited
+    label: S5C-E lower-NADH assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: bis
+    label: Source-assigned MacpD/CoA bis-thioester
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: partial
+    label: Source-assigned MacpD malonic-semialdehyde species
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: mup_cluster
+    predicate: encodes_native_reference
+    object: MacpD
+    notes: AF318063.3 CDS63031..63351(+),1-based inclusive; AAM12933.1,106aa; native
+      NCIMB 10586,taxon294. Exact CDS-aware table11 translation/GenPept/current UniProt
+      match; current entry unreviewed,sequenceversion1. Native identity is not complete
+      engineered assay-preparation identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12933.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL52
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and source-identity audit.
+      retrieved_on: '2026-10-06'
+  - subject: MacpD
+    predicate: is_native_sequence_reference_for
+    object: MacpD_prep
+    notes: 'TableS1 body: C80A; full-length native reference does not identify this
+      variant. Reported N-terminal extension: MHHHHHHGKPIPNPLLGLDSTENLYFQGIDPFT. FigureS10
+      associates C80A with structural studies. Do not infer the allele of every S5/S6
+      assay stock solely from the table; the graph uses the study preparation label.
+      Apo characterization and holo/acylated reaction states are distinct. No native
+      untagged proteoform asserted.'
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher-deposited supplement, TableS1,pages15-16; FiguresS3-S4,pages6-7;
+        FigureS10,page13, text and rendered page inspected. Main article was inaccessible;
+        no complete main-method or laboratory-stock identity claim. No numerical kinetics
+        or native full-pathway reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: mup_cluster
+    predicate: encodes_native_reference
+    object: MupQ
+    notes: AF318063.3 CDS60912..62267(+),1-based inclusive; AAM12931.1,451aa; native
+      NCIMB 10586,taxon294. Exact CDS-aware table11 translation/GenPept/current UniProt
+      match; current entry unreviewed,sequenceversion1. Native identity is not complete
+      engineered assay-preparation identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12931.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL54
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and source-identity audit.
+      retrieved_on: '2026-10-06'
+  - subject: MupQ
+    predicate: is_native_sequence_reference_for
+    object: MupQ_prep
+    notes: 'TableS1 body: native body matches exactly; N-terminal tag remains engineered.
+      Reported N-terminal extension: MAHHHHHHSSGLEVLFQGP. No native untagged proteoform
+      asserted.'
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher-deposited supplement, TableS1,pages15-16; FiguresS3-S4,pages6-7,
+        text and rendered page inspected. Main article was inaccessible; no complete
+        main-method or laboratory-stock identity claim. No numerical kinetics or native
+        full-pathway reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: mup_cluster
+    predicate: encodes_native_reference
+    object: MupS
+    notes: AF318063.3 CDS62264..63037(+),1-based inclusive; AAM12932.1,257aa; native
+      NCIMB 10586,taxon294. Exact CDS-aware table11 translation/GenPept/current UniProt
+      match; current entry unreviewed,sequenceversion1. Native identity is not complete
+      engineered assay-preparation identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12932.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL53
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and source-identity audit.
+      retrieved_on: '2026-10-06'
+  - subject: MupS
+    predicate: is_native_sequence_reference_for
+    object: MupS_prep
+    notes: 'TableS1 body: native body matches exactly; N-terminal tag remains engineered.
+      Reported N-terminal extension: MAHHHHHHSSGLEVLFQGP. No native untagged proteoform
+      asserted.'
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher-deposited supplement, TableS1,pages15-16; FiguresS3-S4,pages6-7,
+        text and rendered page inspected. Main article was inaccessible; no complete
+        main-method or laboratory-stock identity claim. No numerical kinetics or native
+        full-pathway reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: MacpD_prep
+    predicate: was_component_in
+    object: standard
+    notes: S5A specifies holo-MacpD100uM,MupQ5uM,MupS5uM,malonyl-CoA1mM,ATP1mM,NADH1mM.
+      These are assay concentrations,not kinetic constants; no unreported incubation
+      details imported.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS5A-E,page8, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: MupQ_prep
+    predicate: was_component_in
+    object: standard
+    notes: S5A specifies holo-MacpD100uM,MupQ5uM,MupS5uM,malonyl-CoA1mM,ATP1mM,NADH1mM.
+      These are assay concentrations,not kinetic constants; no unreported incubation
+      details imported.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS5A-E,page8, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: MupS_prep
+    predicate: was_component_in
+    object: standard
+    notes: S5A specifies holo-MacpD100uM,MupQ5uM,MupS5uM,malonyl-CoA1mM,ATP1mM,NADH1mM.
+      These are assay concentrations,not kinetic constants; no unreported incubation
+      details imported.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS5A-E,page8, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: malonyl
+    predicate: was_component_in
+    object: standard
+    notes: S5A specifies holo-MacpD100uM,MupQ5uM,MupS5uM,malonyl-CoA1mM,ATP1mM,NADH1mM.
+      These are assay concentrations,not kinetic constants; no unreported incubation
+      details imported.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS5A-E,page8, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: atp
+    predicate: was_component_in
+    object: standard
+    notes: S5A specifies holo-MacpD100uM,MupQ5uM,MupS5uM,malonyl-CoA1mM,ATP1mM,NADH1mM.
+      These are assay concentrations,not kinetic constants; no unreported incubation
+      details imported.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS5A-E,page8, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: nadh
+    predicate: was_component_in
+    object: standard
+    notes: S5A specifies holo-MacpD100uM,MupQ5uM,MupS5uM,malonyl-CoA1mM,ATP1mM,NADH1mM.
+      These are assay concentrations,not kinetic constants; no unreported incubation
+      details imported.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS5A-E,page8, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: standard
+    predicate: yielded_source_assigned_product
+    object: product
+    notes: Ppant-ejection mass spectrum supports the source's 3HP-MacpD assignment
+      in the coupled mixture. This does not independently resolve every catalytic
+      substep or establish native full-pathway flux.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS5A-E,page8, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: MupQ_prep
+    predicate: was_heat_treated_for
+    object: boiled_Q
+    notes: Both proteins were boiled in the same control; heat-treatment duration/temperature
+      not adopted.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS5A-E,page8, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: MupS_prep
+    predicate: was_heat_treated_for
+    object: boiled_S
+    notes: Both proteins were boiled in the same control; heat-treatment duration/temperature
+      not adopted.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS5A-E,page8, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: MacpD_prep
+    predicate: was_component_in
+    object: control
+    notes: S5B repeats S5A with both MupQ and MupS boiled; not a separate single-protein
+      omission test.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS5A-E,page8, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: boiled_Q
+    predicate: was_component_in
+    object: control
+    notes: S5B repeats S5A with both MupQ and MupS boiled; not a separate single-protein
+      omission test.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS5A-E,page8, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: boiled_S
+    predicate: was_component_in
+    object: control
+    notes: S5B repeats S5A with both MupQ and MupS boiled; not a separate single-protein
+      omission test.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS5A-E,page8, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: malonyl
+    predicate: was_component_in
+    object: control
+    notes: S5B repeats S5A with both MupQ and MupS boiled; not a separate single-protein
+      omission test.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS5A-E,page8, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: atp
+    predicate: was_component_in
+    object: control
+    notes: S5B repeats S5A with both MupQ and MupS boiled; not a separate single-protein
+      omission test.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS5A-E,page8, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: nadh
+    predicate: was_component_in
+    object: control
+    notes: S5B repeats S5A with both MupQ and MupS boiled; not a separate single-protein
+      omission test.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS5A-E,page8, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: control
+    predicate: yielded_reported_readout
+    object: control_readout
+    notes: The ejected ion was assigned to unmodified holo-MacpD. No universal zero-activity
+      or numerical detection limit inferred.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS5A-E,page8, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: MacpD_prep
+    predicate: was_component_in
+    object: limited
+    notes: S5C lists MupQ5uM,MupS5uM and NADH100uM, sampled at60min. It does not restate
+      all S5A components/concentrations; no complete ATP/ACP/malonyl-CoA recipe inferred
+      for this condition.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS5A-E,page8, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: MupQ_prep
+    predicate: was_component_in
+    object: limited
+    notes: S5C lists MupQ5uM,MupS5uM and NADH100uM, sampled at60min. It does not restate
+      all S5A components/concentrations; no complete ATP/ACP/malonyl-CoA recipe inferred
+      for this condition.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS5A-E,page8, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: MupS_prep
+    predicate: was_component_in
+    object: limited
+    notes: S5C lists MupQ5uM,MupS5uM and NADH100uM, sampled at60min. It does not restate
+      all S5A components/concentrations; no complete ATP/ACP/malonyl-CoA recipe inferred
+      for this condition.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS5A-E,page8, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: malonyl
+    predicate: was_component_in
+    object: limited
+    notes: S5C lists MupQ5uM,MupS5uM and NADH100uM, sampled at60min. It does not restate
+      all S5A components/concentrations; no complete ATP/ACP/malonyl-CoA recipe inferred
+      for this condition.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS5A-E,page8, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: nadh
+    predicate: was_component_in
+    object: limited
+    notes: S5C lists MupQ5uM,MupS5uM and NADH100uM, sampled at60min. It does not restate
+      all S5A components/concentrations; no complete ATP/ACP/malonyl-CoA recipe inferred
+      for this condition.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS5A-E,page8, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: limited
+    predicate: yielded_source_assigned_product
+    object: bis
+    notes: S5D deconvolved mass was assigned to the unreduced MacpD/CoA bis-thioester.
+      No numerical conversion yield adopted.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS5A-E,page8, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: limited
+    predicate: yielded_source_assigned_product
+    object: partial
+    notes: S5D intact mass alone lacked resolution to distinguish partial from full
+      reduction; S5E Ppant ejection supports the reported semialdehyde assignment.
+      Do not present intact mass alone as decisive or claim purity.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS5A-E,page8, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T06:29:40Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component for CHEBI:7025,owner baseline commit afe1136aab9e132b8440579b27f44e19b9f79fc9;
+    no migration or alteration of prior components. Coupled MupQ/MupS starter assay,
+    joint boiled control and lower-NADH partial-turnover readout. Candidate owner
+    CHEBI:7025 denotes exact pseudomonic acid A, not the clinical mixture. Mixed-origin
+    carrier/enzyme tests are methodological cross-compatibility evidence, not native
+    thiomarinol or complete mupirocin biosynthesis. Supplement-only partial curation,not
+    full-record sign-off. Every edge cites the publisher supplement DOI10.1021/acschembio.9b00969.s001
+    or official native-sequence URLs. Relevant rendered supplement pages inspected;
+    main article inaccessible/unread. Native references do not identify complete assay
+    stocks. Author-agent issue#601 addressed,not independent approval or full-record
+    sign-off.
+  llm_assisted: true

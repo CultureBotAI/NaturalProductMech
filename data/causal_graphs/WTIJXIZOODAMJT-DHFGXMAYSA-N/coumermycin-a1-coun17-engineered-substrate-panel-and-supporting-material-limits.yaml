@@ -1,0 +1,218 @@
+record_id: CHEBI:3907
+standard_inchi_key: WTIJXIZOODAMJT-DHFGXMAYSA-N
+graph:
+  graph_id: coumermycin-a1-coun17-engineered-substrate-panel-and-supporting-material-limits
+  scope: BIOSYNTHESIS
+  description: 'Abstract-level substrate breadth with separately inspected chemical
+    supporting material. Partial curation; review #570. Native references, experimental
+    preparations and inferred states remain distinct. Source fields and SEEDED status
+    are unchanged.'
+  nodes:
+  - node_id: native1
+    label: Native CouN1 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8U6
+  - node_id: native7
+    label: Native CouN7 sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8U0
+  - node_id: carrier
+    label: Experimental CouN1
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: enzyme
+    label: Experimental CouN7
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: sfp
+    label: Assay Sfp reagent
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: donors
+    label: Synthetic CoA donor panel
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: loading
+    label: Carrier-loading panel
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: loaded
+    label: Acyl-S-CouN1 panel
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: acceptor
+    label: Descarbamoylnovobiocin
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: transfer
+    label: Acyl-transfer panel
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: products
+    label: Reported 21 engineered variants
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: synthesis
+    label: Supporting chemical-donor synthesis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: conflicts
+    label: Supplement name and drawing conflicts
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: limits
+    label: Individual acceptance and identity limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: native1
+    predicate: is_native_reference_for
+    object: carrier
+    notes: Native reference, not an experimental fusion sequence.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8U6
+      evidence_type: DATABASE_ASSERTION
+      notes: Native reference.
+    - reference: DOI:10.1021/bi700433v
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: native7
+    predicate: is_native_reference_for
+    object: enzyme
+    notes: Native reference, not an experimental fusion sequence.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8U0
+      evidence_type: DATABASE_ASSERTION
+      notes: Native reference.
+    - reference: DOI:10.1021/bi700433v
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: carrier
+    predicate: was_substrate_in
+    object: loading
+    notes: Purified carrier tested for priming.
+    evidence:
+    - reference: DOI:10.1021/bi700433v
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: sfp
+    predicate: catalyzed
+    object: loading
+    notes: Assay reagent, not a proven native cluster partner; accession unresolved.
+    evidence:
+    - reference: DOI:10.1021/bi700433v
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: donors
+    predicate: were_tested_in
+    object: loading
+    notes: Synthetic acyl-CoA analogues.
+    evidence:
+    - reference: DOI:10.1021/bi700433v
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: loading
+    predicate: formed_loaded_carrier_forms
+    object: loaded
+    notes: Acyl-carrier thioesters used in the transfer tests.
+    evidence:
+    - reference: DOI:10.1021/bi700433v
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: loaded
+    predicate: were_donors_in
+    object: transfer
+    notes: Carrier-linked substrates.
+    evidence:
+    - reference: DOI:10.1021/bi700433v
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: enzyme
+    predicate: catalyzed
+    object: transfer
+    notes: Acyltransferase tested on the supplied panel.
+    evidence:
+    - reference: DOI:10.1021/bi700433v
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: acceptor
+    predicate: was_acceptor_in
+    object: transfer
+    notes: Transfer to the noviosyl 3-prime hydroxyl.
+    evidence:
+    - reference: DOI:10.1021/bi700433v
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: transfer
+    predicate: yielded_reported_panel
+    object: products
+    notes: Aggregate reported count, not individually resolved product identities
+      or coumermycin congeners.
+    evidence:
+    - reference: DOI:10.1021/bi700433v
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+      snippet: 21 novel variants
+  - subject: synthesis
+    predicate: prepared_reagents_for
+    object: donors
+    notes: The sixteen-page supplement describes chemical synthesis and NMR/MS characterization
+      of donors numbered 5-prime through 27-prime. These are precursor-reagent preparations,
+      not protein purification or an enzyme-activity table.
+    evidence:
+    - reference: DOI:10.1021/bi700433v.s002
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Full PDF text; pages 1,4,9,16 also visually inspected.
+      snippet: Synthesis of CoA substrates.
+  - subject: donors
+    predicate: have_source_label_conflicts
+    object: conflicts
+    notes: For 9-prime, the heading says Thiaoxazole while the reagent text names
+      thiazole and the drawing has N/S. For 17-prime, the heading says 2,5-dimethylisooxazole
+      while reagent text says 3,5-dimethyl. The discrepancies remain unresolved; no
+      exact chemical identifiers are assigned from these headings.
+    evidence:
+    - reference: DOI:10.1021/bi700433v.s002
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PDF pages 4 and 9; text and drawings inspected.
+  - subject: conflicts
+    predicate: constrain_exact_identity
+    object: limits
+    notes: No complete chemical reconstruction or silent correction is asserted.
+    evidence:
+    - reference: DOI:10.1021/bi700433v.s002
+      evidence_type: CURATOR_INFERENCE
+      notes: PDF pages 4 and 9.
+  - subject: products
+    predicate: have_evidence_limit
+    object: limits
+    notes: Do not assign individual yields, rates, stereochemical structures or antibacterial
+      observations from the abstract-level count.
+    evidence:
+    - reference: DOI:10.1021/bi700433v
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract only.
+  - subject: synthesis
+    predicate: does_not_establish_individual_conversion
+    object: limits
+    notes: Twenty-three donor headings (5-prime through 27-prime) are not a one-to-one
+      list of the twenty-one reported products. The inspected supplement cannot establish
+      which two donors failed, or whether that is the explanation for the differing
+      counts.
+    evidence:
+    - reference: DOI:10.1021/bi700433v.s002
+      evidence_type: CURATOR_INFERENCE
+      notes: All sixteen PDF pages read as text; no complete enzyme-activity matrix
+        supplied.
+    - reference: DOI:10.1021/bi700433v
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+curation_history:
+- timestamp: '2026-10-05T05:40:40Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add coumermycin-a1-coun17-engineered-substrate-panel-and-supporting-material-limits;
+    preserve native, assay, source-access and inference limits (#570).
+  llm_assisted: true

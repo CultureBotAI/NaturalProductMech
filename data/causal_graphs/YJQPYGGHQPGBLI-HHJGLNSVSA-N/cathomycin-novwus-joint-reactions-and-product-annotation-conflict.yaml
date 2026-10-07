@@ -1,0 +1,253 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novwus-joint-reactions-and-product-annotation-conflict
+  scope: BIOSYNTHESIS
+  nodes:
+  - node_id: w
+    label: Thuy 2005 NovW assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: u
+    label: Thuy 2005 NovU assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: s
+    label: Thuy 2005 NovS assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: host
+    label: Reported E. coli expression host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: substrate
+    label: dTDP-4-keto-6-deoxy-D-glucose
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: joint
+    label: Reported joint NovW/NovU conversion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: methylated
+    label: Source-assigned dTDP-4-keto-6-deoxy-5-C-methyl-L-lyxo-hexose
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: w_reaction
+    label: Reported NovW-only precursor treatment
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: w_product
+    label: NovW-treated substrate supplied to NovS
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: s_reaction
+    label: Reported NADH-dependent NovS reduction
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: nadh
+    label: NADH assay reagent
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: rhamnose
+    label: Abstract-assigned dTDP-L-rhamnose
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: conflict
+    label: NovS primary/database product discrepancy
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: order
+    label: Unresolved NovW/NovU physiological ordering
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: limits
+    label: Abstract-level preparation and reaction limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: host
+    predicate: expressed
+    object: w
+    notes: The abstract identifies the host species but does not supply a full fusion
+      sequence or a strain-specific preparation.
+    evidence:
+    - reference: DOI:10.1016/j.abb.2005.01.012
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Primary abstract only; complete methods, tables and figures were not
+        inspected. '
+  - subject: host
+    predicate: expressed
+    object: u
+    notes: The abstract identifies the host species but does not supply a full fusion
+      sequence or a strain-specific preparation.
+    evidence:
+    - reference: DOI:10.1016/j.abb.2005.01.012
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Primary abstract only; complete methods, tables and figures were not
+        inspected. '
+  - subject: host
+    predicate: expressed
+    object: s
+    notes: The abstract identifies the host species but does not supply a full fusion
+      sequence or a strain-specific preparation.
+    evidence:
+    - reference: DOI:10.1016/j.abb.2005.01.012
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Primary abstract only; complete methods, tables and figures were not
+        inspected. '
+  - subject: w
+    predicate: was_used_in
+    object: joint
+    notes: NovW and NovU jointly yielded the named methylated precursor.
+    evidence:
+    - reference: DOI:10.1016/j.abb.2005.01.012
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Primary abstract only; complete methods, tables and figures were not
+        inspected. '
+  - subject: u
+    predicate: was_used_in
+    object: joint
+    notes: Joint enzymatic activity does not demonstrate physical association.
+    evidence:
+    - reference: DOI:10.1016/j.abb.2005.01.012
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Primary abstract only; complete methods, tables and figures were not
+        inspected. '
+  - subject: substrate
+    predicate: was_supplied_to
+    object: joint
+    notes: The named starting sugar is retained without assigning an unverified structure
+      identifier.
+    evidence:
+    - reference: DOI:10.1016/j.abb.2005.01.012
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Primary abstract only; complete methods, tables and figures were not
+        inspected. '
+  - subject: joint
+    predicate: formed_reported_product
+    object: methylated
+    notes: Source-assigned sugar intermediate, not mature antibiotic.
+    evidence:
+    - reference: DOI:10.1016/j.abb.2005.01.012
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Primary abstract only; complete methods, tables and figures were not
+        inspected. '
+  - subject: w
+    predicate: was_used_in
+    object: w_reaction
+    notes: This NovW-only treatment is distinct from joint NovW/NovU turnover.
+    evidence:
+    - reference: DOI:10.1016/j.abb.2005.01.012
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Primary abstract only; complete methods, tables and figures were not
+        inspected. '
+  - subject: substrate
+    predicate: was_supplied_to
+    object: w_reaction
+    notes: The abstract names the same starting sugar.
+    evidence:
+    - reference: DOI:10.1016/j.abb.2005.01.012
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Primary abstract only; complete methods, tables and figures were not
+        inspected. '
+  - subject: w_reaction
+    predicate: supplied
+    object: w_product
+    notes: No exact product stereochemistry is added from the abstract alone.
+    evidence:
+    - reference: DOI:10.1016/j.abb.2005.01.012
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Primary abstract only; complete methods, tables and figures were not
+        inspected. '
+  - subject: w_product
+    predicate: was_supplied_to
+    object: s_reaction
+    notes: The NovS experiment follows the NovW-only treatment.
+    evidence:
+    - reference: DOI:10.1016/j.abb.2005.01.012
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Primary abstract only; complete methods, tables and figures were not
+        inspected. '
+  - subject: s
+    predicate: was_used_in
+    object: s_reaction
+    notes: NovS reduced the supplied NovW-treated material.
+    evidence:
+    - reference: DOI:10.1016/j.abb.2005.01.012
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Primary abstract only; complete methods, tables and figures were not
+        inspected. '
+  - subject: nadh
+    predicate: was_supplied_to
+    object: s_reaction
+    notes: NADH is reported, not NADPH.
+    evidence:
+    - reference: DOI:10.1016/j.abb.2005.01.012
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Primary abstract only; complete methods, tables and figures were not
+        inspected. '
+      snippet: in the presence of NADH
+  - subject: s_reaction
+    predicate: formed_reported_product
+    object: rhamnose
+    notes: Retain the primary abstract product name.
+    evidence:
+    - reference: DOI:10.1016/j.abb.2005.01.012
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Primary abstract only; complete methods, tables and figures were not
+        inspected. '
+  - subject: rhamnose
+    predicate: has_annotation_conflict
+    object: conflict
+    notes: UniProt NovS instead names dTDP-5-methyl-L-rhamnose for the NovW-derived
+      substrate. Neither the methyl substituent nor a corrected chemical identifier
+      is inferred here.
+    evidence:
+    - reference: DOI:10.1016/j.abb.2005.01.012
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Primary abstract only; complete methods, tables and figures were not
+        inspected. '
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9E9
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed Q9L9E9, entry 70, sequence 1, taxon 193462; retrieved 2026-10-04.
+        FUNCTION annotation.
+  - subject: joint
+    predicate: has_ordering_limit
+    object: order
+    notes: Tello Figure 2 proposes both W-before-U and U-before-W routes. The caption
+      does not establish one physiological order.
+    evidence:
+    - reference: DOI:10.1039/B515763C
+      evidence_type: CURATOR_INFERENCE
+      notes: Author-uploaded primary PDF text, p.1079, Figure 2 caption; all three
+        pages read, figures/table images not visually verified.
+  - subject: order
+    predicate: limits_interpretation
+    object: limits
+    notes: No ordered native pathway or stable NovW/NovU/NovS complex follows from
+      these data.
+    evidence:
+    - reference: DOI:10.1039/B515763C
+      evidence_type: CURATOR_INFERENCE
+      notes: Author-uploaded primary PDF text, p.1079; all three pages read, figures/table
+        images not visually verified.
+  - subject: conflict
+    predicate: limits_interpretation
+    object: limits
+    notes: The full 2005 paper remains uninspected; do not transfer unverified kinetic
+      values, cofactor stoichiometry or construct details.
+    evidence:
+    - reference: DOI:10.1016/j.abb.2005.01.012
+      evidence_type: CURATOR_INFERENCE
+      notes: Boundary of independently inspected abstract.
+  description: 'Primary abstract-level NovW/NovU/NovS reactions, with unresolved product
+    nomenclature and pathway order. Review #564. The BGC0000834 owner retains its
+    unspecified sugar stereocentre and SEEDED status; precursor evidence does not
+    resolve that centre or justify an exact-key novobiocin merge.'
+curation_history:
+- timestamp: '2026-10-05T00:49:45Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cathomycin-novwus-joint-reactions-and-product-annotation-conflict
+    with source-bounded NovW/NovU/NovS evidence and #564 findings.'
+  llm_assisted: true

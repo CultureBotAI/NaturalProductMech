@@ -1,0 +1,382 @@
+record_id: CHEBI:7025
+standard_inchi_key: MINDHVHHQZYEEK-HBBNESRFSA-N
+graph:
+  graph_id: mupirocin-2020-priming-cross-origin-loading
+  scope: BIOSYNTHESIS
+  description: Separate swapped-carrier adenylation/loading assays with enzyme-matched
+    C3/C4 inputs. Candidate owner CHEBI:7025 denotes exact pseudomonic acid A, not
+    the clinical mixture. Mixed-origin carrier/enzyme tests are methodological cross-compatibility
+    evidence, not native thiomarinol or complete mupirocin biosynthesis. Supplement-only
+    partial curation,not full-record sign-off.
+  nodes:
+  - node_id: mup_cluster
+    label: Native NCIMB 10586 mupirocin locus
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000182
+  - node_id: tml_cluster
+    label: Native SANK 73390 thiomarinol locus
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0001115
+  - node_id: MacpD
+    label: Native MacpD sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL52
+  - node_id: MacpD_prep
+    label: Study holo-MacpD preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: TacpD
+    label: Native TacpD sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:CBK62719.1
+  - node_id: TacpD_prep
+    label: Study holo-TacpD preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: MupQ
+    label: Native MupQ sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL54
+  - node_id: MupQ_prep
+    label: Study MupQ preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: TmlQ
+    label: Native TmlQ sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:CBK62721.1
+  - node_id: TmlQ_prep
+    label: Study TmlQ preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: malonyl
+    label: Supplied malonyl-CoA
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: succinyl
+    label: Supplied succinyl-CoA
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: atp
+    label: ATP in S6 reaction scheme
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: MacpD_exchange
+    label: MacpD/TmlQ mixed-origin assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: MacpD_bis
+    label: Source-assigned 4-carbon MacpD/CoA bis-thioester
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: TacpD_exchange
+    label: TacpD/MupQ mixed-origin assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: TacpD_bis
+    label: Source-assigned 3-carbon TacpD/CoA bis-thioester
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: mup_cluster
+    predicate: encodes_native_reference
+    object: MacpD
+    notes: AF318063.3 CDS63031..63351(+),1-based inclusive; AAM12933.1,106aa; native
+      NCIMB 10586,taxon294. Exact CDS-aware table11 translation/GenPept/current UniProt
+      match; current entry unreviewed,sequenceversion1. Native identity is not complete
+      engineered assay-preparation identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12933.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL52
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and source-identity audit.
+      retrieved_on: '2026-10-06'
+  - subject: MacpD
+    predicate: is_native_sequence_reference_for
+    object: MacpD_prep
+    notes: 'TableS1 body: C80A; full-length native reference does not identify this
+      variant. Reported N-terminal extension: MHHHHHHGKPIPNPLLGLDSTENLYFQGIDPFT. FigureS10
+      associates C80A with structural studies. Do not infer the allele of every S5/S6
+      assay stock solely from the table; the graph uses the study preparation label.
+      Apo characterization and holo/acylated reaction states are distinct. No native
+      untagged proteoform asserted.'
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher-deposited supplement, TableS1,pages15-16; FiguresS3-S4,pages6-7;
+        FigureS10,page13, text and rendered page inspected. Main article was inaccessible;
+        no complete main-method or laboratory-stock identity claim. No numerical kinetics
+        or native full-pathway reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: tml_cluster
+    predicate: encodes_native_reference
+    object: TacpD
+    notes: FN689524.1 CDS13493..13828(-),1-based inclusive; CBK62719.1,111aa; native
+      SANK 73390,taxon747457,plasmid pTML1. Exact CDS-aware table11 translation/GenPept/UniParc
+      sequence match. Legacy UniProt accession is deleted and not selected. Native
+      identity is not complete engineered assay-preparation identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBK62719.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBK62719.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and source-identity audit.
+      retrieved_on: '2026-10-06'
+  - subject: TacpD
+    predicate: is_native_sequence_reference_for
+    object: TacpD_prep
+    notes: 'TableS1 body: native body matches exactly; N-terminal tag remains engineered.
+      Reported N-terminal extension: AHHHHHHSSGLEVLFQGP. Apo characterization and
+      holo/acylated reaction states are distinct. No native untagged proteoform asserted.'
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher-deposited supplement, TableS1,pages15-16; FiguresS3-S4,pages6-7,
+        text and rendered page inspected. Main article was inaccessible; no complete
+        main-method or laboratory-stock identity claim. No numerical kinetics or native
+        full-pathway reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: mup_cluster
+    predicate: encodes_native_reference
+    object: MupQ
+    notes: AF318063.3 CDS60912..62267(+),1-based inclusive; AAM12931.1,451aa; native
+      NCIMB 10586,taxon294. Exact CDS-aware table11 translation/GenPept/current UniProt
+      match; current entry unreviewed,sequenceversion1. Native identity is not complete
+      engineered assay-preparation identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12931.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL54
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and source-identity audit.
+      retrieved_on: '2026-10-06'
+  - subject: MupQ
+    predicate: is_native_sequence_reference_for
+    object: MupQ_prep
+    notes: 'TableS1 body: native body matches exactly; N-terminal tag remains engineered.
+      Reported N-terminal extension: MAHHHHHHSSGLEVLFQGP. No native untagged proteoform
+      asserted.'
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher-deposited supplement, TableS1,pages15-16; FiguresS3-S4,pages6-7,
+        text and rendered page inspected. Main article was inaccessible; no complete
+        main-method or laboratory-stock identity claim. No numerical kinetics or native
+        full-pathway reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: tml_cluster
+    predicate: encodes_native_reference
+    object: TmlQ
+    notes: FN689524.1 CDS14561..15898(-),1-based inclusive; CBK62721.1,445aa; native
+      SANK 73390,taxon747457,plasmid pTML1. Exact CDS-aware table11 translation/GenPept/UniParc
+      sequence match. Legacy UniProt accession is deleted and not selected. Native
+      identity is not complete engineered assay-preparation identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBK62721.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBK62721.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and source-identity audit.
+      retrieved_on: '2026-10-06'
+  - subject: TmlQ
+    predicate: is_native_sequence_reference_for
+    object: TmlQ_prep
+    notes: 'TableS1 body: native initiator M omitted from Table S1 body; Table S2
+      forward primer starts AAT. Reported N-terminal extension: AHHHHHHSSGLEVLFQGP.
+      FigureS4 reports poor-quality MS with an 11Da error; it is not exact mass confirmation.
+      No native untagged proteoform asserted.'
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher-deposited supplement, TableS1,pages15-16; FiguresS3-S4,pages6-7;
+        TableS2,page17, text and rendered page inspected. Main article was inaccessible;
+        no complete main-method or laboratory-stock identity claim. No numerical kinetics
+        or native full-pathway reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: MacpD_prep
+    predicate: was_component_in
+    object: MacpD_exchange
+    notes: Cross-origin ACP/enzyme combination with the enzyme-matched CoA substrate.
+      ATP is shown in the reaction scheme; complete concentrations/time and assay-stock
+      variant are not independently verified.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS6,page9, text and rendered page
+        inspected. Main article was inaccessible; no complete main-method or laboratory-stock
+        identity claim. No numerical kinetics or native full-pathway reconstitution
+        asserted.
+      retrieved_on: '2026-10-06'
+  - subject: TmlQ_prep
+    predicate: was_component_in
+    object: MacpD_exchange
+    notes: Cross-origin ACP/enzyme combination with the enzyme-matched CoA substrate.
+      ATP is shown in the reaction scheme; complete concentrations/time and assay-stock
+      variant are not independently verified.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS6,page9, text and rendered page
+        inspected. Main article was inaccessible; no complete main-method or laboratory-stock
+        identity claim. No numerical kinetics or native full-pathway reconstitution
+        asserted.
+      retrieved_on: '2026-10-06'
+  - subject: succinyl
+    predicate: was_component_in
+    object: MacpD_exchange
+    notes: Cross-origin ACP/enzyme combination with the enzyme-matched CoA substrate.
+      ATP is shown in the reaction scheme; complete concentrations/time and assay-stock
+      variant are not independently verified.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS6,page9, text and rendered page
+        inspected. Main article was inaccessible; no complete main-method or laboratory-stock
+        identity claim. No numerical kinetics or native full-pathway reconstitution
+        asserted.
+      retrieved_on: '2026-10-06'
+  - subject: atp
+    predicate: was_component_in
+    object: MacpD_exchange
+    notes: Cross-origin ACP/enzyme combination with the enzyme-matched CoA substrate.
+      ATP is shown in the reaction scheme; complete concentrations/time and assay-stock
+      variant are not independently verified.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS6,page9, text and rendered page
+        inspected. Main article was inaccessible; no complete main-method or laboratory-stock
+        identity claim. No numerical kinetics or native full-pathway reconstitution
+        asserted.
+      retrieved_on: '2026-10-06'
+  - subject: MacpD_exchange
+    predicate: yielded_source_assigned_product
+    object: MacpD_bis
+    notes: ESMS envelope/deconvolved mass and the product schematic support the source
+      bis-thioester assignment. This is not the reduced hydroxyacyl endpoint,ordinary
+      ACP acylation,or native pathway reconstitution.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS6,page9, text and rendered page
+        inspected. Main article was inaccessible; no complete main-method or laboratory-stock
+        identity claim. No numerical kinetics or native full-pathway reconstitution
+        asserted.
+      retrieved_on: '2026-10-06'
+  - subject: TacpD_prep
+    predicate: was_component_in
+    object: TacpD_exchange
+    notes: Cross-origin ACP/enzyme combination with the enzyme-matched CoA substrate.
+      ATP is shown in the reaction scheme; complete concentrations/time and assay-stock
+      variant are not independently verified.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS6,page9, text and rendered page
+        inspected. Main article was inaccessible; no complete main-method or laboratory-stock
+        identity claim. No numerical kinetics or native full-pathway reconstitution
+        asserted.
+      retrieved_on: '2026-10-06'
+  - subject: MupQ_prep
+    predicate: was_component_in
+    object: TacpD_exchange
+    notes: Cross-origin ACP/enzyme combination with the enzyme-matched CoA substrate.
+      ATP is shown in the reaction scheme; complete concentrations/time and assay-stock
+      variant are not independently verified.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS6,page9, text and rendered page
+        inspected. Main article was inaccessible; no complete main-method or laboratory-stock
+        identity claim. No numerical kinetics or native full-pathway reconstitution
+        asserted.
+      retrieved_on: '2026-10-06'
+  - subject: malonyl
+    predicate: was_component_in
+    object: TacpD_exchange
+    notes: Cross-origin ACP/enzyme combination with the enzyme-matched CoA substrate.
+      ATP is shown in the reaction scheme; complete concentrations/time and assay-stock
+      variant are not independently verified.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS6,page9, text and rendered page
+        inspected. Main article was inaccessible; no complete main-method or laboratory-stock
+        identity claim. No numerical kinetics or native full-pathway reconstitution
+        asserted.
+      retrieved_on: '2026-10-06'
+  - subject: atp
+    predicate: was_component_in
+    object: TacpD_exchange
+    notes: Cross-origin ACP/enzyme combination with the enzyme-matched CoA substrate.
+      ATP is shown in the reaction scheme; complete concentrations/time and assay-stock
+      variant are not independently verified.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS6,page9, text and rendered page
+        inspected. Main article was inaccessible; no complete main-method or laboratory-stock
+        identity claim. No numerical kinetics or native full-pathway reconstitution
+        asserted.
+      retrieved_on: '2026-10-06'
+  - subject: TacpD_exchange
+    predicate: yielded_source_assigned_product
+    object: TacpD_bis
+    notes: ESMS envelope/deconvolved mass and the product schematic support the source
+      bis-thioester assignment. This is not the reduced hydroxyacyl endpoint,ordinary
+      ACP acylation,or native pathway reconstitution.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS6,page9, text and rendered page
+        inspected. Main article was inaccessible; no complete main-method or laboratory-stock
+        identity claim. No numerical kinetics or native full-pathway reconstitution
+        asserted.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T06:29:40Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component for CHEBI:7025,owner baseline commit afe1136aab9e132b8440579b27f44e19b9f79fc9;
+    no migration or alteration of prior components. Separate swapped-carrier adenylation/loading
+    assays with enzyme-matched C3/C4 inputs. Candidate owner CHEBI:7025 denotes exact
+    pseudomonic acid A, not the clinical mixture. Mixed-origin carrier/enzyme tests
+    are methodological cross-compatibility evidence, not native thiomarinol or complete
+    mupirocin biosynthesis. Supplement-only partial curation,not full-record sign-off.
+    Every edge cites the publisher supplement DOI10.1021/acschembio.9b00969.s001 or
+    official native-sequence URLs. Relevant rendered supplement pages inspected; main
+    article inaccessible/unread. Native references do not identify complete assay
+    stocks. Author-agent issue#601 addressed,not independent approval or full-record
+    sign-off.
+  llm_assisted: true

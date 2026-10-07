@@ -1,0 +1,223 @@
+record_id: CHEBI:3907
+standard_inchi_key: WTIJXIZOODAMJT-DHFGXMAYSA-N
+graph:
+  graph_id: coumermycin-a1-cour-heterologous-cpm-production-and-unit-limits
+  scope: BIOSYNTHESIS
+  description: 'Minimal expression and adjacent-gene exclusion bounded to the tested
+    host and analytical evidence. Partial curation; author-agent review #571. Native
+    sequences, engineered samples, host-conditioned findings and hypotheses remain
+    distinct; source-owned fields and SEEDED status are unchanged.'
+  nodes:
+  - node_id: five
+    label: M1146/pUWL201/couR1-4
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: host
+    label: Unmodified M1146 control
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: cpm
+    label: 3-methylpyrrole-2,4-dicarboxylic acid
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: analysis
+    label: CPM HPLC and LC-MS/MS analysis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: deletions
+    label: M1146 downstream-deletion panel
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: amides
+    label: CPM monoamide and diamide
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: timecourse
+    label: CPM production and recovery time course
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: units
+    label: Indexed concentration and amount ambiguity
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: limits
+    label: Host-dependent sufficiency and exclusion limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: couR5
+    label: Native CouR5 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8T3
+  - node_id: couR6
+    label: Native CouR6 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8T2
+  edges:
+  - subject: five
+    predicate: was_tested_in
+    object: analysis
+    notes: 3-mL cultures in 24-deepwell plates, CDM, 30 C/300 rpm, eight-day harvest;
+      three individual wells analyzed separately. Medium included thiamine 10 ug/mL,
+      pyridoxine 8 ug/mL, Q2-5247 0.6% w/v and CoCl2 0.2 ug/mL; the Fig.3 experiment
+      omitted Q2-5247/CoCl2.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, culture and analysis methods. Primary indexed text
+        inspected; journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: analysis
+    predicate: identified_reported_product
+    object: cpm
+    notes: CPM matched authentic standard by HPLC and positive-mode LC-MS/MS, precursor
+      m/z170.1 and fragmentation. HPLC at 259 nm, 0.6 mL/min, 5-100% methanol/0.1%
+      formic acid over20min; LC-MS used a separate chromatographic method. The retention
+      times from different methods must not be interchanged.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, abstract, analysis methods and Fig.4 caption. Primary
+        indexed text inspected; journal PDF unavailable and journal figures not visually
+        inspected.
+      retrieved_on: '2026-10-05'
+  - subject: host
+    predicate: was_negative_control_in
+    object: analysis
+    notes: No CPM-matching peak reported; authentic CPM added to host culture immediately
+      before extraction was an analytical recovery control, not biosynthetic rescue.
+      No empty-vector control was identified in the inspected text.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, CPM identification results. Primary indexed text
+        inspected; journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: cpm
+    predicate: was_extracted_for
+    object: analysis
+    notes: 'For free CPM: 1 mL culture treated with lysozyme1.9mg/mL for60min at30C,
+      acidified pH2, extracted three times with equal-volume EtOAc, dissolved in100uL
+      ethanol. Mono/diamide analysis omitted lysozyme and used345nm/acetonitrile with
+      novobiocin/coumermycin standards.'
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, analysis methods. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: deletions
+    predicate: accumulated_reported_products
+    object: amides
+    notes: Both deltaS-parY and deltaR5-parY strains yielded HPLC peaks matching CPM
+      monoamide/diamide; couSS01 was positive and host alone negative control.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, Table2 and deletion results. Primary indexed text
+        inspected; journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: amides
+    predicate: have_unresolved_absolute_titer_units
+    object: units
+    notes: 'Indexed Table2 headings literally use mg ml^-1. Values monoamide+/-SD
+      / diamide+/-SD: couSS-01 5.69+/-0.98 / 5.60+/-0.49; deltaS-parY4.13+/-0.71 /
+      6.20+/-0.22; deltaR5-parY2.81+/-0.29 / 5.95+/-0.57. Retained as unresolved source-unit
+      data, not normalized or adopted as verified absolute concentrations.'
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: CURATOR_INFERENCE
+      notes: Novotna et al. 2013, indexed Table2. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: five
+    predicate: was_monitored_in
+    object: timecourse
+    notes: Days1-5, mycelium and medium, triplicate measurements; source reports highest
+      CPM at day3 and little subsequent change. No bar heights digitized from uninspected
+      figures.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Novotna et al. 2013, time-course results and Fig.5 caption. Primary indexed
+        text inspected; journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: timecourse
+    predicate: has_recovery_and_unit_limit
+    object: units
+    notes: Externally supplied CPM nearly fully recovered immediately, but source
+      reports20% after3days. Indexed text also says2.2mg ml^-1 added and0.45mg recovered;
+      the concentration/mass/volume basis is unresolved. Degradation or modification
+      is a proposed explanation, not a measured enzyme reaction.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: CURATOR_INFERENCE
+      notes: Novotna et al. 2013, time-course results. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: analysis
+    predicate: supports_host_conditioned_sufficiency
+    object: limits
+    notes: Expression of the five-gene set supports CPM production in M1146, not purified
+      reconstitution, absence of host contributions, native-cell essentiality or physical
+      assembly.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: CURATOR_INFERENCE
+      notes: Novotna et al. 2013, abstract/results. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: couR5
+    predicate: is_not_obligatory_in_tested_expression_context
+    object: limits
+    notes: CPM formation without this adjacent gene does not demonstrate a transporter
+      substrate, exclude other biological roles or measure resistance.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: CURATOR_INFERENCE
+      notes: Novotna et al. 2013, deletion and minimal-expression results. Primary
+        indexed text inspected; journal PDF unavailable and journal figures not visually
+        inspected.
+      retrieved_on: '2026-10-05'
+  - subject: couR6
+    predicate: is_not_obligatory_in_tested_expression_context
+    object: limits
+    notes: Same host/context exclusion; not a measured transcriptional-regulation
+      assay or universal dispensability.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: CURATOR_INFERENCE
+      notes: Novotna et al. 2013, deletion and minimal-expression results. Primary
+        indexed text inspected; journal PDF unavailable and journal figures not visually
+        inspected.
+      retrieved_on: '2026-10-05'
+  - subject: deletions
+    predicate: supports_host_conditioned_exclusion
+    object: limits
+    notes: Joint deletion evidence complements minimal expression; no single-protein
+      reaction is assigned from the panel.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: CURATOR_INFERENCE
+      notes: Novotna et al. 2013, deletion results. Primary indexed text inspected;
+        journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+  - subject: units
+    predicate: limits_quantitative_interpretation
+    object: limits
+    notes: Qualitative CPM production can be retained without silently repairing absolute
+      units or reconstructing unseen plots.
+    evidence:
+    - reference: DOI:10.1007/s10295-013-1266-6
+      evidence_type: CURATOR_INFERENCE
+      notes: Novotna et al. 2013, Table2/time-course results. Primary indexed text
+        inspected; journal PDF unavailable and journal figures not visually inspected.
+      retrieved_on: '2026-10-05'
+curation_history:
+- timestamp: '2026-10-05T06:43:03Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add coumermycin-a1-cour-heterologous-cpm-production-and-unit-limits; preserve
+    sequence, host, construct, assay, inference and source-access limits (#571).
+  llm_assisted: true

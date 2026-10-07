@@ -24,6 +24,10 @@
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">cytotoxic</span><span class="tag">enzyme inhibitor</span></p>
+<details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/kojic-acid.yaml">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
 <p>A pyranone that is 4H-pyran substituted by a hydroxy group at position 5, a hydroxymethyl group at position 2 and an oxo group at position 4. It has been isolated from the fungus Aspergillus oryzae.</p>
 <h2>Structure</h2>
 <div class="scroll"><table>
@@ -53,7 +57,7 @@ same claim.</p>
 </tr>
 </table></div>
 
-<h2>Occurrences <span class="tag">15</span></h2>
+<h2 id="occurrences">Occurrences <span class="tag">15</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
 <div class="scroll"><table>
@@ -135,7 +139,7 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 </tr>
 </table></div>
 
-<h2>Biosynthetic gene clusters <span class="tag">1</span></h2>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
 <div class="scroll"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
@@ -220,33 +224,109 @@ by the corpus tests.</p>
 </table></div>
 
 <h2>Bioactivities <span class="tag">25</span></h2>
+<p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
 <div class="scroll"><table>
-<tr><th>Assay</th><th>Result</th><th>Reference</th></tr>
-<tr><td>Cellular viability qHTS for adrenocortical cancer (ACC) cell line NCI-H295R</td><td>4.6109 uM</td><td class="mono">pubchem.aid:1963990</td></tr>
-<tr><td>Enzymatic Activity Assay from Article 10.1016/j.bioorg.2015.10.003: &#34;Development of hydroxylated naphthylchalcones as polyphenol oxidase inhibitors: Synthesis, biochemistry and molecular docking studies.&#34;</td><td>KI 12.2 uM</td><td class="mono">PMID:26496408</td></tr>
-<tr><td>In Vitro Tyrosinase Inhibition Assay from Article 10.3109/14756366.2010.482529: &#34;Tyrosinase inhibitory effect of benzoic acid derivatives and their structure-activity relationships.&#34;</td><td>IC50 16.67 uM</td><td class="mono">PMID:20476840</td></tr>
-<tr><td>Inhibition Assay from Article 10.1080/14756360500179333: &#34;Tyrosinase inhibition: conformational analysis based studies on molecular dynamics calculations of bipiperidine based inhibitors.&#34;</td><td>IC50 16.67 uM</td><td class="mono">PMID:16206837</td></tr>
-<tr><td>Inhibition Assay from US Patent US9422261: &#34;Heterocyclic resorcinol derivatives, preparation of same and cosmetic uses thereof&#34;</td><td>IC50 15 uM</td><td class="mono">pubchem.aid:1803246</td></tr>
-<tr><td>Mushroom Tyrosinase Assay from US Patent US9682910: &#34;Series of skin-whitening (lightening) compounds&#34;</td><td>IC50 20 uM</td><td class="mono">pubchem.aid:1794918</td></tr>
-<tr><td>NCATS anti-infectives library activity on the primary C. elegans qHTS viability assay</td><td>0.1995 uM</td><td class="mono">PMID:36786055</td></tr>
-<tr><td>Primary qHTS for Inhibitors of N-terminal methyltransferase 1 (NTMT1): MTaseGlo Assay</td><td>0.0447 uM</td><td class="mono">pubchem.aid:1645870</td></tr>
-<tr><td>Primary qHTS for Inhibitors of N-terminal methyltransferase 1 (NTMT1): MTaseGlo Assay</td><td>0.0447 uM</td><td class="mono">pubchem.aid:1645870</td></tr>
-<tr><td>Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)</td><td>0.0101 uM</td><td class="mono">pubchem.aid:1964107</td></tr>
-<tr><td>Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)</td><td>11.0903 uM</td><td class="mono">pubchem.aid:1964107</td></tr>
-<tr><td>Primary qHTS for small molecule stabilizers of the endoplasmic reticulum resident proteome: Secreted ER Calcium Modulated Protein (SERCaMP) assay</td><td>8.9125 uM</td><td class="mono">PMID:33910017</td></tr>
-<tr><td>S16 Schwann cell PMP22 intronic element firefly luciferase assay</td><td>16.1366 uM</td><td class="mono">pubchem.aid:624032</td></tr>
-<tr><td>Spectrophotometric Assay from Article 10.1111/cbdd.12126: &#34;Microwave-assisted synthesis and tyrosinase inhibitory activity of chalcone derivatives.&#34;</td><td>IC50 23 uM</td><td class="mono">PMID:23461881</td></tr>
-<tr><td>Tyrosinase Activity Assay from Article 10.1016/j.bioorg.2016.09.007: &#34;Molecular docking studies and biological evaluation of 1,3,4-thiadiazole derivatives bearing Schiff base moieties as tyrosinase inhibitors.&#34;</td><td>IC50 23.6 uM</td><td class="mono">PMID:27669118</td></tr>
-<tr><td>Tyrosinase Assay from Article 10.1080/14756360701810207: &#34;Inhibitory effects on mushroom tyrosinase by flavones from the stem barks of Morus lhou (S.) Koidz.&#34;</td><td>IC50 12.5 uM</td><td class="mono">PMID:18608767</td></tr>
-<tr><td>Tyrosinase Inhibition Assay from Article 10.1111/cbdd.12577: &#34;Synthesis and biological evaluation of kojic acid derivatives containing 1,2,4-triazole as potent tyrosinase inhibitors.&#34;</td><td>IC50 19 uM</td><td class="mono">PMID:25916324</td></tr>
-<tr><td>Tyrosinase Inhibition Assay from US Patent US10857082: &#34;Diarylalkanes as potent inhibitors of binuclear enzymes&#34;</td><td>IC50 29 uM</td><td class="mono">pubchem.aid:1805056</td></tr>
-<tr><td>qHTS Assay for Identifying Compounds that block Entry of Ebola Virus, Screen 2 blue channel</td><td>EC50 8.9125 uM</td><td class="mono">pubchem.aid:1117304</td></tr>
-<tr><td>qHTS Assay for Identifying Compounds that block Entry of Ebola Virus, Screen 2 green channel</td><td>EC50 0.7079 uM</td><td class="mono">pubchem.aid:1117298</td></tr>
-<tr><td>qHTS Assay for Identifying Compounds that block Entry of Ebola Virus, Screen 2 ratio channel</td><td>EC50 8.9125 uM</td><td class="mono">pubchem.aid:1117305</td></tr>
-<tr><td>qHTS Assay for Identifying Compounds that block Entry of Ebola Virus: Screen 2, blue channel</td><td>EC50 8.91251 uM</td><td class="mono">pubchem.aid:1117314</td></tr>
-<tr><td>qHTS Assay for Identifying Compounds that block Entry of Ebola Virus: Screen 2, green channel</td><td>EC50 0.707946 uM</td><td class="mono">pubchem.aid:1117310</td></tr>
-<tr><td>qHTS Assay for Identifying Compounds that block Entry of Ebola Virus: Screen2, ratio channel</td><td>EC50 8.91251 uM</td><td class="mono">pubchem.aid:1117312</td></tr>
-<tr><td>qHTS Assay for Inhibitors of Human Jumonji Domain Containing 2E (JMJD2E)</td><td>25.1189 uM</td><td class="mono">pubchem.aid:2147</td></tr>
+<tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
+<tr><td>Cellular viability qHTS for adrenocortical cancer (ACC) cell line NCI-H295R</td><td>4.6109 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1963990</summary><dl><dt>assay</dt><dd>Cellular viability qHTS for adrenocortical cancer (ACC) cell line NCI-H295R</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963990</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963990, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>4.6109</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
+</details></td></tr>
+<tr><td>Enzymatic Activity Assay from Article 10.1016/j.bioorg.2015.10.003: &#34;Development of hydroxylated naphthylchalcones as polyphenol oxidase inhibitors: Synthesis, biochemistry and molecular docking studies.&#34;</td><td>KI 12.2 uM</td><td class="mono">UniProtKB:Q00024</td><td><details><summary>PMID:26496408</summary><dl><dt>assay</dt><dd>Enzymatic Activity Assay from Article 10.1016/j.bioorg.2015.10.003: &#34;Development of hydroxylated naphthylchalcones as polyphenol oxidase inhibitors: Synthesis, biochemistry and molecular docking studies.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:26496408</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801486, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>measurement type</dt><dd>KI</dd><dt>value</dt><dd>12.2</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:Q00024</dd></dl>
+</details></td></tr>
+<tr><td>In Vitro Tyrosinase Inhibition Assay from Article 10.3109/14756366.2010.482529: &#34;Tyrosinase inhibitory effect of benzoic acid derivatives and their structure-activity relationships.&#34;</td><td>IC50 16.67 uM</td><td class="mono">UniProtKB:Q00024</td><td><details><summary>PMID:20476840</summary><dl><dt>assay</dt><dd>In Vitro Tyrosinase Inhibition Assay from Article 10.3109/14756366.2010.482529: &#34;Tyrosinase inhibitory effect of benzoic acid derivatives and their structure-activity relationships.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:20476840</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1802947, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>16.67</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:Q00024</dd></dl>
+</details></td></tr>
+<tr><td>Inhibition Assay from Article 10.1080/14756360500179333: &#34;Tyrosinase inhibition: conformational analysis based studies on molecular dynamics calculations of bipiperidine based inhibitors.&#34;</td><td>IC50 16.67 uM</td><td class="mono">UniProtKB:P14679</td><td><details><summary>PMID:16206837</summary><dl><dt>assay</dt><dd>Inhibition Assay from Article 10.1080/14756360500179333: &#34;Tyrosinase inhibition: conformational analysis based studies on molecular dynamics calculations of bipiperidine based inhibitors.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:16206837</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1799678, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>16.67</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P14679</dd></dl>
+</details></td></tr>
+<tr><td>Inhibition Assay from US Patent US9422261: &#34;Heterocyclic resorcinol derivatives, preparation of same and cosmetic uses thereof&#34;</td><td>IC50 15 uM</td><td class="mono">UniProtKB:Q00024</td><td><details><summary>pubchem.aid:1803246</summary><dl><dt>assay</dt><dd>Inhibition Assay from US Patent US9422261: &#34;Heterocyclic resorcinol derivatives, preparation of same and cosmetic uses thereof&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1803246</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1803246, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>15.0</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:Q00024</dd></dl>
+</details></td></tr>
+<tr><td>Mushroom Tyrosinase Assay from US Patent US9682910: &#34;Series of skin-whitening (lightening) compounds&#34;</td><td>IC50 20 uM</td><td class="mono">UniProtKB:Q8R2Y2</td><td><details><summary>pubchem.aid:1794918</summary><dl><dt>assay</dt><dd>Mushroom Tyrosinase Assay from US Patent US9682910: &#34;Series of skin-whitening (lightening) compounds&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1794918</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1794918, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>20.0</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:Q8R2Y2</dd></dl>
+</details></td></tr>
+<tr><td>NCATS anti-infectives library activity on the primary C. elegans qHTS viability assay</td><td>0.1995 uM</td><td class="mono">Not recorded</td><td><details><summary>PMID:36786055</summary><dl><dt>assay</dt><dd>NCATS anti-infectives library activity on the primary C. elegans qHTS viability assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:36786055</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1745855, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.1995</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS for Inhibitors of N-terminal methyltransferase 1 (NTMT1): MTaseGlo Assay</td><td>0.0447 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645870</summary><dl><dt>assay</dt><dd>Primary qHTS for Inhibitors of N-terminal methyltransferase 1 (NTMT1): MTaseGlo Assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645870</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645870, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0447</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS for Inhibitors of N-terminal methyltransferase 1 (NTMT1): MTaseGlo Assay</td><td>0.0447 uM</td><td class="mono">UniProtKB:Q9BV86</td><td><details><summary>pubchem.aid:1645870</summary><dl><dt>assay</dt><dd>Primary qHTS for Inhibitors of N-terminal methyltransferase 1 (NTMT1): MTaseGlo Assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645870</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645870, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0447</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:Q9BV86</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)</td><td>0.0101 uM</td><td class="mono">UniProtKB:Q8JUX6</td><td><details><summary>pubchem.aid:1964107</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1964107</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1964107, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0101</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:Q8JUX6</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)</td><td>11.0903 uM</td><td class="mono">UniProtKB:Q8JUX6</td><td><details><summary>pubchem.aid:1964107</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1964107</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1964107, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>11.0903</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:Q8JUX6</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS for small molecule stabilizers of the endoplasmic reticulum resident proteome: Secreted ER Calcium Modulated Protein (SERCaMP) assay</td><td>8.9125 uM</td><td class="mono">Not recorded</td><td><details><summary>PMID:33910017</summary><dl><dt>assay</dt><dd>Primary qHTS for small molecule stabilizers of the endoplasmic reticulum resident proteome: Secreted ER Calcium Modulated Protein (SERCaMP) assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:33910017</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1508630, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>8.9125</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>S16 Schwann cell PMP22 intronic element firefly luciferase assay</td><td>16.1366 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624032</summary><dl><dt>assay</dt><dd>S16 Schwann cell PMP22 intronic element firefly luciferase assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624032</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624032, deposited by NCGC; assay type Confirmatory. Target accession NP_058733 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>16.1366</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Spectrophotometric Assay from Article 10.1111/cbdd.12126: &#34;Microwave-assisted synthesis and tyrosinase inhibitory activity of chalcone derivatives.&#34;</td><td>IC50 23 uM</td><td class="mono">UniProtKB:O42713</td><td><details><summary>PMID:23461881</summary><dl><dt>assay</dt><dd>Spectrophotometric Assay from Article 10.1111/cbdd.12126: &#34;Microwave-assisted synthesis and tyrosinase inhibitory activity of chalcone derivatives.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:23461881</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1800143, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>23.0</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:O42713</dd></dl>
+</details></td></tr>
+<tr><td>Tyrosinase Activity Assay from Article 10.1016/j.bioorg.2016.09.007: &#34;Molecular docking studies and biological evaluation of 1,3,4-thiadiazole derivatives bearing Schiff base moieties as tyrosinase inhibitors.&#34;</td><td>IC50 23.6 uM</td><td class="mono">UniProtKB:Q00024</td><td><details><summary>PMID:27669118</summary><dl><dt>assay</dt><dd>Tyrosinase Activity Assay from Article 10.1016/j.bioorg.2016.09.007: &#34;Molecular docking studies and biological evaluation of 1,3,4-thiadiazole derivatives bearing Schiff base moieties as tyrosinase inhibitors.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:27669118</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801979, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>23.6</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:Q00024</dd></dl>
+</details></td></tr>
+<tr><td>Tyrosinase Assay from Article 10.1080/14756360701810207: &#34;Inhibitory effects on mushroom tyrosinase by flavones from the stem barks of Morus lhou (S.) Koidz.&#34;</td><td>IC50 12.5 uM</td><td class="mono">UniProtKB:O42713</td><td><details><summary>PMID:18608767</summary><dl><dt>assay</dt><dd>Tyrosinase Assay from Article 10.1080/14756360701810207: &#34;Inhibitory effects on mushroom tyrosinase by flavones from the stem barks of Morus lhou (S.) Koidz.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:18608767</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1799721, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>12.5</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:O42713</dd></dl>
+</details></td></tr>
+<tr><td>Tyrosinase Inhibition Assay from Article 10.1111/cbdd.12577: &#34;Synthesis and biological evaluation of kojic acid derivatives containing 1,2,4-triazole as potent tyrosinase inhibitors.&#34;</td><td>IC50 19 uM</td><td class="mono">UniProtKB:P36025</td><td><details><summary>PMID:25916324</summary><dl><dt>assay</dt><dd>Tyrosinase Inhibition Assay from Article 10.1111/cbdd.12577: &#34;Synthesis and biological evaluation of kojic acid derivatives containing 1,2,4-triazole as potent tyrosinase inhibitors.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:25916324</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801390, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>19.0</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P36025</dd></dl>
+</details></td></tr>
+<tr><td>Tyrosinase Inhibition Assay from US Patent US10857082: &#34;Diarylalkanes as potent inhibitors of binuclear enzymes&#34;</td><td>IC50 29 uM</td><td class="mono">UniProtKB:Q00024</td><td><details><summary>pubchem.aid:1805056</summary><dl><dt>assay</dt><dd>Tyrosinase Inhibition Assay from US Patent US10857082: &#34;Diarylalkanes as potent inhibitors of binuclear enzymes&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1805056</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1805056, deposited by BindingDB; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>29.0</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:Q00024</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Identifying Compounds that block Entry of Ebola Virus, Screen 2 blue channel</td><td>EC50 8.9125 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1117304</summary><dl><dt>assay</dt><dd>qHTS Assay for Identifying Compounds that block Entry of Ebola Virus, Screen 2 blue channel</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1117304</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1117304, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>measurement type</dt><dd>EC50</dd><dt>value</dt><dd>8.9125</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Identifying Compounds that block Entry of Ebola Virus, Screen 2 green channel</td><td>EC50 0.7079 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1117298</summary><dl><dt>assay</dt><dd>qHTS Assay for Identifying Compounds that block Entry of Ebola Virus, Screen 2 green channel</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1117298</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1117298, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>measurement type</dt><dd>EC50</dd><dt>value</dt><dd>0.7079</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Identifying Compounds that block Entry of Ebola Virus, Screen 2 ratio channel</td><td>EC50 8.9125 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1117305</summary><dl><dt>assay</dt><dd>qHTS Assay for Identifying Compounds that block Entry of Ebola Virus, Screen 2 ratio channel</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1117305</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1117305, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>measurement type</dt><dd>EC50</dd><dt>value</dt><dd>8.9125</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Identifying Compounds that block Entry of Ebola Virus: Screen 2, blue channel</td><td>EC50 8.91251 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1117314</summary><dl><dt>assay</dt><dd>qHTS Assay for Identifying Compounds that block Entry of Ebola Virus: Screen 2, blue channel</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1117314</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1117314, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>measurement type</dt><dd>EC50</dd><dt>value</dt><dd>8.91251</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Identifying Compounds that block Entry of Ebola Virus: Screen 2, green channel</td><td>EC50 0.707946 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1117310</summary><dl><dt>assay</dt><dd>qHTS Assay for Identifying Compounds that block Entry of Ebola Virus: Screen 2, green channel</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1117310</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1117310, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>measurement type</dt><dd>EC50</dd><dt>value</dt><dd>0.707946</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Identifying Compounds that block Entry of Ebola Virus: Screen2, ratio channel</td><td>EC50 8.91251 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1117312</summary><dl><dt>assay</dt><dd>qHTS Assay for Identifying Compounds that block Entry of Ebola Virus: Screen2, ratio channel</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1117312</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1117312, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>measurement type</dt><dd>EC50</dd><dt>value</dt><dd>8.91251</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Inhibitors of Human Jumonji Domain Containing 2E (JMJD2E)</td><td>25.1189 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2147</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of Human Jumonji Domain Containing 2E (JMJD2E)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2147</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2147, deposited by NCGC; assay type Confirmatory. Target accession 2W2I_A was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>25.1189</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd><dt>notes</dt><dd>13 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but not written here.</dd></dl>
+</details></td></tr>
 </table></div>
 
 

@@ -1,0 +1,169 @@
+record_id: CHEBI:7025
+standard_inchi_key: MINDHVHHQZYEEK-HBBNESRFSA-N
+graph:
+  graph_id: mupirocin-2017-muppv-bounded-functional-proposals
+  scope: BIOSYNTHESIS
+  description: Inferred reaction and ordering remain explicitly proposed. Owner CHEBI:7025
+    denotes pseudomonic acid A, not the clinical mixture. Desepoxy feeding outcomes
+    concern the parallel PA-C branch; PA-C is not this owner's structure. Native references,
+    engineered genotypes, source-assigned metabolites and mechanistic proposals remain
+    distinct. No purified-enzyme turnover, complete pathway reconstitution or full-record
+    sign-off.
+  nodes:
+  - node_id: cluster
+    label: Native NCIMB 10586 mupirocin locus
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000182
+  - node_id: MupP
+    label: Native MupP sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL55
+  - node_id: MupV
+    label: Native MupV sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL47
+  - node_id: dehydration
+    label: Proposed mupirocin-P (13) dehydration
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: p13
+    label: Source-assigned mupirocin P (13)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: c1
+    label: Proposed enol-ketone mupirocin C1 (14) product
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: vrole
+    label: Unresolved MupV hydrolysis or carrier-transfer role
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: MupP
+    notes: 'AF318063.3 CDS 59935..60864(+), 1-based inclusive; AAM12930.2, 309 aa.
+      NCIMB 10586, taxon 294; unreviewed UniProt sequence version 2. CDS-aware table-11
+      translation matches GenPept and UniProt. Native reference, not an expressed
+      full-length protein in a deletion strain or a complete engineered allele. Rejected
+      A0ACD4XY39: same gene label and species taxon but different 223 aa phosphatase
+      sequence, CP140009/WQD73931.1; a name match does not establish cluster identity.'
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: CDS and source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12930.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native translation.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL55
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native CDS/GenPept/UniProt match.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/A0ACD4XY39
+      evidence_type: CURATOR_INFERENCE
+      notes: Compared returned candidate sequence, length and deposit cross-reference;
+        not a biosynthetic MupP example.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: MupV
+    notes: AF318063.3 CDS 68027..70015(+), 1-based inclusive; AAM12938.1, 662 aa.
+      NCIMB 10586, taxon 294; unreviewed UniProt sequence version 1. CDS-aware table-11
+      translation matches GenPept and UniProt. Native reference, not an expressed
+      full-length protein in a deletion strain or a complete engineered allele.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: CDS and source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12938.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native translation.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL47
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native CDS/GenPept/UniProt match.
+      retrieved_on: '2026-10-06'
+  - subject: MupP
+    predicate: is_proposed_to_catalyze
+    object: dehydration
+    notes: Genetic/metabolite interpretation; no isolated MupP turnover is reported
+      here.
+    evidence:
+    - reference: DOI:10.1002/anie.201611590
+      evidence_type: CURATOR_INFERENCE
+      notes: Retained author-accepted manuscript main text read in full; PDF p3, Scheme
+        1 and MupV interpretation; PDF p5, Conclusions. Schemes 1-3 and Figures 1-2
+        visually inspected. Supporting information was not inspected. Source assignments,
+        not independently reprocessed spectra or complete mutant-stock sequences.
+      retrieved_on: '2026-10-06'
+  - subject: p13
+    predicate: is_proposed_substrate_of
+    object: dehydration
+    notes: Scheme 1 proposal.
+    evidence:
+    - reference: DOI:10.1002/anie.201611590
+      evidence_type: CURATOR_INFERENCE
+      notes: Retained author-accepted manuscript main text read in full; PDF p3, Scheme
+        1 and MupV interpretation; PDF p5, Conclusions. Schemes 1-3 and Figures 1-2
+        visually inspected. Supporting information was not inspected. Source assignments,
+        not independently reprocessed spectra or complete mutant-stock sequences.
+      retrieved_on: '2026-10-06'
+  - subject: dehydration
+    predicate: is_proposed_to_yield
+    object: c1
+    notes: Scheme 1 proposal, not a purified-enzyme product assay.
+    evidence:
+    - reference: DOI:10.1002/anie.201611590
+      evidence_type: CURATOR_INFERENCE
+      notes: Retained author-accepted manuscript main text read in full; PDF p3, Scheme
+        1 and MupV interpretation; PDF p5, Conclusions. Schemes 1-3 and Figures 1-2
+        visually inspected. Supporting information was not inspected. Source assignments,
+        not independently reprocessed spectra or complete mutant-stock sequences.
+      retrieved_on: '2026-10-06'
+  - subject: MupV
+    predicate: is_proposed_to_act_before
+    object: MupP
+    notes: Order inferred from mutant feeding, not a demonstrated protein interaction
+      or timed catalytic sequence.
+    evidence:
+    - reference: DOI:10.1002/anie.201611590
+      evidence_type: CURATOR_INFERENCE
+      notes: Retained author-accepted manuscript main text read in full; PDF p3, Scheme
+        1 and MupV interpretation; PDF p5, Conclusions. Schemes 1-3 and Figures 1-2
+        visually inspected. Supporting information was not inspected. Source assignments,
+        not independently reprocessed spectra or complete mutant-stock sequences.
+      retrieved_on: '2026-10-06'
+  - subject: MupV
+    predicate: has_proposed_unresolved_function
+    object: vrole
+    notes: Sequence comparison suggests alternatives; neither chemistry is directly
+      established by the feeding result.
+    evidence:
+    - reference: DOI:10.1002/anie.201611590
+      evidence_type: CURATOR_INFERENCE
+      notes: Retained author-accepted manuscript main text read in full; PDF p3, Scheme
+        1 and MupV interpretation; PDF p5, Conclusions. Schemes 1-3 and Figures 1-2
+        visually inspected. Supporting information was not inspected. Source assignments,
+        not independently reprocessed spectra or complete mutant-stock sequences.
+      retrieved_on: '2026-10-06'
+      snippet: may act as a thioesterase
+curation_history:
+- timestamp: '2026-10-06T08:10:59Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component for CHEBI:7025; reviewed owner baseline 62547f5590ca8e83666eec0a7ecfcba8d5208e0a.
+    Inferred reaction and ordering remain explicitly proposed. Owner CHEBI:7025 denotes
+    pseudomonic acid A, not the clinical mixture. Desepoxy feeding outcomes concern
+    the parallel PA-C branch; PA-C is not this owner's structure. Native references,
+    engineered genotypes, source-assigned metabolites and mechanistic proposals remain
+    distinct. No purified-enzyme turnover, complete pathway reconstitution or full-record
+    sign-off. DOI10.1002/anie.201611590 or inspected official sequence URLs support
+    each edge. Main-text-bounded curation; supporting information unread. Author-agent
+    issue#608 addressed; no prior component migration or independent approval.
+  llm_assisted: true

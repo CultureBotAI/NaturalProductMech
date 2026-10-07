@@ -1,0 +1,357 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novm-redox-reagents-and-early-methylation-tests
+  scope: BIOSYNTHESIS
+  description: 'New commercial redox-support proteins and directly inspected early-stage
+    NovO/CouO tests. The supplement does not establish complete sequences/tags for
+    its recombinant preparations. Review #563. The BGC0000834 cathomycin owner retains
+    its unspecified sugar stereocentre and SEEDED status. These precursor and recombinant
+    assays do not resolve that stereocentre or justify an exact-key merge with fully
+    specified novobiocin.'
+  nodes:
+  - node_id: h
+    label: 2005 supplement holo-NovH preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: i
+    label: 2005 supplement NovI preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: jk
+    label: 2005 supplement NovJ/NovK preparation
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: ferredoxin
+    label: Sigma spinach ferredoxin assay reagent
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: reductase
+    label: Sigma ferredoxin reductase assay reagent
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: load
+    label: NovH tyrosyl-loading stage
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hydroxylate
+    label: NovI hydroxylation-stage reconstitution
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: oxidize
+    label: NovJ/NovK oxidation-stage reconstitution
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: tyrosyl
+    label: L-Tyrosyl-S-NovH assay intermediate
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: hydroxy
+    label: Beta-hydroxytyrosyl-S-NovH assay intermediate
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: keto
+    label: Beta-keto-S-NovH assay intermediate
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: o
+    label: 2005 supplement NovO assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: couo
+    label: 2005 supplement CouO assay preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: test
+    label: Stage-specific tethered-precursor methylation tests
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hplc
+    label: Released-analyte RP-HPLC/scintillation readout
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: radio
+    label: NovH-bound radiolabel autoradiography readout
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: control
+    label: ATP-omitted autoradiography comparator
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: negative
+    label: Reported absence of tethered-precursor methylation
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Commercial-reagent and method-scope limits
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: free
+    label: Free desmethyl-aminocoumarin methylation test
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: free_negative
+    label: No free-aminocoumarin product detected by RP-HPLC
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: h
+    predicate: was_used_in
+    object: load
+    notes: Holo-NovH 30 uM; 75 mM Tris-HCl pH 7.5, ATP 5 mM, MgCl2 10 mM, L-tyrosine
+      0.5 mM plus [3H]-L-tyrosine 1.8 uM; two hours at room temperature.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.1; all four pages inspected as text
+        and visually. '
+  - subject: load
+    predicate: prepared_assay_stage
+    object: tyrosyl
+    notes: Carrier-bound precursor, not free tyrosine.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.1; all four pages inspected as text
+        and visually. '
+  - subject: tyrosyl
+    predicate: was_used_in
+    object: hydroxylate
+    notes: This stage followed the NovH incubation.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.1; all four pages inspected as text
+        and visually. '
+  - subject: i
+    predicate: was_used_in
+    object: hydroxylate
+    notes: NovI 10 uM and NADPH 2 mM; one hour.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.1; all four pages inspected as text
+        and visually. '
+  - subject: ferredoxin
+    predicate: was_supplied_in
+    object: hydroxylate
+    notes: 'Commercial ferredoxin: 10 uM; the source explicitly specifies spinach.'
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.1; all four pages inspected as text
+        and visually. '
+      snippet: spinach ferredoxin (Sigma)
+  - subject: reductase
+    predicate: was_supplied_in
+    object: hydroxylate
+    notes: 'Commercial reductase: 0.1 U. The source does not specify its species,
+      sequence or catalogue number.'
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.1; all four pages inspected as text
+        and visually. '
+  - subject: hydroxylate
+    predicate: prepared_assay_stage
+    object: hydroxy
+    notes: The named stage is beta-hydroxytyrosyl-NovH; no new stereochemical assignment
+      is made.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.1; all four pages inspected as text
+        and visually. '
+  - subject: hydroxy
+    predicate: was_used_in
+    object: oxidize
+    notes: The NovJ/NovK step followed the NovI incubation.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.1; all four pages inspected as text
+        and visually. '
+  - subject: jk
+    predicate: was_used_in
+    object: oxidize
+    notes: NovJ/NovK 10 uM plus NADP(+) 1 mM; one hour. The concentration basis is
+      not specified as subunits or complex.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.1; all four pages inspected as text
+        and visually. '
+  - subject: oxidize
+    predicate: prepared_assay_stage
+    object: keto
+    notes: The product-stage label is retained without assuming a complete engineered
+      sequence for its NovH carrier.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.1; all four pages inspected as text
+        and visually. '
+  - subject: o
+    predicate: was_tested_in
+    object: test
+    notes: NovO 5 uM with SAM 2 mM; one to five hours.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.1; all four pages inspected as text
+        and visually. '
+  - subject: couo
+    predicate: was_tested_in
+    object: test
+    notes: CouO was an alternative methyltransferase at the same reported loading,
+      not an asserted native novobiocin enzyme.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.1; all four pages inspected as text
+        and visually. '
+  - subject: tyrosyl
+    predicate: was_test_substrate_in
+    object: test
+    notes: Methyltransferase added after NovH.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.1; all four pages inspected as text
+        and visually. '
+  - subject: hydroxy
+    predicate: was_test_substrate_in
+    object: test
+    notes: Methyltransferase added after NovH/NovI.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.1; all four pages inspected as text
+        and visually. '
+  - subject: keto
+    predicate: was_test_substrate_in
+    object: test
+    notes: Methyltransferase added after NovH/NovI/NovJ/NovK.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.1; all four pages inspected as text
+        and visually. '
+  - subject: test
+    predicate: was_evaluated_by
+    object: hplc
+    notes: Alkaline release from precipitated protein (0.1 M KOH, 60 C, five minutes),
+      followed by RP-HPLC and scintillation counting.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.2; all four pages inspected as text
+        and visually. '
+  - subject: test
+    predicate: had_additional_readout
+    object: radio
+    notes: The autoradiography paragraph names NovO with SAM 1 mM and [3H]-SAM 0.7
+      uM; SDS gels retained protein-associated label.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.2; all four pages inspected as text
+        and visually. '
+  - subject: control
+    predicate: was_compared_in
+    object: radio
+    notes: The source reports no difference from the otherwise equivalent ATP-omitted
+      reactions.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.2; all four pages inspected as text
+        and visually. '
+  - subject: hplc
+    predicate: supports_reported_negative
+    object: negative
+    notes: The summary reports no methylation by NovO or CouO at the three tethered
+      stages.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.2; all four pages inspected as text
+        and visually. '
+  - subject: radio
+    predicate: has_method_scope_limit
+    object: limits
+    notes: The summary includes both enzymes, but the autoradiography methods specifically
+      name NovO. Do not infer every CouO control or universal substrate impossibility;
+      no detection limit is supplied.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Official supporting information, p.2; all four pages inspected as text
+        and visually. Method versus summary comparison.
+  - subject: negative
+    predicate: has_interpretation_limit
+    object: limits
+    notes: No new direct-binding, native-flux or structure claim follows from this
+      assay-bounded negative.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Official supporting information, p.1-2; all four pages inspected as text
+        and visually. Negative-result scope.
+  - subject: ferredoxin
+    predicate: has_identity_and_role_limit
+    object: limits
+    notes: A supplied reagent is not proof of native partnership, direct binding or
+      omission-tested necessity. No unique UniProt accession is justified.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Official supporting information, p.1; all four pages inspected as text
+        and visually. Commercial reagent identity.
+  - subject: reductase
+    predicate: has_identity_and_role_limit
+    object: limits
+    notes: No spinach identity is transferred from the adjacent ferredoxin label to
+      the reductase. Sequence-specific grounding remains unavailable.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Official supporting information, p.1; all four pages inspected as text
+        and visually. Literal source wording.
+  - subject: o
+    predicate: was_tested_in
+    object: free
+    notes: NovO or CouO 20 uM; desmethyl-aminocoumarin 1 mM, Tris-HCl 75 mM pH 8.5,
+      SAM 2 mM, BSA 1 mg/mL, DMSO 10%; overnight.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.2-3; all four pages inspected as
+        text and visually. '
+  - subject: couo
+    predicate: was_tested_in
+    object: free
+    notes: CouO was tested as the alternative enzyme, not as a mixed NovO/CouO complex.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.2-3; all four pages inspected as
+        text and visually. '
+  - subject: free
+    predicate: gave_bounded_negative
+    object: free_negative
+    notes: RP-HPLC with authentic 8-methyl-aminocoumarin standard detected no product;
+      no quantified limit of detection is asserted.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.3; all four pages inspected as text
+        and visually. '
+      snippet: No product formation was observed.
+curation_history:
+- timestamp: '2026-10-05T00:15:09Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cathomycin-novm-redox-reagents-and-early-methylation-tests with source-bounded
+    NovM/redox evidence and #563 findings.'
+  llm_assisted: true

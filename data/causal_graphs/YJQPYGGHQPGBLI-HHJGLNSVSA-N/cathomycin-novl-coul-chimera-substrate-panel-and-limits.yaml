@@ -1,0 +1,409 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novl-coul-chimera-substrate-panel-and-limits
+  scope: BIOSYNTHESIS
+  description: 'Metzger 2010 Figure 3.31 endpoint assays of ten NovL/CouL chimeras
+    and two parental comparators (review #551). Each protein has its own reported
+    six-column activity vector, retaining substrate, product, loading, normalization
+    and censoring. Comparisons support bounded regional contributions to precursor-ligation
+    activity, not exact substrate-contact residues, catalytic efficiencies or mature
+    antibiotic synthesis. The cathomycin owner has an unspecified sugar stereocentre;
+    unglycosylated assays do not resolve it or justify an exact-structure merge. Construct
+    identity is qualified in the separate chimera preparation graph. PDF locators
+    are printed pages +12.'
+  nodes:
+  - node_id: nov_parent
+    label: pUM07-derived NovL parental comparator
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: cou_parent
+    label: pUM05-derived CouL parental comparator
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+  - node_id: chim1
+    label: Chim1 NovL/CouL His-tagged fusion (pUM27)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: chim2
+    label: Chim2 NovL/CouL His-tagged fusion (pSF06)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: chim3
+    label: Chim3 NovL/CouL His-tagged fusion (pSF09)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: chim4
+    label: Chim4 NovL/CouL His-tagged fusion (pUM24)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: chim5
+    label: Chim5 NovL/CouL His-tagged fusion (pUM43)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: chim8
+    label: Chim8 NovL/CouL His-tagged fusion (pSF07)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: chim9
+    label: Chim9 NovL/CouL His-tagged fusion (pSF04)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: chim10
+    label: Chim10 NovL/CouL His-tagged fusion (pUM25)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: chim11
+    label: Chim11 NovL/CouL His-tagged fusion (pSF05)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: chim12
+    label: Chim12 NovL/CouL His-tagged fusion (pUM40)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: Six-column relative-activity endpoint panel
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: s1
+    label: 'S1: 3-dimethylallyl-4-hydroxybenzoic acid'
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: s2
+    label: 'S2: 3-propyl-4-hydroxybenzoic acid'
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: s3
+    label: 'S3: 3-methylpyrrole-2,4-dicarboxylic acid'
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: amine
+    label: 3-Amino-4,7-dihydroxy-8-methylcoumarin
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: p1
+    label: S1-derived novobiocic acid readout
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: p2
+    label: S2-derived surrogate amide readout
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: mono
+    label: S3/1 source-assigned monoamide readout
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: di
+    label: S3/2 source-assigned diamide readout
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: linearity
+    label: Parent enzyme-loading linearity limits
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: interpretation
+    label: Conditional regional-swap activity comparisons
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cou_parent
+    predicate: has_reported_relative_activity_in
+    object: assay
+    notes: 'Reported activity [%], columns in source order: [3.3, 0.7, 100, 100, 100,
+      100]. Columns 1-2: S1 and S2 with 4 ug enzyme, each relative to NovL with the
+      same substrate (=100%). Columns 3-4: S3 monoamide and diamide with 4 ug; columns
+      5-6: S3 monoamide and diamide with 40 ug. Each S3 column uses its own load/product-matched
+      CouL reference (=100%). <NG means below detection, not zero; the numerical detection
+      threshold is unstated. These values are not absolute conversion percentages
+      or one shared activity scale.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3.31A and caption, PDF p.94; S3 interpretation on PDF p.96.
+  - subject: chim1
+    predicate: has_reported_relative_activity_in
+    object: assay
+    notes: 'Reported activity [%], columns in source order: [5.8, 1.0, 187, 85, 135,
+      80]. Columns 1-2: S1 and S2 with 4 ug enzyme, each relative to NovL with the
+      same substrate (=100%). Columns 3-4: S3 monoamide and diamide with 4 ug; columns
+      5-6: S3 monoamide and diamide with 40 ug. Each S3 column uses its own load/product-matched
+      CouL reference (=100%). <NG means below detection, not zero; the numerical detection
+      threshold is unstated. These values are not absolute conversion percentages
+      or one shared activity scale.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3.31A and caption, PDF p.94; S3 interpretation on PDF p.96.
+  - subject: chim2
+    predicate: has_reported_relative_activity_in
+    object: assay
+    notes: 'Reported activity [%], columns in source order: [3.5, 0.4, 114, 29, 111,
+      67]. Columns 1-2: S1 and S2 with 4 ug enzyme, each relative to NovL with the
+      same substrate (=100%). Columns 3-4: S3 monoamide and diamide with 4 ug; columns
+      5-6: S3 monoamide and diamide with 40 ug. Each S3 column uses its own load/product-matched
+      CouL reference (=100%). <NG means below detection, not zero; the numerical detection
+      threshold is unstated. These values are not absolute conversion percentages
+      or one shared activity scale.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3.31A and caption, PDF p.94; S3 interpretation on PDF p.96.
+  - subject: chim3
+    predicate: has_reported_relative_activity_in
+    object: assay
+    notes: 'Reported activity [%], columns in source order: [11, 1.5, 41, <NG, 55,
+      35]. Columns 1-2: S1 and S2 with 4 ug enzyme, each relative to NovL with the
+      same substrate (=100%). Columns 3-4: S3 monoamide and diamide with 4 ug; columns
+      5-6: S3 monoamide and diamide with 40 ug. Each S3 column uses its own load/product-matched
+      CouL reference (=100%). <NG means below detection, not zero; the numerical detection
+      threshold is unstated. These values are not absolute conversion percentages
+      or one shared activity scale.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3.31A and caption, PDF p.94; S3 interpretation on PDF p.96.
+  - subject: chim4
+    predicate: has_reported_relative_activity_in
+    object: assay
+    notes: 'Reported activity [%], columns in source order: [7.6, 1.0, 15, <NG, 33,
+      35]. Columns 1-2: S1 and S2 with 4 ug enzyme, each relative to NovL with the
+      same substrate (=100%). Columns 3-4: S3 monoamide and diamide with 4 ug; columns
+      5-6: S3 monoamide and diamide with 40 ug. Each S3 column uses its own load/product-matched
+      CouL reference (=100%). <NG means below detection, not zero; the numerical detection
+      threshold is unstated. These values are not absolute conversion percentages
+      or one shared activity scale.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3.31A and caption, PDF p.94; S3 interpretation on PDF p.96.
+  - subject: chim5
+    predicate: has_reported_relative_activity_in
+    object: assay
+    notes: 'Reported activity [%], columns in source order: [106, 89, <NG, <NG, 3.5,
+      <NG]. Columns 1-2: S1 and S2 with 4 ug enzyme, each relative to NovL with the
+      same substrate (=100%). Columns 3-4: S3 monoamide and diamide with 4 ug; columns
+      5-6: S3 monoamide and diamide with 40 ug. Each S3 column uses its own load/product-matched
+      CouL reference (=100%). <NG means below detection, not zero; the numerical detection
+      threshold is unstated. These values are not absolute conversion percentages
+      or one shared activity scale.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3.31A and caption, PDF p.94; S3 interpretation on PDF p.96.
+  - subject: nov_parent
+    predicate: has_reported_relative_activity_in
+    object: assay
+    notes: 'Reported activity [%], columns in source order: [100, 100, <NG, <NG, 3.9,
+      <NG]. Columns 1-2: S1 and S2 with 4 ug enzyme, each relative to NovL with the
+      same substrate (=100%). Columns 3-4: S3 monoamide and diamide with 4 ug; columns
+      5-6: S3 monoamide and diamide with 40 ug. Each S3 column uses its own load/product-matched
+      CouL reference (=100%). <NG means below detection, not zero; the numerical detection
+      threshold is unstated. These values are not absolute conversion percentages
+      or one shared activity scale. NovL S3 monoamide is below detection at 4 ug but
+      3.9% of the matched CouL reference at 40 ug; earlier negative assays are not
+      universal substrate rejection.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3.31A and caption, PDF p.94; S3 interpretation on PDF p.96.
+  - subject: chim8
+    predicate: has_reported_relative_activity_in
+    object: assay
+    notes: 'Reported activity [%], columns in source order: [119, 119, <NG, <NG, 6.1,
+      <NG]. Columns 1-2: S1 and S2 with 4 ug enzyme, each relative to NovL with the
+      same substrate (=100%). Columns 3-4: S3 monoamide and diamide with 4 ug; columns
+      5-6: S3 monoamide and diamide with 40 ug. Each S3 column uses its own load/product-matched
+      CouL reference (=100%). <NG means below detection, not zero; the numerical detection
+      threshold is unstated. These values are not absolute conversion percentages
+      or one shared activity scale.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3.31A and caption, PDF p.94; S3 interpretation on PDF p.96.
+  - subject: chim9
+    predicate: has_reported_relative_activity_in
+    object: assay
+    notes: 'Reported activity [%], columns in source order: [109, 97, <NG, <NG, 5.3,
+      <NG]. Columns 1-2: S1 and S2 with 4 ug enzyme, each relative to NovL with the
+      same substrate (=100%). Columns 3-4: S3 monoamide and diamide with 4 ug; columns
+      5-6: S3 monoamide and diamide with 40 ug. Each S3 column uses its own load/product-matched
+      CouL reference (=100%). <NG means below detection, not zero; the numerical detection
+      threshold is unstated. These values are not absolute conversion percentages
+      or one shared activity scale.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3.31A and caption, PDF p.94; S3 interpretation on PDF p.96.
+  - subject: chim10
+    predicate: has_reported_relative_activity_in
+    object: assay
+    notes: 'Reported activity [%], columns in source order: [82, 48, <NG, <NG, 6.2,
+      <NG]. Columns 1-2: S1 and S2 with 4 ug enzyme, each relative to NovL with the
+      same substrate (=100%). Columns 3-4: S3 monoamide and diamide with 4 ug; columns
+      5-6: S3 monoamide and diamide with 40 ug. Each S3 column uses its own load/product-matched
+      CouL reference (=100%). <NG means below detection, not zero; the numerical detection
+      threshold is unstated. These values are not absolute conversion percentages
+      or one shared activity scale.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3.31A and caption, PDF p.94; S3 interpretation on PDF p.96.
+  - subject: chim11
+    predicate: has_reported_relative_activity_in
+    object: assay
+    notes: 'Reported activity [%], columns in source order: [24, 23, <NG, <NG, 8.4,
+      <NG]. Columns 1-2: S1 and S2 with 4 ug enzyme, each relative to NovL with the
+      same substrate (=100%). Columns 3-4: S3 monoamide and diamide with 4 ug; columns
+      5-6: S3 monoamide and diamide with 40 ug. Each S3 column uses its own load/product-matched
+      CouL reference (=100%). <NG means below detection, not zero; the numerical detection
+      threshold is unstated. These values are not absolute conversion percentages
+      or one shared activity scale.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3.31A and caption, PDF p.94; S3 interpretation on PDF p.96.
+  - subject: chim12
+    predicate: has_reported_relative_activity_in
+    object: assay
+    notes: 'Reported activity [%], columns in source order: [4.6, 0.9, 85, 82, 106,
+      89]. Columns 1-2: S1 and S2 with 4 ug enzyme, each relative to NovL with the
+      same substrate (=100%). Columns 3-4: S3 monoamide and diamide with 4 ug; columns
+      5-6: S3 monoamide and diamide with 40 ug. Each S3 column uses its own load/product-matched
+      CouL reference (=100%). <NG means below detection, not zero; the numerical detection
+      threshold is unstated. These values are not absolute conversion percentages
+      or one shared activity scale.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3.31A and caption, PDF p.94; S3 interpretation on PDF p.96.
+  - subject: s1
+    predicate: was_substrate_in
+    object: assay
+    notes: S1 is the genuine NovL acid substrate used for novobiocic-acid formation.
+      Assays used 100 uL, 50 mM Tris-HCl pH 8.0, 5 mM MgCl2, 1 mM ATP and 1 mM of
+      each supplied substrate, incubated 15 min at 30 C and quenched with 5 uL 1.5
+      M trichloroacetic acid. Protein load is column-specific, 4 or 40 ug.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.7.5 and Figures 3.29-3.31, PDF pp.49,93-94.
+  - subject: s2
+    predicate: was_substrate_in
+    object: assay
+    notes: S2 is an acid analogue; activity is a surrogate-substrate result, not native
+      synthesis. Assays used 100 uL, 50 mM Tris-HCl pH 8.0, 5 mM MgCl2, 1 mM ATP and
+      1 mM of each supplied substrate, incubated 15 min at 30 C and quenched with
+      5 uL 1.5 M trichloroacetic acid. Protein load is column-specific, 4 or 40 ug.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.7.5 and Figures 3.29-3.31, PDF pp.49,93-94.
+  - subject: s3
+    predicate: was_substrate_in
+    object: assay
+    notes: S3 has two carboxyl groups; the monoamide and diamide readouts are separate.
+      Assays used 100 uL, 50 mM Tris-HCl pH 8.0, 5 mM MgCl2, 1 mM ATP and 1 mM of
+      each supplied substrate, incubated 15 min at 30 C and quenched with 5 uL 1.5
+      M trichloroacetic acid. Protein load is column-specific, 4 or 40 ug.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.7.5 and Figures 3.29-3.31, PDF pp.49,93-94.
+  - subject: amine
+    predicate: was_substrate_in
+    object: assay
+    notes: The supplied aminocoumarin is C8-methylated. No unmethylated-ring-B Rhea
+      reaction or in-vivo methylation order is assigned. Assays used 100 uL, 50 mM
+      Tris-HCl pH 8.0, 5 mM MgCl2, 1 mM ATP and 1 mM of each supplied substrate, incubated
+      15 min at 30 C and quenched with 5 uL 1.5 M trichloroacetic acid. Protein load
+      is column-specific, 4 or 40 ug.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.7.5 and Figures 3.29-3.31, PDF pp.49,93-94.
+  - subject: assay
+    predicate: measured_source_assigned_product
+    object: p1
+    notes: S1 yields the source-assigned unglycosylated novobiocic-acid signal. Ethyl-acetate
+      extraction and C18 HPLC at 330 nm used a 1-mM novobiocic-acid standard. Separate
+      product-specific response factors and independent structural proofs for each
+      chimera signal are not provided in this experiment.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods and product/relative-activity figures, PDF pp.49,93-94.
+  - subject: assay
+    predicate: measured_source_assigned_product
+    object: p2
+    notes: S2 yields the source-assigned surrogate amide signal. Ethyl-acetate extraction
+      and C18 HPLC at 330 nm used a 1-mM novobiocic-acid standard. Separate product-specific
+      response factors and independent structural proofs for each chimera signal are
+      not provided in this experiment.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods and product/relative-activity figures, PDF pp.49,93-94.
+  - subject: assay
+    predicate: measured_source_assigned_product
+    object: mono
+    notes: S3/1 denotes monoamide product 1; no unique monoamide regiochemistry is
+      assigned here. Ethyl-acetate extraction and C18 HPLC at 330 nm used a 1-mM novobiocic-acid
+      standard. Separate product-specific response factors and independent structural
+      proofs for each chimera signal are not provided in this experiment.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods and product/relative-activity figures, PDF pp.49,93-94.
+  - subject: assay
+    predicate: measured_source_assigned_product
+    object: di
+    notes: S3/2 denotes diamide product 2; it is not mature coumermycin A1 or a directly
+      observed catalytic intermediate. Ethyl-acetate extraction and C18 HPLC at 330
+      nm used a 1-mM novobiocic-acid standard. Separate product-specific response
+      factors and independent structural proofs for each chimera signal are not provided
+      in this experiment.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods and product/relative-activity figures, PDF pp.49,93-94.
+  - subject: assay
+    predicate: is_limited_by
+    object: linearity
+    notes: Figure 3.30 tested parental enzyme loads up to 6 ug per 100 uL. NovL product
+      formation was linear only up to 2 ug for S1 and 3.5 ug for S2. The text describes
+      CouL as linear beyond 6 ug, although the plotted range ends at 6. The selected
+      4-ug panel load exceeds both stated NovL bounds, and 40-ug S3 results are outside
+      this tested loading range. Figure 3.31 reports duplicate assays without specifying
+      biological replicates or tabulated uncertainty. The Figure 3.30 error bars are
+      not identified here as SD or SE. Thus these endpoint comparisons must not become
+      initial-rate kinetics, kcat or catalytic-efficiency estimates.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3.30/results 3.4.3 and Figure 3.31 text, PDF pp.93-94.
+      snippet: Doppelbestimmung
+  - subject: assay
+    predicate: supports_bounded_interpretation
+    object: interpretation
+    notes: The selected swaps associate region IIa, region IIb and the following segment
+      with activity differences. For S1, Chim5/8/9 have near-NovL normalized values,
+      while Chim10/11 are lower; for S3 the author emphasizes the 40-ug monoamide
+      column because other signals are weak. This does not establish universal dispensability
+      of the termini or region I, direct substrate binding by particular residues,
+      or loss of folding in less active fusions. Normalized columns cannot be compared
+      as an absolute protein-dose response. Homology-based candidate residues on PDF
+      pp.97-99 remain untested hypotheses in this study; no extra point-mutant proteins
+      or solved NovL/CouL structures are inferred. Below-detection entries are retained
+      as censored observations.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 3.31 caption and discussion, PDF pp.94-99.
+      snippet: unterhalb der Nachweisgrenze
+curation_history:
+- timestamp: '2026-10-04T17:07:55Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add cathomycin-novl-coul-chimera-substrate-panel-and-limits from Metzger
+    primary evidence; preserve construct, sequence and endpoint-assay limits (#551).
+  llm_assisted: true

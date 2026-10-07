@@ -1,0 +1,398 @@
+record_id: naturalproductmech:mibig-e03313fa44
+standard_inchi_key: PLEGMCYXNQPJNV-TYXWGSLYSA-N
+graph:
+  graph_id: simocyclinone-d8-simc7-heterologous-genetics
+  scope: BIOSYNTHESIS
+  description: 'SimC7 deletion and complementation in the heterologous sim cluster,
+    including the engineered SimX-expressing host background and chemical assignment
+    of 7-oxo-SD8. Native sequence identity, intended alleles, source-reported rescue
+    and conflicting construct/yield descriptions remain distinct (review #538). The
+    2015 main article and relevant primary thesis sections were inspected; the journal
+    supplementary file was not obtained. Neither native-producer deletion nor complete
+    owner stereochemistry is established by these experiments.'
+  nodes:
+  - node_id: simc7
+    label: Deposited native SimC7 ketoreductase
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:G9VYV4
+  - node_id: gene
+    label: Native simC7 locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: pac
+    label: PAC-12I containing the sim biosynthetic cluster
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: pac_delta
+    label: PAC-12I delta-simC7 scar construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: m1152
+    label: S. coelicolor M1152 heterologous host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: host
+    label: S. coelicolor M1152ex1 SimX-expressing host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: simx_construct
+    label: pIJ10480 ermEp*-simEx1 expression construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: simx
+    label: Assayed SimX / SimEx1 protein, allele unresolved
+    node_type: PROTEIN
+    grounding_status: REVIEW_NEEDED
+  - node_id: intact
+    label: M1152ex1 carrying intact PAC-12I
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: mutant
+    label: M1152ex1 carrying PAC-12I delta-simC7
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: sd8
+    label: Source-assigned simocyclinone D8
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: oxo
+    label: Source-assigned 7-oxo-simocyclinone D8
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: rescue1_construct
+    label: pGM1190-NB-C7, promoter description disputed
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: rescue2_construct
+    label: pGM1190-pB7-NB-C7 complementation construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: rescue1
+    label: Delta-simC7 host carrying pGM1190-NB-C7
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: rescue2
+    label: Delta-simC7 host carrying pGM1190-pB7-NB-C7
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: gene
+    predicate: encodes
+    object: simc7
+    notes: This node denotes the deposited native protein. The scar mutant, tagged
+      enzyme and complementation plasmids are separate entities; none is assigned
+      the native accession as an exact engineered-sequence identifier.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AEU17892.1
+      evidence_type: DATABASE_ASSERTION
+      notes: 'Native S. antibioticus Tu6040 simC7: AEU17892.1, AF324838.2:9344..10198(+),
+        855 nt including stop, 284 aa. The historical hydroxylase/dehydratase product
+        label is an annotation, not the experimentally revised reaction.'
+    - reference: https://www.uniprot.org/uniprotkb/G9VYV4
+      evidence_type: DATABASE_ASSERTION
+      notes: Active unreviewed G9VYV4, taxon 1890, entry version 41, sequence version
+        1; inspected 2026-10-04. Native sequence grounding, not assignment of a canonical
+        accession to an engineered tagged protein.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: CDS-aware table-11 translation, GenPept, UniProt and pinned BGC0001072.5
+        agree exactly for the 284-aa native protein. This does not independently sequence
+        the experimental PAC, expression plasmid or deletion junction.
+  - subject: pac
+    predicate: contains
+    object: gene
+    notes: The paper reports PAC-12I with a roughly 95-kb insert containing the approximately
+      72-kb, 49-gene cluster and about 19-kb/4-kb flanks. Thesis Table 2.4 instead
+      describes an 85-kb BamHI genomic fragment; the whole insert and restriction
+      fragment are not assumed identical measurements. PAC sequencing was reported,
+      but a complete public experimental insert was not independently compared base-for-base
+      here.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main article, introduction and PAC-clone methods.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 2.4 pp.51-52 and section 3.2; no significant sequence differences
+        is not a claim of literal identity at every nucleotide.
+  - subject: pac_delta
+    predicate: is_derived_from
+    object: pac
+    notes: PCR targeting in E. coli used lambda RED and an apramycin cassette amplified
+      from pIJ773_del_oriT; FLP excision removed the marker and reportedly left an
+      81-bp in-frame scar. PCR and EcoRI digestion verified the construct. This is
+      not a scarless deletion, the earlier native simX::apr allele, or a sequenced
+      final junction.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main article, simC7 deletion methods.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods 2.5.8 pp.82-84 and Table 2.5 p.60.
+  - subject: pac_delta
+    predicate: disrupts
+    object: gene
+    notes: Literal 39-nt deletion arms map to AF324838.2:9308..9346(+) and 10196..10234(-),
+      retaining native ATG/TAG and replacing the intervening 849 bp. An 81-bp scar
+      would give an 87-bp start-to-stop allele. Check primers span 9192..10350, predicting
+      1159 bp natively versus 391 bp for that scar model. These are curator reconstructions,
+      not measured mutant sequence or observed gel sizes; possible local regulatory
+      effects are not excluded by calling the scar in-frame.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Literal Table 2.5 primers and reported targeting protocol.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Native-locus reconstruction against AF324838.2.
+  - subject: host
+    predicate: carries
+    object: simx_construct
+    notes: M1152ex1 was created by introducing the integrative pIJ10480 construct
+      into S. coelicolor M1152. All subsequent SimC7 cluster experiments use this
+      engineered background; the native producer S. antibioticus Tu6040 was not deleted
+      in this study.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results, optimization of the heterologous host; methods.
+  - subject: simx_construct
+    predicate: is_reported_to_express
+    object: simx
+    notes: 'The construct drives simEx1/SimX from ermEp*. This experiment does not
+      resolve the native Ala/Gly126 SimX ambiguity documented in the existing resistance
+      graph (review #537), nor does enhanced resistance directly measure transport
+      flux.'
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Heterologous-host optimization, pIJ10480.
+  - subject: host
+    predicate: has_reported_resistance_relative_to
+    object: m1152
+    notes: Reported SD8 MIC changes from 1 to 100 ug/mL after introduction of pIJ10480.
+      This is the M1152 comparison, not the earlier S. lividans 2-to-65 ug/mL result.
+      The thesis specifies 200-uL 96-well SMMS assays, 1e5 spores per well, 30 C for
+      six days and a growth-inhibition endpoint; no flux, energy coupling or quantitative
+      MIC uncertainty is measured here.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results, heterologous-host optimization.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: MIC methods 2.3.4 p.74 and section 3.3.
+  - subject: intact
+    predicate: has_engineered_host_background
+    object: host
+    notes: This experimental strain retains the SimX-expressing M1152ex1 background.
+      The genomic source of the PAC is native Tu6040, but its assay host is S. coelicolor.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results, host optimization and simC7 deletion; Figure 2.
+  - subject: intact
+    predicate: carries
+    object: pac
+    notes: The indicated PAC was mobilized into the heterologous host; the intact-cluster
+      and scar-mutant strains are compared without conflating their construct identities.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 2 and PAC mobilization methods.
+  - subject: mutant
+    predicate: has_engineered_host_background
+    object: host
+    notes: This experimental strain retains the SimX-expressing M1152ex1 background.
+      The genomic source of the PAC is native Tu6040, but its assay host is S. coelicolor.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results, host optimization and simC7 deletion; Figure 2.
+  - subject: mutant
+    predicate: carries
+    object: pac_delta
+    notes: The indicated PAC was mobilized into the heterologous host; the intact-cluster
+      and scar-mutant strains are compared without conflating their construct identities.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 2 and PAC mobilization methods.
+  - subject: intact
+    predicate: produces
+    object: sd8
+    notes: Culture extracts match source-assigned SD8 by LC-MS-UV, against an isolated
+      standard. Production conditions were six days at 30 C and 250 rpm in defined
+      medium with glutamine 5.84 g/L and glycerol 20 mL/L. The article reports 24-56
+      mg/L versus 9-14 mg/L for native Tu6040. Thesis p.115 instead prints 24-56 mg/mL,
+      while Figure 3.3 uses an mg/L axis; the conflict is preserved, not silently
+      corrected. That thesis growth curve also used 1e8 spores for the cluster strain
+      versus 1e7 for host-only controls. It is not an equal-inoculum growth-rate experiment.
+      Figure 3.2 qualitatively shows partial alleviation of cluster-associated growth/sporulation
+      impairment by SimX on SFM agar after nine days at 30 C.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results, heterologous production; Figure 2; production methods.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.3 p.115 and Figures 3.2-3.3 pp.116-117.
+  - subject: host
+    predicate: has_no_detected_production_of
+    object: sd8
+    notes: The M1152ex1 control without the sim cluster produced no detected simocyclinones
+      under the reported production conditions. This is a negative assay control,
+      not proof of absence under every culture condition or a numerical zero yield.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results, heterologous production; production methods.
+  - subject: mutant
+    predicate: produces
+    object: oxo
+    notes: 'The principal mutant product is assigned as 7-oxo-SD8, not failure of
+      all simocyclinone synthesis. Figure 2 compares mutant, intact-cluster and SD8-standard
+      extracts after six days; their displayed retention times are 20.65, 19.53 and
+      19.48 min. Approximately 63 mg was purified from 4 L with reported >98% purity
+      and 27% recovery. Retention time alone is not the structural proof: HRMS, fragmentation
+      and NMR supply the assignment.'
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results and Figures 2-5; purification methods.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 4.2 pp.122-124, same experimental work rather than independent
+        replication.
+      snippet: had a mass 2 Da lighter
+  - subject: oxo
+    predicate: has_source_assigned_structural_difference_from
+    object: sd8
+    notes: The reported difference is a C-7 carbonyl instead of the C-7 hydroxyl on
+      the angucyclinone, with the tetraene linker retained. Two-Da lower parent mass,
+      polyketide-localized MS/MS differences, missing H-7, shifted H-6, and carbonyl/HMBC
+      NMR evidence support this assignment. These source-assigned assay compounds
+      are distinct from MGD8N2A and other congeners. No uninspected complete chemical
+      identifier is invented; the owner retains six unspecified stereocentres and
+      its open shared-MIBiG discussion remain unresolved.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main Figures 1-5 and structural-analysis results. Supplementary NMR tables
+        were cited by the paper but not independently obtained in this review.
+  - subject: rescue1
+    predicate: is_complemented_derivative_of
+    object: mutant
+    notes: Complementation was performed in the M1152ex1/PAC-12I delta-simC7 background,
+      not in native Tu6040. The genotype is not silently replaced by the intact-PAC
+      control.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Complementation methods/results.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 4.3 and Figure 4.16.
+  - subject: rescue1
+    predicate: carries
+    object: rescue1_construct
+    notes: The named pGM1190 derivative provides an in-trans simC7 copy. The source
+      does not establish equal expression, copy number or promoter activity between
+      the rescue constructs.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 2.4, methods p.85 and Figure 4.16.
+  - subject: rescue2
+    predicate: is_complemented_derivative_of
+    object: mutant
+    notes: Complementation was performed in the M1152ex1/PAC-12I delta-simC7 background,
+      not in native Tu6040. The genotype is not silently replaced by the intact-PAC
+      control.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Complementation methods/results.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 4.3 and Figure 4.16.
+  - subject: rescue2
+    predicate: carries
+    object: rescue2_construct
+    notes: The named pGM1190 derivative provides an in-trans simC7 copy. The source
+      does not establish equal expression, copy number or promoter activity between
+      the rescue constructs.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 2.4, methods p.85 and Figure 4.16.
+  - subject: rescue1_construct
+    predicate: provides_reported_intact_copy_of
+    object: gene
+    notes: Methods p.85, Table 2.4 and Figure 4.16 describe pGM1190-NB-C7 as ptipA::simC7.
+      Results p.146 instead explain its low yield by a missing promoter. This unresolved
+      source conflict is not repaired or used to assign a demonstrated promoter mechanism.
+      The reverse-primer name/site discrepancy in Table 2.5 also prevents literal
+      reconstruction of the final cloning junction from names alone.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 2.4 p.53, Table 2.5 p.60, methods p.85, results pp.146-147.
+  - subject: rescue2_construct
+    predicate: provides_reported_intact_copy_of
+    object: gene
+    notes: The second rescue fuses simC7 to the approximately 400-bp region upstream
+      of simB7 in pGM1190. Literal 20-nt promoter-primer arms map to 3812..3831(+)
+      and 4189..4208(-), predicting a 397-bp native segment and 415-bp tailed PCR
+      product. This reconstruction does not establish an experimental plasmid junction
+      or directly map a promoter. The proposed simB7-to-simC7 seven-gene operon remains
+      putative.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Complementation methods/results.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 2.5 p.60 and section 4.3 p.146.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Native promoter-fragment reconstruction.
+  - subject: rescue1
+    predicate: has_reported_low_production_of
+    object: sd8
+    notes: The thesis reports low SD8 yield from the first rescue and shows a source-assigned
+      SD8 peak in Figure 4.16. The promoter explanation is disputed within the source.
+      Panel-normalized intensity is not an absolute yield or a quantified fraction
+      of wild-type rescue; a matched empty-rescue-vector comparison is not shown in
+      this panel.
+    evidence:
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 4.3 pp.146-147, Figure 4.16.
+  - subject: rescue2
+    predicate: restores_detectable_production_of
+    object: sd8
+    notes: The article reports complementation with the simB7-upstream fusion as data
+      not shown. The thesis Figure 4.16 displays LC-MS-UV chromatograms at 200-700
+      nm after six days at 30 C and reports HRMS confirmation without displaying those
+      spectra. The normalized traces and SD8/7-oxo standards support product rescue,
+      not an absolute wild-type-equivalent yield or exclusion of all polar effects.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Complementation results and methods, text-reported rescue.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 4.3 and Figure 4.16.
+      snippet: restored SD8 production
+curation_history:
+- timestamp: '2026-10-04T10:00:59Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added source-checked SimC7 component from owner base 18a4bf228d83b0404cc77b4301067ad6039e588e;
+    DOI:10.1016/j.jmb.2015.03.019 and author thesis https://ueaeprints.uea.ac.uk/id/eprint/61276/.
+    Exact native sequence and literal primer audit; review #538 limitations retained.
+    Main article and relevant thesis sections inspected, journal supplement not obtained.'
+  llm_assisted: true

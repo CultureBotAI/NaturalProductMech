@@ -24,6 +24,10 @@
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 </p>
+<details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/terpenoids/trichobrasilenol.yaml">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
 <p>A carbobicyclic compound that is (3aS,7aS)-octahydro-1H-indene substituted by a methyl group at positions 1S, 6 and 6, and by a 1-hydroxypropan-2-ylidene group at position 4. It is a sesquiterpenoid produced by a Trichoderma terpene cyclase.</p>
 <h2>Structure</h2>
 <div class="scroll"><table>
@@ -53,7 +57,7 @@ same claim.</p>
 </tr>
 </table></div>
 
-<h2>Occurrences <span class="tag">1</span></h2>
+<h2 id="occurrences">Occurrences <span class="tag">1</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
 <div class="scroll"><table>
@@ -65,7 +69,7 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 </tr>
 </table></div>
 
-<h2>Biosynthetic gene clusters <span class="tag">1</span></h2>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
 <div class="scroll"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
@@ -81,6 +85,33 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Database-reported BraB glycosylation consumes exact trichobrasilenol. BraB is the sequence-verified native Annulohypoxylon truncatum CBS140778 reference, not a Trichoderma terpene cyclase or an identified historical assay construct. The primary paper was inaccessible, so functional evidence remains database-level. Product stereochemistry is incomplete; donor and pathway-finality limits remain explicit. No native producer-grade upgrade or change to SEEDED status.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>BraB native CBS140778 reference</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>MITE-reported BraB glycosylation</td>
+  <td>MITE and reviewed UniProt supply functional attribution at database level. Native sequence equality proves reference correspondence, not historical assay-stock or construct identity. UniProt qualifies UDP-GlcNAc as a putative sugar donor; this graph does not assert a measured donor preference, kinetics, protein-alone assay or physical complex. No native producer upgrade follows from heterologous-expression database codes.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000202.json<br>https://www.uniprot.org/uniprotkb/P9WER1<br>https://www.ncbi.nlm.nih.gov/protein/QOE88884.1<br>https://www.ncbi.nlm.nih.gov/nuccore/MT383109.1</td>
+</tr>
+<tr>
+  <td>trichobrasilenol</td>
+  <td>is_database_example_substrate_of</td>
+  <td>MITE-reported BraB glycosylation</td>
+  <td>Pinned RDKit2026.03.5 and the repository identity helper match the MITE substrate to full owner key DJBXKQSFHIRXRM-JRYBIPSHSA-N with complete stereochemistry. BraB consumes the owner compound; it is not its terpene synthase. This does not equate the owner&#39;s Trichoderma occurrence/ChEBI definition context with the native A.truncatum reference or upgrade the imported SOURCE_ASSERTION producer claim. All source-owned contexts remain unchanged.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000202.json</td>
+</tr>
+<tr>
+  <td>MITE-reported BraB glycosylation</td>
+  <td>has_database_example_product</td>
+  <td>Brasilane A, stereo-incomplete database model</td>
+  <td>MITE&#39;s brasilane A model leaves anomeric and alkene stereochemistry unspecified; repository chemistry checks mark it stereo-incomplete. It remains externally ungrounded, with no exact stereoisomer or historical structure assignment substituted. MITE marks isIntermediate false, but UniProt describes later BraC transformations. That source flag does not prove pathway finality; no downstream graph or final-product claim is adopted.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000202.json</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

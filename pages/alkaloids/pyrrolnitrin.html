@@ -24,6 +24,10 @@
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">antifungal</span><span class="tag">cytotoxic</span><span class="tag">enzyme inhibitor</span></p>
+<details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/pyrrolnitrin.yaml">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
 <p>A member of the class of pyrroles carrying chloro and 3-chloro-2-nitrophenyl substituents at positions 3 and 4 respectively.</p>
 <h2>Structure</h2>
 <div class="scroll"><table>
@@ -53,7 +57,7 @@ same claim.</p>
 </tr>
 </table></div>
 
-<h2>Occurrences <span class="tag">18</span></h2>
+<h2 id="occurrences">Occurrences <span class="tag">18</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
 <div class="scroll"><table>
@@ -150,7 +154,7 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 </tr>
 </table></div>
 
-<h2>Biosynthetic gene clusters <span class="tag">1</span></h2>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
 <div class="scroll"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
@@ -290,41 +294,448 @@ derived from a source. This is what the rest of the record exists to support.</p
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 12 edges</span></h2>
+<p class="sub">Biochemical subexperiments for candidate pyrrolnitrin reductase PrnF. Native reference, processed proteins and surrogate reaction remain distinct. No new pyrrolnitrin synthesis step, antimicrobial mechanism or full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Pseudomonas protegens Pf-5</td>
+  <td>encodes_native_reference</td>
+  <td>PrnF native sequence reference</td>
+  <td>CP000076.1 CDS4164049..4164609(+), 1-based inclusive; PFL_3609, AAY92875.1,186aa. CDS-aware table11=GenPept=UniProt unreviewed sequencev1; Pf-5/taxon220664. Deposit uses locus tag, not a prnF gene qualifier.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1<br>https://www.ncbi.nlm.nih.gov/protein/AAY92875.1<br>https://www.uniprot.org/uniprotkb/Q4KAM2</td>
+</tr>
+<tr>
+  <td>Study PrnF preparation</td>
+  <td>has_native_sequence_reference</td>
+  <td>PrnF native sequence reference</td>
+  <td>Published primer cores match native CDS ends. Figure2/native186aa conflict with prose160aa; BAA-447 versus databaseBAA-477 unresolved. pQE30Xa/BL21(DE3),factor-Xa processed; full stock unverified.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07</td>
+</tr>
+<tr>
+  <td>Study PrnF preparation</td>
+  <td>catalyzed_in_assay</td>
+  <td>PrnF-catalyzed flavin reduction assay</td>
+  <td>NADH absorbance340nm,30C,pH7.0. Table1:FAD Km3.2+/-0.6uM,kcat65.0+/-8.2s^-1; not in-vivo flux.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07</td>
+</tr>
+<tr>
+  <td>FAD assay substrate</td>
+  <td>was_substrate_for</td>
+  <td>PrnF-catalyzed flavin reduction assay</td>
+  <td>Not a permanently bound prosthetic group; protonation unspecified.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07</td>
+</tr>
+<tr>
+  <td>NADH assay electron donor</td>
+  <td>was_electron_donor_for</td>
+  <td>PrnF-catalyzed flavin reduction assay</td>
+  <td>No universal exclusion of alternative donors inferred.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07</td>
+</tr>
+<tr>
+  <td>PrnF-catalyzed flavin reduction assay</td>
+  <td>yielded</td>
+  <td>Reduced FAD assay product</td>
+  <td>Anaerobic reduction and absorbance450nm recovery after oxygen readmission.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07</td>
+</tr>
+<tr>
+  <td>Reduced FAD assay product</td>
+  <td>was_inferred_to_support</td>
+  <td>PrnD/PrnF surrogate oxidation assay</td>
+  <td>Coupling interpretation, not direct visualization of flavin transfer.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07</td>
+</tr>
+<tr>
+  <td>Study PrnF preparation</td>
+  <td>supported_in_assay</td>
+  <td>PrnD/PrnF surrogate oxidation assay</td>
+  <td>Added PrnF enhanced the coupled reaction.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07</td>
+</tr>
+<tr>
+  <td>Study PrnD preparation (sequence unresolved)</td>
+  <td>catalyzed_in_assay</td>
+  <td>PrnD/PrnF surrogate oxidation assay</td>
+  <td>Prior-method primers disagree with Pf-5 Q4KAM4 termini; no exact native mapping adopted.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07<br>DOI:10.1074/jbc.M505334200</td>
+</tr>
+<tr>
+  <td>p-Aminobenzylamine surrogate substrate</td>
+  <td>was_substrate_for</td>
+  <td>PrnD/PrnF surrogate oxidation assay</td>
+  <td>Not aminopyrrolnitrin.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07</td>
+</tr>
+<tr>
+  <td>PrnD/PrnF surrogate oxidation assay</td>
+  <td>yielded</td>
+  <td>p-Nitrobenzylamine assay product</td>
+  <td>HPLC standard coelution and high-resolution MS; not pyrrolnitrin.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07</td>
+</tr>
+<tr>
+  <td>Study PrnF preparation</td>
+  <td>interacted_in_study_with</td>
+  <td>Study PrnD preparation (sequence unresolved)</td>
+  <td>Fluorescence of FAD-bound PrnF,membrane separation,gel filtration. No universal monomer stoichiometry or exclusive endogenous partner asserted.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">18 nodes, 20 edges</span></h2>
+<p class="sub">BL915 gene-expression assignments, distinct from the existing PA23 database-assertion graph. Versioned nucleotide accession is cited as sequence evidence, not assigned as a BGC identifier. Primary abstract and captions only; full text, figure images, tables and supplement unread. No historical Pf-5 stock identification, purified-enzyme kinetics, antimicrobial mechanism or full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native BL915 pyrrolnitrin locus (sequence U74493.1)</td>
+  <td>encodes_native_reference</td>
+  <td>PrnA native BL915 reference</td>
+  <td>U74493.1 CDS423..2039(+),1-based inclusive;AAB97504.1,538aa. CDS-aware table11=GenPept=UniProt,reviewed entry88,sequencev1. Native source Bl915,taxon294;not Pf-5 or PA23.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/U74493.1<br>https://www.ncbi.nlm.nih.gov/protein/AAB97504.1<br>https://www.uniprot.org/uniprotkb/P95480</td>
+</tr>
+<tr>
+  <td>PrnA study gene-expression product</td>
+  <td>has_native_sequence_reference</td>
+  <td>PrnA native BL915 reference</td>
+  <td>Reference correspondence, not complete expression-construct equality.</td>
+  <td class="mono">DOI:10.1128/JB.180.7.1939-1943.1998</td>
+</tr>
+<tr>
+  <td>PrnA study gene-expression product</td>
+  <td>was_genetically_assigned_to</td>
+  <td>Reported tryptophan chlorination</td>
+  <td>Gene-expression assignment; not isolated purified-enzyme turnover.</td>
+  <td class="mono">DOI:10.1128/JB.180.7.1939-1943.1998</td>
+</tr>
+<tr>
+  <td>L-tryptophan</td>
+  <td>was_converted_in_reported_assignment</td>
+  <td>Reported tryptophan chlorination</td>
+  <td>No reaction rate or exact culture formulation asserted.</td>
+  <td class="mono">DOI:10.1128/JB.180.7.1939-1943.1998</td>
+</tr>
+<tr>
+  <td>Reported tryptophan chlorination</td>
+  <td>yielded_reported_product</td>
+  <td>7-chloro-L-tryptophan</td>
+  <td>No detailed catalytic intermediate asserted.</td>
+  <td class="mono">DOI:10.1128/JB.180.7.1939-1943.1998</td>
+</tr>
+<tr>
+  <td>Native BL915 pyrrolnitrin locus (sequence U74493.1)</td>
+  <td>encodes_native_reference</td>
+  <td>PrnB native BL915 reference</td>
+  <td>U74493.1 CDS2039..3124(+),1-based inclusive;AAB97505.1,361aa. CDS-aware table11=GenPept=UniProt,reviewed entry73,sequencev1. Native source Bl915,taxon294;not Pf-5 or PA23. GenBank/GenPept gene qualifier saysprnA;productPrnB and exact sequence/EMBL mapping identify this CDS.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/U74493.1<br>https://www.ncbi.nlm.nih.gov/protein/AAB97505.1<br>https://www.uniprot.org/uniprotkb/P95481</td>
+</tr>
+<tr>
+  <td>PrnB study gene-expression product</td>
+  <td>has_native_sequence_reference</td>
+  <td>PrnB native BL915 reference</td>
+  <td>Reference correspondence, not complete expression-construct equality.</td>
+  <td class="mono">DOI:10.1128/JB.180.7.1939-1943.1998</td>
+</tr>
+<tr>
+  <td>PrnB study gene-expression product</td>
+  <td>was_genetically_assigned_to</td>
+  <td>Reported ring rearrangement and decarboxylation</td>
+  <td>Gene-expression assignment; not isolated purified-enzyme turnover.</td>
+  <td class="mono">DOI:10.1128/JB.180.7.1939-1943.1998</td>
+</tr>
+<tr>
+  <td>7-chloro-L-tryptophan</td>
+  <td>was_converted_in_reported_assignment</td>
+  <td>Reported ring rearrangement and decarboxylation</td>
+  <td>No reaction rate or exact culture formulation asserted.</td>
+  <td class="mono">DOI:10.1128/JB.180.7.1939-1943.1998</td>
+</tr>
+<tr>
+  <td>Reported ring rearrangement and decarboxylation</td>
+  <td>yielded_reported_product</td>
+  <td>Monodechloroaminopyrrolnitrin</td>
+  <td>No detailed catalytic intermediate asserted.</td>
+  <td class="mono">DOI:10.1128/JB.180.7.1939-1943.1998</td>
+</tr>
+<tr>
+  <td>Native BL915 pyrrolnitrin locus (sequence U74493.1)</td>
+  <td>encodes_native_reference</td>
+  <td>PrnC native BL915 reference</td>
+  <td>U74493.1 CDS3167..4870(+),1-based inclusive;AAB97506.1,567aa. CDS-aware table11=GenPept=UniProt,reviewed entry65,sequencev1. Native source Bl915,taxon294;not Pf-5 or PA23.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/U74493.1<br>https://www.ncbi.nlm.nih.gov/protein/AAB97506.1<br>https://www.uniprot.org/uniprotkb/P95482</td>
+</tr>
+<tr>
+  <td>PrnC study gene-expression product</td>
+  <td>has_native_sequence_reference</td>
+  <td>PrnC native BL915 reference</td>
+  <td>Reference correspondence, not complete expression-construct equality.</td>
+  <td class="mono">DOI:10.1128/JB.180.7.1939-1943.1998</td>
+</tr>
+<tr>
+  <td>PrnC study gene-expression product</td>
+  <td>was_genetically_assigned_to</td>
+  <td>Reported monodechloroaminopyrrolnitrin chlorination</td>
+  <td>Gene-expression assignment; not isolated purified-enzyme turnover.</td>
+  <td class="mono">DOI:10.1128/JB.180.7.1939-1943.1998</td>
+</tr>
+<tr>
+  <td>Monodechloroaminopyrrolnitrin</td>
+  <td>was_converted_in_reported_assignment</td>
+  <td>Reported monodechloroaminopyrrolnitrin chlorination</td>
+  <td>No reaction rate or exact culture formulation asserted.</td>
+  <td class="mono">DOI:10.1128/JB.180.7.1939-1943.1998</td>
+</tr>
+<tr>
+  <td>Reported monodechloroaminopyrrolnitrin chlorination</td>
+  <td>yielded_reported_product</td>
+  <td>Aminopyrrolnitrin</td>
+  <td>No detailed catalytic intermediate asserted.</td>
+  <td class="mono">DOI:10.1128/JB.180.7.1939-1943.1998</td>
+</tr>
+<tr>
+  <td>Native BL915 pyrrolnitrin locus (sequence U74493.1)</td>
+  <td>encodes_native_reference</td>
+  <td>PrnD native BL915 reference</td>
+  <td>U74493.1 CDS4895..5986(+),1-based inclusive;AAB97507.1,363aa. CDS-aware table11=GenPept=UniProt,reviewed entry92,sequencev1. Native source Bl915,taxon294;not Pf-5 or PA23.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/U74493.1<br>https://www.ncbi.nlm.nih.gov/protein/AAB97507.1<br>https://www.uniprot.org/uniprotkb/P95483</td>
+</tr>
+<tr>
+  <td>PrnD study gene-expression product</td>
+  <td>has_native_sequence_reference</td>
+  <td>PrnD native BL915 reference</td>
+  <td>Reference correspondence, not complete expression-construct equality.</td>
+  <td class="mono">DOI:10.1128/JB.180.7.1939-1943.1998</td>
+</tr>
+<tr>
+  <td>PrnD study gene-expression product</td>
+  <td>was_genetically_assigned_to</td>
+  <td>Reported aminopyrrolnitrin oxidation</td>
+  <td>Gene-expression assignment; not isolated purified-enzyme turnover.</td>
+  <td class="mono">DOI:10.1128/JB.180.7.1939-1943.1998</td>
+</tr>
+<tr>
+  <td>Aminopyrrolnitrin</td>
+  <td>was_converted_in_reported_assignment</td>
+  <td>Reported aminopyrrolnitrin oxidation</td>
+  <td>No reaction rate or exact culture formulation asserted.</td>
+  <td class="mono">DOI:10.1128/JB.180.7.1939-1943.1998</td>
+</tr>
+<tr>
+  <td>Reported aminopyrrolnitrin oxidation</td>
+  <td>yielded_reported_product</td>
+  <td>Pyrrolnitrin</td>
+  <td>No detailed catalytic intermediate asserted.</td>
+  <td class="mono">DOI:10.1128/JB.180.7.1939-1943.1998</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
+<p class="sub">Candidate ORF2 coupling experiment for the pyrrolnitrin-associated PrnD system, using a surrogate substrate. Current native reference and unresolved study preparations remain distinct. No direct ORF2-PrnD binding, complete physiological pathway, endogenous necessity, quantitative flux, antimicrobial mechanism or full-record sign-off asserted.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Pseudomonas protegens Pf-5</td>
+  <td>encodes_native_reference</td>
+  <td>ORF2 candidate native sequence reference</td>
+  <td>PFL_3602/AAY92868.1, 360 aa; CP000076.1 CDS 4153602..4154684(+), 1-based inclusive. CDS-aware table 11 translation equals GenPept and UniProt Q4KAM9, unreviewed sequence version 1. Not a historical stock sequence.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1<br>https://www.ncbi.nlm.nih.gov/protein/AAY92868.1<br>https://www.uniprot.org/uniprotkb/Q4KAM9</td>
+</tr>
+<tr>
+  <td>Study ORF2 preparation (sequence unresolved)</td>
+  <td>has_candidate_native_locus_reference</td>
+  <td>ORF2 candidate native sequence reference</td>
+  <td>Figure 2 position and 360-aa length suggest PFL_3602, but cloning primers, tags and exact translated stock are not established. BAB51856 is a similarity reference, not the tested sequence. Candidate mapping only.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07</td>
+</tr>
+<tr>
+  <td>Study ORF2 preparation (sequence unresolved)</td>
+  <td>supported_reported_coupled_assay</td>
+  <td>Reported ORF2/PrnD surrogate oxidation assay</td>
+  <td>The purified ORF2 preparation supported lower surrogate conversion than PrnF. Exact assay conditions are insufficiently resolved for a quantitative rate claim. No endogenous partner exclusivity or necessity inferred.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07</td>
+</tr>
+<tr>
+  <td>Study PrnD preparation (sequence unresolved)</td>
+  <td>catalyzed_reported_surrogate_oxidation</td>
+  <td>Reported ORF2/PrnD surrogate oxidation assay</td>
+  <td>Unresolved preparation from the cited prior method. Published primers disagree with Pf-5 Q4KAM4 termini; no exact native identifier adopted.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07<br>DOI:10.1074/jbc.M505334200</td>
+</tr>
+<tr>
+  <td>p-Aminobenzylamine surrogate substrate</td>
+  <td>was_reported_substrate_of</td>
+  <td>Reported ORF2/PrnD surrogate oxidation assay</td>
+  <td>Surrogate arylamine, not aminopyrrolnitrin.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07</td>
+</tr>
+<tr>
+  <td>Reported ORF2/PrnD surrogate oxidation assay</td>
+  <td>had_reported_readout</td>
+  <td>Reported pABA N-oxygenation readout</td>
+  <td>Qualitative N-oxygenation readout only. No independently inspected ORF2-specific product chromatogram, exact product identity or pyrrolnitrin production result adopted.</td>
+  <td class="mono">DOI:10.1128/JB.01050-07</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
+<p class="sub">In-vitro aminopyrrolnitrin oxidation by reconstituted PrnD with heterologous SsuE. Both historical protein preparations remain sequence-unresolved. Not a native-partner assignment, binding/assembly claim, antimicrobial mechanism or full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Study SsuE preparation (sequence unresolved)</td>
+  <td>supported_in_assay</td>
+  <td>In-vitro SsuE-assisted PrnD oxidation</td>
+  <td>XL1 Blue genomic source; pQE-80L N-terminal His6 fusion expressed in BL21(DE3). Heterologous substitute for an unknown Pseudomonas reductase, not an endogenous partner. Study reports a 672-bp PCR product; complete historical construct remains unresolved.</td>
+  <td class="mono">DOI:10.1074/jbc.M505334200<br>https://www.ncbi.nlm.nih.gov/nuccore/CP132550.1<br>https://www.uniprot.org/uniprotkb/P80644</td>
+</tr>
+<tr>
+  <td>Reconstituted study PrnD (sequence unresolved)</td>
+  <td>catalyzed_in_assay</td>
+  <td>In-vitro SsuE-assisted PrnD oxidation</td>
+  <td>MBP fusion/factor-Xa processed PrnD required in-vitro iron-sulfur reconstitution. Published primers disagree with Pf-5 Q4KAM4 and match BL915 reference ends, which does not identify historical stock. No exact native protein identifier adopted. Routine HPLC assay: 20mM Tris-HCl pH7.8,30C,100uM NADPH,3uM FMN,500uM substrate, SsuE/PrnD molar ratio4.0. This is assay composition, not complex stoichiometry or in-vivo flux.</td>
+  <td class="mono">DOI:10.1074/jbc.M505334200<br>https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1<br>https://www.ncbi.nlm.nih.gov/nuccore/U74493.1</td>
+</tr>
+<tr>
+  <td>Aminopyrrolnitrin</td>
+  <td>was_substrate_for</td>
+  <td>In-vitro SsuE-assisted PrnD oxidation</td>
+  <td>Exact pyrrolnitrin precursor; distinct from the separately assayed arylamine surrogates.</td>
+  <td class="mono">DOI:10.1074/jbc.M505334200</td>
+</tr>
+<tr>
+  <td>In-vitro SsuE-assisted PrnD oxidation</td>
+  <td>yielded</td>
+  <td>Pyrrolnitrin</td>
+  <td>HPLC standard retention, purified-product 1H NMR and high-resolution EI-MS support product identity. No native-cell production rate inferred.</td>
+  <td class="mono">DOI:10.1074/jbc.M505334200</td>
+</tr>
+<tr>
+  <td>NADPH assay electron donor</td>
+  <td>was_supplied_as_electron_donor_for</td>
+  <td>In-vitro SsuE-assisted PrnD oxidation</td>
+  <td>NADPH supplied with FMN and SsuE; no exclusive endogenous electron donor asserted.</td>
+  <td class="mono">DOI:10.1074/jbc.M505334200</td>
+</tr>
+<tr>
+  <td>FMN supplied in assay</td>
+  <td>was_supplied_as_flavin_for</td>
+  <td>In-vitro SsuE-assisted PrnD oxidation</td>
+  <td>Supplied FMN is not a permanently bound prosthetic-group claim; no direct visualization of transfer asserted.</td>
+  <td class="mono">DOI:10.1074/jbc.M505334200</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">25</span></h2>
+<p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
 <div class="scroll"><table>
-<tr><th>Assay</th><th>Result</th><th>Reference</th></tr>
-<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in MCF 10a normal breast cells.</td><td>21.136 uM</td><td class="mono">pubchem.aid:624296</td></tr>
-<tr><td>CYP3A4 induction through human pregnane X receptor (PXR) by small molecules, qHTS assay</td><td>11.2202 uM</td><td class="mono">pubchem.aid:1346984</td></tr>
-<tr><td>Cytotoxicity counterscreen for inhibitors of SARS-CoV-2 cell entry</td><td>39.8107 uM</td><td class="mono">pubchem.aid:1645845</td></tr>
-<tr><td>Human pregnane X receptor (PXR) activation by small molecules, qHTS assay</td><td>14.1254 uM</td><td class="mono">pubchem.aid:1346985</td></tr>
-<tr><td>Inhibitors of USP1/UAF1: Pilot qHTS</td><td>39.8107 uM</td><td class="mono">pubchem.aid:504865</td></tr>
-<tr><td>P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line, qHTS therapeutic library screen</td><td>29.0929 uM</td><td class="mono">PMID:31515284</td></tr>
-<tr><td>Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase (ALOX12): Round 2</td><td>100 uM</td><td class="mono">pubchem.aid:1671190</td></tr>
-<tr><td>Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase (ALOX12): Round 2</td><td>100 uM</td><td class="mono">pubchem.aid:1671190</td></tr>
-<tr><td>Primary qHTS for inhibitors of MERS-S pseudo-typed particle cell entry</td><td>39.8107 uM</td><td class="mono">pubchem.aid:1479149</td></tr>
-<tr><td>Primary qHTS for inhibitors of SARS-S pseudo-typed particle cell entry</td><td>39.8107 uM</td><td class="mono">pubchem.aid:1479145</td></tr>
-<tr><td>Primary qHTS to identify inhibitors of SARS-CoV-2 cell entry</td><td>39.8107 uM</td><td class="mono">pubchem.aid:1645846</td></tr>
-<tr><td>VP16 counterscreen qHTS for inhibitors of ROR gamma transcriptional activity</td><td>12.5893 uM</td><td class="mono">pubchem.aid:2546</td></tr>
-<tr><td>Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 3 (EPAC1)</td><td>35.4813 uM</td><td class="mono">pubchem.aid:1645883</td></tr>
-<tr><td>Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 3 (EPAC1)</td><td>35.4813 uM</td><td class="mono">pubchem.aid:1645883</td></tr>
-<tr><td>Validation qHTS for antagonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)</td><td>56.2341 uM</td><td class="mono">pubchem.aid:1645886</td></tr>
-<tr><td>Validation qHTS for antagonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)</td><td>56.2341 uM</td><td class="mono">pubchem.aid:1645886</td></tr>
-<tr><td>qHTS Assay for Inhibitors of Histone Lysine Methyltransferase G9a</td><td>3.5481 uM</td><td class="mono">pubchem.aid:504332</td></tr>
-<tr><td>qHTS Assay for Small Molecule Inhibitors of the Human hERG Channel Activity</td><td>35.4813 uM</td><td class="mono">pubchem.aid:588834</td></tr>
-<tr><td>qHTS assay for identifying genotoxic compounds that show differential cytotoxicity against isogenic chicken DT40 cell lines with known DNA damage response pathways - Rad54/Ku70 mutant cell line</td><td>26.6032 uM</td><td class="mono">pubchem.aid:743015</td></tr>
-<tr><td>qHTS assay for identifying genotoxic compounds that show differential cytotoxicity against isogenic chicken DT40 cell lines with known DNA damage response pathways - Rev3 mutant cell line</td><td>23.7101 uM</td><td class="mono">pubchem.aid:743014</td></tr>
-<tr><td>qHTS assay for identifying genotoxic compounds that show differential cytotoxicity against isogenic chicken DT40 cell lines with known DNA damage response pathways - wild type cell line</td><td>18.8336 uM</td><td class="mono">pubchem.aid:743012</td></tr>
-<tr><td>qHTS assay for small molecule agonists of the p53 signaling pathway</td><td>26.6032 uM</td><td class="mono">pubchem.aid:651631</td></tr>
-<tr><td>qHTS assay for small molecule agonists of the p53 signaling pathway - cell viability</td><td>33.4915 uM</td><td class="mono">pubchem.aid:651633</td></tr>
-<tr><td>qHTS assay for small molecule disruptors of the mitochondrial membrane potential</td><td>2.9849 uM</td><td class="mono">pubchem.aid:720635</td></tr>
-<tr><td>qHTS assay for small molecule disruptors of the mitochondrial membrane potential - cell viability</td><td>10.5909 uM</td><td class="mono">pubchem.aid:720634</td></tr>
+<tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
+<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in MCF 10a normal breast cells.</td><td>21.136 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624296</summary><dl><dt>assay</dt><dd>A quantitative high throughput screen for small molecules that induce DNA re-replication in MCF 10a normal breast cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624296</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory. Target accession NP_056979 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>21.136</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>CYP3A4 induction through human pregnane X receptor (PXR) by small molecules, qHTS assay</td><td>11.2202 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1346984</summary><dl><dt>assay</dt><dd>CYP3A4 induction through human pregnane X receptor (PXR) by small molecules, qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1346984</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346984, deposited by 824; assay type Confirmatory. Target accession ABI96208 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>11.2202</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Cytotoxicity counterscreen for inhibitors of SARS-CoV-2 cell entry</td><td>39.8107 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645845</summary><dl><dt>assay</dt><dd>Cytotoxicity counterscreen for inhibitors of SARS-CoV-2 cell entry</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645845</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645845, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>39.8107</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
+</details></td></tr>
+<tr><td>Human pregnane X receptor (PXR) activation by small molecules, qHTS assay</td><td>14.1254 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1346985</summary><dl><dt>assay</dt><dd>Human pregnane X receptor (PXR) activation by small molecules, qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1346985</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346985, deposited by 824; assay type Confirmatory. Target accession ADZ17384 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>14.1254</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Inhibitors of USP1/UAF1: Pilot qHTS</td><td>39.8107 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:504865</summary><dl><dt>assay</dt><dd>Inhibitors of USP1/UAF1: Pilot qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:504865</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504865, deposited by NCGC; assay type Confirmatory. Target accession AAH18745 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>39.8107</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line, qHTS therapeutic library screen</td><td>29.0929 uM</td><td class="mono">Not recorded</td><td><details><summary>PMID:31515284</summary><dl><dt>assay</dt><dd>P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line, qHTS therapeutic library screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:31515284</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346987, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>29.0929</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase (ALOX12): Round 2</td><td>100 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1671190</summary><dl><dt>assay</dt><dd>Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase (ALOX12): Round 2</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1671190</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671190, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>100.0</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase (ALOX12): Round 2</td><td>100 uM</td><td class="mono">UniProtKB:P18054</td><td><details><summary>pubchem.aid:1671190</summary><dl><dt>assay</dt><dd>Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase (ALOX12): Round 2</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1671190</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1671190, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>100.0</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P18054</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS for inhibitors of MERS-S pseudo-typed particle cell entry</td><td>39.8107 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1479149</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of MERS-S pseudo-typed particle cell entry</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1479149</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1479149, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>39.8107</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS for inhibitors of SARS-S pseudo-typed particle cell entry</td><td>39.8107 uM</td><td class="mono">UniProtKB:P59594</td><td><details><summary>pubchem.aid:1479145</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of SARS-S pseudo-typed particle cell entry</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1479145</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1479145, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>39.8107</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P59594</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS to identify inhibitors of SARS-CoV-2 cell entry</td><td>39.8107 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645846</summary><dl><dt>assay</dt><dd>Primary qHTS to identify inhibitors of SARS-CoV-2 cell entry</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645846</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645846, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>39.8107</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>VP16 counterscreen qHTS for inhibitors of ROR gamma transcriptional activity</td><td>12.5893 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2546</summary><dl><dt>assay</dt><dd>VP16 counterscreen qHTS for inhibitors of ROR gamma transcriptional activity</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2546</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2546, deposited by NCGC; assay type Confirmatory. Target accession NP_035411 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>12.5893</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 3 (EPAC1)</td><td>35.4813 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645883</summary><dl><dt>assay</dt><dd>Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 3 (EPAC1)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645883</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>35.4813</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 3 (EPAC1)</td><td>35.4813 uM</td><td class="mono">UniProtKB:O95398</td><td><details><summary>pubchem.aid:1645883</summary><dl><dt>assay</dt><dd>Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 3 (EPAC1)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645883</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>35.4813</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:O95398</dd></dl>
+</details></td></tr>
+<tr><td>Validation qHTS for antagonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)</td><td>56.2341 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645886</summary><dl><dt>assay</dt><dd>Validation qHTS for antagonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645886</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645886, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>56.2341</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Validation qHTS for antagonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)</td><td>56.2341 uM</td><td class="mono">UniProtKB:Q8WZA2</td><td><details><summary>pubchem.aid:1645886</summary><dl><dt>assay</dt><dd>Validation qHTS for antagonist of cAMP-regulated guanine nucleotide exchange factor 4 (EPAC2)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645886</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645886, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>56.2341</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:Q8WZA2</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Inhibitors of Histone Lysine Methyltransferase G9a</td><td>3.5481 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:504332</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of Histone Lysine Methyltransferase G9a</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:504332</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504332, deposited by NCGC; assay type Confirmatory. Target accession CAQ07474 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>3.5481</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Small Molecule Inhibitors of the Human hERG Channel Activity</td><td>35.4813 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:588834</summary><dl><dt>assay</dt><dd>qHTS Assay for Small Molecule Inhibitors of the Human hERG Channel Activity</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:588834</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 588834, deposited by NCGC; assay type Confirmatory. Target accession NP_001191727 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>35.4813</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>qHTS assay for identifying genotoxic compounds that show differential cytotoxicity against isogenic chicken DT40 cell lines with known DNA damage response pathways - Rad54/Ku70 mutant cell line</td><td>26.6032 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:743015</summary><dl><dt>assay</dt><dd>qHTS assay for identifying genotoxic compounds that show differential cytotoxicity against isogenic chicken DT40 cell lines with known DNA damage response pathways - Rad54/Ku70 mutant cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:743015</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 743015, deposited by 824; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>26.6032</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
+</details></td></tr>
+<tr><td>qHTS assay for identifying genotoxic compounds that show differential cytotoxicity against isogenic chicken DT40 cell lines with known DNA damage response pathways - Rev3 mutant cell line</td><td>23.7101 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:743014</summary><dl><dt>assay</dt><dd>qHTS assay for identifying genotoxic compounds that show differential cytotoxicity against isogenic chicken DT40 cell lines with known DNA damage response pathways - Rev3 mutant cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:743014</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 743014, deposited by 824; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>23.7101</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
+</details></td></tr>
+<tr><td>qHTS assay for identifying genotoxic compounds that show differential cytotoxicity against isogenic chicken DT40 cell lines with known DNA damage response pathways - wild type cell line</td><td>18.8336 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:743012</summary><dl><dt>assay</dt><dd>qHTS assay for identifying genotoxic compounds that show differential cytotoxicity against isogenic chicken DT40 cell lines with known DNA damage response pathways - wild type cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:743012</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 743012, deposited by 824; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>18.8336</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
+</details></td></tr>
+<tr><td>qHTS assay for small molecule agonists of the p53 signaling pathway</td><td>26.6032 uM</td><td class="mono">UniProtKB:P04637</td><td><details><summary>pubchem.aid:651631</summary><dl><dt>assay</dt><dd>qHTS assay for small molecule agonists of the p53 signaling pathway</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:651631</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 651631, deposited by 824; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>26.6032</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:P04637</dd></dl>
+</details></td></tr>
+<tr><td>qHTS assay for small molecule agonists of the p53 signaling pathway - cell viability</td><td>33.4915 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:651633</summary><dl><dt>assay</dt><dd>qHTS assay for small molecule agonists of the p53 signaling pathway - cell viability</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:651633</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 651633, deposited by 824; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>33.4915</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>qHTS assay for small molecule disruptors of the mitochondrial membrane potential</td><td>2.9849 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:720635</summary><dl><dt>assay</dt><dd>qHTS assay for small molecule disruptors of the mitochondrial membrane potential</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:720635</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 720635, deposited by 824; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>2.9849</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>qHTS assay for small molecule disruptors of the mitochondrial membrane potential - cell viability</td><td>10.5909 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:720634</summary><dl><dt>assay</dt><dd>qHTS assay for small molecule disruptors of the mitochondrial membrane potential - cell viability</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:720634</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 720634, deposited by 824; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>10.5909</dd><dt>units</dt><dd>uM</dd><dt>notes</dt><dd>38 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but not written here.</dd></dl>
+</details></td></tr>
 </table></div>
 
 <h2>Elsewhere in the fleet</h2>
-<ul><li>AntibioticMech — <span class="mono">CHEBI:32079</span>
-    (same structure, same inchikey)</li>
+<ul><li>AntibioticMech — <a class="mono" href="https://culturebotai.github.io/AntibioticMech/pages/antifungal/pyrrolnitrin.html">CHEBI:32079</a>    (same structure, same inchikey)</li>
 </ul>
 
 

@@ -1,0 +1,246 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novn-carbamoylation-cofactors-and-kinetic-limits
+  scope: BIOSYNTHESIS
+  description: 'Xu purified NovN carbamoylation, conditional kinetics and bounded
+    negative tests. Review #560. Xu locators are PDF pages, nineteen higher than printed
+    main-text pages. The owner retains its unspecified sugar stereocentre and SEEDED
+    status; source-assigned novobiocin is not an exact structure-key merge with cathomycin.
+    Native reference, engineered protein and DNA construct are separate entities.'
+  nodes:
+  - node_id: wt
+    label: Xu N-terminal His6 NovN preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: Xu NovN carbamoylation endpoint assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: acceptor
+    label: Descarbamoylnovobiocin acceptor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: cap
+    label: Carbamoyl-phosphate dilithium donor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: product
+    label: HPLC-assigned novobiocin assay product
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: control
+    label: Heat-denatured NovN control
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: atp
+    label: ATP omission and supplementation readout
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: metal
+    label: Added Mg/Mn dependence and residual activity
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: kinetics
+    label: Xu five-minute NovN kinetic experiment
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: fit
+    label: Descarbamoylnovobiocin-conditioned NovN kinetic fit
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: allostery
+    label: Proposed Mg-ATP allosteric activation
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: crude
+    label: Crude coumermycin D extract test
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: negative
+    label: No expected in-vitro coumermycin D product detected
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: acetyl
+    label: Acetyl-phosphate donor substitution test
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: acetyl_negative
+    label: No expected acetyl-phosphate-derived product detected
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: wt
+    predicate: catalyzes
+    object: assay
+    notes: The standard assay uses 100 uL, 0.2 M Tris-HCl pH 8, 1 mM acceptor, 5 mM
+      carbamoyl-phosphate dilithium, 2 mM ATP, 2 mM Mg and 0.4 uM NovN at 30 C, quenched
+      with 5 uL 1.5 M trichloroacetic acid. Overnight endpoint/preparative incubations
+      are not the five-minute kinetic assay.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Assay methods and results, PDF pp.57,87.
+  - subject: acceptor
+    predicate: is_substrate_for
+    object: assay
+    notes: Descarbamoylnovobiocin is the genuine acceptor named by the source. Materials
+      identify Pharmacia & Upjohn as supplier. No exact chemical CURIE or new resolution
+      of the owner sugar stereochemistry is inferred.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Materials and Figure 17, PDF pp.30,87.
+  - subject: cap
+    predicate: is_carbamoyl_donor_for
+    object: assay
+    notes: Carbamoyl phosphate is supplied at 5 mM. The experiment supports carbamoyl
+      transfer under the stated conditions, not independent quantitation of phosphate
+      release or donor binding.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Methods and Figure 17, PDF pp.57,87.
+  - subject: assay
+    predicate: forms_source_assigned_product
+    object: product
+    notes: Figure 17 shows the source-assigned novobiocin signal. Products were extracted
+      twice with 500 uL ethyl acetate and separated on Nucleosil RP120-5 with 70-100%
+      methanol in 1% formic acid over 25 min, detected at 325 nm. The methods name
+      clorobiocin and descarbamoylnovobiocin standards; this edge does not invent
+      an independently inspected novobiocin standard or establish exact-key equivalence
+      to the owner.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; HPLC methods and Figure 17, PDF pp.60-61,87.
+  - subject: control
+    predicate: is_negative_control_for
+    object: assay
+    notes: The methods specify heat-denatured enzyme as a negative control. This is
+      the stated control design, not a separately quantified detection limit or a
+      measured fraction of active enzyme.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Assay methods and displayed control, PDF
+        pp.57,87.
+  - subject: assay
+    predicate: has_reported_atp_dependence
+    object: atp
+    notes: ATP omission is reported to eliminate detectable enzymatic activity; no
+      numerical detection threshold is supplied. The stated optimum is 2 mM ATP. This
+      does not establish stoichiometric ATP consumption or an ATP-binding constant.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Results, PDF pp.87-88.
+  - subject: assay
+    predicate: has_reported_metal_dependence
+    object: metal
+    notes: With ATP but without added Mg2+ or Mn2+, the source reports 1% activity,
+      not zero. The stated optimum Mg2+ concentration is 2 mM. This is not an exhaustive
+      metal-specificity panel or evidence that the later deposited Fe is a physiological
+      cofactor.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Results, PDF pp.87-88.
+  - subject: wt
+    predicate: was_measured_in
+    object: kinetics
+    notes: Kinetics used 37.5 nM NovN, 5 mM carbamoyl phosphate, 2.5-40 uM acceptor
+      and five-minute incubations under the reported assay protocol. Assays were duplicate
+      and evaluated by Lineweaver-Burk plots. Figure error bars are not defined as
+      SD or SE. The source reports linear product formation up to 0.5 uM enzyme and
+      90 min in preliminary tests.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Kinetic methods/results and Figure 18,
+        PDF pp.57,88.
+      snippet: Each experiment was carried out in duplicate.
+  - subject: acceptor
+    predicate: conditions
+    object: fit
+    notes: For descarbamoylnovobiocin the thesis reports Km 2.4 uM and kcat 2.4 min^-1.
+      These preparation- and condition-specific values are not binding affinity, native
+      flux or the separate Freel Meyers values of 4.6 uM and 4.1 min^-1 relayed by
+      UniProt.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Figure 18 and kinetic results, PDF p.88.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F4
+      evidence_type: DATABASE_ASSERTION
+      notes: Separate annotated kinetic values, not a substitute for the thesis experiment.
+  - subject: kinetics
+    predicate: yields_reported_fit
+    object: fit
+    notes: The reported Lineweaver-Burk fit applies to the genuine acceptor; no uncertainty
+      interval or active-fraction correction is supplied. Do not transfer the 0.4-uM
+      overnight enzyme loading to this fit.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Kinetic methods and Figure 18, PDF pp.57,88.
+  - subject: atp
+    predicate: motivates_source_hypothesis
+    object: allostery
+    notes: The discussion proposes Mg-ATP as an allosteric activator. This is a source
+      hypothesis, not a measured allosteric site, ATP occupancy, proton-transfer mechanism
+      or a solved catalytic intermediate.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Xu 2004 primary dissertation; Discussion, PDF pp.101-102.
+  - subject: wt
+    predicate: was_tested_in
+    object: crude
+    notes: Coumermycin D was supplied as crude mutant extract, not pure compound.
+      Its nominal 0.1 mM concentration was calculated as coumermycin A1. The overnight
+      in-vitro test therefore has matrix and concentration limits not shared by the
+      purified acceptor assays.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Figure 21 and results, PDF p.92.
+      snippet: not in pure form
+  - subject: crude
+    predicate: gave_bounded_negative_readout
+    object: negative
+    notes: 'The expected carbamoylated product was not detected in this in-vitro extract
+      assay. Do not encode universal nonacceptance of pure coumermycin D: the separate
+      heterologous experiment reports a minor bis-carbamoylated product.'
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Results and discussion, PDF pp.92-93,98-102.
+  - subject: wt
+    predicate: was_tested_in
+    object: acetyl
+    notes: The alternative-donor experiment supplied 5 mM acetyl phosphate instead
+      of carbamoyl phosphate with the genuine acceptor overnight. A carbamoyl-phosphate
+      positive and acceptor-only negative control bound interpretation of this particular
+      substitution.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Figure 22 and results, PDF pp.92-93.
+  - subject: acetyl
+    predicate: gave_bounded_negative_readout
+    object: acetyl_negative
+    notes: No expected acetyl-phosphate-derived product was detected under these conditions.
+      This does not exclude all alternative donors, all enzyme loadings or activity
+      below an unspecified detection threshold.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary dissertation; Results, PDF pp.92-93.
+curation_history:
+- timestamp: '2026-10-04T22:05:23Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cathomycin-novn-carbamoylation-cofactors-and-kinetic-limits with source-checked
+    NovN evidence and review #560 limits.'
+  llm_assisted: true

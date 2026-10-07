@@ -24,6 +24,10 @@
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 </p>
+<div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/unclassified/oxepinamide-d.yaml">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
 
 <h2>Structure</h2>
 <div class="scroll"><table>
@@ -53,7 +57,7 @@ same claim.</p>
 </tr>
 </table></div>
 
-<h2>Occurrences <span class="tag">2</span></h2>
+<h2 id="occurrences">Occurrences <span class="tag">2</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
 <div class="scroll"><table>
@@ -70,7 +74,7 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 </tr>
 </table></div>
 
-<h2>Biosynthetic gene clusters <span class="tag">1</span></h2>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
 <div class="scroll"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
@@ -86,6 +90,33 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">MITE-asserted OpaC2 hydroxylation yielding the exact oxepinamide D structure. Native genomic identity is checked; functional attribution comes from MITE, not a UniProt FUNCTION annotation or personally inspected primary experiments. This is the oxepinamide D cluster reference, not the distinct OpaC of the oxepinamide F cluster. No producer/BGC grade or occurrence claim is changed; not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>OpaC2 native reference from A. ustus 3.3904</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>MITE-reported C-3 hydroxylation</td>
+  <td>MITE supplies the compound-specific hydroxylation assertion. The native accession is not replaced by the different 462-residue OpaC reference A0A0C1BV72 from the oxepinamide F cluster. No catalytic rate, active-site residue, redox state, physical complex or inspected mutant experiment is claimed.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000310.json<br>https://www.uniprot.org/uniprotkb/A0A0C1BVY7<br>https://www.ncbi.nlm.nih.gov/protein/KIA75686.1<br>https://www.ncbi.nlm.nih.gov/nuccore/JOMC01000058.1</td>
+</tr>
+<tr>
+  <td>MITE-reported 1H-oxepin substrate</td>
+  <td>is_database_reported_substrate_of</td>
+  <td>MITE-reported C-3 hydroxylation</td>
+  <td>The node denotes the 1H-oxepin substrate encoded in the pinned MITE reaction example. No external compound identifier or additional upstream biosynthetic step is assigned.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000310.json</td>
+</tr>
+<tr>
+  <td>MITE-reported C-3 hydroxylation</td>
+  <td>has_database_reported_product</td>
+  <td>Oxepinamide D, exact owner structure</td>
+  <td>The pinned MITE example product matches the owner&#39;s full Standard InChIKey LTIOSJQYEGEEHY-BLVKFPJESA-N and defined stereochemistry using the repository structure helper and RDKit 2026.03.5. The example&#39;s isIntermediate flag is not used to prove pathway finality. SOURCE_ASSERTION producer and CLUSTER_UNSTATED BGC grades stay unchanged; the separate A. puniceus occurrences are not promoted to production.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000310.json</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

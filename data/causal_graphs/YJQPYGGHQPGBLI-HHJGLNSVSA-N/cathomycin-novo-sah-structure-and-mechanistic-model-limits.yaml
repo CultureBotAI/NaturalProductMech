@@ -1,0 +1,204 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novo-sah-structure-and-mechanistic-model-limits
+  scope: BIOSYNTHESIS
+  description: 'Observed NovO-SAH structure and deposited homodimer are kept distinct
+    from coumarin/SAM docking, substrate-entry and catalytic hypotheses in Sadler
+    2017. Review #555. PDF locators refer to the 60-page accepted manuscript/SI, not
+    final journal pagination; SI printed pages are seven lower. The cathomycin owner
+    retains its unspecified sugar stereocentre.'
+  nodes:
+  - node_id: native
+    label: Deposited native NovO sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F3
+  - node_id: semet
+    label: Sadler SeMet-labelled NovO-His6 crystallization preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: structure
+    label: Deposited 5MGZ NovO-SAH structural model
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: dimer
+    label: Author/PISA-assigned NovO homodimer
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: sah
+    label: S-Adenosyl-L-homocysteine in 5MGZ
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: contacts
+    label: Observed NovO-SAH polar contact geometry
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: r24
+    label: Chain-A R24 alternate conformations
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: gate
+    label: Proposed R24 substrate-entry role
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: docking
+    label: MOE-derived coumarin and SAM binding hypothesis
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: substrate
+    label: Synthetic coumarin benzamide docking substrate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: catalysis
+    label: Proposed H120/R121-assisted C8 methylation mechanism
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: native
+    predicate: is_core_sequence_reference_for
+    object: semet
+    notes: The deposited construct is exactly Q9L9F3 residues 1-230 plus C-terminal
+      HHHHHH. The source describes SeMet labelling for phasing; native Q9L9F3 is not
+      the full labelled/tagged preparation.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native protein sequence.
+    - reference: https://files.rcsb.org/download/5MGZ.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Entity sequence, native mapping and tag annotations.
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; Main p.2; SI sections
+        2/16, PDF pp.9-10,35.
+  - subject: semet
+    predicate: was_used_for_structure_determination
+    object: structure
+    notes: The source reports single-wavelength anomalous dispersion with 12 SeMet
+      sites, two protein molecules in the asymmetric unit and 1.9-A resolution. The
+      current 5MGZ coordinate model uses ordinary MET/S atoms and contains no Se atoms.
+      Coordinate atom naming does not negate source-described SeMet phasing or measure
+      labelling occupancy. Both chains model residues 1-230; all six tag residues
+      per chain are unmodeled, not shown to have been cleaved.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI section 2, PDF pp.9-12.
+      snippet: Two molecules of a homodimer
+    - reference: https://files.rcsb.org/download/5MGZ.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Entry 1.3; entity, atom-site and unresolved-tag audit; retrieved 2026-10-04.
+  - subject: structure
+    predicate: has_assigned_biological_assembly
+    object: dimer
+    notes: 5MGZ assembly 1 is dimeric, assigned by authors and PISA, with identity-operation
+      chains A/B. This supports the deposited assembly model, not direct native-cell
+      stoichiometry or a newly measured solution equilibrium. The manuscript cites
+      an earlier solution-dimer study; that separate full study was not inspected
+      here.
+    evidence:
+    - reference: https://www.rcsb.org/structure/5MGZ
+      evidence_type: DATABASE_ASSERTION
+      notes: Assembly 1 and deposition metadata.
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; Main p.2.
+  - subject: structure
+    predicate: contains_observed_ligand
+    object: sah
+    notes: Each chain contains one 26-heavy-atom SAH. The deposit also contains glycerol,
+      acetate and water, not a bound coumarin or SAM. SI omit maps describe defined
+      SAH conformations in both chains. The source used 12 mg/mL protein preincubated
+      with 2 mM SAH; soaking/solution concentrations are not binding constants.
+    evidence:
+    - reference: https://files.rcsb.org/download/5MGZ.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Atom-site ligand inventory.
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; SI section 2, PDF pp.9-11.
+  - subject: sah
+    predicate: has_observed_polar_contacts
+    object: contacts
+    notes: Independent coordinate distances in chains A/B are E4-OE1 to SAH-N6 2.978/2.994
+      A, D96-OD1 to N6 2.832/2.812 A, D70-OD1 to O2-prime 2.688/2.639 A, and R116-NH1
+      to O 2.782/2.810 A. These support the polar geometry described by Figure 1 and
+      SI Figure S4, not observed proton transfer, SAM chemistry or a coumarin contact.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; Main Figure 1, PDF
+        p.2; SI Figure S4, PDF p.13.
+    - reference: https://files.rcsb.org/download/5MGZ.cif
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent nearest-polar-atom distance calculation.
+  - subject: structure
+    predicate: shows_local_alternate_conformations
+    object: r24
+    notes: The source emphasizes flexible R24 and illustrates chain A. The deposit
+      has A/B alternate atom locations for chain-A R24 only; chain B has no alternate
+      R24 locations. Alternate locations and B-factors are not direct measurements
+      of a substrate-entry trajectory.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sadler 2017 accepted manuscript with appended SI; Main p.2; SI Figure
+        S5, PDF p.13.
+    - reference: https://files.rcsb.org/download/5MGZ.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Chain-specific R24 alternate-location audit.
+  - subject: r24
+    predicate: motivates_proposed_gatekeeping
+    object: gate
+    notes: A substrate-entry role is inferred from location, flexibility and mutagenesis,
+      not directly observed transport through a gate. R24F endpoint impairment does
+      not uniquely establish the route.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Sadler 2017 accepted manuscript with appended SI; Main pp.2-3.
+  - subject: structure
+    predicate: served_as_template_for
+    object: docking
+    notes: Attempts to obtain a coumarin-bound crystal failed. MOE retained SAH, used
+      Protonate3D at pH 7 and selected a docking model partly by coumarin C8 proximity
+      to SAH sulfur. Adding a modeled methyl gave a reported 2.59-A C8 distance and
+      109-degree orientation. These are modeled values, not contacts measured in 5MGZ.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Sadler 2017 accepted manuscript with appended SI; Main p.2; SI section
+        5, PDF pp.14-16.
+  - subject: substrate
+    predicate: was_modelled_in
+    object: docking
+    notes: The main text and SI model methods name substrate 6, while the SI Figure
+      S7 caption calls it 4a. Preserve that caption-label difference; neither establishes
+      an observed enzyme-substrate or enzyme-product complex. No exact ligand identifier
+      is assigned from the docking picture.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Sadler 2017 accepted manuscript with appended SI; Main Figure 2, PDF
+        p.2; SI Figures S6/S7, PDF pp.15-16.
+  - subject: docking
+    predicate: supports_proposed_catalytic_model
+    object: catalysis
+    notes: The authors propose H120 deprotonation of the substrate 7-OH, R121-assisted
+      stabilization/positioning and C8 methyl transfer from SAM. R116/N117, F14 and
+      Y216 roles also derive from docking and mutational effects. These data do not
+      directly observe a proton trajectory or uniquely separate binding, folding and
+      chemistry; the source also allows R116/N117 to stabilize the phenoxide.
+    evidence:
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Sadler 2017 accepted manuscript with appended SI; Main Figure 2/Scheme
+        2, PDF pp.2-4.
+curation_history:
+- timestamp: '2026-10-04T19:05:52Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add cathomycin-novo-sah-structure-and-mechanistic-model-limits with bounded
+    primary protein evidence and source conflicts (#555).
+  llm_assisted: true

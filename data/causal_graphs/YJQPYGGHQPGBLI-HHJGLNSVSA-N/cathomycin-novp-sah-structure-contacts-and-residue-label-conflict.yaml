@@ -1,0 +1,208 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novp-sah-structure-contacts-and-residue-label-conflict
+  scope: BIOSYNTHESIS
+  description: 'Observed SAH contacts and structural limits, with independent coordinate
+    checks kept separate from the printed Asp128 label and from functional inference.
+    Review #558. The 2010 page locators refer to the 30-page author manuscript, not
+    journal pagination. The cathomycin owner retains its unspecified sugar stereocentre;
+    no exact merge with fully specified novobiocin or new mature-product synthesis
+    claim is made.'
+  nodes:
+  - node_id: wt
+    label: Gomez Garcia N-terminally tagged NovP preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: structure
+    label: 2WK1 NovP-SAH crystallographic model
+    node_type: OTHER
+    grounding_status: GROUNDED
+    identifier: PDB:2WK1
+  - node_id: sah
+    label: Observed S-adenosyl-L-homocysteine ligand
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: contacts
+    label: Observed SAH polar-contact geometry
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: missing
+    label: Unresolved NovP residues and illustrative loop model
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: quality
+    label: Source-specific NovP refinement statistics
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: lid
+    label: NovP residues 126-151 lid region
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: label_conflict
+    label: Printed Asp128 versus native Pro128 and Asp138 geometry
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: disulfide
+    label: Observed Cys228-Cys231 disulfide geometry
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: inventory
+    label: Observed ligands and absent modeled catalytic partners
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: wt
+    predicate: was_crystallized_for
+    object: structure
+    notes: The 1.4-A SAH-bound structure represents the tagged recombinant protein,
+      not untagged native NovP or a substrate-containing catalytic intermediate.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        pp.3,10 and Table 2, PDF pp.29-30.
+    - reference: https://files.rcsb.org/download/2WK1.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Entity and refinement records.
+  - subject: structure
+    predicate: contains_observed_ligand
+    object: sah
+    notes: The deposited SAH has 26 heavy atoms. Figure 6 shows its simulated-annealing
+      omit map at 6 sigma and describes Phe178/adenine stacking. Occupancy and packing
+      do not provide a dissociation constant or prove tight binding in solution.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        Figure 6, PDF p.24; methods pp.10-11.
+    - reference: https://files.rcsb.org/download/2WK1.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: SAH atom coordinates.
+  - subject: sah
+    predicate: has_independently_checked_contacts
+    object: contacts
+    notes: native 64 OG1--SAH OXT 2.593 A; native 65 N--SAH O 2.855 A; native 92 OE2--SAH
+      N 2.721 A; native 94 O--SAH N 2.901 A; native 96 N--SAH O3' 3.120 A; native
+      122 OD1--SAH O2' 2.752 A; native 122 OD2--SAH O3' 2.643 A; native 196 OD2--SAH
+      N 2.755 A; native 202 OG--SAH N7 2.843 A; native 202 OG--SAH N6 2.964 A. These
+      ten selected coordinate distances support geometrical contacts, not hydrogen-bond
+      energies or proton transfer. Residue numbers are native/auth_seq_id, not label_seq_id
+      (which includes the +20 tag offset).
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        p.5 and Figure 6, PDF p.24.
+    - reference: https://files.rcsb.org/download/2WK1.cif
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent Euclidean distances from deposited coordinates.
+  - subject: structure
+    predicate: has_unresolved_regions
+    object: missing
+    notes: '242 residues are modeled: native 14..38 and 46..262. The missing 40 comprise
+      tag positions -19..0, native 1..13 and 39..45. The cyan loop 39..45 in Figure
+      2 is an energetically favorable illustrative model, not experimentally resolved
+      coordinates. Asp14/Arg159/Lys241/Arg262 lack side-chain atoms; alternate conformations
+      occur at Met22, Asp165, Thr189, Met226, Glu237, Ile249 and Arg260.'
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        p.3; Figure 2, PDF p.17.
+    - reference: https://files.rcsb.org/download/2WK1.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Observed/unobserved/alternate atom records.
+  - subject: structure
+    predicate: has_source_specific_quality_values
+    object: quality
+    notes: The author manuscript reports Rwork 14.5% and Rfree 16.2%; current deposited
+      refinement values are 0.145 and 0.163. Preserve the source-specific difference
+      rather than silently harmonizing it. The 2007 maximum 1.35-A collection and
+      reprocessed 1.40-A dataset are different reports, not two resolutions for the
+      final atomic model.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        p.10 and Table 2.
+    - reference: DOI:10.1107/S1744309107008287
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2007 primary PDF text; Data collection/reprocessing. Text
+        inspected, not visually verified; extraction-ambiguous micro-unit volumes/dimensions
+        excluded.
+    - reference: https://files.rcsb.org/download/2WK1.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Refinement records, version 1.4.
+  - subject: structure
+    predicate: contains_observed_region
+    object: lid
+    notes: Residues 126..151 form the helical lid over mostly buried SAH. The paper
+      gives lid main/side-chain B factors 20.5/24.7 A^2 versus 14.0/17.7 for the rest
+      of the protein. Table 2 whole-protein values 14.6/18.1 use another denominator.
+      Static B factors are not direct measurements of gating trajectories, exchange
+      rates or rate-limiting lid motion.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        pp.5-6 and Table 2, PDF p.29.
+  - subject: lid
+    predicate: has_unresolved_source_residue_label
+    object: label_conflict
+    notes: Page 5 first names Gly126/Pro128 and later prints Asp128 as contacting
+      Tyr200/Glu201. Native 128 is Pro, whereas 138 is Asp. Independent 2WK1 distances
+      are Asp138 OD1--Tyr200 N 2.763 A and Asp138 OD2--Glu201 N 3.000 A. These support
+      a possible residue-number error, not an authorized correction of the source
+      or direct proof of a lid-locking mechanism.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        p.5, SAM/SAH binding site.
+    - reference: https://files.rcsb.org/download/2WK1.cif
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent sequence/atom-distance comparison.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F2
+      evidence_type: DATABASE_ASSERTION
+      notes: Native positions 128 and 138.
+  - subject: structure
+    predicate: contains_observed_disulfide
+    object: disulfide
+    notes: Cys228 and Cys231 have deposited SG separation 2.167 A and an explicit
+      disulfide record. The authors consider prolonged aerobic exposure during up-to-one-month
+      crystal growth as a possible artifact. No physiological redox role, obligatory
+      catalytic function or experimentally demonstrated activity loss caused by this
+      bond is inferred.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        p.6.
+    - reference: https://files.rcsb.org/download/2WK1.cif
+      evidence_type: CURATOR_INFERENCE
+      notes: struct_conn and independently calculated SG distance.
+  - subject: structure
+    predicate: has_observed_coordinate_inventory
+    object: inventory
+    notes: The asymmetric unit contains 1965 protein atoms, 26 SAH atoms, two sulfates,
+      two ethylene glycol molecules and 242 waters. Deposited coordinates contain
+      no metal, SAM or DDN. Reported MgCl2 soaking and co-crystallization also gave
+      no metal density, but those trials are data-not-shown and are not separately
+      displayed structures.
+    evidence:
+    - reference: https://files.rcsb.org/download/2WK1.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Complete atom-site and ligand inventory.
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        p.7, metal trials.
+      snippet: data not shown
+curation_history:
+- timestamp: '2026-10-04T20:58:20Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cathomycin-novp-sah-structure-contacts-and-residue-label-conflict
+    with source-checked NovP evidence and review #558 limits.'
+  llm_assisted: true

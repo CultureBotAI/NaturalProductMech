@@ -30,6 +30,10 @@ identity, structure, filing class, and producer claims; partial
 `biosynthetic_pathway` and `causal_graphs` curation is now underway. Owed work
 is in [NEXT_TASKS.md](NEXT_TASKS.md).
 
+Curated mechanisms can use inline graphs or exact-owner components referenced
+by `causal_graph_refs`. Use the resolving reader for the complete mechanism;
+see [curation](docs/CURATION.md#complete-mechanism-reads) for the data contract.
+
 <!-- BEGIN GENERATED CORPUS STATS -->
 
 ```
@@ -66,20 +70,20 @@ field coverage (records carrying at least one item):
   bioactivities                         176
   bioactivity_summary                   317
   molecular_targets                      14
-  causal_graphs                         210
+  causal_graphs                         240
   related_records                       209
   discussions                           325
 
-producer claims: 3407 (809 causal, 162 correlational)
-  BGC_CHARACTERIZED                     809
+producer claims: 3407 (808 causal, 162 correlational)
+  BGC_CHARACTERIZED                     808
   BGC_CORRELATED                        162
-  SOURCE_ASSERTION                     2436
+  SOURCE_ASSERTION                     2437
 
-cluster link claims: 3449 (1360 demonstrated)
+cluster link claims: 3449 (1359 demonstrated)
   CLUSTER_CORRELATED                    110
-  CLUSTER_DEMONSTRATED                 1360
+  CLUSTER_DEMONSTRATED                 1359
   CLUSTER_PREDICTED                       2
-  CLUSTER_UNSTATED                     1977
+  CLUSTER_UNSTATED                     1978
 
 records where a producer taxon is independently corroborated by a cited occurrence: 732
 records whose only origin evidence is a gene cluster with no named host: 27

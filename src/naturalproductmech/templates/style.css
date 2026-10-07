@@ -1,6 +1,8 @@
 /* One stylesheet, no build step and no CDN: the site is committed, so a
    reader loading it from a checkout gets the same page CI rendered. */
 :root {
+  --cls0: #a63bb3; --cls1: #287eb8; --cls2: #ae6f13; --cls3: #22855e;
+  --cls4: #ce4545; --cls5: #7566bb; --cls6: #16848b; --cls7: #697580;
   --ink: #14181d; --muted: #5b6672; --rule: #dfe4ea; --bg: #fff; --panel: #f7f9fb;
   --causal: #1a6b3c; --causal-bg: #e8f4ec;
   --weak: #8a5a00; --weak-bg: #fdf3e0;
@@ -10,6 +12,8 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
+    --cls0: #d889e3; --cls1: #79b8f3; --cls2: #e5b567; --cls3: #7ed4a1;
+    --cls4: #ff9494; --cls5: #b4a6f5; --cls6: #6eced2; --cls7: #aab5bf;
     --ink: #e6e9ed; --muted: #9aa5b1; --rule: #2b3138; --bg: #14181d; --panel: #1b2027;
     --causal: #7ed4a1; --causal-bg: #17301f; --weak: #e5b567; --weak-bg: #2e2413;
     --link: #79b8f3;
@@ -220,3 +224,5 @@ figure { margin: 0; }
 @media (max-width: 40rem) { .map-controls { grid-template-columns: minmax(0, 1fr); } }
 
 a.mono { overflow-wrap: anywhere; }
+
+main h1, main p, main li, main dd { overflow-wrap: anywhere; }

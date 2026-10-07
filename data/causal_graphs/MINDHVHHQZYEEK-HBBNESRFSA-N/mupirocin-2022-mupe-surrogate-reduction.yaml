@@ -1,0 +1,313 @@
+record_id: CHEBI:7025
+standard_inchi_key: MINDHVHHQZYEEK-HBBNESRFSA-N
+graph:
+  graph_id: mupirocin-2022-mupe-surrogate-reduction
+  scope: BIOSYNTHESIS
+  description: MupE reduction of crotonyl carrier-bound surrogates, without substituting
+    these for native hydroxylated chain intermediates. Native reference, engineered
+    preparation and study readout remain distinct. Partial primary-main-text curation,
+    not complete pathway reconstitution or full-record sign-off. The exact PAA owner
+    is not the clinical mupirocin mixture.
+  nodes:
+  - node_id: cluster
+    label: Native mupirocin locus in NCIMB 10586
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000182
+  - node_id: mupE
+    label: Native MupE sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL68
+  - node_id: macpA
+    label: Native MacpA sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL70
+  - node_id: macpB
+    label: Native MacpB sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL67
+  - node_id: prep
+    label: Study purified MupE preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: nadh
+    label: Assay NADH
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: macpA_crotonyl
+    label: Study crotonyl-MacpA surrogate preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: macpA_reduction
+    label: MupE surrogate reduction on MacpA
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: macpA_butanoyl
+    label: Source-assigned butanoyl-MacpA
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: macpB_crotonyl
+    label: Study crotonyl-MacpB surrogate preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: macpB_reduction
+    label: MupE surrogate reduction on MacpB
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: macpB_butanoyl
+    label: Source-assigned butanoyl-MacpB
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: mupE
+    notes: AF318063.3 CDS 42983..44005(+),1-based inclusive; AAM12917.1,340 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12917.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL68
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: macpA
+    notes: AF318063.3 CDS 41870..42175(+),1-based inclusive; AAM12915.1,101 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12915.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL70
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: macpB
+    notes: AF318063.3 CDS 44062..44313(+),1-based inclusive; AAM12918.1,83 aa. CDS-aware
+      table-11 translation exactly matches original GenPept and current UniProt. Native
+      source is Pseudomonas fluorescens NCIMB 10586,taxon294. This is not full engineered-proteoform
+      or laboratory-stock identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source qualifiers and deposited CDS.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12918.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL67
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed current entry,sequence version1; exact CDS/GenPept/UniProt
+        sequence and cross-reference audit.
+      retrieved_on: '2026-10-06'
+  - subject: mupE
+    predicate: is_native_sequence_reference_for
+    object: prep
+    notes: Gene-matched reference; complete engineered sequence and preparation recipe
+      remain unverified. No exact native-proteoform equality is asserted.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA
+    predicate: is_native_carrier_reference_for
+    object: macpA_crotonyl
+    notes: Acyl-loaded carrier preparation is distinct from the unmodified native
+      sequence reference.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA
+    predicate: is_native_carrier_reference_for
+    object: macpA_butanoyl
+    notes: Acyl-loaded carrier preparation is distinct from the unmodified native
+      sequence reference.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: prep
+    predicate: catalyzed
+    object: macpA_reduction
+    notes: Purified surrogate assay. No exact dose, numerical turnover rate, cofactor
+      preference or native hydroxylated fatty-chain turnover is inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA_crotonyl
+    predicate: was_substrate_in
+    object: macpA_reduction
+    notes: Purified surrogate assay. No exact dose, numerical turnover rate, cofactor
+      preference or native hydroxylated fatty-chain turnover is inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: nadh
+    predicate: was_supplied_in
+    object: macpA_reduction
+    notes: Purified surrogate assay. No exact dose, numerical turnover rate, cofactor
+      preference or native hydroxylated fatty-chain turnover is inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpA_reduction
+    predicate: yielded_source_assigned_product
+    object: macpA_butanoyl
+    notes: Source Ppant-ejection mass shift supports reduction of the crotonyl mimic.
+      Not complete mupirocin synthesis or an assay of the intended hydroxylated native
+      substrate.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpB
+    predicate: is_native_carrier_reference_for
+    object: macpB_crotonyl
+    notes: Acyl-loaded carrier preparation is distinct from the unmodified native
+      sequence reference.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpB
+    predicate: is_native_carrier_reference_for
+    object: macpB_butanoyl
+    notes: Acyl-loaded carrier preparation is distinct from the unmodified native
+      sequence reference.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: prep
+    predicate: catalyzed
+    object: macpB_reduction
+    notes: Purified surrogate assay. No exact dose, numerical turnover rate, cofactor
+      preference or native hydroxylated fatty-chain turnover is inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpB_crotonyl
+    predicate: was_substrate_in
+    object: macpB_reduction
+    notes: Purified surrogate assay. No exact dose, numerical turnover rate, cofactor
+      preference or native hydroxylated fatty-chain turnover is inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: nadh
+    predicate: was_supplied_in
+    object: macpB_reduction
+    notes: Purified surrogate assay. No exact dose, numerical turnover rate, cofactor
+      preference or native hydroxylated fatty-chain turnover is inferred.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+  - subject: macpB_reduction
+    predicate: yielded_source_assigned_product
+    object: macpB_butanoyl
+    notes: Source Ppant-ejection mass shift supports reduction of the crotonyl mimic.
+      Not complete mupirocin synthesis or an assay of the intended hydroxylated native
+      substrate.
+    evidence:
+    - reference: DOI:10.1002/anie.202212393
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher main scientific HTML inspected. Supporting information was
+        inaccessible and not inspected. Primary figures were not visually inspected;
+        complete engineered sequences, exact preparation recipes, replicate-level
+        data and quantitative kinetic or binding measurements remain unverified.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T05:42:46Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component for CHEBI:7025,owner baseline commit edbd74cf58fae62cbf8207453d4b583c31706575;
+    no prior graph migration. MupE reduction of crotonyl carrier-bound surrogates,
+    without substituting these for native hydroxylated chain intermediates. Native
+    reference, engineered preparation and study readout remain distinct. Partial primary-main-text
+    curation, not complete pathway reconstitution or full-record sign-off. The exact
+    PAA owner is not the clinical mupirocin mixture. Every edge cites DOI10.1002/anie.202212393
+    or official native-sequence URLs. Primary main HTML only; SI inaccessible/unread
+    and figures not visually inspected. Native references do not identify complete
+    engineered preparations. Author-agent issues#599/#600 review,not independent approval
+    or full-record sign-off.
+  llm_assisted: true

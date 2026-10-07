@@ -30,6 +30,12 @@ requirement to populate every optional slot.
 
 ## Field-by-field audit
 
+Include every graph named by `causal_graph_refs`; owner YAML alone is not the
+complete record mechanism. Check each component's exact owner, local graph/node
+IDs, edge citations, qualifications and audit trail. Use the complete read-only
+view from `read_natural_product` for analysis. Component edits follow the
+guarded bundle workflow in `docs/CURATION.md`, not the inline example below.
+
 | Area | Verify | Complete enough when |
 |---|---|---|
 | Identity | `identifier`, label, synonyms, `grounding_status`, source concepts, and exact chemical form agree; congener, glycoside and stereoisomer boundaries respected. | The record denotes one individual structure and any minted identity has an explicit rationale or queued decision. |

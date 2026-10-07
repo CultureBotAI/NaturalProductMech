@@ -24,6 +24,10 @@
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 </p>
+<details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/terpenoids/thalianol.yaml">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
 
 <h2>Structure</h2>
 <div class="scroll"><table>
@@ -53,9 +57,9 @@ same claim.</p>
 </tr>
 </table></div>
 
-<h2>Occurrences <span class="tag">0</span></h2>
+<h2 id="occurrences">Occurrences <span class="tag">0</span></h2>
 <p class="sub">None cited.</p>
-<h2>Biosynthetic gene clusters <span class="tag">1</span></h2>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
 <div class="scroll"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
@@ -100,6 +104,33 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>thalianol</td>
   <td></td>
   <td class="mono">DOI:10.1021/ja0318784</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">MITE-reported THAH hydroxylation consuming exact thalianol, represented separately from the existing A.thaliana THAS1 synthesis pathway. The sequence-verified D7MKC1 reference is A.lyrata subsp. lyrata donor MN47, not A.thaliana as implied by the MITE prose. Database function is not an independently inspected primary assay. Product identity/stereo remains unresolved; no producer upgrade or full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Database-named THAH A.lyrata MN47 reference</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>MITE-reported THAH substrate hydroxylation</td>
+  <td>Functional attribution is MITE&#39;s, while independent sequences establish the explicitly named A.lyrata reference despite the inconsistent source prose. No native heme/iron occupancy, electron donor, assay, knockout phenotype, binding site, kinetics or complex is adopted.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000133.json<br>https://www.uniprot.org/uniprotkb/D7MKC1<br>https://www.ncbi.nlm.nih.gov/protein/EFH41844.1<br>https://www.ncbi.nlm.nih.gov/nuccore/GL348720.1?from=10405500&amp;to=10409700</td>
+</tr>
+<tr>
+  <td>thalianol</td>
+  <td>is_database_example_substrate_of</td>
+  <td>MITE-reported THAH substrate hydroxylation</td>
+  <td>Pinned example substrate matches full key DGAGPZOBTQYNRE-VMSIWEJCSA-N and complete stereo in the repository-helper/RDKit2026.03.5 screen. This is a substrate-consumption context, not a new thalianol production claim, and not an independently mapped native assay substrate.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000133.json</td>
+</tr>
+<tr>
+  <td>MITE-reported THAH substrate hydroxylation</td>
+  <td>has_database_example_product</td>
+  <td>Database-encoded hydroxylated thalianol intermediate</td>
+  <td>The hydroxylated example is marked intermediate. Its encoded product omits side-chain double-bond stereo present in the substrate, so no exact external product identity or complete product stereo is asserted. No downstream order or pathway finality. Preserve the separate A.thaliana THAS1/Q9FI37 pathway/graph and BGC0000670, existing BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED grades and SEEDED status; no retired BGC transfer.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000133.json</td>
 </tr>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused

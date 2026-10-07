@@ -1,0 +1,222 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novq-native-identity-and-precursor-evidence
+  scope: BIOSYNTHESIS
+  description: 'NovQ native sequence, source-taxonomy conflict and bounded Ozaki 2009
+    precursor evidence (review #554). The BGC0000834 owner is not merged with fully
+    specified novobiocin. The deposited NCIMB 9219 sequence is grounded; the strain-16259
+    source and recombinant sample retain identity uncertainty. Only the primary abstract
+    was obtained for biochemical claims.'
+  nodes:
+  - node_id: cluster
+    label: Deposited novobiocin cluster underlying the cathomycin owner
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000834
+  - node_id: gene
+    label: Deposited novQ locus from NCIMB 9219
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: native
+    label: Deposited native NovQ sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F1
+  - node_id: strain16259
+    label: NovQ deposit from strain 16259 with conflicting taxon labels
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+  - node_id: taxon
+    label: Strain 16259 source-taxonomy disagreement
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: prep
+    label: Ozaki 2009 recombinant NovQ preparation
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+  - node_id: host
+    label: Ozaki E. coli expression host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: Abstract-reported NovQ precursor prenylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hpp
+    label: 4-Hydroxyphenylpyruvate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: dmapp
+    label: Dimethylallyl diphosphate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: product
+    label: Source-assigned 3-dimethylallyl-4-hydroxyphenylpyruvate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: properties
+    label: Reported soluble monomeric recombinant preparation
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: scope
+    label: Abstract-reported alternative aromatic substrate scope
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: contains
+    object: gene
+    notes: The BGC0000834.5 cathomycin owner links AF170880.4, whose novQ CDS is 19093..20064(+).
+      The owner retains its unspecified sugar stereocentre; this locus association
+      is not a new exact-structure equivalence assertion.
+    evidence:
+    - reference: https://mibig.secondarymetabolites.org/go/BGC0000834.5
+      evidence_type: DATABASE_ASSERTION
+      notes: Owner/locus association.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited novQ CDS and source.
+  - subject: gene
+    predicate: encodes_native_protein
+    object: native
+    notes: AF170880.4/AAF67510.2 has 972 coding nt including stop. CDS-aware table-11
+      translation exactly matches deposited AAF67510.2 and all 323 residues of Q9L9F1.
+      Current GenBank source is S. niveus NCIMB 9219 (taxon 193462). UniProt reference
+      1 still lists the historical NCIMB 11891 strain group; that metadata does not
+      override the corrected current nucleotide deposit or identify every historical
+      assay sample.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: CDS, translation and corrected source strain.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F1
+      evidence_type: DATABASE_ASSERTION
+      notes: Entry 57, sequence 2, annotation 2026-01-28; retrieved 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent CDS-aware/deposited/UniProt comparison.
+  - subject: native
+    predicate: has_identical_deposited_sequence_to
+    object: strain16259
+    notes: AB496950.1/BAI44329.1 novQ is 81..1052(+), also 972 nt including stop and
+      323 aa. Its CDS-aware translation matches Q9L9F1 and AAF67510.2 exactly. This
+      equality concerns protein sequences, not strain or taxon synonymy and not the
+      complete sequence of a recombinant construct.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB496950.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited novQ CDS, translation and source.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent comparison of two CDS translations.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F1
+      evidence_type: DATABASE_ASSERTION
+      notes: Both EMBL/GenPept cross-references.
+  - subject: strain16259
+    predicate: has_unresolved_source_taxonomy
+    object: taxon
+    notes: The AB496950.1 record dated 2023-01-05 names Actinoalloteichus caeruleus,
+      taxon 2893586, strain 16259, with Streptomyces caeruleus/niveus synonym notes.
+      UniProt uses S. niveus taxon 193462 and links strain 16259 to Ozaki 2009; the
+      primary abstract also names S. niveus. These source labels are preserved without
+      changing the owner producer or asserting that strain 16259 is NCIMB 9219 or
+      NCIMB 11891.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB496950.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Current source qualifiers, including organism and synonym note.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F1
+      evidence_type: DATABASE_ASSERTION
+      notes: Organism and reference-2 strain metadata.
+    - reference: DOI:10.1038/ja.2009.48
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only; named cloning organism.
+  - subject: strain16259
+    predicate: is_database_linked_to_study_preparation
+    object: prep
+    notes: UniProt associates the Ozaki study with strain 16259 and AB496950. The
+      full paper and complete experimental construct sequence were not obtained. The
+      deposited native sequence is not assigned as the exact identity of a tag-bearing,
+      processed or otherwise engineered sample.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F1
+      evidence_type: DATABASE_ASSERTION
+      notes: Reference 2 and sequence cross-references.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB496950.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Study-associated sequence deposition.
+  - subject: host
+    predicate: expressed
+    object: prep
+    notes: The abstract reports E. coli expression and purification to homogeneity.
+      Host strain, fusion junctions and detailed purification conditions are not supplied
+      by the inspected abstract.
+    evidence:
+    - reference: DOI:10.1038/ja.2009.48
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: prep
+    predicate: has_reported_preparation_properties
+    object: properties
+    notes: The source describes soluble monomeric protein of about 40 kDa. This is
+      a recombinant-preparation observation, not an exact native mass or cellular
+      stoichiometry measurement.
+    evidence:
+    - reference: DOI:10.1038/ja.2009.48
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: prep
+    predicate: catalyzes_reported_prenylation
+    object: assay
+    notes: The abstract reports divalent-cation-independent dimethylallylation. It
+      mentions kinetic analysis but supplies no constants, assay recipe or uncertainty;
+      none is reconstructed here.
+    evidence:
+    - reference: DOI:10.1038/ja.2009.48
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+      snippet: independently of divalent cations
+  - subject: hpp
+    predicate: is_reported_acceptor_for
+    object: assay
+    notes: 4-HPP is the reported aromatic acceptor, not mature cathomycin.
+    evidence:
+    - reference: DOI:10.1038/ja.2009.48
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: dmapp
+    predicate: is_reported_donor_for
+    object: assay
+    notes: DMAPP is the reported prenyl donor.
+    evidence:
+    - reference: DOI:10.1038/ja.2009.48
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: assay
+    predicate: forms_source_assigned_product
+    object: product
+    notes: The assigned product is an unglycosylated novobiocin precursor. This does
+      not demonstrate mature owner synthesis or resolve its sugar stereochemistry.
+    evidence:
+    - reference: DOI:10.1038/ja.2009.48
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+  - subject: prep
+    predicate: has_reported_alternative_substrate_scope
+    object: scope
+    notes: Reported C-C and C-O prenylations include phenylpropanoids, flavonoids
+      and dihydroxynaphthalenes; examples include p-coumarate, caffeate and flavonoid
+      B-ring substitution. Detailed yields and positional panels require the full
+      primary results.
+    evidence:
+    - reference: DOI:10.1038/ja.2009.48
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only.
+curation_history:
+- timestamp: '2026-10-04T18:21:50Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add cathomycin-novq-native-identity-and-precursor-evidence with native
+    identity, source conflicts and bounded engineered-preparation evidence (#554).
+  llm_assisted: true

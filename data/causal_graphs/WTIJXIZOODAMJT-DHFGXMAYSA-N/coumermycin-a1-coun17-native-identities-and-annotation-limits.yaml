@@ -1,0 +1,165 @@
+record_id: CHEBI:3907
+standard_inchi_key: WTIJXIZOODAMJT-DHFGXMAYSA-N
+graph:
+  graph_id: coumermycin-a1-coun17-native-identities-and-annotation-limits
+  scope: BIOSYNTHESIS
+  description: 'Native CouN1/CouN7 identities and database-versus-assay boundaries.
+    Partial curation; review #570. Native references, experimental preparations and
+    inferred states remain distinct. Source fields and SEEDED status are unchanged.'
+  nodes:
+  - node_id: cluster
+    label: Deposited coumermycin cluster locus
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: gene1
+    label: Native couN1 locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: gene7
+    label: Native couN7 locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: n1
+    label: Native CouN1 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8U6
+  - node_id: n7
+    label: Native CouN7 sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8U0
+  - node_id: annotation1
+    label: CouN1 database annotation
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: annotation7
+    label: CouN7 database annotation
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: ser101
+    label: Native CouN7 Ser101
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Native reference versus assay identity limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: contains
+    object: gene1
+    notes: 'AF235050.4 plus-strand CDS 13526..13813, 1-based inclusive. Source: S.
+      rishiriensis DSM 40489, taxon 68264.'
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Source and CDS qualifiers.
+  - subject: gene1
+    predicate: encodes_native_reference
+    object: n1
+    notes: Table-11 CDS-aware translation equals AAG29786.1 and all 95 UniProt residues.
+      Historical name cumI in .1; AF235050.1/.2:9413..9700; .3:13524..13811. All four
+      deposited protein sequences agree.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8U6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry 72, sequence 1; annotation 2025-04-02; retrieved 2026-10-05.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent AF235050.1-.4 CDS/protein/UniProt comparison.
+  - subject: annotation1
+    predicate: does_not_identify_experimental_sample
+    object: limits
+    notes: Native sequence agreement does not identify a complete recombinant fusion,
+      expression strain or experimental aliquot.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8U6
+      evidence_type: CURATOR_INFERENCE
+      notes: Limits of assigning a native sequence reference to a specific experimental
+        sample.
+  - subject: cluster
+    predicate: contains
+    object: gene7
+    notes: 'AF235050.4 plus-strand CDS 19697..20542, 1-based inclusive. Source: S.
+      rishiriensis DSM 40489, taxon 68264.'
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Source and CDS qualifiers.
+  - subject: gene7
+    predicate: encodes_native_reference
+    object: n7
+    notes: Table-11 CDS-aware translation equals AAG29792.1 and all 281 UniProt residues.
+      Historical name cumL in .1; AF235050.1:15099..15944; .2:15582..16427; .3:19693..20538.
+      All four deposited protein sequences agree.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8U0
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry 56, sequence 1; annotation 2025-04-02; retrieved 2026-10-05.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent AF235050.1-.4 CDS/protein/UniProt comparison.
+  - subject: annotation7
+    predicate: does_not_identify_experimental_sample
+    object: limits
+    notes: Native sequence agreement does not identify a complete recombinant fusion,
+      expression strain or experimental aliquot.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8U0
+      evidence_type: CURATOR_INFERENCE
+      notes: Limits of assigning a native sequence reference to a specific experimental
+        sample.
+  - subject: n1
+    predicate: has_database_annotation
+    object: annotation1
+    notes: UniProt calls this an uncharacterized protein, with an inferred carrier
+      domain at residues 32-81. Its automated phosphopantetheine annotation does not
+      measure modification occupancy.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8U6
+      evidence_type: DATABASE_ASSERTION
+      notes: Pfam PF00550 and automated ARBA keywords.
+  - subject: n7
+    predicate: has_database_annotation
+    object: annotation7
+    notes: The submitted name is putative hydrolase. GO:0004806 triacylglycerol lipase
+      activity is IEA:TreeGrafter, not a measured coumermycin-pathway reaction; it
+      is not adopted as such.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8U0
+      evidence_type: DATABASE_ASSERTION
+      notes: Submission name and explicitly automated GO annotation.
+  - subject: n7
+    predicate: contains_reference_residue
+    object: ser101
+    notes: Positions 96-106 are YLFASSGGGVT; residue 101 is Ser in all four deposits.
+      This does not independently establish experimental construct numbering or a
+      complete S101A sequence.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8U0
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact sequence indexing.
+  - subject: ser101
+    predicate: has_construct_mapping_limit
+    object: limits
+    notes: No experimental plasmid sequence or tag-junction reconstruction was obtained
+      for the abstract-level study.
+    evidence:
+    - reference: DOI:10.1016/j.chembiol.2007.05.007
+      evidence_type: CURATOR_INFERENCE
+      notes: Inspected primary abstract, not full construct methods.
+curation_history:
+- timestamp: '2026-10-05T05:40:40Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add coumermycin-a1-coun17-native-identities-and-annotation-limits; preserve
+    native, assay, source-access and inference limits (#570).
+  llm_assisted: true
+- timestamp: '2026-10-05T05:42:21Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Final review marks native-to-sample limits as curator inference and uses
+    the exact compound label for CHEBI:3907-grounded nodes. Preserve topology, source
+    facts and owner bytes (#570).
+  llm_assisted: true

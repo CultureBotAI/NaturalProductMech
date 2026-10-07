@@ -1,0 +1,287 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-nove-binding-limits-and-basal-transcription
+  scope: BIOSYNTHESIS
+  description: 'Condition-specific negative NovE EMSAs and detectable reciprocal regulator
+    transcripts. No direct NovE-DNA event or NovE-NovG physical complex is asserted.
+    Partial biosynthesis curation (review #589), not full-record sign-off. The cathomycin
+    owner retains its unspecified sugar stereocentre; source-assigned novobiocin products
+    remain ungrounded, not exact-key merged with CID 54675769. Native deposited sequences
+    do not retrospectively identify every historical strain stock, complete preparation
+    or engineered allele.'
+  nodes:
+  - node_id: cluster
+    label: Deposited novobiocin cluster underlying the cathomycin owner
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000834
+  - node_id: NovE
+    label: Native deposited NovE regulatory-protein reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9G3
+  - node_id: NovG
+    label: Native deposited NovG regulatory-protein reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9G1
+  - node_id: prepE
+    label: pAE18-derived N-terminal His6 NovE preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: prepG
+    label: Later-study His6 NovG comparator preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: Later comparative NovE and NovG EMSAs
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: negative
+    label: No observed NovE shift in six tested novEFG-region fragments
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: positive
+    label: Observed NovG shift at the novG-novH-region comparator
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: deltaE
+    label: M512 nov-VD2 NovE-deficient RT-PCR condition
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: deltaG
+    label: M512 nov-AE10 NovG-deficient RT-PCR condition
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: basalG
+    label: Detectable novG transcript without NovE
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: basalE
+    label: Detectable novE transcript without NovG
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: NovE
+    notes: AF170880.4 CDS 4859..5512(+), 1-based inclusive, encodes AAF67498.1, 217
+      aa. CDS-aware table-11 translations across AF170880.2/.3/.4 exactly match the
+      selected UniProt sequence. Old .2/.3 qualifiers are S. caeruleus, taxon 195949,
+      NCIB 11891; .4 is S. niveus, taxon 193462, NCIMB 9219. The published correction
+      assigns the deposit to 9219, not 11891. The thesis additionally prints 11897
+      in its strain table versus 11891 in results. These are retained source conflicts,
+      not proof that all experimental stocks were identical.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current native deposit, compared with pinned .2 and .3 records.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9G3
+      evidence_type: DATABASE_ASSERTION
+      notes: 'Reviewed entry 35, sequence 1; annotation 2026-09-02, sequence 2000-10-01;
+        protein existence 4: Predicted. Reviewed status does not identify a complete
+        experimental preparation.'
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS-aware sequence audit; alternate NovE A0ABZ2ADU8 is not an exact
+        historical reference because of N14S,T38P,G40A,E179Q differences.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1128/genomeA.01146-13
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Indexed primary text reporting PCR/sequencing-based deposit-strain correction
+        inspected; direct full-text retrieval unavailable.
+      retrieved_on: '2026-10-06'
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 62,135; PDF numbering is printed plus ten. Separate
+        primary source, not a claim to have inspected the complete final paper or
+        supplements.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: NovG
+    notes: AF170880.4 CDS 6782..7738(+), 1-based inclusive, encodes AAF67500.1, 318
+      aa. CDS-aware table-11 translations across AF170880.2/.3/.4 exactly match the
+      selected UniProt sequence. Old .2/.3 qualifiers are S. caeruleus, taxon 195949,
+      NCIB 11891; .4 is S. niveus, taxon 193462, NCIMB 9219. The published correction
+      assigns the deposit to 9219, not 11891. The thesis additionally prints 11897
+      in its strain table versus 11891 in results. These are retained source conflicts,
+      not proof that all experimental stocks were identical.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current native deposit, compared with pinned .2 and .3 records.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9G1
+      evidence_type: DATABASE_ASSERTION
+      notes: 'Reviewed entry 55, sequence 1; annotation 2026-09-02, sequence 2000-10-01;
+        protein existence 1: Evidence at protein level. Reviewed status does not identify
+        a complete experimental preparation.'
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS-aware sequence audit; alternate NovE A0ABZ2ADU8 is not an exact
+        historical reference because of N14S,T38P,G40A,E179Q differences.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1128/genomeA.01146-13
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Indexed primary text reporting PCR/sequencing-based deposit-strain correction
+        inspected; direct full-text retrieval unavailable.
+      retrieved_on: '2026-10-06'
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 62,135; PDF numbering is printed plus ten. Separate
+        primary source, not a claim to have inspected the complete final paper or
+        supplements.
+      retrieved_on: '2026-10-06'
+  - subject: NovE
+    predicate: is_native_sequence_reference_for
+    object: prepE
+    notes: Native gene reference, not a complete tagged preparation or independently
+      sequenced vector. NovE was expressed from pAE18/pRSET B in E. coli and purified
+      by nickel affinity; the precise host stock and full fusion sequence remain unverified.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Dangel primary thesis PDF pages 72-74; PDF numbering is printed plus
+        nine. This is not a claim to have read the complete final journal paper or
+        its supplements.
+      retrieved_on: '2026-10-06'
+  - subject: prepE
+    predicate: was_tested_in
+    object: assay
+    notes: Approximately 4 ng DIG-end-labelled DNA; 3 ug NovE versus 1.5 ug NovG.
+      Do not import the older 0.5 ug NovG assay's full buffer or kinetics; detailed
+      methods are delegated to the 2008 paper, whose full text was not obtained.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Dangel primary thesis PDF pages 73-74; PDF numbering is printed plus
+        nine. This is not a claim to have read the complete final journal paper or
+        its supplements.
+      retrieved_on: '2026-10-06'
+  - subject: NovG
+    predicate: is_native_sequence_reference_for
+    object: prepG
+    notes: Native gene reference, not a complete tagged preparation or independently
+      sequenced vector. The later study reports a His6 NovG comparator; its complete
+      sample identity was not independently verified or assumed identical to every
+      earlier NovG preparation.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Dangel primary thesis PDF pages 72-74; PDF numbering is printed plus
+        nine. This is not a claim to have read the complete final journal paper or
+        its supplements.
+      retrieved_on: '2026-10-06'
+  - subject: prepG
+    predicate: was_tested_in
+    object: assay
+    notes: Approximately 4 ng DIG-end-labelled DNA; 3 ug NovE versus 1.5 ug NovG.
+      Do not import the older 0.5 ug NovG assay's full buffer or kinetics; detailed
+      methods are delegated to the 2008 paper, whose full text was not obtained.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Dangel primary thesis PDF pages 73-74; PDF numbering is printed plus
+        nine. This is not a claim to have read the complete final journal paper or
+        its supplements.
+      retrieved_on: '2026-10-06'
+  - subject: assay
+    predicate: gave_condition_specific_novE_result
+    object: negative
+    notes: Three upstream-of-novG fragments, one upstream-of-novF and two upstream-of-novE
+      fragments showed no NovE shift. This does not prove universal inability to bind
+      DNA.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Dangel primary thesis PDF pages 73-74; PDF numbering is printed plus
+        nine. This is not a claim to have read the complete final journal paper or
+        its supplements.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1007/s00203-008-0396-0
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; full final paper and supplements not obtained.
+      retrieved_on: '2026-10-06'
+  - subject: assay
+    predicate: gave_novG_positive_comparator
+    object: positive
+    notes: The source reproduced the known NovG fragment shift; this is not a protein-protein
+      interaction or evidence that the differently loaded proteins have equal affinity.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Dangel primary thesis PDF pages 72-74; PDF numbering is printed plus
+        nine. This is not a claim to have read the complete final journal paper or
+        its supplements.
+      retrieved_on: '2026-10-06'
+  - subject: NovE
+    predicate: is_coding_locus_reference_for_deletion_in
+    object: deltaE
+    notes: Gene-matched native reference, not the sequence of an intact protein in
+      this deletion. 81 nt scar context, not native cassette replacement.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Dangel primary thesis PDF pages 69-75; PDF numbering is printed plus
+        nine. This is not a claim to have read the complete final journal paper or
+        its supplements.
+      retrieved_on: '2026-10-06'
+  - subject: NovG
+    predicate: is_coding_locus_reference_for_deletion_in
+    object: deltaG
+    notes: Gene-matched native reference, not the sequence of an intact protein in
+      this deletion. nov-AE10 context, not expression plasmid pAE12.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Dangel primary thesis PDF pages 69-75; PDF numbering is printed plus
+        nine. This is not a claim to have read the complete final journal paper or
+        its supplements.
+      retrieved_on: '2026-10-06'
+  - subject: deltaE
+    predicate: retained_detectable_transcription
+    object: basalG
+    notes: RT-PCR series at 22, 30, 44, 77, 94 h with hrdB control; DNase and no-RT
+      controls in methods. Gel-detected transcript presence is not protein abundance
+      or proof of unchanged expression.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Dangel primary thesis PDF pages 63-65,75; PDF numbering is printed plus
+        nine. This is not a claim to have read the complete final journal paper or
+        its supplements.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1007/s00203-008-0396-0
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; full final paper and supplements not obtained.
+      retrieved_on: '2026-10-06'
+  - subject: deltaG
+    predicate: retained_detectable_transcription
+    object: basalE
+    notes: Same RT-PCR series supports basal transcription in the reciprocal deletion.
+      This rules out an absolute binary requirement under these conditions, not a
+      quantitative regulatory effect.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Dangel primary thesis PDF pages 63-65,75; PDF numbering is printed plus
+        nine. This is not a claim to have read the complete final journal paper or
+        its supplements.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1007/s00203-008-0396-0
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; full final paper and supplements not obtained.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T02:51:18Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add cathomycin-nove-binding-limits-and-basal-transcription; retain native/preparation/strain
+    distinctions, primary-source access limits and experimental versus inferred regulation
+    (#589).
+  llm_assisted: true

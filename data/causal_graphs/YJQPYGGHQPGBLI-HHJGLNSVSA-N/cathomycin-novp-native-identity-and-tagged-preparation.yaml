@@ -1,0 +1,263 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novp-native-identity-and-tagged-preparation
+  scope: BIOSYNTHESIS
+  description: 'Native NovP identity, recombinant preparation and explicitly database-annotated
+    precursor methylation. Native sequence, DNA construct and tagged protein remain
+    distinct. Review #558. The 2010 page locators refer to the 30-page author manuscript,
+    not journal pagination. The cathomycin owner retains its unspecified sugar stereocentre;
+    no exact merge with fully specified novobiocin or new mature-product synthesis
+    claim is made.'
+  nodes:
+  - node_id: cluster
+    label: Deposited novobiocin cluster underlying the cathomycin owner
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000834
+  - node_id: gene
+    label: Deposited novP locus from NCIMB 9219
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: native
+    label: Deposited native NovP sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F2
+  - node_id: taxonomy
+    label: NovP source-taxon and historical strain disagreement
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: construct
+    label: pET28a NovP N-terminal His-tag DNA construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: wt
+    label: Gomez Garcia N-terminally tagged NovP preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: host
+    label: E. coli BL21(DE3) NovP expression host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: prep
+    label: Reported NovP purification yield and purity
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: crystals
+    label: SAH-containing NovP crystallization experiment
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: reaction
+    label: Database-annotated noviose 4-O-methylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: ddn
+    label: Desmethyldescarbamoylnovobiocin acceptor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: sam
+    label: S-Adenosyl-L-methionine donor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: product
+    label: Descarbamoylnovobiocin precursor product
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: sah
+    label: S-Adenosyl-L-homocysteine coproduct and crystallization ligand
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: contains
+    object: gene
+    notes: The owner links BGC0000834.5 and AF170880.4. novP is 18275..19063(+) with
+      a 789-nt CDS including the stop codon. This is a locus association, not independent
+      proof of the owner sugar stereochemistry.
+    evidence:
+    - reference: https://mibig.secondarymetabolites.org/go/BGC0000834.5
+      evidence_type: DATABASE_ASSERTION
+      notes: Owner/locus association.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: novP CDS coordinates.
+  - subject: gene
+    predicate: encodes_native_protein
+    object: native
+    notes: Table-11 CDS-aware translation matches AAF67509.1 and all 262 residues
+      of Q9L9F2. Current GenBank source is S. niveus NCIMB 9219, taxon 193462. This
+      accession identifies the native sequence reference, not tagged protein.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: CDS/source qualifiers.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F2
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 67, sequence 1; annotation 2026-09-02; retrieved 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent CDS/GenPept/UniProt exact sequence comparison.
+  - subject: native
+    predicate: has_unresolved_sample_attribution
+    object: taxonomy
+    notes: UniProt names S. niveus with S. spheroides as common name. The 2010 paper
+      names S. spheroides; 2WK1 mmCIF retains common S. spheroides, scientific S.
+      caeruleus, taxon 195949 and NCIB 11891. The current RCSB summary renders Actinoalloteichus
+      caeruleus. Identical sequence does not resolve historical sample provenance
+      or identify NCIB 11891 as NCIMB 9219; no owner producer field is changed.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F2
+      evidence_type: DATABASE_ASSERTION
+      notes: Organism metadata.
+    - reference: https://files.rcsb.org/download/2WK1.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Entity source metadata; revision 1.4, 2024-11-06.
+    - reference: https://www.rcsb.org/structure/2WK1
+      evidence_type: DATABASE_ASSERTION
+      notes: Current source-organism summary, retrieved 2026-10-04.
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        pp.1,10.
+  - subject: native
+    predicate: is_sequence_reference_for
+    object: construct
+    notes: The 2007 methods report genomic PCR and cloning into pET28a. The exact
+      deposited protein core matches Q9L9F2; this comparison does not independently
+      sequence the full experimental plasmid or settle the source-strain conflict.
+    evidence:
+    - reference: DOI:10.1107/S1744309107008287
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2007 primary PDF text; Methods section 2.1. Text inspected,
+        not visually verified; extraction-ambiguous micro-unit volumes/dimensions
+        excluded.
+    - reference: https://files.rcsb.org/download/2WK1.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Entity sequence compared to native NovP.
+  - subject: construct
+    predicate: encodes_engineered_protein
+    object: wt
+    notes: The 282-aa deposited construct consists of MGSSHHHHHHSSGLVPRGSH (20 residues)
+      followed by the exact 262-aa native core. The N-terminal tag was not cleaved
+      before crystallization. Unmodeled tag coordinates are not evidence for proteolytic
+      removal, and no native accession is assigned to this engineered preparation.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        p.3, Results.
+      snippet: not cleaved prior to crystallization
+    - reference: https://files.rcsb.org/download/2WK1.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Entity sequence and native alignment 21..282 to 1..262.
+  - subject: host
+    predicate: expressed
+    object: wt
+    notes: The 2007 protocol uses BL21(DE3), 1 L LB with 50 mg kanamycin, 24 h at
+      298 K without IPTG induction, French-press lysis and nickel affinity purification.
+      This is recombinant production, not native abundance.
+    evidence:
+    - reference: DOI:10.1107/S1744309107008287
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2007 primary PDF text; Methods section 2.1. Text inspected,
+        not visually verified; extraction-ambiguous micro-unit volumes/dimensions
+        excluded.
+  - subject: wt
+    predicate: has_reported_preparation_readout
+    object: prep
+    notes: The 2007 source reports about 20 mg purified NovP per L culture and >95%
+      purity by SDS-PAGE. Yield and gel purity are not an activity measurement, an
+      active-fraction estimate or a natural-product titer.
+    evidence:
+    - reference: DOI:10.1107/S1744309107008287
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2007 primary PDF text; Methods/results on purification.
+        Text inspected, not visually verified; extraction-ambiguous micro-unit volumes/dimensions
+        excluded.
+  - subject: wt
+    predicate: was_used_in
+    object: crystals
+    notes: The 2007 source reports approximately 10 mg/mL protein, 1 mM SAH, 291 K
+      and optimized 2 M ammonium sulfate/100 mM HEPES pH 7 precipitant. No apo conditions
+      were found in that screen; this does not establish that apo protein cannot crystallize
+      under other conditions.
+    evidence:
+    - reference: DOI:10.1107/S1744309107008287
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2007 primary PDF text; Crystallization methods/results.
+        Text inspected, not visually verified; extraction-ambiguous micro-unit volumes/dimensions
+        excluded.
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        p.3, SAH-dependent crystallization.
+  - subject: sah
+    predicate: was_supplied_to
+    object: crystals
+    notes: SAH was supplied as a ligand; the crystals are not evidence that the crystallization
+      sample catalyzed methylation or produced SAH in situ.
+    evidence:
+    - reference: DOI:10.1107/S1744309107008287
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2007 primary PDF text; Crystallization methods. Text inspected,
+        not visually verified; extraction-ambiguous micro-unit volumes/dimensions
+        excluded.
+    - reference: DOI:10.1016/j.jmb.2009.10.045
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Gomez Garcia 2010 author manuscript at https://hdl.handle.net/10261/87465;
+        p.3, binary NovP-SAH structure.
+  - subject: native
+    predicate: has_database_annotated_function
+    object: reaction
+    notes: UniProt annotates SAM-dependent noviose 4-O-methylation as the penultimate
+      novobiocin step, citing the 2004 biochemical studies. Those complete primary
+      assays were not inspected here; this edge remains a database assertion. Introductory
+      kinetic constants in the 2010 paper are not curated as newly measured experiments.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F2
+      evidence_type: DATABASE_ASSERTION
+      notes: Function/catalytic-activity annotations, PMID 14694473 and 15218104.
+  - subject: ddn
+    predicate: is_annotated_acceptor_for
+    object: reaction
+    notes: The database reaction names desmethyldescarbamoylnovobiocin, not mature
+      cathomycin, as methyl acceptor. No uninspected exact substrate CURIE is assigned.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F2
+      evidence_type: DATABASE_ASSERTION
+      notes: Catalytic-activity annotation, RHEA:36655.
+  - subject: sam
+    predicate: is_annotated_donor_for
+    object: reaction
+    notes: SAM supplies the methyl group in the annotated reaction; this is not a
+      donor-loading measurement from the crystallization study.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F2
+      evidence_type: DATABASE_ASSERTION
+      notes: Catalytic-activity annotation.
+  - subject: reaction
+    predicate: has_annotated_product
+    object: product
+    notes: The methylated product still lacks the later carbamoyl substituent. This
+      edge does not assert mature antibiotic synthesis by NovP alone.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F2
+      evidence_type: DATABASE_ASSERTION
+      notes: Catalytic-activity annotation.
+  - subject: reaction
+    predicate: has_annotated_coproduct
+    object: sah
+    notes: The annotated balanced reaction also releases SAH and H+. No stoichiometric
+      assay or direct proton-transfer observation is inferred.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F2
+      evidence_type: DATABASE_ASSERTION
+      notes: Catalytic-activity annotation.
+curation_history:
+- timestamp: '2026-10-04T20:58:19Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cathomycin-novp-native-identity-and-tagged-preparation with source-checked
+    NovP evidence and review #558 limits.'
+  llm_assisted: true

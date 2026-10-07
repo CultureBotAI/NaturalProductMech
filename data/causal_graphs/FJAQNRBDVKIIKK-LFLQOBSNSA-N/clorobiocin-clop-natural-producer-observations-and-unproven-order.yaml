@@ -1,0 +1,172 @@
+record_id: naturalproductmech:mibig-619480541f
+standard_inchi_key: FJAQNRBDVKIIKK-LFLQOBSNSA-N
+graph:
+  graph_id: clorobiocin-clop-natural-producer-observations-and-unproven-order
+  scope: BIOSYNTHESIS
+  description: 'Natural-producer product observations are distinct from CloP substrate
+    hypotheses. Review #567. Exact owner identity and SEEDED status are unchanged.'
+  nodes:
+  - node_id: clop
+    label: CloP native reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHB3
+  - node_id: host
+    label: S. roseochromogenes DS12.976 natural producer
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: Culture-supernatant LC-MSE and spectral annotation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: c667
+    label: Source-assigned compound667.2
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: n112
+    label: Source-assigned novclobiocin112
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: acylation
+    label: Inferred acylation without prior sugar methylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: shunt
+    label: Hypothesized CloP nonacceptance and shunt status
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Metabolomics-to-enzyme inference limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: conflict
+    label: Duplicated compound667 in source route wording
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: clop
+    predicate: is_native_sequence_reference_for
+    object: host
+    notes: Deposited DS12.976 reference, not resequencing of the2024 culture.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native cloP CDS/strain and AAN65238.1 translation.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB3
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry45,sequence1,taxon149682; retrieved2026-10-05.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent CDS-aware table11 translation exactly matches UniProt.
+  - subject: host
+    predicate: was_studied_by
+    object: assay
+    notes: DSMZ65 medium,7days,30C,180rpm; EtOAc extraction, negative-ion LC-MSE,
+      GNPS/fragment annotation. Biological triplicates are reported for this study.
+    evidence:
+    - reference: DOI:10.1128/spectrum.00423-24
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods; pathway-product Results; noviose-methylation Discussion (publisher
+        text).
+  - subject: assay
+    predicate: detected_source_assigned_product
+    object: c667
+    notes: Reported[M-H]-667.2; lacks sugar O-methyl and pyrrole methyl.
+    evidence:
+    - reference: DOI:10.1128/spectrum.00423-24
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods; pathway-product Results; noviose-methylation Discussion (publisher
+        text).
+  - subject: assay
+    predicate: detected_source_assigned_product
+    object: n112
+    notes: Reported[M-H]-681.1; lacks sugar O-methyl. Distinct from novclobiocin109.
+    evidence:
+    - reference: DOI:10.1128/spectrum.00423-24
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods; pathway-product Results; noviose-methylation Discussion (publisher
+        text).
+  - subject: c667
+    predicate: supports_pathway_inference
+    object: acylation
+    notes: Assigned acylated, sugar-unmethylated product.
+    evidence:
+    - reference: DOI:10.1128/spectrum.00423-24
+      evidence_type: CURATOR_INFERENCE
+      notes: Methods; pathway-product Results; noviose-methylation Discussion (publisher
+        text).
+  - subject: n112
+    predicate: supports_pathway_inference
+    object: acylation
+    notes: Assigned acylated, sugar-unmethylated product.
+    evidence:
+    - reference: DOI:10.1128/spectrum.00423-24
+      evidence_type: CURATOR_INFERENCE
+      notes: Methods; pathway-product Results; noviose-methylation Discussion (publisher
+        text).
+  - subject: clop
+    predicate: has_untested_substrate_exclusion_hypothesis
+    object: shunt
+    notes: Proposed inability to methylate these acylated products; not measured inactivity.
+    evidence:
+    - reference: DOI:10.1128/spectrum.00423-24
+      evidence_type: CURATOR_INFERENCE
+      notes: Methods; pathway-product Results; noviose-methylation Discussion (publisher
+        text).
+      snippet: We therefore hypothesize
+  - subject: c667
+    predicate: motivates
+    object: shunt
+    notes: Possible terminal shunt, not demonstrated metabolic fate.
+    evidence:
+    - reference: DOI:10.1128/spectrum.00423-24
+      evidence_type: CURATOR_INFERENCE
+      notes: Methods; pathway-product Results; noviose-methylation Discussion (publisher
+        text).
+  - subject: n112
+    predicate: motivates
+    object: shunt
+    notes: Same hypothesis, not a substrate-challenge experiment.
+    evidence:
+    - reference: DOI:10.1128/spectrum.00423-24
+      evidence_type: CURATOR_INFERENCE
+      notes: Methods; pathway-product Results; noviose-methylation Discussion (publisher
+        text).
+  - subject: assay
+    predicate: has_structure_assignment_limit
+    object: limits
+    notes: Source-rounded mass labels and fragment-based assignments are retained.
+      NMR of711B is not NMR validation of these compounds; no new chemical identifier
+      or congener bioactivity is asserted.
+    evidence:
+    - reference: DOI:10.1128/spectrum.00423-24
+      evidence_type: CURATOR_INFERENCE
+      notes: Methods; pathway-product Results; noviose-methylation Discussion (publisher
+        text).
+  - subject: shunt
+    predicate: has_homolog_model_limit
+    object: limits
+    notes: NovP structure/docking informs the proposal, not an experimental CloP structure
+      or kinetic test.
+    evidence:
+    - reference: DOI:10.1128/spectrum.00423-24
+      evidence_type: CURATOR_INFERENCE
+      notes: Methods; pathway-product Results; noviose-methylation Discussion (publisher
+        text).
+  - subject: shunt
+    predicate: has_unresolved_source_wording
+    object: conflict
+    notes: Discussion names667 in both possible methylation routes. This wording is
+      not silently corrected into a demonstrated substrate-to-product edge.
+    evidence:
+    - reference: DOI:10.1128/spectrum.00423-24
+      evidence_type: CURATOR_INFERENCE
+      notes: Methods; pathway-product Results; noviose-methylation Discussion (publisher
+        text).
+curation_history:
+- timestamp: '2026-10-05T03:24:51Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add clorobiocin-clop-natural-producer-observations-and-unproven-order;
+    preserve source access, identity and inference limits (#567).
+  llm_assisted: true

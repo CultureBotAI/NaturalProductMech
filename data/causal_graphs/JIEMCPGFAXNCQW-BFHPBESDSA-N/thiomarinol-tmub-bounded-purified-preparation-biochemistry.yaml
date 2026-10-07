@@ -1,0 +1,294 @@
+record_id: naturalproductmech:mibig-6fc5164982
+standard_inchi_key: JIEMCPGFAXNCQW-BFHPBESDSA-N
+graph:
+  graph_id: thiomarinol-tmub-bounded-purified-preparation-biochemistry
+  scope: BIOSYNTHESIS
+  description: Purified TmuB tailoring with separate native and surrogate substrates,
+    I109N negative control and delayed PA-B activity. Homology-model templates are
+    not presented as TmuB crystal structures; unaudited kinetic values remain unasserted.
+    Purified conversion does not establish native reaction order. Native references
+    do not establish complete engineered proteoforms. Source-assigned congeners remain
+    ungrounded; owner identity, incomplete stereochemistry and SEEDED status are unchanged.
+  nodes:
+  - node_id: cluster
+    label: Thiomarinol locus on native pTML1
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0001115
+  - node_id: TmuB
+    label: Native deposited TmuB sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:CBK62743.1
+  - node_id: wt_prep
+    label: Study N-terminal His-tagged WT TmuB preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: mut_prep
+    label: Study N-terminal His-tagged TmuB I109N preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: pa_a
+    label: Assayed pseudomonic acid A
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: tm_c
+    label: Assayed thiomarinol C
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: pa_b
+    label: Assayed pseudomonic acid B
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: pa_a_oh
+    label: Source-assigned 4-hydroxypseudomonic acid A
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: tm_a
+    label: Source-assigned thiomarinol A
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: pa_b_oh
+    label: Source-assigned 4-hydroxypseudomonic acid B
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: pa_a_rxn
+    label: Purified WT TmuB pseudomonic-acid-A hydroxylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: tm_c_rxn
+    label: Purified WT TmuB thiomarinol-C hydroxylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: pa_b_rxn
+    label: Delayed pseudomonic-acid-B hydroxylation in vitro
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: i109n_control
+    label: Purified I109N preparation with pseudomonic acid A
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: TmuB
+    notes: FN689524.1 CDS 82295..83089(+), 1-based inclusive; CBK62743.1,264 aa. CDS-aware
+      table-11 translation matches original GenPept, WP_013933295.1 and UPI00021172A3.
+      Native source is Pseudoalteromonas sp. SANK 73390,taxon747457,pTML1. The generic
+      RefSeq family name is not itself experimental substrate evidence.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS and source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBK62743.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Original versioned protein; SI explicitly names CBK62743 and FN689524.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/WP_013933295.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native CDS/GenPept/RefSeq/UniParc sequence comparison.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/F8J3G9
+      evidence_type: DATABASE_ASSERTION
+      notes: Inactive/deleted because not part of a reference proteome; not selected
+        as a live UniProt example.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1002/cbic.201800036
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Accepted author manuscript/SI inspected: SI PDF page6,section11. No
+        tabulated turnover values are adopted without a separate units/concentration
+        audit.'
+      retrieved_on: '2026-10-06'
+  - subject: TmuB
+    predicate: is_native_sequence_reference_for
+    object: wt_prep
+    notes: Gene-matched reference for the WT preparation, not complete fusion-sequence
+      equality. The source specifies pET28a,N-terminal His-tag,E. coli BL21(DE3),Ni-NTA
+      and gel filtration. SI uses both SANK73390 and SANK73309 in strain/cloning text;
+      retain that apparent typo rather than inventing a second strain or verified
+      stock identity.
+    evidence:
+    - reference: DOI:10.1002/cbic.201800036
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Accepted author manuscript/SI inspected: main PDF page4; SI PDF pages5-6.
+        No tabulated turnover values are adopted without a separate units/concentration
+        audit.'
+      retrieved_on: '2026-10-06'
+      snippet: N-terminal His-tag
+  - subject: TmuB
+    predicate: is_native_sequence_reference_for
+    object: mut_prep
+    notes: Gene-matched reference for the I109N preparation, not complete fusion-sequence
+      equality. The source specifies pET28a,N-terminal His-tag,E. coli BL21(DE3),Ni-NTA
+      and gel filtration. SI uses both SANK73390 and SANK73309 in strain/cloning text;
+      retain that apparent typo rather than inventing a second strain or verified
+      stock identity.
+    evidence:
+    - reference: DOI:10.1002/cbic.201800036
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Accepted author manuscript/SI inspected: main PDF page4; SI PDF pages5-6.
+        No tabulated turnover values are adopted without a separate units/concentration
+        audit.'
+      retrieved_on: '2026-10-06'
+  - subject: pa_a
+    predicate: was_substrate_in
+    object: pa_a_rxn
+    notes: Purified WT activity requires the reported iron cofactor and alpha-ketoglutarate
+      co-substrate in the pseudomonic-acid-A assay. This control is not silently transferred
+      to every other experiment.
+    evidence:
+    - reference: DOI:10.1002/cbic.201800036
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Accepted author manuscript/SI inspected: main PDF pages4-5,Figure3;
+        SI PDF page6. No tabulated turnover values are adopted without a separate
+        units/concentration audit.'
+      retrieved_on: '2026-10-06'
+  - subject: wt_prep
+    predicate: catalyzed
+    object: pa_a_rxn
+    notes: Source enzymatic experiment; no numerical turnover/efficiency, replicate
+      count or complete tagged-proteoform identity is inferred.
+    evidence:
+    - reference: DOI:10.1002/cbic.201800036
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Accepted author manuscript/SI inspected: main PDF pages4-5,Figure3;
+        SI PDF page6. No tabulated turnover values are adopted without a separate
+        units/concentration audit.'
+      retrieved_on: '2026-10-06'
+  - subject: pa_a_rxn
+    predicate: yielded_source_assigned_product
+    object: pa_a_oh
+    notes: Retain the source chemical assignment and its congener boundary; no exact
+      structure CURIE is selected.
+    evidence:
+    - reference: DOI:10.1002/cbic.201800036
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Accepted author manuscript/SI inspected: main PDF pages4-5,Figure3;
+        SI PDF page6. No tabulated turnover values are adopted without a separate
+        units/concentration audit.'
+      retrieved_on: '2026-10-06'
+  - subject: tm_c
+    predicate: was_substrate_in
+    object: tm_c_rxn
+    notes: Source-assigned thiomarinol C is converted to thiomarinol A by purified
+      WT TmuB. This demonstrates capacity for late tailoring, but native pathway timing
+      remains inferred. It is not de novo reconstitution or independent verification
+      of the owner's exact stereochemistry.
+    evidence:
+    - reference: DOI:10.1002/cbic.201800036
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Accepted author manuscript/SI inspected: main PDF pages5-6,Figure3B.
+        No tabulated turnover values are adopted without a separate units/concentration
+        audit.'
+      retrieved_on: '2026-10-06'
+  - subject: wt_prep
+    predicate: catalyzed
+    object: tm_c_rxn
+    notes: Source enzymatic experiment; no numerical turnover/efficiency, replicate
+      count or complete tagged-proteoform identity is inferred.
+    evidence:
+    - reference: DOI:10.1002/cbic.201800036
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Accepted author manuscript/SI inspected: main PDF pages5-6,Figure3B.
+        No tabulated turnover values are adopted without a separate units/concentration
+        audit.'
+      retrieved_on: '2026-10-06'
+  - subject: tm_c_rxn
+    predicate: yielded_source_assigned_product
+    object: tm_a
+    notes: Retain the source chemical assignment and its congener boundary; no exact
+      structure CURIE is selected.
+    evidence:
+    - reference: DOI:10.1002/cbic.201800036
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Accepted author manuscript/SI inspected: main PDF pages5-6,Figure3B.
+        No tabulated turnover values are adopted without a separate units/concentration
+        audit.'
+      retrieved_on: '2026-10-06'
+  - subject: pa_b
+    predicate: was_substrate_in
+    object: pa_b_rxn
+    notes: Detectable conversion follows prolonged in vitro incubation. The abstract's
+      blocked-action wording must not become an absolute zero; lack of detectable
+      conversion in culture is a different observation.
+    evidence:
+    - reference: DOI:10.1002/cbic.201800036
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Accepted author manuscript/SI inspected: main PDF pages4-5,Figure3A/C.
+        No tabulated turnover values are adopted without a separate units/concentration
+        audit.'
+      retrieved_on: '2026-10-06'
+  - subject: wt_prep
+    predicate: catalyzed
+    object: pa_b_rxn
+    notes: Source enzymatic experiment; no numerical turnover/efficiency, replicate
+      count or complete tagged-proteoform identity is inferred.
+    evidence:
+    - reference: DOI:10.1002/cbic.201800036
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Accepted author manuscript/SI inspected: main PDF pages4-5,Figure3A/C.
+        No tabulated turnover values are adopted without a separate units/concentration
+        audit.'
+      retrieved_on: '2026-10-06'
+  - subject: pa_b_rxn
+    predicate: yielded_source_assigned_product
+    object: pa_b_oh
+    notes: Retain the source chemical assignment and its congener boundary; no exact
+      structure CURIE is selected.
+    evidence:
+    - reference: DOI:10.1002/cbic.201800036
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Accepted author manuscript/SI inspected: main PDF pages4-5,Figure3A/C.
+        No tabulated turnover values are adopted without a separate units/concentration
+        audit.'
+      retrieved_on: '2026-10-06'
+  - subject: mut_prep
+    predicate: was_tested_in
+    object: i109n_control
+    notes: I109N was expressed and purified in parallel; this control pertains to
+      pseudomonic acid A, not all possible substrates or proof of an experimentally
+      determined binding pose.
+    evidence:
+    - reference: DOI:10.1002/cbic.201800036
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Accepted author manuscript/SI inspected: main PDF page4. No tabulated
+        turnover values are adopted without a separate units/concentration audit.'
+      retrieved_on: '2026-10-06'
+  - subject: pa_a
+    predicate: was_substrate_in
+    object: i109n_control
+    notes: Same named substrate as the WT comparison; no unsupported concentration
+      matching or statistical replicate design asserted.
+    evidence:
+    - reference: DOI:10.1002/cbic.201800036
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Accepted author manuscript/SI inspected: main PDF page4. No tabulated
+        turnover values are adopted without a separate units/concentration audit.'
+      retrieved_on: '2026-10-06'
+  - subject: i109n_control
+    predicate: lacked_detected_formation_of
+    object: pa_a_oh
+    notes: Reported negative preparation control, not a universal absence of catalytic
+      potential or a measured binding-affinity change.
+    evidence:
+    - reference: DOI:10.1002/cbic.201800036
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Accepted author manuscript/SI inspected: main PDF page4. No tabulated
+        turnover values are adopted without a separate units/concentration audit.'
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T04:14:35Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added a new exact-owner component for naturalproductmech:mibig-6fc5164982;
+    owner baseline commit 19559c0338e4eeee56a2067c62434f73abc3bb66. No preexisting
+    graph migrated. Separate WT/I109N tagged preparations, native thiomarinol-C conversion
+    and surrogate PA-A/PA-B assays. Delayed PA-B activity is not zero; the I109N negative
+    control concerns PA-A; native timing remains inferred; no quantitative kinetics
+    or homology-model templates presented as experimental TmuB structures. Every edge
+    has DOI 10.1002/cbic.201800036 or an official sequence URL. Native CBK62743.1
+    matches FN689524.1/RefSeq/UniParc; deleted F8J3G9 is not selected. Issue #595
+    author-agent review, not independent approval or full-record sign-off; source-assigned
+    congeners remain ungrounded.'
+  llm_assisted: true

@@ -9,6 +9,10 @@ Every queue is derived, never stored. A row leaves a queue when the thing that
 put it there changes, so nothing has to be marked done and nothing goes stale;
 that is also why this is a report rather than a file under `curation/`.
 
+`--review-records` makes an exhaustive checkpoint: REVIEWED/DEPRECATED records
+are excluded, and pending records without specialized findings are appended to
+`record-review`. Ordinary worklists remain diagnostic rather than exhaustive.
+
 Ranking is by how much a curator's decision would settle, not by how easy the
 row is. A producer claim resting on a database assertion alone outranks a
 stereo flag, because the first is a claim about the world and the second is a
@@ -32,8 +36,6 @@ from collections.abc import Callable
 from pathlib import Path
 from typing import Any
 
-import yaml
-
 REPO_ROOT = Path(__file__).resolve().parents[1]
 CORPUS_DIR = REPO_ROOT / "data" / "natural_products"
 RAW_DIR = REPO_ROOT / "data" / "raw"
@@ -44,6 +46,7 @@ PATHS_FILE = CORPUS_DIR / "PATHS.tsv"
 #: second copy would drift (#19).
 sys.path.insert(0, str(REPO_ROOT / "src"))
 from naturalproductmech.grading import CAUSAL_BASES  # noqa: E402
+from naturalproductmech.graph_components import read_natural_product  # noqa: E402
 
 COLUMNS = ["queue", "rank", "identifier", "label", "path", "detail"]
 
@@ -76,7 +79,7 @@ def read_tsv(path: Path) -> list[dict[str, str]]:
 def load_records() -> list[tuple[Path, dict[str, Any]]]:
     out = []
     for path in sorted(CORPUS_DIR.rglob("*.yaml")):
-        doc = yaml.safe_load(path.read_text(encoding="utf-8"))
+        doc = read_natural_product(path)
         if isinstance(doc, dict) and doc.get("identifier"):
             out.append((path, doc))
     return out
@@ -250,8 +253,13 @@ QUEUES: dict[str, Callable] = {
 QUEUE_ORDER = list(QUEUES)
 
 
-def build(queue: str | None) -> list[dict[str, str]]:
+def build(queue: str | None, *, review_records: bool = False) -> list[dict[str, str]]:
+    if queue and review_records:
+        raise ValueError("an exhaustive review checkpoint cannot select a single queue")
     records = load_records()
+    if review_records:
+        records = [(path, doc) for path, doc in records
+                   if doc.get("curation_status") not in {"REVIEWED", "DEPRECATED"}]
     rows: list[dict[str, str]] = []
     for name in QUEUE_ORDER:
         if queue and name != queue:
@@ -259,19 +267,30 @@ def build(queue: str | None) -> list[dict[str, str]]:
         produced = QUEUES[name](records, None)
         produced.sort(key=lambda r: (-int(r["rank"]), r["label"], r["identifier"]))
         rows.extend(produced)
+    if review_records:
+        covered = {r["path"] for r in rows}
+        pending = [_row("record-review", 0, path, doc,
+                        f"{doc.get('curation_status') or 'UNSPECIFIED'}; no specialized "
+                        "finding, full-record review pending")
+                   for path, doc in records if str(path.relative_to(REPO_ROOT)) not in covered]
+        pending.sort(key=lambda r: (r["label"], r["identifier"], r["path"]))
+        rows.extend(pending)
     return rows
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--queue", choices=sorted(QUEUES),
-                        help="one queue instead of all of them")
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--queue", choices=sorted(QUEUES),
+                      help="one diagnostic queue instead of all of them")
+    mode.add_argument("--review-records", action="store_true",
+                      help="include every record not REVIEWED/DEPRECATED, even without findings")
     parser.add_argument("--limit", type=int, default=10,
                         help="rows shown per queue; 0 for all")
     parser.add_argument("--tsv", type=Path, help="write every row to this TSV as well")
     args = parser.parse_args()
 
-    rows = build(args.queue)
+    rows = build(args.queue, review_records=args.review_records)
     if args.tsv:
         args.tsv.parent.mkdir(parents=True, exist_ok=True)
         with args.tsv.open("w", newline="", encoding="utf-8") as fh:
@@ -282,10 +301,12 @@ def main() -> int:
 
     counts = Counter(r["queue"] for r in rows)
     if not rows:
-        print("nothing queued." if args.queue else "the corpus has no open curation work.")
+        print("no records awaiting review." if args.review_records else
+              "nothing queued." if args.queue else "the corpus has no open curation work.")
         return 0
 
-    for name in QUEUE_ORDER:
+    order = [*QUEUE_ORDER, "record-review"] if args.review_records else QUEUE_ORDER
+    for name in order:
         if name not in counts:
             continue
         print(f"\n{name}  ({counts[name]})")

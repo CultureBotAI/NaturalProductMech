@@ -12,8 +12,8 @@ filed under this pathway. {{ pathway.blurb }}</p>
   <td class="mono">{{ record.identifier }}</td>
   <td>{% if record.causal %}<span class="tag causal">{{ record.causal }} causal</span>
       {% endif %}{% if record.weak %}<span class="tag weak">{{ record.weak }} asserted</span>{% endif %}</td>
-  <td>{{ record.occurrences or '' }}</td>
-  <td>{{ record.clusters or '' }}</td>
+  <td>{% if record.n_occurrences %}<a href="{{ record.slug }}.html#occurrences">{{ record.n_occurrences }} cited occurrence{{ "s" if record.n_occurrences != 1 else "" }}</a>{% else %}None cited{% endif %}</td>
+  <td>{% if record.n_clusters %}<a href="{{ record.slug }}.html#gene-clusters">{{ record.n_clusters }} gene cluster{{ "s" if record.n_clusters != 1 else "" }}</a>{% else %}None recorded{% endif %}</td>
 </tr>
 {% endfor %}
 </table></div>

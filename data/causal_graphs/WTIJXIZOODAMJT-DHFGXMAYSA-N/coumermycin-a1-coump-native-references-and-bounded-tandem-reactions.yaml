@@ -1,0 +1,227 @@
+record_id: CHEBI:3907
+standard_inchi_key: WTIJXIZOODAMJT-DHFGXMAYSA-N
+graph:
+  graph_id: coumermycin-a1-coump-native-references-and-bounded-tandem-reactions
+  scope: BIOSYNTHESIS
+  description: 'Two native protein references accompany abstract-supported precursor
+    tailoring. The reported tandem reactions do not establish a physical complex or
+    complete native-A1 synthesis. Preparations and precursor/engineered products remain
+    separately ungrounded; assay conditions were not obtained. Author-agent review
+    #587; partial curation, not full-record sign-off.'
+  nodes:
+  - node_id: cluster
+    label: Deposited coumermycin biosynthetic cluster
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000833
+  - node_id: CouM
+    label: Native CouM sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8U7
+  - node_id: CouP
+    label: Native CouP sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8T8
+  - node_id: CouL_prep
+    label: Study CouL preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: CouM_prep
+    label: Study CouM preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: CouP_prep
+    label: Study CouP preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: NovN_prep
+    label: Added NovN preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: amides
+    label: CouL monoamide and bisamide acceptors
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: glycosides
+    label: CouM noviosylated products
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: methylated
+    label: CouP O-methylated products
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: analogue
+    label: Engineered carbamoylated coumermycin analogue
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: alternatives
+    label: Alternative dicarboxylate scaffolds
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: CouM
+    notes: AF235050.4 couM at 12237..13445(+), 1-based inclusive; S. rishiriensis
+      DSM 40489, taxon 68264. All 402 residues match AAG29785.1 and UniProt. Table-11
+      CDS-aware translations agree across AF235050.1-.4; AF235050.1 uses cumH.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS and source qualifiers.
+      retrieved_on: '2026-10-05'
+    - &id001
+      reference: https://www.uniprot.org/uniprotkb/Q9F8U7
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed TrEMBL entry 69, sequence 1; annotation 2026-06-10; retrieved
+        2026-10-05.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact eight-way CDS/protein comparisons across two loci and four deposit
+        versions.
+      retrieved_on: '2026-10-06'
+  - subject: CouM
+    predicate: is_native_sequence_reference_for
+    object: CouM_prep
+    notes: Gene-matched native reference, not complete sample identity. Experimental
+      tags, insert sequence, expression host, strain stock and purity were not verified;
+      no full-preparation sequence equivalence is asserted.
+    evidence:
+    - *id001
+    - reference: DOI:10.1021/bi048457z
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract only; full paper, methods, figures and supporting material
+        not obtained.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: CouP
+    notes: AF235050.4 couP at 21984..22814(+), 1-based inclusive; S. rishiriensis
+      DSM 40489, taxon 68264. All 276 residues match AAG29794.1 and UniProt. Table-11
+      CDS-aware translations agree across AF235050.1-.4; AF235050.1 uses cumN.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS and source qualifiers.
+      retrieved_on: '2026-10-05'
+    - &id002
+      reference: https://www.uniprot.org/uniprotkb/Q9F8T8
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed TrEMBL entry 48, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact eight-way CDS/protein comparisons across two loci and four deposit
+        versions.
+      retrieved_on: '2026-10-06'
+  - subject: CouP
+    predicate: is_native_sequence_reference_for
+    object: CouP_prep
+    notes: Gene-matched native reference, not complete sample identity. Experimental
+      tags, insert sequence, expression host, strain stock and purity were not verified;
+      no full-preparation sequence equivalence is asserted.
+    evidence:
+    - *id002
+    - reference: DOI:10.1021/bi048457z
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract only; full paper, methods, figures and supporting material
+        not obtained.
+      retrieved_on: '2026-10-06'
+  - subject: CouL_prep
+    predicate: provides_acceptors
+    object: amides
+    notes: CouL forms one or two amides from the central pyrrole dicarboxylate and
+      aminocoumarins.
+    evidence:
+    - reference: DOI:10.1021/bi048457z
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only; full paper, methods, figures and supporting material
+        not obtained.
+      retrieved_on: '2026-10-06'
+  - subject: amides
+    predicate: are_acceptors_for
+    object: CouM_prep
+    notes: Reported precursor substrates, not mature antibiotic.
+    evidence:
+    - reference: DOI:10.1021/bi048457z
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only; full paper, methods, figures and supporting material
+        not obtained.
+      retrieved_on: '2026-10-06'
+  - subject: CouM_prep
+    predicate: forms
+    object: glycosides
+    notes: CouM adds one or two noviose units.
+    evidence:
+    - reference: DOI:10.1021/bi048457z
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only; full paper, methods, figures and supporting material
+        not obtained.
+      retrieved_on: '2026-10-06'
+      snippet: mono- and bisnoviosylation
+  - subject: glycosides
+    predicate: are_acceptors_for
+    object: CouP_prep
+    notes: CouP acts on products from tandem CouL/CouM assays.
+    evidence:
+    - reference: DOI:10.1021/bi048457z
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only; full paper, methods, figures and supporting material
+        not obtained.
+      retrieved_on: '2026-10-06'
+  - subject: CouP_prep
+    predicate: forms
+    object: methylated
+    notes: Reported sugar 4-O methylation; no kinetic constants or site-specific rates
+      are supplied here.
+    evidence:
+    - reference: DOI:10.1021/bi048457z
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only; full paper, methods, figures and supporting material
+        not obtained.
+      retrieved_on: '2026-10-06'
+  - subject: methylated
+    predicate: are_acceptors_for
+    object: NovN_prep
+    notes: NovN is added from the novobiocin pathway, not assigned as a native coumermycin-cluster
+      protein.
+    evidence:
+    - reference: DOI:10.1021/bi048457z
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only; full paper, methods, figures and supporting material
+        not obtained.
+      retrieved_on: '2026-10-06'
+  - subject: NovN_prep
+    predicate: forms_engineered_products
+    object: analogue
+    notes: Carbamoylation of either or both arms includes a biscarbamoylated analogue.
+      This is not terminal-pyrrole-bearing native A1.
+    evidence:
+    - reference: DOI:10.1021/bi048457z
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only; full paper, methods, figures and supporting material
+        not obtained.
+      retrieved_on: '2026-10-06'
+  - subject: alternatives
+    predicate: enter_reported_tandem_sequence_via
+    object: CouL_prep
+    notes: Alternative scaffolds yield additional variants; exact identities, yields
+      and breadth are unresolved here.
+    evidence:
+    - reference: DOI:10.1021/bi048457z
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only; full paper, methods, figures and supporting material
+        not obtained.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T01:54:12Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add coumermycin-a1-coump-native-references-and-bounded-tandem-reactions;
+    preserve native/preparation identity, abstract-only evidence and engineered-product
+    limits (#587).
+  llm_assisted: true

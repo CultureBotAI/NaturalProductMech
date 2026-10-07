@@ -1,0 +1,319 @@
+record_id: CHEBI:3907
+standard_inchi_key: WTIJXIZOODAMJT-DHFGXMAYSA-N
+graph:
+  graph_id: coumermycin-a1-coun23456-native-identities-and-version-conflicts
+  scope: BIOSYNTHESIS
+  description: 'Five native CouN references with historical revisions and a rejected
+    cross-species protein pointer. Partial curation; author-agent review #572. Native
+    references, engineered alleles, genetic phenotypes and direct biochemical evidence
+    are distinct; prior graphs and SEEDED status are preserved.'
+  nodes:
+  - node_id: cluster
+    label: Deposited coumermycin biosynthetic locus
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: old2
+    label: Historical 355-aa CouN2 reference
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: old3
+    label: Historical 373-aa CouN3 reference
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: old6
+    label: Historical 399-aa CouN6 reference
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: wrong
+    label: Wolpert CouN3 protein-pointer conflict
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: limits
+    label: Annotation and experimental-sample boundaries
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: couN2_locus
+    label: couN2 native locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: couN2
+    label: Native CouN2 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8U5
+  - node_id: couN3_locus
+    label: couN3 native locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: couN3
+    label: Native CouN3 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8U4
+  - node_id: couN4_locus
+    label: couN4 native locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: couN4
+    label: Native CouN4 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8U3
+  - node_id: couN5_locus
+    label: couN5 native locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: couN5
+    label: Native CouN5 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8U2
+  - node_id: couN6_locus
+    label: couN6 native locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: couN6
+    label: Native CouN6 sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8U1
+  edges:
+  - subject: cluster
+    predicate: contains
+    object: couN2_locus
+    notes: AF235050.4 CDS 13824..14891, plus strand, 1-based inclusive; native DSM
+      40489.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Source and CDS qualifiers.
+      retrieved_on: '2026-10-05'
+  - subject: couN2_locus
+    predicate: encodes_native_reference
+    object: couN2
+    notes: Current table-11 CDS translation equals AAG29787.2 and all 355 UniProt
+      residues. Historical AF235050.1 gene name cumJ. Version changes are recorded
+      separately.
+    evidence:
+    - &id001
+      reference: https://www.uniprot.org/uniprotkb/Q9F8U5
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed TrEMBL, entry 72, sequence 2; annotation 2026-06-10; S. rishiriensis,
+        NCBITaxon:68264.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS-aware/deposited-protein/UniProt sequence agreement.
+      retrieved_on: '2026-10-05'
+  - subject: couN2
+    predicate: has_annotation_limit
+    object: limits
+    notes: Submitted name 3-ketoacyl-[ACP]-synthase; not a measured CouN5-to-CouN1
+      transfer reaction. A native accession is not the complete identity of an experimental
+      fusion or deleted allele.
+    evidence:
+    - *id001
+  - subject: cluster
+    predicate: contains
+    object: couN3_locus
+    notes: AF235050.4 CDS 14881..16011, plus strand, 1-based inclusive; native DSM
+      40489.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Source and CDS qualifiers.
+      retrieved_on: '2026-10-05'
+  - subject: couN3_locus
+    predicate: encodes_native_reference
+    object: couN3
+    notes: Current table-11 CDS translation equals AAG29788.2 and all 376 UniProt
+      residues. Historical AF235050.1 gene name proA. Version changes are recorded
+      separately.
+    evidence:
+    - &id002
+      reference: https://www.uniprot.org/uniprotkb/Q9F8U4
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed TrEMBL, entry 88, sequence 2; annotation 2026-09-02; S. rishiriensis,
+        NCBITaxon:68264.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS-aware/deposited-protein/UniProt sequence agreement.
+      retrieved_on: '2026-10-05'
+  - subject: couN3
+    predicate: has_annotation_limit
+    object: limits
+    notes: Submitted name acyl-CoA dehydrogenase; native genetic evidence does not
+      establish purified-protein oxidation chemistry. A native accession is not the
+      complete identity of an experimental fusion or deleted allele.
+    evidence:
+    - *id002
+  - subject: cluster
+    predicate: contains
+    object: couN4_locus
+    notes: AF235050.4 CDS 16130..17635, plus strand, 1-based inclusive; native DSM
+      40489.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Source and CDS qualifiers.
+      retrieved_on: '2026-10-05'
+  - subject: couN4_locus
+    predicate: encodes_native_reference
+    object: couN4
+    notes: Current table-11 CDS translation equals AAG29789.1 and all 501 UniProt
+      residues. Historical AF235050.1 gene name proB. Protein sequence identical across
+      AF235050.1-.4.
+    evidence:
+    - &id003
+      reference: https://www.uniprot.org/uniprotkb/Q9F8U3
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed TrEMBL, entry 88, sequence 1; annotation 2026-09-02; S. rishiriensis,
+        NCBITaxon:68264.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS-aware/deposited-protein/UniProt sequence agreement.
+      retrieved_on: '2026-10-05'
+  - subject: couN4
+    predicate: has_annotation_limit
+    object: limits
+    notes: Submitted name acyl-CoA synthetase; specific proline activation has separate
+      primary biochemical support. A native accession is not the complete identity
+      of an experimental fusion or deleted allele.
+    evidence:
+    - *id003
+  - subject: cluster
+    predicate: contains
+    object: couN5_locus
+    notes: AF235050.4 CDS 17639..17908, plus strand, 1-based inclusive; native DSM
+      40489.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Source and CDS qualifiers.
+      retrieved_on: '2026-10-05'
+  - subject: couN5_locus
+    predicate: encodes_native_reference
+    object: couN5
+    notes: Current table-11 CDS translation equals AAG29790.1 and all 89 UniProt residues.
+      Historical AF235050.1 gene name proC. Protein sequence identical across AF235050.1-.4.
+    evidence:
+    - &id004
+      reference: https://www.uniprot.org/uniprotkb/Q9F8U2
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed TrEMBL, entry 63, sequence 1; annotation 2026-09-02; S. rishiriensis,
+        NCBITaxon:68264.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS-aware/deposited-protein/UniProt sequence agreement.
+      retrieved_on: '2026-10-05'
+  - subject: couN5
+    predicate: has_annotation_limit
+    object: limits
+    notes: Submitted name CouN5; the native sequence does not by itself specify apo,
+      holo or acyl-loaded state. A native accession is not the complete identity of
+      an experimental fusion or deleted allele.
+    evidence:
+    - *id004
+  - subject: cluster
+    predicate: contains
+    object: couN6_locus
+    notes: AF235050.4 CDS 17966..19648, plus strand, 1-based inclusive; native DSM
+      40489.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Source and CDS qualifiers.
+      retrieved_on: '2026-10-05'
+  - subject: couN6_locus
+    predicate: encodes_native_reference
+    object: couN6
+    notes: Current table-11 CDS translation equals AAG29791.2 and all 560 UniProt
+      residues. Historical AF235050.1 gene name cumK. Version changes are recorded
+      separately.
+    evidence:
+    - &id005
+      reference: https://www.uniprot.org/uniprotkb/Q9F8U1
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed TrEMBL, entry 80, sequence 2; annotation 2026-09-02; S. rishiriensis,
+        NCBITaxon:68264.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS-aware/deposited-protein/UniProt sequence agreement.
+      retrieved_on: '2026-10-05'
+  - subject: couN6
+    predicate: has_annotation_limit
+    object: limits
+    notes: Submitted name uncharacterized protein couN6; no direct methylation, cofactor-dependence
+      or reaction order is measured by this database record. A native accession is
+      not the complete identity of an experimental fusion or deleted allele.
+    evidence:
+    - *id005
+  - subject: old2
+    predicate: differs_from_current_reference
+    object: couN2
+    notes: AF235050.1-.3 AAG29787.1 and current AAG29787.2 are both 355 aa; positional
+      differences are A22D, C23A and N118S. These are deposit-version differences,
+      not independently demonstrated natural polymorphisms.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact historical/current comparison.
+      retrieved_on: '2026-10-05'
+  - subject: old3
+    predicate: differs_from_current_reference
+    object: couN3
+    notes: AF235050.1-.3 AAG29788.1 is 373 aa; current AAG29788.2 is 376 aa with N-terminal/internal
+      sequence changes, not merely a three-residue insertion. The historical 213-aa
+      deletion description is not silently converted to 216 aa.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Version-aware CDS comparison.
+      retrieved_on: '2026-10-05'
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Xu 2004 primary thesis, PDF pages 65-66 (printed page offset +19). Relevant
+        text and selected figures/tables inspected; not a complete thesis review.
+      retrieved_on: '2026-10-05'
+  - subject: old6
+    predicate: differs_from_current_reference
+    object: couN6
+    notes: AF235050.1 AAG29791.1 is 399 aa and lacks current residues 131-291; AF235050.2-.4
+      AAG29791.2 agree with the current 560-aa reference. This is an annotation/deposit
+      revision, not proof of an experimentally observed shortened enzyme.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact historical/current sequence comparison.
+      retrieved_on: '2026-10-05'
+  - subject: wrong
+    predicate: does_not_identify
+    object: couN3
+    notes: Wolpert 2007 Table 5 lists AAN65232 for CouN3; official records map AAN65232.1
+      to CloN3/Q8GHB9 from S. roseochromogenus subsp. oscitans. Reject that pointer
+      as an exact CouN3 example; retain native AAG29788.2/Q9F8U4.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 5, PDF page81, visually inspected.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB9
+      evidence_type: DATABASE_ASSERTION
+      notes: CloN3 gene and organism, EMBL protein cross-reference.
+      retrieved_on: '2026-10-05'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Conflict with the exact native couN3 CDS.
+      retrieved_on: '2026-10-05'
+curation_history:
+- timestamp: '2026-10-05T19:13:42Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add coumermycin-a1-coun23456-native-identities-and-version-conflicts; retain
+    native/historical/engineered identities, genetic and biochemical limits, and source
+    conflicts (#572).
+  llm_assisted: true

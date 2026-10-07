@@ -1,0 +1,271 @@
+record_id: naturalproductmech:mibig-619480541f
+standard_inchi_key: FJAQNRBDVKIIKK-LFLQOBSNSA-N
+graph:
+  graph_id: clorobiocin-clon-native-identities-and-deletion-constructs
+  scope: BIOSYNTHESIS
+  description: 'Exact native references and bounded deletion construction. Review
+    #568. Native references, constructs and source-assigned products remain distinct;
+    owner identity and SEEDED status are unchanged.'
+  nodes:
+  - node_id: cluster
+    label: Deposited clorobiocin cluster
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000832
+  - node_id: cloN1_gene
+    label: Native cloN1 locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: cloN1
+    label: CloN1 native reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHC1
+  - node_id: cloN2_gene
+    label: Native cloN2 locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: cloN2
+    label: CloN2 native reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHC0
+  - node_id: cloN7_gene
+    label: Native cloN7 locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: cloN7
+    label: CloN7 native reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHB5
+  - node_id: parent
+    label: clo-BG1 cluster cosmid
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: af5
+    label: clo-AF5 cloN1 replacement cosmid
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: af6
+    label: clo-AF6 cassette-excised cloN1 cosmid
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: af3
+    label: clo-AF3 cassette-retaining cloN7 cosmid
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: scar
+    label: Reconstructed cloN1 coding remnant
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: motif
+    label: CloN1 motif interpretation and wording conflict
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Construct and polar-effect limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: contains
+    object: cloN1_gene
+    notes: AF329398.1:20853..21140(+), AAN65230.1.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited feature table.
+  - subject: cloN1_gene
+    predicate: encodes_native_reference
+    object: cloN1
+    notes: 95 aa; CDS-aware table11 translation exactly matches deposited protein
+      and Q8GHC1. DS 12.976 strain taxon1352936 versus subspecies taxon149682. This
+      is not a resequenced engineered sample.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS and strain.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHC1
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry 68, sequence 1, taxon149682; retrieved2026-10-05.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent sequence comparison.
+  - subject: cluster
+    predicate: contains
+    object: cloN2_gene
+    notes: AF329398.1:21150..22217(+), AAN65231.1.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited feature table.
+  - subject: cloN2_gene
+    predicate: encodes_native_reference
+    object: cloN2
+    notes: 355 aa; CDS-aware table11 translation exactly matches deposited protein
+      and Q8GHC0. DS 12.976 strain taxon1352936 versus subspecies taxon149682. This
+      is not a resequenced engineered sample.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS and strain.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHC0
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry 71, sequence 1, taxon149682; retrieved2026-10-05.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent sequence comparison.
+  - subject: cluster
+    predicate: contains
+    object: cloN7_gene
+    notes: AF329398.1:27026..27862(+), AAN65236.1.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited feature table.
+  - subject: cloN7_gene
+    predicate: encodes_native_reference
+    object: cloN7
+    notes: 278 aa; CDS-aware table11 translation exactly matches deposited protein
+      and Q8GHB5. DS 12.976 strain taxon1352936 versus subspecies taxon149682. This
+      is not a resequenced engineered sample.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS and strain.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB5
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry 51, sequence 1, taxon149682; retrieved2026-10-05.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent sequence comparison.
+  - subject: cluster
+    predicate: was_carried_by
+    object: parent
+    notes: Intact cluster with phiC31 integration functions.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.51,84-88; printed pagination is ten lower.
+  - subject: parent
+    predicate: was_targeting_template_for
+    object: af5
+    notes: aac(3)IV cassette from pUG019 replaces the cloN1 coding interior.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.54,76,85; printed pagination is ten lower.
+  - subject: cloN1_gene
+    predicate: was_targeted_in
+    object: af5
+    notes: Table forward primer CACAGTGCAACACAATCGATGGGGGAATTACGCGAGATGATTCCGGGGATCTCTAGATC;
+      methods instead CACAGTGGAACACAATCGATGGGGGAATTACGCGAGATGATTCCGGGGATCTCTAGATC.
+      Reverse GGCCACGTATATACCTGATGTCCGCATCTGTTGCGCCTAACTAGTCTGGAGCTGCTTC. Method39-nt
+      arms match20817..20855(+) and21176..21138(-); table forward has one upstream
+      base mismatch. The actual experimental primer is not independently established.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.54,76; printed pagination is ten lower.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent literal-primer comparison.
+  - subject: af5
+    predicate: was_excised_to_form
+    object: af6
+    notes: XbaI/SpeI digestion and compatible-end religation; apramycin-sensitive
+      selection.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.76,85-87; printed pagination is ten lower.
+  - subject: af6
+    predicate: has_reconstructed_junction
+    object: scar
+    notes: ATGATTCCGGGGATCTCTAGTTAG is24nt including start/stop, with an18-nt internal
+      scar; predicts MIPGISS. The native288-nt CDS is shortened by264nt. This is a
+      model, not a sequenced mutant or observed peptide.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF pp.54,76,85; printed pagination is ten lower.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent compatible-end reconstruction.
+  - subject: parent
+    predicate: was_targeting_template_for
+    object: af3
+    notes: The tested cloN7 construct retains aac(3)IV. Listed clo-AF4 is not the
+      plotted mutant.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.53,77,85-88; printed pagination is ten lower.
+  - subject: cloN7_gene
+    predicate: was_targeted_in
+    object: af3
+    notes: Forward GGCAGACTCCCCAACAGCAGAGAGGACCAACTGAGCATGATTCCGGGGATCTCTAGATC; reverse
+      AGTGTGCGTGGTGCGCCAGCACTCCGACAAGCACCGTTAACTAGTCTGGAGCTGCTTC. Unique39-nt arms
+      match26990..27028(+) and27898..27860(-). TableII.15 instead prints26990..27027
+      and the reverse interval in ascending order.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006, PDF pp.54,77; printed pagination is ten lower.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent literal-primer comparison.
+  - subject: af3
+    predicate: has_polar_effect_limit
+    object: limits
+    notes: Cassette retention relies on a presumed transcription-unit end, not measured
+      absence of downstream effects.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF pp.85-86; printed pagination is ten lower.
+  - subject: af6
+    predicate: has_construct_limit
+    object: limits
+    notes: Cassette excision is not complete sequence verification or proof excluding
+      every polar effect.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF pp.85-87; printed pagination is ten lower.
+  - subject: cloN1
+    predicate: has_sequence_based_motif_interpretation
+    object: motif
+    notes: Native41-46=LGVDSL and44-46=Asp-Ser-Leu. Thesis prose says Asn-Ser-Leu
+      but prints LGVDSL. Carrier-protein/4-prime-phosphopantetheine-site assignment
+      is a sequence inference, not measured loading.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF pp.84-85; printed pagination is ten lower.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent residue mapping.
+  - subject: motif
+    predicate: has_interpretation_limit
+    object: limits
+    notes: No purified carrier loading, stable complex or catalytic rate follows from
+      motif similarity.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006, PDF pp.84-85,92-94; printed pagination is ten lower.
+curation_history:
+- timestamp: '2026-10-05T04:01:54Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add clorobiocin-clon-native-identities-and-deletion-constructs; preserve
+    native, construct, assay and inference limits (#568).
+  llm_assisted: true
+- timestamp: '2026-10-05T04:05:00Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Name the excised cassette correctly; the reconstructed scar is retained,
+    not excised (#568).
+  llm_assisted: true

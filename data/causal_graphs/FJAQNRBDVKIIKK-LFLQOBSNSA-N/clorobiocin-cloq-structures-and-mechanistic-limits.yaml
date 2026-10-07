@@ -1,0 +1,380 @@
+record_id: naturalproductmech:mibig-619480541f
+standard_inchi_key: FJAQNRBDVKIIKK-LFLQOBSNSA-N
+graph:
+  graph_id: clorobiocin-cloq-structures-and-mechanistic-limits
+  scope: BIOSYNTHESIS
+  description: 'Four deposited CloQ structural states, exact scar/native sequence
+    mappings, the Cys215 thiohemiketal and bounded mechanistic hypotheses (review
+    #553). Direct coordinate observations, source interpretations and proposed donor
+    contacts are separate. Detailed methods are from the inspected Metzger thesis;
+    only the journal abstract was obtained. PDF pages are twelve above printed pages.'
+  nodes:
+  - node_id: native
+    label: Native CloQ sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHB2
+  - node_id: wt
+    label: pET28_CloQ-derived WT comparator
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: c215s
+    label: CloQ-C215S engineered protein (pUM28)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: r66s
+    label: CloQ-R66S engineered protein (pUM31)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: 2xlq
+    label: PDB 2XLQ deposited CloQ structural state
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: 2xly
+    label: PDB 2XLY deposited CloQ structural state
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: 2xm5
+    label: PDB 2XM5 deposited CloQ structural state
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: 2xm7
+    label: PDB 2XM7 deposited CloQ structural state
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: adduct
+    label: Crystal Cys215-linked 4-HPP thiohemiketal
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: density
+    label: Unassigned acceptor-region density in C215S
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: contacts
+    label: Observed aromatic-acceptor contact environment
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: barrel
+    label: CloQ PT-barrel architecture
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: donor_model
+    label: Hypothesized DMAPP coordination and cation shielding
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: base_model
+    label: Proposed dual catalytic-base roles of E281
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: oligomer
+    label: Condition-dependent oligomeric-state interpretation
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: native
+    predicate: is_core_reference_for
+    object: wt
+    notes: 'All four deposited polymer sequences are 327 aa: GSH plus the native 324-aa
+      Q8GHB2 sequence, except the intended C215S in 2XM5 and R66S in 2XM7. Author
+      residue numbers equal native numbers; label_seq_id is author number plus three.
+      The sequence-difference positions 218 and 69 are label numbering, not native
+      C215S/R66S positions.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: GSH scar, PDF p.72.
+    - reference: https://files.rcsb.org/download/2XLQ.cif
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact deposited polymer/native sequence and atom-number mapping.
+    - reference: https://files.rcsb.org/download/2XLY.cif
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact deposited polymer/native sequence and atom-number mapping.
+    - reference: https://files.rcsb.org/download/2XM5.cif
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact deposited polymer/native sequence and atom-number mapping.
+    - reference: https://files.rcsb.org/download/2XM7.cif
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact deposited polymer/native sequence and atom-number mapping.
+  - subject: wt
+    predicate: has_deposited_structural_state
+    object: 2xlq
+    notes: '2XLQ: X-ray diffraction, 2.22 A; 316 modeled polymer residues versus 327
+      deposited. Revision history 2010-10-27 through 2024-11-13, version 1.5; coordinates
+      inspected 2026-10-04. This WT-4HPP state came from preparation/crystallization
+      with 2 mM 4-HPP in the buffers. Thesis Table 3.3 lists a 2.21-A high-resolution
+      data limit, while the current deposited refinement resolution is 2.22 A. Modeled
+      residues are native 1-313 plus GSH, not all 327 deposited residues. The I4122
+      crystal state is not a direct measurement of cellular flux or a solved donor-bound
+      ternary complex.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Crystal conditions, structural solution and comparisons, PDF pp.70-76.
+    - reference: https://files.rcsb.org/download/2XLQ.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Sequence, atom inventory, refinement and revision metadata.
+  - subject: wt
+    predicate: has_deposited_structural_state
+    object: 2xly
+    notes: '2XLY: X-ray diffraction, 3.10 A; 307 modeled polymer residues versus 327
+      deposited. Revision history 2010-10-27 through 2023-12-20, version 1.5; coordinates
+      inspected 2026-10-04. The apo state was prepared and crystallized without 4-HPP.
+      No non-polymer ligand atoms are deposited. Lower resolution limits fine comparison;
+      the source notes a W122 side-chain displacement. The I4122 crystal state is
+      not a direct measurement of cellular flux or a solved donor-bound ternary complex.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Crystal conditions, structural solution and comparisons, PDF pp.70-76.
+    - reference: https://files.rcsb.org/download/2XLY.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Sequence, atom inventory, refinement and revision metadata.
+  - subject: c215s
+    predicate: has_deposited_structural_state
+    object: 2xm5
+    notes: '2XM5: X-ray diffraction, 1.85 A; 311 modeled polymer residues versus 327
+      deposited. Revision history 2010-10-27 through 2023-12-20, version 1.4; coordinates
+      inspected 2026-10-04. The C215S crystals were soaked with 5 mM 4-HPP, but 4-HPP
+      was not assigned in the density or deposited. EDO, formate and waters are present;
+      these are not a bound prenyl donor. The I4122 crystal state is not a direct
+      measurement of cellular flux or a solved donor-bound ternary complex.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Crystal conditions, structural solution and comparisons, PDF pp.70-76.
+    - reference: https://files.rcsb.org/download/2XM5.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Sequence, atom inventory, refinement and revision metadata.
+  - subject: r66s
+    predicate: has_deposited_structural_state
+    object: 2xm7
+    notes: '2XM7: X-ray diffraction, 2.22 A; 307 modeled polymer residues versus 327
+      deposited. Revision history 2010-10-27 through 2024-11-06, version 1.5; coordinates
+      inspected 2026-10-04. The R66S crystals were soaked with 5 mM 4-HPP and contain
+      the covalent acceptor adduct. EDO, formate and waters are also deposited. The
+      source notes F68 moving into space left by the smaller Ser66 side chain. The
+      I4122 crystal state is not a direct measurement of cellular flux or a solved
+      donor-bound ternary complex.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Crystal conditions, structural solution and comparisons, PDF pp.70-76.
+    - reference: https://files.rcsb.org/download/2XM7.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Sequence, atom inventory, refinement and revision metadata.
+  - subject: 2xlq
+    predicate: contains_reported_covalent_adduct
+    object: adduct
+    notes: The deposited covale record links CYS author215 SG to ligand 34H C2. Direct
+      Euclidean coordinate distance is 1.883 A, matching the deposited link distance.
+      All 13 ligand heavy atoms have modeled occupancy 1.00; that is a refinement
+      assignment, not a solution binding fraction. The source interprets continuous
+      density and tetrahedral geometry as a 4-HPP thiohemiketal.
+    evidence:
+    - reference: https://files.rcsb.org/download/2XLQ.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Covalent link and ligand atom metadata.
+    - reference: https://files.rcsb.org/download/2XLQ.cif
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent coordinate-distance calculation.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Thiohemiketal interpretation, PDF pp.75-76.
+    - reference: DOI:10.1016/j.jmb.2010.09.067
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Inspected abstract explicitly identifies the covalent thiohemiketal;
+        not full-paper methods.
+  - subject: 2xlq
+    predicate: has_observed_acceptor_contacts
+    object: contacts
+    notes: Using the CCD atom map, E281 OE1 to phenolic 34H O3 is 2.574 A; the shortest
+      R160 guanidinium/carboxyl oxygen pair is NH2-O1 at 3.101 A. These are curator-calculated
+      heavy-atom distances, not experimentally located hydrogens. The source interprets
+      E281 hydrogen bonding and an R160 carboxyl interaction, with a surrounding hydrophobic
+      environment including F68, W122, Y174, Y233 and L235. Contact geometry does
+      not by itself establish proton-transfer direction, affinity or the essentiality
+      of a residue.
+    evidence:
+    - reference: https://files.rcsb.org/download/2XLQ.cif
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent coordinate/CCD atom mapping and distances.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Observed acceptor-contact interpretation, PDF pp.75-76.
+  - subject: 2xm7
+    predicate: contains_reported_covalent_adduct
+    object: adduct
+    notes: The deposited covale record links CYS author215 SG to ligand 34H C2. Direct
+      Euclidean coordinate distance is 1.895 A, matching the deposited link distance.
+      All 13 ligand heavy atoms have modeled occupancy 1.00; that is a refinement
+      assignment, not a solution binding fraction. The source interprets continuous
+      density and tetrahedral geometry as a 4-HPP thiohemiketal.
+    evidence:
+    - reference: https://files.rcsb.org/download/2XM7.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Covalent link and ligand atom metadata.
+    - reference: https://files.rcsb.org/download/2XM7.cif
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent coordinate-distance calculation.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Thiohemiketal interpretation, PDF pp.75-76.
+    - reference: DOI:10.1016/j.jmb.2010.09.067
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Inspected abstract explicitly identifies the covalent thiohemiketal;
+        not full-paper methods.
+  - subject: 2xm7
+    predicate: has_observed_acceptor_contacts
+    object: contacts
+    notes: Using the CCD atom map, E281 OE1 to phenolic 34H O3 is 2.665 A; the shortest
+      R160 guanidinium/carboxyl oxygen pair is NH2-O1 at 3.064 A. These are curator-calculated
+      heavy-atom distances, not experimentally located hydrogens. The source interprets
+      E281 hydrogen bonding and an R160 carboxyl interaction, with a surrounding hydrophobic
+      environment including F68, W122, Y174, Y233 and L235. Contact geometry does
+      not by itself establish proton-transfer direction, affinity or the essentiality
+      of a residue.
+    evidence:
+    - reference: https://files.rcsb.org/download/2XM7.cif
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent coordinate/CCD atom mapping and distances.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Observed acceptor-contact interpretation, PDF pp.75-76.
+  - subject: adduct
+    predicate: has_covalent_context_in
+    object: contacts
+    notes: Standalone CCD 34H is named (2R)-2-hydroxy-3-(4-hydroxyphenyl)propanoic
+      acid. Its bond table maps C2-O4 as the alpha hydroxyl and C7-O3 as the phenolic
+      hydroxyl; a CCD covalent-modification annotation links C2 to CYS SG. The full
+      crystal includes that protein-ligand covalent connection. The component name
+      or isolated CCD formula is not evidence that CloQ makes free phenyllactate,
+      and it is not equated with the unmodified CHEBI:36242 substrate.
+    evidence:
+    - reference: https://files.rcsb.org/ligands/download/34H.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Chemical-component bonds, descriptors and CYS covalent-modification annotation.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Thiohemiketal source interpretation, PDF pp.75-76.
+  - subject: 2xm5
+    predicate: has_unassigned_density
+    object: density
+    notes: Despite a 5 mM 4-HPP soak, the source does not assign the acceptor-region
+      density to 4-HPP or another ligand. Disorder/keto-enol exchange is suggested,
+      not demonstrated. The observed Y233 displacement and R66 rotation do not locate
+      the missing ligand or prove a different bound substrate pose. Absence of an
+      assigned ligand is not absence of binding in solution.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: C215S density and Figure 3.17, PDF pp.74-76.
+    - reference: https://files.rcsb.org/download/2XM5.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: No 34H ligand in the deposited atom inventory.
+  - subject: 2xlq
+    predicate: shows
+    object: barrel
+    notes: Five repeated alpha-alpha-beta-beta units produce a ten-stranded antiparallel
+      beta barrel surrounded by helices. The central cavity has polar and hydrophobic
+      regions; the C-terminal region including helix 11 closes the lower end in the
+      observed structure. This is not a TIM barrel or evidence that every substrate
+      must use one experimentally tracked entry route.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Architecture and Figures 3.14-3.16, PDF pp.72-74.
+    - reference: DOI:10.1016/j.jmb.2010.09.067
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: PT-barrel architecture in inspected journal abstract.
+  - subject: barrel
+    predicate: motivates_hypothesis
+    object: donor_model
+    notes: No DMAPP, GPP or nonhydrolysable donor analogue was observed bound in these
+      four deposits despite soaking/cocrystallization trials. The source schematic
+      proposes K54, R66, K120, R229 and K279 as a positive diphosphate-binding region,
+      with N172 and surrounding aromatic side chains contributing contacts/shielding.
+      The putative K54 substitution for a metal charge and cation-pi shielding are
+      hypotheses informed by homolog structures and mutagenesis, not observed CloQ
+      donor contacts. Figure 3.19 is schematic, not a refined bound-donor model.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Failed donor-binding trials and hypothetical site, PDF pp.70-71,78-80.
+  - subject: contacts
+    predicate: motivates_hypothesis
+    object: base_model
+    notes: The source proposes E281 both activating the phenolic group and removing
+      the proton from the aromatic sigma-complex. It explicitly treats the dual role
+      as hypothetical because exact substrate positions are not secured. Severe E281G
+      activity loss supports functional importance but does not independently prove
+      either proton-transfer step or observe a carbocation intermediate.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Mechanistic interpretation, PDF p.80.
+      snippet: rein hypothetisch
+  - subject: 2xlq
+    predicate: has_bounded_assembly_assignment
+    object: oligomer
+    notes: 2XLQ assembly 1 is author-assigned monomeric; assembly 2 is a PISA-generated
+      tetramer. Both assignments remain visible and are not collapsed into a proven
+      biological tetramer. The thesis DLS interpretation concerns prepared protein
+      in solution; crystallographic packing and software assemblies answer different
+      questions.
+    evidence:
+    - reference: https://files.rcsb.org/download/2XLQ.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: pdbx_struct_assembly assignments.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: DLS methods and results, PDF pp.47,68-69.
+  - subject: 2xly
+    predicate: has_bounded_assembly_assignment
+    object: oligomer
+    notes: 2XLY lists an author-and-software-assigned monomeric assembly. This assignment
+      is not an independent physiological stoichiometry experiment. The thesis DLS
+      interpretation concerns prepared protein in solution; crystallographic packing
+      and software assemblies answer different questions.
+    evidence:
+    - reference: https://files.rcsb.org/download/2XLY.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: pdbx_struct_assembly assignments.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: DLS methods and results, PDF pp.47,68-69.
+  - subject: 2xm5
+    predicate: has_bounded_assembly_assignment
+    object: oligomer
+    notes: 2XM5 lists an author-and-software-assigned monomeric assembly. This assignment
+      is not an independent physiological stoichiometry experiment. The thesis DLS
+      interpretation concerns prepared protein in solution; crystallographic packing
+      and software assemblies answer different questions.
+    evidence:
+    - reference: https://files.rcsb.org/download/2XM5.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: pdbx_struct_assembly assignments.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: DLS methods and results, PDF pp.47,68-69.
+  - subject: 2xm7
+    predicate: has_bounded_assembly_assignment
+    object: oligomer
+    notes: 2XM7 lists an author-and-software-assigned monomeric assembly. This assignment
+      is not an independent physiological stoichiometry experiment. The thesis DLS
+      interpretation concerns prepared protein in solution; crystallographic packing
+      and software assemblies answer different questions.
+    evidence:
+    - reference: https://files.rcsb.org/download/2XM7.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: pdbx_struct_assembly assignments.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: DLS methods and results, PDF pp.47,68-69.
+curation_history:
+- timestamp: '2026-10-04T17:51:03Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add clorobiocin-cloq-structures-and-mechanistic-limits with exact native
+    grounding, engineered-identity and assay/structural limits from primary sources
+    (#553).
+  llm_assisted: true

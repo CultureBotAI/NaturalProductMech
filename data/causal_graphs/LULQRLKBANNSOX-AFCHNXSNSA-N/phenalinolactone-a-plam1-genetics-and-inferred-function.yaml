@@ -1,0 +1,132 @@
+record_id: naturalproductmech:mibig-e29f83c77b
+standard_inchi_key: LULQRLKBANNSOX-AFCHNXSNSA-N
+graph:
+  graph_id: phenalinolactone-a-plam1-genetics-and-inferred-function
+  scope: BIOSYNTHESIS
+  description: PlaM1 evidence in Streptomyces sp. Tu6071 from the Duerr 2005 thesis.
+    Native protein identity is separate from the mutant and rescue constructs; culture
+    phenotypes are distinct from inferred chemistry. Cultures were grown in NL111V
+    at 28 C; analytical harvests were after 6-7 days.
+  nodes:
+  - node_id: plam1
+    label: Native PlaM1 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:ABB69739.1
+  - node_id: mutation
+    label: Internal plaM1 deletion in Tu6071-derived K1/1
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: production
+    label: Detectable phenalinolactone A and D production
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: products
+    label: PL CD1 and related mutant-congener accumulation
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: rescue
+    label: pSET-plaM1 genomic-fragment complementation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: function
+    label: Proposed late 4''-O-methylation of attached L-amicetose
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: mutation
+    predicate: inactivates_encoding_gene_of
+    object: plam1
+    notes: 'K1/1 is a double crossover with a 414-bp internal PstI deletion, not whole-gene
+      removal, supported by colony PCR and apramycin-resistance loss. Native PstI
+      sites are 414 bp apart, consistent with an in-frame lesion. Possible SCplaM1
+      polar effects are not attributed to PlaM1 alone. Curator comparison: thesis
+      appendix page 126 has C at 13742 versus deposited T (terminal Arg CGG versus
+      CGA): synonymous, not identical DNA. GenPept/GenBank/MIBiG and translated thesis
+      proteins agree. UniProt mapping failed; no homolog substituted.'
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.4.1.1, 5.9.2 and 5.12.3; printed pages 41-42, 110, 113; Figure
+        24.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABB69739.1
+      evidence_type: DATABASE_ASSERTION
+      notes: 303 aa; DQ230532.1 complement(13739..14650). GenPept identifies the named
+        native protein from taxon 355249.
+      retrieved_on: '2026-10-03'
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator thesis/DQ230532.1/GenPept/MIBiG comparison; nucleotide versus
+        protein agreement detailed on edge.
+  - subject: mutation
+    predicate: disrupts_normal
+    object: production
+    notes: Mutant-culture HPLC/ESI-MS showed PL CD1 dominating instead of parental
+      A/D, not loss of all natural products or a quantified detection limit.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.4.1.2 and 3.4.1.5; printed pages 43-44, 46-49; Table 3, Figures
+        25-28.
+  - subject: mutation
+    predicate: causes_accumulation_of
+    object: products
+    notes: 'PL CD1 (m/z 684 [M-H]-) is 4''''-O-demethylphenalinolactone D, not A,
+      by comparative NMR: missing sugar methoxy and shifted C-4/H-4 signals. Other
+      congeners include PL CD2 and PL X3/X4; minor proposed demethylated A analog
+      PL X5 is MS-assigned, not fully NMR-elucidated.'
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.4.1.2 and 3.4.1.5; printed pages 43-44, 46-49; Table 3, Figures
+        25-28.
+  - subject: rescue
+    predicate: supplies_wild_type_encoding_gene_for
+    object: plam1
+    notes: 'ermE*-driven pSET152-derived pSET-plaM1 carries a genomic fragment. Curator
+      mapping places 22c_F/22c_R changes outside PlaM1 but includes partial plaA4/plaP6:
+      neither isolated CDS nor purified-protein assay. Methods name both cosmids 1O12
+      and 4D08; exact clone provenance is unresolved.'
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 5.11.2 and 5.12.3.2; printed pages 111, 113.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: DATABASE_ASSERTION
+      notes: DQ230532.1 provides the native target CDS and neighboring gene coordinates.
+      retrieved_on: '2026-10-03'
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator section 5.12 primer/DQ230532.1 comparison: changes outside CDS,
+        partial neighboring genes included; not separate rescue-plasmid sequencing.'
+  - subject: rescue
+    predicate: restores_detectable
+    object: production
+    notes: 'All six complemented-conjugant cultures recovered the wild-type HPLC/ESI-MS
+      profile: genetic support, not measured PlaM1 turnover or isolated-protein sufficiency.'
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.4.1.3; printed page 45.
+      snippet: die Komplementierung war also erfolgreich.
+  - subject: plam1
+    predicate: is_proposed_to_catalyze
+    object: function
+    notes: Demethylated glycoside, rescue and whole-cell feeding support late sugar
+      methylation, including proposed PL CD1-to-D conversion. The thesis shows neither
+      purified PlaM1 conversion, an experimentally established methyl donor, nor direct
+      PlaM1 CD1-to-A turnover.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/2280
+      evidence_type: CURATOR_INFERENCE
+      notes: Sections 3.4.1.5, 3.4.1.7, 3.4.3.6 and 4.3(E); printed pages 49-50, 63-64,
+        84.
+curation_history:
+- timestamp: '2026-10-04T02:16:47Z'
+  curator: codex
+  action: GRAPH_COMPONENT_MIGRATED
+  changes: Lossless migration of graph phenalinolactone-a-plam1-genetics-and-inferred-function
+    from data/natural_products/unclassified/phenalinolactone-a.yaml at aa0e38c4ac899ca5534b4ce02318c019fc44db29.
+    Prior claim curation history remains on the owning record; graph content and evidence
+    are unchanged.
+  llm_assisted: true

@@ -1,0 +1,503 @@
+record_id: CHEBI:7025
+standard_inchi_key: MINDHVHHQZYEEK-HBBNESRFSA-N
+graph:
+  graph_id: mupirocin-2020-priming-a-carrier-substitution-controls
+  scope: BIOSYNTHESIS
+  description: Ordinary acyl transfer in A-carrier substitutions is distinct from
+    productive D-carrier priming. Candidate owner CHEBI:7025 denotes exact pseudomonic
+    acid A, not the clinical mixture. Mixed-origin carrier/enzyme tests are methodological
+    cross-compatibility evidence, not native thiomarinol or complete mupirocin biosynthesis.
+    Supplement-only partial curation,not full-record sign-off.
+  nodes:
+  - node_id: mup_cluster
+    label: Native NCIMB 10586 mupirocin locus
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000182
+  - node_id: tml_cluster
+    label: Native SANK 73390 thiomarinol locus
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0001115
+  - node_id: MacpA
+    label: Native MacpA sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL70
+  - node_id: MacpA_prep
+    label: Study holo-MacpA preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: TacpA
+    label: Native TacpA sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:CBK62742.1
+  - node_id: TacpA_prep
+    label: Study holo-TacpA preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: MupQ
+    label: Native MupQ sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL54
+  - node_id: MupQ_prep
+    label: Study MupQ preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: TmlQ
+    label: Native TmlQ sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:CBK62721.1
+  - node_id: TmlQ_prep
+    label: Study TmlQ preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: malonyl
+    label: Supplied malonyl-CoA
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: succinyl
+    label: Supplied succinyl-CoA
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: MacpA_malonyl
+    label: MacpA/MupQ carrier-substitution assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: MacpA_malonyl_readout
+    label: Ppant readout assigned to malonyl-MacpA
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: MacpA_malonyl_acetyl
+    label: Acetyl-Ppant ion in MacpA malonyl assay
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: MacpA_succinyl
+    label: MacpA/TmlQ carrier-substitution assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: MacpA_succinyl_readout
+    label: Ppant readout assigned to succinyl-MacpA
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: TacpA_malonyl
+    label: TacpA/MupQ carrier-substitution assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: TacpA_malonyl_readout
+    label: Ppant readout assigned to malonyl-TacpA
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: TacpA_malonyl_acetyl
+    label: Acetyl-Ppant ion in TacpA malonyl assay
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: TacpA_succinyl
+    label: TacpA/TmlQ carrier-substitution assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: TacpA_succinyl_readout
+    label: Ppant readout assigned to succinyl-TacpA
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: mup_cluster
+    predicate: encodes_native_reference
+    object: MacpA
+    notes: AF318063.3 CDS41870..42175(+),1-based inclusive; AAM12915.1,101aa; native
+      NCIMB 10586,taxon294. Exact CDS-aware table11 translation/GenPept/current UniProt
+      match; current entry unreviewed,sequenceversion1. Native identity is not complete
+      engineered assay-preparation identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12915.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL70
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and source-identity audit.
+      retrieved_on: '2026-10-06'
+  - subject: MacpA
+    predicate: is_native_sequence_reference_for
+    object: MacpA_prep
+    notes: 'TableS1 body: native body matches exactly; N-terminal tag remains engineered.
+      Reported N-terminal extension: MAHHHHHHSSGLEVLFQGP. Apo characterization and
+      holo/acylated reaction states are distinct. No native untagged proteoform asserted.'
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher-deposited supplement, TableS1,pages15-16; FiguresS3-S4,pages6-7,
+        text and rendered page inspected. Main article was inaccessible; no complete
+        main-method or laboratory-stock identity claim. No numerical kinetics or native
+        full-pathway reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: tml_cluster
+    predicate: encodes_native_reference
+    object: TacpA
+    notes: FN689524.1 CDS81681..81962(+),1-based inclusive; CBK62742.1,93aa; native
+      SANK 73390,taxon747457,plasmid pTML1. Exact CDS-aware table11 translation/GenPept/UniParc
+      sequence match. Legacy UniProt accession is deleted and not selected. Native
+      identity is not complete engineered assay-preparation identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBK62742.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBK62742.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and source-identity audit.
+      retrieved_on: '2026-10-06'
+  - subject: TacpA
+    predicate: is_native_sequence_reference_for
+    object: TacpA_prep
+    notes: 'TableS1 body: native body matches exactly; N-terminal tag remains engineered.
+      Reported N-terminal extension: MAHHHHHHSSGLEVLFQGP. Apo characterization and
+      holo/acylated reaction states are distinct. No native untagged proteoform asserted.'
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher-deposited supplement, TableS1,pages15-16; FiguresS3-S4,pages6-7,
+        text and rendered page inspected. Main article was inaccessible; no complete
+        main-method or laboratory-stock identity claim. No numerical kinetics or native
+        full-pathway reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: mup_cluster
+    predicate: encodes_native_reference
+    object: MupQ
+    notes: AF318063.3 CDS60912..62267(+),1-based inclusive; AAM12931.1,451aa; native
+      NCIMB 10586,taxon294. Exact CDS-aware table11 translation/GenPept/current UniProt
+      match; current entry unreviewed,sequenceversion1. Native identity is not complete
+      engineered assay-preparation identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF318063.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAM12931.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL54
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and source-identity audit.
+      retrieved_on: '2026-10-06'
+  - subject: MupQ
+    predicate: is_native_sequence_reference_for
+    object: MupQ_prep
+    notes: 'TableS1 body: native body matches exactly; N-terminal tag remains engineered.
+      Reported N-terminal extension: MAHHHHHHSSGLEVLFQGP. No native untagged proteoform
+      asserted.'
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher-deposited supplement, TableS1,pages15-16; FiguresS3-S4,pages6-7,
+        text and rendered page inspected. Main article was inaccessible; no complete
+        main-method or laboratory-stock identity claim. No numerical kinetics or native
+        full-pathway reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: tml_cluster
+    predicate: encodes_native_reference
+    object: TmlQ
+    notes: FN689524.1 CDS14561..15898(-),1-based inclusive; CBK62721.1,445aa; native
+      SANK 73390,taxon747457,plasmid pTML1. Exact CDS-aware table11 translation/GenPept/UniParc
+      sequence match. Legacy UniProt accession is deleted and not selected. Native
+      identity is not complete engineered assay-preparation identity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FN689524.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS/source qualifiers.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBK62721.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact versioned native protein.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBK62721.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and source-identity audit.
+      retrieved_on: '2026-10-06'
+  - subject: TmlQ
+    predicate: is_native_sequence_reference_for
+    object: TmlQ_prep
+    notes: 'TableS1 body: native initiator M omitted from Table S1 body; Table S2
+      forward primer starts AAT. Reported N-terminal extension: AHHHHHHSSGLEVLFQGP.
+      FigureS4 reports poor-quality MS with an 11Da error; it is not exact mass confirmation.
+      No native untagged proteoform asserted.'
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Publisher-deposited supplement, TableS1,pages15-16; FiguresS3-S4,pages6-7;
+        TableS2,page17, text and rendered page inspected. Main article was inaccessible;
+        no complete main-method or laboratory-stock identity claim. No numerical kinetics
+        or native full-pathway reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: MacpA_prep
+    predicate: was_component_in
+    object: MacpA_malonyl
+    notes: The named ACP replaces the D-type carrier; complete ATP/concentration/time
+      recipe not imported.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS7A-D,page10, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: MupQ_prep
+    predicate: was_component_in
+    object: MacpA_malonyl
+    notes: The named ACP replaces the D-type carrier; complete ATP/concentration/time
+      recipe not imported.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS7A-D,page10, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: malonyl
+    predicate: was_component_in
+    object: MacpA_malonyl
+    notes: The named ACP replaces the D-type carrier; complete ATP/concentration/time
+      recipe not imported.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS7A-D,page10, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: MacpA_malonyl
+    predicate: yielded_reported_readout
+    object: MacpA_malonyl_readout
+    notes: Ppant ejection supports the ordinary acylated ACP assignment,not the D-carrier/CoA
+      bis-thioester. The authors interpret trans-thioesterification rather than productive
+      adenylation. No enzymatic catalysis by the added Q protein is established solely
+      from coexistence in this reaction.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS7A-D,page10, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: MacpA_malonyl
+    predicate: yielded_reported_readout
+    object: MacpA_malonyl_acetyl
+    notes: The source attributes this ion to decarboxylation during high-energy MS
+      and notes enzyme-free observations not shown. It is not evidence for a biosynthetic
+      decarboxylase reaction.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS7A-B,page10, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: MacpA_prep
+    predicate: was_component_in
+    object: MacpA_succinyl
+    notes: The named ACP replaces the D-type carrier; complete ATP/concentration/time
+      recipe not imported.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS7A-D,page10, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: TmlQ_prep
+    predicate: was_component_in
+    object: MacpA_succinyl
+    notes: The named ACP replaces the D-type carrier; complete ATP/concentration/time
+      recipe not imported.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS7A-D,page10, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: succinyl
+    predicate: was_component_in
+    object: MacpA_succinyl
+    notes: The named ACP replaces the D-type carrier; complete ATP/concentration/time
+      recipe not imported.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS7A-D,page10, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: MacpA_succinyl
+    predicate: yielded_reported_readout
+    object: MacpA_succinyl_readout
+    notes: Ppant ejection supports the ordinary acylated ACP assignment,not the D-carrier/CoA
+      bis-thioester. The authors interpret trans-thioesterification rather than productive
+      adenylation. No enzymatic catalysis by the added Q protein is established solely
+      from coexistence in this reaction.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS7A-D,page10, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: TacpA_prep
+    predicate: was_component_in
+    object: TacpA_malonyl
+    notes: The named ACP replaces the D-type carrier; complete ATP/concentration/time
+      recipe not imported.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS7A-D,page10, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: MupQ_prep
+    predicate: was_component_in
+    object: TacpA_malonyl
+    notes: The named ACP replaces the D-type carrier; complete ATP/concentration/time
+      recipe not imported.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS7A-D,page10, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: malonyl
+    predicate: was_component_in
+    object: TacpA_malonyl
+    notes: The named ACP replaces the D-type carrier; complete ATP/concentration/time
+      recipe not imported.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS7A-D,page10, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: TacpA_malonyl
+    predicate: yielded_reported_readout
+    object: TacpA_malonyl_readout
+    notes: Ppant ejection supports the ordinary acylated ACP assignment,not the D-carrier/CoA
+      bis-thioester. The authors interpret trans-thioesterification rather than productive
+      adenylation. No enzymatic catalysis by the added Q protein is established solely
+      from coexistence in this reaction.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS7A-D,page10, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: TacpA_malonyl
+    predicate: yielded_reported_readout
+    object: TacpA_malonyl_acetyl
+    notes: The source attributes this ion to decarboxylation during high-energy MS
+      and notes enzyme-free observations not shown. It is not evidence for a biosynthetic
+      decarboxylase reaction.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS7A-B,page10, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: TacpA_prep
+    predicate: was_component_in
+    object: TacpA_succinyl
+    notes: The named ACP replaces the D-type carrier; complete ATP/concentration/time
+      recipe not imported.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS7A-D,page10, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: TmlQ_prep
+    predicate: was_component_in
+    object: TacpA_succinyl
+    notes: The named ACP replaces the D-type carrier; complete ATP/concentration/time
+      recipe not imported.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS7A-D,page10, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: succinyl
+    predicate: was_component_in
+    object: TacpA_succinyl
+    notes: The named ACP replaces the D-type carrier; complete ATP/concentration/time
+      recipe not imported.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS7A-D,page10, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+  - subject: TacpA_succinyl
+    predicate: yielded_reported_readout
+    object: TacpA_succinyl_readout
+    notes: Ppant ejection supports the ordinary acylated ACP assignment,not the D-carrier/CoA
+      bis-thioester. The authors interpret trans-thioesterification rather than productive
+      adenylation. No enzymatic catalysis by the added Q protein is established solely
+      from coexistence in this reaction.
+    evidence:
+    - reference: DOI:10.1021/acschembio.9b00969.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Publisher-deposited supplement, FigureS7A-D,page10, text and rendered
+        page inspected. Main article was inaccessible; no complete main-method or
+        laboratory-stock identity claim. No numerical kinetics or native full-pathway
+        reconstitution asserted.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T06:29:40Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component for CHEBI:7025,owner baseline commit afe1136aab9e132b8440579b27f44e19b9f79fc9;
+    no migration or alteration of prior components. Ordinary acyl transfer in A-carrier
+    substitutions is distinct from productive D-carrier priming. Candidate owner CHEBI:7025
+    denotes exact pseudomonic acid A, not the clinical mixture. Mixed-origin carrier/enzyme
+    tests are methodological cross-compatibility evidence, not native thiomarinol
+    or complete mupirocin biosynthesis. Supplement-only partial curation,not full-record
+    sign-off. Every edge cites the publisher supplement DOI10.1021/acschembio.9b00969.s001
+    or official native-sequence URLs. Relevant rendered supplement pages inspected;
+    main article inaccessible/unread. Native references do not identify complete assay
+    stocks. Author-agent issue#601 addressed,not independent approval or full-record
+    sign-off.
+  llm_assisted: true

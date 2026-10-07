@@ -74,6 +74,103 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: colletochlorin-d-ctc2-database-chlorination
+  scope: BIOSYNTHESIS
+  description: MITE-asserted CTC2 Colletorin D chlorination yielding the exact Colletochlorin
+    D owner structure. Native IMI349063 identity is verified against complete genomic
+    and independent protein records; UniProt supports identity, not an independent
+    FUNCTION claim. Both chemical participants match existing exact structures. Producer/BGC
+    grades and all source fields remain unchanged; not full-record sign-off.
+  nodes:
+  - node_id: enzyme_reference
+    label: CTC2 native IMI349063 reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A1B7YCJ8
+  - node_id: substrate
+    label: Colletorin D, exact linked structure
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: naturalproductmech:mibig-2459be6395
+  - node_id: reaction
+    label: MITE-reported Colletorin D chlorination
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: product
+    label: Colletochlorin D, exact owner structure
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: naturalproductmech:mibig-81ab14f848
+  edges:
+  - subject: enzyme_reference
+    predicate: is_database_reported_catalyst_of
+    object: reaction
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000364.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000364 version1, active, attributes Colletorin D chlorination to
+        CTC2, yielding Colletochlorin D. Its heterologous-expression code is not personally
+        inspected experimental data; the cited primary paper was inaccessible. No
+        construct, assay condition or measured activity is adopted.
+      snippet: Chlorination of Colletorin D
+    - reference: https://www.uniprot.org/uniprotkb/A0A1B7YCJ8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Unreviewed TrEMBL entry31, sequence1, 509 residues, CH63R_05468, taxon759273.
+        There is no FUNCTION annotation; protein existence is inferred from homology
+        and the record flags WGS-derived preliminary sequence data. The RadH-like
+        submission name and flavin-halogenase family annotation are not a separately
+        inspected compound assay.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/OBR09776.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: 'Full conceptual translation and independent coded_by inspected: CH63R_05468,
+        Colletotrichum higginsianum strain IMI349063/taxon759273. Source collection
+        metadata do not establish historical assay-stock identity.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LTAN01000004.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: 'Complete1530-nt/five-exon plus-strand CDS, default table1: join(389265..389395,389456..389538,389711..390136,390197..390736,390810..391159).
+        Full translation equals the annotation, independent OBR09776.1 and current
+        UniProt509aa; independent coded_by coordinates/DNA match. This proves a native
+        genomic reference, not a historical transcript, expression construct or assay-stock
+        sequence.'
+    notes: MITE supplies the functional attribution; sequence records establish identity
+      only. Genome/BGC correspondence does not upgrade BGC_CORRELATED producer or
+      CLUSTER_CORRELATED locus evidence. No native cofactor state, predicted domain-site
+      function, physiological complex, rate or knockout is asserted.
+  - subject: substrate
+    predicate: is_database_reported_substrate_of
+    object: reaction
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000364.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000364 version1, active, attributes Colletorin D chlorination to
+        CTC2, yielding Colletochlorin D. Its heterologous-expression code is not personally
+        inspected experimental data; the cited primary paper was inaccessible. No
+        construct, assay condition or measured activity is adopted.
+    notes: Pinned MITE example substrate matches the linked owner's full Standard
+      InChIKey and complete stereochemical status using the repository structure helper
+      and RDKit2026.03.5. No additional precursor-generation step is inferred.
+  - subject: reaction
+    predicate: has_database_reported_product
+    object: product
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000364.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000364 version1, active, attributes Colletorin D chlorination to
+        CTC2, yielding Colletochlorin D. Its heterologous-expression code is not personally
+        inspected experimental data; the cited primary paper was inaccessible. No
+        construct, assay condition or measured activity is adopted.
+    notes: Pinned MITE example product matches the exact owner's full Standard InChIKey
+      and complete stereochemical status using the repository helper and RDKit2026.03.5.
+      The intermediate flag is not proof of pathway finality. No B-congener or additional
+      downstream step is adopted; source fields, separate occurrences and all evidence
+      grades are preserved.
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -83,3 +180,17 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-07T05:06:11Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added CTC2 biosynthesis context: four nodes and three MITE-database-asserted
+    functional edges with stable URLs. UniProtKB:A0A1B7YCJ8 native IMI349063 reference
+    is verified against the complete1530-nt/five-exon plus-strand CDS on LTAN01000004.1,
+    independent OBR09776.1 and UniProt509aa. TrEMBL has no FUNCTION annotation and
+    remains identity evidence only. Both chemical participants match existing full-key/stereo
+    owner structures; one exact four-word snippet retained. Primary experiments were
+    inaccessible. No B-congener, historical construct/stock/transcript, physiological
+    complex, cofactor, site, rate, knockout or extra pathway-step claim adopted. Preserved
+    BGC_CORRELATED/CLUSTER_CORRELATED grades, structure, all source fields, SEEDED
+    status and history. Not full-record sign-off.'
+  llm_assisted: true

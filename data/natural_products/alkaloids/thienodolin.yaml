@@ -106,6 +106,106 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-6f0066322e
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: thienodolin-thdd-database-amidation
+  scope: BIOSYNTHESIS
+  description: MITE-asserted ThdD amidation yielding thienodolin. The native Streptomyces
+    albogriseolus MJ286-76F7 reference is verified independently; current UniProt
+    supports identity, not a compound-specific activity assertion. Its automated AsnB
+    annotation is not adopted as thienodolin chemistry. No ThnA experiment, pathway
+    finality or source-grade upgrade is inferred; not full-record sign-off.
+  nodes:
+  - node_id: thdd_reference
+    label: ThdD native MJ286-76F7 reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:M1MEQ9
+  - node_id: acid_substrate
+    label: 6-Chlorothieno[2,3-b]indole-2-carboxylic acid, database substrate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: amidation
+    label: MITE-reported ThdD carboxylic-acid amidation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: thienodolin
+    label: thienodolin
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:9543
+  edges:
+  - subject: thdd_reference
+    predicate: is_database_reported_catalyst_of
+    object: amidation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000431.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: 'MITE0000431 version 1, active, assigns conversion of 6-chlorothieno[2,3-b]indole-2-carboxylic
+        acid to thienodolin to ThdD, described as a ThnA homolog. Its heterologous,
+        in-vitro and knockout codes remain database assertions: the cited primary
+        papers were inaccessible. No ThnA assay is transferred to this ThdD reference.'
+      snippet: catalyzes the amidation of the carboxylic acid
+    - reference: https://www.uniprot.org/uniprotkb/M1MEQ9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Current unreviewed TrEMBL entry 39, sequence 1, 605 residues, thdD, taxon1887,
+        cross-links KU569241/ANW12109.1 and names strain MJ286-76F7 in sequence references.
+        No FUNCTION annotation; protein existence is inferred from homology. Automated
+        ARBA asparagine-synthase name, EC6.3.5.4 and RHEA12228 chemistry are not independent
+        thienodolin evidence.
+    - reference: https://www.uniprot.org/uniparc/UPI0002B76286
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE's UniParc identifier maps the exact605-residue sequence to active
+        M1MEQ9 and ANW12109.1. UniParc is not a UniProtKB accession. The retained
+        older AGF50180 reference was not independently reverified.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ANW12109.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: 'Full independent GenPept reference and coded_by inspected: amido transferase
+        thdD,605aa, S.albogriseolus MJ286-76F7/taxon1887.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KU569241.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Complete1818-nt plus-strand single CDS3758..5575, codon1/table11. Full
+        translation equals the CDS annotation, independent ANW12109.1, UniParc and
+        current M1MEQ9, all605aa. Independent coded_by coordinates and DNA match;
+        genomic/source qualifiers identify MJ286-76F7/taxon1887. This verifies a native
+        reference, not historical assay-stock, transcript or construct identity.
+    notes: MITE supplies functional attribution; independent sequence deposits establish
+      identity only. No native assay, rate, knockout phenotype, AsnB reaction, predicted
+      site, cofactor state or physiological complex is adopted. Producer and cluster
+      grades remain SOURCE_ASSERTION/CLUSTER_UNSTATED.
+  - subject: acid_substrate
+    predicate: is_database_reported_substrate_of
+    object: amidation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000431.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: 'MITE0000431 version 1, active, assigns conversion of 6-chlorothieno[2,3-b]indole-2-carboxylic
+        acid to thienodolin to ThdD, described as a ThnA homolog. Its heterologous,
+        in-vitro and knockout codes remain database assertions: the cited primary
+        papers were inaccessible. No ThnA assay is transferred to this ThdD reference.'
+    notes: MITE names and encodes the acid substrate; no external substrate identifier
+      or upstream pathway is inferred. Its atom-mapped SMARTS is not executed or adopted
+      as a transformation rule; this graph uses the explicit example.
+  - subject: amidation
+    predicate: has_database_reported_product
+    object: thienodolin
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000431.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: 'MITE0000431 version 1, active, assigns conversion of 6-chlorothieno[2,3-b]indole-2-carboxylic
+        acid to thienodolin to ThdD, described as a ThnA homolog. Its heterologous,
+        in-vitro and knockout codes remain database assertions: the cited primary
+        papers were inaccessible. No ThnA assay is transferred to this ThdD reference.'
+    notes: The pinned MITE example product matches owner full InChIKey LREDECYEGMWOAR-UHFFFAOYSA-N
+      and complete stereo in the retained repository-helper/RDKit2026.03.5 screen.
+      No pathway finality, ThnA experiment or producer-grade upgrade is inferred.
+      Existing occurrences, source fields and history remain unchanged.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -115,3 +215,19 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-07T06:33:14Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added a MITE-database-asserted ThdD biosynthesis context: four nodes,
+    three qualified functional edges with stable URLs and one exact seven-word snippet.
+    Current UniProtKB:M1MEQ9 is verified as the native MJ286-76F7 reference by full1818-nt/table11
+    CDS3758..5575 on KU569241.1, independent ANW12109.1 and UniParc UPI0002B76286,
+    all605residues. Current TrEMBL has no FUNCTION annotation; automated AsnB activity/name
+    and predicted sites are not adopted as compound-specific evidence. Primary papers
+    were inaccessible; no ThnA assay is transferred. Pinned MITE example product matches
+    exact owner full key/stereo; substrate remains ungrounded. No native assay, historical
+    stock/construct/transcript identity, rate, knockout phenotype, cofactor, physical
+    complex, upstream step or pathway finality claim adopted. Preserved SOURCE_ASSERTION/CLUSTER_UNSTATED
+    grades, all source fields/occurrences, SEEDED status and append-only history.
+    Not full-record sign-off.'
+  llm_assisted: true

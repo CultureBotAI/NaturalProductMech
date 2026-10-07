@@ -24,6 +24,10 @@
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">antibacterial</span></p>
+<details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/alkaloids/pyoluteorin.yaml">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
 <p>A member of the class of resorcinols that is resorcinol in which the hydrogen at position 2 is replaced by a 4,5-dichloro-1H-pyrrole-2-carbonyl group. It is a natural product found in Pseudomonas fluorescens which exhibits antibacterial properties and is a strong inducer of caspase-3-dependent apoptosis.</p>
 <h2>Structure</h2>
 <div class="scroll"><table>
@@ -59,7 +63,7 @@ same claim.</p>
 </tr>
 </table></div>
 
-<h2>Occurrences <span class="tag">9</span></h2>
+<h2 id="occurrences">Occurrences <span class="tag">9</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
 <div class="scroll"><table>
@@ -111,7 +115,7 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 </tr>
 </table></div>
 
-<h2>Biosynthetic gene clusters <span class="tag">2</span></h2>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">2</span></h2>
 <div class="scroll"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
@@ -134,12 +138,427 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 7 edges</span></h2>
+<p class="sub">Native pyoluteorin-pathway protein references and engineered participants in the deposited 6O6E inhibitor-trapped assembly. Current model3.2, not an unmodified native complex, full assay stock, physiological stoichiometry, kinetic measurement or complete pyoluteorin synthesis. No antimicrobial-target assertion or source-producer upgrade. Associated paper/SI unread; evidence here is the independently inspected structural dataset and native sequence records. Not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Pf-5 reference pyoluteorin locus</td>
+  <td>encodes_native_reference</td>
+  <td>PltF native sequence reference (Pf-5)</td>
+  <td>AF081920.3 CDS 20417..21913(+), 1-based inclusive; AAD24881.1, 498 aa. CDS-aware table-11 translation exactly matches independently retrieved GenPept and current UniProt sequence version 1. Native source Pf-5/taxon220664, not the distinct M18 BGC0000128 source. These are native references, not the full engineered chains or complete assay stocks.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAD24881.1<br>https://www.uniprot.org/uniprotkb/Q4KCY5</td>
+</tr>
+<tr>
+  <td>Engineered PltF construct in 6O6E author chain B</td>
+  <td>has_native_sequence_reference</td>
+  <td>PltF native sequence reference (Pf-5)</td>
+  <td>Author chain B / label chain A contains all 498 native PltF residues followed by KLAAALEHHHHHHHH, giving a 513-residue deposited sequence. The 15-residue extension is C-terminal, not N-terminal.</td>
+  <td class="mono">https://data.rcsb.org/rest/v1/core/polymer_entity/6O6E/1</td>
+</tr>
+<tr>
+  <td>Engineered PltF construct in 6O6E author chain B</td>
+  <td>is_member_of_deposited_trapped_assembly</td>
+  <td>6O6E engineered inhibitor-trapped PltF/PltL assembly</td>
+  <td>Assembly1 is author/PISA-defined and contains one PltF and one PltL polymer instance. Source Pf-5/taxon220664; expression host E. coli BL21/taxon511693. Expression is not evidence that BL21 produces pyoluteorin. Deposited engineered 1:1 assembly is not a physiological stoichiometry or native stable-complex claim.</td>
+  <td class="mono">https://data.rcsb.org/rest/v1/core/assembly/6O6E/1<br>https://data.rcsb.org/rest/v1/core/entry/6O6E</td>
+</tr>
+<tr>
+  <td>Pf-5 reference pyoluteorin locus</td>
+  <td>encodes_native_reference</td>
+  <td>PltL native sequence reference (Pf-5)</td>
+  <td>AF081920.3 CDS 3180..3446(+), 1-based inclusive; AAD24885.1, 88 aa. CDS-aware table-11 translation exactly matches independently retrieved GenPept and current UniProt sequence version 2. Native source Pf-5/taxon220664, not the distinct M18 BGC0000128 source. These are native references, not the full engineered chains or complete assay stocks.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAD24885.1<br>https://www.uniprot.org/uniprotkb/Q4KCZ1</td>
+</tr>
+<tr>
+  <td>Engineered PltL construct in 6O6E author chain E</td>
+  <td>has_native_sequence_reference</td>
+  <td>PltL native sequence reference (Pf-5)</td>
+  <td>Author chain E / label chain B contains native PltL residues 1-86 followed by SALEHHHHHH, giving a 96-residue deposited sequence. Native residues 87-88 (CA) are not retained. Do not infer an intentional C87S mutation or a complete native 88-residue protein from the database mutation-count field. Native sequence version2 was updated in 2011; historical 2002/2005 assay stocks were not identified.</td>
+  <td class="mono">https://data.rcsb.org/rest/v1/core/polymer_entity/6O6E/2</td>
+</tr>
+<tr>
+  <td>Engineered PltL construct in 6O6E author chain E</td>
+  <td>is_member_of_deposited_trapped_assembly</td>
+  <td>6O6E engineered inhibitor-trapped PltF/PltL assembly</td>
+  <td>Assembly1 is author/PISA-defined and contains one PltF and one PltL polymer instance. Source Pf-5/taxon220664; expression host E. coli BL21/taxon511693. Expression is not evidence that BL21 produces pyoluteorin. Deposited engineered 1:1 assembly is not a physiological stoichiometry or native stable-complex claim.</td>
+  <td class="mono">https://data.rcsb.org/rest/v1/core/assembly/6O6E/1<br>https://data.rcsb.org/rest/v1/core/entry/6O6E</td>
+</tr>
+<tr>
+  <td>Current deposited I5M phosphopantetheine-inhibitor component</td>
+  <td>is_deposited_covalently_attached_to</td>
+  <td>Engineered PltL construct in 6O6E author chain E</td>
+  <td>The sole mmCIF struct_conn covalent row joins PltL Ser42 OG (label chain B, author chain E) to I5M phosphorus P (label chain S, author chain E residue801). The reported 1.533-A model distance agrees with coordinates. It is not a direct PltF-PltL covalent bond. I5M is an experimental probe component, not pyoluteorin or a native intermediate.</td>
+  <td class="mono">https://files.rcsb.org/download/6O6E.cif<br>https://data.rcsb.org/rest/v1/core/chemcomp/I5M</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">26 nodes, 32 edges</span></h2>
+<p class="sub">Eight named locus-disruption contexts from the inspected 1999 primary abstract, not eight purified enzyme assignments. Current native proteins and historical insertion backgrounds remain separate. Insertion type and complete stocks unresolved; polar effects not excluded. PltD is retained as a protein reference, not assigned demonstrated halogenation. No inferred pathway order, complete synthesis or source-producer grade upgrade. Full main text, figure images, tables and SI unread; no full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Pf-5 reference pyoluteorin locus</td>
+  <td>encodes_native_reference_example</td>
+  <td>PltA native sequence example (Pf-5)</td>
+  <td>AF081920.3 CDS 3460..4809(+), 1-based inclusive; AAD24884.1, 449 aa. CDS-aware table-11 translation matches independently retrieved GenPept and current UniProt. Native Pf-5/taxon220664 reference, not a verified historical experimental stock or an intact protein asserted present in a study mutant. M18 BGC0000128 is distinct.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAD24884.1<br>https://www.uniprot.org/uniprotkb/Q4KCZ0</td>
+</tr>
+<tr>
+  <td>Study pltA insertional disruption (lesion unresolved)</td>
+  <td>affects_coding_locus_of</td>
+  <td>PltA native sequence example (Pf-5)</td>
+  <td>Gene-name correspondence only; native reference sequence is not the mutant genotype. An insertion phenotype does not establish isolated protein catalysis or exclude downstream polar effects.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Study pltA insertional disruption (lesion unresolved)</td>
+  <td>was_present_in</td>
+  <td>Study Pf-5 pltA insertion-mutant context</td>
+  <td>The abstract groups Tn5, Tn3-nice and kanamycin-resistance insertions; no element, insertion position, orientation, strain number or number of alleles is assigned to this locus here.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Study Pf-5 pltA insertion-mutant context</td>
+  <td>was_reported_to_lose</td>
+  <td>Study pyoluteorin production readout</td>
+  <td>Bounded reported production loss, not a measured zero or a universal gene requirement. No direct substrate-to-product step, rescue, stoichiometry or functional PltD halogenase inferred.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Pf-5 reference pyoluteorin locus</td>
+  <td>encodes_native_reference_example</td>
+  <td>PltB native sequence example (Pf-5)</td>
+  <td>AF081920.3 CDS 4842..12218(+), 1-based inclusive; AAC38075.1, 2458 aa. CDS-aware table-11 translation matches independently retrieved GenPept and current UniProt. Native Pf-5/taxon220664 reference, not a verified historical experimental stock or an intact protein asserted present in a study mutant. M18 BGC0000128 is distinct.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAC38075.1<br>https://www.uniprot.org/uniprotkb/Q4KCY9</td>
+</tr>
+<tr>
+  <td>Study pltB insertional disruption (lesion unresolved)</td>
+  <td>affects_coding_locus_of</td>
+  <td>PltB native sequence example (Pf-5)</td>
+  <td>Gene-name correspondence only; native reference sequence is not the mutant genotype. An insertion phenotype does not establish isolated protein catalysis or exclude downstream polar effects.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Study pltB insertional disruption (lesion unresolved)</td>
+  <td>was_present_in</td>
+  <td>Study Pf-5 pltB insertion-mutant context</td>
+  <td>The abstract groups Tn5, Tn3-nice and kanamycin-resistance insertions; no element, insertion position, orientation, strain number or number of alleles is assigned to this locus here.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Study Pf-5 pltB insertion-mutant context</td>
+  <td>was_reported_to_lose</td>
+  <td>Study pyoluteorin production readout</td>
+  <td>Bounded reported production loss, not a measured zero or a universal gene requirement. No direct substrate-to-product step, rescue, stoichiometry or functional PltD halogenase inferred.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Pf-5 reference pyoluteorin locus</td>
+  <td>encodes_native_reference_example</td>
+  <td>PltC native sequence example (Pf-5)</td>
+  <td>AF081920.3 CDS 12267..17591(+), 1-based inclusive; AAC38076.1, 1774 aa. CDS-aware table-11 translation matches independently retrieved GenPept and current UniProt. Native Pf-5/taxon220664 reference, not a verified historical experimental stock or an intact protein asserted present in a study mutant. M18 BGC0000128 is distinct.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAC38076.1<br>https://www.uniprot.org/uniprotkb/Q4KCY8</td>
+</tr>
+<tr>
+  <td>Study pltC insertional disruption (lesion unresolved)</td>
+  <td>affects_coding_locus_of</td>
+  <td>PltC native sequence example (Pf-5)</td>
+  <td>Gene-name correspondence only; native reference sequence is not the mutant genotype. An insertion phenotype does not establish isolated protein catalysis or exclude downstream polar effects.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Study pltC insertional disruption (lesion unresolved)</td>
+  <td>was_present_in</td>
+  <td>Study Pf-5 pltC insertion-mutant context</td>
+  <td>The abstract groups Tn5, Tn3-nice and kanamycin-resistance insertions; no element, insertion position, orientation, strain number or number of alleles is assigned to this locus here.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Study Pf-5 pltC insertion-mutant context</td>
+  <td>was_reported_to_lose</td>
+  <td>Study pyoluteorin production readout</td>
+  <td>Bounded reported production loss, not a measured zero or a universal gene requirement. No direct substrate-to-product step, rescue, stoichiometry or functional PltD halogenase inferred.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Pf-5 reference pyoluteorin locus</td>
+  <td>encodes_native_reference_example</td>
+  <td>PltD native sequence example (Pf-5)</td>
+  <td>AF081920.3 CDS 17642..19276(+), 1-based inclusive; AAD24878.1, 544 aa. CDS-aware table-11 translation matches independently retrieved GenPept and current UniProt. Native Pf-5/taxon220664 reference, not a verified historical experimental stock or an intact protein asserted present in a study mutant. M18 BGC0000128 is distinct.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAD24878.1<br>https://www.uniprot.org/uniprotkb/Q4KCY7</td>
+</tr>
+<tr>
+  <td>Study pltD insertional disruption (lesion unresolved)</td>
+  <td>affects_coding_locus_of</td>
+  <td>PltD native sequence example (Pf-5)</td>
+  <td>Gene-name correspondence only; native reference sequence is not the mutant genotype. An insertion phenotype does not establish isolated protein catalysis or exclude downstream polar effects.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Study pltD insertional disruption (lesion unresolved)</td>
+  <td>was_present_in</td>
+  <td>Study Pf-5 pltD insertion-mutant context</td>
+  <td>The abstract groups Tn5, Tn3-nice and kanamycin-resistance insertions; no element, insertion position, orientation, strain number or number of alleles is assigned to this locus here.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Study Pf-5 pltD insertion-mutant context</td>
+  <td>was_reported_to_lose</td>
+  <td>Study pyoluteorin production readout</td>
+  <td>Bounded reported production loss, not a measured zero or a universal gene requirement. No direct substrate-to-product step, rescue, stoichiometry or functional PltD halogenase inferred.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Pf-5 reference pyoluteorin locus</td>
+  <td>encodes_native_reference_example</td>
+  <td>PltE native sequence example (Pf-5)</td>
+  <td>AF081920.3 CDS 19278..20420(+), 1-based inclusive; AAD24879.1, 380 aa. CDS-aware table-11 translation matches independently retrieved GenPept and current UniProt. Native Pf-5/taxon220664 reference, not a verified historical experimental stock or an intact protein asserted present in a study mutant. M18 BGC0000128 is distinct.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAD24879.1<br>https://www.uniprot.org/uniprotkb/Q4KCY6</td>
+</tr>
+<tr>
+  <td>Study pltE insertional disruption (lesion unresolved)</td>
+  <td>affects_coding_locus_of</td>
+  <td>PltE native sequence example (Pf-5)</td>
+  <td>Gene-name correspondence only; native reference sequence is not the mutant genotype. An insertion phenotype does not establish isolated protein catalysis or exclude downstream polar effects.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Study pltE insertional disruption (lesion unresolved)</td>
+  <td>was_present_in</td>
+  <td>Study Pf-5 pltE insertion-mutant context</td>
+  <td>The abstract groups Tn5, Tn3-nice and kanamycin-resistance insertions; no element, insertion position, orientation, strain number or number of alleles is assigned to this locus here.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Study Pf-5 pltE insertion-mutant context</td>
+  <td>was_reported_to_lose</td>
+  <td>Study pyoluteorin production readout</td>
+  <td>Bounded reported production loss, not a measured zero or a universal gene requirement. No direct substrate-to-product step, rescue, stoichiometry or functional PltD halogenase inferred.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Pf-5 reference pyoluteorin locus</td>
+  <td>encodes_native_reference_example</td>
+  <td>PltF native sequence example (Pf-5)</td>
+  <td>AF081920.3 CDS 20417..21913(+), 1-based inclusive; AAD24881.1, 498 aa. CDS-aware table-11 translation matches independently retrieved GenPept and current UniProt. Native Pf-5/taxon220664 reference, not a verified historical experimental stock or an intact protein asserted present in a study mutant. M18 BGC0000128 is distinct.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAD24881.1<br>https://www.uniprot.org/uniprotkb/Q4KCY5</td>
+</tr>
+<tr>
+  <td>Study pltF insertional disruption (lesion unresolved)</td>
+  <td>affects_coding_locus_of</td>
+  <td>PltF native sequence example (Pf-5)</td>
+  <td>Gene-name correspondence only; native reference sequence is not the mutant genotype. An insertion phenotype does not establish isolated protein catalysis or exclude downstream polar effects.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Study pltF insertional disruption (lesion unresolved)</td>
+  <td>was_present_in</td>
+  <td>Study Pf-5 pltF insertion-mutant context</td>
+  <td>The abstract groups Tn5, Tn3-nice and kanamycin-resistance insertions; no element, insertion position, orientation, strain number or number of alleles is assigned to this locus here.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Study Pf-5 pltF insertion-mutant context</td>
+  <td>was_reported_to_lose</td>
+  <td>Study pyoluteorin production readout</td>
+  <td>Bounded reported production loss, not a measured zero or a universal gene requirement. No direct substrate-to-product step, rescue, stoichiometry or functional PltD halogenase inferred.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Pf-5 reference pyoluteorin locus</td>
+  <td>encodes_native_reference_example</td>
+  <td>PltG native sequence example (Pf-5)</td>
+  <td>AF081920.3 CDS 21917..22699(+), 1-based inclusive; AAD24880.1, 260 aa. CDS-aware table-11 translation matches independently retrieved GenPept and current UniProt. Native Pf-5/taxon220664 reference, not a verified historical experimental stock or an intact protein asserted present in a study mutant. M18 BGC0000128 is distinct.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAD24880.1<br>https://www.uniprot.org/uniprotkb/Q4KCY4</td>
+</tr>
+<tr>
+  <td>Study pltG insertional disruption (lesion unresolved)</td>
+  <td>affects_coding_locus_of</td>
+  <td>PltG native sequence example (Pf-5)</td>
+  <td>Gene-name correspondence only; native reference sequence is not the mutant genotype. An insertion phenotype does not establish isolated protein catalysis or exclude downstream polar effects.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Study pltG insertional disruption (lesion unresolved)</td>
+  <td>was_present_in</td>
+  <td>Study Pf-5 pltG insertion-mutant context</td>
+  <td>The abstract groups Tn5, Tn3-nice and kanamycin-resistance insertions; no element, insertion position, orientation, strain number or number of alleles is assigned to this locus here.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Study Pf-5 pltG insertion-mutant context</td>
+  <td>was_reported_to_lose</td>
+  <td>Study pyoluteorin production readout</td>
+  <td>Bounded reported production loss, not a measured zero or a universal gene requirement. No direct substrate-to-product step, rescue, stoichiometry or functional PltD halogenase inferred.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Pf-5 reference pyoluteorin locus</td>
+  <td>encodes_native_reference_example</td>
+  <td>PltM native sequence example (Pf-5)</td>
+  <td>AF081920.3 CDS 158..1666(-), 1-based inclusive; AAD24882.1, 502 aa. CDS-aware table-11 translation matches independently retrieved GenPept and current UniProt. Native Pf-5/taxon220664 reference, not a verified historical experimental stock or an intact protein asserted present in a study mutant. M18 BGC0000128 is distinct.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAD24882.1<br>https://www.uniprot.org/uniprotkb/Q4KCZ3</td>
+</tr>
+<tr>
+  <td>Study pltM insertional disruption (lesion unresolved)</td>
+  <td>affects_coding_locus_of</td>
+  <td>PltM native sequence example (Pf-5)</td>
+  <td>Gene-name correspondence only; native reference sequence is not the mutant genotype. An insertion phenotype does not establish isolated protein catalysis or exclude downstream polar effects.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Study pltM insertional disruption (lesion unresolved)</td>
+  <td>was_present_in</td>
+  <td>Study Pf-5 pltM insertion-mutant context</td>
+  <td>The abstract groups Tn5, Tn3-nice and kanamycin-resistance insertions; no element, insertion position, orientation, strain number or number of alleles is assigned to this locus here.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Study Pf-5 pltM insertion-mutant context</td>
+  <td>was_reported_to_lose</td>
+  <td>Study pyoluteorin production readout</td>
+  <td>Bounded reported production loss, not a measured zero or a universal gene requirement. No direct substrate-to-product step, rescue, stoichiometry or functional PltD halogenase inferred.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">10 nodes, 9 edges</span></h2>
+<p class="sub">Three reporter-fusion comparisons and the authors&#39; proposed regulatory interpretation from the inspected 1999 abstract. Native PltR, unresolved mutant allele and study backgrounds are distinct. Reporter readouts are not activities of the encoded biosynthetic enzymes. No direct DNA binding, signal identity, exact reporter stocks or quantitative fold change. Source-owned producer claims unchanged. Full main text, figure images, tables and SI unread; no full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Pf-5 reference pyoluteorin locus</td>
+  <td>encodes_native_reference_example</td>
+  <td>PltR native sequence example (Pf-5)</td>
+  <td>AF081920.3 CDS 1663..2694(-), 1-based inclusive; AAD24883.1, 343 aa. CDS-aware table-11 translation matches independently retrieved GenPept and current UniProt. Native Pf-5/taxon220664 reference, not a verified historical experimental stock or an intact protein asserted present in a study mutant. M18 BGC0000128 is distinct.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAD24883.1<br>https://www.uniprot.org/uniprotkb/Q4KCZ2</td>
+</tr>
+<tr>
+  <td>Study pltR mutant allele (lesion unresolved)</td>
+  <td>affects_coding_locus_of</td>
+  <td>PltR native sequence example (Pf-5)</td>
+  <td>Gene-name correspondence, not a sequence-resolved lesion, intact mutant protein or isolated-protein assay.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Study pltR mutant allele (lesion unresolved)</td>
+  <td>was_present_in</td>
+  <td>Study Pf-5 pltR-mutant reporter background</td>
+  <td>A pltR-mutant Pf-5 background is reported; exact stock and lesion unresolved.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Study Pf-5 reference reporter background</td>
+  <td>is_reference_background_for</td>
+  <td>Reported ice-nucleation reporter comparisons</td>
+  <td>Reference background for separate reporter-fusion comparisons, not a claim that one stock carries all three reporters.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Study Pf-5 pltR-mutant reporter background</td>
+  <td>is_perturbed_background_for</td>
+  <td>Reported ice-nucleation reporter comparisons</td>
+  <td>Perturbed background for the reported comparisons; no lesion-specific complementation or growth correction imported.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Reported ice-nucleation reporter comparisons</td>
+  <td>reported_lower_activity_in_pltR_mutant_for</td>
+  <td>pltB transcriptional-fusion ice-nucleation readout</td>
+  <td>Reporter-assessed transcriptional contrast relative to the Pf-5 reference background. No fold change, direct mRNA measurement, purified enzyme activity or direct PltR-DNA binding asserted.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Reported ice-nucleation reporter comparisons</td>
+  <td>reported_lower_activity_in_pltR_mutant_for</td>
+  <td>pltE transcriptional-fusion ice-nucleation readout</td>
+  <td>Reporter-assessed transcriptional contrast relative to the Pf-5 reference background. No fold change, direct mRNA measurement, purified enzyme activity or direct PltR-DNA binding asserted.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Reported ice-nucleation reporter comparisons</td>
+  <td>reported_lower_activity_in_pltR_mutant_for</td>
+  <td>pltF transcriptional-fusion ice-nucleation readout</td>
+  <td>Reporter-assessed transcriptional contrast relative to the Pf-5 reference background. No fold change, direct mRNA measurement, purified enzyme activity or direct PltR-DNA binding asserted.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+<tr>
+  <td>Reported ice-nucleation reporter comparisons</td>
+  <td>supports_proposed</td>
+  <td>Authors&#39; proposed PltR transcriptional activation</td>
+  <td>Author interpretation from genetics/reporters, not direct promoter occupancy, effector binding or a defined regulatory complex.</td>
+  <td class="mono">DOI:10.1128/JB.181.7.2166-2174.1999</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 8 edges</span></h2>
+<p class="sub">Two transport-associated reporter-insertion production phenotypes, bounded to the inspected 2005 abstract and named insertion contexts in PubMed figure captions. Native references and engineered alleles are distinct. No unique exporter, direct transport, defined transporter assembly, pathway order or antimicrobial resistance mechanism asserted. Source-owned producer/cluster grades unchanged. Main text, figure images, tables and SI unread; no full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Pf-5 reference pyoluteorin locus</td>
+  <td>encodes_native_reference_example</td>
+  <td>PltI native sequence example (Pf-5)</td>
+  <td>AF081920.3 CDS 23452..24465(+), 1-based inclusive; AAV66098.1, 337 aa. CDS-aware table-11 translation matches independent GenPept and current UniProt, unreviewed sequence version1, Pf-5/taxon220664. Native reference is not an intact protein asserted present in the reporter-insertion mutant.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAV66098.1<br>https://www.uniprot.org/uniprotkb/Q4KCY2</td>
+</tr>
+<tr>
+  <td>Study pltI::inaZ disruption (junctions unresolved)</td>
+  <td>affects_coding_locus_of</td>
+  <td>PltI native sequence example (Pf-5)</td>
+  <td>Gene-name correspondence only, not a sequence-resolved mutant protein or a direct transport assay. No isolated protein function inferred.</td>
+  <td class="mono">DOI:10.1128/AEM.71.11.6900-6909.2005</td>
+</tr>
+<tr>
+  <td>Study pltI::inaZ disruption (junctions unresolved)</td>
+  <td>was_present_in</td>
+  <td>Study Pf-5 pltI::inaZ production-assay culture</td>
+  <td>Reporter insertion rather than a clean deletion. Exact junctions and any downstream polar effects remain unresolved here.</td>
+  <td class="mono">DOI:10.1128/AEM.71.11.6900-6909.2005</td>
+</tr>
+<tr>
+  <td>Study Pf-5 pltI::inaZ production-assay culture</td>
+  <td>was_reported_to_reduce</td>
+  <td>Study pyoluteorin production readout</td>
+  <td>Reduced production in the study, not abolished production or a measured zero. The abstract does not establish an exclusive pyoluteorin exporter. This edge does not assign direct efflux, physical complex assembly, antimicrobial resistance or a biosynthetic substrate-to-product reaction.</td>
+  <td class="mono">DOI:10.1128/AEM.71.11.6900-6909.2005</td>
+</tr>
+<tr>
+  <td>Pf-5 reference pyoluteorin locus</td>
+  <td>encodes_native_reference_example</td>
+  <td>PltJ native sequence example (Pf-5)</td>
+  <td>AF081920.3 CDS 24462..26231(+), 1-based inclusive; AAV66099.1, 589 aa. CDS-aware table-11 translation matches independent GenPept and current UniProt, unreviewed sequence version1, Pf-5/taxon220664. Native reference is not an intact protein asserted present in the reporter-insertion mutant.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AF081920.3<br>https://www.ncbi.nlm.nih.gov/protein/AAV66099.1<br>https://www.uniprot.org/uniprotkb/Q4KCY1</td>
+</tr>
+<tr>
+  <td>Study pltJ::inaZ disruption (junctions unresolved)</td>
+  <td>affects_coding_locus_of</td>
+  <td>PltJ native sequence example (Pf-5)</td>
+  <td>Gene-name correspondence only, not a sequence-resolved mutant protein or a direct transport assay. No isolated protein function inferred.</td>
+  <td class="mono">DOI:10.1128/AEM.71.11.6900-6909.2005</td>
+</tr>
+<tr>
+  <td>Study pltJ::inaZ disruption (junctions unresolved)</td>
+  <td>was_present_in</td>
+  <td>Study Pf-5 pltJ::inaZ production-assay culture</td>
+  <td>Reporter insertion rather than a clean deletion. Exact junctions and any downstream polar effects remain unresolved here.</td>
+  <td class="mono">DOI:10.1128/AEM.71.11.6900-6909.2005</td>
+</tr>
+<tr>
+  <td>Study Pf-5 pltJ::inaZ production-assay culture</td>
+  <td>was_reported_to_reduce</td>
+  <td>Study pyoluteorin production readout</td>
+  <td>Reduced production in the study, not abolished production or a measured zero. The abstract does not establish an exclusive pyoluteorin exporter. This edge does not assign direct efflux, physical complex assembly, antimicrobial resistance or a biosynthetic substrate-to-product reaction.</td>
+  <td class="mono">DOI:10.1128/AEM.71.11.6900-6909.2005</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
 <h2>Elsewhere in the fleet</h2>
-<ul><li>AntibioticMech — <span class="mono">CHEBI:156453</span>
-    (same structure, same inchikey)</li>
+<ul><li>AntibioticMech — <a class="mono" href="https://culturebotai.github.io/AntibioticMech/pages/antibacterial/pyoluteorin.html">CHEBI:156453</a>    (same structure, same inchikey)</li>
 </ul>
 
 <h2>Open questions <span class="tag">1</span></h2>

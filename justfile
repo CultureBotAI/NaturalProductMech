@@ -206,7 +206,7 @@ worklist *args:
 
 # The exhaustive per-record checkpoint `curate-yaml-record` works from.
 review-queue *args:
-    uv run python scripts/curation_worklist.py --limit 0 {{args}}
+    uv run python scripts/curation_worklist.py --review-records --limit 0 {{args}}
 
 # Show the documents that WOULD be embedded, and their size distribution. Free.
 embed-dry:

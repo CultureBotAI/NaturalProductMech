@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 {% block title %}{{ r.label }} — NaturalProductMech{% endblock %}
+{% macro source_fields(value) -%}
+{% if value is mapping %}<dl>{% for key, item in value.items() %}<dt>{{ key|replace('_', ' ') }}</dt><dd>{{ source_fields(item) }}</dd>{% endfor %}</dl>
+{% elif value is sequence and value is not string %}<ul>{% for item in value %}<li>{{ source_fields(item) }}</li>{% endfor %}</ul>
+{% else %}{{ value }}{% endif %}
+{%- endmacro %}
 {% block content %}
 <h1>{{ r.label }}</h1>
 <p class="sub"><span class="mono">{{ r.identifier }}</span>
@@ -7,6 +12,11 @@
   <span class="tag">{{ r.curation_status }}</span>
   {% for value in r.bioactivity_summary %}<span class="tag">{{ value|lower|replace('_',' ') }}</span>{% endfor %}
 </p>
+{% if r.grounding_note %}<div class="note"><strong>Grounding review:</strong> {{ r.grounding_note }}</div>{% endif %}
+<details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/{{ r.record_path }}">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
 {% if r.definition %}<p>{{ r.definition }}</p>{% endif %}
 
 <h2>Structure</h2>
@@ -49,7 +59,7 @@ honest state — see the discussion below.{% else %}No source asserts that a nam
 organism makes this compound.{% endif %}</p>
 {% endif %}
 
-<h2>Occurrences <span class="tag">{{ r.occurrences|length }}</span></h2>
+<h2 id="occurrences">Occurrences <span class="tag">{{ r.occurrences|length }}</span></h2>
 {% if r.occurrences %}
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
@@ -71,7 +81,7 @@ The record caps what it carries so a curator can read it; the inventories in
 {% else %}<p class="sub">None cited.</p>{% endif %}
 
 {% if r.clusters %}
-<h2>Biosynthetic gene clusters <span class="tag">{{ r.clusters|length }}</span></h2>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">{{ r.clusters|length }}</span></h2>
 <div class="scroll"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 {% for c in r.clusters %}
@@ -148,10 +158,11 @@ by the corpus tests.</p>
 
 {% if r.bioactivities %}
 <h2>Bioactivities <span class="tag">{{ r.bioactivity_total }}</span></h2>
+<p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.{% if r.bioactivity_duplicates %} {{ r.bioactivity_duplicates }} identical imported entr{{ 'y was' if r.bioactivity_duplicates == 1 else 'ies were' }} collapsed for display only.{% endif %}</p>
 <div class="scroll"><table>
-<tr><th>Assay</th><th>Result</th><th>Reference</th></tr>
+<tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
 {% for b in r.bioactivities %}
-<tr><td>{{ b.assay }}</td><td>{{ b.result }}</td><td class="mono">{{ b.reference }}</td></tr>
+<tr><td>{{ b.assay }}</td><td>{{ b.result }}</td><td class="mono">{{ b.target }}</td><td><details><summary>{{ b.reference or 'Source fields' }}</summary>{{ source_fields(b.source) }}</details></td></tr>
 {% endfor %}
 </table></div>
 {% endif %}
@@ -159,7 +170,7 @@ by the corpus tests.</p>
 {% if r.related %}
 <h2>Elsewhere in the fleet</h2>
 <ul>{% for link in r.related %}
-<li>{{ link.corpus }} — <span class="mono">{{ link.identifier }}</span>
+<li>{{ link.corpus }} — {% if link.url %}<a class="mono" href="{{ link.url }}">{{ link.identifier }}</a>{% else %}<span class="mono">{{ link.identifier }}</span>{% endif %}
     ({{ link.relation|lower|replace('_',' ') }}, {{ link.basis|lower|replace('_',' ') }})</li>
 {% endfor %}</ul>
 {% endif %}

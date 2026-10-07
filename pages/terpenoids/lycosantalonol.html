@@ -24,6 +24,10 @@
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 </p>
+<div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/terpenoids/lycosantalonol.yaml">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
 
 <h2>Structure</h2>
 <div class="scroll"><table>
@@ -54,9 +58,9 @@ same claim.</p>
 </tr>
 </table></div>
 
-<h2>Occurrences <span class="tag">0</span></h2>
+<h2 id="occurrences">Occurrences <span class="tag">0</span></h2>
 <p class="sub">None cited.</p>
-<h2>Biosynthetic gene clusters <span class="tag">1</span></h2>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
 <div class="scroll"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
@@ -72,6 +76,172 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 10 edges</span></h2>
+<p class="sub">CPT2 evidence from a recombinant precursor-condensation assay and an engineered tomato comparison, kept distinct from native sequence identity and wild-type occurrence. K7WQ45 is a deliberate current native example, not an exact assay-stock assignment. No TPS21/CYP71BN1 reaction, physical complex, exact final-product stereochemistry or producer-grade upgrade is asserted. SEEDED status and source-owned classifications remain unchanged; this is not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Current tomato CPT2 native sequence example</td>
+  <td>is_native_sequence_example_for</td>
+  <td>Study recombinant CPT2 preparation lacking the first 51 residues</td>
+  <td>The full native reference is not the truncated, affinity-purified preparation. Spliced CDS translations from JX943884.1/AFW98426.1 and KC807995.1/AGK82801.1 independently equal the 314-residue UniProt sequence. Nucleotide source qualifiers establish species but not cultivar. The study describes deletion of residues1-51, not UniProt&#39;s predicted transit-peptide boundary1-61; exact insert, tag and experimental stock sequence remain unverified.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/K7WQ45<br>https://www.ncbi.nlm.nih.gov/nuccore/JX943884.1<br>https://www.ncbi.nlm.nih.gov/nuccore/KC807995.1<br>DOI:10.1371/journal.pone.0119302</td>
+</tr>
+<tr>
+  <td>Study recombinant CPT2 preparation lacking the first 51 residues</td>
+  <td>was_tested_as_catalyst_in</td>
+  <td>Recombinant CPT2 radiolabeled substrate-condensation assay</td>
+  <td>The recombinant protein was produced in E. coli and purified by nickel affinity. This is an in-vitro substrate-condensation experiment, not direct synthesis of lycosantalonol by CPT2 or a native plant multi-enzyme complex.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0119302</td>
+</tr>
+<tr>
+  <td>Assayed isopentenyl diphosphate</td>
+  <td>was_substrate_in</td>
+  <td>Recombinant CPT2 radiolabeled substrate-condensation assay</td>
+  <td>Radiolabeled IPP was used with zzFPP for the reported kinetic assessment. No binding constant, native cellular rate or exact-isomer yield is inferred.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0119302</td>
+</tr>
+<tr>
+  <td>Assayed Z,Z-farnesyl diphosphate</td>
+  <td>was_cosubstrate_in</td>
+  <td>Recombinant CPT2 radiolabeled substrate-condensation assay</td>
+  <td>The tested acceptor is Z,Z-farnesyl diphosphate, not E,E-farnesyl diphosphate. This supports the last condensation attributed to NNPP synthesis, not all earlier substrate preferences described from previous studies.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0119302</td>
+</tr>
+<tr>
+  <td>Recombinant CPT2 radiolabeled substrate-condensation assay</td>
+  <td>supported_source_assigned_formation_of</td>
+  <td>Source-assigned nerylneryl diphosphate product</td>
+  <td>The authors assign the zzFPP-plus-IPP step to NNPP formation. The reported readout hydrolyzes diphosphate groups and counts extracted radiolabel; this kinetic assay alone is not independent structural or stereochemical proof. No direct CPT2-to-lycosantalonol catalytic edge is asserted.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0119302</td>
+</tr>
+<tr>
+  <td>Current tomato CPT2 native sequence example</td>
+  <td>is_gene_product_example_for</td>
+  <td>CPT2 gene in the study 35S overexpression construct</td>
+  <td>The selected full-length native protein exemplifies the named CPT2 gene product. It is not an identifier for the gene construct, promoter, insertion site or cultivar-specific allele. Transgenic plants are explicitly MP1 in the study; that does not establish a cultivar for the native sequence deposit.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/K7WQ45<br>DOI:10.1371/journal.pone.0119302</td>
+</tr>
+<tr>
+  <td>CPT2 gene in the study 35S overexpression construct</td>
+  <td>was_used_for_overexpression_in</td>
+  <td>Selected CPT2-overexpressing tomato plants</td>
+  <td>The study uses first-generation 35S-CPT2 transgenic tomato plants. Three plants selected for high leaflet lycosantalene were examined by petiolule GC-MS; they are selected individuals, not an unbiased yield estimate for all lines or evidence that all plants accumulate the product.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0119302</td>
+</tr>
+<tr>
+  <td>Selected CPT2-overexpressing tomato plants</td>
+  <td>was_profiled_in</td>
+  <td>Petiolule-extract GC-MS comparison</td>
+  <td>Hexane extracts of whole petiolules from all three selected plants had source-assigned lycosantalonol peaks. Figure4 displays selected-ion traces and a standard comparison. In S2, peak4 from chromatogramD has a dominant m/z69 signal rather than the dominant m/z109 in B, C and standardE; the cause of that relative-pattern difference is unresolved. The source&#39;s three-plant assignment is retained, not independently confirmed for each plant or used as exact stereochemical proof. The tissue-ratio experiment in Table1 measured lycosantalene, not lycosantalonol.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0119302<br>DOI:10.1371/journal.pone.0119302.s002</td>
+</tr>
+<tr>
+  <td>Non-transformed tomato comparator</td>
+  <td>was_profiled_in</td>
+  <td>Petiolule-extract GC-MS comparison</td>
+  <td>The study did not detect lycosantalonol in non-transformed samples with the reported methods. This is bounded non-detection, not a demonstrated absence of natural synthesis or of undetected downstream derivatives.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0119302</td>
+</tr>
+<tr>
+  <td>Petiolule-extract GC-MS comparison</td>
+  <td>supports_cpt2_associated_detection_of</td>
+  <td>Source-assigned lycosantalonol in transgenic petiolules</td>
+  <td>CPT2 overexpression is associated with detection of source-assigned lycosantalonol in the engineered context. This does not establish CPT2 as its direct final-step catalyst, a unique rate-limiting step, an exact stereochemical assignment to this owner, or native wild-type production. TPS21 and CYP71BN1 chemistry is described partly from earlier work whose full evidence was not inspected; those reactions are not added here.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0119302</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">10 nodes, 12 edges</span></h2>
+<p class="sub">Transcript-level context for CPT2, TPS21 and CYP71BN1 in the lycosantalonol study, with native protein examples explicitly distinct from gene assays and historical alleles. Adds TPS21 and CYP71BN1 reference examples without asserting their reaction chemistry from incompletely inspected earlier work. Tissue-level RNA distributions are not protein abundance, single-cell localization, direct regulation or a physical complex. No source-grade, origin, stereochemistry or SEEDED-status upgrade; not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Current tomato CPT2 native protein example</td>
+  <td>is_gene_product_example_for</td>
+  <td>Study CPT2 gene assayed by transcript measurement</td>
+  <td>Deliberately selected species-matched native example, not the historical tissue allele. Complete spliced CDS translation equals AGK82801.1 and the 314-residue UniProt sequence. The S1 qRT-PCR primer pair has one correctly oriented exact match at spliced-CDS positions54..261, 1-based inclusive, among the11 annotated CDSs of KC807995.1. This bounded match is not genome-wide primer specificity, full experimental transcript sequencing or a measurement of protein abundance.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/K7WQ45<br>https://www.ncbi.nlm.nih.gov/nuccore/KC807995.1<br>DOI:10.1371/journal.pone.0119302.s006<br>DOI:10.1371/journal.pone.0119302</td>
+</tr>
+<tr>
+  <td>Current tomato TPS21 native protein example</td>
+  <td>is_gene_product_example_for</td>
+  <td>Study TPS21 gene assayed by transcript measurement</td>
+  <td>Deliberately selected species-matched native example, not the historical tissue allele. Complete spliced CDS translation equals AGK82800.1 and the 792-residue UniProt sequence. The S1 qRT-PCR primer pair has one correctly oriented exact match at spliced-CDS positions1454..1560, 1-based inclusive, among the11 annotated CDSs of KC807995.1. This bounded match is not genome-wide primer specificity, full experimental transcript sequencing or a measurement of protein abundance.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/R9R6P6<br>https://www.ncbi.nlm.nih.gov/nuccore/KC807995.1<br>DOI:10.1371/journal.pone.0119302.s006<br>DOI:10.1371/journal.pone.0119302</td>
+</tr>
+<tr>
+  <td>Current tomato CYP71BN1 native protein example</td>
+  <td>is_gene_product_example_for</td>
+  <td>Study CYP71BN1 gene assayed by transcript measurement</td>
+  <td>Deliberately selected species-matched native example, not the historical tissue allele. Complete spliced CDS translation equals AGK82807.1 and the 506-residue UniProt sequence. The S1 qRT-PCR primer pair has one correctly oriented exact match at spliced-CDS positions752..909, 1-based inclusive, among the11 annotated CDSs of KC807995.1. This bounded match is not genome-wide primer specificity, full experimental transcript sequencing or a measurement of protein abundance. K4CI56 is an unreviewed reference with Heinz1706 source metadata and generic Cytochrome P450-1/LOC101251011 annotation; exact CDS and primer correspondence, not the generic name, supports the CYP71BN1 example. No MP1 stock assignment.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/K4CI56<br>https://www.ncbi.nlm.nih.gov/nuccore/KC807995.1<br>DOI:10.1371/journal.pone.0119302.s006<br>DOI:10.1371/journal.pone.0119302</td>
+</tr>
+<tr>
+  <td>Study CPT2 gene assayed by transcript measurement</td>
+  <td>had_transcripts_measured_in</td>
+  <td>Study tissue and developmental-stage qRT-PCR comparison</td>
+  <td>qRT-PCR measured RNA across the study&#39;s tissue and developmental-stage panel. Methods describe EF-1a normalization and a standard-curve approach for cross-gene comparison; Figure2 has three biological replicates and three technical replicates. This does not identify a historical full-length allele or measure the corresponding protein, catalytic flux or cell-specific localization.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0119302</td>
+</tr>
+<tr>
+  <td>Study CPT2 gene assayed by transcript measurement</td>
+  <td>had_transcripts_measured_in</td>
+  <td>Study whole-petiolule and trichome-fraction qRT-PCR comparison</td>
+  <td>RNA was compared between whole petiolules, trichome-depleted petiolules and isolated trichomes. Figure3 has four biological replicates with three technical replicates each. These tissue fractions are not single-cell measurements, proof of fraction purity or direct evidence of a protein&#39;s location.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0119302</td>
+</tr>
+<tr>
+  <td>Study TPS21 gene assayed by transcript measurement</td>
+  <td>had_transcripts_measured_in</td>
+  <td>Study tissue and developmental-stage qRT-PCR comparison</td>
+  <td>qRT-PCR measured RNA across the study&#39;s tissue and developmental-stage panel. Methods describe EF-1a normalization and a standard-curve approach for cross-gene comparison; Figure2 has three biological replicates and three technical replicates. This does not identify a historical full-length allele or measure the corresponding protein, catalytic flux or cell-specific localization.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0119302</td>
+</tr>
+<tr>
+  <td>Study TPS21 gene assayed by transcript measurement</td>
+  <td>had_transcripts_measured_in</td>
+  <td>Study whole-petiolule and trichome-fraction qRT-PCR comparison</td>
+  <td>RNA was compared between whole petiolules, trichome-depleted petiolules and isolated trichomes. Figure3 has four biological replicates with three technical replicates each. These tissue fractions are not single-cell measurements, proof of fraction purity or direct evidence of a protein&#39;s location.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0119302</td>
+</tr>
+<tr>
+  <td>Study CYP71BN1 gene assayed by transcript measurement</td>
+  <td>had_transcripts_measured_in</td>
+  <td>Study tissue and developmental-stage qRT-PCR comparison</td>
+  <td>qRT-PCR measured RNA across the study&#39;s tissue and developmental-stage panel. Methods describe EF-1a normalization and a standard-curve approach for cross-gene comparison; Figure2 has three biological replicates and three technical replicates. This does not identify a historical full-length allele or measure the corresponding protein, catalytic flux or cell-specific localization.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0119302</td>
+</tr>
+<tr>
+  <td>Study CYP71BN1 gene assayed by transcript measurement</td>
+  <td>had_transcripts_measured_in</td>
+  <td>Study whole-petiolule and trichome-fraction qRT-PCR comparison</td>
+  <td>RNA was compared between whole petiolules, trichome-depleted petiolules and isolated trichomes. Figure3 has four biological replicates with three technical replicates each. These tissue fractions are not single-cell measurements, proof of fraction purity or direct evidence of a protein&#39;s location.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0119302</td>
+</tr>
+<tr>
+  <td>Study tissue and developmental-stage qRT-PCR comparison</td>
+  <td>supports_reported_transcript_pattern</td>
+  <td>Reported overlapping petiolule transcript distributions</td>
+  <td>The authors report the highest transcript levels for all three genes in young petiolules within the examined panel. TPS21 is broadly expressed across several tissues, unlike the more pronounced CPT2/CYP71BN1 petiolule pattern. Figure2 error bars overlap for some comparisons; no new significance test or exclusive tissue expression is asserted.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0119302</td>
+</tr>
+<tr>
+  <td>Study whole-petiolule and trichome-fraction qRT-PCR comparison</td>
+  <td>supports_reported_transcript_pattern</td>
+  <td>Reported overlapping petiolule transcript distributions</td>
+  <td>Normalized transcript levels are higher in trichome-depleted petiolules than in whole petiolules and lower in isolated trichomes. This supports the source&#39;s predominantly non-trichome transcript interpretation, not an absence from every trichome cell, protein localization, or evidence that one of the three genes regulates another.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0119302</td>
+</tr>
+<tr>
+  <td>Reported overlapping petiolule transcript distributions</td>
+  <td>provides_correlative_expression_context_for</td>
+  <td>Source-discussed lycosantalonol biosynthesis context</td>
+  <td>The transcript distributions provide context for the lycosantalonol pathway discussed in this paper. They do not establish direct TPS21/CYP71BN1 reactions, coordinated protein abundance, a physical complex, wild-type product detection, unique rate limitation or the owner&#39;s exact stereochemistry. This graph does not borrow reaction claims from earlier papers whose full evidence remains uninspected. The separate CPT2 intervention graph retains the engineered-product comparison; no cross-graph node edge is asserted.</td>
+  <td class="mono">DOI:10.1371/journal.pone.0119302</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

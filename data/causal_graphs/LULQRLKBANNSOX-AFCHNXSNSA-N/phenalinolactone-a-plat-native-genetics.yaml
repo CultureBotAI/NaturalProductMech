@@ -1,0 +1,233 @@
+record_id: naturalproductmech:mibig-e29f83c77b
+standard_inchi_key: LULQRLKBANNSOX-AFCHNXSNSA-N
+graph:
+  graph_id: phenalinolactone-a-plat-native-genetics
+  scope: BIOSYNTHESIS
+  description: Native Tu6071 disruption and rescue evidence for PlaT1-PlaT3 from Schnell
+    2007. Analytical cultures used NL111 medium at 28 C, with standard harvest near
+    168 h and HPLC/ESI-MS. These experiments establish production phenotypes, not
+    isolated enzyme reactions or a reaction order.
+  nodes:
+  - node_id: plat1
+    label: Native PlaT1 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:ABB69742.1
+  - node_id: plat2
+    label: Native PlaT2 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:ABB69743.1
+  - node_id: plat3
+    label: Native PlaT3 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:ABB69744.1
+  - node_id: production
+    label: Detectable phenalinolactone A and D production
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: mutant_plat1
+    label: Tu6071-derived XT1 internal PlaT1 gene lesion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: rescue_plat1
+    label: pS-25co genomic-fragment complementation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: mutant_plat2
+    label: Tu6071-derived XT2 internal PlaT2 gene lesion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: rescue_plat2
+    label: pS-26co genomic-fragment complementation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: mutant_plat3
+    label: Tu6071-derived XT3 internal PlaT3 gene lesion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: rescue_plat3
+    label: pS-27co genomic-fragment complementation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: mutant_plat1
+    predicate: inactivates_encoding_gene_of
+    object: plat1
+    notes: BamHI fill-in frameshift, not deletion; plasmid sequence-checked. Apramycin
+      sensitivity and PCR/BamHI identified double crossovers 7/8, not complete mutant-genome
+      sequencing.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.2.1.1 and 5.9.1; pages 44-47 and 151; Figures 3.8-3.9.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABB69742.1
+      evidence_type: DATABASE_ASSERTION
+      notes: 449 aa; complement(16422..17771) in DQ230532.1; Streptomyces sp. Tu6071,
+        taxon 355249. GenPept identifies the named native protein.
+      retrieved_on: '2026-10-03'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator comparison, not database assertion: GenBank/MIBiG BGC0000654.4
+        CDS translations match GenPept.'
+  - subject: mutant_plat1
+    predicate: abolishes_detectable
+    object: production
+    notes: Both double crossovers lacked detectable A/D or recognizable intermediates;
+      parallel wild type produced A/D. Sampling at 96, 120 and 144 h and chloroform
+      extraction also found no intermediates.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.2.1.2, page 47.
+  - subject: rescue_plat1
+    predicate: supplies_wild_type_encoding_gene_for
+    object: plat1
+    notes: 'ermE*-driven/pSET152-derived pS-25co rescue. Curator Co25-F/R alignment:
+      DQ230532.1:16385..17855; primer changes outside PlaT1, partial plaO1/plaT2 included.
+      Not isolated CDS.'
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 5.12-5.14; pages 154-160; Table 5.14, page 131.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS and flanking gene coordinates.
+      retrieved_on: '2026-10-03'
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator primer alignment, not a separately deposited rescue-plasmid sequence.
+  - subject: rescue_plat1
+    predicate: restores_detectable
+    object: production
+    notes: All three complemented cultures recovered A/D; PCR/restriction supported
+      the construct. Neither all off-target changes nor purified-enzyme sufficiency
+      is resolved.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.2.1.3, pages 47-48.
+      snippet: die Wildtyp-Produktion wiederhergestellt
+  - subject: mutant_plat2
+    predicate: inactivates_encoding_gene_of
+    object: plat2
+    notes: EcoNI fill-in frameshift, not whole-gene removal; plasmid sequence-checked.
+      Apramycin sensitivity and PCR/EcoNI identified double crossovers 3/4/5. The
+      preceding single crossover's mutant-only amplicon does not exclude its wild-type
+      allele.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.2.2.1 and 5.9.2; pages 48-50 and 151-152; Figures 3.10-3.11.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABB69743.1
+      evidence_type: DATABASE_ASSERTION
+      notes: 571 aa; complement(17768..19483) in DQ230532.1; Streptomyces sp. Tu6071,
+        taxon 355249. GenPept identifies the named native protein.
+      retrieved_on: '2026-10-03'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator comparison, not database assertion: GenBank/MIBiG BGC0000654.4
+        CDS translations match GenPept.'
+  - subject: mutant_plat2
+    predicate: abolishes_detectable
+    object: production
+    notes: Double crossovers 3/5 lacked detectable A/D or recognizable intermediates
+      unlike parallel wild type. Single-crossover CD6/CD7 may reflect plaO1 polarity,
+      not PlaT2 chemistry.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.2.2.2, pages 50-51.
+  - subject: rescue_plat2
+    predicate: supplies_wild_type_encoding_gene_for
+    object: plat2
+    notes: 'ermE*-driven/pSET152-derived pS-26co rescue. Curator 26co-F/R alignment:
+      DQ230532.1:17732..19513; primer changes outside PlaT2, partial plaT1/plaT3 included.
+      Not isolated CDS.'
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 5.12-5.14; pages 154-160; Table 5.14, page 131.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS and flanking gene coordinates.
+      retrieved_on: '2026-10-03'
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator primer alignment, not a separately deposited rescue-plasmid sequence.
+  - subject: rescue_plat2
+    predicate: restores_detectable
+    object: production
+    notes: 'All four complemented cultures recovered detectable A/D: genetic rescue,
+      not purified cyclase activity.'
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.2.2.3, page 51.
+  - subject: mutant_plat3
+    predicate: inactivates_encoding_gene_of
+    object: plat3
+    notes: Internal 223-bp BstEII deletion causes downstream frameshift, not whole-gene
+      removal; native cuts are 223 bp apart. Apramycin sensitivity and shorter PCR
+      versus cosmid identified the double crossover. Earlier single-crossover control
+      PCR failed.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.2.3.1 and 5.9.3; pages 52-53 and 152; Figure 3.12.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABB69744.1
+      evidence_type: DATABASE_ASSERTION
+      notes: 337 aa; complement(19499..20512) in DQ230532.1; Streptomyces sp. Tu6071,
+        taxon 355249. GenPept identifies the named native protein.
+      retrieved_on: '2026-10-03'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator comparison, not database assertion: GenBank/MIBiG BGC0000654.4
+        CDS translations match GenPept.'
+  - subject: mutant_plat3
+    predicate: abolishes_detectable
+    object: production
+    notes: Double-crossover ethyl-acetate/chloroform extracts lacked detectable A/D
+      or recognizable intermediates; the single crossover retained low A/D. These
+      are detection-limited culture observations.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.2.3.2, page 53.
+  - subject: rescue_plat3
+    predicate: supplies_wild_type_encoding_gene_for
+    object: plat3
+    notes: 'ermE*-driven/pSET152-derived pS-27co rescue. Curator Co27-F/R alignment:
+      DQ230532.1:19411..20594; primer changes outside PlaT3, partial plaT2/plaH included.
+      Not isolated CDS.'
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 5.12-5.14; pages 154-160; Table 5.14, page 131.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS and flanking gene coordinates.
+      retrieved_on: '2026-10-03'
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator primer alignment, not a separately deposited rescue-plasmid sequence.
+  - subject: rescue_plat3
+    predicate: restores_detectable
+    object: production
+    notes: All three complemented clones recovered A/D, reported slightly above wild
+      type without numerical fold change. PCR supported intact introduced gene; not
+      direct prenyltransferase activity.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.2.3.3, page 54; Figure 3.13.
+curation_history:
+- timestamp: '2026-10-04T02:16:47Z'
+  curator: codex
+  action: GRAPH_COMPONENT_MIGRATED
+  changes: Lossless migration of graph phenalinolactone-a-plat-native-genetics from
+    data/natural_products/unclassified/phenalinolactone-a.yaml at aa0e38c4ac899ca5534b4ce02318c019fc44db29.
+    Prior claim curation history remains on the owning record; graph content and evidence
+    are unchanged.
+  llm_assisted: true

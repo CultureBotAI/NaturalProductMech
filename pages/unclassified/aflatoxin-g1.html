@@ -24,6 +24,10 @@
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 <span class="tag">toxin</span></p>
+<div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/unclassified/aflatoxin-g1.yaml">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
 
 <h2>Structure</h2>
 <div class="scroll"><table>
@@ -65,7 +69,7 @@ same claim.</p>
 </tr>
 </table></div>
 
-<h2>Occurrences <span class="tag">2</span></h2>
+<h2 id="occurrences">Occurrences <span class="tag">2</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
 <div class="scroll"><table>
@@ -82,7 +86,7 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 </tr>
 </table></div>
 
-<h2>Biosynthetic gene clusters <span class="tag">3</span></h2>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">3</span></h2>
 <div class="scroll"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
@@ -115,13 +119,29 @@ isolation report left it.</p>
 
 
 <h2>Bioactivities <span class="tag">5</span></h2>
+<p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
 <div class="scroll"><table>
-<tr><th>Assay</th><th>Result</th><th>Reference</th></tr>
-<tr><td>DSSTox (CPDBAS) Carcinogenic Potency Database Summary Mouse Bioassay Results</td><td>ACTIVE</td><td class="mono">pubchem.aid:1199</td></tr>
-<tr><td>DSSTox (CPDBAS) Carcinogenic Potency Database Summary MultiCellCall Results</td><td>ACTIVE</td><td class="mono">pubchem.aid:1205</td></tr>
-<tr><td>DSSTox (CPDBAS) Carcinogenic Potency Database Summary Rat Bioassay Results</td><td>ACTIVE</td><td class="mono">pubchem.aid:1208</td></tr>
-<tr><td>DSSTox (CPDBAS) Carcinogenic Potency Database Summary SingleCellCall Results</td><td>ACTIVE</td><td class="mono">pubchem.aid:1189</td></tr>
-<tr><td>GENE-TOX mutagenicity studies</td><td>ACTIVE</td><td class="mono">pubchem.aid:1259408</td></tr>
+<tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
+<tr><td>DSSTox (CPDBAS) Carcinogenic Potency Database Summary Mouse Bioassay Results</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1199</summary><dl><dt>assay</dt><dd>DSSTox (CPDBAS) Carcinogenic Potency Database Summary Mouse Bioassay Results</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1199</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1199, deposited by EPA DSSTox; assay type Other.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>TOXIN</dd></dl>
+</details></td></tr>
+<tr><td>DSSTox (CPDBAS) Carcinogenic Potency Database Summary MultiCellCall Results</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1205</summary><dl><dt>assay</dt><dd>DSSTox (CPDBAS) Carcinogenic Potency Database Summary MultiCellCall Results</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1205</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1205, deposited by EPA DSSTox; assay type Other.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>TOXIN</dd></dl>
+</details></td></tr>
+<tr><td>DSSTox (CPDBAS) Carcinogenic Potency Database Summary Rat Bioassay Results</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1208</summary><dl><dt>assay</dt><dd>DSSTox (CPDBAS) Carcinogenic Potency Database Summary Rat Bioassay Results</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1208</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1208, deposited by EPA DSSTox; assay type Other.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>TOXIN</dd></dl>
+</details></td></tr>
+<tr><td>DSSTox (CPDBAS) Carcinogenic Potency Database Summary SingleCellCall Results</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1189</summary><dl><dt>assay</dt><dd>DSSTox (CPDBAS) Carcinogenic Potency Database Summary SingleCellCall Results</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1189</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1189, deposited by EPA DSSTox; assay type Other.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>TOXIN</dd></dl>
+</details></td></tr>
+<tr><td>GENE-TOX mutagenicity studies</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1259408</summary><dl><dt>assay</dt><dd>GENE-TOX mutagenicity studies</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1259408</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1259408, deposited by 22071; assay type Other.</dd></dl>
+</li></ul>
+</dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>TOXIN</dd></dl>
+</details></td></tr>
 </table></div>
 
 

@@ -1,0 +1,146 @@
+record_id: CHEBI:32079
+standard_inchi_key: QJBZDBLBQWFTPZ-UHFFFAOYSA-N
+graph:
+  graph_id: pyrrolnitrin-2005-ssue-assisted-oxygenation
+  scope: BIOSYNTHESIS
+  description: In-vitro aminopyrrolnitrin oxidation by reconstituted PrnD with heterologous
+    SsuE. Both historical protein preparations remain sequence-unresolved. Not a native-partner
+    assignment, binding/assembly claim, antimicrobial mechanism or full-record sign-off.
+  nodes:
+  - node_id: ssue
+    label: Study SsuE preparation (sequence unresolved)
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+  - node_id: prnd
+    label: Reconstituted study PrnD (sequence unresolved)
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+  - node_id: aprn
+    label: Aminopyrrolnitrin
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+    identifier: CHEBI:85786
+  - node_id: pyrrolnitrin
+    label: Pyrrolnitrin
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:32079
+  - node_id: oxidation
+    label: In-vitro SsuE-assisted PrnD oxidation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: nadph
+    label: NADPH assay electron donor
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: fmn
+    label: FMN supplied in assay
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: ssue
+    predicate: supported_in_assay
+    object: oxidation
+    notes: XL1 Blue genomic source; pQE-80L N-terminal His6 fusion expressed in BL21(DE3).
+      Heterologous substitute for an unknown Pseudomonas reductase, not an endogenous
+      partner. Study reports a 672-bp PCR product; complete historical construct remains
+      unresolved.
+    evidence:
+    - reference: DOI:10.1074/jbc.M505334200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main Methods/Results inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+      snippet: E. coli XL1 Blue genomic DNA
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP132550.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Modern XL1-Blue collection2021-02-15; CP132550.1 has only a source feature.
+        Published primer cores bound a curator-derived576nt ORF at987195..987770(complement),191aa.
+        Not a deposited CDS/protein accession or historical-stock verification.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/P80644
+      evidence_type: CURATOR_INFERENCE
+      notes: Modern inferred peptide equals reviewed K12 P80644 sequencev2,entry162.
+        Taxon83333/K12 is not a verified identity for the assayed XL1-Blue preparation;
+        this accession is a comparator only and is not assigned to the node.
+      retrieved_on: '2026-10-06'
+  - subject: prnd
+    predicate: catalyzed_in_assay
+    object: oxidation
+    notes: 'MBP fusion/factor-Xa processed PrnD required in-vitro iron-sulfur reconstitution.
+      Published primers disagree with Pf-5 Q4KAM4 and match BL915 reference ends,
+      which does not identify historical stock. No exact native protein identifier
+      adopted. Routine HPLC assay: 20mM Tris-HCl pH7.8,30C,100uM NADPH,3uM FMN,500uM
+      substrate, SsuE/PrnD molar ratio4.0. This is assay composition, not complex
+      stoichiometry or in-vivo flux.'
+    evidence:
+    - reference: DOI:10.1074/jbc.M505334200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main Methods/Results inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Published PrnD primer cores disagree with native Pf-5 PFL_3607/AAY92873.1
+        termini.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/U74493.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Published PrnD primer cores match BL915 AAB97507.1 termini; that match
+        does not identify the complete historical preparation.
+      retrieved_on: '2026-10-06'
+  - subject: aprn
+    predicate: was_substrate_for
+    object: oxidation
+    notes: Exact pyrrolnitrin precursor; distinct from the separately assayed arylamine
+      surrogates.
+    evidence:
+    - reference: DOI:10.1074/jbc.M505334200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main Methods/Results inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+  - subject: oxidation
+    predicate: yielded
+    object: pyrrolnitrin
+    notes: HPLC standard retention, purified-product 1H NMR and high-resolution EI-MS
+      support product identity. No native-cell production rate inferred.
+    evidence:
+    - reference: DOI:10.1074/jbc.M505334200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main Methods/Results inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+  - subject: nadph
+    predicate: was_supplied_as_electron_donor_for
+    object: oxidation
+    notes: NADPH supplied with FMN and SsuE; no exclusive endogenous electron donor
+      asserted.
+    evidence:
+    - reference: DOI:10.1074/jbc.M505334200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main Methods/Results inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+  - subject: fmn
+    predicate: was_supplied_as_flavin_for
+    object: oxidation
+    notes: Supplied FMN is not a permanently bound prosthetic-group claim; no direct
+      visualization of transfer asserted.
+    evidence:
+    - reference: DOI:10.1074/jbc.M505334200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main Methods/Results inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T18:02:53Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component; reviewed baseline 77b4087ca289a68096e27b4005e807434c5ae328.
+    Added one exact-owner BIOSYNTHESIS component with 7 nodes and 6 cited edges for
+    in-vitro aminopyrrolnitrin oxidation by reconstituted PrnD and heterologous SsuE,
+    DOI:10.1074/jbc.M505334200. Main Methods/Results and Figure3 inspected; supplement
+    unread. Six quoted words. Both historical preparations remain REVIEW_NEEDED without
+    protein identifiers. Modern XL1-Blue CP132550.1 primer-bounded191aa inference
+    equals K12 P80644 but does not identify the historical stock; reported672bp PCR
+    length and PrnD Pf-5/BL915 primer discrepancy retained. Exact product supported
+    by HPLC/NMR/high-resolution EI-MS; assay composition is not complex stoichiometry.
+    No endogenous partner, native-cell flux, binding, antimicrobial mechanism or full-record
+    sign-off. All four prior graphs, four pathway steps, source fields/grades, stereochemistry,
+    SEEDED status, AntibioticMech link and history preserved.
+  llm_assisted: true

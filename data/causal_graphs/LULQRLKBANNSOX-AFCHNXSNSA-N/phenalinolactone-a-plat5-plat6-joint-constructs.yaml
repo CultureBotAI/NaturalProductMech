@@ -1,0 +1,273 @@
+record_id: naturalproductmech:mibig-e29f83c77b
+standard_inchi_key: LULQRLKBANNSOX-AFCHNXSNSA-N
+graph:
+  graph_id: phenalinolactone-a-plat5-plat6-joint-constructs
+  scope: BIOSYNTHESIS
+  description: Schnell 2007 joint plaT5/plaT6 construct experiments in native Tu6071.
+    Native PlaT5/PlaT6 identities are distinct from engineered plasmids. Some integrative-vector
+    clones increased phenalinolactone output, but the source-described empty vector
+    also increased it and integration sites were not mapped. The episomal construct
+    changed the A/D profile without a reported total increase. Neither an individual
+    protein effect nor rate-limiting pathway control is demonstrated. HMBPP/DXP synthase
+    roles are homology-based proposals, not purified activity or measured protein
+    overexpression. The pSET-OE map-label discrepancy is retained.
+  nodes:
+  - node_id: plat5
+    label: Native PlaT5 parent (putative HMBPP synthase)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:ABB69755.1
+  - node_id: plat6
+    label: Native PlaT6 parent (putative DXP synthase)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:ABB69756.1
+  - node_id: cassette
+    label: Joint plaT5/plaT6 gene-introduction design
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: p_set
+    label: Tu6071 pSET-OE integrative-construct clones
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: p_set_control
+    label: Tu6071 source-described empty pSET-1cermE control
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: p_uo
+    label: Tu6071 pUo-OE episomal-construct clones
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: p_uo_control
+    label: Tu6071 empty pUWLoriT control
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: integrative_profile
+    label: Variable PL-A/PL-D production across pSET-OE clones
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: vector_profile
+    label: Production increase with pSET-1cermE vector control
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: episomal_profile
+    label: pUo-OE D-dominant A/D profile without reported total increase
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: hmbpp_synthesis
+    label: Proposed HMBPP synthesis in the MEP pathway
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: dxp_synthesis
+    label: Proposed DXP synthesis in the MEP pathway
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cassette
+    predicate: introduces_encoding_sequence_for
+    object: plat5
+    notes: The two genes were jointly amplified from cosmid 3-1O12, not manipulated
+      separately. Native PlaT5 is 386 aa, DQ230532.1:32273..33433 on the positive
+      strand. GenPept, native GenBank and MIBiG translations agree. The accession
+      identifies the native parent, not a complete sequenced plasmid or assayed purified
+      preparation. A bounded official UniProt gene/taxon plus exact EMBL-xref query
+      returned no rows; no homolog was substituted.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.2.8, p. 82; Table 5.14, p. 132; PCR methods 5.14.6.1, p. 161.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABB69755.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native PlaT5, 386 aa, DQ230532.1:32273..33433; Streptomyces sp. Tu6071,
+        taxon 355249; putative HMBPP synthase annotation.
+      retrieved_on: '2026-10-04'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator comparison of GenPept sequence with native GenBank and MIBiG
+        BGC0000654.4 CDS translations; identities match exactly. This does not experimentally
+        verify expression or the entire engineered insert.
+  - subject: cassette
+    predicate: introduces_encoding_sequence_for
+    object: plat6
+    notes: The same joint fragment includes native PlaT6, 593 aa, DQ230532.1:33430..35211
+      on the positive strand, with a four-base native CDS overlap with plaT5. GenPept,
+      GenBank and MIBiG translations agree. The native accession is not a measured
+      construct-specific protein sequence. The bounded official UniProt gene/taxon
+      plus exact EMBL-xref query returned no rows; an ortholog is not used as its
+      identity.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.2.8, p. 82; Table 5.14, p. 132; methods 5.14.6.1, p. 161.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABB69756.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native PlaT6, 593 aa, DQ230532.1:33430..35211; Streptomyces sp. Tu6071,
+        taxon 355249; putative DXP synthase annotation.
+      retrieved_on: '2026-10-04'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator comparison verifies native GenBank/MIBiG/GenPept identity and
+        the four-base CDS overlap; it does not establish translational coupling or
+        quantify either protein.
+  - subject: p_set
+    predicate: introduces_joint_cassette
+    object: cassette
+    notes: pSET-OE was made with the approximately 3.0-kb ORF38/39-F/R PCR product,
+      cloned EcoRI/XbaI into MunI/XbaI-opened pSET-1cermE. Native primer alignment
+      spans 32221..35251 (3031 bp), including the final 12 bp of plaT4, complete plaT5/plaT6
+      and flanking sequence, not a full third enzyme. Primer substitutions lie outside
+      both target CDSs. The pSET-OE map on p. 188 labels the promoter-proximal short
+      CDS T6 and next long CDS T5, opposite the native primer-supported plaT5-plaT6
+      order. This map-label discrepancy is not silently corrected or treated as a
+      sequenced construct. Apramycin-resistant exconjugants were selected; the integration
+      sites were not mapped.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.2.8-3.2.8.1, pp. 82, 84, 86; Tables 5.13-5.14, pp. 130-132;
+        methods 5.14.6.1, p. 161; map 6.2.11, p. 188.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator primer alignment: ORF38/39-F 32221..32244 (+), ORF38/39-R 35229..35251
+        (-); substitutions outside plaT5/plaT6 CDSs. Native overlap includes only
+        the last 12 bp of plaT4. Compare genomic CDS lengths/order against the drawn
+        map labels, not an available complete plasmid sequence.'
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator comparison of the primary pSET-OE map in appendix 6.2.11 with
+        native primer-supported gene order identifies the T5/T6 label-order discrepancy.
+  - subject: p_uo
+    predicate: introduces_joint_cassette
+    object: cassette
+    notes: Table 5.14 describes transfer of the same approximately 3.0-kb fragment
+      from pSET-OE into pUWLoriT through EcoRI/XbaI. pUo-OE is described as a nonintegrating
+      high-copy plasmid; actual copy number was not quantified in the reported experiment.
+      Thiostrepton-resistant exconjugants were selected. The pUo-OE map labels ORF38
+      and ORF39; p. 82 also calls the intended construct pUWL-OE. Construct introduction
+      is not a measurement of increased transcript or protein abundance.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.2.8/3.2.8.2, pp. 82, 86; Tables 5.13-5.14, pp. 130, 132; map
+        6.2.12, p. 188.
+  - subject: p_set
+    predicate: has_observed_profile
+    object: integrative_profile
+    notes: Ten XHM clones were compared with ten wild-type cultures by HPLC/DAD peak
+      area, then cultures were repeated. Clones 2/5/6/8/10 initially showed higher
+      reported output; clone 9 joined that group in the repeat, while other clones
+      were lower. PL D predominated in many clones; XHM6 instead favored PL A. XHM2/8
+      lagged wild type for A, and XHM5/10 showed early D followed by later A. Figures
+      3.38-3.39 plot D time courses for selected clones, not all-clone A gains. XHM5
+      was used for subsequent feeding experiments, not as proof of enzyme-specific
+      rate control. These AUC observations are not calibrated titers, fluxes, or statistically
+      established yield effects.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.2.8.1, pp. 84-86, Figures 3.38-3.39; discussion 4.1, p. 105;
+        culture/extraction/HPLC methods 5.5.2/5.7/5.7.1, pp. 133, 140.
+  - subject: p_set_control
+    predicate: has_observed_profile
+    object: vector_profile
+    notes: The source-described empty pSET-1cermE control also increased phenalinolactone
+      production. No control-specific numerical titers or mapped integration site
+      are supplied in this account. Table 5.13 describes pSET-1cermE as containing
+      urdGT1c, while the results call it an empty control; its exact control-backbone
+      sequence is not independently established here. Do not silently rename this
+      comparator as bare pSET152 or infer an extra active glycosyltransferase from
+      vector nomenclature.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.2.8.1, p. 86; vector description Table 5.13, p. 130.
+  - subject: p_set_control
+    predicate: limits_causal_attribution_of
+    object: integrative_profile
+    notes: Because the empty-vector comparator also increased production and integration
+      sites were untested, the phenotype does not isolate a PlaT5/PlaT6 effect. Activation
+      of cluster or regulator expression by the ermE promoter at a favorable integration
+      site is the source hypothesis, not an observed locus-specific mechanism. The
+      source explicitly says rate-limiting IPP-synthesis control by these enzymes
+      was not shown. This is lack of such proof, not evidence that either protein
+      lacks pathway function.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.2.8.1, p. 86; discussion 4.1, p. 105.
+      snippet: Es konnte nicht gezeigt werden, dass die beiden Enzyme PlaT5 und PlaT6
+        die geschwindigkeitsbestimmenden Schritte der IPP-Synthese kontrollieren
+  - subject: p_uo
+    predicate: has_observed_profile
+    object: episomal_profile
+    notes: Three pUo-OE clones, three empty-pUWLoriT controls and three wild-type
+      cultures were compared by HPLC/DAD AUC and cultured a second time. The source
+      reports roughly similar total A+D output in pUo-OE and wild type, but D was
+      dominant in pUo-OE and A in wild type. Figures 3.40-3.41 show separate time-dependent
+      A/D signals; they do not prove quantitative equivalence, fixed ratios at all
+      times or improved A yield. The shared cassette does not distinguish the individual
+      contributions of PlaT5 and PlaT6.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.2.8.2, pp. 86-87; Figures 3.40-3.41; HPLC/DAD method 5.7.1,
+        p. 140.
+      snippet: keine Steigerung der Phenalinolacton-Produktion festzustellen war.
+  - subject: p_uo_control
+    predicate: shows_lower_reported_output_than
+    object: episomal_profile
+    notes: The empty-pUWLoriT control cultures were reported to produce somewhat less
+      phenalinolactone than both wild type and pUo-OE. The comparator is a separate
+      control group in each of the two culture runs, not the same strain as the integrative-vector
+      control. No calibrated concentration, exact effect size, variance model or individual-enzyme
+      causal effect is assigned.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.2.8.2 and Figures 3.40-3.41, pp. 86-87.
+  - subject: plat5
+    predicate: has_proposed_activity
+    object: hmbpp_synthesis
+    notes: Sequence comparisons and the MEP-pathway scheme motivate a putative HMBPP
+      synthase role at a late precursor-supply step. This is not a purified PlaT5
+      reaction assay, measured cofactor requirement, native electron-partner assignment
+      or direct conversion to mature phenalinolactone A. The tested co-introduction
+      does not demonstrate that PlaT5 is rate-limiting.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: CURATOR_INFERENCE
+      notes: Homology-based assignment and generic pathway scheme, section 3.2.8 and
+        Figure 3.37, pp. 82-83; experimental limits p. 86.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABB69755.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Database annotation calls the native protein putative (E)-4-hydroxy-3-methyl-but-2-enyl
+        diphosphate synthase; this is not an experimental activity measurement.
+      retrieved_on: '2026-10-04'
+  - subject: plat6
+    predicate: has_proposed_activity
+    object: dxp_synthesis
+    notes: Sequence comparisons motivate a putative DXP synthase assignment. The source
+      pathway scheme describes the pyruvate plus glyceraldehyde-3-phosphate condensation
+      at the entry to the MEP pathway; it does not assay purified PlaT6, establish
+      its kinetic parameters or show direct synthesis of mature phenalinolactone A.
+      The joint construct does not demonstrate independent PlaT6 activity or rate
+      limitation.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/3799
+      evidence_type: CURATOR_INFERENCE
+      notes: Homology-based assignment and generic pathway scheme, section 3.2.8 and
+        Figure 3.37, pp. 82-83; experimental limits p. 86.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABB69756.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Database annotation calls the native protein putative 1-deoxy-D-xylulose
+        5-phosphate synthase; do not upgrade this to purified experimental turnover.
+      retrieved_on: '2026-10-04'
+curation_history:
+- timestamp: '2026-10-04T03:41:19Z'
+  curator: codex
+  action: GRAPH_CURATED
+  changes: 'Added exact native PlaT5 ABB69755.1 and PlaT6 ABB69756.1 in a joint-construct
+    graph: 12 nodes, 11 source-cited edges and two verified snippets. Addressed #527
+    by preserving empty-vector confounding, clone-specific A/D profiles, construct-map/control-identity
+    ambiguity and inferred rather than directly measured enzyme functions.'
+  llm_assisted: true

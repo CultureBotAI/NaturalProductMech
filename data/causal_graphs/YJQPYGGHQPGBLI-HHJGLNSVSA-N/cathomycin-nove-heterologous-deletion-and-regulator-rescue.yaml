@@ -1,0 +1,343 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-nove-heterologous-deletion-and-regulator-rescue
+  scope: BIOSYNTHESIS
+  description: 'Later heterologous NovE deletion, overexpression and reciprocal regulatory-gene
+    rescue, with source-specific titers and partial-complementation limits. Partial
+    biosynthesis curation (review #589), not full-record sign-off. The cathomycin
+    owner retains its unspecified sugar stereocentre; source-assigned novobiocin products
+    remain ungrounded, not exact-key merged with CID 54675769. Native deposited sequences
+    do not retrospectively identify every historical strain stock, complete preparation
+    or engineered allele.'
+  nodes:
+  - node_id: cluster
+    label: Deposited novobiocin cluster underlying the cathomycin owner
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000834
+  - node_id: NovE
+    label: Native deposited NovE regulatory-protein reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9G3
+  - node_id: NovG
+    label: Native deposited NovG regulatory-protein reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9G1
+  - node_id: allele
+    label: nov-VD2 novE scar-deletion construct
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: mutant
+    label: M512 nov-VD2 plus empty pWHM3
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: intact
+    label: M512 nov-BG1 plus empty pWHM3
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: pvd4_rescue
+    label: nov-VD2 background plus NovE expression plasmid pVD4
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: pvd4_over
+    label: Intact nov-BG1 background plus pVD4
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: pvd1_rescue
+    label: nov-VD2 background plus constitutive NovG plasmid pVD1
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: pae8_rescue
+    label: nov-VD2 background plus native-promoter NovG plasmid pAE8
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: deltag_rescue
+    label: nov-AE10 NovG-deficient background plus pVD4
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: product
+    label: Source-assigned novobiocin in later heterologous cultures
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: NovE
+    notes: AF170880.4 CDS 4859..5512(+), 1-based inclusive, encodes AAF67498.1, 217
+      aa. CDS-aware table-11 translations across AF170880.2/.3/.4 exactly match the
+      selected UniProt sequence. Old .2/.3 qualifiers are S. caeruleus, taxon 195949,
+      NCIB 11891; .4 is S. niveus, taxon 193462, NCIMB 9219. The published correction
+      assigns the deposit to 9219, not 11891. The thesis additionally prints 11897
+      in its strain table versus 11891 in results. These are retained source conflicts,
+      not proof that all experimental stocks were identical.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current native deposit, compared with pinned .2 and .3 records.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9G3
+      evidence_type: DATABASE_ASSERTION
+      notes: 'Reviewed entry 35, sequence 1; annotation 2026-09-02, sequence 2000-10-01;
+        protein existence 4: Predicted. Reviewed status does not identify a complete
+        experimental preparation.'
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS-aware sequence audit; alternate NovE A0ABZ2ADU8 is not an exact
+        historical reference because of N14S,T38P,G40A,E179Q differences.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1128/genomeA.01146-13
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Indexed primary text reporting PCR/sequencing-based deposit-strain correction
+        inspected; direct full-text retrieval unavailable.
+      retrieved_on: '2026-10-06'
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 62,135; PDF numbering is printed plus ten. Separate
+        primary source, not a claim to have inspected the complete final paper or
+        supplements.
+      retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: NovG
+    notes: AF170880.4 CDS 6782..7738(+), 1-based inclusive, encodes AAF67500.1, 318
+      aa. CDS-aware table-11 translations across AF170880.2/.3/.4 exactly match the
+      selected UniProt sequence. Old .2/.3 qualifiers are S. caeruleus, taxon 195949,
+      NCIB 11891; .4 is S. niveus, taxon 193462, NCIMB 9219. The published correction
+      assigns the deposit to 9219, not 11891. The thesis additionally prints 11897
+      in its strain table versus 11891 in results. These are retained source conflicts,
+      not proof that all experimental stocks were identical.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current native deposit, compared with pinned .2 and .3 records.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9G1
+      evidence_type: DATABASE_ASSERTION
+      notes: 'Reviewed entry 55, sequence 1; annotation 2026-09-02, sequence 2000-10-01;
+        protein existence 1: Evidence at protein level. Reviewed status does not identify
+        a complete experimental preparation.'
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS-aware sequence audit; alternate NovE A0ABZ2ADU8 is not an exact
+        historical reference because of N14S,T38P,G40A,E179Q differences.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1128/genomeA.01146-13
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Indexed primary text reporting PCR/sequencing-based deposit-strain correction
+        inspected; direct full-text retrieval unavailable.
+      retrieved_on: '2026-10-06'
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 62,135; PDF numbering is printed plus ten. Separate
+        primary source, not a claim to have inspected the complete final paper or
+        supplements.
+      retrieved_on: '2026-10-06'
+  - subject: allele
+    predicate: deletes_coding_locus_of
+    object: NovE
+    notes: nov-VD1 cassette replacement followed by FLP excision gives a reported
+      81 nt scar. Distinct from the native NovE cassette and 18 nt NovG scar. The
+      thesis's pUG019 FRT description differs from older XbaI/SpeI cassette descriptions;
+      complete construct identity unverified.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Dangel primary thesis PDF pages 69-71; PDF numbering is printed plus
+        nine. This is not a claim to have read the complete final journal paper or
+        its supplements.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1007/s00203-008-0396-0
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; full final paper and supplements not obtained.
+      retrieved_on: '2026-10-06'
+      snippet: in frame deletion
+  - subject: allele
+    predicate: was_integrated_in
+    object: mutant
+    notes: Site-specific integration and PstI Southern comparison support the altered
+      cluster; no complete chromosome or deletion-product protein sequence is asserted.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Dangel primary thesis PDF pages 69-71; PDF numbering is printed plus
+        nine. This is not a claim to have read the complete final journal paper or
+        its supplements.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: retained_reduced_production_of
+    object: product
+    notes: 0.14 mg/L, 0.7% of the empty-vector intact-cluster comparator, not zero.
+      HPLC supernatant analysis at 305 nm against a standard; CDM flask cultures,
+      30 C, 200 rpm, seven days without antibiotics. Table III.1 means at least two
+      independent mutants; row-specific n and uncertainty not given. Not the later
+      deep-well qPCR baseline.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Dangel primary thesis PDF pages 62-66,69-71; PDF numbering is printed
+        plus nine. This is not a claim to have read the complete final journal paper
+        or its supplements.
+      retrieved_on: '2026-10-06'
+  - subject: intact
+    predicate: has_comparator_production_of
+    object: product
+    notes: 20.0 mg/L, 100%, with empty pWHM3; the no-extra-plasmid row is separately
+      19.3 mg/L. HPLC supernatant analysis at 305 nm against a standard; CDM flask
+      cultures, 30 C, 200 rpm, seven days without antibiotics. Table III.1 means at
+      least two independent mutants; row-specific n and uncertainty not given. Not
+      the later deep-well qPCR baseline.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Dangel primary thesis PDF pages 62-66,71; PDF numbering is printed plus
+        nine. This is not a claim to have read the complete final journal paper or
+        its supplements.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: is_background_for_complementation
+    object: pvd4_rescue
+    notes: pVD4 carries novE plus reported 599 bp upstream in promoterless pWHM3.
+      The primer-defined native interval and source insert-table endpoint differ by
+      one nucleotide; full plasmid identity was not independently established.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Dangel primary thesis PDF pages 44-46,69; PDF numbering is printed plus
+        nine. This is not a claim to have read the complete final journal paper or
+        its supplements.
+      retrieved_on: '2026-10-06'
+  - subject: pvd4_rescue
+    predicate: partially_restored_production_of
+    object: product
+    notes: Narrative reports up to 70% of intact-cluster production, not a table mean
+      or measured 70% in every clone. This is heterologous rescue, not resolution
+      of the earlier native pAE-E4 technical failure.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Dangel primary thesis PDF pages 69; PDF numbering is printed plus nine.
+        This is not a claim to have read the complete final journal paper or its supplements.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1007/s00203-008-0396-0
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; full final paper and supplements not obtained.
+      retrieved_on: '2026-10-06'
+  - subject: intact
+    predicate: is_background_for_overexpression
+    object: pvd4_over
+    notes: pVD4 added to the intact-cluster host, separate from deletion rescue.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Dangel primary thesis PDF pages 71-72; PDF numbering is printed plus
+        nine. This is not a claim to have read the complete final journal paper or
+        its supplements.
+      retrieved_on: '2026-10-06'
+  - subject: pvd4_over
+    predicate: increased_reported_production_of
+    object: product
+    notes: 38.1 mg/L, 191% of the intact empty-vector comparator. HPLC supernatant
+      analysis at 305 nm against a standard; CDM flask cultures, 30 C, 200 rpm, seven
+      days without antibiotics. Table III.1 means at least two independent mutants;
+      row-specific n and uncertainty not given. Not the later deep-well qPCR baseline.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Dangel primary thesis PDF pages 62-66,71-72; PDF numbering is printed
+        plus nine. This is not a claim to have read the complete final journal paper
+        or its supplements.
+      retrieved_on: '2026-10-06'
+  - subject: NovG
+    predicate: is_gene_reference_for_expression_in
+    object: pvd1_rescue
+    notes: NovG under ermE* in pUWL201; this does not ground the complete recombinant
+      plasmid or assay sample.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Dangel primary thesis PDF pages 71-72; PDF numbering is printed plus
+        nine. This is not a claim to have read the complete final journal paper or
+        its supplements.
+      retrieved_on: '2026-10-06'
+  - subject: pvd1_rescue
+    predicate: restored_and_increased_production_of
+    object: product
+    notes: 59.8 mg/L, 299% of the intact empty-vector comparator. HPLC supernatant
+      analysis at 305 nm against a standard; CDM flask cultures, 30 C, 200 rpm, seven
+      days without antibiotics. Table III.1 means at least two independent mutants;
+      row-specific n and uncertainty not given. Not the later deep-well qPCR baseline.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Dangel primary thesis PDF pages 62-66,71-72; PDF numbering is printed
+        plus nine. This is not a claim to have read the complete final journal paper
+        or its supplements.
+      retrieved_on: '2026-10-06'
+  - subject: NovG
+    predicate: is_gene_reference_for_expression_in
+    object: pae8_rescue
+    notes: pAE8 provides novG with its own promoter in the NovE-deficient host; no
+      complete preparation identity claimed.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Dangel primary thesis PDF pages 71,74; PDF numbering is printed plus
+        nine. This is not a claim to have read the complete final journal paper or
+        its supplements.
+      retrieved_on: '2026-10-06'
+  - subject: pae8_rescue
+    predicate: restored_and_increased_production_of
+    object: product
+    notes: 34.6 mg/L, 173% of the intact comparator; expression can occur without
+      NovE. HPLC supernatant analysis at 305 nm against a standard; CDM flask cultures,
+      30 C, 200 rpm, seven days without antibiotics. Table III.1 means at least two
+      independent mutants; row-specific n and uncertainty not given. Not the later
+      deep-well qPCR baseline.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Dangel primary thesis PDF pages 62-66,71,74; PDF numbering is printed
+        plus nine. This is not a claim to have read the complete final journal paper
+        or its supplements.
+      retrieved_on: '2026-10-06'
+  - subject: NovE
+    predicate: is_gene_reference_for_expression_in
+    object: deltag_rescue
+    notes: pVD4 provides NovE in nov-AE10; not a direct NovE-NovG interaction or intact
+      NovG replacement.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Dangel primary thesis PDF pages 71,74; PDF numbering is printed plus
+        nine. This is not a claim to have read the complete final journal paper or
+        its supplements.
+      retrieved_on: '2026-10-06'
+  - subject: deltag_rescue
+    predicate: partially_restored_production_of
+    object: product
+    notes: 2.4 mg/L, 12%, versus 0.4 mg/L, 2%, for NovG-deficient empty-vector cells.
+      Partial rescue is not absent rescue. The separate deltaG+pAE8 row reports 16
+      mg/L, 80%; keep this source percentage distinct from Eustaquio's 79%. HPLC supernatant
+      analysis at 305 nm against a standard; CDM flask cultures, 30 C, 200 rpm, seven
+      days without antibiotics. Table III.1 means at least two independent mutants;
+      row-specific n and uncertainty not given. Not the later deep-well qPCR baseline.
+    evidence:
+    - reference: https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/49311/pdf/Dissertation_Dangel_090609_Printversion.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Dangel primary thesis PDF pages 62-66,71,74; PDF numbering is printed
+        plus nine. This is not a claim to have read the complete final journal paper
+        or its supplements.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T02:51:18Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add cathomycin-nove-heterologous-deletion-and-regulator-rescue; retain
+    native/preparation/strain distinctions, primary-source access limits and experimental
+    versus inferred regulation (#589).
+  llm_assisted: true

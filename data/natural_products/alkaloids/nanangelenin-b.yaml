@@ -81,6 +81,117 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: nanangelenin-b-nand-database-substrate-prenylation
+  scope: BIOSYNTHESIS
+  description: MITE-reported reverse prenylation of exact nanangelenin B as substrate,
+    using sequence-verified NanD from Aspergillus nanangensis MST-FP2251 as the native
+    reference. This database-level context does not assign NanD to the owner's imported
+    Aspergillus terreus producer or BGC0002198. A publisher search result marked the
+    NanD study purchase-only; no full text was inspected. The distinct owner terreazepine
+    study hit browser verification. Both source contexts remain separate, with no
+    producer-grade or SEEDED-status change.
+  nodes:
+  - node_id: nand_reference
+    label: NanD native MST-FP2251 reference
+    node_type: ENZYME
+    identifier: UniProtKB:A0A6G9KJL7
+    grounding_status: GROUNDED
+  - node_id: nanangelenin_b
+    label: nanangelenin B
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-9898bb8a6a
+    grounding_status: GROUNDED
+  - node_id: prenylation
+    label: MITE-reported NanD reverse prenylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: nanangelenin_c
+    label: Nanangelenin C, database intermediate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: nand_reference
+    predicate: is_database_reported_catalyst_of
+    object: prenylation
+    notes: MITE and reviewed UniProt supply database functional attribution. Native
+      sequence equality establishes reference correspondence, not historical assay-stock
+      or construct identity. UniProt donor-binding residues are by similarity to Q4WAW7,
+      not measured native binding sites or occupancy. No primary protein-alone assay,
+      kinetics, physical complex or heterologous assay host is adopted.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000443.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Active MITE0000443 version1 names NanD/A0A6G9KJL7/QIQ51364.1, with no
+        MIBiG cross-reference. Its single reaction example consumes nanangelenin B
+        and marks nanangelenin C intermediate. Heterologous expression is the database
+        evidence code, not a primary experiment independently inspected here. The
+        cited DOI10.1021/jacs.0c01605/PMID32182055 concerns A.nanangensis; publisher
+        metadata marked it purchase-only, so no primary assay is adopted.
+      snippet: Reverse prenylation of nanangelenin B to produce nanangelenin C.
+    - reference: https://www.uniprot.org/uniprotkb/A0A6G9KJL7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Swiss-Prot entry15/sequence1,435aa, nanD/FE257_001451, A.nanangensis/tax2582783.
+        Genomic-sequence reference provenance lists CBS146238/FRR6048/MST FP2251 and
+        DOI10.1021/jacs.0c01605; EMBL links MT024570/QIQ51364.1. Its function narrative
+        attributes nanangelenin B-to-C prenylation to NanD. Binding sites are ECO0000250
+        by similarity to Q4WAW7. Broad upstream/downstream narrative is not adopted
+        as newly inspected primary evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QIQ51364.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Independent complete435-aa native reference, annotated hypothetical protein,
+        gene nanD/locus FE257_001451, A.nanangensis MST-FP2251/tax2582783. coded_by
+        joins MT024570.1:4633..5840 and5895..5994 on the plus strand. Native identity
+        source, not a tested construct or direct functional assay.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MT024570.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Full1308-nt two-exon plus CDS4633..5840,5895..5994, codon1/defaulttable1,
+        translates to native annotation, independent GenPept and current UniProt,
+        all435aa. Independent coded_by DNA/coordinates and MST-FP2251/taxon2582783
+        agree. Complete18526-bp cluster retained; metadata and full target CDS inspected,
+        not a whole-cluster functional audit. Reference equality does not establish
+        historical assay-stock identity.
+  - subject: nanangelenin_b
+    predicate: is_database_example_substrate_of
+    object: prenylation
+    notes: Pinned exact-structure screening matches the stereospecified MITE substrate
+      to full owner key TVPLZAQWRYWFFT-AWEZNQCLSA-N. This is consumption of nanangelenin
+      B, not its synthesis by NanD. No racemate, opposite stereoisomer, native assay
+      substrate or producer claim is substituted. The owner's imported A.terreus producer/BGC0002198
+      and LOTUS A.nanangensis occurrence remain source-owned and unchanged, not unified
+      by this graph.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000443.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Active MITE0000443 version1 names NanD/A0A6G9KJL7/QIQ51364.1, with no
+        MIBiG cross-reference. Its single reaction example consumes nanangelenin B
+        and marks nanangelenin C intermediate. Heterologous expression is the database
+        evidence code, not a primary experiment independently inspected here. The
+        cited DOI10.1021/jacs.0c01605/PMID32182055 concerns A.nanangensis; publisher
+        metadata marked it purchase-only, so no primary assay is adopted.
+  - subject: prenylation
+    predicate: has_database_example_product
+    object: nanangelenin_c
+    notes: The MITE example labels nanangelenin C intermediate. This graph does not
+      add an external product identifier, final-product claim or downstream NanF/NanB/NanE
+      pathway. The distinct imported owner paper PMID32843555/DOI10.1128/mBio.01691-20
+      concerns terreazepine and was inaccessible behind browser verification; no identity
+      correction, A.terreus enzyme mapping or producer upgrade is inferred.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000443.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Active MITE0000443 version1 names NanD/A0A6G9KJL7/QIQ51364.1, with no
+        MIBiG cross-reference. Its single reaction example consumes nanangelenin B
+        and marks nanangelenin C intermediate. Heterologous expression is the database
+        evidence code, not a primary experiment independently inspected here. The
+        cited DOI10.1021/jacs.0c01605/PMID32182055 concerns A.nanangensis; publisher
+        metadata marked it purchase-only, so no primary assay is adopted.
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
   curator: seed_from_sources
@@ -90,3 +201,24 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-07T13:37:43Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a four-node/three-edge NanD database substrate-prenylation graph.
+    The pinned MITE0000443v1 example consumes this exact nanangelenin B structure
+    and marks nanangelenin C intermediate; every new functional edge cites its stable
+    URL, with one exact nine-word snippet. Grounded NanD to UniProtKB:A0A6G9KJL7,
+    reviewed entry15/sequence1, the native Aspergillus nanangensis MST-FP2251 reference.
+    Full1308-nt plus-strand joined CDS4633..5840,5895..5994 on MT024570.1, codon1/defaulttable1,
+    equals annotation, independent GenPept QIQ51364.1 and UniProt, all435aa; coded_by
+    DNA/coordinates and taxon2582783/strain provenance agree. Functional evidence
+    remains database-level; a publisher search result marked the cited NanD primary
+    paper purchase-only, with no full-text inspection. No historical assay-stock,
+    donor-binding assay, kinetics or physical complex inferred; UniProt binding residues
+    are by homology. Kept this A.nanangensis context separate from imported A.terreus
+    producer/BGC0002198 claims and their distinct primary paper, which hit browser
+    verification. No producer upgrade, organism substitution, downstream pathway or
+    exact product grounding. All existing fields, source grades, occurrence, stereochemistry,
+    classifications, SEEDED status and old history preserved; no full-record review
+    sign-off.
+  llm_assisted: true

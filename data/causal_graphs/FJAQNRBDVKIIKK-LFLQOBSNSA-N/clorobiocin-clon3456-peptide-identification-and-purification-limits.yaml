@@ -1,0 +1,432 @@
+record_id: naturalproductmech:mibig-619480541f
+standard_inchi_key: FJAQNRBDVKIIKK-LFLQOBSNSA-N
+graph:
+  graph_id: clorobiocin-clon3456-peptide-identification-and-purification-limits
+  scope: BIOSYNTHESIS
+  description: 'Ten sequence-verified peptides, helper expression and a separate unconfirmed
+    purification band. Review #569. Native identity, experimental preparations, observations
+    and inferred mechanisms remain distinct. This partial curation does not change
+    compound identity, source-owned fields, earlier graphs or SEEDED status.'
+  nodes:
+  - node_id: cloN6
+    label: Native cloN6 protein reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHB6
+  - node_id: pca7
+    label: pCA7 expression attempt in E. coli XL1Blue MRF'
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: isc
+    label: pACYCisc coexpression trial
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: isc_band
+    label: Approximately60-kDa band in the pACYCisc coexpression panel
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: band
+    label: Approximately60-kDa pCA7 gel band excised for MS
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: ms
+    label: Gel-excised band trypsin LC-MS analysis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: coverage
+    label: CloN6 peptide coverage with unresolved proteoform boundaries
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: absent
+    label: Undetected N-terminal tryptic peptides
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: large
+    label: 1-L TB pCA7 expression and Ni-NTA purification
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: weak
+    label: Weak65.7-kDa band in impure pCA7 eluates
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Identification, cleavage and assembly limits
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: iscs
+    label: Source-assigned E. coli IscS support protein
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: iscu
+    label: Source-assigned E. coli IscU support protein
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: hscb
+    label: Source-assigned E. coli HscB support protein
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: peptide1
+    label: 'Detected CloN6 peptide 68-75: HPDLDVER'
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: peptide2
+    label: 'Detected CloN6 peptide 175-192: VETTGFSHKPATDYNNVR'
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: peptide3
+    label: 'Detected CloN6 peptide 281-294: MHTYLDAVHDLGYR'
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: peptide4
+    label: 'Detected CloN6 peptide 338-351: GTYTMAEMEEWIPR'
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: peptide5
+    label: 'Detected CloN6 peptide 359-373: GVMIWFFIGMPYQDR'
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: peptide6
+    label: 'Detected CloN6 peptide 378-388: DTVTYSEHLIR'
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: peptide7
+    label: 'Detected CloN6 peptide 433-442: QAMVEPLWYR'
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: peptide8
+    label: 'Detected CloN6 peptide 455-466: GIQDVSYEAIER'
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: peptide9
+    label: 'Detected CloN6 peptide 495-508: LLAEMDHALSLDGR'
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: peptide10
+    label: 'Detected CloN6 peptide 543-555: WFDDVTVPEEMIR'
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cloN6
+    predicate: is_native_reference_for
+    object: pca7
+    notes: N-His6 engineered construct, not an unmodified native protein.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHB6, entry 73, sequence 1; annotation 2026-09-02; retrieved
+        2026-10-05. Native reference, not a sequenced experimental fusion.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.84-86; PDF pages are twelve above
+        printed pages.
+  - subject: pca7
+    predicate: was_tested_with
+    object: isc
+    notes: pACYCisc diagram includes fdx,hscA,hscB,iscA,iscU,iscS; FigureIII.3b at0.1and1mM
+      IPTG,30C in E. coli XL1Blue. No uniquely verified accession is selected for
+      these helper preparations.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.84-85; PDF pages are twelve above
+        printed pages.
+  - subject: isc
+    predicate: retained_expression_outcome
+    object: isc_band
+    notes: Approximately60kDa remained; no expected65.7-kDa overexpression, and purification
+      unsuccessful. This panel is not identified as the source of the excised MS aliquot.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF p.85; PDF pages are twelve above printed
+        pages.
+  - subject: pca7
+    predicate: yielded_gel_band
+    object: band
+    notes: The band examined by MS came from the pCA7 E. coli XL1Blue MRF' expression
+      work. The source does not establish that the excised aliquot was from the pACYCisc
+      panel.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.85,160; PDF pages are twelve above
+        printed pages.
+  - subject: band
+    predicate: was_examined_by
+    object: ms
+    notes: Band excision from SDS gel, trypsin digestion and LC-MS; not an activity
+      assay.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.85,160; PDF pages are twelve above
+        printed pages.
+  - subject: ms
+    predicate: supported_sequence_identification
+    object: coverage
+    notes: Ten detected peptides map exactly to native Q8GHB6 and span68-555. Coverage
+      is discontinuous and is not the complete proteoform sequence. The source calculates56.5kDa
+      for68-555 and compares approximately60kDa on gel with65.7kDa for tagged full
+      protein; it explicitly cannot locate the cleavage boundary.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.85-86,160; PDF pages are twelve above
+        printed pages.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent matching of all ten literal detected peptides to the deposit.
+  - subject: ms
+    predicate: did_not_detect
+    object: absent
+    notes: Targeted spectral searches did not find native-position peptides 1-13 MFLLHAPSVYDFR;
+      16-46 DDILFAYLSDSDSVNVTSVYEMYPIGWFSIK; 47-67 QQLADHDFDCQIVNIASLMLK. All three
+      literal sequences match the native sequence. Nondetection does not prove exact
+      loss of67 residues.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.85-86,160; PDF pages are twelve above
+        printed pages.
+  - subject: coverage
+    predicate: has_boundary_limit
+    object: limits
+    notes: The source allows up to19 additional residues from the adjacent tryptic
+      interval. No exact cleavage site, N/C-terminal boundary or unique intact mass
+      is inferred. The five-matching-fragment identification threshold is relayed
+      personal communication, not an independently obtained validation standard.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Anderle 2007 primary thesis, PDF pp.85-86; PDF pages are twelve above
+        printed pages.
+  - subject: pca7
+    predicate: was_scaled_up_in
+    object: large
+    notes: 1L TB,20C,0.5mM IPTG; methods specify6h after induction. The parallel pCA11
+      trial used BL21(DE3)/pLysS; the weak positive purification observation belongs
+      to pCA7, not both constructs.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.66,86; PDF pages are twelve above
+        printed pages.
+  - subject: large
+    predicate: yielded_unconfirmed_band
+    object: weak
+    notes: No overt full-protein induction; a weak65.7-kDa band was seen after Ni-NTA
+      purification with contaminating proteins. It is distinct from the approximately60-kDa
+      band that underwent peptide MS.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF pp.86,91; PDF pages are twelve above
+        printed pages.
+  - subject: weak
+    predicate: has_identity_limit
+    object: limits
+    notes: The thesis explicitly requires MS identity confirmation and expression/purification
+      optimization. No pure active CloN6, quantitative yield, catalytic turnover or
+      cofactor stoichiometry is established.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Anderle 2007 primary thesis, PDF pp.86,91; PDF pages are twelve above
+        printed pages.
+  - subject: isc
+    predicate: showed_source_assigned_expression_of
+    object: iscs
+    notes: FigureIII.3b assigns an approximately45-kDa band to IscS; no independent
+      exact-sequence or binding-partner identity. This is a support protein, not a
+      native clorobiocin-cluster subunit.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF p.85; PDF pages are twelve above printed
+        pages.
+  - subject: isc
+    predicate: showed_source_assigned_expression_of
+    object: iscu
+    notes: FigureIII.3b assigns an approximately14-kDa band to IscU; no independent
+      exact-sequence or binding-partner identity. This is a support protein, not a
+      native clorobiocin-cluster subunit.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF p.85; PDF pages are twelve above printed
+        pages.
+  - subject: isc
+    predicate: showed_source_assigned_expression_of
+    object: hscb
+    notes: FigureIII.3b assigns an approximately27-kDa band to HscB; no independent
+      exact-sequence or binding-partner identity. This is a support protein, not a
+      native clorobiocin-cluster subunit.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF p.85; PDF pages are twelve above printed
+        pages.
+  - subject: ms
+    predicate: detected_peptide
+    object: peptide1
+    notes: TableVII.1 reports detected mass 980.57 and calculated Mr 979.56; units
+      and ion-charge convention are not specified in that table. literal sequence
+      maps exactly to native residues68-75. These table entries are not an independently
+      recalibrated mass spectrum or evidence of full-length protein.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF p.160; PDF pages are twelve above printed
+        pages.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact peptide-to-native alignment.
+  - subject: ms
+    predicate: detected_peptide
+    object: peptide2
+    notes: TableVII.1 reports detected mass 2036.25 and calculated Mr 2035.24; units
+      and ion-charge convention are not specified in that table. literal sequence
+      maps exactly to native residues175-192. These table entries are not an independently
+      recalibrated mass spectrum or evidence of full-length protein.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF p.160; PDF pages are twelve above printed
+        pages.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact peptide-to-native alignment.
+  - subject: ms
+    predicate: detected_peptide
+    object: peptide3
+    notes: TableVII.1 reports detected mass 1691.00 and calculated Mr 1690.00; units
+      and ion-charge convention are not specified in that table. literal sequence
+      maps exactly to native residues281-294. These table entries are not an independently
+      recalibrated mass spectrum or evidence of full-length protein.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF p.160; PDF pages are twelve above printed
+        pages.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact peptide-to-native alignment.
+  - subject: ms
+    predicate: detected_peptide
+    object: peptide4
+    notes: TableVII.1 reports detected mass 1713.97 and calculated Mr 1712.97; units
+      and ion-charge convention are not specified in that table. literal sequence
+      maps exactly to native residues338-351. These table entries are not an independently
+      recalibrated mass spectrum or evidence of full-length protein.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF p.160; PDF pages are twelve above printed
+        pages.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact peptide-to-native alignment.
+  - subject: ms
+    predicate: detected_peptide
+    object: peptide5
+    notes: TableVII.1 reports detected mass 1860.14 and calculated Mr 1859.13; units
+      and ion-charge convention are not specified in that table. literal sequence
+      maps exactly to native residues359-373. These table entries are not an independently
+      recalibrated mass spectrum or evidence of full-length protein.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF p.160; PDF pages are twelve above printed
+        pages.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact peptide-to-native alignment.
+  - subject: ms
+    predicate: detected_peptide
+    object: peptide6
+    notes: TableVII.1 reports detected mass 1333.79 and calculated Mr 1332.79; units
+      and ion-charge convention are not specified in that table. literal sequence
+      maps exactly to native residues378-388. These table entries are not an independently
+      recalibrated mass spectrum or evidence of full-length protein.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF p.160; PDF pages are twelve above printed
+        pages.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact peptide-to-native alignment.
+  - subject: ms
+    predicate: detected_peptide
+    object: peptide7
+    notes: TableVII.1 reports detected mass 1292.76 and calculated Mr 1291.75; units
+      and ion-charge convention are not specified in that table. literal sequence
+      maps exactly to native residues433-442. These table entries are not an independently
+      recalibrated mass spectrum or evidence of full-length protein.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF p.160; PDF pages are twelve above printed
+        pages.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact peptide-to-native alignment.
+  - subject: ms
+    predicate: detected_peptide
+    object: peptide8
+    notes: TableVII.1 reports detected mass 1379.8 and calculated Mr 1378.8; units
+      and ion-charge convention are not specified in that table. literal sequence
+      maps exactly to native residues455-466. These table entries are not an independently
+      recalibrated mass spectrum or evidence of full-length protein.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF p.160; PDF pages are twelve above printed
+        pages.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact peptide-to-native alignment.
+  - subject: ms
+    predicate: detected_peptide
+    object: peptide9
+    notes: TableVII.1 reports detected mass 1540.94 and calculated Mr 1539.93; units
+      and ion-charge convention are not specified in that table. literal sequence
+      maps exactly to native residues495-508. These table entries are not an independently
+      recalibrated mass spectrum or evidence of full-length protein.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF p.160; PDF pages are twelve above printed
+        pages.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact peptide-to-native alignment.
+  - subject: ms
+    predicate: detected_peptide
+    object: peptide10
+    notes: TableVII.1 reports detected mass 1636.95 and calculated Mr 1635.94; units
+      and ion-charge convention are not specified in that table. literal sequence
+      maps exactly to native residues543-555. These table entries are not an independently
+      recalibrated mass spectrum or evidence of full-length protein.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49061/pdf/Diss_C.Anderle.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Anderle 2007 primary thesis, PDF p.160; PDF pages are twelve above printed
+        pages.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact peptide-to-native alignment.
+curation_history:
+- timestamp: '2026-10-05T05:03:35Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add clorobiocin-clon3456-peptide-identification-and-purification-limits;
+    preserve source, identity, construct and causal limits (#569).
+  llm_assisted: true
+- timestamp: '2026-10-05T05:07:49Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Final author-agent review separates the coexpression gel observation from
+    the excised MS-band observation and types expression attempts as processes, without
+    claiming an isolated protein. Preserve source evidence and owner bytes (#569).
+  llm_assisted: true

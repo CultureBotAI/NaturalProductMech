@@ -24,6 +24,10 @@
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">cytotoxic</span><span class="tag">enzyme inhibitor</span></p>
+<details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/unclassified/epothilone-b.yaml">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
 <p>An epithilone that is epithilone D in which the double bond in the macrocyclic ring has been oxidised to the corresponding epoxide (the S,S stereoisomer).</p>
 <h2>Structure</h2>
 <div class="scroll"><table>
@@ -71,7 +75,7 @@ same claim.</p>
 </tr>
 </table></div>
 
-<h2>Occurrences <span class="tag">11</span></h2>
+<h2 id="occurrences">Occurrences <span class="tag">11</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
 <div class="scroll"><table>
@@ -133,7 +137,7 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 </tr>
 </table></div>
 
-<h2>Biosynthetic gene clusters <span class="tag">4</span></h2>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">4</span></h2>
 <div class="scroll"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
@@ -206,33 +210,109 @@ by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">25</span></h2>
+<p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
 <div class="scroll"><table>
-<tr><th>Assay</th><th>Result</th><th>Reference</th></tr>
-<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</td><td>3.3498 uM</td><td class="mono">pubchem.aid:624297</td></tr>
-<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: AML-191 cell line</td><td>0.0105 uM</td><td class="mono">pubchem.aid:2202236</td></tr>
-<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: AML-194 cell line</td><td>0.0118 uM</td><td class="mono">pubchem.aid:2202237</td></tr>
-<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: HNT-34 cell line</td><td>0.0083 uM</td><td class="mono">pubchem.aid:2202234</td></tr>
-<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: MV-4-11 cell line</td><td>0.0093 uM</td><td class="mono">pubchem.aid:2202233</td></tr>
-<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: OCI-AML3 cell line</td><td>0.0059 uM</td><td class="mono">pubchem.aid:2202232</td></tr>
-<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: SET-2 cell line</td><td>0.0186 uM</td><td class="mono">pubchem.aid:2202231</td></tr>
-<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: UCSD-AML1 cell line</td><td>0.0059 uM</td><td class="mono">pubchem.aid:2202235</td></tr>
-<tr><td>Cellular viability qHTS for adrenocortical cancer (ACC) cell line NCI-H295R</td><td>0.0282 uM</td><td class="mono">pubchem.aid:1963990</td></tr>
-<tr><td>Cellular viability qHTS for adrenocortical cancer (ACC) cell line SW-13</td><td>0.0282 uM</td><td class="mono">pubchem.aid:1963989</td></tr>
-<tr><td>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line 8505C</td><td>0.039 uM</td><td class="mono">pubchem.aid:2202553</td></tr>
-<tr><td>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-11T</td><td>0.0693 uM</td><td class="mono">pubchem.aid:2202552</td></tr>
-<tr><td>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-16T</td><td>0.0219 uM</td><td class="mono">pubchem.aid:2202551</td></tr>
-<tr><td>Confirmatory qHTS to identify inhibitors of SARS-CoV-2 cell entry</td><td>0.0541 uM</td><td class="mono">pubchem.aid:1645844</td></tr>
-<tr><td>Human pregnane X receptor (PXR) activation by small molecules, qHTS assay</td><td>7.9433 uM</td><td class="mono">pubchem.aid:1346985</td></tr>
-<tr><td>P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line, qHTS therapeutic library screen</td><td>0.0366 uM</td><td class="mono">PMID:31515284</td></tr>
-<tr><td>Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 48 hour incubation</td><td>0.0013 uM</td><td class="mono">pubchem.aid:504832</td></tr>
-<tr><td>Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 96 hour incubation</td><td>0.0013 uM</td><td class="mono">pubchem.aid:504834</td></tr>
-<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</td><td>0.0059 uM</td><td class="mono">pubchem.aid:1645877</td></tr>
-<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</td><td>0.0059 uM</td><td class="mono">pubchem.aid:1645877</td></tr>
-<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</td><td>0.0066 uM</td><td class="mono">pubchem.aid:1645876</td></tr>
-<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</td><td>0.0066 uM</td><td class="mono">pubchem.aid:1645876</td></tr>
-<tr><td>Rat pregnane X receptor (rPXR) activation by small molecules, qHTS assay</td><td>10 uM</td><td class="mono">pubchem.aid:1346983</td></tr>
-<tr><td>S16 Schwann cell PMP22 intronic element beta-lactamase assay</td><td>0.0112 uM</td><td class="mono">pubchem.aid:624044</td></tr>
-<tr><td>S16 Schwann cell PMP22 intronic element firefly luciferase assay</td><td>0.0573 uM</td><td class="mono">pubchem.aid:624032</td></tr>
+<tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
+<tr><td>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</td><td>3.3498 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624297</summary><dl><dt>assay</dt><dd>A quantitative high throughput screen for small molecules that induce DNA re-replication in SW480 colon adenocarcinoma cells.</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624297</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory. Target accession NP_056979 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>3.3498</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: AML-191 cell line</td><td>0.0105 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202236</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: AML-191 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202236</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202236, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0105</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: AML-194 cell line</td><td>0.0118 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202237</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: AML-194 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202237</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202237, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0118</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: HNT-34 cell line</td><td>0.0083 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202234</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: HNT-34 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202234</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202234, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0083</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: MV-4-11 cell line</td><td>0.0093 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202233</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: MV-4-11 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202233</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202233, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0093</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: OCI-AML3 cell line</td><td>0.0059 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202232</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: OCI-AML3 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202232</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202232, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0059</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: SET-2 cell line</td><td>0.0186 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202231</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: SET-2 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202231</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202231, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0186</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: UCSD-AML1 cell line</td><td>0.0059 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202235</summary><dl><dt>assay</dt><dd>BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged (r) AML: UCSD-AML1 cell line</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202235</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202235, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0059</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Cellular viability qHTS for adrenocortical cancer (ACC) cell line NCI-H295R</td><td>0.0282 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1963990</summary><dl><dt>assay</dt><dd>Cellular viability qHTS for adrenocortical cancer (ACC) cell line NCI-H295R</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963990</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963990, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0282</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
+</details></td></tr>
+<tr><td>Cellular viability qHTS for adrenocortical cancer (ACC) cell line SW-13</td><td>0.0282 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1963989</summary><dl><dt>assay</dt><dd>Cellular viability qHTS for adrenocortical cancer (ACC) cell line SW-13</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1963989</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1963989, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0282</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
+</details></td></tr>
+<tr><td>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line 8505C</td><td>0.039 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202553</summary><dl><dt>assay</dt><dd>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line 8505C</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202553</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202553, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.039</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
+</details></td></tr>
+<tr><td>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-11T</td><td>0.0693 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202552</summary><dl><dt>assay</dt><dd>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-11T</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202552</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202552, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0693</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
+</details></td></tr>
+<tr><td>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-16T</td><td>0.0219 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2202551</summary><dl><dt>assay</dt><dd>Cellular viability qHTS for anaplastic thyroid cancer (ATC) cell line THJ-16T</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2202551</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2202551, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0219</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>CYTOTOXIC</dd></dl>
+</details></td></tr>
+<tr><td>Confirmatory qHTS to identify inhibitors of SARS-CoV-2 cell entry</td><td>0.0541 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645844</summary><dl><dt>assay</dt><dd>Confirmatory qHTS to identify inhibitors of SARS-CoV-2 cell entry</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645844</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645844, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0541</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Human pregnane X receptor (PXR) activation by small molecules, qHTS assay</td><td>7.9433 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1346985</summary><dl><dt>assay</dt><dd>Human pregnane X receptor (PXR) activation by small molecules, qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1346985</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346985, deposited by 824; assay type Confirmatory. Target accession ADZ17384 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>7.9433</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line, qHTS therapeutic library screen</td><td>0.0366 uM</td><td class="mono">Not recorded</td><td><details><summary>PMID:31515284</summary><dl><dt>assay</dt><dd>P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line, qHTS therapeutic library screen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:31515284</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346987, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0366</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 48 hour incubation</td><td>0.0013 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:504832</summary><dl><dt>assay</dt><dd>Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 48 hour incubation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:504832</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504832, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0013</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 96 hour incubation</td><td>0.0013 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:504834</summary><dl><dt>assay</dt><dd>Primary qHTS for delayed death inhibitors of the malarial parasite plastid, 96 hour incubation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:504834</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504834, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0013</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</td><td>0.0059 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645877</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645877</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0059</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</td><td>0.0059 uM</td><td class="mono">UniProtKB:O96028</td><td><details><summary>pubchem.aid:1645877</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an RCH-ACV wild type WT cells (2C)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645877</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0059</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:O96028</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</td><td>0.0066 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645876</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645876</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0066</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</td><td>0.0066 uM</td><td class="mono">UniProtKB:O96028</td><td><details><summary>pubchem.aid:1645876</summary><dl><dt>assay</dt><dd>Primary qHTS for inhibitors of nuclear receptor binding SET domain protein 2 (NSD2) in an isogenic RCH-ACV NSD2 p.E1099K mutant (9B)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645876</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0066</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:O96028</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
+<tr><td>Rat pregnane X receptor (rPXR) activation by small molecules, qHTS assay</td><td>10 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1346983</summary><dl><dt>assay</dt><dd>Rat pregnane X receptor (rPXR) activation by small molecules, qHTS assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1346983</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1346983, deposited by 824; assay type Confirmatory. Target accession EDM11231 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>10.0</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>S16 Schwann cell PMP22 intronic element beta-lactamase assay</td><td>0.0112 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624044</summary><dl><dt>assay</dt><dd>S16 Schwann cell PMP22 intronic element beta-lactamase assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624044</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624044, deposited by NCGC; assay type Confirmatory. Target accession NP_058733 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0112</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>S16 Schwann cell PMP22 intronic element firefly luciferase assay</td><td>0.0573 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624032</summary><dl><dt>assay</dt><dd>S16 Schwann cell PMP22 intronic element firefly luciferase assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624032</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624032, deposited by NCGC; assay type Confirmatory. Target accession NP_058733 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0573</dd><dt>units</dt><dd>uM</dd><dt>notes</dt><dd>92 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but not written here.</dd></dl>
+</details></td></tr>
 </table></div>
 
 

@@ -263,6 +263,100 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0001257, BGC0001258,
     BGC0001906, BGC0002154. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
+causal_graphs:
+- graph_id: thn-napb2-database-proposed-oxidation
+  scope: BIOSYNTHESIS
+  description: Database-proposed NapB2 oxidation consuming exact naphthalene-1,3,6,8-tetrol
+    (THN) to yield flaviolin. MITE explicitly assigns inference from genomic data
+    and chemical structure, not a demonstrated enzyme reaction. Native NRRL18422 reference
+    identity is verified separately. No THN production claim or source-producer/locus
+    transfer is added; not full-record sign-off.
+  nodes:
+  - node_id: napb2_reference
+    label: NapB2 native NRRL18422 reference
+    node_type: ENZYME
+    identifier: UniProtKB:A7KGZ3
+    grounding_status: GROUNDED
+  - node_id: thn
+    label: naphthalene-1,3,6,8-tetrol
+    node_type: COMPOUND
+    identifier: CHEBI:18365
+    grounding_status: GROUNDED
+  - node_id: oxidation
+    label: Database-proposed NapB2 THN oxidation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: flaviolin
+    label: flaviolin, database-proposed intermediate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: napb2_reference
+    predicate: is_database_proposed_catalyst_of
+    object: oxidation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000084.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000084 version1, active, names NapB2/A7KGZ3/ABS50452.1 and BGC0001079.
+        Its THN-to-flaviolin assignment is explicitly inference from genomic data
+        and chemical structure, not demonstrated enzyme activity. Both cited papers
+        were inaccessible; no independently inspected primary assay.
+      snippet: Inference from genomic data and chemical structure
+    - reference: https://www.uniprot.org/uniprotkb/A7KGZ3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Current TrEMBL28/sequence1,184aa, napB2/taxon270689, direct EMBL EF397638/ABS50452.1
+        cross-reference. No FUNCTION or catalytic comment. Predicted cupin annotations
+        do not prove THN oxidation.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABS50452.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Complete184-residue putative-monooxygenase reference from Streptomyces
+        aculeolatus NRRL18422/taxon270689; full coded_by inspected. Native reference
+        identity is not historical assay-stock proof.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/EF397638.1?from=10400&to=11200
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Complete555-nt plus-CDS10535..11089 in forward801-bp window10400..11200.
+        Codon1/table11 translation equals native annotation, independent ABS50452.1
+        and current A7KGZ3, all184aa. Absolute coded_by coordinates map to local136..690
+        and identical DNA; strain/taxon agree. Full-CDS window, not full genome, and
+        identity only, not function.
+    notes: The enzyme assignment is inferred at source. No primary assay, knockout
+      phenotype, native metal/cofactor occupancy, electron donor, binding site, rate
+      or physical complex is adopted.
+  - subject: thn
+    predicate: is_database_proposed_substrate_of
+    object: oxidation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000084.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000084 version1, active, names NapB2/A7KGZ3/ABS50452.1 and BGC0001079.
+        Its THN-to-flaviolin assignment is explicitly inference from genomic data
+        and chemical structure, not demonstrated enzyme activity. Both cited papers
+        were inaccessible; no independently inspected primary assay.
+    notes: Pinned example substrate matches owner full key BCMKHWMDTMUUSI-UHFFFAOYSA-N
+      and complete stereo in the repository-helper/RDKit2026.03.5 screen. It is consumed,
+      not synthesized here. Existing name-disagreement and shared-structure discussions
+      remain OPEN; no assay substrate is inferred.
+  - subject: oxidation
+    predicate: has_database_proposed_product
+    object: flaviolin
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000084.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000084 version1, active, names NapB2/A7KGZ3/ABS50452.1 and BGC0001079.
+        Its THN-to-flaviolin assignment is explicitly inference from genomic data
+        and chemical structure, not demonstrated enzyme activity. Both cited papers
+        were inaccessible; no independently inspected primary assay.
+    notes: MITE names flaviolin and marks the product intermediate. It remains externally
+      ungrounded here; no downstream sequence or pathway finality is adopted. BGC0001079
+      and the Streptomyces reference are not transferred to the owner's four fungal
+      source producers/loci. SOURCE_ASSERTION/CLUSTER_UNSTATED grades, occurrences
+      and SEEDED status are preserved.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -272,3 +366,20 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-07T09:18:11Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added a database-PROPOSED NapB2 oxidation context consuming exact THN:
+    four nodes/three inferred edges with stable URLs and a seven-word source evidence-code
+    snippet. UniProtKB:A7KGZ3 is the native NRRL18422/taxon270689 reference, verified
+    by full555-nt/table11 CDS10535..11089 in EF397638.1 forward801-bp window, independent
+    ABS50452.1 and current TrEMBL28/seq1, all184aa; coded_by DNA/coordinates and strain
+    agree. No full-genome or historical assay-stock claim. MITE0000084 explicitly
+    infers function from genomic data and chemical structure; the primary papers were
+    inaccessible. No demonstrated catalysis, phenotype, native cofactor, electron
+    donor, site, kinetics or complex adopted. Exact substrate key/stereo matches;
+    flaviolin remains ungrounded and intermediate. No THN synthesis, downstream order,
+    pathway finality or BGC0001079 transfer. Preserved all prior fields, four fungal
+    producers/loci and grades, occurrences, both open discussions, SEEDED status and
+    append-only history. Not full-record sign-off.'
+  llm_assisted: true

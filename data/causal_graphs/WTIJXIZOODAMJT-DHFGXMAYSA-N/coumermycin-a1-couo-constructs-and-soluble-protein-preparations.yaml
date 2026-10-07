@@ -1,0 +1,696 @@
+record_id: CHEBI:3907
+standard_inchi_key: WTIJXIZOODAMJT-DHFGXMAYSA-N
+graph:
+  graph_id: coumermycin-a1-couo-constructs-and-soluble-protein-preparations
+  scope: BIOSYNTHESIS
+  description: 'Ten CouO mutant constructs, their separate protein products and the
+    WT expression comparator, with literal-primer and solubility limits. Author-agent
+    review #556. Native identity, engineered preparations and measured or inferred
+    outcomes remain distinct; these precursor/surrogate studies do not demonstrate
+    synthesis of mature coumermycin A1.'
+  nodes:
+  - node_id: native
+    label: Deposited native CouO sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8T9
+  - node_id: template
+    label: Reported pET26b-CouO PCR-template plasmid
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: wt_dna
+    label: pMS470delta8 CouO-WT expression construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: wt
+    label: Pavkov-Keller CouO-WT protein in cleared lysate
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: host
+    label: E. coli TOP10F' CouO expression host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: gel
+    label: Paired soluble and insoluble CouO expression gels
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: h15a_dna
+    label: pMS470delta8 CouO-H15A expression construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: h15a
+    label: Pavkov-Keller CouO-H15A protein in cleared lysate
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: h15n_dna
+    label: pMS470delta8 CouO-H15N expression construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: h15n
+    label: Pavkov-Keller CouO-H15N protein in cleared lysate
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: r24a_dna
+    label: pMS470delta8 CouO-R24A expression construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: r24a
+    label: Pavkov-Keller CouO-R24A protein in cleared lysate
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: h117a_dna
+    label: pMS470delta8 CouO-H117A expression construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: h117a
+    label: Pavkov-Keller CouO-H117A protein in cleared lysate
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: h117s_dna
+    label: pMS470delta8 CouO-H117S expression construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: h117s
+    label: Pavkov-Keller CouO-H117S protein in cleared lysate
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: h120a_dna
+    label: pMS470delta8 CouO-H120A expression construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: h120a
+    label: Pavkov-Keller CouO-H120A protein in cleared lysate
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: h120n_dna
+    label: pMS470delta8 CouO-H120N expression construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: h120n
+    label: Pavkov-Keller CouO-H120N protein in cleared lysate
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: r121a_dna
+    label: pMS470delta8 CouO-R121A expression construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: r121a
+    label: Pavkov-Keller CouO-R121A protein in cleared lysate
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: r121l_dna
+    label: pMS470delta8 CouO-R121L expression construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: r121l
+    label: Pavkov-Keller CouO-R121L protein in cleared lysate
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: y216f_dna
+    label: pMS470delta8 CouO-Y216F expression construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: y216f
+    label: Pavkov-Keller CouO-Y216F protein in cleared lysate
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: native
+    predicate: is_core_sequence_reference_for
+    object: template
+    notes: The paper names pET26b-CouO as the PCR template and cites Stecher 2009.
+      Its literal terminal primers match the deposited native CDS, but the complete
+      template plasmid was not independently sequenced. The historical Strep-tag preparation
+      is not silently assigned to the 2017 assay or crystallization sample.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Cloning and mutagenesis, PDF p.4; reference 3.
+    - reference: DOI:10.1002/anie.200905095
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main paper p.9547; Strep-tag purification, distinct from crude-lysate
+        transformations. Supplement not obtained.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Native CDS used only as a reconstruction template.
+  - subject: template
+    predicate: was_PCR_template_for
+    object: wt_dna
+    notes: The outer primers are 5-prime AATAATTTTGTTTAACTTTAAGAAGGAGATATACATATGAAGATTGAACCGATTACGGG
+      and 5-prime TGAAAATCTTCTCTCATCCGCCAAAACAGCCAAGCTTTCAGGCAGCGGCCC. Gibson assembly
+      used pMS470delta8 linearized with NdeI/HindIII. Literal native-template reconstruction
+      gives a 766-nt amplicon retaining the 693-nt CDS, native start/stop and 230-aa
+      core; it is a model, not a sequenced experimental plasmid. The additionally
+      listed CouO(NdeI)_for AATCACATATGAAGATTGAACCGATTACGGG and CouO(HindIII)_rev
+      AATCAAAGCTTTCAGGCAGCGGC give a separate 712-nt literal amplicon model and are
+      not substituted for the pMS outer pair.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Cloning and mutagenesis, PDF p.4.
+    - reference: DOI:10.1371/journal.pone.0171056.s009
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 Table; all four terminal primers.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent literal-primer reconstruction.
+  - subject: wt_dna
+    predicate: encodes_engineered_preparation
+    object: wt
+    notes: WT denotes the recombinant expression comparator. The outer primer model
+      retains the native stop and predicts no encoded terminal extension; it does
+      not justify assigning native Q9F8T9 as the unique identity of the full assayed
+      aliquot. The authors report sequencing all constructs.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Cloning/mutagenesis and protein expression, PDF pp.4-5.
+    - reference: DOI:10.1371/journal.pone.0171056.s009
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 Table; terminal-primer model.
+  - subject: host
+    predicate: expressed
+    object: wt
+    notes: TOP10F' cells carrying pMS470 constructs were grown in 2xTY with 100 mg/L
+      ampicillin, induced near OD600 0.8 with 0.1 mM IPTG, then cultivated 20 h at
+      25 C and 130 rpm. Pellets were resuspended in 50 mM sodium phosphate pH 7.5,
+      sonicated and cleared at 48000 g for one hour at 4 C. These are protein preparations,
+      not demonstrated whole-cell coumermycin A1 production.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Protein expression, PDF pp.4-5.
+  - subject: wt
+    predicate: has_reported_expression_readout
+    object: gel
+    notes: S7 lane 11 is WT and lane 12 is empty pMS470d8, in both soluble and insoluble
+      panels; lanes 1-10 follow the mutant list. The arrow marks the expected roughly
+      26-kDa protein. Bands do not establish complete sequence, folding or equal active
+      fraction.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s007
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S7 Figure and caption.
+  - subject: template
+    predicate: was_mutagenesis_template_for
+    object: h15a_dna
+    notes: Overlap-extension PCR used literal forward 5-prime CGAAGCCTTTGCCCGGATGGG
+      and reverse 5-prime CCCATCCGGGCAAAGGCTTCG, followed by the pMS outer primers
+      and Gibson assembly. The mutagenic pair is reverse-complementary and a native-template
+      reconstruction gives only H15A in the 230-aa core. The reported sequencing confirmation
+      is not an independently obtained full experimental construct sequence.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Cloning and mutagenesis, PDF p.4.
+    - reference: DOI:10.1371/journal.pone.0171056.s009
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 Table; CouO-H15A forward/reverse primers.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent literal-primer core reconstruction.
+  - subject: h15a_dna
+    predicate: encodes_engineered_variant
+    object: h15a
+    notes: The source names the H15A substitution in the CouO construct panel. DNA
+      and protein are distinct nodes; the native UniProt accession is not assigned
+      to this engineered variant.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Cloning and mutagenesis, Figure 7, PDF pp.4,10.
+    - reference: DOI:10.1371/journal.pone.0171056.s009
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 Table; H15A.
+  - subject: host
+    predicate: expressed
+    object: h15a
+    notes: This member of the pMS470 series uses the reported TOP10F' expression and
+      cleared-lysate protocol, not purified-enzyme or native-cell assay conditions.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Protein expression, PDF pp.4-5.
+  - subject: h15a
+    predicate: has_reported_expression_readout
+    object: gel
+    notes: S7 lane 1 is H15A in paired soluble/insoluble panels. The displayed band
+      is an expression readout, not proof of equal folding, purity or active fraction.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s007
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S7 Figure, lane 1; S2 Table supplies the separate content estimate.
+  - subject: template
+    predicate: was_mutagenesis_template_for
+    object: h15n_dna
+    notes: Overlap-extension PCR used literal forward 5-prime CCGAAGCCTTTAACCGGATGGG
+      and reverse 5-prime CCCATCCGGTTAAAGGCTTCGG, followed by the pMS outer primers
+      and Gibson assembly. The mutagenic pair is reverse-complementary and a native-template
+      reconstruction gives only H15N in the 230-aa core. The reported sequencing confirmation
+      is not an independently obtained full experimental construct sequence.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Cloning and mutagenesis, PDF p.4.
+    - reference: DOI:10.1371/journal.pone.0171056.s009
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 Table; CouO-H15N forward/reverse primers.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent literal-primer core reconstruction.
+  - subject: h15n_dna
+    predicate: encodes_engineered_variant
+    object: h15n
+    notes: The source names the H15N substitution in the CouO construct panel. DNA
+      and protein are distinct nodes; the native UniProt accession is not assigned
+      to this engineered variant.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Cloning and mutagenesis, Figure 7, PDF pp.4,10.
+    - reference: DOI:10.1371/journal.pone.0171056.s009
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 Table; H15N.
+  - subject: host
+    predicate: expressed
+    object: h15n
+    notes: This member of the pMS470 series uses the reported TOP10F' expression and
+      cleared-lysate protocol, not purified-enzyme or native-cell assay conditions.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Protein expression, PDF pp.4-5.
+  - subject: h15n
+    predicate: has_reported_expression_readout
+    object: gel
+    notes: S7 lane 2 is H15N in paired soluble/insoluble panels. The displayed band
+      is an expression readout, not proof of equal folding, purity or active fraction.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s007
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S7 Figure, lane 2; S2 Table supplies the separate content estimate.
+  - subject: template
+    predicate: was_mutagenesis_template_for
+    object: r24a_dna
+    notes: Overlap-extension PCR used literal forward 5-prime CCGGGCGTTCGAAGCGTACAACGAGTTC
+      and reverse 5-prime GAACTCGTTGTACGCTTCGAACGCCCGG, followed by the pMS outer
+      primers and Gibson assembly. The mutagenic pair is reverse-complementary and
+      a native-template reconstruction gives only R24A in the 230-aa core. The reported
+      sequencing confirmation is not an independently obtained full experimental construct
+      sequence.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Cloning and mutagenesis, PDF p.4.
+    - reference: DOI:10.1371/journal.pone.0171056.s009
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 Table; CouO-R24A forward/reverse primers.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent literal-primer core reconstruction.
+  - subject: r24a_dna
+    predicate: encodes_engineered_variant
+    object: r24a
+    notes: The source names the R24A substitution in the CouO construct panel. DNA
+      and protein are distinct nodes; the native UniProt accession is not assigned
+      to this engineered variant.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Cloning and mutagenesis, Figure 7, PDF pp.4,10.
+    - reference: DOI:10.1371/journal.pone.0171056.s009
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 Table; R24A.
+  - subject: host
+    predicate: expressed
+    object: r24a
+    notes: This member of the pMS470 series uses the reported TOP10F' expression and
+      cleared-lysate protocol, not purified-enzyme or native-cell assay conditions.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Protein expression, PDF pp.4-5.
+  - subject: r24a
+    predicate: has_reported_expression_readout
+    object: gel
+    notes: S7 lane 3 is R24A in paired soluble/insoluble panels. The displayed band
+      is an expression readout, not proof of equal folding, purity or active fraction.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s007
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S7 Figure, lane 3; S2 Table supplies the separate content estimate.
+  - subject: template
+    predicate: was_mutagenesis_template_for
+    object: h117a_dna
+    notes: Overlap-extension PCR used literal forward 5-prime GTGGTCTCGCGGGCCGCGTTCCACCG
+      and reverse 5-prime CGGTGGAACGCGGCCCGCGAGACCAC, followed by the pMS outer primers
+      and Gibson assembly. The mutagenic pair is reverse-complementary and a native-template
+      reconstruction gives only H117A in the 230-aa core. The reported sequencing
+      confirmation is not an independently obtained full experimental construct sequence.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Cloning and mutagenesis, PDF p.4.
+    - reference: DOI:10.1371/journal.pone.0171056.s009
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 Table; CouO-H117A forward/reverse primers.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent literal-primer core reconstruction.
+  - subject: h117a_dna
+    predicate: encodes_engineered_variant
+    object: h117a
+    notes: The source names the H117A substitution in the CouO construct panel. DNA
+      and protein are distinct nodes; the native UniProt accession is not assigned
+      to this engineered variant.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Cloning and mutagenesis, Figure 7, PDF pp.4,10.
+    - reference: DOI:10.1371/journal.pone.0171056.s009
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 Table; H117A.
+  - subject: host
+    predicate: expressed
+    object: h117a
+    notes: This member of the pMS470 series uses the reported TOP10F' expression and
+      cleared-lysate protocol, not purified-enzyme or native-cell assay conditions.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Protein expression, PDF pp.4-5.
+  - subject: h117a
+    predicate: has_reported_expression_readout
+    object: gel
+    notes: S7 lane 4 is H117A in paired soluble/insoluble panels. The displayed band
+      is an expression readout, not proof of equal folding, purity or active fraction.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s007
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S7 Figure, lane 4; S2 Table supplies the separate content estimate.
+  - subject: template
+    predicate: was_mutagenesis_template_for
+    object: h117s_dna
+    notes: Overlap-extension PCR used literal forward 5-prime GTGGTCTCGCGGTCCGCGTTCCACCG
+      and reverse 5-prime CGGTGGAACGCGGACCGCGAGACCAC, followed by the pMS outer primers
+      and Gibson assembly. The mutagenic pair is reverse-complementary and a native-template
+      reconstruction gives only H117S in the 230-aa core. The reported sequencing
+      confirmation is not an independently obtained full experimental construct sequence.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Cloning and mutagenesis, PDF p.4.
+    - reference: DOI:10.1371/journal.pone.0171056.s009
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 Table; CouO-H117S forward/reverse primers.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent literal-primer core reconstruction.
+  - subject: h117s_dna
+    predicate: encodes_engineered_variant
+    object: h117s
+    notes: The source names the H117S substitution in the CouO construct panel. DNA
+      and protein are distinct nodes; the native UniProt accession is not assigned
+      to this engineered variant.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Cloning and mutagenesis, Figure 7, PDF pp.4,10.
+    - reference: DOI:10.1371/journal.pone.0171056.s009
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 Table; H117S.
+  - subject: host
+    predicate: expressed
+    object: h117s
+    notes: This member of the pMS470 series uses the reported TOP10F' expression and
+      cleared-lysate protocol, not purified-enzyme or native-cell assay conditions.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Protein expression, PDF pp.4-5.
+  - subject: h117s
+    predicate: has_reported_expression_readout
+    object: gel
+    notes: S7 lane 5 is H117S in paired soluble/insoluble panels. The displayed band
+      is an expression readout, not proof of equal folding, purity or active fraction.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s007
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S7 Figure, lane 5; S2 Table supplies the separate content estimate.
+  - subject: template
+    predicate: was_mutagenesis_template_for
+    object: h120a_dna
+    notes: Overlap-extension PCR used literal forward 5-prime GGCACGCGTTCGCCCGGCTCACCC
+      and reverse 5-prime GGGTGAGCCGGGCGAACGCGTGCC, followed by the pMS outer primers
+      and Gibson assembly. The mutagenic pair is reverse-complementary and a native-template
+      reconstruction gives only H120A in the 230-aa core. The reported sequencing
+      confirmation is not an independently obtained full experimental construct sequence.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Cloning and mutagenesis, PDF p.4.
+    - reference: DOI:10.1371/journal.pone.0171056.s009
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 Table; CouO-H120A forward/reverse primers.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent literal-primer core reconstruction.
+  - subject: h120a_dna
+    predicate: encodes_engineered_variant
+    object: h120a
+    notes: The source names the H120A substitution in the CouO construct panel. DNA
+      and protein are distinct nodes; the native UniProt accession is not assigned
+      to this engineered variant.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Cloning and mutagenesis, Figure 7, PDF pp.4,10.
+    - reference: DOI:10.1371/journal.pone.0171056.s009
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 Table; H120A.
+  - subject: host
+    predicate: expressed
+    object: h120a
+    notes: This member of the pMS470 series uses the reported TOP10F' expression and
+      cleared-lysate protocol, not purified-enzyme or native-cell assay conditions.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Protein expression, PDF pp.4-5.
+  - subject: h120a
+    predicate: has_reported_expression_readout
+    object: gel
+    notes: S7 lane 6 is H120A in paired soluble/insoluble panels. H120A is poorly
+      represented in the soluble fraction; densitometry estimates 5.5% CouO, so the
+      source does not establish an absent protein or purified functional null.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s007
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S7 Figure, lane 6; S2 Table supplies the separate content estimate.
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Protein expression, PDF p.5.
+      snippet: hardly detectable
+  - subject: template
+    predicate: was_mutagenesis_template_for
+    object: h120n_dna
+    notes: Overlap-extension PCR used literal forward 5-prime GGCACGCGTTCAACCGGCTCACC
+      and reverse 5-prime GGTGAGCCGGTTGAACGCGTGCC, followed by the pMS outer primers
+      and Gibson assembly. The mutagenic pair is reverse-complementary and a native-template
+      reconstruction gives only H120N in the 230-aa core. The reported sequencing
+      confirmation is not an independently obtained full experimental construct sequence.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Cloning and mutagenesis, PDF p.4.
+    - reference: DOI:10.1371/journal.pone.0171056.s009
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 Table; CouO-H120N forward/reverse primers.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent literal-primer core reconstruction.
+  - subject: h120n_dna
+    predicate: encodes_engineered_variant
+    object: h120n
+    notes: The source names the H120N substitution in the CouO construct panel. DNA
+      and protein are distinct nodes; the native UniProt accession is not assigned
+      to this engineered variant.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Cloning and mutagenesis, Figure 7, PDF pp.4,10.
+    - reference: DOI:10.1371/journal.pone.0171056.s009
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 Table; H120N.
+  - subject: host
+    predicate: expressed
+    object: h120n
+    notes: This member of the pMS470 series uses the reported TOP10F' expression and
+      cleared-lysate protocol, not purified-enzyme or native-cell assay conditions.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Protein expression, PDF pp.4-5.
+  - subject: h120n
+    predicate: has_reported_expression_readout
+    object: gel
+    notes: S7 lane 7 is H120N in paired soluble/insoluble panels. The displayed band
+      is an expression readout, not proof of equal folding, purity or active fraction.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s007
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S7 Figure, lane 7; S2 Table supplies the separate content estimate.
+  - subject: template
+    predicate: was_mutagenesis_template_for
+    object: r121a_dna
+    notes: Overlap-extension PCR used literal forward 5-prime CACGCGTTCCACGCGCTCACCCGGC
+      and reverse 5-prime GCCGGGTGAGCGCGTGGAACGCGTG, followed by the pMS outer primers
+      and Gibson assembly. The mutagenic pair is reverse-complementary and a native-template
+      reconstruction gives only R121A in the 230-aa core. The reported sequencing
+      confirmation is not an independently obtained full experimental construct sequence.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Cloning and mutagenesis, PDF p.4.
+    - reference: DOI:10.1371/journal.pone.0171056.s009
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 Table; CouO-R121A forward/reverse primers.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent literal-primer core reconstruction.
+  - subject: r121a_dna
+    predicate: encodes_engineered_variant
+    object: r121a
+    notes: The source names the R121A substitution in the CouO construct panel. DNA
+      and protein are distinct nodes; the native UniProt accession is not assigned
+      to this engineered variant.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Cloning and mutagenesis, Figure 7, PDF pp.4,10.
+    - reference: DOI:10.1371/journal.pone.0171056.s009
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 Table; R121A.
+  - subject: host
+    predicate: expressed
+    object: r121a
+    notes: This member of the pMS470 series uses the reported TOP10F' expression and
+      cleared-lysate protocol, not purified-enzyme or native-cell assay conditions.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Protein expression, PDF pp.4-5.
+  - subject: r121a
+    predicate: has_reported_expression_readout
+    object: gel
+    notes: S7 lane 8 is R121A in paired soluble/insoluble panels. The displayed band
+      is an expression readout, not proof of equal folding, purity or active fraction.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s007
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S7 Figure, lane 8; S2 Table supplies the separate content estimate.
+  - subject: template
+    predicate: was_mutagenesis_template_for
+    object: r121l_dna
+    notes: Overlap-extension PCR used literal forward 5-prime CACGCGTTCCACCTGCTCACCCGGC
+      and reverse 5-prime GCCGGGTGAGCAGGTGGAACGCGTG, followed by the pMS outer primers
+      and Gibson assembly. The mutagenic pair is reverse-complementary and a native-template
+      reconstruction gives only R121L in the 230-aa core. The reported sequencing
+      confirmation is not an independently obtained full experimental construct sequence.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Cloning and mutagenesis, PDF p.4.
+    - reference: DOI:10.1371/journal.pone.0171056.s009
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 Table; CouO-R121L forward/reverse primers.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent literal-primer core reconstruction.
+  - subject: r121l_dna
+    predicate: encodes_engineered_variant
+    object: r121l
+    notes: The source names the R121L substitution in the CouO construct panel. DNA
+      and protein are distinct nodes; the native UniProt accession is not assigned
+      to this engineered variant.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Cloning and mutagenesis, Figure 7, PDF pp.4,10.
+    - reference: DOI:10.1371/journal.pone.0171056.s009
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 Table; R121L.
+  - subject: host
+    predicate: expressed
+    object: r121l
+    notes: This member of the pMS470 series uses the reported TOP10F' expression and
+      cleared-lysate protocol, not purified-enzyme or native-cell assay conditions.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Protein expression, PDF pp.4-5.
+  - subject: r121l
+    predicate: has_reported_expression_readout
+    object: gel
+    notes: S7 lane 9 is R121L in paired soluble/insoluble panels. The displayed band
+      is an expression readout, not proof of equal folding, purity or active fraction.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s007
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S7 Figure, lane 9; S2 Table supplies the separate content estimate.
+  - subject: template
+    predicate: was_mutagenesis_template_for
+    object: y216f_dna
+    notes: Overlap-extension PCR used literal forward 5-prime GATGACCAGGGCTTCGGCGTTGCCAC
+      and reverse 5-prime GTGGCAACGCCGAAGCCCTGGTCATC, followed by the pMS outer primers
+      and Gibson assembly. The mutagenic pair is reverse-complementary and a native-template
+      reconstruction gives only Y216F in the 230-aa core. The reported sequencing
+      confirmation is not an independently obtained full experimental construct sequence.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Cloning and mutagenesis, PDF p.4.
+    - reference: DOI:10.1371/journal.pone.0171056.s009
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 Table; CouO-Y216F forward/reverse primers.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent literal-primer core reconstruction.
+  - subject: y216f_dna
+    predicate: encodes_engineered_variant
+    object: y216f
+    notes: The source names the Y216F substitution in the CouO construct panel. DNA
+      and protein are distinct nodes; the native UniProt accession is not assigned
+      to this engineered variant.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Cloning and mutagenesis, Figure 7, PDF pp.4,10.
+    - reference: DOI:10.1371/journal.pone.0171056.s009
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S1 Table; Y216F.
+  - subject: host
+    predicate: expressed
+    object: y216f
+    notes: This member of the pMS470 series uses the reported TOP10F' expression and
+      cleared-lysate protocol, not purified-enzyme or native-cell assay conditions.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Pavkov-Keller 2017; Protein expression, PDF pp.4-5.
+  - subject: y216f
+    predicate: has_reported_expression_readout
+    object: gel
+    notes: S7 lane 10 is Y216F in paired soluble/insoluble panels. The displayed band
+      is an expression readout, not proof of equal folding, purity or active fraction.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0171056.s007
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: S7 Figure, lane 10; S2 Table supplies the separate content estimate.
+curation_history:
+- timestamp: '2026-10-04T19:54:53Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add coumermycin-a1-couo-constructs-and-soluble-protein-preparations with
+    bounded primary CouO evidence and review #556 limits.'
+  llm_assisted: true

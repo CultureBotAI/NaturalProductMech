@@ -622,6 +622,128 @@ causal_graphs:
       evidence_type: PRIMARY_EXPERIMENT
       snippet: we screened the effect of various DNA interacting compounds on the
         ATPase and helicase activity of PfUDN
+- graph_id: daunorubicin-dnrk-database-methylation
+  scope: BIOSYNTHESIS
+  description: Database-asserted DnrK carminomycin methylation yielding the exact
+    daunorubicin structure. The S. peucetius sequence reference is verified against
+    two genomic DNA deposits; primary experiments were not inspected. This does not
+    assign DnrK to the owner's distinct BGC0000217/L34880.1 source or upgrade producer
+    evidence. Existing PfUDN bioactivity context and the AntibioticMech link are untouched;
+    not full-record sign-off.
+  nodes:
+  - node_id: dnrk_reference
+    label: S. peucetius DnrK sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q06528
+  - node_id: carminomycin
+    label: Carminomycin, database-reported substrate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: methylation
+    label: Database-reported carminomycin 4-O-methylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: daunorubicin
+    label: daunorubicin
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:41977
+  edges:
+  - subject: dnrk_reference
+    predicate: is_database_reported_catalyst_of
+    object: methylation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000492.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000492 version 1, active, at the pinned commit. It assigns carminomycin
+        4-O-methylation to DnrK and names daunorubicin as the product. Its heterologous-expression
+        and in-vitro evidence codes are not independently inspected primary experiments.
+      snippet: methylation of the 4-hydroxyl group
+    - reference: https://www.uniprot.org/uniprotkb/Q06528
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: 'Reviewed entry 113, sequence 2. FUNCTION assigns methyl transfer from
+        S-adenosyl-L-methionine to carminomycin''s 4-O position yielding daunorubicin.
+        Its experimentally coded annotation remains database evidence here: the cited
+        primary paper was inaccessible. No substrate-promiscuity, quaternary-equilibrium
+        or measured kinetic claim is adopted.'
+      snippet: carminomycin to form daunorubicin
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAA26712.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Complete conceptual translation and independent coded_by inspected. Source
+        is S. peucetius/taxon 1950 and records ATCC 29050 in the legacy tissue_lib
+        qualifier; this is database source metadata, not authenticated historical
+        stock.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAA99001.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Independent alternate dnrK protein record from L40425.1; complete sequence
+        and coded_by checked. Its 356 residues match AAA26712.1 and current UniProt
+        Q06528.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/L13453.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Complete 1071-nt CDS at 204..1274, plus strand, table 11, codon_start
+        1. Full translation matches its CDS annotation, independent AAA26712.1 and
+        UniProt356aa. This is a genomic sequence deposit for clone pWHM902, not a
+        verified complete expression construct or historical assay-stock sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/L40425.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Complete dnrK CDS at 650..1720, plus strand, 1071nt/table11. Coding DNA
+        is identical to the L13453.1 CDS; full translation matches independent AAA99001.1
+        and UniProt356aa. Nearby putative dnrD/dnrP annotations are not adopted as
+        pathway experiments or as evidence for a physical enzyme complex.
+    notes: Protein identity and function are separate claims. The sequence-grounded
+      S. peucetius reference is not asserted to be from the owner's BGC0000217/NCBITaxon:1931
+      source. No initiator processing, PDB-chain identity, catalytic residue, physiological
+      oligomer, rate or assay condition is claimed.
+  - subject: carminomycin
+    predicate: is_database_reported_substrate_of
+    object: methylation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000492.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000492 version 1, active, at the pinned commit. It assigns carminomycin
+        4-O-methylation to DnrK and names daunorubicin as the product. Its heterologous-expression
+        and in-vitro evidence codes are not independently inspected primary experiments.
+    - reference: https://www.uniprot.org/uniprotkb/Q06528
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: 'Reviewed entry 113, sequence 2. FUNCTION assigns methyl transfer from
+        S-adenosyl-L-methionine to carminomycin''s 4-O position yielding daunorubicin.
+        Its experimentally coded annotation remains database evidence here: the cited
+        primary paper was inaccessible. No substrate-promiscuity, quaternary-equilibrium
+        or measured kinetic claim is adopted.'
+    notes: MITE and UniProt name carminomycin as the substrate. No external substrate
+      identifier, protonation-state equivalence or additional upstream step is assigned.
+  - subject: methylation
+    predicate: has_database_reported_product
+    object: daunorubicin
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000492.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000492 version 1, active, at the pinned commit. It assigns carminomycin
+        4-O-methylation to DnrK and names daunorubicin as the product. Its heterologous-expression
+        and in-vitro evidence codes are not independently inspected primary experiments.
+    - reference: https://www.uniprot.org/uniprotkb/Q06528
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: 'Reviewed entry 113, sequence 2. FUNCTION assigns methyl transfer from
+        S-adenosyl-L-methionine to carminomycin''s 4-O position yielding daunorubicin.
+        Its experimentally coded annotation remains database evidence here: the cited
+        primary paper was inaccessible. No substrate-promiscuity, quaternary-equilibrium
+        or measured kinetic claim is adopted.'
+    notes: Pinned MITE product SMILES matches the full owner InChIKey STQGQHZAVUOBTE-VGBVRHCVSA-N
+      and defined stereochemistry using the repository structure helper and RDKit2026.03.5.
+      No additional downstream doxorubicin step or claim of pathway finality is inferred.
+      Producer/BGC grades, occurrences and all existing bioactivity evidence remain
+      unchanged.
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
   curator: seed_from_sources
@@ -644,3 +766,27 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-07T04:23:32Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added DnrK biosynthesis context alongside the preserved PfUDN bioactivity
+    graph: four nodes and three database-asserted functional edges with stable MITE/UniProt
+    URLs. Grounded the S. peucetius reference Q06528 against full 1071-nt/table11
+    CDS translations from L13453.1 and L40425.1, independent GenPepts AAA26712.1/AAA99001.1
+    and current UniProt356aa. Both coding-DNA sequences are identical; legacy tissue_lib/collection
+    metadata are not historical stock authentication. The pinned MITE product matches
+    the complete owner structure; the named substrate remains ungrounded. Two exact
+    source snippets total nine words. Primary experiments were inaccessible; no construct,
+    PDB-chain, residue, oligomer, rate, assay condition or downstream-step claim adopted.
+    No assignment to the owner''s distinct BGC0000217/L34880.1/NCBITaxon1931 source.
+    Preserved all prior graphs/evidence, source fields, structure, grades, occurrences,
+    AntibioticMech link, SEEDED status and history. Not full-record sign-off.'
+  llm_assisted: true
+- timestamp: '2026-10-07T04:29:17Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Corrected the newly added biosynthesis product node label to the canonical
+    ChEBI label after local identifier-label validation. Exact structure, identifier,
+    graph semantics, evidence, source fields, grades, status, earlier graphs and all
+    prior curation events are unchanged.
+  llm_assisted: true

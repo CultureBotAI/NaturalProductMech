@@ -787,6 +787,622 @@ causal_graphs:
       snippet: catalyzes the oxidation of aminopyrrolnitrin to form pyrrolnitrin
       retrieved_on: '2026-09-28'
       notes: GenBank EU188755.1 assigns prnD/ABW69177.1 to pyrrolnitrin formation.
+- graph_id: pyrrolnitrin-prnf-2007-reductase-and-surrogate-assays
+  scope: BIOSYNTHESIS
+  description: Biochemical subexperiments for candidate pyrrolnitrin reductase PrnF.
+    Native reference, processed proteins and surrogate reaction remain distinct. No
+    new pyrrolnitrin synthesis step, antimicrobial mechanism or full-record sign-off.
+  nodes:
+  - node_id: pf5
+    label: Pseudomonas protegens Pf-5
+    node_type: ORGANISM
+    grounding_status: GROUNDED
+    identifier: NCBITaxon:220664
+  - node_id: native_prnf
+    label: PrnF native sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4KAM2
+  - node_id: prepared_prnf
+    label: Study PrnF preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: prepared_prnd
+    label: Study PrnD preparation (sequence unresolved)
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+  - node_id: fad
+    label: FAD assay substrate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: nadh
+    label: NADH assay electron donor
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: reduced_fad
+    label: Reduced FAD assay product
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: flavin_reduction
+    label: PrnF-catalyzed flavin reduction assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: paba
+    label: p-Aminobenzylamine surrogate substrate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: pnba
+    label: p-Nitrobenzylamine assay product
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: coupled_oxidation
+    label: PrnD/PrnF surrogate oxidation assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: pf5
+    predicate: encodes_native_reference
+    object: native_prnf
+    notes: CP000076.1 CDS4164049..4164609(+), 1-based inclusive; PFL_3609, AAY92875.1,186aa.
+      CDS-aware table11=GenPept=UniProt unreviewed sequencev1; Pf-5/taxon220664. Deposit
+      uses locus tag, not a prnF gene qualifier.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Source/CDS qualifiers inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAY92875.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native sequence inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4KAM2
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence and identity comparison.
+      retrieved_on: '2026-10-06'
+  - subject: prepared_prnf
+    predicate: has_native_sequence_reference
+    object: native_prnf
+    notes: Published primer cores match native CDS ends. Figure2/native186aa conflict
+      with prose160aa; BAA-447 versus databaseBAA-477 unresolved. pQE30Xa/BL21(DE3),factor-Xa
+      processed; full stock unverified.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: CURATOR_INFERENCE
+      notes: Methods/Figure2 inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+  - subject: prepared_prnf
+    predicate: catalyzed_in_assay
+    object: flavin_reduction
+    notes: NADH absorbance340nm,30C,pH7.0. Table1:FAD Km3.2+/-0.6uM,kcat65.0+/-8.2s^-1;
+      not in-vivo flux.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods/Table1 inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+  - subject: fad
+    predicate: was_substrate_for
+    object: flavin_reduction
+    notes: Not a permanently bound prosthetic group; protonation unspecified.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+      snippet: FAD is a true substrate
+  - subject: nadh
+    predicate: was_electron_donor_for
+    object: flavin_reduction
+    notes: No universal exclusion of alternative donors inferred.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods/Table1 inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+  - subject: flavin_reduction
+    predicate: yielded
+    object: reduced_fad
+    notes: Anaerobic reduction and absorbance450nm recovery after oxygen readmission.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+  - subject: reduced_fad
+    predicate: was_inferred_to_support
+    object: coupled_oxidation
+    notes: Coupling interpretation, not direct visualization of flavin transfer.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: CURATOR_INFERENCE
+      notes: Results inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+  - subject: prepared_prnf
+    predicate: supported_in_assay
+    object: coupled_oxidation
+    notes: Added PrnF enhanced the coupled reaction.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+  - subject: prepared_prnd
+    predicate: catalyzed_in_assay
+    object: coupled_oxidation
+    notes: Prior-method primers disagree with Pf-5 Q4KAM4 termini; no exact native
+      mapping adopted.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods/Results inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1074/jbc.M505334200
+      evidence_type: CURATOR_INFERENCE
+      notes: Published primers compared with CP000076.1; full preparation remains
+        unresolved.
+      retrieved_on: '2026-10-06'
+  - subject: paba
+    predicate: was_substrate_for
+    object: coupled_oxidation
+    notes: Not aminopyrrolnitrin.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+  - subject: coupled_oxidation
+    predicate: yielded
+    object: pnba
+    notes: HPLC standard coelution and high-resolution MS; not pyrrolnitrin.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+  - subject: prepared_prnf
+    predicate: interacted_in_study_with
+    object: prepared_prnd
+    notes: Fluorescence of FAD-bound PrnF,membrane separation,gel filtration. No universal
+      monomer stoichiometry or exclusive endogenous partner asserted.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure4/Results inspected; supplement unread.
+      retrieved_on: '2026-10-06'
+- graph_id: pyrrolnitrin-bl915-1998-gene-expression-assignments
+  scope: BIOSYNTHESIS
+  description: BL915 gene-expression assignments, distinct from the existing PA23
+    database-assertion graph. Versioned nucleotide accession is cited as sequence
+    evidence, not assigned as a BGC identifier. Primary abstract and captions only;
+    full text, figure images, tables and supplement unread. No historical Pf-5 stock
+    identification, purified-enzyme kinetics, antimicrobial mechanism or full-record
+    sign-off.
+  nodes:
+  - node_id: locus
+    label: Native BL915 pyrrolnitrin locus (sequence U74493.1)
+    node_type: GENE_CLUSTER
+    grounding_status: UNGROUNDED
+  - node_id: prnA
+    label: PrnA native BL915 reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P95480
+  - node_id: prnA_study_product
+    label: PrnA study gene-expression product
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: prnA_assignment
+    label: Reported tryptophan chlorination
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: prnB
+    label: PrnB native BL915 reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P95481
+  - node_id: prnB_study_product
+    label: PrnB study gene-expression product
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: prnB_assignment
+    label: Reported ring rearrangement and decarboxylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: prnC
+    label: PrnC native BL915 reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P95482
+  - node_id: prnC_study_product
+    label: PrnC study gene-expression product
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: prnC_assignment
+    label: Reported monodechloroaminopyrrolnitrin chlorination
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: prnD
+    label: PrnD native BL915 reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P95483
+  - node_id: prnD_study_product
+    label: PrnD study gene-expression product
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: prnD_assignment
+    label: Reported aminopyrrolnitrin oxidation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: tryptophan
+    label: L-tryptophan
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+    identifier: CHEBI:16828
+  - node_id: chlorotryptophan
+    label: 7-chloro-L-tryptophan
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+    identifier: CHEBI:47356
+  - node_id: mda
+    label: Monodechloroaminopyrrolnitrin
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+    identifier: CHEBI:85785
+  - node_id: aprn
+    label: Aminopyrrolnitrin
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+    identifier: CHEBI:85786
+  - node_id: pyrrolnitrin
+    label: Pyrrolnitrin
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:32079
+  edges:
+  - subject: locus
+    predicate: encodes_native_reference
+    object: prnA
+    notes: U74493.1 CDS423..2039(+),1-based inclusive;AAB97504.1,538aa. CDS-aware
+      table11=GenPept=UniProt,reviewed entry88,sequencev1. Native source Bl915,taxon294;not
+      Pf-5 or PA23.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/U74493.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source/CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAB97504.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned protein inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/P95480
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact sequence and accession comparison.
+      retrieved_on: '2026-10-06'
+  - subject: prnA_study_product
+    predicate: has_native_sequence_reference
+    object: prnA
+    notes: Reference correspondence, not complete expression-construct equality.
+    evidence:
+    - reference: DOI:10.1128/JB.180.7.1939-1943.1998
+      evidence_type: CURATOR_INFERENCE
+      notes: Abstract and figure captions inspected.
+      retrieved_on: '2026-10-06'
+      snippet: identical in size and serology
+  - subject: prnA_study_product
+    predicate: was_genetically_assigned_to
+    object: prnA_assignment
+    notes: Gene-expression assignment; not isolated purified-enzyme turnover.
+    evidence:
+    - reference: DOI:10.1128/JB.180.7.1939-1943.1998
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract and figure captions inspected.
+      retrieved_on: '2026-10-06'
+  - subject: tryptophan
+    predicate: was_converted_in_reported_assignment
+    object: prnA_assignment
+    notes: No reaction rate or exact culture formulation asserted.
+    evidence:
+    - reference: DOI:10.1128/JB.180.7.1939-1943.1998
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract and figure captions inspected.
+      retrieved_on: '2026-10-06'
+  - subject: prnA_assignment
+    predicate: yielded_reported_product
+    object: chlorotryptophan
+    notes: No detailed catalytic intermediate asserted.
+    evidence:
+    - reference: DOI:10.1128/JB.180.7.1939-1943.1998
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract and figure captions inspected.
+      retrieved_on: '2026-10-06'
+  - subject: locus
+    predicate: encodes_native_reference
+    object: prnB
+    notes: U74493.1 CDS2039..3124(+),1-based inclusive;AAB97505.1,361aa. CDS-aware
+      table11=GenPept=UniProt,reviewed entry73,sequencev1. Native source Bl915,taxon294;not
+      Pf-5 or PA23. GenBank/GenPept gene qualifier saysprnA;productPrnB and exact
+      sequence/EMBL mapping identify this CDS.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/U74493.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source/CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAB97505.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned protein inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/P95481
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact sequence and accession comparison.
+      retrieved_on: '2026-10-06'
+  - subject: prnB_study_product
+    predicate: has_native_sequence_reference
+    object: prnB
+    notes: Reference correspondence, not complete expression-construct equality.
+    evidence:
+    - reference: DOI:10.1128/JB.180.7.1939-1943.1998
+      evidence_type: CURATOR_INFERENCE
+      notes: Abstract and figure captions inspected.
+      retrieved_on: '2026-10-06'
+  - subject: prnB_study_product
+    predicate: was_genetically_assigned_to
+    object: prnB_assignment
+    notes: Gene-expression assignment; not isolated purified-enzyme turnover.
+    evidence:
+    - reference: DOI:10.1128/JB.180.7.1939-1943.1998
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract and figure captions inspected.
+      retrieved_on: '2026-10-06'
+  - subject: chlorotryptophan
+    predicate: was_converted_in_reported_assignment
+    object: prnB_assignment
+    notes: No reaction rate or exact culture formulation asserted.
+    evidence:
+    - reference: DOI:10.1128/JB.180.7.1939-1943.1998
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract and figure captions inspected.
+      retrieved_on: '2026-10-06'
+  - subject: prnB_assignment
+    predicate: yielded_reported_product
+    object: mda
+    notes: No detailed catalytic intermediate asserted.
+    evidence:
+    - reference: DOI:10.1128/JB.180.7.1939-1943.1998
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract and figure captions inspected.
+      retrieved_on: '2026-10-06'
+  - subject: locus
+    predicate: encodes_native_reference
+    object: prnC
+    notes: U74493.1 CDS3167..4870(+),1-based inclusive;AAB97506.1,567aa. CDS-aware
+      table11=GenPept=UniProt,reviewed entry65,sequencev1. Native source Bl915,taxon294;not
+      Pf-5 or PA23.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/U74493.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source/CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAB97506.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned protein inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/P95482
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact sequence and accession comparison.
+      retrieved_on: '2026-10-06'
+  - subject: prnC_study_product
+    predicate: has_native_sequence_reference
+    object: prnC
+    notes: Reference correspondence, not complete expression-construct equality.
+    evidence:
+    - reference: DOI:10.1128/JB.180.7.1939-1943.1998
+      evidence_type: CURATOR_INFERENCE
+      notes: Abstract and figure captions inspected.
+      retrieved_on: '2026-10-06'
+  - subject: prnC_study_product
+    predicate: was_genetically_assigned_to
+    object: prnC_assignment
+    notes: Gene-expression assignment; not isolated purified-enzyme turnover.
+    evidence:
+    - reference: DOI:10.1128/JB.180.7.1939-1943.1998
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract and figure captions inspected.
+      retrieved_on: '2026-10-06'
+  - subject: mda
+    predicate: was_converted_in_reported_assignment
+    object: prnC_assignment
+    notes: No reaction rate or exact culture formulation asserted.
+    evidence:
+    - reference: DOI:10.1128/JB.180.7.1939-1943.1998
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract and figure captions inspected.
+      retrieved_on: '2026-10-06'
+  - subject: prnC_assignment
+    predicate: yielded_reported_product
+    object: aprn
+    notes: No detailed catalytic intermediate asserted.
+    evidence:
+    - reference: DOI:10.1128/JB.180.7.1939-1943.1998
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract and figure captions inspected.
+      retrieved_on: '2026-10-06'
+  - subject: locus
+    predicate: encodes_native_reference
+    object: prnD
+    notes: U74493.1 CDS4895..5986(+),1-based inclusive;AAB97507.1,363aa. CDS-aware
+      table11=GenPept=UniProt,reviewed entry92,sequencev1. Native source Bl915,taxon294;not
+      Pf-5 or PA23.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/U74493.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source/CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAB97507.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned protein inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/P95483
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact sequence and accession comparison.
+      retrieved_on: '2026-10-06'
+  - subject: prnD_study_product
+    predicate: has_native_sequence_reference
+    object: prnD
+    notes: Reference correspondence, not complete expression-construct equality.
+    evidence:
+    - reference: DOI:10.1128/JB.180.7.1939-1943.1998
+      evidence_type: CURATOR_INFERENCE
+      notes: Abstract and figure captions inspected.
+      retrieved_on: '2026-10-06'
+  - subject: prnD_study_product
+    predicate: was_genetically_assigned_to
+    object: prnD_assignment
+    notes: Gene-expression assignment; not isolated purified-enzyme turnover.
+    evidence:
+    - reference: DOI:10.1128/JB.180.7.1939-1943.1998
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract and figure captions inspected.
+      retrieved_on: '2026-10-06'
+  - subject: aprn
+    predicate: was_converted_in_reported_assignment
+    object: prnD_assignment
+    notes: No reaction rate or exact culture formulation asserted.
+    evidence:
+    - reference: DOI:10.1128/JB.180.7.1939-1943.1998
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract and figure captions inspected.
+      retrieved_on: '2026-10-06'
+  - subject: prnD_assignment
+    predicate: yielded_reported_product
+    object: pyrrolnitrin
+    notes: No detailed catalytic intermediate asserted.
+    evidence:
+    - reference: DOI:10.1128/JB.180.7.1939-1943.1998
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract and figure captions inspected.
+      retrieved_on: '2026-10-06'
+- graph_id: pyrrolnitrin-2007-orf2-surrogate-coupling
+  scope: BIOSYNTHESIS
+  description: Candidate ORF2 coupling experiment for the pyrrolnitrin-associated
+    PrnD system, using a surrogate substrate. Current native reference and unresolved
+    study preparations remain distinct. No direct ORF2-PrnD binding, complete physiological
+    pathway, endogenous necessity, quantitative flux, antimicrobial mechanism or full-record
+    sign-off asserted.
+  nodes:
+  - node_id: pf5
+    label: Pseudomonas protegens Pf-5
+    node_type: ORGANISM
+    grounding_status: GROUNDED
+    identifier: NCBITaxon:220664
+  - node_id: native_orf2
+    label: ORF2 candidate native sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4KAM9
+  - node_id: prepared_orf2
+    label: Study ORF2 preparation (sequence unresolved)
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+  - node_id: prepared_prnd
+    label: Study PrnD preparation (sequence unresolved)
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+  - node_id: paba
+    label: p-Aminobenzylamine surrogate substrate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: readout
+    label: Reported pABA N-oxygenation readout
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: coupled_assay
+    label: Reported ORF2/PrnD surrogate oxidation assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: pf5
+    predicate: encodes_native_reference
+    object: native_orf2
+    notes: PFL_3602/AAY92868.1, 360 aa; CP000076.1 CDS 4153602..4154684(+), 1-based
+      inclusive. CDS-aware table 11 translation equals GenPept and UniProt Q4KAM9,
+      unreviewed sequence version 1. Not a historical stock sequence.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAY92868.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned protein and source qualifiers inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4KAM9
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence, locus, strain and taxon comparison.
+      retrieved_on: '2026-10-06'
+  - subject: prepared_orf2
+    predicate: has_candidate_native_locus_reference
+    object: native_orf2
+    notes: Figure 2 position and 360-aa length suggest PFL_3602, but cloning primers,
+      tags and exact translated stock are not established. BAB51856 is a similarity
+      reference, not the tested sequence. Candidate mapping only.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: CURATOR_INFERENCE
+      notes: Main text and Figure 2 inspected; supplement unread. Historical constructs
+        unverified.
+      retrieved_on: '2026-10-06'
+  - subject: prepared_orf2
+    predicate: supported_reported_coupled_assay
+    object: coupled_assay
+    notes: The purified ORF2 preparation supported lower surrogate conversion than
+      PrnF. Exact assay conditions are insufficiently resolved for a quantitative
+      rate claim. No endogenous partner exclusivity or necessity inferred.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main text and Figure 2 inspected; supplement unread. Historical constructs
+        unverified.
+      retrieved_on: '2026-10-06'
+  - subject: prepared_prnd
+    predicate: catalyzed_reported_surrogate_oxidation
+    object: coupled_assay
+    notes: Unresolved preparation from the cited prior method. Published primers disagree
+      with Pf-5 Q4KAM4 termini; no exact native identifier adopted.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main text and Figure 2 inspected; supplement unread. Historical constructs
+        unverified.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1074/jbc.M505334200
+      evidence_type: CURATOR_INFERENCE
+      notes: Prior-method primers inspected; mismatch with CP000076.1 retained.
+      retrieved_on: '2026-10-06'
+  - subject: paba
+    predicate: was_reported_substrate_of
+    object: coupled_assay
+    notes: Surrogate arylamine, not aminopyrrolnitrin.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main text and Figure 2 inspected; supplement unread. Historical constructs
+        unverified.
+      retrieved_on: '2026-10-06'
+  - subject: coupled_assay
+    predicate: had_reported_readout
+    object: readout
+    notes: Qualitative N-oxygenation readout only. No independently inspected ORF2-specific
+      product chromatogram, exact product identity or pyrrolnitrin production result
+      adopted.
+    evidence:
+    - reference: DOI:10.1128/JB.01050-07
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main text and Figure 2 inspected; supplement unread. Historical constructs
+        unverified.
+      retrieved_on: '2026-10-06'
+causal_graph_refs:
+- pyrrolnitrin-2005-ssue-assisted-oxygenation
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -806,4 +1422,74 @@ curation_history:
   changes: Added a proposed Pseudomonas chlororaphis PA23 PrnA-PrnD pyrrolnitrin biosynthetic
     pathway and BIOSYNTHESIS causal graph grounded to UniProtKB:A8W2Z0, UniProtKB:A8W2Z1,
     UniProtKB:A8W2Z2, and UniProtKB:A8W2Z3.
+  llm_assisted: true
+- timestamp: '2026-10-06T14:39:32Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added one bounded BIOSYNTHESIS graph with 11 nodes and 12 DOI-or-stable-URL-cited
+    edges for PrnF reductase and coupled surrogate-substrate experiments. Native Pf-5
+    PrnF/Q4KAM2 corresponds to PFL_3609/AAY92875.1 by exact CP000076.1 CDS-aware table-11
+    translation, GenPept and UniProt comparison; published primer cores match native
+    CDS ends. The native reference is not the complete processed study stock. Paper
+    prose160aa versus Figure2/native186aa and BAA-447 versus database BAA-477 remain
+    unresolved. Primary DOI:10.1128/JB.01050-07 main, Figures2-4 and Table1 inspected;
+    supplement unread. Five quoted words adopted. PrnD preparation remains REVIEW_NEEDED
+    without a UniProt identifier: prior-method DOI:10.1074/jbc.M505334200 primers
+    disagree with Pf-5 reference termini and match the older BL915 locus, which does
+    not identify the historical stock. Separated FAD reduction, inferred coupling,
+    surrogate p-aminobenzylamine oxidation and prepared-protein interaction. No new
+    pyrrolnitrin synthesis step, exclusive endogenous reductase, universal complex
+    stoichiometry, physiological flux or antimicrobial mechanism asserted. Preserved
+    complete PA23 graph and four proposed pathway steps, source fields and evidence
+    grades, stereochemistry, SEEDED status, AntibioticMech link and prior history.
+    No full-record sign-off.'
+  llm_assisted: true
+- timestamp: '2026-10-06T15:18:34Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added one bounded BIOSYNTHESIS graph with 18 nodes and 20 DOI-or-stable-URL-cited
+    edges for native BL915 PrnA/P95480, PrnB/P95481, PrnC/P95482 and PrnD/P95483.
+    U74493.1 CDS-aware table-11 translations match independent versioned GenPept and
+    UniProt sequences. PrnB's deposited prnA gene qualifier conflicts with its PrnB
+    product and exact sequence mapping; discrepancy retained. Primary DOI:10.1128/JB.180.7.1939-1943.1998
+    abstract and figure captions support gene-expression assignments. Full text, images,
+    tables and supplement unread. Native references remain distinct from complete
+    study-expression preparations. Five quoted abstract words adopted; not purified-enzyme
+    turnover or kinetics. No identification of later disputed Pf-5 assay stocks, physiological
+    flux, complex stoichiometry or antimicrobial mechanism asserted. Preserved complete
+    PA23 graph/four proposed pathway steps, preceding bounded PrnF graph, source fields/evidence
+    grades, stereochemistry, SEEDED status, AntibioticMech link and prior history.
+    No producer-grade upgrade or full-record sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-06T17:19:13Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added one bounded BIOSYNTHESIS graph with 7 nodes and 6 DOI-or-stable-URL-cited
+    edges for the reported ORF2/PrnD surrogate-substrate experiment. Native candidate
+    Pf-5 Q4KAM9/PFL_3602/AAY92868.1 is verified by exact CP000076.1 CDS-aware table-11
+    translation, GenPept and UniProt comparison. Primary DOI:10.1128/JB.01050-07 main
+    and Figure2 inspected; supplement unread. Figure position and360aa length support
+    only a candidate native-locus correspondence, not complete historical construct
+    identity. ORF2 and PrnD preparations remain REVIEW_NEEDED without protein identifiers;
+    prior-method PrnD primer mismatch remains explicit. Zero new quotes. The qualitative
+    p-aminobenzylamine N-oxygenation readout does not establish an independently inspected
+    ORF2-specific product identity, pyrrolnitrin production, binding, endogenous necessity
+    or physiological flux. Preserved all PA23 pathway/graph, PrnF and BL915 graphs,
+    source fields/grades, stereochemistry, SEEDED status, AntibioticMech link and
+    prior history. No antimicrobial mechanism or full-record sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-06T18:02:53Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added one exact-owner BIOSYNTHESIS component with 7 nodes and 6 cited edges
+    for in-vitro aminopyrrolnitrin oxidation by reconstituted PrnD and heterologous
+    SsuE, DOI:10.1074/jbc.M505334200. Main Methods/Results and Figure3 inspected;
+    supplement unread. Six quoted words. Both historical preparations remain REVIEW_NEEDED
+    without protein identifiers. Modern XL1-Blue CP132550.1 primer-bounded191aa inference
+    equals K12 P80644 but does not identify the historical stock; reported672bp PCR
+    length and PrnD Pf-5/BL915 primer discrepancy retained. Exact product supported
+    by HPLC/NMR/high-resolution EI-MS; assay composition is not complex stoichiometry.
+    No endogenous partner, native-cell flux, binding, antimicrobial mechanism or full-record
+    sign-off. All four prior graphs, four pathway steps, source fields/grades, stereochemistry,
+    SEEDED status, AntibioticMech link and history preserved.
   llm_assisted: true

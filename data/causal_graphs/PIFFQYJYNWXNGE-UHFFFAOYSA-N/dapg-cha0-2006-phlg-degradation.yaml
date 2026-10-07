@@ -1,0 +1,180 @@
+record_id: CHEBI:78688
+standard_inchi_key: PIFFQYJYNWXNGE-UHFFFAOYSA-N
+graph:
+  graph_id: dapg-cha0-2006-phlg-degradation
+  scope: BIOSYNTHESIS
+  description: 'CHA0 pathway-associated DAPG turnover, not a synthesis step: a native
+    PhlG reference is distinct from the tagged E.coli-expressed preparation. REVIEW_NEEDED
+    retains differing307aa and294aa native reference annotations. Evidence is bounded
+    to the primary abstract and captions. No whole-cell flux, universal specificity,
+    pyoluteorin binding mechanism or antimicrobial target asserted. Main/images/tables/SI
+    unread; no producer-grade upgrade or full-record sign-off.'
+  nodes:
+  - node_id: cha0
+    label: Native CHA0 reference source
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: native_phlg
+    label: PhlG AF207529.2 CHA0 sequence reference (variant unresolved)
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+    identifier: UniProtKB:A0A2C9EVE6
+  - node_id: preparation
+    label: Study purified PhlG-His6 (complete construct unresolved)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: host
+    label: Study E. coli BL21(DE3)/pME8032 expression context
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: reaction
+    label: Reported PhlG-His6 DAPG degradation assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: dapg
+    label: 2,4-diacetylphloroglucinol
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:78688
+  - node_id: mapg
+    label: monoacetylphloroglucinol
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:64344
+  - node_id: acetate
+    label: Source-assigned acetate product
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cha0
+    predicate: encodes_native_reference
+    object: native_phlg
+    notes: AF207529.2 CDS2234..3157(-),1-based inclusive; AAF20929.2,307aa. CDS-aware
+      table11 translation equals independent GenPept and current UniProt. Native sourceCHA0,not
+      Pf-5 or Q2-87; no complete historical assay-stock sequence inferred. UniProt
+      primaryA0A2C9EVE6 has secondaryQ9RF01 and strain taxon1124983; GenBank/GenPept
+      use species taxon380021. Sequencev1 updated2017-12-20 does not establish the
+      complete2006 preparation or tag sequence. Revised CHA0 genome LS999205.1 CDS6558372..6559256(+),
+      VAV72158.1, encodes294aa, exactly residues14..307 of this307aa reference; the13aa
+      N-terminal difference does not identify the historical assay start site. REVIEW_NEEDED
+      retains reference-version/strain-stock ambiguity. No source is silently replaced;
+      no engineered mutation or biological cause of these sequence differences is
+      inferred.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF207529.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAF20929.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent native translation and source inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/A0A2C9EVE6
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact AF207529.2/GenPept/UniProt correspondence; differing genome reference
+        and historical-stock ambiguity retained.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LS999205.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Revised CHA0/taxon1124983 genome source and CDS-aware table11 translation
+        inspected and compared exactly; not an independent historical assay-stock
+        sequence.
+      retrieved_on: '2026-10-06'
+  - subject: preparation
+    predicate: has_native_sequence_reference
+    object: native_phlg
+    notes: The paper names CHA0 PhlG; AF207529.2 reference selected by gene/strain.
+      Full recombinant sequence, tag terminus/linker and exact historical stock not
+      established. The307aa AF207529.2/UniProt reference differs from the294aa revised-genome
+      annotation; neither is established as the complete His-tagged preparation.
+    evidence:
+    - reference: DOI:10.1128/AEM.72.1.418-427.2006
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract and figure captions inspected; main text, figure images,
+        tables and SI unread after the first fulltext route returned CAPTCHA. Complete
+        constructs, historical sequences and full assay conditions unresolved.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF207529.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LS999205.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Revised CHA0/taxon1124983 genome source and CDS-aware table11 translation
+        inspected and compared exactly; not an independent historical assay-stock
+        sequence.
+      retrieved_on: '2026-10-06'
+  - subject: host
+    predicate: was_expression_context_for
+    object: preparation
+    notes: Figure4 caption identifies BL21(DE3)/pME8032 and the purified His6-labeled
+      preparation. Expression host is not a native DAPG producer assertion.
+    evidence:
+    - reference: DOI:10.1128/AEM.72.1.418-427.2006
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract and figure captions inspected; main text, figure images,
+        tables and SI unread after the first fulltext route returned CAPTCHA. Complete
+        constructs, historical sequences and full assay conditions unresolved.
+      retrieved_on: '2026-10-06'
+  - subject: preparation
+    predicate: catalyzes_reported_degradation
+    object: reaction
+    notes: Purified tagged-enzyme conversion reported in the abstract; Figure5 caption
+      describes an HPLC time course. No kinetic constants or complete buffer composition
+      imported from the abstract or caption alone.
+    evidence:
+    - reference: DOI:10.1128/AEM.72.1.418-427.2006
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract and figure captions inspected; main text, figure images,
+        tables and SI unread after the first fulltext route returned CAPTCHA. Complete
+        constructs, historical sequences and full assay conditions unresolved.
+      retrieved_on: '2026-10-06'
+      snippet: catalyzed the degradation
+  - subject: dapg
+    predicate: is_reported_substrate_of
+    object: reaction
+    notes: Exact named assay substrate; not a claim about every DAPG protonation state,
+      intracellular concentration, native flux or biosynthetic direction.
+    evidence:
+    - reference: DOI:10.1128/AEM.72.1.418-427.2006
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract and figure captions inspected; main text, figure images,
+        tables and SI unread after the first fulltext route returned CAPTCHA. Complete
+        constructs, historical sequences and full assay conditions unresolved.
+      retrieved_on: '2026-10-06'
+  - subject: reaction
+    predicate: yields_reported_product
+    object: mapg
+    notes: MAPG is the reported degradation product, not phloroglucinol. No further
+      MAPG turnover or universal substrate specificity inferred.
+    evidence:
+    - reference: DOI:10.1128/AEM.72.1.418-427.2006
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract and figure captions inspected; main text, figure images,
+        tables and SI unread after the first fulltext route returned CAPTCHA. Complete
+        constructs, historical sequences and full assay conditions unresolved.
+      retrieved_on: '2026-10-06'
+  - subject: reaction
+    predicate: yields_reported_product
+    object: acetate
+    notes: Acetate is reported with MAPG in the primary abstract. No independent analytical
+      identity procedure or balanced reaction is reconstructed here.
+    evidence:
+    - reference: DOI:10.1128/AEM.72.1.418-427.2006
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract and figure captions inspected; main text, figure images,
+        tables and SI unread after the first fulltext route returned CAPTCHA. Complete
+        constructs, historical sequences and full assay conditions unresolved.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T18:41:53Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component; reviewed baseline 869c40b7a4b573d9b7e6b29fde10dc62339f189e.
+    CHA0 PhlG-associated DAPG degradation,8nodes7edges. Native AF207529.2 A0A2C9EVE6/AAF20929.2
+    307-aa reference differs from revised LS999205.1 294-aa annotation; REVIEW_NEEDED,not
+    an exact historical His-tagged stock. DOI:10.1128/AEM.72.1.418-427.2006 abstract
+    and captions only; CAPTCHA stop respected. Three quoted words. Purified preparation
+    produces reported MAPG and acetate; no complete kinetics,universal specificity
+    or native flux.
+  llm_assisted: true

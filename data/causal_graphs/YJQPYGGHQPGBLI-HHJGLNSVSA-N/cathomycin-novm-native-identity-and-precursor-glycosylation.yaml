@@ -1,0 +1,211 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novm-native-identity-and-precursor-glycosylation
+  scope: BIOSYNTHESIS
+  description: 'Native NovM identity, a distinct His8 preparation and bounded primary
+    glycosylation evidence. Review #563. The BGC0000834 cathomycin owner retains its
+    unspecified sugar stereocentre and SEEDED status. These precursor and recombinant
+    assays do not resolve that stereocentre or justify an exact-key merge with fully
+    specified novobiocin.'
+  nodes:
+  - node_id: cluster
+    label: Deposited novobiocin cluster underlying the cathomycin owner
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000834
+  - node_id: gene
+    label: Deposited novM locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: native
+    label: Deposited native NovM sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F5
+  - node_id: provenance
+    label: Historical strain and engineered-sequence limits
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: prep
+    label: Freel Meyers 2003 C-terminal His8 NovM preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: host
+    label: Reported E. coli NovM expression host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: reaction
+    label: NovM precursor noviosylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: acid
+    label: Novobiocic acid acceptor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: sugar
+    label: TDP-L-noviose donor, historical assay label
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: product
+    label: Desmethyldescarbamoylnovobiocin precursor
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: annotation
+    label: Database reaction annotation and donor nomenclature
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: kinetics
+    label: Database-reported NovM kinetic values
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: contains
+    object: gene
+    notes: AF170880.4 novM spans 14106..15245(+), 1140 nt including stop.
+    evidence:
+    - reference: https://mibig.secondarymetabolites.org/go/BGC0000834.5
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact owner/locus association.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: novM CDS.
+  - subject: gene
+    predicate: encodes_native_reference
+    object: native
+    notes: All 379 aa of AAF67506.1 match Q9L9F5 and CDS-aware table-11 translations
+      of AF170880.2/.3/.4. Earlier coordinates are 14054..15193(+).
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current CDS.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Historical CDS.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.3
+      evidence_type: DATABASE_ASSERTION
+      notes: Intermediate CDS.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F5
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed Q9L9F5, entry 77, sequence 1; annotation 2025-04-09, sequence
+        2000-10-01, retrieved 2026-10-04. Native sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent exact three-version translation comparison.
+  - subject: native
+    predicate: has_identity_boundary
+    object: provenance
+    notes: The current deposit names S. niveus NCIMB 9219; UniProt taxon 193462 retains
+      historical reference comments including ATCC 23965/NCIMB 11891. These labels
+      do not prove strain synonymy or identify a complete historical fusion.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Source qualifiers.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F5
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed Q9L9F5, entry 77, sequence 1; annotation 2025-04-09, sequence
+        2000-10-01, retrieved 2026-10-04. Organism and reference strain comments.
+  - subject: gene
+    predicate: is_named_source_of
+    object: prep
+    notes: The abstract reports soluble expression and purification to homogeneity
+      of a C-terminal His8 fusion from S. spheroides. No full fusion sequence or quantitative
+      purity is assigned.
+    evidence:
+    - reference: DOI:10.1021/bi0340088
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only. Preparation report. Complete methods, tables and
+        figures were not independently inspected.
+  - subject: host
+    predicate: expressed
+    object: prep
+    notes: The abstract identifies E. coli, not a host strain, vector, yield or induction
+      protocol.
+    evidence:
+    - reference: DOI:10.1021/bi0340088
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only. Reported experiment. Complete methods, tables
+        and figures were not independently inspected.
+  - subject: prep
+    predicate: catalyzes
+    object: reaction
+    notes: Reported turnover exceeds 300 min^-1. Detailed kinetic conditions and uncertainty
+      are outside the inspected abstract.
+    evidence:
+    - reference: DOI:10.1021/bi0340088
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only. Reported experiment. Complete methods, tables
+        and figures were not independently inspected.
+  - subject: acid
+    predicate: is_acceptor_for
+    object: reaction
+    notes: The study obtained this aglycon by selective novobiocin degradation.
+    evidence:
+    - reference: DOI:10.1021/bi0340088
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only. Reported experiment. Complete methods, tables
+        and figures were not independently inspected.
+  - subject: sugar
+    predicate: is_donor_for
+    object: reaction
+    notes: The donor came from an eleven-step chemical synthesis beginning with L-rhamnose;
+      this is not an enzymatic sugar-biosynthesis assay.
+    evidence:
+    - reference: DOI:10.1021/bi0340088
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only. Reported experiment. Complete methods, tables
+        and figures were not independently inspected.
+  - subject: reaction
+    predicate: forms
+    object: product
+    notes: The source assigns the glycosylated precursor, not fully tailored novobiocin.
+    evidence:
+    - reference: DOI:10.1021/bi0340088
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract only. Reported experiment. Complete methods, tables
+        and figures were not independently inspected.
+  - subject: native
+    predicate: has_database_reaction_annotation
+    object: annotation
+    notes: 'UniProt gives EC 2.4.1.302 and RHEA:36695: dTDP-4-O-demethyl-beta-L-noviose
+      plus novobiocic acid yields desmethyldescarbamoylnovobiocin, dTDP and H(+).
+      The historical TDP-L-noviose label must not imply an already 4-O-methylated
+      donor. The reaction identifier is not a protein identifier.'
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F5
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed Q9L9F5, entry 77, sequence 1; annotation 2025-04-09, sequence
+        2000-10-01, retrieved 2026-10-04. Catalytic activity and function.
+  - subject: annotation
+    predicate: clarifies_historical_label
+    object: sugar
+    notes: Retain the source label alongside the database naming; no donor stereochemistry
+      or final-product identity is inferred from the abbreviated name alone.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F5
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed Q9L9F5, entry 77, sequence 1; annotation 2025-04-09, sequence
+        2000-10-01, retrieved 2026-10-04. Explicit 4-O-demethyl donor annotation.
+    - reference: DOI:10.1021/bi0340088
+      evidence_type: CURATOR_INFERENCE
+      notes: Comparison of the abstract donor name with database terminology.
+  - subject: native
+    predicate: has_database_kinetic_annotation
+    object: kinetics
+    notes: UniProt reports Km 32 uM and kcat 313 min^-1 with novobiocic acid. These
+      exact values are database assertions; the primary table and assay conditions
+      were not recovered, and Km is not a measured binding Kd.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F5
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed Q9L9F5, entry 77, sequence 1; annotation 2025-04-09, sequence
+        2000-10-01, retrieved 2026-10-04. Biophysicochemical properties.
+curation_history:
+- timestamp: '2026-10-05T00:15:08Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cathomycin-novm-native-identity-and-precursor-glycosylation with source-bounded
+    NovM/redox evidence and #563 findings.'
+  llm_assisted: true

@@ -143,7 +143,11 @@ def _load_lockfile(paths_file: Path) -> dict[str, tuple[str, str]]:
 
 
 def load_structure_records(corpus_dir: Path, paths_file: Path) -> list[StructureRecord]:
-    """Load exactly the lockfile set and sort it by identifier."""
+    """Load exactly the lockfile set and sort it by identifier.
+
+    Deliberately read raw owners: this map uses structures, never mechanisms.
+    Graph-component completeness belongs to the corpus/strict validation gates.
+    """
 
     locked = _load_lockfile(paths_file)
     documents: dict[str, tuple[Path, dict[str, Any]]] = {}

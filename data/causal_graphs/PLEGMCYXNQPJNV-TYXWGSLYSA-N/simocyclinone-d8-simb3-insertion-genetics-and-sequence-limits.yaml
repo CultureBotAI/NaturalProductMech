@@ -1,0 +1,211 @@
+record_id: naturalproductmech:mibig-e03313fa44
+standard_inchi_key: PLEGMCYXNQPJNV-TYXWGSLYSA-N
+graph:
+  graph_id: simocyclinone-d8-simb3-insertion-genetics-and-sequence-limits
+  scope: BIOSYNTHESIS
+  description: 'Native-producer SimB3 insertion genetics reported by Trefzer et al.
+    support involvement in simocyclinone biosynthesis, but not a purified 2,3-dehydratase
+    reaction or exclusion of polar effects. The two deposited 482-aa proteins differ
+    at residue 134 and remain distinct; neither accession denotes the engineered Sim-C2
+    allele. Reported internal-fragment size, the uncorrected degenerate-primer discrepancy,
+    HPLC detection limits and source-assigned A1 identity are retained (review #541).
+    This is separate from the paper''s multigene Sim-PKSII insertion and does not
+    adopt its tetraene-pathway hypotheses.'
+  nodes:
+  - node_id: simb3
+    label: Deposited SimB3, putative sugar 2,3-dehydratase (Leu134)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9AMH2
+  - node_id: sim20
+    label: Alternate deposited Sim20 / SimB3 protein (Pro134)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q93F99
+  - node_id: gene
+    label: Native simB3 locus targeted in the Trefzer study
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: construct
+    label: pSP1-C2 internal-fragment insertion construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: mutant
+    label: S. antibioticus Tu6040 insertion mutant Sim-C2
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: wildtype
+    label: S. antibioticus Tu6040 wild-type comparator
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: detected
+    label: Wild-type D8 peak detected by HPLC-UV/Vis
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: undetected
+    label: D8 not detected in Sim-C2 by HPLC-UV/Vis
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: a1
+    label: Source-assigned simocyclinone A1 accumulation in Sim-C2
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: olivose
+    label: Inferred SimB3 contribution to dNDP-D-olivose biosynthesis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: gene
+    predicate: encodes_deposited_native_protein
+    object: simb3
+    notes: The 1449-nt CDS including stop at AF324838.2:71408..72856(+) encodes AAK06810.1.
+      CDS-aware table-11 translation and deposited translation exactly match the 482-aa
+      UniProt Q9AMH2 sequence. This is the source-linked native sequence, not a sequence
+      of the disrupted allele or a purified experimental protein.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Native simB3 sequence, strain Tue6040, cosmid 5J10, taxon 1890.
+    - reference: https://www.uniprot.org/uniprotkb/Q9AMH2
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q9AMH2, gene simB3, taxon 1890; entry version 27, sequence
+        version 1, annotation updated 2025-02-05; inspected 2026-10-04. Automatic
+        function is not a catalytic assay.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent CDS-aware translation and exact protein comparison.
+  - subject: sim20
+    predicate: differs_in_deposited_sequence_from
+    object: simb3
+    notes: AF322256.1:26613..28061(+) encodes 482-aa AAL15606.1 / Q93F99 (gene sim20).
+      Exact CDS-aware translation agrees with Q93F99, but comparison to Q9AMH2 gives
+      Leu134 versus Pro134. CDS positions 401/402 change CTG to CCT; position 243
+      changes CGG to CGC synonymously at Arg81. Both deposits name Tu6040 and taxon
+      1890. The discrepancy is not resolved as natural polymorphism, sequencing error
+      or a measured functional difference, and the two proteins are not merged as
+      identical examples.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent native sim20 deposit; not a mutant assay.
+    - reference: https://www.uniprot.org/uniprotkb/Q93F99
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q93F99, entry version 27, sequence version 1; annotation updated
+        2025-02-05; inspected 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Pairwise protein and CDS comparison against AF322256.1.
+  - subject: construct
+    predicate: contains_reported_internal_fragment_of
+    object: gene
+    notes: Methods report a 0.8-kb internal simB3 PCR fragment (Figure 2 fragment
+      A) ligated into the singular XbaI site of erythromycin resistance vector pSP1.
+      The exact insert and whole plasmid were not independently sequenced here. The
+      gene-discovery primers as printed are PCR-D1a CAGGCSACSWSSAACTACAC and PCR-D1b
+      SWRGAASCGSCCSCCCTCCT (R=A/G, W=A/T, S=C/G). The former has no exact IUPAC-compatible
+      match on either strand of AF324838.2; the latter maps uniquely to 72666..72685(-).
+      No primer is silently repaired and no exact amplicon length or failed experimental
+      amplification is inferred.
+    evidence:
+    - reference: DOI:10.1128/AAC.46.5.1174-1182.2002
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Methods: PCR and chromosomal-mutant construction; Figure 2.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal-primer search of the complete deposited sequence, both strands.
+        A computational mismatch does not disprove the source-reported construct.
+  - subject: mutant
+    predicate: has_reported_chromosomal_integration_of
+    object: construct
+    notes: Unmethylated plasmid was prepared in E. coli ET12567 and introduced into
+      native-producer protoplasts; erythromycin selection and PCR supported integration.
+      Sim-C2 is an insertional disruption, not a clean whole-gene deletion. The inspected
+      article does not report SimB3 complementation, a complete sequenced mutant allele
+      or exclusion of polar effects.
+    evidence:
+    - reference: DOI:10.1128/AAC.46.5.1174-1182.2002
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Methods and insertional-inactivation results.
+      snippet: PCR analysis confirmed the integration
+  - subject: wildtype
+    predicate: is_reported_production_comparator_for
+    object: mutant
+    notes: Figure 3 compares culture extracts from wild type and Sim-C2. The methods
+      describe 2% mannitol / 2% soybean meal, pH 7.5, 28 C, with 20 mL liquid culture
+      in a single-baffled 100-mL Erlenmeyer flask; mutant maintenance uses 50 ug/mL
+      erythromycin. Production, extraction and HPLC details are referred to earlier
+      publications. The shown comparison is not a matched empty-vector strain or a
+      purified substrate-turnover experiment.
+    evidence:
+    - reference: DOI:10.1128/AAC.46.5.1174-1182.2002
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Strains/growth and analytical methods; Figure 3.
+  - subject: wildtype
+    predicate: has_assay_phenotype
+    object: detected
+    notes: The wild-type culture extract has a source-assigned D8 peak, retention
+      time 10.8 min, with the displayed UV/visible spectrum. This is a qualitative
+      HPLC-UV/Vis comparison, not a reported absolute titer, mass-spectrometric identification
+      or independent resolution of the owner's six unspecified stereocentres.
+    evidence:
+    - reference: DOI:10.1128/AAC.46.5.1174-1182.2002
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Insertional-inactivation results and Figure 3/caption.
+  - subject: mutant
+    predicate: has_assay_phenotype
+    object: undetected
+    notes: D8 was not detected in the Sim-C2 culture extract under the reported HPLC-UV/Vis
+      conditions. No numerical detection limit, replicate count, uncertainty, fold
+      change or absolute zero is assigned from this figure. Loss of the product signal
+      does not isolate a single enzyme reaction or distinguish the disrupted gene's
+      effect from possible effects on neighboring expression.
+    evidence:
+    - reference: DOI:10.1128/AAC.46.5.1174-1182.2002
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Insertional-inactivation results and Figure 3/caption.
+  - subject: mutant
+    predicate: has_assay_phenotype
+    object: a1
+    notes: The source assigns the accumulated 5.8-min HPLC-UV/Vis peak to simocyclinone
+      A1. This graph preserves that historical assignment as a phenotype; it does
+      not mint an exact chemical accession, infer all A1 stereochemistry, or call
+      the extract a pure compound. Figure 3 does not provide an absolute A1 titer.
+    evidence:
+    - reference: DOI:10.1128/AAC.46.5.1174-1182.2002
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Insertional-inactivation results and Figure 3/caption.
+      snippet: accumulation of simocyclinone A1
+  - subject: simb3
+    predicate: is_proposed_to_participate_in
+    object: olivose
+    notes: The source proposes a dNDP-4-keto-6-deoxyglucose 2,3-dehydratase role from
+      sequence similarity and the deoxysugar-pathway model. Table 1 compares SpnO
+      (AAG23276, 54% identity), which is a homolog, not the native SimB3 accession.
+      Genetic production effects do not establish purified catalysis, substrate specificity
+      or kinetics.
+    evidence:
+    - reference: DOI:10.1128/AAC.46.5.1174-1182.2002
+      evidence_type: CURATOR_INFERENCE
+      notes: dTDP-D-olivose discussion, Table 1 and hypothetical Figure 1; explicit
+        source hypothesis, not a direct enzyme assay.
+  - subject: a1
+    predicate: is_consistent_with_source_proposal_of
+    object: olivose
+    notes: The authors interpret A1 accumulation together with loss of the D8 signal
+      as disruption of deoxysugar assembly while angucycline production persists.
+      This is an inference from metabolite profiles, not a direct measurement proving
+      absence of every dTDP-D-olivose molecule or a SimB3-specific catalytic block
+      independent of insertion effects.
+    evidence:
+    - reference: DOI:10.1128/AAC.46.5.1174-1182.2002
+      evidence_type: CURATOR_INFERENCE
+      notes: Bounded interpretation of insertional-inactivation results.
+curation_history:
+- timestamp: '2026-10-04T11:59:28Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added ten nodes and ten DOI/stable-URL-cited edges for native SimB3 insertion
+    evidence; preserved Leu134/Pro134 deposit difference, literal-primer mismatch
+    and phenotype-versus-catalysis limits. Two primary snippets total nine words;
+    exact experimental allele and A1 stereochemistry unresolved.
+  llm_assisted: true

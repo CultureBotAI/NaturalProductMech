@@ -24,6 +24,10 @@
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
 </p>
+<div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/unclassified/phenalinolactone-a.yaml">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
 
 <h2>Structure</h2>
 <div class="scroll"><table>
@@ -54,7 +58,7 @@ same claim.</p>
 </tr>
 </table></div>
 
-<h2>Occurrences <span class="tag">2</span></h2>
+<h2 id="occurrences">Occurrences <span class="tag">2</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
 <div class="scroll"><table>
@@ -71,7 +75,7 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 </tr>
 </table></div>
 
-<h2>Biosynthetic gene clusters <span class="tag">1</span></h2>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">1</span></h2>
 <div class="scroll"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
@@ -601,6 +605,469 @@ by the corpus tests.</p>
   <td>Proposed phenalinolactone 3-O-acetylation</td>
   <td>Deletion/rescue and deacetylated products support 3-O-acetylation, including proposed X1-to-D conversion. Donor, reversibility, exact pathway order and SxxK catalytic mechanism are hypotheses, not purified-PlaV results. Motif mutagenesis was ongoing, not reported as completed; lack of marked mutant growth inhibition does not establish self-resistance. No bioactivity target is inferred.</td>
   <td class="mono">https://freidok.uni-freiburg.de/data/6815</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 5 edges</span></h2>
+<p class="sub">Partial native Tu6071 genetics from Daum 2009: disruption of the putative SDR genes plaU and plaZ did not abolish detectable PL-A/PL-D under the tested conditions. Native protein parents are distinct from mutant alleles. The PlaU deletion-junction discrepancy is unresolved; the combined mutant has a PlaZ single-crossover insertion, not two clean deletions. No purified PlaU/PlaZ catalysis, measured cofactor preference, or universal biosynthetic dispensability is demonstrated. PlaU C-3 oxidation, minor/shunt product roles, extracluster compensation and silence remain hypotheses.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Tu6071 reported delta-plaU internal deletion</td>
+  <td>disrupts_encoding_gene_of</td>
+  <td>Native PlaU parent (putative SDR)</td>
+  <td>The thesis reports a 156-bp in-frame deletion made by NheI/SfiI restriction and blunting of pBSK-12-P, transferred as pKC1132-Udel. DC4/DC15 colony PCR gives about 0.8 kb versus 0.95 kb in wild type; revertants DC17/DC27 and plasmid controls are shown. DC4 PstI/NheI Southern has about 8.3 kb versus wild-type 5.4/3.0 kb; the single crossover retains both patterns. These support disruption, not an independently sequenced junction. Native DQ230532.1 has intragenic SfiI/NheI top-strand cuts after 35490/35630; standard blunting predicts 143 bp, not 156 bp or an in-frame lesion. This curator reconstruction does not establish the actual mutant sequence and does not silently correct the thesis. Native GenPept/MIBiG and the printed 244-aa PlaU alignment agree. Gene/taxon and exact EMBL-xref UniProt queries returned no rows; no homolog substituted.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/6815<br>https://www.ncbi.nlm.nih.gov/protein/ABB69757.1<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1<br>https://enzymefinder.neb.com/</td>
+</tr>
+<tr>
+  <td>Tu6071 reported delta-plaU internal deletion</td>
+  <td>retains_detectable_profile_of</td>
+  <td>Detectable PL-A/PL-D under tested conditions</td>
+  <td>HPLC/ESI-MS (plaESI) of the mutant crude extract was reported unchanged from wild type; discussion identifies retained PL-A/PL-D. The standard production method uses NL111 for 7-8 days and ethyl-acetate extraction of supernatant. This is an assay-bounded negative phenotype, not quantified equivalence, a detection-limit measurement, or exclusion of minor/shunt products and redundancy.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/6815</td>
+</tr>
+<tr>
+  <td>Tu6071 reported delta-plaU internal deletion</td>
+  <td>provides_genetic_background_for</td>
+  <td>Tu6071 delta-plaU with plaZ insertion (SCZ)</td>
+  <td>pKC1132-SCZ was introduced into the delta-plaU strain to test possible PlaU/PlaZ compensation. The internal plaZ PCR fragment is about 0.52 kb (SCZ-F/SCZ-R, HindIII/XbaI), not the full CDS. A single-crossover insertion was used after attempts at a second recombination yielded revertants. No two-clean-deletion genotype or complete mutant-genome sequence is asserted.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/6815</td>
+</tr>
+<tr>
+  <td>Tu6071 delta-plaU with plaZ insertion (SCZ)</td>
+  <td>disrupts_encoding_gene_of</td>
+  <td>Native PlaZ parent (putative SDR)</td>
+  <td>Vector/genomic junction PCR (aac-F/C-SCZ-R) yields about 2.2 kb in three single-crossover clones. The delta-plaU parent is the negative control; plasmid positive control uses SCZ-R instead of C-SCZ-R. Native 237-aa ABB69767.1 matches GenBank/MIBiG translation, not an assayed purified protein or a mutant protein sequence. Successful bounded UniProt gene/taxon and exact EMBL-xref queries found no entry; no exact UniProt mapping claimed.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/6815<br>https://www.ncbi.nlm.nih.gov/protein/ABB69767.1<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>Tu6071 delta-plaU with plaZ insertion (SCZ)</td>
+  <td>retains_detectable</td>
+  <td>Detectable PL-A/PL-D under tested conditions</td>
+  <td>PL-A and PL-D were detected in combined-mutant crude extract by HPLC/ESI-MS (plaESI). Exconjugants were cultured with 35 ug/mL apramycin because single-crossover integration can revert; the methods compare with wild type and the single mutant. The result does not prove identical yields, exclude residual gene activity or extracluster compensation, or establish no function in any condition. Proposed C-3 oxidation and minor-product roles remain untested here; no necessity/catalysis edge is inferred.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/6815</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 4 edges</span></h2>
+<p class="sub">Partial native Tu6071 PlaO2 genetics from Schnell 2007. The internal deletion retained the observed wild-type phenalinolactone profile under the tested culture/analytical conditions. No reaction, universal dispensability, complete absence of protein activity, or purified catalysis is established. A described complementation construct was not a completed rescue experiment. Native parent identity is separate from the single-crossover and deletion alleles.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Tu6071-scO2 single-crossover clone 1</td>
+  <td>contains_recombined_alleles_of</td>
+  <td>Native PlaO2 parent (putative cytochrome P450)</td>
+  <td>pKC-O2del was made from a cosmid 3-1O12 genomic PCR fragment, with an internal NcoI deletion. All 12 tested exconjugants showed both approximately 1.23-kb intact and 0.93-kb deleted O2co-F/R amplicons; clone 1 became scO2. Its PstI Southern had both wild-type and deleted bands. This is not a clean knockout: an intact copy is retained.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>Tu6071-XO2 internal plaO2 deletion (clone 49)</td>
+  <td>disrupts_encoding_gene_of</td>
+  <td>Native PlaO2 parent (putative cytochrome P450)</td>
+  <td>After four passages, 5 of 128 colonies were apramycin-sensitive: 49/119 had the shorter PCR product; 60/63/75 were wild-type revertants. Clone 49 became XO2. The reported 300-bp in-frame NcoI deletion agrees with native coding-oriented cuts 363/663. PstI Southern gives about 0.9 kb in XO2 versus 1.2 kb in wild type (expected 891/1191 bp). O2blot probe is reported as 565 bp; curator native alignment instead spans 566 bp and finds a printed O2blot-F C versus native T at genomic 21398. These qualifications do not negate the PCR/Southern result or establish an independently sequenced mutant junction. Native 397-aa GenPept, GenBank and MIBiG translations agree; no mutant protein sequence is assigned. Official UniProt gene/taxon and exact EMBL-xref queries returned no rows; no homolog substituted.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799<br>https://www.ncbi.nlm.nih.gov/protein/ABB69746.1<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>Tu6071-scO2 single-crossover clone 1</td>
+  <td>retains_detectable_profile_of</td>
+  <td>Detectable PL-A/PL-D profile under tested conditions</td>
+  <td>HPLC/ESI-MS of scO2 culture extract detected the wild-type major metabolites PL A and D without new derivatives reported. An intact gene copy remains in this strain; this observation cannot show loss-of-function dispensability or exclude all polar effects.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>Tu6071-XO2 internal plaO2 deletion (clone 49)</td>
+  <td>retains_detectable_profile_of</td>
+  <td>Detectable PL-A/PL-D profile under tested conditions</td>
+  <td>XO2 culture-extract HPLC/ESI-MS was reported indistinguishable from wild type. Standard analytical cultures used 25 mL NL111, 28 C and 180 rpm, with roughly 168-h sampling and ethyl-acetate extraction. No detection limit, equivalence test, or exclusion of minor products, residual activity or compensation is given. Results 3.2.4.4 explicitly state that complementation was omitted because the phenotype was unchanged; methods describing pS-O2co preparation are not evidence of performed rescue.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 14 edges</span></h2>
+<p class="sub">Native Tu6071 PlaO3 internal-deletion, untagged and His6-tagged complementation evidence from Schnell 2007. XO3 accumulated the NMR-characterized PL HS6/HS7 pair in place of the wild-type major product profile. C-20 hydroxylation of HS6 is inferred from genetics and metabolite structures; the proposed immediate product was not isolated here. Recombinant expression, partial peptide identification and whole-cell tagged rescue do not establish purified turnover, unchanged kinetics, or native electron-transfer partners. HS6/HS7 are distinct mutant products, not phenalinolactone A identifiers.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Tu6071-XO3 internal plaO3 deletion (clone 92)</td>
+  <td>disrupts_encoding_gene_of</td>
+  <td>Native PlaO3 parent</td>
+  <td>XO3 is apramycin-sensitive double-crossover clone 92 with the shorter O3co-F/R PCR product. The source reports a 246-bp in-frame SphI/PflMI deletion, not whole-gene removal; expected amplicons are 1277/1031 bp. Native sequence has two intragenic PflMI sites (top cuts after 24382/24424) and SphI after 24625. Complete digestion and standard blunting predict deletion 24380..24625 (246 bp), consistent with the report. PflMI has a 3-base 3-prime overhang, not the 4 bases stated for both enzymes on p. 153. Figure 3.18(b) calls its plasmid control pKC-O2del, while the accompanying text says pKC-O3del. These source discrepancies remain explicit; native reconstruction is not an independently sequenced XO3 allele. The native 401-aa GenPept/GenBank/MIBiG and complete printed parent sequence match. Official UniProt gene/taxon and exact EMBL-xref queries returned no rows; no homolog used.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799<br>https://www.ncbi.nlm.nih.gov/protein/ABB69748.1<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1<br>https://www.neb.com/en-us/products/r0509-pflmi</td>
+</tr>
+<tr>
+  <td>Tu6071-scO3 single-crossover clone 7</td>
+  <td>contains_recombined_alleles_of</td>
+  <td>Native PlaO3 parent</td>
+  <td>All ten tested exconjugants showed intact and deleted PCR products; clone 7 became scO3. Four passages followed by screening 128 colonies yielded 38 apparently sensitive clones, many still showing both bands; clone 92 had the desired shorter product. Do not interpret scO3 itself as a clean knockout.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>Tu6071-scO3 single-crossover clone 7</td>
+  <td>retains_detectable_profile_of</td>
+  <td>Native PL-A/PL-D major-product profile</td>
+  <td>At 72, 96, 121, 138, 168 and 192 h, ethyl-acetate extracts of scO3 were compared by HPLC/ESI-MS with parallel wild-type cultures. PL A was clearly detected, with no conspicuous new peaks or changed profile reported. This bounds the source claim of no polar effect to that assay; an intact copy remains.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>Tu6071-XO3 internal plaO3 deletion (clone 92)</td>
+  <td>replaces_major_product_profile_of</td>
+  <td>Native PL-A/PL-D major-product profile</td>
+  <td>XO3 instead showed HS6/HS7-dominated culture-extract chromatograms, compared with PL A/D in wild type. Figures 3.19 and 3.44 support loss of the wild-type major-product pattern, not an absolute zero concentration or quantified detection limit for every mature congener.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>Tu6071-XO3 internal plaO3 deletion (clone 92)</td>
+  <td>accumulates</td>
+  <td>PL HS6 (C-3 alcohol; C-20 methyl)</td>
+  <td>PL HS6 was isolated from a 3-L NL111 XO3 culture. 1D/2D NMR in methanol-d4 assigns the cyclized diterpene core, gamma-butyrolactone and C-3 alcohol (H-3 3.13 ppm; C-3 79.6 ppm); both C-20/C-21 remain methyl groups. UV maximum 244 nm and retention 17.5 min were reported. The text calls 390 an m/z value while Table 3.2 calls it mass in Da; the ion/adduct is not assigned here. The missing pyrrole chromophore distinguishes it from mature PL A.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>Tu6071-XO3 internal plaO3 deletion (clone 92)</td>
+  <td>accumulates</td>
+  <td>PL HS7 (C-3 ketone analog of HS6)</td>
+  <td>PL HS7 was isolated alongside HS6 and NMR-characterized as its C-3 ketone analog: C-3 220.8 ppm with no attached H-3/HSQC signal. It retains the gamma-butyrolactone and C-20/C-21 methyl groups. Retention 19.9 min, UV maximum 244 nm, and source m/z/mass value 388 are reported without an ion/adduct assignment here. The redox-pair structure does not identify the enzyme responsible for C-3 oxidation or prove HS7 is a productive pathway intermediate.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>pS-O3co genomic-fragment complementation of XO3</td>
+  <td>reintroduces_encoding_sequence_for</td>
+  <td>Native PlaO3 parent</td>
+  <td>pS-O3co carries a cosmid-derived O3co-F/R fragment in pSET-1cermE (EcoRI/XbaI insert, MunI/XbaI-opened vector). Native primer alignment spans 23700..24976 (1277 bp), including the final 30 bp of neighboring plaM2, complete plaO3 and downstream noncoding sequence. It is not an isolated-ORF-only experiment or expression of full PlaM2.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>pS-O3co genomic-fragment complementation of XO3</td>
+  <td>restores_detectable</td>
+  <td>Native PL-A/PL-D major-product profile</td>
+  <td>After conjugation, six clones were selected and three were cultured analytically; all three produced clearly detectable PL A and D. Figure 3.44 shows untagged rescue alongside wild type, XO3 and tagged rescue. This supports pathway function, not wild-type titer equivalence or a purified substrate-to-product assay.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>Recombinant N-terminal His6-PlaO3 construct</td>
+  <td>engineered_version_of</td>
+  <td>Native PlaO3 parent</td>
+  <td>The reported 421-aa N-terminal His6 fusion was expressed from pET15-O3 in E. coli BL21(DE3)pLysS and purified by Ni-NTA. Insert sequence checking is reported; the entire printed 401-aa parent matches native ABB69748.1, not the full fusion. MALDI peptide fingerprinting assigned the approximately 45-kDa band to PlaO3 with reported 35% coverage; the nearby 46-kDa band was an E. coli protein. No claim of homogeneous preparation or complete experimental sequence coverage is made. Figure 3.43(b) says PlaT3, but the adjacent PlaO3 text and MALDI analysis identify the preparation reviewed here.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>pSET-O3NTag complementation of XO3</td>
+  <td>expresses</td>
+  <td>Recombinant N-terminal His6-PlaO3 construct</td>
+  <td>The tagged coding sequence was amplified from pET-O3 using Co-XO3his-F/R and transferred into pSET-1cermE as pSET-O3NTag. Sequencing is reported to show no mutations or frameshifts in the insert. This is expression in the producer mutant, not extracellular purified-enzyme feeding.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>pSET-O3NTag complementation of XO3</td>
+  <td>restores_detectable</td>
+  <td>Native PL-A/PL-D major-product profile</td>
+  <td>pSET-O3NTag restored detectable PL A/D production in XO3. The differently scaled HPLC traces in Figure 3.44 do not establish unchanged yields, kinetics, or total product profiles. The rescue shows that the fusion retains pathway function in this host context; it does not prove the tag has no effect in all conditions or demonstrate purified turnover.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>Native PlaO3 parent</td>
+  <td>is_inferred_to_catalyze</td>
+  <td>Inferred C-20 hydroxylation of PL HS6</td>
+  <td>The thesis assigns PlaO3 to C-20 hydroxylation from the deletion, complementation and accumulated-metabolite structures. Its discussion explicitly proposes future in-vitro verification of PlaO3/PlaO4 selectivity. This is not the purified PlaO5 assay, does not assign C-3 oxidation to PlaO3, and does not identify native electron-transfer partners.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799<br>https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>PL HS6 (C-3 alcohol; C-20 methyl)</td>
+  <td>is_proposed_substrate_for</td>
+  <td>Inferred C-20 hydroxylation of PL HS6</td>
+  <td>HS6 is the proposed acceptor in Figure 4.5; the assignment is inferred, not a direct substrate-scope assay. Its C-20 methyl is distinguished from the C-21 methyl assigned to PlaO4 in the downstream proposal.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799<br>https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>Inferred C-20 hydroxylation of PL HS6</td>
+  <td>is_proposed_to_form</td>
+  <td>Proposed C-20-hydroxylated HS6 intermediate</td>
+  <td>The immediate C-20-hydroxylated intermediate is explicitly not detected in this study. Pyrrole attachment and later tailoring separate this proposal from mature PL A; neither the native PlaO3 protein nor its tagged rescue is claimed to make mature PL A in one catalytic step.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799<br>https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">12 nodes, 11 edges</span></h2>
+<p class="sub">Schnell 2007 joint plaT5/plaT6 construct experiments in native Tu6071. Native PlaT5/PlaT6 identities are distinct from engineered plasmids. Some integrative-vector clones increased phenalinolactone output, but the source-described empty vector also increased it and integration sites were not mapped. The episomal construct changed the A/D profile without a reported total increase. Neither an individual protein effect nor rate-limiting pathway control is demonstrated. HMBPP/DXP synthase roles are homology-based proposals, not purified activity or measured protein overexpression. The pSET-OE map-label discrepancy is retained.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Joint plaT5/plaT6 gene-introduction design</td>
+  <td>introduces_encoding_sequence_for</td>
+  <td>Native PlaT5 parent (putative HMBPP synthase)</td>
+  <td>The two genes were jointly amplified from cosmid 3-1O12, not manipulated separately. Native PlaT5 is 386 aa, DQ230532.1:32273..33433 on the positive strand. GenPept, native GenBank and MIBiG translations agree. The accession identifies the native parent, not a complete sequenced plasmid or assayed purified preparation. A bounded official UniProt gene/taxon plus exact EMBL-xref query returned no rows; no homolog was substituted.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799<br>https://www.ncbi.nlm.nih.gov/protein/ABB69755.1<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>Joint plaT5/plaT6 gene-introduction design</td>
+  <td>introduces_encoding_sequence_for</td>
+  <td>Native PlaT6 parent (putative DXP synthase)</td>
+  <td>The same joint fragment includes native PlaT6, 593 aa, DQ230532.1:33430..35211 on the positive strand, with a four-base native CDS overlap with plaT5. GenPept, GenBank and MIBiG translations agree. The native accession is not a measured construct-specific protein sequence. The bounded official UniProt gene/taxon plus exact EMBL-xref query returned no rows; an ortholog is not used as its identity.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799<br>https://www.ncbi.nlm.nih.gov/protein/ABB69756.1<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>Tu6071 pSET-OE integrative-construct clones</td>
+  <td>introduces_joint_cassette</td>
+  <td>Joint plaT5/plaT6 gene-introduction design</td>
+  <td>pSET-OE was made with the approximately 3.0-kb ORF38/39-F/R PCR product, cloned EcoRI/XbaI into MunI/XbaI-opened pSET-1cermE. Native primer alignment spans 32221..35251 (3031 bp), including the final 12 bp of plaT4, complete plaT5/plaT6 and flanking sequence, not a full third enzyme. Primer substitutions lie outside both target CDSs. The pSET-OE map on p. 188 labels the promoter-proximal short CDS T6 and next long CDS T5, opposite the native primer-supported plaT5-plaT6 order. This map-label discrepancy is not silently corrected or treated as a sequenced construct. Apramycin-resistant exconjugants were selected; the integration sites were not mapped.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1<br>https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>Tu6071 pUo-OE episomal-construct clones</td>
+  <td>introduces_joint_cassette</td>
+  <td>Joint plaT5/plaT6 gene-introduction design</td>
+  <td>Table 5.14 describes transfer of the same approximately 3.0-kb fragment from pSET-OE into pUWLoriT through EcoRI/XbaI. pUo-OE is described as a nonintegrating high-copy plasmid; actual copy number was not quantified in the reported experiment. Thiostrepton-resistant exconjugants were selected. The pUo-OE map labels ORF38 and ORF39; p. 82 also calls the intended construct pUWL-OE. Construct introduction is not a measurement of increased transcript or protein abundance.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>Tu6071 pSET-OE integrative-construct clones</td>
+  <td>has_observed_profile</td>
+  <td>Variable PL-A/PL-D production across pSET-OE clones</td>
+  <td>Ten XHM clones were compared with ten wild-type cultures by HPLC/DAD peak area, then cultures were repeated. Clones 2/5/6/8/10 initially showed higher reported output; clone 9 joined that group in the repeat, while other clones were lower. PL D predominated in many clones; XHM6 instead favored PL A. XHM2/8 lagged wild type for A, and XHM5/10 showed early D followed by later A. Figures 3.38-3.39 plot D time courses for selected clones, not all-clone A gains. XHM5 was used for subsequent feeding experiments, not as proof of enzyme-specific rate control. These AUC observations are not calibrated titers, fluxes, or statistically established yield effects.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>Tu6071 source-described empty pSET-1cermE control</td>
+  <td>has_observed_profile</td>
+  <td>Production increase with pSET-1cermE vector control</td>
+  <td>The source-described empty pSET-1cermE control also increased phenalinolactone production. No control-specific numerical titers or mapped integration site are supplied in this account. Table 5.13 describes pSET-1cermE as containing urdGT1c, while the results call it an empty control; its exact control-backbone sequence is not independently established here. Do not silently rename this comparator as bare pSET152 or infer an extra active glycosyltransferase from vector nomenclature.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>Tu6071 source-described empty pSET-1cermE control</td>
+  <td>limits_causal_attribution_of</td>
+  <td>Variable PL-A/PL-D production across pSET-OE clones</td>
+  <td>Because the empty-vector comparator also increased production and integration sites were untested, the phenotype does not isolate a PlaT5/PlaT6 effect. Activation of cluster or regulator expression by the ermE promoter at a favorable integration site is the source hypothesis, not an observed locus-specific mechanism. The source explicitly says rate-limiting IPP-synthesis control by these enzymes was not shown. This is lack of such proof, not evidence that either protein lacks pathway function.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>Tu6071 pUo-OE episomal-construct clones</td>
+  <td>has_observed_profile</td>
+  <td>pUo-OE D-dominant A/D profile without reported total increase</td>
+  <td>Three pUo-OE clones, three empty-pUWLoriT controls and three wild-type cultures were compared by HPLC/DAD AUC and cultured a second time. The source reports roughly similar total A+D output in pUo-OE and wild type, but D was dominant in pUo-OE and A in wild type. Figures 3.40-3.41 show separate time-dependent A/D signals; they do not prove quantitative equivalence, fixed ratios at all times or improved A yield. The shared cassette does not distinguish the individual contributions of PlaT5 and PlaT6.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>Tu6071 empty pUWLoriT control</td>
+  <td>shows_lower_reported_output_than</td>
+  <td>pUo-OE D-dominant A/D profile without reported total increase</td>
+  <td>The empty-pUWLoriT control cultures were reported to produce somewhat less phenalinolactone than both wild type and pUo-OE. The comparator is a separate control group in each of the two culture runs, not the same strain as the integrative-vector control. No calibrated concentration, exact effect size, variance model or individual-enzyme causal effect is assigned.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799</td>
+</tr>
+<tr>
+  <td>Native PlaT5 parent (putative HMBPP synthase)</td>
+  <td>has_proposed_activity</td>
+  <td>Proposed HMBPP synthesis in the MEP pathway</td>
+  <td>Sequence comparisons and the MEP-pathway scheme motivate a putative HMBPP synthase role at a late precursor-supply step. This is not a purified PlaT5 reaction assay, measured cofactor requirement, native electron-partner assignment or direct conversion to mature phenalinolactone A. The tested co-introduction does not demonstrate that PlaT5 is rate-limiting.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799<br>https://www.ncbi.nlm.nih.gov/protein/ABB69755.1</td>
+</tr>
+<tr>
+  <td>Native PlaT6 parent (putative DXP synthase)</td>
+  <td>has_proposed_activity</td>
+  <td>Proposed DXP synthesis in the MEP pathway</td>
+  <td>Sequence comparisons motivate a putative DXP synthase assignment. The source pathway scheme describes the pyruvate plus glyceraldehyde-3-phosphate condensation at the entry to the MEP pathway; it does not assay purified PlaT6, establish its kinetic parameters or show direct synthesis of mature phenalinolactone A. The joint construct does not demonstrate independent PlaT6 activity or rate limitation.</td>
+  <td class="mono">https://freidok.uni-freiburg.de/data/3799<br>https://www.ncbi.nlm.nih.gov/protein/ABB69756.1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">14 nodes, 21 edges</span></h2>
+<p class="sub">Myronovskyi et al. 2011 regulator genetics in the phenalinolactone-producing Tu6071 locus. Marker-free internal disruptions and integrated promoter-GusA reporters are separate from exact native PlaR1/PlaR2/PlaR3 proteins. Reporter changes are not direct DNA binding, native RNA measurements or native protein abundance. Production results are reported as phenalinolactone without a congener-resolved titer here; do not generalize them to every congener. Results report trace production for deltaR2, despite cessation wording in Discussion. The plaM1/plaM2 text discrepancy and construct limitations remain explicit. Quantities below come from paper text; Figure 6 bars/error bars were not independently digitized or visually verified.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Tu6071 deltaR1 marker-free internal disruption</td>
+  <td>targets_gene_encoding</td>
+  <td>Native PlaR1 parent (SARP-family annotation)</td>
+  <td>Native parent ABB69733.1: 265 aa, DQ230532.1:complement(6556..7353), Tu6071 taxon 355249. Native GenBank, MIBiG and GenPept translations match. The study used pKGLP2-based replacement with a loxP-flanked apramycin marker, followed by Cre-mediated marker excision; marker-free is not a claim of scarless editing. PCR verified R1/R3 replacements and Southern hybridization R2. Curator alignment of Table 2 inner homology arms places an internal native interval between them at 6615..7201 (587 bp); residual coding sequence remains. These are native-coordinate reconstructions, not sequenced mutant alleles or measured residual protein products. Q2I751 is deleted as redundant; UniParc UPI000068F38F retains the exact sequence but no active UniProtKB cross-reference in the inspected entry. The exact 265-aa native parent is grounded, not an inferred mutant protein.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11<br>https://www.ncbi.nlm.nih.gov/protein/ABB69733.1<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1<br>https://rest.uniprot.org/uniprotkb/Q2I751.json<br>https://rest.uniprot.org/uniparc/UPI000068F38F.json</td>
+</tr>
+<tr>
+  <td>Tu6071 deltaR2 marker-free internal disruption</td>
+  <td>targets_gene_encoding</td>
+  <td>Native PlaR2 parent (TetR-family annotation)</td>
+  <td>Native parent ABB69734.1: 200 aa, DQ230532.1:complement(7806..8408), Tu6071 taxon 355249. Native GenBank, MIBiG and GenPept translations match. The study used pKGLP2-based replacement with a loxP-flanked apramycin marker, followed by Cre-mediated marker excision; marker-free is not a claim of scarless editing. PCR verified R1/R3 replacements and Southern hybridization R2. Curator alignment of Table 2 inner homology arms places an internal native interval between them at 7829..8386 (558 bp); residual coding sequence remains. These are native-coordinate reconstructions, not sequenced mutant alleles or measured residual protein products. Q2I750 is deleted as redundant; UniParc UPI000068F390 retains the exact sequence but no active UniProtKB cross-reference in the inspected entry. A TetR-family annotation does not by itself establish direct repression of these promoters.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11<br>https://www.ncbi.nlm.nih.gov/protein/ABB69734.1<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1<br>https://rest.uniprot.org/uniprotkb/Q2I750.json<br>https://rest.uniprot.org/uniparc/UPI000068F390.json</td>
+</tr>
+<tr>
+  <td>Tu6071 deltaR3 marker-free internal disruption</td>
+  <td>targets_gene_encoding</td>
+  <td>Native PlaR3 parent (HxlR-related interpretation)</td>
+  <td>Native parent ABB69766.1: 119 aa, DQ230532.1:complement(47334..47693), Tu6071 taxon 355249. Native GenBank, MIBiG and GenPept translations match. The study used pKGLP2-based replacement with a loxP-flanked apramycin marker, followed by Cre-mediated marker excision; marker-free is not a claim of scarless editing. PCR verified R1/R3 replacements and Southern hybridization R2. Curator alignment of Table 2 inner homology arms places an internal native interval between them at 47381..47678 (298 bp); residual coding sequence remains. These are native-coordinate reconstructions, not sequenced mutant alleles or measured residual protein products. The legacy GenPept protein name says putative TetR regulator, whereas the paper and the GenPept domain annotation support an HxlR-related interpretation. Neither demonstrates a formaldehyde response. Methods describe R3.2 cloning with XbaI/BamHI, while Table 2 primers carry BamHI/EcoRV tails; the exact engineered junction is not asserted. A bounded official gene/taxon and EMBL cross-reference query found no active exact UniProtKB entry.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11<br>https://www.ncbi.nlm.nih.gov/protein/ABB69766.1<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>Tu6071 deltaR1 marker-free internal disruption</td>
+  <td>has_reported_production_phenotype</td>
+  <td>Phenalinolactone production reported abolished in deltaR1</td>
+  <td>LC-MS analysis reports abolished phenalinolactone production in the marker-free deltaR1 strain. Production cultures used NL111. This is the reported detection phenotype, not a numerical zero titer, quantified detection limit, purified PlaR1 reaction or direct promoter binding. The assayed congener breakdown is not given in this account; no complementation-based exclusion of polar effects is asserted.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11</td>
+</tr>
+<tr>
+  <td>Tu6071 deltaR2 marker-free internal disruption</td>
+  <td>has_reported_production_phenotype</td>
+  <td>Trace phenalinolactone production reported in deltaR2</td>
+  <td>Results report trace phenalinolactone production in deltaR2, whereas Discussion calls it cessation. Preserve this disagreement and the trace result; do not encode complete abolition. NL111 production cultures and LC-MS are distinct from TSB-grown promoter-reporter assays. No exact residual titer, congener ratio or universal PlaR2 requirement is assigned.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11</td>
+</tr>
+<tr>
+  <td>Tu6071 deltaR3 marker-free internal disruption</td>
+  <td>has_reported_production_phenotype</td>
+  <td>Phenalinolactone production reported unchanged in deltaR3</td>
+  <td>The LC-MS account describes deltaR3 phenalinolactone production as the same as wild type under the tested conditions. This is bounded negative evidence, not statistical equivalence, all-condition dispensability or absence of regulatory effects. The same mutant changes reporter outputs.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11</td>
+</tr>
+<tr>
+  <td>Tu6071 deltaR1 marker-free internal disruption</td>
+  <td>has_reported_promoter_reporter_effect</td>
+  <td>Engineered plaR1 promoter-GusA reporter activity</td>
+  <td>Reported activity is 168% of the corresponding wild-type reporter; wild type is the relative 100% reference. The pGUS promoter-GusA fusion was integrated in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis (OD415, 20 min at 37 C). The study states means with standard errors from three independent experiments. No significance test or exact reporter-culture harvest time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough. The native homology span of the cloned promoter fragment is 7365..7864 (-) by curator primer alignment, not an exact minimal promoter or regulator-binding site. This assay supports a regulatory effect in an engineered reporter context, not direct binding or native protein abundance.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>Tu6071 deltaR1 marker-free internal disruption</td>
+  <td>has_reported_promoter_reporter_effect</td>
+  <td>Engineered plaR2 promoter-GusA reporter activity</td>
+  <td>The text reports no detected change versus the corresponding wild-type reporter; do not replace that statement with an invented exact 100% measurement. The pGUS promoter-GusA fusion was integrated in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis (OD415, 20 min at 37 C). The study states means with standard errors from three independent experiments. No significance test or exact reporter-culture harvest time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough. The native homology span of the cloned promoter fragment is 8428..8934 (-) by curator primer alignment, not an exact minimal promoter or regulator-binding site. This assay supports a regulatory effect in an engineered reporter context, not direct binding or native protein abundance.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>Tu6071 deltaR1 marker-free internal disruption</td>
+  <td>has_reported_promoter_reporter_effect</td>
+  <td>Engineered plaR3 promoter-GusA reporter activity</td>
+  <td>Reported activity is 35.5% of the corresponding wild-type reporter; wild type is the relative 100% reference. The pGUS promoter-GusA fusion was integrated in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis (OD415, 20 min at 37 C). The study states means with standard errors from three independent experiments. No significance test or exact reporter-culture harvest time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough. The native homology span of the cloned promoter fragment is 47714..48213 (-) by curator primer alignment, not an exact minimal promoter or regulator-binding site. This assay supports a regulatory effect in an engineered reporter context, not direct binding or native protein abundance.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>Tu6071 deltaR1 marker-free internal disruption</td>
+  <td>has_reported_promoter_reporter_effect</td>
+  <td>Engineered plaM2 promoter-GusA reporter activity</td>
+  <td>Reported activity is 81.5% of the corresponding wild-type reporter; wild type is the relative 100% reference. The pGUS promoter-GusA fusion was integrated in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis (OD415, 20 min at 37 C). The study states means with standard errors from three independent experiments. No significance test or exact reporter-culture harvest time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough. The native homology span of the cloned promoter fragment is 22371..22863 (+) by curator primer alignment, not an exact minimal promoter or regulator-binding site. This assay supports a regulatory effect in an engineered reporter context, not direct binding or native protein abundance. One Results sentence names plaM1, but Table 1, Table 2, the methods, reporter labels and detailed results identify plaM2. Primer alignment supports the plaM2 region; no plaM1 regulatory edge is inferred.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>Tu6071 deltaR1 marker-free internal disruption</td>
+  <td>has_reported_promoter_reporter_effect</td>
+  <td>Engineered plaO2 promoter-GusA reporter activity</td>
+  <td>Reported activity is 58% of the corresponding wild-type reporter; wild type is the relative 100% reference. The pGUS promoter-GusA fusion was integrated in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis (OD415, 20 min at 37 C). The study states means with standard errors from three independent experiments. No significance test or exact reporter-culture harvest time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough. The native homology span of the cloned promoter fragment is 22650..23150 (-) by curator primer alignment, not an exact minimal promoter or regulator-binding site. This assay supports a regulatory effect in an engineered reporter context, not direct binding or native protein abundance.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>Tu6071 deltaR2 marker-free internal disruption</td>
+  <td>has_reported_promoter_reporter_effect</td>
+  <td>Engineered plaR1 promoter-GusA reporter activity</td>
+  <td>The text reports no detected change versus the corresponding wild-type reporter; do not replace that statement with an invented exact 100% measurement. The pGUS promoter-GusA fusion was integrated in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis (OD415, 20 min at 37 C). The study states means with standard errors from three independent experiments. No significance test or exact reporter-culture harvest time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough. The native homology span of the cloned promoter fragment is 7365..7864 (-) by curator primer alignment, not an exact minimal promoter or regulator-binding site. This assay supports a regulatory effect in an engineered reporter context, not direct binding or native protein abundance.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>Tu6071 deltaR2 marker-free internal disruption</td>
+  <td>has_reported_promoter_reporter_effect</td>
+  <td>Engineered plaR2 promoter-GusA reporter activity</td>
+  <td>The text reports no detected change versus the corresponding wild-type reporter; do not replace that statement with an invented exact 100% measurement. The pGUS promoter-GusA fusion was integrated in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis (OD415, 20 min at 37 C). The study states means with standard errors from three independent experiments. No significance test or exact reporter-culture harvest time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough. The native homology span of the cloned promoter fragment is 8428..8934 (-) by curator primer alignment, not an exact minimal promoter or regulator-binding site. This assay supports a regulatory effect in an engineered reporter context, not direct binding or native protein abundance.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>Tu6071 deltaR2 marker-free internal disruption</td>
+  <td>has_reported_promoter_reporter_effect</td>
+  <td>Engineered plaR3 promoter-GusA reporter activity</td>
+  <td>Reported activity is 19% of the corresponding wild-type reporter; wild type is the relative 100% reference. The pGUS promoter-GusA fusion was integrated in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis (OD415, 20 min at 37 C). The study states means with standard errors from three independent experiments. No significance test or exact reporter-culture harvest time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough. The native homology span of the cloned promoter fragment is 47714..48213 (-) by curator primer alignment, not an exact minimal promoter or regulator-binding site. This assay supports a regulatory effect in an engineered reporter context, not direct binding or native protein abundance.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>Tu6071 deltaR2 marker-free internal disruption</td>
+  <td>has_reported_promoter_reporter_effect</td>
+  <td>Engineered plaM2 promoter-GusA reporter activity</td>
+  <td>Reported activity is 46% of the corresponding wild-type reporter; wild type is the relative 100% reference. The pGUS promoter-GusA fusion was integrated in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis (OD415, 20 min at 37 C). The study states means with standard errors from three independent experiments. No significance test or exact reporter-culture harvest time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough. The native homology span of the cloned promoter fragment is 22371..22863 (+) by curator primer alignment, not an exact minimal promoter or regulator-binding site. This assay supports a regulatory effect in an engineered reporter context, not direct binding or native protein abundance. One Results sentence names plaM1, but Table 1, Table 2, the methods, reporter labels and detailed results identify plaM2. Primer alignment supports the plaM2 region; no plaM1 regulatory edge is inferred.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>Tu6071 deltaR2 marker-free internal disruption</td>
+  <td>has_reported_promoter_reporter_effect</td>
+  <td>Engineered plaO2 promoter-GusA reporter activity</td>
+  <td>Reported activity is 58% of the corresponding wild-type reporter; wild type is the relative 100% reference. The pGUS promoter-GusA fusion was integrated in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis (OD415, 20 min at 37 C). The study states means with standard errors from three independent experiments. No significance test or exact reporter-culture harvest time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough. The native homology span of the cloned promoter fragment is 22650..23150 (-) by curator primer alignment, not an exact minimal promoter or regulator-binding site. This assay supports a regulatory effect in an engineered reporter context, not direct binding or native protein abundance.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>Tu6071 deltaR3 marker-free internal disruption</td>
+  <td>has_reported_promoter_reporter_effect</td>
+  <td>Engineered plaR1 promoter-GusA reporter activity</td>
+  <td>The text reports no detected change versus the corresponding wild-type reporter; do not replace that statement with an invented exact 100% measurement. The pGUS promoter-GusA fusion was integrated in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis (OD415, 20 min at 37 C). The study states means with standard errors from three independent experiments. No significance test or exact reporter-culture harvest time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough. The native homology span of the cloned promoter fragment is 7365..7864 (-) by curator primer alignment, not an exact minimal promoter or regulator-binding site. This assay supports a regulatory effect in an engineered reporter context, not direct binding or native protein abundance.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>Tu6071 deltaR3 marker-free internal disruption</td>
+  <td>has_reported_promoter_reporter_effect</td>
+  <td>Engineered plaR2 promoter-GusA reporter activity</td>
+  <td>Reported activity is 207% of the corresponding wild-type reporter; wild type is the relative 100% reference. The pGUS promoter-GusA fusion was integrated in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis (OD415, 20 min at 37 C). The study states means with standard errors from three independent experiments. No significance test or exact reporter-culture harvest time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough. The native homology span of the cloned promoter fragment is 8428..8934 (-) by curator primer alignment, not an exact minimal promoter or regulator-binding site. This assay supports a regulatory effect in an engineered reporter context, not direct binding or native protein abundance.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>Tu6071 deltaR3 marker-free internal disruption</td>
+  <td>has_reported_promoter_reporter_effect</td>
+  <td>Engineered plaR3 promoter-GusA reporter activity</td>
+  <td>Reported activity is 63% of the corresponding wild-type reporter; wild type is the relative 100% reference. The pGUS promoter-GusA fusion was integrated in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis (OD415, 20 min at 37 C). The study states means with standard errors from three independent experiments. No significance test or exact reporter-culture harvest time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough. The native homology span of the cloned promoter fragment is 47714..48213 (-) by curator primer alignment, not an exact minimal promoter or regulator-binding site. This assay supports a regulatory effect in an engineered reporter context, not direct binding or native protein abundance.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>Tu6071 deltaR3 marker-free internal disruption</td>
+  <td>has_reported_promoter_reporter_effect</td>
+  <td>Engineered plaM2 promoter-GusA reporter activity</td>
+  <td>Reported activity is 209% of the corresponding wild-type reporter; wild type is the relative 100% reference. The pGUS promoter-GusA fusion was integrated in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis (OD415, 20 min at 37 C). The study states means with standard errors from three independent experiments. No significance test or exact reporter-culture harvest time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough. The native homology span of the cloned promoter fragment is 22371..22863 (+) by curator primer alignment, not an exact minimal promoter or regulator-binding site. This assay supports a regulatory effect in an engineered reporter context, not direct binding or native protein abundance. One Results sentence names plaM1, but Table 1, Table 2, the methods, reporter labels and detailed results identify plaM2. Primer alignment supports the plaM2 region; no plaM1 regulatory edge is inferred.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>Tu6071 deltaR3 marker-free internal disruption</td>
+  <td>has_reported_promoter_reporter_effect</td>
+  <td>Engineered plaO2 promoter-GusA reporter activity</td>
+  <td>Reported activity is 139% of the corresponding wild-type reporter; wild type is the relative 100% reference. The pGUS promoter-GusA fusion was integrated in Tu6071 and assayed in TSB-grown cultures by p-nitrophenyl-glucuronide hydrolysis (OD415, 20 min at 37 C). The study states means with standard errors from three independent experiments. No significance test or exact reporter-culture harvest time is inferred here. Upstream aadA/T4 terminators were designed to block readthrough. The native homology span of the cloned promoter fragment is 22650..23150 (-) by curator primer alignment, not an exact minimal promoter or regulator-binding site. This assay supports a regulatory effect in an engineered reporter context, not direct binding or native protein abundance.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 6 edges</span></h2>
+<p class="sub">Myronovskyi et al. 2011 PlaM2-HL4-GusA reporter in native Tu6071. The exact native PlaM2 parent is not the engineered fusion. GusA signal tracks a translational-reporter construct, not native methyltransferase turnover or an absolute protein concentration. Reporter and six-day phenalinolactone productivity rank media differently. Congener-specific titers and native methylation chemistry are not assigned. Numerical values are reported text values; Figure 8 was not independently digitized or visually verified.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Engineered PlaM2-HL4-GusA fusion</td>
+  <td>uses_native_parent_sequence_from</td>
+  <td>Native PlaM2 parent (putative methyltransferase)</td>
+  <td>PlaM2 native parent ABB69747.1 is 281 aa, DQ230532.1:22884..23729 (+), Tu6071 taxon 355249; GenPept, GenBank and MIBiG translations match. The forward primer includes the upstream region and the M2gusfus reverse homology ends at 23726, before the native stop codon. The gene was fused through HL4 to GusA lacking its own start codon. The parent accession is not an identifier for this fusion or its complete junction. GenPept retains a putative rRNA-methyltransferase name; this reporter study does not demonstrate an rRNA or natural-product substrate. No active exact UniProtKB mapping was found in the bounded official gene/taxon and EMBL-xref query.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11<br>https://www.ncbi.nlm.nih.gov/protein/ABB69747.1<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>Tu6071 pGUSHL4plaM2aadA reporter strain</td>
+  <td>carries_expression_construct_for</td>
+  <td>Engineered PlaM2-HL4-GusA fusion</td>
+  <td>The pTESa-based integrative pGUSHL4aadA vector contains an HL4 linker and start-codon-free gusA. PlaM2 without its stop codon was inserted through XbaI/EcoRV to produce pGUSHL4plaM2aadA, transferred into Tu6071. The upstream aadA cassette with T4 terminators limits readthrough by design. Construct carriage and GusA activity do not establish native PlaM2 catalytic competence or a measured copy number.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11</td>
+</tr>
+<tr>
+  <td>Promoterless plaM2 fusion control construct</td>
+  <td>is_promoterless_comparator_for</td>
+  <td>Tu6071 pGUSHL4plaM2aadA reporter strain</td>
+  <td>The source constructed pGUSHL4plaM2aadAcontr with a promoterless plaM2 PCR fragment as control. The m2fuscontrxba forward homology starts at 22852, rather than the experimental upstream 22371 region. This identifies the described control design, not a quantified zero background signal or a complete sequenced plasmid.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11<br>https://www.ncbi.nlm.nih.gov/nuccore/DQ230532.1</td>
+</tr>
+<tr>
+  <td>Tu6071 pGUSHL4plaM2aadA reporter strain</td>
+  <td>has_measured_reporter_profile</td>
+  <td>Medium- and time-dependent PlaM2-GusA reporter signal</td>
+  <td>Text reports 24-h GusA activities of 0.3, 0.07, 0.0065 and 0.047 mU/mg in SG, TSB, NL111 and HA, respectively. Follow-up in SG/NL111 gave 0.49/0.27 mU/mg on day 3 and 0.44/0.27 mU/mg on day 5. Units are retained as reported; these are not molar PlaM2 abundance or methyl-transfer rates. Lysate p-nitrophenyl-glucuronide hydrolysis was read at OD415 after 20 min at 37 C; the paper specifies three independent experiments with means and standard errors. Mass-normalization details and Figure 8 error bars are not re-established from the inspected text. Lower day-5 SG activity was attributed speculatively to autolysis, not supported here by a separate lysis measurement.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11</td>
+</tr>
+<tr>
+  <td>Tu6071 pGUSHL4plaM2aadA reporter strain</td>
+  <td>has_reported_medium_productivity_profile</td>
+  <td>Six-day medium-dependent phenalinolactone output</td>
+  <td>Six-day extracts from SG, HA, TSB and NL111 were compared by LC-MS. The text reports no detected phenalinolactone in TSB, about four times the SG amount in HA and about five times in NL111, recalculated to equal wet biomass. These are relative phenalinolactone outputs, not absolute congener-specific titers or equivalence of culture growth. The production sampling time differs from the reporter time course.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11</td>
+</tr>
+<tr>
+  <td>Medium- and time-dependent PlaM2-GusA reporter signal</td>
+  <td>does_not_rank_media_like</td>
+  <td>Six-day medium-dependent phenalinolactone output</td>
+  <td>SG gives the larger PlaM2-GusA signals, while NL111 gives the largest reported six-day product output. Reporter expression therefore does not identify the highest-productivity medium in this experiment. Precursor/cofactor limitation is the authors&#39; proposed explanation, not a direct measurement of limiting metabolites or a PlaM2 reaction.</td>
+  <td class="mono">DOI:10.1128/AEM.00434-11</td>
 </tr>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused

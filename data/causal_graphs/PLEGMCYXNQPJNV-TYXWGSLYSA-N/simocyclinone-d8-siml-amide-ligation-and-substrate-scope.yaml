@@ -1,0 +1,219 @@
+record_id: naturalproductmech:mibig-e03313fa44
+standard_inchi_key: PLEGMCYXNQPJNV-TYXWGSLYSA-N
+graph:
+  graph_id: simocyclinone-d8-siml-amide-ligation-and-substrate-scope
+  scope: BIOSYNTHESIS
+  description: 'SimL/SimD5 is assigned the aminocoumarin amide-ligation role in simocyclinone
+    biosynthesis. Exact native Q9F5J5 is distinct from the two recombinant preparations.
+    The inspected 2005 evidence is abstract-level only: natural C4 acceptance, broad
+    acid-substrate activity and engineered novobiocin-analogue tailoring are separate
+    claims. No uninspected kinetic conditions, exact construct sequence, complete
+    native D8 reconstitution or final in-vivo step order is asserted. Review #540
+    preserves these evidence and identity boundaries.'
+  nodes:
+  - node_id: native
+    label: Native SimL / SimD5 amide synthetase
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F5J5
+  - node_id: assembly
+    label: Source-assigned simocyclinone aminocoumarin amide-ligation step
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: luft
+    label: SimL purified from Streptomyces lividans T7 by Luft et al.
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: ligation
+    label: Luft et al. acid activation and aminocoumarin amide formation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: c4
+    label: Source-assigned simocyclinone C4 acid substrate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: amino
+    label: Reported aminocoumarin cosubstrate in the Luft study
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: atp
+    label: ATP used in the reported SimL reactions
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: pacholec
+    label: SimL purified from Escherichia coli by Pacholec et al.
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: polyenoic
+    label: Pacholec et al. polyenoic-acid amide-formation assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: retinoic
+    label: Reported retinoic-acid substrate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: fumagillin
+    label: Reported fumagillin substrate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: tailoring
+    label: Engineered novobiocin-analogue tailoring of a SimL product
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: native
+    predicate: is_source_assigned_to
+    object: assembly
+    notes: Luft et al. assign SimL to formation of the amide joining the aminocoumarin
+      and complex acyl moieties of simocyclinone. Native protein identity is independently
+      sequence-grounded; exact experimental constructs remain ungrounded.
+    evidence:
+    - reference: DOI:10.1007/s00203-005-0770-0
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary article abstract; full article not obtained.
+    - reference: https://www.uniprot.org/uniprotkb/Q9F5J5
+      evidence_type: DATABASE_ASSERTION
+      notes: Q9F5J5 is an unreviewed native Streptomyces antibioticus SimL entry,
+        synonym SimD5, taxon 1890, 519 aa; entry version 62, sequence version 1, annotation
+        updated 2026-09-02; inspected 2026-10-04. Sequence identity does not establish
+        the exact recombinant sample sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF324838.2
+      evidence_type: CURATOR_INFERENCE
+      notes: CDS-aware table-11 translation, including native TTG initiation, exactly
+        matches Q9F5J5 for AAK06803.1, AF324838.2:62429..63988(+). Independent translations
+        of AAL15599.1, AF322256.1:17635..19194(+), and AAG34183.1, AF321122.1:847..2406(+),
+        give the same 519-aa sequence. All three 1560-nt coding sequences including
+        stop agree exactly.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent native simL CDS AAL15599.1; sequence deposit, not an assay.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF321122.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent native simL CDS AAG34183.1; sequence deposit, not an assay.
+  - subject: luft
+    predicate: is_reported_recombinant_preparation_of
+    object: native
+    notes: The abstract describes cloned SimL, S. lividans T7 expression and a near-homogeneous
+      60-kDa preparation. No complete engineered sequence or tag identity was inspected.
+    evidence:
+    - reference: DOI:10.1007/s00203-005-0770-0
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract only; no construct-level sequence assertion.
+      snippet: purified to near homogeneity
+  - subject: luft
+    predicate: catalyzes
+    object: ligation
+    notes: The abstract reports acid activation and transfer to the aminocoumarin
+      amino group without a 4'-phosphopantetheinyl cofactor requirement.
+    evidence:
+    - reference: DOI:10.1007/s00203-005-0770-0
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract only; assay concentrations and kinetic constants not inspected.
+  - subject: c4
+    predicate: is_reported_accepted_acid_substrate_in
+    object: ligation
+    notes: C4 is explicitly named as an accepted natural substrate. Its exact assayed
+      stereochemical form and reaction product were not independently reconstructed
+      from the abstract.
+    evidence:
+    - reference: DOI:10.1007/s00203-005-0770-0
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract, natural-substrate statement.
+  - subject: amino
+    predicate: is_reported_amine_partner_in
+    object: ligation
+    notes: The inspected abstract identifies the aminocoumarin amino group, not a
+      fully specified assay reagent; no exact chemical accession is assigned.
+    evidence:
+    - reference: DOI:10.1007/s00203-005-0770-0
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract, acyl-transfer statement.
+  - subject: atp
+    predicate: is_required_in_reported_reaction
+    object: ligation
+    notes: Acid activation is reported as ATP-dependent. This is not a measured ATP-binding
+      affinity or reconstructed stoichiometric assay.
+    evidence:
+    - reference: DOI:10.1007/s00203-005-0770-0
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract, ATP dependence.
+  - subject: ligation
+    predicate: supports_source_assignment_of
+    object: assembly
+    notes: The biochemical report supports the assigned assembly role; this graph
+      does not assert a native genetic knockout, complete D8 reconstitution, or its
+      final in-vivo reaction order.
+    evidence:
+    - reference: DOI:10.1007/s00203-005-0770-0
+      evidence_type: CURATOR_INFERENCE
+      notes: Bounded interpretation of the inspected primary abstract.
+  - subject: pacholec
+    predicate: is_reported_recombinant_preparation_of
+    object: native
+    notes: Pacholec et al. report expression of S. antibioticus SimL and purification
+      from E. coli. The exact construct is unresolved here; it is not equated with
+      Luft or Metzger preparations.
+    evidence:
+    - reference: DOI:10.1021/bi047303g
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary ACS abstract only; full article not obtained.
+  - subject: pacholec
+    predicate: catalyzes
+    object: polyenoic
+    notes: The reported activity is amide formation with several polyenoic acids.
+      No numerical rate, substrate preference, or native-D8 product identity is inferred
+      from this abstract.
+    evidence:
+    - reference: DOI:10.1021/bi047303g
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary ACS abstract, biochemical activity.
+      snippet: including retinoic acid and fumagillin
+  - subject: atp
+    predicate: is_required_in_reported_reaction
+    object: polyenoic
+    notes: The reaction is reported as ATP-dependent; experimental concentrations
+      and kinetic parameters were not inspected.
+    evidence:
+    - reference: DOI:10.1021/bi047303g
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary ACS abstract, ATP dependence.
+  - subject: retinoic
+    predicate: is_reported_acid_substrate_in
+    object: polyenoic
+    notes: Retinoic acid is named in the abstract. Its exact assayed isomer and product
+      structure are not assigned here.
+    evidence:
+    - reference: DOI:10.1021/bi047303g
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary ACS abstract, substrate list.
+  - subject: fumagillin
+    predicate: is_reported_acid_substrate_in
+    object: polyenoic
+    notes: Fumagillin is named in the abstract. This surrogate reaction does not show
+      its involvement in native simocyclinone biosynthesis.
+    evidence:
+    - reference: DOI:10.1021/bi047303g
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary ACS abstract, substrate list.
+  - subject: polyenoic
+    predicate: supplies_a_reported_product_for
+    object: tailoring
+    notes: NovM, NovP and NovN from the novobiocin pathway were used to tailor a SimL
+      product into an analogue with a tetraenoate moiety replacing the usual prenylhydroxybenzoate.
+      The inspected abstract does not uniquely map this product to either named acid
+      above. These three enzymes are not assigned native D8 roles.
+    evidence:
+    - reference: DOI:10.1021/bi047303g
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary ACS abstract, tandem incubation; no bioactivity measurement or
+        exact analogue accession imported.
+curation_history:
+- timestamp: '2026-10-04T11:17:15Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added source-checked SimL component from owner base a141fd1887d303cf9727e67ebbe5592f703cbe7b;
+    native Q9F5J5 is not an engineered assay identity. Primary 2005 sources were inspected
+    at abstract level only; relevant Metzger thesis methods/results and figures were
+    inspected in full. Every edge cites a DOI or stable URL; review #540 limitations
+    retained.'
+  llm_assisted: true

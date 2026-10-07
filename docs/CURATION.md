@@ -35,6 +35,30 @@ while native knock-out or correlation evidence can also upgrade the
 | `locus_evidence_methods` | Pipe-separated MIBiG method names from `conf/producer_evidence.tsv`. |
 | `curator` / `date` / `rationale` | Who decided, when, and why. |
 
+The explicit `action` is `REPLACE` for these method corrections. Legacy callers
+without an `action` key retain that behavior; an explicitly blank or unknown
+action is rejected.
+
+Use `WITHDRAW` only when source evidence is inapplicable to the named
+taxon/locus, not merely because a method is missing. Replacement methods must
+be empty. The row must carry a stable DOI, PMID or HTTPS `reference`, a
+`rationale`, `curator`, `date`, `source: MIBIG` and `source_id`. It also pins
+`expected_entry_version`, `expected_taxon_id`, `expected_genome_accession`,
+`expected_locus_from`, `expected_locus_to`, `expected_standard_inchi_key` and
+`expected_locus_evidence_methods` to the exact raw values. Missing/duplicate
+targets or any source-context drift fail for inspection, including method
+order changes. An upstream refresh must not silently inherit a stale exclusion.
+
+Withdrawal is applied before lead-record selection. An empty applicable method
+set grades the producer as `SOURCE_ASSERTION` and the cluster link as
+`CLUSTER_UNSTATED`, not `CLUSTER_PREDICTED`. The original inventory remains
+untouched; the original method names, qualification and curator attribution
+travel in separate claim-level `CURATOR_INFERENCE` evidence for both producer
+and cluster. The database's original citation stays `DATABASE_ASSERTION`.
+This corrects BGC0000892 version 4: its experiments concern DSM50341, not the
+BSR3 genome it lists. It does not relabel either strain or prove a native
+protein mapping.
+
 ## What a re-seed keeps, and what it overwrites
 
 The corpus is generated, so a re-seed rebuilds every record. What it does *not*
@@ -44,7 +68,7 @@ cannot inherit another compound's curation:
 
 | carried | why |
 |---|---|
-| `biosynthetic_pathway`, `causal_graphs` | M6 curation; the seeder does not produce them at all |
+| `biosynthetic_pathway`, `causal_graphs`, `causal_graph_refs` | M6 curation; the seeder does not produce them at all |
 | `curation_history` | the trail, and re-stamped only when seeder-owned content changed |
 | `curation_status` when it is not `SEEDED` | only a curator moves a record off `SEEDED`, so only a curator can move it back |
 | curator-owned fields on a `discussion` | the seeder raises the question, you answer it |
@@ -133,6 +157,60 @@ down.
 Neither is visible to any gate. That is what review is for.
 
 ## Writing a record
+
+### Complete mechanism reads
+
+Graphs can be inline in `causal_graphs` or referenced by ordered local IDs in
+`causal_graph_refs`. Each reference resolves to
+`data/causal_graphs/<StandardInChIKey>/<graph_id>.yaml`, a closed-schema
+`CausalGraphDocument` with `record_id`, `standard_inchi_key`, `graph`, and its
+own `curation_history`. Both owner identifiers must match the record exactly.
+References are graph IDs, never arbitrary paths. Inline graphs precede referenced
+graphs; IDs must be unique across both. Nodes and edges remain graph-local.
+
+Read the owner AND every referenced component when reviewing a mechanism. Use
+`naturalproductmech.graph_components.read_natural_product(path)` for reports,
+rendering, or analysis. It resolves all graphs and fails on missing/invalid
+components. Its expanded dictionary retains refs and is **read-only**: writing
+it would duplicate graph IDs. Mutators and the seeder must load raw owner YAML.
+The structure-only embedding and PubChem identity extractor deliberately read
+raw owners because they do not consume mechanisms. The vendored label checker
+reads components through its explicit `graph_component_nodes` config target.
+
+### Graph component writes
+
+Use components when complete evidence would exceed the 64-KiB owner limit.
+Every component has the same 64-KiB limit; do not weaken qualifiers or drop
+biology to fit. Split at coherent, independently reviewable graph boundaries,
+not arbitrary line counts. Do not claim an inter-graph edge with a local node ID.
+
+For a migration, preserve every graph object and the owner's existing history,
+add refs before `curation_history`, and append a migration event to the owner.
+Each component gets an event naming the original record and source commit so
+the preserved parent history can be followed. Compare the resolved graphs to
+the original objects, including evidence and snippets, and compare rendered
+output. A storage migration alone must not change biology.
+
+For a new or changed component, append `record_curation_event` to that component.
+Append an owner event whenever the owner changes (including a new ref). Submit
+raw owner and changed components to
+`write_validated_graph_bundle(owner, record_path, components)` from
+`naturalproductmech.graph_components`. It preflights the bundle's schema,
+ownership, topology, sizes and append-only events before writes; ordinary write
+failures roll back. It does not provide a multi-file filesystem transaction:
+after interruption or power loss, inspect the worktree and run the complete
+audit before retrying. Do not delete or detach components implicitly.
+Preflight also rejects reassignment of an existing component to another owner,
+even with an appended event. Distinct records sharing an InChIKey must use
+distinct component graph IDs; an ownership transfer needs an explicit migration.
+
+`just validate-strict <owner-path>` checks the owner and all its components.
+Full `just validate-all`, `just verify-corpus`, and `just verify-reproduction`
+also reject orphaned components. Reproduction carries refs and audits components;
+it does not regenerate curator evidence from source inventories. Reseeding an
+unchanged record must preserve owner AND component bytes.
+
+### Inline record writes
 
 Never hand-edit a record and never serialize one directly. Load the YAML, apply
 only the reviewed changes, then finish with both repository helpers:

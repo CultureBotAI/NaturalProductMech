@@ -1,0 +1,238 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novm-staged-tailoring-and-product-mass-conflict
+  scope: BIOSYNTHESIS
+  description: 'Direct 2005 supplement evidence for staged NovM/NovP/NovN assays around
+    NovO, with unresolved product mass and sequence boundaries. Review #563. The BGC0000834
+    cathomycin owner retains its unspecified sugar stereocentre and SEEDED status.
+    These precursor and recombinant assays do not resolve that stereocentre or justify
+    an exact-key merge with fully specified novobiocin.'
+  nodes:
+  - node_id: m
+    label: 2005 supplement NovM preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: p
+    label: 2005 supplement NovP preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: n
+    label: 2005 supplement NovN preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: o
+    label: 2005 supplement NovO preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: setup
+    label: Ring-C-desmethyl precursor tailoring experiment
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: mon
+    label: NovM-NovO-NovP-NovN staged incubation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: mpon
+    label: NovM-NovP-NovO-NovN staged incubation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: mpno
+    label: NovM-NovP-NovN-NovO staged incubation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: mp
+    label: Source-labeled NovM,P product
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: mn
+    label: Source-labeled NovM,N product
+    node_type: COMPOUND
+    grounding_status: REVIEW_NEEDED
+  - node_id: mpn
+    label: Source-labeled NovM,P,N product
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: negative
+    label: No detected C8 methylation after glycosylation
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: conflict
+    label: NovM,N formula versus mass discrepancy
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: limits
+    label: Staged-assay assignment and construct limits
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  edges:
+  - subject: m
+    predicate: was_supplied_in
+    object: setup
+    notes: NovM 1 uM with TDP-L-noviose 200 uM.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.3; all four pages inspected as text
+        and visually. '
+  - subject: p
+    predicate: was_supplied_in
+    object: setup
+    notes: NovP 1 uM with SAM 1 mM.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.3; all four pages inspected as text
+        and visually. '
+  - subject: n
+    predicate: was_supplied_in
+    object: setup
+    notes: NovN 1 uM with ATP 4 mM and carbamoyl phosphate. Separate donor concentration
+      is not unambiguously stated.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.3; all four pages inspected as text
+        and visually. '
+  - subject: o
+    predicate: was_tested_in
+    object: setup
+    notes: NovO was inserted at the listed stages. Its loading is unspecified here
+      and is not borrowed from the earlier tests.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.3; all four pages inspected as text
+        and visually. '
+  - subject: setup
+    predicate: has_staged_order
+    object: mon
+    notes: 'Each enzyme was incubated for twelve hours. Starting mixture: desmethyl-novobiocic
+      acid 6 at 1 mM, Tris 75 mM pH 7.5, SAM 2 mM, BSA 1 mg/mL, DMSO 10%.'
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.3; all four pages inspected as text
+        and visually. '
+  - subject: mon
+    predicate: contributes_to_study_level_result
+    object: negative
+    notes: LC-MS evaluation reported no C8 methylation in the glycosylated derivatives.
+      No order-specific numerical conversion is supplied.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.3; all four pages inspected as text
+        and visually. '
+  - subject: setup
+    predicate: has_staged_order
+    object: mpon
+    notes: 'Each enzyme was incubated for twelve hours. Starting mixture: desmethyl-novobiocic
+      acid 6 at 1 mM, Tris 75 mM pH 7.5, SAM 2 mM, BSA 1 mg/mL, DMSO 10%.'
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.3; all four pages inspected as text
+        and visually. '
+  - subject: mpon
+    predicate: contributes_to_study_level_result
+    object: negative
+    notes: LC-MS evaluation reported no C8 methylation in the glycosylated derivatives.
+      No order-specific numerical conversion is supplied.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.3; all four pages inspected as text
+        and visually. '
+  - subject: setup
+    predicate: has_staged_order
+    object: mpno
+    notes: 'Each enzyme was incubated for twelve hours. Starting mixture: desmethyl-novobiocic
+      acid 6 at 1 mM, Tris 75 mM pH 7.5, SAM 2 mM, BSA 1 mg/mL, DMSO 10%.'
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.3; all four pages inspected as text
+        and visually. '
+  - subject: mpno
+    predicate: contributes_to_study_level_result
+    object: negative
+    notes: LC-MS evaluation reported no C8 methylation in the glycosylated derivatives.
+      No order-specific numerical conversion is supplied.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.3; all four pages inspected as text
+        and visually. '
+  - subject: setup
+    predicate: has_source_reported_product
+    object: mp
+    notes: Printed formula C29H33NO10; calculated neutral mass 555.2, observed m/z
+      554.1 [M-H]-. The product list is study-level, not uniquely assigned to one
+      incubation order.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.3; all four pages inspected as text
+        and visually. '
+  - subject: setup
+    predicate: has_source_reported_product
+    object: mn
+    notes: Printed formula C29H32N2O11; calculated neutral mass 580.2, observed m/z
+      579.2 [M-H]-. The product list is study-level, not uniquely assigned to one
+      incubation order.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.3; all four pages inspected as text
+        and visually. '
+  - subject: setup
+    predicate: has_source_reported_product
+    object: mpn
+    notes: Printed formula C30H34N2O11; calculated neutral mass 598.2, observed m/z
+      597.2 [M-H]-. The product list is study-level, not uniquely assigned to one
+      incubation order.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Official supporting information, p.3; all four pages inspected as text
+        and visually. '
+  - subject: mn
+    predicate: has_identity_conflict
+    object: conflict
+    notes: Parsing C29H32N2O11 gives nominal neutral mass 584, inconsistent with printed
+      580.2 and observed 579.2 [M-H]-. Retain all printed values without silently
+      correcting the formula or assigning an exact structure identifier.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Official supporting information, p.3; all four pages inspected as text
+        and visually. Independent formula atom-sum check.
+  - subject: negative
+    predicate: has_interpretation_limit
+    object: limits
+    notes: Ring-C desmethylation is distinct from sugar-O demethylation. These staged
+      experiments neither prove a stable protein complex nor identify a unique physiological
+      enzyme order, final compound stereochemistry or every assay construct.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Official supporting information, p.3; all four pages inspected as text
+        and visually. Assay and product-assignment limits.
+  - subject: conflict
+    predicate: limits_product_assignment
+    object: limits
+    notes: The presence of a NovM,N product in the list does not prove an unlisted
+      NovP-omitted order or failure of NovP in a particular listed incubation.
+    evidence:
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: CURATOR_INFERENCE
+      notes: Official supporting information, p.3; all four pages inspected as text
+        and visually. Product list versus three stated orders.
+curation_history:
+- timestamp: '2026-10-05T00:15:09Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cathomycin-novm-staged-tailoring-and-product-mass-conflict with source-bounded
+    NovM/redox evidence and #563 findings.'
+  llm_assisted: true

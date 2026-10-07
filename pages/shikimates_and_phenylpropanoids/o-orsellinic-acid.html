@@ -24,6 +24,10 @@
   <span class="tag">EXACT</span>
   <span class="tag">SEEDED</span>
 <span class="tag">enzyme inhibitor</span></p>
+<details class="status-legend"><summary>What these status tags mean</summary>
+<p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/shikimates_and_phenylpropanoids/o-orsellinic-acid.yaml">record history</a>.</p>
+<p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
+</details>
 <p>A dihydroxybenzoic acid that is 2,4-dihydroxybenzoic acid in which the hydrogen at position 6 is replaced by a methyl group.</p>
 <h2>Structure</h2>
 <div class="scroll"><table>
@@ -77,7 +81,7 @@ same claim.</p>
 </tr>
 </table></div>
 
-<h2>Occurrences <span class="tag">22</span></h2>
+<h2 id="occurrences">Occurrences <span class="tag">22</span></h2>
 <p class="sub">Somebody found the compound in this organism and cited it. That is
 not a claim that the organism makes it, and nothing here promotes one to the other.</p>
 <div class="scroll"><table>
@@ -194,7 +198,7 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 </tr>
 </table></div>
 
-<h2>Biosynthetic gene clusters <span class="tag">5</span></h2>
+<h2 id="gene-clusters">Biosynthetic gene clusters <span class="tag">5</span></h2>
 <div class="scroll"><table>
 <tr><th>Accession</th><th>Host</th><th>Locus evidence</th><th>Genome</th></tr>
 <tr>
@@ -278,16 +282,59 @@ derived from a source. This is what the rest of the record exists to support.</p
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">MITE-reported farnesyl-prenylation of exact o-orsellinic acid as substrate. AscA is the sequence-verified native Acremonium egyptiacum F-1392 reference. This separate database context consumes the owner compound and does not replace its Aspergillus nidulans OrsA synthesis pathway or transfer producer or BGC assertions. Functional evidence remains database-level; the primary paper was inaccessible. Product geometry and ionic-form limits remain explicit; existing open discussions and SEEDED status are preserved.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>AscA native F-1392 reference</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>MITE-reported AscA farnesyl-prenylation</td>
+  <td>MITE and reviewed UniProt supply database functional attribution; native sequence equality establishes reference correspondence, not historical assay-stock or construct identity. The primary paper was inaccessible. UniProt&#39;s Mg2+ annotation is by similarity, not a native cofactor measurement; no occupancy, kinetics, localization or physical complex is adopted.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000374.json<br>https://www.uniprot.org/uniprotkb/A0A455R413<br>https://www.ncbi.nlm.nih.gov/protein/BBF25313.1<br>https://www.ncbi.nlm.nih.gov/nuccore/LC406756.1</td>
+</tr>
+<tr>
+  <td>o-orsellinic acid</td>
+  <td>is_database_example_substrate_of</td>
+  <td>MITE-reported AscA farnesyl-prenylation</td>
+  <td>The pinned exact-structure screen matches the MITE neutral-acid example to full owner key AMKYESDOVDKZKV-UHFFFAOYSA-N with complete stereochemistry. UniProt&#39;s orsellinate reaction is a distinct ionic representation, not a replacement owner identity. No exact native assay substrate, synthesis by AscA or new production claim inferred.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000374.json</td>
+</tr>
+<tr>
+  <td>MITE-reported AscA farnesyl-prenylation</td>
+  <td>has_database_example_product</td>
+  <td>Ilicicolinic acid B, database intermediate</td>
+  <td>MITE&#39;s ilicicolinic acid B example is intermediate and leaves alkene geometry unspecified. It remains externally ungrounded; no ionic Rhea product identifier or stereospecific product mapping is transferred. No downstream enzyme sequence, product finality, BGC0001923 transfer or native reference-organism producer upgrade is inferred. Existing OrsA synthesis and all source fields remain.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000374.json</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">5</span></h2>
+<p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
 <div class="scroll"><table>
-<tr><th>Assay</th><th>Result</th><th>Reference</th></tr>
-<tr><td>Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 3 (EPAC1)</td><td>89.1251 uM</td><td class="mono">pubchem.aid:1645883</td></tr>
-<tr><td>Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 3 (EPAC1)</td><td>89.1251 uM</td><td class="mono">pubchem.aid:1645883</td></tr>
-<tr><td>qHTS Assay for Activators of Cytochrome P450 3A4</td><td>25.1189 uM</td><td class="mono">pubchem.aid:885</td></tr>
-<tr><td>qHTS Assay for Inhibitors and Substrates of Cytochrome P450 3A4</td><td>25.1189 uM</td><td class="mono">pubchem.aid:884</td></tr>
-<tr><td>qHTS Assay for Inhibitors of the Human Apurinic/apyrimidinic Endonuclease 1 (APE1)</td><td>0.0089 uM</td><td class="mono">pubchem.aid:2517</td></tr>
+<tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
+<tr><td>Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 3 (EPAC1)</td><td>89.1251 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:1645883</summary><dl><dt>assay</dt><dd>Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 3 (EPAC1)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645883</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>89.1251</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 3 (EPAC1)</td><td>89.1251 uM</td><td class="mono">UniProtKB:O95398</td><td><details><summary>pubchem.aid:1645883</summary><dl><dt>assay</dt><dd>Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange factor 3 (EPAC1)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:1645883</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>89.1251</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:O95398</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Activators of Cytochrome P450 3A4</td><td>25.1189 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:885</summary><dl><dt>assay</dt><dd>qHTS Assay for Activators of Cytochrome P450 3A4</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:885</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 885, deposited by NCGC; assay type Confirmatory. Target accession NP_059488 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>25.1189</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Inhibitors and Substrates of Cytochrome P450 3A4</td><td>25.1189 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:884</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors and Substrates of Cytochrome P450 3A4</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:884</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 884, deposited by NCGC; assay type Confirmatory. Target accession NP_059488 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>25.1189</dd><dt>units</dt><dd>uM</dd></dl>
+</details></td></tr>
+<tr><td>qHTS Assay for Inhibitors of the Human Apurinic/apyrimidinic Endonuclease 1 (APE1)</td><td>0.0089 uM</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2517</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of the Human Apurinic/apyrimidinic Endonuclease 1 (APE1)</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2517</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2517, deposited by NCGC; assay type Confirmatory. Target accession 1DE9_A was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
+</li></ul>
+</dd><dt>value</dt><dd>0.0089</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
+</details></td></tr>
 </table></div>
 
 

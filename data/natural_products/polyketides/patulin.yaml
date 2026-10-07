@@ -971,6 +971,253 @@ causal_graphs:
       retrieved_on: '2026-10-01'
       notes: The Rhea Swiss-Prot mapping links UniProtKB:A0A075TMP0 to the left-to-right
         RHEA:62225 neopatulin reduction reaction.
+- graph_id: patulin-2016-patl-production-genetics
+  scope: BIOSYNTHESIS
+  description: PatL-associated production genetics, not a direct DNA-binding or catalytic
+    assay. Native sequence, deletion allele and study cultures remain distinct. No
+    pathogenicity, toxin-target or antimicrobial mechanism; source grades and stereochemical
+    limits unchanged. Main/figures/SI unread; not full-record sign-off.
+  nodes:
+  - node_id: source
+    label: Native Penicillium expansum NRRL 35695 source
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: patl
+    label: PatL NRRL 35695 native sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A075TXZ8
+  - node_id: allele
+    label: Study patL deletion allele (lesion unresolved)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: reference
+    label: Study NRRL 35695 reference culture
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: mutant
+    label: Study patL-deletion culture
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: complemented
+    label: Study complemented patL-deletion culture
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: comparison
+    label: Reported patL deletion and complementation comparison
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: patulin
+    label: patulin
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:74926
+  edges:
+  - subject: source
+    predicate: encodes_native_reference
+    object: patl
+    notes: KF899892.1 complement(join(26056..28216,28273..28511)), 1-based inclusive;
+      table-1 spliced CDS translation equals AIG62143.1 and A0A075TXZ8, 799 aa. GenBank,
+      GenPept and UniProt reference metadata identify NRRL 35695; taxon 27334 is species-level.
+      Reviewed UniProt entry 48, sequence 1. Primary accession selected instead of
+      secondary A0A0A2J7W4. Alternative KGO52638.1 carries an erroneous-initiation/truncated-N-terminus
+      caution; it is not substituted for the inspected reference.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KF899892.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and spliced CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AIG62143.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent versioned translation and strain inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/A0A075TXZ8
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native sequence, cross-reference and strain correspondence; not
+        complete study-stock identity.
+      retrieved_on: '2026-10-06'
+  - subject: allele
+    predicate: affects_coding_locus_of
+    object: patl
+    notes: Gene/strain correspondence, not resolved mutation boundaries, an intact
+      mutant protein or proof excluding polar effects.
+    evidence:
+    - reference: DOI:10.1111/mpp.12338
+      evidence_type: CURATOR_INFERENCE
+      notes: Abstract and figure captions inspected before PMC CAPTCHA STOP; main,
+        images and SI unread.
+      retrieved_on: '2026-10-06'
+  - subject: allele
+    predicate: was_present_in
+    object: mutant
+    notes: Reported deletion background; complete historical genotype unverified.
+    evidence:
+    - reference: DOI:10.1111/mpp.12338
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract and figure captions inspected before PMC CAPTCHA STOP; main,
+        images and SI unread.
+      retrieved_on: '2026-10-06'
+  - subject: reference
+    predicate: is_reference_background_for
+    object: comparison
+    notes: Named parental comparator, not proof of a complete historical stock sequence.
+    evidence:
+    - reference: DOI:10.1111/mpp.12338
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract and figure captions inspected before PMC CAPTCHA STOP; main,
+        images and SI unread.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: had_undetected_reported_product_in
+    object: comparison
+    notes: No detected patulin in the reported comparison, not universal absence across
+      conditions or a reconstructed detection limit.
+    evidence:
+    - reference: DOI:10.1111/mpp.12338
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract and figure captions inspected before PMC CAPTCHA STOP; main,
+        images and SI unread.
+      retrieved_on: '2026-10-06'
+  - subject: complemented
+    predicate: showed_restored_reported_production_in
+    object: comparison
+    notes: Reported complementation outcome; exact vector, insertion site, copy number
+      and complete protein sequence unresolved.
+    evidence:
+    - reference: DOI:10.1111/mpp.12338
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract and figure captions inspected before PMC CAPTCHA STOP; main,
+        images and SI unread.
+      retrieved_on: '2026-10-06'
+  - subject: comparison
+    predicate: measured_reported_product
+    object: patulin
+    notes: Captions identify HPLC-DAD product measurements. No titer, normalized flux,
+      purified-enzyme activity or direct promoter binding adopted.
+    evidence:
+    - reference: DOI:10.1111/mpp.12338
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract and figure captions inspected before PMC CAPTCHA STOP; main,
+        images and SI unread.
+      retrieved_on: '2026-10-06'
+- graph_id: patulin-2014-patg-bioconversion
+  scope: BIOSYNTHESIS
+  description: Patulin-pathway-associated PatG bioconversion, bounded to the primary
+    abstract. Paper-linked NRRL1980 sequence and NRRL1 locus reference differ; the
+    study preparation remains REVIEW_NEEDED. No P.expansum enzyme substitution, kinetic
+    mechanism, producer upgrade or antimicrobial target. Main/figures/SI unread; not
+    full-record sign-off.
+  nodes:
+  - node_id: source
+    label: Native Aspergillus clavatus NRRL1980 source
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: reference
+    label: PatG NRRL1980 native sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:T1PRE6
+  - node_id: preparation
+    label: Study expressed PatG preparation (sequence unresolved)
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+  - node_id: host
+    label: Study Saccharomyces cerevisiae expression context
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: Reported PatG-associated bioconversion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: substrate
+    label: Source-assigned 6-methylsalicylic acid
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: product
+    label: Source-assigned m-cresol
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: source
+    predicate: encodes_native_reference
+    object: reference
+    notes: 'JN698985.1 join(42..93,175..1100),plus strand,1-based inclusive; table1
+      CDS translation equals AFQ22736.1 and T1PRE6,325aa. GenBank/GenPept and UniProt
+      reference metadata identify NRRL1980; taxon5057 is species-level. UniProt unreviewed
+      entry30/sequence1. NRRL1 A1CFL4/ACLA_093620 is a distinct325aa comparator: NRRL1980
+      V143/L244 versus NRRL1 I143/F244. A Swiss-Prot label does not make the comparator
+      an exact sequence match.'
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/JN698985.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and spliced CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AFQ22736.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent versioned protein/source inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/T1PRE6
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native source/CDS/GenPept/UniProt correspondence.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/A1CFL4
+      evidence_type: CURATOR_INFERENCE
+      notes: Different-strain comparator,not chosen as exact NRRL1980 reference.
+      retrieved_on: '2026-10-06'
+  - subject: preparation
+    predicate: has_candidate_native_reference
+    object: reference
+    notes: JN698985 is paper-linked, but the abstract names ACLA_093620. The two native
+      references differ. Historical construct/strain identity remains unresolved.
+    evidence:
+    - reference: DOI:10.1016/j.ijfoodmicro.2013.11.020
+      evidence_type: CURATOR_INFERENCE
+      notes: Abstract only; publisher403 STOP. Main, images and SI unread.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/T1PRE6
+      evidence_type: DATABASE_ASSERTION
+      notes: Paper cross-reference and NRRL1980 reference metadata inspected; not
+        complete stock identity.
+      retrieved_on: '2026-10-06'
+  - subject: host
+    predicate: was_expression_context_for
+    object: preparation
+    notes: Host species reported; strain, vector and complete construct not adopted.
+    evidence:
+    - reference: DOI:10.1016/j.ijfoodmicro.2013.11.020
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract only; publisher403 STOP. Main, images and SI unread.
+      retrieved_on: '2026-10-06'
+  - subject: preparation
+    predicate: was_tested_in
+    object: assay
+    notes: Reported bioconversion,not a reconstructed purified-enzyme assay or native
+      flux.
+    evidence:
+    - reference: DOI:10.1016/j.ijfoodmicro.2013.11.020
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract only; publisher403 STOP. Main, images and SI unread.
+      retrieved_on: '2026-10-06'
+  - subject: substrate
+    predicate: is_reported_substrate_of
+    object: assay
+    notes: Named source substrate; no quantitative kinetics or general specificity.
+    evidence:
+    - reference: DOI:10.1016/j.ijfoodmicro.2013.11.020
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract only; publisher403 STOP. Main, images and SI unread.
+      retrieved_on: '2026-10-06'
+  - subject: assay
+    predicate: yielded_reported_product
+    object: product
+    notes: Reported product only,not complete patulin synthesis or producer-grade
+      evidence.
+    evidence:
+    - reference: DOI:10.1016/j.ijfoodmicro.2013.11.020
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract only; publisher403 STOP. Main, images and SI unread.
+      retrieved_on: '2026-10-06'
+      snippet: decarboxylation of 6-methylsalicylic acid into m-cresol
 curation_history:
 - timestamp: '2026-09-10T05:54:17Z'
   curator: seed_from_sources
@@ -1011,4 +1258,23 @@ curation_history:
   changes: Added a UniProt-grounded PatD reduction pathway step and partial BIOSYNTHESIS
     causal graph for patulin; renumbered curated patulin steps to sparse source-pathway
     order.
+  llm_assisted: true
+- timestamp: '2026-10-06T21:24:09Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added two separately scoped BIOSYNTHESIS graphs with 15 nodes and 13 DOI-or-stable-URL-cited
+    edges. PatL A0A075TXZ8 is the exact native NRRL35695 reference, checked against
+    spliced KF899892.1 CDS and AIG62143.1; secondary accession and truncated alternative
+    are not substituted. DOI:10.1111/mpp.12338 abstract and captions support a bounded
+    deletion/complementation product comparison, not direct DNA binding or complete
+    historical genotype; zero quotes. PatG T1PRE6 is the exact NRRL1980 JN698985.1/AFQ22736.1
+    reference; NRRL1 A1CFL4 differs at two residues. DOI:10.1016/j.ijfoodmicro.2013.11.020
+    abstract supports reported bioconversion; the historical preparation remains REVIEW_NEEDED
+    without a protein identifier. Six quoted words. Access stops respected; main text,
+    images and SI not inspected for either paper. Preserved all four prior graphs
+    and their order, four pathway steps, source fields/grades, stereochemical uncertainty,
+    SEEDED status, sibling links, discussions and prior history. The existing P.expansum
+    upstream-PatG gap is not resolved by the separate A.clavatus graph. No producer-grade
+    upgrade, pathogenicity, toxin-target or antimicrobial mechanism; not full-record
+    sign-off.
   llm_assisted: true

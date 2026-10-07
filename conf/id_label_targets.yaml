@@ -50,6 +50,7 @@ ignored_prefixes:
   - naturalproductmech   # minted, content-hashed ids for ungrounded structures
   - UniProtKB            # protein accessions; the label is the protein name
   - NCBIProtein          # sequence accessions; identities require source-level curation
+  - PDB                  # structure accessions; identities require source-level curation
   - EC                   # enzyme reaction classes; the label is the local enzyme
   - InterPro             # protein families/domains; the label is the local enzyme
   - ComplexPortal        # protein-complex accessions in curated causal graphs
@@ -61,6 +62,14 @@ ignored_prefixes:
 synonym_scope: exact_related
 
 targets:
+  - name: graph_component_nodes
+    kind: yaml
+    glob: "data/causal_graphs/**/*.yaml"
+    required: true
+    policy: canonical_or_synonym
+    pairs:
+      - [identifier, label]
+
   # The record's own identity and its non-taxon groundings. Blocking: 362
   # grounded records, and the 21 residuals below are each an exact pair with a
   # reason.

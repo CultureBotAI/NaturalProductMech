@@ -1,0 +1,303 @@
+record_id: CHEBI:78688
+standard_inchi_key: PIFFQYJYNWXNGE-UHFFFAOYSA-N
+graph:
+  graph_id: dapg-phlabc-5m3k-deposited-assembly
+  scope: BIOSYNTHESIS
+  description: Independent structural dataset for DAPG-biosynthesis-associated PhlABC.
+    Deposited participants are separate from native CHA0/Pf-5 sequence references;
+    PhlA source-taxonomy disagreement remains REVIEW_NEEDED. Assembly multiplicity,
+    PhlB zinc contacts and PhlC SCY88 are structural observations, not turnover, native
+    mixed-strain complex or physiological stoichiometry. No bound DAPG/MAPG, complete
+    biosynthesis, producer-grade upgrade or antimicrobial-target claim. Associated
+    paper/abstract/figures/SI unread; not full-record sign-off.
+  nodes:
+  - node_id: cha0
+    label: Native CHA0 source (conflicting species annotations)
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: pf5
+    label: Pseudomonas protegens Pf-5
+    node_type: ORGANISM
+    grounding_status: GROUNDED
+    identifier: NCBITaxon:220664
+  - node_id: native_phla
+    label: PhlA CHA0 sequence reference (taxonomy discrepancy)
+    node_type: PROTEIN
+    grounding_status: REVIEW_NEEDED
+    identifier: UniProtKB:Q9TP23
+  - node_id: native_phlb
+    label: PhlB native Pf-5 reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4K419
+  - node_id: native_phlc
+    label: PhlC native Pf-5 reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4K420
+  - node_id: assembly
+    label: 5M3K deposited author/PISA assembly1
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: zinc
+    label: Deposited zinc sites adjacent to PhlB chains B/E
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: scy88
+    label: Deposited S-acetyl-cysteine88 in PhlC chains C/F
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: deposited_phla
+    label: 5M3K deposited phla participant, chains A/D
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: deposited_phlb
+    label: 5M3K deposited phlb participant, chains B/E
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: deposited_phlc
+    label: 5M3K deposited phlc participant, chains C/F
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cha0
+    predicate: encodes_native_sequence_reference
+    object: native_phla
+    notes: AF207529.2 CDS30..1118(-),1-based inclusive; AAF20927.1,362aa. CDS-aware
+      table11 translation equals independent GenPept and UniProtQ9TP23 sequencev1.
+      GenBank/GenPept identify CHA0 as P.protegens/taxon380021; UniProt and the deposit
+      use P.fluorescens/taxon294. Taxonomy discrepancy is explicit, not silently reconciled.
+      Q9TP23 has CHA0 reference metadata; the deposit lacks a PhlA strain qualifier.
+      This does not establish exact cloning source. PhlA remains REVIEW_NEEDED for
+      the conflicting organism annotations.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF207529.2
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source, phlA CDS and translation inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAF20927.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent native reference inspected; CHA0/taxon380021.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q9TP23
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact sequence and CHA0 reference correspondence despite source-taxonomy
+        disagreement.
+      retrieved_on: '2026-10-06'
+  - subject: pf5
+    predicate: encodes_native_sequence_reference
+    object: native_phlb
+    notes: CP000076.1 CDS6768762..6769202(+),1-based inclusive; AAY95146.1,146aa.
+      CDS-aware table11 translation equals independent GenPept and current UniProt.
+      Native Pf-5/taxon220664 reference, not the complete engineered stock, a Q2-87
+      protein or proof of the PhlA cloning source.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAY95146.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent versioned translation inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4K419
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native gene/strain/taxon/sequence correspondence.
+      retrieved_on: '2026-10-06'
+  - subject: pf5
+    predicate: encodes_native_sequence_reference
+    object: native_phlc
+    notes: CP000076.1 CDS6767553..6768749(+),1-based inclusive; AAY95145.1,398aa.
+      CDS-aware table11 translation equals independent GenPept and current UniProt.
+      Native Pf-5/taxon220664 reference, not the complete engineered stock, a Q2-87
+      protein or proof of the PhlA cloning source.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP000076.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native source and CDS inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAY95145.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent versioned translation inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4K420
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact native gene/strain/taxon/sequence correspondence.
+      retrieved_on: '2026-10-06'
+  - subject: deposited_phla
+    predicate: has_native_sequence_reference
+    object: native_phla
+    notes: The deposited362aa sequence equals CHA0 referenceQ9TP23, not Pf-5Q4K421/360aa.
+      Source metadata give P.fluorescens/taxon294 but no strain; exact clone source
+      and complete stock unverified.
+    evidence:
+    - reference: https://data.rcsb.org/rest/v1/core/polymer_entity/5M3K/1
+      evidence_type: CURATOR_INFERENCE
+      notes: Sequence/source correspondence explicitly audited. Independent deposited
+        dataset 5M3K model1.4, revised2024-11-20, 2.83-A X-ray structure. Associated
+        DOI10.1002/cbic.201800462/PMID30318713 main, abstract, figures and SI unread.
+        No catalytic turnover, physiological stoichiometry, complete assay-stock identity
+        or native mixed-strain complex inferred.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q9TP23
+      evidence_type: CURATOR_INFERENCE
+      notes: Independently inspected native sequence comparator; not full engineered-stock
+        identity.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4K421
+      evidence_type: CURATOR_INFERENCE
+      notes: Distinct 360-residue Pf-5 PhlA comparator, not the deposited 362-residue
+        PhlA reference.
+      retrieved_on: '2026-10-06'
+  - subject: deposited_phla
+    predicate: is_member_of_deposited_assembly
+    object: assembly
+    notes: Assembly1 uses operations1,2 on the six ASU polymer chains A-F, giving
+      12 polymer instances, four of each PhlA/PhlB/PhlC. The six-chain ASU is not
+      the deposited assembly. Genetically engineered sources and E.coli/taxon562 expression
+      host do not establish native assembly or host DAPG production.
+    evidence:
+    - reference: https://data.rcsb.org/rest/v1/core/assembly/5M3K/1
+      evidence_type: DATABASE_ASSERTION
+      notes: ' Independent deposited dataset 5M3K model1.4, revised2024-11-20, 2.83-A
+        X-ray structure. Associated DOI10.1002/cbic.201800462/PMID30318713 main, abstract,
+        figures and SI unread. No catalytic turnover, physiological stoichiometry,
+        complete assay-stock identity or native mixed-strain complex inferred.'
+      retrieved_on: '2026-10-06'
+    - reference: https://data.rcsb.org/rest/v1/core/polymer_entity/5M3K/1
+      evidence_type: DATABASE_ASSERTION
+      notes: ' Independent deposited dataset 5M3K model1.4, revised2024-11-20, 2.83-A
+        X-ray structure. Associated DOI10.1002/cbic.201800462/PMID30318713 main, abstract,
+        figures and SI unread. No catalytic turnover, physiological stoichiometry,
+        complete assay-stock identity or native mixed-strain complex inferred.'
+      retrieved_on: '2026-10-06'
+  - subject: deposited_phlb
+    predicate: has_native_sequence_reference
+    object: native_phlb
+    notes: Deposited146aa sequence equals nativePf-5Q4K419. Deposit sourcePf-5/taxon220664;
+      sequence equality does not establish the complete recombinant preparation.
+    evidence:
+    - reference: https://data.rcsb.org/rest/v1/core/polymer_entity/5M3K/2
+      evidence_type: CURATOR_INFERENCE
+      notes: Sequence/source correspondence explicitly audited. Independent deposited
+        dataset 5M3K model1.4, revised2024-11-20, 2.83-A X-ray structure. Associated
+        DOI10.1002/cbic.201800462/PMID30318713 main, abstract, figures and SI unread.
+        No catalytic turnover, physiological stoichiometry, complete assay-stock identity
+        or native mixed-strain complex inferred.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4K419
+      evidence_type: CURATOR_INFERENCE
+      notes: Independently inspected native sequence comparator; not full engineered-stock
+        identity.
+      retrieved_on: '2026-10-06'
+  - subject: deposited_phlb
+    predicate: is_member_of_deposited_assembly
+    object: assembly
+    notes: Assembly1 uses operations1,2 on the six ASU polymer chains A-F, giving
+      12 polymer instances, four of each PhlA/PhlB/PhlC. The six-chain ASU is not
+      the deposited assembly. Genetically engineered sources and E.coli/taxon562 expression
+      host do not establish native assembly or host DAPG production.
+    evidence:
+    - reference: https://data.rcsb.org/rest/v1/core/assembly/5M3K/1
+      evidence_type: DATABASE_ASSERTION
+      notes: ' Independent deposited dataset 5M3K model1.4, revised2024-11-20, 2.83-A
+        X-ray structure. Associated DOI10.1002/cbic.201800462/PMID30318713 main, abstract,
+        figures and SI unread. No catalytic turnover, physiological stoichiometry,
+        complete assay-stock identity or native mixed-strain complex inferred.'
+      retrieved_on: '2026-10-06'
+    - reference: https://data.rcsb.org/rest/v1/core/polymer_entity/5M3K/2
+      evidence_type: DATABASE_ASSERTION
+      notes: ' Independent deposited dataset 5M3K model1.4, revised2024-11-20, 2.83-A
+        X-ray structure. Associated DOI10.1002/cbic.201800462/PMID30318713 main, abstract,
+        figures and SI unread. No catalytic turnover, physiological stoichiometry,
+        complete assay-stock identity or native mixed-strain complex inferred.'
+      retrieved_on: '2026-10-06'
+  - subject: deposited_phlc
+    predicate: has_native_sequence_reference
+    object: native_phlc
+    notes: Canonical398aa sequence equals nativePf-5Q4K420 only after SCY88-to-C normalization.
+      Raw deposited sequence contains S-acetyl-cysteine at88, not an unmodified native
+      cysteine. Deposit sourcePf-5/taxon220664.
+    evidence:
+    - reference: https://data.rcsb.org/rest/v1/core/polymer_entity/5M3K/3
+      evidence_type: CURATOR_INFERENCE
+      notes: Sequence/source correspondence explicitly audited. Independent deposited
+        dataset 5M3K model1.4, revised2024-11-20, 2.83-A X-ray structure. Associated
+        DOI10.1002/cbic.201800462/PMID30318713 main, abstract, figures and SI unread.
+        No catalytic turnover, physiological stoichiometry, complete assay-stock identity
+        or native mixed-strain complex inferred.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q4K420
+      evidence_type: CURATOR_INFERENCE
+      notes: Independently inspected native sequence comparator; not full engineered-stock
+        identity.
+      retrieved_on: '2026-10-06'
+  - subject: deposited_phlc
+    predicate: is_member_of_deposited_assembly
+    object: assembly
+    notes: Assembly1 uses operations1,2 on the six ASU polymer chains A-F, giving
+      12 polymer instances, four of each PhlA/PhlB/PhlC. The six-chain ASU is not
+      the deposited assembly. Genetically engineered sources and E.coli/taxon562 expression
+      host do not establish native assembly or host DAPG production.
+    evidence:
+    - reference: https://data.rcsb.org/rest/v1/core/assembly/5M3K/1
+      evidence_type: DATABASE_ASSERTION
+      notes: ' Independent deposited dataset 5M3K model1.4, revised2024-11-20, 2.83-A
+        X-ray structure. Associated DOI10.1002/cbic.201800462/PMID30318713 main, abstract,
+        figures and SI unread. No catalytic turnover, physiological stoichiometry,
+        complete assay-stock identity or native mixed-strain complex inferred.'
+      retrieved_on: '2026-10-06'
+    - reference: https://data.rcsb.org/rest/v1/core/polymer_entity/5M3K/3
+      evidence_type: DATABASE_ASSERTION
+      notes: ' Independent deposited dataset 5M3K model1.4, revised2024-11-20, 2.83-A
+        X-ray structure. Associated DOI10.1002/cbic.201800462/PMID30318713 main, abstract,
+        figures and SI unread. No catalytic turnover, physiological stoichiometry,
+        complete assay-stock identity or native mixed-strain complex inferred.'
+      retrieved_on: '2026-10-06'
+  - subject: zinc
+    predicate: has_deposited_coordination_contacts_to
+    object: deposited_phlb
+    notes: 'Eight metal-contact rows: PhlB Cys34/37/48/51 SG in chainB contacts Zn
+      labelG/authorB200; the corresponding four cysteines in chainE contact Zn labelH/authorE200.
+      All deposited distances agree with atom coordinates within0.002A. These are
+      model coordination contacts, not a kinetic metal requirement.'
+    evidence:
+    - reference: https://files.rcsb.org/download/5M3K.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Complete struct_conn table and linked atom coordinates inspected. Independent
+        deposited dataset 5M3K model1.4, revised2024-11-20, 2.83-A X-ray structure.
+        Associated DOI10.1002/cbic.201800462/PMID30318713 main, abstract, figures
+        and SI unread. No catalytic turnover, physiological stoichiometry, complete
+        assay-stock identity or native mixed-strain complex inferred.
+      retrieved_on: '2026-10-06'
+  - subject: scy88
+    predicate: is_deposited_modified_residue_in
+    object: deposited_phlc
+    notes: SCY88 is present in both PhlC chainsC/F with CYS as parent component. The
+      four covalent rows are same-chain adjacent peptide87-88 and88-89 links, not
+      protein-protein crosslinks. Modification alone does not prove an on-pathway
+      physiological intermediate, acetyl donor or catalytic mechanism.
+    evidence:
+    - reference: https://files.rcsb.org/download/5M3K.cif
+      evidence_type: DATABASE_ASSERTION
+      notes: Modified-residue and chemical-component definitions plus all covalent
+        rows/coordinates inspected. Independent deposited dataset 5M3K model1.4, revised2024-11-20,
+        2.83-A X-ray structure. Associated DOI10.1002/cbic.201800462/PMID30318713
+        main, abstract, figures and SI unread. No catalytic turnover, physiological
+        stoichiometry, complete assay-stock identity or native mixed-strain complex
+        inferred.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T18:41:53Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: New exact-owner component; reviewed baseline 869c40b7a4b573d9b7e6b29fde10dc62339f189e.
+    Independent deposited 5M3K assembly,11nodes11stable-URL edges,zero quotes. Native
+    CHA0 PhlA/Q9TP23 remains REVIEW_NEEDED for taxonomic annotation disagreement;
+    Pf-5 PhlB/Q4K419 and PhlC/Q4K420 are sequence references, not proof of a hybrid
+    native complex. Six asymmetric-unit chains are distinct from twelve deposited
+    biological-assembly instances,four each. SCY88 normalization and eight zinc contacts
+    inspected; same-chain peptide links are not intersubunit crosslinks. No physiological
+    stoichiometry, turnover or acetyl-transfer mechanism. Associated paper/SI unread;5MG5
+    ligand identity and fragment reference rejected.
+  llm_assisted: true

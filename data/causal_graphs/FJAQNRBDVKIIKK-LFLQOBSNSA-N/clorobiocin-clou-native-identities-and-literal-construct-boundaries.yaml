@@ -1,0 +1,338 @@
+record_id: naturalproductmech:mibig-619480541f
+standard_inchi_key: FJAQNRBDVKIIKK-LFLQOBSNSA-N
+graph:
+  graph_id: clorobiocin-clou-native-identities-and-literal-construct-boundaries
+  scope: BIOSYNTHESIS
+  description: 'Native CloU/CloW references, heterologous DNA constructs and reconstructed
+    junction/restriction limits; no purified CloU or CloW assay. Review #565. Host-conditioned
+    genetic and source-assigned product evidence does not change the owner identity,
+    source fields, previous graphs or SEEDED status.'
+  nodes:
+  - node_id: cluster
+    label: Deposited clorobiocin cluster
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000832
+  - node_id: motif
+    label: Proposed CloU SAM-associated sequence motif
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: parent
+    label: clo-BG1 intact-cluster cosmid
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: replacement
+    label: clo-AF1 cassette-replacement cosmid
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: deletion
+    label: clo-AF2 cassette-excised cosmid
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: scar
+    label: Literal-primer coding-remnant model
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: genotype
+    label: Reported Southern genotyping
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: conflict
+    label: BamHI versus BglII source-label conflict
+    node_type: OTHER
+    grounding_status: REVIEW_NEEDED
+  - node_id: wt
+    label: S. coelicolor M512 with integrated clo-BG1
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: mutant
+    label: S. coelicolor M512 with integrated clo-AF2
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: rescue
+    label: pAF16 cloU complementation construct
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: expressed
+    label: pAF16-derived CloU expression product
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: rescued
+    label: S. coelicolor M512 clo-AF2 plus pAF16
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: gu
+    label: Native cloU locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: u
+    label: Native cloU sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHA8
+  - node_id: gw
+    label: Native cloW locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: w
+    label: Native cloW sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHA6
+  edges:
+  - subject: cluster
+    predicate: contains
+    object: gu
+    notes: AF329398.1 CDS 36602..37864(+), AAN65243.1.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact locus coordinates and gene label.
+  - subject: gu
+    predicate: encodes_native_reference
+    object: u
+    notes: CDS-aware table-11 translation gives 420 aa exactly matching AAN65243.1
+      and Q8GHA8. UniProt subspecies taxon149682 and deposited DS 12.976 strain taxon1352936
+      differ in taxonomic resolution, not native sequence. No engineered sample is
+      assigned this accession.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native translation and source qualifiers.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHA8
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHA8, entry 49, sequence 1, taxon149682; retrieved 2026-10-04.
+        Exact native reference, not an experimentally verified construct.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent CDS/deposited/UniProt comparison.
+  - subject: cluster
+    predicate: contains
+    object: gw
+    notes: AF329398.1 CDS 38863..39459(+), AAN65245.1.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact locus coordinates and gene label.
+  - subject: gw
+    predicate: encodes_native_reference
+    object: w
+    notes: CDS-aware table-11 translation gives 198 aa exactly matching AAN65245.1
+      and Q8GHA6. UniProt subspecies taxon149682 and deposited DS 12.976 strain taxon1352936
+      differ in taxonomic resolution, not native sequence. No engineered sample is
+      assigned this accession.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native translation and source qualifiers.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHA6
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHA6, entry 69, sequence 1, taxon149682; retrieved 2026-10-05.
+        Exact native reference, not an experimentally verified construct.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent CDS/deposited/UniProt comparison.
+  - subject: u
+    predicate: contains_proposed_motif
+    object: motif
+    notes: Native residues108-116 are VVEFGSNTG, as printed in the thesis. The proposed
+      SAM-binding association is sequence-based; no CloU-bound SAM structure, affinity
+      or residue-mutagenesis assay is shown here.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006 primary thesis, PDF p.95; PDF pages are ten above printed
+        pages.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent position mapping.
+  - subject: cluster
+    predicate: was_carried_by
+    object: parent
+    notes: clo-BG1 carries the complete cluster and phiC31 integration functions.
+      This is a DNA construct, not a protein complex.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.53,95-97; PDF pages are ten above
+        printed pages.
+  - subject: parent
+    predicate: was_replacement_template_for
+    object: replacement
+    notes: PCR-targeted lambda-RED replacement used the aac(3)IV cassette from pUG019.
+      The source reports restriction screening, not independently supplied complete
+      experimental plasmid sequences.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.53,76-77,95; PDF pages are ten above
+        printed pages.
+  - subject: gu
+    predicate: was_targeted_in
+    object: replacement
+    notes: 'Literal deletion primers: cloU-f GACCGGCGGTTTGCATCCCGTGAGGGGGAGGAAGAGTTGATTCCGGGGATCTCTAGATC;
+      cloU-r TGGAACGGGATCACCGCAGCCGACACCGTGGCCACGTCAACTAGTCTGGAGCTGCTTC. Their unique39-nt
+      native arms map36566..36604(+) and37900..37862(-), including the TTG start and
+      TGA stop. These primers replace the intervening coding segment; the source shorthand
+      entire ORF must not erase the retained ends.'
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.54,77,95; PDF pages are ten above
+        printed pages.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Unique literal homology-arm matches.
+  - subject: replacement
+    predicate: was_excised_to_form
+    object: deletion
+    notes: XbaI/SpeI digestion and ligation removed the cassette. Apramycin-sensitive,
+      kanamycin-resistant clones were screened. Removal was intended to avoid polar
+      effects; intent alone is not measured downstream expression.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.53,76-77,95-96; PDF pages are ten
+        above printed pages.
+  - subject: deletion
+    predicate: has_reconstructed_junction
+    object: scar
+    notes: The literal-primer/XbaI-SpeI model retains TTGATTCCGGGGATCTCTAGTTGA:24
+      nt including start/stop, predicting MIPGISS with CDS-aware initiation and a
+      net1239-nt deletion from the1263-nt native CDS. This is a reconstructed in-frame
+      remnant, not a sequenced mutant or observed seven-residue protein.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.54,76-77; PDF pages are ten above
+        printed pages.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent compatible-end junction reconstruction.
+  - subject: parent
+    predicate: was_integrated_in
+    object: wt
+    notes: Intact-cluster heterologous comparator, not the native DS 12.976 producer.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.56,96-98; PDF pages are ten above
+        printed pages.
+  - subject: deletion
+    predicate: was_integrated_in
+    object: mutant
+    notes: PEG-mediated protoplast transformation and kanamycin selection generated
+      phiC31-site integration strains. This is heterologous cluster deletion, not
+      deletion in the native producer.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.72,77,96-97; PDF pages are ten above
+        printed pages.
+  - subject: mutant
+    predicate: had_reported_genotyping
+    object: genotype
+    notes: Five independent deletion isolates were reported to have the same genotype;
+      FigureIII.6D displays one mutant lane against clo-BG1. The lost approximate1.0-kb
+      band and4.1/3.9-kb signals are genotyping evidence, not an independently measured
+      complete junction or copy number.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.96-97; PDF pages are ten above printed
+        pages.
+  - subject: genotype
+    predicate: has_restriction_label_conflict
+    object: conflict
+    notes: Prose p.96 says BglII; FigureIII.6 caption defines B as BamHI and says
+      genomic/cosmid DNA were BamHI-digested. The conflict is retained, not silently
+      corrected.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.96-97; PDF pages are ten above printed
+        pages.
+  - subject: scar
+    predicate: provides_restriction_comparison_for
+    object: conflict
+    notes: Native BglII cuts give 1077- and4115-bp adjacent fragments; the scar model
+      joins them into3953bp. Native BamHI instead gives a5455-bp fragment spanning
+      cloU. This supports the BglII interpretation of the local approximate1.0/4.1/3.9-kb
+      sizes but does not prove the actual digest or reconstruct cosmid/host integration-junction
+      bands.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent native and modeled-mutant restriction geometry.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Freitag 2006 primary thesis, PDF p.97; PDF pages are ten above printed
+        pages.
+  - subject: parent
+    predicate: was_pcr_template_for
+    object: rescue
+    notes: Literal k-cloU-f GACCGGCGGTTTGGATCCCGTGA; k-cloU-r TTCGGACCTTCTAGACACGTGG.
+      The1354-nt PCR model has BamHI/XbaI top-strand cuts1327nt apart, consistent
+      with the reported approximate1.3-kb insert. It was cloned through pBluescript
+      SK(-) pAF15 into pUWL201 pAF16 under constitutive ermE. Primer-introduced changes
+      lie outside the CDS; complete experimental plasmids were not obtained.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.52,55,64-65,100; PDF pages are ten
+        above printed pages.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Literal rescue-primer/CDS comparison.
+  - subject: rescue
+    predicate: was_expression_construct_for
+    object: expressed
+    notes: The source names an intact cloU copy. No protein abundance, purified sample,
+      tag sequence or complete experimental protein sequence is established by the
+      rescue.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF p.100; PDF pages are ten above printed
+        pages.
+  - subject: u
+    predicate: is_native_core_reference_for
+    object: expressed
+    notes: The complete native CDS including TTG initiation and TGA stop is unchanged
+      in the literal rescue-amplicon model. That model is not direct resequencing
+      of the experimental expressed protein.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Independent amplicon/native CDS comparison.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHA8
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed Q8GHA8, entry 49, sequence 1, taxon149682; retrieved 2026-10-04.
+        Exact native reference, not an experimentally verified construct.
+  - subject: mutant
+    predicate: was_complemented_to_form
+    object: rescued
+    notes: The clo-AF2 strain received pAF16; the strain table reports kanamycin and
+      thiostrepton resistance.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.56,100; PDF pages are ten above printed
+        pages.
+  - subject: rescue
+    predicate: was_introduced_into
+    object: rescued
+    notes: The rescue construct is separate from the integrated deletion cosmid and
+      the native accession.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/48957/pdf/Dissertation_Anja_Freitag.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Freitag 2006 primary thesis, PDF pp.56,100; PDF pages are ten above printed
+        pages.
+curation_history:
+- timestamp: '2026-10-05T01:31:28Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add clorobiocin-clou-native-identities-and-literal-construct-boundaries
+    with native identity, source-bounded genetics and #565 findings.'
+  llm_assisted: true

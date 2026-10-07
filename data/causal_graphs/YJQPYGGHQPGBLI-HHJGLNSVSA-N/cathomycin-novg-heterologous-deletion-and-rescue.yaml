@@ -1,0 +1,239 @@
+record_id: naturalproductmech:mibig-d4379ab45b
+standard_inchi_key: YJQPYGGHQPGBLI-HHJGLNSVSA-N
+graph:
+  graph_id: cathomycin-novg-heterologous-deletion-and-rescue
+  scope: BIOSYNTHESIS
+  description: 'Heterologous NovG genetics with source-specific residual production
+    and partial rescue. Partial biosynthesis curation (review #589), not full-record
+    sign-off. The cathomycin owner retains its unspecified sugar stereocentre; source-assigned
+    novobiocin products remain ungrounded, not exact-key merged with CID 54675769.
+    Native deposited sequences do not retrospectively identify every historical strain
+    stock, complete preparation or engineered allele.'
+  nodes:
+  - node_id: cluster
+    label: Deposited novobiocin cluster underlying the cathomycin owner
+    node_type: GENE_CLUSTER
+    grounding_status: GROUNDED
+    identifier: mibig:BGC0000834
+  - node_id: NovG
+    label: Native deposited NovG regulatory-protein reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9G1
+  - node_id: allele
+    label: nov-AE10 novG scar-deletion construct
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: mutant
+    label: S. coelicolor M512 nov-AE10 plus empty pWHM3
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: intact
+    label: S. coelicolor M512 nov-BG1 plus empty pWHM3
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: complement
+    label: nov-AE10 background plus pAE8 NovG expression plasmid
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: overexpression
+    label: Intact nov-BG1 background plus pAE8
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: product
+    label: Source-assigned novobiocin in heterologous cultures
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: regulation
+    label: Positive NovG contribution to production in the tested host
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: NovG
+    notes: AF170880.4 CDS 6782..7738(+), 1-based inclusive, encodes AAF67500.1, 318
+      aa. CDS-aware table-11 translations across AF170880.2/.3/.4 exactly match the
+      selected UniProt sequence. Old .2/.3 qualifiers are S. caeruleus, taxon 195949,
+      NCIB 11891; .4 is S. niveus, taxon 193462, NCIMB 9219. The published correction
+      assigns the deposit to 9219, not 11891. The thesis additionally prints 11897
+      in its strain table versus 11891 in results. These are retained source conflicts,
+      not proof that all experimental stocks were identical.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: DATABASE_ASSERTION
+      notes: Current native deposit, compared with pinned .2 and .3 records.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9G1
+      evidence_type: DATABASE_ASSERTION
+      notes: 'Reviewed entry 55, sequence 1; annotation 2026-09-02, sequence 2000-10-01;
+        protein existence 1: Evidence at protein level. Reviewed status does not identify
+        a complete experimental preparation.'
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF170880.4
+      evidence_type: CURATOR_INFERENCE
+      notes: Exact CDS-aware sequence audit; alternate NovE A0ABZ2ADU8 is not an exact
+        historical reference because of N14S,T38P,G40A,E179Q differences.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1128/genomeA.01146-13
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Indexed primary text reporting PCR/sequencing-based deposit-strain correction
+        inspected; direct full-text retrieval unavailable.
+      retrieved_on: '2026-10-06'
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 62,135; PDF numbering is printed plus ten. Separate
+        primary source, not a claim to have inspected the complete final paper or
+        supplements.
+      retrieved_on: '2026-10-06'
+  - subject: allele
+    predicate: deletes_coding_locus_of
+    object: NovG
+    notes: Replacement cassette removed by XbaI/SpeI digestion and religation, leaving
+      a reported 18 nt scar between start/stop. Not a native NovG protein sequence
+      or the later 81 nt NovE allele.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 126-127; PDF numbering is printed plus ten.
+        Separate primary source, not a claim to have inspected the complete final
+        paper or supplements.
+      retrieved_on: '2026-10-06'
+  - subject: allele
+    predicate: was_integrated_in
+    object: mutant
+    notes: Site-specific integration in M512; PstI Southern 8.1 versus 7.2 kb distinguishes
+      intact and deletion loci. Complete altered chromosome sequence was not established.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 126-127; PDF numbering is printed plus ten.
+        Separate primary source, not a claim to have inspected the complete final
+        paper or supplements.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: retained_reduced_production_of
+    object: product
+    notes: 0.4 mg/L, 2% of the intact comparator, not zero. Residual-product assignment
+      by negative-ion FAB MS, m/z 611, compared with authentic standard. HPLC culture-supernatant
+      production, 305 nm and authentic standard; Table III.5 means 2-4 independent
+      mutants with two determinations each, without row-specific n or error bars.
+      Multicopy-production culture 30 C, 200 rpm, 7 days in CDM, no antibiotics. No
+      exact owner-stereocentre assignment is inferred.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 63-64,127-128; PDF numbering is printed plus
+        ten. Separate primary source, not a claim to have inspected the complete final
+        paper or supplements.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1099/mic.0.27669-0
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract inspected; full final paper and supplements not obtained.
+      retrieved_on: '2026-10-06'
+  - subject: intact
+    predicate: has_comparator_production_of
+    object: product
+    notes: 20 mg/L, 100%, with empty pWHM3. HPLC culture-supernatant production, 305
+      nm and authentic standard; Table III.5 means 2-4 independent mutants with two
+      determinations each, without row-specific n or error bars. Multicopy-production
+      culture 30 C, 200 rpm, 7 days in CDM, no antibiotics. No exact owner-stereocentre
+      assignment is inferred.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 63-64,128; PDF numbering is printed plus ten.
+        Separate primary source, not a claim to have inspected the complete final
+        paper or supplements.
+      retrieved_on: '2026-10-06'
+  - subject: mutant
+    predicate: is_background_for_complementation
+    object: complement
+    notes: pAE8 contains novG with 336 bp upstream in promoterless replicative pWHM3;
+      full vector or preparation sequence identity is not claimed.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 128; PDF numbering is printed plus ten. Separate
+        primary source, not a claim to have inspected the complete final paper or
+        supplements.
+      retrieved_on: '2026-10-06'
+  - subject: complement
+    predicate: partially_restored_production_of
+    object: product
+    notes: 16 mg/L, reported 79%, not silently recalculated as 80% from rounded titers.
+      This supports complementation but is not full 100% restoration. HPLC culture-supernatant
+      production, 305 nm and authentic standard; Table III.5 means 2-4 independent
+      mutants with two determinations each, without row-specific n or error bars.
+      Multicopy-production culture 30 C, 200 rpm, 7 days in CDM, no antibiotics. No
+      exact owner-stereocentre assignment is inferred.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 63-64,128; PDF numbering is printed plus ten.
+        Separate primary source, not a claim to have inspected the complete final
+        paper or supplements.
+      retrieved_on: '2026-10-06'
+  - subject: intact
+    predicate: is_background_for_overexpression
+    object: overexpression
+    notes: Same pAE8 introduced into the intact-cluster host, not a deletion rescue.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 128-129; PDF numbering is printed plus ten.
+        Separate primary source, not a claim to have inspected the complete final
+        paper or supplements.
+      retrieved_on: '2026-10-06'
+  - subject: overexpression
+    predicate: increased_reported_production_of
+    object: product
+    notes: 54 mg/L, 270% of the intact empty-vector comparator. This is product titer,
+      not measured NovG protein abundance or a kinetic parameter. HPLC culture-supernatant
+      production, 305 nm and authentic standard; Table III.5 means 2-4 independent
+      mutants with two determinations each, without row-specific n or error bars.
+      Multicopy-production culture 30 C, 200 rpm, 7 days in CDM, no antibiotics. No
+      exact owner-stereocentre assignment is inferred.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary thesis PDF pages 63-64,128-129; PDF numbering is printed plus
+        ten. Separate primary source, not a claim to have inspected the complete final
+        paper or supplements.
+      retrieved_on: '2026-10-06'
+  - subject: complement
+    predicate: supports_regulatory_interpretation
+    object: regulation
+    notes: The genetic rescue and overexpression support a positive role under tested
+      conditions. The source argues against polarity; no independent measurement excludes
+      every polar effect.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary thesis PDF pages 128-129; PDF numbering is printed plus ten.
+        Separate primary source, not a claim to have inspected the complete final
+        paper or supplements.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1099/mic.0.27669-0
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract inspected; full final paper and supplements not obtained.
+      retrieved_on: '2026-10-06'
+  - subject: NovG
+    predicate: has_supported_regulatory_role
+    object: regulation
+    notes: No biosynthetic catalytic activity or physical protein complex follows
+      from these phenotypes. Direct DNA-fragment binding is a separate experiment
+      and graph.
+    evidence:
+    - reference: DOI:10.1099/mic.0.27669-0
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract inspected; full final paper and supplements not obtained.
+      retrieved_on: '2026-10-06'
+curation_history:
+- timestamp: '2026-10-06T02:51:18Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add cathomycin-novg-heterologous-deletion-and-rescue; retain native/preparation/strain
+    distinctions, primary-source access limits and experimental versus inferred regulation
+    (#589).
+  llm_assisted: true

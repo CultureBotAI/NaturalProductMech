@@ -93,6 +93,921 @@ discussions:
     with Standard InChIKey OWRCRVABZYJUES-FLJLGRLJSA-N and this record''s structure
     is OWRCRVABZYJUES-AWECJWJISA-N. The skeleton blocks match, so the two disagree
     about stereochemistry: check which configuration the primary literature supports.'
+  rationale: The primary structure report establishes sugar configurations and relative
+    aglycone stereochemistry, and the Tu6028 biosynthesis paper explicitly labels
+    the aglycone configuration relative. The new protein experiments do not resolve
+    the owner/MIBiG versus ChEBI exact-structure disagreement. No atom-mapped comparison,
+    absolute-configuration correction or exact AntibioticMech join is claimed.
+  evidence:
+  - reference: DOI:10.7164/antibiotics.51.26
+    notes: 'Primary structure determination pp. 26-29: degradation, sugar assignments
+      and relative aglycone X-ray analysis; Figures 1, 4 and 5 inspected.'
+  - reference: DOI:10.7164/antibiotics.52.96
+    notes: Primary Tu6028 product characterization p. 96 and Figure 1 caption p. 97
+      explicitly retain relative aglycone configuration.
+  notes: 'Protein graphs retain the existing incomplete-stereochemistry record and
+    do not promote it to REVIEWED or merge POK-MD1/POK-MD2 with the parent. See source-review
+    issue #529.'
+causal_graphs:
+- graph_id: polyketomycin-pokmt1-native-genetics-and-early-assays
+  scope: BIOSYNTHESIS
+  description: Daum 2009 native Tu6028 PokMT1 genetics and early tagged-protein assays.
+    Frameshift, rescue, metabolite assignments and negative biochemical tests are
+    distinct claims. Product identity follows the named polyketomycin at the owner
+    record's unresolved stereochemical resolution; neither congeners nor fully specified
+    ChEBI stereochemistry are merged. The later PokM3/PokMT1 CoA-substrate evidence
+    is represented separately and prevents interpreting these early negative assays
+    as universal inactivity.
+  nodes:
+  - node_id: pokmt1
+    label: Native PokMT1 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:C0JWB3
+  - node_id: frameshift
+    label: Tu6028 pokMT1 internal BglII-site frameshift
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: loss
+    label: Polyketomycin replaced by mutant metabolites in the tested culture
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: md1
+    label: POK-MD1, proposed des-dimethylsalicyloyl polyketomycin
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: md2
+    label: POK-MD2, assigned 3-triple-prime-desmethyl polyketomycin
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: rescue
+    label: Tu6028 pokMT1 mutant with pSET-pokMT1
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: restored
+    label: Restored detectable polyketomycin production
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: his2009
+    label: 2009 N-terminal His6-PokMT1 construct
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: his_rescue
+    label: Tu6028 pokMT1 mutant with pSET-hispokMT1
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: negative2009
+    label: No detected methylation in the 2009 tested-substrate panel
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: operon
+    label: TK24 carrying pUWE-36DMSA multi-gene construct
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: operon_negative
+    label: No detected salicylate-product increase over empty vector
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: role
+    label: Inferred contribution to salicyloyl C-3 methylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: frameshift
+    predicate: targets_gene_encoding
+    object: pokmt1
+    notes: pKC1132-MT1del introduces a frameshift at an internal BglII site, not a
+      whole-gene deletion. After 12 passages, 8% of 244 tested clones were apramycin-sensitive.
+      PCR/BglII testing showed the reported mutant 1.25-kb uncut fragment versus wild-type
+      0.8/0.4-kb products; single-crossover and plasmid controls were included. Figure
+      3-25 attributes a faint uncut wild-type band to incomplete digestion. The exact
+      residual mutant protein was not sequenced here. The 347-aa printed native sequence
+      in Figure 3-31 matches the independently verified native parent.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.5.1-3.5.2, pp. 61-62; Fig. 3-25; Fig. 3-31 p. 71; construction
+        5.7.2.5 p. 163.
+    - reference: https://www.uniprot.org/uniprotkb/C0JWB3
+      evidence_type: DATABASE_ASSERTION
+      notes: Active unreviewed native PokMT1, 347 aa, taxon 42236, EMBL FJ483966/ACN64833.1;
+        inspected 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ACN64833.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native PokMT1 from Streptomyces diastatochromogenes Tu6028, 347 aa, FJ483966.1:complement(24720..25763).
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator comparison: the selected CDS translation agrees exactly across
+        native GenBank, GenPept, MIBiG BGC0001061.4 and UniProt. Whole loci are not
+        identical: MIBiG replaces native ambiguity codes by N at positions 47, 289,
+        46665 and 46736, outside these two CDSs.'
+  - subject: frameshift
+    predicate: has_reported_production_phenotype
+    object: loss
+    notes: HPLC/APCI-MS of six-day HA-medium production extracts reports POK-MD1 and
+      POK-MD2 instead of the wild-type polyketomycin peak. Method pokAPCI2 and 450-nm
+      traces were used. This is a detection/profile result, not a calibrated zero
+      titer or all-condition requirement.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.5.3 pp. 62-63 and 5.10.2.2 p. 189; Table 5-48 p. 196.
+  - subject: frameshift
+    predicate: accumulates_reported_metabolite
+    object: md1
+    notes: 'POK-MD1 is the major mutant product: nominal mass 716 Da, retention 11.1
+      min and relative 450-nm signal area 100. Table 3-7 normalizes each profile to
+      its largest POK-family signal, not to biomass or an absolute standard. The proposed
+      loss of the 3,6-dimethylsalicyloyl moiety rests on APCI-MS fragmentation; no
+      POK-MD1 NMR data were acquired. Do not ground this provisional derivative to
+      the parent record.'
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 3-7 p. 62; sections 3.5.3-3.5.4, pp. 63-68; Figs. 3-26, 3-27 and
+        3-29.
+  - subject: frameshift
+    predicate: accumulates_reported_metabolite
+    object: md2
+    notes: Minor POK-MD2 has nominal mass 850 Da, retention 16.8 min and relative
+      450-nm area 15 versus MD1=100; native polyketomycin is 864 Da at 19.2 min. MS
+      supports a missing salicyloyl methyl rather than a sugar/aglycone deletion.
+      After methyl-13C-methionine feeding, the 15.9-ppm methyl signal is absent while
+      the other three enriched methyl signals remain. Methods p. 199 state that labelled
+      POK and POK-MD2 were not isolated from fractionated extract because amounts
+      were low. This is not complete NMR of a pure congener, nor an independent absolute
+      stereochemical assignment.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 3-7 p. 62; section 3.5.4 pp. 64-68, Table 3-8 and Fig. 3-28; section
+        5.11.1.2 p. 199.
+  - subject: rescue
+    predicate: introduces_gene_encoding
+    object: pokmt1
+    notes: pSET-pokMT1 is a pSET-1cerm/ermE-up rescue construct. Native primer alignment
+      gives a 24659..25892 span (1234 bp), including the full pokMT1 CDS and only
+      seven terminal bases of adjacent pokM2, not another complete enzyme. Primer-engineered
+      restriction sites lie outside pokMT1. This is a curator reconstruction of native
+      coverage, not a complete sequenced plasmid.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 5-35 p. 158; complementation methods 5.8.2.1-5.8.2.2 and 5.8.2.5,
+        pp. 168-169.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator MT1-F/MT1-R alignment to FJ483966.1; full pokMT1 at 24720..25763
+        and partial pokM2 ending at 24665.
+  - subject: rescue
+    predicate: restores_reported_production
+    object: restored
+    notes: The complemented mutant again produces polyketomycin, with a small residual
+      POK-MD1 peak. Methods describe comparing three complemented clones to wild type
+      and the mutant with pSET-1cerm control. The displayed profile is not a quantified
+      claim that every clone has wild-type yield or that every possible polar effect
+      is excluded.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.5.3 and Fig. 3-26 p. 63; section 5.8.3 p. 169.
+      snippet: Polyketomycin wurde dadurch wieder hergestellt
+  - subject: his2009
+    predicate: uses_native_parent_sequence_from
+    object: pokmt1
+    notes: The thesis reports a 43.1-kDa N-terminal His6 fusion expressed using pRSET-pokMT1
+      or pUWE-hispokMT1. Soluble affinity-purified protein was obtained in E. coli
+      BL21(DE3)/pLysS, Origami B(DE3)/pLysS and KRX; TK24 expression succeeded in
+      SG medium. Trypsin/MALDI assigned 19 of 23 mass signals and reported 52% coverage,
+      not full sequence confirmation. Table 5-36 lists MT1Ex PstI/EcoRI primers but
+      mislabels their target plaO1; p. 173 instead names His-MT1 primers, which the
+      table assigns ClaI/XbaI for rescue. Native alignment supports MT1Ex targeting
+      pokMT1, but the full engineered sequence/junction is not asserted. The native
+      UniProt identifier is not assigned to the fusion.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.5.5.2-3.5.5.3 pp. 69-72; Fig. 3-30 and Table 3-9; Table 5-36
+        p. 158 and methods pp. 169, 173-175.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator MT1Ex primer comparison supports the native pokMT1 region despite
+        conflicting primer labels in source methods.
+  - subject: his_rescue
+    predicate: carries_expression_construct_for
+    object: his2009
+    notes: pSET-hispokMT1 was derived from the tagged expression construct and introduced
+      into the native pokMT1 mutant. This rescue context is separate from purified
+      in vitro tests and from the later 2018 pBS3080-based constructs.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.5.5.2 p. 69; section 5.8.2.6 p. 169.
+  - subject: his_rescue
+    predicate: restores_reported_production
+    object: restored
+    notes: Tagged rescue restored detectable polyketomycin. This supports retained
+      in vivo functionality in that construct, not unchanged native kinetics, full
+      fusion sequence identity or proof that every recombinant preparation is catalytically
+      competent.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.5.5.2 p. 69.
+  - subject: his2009
+    predicate: has_bounded_negative_assay_result
+    object: negative2009
+    notes: The 2009 HPLC/MS assays detected no methylation with the displayed POK-MD2,
+      salicylate, 6-methylsalicylate and three salicylate-SNAC derivatives. Figure
+      3-32 lists A-F but its introductory caption says A-E, so the panel wording itself
+      is inconsistent. Methods specify 14 uM tagged enzyme, 0.5-5 mM SAM, 50 mM phosphate
+      or Tris pH 7.5-8.5, 3 h at 28 or 37 C, with some tests adding 1 mM MgCl2 and/or
+      DTT. Not every combination is individually tabulated; substrate stock concentrations
+      and detection limits are not given here. This negative result does not cover
+      the CoA thioester demonstrated later, and does not show that native PokMT1 is
+      inactive.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.5.6 pp. 72-73, Fig. 3-32; section 5.9.5.2 p. 185.
+    - reference: DOI:10.1021/acs.biochem.7b01219.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Fig. S6 later identifies the CoA-tethered substrate, a distinct assay
+        from the thesis panel.
+  - subject: operon
+    predicate: contains_gene_for
+    object: pokmt1
+    notes: The pUWE-36DMSA construct contains the proposed pokMT1/pokM2/pokM1/pokM3
+      unit under ermE-up, with flanking sequence. The thesis calls its completeness
+      presumptive. Construct carriage does not establish expression of each enzyme
+      or a physical multienzyme complex.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.5.7 and Table 3-10 pp. 73-74; construction 5.9.1.4 p. 174.
+  - subject: operon
+    predicate: has_bounded_negative_assay_result
+    object: operon_negative
+    notes: TK24 production extracts showed no salicylate-derivative difference from
+      the empty-pUWE control by HPLC/MS; Discussion also reports no substrate turnover
+      using cell-free extract. Neither result proves that all four introduced enzymes
+      were expressed or universally inactive. It is not a successful reconstitution
+      of polyketomycin production.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.5.7 p. 74; Discussion 4.3.1 p. 109; methods pp. 174-175, 185.
+  - subject: md2
+    predicate: supports_genetic_assignment_of
+    object: role
+    notes: The mutant profile and methyl-label localization support a role at the
+      salicyloyl C-3 position. Genetics alone did not identify the enzyme-bound substrate
+      or establish whether methylation precedes CoA activation; the thesis considers
+      several timings. The 2018 biochemical evidence must not be replaced by the older
+      proposed order.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: CURATOR_INFERENCE
+      notes: Sections 3.5.4 and 4.3.1 pp. 64-68, 104-109.
+    - reference: DOI:10.1021/acs.biochem.7b01219.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Fig. S6 gives substrate order; Fig. S10 is explicitly the original, historical
+        proposal.
+  - subject: pokmt1
+    predicate: has_genetically_inferred_biosynthetic_role
+    object: role
+    notes: Native genetics and rescue assign PokMT1 to salicyloyl methylation in this
+      producer. This edge is the genetic inference, not a claim that the 2009 study
+      demonstrated purified conversion of free 6-methylsalicylic acid.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: CURATOR_INFERENCE
+      notes: Sections 3.5 and 4.3.1; inference from mutant metabolites and complementation.
+- graph_id: polyketomycin-pokm3-pokmt1-coa-activated-precursor
+  scope: BIOSYNTHESIS
+  description: 'Guo et al. 2018 PokM3/PokMT1 precursor branch: CoA activation of 6-methylsalicylate
+    precedes C-methylation. Curated from the primary abstract and openly deposited
+    supporting information, including visually inspected experimental figures; full
+    main-text methods were inaccessible. Native parent accessions are separate from
+    recombinant His6 constructs. Reaction identity is supported, but complete assay
+    conditions, mutant activity values and a full polyketomycin reconstitution are
+    not asserted. The owner''s unresolved aglycone stereochemistry is unchanged.'
+  nodes:
+  - node_id: pokm3
+    label: Native PokM3 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:C0JWB0
+  - node_id: pokmt1
+    label: Native PokMT1 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:C0JWB3
+  - node_id: his_m3
+    label: 2018 N-terminal His6-PokM3 construct
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: his_mt1
+    label: 2018 N-terminal His6-PokMT1 construct
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: msa
+    label: 6-Methylsalicylic acid, free acid substrate 4
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: msa_coa
+    label: 6-Methylsalicylyl-CoA, substrate 5
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: dmsa_coa
+    label: 3,6-Dimethylsalicylyl-CoA, product 6
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: ligation
+    label: ATP- and CoA-dependent 6-MSA activation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: methylation
+    label: SAM-dependent C-3 methylation of 6-MSA-CoA
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: free_acid_negative
+    label: No detectable free-acid methylation in the displayed control assay
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: m3_assembly
+    label: PokM3 dimeric solution-state interpretation
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: mt1_assembly
+    label: PokMT1 tetrameric solution-state interpretation
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: precursor_role
+    label: Proposed supply of the polyketomycin dimethylsalicyloyl moiety
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: his_m3
+    predicate: uses_native_parent_sequence_from
+    object: pokm3
+    notes: pBS10020 contains the full-length PokM3 coding parent in pBS3080, a pRSFDuet-1
+      derivative with an N-terminal His6 tag and TEV site. Figure S3 shows the purified
+      tagged protein, with predicted mass 61,303 Da; this is not the native parent
+      mass. Table S1 lists E. coli BL21(DE3) and BL21 Star as production hosts, without
+      allocating every preparation to one host. Primary LIC primers align to the native
+      CDS boundaries. No tag-cleavage state in the activity assay or complete engineered
+      junction sequence is inferred. Table S2 duplicates pBS10024 for two mutant constructs;
+      those identities and their uninspected activity measurements are not adopted.
+    evidence:
+    - reference: DOI:10.1021/acs.biochem.7b01219.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Tables S1-S3 p. S4; Fig. S3 p. S8; native PokMT1 accession also given
+        on pp. S2/S13.
+    - reference: https://www.uniprot.org/uniprotkb/C0JWB0
+      evidence_type: DATABASE_ASSERTION
+      notes: Active unreviewed native PokM3, 551 aa, taxon 42236, EMBL FJ483966/ACN64830.1;
+        inspected 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ACN64830.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native PokM3 from Streptomyces diastatochromogenes Tu6028, 551 aa, FJ483966.1:complement(16769..18424).
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator comparison: the selected CDS translation agrees exactly across
+        native GenBank, GenPept, MIBiG BGC0001061.4 and UniProt. Whole loci are not
+        identical: MIBiG replaces native ambiguity codes by N at positions 47, 289,
+        46665 and 46736, outside these two CDSs.'
+  - subject: his_mt1
+    predicate: uses_native_parent_sequence_from
+    object: pokmt1
+    notes: pBS10021 contains the full-length PokMT1 coding parent in pBS3080, a pRSFDuet-1
+      derivative with an N-terminal His6 tag and TEV site. Figure S3 shows the purified
+      tagged protein, with predicted mass 41,144 Da; this is not the native parent
+      mass. Table S1 lists E. coli BL21(DE3) and BL21 Star as production hosts, without
+      allocating every preparation to one host. Primary LIC primers align to the native
+      CDS boundaries. No tag-cleavage state in the activity assay or complete engineered
+      junction sequence is inferred. Table S2 duplicates pBS10024 for two mutant constructs;
+      those identities and their uninspected activity measurements are not adopted.
+    evidence:
+    - reference: DOI:10.1021/acs.biochem.7b01219.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Tables S1-S3 p. S4; Fig. S3 p. S8; native PokMT1 accession also given
+        on pp. S2/S13.
+    - reference: https://www.uniprot.org/uniprotkb/C0JWB3
+      evidence_type: DATABASE_ASSERTION
+      notes: Active unreviewed native PokMT1, 347 aa, taxon 42236, EMBL FJ483966/ACN64833.1;
+        inspected 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ACN64833.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native PokMT1 from Streptomyces diastatochromogenes Tu6028, 347 aa, FJ483966.1:complement(24720..25763).
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator comparison: the selected CDS translation agrees exactly across
+        native GenBank, GenPept, MIBiG BGC0001061.4 and UniProt. Whole loci are not
+        identical: MIBiG replaces native ambiguity codes by N at positions 47, 289,
+        46665 and 46736, outside these two CDSs.'
+  - subject: his_m3
+    predicate: catalyzes
+    object: ligation
+    notes: Figure S6A identifies PokM3-catalyzed formation of 6-MSA-CoA from 6-MSA,
+      measured while varying free acid with CoA and ATP each at 2 mM. The SI gives
+      C18 HPLC detection at 300 nm and Bradford protein quantification. The same study's
+      abstract also reports the sequential PokM3/PokMT1 conversion; it is not independent
+      replication. Buffer, reaction temperature/time, replicate count and complete
+      error model were not recovered from the accessible SI; kinetic constants are
+      not digitized or reconstructed from the curve.
+    evidence:
+    - reference: DOI:10.1021/acs.biochem.7b01219.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: General methods p. S2 and Fig. S6A p. S11.
+      snippet: PokM3-catalyzed formation of 6-MSA-CoA (5) from 6-MSA (4)
+    - reference: DOI:10.1021/acs.biochem.7b01219
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Primary abstract: sequential conversion by PokM3 and PokMT1; full main
+        text not inspected.'
+  - subject: msa
+    predicate: is_substrate_of
+    object: ligation
+    notes: The substrate is free 6-methylsalicylic acid (4), not already C-methylated
+      3,6-dimethylsalicylic acid. The methylated-free-acid-first scheme in Fig. S10
+      is a historical proposal, not this experimentally supported order.
+    evidence:
+    - reference: DOI:10.1021/acs.biochem.7b01219.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Fig. S6A p. S11 versus historical Fig. S10 p. S15.
+  - subject: ligation
+    predicate: produces
+    object: msa_coa
+    notes: The product is the CoA thioester 6-MSA-CoA (5). Do not treat the previous
+      AMP-ligase annotation or the old OAMP intermediate scheme as proof that adenylate
+      is the released product measured here.
+    evidence:
+    - reference: DOI:10.1021/acs.biochem.7b01219.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Fig. S6A p. S11; historical Fig. S10 p. S15.
+    - reference: DOI:10.1021/acs.biochem.7b01219
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract supports the CoA-activated pathway.
+  - subject: his_mt1
+    predicate: catalyzes
+    object: methylation
+    notes: Figure S6B follows 3,6-DMSA-CoA formation from 6-MSA-CoA while varying
+      substrate with 1 mM SAM. The SI provides HPLC detection at 300 nm. This establishes
+      activity on the CoA-linked aromatic substrate; it does not support free-acid
+      turnover or methylation of complete polyketomycin. The accessible abstract reports
+      kinetics, but detailed main-text conditions were not inspected, so no quantitative
+      kinetic measurement is curated here.
+    evidence:
+    - reference: DOI:10.1021/acs.biochem.7b01219.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: General methods p. S2 and Fig. S6B p. S11.
+      snippet: PokMT1-catalyzed formation of 3,6-DMSA-CoA (6) from 6-MSA-CoA (5)
+    - reference: DOI:10.1021/acs.biochem.7b01219
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract reports PokMT1 C-methylation of the CoA-activated substrate.
+  - subject: msa_coa
+    predicate: is_substrate_of
+    object: methylation
+    notes: The CoA-tethered product of the PokM3 reaction is the PokMT1 substrate.
+      It is distinct from a SNAC mimic, free acid or a glycosylated congener. Activity
+      is assigned to the tested PokMT1 construct, not substituted with its homolog
+      MdpB1 from a different biosynthetic pathway.
+    evidence:
+    - reference: DOI:10.1021/acs.biochem.7b01219.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Fig. S6 p. S11; substrate drawings in Fig. S11 p. S16.
+  - subject: methylation
+    predicate: produces
+    object: dmsa_coa
+    notes: Product 6 is assigned as 3,6-dimethylsalicylyl-CoA. Supporting data include
+      HR-ESI-MS [M+H]+ m/z 916.1738 (calculated 916.1755) and 1H/13C NMR spectra in
+      DMSO-d6 at 400/100 MHz. These spectra support the authors' precursor assignment,
+      not whole-polyketomycin stereochemistry. Figure S2 reuses H-30 in its aromatic-methyl
+      and low-shift aliphatic-methyl annotations; no atom-by-atom reassignment is
+      asserted here.
+    evidence:
+    - reference: DOI:10.1021/acs.biochem.7b01219.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figs. S1-S2 pp. S5-S7 and Fig. S6B p. S11.
+  - subject: his_mt1
+    predicate: has_bounded_negative_assay_result
+    object: free_acid_negative
+    notes: Figure S5 shows the free-acid 6-MSA/SAM control without enzyme and the
+      complete assay. Both retain the substrate peak, and the reaction arrow is crossed;
+      no methylated product is shown. This supports no detected conversion in that
+      assay, not an exact zero rate or an unreported limit of detection. The generic
+      caption title must not be read as a positive conversion result.
+    evidence:
+    - reference: DOI:10.1021/acs.biochem.7b01219.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Fig. S5 p. S10, chromatograms and crossed reaction arrow visually inspected.
+  - subject: msa
+    predicate: was_tested_in
+    object: free_acid_negative
+    notes: Free acid 4 is the alternative substrate in this negative experiment, distinct
+      from CoA substrate 5 in the positive reaction. The negative comparison does
+      not invalidate the CoA-substrate activity.
+    evidence:
+    - reference: DOI:10.1021/acs.biochem.7b01219.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figs. S5-S6 pp. S10-S11.
+  - subject: his_m3
+    predicate: has_solution_state_consistent_with
+    object: m3_assembly
+    notes: Size-exclusion chromatography reports elution at 67.9 mL and apparent mass
+      120.8 kDa versus a calculated 61.3-kDa tagged monomer, supporting the authors'
+      dimer interpretation. Calibration uses five globular protein standards. This
+      is hydrodynamic evidence, not a crystal structure, exact subunit count from
+      mass spectrometry, or a heteromer with PokMT1.
+    evidence:
+    - reference: DOI:10.1021/acs.biochem.7b01219.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Fig. S4 p. S9, calibration graph and caption.
+  - subject: his_mt1
+    predicate: has_solution_state_consistent_with
+    object: mt1_assembly
+    notes: Size-exclusion chromatography reports elution at 64.1 mL and apparent mass
+      157.1 kDa versus a calculated 41.1-kDa tagged monomer, supporting the authors'
+      tetramer interpretation. No ComplexPortal identifier is assigned. The abstract
+      describes a homology model; it is not an experimentally determined PokMT1 structure
+      or direct proof of the proposed catalytic proton transfers.
+    evidence:
+    - reference: DOI:10.1021/acs.biochem.7b01219.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Fig. S4 p. S9; mechanistic proposals in Fig. S9 remain models.
+    - reference: DOI:10.1021/acs.biochem.7b01219
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary abstract distinguishes homology modelling and site-directed mutagenesis
+        from structural determination.
+  - subject: dmsa_coa
+    predicate: is_assigned_precursor_for
+    object: precursor_role
+    notes: The primary authors assign this CoA thioester as the precursor of the 3,6-dimethylsalicyloyl
+      moiety of polyketomycin. This links the isolated biochemical branch to the named
+      product but is not evidence that PokL transfer or full-product synthesis was
+      reconstituted in the inspected experiments.
+    evidence:
+    - reference: DOI:10.1021/acs.biochem.7b01219
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Primary abstract: product 6 serves as the direct precursor to the polyketomycin
+        moiety.'
+    - reference: DOI:10.1021/acs.biochem.7b01219.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figs. S1-S2 and S6 establish the small precursor, not the entire product.
+- graph_id: polyketomycin-pokmt2-genetics-and-c6-methylation-inference
+  scope: BIOSYNTHESIS
+  description: 'Native Tu6028 PokMT2 frameshift and rescue, with purified POK-MD3
+    structural evidence supporting C-6 methylation. The native parent is exactly grounded,
+    but no purified-enzyme reaction, immediate substrate or absolute biosynthetic
+    timing is claimed. POK-MD3 is a distinct congener, not the parent or POK-MD2.
+    The owner remains at its existing unresolved stereochemical resolution. Source-review
+    issue #530 preserves normalized-profile, allele and inferred-substrate limitations.'
+  nodes:
+  - node_id: pokmt2
+    label: Native PokMT2 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:C0JWC3
+  - node_id: frameshift
+    label: Tu6028 pokMT2 internal AscI-site frameshift, DC12
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: loss
+    label: Polyketomycin replaced by POK-MD3 in the tested culture
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: md3
+    label: POK-MD3, assigned 6-desmethyl polyketomycin
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: rescue
+    label: Tu6028 pokMT2 mutant carrying pSET-pokMT2
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: restored
+    label: Restored detectable polyketomycin production
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: c6_methylation
+    label: Genetically inferred polyketide C-6 methylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: early_step
+    label: Proposed methylation after cyclization and before C-6 oxidation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: frameshift
+    predicate: targets_gene_encoding
+    object: pokmt2
+    notes: 'pKC1132-MT2del was made by disrupting an internal AscI site in the pUC-9-B
+      subclone, not by removing the whole CDS. Four passages yielded 14% apramycin-sensitive
+      clones among 88 tested. PCR/AscI analysis compared four mutant clones (DC11-DC14)
+      with wild type and the inactivation-plasmid control: reported 1.2-kb mutant
+      amplicons resisted cleavage, whereas wild type gave approximately 1.0/0.2-kb
+      fragments. DC12 was used subsequently. Figure 3-33 uses a deletion label, but
+      the methods specify a frameshift; no complete mutant protein sequence is established.'
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.6.1-3.6.2 pp. 75-76, Fig. 3-33; construction 5.7.2.6 p. 164;
+        Table 5-28 p. 137.
+    - reference: https://www.uniprot.org/uniprotkb/C0JWC3
+      evidence_type: DATABASE_ASSERTION
+      notes: Active unreviewed native PokMT2, 345 aa, taxon 42236; EMBL FJ483966/ACN64843.1.
+        Inspected 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ACN64843.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native PokMT2 from Streptomyces diastatochromogenes Tu6028; 345 aa; FJ483966.1:complement(35677..36714).
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator comparison: target CDS translations agree exactly across native
+        GenBank, GenPept, MIBiG BGC0001061.4 and UniProt. Whole-locus ambiguity substitutions
+        at 47, 289, 46665 and 46736 are outside these CDSs; no claim of whole-locus
+        identity.'
+  - subject: frameshift
+    predicate: has_reported_production_phenotype
+    object: loss
+    notes: HPLC/APCI-MS (pokAPCI2, 450-nm chromatograms) of six-day HA-medium production
+      extracts showed POK-MD3 in place of the wild-type polyketomycin peak. Production
+      followed a 72-h preculture. No calibrated detection limit or exact zero titer
+      was reported; this result is restricted to the tested strain and culture conditions.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.6.3 pp. 76-77, Fig. 3-34; methods 5.10.2.2 p. 189 and Table
+        5-48 p. 196.
+  - subject: frameshift
+    predicate: accumulates_reported_metabolite
+    object: md3
+    notes: Table 3-11 reports nominal mass 850 Da and retention 18.8 min for POK-MD3
+      versus 864 Da/19.2 min for polyketomycin. Each profile is independently normalized
+      to its largest 450-nm POK-family signal; the two values of 100 are not equal
+      absolute titers. MD3 is also distinct from the 850-Da, 16.8-min MD2 of the pokMT1
+      mutant. A blue-shifted long-wavelength UV maximum and the 14-Da shift of aglycone-containing
+      APCI fragments localize the change to the polyketide portion, not by mass alone
+      to one methyl position.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.6.3, Table 3-11 and Fig. 3-34 pp. 76-77; section 3.6.4.1 and
+        Fig. 3-35 pp. 78-79; compare Table 3-7 p. 62.
+  - subject: rescue
+    predicate: introduces_gene_encoding
+    object: pokmt2
+    notes: pSET-pokMT2 places the native gene behind ermE-up in pSET-1cerm. Curator
+      alignment of MT2-F/MT2-R gives a 1203-bp native span 35578..36780 containing
+      the entire 1038-bp CDS and no neighboring complete or partial CDS. The engineered
+      restriction-site substitutions are outside pokMT2. This supports native parent
+      identity, not a fully sequenced integrated plasmid. Table 5-28 gives an approximate
+      1.1-kb insert; the primary primer span is reported separately rather than silently
+      substituted.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 5-35 p. 158, Table 5-28 p. 139, methods 5.8.2.1/5.8.2.5 pp. 168-169;
+        map 7.3.2.4 p. 239.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator MT2 primer alignment and native CDS/neighborhood comparison;
+        primary primers inspected visually.
+  - subject: rescue
+    predicate: restores_reported_production
+    object: restored
+    notes: The complemented mutant again has the polyketomycin production peak. Methods
+      describe comparisons of three complemented clones with wild type and the corresponding
+      mutant carrying empty pSET-1cerm. The displayed trace establishes restoration
+      of detectable production, not an independently calibrated wild-type yield, quantified
+      uncertainty, or universal exclusion of polar effects.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.6.3 and Fig. 3-34 p. 77; complementation comparisons 5.8.3
+        p. 169.
+  - subject: md3
+    predicate: supports_genetic_assignment_of
+    object: c6_methylation
+    notes: The authors isolated 7.5 mg MD3 from a 3-L mutant production culture by
+      fractionation and preparative HPLC, then acquired 1H/13C and COSY/HSQC/HMBC
+      spectra in CDCl3 (400/100 MHz). Unlike labelled MD2, this was an isolated compound.
+      Neutral formula C43H46O18 and HR-ESI-MS [M+H]+ m/z 851.27507 (calculated 851.27569)
+      support one fewer methyl equivalent. The C-15 methyl signals are absent; C-6
+      moves from 132.7 to 119.9 ppm and couples to a new 7.54-ppm proton, whose HMBC
+      correlations establish its location. This supports 6-desmethyl polyketomycin,
+      not an independently resolved absolute stereochemistry or exact parent identity.
+      Appendix assignments at C-1/C-12 remain mutually exchangeable.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Sections 3.6.4.1-3.6.4.2 pp. 78-81, Figs. 3-35 to 3-38; Table 7-6 pp.
+        232-233 and Fig. 7-5 p. 234.
+      snippet: es sich bei POK-MD3 um das 6-Desmethyl-Polyketomycin
+  - subject: pokmt2
+    predicate: has_genetically_inferred_biosynthetic_role
+    object: c6_methylation
+    notes: The inactivation, purified congener assignment and complementation support
+      attribution of C-6 methylation to PokMT2. The experiment is genetic inference,
+      not purified native PokMT2 conversion of MD3 or an isolated early intermediate.
+      Similarity to OxyF/BenF supplies context but those proteins are not substituted
+      as exact polyketomycin enzymes. MD3 diffusion-assay results concern the congener,
+      not a bioactivity-target role for PokMT2.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: CURATOR_INFERENCE
+      notes: Sections 3.6 pp. 75-81 and 4.3.2 pp. 110-112; inference from native genetics,
+        metabolite analysis and rescue.
+  - subject: c6_methylation
+    predicate: has_proposed_pathway_timing
+    object: early_step
+    notes: The thesis proposes C-methylation after formation of the tetracycle and
+      before oxidation at C-6, based on previously reported shunts and analogy with
+      oxytetracycline biosynthesis. Figure 4-10 explicitly treats POK-IP3 as a shunt,
+      not the direct substrate; the proposed substrate was modeled on pretetramid.
+      This is not an experimentally measured reaction order, demonstrated substrate
+      specificity or evidence that complete MD3 is methylated as the last step. The
+      reported ability to form MD3 shows downstream biosynthesis can proceed without
+      this methyl group in the tested mutant.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: CURATOR_INFERENCE
+      notes: Discussion 4.3.2 pp. 110-112 and Fig. 4-10 p. 111; summary 4.3.4 pp.
+        115-116. Prior shunt work is attributed by the thesis, not newly assayed here.
+- graph_id: polyketomycin-pokmt3-bounded-genetics-and-proposed-functions
+  scope: BIOSYNTHESIS
+  description: 'Native Tu6028 PokMT3 inactivation eliminates detectable polyketomycin
+    under the tested conditions, with partial rescue. C-8 O-methylation and an early
+    structural contribution remain proposed; the evidence does not establish direct
+    turnover, a physical complex or a PokMT3 cyclase. The reported 600-bp deletion
+    and primer-derived 660-bp reconstruction are distinct, and the possible pokC2
+    polar effect remains unresolved (source-review issue #530). Product stereochemical
+    identity is unchanged.'
+  nodes:
+  - node_id: pokmt3
+    label: Native PokMT3 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:C0JWC7
+  - node_id: deletion
+    label: Tu6028 pokMT3 reported internal in-frame deletion, DC50
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: loss
+    label: No detected polyketomycin-family product in the tested mutant culture
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: ip4_signal
+    label: Mutant extract signal assigned as IP4 by its UV profile
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: rescue
+    label: Tu6028 pokMT3 mutant carrying pSET-pokMT3
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: partial_restoration
+    label: Partially restored polyketomycin production
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: c8_methylation
+    label: Proposed O-methylation of the C-8 hydroxyl group
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: early_support
+    label: Hypothesized structural contribution to early polyketide biosynthesis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: deletion
+    predicate: targets_gene_encoding
+    object: pokmt3
+    notes: The source reports a 600-bp in-frame internal deletion made with JG1/JG2
+      PCR fragments and an EcoRI junction, not removal of the entire gene. After eight
+      passages, 3% of 88 clones were apramycin-sensitive. PCR detected approximately
+      0.5-kb mutant versus 1.1-kb native products, with wild-type, plasmid, single-crossover
+      and reverted-wild-type controls. DC50 was used because its genotype result was
+      clearer than DC12. Curator reconstruction of the published primers against FJ483966.1
+      yields cut boundaries 40161/40821 and a 660-bp in-frame reduction. Both values
+      are preserved; the reconstruction is not an observed mutant sequence and does
+      not replace the reported allele. Printed PokMT3 alignment residues 52-371 match
+      the exact native parent.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.7.2 pp. 83-84 and Fig. 3-40; Table 5-35 p. 158, construction
+        5.7.2.7 p. 164; native alignment Fig. 4-12 p. 114.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Curator-only JG1/JG2 primer/EcoRI reconstruction differs from the reported
+        600-bp deletion; neither provides a sequenced mutant allele.
+    - reference: https://www.uniprot.org/uniprotkb/C0JWC7
+      evidence_type: DATABASE_ASSERTION
+      notes: Active unreviewed native PokMT3, 371 aa, taxon 42236; EMBL FJ483966/ACN64847.1.
+        Inspected 2026-10-04.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ACN64847.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native PokMT3 from Streptomyces diastatochromogenes Tu6028; 371 aa; FJ483966.1:39977..41092.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator comparison: target CDS translations agree exactly across native
+        GenBank, GenPept, MIBiG BGC0001061.4 and UniProt. Whole-locus ambiguity substitutions
+        at 47, 289, 46665 and 46736 are outside these CDSs; no claim of whole-locus
+        identity.'
+  - subject: deletion
+    predicate: has_reported_production_phenotype
+    object: loss
+    notes: HPLC/APCI-MS of six-day HA-medium production extracts did not reveal a
+      polyketomycin-like UV profile or the 14-Da-lower congener anticipated for loss
+      of a methyl group. The thesis calls this a production-null mutant. No exact
+      zero concentration, detection limit or all-condition essentiality is established.
+      Loss of production does not by itself distinguish methylation, structural support
+      or an indirect polar effect.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.7.3 pp. 84-85 and Fig. 3-41; methods 5.10.2.2 p. 189 and Table
+        5-48 p. 196.
+  - subject: deletion
+    predicate: has_reported_metabolite_signal
+    object: ip4_signal
+    notes: The six-day mutant trace contains a 24.0-min signal assigned as IP4 by
+      comparison with the UV profile previously reported by Peintner. The displayed
+      mutant chromatogram uses a different vertical scale from the wild-type/rescue
+      traces. This is an extract-level signal assignment, not a newly purified or
+      completely structure-resolved IP4 molecule. Earlier-culture IP1/IP2 observations
+      are attributed to prior work by the thesis and are not promoted here to newly
+      inspected experiments or exact polyketomycin congeners.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.7.3 pp. 84-85 and Fig. 3-41, chromatograms and UV trace visually
+        inspected.
+  - subject: rescue
+    predicate: introduces_gene_encoding
+    object: pokmt3
+    notes: pSET-pokMT3 places the gene behind ermE-up in pSET-1cerm. MT3-F/MT3-R align
+      to a 1203-bp native PCR span 39940..41142 containing the complete 1116-bp pokMT3
+      CDS and only 32 terminal bases of upstream pokC2, not a second complete enzyme.
+      Engineered restriction-site substitutions lie outside pokMT3. The map marks
+      a partial C2 segment. The pre-digestion PCR span is not asserted to be the complete
+      final integrated construct sequence.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 5-35 p. 158, Table 5-28 p. 139, methods 5.8.2.1/5.8.2.5 pp. 168-169;
+        map 7.3.2.5 p. 240.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ483966.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Curator MT3 primer alignment: full native pokMT3 plus short pokC2 flank.
+        All primary primer bases and native coordinates checked.'
+  - subject: rescue
+    predicate: partially_restores_reported_production
+    object: partial_restoration
+    notes: The thesis reports restored polyketomycin production at approximately 20%
+      of wild type. Methods compare three complemented clones with wild type and mutant
+      plus empty pSET-1cerm. No calibrated titer, replicate-level distribution or
+      uncertainty is given with the percentage, and the plotted traces must not be
+      compared without their different scales. Discussion explicitly retains a possible
+      polar effect on upstream pokC2; partial rescue is not full causal isolation
+      of PokMT3 function.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Section 3.7.3 and Fig. 3-41 p. 85; complementation 5.8.3 p. 169; polar-effect
+        qualification 4.3.3 p. 115.
+      snippet: im Vergleich zur Produktion im Wildtyp auf etwa 20 % beschränkt
+  - subject: pokmt3
+    predicate: has_proposed_biosynthetic_role
+    object: c8_methylation
+    notes: O-methylation at C-8 is the authors' assignment from sequence similarity
+      to aromatic O-methyltransferases and pathway chemistry. The pokMT3 mutant did
+      not yield the corresponding desmethyl polyketomycin, and the inspected work
+      does not show purified PokMT3 conversion of a defined substrate. A late methylation
+      step after cyclization is proposed, not measured. The native accession is grounded
+      independently of the confidence in this reaction assignment.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: CURATOR_INFERENCE
+      notes: Section 3.7.1 pp. 82-83; discussion 4.3.3 pp. 112-115 and Figs. 3-39/4-11/4-12;
+        proposed interpretation, not direct enzyme assay.
+  - subject: pokmt3
+    predicate: has_hypothesized_non_catalytic_role
+    object: early_support
+    notes: The authors speculate that PokMT3 helps organize early polyketide biosynthesis
+      because inactivation blocks production before the proposed methylation stage.
+      No protein interaction, stoichiometry or physical assembly was measured. TcmN
+      is longer and its N-terminal cyclase/dehydrogenase region is not the region
+      similar to PokMT3; TcmN bifunctionality therefore is not evidence for PokMT3
+      cyclase activity. Sequence comparison alone also is not a direct negative cyclase
+      assay. The possible pokC2 polar effect remains an alternative to the structural-role
+      hypothesis, and no ComplexPortal identity is assigned.
+    evidence:
+    - reference: https://freidok.uni-freiburg.de/data/6815
+      evidence_type: CURATOR_INFERENCE
+      notes: Discussion 4.3.3 pp. 112-115; Figs. 4-11/4-12; structural role is explicitly
+        speculative and polar effects are not excluded.
+causal_graph_refs:
+- polyketomycin-poko4-bounded-genetics-and-rescue-cocarriage
+- polyketomycin-poko1-poko2-genetics-and-functional-compensation
+- polyketomycin-poko3-sequence-based-quinone-hypothesis
 curation_history:
 - timestamp: '2026-09-10T06:18:46Z'
   curator: seed_from_sources
@@ -102,3 +1017,43 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-04T04:55:39Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added native PokMT1 UniProtKB:C0JWB3 and PokM3 UniProtKB:C0JWB0 in two
+    primary-cited graphs, with distinct 2009/2018 tagged constructs, bounded genetics,
+    negative assays and CoA-before-methylation evidence. Addressed #529 source/construct/NMR
+    limits and annotated the open stereochemistry discussion without changing source-owned
+    identity or SEEDED status.'
+  llm_assisted: true
+- timestamp: '2026-10-04T05:34:18Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added exact native PokMT2 UniProtKB:C0JWC3 and PokMT3 UniProtKB:C0JWC7
+    in two primary-cited genetics graphs. Preserved #530 reported-versus-reconstructed
+    allele differences, normalized metabolite profiles, partial rescue and possible
+    polar effects; catalytic timing and structural roles remain inference. Prior graphs,
+    source-owned identity, open stereochemistry discussion and SEEDED status unchanged.'
+  llm_assisted: true
+- timestamp: '2026-10-04T06:07:10Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added one exact-owner PokO4/PokS7 graph component because complete evidence
+    would exceed the 64-KiB owner limit. All four inline graphs, source-owned identity,
+    open discussion, prior history and SEEDED status are unchanged; new evidence preserves
+    source-review issue #531 limits.'
+  llm_assisted: true
+- timestamp: '2026-10-04T06:48:17Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added one exact-owner PokO1/PokO2 graph component with 19 nodes and 28
+    cited edges. Preserved #532 source discrepancies and inference limits. All prior
+    graphs, source-owned fields, history, open stereochemistry discussion and SEEDED
+    status are unchanged; complete inline evidence would exceed 64 KiB.'
+  llm_assisted: true
+- timestamp: '2026-10-04T07:20:59Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added a PokO3 hypothesis component. Prior graphs, source-owned fields,
+    unresolved discussion and SEEDED status unchanged; #533 evidence boundary retained.'
+  llm_assisted: true

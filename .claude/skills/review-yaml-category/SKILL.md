@@ -11,6 +11,10 @@ metadata:
 
 # Review one NaturalProductMech YAML record category
 
+For mechanism coverage, read each owner and all `causal_graph_refs` components;
+count the complete view from `read_natural_product`, not just inline graphs.
+Component layout and ownership checks are documented in `docs/CURATION.md`.
+
 - Repository: `CultureBotAI/NaturalProductMech`
 - Records: `data/natural_products/**/*.yaml`
 - Schema: `src/naturalproductmech/schema/naturalproductmech.yaml`

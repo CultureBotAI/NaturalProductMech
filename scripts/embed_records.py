@@ -45,11 +45,11 @@ import json
 import sys
 from pathlib import Path
 
-import yaml
-
 REPO_ROOT = Path(__file__).resolve().parents[1]
 CORPUS_DIR = REPO_ROOT / "data" / "natural_products"
 OUT = REPO_ROOT / "data" / "embeddings"
+sys.path.insert(0, str(REPO_ROOT / "src"))
+from naturalproductmech.graph_components import read_natural_product  # noqa: E402
 
 # Fields whose presence in a document would be noise or leakage. Named here so
 # the audit is one list rather than an argument reconstructed from the code.
@@ -199,7 +199,7 @@ def load_corpus() -> tuple[list[str], list[str], list[dict]]:
     """(ids, documents, light metadata) in a stable identifier order."""
     rows = []
     for path in sorted(CORPUS_DIR.rglob("*.yaml")):
-        record = yaml.safe_load(path.read_text(encoding="utf-8"))
+        record = read_natural_product(path)
         if not isinstance(record, dict) or not record.get("identifier"):
             continue
         rows.append(record)
