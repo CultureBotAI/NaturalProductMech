@@ -1,0 +1,205 @@
+record_id: CHEBI:28001
+standard_inchi_key: MYPYJXKWCTUITO-LYRMYLQWSA-N
+graph:
+  graph_id: vancomycin-2014-oxyabc-predicted-cyclization
+  scope: BIOSYNTHESIS
+  nodes:
+  - node_id: oxya_reference
+    label: Current HCCB10007 OxyA native reference; cyclization role predicted
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:R4SMY3
+  - node_id: oxyb_reference
+    label: Current HCCB10007 OxyB native reference; cyclization role predicted
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:R4SV88
+  - node_id: oxyc_reference
+    label: Current HCCB10007 OxyC native reference; cyclization role predicted
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:R4SZ79
+  - node_id: predicted_cyclization
+    label: Source-predicted heptapeptide cyclization stage
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: pathway_context
+    label: Source-proposed vancomycin biosynthesis model
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: oxya_reference
+    predicate: is_source_predicted_participant_in
+    object: predicted_cyclization
+    notes: The2014 source annotates AORI_1482/OxyA as a P450 candidate for peptide
+      cyclization by comparison with related clusters. The identifier grounds a current
+      native sequence, not experimentally established cyclization activity in this
+      strain. Complete CP003410.1 CDS 1568701..1569876(+) translates to AGM04070.1
+      and the 391-residue UniProt reference. Current source strain is HCCB10007, A.
+      keratiniphila taxon129921; the versioned protein record documents the2018 taxonomy
+      change from historical A. orientalis. Source-owned producer fields are not relabeled.
+      The complete current CDS is identical to the older HQ679900.1 CDS encoding AEI58868.1.
+      Current UniProt FUNCTION/PATHWAY comments are automated ECO:0000256 annotations,
+      not independent experimental support. No purified-enzyme assay, exact crosslink
+      position, reaction order, carrier state, reductase partner, physical enzyme
+      complex or historical stock sequence is asserted.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Page11 explicitly infers the roles from corresponding cep/bal cluster
+        genes. Table2 on page12 and Figure5 on page13 were visually inspected. The
+        paper's four gene-replacement experiments concern other tailoring genes; they
+        do not experimentally validate OxyA/B/C.
+      retrieved_on: '2026-10-06'
+      snippet: likely encode three P450 monooxygenases
+    - reference: https://www.uniprot.org/uniprotkb/R4SMY3
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry48/sequence1; 391 residues, locusAORI_1482, strainHCCB10007.
+        Automated function annotations remain separate from identity.
+      retrieved_on: '2026-10-07'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGM04070.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native reference, source strain, taxonomy-update comment and
+        coded_by inspected.
+      retrieved_on: '2026-10-07'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Complete-CDS/table11 translation matches the independent GenPept and
+        current UniProt sequences. Native reference selection is not an assay-stock
+        identity claim.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Older/current full CDS comparison checked; OxyB has a different start
+        boundary. The complete genomic deposits are not asserted identical.
+      retrieved_on: '2026-10-06'
+  - subject: oxyb_reference
+    predicate: is_source_predicted_participant_in
+    object: predicted_cyclization
+    notes: The2014 source annotates AORI_1483/OxyB as a P450 candidate for peptide
+      cyclization by comparison with related clusters. The identifier grounds a current
+      native sequence, not experimentally established cyclization activity in this
+      strain. Complete CP003410.1 CDS 1570234..1571430(+) translates to AGM04071.1
+      and the 398-residue UniProt reference. Current source strain is HCCB10007, A.
+      keratiniphila taxon129921; the versioned protein record documents the2018 taxonomy
+      change from historical A. orientalis. Source-owned producer fields are not relabeled.
+      The older AEI58869.1 is407 residues versus398 in the current reference. The
+      current1197nt CDS is exactly the older1224nt CDS without its first27nt; the
+      downstream TTG becomes initiator methionine. This annotation-boundary difference
+      is not a measured native N-terminus or experimental construct mapping. Current
+      UniProt FUNCTION/PATHWAY comments are automated ECO:0000256 annotations, not
+      independent experimental support. No purified-enzyme assay, exact crosslink
+      position, reaction order, carrier state, reductase partner, physical enzyme
+      complex or historical stock sequence is asserted.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Page11 explicitly infers the roles from corresponding cep/bal cluster
+        genes. Table2 on page12 and Figure5 on page13 were visually inspected. The
+        paper's four gene-replacement experiments concern other tailoring genes; they
+        do not experimentally validate OxyA/B/C.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/R4SV88
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry47/sequence1; 398 residues, locusAORI_1483, strainHCCB10007.
+        Automated function annotations remain separate from identity.
+      retrieved_on: '2026-10-07'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGM04071.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native reference, source strain, taxonomy-update comment and
+        coded_by inspected.
+      retrieved_on: '2026-10-07'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Complete-CDS/table11 translation matches the independent GenPept and
+        current UniProt sequences. Native reference selection is not an assay-stock
+        identity claim.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Older/current full CDS comparison checked; OxyB has a different start
+        boundary. The complete genomic deposits are not asserted identical.
+      retrieved_on: '2026-10-06'
+  - subject: oxyc_reference
+    predicate: is_source_predicted_participant_in
+    object: predicted_cyclization
+    notes: The2014 source annotates AORI_1484/OxyC as a P450 candidate for peptide
+      cyclization by comparison with related clusters. The identifier grounds a current
+      native sequence, not experimentally established cyclization activity in this
+      strain. Complete CP003410.1 CDS 1571557..1572777(+) translates to AGM04072.1
+      and the 406-residue UniProt reference. Current source strain is HCCB10007, A.
+      keratiniphila taxon129921; the versioned protein record documents the2018 taxonomy
+      change from historical A. orientalis. Source-owned producer fields are not relabeled.
+      The complete current CDS is identical to the older HQ679900.1 CDS encoding AEI58870.1.
+      Current UniProt FUNCTION/PATHWAY comments are automated ECO:0000256 annotations,
+      not independent experimental support. No purified-enzyme assay, exact crosslink
+      position, reaction order, carrier state, reductase partner, physical enzyme
+      complex or historical stock sequence is asserted.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Page11 explicitly infers the roles from corresponding cep/bal cluster
+        genes. Table2 on page12 and Figure5 on page13 were visually inspected. The
+        paper's four gene-replacement experiments concern other tailoring genes; they
+        do not experimentally validate OxyA/B/C.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/R4SZ79
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry45/sequence1; 406 residues, locusAORI_1484, strainHCCB10007.
+        Automated function annotations remain separate from identity.
+      retrieved_on: '2026-10-07'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGM04072.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native reference, source strain, taxonomy-update comment and
+        coded_by inspected.
+      retrieved_on: '2026-10-07'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Complete-CDS/table11 translation matches the independent GenPept and
+        current UniProt sequences. Native reference selection is not an assay-stock
+        identity claim.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Older/current full CDS comparison checked; OxyB has a different start
+        boundary. The complete genomic deposits are not asserted identical.
+      retrieved_on: '2026-10-06'
+  - subject: predicted_cyclization
+    predicate: is_predicted_stage_in
+    object: pathway_context
+    notes: The source's pathway model places oxidative cyclization in vancomycin biosynthesis.
+      The graph preserves that explicitly inferred annotation, not conversion by three
+      tested HCCB10007 enzymes. No specific bond assignment or ordering relative to
+      halogenation, methylation or glycosylation is adopted. Evidence from other strains,
+      related glycopeptides or inaccessible Oxy papers is not transferred. No owner
+      origin/producer grade or antimicrobial mechanism is changed, and no full-record
+      sign-off is asserted.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Page11 annotation discussion and Figure5 pathway model, not an Oxy-specific
+        intervention or reconstituted-enzyme experiment.
+      retrieved_on: '2026-10-06'
+  description: Source-proposed cyclization context for three current HCCB10007 OxyA/B/C
+    protein references. Native sequence identities are grounded, but the2014 paper's
+    functional assignments are homology-based predictions, not HCCB10007 assays. OxyB's
+    different start boundary and historical/current taxonomy remain explicit. No reaction
+    order, exact oxidative bond, carrier state, enzyme assembly, borrowed related-cluster
+    experiment or full-record sign-off is asserted.
+curation_history:
+- timestamp: '2026-10-07T01:42:38Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added this new component for CHEBI:28001; reviewed owner baseline 7699e9dcfefefe944c9b02618f9b2be770d6cdd0.
+    No existing graph migrated. Added a new exact-owner OxyA/B/C prediction-only graph
+    component, 5 nodes and 4 individually DOI-cited edges, without migrating either
+    prior inline graph. Current HCCB10007 references R4SMY3/R4SV88/R4SZ79 match complete
+    native CDS and independent GenPept sequences. Functional assignments in the2014
+    paper are explicitly homology-based predictions, not Oxy assays; automatic UniProt
+    annotations are not promoted to experimental support. OxyB's downstream TTG/start-boundary
+    difference and historical/current taxonomy remain explicit. One PDF-verified snippet
+    is five words. No exact bond, reaction order, carrier state, enzyme assembly or
+    blocked-paper experiment is added. Preserved all source-owned fields, structure,
+    grades, SEEDED status, sibling link, both previous graphs and history. Not full-record
+    sign-off.
+  llm_assisted: true

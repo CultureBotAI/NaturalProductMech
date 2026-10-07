@@ -1174,6 +1174,8 @@ causal_graphs:
     TDP-vancosamine. Missing residues, uneven ligand-model quality and software-defined
     assemblies remain explicit. No blocked-paper catalytic claim, reaction kinetics,
     native strain assignment, antimicrobial mechanism or full-record sign-off is asserted.
+causal_graph_refs:
+- vancomycin-2014-oxyabc-predicted-cyclization
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -1227,4 +1229,18 @@ curation_history:
     identifier terminology changed; all nodes, edges, evidence, native sequence grounding,
     ligand assignments, source fields, prior graph and history are preserved. Not
     independent review or full-record sign-off.'
+  llm_assisted: true
+- timestamp: '2026-10-07T01:42:38Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a new exact-owner OxyA/B/C prediction-only graph component, 5 nodes
+    and 4 individually DOI-cited edges, without migrating either prior inline graph.
+    Current HCCB10007 references R4SMY3/R4SV88/R4SZ79 match complete native CDS and
+    independent GenPept sequences. Functional assignments in the2014 paper are explicitly
+    homology-based predictions, not Oxy assays; automatic UniProt annotations are
+    not promoted to experimental support. OxyB's downstream TTG/start-boundary difference
+    and historical/current taxonomy remain explicit. One PDF-verified snippet is five
+    words. No exact bond, reaction order, carrier state, enzyme assembly or blocked-paper
+    experiment is added. Preserved all source-owned fields, structure, grades, SEEDED
+    status, sibling link, both previous graphs and history. Not full-record sign-off.
   llm_assisted: true
