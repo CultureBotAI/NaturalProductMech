@@ -3606,6 +3606,318 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">13 nodes, 14 edges</span></h2>
+<p class="sub">Native CloH grounding and host-conditioned CloH/CloY adenylation evidence, with literal initiation recoding, controls and a bounded kinetic fit. Review #672.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native CloH sequence reference</td>
+  <td>is_native_reference_for</td>
+  <td>pBB26 His6-CloH from the ybdZ-deletion host</td>
+  <td>The source names AAN65224 and amplifies cloH from a cluster cosmid into pET28a as pBB26, an N-terminal His6 fusion. BL21(DE3) carries the ybdZ cassette replacement and pSU20_sfp. The source reports full-gene sequencing, not an independently inspected complete plasmid, tag junction or native DS12.976 preparation.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q8GHC7<br>https://www.ncbi.nlm.nih.gov/protein/AAN65224.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Native CloH sequence reference</td>
+  <td>is_native_reference_for</td>
+  <td>pBB26 His6-CloH from the intact-ybdZ host</td>
+  <td>The comparison uses the corresponding pBB26 preparation from BL21(DE3) with intact ybdZ and pSU20_sfp. Native sequence identity does not establish equivalent active fractions or prove the absence/presence of every copurifying partner.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q8GHC7<br>https://www.ncbi.nlm.nih.gov/protein/AAN65224.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Native CloH sequence reference</td>
+  <td>was_compared_with</td>
+  <td>Printed CloH primer model, not a complete plasmid</td>
+  <td>The visually checked printed NdeI/XhoI primers predict an1823-nt amplicon including restriction tails. Native CDS nucleotide1 changes T to A, TTG to ATG initiation, but the CDS-aware 600-aa protein core is unchanged. This is an insert model, not complete historical construct sequencing.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1<br>https://www.uniprot.org/uniprotkb/Q8GHC7<br>https://www.ncbi.nlm.nih.gov/protein/AAN65224.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>Native CloY sequence reference</td>
+  <td>is_native_reference_for</td>
+  <td>Separately prepared pBB37 CloY with reported tag processing</td>
+  <td>pBB37 in Rosetta2(DE3) supplies the separately purified partner. Methods report removal of its N-His tag before gel filtration; the exact post-cleavage scar is not independently determined. This preparation is distinct from the untagged CloY expressed with CloH in pBB35.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q8GHC8<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pBB26 His6-CloH from the ybdZ-deletion host</td>
+  <td>was_compared_with</td>
+  <td>pBB26 His6-CloH from the intact-ybdZ host</td>
+  <td>Reported purification yields are2.83 versus11.3 mg/L culture, respectively; most deletion-host CloH was insoluble. These are preparation yields, not native pathway titers, catalytic rates or quantified active fractions.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pBB26 His6-CloH from the ybdZ-deletion host</td>
+  <td>was_assayed_in</td>
+  <td>L-tyrosine-dependent ATP-PPi exchange assay</td>
+  <td>The source measures L-tyrosine-dependent ATP-[32P]PPi exchange for5min at30C. Standard enzyme:partner is1:1.2 when partner is present; kinetic and titration experiments vary substrate or partner separately. General methods state two independent reactions; Figure3 explicitly gives six for CloH only.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pBB26 His6-CloH from the ybdZ-deletion host</td>
+  <td>retained_without_added_cloy</td>
+  <td>Low unassisted CloH activity in the deletion-host preparation</td>
+  <td>The source reports very low activity without added partner; Figure3 labels CloH at0.014 nkat/mg protein. This is not a zero or a universal MbtH requirement. The99.0-99.8% range in discussion spans several enzymes, not a CloH-specific value.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pBB26 His6-CloH from the ybdZ-deletion host</td>
+  <td>was_combined_with_partner_in</td>
+  <td>Reconstituted CloH plus CloY exchange assay</td>
+  <td>The mixture contains separately purified deletion-host CloH and CloY. The native accession is not assigned to a whole engineered preparation.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Separately prepared pBB37 CloY with reported tag processing</td>
+  <td>stimulated_cloh_in</td>
+  <td>Reconstituted CloH plus CloY exchange assay</td>
+  <td>Adding CloY made the tyrosine-dependent exchange activity readily detectable. The graph does not infer an independently measured binding constant from activation.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>MbtH-only exchange control</td>
+  <td>constrains_interpretation_of</td>
+  <td>Reconstituted CloH plus CloY exchange assay</td>
+  <td>MbtH-like proteins alone showed no exchange activity in the reported control. No numerical detection limit or independently fitted zero is supplied.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Reconstituted CloH plus CloY exchange assay</td>
+  <td>yielded</td>
+  <td>CloH/CloY L-tyrosine kinetic fit</td>
+  <td>At enzyme:partner1:1.2, nonlinear regression with varied L-tyrosine gives Km186.3 +/-16.9 uM in FigureS3 (186uM rounded in Table1), kcat0.497 s^-1 and efficiency2670 s^-1 M^-1. The inspected methods/caption do not define the plus/minus statistic. Values are reported, not refitted or reassigned from NovH.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Low unassisted CloH activity in the deletion-host preparation</td>
+  <td>did_not_support_a_separate_fit_for</td>
+  <td>CloH/CloY L-tyrosine kinetic fit</td>
+  <td>The authors state that CloH-alone activity was too low for kinetic investigation. Do not infer Km, kcat, an infinite fold change or a zero-rate fit without CloY.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pBB26 His6-CloH from the intact-ybdZ host</td>
+  <td>supports_condition_bounded</td>
+  <td>Suggested YbdZ copurification, not directly quantified</td>
+  <td>For CloH and Pcza361.18 the text gives unassisted activity at20-30% of the corresponding added-partner condition. It suggests E.coli YbdZ copurification. The range is not separately resolved per enzyme and no exact CloH-YbdZ accession, binding measurement or stoichiometric contamination is established.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>L-tyrosine-dependent ATP-PPi exchange assay</td>
+  <td>has_evidence_limit</td>
+  <td>Adenylation readout without measured PCP loading or mature-product flux</td>
+  <td>ATP-PPi exchange is evidence for the adenylation half-reaction. This study does not directly measure PCP loading, hydroxylation, aminocoumarin release, mature clorobiocin synthesis or pathway flux in the native producer. Sfp coexpression does not substitute for an occupancy measurement.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">14 nodes, 15 edges</span></h2>
+<p class="sub">CloH/CloY association and proposed stoichiometry, distinct coexpression and L383M activity tradeoffs, and computational limits. Review #672.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Separately prepared CloH/CloY mixture</td>
+  <td>showed</td>
+  <td>Activity saturation near an equimolar CloY:CloH ratio</td>
+  <td>Figure4 varies added CloY and shows increasing exchange activity up to about1:1, followed by a plateau. No binding constant, confidence interval or exact physical subunit count is determined from this activity titration.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Separately prepared CloH/CloY mixture</td>
+  <td>yielded</td>
+  <td>CloH and CloY bands after analytical gel filtration</td>
+  <td>FigureS4 is an SDS-PAGE image with source-labelled CloH and CloY bands after analytical gel filtration. Band presence supports copurification; the image is not calibrated densitometry or an absolute stoichiometry assay.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>CloH and CloY bands after analytical gel filtration</td>
+  <td>supports</td>
+  <td>Source-supported recombinant CloH/CloY association</td>
+  <td>The source reports copurification and shows both proteins in the isolated fraction. This is association evidence in the recombinant context, not an atomic structure, an independently measured dissociation constant or native in-cell occupancy.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Activity saturation near an equimolar CloY:CloH ratio</td>
+  <td>supports_source_proposal_of</td>
+  <td>Proposed CloH/CloY heterotetramer</td>
+  <td>Equimolar functional saturation contributes to the proposed1:1 subunit ratio. It does not by itself distinguish a heterodimer from a heterotetramer.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Source-supported recombinant CloH/CloY association</td>
+  <td>has_proposed_assembly</td>
+  <td>Proposed CloH/CloY heterotetramer</td>
+  <td>The source says CloH alone formed dimers and that its gel-filtration difference from the CloH/CloY complex was small. Combined with the activity ratio, this motivates a heterotetramer proposal. The650/208/229-kDa values and Figure5 belong to SimH/SimY and are not CloH measurements.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Native CloH sequence reference</td>
+  <td>is_native_reference_for_coexpression_in</td>
+  <td>pBB35 coexpressed N-His6-CloH and untagged CloY preparation</td>
+  <td>pBB35 uses pETDUET1 to coexpress N-His6-CloH and untagged CloY in the ybdZ-deletion BL21(DE3) host with pSU20_sfp. Native CloH is a sequence reference, not the complete fusion or a guarantee of its active fraction.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q8GHC7<br>https://www.ncbi.nlm.nih.gov/protein/AAN65224.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pBB35 coexpressed N-His6-CloH and untagged CloY preparation</td>
+  <td>has_bounded_construct_model</td>
+  <td>Printed pBB35 insert-facing sequence model</td>
+  <td>The visually inspected BamHI/NotI primers model a thrombin-recognition segment LVPRGS followed by native CloH residues2..600, omitting the native initiator from that insert-facing segment. This does not reconstruct the upstream vector tag, complete pBB35, cleavage state or experimentally sequenced full fusion.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q8GHC7<br>https://www.ncbi.nlm.nih.gov/protein/AAN65224.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pBB35 coexpressed N-His6-CloH and untagged CloY preparation</td>
+  <td>provided_copurification_evidence_for</td>
+  <td>Source-supported recombinant CloH/CloY association</td>
+  <td>Ni-affinity and gel chromatography yielded an active preparation containing the coexpressed tagged CloH and untagged CloY, interpreted by the authors as complex copurification. Reported preparation yield4.8 mg/L is not a subunit ratio or proof that every recovered CloH molecule retained CloY.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pBB35 coexpressed N-His6-CloH and untagged CloY preparation</td>
+  <td>showed</td>
+  <td>Lower activity of the copurified coexpression preparation</td>
+  <td>The source reports50% less activity than a mixture of separately purified CloH and CloY. Additional CloY raised activity but not above the separate mixture. The10-fold/75-fold coexpression improvements discussed nearby concern CmnO/VioO from another study and are not transferred.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Lower activity of the copurified coexpression preparation</td>
+  <td>supports_source_hypothesis_of</td>
+  <td>Suggested loss of CloY during purification</td>
+  <td>The authors infer that some CloY may have been lost during purification. Neither the lost fraction nor a physical dissociation rate was quantified.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Native CloH sequence reference</td>
+  <td>is_native_sequence_reference_for_variant</td>
+  <td>Engineered CloH L383M preparation, not the native reference</td>
+  <td>Native residue383 is leucine. Modeling the visually checked mutagenic primer against AF329398.1 changes internal CDS nucleotide1147 T to A (TTG to ATG), producing L383M only in the core. This is distinct from the initiation recoding used for expression. The source reports full-gene sequencing and transfer to pET28a; no complete historical mutant plasmid was independently obtained. The mutant has no exact-native accession assignment.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q8GHC7<br>https://www.ncbi.nlm.nih.gov/protein/AAN65224.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Engineered CloH L383M preparation, not the native reference</td>
+  <td>showed_without_added_cloy</td>
+  <td>L383M exchange activity without added CloY</td>
+  <td>Reported ATP-PPi exchange activity0.22 nkat/mg protein,33% of the source NovH comparison. This is not33% of CloH+CloY and is not mature-product yield.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Engineered CloH L383M preparation, not the native reference</td>
+  <td>showed_with_added_cloy</td>
+  <td>L383M exchange activity with added CloY</td>
+  <td>Reported exchange activity2.45 nkat/mg protein,36% of native-sequence CloH with CloY. Increased unassisted activity therefore comes with reduced partner-assisted activity, not an unconditional improvement or NovH conversion.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>L383M exchange activity without added CloY</td>
+  <td>is_consistent_with_but_does_not_prove</td>
+  <td>PheA-based conformational hypothesis</td>
+  <td>The2011 authors modeled CloH/NovH on PheA (PDB1AMU), proposing effects of residue383 on Y397/E316 and Mg-related geometry. The mutation supports a functional role but does not establish the proposed atomic contacts or exclude alternative mechanisms. Their structure-availability statement is historical.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Source-supported recombinant CloH/CloY association</td>
+  <td>has_unresolved_structural_explanation</td>
+  <td>PheA-based conformational hypothesis</td>
+  <td>Docking gave several possible arrangements and the authors explicitly left complex structure speculative. Their conformational hypothesis does not establish direct CloY-substrate contacts or PCP-domain rotation.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">13 nodes, 13 edges</span></h2>
+<p class="sub">Cognate and noncognate MbtH activation of CloH in vitro, with native references separated from processed/synthetic partners and per-panel normalization. Review #672.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Native CloH sequence reference</td>
+  <td>is_native_reference_for</td>
+  <td>Deletion-host recombinant CloH preparation</td>
+  <td>Figure6 uses recombinant CloH from the ybdZ-deletion host. Native Q8GHC7 does not denote the engineered His6 fusion.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q8GHC7<br>https://www.ncbi.nlm.nih.gov/protein/AAN65224.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Deletion-host recombinant CloH preparation</td>
+  <td>was_assayed_in</td>
+  <td>Four-partner CloH cross-activation panel</td>
+  <td>ATP-PPi exchange compares CloY, CdaX, SimY and Orf1van at enzyme:partner 1:1.2. Figure6 normalizes each enzyme panel independently to its CloY condition. No exact percentages are newly digitized or compared across enzymes as if their absolute denominators were shared.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>CloY native sequence reference</td>
+  <td>is_native_reference_for</td>
+  <td>pBB37-derived CloY preparation</td>
+  <td>71-aa native AAN65223.1/Q8GHC8; the cluster-cosmid-derived partner is cognate at the source-pathway level. The prepared protein remains separate from both the native reference and untagged pBB35 coexpression product.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q8GHC8<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pBB37-derived CloY preparation</td>
+  <td>stimulated_cloh_in</td>
+  <td>Four-partner CloH cross-activation panel</td>
+  <td>The source reports stimulation of CloH by this partner relative to no added MbtH. Partners were expressed in Rosetta2(DE3) with N-His tags; methods describe tag removal before gel filtration. Neither that processing statement nor stimulation establishes an exact cleavage scar, a measured binding constant or native physiological pairing.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>CdaX / SCO3218 native sequence reference</td>
+  <td>is_native_reference_for</td>
+  <td>pBB32-derived CdaX / SCO3218 preparation</td>
+  <td>71-aa CAB38589.1 matches Q9Z388 and AL939115.1:183050..183265(-) CDS-aware translation. The GTG start is initiator methionine. UniProt names A3(2)/M145, taxon100226, whereas the source amplified cdaX from M512. This reference does not independently sequence the experimental strain/construct.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9Z388<br>https://www.ncbi.nlm.nih.gov/protein/CAB38589.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AL939115.1?from=183000&amp;to=183300<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pBB32-derived CdaX / SCO3218 preparation</td>
+  <td>stimulated_cloh_in</td>
+  <td>Four-partner CloH cross-activation panel</td>
+  <td>The source reports stimulation of CloH by this partner relative to no added MbtH. Partners were expressed in Rosetta2(DE3) with N-His tags; methods describe tag removal before gel filtration. Neither that processing statement nor stimulation establishes an exact cleavage scar, a measured binding constant or native physiological pairing.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>SimY native sequence reference</td>
+  <td>is_native_reference_for</td>
+  <td>pBB28-derived SimY preparation</td>
+  <td>The sim-cluster-cosmid partner maps to native Q9F5J2. AF322256.1 AAL15602.1 translates to70 aa and matches the prior source-named AAG34186.1 comparison. Native taxon1890 is S.antibioticus. The source reports69 aa, so no exact experimental-length correction is assumed.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F5J2<br>https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pBB28-derived SimY preparation</td>
+  <td>stimulated_cloh_in</td>
+  <td>Four-partner CloH cross-activation panel</td>
+  <td>The source reports stimulation of CloH by this partner relative to no added MbtH. Partners were expressed in Rosetta2(DE3) with N-His tags; methods describe tag removal before gel filtration. Neither that processing statement nor stimulation establishes an exact cleavage scar, a measured binding constant or native physiological pairing.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Orf1van native sequence reference</td>
+  <td>is_native_reference_for</td>
+  <td>pBB34-derived Orf1van preparation</td>
+  <td>Native AAL90876.1 is69 aa, matching AF486630.1:720..929(+) in Amycolatopsis orientalis taxon31958. The source reports70 aa and uses a commercially synthesized codon-optimized gene. No independent full synthetic construct or exact UniProt mapping is claimed; retain the source-named NCBI identifier.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/protein/AAL90876.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF486630.1<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pBB34-derived Orf1van preparation</td>
+  <td>stimulated_cloh_in</td>
+  <td>Four-partner CloH cross-activation panel</td>
+  <td>The source reports stimulation of CloH by this partner relative to no added MbtH. Partners were expressed in Rosetta2(DE3) with N-His tags; methods describe tag removal before gel filtration. Neither that processing statement nor stimulation establishes an exact cleavage scar, a measured binding constant or native physiological pairing.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Four-partner CloH cross-activation panel</td>
+  <td>has_partner_scope_limit</td>
+  <td>Noncognate functional activation, not native-cluster membership</td>
+  <td>CloY gave the highest displayed CloH activity. CdaX, SimY and Orf1van are noncognate in-vitro partners, not newly assigned native clorobiocin BGC components. CchK/CouY rescue in the separate genetic study does not establish that they were tested in this2011 purified-protein panel.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>pBB28-derived SimY preparation</td>
+  <td>has_source_discrepancy</td>
+  <td>Partner length and tag-stage discrepancies</td>
+  <td>The source lists69-aa SimY while the native reference has70 aa. FigureS2 labels N-His6-SimY and9.4kDa despite general methods describing tag removal. A different preparation stage is possible, but the activation-assay tag state and scar are not independently established.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1<br>https://www.uniprot.org/uniprotkb/Q9F5J2</td>
+</tr>
+<tr>
+  <td>pBB34-derived Orf1van preparation</td>
+  <td>has_source_discrepancy</td>
+  <td>Partner length and tag-stage discrepancies</td>
+  <td>The paper lists70-aa Orf1van but the source-named native protein/CDS gives69 aa. No initiator-removal explanation, label swap or synthetic sequence repair is invented.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/protein/AAL90876.1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">2</span></h2>
