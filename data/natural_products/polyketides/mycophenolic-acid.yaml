@@ -683,6 +683,140 @@ causal_graphs:
       notes: MIBiG BGC0002619.2 places AJG44384.1 in the active KM595305.1 mycophenolic
         acid biosynthetic gene cluster as MpaG' with a MITE0000011 99% identity methylation
         annotation.
+- graph_id: mycophenolic-acid-mpag-ibt23078-similarity-context
+  scope: BIOSYNTHESIS
+  description: By-similarity MpaG O-methylation context for the native Penicillium
+    brevicompactum IBT23078 reference. This F1DBB3 protein differs from the existing
+    NRRL864 MpaG' protein at three residues and is not a second independently assayed
+    enzyme. MITE supplies an exact neutral-product example; UniProt explicitly transfers
+    the corresponding reaction by similarity. Existing graphs, source grades and discussions
+    are preserved; not full-record sign-off.
+  nodes:
+  - node_id: mpag_ibt23078
+    label: MpaG native IBT23078 reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:F1DBB3
+  - node_id: demethylmycophenolic_acid
+    label: Demethylmycophenolic acid, database example
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: o_methylation
+    label: MpaG O-methylation inferred by similarity
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: mycophenolic_acid
+    label: mycophenolic acid
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:168396
+  edges:
+  - subject: mpag_ibt23078
+    predicate: is_by_similarity_predicted_catalyst_of
+    object: o_methylation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000011.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000011 version 3, active, links MpaG F1DBB3/ADY00134.1 and BGC0000104
+        to the demethylmycophenolic acid O-methylation example. Its heterologous-expression
+        code is a database assertion, not independently inspected evidence for this
+        IBT23078 reference. No assay is transferred from MpaG'.
+      snippet: Catalyzes the O-methylation of demethylmycophenolic acid into mycophenolic
+        acid
+    - reference: https://www.uniprot.org/uniprotkb/F1DBB3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Reviewed entry 53, sequence 1, 398 residues, mpaG, Penicillium brevicompactum/taxon5074.
+        RHEA:81843 is explicitly ECO:0000250 by similarity to A0A0B5L781; FUNCTION
+        qualifies the DMMPA-to-MPA conversion as Probable. This graph retains that
+        inferential status. Other experiment-coded annotations citing PMID:25630520
+        are not used to transfer MpaG' activity, kinetics or mutant findings to IBT23078.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ADY00134.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: 'Full independent GenPept record and coded_by inspected: putative O-methyltransferase
+        mpaG, P.brevicompactum strain IBT 23078/taxon5074, 398 residues. Genomic reference
+        identity does not establish assay-stock or expression-construct identity.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/HQ731031.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: 'Complete 1197-nt, two-exon, negative-strand CDS: complement(join(28274..29302,29355..29522)),
+        default table1/codon1. Full translation equals CDS annotation, independent
+        ADY00134.1 and current F1DBB3, all398aa; independent coded_by coordinates
+        and DNA match.'
+    - reference: https://www.uniprot.org/uniprotkb/A0A0B5L781
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: 'Comparative identity only: the existing NRRL864 reference is also398aa
+        but differs at positions 84(S/N),295(N/H),342(S/R), written IBT23078/NRRL864.
+        It is not an accession alias. No experiment on this protein is treated as
+        an experiment on F1DBB3.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AJG44384.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Independent comparative GenPept reference names P.brevicompactum NRRL864/taxon5074
+        and codes for the398aa MpaG' sequence, not the IBT23078 sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KM595305.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: 'Separate comparative NRRL864 reference: full1197-nt CDS complement(join(31200..32228,32281..32448)),
+        default table1/codon1, translates exactly to its CDS annotation, AJG44384.1
+        and A0A0B5L781. Independent coded_by coordinates/DNA match. There are30coding-DNA
+        differences from the IBT23078 CDS; reference deposits do not authenticate
+        historical assay stocks.'
+    notes: Function is inferred by similarity, not verified by native sequence translation.
+      The latter establishes reference identity only. No primary experiment, activity
+      magnitude, site, mutant, localization, cofactor state or physical complex is
+      adopted for this protein.
+  - subject: demethylmycophenolic_acid
+    predicate: is_database_example_substrate_of
+    object: o_methylation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000011.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000011 version 3, active, links MpaG F1DBB3/ADY00134.1 and BGC0000104
+        to the demethylmycophenolic acid O-methylation example. Its heterologous-expression
+        code is a database assertion, not independently inspected evidence for this
+        IBT23078 reference. No assay is transferred from MpaG'.
+    - reference: https://www.uniprot.org/uniprotkb/F1DBB3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Reviewed entry 53, sequence 1, 398 residues, mpaG, Penicillium brevicompactum/taxon5074.
+        RHEA:81843 is explicitly ECO:0000250 by similarity to A0A0B5L781; FUNCTION
+        qualifies the DMMPA-to-MPA conversion as Probable. This graph retains that
+        inferential status. Other experiment-coded annotations citing PMID:25630520
+        are not used to transfer MpaG' activity, kinetics or mutant findings to IBT23078.
+    notes: 'MITE names and encodes a neutral demethylmycophenolic acid example. The
+      substrate remains ungrounded: the UniProt reaction''s ionic 6-O-desmethylmycophenolate
+      identifier is not silently assigned to the neutral compound. No upstream steps
+      or preferred physiological route inferred.'
+  - subject: o_methylation
+    predicate: has_database_example_product
+    object: mycophenolic_acid
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000011.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000011 version 3, active, links MpaG F1DBB3/ADY00134.1 and BGC0000104
+        to the demethylmycophenolic acid O-methylation example. Its heterologous-expression
+        code is a database assertion, not independently inspected evidence for this
+        IBT23078 reference. No assay is transferred from MpaG'.
+    - reference: https://www.uniprot.org/uniprotkb/F1DBB3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Reviewed entry 53, sequence 1, 398 residues, mpaG, Penicillium brevicompactum/taxon5074.
+        RHEA:81843 is explicitly ECO:0000250 by similarity to A0A0B5L781; FUNCTION
+        qualifies the DMMPA-to-MPA conversion as Probable. This graph retains that
+        inferential status. Other experiment-coded annotations citing PMID:25630520
+        are not used to transfer MpaG' activity, kinetics or mutant findings to IBT23078.
+    notes: Pinned MITE neutral product matches the owner's full InChIKey HPNSFSBZBAHARI-RUDMXATFSA-N
+      and complete stereo via the repository helper and RDKit2026.03.5. UniProt's
+      ionic mycophenolate is not relabelled as the neutral acid. No pathway finality
+      or assay transfer is asserted. The different-structure same-label BGC0001360
+      record is not included; all source grades and old graphs remain unchanged, including
+      the AntibioticMech link.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -719,4 +853,22 @@ curation_history:
     MpaG' O-methylation in mycophenolic acid biosynthesis; grounded the assayed enzyme
     node to UniProtKB:A0A0B5L781 and kept demethylmycophenolic acid ungrounded because
     the local ChEBI inventory lacks CHEBI:231832.
+  llm_assisted: true
+- timestamp: '2026-10-07T05:48:11Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added an explicitly by-similarity MpaG IBT23078 biosynthesis context:
+    four nodes and three qualified edges with stable MITE/UniProt/NCBI URLs and one
+    exact nine-word MITE snippet. UniProtKB:F1DBB3/ADY00134.1 is verified by the full1197-nt/two-exon
+    negative-strand CDS on HQ731031.1, all398residues. Independent NRRL864 AJG44384.1/KM595305.1
+    translates to the existing A0A0B5L781 reference; its three amino-acid differences
+    and30coding-DNA differences exclude an accession-alias interpretation. F1DBB3
+    RHEA:81843 is ECO:0000250 by similarity and its FUNCTION calls DMMPA-to-MPA Probable.
+    No MpaG'' assay, kinetics, site, mutant, cofactor, localization, physical complex,
+    historical stock/construct or pathway finality claim is transferred. MITE neutral
+    product matches the exact owner full key/stereo; substrate remains ungrounded,
+    with no ionic-to-neutral identifier substitution. Preserved both complete existing
+    graphs, all source fields, producer/BGC grades, occurrences, AntibioticMech link,
+    open discussion, SEEDED status and append-only history. The different-structure
+    same-label owner is unchanged. Not full-record sign-off.'
   llm_assisted: true
