@@ -95,6 +95,33 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">MITE-asserted PhoJ ring-opening step yielding the exact monodictyphenone structure as a reported intermediate in phomoxanthone A biosynthesis. The native Diaporthe SYSU-MS4722 reference is grounded in NCBIProtein, not a UniParc ID relabeled as UniProtKB. This does not assign PhoJ to the owner&#39;s distinct Aspergillus/BGC0000101 source or change producer, cluster or occurrence evidence; not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>PhoJ native reference from Diaporthe SYSU-MS4722</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>MITE-reported PhoJ ring opening</td>
+  <td>MITE supplies the compound-specific functional assertion; sequence deposits establish identity only. The Diaporthe reference is not inferred to be the owner&#39;s Aspergillus nidulans FGSC A4 protein. No rates, assay conditions, active-site residues, cofactor state or physiological complex is claimed; no inaccessible primary data are adopted.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000158.json<br>https://www.ncbi.nlm.nih.gov/protein/UPG58739.1<br>https://www.ncbi.nlm.nih.gov/nuccore/OL450415.1<br>https://www.uniprot.org/uniparc/UPI00204975FE</td>
+</tr>
+<tr>
+  <td>MITE-encoded ring-opening substrate</td>
+  <td>is_database_reported_substrate_of</td>
+  <td>MITE-reported PhoJ ring opening</td>
+  <td>The node denotes the pinned MITE example substrate. It remains ungrounded; no external compound identifier, complete substrate stereochemistry or additional pathway step is inferred from the encoded ring system.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000158.json</td>
+</tr>
+<tr>
+  <td>MITE-reported PhoJ ring opening</td>
+  <td>has_database_reported_product</td>
+  <td>monodictyphenone</td>
+  <td>Pinned MITE product matches full owner InChIKey UMNWQJSVQOCNEM-UHFFFAOYSA-N and complete stereochemical status using the repository helper and RDKit 2026.03.5. MITE&#39;s description places it as a phomoxanthone A intermediate; no downstream transformation or final-product claim is added. The owner&#39;s BGC_CHARACTERIZED Aspergillus producer, CLUSTER_DEMONSTRATED BGC0000101/BN001308.1 and separate Monodictys occurrences remain unchanged.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000158.json</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

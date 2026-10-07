@@ -75,6 +75,33 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">MITE-asserted GnmP persulfide methylation yielding the exact guangnanmycin structure. The native CB01883 reference is grounded in NCBIProtein because the source&#39;s former UniProtKB accession is inactive and its replacement identifier is UniParc, not UniProtKB. Primary experiments were not inspected. Producer/BGC grades and all source fields are unchanged; not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>GnmP native reference from Streptomyces sp. CB01883</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>MITE-reported persulfide methylation</td>
+  <td>MITE supplies functional attribution; GenPept/genomic/UniParc records establish identity only. No current UniProtKB example was selected: the exact organism/gene query was empty and the archive&#39;s UniProt cross-reference is inactive. This is a bounded search, not proof that no future or differently annotated entry can exist. No domain-site, rate, knockout phenotype, methyl-donor identity or physical-complex claim is adopted.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000105.json<br>https://www.ncbi.nlm.nih.gov/protein/ATY69565.1<br>https://www.ncbi.nlm.nih.gov/nuccore/MF925481.1<br>https://www.uniprot.org/uniparc/UPI000938C7BA</td>
+</tr>
+<tr>
+  <td>MITE-encoded persulfide precursor</td>
+  <td>is_database_reported_substrate_of</td>
+  <td>MITE-reported persulfide methylation</td>
+  <td>The node denotes the substrate encoded in the pinned MITE example. No external chemical identifier, additional precursor generation step or independently inspected assay is asserted.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000105.json</td>
+</tr>
+<tr>
+  <td>MITE-reported persulfide methylation</td>
+  <td>has_database_reported_product</td>
+  <td>Guangnanmycin, exact owner structure</td>
+  <td>The pinned MITE product matches the full owner InChIKey AFUMTTRIOUSWKA-QCXAANFUSA-N and defined stereochemistry using the repository structure helper and RDKit 2026.03.5. The example&#39;s intermediate flag is not independent proof of pathway finality. Source correspondence to BGC0001611 and MF925481.1 does not upgrade the owner&#39;s SOURCE_ASSERTION producer or CLUSTER_UNSTATED BGC grade.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000105.json</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
