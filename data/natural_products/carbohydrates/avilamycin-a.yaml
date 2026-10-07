@@ -1277,6 +1277,8 @@ causal_graphs:
     - reference: https://freidok.uni-freiburg.de/data/1551
       evidence_type: CURATOR_INFERENCE
       notes: Printed pages 111-115; Figure 38.
+causal_graph_refs:
+- avilamycin-a-avig4-database-methylation-unresolved-identity
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -1354,4 +1356,13 @@ curation_history:
     with a primary-source-cited CURATOR_INFERENCE edge, correcting the disconnected
     model caught by QC. Kept both AviO2 alternatives and all existing evidence; renamed
     the branch process for clarity.
+  llm_assisted: true
+- timestamp: '2026-10-07T16:40:09Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added an exact-owner AviG4 database methylation graph component with four
+    nodes, three cited edges and a short source snippet. AviG4 remains REVIEW_NEEDED
+    with no protein identifier: the MITE sequence mapping is unresolved. Preserved
+    all 13 inline graphs, source fields/grades, incomplete stereochemistry, SEEDED
+    status and prior history. No primary assay, cofactor binding or full-record sign-off.'
   llm_assisted: true
