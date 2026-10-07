@@ -119,6 +119,33 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Database-asserted AsaD N-hydroxylation yielding the owner&#39;s stereochemically unspecified aspergillic acid structure. The current NRRL3357 reference is distinguished from the legacy N-terminally truncated protein. No stereoisomer, historical assay construct or stock identity is inferred. Both source clusters, their grades and the shared-structure discussion remain unchanged; not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>AsaD current NRRL3357 sequence reference</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>Database-reported AsaD N-hydroxylation</td>
+  <td>MITE and UniProt supply functional attribution; genomic deposits establish identity only. The modern assembly is not silently substituted into the owner&#39;s NW_002477238.1 or MH898736.1 cluster coordinates. No induction, knockout phenotype, membrane topology, glycosylation, heme-binding residue, physiological complex, rate or assay condition is asserted.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000297.json<br>https://www.uniprot.org/uniprotkb/B8N0E9<br>https://www.ncbi.nlm.nih.gov/protein/QRD83397.1<br>https://www.ncbi.nlm.nih.gov/nuccore/CP044622.1<br>https://www.ncbi.nlm.nih.gov/protein/EED55032.1<br>https://www.ncbi.nlm.nih.gov/nuccore/EQ963473.1</td>
+</tr>
+<tr>
+  <td>Deoxyaspergillic acid, database-reported substrate</td>
+  <td>is_database_reported_substrate_of</td>
+  <td>Database-reported AsaD N-hydroxylation</td>
+  <td>The databases name deoxyaspergillic acid and MITE encodes the example substrate. No external substrate identifier, complete stereochemistry or upstream AsaC step is assigned.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000297.json<br>https://www.uniprot.org/uniprotkb/B8N0E9</td>
+</tr>
+<tr>
+  <td>Database-reported AsaD N-hydroxylation</td>
+  <td>has_database_reported_product</td>
+  <td>Aspergillic acid, owner structure with unspecified stereo</td>
+  <td>Pinned MITE product matches owner InChIKey IUZCDJYHMMWBBE-UHFFFAOYSA-N using the repository helper and RDKit2026.03.5; both structures have stereo_complete:false. This is not a defined stereoisomer claim. No downstream AsaB step, ferric complex or pathway finality is inferred. SOURCE_ASSERTION producers, CLUSTER_UNSTATED BGC0001516/BGC0002602, occurrences and open shared-structure discussion are preserved.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000297.json<br>https://www.uniprot.org/uniprotkb/B8N0E9</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
