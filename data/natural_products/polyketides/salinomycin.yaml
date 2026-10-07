@@ -211,6 +211,111 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: salinomycin-slnm-database-spiroacetal-context
+  scope: BIOSYNTHESIS
+  description: MITE-reported SlnM double-bond and bis(spiroacetal) formation in a
+    salinomycin biosynthesis context. Native Streptomyces albus XM211 reference identity
+    is independently sequence-verified, not its catalytic activity. The database example
+    matches this owner's incomplete stereochemical resolution, not a fully resolved
+    stereoisomer. No methylation, native cofactor state, primary assay or pathway
+    finality is inferred; not full-record sign-off.
+  nodes:
+  - node_id: slnm_reference
+    label: SlnM native XM211 reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:AEZ53956.1
+  - node_id: database_substrate
+    label: SlnM substrate, database example
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: spiroacetal_formation
+    label: MITE-reported double-bond and bis(spiroacetal) formation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: salinomycin
+    label: salinomycin
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: naturalproductmech:mibig-90cc844890
+  edges:
+  - subject: slnm_reference
+    predicate: is_database_reported_catalyst_of
+    object: spiroacetal_formation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000441.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000441 version 1, active, identifies SlnM/AEZ53956.1 and BGC0000144.
+        The reaction description assigns 18,19-double-bond and bis(spiroacetal) formation,
+        not ordinary O-methylation despite the enzyme family label. Heterologous,
+        in-vitro, knockout and mutagenesis codes remain database assertions; both
+        cited primary papers were inaccessible. No primary assay or native cofactor
+        state is adopted.
+      snippet: double bond and bis(spiroacetal)
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AEZ53956.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: 'Complete independent GenPept reference and coded_by inspected: slnM,
+        271 residues, S.albus XM211/taxon1888. Its O-methyltransferase label does
+        not independently establish the compound-specific reaction.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/JN033543.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Complete 816-nt plus-strand CDS93645..94460, codon1/table11, translates
+        exactly to the CDS annotation, independent AEZ53956.1 and UniParc, all271aa.
+        Independent coded_by DNA/coordinates and genomic source XM211/taxon1888 match.
+        This verifies native reference identity, not historical assay stocks, transcripts
+        or constructs.
+    - reference: https://www.uniprot.org/uniparc/UPI000247F579
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Retained exact271-residue archive has no active UniProtKB cross-reference.
+        H6D580 is inactive and names ATCC21838/taxon1081613, not native XM211. Other
+        inactive entries or different-taxon sequence matches do not override the native
+        deposit. UniParc is not UniProtKB; this bounded archive result does not prove
+        universal UniProt absence.
+    notes: MITE supplies the functional assignment; sequence evidence establishes
+      identity only. Exact NCBIProtein grounding is used without substituting an arbitrary
+      current UniProt homolog. No assay, activity magnitude, knockout phenotype, methylation,
+      site, SAM state or physical complex is inferred.
+  - subject: database_substrate
+    predicate: is_database_example_substrate_of
+    object: spiroacetal_formation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000441.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000441 version 1, active, identifies SlnM/AEZ53956.1 and BGC0000144.
+        The reaction description assigns 18,19-double-bond and bis(spiroacetal) formation,
+        not ordinary O-methylation despite the enzyme family label. Heterologous,
+        in-vitro, knockout and mutagenesis codes remain database assertions; both
+        cited primary papers were inaccessible. No primary assay or native cofactor
+        state is adopted.
+    notes: MITE encodes a substrate example; its external identity remains ungrounded.
+      No upstream reaction order, kinetic substrate preference or executable transformation
+      rule is inferred from the example or SMARTS.
+  - subject: spiroacetal_formation
+    predicate: has_database_example_product
+    object: salinomycin
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000441.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000441 version 1, active, identifies SlnM/AEZ53956.1 and BGC0000144.
+        The reaction description assigns 18,19-double-bond and bis(spiroacetal) formation,
+        not ordinary O-methylation despite the enzyme family label. Heterologous,
+        in-vitro, knockout and mutagenesis codes remain database assertions; both
+        cited primary papers were inaccessible. No primary assay or native cofactor
+        state is adopted.
+    notes: Pinned MITE product matches full key KQXDHUJYNAXLNZ-SDCJTGBBSA-N in the
+      retained repository-helper/RDKit2026.03.5 screen, with stereo_complete:false
+      in source and owner. This is correspondence at incomplete stereo resolution,
+      not fully resolved stereoisomer identity. The different full-key salinomycin-2
+      record is not merged or changed. No pathway finality or producer-grade upgrade;
+      existing BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED grades and all occurrences are
+      preserved.
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -220,3 +325,21 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-07T07:18:07Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added a database-asserted SlnM double-bond/bis(spiroacetal) biosynthesis
+    context: four nodes, three qualified edges with stable MITE/NCBI/UniParc URLs
+    and one exact four-word snippet. Native NCBIProtein:AEZ53956.1 is verified by
+    full816-nt/table11 CDS93645..94460 on JN033543.1, independent GenPept and UniParc,
+    all271residues; coded_by DNA/coordinates and XM211/taxon1888 match. Retained UniParc
+    has no active UniProtKB entry; inactive H6D580 names another strain and is not
+    selected. No arbitrary homolog, native assay or historical stock/construct identity
+    is claimed. MITE example and owner share the full key at INCOMPLETE stereochemical
+    resolution, not fully resolved stereoisomer identity. Both primary papers were
+    inaccessible. No ordinary methylation, SAM state, kinetics, knockout phenotype,
+    site, complex, upstream order or pathway finality is adopted. Preserved stereo_complete:false,
+    all source fields and twelve occurrences, BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED
+    source grades, SEEDED status and append-only history. Different-key salinomycin-2
+    is unchanged. Not full-record sign-off.'
+  llm_assisted: true
