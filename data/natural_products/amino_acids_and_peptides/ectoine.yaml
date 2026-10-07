@@ -649,6 +649,285 @@ causal_graphs:
         chrysomallus) ectC/thpC gene product cross-referenced to EMBL AY524544 protein
         AAS02096.1; UniProt annotates the RHEA:17281 ectoine synthase activity by
         homology.
+- graph_id: ectoine-thpab-database-upstream-pathway
+  scope: BIOSYNTHESIS
+  description: Separate proposed upstream ectoine context for native-reference ThpB
+    and ThpA. Reviewed UniProt function and pathway annotations infer transamination
+    then acetylation by homology. This is not a direct individual-protein assay or
+    reconstitution. The existing ThpC terminal graph and partial pathway list remain
+    unchanged; no cross-graph local edge, physical assembly, full-pathway sufficiency
+    or exact owner microspecies identity is inferred.
+  nodes:
+  - node_id: thpb_reference
+    label: ThpB native reference, homology-assigned function
+    node_type: ENZYME
+    identifier: UniProtKB:Q6QUY9
+    grounding_status: GROUNDED
+  - node_id: thpa_reference
+    label: ThpA native reference, homology-assigned function
+    node_type: ENZYME
+    identifier: UniProtKB:Q6QUZ0
+    grounding_status: GROUNDED
+  - node_id: aspartate_semialdehyde
+    label: L-aspartate semialdehyde, database precursor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: transamination
+    label: Database-proposed ThpB transamination
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: diaminobutyrate
+    label: L-2,4-diaminobutyrate, database intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: acetylation
+    label: Database-proposed ThpA acetylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: acetyl_diaminobutyrate
+    label: N-gamma-acetyl-L-2,4-diaminobutyrate, database intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: thpb_reference
+    predicate: is_database_proposed_catalyst_of
+    object: transamination
+    notes: Function is ECO0000250, not an independently inspected ThpB experiment.
+      UniProt PLP annotation is by similarity and Lys271 modification is ECO0000255;
+      no native occupancy, catalytic-site measurement or complex is adopted.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q6QUY9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Reviewed entry78/sequence1; FUNCTION ECO0000250 and protein existence3
+        are inferred from homology. PATHWAY explicitly assigns ectoine biosynthesis
+        step1/3; no native individual enzyme assay is established. PMID15128576 is
+        the sole bibliography reference and is tagged for genomic sequence, not this
+        protein's experimental function. The paper's ThpD expression result is not
+        transferred here. Reaction CURIEs denote reactions, not protein identity.
+      snippet: Catalyzes reversively the conversion of L-aspartate beta-semialdehyde
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAS02095.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Independent complete420-aa native AAS02095.1, genethpB; coded_by AY524544.1:698..1960,
+        plus-strand/table11. Source S.anulatus/taxon1892, no strain qualifier. A conceptual
+        translation, not an independent protein-level assay.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY524544.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Full1263-nt CDS698..1960+, codon1/table11, matches annotation, independent
+        GenPept and reviewed Q6QUY9, all420aa; exact coded_by DNA/coordinates agree.
+        Native source gives no strain; ATCC11523/DSM40128/JCM4296/LMG20459/NBRC15393
+        are UniProt bibliographic aliases, not independently sequenced historical
+        stock. The complete3366-bp locus is not a whole genome. UniParcUPI000023B703
+        is an unqueried crosslink, not independent archive proof.
+  - subject: aspartate_semialdehyde
+    predicate: is_database_proposed_substrate_of
+    object: transamination
+    notes: Biosynthetic direction follows UniProt FUNCTION and PATHWAY step1/3. RHEA11160's
+      stored equation is written in the reverse direction, and FUNCTION explicitly
+      says reversible. No irreversible flux or assay conditions inferred; intermediate
+      ionic form is not independently grounded.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q6QUY9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Reviewed entry78/sequence1; FUNCTION ECO0000250 and protein existence3
+        are inferred from homology. PATHWAY explicitly assigns ectoine biosynthesis
+        step1/3; no native individual enzyme assay is established. PMID15128576 is
+        the sole bibliography reference and is tagged for genomic sequence, not this
+        protein's experimental function. The paper's ThpD expression result is not
+        transferred here. Reaction CURIEs denote reactions, not protein identity.
+  - subject: transamination
+    predicate: has_database_proposed_product
+    object: diaminobutyrate
+    notes: Database-proposed DABA formation with L-glutamate as amino donor. This
+      is not a complete stoichiometric model, measured flux, exact native substrate
+      assay or new ectoine producer claim.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q6QUY9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Reviewed entry78/sequence1; FUNCTION ECO0000250 and protein existence3
+        are inferred from homology. PATHWAY explicitly assigns ectoine biosynthesis
+        step1/3; no native individual enzyme assay is established. PMID15128576 is
+        the sole bibliography reference and is tagged for genomic sequence, not this
+        protein's experimental function. The paper's ThpD expression result is not
+        transferred here. Reaction CURIEs denote reactions, not protein identity.
+  - subject: thpa_reference
+    predicate: is_database_proposed_catalyst_of
+    object: acetylation
+    notes: FUNCTION ECO0000250 supports the proposed acetyltransferase assignment.
+      Full native sequence correspondence grounds the reference only, not a historical
+      construct, primary individual-enzyme assay or physical ThpA/ThpB assembly.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q6QUZ0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Reviewed entry63/sequence1; FUNCTION ECO0000250 and protein existence3
+        are inferred from homology. PATHWAY explicitly assigns ectoine biosynthesis
+        step2/3; no native individual enzyme assay is established. PMID15128576 is
+        the sole bibliography reference and is tagged for genomic sequence, not this
+        protein's experimental function. The paper's ThpD expression result is not
+        transferred here. Reaction CURIEs denote reactions, not protein identity.
+      snippet: Catalyzes the acetylation of L-2,4-diaminobutyrate (DABA)
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAS02094.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Independent complete176-aa native AAS02094.1, genethpA; coded_by AY524544.1:9..539,
+        plus-strand/table11. Source S.anulatus/taxon1892, no strain qualifier. A conceptual
+        translation, not an independent protein-level assay.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY524544.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Full531-nt CDS9..539+, codon1/table11, matches annotation, independent
+        GenPept and reviewed Q6QUZ0, all176aa; exact coded_by DNA/coordinates agree.
+        Native source gives no strain; ATCC11523/DSM40128/JCM4296/LMG20459/NBRC15393
+        are UniProt bibliographic aliases, not independently sequenced historical
+        stock. The complete3366-bp locus is not a whole genome. UniParcUPI000023B702
+        is an unqueried crosslink, not independent archive proof.
+  - subject: diaminobutyrate
+    predicate: is_database_proposed_substrate_of
+    object: acetylation
+    notes: UniProt FUNCTION names DABA and acetyl-CoA; PATHWAY says step2/3. This
+      order is a database assertion, not inferred from thpA/thpB genomic positions.
+      No exact experimental substrate or ionic-form identity adopted.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q6QUZ0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Reviewed entry63/sequence1; FUNCTION ECO0000250 and protein existence3
+        are inferred from homology. PATHWAY explicitly assigns ectoine biosynthesis
+        step2/3; no native individual enzyme assay is established. PMID15128576 is
+        the sole bibliography reference and is tagged for genomic sequence, not this
+        protein's experimental function. The paper's ThpD expression result is not
+        transferred here. Reaction CURIEs denote reactions, not protein identity.
+  - subject: acetylation
+    predicate: has_database_proposed_product
+    object: acetyl_diaminobutyrate
+    notes: Database ADABA intermediate, not ectoine or a final product. RHEA16901
+      is reaction provenance only; no independently verified chemical CURIE is assigned
+      here. The existing ThpC substrate/product graph and terminal-step list are preserved
+      without renumbering or owner-grounding changes.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q6QUZ0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Reviewed entry63/sequence1; FUNCTION ECO0000250 and protein existence3
+        are inferred from homology. PATHWAY explicitly assigns ectoine biosynthesis
+        step2/3; no native individual enzyme assay is established. PMID15128576 is
+        the sole bibliography reference and is tagged for genomic sequence, not this
+        protein's experimental function. The paper's ThpD expression result is not
+        transferred here. Reaction CURIEs denote reactions, not protein identity.
+- graph_id: ectoine-thpd-heterologous-expression
+  scope: BIOSYNTHESIS
+  description: ThpD expression shifts the measured ectoine/hydroxyectoine balance
+    in a heterologous host. This is an expression phenotype, not purified-enzyme kinetics.
+    Native reference identity and chemical-form limits remain separate from causal
+    evidence. Previously inspected extracted main text, table and captions; no successful
+    visual figure inspection. A later figure access challenge stopped further retrieval.
+    No new paper access, supplementary verification or raw PDF checksum claimed.
+  nodes:
+  - node_id: thpd_reference
+    label: ThpD native reference
+    node_type: ENZYME
+    identifier: UniProtKB:Q6QUY7
+    grounding_status: GROUNDED
+  - node_id: experimental_host
+    label: Halomonas elongata AD-98, experimental host
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: thpd_expression
+    label: Heterologous ThpD expression
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: ectoine_pool
+    label: Ectoine, source-named pool with unresolved protonation
+    node_type: COMPOUND
+    grounding_status: REVIEW_NEEDED
+  - node_id: hydroxyectoine_pool
+    label: Hydroxyectoine, unresolved chemical form
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: thpd_reference
+    predicate: was_expressed_in_context
+    object: thpd_expression
+    notes: The paper links the donor gene to AY524544; mapping identifies the deposited
+      reference, not the exact historical construct.
+    evidence:
+    - reference: DOI:10.1128/AEM.70.5.3130-3132.2004
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-07'
+      snippet: thpD gene of S. chrysomallus was actively expressed
+      notes: Previously inspected extracted main text, table and captions; no successful
+        visual figure inspection. A later figure access challenge stopped further
+        retrieval. No new paper access, supplementary verification or raw PDF checksum
+        claimed.
+    - reference: https://www.uniprot.org/uniprotkb/Q6QUY7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Reviewed entry64/sequence1,297aa, ectD/thpD, S.anulatus (S.chrysomallus)/tax1892.
+        Direct EMBL AY524544/AAS02097.1 crosslink and bibliography ATCC11523 aliases
+        support reference correspondence. Protein existence is inferred from homology.
+        FUNCTION cites PMID15128576; reaction/Rhea45740 is by homology toQ93RV9, Fe/subunit
+        annotations toQ2TDY4, and sites toQ1GNW5/Q2TDY4. These are not transferred
+        as measured properties.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAS02097.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Complete independent297-aa ThpD, gene thpD, S.anulatus/tax1892; coded_by
+        AY524544.1:2452..3345, table11. No strain qualifier in the protein source.
+        UniParcUPI000023B705 is an unqueried UniProt crosslink, not an independently
+        inspected archive or UniProtKB accession.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY524544.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Complete3366-bp source read. Full894-nt plus-strand thpD CDS2452..3345,
+        codon1/table11, translates exactly to annotation, independent GenPept and
+        current UniProt, all297aa. Independent coded_by DNA/coordinates match. Source
+        gives species1892 but no strain; no invented strain qualifier, historical-stock
+        identity or experimental functional characterization of the other thp genes.
+  - subject: experimental_host
+    predicate: was_host_for
+    object: thpd_expression
+    notes: AD-98 is the experimental host. The article's DSM304/DSM3043 inconsistency
+      is not silently resolved; no native host protein is substituted.
+    evidence:
+    - reference: DOI:10.1128/AEM.70.5.3130-3132.2004
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-07'
+      notes: Previously inspected extracted main text, table and captions; no successful
+        visual figure inspection. A later figure access challenge stopped further
+        retrieval. No new paper access, supplementary verification or raw PDF checksum
+        claimed.
+  - subject: thpd_expression
+    predicate: increased_relative_hplc_fraction_of
+    object: hydroxyectoine_pool
+    notes: Relative HPLC fractions versus vector control; no absolute necessity, pathway
+      finality or new native-producer claim. The product remains ungrounded.
+    evidence:
+    - reference: DOI:10.1128/AEM.70.5.3130-3132.2004
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-07'
+      notes: Previously inspected extracted main text, table and captions; no successful
+        visual figure inspection. A later figure access challenge stopped further
+        retrieval. No new paper access, supplementary verification or raw PDF checksum
+        claimed.
+  - subject: thpd_expression
+    predicate: decreased_relative_hplc_fraction_of
+    object: ectoine_pool
+    notes: No exact microspecies identifier is selected for the assay-named pool.
+      The owner's neutral/zwitterionic ambiguity stays REVIEW_NEEDED; no pH/speciation
+      conclusion.
+    evidence:
+    - reference: DOI:10.1128/AEM.70.5.3130-3132.2004
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-07'
+      notes: Previously inspected extracted main text, table and captions; no successful
+        visual figure inspection. A later figure access challenge stopped further
+        retrieval. No new paper access, supplementary verification or raw PDF checksum
+        claimed.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -665,4 +944,30 @@ curation_history:
     ThpC ectoine synthase pathway step and BIOSYNTHESIS causal graph; grounded BGC0000853
     thpC to UniProtKB:Q6QUY8 through EMBL AY524544 protein AAS02096.1; and linked
     the inferred terminal ring-closure reaction to RHEA:17281.
+  llm_assisted: true
+- timestamp: '2026-10-07T12:37:27Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added two independently qualified BIOSYNTHESIS graphs, twelve new nodes
+    and ten new edges, for native-reference ThpB/Q6QUY9, ThpA/Q6QUZ0 and ThpD/Q6QUY7.
+    Complete AY524544.1 CDS translations equal native annotation, independent GenPept
+    AAS02095.1/AAS02094.1/AAS02097.1 and reviewed UniProt, respectively 420/176/297aa;
+    exact coded_by, table11 and species1892 agree. Native source has no strain qualifier;
+    ATCC11523 aliases are bibliographic linkage, not historical assay-stock sequence
+    proof. ThpB/ThpA function remains database homology attribution, with pathway
+    order from explicit FUNCTION/PATHWAY text, not gene order or stored reversible-equation
+    direction. ThpD supports a heterologous expression/HPLC phenotype, not purified-enzyme
+    catalysis, absolute yield or universal necessity. Every new edge has a DOI or
+    stable UniProt URL; three short exact snippets retained. Added explicit ThpD primary-access
+    qualifications to the description and four primary evidence items; clarified that
+    its genomic mapping does not establish experimental functions of other thp genes.
+    Previously read main/table/captions remain the source; no new paper retrieval,
+    successful figure visual review or raw PDF checksum. Other approved graph fields,
+    directions, references and snippets are unchanged. No ThpD experiment transfer
+    to ThpA/ThpB, PLP/iron occupancy, catalytic-site measurement, physical assembly,
+    new producer/BGC grade or chemical-form resolution. Preserved the entire existing
+    ThpC graph and proposed terminal pathway list, every old owner field, all ten
+    producer/BGC claims, occurrences, activities, discussions, source grades, stereochemistry,
+    classifications, SEEDED status and prior history. Original scratch-only events
+    are not imported into production history; no full-record sign-off.
   llm_assisted: true

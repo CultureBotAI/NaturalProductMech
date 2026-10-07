@@ -305,6 +305,88 @@ derived from a source. This is what the rest of the record exists to support.</p
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
+<p class="sub">Separate proposed upstream ectoine context for native-reference ThpB and ThpA. Reviewed UniProt function and pathway annotations infer transamination then acetylation by homology. This is not a direct individual-protein assay or reconstitution. The existing ThpC terminal graph and partial pathway list remain unchanged; no cross-graph local edge, physical assembly, full-pathway sufficiency or exact owner microspecies identity is inferred.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>ThpB native reference, homology-assigned function</td>
+  <td>is_database_proposed_catalyst_of</td>
+  <td>Database-proposed ThpB transamination</td>
+  <td>Function is ECO0000250, not an independently inspected ThpB experiment. UniProt PLP annotation is by similarity and Lys271 modification is ECO0000255; no native occupancy, catalytic-site measurement or complex is adopted.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q6QUY9<br>https://www.ncbi.nlm.nih.gov/protein/AAS02095.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AY524544.1</td>
+</tr>
+<tr>
+  <td>L-aspartate semialdehyde, database precursor</td>
+  <td>is_database_proposed_substrate_of</td>
+  <td>Database-proposed ThpB transamination</td>
+  <td>Biosynthetic direction follows UniProt FUNCTION and PATHWAY step1/3. RHEA11160&#39;s stored equation is written in the reverse direction, and FUNCTION explicitly says reversible. No irreversible flux or assay conditions inferred; intermediate ionic form is not independently grounded.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q6QUY9</td>
+</tr>
+<tr>
+  <td>Database-proposed ThpB transamination</td>
+  <td>has_database_proposed_product</td>
+  <td>L-2,4-diaminobutyrate, database intermediate</td>
+  <td>Database-proposed DABA formation with L-glutamate as amino donor. This is not a complete stoichiometric model, measured flux, exact native substrate assay or new ectoine producer claim.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q6QUY9</td>
+</tr>
+<tr>
+  <td>ThpA native reference, homology-assigned function</td>
+  <td>is_database_proposed_catalyst_of</td>
+  <td>Database-proposed ThpA acetylation</td>
+  <td>FUNCTION ECO0000250 supports the proposed acetyltransferase assignment. Full native sequence correspondence grounds the reference only, not a historical construct, primary individual-enzyme assay or physical ThpA/ThpB assembly.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q6QUZ0<br>https://www.ncbi.nlm.nih.gov/protein/AAS02094.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AY524544.1</td>
+</tr>
+<tr>
+  <td>L-2,4-diaminobutyrate, database intermediate</td>
+  <td>is_database_proposed_substrate_of</td>
+  <td>Database-proposed ThpA acetylation</td>
+  <td>UniProt FUNCTION names DABA and acetyl-CoA; PATHWAY says step2/3. This order is a database assertion, not inferred from thpA/thpB genomic positions. No exact experimental substrate or ionic-form identity adopted.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q6QUZ0</td>
+</tr>
+<tr>
+  <td>Database-proposed ThpA acetylation</td>
+  <td>has_database_proposed_product</td>
+  <td>N-gamma-acetyl-L-2,4-diaminobutyrate, database intermediate</td>
+  <td>Database ADABA intermediate, not ectoine or a final product. RHEA16901 is reaction provenance only; no independently verified chemical CURIE is assigned here. The existing ThpC substrate/product graph and terminal-step list are preserved without renumbering or owner-grounding changes.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q6QUZ0</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">ThpD expression shifts the measured ectoine/hydroxyectoine balance in a heterologous host. This is an expression phenotype, not purified-enzyme kinetics. Native reference identity and chemical-form limits remain separate from causal evidence. Previously inspected extracted main text, table and captions; no successful visual figure inspection. A later figure access challenge stopped further retrieval. No new paper access, supplementary verification or raw PDF checksum claimed.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>ThpD native reference</td>
+  <td>was_expressed_in_context</td>
+  <td>Heterologous ThpD expression</td>
+  <td>The paper links the donor gene to AY524544; mapping identifies the deposited reference, not the exact historical construct.</td>
+  <td class="mono">DOI:10.1128/AEM.70.5.3130-3132.2004<br>https://www.uniprot.org/uniprotkb/Q6QUY7<br>https://www.ncbi.nlm.nih.gov/protein/AAS02097.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AY524544.1</td>
+</tr>
+<tr>
+  <td>Halomonas elongata AD-98, experimental host</td>
+  <td>was_host_for</td>
+  <td>Heterologous ThpD expression</td>
+  <td>AD-98 is the experimental host. The article&#39;s DSM304/DSM3043 inconsistency is not silently resolved; no native host protein is substituted.</td>
+  <td class="mono">DOI:10.1128/AEM.70.5.3130-3132.2004</td>
+</tr>
+<tr>
+  <td>Heterologous ThpD expression</td>
+  <td>increased_relative_hplc_fraction_of</td>
+  <td>Hydroxyectoine, unresolved chemical form</td>
+  <td>Relative HPLC fractions versus vector control; no absolute necessity, pathway finality or new native-producer claim. The product remains ungrounded.</td>
+  <td class="mono">DOI:10.1128/AEM.70.5.3130-3132.2004</td>
+</tr>
+<tr>
+  <td>Heterologous ThpD expression</td>
+  <td>decreased_relative_hplc_fraction_of</td>
+  <td>Ectoine, source-named pool with unresolved protonation</td>
+  <td>No exact microspecies identifier is selected for the assay-named pool. The owner&#39;s neutral/zwitterionic ambiguity stays REVIEW_NEEDED; no pH/speciation conclusion.</td>
+  <td class="mono">DOI:10.1128/AEM.70.5.3130-3132.2004</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">2</span></h2>
