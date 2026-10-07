@@ -62,6 +62,7 @@ import yaml
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from naturalproductmech.curate.curation_event import record_curation_event  # noqa: E402
+from naturalproductmech.curate.structure_corrections import apply_structure_corrections  # noqa: E402
 from naturalproductmech.grading import (  # noqa: E402
     grade_cluster_link,
     grade_production,
@@ -79,6 +80,7 @@ CORPUS_DIR = REPO_ROOT / "data" / "natural_products"
 PATHS_FILE = CORPUS_DIR / "PATHS.tsv"
 CONF_PATH = REPO_ROOT / "conf" / "sources.yaml"
 MIBIG_LOCUS_EVIDENCE_OVERRIDES = CURATION_DIR / "mibig_locus_evidence_overrides.tsv"
+MIBIG_STRUCTURE_CORRECTIONS = CURATION_DIR / "mibig_structure_corrections.tsv"
 
 # MIBiG's cluster vocabulary -> the schema enum. Six values in 4.0; `alkaloid`
 # was removed when compound classification was split from cluster
@@ -361,6 +363,8 @@ def read_inventories() -> dict[str, list[dict[str, str]]]:
     if MIBIG_LOCUS_EVIDENCE_OVERRIDES.exists():
         inventories[MIBIG_LOCUS_EVIDENCE_OVERRIDES.stem] = read_tsv(
             MIBIG_LOCUS_EVIDENCE_OVERRIDES)
+    if MIBIG_STRUCTURE_CORRECTIONS.exists():
+        inventories[MIBIG_STRUCTURE_CORRECTIONS.stem] = read_tsv(MIBIG_STRUCTURE_CORRECTIONS)
     return inventories
 
 
@@ -608,6 +612,12 @@ def mibig_evidence(row: dict[str, str]) -> list[dict[str, str]]:
             "evidence_type": "CURATOR_INFERENCE",
             "notes": row["locus_evidence_qualification"],
         })
+    if row.get("structure_correction_note"):
+        evidence.append({
+            "reference": row["structure_correction_reference"],
+            "evidence_type": "CURATOR_INFERENCE",
+            "notes": row["structure_correction_note"],
+        })
     return evidence
 
 
@@ -678,7 +688,11 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     ChEBI. Grounding those is exactly what the next milestone is for, and
     `just worklist` ranks them.
     """
-    mibig_rows = inventories.get("mibig_compounds") or []
+    mibig_rows = apply_structure_corrections(
+        inventories.get("mibig_compounds") or [],
+        inventories.get("mibig_structure_corrections") or [],
+        inventories.get("chebi_structures") or [],
+    )
     mibig_locus_overrides = load_mibig_locus_evidence_overrides(
         inventories.get("mibig_locus_evidence_overrides") or [])
     source_counts = Counter(mint_identifier("MIBIG", row["mibig_accession"] + ":" + row["compound_index"])
@@ -803,6 +817,7 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             r["mibig_accession"],
         ))
         lead = rows[0]
+        structure_corrected = any(row.get("structure_correction_note") for row in rows)
         minted = mint_identifier("MIBIG", lead["mibig_accession"] + ":" + lead["compound_index"])
 
         chebi_matches = chebi_by_key.get(key) or []
@@ -849,8 +864,9 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                 "standard_inchi": lead["standard_inchi"],
                 "standard_inchi_key": key,
                 "stereo_complete": lead["stereo_complete"] == "true",
-                "structure_source": "MIBIG",
-                "structure_source_id": f"mibig:{lead['mibig_accession']}",
+                "structure_source": lead.get("structure_source", "MIBIG"),
+                "structure_source_id": lead.get(
+                    "structure_source_id", f"mibig:{lead['mibig_accession']}"),
             },
             "np_pathway": pathway,
             "biosynthesis_origin": "NATURAL_PRODUCT",
@@ -990,6 +1006,14 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                         "notes": f"ChEBI compound origin for {match['chebi_id']}",
                     }],
                 }
+                if structure_corrected and not re.match(
+                    r"^(?:\d+$|PMID:|DOI:|https://)", origin["source_accession"]
+                ):
+                    occurrence["evidence"][0].update({
+                        "reference": f"https://www.ebi.ac.uk/chebi/{match['chebi_id']}",
+                        "notes": (f"ChEBI compound origin for {match['chebi_id']}; "
+                                  f"source bibliography: {origin['source_accession']}"),
+                    })
                 if origin["species_accession"].isdigit():
                     occurrence["taxon_id"] = f"NCBITaxon:{origin['species_accession']}"
                     occurrence["taxon_source"] = "NCBITaxon"
@@ -1227,7 +1251,8 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             "identifier": sibling["identifier"],
             "relation": "SAME_STRUCTURE",
             "basis": "SAME_INCHIKEY",
-            "source_version": sibling["corpus_commit"][:12],
+            "source_version": (sibling["corpus_commit"] if structure_corrected
+                               else sibling["corpus_commit"][:12]),
         } for sibling in sibling_by_key.get(key) or []]
         links.extend({
             "corpus": "PathwayMech",
@@ -1279,6 +1304,20 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
         doc["curation_status"] = "SEEDED"
 
         discussions: list[dict[str, Any]] = []
+        for row in rows:
+            if row.get("structure_correction_note"):
+                discussions.append({
+                    "discussion_id": "source-structure-correction",
+                    "kind": "CONTROVERSY",
+                    "status": "RESOLVED",
+                    "prompt": "Which structure represents the source compound?",
+                    "resolution_note": row["structure_correction_note"],
+                    "evidence": [{
+                        "reference": row["structure_correction_reference"],
+                        "evidence_source": "figure; curator interpretation",
+                        "notes": row["structure_correction_note"],
+                    }],
+                })
 
         # A paper-internal label identifies a structure only relative to one
         # paper's numbering. The name is not invented here — MIBiG's is kept —
@@ -1396,6 +1435,8 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             doc["discussions"] = discussions
 
         doc["_slug"] = slugify(label, identifier)
+        if structure_corrected:
+            doc["_previous_standard_inchi_key"] = lead["structure_correction_old_key"]
         records.append(doc)
 
     # Slugs are published URLs and must be unique. A clash is resolved
@@ -1450,14 +1491,28 @@ def seeder_owned(record: dict[str, Any]) -> dict[str, Any]:
 
 def write_records(records: list[dict[str, Any]], *, only: str | None = None,
                   limit: int | None = None) -> int:
+    selected = [doc for doc in records if not only or doc["identifier"] == only]
+    if limit is not None:
+        selected = selected[:limit]
+    replaced_keys = {doc["_previous_standard_inchi_key"] for doc in selected
+                     if doc.get("_previous_standard_inchi_key")}
+    if replaced_keys:
+        for existing_path in CORPUS_DIR.rglob("*.yaml"):
+            existing = read_record(existing_path)
+            if existing and _standard_inchi_key(existing) in replaced_keys:
+                raise ValueError(
+                    f"{existing_path}: old structure owner remains; explicit curation migration required")
+    # Refuse identity changes before ANY writes, including an apparently
+    # uncurated owner's history. A reviewed migration must move it explicitly.
+    for doc in selected:
+        path = record_path(doc["np_pathway"], doc["_slug"])
+        previous = read_record(path)
+        if previous is not None and _standard_inchi_key(previous) != _standard_inchi_key(doc):
+            raise ValueError(f"{path}: structure changed; explicit curation migration required")
     written = 0
     unchanged = 0
     rows: list[dict[str, str]] = []
-    for doc in records:
-        if only and doc["identifier"] != only:
-            continue
-        if limit is not None and written >= limit:
-            break
+    for doc in selected:
         slug = doc["_slug"]
         pathway = doc["np_pathway"]
         path = record_path(pathway, slug)

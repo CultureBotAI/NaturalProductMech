@@ -15,8 +15,45 @@ concept, keyed by that concept's **minted identifier** — the stable
 | `identifier` | The CURIE to ground to. Required for `GROUND`. |
 | `curator` / `date` / `rationale` | Who decided, when, and why. |
 
-Decisions apply at seed time, so a decision changes the corpus only after
-`just seed-apply` — and `just verify-reproduction` then proves the corpus matches.
+This is a reserved decision format, not an implemented seeder input. The current
+seeder does **not** read `decisions.tsv`; adding a row does not change a record.
+Use an implemented, tested harmonization path below, or add the appropriate
+consumer before recording a new decision here.
+
+## MIBiG structure corrections
+
+`curation/mibig_structure_corrections.tsv` supports the narrow action
+`REPLACE_WITH_CHEBI`. It replaces one uniquely owned MIBiG compound structure
+with one unambiguous 3-star ChEBI default structure. It does not modify raw
+inventories, merge existing owners, or declare the old and new structures equal.
+
+The `source_id` is `BGC accession:compound_index`. The two
+`expected_*_row_sha256` values pin the **complete parsed source and target rows**,
+including version, locus, names, xrefs, chemistry and empty fields. Compute these
+with `naturalproductmech.curate.structure_corrections.row_digest`, not a hash of
+the TSV line. Missing/duplicate rows, changed row content, ambiguous ChEBI keys,
+or an already occupied destination key stop seeding. Every correction requires
+a stable reference, curator, ISO date and rationale. `standard_inchi` and
+`stereo_complete` are curator-supplied chemistry derived from the target SMILES
+using the project's pinned RDKit and must be verified before adoption.
+
+All original MIBiG xrefs are withheld and recorded in the correction note;
+re-adopting any of them needs separate identity evidence. Occurrences, assays,
+classification and sibling links join only on the corrected key. No old-key
+claims are transferred. The correction appears separately as `CURATOR_INFERENCE`
+on producer and BGC evidence and in a resolved source-conflict discussion.
+The chemical structure names ChEBI as its source; the MIBiG source concept stays.
+NPClassifier's extractor also consumes these corrections, so run its dry run
+and one-call canary on the corrected structure before seeding.
+
+Seeding refuses to overwrite an existing file with a different structure.
+Correcting a curated owner requires an explicit, separately audited migration
+through `write_validated_natural_product` (or the component bundle workflow):
+re-audit each old claim, retain applicable graphs and history, append an event,
+and update `PATHS.tsv` for the new identifier/path. Never relax the ordinary
+same-key carry-forward rule. Canary, reproduction and full corpus gates still
+apply. Corrections that would merge owners or relocate components need a
+dedicated migration and are outside this narrow path.
 
 ## MIBiG locus-evidence overrides
 
