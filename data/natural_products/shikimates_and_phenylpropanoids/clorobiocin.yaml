@@ -426,7 +426,7 @@ causal_graphs:
     grounding_status: GROUNDED
     identifier: UniProtKB:Q8GHA5
   - node_id: wild_type
-    label: Native clorobiocin producer DS12.976
+    label: Streptomyces roseochromogenus subsp. oscitans DS 12.976
     node_type: ORGANISM
     grounding_status: GROUNDED
     identifier: NCBITaxon:1352936
@@ -1046,4 +1046,12 @@ curation_history:
     substrate/order, purified kinetics, physical assembly, congener identifier or
     antimicrobial target added. Preserve all previous fields, 23 graphs, 21 component
     references, history and SEEDED status.
+  llm_assisted: true
+- timestamp: '2026-10-07T20:47:23Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Correct the new wild_type node label for NCBITaxon:1352936 to its canonical
+    label after the label-correspondence gate finding (#669). Preserve its identifier,
+    all biological assertions, graph topology, citations, snippets, native protein
+    mappings and previous history. No taxonomic reassignment or validator exception.
   llm_assisted: true
