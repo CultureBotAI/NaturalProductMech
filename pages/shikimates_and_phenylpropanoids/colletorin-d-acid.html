@@ -85,6 +85,33 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Substrate-owner context for MITE-reported CTC3 Colletorin D acid reduction. The owner is consumed; Colletorin D is a separate exact linked structure. This same database reaction is already represented on its product record, not an independently observed additional experiment. Native reference identity is verified, but UniProt provides no FUNCTION annotation and the primary paper was inaccessible. Existing graphs, source fields/grades and SEEDED status remain unchanged; no inter-graph order, full pathway or full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>CTC3 native IMI349063 reference</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>MITE-reported Colletorin D acid reduction</td>
+  <td>MITE supplies the functional attribution; sequence records establish identity only. Genome/BGC correspondence does not upgrade BGC_CORRELATED producer or CLUSTER_CORRELATED locus evidence. No native cofactor state, predicted domain-site function, physiological complex, rate or knockout is asserted.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000464.json<br>https://www.uniprot.org/uniprotkb/A0A1B7YD80<br>https://www.ncbi.nlm.nih.gov/protein/OBR09778.1<br>https://www.ncbi.nlm.nih.gov/nuccore/LTAN01000004.1</td>
+</tr>
+<tr>
+  <td>Colletorin D acid, exact owner substrate</td>
+  <td>is_database_reported_substrate_of</td>
+  <td>MITE-reported Colletorin D acid reduction</td>
+  <td>Pinned MITE example substrate matches this owner&#39;s full InChI/key and complete stereochemical status using the repository helper and pinned RDKit2026.03.5. This record is the substrate, not the product. No precursor generation, additional organism, source-grade upgrade or cross-graph causal order inferred.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000464.json</td>
+</tr>
+<tr>
+  <td>MITE-reported Colletorin D acid reduction</td>
+  <td>has_database_reported_product</td>
+  <td>Colletorin D, exact linked product</td>
+  <td>Pinned MITE example product matches the separate linked record&#39;s full InChI/key and complete stereochemical status. The intermediate flag does not prove pathway finality. No B-congener, physiological complex, cofactor state or extra downstream step adopted. Existing product-owner graph is preserved byte-for-byte; this is another record context, not independent evidence.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000464.json</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

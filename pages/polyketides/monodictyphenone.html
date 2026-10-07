@@ -122,6 +122,33 @@ isolation report left it.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Separate MITE-reported PhoL reduction consuming exact monodictyphenone as substrate. Native Diaporthe SYSU-MS4722 PhoL is sequence-grounded in NCBIProtein, not a UniParc accession relabeled as UniProtKB. This context preserves the prior PhoJ graph that forms the owner compound and does not transfer either reference to the distinct imported Aspergillus/BGC0000101 source. Functional evidence is database-level; no primary assay or full-record sign-off is claimed.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>PhoL native Diaporthe SYSU-MS4722 reference</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>MITE-reported PhoL net reduction</td>
+  <td>MITE supplies the compound-specific functional assertion. Its encoded net carboxyl-to-hydroxymethyl change is not an independently inspected purified-enzyme assay or proof of PhoL-alone sufficiency and intervening reaction steps. CDD/UniParc NAD(P)-binding and SDR annotations do not establish a measured cofactor, binding site or occupancy. Native sequence identity is not historical assay-stock or construct identity.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000157.json<br>https://www.ncbi.nlm.nih.gov/protein/UPG58741.1<br>https://www.ncbi.nlm.nih.gov/nuccore/OL450417.1<br>https://www.uniprot.org/uniparc/UPI00205DA260</td>
+</tr>
+<tr>
+  <td>monodictyphenone</td>
+  <td>is_database_example_substrate_of</td>
+  <td>MITE-reported PhoL net reduction</td>
+  <td>Pinned exact-structure screening matches the MITE substrate to full owner key UMNWQJSVQOCNEM-UHFFFAOYSA-N with complete stereochemistry. This context consumes the owner, whereas its preserved PhoJ graph forms it. No source producer-grade transfer, Monodictys occurrence upgrade or claim that this Diaporthe reference is an Aspergillus nidulans FGSC A4 protein is made.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000157.json</td>
+</tr>
+<tr>
+  <td>MITE-reported PhoL net reduction</td>
+  <td>has_database_example_product</td>
+  <td>MITE-encoded reduced hydroxymethyl intermediate</td>
+  <td>The encoded hydroxymethyl product remains externally ungrounded and source-marked intermediate. No exact named product ID, phomoxanthone A final-product claim, downstream sequence or cofactor stoichiometry is inferred. The original PhoJ graph, Aspergillus producer/BGC0000101, occurrence evidence and SEEDED status remain unchanged; retired BGC0003093 is not restored.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000157.json</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
