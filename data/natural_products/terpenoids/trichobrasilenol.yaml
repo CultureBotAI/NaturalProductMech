@@ -86,6 +86,118 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-d96f55d215
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: trichobrasilenol-brab-database-substrate-glycosylation
+  scope: BIOSYNTHESIS
+  description: Database-reported BraB glycosylation consumes exact trichobrasilenol.
+    BraB is the sequence-verified native Annulohypoxylon truncatum CBS140778 reference,
+    not a Trichoderma terpene cyclase or an identified historical assay construct.
+    The primary paper was inaccessible, so functional evidence remains database-level.
+    Product stereochemistry is incomplete; donor and pathway-finality limits remain
+    explicit. No native producer-grade upgrade or change to SEEDED status.
+  nodes:
+  - node_id: brab_reference
+    label: BraB native CBS140778 reference
+    node_type: ENZYME
+    identifier: UniProtKB:P9WER1
+    grounding_status: GROUNDED
+  - node_id: trichobrasilenol
+    label: trichobrasilenol
+    node_type: COMPOUND
+    identifier: CHEBI:167379
+    grounding_status: GROUNDED
+  - node_id: glycosylation
+    label: MITE-reported BraB glycosylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: brasilane_a
+    label: Brasilane A, stereo-incomplete database model
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: brab_reference
+    predicate: is_database_reported_catalyst_of
+    object: glycosylation
+    notes: MITE and reviewed UniProt supply functional attribution at database level.
+      Native sequence equality proves reference correspondence, not historical assay-stock
+      or construct identity. UniProt qualifies UDP-GlcNAc as a putative sugar donor;
+      this graph does not assert a measured donor preference, kinetics, protein-alone
+      assay or physical complex. No native producer upgrade follows from heterologous-expression
+      database codes.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000202.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Active MITE0000202 version2 names BraB/P9WER1/QOE88884.1/BGC0002260.
+        Its single example consumes trichobrasilenol and labels the product brasilane
+        A. Heterologous expression and in vitro assay are source evidence codes, not
+        independently inspected primary experiments. The cited DOI10.1039/D0CC03950K/PMID32936132
+        returned403 at the first publisher full-text attempt. No alternate paper or
+        SI was inspected.
+    - reference: https://www.uniprot.org/uniprotkb/P9WER1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Reviewed entry7/sequence1,421aa, braB, A.truncatum/tax327061; genomic-reference
+        strain provenance DSM103480/CBS140778 and EMBL MT383109/QOE88884.1 agree.
+        Its function narrative attributes trichobrasilenol glycosylation to BraB,
+        with UDP-GlcNAc a putative donor and later BraC transformations of brasilane
+        A. Broad promiscuity and downstream claims are not adopted as independently
+        inspected experiments.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QOE88884.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Independent complete421-aa N-acetylglucosamine transferase, gene braB,
+        A.truncatum/tax327061, culture_collectionCBS:140778. coded_by is complement(MT383109.1:2625..3890).
+        Native reference identity, not a measured assay construct; PMID32936132 is
+        bibliographic linkage, not direct paper inspection.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MT383109.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Complete1266-nt reverse CDS2625..3890, codon1/defaulttable1, translates
+        to native annotation, independent GenPept and current UniProt, all421aa. Independent
+        coded_by DNA/coordinates and CBS140778/taxon327061 agree. Complete17473-bp
+        cluster retained; source metadata and target CDS inspected, not a whole-cluster
+        functional audit. No historical assay-stock or heterologous construct sequence
+        inferred.
+  - subject: trichobrasilenol
+    predicate: is_database_example_substrate_of
+    object: glycosylation
+    notes: Pinned RDKit2026.03.5 and the repository identity helper match the MITE
+      substrate to full owner key DJBXKQSFHIRXRM-JRYBIPSHSA-N with complete stereochemistry.
+      BraB consumes the owner compound; it is not its terpene synthase. This does
+      not equate the owner's Trichoderma occurrence/ChEBI definition context with
+      the native A.truncatum reference or upgrade the imported SOURCE_ASSERTION producer
+      claim. All source-owned contexts remain unchanged.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000202.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Active MITE0000202 version2 names BraB/P9WER1/QOE88884.1/BGC0002260.
+        Its single example consumes trichobrasilenol and labels the product brasilane
+        A. Heterologous expression and in vitro assay are source evidence codes, not
+        independently inspected primary experiments. The cited DOI10.1039/D0CC03950K/PMID32936132
+        returned403 at the first publisher full-text attempt. No alternate paper or
+        SI was inspected.
+  - subject: glycosylation
+    predicate: has_database_example_product
+    object: brasilane_a
+    notes: MITE's brasilane A model leaves anomeric and alkene stereochemistry unspecified;
+      repository chemistry checks mark it stereo-incomplete. It remains externally
+      ungrounded, with no exact stereoisomer or historical structure assignment substituted.
+      MITE marks isIntermediate false, but UniProt describes later BraC transformations.
+      That source flag does not prove pathway finality; no downstream graph or final-product
+      claim is adopted.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000202.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Active MITE0000202 version2 names BraB/P9WER1/QOE88884.1/BGC0002260.
+        Its single example consumes trichobrasilenol and labels the product brasilane
+        A. Heterologous expression and in vitro assay are source evidence codes, not
+        independently inspected primary experiments. The cited DOI10.1039/D0CC03950K/PMID32936132
+        returned403 at the first publisher full-text attempt. No alternate paper or
+        SI was inspected.
+      snippet: Brasilane A formation
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
@@ -95,3 +207,23 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-07T13:37:43Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added a four-node/three-edge BraB database substrate-glycosylation graph.
+    Pinned MITE0000202v2 consumes this exact trichobrasilenol structure; every functional
+    edge has its stable source URL and one exact three-word snippet labels the product
+    example. Grounded BraB to UniProtKB:P9WER1, reviewed entry7/sequence1, native
+    Annulohypoxylon truncatum CBS140778 reference. Full1266-nt reverse CDS2625..3890
+    on MT383109.1, codon1/defaulttable1, equals annotation, independent GenPept QOE88884.1
+    and current UniProt, all421aa; coded_by DNA/coordinates and culture/taxon327061
+    provenance agree. Functional evidence remains database-level: the primary paper
+    returned403. MITE heterologous-expression/in-vitro codes are not newly inspected
+    assays; UniProt''s putative UDP-GlcNAc donor is not promoted to measured specificity.
+    The database product model is stereo-incomplete and remains ungrounded; isIntermediate
+    false is not adopted as pathway finality. No historical assay-stock, construct,
+    kinetics, physical complex or downstream pathway inferred. Preserved all source
+    fields, SOURCE_ASSERTION producer grade, CLUSTER_DEMONSTRATED BGC grade, Trichoderma
+    occurrence/definition context, stereochemistry, classifications, SEEDED status
+    and old history; no full-record sign-off.'
+  llm_assisted: true

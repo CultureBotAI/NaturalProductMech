@@ -270,6 +270,113 @@ causal_graphs:
       not a CitB-only assay. Cittilin A, its separate CitC graph, all source fields,
       BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED grades and occurrences are unchanged.
       No pathway finality or producer upgrade is inferred.
+- graph_id: cittilin-b-citc-database-substrate-o-methylation
+  scope: BIOSYNTHESIS
+  description: Substrate-owner context for MITE-reported CitC O-methylation of cittilin
+    B to cittilin A. CitC is already represented on the product owner; this is not
+    a new global protein or assay. Exact neutral compound forms match the database
+    example. Native-reference identity does not establish experimental function. Existing
+    CitB/MxPep maturation and CitA grounding are preserved separately; no physical
+    assembly or cross-graph edge is inferred.
+  nodes:
+  - node_id: citc_reference
+    label: CitC native DK1622 reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q1DEH3
+  - node_id: cittilin_b
+    label: cittilin B
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: naturalproductmech:mibig-5cf4c39e1c
+  - node_id: o_methylation
+    label: MITE-reported CitC O-methylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: cittilin_a
+    label: cittilin A
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: naturalproductmech:mibig-9e3bd2912f
+  edges:
+  - subject: citc_reference
+    predicate: is_database_reported_catalyst_of
+    object: o_methylation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: 'MITE0000425 version 1, active, identifies CitC, QLH55580.1/UniParc UPI00004FDDBF
+        and BGC0002043, and assigns O-methylation of cittilin B to yield cittilin
+        A. Its heterologous-expression and in-vitro codes are database assertions:
+        the cited primary paper was inaccessible. No specific assay, kinetic or native
+        cofactor claim is adopted.'
+      snippet: CitC specifically methylates cittilin B
+    - reference: https://www.uniprot.org/uniprotkb/Q1DEH3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Current TrEMBL entry103, sequence1,204aa, MXAN_0682/taxon246197, predicted
+        protein existence, no FUNCTION or catalytic-activity comment. The generic
+        methyltransferase-domain name and automated keywords are not independent cittilin
+        evidence. Entry cross-links CP000113/ABF85961.1, not directly MN731368/QLH55580.1;
+        exact full sequence, strain and UniParc provide the mapping.
+    - reference: https://www.uniprot.org/uniparc/UPI00004FDDBF
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Retained full sequence archive links active Q1DEH3 and QLH55580 to the
+        same204-residue DK1622 reference. Inactive UniProt entries and other-strain
+        identical sequences are not selected as tested examples. UniParc is not a
+        UniProtKB accession.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLH55580.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Complete independent GenPept methyltransferase record and coded_by inspected:204aa,
+        M.xanthus DK1622/taxon246197; no named CitC gene qualifier is required to
+        replace the exact protein mapping.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Complete615-nt plus-strand CDS12819..13433, codon1/table11, translates
+        exactly to annotation, independent QLH55580.1, UniParc and current Q1DEH3,
+        all204aa. Independent coded_by DNA/coordinates and genomic/source strain DK1622/taxon246197
+        match. No separate ABF85961.1/CP000113 native-CDS check or historical assay-stock/construct
+        identity is claimed.
+    notes: MITE supplies the functional attribution; reference translation establishes
+      identity only. No primary assay, rate, knockout phenotype, native cofactor state,
+      site or physical complex is adopted. Automated ubiquinone/mitochondrial family
+      labels are not cittilin chemistry.
+  - subject: cittilin_b
+    predicate: is_database_reported_substrate_of
+    object: o_methylation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: 'MITE0000425 version 1, active, identifies CitC, QLH55580.1/UniParc UPI00004FDDBF
+        and BGC0002043, and assigns O-methylation of cittilin B to yield cittilin
+        A. Its heterologous-expression and in-vitro codes are database assertions:
+        the cited primary paper was inaccessible. No specific assay, kinetic or native
+        cofactor claim is adopted.'
+    notes: Pinned MITE substrate matches this cittilin B owner's full InChIKey LRYMXYNLAMRRTH-CIWZQKDMSA-N
+      and complete stereo in the verified repository-helper/RDKit2026.03.5 calculation.
+      This is the exact neutral substrate, not the CitA precursor or a different congener.
+      The existing CitB/MxPep maturation graph and its CitA grounding are unchanged.
+  - subject: o_methylation
+    predicate: has_database_reported_product
+    object: cittilin_a
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: 'MITE0000425 version 1, active, identifies CitC, QLH55580.1/UniParc UPI00004FDDBF
+        and BGC0002043, and assigns O-methylation of cittilin B to yield cittilin
+        A. Its heterologous-expression and in-vitro codes are database assertions:
+        the cited primary paper was inaccessible. No specific assay, kinetic or native
+        cofactor claim is adopted.'
+    notes: Pinned MITE product matches the separate cittilin A owner's full InChIKey
+      WKYLONYSKYXJSJ-UJGPGMDKSA-N and complete stereo in the verified repository-helper/RDKit2026.03.5
+      calculation. That owner and its CitC graph remain unchanged. No pathway finality,
+      primary assay or producer upgrade; existing source grades are preserved.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -317,4 +424,25 @@ curation_history:
     Preserved other nodes, edge predicates/direction/evidence, source fields/grades,
     occurrences, SEEDED status and append-only history; no product/finality upgrade
     or full-record sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-07T13:37:43Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a separate four-node/three-edge BIOSYNTHESIS substrate context for
+    MITE-reported CitC O-methylation of exact neutral cittilin B to cittilin A. CitC
+    UniProtKB:Q1DEH3 is already represented on the product owner; this adds an owner
+    context, not a globally new protein or assay. Complete native615-nt table11 CDS,
+    independent QLH55580.1, UniParcUPI00004FDDBF and current TrEMBL agree at all204aa,
+    coded_by and DK1622/taxon246197. Current UniProt has predicted existence/no FUNCTION
+    and an alternate genome crosslink; sequence/strain/UniParc ground identity, not
+    compound-specific function. Both substrate/product full InChI, keys and complete
+    stereo match the pinned MITE0000425v1 example through repository helper/RDKit2026.03.5.
+    Every edge has a stable MITE URL, with one exact five-word snippet and independent
+    identity URLs on the protein edge. Primary paper remains inaccessible; no new
+    paper access, primary assay, native cofactor, rate, site, physical complex, historical
+    construct or pathway-finality claim. Preserved the complete existing CitB/MxPep
+    graph including the newly merged CitA reference/qualifications, all prior history,
+    source fields/grades, occurrences, structure, classification and SEEDED status.
+    The separate cittilin A owner and its CitC graph remain unchanged. No full-record
+    sign-off.
   llm_assisted: true

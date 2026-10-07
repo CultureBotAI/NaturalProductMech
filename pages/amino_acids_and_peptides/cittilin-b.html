@@ -138,6 +138,33 @@ isolation report left it.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Substrate-owner context for MITE-reported CitC O-methylation of cittilin B to cittilin A. CitC is already represented on the product owner; this is not a new global protein or assay. Exact neutral compound forms match the database example. Native-reference identity does not establish experimental function. Existing CitB/MxPep maturation and CitA grounding are preserved separately; no physical assembly or cross-graph edge is inferred.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>CitC native DK1622 reference</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>MITE-reported CitC O-methylation</td>
+  <td>MITE supplies the functional attribution; reference translation establishes identity only. No primary assay, rate, knockout phenotype, native cofactor state, site or physical complex is adopted. Automated ubiquinone/mitochondrial family labels are not cittilin chemistry.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json<br>https://www.uniprot.org/uniprotkb/Q1DEH3<br>https://www.uniprot.org/uniparc/UPI00004FDDBF<br>https://www.ncbi.nlm.nih.gov/protein/QLH55580.1<br>https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1</td>
+</tr>
+<tr>
+  <td>cittilin B</td>
+  <td>is_database_reported_substrate_of</td>
+  <td>MITE-reported CitC O-methylation</td>
+  <td>Pinned MITE substrate matches this cittilin B owner&#39;s full InChIKey LRYMXYNLAMRRTH-CIWZQKDMSA-N and complete stereo in the verified repository-helper/RDKit2026.03.5 calculation. This is the exact neutral substrate, not the CitA precursor or a different congener. The existing CitB/MxPep maturation graph and its CitA grounding are unchanged.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json</td>
+</tr>
+<tr>
+  <td>MITE-reported CitC O-methylation</td>
+  <td>has_database_reported_product</td>
+  <td>cittilin A</td>
+  <td>Pinned MITE product matches the separate cittilin A owner&#39;s full InChIKey WKYLONYSKYXJSJ-UJGPGMDKSA-N and complete stereo in the verified repository-helper/RDKit2026.03.5 calculation. That owner and its CitC graph remain unchanged. No pathway finality, primary assay or producer upgrade; existing source grades are preserved.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000425.json</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
