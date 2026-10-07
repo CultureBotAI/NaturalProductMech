@@ -1,0 +1,146 @@
+record_id: naturalproductmech:mibig-619480541f
+standard_inchi_key: FJAQNRBDVKIIKK-LFLQOBSNSA-N
+graph:
+  graph_id: clorobiocin-cloy-mbth-congener-feeding-and-mechanism-limits
+  scope: BIOSYNTHESIS
+  description: 'Congener feeding localizes a genetic defect without identifying a
+    CloY catalytic reaction or restoring native clorobiocin. Novclobiocin102 remains
+    distinct. Review #670.'
+  nodes:
+  - node_id: cloy
+    label: CloY native sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHC8
+  - node_id: triple
+    label: MW03(cloMW16) triple-mutant feeding experiment
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: feed
+    label: 3-amino-4,7-dihydroxy-8-methylcoumarin feed
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: n102
+    label: Source-assigned novclobiocin102, a C8-methyl congener
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: cloro
+    label: Residual source-assigned clorobiocin
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: ring
+    label: Efficient aminocoumarin-moiety formation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: No isolated-enzyme reaction, physical assembly or universal requirement
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: triple
+    predicate: was_supplemented_with
+    object: feed
+    notes: The supplied aminocoumarin has C8 methyl, whereas clorobiocin has chlorine
+      at that position. This is a heterologous culture feeding experiment, not a purified
+      CloY substrate assay or unchanged native precursor.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Wolpert 2007 primary dissertation, PDF pp.35,72-73; printed pages are
+        ten lower. Retained primary thesis inspected; not an independently obtained
+        full text of DOI:10.1099/mic.0.2006/002998-0.
+  - subject: triple
+    predicate: produced_after_feeding
+    object: n102
+    notes: HPLC detected source-assigned novclobiocin102 at5.2 ug/mL; the source reports
+      LC-MS confirmation and AppendixVII shows the corresponding LC-MS/MS panel. The
+      congener is not equated with this owner or assigned an independently verified
+      exact chemical identifier.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Wolpert 2007 primary dissertation, PDF pp.73,115; printed pages are ten
+        lower. Retained primary thesis inspected; not an independently obtained full
+        text of DOI:10.1099/mic.0.2006/002998-0.
+      snippet: das C-8 methylierte Clorobiocinderivat Novclobiocin 102
+  - subject: triple
+    predicate: retained_low_production_of
+    object: cloro
+    notes: The source reports average0.3 ug/mL clorobiocin with a separate small Figure11
+      peak. Feeding rescue of congener production is not restoration of native clorobiocin.
+      One prose occurrence says cloMW6; methods, heading and figure identify cloMW16.
+      This label discrepancy is not a distinct verified strain.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Wolpert 2007 primary dissertation, PDF pp.72-73; printed pages are ten
+        lower. Retained primary thesis inspected; not an independently obtained full
+        text of DOI:10.1099/mic.0.2006/002998-0.
+  - subject: n102
+    predicate: supports_bypass_of_defect_in
+    object: ring
+    notes: Chemical complementation supports impaired aminocoumarin supply while other
+      assembly activities remain possible in this mutant context. It does not isolate
+      the molecular action of CloY or prove every downstream rate is unchanged.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Wolpert 2007 primary dissertation, PDF pp.73,94-95; printed pages are
+        ten lower. Retained primary thesis inspected; not an independently obtained
+        full text of DOI:10.1099/mic.0.2006/002998-0.
+  - subject: cloy
+    predicate: is_genetically_implicated_in
+    object: ring
+    notes: The source combines deletion/rescue and feeding evidence to implicate MbtH-like
+      function in efficient aminocoumarin formation. CloY is a PROTEIN reference here,
+      not an assigned catalytic enzyme step. Host compensation prevents an inference
+      that CloY alone is always essential.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHC8
+      evidence_type: DATABASE_ASSERTION
+      notes: CloY unreviewed native reference. 71 aa; CDS12920..13135(+),216 nt including
+        stop. DS12.976 strain taxon1352936 versus UniProt subspecies taxon149682;
+        entry34/sequence1, annotation2025-02-05.
+      retrieved_on: '2026-10-07'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAN65223.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent GenPept sequence agrees with full CDS translation and UniProt.
+      retrieved_on: '2026-10-07'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: CDS-aware table11 translation agrees with deposited translation, GenPept
+        and UniProt. 71 aa; CDS12920..13135(+),216 nt including stop. DS12.976 strain
+        taxon1352936 versus UniProt subspecies taxon149682; entry34/sequence1, annotation2025-02-05.
+      retrieved_on: '2026-10-07'
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Wolpert 2007 primary dissertation, PDF pp.63-73,94-95; printed pages
+        are ten lower. Retained primary thesis inspected; not an independently obtained
+        full text of DOI:10.1099/mic.0.2006/002998-0.
+  - subject: ring
+    predicate: has_evidence_limit
+    object: limits
+    notes: The2007 source leaves catalytic, regulatory and protein-interaction mechanisms
+      unresolved. Failure to observe pyrrole-deficient novclobiocin104 is condition-bounded.
+      No direct CloH/CloY binding, stoichiometry, reaction order, purified kinetics
+      or later-paper mechanism is inferred from these genetics.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Wolpert 2007 primary dissertation, PDF pp.94-95; printed pages are ten
+        lower. Retained primary thesis inspected; not an independently obtained full
+        text of DOI:10.1099/mic.0.2006/002998-0.
+curation_history:
+- timestamp: '2026-10-07T21:43:13Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add two exact-owner BIOSYNTHESIS components for CloY and host/heterologous
+    MbtH-like genetic compensation. Ground native reference proteins CloY Q8GHC8,
+    CdaX Q9Z388, CchK Q9RK17 and CouY Q9F8V3 without equating them to historical constructs.
+    Preserve partial deletion/rescue effects, source size/count conflicts and novclobiocin102
+    feeding distinct from clorobiocin. Every new edge has a stable URL and two short
+    primary-thesis snippets are retained. No catalytic reaction, physical assembly,
+    chemical identity merge or antimicrobial target added. Address review #670; retain
+    all25 prior graphs, all21 component bytes, existing fields/history and SEEDED
+    status.'
+  llm_assisted: true
