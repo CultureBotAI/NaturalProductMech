@@ -366,6 +366,650 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-6dd03aca43
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: vancomycin-2014-tailoring-gene-replacements
+  scope: BIOSYNTHESIS
+  nodes:
+  - node_id: parent
+    label: Study HCCB10007 parent culture
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: standard
+    label: Study vancomycin reference standard
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: genetic_context
+    label: Bounded vancomycin tailoring-gene evidence
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: gtfd_reference
+    label: Current HCCB10007 GtfD native reference example
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:R4SKH3
+  - node_id: gtfd_target
+    label: Study source-named GtfD/AORI_1486 gene target
+    node_type: GENE
+    grounding_status: REVIEW_NEEDED
+  - node_id: gtfd_mutant
+    label: Study culture reported as the GtfD gene-replacement mutant
+    node_type: ORGANISM
+    grounding_status: REVIEW_NEEDED
+  - node_id: gtfd_analysis
+    label: HPLC-MS profile reported for the GtfD mutant
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: gtfd_product
+    label: Source-assigned desvancosamine vancomycin
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: gtfe_reference
+    label: Current HCCB10007 GtfE native reference example
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:R4SMY8
+  - node_id: gtfe_target
+    label: Study source-named GtfE/AORI_1487 gene target
+    node_type: GENE
+    grounding_status: REVIEW_NEEDED
+  - node_id: gtfe_mutant
+    label: Study culture reported as the GtfE gene-replacement mutant
+    node_type: ORGANISM
+    grounding_status: REVIEW_NEEDED
+  - node_id: gtfe_analysis
+    label: HPLC-MS profile reported for the GtfE mutant
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: gtfe_product
+    label: Source-assigned aglucovancomycin
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: vmt_reference
+    label: Current HCCB10007 Vmt native reference example
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:R4T056
+  - node_id: vmt_target
+    label: Study source-named Vmt/AORI_1490 gene target
+    node_type: GENE
+    grounding_status: REVIEW_NEEDED
+  - node_id: vmt_mutant
+    label: Study culture reported as the Vmt gene-replacement mutant
+    node_type: ORGANISM
+    grounding_status: REVIEW_NEEDED
+  - node_id: vmt_analysis
+    label: HPLC-MS profile reported for the Vmt mutant
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: vmt_product
+    label: Source-assigned demethylvancomycin
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: vhal_reference
+    label: Current AORI_1485 predicted halogenase reference, not verified mutant target
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:R4T052
+  - node_id: vhal_target
+    label: Source-named Vhal target with unresolved construct identity
+    node_type: GENE
+    grounding_status: REVIEW_NEEDED
+  - node_id: vhal_mutant
+    label: Study culture reported as the Vhal gene-replacement mutant
+    node_type: ORGANISM
+    grounding_status: REVIEW_NEEDED
+  - node_id: vhal_analysis
+    label: HPLC-MS profile reported for the Vhal mutant
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: vhal_product
+    label: Source-assigned dechlorovancomycin
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: gtfd_reference
+    predicate: is_native_gene_product_example_for
+    object: gtfd_target
+    notes: 'Current AORI_1486 reference: complete CP003410.1 CDS translation equals
+      AGM04074.1 and the 408-residue UniProt sequence. The genome and UniProt retain
+      strain HCCB10007 but name Amycolatopsis keratiniphila, taxon129921; GenPept
+      documents an October2018 taxonomic update from the historical A. orientalis
+      name. This does not silently change source-owned producer fields or prove the
+      sequence of the experimental stock or marker construct. The native CDS translation
+      also equals AEI58872.1; both published39nt homology arms match its start/stop
+      boundaries uniquely in the retained genome. This is an exact sequence-match
+      check, not experimental primer specificity or clone resequencing. Reviewed Q9AFC7
+      has a different source strain and sequence and is not selected.'
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/R4SKH3
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry53/sequence1, 408 residues; source strain HCCB10007,
+        taxon129921. Annotation alone is not experimental catalysis.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGM04074.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native protein and AORI_1486 coded_by coordinates; source strain
+        and taxonomic-update comment inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Complete-CDS/table11 translation, independent GenPept coded_by extraction
+        and current UniProt correspondence verified. Whole-genome exact primer matches
+        audited.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Older cluster CDS compared separately; GtfE start boundary differs. The
+        two complete genomic deposits are not asserted identical.
+      retrieved_on: '2026-10-06'
+    - reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Page5 primer rows and underlined marker tails visually inspected. Native
+        targeting-arm correspondence is qualified separately from the historical construct.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: CURATOR_INFERENCE
+      notes: Table2 names the locus; Figure6 and mutant-construction methods describe
+        the source-named intervention. Reference selection is a curator inference.
+      retrieved_on: '2026-10-06'
+  - subject: gtfd_target
+    predicate: was_reported_target_of_gene_replacement_in
+    object: gtfd_mutant
+    notes: The authors report individual replacement with an apramycin-resistance
+      marker by homologous recombination and PCR confirmation. This is not a scarless
+      deletion, purified-protein assay or demonstrated absence of polar effects; no
+      complementation rescue is asserted.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure6 caption and construction methods page15.
+      retrieved_on: '2026-10-06'
+      snippet: replaced in-frame by selection markers
+    - reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Page5 targeting primers support the named reference locus, not an independently
+        sequenced historical clone.
+      retrieved_on: '2026-10-06'
+  - subject: parent
+    predicate: was_reported_parent_background_for
+    object: gtfd_mutant
+    notes: The paper describes HCCB10007 as an industrial ATCC43491-derived strain
+      produced by physical and chemical mutagenesis, not an unmodified type-strain
+      stock. Its named descendants were genetically manipulated in this study. No
+      source-owned origin category or producer grade is changed.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Background page3 and construction methods page15.
+      retrieved_on: '2026-10-06'
+  - subject: gtfd_mutant
+    predicate: provided_reported_culture_extract_for
+    object: gtfd_analysis
+    notes: The study profiles derivatives from disrupted culture pellets by HPLC-Q-TOF-MS.
+      The supplement describes shared cultivation conditions for parent and mutants.
+      No quantitative yield, assay-stock sequence or absolute absence of residual
+      vancomycin is inferred. This is a culture-level genetic phenotype, not an isolated
+      enzyme reaction.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure6C; HPLC-MS methods page16.
+      retrieved_on: '2026-10-06'
+    - reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Culture methods page3; parent and mutant cultivation context, not proof
+        that the reference genome is the exact culture aliquot.
+      retrieved_on: '2026-10-06'
+  - subject: standard
+    predicate: provided_reported_comparator_for
+    object: gtfd_analysis
+    notes: Figure6A is a vancomycin standard, not a parental-culture trace or an internal
+      quantitative standard. The figure supports the reported comparison without independently
+      establishing the owner's exact stereochemistry, protonation state or salt form
+      in each sample.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure6A and C; Figure1 structural assignments.
+      retrieved_on: '2026-10-06'
+  - subject: gtfd_analysis
+    predicate: yielded_source_assigned_detection_of
+    object: gtfd_product
+    notes: The authors assign desvancosamine vancomycin to the profile in Figure6C.
+      Retained main Figure1 and Figure6 were visually inspected; this preserves the
+      source assignment, not independent structure elucidation, a molar yield, or
+      proof that only one metabolite was present.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results pages12-14; Figures1 and6C.
+      retrieved_on: '2026-10-06'
+  - subject: gtfd_product
+    predicate: provides_bounded_genetic_context_for
+    object: genetic_context
+    notes: The genetic comparison provides bounded context for vancomycin tailoring.
+      No direct substrate-to-product catalytic edge, physical complex, universal reaction
+      order, pure-enzyme specificity or new natural-occurrence claim is inferred.
+      Antimicrobial comparisons remain outside this biosynthesis graph and the existing
+      AntibioticMech link is preserved.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: CURATOR_INFERENCE
+      notes: Results and discussion pages12-14; source-assigned derivatives interpreted
+        at culture level, with construct and analytical limitations retained.
+      retrieved_on: '2026-10-06'
+  - subject: gtfe_reference
+    predicate: is_native_gene_product_example_for
+    object: gtfe_target
+    notes: 'Current AORI_1487 reference: complete CP003410.1 CDS translation equals
+      AGM04075.1 and the 409-residue UniProt sequence. The genome and UniProt retain
+      strain HCCB10007 but name Amycolatopsis keratiniphila, taxon129921; GenPept
+      documents an October2018 taxonomic update from the historical A. orientalis
+      name. This does not silently change source-owned producer fields or prove the
+      sequence of the experimental stock or marker construct. The older AEI58873.1
+      protein has408 residues. The current CDS begins one GTG codon earlier, adding
+      one initiator methionine; the remaining CDS and protein sequence are identical.
+      The published targeting arms correspond to the older start boundary, not a measured
+      native N-terminus. Retired P96565 and different-strain Q9AFC6 are not substituted.'
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/R4SMY8
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry43/sequence1, 409 residues; source strain HCCB10007,
+        taxon129921. Annotation alone is not experimental catalysis.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGM04075.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native protein and AORI_1487 coded_by coordinates; source strain
+        and taxonomic-update comment inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Complete-CDS/table11 translation, independent GenPept coded_by extraction
+        and current UniProt correspondence verified. Whole-genome exact primer matches
+        audited.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Older cluster CDS compared separately; GtfE start boundary differs. The
+        two complete genomic deposits are not asserted identical.
+      retrieved_on: '2026-10-06'
+    - reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Page5 primer rows and underlined marker tails visually inspected. Native
+        targeting-arm correspondence is qualified separately from the historical construct.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: CURATOR_INFERENCE
+      notes: Table2 names the locus; Figure6 and mutant-construction methods describe
+        the source-named intervention. Reference selection is a curator inference.
+      retrieved_on: '2026-10-06'
+  - subject: gtfe_target
+    predicate: was_reported_target_of_gene_replacement_in
+    object: gtfe_mutant
+    notes: The authors report individual replacement with an apramycin-resistance
+      marker by homologous recombination and PCR confirmation. This is not a scarless
+      deletion, purified-protein assay or demonstrated absence of polar effects; no
+      complementation rescue is asserted.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure6 caption and construction methods page15.
+      retrieved_on: '2026-10-06'
+    - reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Page5 targeting primers support the named reference locus, not an independently
+        sequenced historical clone.
+      retrieved_on: '2026-10-06'
+  - subject: parent
+    predicate: was_reported_parent_background_for
+    object: gtfe_mutant
+    notes: The paper describes HCCB10007 as an industrial ATCC43491-derived strain
+      produced by physical and chemical mutagenesis, not an unmodified type-strain
+      stock. Its named descendants were genetically manipulated in this study. No
+      source-owned origin category or producer grade is changed.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Background page3 and construction methods page15.
+      retrieved_on: '2026-10-06'
+  - subject: gtfe_mutant
+    predicate: provided_reported_culture_extract_for
+    object: gtfe_analysis
+    notes: The study profiles derivatives from disrupted culture pellets by HPLC-Q-TOF-MS.
+      The supplement describes shared cultivation conditions for parent and mutants.
+      No quantitative yield, assay-stock sequence or absolute absence of residual
+      vancomycin is inferred. This is a culture-level genetic phenotype, not an isolated
+      enzyme reaction.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure6D; HPLC-MS methods page16.
+      retrieved_on: '2026-10-06'
+    - reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Culture methods page3; parent and mutant cultivation context, not proof
+        that the reference genome is the exact culture aliquot.
+      retrieved_on: '2026-10-06'
+  - subject: standard
+    predicate: provided_reported_comparator_for
+    object: gtfe_analysis
+    notes: Figure6A is a vancomycin standard, not a parental-culture trace or an internal
+      quantitative standard. The figure supports the reported comparison without independently
+      establishing the owner's exact stereochemistry, protonation state or salt form
+      in each sample.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure6A and D; Figure1 structural assignments.
+      retrieved_on: '2026-10-06'
+  - subject: gtfe_analysis
+    predicate: yielded_source_assigned_detection_of
+    object: gtfe_product
+    notes: The authors assign aglucovancomycin to the profile in Figure6D. Retained
+      main Figure1 and Figure6 were visually inspected; this preserves the source
+      assignment, not independent structure elucidation, a molar yield, or proof that
+      only one metabolite was present. Both sugar residues are absent in the source-assigned
+      product; this does not mean that GtfE directly transfers the second sugar.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results pages12-14; Figures1 and6D.
+      retrieved_on: '2026-10-06'
+      snippet: both the glycosyl residues were absent
+  - subject: gtfe_product
+    predicate: provides_bounded_genetic_context_for
+    object: genetic_context
+    notes: The genetic comparison provides bounded context for vancomycin tailoring.
+      No direct substrate-to-product catalytic edge, physical complex, universal reaction
+      order, pure-enzyme specificity or new natural-occurrence claim is inferred.
+      Antimicrobial comparisons remain outside this biosynthesis graph and the existing
+      AntibioticMech link is preserved.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: CURATOR_INFERENCE
+      notes: Results and discussion pages12-14; source-assigned derivatives interpreted
+        at culture level, with construct and analytical limitations retained.
+      retrieved_on: '2026-10-06'
+  - subject: vmt_reference
+    predicate: is_native_gene_product_example_for
+    object: vmt_target
+    notes: 'Current AORI_1490 reference: complete CP003410.1 CDS translation equals
+      AGM04078.1 and the 280-residue UniProt sequence. The genome and UniProt retain
+      strain HCCB10007 but name Amycolatopsis keratiniphila, taxon129921; GenPept
+      documents an October2018 taxonomic update from the historical A. orientalis
+      name. This does not silently change source-owned producer fields or prove the
+      sequence of the experimental stock or marker construct. The native CDS translation
+      also equals AEI58876.1; both published39nt homology arms match its start/stop
+      boundaries uniquely in the retained genome. This is an exact sequence-match
+      check, not experimental primer specificity or clone resequencing. This native
+      protein is not the tagged in-vitro preparation; that separate assay is not added
+      here.'
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/R4T056
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry39/sequence1, 280 residues; source strain HCCB10007,
+        taxon129921. Annotation alone is not experimental catalysis.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGM04078.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native protein and AORI_1490 coded_by coordinates; source strain
+        and taxonomic-update comment inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Complete-CDS/table11 translation, independent GenPept coded_by extraction
+        and current UniProt correspondence verified. Whole-genome exact primer matches
+        audited.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Older cluster CDS compared separately; GtfE start boundary differs. The
+        two complete genomic deposits are not asserted identical.
+      retrieved_on: '2026-10-06'
+    - reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Page5 primer rows and underlined marker tails visually inspected. Native
+        targeting-arm correspondence is qualified separately from the historical construct.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: CURATOR_INFERENCE
+      notes: Table2 names the locus; Figure6 and mutant-construction methods describe
+        the source-named intervention. Reference selection is a curator inference.
+      retrieved_on: '2026-10-06'
+  - subject: vmt_target
+    predicate: was_reported_target_of_gene_replacement_in
+    object: vmt_mutant
+    notes: The authors report individual replacement with an apramycin-resistance
+      marker by homologous recombination and PCR confirmation. This is not a scarless
+      deletion, purified-protein assay or demonstrated absence of polar effects; no
+      complementation rescue is asserted.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure6 caption and construction methods page15.
+      retrieved_on: '2026-10-06'
+    - reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Page5 targeting primers support the named reference locus, not an independently
+        sequenced historical clone.
+      retrieved_on: '2026-10-06'
+  - subject: parent
+    predicate: was_reported_parent_background_for
+    object: vmt_mutant
+    notes: The paper describes HCCB10007 as an industrial ATCC43491-derived strain
+      produced by physical and chemical mutagenesis, not an unmodified type-strain
+      stock. Its named descendants were genetically manipulated in this study. No
+      source-owned origin category or producer grade is changed.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Background page3 and construction methods page15.
+      retrieved_on: '2026-10-06'
+  - subject: vmt_mutant
+    predicate: provided_reported_culture_extract_for
+    object: vmt_analysis
+    notes: The study profiles derivatives from disrupted culture pellets by HPLC-Q-TOF-MS.
+      The supplement describes shared cultivation conditions for parent and mutants.
+      No quantitative yield, assay-stock sequence or absolute absence of residual
+      vancomycin is inferred. This is a culture-level genetic phenotype, not an isolated
+      enzyme reaction.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure6F; HPLC-MS methods page16.
+      retrieved_on: '2026-10-06'
+    - reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Culture methods page3; parent and mutant cultivation context, not proof
+        that the reference genome is the exact culture aliquot.
+      retrieved_on: '2026-10-06'
+  - subject: standard
+    predicate: provided_reported_comparator_for
+    object: vmt_analysis
+    notes: Figure6A is a vancomycin standard, not a parental-culture trace or an internal
+      quantitative standard. The figure supports the reported comparison without independently
+      establishing the owner's exact stereochemistry, protonation state or salt form
+      in each sample.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure6A and F; Figure1 structural assignments.
+      retrieved_on: '2026-10-06'
+  - subject: vmt_analysis
+    predicate: yielded_source_assigned_detection_of
+    object: vmt_product
+    notes: The authors assign demethylvancomycin to the profile in Figure6F. Retained
+      main Figure1 and Figure6 were visually inspected; this preserves the source
+      assignment, not independent structure elucidation, a molar yield, or proof that
+      only one metabolite was present.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results pages12-14; Figures1 and6F.
+      retrieved_on: '2026-10-06'
+  - subject: vmt_product
+    predicate: provides_bounded_genetic_context_for
+    object: genetic_context
+    notes: The genetic comparison provides bounded context for vancomycin tailoring.
+      No direct substrate-to-product catalytic edge, physical complex, universal reaction
+      order, pure-enzyme specificity or new natural-occurrence claim is inferred.
+      Antimicrobial comparisons remain outside this biosynthesis graph and the existing
+      AntibioticMech link is preserved.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: CURATOR_INFERENCE
+      notes: Results and discussion pages12-14; source-assigned derivatives interpreted
+        at culture level, with construct and analytical limitations retained.
+      retrieved_on: '2026-10-06'
+  - subject: vhal_reference
+    predicate: is_reference_for_named_locus_not_verified_mutant_target
+    object: vhal_target
+    notes: 'Current AORI_1485 reference: complete CP003410.1 CDS translation equals
+      AGM04073.1 and the 491-residue UniProt sequence. The genome and UniProt retain
+      strain HCCB10007 but name Amycolatopsis keratiniphila, taxon129921; GenPept
+      documents an October2018 taxonomic update from the historical A. orientalis
+      name. This does not silently change source-owned producer fields or prove the
+      sequence of the experimental stock or marker construct. The native CDS translation
+      also equals AEI58871.1. The source names Vhal/AORI_1485, but the published VhalF/vhalR
+      39-base homology arms match AORI_1492/AGM04080.1 hydrolase boundaries instead,
+      also matching vcm14/AEI58878.1 in HQ679900.1. The cause is unresolved. Do not
+      assign the historical mutant to the native halogenase sequence, rename it as
+      a hydrolase mutant, or diagnose a source error.'
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/R4T052
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed entry46/sequence1, 491 residues; source strain HCCB10007,
+        taxon129921. Annotation alone is not experimental catalysis.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGM04073.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Versioned native protein and AORI_1485 coded_by coordinates; source strain
+        and taxonomic-update comment inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP003410.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Complete-CDS/table11 translation, independent GenPept coded_by extraction
+        and current UniProt correspondence verified. Whole-genome exact primer matches
+        audited.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/HQ679900.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Older cluster CDS compared separately; GtfE start boundary differs. The
+        two complete genomic deposits are not asserted identical.
+      retrieved_on: '2026-10-06'
+    - reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Page5 primer rows and underlined marker tails visually inspected. The
+        source names Vhal/AORI_1485, but the published VhalF/vhalR 39-base homology
+        arms match AORI_1492/AGM04080.1 hydrolase boundaries instead, also matching
+        vcm14/AEI58878.1 in HQ679900.1. The cause is unresolved. Do not assign the
+        historical mutant to the native halogenase sequence, rename it as a hydrolase
+        mutant, or diagnose a source error.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: CURATOR_INFERENCE
+      notes: Table2 names the locus; Figure6 and mutant-construction methods describe
+        the source-named intervention. Reference selection is a curator inference.
+      retrieved_on: '2026-10-06'
+  - subject: vhal_target
+    predicate: was_reported_target_of_gene_replacement_in
+    object: vhal_mutant
+    notes: The authors report individual replacement with an apramycin-resistance
+      marker by homologous recombination and PCR confirmation. This is not a scarless
+      deletion, purified-protein assay or demonstrated absence of polar effects; no
+      complementation rescue is asserted. The source names Vhal/AORI_1485, but the
+      published VhalF/vhalR 39-base homology arms match AORI_1492/AGM04080.1 hydrolase
+      boundaries instead, also matching vcm14/AEI58878.1 in HQ679900.1. The cause
+      is unresolved. Do not assign the historical mutant to the native halogenase
+      sequence, rename it as a hydrolase mutant, or diagnose a source error.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure6 caption and construction methods page15.
+      retrieved_on: '2026-10-06'
+    - reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Page5 targeting primers; the Vhal-labeled pair conflicts with the named
+        locus.
+      retrieved_on: '2026-10-06'
+  - subject: parent
+    predicate: was_reported_parent_background_for
+    object: vhal_mutant
+    notes: The paper describes HCCB10007 as an industrial ATCC43491-derived strain
+      produced by physical and chemical mutagenesis, not an unmodified type-strain
+      stock. Its named descendants were genetically manipulated in this study. Vhal
+      construct identity remains unresolved.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Background page3 and construction methods page15.
+      retrieved_on: '2026-10-06'
+  - subject: vhal_mutant
+    predicate: provided_reported_culture_extract_for
+    object: vhal_analysis
+    notes: The study profiles derivatives from disrupted culture pellets by HPLC-Q-TOF-MS.
+      The supplement describes shared cultivation conditions for parent and mutants.
+      No quantitative yield, assay-stock sequence or absolute absence of residual
+      vancomycin is inferred. This remains the source-named Vhal culture despite the
+      unresolved primer conflict.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure6B; HPLC-MS methods page16.
+      retrieved_on: '2026-10-06'
+    - reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2F1471-2164-15-363/MediaObjects/12864_2013_6095_MOESM1_ESM.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Culture methods page3; parent and mutant cultivation context, not proof
+        that the reference genome is the exact culture aliquot.
+      retrieved_on: '2026-10-06'
+  - subject: standard
+    predicate: provided_reported_comparator_for
+    object: vhal_analysis
+    notes: Figure6A is a vancomycin standard, not a parental-culture trace or an internal
+      quantitative standard. The figure supports the reported comparison without independently
+      establishing the owner's exact stereochemistry, protonation state or salt form
+      in each sample.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure6A and B; Figure1 structural assignments.
+      retrieved_on: '2026-10-06'
+  - subject: vhal_analysis
+    predicate: yielded_source_assigned_detection_of
+    object: vhal_product
+    notes: The authors assign dechlorovancomycin to the profile in Figure6B. Retained
+      main Figure1 and Figure6 were visually inspected; this preserves the source
+      assignment, not independent structure elucidation, a molar yield, or proof that
+      only one metabolite was present. Reported loss of chlorination does not resolve
+      which locus was actually disrupted.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results pages12-14; Figures1 and6B.
+      retrieved_on: '2026-10-06'
+  - subject: vhal_product
+    predicate: provides_bounded_genetic_context_for
+    object: genetic_context
+    notes: The genetic comparison provides bounded context for vancomycin tailoring.
+      No direct substrate-to-product catalytic edge, physical complex, universal reaction
+      order, pure-enzyme specificity or new natural-occurrence claim is inferred.
+      Antimicrobial comparisons remain outside this biosynthesis graph and the existing
+      AntibioticMech link is preserved. Halogenase-specific causality is unresolved
+      because the published targeting arms conflict with the source-named gene.
+    evidence:
+    - reference: DOI:10.1186/1471-2164-15-363
+      evidence_type: CURATOR_INFERENCE
+      notes: Results and discussion pages12-14; source-assigned derivatives interpreted
+        at culture level, with construct and analytical limitations retained.
+      retrieved_on: '2026-10-06'
+  description: Reported native-background gene-replacement comparisons for GtfD, GtfE,
+    Vmt and Vhal, distinct from purified-enzyme chemistry. Four current sequence references
+    are verified; the Vhal reference identifies the source-named locus, not the historical
+    mutant target. Published Vhal homology arms instead match hydrolase boundaries.
+    GtfE reference start boundaries and historical/current taxonomy are explicit.
+    Each culture has its own analytical branch and source-assigned derivative. No
+    tagged-Vmt in-vitro assay, antimicrobial mechanism, producer upgrade, origin change
+    or full-record sign-off is asserted.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -375,3 +1019,23 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-07T00:15:55Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added a source-qualified 2014 vancomycin tailoring-gene replacement graph,
+    23 nodes and 28 individually DOI-cited edges. Current native HCCB10007 references
+    GtfD R4SKH3, GtfE R4SMY8 and Vmt R4T056 are distinct from historical experimental
+    targets and cultures. R4T052 identifies the named AORI_1485 locus, not a verified
+    Vhal mutant target: published Vhal-labeled homology arms match AORI_1492 hydrolase
+    boundaries; the cause remains unresolved without relabeling the mutant or diagnosing
+    a source error. Complete CDS/GenPept/UniProt correspondence and whole-genome exact
+    arm matches were checked. GtfE''s extra upstream GTG/initiator methionine is an
+    annotation-boundary difference, not a measured native N-terminus. Current A. keratiniphila
+    taxonomy and the documented 2018 name update remain separate from historical A.
+    orientalis source fields. Each mutant has its own HPLC-MS comparison and source-assigned
+    derivative. Two PDF-verified snippets total 11 words. No purified-enzyme catalysis,
+    kinetics, yield, exact derivative stereochemistry or antimicrobial mechanism is
+    added. All source fields, grades, classification, origin, SEEDED status, exact
+    owner structure, sibling link and prior history are preserved. Not full-record
+    sign-off.'
+  llm_assisted: true
