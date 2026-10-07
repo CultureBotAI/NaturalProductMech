@@ -106,7 +106,7 @@ def test_source_concepts_are_required_because_attribution_is_per_record(schema):
 # could not see it (#12). Changing a vendored file means changing it in claw and
 # advancing the pin; updating a hash without that is the mistake this catches.
 VENDORED_SHA256 = {
-    "mech_shared.yaml": "1a5e21eb2ee9f3584ff6af3a6906b1d442e18c41de405b1bf907c20f44eafa2a",
+    "mech_shared.yaml": "c2e7054fd32635e380c698282bd886a9105861009b9f0474f02bb1b80865e895",
     "history.yaml": "b01b06f1b9a37db205c26c31ec0fd910690848507c7e1bfb73b424ac0829c52d",
 }
 
