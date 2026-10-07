@@ -3398,6 +3398,214 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">17 nodes, 22 edges</span></h2>
+<p class="sub">CloY deletion and host/heterologous MbtH-like rescue in S.coelicolor, with exact native references separated from experimental constructs. Partial phenotypes and source disagreements are retained. Evidence review #670; SEEDED status unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>S.coelicolor M512 with intact cloBG01</td>
+  <td>was_assayed_in</td>
+  <td>Culture-extract HPLC comparison with clorobiocin standard</td>
+  <td>Heterologous M512 is described as an M145 derivative, not the natural clorobiocin producer. Culture extracts were analyzed by RP-HPLC at340nm with an authentic clorobiocin standard. No quantitative uncertainty or detection limit is invented.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+<tr>
+  <td>CloY native sequence reference</td>
+  <td>is_native_reference_for_gene_targeted_in</td>
+  <td>M512 with cloY-deleted cloMW16</td>
+  <td>cloBG01 carries the clorobiocin cluster; cloMW16 is the reported in-frame scar derivative after removing the initial resistance cassette in cloMW15. This is neither a native DS12.976 knockout nor a verified scarless allele. The full historical construct sequence was not independently inspected.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q8GHC8<br>https://www.ncbi.nlm.nih.gov/protein/AAN65223.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+<tr>
+  <td>M512 with cloY-deleted cloMW16</td>
+  <td>retained_reduced_production_of</td>
+  <td>Source-assigned clorobiocin</td>
+  <td>HPLC gives average12 mg/L versus54 mg/L for the intact-cluster control, about22% retained under these conditions. Text later uses equivalent ug/mL. Four individual integration mutants are described; no statistical equivalence, complete abolition or universal dispensability follows. Congener peaks remain distinct.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+<tr>
+  <td>M512 with cloY-deleted cloMW16</td>
+  <td>was_compared_with</td>
+  <td>MW03 with cloY-deleted cloMW16 and host cdaX/cchK replacements</td>
+  <td>Host CDA-ORFX/SCO3218 and cchK/SCO0489 are separately cassette-replaced in MW03 before introduction of cloMW16. Their host roles are not native clorobiocin-cluster membership. PCR supports targeted replacements, not whole-genome identity or absence of every possible compensating protein.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+<tr>
+  <td>CdaX / CDA-ORFX / SCO3218 native sequence reference</td>
+  <td>is_native_reference_for_host_gene_targeted_in</td>
+  <td>MW03 with cloY-deleted cloMW16 and host cdaX/cchK replacements</td>
+  <td>The study names CDA-ORFX/SCO3218 in M512. The exact sequence reference is A3(2)/M145, not an independently sequenced MW03 derivative.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9Z388<br>https://www.ncbi.nlm.nih.gov/protein/CAB38589.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AL939115.1<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+<tr>
+  <td>CchK / SCO0489 native sequence reference</td>
+  <td>is_native_reference_for_host_gene_targeted_in</td>
+  <td>MW03 with cloY-deleted cloMW16 and host cdaX/cchK replacements</td>
+  <td>The study names cchK/SCO0489. Exact native reference grounding does not make the reference protein the cassette-disrupted allele or verify an entire M512 genome.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9RK17<br>https://www.ncbi.nlm.nih.gov/protein/CAB53319.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AL939105.1<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+<tr>
+  <td>MW03 with cloY-deleted cloMW16 and host cdaX/cchK replacements</td>
+  <td>retained_low_production_of</td>
+  <td>Source-assigned clorobiocin</td>
+  <td>Reported HPLC production averages0.3 ug/mL versus roughly50 ug/mL for the intact-cluster control in this comparison, described as about99% reduction. Keep this comparison separate from54/12 and the empty-vector control; do not replace residual production with zero or invent a common replicate count.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+<tr>
+  <td>Triple mutant with empty pUWL201</td>
+  <td>had_low_production_of</td>
+  <td>Source-assigned clorobiocin</td>
+  <td>The empty-vector control for complementation produced less than0.5 ug/mL, not an exact0.5 or a zero. HPLC readout, not purified-protein catalysis.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+<tr>
+  <td>MW03 with cloY-deleted cloMW16 and host cdaX/cchK replacements</td>
+  <td>has_source_annotation_limits</td>
+  <td>Unresolved source construct-size and mutant-count labels</td>
+  <td>The source states218 bp for cloY while the deposited CDS is216 nt including stop. It describes an18-bp scar but gives421/258-bp intact/deletion PCR labels; these do not fully specify a verified deletion allele. CDA cassette PCR labels differ between Figure7 (2189bp) and Figure8 (2160bp). Figure5 shows four triple-mutant lanes, whereas the later text/Figure8 describes three. These are retained source discrepancies, not silently corrected construct data.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1<br>https://www.uniprot.org/uniprotkb/Q8GHC8<br>https://www.ncbi.nlm.nih.gov/protein/AAN65223.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>CloY native sequence reference</td>
+  <td>is_native_reference_for_gene_expressed_in</td>
+  <td>Triple mutant complemented with CloY via pMW01</td>
+  <td>The source reports the corresponding gene in pMW01 under ermE* control on pUWL201 and insert sequencing. Native reference identity is not independent sequencing of the complete experimental plasmid or its expressed product. CouY is from the coumermycin cluster; CdaX/CchK are host-cluster homologs, not additional native clorobiocin BGC proteins.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q8GHC8<br>https://www.ncbi.nlm.nih.gov/protein/AAN65223.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+<tr>
+  <td>Triple mutant complemented with CloY via pMW01</td>
+  <td>partially_restored_production_of</td>
+  <td>Source-assigned clorobiocin</td>
+  <td>Reported culture-extract HPLC clorobiocin titer 8 ug/mL. Three independent transformants per construct are described. No error bars, statistical significance or complete baseline recovery are inferred; Figure10 separates clorobiocin from accompanying congeners.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+<tr>
+  <td>Triple mutant complemented with CloY via pMW01</td>
+  <td>supports_context_bounded</td>
+  <td>Context-dependent MbtH-like functional compensation</td>
+  <td>Restoration above the empty-vector condition supports genetic functional compensation under the tested expression context. It is not measured protein binding, a four-subunit complex or an exact catalytic reaction.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+<tr>
+  <td>CchK / SCO0489 native sequence reference</td>
+  <td>is_native_reference_for_gene_expressed_in</td>
+  <td>Triple mutant complemented with CchK / SCO0489 via pMW02</td>
+  <td>The source reports the corresponding gene in pMW02 under ermE* control on pUWL201 and insert sequencing. Native reference identity is not independent sequencing of the complete experimental plasmid or its expressed product. CouY is from the coumermycin cluster; CdaX/CchK are host-cluster homologs, not additional native clorobiocin BGC proteins.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9RK17<br>https://www.ncbi.nlm.nih.gov/protein/CAB53319.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AL939105.1<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+<tr>
+  <td>Triple mutant complemented with CchK / SCO0489 via pMW02</td>
+  <td>partially_restored_production_of</td>
+  <td>Source-assigned clorobiocin</td>
+  <td>Reported culture-extract HPLC clorobiocin titer 4.1 ug/mL. Three independent transformants per construct are described. No error bars, statistical significance or complete baseline recovery are inferred; Figure10 separates clorobiocin from accompanying congeners.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+<tr>
+  <td>Triple mutant complemented with CchK / SCO0489 via pMW02</td>
+  <td>supports_context_bounded</td>
+  <td>Context-dependent MbtH-like functional compensation</td>
+  <td>Restoration above the empty-vector condition supports genetic functional compensation under the tested expression context. It is not measured protein binding, a four-subunit complex or an exact catalytic reaction.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+<tr>
+  <td>CdaX / CDA-ORFX / SCO3218 native sequence reference</td>
+  <td>is_native_reference_for_gene_expressed_in</td>
+  <td>Triple mutant complemented with CdaX / CDA-ORFX / SCO3218 via pMW03</td>
+  <td>The source reports the corresponding gene in pMW03 under ermE* control on pUWL201 and insert sequencing. Native reference identity is not independent sequencing of the complete experimental plasmid or its expressed product. CouY is from the coumermycin cluster; CdaX/CchK are host-cluster homologs, not additional native clorobiocin BGC proteins.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9Z388<br>https://www.ncbi.nlm.nih.gov/protein/CAB38589.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AL939115.1<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+<tr>
+  <td>Triple mutant complemented with CdaX / CDA-ORFX / SCO3218 via pMW03</td>
+  <td>partially_restored_production_of</td>
+  <td>Source-assigned clorobiocin</td>
+  <td>Reported culture-extract HPLC clorobiocin titer 5.1 ug/mL. Three independent transformants per construct are described. No error bars, statistical significance or complete baseline recovery are inferred; Figure10 separates clorobiocin from accompanying congeners.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+<tr>
+  <td>Triple mutant complemented with CdaX / CDA-ORFX / SCO3218 via pMW03</td>
+  <td>supports_context_bounded</td>
+  <td>Context-dependent MbtH-like functional compensation</td>
+  <td>Restoration above the empty-vector condition supports genetic functional compensation under the tested expression context. It is not measured protein binding, a four-subunit complex or an exact catalytic reaction.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+<tr>
+  <td>CouY native sequence reference</td>
+  <td>is_native_reference_for_gene_expressed_in</td>
+  <td>Triple mutant complemented with CouY via pMW04</td>
+  <td>The source reports the corresponding gene in pMW04 under ermE* control on pUWL201 and insert sequencing. Native reference identity is not independent sequencing of the complete experimental plasmid or its expressed product. CouY is from the coumermycin cluster; CdaX/CchK are host-cluster homologs, not additional native clorobiocin BGC proteins.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q9F8V3<br>https://www.ncbi.nlm.nih.gov/protein/AAG29779.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+<tr>
+  <td>Triple mutant complemented with CouY via pMW04</td>
+  <td>partially_restored_production_of</td>
+  <td>Source-assigned clorobiocin</td>
+  <td>Reported culture-extract HPLC clorobiocin titer 5.3 ug/mL. Three independent transformants per construct are described. No error bars, statistical significance or complete baseline recovery are inferred; Figure10 separates clorobiocin from accompanying congeners.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+<tr>
+  <td>Triple mutant complemented with CouY via pMW04</td>
+  <td>supports_context_bounded</td>
+  <td>Context-dependent MbtH-like functional compensation</td>
+  <td>Restoration above the empty-vector condition supports genetic functional compensation under the tested expression context. It is not measured protein binding, a four-subunit complex or an exact catalytic reaction.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+<tr>
+  <td>Context-dependent MbtH-like functional compensation</td>
+  <td>has_rescue_limit</td>
+  <td>Partial rescue rather than restoration of the intact-cluster baseline</td>
+  <td>The thesis explicitly states that complementation did not fully restore the original production level. Promoter/copy-number explanations are hypotheses, not measured protein abundance or mechanistic proof.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
+<p class="sub">Congener feeding localizes a genetic defect without identifying a CloY catalytic reaction or restoring native clorobiocin. Novclobiocin102 remains distinct. Review #670.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>MW03(cloMW16) triple-mutant feeding experiment</td>
+  <td>was_supplemented_with</td>
+  <td>3-amino-4,7-dihydroxy-8-methylcoumarin feed</td>
+  <td>The supplied aminocoumarin has C8 methyl, whereas clorobiocin has chlorine at that position. This is a heterologous culture feeding experiment, not a purified CloY substrate assay or unchanged native precursor.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+<tr>
+  <td>MW03(cloMW16) triple-mutant feeding experiment</td>
+  <td>produced_after_feeding</td>
+  <td>Source-assigned novclobiocin102, a C8-methyl congener</td>
+  <td>HPLC detected source-assigned novclobiocin102 at5.2 ug/mL; the source reports LC-MS confirmation and AppendixVII shows the corresponding LC-MS/MS panel. The congener is not equated with this owner or assigned an independently verified exact chemical identifier.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+<tr>
+  <td>MW03(cloMW16) triple-mutant feeding experiment</td>
+  <td>retained_low_production_of</td>
+  <td>Residual source-assigned clorobiocin</td>
+  <td>The source reports average0.3 ug/mL clorobiocin with a separate small Figure11 peak. Feeding rescue of congener production is not restoration of native clorobiocin. One prose occurrence says cloMW6; methods, heading and figure identify cloMW16. This label discrepancy is not a distinct verified strain.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+<tr>
+  <td>Source-assigned novclobiocin102, a C8-methyl congener</td>
+  <td>supports_bypass_of_defect_in</td>
+  <td>Efficient aminocoumarin-moiety formation</td>
+  <td>Chemical complementation supports impaired aminocoumarin supply while other assembly activities remain possible in this mutant context. It does not isolate the molecular action of CloY or prove every downstream rate is unchanged.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+<tr>
+  <td>CloY native sequence reference</td>
+  <td>is_genetically_implicated_in</td>
+  <td>Efficient aminocoumarin-moiety formation</td>
+  <td>The source combines deletion/rescue and feeding evidence to implicate MbtH-like function in efficient aminocoumarin formation. CloY is a PROTEIN reference here, not an assigned catalytic enzyme step. Host compensation prevents an inference that CloY alone is always essential.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q8GHC8<br>https://www.ncbi.nlm.nih.gov/protein/AAN65223.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1<br>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+<tr>
+  <td>Efficient aminocoumarin-moiety formation</td>
+  <td>has_evidence_limit</td>
+  <td>No isolated-enzyme reaction, physical assembly or universal requirement</td>
+  <td>The2007 source leaves catalytic, regulatory and protein-interaction mechanisms unresolved. Failure to observe pyrrole-deficient novclobiocin104 is condition-bounded. No direct CloH/CloY binding, stoichiometry, reaction order, purified kinetics or later-paper mechanism is inferred from these genetics.</td>
+  <td class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49097/pdf/Dissertation_Wolpert.pdf?sequence=1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">2</span></h2>
