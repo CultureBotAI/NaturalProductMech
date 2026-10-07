@@ -330,6 +330,9 @@ def carry_curator_owned_fields(payload: dict[str, Any], existing: dict[str, Any]
     answered = {d.get("discussion_id"): d for d in existing.get("discussions") or []
                 if isinstance(d, dict) and d.get("discussion_id")}
     for discussion in payload.get("discussions") or []:
+        # This adjudication is owned by the pinned curation table, not the YAML.
+        if discussion.get("discussion_id") == "source-structure-correction":
+            continue
         previous_discussion = answered.get(discussion.get("discussion_id"))
         if not previous_discussion:
             continue
@@ -440,6 +443,8 @@ def load_mibig_locus_evidence_overrides(
 def apply_mibig_locus_evidence_override(
     row: dict[str, str],
     overrides: dict[str, dict[str, str]],
+    *,
+    source_row: dict[str, str] | None = None,
 ) -> dict[str, str]:
     source_concept_identifier = mint_identifier(
         "MIBIG", row["mibig_accession"] + ":" + row["compound_index"])
@@ -447,11 +452,12 @@ def apply_mibig_locus_evidence_override(
     if not override:
         return row
     if override.get("action") == "WITHDRAW":
+        context = row if source_row is None else source_row
         expected = {field: override["expected_" + field]
                     for field in MIBIG_WITHDRAWAL_CONTEXT}
         expected["mibig_accession"] = override["source_id"]
         for field, value in expected.items():
-            if row.get(field) != value:
+            if context.get(field) != value:
                 raise ValueError(
                     f"{source_concept_identifier} WITHDRAW source context changed: {field}")
         return {
@@ -460,7 +466,7 @@ def apply_mibig_locus_evidence_override(
                 "locus_evidence_methods", "producer_evidence_basis", "cluster_link_evidence_basis")},
             "locus_evidence_qualification": override["qualification_note"],
             "locus_evidence_qualification_reference": override["qualification_reference"],
-            "excluded_locus_evidence_methods": row["locus_evidence_methods"],
+            "excluded_locus_evidence_methods": context["locus_evidence_methods"],
         }
     return {**row, **override}
 
@@ -688,8 +694,9 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     ChEBI. Grounding those is exactly what the next milestone is for, and
     `just worklist` ranks them.
     """
+    raw_mibig_rows = inventories.get("mibig_compounds") or []
     mibig_rows = apply_structure_corrections(
-        inventories.get("mibig_compounds") or [],
+        raw_mibig_rows,
         inventories.get("mibig_structure_corrections") or [],
         inventories.get("chebi_structures") or [],
     )
@@ -703,8 +710,8 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     if not mibig_rows:
         return []
     mibig_rows = [
-        apply_mibig_locus_evidence_override(row, mibig_locus_overrides)
-        for row in mibig_rows
+        apply_mibig_locus_evidence_override(row, mibig_locus_overrides, source_row=raw)
+        for row, raw in zip(mibig_rows, raw_mibig_rows, strict=True)
     ]
 
     classification = {
@@ -1493,7 +1500,7 @@ def write_records(records: list[dict[str, Any]], *, only: str | None = None,
                   limit: int | None = None) -> int:
     selected = [doc for doc in records if not only or doc["identifier"] == only]
     if limit is not None:
-        selected = selected[:limit]
+        selected = selected[:max(0, limit)]
     replaced_keys = {doc["_previous_standard_inchi_key"] for doc in selected
                      if doc.get("_previous_standard_inchi_key")}
     if replaced_keys:

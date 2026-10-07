@@ -198,3 +198,55 @@ def test_aureothin_migration_preserves_original_aurf_and_history():
     for field, (count, digest) in expected.items():
         value = json.dumps(doc[field][:count], sort_keys=True, separators=(',', ':'))
         assert hashlib.sha256(value.encode()).hexdigest() == digest
+
+
+def test_table_owned_adjudication_is_not_overwritten_by_old_discussion():
+    payload = {'chemical_structure': {'standard_inchi_key': NEW}, 'discussions': [{
+        'discussion_id': 'source-structure-correction', 'resolution_note': 'new table decision',
+        'evidence': [{'reference': 'DOI:10.1021/ja102751h'}],
+    }]}
+    expected = copy.deepcopy(payload['discussions'])
+    old = copy.deepcopy(payload)
+    old['discussions'][0]['resolution_note'] = 'superseded decision'
+    old['discussions'][0]['evidence'] = [{'reference': 'old citation'}]
+    seed.carry_curator_owned_fields(payload, old)
+    assert payload['discussions'] == expected
+
+
+def test_structure_and_locus_withdrawal_pin_the_same_raw_source(inputs):
+    source = inputs[0][0]
+    # WITHDRAW requires explicit coordinates; this synthetic source supplies them.
+    source.update({'locus_from': '1', 'locus_to': '29132'})
+    inputs[1][0]['expected_source_row_sha256'] = row_digest(source)
+    withdrawal = {
+        'minted_identifier': seed.mint_identifier('MIBIG', 'BGC0000024:1'),
+        'source': 'MIBIG', 'source_id': 'BGC0000024', 'action': 'WITHDRAW',
+        'locus_evidence_methods': '', 'reference': 'https://example.org/test-decision',
+        'rationale': 'Synthetic test decision, not production curation.',
+        'curator': 'test', 'date': '2026-10-07',
+        **{'expected_' + field: source[field] for field in seed.MIBIG_WITHDRAWAL_CONTEXT},
+    }
+    doc, = seed.build_records({
+        'mibig_compounds': inputs[0], 'chebi_structures': inputs[2],
+        'mibig_structure_corrections': inputs[1], 'mibig_locus_evidence_overrides': [withdrawal],
+    })
+    assert doc['chemical_structure']['standard_inchi_key'] == NEW
+    producer, = doc['producer_organisms']
+    cluster, = doc['biosynthetic_gene_clusters']
+    assert producer['evidence_basis'] == 'SOURCE_ASSERTION'
+    assert cluster['link_evidence_basis'] == 'CLUSTER_UNSTATED'
+    assert 'locus_evidence_methods' not in cluster
+    for claim in (producer, cluster):
+        assert [e['evidence_type'] for e in claim['evidence']] == [
+            'DATABASE_ASSERTION', 'CURATOR_INFERENCE', 'CURATOR_INFERENCE']
+        assert claim['evidence'][1]['reference'] == withdrawal['reference']
+        assert claim['evidence'][2]['reference'] == inputs[1][0]['reference']
+
+
+@pytest.mark.parametrize('limit', [-1, 0])
+def test_nonpositive_write_limit_never_writes(tmp_path, monkeypatch, limit):
+    monkeypatch.setattr(seed, 'CORPUS_DIR', tmp_path)
+    monkeypatch.setattr(seed, 'write_validated_natural_product', lambda *args: pytest.fail('write'))
+    docs = [{'identifier': f'CHEBI:{i}', 'np_pathway': 'POLYKETIDES', '_slug': str(i),
+             'chemical_structure': {'standard_inchi_key': NEW}} for i in range(2)]
+    assert seed.write_records(docs, limit=limit) == 0

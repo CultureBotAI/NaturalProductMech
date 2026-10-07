@@ -42,6 +42,9 @@ re-adopting any of them needs separate identity evidence. Occurrences, assays,
 classification and sibling links join only on the corrected key. No old-key
 claims are transferred. The correction appears separately as `CURATOR_INFERENCE`
 on producer and BGC evidence and in a resolved source-conflict discussion.
+That discussion is table-owned: old YAML answers never overwrite its current
+citation or adjudication. A concurrent locus-evidence withdrawal is independently
+validated against the untouched raw source, not against the replacement key.
 The chemical structure names ChEBI as its source; the MIBiG source concept stays.
 NPClassifier's extractor also consumes these corrections, so run its dry run
 and one-call canary on the corrected structure before seeding.
