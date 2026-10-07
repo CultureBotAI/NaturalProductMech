@@ -69,6 +69,257 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: hypeptin-hynabce-database-carrier-bound-tailoring-contexts
+  scope: BIOSYNTHESIS
+  description: Separate database-reported HynC and HynE carrier-bound amino-acid tailoring
+    contexts in the hypeptin BGC. HynA is listed as auxiliary to both; HynB only to
+    HynC. All four nodes denote verified native K5869 protein references, not reconstructed
+    assay constructs. Functional claims remain database assertions. The HynC leucine-description/model
+    carbon-count conflict is unresolved (issue664); no exact chemical reaction, carrier/domain
+    assignment, reaction stereochemistry, pathway order, physical complex, native
+    genetic necessity or direct mature-hypeptin-forming step is asserted.
+  nodes:
+  - node_id: hyna
+    label: HynA, native K5869 reference
+    node_type: ENZYME
+    identifier: NCBIProtein:QWP75305.1
+    grounding_status: GROUNDED
+  - node_id: hynb
+    label: HynB, native K5869 reference
+    node_type: ENZYME
+    identifier: NCBIProtein:QWP75304.1
+    grounding_status: GROUNDED
+  - node_id: hync
+    label: HynC, native K5869 reference
+    node_type: ENZYME
+    identifier: NCBIProtein:QWP75303.1
+    grounding_status: GROUNDED
+  - node_id: hyne
+    label: HynE, native K5869 reference
+    node_type: ENZYME
+    identifier: NCBIProtein:QWP75301.1
+    grounding_status: GROUNDED
+  - node_id: hync_tailoring
+    label: HynC-associated carrier-bound hydroxylation context (database role)
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hyne_tailoring
+    label: HynE-associated carrier-bound hydroxylation context (database role)
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: hync
+    predicate: is_database_assigned_hydroxylase_in
+    object: hync_tailoring
+    notes: MITE describes non-heme diiron monooxygenase HynC and PCP-bound tyrosine
+      and leucine hydroxylations. These are source descriptions, not adopted exact
+      chemical transformations. The leucine-labeled example contains a seven-carbon
+      amino-acid moiety rather than six-carbon leucine in both substrate and product;
+      diagnostic thioester cleavage with a leucine control localizes the mismatch
+      to the amino-acid side. This does not establish the actual assay substrate or
+      a correction. Exact HynC chemistry remains unresolved under https://github.com/CultureBotAI/NaturalProductMech/issues/664.
+      No encoded carrier fragment, syn stereochemical outcome, Fe occupancy or corrected
+      model is adopted. The process denotes an intermediate tailoring context, not
+      direct formation of mature hypeptin. The cited 2021 paper was inaccessible;
+      no primary assay, exact construct, substrate order or native deletion/complementation
+      phenotype was independently inspected.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000197.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-06'
+      snippet: beta-hydroxylation of PCP-bound tyrosine (syn)
+      notes: MITE0000197 version 3, inspected 2026-10-07, archive member/Git blob
+        verified at the cited commit. The row links HynC to its GenPept reference
+        and BGC0002126. Its in-vitro assay code and DOI:10.1002/anie.202102224 citation
+        remain database metadata, not primary evidence inspected here. All listed
+        reaction examples are flagged as intermediates.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QWP75303.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Native Lysobacter sp. K5869 reference, taxon 2820808, 531 aa, locus J5226_16935.
+        Complete GenPept sequence equals the native CDS translation. The Hyn name
+        comes from MITE; GenPept and native chromosome have no gene-name qualifier.
+        PGAP/CDD product and domain annotations are computational, not independently
+        inspected function or module assays. Exact-strain/gene and GenPept-xref UniProtKB
+        queries returned no entries on 2026-10-07; bounded absence only, with no homolog
+        selected. This identifier is not a reconstructed historical assay construct.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP072597.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: CP072597.1 is the complete circular 5,968,034-bp K5869 chromosome. Reverse-strand
+        CDS 3903191..3904786, table 11/codon 1, translates exactly to QWP75303.1;
+        independent GenPept coded_by coordinates, strand and DNA agree. Native reference
+        identity and neighborhood do not independently prove biochemical function,
+        physical interaction or native genetic necessity.
+    - reference: https://dl.secondarymetabolites.org/mibig/mibig_json_4.0.tar.gz
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-06'
+      notes: MIBiG 4.0 archive SHA256 986f1a69fb5eeb84fd7c0175ae921304c22fd5f8ed04c96d8c1c0c95a145837b;
+        BGC0002126 version 3 inspected 2026-10-07. Its hypeptin SMILES exactly matches
+        this owner; strain K5869/taxon 2820808 and CP072597.1 locus 3896012..3931610
+        agree. This is the compound/locus anchor, not gene-function evidence. Existing
+        SOURCE_ASSERTION producer and CLUSTER_DEMONSTRATED locus grades remain unchanged,
+        as do incomplete owner stereochemistry and SEEDED status.
+  - subject: hyne
+    predicate: is_database_assigned_hydroxylase_in
+    object: hyne_tailoring
+    notes: MITE describes alpha-ketoglutarate-dependent dioxygenase HynE and PCP-bound
+      asparagine hydroxylation. This is a database-level functional context, not an
+      adopted exact reaction, carrier structure or independently verified anti stereochemical
+      outcome. Its cofactor field is a database annotation, not measured occupancy
+      or a new assay. The process denotes an intermediate tailoring context, not direct
+      formation of mature hypeptin. The cited 2021 paper was inaccessible; no primary
+      assay, exact construct, substrate order or native deletion/complementation phenotype
+      was independently inspected.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000196.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-06'
+      snippet: beta-hydroxylation of PCP-bound asparagine (anti)
+      notes: MITE0000196 version 3, inspected 2026-10-07, archive member/Git blob
+        verified at the cited commit. The row links HynE to its GenPept reference
+        and BGC0002126. Its in-vitro assay code and DOI:10.1002/anie.202102224 citation
+        remain database metadata, not primary evidence inspected here. All listed
+        reaction examples are flagged as intermediates.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QWP75301.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Native Lysobacter sp. K5869 reference, taxon 2820808, 320 aa, locus J5226_16925.
+        Complete GenPept sequence equals the native CDS translation. The Hyn name
+        comes from MITE; GenPept and native chromosome have no gene-name qualifier.
+        PGAP/CDD product and domain annotations are computational, not independently
+        inspected function or module assays. Exact-strain/gene and GenPept-xref UniProtKB
+        queries returned no entries on 2026-10-07; bounded absence only, with no homolog
+        selected. This identifier is not a reconstructed historical assay construct.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP072597.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: CP072597.1 is the complete circular 5,968,034-bp K5869 chromosome. Reverse-strand
+        CDS 3900302..3901264, table 11/codon 1, translates exactly to QWP75301.1;
+        independent GenPept coded_by coordinates, strand and DNA agree. Native reference
+        identity and neighborhood do not independently prove biochemical function,
+        physical interaction or native genetic necessity.
+    - reference: https://dl.secondarymetabolites.org/mibig/mibig_json_4.0.tar.gz
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-06'
+      notes: MIBiG 4.0 archive SHA256 986f1a69fb5eeb84fd7c0175ae921304c22fd5f8ed04c96d8c1c0c95a145837b;
+        BGC0002126 version 3 inspected 2026-10-07. Its hypeptin SMILES exactly matches
+        this owner; strain K5869/taxon 2820808 and CP072597.1 locus 3896012..3931610
+        agree. This is the compound/locus anchor, not gene-function evidence. Existing
+        SOURCE_ASSERTION producer and CLUSTER_DEMONSTRATED locus grades remain unchanged,
+        as do incomplete owner stereochemistry and SEEDED status.
+  - subject: hyna
+    predicate: is_database_listed_auxiliary_synthetase_in
+    object: hync_tailoring
+    notes: MITE lists HynA as an auxiliary nonribosomal peptide synthetase in the
+      HynC entry. This records that database role only. It does not establish a physical
+      complex, direct binding, a necessary partner under specific assay conditions,
+      an exact PCP/module assignment, chain-transfer direction, pathway order, historical
+      construct identity or native genetic necessity. No auxiliary role of HynB in
+      the HynE context is asserted.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000197.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-06'
+      snippet: nonribosomal peptide synthetase
+      notes: MITE0000197 version 3 auxiliaryEnzymes entry names HynA and GenPept QWP75305.1.
+        Stable source snapshot inspected 2026-10-07. The protein name/accession link
+        is explicit; auxiliary-list membership does not supply an independently inspected
+        physical or catalytic interaction experiment.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QWP75305.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Native Lysobacter sp. K5869 reference, taxon 2820808, 6491 aa, locus
+        J5226_16945. Complete GenPept sequence equals the native CDS translation.
+        The Hyn name comes from MITE; GenPept and native chromosome have no gene-name
+        qualifier. PGAP/CDD product and domain annotations are computational, not
+        independently inspected function or module assays. Exact-strain/gene and GenPept-xref
+        UniProtKB queries returned no entries on 2026-10-07; bounded absence only,
+        with no homolog selected. This identifier is not a reconstructed historical
+        assay construct.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP072597.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: CP072597.1 is the complete circular 5,968,034-bp K5869 chromosome. Reverse-strand
+        CDS 3912135..3931610, table 11/codon 1, translates exactly to QWP75305.1;
+        independent GenPept coded_by coordinates, strand and DNA agree. Native reference
+        identity and neighborhood do not independently prove biochemical function,
+        physical interaction or native genetic necessity.
+  - subject: hynb
+    predicate: is_database_listed_auxiliary_synthetase_in
+    object: hync_tailoring
+    notes: MITE lists HynB as an auxiliary nonribosomal peptide synthetase in the
+      HynC entry. This records that database role only. It does not establish a physical
+      complex, direct binding, a necessary partner under specific assay conditions,
+      an exact PCP/module assignment, chain-transfer direction, pathway order, historical
+      construct identity or native genetic necessity. No auxiliary role of HynB in
+      the HynE context is asserted.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000197.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-06'
+      snippet: nonribosomal peptide synthetase
+      notes: MITE0000197 version 3 auxiliaryEnzymes entry names HynB and GenPept QWP75304.1.
+        Stable source snapshot inspected 2026-10-07. The protein name/accession link
+        is explicit; auxiliary-list membership does not supply an independently inspected
+        physical or catalytic interaction experiment.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QWP75304.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Native Lysobacter sp. K5869 reference, taxon 2820808, 2447 aa, locus
+        J5226_16940. Complete GenPept sequence equals the native CDS translation.
+        The Hyn name comes from MITE; GenPept and native chromosome have no gene-name
+        qualifier. PGAP/CDD product and domain annotations are computational, not
+        independently inspected function or module assays. Exact-strain/gene and GenPept-xref
+        UniProtKB queries returned no entries on 2026-10-07; bounded absence only,
+        with no homolog selected. This identifier is not a reconstructed historical
+        assay construct.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP072597.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: CP072597.1 is the complete circular 5,968,034-bp K5869 chromosome. Reverse-strand
+        CDS 3904795..3912138, table 11/codon 1, translates exactly to QWP75304.1;
+        independent GenPept coded_by coordinates, strand and DNA agree. Native reference
+        identity and neighborhood do not independently prove biochemical function,
+        physical interaction or native genetic necessity.
+  - subject: hyna
+    predicate: is_database_listed_auxiliary_synthetase_in
+    object: hyne_tailoring
+    notes: MITE lists HynA as an auxiliary nonribosomal peptide synthetase in the
+      HynE entry. This records that database role only. It does not establish a physical
+      complex, direct binding, a necessary partner under specific assay conditions,
+      an exact PCP/module assignment, chain-transfer direction, pathway order, historical
+      construct identity or native genetic necessity. No auxiliary role of HynB in
+      the HynE context is asserted.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000196.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-06'
+      snippet: nonribosomal peptide synthetase
+      notes: MITE0000196 version 3 auxiliaryEnzymes entry names HynA and GenPept QWP75305.1.
+        Stable source snapshot inspected 2026-10-07. The protein name/accession link
+        is explicit; auxiliary-list membership does not supply an independently inspected
+        physical or catalytic interaction experiment.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QWP75305.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Native Lysobacter sp. K5869 reference, taxon 2820808, 6491 aa, locus
+        J5226_16945. Complete GenPept sequence equals the native CDS translation.
+        The Hyn name comes from MITE; GenPept and native chromosome have no gene-name
+        qualifier. PGAP/CDD product and domain annotations are computational, not
+        independently inspected function or module assays. Exact-strain/gene and GenPept-xref
+        UniProtKB queries returned no entries on 2026-10-07; bounded absence only,
+        with no homolog selected. This identifier is not a reconstructed historical
+        assay construct.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP072597.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: CP072597.1 is the complete circular 5,968,034-bp K5869 chromosome. Reverse-strand
+        CDS 3912135..3931610, table 11/codon 1, translates exactly to QWP75305.1;
+        independent GenPept coded_by coordinates, strand and DNA agree. Native reference
+        identity and neighborhood do not independently prove biochemical function,
+        physical interaction or native genetic necessity.
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
   curator: seed_from_sources
@@ -78,3 +329,20 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-07T19:06:10Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a six-node/five-edge BIOSYNTHESIS graph for separate database-reported
+    HynC and HynE carrier-bound tailoring contexts. Grounded HynA, HynB, HynC and
+    HynE to native K5869 NCBIProtein references QWP75305.1, QWP75304.1, QWP75303.1
+    and QWP75301.1 after complete CDS/GenPept sequence and coordinate verification.
+    HynA is database-listed auxiliary to both contexts; HynB only to HynC. Every edge
+    cites stable database URLs; short verbatim MITE snippets are retained. No UniProtKB
+    example was selected from the empty bounded strain/gene/xref queries. Functional
+    assignments remain database assertions, not independently inspected primary assays.
+    Preserved the HynC leucine-description/model conflict tracked by issue664; adopted
+    no exact substrate/product, carrier structure, stereochemical reaction, domain
+    assignment, pathway order, physical complex, historical construct or native genetic-necessity
+    claim. Preserved all original fields, source grades, incomplete owner stereochemistry,
+    SEEDED status and history.
+  llm_assisted: true
