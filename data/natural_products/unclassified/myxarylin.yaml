@@ -86,6 +86,104 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: myxarylin-bytz-proposed-n-methylation
+  scope: BIOSYNTHESIS
+  description: Proposed BytZ N-terminal methylation context for myxarylin, based on
+    MITE's explicit putative/proposed assignment. Native Pyxidicoccus fallax An d48
+    (deposit note MCy8396) reference identity is verified independently, not its catalytic
+    activity. No UniProt homolog is substituted for the exact GenPept protein. No
+    primary assay, leader-cleavage mechanism, complete pathway order or source-grade
+    upgrade is adopted; not full-record sign-off.
+  nodes:
+  - node_id: bytz_reference
+    label: BytZ native An d48 reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:UID85537.1
+  - node_id: unmethylated_peptide
+    label: Unmethylated cyclized peptide, database example
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: n_methylation
+    label: Proposed BytZ N-terminal methylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: myxarylin
+    label: Myxarylin
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: naturalproductmech:mibig-489bd6e2d9
+  edges:
+  - subject: bytz_reference
+    predicate: is_database_proposed_catalyst_of
+    object: n_methylation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000420.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000420 version 1, active, identifies BytZ/UID85537.1 and BGC0002631.
+        Its top-level comment explicitly calls the methyltransferase putative and
+        the N-terminal methylation proposed. That qualification governs this graph
+        despite the reaction description's unqualified verb. Heterologous expression
+        and genomic/chemical inference codes remain database assertions; both cited
+        papers were inaccessible.
+      snippet: proposed to catalyze N-terminal methylation
+    - reference: https://www.ncbi.nlm.nih.gov/protein/UID85537.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: 'Full independent GenPept reference and coded_by inspected: bytZ, class
+        I SAM-dependent methyltransferase,264 residues, P.fallax strain An d48, note
+        MCy8396/taxon394095. The submission name is not evidence of a direct activity
+        assay.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/OL539738.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Complete795-nt plus-strand single CDS1797..2591, codon1/table11. Full
+        CDS translation equals the annotation and independent UID85537.1/all264aa;
+        GTG is an initiating methionine under table11. Independent coded_by DNA/coordinates
+        and source strain/taxon match. This authenticates the genomic reference, not
+        historical assay stocks or constructs.
+    notes: Catalysis is proposed, not established by the sequence match. On2026-10-07,
+      bounded official UniProtKB searches for UID85537 and exact bytZ/taxon394095,
+      plus UniParc UID85537, returned zero candidates. This is not universal UniProt
+      absence; the exact NCBIProtein accession is used. No activity magnitude, knockout
+      phenotype, native cofactor state, binding site or physical complex is asserted.
+  - subject: unmethylated_peptide
+    predicate: is_database_example_substrate_of
+    object: n_methylation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000420.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000420 version 1, active, identifies BytZ/UID85537.1 and BGC0002631.
+        Its top-level comment explicitly calls the methyltransferase putative and
+        the N-terminal methylation proposed. That qualification governs this graph
+        despite the reaction description's unqualified verb. Heterologous expression
+        and genomic/chemical inference codes remain database assertions; both cited
+        papers were inaccessible.
+    notes: MITE encodes an unmethylated cyclized-peptide example. Its identifier remains
+      ungrounded. No leader-cleavage enzyme, cleavage event, reaction order relative
+      to cyclization or additional BytA/BytO catalytic function is inferred from this
+      proposed methylation context.
+  - subject: n_methylation
+    predicate: has_database_example_product
+    object: myxarylin
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000420.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000420 version 1, active, identifies BytZ/UID85537.1 and BGC0002631.
+        Its top-level comment explicitly calls the methyltransferase putative and
+        the N-terminal methylation proposed. That qualification governs this graph
+        despite the reaction description's unqualified verb. Heterologous expression
+        and genomic/chemical inference codes remain database assertions; both cited
+        papers were inaccessible.
+    notes: Pinned MITE neutral product matches the owner's full InChIKey YNCKCZXUTZJZTQ-ULQDDVLXSA-N
+      and complete stereo in the retained repository-helper/RDKit2026.03.5 screen.
+      No physiological pathway finality or experimental confirmation is inferred.
+      SOURCE_ASSERTION producer and CLUSTER_UNSTATED locus grades, separate LOTUS
+      occurrence, source data and SEEDED status remain unchanged.
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -95,3 +193,21 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-07T06:33:14Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added an explicitly proposed BytZ N-terminal methylation biosynthesis
+    context from MITE0000420v1: four nodes, three qualified edges with stable MITE/NCBI
+    URLs and one exact five-word proposed-function snippet. Native NCBIProtein:UID85537.1
+    is verified against full795-nt/table11 CDS1797..2591 on OL539738.1 and independent
+    GenPept, all264residues, including GTG initiator methionine; coded_by DNA/coordinates
+    and An d48/MCy8396/taxon394095 match. Bounded official UniProtKB accession and
+    exact gene/taxon searches, and UniParc accession search, returned no candidate;
+    no arbitrary homolog or invented UniProt accession selected. The MITE example
+    neutral product matches the exact owner full key/stereo. No primary assay, historical
+    stock/construct, activity magnitude, knockout, cofactor state, site, physical
+    complex, leader-cleavage mechanism, BytA/BytO activity or full pathway order is
+    inferred. Preserved all source fields, SOURCE_ASSERTION producer and CLUSTER_UNSTATED
+    locus grades, separate LOTUS occurrence, SEEDED status and append-only history.
+    Not full-record sign-off.'
+  llm_assisted: true
