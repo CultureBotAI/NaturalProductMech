@@ -1,0 +1,126 @@
+record_id: naturalproductmech:mibig-69e644c0de
+standard_inchi_key: XIRGHRXBGGPPKY-RTWAPUGOSA-N
+graph:
+  graph_id: avilamycin-a-avig4-database-methylation-unresolved-identity
+  scope: BIOSYNTHESIS
+  description: MITE-reported AviG4 phenolic O-methylation yielding the encoded avilamycin
+    A model. AviG4 identity remains REVIEW_NEEDED without an accepted protein accession;
+    the linked sequence is a candidate, not a verified assayed protein. Both database
+    product and owner retain unresolved stereocentres. This is a separate database
+    context, not primary biochemical turnover or a reinterpretation of existing GW4
+    genetics.
+  nodes:
+  - node_id: avig4
+    label: MITE-named AviG4, sequence identity unresolved
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+  - node_id: demethyl_substrate
+    label: MITE-encoded phenolic O-demethylated precursor
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: methylation
+    label: Database-reported dichloroisoeverninic-moiety O-methylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: avilamycin_a
+    label: avilamycin A
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-69e644c0de
+    grounding_status: GROUNDED
+  edges:
+  - subject: avig4
+    predicate: is_database_reported_catalyst_of
+    object: methylation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000002.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Active MITE0000002 version4 assigns this phenolic O-methylation to AviG4.
+        Its knock-out evidence code is not an independently inspected assay in this
+        addition. Cited 2001/2004 papers are not adopted as primary evidence here.
+        The removed MIBiG link is not restored; listed FeS/SAM cofactors are not binding
+        or occupancy measurements.
+      snippet: methylation of the phenolic hydroxyl group in the dichloroisoeverninic
+        acid moiety
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ELS56114.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: 'MITE-linked candidate, not an accepted AviG4 identifier: putative O-methyltransferase
+        STVIR_2872 from Tue57/taxon1160705,350aa. The native1053-nt reverse CDS54717..55769
+        on AMLP01000092.1, table11/codon1, translates exactly to annotation, independent
+        GenPept and UniParc. Sequence identity verifies the candidate deposit, not
+        the disputed gene-name/function assignment or historical assay stock. CDD
+        domains/sites are predictions, not measured assembly or SAM binding.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AMLP01000092.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Complete candidate CDS translation and independent coded_by coordinates,
+        strand, taxon and strain agree. Unrelated contig features were not fully reviewed.
+        No native candidate accession is assigned to the AviG4 node.
+    - reference: https://www.uniprot.org/uniparc/UPI0002ABF9ED
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: UniParc is a sequence archive, not UniProtKB. Its350aa sequence matches
+        the candidate; UniProtKB L8PIQ8 crosslink is inactive, while an active EnsemblBacteria
+        crosslink names mmcR. A bounded global exact-gene aviG4 query returned no
+        current UniProt entries; this is not all-alias/global absence. No UniProtKB
+        example selected. Disagreement does not prove that MITE's assignment is wrong.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF333038.2
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Retained original cluster deposit has no exact AviG4 gene qualifier.
+        The candidate-aligned unannotated1050-nt region45278..46327 translates349aa,
+        not the current candidate350aa. Similarity alone is not exact historical assay-sequence
+        or AviG4-name proof.
+    notes: Functional attribution is solely the named MITE database assertion. Candidate
+      sequence agreement does not settle the AviG4/mmcR mapping, so no protein identifier
+      is assigned. No direct turnover, mutant allele, rescue, cofactor occupancy,
+      FeS-dependent mechanism, dimer, rates or assay conditions are inferred.
+  - subject: demethyl_substrate
+    predicate: is_database_example_substrate_of
+    object: methylation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000002.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Active MITE0000002 version4 assigns this phenolic O-methylation to AviG4.
+        Its knock-out evidence code is not an independently inspected assay in this
+        addition. Cited 2001/2004 papers are not adopted as primary evidence here.
+        The removed MIBiG link is not restored; listed FeS/SAM cofactors are not binding
+        or occupancy measurements.
+    notes: The source's reaction0/example0 supplies this O-demethylated substrate
+      model. It is not assigned an external identity or equated to every GW4 gavibamycin
+      congener. No experiment-specific metabolite, reaction order or complete pathway
+      is inferred.
+  - subject: methylation
+    predicate: has_database_example_product
+    object: avilamycin_a
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000002.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Active MITE0000002 version4 assigns this phenolic O-methylation to AviG4.
+        Its knock-out evidence code is not an independently inspected assay in this
+        addition. Cited 2001/2004 papers are not adopted as primary evidence here.
+        The removed MIBiG link is not restored; listed FeS/SAM cofactors are not binding
+        or occupancy measurements.
+    notes: 'The pinned source product has the owner''s full InChI and key XIRGHRXBGGPPKY-RTWAPUGOSA-N.
+      Both are stereo-incomplete: matching encodings do not resolve the unassigned
+      centres or establish exact assay-congener stereochemistry. No primary turnover,
+      native locus-grade upgrade or producer transfer follows. All13 existing graphs,
+      including GW4 contexts, stay unchanged.'
+curation_history:
+- timestamp: '2026-10-07T16:40:09Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Created a new graph for naturalproductmech:mibig-69e644c0de, source owner
+    at 73b0a765db1b64abbe037280d2e092ca15d2edcf; not a migration of old graphs. Four
+    nodes and three database-level MITE0000002 version4 edges describe phenolic O-methylation
+    of the dichloroisoeverninic acid moiety. An eleven-word verbatim database snippet
+    is included. Encoded product matches the owner''s full InChI/key at its incomplete
+    stereochemical resolution. AviG4 remains REVIEW_NEEDED without an accepted accession:
+    native STVIR_2872/ELS56114.1 and UniParc agree at350aa, but that does not independently
+    verify the AviG4 name; archive UniProt L8PIQ8 is inactive and an active crosslink
+    names mmcR. No exact historical construct, primary assay, FeS occupancy, assembly,
+    rate or producer-grade change inferred. All old owner content remains inline.'
+  llm_assisted: true
