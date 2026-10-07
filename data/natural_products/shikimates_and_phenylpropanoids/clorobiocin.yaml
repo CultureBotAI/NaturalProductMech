@@ -407,6 +407,511 @@ causal_graphs:
     - reference: https://bibliographie.uni-tuebingen.de/xmlui/bitstream/handle/10900/48524/pdf/Dissertation_UG1.pdf?isAllowed=y&sequence=1
       evidence_type: PRIMARY_EXPERIMENT
       notes: Panel text and Figure 13, PDF pp.91-93.
+- graph_id: clorobiocin-clohal-cloz-native-genetics-and-evidence-limits
+  scope: BIOSYNTHESIS
+  description: 'Native CloHal and CloZ references, cassette-mutant observations and
+    separate CloHal rescue in DS12.976. Genetic evidence is kept distinct from inferred
+    enzyme mechanism; source length disagreements remain explicit. No exact substrate/order
+    or physical assembly is asserted. Source-intake review #667; prior mechanisms
+    and SEEDED status unchanged.'
+  nodes:
+  - node_id: clohal
+    label: CloHal native DS12.976 protein reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHB4
+  - node_id: cloz
+    label: CloZ native DS12.976 uncharacterized protein reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHA5
+  - node_id: wild_type
+    label: Streptomyces roseochromogenus subsp. oscitans DS 12.976
+    node_type: ORGANISM
+    grounding_status: GROUNDED
+    identifier: NCBITaxon:1352936
+  - node_id: hal_mutants
+    label: Native-background clo-hal cassette mutants AE-h2, AE-h10 and AE-h11
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: z_mutants
+    label: Native-background cloZ cassette mutants AE-Z4, AE-Z25 and AE-Z40
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: rescue
+    label: AE-h10 carrying the clo-hal expression plasmid pAE-ha7
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  - node_id: analysis
+    label: Thesis production-culture extraction and HPLC comparison
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: cloro
+    label: Source-assigned clorobiocin
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: n101
+    label: Source-assigned dechlorinated novclobiocin101
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: hal_role
+    label: Genetically supported involvement in clorobiocin chlorination
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: z_limit
+    label: CloZ nonessentiality limited to the tested culture conditions
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: lengths
+    label: Unresolved thesis/native protein-length discrepancies
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Unresolved substrate, reaction order and biochemical mechanism
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: clohal
+    predicate: is_native_reference_for_targeted_gene_product_in
+    object: hal_mutants
+    notes: The native sequence reference is not the replacement allele. Three independently
+      obtained mutants replace clo-hal with an apramycin-resistance cassette. FigureIII.3A/B
+      and its caption show Southern genotyping. This is not the abandoned conventional
+      in-frame strategy, nor a markerless deletion or full mutant-genome sequence.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB4
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed native CloHal, 524 aa; entry 68, sequence 1; annotation 2026-09-02,
+        release 2026_03. UniProt subspecies taxon149682, strain DS12.976, maps to
+        AF329398/AAN65237.1. Native reference, not a resequenced historical mutant
+        or expression construct. Automated subfamily, domain and disorder predictions
+        are not functional assays.
+      retrieved_on: '2026-10-07'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAN65237.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent GenPept AAN65237.1 equals the complete native CDS translation
+        and UniProt sequence. Native AF329398.1:28099..29673(+), codon_start1/table11,
+        includes terminal stop; strain DS12.976/taxon1352936. Strain versus UniProt
+        subspecies taxonomic resolution is explicit.
+      retrieved_on: '2026-10-07'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact CloHal native CDS and protein checked independently of the functional
+        evidence. This locus is the existing BGC0000832 clorobiocin owner anchor,
+        not proof of purified catalysis or physical assembly.
+      retrieved_on: '2026-10-07'
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Eustaquio 2004 primary thesis, PDF pp.83-84,94-99; printed pages are
+        ten lower. Retained source inspected, not an independently obtained full journal
+        article.
+  - subject: cloz
+    predicate: is_native_reference_for_targeted_gene_product_in
+    object: z_mutants
+    notes: Separate cassette-replacement experiment, FigureIII.3C/D. CloZ remains
+      an uncharacterized PROTEIN, not a demonstrated enzyme. Native sequence grounding
+      does not establish an intact historical preparation or universal pathway function.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHA5
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed native CloZ, 253 aa; entry 24, sequence 1; annotation 2025-04-02,
+        release 2026_03. UniProt subspecies taxon149682, strain DS12.976, maps to
+        AF329398/AAN65246.1. Native reference, not a resequenced historical mutant
+        or expression construct. Automated subfamily, domain and disorder predictions
+        are not functional assays.
+      retrieved_on: '2026-10-07'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAN65246.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent GenPept AAN65246.1 equals the complete native CDS translation
+        and UniProt sequence. Native AF329398.1:39459..40220(+), codon_start1/table11,
+        includes terminal stop; strain DS12.976/taxon1352936. Strain versus UniProt
+        subspecies taxonomic resolution is explicit.
+      retrieved_on: '2026-10-07'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact CloZ native CDS and protein checked independently of the functional
+        evidence. This locus is the existing BGC0000832 clorobiocin owner anchor,
+        not proof of purified catalysis or physical assembly.
+      retrieved_on: '2026-10-07'
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Eustaquio 2004 primary thesis, PDF pp.83-84,97-99; printed pages are
+        ten lower. Retained source inspected, not an independently obtained full journal
+        article.
+  - subject: clohal
+    predicate: has_source_length_disagreement
+    object: lengths
+    notes: Thesis PDF93 states525 amino acids; complete native CDS, GenPept and UniProt
+      agree at524. No historical525-aa protein sequence or manuscript correction was
+      established.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Eustaquio 2004 primary thesis, PDF pp.93; printed pages are ten lower.
+        Retained source inspected, not an independently obtained full journal article.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB4
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed native CloHal, 524 aa; entry 68, sequence 1; annotation 2026-09-02,
+        release 2026_03. UniProt subspecies taxon149682, strain DS12.976, maps to
+        AF329398/AAN65237.1. Native reference, not a resequenced historical mutant
+        or expression construct. Automated subfamily, domain and disorder predictions
+        are not functional assays.
+      retrieved_on: '2026-10-07'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAN65237.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent GenPept AAN65237.1 equals the complete native CDS translation
+        and UniProt sequence. Native AF329398.1:28099..29673(+), codon_start1/table11,
+        includes terminal stop; strain DS12.976/taxon1352936. Strain versus UniProt
+        subspecies taxonomic resolution is explicit.
+      retrieved_on: '2026-10-07'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact CloHal native CDS and protein checked independently of the functional
+        evidence. This locus is the existing BGC0000832 clorobiocin owner anchor,
+        not proof of purified catalysis or physical assembly.
+      retrieved_on: '2026-10-07'
+  - subject: cloz
+    predicate: has_source_length_disagreement
+    object: lengths
+    notes: Thesis PDF93 states254 amino acids; complete native CDS, GenPept and UniProt
+      agree at253. Preserve both source values without inventing a corrected or historical254-aa
+      protein.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Eustaquio 2004 primary thesis, PDF pp.93; printed pages are ten lower.
+        Retained source inspected, not an independently obtained full journal article.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHA5
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed native CloZ, 253 aa; entry 24, sequence 1; annotation 2025-04-02,
+        release 2026_03. UniProt subspecies taxon149682, strain DS12.976, maps to
+        AF329398/AAN65246.1. Native reference, not a resequenced historical mutant
+        or expression construct. Automated subfamily, domain and disorder predictions
+        are not functional assays.
+      retrieved_on: '2026-10-07'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAN65246.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent GenPept AAN65246.1 equals the complete native CDS translation
+        and UniProt sequence. Native AF329398.1:39459..40220(+), codon_start1/table11,
+        includes terminal stop; strain DS12.976/taxon1352936. Strain versus UniProt
+        subspecies taxonomic resolution is explicit.
+      retrieved_on: '2026-10-07'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact CloZ native CDS and protein checked independently of the functional
+        evidence. This locus is the existing BGC0000832 clorobiocin owner anchor,
+        not proof of purified catalysis or physical assembly.
+      retrieved_on: '2026-10-07'
+  - subject: wild_type
+    predicate: was_compared_in
+    object: analysis
+    notes: The primary strain table identifies S. roseochromogenes var. oscitans DS12.976.
+      Thesis production cultures and HPLC at340nm used authentic clorobiocin as comparison;
+      these are distinct from the later2024 LC-MSE cultures.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Eustaquio 2004 primary thesis, PDF pp.60-63,88-89,99; printed pages are
+        ten lower. Retained source inspected, not an independently obtained full journal
+        article.
+  - subject: hal_mutants
+    predicate: were_examined_by
+    object: analysis
+    notes: All three independent mutants were cultured and extracted alongside the
+      wild type. Independent mutant count is not a stated quantitative replicate count
+      or detection limit.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Eustaquio 2004 primary thesis, PDF pp.99-100; printed pages are ten lower.
+        Retained source inspected, not an independently obtained full journal article.
+  - subject: hal_mutants
+    predicate: lost_detectable_production_of
+    object: cloro
+    notes: Reported clorobiocin production was abolished under the cited culture/extraction/HPLC
+      conditions. No universal absence or quantitative zero is inferred.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Eustaquio 2004 primary thesis, PDF pp.99-100; printed pages are ten lower.
+        Retained source inspected, not an independently obtained full journal article.
+  - subject: hal_mutants
+    predicate: produced_structurally_assigned_congener
+    object: n101
+    notes: The shorter-retention product was isolated and assigned using negative-ion
+      FAB-MS and NMR; loss of the chlorine isotope pattern and nominal [M-H]-661 versus695
+      supported dechlorination. TableIII.1 explicitly marks overlapping or undeterminable
+      signals. Novclobiocin101 is not equated to this owner's structure or assigned
+      a new exact chemical identifier.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Eustaquio 2004 primary thesis, PDF pp.99-102; printed pages are ten lower.
+        Retained source inspected, not an independently obtained full journal article.
+  - subject: z_mutants
+    predicate: retained_detectable_production_of
+    object: cloro
+    notes: All three cloZ mutants retained clorobiocin, identified by HPLC, negative-ion
+      FAB-MS and proton NMR. The source describes a similar production level to wild
+      type, not a statistical equivalence test.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Eustaquio 2004 primary thesis, PDF pp.99-103; printed pages are ten lower.
+        Retained source inspected, not an independently obtained full journal article.
+  - subject: z_mutants
+    predicate: supports_condition_bounded_nonessentiality
+    object: z_limit
+    notes: Clorobiocin production persisted in these cassette mutants under the reported
+      conditions. This does not establish universal dispensability, absence of biochemical
+      activity, or a role under other conditions.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Eustaquio 2004 primary thesis, PDF pp.103; printed pages are ten lower.
+        Retained source inspected, not an independently obtained full journal article.
+      snippet: under the present culture conditions
+  - subject: clohal
+    predicate: is_native_reference_for_gene_expressed_in
+    object: rescue
+    notes: The strain table names AE-h10/pAE-ha7. An intact clo-hal copy was expressed
+      using pUWL201 with ermE* promoter; this is a distinct rescue organism, not the
+      native protein itself. Full historical plasmid sequence was not obtained.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Eustaquio 2004 primary thesis, PDF pp.60-61,103; printed pages are ten
+        lower. Retained source inspected, not an independently obtained full journal
+        article.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB4
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed native CloHal, 524 aa; entry 68, sequence 1; annotation 2026-09-02,
+        release 2026_03. UniProt subspecies taxon149682, strain DS12.976, maps to
+        AF329398/AAN65237.1. Native reference, not a resequenced historical mutant
+        or expression construct. Automated subfamily, domain and disorder predictions
+        are not functional assays.
+      retrieved_on: '2026-10-07'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAN65237.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent GenPept AAN65237.1 equals the complete native CDS translation
+        and UniProt sequence. Native AF329398.1:28099..29673(+), codon_start1/table11,
+        includes terminal stop; strain DS12.976/taxon1352936. Strain versus UniProt
+        subspecies taxonomic resolution is explicit.
+      retrieved_on: '2026-10-07'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact CloHal native CDS and protein checked independently of the functional
+        evidence. This locus is the existing BGC0000832 clorobiocin owner anchor,
+        not proof of purified catalysis or physical assembly.
+      retrieved_on: '2026-10-07'
+  - subject: rescue
+    predicate: restored_reported_production_of
+    object: cloro
+    notes: Reported HPLC chromatogram matched wild type and negative-ion FAB-MS confirmed
+      the peak. No numerical rescue fraction or uncertainty is inferred. FigureIII.4D
+      is the separate novO-engineered strain, not this CloHal rescue chromatogram.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Eustaquio 2004 primary thesis, PDF pp.100,103; printed pages are ten
+        lower. Retained source inspected, not an independently obtained full journal
+        article.
+      snippet: clorobiocin production could be fully restored
+  - subject: hal_mutants
+    predicate: supports_genetic_involvement_in
+    object: hal_role
+    notes: Loss of chlorinated product with dechlorinated-congener formation supports
+      a chlorination role; it is not an isolated-enzyme substrate assay. The separate
+      complementation result strengthens the gene-level assignment without fully excluding
+      every cassette or expression-context effect.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Eustaquio 2004 primary thesis, PDF pp.99-103; printed pages are ten lower.
+        Retained source inspected, not an independently obtained full journal article.
+  - subject: rescue
+    predicate: supports_genetic_involvement_in
+    object: hal_role
+    notes: Restoration supports the CloHal assignment. It does not identify the exact
+      physiological substrate, prove direct turnover of novclobiocin101, or establish
+      a physical protein complex.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Eustaquio 2004 primary thesis, PDF pp.103,145; printed pages are ten
+        lower. Retained source inspected, not an independently obtained full journal
+        article.
+  - subject: hal_role
+    predicate: has_unresolved_mechanism
+    object: limits
+    notes: The thesis leaves halogenation timing and substrate open, listing carrier-bound
+      and later intermediate candidates. Family-level flavin-reductase discussion
+      is not purified CloHal reconstitution, a specific reductase partner, cofactor
+      occupancy or measured kinetics. No pathway step number or exact substrate/product
+      reaction is added.
+    evidence:
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Eustaquio 2004 primary thesis, PDF pp.145-146; printed pages are ten
+        lower. Retained source inspected, not an independently obtained full journal
+        article.
+      snippet: It is not clear at present
+- graph_id: clorobiocin-clohal-culture-observations-and-inference-limits
+  scope: BIOSYNTHESIS
+  description: 'Culture-level halide observations remain separate from native genetic
+    evidence and inferred CloHal properties. No purified-enzyme kinetics, exact reaction,
+    congener identity or congener antimicrobial activity is adopted. Review #667.'
+  nodes:
+  - node_id: clohal
+    label: Native CloHal reference; culture-based role inference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHB4
+  - node_id: producer
+    label: DS12.976 natural-producer culture experiment
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: kbr
+    label: KBr-supplemented producer cultures
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: profile
+    label: Changed chlorinated, brominated and nonhalogenated metabolite signals
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: other_halides
+    label: Fluoride- or iodide-supplemented producer cultures
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: nondetection
+    label: No detected fluorinated or iodinated clorobiocin variant
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: role
+    label: Proposed CloHal halide-use interpretation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: No purified kinetics or universally excluded halides
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: producer
+    predicate: was_tested_with
+    object: kbr
+    notes: Separate2024 culture LC-MSE experiment, not thesis complementation.
+    evidence:
+    - reference: DOI:10.1128/spectrum.00423-24
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained primary publisher methods/results text inspected; figures, supplement
+        and raw MassIVE data not inspected. Natural-producer culture LC-MSE, biological
+        triplicates; not purified-enzyme kinetics.
+  - subject: kbr
+    predicate: was_associated_with
+    object: profile
+    notes: Brominated and nonhalogenated signals increased while clorobiocin signals
+      declined. Signal intensities are not absolute titers or enzyme rates.
+    evidence:
+    - reference: DOI:10.1128/spectrum.00423-24
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained primary publisher methods/results text inspected; figures, supplement
+        and raw MassIVE data not inspected. Natural-producer culture LC-MSE, biological
+        triplicates; not purified-enzyme kinetics.
+  - subject: producer
+    predicate: was_tested_with
+    object: other_halides
+    notes: Culture supplementation, not purified CloHal substrate screening.
+    evidence:
+    - reference: DOI:10.1128/spectrum.00423-24
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained primary publisher methods/results text inspected; figures, supplement
+        and raw MassIVE data not inspected. Natural-producer culture LC-MSE, biological
+        triplicates; not purified-enzyme kinetics.
+  - subject: other_halides
+    predicate: had_reported_outcome
+    object: nondetection
+    notes: Condition-bounded nondetection; not universal impossibility of fluorination
+      or iodination.
+    evidence:
+    - reference: DOI:10.1128/spectrum.00423-24
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained primary publisher methods/results text inspected; figures, supplement
+        and raw MassIVE data not inspected. Natural-producer culture LC-MSE, biological
+        triplicates; not purified-enzyme kinetics.
+  - subject: profile
+    predicate: supports_source_interpretation
+    object: role
+    notes: Authors suggest preferential bromide use with reduced turnover from culture
+      profiles. Neither affinity nor turnover was measured as an enzyme kinetic constant.
+    evidence:
+    - reference: DOI:10.1128/spectrum.00423-24
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary discussion interprets culture observations; kinetic or exact-substrate
+        claims were not independently measured here.
+  - subject: clohal
+    predicate: is_proposed_enzyme_in
+    object: role
+    notes: Native identity does not independently establish the assayed preparation,
+      direct substrate or reaction order.
+    evidence:
+    - reference: DOI:10.1128/spectrum.00423-24
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary discussion interprets culture observations; kinetic or exact-substrate
+        claims were not independently measured here.
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHB4
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed native CloHal, 524 aa; entry 68, sequence 1; annotation 2026-09-02,
+        release 2026_03. UniProt subspecies taxon149682, strain DS12.976, maps to
+        AF329398/AAN65237.1. Native reference, not a resequenced historical mutant
+        or expression construct. Automated subfamily, domain and disorder predictions
+        are not functional assays.
+      retrieved_on: '2026-10-07'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAN65237.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent GenPept AAN65237.1 equals the complete native CDS translation
+        and UniProt sequence. Native AF329398.1:28099..29673(+), codon_start1/table11,
+        includes terminal stop; strain DS12.976/taxon1352936. Strain versus UniProt
+        subspecies taxonomic resolution is explicit.
+      retrieved_on: '2026-10-07'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Exact CloHal native CDS and protein checked independently of the functional
+        evidence. This locus is the existing BGC0000832 clorobiocin owner anchor,
+        not proof of purified catalysis or physical assembly.
+      retrieved_on: '2026-10-07'
+  - subject: role
+    predicate: has_evidence_limit
+    object: limits
+    notes: The2024 aglycone statement is not adopted as a demonstrated substrate.
+      The older thesis explicitly leaves timing unresolved; culture data alone do
+      not settle it.
+    evidence:
+    - reference: DOI:10.1128/spectrum.00423-24
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary discussion interprets culture observations; kinetic or exact-substrate
+        claims were not independently measured here.
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Eustaquio 2004 primary thesis, PDF pp.145; printed pages are ten lower.
+        Retained source inspected, not an independently obtained full journal article.
+  - subject: nondetection
+    predicate: has_evidence_limit
+    object: limits
+    notes: MITE0000419v1 labels model reactions as heterologous/in-vitro evidence.
+      Those database labels are not adopted as primary assay proof; issue667 records
+      the discrepancy.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000419.json
+      evidence_type: DATABASE_ASSERTION
+      notes: Pinned MITE0000419v1, both models flagged as intermediates and citing
+        DOI:10.1128/spectrum.00423-24. Source metadata retained as disputed intake
+        context, not an exact reaction.
+      retrieved_on: '2026-10-07'
+    - reference: DOI:10.1128/spectrum.00423-24
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Retained primary publisher methods/results text inspected; figures, supplement
+        and raw MassIVE data not inspected. Natural-producer culture LC-MSE, biological
+        triplicates; not purified-enzyme kinetics.
 causal_graph_refs:
 - clorobiocin-cloq-variant-constructs-and-preparations
 - clorobiocin-cloq-mutant-activities-and-substrate-kinetics
@@ -527,4 +1032,26 @@ curation_history:
     CloN6 construct, expression, peptide and genetic evidence. Preserve source conflicts,
     cassette effects, six host-specific titers, earlier graphs, source fields, identity,
     histories and SEEDED status (#569).
+  llm_assisted: true
+- timestamp: '2026-10-07T20:36:50Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add two BIOSYNTHESIS graphs grounding native CloHal Q8GHB4 and CloZ Q8GHA5
+    by complete CDS/GenPept/UniProt sequence agreement. Preserve thesis/native length
+    disagreements (525/524 and 254/253 aa), native versus cassette-mutant and rescue
+    identities, condition-bounded CloZ retention, and separate CloHal loss/rescue
+    evidence. Keep 2024 culture metabolomics distinct from inferred enzyme properties;
+    do not adopt MITE0000419 exact reaction or assay labels as primary proof (#667).
+    Every new edge has a DOI or stable URL, with three short thesis snippets. No exact
+    substrate/order, purified kinetics, physical assembly, congener identifier or
+    antimicrobial target added. Preserve all previous fields, 23 graphs, 21 component
+    references, history and SEEDED status.
+  llm_assisted: true
+- timestamp: '2026-10-07T20:47:23Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Correct the new wild_type node label for NCBITaxon:1352936 to its canonical
+    label after the label-correspondence gate finding (#669). Preserve its identifier,
+    all biological assertions, graph topology, citations, snippets, native protein
+    mappings and previous history. No taxonomic reassignment or validator exception.
   llm_assisted: true
