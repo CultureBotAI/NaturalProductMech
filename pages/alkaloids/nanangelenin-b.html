@@ -85,6 +85,33 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">MITE-reported reverse prenylation of exact nanangelenin B as substrate, using sequence-verified NanD from Aspergillus nanangensis MST-FP2251 as the native reference. This database-level context does not assign NanD to the owner&#39;s imported Aspergillus terreus producer or BGC0002198. A publisher search result marked the NanD study purchase-only; no full text was inspected. The distinct owner terreazepine study hit browser verification. Both source contexts remain separate, with no producer-grade or SEEDED-status change.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>NanD native MST-FP2251 reference</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>MITE-reported NanD reverse prenylation</td>
+  <td>MITE and reviewed UniProt supply database functional attribution. Native sequence equality establishes reference correspondence, not historical assay-stock or construct identity. UniProt donor-binding residues are by similarity to Q4WAW7, not measured native binding sites or occupancy. No primary protein-alone assay, kinetics, physical complex or heterologous assay host is adopted.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000443.json<br>https://www.uniprot.org/uniprotkb/A0A6G9KJL7<br>https://www.ncbi.nlm.nih.gov/protein/QIQ51364.1<br>https://www.ncbi.nlm.nih.gov/nuccore/MT024570.1</td>
+</tr>
+<tr>
+  <td>nanangelenin B</td>
+  <td>is_database_example_substrate_of</td>
+  <td>MITE-reported NanD reverse prenylation</td>
+  <td>Pinned exact-structure screening matches the stereospecified MITE substrate to full owner key TVPLZAQWRYWFFT-AWEZNQCLSA-N. This is consumption of nanangelenin B, not its synthesis by NanD. No racemate, opposite stereoisomer, native assay substrate or producer claim is substituted. The owner&#39;s imported A.terreus producer/BGC0002198 and LOTUS A.nanangensis occurrence remain source-owned and unchanged, not unified by this graph.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000443.json</td>
+</tr>
+<tr>
+  <td>MITE-reported NanD reverse prenylation</td>
+  <td>has_database_example_product</td>
+  <td>Nanangelenin C, database intermediate</td>
+  <td>The MITE example labels nanangelenin C intermediate. This graph does not add an external product identifier, final-product claim or downstream NanF/NanB/NanE pathway. The distinct imported owner paper PMID32843555/DOI10.1128/mBio.01691-20 concerns terreazepine and was inaccessible behind browser verification; no identity correction, A.terreus enzyme mapping or producer upgrade is inferred.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000443.json</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
