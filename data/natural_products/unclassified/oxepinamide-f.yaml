@@ -79,6 +79,115 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: oxepinamide-f-opaf-database-methylation
+  scope: BIOSYNTHESIS
+  description: Database-asserted OpaF methylation of oxepinamide E to the exact oxepinamide
+    F structure. Native reference identity is checked; primary experimental data were
+    not inspected. No producer/BGC grade, A. puniceus occurrence, predicted active-site
+    residue or physiological assembly claim is changed. Not full-record sign-off.
+  nodes:
+  - node_id: opaf_reference
+    label: OpaF native reference from A. ustus 3.3904
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A0C1E5J2
+  - node_id: oxepinamide_e
+    label: Oxepinamide E, database-reported substrate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: methylation
+    label: Database-reported C-12 hydroxyl methylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: oxepinamide_f
+    label: Oxepinamide F, exact owner structure
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: naturalproductmech:mibig-97178951c1
+  edges:
+  - subject: opaf_reference
+    predicate: is_database_reported_catalyst_of
+    object: methylation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000363.json
+      evidence_type: DATABASE_ASSERTION
+      notes: MITE0000363 version 1, active, at pinned commit 6eacd913b2036376031072f69cbb33908f132998.
+        The database describes oxepinamide E-to-F methylation. Its knockout evidence
+        code is not independently inspected primary data. No mutant identity, complementation
+        result or assay conditions are adopted.
+      retrieved_on: '2026-10-06'
+      snippet: Methylation of the hydroxyl group at C-12.
+    - reference: https://www.uniprot.org/uniprotkb/A0A0C1E5J2
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 37, sequence 1. FUNCTION assigns OpaF the C-12 hydroxyl
+        methylation yielding oxepinamide F. Its ECO:0000269 annotation cites PMID:33004788;
+        this remains a database assertion here because that primary paper was not
+        accessible. Protein existence is listed as inferred from homology, not direct
+        native-protein detection.
+      retrieved_on: '2026-10-07'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/KIA75453.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Conceptual translation, locus HK57_00060, A. ustus strain 3.3904, taxon
+        40382; full sequence and independent coded_by inspected.
+      retrieved_on: '2026-10-07'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/JOMC01000153.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Complete 1263-nt five-exon CDS, standard table 1: join(1877..2119,2176..2302,2389..2512,2578..3032,3092..3405),
+        plus strand. Full translation equals GenPept KIA75453.1 and UniProt A0A0C1E5J2,
+        420 residues. This grounds a native genomic reference, not a historical transcript,
+        mutant stock or experimental construct.'
+      retrieved_on: '2026-10-07'
+    notes: MITE and UniProt associate OpaF with the named methylation. The accession
+      denotes the verified native genomic reference; it does not assert sequence identity
+      of an inaccessible-paper construct. No catalytic rate, purified-enzyme conditions,
+      exact experimental stock, homodimer or predicted active-site mechanism is adopted.
+  - subject: oxepinamide_e
+    predicate: is_database_reported_substrate_of
+    object: methylation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000363.json
+      evidence_type: DATABASE_ASSERTION
+      notes: MITE0000363 version 1, active, at pinned commit 6eacd913b2036376031072f69cbb33908f132998.
+        The database describes oxepinamide E-to-F methylation. Its knockout evidence
+        code is not independently inspected primary data. No mutant identity, complementation
+        result or assay conditions are adopted.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/A0A0C1E5J2
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 37, sequence 1. FUNCTION assigns OpaF the C-12 hydroxyl
+        methylation yielding oxepinamide F. Its ECO:0000269 annotation cites PMID:33004788;
+        this remains a database assertion here because that primary paper was not
+        accessible. Protein existence is listed as inferred from homology, not direct
+        native-protein detection.
+      retrieved_on: '2026-10-07'
+    notes: The database explicitly names oxepinamide E, not the upstream 15-epi-oxepinamide
+      E. No external compound identifier is selected for this substrate, and no additional
+      upstream step is inferred.
+  - subject: methylation
+    predicate: has_database_reported_product
+    object: oxepinamide_f
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000363.json
+      evidence_type: DATABASE_ASSERTION
+      notes: MITE0000363 version 1, active, at pinned commit 6eacd913b2036376031072f69cbb33908f132998.
+        The database describes oxepinamide E-to-F methylation. Its knockout evidence
+        code is not independently inspected primary data. No mutant identity, complementation
+        result or assay conditions are adopted.
+      retrieved_on: '2026-10-06'
+    - reference: https://www.uniprot.org/uniprotkb/A0A0C1E5J2
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry 37, sequence 1. FUNCTION assigns OpaF the C-12 hydroxyl
+        methylation yielding oxepinamide F. Its ECO:0000269 annotation cites PMID:33004788;
+        this remains a database assertion here because that primary paper was not
+        accessible. Protein existence is listed as inferred from homology, not direct
+        native-protein detection.
+      retrieved_on: '2026-10-07'
+    notes: The pinned MITE reaction example's full Standard InChIKey matches HFZOLZVOTSSKSM-WSZRMNBISA-N,
+      with defined stereochemistry, using the repository structure helper and RDKit
+      2026.03.5. The example marks this as a non-intermediate product. This does not
+      upgrade the owner's SOURCE_ASSERTION producer or CLUSTER_UNSTATED BGC grade,
+      and does not transfer production to the separate A. puniceus occurrence.
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
   curator: seed_from_sources
@@ -88,3 +197,16 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-07T02:27:31Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the first OpaF biosynthesis graph, 4 nodes and 3 database-asserted
+    edges, each with stable pinned MITE and UniProt sources. Current native reference
+    A0A0C1E5J2/HK57_00060 matches complete five-exon CDS and independent GenPept KIA75453.1
+    from A. ustus strain 3.3904. The pinned MITE product matches the complete owner
+    structure. Primary experimental data were inaccessible and are not claimed inspected;
+    no knockout details, assay-stock identity, catalytic residue or physiological
+    assembly claim is adopted. One exact seven-word MITE snippet is retained. Preserved
+    all source fields, structure, grades, SEEDED status, A. puniceus occurrence and
+    prior history. Not full-record sign-off.
+  llm_assisted: true
