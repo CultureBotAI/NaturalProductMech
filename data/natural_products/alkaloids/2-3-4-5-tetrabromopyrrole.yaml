@@ -109,6 +109,104 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0001463, BGC0001464.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+causal_graphs:
+- graph_id: tetrabromopyrrole-ps5-bmp2-genetic-production-context
+  scope: BIOSYNTHESIS
+  description: PS5 bmp2 in-frame deletion and loss of detected tetrabromopyrrole production,
+    with a separately grounded native reference protein. A genetic-production context,
+    not direct Bmp2 catalysis. Reference correspondence is not proof of experimental-stock
+    sequence identity. Only extracted main text was inspected; no successful visual
+    figure or supplementary-method review, rescue, quantitative yield or pathway-finality
+    claim.
+  nodes:
+  - node_id: bmp2_gene
+    label: bmp2 gene, PS5 reference locus
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: bmp2_reference
+    label: Bmp2, native PS5 reference protein
+    node_type: PROTEIN
+    identifier: NCBIProtein:AKJ75108.1
+    grounding_status: GROUNDED
+  - node_id: bmp2_deletion
+    label: PS5 bmp2 in-frame deletion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: tbp_production
+    label: Detected TBP production in PS5 under tested conditions
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: tetrabromopyrrole
+    label: 2,3,4,5-tetrabromopyrrole
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-dcee736e16
+    grounding_status: GROUNDED
+  edges:
+  - subject: bmp2_gene
+    predicate: encodes_reference_protein
+    object: bmp2_reference
+    notes: Reference-locus mapping only. Native PS5 Bmp2 is not O-BC30 A0A0S2JXW2
+      (43-aa difference) or the PDB-linked 409-aa GSH construct A0A140UHM3 with conflicting
+      Streptomyces taxonomy. Neither selected as a PS5 UniProt example. Bounded official
+      gene/taxon and AKJ75108 queries returned no current entry, not universal absence
+      of aliases.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AKJ75108.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native PS5/taxon1437473 Bmp2 conceptual translation, 406aa; gene bmp2
+        and coded_by KR011923.1:2810..4030, table11. Not an independent protein assay.
+      retrieved_on: '2026-10-07'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KR011923.1
+      evidence_type: CURATOR_INFERENCE
+      notes: Complete1221-nt plus-CDS2810..4030, codon1/table11, equals annotation
+        and independent GenPept, all406aa; coded_by coordinates/DNA and PS5/taxon
+        agree. KR011923.1 is a6705-bp cluster, not a complete genome.
+      retrieved_on: '2026-10-07'
+    - reference: DOI:10.1038/s43705-023-00309-6
+      evidence_type: CURATOR_INFERENCE
+      notes: Fig1B caption cites PS5 cluster KR011923. Mapping its named bmp2 reference
+        to the native CDS is curator inference; the experimental stock and mutant
+        sequence were not independently verified.
+      retrieved_on: '2026-10-07'
+  - subject: bmp2_deletion
+    predicate: targets
+    object: bmp2_gene
+    notes: Reported in-frame deletion in PS5. No exact deletion junctions, off-target
+      exclusion or complementation/rescue adopted.
+    evidence:
+    - reference: DOI:10.1038/s43705-023-00309-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main text page1 describes the bmp2 deletion; Fig1B caption identifies
+        the PS5 reference cluster. Supplementary construction methods were not inspected.
+      retrieved_on: '2026-10-07'
+  - subject: bmp2_deletion
+    predicate: eliminates_detected_production
+    object: tbp_production
+    notes: Qualitative mutant-versus-wild-type production readout under tested conditions
+      only. Not proof of absence under every condition or Bmp2-alone catalytic sufficiency.
+      No quantitative concentrations or normalization adopted without supplementary
+      methods.
+    evidence:
+    - reference: DOI:10.1038/s43705-023-00309-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main text page1 production-loss paragraph and Fig1D caption, page2. LC-MS/MS
+        of three replicate5-mL culture extractions per treatment. Full extracted main
+        text inspected; subsequent figure-render retrieval timed out, so no visual
+        figure or supplementary-method verification.
+      retrieved_on: '2026-10-07'
+      snippet: resulted in the complete loss of TBP production
+  - subject: tbp_production
+    predicate: has_measured_product
+    object: tetrabromopyrrole
+    notes: Reported TBP identity in culture extracts, not a new structural determination,
+      purified-enzyme conversion or pure-compound bioactivity assay.
+    evidence:
+    - reference: DOI:10.1038/s43705-023-00309-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main text page1 identifies TBP as tetrabromopyrrole; Fig1D caption names
+        the LC-MS/MS production readout. No carrier-bound substrate or pathway order
+        inferred.
+      retrieved_on: '2026-10-07'
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -118,3 +216,21 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-07T11:32:11Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added a five-node/four-edge PS5 bmp2 genetic-production context citing
+    the inspected 2023 main text and sequence reference URLs. In-frame deletion and
+    qualitative loss of detected TBP production are primary genetic/LC-MS/MS evidence,
+    not protein-alone catalysis or a purified-substrate assay. Grounded only native
+    reference Bmp2 to NCBIProtein:AKJ75108.1: full1221-nt KR011923.1 CDS2810..4030(+),
+    codon1/table11, annotation and independent GenPept/coded_by agree, all406aa, PS5/taxon1437473.
+    Reference-locus correspondence does not sequence-verify the experimental stock.
+    No UniProt example selected: O-BC30 differs and the PDB-linked entry is a tagged
+    construct with conflicting taxonomy. Added one exact eight-word primary snippet.
+    No visual figure or supplementary-method verification, rescue, quantitative yield,
+    carrier identity, reaction order, cofactor occupancy, structure-function claim
+    or pure-compound bioactivity adopted. Preserved all existing source grades, identity,
+    stereochemistry, classifications, producers, BGCs, open discussion, SEEDED status
+    and append-only history; no full-record sign-off.'
+  llm_assisted: true
