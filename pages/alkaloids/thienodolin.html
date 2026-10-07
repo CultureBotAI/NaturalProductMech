@@ -95,6 +95,33 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">MITE-asserted ThdD amidation yielding thienodolin. The native Streptomyces albogriseolus MJ286-76F7 reference is verified independently; current UniProt supports identity, not a compound-specific activity assertion. Its automated AsnB annotation is not adopted as thienodolin chemistry. No ThnA experiment, pathway finality or source-grade upgrade is inferred; not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>ThdD native MJ286-76F7 reference</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>MITE-reported ThdD carboxylic-acid amidation</td>
+  <td>MITE supplies functional attribution; independent sequence deposits establish identity only. No native assay, rate, knockout phenotype, AsnB reaction, predicted site, cofactor state or physiological complex is adopted. Producer and cluster grades remain SOURCE_ASSERTION/CLUSTER_UNSTATED.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000431.json<br>https://www.uniprot.org/uniprotkb/M1MEQ9<br>https://www.uniprot.org/uniparc/UPI0002B76286<br>https://www.ncbi.nlm.nih.gov/protein/ANW12109.1<br>https://www.ncbi.nlm.nih.gov/nuccore/KU569241.1</td>
+</tr>
+<tr>
+  <td>6-Chlorothieno[2,3-b]indole-2-carboxylic acid, database substrate</td>
+  <td>is_database_reported_substrate_of</td>
+  <td>MITE-reported ThdD carboxylic-acid amidation</td>
+  <td>MITE names and encodes the acid substrate; no external substrate identifier or upstream pathway is inferred. Its atom-mapped SMARTS is not executed or adopted as a transformation rule; this graph uses the explicit example.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000431.json</td>
+</tr>
+<tr>
+  <td>MITE-reported ThdD carboxylic-acid amidation</td>
+  <td>has_database_reported_product</td>
+  <td>thienodolin</td>
+  <td>The pinned MITE example product matches owner full InChIKey LREDECYEGMWOAR-UHFFFAOYSA-N and complete stereo in the retained repository-helper/RDKit2026.03.5 screen. No pathway finality, ThnA experiment or producer-grade upgrade is inferred. Existing occurrences, source fields and history remain unchanged.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000431.json</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
