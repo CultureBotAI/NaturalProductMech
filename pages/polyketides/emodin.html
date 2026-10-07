@@ -238,6 +238,33 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">MITE-asserted PhoG oxidation of emodin anthrone yielding the exact emodin structure as an intermediate in the reported phomoxanthone A pathway. The native Diaporthe SYSU-MS4722 reference is grounded in NCBIProtein, not a UniParc ID relabeled as UniProtKB. It is not assigned to the owner&#39;s distinct Aspergillus/BGC0000101 source. Existing CK2/FabZ bioactivity graphs and all source fields and grades are preserved; not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>PhoG native reference from Diaporthe SYSU-MS4722</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>MITE-reported emodin anthrone oxidation</td>
+  <td>MITE supplies functional attribution; sequence deposits establish identity only. The Diaporthe reference is not inferred to be an Aspergillus nidulans FGSC A4 protein. No physiological membrane topology, complex, active-site residue, rate, assay condition, oxygen-donor identity or inspected primary experiment is claimed.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000162.json<br>https://www.ncbi.nlm.nih.gov/protein/UPG58736.1<br>https://www.ncbi.nlm.nih.gov/nuccore/OL450412.1<br>https://www.uniprot.org/uniparc/UPI00206D4B6A</td>
+</tr>
+<tr>
+  <td>Emodin anthrone, MITE-reported substrate</td>
+  <td>is_database_reported_substrate_of</td>
+  <td>MITE-reported emodin anthrone oxidation</td>
+  <td>MITE names emodin anthrone and supplies the corresponding example substrate. No external substrate identifier, additional precursor-generation step or independently inspected assay is adopted.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000162.json</td>
+</tr>
+<tr>
+  <td>MITE-reported emodin anthrone oxidation</td>
+  <td>has_database_reported_product</td>
+  <td>emodin</td>
+  <td>Pinned MITE product matches full owner InChIKey RHMXXJGYXNZAPX-UHFFFAOYSA-N and complete stereochemical status using the repository helper and RDKit2026.03.5. MITE explicitly places emodin in the phomoxanthone A pathway; no downstream step or final-product claim is invented. The owner&#39;s BGC_CHARACTERIZED Aspergillus producer, CLUSTER_DEMONSTRATED BGC0000101/BN001308.1, occurrences, targets and prior bioactivity graphs stay unchanged.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000162.json</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 <h2>Molecular targets <span class="tag">6</span></h2>
 <div class="scroll"><table>
