@@ -85,8 +85,8 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
-<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
-<p class="sub">Database-asserted OpaF methylation of oxepinamide E to the exact oxepinamide F structure. Native reference identity is checked; primary experimental data were not inspected. No producer/BGC grade, A. puniceus occurrence, predicted active-site residue or physiological assembly claim is changed. Not full-record sign-off.</p><div class="scroll"><table>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">15 nodes, 14 edges</span></h2>
+<p class="sub">Database-asserted assembly and tailoring route to oxepinamide F, extending the existing OpaF graph with OpaA, OpaB, OpaC and OpaE native references. All five native sequences are verified, but primary experimental data were not inspected. Upstream named intermediates remain ungrounded. MITE&#39;s incomplete intermediate stereochemistry and product-status caveat are retained; no kinetic, knockout, physical-complex, predicted residue or physiological assembly claim is adopted. Source-owned fields, grades, occurrences and SEEDED status are unchanged; not full-record sign-off.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>OpaF native reference from A. ustus 3.3904</td>
@@ -108,6 +108,83 @@ isolation report left it.</p>
   <td>Oxepinamide F, exact owner structure</td>
   <td>The pinned MITE reaction example&#39;s full Standard InChIKey matches HFZOLZVOTSSKSM-WSZRMNBISA-N, with defined stereochemistry, using the repository structure helper and RDKit 2026.03.5. The example marks this as a non-intermediate product. This does not upgrade the owner&#39;s SOURCE_ASSERTION producer or CLUSTER_UNSTATED BGC grade, and does not transfer production to the separate A. puniceus occurrence.</td>
   <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000363.json<br>https://www.uniprot.org/uniprotkb/A0A0C1E5J2</td>
+</tr>
+<tr>
+  <td>opaA native reference from A. ustus 3.3904</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>Database-reported NRPS assembly of protuboxepin K</td>
+  <td>UniProt describes assembly from anthranilic acid, L-Phe and L-Ile, with D-Phe incorporation and release of protuboxepin K. This is a database assertion, not inspected module assays, substrate-loading measurements or native carrier-state proof.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/A0A0C1E5J8<br>https://www.ncbi.nlm.nih.gov/protein/KIA75458.1<br>https://www.ncbi.nlm.nih.gov/nuccore/JOMC01000153.1</td>
+</tr>
+<tr>
+  <td>Database-reported NRPS assembly of protuboxepin K</td>
+  <td>has_database_reported_product</td>
+  <td>Protuboxepin K, database-reported intermediate</td>
+  <td>UniProt describes assembly from anthranilic acid, L-Phe and L-Ile, with D-Phe incorporation and release of protuboxepin K. This is a database assertion, not inspected module assays, substrate-loading measurements or native carrier-state proof.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/A0A0C1E5J8</td>
+</tr>
+<tr>
+  <td>opaB native reference from A. ustus 3.3904</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>Database-reported oxepin ring formation</td>
+  <td>UniProt and MITE name protuboxepin K-to-A oxepin ring formation. The MITE example leaves a side-chain stereocenter unspecified in the product. No complete chemical identity or independently inspected heterologous experiment is inferred from that example; these intermediates remain ungrounded named nodes.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/A0A0C1E1L9<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000349.json<br>https://www.ncbi.nlm.nih.gov/protein/KIA75457.1<br>https://www.ncbi.nlm.nih.gov/nuccore/JOMC01000153.1</td>
+</tr>
+<tr>
+  <td>Protuboxepin K, database-reported intermediate</td>
+  <td>is_database_reported_substrate_of</td>
+  <td>Database-reported oxepin ring formation</td>
+  <td>UniProt and MITE name protuboxepin K-to-A oxepin ring formation. The MITE example leaves a side-chain stereocenter unspecified in the product. No complete chemical identity or independently inspected heterologous experiment is inferred from that example; these intermediates remain ungrounded named nodes.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/A0A0C1E1L9<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000349.json</td>
+</tr>
+<tr>
+  <td>Database-reported oxepin ring formation</td>
+  <td>has_database_reported_product</td>
+  <td>Protuboxepin A, database-reported intermediate</td>
+  <td>UniProt and MITE name protuboxepin K-to-A oxepin ring formation. The MITE example leaves a side-chain stereocenter unspecified in the product. No complete chemical identity or independently inspected heterologous experiment is inferred from that example; these intermediates remain ungrounded named nodes.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/A0A0C1E1L9<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000349.json</td>
+</tr>
+<tr>
+  <td>opaC native reference from A. ustus 3.3904</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>Database-reported hydroxylation with double-bond migration</td>
+  <td>UniProt and MITE describe protuboxepin A hydroxylation with double-bond migration to 15-epi-oxepinamide E. MITE&#39;s example omits stereochemical encoding; its isIntermediate=false flag is not used to classify the named compound&#39;s pathway role. No exact-structure match or final-product claim is taken from those fields. UniProt&#39;s separate kinetic substrate label is not used to identify this step.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/A0A0C1BV72<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000372.json<br>https://www.ncbi.nlm.nih.gov/protein/KIA75456.1<br>https://www.ncbi.nlm.nih.gov/nuccore/JOMC01000153.1</td>
+</tr>
+<tr>
+  <td>Protuboxepin A, database-reported intermediate</td>
+  <td>is_database_reported_substrate_of</td>
+  <td>Database-reported hydroxylation with double-bond migration</td>
+  <td>UniProt and MITE describe protuboxepin A hydroxylation with double-bond migration to 15-epi-oxepinamide E. MITE&#39;s example omits stereochemical encoding; its isIntermediate=false flag is not used to classify the named compound&#39;s pathway role. No exact-structure match or final-product claim is taken from those fields. UniProt&#39;s separate kinetic substrate label is not used to identify this step.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/A0A0C1BV72<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000372.json</td>
+</tr>
+<tr>
+  <td>Database-reported hydroxylation with double-bond migration</td>
+  <td>has_database_reported_product</td>
+  <td>15-epi-oxepinamide E, database-reported intermediate</td>
+  <td>UniProt and MITE describe protuboxepin A hydroxylation with double-bond migration to 15-epi-oxepinamide E. MITE&#39;s example omits stereochemical encoding; its isIntermediate=false flag is not used to classify the named compound&#39;s pathway role. No exact-structure match or final-product claim is taken from those fields. UniProt&#39;s separate kinetic substrate label is not used to identify this step.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/A0A0C1BV72<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000372.json</td>
+</tr>
+<tr>
+  <td>opaE native reference from A. ustus 3.3904</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>Database-reported D-to-L aminoacyl epimerization</td>
+  <td>UniProt assigns conversion of 15-epi-oxepinamide E to oxepinamide E by changing the Phe configuration. This connects to the already curated, database-reported OpaF substrate without equating the two epimers. Kinetic values, disruption phenotypes and the homolog-transferred residue90 mechanism are not adopted.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/A0A0C1EFK1<br>https://www.ncbi.nlm.nih.gov/protein/KIA75454.1<br>https://www.ncbi.nlm.nih.gov/nuccore/JOMC01000153.1</td>
+</tr>
+<tr>
+  <td>15-epi-oxepinamide E, database-reported intermediate</td>
+  <td>is_database_reported_substrate_of</td>
+  <td>Database-reported D-to-L aminoacyl epimerization</td>
+  <td>UniProt assigns conversion of 15-epi-oxepinamide E to oxepinamide E by changing the Phe configuration. This connects to the already curated, database-reported OpaF substrate without equating the two epimers. Kinetic values, disruption phenotypes and the homolog-transferred residue90 mechanism are not adopted.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/A0A0C1EFK1</td>
+</tr>
+<tr>
+  <td>Database-reported D-to-L aminoacyl epimerization</td>
+  <td>has_database_reported_product</td>
+  <td>Oxepinamide E, database-reported substrate</td>
+  <td>UniProt assigns conversion of 15-epi-oxepinamide E to oxepinamide E by changing the Phe configuration. This connects to the already curated, database-reported OpaF substrate without equating the two epimers. Kinetic values, disruption phenotypes and the homolog-transferred residue90 mechanism are not adopted.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/A0A0C1EFK1</td>
 </tr>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
