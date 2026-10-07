@@ -282,6 +282,33 @@ derived from a source. This is what the rest of the record exists to support.</p
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">MITE-reported farnesyl-prenylation of exact o-orsellinic acid as substrate. AscA is the sequence-verified native Acremonium egyptiacum F-1392 reference. This separate database context consumes the owner compound and does not replace its Aspergillus nidulans OrsA synthesis pathway or transfer producer or BGC assertions. Functional evidence remains database-level; the primary paper was inaccessible. Product geometry and ionic-form limits remain explicit; existing open discussions and SEEDED status are preserved.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>AscA native F-1392 reference</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>MITE-reported AscA farnesyl-prenylation</td>
+  <td>MITE and reviewed UniProt supply database functional attribution; native sequence equality establishes reference correspondence, not historical assay-stock or construct identity. The primary paper was inaccessible. UniProt&#39;s Mg2+ annotation is by similarity, not a native cofactor measurement; no occupancy, kinetics, localization or physical complex is adopted.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000374.json<br>https://www.uniprot.org/uniprotkb/A0A455R413<br>https://www.ncbi.nlm.nih.gov/protein/BBF25313.1<br>https://www.ncbi.nlm.nih.gov/nuccore/LC406756.1</td>
+</tr>
+<tr>
+  <td>o-orsellinic acid</td>
+  <td>is_database_example_substrate_of</td>
+  <td>MITE-reported AscA farnesyl-prenylation</td>
+  <td>The pinned exact-structure screen matches the MITE neutral-acid example to full owner key AMKYESDOVDKZKV-UHFFFAOYSA-N with complete stereochemistry. UniProt&#39;s orsellinate reaction is a distinct ionic representation, not a replacement owner identity. No exact native assay substrate, synthesis by AscA or new production claim inferred.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000374.json</td>
+</tr>
+<tr>
+  <td>MITE-reported AscA farnesyl-prenylation</td>
+  <td>has_database_example_product</td>
+  <td>Ilicicolinic acid B, database intermediate</td>
+  <td>MITE&#39;s ilicicolinic acid B example is intermediate and leaves alkene geometry unspecified. It remains externally ungrounded; no ionic Rhea product identifier or stereospecific product mapping is transferred. No downstream enzyme sequence, product finality, BGC0001923 transfer or native reference-organism producer upgrade is inferred. Existing OrsA synthesis and all source fields remain.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000374.json</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">5</span></h2>

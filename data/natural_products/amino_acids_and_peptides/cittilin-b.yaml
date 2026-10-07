@@ -97,10 +97,11 @@ causal_graphs:
 - graph_id: cittilin-b-citb-mxpep-database-maturation
   scope: BIOSYNTHESIS
   description: MITE-narrated CitB precursor crosslinking followed by MxPep-mediated
-    leader removal to yield the intermediate cittilin B. These are separate database
-    assertions, not a CitB-alone free-product assay. CitB's native DK1622 reference
-    is sequence-verified; MxPep and precursor states remain ungrounded. No primary
-    assay, physical complex or pathway finality is inferred; not full-record sign-off.
+    leader removal to yield the intermediate cittilin B. Separate database assertions,
+    not a CitB-alone free-product assay. CitB and the unmodified precursor have sequence-verified
+    native DK1622 references; the CitA alias is a curator mapping, not an assay-stock
+    claim. MxPep and the modified precursor remain ungrounded. No primary assay, physical
+    complex or pathway finality is inferred; not full-record sign-off.
   nodes:
   - node_id: citb_reference
     label: CitB native DK1622 reference
@@ -108,9 +109,10 @@ causal_graphs:
     grounding_status: GROUNDED
     identifier: NCBIProtein:QLH55579.1
   - node_id: cita_precursor
-    label: CitA precursor peptide, database narrative
+    label: CitA unmodified precursor, native DK1622 reference
     node_type: PRECURSOR
-    grounding_status: UNGROUNDED
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:QLH55578.1
   - node_id: crosslinking
     label: MITE-reported CitB precursor crosslinking
     node_type: PROCESS
@@ -179,9 +181,36 @@ causal_graphs:
         and BGC0002043. Its narrative assigns precursor crosslinking to CitB and leader
         removal to MxPep. Assay and knockout codes remain database assertions; the
         cited primary paper was inaccessible. No independently inspected primary assay.
-    notes: The narrative names a CitA precursor with a YIYY core. Its full sequence
-      and external identity are not grounded here. The encoded free tetrapeptide example
-      does not prove that leader-free substrate was assayed with CitB alone.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLH55578.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      snippet: cittilin precursor peptide
+      notes: Complete27-aa native DK1622/taxon246197 reference. No native gene qualifier.
+        Full coded_by inspected; sequence reference only, not an assay-stock or construct
+        identity.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Full84-nt plus-CDS11281..11364, codon1/table11, matches annotation, independent
+        QLH55578.1 and UniParc, all27aa. Exact coded_by DNA/coordinates and DK1622/taxon246197
+        agree. CitA alias mapping uses the native cittilin-precursor annotation, same
+        BGC0002043 and terminal YIYY core with MITE's narrative; not a native gene-name
+        assertion or historical assay proof. MN731368.1 is a21261-bp BGC sequence,
+        not a full genome.
+    - reference: https://www.uniprot.org/uniparc/UPI001751B65D
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: 'Exact27-aa archive with active EMBL QLH55578 version1/taxon246197. All
+        three listed UniProtKB references are inactive: A0A7D5NMR6, A0A7D5NMW3 and
+        native-strain A0A7D5SLS4. None selected as current UniProt. Official accession
+        QLH55578 and gene_exact:citA/organism_id:246197 searches returned zero results;
+        bounded queries/archive only, not universal absence. UniParc is not UniProtKB.'
+    notes: The native unmodified27-aa reference MKKALYSLAVLMRFARADKLSAPYIYY contains
+      the database-narrated YIYY core; it is not the free tetrapeptide or the modified
+      precursor state. CitA alias assignment is curator-inferred, while function remains
+      MITE's database assertion. No historical assay stock, construct or exact leader-cleavage
+      site is established. The encoded free tetrapeptide example does not prove that
+      leader-free substrate was assayed with CitB alone.
   - subject: crosslinking
     predicate: has_database_narrated_precursor_product
     object: crosslinked_precursor
@@ -269,4 +298,23 @@ curation_history:
     BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED grades, both occurrences, SEEDED status
     and append-only history. The separate cittilin A owner and CitC graph are unchanged.
     Not full-record sign-off.'
+  llm_assisted: true
+- timestamp: '2026-10-07T11:32:11Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Grounded the existing unmodified CitA precursor node to the native DK1622
+    reference NCBIProtein:QLH55578.1 without adding nodes or edges. Complete84-nt
+    plus-CDS11281..11364 on MN731368.1, codon1/table11, equals annotation, independent
+    GenPept and UniParc UPI001751B65D, all27aa; coded_by DNA/coordinates and strain/taxon246197
+    agree. The CitA alias is a curator mapping from the native cittilin-precursor
+    annotation, same named BGC and terminal YIYY core to MITE0000426's narrative,
+    not a native gene qualifier or historical assay-stock proof. All three archive
+    UniProt references are inactive; no current UniProt example selected. Added stable
+    sequence URLs and one exact three-word annotation snippet on the existing substrate
+    edge. Updated only the graph description, precursor node and its edge evidence/limitations.
+    MxPep and the modified precursor remain ungrounded; no cleavage-site, free-core
+    assay, construct, primary assay or physical complex adopted. Primary paper inaccessible.
+    Preserved other nodes, edge predicates/direction/evidence, source fields/grades,
+    occurrences, SEEDED status and append-only history; no product/finality upgrade
+    or full-record sign-off.
   llm_assisted: true

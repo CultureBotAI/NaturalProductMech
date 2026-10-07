@@ -664,6 +664,114 @@ causal_graphs:
       retrieved_on: '2026-09-27'
       notes: NCBI GenPept EAA59563.1 is locus_tag AN7909.2 from the BGC0000057 AACD01000135.1
         Aspergillus nidulans FGSC A4 locus and is sequence-identical to reviewed UniProtKB:Q5AUX1.
+- graph_id: o-orsellinic-acid-asca-database-substrate-prenylation
+  scope: BIOSYNTHESIS
+  description: MITE-reported farnesyl-prenylation of exact o-orsellinic acid as substrate.
+    AscA is the sequence-verified native Acremonium egyptiacum F-1392 reference. This
+    separate database context consumes the owner compound and does not replace its
+    Aspergillus nidulans OrsA synthesis pathway or transfer producer or BGC assertions.
+    Functional evidence remains database-level; the primary paper was inaccessible.
+    Product geometry and ionic-form limits remain explicit; existing open discussions
+    and SEEDED status are preserved.
+  nodes:
+  - node_id: asca_reference
+    label: AscA native F-1392 reference
+    node_type: ENZYME
+    identifier: UniProtKB:A0A455R413
+    grounding_status: GROUNDED
+  - node_id: orsellinic_acid
+    label: o-orsellinic acid
+    node_type: COMPOUND
+    identifier: CHEBI:32807
+    grounding_status: GROUNDED
+  - node_id: prenylation
+    label: MITE-reported AscA farnesyl-prenylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: ilicicolinic_acid_b
+    label: Ilicicolinic acid B, database intermediate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: asca_reference
+    predicate: is_database_reported_catalyst_of
+    object: prenylation
+    notes: MITE and reviewed UniProt supply database functional attribution; native
+      sequence equality establishes reference correspondence, not historical assay-stock
+      or construct identity. The primary paper was inaccessible. UniProt's Mg2+ annotation
+      is by similarity, not a native cofactor measurement; no occupancy, kinetics,
+      localization or physical complex is adopted.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000374.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Active MITE0000374 version1 names AscA/A0A455R413/BBF25313.1 and BGC0001923.
+        Its single reaction example consumes orsellinic acid and marks ilicicolinic
+        acid B intermediate. Heterologous expression is the database evidence code,
+        not an independently inspected primary experiment. Its DOI is truncated 10.1073/pnas.181925411;
+        GenPept and UniProt identify the full citation as 10.1073/pnas.1819254116.
+        That primary paper was inaccessible.
+      snippet: Prenylates orsellinic acid in the ascochlorin/ascofuranone biosynthetic
+        pathway.
+    - reference: https://www.uniprot.org/uniprotkb/A0A455R413
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Current Swiss-Prot entry20/sequence1,336aa, ascA/taxon749675, with F-1392
+        in genomic-sequence reference provenance and EMBL LC406756/BBF25313.1 link.
+        Its reaction uses orsellinate and (2E,6E)-farnesyl diphosphate to form ilicicolinate
+        B, RHEA63012/left-to-right63013. Database assertion, not a newly inspected
+        assay. Mg2+ is ECO0000250 by similarity to P32378; broad downstream narrative
+        and predicted membrane features are not adopted.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BBF25313.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Independent complete336-aa native prenyltransferase, UbiA family, geneascA,
+        Acremonium egyptiacum F-1392/taxon749675. Its reverse coded_by is LC406756.1:2461..3471.
+        Native reference only, not an assay construct.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LC406756.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Full1011-nt reverse-CDS2461..3471, codon1/defaulttable1, equals native
+        annotation, independent GenPept and current UniProt, all336aa. Independent
+        coded_by coordinates/DNA and F-1392/taxon749675 agree. Complete33001-bp cluster
+        retained; metadata and full target CDS inspected, not a whole-genome annotation
+        audit.
+  - subject: orsellinic_acid
+    predicate: is_database_example_substrate_of
+    object: prenylation
+    notes: The pinned exact-structure screen matches the MITE neutral-acid example
+      to full owner key AMKYESDOVDKZKV-UHFFFAOYSA-N with complete stereochemistry.
+      UniProt's orsellinate reaction is a distinct ionic representation, not a replacement
+      owner identity. No exact native assay substrate, synthesis by AscA or new production
+      claim inferred.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000374.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Active MITE0000374 version1 names AscA/A0A455R413/BBF25313.1 and BGC0001923.
+        Its single reaction example consumes orsellinic acid and marks ilicicolinic
+        acid B intermediate. Heterologous expression is the database evidence code,
+        not an independently inspected primary experiment. Its DOI is truncated 10.1073/pnas.181925411;
+        GenPept and UniProt identify the full citation as 10.1073/pnas.1819254116.
+        That primary paper was inaccessible.
+  - subject: prenylation
+    predicate: has_database_example_product
+    object: ilicicolinic_acid_b
+    notes: MITE's ilicicolinic acid B example is intermediate and leaves alkene geometry
+      unspecified. It remains externally ungrounded; no ionic Rhea product identifier
+      or stereospecific product mapping is transferred. No downstream enzyme sequence,
+      product finality, BGC0001923 transfer or native reference-organism producer
+      upgrade is inferred. Existing OrsA synthesis and all source fields remain.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000374.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Active MITE0000374 version1 names AscA/A0A455R413/BBF25313.1 and BGC0001923.
+        Its single reaction example consumes orsellinic acid and marks ilicicolinic
+        acid B intermediate. Heterologous expression is the database evidence code,
+        not an independently inspected primary experiment. Its DOI is truncated 10.1073/pnas.181925411;
+        GenPept and UniProt identify the full citation as 10.1073/pnas.1819254116.
+        That primary paper was inaccessible.
 curation_history:
 - timestamp: '2026-09-10T05:54:03Z'
   curator: seed_from_sources
@@ -682,4 +790,24 @@ curation_history:
   action: RECORD_CURATED
   changes: Added the Aspergillus nidulans OrsA o-orsellinate biosynthetic step and
     a BIOSYNTHESIS causal graph grounded to reviewed UniProtKB:Q5AUX1.
+  llm_assisted: true
+- timestamp: '2026-10-07T11:32:11Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added a separate four-node/three-edge AscA database substrate-prenylation
+    graph, preserving the complete existing OrsA synthesis pathway/graph and every
+    prior field. The MITE example uses the owner''s exact acid structure as substrate,
+    not product. UniProtKB:A0A455R413 is the native Acremonium egyptiacum F-1392 reference:
+    full1011-nt reverse CDS2461..3471 on LC406756.1, codon1/defaulttable1, equals
+    annotation, independent GenPept BBF25313.1 and current Swiss-Prot20/sequence1,
+    all336aa; coded_by DNA/coordinates and source taxon749675/strain provenance agree.
+    Each new functional edge cites pinned MITE0000374v1, with one exact eight-word
+    snippet; sequence and UniProt URLs ground identity and database function. MITE''s
+    truncated DOI is disclosed; the full DOI was verified in sequence-database bibliographies,
+    but the primary article was inaccessible. No primary assay, historical stock/construct,
+    native Mg occupancy, kinetics or complex inferred. The intermediate acid product
+    remains ungrounded with alkene geometry unspecified; ionic Rhea products and downstream
+    finality are not substituted. No BGC0001923 or producer transfer. Preserved source
+    grades, occurrences, bioactivities, stereochemistry, classifications, both open
+    discussions, SEEDED status and append-only history; not full-record sign-off.'
   llm_assisted: true
