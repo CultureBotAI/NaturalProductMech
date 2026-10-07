@@ -88,6 +88,104 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: oxepinamide-d-opac2-database-hydroxylation
+  scope: BIOSYNTHESIS
+  description: MITE-asserted OpaC2 hydroxylation yielding the exact oxepinamide D
+    structure. Native genomic identity is checked; functional attribution comes from
+    MITE, not a UniProt FUNCTION annotation or personally inspected primary experiments.
+    This is the oxepinamide D cluster reference, not the distinct OpaC of the oxepinamide
+    F cluster. No producer/BGC grade or occurrence claim is changed; not full-record
+    sign-off.
+  nodes:
+  - node_id: opac2_reference
+    label: OpaC2 native reference from A. ustus 3.3904
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A0C1BVY7
+  - node_id: oxepin_substrate
+    label: MITE-reported 1H-oxepin substrate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: c3_hydroxylation
+    label: MITE-reported C-3 hydroxylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: oxepinamide_d
+    label: Oxepinamide D, exact owner structure
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: naturalproductmech:mibig-d43cae12e4
+  edges:
+  - subject: opac2_reference
+    predicate: is_database_reported_catalyst_of
+    object: c3_hydroxylation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000310.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000310 version 1, active, at the pinned commit. The example assigns
+        OpaC2 hydroxylation of a 1H-oxepin substrate to yield oxepinamide D. Its heterologous-expression,
+        in-vitro and knockout evidence codes are not independently inspected experimental
+        data; the cited primary paper was inaccessible. No assay condition, mutant
+        phenotype or experimental construct is adopted.
+      snippet: stereospecific hydroxylation at the C-3 position
+    - reference: https://www.uniprot.org/uniprotkb/A0A0C1BVY7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Unreviewed TrEMBL entry 29, sequence 1; 459 residues, HK57_00501, taxon
+        40382. It has no FUNCTION annotation and lists protein existence as inferred
+        from homology. This entry supports sequence identity only; MITE supplies the
+        OpaC2 name and specific hydroxylation attribution.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/KIA75686.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Full conceptual translation and independent coded_by inspected; HK57_00501/AUSM36_001,
+        A. ustus strain 3.3904.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/JOMC01000058.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: 'Complete 1380-nt, five-exon, plus-strand CDS/table 1: join(12055..12220,12271..12857,12919..13262,13312..13538,13598..13653).
+        Full translation equals independent GenPept KIA75686.1 and UniProt A0A0C1BVY7,
+        459 residues. This verifies a native genomic reference, not a historical transcript,
+        experimental construct or assay stock.'
+    notes: MITE supplies the compound-specific hydroxylation assertion. The native
+      accession is not replaced by the different 462-residue OpaC reference A0A0C1BV72
+      from the oxepinamide F cluster. No catalytic rate, active-site residue, redox
+      state, physical complex or inspected mutant experiment is claimed.
+  - subject: oxepin_substrate
+    predicate: is_database_reported_substrate_of
+    object: c3_hydroxylation
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000310.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000310 version 1, active, at the pinned commit. The example assigns
+        OpaC2 hydroxylation of a 1H-oxepin substrate to yield oxepinamide D. Its heterologous-expression,
+        in-vitro and knockout evidence codes are not independently inspected experimental
+        data; the cited primary paper was inaccessible. No assay condition, mutant
+        phenotype or experimental construct is adopted.
+    notes: The node denotes the 1H-oxepin substrate encoded in the pinned MITE reaction
+      example. No external compound identifier or additional upstream biosynthetic
+      step is assigned.
+  - subject: c3_hydroxylation
+    predicate: has_database_reported_product
+    object: oxepinamide_d
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000310.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000310 version 1, active, at the pinned commit. The example assigns
+        OpaC2 hydroxylation of a 1H-oxepin substrate to yield oxepinamide D. Its heterologous-expression,
+        in-vitro and knockout evidence codes are not independently inspected experimental
+        data; the cited primary paper was inaccessible. No assay condition, mutant
+        phenotype or experimental construct is adopted.
+    notes: The pinned MITE example product matches the owner's full Standard InChIKey
+      LTIOSJQYEGEEHY-BLVKFPJESA-N and defined stereochemistry using the repository
+      structure helper and RDKit 2026.03.5. The example's isIntermediate flag is not
+      used to prove pathway finality. SOURCE_ASSERTION producer and CLUSTER_UNSTATED
+      BGC grades stay unchanged; the separate A. puniceus occurrences are not promoted
+      to production.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -97,3 +195,18 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-07T03:42:37Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added the first oxepinamide D biosynthesis graph with OpaC2 native reference
+    A0A0C1BVY7/HK57_00501/KIA75686.1: 4 nodes and 3 MITE-database-asserted functional
+    edges, each carrying a stable pinned source URL. Full native five-exon CDS/table1
+    translation equals independent GenPept and current UniProt459aa; the pinned MITE
+    product matches the complete owner structure. MITE supplies functional attribution;
+    unreviewed UniProt supports sequence identity only. Not the distinct OpaC of the
+    oxepinamide F cluster. One exact six-word MITE snippet retained. Primary experiments
+    were inaccessible; no knockout phenotype, assay conditions, historical construct/transcript/stock
+    identity, predicted residue or physiological-complex claim adopted. Preserved
+    all source fields, grades, structure, A. puniceus occurrences, SEEDED status and
+    prior history. Not full-record sign-off.'
+  llm_assisted: true
