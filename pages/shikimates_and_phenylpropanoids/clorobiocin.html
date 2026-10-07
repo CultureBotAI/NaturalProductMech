@@ -215,6 +215,179 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">13 nodes, 15 edges</span></h2>
+<p class="sub">Native CloHal and CloZ references, cassette-mutant observations and separate CloHal rescue in DS12.976. Genetic evidence is kept distinct from inferred enzyme mechanism; source length disagreements remain explicit. No exact substrate/order or physical assembly is asserted. Source-intake review #667; prior mechanisms and SEEDED status unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>CloHal native DS12.976 protein reference</td>
+  <td>is_native_reference_for_targeted_gene_product_in</td>
+  <td>Native-background clo-hal cassette mutants AE-h2, AE-h10 and AE-h11</td>
+  <td>The native sequence reference is not the replacement allele. Three independently obtained mutants replace clo-hal with an apramycin-resistance cassette. FigureIII.3A/B and its caption show Southern genotyping. This is not the abandoned conventional in-frame strategy, nor a markerless deletion or full mutant-genome sequence.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q8GHB4<br>https://www.ncbi.nlm.nih.gov/protein/AAN65237.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1<br>https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>CloZ native DS12.976 uncharacterized protein reference</td>
+  <td>is_native_reference_for_targeted_gene_product_in</td>
+  <td>Native-background cloZ cassette mutants AE-Z4, AE-Z25 and AE-Z40</td>
+  <td>Separate cassette-replacement experiment, FigureIII.3C/D. CloZ remains an uncharacterized PROTEIN, not a demonstrated enzyme. Native sequence grounding does not establish an intact historical preparation or universal pathway function.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q8GHA5<br>https://www.ncbi.nlm.nih.gov/protein/AAN65246.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1<br>https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>CloHal native DS12.976 protein reference</td>
+  <td>has_source_length_disagreement</td>
+  <td>Unresolved thesis/native protein-length discrepancies</td>
+  <td>Thesis PDF93 states525 amino acids; complete native CDS, GenPept and UniProt agree at524. No historical525-aa protein sequence or manuscript correction was established.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&amp;sequence=1<br>https://www.uniprot.org/uniprotkb/Q8GHB4<br>https://www.ncbi.nlm.nih.gov/protein/AAN65237.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>CloZ native DS12.976 uncharacterized protein reference</td>
+  <td>has_source_length_disagreement</td>
+  <td>Unresolved thesis/native protein-length discrepancies</td>
+  <td>Thesis PDF93 states254 amino acids; complete native CDS, GenPept and UniProt agree at253. Preserve both source values without inventing a corrected or historical254-aa protein.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&amp;sequence=1<br>https://www.uniprot.org/uniprotkb/Q8GHA5<br>https://www.ncbi.nlm.nih.gov/protein/AAN65246.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>Native clorobiocin producer DS12.976</td>
+  <td>was_compared_in</td>
+  <td>Thesis production-culture extraction and HPLC comparison</td>
+  <td>The primary strain table identifies S. roseochromogenes var. oscitans DS12.976. Thesis production cultures and HPLC at340nm used authentic clorobiocin as comparison; these are distinct from the later2024 LC-MSE cultures.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Native-background clo-hal cassette mutants AE-h2, AE-h10 and AE-h11</td>
+  <td>were_examined_by</td>
+  <td>Thesis production-culture extraction and HPLC comparison</td>
+  <td>All three independent mutants were cultured and extracted alongside the wild type. Independent mutant count is not a stated quantitative replicate count or detection limit.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Native-background clo-hal cassette mutants AE-h2, AE-h10 and AE-h11</td>
+  <td>lost_detectable_production_of</td>
+  <td>Source-assigned clorobiocin</td>
+  <td>Reported clorobiocin production was abolished under the cited culture/extraction/HPLC conditions. No universal absence or quantitative zero is inferred.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Native-background clo-hal cassette mutants AE-h2, AE-h10 and AE-h11</td>
+  <td>produced_structurally_assigned_congener</td>
+  <td>Source-assigned dechlorinated novclobiocin101</td>
+  <td>The shorter-retention product was isolated and assigned using negative-ion FAB-MS and NMR; loss of the chlorine isotope pattern and nominal [M-H]-661 versus695 supported dechlorination. TableIII.1 explicitly marks overlapping or undeterminable signals. Novclobiocin101 is not equated to this owner&#39;s structure or assigned a new exact chemical identifier.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Native-background cloZ cassette mutants AE-Z4, AE-Z25 and AE-Z40</td>
+  <td>retained_detectable_production_of</td>
+  <td>Source-assigned clorobiocin</td>
+  <td>All three cloZ mutants retained clorobiocin, identified by HPLC, negative-ion FAB-MS and proton NMR. The source describes a similar production level to wild type, not a statistical equivalence test.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Native-background cloZ cassette mutants AE-Z4, AE-Z25 and AE-Z40</td>
+  <td>supports_condition_bounded_nonessentiality</td>
+  <td>CloZ nonessentiality limited to the tested culture conditions</td>
+  <td>Clorobiocin production persisted in these cassette mutants under the reported conditions. This does not establish universal dispensability, absence of biochemical activity, or a role under other conditions.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>CloHal native DS12.976 protein reference</td>
+  <td>is_native_reference_for_gene_expressed_in</td>
+  <td>AE-h10 carrying the clo-hal expression plasmid pAE-ha7</td>
+  <td>The strain table names AE-h10/pAE-ha7. An intact clo-hal copy was expressed using pUWL201 with ermE* promoter; this is a distinct rescue organism, not the native protein itself. Full historical plasmid sequence was not obtained.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&amp;sequence=1<br>https://www.uniprot.org/uniprotkb/Q8GHB4<br>https://www.ncbi.nlm.nih.gov/protein/AAN65237.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>AE-h10 carrying the clo-hal expression plasmid pAE-ha7</td>
+  <td>restored_reported_production_of</td>
+  <td>Source-assigned clorobiocin</td>
+  <td>Reported HPLC chromatogram matched wild type and negative-ion FAB-MS confirmed the peak. No numerical rescue fraction or uncertainty is inferred. FigureIII.4D is the separate novO-engineered strain, not this CloHal rescue chromatogram.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Native-background clo-hal cassette mutants AE-h2, AE-h10 and AE-h11</td>
+  <td>supports_genetic_involvement_in</td>
+  <td>Genetically supported involvement in clorobiocin chlorination</td>
+  <td>Loss of chlorinated product with dechlorinated-congener formation supports a chlorination role; it is not an isolated-enzyme substrate assay. The separate complementation result strengthens the gene-level assignment without fully excluding every cassette or expression-context effect.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>AE-h10 carrying the clo-hal expression plasmid pAE-ha7</td>
+  <td>supports_genetic_involvement_in</td>
+  <td>Genetically supported involvement in clorobiocin chlorination</td>
+  <td>Restoration supports the CloHal assignment. It does not identify the exact physiological substrate, prove direct turnover of novclobiocin101, or establish a physical protein complex.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>Genetically supported involvement in clorobiocin chlorination</td>
+  <td>has_unresolved_mechanism</td>
+  <td>Unresolved substrate, reaction order and biochemical mechanism</td>
+  <td>The thesis leaves halogenation timing and substrate open, listing carrier-bound and later intermediate candidates. Family-level flavin-reductase discussion is not purified CloHal reconstitution, a specific reductase partner, cofactor occupancy or measured kinetics. No pathway step number or exact substrate/product reaction is added.</td>
+  <td class="mono">https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 8 edges</span></h2>
+<p class="sub">Culture-level halide observations remain separate from native genetic evidence and inferred CloHal properties. No purified-enzyme kinetics, exact reaction, congener identity or congener antimicrobial activity is adopted. Review #667.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>DS12.976 natural-producer culture experiment</td>
+  <td>was_tested_with</td>
+  <td>KBr-supplemented producer cultures</td>
+  <td>Separate2024 culture LC-MSE experiment, not thesis complementation.</td>
+  <td class="mono">DOI:10.1128/spectrum.00423-24</td>
+</tr>
+<tr>
+  <td>KBr-supplemented producer cultures</td>
+  <td>was_associated_with</td>
+  <td>Changed chlorinated, brominated and nonhalogenated metabolite signals</td>
+  <td>Brominated and nonhalogenated signals increased while clorobiocin signals declined. Signal intensities are not absolute titers or enzyme rates.</td>
+  <td class="mono">DOI:10.1128/spectrum.00423-24</td>
+</tr>
+<tr>
+  <td>DS12.976 natural-producer culture experiment</td>
+  <td>was_tested_with</td>
+  <td>Fluoride- or iodide-supplemented producer cultures</td>
+  <td>Culture supplementation, not purified CloHal substrate screening.</td>
+  <td class="mono">DOI:10.1128/spectrum.00423-24</td>
+</tr>
+<tr>
+  <td>Fluoride- or iodide-supplemented producer cultures</td>
+  <td>had_reported_outcome</td>
+  <td>No detected fluorinated or iodinated clorobiocin variant</td>
+  <td>Condition-bounded nondetection; not universal impossibility of fluorination or iodination.</td>
+  <td class="mono">DOI:10.1128/spectrum.00423-24</td>
+</tr>
+<tr>
+  <td>Changed chlorinated, brominated and nonhalogenated metabolite signals</td>
+  <td>supports_source_interpretation</td>
+  <td>Proposed CloHal halide-use interpretation</td>
+  <td>Authors suggest preferential bromide use with reduced turnover from culture profiles. Neither affinity nor turnover was measured as an enzyme kinetic constant.</td>
+  <td class="mono">DOI:10.1128/spectrum.00423-24</td>
+</tr>
+<tr>
+  <td>Native CloHal reference; culture-based role inference</td>
+  <td>is_proposed_enzyme_in</td>
+  <td>Proposed CloHal halide-use interpretation</td>
+  <td>Native identity does not independently establish the assayed preparation, direct substrate or reaction order.</td>
+  <td class="mono">DOI:10.1128/spectrum.00423-24<br>https://www.uniprot.org/uniprotkb/Q8GHB4<br>https://www.ncbi.nlm.nih.gov/protein/AAN65237.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</td>
+</tr>
+<tr>
+  <td>Proposed CloHal halide-use interpretation</td>
+  <td>has_evidence_limit</td>
+  <td>No purified kinetics or universally excluded halides</td>
+  <td>The2024 aglycone statement is not adopted as a demonstrated substrate. The older thesis explicitly leaves timing unresolved; culture data alone do not settle it.</td>
+  <td class="mono">DOI:10.1128/spectrum.00423-24<br>https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48693/pdf/diss_AE.pdf?isAllowed=y&amp;sequence=1</td>
+</tr>
+<tr>
+  <td>No detected fluorinated or iodinated clorobiocin variant</td>
+  <td>has_evidence_limit</td>
+  <td>No purified kinetics or universally excluded halides</td>
+  <td>MITE0000419v1 labels model reactions as heterologous/in-vitro evidence. Those database labels are not adopted as primary assay proof; issue667 records the discrepancy.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000419.json<br>DOI:10.1128/spectrum.00423-24</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">20 nodes, 37 edges</span></h2>
 <p class="sub">Eleven CloQ engineered proteins from Metzger 2010, with native identity, literal-primer reconstructions, preparation measurements and limited folding controls (review #553). The native reaction is already curated and is not duplicated. Q8GHB2 denotes the native 324-aa protein, not a mutant, tag-bearing precursor or GSH-scar preparation. The thesis reports sequencing, but complete experimental plasmids were not independently obtained. All thesis page locators are PDF pages, twelve above printed pages.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
