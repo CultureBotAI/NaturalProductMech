@@ -208,6 +208,14 @@ bioactivities:
   value: 10.0
   units: uM
   target_enzyme: UniProtKB:P08684
+related_records:
+- corpus: PathwayMech
+  identifier: MetaCyc:P101-PWY
+  relation: BIOSYNTHESIZED_BY
+  basis: 'SAME_TERMINAL_PRODUCT_INCHIKEY: CHEBI:58515 in the pinned ChEBI inventory;
+    pathway taxon NCBITaxon:2746. Product identity only; no assertion that this record''s
+    other producer taxa use this pathway.'
+  source_version: aa305727458c44ab05614901334540e2c87a9f3a
 bgc_class:
 - OTHER
 xrefs:
@@ -970,4 +978,16 @@ curation_history:
     producer/BGC claims, occurrences, activities, discussions, source grades, stereochemistry,
     classifications, SEEDED status and prior history. Original scratch-only events
     are not imported into production history; no full-record sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-05T17:41:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-07T19:04:36Z'
+  curator: codex
+  action: MERGE_PATHWAY_LINKS
+  changes: 'Integrated the previously proposed PR #586 PathwayMech product link at
+    aa305727458c44ab05614901334540e2c87a9f3a with main f3bfec397457a22fd0118ba9d7f6a53d0e4fa7cc
+    through the current seeder. Preserved every existing producer, activity and graph
+    field and all main and feature history; no scientific pin refresh.'
   llm_assisted: true

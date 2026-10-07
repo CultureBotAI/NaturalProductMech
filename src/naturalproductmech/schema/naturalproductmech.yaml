@@ -158,9 +158,12 @@ classes:
         multivalued: true
       related_records:
         description: >-
-          Links to the same structure in a sibling Mech corpus. Computed by the
-          seeder from a pinned InChIKey inventory, never hand-added.
-        range: CrossCorpusLink
+          Links to sibling records with an explicit relation and join basis.
+          SAME_STRUCTURE identifies this structure in another corpus;
+          BIOSYNTHESIZED_BY names a pathway producing this structure, without
+          asserting that every listed producer uses that organism-specific pathway.
+          Computed by the seeder from pinned sibling inventories, never hand-added.
+        range: NaturalProductCrossCorpusLink
         multivalued: true
         inlined_as_list: true
 
@@ -460,25 +463,14 @@ classes:
         range: curie
         required: true
 
-  CrossCorpusLink:
-    description: A link to the same structure in a sibling Mech corpus.
-    attributes:
-      corpus:
-        description: e.g. AntibioticMech.
-        required: true
+  NaturalProductCrossCorpusLink:
+    description: A governed cross-corpus link with NaturalProductMech relations.
+    is_a: CrossCorpusLink
+    slot_usage:
       identifier:
         range: curie
-        required: true
       relation:
         range: CrossCorpusRelationEnum
-        required: true
-      basis:
-        description: >-
-          How the link was established. SAME_INCHIKEY is the only basis the
-          seeder computes; anything else needs saying.
-        required: true
-      source_version:
-        description: The pinned commit or release of the sibling corpus.
 
   # ================================================================
   # ORIGIN
@@ -1136,6 +1128,11 @@ enums:
       SAME_STRUCTURE:
       PARENT_OF:
       DERIVATIVE_OF:
+      BIOSYNTHESIZED_BY:
+        description: >-
+          The linked pathway or gene cluster produces this chemical structure.
+          The basis names the product identity evidence and pathway taxon;
+          this is not evidence that every producer in this record uses that pathway.
 
   CausalGraphScopeEnum:
     permissible_values:

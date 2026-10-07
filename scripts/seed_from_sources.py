@@ -788,6 +788,10 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     for row in inventories.get("antibioticmech_inchikeys") or []:
         sibling_by_key[row["standard_inchi_key"]].append(row)
 
+    pathway_by_key: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in inventories.get("pathwaymech_products") or []:
+        pathway_by_key[row["standard_inchi_key"]].append(row)
+
     records: list[dict[str, Any]] = []
     for key, rows in sorted(group_by_structure(mibig_rows).items()):
         # Prefer the row with the strongest producer evidence as the record's
@@ -1225,6 +1229,13 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             "basis": "SAME_INCHIKEY",
             "source_version": sibling["corpus_commit"][:12],
         } for sibling in sibling_by_key.get(key) or []]
+        links.extend({
+            "corpus": "PathwayMech",
+            "identifier": pathway["identifier"],
+            "relation": "BIOSYNTHESIZED_BY",
+            "basis": pathway["basis"],
+            "source_version": pathway["corpus_commit"],
+        } for pathway in pathway_by_key.get(key) or [])
         if links:
             doc["related_records"] = links
 
