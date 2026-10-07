@@ -201,6 +201,33 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">By-similarity MpaG O-methylation context for the native Penicillium brevicompactum IBT23078 reference. This F1DBB3 protein differs from the existing NRRL864 MpaG&#39; protein at three residues and is not a second independently assayed enzyme. MITE supplies an exact neutral-product example; UniProt explicitly transfers the corresponding reaction by similarity. Existing graphs, source grades and discussions are preserved; not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>MpaG native IBT23078 reference</td>
+  <td>is_by_similarity_predicted_catalyst_of</td>
+  <td>MpaG O-methylation inferred by similarity</td>
+  <td>Function is inferred by similarity, not verified by native sequence translation. The latter establishes reference identity only. No primary experiment, activity magnitude, site, mutant, localization, cofactor state or physical complex is adopted for this protein.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000011.json<br>https://www.uniprot.org/uniprotkb/F1DBB3<br>https://www.ncbi.nlm.nih.gov/protein/ADY00134.1<br>https://www.ncbi.nlm.nih.gov/nuccore/HQ731031.1<br>https://www.uniprot.org/uniprotkb/A0A0B5L781<br>https://www.ncbi.nlm.nih.gov/protein/AJG44384.1<br>https://www.ncbi.nlm.nih.gov/nuccore/KM595305.1</td>
+</tr>
+<tr>
+  <td>Demethylmycophenolic acid, database example</td>
+  <td>is_database_example_substrate_of</td>
+  <td>MpaG O-methylation inferred by similarity</td>
+  <td>MITE names and encodes a neutral demethylmycophenolic acid example. The substrate remains ungrounded: the UniProt reaction&#39;s ionic 6-O-desmethylmycophenolate identifier is not silently assigned to the neutral compound. No upstream steps or preferred physiological route inferred.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000011.json<br>https://www.uniprot.org/uniprotkb/F1DBB3</td>
+</tr>
+<tr>
+  <td>MpaG O-methylation inferred by similarity</td>
+  <td>has_database_example_product</td>
+  <td>mycophenolic acid</td>
+  <td>Pinned MITE neutral product matches the owner&#39;s full InChIKey HPNSFSBZBAHARI-RUDMXATFSA-N and complete stereo via the repository helper and RDKit2026.03.5. UniProt&#39;s ionic mycophenolate is not relabelled as the neutral acid. No pathway finality or assay transfer is asserted. The different-structure same-label BGC0001360 record is not included; all source grades and old graphs remain unchanged, including the AntibioticMech link.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000011.json<br>https://www.uniprot.org/uniprotkb/F1DBB3</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">25</span></h2>
