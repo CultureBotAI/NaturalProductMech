@@ -76,6 +76,47 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 5 edges</span></h2>
+<p class="sub">Separate database-reported HynC and HynE carrier-bound amino-acid tailoring contexts in the hypeptin BGC. HynA is listed as auxiliary to both; HynB only to HynC. All four nodes denote verified native K5869 protein references, not reconstructed assay constructs. Functional claims remain database assertions. The HynC leucine-description/model carbon-count conflict is unresolved (issue664); no exact chemical reaction, carrier/domain assignment, reaction stereochemistry, pathway order, physical complex, native genetic necessity or direct mature-hypeptin-forming step is asserted.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>HynC, native K5869 reference</td>
+  <td>is_database_assigned_hydroxylase_in</td>
+  <td>HynC-associated carrier-bound hydroxylation context (database role)</td>
+  <td>MITE describes non-heme diiron monooxygenase HynC and PCP-bound tyrosine and leucine hydroxylations. These are source descriptions, not adopted exact chemical transformations. The leucine-labeled example contains a seven-carbon amino-acid moiety rather than six-carbon leucine in both substrate and product; diagnostic thioester cleavage with a leucine control localizes the mismatch to the amino-acid side. This does not establish the actual assay substrate or a correction. Exact HynC chemistry remains unresolved under https://github.com/CultureBotAI/NaturalProductMech/issues/664. No encoded carrier fragment, syn stereochemical outcome, Fe occupancy or corrected model is adopted. The process denotes an intermediate tailoring context, not direct formation of mature hypeptin. The cited 2021 paper was inaccessible; no primary assay, exact construct, substrate order or native deletion/complementation phenotype was independently inspected.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000197.json<br>https://www.ncbi.nlm.nih.gov/protein/QWP75303.1<br>https://www.ncbi.nlm.nih.gov/nuccore/CP072597.1<br>https://dl.secondarymetabolites.org/mibig/mibig_json_4.0.tar.gz</td>
+</tr>
+<tr>
+  <td>HynE, native K5869 reference</td>
+  <td>is_database_assigned_hydroxylase_in</td>
+  <td>HynE-associated carrier-bound hydroxylation context (database role)</td>
+  <td>MITE describes alpha-ketoglutarate-dependent dioxygenase HynE and PCP-bound asparagine hydroxylation. This is a database-level functional context, not an adopted exact reaction, carrier structure or independently verified anti stereochemical outcome. Its cofactor field is a database annotation, not measured occupancy or a new assay. The process denotes an intermediate tailoring context, not direct formation of mature hypeptin. The cited 2021 paper was inaccessible; no primary assay, exact construct, substrate order or native deletion/complementation phenotype was independently inspected.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000196.json<br>https://www.ncbi.nlm.nih.gov/protein/QWP75301.1<br>https://www.ncbi.nlm.nih.gov/nuccore/CP072597.1<br>https://dl.secondarymetabolites.org/mibig/mibig_json_4.0.tar.gz</td>
+</tr>
+<tr>
+  <td>HynA, native K5869 reference</td>
+  <td>is_database_listed_auxiliary_synthetase_in</td>
+  <td>HynC-associated carrier-bound hydroxylation context (database role)</td>
+  <td>MITE lists HynA as an auxiliary nonribosomal peptide synthetase in the HynC entry. This records that database role only. It does not establish a physical complex, direct binding, a necessary partner under specific assay conditions, an exact PCP/module assignment, chain-transfer direction, pathway order, historical construct identity or native genetic necessity. No auxiliary role of HynB in the HynE context is asserted.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000197.json<br>https://www.ncbi.nlm.nih.gov/protein/QWP75305.1<br>https://www.ncbi.nlm.nih.gov/nuccore/CP072597.1</td>
+</tr>
+<tr>
+  <td>HynB, native K5869 reference</td>
+  <td>is_database_listed_auxiliary_synthetase_in</td>
+  <td>HynC-associated carrier-bound hydroxylation context (database role)</td>
+  <td>MITE lists HynB as an auxiliary nonribosomal peptide synthetase in the HynC entry. This records that database role only. It does not establish a physical complex, direct binding, a necessary partner under specific assay conditions, an exact PCP/module assignment, chain-transfer direction, pathway order, historical construct identity or native genetic necessity. No auxiliary role of HynB in the HynE context is asserted.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000197.json<br>https://www.ncbi.nlm.nih.gov/protein/QWP75304.1<br>https://www.ncbi.nlm.nih.gov/nuccore/CP072597.1</td>
+</tr>
+<tr>
+  <td>HynA, native K5869 reference</td>
+  <td>is_database_listed_auxiliary_synthetase_in</td>
+  <td>HynE-associated carrier-bound hydroxylation context (database role)</td>
+  <td>MITE lists HynA as an auxiliary nonribosomal peptide synthetase in the HynE entry. This records that database role only. It does not establish a physical complex, direct binding, a necessary partner under specific assay conditions, an exact PCP/module assignment, chain-transfer direction, pathway order, historical construct identity or native genetic necessity. No auxiliary role of HynB in the HynE context is asserted.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000196.json<br>https://www.ncbi.nlm.nih.gov/protein/QWP75305.1<br>https://www.ncbi.nlm.nih.gov/nuccore/CP072597.1</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
