@@ -90,6 +90,107 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: colletorin-d-acid-ctc3-database-substrate-reduction
+  scope: BIOSYNTHESIS
+  description: Substrate-owner context for MITE-reported CTC3 Colletorin D acid reduction.
+    The owner is consumed; Colletorin D is a separate exact linked structure. This
+    same database reaction is already represented on its product record, not an independently
+    observed additional experiment. Native reference identity is verified, but UniProt
+    provides no FUNCTION annotation and the primary paper was inaccessible. Existing
+    graphs, source fields/grades and SEEDED status remain unchanged; no inter-graph
+    order, full pathway or full-record sign-off.
+  nodes:
+  - node_id: enzyme_reference
+    label: CTC3 native IMI349063 reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A1B7YD80
+  - node_id: substrate
+    label: Colletorin D acid, exact owner substrate
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: naturalproductmech:mibig-d1c3064ecf
+  - node_id: reaction
+    label: MITE-reported Colletorin D acid reduction
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: product
+    label: Colletorin D, exact linked product
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: naturalproductmech:mibig-2459be6395
+  edges:
+  - subject: enzyme_reference
+    predicate: is_database_reported_catalyst_of
+    object: reaction
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000464.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000464 version1, active, attributes Colletorin D acid reduction
+        to CTC3, yielding Colletorin D. Its heterologous-expression code is not personally
+        inspected experimental data; the cited primary paper was inaccessible. No
+        construct, assay condition or measured activity is adopted.
+      snippet: Converts Colletorin D acid into Colletorin D
+    - reference: https://www.uniprot.org/uniprotkb/A0A1B7YD80
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Unreviewed TrEMBL entry41, sequence1, 1078 residues, CH63R_05470, taxon759273.
+        There is no FUNCTION annotation; protein existence is inferred from homology
+        and the record flags WGS-derived preliminary sequence data. UniProt and GenPept
+        retain the submission name Gluconate kinase; UniProt also assigns an adenylate-forming
+        reductase family. Neither is an independent compound-specific assay. No gluconate
+        kinase function or predicted Ser608 modification is adopted.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/OBR09778.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: 'Full conceptual translation and independent coded_by inspected: CH63R_05470,
+        Colletotrichum higginsianum strain IMI349063/taxon759273. Source collection
+        metadata do not establish historical assay-stock identity.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LTAN01000004.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: 'Complete3237-nt/three-exon negative-strand CDS, default table1: complement(join(400054..400461,400539..402986,403076..403456)).
+        Full translation equals the annotation, independent OBR09778.1 and current
+        UniProt1078aa; independent coded_by coordinates/DNA match. This proves a native
+        genomic reference, not a historical transcript, expression construct or assay-stock
+        sequence.'
+    notes: MITE supplies the functional attribution; sequence records establish identity
+      only. Genome/BGC correspondence does not upgrade BGC_CORRELATED producer or
+      CLUSTER_CORRELATED locus evidence. No native cofactor state, predicted domain-site
+      function, physiological complex, rate or knockout is asserted.
+  - subject: substrate
+    predicate: is_database_reported_substrate_of
+    object: reaction
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000464.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000464 version1, active, attributes Colletorin D acid reduction
+        to CTC3, yielding Colletorin D. Its heterologous-expression code is not personally
+        inspected experimental data; the cited primary paper was inaccessible. No
+        construct, assay condition or measured activity is adopted.
+    notes: Pinned MITE example substrate matches this owner's full InChI/key and complete
+      stereochemical status using the repository helper and pinned RDKit2026.03.5.
+      This record is the substrate, not the product. No precursor generation, additional
+      organism, source-grade upgrade or cross-graph causal order inferred.
+  - subject: reaction
+    predicate: has_database_reported_product
+    object: product
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000464.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000464 version1, active, attributes Colletorin D acid reduction
+        to CTC3, yielding Colletorin D. Its heterologous-expression code is not personally
+        inspected experimental data; the cited primary paper was inaccessible. No
+        construct, assay condition or measured activity is adopted.
+    notes: Pinned MITE example product matches the separate linked record's full InChI/key
+      and complete stereochemical status. The intermediate flag does not prove pathway
+      finality. No B-congener, physiological complex, cofactor state or extra downstream
+      step adopted. Existing product-owner graph is preserved byte-for-byte; this
+      is another record context, not independent evidence.
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
   curator: seed_from_sources
@@ -99,3 +200,18 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-07T14:29:16Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a four-node/three-edge CTC3 substrate-owner context for Colletorin
+    D acid, grounded to native UniProtKB:A0A1B7YD80. Stable MITE URL on every functional
+    edge and one exact 7-word snippet. Rechecked complete native CDS/annotation/independent
+    GenPept/UniProt identity and exact substrate/product InChI/key/stereochemistry.
+    This database reaction already exists on its product record; not a new globally
+    distinct protein or independent experiment. TrEMBL identity evidence is not a
+    FUNCTION assay. Primary paper remained inaccessible; no assay conditions, historical
+    stock, construct/transcript, cofactor, predicted site, complex, B-congener, pathway
+    finality or inter-graph order claim. Preserved all pre-existing graphs, source
+    fields, BGC_CORRELATED/CLUSTER_CORRELATED grades, occurrences, stereochemistry,
+    classifications, SEEDED status and prior history. Not full-record sign-off.
+  llm_assisted: true

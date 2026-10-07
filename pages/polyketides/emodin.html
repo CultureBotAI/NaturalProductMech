@@ -265,6 +265,33 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Separate MITE-reported PhoK reduction consuming exact emodin. The sequence-verified native Diaporthe SYSU-MS4722 reference is grounded in NCBIProtein; no current UniProtKB example was selected. Its encoded product is not the anthrone substrate of the preserved PhoG graph, so this does not form a reverse reaction or closed cycle. Functional evidence remains database-level. Existing CK2/FabZ bioactivity graphs, PhoG synthesis, source claims and SEEDED status remain unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>PhoK native Diaporthe SYSU-MS4722 reference</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>MITE-reported PhoK emodin reduction</td>
+  <td>MITE supplies the exact-compound functional assertion, while sequence deposits establish native reference identity. GenPept&#39;s YwnB/NADH-flavin reductase region is explicitly a general function prediction, not a cofactor measurement or compound-specific assay. No purified-enzyme sufficiency, rates, binding sites, cofactor occupancy or physical complex is claimed. Native reference equality is not historical assay-stock or construct identity.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000161.json<br>https://www.ncbi.nlm.nih.gov/protein/UPG58740.1<br>https://www.ncbi.nlm.nih.gov/nuccore/OL450416.1</td>
+</tr>
+<tr>
+  <td>emodin</td>
+  <td>is_database_example_substrate_of</td>
+  <td>MITE-reported PhoK emodin reduction</td>
+  <td>Pinned repository chemistry checks match reaction index 2&#39;s substrate to full owner key RHMXXJGYXNZAPX-UHFFFAOYSA-N with complete stereochemistry. PhoK consumes the owner compound, rather than producing it as in the separate PhoG context. No other MITE substrate, native producer-grade upgrade or transfer of this Diaporthe reference to Aspergillus nidulans FGSC A4 is inferred.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000161.json</td>
+</tr>
+<tr>
+  <td>MITE-reported PhoK emodin reduction</td>
+  <td>has_database_example_product</td>
+  <td>MITE-encoded reduced emodin intermediate</td>
+  <td>The source-marked intermediate remains externally ungrounded. Pinned RDKit 2026.03.5 gives C15H12O5 and key LJRSVKUSUARDIJ-UHFFFAOYSA-N for the encoded product; the PhoG anthrone substrate instead has C15H12O4 and key LAJSXCAVRQXZIO-UHFFFAOYSA-N. Those distinct models must not be equated or joined as a reverse reaction. No final product, downstream step, cofactor stoichiometry or exact named external product identifier is asserted.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000161.json</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 <h2>Molecular targets <span class="tag">6</span></h2>
 <div class="scroll"><table>

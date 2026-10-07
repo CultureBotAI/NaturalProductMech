@@ -213,6 +213,118 @@ causal_graphs:
       transformation or final-product claim is added. The owner's BGC_CHARACTERIZED
       Aspergillus producer, CLUSTER_DEMONSTRATED BGC0000101/BN001308.1 and separate
       Monodictys occurrences remain unchanged.
+- graph_id: monodictyphenone-phol-database-substrate-reduction
+  scope: BIOSYNTHESIS
+  description: Separate MITE-reported PhoL reduction consuming exact monodictyphenone
+    as substrate. Native Diaporthe SYSU-MS4722 PhoL is sequence-grounded in NCBIProtein,
+    not a UniParc accession relabeled as UniProtKB. This context preserves the prior
+    PhoJ graph that forms the owner compound and does not transfer either reference
+    to the distinct imported Aspergillus/BGC0000101 source. Functional evidence is
+    database-level; no primary assay or full-record sign-off is claimed.
+  nodes:
+  - node_id: phol_reference
+    label: PhoL native Diaporthe SYSU-MS4722 reference
+    node_type: ENZYME
+    identifier: NCBIProtein:UPG58741.1
+    grounding_status: GROUNDED
+  - node_id: monodictyphenone
+    label: monodictyphenone
+    node_type: COMPOUND
+    identifier: CHEBI:64398
+    grounding_status: GROUNDED
+  - node_id: reduction
+    label: MITE-reported PhoL net reduction
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: reduced_intermediate
+    label: MITE-encoded reduced hydroxymethyl intermediate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: phol_reference
+    predicate: is_database_reported_catalyst_of
+    object: reduction
+    notes: MITE supplies the compound-specific functional assertion. Its encoded net
+      carboxyl-to-hydroxymethyl change is not an independently inspected purified-enzyme
+      assay or proof of PhoL-alone sufficiency and intervening reaction steps. CDD/UniParc
+      NAD(P)-binding and SDR annotations do not establish a measured cofactor, binding
+      site or occupancy. Native sequence identity is not historical assay-stock or
+      construct identity.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000157.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Active MITE0000157 version2 names PhoL and GenPeptUPG58741.1; its uniprot
+        field contains the UniParc archive UPI00205DA260, not UniProtKB. Its single
+        reaction example consumes monodictyphenone and encodes a hydroxymethyl product
+        marked intermediate. Heterologous expression is the database evidence code,
+        not an independently inspected assay. The cited DOI10.1021/acs.orglett.2c01050
+        was inaccessible. MITE removed retired BGC0003093; it is not restored or treated
+        as active here.
+      snippet: PhoL is responsible for reduction of monodictyphenone towards the biosynthesis
+        of phomoxanthone A
+    - reference: https://www.ncbi.nlm.nih.gov/protein/UPG58741.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Independent complete328-aa native PhoL reference, genephoL, Diaporthe
+        sp. SYSU-MS4722/taxon1756133. The deposited product label phomoxanthone L
+        denotes the protein, not a chemical identifier. coded_by joins OL450417.1:1..367
+        and476..1095. CDD domain/site annotations are not newly inspected biochemical
+        measurements.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/OL450417.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Complete987-nt plus two-exon CDS1..367,476..1095, codon1/defaulttable1,
+        equals annotation, independent GenPept and UniParc328aa; independent coded_by
+        DNA/coordinates and SYSU-MS4722/taxon1756133 agree. Complete1198-bp genomic
+        deposit read. CDS boundaries are exact but gene/mRNA boundaries fuzzy; no
+        full transcript/promoter or historical stock/construct claimed.
+    - reference: https://www.uniprot.org/uniparc/UPI00205DA260
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Archive matches all328residues and contains only activeEMBL UPG58741version1,
+        genephoL/taxon1756133, with no UniProtKB link. Current queries organism_id:1756133
+        AND gene_exact:phoL and xref:embl-UPG58741 returned no entries on2026-10-07;
+        suggestions were not followed. No UniProtKB example selected in this bounded
+        search, not a global absence claim. UniParc is not a UniProtKB accession.
+  - subject: monodictyphenone
+    predicate: is_database_example_substrate_of
+    object: reduction
+    notes: Pinned exact-structure screening matches the MITE substrate to full owner
+      key UMNWQJSVQOCNEM-UHFFFAOYSA-N with complete stereochemistry. This context
+      consumes the owner, whereas its preserved PhoJ graph forms it. No source producer-grade
+      transfer, Monodictys occurrence upgrade or claim that this Diaporthe reference
+      is an Aspergillus nidulans FGSC A4 protein is made.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000157.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Active MITE0000157 version2 names PhoL and GenPeptUPG58741.1; its uniprot
+        field contains the UniParc archive UPI00205DA260, not UniProtKB. Its single
+        reaction example consumes monodictyphenone and encodes a hydroxymethyl product
+        marked intermediate. Heterologous expression is the database evidence code,
+        not an independently inspected assay. The cited DOI10.1021/acs.orglett.2c01050
+        was inaccessible. MITE removed retired BGC0003093; it is not restored or treated
+        as active here.
+  - subject: reduction
+    predicate: has_database_example_product
+    object: reduced_intermediate
+    notes: The encoded hydroxymethyl product remains externally ungrounded and source-marked
+      intermediate. No exact named product ID, phomoxanthone A final-product claim,
+      downstream sequence or cofactor stoichiometry is inferred. The original PhoJ
+      graph, Aspergillus producer/BGC0000101, occurrence evidence and SEEDED status
+      remain unchanged; retired BGC0003093 is not restored.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000157.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Active MITE0000157 version2 names PhoL and GenPeptUPG58741.1; its uniprot
+        field contains the UniParc archive UPI00205DA260, not UniProtKB. Its single
+        reaction example consumes monodictyphenone and encodes a hydroxymethyl product
+        marked intermediate. Heterologous expression is the database evidence code,
+        not an independently inspected assay. The cited DOI10.1021/acs.orglett.2c01050
+        was inaccessible. MITE removed retired BGC0003093; it is not restored or treated
+        as active here.
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
   curator: seed_from_sources
@@ -244,4 +356,25 @@ curation_history:
     ChEBI label after local identifier-label validation. Exact structure, identifier,
     graph semantics, evidence, source fields, grades, status, earlier graphs and all
     prior curation events are unchanged.
+  llm_assisted: true
+- timestamp: '2026-10-07T14:29:16Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a separate four-node/three-edge PhoL database substrate-reduction
+    graph, preserving the complete prior PhoJ synthesis graph and all old fields/history.
+    Pinned MITE0000157v2 consumes the owner's exact monodictyphenone structure and
+    encodes a reduced hydroxymethyl intermediate; every functional edge has a stable
+    source URL and one exact thirteen-word source snippet is retained. Grounded native
+    Diaporthe SYSU-MS4722 PhoL to NCBIProtein:UPG58741.1. Full987-nt plus-strand CDS
+    join1..367,476..1095 on OL450417.1, codon1/defaulttable1, equals annotation, independent
+    GenPept and UniParc328aa; coded_by DNA/coordinates and strain/taxon1756133 agree.
+    UniParcUPI00205DA260 is not UniProtKB; two bounded current UniProt searches were
+    empty and no UniProtKB example selected. Functional evidence remains database-level
+    because the primary paper was inaccessible. The net reduction is not proof of
+    purified-enzyme activity, single-enzyme sufficiency, cofactor binding or a specified
+    intervening route. No full transcript/promoter, assay-stock/construct, kinetics
+    or complex claim. Product remains ungrounded; retired BGC0003093 is not restored
+    or transferred to the distinct Aspergillus/BGC0000101 source. Preserved source
+    grades, Monodictys occurrences, stereochemistry, classifications, SEEDED status
+    and all prior curation; not full-record sign-off.
   llm_assisted: true
