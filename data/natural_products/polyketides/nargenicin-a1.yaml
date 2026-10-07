@@ -94,6 +94,268 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: nargenicin-a1-ngno1-ngno2-related-assay-inferred-native-role
+  scope: BIOSYNTHESIS
+  description: 'NgnO1/NgnO2 evidence in two explicitly separated contexts: primary-text-reported
+    paired activity on related streptoseomycin-pathway intermediates, and inferred
+    native participation in nargenicin A1 biosynthesis. The proteins are canonical
+    ATCC31306 parents with native CDS and GenPept identity verified. No mature-nargenicin
+    reaction, nargenicin genetic necessity, exact historical tagged construct, physical
+    Ngn heterodimer, or Ntf structural/ligand transfer is asserted. No MITE reaction
+    model is adopted. This is not full-record REVIEWED sign-off.'
+  nodes:
+  - node_id: ngno1
+    label: NgnO1, native ATCC 31306 parent
+    node_type: ENZYME
+    identifier: NCBIProtein:AXG22411.1
+    grounding_status: GROUNDED
+  - node_id: ngno2
+    label: NgnO2, native ATCC 31306 parent
+    node_type: ENZYME
+    identifier: NCBIProtein:AXG22410.1
+    grounding_status: GROUNDED
+  - node_id: related_pathway_assay
+    label: Reported paired conversion of related-pathway mixture 6/7 to product 8
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: nargenicin_a1
+    label: nargenicin A1
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-6437746e58
+    grounding_status: GROUNDED
+  edges:
+  - subject: ngno1
+    predicate: is_required_partner_in_reported_assay_for
+    object: related_pathway_assay
+    notes: Both Ngn gene products were needed in the reported two-protein assay under
+      its tested conditions. Numbers6/7 and8 are local to the cited2021 study and
+      refer to related streptoseomycin-pathway compounds, not to mature nargenicin
+      A1. The mixture experiment does not independently prove turnover of each isolated
+      component, and the proposed transient products12/12b were not fully structure-elucidated.
+      No exact SMILES, reaction order, catalytic site allocation, physical heterodimer
+      or in-vivo native necessity is asserted. NtfO1/NtfO2 crystallography and FMN
+      docking concern different proteins and are not transferred to these nodes.
+    evidence:
+    - reference: DOI:10.1038/s41467-021-22395-7
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-07'
+      notes: 'Results: In vitro characterization of NgnO1-NgnO2 as hydroxylase; Fig.3
+        caption; Methods: Gene expression and protein purification and In vitro assay
+        of NgnO1, NgnO2, NgnO1-NgnO2. The main text reports ATCC31306 genes expressed
+        in E. coli, a paired assay with related streptoseomycin-pathway mixture6/7
+        and observed product8, and single-protein controls without detected conversion.
+        Full main text inspected via NCBI BioC/PMC8027225; figure pixels and supplementary
+        construct/assay data were not inspected. This is not a purified mature-nargenicin-forming
+        assay.'
+      snippet: NgnO1 or NgnO2 alone has no effects on 6/7
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AXG22411.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Native NgnO1 reference from Nocardia argentinensis ATCC31306/taxon1311812,
+        310aa. Gene name, strain and MH544245.1 coded_by mapping identify the canonical
+        parent, not a completely reconstructed historical tagged assay construct.
+        Family/product annotations are not independent proof of the specific reaction.
+        Gene/species and exact GenPept-xref UniProtKB searches returned no entries
+        on2026-10-07; this is not global absence and no homolog was selected.
+  - subject: ngno1
+    predicate: is_inferred_paired_oxidation_participant_in_biosynthesis_of
+    object: nargenicin_a1
+    notes: Explicit native-pathway inference from the source-named ngn locus, canonical
+      native gene identity and the measured paired activity on related-pathway intermediates.
+      This is not direct observation of nargenicin formation, a nargenicin gene-deletion/complementation
+      phenotype, or a precise native substrate/product assignment. The partner is
+      also required in the reported related-pathway assay; neither individual enzyme
+      is asserted to form the mature owner. Producer and BGC evidence grades remain
+      unchanged.
+    evidence:
+    - reference: DOI:10.1038/s41467-021-22395-7
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: The introduction compares stm and ngn loci; the Results and Methods test
+        the ATCC31306 NgnO1/NgnO2 pair in a related streptoseomycin-pathway context.
+        Native nargenicin participation here is explicitly inferred, not a newly inspected
+        direct native phenotype. Supplementary gene/construct tables and primary structure
+        drawings were not inspected; no exact native reaction is claimed.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AXG22411.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Native NgnO1 reference from Nocardia argentinensis ATCC31306/taxon1311812,
+        310aa. Gene name, strain and MH544245.1 coded_by mapping identify the canonical
+        parent, not a completely reconstructed historical tagged assay construct.
+        Family/product annotations are not independent proof of the specific reaction.
+        Gene/species and exact GenPept-xref UniProtKB searches returned no entries
+        on2026-10-07; this is not global absence and no homolog was selected.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MH544245.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Complete native CDS at forward52982..53914, 933nt, table11/codon1 translates
+        to the exact 310-aa GenPeptAXG22411.1 reference; independent coded_by coordinates/strand/DNA
+        and strain qualifiers agree. MH544245.1 is a69359bp nargenicin cluster deposit,
+        not a complete genome. This identity check does not prove function by gene
+        neighborhood alone.
+    - reference: https://dl.secondarymetabolites.org/mibig/mibig_json_4.0.tar.gz
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-06'
+      notes: Adopted MIBiG4.0 archive SHA256 986f1a69fb5eeb84fd7c0175ae921304c22fd5f8ed04c96d8c1c0c95a145837b,
+        BGC0002024v3 member inspected2026-10-07. Its two compound rows share the exact
+        owner SMILES, locusMH544245.1 and taxon1311812. No NgnO1/O2 gene-function
+        or locus evidence is supplied by this entry. It anchors the source compound/locus
+        assertion only, not the experimental function or producer-grade upgrade.
+  - subject: ngno2
+    predicate: is_required_partner_in_reported_assay_for
+    object: related_pathway_assay
+    notes: Both Ngn gene products were needed in the reported two-protein assay under
+      its tested conditions. Numbers6/7 and8 are local to the cited2021 study and
+      refer to related streptoseomycin-pathway compounds, not to mature nargenicin
+      A1. The mixture experiment does not independently prove turnover of each isolated
+      component, and the proposed transient products12/12b were not fully structure-elucidated.
+      No exact SMILES, reaction order, catalytic site allocation, physical heterodimer
+      or in-vivo native necessity is asserted. NtfO1/NtfO2 crystallography and FMN
+      docking concern different proteins and are not transferred to these nodes.
+    evidence:
+    - reference: DOI:10.1038/s41467-021-22395-7
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-07'
+      notes: 'Results: In vitro characterization of NgnO1-NgnO2 as hydroxylase; Fig.3
+        caption; Methods: Gene expression and protein purification and In vitro assay
+        of NgnO1, NgnO2, NgnO1-NgnO2. The main text reports ATCC31306 genes expressed
+        in E. coli, a paired assay with related streptoseomycin-pathway mixture6/7
+        and observed product8, and single-protein controls without detected conversion.
+        Full main text inspected via NCBI BioC/PMC8027225; figure pixels and supplementary
+        construct/assay data were not inspected. This is not a purified mature-nargenicin-forming
+        assay.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AXG22410.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Native NgnO2 reference from Nocardia argentinensis ATCC31306/taxon1311812,
+        421aa. Gene name, strain and MH544245.1 coded_by mapping identify the canonical
+        parent, not a completely reconstructed historical tagged assay construct.
+        Family/product annotations are not independent proof of the specific reaction.
+        Gene/species and exact GenPept-xref UniProtKB searches returned no entries
+        on2026-10-07; this is not global absence and no homolog was selected.
+  - subject: ngno2
+    predicate: is_inferred_paired_oxidation_participant_in_biosynthesis_of
+    object: nargenicin_a1
+    notes: Explicit native-pathway inference from the source-named ngn locus, canonical
+      native gene identity and the measured paired activity on related-pathway intermediates.
+      This is not direct observation of nargenicin formation, a nargenicin gene-deletion/complementation
+      phenotype, or a precise native substrate/product assignment. The partner is
+      also required in the reported related-pathway assay; neither individual enzyme
+      is asserted to form the mature owner. Producer and BGC evidence grades remain
+      unchanged.
+    evidence:
+    - reference: DOI:10.1038/s41467-021-22395-7
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: The introduction compares stm and ngn loci; the Results and Methods test
+        the ATCC31306 NgnO1/NgnO2 pair in a related streptoseomycin-pathway context.
+        Native nargenicin participation here is explicitly inferred, not a newly inspected
+        direct native phenotype. Supplementary gene/construct tables and primary structure
+        drawings were not inspected; no exact native reaction is claimed.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AXG22410.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Native NgnO2 reference from Nocardia argentinensis ATCC31306/taxon1311812,
+        421aa. Gene name, strain and MH544245.1 coded_by mapping identify the canonical
+        parent, not a completely reconstructed historical tagged assay construct.
+        Family/product annotations are not independent proof of the specific reaction.
+        Gene/species and exact GenPept-xref UniProtKB searches returned no entries
+        on2026-10-07; this is not global absence and no homolog was selected.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MH544245.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Complete native CDS at forward51720..52985, 1266nt, table11/codon1 translates
+        to the exact 421-aa GenPeptAXG22410.1 reference; independent coded_by coordinates/strand/DNA
+        and strain qualifiers agree. MH544245.1 is a69359bp nargenicin cluster deposit,
+        not a complete genome. This identity check does not prove function by gene
+        neighborhood alone.
+    - reference: https://dl.secondarymetabolites.org/mibig/mibig_json_4.0.tar.gz
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-06'
+      notes: Adopted MIBiG4.0 archive SHA256 986f1a69fb5eeb84fd7c0175ae921304c22fd5f8ed04c96d8c1c0c95a145837b,
+        BGC0002024v3 member inspected2026-10-07. Its two compound rows share the exact
+        owner SMILES, locusMH544245.1 and taxon1311812. No NgnO1/O2 gene-function
+        or locus evidence is supplied by this entry. It anchors the source compound/locus
+        assertion only, not the experimental function or producer-grade upgrade.
+- graph_id: nargenicin-a1-ngnd-database-cyclase-native-parent
+  scope: BIOSYNTHESIS
+  description: Qualified database assignment of NgnD as a putative cyclase in nargenicin
+    biosynthesis. The canonical ATCC 31306 protein is grounded independently of the
+    longer PDB construct. This graph does not assert an inspected native knockout,
+    an exact intermediate reaction, a demonstrated solution dimer, or direct production
+    of mature nargenicin A1.
+  nodes:
+  - node_id: ngnd
+    label: NgnD, native ATCC 31306 parent (putative cyclase)
+    node_type: ENZYME
+    identifier: NCBIProtein:AXG22404.1
+    grounding_status: GROUNDED
+  - node_id: nargenicin_a1
+    label: nargenicin A1
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-6437746e58
+    grounding_status: GROUNDED
+  edges:
+  - subject: ngnd
+    predicate: is_database_assigned_putative_cyclase_in_biosynthesis_of
+    object: nargenicin_a1
+    notes: Database-level pathway-role assertion only. The pinned MITE row gives a
+      tentative bispericyclase assignment and links this exact GenPept reference to
+      BGC0002024. Its knockout evidence code was not independently verified in the
+      inaccessible 2020 paper, whose abstract names a different strain; no native
+      ATCC 31306 knockout phenotype is transferred. MITE models are C22H34O4 intermediates,
+      distinct from the C28H37NO8 owner even without stereochemistry, and its product
+      has undefined centres. No exact native substrate/product pair, specific cycloaddition
+      outcome or mature-owner-forming reaction is adopted. PDB biological-assembly
+      annotation is not solution stoichiometry evidence.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000113.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-06'
+      snippet: '[6+4] cycloaddition; NgnD acts likely similar to a bispericyclase'
+      notes: MITE0000113 version 2, inspected 2026-10-07; archive member and Git blob
+        verified at the cited commit. The row names NgnD, GenPept AXG22404.1, UniParc
+        UPI001005A892 and MIBiG BGC0002024. Preserve the source's tentative wording.
+        Neither its reaction model nor its knockout evidence code is promoted to an
+        independently inspected primary experiment.
+    - reference: https://www.rcsb.org/structure/6A5F
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Independent PDB deposit DOI:10.2210/pdb6A5F/pdb names NgnD and a nargenicin-pathway
+        cyclase. Polymer entity 1/chains A and B contain the exact 152-aa native sequence
+        followed by 13 additional C-terminal residues; the origin of that extension
+        is not reconstructed from the inaccessible paper. The 2.05-Angstrom model
+        covers native positions 2-152, with residue 1 and the whole extension unmodeled.
+        The source strain taxon 1311813 has species ancestor 1311812 in the inspected
+        RCSB lineage. Author/PISA dimeric assembly annotation explicitly has experimental_support
+        none; no physical assembly node is adopted. Structural identity does not establish
+        the exact catalytic reaction.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AXG22404.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Canonical native NgnD, Nocardia argentinensis ATCC 31306, 152 aa; source
+        strain and gene agree. The full reverse-strand MH544245.1 CDS at 5198..5656
+        is 459 nt, table 11/codon 1, and translates identically to GenPept and UniParc
+        UPI001005A892. Independent coded_by coordinates, strand and DNA agree. UniParc
+        marks A0A3S7PZF0 inactive; the bounded current exact-gene/taxon or GenPept-xref
+        UniProtKB query returned no entries. No homolog or same-sequence protein from
+        another strain was substituted. Family annotation alone does not prove cyclase
+        function.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MH544245.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MH544245.1 is the complete 69,359-bp nargenicin cluster deposit, not
+        a complete genome. It establishes native gene identity and source context,
+        not experimental function from neighborhood alone.
+    - reference: https://dl.secondarymetabolites.org/mibig/mibig_json_4.0.tar.gz
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-06'
+      notes: 'Adopted MIBiG 4.0 archive SHA256 986f1a69fb5eeb84fd7c0175ae921304c22fd5f8ed04c96d8c1c0c95a145837b;
+        BGC0002024 version 3 inspected 2026-10-07. Both compound rows share the exact
+        owner SMILES, source taxon 1311812 and locus MH544245.1. This is a compound/locus
+        anchor only: the entry supplies no NgnD gene-function evidence and does not
+        support a producer or cluster evidence-grade upgrade.'
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -103,3 +365,30 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-07T18:00:10Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a four-node/four-edge BIOSYNTHESIS graph for NgnO1 and NgnO2, grounded
+    to canonical native Nocardia argentinensis ATCC31306 references NCBIProtein:AXG22411.1
+    and NCBIProtein:AXG22410.1 after complete native CDS/GenPept comparison. Two primary-text-supported
+    edges describe the reported paired assay on related streptoseomycin-pathway intermediates;
+    two separate edges explicitly infer native nargenicin pathway participation. Every
+    edge has a DOI or stable URL and one short primary caption snippet is retained.
+    No direct mature-nargenicin reaction, nargenicin knockout phenotype, precise unstable-intermediate
+    structure, physical Ngn heterodimer, Ntf crystal or FMN occupancy transfer, or
+    complete historical tagged-construct identity is asserted. Full main primary text
+    read, but figure pixels and SI were not inspected. Two bounded UniProtKB searches
+    were empty; no homolog substituted. Preserved owner structure, filing, source
+    grades, duplicate imported rows, SEEDED status and all prior history. Added a
+    separate two-node/one-edge NgnD graph for a qualified database cyclase assignment,
+    grounded to NCBIProtein:AXG22404.1. Complete native CDS, GenPept and UniParc sequences
+    agree; PDB6A5F has this canonical 152-residue parent plus a 13-residue C-terminal
+    extension. Its author/PISA dimer annotation has no deposited experimental assembly
+    support and is not adopted as demonstrated solution assembly. Inactive A0A3S7PZF0
+    was not selected as a UniProtKB example, and a bounded current query was empty.
+    MITE0000113v2 reaction models are distinct C22 intermediates, not the C28 owner.
+    Retained the tentative MITE wording as a short snippet. No direct native knockout
+    phenotype, exact cycloaddition reaction, mature owner formation, primary-paper
+    access, producer-grade promotion or full-record REVIEWED status is claimed for
+    NgnD.
+  llm_assisted: true
