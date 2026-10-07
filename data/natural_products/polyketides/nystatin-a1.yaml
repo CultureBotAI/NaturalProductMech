@@ -425,6 +425,119 @@ causal_graphs:
       retrieved_on: '2026-10-01'
       notes: GenBank AF263912.1 is the Streptomyces noursei ATCC 11455 nystatin biosynthetic
         gene cluster sequence and maps nysL to the NysL protein accession AAF71769.1.
+- graph_id: nystatin-a1-nysdi-nysn-database-tailoring
+  scope: BIOSYNTHESIS
+  description: Gene-level MIBiG database assignments of NysDI and NysN as tailoring
+    participants in nystatin A1 biosynthesis, with independently verified native ATCC11455
+    protein references. This graph does not specify an exact chemical reaction or
+    a sequence of steps. MITE's incompatible product stereochemistry is not transferred
+    to the fully stereospecified owner. The existing NysL mechanism remains unchanged;
+    no new primary assay or full-record sign-off is claimed.
+  nodes:
+  - node_id: nysdi
+    label: NysDI, native ATCC 11455 reference
+    node_type: ENZYME
+    identifier: UniProtKB:Q9L4W6
+    grounding_status: GROUNDED
+  - node_id: nysn
+    label: NysN, native ATCC 11455 reference
+    node_type: ENZYME
+    identifier: UniProtKB:Q9L4W8
+    grounding_status: GROUNDED
+  - node_id: nystatin_a1
+    label: nystatin A1
+    node_type: COMPOUND
+    identifier: CHEBI:473992
+    grounding_status: GROUNDED
+  edges:
+  - subject: nysdi
+    predicate: is_database_reported_tailoring_participant_in_biosynthesis_of
+    object: nystatin_a1
+    notes: MIBiG assigns this specific gene a tailoring role in the exact nystatin
+      A1 cluster; the database knock-out code is not an independently inspected mutant
+      experiment. This is pathway participation, not a claim that the protein alone
+      directly forms the mature compound. No substrate, donor, site-specific reaction,
+      kinetic result, cofactor occupancy, physical complex or order relative to NysL
+      or the other enzyme is asserted. The conflicting MITE reaction models are not
+      adopted; issue658 remains open.
+    evidence:
+    - reference: https://dl.secondarymetabolites.org/mibig/mibig_json_4.0.tar.gz
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-06'
+      notes: Adopted MIBiG4.0 archive SHA256 986f1a69fb5eeb84fd7c0175ae921304c22fd5f8ed04c96d8c1c0c95a145837b,
+        member mibig_json_4.0/BGC0000115.json inspected2026-10-07. Active entry version5
+        has one exact owner-matching nystatin A1 SMILES, native locus AF263912.1 and
+        taxon316284. Gene AAF71773.1/nysDI has function Tailoring with database evidence
+        method Knock-out. This does not convert its cited PMID10873841 into an inspected
+        primary assay or assign a precise reaction.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAF71773.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      snippet: presumably responsible for attachment
+      notes: Independent complete 506-aa NysDI conceptual translation from Streptomyces
+        noursei ATCC11455/taxon316284. Original function qualifier is explicitly tentative.
+        CDD domain and binding-site annotations are predictions, not measurements.
+        No exact historical assay stock or construct is established.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L4W6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Current unreviewed 506-aa NysDI reference matches native CDS and GenPeptAAF71773.1
+        exactly. UniProt species tax1971 and reference strain ATCC11455 are consistent
+        with the strain-level native record. This entry has no FUNCTION annotation;
+        predicted or homology-level protein existence is not an independently measured
+        assay.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Complete native CDS translation, annotation, independent GenPept and
+        UniProt agree; coded_by strand/coordinates/DNA and ATCC11455 qualifiers verified.
+        NysDI uses reverse60909..62429,1521nt,table11/codon1,506aa. AF263912.1 is
+        the complete123580bp cluster, not a complete genome. No claim about every
+        unrelated feature, experimental folding or expression is made.
+  - subject: nysn
+    predicate: is_database_reported_tailoring_participant_in_biosynthesis_of
+    object: nystatin_a1
+    notes: MIBiG assigns this specific gene a tailoring role in the exact nystatin
+      A1 cluster; the database knock-out code is not an independently inspected mutant
+      experiment. This is pathway participation, not a claim that the protein alone
+      directly forms the mature compound. No substrate, donor, site-specific reaction,
+      kinetic result, cofactor occupancy, physical complex or order relative to NysL
+      or the other enzyme is asserted. The conflicting MITE reaction models are not
+      adopted; issue658 remains open.
+    evidence:
+    - reference: https://dl.secondarymetabolites.org/mibig/mibig_json_4.0.tar.gz
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-06'
+      notes: Adopted MIBiG4.0 archive SHA256 986f1a69fb5eeb84fd7c0175ae921304c22fd5f8ed04c96d8c1c0c95a145837b,
+        member mibig_json_4.0/BGC0000115.json inspected2026-10-07. Active entry version5
+        has one exact owner-matching nystatin A1 SMILES, native locus AF263912.1 and
+        taxon316284. Gene AAF71771.1/nysN has function Tailoring with database evidence
+        method Knock-out. This does not convert its cited PMID10873841 into an inspected
+        primary assay or assign a precise reaction.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAF71771.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      snippet: presumably involved in modification of the nystatin macrolactone ring
+      notes: Independent complete 398-aa NysN conceptual translation from Streptomyces
+        noursei ATCC11455/taxon316284. Original function qualifier is explicitly tentative.
+        CDD domain and binding-site annotations are predictions, not measurements.
+        No exact historical assay stock or construct is established.
+    - reference: https://www.uniprot.org/uniprotkb/Q9L4W8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Current unreviewed 398-aa NysN reference matches native CDS and GenPeptAAF71771.1
+        exactly. UniProt species tax1971 and reference strain ATCC11455 are consistent
+        with the strain-level native record. This entry has no FUNCTION annotation;
+        predicted or homology-level protein existence is not an independently measured
+        assay.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF263912.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Complete native CDS translation, annotation, independent GenPept and
+        UniProt agree; coded_by strand/coordinates/DNA and ATCC11455 qualifiers verified.
+        NysN uses reverse58637..59833,1197nt,table11/codon1,398aa. AF263912.1 is the
+        complete123580bp cluster, not a complete genome. No claim about every unrelated
+        feature, experimental folding or expression is made.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -440,4 +553,19 @@ curation_history:
   changes: Added a BIOSYNTHESIS causal graph for Streptomyces noursei NysL C-10 hydroxylation
     in the final nystatin A1 tailoring step; grounded NysL to UniProtKB:Q9L4X0 and
     left 10-deoxynystatin ungrounded because it is absent from the local corpus.
+  llm_assisted: true
+- timestamp: '2026-10-07T18:00:07Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a separate three-node/two-edge BIOSYNTHESIS graph for the MIBiG gene-level
+    NysDI and NysN tailoring assignments in the exact nystatin A1 cluster. Grounded
+    ATCC11455 native references to UniProtKB:Q9L4W6 and UniProtKB:Q9L4W8 after complete
+    native CDS/GenPept/UniProt comparison. Both edges have stable source URLs and
+    tentative GenPept annotation snippets. Database knock-out codes are not independently
+    inspected primary assays. No exact chemical reaction, donor, regiochemistry, reaction
+    order, physical assembly or historical construct inferred. Conflicting MITE0000410
+    product stereo and MITE0000411/410 reaction continuity remain unresolved in issue658;
+    neither chemical model is adopted. Preserved the full NysL graph, complete owner
+    stereochemistry, source grades, occurrences, AntibioticMech link, SEEDED status
+    and all prior history.
   llm_assisted: true
