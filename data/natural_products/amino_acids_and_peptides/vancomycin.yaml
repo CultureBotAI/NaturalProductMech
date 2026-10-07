@@ -1010,6 +1010,170 @@ causal_graphs:
     Each culture has its own analytical branch and source-assigned derivative. No
     tagged-Vmt in-vitro assay, antimicrobial mechanism, producer upgrade, origin change
     or full-record sign-off is asserted.
+- graph_id: vancomycin-gtfd-1rrv-structural-context
+  scope: BIOSYNTHESIS
+  nodes:
+  - node_id: gtfd_reference
+    label: Current Q9AFC7 native GtfD reference example
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9AFC7
+  - node_id: gtfd_construct
+    label: Deposited GtfD construct with internal cloning artifacts and C-terminal
+      tag
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+  - node_id: glycopeptide
+    label: Deposited desvancosaminyl-vancomycin glycopeptide ligand
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: tdp
+    label: Deposited thymidine diphosphate ligand
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: crystallography
+    label: GtfD protein-ligand X-ray structure experiment represented by 1RRV
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: pathway_context
+    label: Deposition-associated vancomycin biosynthesis context
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: gtfd_reference
+    predicate: is_native_sequence_reference_for
+    object: gtfd_construct
+    notes: Q9AFC7 is a deliberately selected 408-residue reference linked by the deposition,
+      not the complete 416-residue construct. Deposited positions195/196/197 are L/L/A
+      rather than reference C/W/P; the deposit labels these cloning artifacts. The
+      additional LEHHHHHH tail contains linker residues and an expression tag. Both
+      protein chains carry these differences. Source species is A. orientalis taxon31958,
+      but the deposited source strain/ATCC is unspecified. UniProt strain metadata
+      is not historical stock proof. HCCB10007 R4SKH3 differs at45 positions within
+      the deposited1..408 region and is not substituted. No reaction is inferred from
+      sequence correspondence.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9AFC7
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed entry82/sequence1,408 residues, taxon31958; retained current
+        reference, not exact construct identity.
+      retrieved_on: '2026-10-06'
+    - reference: DOI:10.2210/pdb1RRV/pdb
+      evidence_type: DATABASE_ASSERTION
+      notes: Public 1RRV deposition version2.2, revised2023-11-15; coordinate file
+        and selected metadata inspected. Entity1 chainsA/B map reference positions1..408
+        to Q9AFC7 with explicit differences.
+      retrieved_on: '2026-10-06'
+    - reference: https://files.rcsb.org/download/1RRV.cif
+      evidence_type: CURATOR_INFERENCE
+      notes: Complete deposited sequence independently compared with both retained
+        UniProt references; internal differences and terminal extension agree with
+        struct_ref_seq_dif.
+      retrieved_on: '2026-10-06'
+    - reference: https://files.rcsb.org/validation/view/1rrv_full_validation.pdf
+      evidence_type: DATABASE_ASSERTION
+      notes: wwPDB report dated2026-03-20; identity and selected quality sections
+        read, pages20/24/25/26 visually inspected. Not every statistical/outlier section
+        was read. Sequence-discrepancy table distinguishes cloning artifacts from
+        expression-tag residues.
+      retrieved_on: '2026-10-07'
+  - subject: gtfd_construct
+    predicate: is_deposited_protein_for
+    object: crystallography
+    notes: The deposit describes recombinant GtfD from an E. coli BL21(DE3)/PET22B
+      expression system and X-ray diffraction at2.00A resolution. A and B are separate
+      copies in the asymmetric unit, not proof of a functional GtfD homodimer. The
+      two PISA assemblies each contain one GtfD chain plus a glycopeptide ligand;
+      their polymer count must not be interpreted as two enzyme subunits. Modeled
+      residues are A1..401 and B1..400; remaining C-terminal residues are unobserved.
+      No complete historical construct-stock verification or physiological enzyme
+      assembly is claimed.
+    evidence:
+    - reference: DOI:10.2210/pdb1RRV/pdb
+      evidence_type: DATABASE_ASSERTION
+      notes: Public 1RRV deposition version2.2, revised2023-11-15; coordinate file
+        and selected metadata inspected. Entity/source categories, atom-site residue
+        coverage, explicit missing residues and PISA assembly lists inspected.
+      retrieved_on: '2026-10-06'
+    - reference: https://files.rcsb.org/validation/view/1rrv_full_validation.pdf
+      evidence_type: DATABASE_ASSERTION
+      notes: wwPDB report dated2026-03-20; identity and selected quality sections
+        read, pages20/24/25/26 visually inspected. Not every statistical/outlier section
+        was read. The report independently lists401/400 modeled protein residues.
+        A model is not native-stock or solution-oligomerization evidence.
+      retrieved_on: '2026-10-07'
+  - subject: glycopeptide
+    predicate: is_deposited_ligand_in
+    object: crystallography
+    notes: 'Peptide chains C/D (entity 2) contain the source-assigned seven-residue
+      glycopeptide core. Separate BGC glucose instances L/M (entity 6) are covalently
+      linked from core GHP4/O4 to glucoseC1. This is the monoglucosylated acceptor
+      represented by the deposit, not final vancomycin, an aglycone lacking glucose,
+      or a measured binding affinity. Model quality is uneven: reported RSCC includes0.58
+      for OMZ-D2 and0.60 for OMY-D6; glucose RSCC is0.87/0.88 and bond-angle outliers
+      are present. Retain source assignment without claiming independent exact stereochemistry
+      or uniformly precise ligand contacts.'
+    evidence:
+    - reference: DOI:10.2210/pdb1RRV/pdb
+      evidence_type: DATABASE_ASSERTION
+      notes: Public 1RRV deposition version2.2, revised2023-11-15; coordinate file
+        and selected metadata inspected. Entity2 and struct_conn distinguish the modified
+        peptide, covalently attached glucose and final-product identity.
+      retrieved_on: '2026-10-06'
+    - reference: https://files.rcsb.org/validation/view/1rrv_full_validation.pdf
+      evidence_type: DATABASE_ASSERTION
+      notes: wwPDB report dated2026-03-20; identity and selected quality sections
+        read, pages20/24/25/26 visually inspected. Not every statistical/outlier section
+        was read. Modified-residue fit table page24, glucose fit page25 and ligand
+        geometry page20 inspected.
+      retrieved_on: '2026-10-07'
+  - subject: tdp
+    predicate: is_deposited_ligand_in
+    object: crystallography
+    notes: TYD is thymidine diphosphate, not TDP-vancosamine or an observed sugar-transfer
+      reaction. Two modeled nucleotide instances have reported RSCC0.95/0.96, with
+      phosphate bond-length outliers. The report's displayed density panels were inspected
+      without independent re-refinement. Co-modeling does not establish kinetics,
+      donor-sugar specificity or a catalytic residue mechanism.
+    evidence:
+    - reference: DOI:10.2210/pdb1RRV/pdb
+      evidence_type: DATABASE_ASSERTION
+      notes: Public 1RRV deposition version2.2, revised2023-11-15; coordinate file
+        and selected metadata inspected. Nonpolymer identity TYD and the two protein-associated
+        instances are explicitly recorded.
+      retrieved_on: '2026-10-06'
+    - reference: https://files.rcsb.org/validation/view/1rrv_full_validation.pdf
+      evidence_type: DATABASE_ASSERTION
+      notes: wwPDB report dated2026-03-20; identity and selected quality sections
+        read, pages20/24/25/26 visually inspected. Not every statistical/outlier section
+        was read. TYD geometry page20, fit values page25 and displayed density panels
+        pages25-26 inspected.
+      retrieved_on: '2026-10-07'
+  - subject: crystallography
+    predicate: provides_deposition_based_structural_context_for
+    object: pathway_context
+    notes: The public GtfD/acceptor/nucleotide deposition provides structural context
+      for the vancomycin pathway. The associated2004 paper was not fully inspected
+      after an access challenge; its abstract is not adopted as primary assay evidence.
+      No Asp13/Thr10 catalytic assignment, reaction order, kinetic value, physical
+      multi-enzyme complex, final-product binding or antimicrobial target claim is
+      added. This graph does not assign the structure to HCCB10007 or connect local
+      nodes across graphs. The owner's source fields, origin, producer grades, exact
+      structure, SEEDED status and AntibioticMech link require separate preservation
+      and review.
+    evidence:
+    - reference: DOI:10.2210/pdb1RRV/pdb
+      evidence_type: CURATOR_INFERENCE
+      notes: Inference is limited to structural context from the independent public
+        deposition; it does not borrow the associated paper's uninspected functional
+        experiments.
+      retrieved_on: '2026-10-06'
+  description: Deposition-only GtfD structural context from1RRV, with Q9AFC7 kept
+    distinct from a construct bearing three internal cloning artifacts and an eight-residue
+    C-terminal extension. Glycopeptide acceptor and TDP are not final vancomycin and
+    TDP-vancosamine. Missing residues, uneven ligand-model quality and software-defined
+    assemblies remain explicit. No blocked-paper catalytic claim, reaction kinetics,
+    native strain assignment, antimicrobial mechanism or full-record sign-off is asserted.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -1038,4 +1202,29 @@ curation_history:
     added. All source fields, grades, classification, origin, SEEDED status, exact
     owner structure, sibling link and prior history are preserved. Not full-record
     sign-off.'
+  llm_assisted: true
+- timestamp: '2026-10-07T00:56:36Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a deposition-only GtfD structural-context graph with 6 nodes and
+    5 individually cited edges, using PDB 1RRV and its public validation report. The
+    native Q9AFC7 example is separate from the deposited 416-residue construct with
+    three internal cloning artifacts and LEHHHHHH tail. Deposited source strain is
+    unspecified; HCCB10007 is not substituted. The covalently glucosylated peptide
+    acceptor and TDP are not final vancomycin and TDP-vancosamine. Missing residues,
+    uneven ligand fits and geometry outliers remain explicit. PISA assemblies are
+    not proof of a functional enzyme homodimer. No blocked-paper catalytic-residue
+    claim, kinetics, exact ligand stereochemistry or antimicrobial mechanism is added.
+    Preserved the prior genetics graph, all source-owned fields and grades, exact
+    owner structure, SEEDED status, sibling link and history. Not full-record sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-07T01:00:42Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Addressed author-agent review issue #634: distinguished peptide chains
+    C/D (entity 2) from glucose instances L/M (entity 6) in the 1RRV ligand edge.
+    Checked the exact struct_asym mapping in the retained coordinate deposition. Only
+    identifier terminology changed; all nodes, edges, evidence, native sequence grounding,
+    ligand assignments, source fields, prior graph and history are preserved. Not
+    independent review or full-record sign-off.'
   llm_assisted: true
