@@ -205,6 +205,33 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">MITE-reported hydroxylation of exact linear-C15 cardol as a substrate in an alkylresorcinol tailoring context. AgqB&#39;s native Actinoplanes missouriensis 431 reference is sequence-verified. This graph consumes cardol; it does not establish cardol production by that organism. Current UniProt automated dibenzothiophene annotations are not cardol activity evidence. The owner&#39;s distinct source producer/locus and open name disagreement are retained; not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>AgqB native 431 reference</td>
+  <td>is_database_reported_catalyst_of</td>
+  <td>MITE-reported AgqB substrate hydroxylation</td>
+  <td>MITE supplies functional attribution; native translation and current UniProt establish identity only. No primary assay, native cofactor occupancy, electron donor, rate, site, phenotype or complex is adopted.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000081.json<br>https://www.uniprot.org/uniprotkb/I0HIZ0<br>https://www.ncbi.nlm.nih.gov/protein/BAL92977.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AP012319.1?from=8381000&amp;to=8382500</td>
+</tr>
+<tr>
+  <td>cardol</td>
+  <td>is_database_example_substrate_of</td>
+  <td>MITE-reported AgqB substrate hydroxylation</td>
+  <td>The fourth MITE example substrate matches full key KVVSCMOUFCNCGX-UHFFFAOYSA-N and complete stereo in the pinned repository-helper/RDKit2026.03.5 screen. It is linear-C15 cardol, not the other branched-chain examples. The owner&#39;s existing cardol/Adipostatin-A name disagreement stays OPEN. No upstream synthesis or exact native assay substrate is inferred.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000081.json</td>
+</tr>
+<tr>
+  <td>MITE-reported AgqB substrate hydroxylation</td>
+  <td>has_database_example_product</td>
+  <td>AgqB hydroxylated linear-C15 example product</td>
+  <td>The encoded hydroxylated product is intermediate and remains externally ungrounded; it is not cardol. No downstream sequence or pathway finality is inferred. MITE&#39;s BGC0001077 and the AgqB reference organism are not transferred to the owner&#39;s source producer Candidatus Entotheonella sp./BGC0002332. Existing SOURCE_ASSERTION/CLUSTER_DEMONSTRATED grades, occurrences and SEEDED status are preserved.</td>
+  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000081.json</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

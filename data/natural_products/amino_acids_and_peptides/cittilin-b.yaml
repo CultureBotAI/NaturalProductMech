@@ -93,6 +93,154 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: cittilin-b-citb-mxpep-database-maturation
+  scope: BIOSYNTHESIS
+  description: MITE-narrated CitB precursor crosslinking followed by MxPep-mediated
+    leader removal to yield the intermediate cittilin B. These are separate database
+    assertions, not a CitB-alone free-product assay. CitB's native DK1622 reference
+    is sequence-verified; MxPep and precursor states remain ungrounded. No primary
+    assay, physical complex or pathway finality is inferred; not full-record sign-off.
+  nodes:
+  - node_id: citb_reference
+    label: CitB native DK1622 reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:QLH55579.1
+  - node_id: cita_precursor
+    label: CitA precursor peptide, database narrative
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: crosslinking
+    label: MITE-reported CitB precursor crosslinking
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: crosslinked_precursor
+    label: Crosslinked CitA precursor, database narrative
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: mxpep
+    label: MxPep, database-named maturation protein
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: leader_removal
+    label: MITE-reported MxPep leader removal
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: cittilin_b
+    label: cittilin B
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: naturalproductmech:mibig-5cf4c39e1c
+  edges:
+  - subject: citb_reference
+    predicate: is_database_reported_catalyst_of
+    object: crosslinking
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000426 version 1, active, names CitB/QLH55579.1, UniParc UPI0002F6195D
+        and BGC0002043. Its narrative assigns precursor crosslinking to CitB and leader
+        removal to MxPep. Assay and knockout codes remain database assertions; the
+        cited primary paper was inaccessible. No independently inspected primary assay.
+      snippet: within the CitA precursor peptide
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLH55579.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Complete independent GenPept cytochrome P450 reference, 450 residues,
+        Myxococcus xanthus DK1622/taxon246197; full coded_by inspected. Reference
+        identity does not identify a historical assay stock or construct.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MN731368.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-07'
+      notes: Full1353-nt plus-strand CDS11483..12835, codon1/table11, translates exactly
+        to annotation, independent QLH55579.1 and UniParc, all450aa. Independent coded_by
+        DNA/coordinates and DK1622/taxon246197 source match. This verifies reference
+        sequence identity, not catalytic activity.
+    - reference: https://www.uniprot.org/uniparc/UPI0002F6195D
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: Retained450-residue archive has no active UniProtKB cross-reference.
+        A0A7D5SGQ7 and A0AA46PCU6 are inactive, not selected as current UniProt examples.
+        UniParc is not UniProtKB; this bounded archive result does not establish universal
+        UniProt absence.
+    notes: The assigned reaction is oxidative C-C and C-O crosslink formation in the
+      precursor core. No native heme/iron occupancy, electron donor, binding site,
+      kinetics, knockout phenotype or physical complex is inferred.
+  - subject: cita_precursor
+    predicate: is_database_reported_substrate_of
+    object: crosslinking
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000426 version 1, active, names CitB/QLH55579.1, UniParc UPI0002F6195D
+        and BGC0002043. Its narrative assigns precursor crosslinking to CitB and leader
+        removal to MxPep. Assay and knockout codes remain database assertions; the
+        cited primary paper was inaccessible. No independently inspected primary assay.
+    notes: The narrative names a CitA precursor with a YIYY core. Its full sequence
+      and external identity are not grounded here. The encoded free tetrapeptide example
+      does not prove that leader-free substrate was assayed with CitB alone.
+  - subject: crosslinking
+    predicate: has_database_narrated_precursor_product
+    object: crosslinked_precursor
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000426 version 1, active, names CitB/QLH55579.1, UniParc UPI0002F6195D
+        and BGC0002043. Its narrative assigns precursor crosslinking to CitB and leader
+        removal to MxPep. Assay and knockout codes remain database assertions; the
+        cited primary paper was inaccessible. No independently inspected primary assay.
+    notes: An ungrounded precursor state represents the database narrative before
+      leader removal, not an independently isolated or chemically resolved intermediate.
+      It is not identified with free cittilin B.
+  - subject: mxpep
+    predicate: is_database_reported_catalyst_of
+    object: leader_removal
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000426 version 1, active, names CitB/QLH55579.1, UniParc UPI0002F6195D
+        and BGC0002043. Its narrative assigns precursor crosslinking to CitB and leader
+        removal to MxPep. Assay and knockout codes remain database assertions; the
+        cited primary paper was inaccessible. No independently inspected primary assay.
+      snippet: by removing the leader sequence
+    notes: MITE names MxPep for maturation but provides no MxPep accession in this
+      entry. No arbitrary protease homolog, native strain mapping, exact cleavage
+      site, construct, assay or physical association with CitB is adopted.
+  - subject: crosslinked_precursor
+    predicate: is_database_narrated_substrate_of
+    object: leader_removal
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000426 version 1, active, names CitB/QLH55579.1, UniParc UPI0002F6195D
+        and BGC0002043. Its narrative assigns precursor crosslinking to CitB and leader
+        removal to MxPep. Assay and knockout codes remain database assertions; the
+        cited primary paper was inaccessible. No independently inspected primary assay.
+    notes: This order follows the source narrative, not genomic gene order or an independently
+      inspected time-course. No additional processing step is inferred.
+  - subject: leader_removal
+    predicate: has_database_reported_product
+    object: cittilin_b
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000426.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-07'
+      notes: MITE0000426 version 1, active, names CitB/QLH55579.1, UniParc UPI0002F6195D
+        and BGC0002043. Its narrative assigns precursor crosslinking to CitB and leader
+        removal to MxPep. Assay and knockout codes remain database assertions; the
+        cited primary paper was inaccessible. No independently inspected primary assay.
+    notes: MITE names cittilin B as an intermediate and encodes a product matching
+      owner full key LRYMXYNLAMRRTH-CIWZQKDMSA-N and complete stereo in the pinned
+      repository-helper/RDKit2026.03.5 screen. This supports product correspondence,
+      not a CitB-only assay. Cittilin A, its separate CitC graph, all source fields,
+      BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED grades and occurrences are unchanged.
+      No pathway finality or producer upgrade is inferred.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -102,3 +250,23 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-07T08:24:11Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added a MITE-database-asserted CitB/MxPep maturation context: seven nodes,
+    six qualified edges with stable URLs and two exact snippets totaling ten words.
+    CitB NCBIProtein:QLH55579.1 is the native DK1622/taxon246197 reference, verified
+    by full1353-nt/table11 CDS11483..12835 on MN731368.1, independent GenPept and
+    UniParc UPI0002F6195D, all450aa; coded_by DNA and coordinates match. Retained
+    UniParc has no active UniProtKB candidate; inactive entries are not selected.
+    Separate database-narrated precursor crosslinking and MxPep leader removal; MxPep
+    and precursor states remain ungrounded. No CitB-only free-product assay or leader-free
+    substrate assay inferred from the encoded core example. Exact product full key
+    and complete stereo match cittilin B, explicitly an intermediate. The primary
+    paper was inaccessible. No historical assay stock, construct, native cofactor
+    state, electron donor, cleavage site, kinetics, knockout phenotype, physical complex,
+    extra processing step or pathway finality is adopted. Preserved all source fields,
+    BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED grades, both occurrences, SEEDED status
+    and append-only history. The separate cittilin A owner and CitC graph are unchanged.
+    Not full-record sign-off.'
+  llm_assisted: true
