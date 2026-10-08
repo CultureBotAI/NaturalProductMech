@@ -81,6 +81,343 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: iso-migrastatin-mgsi-native-reference
+  scope: BIOSYNTHESIS
+  description: Native-reference identity for Streptomyces platensis subsp. rosaceus
+    NRRL 18993/taxon 684832, BGC0000177. Matching sequence references do not establish
+    measured expression, an assay construct, enzyme activity, assembly or cofactor
+    occupancy. No transfer to BGC0000083.
+  nodes:
+  - node_id: mgsi_cds
+    label: ORF 9 CDS (GQ274953.1)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: mgsi
+    label: MgsI (NRRL 18993 native-reference example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:D0U2E7
+  edges:
+  - subject: mgsi_cds
+    predicate: encodes the native protein reference
+    object: mgsi
+    notes: Forward-strand 49855..50871; 1017-nt complete CDS including stop, 338 residues.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/GQ274953.1
+      evidence_type: DATABASE_ASSERTION
+      notes: GenBank assigns ACY01394.1 to ORF 9, with codon_start 1 and translation
+        table 11.
+      retrieved_on: '2026-10-08'
+      snippet: /note="ORF 9"
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ACY01394.1
+      evidence_type: DATABASE_ASSERTION
+      notes: GenPept maps the same native strain and protein to this GQ274953.1 CDS.
+      retrieved_on: '2026-10-08'
+    - reference: https://www.uniprot.org/uniprotkb/D0U2E7/entry
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed entry version 42, sequence version 1. CDS-aware translation,
+        deposited translation, GenPept and UniProt agree over all 338 residues. No
+        specific FUNCTION or CATALYTIC ACTIVITY comment; computational family/domain
+        annotations do not establish native enzyme activity.
+      retrieved_on: '2026-10-08'
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000327.json
+      evidence_type: DATABASE_ASSERTION
+      notes: Active MITE0000327 version 1 maps MgsI to D0U2E7/ACY01394.1/BGC0000177.
+        The deposited sequence records use ORF 9, not an explicit MgsI gene-name qualifier.
+      retrieved_on: '2026-10-08'
+- graph_id: iso-migrastatin-mgsi-modeled-tailoring
+  scope: BIOSYNTHESIS
+  description: Partial database-annotated C-16/C-17 enoyl reduction graph from MITE0000327
+    version 1. MITE classifies its evidence as Knock-out studies and cites DOI:10.1021/ja4002635;
+    only that paper's abstract was inspected, and full-text access stopped at the
+    publisher purchase notice. This is not an independently inspected primary experiment
+    or verified substrate assay. Separate model reactions do not establish pathway
+    order or a complete route. No modeled product is identified with the exact owner;
+    its three double-bond configurations remain unspecified. Chemical and process
+    nodes stay ungrounded, without invented ChEBI/Rhea identities.
+  nodes:
+  - node_id: mgsi
+    label: MgsI (NRRL 18993 native-reference example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:D0U2E7
+  - node_id: model_substrate
+    label: MgsI substrate (MITE model)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: tailoring
+    label: C-16/C-17 enoyl reduction (database-annotated)
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: model_product
+    label: MgsI product (MITE model)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: mgsi
+    predicate: is annotated to catalyze
+    object: tailoring
+    notes: Database reaction assignment, not a directly inspected enzyme assay or
+      strict-specificity claim.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000327.json
+      evidence_type: DATABASE_ASSERTION
+      notes: Active MITE0000327 version 1 maps MgsI to D0U2E7/ACY01394.1/BGC0000177.
+        The deposited sequence records use ORF 9, not an explicit MgsI gene-name qualifier.
+        Reaction evidence is categorized by MITE as Knock-out studies; no measured
+        rates, native assembly or cofactor specificity are adopted.
+      retrieved_on: '2026-10-08'
+      snippet: enoyl reduction of the C-16/C-17 olefin in iso-migrastatin biosynthesis
+  - subject: model_substrate
+    predicate: is the modeled substrate of
+    object: tailoring
+    notes: Source model only; no independently verified assay substrate or reaction
+      order.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000327.json
+      evidence_type: DATABASE_ASSERTION
+      notes: RDKit 2026.03.5 model substrate key VUUITJRXEQWODP-GHOXTBCFSA-N. Different
+        connectivity from the owner; the modeled C-16/C-17 olefin is reduced.
+      retrieved_on: '2026-10-08'
+  - subject: tailoring
+    predicate: is modeled to yield
+    object: model_product
+    notes: Modeled product only, not a direct exact-owner-producing edge.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000327.json
+      evidence_type: DATABASE_ASSERTION
+      notes: RDKit 2026.03.5 model product key SBOCUPFPPJWMJW-QQPTYUHPSA-N. Different
+        connectivity from the owner and lacks its C-8 methoxy group. The MITE isIntermediate=false
+        flag does not establish final iso-migrastatin identity. Three unspecified
+        double bonds are not completed from the substrate.
+      retrieved_on: '2026-10-08'
+- graph_id: iso-migrastatin-mgsj-native-reference
+  scope: BIOSYNTHESIS
+  description: Native-reference identity for Streptomyces platensis subsp. rosaceus
+    NRRL 18993/taxon 684832, BGC0000177. Matching sequence references do not establish
+    measured expression, an assay construct, enzyme activity, assembly or cofactor
+    occupancy. No transfer to BGC0000083.
+  nodes:
+  - node_id: mgsj_cds
+    label: ORF 10 CDS (GQ274953.1)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: mgsj
+    label: MgsJ (NRRL 18993 native-reference example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:D0U2E8
+  edges:
+  - subject: mgsj_cds
+    predicate: encodes the native protein reference
+    object: mgsj
+    notes: Forward-strand 51167..52012; 846-nt complete CDS including stop, 281 residues.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/GQ274953.1
+      evidence_type: DATABASE_ASSERTION
+      notes: GenBank assigns ACY01395.1 to ORF 10, with codon_start 1 and translation
+        table 11.
+      retrieved_on: '2026-10-08'
+      snippet: /note="ORF 10"
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ACY01395.1
+      evidence_type: DATABASE_ASSERTION
+      notes: GenPept maps the same native strain and protein to this GQ274953.1 CDS.
+      retrieved_on: '2026-10-08'
+    - reference: https://www.uniprot.org/uniprotkb/D0U2E8/entry
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed entry version 31, sequence version 1. CDS-aware translation,
+        deposited translation, GenPept and UniProt agree over all 281 residues. No
+        specific FUNCTION or CATALYTIC ACTIVITY comment; computational family/domain
+        annotations do not establish native enzyme activity.
+      retrieved_on: '2026-10-08'
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000328.json
+      evidence_type: DATABASE_ASSERTION
+      notes: Active MITE0000328 version 1 maps MgsJ to D0U2E8/ACY01395.1/BGC0000177.
+        The deposited sequence records use ORF 10, not an explicit MgsJ gene-name
+        qualifier.
+      retrieved_on: '2026-10-08'
+- graph_id: iso-migrastatin-mgsj-modeled-tailoring
+  scope: BIOSYNTHESIS
+  description: Partial database-annotated C-8 O-methylation graph from MITE0000328
+    version 1. MITE classifies its evidence as Knock-out studies and cites DOI:10.1021/ja4002635;
+    only that paper's abstract was inspected, and full-text access stopped at the
+    publisher purchase notice. This is not an independently inspected primary experiment
+    or verified substrate assay. Separate model reactions do not establish pathway
+    order or a complete route. No modeled product is identified with the exact owner;
+    its three double-bond configurations remain unspecified. Chemical and process
+    nodes stay ungrounded, without invented ChEBI/Rhea identities.
+  nodes:
+  - node_id: mgsj
+    label: MgsJ (NRRL 18993 native-reference example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:D0U2E8
+  - node_id: model_substrate
+    label: MgsJ substrate (MITE model)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: tailoring
+    label: C-8 O-methylation (database-annotated)
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: model_product
+    label: MgsJ product (MITE model)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: mgsj
+    predicate: is annotated to catalyze
+    object: tailoring
+    notes: Database reaction assignment, not a directly inspected enzyme assay or
+      strict-specificity claim.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000328.json
+      evidence_type: DATABASE_ASSERTION
+      notes: Active MITE0000328 version 1 maps MgsJ to D0U2E8/ACY01395.1/BGC0000177.
+        The deposited sequence records use ORF 10, not an explicit MgsJ gene-name
+        qualifier. Reaction evidence is categorized by MITE as Knock-out studies;
+        no measured rates, native assembly or cofactor specificity are adopted.
+      retrieved_on: '2026-10-08'
+      snippet: O-methylation of the HO-C-8
+  - subject: model_substrate
+    predicate: is the modeled substrate of
+    object: tailoring
+    notes: Source model only; no independently verified assay substrate or reaction
+      order.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000328.json
+      evidence_type: DATABASE_ASSERTION
+      notes: RDKit 2026.03.5 model substrate key UBYNDTKCKXLUTH-IEJYOVIMSA-N. Different
+        connectivity from the owner; no independently audited chemical identifier.
+      retrieved_on: '2026-10-08'
+  - subject: tailoring
+    predicate: is modeled to yield
+    object: model_product
+    notes: Modeled product only, not a direct exact-owner-producing edge.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000328.json
+      evidence_type: DATABASE_ASSERTION
+      notes: RDKit 2026.03.5 model product key TYTDEHCAAKKYOG-PJSZUTIQSA-N. Same connectivity
+        as the owner, but not the same stereochemical key. The model specifies a tetrahedral
+        center left undefined in the owner and omits three double-bond configurations.
+        Neither representation fills the other; MITE marks this product as an intermediate.
+        Three unspecified double bonds are not completed from the substrate.
+      retrieved_on: '2026-10-08'
+- graph_id: iso-migrastatin-mgsk-native-reference
+  scope: BIOSYNTHESIS
+  description: Native-reference identity for Streptomyces platensis subsp. rosaceus
+    NRRL 18993/taxon 684832, BGC0000177. Matching sequence references do not establish
+    measured expression, an assay construct, enzyme activity, assembly or cofactor
+    occupancy. No transfer to BGC0000083.
+  nodes:
+  - node_id: mgsk_cds
+    label: ORF 11 CDS (GQ274953.1)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: mgsk
+    label: MgsK (NRRL 18993 native-reference example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:D0U2E9
+  edges:
+  - subject: mgsk_cds
+    predicate: encodes the native protein reference
+    object: mgsk
+    notes: Forward-strand 52125..53336; 1212-nt complete CDS including stop, 403 residues.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/GQ274953.1
+      evidence_type: DATABASE_ASSERTION
+      notes: GenBank assigns ACY01396.1 to ORF 11, with codon_start 1 and translation
+        table 11.
+      retrieved_on: '2026-10-08'
+      snippet: /note="ORF 11"
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ACY01396.1
+      evidence_type: DATABASE_ASSERTION
+      notes: GenPept maps the same native strain and protein to this GQ274953.1 CDS.
+      retrieved_on: '2026-10-08'
+    - reference: https://www.uniprot.org/uniprotkb/D0U2E9/entry
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed entry version 42, sequence version 1. CDS-aware translation,
+        deposited translation, GenPept and UniProt agree over all 403 residues. No
+        specific FUNCTION or CATALYTIC ACTIVITY comment; computational family/domain
+        annotations do not establish native enzyme activity.
+      retrieved_on: '2026-10-08'
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000326.json
+      evidence_type: DATABASE_ASSERTION
+      notes: Active MITE0000326 version 1 maps MgsK to D0U2E9/ACY01396.1/BGC0000177.
+        The deposited sequence records use ORF 11, not an explicit MgsK gene-name
+        qualifier.
+      retrieved_on: '2026-10-08'
+- graph_id: iso-migrastatin-mgsk-modeled-tailoring
+  scope: BIOSYNTHESIS
+  description: Partial database-annotated C-8 hydroxylation graph from MITE0000326
+    version 1. MITE classifies its evidence as Knock-out studies and cites DOI:10.1021/ja4002635;
+    only that paper's abstract was inspected, and full-text access stopped at the
+    publisher purchase notice. This is not an independently inspected primary experiment
+    or verified substrate assay. Separate model reactions do not establish pathway
+    order or a complete route. No modeled product is identified with the exact owner;
+    its three double-bond configurations remain unspecified. Chemical and process
+    nodes stay ungrounded, without invented ChEBI/Rhea identities.
+  nodes:
+  - node_id: mgsk
+    label: MgsK (NRRL 18993 native-reference example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:D0U2E9
+  - node_id: model_substrate
+    label: MgsK substrate (MITE model)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: tailoring
+    label: C-8 hydroxylation (database-annotated)
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: model_product
+    label: MgsK product (MITE model)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: mgsk
+    predicate: is annotated to catalyze
+    object: tailoring
+    notes: Database reaction assignment, not a directly inspected enzyme assay or
+      strict-specificity claim.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000326.json
+      evidence_type: DATABASE_ASSERTION
+      notes: Active MITE0000326 version 1 maps MgsK to D0U2E9/ACY01396.1/BGC0000177.
+        The deposited sequence records use ORF 11, not an explicit MgsK gene-name
+        qualifier. Reaction evidence is categorized by MITE as Knock-out studies;
+        no measured rates, native assembly or cofactor specificity are adopted.
+      retrieved_on: '2026-10-08'
+      snippet: C-8 hydroxylation of iso-migrastatin core structure
+  - subject: model_substrate
+    predicate: is the modeled substrate of
+    object: tailoring
+    notes: Source model only; no independently verified assay substrate or reaction
+      order.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000326.json
+      evidence_type: DATABASE_ASSERTION
+      notes: RDKit 2026.03.5 model substrate key IVFXTQLBVDABOI-LZOKNIEJSA-N. Different
+        connectivity from the owner. It shares connectivity, but not the exact key,
+        with 17-hydroxy-8-desmethoxy-isomigrastatin; its two ring double-bond configurations
+        remain unspecified. That separate owner is linked to BGC0000083 and is not
+        assigned these BGC0000177 proteins.
+      retrieved_on: '2026-10-08'
+  - subject: tailoring
+    predicate: is modeled to yield
+    object: model_product
+    notes: Modeled product only, not a direct exact-owner-producing edge.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000326.json
+      evidence_type: DATABASE_ASSERTION
+      notes: RDKit 2026.03.5 model product key BCGQJEGLKJUGLG-ZOSGKCGASA-N. Different
+        connectivity from the owner. MITE marks it as an intermediate; no downstream
+        conversion to the owner or to the MgsJ model is inferred. Three unspecified
+        double bonds are not completed from the substrate.
+      retrieved_on: '2026-10-08'
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
   curator: seed_from_sources
@@ -90,3 +427,15 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-08T09:08:53Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added native-reference and partial database-annotated tailoring graphs
+    for MgsI, MgsJ and MgsK from NRRL 18993/BGC0000177, grounded to D0U2E7/D0U2E8/D0U2E9.
+    Separated verified sequence mappings from MITE knockout-study assertions and modeled
+    chemistry; primary reaction paper full text remains uninspected. Preserved unresolved
+    stereochemistry and distinct cluster/compound identities. No ordered pathway,
+    exact owner-producing edge, assay construct, assembly, cofactor specificity or
+    producer-grade upgrade asserted. Preserved source-owned fields, SEEDED status
+    and prior history.
+  llm_assisted: true
