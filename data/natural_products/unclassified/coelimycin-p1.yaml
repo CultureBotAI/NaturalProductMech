@@ -86,6 +86,291 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: coelimycin-p1-sco6272-native-reference
+  scope: BIOSYNTHESIS
+  description: Native-reference identity for Streptomyces coelicolor A3(2), taxon
+    100226/BGC0000038. UniProt names ATCC BAA-471/A3(2)/M145. Matching references
+    do not establish measured expression, a verified assay construct, mature-chain
+    processing, enzyme activity, native assembly or cofactor occupancy. Coelimycin
+    P1 is not equated with P2.
+  nodes:
+  - node_id: sco6272_cds
+    label: SCO6272 CDS (AL645882.2)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: sco6272
+    label: SCO6272 (A3(2) native-reference example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9EX55
+  edges:
+  - subject: sco6272_cds
+    predicate: encodes the native protein reference
+    object: sco6272
+    notes: Forward-strand 6899170..6900822; 1653-nt complete CDS including stop, 550
+      residues.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AL645882.2
+      evidence_type: DATABASE_ASSERTION
+      notes: GenBank names SCO6272 (alias SC2C4.02) and assigns CAC22143.1, codon_start
+        1, translation table 11. The inspected sequence is the 6890528..6948414 window,
+        not a new whole-chromosome audit.
+      retrieved_on: '2026-10-08'
+      snippet: /gene="SCO6272"
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAC22143.1
+      evidence_type: DATABASE_ASSERTION
+      notes: GenPept identifies A3(2)/taxon 100226. Its coded_by uses AL939127.1;
+        the AL645882.2 CDS independently names the same protein accession.
+      retrieved_on: '2026-10-08'
+    - reference: https://www.uniprot.org/uniprotkb/Q9EX55/entry
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed entry version 122, sequence version 1. CDS-aware translation,
+        deposited translation, GenPept and UniProt agree over all 550 residues. No
+        specific FUNCTION or CATALYTIC ACTIVITY comment. Computational family, cofactor
+        and localization annotations are not direct enzyme evidence. Predicted signal
+        residues 1..32 and cleavage are not experimentally established.
+      retrieved_on: '2026-10-08'
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000337.json
+      evidence_type: DATABASE_ASSERTION
+      notes: Active MITE0000337 version 1 maps SCO6272 to Q9EX55/CAC22143.1/BGC0000038.
+        Native sequence identity does not independently validate the reaction annotation.
+      retrieved_on: '2026-10-08'
+- graph_id: coelimycin-p1-sco6272-inferred-tailoring
+  scope: BIOSYNTHESIS
+  description: Partial proposed monooxygenation graph from MITE0000337 version 1.
+    MITE labels its evidence Inference from genomic data and chemical structure and
+    cites DOI:10.1039/C2SC20410J. Only the paper abstract was inspected; official
+    full-text access returned 403 and retrieval stopped. The distinct DOI:10.1039/C6SC02803A
+    also remains abstract-level after a separate 403. Neither supplies an inspected
+    individual enzyme assay here. These are separate inferred models, not an ordered
+    or complete route to the owner. Chemical and process nodes stay ungrounded; no
+    exact owner-product identity, experimental substrate specificity or P1/P2 equivalence
+    is asserted.
+  nodes:
+  - node_id: sco6272
+    label: SCO6272 (A3(2) native-reference example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9EX55
+  - node_id: model_substrate
+    label: SCO6272 substrate (MITE model)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: tailoring
+    label: proposed monooxygenation (inferred model)
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: model_product
+    label: SCO6272 product (MITE model)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: sco6272
+    predicate: is inferred by the database to catalyze
+    object: tailoring
+    notes: Genomic/chemical inference, not a directly inspected enzyme experiment.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000337.json
+      evidence_type: DATABASE_ASSERTION
+      notes: Active MITE0000337 version 1 maps SCO6272 to Q9EX55/CAC22143.1/BGC0000038.
+        Native sequence identity does not independently validate the reaction annotation.
+        No rates, cofactor specificity, assembly or verified native-substrate assay
+        are adopted.
+      retrieved_on: '2026-10-08'
+      snippet: Catalyse an monooxygenation reaction from compound 4 to compound 5
+  - subject: model_substrate
+    predicate: is the modeled substrate of
+    object: tailoring
+    notes: Source model only; no independently verified assay substrate or reaction
+      order.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000337.json
+      evidence_type: DATABASE_ASSERTION
+      notes: RDKit 2026.03.5 substrate key SMVMDJWFLAJVIY-XRNPITFCSA-N. Different
+        connectivity from the owner; no ChEBI/Rhea identifier chosen.
+      retrieved_on: '2026-10-08'
+  - subject: tailoring
+    predicate: is modeled to yield
+    object: model_product
+    notes: Inferred intermediate model, not exact coelimycin P1.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000337.json
+      evidence_type: DATABASE_ASSERTION
+      notes: RDKit 2026.03.5 product key HEDIIZOUHIVCIU-UNXYVOJBSA-N. MITE marks it
+        as an intermediate; different owner connectivity. The product retains two
+        unspecified tetrahedral centers and three unspecified double bonds. Missing
+        configurations are not filled from the substrate.
+      retrieved_on: '2026-10-08'
+- graph_id: coelimycin-p1-sco6279-native-reference
+  scope: BIOSYNTHESIS
+  description: Native-reference identity for Streptomyces coelicolor A3(2), taxon
+    100226/BGC0000038. UniProt names ATCC BAA-471/A3(2)/M145. Matching references
+    do not establish measured expression, a verified assay construct, mature-chain
+    processing, enzyme activity, native assembly or cofactor occupancy. Coelimycin
+    P1 is not equated with P2.
+  nodes:
+  - node_id: sco6279_cds
+    label: SCO6279 CDS (AL645882.2)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: sco6279
+    label: SCO6279 (A3(2) native-reference example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q93S10
+  edges:
+  - subject: sco6279_cds
+    predicate: encodes the native protein reference
+    object: sco6279
+    notes: Forward-strand 6936149..6937705; 1557-nt complete CDS including stop, 518
+      residues.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AL645882.2
+      evidence_type: DATABASE_ASSERTION
+      notes: GenBank names SCO6279 (alias SC1G7.05) and assigns CAC37880.1, codon_start
+        1, translation table 11. The inspected sequence is the 6890528..6948414 window,
+        not a new whole-chromosome audit.
+      retrieved_on: '2026-10-08'
+      snippet: /gene="SCO6279"
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAC37880.1
+      evidence_type: DATABASE_ASSERTION
+      notes: GenPept identifies A3(2)/taxon 100226. Its coded_by uses AL939127.1;
+        the AL645882.2 CDS independently names the same protein accession.
+      retrieved_on: '2026-10-08'
+    - reference: https://www.uniprot.org/uniprotkb/Q93S10/entry
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed entry version 123, sequence version 1. CDS-aware translation,
+        deposited translation, GenPept and UniProt agree over all 518 residues. No
+        specific FUNCTION or CATALYTIC ACTIVITY comment. Computational family, cofactor
+        and localization annotations are not direct enzyme evidence. The deposited
+        diaminobutyrate-pyruvate aminotransferase name and inferred GO functions are
+        not verified native-substrate specificity.
+      retrieved_on: '2026-10-08'
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000338.json
+      evidence_type: DATABASE_ASSERTION
+      notes: Active MITE0000338 version 1 maps SCO6279 to Q93S10/CAC37880.1/BGC0000038.
+        Native sequence identity does not independently validate the reaction annotation.
+      retrieved_on: '2026-10-08'
+- graph_id: coelimycin-p1-sco6279-inferred-tailoring
+  scope: BIOSYNTHESIS
+  description: Partial proposed amination graph from MITE0000338 version 1. MITE labels
+    its evidence Inference from genomic data and chemical structure and cites DOI:10.1039/C2SC20410J.
+    Only the paper abstract was inspected; official full-text access returned 403
+    and retrieval stopped. The distinct DOI:10.1039/C6SC02803A also remains abstract-level
+    after a separate 403. Neither supplies an inspected individual enzyme assay here.
+    These are separate inferred models, not an ordered or complete route to the owner.
+    Chemical and process nodes stay ungrounded; no exact owner-product identity, experimental
+    substrate specificity or P1/P2 equivalence is asserted.
+  nodes:
+  - node_id: sco6279
+    label: SCO6279 (A3(2) native-reference example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q93S10
+  - node_id: model_substrate
+    label: SCO6279 substrate (MITE model)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: tailoring
+    label: proposed amination (inferred model)
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: model_product
+    label: SCO6279 product (MITE model)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: sco6279
+    predicate: is inferred by the database to catalyze
+    object: tailoring
+    notes: Genomic/chemical inference, not a directly inspected enzyme experiment.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000338.json
+      evidence_type: DATABASE_ASSERTION
+      notes: Active MITE0000338 version 1 maps SCO6279 to Q93S10/CAC37880.1/BGC0000038.
+        Native sequence identity does not independently validate the reaction annotation.
+        No rates, cofactor specificity, assembly or verified native-substrate assay
+        are adopted.
+      retrieved_on: '2026-10-08'
+      snippet: Putatively responsible for amination reaction from compound 3 to compound
+        4
+  - subject: model_substrate
+    predicate: is the modeled substrate of
+    object: tailoring
+    notes: Source model only; no independently verified assay substrate or reaction
+      order.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000338.json
+      evidence_type: DATABASE_ASSERTION
+      notes: RDKit 2026.03.5 substrate key VOQWPAWOYDDQGN-XRNPITFCSA-N. Different
+        connectivity from the owner; no ChEBI/Rhea identifier chosen.
+      retrieved_on: '2026-10-08'
+  - subject: tailoring
+    predicate: is modeled to yield
+    object: model_product
+    notes: Inferred intermediate model, not exact coelimycin P1.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000338.json
+      evidence_type: DATABASE_ASSERTION
+      notes: RDKit 2026.03.5 product key SMVMDJWFLAJVIY-GFCCVEGCSA-N. MITE marks it
+        as an intermediate; different owner connectivity. The product retains four
+        unspecified double bonds. It shares connectivity but not the exact key with
+        the separate SCO6272 model substrate; no automatic inter-graph connection
+        is made. Missing configurations are not filled from the substrate.
+      retrieved_on: '2026-10-08'
+- graph_id: coelimycin-p1-sco6281-native-reference
+  scope: BIOSYNTHESIS
+  description: Native-reference identity for Streptomyces coelicolor A3(2), taxon
+    100226/BGC0000038. UniProt names ATCC BAA-471/A3(2)/M145. Matching references
+    do not establish measured expression, a verified assay construct, mature-chain
+    processing, enzyme activity, native assembly or cofactor occupancy. Coelimycin
+    P1 is not equated with P2.
+  nodes:
+  - node_id: sco6281_cds
+    label: SCO6281 CDS (AL645882.2)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: sco6281
+    label: SCO6281 (A3(2) native-reference example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q93S08
+  edges:
+  - subject: sco6281_cds
+    predicate: encodes the native protein reference
+    object: sco6281
+    notes: Forward-strand 6939907..6941544; 1638-nt complete CDS including stop, 545
+      residues.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AL645882.2
+      evidence_type: DATABASE_ASSERTION
+      notes: GenBank names SCO6281 (alias SC1G7.07) and assigns CAC37882.1, codon_start
+        1, translation table 11. The inspected sequence is the 6890528..6948414 window,
+        not a new whole-chromosome audit.
+      retrieved_on: '2026-10-08'
+      snippet: /gene="SCO6281"
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAC37882.1
+      evidence_type: DATABASE_ASSERTION
+      notes: GenPept identifies A3(2)/taxon 100226. Its coded_by uses AL939127.1;
+        the AL645882.2 CDS independently names the same protein accession.
+      retrieved_on: '2026-10-08'
+    - reference: https://www.uniprot.org/uniprotkb/Q93S08/entry
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Unreviewed entry version 118, sequence version 1. CDS-aware translation,
+        deposited translation, GenPept and UniProt agree over all 545 residues. No
+        specific FUNCTION or CATALYTIC ACTIVITY comment. Computational family, cofactor
+        and localization annotations are not direct enzyme evidence. Predicted signal
+        residues 1..35 and cleavage are not experimentally established. MITE0000339
+        reaction assignment is withheld under https://github.com/CultureBotAI/NaturalProductMech/issues/695:
+        its Monooxygenation label needs reconciliation with modeled C12H19NO3 to C12H17NO3,
+        retaining three oxygens. No catalytic reaction edge is added.'
+      retrieved_on: '2026-10-08'
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000339.json
+      evidence_type: DATABASE_ASSERTION
+      notes: Active MITE0000339 version 1 maps SCO6281 to Q93S08/CAC37882.1/BGC0000038.
+        Native sequence identity does not independently validate the reaction annotation.
+      retrieved_on: '2026-10-08'
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -95,3 +380,15 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-08T09:56:49Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added three native-reference protein graphs for SCO6272, SCO6279 and SCO6281
+    from S. coelicolor A3(2)/BGC0000038, grounded to Q9EX55/Q93S10/Q93S08. Added two
+    explicitly inferred MITE reaction models for SCO6272/SCO6279 only. Withheld SCO6281
+    reaction under issue695; no primary full-text experiment inspected. Preserved
+    model stereochemical uncertainty and exact owner identity. No ordered pathway,
+    exact owner-product edge, mature-chain processing, assay construct, measured specificity,
+    assembly or source-grade upgrade. Source fields, SEEDED status and prior history
+    unchanged.
+  llm_assisted: true
