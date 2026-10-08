@@ -557,6 +557,45 @@ biosynthetic_pathway:
       UniProt predicted signal/chain boundaries were not used to truncate the sequence
       or to assert measured processing. Native sequence identity does not independently
       prove catalysis, strain-specific production, or exact substrate stereochemistry.'
+- enzyme_id: UniProtKB:B3FWT9
+  enzyme_label: Rdc4 cytochrome P450 monooxygenase (proposed epoxidation)
+  proposed: true
+  notes: UniProt proposes Rdc4 as a possible epoxide-forming post-PKS enzyme in radicicol
+    biosynthesis. This is a database-proposed role, not a verified isolated-enzyme
+    conversion. No exact substrate, immediate product, reaction stoichiometry or pathway
+    order relative to Rdc2 was established. The owner has unspecified stereochemistry;
+    no epoxide configuration is assigned.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/B3FWT9/entry
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-08'
+    snippet: could introduce the epoxide and the chlorine, respectively
+    notes: Reviewed UniProtKB B3FWT9, entry 46/sequence 1, annotation 2026-09-02.
+      The FUNCTION text proposes Rdc4 and Rdc2 as possible epoxide- and chlorine-introducing
+      enzymes, respectively. The organism is Metacordyceps chlamydosporia (Pochonia
+      chlamydosporia), taxon 280754. PMID:18567690 / DOI:10.1128/AEM.00478-08 was
+      not accessible in this pass; no primary experiment was inspected. The alternative
+      protein name mentioning hypothemycin is not used to identify the compound or
+      to assert an exact reaction.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/ACD39773.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-08'
+    snippet: cytochrome P450 [Pochonia chlamydosporia]
+    notes: GenPept ACD39773.1 identifies Rdc4, 492 aa, strain ATCC 16683, taxon 280754,
+      with a reverse-strand three-exon coded_by on EU520419.1. Its full sequence equals
+      UniProtKB:B3FWT9. This grounds the native reference protein, not its catalytic
+      role, an experimental construct or historical assay-stock identity.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/EU520419.1
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-08'
+    notes: 'Independent reference-identity audit on the owner''s native BGC0000134
+      reference: reverse-strand CDS exons 19813..20929, 19551..19749 and 19331..19493
+      (1-based inclusive, transcript order) agree with GenPept coded_by. The complete
+      1,479-nt spliced CDS, codon_start 1, translates to the same 492-aa sequence
+      in GenPept, UniProt and the annotated CDS. Standard table 1 was used because
+      transl_table is absent. Exact CDS boundaries, not fuzzy gene/mRNA boundaries,
+      were used. This does not establish epoxidation, native production, reaction
+      order or stereochemistry.'
 causal_graphs:
 - graph_id: radicicol-hsp90-inhibition
   scope: BIOACTIVITY
@@ -786,6 +825,63 @@ causal_graphs:
         the sequence or to assert measured processing. Native sequence identity does
         not independently prove catalysis, strain-specific production, or exact substrate
         stereochemistry.'
+- graph_id: radicicol-rdc4-proposed-epoxidation-role
+  scope: BIOSYNTHESIS
+  description: Partial, database-proposed Rdc4 epoxidation role in radicicol biosynthesis.
+    Native sequence evidence grounds the protein but does not verify a catalytic reaction
+    or an exact precursor/product pair.
+  nodes:
+  - node_id: rdc4
+    label: Pochonia chlamydosporia Rdc4 cytochrome P450
+    node_type: ENZYME
+    identifier: UniProtKB:B3FWT9
+    grounding_status: GROUNDED
+  - node_id: radicicol
+    label: Radicicol (owner stereochemistry unspecified)
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-7fc8631300
+    grounding_status: GROUNDED
+  edges:
+  - subject: rdc4
+    predicate: is_database_proposed_biosynthetic_enzyme_for
+    object: radicicol
+    notes: UniProt proposes Rdc4 as a possible epoxide-forming post-PKS enzyme in
+      radicicol biosynthesis. This is a database-proposed role, not a verified isolated-enzyme
+      conversion. No exact substrate, immediate product, reaction stoichiometry or
+      pathway order relative to Rdc2 was established. The owner has unspecified stereochemistry;
+      no epoxide configuration is assigned.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/B3FWT9/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: could introduce the epoxide and the chlorine, respectively
+      notes: Reviewed UniProtKB B3FWT9, entry 46/sequence 1, annotation 2026-09-02.
+        The FUNCTION text proposes Rdc4 and Rdc2 as possible epoxide- and chlorine-introducing
+        enzymes, respectively. The organism is Metacordyceps chlamydosporia (Pochonia
+        chlamydosporia), taxon 280754. PMID:18567690 / DOI:10.1128/AEM.00478-08 was
+        not accessible in this pass; no primary experiment was inspected. The alternative
+        protein name mentioning hypothemycin is not used to identify the compound
+        or to assert an exact reaction.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ACD39773.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: cytochrome P450 [Pochonia chlamydosporia]
+      notes: GenPept ACD39773.1 identifies Rdc4, 492 aa, strain ATCC 16683, taxon
+        280754, with a reverse-strand three-exon coded_by on EU520419.1. Its full
+        sequence equals UniProtKB:B3FWT9. This grounds the native reference protein,
+        not its catalytic role, an experimental construct or historical assay-stock
+        identity.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/EU520419.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: 'Independent reference-identity audit on the owner''s native BGC0000134
+        reference: reverse-strand CDS exons 19813..20929, 19551..19749 and 19331..19493
+        (1-based inclusive, transcript order) agree with GenPept coded_by. The complete
+        1,479-nt spliced CDS, codon_start 1, translates to the same 492-aa sequence
+        in GenPept, UniProt and the annotated CDS. Standard table 1 was used because
+        transl_table is absent. Exact CDS boundaries, not fuzzy gene/mRNA boundaries,
+        were used. This does not establish epoxidation, native production, reaction
+        order or stereochemistry.'
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -837,4 +933,14 @@ curation_history:
     and primary experiments unverified. Did not substitute MITE's distinct monocillin
     II intermediate model for the owner, infer reaction order or measured protein
     processing, upgrade producer/BGC/status grades, or change prior bioactivity graphs.
+  llm_assisted: true
+- timestamp: '2026-10-08T19:59:57Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a database-proposed Rdc4 epoxidation role in radicicol biosynthesis,
+    grounded to UniProtKB:B3FWT9 by exact 492-aa agreement with ACD39773.1 and the
+    three-exon reverse-strand EU520419.1 CDS from ATCC 16683. Added no substrate/product
+    CURIE, step number, reaction ID or primary experiment. Preserved the Rdc2 annotation,
+    both bioactivity graphs, owner chemistry, producer/BGC grades, curation status
+    and prior history.
   llm_assisted: true
