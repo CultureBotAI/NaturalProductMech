@@ -85,6 +85,59 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">2 nodes, 1 edge</span></h2>
+<p class="sub">Native sequence identity only, not native naseseazine C production or verification of an experimental expression construct. The deposited product is NascB; the CDS has no gene-name qualifier.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>NascB CDS (MH201515.1:880-2085)</td>
+  <td>encodes the deposited native reference</td>
+  <td>NascB (native CMB-MQ030 reference)</td>
+  <td>Streptomyces sp. CMB-MQ030, taxon 1931; forward-strand CDS, GTG initiation interpreted with translation table 11, 401 amino acids.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/MH201515.1<br>https://www.ncbi.nlm.nih.gov/protein/AWF71596.1<br>https://www.uniprot.org/uniparc/UPI000A3766A8</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/MH201515.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>MH201515.1 CDS 880..2085 identifies AWF71596.1 and product NascB.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AWF71596.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Independent GenPept entry names CMB-MQ030 and the same coding interval.</dd><dt>snippet</dt><dd>/coded_by=&#34;MH201515.1:880..2085&#34;</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI000A3766A8</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Retrieved 2026-10-08: CDS-aware translation, deposited CDS translation, GenPept sequence and UniParc sequence are identical. A0A3G1Q973 is inactive; active A0A4Y3QZ72 names S. cacaoi, not this native isolate. Neither is selected. UniParc is a sequence archive, not UniProtKB.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Partial biochemical graph. Purified recombinant NascB was assayed with E. coli Fdx/FdxR and NADPH regeneration. This is not cofactor-independent enzyme sufficiency or native production: NAS-C was not detected in CMB-MQ030 under the reported conditions. Radical microsteps are not asserted. Main text was inspected; figures, methods and supplementary material were not.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>NascB (native CMB-MQ030 reference)</td>
+  <td>is the native protein reference associated with</td>
+  <td>Reported NascB reconstituted assay</td>
+  <td>Gene-product association only; codon-optimized experimental DNA and tags were not sequence-verified.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1038/s41467-018-06528-z<br>https://www.ncbi.nlm.nih.gov/protein/AWF71596.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1038/s41467-018-06528-z</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Results, heterologous characterization: NascB is P450-1 from MQ030.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AWF71596.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native NascB reference cross-cites PMID:30356123.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Synthetic cyclo-(L-Trp-L-Pro)</td>
+  <td>is the reported substrate in</td>
+  <td>Reported NascB reconstituted assay</td>
+  <td>The exact precursor identifier remains ungrounded.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1038/s41467-018-06528-z</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1038/s41467-018-06528-z</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results, in vitro characterization: synthetic cyclo-(L-Trp-L-Pro) was tested.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Reported NascB reconstituted assay</td>
+  <td>yields the reported</td>
+  <td>naseseazine C</td>
+  <td>Reported NAS-C, not NAS-B or the analogue panel; product assignment is source-reported, not an independent spectral reanalysis.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1038/s41467-018-06528-z<br>https://pubchem.ncbi.nlm.nih.gov/compound/132494535<br>DOI:10.1038/s41467-018-06528-z</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1038/s41467-018-06528-z</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results, in vitro characterization: NascB converts the synthetic substrate to NAS-C.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://pubchem.ncbi.nlm.nih.gov/compound/132494535</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Retrieved 2026-10-08: naseseazine C matches owner InChIKey LQDCHAOARKZZQM-QWEVHVQISA-N and its fully specified SMILES.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1038/s41467-018-06528-z</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Paper reports NAS-C as 2S,3R. Pinned RDKit 2026.03.5 assigns those pyrroloindoline centers to the owner; MITE connectivity alone does not establish stereochemistry.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

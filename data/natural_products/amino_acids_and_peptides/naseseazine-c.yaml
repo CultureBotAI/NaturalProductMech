@@ -75,6 +75,108 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: naseseazine-c-nascb-native-reference
+  scope: BIOSYNTHESIS
+  description: Native sequence identity only, not native naseseazine C production
+    or verification of an experimental expression construct. The deposited product
+    is NascB; the CDS has no gene-name qualifier.
+  nodes:
+  - node_id: nascb_cds
+    label: NascB CDS (MH201515.1:880-2085)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: nascb
+    label: NascB (native CMB-MQ030 reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:AWF71596.1
+  edges:
+  - subject: nascb_cds
+    predicate: encodes the deposited native reference
+    object: nascb
+    notes: Streptomyces sp. CMB-MQ030, taxon 1931; forward-strand CDS, GTG initiation
+      interpreted with translation table 11, 401 amino acids.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MH201515.1
+      evidence_type: DATABASE_ASSERTION
+      notes: MH201515.1 CDS 880..2085 identifies AWF71596.1 and product NascB.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AWF71596.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent GenPept entry names CMB-MQ030 and the same coding interval.
+      snippet: /coded_by="MH201515.1:880..2085"
+    - reference: https://www.uniprot.org/uniparc/UPI000A3766A8
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Retrieved 2026-10-08: CDS-aware translation, deposited CDS translation,
+        GenPept sequence and UniParc sequence are identical. A0A3G1Q973 is inactive;
+        active A0A4Y3QZ72 names S. cacaoi, not this native isolate. Neither is selected.
+        UniParc is a sequence archive, not UniProtKB.'
+- graph_id: naseseazine-c-nascb-reconstituted-assay
+  scope: BIOSYNTHESIS
+  description: 'Partial biochemical graph. Purified recombinant NascB was assayed
+    with E. coli Fdx/FdxR and NADPH regeneration. This is not cofactor-independent
+    enzyme sufficiency or native production: NAS-C was not detected in CMB-MQ030 under
+    the reported conditions. Radical microsteps are not asserted. Main text was inspected;
+    figures, methods and supplementary material were not.'
+  nodes:
+  - node_id: nascb
+    label: NascB (native CMB-MQ030 reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:AWF71596.1
+  - node_id: cwp
+    label: Synthetic cyclo-(L-Trp-L-Pro)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: Reported NascB reconstituted assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: naseseazine_c
+    label: naseseazine C
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: naturalproductmech:mibig-91513fb680
+  edges:
+  - subject: nascb
+    predicate: is the native protein reference associated with
+    object: assay
+    notes: Gene-product association only; codon-optimized experimental DNA and tags
+      were not sequence-verified.
+    evidence:
+    - reference: DOI:10.1038/s41467-018-06528-z
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Results, heterologous characterization: NascB is P450-1 from MQ030.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AWF71596.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native NascB reference cross-cites PMID:30356123.
+  - subject: cwp
+    predicate: is the reported substrate in
+    object: assay
+    notes: The exact precursor identifier remains ungrounded.
+    evidence:
+    - reference: DOI:10.1038/s41467-018-06528-z
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Results, in vitro characterization: synthetic cyclo-(L-Trp-L-Pro) was
+        tested.'
+  - subject: assay
+    predicate: yields the reported
+    object: naseseazine_c
+    notes: Reported NAS-C, not NAS-B or the analogue panel; product assignment is
+      source-reported, not an independent spectral reanalysis.
+    evidence:
+    - reference: DOI:10.1038/s41467-018-06528-z
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Results, in vitro characterization: NascB converts the synthetic substrate
+        to NAS-C.'
+    - reference: https://pubchem.ncbi.nlm.nih.gov/compound/132494535
+      evidence_type: DATABASE_ASSERTION
+      notes: 'Retrieved 2026-10-08: naseseazine C matches owner InChIKey LQDCHAOARKZZQM-QWEVHVQISA-N
+        and its fully specified SMILES.'
+    - reference: DOI:10.1038/s41467-018-06528-z
+      evidence_type: CURATOR_INFERENCE
+      notes: Paper reports NAS-C as 2S,3R. Pinned RDKit 2026.03.5 assigns those pyrroloindoline
+        centers to the owner; MITE connectivity alone does not establish stereochemistry.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -84,3 +186,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-08T04:05:05Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added NascB native-reference and reconstituted-assay graphs for naseseazine
+    C. Grounded the native reference to GenPept AWF71596.1; did not substitute an
+    inactive or other-organism UniProtKB record. Kept experimental construct verification,
+    radical microsteps and native production unasserted; source-owned fields unchanged.
+  llm_assisted: true
