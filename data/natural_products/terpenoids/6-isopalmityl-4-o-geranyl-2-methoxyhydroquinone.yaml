@@ -65,6 +65,235 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: isopalmityl-geranyl-methoxyhydroquinone-agqc-native-reference
+  scope: BIOSYNTHESIS
+  description: Native-reference identity for Actinoplanes missouriensis 431 / NBRC
+    102363, taxon 512565/AP012319.1/BGC0001077. The inspected 6,550-bp forward genomic
+    window spans 8379670..8386219, not the whole genome. Matching references do not
+    prove measured expression, an assay construct, enzyme activity, membrane topology
+    or native assembly.
+  nodes:
+  - node_id: agqc_cds
+    label: agqC CDS (AP012319.1)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: agqc
+    label: AgqC (431 native-reference example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:I0HIZ1
+  edges:
+  - subject: agqc_cds
+    predicate: encodes the native protein reference
+    object: agqc
+    notes: complement(8382315..8383022); 708-nt complete CDS including stop, 235 residues.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AP012319.1
+      evidence_type: DATABASE_ASSERTION
+      notes: GenBank names agqC/AMIS_77580, assigns BAL92978.1, codon_start 1 and
+        translation table 11. The window source identifies 431/NBRC 102363/taxon 512565.
+        This is a deposited annotation, not an assay.
+      retrieved_on: '2026-10-08'
+      snippet: /gene="agqC"
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAL92978.1
+      evidence_type: DATABASE_ASSERTION
+      notes: GenPept identifies the same native strain and its coded_by matches the
+        complete CDS coordinates in the inspected genomic window.
+      retrieved_on: '2026-10-08'
+    - reference: https://www.uniprot.org/uniprotkb/I0HIZ1/entry
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed entry version 51, sequence version 1, predicted protein existence.
+        CDS-aware translation, deposited translation, GenPept and UniProt agree over
+        all 235 residues. Gene, locus, strain and direct EMBL cross-reference agree.
+        No FUNCTION or CATALYTIC ACTIVITY comment; family predictions are not substrate
+        assays. Predicted S-adenosylmethionine annotations are not measured donor
+        specificity.
+      retrieved_on: '2026-10-08'
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000082.json
+      evidence_type: DATABASE_ASSERTION
+      notes: Active MITE0000082 version 2 maps AgqC to I0HIZ1/BAL92978.1/BGC0001077.
+        Sequence identity does not independently validate the reaction.
+      retrieved_on: '2026-10-08'
+- graph_id: isopalmityl-geranyl-methoxyhydroquinone-agqd-native-reference
+  scope: BIOSYNTHESIS
+  description: Native-reference identity for Actinoplanes missouriensis 431 / NBRC
+    102363, taxon 512565/AP012319.1/BGC0001077. The inspected 6,550-bp forward genomic
+    window spans 8379670..8386219, not the whole genome. Matching references do not
+    prove measured expression, an assay construct, enzyme activity, membrane topology
+    or native assembly.
+  nodes:
+  - node_id: agqd_cds
+    label: agqD CDS (AP012319.1)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: agqd
+    label: AgqD (431 native-reference example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:I0HIZ2
+  edges:
+  - subject: agqd_cds
+    predicate: encodes the native protein reference
+    object: agqd
+    notes: 8383088..8383885; 798-nt complete CDS including stop, 265 residues.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AP012319.1
+      evidence_type: DATABASE_ASSERTION
+      notes: GenBank names agqD/AMIS_77590, assigns BAL92979.1, codon_start 1 and
+        translation table 11. The window source identifies 431/NBRC 102363/taxon 512565.
+        This is a deposited annotation, not an assay.
+      retrieved_on: '2026-10-08'
+      snippet: /gene="agqD"
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAL92979.1
+      evidence_type: DATABASE_ASSERTION
+      notes: GenPept identifies the same native strain and its coded_by matches the
+        complete CDS coordinates in the inspected genomic window.
+      retrieved_on: '2026-10-08'
+    - reference: https://www.uniprot.org/uniprotkb/I0HIZ2/entry
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed entry version 40, sequence version 1, predicted protein existence.
+        CDS-aware translation, deposited translation, GenPept and UniProt agree over
+        all 265 residues. Gene, locus, strain and direct EMBL cross-reference agree.
+        No FUNCTION or CATALYTIC ACTIVITY comment; family predictions are not substrate
+        assays. Automated membrane localization and eight predicted helices are not
+        measured topology.
+      retrieved_on: '2026-10-08'
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000083.json
+      evidence_type: DATABASE_ASSERTION
+      notes: Active MITE0000083 version 1 maps AgqD to I0HIZ2/BAL92979.1/BGC0001077.
+        Sequence identity does not independently validate the reaction.
+      retrieved_on: '2026-10-08'
+- graph_id: isopalmityl-geranyl-methoxyhydroquinone-agqc-database-model
+  scope: BIOSYNTHESIS
+  description: Partial O-methylation model from MITE0000082 version 2, second enumerated
+    reaction. MITE labels its evidence Heterologous expression and cites DOI:10.1002/cbic.201000628.
+    That paper was inaccessible when attempted on 2026-10-07 and retrieval stopped;
+    no directly inspected primary assay or construct is adopted. This is a database
+    assertion, not an ordered or complete pathway. Placement in this owner is curator-inferred
+    from BGC0001077, the shared modeled intermediate and AgqD end-product connectivity;
+    it is not transferred to every cluster congener. Chemical/process nodes stay ungrounded.
+    MITE marks this example as an intermediate. Its SMILES equals the selected AgqD
+    model substrate, but no ordered pathway or automatic inter-graph bridge is asserted.
+    Neither structure is the owner.
+  nodes:
+  - node_id: agqc
+    label: AgqC (431 native-reference example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:I0HIZ1
+  - node_id: model_substrate
+    label: AgqC substrate (MITE model)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: tailoring
+    label: O-methylation (MITE model)
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: model_product
+    label: AgqC product (MITE model)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: agqc
+    predicate: is assigned by the database to catalyze
+    object: tailoring
+    notes: Database evidence code, not an independently inspected enzyme experiment.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000082.json
+      evidence_type: DATABASE_ASSERTION
+      notes: Heterologous expression is the source evidence category for this model.
+        No rates, measured donor specificity, assembly or verified assay construct
+        are asserted.
+      retrieved_on: '2026-10-08'
+  - subject: model_substrate
+    predicate: is the modeled substrate of
+    object: tailoring
+    notes: Source model only; no independently verified assay substrate or reaction
+      order.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000082.json
+      evidence_type: DATABASE_ASSERTION
+      notes: RDKit 2026.03.5 substrate key CUXPYCZXLHZPFW-UHFFFAOYSA-N, C21H36O3.
+        No potential stereochemistry detected; no ChEBI/Rhea identifier chosen.
+      retrieved_on: '2026-10-08'
+  - subject: tailoring
+    predicate: is modeled to yield
+    object: model_product
+    notes: Not an exact owner-product identity assertion.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000082.json
+      evidence_type: DATABASE_ASSERTION
+      notes: RDKit 2026.03.5 product key YFSFCVIDLYZLOA-UHFFFAOYSA-N, C22H38O3. MITE
+        marks this example as an intermediate. Its SMILES equals the selected AgqD
+        model substrate, but no ordered pathway or automatic inter-graph bridge is
+        asserted. Neither structure is the owner.
+      retrieved_on: '2026-10-08'
+- graph_id: isopalmityl-geranyl-methoxyhydroquinone-agqd-database-model
+  scope: BIOSYNTHESIS
+  description: Partial O-prenylation model from MITE0000083 version 1, second enumerated
+    reaction. MITE labels its evidence Heterologous expression and cites DOI:10.1002/cbic.201000628.
+    That paper was inaccessible when attempted on 2026-10-07 and retrieval stopped;
+    no directly inspected primary assay or construct is adopted. This is a database
+    assertion, not an ordered or complete pathway. Placement in this owner is curator-inferred
+    from BGC0001077, the shared modeled intermediate and AgqD end-product connectivity;
+    it is not transferred to every cluster congener. Chemical/process nodes stay ungrounded.
+    The product shares owner connectivity but lacks one alkene geometry; it is not
+    the exact owner key. Missing geometry is not filled from the owner. MITE isIntermediate
+    false does not prove exact product identity or pathway finality.
+  nodes:
+  - node_id: agqd
+    label: AgqD (431 native-reference example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:I0HIZ2
+  - node_id: model_substrate
+    label: AgqD substrate (MITE model)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: tailoring
+    label: O-prenylation (MITE model)
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: model_product
+    label: AgqD product (MITE model)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: agqd
+    predicate: is assigned by the database to catalyze
+    object: tailoring
+    notes: Database evidence code, not an independently inspected enzyme experiment.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000083.json
+      evidence_type: DATABASE_ASSERTION
+      notes: Heterologous expression is the source evidence category for this model.
+        No rates, measured donor specificity, assembly or verified assay construct
+        are asserted.
+      retrieved_on: '2026-10-08'
+  - subject: model_substrate
+    predicate: is the modeled substrate of
+    object: tailoring
+    notes: Source model only; no independently verified assay substrate or reaction
+      order.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000083.json
+      evidence_type: DATABASE_ASSERTION
+      notes: RDKit 2026.03.5 substrate key YFSFCVIDLYZLOA-UHFFFAOYSA-N, C22H38O3.
+        No potential stereochemistry detected; no ChEBI/Rhea identifier chosen.
+      retrieved_on: '2026-10-08'
+  - subject: tailoring
+    predicate: is modeled to yield
+    object: model_product
+    notes: Not an exact owner-product identity assertion.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000083.json
+      evidence_type: DATABASE_ASSERTION
+      notes: RDKit 2026.03.5 product key PBBKVCVGOJSEOQ-UHFFFAOYSA-N, C32H54O3. The
+        product shares owner connectivity but lacks one alkene geometry; it is not
+        the exact owner key. Missing geometry is not filled from the owner. MITE isIntermediate
+        false does not prove exact product identity or pathway finality.
+      retrieved_on: '2026-10-08'
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
   curator: seed_from_sources
@@ -74,3 +303,14 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-08T11:26:49Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added native-reference AgqC/I0HIZ1 and AgqD/I0HIZ2 from Actinoplanes missouriensis
+    431/NBRC 102363/AP012319.1/BGC0001077, with separate database-asserted O-methylation
+    and O-prenylation models. AgqD model product omits alkene geometry; no exact owner-product
+    identity or ordered pathway asserted. Native identity is not assay-construct proof;
+    the cited primary paper was inaccessible. No measured donor specificity, membrane
+    topology, assembly or grade upgrade. Preserved source fields, SEEDED status and
+    prior history.
+  llm_assisted: true
