@@ -206,6 +206,195 @@ causal_graphs:
       and complete stereo in the retained repository-helper/RDKit2026.03.5 screen.
       No pathway finality, ThnA experiment or producer-grade upgrade is inferred.
       Existing occurrences, source fields and history remain unchanged.
+- graph_id: thienodolin-thdh-thdf-database-chlorination
+  scope: BIOSYNTHESIS
+  description: 'Database-qualified upstream thienodolin context: native MJ286-76F7
+    ThdH/ThaL chlorination of L-tryptophan, with ThdF listed as auxiliary reductase.
+    Complete native reference sequences are verified separately. The product is an
+    intermediate, not thienodolin itself; downstream assembly is not reconstructed.
+    No primary assay, physical complex, residue-level mechanism or source-grade upgrade
+    is claimed; not full-record sign-off.'
+  nodes:
+  - node_id: thdh
+    label: ThdH/ThaL native MJ286-76F7 reference
+    node_type: ENZYME
+    identifier: UniProtKB:A1E280
+    grounding_status: GROUNDED
+  - node_id: thdf
+    label: ThdF native MJ286-76F7 auxiliary reference
+    node_type: ENZYME
+    identifier: UniProtKB:A0A1B1V585
+    grounding_status: GROUNDED
+  - node_id: tryptophan
+    label: L-tryptophan zwitterion
+    node_type: COMPOUND
+    identifier: CHEBI:57912
+    grounding_status: GROUNDED
+  - node_id: chlorination
+    label: Database-reported L-tryptophan C6 chlorination
+    node_type: PROCESS
+    identifier: RHEA:55901
+    grounding_status: GROUNDED
+  - node_id: chlorotryptophan
+    label: 6-chloro-L-tryptophan zwitterion
+    node_type: COMPOUND
+    identifier: CHEBI:139335
+    grounding_status: GROUNDED
+  - node_id: thienodolin
+    label: thienodolin
+    node_type: COMPOUND
+    identifier: CHEBI:9543
+    grounding_status: GROUNDED
+  edges:
+  - subject: thdh
+    predicate: is_database_reported_catalyst_of
+    object: chlorination
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000433.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: MITE0000433 version2, active, associates ANW12118.1/UPI0000EA332E with
+        BGC0001374 and L-tryptophan C6 chlorination. Its experiment codes remain database
+        assertions; cited primary studies were not fully inspected. No mutant, bromination,
+        peptide-derivative chemistry or residue-level mechanism is adopted.
+      snippet: ThdH catalyzes regioselective chlorination of L-tryptophan at the C6
+        position
+    - reference: https://www.uniprot.org/uniprotkb/A1E280
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: Reviewed Swiss-Prot entry64, sequence1, names thaL with synonym thdH;
+        taxon1887; KU569241/ANW12118.1 cross-reference and MJ286-76F7 sequence-reference
+        strain. FUNCTION links this enzyme to thienodolin and C6 chlorination; catalytic
+        activity records RHEA55900 and left-to-right RHEA55901. These are inspected
+        database annotations, not independently reviewed primary assays.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ANW12118.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: Independent complete GenPept ANW12118.1, 531aa, thdH, S. albogriseolus
+        MJ286-76F7/taxon1887. coded_by KU569241.1:11305..12900 and table11 agree with
+        the native genome.
+      snippet: /gene="thdH"
+    - reference: https://www.uniprot.org/uniparc/UPI0000EA332E
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: Complete 531-residue archive sequence equals GenPept and current A1E280;
+        active archive cross-references agree. The MITE uniprot field contains this
+        UniParc identifier, not a UniProtKB accession.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KU569241.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: Full 1596-nt plus-strand CDS 11305..12900, codon1/table11, translates
+        exactly to the annotated ANW12118.1, independent GenPept, UniParc and current
+        UniProtKB (531aa). Source qualifiers identify MJ286-76F7/taxon1887. This establishes
+        the native reference sequence, not historical assay-stock or engineered-construct
+        identity.
+    notes: A1E280 is the exact native sequence, not a convenient homolog. Functional
+      support is database-level. UniProt's cited knockout/rescue and structural studies
+      are not adopted as independently verified experiments. Producer SOURCE_ASSERTION
+      and BGC CLUSTER_UNSTATED remain unchanged.
+  - subject: thdf
+    predicate: is_database_listed_auxiliary_of
+    object: thdh
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000433.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: The enzyme.auxiliaryEnzymes field explicitly lists ThdF, ANW12119.1 and
+        UPI000814E025 beside ThdH. It names a flavin reductase but supplies no separate
+        ThdF-specific experimental result.
+      snippet: Flavin reductase
+    - reference: https://www.uniprot.org/uniprotkb/A0A1B1V585
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: Unreviewed TrEMBL entry18, sequence1, thdF, taxon1887; KU569241/ANW12119.1
+        cross-reference and MJ286-76F7 sequence-reference strain. No FUNCTION or catalytic-activity
+        comment. Protein-level existence and structural cross-references do not establish
+        the native physiological partner, cofactor preference, kinetics or assay construct.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ANW12119.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: Independent complete GenPept ANW12119.1, 193aa, thdF, S. albogriseolus
+        MJ286-76F7/taxon1887. coded_by KU569241.1:12897..13478 and table11 agree with
+        the native genome.
+      snippet: /gene="thdF"
+    - reference: https://www.uniprot.org/uniparc/UPI000814E025
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: Complete 193-residue archive sequence equals GenPept and current A0A1B1V585;
+        active archive cross-references agree. The MITE uniprot field contains this
+        UniParc identifier, not a UniProtKB accession.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KU569241.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: Full 582-nt plus-strand CDS 12897..13478, codon1/table11, translates
+        exactly to the annotated ANW12119.1, independent GenPept, UniParc and current
+        UniProtKB (193aa). Source qualifiers identify MJ286-76F7/taxon1887. This establishes
+        the native reference sequence, not historical assay-stock or engineered-construct
+        identity.
+    notes: 'Auxiliary-enzyme annotation only: no demonstrated ThdH-ThdF complex, direct
+      binding, native electron-transfer measurement, essentiality or specific NADH/FAD
+      reaction is inferred. The newer ThdF primary paper was inaccessible; database
+      structural citations do not substitute for construct-level inspection.'
+  - subject: tryptophan
+    predicate: is_database_reported_substrate_of
+    object: chlorination
+    evidence:
+    - reference: https://www.rhea-db.org/rhea/55900
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: Inspected cached Rhea page identifies L-tryptophan as CHEBI:57912 and
+        RHEA55901 as the left-to-right form of RHEA55900. The later local HTTP download
+        returned403; no independent raw-response snapshot or retry is claimed.
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000433.json
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: The first explicit reaction example uses L-tryptophan. Its neutral representation
+        and the Rhea zwitterion yield the same full Standard InChIKey QIVBCDIJIAJPQS-VIFPVBQESA-N
+        under RDKit2026.03.5; the graph uses the ChEBI zwitterion form.
+    notes: Principal organic substrate shown. The referenced Rhea reaction also includes
+      reduced FAD, chloride and O2; omission of cofactor nodes is not a claim of cofactor-independent
+      catalysis. No SMARTS transformation rule is executed or adopted.
+  - subject: chlorination
+    predicate: has_database_reported_product
+    object: chlorotryptophan
+    evidence:
+    - reference: https://www.rhea-db.org/rhea/55900
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: Inspected cached Rhea page identifies the chlorinated L-tryptophan product
+        as CHEBI:139335; RHEA55900/55901 describes C6 chlorination, not a reaction
+        directly producing thienodolin.
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000433.json
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: First example is explicitly isIntermediate:true. Its neutral product
+        and Rhea's zwitterion have identical full Standard InChIKey FICLVQOYKYBXFN-VIFPVBQESA-N
+        under RDKit2026.03.5, distinct from this owner's key. ChEBI zwitterion form
+        is used.
+    notes: The graph does not substitute this intermediate for owner CHEBI:9543. No
+      D-tryptophan, brominated congener, peptide substrate or physiological concentration
+      is asserted.
+  - subject: chlorotryptophan
+    predicate: is_database_reported_upstream_precursor_of
+    object: thienodolin
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000433.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: MITE0000433 links the intermediate chlorination to thienodolin biosynthesis
+        and BGC0001374. This is pathway context, not a complete downstream transformation
+        or an independently inspected feeding study.
+      snippet: Regioselective halogenation of tryptophan in the thienodolin pathway.
+    - reference: https://www.uniprot.org/uniprotkb/A1E280
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: The FUNCTION annotation places ThdH in thienodolin biosynthesis and assigns
+        formation of 6-chlorotryptophan. Database-reported disruption/rescue is not
+        promoted here to primary-experiment evidence.
+    notes: Upstream precursor relationship only; no direct enzymatic conversion to
+      thienodolin, pathway order beyond this reaction, additional catalyst, native
+      producer experiment or BGC grade upgrade is implied. The existing separate ThdD
+      graph is preserved unchanged.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -230,4 +419,21 @@ curation_history:
     complex, upstream step or pathway finality claim adopted. Preserved SOURCE_ASSERTION/CLUSTER_UNSTATED
     grades, all source fields/occurrences, SEEDED status and append-only history.
     Not full-record sign-off.'
+  llm_assisted: true
+- timestamp: '2026-10-08T17:10:57Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added one database-qualified upstream thienodolin graph: six nodes, five
+    edges, two newly grounded native proteins and five exact snippets. ThdH/ThaL A1E280
+    (531aa) and ThdF A0A1B1V585 (193aa) match complete table11 CDS translations on
+    MJ286-76F7 KU569241.1, independent GenPept ANW12118.1/ANW12119.1 and their UniParc
+    sequences. MITE0000433v2 and UniProt supply database functional attribution; cached
+    Rhea grounds RHEA55901 and ChEBI zwitterion participants. Explicit example/participant
+    full InChIKeys match, but the chlorinated product is an intermediate, not owner
+    thienodolin. ThdF is an auxiliary annotation, not a demonstrated physical complex
+    or native reductase assay. Primary-paper access remained incomplete; no primary
+    experiment, engineered construct, residue mechanism, additional downstream step
+    or brominated congener adopted. Preserved the entire ThdD graph, source fields,
+    occurrences, SOURCE_ASSERTION/CLUSTER_UNSTATED grades, SEEDED status and prior
+    history. Not full-record sign-off.'
   llm_assisted: true
