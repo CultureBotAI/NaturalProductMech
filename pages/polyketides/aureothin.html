@@ -201,6 +201,93 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Native AurH reference and database-assigned aureothin maturation. Q70KH6 is not an experimentally verified plasmid sequence. The reviewed database assigns sequential hydroxylation and ring closure; this graph is not a newly inspected purified-enzyme assay. The precursor remains chemically ungrounded. No pMZ04 rescue claim is used.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>aurH (AJ575648.1:13938-15158)</td>
+  <td>encodes the native reference protein</td>
+  <td>AurH</td>
+  <td>Native Streptomyces thioluteus reference; not a host or construct accession.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AJ575648.1<br>https://www.uniprot.org/uniprotkb/Q70KH6/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AJ575648.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>AJ575648.1 CDS 13938..15158, forward strand, ATG start; GenPept CAE02604.1, 406 amino acids.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q70KH6/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Full CDS translation equals the deposited translation, independent CAE02604.1 protein and reviewed Q70KH6 sequence. UniProt entry version 98, sequence version 1, retrieved 2026-10-07.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Deoxyaureothin (luteothin)</td>
+  <td>is the maturation substrate assigned to</td>
+  <td>AurH</td>
+  <td>Overall substrate assignment; not an experimental substrate-affinity measurement.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q70KH6/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q70KH6/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Reviewed function and RHEA:58824 assign luteothin/deoxyaureothin as substrate. Older full primary papers were not newly read.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>AurH</td>
+  <td>is assigned the oxidative ring formation yielding</td>
+  <td>aureothin</td>
+  <td>Database annotation describes a (7R)-7-hydroxydeoxyaureothin intermediate followed by tetrahydrofuran formation. No exact intermediate structure or purified catalytic sufficiency is independently established here.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q70KH6/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q70KH6/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Reviewed function and physiological RHEA:58825 name mature aureothin and explicitly cross-reference CHEBI:80024. This is not the unmethylated C21 reaction model in MITE0000190.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 5 edges</span></h2>
+<p class="sub">Partial, derivative-specific whole-cell observations, not measurements on the mature aureothin owner or purified AurH kinetics. The native protein reference is associated by gene name, not by a verified construct sequence. Reported outcomes apply to the tested panel, not every alpha- or gamma-pyrone. Supplementary material was not read; no pMZ04 rescue or NorH grounding is used.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>AurH</td>
+  <td>is the native gene-product reference associated with</td>
+  <td>Reported S. lividans/pHJ110 analogue panel</td>
+  <td>Protein-reference mapping only; no experimental plasmid sequence or tag inferred.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q70KH6/entry<br>DOI:10.1021/ja102751h</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q70KH6/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native aurH gene name and AJ575648/CAE02604.1 cross-reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1021/ja102751h</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Main-text AurH biotransformation experiments, BioC passage 17; gene-label mapping, not experimental construct sequence verification.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Reported S. lividans/pHJ110 analogue panel</td>
+  <td>shows the reported</td>
+  <td>Formation of THF analogues 21-26</td>
+  <td>Passage 17 assigns deoxyaureonitrile 7, halogenated derivatives 8-11 and naphthoate 15 to corresponding products 21-26. HPLC-MS monitoring reported substrate disappearance; no rates, yields or universal specificity are inferred. Passage 22 characterizes new compounds, not every product anew.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja102751h</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja102751h</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Main-text biotransformations, BioC passage 17; Figure 7 context.</dd><dt>snippet</dt><dd>complete disappearance of the starting material</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>AurH</td>
+  <td>is the native gene-product reference associated with</td>
+  <td>Reported alpha-pyrone 17 biotransformation</td>
+  <td>Passage 17 names AurH; the exact host of this individual alpha-pyrone assay is not separately assigned beyond the reported whole-cell context.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q70KH6/entry<br>DOI:10.1021/ja102751h</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q70KH6/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native aurH gene name and AJ575648/CAE02604.1 cross-reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1021/ja102751h</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Main-text AurH biotransformation experiments, BioC passage 17; gene-label mapping, not experimental construct sequence verification.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Reported alpha-pyrone 17 biotransformation</td>
+  <td>produces the reported</td>
+  <td>7-Hydroxylated alpha-pyrone 20</td>
+  <td>Paper-relative compound identity remains ungrounded; not mature aureothin.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja102751h</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja102751h</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>BioC passage 17 reports alpha-pyrone 17 to 7-hydroxy derivative 20; Figure 7 depicts the retained alpha-pyrone.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Reported alpha-pyrone 17 biotransformation</td>
+  <td>shows the reported</td>
+  <td>No observed alpha-pyrone heterocyclization</td>
+  <td>Context-specific negative outcome for the tested substrate, not a universal proof of inactivity for all alpha-pyrones.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja102751h</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja102751h</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Main-text biotransformations, BioC passage 17.</dd><dt>snippet</dt><dd>no heterocycle formation was observed</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

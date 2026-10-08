@@ -357,6 +357,159 @@ causal_graphs:
       evidence_type: PRIMARY_EXPERIMENT
       notes: Main-text pyrone-mutant experiments, BioC passage 14.
       snippet: restored the formation
+- graph_id: aureothin-aurh-native-reference-and-maturation
+  scope: BIOSYNTHESIS
+  description: Native AurH reference and database-assigned aureothin maturation. Q70KH6
+    is not an experimentally verified plasmid sequence. The reviewed database assigns
+    sequential hydroxylation and ring closure; this graph is not a newly inspected
+    purified-enzyme assay. The precursor remains chemically ungrounded. No pMZ04 rescue
+    claim is used.
+  nodes:
+  - node_id: aurh_gene
+    label: aurH (AJ575648.1:13938-15158)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: aurh
+    label: AurH
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q70KH6
+  - node_id: deoxyaureothin
+    label: Deoxyaureothin (luteothin)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: aureothin
+    label: aureothin
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:80024
+  edges:
+  - subject: aurh_gene
+    predicate: encodes the native reference protein
+    object: aurh
+    notes: Native Streptomyces thioluteus reference; not a host or construct accession.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AJ575648.1
+      evidence_type: DATABASE_ASSERTION
+      notes: AJ575648.1 CDS 13938..15158, forward strand, ATG start; GenPept CAE02604.1,
+        406 amino acids.
+    - reference: https://www.uniprot.org/uniprotkb/Q70KH6/entry
+      evidence_type: CURATOR_INFERENCE
+      notes: Full CDS translation equals the deposited translation, independent CAE02604.1
+        protein and reviewed Q70KH6 sequence. UniProt entry version 98, sequence version
+        1, retrieved 2026-10-07.
+  - subject: deoxyaureothin
+    predicate: is the maturation substrate assigned to
+    object: aurh
+    notes: Overall substrate assignment; not an experimental substrate-affinity measurement.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q70KH6/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed function and RHEA:58824 assign luteothin/deoxyaureothin as substrate.
+        Older full primary papers were not newly read.
+  - subject: aurh
+    predicate: is assigned the oxidative ring formation yielding
+    object: aureothin
+    notes: Database annotation describes a (7R)-7-hydroxydeoxyaureothin intermediate
+      followed by tetrahydrofuran formation. No exact intermediate structure or purified
+      catalytic sufficiency is independently established here.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q70KH6/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed function and physiological RHEA:58825 name mature aureothin
+        and explicitly cross-reference CHEBI:80024. This is not the unmethylated C21
+        reaction model in MITE0000190.
+- graph_id: aureothin-aurh-whole-cell-analogue-observations
+  scope: BIOSYNTHESIS
+  description: Partial, derivative-specific whole-cell observations, not measurements
+    on the mature aureothin owner or purified AurH kinetics. The native protein reference
+    is associated by gene name, not by a verified construct sequence. Reported outcomes
+    apply to the tested panel, not every alpha- or gamma-pyrone. Supplementary material
+    was not read; no pMZ04 rescue or NorH grounding is used.
+  nodes:
+  - node_id: aurh
+    label: AurH
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q70KH6
+  - node_id: gamma_panel
+    label: Reported S. lividans/pHJ110 analogue panel
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: thf_analogues
+    label: Formation of THF analogues 21-26
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: alpha_experiment
+    label: Reported alpha-pyrone 17 biotransformation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hydroxy20
+    label: 7-Hydroxylated alpha-pyrone 20
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: no_ring
+    label: No observed alpha-pyrone heterocyclization
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: aurh
+    predicate: is the native gene-product reference associated with
+    object: gamma_panel
+    notes: Protein-reference mapping only; no experimental plasmid sequence or tag
+      inferred.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q70KH6/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: Native aurH gene name and AJ575648/CAE02604.1 cross-reference.
+    - reference: DOI:10.1021/ja102751h
+      evidence_type: CURATOR_INFERENCE
+      notes: Main-text AurH biotransformation experiments, BioC passage 17; gene-label
+        mapping, not experimental construct sequence verification.
+  - subject: gamma_panel
+    predicate: shows the reported
+    object: thf_analogues
+    notes: Passage 17 assigns deoxyaureonitrile 7, halogenated derivatives 8-11 and
+      naphthoate 15 to corresponding products 21-26. HPLC-MS monitoring reported substrate
+      disappearance; no rates, yields or universal specificity are inferred. Passage
+      22 characterizes new compounds, not every product anew.
+    evidence:
+    - reference: DOI:10.1021/ja102751h
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main-text biotransformations, BioC passage 17; Figure 7 context.
+      snippet: complete disappearance of the starting material
+  - subject: aurh
+    predicate: is the native gene-product reference associated with
+    object: alpha_experiment
+    notes: Passage 17 names AurH; the exact host of this individual alpha-pyrone assay
+      is not separately assigned beyond the reported whole-cell context.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q70KH6/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: Native aurH gene name and AJ575648/CAE02604.1 cross-reference.
+    - reference: DOI:10.1021/ja102751h
+      evidence_type: CURATOR_INFERENCE
+      notes: Main-text AurH biotransformation experiments, BioC passage 17; gene-label
+        mapping, not experimental construct sequence verification.
+  - subject: alpha_experiment
+    predicate: produces the reported
+    object: hydroxy20
+    notes: Paper-relative compound identity remains ungrounded; not mature aureothin.
+    evidence:
+    - reference: DOI:10.1021/ja102751h
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: BioC passage 17 reports alpha-pyrone 17 to 7-hydroxy derivative 20; Figure
+        7 depicts the retained alpha-pyrone.
+  - subject: alpha_experiment
+    predicate: shows the reported
+    object: no_ring
+    notes: Context-specific negative outcome for the tested substrate, not a universal
+      proof of inactivity for all alpha-pyrones.
+    evidence:
+    - reference: DOI:10.1021/ja102751h
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main-text biotransformations, BioC passage 17.
+      snippet: no heterocycle formation was observed
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -407,4 +560,19 @@ curation_history:
     mechanistic edges are intentionally omitted. Preserved every node, edge, evidence
     item, snippet, prior curation event and source-owned field; no new scientific
     claim or status promotion.'
+  llm_assisted: true
+- timestamp: '2026-10-08T03:05:52Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added native AurH UniProtKB:Q70KH6/CAE02604.1 in two BIOSYNTHESIS graphs:
+    database-assigned aureothin maturation and separate derivative-specific whole-cell
+    observations from DOI:10.1021/ja102751h. Complete native AJ575648.1 CDS, deposited
+    translation, independent GenPept and reviewed UniProt sequences agree; native
+    reference is not a verified experimental construct. Kept database claims separate
+    from inspected 2010 observations, and analogue outcomes separate from the mature
+    owner. Added stable evidence on all eight edges and two short source-exact snippets.
+    Preserved every existing AurF/AurI graph, pathway step, source-owned field and
+    history entry. No pMZ04 rescue assertion, NorH grounding, MITE C21 mature-product
+    import, purified kinetics, universal substrate-specificity or REVIEWED-status
+    promotion.'
   llm_assisted: true
