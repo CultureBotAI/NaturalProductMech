@@ -221,6 +221,130 @@ causal_graphs:
       retrieved_on: '2026-09-27'
       notes: NCBI resolves GenPept QJQ03972.1 to the MT277003.1 coding sequence for
         Armillaria gallica CYP-Arm3.
+- graph_id: 8-hydroxy-6-protoilludene-cyparm2-native-reference
+  scope: BIOSYNTHESIS
+  description: Native reference in Armillaria gallica FU02472/BGC0002445. The complete
+    CDS is a deposited gene model, not an independently verified experimental transcript.
+    The annotated mRNA boundaries are partial. Native reference identity does not
+    establish the sequence of the 2023 assay construct, mature processing or experimental
+    heme occupancy.
+  nodes:
+  - node_id: cyp_arm2_cds
+    label: CYP-Arm2 CDS (MT277003.1, 12 reverse-strand exons)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: cyp_arm2
+    label: CYPArm2 (FU02472 native-reference example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A7S5T5B1
+  edges:
+  - subject: cyp_arm2_cds
+    predicate: encodes the native protein reference
+    object: cyp_arm2
+    notes: FU02472, taxon 47427; complete 1542-nt CDS including stop, 513-residue
+      reference. The CDS spans MT277003.1 positions 17425..19546 with 12 reverse-strand
+      exons.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MT277003.1
+      evidence_type: DATABASE_ASSERTION
+      notes: GenBank assigns gene CYP-Arm2 and protein QJQ03971.1 to the spliced CDS.
+      retrieved_on: '2026-10-08'
+      snippet: /gene="CYP-Arm2"
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QJQ03971.1
+      evidence_type: DATABASE_ASSERTION
+      notes: The separate 513-residue GenPept record identifies FU02472 and the same
+        12-exon reverse-strand CDS.
+      retrieved_on: '2026-10-08'
+    - reference: https://www.uniprot.org/uniprotkb/A0A7S5T5B1/entry
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed entry version 22, sequence version 1. CDS-aware translation,
+        deposited translation, GenPept QJQ03971.1 and A0A7S5T5B1 agree over all 513
+        residues. This is native-reference identity only. UniProt has no specific
+        FUNCTION or CATALYTIC ACTIVITY comment.
+      retrieved_on: '2026-10-08'
+- graph_id: 8-hydroxy-6-protoilludene-cyparm2-downstream-consumption
+  scope: BIOSYNTHESIS
+  description: 'Partial downstream-consumption graph: the 2023 abstract names 8α-hydroxy-6-protoilludene
+    as a CYPArm2 substrate and reports an NMR-identified dihydroxylated product. This
+    is not another route producing this owner and does not extend its existing two-step
+    biosynthetic_pathway. The protein is a qualified native reference example, not
+    a sequence-verified assay construct. Only the returned abstract was read, not
+    full text or supplements. The MITE model lacks C8 stereochemistry; no complete
+    product structure, ChEBI/Rhea assignment, assembly or kinetic claim is adopted.'
+  nodes:
+  - node_id: cyp_arm2
+    label: CYPArm2 (FU02472 native-reference example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A7S5T5B1
+  - node_id: hydroxy_protoilludene
+    label: 8α-hydroxy-6-protoilludene
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+    identifier: naturalproductmech:mibig-32b7a54e39
+  - node_id: hydroxylation_13
+    label: Reported CYPArm2 13-hydroxylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: dihydroxy_protoilludene
+    label: 8α,13-dihydroxy-protoilludene (reported product)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cyp_arm2
+    predicate: is reported to catalyze
+    object: hydroxylation_13
+    notes: The native accession is an example for the named CYPArm2 activity. The
+      abstract does not establish the exact experimental construct sequence. No claim
+      of native heme occupancy or strict substrate specificity.
+    evidence:
+    - reference: DOI:10.1002/cbic.202300179
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract text returned by an official-domain web search before the subsequent
+        PubMed browser-check stop; full text and supplements were not inspected. The
+        abstract reports CYPArm2 as a protoilludene 13-hydroxylase; this is an abstract-level
+        experimental report, not an independently audited full assay.
+      retrieved_on: '2026-10-08'
+      snippet: confirming that CYPArm2 is a protoilludene 13-hydroxylase.
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000295.json
+      evidence_type: DATABASE_ASSERTION
+      notes: Active MITE0000295 version 1 links CYPArm2 to A0A7S5T5B1, QJQ03971.1
+        and BGC0002445. This is a database association, not independent sequence verification
+        of the 2023 assay stock.
+      retrieved_on: '2026-10-08'
+  - subject: hydroxy_protoilludene
+    predicate: is reported as a substrate of
+    object: hydroxylation_13
+    notes: Owner consumption, not owner production. The abstract explicitly names
+      the 8alpha substrate. MITE's model key XTXSLQPVMVDDTB-SUTJQRNSSA-N is stereo-incomplete
+      and is not asserted equal to this owner's full key XTXSLQPVMVDDTB-ZRQNBYAXSA-N.
+    evidence:
+    - reference: DOI:10.1002/cbic.202300179
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract text returned by an official-domain web search before the subsequent
+        PubMed browser-check stop; full text and supplements were not inspected. The
+        named accepted substrates include this 8alpha-hydroxylated compound. No reaction
+        ordering is inferred from gene order, and the under-specified MITE structure
+        is not used as exact stereochemical identity evidence.
+      retrieved_on: '2026-10-08'
+      snippet: accepts Δ-6-protoilludene and 8α-hydroxy-6-protoilludene as substrates.
+  - subject: hydroxylation_13
+    predicate: is reported to produce
+    object: dihydroxy_protoilludene
+    notes: 'Named product only: no stable chemical identifier or full stereochemical
+      structure is assigned. MITE''s product model is also stereo-incomplete; its
+      unspecified center is not filled in.'
+    evidence:
+    - reference: DOI:10.1002/cbic.202300179
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Abstract text returned by an official-domain web search before the subsequent
+        PubMed browser-check stop; full text and supplements were not inspected. The
+        abstract reports NMR identification of the named dihydroxylated product after
+        recombinant yeast biosynthesis. No analytical spectra, yield, kinetic values
+        or downstream complete pathway are imported.
+      retrieved_on: '2026-10-08'
+      snippet: identification of 8α,13-dihydroxy-protoilludene
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -243,4 +367,15 @@ curation_history:
   changes: Removed broad MIBiG BGC0002445 evidence from the Pro1 pathway step and
     graph edges because the MIBiG record supports the BGC assertion rather than the
     exact enzyme-level cyclization claims.
+  llm_assisted: true
+- timestamp: '2026-10-08T07:35:16Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added CYPArm2 native-reference and downstream-consumption graphs using
+    UniProtKB:A0A7S5T5B1 as the FU02472 native-reference example. The 2023 abstract
+    reports the owner as a substrate, not a product, of 13-hydroxylation. Kept the
+    reported dihydroxylated product and reaction identifiers ungrounded; did not fill
+    the MITE model's unspecified stereochemistry. Preserved the Pro1/CYP-Arm3 pathway
+    and graph, source fields and prior history. No assay-construct, assembly, kinetic
+    or producer-grade upgrade asserted.
   llm_assisted: true

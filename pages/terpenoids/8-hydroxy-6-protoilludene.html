@@ -153,6 +153,57 @@ derived from a source. This is what the rest of the record exists to support.</p
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">2 nodes, 1 edge</span></h2>
+<p class="sub">Native reference in Armillaria gallica FU02472/BGC0002445. The complete CDS is a deposited gene model, not an independently verified experimental transcript. The annotated mRNA boundaries are partial. Native reference identity does not establish the sequence of the 2023 assay construct, mature processing or experimental heme occupancy.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>CYP-Arm2 CDS (MT277003.1, 12 reverse-strand exons)</td>
+  <td>encodes the native protein reference</td>
+  <td>CYPArm2 (FU02472 native-reference example)</td>
+  <td>FU02472, taxon 47427; complete 1542-nt CDS including stop, 513-residue reference. The CDS spans MT277003.1 positions 17425..19546 with 12 reverse-strand exons.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/MT277003.1<br>https://www.ncbi.nlm.nih.gov/protein/QJQ03971.1<br>https://www.uniprot.org/uniprotkb/A0A7S5T5B1/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/MT277003.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>GenBank assigns gene CYP-Arm2 and protein QJQ03971.1 to the spliced CDS.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>/gene=&#34;CYP-Arm2&#34;</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/QJQ03971.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>The separate 513-residue GenPept record identifies FU02472 and the same 12-exon reverse-strand CDS.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A7S5T5B1/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Unreviewed entry version 22, sequence version 1. CDS-aware translation, deposited translation, GenPept QJQ03971.1 and A0A7S5T5B1 agree over all 513 residues. This is native-reference identity only. UniProt has no specific FUNCTION or CATALYTIC ACTIVITY comment.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Partial downstream-consumption graph: the 2023 abstract names 8α-hydroxy-6-protoilludene as a CYPArm2 substrate and reports an NMR-identified dihydroxylated product. This is not another route producing this owner and does not extend its existing two-step biosynthetic_pathway. The protein is a qualified native reference example, not a sequence-verified assay construct. Only the returned abstract was read, not full text or supplements. The MITE model lacks C8 stereochemistry; no complete product structure, ChEBI/Rhea assignment, assembly or kinetic claim is adopted.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>CYPArm2 (FU02472 native-reference example)</td>
+  <td>is reported to catalyze</td>
+  <td>Reported CYPArm2 13-hydroxylation</td>
+  <td>The native accession is an example for the named CYPArm2 activity. The abstract does not establish the exact experimental construct sequence. No claim of native heme occupancy or strict substrate specificity.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/cbic.202300179<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000295.json</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/cbic.202300179</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Abstract text returned by an official-domain web search before the subsequent PubMed browser-check stop; full text and supplements were not inspected. The abstract reports CYPArm2 as a protoilludene 13-hydroxylase; this is an abstract-level experimental report, not an independently audited full assay.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>confirming that CYPArm2 is a protoilludene 13-hydroxylase.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000295.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Active MITE0000295 version 1 links CYPArm2 to A0A7S5T5B1, QJQ03971.1 and BGC0002445. This is a database association, not independent sequence verification of the 2023 assay stock.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>8α-hydroxy-6-protoilludene</td>
+  <td>is reported as a substrate of</td>
+  <td>Reported CYPArm2 13-hydroxylation</td>
+  <td>Owner consumption, not owner production. The abstract explicitly names the 8alpha substrate. MITE&#39;s model key XTXSLQPVMVDDTB-SUTJQRNSSA-N is stereo-incomplete and is not asserted equal to this owner&#39;s full key XTXSLQPVMVDDTB-ZRQNBYAXSA-N.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/cbic.202300179</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/cbic.202300179</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Abstract text returned by an official-domain web search before the subsequent PubMed browser-check stop; full text and supplements were not inspected. The named accepted substrates include this 8alpha-hydroxylated compound. No reaction ordering is inferred from gene order, and the under-specified MITE structure is not used as exact stereochemical identity evidence.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>accepts Δ-6-protoilludene and 8α-hydroxy-6-protoilludene as substrates.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Reported CYPArm2 13-hydroxylation</td>
+  <td>is reported to produce</td>
+  <td>8α,13-dihydroxy-protoilludene (reported product)</td>
+  <td>Named product only: no stable chemical identifier or full stereochemical structure is assigned. MITE&#39;s product model is also stereo-incomplete; its unspecified center is not filled in.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/cbic.202300179</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/cbic.202300179</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Abstract text returned by an official-domain web search before the subsequent PubMed browser-check stop; full text and supplements were not inspected. The abstract reports NMR identification of the named dihydroxylated product after recombinant yeast biosynthesis. No analytical spectra, yield, kinetic values or downstream complete pathway are imported.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>identification of 8α,13-dihydroxy-protoilludene</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
