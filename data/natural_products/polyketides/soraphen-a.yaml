@@ -263,6 +263,171 @@ causal_graphs:
       notes: RCSB PDB identifies 1W96 as a Saccharomyces cerevisiae acetyl-CoA carboxylase
         biotin carboxylase domain crystal structure containing S1A soraphen A, and
         PDBe maps its protein chains to UniProtKB:Q00955.
+- graph_id: soraphen-a-sorm-native-reference
+  scope: BIOSYNTHESIS
+  description: Native-reference identity for Sorangium cellulosum So ce26, taxon 56/U24241.2/BGC0000147.
+    So ce26 is not equated with the record's separate So ce56 occurrence. Matching
+    references do not establish measured expression, a verified assay construct, enzyme
+    activity, native assembly, modification or cofactor occupancy.
+  nodes:
+  - node_id: sorm_cds
+    label: sorM CDS (U24241.2)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: sorm
+    label: SorM (So ce26 native-reference example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9ADL4
+  edges:
+  - subject: sorm_cds
+    predicate: encodes the native protein reference
+    object: sorm
+    notes: Forward-strand 60255..61295; 1041-nt complete CDS including stop, 346 residues.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/U24241.2
+      evidence_type: DATABASE_ASSERTION
+      notes: GenBank names sorM and assigns AAK19894.1, codon_start 1, translation
+        table 11. The complete 67,523-bp U24241.2 reference identifies So ce26/taxon
+        56; this is a deposited sequence annotation, not an enzyme assay.
+      retrieved_on: '2026-10-08'
+      snippet: /gene="sorM"
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAK19894.1
+      evidence_type: DATABASE_ASSERTION
+      notes: GenPept identifies So ce26/taxon 56 and conceptual translation. Its coded_by
+        points to the same U24241.2 CDS coordinates.
+      retrieved_on: '2026-10-08'
+    - reference: https://www.uniprot.org/uniprotkb/Q9ADL4/entry
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed entry version 52, sequence version 1, with So ce26 strain
+        references. CDS-aware translation, deposited translation, GenPept and UniProt
+        agree over all 346 residues. No specific FUNCTION or CATALYTIC ACTIVITY comment.
+        Computational family, function, PTM and cofactor annotations are not direct
+        enzyme evidence. Predicted sterol C-methyltransferase GO annotations do not
+        establish native substrate specificity.
+      retrieved_on: '2026-10-08'
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json
+      evidence_type: DATABASE_ASSERTION
+      notes: Active MITE0000318 version 1 maps SorM to Q9ADL4/AAK19894.1/BGC0000147.
+        Native sequence identity does not independently validate the reaction annotation.
+      retrieved_on: '2026-10-08'
+- graph_id: soraphen-a-sorr-native-reference
+  scope: BIOSYNTHESIS
+  description: Native-reference identity for Sorangium cellulosum So ce26, taxon 56/U24241.2/BGC0000147.
+    So ce26 is not equated with the record's separate So ce56 occurrence. Matching
+    references do not establish measured expression, a verified assay construct, enzyme
+    activity, native assembly, modification or cofactor occupancy.
+  nodes:
+  - node_id: sorr_cds
+    label: sorR CDS (U24241.2)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: sorr
+    label: SorR (So ce26 native-reference example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9ADL7
+  edges:
+  - subject: sorr_cds
+    predicate: encodes the native protein reference
+    object: sorr
+    notes: Forward-strand 13697..14158; 462-nt complete CDS including stop, 153 residues.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/U24241.2
+      evidence_type: DATABASE_ASSERTION
+      notes: GenBank names sorR and assigns AAK19893.1, codon_start 1, translation
+        table 11. The complete 67,523-bp U24241.2 reference identifies So ce26/taxon
+        56; this is a deposited sequence annotation, not an enzyme assay.
+      retrieved_on: '2026-10-08'
+      snippet: /gene="sorR"
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAK19893.1
+      evidence_type: DATABASE_ASSERTION
+      notes: GenPept identifies So ce26/taxon 56 and conceptual translation. Its coded_by
+        points to the same U24241.2 CDS coordinates.
+      retrieved_on: '2026-10-08'
+    - reference: https://www.uniprot.org/uniprotkb/Q9ADL7/entry
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Unreviewed entry version 64, sequence version 1, with So ce26 strain
+        references. CDS-aware translation, deposited translation, GenPept and UniProt
+        agree over all 153 residues. No specific FUNCTION or CATALYTIC ACTIVITY comment.
+        Computational family, function, PTM and cofactor annotations are not direct
+        enzyme evidence. Predicted fatty-acid synthase GO and phosphopantetheine/phosphoprotein
+        keywords are not verified activities or modifications. The MITE0000468 reaction
+        is withheld under https://github.com/CultureBotAI/NaturalProductMech/issues/697:
+        its Reduction tag, possible oxidation/hemiacetalization description and modeled
+        C28H46O9 to C28H44O8 need reconciliation. No catalytic reaction edge or measured
+        NADP specificity is added.'
+      retrieved_on: '2026-10-08'
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000468.json
+      evidence_type: DATABASE_ASSERTION
+      notes: Active MITE0000468 version 1 maps SorR to Q9ADL7/AAK19893.1/BGC0000147.
+        Native sequence identity does not independently validate the reaction annotation.
+      retrieved_on: '2026-10-08'
+- graph_id: soraphen-a-sorm-inferred-o-methylation
+  scope: BIOSYNTHESIS
+  description: Partial inferred O-methylation model from MITE0000318 version 1. MITE
+    labels its evidence Inference from genomic data and chemical structure and cites
+    DOI:10.1016/S0378-1119(02)00396-7. Only the search-returned paper abstract was
+    inspected; a subsequent official PubMed open returned 429 and retrieval stopped.
+    No primary full-text enzyme assay is adopted. The database names soraphen C to
+    soraphen A, but its product omits alkene geometry, so no exact owner-product identity
+    is asserted. This is not an ordered or complete pathway; chemical/process nodes
+    remain ungrounded.
+  nodes:
+  - node_id: sorm
+    label: SorM (So ce26 native-reference example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9ADL4
+  - node_id: model_substrate
+    label: SorM substrate (MITE model)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: methylation
+    label: proposed O-methylation (inferred model)
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: model_product
+    label: SorM product (MITE model)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: sorm
+    predicate: is inferred by the database to catalyze
+    object: methylation
+    notes: Genomic/chemical inference, not a directly inspected enzyme experiment.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json
+      evidence_type: DATABASE_ASSERTION
+      notes: Active MITE0000318 version 1 proposes post-PKS C11 O-methylation. No
+        rates, measured cofactor specificity, assembly or verified native-substrate
+        assay are adopted.
+      retrieved_on: '2026-10-08'
+      snippet: Responsible for the post-PKS O-methylation of the hydroxyl at C11
+  - subject: model_substrate
+    predicate: is the modeled substrate of
+    object: methylation
+    notes: Source model only; no independently verified assay substrate or reaction
+      order.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json
+      evidence_type: DATABASE_ASSERTION
+      notes: RDKit 2026.03.5 substrate key USIRVOOCIGRCRU-CXBYLNABSA-N, C28H42O8.
+        Different connectivity from the owner; no ChEBI/Rhea identifier chosen.
+      retrieved_on: '2026-10-08'
+  - subject: methylation
+    predicate: is modeled to yield
+    object: model_product
+    notes: Inferred model, not exact stereochemically specified soraphen A.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000318.json
+      evidence_type: DATABASE_ASSERTION
+      notes: RDKit 2026.03.5 product key WPMGNXPRKGXGBO-JXOLNOSBSA-N, C29H44O8. It
+        shares owner connectivity but not the exact key; ten tetrahedral centers are
+        specified and one double bond is unspecified. Missing geometry is not filled
+        from substrate or owner. MITE marks this example as an intermediate; no automatic
+        inter-graph bridge is made.
+      retrieved_on: '2026-10-08'
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -290,4 +455,16 @@ curation_history:
     ACC1 biotin carboxylase domain, grounded PubChem target 1W96_A to UniProtKB:Q00955
     via PDBe and SIFTS, confirmed the PDB S1A ligand matches the record Standard InChIKey,
     and cited DOI:10.1016/J.MOLCEL.2004.11.034 and DOI:10.2210/pdb1w96/pdb.
+  llm_assisted: true
+- timestamp: '2026-10-08T10:41:38Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added native-reference SorM/Q9ADL4 and SorR/Q9ADL7 graphs from Sorangium
+    cellulosum So ce26/U24241.2/BGC0000147. Added one explicitly inferred MITE SorM
+    O-methylation model with unspecified product alkene geometry; no exact owner-product
+    identity asserted. Withheld SorR reaction under issue697. No inspected primary
+    full-text enzyme experiment, verified assay construct, measured cofactor specificity,
+    assembly, ordered pathway or grade upgrade. Kept So ce26 distinct from So ce56
+    and preserved existing bioactivity graphs, source fields, SEEDED status and prior
+    history.
   llm_assisted: true
