@@ -162,6 +162,189 @@ discussions:
   prompt: ChEBI calls this structure 'bicozamycin' and MIBiG calls it 'bicyclomycin'.
     They share a Standard InChIKey, so if the names denote different compounds then
     one upstream record has the wrong structure. Check which.
+causal_graphs:
+- graph_id: bicozamycin-bcmd-native-and-example
+  scope: BIOSYNTHESIS
+  description: Native-reference identity and deliberate UniProtKB sequence example
+    for BcmD, not a catalytic reaction. The DSM 41675 native protein and ATCC 21532
+    reference example are separate nodes; strain equivalence is not asserted. Placement
+    in this owner is curator-inferred from the shared PKFQ01000001.1/BGC0001468 context.
+    No hydroxylation, dehydrogenation, deletion phenotype, pathway order or physical
+    complex is asserted. MITE reaction models leave stereochemistry unspecified; compatibility
+    is not exact owner identity. DOI:10.1038/s41598-019-56747-7 was only partially
+    accessible, DOI:10.1021/acs.biochem.7b00943 was inaccessible, and DOI:10.1128/AEM.02828-17
+    full text encountered a browser challenge on 2026-10-08. Retrieval stopped; no
+    primary protein experiment is independently adopted.
+  nodes:
+  - node_id: bcmd_cds
+    label: bcmD CDS (DSM 41675)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: bcmd_native
+    label: BcmD (DSM 41675 native reference)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:PPT15946.1
+  - node_id: bcmd_example
+    label: BcmD (ATCC 21532 sequence example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0ACM8RGD1
+  edges:
+  - subject: bcmd_cds
+    predicate: encodes the native protein reference
+    object: bcmd_native
+    notes: CYQ11_26535; reverse strand 5991821..5993287; 1467-nt complete CDS including
+      stop, 488 residues. Native reference identity does not establish an enzyme assay
+      or reaction.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: /gene="bcmD"
+      notes: Deposited DSM 41675/taxon53446 cluster region 5989046..5998011 annotates
+        bcmD/CYQ11_26535/PPT15946.1; codon_start1, translation table11. This is a
+        genomic database annotation, not inspected primary activity evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/PPT15946.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: Separate versioned GenPept PPT15946.1 names bcmD, CYQ11_26535, DSM 41675/taxon53446
+        and coded_by complement(PKFQ01000001.1:5991821..5993287).
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000437.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: Pinned active MITE0000437 v1 links BcmD, PPT15946.1, BGC0001468 and a
+        UniParc identifier. Database assay codes and underdefined reaction models
+        are not promoted into independently inspected exact-owner reactions.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: Complete-CDS-aware reverse-strand translation equals the deposited translation
+        and separate GenPept over all 488 residues. The exact gene, locus, protein,
+        strain and taxon establish native reference identity. Owner placement is inferred
+        from its existing BGC0001468 and genome context, not an exact-owner experiment.
+  - subject: bcmd_native
+    predicate: has a sequence-identical UniProtKB example
+    object: bcmd_example
+    notes: Deliberately selected reference example, not a native-strain equivalence,
+      assay construct, catalytic or physical-interaction claim.
+    evidence:
+    - reference: https://rest.uniprot.org/uniprotkb/A0ACM8RGD1.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: Current unreviewed entry2/sequence1, submitted protein name BcmD, MG018995/AXQ04975.1
+        and ATCC 21532 reference strain. Selected as a sequence-identical named BcmD
+        example, not a DSM 41675 accession or an independently verified assay construct.
+    - reference: https://rest.uniprot.org/uniparc/UPI000C089C81.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: UniParc UPI000C089C81 links PPT15946 and active A0ACM8RGD1; all 488 residues
+        agree. UniParc is a sequence archive, not a UniProtKB accession or independent
+        experimental evidence.
+    - reference: https://rest.uniprot.org/uniprotkb/A0A2G1XAS5.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: Alternative current unreviewed entry23/sequence1 A0A2G1XAS5 also matches
+        all 488 residues, with BLA24_33485, NHZO01000168/PHQ48315.1 and ATCC 21532
+        reference strain. A0ACM8RGD1 is deliberately selected for its submitted BcmD
+        identity and distinct MG018995 deposition; this is not evidence of superior
+        experimental validation. No duplicate example node or paralog is inferred
+        from the two accessions.
+    - reference: https://rest.uniprot.org/uniprotkb/A0ACM8RGD1.json
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: Complete native CDS translation, deposited translation, separate GenPept,
+        UniParc and this current KB entry agree over all 488 residues. The example
+        refers to the ATCC 21532 record context; DSM 41675/ATCC 21532 strain equivalence
+        remains unverified. Equal sequences do not prove equal strains, constructs
+        or assayed activity.
+- graph_id: bicozamycin-bcmf-native-and-example
+  scope: BIOSYNTHESIS
+  description: Native-reference identity and deliberate UniProtKB sequence example
+    for BcmF, not a catalytic reaction. The DSM 41675 native protein and ATCC 21532
+    reference example are separate nodes; strain equivalence is not asserted. Placement
+    in this owner is curator-inferred from the shared PKFQ01000001.1/BGC0001468 context.
+    No hydroxylation, dehydrogenation, deletion phenotype, pathway order or physical
+    complex is asserted. MITE reaction models leave stereochemistry unspecified; compatibility
+    is not exact owner identity. DOI:10.1038/s41598-019-56747-7 was only partially
+    accessible, DOI:10.1021/acs.biochem.7b00943 was inaccessible, and DOI:10.1128/AEM.02828-17
+    full text encountered a browser challenge on 2026-10-08. Retrieval stopped; no
+    primary protein experiment is independently adopted.
+  nodes:
+  - node_id: bcmf_cds
+    label: bcmF CDS (DSM 41675)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: bcmf_native
+    label: BcmF (DSM 41675 native reference)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:PPT15945.1
+  - node_id: bcmf_example
+    label: BcmF (ATCC 21532 sequence example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A2G1XAP8
+  edges:
+  - subject: bcmf_cds
+    predicate: encodes the native protein reference
+    object: bcmf_native
+    notes: CYQ11_26525; reverse strand 5989945..5990835; 891-nt complete CDS including
+      stop, 296 residues. Native reference identity does not establish an enzyme assay
+      or reaction.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: /gene="bcmF"
+      notes: Deposited DSM 41675/taxon53446 cluster region 5989046..5998011 annotates
+        bcmF/CYQ11_26525/PPT15945.1; codon_start1, translation table11. This is a
+        genomic database annotation, not inspected primary activity evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/PPT15945.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: Separate versioned GenPept PPT15945.1 names bcmF, CYQ11_26525, DSM 41675/taxon53446
+        and coded_by complement(PKFQ01000001.1:5989945..5990835).
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000436.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: Pinned active MITE0000436 v1 links BcmF, PPT15945.1, BGC0001468 and a
+        UniParc identifier. Database assay codes and underdefined reaction models
+        are not promoted into independently inspected exact-owner reactions.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: Complete-CDS-aware reverse-strand translation equals the deposited translation
+        and separate GenPept over all 296 residues. The exact gene, locus, protein,
+        strain and taxon establish native reference identity. Owner placement is inferred
+        from its existing BGC0001468 and genome context, not an exact-owner experiment.
+  - subject: bcmf_native
+    predicate: has a sequence-identical UniProtKB example
+    object: bcmf_example
+    notes: Deliberately selected reference example, not a native-strain equivalence,
+      assay construct, catalytic or physical-interaction claim.
+    evidence:
+    - reference: https://rest.uniprot.org/uniprotkb/A0A2G1XAP8.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: Current unreviewed entry31/sequence1, BLA24_33475 and NHZO01000168/PHQ48314.1,
+        ATCC 21532 reference strain; secondary accession A0A346M2I9. The generic dioxygenase
+        name and automated annotations do not independently establish BcmF catalytic
+        activity.
+    - reference: https://rest.uniprot.org/uniparc/UPI000C07B921.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: UniParc UPI000C07B921 links PPT15945 and active A0A2G1XAP8; all 296 residues
+        agree. UniParc is a sequence archive, not a UniProtKB accession or independent
+        experimental evidence.
+    - reference: https://rest.uniprot.org/uniprotkb/A0A2G1XAP8.json
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: Complete native CDS translation, deposited translation, separate GenPept,
+        UniParc and this current KB entry agree over all 296 residues. The example
+        refers to the ATCC 21532 record context; DSM 41675/ATCC 21532 strain equivalence
+        remains unverified. Equal sequences do not prove equal strains, constructs
+        or assayed activity.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -171,3 +354,15 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-08T15:29:18Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added two native-reference-only BcmD/BcmF graphs with NCBIProtein:PPT15946.1
+    and NCBIProtein:PPT15945.1. Complete reverse-strand CDS translations match their
+    deposited proteins, UniParc and selected current UniProtKB sequence examples A0ACM8RGD1
+    and A0A2G1XAP8. Native DSM 41675 proteins and ATCC 21532 reference examples are
+    separate nodes; strain equivalence and assay identity are not asserted. Shared-BGC
+    owner placement is inferred. No catalytic reaction, phenotype, pathway order,
+    complex or source-grade promotion. All seeded fields, existing discussion, SEEDED
+    status and history preserved.
+  llm_assisted: true
