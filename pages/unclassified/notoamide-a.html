@@ -179,6 +179,58 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">2 nodes, 1 edge</span></h2>
+<p class="sub">Native identity in the MF297-2/BGC0001084 context only. The spliced genomic reference is not a verified experimental transcript or assay construct, and is not transferred to the distinct BGC0000818 or BGC0002254 source clusters.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>notC CDS (HM622670.1, two forward-strand exons)</td>
+  <td>encodes the native protein reference</td>
+  <td>NotC (MF297-2 native reference)</td>
+  <td>Aspergillus sp. MF297-2, taxon 877550; join(5819..6996,7066..7168); 426 amino acids.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/HM622670.1<br>https://www.ncbi.nlm.nih.gov/nuccore/GU564534.1<br>https://www.uniprot.org/uniprotkb/E0Y3X0/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/HM622670.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>GenBank links this two-exon CDS to ADM34136.1 and names NotC; the CDS lacks a gene-name qualifier.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>/note=&#34;NotC&#34;</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/GU564534.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>The separate notC gene deposit has CDS join(1..1178,1248..1350) and protein ADM34131.1 in the same strain.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E0Y3X0/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Reviewed entry version 39, sequence version 1. CDS-aware translations of both deposits, both deposited translations, both independent GenPept proteins and E0Y3X0 match over all 426 residues. This establishes native reference identity, not the sequence of an experimental construct.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Partial intermediate graph in the MF297-2 notoamide pathway context annotated by UniProt. NotC does not directly make notoamide A. No verified hydroxylation bridge from the existing NotF product to the NotC substrate, downstream route or final hydroxylase is asserted. DOI:10.1021/ja1049302 is cited by the database; its primary contents were not inspected. Assembly, kinetics and strict substrate exclusivity are not asserted.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>NotC (MF297-2 native reference)</td>
+  <td>is annotated to catalyze</td>
+  <td>NotC normal C7-prenylation</td>
+  <td>Native reference, not a sequence-verified assay construct. Normal prenylation at C7, distinct from NotF reverse C2-prenylation; dimethylallyl diphosphate is the donor and diphosphate is released.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/E0Y3X0/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E0Y3X0/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Entry version 39 annotates RHEA:62344 and physiological left-to-right RHEA:62345, citing PMID:20722388. This is database evidence, not an independently inspected experiment.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>6-hydroxydeoxybrevianamide E + dimethylallyl diphosphate = notoamide S + diphosphate</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>6-hydroxydeoxybrevianamide E</td>
+  <td>is the annotated substrate of</td>
+  <td>NotC normal C7-prenylation</td>
+  <td>The hydroxylated intermediate, not the unhydroxylated NotF product.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/E0Y3X0/entry<br>https://www.ebi.ac.uk/chebi/CHEBI:145682</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E0Y3X0/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Catalytic activity assigns 6-hydroxydeoxybrevianamide E as the prenyl acceptor; no strict substrate-exclusivity claim is adopted.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/chebi/CHEBI:145682</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>ChEBI identifies this stereochemically specified intermediate with full InChIKey DHOZDQLRUFUUQZ-IRXDYDNUSA-N.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>NotC normal C7-prenylation</td>
+  <td>has the annotated product</td>
+  <td>notoamide S</td>
+  <td>Notoamide S is an intermediate, not notoamide A. This edge does not prove an experimentally complete route to the owner structure.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/E0Y3X0/entry<br>https://www.ebi.ac.uk/chebi/CHEBI:145683</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E0Y3X0/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Catalytic activity identifies notoamide S. The broader pathway annotation contains proposed downstream assignments and leaves the final hydroxylation enzyme leading to notoamide A unidentified.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/chebi/CHEBI:145683</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>ChEBI identifies notoamide S with full InChIKey ZGWIWQJHQKPWGB-PMACEKPBSA-N.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
