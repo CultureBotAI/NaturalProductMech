@@ -137,6 +137,136 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: naphthomycin-a-nat1-native-reference
+  scope: BIOSYNTHESIS
+  description: Native-reference identity only for Nat1 in Streptomyces sp. CS/taxon
+    876169/GQ452266.1. Placement in this owner is curator-inferred from the shared
+    BGC0000106 context, not proof of a purified reaction, historical assay construct
+    or exact mature-product formation. The MITE listed product and literal SMARTS
+    output agree but leave six alkene configurations unspecified, unlike this exact
+    owner. No source model is repaired or reaction adopted. MITE also describes a
+    separate putative proansamitocin context; no such claim is transferred here. DOI:10.1039/C1MB05036B
+    was inspected only at the publisher abstract level on 2026-10-08; the full-text
+    loader failed and retrieval stopped. No primary experiment is independently adopted.
+  nodes:
+  - node_id: nat1_cds
+    label: nat1 CDS (GQ452266.1)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: nat1
+    label: Nat1 (Streptomyces sp. CS native-reference example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:F8QPG4
+  edges:
+  - subject: nat1_cds
+    predicate: encodes the native protein reference
+    object: nat1
+    notes: 82335..83678 positive strand; 1344-nt complete CDS including stop, 447
+      residues. The accession denotes the native reference, not an affinity-tagged
+      or mutated construct. An annotated halogenase name does not establish a reaction.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/GQ452266.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: /gene="nat1"
+      notes: The 106,181-bp partial cluster deposition names nat1/ADM46362.1 at 82335..83678,
+        codon_start 1 and translation table 11. Source names strain CS/taxon 876169.
+        It is not the whole genome or an independent activity experiment.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ADM46362.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: Versioned GenPept ADM46362.1 names nat1 and codes from GQ452266.1:82335..83678,
+        strain CS. It is a 447-residue author-supplied conceptual translation annotated
+        halogenase.
+    - reference: https://rest.uniprot.org/uniprotkb/F8QPG4.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: Current unreviewed primary F8QPG4, entry version 33/sequence version
+        1, names nat1/strain CS/taxon 876169 and directly cross-references GQ452266
+        with protein ADM46362.1. Homology-based protein existence and automated family
+        annotation are not experimental validation of activity.
+    - reference: https://rest.uniprot.org/uniprotkb/F8QPG4.json
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: Complete-CDS-aware translation, deposited translation, independent GenPept
+        and UniProt sequences agree over all 447 residues. Exact gene, accession,
+        strain and taxon agreement supports selecting this native-reference example
+        rather than an arbitrary homolog. This does not identify a historical assay
+        construct.
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000477.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: Active MITE0000477 version 1 maps Nat1 to F8QPG4/ADM46362.1/BGC0000106.
+        This supports source mapping only. Source knock-out codes are not independently
+        inspected primary experiments.
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000477.json
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: Under RDKit 2026.03.5 the literal naphthomycin model product and SMARTS
+        output share AXEGRHYJHHPVDH-RRJKCPLYSA-N, not owner AXEGRHYJHHPVDH-UMKVKWLOSA-N.
+        Both leave six alkene configurations unspecified; this is not evidence of
+        isomerization. The source is not silently repaired, and exact-owner reaction
+        adoption is withheld.
+- graph_id: naphthomycin-a-nat2-native-reference
+  scope: BIOSYNTHESIS
+  description: Native-reference identity only for Nat2 in Streptomyces sp. CS/taxon
+    876169/GQ452266.1. Placement in this owner is curator-inferred from the shared
+    deposited cluster and BGC0000106 context; it is not proof of an exact-product
+    reaction. Predicted oxidoreductase and automated MhpA-related annotations are
+    not demonstrated hydroxylation or ring formation. No deletion phenotype, historical
+    assay construct, pathway order or physical complex is asserted. DOI:10.1039/C1MB05036B
+    was inspected only at the publisher abstract level on 2026-10-08; the full-text
+    loader failed and retrieval stopped. No primary experiment is independently adopted.
+  nodes:
+  - node_id: nat2_cds
+    label: nat2 CDS (GQ452266.1)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: nat2
+    label: Nat2 (Streptomyces sp. CS native-reference example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:F8QPH2
+  edges:
+  - subject: nat2_cds
+    predicate: encodes the native protein reference
+    object: nat2
+    notes: 91304..93061 reverse strand; 1758-nt complete CDS including stop, 585 residues.
+      The accession denotes the native reference, not a tagged or mutated construct.
+      Sequence identity does not experimentally validate activity.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/GQ452266.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: /gene="nat2"
+      notes: The 106,181-bp partial cluster deposition names nat2/ADM46370.1 at complement(91304..93061),
+        codon_start 1 and translation table 11. Source names strain CS/taxon 876169.
+        It is not the whole genome or an independent activity experiment.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ADM46370.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: Versioned GenPept ADM46370.1 names nat2 and codes from complement(GQ452266.1:91304..93061),
+        strain CS. It is a 585-residue author-supplied conceptual translation annotated
+        FAD-dependent oxidoreductase. Its computational MhpA region annotation is
+        not a native-substrate experiment.
+    - reference: https://rest.uniprot.org/uniprotkb/F8QPH2.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: Current unreviewed primary F8QPH2, entry version 34/sequence version
+        1, names nat2/strain CS/taxon 876169 and directly cross-references GQ452266
+        with protein ADM46370.1. Protein existence is Predicted. Automated MhpA-related
+        domain and GO annotations do not demonstrate a reaction on naphthomycin.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/GQ452266.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: Complete-CDS-aware reverse-strand translation, deposited translation,
+        independent GenPept and UniProt sequences agree over all 585 residues. The
+        exact-gene/taxon UniProt search returned one entry, F8QPH2. Gene, accession,
+        strain and taxon agreement supports this native-reference example, not an
+        arbitrary homolog. Placement in this owner is inferred from its existing GQ452266.1/BGC0000106
+        cluster context; this does not establish activity or a historical assay construct.
 curation_history:
 - timestamp: '2026-09-10T05:54:03Z'
   curator: seed_from_sources
@@ -146,3 +276,21 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-08T13:51:20Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a native-reference-only Nat1/UniProtKB:F8QPG4 identity graph for
+    Streptomyces sp. CS/GQ452266.1/BGC0000106. Complete CDS translation, deposited
+    translation, GenPept ADM46362.1 and current UniProt sequence agree over 447 residues.
+    Placement is inferred from shared source BGC context. The MITE model product lacks
+    all six specified alkene configurations of the exact owner; literal model and
+    SMARTS agree only at that less specified level. No reaction, assay construct,
+    cross-complementation or proansamitocin claim is adopted. Seeded fields, grades,
+    SEEDED status and prior history are preserved. Added the native-reference-only
+    Nat2/UniProtKB:F8QPH2 encoding graph from the same CS/GQ452266.1 cluster. All
+    four sequence representations agree over 585 residues from the reverse-strand
+    complete CDS. Predicted oxidoreductase and automated MhpA-related annotations
+    are not adopted as experimentally demonstrated hydroxylation or ring formation.
+    No reaction, deletion phenotype, assay construct, pathway order or complex is
+    asserted.
+  llm_assisted: true
