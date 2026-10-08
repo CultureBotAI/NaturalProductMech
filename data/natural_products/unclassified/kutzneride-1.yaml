@@ -405,6 +405,116 @@ causal_graphs:
       retrieved_on: '2026-10-02'
       notes: NCBI Protein ABV56598.1 is the Kutzneria sp. 744 KtzR protein encoded
         by ktzR at EU074211.1:9791..11308.
+- graph_id: kutzneride-ktza-native-reference
+  scope: BIOSYNTHESIS
+  description: Native-reference identity only for Kutzneria sp. 744 /taxon 345341/EU074211.1.
+    Placement in this owner is curator-inferred from the shared BGC0000378 context,
+    not evidence of conversion to its exact structure or applicability to every congener.
+    No assay construct, carrier loading, enzyme activity or reaction order is asserted.
+    KtzA/KtzD source reaction models remain withheld under https://github.com/CultureBotAI/NaturalProductMech/issues/700;
+    chemistry and congener scope need adjudication. MITE cites DOI:10.1021/ja8064667;
+    that paper was inaccessible when attempted on 2026-10-08 and retrieval stopped.
+  nodes:
+  - node_id: ktza_cds
+    label: ktzA CDS (EU074211.1)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: ktza
+    label: KtzA (744 native-reference example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:ABV56581.1
+  edges:
+  - subject: ktza_cds
+    predicate: encodes the native protein reference
+    object: ktza
+    notes: 50088..51233 positive strand; 1146-nt complete CDS including stop, 381
+      residues. Reference identity does not validate a reaction model.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/EU074211.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: /gene="ktzA"
+      notes: Deposited ktzA CDS names ABV56581.1, codon_start 1 and translation table
+        11. The inspected 3,950-bp window is EU074211.1:47284..51233, not the whole
+        genome or full BGC. Source names strain 744/taxon 345341. This is an annotation,
+        not an assay.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABV56581.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: GenPept ABV56581.1 identifies KtzA from Kutzneria sp. 744; its coded_by
+        matches the complete CDS coordinates and positive strand. The versioned native
+        protein, not a family or homolog, grounds this node.
+    - reference: https://rest.uniprot.org/uniparc/UPI00015D3A85.json
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: CDS-aware translation, deposited translation, GenPept and UPI00015D3A85
+        agree over all 381 residues. Direct EMBL accession/version, gene and taxon
+        agree. The inspected UniParc entry lists only the inactive UniProtKB entry
+        A8CF96, not a current UniProtKB example. UniParc is a sequence archive, not
+        independent reaction evidence.
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000417.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: Active MITE0000417 version 1 maps KtzA to ABV56581.1, UPI00015D3A85 and
+        BGC0000378. Its uniprot field contains a UniParc ID. This citation supports
+        source mapping only. Reaction models remain withheld under https://github.com/CultureBotAI/NaturalProductMech/issues/700;
+        no primary reaction experiment is adopted.
+- graph_id: kutzneride-ktzd-native-reference
+  scope: BIOSYNTHESIS
+  description: Native-reference identity only for Kutzneria sp. 744 /taxon 345341/EU074211.1.
+    Placement in this owner is curator-inferred from the shared BGC0000378 context,
+    not evidence of conversion to its exact structure or applicability to every congener.
+    No assay construct, carrier loading, enzyme activity or reaction order is asserted.
+    KtzA/KtzD source reaction models remain withheld under https://github.com/CultureBotAI/NaturalProductMech/issues/700;
+    chemistry and congener scope need adjudication. MITE cites DOI:10.1021/ja8064667;
+    that paper was inaccessible when attempted on 2026-10-08 and retrieval stopped.
+  nodes:
+  - node_id: ktzd_cds
+    label: ktzD CDS (EU074211.1)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: ktzd
+    label: KtzD (744 native-reference example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:ABV56584.1
+  edges:
+  - subject: ktzd_cds
+    predicate: encodes the native protein reference
+    object: ktzd
+    notes: 47284..48249 positive strand; 966-nt complete CDS including stop, 321 residues.
+      Reference identity does not validate a reaction model.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/EU074211.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: /gene="ktzD"
+      notes: Deposited ktzD CDS names ABV56584.1, codon_start 1 and translation table
+        11. The inspected 3,950-bp window is EU074211.1:47284..51233, not the whole
+        genome or full BGC. Source names strain 744/taxon 345341. This is an annotation,
+        not an assay.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABV56584.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: GenPept ABV56584.1 identifies KtzD from Kutzneria sp. 744; its coded_by
+        matches the complete CDS coordinates and positive strand. The versioned native
+        protein, not a family or homolog, grounds this node.
+    - reference: https://rest.uniprot.org/uniparc/UPI00015D3A82.json
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: CDS-aware translation, deposited translation, GenPept and UPI00015D3A82
+        agree over all 321 residues. Direct EMBL accession/version, gene and taxon
+        agree. The inspected UniParc entry lists only the inactive UniProtKB entry
+        A8CF92, not a current UniProtKB example. UniParc is a sequence archive, not
+        independent reaction evidence.
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000418.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: Active MITE0000418 version 1 maps KtzD to ABV56584.1, UPI00015D3A82 and
+        BGC0000378. Its uniprot field contains a UniParc ID. This citation supports
+        source mapping only. Reaction models remain withheld under https://github.com/CultureBotAI/NaturalProductMech/issues/700;
+        no primary reaction experiment is adopted.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -428,4 +538,14 @@ curation_history:
     step and a BIOSYNTHESIS causal graph for Kutzneria sp. 744 KtzR 6-chlorination
     of 7-chloro-L-tryptophan to 6,7-dichloro-L-tryptophan in the kutzneride precursor
     pathway.
+  llm_assisted: true
+- timestamp: '2026-10-08T12:17:14Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added native-reference-only KtzA/NCBIProtein:ABV56581.1 and KtzD/NCBIProtein:ABV56584.1
+    identity graphs for Kutzneria sp. 744 /EU074211.1/BGC0000378. Retired UniProtKB
+    entries are not selected examples. KtzA/KtzD reaction models remain withheld under
+    issue 700: literal KtzD substrate radicals and KtzA product connectivity require
+    adjudication. Native identity is not assay-construct or reaction proof. Preserved
+    existing KtzQ/KtzR pathways/graphs, source fields, grades, SEEDED status and history.'
   llm_assisted: true
