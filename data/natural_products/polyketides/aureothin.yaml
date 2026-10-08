@@ -280,10 +280,13 @@ causal_graphs:
         here.
 - graph_id: aureothin-auri-heterologous-pyrone-phenotypes
   scope: BIOSYNTHESIS
-  description: 'Reported S. albus/pMZ02 triple-deficient background, not a native
-    single-gene knockout. Complementation is retained at the reported pyrone class:
-    no exact rescue-product assignment, verified complementation construct, mature-aureothin
-    rescue or exclusion of polar effects. Supplementary material was not read.'
+  description: 'Partial view of separate culture and complementation observations;
+    connecting mechanistic edges are intentionally omitted because these experiments
+    do not establish one continuous causal chain. Reported S. albus/pMZ02 triple-deficient
+    background, not a native single-gene knockout. Complementation is retained at
+    the reported pyrone class: no exact rescue-product assignment, verified complementation
+    construct, mature-aureothin rescue or exclusion of polar effects. Supplementary
+    material was not read.'
   nodes:
   - node_id: auri
     label: AurI
@@ -395,4 +398,13 @@ curation_history:
     source-exact snippets. Preserved prior AurF biology/evidence, pathway step, source-owned
     fields and history; clarified only the old AurF coverage note. No AurH complementation,
     purified kinetics, antimicrobial targets or REVIEWED-status promotion.'
+  llm_assisted: true
+- timestamp: '2026-10-08T00:48:56Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Issue #680: explicitly marked the AurI heterologous-pyrone phenotype graph
+    as a partial view of separate experimental observations. Explained why connecting
+    mechanistic edges are intentionally omitted. Preserved every node, edge, evidence
+    item, snippet, prior curation event and source-owned field; no new scientific
+    claim or status promotion.'
   llm_assisted: true
