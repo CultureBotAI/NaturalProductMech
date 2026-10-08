@@ -314,6 +314,122 @@ causal_graphs:
       notes: ChEBI identifies the reverse C2-prenylated product with full InChIKey
         KUGNSEAHJVSMAJ-IRXDYDNUSA-N.
       retrieved_on: '2026-10-08'
+- graph_id: notoamide-a-notc-native-reference
+  scope: BIOSYNTHESIS
+  description: Native identity in the MF297-2/BGC0001084 context only. The spliced
+    genomic reference is not a verified experimental transcript or assay construct,
+    and is not transferred to the distinct BGC0000818 or BGC0002254 source clusters.
+  nodes:
+  - node_id: notc_cds
+    label: notC CDS (HM622670.1, two forward-strand exons)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: notc
+    label: NotC (MF297-2 native reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:E0Y3X0
+  edges:
+  - subject: notc_cds
+    predicate: encodes the native protein reference
+    object: notc
+    notes: Aspergillus sp. MF297-2, taxon 877550; join(5819..6996,7066..7168); 426
+      amino acids.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/HM622670.1
+      evidence_type: DATABASE_ASSERTION
+      notes: GenBank links this two-exon CDS to ADM34136.1 and names NotC; the CDS
+        lacks a gene-name qualifier.
+      retrieved_on: '2026-10-08'
+      snippet: /note="NotC"
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/GU564534.1
+      evidence_type: DATABASE_ASSERTION
+      notes: The separate notC gene deposit has CDS join(1..1178,1248..1350) and protein
+        ADM34131.1 in the same strain.
+      retrieved_on: '2026-10-08'
+    - reference: https://www.uniprot.org/uniprotkb/E0Y3X0/entry
+      evidence_type: CURATOR_INFERENCE
+      notes: Reviewed entry version 39, sequence version 1. CDS-aware translations
+        of both deposits, both deposited translations, both independent GenPept proteins
+        and E0Y3X0 match over all 426 residues. This establishes native reference
+        identity, not the sequence of an experimental construct.
+      retrieved_on: '2026-10-08'
+- graph_id: notoamide-a-notc-early-prenylation
+  scope: BIOSYNTHESIS
+  description: Partial intermediate graph in the MF297-2 notoamide pathway context
+    annotated by UniProt. NotC does not directly make notoamide A. No verified hydroxylation
+    bridge from the existing NotF product to the NotC substrate, downstream route
+    or final hydroxylase is asserted. DOI:10.1021/ja1049302 is cited by the database;
+    its primary contents were not inspected. Assembly, kinetics and strict substrate
+    exclusivity are not asserted.
+  nodes:
+  - node_id: notc
+    label: NotC (MF297-2 native reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:E0Y3X0
+  - node_id: hydroxydeoxybrevianamide_e
+    label: 6-hydroxydeoxybrevianamide E
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+    identifier: CHEBI:145682
+  - node_id: normal_prenylation
+    label: NotC normal C7-prenylation
+    node_type: PROCESS
+    grounding_status: GROUNDED
+    identifier: RHEA:62345
+  - node_id: notoamide_s
+    label: notoamide S
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:145683
+  edges:
+  - subject: notc
+    predicate: is annotated to catalyze
+    object: normal_prenylation
+    notes: Native reference, not a sequence-verified assay construct. Normal prenylation
+      at C7, distinct from NotF reverse C2-prenylation; dimethylallyl diphosphate
+      is the donor and diphosphate is released.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/E0Y3X0/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: Entry version 39 annotates RHEA:62344 and physiological left-to-right
+        RHEA:62345, citing PMID:20722388. This is database evidence, not an independently
+        inspected experiment.
+      retrieved_on: '2026-10-08'
+      snippet: 6-hydroxydeoxybrevianamide E + dimethylallyl diphosphate = notoamide
+        S + diphosphate
+  - subject: hydroxydeoxybrevianamide_e
+    predicate: is the annotated substrate of
+    object: normal_prenylation
+    notes: The hydroxylated intermediate, not the unhydroxylated NotF product.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/E0Y3X0/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: Catalytic activity assigns 6-hydroxydeoxybrevianamide E as the prenyl
+        acceptor; no strict substrate-exclusivity claim is adopted.
+      retrieved_on: '2026-10-08'
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:145682
+      evidence_type: DATABASE_ASSERTION
+      notes: ChEBI identifies this stereochemically specified intermediate with full
+        InChIKey DHOZDQLRUFUUQZ-IRXDYDNUSA-N.
+      retrieved_on: '2026-10-08'
+  - subject: normal_prenylation
+    predicate: has the annotated product
+    object: notoamide_s
+    notes: Notoamide S is an intermediate, not notoamide A. This edge does not prove
+      an experimentally complete route to the owner structure.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/E0Y3X0/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: Catalytic activity identifies notoamide S. The broader pathway annotation
+        contains proposed downstream assignments and leaves the final hydroxylation
+        enzyme leading to notoamide A unidentified.
+      retrieved_on: '2026-10-08'
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:145683
+      evidence_type: DATABASE_ASSERTION
+      notes: ChEBI identifies notoamide S with full InChIKey ZGWIWQJHQKPWGB-PMACEKPBSA-N.
+      retrieved_on: '2026-10-08'
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -331,4 +447,13 @@ curation_history:
     the inspected 2020 abstract and qualified substrate specificity. No downstream
     route to notoamide A, experimental construct, assembly or producer-grade upgrade
     asserted; source-owned fields unchanged.
+  llm_assisted: true
+- timestamp: '2026-10-08T05:48:41Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added NotC native-reference and annotated C7-prenylation graphs, grounded
+    to UniProtKB:E0Y3X0 from Aspergillus sp. MF297-2. Preserved both NotF graphs and
+    all source-owned fields. No verified bridge from NotF to NotC or onward to notoamide
+    A, experimental construct, strict substrate specificity, assembly, kinetics or
+    producer-grade upgrade asserted.
   llm_assisted: true
