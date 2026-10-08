@@ -430,6 +430,124 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       notes: ChEBI identifies notoamide S with full InChIKey ZGWIWQJHQKPWGB-PMACEKPBSA-N.
       retrieved_on: '2026-10-08'
+- graph_id: notoamide-a-notg-native-reference
+  scope: BIOSYNTHESIS
+  description: Native full-length reference identity in MF297-2/BGC0001084 only. The
+    spliced genomic reference is not a verified experimental transcript or assay construct.
+    Predicted signal cleavage, membrane topology and glycosylation are not experimentally
+    verified here. No transfer to BGC0000818 or BGC0002254.
+  nodes:
+  - node_id: notg_cds
+    label: notG CDS (HM622670.1, five reverse-strand exons)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: notg
+    label: NotG (MF297-2 full-length native reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:E1ACQ2
+  edges:
+  - subject: notg_cds
+    predicate: encodes the full-length native protein reference
+    object: notg
+    notes: Aspergillus sp. MF297-2, taxon 877550; complement(join(19899..20086,20171..20272,20337..20635,20689..20810,20879..21799));
+      543 amino acids.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/HM622670.1
+      evidence_type: DATABASE_ASSERTION
+      notes: GenBank links the five-exon CDS to ADM34140.1 and names NotG; the CDS
+        lacks a gene-name qualifier.
+      retrieved_on: '2026-10-08'
+      snippet: /note="NotG"
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ADM34140.1
+      evidence_type: DATABASE_ASSERTION
+      notes: The separate GenPept record names NotG and maps its 543-residue reference
+        to the same reverse-strand spliced CDS.
+      retrieved_on: '2026-10-08'
+    - reference: https://www.uniprot.org/uniprotkb/E1ACQ2/entry
+      evidence_type: CURATOR_INFERENCE
+      notes: Reviewed entry version 39, sequence version 1. CDS-aware translation
+        of HM622670.1, its deposited translation, GenPept ADM34140.1 and E1ACQ2 match
+        over all 543 residues. This establishes full-length reference identity, not
+        experimental mature processing or reaction verification.
+      retrieved_on: '2026-10-08'
+- graph_id: notoamide-a-notg-proposed-hydroxylation
+  scope: BIOSYNTHESIS
+  description: 'Partial, explicitly inferred intermediate graph: UniProt proposes
+    NotG for C6-hydroxylation between the annotated NotF product and NotC substrate.
+    This is a hypothesis, not a demonstrated bridge between those graphs or a complete
+    route to notoamide A. The database-cited DOI:10.1021/ja1049302 and DOI:10.1039/C2MD20029E
+    primary contents were not inspected. No final hydroxylase, assembly, native heme
+    occupancy or kinetic claim is asserted.'
+  nodes:
+  - node_id: notg
+    label: NotG (MF297-2 full-length native reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:E1ACQ2
+  - node_id: deoxybrevianamide_e
+    label: deoxybrevianamide E
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+    identifier: CHEBI:72948
+  - node_id: proposed_hydroxylation
+    label: Proposed NotG C6-hydroxylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hydroxydeoxybrevianamide_e
+    label: 6-hydroxydeoxybrevianamide E
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:145682
+  edges:
+  - subject: notg
+    predicate: is proposed to catalyze
+    object: proposed_hydroxylation
+    notes: 'Database-inferred assignment, not a directly demonstrated NotG reaction.
+      The reaction node is ungrounded: no Rhea or complete EC identifier was verified
+      for this proposed transformation.'
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/E1ACQ2/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: Entry version 39 marks this NotG-specific function Probable. The experimental
+        citations attached to its broader pathway paragraph are not evidence that
+        this individual step was demonstrated. No CATALYTIC ACTIVITY comment is present.
+      retrieved_on: '2026-10-08'
+      snippet: likely catalyzed by the cytochrome P450 monooxygenase notG, to yield
+        6-hydroxy-deoxybrevianamide E (Probable)
+  - subject: deoxybrevianamide_e
+    predicate: is the proposed substrate of
+    object: proposed_hydroxylation
+    notes: Proposed substrate identity, not an assayed NotG substrate-specificity
+      result.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/E1ACQ2/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: The Probable function clause proposes C6 hydroxylation of deoxybrevianamide
+        E; it does not establish a verified NotG assay.
+      retrieved_on: '2026-10-08'
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:72948
+      evidence_type: DATABASE_ASSERTION
+      notes: ChEBI identifies deoxybrevianamide E with full InChIKey KUGNSEAHJVSMAJ-IRXDYDNUSA-N.
+        Molecular identity does not prove participation in the proposed reaction.
+      retrieved_on: '2026-10-08'
+  - subject: proposed_hydroxylation
+    predicate: has the proposed product
+    object: hydroxydeoxybrevianamide_e
+    notes: Proposed hydroxylated intermediate, not notoamide A. No complete downstream
+      route or experimentally verified NotF-to-NotC bridge.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/E1ACQ2/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: The Probable function clause names 6-hydroxy-deoxybrevianamide E as the
+        proposed product; the final hydroxylation leading to notoamide A remains unidentified
+        in the broader annotation.
+      retrieved_on: '2026-10-08'
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:145682
+      evidence_type: DATABASE_ASSERTION
+      notes: ChEBI identifies 6-hydroxydeoxybrevianamide E with full InChIKey DHOZDQLRUFUUQZ-IRXDYDNUSA-N.
+        This is chemical-identity evidence only, not proof of the NotG assignment.
+      retrieved_on: '2026-10-08'
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -456,4 +574,14 @@ curation_history:
     all source-owned fields. No verified bridge from NotF to NotC or onward to notoamide
     A, experimental construct, strict substrate specificity, assembly, kinetics or
     producer-grade upgrade asserted.
+  llm_assisted: true
+- timestamp: '2026-10-08T06:28:18Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added NotG native-reference and explicitly proposed C6-hydroxylation graphs,
+    grounded to UniProtKB:E1ACQ2 from Aspergillus sp. MF297-2. The database-inferred
+    reaction is not experimental proof of the NotF-to-NotC link or a complete route
+    to notoamide A. Preserved all four NotF/NotC graphs, source-owned fields and earlier
+    history; no assay construct, mature processing, assembly, kinetics or producer
+    upgrade asserted.
   llm_assisted: true
