@@ -1,0 +1,304 @@
+record_id: naturalproductmech:mibig-619480541f
+standard_inchi_key: FJAQNRBDVKIIKK-LFLQOBSNSA-N
+graph:
+  graph_id: clorobiocin-cloh-cloy-association-and-l383m-limits
+  scope: BIOSYNTHESIS
+  description: 'CloH/CloY association and proposed stoichiometry, distinct coexpression
+    and L383M activity tradeoffs, and computational limits. Review #672.'
+  nodes:
+  - node_id: cloh
+    label: Native CloH sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHC7
+  - node_id: mix
+    label: Separately prepared CloH/CloY mixture
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: plateau
+    label: Activity saturation near an equimolar CloY:CloH ratio
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: bands
+    label: CloH and CloY bands after analytical gel filtration
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: complex
+    label: Source-supported recombinant CloH/CloY association
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: stoichiometry
+    label: Proposed CloH/CloY heterotetramer
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: duet
+    label: pBB35 coexpressed N-His6-CloH and untagged CloY preparation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: duet_model
+    label: Printed pBB35 insert-facing sequence model
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: duet_activity
+    label: Lower activity of the copurified coexpression preparation
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: loss
+    label: Suggested loss of CloY during purification
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: mutant
+    label: Engineered CloH L383M preparation, not the native reference
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: mutant_alone
+    label: L383M exchange activity without added CloY
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: mutant_partner
+    label: L383M exchange activity with added CloY
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: model
+    label: PheA-based conformational hypothesis
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: mix
+    predicate: showed
+    object: plateau
+    notes: Figure4 varies added CloY and shows increasing exchange activity up to
+      about1:1, followed by a plateau. No binding constant, confidence interval or
+      exact physical subunit count is determined from this activity titration.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.99; printed pages are
+        five lower. Author-reproduced manuscript and supplement identified by DOI:10.1074/jbc.M111.288092,
+        not independently retrieved final journal text.
+  - subject: mix
+    predicate: yielded
+    object: bands
+    notes: FigureS4 is an SDS-PAGE image with source-labelled CloH and CloY bands
+      after analytical gel filtration. Band presence supports copurification; the
+      image is not calibrated densitometry or an absolute stoichiometry assay.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.99,111; printed pages
+        are five lower. Author-reproduced manuscript and supplement identified by
+        DOI:10.1074/jbc.M111.288092, not independently retrieved final journal text.
+  - subject: bands
+    predicate: supports
+    object: complex
+    notes: The source reports copurification and shows both proteins in the isolated
+      fraction. This is association evidence in the recombinant context, not an atomic
+      structure, an independently measured dissociation constant or native in-cell
+      occupancy.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.99,111; printed pages
+        are five lower. Author-reproduced manuscript and supplement identified by
+        DOI:10.1074/jbc.M111.288092, not independently retrieved final journal text.
+  - subject: plateau
+    predicate: supports_source_proposal_of
+    object: stoichiometry
+    notes: Equimolar functional saturation contributes to the proposed1:1 subunit
+      ratio. It does not by itself distinguish a heterodimer from a heterotetramer.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.99,102; printed pages
+        are five lower. Author-reproduced manuscript and supplement identified by
+        DOI:10.1074/jbc.M111.288092, not independently retrieved final journal text.
+  - subject: complex
+    predicate: has_proposed_assembly
+    object: stoichiometry
+    notes: The source says CloH alone formed dimers and that its gel-filtration difference
+      from the CloH/CloY complex was small. Combined with the activity ratio, this
+      motivates a heterotetramer proposal. The650/208/229-kDa values and Figure5 belong
+      to SimH/SimY and are not CloH measurements.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.99-102,111; printed pages
+        are five lower. Author-reproduced manuscript and supplement identified by
+        DOI:10.1074/jbc.M111.288092, not independently retrieved final journal text.
+  - subject: cloh
+    predicate: is_native_reference_for_coexpression_in
+    object: duet
+    notes: pBB35 uses pETDUET1 to coexpress N-His6-CloH and untagged CloY in the ybdZ-deletion
+      BL21(DE3) host with pSU20_sfp. Native CloH is a sequence reference, not the
+      complete fusion or a guarantee of its active fraction.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHC7
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed native CloH reference, 600 aa; entry102/sequence1, annotation2026-09-02.
+        UniProt subspecies taxon149682 versus deposited DS12.976 strain taxon1352936.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAN65224.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent GenPept sequence equals the complete deposited CDS translation
+        and Q8GHC7.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS13390..15192(+),1803nt including stop. Table11 CDS-aware translation
+        interprets TTG initiation as methionine; native internal residue383 is leucine.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.92-94,100; printed pages
+        are five lower. Author-reproduced manuscript and supplement identified by
+        DOI:10.1074/jbc.M111.288092, not independently retrieved final journal text.
+  - subject: duet
+    predicate: has_bounded_construct_model
+    object: duet_model
+    notes: The visually inspected BamHI/NotI primers model a thrombin-recognition
+      segment LVPRGS followed by native CloH residues2..600, omitting the native initiator
+      from that insert-facing segment. This does not reconstruct the upstream vector
+      tag, complete pBB35, cleavage state or experimentally sequenced full fusion.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHC7
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed native CloH reference, 600 aa; entry102/sequence1, annotation2026-09-02.
+        UniProt subspecies taxon149682 versus deposited DS12.976 strain taxon1352936.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAN65224.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent GenPept sequence equals the complete deposited CDS translation
+        and Q8GHC7.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS13390..15192(+),1803nt including stop. Table11 CDS-aware translation
+        interprets TTG initiation as methionine; native internal residue383 is leucine.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.92; printed pages are
+        five lower. Author-reproduced manuscript and supplement identified by DOI:10.1074/jbc.M111.288092,
+        not independently retrieved final journal text.
+  - subject: duet
+    predicate: provided_copurification_evidence_for
+    object: complex
+    notes: Ni-affinity and gel chromatography yielded an active preparation containing
+      the coexpressed tagged CloH and untagged CloY, interpreted by the authors as
+      complex copurification. Reported preparation yield4.8 mg/L is not a subunit
+      ratio or proof that every recovered CloH molecule retained CloY.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.94,100; printed pages
+        are five lower. Author-reproduced manuscript and supplement identified by
+        DOI:10.1074/jbc.M111.288092, not independently retrieved final journal text.
+  - subject: duet
+    predicate: showed
+    object: duet_activity
+    notes: The source reports50% less activity than a mixture of separately purified
+      CloH and CloY. Additional CloY raised activity but not above the separate mixture.
+      The10-fold/75-fold coexpression improvements discussed nearby concern CmnO/VioO
+      from another study and are not transferred.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.100-101; printed pages
+        are five lower. Author-reproduced manuscript and supplement identified by
+        DOI:10.1074/jbc.M111.288092, not independently retrieved final journal text.
+      snippet: 50 % less active
+  - subject: duet_activity
+    predicate: supports_source_hypothesis_of
+    object: loss
+    notes: The authors infer that some CloY may have been lost during purification.
+      Neither the lost fraction nor a physical dissociation rate was quantified.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.101; printed pages are
+        five lower. Author-reproduced manuscript and supplement identified by DOI:10.1074/jbc.M111.288092,
+        not independently retrieved final journal text.
+  - subject: cloh
+    predicate: is_native_sequence_reference_for_variant
+    object: mutant
+    notes: Native residue383 is leucine. Modeling the visually checked mutagenic primer
+      against AF329398.1 changes internal CDS nucleotide1147 T to A (TTG to ATG),
+      producing L383M only in the core. This is distinct from the initiation recoding
+      used for expression. The source reports full-gene sequencing and transfer to
+      pET28a; no complete historical mutant plasmid was independently obtained. The
+      mutant has no exact-native accession assignment.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHC7
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed native CloH reference, 600 aa; entry102/sequence1, annotation2026-09-02.
+        UniProt subspecies taxon149682 versus deposited DS12.976 strain taxon1352936.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAN65224.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent GenPept sequence equals the complete deposited CDS translation
+        and Q8GHC7.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS13390..15192(+),1803nt including stop. Table11 CDS-aware translation
+        interprets TTG initiation as methionine; native internal residue383 is leucine.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.93,101-102,108; printed
+        pages are five lower. Author-reproduced manuscript and supplement identified
+        by DOI:10.1074/jbc.M111.288092, not independently retrieved final journal
+        text.
+  - subject: mutant
+    predicate: showed_without_added_cloy
+    object: mutant_alone
+    notes: Reported ATP-PPi exchange activity0.22 nkat/mg protein,33% of the source
+      NovH comparison. This is not33% of CloH+CloY and is not mature-product yield.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.97,102; printed pages
+        are five lower. Author-reproduced manuscript and supplement identified by
+        DOI:10.1074/jbc.M111.288092, not independently retrieved final journal text.
+  - subject: mutant
+    predicate: showed_with_added_cloy
+    object: mutant_partner
+    notes: Reported exchange activity2.45 nkat/mg protein,36% of native-sequence CloH
+      with CloY. Increased unassisted activity therefore comes with reduced partner-assisted
+      activity, not an unconditional improvement or NovH conversion.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.97,102; printed pages
+        are five lower. Author-reproduced manuscript and supplement identified by
+        DOI:10.1074/jbc.M111.288092, not independently retrieved final journal text.
+      snippet: reduced the optimal activity
+  - subject: mutant_alone
+    predicate: is_consistent_with_but_does_not_prove
+    object: model
+    notes: The2011 authors modeled CloH/NovH on PheA (PDB1AMU), proposing effects
+      of residue383 on Y397/E316 and Mg-related geometry. The mutation supports a
+      functional role but does not establish the proposed atomic contacts or exclude
+      alternative mechanisms. Their structure-availability statement is historical.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.101-104; printed pages
+        are five lower. Author-reproduced manuscript and supplement identified by
+        DOI:10.1074/jbc.M111.288092, not independently retrieved final journal text.
+  - subject: complex
+    predicate: has_unresolved_structural_explanation
+    object: model
+    notes: Docking gave several possible arrangements and the authors explicitly left
+      complex structure speculative. Their conformational hypothesis does not establish
+      direct CloY-substrate contacts or PCP-domain rotation.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: COMPUTATIONAL_PREDICTION
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.103-106; printed pages
+        are five lower. Author-reproduced manuscript and supplement identified by
+        DOI:10.1074/jbc.M111.288092, not independently retrieved final journal text.
+curation_history:
+- timestamp: '2026-10-07T22:17:09Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add three exact-owner BIOSYNTHESIS components grounding native CloH Q8GHC7
+    while separating pBB26/pBB35 and L383M preparations. Preserve initiation recoding,
+    residual/host-conditioned ATP-PPi exchange activity, CloH/CloY kinetics, association
+    versus inferred stoichiometry, coexpression and mutant tradeoffs, and noncognate
+    MbtH cross-activation. Add claim-level stable-URL evidence and three short primary
+    snippets. Address review #672. No PCP-loading, mature-product synthesis, atomic-complex,
+    antimicrobial target or whole-plasmid claim added; retain all27 prior graphs,
+    all23 component bytes, source-owned fields, history and SEEDED status.'
+  llm_assisted: true

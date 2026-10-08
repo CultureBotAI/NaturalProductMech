@@ -936,6 +936,9 @@ causal_graph_refs:
 - clorobiocin-clon3456-genetics-titers-and-cassette-limits
 - clorobiocin-cloy-mbth-native-references-and-genetic-compensation
 - clorobiocin-cloy-mbth-congener-feeding-and-mechanism-limits
+- clorobiocin-cloh-native-preparations-and-adenylation
+- clorobiocin-cloh-cloy-association-and-l383m-limits
+- clorobiocin-cloh-mbth-cross-activation-and-partner-boundaries
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
@@ -1069,4 +1072,16 @@ curation_history:
     chemical identity merge or antimicrobial target added. Address review #670; retain
     all25 prior graphs, all21 component bytes, existing fields/history and SEEDED
     status.'
+  llm_assisted: true
+- timestamp: '2026-10-07T22:17:09Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add three exact-owner BIOSYNTHESIS components grounding native CloH Q8GHC7
+    while separating pBB26/pBB35 and L383M preparations. Preserve initiation recoding,
+    residual/host-conditioned ATP-PPi exchange activity, CloH/CloY kinetics, association
+    versus inferred stoichiometry, coexpression and mutant tradeoffs, and noncognate
+    MbtH cross-activation. Add claim-level stable-URL evidence and three short primary
+    snippets. Address review #672. No PCP-loading, mature-product synthesis, atomic-complex,
+    antimicrobial target or whole-plasmid claim added; retain all27 prior graphs,
+    all23 component bytes, source-owned fields, history and SEEDED status.'
   llm_assisted: true

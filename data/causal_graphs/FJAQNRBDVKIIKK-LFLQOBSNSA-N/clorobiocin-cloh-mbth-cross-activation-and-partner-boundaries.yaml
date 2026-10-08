@@ -1,0 +1,306 @@
+record_id: naturalproductmech:mibig-619480541f
+standard_inchi_key: FJAQNRBDVKIIKK-LFLQOBSNSA-N
+graph:
+  graph_id: clorobiocin-cloh-mbth-cross-activation-and-partner-boundaries
+  scope: BIOSYNTHESIS
+  description: 'Cognate and noncognate MbtH activation of CloH in vitro, with native
+    references separated from processed/synthetic partners and per-panel normalization.
+    Review #672.'
+  nodes:
+  - node_id: cloh
+    label: Native CloH sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHC7
+  - node_id: prep
+    label: Deletion-host recombinant CloH preparation
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: panel
+    label: Four-partner CloH cross-activation panel
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: limits
+    label: Noncognate functional activation, not native-cluster membership
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: conflicts
+    label: Partner length and tag-stage discrepancies
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: cloy_native
+    label: CloY native sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHC8
+  - node_id: cloy_prep
+    label: pBB37-derived CloY preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: cdax_native
+    label: CdaX / SCO3218 native sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9Z388
+  - node_id: cdax_prep
+    label: pBB32-derived CdaX / SCO3218 preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: simy_native
+    label: SimY native sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F5J2
+  - node_id: simy_prep
+    label: pBB28-derived SimY preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: orf_native
+    label: Orf1van native sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:AAL90876.1
+  - node_id: orf_prep
+    label: pBB34-derived Orf1van preparation
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: cloh
+    predicate: is_native_reference_for
+    object: prep
+    notes: Figure6 uses recombinant CloH from the ybdZ-deletion host. Native Q8GHC7
+      does not denote the engineered His6 fusion.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHC7
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed native CloH reference, 600 aa; entry102/sequence1, annotation2026-09-02.
+        UniProt subspecies taxon149682 versus deposited DS12.976 strain taxon1352936.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAN65224.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent GenPept sequence equals the complete deposited CDS translation
+        and Q8GHC7.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS13390..15192(+),1803nt including stop. Table11 CDS-aware translation
+        interprets TTG initiation as methionine; native internal residue383 is leucine.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.92-97,101,104; printed
+        pages are five lower. Author-reproduced manuscript and supplement identified
+        by DOI:10.1074/jbc.M111.288092, not independently retrieved final journal
+        text.
+  - subject: prep
+    predicate: was_assayed_in
+    object: panel
+    notes: ATP-PPi exchange compares CloY, CdaX, SimY and Orf1van at enzyme:partner
+      1:1.2. Figure6 normalizes each enzyme panel independently to its CloY condition.
+      No exact percentages are newly digitized or compared across enzymes as if their
+      absolute denominators were shared.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.94-95,101,104; printed
+        pages are five lower. Author-reproduced manuscript and supplement identified
+        by DOI:10.1074/jbc.M111.288092, not independently retrieved final journal
+        text.
+  - subject: cloy_native
+    predicate: is_native_reference_for
+    object: cloy_prep
+    notes: 71-aa native AAN65223.1/Q8GHC8; the cluster-cosmid-derived partner is cognate
+      at the source-pathway level. The prepared protein remains separate from both
+      the native reference and untagged pBB35 coexpression product.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHC8
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed native 71-aa CloY, entry34/sequence1, annotation2025-02-05;
+        taxon149682.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1
+      evidence_type: DATABASE_ASSERTION
+      notes: AAN65223.1 CDS12920..13135(+),216nt including stop; full translation
+        equals Q8GHC8. DS12.976 native reference, not an independently sequenced experimental
+        fusion.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.91-96; printed pages
+        are five lower. Author-reproduced manuscript and supplement identified by
+        DOI:10.1074/jbc.M111.288092, not independently retrieved final journal text.
+  - subject: cloy_prep
+    predicate: stimulated_cloh_in
+    object: panel
+    notes: The source reports stimulation of CloH by this partner relative to no added
+      MbtH. Partners were expressed in Rosetta2(DE3) with N-His tags; methods describe
+      tag removal before gel filtration. Neither that processing statement nor stimulation
+      establishes an exact cleavage scar, a measured binding constant or native physiological
+      pairing.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.92-97,101,104; printed
+        pages are five lower. Author-reproduced manuscript and supplement identified
+        by DOI:10.1074/jbc.M111.288092, not independently retrieved final journal
+        text.
+  - subject: cdax_native
+    predicate: is_native_reference_for
+    object: cdax_prep
+    notes: 71-aa CAB38589.1 matches Q9Z388 and AL939115.1:183050..183265(-) CDS-aware
+      translation. The GTG start is initiator methionine. UniProt names A3(2)/M145,
+      taxon100226, whereas the source amplified cdaX from M512. This reference does
+      not independently sequence the experimental strain/construct.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9Z388
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed native reference; entry112/sequence1, annotation2026-06-10.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAB38589.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent GenPept matches the complete CDS and UniProt.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AL939115.1?from=183000&to=183300
+      evidence_type: DATABASE_ASSERTION
+      notes: Retained native CDS interval, not full experimental M512 genome.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.91-96; printed pages
+        are five lower. Author-reproduced manuscript and supplement identified by
+        DOI:10.1074/jbc.M111.288092, not independently retrieved final journal text.
+  - subject: cdax_prep
+    predicate: stimulated_cloh_in
+    object: panel
+    notes: The source reports stimulation of CloH by this partner relative to no added
+      MbtH. Partners were expressed in Rosetta2(DE3) with N-His tags; methods describe
+      tag removal before gel filtration. Neither that processing statement nor stimulation
+      establishes an exact cleavage scar, a measured binding constant or native physiological
+      pairing.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.92-97,101,104; printed
+        pages are five lower. Author-reproduced manuscript and supplement identified
+        by DOI:10.1074/jbc.M111.288092, not independently retrieved final journal
+        text.
+  - subject: simy_native
+    predicate: is_native_reference_for
+    object: simy_prep
+    notes: The sim-cluster-cosmid partner maps to native Q9F5J2. AF322256.1 AAL15602.1
+      translates to70 aa and matches the prior source-named AAG34186.1 comparison.
+      Native taxon1890 is S.antibioticus. The source reports69 aa, so no exact experimental-length
+      correction is assumed.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9F5J2
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed native reference; entry45/sequence1, annotation2025-02-05.
+        Retained official record.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF322256.1
+      evidence_type: DATABASE_ASSERTION
+      notes: AAL15602.1 CDS23515..23727(+),213nt including stop,70aa.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.91-96; printed pages
+        are five lower. Author-reproduced manuscript and supplement identified by
+        DOI:10.1074/jbc.M111.288092, not independently retrieved final journal text.
+  - subject: simy_prep
+    predicate: stimulated_cloh_in
+    object: panel
+    notes: The source reports stimulation of CloH by this partner relative to no added
+      MbtH. Partners were expressed in Rosetta2(DE3) with N-His tags; methods describe
+      tag removal before gel filtration. Neither that processing statement nor stimulation
+      establishes an exact cleavage scar, a measured binding constant or native physiological
+      pairing.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.92-97,101,104; printed
+        pages are five lower. Author-reproduced manuscript and supplement identified
+        by DOI:10.1074/jbc.M111.288092, not independently retrieved final journal
+        text.
+  - subject: orf_native
+    predicate: is_native_reference_for
+    object: orf_prep
+    notes: Native AAL90876.1 is69 aa, matching AF486630.1:720..929(+) in Amycolatopsis
+      orientalis taxon31958. The source reports70 aa and uses a commercially synthesized
+      codon-optimized gene. No independent full synthetic construct or exact UniProt
+      mapping is claimed; retain the source-named NCBI identifier.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAL90876.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Independent native GenPept reference,69aa.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF486630.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native CDS210nt including stop; conceptual translation matches the protein
+        record.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.91-96; printed pages
+        are five lower. Author-reproduced manuscript and supplement identified by
+        DOI:10.1074/jbc.M111.288092, not independently retrieved final journal text.
+  - subject: orf_prep
+    predicate: stimulated_cloh_in
+    object: panel
+    notes: The source reports stimulation of CloH by this partner relative to no added
+      MbtH. Partners were expressed in Rosetta2(DE3) with N-His tags; methods describe
+      tag removal before gel filtration. Neither that processing statement nor stimulation
+      establishes an exact cleavage scar, a measured binding constant or native physiological
+      pairing.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.92-97,101,104; printed
+        pages are five lower. Author-reproduced manuscript and supplement identified
+        by DOI:10.1074/jbc.M111.288092, not independently retrieved final journal
+        text.
+  - subject: panel
+    predicate: has_partner_scope_limit
+    object: limits
+    notes: CloY gave the highest displayed CloH activity. CdaX, SimY and Orf1van are
+      noncognate in-vitro partners, not newly assigned native clorobiocin BGC components.
+      CchK/CouY rescue in the separate genetic study does not establish that they
+      were tested in this2011 purified-protein panel.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: CURATOR_INFERENCE
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.101,104-105; printed
+        pages are five lower. Author-reproduced manuscript and supplement identified
+        by DOI:10.1074/jbc.M111.288092, not independently retrieved final journal
+        text.
+  - subject: simy_prep
+    predicate: has_source_discrepancy
+    object: conflicts
+    notes: The source lists69-aa SimY while the native reference has70 aa. FigureS2
+      labels N-His6-SimY and9.4kDa despite general methods describing tag removal.
+      A different preparation stage is possible, but the activation-assay tag state
+      and scar are not independently established.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.94-96,109; printed pages
+        are five lower. Author-reproduced manuscript and supplement identified by
+        DOI:10.1074/jbc.M111.288092, not independently retrieved final journal text.
+    - reference: https://www.uniprot.org/uniprotkb/Q9F5J2
+      evidence_type: DATABASE_ASSERTION
+      notes: Native70-aa reference.
+  - subject: orf_prep
+    predicate: has_source_discrepancy
+    object: conflicts
+    notes: The paper lists70-aa Orf1van but the source-named native protein/CDS gives69
+      aa. No initiator-removal explanation, label swap or synthetic sequence repair
+      is invented.
+    evidence:
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Boll 2011 primary dissertation chapter7, PDF pp.92,96; printed pages
+        are five lower. Author-reproduced manuscript and supplement identified by
+        DOI:10.1074/jbc.M111.288092, not independently retrieved final journal text.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAL90876.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native69-aa reference.
+curation_history:
+- timestamp: '2026-10-07T22:17:09Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add three exact-owner BIOSYNTHESIS components grounding native CloH Q8GHC7
+    while separating pBB26/pBB35 and L383M preparations. Preserve initiation recoding,
+    residual/host-conditioned ATP-PPi exchange activity, CloH/CloY kinetics, association
+    versus inferred stoichiometry, coexpression and mutant tradeoffs, and noncognate
+    MbtH cross-activation. Add claim-level stable-URL evidence and three short primary
+    snippets. Address review #672. No PCP-loading, mature-product synthesis, atomic-complex,
+    antimicrobial target or whole-plasmid claim added; retain all27 prior graphs,
+    all23 component bytes, source-owned fields, history and SEEDED status.'
+  llm_assisted: true
