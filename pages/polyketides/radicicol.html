@@ -90,7 +90,20 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>#</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>Rdc2 flavin-dependent halogenase<br><span class="mono">UniProtKB:B3FWT7</span></td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; naturalproductmech:mibig-7fc8631300</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/B3FWT7/entry</td>
+</tr>
+</table></div>
+<p class="sub">Entry 1: Database-annotated Rdc2 chlorination of monocillin I to radicicol, from reviewed UniProt B3FWT7. The proposed flag retains the local uncertainty from uninspected primary experiments; the source annotation is not recast as a newly observed assay. Monocillin I has no independently verified structural CURIE here. The radicicol product is represented at the existing owner&#39;s unspecified stereochemical resolution, not assigned new stereochemistry. No pathway order, balanced reaction, construct details, or measured signal processing is inferred. MITE0000427v2&#39;s monocillin II-to-pochonin D intermediate example is a different reaction and is not used as this product.</p>
 <h2>Causal graph &mdash; bioactivity <span class="tag">4 nodes, 3 edges</span></h2>
 <p class="sub">Radicicol inhibits Saccharomyces cerevisiae HSP82 and engages human HSP90-alpha and HSP90-beta.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
@@ -136,6 +149,36 @@ by the corpus tests.</p>
   <td>PubChem BioAssay AID 977611 maps this exact Standard InChIKey to a 2 uM Kd row for PDB 2ZBK chain B; RCSB maps 2ZBK_B to Saccharolobus shibatae UniProtKB:O05207 and reports bound RDC radicicol.</td>
   <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.str.2007.12.020<br>DOI:10.2210/pdb2zbk/pdb</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.str.2007.12.020</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Crystal Structure of an Intact Type II DNA Topoisomerase: Insights into DNA Transfer Mechanisms</dd><dt>notes</dt><dd>Graille et al. solved PDB 2ZBK, a Radicicol-bound intact archaeal type II DNA topoisomerase VI.</dd></dl>
 </li><li><dl><dt>reference</dt><dd>DOI:10.2210/pdb2zbk/pdb</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>RCSB PDB identifies 2ZBK as an intact type II DNA topoisomerase structure, maps entity 2 auth chain B to UniProtKB:O05207, and records nonpolymer entity 3 as RDC radicicol.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Partial, database-annotated Rdc2 monocillin I-to-radicicol reaction from the Pochonia chlamydosporia ATCC 16683 native reference. UniProt supplies the reaction assertion; native sequence agreement supplies protein grounding, not independent experimental verification. Precursor identity and product stereochemistry remain unresolved.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Monocillin I (UniProt annotation; structure ungrounded)</td>
+  <td>is_database_asserted_substrate_of</td>
+  <td>Pochonia chlamydosporia Rdc2 flavin-dependent halogenase</td>
+  <td>UniProt&#39;s named monocillin I substrate only. No exact precursor structure or isolated-enzyme assay was independently verified; MITE&#39;s monocillin II example is not substituted.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/B3FWT7/entry<br>https://www.ncbi.nlm.nih.gov/protein/ACD39771.1<br>https://www.ncbi.nlm.nih.gov/nuccore/EU520419.1<br>https://www.ncbi.nlm.nih.gov/nuccore/EU520419.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/B3FWT7/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>to convert monocillin I into radicicol</dd><dt>notes</dt><dd>Reviewed UniProtKB B3FWT7, entry 40/sequence 1 (annotation 2026-09-02), explicitly assigns this conversion to Rdc2 within radicicol biosynthesis. The annotation concerns Metacordyceps chlamydosporia (Pochonia chlamydosporia), NCBITaxon:280754. Its cited experiments were not inspected: PMID:18567690 / DOI:10.1128/AEM.00478-08 and PMID:20827793 / DOI:10.1002/cbic.201000439 were inaccessible in this pass. This is a database annotation, not a newly verified isolated-enzyme assay or a claim of resolved product stereochemistry.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/ACD39771.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>non-heme halogenase [Pochonia chlamydosporia]</dd><dt>notes</dt><dd>GenPept ACD39771.1 identifies Rdc2, 519 aa, strain ATCC 16683, taxon 280754, and a six-part coded_by join on EU520419.1. Its complete sequence equals UniProtKB:B3FWT7. This supports protein identity only, not the substrate/product assignment or historical assay-stock identity.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/EU520419.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>Pochonia chlamydosporia strain ATCC 16683 radicicol gene cluster, partial sequence</dd><dt>notes</dt><dd>EU520419.1 is the 31,332-nt native cluster reference also named by this owner&#39;s BGC0000134. The Rdc2 CDS is complete despite the cluster&#39;s partial-sequence description and the gene/mRNA&#39;s fuzzy boundaries. Its protein_id is ACD39771.1. This is a native-reference association, not new production evidence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/EU520419.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Independent reference-identity audit: plus-strand CDS exons 8912..9036, 9114..9210, 9280..9319, 9406..9813, 9882..10424 and 10502..10848 (1-based inclusive) agree with GenPept coded_by. The 1,560-nt joined CDS, codon_start 1, translates under standard table 1 to the complete 519-aa GenPept/UniProt precursor. No transl_table qualifier was present, so table 1 is the standard default. The UniProt predicted signal/chain boundaries were not used to truncate the sequence or to assert measured processing. Native sequence identity does not independently prove catalysis, strain-specific production, or exact substrate stereochemistry.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Pochonia chlamydosporia Rdc2 flavin-dependent halogenase</td>
+  <td>has_database_asserted_product</td>
+  <td>Radicicol (owner stereochemistry unspecified)</td>
+  <td>Database-annotated Rdc2 chlorination of monocillin I to radicicol, from reviewed UniProt B3FWT7. The proposed flag retains the local uncertainty from uninspected primary experiments; the source annotation is not recast as a newly observed assay. Monocillin I has no independently verified structural CURIE here. The radicicol product is represented at the existing owner&#39;s unspecified stereochemical resolution, not assigned new stereochemistry. No pathway order, balanced reaction, construct details, or measured signal processing is inferred. MITE0000427v2&#39;s monocillin II-to-pochonin D intermediate example is a different reaction and is not used as this product.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/B3FWT7/entry<br>https://www.ncbi.nlm.nih.gov/protein/ACD39771.1<br>https://www.ncbi.nlm.nih.gov/nuccore/EU520419.1<br>https://www.ncbi.nlm.nih.gov/nuccore/EU520419.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/B3FWT7/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>to convert monocillin I into radicicol</dd><dt>notes</dt><dd>Reviewed UniProtKB B3FWT7, entry 40/sequence 1 (annotation 2026-09-02), explicitly assigns this conversion to Rdc2 within radicicol biosynthesis. The annotation concerns Metacordyceps chlamydosporia (Pochonia chlamydosporia), NCBITaxon:280754. Its cited experiments were not inspected: PMID:18567690 / DOI:10.1128/AEM.00478-08 and PMID:20827793 / DOI:10.1002/cbic.201000439 were inaccessible in this pass. This is a database annotation, not a newly verified isolated-enzyme assay or a claim of resolved product stereochemistry.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/ACD39771.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>non-heme halogenase [Pochonia chlamydosporia]</dd><dt>notes</dt><dd>GenPept ACD39771.1 identifies Rdc2, 519 aa, strain ATCC 16683, taxon 280754, and a six-part coded_by join on EU520419.1. Its complete sequence equals UniProtKB:B3FWT7. This supports protein identity only, not the substrate/product assignment or historical assay-stock identity.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/EU520419.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>Pochonia chlamydosporia strain ATCC 16683 radicicol gene cluster, partial sequence</dd><dt>notes</dt><dd>EU520419.1 is the 31,332-nt native cluster reference also named by this owner&#39;s BGC0000134. The Rdc2 CDS is complete despite the cluster&#39;s partial-sequence description and the gene/mRNA&#39;s fuzzy boundaries. Its protein_id is ACD39771.1. This is a native-reference association, not new production evidence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/EU520419.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Independent reference-identity audit: plus-strand CDS exons 8912..9036, 9114..9210, 9280..9319, 9406..9813, 9882..10424 and 10502..10848 (1-based inclusive) agree with GenPept coded_by. The 1,560-nt joined CDS, codon_start 1, translates under standard table 1 to the complete 519-aa GenPept/UniProt precursor. No transl_table qualifier was present, so table 1 is the standard default. The UniProt predicted signal/chain boundaries were not used to truncate the sequence or to assert measured processing. Native sequence identity does not independently prove catalysis, strain-specific production, or exact substrate stereochemistry.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
