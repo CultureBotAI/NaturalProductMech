@@ -169,6 +169,182 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">BcmA native-reference identity and a deliberate canonical UniProtKB sequence example. Placement is curator-inferred from BGC0001468/PKFQ01000001.1. DSM 41675 native and ATCC 21532 example contexts remain distinct; strain equivalence is not asserted. This partial identity graph establishes no catalytic reaction, transport, resistance, pathway order or physical complex. Primary protein activity experiments are not independently adopted.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>bcmA CDS (DSM 41675)</td>
+  <td>encodes the native protein reference</td>
+  <td>BcmA (DSM 41675 native reference)</td>
+  <td>CYQ11_26550; reverse strand 5995171..5995896; 726-nt complete CDS including stop, 241 residues. Native reference identity, not a protein activity experiment.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1<br>https://www.ncbi.nlm.nih.gov/protein/PPT15948.1<br>https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1<br>https://rest.uniprot.org/uniprotkb/A0ACM8RGD4.json</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Deposited DSM 41675/taxon53446 region annotates bcmA/CYQ11_26550/PPT15948.1; codon_start1 and translation table11. Genomic annotation, not an enzyme assay.</dd><dt>snippet</dt><dd>/gene=&#34;bcmA&#34;</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/PPT15948.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Separate GenPept PPT15948.1 names bcmA, CYQ11_26550, DSM 41675/taxon53446 and coded_by complement(PKFQ01000001.1:5995171..5995896).</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Complete-CDS-aware reverse-strand translation equals the deposited translation and separate GenPept over all 241 residues. The ATG initiation codon is translated as initiating methionine. Placement in this owner is inferred from its existing BGC0001468/PKFQ01000001.1 locus, not independently inspected exact-owner activity evidence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniprotkb/A0ACM8RGD4.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Unreviewed entry2/sequence1 explicitly links bcmA/CYQ11_26550 and PKFQ01000001/PPT15948.1; all 241 residues match. Its references include DSM 41675 and a separate MG018995/AXQ04972.1 ATCC 21532 submission. Native-linked grounding does not establish equivalence of those strains. Protein existence is inferred from homology, not independent experimental validation.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>BcmA (DSM 41675 native reference)</td>
+  <td>has a sequence-identical UniProtKB example</td>
+  <td>BcmA (ATCC 21532 canonical sequence example)</td>
+  <td>Canonical sequence comparison, not equivalence of strains, deposited constructs or assays.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://rest.uniprot.org/uniprotkb/A0A2G1XAZ9.json<br>https://rest.uniprot.org/uniparc/UPI000C07596F.json<br>https://rest.uniprot.org/uniprotkb/A0A2G1XAZ9.json<br>https://data.rcsb.org/rest/v1/core/polymer_entity/9J61/1</summary><ul><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniprotkb/A0A2G1XAZ9.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Current unreviewed entry24/sequence1; BLA24_33500, NHZO01000168/PHQ48396.1, taxon53446 and ATCC 21532 reference context; protein-level evidence, with the construct qualifications below. Selected as a canonical sequence example, not a native DSM 41675 construct.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniparc/UPI000C07596F.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>UniParc UPI000C07596F actively links PPT15948 and A0A2G1XAZ9; its complete 241-residue sequence matches both. This sequence archive is not a UniProtKB accession or independent experimental evidence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniprotkb/A0A2G1XAZ9.json</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>All 241 residues match the complete native CDS translation and separate GenPept. This is sequence identity between explicitly distinct source contexts, not evidence of strain equivalence, catalytic activity or identical assay constructs.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://data.rcsb.org/rest/v1/core/polymer_entity/9J61/1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Independent PDB9J61 entity1 identity metadata maps chains A-H by SIFTS to A0A2G1XAZ9 residues2..241 at construct positions10..249. The 249-residue construct has an N-terminal MGHHHHHHG segment; its mapped core matches, not its full sequence. Source taxon53446 and E. coli expression host taxon562 are distinct; no strain is given. A0A2G1XAZ9 is deliberately retained as the structural-reference example beside the native-linked A0ACM8RGD4, not a second native paralog or physical complex. DOI:10.1021/acs.biochem.4c00505 full text was inaccessible; no primary reaction is adopted.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">BcmB native-reference identity and a deliberate canonical UniProtKB sequence example. Placement is curator-inferred from BGC0001468/PKFQ01000001.1. DSM 41675 native and ATCC 21532 example contexts remain distinct; strain equivalence is not asserted. This partial identity graph establishes no catalytic reaction, transport, resistance, pathway order or physical complex. Primary protein activity experiments are not independently adopted.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>bcmB CDS (DSM 41675)</td>
+  <td>encodes the native protein reference</td>
+  <td>BcmB (DSM 41675 native reference)</td>
+  <td>CYQ11_26545; reverse strand 5994191..5995168; 978-nt complete CDS including stop, 325 residues. Native reference identity, not a protein activity experiment.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1<br>https://www.ncbi.nlm.nih.gov/protein/PPT16817.1<br>https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Deposited DSM 41675/taxon53446 region annotates bcmB/CYQ11_26545/PPT16817.1; codon_start1 and translation table11. Genomic annotation, not an enzyme assay.</dd><dt>snippet</dt><dd>/gene=&#34;bcmB&#34;</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/PPT16817.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Separate GenPept PPT16817.1 names bcmB, CYQ11_26545, DSM 41675/taxon53446 and coded_by complement(PKFQ01000001.1:5994191..5995168).</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Complete-CDS-aware reverse-strand translation equals the deposited translation and separate GenPept over all 325 residues. The ATG initiation codon is translated as initiating methionine. Placement in this owner is inferred from its existing BGC0001468/PKFQ01000001.1 locus, not independently inspected exact-owner activity evidence.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>BcmB (DSM 41675 native reference)</td>
+  <td>has a sequence-identical UniProtKB example</td>
+  <td>BcmB (ATCC 21532 canonical sequence example)</td>
+  <td>Canonical sequence comparison, not equivalence of strains, deposited constructs or assays.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://rest.uniprot.org/uniprotkb/A0A2G1XB00.json<br>https://rest.uniprot.org/uniparc/UPI000C08AEFE.json<br>https://rest.uniprot.org/uniprotkb/A0A2G1XB00.json</summary><ul><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniprotkb/A0A2G1XB00.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Current unreviewed entry28/sequence1; BLA24_33495, NHZO01000168/PHQ48395.1, taxon53446 and ATCC 21532 reference context; protein existence inferred from homology. Selected as a canonical sequence example, not a native DSM 41675 construct.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniparc/UPI000C08AEFE.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>UniParc UPI000C08AEFE actively links PPT16817 and A0A2G1XB00; its complete 325-residue sequence matches both. This sequence archive is not a UniProtKB accession or independent experimental evidence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniprotkb/A0A2G1XB00.json</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>All 325 residues match the complete native CDS translation and separate GenPept. This is sequence identity between explicitly distinct source contexts, not evidence of strain equivalence, catalytic activity or identical assay constructs.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">BcmC native-reference identity and a deliberate canonical UniProtKB sequence example. Placement is curator-inferred from BGC0001468/PKFQ01000001.1. DSM 41675 native and ATCC 21532 example contexts remain distinct; strain equivalence is not asserted. This partial identity graph establishes no catalytic reaction, transport, resistance, pathway order or physical complex. Primary protein activity experiments are not independently adopted.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>bcmC CDS (DSM 41675)</td>
+  <td>encodes the native protein reference</td>
+  <td>BcmC (DSM 41675 native reference)</td>
+  <td>CYQ11_26540; reverse strand 5993284..5994201; 918-nt complete CDS including stop, 305 residues. Native reference identity, not a protein activity experiment.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1<br>https://www.ncbi.nlm.nih.gov/protein/PPT15947.1<br>https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Deposited DSM 41675/taxon53446 region annotates bcmC/CYQ11_26540/PPT15947.1; codon_start1 and translation table11. Genomic annotation, not an enzyme assay.</dd><dt>snippet</dt><dd>/gene=&#34;bcmC&#34;</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/PPT15947.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Separate GenPept PPT15947.1 names bcmC, CYQ11_26540, DSM 41675/taxon53446 and coded_by complement(PKFQ01000001.1:5993284..5994201).</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Complete-CDS-aware reverse-strand translation equals the deposited translation and separate GenPept over all 305 residues. The GTG initiation codon is translated as initiating methionine. Placement in this owner is inferred from its existing BGC0001468/PKFQ01000001.1 locus, not independently inspected exact-owner activity evidence.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>BcmC (DSM 41675 native reference)</td>
+  <td>has a sequence-identical UniProtKB example</td>
+  <td>BcmC (ATCC 21532 canonical sequence example)</td>
+  <td>Canonical sequence comparison, not equivalence of strains, deposited constructs or assays.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://rest.uniprot.org/uniprotkb/A0A2G1XAR5.json<br>https://rest.uniprot.org/uniparc/UPI000C075C93.json<br>https://rest.uniprot.org/uniprotkb/A0A2G1XAR5.json<br>https://data.rcsb.org/rest/v1/core/polymer_entity/8XHP/1<br>https://rest.uniprot.org/uniprotkb/A0ACM8RGD3.json</summary><ul><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniprotkb/A0A2G1XAR5.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Current unreviewed entry28/sequence1; BLA24_33490, NHZO01000168/PHQ48316.1, taxon53446 and ATCC 21532 reference context; protein-level evidence, with the construct qualifications below. Selected as a canonical sequence example, not a native DSM 41675 construct.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniparc/UPI000C075C93.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>UniParc UPI000C075C93 actively links PPT15947 and A0A2G1XAR5; its complete 305-residue sequence matches both. This sequence archive is not a UniProtKB accession or independent experimental evidence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniprotkb/A0A2G1XAR5.json</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>All 305 residues match the complete native CDS translation and separate GenPept. This is sequence identity between explicitly distinct source contexts, not evidence of strain equivalence, catalytic activity or identical assay constructs.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://data.rcsb.org/rest/v1/core/polymer_entity/8XHP/1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>PDB8XHP entity1/chains A-C maps by SIFTS to A0A2G1XAR5 residues1..305. Direct comparison finds M1V plus C-terminal LEHHHHHHHH in the deposited 315-residue sequence, despite a zero-mutation summary. Native CDS-aware GTG initiation and current KB both give M1. No cause for this discrepancy or exact native construct is asserted. Source taxon53446, expression host E. coli/taxon562; no strain given. DOI:10.1038/s41467-025-58997-8 was only partly accessible before an access error; unread methods/results and reaction evidence are not adopted.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniprotkb/A0ACM8RGD3.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Alternative unreviewed entry2/sequence1, submitted BcmC, MG018995/AXQ04974.1, ATCC 21532, also matches all 305 canonical residues. A0A2G1XAR5 is deliberately selected for its structural reference, with the construct caveat retained; no duplicate native paralog or superiority of catalytic evidence is inferred.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">BcmE native-reference identity and a deliberate canonical UniProtKB sequence example. Placement is curator-inferred from BGC0001468/PKFQ01000001.1. DSM 41675 native and ATCC 21532 example contexts remain distinct; strain equivalence is not asserted. This partial identity graph establishes no catalytic reaction, transport, resistance, pathway order or physical complex. Primary protein activity experiments are not independently adopted.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>bcmE CDS (DSM 41675)</td>
+  <td>encodes the native protein reference</td>
+  <td>BcmE (DSM 41675 native reference)</td>
+  <td>CYQ11_26530; reverse strand 5990877..5991821; 945-nt complete CDS including stop, 314 residues. Native reference identity, not a protein activity experiment.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1<br>https://www.ncbi.nlm.nih.gov/protein/PPT16816.1<br>https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Deposited DSM 41675/taxon53446 region annotates bcmE/CYQ11_26530/PPT16816.1; codon_start1 and translation table11. Genomic annotation, not an enzyme assay.</dd><dt>snippet</dt><dd>/gene=&#34;bcmE&#34;</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/PPT16816.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Separate GenPept PPT16816.1 names bcmE, CYQ11_26530, DSM 41675/taxon53446 and coded_by complement(PKFQ01000001.1:5990877..5991821).</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Complete-CDS-aware reverse-strand translation equals the deposited translation and separate GenPept over all 314 residues. The ATG initiation codon is translated as initiating methionine. Placement in this owner is inferred from its existing BGC0001468/PKFQ01000001.1 locus, not independently inspected exact-owner activity evidence.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>BcmE (DSM 41675 native reference)</td>
+  <td>has a sequence-identical UniProtKB example</td>
+  <td>BcmE (ATCC 21532 canonical sequence example)</td>
+  <td>Canonical sequence comparison, not equivalence of strains, deposited constructs or assays.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://rest.uniprot.org/uniprotkb/A0A2G1XAX5.json<br>https://rest.uniprot.org/uniparc/UPI000C0F1758.json<br>https://rest.uniprot.org/uniprotkb/A0A2G1XAX5.json<br>https://data.rcsb.org/rest/v1/core/polymer_entity/8XHY/1<br>https://www.rcsb.org/structure/8XHY<br>https://rest.uniprot.org/uniprotkb/A0ACM8RGD2.json</summary><ul><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniprotkb/A0A2G1XAX5.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Current unreviewed entry28/sequence1; BLA24_33480, NHZO01000168/PHQ48394.1, taxon53446 and ATCC 21532 reference context; protein-level evidence, with the construct qualifications below. Selected as a canonical sequence example, not a native DSM 41675 construct.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniparc/UPI000C0F1758.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>UniParc UPI000C0F1758 actively links PPT16816 and A0A2G1XAX5; its complete 314-residue sequence matches both. This sequence archive is not a UniProtKB accession or independent experimental evidence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniprotkb/A0A2G1XAX5.json</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>All 314 residues match the complete native CDS translation and separate GenPept. This is sequence identity between explicitly distinct source contexts, not evidence of strain equivalence, catalytic activity or identical assay constructs.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://data.rcsb.org/rest/v1/core/polymer_entity/8XHY/1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>PDB8XHY entity1/chain A maps by SIFTS to A0A2G1XAX5 residues1..314. Direct comparison finds T307A plus C-terminal EHHHHHHHH in its 323-residue sequence despite a zero-mutation summary. This is not the wild-type native construct. Source taxon53446 and E. coli expression host taxon562 remain distinct; no strain is given. DOI:10.1038/s41467-025-58997-8 was only partly accessible before an access error; no primary reaction or mutant activity is adopted.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.rcsb.org/structure/8XHY</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>The deposition title calls the construct T307A, consistent with direct sequence comparison but inconsistent with its zero-mutation summary. Canonical KB sequence identity is adopted separately; wild-type structural identity is not.</dd><dt>snippet</dt><dd>The complex structure of mutant T307A of SsBcmE and its natural substrate cIL</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniprotkb/A0ACM8RGD2.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Alternative unreviewed entry2/sequence1, submitted BcmE, MG018995/AXQ04976.1, ATCC 21532, also matches all 314 canonical residues. A0A2G1XAX5 is deliberately selected for its structural reference with the T307A qualification, not as a claim that its canonical sequence is the assayed mutant.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">BcmG native-reference identity and a deliberate canonical UniProtKB sequence example. Placement is curator-inferred from BGC0001468/PKFQ01000001.1. DSM 41675 native and ATCC 21532 example contexts remain distinct; strain equivalence is not asserted. This partial identity graph establishes no catalytic reaction, transport, resistance, pathway order or physical complex. Primary protein activity experiments are not independently adopted.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>bcmG CDS (DSM 41675)</td>
+  <td>encodes the native protein reference</td>
+  <td>BcmG (DSM 41675 native reference)</td>
+  <td>CYQ11_26520; reverse strand 5989046..5989948; 903-nt complete CDS including stop, 300 residues. Native reference identity, not a protein activity experiment.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1<br>https://www.ncbi.nlm.nih.gov/protein/PPT15944.1<br>https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Deposited DSM 41675/taxon53446 region annotates bcmG/CYQ11_26520/PPT15944.1; codon_start1 and translation table11. Genomic annotation, not an enzyme assay.</dd><dt>snippet</dt><dd>/gene=&#34;bcmG&#34;</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/PPT15944.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Separate GenPept PPT15944.1 names bcmG, CYQ11_26520, DSM 41675/taxon53446 and coded_by complement(PKFQ01000001.1:5989046..5989948).</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Complete-CDS-aware reverse-strand translation equals the deposited translation and separate GenPept over all 300 residues. The ATG initiation codon is translated as initiating methionine. Placement in this owner is inferred from its existing BGC0001468/PKFQ01000001.1 locus, not independently inspected exact-owner activity evidence.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>BcmG (DSM 41675 native reference)</td>
+  <td>has a sequence-identical UniProtKB example</td>
+  <td>BcmG (ATCC 21532 canonical sequence example)</td>
+  <td>Canonical sequence comparison, not equivalence of strains, deposited constructs or assays.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://rest.uniprot.org/uniprotkb/A0A2G1XAR4.json<br>https://rest.uniprot.org/uniparc/UPI000C073D86.json<br>https://rest.uniprot.org/uniprotkb/A0A2G1XAR4.json</summary><ul><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniprotkb/A0A2G1XAR4.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Current unreviewed entry30/sequence1; BLA24_33470, NHZO01000168/PHQ48313.1, taxon53446 and ATCC 21532 reference context; protein existence inferred from homology. Selected as a canonical sequence example, not a native DSM 41675 construct.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniparc/UPI000C073D86.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>UniParc UPI000C073D86 actively links PPT15944 and A0A2G1XAR4; its complete 300-residue sequence matches both. This sequence archive is not a UniProtKB accession or independent experimental evidence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniprotkb/A0A2G1XAR4.json</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>All 300 residues match the complete native CDS translation and separate GenPept. This is sequence identity between explicitly distinct source contexts, not evidence of strain equivalence, catalytic activity or identical assay constructs.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">BcmT native-reference identity and a deliberate canonical UniProtKB sequence example. Placement is curator-inferred from BGC0001468/PKFQ01000001.1. DSM 41675 native and ATCC 21532 example contexts remain distinct; strain equivalence is not asserted. This partial identity graph establishes no catalytic reaction, transport, resistance, pathway order or physical complex. Primary protein activity experiments are not independently adopted.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>bcmT CDS (DSM 41675)</td>
+  <td>encodes the native protein reference</td>
+  <td>BcmT (DSM 41675 native reference)</td>
+  <td>CYQ11_26555; forward strand 5996589..5998010; 1422-nt complete CDS including stop, 473 residues. Native reference identity, not a protein activity experiment.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1<br>https://www.ncbi.nlm.nih.gov/protein/PPT15949.1<br>https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Deposited DSM 41675/taxon53446 region annotates bcmT/CYQ11_26555/PPT15949.1; codon_start1 and translation table11. Genomic annotation, not an enzyme assay.</dd><dt>snippet</dt><dd>/gene=&#34;bcmT&#34;</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/PPT15949.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Separate GenPept PPT15949.1 names bcmT, CYQ11_26555, DSM 41675/taxon53446 and coded_by PKFQ01000001.1:5996589..5998010.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/PKFQ01000001.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Complete-CDS-aware forward-strand translation equals the deposited translation and separate GenPept over all 473 residues. The GTG initiation codon is translated as initiating methionine. Placement in this owner is inferred from its existing BGC0001468/PKFQ01000001.1 locus, not independently inspected exact-owner activity evidence.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>BcmT (DSM 41675 native reference)</td>
+  <td>has a sequence-identical UniProtKB example</td>
+  <td>BcmT (ATCC 21532 canonical sequence example)</td>
+  <td>Canonical sequence comparison, not equivalence of strains, deposited constructs or assays.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://rest.uniprot.org/uniprotkb/A0A2G1XAP9.json<br>https://rest.uniprot.org/uniparc/UPI000C087D49.json<br>https://rest.uniprot.org/uniprotkb/A0A2G1XAP9.json<br>https://rest.uniprot.org/uniparc/UPI000C087D49.json</summary><ul><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniprotkb/A0A2G1XAP9.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Current unreviewed entry29/sequence1; BLA24_33505, NHZO01000168/PHQ48317.1, taxon53446 and ATCC 21532 reference context; predicted protein existence. Selected as a canonical sequence example, not a native DSM 41675 construct.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniparc/UPI000C087D49.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>UniParc UPI000C087D49 actively links PPT15949 and A0A2G1XAP9; its complete 473-residue sequence matches both. This sequence archive is not a UniProtKB accession or independent experimental evidence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniprotkb/A0A2G1XAP9.json</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>All 473 residues match the complete native CDS translation and separate GenPept. This is sequence identity between explicitly distinct source contexts, not evidence of strain equivalence, catalytic activity or identical assay constructs.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://rest.uniprot.org/uniparc/UPI000C087D49.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>The archive carries historical BcmR naming for A0A346M2I3/AXQ04971; current A0A2G1XAP9 lists A0A346M2I3 as secondary. Native gene bcmT is retained. Neither this name nor automated transport/resistance annotations establishes a transport substrate, resistance phenotype or bcmH equivalence.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
