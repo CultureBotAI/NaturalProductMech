@@ -413,7 +413,7 @@ causal_graphs:
     label: 6-Chlorotryptophan, stereochemistry unspecified
     node_type: COMPOUND
     grounding_status: GROUNDED
-    identifier: pubchem:65259
+    identifier: pubchem.compound:65259
   - node_id: aminotransferase_conversion
     label: Database-proposed ThdN aminotransferase conversion
     node_type: PROCESS
@@ -422,7 +422,7 @@ causal_graphs:
     label: 6-Chloroindole-3-pyruvic acid
     node_type: COMPOUND
     grounding_status: GROUNDED
-    identifier: pubchem:9794717
+    identifier: pubchem.compound:9794717
   - node_id: thienodolin
     label: thienodolin
     node_type: COMPOUND
@@ -600,4 +600,15 @@ curation_history:
     state, complete downstream pathway or source-grade upgrade inferred. Preserved
     both existing graphs, all source fields and occurrences, SOURCE_ASSERTION/CLUSTER_UNSTATED
     grades, SEEDED status and append-only history. Not full-record sign-off.'
+  llm_assisted: true
+- timestamp: '2026-10-08T18:15:48Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Corrected the two new ThdN graph compound CURIEs to the repository-declared
+    pubchem.compound:65259 and pubchem.compound:9794717 after the label-enforcement
+    gate found unsupported pubchem prefixes (issue711). Used the existing schema/config
+    prefix without weakening validation. Preserved every node label, biological claim,
+    proposed predicate, structure, evidence item/snippet, previous graph, source field,
+    producer/BGC grade, SEEDED status and previous history event. Chemical identities
+    remain independently verified; not full-record sign-off.
   llm_assisted: true
