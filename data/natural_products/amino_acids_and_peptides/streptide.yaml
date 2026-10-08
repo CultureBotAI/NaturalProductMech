@@ -66,6 +66,128 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: streptide-strb-native-reference
+  scope: BIOSYNTHESIS
+  description: Native-reference identity only for Streptococcus thermophilus LMD-9/taxon
+    322159/CP000419.1. Placement in this owner is curator-inferred from the shared
+    BGC0001209 context, not proof of conversion to its exact mature structure. StrB
+    is the MITE-mapped name for the deposited STER_1356 protein. No assay construct,
+    enzyme activity, precursor processing, reaction order or physical complex is asserted.
+    Source reaction models remain withheld under https://github.com/CultureBotAI/NaturalProductMech/issues/702
+    because listed product and literal reaction SMARTS disagree in stereochemistry.
+    MITE cites DOI:10.1038/nchem.2237; that paper was inaccessible when attempted
+    on 2026-10-08 and retrieval stopped.
+  nodes:
+  - node_id: ster_1356_cds
+    label: STER_1356 CDS (CP000419.1)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: strb
+    label: StrB (LMD-9 native-reference example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:ABJ66529.1
+  edges:
+  - subject: ster_1356_cds
+    predicate: encodes the native protein reference
+    object: strb
+    notes: 1260174..1261493 reverse strand; 1320-nt complete CDS including stop, 439
+      residues. Reference identity does not validate a reaction model.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP000419.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: /locus_tag="STER_1356"
+      notes: Deposited CDS names ABJ66529.1, codon_start 1 and translation table 11.
+        The inspected 3,513-bp interval is CP000419.1:1259086..1262598, not the whole
+        genome. Source names LMD-9/taxon 322159. The annotation is not an assay and
+        does not itself name strB.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABJ66529.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: GenPept ABJ66529.1 identifies the 439-residue STER_1356 protein from
+        Streptococcus thermophilus LMD-9. Its coded_by gives complement(CP000419.1:1260174..1261493).
+        The versioned native protein, not a family, other-strain homolog or verified
+        historical assay construct, grounds this node.
+    - reference: https://rest.uniprot.org/uniparc/UPI0000E5643D.json
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: Complete-CDS-aware translation, deposited translation, GenPept and UniParc
+        agree over all 439 residues. Direct active EMBL accession/version, locus tag
+        and taxon agree. All 19 UniProtKB cross-references in the inspected archive
+        are inactive, including native Q03JU3; no current UniProtKB example is established.
+        A shared sequence archive does not transfer other-strain experiments or supply
+        independent reaction evidence.
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000439.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: Active MITE0000439 version 1 maps its StrB name to ABJ66529.1, UPI0000E5643D
+        and BGC0001209. Its uniprot field contains a UniParc ID. This citation supports
+        source mapping only. Reaction models remain withheld under https://github.com/CultureBotAI/NaturalProductMech/issues/702;
+        no primary reaction experiment or precursor processing is adopted.
+- graph_id: streptide-stra-native-precursor-reference
+  scope: BIOSYNTHESIS
+  description: Native unmodified precursor reference only for STER_1357 in Streptococcus
+    thermophilus LMD-9/taxon 322159/CP000419.1. The StrA alias is curator-inferred
+    from the exact neutral native precursor model matching the MITE substrate that
+    its narrative calls the strA product. The deposit itself says Predicted protein
+    and not curated, without a strA gene qualifier. Owner placement is inferred from
+    BGC0001209, not proof of conversion to the exact mature structure. The 30-residue
+    reference is not the mature nine-residue compound or a crosslinked peptide state.
+    No assay construct, processing assignment, physical complex or current UniProtKB
+    example is adopted. Reaction models remain withheld under https://github.com/CultureBotAI/NaturalProductMech/issues/702.
+    MITE cites DOI:10.1038/nchem.2237; that paper was inaccessible when attempted
+    on 2026-10-08 and retrieval stopped.
+  nodes:
+  - node_id: ster_1357_cds
+    label: STER_1357 CDS (CP000419.1)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: native_precursor
+    label: STER_1357 (StrA-mapped native precursor)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:ABJ66530.1
+  edges:
+  - subject: ster_1357_cds
+    predicate: encodes the native precursor reference
+    object: native_precursor
+    notes: 1261563..1261655 reverse strand; 93-nt complete CDS including stop, 30
+      residues. Complete-CDS-aware translation, deposited translation and independent
+      GenPept sequence agree. The StrA alias mapping does not validate a reaction
+      or assay construct.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP000419.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: /locus_tag="STER_1357"
+      notes: Deposited CDS names ABJ66530.1, codon_start 1 and translation table 11.
+        The inspected interval is CP000419.1:1259086..1262598, 3,513 bp, not the entire
+        genome. The annotation is not an experiment.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABJ66530.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: GenPept ABJ66530.1 is a 30-residue Predicted protein from LMD-9/taxon
+        322159, locus STER_1357. coded_by is complement(CP000419.1:1261563..1261655),
+        with note not curated. The versioned native protein, not an arbitrary homolog,
+        grounds the node. No UniProtKB accession was examined or selected for this
+        precursor.
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000439.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: Active MITE0000439 version 1 names the strA product as a 30mer precursor
+        substrate. Its crosslinked product is an intermediate; further processing
+        is described as likely. Neither the model nor those statements identify the
+        unmodified precursor with mature streptide.
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000439.json
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: RDKit 2026.03.5 gives the neutral unmodified model built from the deposited
+        30-residue sequence and the literal MITE substrate the same full key XOBXWZPMBNJSOG-KFBHTRSUSA-N.
+        This supports the StrA alias mapping, not a historical assay construct or
+        modified peptide identity. The mature owner key UEOXFKPVURAKAA-RMYJOMHKSA-N
+        differs. Source reaction stereochemistry remains unresolved under issue 702.
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
   curator: seed_from_sources
@@ -75,3 +197,21 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-08T13:03:53Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a native-reference-only StrB/NCBIProtein:ABJ66529.1 identity graph
+    for STER_1356 in Streptococcus thermophilus LMD-9/CP000419.1/BGC0001209. No current
+    UniProtKB example is established; native Q03JU3 is inactive in the inspected UniParc
+    entry. Reaction models remain withheld under issue 702 because literal MITE product
+    and reaction SMARTS disagree in stereochemistry. Native identity is not assay-construct,
+    reaction or mature-product proof. No precursor-processing assignment, ordered
+    pathway or physical complex is added. Source fields, grades, SEEDED status and
+    history are preserved. Added a native-reference-only STER_1357/NCBIProtein:ABJ66530.1
+    precursor identity graph alongside the StrB native reference. StrA alias mapping
+    is curator-inferred from the exact neutral native precursor model matching the
+    substrate described by MITE0000439; the deposited protein is predicted and not
+    curated. No mature-product, modified-peptide, assay-construct, processing or physical-complex
+    claim is added. No UniProtKB accession was examined or selected for this precursor.
+    Reaction hold 702 remains open.
+  llm_assisted: true
