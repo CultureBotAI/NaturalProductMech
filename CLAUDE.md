@@ -110,7 +110,9 @@ just seed-apply --prune         # only when stale records should be removed
 
 **Never hand-edit a record.** `data/natural_products/` is generated from the
 committed inventories plus curation decisions. Put source harmonization changes
-in the extractor or seeder, and curator decisions in `curation/decisions.tsv`.
+in the extractor or seeder, and source corrections in the implemented curation
+tables described in `docs/CURATION.md`. The reserved `curation/decisions.tsv`
+format is not yet consumed by the seeder.
 `just verify-reproduction` rejects drift.
 
 **Never write a record except through `write_validated_natural_product`.** It

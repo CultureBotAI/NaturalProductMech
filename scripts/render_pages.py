@@ -263,6 +263,17 @@ def build_record(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def join_text_map(artifact: dict[str, Any], hrefs: dict[str, str]) -> dict[str, Any]:
+    """Only show extant owners; never retag an old identity's text embedding."""
+    points = [point for point in artifact["points"] if point[3] in hrefs]
+    return {
+        **artifact,
+        "points": points,
+        "n": len(points),
+        "hrefs": {point[3]: hrefs[point[3]] for point in points},
+    }
+
+
 def load_chemical_map(record_ids: set[str]) -> dict[str, Any] | None:
     """The committed structure-map artifact, or None when it has not been built.
 
@@ -359,10 +370,7 @@ def build(out_dir: Path) -> tuple[int, int]:
             record["identifier"]: f"{pathway['slug']}/{record['slug']}.html"
             for pathway in pathways for record in pathway["records"]
         }
-        corpus_map["hrefs"] = {
-            point[3]: href_by_identifier[point[3]]
-            for point in corpus_map["points"] if point[3] in href_by_identifier
-        }
+        corpus_map = join_text_map(corpus_map, href_by_identifier)
         (out_dir / "map.html").write_text(
             env.get_template("map.html").render(
                 root="", map=corpus_map,

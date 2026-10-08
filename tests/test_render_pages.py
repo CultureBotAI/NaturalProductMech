@@ -17,6 +17,17 @@ sys.modules["render_pages"] = render_pages
 _spec.loader.exec_module(render_pages)
 
 
+def test_text_map_never_retags_an_obsolete_identity():
+    artifact = {"n": 2, "points": [[1, 2, 0, "old", "a"], [3, 4, 0, "live", "b"]],
+                "corpus_fingerprint": "original"}
+    joined = render_pages.join_text_map(artifact, {"new": "a.html", "live": "b.html"})
+    assert joined["points"] == [[3, 4, 0, "live", "b"]]
+    assert joined["hrefs"] == {"live": "b.html"} and joined["n"] == 1
+    assert joined["corpus_fingerprint"] == "original"
+    assert artifact["n"] == len(artifact["points"]) == 2
+    assert render_pages.join_text_map(artifact, {})["n"] == 0
+
+
 def test_causal_graph_rendering_preserves_every_edge_reference():
     record = render_pages.build_record(
         REPO_ROOT / "data" / "natural_products" / "carbohydrates" / "tubercidin.yaml",

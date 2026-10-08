@@ -45,6 +45,9 @@ MANIFEST_PATH = RAW_DIR / "MANIFEST.yaml"
 MIBIG_INVENTORY = RAW_DIR / "mibig_compounds.tsv"
 INVENTORY_NAME = "npclassifier.tsv"
 
+sys.path.insert(0, str(REPO_ROOT / "src"))
+from naturalproductmech.curate.structure_corrections import apply_structure_corrections  # noqa: E402
+
 API = "https://npclassifier.gnps2.org/classify"
 COLUMNS = [
     "standard_inchi_key",
@@ -66,12 +69,21 @@ MODEL_LABEL = "npclassifier.gnps2.org"
 def structures_needing_classification() -> dict[str, str]:
     """Standard InChIKey -> one SMILES, from every committed structure source."""
     wanted: dict[str, str] = {}
+    rows = []
     if MIBIG_INVENTORY.exists():
         with MIBIG_INVENTORY.open(newline="", encoding="utf-8") as fh:
-            for row in csv.DictReader(fh, delimiter="\t"):
-                key, smiles = row["standard_inchi_key"], row["smiles"]
-                if key and smiles:
-                    wanted.setdefault(key, smiles)
+            rows = list(csv.DictReader(fh, delimiter="\t"))
+    corrections_path = REPO_ROOT / "curation" / "mibig_structure_corrections.tsv"
+    if corrections_path.exists():
+        with corrections_path.open(newline="", encoding="utf-8") as fh:
+            corrections = list(csv.DictReader(fh, delimiter="\t"))
+        with (RAW_DIR / "chebi_structures.tsv").open(newline="", encoding="utf-8") as fh:
+            chebi = list(csv.DictReader(fh, delimiter="\t"))
+        rows = apply_structure_corrections(rows, corrections, chebi)
+    for row in rows:
+        key, smiles = row["standard_inchi_key"], row["smiles"]
+        if key and smiles:
+            wanted.setdefault(key, smiles)
     return wanted
 
 

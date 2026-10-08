@@ -1,17 +1,22 @@
-identifier: naturalproductmech:mibig-a7a97dab7f
+identifier: CHEBI:80024
 label: aureothin
 chemical_structure:
-  smiles: CC1=C(OC(=C(C1=O)C)OC)[C@H]2CC/C(=C/C(=C/C3=CC=C(C=C3)[N+](=O)[O-])/C)/O2
-  standard_inchi: InChI=1S/C22H23NO6/c1-13(11-16-5-7-17(8-6-16)23(25)26)12-18-9-10-19(28-18)21-14(2)20(24)15(3)22(27-4)29-21/h5-8,11-12,19H,9-10H2,1-4H3/b13-11+,18-12-/t19-/m1/s1
-  standard_inchi_key: OGUMLESFFBGVOO-VJDLAWOBSA-N
+  smiles: '[H][C@]1(c2oc(OC)c(C)c(=O)c2C)C/C(=C/C(C)=C/c2ccc([N+](=O)[O-])cc2)CO1'
+  standard_inchi: InChI=1S/C22H23NO6/c1-13(9-16-5-7-18(8-6-16)23(25)26)10-17-11-19(28-12-17)21-14(2)20(24)15(3)22(27-4)29-21/h5-10,19H,11-12H2,1-4H3/b13-9+,17-10-/t19-/m1/s1
+  standard_inchi_key: GQKXCBCSVYJUMI-WACKOAQBSA-N
   stereo_complete: true
-  structure_source: MIBIG
-  structure_source_id: mibig:BGC0000024
+  structure_source: CHEBI
+  structure_source_id: CHEBI:80024
 np_pathway: POLYKETIDES
 biosynthesis_origin: NATURAL_PRODUCT
+definition: A C-nitro compound that is (3Z)-3-[(2E)-2-methyl-3-(4-nitrophenyl)prop-2-en-1-ylidene]tetrahydrofuran
+  which is substituted by a 6-methoxy-3,5-dimethyl-4-oxo-4H-pyran-2-yl group at position
+  5. It is isolated from the soil bacterium, Streptomyces thioluteus and exhibits
+  antitumor, antifungal, and insecticidal activities.
+definition_source: CHEBI:80024
 np_classification:
   tool: NPClassifier
-  tool_version: npclassifier.gnps2.org@2026-09-07
+  tool_version: npclassifier.gnps2.org@2026-10-07
   pathway_results:
   - Polyketides
   superclass_results:
@@ -22,44 +27,29 @@ np_classification:
 occurrence_taxon_groups:
 - ACTINOBACTERIAL
 occurrences:
-- taxon_id: NCBITaxon:67339
-  taxon_label: Streptomyces orinoci
-  taxon_source: NCBITaxon
-  source: LOTUS
+- taxon_label: Streptomyces thioluteus
+  source: CHEBI
   evidence:
-  - reference: DOI:10.1039/B923177C
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:80024
     evidence_type: DATABASE_ASSERTION
-    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
-      was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q26291619
-- taxon_id: NCBITaxon:66431
-  taxon_label: Streptomyces thioluteus
+    notes: 'ChEBI compound origin for CHEBI:80024; source bibliography: Hirata, Y.,
+      Nakata, H., Yamada, K., Okuhara, K. and Naito, T. (1961) The structure of aureothin,
+      a nitro compound obtained from Streptomyces thioluteus. Tetrahedron, 14(3),
+      252-274.'
+  taxon_id: NCBITaxon:66431
   taxon_source: NCBITaxon
-  source: LOTUS
-  evidence:
-  - reference: DOI:10.1016/S0040-4020(01)92175-1
-    evidence_type: DATABASE_ASSERTION
-    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
-      was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q26293052 This taxon is
-    also recorded as a producer, from a different source and citation. The two corroborate
-    each other rather than duplicating.
-- taxon_id: NCBITaxon:66431
-  taxon_label: Streptomyces thioluteus
-  taxon_source: NCBITaxon
-  source: LOTUS
-  evidence:
-  - reference: DOI:10.1039/B923177C
-    evidence_type: DATABASE_ASSERTION
-    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
-      was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q26293052 This taxon is
-    also recorded as a producer, from a different source and citation. The two corroborate
-    each other rather than duplicating.
+  notes: cell suspension culture This taxon is also recorded as a producer, from a
+    different source and citation. The two corroborate each other rather than duplicating.
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:80024
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: 74f6cc8362498900f2fe2c13d0b6fdb66dd30976
+bioactivity_summary:
+- ANTIBACTERIAL
 bgc_class:
 - PKS
-xrefs:
-- pubchem:6436188
 producer_taxon_groups:
 - ACTINOBACTERIAL
 producer_organisms:
@@ -76,6 +66,21 @@ producer_organisms:
   - reference: PMID:13174453
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000024 entry version 5; citation taken from the entry level
+  - reference: DOI:10.1021/ja102751h
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Curated structure replacement for MIBiG BGC0000024:1, version 5: OGUMLESFFBGVOO-VJDLAWOBSA-N
+      -> CHEBI:80024 (GQKXCBCSVYJUMI-WACKOAQBSA-N). Figure 1 compound 1 shows the
+      tetrahydrofuran O-CH2-alkene-bearing-ring-carbon connectivity in CHEBI:80024,
+      not the constitutional isomer encoded by MIBiG and PubChem CID 6436188. Adopt
+      the pinned ChEBI default structure, including its stereochemistry; pinned RDKit
+      2026.03.5 reproduces its InChIKey. This is a curator adjudication, not an upstream
+      source update or evidence that the two structures are equivalent. See issue
+      #676 and research/2026-10-07-aureothin-identity-correction.md. Original database_ids
+      withheld: pubchem:6436188|chemspider:5029106. Other inventories are joined only
+      on the corrected key, never transferred from the old key. Source row SHA256
+      0e962d1a870cf0129896b636e86d9c0bb19348b8b48220efee50d3c85431cfa0; target row
+      SHA256 f54d3f2199abbd2b3ae81ff9b8c6efdda1c8959f86c1882189ff305f7d6eaa7c. Curator:
+      codex; date: 2026-10-07.'
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0000024
   entry_version: '5'
@@ -86,6 +91,21 @@ biosynthetic_gene_clusters:
   - reference: PMID:13174453
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000024 entry version 5; citation taken from the entry level
+  - reference: DOI:10.1021/ja102751h
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Curated structure replacement for MIBiG BGC0000024:1, version 5: OGUMLESFFBGVOO-VJDLAWOBSA-N
+      -> CHEBI:80024 (GQKXCBCSVYJUMI-WACKOAQBSA-N). Figure 1 compound 1 shows the
+      tetrahydrofuran O-CH2-alkene-bearing-ring-carbon connectivity in CHEBI:80024,
+      not the constitutional isomer encoded by MIBiG and PubChem CID 6436188. Adopt
+      the pinned ChEBI default structure, including its stereochemistry; pinned RDKit
+      2026.03.5 reproduces its InChIKey. This is a curator adjudication, not an upstream
+      source update or evidence that the two structures are equivalent. See issue
+      #676 and research/2026-10-07-aureothin-identity-correction.md. Original database_ids
+      withheld: pubchem:6436188|chemspider:5029106. Other inventories are joined only
+      on the corrected key, never transferred from the old key. Source row SHA256
+      0e962d1a870cf0129896b636e86d9c0bb19348b8b48220efee50d3c85431cfa0; target row
+      SHA256 f54d3f2199abbd2b3ae81ff9b8c6efdda1c8959f86c1882189ff305f7d6eaa7c. Curator:
+      codex; date: 2026-10-07.'
   genome_accession: genbank:AJ575648.1
   bgc_class:
   - PKS
@@ -100,10 +120,47 @@ source_concepts:
   source_label: aureothin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-a7a97dab7f
-grounding_status: MINTED
-grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
-  a content-hashed identifier.
+- source: CHEBI
+  source_id: CHEBI:80024
+  source_label: aureothin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-5397f7984d
+grounding_status: EXACT
 curation_status: SEEDED
+discussions:
+- discussion_id: source-structure-correction
+  kind: CONTROVERSY
+  status: RESOLVED
+  prompt: Which structure represents the source compound?
+  resolution_note: 'Curated structure replacement for MIBiG BGC0000024:1, version
+    5: OGUMLESFFBGVOO-VJDLAWOBSA-N -> CHEBI:80024 (GQKXCBCSVYJUMI-WACKOAQBSA-N). Figure
+    1 compound 1 shows the tetrahydrofuran O-CH2-alkene-bearing-ring-carbon connectivity
+    in CHEBI:80024, not the constitutional isomer encoded by MIBiG and PubChem CID
+    6436188. Adopt the pinned ChEBI default structure, including its stereochemistry;
+    pinned RDKit 2026.03.5 reproduces its InChIKey. This is a curator adjudication,
+    not an upstream source update or evidence that the two structures are equivalent.
+    See issue #676 and research/2026-10-07-aureothin-identity-correction.md. Original
+    database_ids withheld: pubchem:6436188|chemspider:5029106. Other inventories are
+    joined only on the corrected key, never transferred from the old key. Source row
+    SHA256 0e962d1a870cf0129896b636e86d9c0bb19348b8b48220efee50d3c85431cfa0; target
+    row SHA256 f54d3f2199abbd2b3ae81ff9b8c6efdda1c8959f86c1882189ff305f7d6eaa7c. Curator:
+    codex; date: 2026-10-07.'
+  evidence:
+  - reference: DOI:10.1021/ja102751h
+    evidence_source: figure; curator interpretation
+    notes: 'Curated structure replacement for MIBiG BGC0000024:1, version 5: OGUMLESFFBGVOO-VJDLAWOBSA-N
+      -> CHEBI:80024 (GQKXCBCSVYJUMI-WACKOAQBSA-N). Figure 1 compound 1 shows the
+      tetrahydrofuran O-CH2-alkene-bearing-ring-carbon connectivity in CHEBI:80024,
+      not the constitutional isomer encoded by MIBiG and PubChem CID 6436188. Adopt
+      the pinned ChEBI default structure, including its stereochemistry; pinned RDKit
+      2026.03.5 reproduces its InChIKey. This is a curator adjudication, not an upstream
+      source update or evidence that the two structures are equivalent. See issue
+      #676 and research/2026-10-07-aureothin-identity-correction.md. Original database_ids
+      withheld: pubchem:6436188|chemspider:5029106. Other inventories are joined only
+      on the corrected key, never transferred from the old key. Source row SHA256
+      0e962d1a870cf0129896b636e86d9c0bb19348b8b48220efee50d3c85431cfa0; target row
+      SHA256 f54d3f2199abbd2b3ae81ff9b8c6efdda1c8959f86c1882189ff305f7d6eaa7c. Curator:
+      codex; date: 2026-10-07.'
 biosynthetic_pathway:
 - step_number: 1
   enzyme_id: UniProtKB:Q70KH9
@@ -174,4 +231,15 @@ curation_history:
     4-aminobenzoate N-oxygenation in aureothin biosynthesis; grounded AurF to UniProtKB:Q70KH9
     via EMBL AJ575648 protein CAE02601.1; and cited the experimentally characterized
     RHEA:58889 reaction through DOI:10.1021/ja039328t.
+  llm_assisted: true
+- timestamp: '2026-10-07T23:15:47Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Issue #676: explicitly migrated aureothin from minted owner naturalproductmech:mibig-a7a97dab7f
+    / OGUMLESFFBGVOO-VJDLAWOBSA-N to CHEBI:80024 / GQKXCBCSVYJUMI-WACKOAQBSA-N using
+    the pinned MIBiG structure correction and primary DOI:10.1021/ja102751h Figure
+    1. Preserved the complete prior AurF precursor graph, pathway step and history
+    without altering their claims. Withheld old-key LOTUS occurrences and original
+    xrefs; recomputed classification, ChEBI grounding and sibling joins from the corrected
+    structure. No AurH/AurI graph added; full-record status remains SEEDED.'
   llm_assisted: true
