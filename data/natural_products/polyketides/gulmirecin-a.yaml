@@ -77,6 +77,120 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: gulmirecin-a-gulg-native-reference
+  scope: BIOSYNTHESIS
+  description: Native-reference identity in the Pyxidicoccus fallax DSM 28991/BGC0000072
+    context. A deposited CDS and matching protein sequences do not establish measured
+    expression, an experimental construct, enzyme activity or heme occupancy. No independent
+    equivalence with the paper's HKI 727 strain designation is asserted.
+  nodes:
+  - node_id: gulg_cds
+    label: gulG CDS (KM361622.1, reverse strand)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: gulg
+    label: GulG (DSM 28991 native-reference example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A097I351
+  edges:
+  - subject: gulg_cds
+    predicate: encodes the native protein reference
+    object: gulg
+    notes: P. fallax DSM 28991, taxon 394095; complement(63..1247), 1185-nt complete
+      CDS including stop, 394 residues.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KM361622.1
+      evidence_type: DATABASE_ASSERTION
+      notes: GenBank assigns gulG and AIT55258.1 to this complete reverse-strand CDS
+        with translation table 11.
+      retrieved_on: '2026-10-08'
+      snippet: /gene="gulG"
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AIT55258.1
+      evidence_type: DATABASE_ASSERTION
+      notes: The separate GenPept record identifies GulG in DSM 28991 and maps it
+        to the same KM361622.1 CDS.
+      retrieved_on: '2026-10-08'
+    - reference: https://www.uniprot.org/uniprotkb/A0A097I351/entry
+      evidence_type: CURATOR_INFERENCE
+      notes: Unreviewed entry version 25, sequence version 1. CDS-aware translation,
+        deposited translation, AIT55258.1 and A0A097I351 match over all 394 residues.
+        This proves native-reference mapping only. UniProt has no specific FUNCTION
+        or CATALYTIC ACTIVITY comment; family, heme and monooxygenase annotations
+        are computational.
+      retrieved_on: '2026-10-08'
+- graph_id: gulmirecin-a-gulg-proposed-aglycon-hydroxylation
+  scope: BIOSYNTHESIS
+  description: Partial proposed biosynthesis graph from active MITE0000303 version
+    1. MITE infers GulG-dependent hydroxylation from genomic data and chemical structure,
+    not a demonstrated enzyme assay. Its product is an aglycon intermediate, not the
+    fully decorated gulmirecin A owner. No subsequent glycosylation/acylation route
+    or ordered biosynthetic_pathway is asserted. The intermediate and process identifiers
+    remain ungrounded; product double-bond configurations are unspecified and are
+    not completed from the substrate. Only the 2014 paper abstract was inspected;
+    it does not name GulG, and supplement access returned 403. No primary experimental
+    GulG claim is adopted.
+  nodes:
+  - node_id: gulg
+    label: GulG (DSM 28991 native-reference example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A097I351
+  - node_id: unhydroxylated_precursor
+    label: Unhydroxylated precursor (MITE model)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: proposed_hydroxylation
+    label: Proposed GulG-dependent alpha-hydroxylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hydroxylated_aglycon
+    label: Hydroxylated aglycon intermediate (MITE model)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: gulg
+    predicate: is proposed to catalyze
+    object: proposed_hydroxylation
+    notes: A sequence-homology candidate, not experimentally demonstrated GulG catalysis
+      or an EryK protein substitution.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000303.json
+      evidence_type: DATABASE_ASSERTION
+      notes: MITE0000303 version 1 links A0A097I351/AIT55258.1 to BGC0000072 and explicitly
+        bases the candidate assignment on homology to macrolide carbon hydroxylases.
+        It cites DOI:10.1002/chem.201404291, whose full text and supplement were not
+        inspected. The database claim remains an inference.
+      retrieved_on: '2026-10-08'
+      snippet: GulG is a likely candidate for the hydroxylation in alpha position
+        to the keto group
+  - subject: unhydroxylated_precursor
+    predicate: is the modeled substrate of
+    object: proposed_hydroxylation
+    notes: Modeled precursor only, not the final gulmirecin A owner and not an independently
+      verified assay substrate.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000303.json
+      evidence_type: DATABASE_ASSERTION
+      notes: The source evidence code is Inference from genomic data and chemical
+        structure. Pinned RDKit 2026.03.5 gives model substrate key MWECWXVDMOTIGA-MXEPZITCSA-N,
+        with different connectivity from the owner. No external chemical identifier
+        is assigned from the model.
+      retrieved_on: '2026-10-08'
+  - subject: proposed_hydroxylation
+    predicate: is proposed to yield
+    object: hydroxylated_aglycon
+    notes: The product is explicitly marked intermediate by MITE. It is not asserted
+      identical to the owner or a fully stereochemically resolved compound.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000303.json
+      evidence_type: DATABASE_ASSERTION
+      notes: Pinned RDKit 2026.03.5 gives product key KPWMTEWZWQGQOH-OVJXPFRRSA-N,
+        not owner key BJWRCLLKJSLIRN-UHFFFAOYSA-N. Its specified tetrahedral centers
+        do not resolve two unspecified double bonds; neither configuration is filled.
+        No demonstrated conversion, downstream bridge or ChEBI/Rhea mapping is inferred.
+      retrieved_on: '2026-10-08'
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -86,3 +200,14 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-08T08:26:37Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added GulG native-reference and database-proposed partial hydroxylation
+    graphs using UniProtKB:A0A097I351 as the DSM 28991 reference example. Kept MITE
+    sequence/structure inference distinct from demonstrated activity; the modeled
+    aglycon intermediate is not gulmirecin A. No downstream glycosylation/acylation
+    bridge, completed pathway, fully resolved product stereochemistry, assay construct,
+    assembly or producer-grade upgrade asserted. Preserved source fields, SEEDED status
+    and prior history.
+  llm_assisted: true
