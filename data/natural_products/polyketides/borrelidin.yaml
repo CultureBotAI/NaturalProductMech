@@ -205,62 +205,58 @@ discussions:
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
 biosynthetic_pathway:
-- step_number: 5
-  enzyme_id: UniProtKB:Q70HZ6
+- enzyme_id: UniProtKB:Q70HZ6
   enzyme_label: BorI cytochrome P450
-  product: naturalproductmech:mibig-af79f8ac64
   proposed: true
-  notes: MITE assigns the final aldoxime-to-nitrile dehydration in the proposed BorI/BorJ/BorK
-    nitrile-forming pathway to BorI. The ungrounded aldoxime pre-borrelidin substrate
-    is the immediate precursor in MITE0000188; earlier oxidation and amination chemistry
-    are outside this single terminal-step graph.
+  notes: 'Database-proposed BorI aldoxime-to-nitrile function in the borrelidin pathway.
+    MITE''s literal aldoxime and nitrile models are not grounded to this exact owner:
+    the nitrile example conflicts at two specified tetrahedral centers and omits additional
+    stereochemistry. The former exact product assignment and step number 5 are withdrawn;
+    reaction-list position is not verified pathway order. No substrate/product CURIE,
+    balanced reaction, isolated BorI assay or corrected source structure is asserted.
+    The prior primary and native-sequence citations are preserved on the graph''s
+    broader BorI participation edge, not used to validate the conflicting chemical
+    model. BorJ chemical curation remains on hold.'
   evidence:
-  - reference: DOI:10.1111/j.1365-2958.2004.04090.x
-    evidence_type: PRIMARY_EXPERIMENT
-    snippet: co-expressing borI and borJ in Streptomyces albus J1074
-    notes: Olano et al. showed that borI and borJ insertional mutants no longer produced
-      borrelidin, that a borI-minus mutant accumulated 12-desnitrile-12-methyl-borrelidin,
-      and that heterologous S. albus co-expressing borI and borJ converted 12-desnitrile-12-methyl-borrelidin
-      into borrelidin more efficiently when borK was also expressed. These experiments
-      support BorI participation in the proposed nitrile-forming pathway; MITE assigns
-      the terminal aldoxime dehydration specifically to BorI.
   - reference: https://mite.lisc.univie.ac.at/repository/MITE0000188
     evidence_type: DATABASE_ASSERTION
     snippet: Nitrile-formation via dehydation aldoxime
     retrieved_on: '2026-10-01'
-    notes: MITE0000188 is an active BorI entry for UniProtKB:Q70HZ6, GenPept CAE45673.1
-      and MIBiG BGC0000031. It marks aldoxime-to-nitrile dehydration as the non-intermediate
-      BorI reaction; the MITE product SMILES shares the OJCKRNPLOZHAOU connectivity
-      layer with this borrelidin record but omits alkene stereochemistry.
-  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AJ580915.1
-    evidence_type: DATABASE_ASSERTION
-    snippet: protein_id="CAE45673.1"
-    retrieved_on: '2026-10-01'
-    notes: GenBank AJ580915.1 is the Streptomyces parvulus Tu4055 borrelidin cluster
-      sequence and maps borI to CAE45673.1.
-  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000031.5/BGC0000031.gbk
-    evidence_type: DATABASE_ASSERTION
-    snippet: protein_id="CAE45673.1"
-    retrieved_on: '2026-10-01'
-    notes: MIBiG BGC0000031.5 places borI/CAE45673.1 inside the active Streptomyces
-      parvulus borrelidin cluster.
-  - reference: https://www.uniprot.org/uniprotkb/Q70HZ6
-    evidence_type: DATABASE_ASSERTION
-    snippet: GN=borI
-    retrieved_on: '2026-10-01'
-    notes: Current unreviewed UniProtKB:Q70HZ6 resolves as Streptomyces parvulus BorI
-      putative cytochrome P450, cross-references EMBL AJ580915 protein CAE45673.1,
-      and is sequence-identical to GenPept CAE45673.1.
+    notes: MITE0000188 assigns the proposed aldoxime-to-nitrile dehydration to BorI
+      (UniProtKB:Q70HZ6, CAE45673.1, BGC0000031). This retained database citation
+      and exact snippet describe a source model, not an experimentally established
+      conversion of the exact owner. The 2026-10-08 pinned re-audit below finds two
+      conflicting specified tetrahedral centers as well as missing stereochemistry
+      in its product. Its literal nitrile model is therefore represented separately,
+      with no exact product identifier.
+  - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000188.json
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-08'
+    notes: 'RDKit 2026.03.5 re-audit of the pinned MITE0000188 version 3 literal non-intermediate
+      nitrile product gives OJCKRNPLOZHAOU-RQKVFPBWSA-N, not this owner''s OJCKRNPLOZHAOU-UGKRXNSESA-N.
+      Full-connectivity mapping is unique, but the chiral match fails: the macrocycle
+      ester-bearing center and the cyclopentane carboxyl-bearing center have opposite
+      specified configurations. In the exact source/owner parsed SMILES, source atom
+      14 (R) maps to owner atom 8 (S), and source atom 19 (S) maps to owner atom 4
+      (R), using zero-based atom indices. The source also omits the cyclopentane attachment-center
+      configuration and both alkene configurations. These are not merely unspecified
+      stereochemistry or an exact chemical join. The source structures are neither
+      inverted nor completed, and no biological epimerization is inferred. The graph''s
+      MITE product node remains distinct from the exact borrelidin owner; terminal
+      conversion of that owner is not established by this database model. MITE experiment
+      codes are database annotations, not newly inspected primary results.'
 causal_graphs:
 - graph_id: borrelidin-bori-nitrile-formation
   scope: BIOSYNTHESIS
-  description: Partial Streptomyces parvulus borrelidin biosynthesis graph for the
-    MITE-assigned BorI aldoxime dehydration that forms the C12 nitrile.
+  description: Partial Streptomyces parvulus borrelidin graph separating retained
+    BorI pathway participation from MITE's proposed aldoxime-to-nitrile model. The
+    database product conflicts with the owner at specified stereocenters; the model
+    nodes are not an exact chemical route to this borrelidin structure.
   nodes:
   - node_id: aldoxime_pre_borrelidin
-    label: C12 aldoxime pre-borrelidin
+    label: C12 aldoxime pre-borrelidin (MITE model)
     node_type: PRECURSOR
-    grounding_status: UNGROUNDED
+    grounding_status: REVIEW_NEEDED
   - node_id: bori
     label: BorI cytochrome P450
     node_type: ENZYME
@@ -271,55 +267,92 @@ causal_graphs:
     node_type: COMPOUND
     identifier: naturalproductmech:mibig-af79f8ac64
     grounding_status: GROUNDED
+  - node_id: mite_nitrile_model
+    label: Nitrile product (MITE model; stereochemistry conflicts)
+    node_type: COMPOUND
+    grounding_status: REVIEW_NEEDED
   edges:
   - subject: aldoxime_pre_borrelidin
-    predicate: is dehydrated by
+    predicate: is_database_proposed_substrate_of
     object: bori
-    notes: MITE records the final BorI tailoring reaction as dehydration of the C12
-      aldoxime pre-borrelidin intermediate.
+    notes: MITE-proposed aldoxime substrate only. The model's stereochemistry is unresolved
+      relative to the exact owner; this is not a newly demonstrated isolated-enzyme
+      reaction.
     evidence:
-    - reference: DOI:10.1111/j.1365-2958.2004.04090.x
-      evidence_type: PRIMARY_EXPERIMENT
-      snippet: co-expressing borI and borJ in Streptomyces albus J1074
-      notes: Olano et al. showed that borI and borJ insertional mutants no longer
-        produced borrelidin, that a borI-minus mutant accumulated 12-desnitrile-12-methyl-borrelidin,
-        and that heterologous S. albus co-expressing borI and borJ converted 12-desnitrile-12-methyl-borrelidin
-        into borrelidin more efficiently when borK was also expressed. These experiments
-        support BorI participation in the proposed nitrile-forming pathway; MITE assigns
-        the terminal aldoxime dehydration specifically to BorI.
     - reference: https://mite.lisc.univie.ac.at/repository/MITE0000188
       evidence_type: DATABASE_ASSERTION
       snippet: Nitrile-formation via dehydation aldoxime
       retrieved_on: '2026-10-01'
-      notes: MITE0000188 is an active BorI entry for UniProtKB:Q70HZ6, GenPept CAE45673.1
-        and MIBiG BGC0000031. It marks aldoxime-to-nitrile dehydration as the non-intermediate
-        BorI reaction; the MITE product SMILES shares the OJCKRNPLOZHAOU connectivity
-        layer with this borrelidin record but omits alkene stereochemistry.
-    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AJ580915.1
-      evidence_type: DATABASE_ASSERTION
-      snippet: protein_id="CAE45673.1"
-      retrieved_on: '2026-10-01'
-      notes: GenBank AJ580915.1 is the Streptomyces parvulus Tu4055 borrelidin cluster
-        sequence and maps borI to CAE45673.1.
-    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000031.5/BGC0000031.gbk
-      evidence_type: DATABASE_ASSERTION
-      snippet: protein_id="CAE45673.1"
-      retrieved_on: '2026-10-01'
-      notes: MIBiG BGC0000031.5 places borI/CAE45673.1 inside the active Streptomyces
-        parvulus borrelidin cluster.
-    - reference: https://www.uniprot.org/uniprotkb/Q70HZ6
-      evidence_type: DATABASE_ASSERTION
-      snippet: GN=borI
-      retrieved_on: '2026-10-01'
-      notes: Current unreviewed UniProtKB:Q70HZ6 resolves as Streptomyces parvulus
-        BorI putative cytochrome P450, cross-references EMBL AJ580915 protein CAE45673.1,
-        and is sequence-identical to GenPept CAE45673.1.
+      notes: MITE0000188 assigns the proposed aldoxime-to-nitrile dehydration to BorI
+        (UniProtKB:Q70HZ6, CAE45673.1, BGC0000031). This retained database citation
+        and exact snippet describe a source model, not an experimentally established
+        conversion of the exact owner. The 2026-10-08 pinned re-audit below finds
+        two conflicting specified tetrahedral centers as well as missing stereochemistry
+        in its product. Its literal nitrile model is therefore represented separately,
+        with no exact product identifier.
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000188.json
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: 'RDKit 2026.03.5 re-audit of the pinned MITE0000188 version 3 literal
+        non-intermediate nitrile product gives OJCKRNPLOZHAOU-RQKVFPBWSA-N, not this
+        owner''s OJCKRNPLOZHAOU-UGKRXNSESA-N. Full-connectivity mapping is unique,
+        but the chiral match fails: the macrocycle ester-bearing center and the cyclopentane
+        carboxyl-bearing center have opposite specified configurations. In the exact
+        source/owner parsed SMILES, source atom 14 (R) maps to owner atom 8 (S), and
+        source atom 19 (S) maps to owner atom 4 (R), using zero-based atom indices.
+        The source also omits the cyclopentane attachment-center configuration and
+        both alkene configurations. These are not merely unspecified stereochemistry
+        or an exact chemical join. The source structures are neither inverted nor
+        completed, and no biological epimerization is inferred. The graph''s MITE
+        product node remains distinct from the exact borrelidin owner; terminal conversion
+        of that owner is not established by this database model. MITE experiment codes
+        are database annotations, not newly inspected primary results.'
   - subject: bori
-    predicate: forms
+    predicate: has_database_proposed_product
+    object: mite_nitrile_model
+    notes: The literal MITE nitrile-model product is kept distinct from borrelidin.
+      Connectivity alone does not justify the former exact-owner product edge; neither
+      stereochemical completion nor inversion is adopted.
+    evidence:
+    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000188
+      evidence_type: DATABASE_ASSERTION
+      snippet: Nitrile-formation via dehydation aldoxime
+      retrieved_on: '2026-10-01'
+      notes: MITE0000188 assigns the proposed aldoxime-to-nitrile dehydration to BorI
+        (UniProtKB:Q70HZ6, CAE45673.1, BGC0000031). This retained database citation
+        and exact snippet describe a source model, not an experimentally established
+        conversion of the exact owner. The 2026-10-08 pinned re-audit below finds
+        two conflicting specified tetrahedral centers as well as missing stereochemistry
+        in its product. Its literal nitrile model is therefore represented separately,
+        with no exact product identifier.
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000188.json
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: 'RDKit 2026.03.5 re-audit of the pinned MITE0000188 version 3 literal
+        non-intermediate nitrile product gives OJCKRNPLOZHAOU-RQKVFPBWSA-N, not this
+        owner''s OJCKRNPLOZHAOU-UGKRXNSESA-N. Full-connectivity mapping is unique,
+        but the chiral match fails: the macrocycle ester-bearing center and the cyclopentane
+        carboxyl-bearing center have opposite specified configurations. In the exact
+        source/owner parsed SMILES, source atom 14 (R) maps to owner atom 8 (S), and
+        source atom 19 (S) maps to owner atom 4 (R), using zero-based atom indices.
+        The source also omits the cyclopentane attachment-center configuration and
+        both alkene configurations. These are not merely unspecified stereochemistry
+        or an exact chemical join. The source structures are neither inverted nor
+        completed, and no biological epimerization is inferred. The graph''s MITE
+        product node remains distinct from the exact borrelidin owner; terminal conversion
+        of that owner is not established by this database model. MITE experiment codes
+        are database annotations, not newly inspected primary results.'
+  - subject: bori
+    predicate: participates_in_biosynthesis_of
     object: borrelidin
-    notes: This edge is scoped to C12 nitrile formation and does not assert that BorI
-      alone performs the upstream amination or all earlier oxidations in the proposed
-      BorI/BorJ/BorK pathway.
+    notes: Retains the previously curated BorI pathway-participation evidence and
+      native-reference grounding. The primary-paper account concerns genetic/heterologous
+      pathway involvement, including BorI/BorJ co-expression, not a verified BorI-alone
+      conversion of MITE's literal aldoxime model into this exact owner. The four
+      retained EvidenceItems below are unchanged from prior curation. The inaccessible
+      paper was not reread for this correction, and its prior account is neither silently
+      discarded nor newly validated. Protein identity is not evidence for the conflicting
+      chemical join; no new native producer or BGC grade is inferred.
     evidence:
     - reference: DOI:10.1111/j.1365-2958.2004.04090.x
       evidence_type: PRIMARY_EXPERIMENT
@@ -330,14 +363,6 @@ causal_graphs:
         into borrelidin more efficiently when borK was also expressed. These experiments
         support BorI participation in the proposed nitrile-forming pathway; MITE assigns
         the terminal aldoxime dehydration specifically to BorI.
-    - reference: https://mite.lisc.univie.ac.at/repository/MITE0000188
-      evidence_type: DATABASE_ASSERTION
-      snippet: Nitrile-formation via dehydation aldoxime
-      retrieved_on: '2026-10-01'
-      notes: MITE0000188 is an active BorI entry for UniProtKB:Q70HZ6, GenPept CAE45673.1
-        and MIBiG BGC0000031. It marks aldoxime-to-nitrile dehydration as the non-intermediate
-        BorI reaction; the MITE product SMILES shares the OJCKRNPLOZHAOU connectivity
-        layer with this borrelidin record but omits alkene stereochemistry.
     - reference: https://www.ncbi.nlm.nih.gov/nuccore/AJ580915.1
       evidence_type: DATABASE_ASSERTION
       snippet: protein_id="CAE45673.1"
@@ -357,6 +382,14 @@ causal_graphs:
       notes: Current unreviewed UniProtKB:Q70HZ6 resolves as Streptomyces parvulus
         BorI putative cytochrome P450, cross-references EMBL AJ580915 protein CAE45673.1,
         and is sequence-identical to GenPept CAE45673.1.
+    - reference: https://github.com/CultureBotAI/NaturalProductMech/blob/ec47f1839841f4be14e4d798510bfc30eb2906fe/data/natural_products/polyketides/borrelidin.yaml
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: 'Evidence-preservation boundary: the prior record''s one unique primary-paper
+        account and three native-sequence/database citations are retained verbatim
+        here for BorI participation and identity. Duplicate copies on the model-only
+        pathway/edges were consolidated, not deleted as unique evidence. This correction
+        does not treat a failed paper retrieval as evidence against the earlier account.'
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -372,4 +405,17 @@ curation_history:
   changes: Added the proposed BorI aldoxime-to-nitrile biosynthetic pathway step and
     partial BIOSYNTHESIS causal graph for borrelidin, grounded BorI to UniProtKB:Q70HZ6
     via GenPept CAE45673.1 and BGC0000031.
+  llm_assisted: true
+- timestamp: '2026-10-08T19:00:15Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Corrected issue #712 by separating retained BorI biosynthetic participation
+    from MITE0000188v3''s proposed terminal-conversion model. Removed the model-derived
+    exact product and step-number assignments; preserved the proposed BorI function,
+    all original unique citations/snippets, prior primary/sequence evidence on the
+    participation edge, owner structure, source fields and history. Added a separate
+    REVIEW_NEEDED MITE nitrile-model node and explicit qualifications for two conflicting
+    specified tetrahedral centers, one unspecified center and two unspecified double
+    bonds. No source structure correction, new protein, new primary experiment, BorJ
+    chemistry adoption, producer/BGC upgrade or REVIEWED status claim.'
   llm_assisted: true
