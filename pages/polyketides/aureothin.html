@@ -112,8 +112,69 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>AurF</td>
   <td>forms</td>
   <td>4-nitrobenzoate</td>
-  <td>This is a single curated starter-unit N-oxygenation step; downstream PKS loading, extension, O-methylation, and tetrahydrofuran formation remain uncurated.</td>
+  <td>This graph covers the starter-unit N-oxygenation step; downstream tailoring is represented separately where curated.</td>
   <td class="mono">DOI:10.1021/ja039328t</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Native AurI reference and upstream pyrone methylation model. Q70KH3 is not an experimentally verified plasmid sequence. Paper-relative intermediates remain ungrounded; deoxyaureothin is not mature aureothin.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>aurI (AJ575648.1:28440-29132)</td>
+  <td>encodes the native reference protein</td>
+  <td>AurI</td>
+  <td>Native Streptomyces thioluteus reference; not a host or construct accession.</td>
+  <td class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AJ575648.1<br>https://www.uniprot.org/uniprotkb/Q70KH3/entry</td>
+</tr>
+<tr>
+  <td>Demethylluteothin (iso-5, gamma-pyrone)</td>
+  <td>is the gamma-pyrone substrate assigned to</td>
+  <td>AurI</td>
+  <td>Do not substitute the alpha-pyrone tautomer 5 for the depicted substrate iso-5.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q70KH3/entry<br>DOI:10.1021/ja102751h</td>
+</tr>
+<tr>
+  <td>AurI</td>
+  <td>is assigned the O-methylation forming</td>
+  <td>Deoxyaureothin (6)</td>
+  <td>Figure 6 model uses SAM and yields compound 6, before AurH-dependent maturation.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q70KH3/entry<br>DOI:10.1021/ja102751h</td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 4 edges</span></h2>
+<p class="sub">Partial view of separate culture and complementation observations; connecting mechanistic edges are intentionally omitted because these experiments do not establish one continuous causal chain. Reported S. albus/pMZ02 triple-deficient background, not a native single-gene knockout. Complementation is retained at the reported pyrone class: no exact rescue-product assignment, verified complementation construct, mature-aureothin rescue or exclusion of polar effects. Supplementary material was not read.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>S. albus/pMZ02 without PNBA</td>
+  <td>shows under the reported R2YE conditions</td>
+  <td>No observed polyketide production</td>
+  <td>Context-specific negative observation, not proof of inability in every condition.</td>
+  <td class="mono">DOI:10.1021/ja102751h</td>
+</tr>
+<tr>
+  <td>S. albus/pMZ02 with PNBA</td>
+  <td>yields in the reported culture</td>
+  <td>Nordeoxyaureothin (5, alpha-pyrone)</td>
+  <td>Precursor-feeding result; not evidence that AurI methylates the alpha tautomer.</td>
+  <td class="mono">DOI:10.1021/ja102751h</td>
+</tr>
+<tr>
+  <td>AurI</td>
+  <td>is the native gene-product reference associated with</td>
+  <td>aurI complementation of the triple mutant</td>
+  <td>Gene-label mapping only; no experimental plasmid sequence, tag or vector inferred.</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q70KH3/entry<br>DOI:10.1021/ja102751h</td>
+</tr>
+<tr>
+  <td>aurI complementation of the triple mutant</td>
+  <td>restores the reported</td>
+  <td>Methylated gamma-pyrone formation</td>
+  <td>Rescue sentence does not identify a unique complemented analogue.</td>
+  <td class="mono">DOI:10.1021/ja102751h</td>
 </tr>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused

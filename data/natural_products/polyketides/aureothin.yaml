@@ -209,12 +209,154 @@ causal_graphs:
   - subject: aurf
     predicate: forms
     object: nitrobenzoate
-    notes: This is a single curated starter-unit N-oxygenation step; downstream PKS
-      loading, extension, O-methylation, and tetrahydrofuran formation remain uncurated.
+    notes: This graph covers the starter-unit N-oxygenation step; downstream tailoring
+      is represented separately where curated.
     evidence:
     - reference: DOI:10.1021/ja039328t
       evidence_type: PRIMARY_EXPERIMENT
       notes: AurF catalyzes RHEA:58889 in aureothin biosynthesis.
+- graph_id: aureothin-auri-native-reference-and-pyrone-methylation
+  scope: BIOSYNTHESIS
+  description: Native AurI reference and upstream pyrone methylation model. Q70KH3
+    is not an experimentally verified plasmid sequence. Paper-relative intermediates
+    remain ungrounded; deoxyaureothin is not mature aureothin.
+  nodes:
+  - node_id: auri_gene
+    label: aurI (AJ575648.1:28440-29132)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: auri
+    label: AurI
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q70KH3
+  - node_id: gamma_pyrone
+    label: Demethylluteothin (iso-5, gamma-pyrone)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: deoxyaureothin
+    label: Deoxyaureothin (6)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: auri_gene
+    predicate: encodes the native reference protein
+    object: auri
+    notes: Native Streptomyces thioluteus reference; not a host or construct accession.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AJ575648.1
+      evidence_type: DATABASE_ASSERTION
+      notes: AJ575648.1 CDS 28440..29132, forward strand, ATG start; GenPept CAE02607.1,
+        230 amino acids.
+    - reference: https://www.uniprot.org/uniprotkb/Q70KH3/entry
+      evidence_type: CURATOR_INFERENCE
+      notes: Full CDS translation equals the deposited translation, independent CAE02607.1
+        protein and reviewed Q70KH3 sequence. UniProt entry version 59, sequence version
+        1, retrieved 2026-10-07.
+  - subject: gamma_pyrone
+    predicate: is the gamma-pyrone substrate assigned to
+    object: auri
+    notes: Do not substitute the alpha-pyrone tautomer 5 for the depicted substrate
+      iso-5.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q70KH3/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: The reviewed entry assigns demethylluteothin methylation to AurI; its
+        cited older biochemical paper was not newly read.
+    - reference: DOI:10.1021/ja102751h
+      evidence_type: CURATOR_INFERENCE
+      notes: Figure 6 interpretation; not a purified-enzyme kinetic assay.
+  - subject: auri
+    predicate: is assigned the O-methylation forming
+    object: deoxyaureothin
+    notes: Figure 6 model uses SAM and yields compound 6, before AurH-dependent maturation.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q70KH3/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: The reviewed entry names luteothin/deoxyaureothin as the product.
+    - reference: DOI:10.1021/ja102751h
+      evidence_type: CURATOR_INFERENCE
+      notes: Figure 6, p-nitrophenyl series. No mature-product formation is inferred
+        here.
+- graph_id: aureothin-auri-heterologous-pyrone-phenotypes
+  scope: BIOSYNTHESIS
+  description: 'Partial view of separate culture and complementation observations;
+    connecting mechanistic edges are intentionally omitted because these experiments
+    do not establish one continuous causal chain. Reported S. albus/pMZ02 triple-deficient
+    background, not a native single-gene knockout. Complementation is retained at
+    the reported pyrone class: no exact rescue-product assignment, verified complementation
+    construct, mature-aureothin rescue or exclusion of polar effects. Supplementary
+    material was not read.'
+  nodes:
+  - node_id: auri
+    label: AurI
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q70KH3
+  - node_id: unsupplemented
+    label: S. albus/pMZ02 without PNBA
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: pnba_supplemented
+    label: S. albus/pMZ02 with PNBA
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: auri_complementation
+    label: aurI complementation of the triple mutant
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: no_polyketide
+    label: No observed polyketide production
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: nordeoxyaureothin
+    label: Nordeoxyaureothin (5, alpha-pyrone)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: methylated_pyrone
+    label: Methylated gamma-pyrone formation
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: unsupplemented
+    predicate: shows under the reported R2YE conditions
+    object: no_polyketide
+    notes: Context-specific negative observation, not proof of inability in every
+      condition.
+    evidence:
+    - reference: DOI:10.1021/ja102751h
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main-text pyrone-mutant experiments, BioC passage 13.
+      snippet: no polyketide production was observed
+  - subject: pnba_supplemented
+    predicate: yields in the reported culture
+    object: nordeoxyaureothin
+    notes: Precursor-feeding result; not evidence that AurI methylates the alpha tautomer.
+    evidence:
+    - reference: DOI:10.1021/ja102751h
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main-text pyrone-mutant experiments, BioC passage 13.
+  - subject: auri
+    predicate: is the native gene-product reference associated with
+    object: auri_complementation
+    notes: Gene-label mapping only; no experimental plasmid sequence, tag or vector
+      inferred.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q70KH3/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: Native aurI gene name and AJ575648/CAE02607.1 cross-reference.
+    - reference: DOI:10.1021/ja102751h
+      evidence_type: CURATOR_INFERENCE
+      notes: Main text names aurI complementation, BioC passage 14.
+  - subject: auri_complementation
+    predicate: restores the reported
+    object: methylated_pyrone
+    notes: Rescue sentence does not identify a unique complemented analogue.
+    evidence:
+    - reference: DOI:10.1021/ja102751h
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Main-text pyrone-mutant experiments, BioC passage 14.
+      snippet: restored the formation
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -242,4 +384,27 @@ curation_history:
     without altering their claims. Withheld old-key LOTUS occurrences and original
     xrefs; recomputed classification, ChEBI grounding and sibling joins from the corrected
     structure. No AurH/AurI graph added; full-record status remains SEEDED.'
+  llm_assisted: true
+- timestamp: '2026-10-08T00:30:38Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added two AurI BIOSYNTHESIS graphs: the native Q70KH3/CAE02607.1 reference
+    and gamma-pyrone methylation model, and separately the 2010 S. albus/pMZ02 precursor-feeding
+    and aurI-complementation observations. Verified the complete native AJ575648.1
+    CDS against independent GenPept and UniProt sequences; did not equate that reference
+    with an unread experimental construct. Kept the rescue outcome at the reported
+    methylated gamma-pyrone class, separate from diagram product deoxyaureothin and
+    from mature aureothin. Added DOI/URL evidence on all seven edges and two short
+    source-exact snippets. Preserved prior AurF biology/evidence, pathway step, source-owned
+    fields and history; clarified only the old AurF coverage note. No AurH complementation,
+    purified kinetics, antimicrobial targets or REVIEWED-status promotion.'
+  llm_assisted: true
+- timestamp: '2026-10-08T00:48:56Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Issue #680: explicitly marked the AurI heterologous-pyrone phenotype graph
+    as a partial view of separate experimental observations. Explained why connecting
+    mechanistic edges are intentionally omitted. Preserved every node, edge, evidence
+    item, snippet, prior curation event and source-owned field; no new scientific
+    claim or status promotion.'
   llm_assisted: true

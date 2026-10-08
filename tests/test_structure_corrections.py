@@ -186,10 +186,31 @@ def test_classifier_uses_corrected_structure_and_rejects_missing_source(monkeypa
         classifier.structures_needing_classification()
 
 
-def test_aureothin_migration_preserves_original_aurf_and_history():
-    doc = yaml.safe_load((ROOT / 'data/natural_products/polyketides/aureothin.yaml').read_text())
+ORIGINAL_AURF_COVERAGE = (
+    'This is a single curated starter-unit N-oxygenation step; downstream PKS loading, '
+    'extension, O-methylation, and tetrahydrofuran formation remain uncurated.'
+)
+CURATED_AURF_COVERAGE = (
+    'This graph covers the starter-unit N-oxygenation step; downstream tailoring '
+    'is represented separately where curated.'
+)
+
+
+def _assert_aureothin_preservation(doc):
+    doc = copy.deepcopy(doc)
     assert doc['identifier'] == 'CHEBI:80024'
-    # Prefixes allow later curation without weakening the migration's preservation contract.
+    # The migration preserved the whole graph. Later AurI curation changes only
+    # its stale coverage note; normalize that audited exception, not biology.
+    edge = doc['causal_graphs'][0]['edges'][1]
+    if edge['notes'] == CURATED_AURF_COVERAGE:
+        assert any(
+            event.get('action') == 'RECORD_CURATED'
+            and 'clarified only the old AurF coverage note' in event.get('changes', '')
+            for event in doc['curation_history'][4:]
+        ), 'The later coverage-note update needs its own curation event'
+        edge['notes'] = ORIGINAL_AURF_COVERAGE
+    # Retain the original digests: no other graph, pathway or history changes
+    # can be hidden by updating a golden hash to match the current corpus.
     expected = {
         'causal_graphs': (1, '6cfe06b5b0f0a449aec6e5c0a49d4594014e9a148a9b6d2a95a2b6780c4f1f88'),
         'biosynthetic_pathway': (1, '54b71c7713e81d3a396f46b45c44353269585ce1d3eb3b31df6d5c71970d11aa'),
@@ -198,6 +219,45 @@ def test_aureothin_migration_preserves_original_aurf_and_history():
     for field, (count, digest) in expected.items():
         value = json.dumps(doc[field][:count], sort_keys=True, separators=(',', ':'))
         assert hashlib.sha256(value.encode()).hexdigest() == digest
+
+
+def test_aureothin_migration_preserves_original_aurf_and_history():
+    doc = yaml.safe_load((ROOT / 'data/natural_products/polyketides/aureothin.yaml').read_text())
+    before = copy.deepcopy(doc)
+    _assert_aureothin_preservation(doc)
+    assert doc == before
+
+
+def test_original_aurf_coverage_needs_no_later_curation_exception():
+    doc = yaml.safe_load((ROOT / 'data/natural_products/polyketides/aureothin.yaml').read_text())
+    doc['causal_graphs'][0]['edges'][1]['notes'] = ORIGINAL_AURF_COVERAGE
+    doc['curation_history'] = doc['curation_history'][:4]
+    _assert_aureothin_preservation(doc)
+
+
+@pytest.mark.parametrize('changed', [
+    'protein', 'predicate', 'evidence', 'coverage', 'pathway', 'history', 'audit',
+])
+def test_aurf_coverage_exception_does_not_hide_other_changes(changed):
+    doc = yaml.safe_load((ROOT / 'data/natural_products/polyketides/aureothin.yaml').read_text())
+    graph = doc['causal_graphs'][0]
+    if changed == 'protein':
+        graph['nodes'][1]['identifier'] = 'UniProtKB:Q70KH3'
+    elif changed == 'predicate':
+        graph['edges'][1]['predicate'] = 'inhibits'
+    elif changed == 'evidence':
+        graph['edges'][1]['evidence'][0]['evidence_type'] = 'CURATOR_INFERENCE'
+    elif changed == 'coverage':
+        graph['edges'][1]['notes'] = 'Unreviewed coverage claim.'
+    elif changed == 'pathway':
+        doc['biosynthetic_pathway'][0]['product'] = 'CHEBI:80024'
+    elif changed == 'history':
+        doc['curation_history'][0]['changes'] = 'Rewritten history.'
+    else:
+        graph['edges'][1]['notes'] = CURATED_AURF_COVERAGE
+        doc['curation_history'] = doc['curation_history'][:4]
+    with pytest.raises(AssertionError):
+        _assert_aureothin_preservation(doc)
 
 
 def test_table_owned_adjudication_is_not_overwritten_by_old_discussion():
