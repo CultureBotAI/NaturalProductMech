@@ -86,6 +86,159 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">2 nodes, 1 edge</span></h2>
+<p class="sub">Native-reference identity for Streptomyces platensis subsp. rosaceus NRRL 18993/taxon 684832, BGC0000177. Matching sequence references do not establish measured expression, an assay construct, enzyme activity, assembly or cofactor occupancy. No transfer to BGC0000083.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>ORF 9 CDS (GQ274953.1)</td>
+  <td>encodes the native protein reference</td>
+  <td>MgsI (NRRL 18993 native-reference example)</td>
+  <td>Forward-strand 49855..50871; 1017-nt complete CDS including stop, 338 residues.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/GQ274953.1<br>https://www.ncbi.nlm.nih.gov/protein/ACY01394.1<br>https://www.uniprot.org/uniprotkb/D0U2E7/entry<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000327.json</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/GQ274953.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>GenBank assigns ACY01394.1 to ORF 9, with codon_start 1 and translation table 11.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>/note=&#34;ORF 9&#34;</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/ACY01394.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>GenPept maps the same native strain and protein to this GQ274953.1 CDS.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/D0U2E7/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Unreviewed entry version 42, sequence version 1. CDS-aware translation, deposited translation, GenPept and UniProt agree over all 338 residues. No specific FUNCTION or CATALYTIC ACTIVITY comment; computational family/domain annotations do not establish native enzyme activity.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000327.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Active MITE0000327 version 1 maps MgsI to D0U2E7/ACY01394.1/BGC0000177. The deposited sequence records use ORF 9, not an explicit MgsI gene-name qualifier.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Partial database-annotated C-16/C-17 enoyl reduction graph from MITE0000327 version 1. MITE classifies its evidence as Knock-out studies and cites DOI:10.1021/ja4002635; only that paper&#39;s abstract was inspected, and full-text access stopped at the publisher purchase notice. This is not an independently inspected primary experiment or verified substrate assay. Separate model reactions do not establish pathway order or a complete route. No modeled product is identified with the exact owner; its three double-bond configurations remain unspecified. Chemical and process nodes stay ungrounded, without invented ChEBI/Rhea identities.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>MgsI (NRRL 18993 native-reference example)</td>
+  <td>is annotated to catalyze</td>
+  <td>C-16/C-17 enoyl reduction (database-annotated)</td>
+  <td>Database reaction assignment, not a directly inspected enzyme assay or strict-specificity claim.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000327.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000327.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Active MITE0000327 version 1 maps MgsI to D0U2E7/ACY01394.1/BGC0000177. The deposited sequence records use ORF 9, not an explicit MgsI gene-name qualifier. Reaction evidence is categorized by MITE as Knock-out studies; no measured rates, native assembly or cofactor specificity are adopted.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>enoyl reduction of the C-16/C-17 olefin in iso-migrastatin biosynthesis</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>MgsI substrate (MITE model)</td>
+  <td>is the modeled substrate of</td>
+  <td>C-16/C-17 enoyl reduction (database-annotated)</td>
+  <td>Source model only; no independently verified assay substrate or reaction order.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000327.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000327.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>RDKit 2026.03.5 model substrate key VUUITJRXEQWODP-GHOXTBCFSA-N. Different connectivity from the owner; the modeled C-16/C-17 olefin is reduced.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>C-16/C-17 enoyl reduction (database-annotated)</td>
+  <td>is modeled to yield</td>
+  <td>MgsI product (MITE model)</td>
+  <td>Modeled product only, not a direct exact-owner-producing edge.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000327.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000327.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>RDKit 2026.03.5 model product key SBOCUPFPPJWMJW-QQPTYUHPSA-N. Different connectivity from the owner and lacks its C-8 methoxy group. The MITE isIntermediate=false flag does not establish final iso-migrastatin identity. Three unspecified double bonds are not completed from the substrate.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">2 nodes, 1 edge</span></h2>
+<p class="sub">Native-reference identity for Streptomyces platensis subsp. rosaceus NRRL 18993/taxon 684832, BGC0000177. Matching sequence references do not establish measured expression, an assay construct, enzyme activity, assembly or cofactor occupancy. No transfer to BGC0000083.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>ORF 10 CDS (GQ274953.1)</td>
+  <td>encodes the native protein reference</td>
+  <td>MgsJ (NRRL 18993 native-reference example)</td>
+  <td>Forward-strand 51167..52012; 846-nt complete CDS including stop, 281 residues.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/GQ274953.1<br>https://www.ncbi.nlm.nih.gov/protein/ACY01395.1<br>https://www.uniprot.org/uniprotkb/D0U2E8/entry<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000328.json</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/GQ274953.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>GenBank assigns ACY01395.1 to ORF 10, with codon_start 1 and translation table 11.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>/note=&#34;ORF 10&#34;</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/ACY01395.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>GenPept maps the same native strain and protein to this GQ274953.1 CDS.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/D0U2E8/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Unreviewed entry version 31, sequence version 1. CDS-aware translation, deposited translation, GenPept and UniProt agree over all 281 residues. No specific FUNCTION or CATALYTIC ACTIVITY comment; computational family/domain annotations do not establish native enzyme activity.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000328.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Active MITE0000328 version 1 maps MgsJ to D0U2E8/ACY01395.1/BGC0000177. The deposited sequence records use ORF 10, not an explicit MgsJ gene-name qualifier.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Partial database-annotated C-8 O-methylation graph from MITE0000328 version 1. MITE classifies its evidence as Knock-out studies and cites DOI:10.1021/ja4002635; only that paper&#39;s abstract was inspected, and full-text access stopped at the publisher purchase notice. This is not an independently inspected primary experiment or verified substrate assay. Separate model reactions do not establish pathway order or a complete route. No modeled product is identified with the exact owner; its three double-bond configurations remain unspecified. Chemical and process nodes stay ungrounded, without invented ChEBI/Rhea identities.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>MgsJ (NRRL 18993 native-reference example)</td>
+  <td>is annotated to catalyze</td>
+  <td>C-8 O-methylation (database-annotated)</td>
+  <td>Database reaction assignment, not a directly inspected enzyme assay or strict-specificity claim.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000328.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000328.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Active MITE0000328 version 1 maps MgsJ to D0U2E8/ACY01395.1/BGC0000177. The deposited sequence records use ORF 10, not an explicit MgsJ gene-name qualifier. Reaction evidence is categorized by MITE as Knock-out studies; no measured rates, native assembly or cofactor specificity are adopted.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>O-methylation of the HO-C-8</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>MgsJ substrate (MITE model)</td>
+  <td>is the modeled substrate of</td>
+  <td>C-8 O-methylation (database-annotated)</td>
+  <td>Source model only; no independently verified assay substrate or reaction order.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000328.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000328.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>RDKit 2026.03.5 model substrate key UBYNDTKCKXLUTH-IEJYOVIMSA-N. Different connectivity from the owner; no independently audited chemical identifier.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>C-8 O-methylation (database-annotated)</td>
+  <td>is modeled to yield</td>
+  <td>MgsJ product (MITE model)</td>
+  <td>Modeled product only, not a direct exact-owner-producing edge.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000328.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000328.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>RDKit 2026.03.5 model product key TYTDEHCAAKKYOG-PJSZUTIQSA-N. Same connectivity as the owner, but not the same stereochemical key. The model specifies a tetrahedral center left undefined in the owner and omits three double-bond configurations. Neither representation fills the other; MITE marks this product as an intermediate. Three unspecified double bonds are not completed from the substrate.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">2 nodes, 1 edge</span></h2>
+<p class="sub">Native-reference identity for Streptomyces platensis subsp. rosaceus NRRL 18993/taxon 684832, BGC0000177. Matching sequence references do not establish measured expression, an assay construct, enzyme activity, assembly or cofactor occupancy. No transfer to BGC0000083.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>ORF 11 CDS (GQ274953.1)</td>
+  <td>encodes the native protein reference</td>
+  <td>MgsK (NRRL 18993 native-reference example)</td>
+  <td>Forward-strand 52125..53336; 1212-nt complete CDS including stop, 403 residues.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/GQ274953.1<br>https://www.ncbi.nlm.nih.gov/protein/ACY01396.1<br>https://www.uniprot.org/uniprotkb/D0U2E9/entry<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000326.json</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/GQ274953.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>GenBank assigns ACY01396.1 to ORF 11, with codon_start 1 and translation table 11.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>/note=&#34;ORF 11&#34;</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/ACY01396.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>GenPept maps the same native strain and protein to this GQ274953.1 CDS.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/D0U2E9/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Unreviewed entry version 42, sequence version 1. CDS-aware translation, deposited translation, GenPept and UniProt agree over all 403 residues. No specific FUNCTION or CATALYTIC ACTIVITY comment; computational family/domain annotations do not establish native enzyme activity.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000326.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Active MITE0000326 version 1 maps MgsK to D0U2E9/ACY01396.1/BGC0000177. The deposited sequence records use ORF 11, not an explicit MgsK gene-name qualifier.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Partial database-annotated C-8 hydroxylation graph from MITE0000326 version 1. MITE classifies its evidence as Knock-out studies and cites DOI:10.1021/ja4002635; only that paper&#39;s abstract was inspected, and full-text access stopped at the publisher purchase notice. This is not an independently inspected primary experiment or verified substrate assay. Separate model reactions do not establish pathway order or a complete route. No modeled product is identified with the exact owner; its three double-bond configurations remain unspecified. Chemical and process nodes stay ungrounded, without invented ChEBI/Rhea identities.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>MgsK (NRRL 18993 native-reference example)</td>
+  <td>is annotated to catalyze</td>
+  <td>C-8 hydroxylation (database-annotated)</td>
+  <td>Database reaction assignment, not a directly inspected enzyme assay or strict-specificity claim.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000326.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000326.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Active MITE0000326 version 1 maps MgsK to D0U2E9/ACY01396.1/BGC0000177. The deposited sequence records use ORF 11, not an explicit MgsK gene-name qualifier. Reaction evidence is categorized by MITE as Knock-out studies; no measured rates, native assembly or cofactor specificity are adopted.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>C-8 hydroxylation of iso-migrastatin core structure</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>MgsK substrate (MITE model)</td>
+  <td>is the modeled substrate of</td>
+  <td>C-8 hydroxylation (database-annotated)</td>
+  <td>Source model only; no independently verified assay substrate or reaction order.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000326.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000326.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>RDKit 2026.03.5 model substrate key IVFXTQLBVDABOI-LZOKNIEJSA-N. Different connectivity from the owner. It shares connectivity, but not the exact key, with 17-hydroxy-8-desmethoxy-isomigrastatin; its two ring double-bond configurations remain unspecified. That separate owner is linked to BGC0000083 and is not assigned these BGC0000177 proteins.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>C-8 hydroxylation (database-annotated)</td>
+  <td>is modeled to yield</td>
+  <td>MgsK product (MITE model)</td>
+  <td>Modeled product only, not a direct exact-owner-producing edge.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000326.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000326.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>RDKit 2026.03.5 model product key BCGQJEGLKJUGLG-ZOSGKCGASA-N. Different connectivity from the owner. MITE marks it as an intermediate; no downstream conversion to the owner or to the MgsJ model is inferred. Three unspecified double bonds are not completed from the substrate.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
