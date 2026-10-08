@@ -86,6 +86,56 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">2 nodes, 1 edge</span></h2>
+<p class="sub">Native-reference identity in the Pyxidicoccus fallax DSM 28991/BGC0000072 context. A deposited CDS and matching protein sequences do not establish measured expression, an experimental construct, enzyme activity or heme occupancy. No independent equivalence with the paper&#39;s HKI 727 strain designation is asserted.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>gulG CDS (KM361622.1, reverse strand)</td>
+  <td>encodes the native protein reference</td>
+  <td>GulG (DSM 28991 native-reference example)</td>
+  <td>P. fallax DSM 28991, taxon 394095; complement(63..1247), 1185-nt complete CDS including stop, 394 residues.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/KM361622.1<br>https://www.ncbi.nlm.nih.gov/protein/AIT55258.1<br>https://www.uniprot.org/uniprotkb/A0A097I351/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/KM361622.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>GenBank assigns gulG and AIT55258.1 to this complete reverse-strand CDS with translation table 11.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>/gene=&#34;gulG&#34;</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AIT55258.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>The separate GenPept record identifies GulG in DSM 28991 and maps it to the same KM361622.1 CDS.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A097I351/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Unreviewed entry version 25, sequence version 1. CDS-aware translation, deposited translation, AIT55258.1 and A0A097I351 match over all 394 residues. This proves native-reference mapping only. UniProt has no specific FUNCTION or CATALYTIC ACTIVITY comment; family, heme and monooxygenase annotations are computational.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Partial proposed biosynthesis graph from active MITE0000303 version 1. MITE infers GulG-dependent hydroxylation from genomic data and chemical structure, not a demonstrated enzyme assay. Its product is an aglycon intermediate, not the fully decorated gulmirecin A owner. No subsequent glycosylation/acylation route or ordered biosynthetic_pathway is asserted. The intermediate and process identifiers remain ungrounded; product double-bond configurations are unspecified and are not completed from the substrate. Only the 2014 paper abstract was inspected; it does not name GulG, and supplement access returned 403. No primary experimental GulG claim is adopted.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>GulG (DSM 28991 native-reference example)</td>
+  <td>is proposed to catalyze</td>
+  <td>Proposed GulG-dependent alpha-hydroxylation</td>
+  <td>A sequence-homology candidate, not experimentally demonstrated GulG catalysis or an EryK protein substitution.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000303.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000303.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>MITE0000303 version 1 links A0A097I351/AIT55258.1 to BGC0000072 and explicitly bases the candidate assignment on homology to macrolide carbon hydroxylases. It cites DOI:10.1002/chem.201404291, whose full text and supplement were not inspected. The database claim remains an inference.</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>snippet</dt><dd>GulG is a likely candidate for the hydroxylation in alpha position to the keto group</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Unhydroxylated precursor (MITE model)</td>
+  <td>is the modeled substrate of</td>
+  <td>Proposed GulG-dependent alpha-hydroxylation</td>
+  <td>Modeled precursor only, not the final gulmirecin A owner and not an independently verified assay substrate.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000303.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000303.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>The source evidence code is Inference from genomic data and chemical structure. Pinned RDKit 2026.03.5 gives model substrate key MWECWXVDMOTIGA-MXEPZITCSA-N, with different connectivity from the owner. No external chemical identifier is assigned from the model.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Proposed GulG-dependent alpha-hydroxylation</td>
+  <td>is proposed to yield</td>
+  <td>Hydroxylated aglycon intermediate (MITE model)</td>
+  <td>The product is explicitly marked intermediate by MITE. It is not asserted identical to the owner or a fully stereochemically resolved compound.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000303.json</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000303.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Pinned RDKit 2026.03.5 gives product key KPWMTEWZWQGQOH-OVJXPFRRSA-N, not owner key BJWRCLLKJSLIRN-UHFFFAOYSA-N. Its specified tetrahedral centers do not resolve two unspecified double bonds; neither configuration is filled. No demonstrated conversion, downstream bridge or ChEBI/Rhea mapping is inferred.</dd><dt>retrieved on</dt><dd>2026-10-08</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
