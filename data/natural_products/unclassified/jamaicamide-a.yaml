@@ -85,6 +85,266 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- enzyme_id: UniProtKB:Q6E7K6
+  enzyme_label: JamD flavin-dependent halogenase (MITE annotation)
+  proposed: true
+  notes: MITE assigns JamD to jamaicamide B-to-A bromination. Its literal B and A
+    models have the respective owners' connectivity, formula and charge but omit all
+    three alkene configurations retained by those owners. Both models and owners leave
+    two tetrahedral centers unspecified. This is missing stereochemistry, not a demonstrated
+    stereochemical conflict or an exact full-InChIKey join. The models remain separate
+    from the grounded record. Primary assays and constructs were not inspected, so
+    the pathway entry remains proposed; no exact chemical conversion of the owner,
+    balanced reaction, physiological order or native production experiment is asserted.
+  evidence:
+  - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000076.json
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-08'
+    snippet: Bromination of jamaicamide B to jamaicamide A.
+    notes: 'MITE0000076 version 2, active, assigns this literal reaction to JamD/Q6E7K6/AAS98776.1/BGC0001001.
+      Its heterologous-expression and in-vitro-assay codes cite DOI:10.1021/jacs.3c05750,
+      which was inaccessible in this pass. These codes are database annotations, not
+      newly verified primary experiments. The example is flagged isIntermediate: true;
+      neither terminal pathway order nor a balanced reaction is inferred. The separate
+      iodination-to-jamaicamide-F example is not adopted here.'
+  - reference: https://www.uniprot.org/uniprotkb/Q6E7K6/entry
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-08'
+    notes: UniProtKB Q6E7K6, unreviewed TrEMBL entry 33/sequence 1, annotation 2025-02-05,
+      identifies a 683-aa JamD reference from Lyngbya majuscula, NCBITaxon:158786,
+      with the JHB nucleotide sequence reference and AY522504/AAS98776.1 cross-reference.
+      Protein existence is Predicted, and this response has no catalytic-function
+      comment. It supplies identity, not independent evidence for MITE's functional
+      claim.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AAS98776.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-08'
+    snippet: JamD [Lyngbya majuscula]
+    notes: GenPept AAS98776.1 names strain JHB, taxon 158786, and coded_by AY522504.1:10463..12514,
+      table 11. Its full 683-aa sequence equals UniProtKB:Q6E7K6. The source calls
+      the protein a putative halogenase possibly involved in alkynyl bromide formation;
+      that native-reference annotation does not verify a historical assay construct
+      or the later enzymatic experiment.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY522504.1
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-08'
+    notes: 'Independent native-reference audit: AY522504.1 is the 69,900-nt JHB jamaicamide
+      cluster reference named by this owner''s BGC0001001. Its complete plus-strand
+      JamD CDS, 10463..12514 (1-based inclusive), contains 2,052 nt, codon_start 1/table
+      11. Complete-CDS translation equals the 683-aa native CDS annotation, GenPept
+      and UniProt. Native sequence identity does not establish assay-stock identity,
+      catalysis, native production or stereochemistry.'
+  - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000076.json
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-08'
+    notes: 'RDKit 2026.03.5 literal-SMILES audit, without SMARTS execution: the B
+      model is KZVHAGNFWJIOMX-UHFFFAOYSA-N (C27H37ClN2O4); the A model is NAIKIJSSBJHCBL-UHFFFAOYSA-N
+      (C27H36BrClN2O4). Both are neutral. The corresponding record keys are KZVHAGNFWJIOMX-GDKFLGFMSA-N
+      and NAIKIJSSBJHCBL-IPUGVWFUSA-N. Their connectivity, formula and charge agree,
+      but three specified double-bond configurations in each owner are unspecified
+      in the source model. Both sides also have two unspecified tetrahedral centers.
+      No stereochemistry is completed or inverted and no exact-owner product assignment
+      is made.'
+causal_graphs:
+- graph_id: jamaicamide-a-jamd-database-bromination-model
+  scope: BIOSYNTHESIS
+  description: Partial Lyngbya majuscula JHB graph separating MITE's stereo-unspecified
+    JamD bromination model from its named jamaicamide A biosynthetic-role assignment.
+    Native reference identity is verified; primary catalysis, exact chemical stereochemistry
+    and pathway order are not.
+  nodes:
+  - node_id: jamaicamide_b_model
+    label: Jamaicamide B (MITE model; stereochemistry unspecified)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: jamd
+    label: Lyngbya majuscula JHB JamD
+    node_type: ENZYME
+    identifier: UniProtKB:Q6E7K6
+    grounding_status: GROUNDED
+  - node_id: jamaicamide_a_model
+    label: Jamaicamide A (MITE model; stereochemistry unspecified)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: jamaicamide_a
+    label: Jamaicamide A (owner; three alkene configurations retained)
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-0ce6527209
+    grounding_status: GROUNDED
+  edges:
+  - subject: jamaicamide_b_model
+    predicate: is_database_asserted_substrate_of
+    object: jamd
+    notes: MITE's literal, stereo-unspecified B substrate model only. It is not grounded
+      to the distinct full-key jamaicamide B record.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000076.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: Bromination of jamaicamide B to jamaicamide A.
+      notes: 'MITE0000076 version 2, active, assigns this literal reaction to JamD/Q6E7K6/AAS98776.1/BGC0001001.
+        Its heterologous-expression and in-vitro-assay codes cite DOI:10.1021/jacs.3c05750,
+        which was inaccessible in this pass. These codes are database annotations,
+        not newly verified primary experiments. The example is flagged isIntermediate:
+        true; neither terminal pathway order nor a balanced reaction is inferred.
+        The separate iodination-to-jamaicamide-F example is not adopted here.'
+    - reference: https://www.uniprot.org/uniprotkb/Q6E7K6/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: UniProtKB Q6E7K6, unreviewed TrEMBL entry 33/sequence 1, annotation 2025-02-05,
+        identifies a 683-aa JamD reference from Lyngbya majuscula, NCBITaxon:158786,
+        with the JHB nucleotide sequence reference and AY522504/AAS98776.1 cross-reference.
+        Protein existence is Predicted, and this response has no catalytic-function
+        comment. It supplies identity, not independent evidence for MITE's functional
+        claim.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAS98776.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: JamD [Lyngbya majuscula]
+      notes: GenPept AAS98776.1 names strain JHB, taxon 158786, and coded_by AY522504.1:10463..12514,
+        table 11. Its full 683-aa sequence equals UniProtKB:Q6E7K6. The source calls
+        the protein a putative halogenase possibly involved in alkynyl bromide formation;
+        that native-reference annotation does not verify a historical assay construct
+        or the later enzymatic experiment.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY522504.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: 'Independent native-reference audit: AY522504.1 is the 69,900-nt JHB
+        jamaicamide cluster reference named by this owner''s BGC0001001. Its complete
+        plus-strand JamD CDS, 10463..12514 (1-based inclusive), contains 2,052 nt,
+        codon_start 1/table 11. Complete-CDS translation equals the 683-aa native
+        CDS annotation, GenPept and UniProt. Native sequence identity does not establish
+        assay-stock identity, catalysis, native production or stereochemistry.'
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000076.json
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: 'RDKit 2026.03.5 literal-SMILES audit, without SMARTS execution: the
+        B model is KZVHAGNFWJIOMX-UHFFFAOYSA-N (C27H37ClN2O4); the A model is NAIKIJSSBJHCBL-UHFFFAOYSA-N
+        (C27H36BrClN2O4). Both are neutral. The corresponding record keys are KZVHAGNFWJIOMX-GDKFLGFMSA-N
+        and NAIKIJSSBJHCBL-IPUGVWFUSA-N. Their connectivity, formula and charge agree,
+        but three specified double-bond configurations in each owner are unspecified
+        in the source model. Both sides also have two unspecified tetrahedral centers.
+        No stereochemistry is completed or inverted and no exact-owner product assignment
+        is made.'
+  - subject: jamd
+    predicate: has_database_asserted_product
+    object: jamaicamide_a_model
+    notes: MITE's literal A model only, not the stereochemically more specified owner.
+      The isIntermediate flag is retained as a source qualification rather than converted
+      into a pathway-order claim.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000076.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: Bromination of jamaicamide B to jamaicamide A.
+      notes: 'MITE0000076 version 2, active, assigns this literal reaction to JamD/Q6E7K6/AAS98776.1/BGC0001001.
+        Its heterologous-expression and in-vitro-assay codes cite DOI:10.1021/jacs.3c05750,
+        which was inaccessible in this pass. These codes are database annotations,
+        not newly verified primary experiments. The example is flagged isIntermediate:
+        true; neither terminal pathway order nor a balanced reaction is inferred.
+        The separate iodination-to-jamaicamide-F example is not adopted here.'
+    - reference: https://www.uniprot.org/uniprotkb/Q6E7K6/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: UniProtKB Q6E7K6, unreviewed TrEMBL entry 33/sequence 1, annotation 2025-02-05,
+        identifies a 683-aa JamD reference from Lyngbya majuscula, NCBITaxon:158786,
+        with the JHB nucleotide sequence reference and AY522504/AAS98776.1 cross-reference.
+        Protein existence is Predicted, and this response has no catalytic-function
+        comment. It supplies identity, not independent evidence for MITE's functional
+        claim.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAS98776.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: JamD [Lyngbya majuscula]
+      notes: GenPept AAS98776.1 names strain JHB, taxon 158786, and coded_by AY522504.1:10463..12514,
+        table 11. Its full 683-aa sequence equals UniProtKB:Q6E7K6. The source calls
+        the protein a putative halogenase possibly involved in alkynyl bromide formation;
+        that native-reference annotation does not verify a historical assay construct
+        or the later enzymatic experiment.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY522504.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: 'Independent native-reference audit: AY522504.1 is the 69,900-nt JHB
+        jamaicamide cluster reference named by this owner''s BGC0001001. Its complete
+        plus-strand JamD CDS, 10463..12514 (1-based inclusive), contains 2,052 nt,
+        codon_start 1/table 11. Complete-CDS translation equals the 683-aa native
+        CDS annotation, GenPept and UniProt. Native sequence identity does not establish
+        assay-stock identity, catalysis, native production or stereochemistry.'
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000076.json
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: 'RDKit 2026.03.5 literal-SMILES audit, without SMARTS execution: the
+        B model is KZVHAGNFWJIOMX-UHFFFAOYSA-N (C27H37ClN2O4); the A model is NAIKIJSSBJHCBL-UHFFFAOYSA-N
+        (C27H36BrClN2O4). Both are neutral. The corresponding record keys are KZVHAGNFWJIOMX-GDKFLGFMSA-N
+        and NAIKIJSSBJHCBL-IPUGVWFUSA-N. Their connectivity, formula and charge agree,
+        but three specified double-bond configurations in each owner are unspecified
+        in the source model. Both sides also have two unspecified tetrahedral centers.
+        No stereochemistry is completed or inverted and no exact-owner product assignment
+        is made.'
+  - subject: jamd
+    predicate: is_database_assigned_biosynthetic_enzyme_for
+    object: jamaicamide_a
+    notes: MITE names jamaicamide A as the product associated with JamD. This records
+      that database-level biosynthetic assignment separately from the model-only reaction,
+      without asserting full chemical equivalence or a newly inspected assay. MITE
+      assigns JamD to jamaicamide B-to-A bromination. Its literal B and A models have
+      the respective owners' connectivity, formula and charge but omit all three alkene
+      configurations retained by those owners. Both models and owners leave two tetrahedral
+      centers unspecified. This is missing stereochemistry, not a demonstrated stereochemical
+      conflict or an exact full-InChIKey join. The models remain separate from the
+      grounded record. Primary assays and constructs were not inspected, so the pathway
+      entry remains proposed; no exact chemical conversion of the owner, balanced
+      reaction, physiological order or native production experiment is asserted.
+    evidence:
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000076.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: Bromination of jamaicamide B to jamaicamide A.
+      notes: 'MITE0000076 version 2, active, assigns this literal reaction to JamD/Q6E7K6/AAS98776.1/BGC0001001.
+        Its heterologous-expression and in-vitro-assay codes cite DOI:10.1021/jacs.3c05750,
+        which was inaccessible in this pass. These codes are database annotations,
+        not newly verified primary experiments. The example is flagged isIntermediate:
+        true; neither terminal pathway order nor a balanced reaction is inferred.
+        The separate iodination-to-jamaicamide-F example is not adopted here.'
+    - reference: https://www.uniprot.org/uniprotkb/Q6E7K6/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: UniProtKB Q6E7K6, unreviewed TrEMBL entry 33/sequence 1, annotation 2025-02-05,
+        identifies a 683-aa JamD reference from Lyngbya majuscula, NCBITaxon:158786,
+        with the JHB nucleotide sequence reference and AY522504/AAS98776.1 cross-reference.
+        Protein existence is Predicted, and this response has no catalytic-function
+        comment. It supplies identity, not independent evidence for MITE's functional
+        claim.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAS98776.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: JamD [Lyngbya majuscula]
+      notes: GenPept AAS98776.1 names strain JHB, taxon 158786, and coded_by AY522504.1:10463..12514,
+        table 11. Its full 683-aa sequence equals UniProtKB:Q6E7K6. The source calls
+        the protein a putative halogenase possibly involved in alkynyl bromide formation;
+        that native-reference annotation does not verify a historical assay construct
+        or the later enzymatic experiment.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY522504.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: 'Independent native-reference audit: AY522504.1 is the 69,900-nt JHB
+        jamaicamide cluster reference named by this owner''s BGC0001001. Its complete
+        plus-strand JamD CDS, 10463..12514 (1-based inclusive), contains 2,052 nt,
+        codon_start 1/table 11. Complete-CDS translation equals the 683-aa native
+        CDS annotation, GenPept and UniProt. Native sequence identity does not establish
+        assay-stock identity, catalysis, native production or stereochemistry.'
+    - reference: https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000076.json
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: 'RDKit 2026.03.5 literal-SMILES audit, without SMARTS execution: the
+        B model is KZVHAGNFWJIOMX-UHFFFAOYSA-N (C27H37ClN2O4); the A model is NAIKIJSSBJHCBL-UHFFFAOYSA-N
+        (C27H36BrClN2O4). Both are neutral. The corresponding record keys are KZVHAGNFWJIOMX-GDKFLGFMSA-N
+        and NAIKIJSSBJHCBL-IPUGVWFUSA-N. Their connectivity, formula and charge agree,
+        but three specified double-bond configurations in each owner are unspecified
+        in the source model. Both sides also have two unspecified tetrahedral centers.
+        No stereochemistry is completed or inverted and no exact-owner product assignment
+        is made.'
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -94,3 +354,13 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-08T20:18:15Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a database-qualified JamD bromination model and biosynthetic role
+    for jamaicamide A, grounding the native JHB reference to UniProtKB:Q6E7K6 through
+    complete AY522504.1 CDS/GenPept sequence agreement. Kept both MITE chemical models
+    structurally ungrounded because they omit the owner's defined alkene geometry.
+    No exact substrate/product CURIE, pathway order, new primary experiment, iodination
+    claim, producer/BGC grade or status upgrade.
+  llm_assisted: true
