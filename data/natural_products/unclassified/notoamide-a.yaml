@@ -191,6 +191,129 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000818, BGC0001084,
     BGC0002254. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+causal_graphs:
+- graph_id: notoamide-a-notf-native-reference
+  scope: BIOSYNTHESIS
+  description: Native identity in the MF297-2/BGC0001084 context only. The spliced
+    genomic reference is not a verified experimental transcript or tagged construct,
+    and is not transferred to the distinct BGC0000818 or BGC0002254 source clusters.
+  nodes:
+  - node_id: notf_cds
+    label: notF CDS (HM622670.1, two reverse-strand exons)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: notf
+    label: NotF (MF297-2 native reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:E0Y3X1
+  edges:
+  - subject: notf_cds
+    predicate: encodes the native protein reference
+    object: notf
+    notes: Aspergillus sp. MF297-2, taxon 877550; complement(join(17924..18053,18126..19354));
+      452 amino acids.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/HM622670.1
+      evidence_type: DATABASE_ASSERTION
+      notes: GenBank links this two-exon CDS to ADM34139.1 and names NotF; the CDS
+        lacks a gene-name qualifier.
+      retrieved_on: '2026-10-08'
+      snippet: /note="NotF"
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/GU564535.1
+      evidence_type: DATABASE_ASSERTION
+      notes: The separate notF gene deposit has CDS join(1..1229,1302..1431) and protein
+        ADM34132.1 in the same strain.
+      retrieved_on: '2026-10-08'
+    - reference: https://www.uniprot.org/uniprotkb/E0Y3X1/entry
+      evidence_type: CURATOR_INFERENCE
+      notes: Reviewed entry version 40, sequence version 1. CDS-aware translations
+        of both deposits, both deposited translations, both independent GenPept proteins
+        and E0Y3X1 match over all 452 residues. This establishes native reference
+        identity, not the sequence of an experimental construct.
+      retrieved_on: '2026-10-08'
+- graph_id: notoamide-a-notf-early-prenylation
+  scope: BIOSYNTHESIS
+  description: Partial early-intermediate graph in the MF297-2 notoamide pathway context
+    annotated by UniProt. NotF does not directly make notoamide A. No downstream reactions
+    or final hydroxylase are asserted. The original paper DOI:10.1021/ja1049302 is
+    cited by the database but its full text was not inspected; the 2020 specificity
+    study was read at abstract level only. Assembly, kinetics and strict substrate
+    exclusivity are not asserted.
+  nodes:
+  - node_id: notf
+    label: NotF (MF297-2 native reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:E0Y3X1
+  - node_id: brevianamide_f
+    label: brevianamide F
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+    identifier: CHEBI:64530
+  - node_id: reverse_prenylation
+    label: NotF early reverse C2-prenylation
+    node_type: PROCESS
+    grounding_status: GROUNDED
+    identifier: RHEA:35944
+  - node_id: deoxybrevianamide_e
+    label: deoxybrevianamide E
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:72948
+  edges:
+  - subject: notf
+    predicate: is annotated to catalyze
+    object: reverse_prenylation
+    notes: Native reference, not a sequence-verified assay construct. The reaction
+      uses dimethylallyl diphosphate as prenyl donor and releases diphosphate. Formation
+      of the later bicyclic core is not asserted.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/E0Y3X1/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: Entry version 40 annotates EC:2.5.1.109 and RHEA:35943, with physiological
+        left-to-right RHEA:35944, citing PMID:20722388.
+      retrieved_on: '2026-10-08'
+      snippet: brevianamide F + dimethylallyl diphosphate = deoxybrevianamide E +
+        diphosphate
+    - reference: DOI:10.1007/s00203-020-01854-7
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Abstract only: NotF from MF297-2 catalyzes reverse C2-prenylation of
+        brevianamide F; comparison of 14 cyclodipeptides by MS qualifies the earlier
+        exclusive-substrate claim. No individual analogue product structures or kinetic
+        values are imported.'
+      retrieved_on: '2026-10-08'
+      snippet: NotF and BrePT share similar catalytic ability and substrate promiscuity.
+  - subject: brevianamide_f
+    predicate: is the annotated substrate of
+    object: reverse_prenylation
+    notes: The cyclic L-Trp/L-Pro substrate, not an unspecified stereoisomer.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/E0Y3X1/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: Catalytic activity assigns brevianamide F as the prenyl acceptor.
+      retrieved_on: '2026-10-08'
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:64530
+      evidence_type: DATABASE_ASSERTION
+      notes: ChEBI identifies brevianamide F with full InChIKey RYFZBPVMVYTEKZ-KBPBESRZSA-N
+        and the 3S,8aS stereochemistry.
+      retrieved_on: '2026-10-08'
+  - subject: reverse_prenylation
+    predicate: has the annotated product
+    object: deoxybrevianamide_e
+    notes: An early intermediate, not notoamide A. This edge does not prove an experimentally
+      complete route from the intermediate to this owner.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/E0Y3X1/entry
+      evidence_type: DATABASE_ASSERTION
+      notes: Catalytic activity identifies deoxybrevianamide E; the broad pathway
+        annotation leaves the final hydroxylation enzyme leading to notoamide A unidentified.
+      retrieved_on: '2026-10-08'
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:72948
+      evidence_type: DATABASE_ASSERTION
+      notes: ChEBI identifies the reverse C2-prenylated product with full InChIKey
+        KUGNSEAHJVSMAJ-IRXDYDNUSA-N.
+      retrieved_on: '2026-10-08'
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -200,3 +323,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-08T04:56:59Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added NotF native-reference and early-prenylation graphs, grounded to UniProtKB:E0Y3X1
+    from Aspergillus sp. MF297-2. Kept database reaction annotation distinct from
+    the inspected 2020 abstract and qualified substrate specificity. No downstream
+    route to notoamide A, experimental construct, assembly or producer-grade upgrade
+    asserted; source-owned fields unchanged.
+  llm_assisted: true

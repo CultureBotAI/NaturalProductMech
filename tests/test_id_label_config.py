@@ -104,6 +104,41 @@ def test_every_target_glob_matches_at_least_one_file():
         assert matched, f"target {target['name']!r}: glob {target['glob']!r} matches nothing"
 
 
+@pytest.mark.parametrize("target_name", ["record_identity", "graph_component_nodes"])
+def test_rhea_nodes_are_explicit_skips_and_typos_still_fail(
+        schema, tmp_path, monkeypatch, capsys, target_name):
+    assert schema["prefixes"]["RHEA"] == "https://www.rhea-db.org/rhea/"
+    cfg = validator.load_config(CONFIG)
+    assert "RHEA" in cfg["ignored_prefixes"]
+    target = next(t for t in cfg["targets"] if t["name"] == target_name)
+    cfg["adapters"] = {}
+    cfg["targets"] = [target]
+    config = tmp_path / "config.yaml"
+    config.write_text(yaml.safe_dump(cfg), encoding="utf-8")
+    monkeypatch.setattr(validator, "REPO_ROOT", tmp_path)
+    node = {"identifier": "RHEA:35944", "label": "NotF early reverse C2-prenylation"}
+    graph = {"nodes": [node]}
+    if target_name == "record_identity":
+        record = tmp_path / "data/natural_products/test/example.yaml"
+        document = {"causal_graphs": [graph]}
+    else:
+        record = tmp_path / "data/causal_graphs/test/example.yaml"
+        document = {"graph": graph}
+    record.parent.mkdir(parents=True)
+    record.write_text(yaml.safe_dump(document), encoding="utf-8")
+    assert validator.run(config, report_path=None) == 0
+    output = capsys.readouterr().out
+    assert "SKIPPED_NO_ADAPTER" in output
+    assert "UNKNOWN_PREFIX" not in output
+
+    node["identifier"] = "RHEEA:35944"
+    record.write_text(yaml.safe_dump(document), encoding="utf-8")
+    assert validator.run(config, report_path=None) == 2
+    output = capsys.readouterr().out
+    assert "UNKNOWN_PREFIX" in output
+    assert "RHEEA:35944" in output
+
+
 def _corpus_pairs(pairs: list[list[str]]) -> set[tuple[str, str]]:
     found: set[tuple[str, str]] = set()
     for path in (REPO_ROOT / "data" / "natural_products").rglob("*.yaml"):
