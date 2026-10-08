@@ -133,7 +133,7 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>{{ e.predicate }}</td>
   <td>{{ e.object_label }}</td>
   <td>{{ e.notes or '' }}</td>
-  <td class="mono">{% for reference in e.references %}{{ reference }}{% if not loop.last %}<br>{% endif %}{% endfor %}</td>
+  <td><details class="graph-evidence"><summary class="mono">{% for reference in e.references %}{{ reference }}{% if not loop.last %}<br>{% endif %}{% endfor %}</summary>{{ source_fields(e.evidence) }}</details></td>
 </tr>
 {% endfor %}
 </table></div>

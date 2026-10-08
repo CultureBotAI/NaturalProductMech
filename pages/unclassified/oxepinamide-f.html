@@ -93,98 +93,145 @@ isolation report left it.</p>
   <td>is_database_reported_catalyst_of</td>
   <td>Database-reported C-12 hydroxyl methylation</td>
   <td>MITE and UniProt associate OpaF with the named methylation. The accession denotes the verified native genomic reference; it does not assert sequence identity of an inaccessible-paper construct. No catalytic rate, purified-enzyme conditions, exact experimental stock, homodimer or predicted active-site mechanism is adopted.</td>
-  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000363.json<br>https://www.uniprot.org/uniprotkb/A0A0C1E5J2<br>https://www.ncbi.nlm.nih.gov/protein/KIA75453.1<br>https://www.ncbi.nlm.nih.gov/nuccore/JOMC01000153.1</td>
+  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000363.json<br>https://www.uniprot.org/uniprotkb/A0A0C1E5J2<br>https://www.ncbi.nlm.nih.gov/protein/KIA75453.1<br>https://www.ncbi.nlm.nih.gov/nuccore/JOMC01000153.1</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000363.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>MITE0000363 version 1, active, at pinned commit 6eacd913b2036376031072f69cbb33908f132998. The database describes oxepinamide E-to-F methylation. Its knockout evidence code is not independently inspected primary data. No mutant identity, complementation result or assay conditions are adopted.</dd><dt>retrieved on</dt><dd>2026-10-06</dd><dt>snippet</dt><dd>Methylation of the hydroxyl group at C-12.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0C1E5J2</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Reviewed entry 37, sequence 1. FUNCTION assigns OpaF the C-12 hydroxyl methylation yielding oxepinamide F. Its ECO:0000269 annotation cites PMID:33004788; this remains a database assertion here because that primary paper was not accessible. Protein existence is listed as inferred from homology, not direct native-protein detection.</dd><dt>retrieved on</dt><dd>2026-10-07</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/KIA75453.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Conceptual translation, locus HK57_00060, A. ustus strain 3.3904, taxon 40382; full sequence and independent coded_by inspected.</dd><dt>retrieved on</dt><dd>2026-10-07</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/JOMC01000153.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Complete 1263-nt five-exon CDS, standard table 1: join(1877..2119,2176..2302,2389..2512,2578..3032,3092..3405), plus strand. Full translation equals GenPept KIA75453.1 and UniProt A0A0C1E5J2, 420 residues. This grounds a native genomic reference, not a historical transcript, mutant stock or experimental construct.</dd><dt>retrieved on</dt><dd>2026-10-07</dd></dl>
+</li></ul>
+</details></td>
 </tr>
 <tr>
   <td>Oxepinamide E, database-reported substrate</td>
   <td>is_database_reported_substrate_of</td>
   <td>Database-reported C-12 hydroxyl methylation</td>
   <td>The database explicitly names oxepinamide E, not the upstream 15-epi-oxepinamide E. No external compound identifier is selected for this substrate, and no additional upstream step is inferred.</td>
-  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000363.json<br>https://www.uniprot.org/uniprotkb/A0A0C1E5J2</td>
+  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000363.json<br>https://www.uniprot.org/uniprotkb/A0A0C1E5J2</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000363.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>MITE0000363 version 1, active, at pinned commit 6eacd913b2036376031072f69cbb33908f132998. The database describes oxepinamide E-to-F methylation. Its knockout evidence code is not independently inspected primary data. No mutant identity, complementation result or assay conditions are adopted.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0C1E5J2</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Reviewed entry 37, sequence 1. FUNCTION assigns OpaF the C-12 hydroxyl methylation yielding oxepinamide F. Its ECO:0000269 annotation cites PMID:33004788; this remains a database assertion here because that primary paper was not accessible. Protein existence is listed as inferred from homology, not direct native-protein detection.</dd><dt>retrieved on</dt><dd>2026-10-07</dd></dl>
+</li></ul>
+</details></td>
 </tr>
 <tr>
   <td>Database-reported C-12 hydroxyl methylation</td>
   <td>has_database_reported_product</td>
   <td>Oxepinamide F, exact owner structure</td>
   <td>The pinned MITE reaction example&#39;s full Standard InChIKey matches HFZOLZVOTSSKSM-WSZRMNBISA-N, with defined stereochemistry, using the repository structure helper and RDKit 2026.03.5. The example marks this as a non-intermediate product. This does not upgrade the owner&#39;s SOURCE_ASSERTION producer or CLUSTER_UNSTATED BGC grade, and does not transfer production to the separate A. puniceus occurrence.</td>
-  <td class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000363.json<br>https://www.uniprot.org/uniprotkb/A0A0C1E5J2</td>
+  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000363.json<br>https://www.uniprot.org/uniprotkb/A0A0C1E5J2</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000363.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>MITE0000363 version 1, active, at pinned commit 6eacd913b2036376031072f69cbb33908f132998. The database describes oxepinamide E-to-F methylation. Its knockout evidence code is not independently inspected primary data. No mutant identity, complementation result or assay conditions are adopted.</dd><dt>retrieved on</dt><dd>2026-10-06</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0C1E5J2</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Reviewed entry 37, sequence 1. FUNCTION assigns OpaF the C-12 hydroxyl methylation yielding oxepinamide F. Its ECO:0000269 annotation cites PMID:33004788; this remains a database assertion here because that primary paper was not accessible. Protein existence is listed as inferred from homology, not direct native-protein detection.</dd><dt>retrieved on</dt><dd>2026-10-07</dd></dl>
+</li></ul>
+</details></td>
 </tr>
 <tr>
   <td>opaA native reference from A. ustus 3.3904</td>
   <td>is_database_reported_catalyst_of</td>
   <td>Database-reported NRPS assembly of protuboxepin K</td>
   <td>UniProt describes assembly from anthranilic acid, L-Phe and L-Ile, with D-Phe incorporation and release of protuboxepin K. This is a database assertion, not inspected module assays, substrate-loading measurements or native carrier-state proof.</td>
-  <td class="mono">https://www.uniprot.org/uniprotkb/A0A0C1E5J8<br>https://www.ncbi.nlm.nih.gov/protein/KIA75458.1<br>https://www.ncbi.nlm.nih.gov/nuccore/JOMC01000153.1</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A0C1E5J8<br>https://www.ncbi.nlm.nih.gov/protein/KIA75458.1<br>https://www.ncbi.nlm.nih.gov/nuccore/JOMC01000153.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0C1E5J8</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry43/sequence1. FUNCTION associates opaA with the named oxepinamide F pathway step and cites PMID:33004788. The primary paper was inaccessible, so this remains a database assertion, not independently inspected experimental evidence. The entry&#39;s protein-existence grade is not an assay-stock mapping.</dd><dt>snippet</dt><dd>quinazolinone core</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/KIA75458.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Native conceptual translation KIA75458.1/HK57_00065, A. ustus strain3.3904, taxon40382; full protein record and independent coded_by inspected.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/JOMC01000153.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete 11706-nt CDS/table1, 2 exon(s), strand1; intervals in translation order: 19098..19574,19633..30861. Full translation equals KIA75458.1 and current UniProt A0A0C1E5J8, 3901 residues. This verifies the genomic reference, not a historical experimental transcript, construct, modification or stock.</dd></dl>
+</li></ul>
+</details></td>
 </tr>
 <tr>
   <td>Database-reported NRPS assembly of protuboxepin K</td>
   <td>has_database_reported_product</td>
   <td>Protuboxepin K, database-reported intermediate</td>
   <td>UniProt describes assembly from anthranilic acid, L-Phe and L-Ile, with D-Phe incorporation and release of protuboxepin K. This is a database assertion, not inspected module assays, substrate-loading measurements or native carrier-state proof.</td>
-  <td class="mono">https://www.uniprot.org/uniprotkb/A0A0C1E5J8</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A0C1E5J8</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0C1E5J8</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry43/sequence1. FUNCTION associates opaA with the named oxepinamide F pathway step and cites PMID:33004788. The primary paper was inaccessible, so this remains a database assertion, not independently inspected experimental evidence. The entry&#39;s protein-existence grade is not an assay-stock mapping.</dd></dl>
+</li></ul>
+</details></td>
 </tr>
 <tr>
   <td>opaB native reference from A. ustus 3.3904</td>
   <td>is_database_reported_catalyst_of</td>
   <td>Database-reported oxepin ring formation</td>
   <td>UniProt and MITE name protuboxepin K-to-A oxepin ring formation. The MITE example leaves a side-chain stereocenter unspecified in the product. No complete chemical identity or independently inspected heterologous experiment is inferred from that example; these intermediates remain ungrounded named nodes.</td>
-  <td class="mono">https://www.uniprot.org/uniprotkb/A0A0C1E1L9<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000349.json<br>https://www.ncbi.nlm.nih.gov/protein/KIA75457.1<br>https://www.ncbi.nlm.nih.gov/nuccore/JOMC01000153.1</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A0C1E1L9<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000349.json<br>https://www.ncbi.nlm.nih.gov/protein/KIA75457.1<br>https://www.ncbi.nlm.nih.gov/nuccore/JOMC01000153.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0C1E1L9</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry30/sequence1. FUNCTION associates opaB with the named oxepinamide F pathway step and cites PMID:33004788. The primary paper was inaccessible, so this remains a database assertion, not independently inspected experimental evidence. The entry&#39;s protein-existence grade is not an assay-stock mapping.</dd><dt>snippet</dt><dd>oxepin ring formation</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000349.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000349 version1, active, at the pinned commit. The named transformation is used without upgrading its evidence code to inspected experiments or treating underspecified example stereochemistry as exact compound grounding.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/KIA75457.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Native conceptual translation KIA75457.1/HK57_00064, A. ustus strain3.3904, taxon40382; full protein record and independent coded_by inspected.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/JOMC01000153.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete 1728-nt CDS/table1, 8 exon(s), strand-1; intervals in translation order: 18225..18516,18114..18165,17762..18032,17584..17698,17430..17521,16999..17337,16795..16905,16263..16718. Full translation equals KIA75457.1 and current UniProt A0A0C1E1L9, 575 residues. This verifies the genomic reference, not a historical experimental transcript, construct, modification or stock.</dd></dl>
+</li></ul>
+</details></td>
 </tr>
 <tr>
   <td>Protuboxepin K, database-reported intermediate</td>
   <td>is_database_reported_substrate_of</td>
   <td>Database-reported oxepin ring formation</td>
   <td>UniProt and MITE name protuboxepin K-to-A oxepin ring formation. The MITE example leaves a side-chain stereocenter unspecified in the product. No complete chemical identity or independently inspected heterologous experiment is inferred from that example; these intermediates remain ungrounded named nodes.</td>
-  <td class="mono">https://www.uniprot.org/uniprotkb/A0A0C1E1L9<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000349.json</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A0C1E1L9<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000349.json</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0C1E1L9</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry30/sequence1. FUNCTION associates opaB with the named oxepinamide F pathway step and cites PMID:33004788. The primary paper was inaccessible, so this remains a database assertion, not independently inspected experimental evidence. The entry&#39;s protein-existence grade is not an assay-stock mapping.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000349.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000349 version1, active, at the pinned commit. The named transformation is used without upgrading its evidence code to inspected experiments or treating underspecified example stereochemistry as exact compound grounding.</dd></dl>
+</li></ul>
+</details></td>
 </tr>
 <tr>
   <td>Database-reported oxepin ring formation</td>
   <td>has_database_reported_product</td>
   <td>Protuboxepin A, database-reported intermediate</td>
   <td>UniProt and MITE name protuboxepin K-to-A oxepin ring formation. The MITE example leaves a side-chain stereocenter unspecified in the product. No complete chemical identity or independently inspected heterologous experiment is inferred from that example; these intermediates remain ungrounded named nodes.</td>
-  <td class="mono">https://www.uniprot.org/uniprotkb/A0A0C1E1L9<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000349.json</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A0C1E1L9<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000349.json</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0C1E1L9</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry30/sequence1. FUNCTION associates opaB with the named oxepinamide F pathway step and cites PMID:33004788. The primary paper was inaccessible, so this remains a database assertion, not independently inspected experimental evidence. The entry&#39;s protein-existence grade is not an assay-stock mapping.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000349.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000349 version1, active, at the pinned commit. The named transformation is used without upgrading its evidence code to inspected experiments or treating underspecified example stereochemistry as exact compound grounding.</dd></dl>
+</li></ul>
+</details></td>
 </tr>
 <tr>
   <td>opaC native reference from A. ustus 3.3904</td>
   <td>is_database_reported_catalyst_of</td>
   <td>Database-reported hydroxylation with double-bond migration</td>
   <td>UniProt and MITE describe protuboxepin A hydroxylation with double-bond migration to 15-epi-oxepinamide E. MITE&#39;s example omits stereochemical encoding; its isIntermediate=false flag is not used to classify the named compound&#39;s pathway role. No exact-structure match or final-product claim is taken from those fields. UniProt&#39;s separate kinetic substrate label is not used to identify this step.</td>
-  <td class="mono">https://www.uniprot.org/uniprotkb/A0A0C1BV72<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000372.json<br>https://www.ncbi.nlm.nih.gov/protein/KIA75456.1<br>https://www.ncbi.nlm.nih.gov/nuccore/JOMC01000153.1</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A0C1BV72<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000372.json<br>https://www.ncbi.nlm.nih.gov/protein/KIA75456.1<br>https://www.ncbi.nlm.nih.gov/nuccore/JOMC01000153.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0C1BV72</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry33/sequence1. FUNCTION associates opaC with the named oxepinamide F pathway step and cites PMID:33004788. The primary paper was inaccessible, so this remains a database assertion, not independently inspected experimental evidence. The entry&#39;s protein-existence grade is not an assay-stock mapping.</dd><dt>snippet</dt><dd>double bond migration</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000372.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000372 version1, active, at the pinned commit. The named transformation is used without upgrading its evidence code to inspected experiments or treating underspecified example stereochemistry as exact compound grounding.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/KIA75456.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Native conceptual translation KIA75456.1/HK57_00063, A. ustus strain3.3904, taxon40382; full protein record and independent coded_by inspected.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/JOMC01000153.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete 1389-nt CDS/table1, 5 exon(s), strand-1; intervals in translation order: 14151..14304,13487..14076,13070..13428,12780..13006,12665..12723. Full translation equals KIA75456.1 and current UniProt A0A0C1BV72, 462 residues. This verifies the genomic reference, not a historical experimental transcript, construct, modification or stock.</dd></dl>
+</li></ul>
+</details></td>
 </tr>
 <tr>
   <td>Protuboxepin A, database-reported intermediate</td>
   <td>is_database_reported_substrate_of</td>
   <td>Database-reported hydroxylation with double-bond migration</td>
   <td>UniProt and MITE describe protuboxepin A hydroxylation with double-bond migration to 15-epi-oxepinamide E. MITE&#39;s example omits stereochemical encoding; its isIntermediate=false flag is not used to classify the named compound&#39;s pathway role. No exact-structure match or final-product claim is taken from those fields. UniProt&#39;s separate kinetic substrate label is not used to identify this step.</td>
-  <td class="mono">https://www.uniprot.org/uniprotkb/A0A0C1BV72<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000372.json</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A0C1BV72<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000372.json</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0C1BV72</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry33/sequence1. FUNCTION associates opaC with the named oxepinamide F pathway step and cites PMID:33004788. The primary paper was inaccessible, so this remains a database assertion, not independently inspected experimental evidence. The entry&#39;s protein-existence grade is not an assay-stock mapping.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000372.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000372 version1, active, at the pinned commit. The named transformation is used without upgrading its evidence code to inspected experiments or treating underspecified example stereochemistry as exact compound grounding.</dd></dl>
+</li></ul>
+</details></td>
 </tr>
 <tr>
   <td>Database-reported hydroxylation with double-bond migration</td>
   <td>has_database_reported_product</td>
   <td>15-epi-oxepinamide E, database-reported intermediate</td>
   <td>UniProt and MITE describe protuboxepin A hydroxylation with double-bond migration to 15-epi-oxepinamide E. MITE&#39;s example omits stereochemical encoding; its isIntermediate=false flag is not used to classify the named compound&#39;s pathway role. No exact-structure match or final-product claim is taken from those fields. UniProt&#39;s separate kinetic substrate label is not used to identify this step.</td>
-  <td class="mono">https://www.uniprot.org/uniprotkb/A0A0C1BV72<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000372.json</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A0C1BV72<br>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000372.json</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0C1BV72</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry33/sequence1. FUNCTION associates opaC with the named oxepinamide F pathway step and cites PMID:33004788. The primary paper was inaccessible, so this remains a database assertion, not independently inspected experimental evidence. The entry&#39;s protein-existence grade is not an assay-stock mapping.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000372.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>MITE0000372 version1, active, at the pinned commit. The named transformation is used without upgrading its evidence code to inspected experiments or treating underspecified example stereochemistry as exact compound grounding.</dd></dl>
+</li></ul>
+</details></td>
 </tr>
 <tr>
   <td>opaE native reference from A. ustus 3.3904</td>
   <td>is_database_reported_catalyst_of</td>
   <td>Database-reported D-to-L aminoacyl epimerization</td>
   <td>UniProt assigns conversion of 15-epi-oxepinamide E to oxepinamide E by changing the Phe configuration. This connects to the already curated, database-reported OpaF substrate without equating the two epimers. Kinetic values, disruption phenotypes and the homolog-transferred residue90 mechanism are not adopted.</td>
-  <td class="mono">https://www.uniprot.org/uniprotkb/A0A0C1EFK1<br>https://www.ncbi.nlm.nih.gov/protein/KIA75454.1<br>https://www.ncbi.nlm.nih.gov/nuccore/JOMC01000153.1</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A0C1EFK1<br>https://www.ncbi.nlm.nih.gov/protein/KIA75454.1<br>https://www.ncbi.nlm.nih.gov/nuccore/JOMC01000153.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0C1EFK1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry23/sequence1. FUNCTION associates opaE with the named oxepinamide F pathway step and cites PMID:33004788. The primary paper was inaccessible, so this remains a database assertion, not independently inspected experimental evidence. The entry&#39;s protein-existence grade is not an assay-stock mapping.</dd><dt>snippet</dt><dd>D-Phe residue back to L-form</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/KIA75454.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Native conceptual translation KIA75454.1/HK57_00061, A. ustus strain3.3904, taxon40382; full protein record and independent coded_by inspected.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/JOMC01000153.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Complete 825-nt CDS/table1, 1 exon(s), strand1; intervals in translation order: 6154..6978. Full translation equals KIA75454.1 and current UniProt A0A0C1EFK1, 274 residues. This verifies the genomic reference, not a historical experimental transcript, construct, modification or stock.</dd></dl>
+</li></ul>
+</details></td>
 </tr>
 <tr>
   <td>15-epi-oxepinamide E, database-reported intermediate</td>
   <td>is_database_reported_substrate_of</td>
   <td>Database-reported D-to-L aminoacyl epimerization</td>
   <td>UniProt assigns conversion of 15-epi-oxepinamide E to oxepinamide E by changing the Phe configuration. This connects to the already curated, database-reported OpaF substrate without equating the two epimers. Kinetic values, disruption phenotypes and the homolog-transferred residue90 mechanism are not adopted.</td>
-  <td class="mono">https://www.uniprot.org/uniprotkb/A0A0C1EFK1</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A0C1EFK1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0C1EFK1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry23/sequence1. FUNCTION associates opaE with the named oxepinamide F pathway step and cites PMID:33004788. The primary paper was inaccessible, so this remains a database assertion, not independently inspected experimental evidence. The entry&#39;s protein-existence grade is not an assay-stock mapping.</dd></dl>
+</li></ul>
+</details></td>
 </tr>
 <tr>
   <td>Database-reported D-to-L aminoacyl epimerization</td>
   <td>has_database_reported_product</td>
   <td>Oxepinamide E, database-reported substrate</td>
   <td>UniProt assigns conversion of 15-epi-oxepinamide E to oxepinamide E by changing the Phe configuration. This connects to the already curated, database-reported OpaF substrate without equating the two epimers. Kinetic values, disruption phenotypes and the homolog-transferred residue90 mechanism are not adopted.</td>
-  <td class="mono">https://www.uniprot.org/uniprotkb/A0A0C1EFK1</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A0C1EFK1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0C1EFK1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Reviewed entry23/sequence1. FUNCTION associates opaE with the named oxepinamide F pathway step and cites PMID:33004788. The primary paper was inaccessible, so this remains a database assertion, not independently inspected experimental evidence. The entry&#39;s protein-existence grade is not an assay-stock mapping.</dd></dl>
+</li></ul>
+</details></td>
 </tr>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused

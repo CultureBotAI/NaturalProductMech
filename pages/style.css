@@ -39,6 +39,12 @@ th, td { text-align: left; padding: .42rem .6rem; border-bottom: 1px solid var(-
          vertical-align: top; }
 th { color: var(--muted); font-weight: 600; font-size: .85rem; }
 .scroll { overflow-x: auto; }
+.graph-evidence {
+  width: min(28rem, calc(100vw - 4rem));
+  overflow-wrap: anywhere;
+}
+.graph-evidence > ul { padding-left: 1.25rem; }
+.graph-evidence dd { margin-inline-start: 1rem; }
 .tag { display: inline-block; padding: .08rem .45rem; border-radius: .7rem;
        font-size: .76rem; border: 1px solid var(--rule); background: var(--panel);
        color: var(--muted); white-space: nowrap; }
