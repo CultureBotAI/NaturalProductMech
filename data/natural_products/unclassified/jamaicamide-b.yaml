@@ -86,6 +86,656 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- enzyme_id: UniProtKB:Q6E7K9
+  enzyme_label: JamA starter-acid activating/loading ligase (UniProt annotation)
+  proposed: true
+  notes: Database-described activation of 5-hexenoic acid and loading onto the distinct
+    JamC carrier to form 5-hexenoyl-JamC. JamC is not an enzyme step. This partial
+    starter-unit mechanism is a UniProt database assertion; its contribution to the
+    exact jamaicamide B owner is a curator inference, not an independently inspected
+    compound-specific experiment. The inference combines explicit jamaicamide starter-unit
+    function, exact native cluster sequence identity, the pinned MIBiG association
+    of B with AY522504.1, and the owner's compatible terminal alkyne. Neither gene
+    neighborhood nor fragment compatibility alone proves the assignment. No atom mapping,
+    intact C6 incorporation proof, final-product synthesis assay, native production/knockout
+    result, balanced reaction, assay construct, or complete numbered pathway is asserted.
+    Carrier-bound intermediates remain ungrounded and distinct from free acids and
+    the final owner. The owner's three alkene configurations and two unspecified tetrahedral
+    centers, source taxon, producer/BGC grades and SEEDED status are unchanged.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/Q6E7K9/entry
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-08'
+    snippet: the loading of the activated 5-hexenoic acid onto the acyl carrier protein
+      JamC
+    notes: Reviewed UniProtKB Q6E7K9, entry 64/sequence 1, annotation 2026-09-02.
+      UniProt assigns JamA activation of the free 5-hexenoic-acid starter followed
+      by loading onto JamC. This is a ligase assignment, not a claim that JamA alone
+      synthesizes the final natural product. The cited primary papers DOI:10.1016/j.chembiol.2004.03.030
+      and DOI:10.1038/nchembio.1718 were not inspected; database experimental evidence
+      codes are not promoted to newly verified primary experiments.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY522504.1
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-08'
+    notes: 'Native-reference audit for jamA: AY522504.1 is the 69,900-nt JHB cluster
+      reference named by BGC0001001. Complete plus-strand CDS 6630..8408 (1-based
+      inclusive), codon_start 1/table 11, translates exactly to the 592-aa GenBank
+      CDS annotation AAS98774.1 and UniProtKB:Q6E7K9. UniProt explicitly cross-references
+      AY522504/AAS98774.1 and the JHB nucleotide report. This is not an independently
+      downloaded GenPept comparison or proof of historical assay-stock/construct identity,
+      function, chemical incorporation or native production.'
+  - reference: https://www.uniprot.org/uniprotkb/Q6E7K7/entry
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-08'
+    snippet: Accepts as substrate the activated form of 5-hexenoic acid from JamA
+    notes: Reviewed UniProtKB Q6E7K7, entry 75/sequence 1, annotation 2026-09-02.
+      UniProt assigns JamC acyl-carrier function and acceptance of activated 5-hexenoic
+      acid from JamA. JamC is a carrier protein, not a separate enzyme or an independently
+      inferred catalytic step. The entry's protein-existence field is Evidence at
+      transcript level. The cited primary papers DOI:10.1016/j.chembiol.2004.03.030
+      and DOI:10.1038/nchembio.1718 were not inspected; database experimental evidence
+      codes are not promoted to newly verified primary experiments.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY522504.1
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-08'
+    notes: 'Native-reference audit for jamC: AY522504.1 is the 69,900-nt JHB cluster
+      reference named by BGC0001001. Complete plus-strand CDS 9718..10020 (1-based
+      inclusive), codon_start 1/table 11, translates exactly to the 100-aa GenBank
+      CDS annotation AAS98798.1 and UniProtKB:Q6E7K7. UniProt explicitly cross-references
+      AY522504/AAS98798.1 and the JHB nucleotide report. This is not an independently
+      downloaded GenPept comparison or proof of historical assay-stock/construct identity,
+      function, chemical incorporation or native production.'
+  - reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1454205
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-08'
+    snippet: Lyngbya majuscula JHB
+    notes: NCBI's strain page lists this heterotypic synonym for Moorena producens
+      JHB, NCBITaxon:1454205, the strain identity used by the reviewed JamABC UniProt
+      entries. The older nucleotide source and seeded record use Lyngbya majuscula,
+      NCBITaxon:158786. The strain-specific naming bridge and exact accession/sequence
+      matches do not equate those taxon IDs or replace the owner's source-owned taxonomy
+      assertions.
+  - reference: https://github.com/CultureBotAI/NaturalProductMech/blob/ec47f1839841f4be14e4d798510bfc30eb2906fe/data/raw/mibig_compounds.tsv
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-08'
+    notes: 'Already-held pinned MIBiG inventory, BGC0001001 entry version 5, compound
+      index 2: jamaicamide B, KZVHAGNFWJIOMX-GDKFLGFMSA-N, native reference AY522504.1,
+      active/questionable/complete. Its source citation is DOI:10.1016/j.chembiol.2004.03.030;
+      no locus experiment is stated, so CLUSTER_UNSTATED and SOURCE_ASSERTION grades
+      remain. The live MIBiG page was inaccessible; no current-live-entry or newly
+      verified primary-paper claim is made.'
+  - reference: https://github.com/CultureBotAI/NaturalProductMech/blob/ec47f1839841f4be14e4d798510bfc30eb2906fe/data/raw/mibig_compounds.tsv
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-08'
+    notes: This partial starter-unit mechanism is a UniProt database assertion; its
+      contribution to the exact jamaicamide B owner is a curator inference, not an
+      independently inspected compound-specific experiment. The inference combines
+      explicit jamaicamide starter-unit function, exact native cluster sequence identity,
+      the pinned MIBiG association of B with AY522504.1, and the owner's compatible
+      terminal alkyne. Neither gene neighborhood nor fragment compatibility alone
+      proves the assignment. No atom mapping, intact C6 incorporation proof, final-product
+      synthesis assay, native production/knockout result, balanced reaction, assay
+      construct, or complete numbered pathway is asserted. Carrier-bound intermediates
+      remain ungrounded and distinct from free acids and the final owner. The owner's
+      three alkene configurations and two unspecified tetrahedral centers, source
+      taxon, producer/BGC grades and SEEDED status are unchanged. RDKit 2026.03.5
+      confirms one terminal alkyne in the exact B owner, while A has a brominated
+      alkyne and C an alkene. This is compatibility, not atom-mapped incorporation
+      or full-structure equivalence to 5-hexynoyl-JamC; B is not a direct JamB reaction
+      product.
+- enzyme_id: UniProtKB:Q6E7K8
+  enzyme_label: JamB carrier-bound acetylenase (UniProt annotation)
+  proposed: true
+  notes: Database-described 5-hexenoyl-JamC to 5-hexynoyl-JamC acetylenation; neither
+    free acid nor final jamaicamide B is a direct substrate/product of this represented
+    step. This partial starter-unit mechanism is a UniProt database assertion; its
+    contribution to the exact jamaicamide B owner is a curator inference, not an independently
+    inspected compound-specific experiment. The inference combines explicit jamaicamide
+    starter-unit function, exact native cluster sequence identity, the pinned MIBiG
+    association of B with AY522504.1, and the owner's compatible terminal alkyne.
+    Neither gene neighborhood nor fragment compatibility alone proves the assignment.
+    No atom mapping, intact C6 incorporation proof, final-product synthesis assay,
+    native production/knockout result, balanced reaction, assay construct, or complete
+    numbered pathway is asserted. Carrier-bound intermediates remain ungrounded and
+    distinct from free acids and the final owner. The owner's three alkene configurations
+    and two unspecified tetrahedral centers, source taxon, producer/BGC grades and
+    SEEDED status are unchanged.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/Q6E7K8/entry
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-08'
+    snippet: Catalyzes the conversion of 5-hexenoyl loaded onto the acyl carrier protein
+      JamC (5-hexenoyl-JamC) to 5-hexynoyl-JamC
+    notes: Reviewed UniProtKB Q6E7K8, entry 63/sequence 1, annotation 2026-09-02.
+      UniProt assigns JamB acetylenation of carrier-bound 5-hexenoyl-JamC to 5-hexynoyl-JamC.
+      It explicitly excludes free 5-hexenoic acid and 5-hexenoyl-CoA as substrates.
+      Its additional hexanoyl-JamC desaturation annotation is not depicted in this
+      partial branch. The cited primary papers DOI:10.1016/j.chembiol.2004.03.030
+      and DOI:10.1038/nchembio.1718 were not inspected; database experimental evidence
+      codes are not promoted to newly verified primary experiments.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY522504.1
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-08'
+    notes: 'Native-reference audit for jamB: AY522504.1 is the 69,900-nt JHB cluster
+      reference named by BGC0001001. Complete plus-strand CDS 8591..9556 (1-based
+      inclusive), codon_start 1/table 11, translates exactly to the 321-aa GenBank
+      CDS annotation AAS98775.1 and UniProtKB:Q6E7K8. UniProt explicitly cross-references
+      AY522504/AAS98775.1 and the JHB nucleotide report. This is not an independently
+      downloaded GenPept comparison or proof of historical assay-stock/construct identity,
+      function, chemical incorporation or native production.'
+  - reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1454205
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-08'
+    snippet: Lyngbya majuscula JHB
+    notes: NCBI's strain page lists this heterotypic synonym for Moorena producens
+      JHB, NCBITaxon:1454205, the strain identity used by the reviewed JamABC UniProt
+      entries. The older nucleotide source and seeded record use Lyngbya majuscula,
+      NCBITaxon:158786. The strain-specific naming bridge and exact accession/sequence
+      matches do not equate those taxon IDs or replace the owner's source-owned taxonomy
+      assertions.
+  - reference: https://github.com/CultureBotAI/NaturalProductMech/blob/ec47f1839841f4be14e4d798510bfc30eb2906fe/data/raw/mibig_compounds.tsv
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-08'
+    notes: 'Already-held pinned MIBiG inventory, BGC0001001 entry version 5, compound
+      index 2: jamaicamide B, KZVHAGNFWJIOMX-GDKFLGFMSA-N, native reference AY522504.1,
+      active/questionable/complete. Its source citation is DOI:10.1016/j.chembiol.2004.03.030;
+      no locus experiment is stated, so CLUSTER_UNSTATED and SOURCE_ASSERTION grades
+      remain. The live MIBiG page was inaccessible; no current-live-entry or newly
+      verified primary-paper claim is made.'
+  - reference: https://github.com/CultureBotAI/NaturalProductMech/blob/ec47f1839841f4be14e4d798510bfc30eb2906fe/data/raw/mibig_compounds.tsv
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-08'
+    notes: This partial starter-unit mechanism is a UniProt database assertion; its
+      contribution to the exact jamaicamide B owner is a curator inference, not an
+      independently inspected compound-specific experiment. The inference combines
+      explicit jamaicamide starter-unit function, exact native cluster sequence identity,
+      the pinned MIBiG association of B with AY522504.1, and the owner's compatible
+      terminal alkyne. Neither gene neighborhood nor fragment compatibility alone
+      proves the assignment. No atom mapping, intact C6 incorporation proof, final-product
+      synthesis assay, native production/knockout result, balanced reaction, assay
+      construct, or complete numbered pathway is asserted. Carrier-bound intermediates
+      remain ungrounded and distinct from free acids and the final owner. The owner's
+      three alkene configurations and two unspecified tetrahedral centers, source
+      taxon, producer/BGC grades and SEEDED status are unchanged. RDKit 2026.03.5
+      confirms one terminal alkyne in the exact B owner, while A has a brominated
+      alkyne and C an alkene. This is compatibility, not atom-mapped incorporation
+      or full-structure equivalence to 5-hexynoyl-JamC; B is not a direct JamB reaction
+      product.
+causal_graphs:
+- graph_id: jamaicamide-b-jamabc-database-starter-unit
+  scope: BIOSYNTHESIS
+  description: Partial JHB JamABC starter-unit graph. UniProt describes JamA/JamC
+    loading and JamB acetylenation; the exact jamaicamide B connection is explicitly
+    inferred from the combined source/cluster/chemical context, not a verified complete
+    synthesis. Native protein identities are sequence-checked; primary experiments
+    and constructs are uninspected.
+  nodes:
+  - node_id: hexenoic_acid
+    label: 5-Hexenoic acid (free acid; source name)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: jama
+    label: Moorena producens JHB JamA ligase
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q6E7K9
+  - node_id: jamc
+    label: Moorena producens JHB JamC acyl carrier
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q6E7K7
+  - node_id: loading
+    label: Starter-acid activation and loading onto JamC
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hexenoyl_jamc
+    label: 5-Hexenoyl-JamC (covalently carrier-bound)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: jamb
+    label: Moorena producens JHB JamB acetylenase
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q6E7K8
+  - node_id: acetylenation
+    label: Carrier-bound terminal acetylenation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hexynoyl_jamc
+    label: 5-Hexynoyl-JamC (covalently carrier-bound)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: jamaicamide_b
+    label: Jamaicamide B (exact owner; incomplete stereochemistry)
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: naturalproductmech:mibig-e0dfe0eb89
+  edges:
+  - subject: hexenoic_acid
+    predicate: is_database_asserted_substrate_of
+    object: loading
+    notes: Free 5-hexenoic acid enters JamA activation/loading, not the JamB step.
+      The free acid is not equated with a carrier-bound intermediate.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q6E7K9/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: the loading of the activated 5-hexenoic acid onto the acyl carrier
+        protein JamC
+      notes: Reviewed UniProtKB Q6E7K9, entry 64/sequence 1, annotation 2026-09-02.
+        UniProt assigns JamA activation of the free 5-hexenoic-acid starter followed
+        by loading onto JamC. This is a ligase assignment, not a claim that JamA alone
+        synthesizes the final natural product. The cited primary papers DOI:10.1016/j.chembiol.2004.03.030
+        and DOI:10.1038/nchembio.1718 were not inspected; database experimental evidence
+        codes are not promoted to newly verified primary experiments.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY522504.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: 'Native-reference audit for jamA: AY522504.1 is the 69,900-nt JHB cluster
+        reference named by BGC0001001. Complete plus-strand CDS 6630..8408 (1-based
+        inclusive), codon_start 1/table 11, translates exactly to the 592-aa GenBank
+        CDS annotation AAS98774.1 and UniProtKB:Q6E7K9. UniProt explicitly cross-references
+        AY522504/AAS98774.1 and the JHB nucleotide report. This is not an independently
+        downloaded GenPept comparison or proof of historical assay-stock/construct
+        identity, function, chemical incorporation or native production.'
+    - reference: https://www.uniprot.org/uniprotkb/Q6E7K7/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: Accepts as substrate the activated form of 5-hexenoic acid from JamA
+      notes: Reviewed UniProtKB Q6E7K7, entry 75/sequence 1, annotation 2026-09-02.
+        UniProt assigns JamC acyl-carrier function and acceptance of activated 5-hexenoic
+        acid from JamA. JamC is a carrier protein, not a separate enzyme or an independently
+        inferred catalytic step. The entry's protein-existence field is Evidence at
+        transcript level. The cited primary papers DOI:10.1016/j.chembiol.2004.03.030
+        and DOI:10.1038/nchembio.1718 were not inspected; database experimental evidence
+        codes are not promoted to newly verified primary experiments.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY522504.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: 'Native-reference audit for jamC: AY522504.1 is the 69,900-nt JHB cluster
+        reference named by BGC0001001. Complete plus-strand CDS 9718..10020 (1-based
+        inclusive), codon_start 1/table 11, translates exactly to the 100-aa GenBank
+        CDS annotation AAS98798.1 and UniProtKB:Q6E7K7. UniProt explicitly cross-references
+        AY522504/AAS98798.1 and the JHB nucleotide report. This is not an independently
+        downloaded GenPept comparison or proof of historical assay-stock/construct
+        identity, function, chemical incorporation or native production.'
+    - reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1454205
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: Lyngbya majuscula JHB
+      notes: NCBI's strain page lists this heterotypic synonym for Moorena producens
+        JHB, NCBITaxon:1454205, the strain identity used by the reviewed JamABC UniProt
+        entries. The older nucleotide source and seeded record use Lyngbya majuscula,
+        NCBITaxon:158786. The strain-specific naming bridge and exact accession/sequence
+        matches do not equate those taxon IDs or replace the owner's source-owned
+        taxonomy assertions.
+  - subject: jama
+    predicate: is_database_assigned_catalyst_of
+    object: loading
+    notes: UniProt's starter-acid activation/loading assignment. This is not final
+      jamaicamide synthesis by JamA or an independently read primary assay.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q6E7K9/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: the loading of the activated 5-hexenoic acid onto the acyl carrier
+        protein JamC
+      notes: Reviewed UniProtKB Q6E7K9, entry 64/sequence 1, annotation 2026-09-02.
+        UniProt assigns JamA activation of the free 5-hexenoic-acid starter followed
+        by loading onto JamC. This is a ligase assignment, not a claim that JamA alone
+        synthesizes the final natural product. The cited primary papers DOI:10.1016/j.chembiol.2004.03.030
+        and DOI:10.1038/nchembio.1718 were not inspected; database experimental evidence
+        codes are not promoted to newly verified primary experiments.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY522504.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: 'Native-reference audit for jamA: AY522504.1 is the 69,900-nt JHB cluster
+        reference named by BGC0001001. Complete plus-strand CDS 6630..8408 (1-based
+        inclusive), codon_start 1/table 11, translates exactly to the 592-aa GenBank
+        CDS annotation AAS98774.1 and UniProtKB:Q6E7K9. UniProt explicitly cross-references
+        AY522504/AAS98774.1 and the JHB nucleotide report. This is not an independently
+        downloaded GenPept comparison or proof of historical assay-stock/construct
+        identity, function, chemical incorporation or native production.'
+    - reference: https://www.uniprot.org/uniprotkb/Q6E7K7/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: Accepts as substrate the activated form of 5-hexenoic acid from JamA
+      notes: Reviewed UniProtKB Q6E7K7, entry 75/sequence 1, annotation 2026-09-02.
+        UniProt assigns JamC acyl-carrier function and acceptance of activated 5-hexenoic
+        acid from JamA. JamC is a carrier protein, not a separate enzyme or an independently
+        inferred catalytic step. The entry's protein-existence field is Evidence at
+        transcript level. The cited primary papers DOI:10.1016/j.chembiol.2004.03.030
+        and DOI:10.1038/nchembio.1718 were not inspected; database experimental evidence
+        codes are not promoted to newly verified primary experiments.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY522504.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: 'Native-reference audit for jamC: AY522504.1 is the 69,900-nt JHB cluster
+        reference named by BGC0001001. Complete plus-strand CDS 9718..10020 (1-based
+        inclusive), codon_start 1/table 11, translates exactly to the 100-aa GenBank
+        CDS annotation AAS98798.1 and UniProtKB:Q6E7K7. UniProt explicitly cross-references
+        AY522504/AAS98798.1 and the JHB nucleotide report. This is not an independently
+        downloaded GenPept comparison or proof of historical assay-stock/construct
+        identity, function, chemical incorporation or native production.'
+    - reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1454205
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: Lyngbya majuscula JHB
+      notes: NCBI's strain page lists this heterotypic synonym for Moorena producens
+        JHB, NCBITaxon:1454205, the strain identity used by the reviewed JamABC UniProt
+        entries. The older nucleotide source and seeded record use Lyngbya majuscula,
+        NCBITaxon:158786. The strain-specific naming bridge and exact accession/sequence
+        matches do not equate those taxon IDs or replace the owner's source-owned
+        taxonomy assertions.
+  - subject: jamc
+    predicate: is_database_asserted_acyl_carrier_acceptor_for
+    object: loading
+    notes: JamC supplies the carrier, not a separate catalytic reaction. No binding
+      constant, direct protein-interaction assay or uninspected experimental phosphopantetheinylation
+      result is inferred.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q6E7K9/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: the loading of the activated 5-hexenoic acid onto the acyl carrier
+        protein JamC
+      notes: Reviewed UniProtKB Q6E7K9, entry 64/sequence 1, annotation 2026-09-02.
+        UniProt assigns JamA activation of the free 5-hexenoic-acid starter followed
+        by loading onto JamC. This is a ligase assignment, not a claim that JamA alone
+        synthesizes the final natural product. The cited primary papers DOI:10.1016/j.chembiol.2004.03.030
+        and DOI:10.1038/nchembio.1718 were not inspected; database experimental evidence
+        codes are not promoted to newly verified primary experiments.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY522504.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: 'Native-reference audit for jamA: AY522504.1 is the 69,900-nt JHB cluster
+        reference named by BGC0001001. Complete plus-strand CDS 6630..8408 (1-based
+        inclusive), codon_start 1/table 11, translates exactly to the 592-aa GenBank
+        CDS annotation AAS98774.1 and UniProtKB:Q6E7K9. UniProt explicitly cross-references
+        AY522504/AAS98774.1 and the JHB nucleotide report. This is not an independently
+        downloaded GenPept comparison or proof of historical assay-stock/construct
+        identity, function, chemical incorporation or native production.'
+    - reference: https://www.uniprot.org/uniprotkb/Q6E7K7/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: Accepts as substrate the activated form of 5-hexenoic acid from JamA
+      notes: Reviewed UniProtKB Q6E7K7, entry 75/sequence 1, annotation 2026-09-02.
+        UniProt assigns JamC acyl-carrier function and acceptance of activated 5-hexenoic
+        acid from JamA. JamC is a carrier protein, not a separate enzyme or an independently
+        inferred catalytic step. The entry's protein-existence field is Evidence at
+        transcript level. The cited primary papers DOI:10.1016/j.chembiol.2004.03.030
+        and DOI:10.1038/nchembio.1718 were not inspected; database experimental evidence
+        codes are not promoted to newly verified primary experiments.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY522504.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: 'Native-reference audit for jamC: AY522504.1 is the 69,900-nt JHB cluster
+        reference named by BGC0001001. Complete plus-strand CDS 9718..10020 (1-based
+        inclusive), codon_start 1/table 11, translates exactly to the 100-aa GenBank
+        CDS annotation AAS98798.1 and UniProtKB:Q6E7K7. UniProt explicitly cross-references
+        AY522504/AAS98798.1 and the JHB nucleotide report. This is not an independently
+        downloaded GenPept comparison or proof of historical assay-stock/construct
+        identity, function, chemical incorporation or native production.'
+    - reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1454205
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: Lyngbya majuscula JHB
+      notes: NCBI's strain page lists this heterotypic synonym for Moorena producens
+        JHB, NCBITaxon:1454205, the strain identity used by the reviewed JamABC UniProt
+        entries. The older nucleotide source and seeded record use Lyngbya majuscula,
+        NCBITaxon:158786. The strain-specific naming bridge and exact accession/sequence
+        matches do not equate those taxon IDs or replace the owner's source-owned
+        taxonomy assertions.
+  - subject: loading
+    predicate: has_database_asserted_product
+    object: hexenoyl_jamc
+    notes: Loaded 5-hexenoyl-JamC as named by UniProt. No free-acid, generic ACP or
+      final-owner identifier is substituted for this covalently loaded state.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q6E7K9/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: the loading of the activated 5-hexenoic acid onto the acyl carrier
+        protein JamC
+      notes: Reviewed UniProtKB Q6E7K9, entry 64/sequence 1, annotation 2026-09-02.
+        UniProt assigns JamA activation of the free 5-hexenoic-acid starter followed
+        by loading onto JamC. This is a ligase assignment, not a claim that JamA alone
+        synthesizes the final natural product. The cited primary papers DOI:10.1016/j.chembiol.2004.03.030
+        and DOI:10.1038/nchembio.1718 were not inspected; database experimental evidence
+        codes are not promoted to newly verified primary experiments.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY522504.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: 'Native-reference audit for jamA: AY522504.1 is the 69,900-nt JHB cluster
+        reference named by BGC0001001. Complete plus-strand CDS 6630..8408 (1-based
+        inclusive), codon_start 1/table 11, translates exactly to the 592-aa GenBank
+        CDS annotation AAS98774.1 and UniProtKB:Q6E7K9. UniProt explicitly cross-references
+        AY522504/AAS98774.1 and the JHB nucleotide report. This is not an independently
+        downloaded GenPept comparison or proof of historical assay-stock/construct
+        identity, function, chemical incorporation or native production.'
+    - reference: https://www.uniprot.org/uniprotkb/Q6E7K7/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: Accepts as substrate the activated form of 5-hexenoic acid from JamA
+      notes: Reviewed UniProtKB Q6E7K7, entry 75/sequence 1, annotation 2026-09-02.
+        UniProt assigns JamC acyl-carrier function and acceptance of activated 5-hexenoic
+        acid from JamA. JamC is a carrier protein, not a separate enzyme or an independently
+        inferred catalytic step. The entry's protein-existence field is Evidence at
+        transcript level. The cited primary papers DOI:10.1016/j.chembiol.2004.03.030
+        and DOI:10.1038/nchembio.1718 were not inspected; database experimental evidence
+        codes are not promoted to newly verified primary experiments.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY522504.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: 'Native-reference audit for jamC: AY522504.1 is the 69,900-nt JHB cluster
+        reference named by BGC0001001. Complete plus-strand CDS 9718..10020 (1-based
+        inclusive), codon_start 1/table 11, translates exactly to the 100-aa GenBank
+        CDS annotation AAS98798.1 and UniProtKB:Q6E7K7. UniProt explicitly cross-references
+        AY522504/AAS98798.1 and the JHB nucleotide report. This is not an independently
+        downloaded GenPept comparison or proof of historical assay-stock/construct
+        identity, function, chemical incorporation or native production.'
+    - reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1454205
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: Lyngbya majuscula JHB
+      notes: NCBI's strain page lists this heterotypic synonym for Moorena producens
+        JHB, NCBITaxon:1454205, the strain identity used by the reviewed JamABC UniProt
+        entries. The older nucleotide source and seeded record use Lyngbya majuscula,
+        NCBITaxon:158786. The strain-specific naming bridge and exact accession/sequence
+        matches do not equate those taxon IDs or replace the owner's source-owned
+        taxonomy assertions.
+  - subject: hexenoyl_jamc
+    predicate: is_database_asserted_substrate_of
+    object: acetylenation
+    notes: The JamB substrate is carrier-bound. UniProt explicitly says JamB cannot
+      use free 5-hexenoic acid or 5-hexenoyl-CoA.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q6E7K8/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: Catalyzes the conversion of 5-hexenoyl loaded onto the acyl carrier
+        protein JamC (5-hexenoyl-JamC) to 5-hexynoyl-JamC
+      notes: Reviewed UniProtKB Q6E7K8, entry 63/sequence 1, annotation 2026-09-02.
+        UniProt assigns JamB acetylenation of carrier-bound 5-hexenoyl-JamC to 5-hexynoyl-JamC.
+        It explicitly excludes free 5-hexenoic acid and 5-hexenoyl-CoA as substrates.
+        Its additional hexanoyl-JamC desaturation annotation is not depicted in this
+        partial branch. The cited primary papers DOI:10.1016/j.chembiol.2004.03.030
+        and DOI:10.1038/nchembio.1718 were not inspected; database experimental evidence
+        codes are not promoted to newly verified primary experiments.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY522504.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: 'Native-reference audit for jamB: AY522504.1 is the 69,900-nt JHB cluster
+        reference named by BGC0001001. Complete plus-strand CDS 8591..9556 (1-based
+        inclusive), codon_start 1/table 11, translates exactly to the 321-aa GenBank
+        CDS annotation AAS98775.1 and UniProtKB:Q6E7K8. UniProt explicitly cross-references
+        AY522504/AAS98775.1 and the JHB nucleotide report. This is not an independently
+        downloaded GenPept comparison or proof of historical assay-stock/construct
+        identity, function, chemical incorporation or native production.'
+    - reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1454205
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: Lyngbya majuscula JHB
+      notes: NCBI's strain page lists this heterotypic synonym for Moorena producens
+        JHB, NCBITaxon:1454205, the strain identity used by the reviewed JamABC UniProt
+        entries. The older nucleotide source and seeded record use Lyngbya majuscula,
+        NCBITaxon:158786. The strain-specific naming bridge and exact accession/sequence
+        matches do not equate those taxon IDs or replace the owner's source-owned
+        taxonomy assertions.
+  - subject: jamb
+    predicate: is_database_assigned_catalyst_of
+    object: acetylenation
+    notes: UniProt's acetylenation assignment for native JamB. Its separately annotated
+      hexanoyl-JamC desaturation branch is not represented here; no cofactor stoichiometry
+      or native assay construct is asserted.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q6E7K8/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: Catalyzes the conversion of 5-hexenoyl loaded onto the acyl carrier
+        protein JamC (5-hexenoyl-JamC) to 5-hexynoyl-JamC
+      notes: Reviewed UniProtKB Q6E7K8, entry 63/sequence 1, annotation 2026-09-02.
+        UniProt assigns JamB acetylenation of carrier-bound 5-hexenoyl-JamC to 5-hexynoyl-JamC.
+        It explicitly excludes free 5-hexenoic acid and 5-hexenoyl-CoA as substrates.
+        Its additional hexanoyl-JamC desaturation annotation is not depicted in this
+        partial branch. The cited primary papers DOI:10.1016/j.chembiol.2004.03.030
+        and DOI:10.1038/nchembio.1718 were not inspected; database experimental evidence
+        codes are not promoted to newly verified primary experiments.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY522504.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: 'Native-reference audit for jamB: AY522504.1 is the 69,900-nt JHB cluster
+        reference named by BGC0001001. Complete plus-strand CDS 8591..9556 (1-based
+        inclusive), codon_start 1/table 11, translates exactly to the 321-aa GenBank
+        CDS annotation AAS98775.1 and UniProtKB:Q6E7K8. UniProt explicitly cross-references
+        AY522504/AAS98775.1 and the JHB nucleotide report. This is not an independently
+        downloaded GenPept comparison or proof of historical assay-stock/construct
+        identity, function, chemical incorporation or native production.'
+    - reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1454205
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: Lyngbya majuscula JHB
+      notes: NCBI's strain page lists this heterotypic synonym for Moorena producens
+        JHB, NCBITaxon:1454205, the strain identity used by the reviewed JamABC UniProt
+        entries. The older nucleotide source and seeded record use Lyngbya majuscula,
+        NCBITaxon:158786. The strain-specific naming bridge and exact accession/sequence
+        matches do not equate those taxon IDs or replace the owner's source-owned
+        taxonomy assertions.
+  - subject: acetylenation
+    predicate: has_database_asserted_product
+    object: hexynoyl_jamc
+    notes: The database-named product is 5-hexynoyl-JamC, not free 5-hexynoic acid
+      and not jamaicamide B. Loaded-intermediate chemistry is ungrounded.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q6E7K8/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: Catalyzes the conversion of 5-hexenoyl loaded onto the acyl carrier
+        protein JamC (5-hexenoyl-JamC) to 5-hexynoyl-JamC
+      notes: Reviewed UniProtKB Q6E7K8, entry 63/sequence 1, annotation 2026-09-02.
+        UniProt assigns JamB acetylenation of carrier-bound 5-hexenoyl-JamC to 5-hexynoyl-JamC.
+        It explicitly excludes free 5-hexenoic acid and 5-hexenoyl-CoA as substrates.
+        Its additional hexanoyl-JamC desaturation annotation is not depicted in this
+        partial branch. The cited primary papers DOI:10.1016/j.chembiol.2004.03.030
+        and DOI:10.1038/nchembio.1718 were not inspected; database experimental evidence
+        codes are not promoted to newly verified primary experiments.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY522504.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: 'Native-reference audit for jamB: AY522504.1 is the 69,900-nt JHB cluster
+        reference named by BGC0001001. Complete plus-strand CDS 8591..9556 (1-based
+        inclusive), codon_start 1/table 11, translates exactly to the 321-aa GenBank
+        CDS annotation AAS98775.1 and UniProtKB:Q6E7K8. UniProt explicitly cross-references
+        AY522504/AAS98775.1 and the JHB nucleotide report. This is not an independently
+        downloaded GenPept comparison or proof of historical assay-stock/construct
+        identity, function, chemical incorporation or native production.'
+    - reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1454205
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: Lyngbya majuscula JHB
+      notes: NCBI's strain page lists this heterotypic synonym for Moorena producens
+        JHB, NCBITaxon:1454205, the strain identity used by the reviewed JamABC UniProt
+        entries. The older nucleotide source and seeded record use Lyngbya majuscula,
+        NCBITaxon:158786. The strain-specific naming bridge and exact accession/sequence
+        matches do not equate those taxon IDs or replace the owner's source-owned
+        taxonomy assertions.
+  - subject: hexynoyl_jamc
+    predicate: is_inferred_upstream_precursor_for
+    object: jamaicamide_b
+    notes: This partial starter-unit mechanism is a UniProt database assertion; its
+      contribution to the exact jamaicamide B owner is a curator inference, not an
+      independently inspected compound-specific experiment. The inference combines
+      explicit jamaicamide starter-unit function, exact native cluster sequence identity,
+      the pinned MIBiG association of B with AY522504.1, and the owner's compatible
+      terminal alkyne. Neither gene neighborhood nor fragment compatibility alone
+      proves the assignment. No atom mapping, intact C6 incorporation proof, final-product
+      synthesis assay, native production/knockout result, balanced reaction, assay
+      construct, or complete numbered pathway is asserted. Carrier-bound intermediates
+      remain ungrounded and distinct from free acids and the final owner. The owner's
+      three alkene configurations and two unspecified tetrahedral centers, source
+      taxon, producer/BGC grades and SEEDED status are unchanged.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q6E7K8/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: Catalyzes the conversion of 5-hexenoyl loaded onto the acyl carrier
+        protein JamC (5-hexenoyl-JamC) to 5-hexynoyl-JamC
+      notes: Reviewed UniProtKB Q6E7K8, entry 63/sequence 1, annotation 2026-09-02.
+        UniProt assigns JamB acetylenation of carrier-bound 5-hexenoyl-JamC to 5-hexynoyl-JamC.
+        It explicitly excludes free 5-hexenoic acid and 5-hexenoyl-CoA as substrates.
+        Its additional hexanoyl-JamC desaturation annotation is not depicted in this
+        partial branch. The cited primary papers DOI:10.1016/j.chembiol.2004.03.030
+        and DOI:10.1038/nchembio.1718 were not inspected; database experimental evidence
+        codes are not promoted to newly verified primary experiments.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY522504.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: 'Native-reference audit for jamB: AY522504.1 is the 69,900-nt JHB cluster
+        reference named by BGC0001001. Complete plus-strand CDS 8591..9556 (1-based
+        inclusive), codon_start 1/table 11, translates exactly to the 321-aa GenBank
+        CDS annotation AAS98775.1 and UniProtKB:Q6E7K8. UniProt explicitly cross-references
+        AY522504/AAS98775.1 and the JHB nucleotide report. This is not an independently
+        downloaded GenPept comparison or proof of historical assay-stock/construct
+        identity, function, chemical incorporation or native production.'
+    - reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1454205
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      snippet: Lyngbya majuscula JHB
+      notes: NCBI's strain page lists this heterotypic synonym for Moorena producens
+        JHB, NCBITaxon:1454205, the strain identity used by the reviewed JamABC UniProt
+        entries. The older nucleotide source and seeded record use Lyngbya majuscula,
+        NCBITaxon:158786. The strain-specific naming bridge and exact accession/sequence
+        matches do not equate those taxon IDs or replace the owner's source-owned
+        taxonomy assertions.
+    - reference: https://github.com/CultureBotAI/NaturalProductMech/blob/ec47f1839841f4be14e4d798510bfc30eb2906fe/data/raw/mibig_compounds.tsv
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-08'
+      notes: 'Already-held pinned MIBiG inventory, BGC0001001 entry version 5, compound
+        index 2: jamaicamide B, KZVHAGNFWJIOMX-GDKFLGFMSA-N, native reference AY522504.1,
+        active/questionable/complete. Its source citation is DOI:10.1016/j.chembiol.2004.03.030;
+        no locus experiment is stated, so CLUSTER_UNSTATED and SOURCE_ASSERTION grades
+        remain. The live MIBiG page was inaccessible; no current-live-entry or newly
+        verified primary-paper claim is made.'
+    - reference: https://github.com/CultureBotAI/NaturalProductMech/blob/ec47f1839841f4be14e4d798510bfc30eb2906fe/data/raw/mibig_compounds.tsv
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-08'
+      notes: This partial starter-unit mechanism is a UniProt database assertion;
+        its contribution to the exact jamaicamide B owner is a curator inference,
+        not an independently inspected compound-specific experiment. The inference
+        combines explicit jamaicamide starter-unit function, exact native cluster
+        sequence identity, the pinned MIBiG association of B with AY522504.1, and
+        the owner's compatible terminal alkyne. Neither gene neighborhood nor fragment
+        compatibility alone proves the assignment. No atom mapping, intact C6 incorporation
+        proof, final-product synthesis assay, native production/knockout result, balanced
+        reaction, assay construct, or complete numbered pathway is asserted. Carrier-bound
+        intermediates remain ungrounded and distinct from free acids and the final
+        owner. The owner's three alkene configurations and two unspecified tetrahedral
+        centers, source taxon, producer/BGC grades and SEEDED status are unchanged.
+        RDKit 2026.03.5 confirms one terminal alkyne in the exact B owner, while A
+        has a brominated alkyne and C an alkene. This is compatibility, not atom-mapped
+        incorporation or full-structure equivalence to 5-hexynoyl-JamC; B is not a
+        direct JamB reaction product.
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -95,3 +745,14 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-08T20:53:50Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added native JamA (UniProtKB:Q6E7K9), JamB (UniProtKB:Q6E7K8) and carrier
+    protein JamC (UniProtKB:Q6E7K7) in a database-qualified starter-unit biosynthesis
+    graph, plus two proposed enzymatic pathway entries. Verified all three full native
+    CDS translations against UniProt. Kept carrier-bound intermediates ungrounded
+    and the final connection to jamaicamide B explicitly CURATOR_INFERENCE. No primary
+    experiment, complete synthesis, taxonomy replacement, producer/BGC grade or status
+    upgrade.
+  llm_assisted: true
