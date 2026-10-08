@@ -194,6 +194,55 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">Database-proposed upstream thienodolin chemistry assigned to native MJ286-76F7 ThdN: 6-chlorotryptophan to 6-chloroindole-3-pyruvic acid. Protein identity is verified independently of functional attribution. The explicit substrate has unspecified stereochemistry; it is not equated with the existing L-specific intermediate. No ThdN assay, ThnJ experiment, balanced reaction, downstream assembly or source-grade upgrade is inferred; not full-record sign-off.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>ThdN native MJ286-76F7 reference</td>
+  <td>is_database_proposed_catalyst_of</td>
+  <td>Database-proposed ThdN aminotransferase conversion</td>
+  <td>Proposed functional assignment from MITE, separate from exact native sequence identity. MITE annotates pyridoxal phosphate and UniProt gives automated PLP-family support; no measured cofactor requirement, occupancy, kinetics, knockout phenotype or physical complex is asserted. Producer SOURCE_ASSERTION and BGC CLUSTER_UNSTATED remain unchanged.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000432.json<br>https://www.uniprot.org/uniprotkb/M1M1P4<br>https://www.ncbi.nlm.nih.gov/protein/ANW12120.1<br>https://www.uniprot.org/uniparc/UPI0002B7707F<br>https://www.ncbi.nlm.nih.gov/nuccore/KU569241.1</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000432.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>MITE0000432 version 1, active, names ThdN as an aminotransferase and ThnJ homolog, with ANW12120.1, UniParc UPI0002B7707F and BGC0001374. Its knockout evidence code remains a database annotation, not a verified ThdN-specific knockout or enzyme assay. Both cited primary papers were inaccessible; no ThnJ experiment is transferred to ThdN.</dd><dt>snippet</dt><dd>ThdN (homologue to ThnJ) converts 6-chlorotryptophan to 6-chloroindole-3-pyruvate</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/M1M1P4</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Unreviewed TrEMBL entry 36, sequence 1; thdN, taxon1887, 383 residues; KU569241/ANW12120.1 cross-reference and MJ286-76F7 sequence-reference strain. Protein existence is inferred from homology; no FUNCTION or CATALYTIC ACTIVITY comment. Automated PLP/class-II aminotransferase annotations support family context, not compound-specific activity or experimentally established cofactor state. Histidinol-phosphate-family labels are not adopted as thienodolin chemistry.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/ANW12120.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Complete independent GenPept reference: 383 residues, aminotransferase, thdN, Streptomyces albogriseolus MJ286-76F7/taxon1887; coded_by KU569241.1:13601..14752, table11.</dd><dt>snippet</dt><dd>/gene=&#34;thdN&#34;</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI0002B7707F</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Complete archive sequence equals ANW12120.1 and current active UniProtKB:M1M1P4; active archive cross-references agree. MITE&#39;s uniprot field contains a UniParc ID, not a UniProtKB accession. The older KC182555/AGF50181 reference was not independently reverified.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/KU569241.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-07</dd><dt>notes</dt><dd>Retained native genome retrieved 2026-10-07, reverified 2026-10-08. Complete 1152-nt plus-strand CDS13601..14752, codon1/table11, translates exactly to its annotation, independent GenPept, UniParc and current UniProtKB, all 383 residues. Source qualifiers identify MJ286-76F7/taxon1887. This establishes native reference identity, not expression, historical assay-stock, transcript or engineered-construct identity.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>6-Chlorotryptophan, stereochemistry unspecified</td>
+  <td>is_database_proposed_substrate_of</td>
+  <td>Database-proposed ThdN aminotransferase conversion</td>
+  <td>Structure-level grounding only: unspecified stereochemistry is neither an L-specific assignment nor proof of a racemate. Do not equate this node with CHEBI:139335 in the separate ThdH/ThdF graph. Amino acceptor and other participants are not specified; this graph is not a complete balanced reaction.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000432.json<br>https://pubchem.ncbi.nlm.nih.gov/compound/65259</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000432.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>The sole explicit example encodes NC(Cc1c[nH]c2cc(Cl)ccc12)C(=O)O without alpha-carbon stereochemistry. It is marked isIntermediate:true. The source&#39;s Deamination category is not evidence for a dehydrogenase or oxidative mechanism.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://pubchem.ncbi.nlm.nih.gov/compound/65259</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Inspected PubChem property response supplies the neutral structure, formula C11H11ClN2O2 and full Standard InChIKey FICLVQOYKYBXFN-UHFFFAOYSA-N. Independent RDKit2026.03.5 calculation from both PubChem and MITE SMILES agrees, with one unassigned stereocenter.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Database-proposed ThdN aminotransferase conversion</td>
+  <td>has_database_proposed_product</td>
+  <td>6-Chloroindole-3-pyruvic acid</td>
+  <td>Exact example product only, not thienodolin, a 7-chloro regioisomer, an imine or an experimentally measured ThdN product. No amino acceptor, co-product, reaction-class identifier or downstream catalyst is invented.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000432.json<br>https://pubchem.ncbi.nlm.nih.gov/compound/9794717</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000432.json</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>The sole explicit example product O=C(O)C(=O)Cc1c[nH]c2cc(Cl)ccc12 is the neutral 6-chloro ketoacid, despite the description&#39;s pyruvate wording. Only this example is adopted; the atom-mapped SMARTS is neither executed nor adopted as a transformation rule.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://pubchem.ncbi.nlm.nih.gov/compound/9794717</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>Inspected PubChem property response supplies formula C11H8ClNO3, the neutral ketoacid structure and full Standard InChIKey OPEYVSOLSLAQTQ-UHFFFAOYSA-N. Independent RDKit2026.03.5 calculations from PubChem and MITE SMILES give identical full InChI, key and formula; neither structure has a stereocenter.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>6-Chloroindole-3-pyruvic acid</td>
+  <td>is_database_proposed_upstream_precursor_of</td>
+  <td>thienodolin</td>
+  <td>Proposed upstream relationship, not a direct ThdN reaction yielding thienodolin. No number or order of intervening steps is asserted. Existing ThdD and ThdH/ThdF graphs, producer/cluster grades, occurrences and SEEDED status are preserved.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000432.json<br>https://github.com/CultureBotAI/NaturalProductMech/blob/1e9809dc8cfbc2b53c56101d3c2a9fc97967f277/data/raw/mibig_compounds.tsv</summary><ul><li><dl><dt>reference</dt><dd>https://github.com/mite-standard/mite_data/blob/6eacd913b2036376031072f69cbb33908f132998/mite_data/data/MITE0000432.json</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>MITE links ThdN to BGC0001374 and flags this example as an intermediate. Together with the uniquely matched adopted MIBiG compound row, this supports proposed upstream pathway context only.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://github.com/CultureBotAI/NaturalProductMech/blob/1e9809dc8cfbc2b53c56101d3c2a9fc97967f277/data/raw/mibig_compounds.tsv</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-08</dd><dt>notes</dt><dd>The adopted BGC0001374 version 5 row is unique, active and names thienodolin with owner full key LREDECYEGMWOAR-UHFFFAOYSA-N, taxon1887 and KU569241.1. Locus bounds and locus evidence methods are empty; entry quality questionable and completeness unknown are not experiment grades. The inventory supplies compound/BGC context, not proof of ThdN chemistry.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
