@@ -120,6 +120,106 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-6466e43f26
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A7NH01
+  enzyme_label: (+)-T-muurolol synthase Rcas_0622 (reference accession)
+  product: CHEBI:63704
+  proposed: false
+  notes: FPP is the assayed substrate; no charge-specific substrate CURIE is assigned.
+    This is an in-vitro step, not a demonstrated native pathway. The corresponding
+    graph documents product stereochemical mapping. Full construct/tag sequence was
+    not verified; canonical identity does not establish construct equivalence.
+  evidence:
+  - reference: DOI:10.3762/bjoc.12.173
+    evidence_type: PRIMARY_EXPERIMENT
+    notes: 'Results, Figure 1 compound 2, Table 1 and Experimental: purified recombinant
+      WP_012119179 converts FPP to (+)-T-muurolol in vitro; NMR and optical rotation
+      establish product identity.'
+    retrieved_on: '2026-10-09'
+    snippet: (1R,6S,7R,10R)-(+)-T-muurolol
+  - reference: https://www.uniprot.org/uniprotkb/A7NH01
+    evidence_type: DATABASE_ASSERTION
+    notes: 'Reviewed Rcas_0622 reference: Roseiflexus castenholzii DSM 13941 / HLO8,
+      taxon 383372, 326 aa; entry version 77, sequence version 1. The accession denotes
+      the native reference, not a verified full recombinant construct.'
+    retrieved_on: '2026-10-09'
+  - reference: https://www.ncbi.nlm.nih.gov/protein/ABU56748.1
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Sequence comparison: A7NH01 equals the paper-named WP_012119179.1, this
+      strain-specific deposit and the independent translation of complement(CP000804.1:820924..821904).
+      The RefSeq protein is nonredundant at species level; the deposit supplies strain
+      context.'
+    retrieved_on: '2026-10-09'
+causal_graphs:
+- graph_id: muurolol-rcas0622-in-vitro
+  scope: BIOSYNTHESIS
+  description: Purified recombinant Rcas_0622 from Roseiflexus castenholzii DSM 13941,
+    expressed in E. coli BL21. The canonical accession grounds the protein reference;
+    full construct/tag sequence is unverified. No native-production, physical-complex,
+    or organism-specific Mg-binding claim is added. The supplementary spectra were
+    inaccessible; the main text and Figure 1 were inspected.
+  nodes:
+  - node_id: rcas0622
+    label: Rcas_0622 (recombinant; reference accession)
+    node_type: ENZYME
+    identifier: UniProtKB:A7NH01
+    grounding_status: GROUNDED
+  - node_id: fpp_conversion
+    label: In-vitro FPP conversion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: muurolol
+    label: (+)-Τ-muurolol
+    node_type: COMPOUND
+    identifier: CHEBI:63704
+    grounding_status: GROUNDED
+  edges:
+  - subject: rcas0622
+    predicate: catalyzes
+    object: fpp_conversion
+    evidence:
+    - reference: DOI:10.3762/bjoc.12.173
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Results, Figure 1 compound 2, Table 1 and Experimental: purified recombinant
+        WP_012119179 converts FPP to (+)-T-muurolol in vitro; NMR and optical rotation
+        establish product identity.'
+      retrieved_on: '2026-10-09'
+      snippet: Incubation of FPP
+    - reference: https://www.uniprot.org/uniprotkb/A7NH01
+      evidence_type: DATABASE_ASSERTION
+      notes: 'Reviewed Rcas_0622 reference: Roseiflexus castenholzii DSM 13941 / HLO8,
+        taxon 383372, 326 aa; entry version 77, sequence version 1. The accession
+        denotes the native reference, not a verified full recombinant construct.'
+      retrieved_on: '2026-10-09'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABU56748.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Sequence comparison: A7NH01 equals the paper-named WP_012119179.1, this
+        strain-specific deposit and the independent translation of complement(CP000804.1:820924..821904).
+        The RefSeq protein is nonredundant at species level; the deposit supplies
+        strain context.'
+      retrieved_on: '2026-10-09'
+  - subject: fpp_conversion
+    predicate: yields
+    object: muurolol
+    notes: The main product is represented; this does not assert exclusive product
+      specificity.
+    evidence:
+    - reference: DOI:10.3762/bjoc.12.173
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Results, Figure 1 compound 2, Table 1 and Experimental: purified recombinant
+        WP_012119179 converts FPP to (+)-T-muurolol in vitro; NMR and optical rotation
+        establish product identity.'
+      retrieved_on: '2026-10-09'
+      snippet: the formation of the sesquiterpene alcohol 2
+    - reference: DOI:10.3762/bjoc.12.173
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Figure 1 atom mapping: paper 10,7,6,1 correspond to definition positions
+        1,4,4a,8a. The reported 1R,6S,7R,10R thus agrees with owner 1R,4R,4aS,8aR.
+        RDKit 2024.03.5 confirms connectivity, all four configurations and the unchanged
+        InChI/InChIKey LHYHMMRYTDARSZ-KBUPBQIOSA-N. This is curator identity mapping,
+        not independent spectrum reanalysis.'
+      retrieved_on: '2026-10-09'
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -129,3 +229,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-09T07:32:27Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add one Rcas_0622/A7NH01 reference-grounded pathway step and a two-edge
+    BIOSYNTHESIS graph for recombinant conversion of FPP to (+)-T-muurolol. Record
+    primary evidence, source-to-owner stereochemical mapping and exact native reference
+    equality, without claiming full assayed-construct identity or native production.
+    Preserve source-owned claims, chemistry, history and SEEDED status.
+  llm_assisted: true
