@@ -1,0 +1,137 @@
+record_id: CHEBI:27547
+standard_inchi_key: JKQXZKUSFCKOGQ-QAYBQHTQSA-N
+graph:
+  graph_id: zeaxanthin-crtz-q9spk6-database
+  scope: BIOSYNTHESIS
+  description: CrtZ (H. lacustris fragment example) for annotated overall beta-carotene
+    hydroxylation. Deliberately selected organism-specific database example. Not the
+    Xanthobacter autotrophicus Py2 BGC0000656 enzyme; no producer, occurrence or BGC
+    evidence upgrade. Separate examples are not a multi-organism pathway, physical
+    assembly or native-production experiment.
+  nodes:
+  - node_id: crtz
+    label: CrtZ (H. lacustris fragment example)
+    node_type: ENZYME
+    identifier: UniProtKB:Q9SPK6
+    grounding_status: GROUNDED
+  - node_id: hydroxylation
+    label: Database-assigned carotene hydroxylation
+    node_type: PROCESS
+    identifier: RHEA:30331
+    grounding_status: GROUNDED
+  - node_id: beta_carotene
+    label: beta-carotene
+    node_type: PRECURSOR
+    identifier: CHEBI:17579
+    grounding_status: GROUNDED
+  - node_id: zeaxanthin
+    label: zeaxanthin
+    node_type: COMPOUND
+    identifier: CHEBI:27547
+    grounding_status: GROUNDED
+  edges:
+  - subject: crtz
+    predicate: is_database_proposed_catalyst_of
+    object: hydroxylation
+    notes: Deliberately selected organism-specific database example. Not the Xanthobacter
+      autotrophicus Py2 BGC0000656 enzyme; no producer, occurrence or BGC evidence
+      upgrade. Separate examples are not a multi-organism pathway, physical assembly
+      or native-production experiment.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9SPK6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry63/sequence1, 322-aa Fragment,Precursor, protein
+        existence2 at transcript level. The exact overall RHEA:30331 assignment is
+        ECO:0000250 from Q9SZZ8. FUNCTION also mentions astaxanthin, but no astaxanthin-owner
+        or additional reaction is adopted. The cited primary functional paper was
+        not independently accessible. No claim that the fragment is a full-length
+        native enzyme or the assayed construct. Rhea is read through UniProt, not
+        a new Rhea retrieval. No independently measured stereoselectivity or stoichiometric
+        flux.
+      snippet: Hydroxylates beta-ring of beta-carotene
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF162276.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The full1608nt mRNA and GenPept AAD54243.1 name Haematococcus lacustris/taxon44745,
+        with no strain qualifier; H.pluvialis is the entry synonym. The partial CDS
+        <1..971 has codon_start3. Standard table1 translation (no explicit transl_table
+        qualifier) of the reported frame yields the exact322aa deposited and UniProt
+        fragment plus terminal stop. This does not recover the missing N-terminus
+        or establish a full-length CDS. Predicted transit cleavage at68/69 and membrane
+        topology do not define an independently verified mature enzyme or assay construct.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:27547
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The inspected UniProt overall reaction cross-references CHEBI:17579 and
+        CHEBI:27547. The same-day ChEBI255 cache receipt identifies neutral beta-carotene
+        as OENHQHLEOONYIE-JLTXGRSLSA-N and stereospecified neutral zeaxanthin as JKQXZKUSFCKOGQ-QAYBQHTQSA-N,
+        the exact owner. This is annotation-to-owner correspondence, not an independent
+        assay stereochemical measurement. No meso-zeaxanthin, other geometrical isomer,
+        astaxanthin or glycoside transfer.
+  - subject: beta_carotene
+    predicate: is_database_proposed_substrate_of
+    object: hydroxylation
+    notes: Principal carotenoid substrate only; electron donors, oxygen, protons and
+      water are not graph participants. No independently verified cofactor specificity.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9SPK6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry63/sequence1, 322-aa Fragment,Precursor, protein
+        existence2 at transcript level. The exact overall RHEA:30331 assignment is
+        ECO:0000250 from Q9SZZ8. FUNCTION also mentions astaxanthin, but no astaxanthin-owner
+        or additional reaction is adopted. The cited primary functional paper was
+        not independently accessible. No claim that the fragment is a full-length
+        native enzyme or the assayed construct. Rhea is read through UniProt, not
+        a new Rhea retrieval. No independently measured stereoselectivity or stoichiometric
+        flux.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:27547
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The inspected UniProt overall reaction cross-references CHEBI:17579 and
+        CHEBI:27547. The same-day ChEBI255 cache receipt identifies neutral beta-carotene
+        as OENHQHLEOONYIE-JLTXGRSLSA-N and stereospecified neutral zeaxanthin as JKQXZKUSFCKOGQ-QAYBQHTQSA-N,
+        the exact owner. This is annotation-to-owner correspondence, not an independent
+        assay stereochemical measurement. No meso-zeaxanthin, other geometrical isomer,
+        astaxanthin or glycoside transfer.
+  - subject: hydroxylation
+    predicate: has_database_proposed_product
+    object: zeaxanthin
+    notes: Overall annotated product, not a single elementary event, independently
+      measured stereoselectivity or final metabolite in every source organism.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9SPK6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry63/sequence1, 322-aa Fragment,Precursor, protein
+        existence2 at transcript level. The exact overall RHEA:30331 assignment is
+        ECO:0000250 from Q9SZZ8. FUNCTION also mentions astaxanthin, but no astaxanthin-owner
+        or additional reaction is adopted. The cited primary functional paper was
+        not independently accessible. No claim that the fragment is a full-length
+        native enzyme or the assayed construct. Rhea is read through UniProt, not
+        a new Rhea retrieval. No independently measured stereoselectivity or stoichiometric
+        flux.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:27547
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The inspected UniProt overall reaction cross-references CHEBI:17579 and
+        CHEBI:27547. The same-day ChEBI255 cache receipt identifies neutral beta-carotene
+        as OENHQHLEOONYIE-JLTXGRSLSA-N and stereospecified neutral zeaxanthin as JKQXZKUSFCKOGQ-QAYBQHTQSA-N,
+        the exact owner. This is annotation-to-owner correspondence, not an independent
+        assay stereochemical measurement. No meso-zeaxanthin, other geometrical isomer,
+        astaxanthin or glycoside transfer.
+curation_history:
+- timestamp: '2026-10-09T18:08:21Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added qualified O49815 canonical and Q9SPK6 fragment examples: two BIOSYNTHESIS
+    graphs, six cited edges, two unnumbered proposed pathway entries and two UniProt
+    snippets. Preserved the pepper original-versus-canonical six-residue conflict,
+    Valencia versus unstated cultivar, provisional RefSeq provenance and the algal
+    partial CDS/codon3 limits. Functions remain database assertions; no new primary
+    experiment, assay-construct equality, native-production or BGC upgrade. Migrated
+    all three existing graphs without changing their content into exact-owner components
+    to retain full evidence within64KiB. Preserved all existing pathway entries, seeder
+    fields, prior history and SEEDED status; no full-record sign-off. Component zeaxanthin-crtz-q9spk6-database.'
+  llm_assisted: true
