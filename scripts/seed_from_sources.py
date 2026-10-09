@@ -313,6 +313,8 @@ def carry_curator_owned_fields(payload: dict[str, Any], existing: dict[str, Any]
     if not standard_inchi_key or standard_inchi_key != _standard_inchi_key(existing):
         return
 
+    # Copy once to preserve YAML anchors shared across curator-owned sections.
+    existing = deepcopy(existing)
     curator_discussions = {}
     for discussion in existing.get("discussions") or []:
         if not isinstance(discussion, dict):
@@ -343,8 +345,9 @@ def carry_curator_owned_fields(payload: dict[str, Any], existing: dict[str, Any]
     # which is right: the condition that prompted it is gone.
     answered = {d.get("discussion_id"): d for d in existing.get("discussions") or []
                 if isinstance(d, dict) and d.get("discussion_id")}
-    for discussion in payload.get("discussions") or []:
+    for index, discussion in enumerate(payload.get("discussions") or []):
         if discussion.get("discussion_id") in curator_discussions:
+            payload["discussions"][index] = curator_discussions[discussion["discussion_id"]]
             continue
         # This adjudication is owned by the pinned curation table, not the YAML.
         if discussion.get("discussion_id") == "source-structure-correction":
@@ -359,7 +362,7 @@ def carry_curator_owned_fields(payload: dict[str, Any], existing: dict[str, Any]
     present = {d.get("discussion_id") for d in payload.get("discussions") or []}
     for discussion_id, discussion in curator_discussions.items():
         if discussion_id not in present:
-            payload.setdefault("discussions", []).append(deepcopy(discussion))
+            payload.setdefault("discussions", []).append(discussion)
     # A curator-only discussion section must be emitted before the audit trail.
     if "curation_history" in existing:
         payload["curation_history"] = existing["curation_history"]

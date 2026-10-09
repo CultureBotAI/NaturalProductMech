@@ -1153,6 +1153,20 @@ def test_curator_only_discussions_precede_history(host_symbiont_discussion):
     assert existing["discussions"][0] == thread
 
 
+def test_repeated_carry_retains_shared_evidence_without_mutating_the_original():
+    evidence = [{"reference": "https://example.org/synthetic-test"}]
+    existing = {**_structure(), "biosynthetic_pathway": [{"evidence": evidence}],
+                "discussions": [{"discussion_id": "curator-choice", "prompt": "Which?",
+                                 "evidence": evidence}]}
+    before = deepcopy(existing)
+    payload = _structure()
+    for _ in range(2):
+        seed.carry_curator_owned_fields(payload, existing)
+        assert payload["biosynthetic_pathway"][0]["evidence"] is payload["discussions"][0]["evidence"]
+    payload["discussions"][0]["evidence"][0]["reference"] = "changed copy"
+    assert existing == before
+
+
 @pytest.mark.parametrize("old_key,new_key", [("OLD", "NEW"), (None, None), ("OLD", None)])
 def test_curator_discussions_require_matching_structure(old_key, new_key):
     existing = {**_structure(old_key), "discussions": [
@@ -1207,6 +1221,32 @@ def test_curator_discussion_reseeds_byte_identically(tmp_path, monkeypatch,
         assert seed.write_records(seed.build_records(inventories)) == 1
         assert path.read_bytes() == original
         assert yaml.safe_load(path.read_text())["curation_history"] == original_history
+
+
+def test_reseed_preserves_evidence_aliases_across_curator_sections(
+        tmp_path, monkeypatch, host_symbiont_discussion):
+    corpus = tmp_path / "data" / "natural_products"
+    monkeypatch.setattr(seed, "REPO_ROOT", tmp_path)
+    monkeypatch.setattr(seed, "CORPUS_DIR", corpus)
+    monkeypatch.setattr(seed, "PATHS_FILE", corpus / "PATHS.tsv")
+    generated = seed.build_records({"mibig_compounds": [MIBIG_ROW]})[0]
+    path = seed.record_path(generated["np_pathway"], generated["_slug"])
+    payload = {k: v for k, v in generated.items() if not k.startswith(seed.INTERNAL_PREFIX)}
+    evidence = [{"reference": "https://example.org/synthetic-test"}]
+    payload["biosynthetic_pathway"] = [{"enzyme_label": "Synthetic test enzyme",
+                                       "evidence": evidence}]
+    payload["discussions"] = [
+        {**host_symbiont_discussion, "discussion_id": "curator-first", "evidence": evidence},
+        {**host_symbiont_discussion, "discussion_id": "curator-second", "evidence": evidence},
+    ]
+    seed.record_curation_event(payload, curator="test", action="RECORD_CURATED",
+                               changes="Record synthetic shared-evidence fixtures.")
+    seed.write_validated_natural_product(payload, path)
+    original = path.read_bytes()
+    assert b"&id" in original and b"*id" in original
+    assert seed.write_records([generated]) == 1
+    assert yaml.safe_load(path.read_bytes()) == yaml.safe_load(original)
+    assert path.read_bytes() == original
 
 
 def test_nothing_is_carried_across_a_different_structure():
