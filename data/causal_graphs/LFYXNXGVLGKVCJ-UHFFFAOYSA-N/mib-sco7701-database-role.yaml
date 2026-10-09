@@ -1,0 +1,70 @@
+record_id: naturalproductmech:mibig-0eb8c93c6f
+standard_inchi_key: LFYXNXGVLGKVCJ-UHFFFAOYSA-N
+graph:
+  graph_id: mib-sco7701-database-role
+  scope: BIOSYNTHESIS
+  description: An independently database-attributed role, not a shared native pathway
+    with the other reference proteins. The owner retains unspecified stereochemistry
+    and existing source grades.
+  nodes:
+  - node_id: sco7701
+    label: SCO7701 (geranyl diphosphate 2-C-methyltransferase; database-supported)
+    node_type: ENZYME
+    identifier: UniProtKB:Q9F1Y5
+    grounding_status: GROUNDED
+  - node_id: mib
+    label: 2-methylisoborneol (stereochemistry unspecified)
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-0eb8c93c6f
+    grounding_status: GROUNDED
+  edges:
+  - subject: sco7701
+    predicate: is_database_annotated_biosynthetic_enzyme_for
+    object: mib
+    notes: SCO7701/Q9F1Y5, 292 aa, is the native canonical reference. The non-proposed
+      assignment reflects UniProt experimental attribution, not a newly inspected
+      primary assay. The database assigns GPP methylation to 2-MeGPP in methylisoborneol
+      biosynthesis; this edge does not assert that the methyltransferase alone produces
+      2-MIB. Genomic A3(2), 1147, the UniProt M145 label and the cited NRRL B-16638
+      stock are not equated. No exact construct, reaction order, kinetics, shell-cargo
+      relationship, native producer/BGC grade or stereochemical upgrade is asserted.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9F1Y5/entry
+      evidence_type: DATABASE_ASSERTION
+      snippet: SAM-dependent methylation of geranyl diphosphate (GPP)
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry 125, sequence 1. Function uses ECO:0000269/PMID:18563898;
+        its publication annotation includes PATHWAY and names methylisoborneol biosynthesis.
+        This is the inspected database assertion, not newly inspected primary evidence.
+        The cited DOI:10.1021/ja803639g and correction DOI:10.1021/ja104306p are access-held;
+        no kinetic values are adopted. The cited assay stock is A3(2)/NRRL B-16638,
+        not established here as identical to the genomic stocks.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAC44557.1
+      evidence_type: CURATOR_INFERENCE
+      snippet: SCO7701
+      retrieved_on: '2026-10-09'
+      notes: Native A3(2), taxon 100226, forward AL939132.1:172868..173746. All 292
+        residues match UniProt, GenPept, the annotated CDS and independent table-11
+        translation. This is canonical-reference identity, not an experimental construct.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAB20434.1
+      evidence_type: CURATOR_INFERENCE
+      snippet: orf4
+      retrieved_on: '2026-10-09'
+      notes: Native strain 1147, taxon 1902, forward AB035202.1:5872..6750. The CDS
+        and 292-aa translation exactly match the A3(2) reference. Sequence equality
+        does not equate strains or identify the cited assay stock.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/WP_011031840.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: WP_011031840.1
+      retrieved_on: '2026-10-09'
+      notes: Exact 292-aa reference; this RefSeq is multispecies (taxon 1883), not
+        a strain assignment.
+curation_history:
+- timestamp: '2026-10-09T03:55:48Z'
+  curator: OpenAI Codex
+  action: RECORD_CURATED
+  changes: Migrate graph mib-sco7701-database-role unchanged from data/natural_products/terpenoids/2-methylisoborneol.yaml,
+    owner naturalproductmech:mibig-0eb8c93c6f, source commit 46837550f8903f16ac8a84de836908f5ce947929.
+    Preserve every node, edge, evidence item and snippet; prior audit history remains
+    on the owner.
+  llm_assisted: true

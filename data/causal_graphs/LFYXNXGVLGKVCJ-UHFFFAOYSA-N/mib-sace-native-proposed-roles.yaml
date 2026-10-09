@@ -1,0 +1,99 @@
+record_id: naturalproductmech:mibig-0eb8c93c6f
+standard_inchi_key: LFYXNXGVLGKVCJ-UHFFFAOYSA-N
+graph:
+  graph_id: mib-sace-native-proposed-roles
+  scope: BIOSYNTHESIS
+  description: Two proposed enzyme roles from the adopted NRRL 2338 locus, distinct
+    from the NBRC 13350 graph. Exact native-reference identities are grounded; function
+    remains database-inferred. No native-strain assay, exact reaction, shell-cargo
+    mapping or stereochemical resolution is added.
+  nodes:
+  - node_id: sace_3721
+    label: SACE_3721 (geranyl diphosphate 2-C-methyltransferase; proposed)
+    node_type: ENZYME
+    identifier: UniProtKB:A4FG18
+    grounding_status: GROUNDED
+  - node_id: sace_3722
+    label: SACE_3722 (2-methylisoborneol synthase; proposed)
+    node_type: ENZYME
+    identifier: UniProtKB:A4FG19
+    grounding_status: GROUNDED
+  - node_id: mib
+    label: 2-methylisoborneol (stereochemistry unspecified)
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-0eb8c93c6f
+    grounding_status: GROUNDED
+  edges:
+  - subject: sace_3721
+    predicate: is_database_proposed_biosynthetic_enzyme_for
+    object: mib
+    notes: SACE_3721/CAM02993.1, 285 aa. Native-reference assignment in Saccharopolyspora
+      erythraea NRRL 2338 (NCBITaxon:405948). The UniProt functional annotation is
+      curator inference (ECO:0000305), not an isolated-enzyme assay for this sequence.
+      The adopted MIBiG BGC0000659 v3 locus supports the proposed compound association.
+      No exact assayed construct, reaction, pathway order, stereochemical assignment,
+      shell-cargo relationship or producer/locus evidence upgrade is asserted.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A4FG18/entry
+      evidence_type: DATABASE_ASSERTION
+      snippet: Catalyzes the SAM-dependent methylation of geranyl diphosphate (GPP)
+        to yield (E)-2-methylgeranyl diphosphate (2-MeGPP)
+      retrieved_on: '2026-10-09'
+      notes: UniProtKB release 2026_03, reviewed entry 79, sequence 1. Function uses
+        ECO:0000305 citing PMID:18492804; the database assertion is not newly inspected
+        primary experimental evidence. The IDA process annotation does not establish
+        this exact catalytic reaction.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAM02993.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: SACE_3721
+      retrieved_on: '2026-10-09'
+      notes: Native NRRL 2338 reference, reverse-strand AM420293.1:4075163..4076020.
+        All 285 residues agree across UniProt, GenPept, the annotated CDS and independent
+        table-11 translation. Identity evidence only.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000659/
+      evidence_type: CURATOR_INFERENCE
+      notes: Uses the committed MIBiG compound inventory, entry version 3, not a live
+        refresh. The matching taxon, AM420293.1 locus 4075163..4077099 and 2-methylisoborneol
+        connectivity contextualize the proposed role. SOURCE_ASSERTION and CLUSTER_UNSTATED
+        grades are retained.
+  - subject: sace_3722
+    predicate: is_database_proposed_biosynthetic_enzyme_for
+    object: mib
+    notes: SACE_3722/CAM02994.1, 354 aa. Native-reference assignment in Saccharopolyspora
+      erythraea NRRL 2338 (NCBITaxon:405948). The UniProt functional annotation is
+      curator inference (ECO:0000305), not an isolated-enzyme assay for this sequence.
+      The adopted MIBiG BGC0000659 v3 locus supports the proposed compound association.
+      No exact assayed construct, reaction, pathway order, stereochemical assignment,
+      shell-cargo relationship or producer/locus evidence upgrade is asserted.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A4FG19/entry
+      evidence_type: DATABASE_ASSERTION
+      snippet: Catalyzes the cyclization of 2-methylgeranyl diphosphate (2-MeGPP)
+        to 2-methylisoborneol (2-MIB)
+      retrieved_on: '2026-10-08'
+      notes: UniProtKB release 2026_03, reviewed entry 85, sequence 1. Function uses
+        ECO:0000305 citing PMID:18492804; the database assertion is not newly inspected
+        primary experimental evidence. The IDA process annotation does not establish
+        this exact catalytic reaction.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAM02994.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: SACE_3722
+      retrieved_on: '2026-10-09'
+      notes: Native NRRL 2338 reference, reverse-strand AM420293.1:4076035..4077099.
+        All 354 residues agree across UniProt, GenPept, the annotated CDS and independent
+        table-11 translation. Identity evidence only.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000659/
+      evidence_type: CURATOR_INFERENCE
+      notes: Uses the committed MIBiG compound inventory, entry version 3, not a live
+        refresh. The matching taxon, AM420293.1 locus 4075163..4077099 and 2-methylisoborneol
+        connectivity contextualize the proposed role. SOURCE_ASSERTION and CLUSTER_UNSTATED
+        grades are retained.
+curation_history:
+- timestamp: '2026-10-09T03:55:48Z'
+  curator: OpenAI Codex
+  action: RECORD_CURATED
+  changes: Migrate graph mib-sace-native-proposed-roles unchanged from data/natural_products/terpenoids/2-methylisoborneol.yaml,
+    owner naturalproductmech:mibig-0eb8c93c6f, source commit 46837550f8903f16ac8a84de836908f5ce947929.
+    Preserve every node, edge, evidence item and snippet; prior audit history remains
+    on the owner.
+  llm_assisted: true

@@ -613,518 +613,93 @@ biosynthetic_pathway:
     retrieved_on: '2026-10-09'
     notes: Exact 437-aa species-level RefSeq, taxon 1911, without a strain qualifier.
       Its automatic encapsulin-cargo name is not adopted as functional evidence.
-causal_graphs:
-- graph_id: mib-sgr-native-proposed-roles
-  scope: BIOSYNTHESIS
-  description: Two proposed enzyme roles for the adopted NBRC 13350 locus. Native-reference
-    protein identities are grounded; functional evidence is automated, not an assayed-sequence
-    claim. The owner retains its unspecified stereochemistry. SGR_1270/SgEnc and the
-    cyanobacterial same-name record with different connectivity are not mapped here.
-  nodes:
-  - node_id: sgr_1268
-    label: SGR_1268 (geranyl diphosphate 2-C-methyltransferase; proposed)
-    node_type: ENZYME
-    identifier: UniProtKB:B1VVB3
-    grounding_status: GROUNDED
-  - node_id: sgr_1269
-    label: SGR_1269 (2-methylisoborneol synthase; proposed)
-    node_type: ENZYME
-    identifier: UniProtKB:B1VVB4
-    grounding_status: GROUNDED
-  - node_id: mib
-    label: 2-methylisoborneol (stereochemistry unspecified)
-    node_type: COMPOUND
-    identifier: naturalproductmech:mibig-0eb8c93c6f
-    grounding_status: GROUNDED
-  edges:
-  - subject: sgr_1268
-    predicate: is_database_proposed_biosynthetic_enzyme_for
-    object: mib
-    notes: SGR_1268/BAG18097.1, 292 aa. Native-reference assignment in Streptomyces
-      griseus subsp. griseus NBRC 13350 (NCBITaxon:455632), not an identified assayed
-      construct. UniProt automated function and the adopted MIBiG BGC0000658 v3 locus
-      support a proposed biosynthetic role. No new primary experiment, exact reaction,
-      stereochemical assignment, pathway order, shell-cargo relationship or producer/locus
-      evidence upgrade is asserted.
-    evidence:
-    - reference: https://www.uniprot.org/uniprotkb/B1VVB3/entry
-      evidence_type: DATABASE_ASSERTION
-      snippet: Catalyzes the SAM-dependent methylation of geranyl diphosphate (GPP)
-        to yield (E)-2-methylgeranyl diphosphate (2-MeGPP)
-      retrieved_on: '2026-10-08'
-      notes: UniProtKB release 2026_03, unreviewed entry 74, sequence 1. Automated
-        ECO:0000256 annotation, not direct experimental evidence for this sequence.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/BAG18097.1
-      evidence_type: DATABASE_ASSERTION
-      snippet: SGR_1268
-      retrieved_on: '2026-10-09'
-      notes: Native NBRC 13350 reference, 292 aa, reverse-strand AP009493.1:1490671..1491549.
-        GenPept, UniProt, annotated CDS and table-11 CDS translation agree exactly.
-        Identity evidence only.
-    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000658/
-      evidence_type: CURATOR_INFERENCE
-      notes: Uses the committed MIBiG compound inventory, entry version 3, not a new
-        live database refresh. The matching taxon, AP009493.1 locus 1490671..1492896
-        and 2-methylisoborneol connectivity contextualize the automated enzyme role.
-        The adopted locus remains CLUSTER_UNSTATED.
-  - subject: sgr_1269
-    predicate: is_database_proposed_biosynthetic_enzyme_for
-    object: mib
-    notes: SGR_1269/BAG18098.1, 437 aa. Native-reference assignment in Streptomyces
-      griseus subsp. griseus NBRC 13350 (NCBITaxon:455632), not an identified assayed
-      construct. UniProt automated function and the adopted MIBiG BGC0000658 v3 locus
-      support a proposed biosynthetic role. No new primary experiment, exact reaction,
-      stereochemical assignment, pathway order, shell-cargo relationship or producer/locus
-      evidence upgrade is asserted.
-    evidence:
-    - reference: https://www.uniprot.org/uniprotkb/B1VVB4/entry
-      evidence_type: DATABASE_ASSERTION
-      snippet: Belongs to the terpene synthase family. 2-methylisoborneol synthase
-        subfamily
-      retrieved_on: '2026-10-08'
-      notes: UniProtKB release 2026_03, unreviewed entry 79, sequence 1. Automated
-        ECO:0000256 annotation, not direct experimental evidence for this sequence.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/BAG18098.1
-      evidence_type: DATABASE_ASSERTION
-      snippet: SGR_1269
-      retrieved_on: '2026-10-09'
-      notes: Native NBRC 13350 reference, 437 aa, reverse-strand AP009493.1:1491583..1492896.
-        GenPept, UniProt, annotated CDS and table-11 CDS translation agree exactly.
-        Identity evidence only.
-    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000658/
-      evidence_type: CURATOR_INFERENCE
-      notes: Uses the committed MIBiG compound inventory, entry version 3, not a new
-        live database refresh. The matching taxon, AP009493.1 locus 1490671..1492896
-        and 2-methylisoborneol connectivity contextualize the automated enzyme role.
-        The adopted locus remains CLUSTER_UNSTATED.
-- graph_id: mib-sace-native-proposed-roles
-  scope: BIOSYNTHESIS
-  description: Two proposed enzyme roles from the adopted NRRL 2338 locus, distinct
-    from the NBRC 13350 graph. Exact native-reference identities are grounded; function
-    remains database-inferred. No native-strain assay, exact reaction, shell-cargo
-    mapping or stereochemical resolution is added.
-  nodes:
-  - node_id: sace_3721
-    label: SACE_3721 (geranyl diphosphate 2-C-methyltransferase; proposed)
-    node_type: ENZYME
-    identifier: UniProtKB:A4FG18
-    grounding_status: GROUNDED
-  - node_id: sace_3722
-    label: SACE_3722 (2-methylisoborneol synthase; proposed)
-    node_type: ENZYME
-    identifier: UniProtKB:A4FG19
-    grounding_status: GROUNDED
-  - node_id: mib
-    label: 2-methylisoborneol (stereochemistry unspecified)
-    node_type: COMPOUND
-    identifier: naturalproductmech:mibig-0eb8c93c6f
-    grounding_status: GROUNDED
-  edges:
-  - subject: sace_3721
-    predicate: is_database_proposed_biosynthetic_enzyme_for
-    object: mib
-    notes: SACE_3721/CAM02993.1, 285 aa. Native-reference assignment in Saccharopolyspora
-      erythraea NRRL 2338 (NCBITaxon:405948). The UniProt functional annotation is
-      curator inference (ECO:0000305), not an isolated-enzyme assay for this sequence.
-      The adopted MIBiG BGC0000659 v3 locus supports the proposed compound association.
-      No exact assayed construct, reaction, pathway order, stereochemical assignment,
-      shell-cargo relationship or producer/locus evidence upgrade is asserted.
-    evidence:
-    - reference: https://www.uniprot.org/uniprotkb/A4FG18/entry
-      evidence_type: DATABASE_ASSERTION
-      snippet: Catalyzes the SAM-dependent methylation of geranyl diphosphate (GPP)
-        to yield (E)-2-methylgeranyl diphosphate (2-MeGPP)
-      retrieved_on: '2026-10-09'
-      notes: UniProtKB release 2026_03, reviewed entry 79, sequence 1. Function uses
-        ECO:0000305 citing PMID:18492804; the database assertion is not newly inspected
-        primary experimental evidence. The IDA process annotation does not establish
-        this exact catalytic reaction.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/CAM02993.1
-      evidence_type: DATABASE_ASSERTION
-      snippet: SACE_3721
-      retrieved_on: '2026-10-09'
-      notes: Native NRRL 2338 reference, reverse-strand AM420293.1:4075163..4076020.
-        All 285 residues agree across UniProt, GenPept, the annotated CDS and independent
-        table-11 translation. Identity evidence only.
-    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000659/
-      evidence_type: CURATOR_INFERENCE
-      notes: Uses the committed MIBiG compound inventory, entry version 3, not a live
-        refresh. The matching taxon, AM420293.1 locus 4075163..4077099 and 2-methylisoborneol
-        connectivity contextualize the proposed role. SOURCE_ASSERTION and CLUSTER_UNSTATED
-        grades are retained.
-  - subject: sace_3722
-    predicate: is_database_proposed_biosynthetic_enzyme_for
-    object: mib
-    notes: SACE_3722/CAM02994.1, 354 aa. Native-reference assignment in Saccharopolyspora
-      erythraea NRRL 2338 (NCBITaxon:405948). The UniProt functional annotation is
-      curator inference (ECO:0000305), not an isolated-enzyme assay for this sequence.
-      The adopted MIBiG BGC0000659 v3 locus supports the proposed compound association.
-      No exact assayed construct, reaction, pathway order, stereochemical assignment,
-      shell-cargo relationship or producer/locus evidence upgrade is asserted.
-    evidence:
-    - reference: https://www.uniprot.org/uniprotkb/A4FG19/entry
-      evidence_type: DATABASE_ASSERTION
-      snippet: Catalyzes the cyclization of 2-methylgeranyl diphosphate (2-MeGPP)
-        to 2-methylisoborneol (2-MIB)
-      retrieved_on: '2026-10-08'
-      notes: UniProtKB release 2026_03, reviewed entry 85, sequence 1. Function uses
-        ECO:0000305 citing PMID:18492804; the database assertion is not newly inspected
-        primary experimental evidence. The IDA process annotation does not establish
-        this exact catalytic reaction.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/CAM02994.1
-      evidence_type: DATABASE_ASSERTION
-      snippet: SACE_3722
-      retrieved_on: '2026-10-09'
-      notes: Native NRRL 2338 reference, reverse-strand AM420293.1:4076035..4077099.
-        All 354 residues agree across UniProt, GenPept, the annotated CDS and independent
-        table-11 translation. Identity evidence only.
-    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000659/
-      evidence_type: CURATOR_INFERENCE
-      notes: Uses the committed MIBiG compound inventory, entry version 3, not a live
-        refresh. The matching taxon, AM420293.1 locus 4075163..4077099 and 2-methylisoborneol
-        connectivity contextualize the proposed role. SOURCE_ASSERTION and CLUSTER_UNSTATED
-        grades are retained.
-- graph_id: mib-ambo-native-proposed-roles
-  scope: BIOSYNTHESIS
-  nodes:
-  - node_id: saml0357
-    label: SAML0357 (2-methylisoborneol synthase; proposed)
-    node_type: ENZYME
-    identifier: UniProtKB:A3KI17
-    grounding_status: GROUNDED
-  - node_id: saml0358
-    label: SAML0358 (geranyl diphosphate 2-C-methyltransferase; proposed)
-    node_type: ENZYME
-    identifier: UniProtKB:A3KI18
-    grounding_status: GROUNDED
-  - node_id: mib
-    label: 2-methylisoborneol (stereochemistry unspecified)
-    node_type: COMPOUND
-    identifier: naturalproductmech:mibig-0eb8c93c6f
-    grounding_status: GROUNDED
-  edges:
-  - subject: saml0357
-    predicate: is_database_proposed_biosynthetic_enzyme_for
-    object: mib
-    notes: SAML0357/SAM23877_0409, 440 aa. Native-reference protein in Streptomyces
-      ambofaciens ATCC 23877 (NCBITaxon:278992), not an identified assayed construct.
-      UniProt assigns function by curator inference (ECO:0000305) and explicitly links
-      this entry to 2-methylisoborneol biosynthesis. This proposed role does not assert
-      an exact reaction, pathway order, stereochemistry, shell-cargo relationship
-      or new producer/BGC evidence grade.
-    evidence:
-    - reference: https://www.uniprot.org/uniprotkb/A3KI17/entry
-      evidence_type: DATABASE_ASSERTION
-      snippet: Catalyzes the cyclization of 2-methylgeranyl diphosphate (2-MeGPP)
-        to 2-methylisoborneol (2-MIB)
-      retrieved_on: '2026-10-08'
-      notes: UniProtKB release 2026_03, reviewed entry 57, sequence 1. Function uses
-        ECO:0000305 citing PMID:18492804; its reference annotation explicitly names
-        2-methylisoborneol biosynthesis. This is an inspected database assertion,
-        not newly inspected primary assay evidence. The IDA process annotation does
-        not establish the exact catalytic reaction.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/CAJ89344.1
-      evidence_type: DATABASE_ASSERTION
-      snippet: SAML0357
-      retrieved_on: '2026-10-09'
-      notes: Native ATCC 23877 reference, forward-strand AM238663.1:360632..361954.
-        All 440 residues match UniProt, this GenPept sequence, the annotated CDS and
-        independent table-11 translation. Both genomic mappings agree. Identity evidence,
-        not an enzymatic assay.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/AKZ53458.1
-      evidence_type: DATABASE_ASSERTION
-      snippet: SAM23877_0409
-      retrieved_on: '2026-10-09'
-      notes: Native ATCC 23877 reference, forward-strand CP012382.1:360601..361923.
-        All 440 residues match UniProt, this GenPept sequence, the annotated CDS and
-        independent table-11 translation. Both genomic mappings agree. Identity evidence,
-        not an enzymatic assay.
-  - subject: saml0358
-    predicate: is_database_proposed_biosynthetic_enzyme_for
-    object: mib
-    notes: SAML0358/SAM23877_0410, 291 aa. Native-reference protein in Streptomyces
-      ambofaciens ATCC 23877 (NCBITaxon:278992), not an identified assayed construct.
-      UniProt assigns function by curator inference (ECO:0000305) and explicitly links
-      this entry to 2-methylisoborneol biosynthesis. This proposed role does not assert
-      an exact reaction, pathway order, stereochemistry, shell-cargo relationship
-      or new producer/BGC evidence grade.
-    evidence:
-    - reference: https://www.uniprot.org/uniprotkb/A3KI18/entry
-      evidence_type: DATABASE_ASSERTION
-      snippet: Catalyzes the SAM-dependent methylation of geranyl diphosphate (GPP)
-        to yield (E)-2-methylgeranyl diphosphate (2-MeGPP)
-      retrieved_on: '2026-10-09'
-      notes: UniProtKB release 2026_03, reviewed entry 53, sequence 1. Function uses
-        ECO:0000305 citing PMID:18492804; its reference annotation explicitly names
-        2-methylisoborneol biosynthesis. This is an inspected database assertion,
-        not newly inspected primary assay evidence. The IDA process annotation does
-        not establish the exact catalytic reaction.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/CAJ89345.1
-      evidence_type: DATABASE_ASSERTION
-      snippet: SAML0358
-      retrieved_on: '2026-10-09'
-      notes: Native ATCC 23877 reference, forward-strand AM238663.1:361970..362845.
-        All 291 residues match UniProt, this GenPept sequence, the annotated CDS and
-        independent table-11 translation. Both genomic mappings agree. Identity evidence,
-        not an enzymatic assay.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/AKZ53459.1
-      evidence_type: DATABASE_ASSERTION
-      snippet: SAM23877_0410
-      retrieved_on: '2026-10-09'
-      notes: Native ATCC 23877 reference, forward-strand CP012382.1:361939..362814.
-        All 291 residues match UniProt, this GenPept sequence, the annotated CDS and
-        independent table-11 translation. Both genomic mappings agree. Identity evidence,
-        not an enzymatic assay.
-  description: Two database-proposed ATCC 23877 enzyme roles, distinct from the existing
-    NBRC 13350 and NRRL 2338 graphs. Two native genomic deposits ground each reference
-    sequence; function remains inferred. No MIBiG locus or producer assertion is added,
-    and no direct assay, reaction order, shell-cargo mapping or stereochemical resolution
-    is claimed.
-- graph_id: mib-three-canonical-references-coupled-assays
-  scope: BIOSYNTHESIS
-  nodes:
-  - node_id: scmibs
-    label: ScMIBS (2-methylisoborneol synthase; canonical reference)
-    node_type: ENZYME
-    identifier: UniProtKB:Q9F1Y6
-    grounding_status: GROUNDED
-  - node_id: semibs
-    label: SeMIBS (2-methylisoborneol synthase; canonical reference)
-    node_type: ENZYME
-    identifier: UniProtKB:K0K6P8
-    grounding_status: GROUNDED
-  - node_id: spmibs
-    label: SpMIBS (2-methylisoborneol synthase; canonical reference)
-    node_type: ENZYME
-    identifier: NCBIProtein:WP_019890277.1
-    grounding_status: GROUNDED
-  - node_id: mib
-    label: 2-methylisoborneol (stereochemistry unspecified)
-    node_type: COMPOUND
-    identifier: naturalproductmech:mibig-0eb8c93c6f
-    grounding_status: GROUNDED
-  edges:
-  - subject: scmibs
-    predicate: catalyzes_formation_in_coupled_in_vitro_assay_of
-    object: mib
-    notes: ScMIBS is grounded to the exact 440-aa SCO7700 reference, not a truncated
-      domain or variant. Canonical-reference mapping, not exact cloned-insert/tag/linker
-      reconstruction. This is a separate coupled in-vitro assay, not a shared native
-      pathway. No reaction order, native producer/BGC grade, kinetic value or stereochemical
-      upgrade is asserted.
-    evidence:
-    - reference: DOI:10.1002/chem.202300775
-      evidence_type: PRIMARY_EXPERIMENT
-      snippet: function efficiently as MIBSs
-      retrieved_on: '2026-10-09'
-      notes: ScMIBS/WP_011031839, Streptomyces coelicolor A3(2) DSM 40783; recombinant
-        pYE-Express preparation. Coupled FPPS assay yielded 2-MIB by GC/MS. Main text
-        only; supplement inaccessible.
-    - reference: https://www.uniprot.org/uniprotkb/Q9F1Y6/entry
-      evidence_type: DATABASE_ASSERTION
-      snippet: SCO7700
-      retrieved_on: '2026-10-08'
-      notes: Reviewed UniProt entry 113, sequence 1, 440 aa, taxon 100226. Canonical
-        reference, not a reconstruction of the experimental insert or a claim that
-        the assay stock was M145.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/CAD55534.1
-      evidence_type: CURATOR_INFERENCE
-      snippet: SCO7700
-      retrieved_on: '2026-10-09'
-      notes: A3(2) native AL939132.1:171530..172852, forward. UniProt, GenPept, the
-        named RefSeq reference, annotated CDS and independent table-11 translation
-        agree exactly. The separate 1147 deposit agrees but does not identify the
-        assay stock.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/WP_011031839.1
-      evidence_type: DATABASE_ASSERTION
-      snippet: WP_011031839.1
-      retrieved_on: '2026-10-09'
-      notes: Versioned reference corresponding to the paper's unversioned accession.
-        Sequence identity was independently verified; RefSeq species/multispecies
-        assignment is not an experimental strain record. No shell-cargo claim follows
-        from its automated name.
-  - subject: semibs
-    predicate: catalyzes_formation_in_coupled_in_vitro_assay_of
-    object: mib
-    notes: SeMIBS is grounded to the exact 362-aa BN6_59350 reference; unreviewed
-      status does not replace the independently cited experiment. Canonical-reference
-      mapping, not exact cloned-insert/tag/linker reconstruction. This is a separate
-      coupled in-vitro assay, not a shared native pathway. No reaction order, native
-      producer/BGC grade, kinetic value or stereochemical upgrade is asserted.
-    evidence:
-    - reference: DOI:10.1002/chem.202300775
-      evidence_type: PRIMARY_EXPERIMENT
-      snippet: function efficiently as MIBSs
-      retrieved_on: '2026-10-09'
-      notes: SeMIBS/WP_015103303, Saccharothrix espanaensis DSM 44229; recombinant
-        pYE-Express preparation. Coupled FPPS assay yielded 2-MIB by GC/MS. Main text
-        only; supplement inaccessible.
-    - reference: https://www.uniprot.org/uniprotkb/K0K6P8/entry
-      evidence_type: DATABASE_ASSERTION
-      snippet: BN6_59350
-      retrieved_on: '2026-10-09'
-      notes: Unreviewed UniProt entry 55, sequence 1, 362 aa, native DSM 44229/taxon
-        1179773. Identity source only; automated annotation is not the primary functional
-        evidence.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/CCH33192.1
-      evidence_type: CURATOR_INFERENCE
-      snippet: BN6_59350
-      retrieved_on: '2026-10-09'
-      notes: Native DSM 44229 HE804045.1:6630735..6631823, forward. UniProt, GenPept,
-        the named RefSeq reference, annotated CDS and independent table-11 translation
-        agree exactly.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/WP_015103303.1
-      evidence_type: DATABASE_ASSERTION
-      snippet: WP_015103303.1
-      retrieved_on: '2026-10-09'
-      notes: Versioned reference corresponding to the paper's unversioned accession.
-        Sequence identity was independently verified; RefSeq species/multispecies
-        assignment is not an experimental strain record. No shell-cargo claim follows
-        from its automated name.
-  - subject: spmibs
-    predicate: catalyzes_formation_in_coupled_in_vitro_assay_of
-    object: mib
-    notes: SpMIBS uses the exact 438-aa RefSeq reference. A0A918LM63 differs at positions
-      107 (T/A) and 116 (G/R), so it is not substituted as an exact UniProt mapping.
-      Canonical-reference mapping, not exact cloned-insert/tag/linker reconstruction.
-      This is a separate coupled in-vitro assay, not a shared native pathway. No reaction
-      order, native producer/BGC grade, kinetic value or stereochemical upgrade is
-      asserted.
-    evidence:
-    - reference: DOI:10.1002/chem.202300775
-      evidence_type: PRIMARY_EXPERIMENT
-      snippet: function efficiently as MIBSs
-      retrieved_on: '2026-10-09'
-      notes: SpMIBS/WP_019890277, Streptomyces purpureus DSM 43360; recombinant pYE-Express
-        preparation. Coupled FPPS assay yielded 2-MIB by GC/MS. Main text only; supplement
-        inaccessible.
-    - reference: https://www.ncbi.nlm.nih.gov/nuccore/NZ_KB913030.1
-      evidence_type: CURATOR_INFERENCE
-      snippet: STRPU_RS0127440
-      retrieved_on: '2026-10-09'
-      notes: The 438-aa RefSeq reference equals the annotated and independently table-11-translated
-        CDS at 5956391..5957707, forward, native KA281/ATCC 21405/taxon 1054860. This
-        mapping is not proof of exact assay-stock equivalence.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/WP_019890277.1
-      evidence_type: DATABASE_ASSERTION
-      snippet: WP_019890277.1
-      retrieved_on: '2026-10-09'
-      notes: Versioned reference corresponding to the paper's unversioned accession.
-        Sequence identity was independently verified; RefSeq species/multispecies
-        assignment is not an experimental strain record. No shell-cargo claim follows
-        from its automated name.
-  description: Three independent recombinant assays, not one native three-enzyme pathway.
-    Canonical references ground the reported proteins; exact inserts, tags, linkers
-    and variants remain outside this claim. The owner retains unspecified stereochemistry
-    and existing source grades.
-- graph_id: mib-sco7701-database-role
-  scope: BIOSYNTHESIS
-  description: An independently database-attributed role, not a shared native pathway
-    with the other reference proteins. The owner retains unspecified stereochemistry
-    and existing source grades.
-  nodes:
-  - node_id: sco7701
-    label: SCO7701 (geranyl diphosphate 2-C-methyltransferase; database-supported)
-    node_type: ENZYME
-    identifier: UniProtKB:Q9F1Y5
-    grounding_status: GROUNDED
-  - node_id: mib
-    label: 2-methylisoborneol (stereochemistry unspecified)
-    node_type: COMPOUND
-    identifier: naturalproductmech:mibig-0eb8c93c6f
-    grounding_status: GROUNDED
-  edges:
-  - subject: sco7701
-    predicate: is_database_annotated_biosynthetic_enzyme_for
-    object: mib
-    notes: SCO7701/Q9F1Y5, 292 aa, is the native canonical reference. The non-proposed
-      assignment reflects UniProt experimental attribution, not a newly inspected
-      primary assay. The database assigns GPP methylation to 2-MeGPP in methylisoborneol
-      biosynthesis; this edge does not assert that the methyltransferase alone produces
-      2-MIB. Genomic A3(2), 1147, the UniProt M145 label and the cited NRRL B-16638
-      stock are not equated. No exact construct, reaction order, kinetics, shell-cargo
-      relationship, native producer/BGC grade or stereochemical upgrade is asserted.
-    evidence:
-    - reference: https://www.uniprot.org/uniprotkb/Q9F1Y5/entry
-      evidence_type: DATABASE_ASSERTION
-      snippet: SAM-dependent methylation of geranyl diphosphate (GPP)
-      retrieved_on: '2026-10-09'
-      notes: Reviewed entry 125, sequence 1. Function uses ECO:0000269/PMID:18563898;
-        its publication annotation includes PATHWAY and names methylisoborneol biosynthesis.
-        This is the inspected database assertion, not newly inspected primary evidence.
-        The cited DOI:10.1021/ja803639g and correction DOI:10.1021/ja104306p are access-held;
-        no kinetic values are adopted. The cited assay stock is A3(2)/NRRL B-16638,
-        not established here as identical to the genomic stocks.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/CAC44557.1
-      evidence_type: CURATOR_INFERENCE
-      snippet: SCO7701
-      retrieved_on: '2026-10-09'
-      notes: Native A3(2), taxon 100226, forward AL939132.1:172868..173746. All 292
-        residues match UniProt, GenPept, the annotated CDS and independent table-11
-        translation. This is canonical-reference identity, not an experimental construct.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/BAB20434.1
-      evidence_type: CURATOR_INFERENCE
-      snippet: orf4
-      retrieved_on: '2026-10-09'
-      notes: Native strain 1147, taxon 1902, forward AB035202.1:5872..6750. The CDS
-        and 292-aa translation exactly match the A3(2) reference. Sequence equality
-        does not equate strains or identify the cited assay stock.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/WP_011031840.1
-      evidence_type: DATABASE_ASSERTION
-      snippet: WP_011031840.1
-      retrieved_on: '2026-10-09'
-      notes: Exact 292-aa reference; this RefSeq is multispecies (taxon 1883), not
-        a strain assignment.
-- graph_id: mib-13189-similarity-proposed-role
-  scope: BIOSYNTHESIS
-  description: An independently database-attributed role, not a shared native pathway
-    with the other reference proteins. The owner retains unspecified stereochemistry
-    and existing source grades.
-  nodes:
-  - node_id: mibs_13189
-    label: Strain-13189 2-methylisoborneol synthase (similarity-inferred)
-    node_type: ENZYME
-    identifier: UniProtKB:Q9F1V8
-    grounding_status: GROUNDED
-  - node_id: mib
-    label: 2-methylisoborneol (stereochemistry unspecified)
-    node_type: COMPOUND
-    identifier: naturalproductmech:mibig-0eb8c93c6f
-    grounding_status: GROUNDED
-  edges:
-  - subject: mibs_13189
-    predicate: is_database_proposed_biosynthetic_enzyme_for
-    object: mib
-    notes: Q9F1V8/BAB20507.1, 437 aa, is a native strain-13189 reference with a similarity-inferred
-      MIB synthase role, not an assayed protein. Do not identify strain 13189 with
-      NBRC 13350 or borrow BGC0000658. The adjacent putative methyltransferase BAB20508.1
-      is not assigned a specific MIB function from neighborhood alone. No exact construct,
-      reaction order, kinetics, shell-cargo relationship, native producer/BGC grade
-      or stereochemical upgrade is asserted.
-    evidence:
-    - reference: https://www.uniprot.org/uniprotkb/Q9F1V8/entry
-      evidence_type: DATABASE_ASSERTION
-      snippet: cyclization of 2-methylgeranyl diphosphate (2-MeGPP) to 2-methylisoborneol
-        (2-MIB)
-      retrieved_on: '2026-10-08'
-      notes: Reviewed entry 67, sequence 1, Streptomyces griseus/taxon 1911. Function
-        uses ECO:0000250 (sequence similarity), not experimental evidence for this
-        protein. The sequence-deposit reference names strain 13189 without a collection
-        prefix.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/BAB20507.1
-      evidence_type: CURATOR_INFERENCE
-      snippet: '13189'
-      retrieved_on: '2026-10-09'
-      notes: Native genomic DNA, strain 13189/taxon 1911, forward AB040071.1:5255..6568.
-        All 437 residues match UniProt, GenPept, RefSeq, the annotated CDS and independent
-        table-11 translation. Q9F1V8 differs from NBRC 13350 B1VVB4 at residues 66
-        (P/S), 67 (T/A) and 77 (W/R); they are not interchangeable references.
-    - reference: https://www.ncbi.nlm.nih.gov/protein/WP_030703894.1
-      evidence_type: DATABASE_ASSERTION
-      snippet: WP_030703894.1
-      retrieved_on: '2026-10-09'
-      notes: Exact 437-aa species-level RefSeq, taxon 1911, without a strain qualifier.
-        Its automatic encapsulin-cargo name is not adopted as functional evidence.
+- enzyme_id: UniProtKB:D3KYU2
+  enzyme_label: Tpc (2-methylisoborneol synthase; database-supported)
+  proposed: false
+  notes: D3KYU2/BAI77523.1/tpc, 481 aa, is a deposited ATCC 31180 reference from Streptomyces
+    lasalocidi (literature name S. lasaliensis), not an established native-locus or
+    exact assay-construct assignment. The non-proposed role reflects UniProt experimental
+    attribution, not a newly inspected primary assay. Use the explicit ATCC 31180
+    designation; uncertain DSM aliases are not equated. No reaction order, kinetic
+    value, native production, producer/BGC grade, shell-cargo relationship or stereochemical
+    resolution is asserted.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/D3KYU2/entry
+    evidence_type: DATABASE_ASSERTION
+    snippet: cyclization of 2-methylgeranyl diphosphate (2-MeGPP) to 2-methylisoborneol
+      (2-MIB)
+    notes: Reviewed entry 40, sequence 1, taxon 324833. FUNCTION uses ECO:0000269/PMID:18492804;
+      its publication annotation includes PATHWAY and ATCC 31180. This is database
+      experimental attribution, not newly inspected primary evidence; the cited DOI:10.1073/pnas.0802312105
+      remains access-held.
+    retrieved_on: '2026-10-08'
+  - reference: https://www.ncbi.nlm.nih.gov/protein/BAI77523.1
+    evidence_type: CURATOR_INFERENCE
+    snippet: tpc
+    notes: Deposited ATCC 31180 reference, 481 aa, forward AB547324.1:1729..3174.
+      UniProt, GenPept, the annotated CDS and independent table-11 translation agree
+      exactly. Sequence identity does not resolve native pKSL versus an experimental
+      clone or reconstruct a cited assay insert.
+    retrieved_on: '2026-10-09'
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB547324.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: ATCC 31180
+    notes: The deposit explicitly names this strain, taxon 324833 and plasmid pKSL,
+      with mol_type genomic DNA. These annotations alone do not resolve the plasmid
+      provenance. No function is inferred for neighboring nbp.
+    retrieved_on: '2026-10-09'
+- enzyme_id: UniProtKB:D3KYU3
+  enzyme_label: Gdpmt (geranyl diphosphate 2-C-methyltransferase; database-supported)
+  proposed: false
+  notes: D3KYU3/BAI77524.1/gdpmt, 300 aa, is a deposited ATCC 31180 reference from
+    Streptomyces lasalocidi (literature name S. lasaliensis), not an established native-locus
+    or exact assay-construct assignment. The non-proposed role reflects UniProt experimental
+    attribution, not a newly inspected primary assay. Use the explicit ATCC 31180
+    designation; uncertain DSM aliases are not equated. No reaction order, kinetic
+    value, native production, producer/BGC grade, shell-cargo relationship or stereochemical
+    resolution is asserted. The methyltransferase role does not assert that this enzyme
+    alone produces 2-MIB.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/D3KYU3/entry
+    evidence_type: DATABASE_ASSERTION
+    snippet: SAM-dependent methylation of geranyl diphosphate (GPP)
+    notes: Reviewed entry 47, sequence 1, taxon 324833. FUNCTION uses ECO:0000269/PMID:18492804;
+      its publication annotation includes PATHWAY and ATCC 31180. This is database
+      experimental attribution, not newly inspected primary evidence; the cited DOI:10.1073/pnas.0802312105
+      remains access-held.
+    retrieved_on: '2026-10-09'
+  - reference: https://www.ncbi.nlm.nih.gov/protein/BAI77524.1
+    evidence_type: CURATOR_INFERENCE
+    snippet: gdpmt
+    notes: Deposited ATCC 31180 reference, 300 aa, forward AB547324.1:3219..4121.
+      UniProt, GenPept, the annotated CDS and independent table-11 translation agree
+      exactly. Sequence identity does not resolve native pKSL versus an experimental
+      clone or reconstruct a cited assay insert.
+    retrieved_on: '2026-10-09'
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB547324.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: ATCC 31180
+    notes: The deposit explicitly names this strain, taxon 324833 and plasmid pKSL,
+      with mol_type genomic DNA. These annotations alone do not resolve the plasmid
+      provenance. No function is inferred for neighboring nbp.
+    retrieved_on: '2026-10-09'
+  - reference: DOI:10.2210/pdb4F84/pdb
+    evidence_type: CURATOR_INFERENCE
+    snippet: gdpmt
+    notes: Independent PDB4F84 entity 1 is exactly a 20-aa MGSSHHHHHHSSGLVPRGSH extension
+      plus all 300 canonical D3KYU3 residues. SIFTS maps entity 21..320 to reference
+      1..300; mutation count zero. Source taxon 324833 has no strain qualifier; expression
+      is pET26b in E. coli BL21(DE3). Identity evidence only, not product formation,
+      proteolysis or native assembly evidence. The related primary paper remains access-held.
+    retrieved_on: '2026-10-09'
+causal_graph_refs:
+- mib-sgr-native-proposed-roles
+- mib-sace-native-proposed-roles
+- mib-ambo-native-proposed-roles
+- mib-three-canonical-references-coupled-assays
+- mib-sco7701-database-role
+- mib-13189-similarity-proposed-role
+- mib-lasali-deposited-database-roles
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -1177,4 +752,16 @@ curation_history:
     and similarity inference, without claiming newly inspected primary assays, exact
     constructs, kinetics, native production, BGC upgrades, shell cargo or stereochemical
     resolution. Preserve previous curation and status.
+  llm_assisted: true
+- timestamp: '2026-10-09T03:55:48Z'
+  curator: OpenAI Codex
+  action: RECORD_CURATED
+  changes: Migrate all six inline graphs from data/natural_products/terpenoids/2-methylisoborneol.yaml
+    at source commit 46837550f8903f16ac8a84de836908f5ce947929 to ordered exact-owner
+    components, preserving graph objects, evidence, snippets and prior owner history.
+    Add D3KYU2/tpc and D3KYU3/gdpmt deposited-reference biosynthetic roles for ATCC
+    31180 with stable citations and snippets. Attribute function to the database,
+    not newly inspected primary assays. Preserve pKSL origin and strain-alias uncertainty,
+    chemistry, source grades and SEEDED status; do not infer exact reaction order,
+    native production or shell cargo.
   llm_assisted: true
