@@ -1094,6 +1094,8 @@ causal_graphs:
     pathway, disruption phenotype or new native-production claim is added. Existing
     graphs, imported producer/BGC grades, computed filing class, natural-product origin
     and SEEDED status remain unchanged.
+causal_graph_refs:
+- kojic-acid-flavus-kojart-database-biosynthesis-secretion
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -1143,4 +1145,19 @@ curation_history:
     No direct binding, physical complex, ordered enzyme pathway, quantitative or disruption
     phenotype, or producer/BGC-grade upgrade. Preserved both existing graphs and every
     other field and prior history item. Record remains SEEDED; not full-record sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-09T10:43:37Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added one exact-owner graph component for A. flavus NRRL3357 KojA/UniProtKB:B8NL20,
+    KojR/UniProtKB:B8NL21 and KojT/UniProtKB:B8NL22. Six nodes/five cited BIOSYNTHESIS
+    edges distinguish biosynthesis, regulation and probable secretion; three protein
+    edges carry exact database snippets. Native GenPept/CDS identity remains distinct
+    from database function and unverified historical assay stocks/constructs. KojA
+    chemistry and KojT secretion remain probable. Retained species/strain deposit
+    taxonomy and bounded sequence limits. Used a component to retain complete evidence
+    within each artifact size limit; no old graph was moved or altered. Preserved
+    all existing fields, three inline graphs and prior history. No new producer/BGC
+    grade, binding experiment, disruption phenotype or quantitative claim. Record
+    remains SEEDED; not full-record sign-off.
   llm_assisted: true
