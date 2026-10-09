@@ -99,7 +99,47 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>(+)-T-muurolol synthase Rcas_0622 (reference accession)<br><span class="mono">UniProtKB:A7NH01</span></td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; CHEBI:63704</td>
+  <td class="mono">DOI:10.3762/bjoc.12.173</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: FPP is the assayed substrate; no charge-specific substrate CURIE is assigned. This is an in-vitro step, not a demonstrated native pathway. The corresponding graph documents product stereochemical mapping. Full construct/tag sequence was not verified; canonical identity does not establish construct equivalence.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Purified recombinant Rcas_0622 from Roseiflexus castenholzii DSM 13941, expressed in E. coli BL21. The canonical accession grounds the protein reference; full construct/tag sequence is unverified. No native-production, physical-complex, or organism-specific Mg-binding claim is added. The supplementary spectra were inaccessible; the main text and Figure 1 were inspected.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Rcas_0622 (recombinant; reference accession)</td>
+  <td>catalyzes</td>
+  <td>In-vitro FPP conversion</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.3762/bjoc.12.173<br>https://www.uniprot.org/uniprotkb/A7NH01<br>https://www.ncbi.nlm.nih.gov/protein/ABU56748.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3762/bjoc.12.173</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results, Figure 1 compound 2, Table 1 and Experimental: purified recombinant WP_012119179 converts FPP to (+)-T-muurolol in vitro; NMR and optical rotation establish product identity.</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>snippet</dt><dd>Incubation of FPP</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A7NH01</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Reviewed Rcas_0622 reference: Roseiflexus castenholzii DSM 13941 / HLO8, taxon 383372, 326 aa; entry version 77, sequence version 1. The accession denotes the native reference, not a verified full recombinant construct.</dd><dt>retrieved on</dt><dd>2026-10-09</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/ABU56748.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Sequence comparison: A7NH01 equals the paper-named WP_012119179.1, this strain-specific deposit and the independent translation of complement(CP000804.1:820924..821904). The RefSeq protein is nonredundant at species level; the deposit supplies strain context.</dd><dt>retrieved on</dt><dd>2026-10-09</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>In-vitro FPP conversion</td>
+  <td>yields</td>
+  <td>(+)-Τ-muurolol</td>
+  <td>The main product is represented; this does not assert exclusive product specificity.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.3762/bjoc.12.173<br>DOI:10.3762/bjoc.12.173</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3762/bjoc.12.173</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results, Figure 1 compound 2, Table 1 and Experimental: purified recombinant WP_012119179 converts FPP to (+)-T-muurolol in vitro; NMR and optical rotation establish product identity.</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>snippet</dt><dd>the formation of the sesquiterpene alcohol 2</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.3762/bjoc.12.173</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Figure 1 atom mapping: paper 10,7,6,1 correspond to definition positions 1,4,4a,8a. The reported 1R,6S,7R,10R thus agrees with owner 1R,4R,4aS,8aR. RDKit 2024.03.5 confirms connectivity, all four configurations and the unchanged InChI/InChIKey LHYHMMRYTDARSZ-KBUPBQIOSA-N. This is curator identity mapping, not independent spectrum reanalysis.</dd><dt>retrieved on</dt><dd>2026-10-09</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
