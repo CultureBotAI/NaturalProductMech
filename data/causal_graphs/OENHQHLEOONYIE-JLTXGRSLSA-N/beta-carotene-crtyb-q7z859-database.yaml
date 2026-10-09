@@ -1,0 +1,164 @@
+record_id: CHEBI:17579
+standard_inchi_key: OENHQHLEOONYIE-JLTXGRSLSA-N
+graph:
+  graph_id: beta-carotene-crtyb-q7z859-database
+  scope: BIOSYNTHESIS
+  description: 'CrtYB (P. rhodozyma canonical E307 reference): Canonical ATCC24230
+    E307 is a deliberately selected database reference, not the CBS6938 K307 sequence
+    associated with the 1999 functional reference. Neither the historical assay construct
+    nor activity of the 645aa isoform2 is established here. REVIEW_NEEDED concerns
+    assay-to-reference applicability, not whether Q7Z859 resolves. See curator-q7z859-assay-reference.
+    Separate organism-specific database example of terminal gamma-carotene cyclization,
+    not the uncultured-organism BGC0000646/FJ151553.1 enzyme. These alternatives are
+    not a shared pathway or physical assembly. No native-production, occurrence, producer,
+    BGC, taxonomy or origin upgrade. The earlier lycopene step remains excluded because
+    its cached chemical representations require separate review.'
+  nodes:
+  - node_id: cyclase
+    label: CrtYB (P. rhodozyma canonical E307 reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q7Z859
+    grounding_status: REVIEW_NEEDED
+  - node_id: terminal_cyclization
+    label: Database-proposed terminal carotene cyclization
+    node_type: PROCESS
+    identifier: RHEA:32239
+    grounding_status: GROUNDED
+  - node_id: gamma_carotene
+    label: gamma-carotene
+    node_type: PRECURSOR
+    identifier: CHEBI:27740
+    grounding_status: GROUNDED
+  - node_id: beta_carotene
+    label: beta-carotene
+    node_type: COMPOUND
+    identifier: CHEBI:17579
+    grounding_status: GROUNDED
+  edges:
+  - subject: cyclase
+    predicate: is_database_proposed_catalyst_of
+    object: terminal_cyclization
+    notes: Canonical ATCC24230 E307 is a deliberately selected database reference,
+      not the CBS6938 K307 sequence associated with the 1999 functional reference.
+      Neither the historical assay construct nor activity of the 645aa isoform2 is
+      established here. REVIEW_NEEDED concerns assay-to-reference applicability, not
+      whether Q7Z859 resolves. See curator-q7z859-assay-reference. Separate organism-specific
+      database example of terminal gamma-carotene cyclization, not the uncultured-organism
+      BGC0000646/FJ151553.1 enzyme. These alternatives are not a shared pathway or
+      physical assembly. No native-production, occurrence, producer, BGC, taxonomy
+      or origin upgrade. The earlier lycopene step remains excluded because its cached
+      chemical representations require separate review.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q7Z859
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry85/sequence1, 673aa, protein existence1. Exact
+        RHEA:32239 reaction with CHEBI:27740 and CHEBI:17579 has ECO:0000269/PMID:10589832
+        in UniProt. Canonical ATCC24230 E307 is a deliberately selected database reference,
+        not the CBS6938 K307 sequence associated with the 1999 functional reference.
+        Neither the historical assay construct nor activity of the 645aa isoform2
+        is established here. REVIEW_NEEDED concerns assay-to-reference applicability,
+        not whether Q7Z859 resolves. See curator-q7z859-assay-reference. Primary papers
+        were not independently inspected; retain DATABASE_ASSERTION, not an independently
+        verified assay, historical stock, construct or stereoselectivity measurement.
+        Rhea was inspected through UniProt, not independently retrieved. No additional
+        phytoene, cofactor, induction, mutant-phenotype or physical-assembly claim
+        is adopted.
+      snippet: gamma-carotene = all-trans-beta-carotene
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAO47570.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: ATCC24230 crtYB mRNA AY177204.1:67..2088, complete2022nt CDS including
+        stop, ATG/codon_start1/standardcode1, translates to AAO47570.1 and canonical673aa/E307.
+        Native tax264483 and ATCC:24230 cross-reference. This is reference correspondence,
+        not historical assay-stock or construct identity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAY33923.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: ATCC24230 crtYB join(DQ016503.1:1591..1616,1728..1934,2015..2527,2610..2852,2944..3976)
+        gives2022nt, ATG/code1, and canonical673aa/E307. Coding66C>T and1359C>T relative
+        to AY177204.1 are synonymous. Native tax264483/ATCC:24230. No transcript or
+        biological-initiation proof.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAB51949.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: CBS6938 pbs join(AJ133646.1:1109..1134,1246..1452,1533..2045,2128..2370,2461..3493),
+        2022nt ATG/code1, translates to673aa CAB51949.1. Relative to canonical mRNA,
+        coding919G>A yields sole protein difference E307K, matching the UniProt variant.
+        Native tax264483; do not transfer the CBS6938 functional-reference claim to
+        canonical ATCC24230.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAO73816.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: 'ATCC24230 AY174117.1:72..2009 is a complete1938nt mRNA CDS without a
+        gene qualifier, TTG/codon_start1/code1. Its translation matches645aa AAO73816.1
+        and UniProt isoform2 VSP_041283: canonical residues1..46 replaced by18aa MSPYLFFVLHTTHVCICV.
+        Coding55..1938 equals canonical139..2022. Table1 initiation translation is
+        not experimental non-AUG initiation or isoform2 activity proof. Native tax264483/ATCC:24230.'
+    - &id001
+      reference: https://www.ebi.ac.uk/chebi/CHEBI:27740
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: 'Inspected ChEBI255 gamma-carotene: neutral C40H56, Standard InChIKeyHRQKOYFGHJYEFS-BXOLYSJBSA-N.
+        Independent RDKit2026.03.5 parsing of cached SMILES and InChI reproduces the
+        full key. This is exact database chemical-identity correspondence, not an
+        independent experimental structure or stereoselectivity measurement.'
+    - &id002
+      reference: https://www.ebi.ac.uk/chebi/CHEBI:17579
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: 'Inspected ChEBI255 beta-carotene: neutral C40H56, Standard InChIKeyOENHQHLEOONYIE-JLTXGRSLSA-N.
+        Independent RDKit2026.03.5 parsing of cached SMILES and InChI reproduces the
+        full key. The existing MIBiG-derived owner SMILES and InChI independently
+        give this same key. This is exact database chemical-identity correspondence,
+        not an independent experimental structure or stereoselectivity measurement.'
+  - subject: gamma_carotene
+    predicate: is_database_proposed_substrate_of
+    object: terminal_cyclization
+    notes: Principal substrate of the exact terminal reaction, not the overall two-end
+      lycopene reaction.
+    evidence:
+    - &id003
+      reference: https://www.uniprot.org/uniprotkb/Q7Z859
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry85/sequence1, 673aa, protein existence1. Exact
+        RHEA:32239 reaction with CHEBI:27740 and CHEBI:17579 has ECO:0000269/PMID:10589832
+        in UniProt. Canonical ATCC24230 E307 is a deliberately selected database reference,
+        not the CBS6938 K307 sequence associated with the 1999 functional reference.
+        Neither the historical assay construct nor activity of the 645aa isoform2
+        is established here. REVIEW_NEEDED concerns assay-to-reference applicability,
+        not whether Q7Z859 resolves. See curator-q7z859-assay-reference. Primary papers
+        were not independently inspected; retain DATABASE_ASSERTION, not an independently
+        verified assay, historical stock, construct or stereoselectivity measurement.
+        Rhea was inspected through UniProt, not independently retrieved. No additional
+        phytoene, cofactor, induction, mutant-phenotype or physical-assembly claim
+        is adopted.
+    - *id001
+    - *id002
+  - subject: terminal_cyclization
+    predicate: has_database_proposed_product
+    object: beta_carotene
+    notes: Exact beta-carotene owner, not necessarily the major or final native metabolite
+      or an independently measured stereoselective product.
+    evidence:
+    - *id003
+    - *id001
+    - *id002
+curation_history:
+- timestamp: '2026-10-09T22:56:59Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added Q7Z859, P37295 and Q43415 as deliberately selected canonical database
+    references: three BIOSYNTHESIS graph components, nine cited edges, three exact
+    UniProt reaction snippets and three OPEN curator-owned assay/reference Discussions.
+    Protein nodes remain REVIEW_NEEDED for assay applicability: Phaffia E307/K307
+    and isoform2, Neurospora602aa/partial601aa models, and Capsicum T146A/N152K conflicts
+    and unverified processing/construct. Preserve preferential single-end Neurospora
+    activity. Functional evidence remains DATABASE_ASSERTION. No new pathway steps
+    or primary-assay, producer, occurrence, BGC, taxonomy, origin, assembly or bioactivity
+    upgrade. All nine prior graph components, pathway steps, source Discussions, imported
+    fields and history are preserved. SEEDED remains; no full-record scientific sign-off.
+    Lycopene chemical-representation and all primary-access holds remain. Component
+    beta-carotene-crtyb-q7z859-database.'
+  llm_assisted: true

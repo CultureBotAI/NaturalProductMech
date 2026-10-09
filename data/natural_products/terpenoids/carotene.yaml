@@ -582,6 +582,71 @@ discussions:
     assertion whether or not its host has a name, and for a compound from an uncultured
     symbiont that is the honest state. Name the producer if the primary literature
     does.'
+- discussion_id: curator-q7z859-assay-reference
+  kind: OPEN_QUESTION
+  status: OPEN
+  prompt: Which CrtYB sequence and isoform were assayed for terminal cyclization,
+    and can that assay be mapped to canonical Q7Z859 E307 rather than CBS6938 K307?
+  attaches_to:
+  - causal_graphs#beta-carotene-crtyb-q7z859-database
+  posed_by: codex
+  posed_date: '2026-10-09'
+  rationale: Canonical ATCC24230 E307 is a deliberately selected database reference,
+    not the CBS6938 K307 sequence associated with the 1999 functional reference. Neither
+    the historical assay construct nor activity of the 645aa isoform2 is established
+    here. REVIEW_NEEDED concerns assay-to-reference applicability, not whether Q7Z859
+    resolves. See curator-q7z859-assay-reference. Resolution could support an exact
+    assayed-sequence node or require a different protein/construct; no experimental
+    upgrade now.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/Q7Z859
+    evidence_source: database
+    explanation: Reviewed database annotation and sequence alternatives, not an independently
+      inspected primary assay. Native reference comparisons are cited on the graph
+      catalyst edge.
+- discussion_id: curator-p37295-assay-reference
+  kind: OPEN_QUESTION
+  status: OPEN
+  prompt: Which al-2 coding model was used in terminal-cyclization assays, and does
+    it match canonical P37295 602aa rather than the historical partial601aa model?
+  attaches_to:
+  - causal_graphs#beta-carotene-al2-p37295-database
+  posed_by: codex
+  posed_date: '2026-10-09'
+  rationale: 'Canonical 602aa is a deliberately selected database reference, not the
+    historical partial 601aa model. UniProt reports preferential single-end cyclization:
+    this terminal reaction does not establish beta-carotene as the major native product.
+    REVIEW_NEEDED concerns assay-to-model applicability, not whether P37295 resolves.
+    See curator-p37295-assay-reference. Resolution could support an exact assayed-sequence
+    node or require a different protein/construct; no experimental upgrade now.'
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/P37295
+    evidence_source: database
+    explanation: Reviewed database annotation and sequence alternatives, not an independently
+      inspected primary assay. Native reference comparisons are cited on the graph
+      catalyst edge.
+- discussion_id: curator-q43415-assay-reference
+  kind: OPEN_QUESTION
+  status: OPEN
+  prompt: Which LCY1 sequence and construct were assayed, and does it match canonical
+    Q43415 498aa rather than Lamuyo T146A/N152K or a processed chain?
+  attaches_to:
+  - causal_graphs#beta-carotene-lcy1-q43415-database
+  posed_by: codex
+  posed_date: '2026-10-09'
+  rationale: Canonical 498aa is a deliberately selected database precursor reference.
+    The Lamuyo deposit has T146A/N152K sequence conflicts, and the 2010 functional
+    construct was not inspected. Predicted transit residues1..79 and chain80..498
+    do not prove processing or a mature assay construct. REVIEW_NEEDED concerns assay-to-reference
+    applicability, not whether Q43415 resolves. See curator-q43415-assay-reference.
+    Resolution could support an exact assayed-sequence node or require a different
+    protein/construct; no experimental upgrade now.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/Q43415
+    evidence_source: database
+    explanation: Reviewed database annotation and sequence alternatives, not an independently
+      inspected primary assay. Native reference comparisons are cited on the graph
+      catalyst edge.
 biosynthetic_pathway:
 - enzyme_id: UniProtKB:P21687
   enzyme_label: CrtY (Pantoea ananas reference)
@@ -1058,6 +1123,9 @@ causal_graph_refs:
 - beta-carotene-crtl-q55276-database
 - beta-carotene-carrp-q9uuq6-database
 - beta-carotene-carra-q67gh9-database
+- beta-carotene-crtyb-q7z859-database
+- beta-carotene-al2-p37295-database
+- beta-carotene-lcy1-q43415-database
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -1118,4 +1186,19 @@ curation_history:
     existing pathway steps, source fields, discussions, history and SEEDED status.
     No full-record scientific sign-off; lycopene chemical-representation and earlier
     access holds remain.'
+  llm_assisted: true
+- timestamp: '2026-10-09T22:56:59Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added Q7Z859, P37295 and Q43415 as deliberately selected canonical database
+    references: three BIOSYNTHESIS graph components, nine cited edges, three exact
+    UniProt reaction snippets and three OPEN curator-owned assay/reference Discussions.
+    Protein nodes remain REVIEW_NEEDED for assay applicability: Phaffia E307/K307
+    and isoform2, Neurospora602aa/partial601aa models, and Capsicum T146A/N152K conflicts
+    and unverified processing/construct. Preserve preferential single-end Neurospora
+    activity. Functional evidence remains DATABASE_ASSERTION. No new pathway steps
+    or primary-assay, producer, occurrence, BGC, taxonomy, origin, assembly or bioactivity
+    upgrade. All nine prior graph components, pathway steps, source Discussions, imported
+    fields and history are preserved. SEEDED remains; no full-record scientific sign-off.
+    Lycopene chemical-representation and all primary-access holds remain.'
   llm_assisted: true
