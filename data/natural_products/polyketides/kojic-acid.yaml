@@ -621,6 +621,216 @@ causal_graphs:
     evidence:
     - reference: DOI:10.1080/14756360701810207
       evidence_type: PRIMARY_EXPERIMENT
+- graph_id: kojic-acid-kojart-database-biosynthesis-secretion
+  scope: BIOSYNTHESIS
+  nodes:
+  - node_id: koja_reference
+    label: KojA native RIB40 reference
+    node_type: ENZYME
+    identifier: UniProtKB:Q2U5I0
+    grounding_status: GROUNDED
+  - node_id: kojr_reference
+    label: KojR native RIB40 reference
+    node_type: PROTEIN
+    identifier: UniProtKB:Q2U5H9
+    grounding_status: GROUNDED
+  - node_id: kojt_reference
+    label: KojT native RIB40 reference
+    node_type: PROTEIN
+    identifier: UniProtKB:Q2U5H8
+    grounding_status: GROUNDED
+  - node_id: biosynthesis
+    label: Database-reported kojic-acid biosynthesis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: secretion
+    label: Database-reported kojic-acid secretion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: kojic_acid
+    label: kojic acid
+    node_type: COMPOUND
+    identifier: CHEBI:43572
+    grounding_status: GROUNDED
+  edges:
+  - subject: koja_reference
+    predicate: is_database_reported_participant_in
+    object: biosynthesis
+    notes: KojA is assigned a probable enzymatic role in kojic-acid biosynthesis.
+      The proposed glucose conversion is not an established complete reaction or a
+      protein-alone assay. Native-reference identity and database functional attribution
+      are separate claims; this is not a 3.042 or NSPlD1 experimental construct. No
+      genotype-specific phenotype or physical complex is added.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2U5I0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry version 77, sequence version 1. KojA is assigned a probable
+        enzymatic role in kojic-acid biosynthesis. The proposed glucose conversion
+        is not an established complete reaction or a protein-alone assay. These are
+        adopted database annotations, not newly inspected experiments. The annotations
+        combine literature contexts, including engineered 3.042 strains; the native
+        RIB40 reference does not establish equivalence to those assay stocks or full
+        constructs. The cited 2010/2011 primary studies were inaccessible and the
+        2022 study was subscription-preview only; no experimental or disruption-phenotype
+        edge is inferred from those citations.
+      snippet: Probable FAD-dependent monooxygenase
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAE63185.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Independent complete 428-aa RIB40 reference, taxon 510516, locus AO090113000136.
+        Its AP007166.1 coded_by coordinates complement(1676515..1677801) and strand
+        agree with the native CDS. Deposit identity, not independent functional or
+        historical construct evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/BA000053.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: Complete CDS complement(4368691..4369977), codon_start 1/default table
+        1, independently translates to 428 aa identical to its annotation, GenPept
+        BAE63185.1 and UniProt Q2U5I0. The bounded chromosome region 4368535..4374670
+        contains the corresponding scaffold region; this correspondence does not upgrade
+        the imported BGC or producer evidence grade.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AP007166.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: CDS complement(1676515..1677801) independently translates to the same
+        complete 428-aa reference. The bounded 5776-nt scaffold region 1676515..1682290
+        equals its corresponding chromosome sequence. No whole-genome audit, assayed
+        construct or 3.042 strain equality is claimed.
+  - subject: kojr_reference
+    predicate: is_database_reported_regulator_of
+    object: biosynthesis
+    notes: KojR is assigned regulation of the kojic-acid biosynthetic cluster. This
+      does not assert direct promoter binding, protein abundance or a physical regulatory
+      complex. Native-reference identity and database functional attribution are separate
+      claims; this is not a 3.042 or NSPlD1 experimental construct. No genotype-specific
+      phenotype or physical complex is added.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2U5H9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry version 101, sequence version 1. KojR is assigned regulation
+        of the kojic-acid biosynthetic cluster. This does not assert direct promoter
+        binding, protein abundance or a physical regulatory complex. These are adopted
+        database annotations, not newly inspected experiments. The annotations combine
+        literature contexts, including engineered 3.042 strains; the native RIB40
+        reference does not establish equivalence to those assay stocks or full constructs.
+        The cited 2010/2011 primary studies were inaccessible and the 2022 study was
+        subscription-preview only; no experimental or disruption-phenotype edge is
+        inferred from those citations.
+      snippet: Transcription factor that regulates the gene cluster
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAE63186.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Independent complete 555-aa RIB40 reference, taxon 510516, locus AO090113000137.
+        Its AP007166.1 coded_by coordinates 1678545..1680212 and strand agree with
+        the native CDS. Deposit identity, not independent functional or historical
+        construct evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/BA000053.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: Complete CDS 4370721..4372388, codon_start 1/default table 1, independently
+        translates to 555 aa identical to its annotation, GenPept BAE63186.1 and UniProt
+        Q2U5H9. The bounded chromosome region 4368535..4374670 contains the corresponding
+        scaffold region; this correspondence does not upgrade the imported BGC or
+        producer evidence grade.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AP007166.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: CDS 1678545..1680212 independently translates to the same complete 555-aa
+        reference. The bounded 5776-nt scaffold region 1676515..1682290 equals its
+        corresponding chromosome sequence. No whole-genome audit, assayed construct
+        or 3.042 strain equality is claimed.
+  - subject: kojt_reference
+    predicate: is_database_reported_participant_in
+    object: secretion
+    notes: KojT is assigned involvement in kojic-acid secretion as an MFS-type transporter.
+      No measured transport kinetics, exclusive substrate specificity or biosynthetic
+      enzyme activity is asserted. Native-reference identity and database functional
+      attribution are separate claims; this is not a 3.042 or NSPlD1 experimental
+      construct. No genotype-specific phenotype or physical complex is added.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2U5H8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry version 86, sequence version 1. KojT is assigned involvement
+        in kojic-acid secretion as an MFS-type transporter. No measured transport
+        kinetics, exclusive substrate specificity or biosynthetic enzyme activity
+        is asserted. These are adopted database annotations, not newly inspected experiments.
+        The annotations combine literature contexts, including engineered 3.042 strains;
+        the native RIB40 reference does not establish equivalence to those assay stocks
+        or full constructs. The cited 2010/2011 primary studies were inaccessible
+        and the 2022 study was subscription-preview only; no experimental or disruption-phenotype
+        edge is inferred from those citations.
+      snippet: Involved in the secretion of kojic acid
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAE63187.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Independent complete 564-aa RIB40 reference, taxon 510516, locus AO090113000138.
+        Its AP007166.1 coded_by coordinates 1680596..1682290 and strand agree with
+        the native CDS. Deposit identity, not independent functional or historical
+        construct evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/BA000053.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: Complete CDS 4372772..4374466, codon_start 1/default table 1, independently
+        translates to 564 aa identical to its annotation, GenPept BAE63187.1 and UniProt
+        Q2U5H8. The bounded chromosome region 4368535..4374670 contains the corresponding
+        scaffold region; this correspondence does not upgrade the imported BGC or
+        producer evidence grade.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AP007166.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: CDS 1680596..1682290 independently translates to the same complete 564-aa
+        reference. The bounded 5776-nt scaffold region 1676515..1682290 equals its
+        corresponding chromosome sequence. No whole-genome audit, assayed construct
+        or 3.042 strain equality is claimed.
+  - subject: biosynthesis
+    predicate: has_database_reported_product
+    object: kojic_acid
+    notes: The UniProt function text names kojic acid as 5-hydroxy-2-hydroxymethyl-1,4-pyrone,
+      matching this neutral achiral owner, CHEBI:43572/BEJNERDRQOWKJM-UHFFFAOYSA-N.
+      No ordered pathway, specific intermediate, complete glucose-to-product reaction
+      or protein-alone synthesis is asserted.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2U5I0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry version 77, sequence version 1. KojA is assigned a probable
+        enzymatic role in kojic-acid biosynthesis. The proposed glucose conversion
+        is not an established complete reaction or a protein-alone assay. These are
+        adopted database annotations, not newly inspected experiments. The annotations
+        combine literature contexts, including engineered 3.042 strains; the native
+        RIB40 reference does not establish equivalence to those assay stocks or full
+        constructs. The cited 2010/2011 primary studies were inaccessible and the
+        2022 study was subscription-preview only; no experimental or disruption-phenotype
+        edge is inferred from those citations.
+  - subject: secretion
+    predicate: has_database_reported_exported_compound
+    object: kojic_acid
+    notes: Secretion is distinct from chemical synthesis. The database names this
+      parent kojic acid, not a derivative, salt, extract or a separately identified
+      intracellular intermediate. No transport stoichiometry or measured protein-alone
+      export assay is asserted.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2U5H8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry version 86, sequence version 1. KojT is assigned involvement
+        in kojic-acid secretion as an MFS-type transporter. No measured transport
+        kinetics, exclusive substrate specificity or biosynthetic enzyme activity
+        is asserted. These are adopted database annotations, not newly inspected experiments.
+        The annotations combine literature contexts, including engineered 3.042 strains;
+        the native RIB40 reference does not establish equivalence to those assay stocks
+        or full constructs. The cited 2010/2011 primary studies were inaccessible
+        and the 2022 study was subscription-preview only; no experimental or disruption-phenotype
+        edge is inferred from those citations.
+  description: Database-qualified KojA/KojR/KojT roles in kojic-acid biosynthesis
+    and secretion. The nodes are sequence-verified native Aspergillus oryzae RIB40
+    references, not verified assayed constructs or substitutes for engineered 3.042/NSPlD1
+    strains. KojA enzyme chemistry remains putative. No direct promoter binding, physical
+    complex, ordered enzyme pathway or new native-production claim. The imported producer/BGC
+    grades, computed filing class and natural-product origin remain unchanged.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -644,3 +854,16 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-09T09:20:05Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a separate six-node/five-edge BIOSYNTHESIS graph with native RIB40
+    references KojA/UniProtKB:Q2U5I0, KojR/UniProtKB:Q2U5H9 and KojT/UniProtKB:Q2U5H8.
+    Independent GenPept and chromosome/scaffold translations establish reference identity
+    only. Each edge has a stable source URL; protein edges include short exact UniProt
+    snippets. Functional claims remain database-level, with biosynthesis distinct
+    from secretion and KojA chemistry putative. No full assayed-construct or 3.042
+    identity, direct binding, physical complex, ordered pathway, phenotype or producer/BGC-grade
+    upgrade. Preserved the old BIOACTIVITY graph, all source fields, chemistry, classification,
+    natural-product origin, history and SEEDED status; not full-record sign-off.
+  llm_assisted: true
