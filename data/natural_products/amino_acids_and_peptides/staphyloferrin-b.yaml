@@ -114,6 +114,111 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:Q2G1M9
+  enzyme_label: SbnE (NCTC 8325 reference)
+  reaction_id: RHEA:59124
+  substrates:
+  - CHEBI:57721
+  - CHEBI:16947
+  product: CHEBI:142969
+  notes: ATP-dependent condensation of L-Dap and citrate forms citryl-L-Dap, AMP and
+    diphosphate; assembly step 1. This is the database-assigned assembly order, not
+    inferred gene order; I/A/B precursor synthesis is represented separately without
+    invented step numbers. The LS483365 reference matches the UniProt sequence.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/Q2G1M9
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-09'
+    notes: Reviewed UniProt entry version 101, sequence version 1; 578 aa; sbnE, SAOUHSC_00079;
+      S. aureus NCTC 8325 / PS 47, taxon 93061. ATP-dependent condensation of L-Dap
+      and citrate forms citryl-L-Dap, AMP and diphosphate; assembly step 1. FUNCTION
+      and CATALYTIC ACTIVITY cite PMID:19775248; RHEA:59124 and its forward direction
+      are read from UniProt, not independently verified against Rhea. DOI:10.1111/j.1365-2958.2009.06880.x
+      was tool-inaccessible; no new PRIMARY_EXPERIMENT claim. Chemical identifiers
+      are the ionic participants cross-referenced by UniProt; labels checked against
+      cached ChEBI release 255. Graph edges summarize principal substrates/products,
+      not a complete stoichiometric equation.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/SQF72449.1
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-09'
+    notes: The complete 578-aa SQF72449.1 sequence equals Q2G1M9. CDS LS483365.1:84228..85964,
+      locus NCTC8325_00069, independently translates to it using table 11 and codon_start
+      1. LS483365 names NCTC8325, taxon 93061, BioSample SAMEA3672889. Sequence equality
+      grounds a reference only, not an assayed construct, historical stock, native
+      expression or function. Source/genomic annotations are not functional experiments.
+- step_number: 2
+  enzyme_id: UniProtKB:Q2G1M6
+  enzyme_label: SbnH (NCTC 8325 reference)
+  reaction_id: RHEA:59120
+  substrates:
+  - CHEBI:142969
+  product: CHEBI:142970
+  notes: Decarboxylation of citryl-L-Dap with a proton forms citryl-diaminoethane
+    and carbon dioxide; assembly step 2. This is the database-assigned assembly order,
+    not inferred gene order; I/A/B precursor synthesis is represented separately without
+    invented step numbers. The LS483365 reference matches the UniProt sequence.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/Q2G1M6
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-09'
+    notes: Reviewed UniProt entry version 112, sequence version 1; 400 aa; sbnH, SAOUHSC_00082;
+      S. aureus NCTC 8325 / PS 47, taxon 93061. Decarboxylation of citryl-L-Dap with
+      a proton forms citryl-diaminoethane and carbon dioxide; assembly step 2. FUNCTION
+      and CATALYTIC ACTIVITY cite PMID:19775248; RHEA:59120 and its forward direction
+      are read from UniProt, not independently verified against Rhea. DOI:10.1111/j.1365-2958.2009.06880.x
+      was tool-inaccessible; no new PRIMARY_EXPERIMENT claim. Chemical identifiers
+      are the ionic participants cross-referenced by UniProt; labels checked against
+      cached ChEBI release 255. Graph edges summarize principal substrates/products,
+      not a complete stoichiometric equation.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/SQF72452.1
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-09'
+    notes: The complete 400-aa SQF72452.1 sequence equals Q2G1M6. CDS LS483365.1:88474..89676,
+      locus NCTC8325_00072, independently translates to it using table 11 and codon_start
+      1. LS483365 names NCTC8325, taxon 93061, BioSample SAMEA3672889. Sequence equality
+      grounds a reference only, not an assayed construct, historical stock, native
+      expression or function. Source/genomic annotations are not functional experiments.
+- step_number: 3
+  enzyme_id: UniProtKB:Q2G1M8
+  enzyme_label: SbnF (NCTC 8325 reference)
+  reaction_id: RHEA:59128
+  substrates:
+  - CHEBI:142970
+  - CHEBI:57721
+  product: CHEBI:142971
+  notes: ATP-dependent condensation of citryl-diaminoethane and L-Dap forms the SbnC
+    acceptor, AMP and diphosphate; assembly step 3. This is the database-assigned
+    assembly order, not inferred gene order; I/A/B precursor synthesis is represented
+    separately without invented step numbers. The 616-aa CP000253 reference is selected;
+    the 592-aa LS483365 model is not treated as the same protein.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/Q2G1M8
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-09'
+    notes: Reviewed UniProt entry version 101, sequence version 1; 616 aa; sbnF, SAOUHSC_00080;
+      S. aureus NCTC 8325 / PS 47, taxon 93061. ATP-dependent condensation of citryl-diaminoethane
+      and L-Dap forms the SbnC acceptor, AMP and diphosphate; assembly step 3. FUNCTION
+      and CATALYTIC ACTIVITY cite PMID:19775248; RHEA:59128 and its forward direction
+      are read from UniProt, not independently verified against Rhea. DOI:10.1111/j.1365-2958.2009.06880.x
+      was tool-inaccessible; no new PRIMARY_EXPERIMENT claim. Chemical identifiers
+      are the ionic participants cross-referenced by UniProt; labels checked against
+      cached ChEBI release 255. Graph edges summarize principal substrates/products,
+      not a complete stoichiometric equation.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/ABD29263.1
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-09'
+    notes: The complete 616-aa ABD29263.1 sequence equals canonical Q2G1M8; CDS CP000253.1:86396..88246,
+      SAOUHSC_00080, independently translates to it using table 11 and codon_start
+      1. CP000253 names NCTC 8325, taxon 93061, BioSample SAMN02604235. The owner-linked
+      LS483365 model SQF72450.1 (LS483365.1:85945..87723; NCTC8325_00070) is 592 aa,
+      not the canonical sequence; it comes from a different BioSample, SAMEA3672889.
+      No functional assignment to this shorter model or equivalence of the two stocks
+      is asserted. LS483365 labels that shorter CDS iucC_1. AAP82068.1 is a separate
+      579-aa species-level deposit, flagged by UniProt for truncated initiation, not
+      the adopted 616-aa model. Sequence equality grounds a reference only, not an
+      assayed construct, historical stock, native expression or function. Source/genomic
+      annotations are not functional experiments.
 - step_number: 4
   enzyme_id: UniProtKB:Q2G1N1
   enzyme_label: Staphyloferrin B synthase
@@ -270,6 +375,629 @@ causal_graphs:
       notes: Reviewed UniProtKB:Q2G1N1 is the Staphylococcus aureus NCTC 8325 / PS
         47 SbnC staphyloferrin B synthase, ordered locus SAOUHSC_00077, and annotates
         RHEA:59132.
+- graph_id: staphyloferrin-b-precursor-database-reactions
+  scope: BIOSYNTHESIS
+  description: Database-qualified L-Dap precursor synthesis by SbnI, SbnA and SbnB
+    in the NCTC 8325 reference. SbnI forms phosphoserine; SbnA forms ACEGA with glutamate;
+    SbnB forms L-Dap and 2-oxoglutarate. No direct enzyme-enzyme interaction or regulation
+    is asserted. Ionic chemical participants follow UniProt cross-references and cached
+    ChEBI labels. ATP/redox/co-products are described in evidence; the graph is not
+    a complete stoichiometric model. No native flux or experimental-stock identity.
+  nodes:
+  - node_id: sbni
+    label: SbnI (SAOUHSC_00083; NCTC 8325 reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q2G1M5
+    grounding_status: GROUNDED
+  - node_id: sbna
+    label: SbnA (SAOUHSC_00075; NCTC 8325 reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q2G1N3
+    grounding_status: GROUNDED
+  - node_id: sbnb
+    label: SbnB (SAOUHSC_00076; NCTC 8325 reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q2G1N2
+    grounding_status: GROUNDED
+  - node_id: serine
+    label: L-serine zwitterion
+    identifier: CHEBI:33384
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+  - node_id: phosphoserine
+    label: O-phosphonato-L-serine(2-)
+    identifier: CHEBI:57524
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+  - node_id: glutamate
+    label: L-glutamate(1-)
+    identifier: CHEBI:29985
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+  - node_id: acega
+    label: N-[(2S)-2-amino-2-carboxyethyl]-L-glutamate(2-)
+    identifier: CHEBI:134610
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+  - node_id: ldap
+    label: 3-amino-L-alanine zwitterion
+    identifier: CHEBI:57721
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+  - node_id: two_oxoglutarate
+    label: 2-oxoglutarate(2-)
+    identifier: CHEBI:16810
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+  edges:
+  - subject: serine
+    predicate: is a substrate for
+    object: sbni
+    notes: ATP-dependent phosphorylation of free L-serine to O-phospho-L-serine, releasing
+      ADP and a proton.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2G1M5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry version 101, sequence version 1; 254 aa; sbnI,
+        SAOUHSC_00083; S. aureus NCTC 8325 / PS 47, taxon 93061. ATP-dependent phosphorylation
+        of free L-serine to O-phospho-L-serine, releasing ADP and a proton. FUNCTION
+        and CATALYTIC ACTIVITY cite PMID:29483190; RHEA:59112 and its forward direction
+        are read from UniProt, not independently verified against Rhea. DOI:10.1074/jbc.ra118.001875
+        was tool-inaccessible; no new PRIMARY_EXPERIMENT claim. Chemical identifiers
+        are the ionic participants cross-referenced by UniProt; labels checked against
+        cached ChEBI release 255. Graph edges summarize principal substrates/products,
+        not a complete stoichiometric equation. No heme sensing, DNA binding, regulation
+        or PDB construct identity is adopted.
+      snippet: Free serine kinase that uses ATP to phosphorylate L-serine to yield
+        O-phospho-L-serine and ADP.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/SQF72453.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 254-aa SQF72453.1 sequence equals Q2G1M5. CDS LS483365.1:89680..90444,
+        locus NCTC8325_00073, independently translates to it using table 11 and codon_start
+        1. LS483365 names NCTC8325, taxon 93061, BioSample SAMEA3672889. Sequence
+        equality grounds a reference only, not an assayed construct, historical stock,
+        native expression or function. Source/genomic annotations are not functional
+        experiments.
+  - subject: sbni
+    predicate: forms
+    object: phosphoserine
+    notes: ATP-dependent phosphorylation of free L-serine to O-phospho-L-serine, releasing
+      ADP and a proton.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2G1M5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry version 101, sequence version 1; 254 aa; sbnI,
+        SAOUHSC_00083; S. aureus NCTC 8325 / PS 47, taxon 93061. ATP-dependent phosphorylation
+        of free L-serine to O-phospho-L-serine, releasing ADP and a proton. FUNCTION
+        and CATALYTIC ACTIVITY cite PMID:29483190; RHEA:59112 and its forward direction
+        are read from UniProt, not independently verified against Rhea. DOI:10.1074/jbc.ra118.001875
+        was tool-inaccessible; no new PRIMARY_EXPERIMENT claim. Chemical identifiers
+        are the ionic participants cross-referenced by UniProt; labels checked against
+        cached ChEBI release 255. Graph edges summarize principal substrates/products,
+        not a complete stoichiometric equation. No heme sensing, DNA binding, regulation
+        or PDB construct identity is adopted.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/SQF72453.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 254-aa SQF72453.1 sequence equals Q2G1M5. CDS LS483365.1:89680..90444,
+        locus NCTC8325_00073, independently translates to it using table 11 and codon_start
+        1. LS483365 names NCTC8325, taxon 93061, BioSample SAMEA3672889. Sequence
+        equality grounds a reference only, not an assayed construct, historical stock,
+        native expression or function. Source/genomic annotations are not functional
+        experiments.
+  - subject: phosphoserine
+    predicate: is a substrate for
+    object: sbna
+    notes: O-phospho-L-serine and L-glutamate form ACEGA, phosphate and a proton.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2G1N3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry version 109, sequence version 2; 326 aa; sbnA,
+        SAOUHSC_00075; S. aureus NCTC 8325 / PS 47, taxon 93061. O-phospho-L-serine
+        and L-glutamate form ACEGA, phosphate and a proton. FUNCTION and CATALYTIC
+        ACTIVITY cite PMID:24485762; RHEA:52384 and its forward direction are read
+        from UniProt, not independently verified against Rhea. DOI:10.1016/j.chembiol.2013.12.011
+        was tool-inaccessible; no new PRIMARY_EXPERIMENT claim. Chemical identifiers
+        are the ionic participants cross-referenced by UniProt; labels checked against
+        cached ChEBI release 255. Graph edges summarize principal substrates/products,
+        not a complete stoichiometric equation.
+      snippet: Catalyzes the synthesis of N-((2S)-2-amino-2-carboxyethyl)-L-glutamate
+        (ACEGA) from O-phospho-L-serine and L-glutamate.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/SQF72445.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 326-aa SQF72445.1 sequence equals Q2G1N3. CDS LS483365.1:79227..80207,
+        locus NCTC8325_00065, independently translates to it using table 11 and codon_start
+        1. LS483365 names NCTC8325, taxon 93061, BioSample SAMEA3672889. Older ABD29258.1
+        is only 281 aa and is marked truncated by UniProt; it is not the adopted model.
+        AAP82063.1 also matches 326 aa but its deposit has species taxon 1280 and
+        no strain qualifier. Sequence equality grounds a reference only, not an assayed
+        construct, historical stock, native expression or function. Source/genomic
+        annotations are not functional experiments.
+  - subject: glutamate
+    predicate: is a substrate for
+    object: sbna
+    notes: O-phospho-L-serine and L-glutamate form ACEGA, phosphate and a proton.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2G1N3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry version 109, sequence version 2; 326 aa; sbnA,
+        SAOUHSC_00075; S. aureus NCTC 8325 / PS 47, taxon 93061. O-phospho-L-serine
+        and L-glutamate form ACEGA, phosphate and a proton. FUNCTION and CATALYTIC
+        ACTIVITY cite PMID:24485762; RHEA:52384 and its forward direction are read
+        from UniProt, not independently verified against Rhea. DOI:10.1016/j.chembiol.2013.12.011
+        was tool-inaccessible; no new PRIMARY_EXPERIMENT claim. Chemical identifiers
+        are the ionic participants cross-referenced by UniProt; labels checked against
+        cached ChEBI release 255. Graph edges summarize principal substrates/products,
+        not a complete stoichiometric equation.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/SQF72445.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 326-aa SQF72445.1 sequence equals Q2G1N3. CDS LS483365.1:79227..80207,
+        locus NCTC8325_00065, independently translates to it using table 11 and codon_start
+        1. LS483365 names NCTC8325, taxon 93061, BioSample SAMEA3672889. Older ABD29258.1
+        is only 281 aa and is marked truncated by UniProt; it is not the adopted model.
+        AAP82063.1 also matches 326 aa but its deposit has species taxon 1280 and
+        no strain qualifier. Sequence equality grounds a reference only, not an assayed
+        construct, historical stock, native expression or function. Source/genomic
+        annotations are not functional experiments.
+  - subject: sbna
+    predicate: forms
+    object: acega
+    notes: O-phospho-L-serine and L-glutamate form ACEGA, phosphate and a proton.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2G1N3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry version 109, sequence version 2; 326 aa; sbnA,
+        SAOUHSC_00075; S. aureus NCTC 8325 / PS 47, taxon 93061. O-phospho-L-serine
+        and L-glutamate form ACEGA, phosphate and a proton. FUNCTION and CATALYTIC
+        ACTIVITY cite PMID:24485762; RHEA:52384 and its forward direction are read
+        from UniProt, not independently verified against Rhea. DOI:10.1016/j.chembiol.2013.12.011
+        was tool-inaccessible; no new PRIMARY_EXPERIMENT claim. Chemical identifiers
+        are the ionic participants cross-referenced by UniProt; labels checked against
+        cached ChEBI release 255. Graph edges summarize principal substrates/products,
+        not a complete stoichiometric equation.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/SQF72445.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 326-aa SQF72445.1 sequence equals Q2G1N3. CDS LS483365.1:79227..80207,
+        locus NCTC8325_00065, independently translates to it using table 11 and codon_start
+        1. LS483365 names NCTC8325, taxon 93061, BioSample SAMEA3672889. Older ABD29258.1
+        is only 281 aa and is marked truncated by UniProt; it is not the adopted model.
+        AAP82063.1 also matches 326 aa but its deposit has species taxon 1280 and
+        no strain qualifier. Sequence equality grounds a reference only, not an assayed
+        construct, historical stock, native expression or function. Source/genomic
+        annotations are not functional experiments.
+  - subject: acega
+    predicate: is a substrate for
+    object: sbnb
+    notes: NAD(+)-dependent oxidative hydrolysis of ACEGA with water forms L-Dap and
+      2-oxoglutarate, NADH and a proton.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2G1N2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry version 110, sequence version 1; 336 aa; sbnB,
+        SAOUHSC_00076; S. aureus NCTC 8325 / PS 47, taxon 93061. NAD(+)-dependent
+        oxidative hydrolysis of ACEGA with water forms L-Dap and 2-oxoglutarate, NADH
+        and a proton. FUNCTION and CATALYTIC ACTIVITY cite PMID:24485762; RHEA:51928
+        and its forward direction are read from UniProt, not independently verified
+        against Rhea. DOI:10.1016/j.chembiol.2013.12.011 was tool-inaccessible; no
+        new PRIMARY_EXPERIMENT claim. Chemical identifiers are the ionic participants
+        cross-referenced by UniProt; labels checked against cached ChEBI release 255.
+        Graph edges summarize principal substrates/products, not a complete stoichiometric
+        equation.
+      snippet: Catalyzes the hydrolysis of N-((2S)-2-amino-2-carboxyethyl)-L-glutamate
+        (ACEGA) to form L-2,3-diaminopropionic acid and 2-oxoglutarate.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/SQF72446.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 336-aa SQF72446.1 sequence equals Q2G1N2. CDS LS483365.1:80204..81214,
+        locus NCTC8325_00066, independently translates to it using table 11 and codon_start
+        1. LS483365 names NCTC8325, taxon 93061, BioSample SAMEA3672889. Sequence
+        equality grounds a reference only, not an assayed construct, historical stock,
+        native expression or function. Source/genomic annotations are not functional
+        experiments.
+  - subject: sbnb
+    predicate: forms
+    object: ldap
+    notes: NAD(+)-dependent oxidative hydrolysis of ACEGA with water forms L-Dap and
+      2-oxoglutarate, NADH and a proton.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2G1N2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry version 110, sequence version 1; 336 aa; sbnB,
+        SAOUHSC_00076; S. aureus NCTC 8325 / PS 47, taxon 93061. NAD(+)-dependent
+        oxidative hydrolysis of ACEGA with water forms L-Dap and 2-oxoglutarate, NADH
+        and a proton. FUNCTION and CATALYTIC ACTIVITY cite PMID:24485762; RHEA:51928
+        and its forward direction are read from UniProt, not independently verified
+        against Rhea. DOI:10.1016/j.chembiol.2013.12.011 was tool-inaccessible; no
+        new PRIMARY_EXPERIMENT claim. Chemical identifiers are the ionic participants
+        cross-referenced by UniProt; labels checked against cached ChEBI release 255.
+        Graph edges summarize principal substrates/products, not a complete stoichiometric
+        equation.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/SQF72446.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 336-aa SQF72446.1 sequence equals Q2G1N2. CDS LS483365.1:80204..81214,
+        locus NCTC8325_00066, independently translates to it using table 11 and codon_start
+        1. LS483365 names NCTC8325, taxon 93061, BioSample SAMEA3672889. Sequence
+        equality grounds a reference only, not an assayed construct, historical stock,
+        native expression or function. Source/genomic annotations are not functional
+        experiments.
+  - subject: sbnb
+    predicate: forms
+    object: two_oxoglutarate
+    notes: NAD(+)-dependent oxidative hydrolysis of ACEGA with water forms L-Dap and
+      2-oxoglutarate, NADH and a proton.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2G1N2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry version 110, sequence version 1; 336 aa; sbnB,
+        SAOUHSC_00076; S. aureus NCTC 8325 / PS 47, taxon 93061. NAD(+)-dependent
+        oxidative hydrolysis of ACEGA with water forms L-Dap and 2-oxoglutarate, NADH
+        and a proton. FUNCTION and CATALYTIC ACTIVITY cite PMID:24485762; RHEA:51928
+        and its forward direction are read from UniProt, not independently verified
+        against Rhea. DOI:10.1016/j.chembiol.2013.12.011 was tool-inaccessible; no
+        new PRIMARY_EXPERIMENT claim. Chemical identifiers are the ionic participants
+        cross-referenced by UniProt; labels checked against cached ChEBI release 255.
+        Graph edges summarize principal substrates/products, not a complete stoichiometric
+        equation.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/SQF72446.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 336-aa SQF72446.1 sequence equals Q2G1N2. CDS LS483365.1:80204..81214,
+        locus NCTC8325_00066, independently translates to it using table 11 and codon_start
+        1. LS483365 names NCTC8325, taxon 93061, BioSample SAMEA3672889. Sequence
+        equality grounds a reference only, not an assayed construct, historical stock,
+        native expression or function. Source/genomic annotations are not functional
+        experiments.
+- graph_id: staphyloferrin-b-upstream-assembly-database-reactions
+  scope: BIOSYNTHESIS
+  description: 'Database-qualified assembly steps 1-3: SbnE condensation, SbnH decarboxylation
+    and SbnF condensation. The product CHEBI:142971 is the acceptor in the separately
+    retained terminal SbnC graph; all node references here remain graph-local. SbnE/SbnH
+    match LS483365 proteins; SbnF denotes the 616-aa CP000253 reference, not the shorter
+    592-aa LS483365 model. No sequence or stock equivalence is asserted between those
+    SbnF models. New functional claims are database assertions, not independently
+    re-read primary experiments. Original SbnC graph and evidence remain unchanged.'
+  nodes:
+  - node_id: sbne
+    label: SbnE (SAOUHSC_00079; NCTC 8325 reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q2G1M9
+    grounding_status: GROUNDED
+  - node_id: sbnh
+    label: SbnH (SAOUHSC_00082; NCTC 8325 reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q2G1M6
+    grounding_status: GROUNDED
+  - node_id: sbnf
+    label: SbnF (SAOUHSC_00080; NCTC 8325 reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q2G1M8
+    grounding_status: GROUNDED
+  - node_id: ldap
+    label: 3-amino-L-alanine zwitterion
+    identifier: CHEBI:57721
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+  - node_id: citrate
+    label: citrate(3-)
+    identifier: CHEBI:16947
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+  - node_id: citryl_ldap
+    label: 2-[(L-alanin-3-ylcarbamoyl)methyl]-2-hydroxybutanedioate(2-)
+    identifier: CHEBI:142969
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+  - node_id: citryl_diaminoethane
+    label: 2-[(2-aminoethylcarbamoyl)methyl]-2-hydroxybutanedioate
+    identifier: CHEBI:142970
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+  - node_id: sbnc_acceptor
+    label: 2-[(L-alanin-3-ylcarbamoyl)methyl]-3-(2-aminoethylcarbamoyl)-2-hydroxypropanoate
+    identifier: CHEBI:142971
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+  edges:
+  - subject: ldap
+    predicate: is a substrate for
+    object: sbne
+    notes: ATP-dependent condensation of L-Dap and citrate forms citryl-L-Dap, AMP
+      and diphosphate; assembly step 1.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2G1M9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry version 101, sequence version 1; 578 aa; sbnE,
+        SAOUHSC_00079; S. aureus NCTC 8325 / PS 47, taxon 93061. ATP-dependent condensation
+        of L-Dap and citrate forms citryl-L-Dap, AMP and diphosphate; assembly step
+        1. FUNCTION and CATALYTIC ACTIVITY cite PMID:19775248; RHEA:59124 and its
+        forward direction are read from UniProt, not independently verified against
+        Rhea. DOI:10.1111/j.1365-2958.2009.06880.x was tool-inaccessible; no new PRIMARY_EXPERIMENT
+        claim. Chemical identifiers are the ionic participants cross-referenced by
+        UniProt; labels checked against cached ChEBI release 255. Graph edges summarize
+        principal substrates/products, not a complete stoichiometric equation.
+      snippet: the first step in staphyloferrin B biosynthesis
+    - reference: https://www.ncbi.nlm.nih.gov/protein/SQF72449.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 578-aa SQF72449.1 sequence equals Q2G1M9. CDS LS483365.1:84228..85964,
+        locus NCTC8325_00069, independently translates to it using table 11 and codon_start
+        1. LS483365 names NCTC8325, taxon 93061, BioSample SAMEA3672889. Sequence
+        equality grounds a reference only, not an assayed construct, historical stock,
+        native expression or function. Source/genomic annotations are not functional
+        experiments.
+  - subject: citrate
+    predicate: is a substrate for
+    object: sbne
+    notes: ATP-dependent condensation of L-Dap and citrate forms citryl-L-Dap, AMP
+      and diphosphate; assembly step 1.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2G1M9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry version 101, sequence version 1; 578 aa; sbnE,
+        SAOUHSC_00079; S. aureus NCTC 8325 / PS 47, taxon 93061. ATP-dependent condensation
+        of L-Dap and citrate forms citryl-L-Dap, AMP and diphosphate; assembly step
+        1. FUNCTION and CATALYTIC ACTIVITY cite PMID:19775248; RHEA:59124 and its
+        forward direction are read from UniProt, not independently verified against
+        Rhea. DOI:10.1111/j.1365-2958.2009.06880.x was tool-inaccessible; no new PRIMARY_EXPERIMENT
+        claim. Chemical identifiers are the ionic participants cross-referenced by
+        UniProt; labels checked against cached ChEBI release 255. Graph edges summarize
+        principal substrates/products, not a complete stoichiometric equation.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/SQF72449.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 578-aa SQF72449.1 sequence equals Q2G1M9. CDS LS483365.1:84228..85964,
+        locus NCTC8325_00069, independently translates to it using table 11 and codon_start
+        1. LS483365 names NCTC8325, taxon 93061, BioSample SAMEA3672889. Sequence
+        equality grounds a reference only, not an assayed construct, historical stock,
+        native expression or function. Source/genomic annotations are not functional
+        experiments.
+  - subject: sbne
+    predicate: forms
+    object: citryl_ldap
+    notes: ATP-dependent condensation of L-Dap and citrate forms citryl-L-Dap, AMP
+      and diphosphate; assembly step 1.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2G1M9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry version 101, sequence version 1; 578 aa; sbnE,
+        SAOUHSC_00079; S. aureus NCTC 8325 / PS 47, taxon 93061. ATP-dependent condensation
+        of L-Dap and citrate forms citryl-L-Dap, AMP and diphosphate; assembly step
+        1. FUNCTION and CATALYTIC ACTIVITY cite PMID:19775248; RHEA:59124 and its
+        forward direction are read from UniProt, not independently verified against
+        Rhea. DOI:10.1111/j.1365-2958.2009.06880.x was tool-inaccessible; no new PRIMARY_EXPERIMENT
+        claim. Chemical identifiers are the ionic participants cross-referenced by
+        UniProt; labels checked against cached ChEBI release 255. Graph edges summarize
+        principal substrates/products, not a complete stoichiometric equation.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/SQF72449.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 578-aa SQF72449.1 sequence equals Q2G1M9. CDS LS483365.1:84228..85964,
+        locus NCTC8325_00069, independently translates to it using table 11 and codon_start
+        1. LS483365 names NCTC8325, taxon 93061, BioSample SAMEA3672889. Sequence
+        equality grounds a reference only, not an assayed construct, historical stock,
+        native expression or function. Source/genomic annotations are not functional
+        experiments.
+  - subject: citryl_ldap
+    predicate: is a substrate for
+    object: sbnh
+    notes: Decarboxylation of citryl-L-Dap with a proton forms citryl-diaminoethane
+      and carbon dioxide; assembly step 2.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2G1M6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry version 112, sequence version 1; 400 aa; sbnH,
+        SAOUHSC_00082; S. aureus NCTC 8325 / PS 47, taxon 93061. Decarboxylation of
+        citryl-L-Dap with a proton forms citryl-diaminoethane and carbon dioxide;
+        assembly step 2. FUNCTION and CATALYTIC ACTIVITY cite PMID:19775248; RHEA:59120
+        and its forward direction are read from UniProt, not independently verified
+        against Rhea. DOI:10.1111/j.1365-2958.2009.06880.x was tool-inaccessible;
+        no new PRIMARY_EXPERIMENT claim. Chemical identifiers are the ionic participants
+        cross-referenced by UniProt; labels checked against cached ChEBI release 255.
+        Graph edges summarize principal substrates/products, not a complete stoichiometric
+        equation.
+      snippet: Catalyzes the decarboxylation of citryl-L-2,3-diaminopropionic acid
+        to citryl-diaminoethane
+    - reference: https://www.ncbi.nlm.nih.gov/protein/SQF72452.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 400-aa SQF72452.1 sequence equals Q2G1M6. CDS LS483365.1:88474..89676,
+        locus NCTC8325_00072, independently translates to it using table 11 and codon_start
+        1. LS483365 names NCTC8325, taxon 93061, BioSample SAMEA3672889. Sequence
+        equality grounds a reference only, not an assayed construct, historical stock,
+        native expression or function. Source/genomic annotations are not functional
+        experiments.
+  - subject: sbnh
+    predicate: forms
+    object: citryl_diaminoethane
+    notes: Decarboxylation of citryl-L-Dap with a proton forms citryl-diaminoethane
+      and carbon dioxide; assembly step 2.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2G1M6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry version 112, sequence version 1; 400 aa; sbnH,
+        SAOUHSC_00082; S. aureus NCTC 8325 / PS 47, taxon 93061. Decarboxylation of
+        citryl-L-Dap with a proton forms citryl-diaminoethane and carbon dioxide;
+        assembly step 2. FUNCTION and CATALYTIC ACTIVITY cite PMID:19775248; RHEA:59120
+        and its forward direction are read from UniProt, not independently verified
+        against Rhea. DOI:10.1111/j.1365-2958.2009.06880.x was tool-inaccessible;
+        no new PRIMARY_EXPERIMENT claim. Chemical identifiers are the ionic participants
+        cross-referenced by UniProt; labels checked against cached ChEBI release 255.
+        Graph edges summarize principal substrates/products, not a complete stoichiometric
+        equation.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/SQF72452.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 400-aa SQF72452.1 sequence equals Q2G1M6. CDS LS483365.1:88474..89676,
+        locus NCTC8325_00072, independently translates to it using table 11 and codon_start
+        1. LS483365 names NCTC8325, taxon 93061, BioSample SAMEA3672889. Sequence
+        equality grounds a reference only, not an assayed construct, historical stock,
+        native expression or function. Source/genomic annotations are not functional
+        experiments.
+  - subject: citryl_diaminoethane
+    predicate: is a substrate for
+    object: sbnf
+    notes: ATP-dependent condensation of citryl-diaminoethane and L-Dap forms the
+      SbnC acceptor, AMP and diphosphate; assembly step 3.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2G1M8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry version 101, sequence version 1; 616 aa; sbnF,
+        SAOUHSC_00080; S. aureus NCTC 8325 / PS 47, taxon 93061. ATP-dependent condensation
+        of citryl-diaminoethane and L-Dap forms the SbnC acceptor, AMP and diphosphate;
+        assembly step 3. FUNCTION and CATALYTIC ACTIVITY cite PMID:19775248; RHEA:59128
+        and its forward direction are read from UniProt, not independently verified
+        against Rhea. DOI:10.1111/j.1365-2958.2009.06880.x was tool-inaccessible;
+        no new PRIMARY_EXPERIMENT claim. Chemical identifiers are the ionic participants
+        cross-referenced by UniProt; labels checked against cached ChEBI release 255.
+        Graph edges summarize principal substrates/products, not a complete stoichiometric
+        equation.
+      snippet: the third step in staphyloferrin B biosynthesis
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABD29263.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 616-aa ABD29263.1 sequence equals canonical Q2G1M8; CDS
+        CP000253.1:86396..88246, SAOUHSC_00080, independently translates to it using
+        table 11 and codon_start 1. CP000253 names NCTC 8325, taxon 93061, BioSample
+        SAMN02604235. The owner-linked LS483365 model SQF72450.1 (LS483365.1:85945..87723;
+        NCTC8325_00070) is 592 aa, not the canonical sequence; it comes from a different
+        BioSample, SAMEA3672889. No functional assignment to this shorter model or
+        equivalence of the two stocks is asserted. LS483365 labels that shorter CDS
+        iucC_1. AAP82068.1 is a separate 579-aa species-level deposit, flagged by
+        UniProt for truncated initiation, not the adopted 616-aa model. Sequence equality
+        grounds a reference only, not an assayed construct, historical stock, native
+        expression or function. Source/genomic annotations are not functional experiments.
+  - subject: ldap
+    predicate: is a substrate for
+    object: sbnf
+    notes: ATP-dependent condensation of citryl-diaminoethane and L-Dap forms the
+      SbnC acceptor, AMP and diphosphate; assembly step 3.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2G1M8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry version 101, sequence version 1; 616 aa; sbnF,
+        SAOUHSC_00080; S. aureus NCTC 8325 / PS 47, taxon 93061. ATP-dependent condensation
+        of citryl-diaminoethane and L-Dap forms the SbnC acceptor, AMP and diphosphate;
+        assembly step 3. FUNCTION and CATALYTIC ACTIVITY cite PMID:19775248; RHEA:59128
+        and its forward direction are read from UniProt, not independently verified
+        against Rhea. DOI:10.1111/j.1365-2958.2009.06880.x was tool-inaccessible;
+        no new PRIMARY_EXPERIMENT claim. Chemical identifiers are the ionic participants
+        cross-referenced by UniProt; labels checked against cached ChEBI release 255.
+        Graph edges summarize principal substrates/products, not a complete stoichiometric
+        equation.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABD29263.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 616-aa ABD29263.1 sequence equals canonical Q2G1M8; CDS
+        CP000253.1:86396..88246, SAOUHSC_00080, independently translates to it using
+        table 11 and codon_start 1. CP000253 names NCTC 8325, taxon 93061, BioSample
+        SAMN02604235. The owner-linked LS483365 model SQF72450.1 (LS483365.1:85945..87723;
+        NCTC8325_00070) is 592 aa, not the canonical sequence; it comes from a different
+        BioSample, SAMEA3672889. No functional assignment to this shorter model or
+        equivalence of the two stocks is asserted. LS483365 labels that shorter CDS
+        iucC_1. AAP82068.1 is a separate 579-aa species-level deposit, flagged by
+        UniProt for truncated initiation, not the adopted 616-aa model. Sequence equality
+        grounds a reference only, not an assayed construct, historical stock, native
+        expression or function. Source/genomic annotations are not functional experiments.
+  - subject: sbnf
+    predicate: forms
+    object: sbnc_acceptor
+    notes: ATP-dependent condensation of citryl-diaminoethane and L-Dap forms the
+      SbnC acceptor, AMP and diphosphate; assembly step 3.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2G1M8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry version 101, sequence version 1; 616 aa; sbnF,
+        SAOUHSC_00080; S. aureus NCTC 8325 / PS 47, taxon 93061. ATP-dependent condensation
+        of citryl-diaminoethane and L-Dap forms the SbnC acceptor, AMP and diphosphate;
+        assembly step 3. FUNCTION and CATALYTIC ACTIVITY cite PMID:19775248; RHEA:59128
+        and its forward direction are read from UniProt, not independently verified
+        against Rhea. DOI:10.1111/j.1365-2958.2009.06880.x was tool-inaccessible;
+        no new PRIMARY_EXPERIMENT claim. Chemical identifiers are the ionic participants
+        cross-referenced by UniProt; labels checked against cached ChEBI release 255.
+        Graph edges summarize principal substrates/products, not a complete stoichiometric
+        equation.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABD29263.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 616-aa ABD29263.1 sequence equals canonical Q2G1M8; CDS
+        CP000253.1:86396..88246, SAOUHSC_00080, independently translates to it using
+        table 11 and codon_start 1. CP000253 names NCTC 8325, taxon 93061, BioSample
+        SAMN02604235. The owner-linked LS483365 model SQF72450.1 (LS483365.1:85945..87723;
+        NCTC8325_00070) is 592 aa, not the canonical sequence; it comes from a different
+        BioSample, SAMEA3672889. No functional assignment to this shorter model or
+        equivalence of the two stocks is asserted. LS483365 labels that shorter CDS
+        iucC_1. AAP82068.1 is a separate 579-aa species-level deposit, flagged by
+        UniProt for truncated initiation, not the adopted 616-aa model. Sequence equality
+        grounds a reference only, not an assayed construct, historical stock, native
+        expression or function. Source/genomic annotations are not functional experiments.
+- graph_id: staphyloferrin-b-sbnd-database-secretion
+  scope: BIOSYNTHESIS
+  description: Database-qualified involvement of canonical SbnD in staphyloferrin
+    B secretion. This is the 418-aa CP000253 reference, not the 390-aa LS483365 protein;
+    neither exclusive transport nor essentiality is asserted. The compound node denotes
+    the neutral owner, not a verified transported charge state.
+  nodes:
+  - node_id: sbnd
+    label: SbnD (SAOUHSC_00078; NCTC 8325 reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q2G1N0
+    grounding_status: GROUNDED
+  - node_id: staphyloferrin_b
+    label: staphyloferrin B
+    identifier: CHEBI:134612
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+  edges:
+  - subject: sbnd
+    predicate: is involved in secretion of
+    object: staphyloferrin_b
+    notes: Partial impairment in the database disruption annotation does not establish
+      loss of secretion. The neutral parent is used as the compound anchor only; transported
+      protonation state and direct substrate specificity are unresolved.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2G1N0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry version 117, sequence version 1; 418 aa; sbnD,
+        SAOUHSC_00078; S. aureus NCTC 8325 / PS 47, taxon 93061. FUNCTION cites ECO:0000269/PMID:25680529
+        for involvement in staphyloferrin B secretion. The disruption annotation reports
+        partial impairment, not abolished secretion or essentiality. DOI:10.1016/j.febslet.2015.02.002
+        was not independently inspected. No direct transport assay, rate, specificity,
+        topology or transported ionic species is asserted.
+      snippet: Involved in staphyloferrin B secretion
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABD29261.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 418-aa ABD29261.1 sequence equals canonical Q2G1N0; CDS
+        CP000253.1:83505..84761, SAOUHSC_00078, independently translates to it using
+        table 11 and codon_start 1. CP000253 names NCTC 8325, taxon 93061, BioSample
+        SAMN02604235. The owner-linked LS483365 model SQF72448.1 (LS483365.1:83066..84238;
+        NCTC8325_00068) is 390 aa, not the canonical sequence; it comes from a different
+        BioSample, SAMEA3672889. No functional assignment to this shorter model or
+        equivalence of the two stocks is asserted. Sequence equality grounds a reference
+        only, not an assayed construct, historical stock, native expression or function.
+        Source/genomic annotations are not functional experiments.
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
   curator: seed_from_sources
@@ -285,4 +1013,19 @@ curation_history:
   changes: Added a terminal-step BIOSYNTHESIS pathway and causal graph for staphyloferrin
     B biosynthesis; grounded Staphylococcus aureus NCTC 8325 SbnC staphyloferrin B
     synthase to UniProtKB:Q2G1N1 and RHEA:59132.
+  llm_assisted: true
+- timestamp: '2026-10-09T15:57:45Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added seven database-qualified NCTC 8325 reference proteins: precursor
+    enzymes SbnI/Q2G1M5, SbnA/Q2G1N3 and SbnB/Q2G1N2; assembly enzymes SbnE/Q2G1M9,
+    SbnH/Q2G1M6 and SbnF/Q2G1M8; secretion-associated SbnD/Q2G1N0. Three new BIOSYNTHESIS
+    graphs contain 17 edges with stable UniProt/NCBI references and seven verbatim
+    snippets. Added source-ordered assembly steps 1-3, preserving step 4 and the original
+    SbnC graph. Reference CDS/protein comparisons are CURATOR_INFERENCE, not primary
+    assay or stock identity. SbnD/SbnF canonical CP000253 models differ from the shorter
+    LS483365 models; no functional transfer to those shorter models. No regulation,
+    direct binding, virulence phenotype, antimicrobial claim, transported charge-state
+    assertion or producer/BGC upgrade. All seeder-owned fields and history preserved;
+    SEEDED, not full-record sign-off.'
   llm_assisted: true
