@@ -427,6 +427,109 @@ causal_graphs:
       retrieved_on: '2026-09-28'
       notes: NCBI GenPept BAI44340.1 is the AB448947.1 CotB4 P450 coding sequence
         from the Streptomyces melanosporofaciens MI614-43F2 cyclooctatin locus.
+- graph_id: cyclooctatin-engineered-afr-afx-support
+  scope: BIOSYNTHESIS
+  description: Non-native AfR/Afx redox-pair support of CotB3/CotB4 in engineered
+    Escherichia coli BL21(DE3). UniProt nodes identify references for the qualified
+    synthetic constructs. Whole-cell evidence does not establish purified electron
+    transfer, a physical complex or native partners. No new native-producer claim
+    or stereochemical assignment is made.
+  nodes:
+  - node_id: afr
+    label: AfR (+Gly construct; reference accession)
+    node_type: ENZYME
+    identifier: UniProtKB:S4M5B3
+    grounding_status: GROUNDED
+  - node_id: afx
+    label: Afx (MTN-deleted construct; reference accession)
+    node_type: PROTEIN
+    identifier: UniProtKB:S4MH50
+    grounding_status: GROUNDED
+  - node_id: hydroxylation
+    label: CotB3/CotB4 hydroxylation in engineered E. coli
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: reported_cyclooctatin
+    label: cyclooctatin (reported product)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: afr
+    predicate: with coexpressed Afx supports
+    object: hydroxylation
+    notes: Paired-system evidence; individual sufficiency is not established.
+    evidence:
+    - reference: DOI:10.1186/s12934-016-0487-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Results and Methods: the coexpressed redox pair supported CotB3/CotB4
+        in whole-cell assays.'
+      retrieved_on: '2026-10-09'
+      snippet: whole cell catalysis experiments were carried out
+    - reference: https://www.uniprot.org/uniprotkb/S4M5B3
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed reference, entry version 40, sequence version 1; 416 aa, STAFG_8584,
+        Streptomyces afghaniensis 772, taxon 1283301. Sequence equals GenPept EPJ34383.1
+        and the paper-cited RefSeq WP_020277402.1; the accession identifies the reference,
+        not an identical synthetic construct.
+      retrieved_on: '2026-10-09'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/WP_020277402.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Paper-cited reference sequence matches EPJ34383.1 and its independently
+        translated strain-772 genomic CDS.
+      retrieved_on: '2026-10-09'
+    - reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12934-016-0487-6/MediaObjects/12934_2016_487_MOESM1_ESM.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Literal Figure S19 ORF translation is 417 aa: Gly inserted after initiator
+        Met relative to the 416-aa reference. This is a sequence comparison, not a
+        claim that the assayed construct equals the canonical sequence.'
+      retrieved_on: '2026-10-09'
+  - subject: afx
+    predicate: with coexpressed AfR supports
+    object: hydroxylation
+    notes: Paired-system evidence; individual sufficiency is not established.
+    evidence:
+    - reference: DOI:10.1186/s12934-016-0487-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Results and Methods: the coexpressed redox pair supported CotB3/CotB4
+        in whole-cell assays.'
+      retrieved_on: '2026-10-09'
+    - reference: https://www.uniprot.org/uniprotkb/S4MH50
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed reference, entry version 42, sequence version 1; 110 aa, STAFG_8018,
+        Streptomyces afghaniensis 772, taxon 1283301. Sequence equals GenPept EPJ34910.1
+        and the paper-cited RefSeq WP_020276845.1; the accession identifies the reference,
+        not an identical synthetic construct.
+      retrieved_on: '2026-10-09'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/WP_020276845.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Paper-cited reference sequence matches EPJ34910.1 and its independently
+        translated strain-772 genomic CDS.
+      retrieved_on: '2026-10-09'
+    - reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12934-016-0487-6/MediaObjects/12934_2016_487_MOESM1_ESM.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Literal Figure S19 ORF translation is 107 aa: the reference N-terminal
+        MTN is absent. This is a sequence comparison, not a claim that the assayed
+        construct equals the 110-aa canonical sequence.'
+      retrieved_on: '2026-10-09'
+  - subject: hydroxylation
+    predicate: yields
+    object: reported_cyclooctatin
+    notes: The reported product is not asserted identical to the partial-stereo owner
+      or assigned an exact stereochemical identifier in this graph.
+    evidence:
+    - reference: DOI:10.1186/s12934-016-0487-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results, Figure 1 and Additional file 1 report cyclooctatin formation
+        and spectroscopic characterization in the engineered production system.
+      retrieved_on: '2026-10-09'
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:78370
+      evidence_type: CURATOR_INFERENCE
+      notes: ChEBI cyclooctatin has InChIKey MSKFOQCDNOFJAT-VCRXIKTMSA-N. Its InChI
+        matches the owner through the double-bond layer but additionally specifies
+        tetrahedral stereochemistry. The owner remains MSKFOQCDNOFJAT-SOFYXZRVSA-N,
+        stereo_complete false. Exact source-product stereochemical mapping is not
+        adjudicated here; no chemistry or xref changes.
+      retrieved_on: '2026-10-09'
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -448,4 +551,13 @@ curation_history:
   changes: Expanded the Streptomyces melanosporofaciens cyclooctatin biosynthetic
     pathway and BIOSYNTHESIS causal graph with CotB3 and CotB4 P450 hydroxylation
     steps; grounded BAI44339.1 and BAI44340.1 to UniProtKB:C9K1X6 and UniProtKB:C9K1X7.
+  llm_assisted: true
+- timestamp: '2026-10-09T05:38:22Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add AfR and Afx reference-grounded engineered constructs in a separate
+    three-edge BIOSYNTHESIS graph for paired whole-cell support of CotB3/CotB4. Record
+    the AfR Gly insertion and Afx MTN deletion; do not assert native partners, individual
+    sufficiency, purified electron transfer or a physical complex. Preserve all earlier
+    claims, partial-stereo chemistry and SEEDED status.
   llm_assisted: true
