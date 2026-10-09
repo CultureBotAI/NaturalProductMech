@@ -361,6 +361,78 @@ biosynthetic_pathway:
       refresh. The matching taxon, AM420293.1 locus 4075163..4077099 and 2-methylisoborneol
       connectivity contextualize the proposed role. SOURCE_ASSERTION and CLUSTER_UNSTATED
       grades are retained.
+- enzyme_id: UniProtKB:A3KI17
+  enzyme_label: SAML0357 (2-methylisoborneol synthase; proposed)
+  proposed: true
+  notes: SAML0357/SAM23877_0409, 440 aa. Native-reference protein in Streptomyces
+    ambofaciens ATCC 23877 (NCBITaxon:278992), not an identified assayed construct.
+    UniProt assigns function by curator inference (ECO:0000305) and explicitly links
+    this entry to 2-methylisoborneol biosynthesis. This proposed role does not assert
+    an exact reaction, pathway order, stereochemistry, shell-cargo relationship or
+    new producer/BGC evidence grade.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/A3KI17/entry
+    evidence_type: DATABASE_ASSERTION
+    snippet: Catalyzes the cyclization of 2-methylgeranyl diphosphate (2-MeGPP) to
+      2-methylisoborneol (2-MIB)
+    retrieved_on: '2026-10-08'
+    notes: UniProtKB release 2026_03, reviewed entry 57, sequence 1. Function uses
+      ECO:0000305 citing PMID:18492804; its reference annotation explicitly names
+      2-methylisoborneol biosynthesis. This is an inspected database assertion, not
+      newly inspected primary assay evidence. The IDA process annotation does not
+      establish the exact catalytic reaction.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/CAJ89344.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: SAML0357
+    retrieved_on: '2026-10-09'
+    notes: Native ATCC 23877 reference, forward-strand AM238663.1:360632..361954.
+      All 440 residues match UniProt, this GenPept sequence, the annotated CDS and
+      independent table-11 translation. Both genomic mappings agree. Identity evidence,
+      not an enzymatic assay.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AKZ53458.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: SAM23877_0409
+    retrieved_on: '2026-10-09'
+    notes: Native ATCC 23877 reference, forward-strand CP012382.1:360601..361923.
+      All 440 residues match UniProt, this GenPept sequence, the annotated CDS and
+      independent table-11 translation. Both genomic mappings agree. Identity evidence,
+      not an enzymatic assay.
+- enzyme_id: UniProtKB:A3KI18
+  enzyme_label: SAML0358 (geranyl diphosphate 2-C-methyltransferase; proposed)
+  proposed: true
+  notes: SAML0358/SAM23877_0410, 291 aa. Native-reference protein in Streptomyces
+    ambofaciens ATCC 23877 (NCBITaxon:278992), not an identified assayed construct.
+    UniProt assigns function by curator inference (ECO:0000305) and explicitly links
+    this entry to 2-methylisoborneol biosynthesis. This proposed role does not assert
+    an exact reaction, pathway order, stereochemistry, shell-cargo relationship or
+    new producer/BGC evidence grade.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/A3KI18/entry
+    evidence_type: DATABASE_ASSERTION
+    snippet: Catalyzes the SAM-dependent methylation of geranyl diphosphate (GPP)
+      to yield (E)-2-methylgeranyl diphosphate (2-MeGPP)
+    retrieved_on: '2026-10-09'
+    notes: UniProtKB release 2026_03, reviewed entry 53, sequence 1. Function uses
+      ECO:0000305 citing PMID:18492804; its reference annotation explicitly names
+      2-methylisoborneol biosynthesis. This is an inspected database assertion, not
+      newly inspected primary assay evidence. The IDA process annotation does not
+      establish the exact catalytic reaction.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/CAJ89345.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: SAML0358
+    retrieved_on: '2026-10-09'
+    notes: Native ATCC 23877 reference, forward-strand AM238663.1:361970..362845.
+      All 291 residues match UniProt, this GenPept sequence, the annotated CDS and
+      independent table-11 translation. Both genomic mappings agree. Identity evidence,
+      not an enzymatic assay.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AKZ53459.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: SAM23877_0410
+    retrieved_on: '2026-10-09'
+    notes: Native ATCC 23877 reference, forward-strand CP012382.1:361939..362814.
+      All 291 residues match UniProt, this GenPept sequence, the annotated CDS and
+      independent table-11 translation. Both genomic mappings agree. Identity evidence,
+      not an enzymatic assay.
 causal_graphs:
 - graph_id: mib-sgr-native-proposed-roles
   scope: BIOSYNTHESIS
@@ -532,6 +604,102 @@ causal_graphs:
         refresh. The matching taxon, AM420293.1 locus 4075163..4077099 and 2-methylisoborneol
         connectivity contextualize the proposed role. SOURCE_ASSERTION and CLUSTER_UNSTATED
         grades are retained.
+- graph_id: mib-ambo-native-proposed-roles
+  scope: BIOSYNTHESIS
+  nodes:
+  - node_id: saml0357
+    label: SAML0357 (2-methylisoborneol synthase; proposed)
+    node_type: ENZYME
+    identifier: UniProtKB:A3KI17
+    grounding_status: GROUNDED
+  - node_id: saml0358
+    label: SAML0358 (geranyl diphosphate 2-C-methyltransferase; proposed)
+    node_type: ENZYME
+    identifier: UniProtKB:A3KI18
+    grounding_status: GROUNDED
+  - node_id: mib
+    label: 2-methylisoborneol (stereochemistry unspecified)
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-0eb8c93c6f
+    grounding_status: GROUNDED
+  edges:
+  - subject: saml0357
+    predicate: is_database_proposed_biosynthetic_enzyme_for
+    object: mib
+    notes: SAML0357/SAM23877_0409, 440 aa. Native-reference protein in Streptomyces
+      ambofaciens ATCC 23877 (NCBITaxon:278992), not an identified assayed construct.
+      UniProt assigns function by curator inference (ECO:0000305) and explicitly links
+      this entry to 2-methylisoborneol biosynthesis. This proposed role does not assert
+      an exact reaction, pathway order, stereochemistry, shell-cargo relationship
+      or new producer/BGC evidence grade.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A3KI17/entry
+      evidence_type: DATABASE_ASSERTION
+      snippet: Catalyzes the cyclization of 2-methylgeranyl diphosphate (2-MeGPP)
+        to 2-methylisoborneol (2-MIB)
+      retrieved_on: '2026-10-08'
+      notes: UniProtKB release 2026_03, reviewed entry 57, sequence 1. Function uses
+        ECO:0000305 citing PMID:18492804; its reference annotation explicitly names
+        2-methylisoborneol biosynthesis. This is an inspected database assertion,
+        not newly inspected primary assay evidence. The IDA process annotation does
+        not establish the exact catalytic reaction.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAJ89344.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: SAML0357
+      retrieved_on: '2026-10-09'
+      notes: Native ATCC 23877 reference, forward-strand AM238663.1:360632..361954.
+        All 440 residues match UniProt, this GenPept sequence, the annotated CDS and
+        independent table-11 translation. Both genomic mappings agree. Identity evidence,
+        not an enzymatic assay.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AKZ53458.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: SAM23877_0409
+      retrieved_on: '2026-10-09'
+      notes: Native ATCC 23877 reference, forward-strand CP012382.1:360601..361923.
+        All 440 residues match UniProt, this GenPept sequence, the annotated CDS and
+        independent table-11 translation. Both genomic mappings agree. Identity evidence,
+        not an enzymatic assay.
+  - subject: saml0358
+    predicate: is_database_proposed_biosynthetic_enzyme_for
+    object: mib
+    notes: SAML0358/SAM23877_0410, 291 aa. Native-reference protein in Streptomyces
+      ambofaciens ATCC 23877 (NCBITaxon:278992), not an identified assayed construct.
+      UniProt assigns function by curator inference (ECO:0000305) and explicitly links
+      this entry to 2-methylisoborneol biosynthesis. This proposed role does not assert
+      an exact reaction, pathway order, stereochemistry, shell-cargo relationship
+      or new producer/BGC evidence grade.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A3KI18/entry
+      evidence_type: DATABASE_ASSERTION
+      snippet: Catalyzes the SAM-dependent methylation of geranyl diphosphate (GPP)
+        to yield (E)-2-methylgeranyl diphosphate (2-MeGPP)
+      retrieved_on: '2026-10-09'
+      notes: UniProtKB release 2026_03, reviewed entry 53, sequence 1. Function uses
+        ECO:0000305 citing PMID:18492804; its reference annotation explicitly names
+        2-methylisoborneol biosynthesis. This is an inspected database assertion,
+        not newly inspected primary assay evidence. The IDA process annotation does
+        not establish the exact catalytic reaction.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAJ89345.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: SAML0358
+      retrieved_on: '2026-10-09'
+      notes: Native ATCC 23877 reference, forward-strand AM238663.1:361970..362845.
+        All 291 residues match UniProt, this GenPept sequence, the annotated CDS and
+        independent table-11 translation. Both genomic mappings agree. Identity evidence,
+        not an enzymatic assay.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AKZ53459.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: SAM23877_0410
+      retrieved_on: '2026-10-09'
+      notes: Native ATCC 23877 reference, forward-strand CP012382.1:361939..362814.
+        All 291 residues match UniProt, this GenPept sequence, the annotated CDS and
+        independent table-11 translation. Both genomic mappings agree. Identity evidence,
+        not an enzymatic assay.
+  description: Two database-proposed ATCC 23877 enzyme roles, distinct from the existing
+    NBRC 13350 and NRRL 2338 graphs. Two native genomic deposits ground each reference
+    sequence; function remains inferred. No MIBiG locus or producer assertion is added,
+    and no direct assay, reaction order, shell-cargo mapping or stereochemical resolution
+    is claimed.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -556,4 +724,13 @@ curation_history:
     and SACE_3722/A4FG19), with claim-level stable URLs and short source snippets.
     Preserve the SGR graph, prior history, chemistry, review status and seeded evidence
     grades; do not infer exact assays, reactions, order or shell-cargo mapping.
+  llm_assisted: true
+- timestamp: '2026-10-09T01:33:33Z'
+  curator: OpenAI Codex
+  action: RECORD_CURATED
+  changes: Add two proposed ATCC 23877 native-reference enzyme roles (SAML0357/A3KI17
+    and SAML0358/A3KI18), grounded across two genomic deposits and cited with stable
+    URLs and short snippets. Preserve both existing graphs, prior history, chemistry,
+    review status and source-owned claims. Do not infer exact assays, reactions, pathway
+    order, new producer/BGC grades or shell-cargo relationships.
   llm_assisted: true
