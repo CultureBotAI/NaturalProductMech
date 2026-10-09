@@ -237,6 +237,150 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000658, BGC0000659.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+biosynthetic_pathway:
+- enzyme_id: UniProtKB:B1VVB3
+  enzyme_label: SGR_1268 (geranyl diphosphate 2-C-methyltransferase; proposed)
+  proposed: true
+  notes: SGR_1268/BAG18097.1, 292 aa. Native-reference assignment in Streptomyces
+    griseus subsp. griseus NBRC 13350 (NCBITaxon:455632), not an identified assayed
+    construct. UniProt automated function and the adopted MIBiG BGC0000658 v3 locus
+    support a proposed biosynthetic role. No new primary experiment, exact reaction,
+    stereochemical assignment, pathway order, shell-cargo relationship or producer/locus
+    evidence upgrade is asserted.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/B1VVB3/entry
+    evidence_type: DATABASE_ASSERTION
+    snippet: Catalyzes the SAM-dependent methylation of geranyl diphosphate (GPP)
+      to yield (E)-2-methylgeranyl diphosphate (2-MeGPP)
+    retrieved_on: '2026-10-08'
+    notes: UniProtKB release 2026_03, unreviewed entry 74, sequence 1. Automated ECO:0000256
+      annotation, not direct experimental evidence for this sequence.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/BAG18097.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: SGR_1268
+    retrieved_on: '2026-10-09'
+    notes: Native NBRC 13350 reference, 292 aa, reverse-strand AP009493.1:1490671..1491549.
+      GenPept, UniProt, annotated CDS and table-11 CDS translation agree exactly.
+      Identity evidence only.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000658/
+    evidence_type: CURATOR_INFERENCE
+    notes: Uses the committed MIBiG compound inventory, entry version 3, not a new
+      live database refresh. The matching taxon, AP009493.1 locus 1490671..1492896
+      and 2-methylisoborneol connectivity contextualize the automated enzyme role.
+      The adopted locus remains CLUSTER_UNSTATED.
+- enzyme_id: UniProtKB:B1VVB4
+  enzyme_label: SGR_1269 (2-methylisoborneol synthase; proposed)
+  proposed: true
+  notes: SGR_1269/BAG18098.1, 437 aa. Native-reference assignment in Streptomyces
+    griseus subsp. griseus NBRC 13350 (NCBITaxon:455632), not an identified assayed
+    construct. UniProt automated function and the adopted MIBiG BGC0000658 v3 locus
+    support a proposed biosynthetic role. No new primary experiment, exact reaction,
+    stereochemical assignment, pathway order, shell-cargo relationship or producer/locus
+    evidence upgrade is asserted.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/B1VVB4/entry
+    evidence_type: DATABASE_ASSERTION
+    snippet: Belongs to the terpene synthase family. 2-methylisoborneol synthase subfamily
+    retrieved_on: '2026-10-08'
+    notes: UniProtKB release 2026_03, unreviewed entry 79, sequence 1. Automated ECO:0000256
+      annotation, not direct experimental evidence for this sequence.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/BAG18098.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: SGR_1269
+    retrieved_on: '2026-10-09'
+    notes: Native NBRC 13350 reference, 437 aa, reverse-strand AP009493.1:1491583..1492896.
+      GenPept, UniProt, annotated CDS and table-11 CDS translation agree exactly.
+      Identity evidence only.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000658/
+    evidence_type: CURATOR_INFERENCE
+    notes: Uses the committed MIBiG compound inventory, entry version 3, not a new
+      live database refresh. The matching taxon, AP009493.1 locus 1490671..1492896
+      and 2-methylisoborneol connectivity contextualize the automated enzyme role.
+      The adopted locus remains CLUSTER_UNSTATED.
+causal_graphs:
+- graph_id: mib-sgr-native-proposed-roles
+  scope: BIOSYNTHESIS
+  description: Two proposed enzyme roles for the adopted NBRC 13350 locus. Native-reference
+    protein identities are grounded; functional evidence is automated, not an assayed-sequence
+    claim. The owner retains its unspecified stereochemistry. SGR_1270/SgEnc and the
+    cyanobacterial same-name record with different connectivity are not mapped here.
+  nodes:
+  - node_id: sgr_1268
+    label: SGR_1268 (geranyl diphosphate 2-C-methyltransferase; proposed)
+    node_type: ENZYME
+    identifier: UniProtKB:B1VVB3
+    grounding_status: GROUNDED
+  - node_id: sgr_1269
+    label: SGR_1269 (2-methylisoborneol synthase; proposed)
+    node_type: ENZYME
+    identifier: UniProtKB:B1VVB4
+    grounding_status: GROUNDED
+  - node_id: mib
+    label: 2-methylisoborneol (stereochemistry unspecified)
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-0eb8c93c6f
+    grounding_status: GROUNDED
+  edges:
+  - subject: sgr_1268
+    predicate: is_database_proposed_biosynthetic_enzyme_for
+    object: mib
+    notes: SGR_1268/BAG18097.1, 292 aa. Native-reference assignment in Streptomyces
+      griseus subsp. griseus NBRC 13350 (NCBITaxon:455632), not an identified assayed
+      construct. UniProt automated function and the adopted MIBiG BGC0000658 v3 locus
+      support a proposed biosynthetic role. No new primary experiment, exact reaction,
+      stereochemical assignment, pathway order, shell-cargo relationship or producer/locus
+      evidence upgrade is asserted.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/B1VVB3/entry
+      evidence_type: DATABASE_ASSERTION
+      snippet: Catalyzes the SAM-dependent methylation of geranyl diphosphate (GPP)
+        to yield (E)-2-methylgeranyl diphosphate (2-MeGPP)
+      retrieved_on: '2026-10-08'
+      notes: UniProtKB release 2026_03, unreviewed entry 74, sequence 1. Automated
+        ECO:0000256 annotation, not direct experimental evidence for this sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAG18097.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: SGR_1268
+      retrieved_on: '2026-10-09'
+      notes: Native NBRC 13350 reference, 292 aa, reverse-strand AP009493.1:1490671..1491549.
+        GenPept, UniProt, annotated CDS and table-11 CDS translation agree exactly.
+        Identity evidence only.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000658/
+      evidence_type: CURATOR_INFERENCE
+      notes: Uses the committed MIBiG compound inventory, entry version 3, not a new
+        live database refresh. The matching taxon, AP009493.1 locus 1490671..1492896
+        and 2-methylisoborneol connectivity contextualize the automated enzyme role.
+        The adopted locus remains CLUSTER_UNSTATED.
+  - subject: sgr_1269
+    predicate: is_database_proposed_biosynthetic_enzyme_for
+    object: mib
+    notes: SGR_1269/BAG18098.1, 437 aa. Native-reference assignment in Streptomyces
+      griseus subsp. griseus NBRC 13350 (NCBITaxon:455632), not an identified assayed
+      construct. UniProt automated function and the adopted MIBiG BGC0000658 v3 locus
+      support a proposed biosynthetic role. No new primary experiment, exact reaction,
+      stereochemical assignment, pathway order, shell-cargo relationship or producer/locus
+      evidence upgrade is asserted.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/B1VVB4/entry
+      evidence_type: DATABASE_ASSERTION
+      snippet: Belongs to the terpene synthase family. 2-methylisoborneol synthase
+        subfamily
+      retrieved_on: '2026-10-08'
+      notes: UniProtKB release 2026_03, unreviewed entry 79, sequence 1. Automated
+        ECO:0000256 annotation, not direct experimental evidence for this sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAG18098.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: SGR_1269
+      retrieved_on: '2026-10-09'
+      notes: Native NBRC 13350 reference, 437 aa, reverse-strand AP009493.1:1491583..1492896.
+        GenPept, UniProt, annotated CDS and table-11 CDS translation agree exactly.
+        Identity evidence only.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000658/
+      evidence_type: CURATOR_INFERENCE
+      notes: Uses the committed MIBiG compound inventory, entry version 3, not a new
+        live database refresh. The matching taxon, AP009493.1 locus 1490671..1492896
+        and 2-methylisoborneol connectivity contextualize the automated enzyme role.
+        The adopted locus remains CLUSTER_UNSTATED.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -246,3 +390,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-09T00:07:32Z'
+  curator: OpenAI Codex
+  action: RECORD_CURATED
+  changes: Add two explicitly proposed NBRC 13350 native-reference enzyme roles (SGR_1268/B1VVB3
+    and SGR_1269/B1VVB4), each with claim-level stable URLs and short source snippets.
+    Preserve seeded evidence grades, chemistry and review status; do not infer exact
+    assays, reactions, order or shell-cargo mapping.
+  llm_assisted: true
