@@ -222,6 +222,86 @@ causal_graphs:
       notes: RHEA:54372 is the (2E,6E)-farnesyl diphosphate plus H2O to (+)-(2S,3R,9R)-pristinol
         plus diphosphate reaction; RHEA:54373 is the left-to-right direction mapped
         to UniProtKB:B5H7H3 in Swiss-Prot.
+- graph_id: pristinol-tatc6-database-side-product
+  scope: BIOSYNTHESIS
+  description: Database-reported TaTC6 formation of (+)-(2S,3R,9R)-pristinol as a
+    side product. A0A5S9I252 denotes the sequence-verified native Trichoderma atroviride
+    FKI-3849 reference, not a verified full assayed construct. Functional and stereochemical
+    product attribution remain database-level. No native producer, BGC membership,
+    physical complex or measured Mg-binding claim is added.
+  nodes:
+  - node_id: tatc6_reference
+    label: TaTC6 native FKI-3849 reference
+    node_type: ENZYME
+    identifier: UniProtKB:A0A5S9I252
+    grounding_status: GROUNDED
+  - node_id: fpp_conversion
+    label: Database-reported TaTC6 FPP conversion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: product
+    label: (+)-(2S,3R,9R)-pristinol
+    node_type: COMPOUND
+    identifier: CHEBI:138165
+    grounding_status: GROUNDED
+  edges:
+  - subject: tatc6_reference
+    predicate: is_database_reported_catalyst_of
+    object: fpp_conversion
+    notes: The native reference mapping does not establish historical assay-stock
+      or full construct/tag identity. UniProt separately reports a koraiol disruption
+      phenotype; its applicability is unresolved and no phenotype edge is adopted.
+      Its homodimer and Mg-binding assertions are homology-based and are not adopted
+      here.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A5S9I252
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry 21/sequence 1 assigns RHEA:54372 to tatc6 and explicitly
+        names CHEBI:138165 as product of FPP plus water; RHEA:54373 is annotated left-to-right.
+        The function narrative calls trichobrasilenol the main product and pristinol
+        a side product. These are adopted UniProt assertions, not independently inspected
+        experiments. PMID31418991 / DOI10.1002/anie.201907964 is the database-cited
+        bibliography; the primary paper and supplementary information were inaccessible
+        and were not inspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BBK61014.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Complete 386-aa native Trichoderma atroviride FKI-3849 reference, taxon63577,
+        gene tatc6. GenPept annotates trichobrasilenol synthesis from FPP; it does
+        not independently establish pristinol formation. Its in-vitro-assay code is
+        a deposit annotation, not a newly inspected assay.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LC484924.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: 'Independent translation of the complete six-exon CDS join(1..242,308..434,497..515,569..1035,1100..1326,1385..1463),
+        codon_start1/default table1: 1161 nt including stop equals 386-aa annotated
+        translation, GenPept BBK61014.1 and UniProt A0A5S9I252. Independent GenPept
+        coded_by accession, coordinates and orientation agree; both deposits name
+        FKI-3849/taxon63577. This is native reference correspondence, not experimental
+        construct equivalence.'
+  - subject: fpp_conversion
+    predicate: has_database_reported_product
+    object: product
+    notes: The explicit UniProt reaction product CURIE CHEBI:138165 matches this owner,
+      whose unchanged full InChIKey is PXKJCWZAMAFFIW-GLBIRDDMSA-N. This is database
+      product mapping, not an independent spectrum or primary-paper stereochemical
+      analysis. No exclusive specificity, product percentage or native production
+      is asserted. This fungal side-product graph is separate from the existing Streptomyces
+      B5H7H3/BGC0001746 mechanism; its historical naming/stereochemistry notes are
+      preserved without a new adjudication.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A5S9I252
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry 21/sequence 1 assigns RHEA:54372 to tatc6 and explicitly
+        names CHEBI:138165 as product of FPP plus water; RHEA:54373 is annotated left-to-right.
+        The function narrative calls trichobrasilenol the main product and pristinol
+        a side product. These are adopted UniProt assertions, not independently inspected
+        experiments. PMID31418991 / DOI10.1002/anie.201907964 is the database-cited
+        bibliography; the primary paper and supplementary information were inaccessible
+        and were not inspected.
+      snippet: (2E,6E)-farnesyl diphosphate + H2O = (+)-(2S,3R,9R)-pristinol + diphosphate
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -242,3 +322,15 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-09T08:29:01Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added a separate three-node/two-edge BIOSYNTHESIS graph for database-reported
+    TaTC6 formation of (+)-(2S,3R,9R)-pristinol, grounded to UniProtKB:A0A5S9I252
+    by exact 386-aa native reference and six-exon CDS equality. Each edge has a stable
+    source URL; product evidence includes an exact snippet. Primary paper/SI inaccessible:
+    no primary-experiment claim, construct equivalence, native producer upgrade, BGC
+    assignment, physical complex or Mg-binding claim. Koraiol disruption applicability
+    unresolved and unadopted. Preserved every old graph/pathway, source field, structure,
+    grade, history and SEEDED status; not a full-record sign-off.'
+  llm_assisted: true

@@ -198,6 +198,86 @@ causal_graphs:
         returned403 at the first publisher full-text attempt. No alternate paper or
         SI was inspected.
       snippet: Brasilane A formation
+- graph_id: trichobrasilenol-tatc6-database-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Database-reported TaTC6 formation of trichobrasilenol as the main product.
+    A0A5S9I252 denotes the sequence-verified native Trichoderma atroviride FKI-3849
+    reference, not a verified full assayed construct. Functional and stereochemical
+    product attribution remain database-level. No native producer, BGC membership,
+    physical complex or measured Mg-binding claim is added.
+  nodes:
+  - node_id: tatc6_reference
+    label: TaTC6 native FKI-3849 reference
+    node_type: ENZYME
+    identifier: UniProtKB:A0A5S9I252
+    grounding_status: GROUNDED
+  - node_id: fpp_conversion
+    label: Database-reported TaTC6 FPP conversion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: product
+    label: trichobrasilenol
+    node_type: COMPOUND
+    identifier: CHEBI:167379
+    grounding_status: GROUNDED
+  edges:
+  - subject: tatc6_reference
+    predicate: is_database_reported_catalyst_of
+    object: fpp_conversion
+    notes: The native reference mapping does not establish historical assay-stock
+      or full construct/tag identity. UniProt separately reports a koraiol disruption
+      phenotype; its applicability is unresolved and no phenotype edge is adopted.
+      Its homodimer and Mg-binding assertions are homology-based and are not adopted
+      here.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A5S9I252
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry 21/sequence 1 assigns RHEA:66644 to tatc6 and explicitly
+        names CHEBI:167379 as product of FPP plus water; RHEA:66645 is annotated left-to-right.
+        The function narrative calls trichobrasilenol the main product and pristinol
+        a side product. These are adopted UniProt assertions, not independently inspected
+        experiments. PMID31418991 / DOI10.1002/anie.201907964 is the database-cited
+        bibliography; the primary paper and supplementary information were inaccessible
+        and were not inspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BBK61014.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Complete 386-aa native Trichoderma atroviride FKI-3849 reference, taxon63577,
+        gene tatc6. GenPept annotates trichobrasilenol synthesis from FPP; it does
+        not independently establish pristinol formation. Its in-vitro-assay code is
+        a deposit annotation, not a newly inspected assay.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LC484924.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: 'Independent translation of the complete six-exon CDS join(1..242,308..434,497..515,569..1035,1100..1326,1385..1463),
+        codon_start1/default table1: 1161 nt including stop equals 386-aa annotated
+        translation, GenPept BBK61014.1 and UniProt A0A5S9I252. Independent GenPept
+        coded_by accession, coordinates and orientation agree; both deposits name
+        FKI-3849/taxon63577. This is native reference correspondence, not experimental
+        construct equivalence.'
+  - subject: fpp_conversion
+    predicate: has_database_reported_product
+    object: product
+    notes: The explicit UniProt reaction product CURIE CHEBI:167379 matches this owner,
+      whose unchanged full InChIKey is DJBXKQSFHIRXRM-JRYBIPSHSA-N. This is database
+      product mapping, not an independent spectrum or primary-paper stereochemical
+      analysis. No exclusive specificity, product percentage or native production
+      is asserted. This synthase graph is separate from Annulohypoxylon BraB glycosylation
+      and does not place TaTC6 in BGC0002260 or upgrade the existing Trichoderma occurrence
+      to production.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A5S9I252
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry 21/sequence 1 assigns RHEA:66644 to tatc6 and explicitly
+        names CHEBI:167379 as product of FPP plus water; RHEA:66645 is annotated left-to-right.
+        The function narrative calls trichobrasilenol the main product and pristinol
+        a side product. These are adopted UniProt assertions, not independently inspected
+        experiments. PMID31418991 / DOI10.1002/anie.201907964 is the database-cited
+        bibliography; the primary paper and supplementary information were inaccessible
+        and were not inspected.
+      snippet: The main product is trichobrasilenol
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
@@ -226,4 +306,16 @@ curation_history:
     fields, SOURCE_ASSERTION producer grade, CLUSTER_DEMONSTRATED BGC grade, Trichoderma
     occurrence/definition context, stereochemistry, classifications, SEEDED status
     and old history; no full-record sign-off.'
+  llm_assisted: true
+- timestamp: '2026-10-09T08:29:00Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added a separate three-node/two-edge BIOSYNTHESIS graph for database-reported
+    TaTC6 formation of trichobrasilenol, grounded to UniProtKB:A0A5S9I252 by exact
+    386-aa native reference and six-exon CDS equality. Each edge has a stable source
+    URL; product evidence includes an exact snippet. Primary paper/SI inaccessible:
+    no primary-experiment claim, construct equivalence, native producer upgrade, BGC
+    assignment, physical complex or Mg-binding claim. Koraiol disruption applicability
+    unresolved and unadopted. Preserved every old graph/pathway, source field, structure,
+    grade, history and SEEDED status; not a full-record sign-off.'
   llm_assisted: true
