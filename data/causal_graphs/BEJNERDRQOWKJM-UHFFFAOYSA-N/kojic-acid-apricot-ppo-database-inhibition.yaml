@@ -1,0 +1,86 @@
+record_id: CHEBI:43572
+standard_inchi_key: BEJNERDRQOWKJM-UHFFFAOYSA-N
+graph:
+  graph_id: kojic-acid-apricot-ppo-database-inhibition
+  scope: BIOACTIVITY
+  description: Database-qualified inhibition of apricot PPO by parent kojic acid.
+    Native reference precursor identity and database processing annotations are retained
+    separately from the unverified assay preparation. This is not a direct binding
+    assay, inhibition constant, chelation mechanism, human pigmentation effect, antimicrobial
+    phenotype or claim that apricot produces kojic acid.
+  nodes:
+  - node_id: kojic_acid
+    label: kojic acid
+    node_type: COMPOUND
+    identifier: CHEBI:43572
+    grounding_status: GROUNDED
+  - node_id: apricot_ppo
+    label: Apricot polyphenol oxidase (PPO; reference precursor)
+    node_type: ENZYME
+    identifier: UniProtKB:O81103
+    grounding_status: GROUNDED
+  edges:
+  - subject: kojic_acid
+    predicate: is_database_reported_inhibitor_of
+    object: apricot_ppo
+    notes: The accession denotes the 597-aa reference precursor, not a claim that
+      the intact precursor was the assayed species. UniProt annotates latent 102..597
+      and active 102..429 chains and cleavage at 429..430; processing and historical
+      assay preparation were not independently verified. Substrate Km values are not
+      kojic-acid Ki or IC50 values.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/O81103
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry version 96, sequence version 1, Prunus armeniaca taxon
+        36596. Activity regulation names kojic acid; the annotation cites PMID:10198084
+        and PMID:28812349. DOI:10.1021/acs.jafc.7b03210 returned HTTP 403 and DOI:10.1104/pp.119.4.1261
+        was tool-inaccessible; no alternate retrieval. This adopts a database annotation,
+        not an independently inspected experiment. No monophenol oxidation is inferred
+        from a generic function description.
+      snippet: Repressed by several inhibitors including 4-hexylresorcinol, ascorbic
+        acid, benzoic acid, kojic acid
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAC28935.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: Independent curator sequence/model comparison using the deposited reference;
+        quoted titles and source metadata remain attributed to the deposit. Complete
+        597-aa native reference agrees exactly with UniProt O81103. Deposited Prunus
+        armeniaca Bergeron, clone pAPRI101G, mesocarp/exocarp of green fruit. This
+        does not establish the 2017 assay cultivar, stock, peptides or full construct.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF020786.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The 2070-nt mRNA CDS 4..1797, codon_start 1/default table 1, independently
+        translates to 597 aa identical to the CDS annotation, AAC28935.1 and O81103.
+        Native CDS correspondence establishes reference identity, not processing or
+        inhibition.
+curation_history:
+- timestamp: '2026-10-09T13:18:30Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Created exact-owner graph kojic-acid-apricot-ppo-database-inhibition.
+    Added three exact-owner BIOACTIVITY graph components with five separately cited
+    edges: database-reported inhibition of apricot PPO/O81103, and deposited structural
+    associations with two distinct TYRP1/P17643 constructs and two distinct TyrBm/B2ZB02
+    constructs. Native CDS and deposited/model sequence audits ground identities,
+    not historical stocks or full expression plasmids. Retained ligand-quality outliers
+    and primary-paper access limits. No measured inhibition/affinity, direct binding
+    assay, cellular phenotype, physiological metal stoichiometry or new producer/BGC
+    claim. All six old graphs, source fields, classifications, producer taxonomy and
+    natural-product origin remain unchanged. Record remains SEEDED; not full-record
+    sign-off.'
+  llm_assisted: true
+- timestamp: '2026-10-09T13:39:29Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Addressed adversarial-review issues #744 and #745: classified nine comparison-bearing
+    evidence rows as CURATOR_INFERENCE rather than upstream DATABASE_ASSERTION, with
+    an explicit distinction between independent sequence/model correspondence and
+    deposited metadata. Five GenPept rows and four RCSB rows corrected. Replaced four
+    constructed validation-report URLs with the exact canonical URLs of the already-inspected
+    reports; the authored 3NQ1 path returned 404. All source identities, snippets,
+    identity details, geometry caveats, access stops and five graph claims remain
+    intact. Direct UniProt activity and validation-report assertions retain their
+    original types. No new biological claim or full-record sign-off.'
+  llm_assisted: true

@@ -1,0 +1,188 @@
+record_id: CHEBI:43572
+standard_inchi_key: BEJNERDRQOWKJM-UHFFFAOYSA-N
+graph:
+  graph_id: kojic-acid-tyrp1-deposited-structures
+  scope: BIOACTIVITY
+  description: Deposited kojic-acid associations with two distinct engineered fragments
+    of human TYRP1, not human tyrosinase TYR. Canonical P17643 grounds reference identity
+    while node labels and evidence retain truncation and mutation differences. DOI:10.1002/anie.201704616
+    was tool-inaccessible; no alternate retrieval or primary functional experiment
+    is adopted. Structural association is not a direct binding assay, measured inhibition,
+    affinity or inhibition mode, physiological metal stoichiometry, cellular phenotype,
+    or a producer/BGC claim. Protein engineering here does not change the natural-product
+    origin classification.
+  nodes:
+  - node_id: kojic_acid
+    label: kojic acid
+    node_type: COMPOUND
+    identifier: CHEBI:43572
+    grounding_status: GROUNDED
+  - node_id: tyrp1_wt_fragment
+    label: Human TYRP1 25..470 (5M8M; wild-type sequence)
+    node_type: PROTEIN
+    identifier: UniProtKB:P17643
+    grounding_status: GROUNDED
+  - node_id: tyrp1_mutant_fragment
+    label: Human TYRP1 25..470 Y362F/R374S/T391V (5M8Q)
+    node_type: PROTEIN
+    identifier: UniProtKB:P17643
+    grounding_status: GROUNDED
+  edges:
+  - subject: kojic_acid
+    predicate: has_deposited_structural_association_with
+    object: tyrp1_wt_fragment
+    notes: Construct-specific association in PDB:5M8M; canonical UniProt grounds the
+      reference protein, not an assertion that this is the intact native protein.
+      The deposited title is quoted as metadata, not independently verified inhibition
+      or active-site chemistry. Ligand geometry and density-fit limitations are retained
+      in the validation evidence.
+    evidence:
+    - reference: https://www.rcsb.org/structure/5M8M
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: Independent curator sequence/model comparison using the deposited reference;
+        quoted titles and source metadata remain attributed to the deposit. PDB revision
+        3.0, X-ray resolution 2.65 angstrom. Deposited 446-aa wild-type-sequence fragment
+        of human TYRP1 positions 25..470; each modeled polymer residue in chains A/B/C/D
+        matches that construct, including all 446 residue positions, not necessarily
+        every side-chain atom. Native source is Homo sapiens taxon 9606; expression
+        host Spodoptera frugiperda taxon 7108, cell line/vector unspecified. KOJ copies
+        at author A503/B504/C503/D504 (label chains AA/EA/HA/LA), each ten heavy atoms
+        at modeled occupancy 1 without alternates. Nine deposited Zn ions are an inventory,
+        not physiological stoichiometry. Four deposited monomeric assemblies do not
+        establish a tetramer.
+      snippet: Crystal structure of human tyrosinase related protein 1 in complex
+        with kojic acid
+    - reference: https://www.uniprot.org/uniprotkb/P17643
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed TYRP1 entry version 224, sequence version 2, Homo sapiens taxon
+        9606, 537-aa precursor. TYRP1 is not TYR/P14679. UniProt cautions that DHICA
+        oxidase activity is controversial and metal-dependent, absent with Zn in the
+        cited annotation. No kojic-acid inhibition annotation is adopted. The graph
+        uses PROTEIN, not a claim of active Zn-loaded enzyme.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAH52608.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: Independent curator sequence/model comparison using the deposited reference;
+        quoted titles and source metadata remain attributed to the deposit. Complete
+        537-aa human reference; clone MGC:59834 IMAGE:6258285, skin melanoma/melanotic
+        tissue. Sequence agrees with P17643, unlike older conflicting references.
+        DH10B-R/pOTB7 is cloning metadata, not the crystallographic expression host
+        or a kojic-acid cellular assay.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/BC052608.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The 2628-nt mRNA CDS 98..1711, codon_start 1/default table 1, independently
+        translates to 537 aa identical to AAH52608.1 and P17643. Fragment boundaries
+        and any substitutions are separately resolved against this reference; no full
+        expression plasmid or historical assay-stock identity is established.
+    - reference: https://data.rcsb.org/rest/v1/core/chemcomp/KOJ
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: CCD KOJ has neutral charge, C6H6O4, no chiral atoms and the same StandardInChI
+        and InChIKey as CHEBI:43572. This establishes deposited component identity,
+        not protonation or coordination in the metal complex.
+    - reference: https://files.rcsb.org/validation/view/5m8m_full_validation.pdf
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Report dated 2026-03-05, inspected ligand sections on pages 48-50 and
+        70. All four KOJ copies have bond-length and bond-angle outliers; A/D torsion
+        outliers; D has one short contact. KOJ A503/B504/C503/D504 RSCC/RSR are 0.93/0.10,
+        0.88/0.13, 0.89/0.13, 0.85/0.14. Reported ligand geometry/density-fit caveats
+        remain unresolved; no independent map interpretation, distance/contact calculation,
+        protonation, refinement, full side-chain or whole-model quality audit was
+        performed.
+  - subject: kojic_acid
+    predicate: has_deposited_structural_association_with
+    object: tyrp1_mutant_fragment
+    notes: Construct-specific association in PDB:5M8Q; canonical UniProt grounds the
+      reference protein, not an assertion that this is the intact native protein.
+      The deposited title is quoted as metadata, not independently verified inhibition
+      or active-site chemistry. Ligand geometry and density-fit limitations are retained
+      in the validation evidence.
+    evidence:
+    - reference: https://www.rcsb.org/structure/5M8Q
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: Independent curator sequence/model comparison using the deposited reference;
+        quoted titles and source metadata remain attributed to the deposit. PDB revision
+        2.1, X-ray resolution 2.85 angstrom. Deposited 446-aa fragment of human TYRP1
+        positions 25..470 with Y362F/R374S/T391V substitutions; each modeled polymer
+        residue in chains A/B/C/D matches that construct, including all 446 residue
+        positions, not necessarily every side-chain atom. Native source is Homo sapiens
+        taxon 9606; expression host Spodoptera frugiperda taxon 7108, cell line/vector
+        unspecified. KOJ copies at author A516/B508/C514/D510 (label chains S/Y/DA/IA),
+        each ten heavy atoms at modeled occupancy 1 without alternates. Nine deposited
+        Zn ions are an inventory, not physiological stoichiometry. Four deposited
+        monomeric assemblies do not establish a tetramer.
+      snippet: Crystal structure of human tyrosinase related protein 1 mutant (T391V-R374S-Y362F)
+        in complex with kojic acid
+    - reference: https://www.uniprot.org/uniprotkb/P17643
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed TYRP1 entry version 224, sequence version 2, Homo sapiens taxon
+        9606, 537-aa precursor. TYRP1 is not TYR/P14679. UniProt cautions that DHICA
+        oxidase activity is controversial and metal-dependent, absent with Zn in the
+        cited annotation. No kojic-acid inhibition annotation is adopted. The graph
+        uses PROTEIN, not a claim of active Zn-loaded enzyme.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAH52608.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: Independent curator sequence/model comparison using the deposited reference;
+        quoted titles and source metadata remain attributed to the deposit. Complete
+        537-aa human reference; clone MGC:59834 IMAGE:6258285, skin melanoma/melanotic
+        tissue. Sequence agrees with P17643, unlike older conflicting references.
+        DH10B-R/pOTB7 is cloning metadata, not the crystallographic expression host
+        or a kojic-acid cellular assay.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/BC052608.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The 2628-nt mRNA CDS 98..1711, codon_start 1/default table 1, independently
+        translates to 537 aa identical to AAH52608.1 and P17643. Fragment boundaries
+        and any substitutions are separately resolved against this reference; no full
+        expression plasmid or historical assay-stock identity is established.
+    - reference: https://data.rcsb.org/rest/v1/core/chemcomp/KOJ
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: CCD KOJ has neutral charge, C6H6O4, no chiral atoms and the same StandardInChI
+        and InChIKey as CHEBI:43572. This establishes deposited component identity,
+        not protonation or coordination in the metal complex.
+    - reference: https://files.rcsb.org/validation/view/5m8q_full_validation.pdf
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Report dated 2026-03-05, inspected ligand sections on pages 45-48 and
+        60. All four KOJ copies have bond-length and bond-angle outliers; B/C/D torsion
+        outliers; short contacts A:3, B:3, C:1. KOJ A516/B508/C514/D510 RSCC/RSR are
+        0.82/0.17, 0.86/0.12, 0.86/0.15, 0.88/0.17. Reported ligand geometry/density-fit
+        caveats remain unresolved; no independent map interpretation, distance/contact
+        calculation, protonation, refinement, full side-chain or whole-model quality
+        audit was performed.
+curation_history:
+- timestamp: '2026-10-09T13:18:30Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Created exact-owner graph kojic-acid-tyrp1-deposited-structures. Added
+    three exact-owner BIOACTIVITY graph components with five separately cited edges:
+    database-reported inhibition of apricot PPO/O81103, and deposited structural associations
+    with two distinct TYRP1/P17643 constructs and two distinct TyrBm/B2ZB02 constructs.
+    Native CDS and deposited/model sequence audits ground identities, not historical
+    stocks or full expression plasmids. Retained ligand-quality outliers and primary-paper
+    access limits. No measured inhibition/affinity, direct binding assay, cellular
+    phenotype, physiological metal stoichiometry or new producer/BGC claim. All six
+    old graphs, source fields, classifications, producer taxonomy and natural-product
+    origin remain unchanged. Record remains SEEDED; not full-record sign-off.'
+  llm_assisted: true
+- timestamp: '2026-10-09T13:39:29Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Addressed adversarial-review issues #744 and #745: classified nine comparison-bearing
+    evidence rows as CURATOR_INFERENCE rather than upstream DATABASE_ASSERTION, with
+    an explicit distinction between independent sequence/model correspondence and
+    deposited metadata. Five GenPept rows and four RCSB rows corrected. Replaced four
+    constructed validation-report URLs with the exact canonical URLs of the already-inspected
+    reports; the authored 3NQ1 path returned 404. All source identities, snippets,
+    identity details, geometry caveats, access stops and five graph claims remain
+    intact. Direct UniProt activity and validation-report assertions retain their
+    original types. No new biological claim or full-record sign-off.'
+  llm_assisted: true

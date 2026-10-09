@@ -1094,100 +1094,13 @@ causal_graphs:
     pathway, disruption phenotype or new native-production claim is added. Existing
     graphs, imported producer/BGC grades, computed filing class, natural-product origin
     and SEEDED status remain unchanged.
-- graph_id: kojic-acid-japonicus-qdo-structural-database-bioactivity
-  scope: BIOACTIVITY
-  description: Kojic-acid association with the deposited Aspergillus japonicus quercetin
-    2,3-dioxygenase complex 1GQH and a separate UniProt inhibition annotation. The
-    mature protein sequence maps exactly to Q7SIC2. Structural-model existence does
-    not independently establish inhibition, potency or a cellular effect. Ligand geometry
-    outliers and weaker density fit for copy D remain unresolved; no primary-paper
-    full-text or density-map validation is claimed.
-  nodes:
-  - node_id: kojic_acid
-    label: kojic acid
-    node_type: COMPOUND
-    identifier: CHEBI:43572
-    grounding_status: GROUNDED
-  - node_id: japonicus_qdo
-    label: A. japonicus quercetin 2,3-dioxygenase
-    node_type: ENZYME
-    identifier: UniProtKB:Q7SIC2
-    grounding_status: GROUNDED
-  edges:
-  - subject: kojic_acid
-    predicate: has_deposited_structural_association_with
-    object: japonicus_qdo
-    notes: The 2.15-A X-ray model 1GQH contains four KOJ ligand copies associated
-      with protein chains A/B/C/D. This is a qualified structural-database claim,
-      not an independent functional assay or proof of four equivalent binding sites
-      in solution. The model has ligand geometry outliers and copy D has weaker density
-      fit.
-    evidence:
-    - reference: https://www.rcsb.org/structure/1GQH
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-09'
-      notes: RCSB entry version 2.1, revised 2024-11-13, describes the kojic-acid
-        complex at 2.15 A. The protein source is Aspergillus japonicus (taxon 34381);
-        Aspergillus awamori (taxon 105351) is the expression host, not the protein
-        source or a newly established kojic-acid producer. The asymmetric unit has
-        four protein chains; two author/PISA dimer assemblies are not a solution tetramer
-        claim. Primary DOI:10.1021/bi0159736 was tool-inaccessible; its embedded abstract
-        does not count as inspected full text, figures or supplements.
-      snippet: Quercetin 2,3-dioxygenase in complex with the inhibitor kojic acid
-    - reference: https://files.rcsb.org/download/1GQH.cif
-      evidence_type: CURATOR_INFERENCE
-      retrieved_on: '2026-10-09'
-      notes: Independent comparison of the deposited 350-aa mature sequence and all
-        polymer positions gives exact identity to reviewed UniProt Q7SIC2 version
-        81, sequence version 1. The CIF struct_ref points to PDB rather than UniProt;
-        mapping is by sequence, not that field. Modeled residues A/B/C/D are 341/334/333/331,
-        leaving 9/16/17/19 unmodeled. Four KOJ copies at author residue 1351 use label
-        chains I/O/T/Y, with ten heavy atoms, occupancy 1 and no alternates per copy.
-        These are deposited-model values, not validated affinities or occupancies
-        in solution. No native CDS, complete tagged expression construct or historical
-        assay-stock equivalence is established. Metal-contact distances were not independently
-        computed.
-    - reference: https://data.rcsb.org/rest/v1/core/chemcomp/KOJ
-      evidence_type: CURATOR_INFERENCE
-      retrieved_on: '2026-10-09'
-      notes: The CCD KOJ definition has neutral achiral formula C6H6O4 and Standard
-        InChI and InChIKey identical to this owner, CHEBI:43572/BEJNERDRQOWKJM-UHFFFAOYSA-N.
-        That chemical-component identity is not proof of the ligand protonation state
-        in the metal complex; no salt, derivative or different inhibitor is substituted.
-    - reference: https://files.rcsb.org/validation/view/1gqh_full_validation.pdf
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-09'
-      notes: Text of the 40-page wwPDB report dated 2026-03-06 was inspected. All
-        four KOJ copies have bond-length/angle outliers; A/B also have torsion outliers.
-        Reported RSCC/RSR for A/B/C/D are 0.89/0.10, 0.91/0.12, 0.81/0.12 and 0.69/0.23,
-        respectively; copy D has weaker density fit. All copies model 10/10 heavy
-        atoms with none at occupancy below 0.9. Glycan MAN chirality concerns also
-        remain. No refinement or independent density-map interpretation was performed.
-        Screenshot attempts produced no inspectable images and the last attempt timed
-        out; no pixel inspection or alternate report retrieval is claimed.
-  - subject: kojic_acid
-    predicate: is_database_reported_inhibitor_of
-    object: japonicus_qdo
-    notes: UniProt reports inhibition of this A. japonicus enzyme by kojic acid. This
-      adopted database annotation is separate from the deposited structural association.
-      No Ki, IC50, inhibition mode, direct binding measurement, downstream cellular
-      effect or antimicrobial phenotype is added.
-    evidence:
-    - reference: https://www.uniprot.org/uniprotkb/Q7SIC2
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-09'
-      notes: Reviewed entry version 81, sequence version 1, 350 aa, Aspergillus japonicus
-        taxon 34381. Its activity-regulation annotation names kojic acid as an inhibitor.
-        Its PDB cross-reference specifically lists 1GQH at 2.15 A; 1GQG is the different
-        diethyldithiocarbamate complex at 1.70 A and is not substituted. The deposited
-        mature sequence was independently matched to Q7SIC2, not to a convenient homolog.
-        This does not establish the native gene or complete assay construct. Cited
-        primary DOI:10.1021/bi0159736 remained tool-inaccessible, so no new primary
-        experimental or quantitative claim is made.
-      snippet: Inhibited by diethyldithiocarbamate and kojic acid
 causal_graph_refs:
+- kojic-acid-japonicus-qdo-structural-database-bioactivity
 - kojic-acid-flavus-kojart-database-biosynthesis-secretion
 - kojic-acid-pir-yhhw-database-inhibition
+- kojic-acid-apricot-ppo-database-inhibition
+- kojic-acid-tyrp1-deposited-structures
+- kojic-acid-tyrbm-deposited-structures
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -1280,4 +1193,41 @@ curation_history:
     All five old graphs, source fields, classifications, origin and history are unchanged.
     Component storage retains complete evidence within size limits. Record remains
     SEEDED; not full-record sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-09T13:18:30Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Moved the unchanged kojic-acid-japonicus-qdo-structural-database-bioactivity
+    graph from data/natural_products/polyketides/kojic-acid.yaml at commit bc61be37ab06b1d1f824e8c2b88c11f5846f9d80
+    into an exact-owner graph component to retain complete evidence below the 64-KiB
+    artifact limit. Placed its reference before the two existing components, preserving
+    resolved graph and edge order. No node, edge, evidence, description or prior curation
+    event was changed; not a new scientific assertion.
+  llm_assisted: true
+- timestamp: '2026-10-09T13:18:30Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added three exact-owner BIOACTIVITY graph components with five separately
+    cited edges: database-reported inhibition of apricot PPO/O81103, and deposited
+    structural associations with two distinct TYRP1/P17643 constructs and two distinct
+    TyrBm/B2ZB02 constructs. Native CDS and deposited/model sequence audits ground
+    identities, not historical stocks or full expression plasmids. Retained ligand-quality
+    outliers and primary-paper access limits. No measured inhibition/affinity, direct
+    binding assay, cellular phenotype, physiological metal stoichiometry or new producer/BGC
+    claim. All six old graphs, source fields, classifications, producer taxonomy and
+    natural-product origin remain unchanged. Record remains SEEDED; not full-record
+    sign-off.'
+  llm_assisted: true
+- timestamp: '2026-10-09T13:39:29Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Addressed adversarial-review issues #744 and #745: classified nine comparison-bearing
+    evidence rows as CURATOR_INFERENCE rather than upstream DATABASE_ASSERTION, with
+    an explicit distinction between independent sequence/model correspondence and
+    deposited metadata. Five GenPept rows and four RCSB rows corrected. Replaced four
+    constructed validation-report URLs with the exact canonical URLs of the already-inspected
+    reports; the authored 3NQ1 path returned 404. All source identities, snippets,
+    identity details, geometry caveats, access stops and five graph claims remain
+    intact. Direct UniProt activity and validation-report assertions retain their
+    original types. No new biological claim or full-record sign-off.'
   llm_assisted: true
