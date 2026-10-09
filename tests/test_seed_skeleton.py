@@ -9,8 +9,10 @@ from __future__ import annotations
 
 import importlib.util
 import sys
+from copy import deepcopy
 from pathlib import Path
 
+import pytest
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
@@ -1108,6 +1110,103 @@ def test_an_answer_to_a_question_the_seeder_no_longer_asks_is_dropped():
     seed.carry_curator_owned_fields(payload, existing)
     assert [d["discussion_id"] for d in payload["discussions"]] == ["name-disagreement"]
     assert payload["discussions"][0]["status"] == "OPEN"
+
+
+@pytest.mark.parametrize("status", ["OPEN", "RESOLVED", "ARCHIVED"])
+def test_curator_discussions_survive_in_full_and_in_order(status, host_symbiont_discussion):
+    thread = {**host_symbiont_discussion, "discussion_id": "curator-producer-attribution",
+              "status": status, "posed_by": "curator", "posed_date": "2026-10-09",
+              "attaches_to": ["producer_organisms#producer"],
+              "evidence": [{"reference": "https://example.org/synthetic-test",
+                            "evidence_source": "database", "notes": "Synthetic test only."}],
+              "notes": "Keep the curator's wording and supporting context."}
+    if status == "RESOLVED":
+        thread.update(resolved_date="2026-10-09", resolution_note="Evidence adjudicated.")
+    second = {**thread, "discussion_id": "curator-protein-choice"}
+    existing = {**_structure(), "discussions": [
+        {"discussion_id": "structure-disagreement", "prompt": "stale source question"},
+        thread, second,
+    ]}
+    before = deepcopy(existing)
+    payload = {**_structure(), "discussions": [
+        {"discussion_id": "name-disagreement", "prompt": "current source question"},
+    ]}
+    seed.carry_curator_owned_fields(payload, existing)
+    assert payload["discussions"][1:] == [thread, second]
+    assert len(payload["discussions"]) == 3
+    assert existing == before
+    # Reusing the helper must not duplicate a carried thread.
+    seed.carry_curator_owned_fields(payload, existing)
+    assert len(payload["discussions"]) == 3
+    payload["discussions"][1]["evidence"][0]["notes"] = "edited copy"
+    assert existing == before
+
+
+def test_curator_only_discussions_precede_history(host_symbiont_discussion):
+    thread = {**host_symbiont_discussion, "discussion_id": "curator-producer-attribution"}
+    existing = {**_structure(), "discussions": [thread], "curation_history": []}
+    payload = _structure()
+    seed.carry_curator_owned_fields(payload, existing)
+    assert payload["discussions"] == [thread]
+    assert list(payload).index("discussions") < list(payload).index("curation_history")
+    payload["discussions"][0]["prompt"] = "changed in the new payload"
+    assert existing["discussions"][0] == thread
+
+
+@pytest.mark.parametrize("old_key,new_key", [("OLD", "NEW"), (None, None), ("OLD", None)])
+def test_curator_discussions_require_matching_structure(old_key, new_key):
+    existing = {**_structure(old_key), "discussions": [
+        {"discussion_id": "curator-protein-choice", "prompt": "Which protein?"},
+    ]}
+    payload = _structure(new_key)
+    seed.carry_curator_owned_fields(payload, existing)
+    assert "discussions" not in payload
+
+
+def test_unprefixed_custom_discussion_is_not_implicitly_adopted(host_symbiont_discussion):
+    payload = _structure()
+    thread = {**host_symbiont_discussion, "discussion_id": "producer-attribution"}
+    seed.carry_curator_owned_fields(
+        payload, {**_structure(), "discussions": [thread]})
+    assert "discussions" not in payload
+
+
+def test_duplicate_curator_discussions_fail_before_carrying_any_fields():
+    thread = {"discussion_id": "curator-protein-choice", "prompt": "Which protein?"}
+    existing = {**_structure(), "discussions": [thread, {**thread, "prompt": "Conflicting?"}],
+                "curation_status": "REVIEWED"}
+    payload = _structure()
+    with pytest.raises(ValueError, match="duplicate curator discussion_id"):
+        seed.carry_curator_owned_fields(payload, existing)
+    assert payload == _structure()
+
+
+@pytest.mark.parametrize("with_source_discussion", [False, True])
+def test_curator_discussion_reseeds_byte_identically(tmp_path, monkeypatch,
+                                                   host_symbiont_discussion,
+                                                   with_source_discussion):
+    corpus = tmp_path / "data" / "natural_products"
+    monkeypatch.setattr(seed, "REPO_ROOT", tmp_path)
+    monkeypatch.setattr(seed, "CORPUS_DIR", corpus)
+    monkeypatch.setattr(seed, "PATHS_FILE", corpus / "PATHS.tsv")
+    inventories = {"mibig_compounds": [MIBIG_ROW]}
+    if with_source_discussion:
+        inventories["mibig_compounds"].append({**MIBIG_ROW, "mibig_accession": "BGC0000001"})
+    generated = seed.build_records(inventories)[0]
+    assert bool(generated.get("discussions")) == with_source_discussion
+    path = seed.record_path(generated["np_pathway"], generated["_slug"])
+    payload = {k: v for k, v in generated.items() if not k.startswith(seed.INTERNAL_PREFIX)}
+    payload.setdefault("discussions", []).append(
+        {**host_symbiont_discussion, "discussion_id": "curator-producer-attribution"})
+    seed.record_curation_event(payload, curator="test", action="RECORD_CURATED",
+                               changes="Record a curator-owned attribution question.")
+    seed.write_validated_natural_product(payload, path)
+    original = path.read_bytes()
+    original_history = deepcopy(payload["curation_history"])
+    for _ in range(2):
+        assert seed.write_records(seed.build_records(inventories)) == 1
+        assert path.read_bytes() == original
+        assert yaml.safe_load(path.read_text())["curation_history"] == original_history
 
 
 def test_nothing_is_carried_across_a_different_structure():

@@ -24,7 +24,9 @@ What it deliberately does not compare
 curator-owned: the seeder carries them across a re-seed rather than producing
 them, so comparing them against a rebuild would make this check permanently red
 the first time anyone curated anything. They are taken from the file, exactly as
-the writer takes them.
+the writer takes them. Explicitly curator-owned discussions (the ``curator-``
+ID namespace) are carried in full for the same structure; source-generated
+questions carry only curator answers while the seeder still raises them.
 
 Referenced components are curator-owned too: audited for complete ownership,
 schema, topology and reviewability, not reconstructed from imported inventories.

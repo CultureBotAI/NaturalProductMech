@@ -76,7 +76,7 @@ def host_symbiont_discussion() -> dict[str, Any]:
     from an invertebrate whose real producer may be a symbiont.
     """
     return {
-        "discussion_id": "producer-attribution",
+        "discussion_id": "curator-producer-attribution",
         "kind": "CURATION_TODO",
         "status": "OPEN",
         "prompt": (
