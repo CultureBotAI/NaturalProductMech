@@ -1187,6 +1187,7 @@ causal_graphs:
       snippet: Inhibited by diethyldithiocarbamate and kojic acid
 causal_graph_refs:
 - kojic-acid-flavus-kojart-database-biosynthesis-secretion
+- kojic-acid-pir-yhhw-database-inhibition
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -1265,4 +1266,18 @@ curation_history:
     phenotype, solution stoichiometry or producer/BGC claim is added. All four previous
     graphs, the existing component, source-owned fields and history are preserved.
     Record remains SEEDED; not full-record sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-09T12:27:43Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added an exact-owner three-node/two-edge BIOACTIVITY component for database-reported
+    kojic-acid inhibition of human PIR/UniProtKB:O00625 and E. coli YhhW/UniProtKB:P46852.
+    Both edges have stable official URLs and exact UniProt snippets. Four independent
+    native CDS translations establish reference identity only, not 2005 assay stocks
+    or full constructs. Preserved HeLa clone and K12/MG1655/W3110 distinctions, PIR
+    sequence conflicts, and primary DOI access limits. No direct binding, inhibition
+    constant, cellular/NF-kappa-B effect, antimicrobial phenotype or producer claim.
+    All five old graphs, source fields, classifications, origin and history are unchanged.
+    Component storage retains complete evidence within size limits. Record remains
+    SEEDED; not full-record sign-off.
   llm_assisted: true
