@@ -83,6 +83,52 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 biosynthetic_pathway:
+- enzyme_id: UniProtKB:Q2FW70
+  enzyme_label: SfnaD (NCTC 8325 reference)
+  reaction_id: RHEA:59136
+  substrates:
+  - CHEBI:57668
+  - CHEBI:16947
+  product: CHEBI:142972
+  notes: ATP-dependent condensation of D-ornithine and citrate forms the N(5)-citryl-D-ornithine
+    intermediate, AMP, diphosphate and a proton. Database-qualified assignment to
+    the NCTC 8325 reference; the UniProt publication block names RN4220, not an experimentally
+    established identical stock. No step number is invented. This intermediate feeds
+    the separately preserved terminal SfnaB step 3; existing numbering and primary
+    evidence are unchanged. No L-ornithine racemase assignment to Q2FW73 is made.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/Q2FW70
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-09'
+    notes: Reviewed UniProt entry version 93, sequence version 1; 658 aa; sfnaD, SAOUHSC_02436;
+      S. aureus NCTC 8325 / PS 47, taxon 93061. ATP-dependent condensation of D-ornithine
+      and citrate forms the N(5)-citryl-D-ornithine intermediate, AMP, diphosphate
+      and a proton. FUNCTION and CATALYTIC ACTIVITY cite ECO:0000269/PMID:19138128.
+      Its UniProt reference block names strain RN4220, not the NCTC 8325 reference
+      stock. DOI:10.1021/bi801844c was tool-inaccessible in this audit; no new PRIMARY_EXPERIMENT
+      claim or assayed-construct identity. RHEA:59136 and forward RHEA:59137 are read
+      from UniProt, not independently rechecked against Rhea. Ionic participants follow
+      UniProt cross-references and cached ChEBI release 255 labels; edges summarize
+      principal substrates/products, not a complete stoichiometric model.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/ABD31458.1
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-09'
+    notes: The complete 658-aa ABD31458.1 equals canonical UniProt Q2FW70. CDS CP000253.1:2262005..2263981,
+      locus SAOUHSC_02436, independently translates to that sequence using table 11
+      and codon_start 1, with the recorded strand. CP000253.1 and GenPept name NCTC
+      8325, taxon 93061, BioSample SAMN02604235. This is reference identity only,
+      not RN4220 equivalence, a historical stock, an assayed construct, native expression
+      or functional proof. Genomic hypothetical-protein annotations are not functional
+      experiments.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000944.5/annotations.json
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-09'
+    notes: 'Source conflict, not functional support: MIBiG version 5 assigns SAOUHSC_02436
+      as sfaC (ornithine racemase), whereas the inspected UniProt entry Q2FW70 assigns
+      sfnaD and the condensation reaction to this exact reference sequence. The conflicting
+      MIBiG gene name/function is not adopted. Genomic coordinates ground reference
+      identity; UniProt supplies the qualified function. No raw source correction
+      or producer/locus evidence-grade change is made.'
 - step_number: 3
   enzyme_id: UniProtKB:Q2FW72
   enzyme_label: Staphyloferrin A synthase
@@ -230,6 +276,207 @@ causal_graphs:
       notes: Reviewed UniProtKB:Q2FW72 is the Staphylococcus aureus NCTC 8325 / PS
         47 SfnaB staphyloferrin A synthase, ordered locus SAOUHSC_02434, and annotates
         RHEA:59140.
+- graph_id: staphyloferrin-a-sfnad-database-condensation
+  scope: BIOSYNTHESIS
+  description: Database-qualified SfnaD condensation of D-ornithine and citrate in
+    the NCTC 8325 reference. The CHEBI:142972 intermediate feeds the separately retained
+    SfnaB graph; all edges here are graph-local. RN4220 assay annotation is not reference-stock
+    identity. No precursor racemase function or final-product stereochemical completion
+    is asserted. Conflicting MIBiG gene assignments are documented, not adopted.
+  nodes:
+  - node_id: sfnad
+    label: SfnaD (SAOUHSC_02436; NCTC 8325 reference)
+    identifier: UniProtKB:Q2FW70
+    node_type: ENZYME
+    grounding_status: GROUNDED
+  - node_id: d_ornithinium
+    label: D-ornithinium(1+)
+    identifier: CHEBI:57668
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+  - node_id: citrate
+    label: citrate(3-)
+    identifier: CHEBI:16947
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+  - node_id: citryl_d_ornithine
+    label: N(5)-[(S)-citryl]-D-ornithine(2-)
+    identifier: CHEBI:142972
+    node_type: PRECURSOR
+    grounding_status: GROUNDED
+  edges:
+  - subject: d_ornithinium
+    predicate: is a substrate for
+    object: sfnad
+    notes: ATP-dependent condensation of D-ornithine and citrate forms the N(5)-citryl-D-ornithine
+      intermediate, AMP, diphosphate and a proton.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2FW70
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry version 93, sequence version 1; 658 aa; sfnaD,
+        SAOUHSC_02436; S. aureus NCTC 8325 / PS 47, taxon 93061. ATP-dependent condensation
+        of D-ornithine and citrate forms the N(5)-citryl-D-ornithine intermediate,
+        AMP, diphosphate and a proton. FUNCTION and CATALYTIC ACTIVITY cite ECO:0000269/PMID:19138128.
+        Its UniProt reference block names strain RN4220, not the NCTC 8325 reference
+        stock. DOI:10.1021/bi801844c was tool-inaccessible in this audit; no new PRIMARY_EXPERIMENT
+        claim or assayed-construct identity. RHEA:59136 and forward RHEA:59137 are
+        read from UniProt, not independently rechecked against Rhea. Ionic participants
+        follow UniProt cross-references and cached ChEBI release 255 labels; edges
+        summarize principal substrates/products, not a complete stoichiometric model.
+      snippet: Catalyzes the ATP-dependent condensation of D-ornithine and citrate
+        to form a citryl-D-ornithine intermediate
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABD31458.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 658-aa ABD31458.1 equals canonical UniProt Q2FW70. CDS CP000253.1:2262005..2263981,
+        locus SAOUHSC_02436, independently translates to that sequence using table
+        11 and codon_start 1, with the recorded strand. CP000253.1 and GenPept name
+        NCTC 8325, taxon 93061, BioSample SAMN02604235. This is reference identity
+        only, not RN4220 equivalence, a historical stock, an assayed construct, native
+        expression or functional proof. Genomic hypothetical-protein annotations are
+        not functional experiments.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000944.5/annotations.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: 'Source conflict, not functional support: MIBiG version 5 assigns SAOUHSC_02436
+        as sfaC (ornithine racemase), whereas the inspected UniProt entry Q2FW70 assigns
+        sfnaD and the condensation reaction to this exact reference sequence. The
+        conflicting MIBiG gene name/function is not adopted. Genomic coordinates ground
+        reference identity; UniProt supplies the qualified function. No raw source
+        correction or producer/locus evidence-grade change is made.'
+  - subject: citrate
+    predicate: is a substrate for
+    object: sfnad
+    notes: ATP-dependent condensation of D-ornithine and citrate forms the N(5)-citryl-D-ornithine
+      intermediate, AMP, diphosphate and a proton.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2FW70
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry version 93, sequence version 1; 658 aa; sfnaD,
+        SAOUHSC_02436; S. aureus NCTC 8325 / PS 47, taxon 93061. ATP-dependent condensation
+        of D-ornithine and citrate forms the N(5)-citryl-D-ornithine intermediate,
+        AMP, diphosphate and a proton. FUNCTION and CATALYTIC ACTIVITY cite ECO:0000269/PMID:19138128.
+        Its UniProt reference block names strain RN4220, not the NCTC 8325 reference
+        stock. DOI:10.1021/bi801844c was tool-inaccessible in this audit; no new PRIMARY_EXPERIMENT
+        claim or assayed-construct identity. RHEA:59136 and forward RHEA:59137 are
+        read from UniProt, not independently rechecked against Rhea. Ionic participants
+        follow UniProt cross-references and cached ChEBI release 255 labels; edges
+        summarize principal substrates/products, not a complete stoichiometric model.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABD31458.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 658-aa ABD31458.1 equals canonical UniProt Q2FW70. CDS CP000253.1:2262005..2263981,
+        locus SAOUHSC_02436, independently translates to that sequence using table
+        11 and codon_start 1, with the recorded strand. CP000253.1 and GenPept name
+        NCTC 8325, taxon 93061, BioSample SAMN02604235. This is reference identity
+        only, not RN4220 equivalence, a historical stock, an assayed construct, native
+        expression or functional proof. Genomic hypothetical-protein annotations are
+        not functional experiments.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000944.5/annotations.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: 'Source conflict, not functional support: MIBiG version 5 assigns SAOUHSC_02436
+        as sfaC (ornithine racemase), whereas the inspected UniProt entry Q2FW70 assigns
+        sfnaD and the condensation reaction to this exact reference sequence. The
+        conflicting MIBiG gene name/function is not adopted. Genomic coordinates ground
+        reference identity; UniProt supplies the qualified function. No raw source
+        correction or producer/locus evidence-grade change is made.'
+  - subject: sfnad
+    predicate: forms
+    object: citryl_d_ornithine
+    notes: ATP-dependent condensation of D-ornithine and citrate forms the N(5)-citryl-D-ornithine
+      intermediate, AMP, diphosphate and a proton.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2FW70
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry version 93, sequence version 1; 658 aa; sfnaD,
+        SAOUHSC_02436; S. aureus NCTC 8325 / PS 47, taxon 93061. ATP-dependent condensation
+        of D-ornithine and citrate forms the N(5)-citryl-D-ornithine intermediate,
+        AMP, diphosphate and a proton. FUNCTION and CATALYTIC ACTIVITY cite ECO:0000269/PMID:19138128.
+        Its UniProt reference block names strain RN4220, not the NCTC 8325 reference
+        stock. DOI:10.1021/bi801844c was tool-inaccessible in this audit; no new PRIMARY_EXPERIMENT
+        claim or assayed-construct identity. RHEA:59136 and forward RHEA:59137 are
+        read from UniProt, not independently rechecked against Rhea. Ionic participants
+        follow UniProt cross-references and cached ChEBI release 255 labels; edges
+        summarize principal substrates/products, not a complete stoichiometric model.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABD31458.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 658-aa ABD31458.1 equals canonical UniProt Q2FW70. CDS CP000253.1:2262005..2263981,
+        locus SAOUHSC_02436, independently translates to that sequence using table
+        11 and codon_start 1, with the recorded strand. CP000253.1 and GenPept name
+        NCTC 8325, taxon 93061, BioSample SAMN02604235. This is reference identity
+        only, not RN4220 equivalence, a historical stock, an assayed construct, native
+        expression or functional proof. Genomic hypothetical-protein annotations are
+        not functional experiments.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000944.5/annotations.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: 'Source conflict, not functional support: MIBiG version 5 assigns SAOUHSC_02436
+        as sfaC (ornithine racemase), whereas the inspected UniProt entry Q2FW70 assigns
+        sfnaD and the condensation reaction to this exact reference sequence. The
+        conflicting MIBiG gene name/function is not adopted. Genomic coordinates ground
+        reference identity; UniProt supplies the qualified function. No raw source
+        correction or producer/locus evidence-grade change is made.'
+- graph_id: staphyloferrin-a-sfaa-database-secretion
+  scope: BIOSYNTHESIS
+  description: Database-qualified involvement of SfaA in staphyloferrin A secretion,
+    selecting the NCTC 8325 reference. The compound node is the neutral, partly stereounspecified
+    owner anchor, not an established transported ionic species or fully specified
+    stereoisomer.
+  nodes:
+  - node_id: sfaa
+    label: SfaA (SAOUHSC_02435; NCTC 8325 reference)
+    identifier: UniProtKB:Q2FW71
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+  - node_id: staphyloferrin_a
+    label: staphyloferrin A
+    identifier: CHEBI:84711
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+  edges:
+  - subject: sfaa
+    predicate: is involved in secretion of
+    object: staphyloferrin_a
+    notes: Secretion involvement only, not direct transport or essentiality. CHEBI:84711
+      is a compound anchor; no equivalence to stereospecified anionic CHEBI:142973,
+      transported protonation state, or citryl-centre stereochemistry is established.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2FW71
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry version 98, sequence version 1; 397 aa; sfaA,
+        SAOUHSC_02435; S. aureus NCTC 8325 / PS 47, taxon 93061. FUNCTION cites ECO:0000269/PMID:25680529
+        for involvement in staphyloferrin A secretion. Protein existence remains 3
+        (inferred from homology), despite the reviewed entry and experimental-evidence
+        annotation. DOI:10.1016/j.febslet.2015.02.002 was tool-inaccessible; no independently
+        inspected primary experiment or assay-strain identity. No direct transport
+        assay, essentiality, flux, substrate specificity, membrane topology, or staphyloferrin
+        B secretion claim is adopted.
+      snippet: Involved in staphyloferrin A secretion
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABD31457.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 397-aa ABD31457.1 equals canonical UniProt Q2FW71. CDS complement(CP000253.1:2260710..2261903),
+        locus SAOUHSC_02435, independently translates to that sequence using table
+        11 and codon_start 1, with the recorded strand. CP000253.1 and GenPept name
+        NCTC 8325, taxon 93061, BioSample SAMN02604235. This is reference identity
+        only, not RN4220 equivalence, a historical stock, an assayed construct, native
+        expression or functional proof. Genomic hypothetical-protein annotations are
+        not functional experiments.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000944.5/annotations.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: 'Source conflict, not functional support: MIBiG version 5 assigns SAOUHSC_02435
+        as sfaB (NIS synthetase), whereas the inspected UniProt entry Q2FW71 assigns
+        sfaA and secretion involvement to this exact reference sequence. The conflicting
+        MIBiG gene name/function is not adopted. Genomic coordinates ground reference
+        identity; UniProt supplies the qualified function. No raw source correction
+        or producer/locus evidence-grade change is made.'
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
   curator: seed_from_sources
@@ -245,4 +492,19 @@ curation_history:
   changes: Added a terminal-step BIOSYNTHESIS pathway and causal graph for staphyloferrin
     A biosynthesis; grounded Staphylococcus aureus NCTC 8325 SfnaB staphyloferrin
     A synthase to UniProtKB:Q2FW72 and RHEA:59140.
+  llm_assisted: true
+- timestamp: '2026-10-09T16:38:50Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added two database-qualified NCTC 8325 reference proteins: SfnaD/Q2FW70
+    condensation and SfaA/Q2FW71 secretion involvement. Two new BIOSYNTHESIS graphs
+    contain four edges with stable UniProt/NCBI references and two verbatim snippets;
+    an unnumbered SfnaD pathway entry precedes the unchanged terminal SfnaB step 3.
+    All new functions are DATABASE_ASSERTION; complete CDS/GenPept/UniProt sequence
+    equality is CURATOR_INFERENCE, not assay-stock identity. RN4220 annotation is
+    not equated with NCTC 8325. Conflicting MIBiG gene annotations are documented
+    and not adopted. Q2FW73 is not assigned ornithine-racemase activity. No direct
+    transport, transported charge state, producer/BGC upgrade, or final-product stereochemical
+    completion. Original SfnaB graph, evidence, source fields and history preserved;
+    SEEDED, not full-record sign-off.'
   llm_assisted: true
