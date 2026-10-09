@@ -433,6 +433,113 @@ biosynthetic_pathway:
       All 291 residues match UniProt, this GenPept sequence, the annotated CDS and
       independent table-11 translation. Both genomic mappings agree. Identity evidence,
       not an enzymatic assay.
+- enzyme_id: UniProtKB:Q9F1Y6
+  enzyme_label: ScMIBS (2-methylisoborneol synthase; canonical reference)
+  proposed: false
+  notes: ScMIBS is grounded to the exact 440-aa SCO7700 reference, not a truncated
+    domain or variant. Canonical-reference mapping, not exact cloned-insert/tag/linker
+    reconstruction. This is a separate coupled in-vitro assay, not a shared native
+    pathway. No reaction order, native producer/BGC grade, kinetic value or stereochemical
+    upgrade is asserted.
+  evidence:
+  - reference: DOI:10.1002/chem.202300775
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: function efficiently as MIBSs
+    retrieved_on: '2026-10-09'
+    notes: ScMIBS/WP_011031839, Streptomyces coelicolor A3(2) DSM 40783; recombinant
+      pYE-Express preparation. Coupled FPPS assay yielded 2-MIB by GC/MS. Main text
+      only; supplement inaccessible.
+  - reference: https://www.uniprot.org/uniprotkb/Q9F1Y6/entry
+    evidence_type: DATABASE_ASSERTION
+    snippet: SCO7700
+    retrieved_on: '2026-10-08'
+    notes: Reviewed UniProt entry 113, sequence 1, 440 aa, taxon 100226. Canonical
+      reference, not a reconstruction of the experimental insert or a claim that the
+      assay stock was M145.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/CAD55534.1
+    evidence_type: CURATOR_INFERENCE
+    snippet: SCO7700
+    retrieved_on: '2026-10-09'
+    notes: A3(2) native AL939132.1:171530..172852, forward. UniProt, GenPept, the
+      named RefSeq reference, annotated CDS and independent table-11 translation agree
+      exactly. The separate 1147 deposit agrees but does not identify the assay stock.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/WP_011031839.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: WP_011031839.1
+    retrieved_on: '2026-10-09'
+    notes: Versioned reference corresponding to the paper's unversioned accession.
+      Sequence identity was independently verified; RefSeq species/multispecies assignment
+      is not an experimental strain record. No shell-cargo claim follows from its
+      automated name.
+- enzyme_id: UniProtKB:K0K6P8
+  enzyme_label: SeMIBS (2-methylisoborneol synthase; canonical reference)
+  proposed: false
+  notes: SeMIBS is grounded to the exact 362-aa BN6_59350 reference; unreviewed status
+    does not replace the independently cited experiment. Canonical-reference mapping,
+    not exact cloned-insert/tag/linker reconstruction. This is a separate coupled
+    in-vitro assay, not a shared native pathway. No reaction order, native producer/BGC
+    grade, kinetic value or stereochemical upgrade is asserted.
+  evidence:
+  - reference: DOI:10.1002/chem.202300775
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: function efficiently as MIBSs
+    retrieved_on: '2026-10-09'
+    notes: SeMIBS/WP_015103303, Saccharothrix espanaensis DSM 44229; recombinant pYE-Express
+      preparation. Coupled FPPS assay yielded 2-MIB by GC/MS. Main text only; supplement
+      inaccessible.
+  - reference: https://www.uniprot.org/uniprotkb/K0K6P8/entry
+    evidence_type: DATABASE_ASSERTION
+    snippet: BN6_59350
+    retrieved_on: '2026-10-09'
+    notes: Unreviewed UniProt entry 55, sequence 1, 362 aa, native DSM 44229/taxon
+      1179773. Identity source only; automated annotation is not the primary functional
+      evidence.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/CCH33192.1
+    evidence_type: CURATOR_INFERENCE
+    snippet: BN6_59350
+    retrieved_on: '2026-10-09'
+    notes: Native DSM 44229 HE804045.1:6630735..6631823, forward. UniProt, GenPept,
+      the named RefSeq reference, annotated CDS and independent table-11 translation
+      agree exactly.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/WP_015103303.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: WP_015103303.1
+    retrieved_on: '2026-10-09'
+    notes: Versioned reference corresponding to the paper's unversioned accession.
+      Sequence identity was independently verified; RefSeq species/multispecies assignment
+      is not an experimental strain record. No shell-cargo claim follows from its
+      automated name.
+- enzyme_id: NCBIProtein:WP_019890277.1
+  enzyme_label: SpMIBS (2-methylisoborneol synthase; canonical reference)
+  proposed: false
+  notes: SpMIBS uses the exact 438-aa RefSeq reference. A0A918LM63 differs at positions
+    107 (T/A) and 116 (G/R), so it is not substituted as an exact UniProt mapping.
+    Canonical-reference mapping, not exact cloned-insert/tag/linker reconstruction.
+    This is a separate coupled in-vitro assay, not a shared native pathway. No reaction
+    order, native producer/BGC grade, kinetic value or stereochemical upgrade is asserted.
+  evidence:
+  - reference: DOI:10.1002/chem.202300775
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: function efficiently as MIBSs
+    retrieved_on: '2026-10-09'
+    notes: SpMIBS/WP_019890277, Streptomyces purpureus DSM 43360; recombinant pYE-Express
+      preparation. Coupled FPPS assay yielded 2-MIB by GC/MS. Main text only; supplement
+      inaccessible.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/NZ_KB913030.1
+    evidence_type: CURATOR_INFERENCE
+    snippet: STRPU_RS0127440
+    retrieved_on: '2026-10-09'
+    notes: The 438-aa RefSeq reference equals the annotated and independently table-11-translated
+      CDS at 5956391..5957707, forward, native KA281/ATCC 21405/taxon 1054860. This
+      mapping is not proof of exact assay-stock equivalence.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/WP_019890277.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: WP_019890277.1
+    retrieved_on: '2026-10-09'
+    notes: Versioned reference corresponding to the paper's unversioned accession.
+      Sequence identity was independently verified; RefSeq species/multispecies assignment
+      is not an experimental strain record. No shell-cargo claim follows from its
+      automated name.
 causal_graphs:
 - graph_id: mib-sgr-native-proposed-roles
   scope: BIOSYNTHESIS
@@ -700,6 +807,143 @@ causal_graphs:
     sequence; function remains inferred. No MIBiG locus or producer assertion is added,
     and no direct assay, reaction order, shell-cargo mapping or stereochemical resolution
     is claimed.
+- graph_id: mib-three-canonical-references-coupled-assays
+  scope: BIOSYNTHESIS
+  nodes:
+  - node_id: scmibs
+    label: ScMIBS (2-methylisoborneol synthase; canonical reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q9F1Y6
+    grounding_status: GROUNDED
+  - node_id: semibs
+    label: SeMIBS (2-methylisoborneol synthase; canonical reference)
+    node_type: ENZYME
+    identifier: UniProtKB:K0K6P8
+    grounding_status: GROUNDED
+  - node_id: spmibs
+    label: SpMIBS (2-methylisoborneol synthase; canonical reference)
+    node_type: ENZYME
+    identifier: NCBIProtein:WP_019890277.1
+    grounding_status: GROUNDED
+  - node_id: mib
+    label: 2-methylisoborneol (stereochemistry unspecified)
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-0eb8c93c6f
+    grounding_status: GROUNDED
+  edges:
+  - subject: scmibs
+    predicate: catalyzes_formation_in_coupled_in_vitro_assay_of
+    object: mib
+    notes: ScMIBS is grounded to the exact 440-aa SCO7700 reference, not a truncated
+      domain or variant. Canonical-reference mapping, not exact cloned-insert/tag/linker
+      reconstruction. This is a separate coupled in-vitro assay, not a shared native
+      pathway. No reaction order, native producer/BGC grade, kinetic value or stereochemical
+      upgrade is asserted.
+    evidence:
+    - reference: DOI:10.1002/chem.202300775
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: function efficiently as MIBSs
+      retrieved_on: '2026-10-09'
+      notes: ScMIBS/WP_011031839, Streptomyces coelicolor A3(2) DSM 40783; recombinant
+        pYE-Express preparation. Coupled FPPS assay yielded 2-MIB by GC/MS. Main text
+        only; supplement inaccessible.
+    - reference: https://www.uniprot.org/uniprotkb/Q9F1Y6/entry
+      evidence_type: DATABASE_ASSERTION
+      snippet: SCO7700
+      retrieved_on: '2026-10-08'
+      notes: Reviewed UniProt entry 113, sequence 1, 440 aa, taxon 100226. Canonical
+        reference, not a reconstruction of the experimental insert or a claim that
+        the assay stock was M145.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAD55534.1
+      evidence_type: CURATOR_INFERENCE
+      snippet: SCO7700
+      retrieved_on: '2026-10-09'
+      notes: A3(2) native AL939132.1:171530..172852, forward. UniProt, GenPept, the
+        named RefSeq reference, annotated CDS and independent table-11 translation
+        agree exactly. The separate 1147 deposit agrees but does not identify the
+        assay stock.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/WP_011031839.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: WP_011031839.1
+      retrieved_on: '2026-10-09'
+      notes: Versioned reference corresponding to the paper's unversioned accession.
+        Sequence identity was independently verified; RefSeq species/multispecies
+        assignment is not an experimental strain record. No shell-cargo claim follows
+        from its automated name.
+  - subject: semibs
+    predicate: catalyzes_formation_in_coupled_in_vitro_assay_of
+    object: mib
+    notes: SeMIBS is grounded to the exact 362-aa BN6_59350 reference; unreviewed
+      status does not replace the independently cited experiment. Canonical-reference
+      mapping, not exact cloned-insert/tag/linker reconstruction. This is a separate
+      coupled in-vitro assay, not a shared native pathway. No reaction order, native
+      producer/BGC grade, kinetic value or stereochemical upgrade is asserted.
+    evidence:
+    - reference: DOI:10.1002/chem.202300775
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: function efficiently as MIBSs
+      retrieved_on: '2026-10-09'
+      notes: SeMIBS/WP_015103303, Saccharothrix espanaensis DSM 44229; recombinant
+        pYE-Express preparation. Coupled FPPS assay yielded 2-MIB by GC/MS. Main text
+        only; supplement inaccessible.
+    - reference: https://www.uniprot.org/uniprotkb/K0K6P8/entry
+      evidence_type: DATABASE_ASSERTION
+      snippet: BN6_59350
+      retrieved_on: '2026-10-09'
+      notes: Unreviewed UniProt entry 55, sequence 1, 362 aa, native DSM 44229/taxon
+        1179773. Identity source only; automated annotation is not the primary functional
+        evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CCH33192.1
+      evidence_type: CURATOR_INFERENCE
+      snippet: BN6_59350
+      retrieved_on: '2026-10-09'
+      notes: Native DSM 44229 HE804045.1:6630735..6631823, forward. UniProt, GenPept,
+        the named RefSeq reference, annotated CDS and independent table-11 translation
+        agree exactly.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/WP_015103303.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: WP_015103303.1
+      retrieved_on: '2026-10-09'
+      notes: Versioned reference corresponding to the paper's unversioned accession.
+        Sequence identity was independently verified; RefSeq species/multispecies
+        assignment is not an experimental strain record. No shell-cargo claim follows
+        from its automated name.
+  - subject: spmibs
+    predicate: catalyzes_formation_in_coupled_in_vitro_assay_of
+    object: mib
+    notes: SpMIBS uses the exact 438-aa RefSeq reference. A0A918LM63 differs at positions
+      107 (T/A) and 116 (G/R), so it is not substituted as an exact UniProt mapping.
+      Canonical-reference mapping, not exact cloned-insert/tag/linker reconstruction.
+      This is a separate coupled in-vitro assay, not a shared native pathway. No reaction
+      order, native producer/BGC grade, kinetic value or stereochemical upgrade is
+      asserted.
+    evidence:
+    - reference: DOI:10.1002/chem.202300775
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: function efficiently as MIBSs
+      retrieved_on: '2026-10-09'
+      notes: SpMIBS/WP_019890277, Streptomyces purpureus DSM 43360; recombinant pYE-Express
+        preparation. Coupled FPPS assay yielded 2-MIB by GC/MS. Main text only; supplement
+        inaccessible.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/NZ_KB913030.1
+      evidence_type: CURATOR_INFERENCE
+      snippet: STRPU_RS0127440
+      retrieved_on: '2026-10-09'
+      notes: The 438-aa RefSeq reference equals the annotated and independently table-11-translated
+        CDS at 5956391..5957707, forward, native KA281/ATCC 21405/taxon 1054860. This
+        mapping is not proof of exact assay-stock equivalence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/WP_019890277.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: WP_019890277.1
+      retrieved_on: '2026-10-09'
+      notes: Versioned reference corresponding to the paper's unversioned accession.
+        Sequence identity was independently verified; RefSeq species/multispecies
+        assignment is not an experimental strain record. No shell-cargo claim follows
+        from its automated name.
+  description: Three independent recombinant assays, not one native three-enzyme pathway.
+    Canonical references ground the reported proteins; exact inserts, tags, linkers
+    and variants remain outside this claim. The owner retains unspecified stereochemistry
+    and existing source grades.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -733,4 +977,13 @@ curation_history:
     URLs and short snippets. Preserve both existing graphs, prior history, chemistry,
     review status and source-owned claims. Do not infer exact assays, reactions, pathway
     order, new producer/BGC grades or shell-cargo relationships.
+  llm_assisted: true
+- timestamp: '2026-10-09T02:09:28Z'
+  curator: OpenAI Codex
+  action: RECORD_CURATED
+  changes: Add ScMIBS/Q9F1Y6, SeMIBS/K0K6P8 and SpMIBS/WP_019890277.1 canonical references
+    for independently assayed recombinant MIB synthases, with primary DOI, identity
+    URLs and snippets. Preserve prior graphs, chemistry, source-owned claims and status.
+    Do not equate reference sequences with exact cloned inserts or infer native production,
+    reaction order, shell cargo, kinetics or stereochemical resolution.
   llm_assisted: true
