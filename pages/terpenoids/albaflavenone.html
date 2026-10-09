@@ -193,7 +193,7 @@ isolation report left it.</p>
 <p class="sub">Written by a curator with claim-level evidence on each step; not
 derived from a source. This is what the rest of the record exists to support.</p>
 <div class="scroll"><table>
-<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr><th>#</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
   <td>Cyc1 epi-isozizaene synthase<br><span class="mono">UniProtKB:Q9K499</span></td>
@@ -208,8 +208,15 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td class="mono">CHEBI:51458 &rarr; CHEBI:51460</td>
   <td class="mono">DOI:10.1074/JBC.M710421200</td>
 </tr>
+<tr>
+  <td>3</td>
+  <td>CYP170B1 (S. albus; sequence ungrounded)</td>
+  <td class="mono"></td>
+  <td class="mono">CHEBI:51458 &rarr; CHEBI:51460</td>
+  <td class="mono">DOI:10.1111/j.1742-4658.2011.08447.x</td>
+</tr>
 </table></div>
-<p class="sub">Step 1: Cyc1/SCO5222 cyclizes (2E,6E)-farnesyl diphosphate to the (+)-epi-isozizaene committed intermediate in albaflavenone biosynthesis.</p><p class="sub">Step 2: CYP170A1/SCO5223 oxidizes (+)-epi-isozizaene through albaflavenol intermediates to albaflavenone.</p>
+<p class="sub">Entry 1: Cyc1/SCO5222 cyclizes (2E,6E)-farnesyl diphosphate to the (+)-epi-isozizaene committed intermediate in albaflavenone biosynthesis.</p><p class="sub">Entry 2: CYP170A1/SCO5223 oxidizes (+)-epi-isozizaene through albaflavenol intermediates to albaflavenone.</p><p class="sub">Entry 3: Reported S. albus ATCC 2396 protein; exact accession, construct sequence and strain alias unresolved. This alternative assay is not a continuation of the S. coelicolor steps. No new stereochemical determination, native-partner assignment or producer upgrade.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
 <p class="sub">Partial Streptomyces coelicolor albaflavenone biosynthesis graph for Cyc1-catalyzed sesquiterpene cyclization and CYP170A1-catalyzed oxidation to albaflavenone.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
@@ -246,6 +253,21 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>albaflavenone</td>
   <td></td>
   <td><details class="graph-evidence"><summary class="mono">DOI:10.1074/JBC.M710421200</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1074/JBC.M710421200</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Biosynthesis of the sesquiterpene antibiotic albaflavenone in Streptomyces coelicolor A3(2)</dd><dt>notes</dt><dd>UniProtKB:Q9K498 resolves to the adjacent Streptomyces coelicolor A3(2) SCO5223 gene product, maps to EMBL AL939123 protein CAB94608.1, and annotates the composite left-to-right RHEA:32440 reaction for CYP170A1 oxidation of (+)-epi-isozizaene to albaflavenone.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">2 nodes, 1 edge</span></h2>
+<p class="sub">Source-named CYP170B1 assay; no defensible sequence accession selected. Q82IV2 and Q9K498 denote other organisms, not this protein.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>CYP170B1 (S. albus; sequence ungrounded)</td>
+  <td>catalyzes_formation_from_epi_isozizaene_in_vitro</td>
+  <td>albaflavenone</td>
+  <td>Functional assignment is experimental; sequence grounding is unresolved.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1111/j.1742-4658.2011.08447.x</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1111/j.1742-4658.2011.08447.x</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>CYP170B1 can catalyze the conversion of epi-isozizaene to albaflavenone</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Results and Methods read. GC/MS comparison with an authentic standard; recombinant C-terminally tagged enzyme with E. coli redox partners. Figure pixels and SI uninspected; later HTTP403.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
