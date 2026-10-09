@@ -1126,6 +1126,8 @@ causal_graph_refs:
 - beta-carotene-crtyb-q7z859-database
 - beta-carotene-al2-p37295-database
 - beta-carotene-lcy1-q43415-database
+- beta-carotene-umag06287-q4p0s6-similarity
+- beta-carotene-sr13176-e6zz11-similarity
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -1201,4 +1203,16 @@ curation_history:
     upgrade. All nine prior graph components, pathway steps, source Discussions, imported
     fields and history are preserved. SEEDED remains; no full-record scientific sign-off.
     Lycopene chemical-representation and all primary-access holds remain.'
+  llm_assisted: true
+- timestamp: '2026-10-09T23:30:12Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added exact Q4P0S6/UMAG_06287 and E6ZZ11/sr13176 reference examples in
+    two BIOSYNTHESIS components: six cited edges and two reaction snippets. Functions
+    are DATABASE_ASSERTION with ECO:0000250 from P37295; protein existence3, not assays.
+    Native CDS correspondence is CURATOR_INFERENCE. GROUNDED denotes sequence identity,
+    not experimental function. No pathway steps, Discussions, producer/BGC/taxonomy/origin
+    or experimental claims added. Twelve older graphs, nine pathway steps, five Discussions,
+    imported fields and history preserved. SEEDED and all prior scientific/access
+    holds remain.'
   llm_assisted: true
