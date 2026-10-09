@@ -39,6 +39,8 @@
 
 adapters:
   CHEBI: sqlite:obo:chebi
+  # Process nodes carry ontology labels, so GO must resolve rather than skip.
+  GO: sqlite:obo:go
   # A corpus-scoped adapter, not OAK's NCBITaxon build. That one is a 13.5 GB
   # semantic-sql database, far above what CI can cache, which is why this
   # surface — the corpus's largest, about 13,700 pairs — went unchecked (#64).

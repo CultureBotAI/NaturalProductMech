@@ -51,7 +51,9 @@ jobs:
           enable-cache: true
       - name: Install dependencies
         run: uv sync --locked --extra dev
-      # ChEBI as a semantic-sql database, about 4 GB uncompressed. The key has
+      # ChEBI and GO semantic-sql databases, about 4 GB and 1.6 GB uncompressed.
+      # GO validates process nodes as ontology terms, not ignored identifiers.
+      # The key has
       # no lockfile hash: it is an ontology release, not a resolved dependency,
       # so the cache is refreshed by bumping the suffix when a newer release is
       # wanted. NCBITaxon needs no cache at all: OAK's build is 13.5 GB, so the
@@ -61,7 +63,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.data/oaklib
-          key: oaklib-${{ runner.os }}-chebi-v1
+          key: oaklib-${{ runner.os }}-chebi-go-v1
+          restore-keys: |
+            oaklib-${{ runner.os }}-chebi-v1
       - name: Generate id<->label drift report
         run: just report-label-drift
       - name: Upload drift report

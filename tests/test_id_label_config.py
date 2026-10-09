@@ -139,6 +139,60 @@ def test_rhea_nodes_are_explicit_skips_and_typos_still_fail(
     assert "RHEEA:35944" in output
 
 
+@pytest.mark.parametrize("target_name", ["record_identity", "graph_component_nodes"])
+@pytest.mark.parametrize("case,expected", [
+    ("canonical", "OK_CANONICAL"),
+    ("wrong_label", "MISMATCH"),
+    ("missing_id", "ID_NOT_FOUND"),
+    ("typo", "UNKNOWN_PREFIX"),
+])
+def test_go_nodes_are_resolved_and_invalid_pairs_fail(
+        schema, tmp_path, monkeypatch, capsys, target_name, case, expected):
+    import oaklib
+
+    cfg = validator.load_config(CONFIG)
+    assert schema["prefixes"]["GO"] == "http://purl.obolibrary.org/obo/GO_"
+    assert cfg["adapters"]["GO"] == "sqlite:obo:go"
+    assert "GO" not in cfg["ignored_prefixes"]
+    cfg["targets"] = [next(t for t in cfg["targets"] if t["name"] == target_name)]
+    config = tmp_path / "config.yaml"
+    config.write_text(yaml.safe_dump(cfg), encoding="utf-8")
+    monkeypatch.setattr(validator, "REPO_ROOT", tmp_path)
+
+    # Exercise the real OAK interface offline while retaining the production selector.
+    label = "negative regulation of kojic acid biosynthetic process"
+    obo = tmp_path / "go.obo"
+    obo.write_text(f"format-version: 1.2\n\n[Term]\nid: GO:1900395\nname: {label}\n")
+    get_adapter = oaklib.get_adapter
+
+    def local_go(selector):
+        assert selector == "sqlite:obo:go"
+        return get_adapter(f"simpleobo:{obo}")
+
+    monkeypatch.setattr(oaklib, "get_adapter", local_go)
+    node = {"identifier": "GO:1900395", "label": label}
+    if case == "wrong_label":
+        node["label"] = "unrelated process"
+    elif case == "missing_id":
+        node["identifier"] = "GO:0000001"
+    elif case == "typo":
+        node["identifier"] = "G0:1900395"
+    graph = {"nodes": [node]}
+    if target_name == "record_identity":
+        record = tmp_path / "data/natural_products/test/example.yaml"
+        document = {"causal_graphs": [graph]}
+    else:
+        record = tmp_path / "data/causal_graphs/test/example.yaml"
+        document = {"graph": graph}
+    record.parent.mkdir(parents=True)
+    record.write_text(yaml.safe_dump(document), encoding="utf-8")
+    assert validator.run(config, report_path=None) == (0 if case == "canonical" else 2)
+    output = capsys.readouterr().out
+    assert expected in output
+    assert "SKIPPED_NO_ADAPTER" not in output
+    assert "SKIPPED_EMPTY_ADAPTER" not in output
+
+
 def _corpus_pairs(pairs: list[list[str]]) -> set[tuple[str, str]]:
     found: set[tuple[str, str]] = set()
     for path in (REPO_ROOT / "data" / "natural_products").rglob("*.yaml"):
