@@ -1,0 +1,117 @@
+record_id: naturalproductmech:mibig-0eb8c93c6f
+standard_inchi_key: LFYXNXGVLGKVCJ-UHFFFAOYSA-N
+graph:
+  graph_id: mib-lasali-deposited-database-roles
+  scope: BIOSYNTHESIS
+  nodes:
+  - node_id: tpc
+    label: Tpc (2-methylisoborneol synthase; database-supported)
+    node_type: ENZYME
+    identifier: UniProtKB:D3KYU2
+    grounding_status: GROUNDED
+  - node_id: gdpmt
+    label: Gdpmt (geranyl diphosphate 2-C-methyltransferase; database-supported)
+    node_type: ENZYME
+    identifier: UniProtKB:D3KYU3
+    grounding_status: GROUNDED
+  - node_id: mib
+    label: 2-methylisoborneol (stereochemistry unspecified)
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-0eb8c93c6f
+    grounding_status: GROUNDED
+  edges:
+  - subject: tpc
+    predicate: is_database_annotated_biosynthetic_enzyme_for
+    object: mib
+    notes: D3KYU2/BAI77523.1/tpc, 481 aa, is a deposited ATCC 31180 reference from
+      Streptomyces lasalocidi (literature name S. lasaliensis), not an established
+      native-locus or exact assay-construct assignment. The non-proposed role reflects
+      UniProt experimental attribution, not a newly inspected primary assay. Use the
+      explicit ATCC 31180 designation; uncertain DSM aliases are not equated. No reaction
+      order, kinetic value, native production, producer/BGC grade, shell-cargo relationship
+      or stereochemical resolution is asserted.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/D3KYU2/entry
+      evidence_type: DATABASE_ASSERTION
+      snippet: cyclization of 2-methylgeranyl diphosphate (2-MeGPP) to 2-methylisoborneol
+        (2-MIB)
+      notes: Reviewed entry 40, sequence 1, taxon 324833. FUNCTION uses ECO:0000269/PMID:18492804;
+        its publication annotation includes PATHWAY and ATCC 31180. This is database
+        experimental attribution, not newly inspected primary evidence; the cited
+        DOI:10.1073/pnas.0802312105 remains access-held.
+      retrieved_on: '2026-10-08'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAI77523.1
+      evidence_type: CURATOR_INFERENCE
+      snippet: tpc
+      notes: Deposited ATCC 31180 reference, 481 aa, forward AB547324.1:1729..3174.
+        UniProt, GenPept, the annotated CDS and independent table-11 translation agree
+        exactly. Sequence identity does not resolve native pKSL versus an experimental
+        clone or reconstruct a cited assay insert.
+      retrieved_on: '2026-10-09'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB547324.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: ATCC 31180
+      notes: The deposit explicitly names this strain, taxon 324833 and plasmid pKSL,
+        with mol_type genomic DNA. These annotations alone do not resolve the plasmid
+        provenance. No function is inferred for neighboring nbp.
+      retrieved_on: '2026-10-09'
+  - subject: gdpmt
+    predicate: is_database_annotated_biosynthetic_enzyme_for
+    object: mib
+    notes: D3KYU3/BAI77524.1/gdpmt, 300 aa, is a deposited ATCC 31180 reference from
+      Streptomyces lasalocidi (literature name S. lasaliensis), not an established
+      native-locus or exact assay-construct assignment. The non-proposed role reflects
+      UniProt experimental attribution, not a newly inspected primary assay. Use the
+      explicit ATCC 31180 designation; uncertain DSM aliases are not equated. No reaction
+      order, kinetic value, native production, producer/BGC grade, shell-cargo relationship
+      or stereochemical resolution is asserted. The methyltransferase role does not
+      assert that this enzyme alone produces 2-MIB.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/D3KYU3/entry
+      evidence_type: DATABASE_ASSERTION
+      snippet: SAM-dependent methylation of geranyl diphosphate (GPP)
+      notes: Reviewed entry 47, sequence 1, taxon 324833. FUNCTION uses ECO:0000269/PMID:18492804;
+        its publication annotation includes PATHWAY and ATCC 31180. This is database
+        experimental attribution, not newly inspected primary evidence; the cited
+        DOI:10.1073/pnas.0802312105 remains access-held.
+      retrieved_on: '2026-10-09'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAI77524.1
+      evidence_type: CURATOR_INFERENCE
+      snippet: gdpmt
+      notes: Deposited ATCC 31180 reference, 300 aa, forward AB547324.1:3219..4121.
+        UniProt, GenPept, the annotated CDS and independent table-11 translation agree
+        exactly. Sequence identity does not resolve native pKSL versus an experimental
+        clone or reconstruct a cited assay insert.
+      retrieved_on: '2026-10-09'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB547324.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: ATCC 31180
+      notes: The deposit explicitly names this strain, taxon 324833 and plasmid pKSL,
+        with mol_type genomic DNA. These annotations alone do not resolve the plasmid
+        provenance. No function is inferred for neighboring nbp.
+      retrieved_on: '2026-10-09'
+    - reference: DOI:10.2210/pdb4F84/pdb
+      evidence_type: CURATOR_INFERENCE
+      snippet: gdpmt
+      notes: Independent PDB4F84 entity 1 is exactly a 20-aa MGSSHHHHHHSSGLVPRGSH
+        extension plus all 300 canonical D3KYU3 residues. SIFTS maps entity 21..320
+        to reference 1..300; mutation count zero. Source taxon 324833 has no strain
+        qualifier; expression is pET26b in E. coli BL21(DE3). Identity evidence only,
+        not product formation, proteolysis or native assembly evidence. The related
+        primary paper remains access-held.
+      retrieved_on: '2026-10-09'
+  description: Two database-attributed biosynthetic roles for deposited ATCC 31180
+    references. This graph is not a newly established native pKSL pathway or a reconstruction
+    of the access-held experiments. Existing chemistry, evidence grades and review
+    status are retained.
+curation_history:
+- timestamp: '2026-10-09T03:55:48Z'
+  curator: OpenAI Codex
+  action: RECORD_CURATED
+  changes: Add D3KYU2/tpc and D3KYU3/gdpmt deposited-reference biosynthetic roles
+    for ATCC 31180 with stable citations and snippets. Attribute function to the database,
+    not newly inspected primary assays. Preserve pKSL origin and strain-alias uncertainty,
+    chemistry, source grades and SEEDED status; do not infer exact reaction order,
+    native production or shell cargo. Exact owner naturalproductmech:mibig-0eb8c93c6f,
+    data/natural_products/terpenoids/2-methylisoborneol.yaml, source commit 46837550f8903f16ac8a84de836908f5ce947929.
+  llm_assisted: true
