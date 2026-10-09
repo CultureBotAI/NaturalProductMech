@@ -1,0 +1,141 @@
+record_id: CHEBI:27547
+standard_inchi_key: JKQXZKUSFCKOGQ-QAYBQHTQSA-N
+graph:
+  graph_id: zeaxanthin-hyb-c3veq1-database
+  scope: BIOSYNTHESIS
+  description: HYB (Oncidium hybrid canonical example) for annotated overall beta-carotene
+    hydroxylation. Deliberately selected organism-specific canonical-reference database
+    example, not the Xanthobacter autotrophicus Py2 BGC0000656 enzyme. No producer,
+    occurrence, taxonomy-facet or BGC upgrade. Separate examples are alternatives,
+    not consecutive steps or a physical protein assembly.
+  nodes:
+  - node_id: bch
+    label: HYB (Oncidium hybrid canonical example)
+    node_type: ENZYME
+    identifier: UniProtKB:C3VEQ1
+    grounding_status: GROUNDED
+  - node_id: hydroxylation
+    label: Database-assigned carotene hydroxylation
+    node_type: PROCESS
+    identifier: RHEA:30331
+    grounding_status: GROUNDED
+  - node_id: beta_carotene
+    label: beta-carotene
+    node_type: PRECURSOR
+    identifier: CHEBI:17579
+    grounding_status: GROUNDED
+  - node_id: zeaxanthin
+    label: zeaxanthin
+    node_type: COMPOUND
+    identifier: CHEBI:27547
+    grounding_status: GROUNDED
+  edges:
+  - subject: bch
+    predicate: is_database_proposed_catalyst_of
+    object: hydroxylation
+    notes: Deliberately selected organism-specific canonical-reference database example,
+      not the Xanthobacter autotrophicus Py2 BGC0000656 enzyme. No producer, occurrence,
+      taxonomy-facet or BGC upgrade. Separate examples are alternatives, not consecutive
+      steps or a physical protein assembly.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/C3VEQ1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry35/sequence1, canonical305-aa precursor, protein
+        existence2 at transcript level. FUNCTION and overall RHEA:30331 are ECO:0000250
+        from Q9SZZ8. The primary paper DOI:10.1007/s00425-010-1222-x was not independently
+        accessible. Tissue-expression and developmental annotations do not establish
+        product flux, species-wide production or engineered BGC origin. The similarity-derived
+        homodimer annotation is not adopted. Adopted as a database assertion. Rhea
+        is read through UniProt, not a new Rhea retrieval. No independently measured
+        stereoselectivity, cofactor specificity, native-production or physical assembly
+        claim.
+      snippet: Specific for beta-ring hydroxylations of beta-carotene.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ859991.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete HyB CDS127..1044 in the1061nt mRNA is918nt including stop,
+        translating with codon_start1 and standard table1 (no explicit transl_table)
+        to ACP27626.1 and canonical C3VEQ1,305aa. Both native source blocks name Oncidium
+        hybrid cultivar/taxon141207 with no separate cultivar, strain or ecotype qualifier.
+        The mRNA descriptive title says Oncidium Gower Ramsey; this is not a distinct
+        source qualifier. No transfer to Sunkist or species-wide production. Predicted
+        transit1..41/mature42..305 does not define an assay construct. Reference equality
+        does not establish activity or assembly.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:27547
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: UniProt cross-references the overall reaction to CHEBI:17579 and CHEBI:27547.
+        The inspected ChEBI255 cache identifies neutral beta-carotene as OENHQHLEOONYIE-JLTXGRSLSA-N
+        and stereospecified neutral zeaxanthin as JKQXZKUSFCKOGQ-QAYBQHTQSA-N, the
+        exact owner. This is annotation-to-owner correspondence, not independent assay
+        stereochemistry; no meso-zeaxanthin, other geometrical isomer, lutein, astaxanthin
+        or glycoside transfer.
+  - subject: beta_carotene
+    predicate: is_database_proposed_substrate_of
+    object: hydroxylation
+    notes: Principal carotenoid substrate only; electron donors, oxygen, protons and
+      water are not graph participants. No independently verified cofactor specificity.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/C3VEQ1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry35/sequence1, canonical305-aa precursor, protein
+        existence2 at transcript level. FUNCTION and overall RHEA:30331 are ECO:0000250
+        from Q9SZZ8. The primary paper DOI:10.1007/s00425-010-1222-x was not independently
+        accessible. Tissue-expression and developmental annotations do not establish
+        product flux, species-wide production or engineered BGC origin. The similarity-derived
+        homodimer annotation is not adopted. Adopted as a database assertion. Rhea
+        is read through UniProt, not a new Rhea retrieval. No independently measured
+        stereoselectivity, cofactor specificity, native-production or physical assembly
+        claim.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:27547
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: UniProt cross-references the overall reaction to CHEBI:17579 and CHEBI:27547.
+        The inspected ChEBI255 cache identifies neutral beta-carotene as OENHQHLEOONYIE-JLTXGRSLSA-N
+        and stereospecified neutral zeaxanthin as JKQXZKUSFCKOGQ-QAYBQHTQSA-N, the
+        exact owner. This is annotation-to-owner correspondence, not independent assay
+        stereochemistry; no meso-zeaxanthin, other geometrical isomer, lutein, astaxanthin
+        or glycoside transfer.
+  - subject: hydroxylation
+    predicate: has_database_proposed_product
+    object: zeaxanthin
+    notes: Overall annotated product, not a single elementary event, independently
+      measured stereoselectivity or final metabolite in every tissue.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/C3VEQ1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry35/sequence1, canonical305-aa precursor, protein
+        existence2 at transcript level. FUNCTION and overall RHEA:30331 are ECO:0000250
+        from Q9SZZ8. The primary paper DOI:10.1007/s00425-010-1222-x was not independently
+        accessible. Tissue-expression and developmental annotations do not establish
+        product flux, species-wide production or engineered BGC origin. The similarity-derived
+        homodimer annotation is not adopted. Adopted as a database assertion. Rhea
+        is read through UniProt, not a new Rhea retrieval. No independently measured
+        stereoselectivity, cofactor specificity, native-production or physical assembly
+        claim.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:27547
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: UniProt cross-references the overall reaction to CHEBI:17579 and CHEBI:27547.
+        The inspected ChEBI255 cache identifies neutral beta-carotene as OENHQHLEOONYIE-JLTXGRSLSA-N
+        and stereospecified neutral zeaxanthin as JKQXZKUSFCKOGQ-QAYBQHTQSA-N, the
+        exact owner. This is annotation-to-owner correspondence, not independent assay
+        stereochemistry; no meso-zeaxanthin, other geometrical isomer, lutein, astaxanthin
+        or glycoside transfer.
+curation_history:
+- timestamp: '2026-10-09T19:31:43Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added B3SGL0, C3VEQ1 and O49814 canonical-reference database examples:
+    three BIOSYNTHESIS graphs, nine cited edges, three unnumbered proposed pathway
+    entries and three verbatim UniProt snippets. Preserved Gentiana R73K reference
+    conflict, Oncidium title-versus-source-qualifier distinction, and pepper historical
+    N-terminal difference, CM334 provenance and native hydroxylase1 versus UniProt
+    CA2 label disagreement. No primary assay, construct equality, native-production,
+    BGC, producer, occurrence, taxonomy facet or assembly upgrade. Existing seven
+    components and all prior biology and history retained; SEEDED unchanged, no full-record
+    sign-off.'
+  llm_assisted: true

@@ -1,0 +1,156 @@
+record_id: CHEBI:27547
+standard_inchi_key: JKQXZKUSFCKOGQ-QAYBQHTQSA-N
+graph:
+  graph_id: zeaxanthin-ca2-o49814-database
+  scope: BIOSYNTHESIS
+  description: CA2 (C. annuum canonical example) for annotated overall beta-carotene
+    hydroxylation. Deliberately selected organism-specific canonical-reference database
+    example, not the Xanthobacter autotrophicus Py2 BGC0000656 enzyme. No producer,
+    occurrence, taxonomy-facet or BGC upgrade. Separate examples are alternatives,
+    not consecutive steps or a physical protein assembly.
+  nodes:
+  - node_id: bch
+    label: CA2 (C. annuum canonical example)
+    node_type: ENZYME
+    identifier: UniProtKB:O49814
+    grounding_status: GROUNDED
+  - node_id: hydroxylation
+    label: Database-assigned carotene hydroxylation
+    node_type: PROCESS
+    identifier: RHEA:30331
+    grounding_status: GROUNDED
+  - node_id: beta_carotene
+    label: beta-carotene
+    node_type: PRECURSOR
+    identifier: CHEBI:17579
+    grounding_status: GROUNDED
+  - node_id: zeaxanthin
+    label: zeaxanthin
+    node_type: COMPOUND
+    identifier: CHEBI:27547
+    grounding_status: GROUNDED
+  edges:
+  - subject: bch
+    predicate: is_database_proposed_catalyst_of
+    object: hydroxylation
+    notes: Deliberately selected organism-specific canonical-reference database example,
+      not the Xanthobacter autotrophicus Py2 BGC0000656 enzyme. No producer, occurrence,
+      taxonomy-facet or BGC upgrade. Separate examples are alternatives, not consecutive
+      steps or a physical protein assembly.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/O49814
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry78/sequence2, canonical308-aa precursor, protein
+        existence1. FUNCTION and overall RHEA:30331 cite ECO:0000269/PMID:9555077,
+        but DOI:10.1016/s0005-2760(98)00029-0 was not independently accessible. The
+        original316-aa CAA70888.1 differs at the N-terminus; UniProt marks its cross-reference
+        ALT_SEQ and cautions about sequencing errors. That is a database caution,
+        not independent adjudication or canonical assay-construct equality. Separate
+        intermediate reactions and O49815-derived inhibition annotations are not adopted.
+        Adopted as a database assertion. Rhea is read through UniProt, not a new Rhea
+        retrieval. No independently measured stereoselectivity, cofactor specificity,
+        native-production or physical assembly claim.
+      snippet: Produces beta-cryptoxanthin and zeaxanthin.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AYRZ02000006.1?from=136905580&to=136907662
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The2083nt bounded genomic interval contains the complete reverse-strand
+        CDS complement(join(136905580..136905657,136905758..136905814,136905914..136906039,136906407..136906541,136906670..136906741,136907120..136907179,136907264..136907662)).
+        Its927nt including stop translate with codon_start1/standard table1 (no explicit
+        transl_table) to PHT78526.1 and canonical O49814,308aa. Native source is Capsicum
+        annuum/taxon4072, cultivarCM334, chromosome6, BioSampleSAMN02981571. Locus
+        T459_16578 and exact sequence/cross-reference support identity; the native
+        product label says hydroxylase1 whereas UniProt CA2 and original CAA70888
+        say hydroxylase2. This label disagreement is retained. No Zunla-1 provenance
+        or historical assay-stock identity is transferred.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/Y09722.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The1044nt original mRNA has partial CDS<1..951, codon_start1, table1
+        (no explicit transl_table), yielding CAA70888.1,316aa plus stop. Native source
+        is Capsicum annuum/taxon4072 with no cultivar qualifier. Original residues1..13
+        TTGRYHYQLVWCQ replace canonical1..5 MAAAR; original14..316 equals canonical6..308,
+        and original CDS40..951 equals canonical CDS16..927. This does not recover
+        a missing N-terminus or independently resolve UniProt sequencing-error caution.
+        Predicted transit1..59/mature60..308 are not assay boundaries. Other genomic
+        cross-references and Zunla-1 RefSeq were not inspected.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:27547
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: UniProt cross-references the overall reaction to CHEBI:17579 and CHEBI:27547.
+        The inspected ChEBI255 cache identifies neutral beta-carotene as OENHQHLEOONYIE-JLTXGRSLSA-N
+        and stereospecified neutral zeaxanthin as JKQXZKUSFCKOGQ-QAYBQHTQSA-N, the
+        exact owner. This is annotation-to-owner correspondence, not independent assay
+        stereochemistry; no meso-zeaxanthin, other geometrical isomer, lutein, astaxanthin
+        or glycoside transfer.
+  - subject: beta_carotene
+    predicate: is_database_proposed_substrate_of
+    object: hydroxylation
+    notes: Principal carotenoid substrate only; electron donors, oxygen, protons and
+      water are not graph participants. No independently verified cofactor specificity.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/O49814
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry78/sequence2, canonical308-aa precursor, protein
+        existence1. FUNCTION and overall RHEA:30331 cite ECO:0000269/PMID:9555077,
+        but DOI:10.1016/s0005-2760(98)00029-0 was not independently accessible. The
+        original316-aa CAA70888.1 differs at the N-terminus; UniProt marks its cross-reference
+        ALT_SEQ and cautions about sequencing errors. That is a database caution,
+        not independent adjudication or canonical assay-construct equality. Separate
+        intermediate reactions and O49815-derived inhibition annotations are not adopted.
+        Adopted as a database assertion. Rhea is read through UniProt, not a new Rhea
+        retrieval. No independently measured stereoselectivity, cofactor specificity,
+        native-production or physical assembly claim.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:27547
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: UniProt cross-references the overall reaction to CHEBI:17579 and CHEBI:27547.
+        The inspected ChEBI255 cache identifies neutral beta-carotene as OENHQHLEOONYIE-JLTXGRSLSA-N
+        and stereospecified neutral zeaxanthin as JKQXZKUSFCKOGQ-QAYBQHTQSA-N, the
+        exact owner. This is annotation-to-owner correspondence, not independent assay
+        stereochemistry; no meso-zeaxanthin, other geometrical isomer, lutein, astaxanthin
+        or glycoside transfer.
+  - subject: hydroxylation
+    predicate: has_database_proposed_product
+    object: zeaxanthin
+    notes: Overall annotated product, not a single elementary event, independently
+      measured stereoselectivity or final metabolite in every tissue.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/O49814
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry78/sequence2, canonical308-aa precursor, protein
+        existence1. FUNCTION and overall RHEA:30331 cite ECO:0000269/PMID:9555077,
+        but DOI:10.1016/s0005-2760(98)00029-0 was not independently accessible. The
+        original316-aa CAA70888.1 differs at the N-terminus; UniProt marks its cross-reference
+        ALT_SEQ and cautions about sequencing errors. That is a database caution,
+        not independent adjudication or canonical assay-construct equality. Separate
+        intermediate reactions and O49815-derived inhibition annotations are not adopted.
+        Adopted as a database assertion. Rhea is read through UniProt, not a new Rhea
+        retrieval. No independently measured stereoselectivity, cofactor specificity,
+        native-production or physical assembly claim.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:27547
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: UniProt cross-references the overall reaction to CHEBI:17579 and CHEBI:27547.
+        The inspected ChEBI255 cache identifies neutral beta-carotene as OENHQHLEOONYIE-JLTXGRSLSA-N
+        and stereospecified neutral zeaxanthin as JKQXZKUSFCKOGQ-QAYBQHTQSA-N, the
+        exact owner. This is annotation-to-owner correspondence, not independent assay
+        stereochemistry; no meso-zeaxanthin, other geometrical isomer, lutein, astaxanthin
+        or glycoside transfer.
+curation_history:
+- timestamp: '2026-10-09T19:31:43Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added B3SGL0, C3VEQ1 and O49814 canonical-reference database examples:
+    three BIOSYNTHESIS graphs, nine cited edges, three unnumbered proposed pathway
+    entries and three verbatim UniProt snippets. Preserved Gentiana R73K reference
+    conflict, Oncidium title-versus-source-qualifier distinction, and pepper historical
+    N-terminal difference, CM334 provenance and native hydroxylase1 versus UniProt
+    CA2 label disagreement. No primary assay, construct equality, native-production,
+    BGC, producer, occurrence, taxonomy facet or assembly upgrade. Existing seven
+    components and all prior biology and history retained; SEEDED unchanged, no full-record
+    sign-off.'
+  llm_assisted: true
