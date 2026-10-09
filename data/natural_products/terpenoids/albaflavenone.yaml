@@ -335,6 +335,22 @@ biosynthetic_pathway:
       to albaflavenone.
   substrate: CHEBI:51458
   product: CHEBI:51460
+- enzyme_label: CYP170B1 (S. albus; sequence ungrounded)
+  substrate: CHEBI:51458
+  product: CHEBI:51460
+  proposed: false
+  notes: Reported S. albus ATCC 2396 protein; exact accession, construct sequence
+    and strain alias unresolved. This alternative assay is not a continuation of the
+    S. coelicolor steps. No new stereochemical determination, native-partner assignment
+    or producer upgrade.
+  evidence:
+  - reference: DOI:10.1111/j.1742-4658.2011.08447.x
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: CYP170B1 can catalyze the conversion of epi-isozizaene to albaflavenone
+    retrieved_on: '2026-10-09'
+    notes: Results and Methods read. GC/MS comparison with an authentic standard;
+      recombinant C-terminally tagged enzyme with E. coli redox partners. Figure pixels
+      and SI uninspected; later HTTP403.
 causal_graphs:
 - graph_id: albaflavenone-sco5222-sco5223-biosynthesis
   scope: BIOSYNTHESIS
@@ -411,6 +427,33 @@ causal_graphs:
         SCO5223 gene product, maps to EMBL AL939123 protein CAB94608.1, and annotates
         the composite left-to-right RHEA:32440 reaction for CYP170A1 oxidation of
         (+)-epi-isozizaene to albaflavenone.
+- graph_id: albaflavenone-cyp170b1-recombinant-assay
+  scope: BIOSYNTHESIS
+  description: Source-named CYP170B1 assay; no defensible sequence accession selected.
+    Q82IV2 and Q9K498 denote other organisms, not this protein.
+  nodes:
+  - node_id: cyp170b1
+    label: CYP170B1 (S. albus; sequence ungrounded)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: albaflavenone
+    label: albaflavenone
+    node_type: COMPOUND
+    identifier: CHEBI:51460
+    grounding_status: GROUNDED
+  edges:
+  - subject: cyp170b1
+    predicate: catalyzes_formation_from_epi_isozizaene_in_vitro
+    object: albaflavenone
+    evidence:
+    - reference: DOI:10.1111/j.1742-4658.2011.08447.x
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: CYP170B1 can catalyze the conversion of epi-isozizaene to albaflavenone
+      retrieved_on: '2026-10-09'
+      notes: Results and Methods read. GC/MS comparison with an authentic standard;
+        recombinant C-terminally tagged enzyme with E. coli redox partners. Figure
+        pixels and SI uninspected; later HTTP403.
+    notes: Functional assignment is experimental; sequence grounding is unresolved.
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
   curator: seed_from_sources
@@ -427,4 +470,12 @@ curation_history:
     biosynthesis; grounded the Streptomyces coelicolor Cyc1 and CYP170A1 enzymes to
     UniProtKB:Q9K499 and UniProtKB:Q9K498 via SCO5222/SCO5223; and cited the experimentally
     characterized RHEA:25992 and RHEA:32440 reactions.
+  llm_assisted: true
+- timestamp: '2026-10-09T04:47:53Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add the reported S. albus CYP170B1 albaflavenone assay as one pathway entry
+    and one BIOSYNTHESIS edge with a DOI and verbatim snippet. Keep the source-named
+    protein UNGROUNDED; do not substitute Q82IV2 or Q9K498, infer an exact construct,
+    equate strains or upgrade native production, chemistry, BGC grades or SEEDED status.
   llm_assisted: true
