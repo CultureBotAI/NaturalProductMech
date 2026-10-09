@@ -1,0 +1,147 @@
+record_id: CHEBI:43572
+standard_inchi_key: BEJNERDRQOWKJM-UHFFFAOYSA-N
+graph:
+  graph_id: kojic-acid-pir-yhhw-database-inhibition
+  scope: BIOACTIVITY
+  description: Database-qualified kojic-acid inhibition of in-vitro quercetinase activity
+    annotated for human PIR and E. coli YhhW. These are two separate protein references,
+    not a cross-species complex or an assertion that they were assayed together. Four
+    native CDS translations ground reference identity, not historical assay stocks
+    or full expression constructs. No direct binding, inhibition constant or mode,
+    physiological function, NF-kappa-B response, cellular phenotype, antimicrobial
+    activity or new producer/BGC claim is inferred.
+  nodes:
+  - node_id: kojic_acid
+    label: kojic acid
+    node_type: COMPOUND
+    identifier: CHEBI:43572
+    grounding_status: GROUNDED
+  - node_id: human_pir
+    label: Human pirin (PIR)
+    node_type: ENZYME
+    identifier: UniProtKB:O00625
+    grounding_status: GROUNDED
+  - node_id: ecoli_yhhw
+    label: E. coli K12 quercetinase YhhW
+    node_type: ENZYME
+    identifier: UniProtKB:P46852
+    grounding_status: GROUNDED
+  edges:
+  - subject: kojic_acid
+    predicate: is_database_reported_inhibitor_of
+    object: human_pir
+    notes: UniProt reports inhibition by parent kojic acid of the annotated in-vitro
+      quercetinase activity. The compound is the neutral achiral owner CHEBI:43572,
+      not an extract, derivative or other inhibitor listed alongside it. No measured
+      Ki/IC50, direct binding, chelation mechanism or downstream cellular effect is
+      added.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/O00625
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed PIR entry version 193, sequence version 1, Homo sapiens taxon
+        9606, 290 aa. Function is annotated as in-vitro quercetin 2,3-dioxygenase
+        activity; activity regulation names kojic acid and cites PMID:15951572/DOI:10.1074/jbc.m501034200.
+        The primary paper was tool-inaccessible and no alternate text, figures or
+        supplements were retrieved. This is an adopted database annotation, not an
+        independently inspected functional assay. CAG46621 conflicts V24D/K162R and
+        natural variant V228A are not substituted for the canonical reference. PIR
+        transcriptional/NF-kappa-B roles do not establish a kojic-acid cellular mechanism.
+      snippet: Inhibited by kojic acid
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAA69195.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: 'Independent complete 290-aa human reference, taxon 9606, HeLa-derived
+        pDR-Pirin #17, lambda DR2 library. GenPept and coded_by Y07868.1:231..1103
+        agree with the audited CDS and UniProt O00625. The deposited clone is not
+        a verified 2005 assay stock or full tagged construct.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/Y07868.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete CDS 231..1103 in the 1318-nt mRNA, codon_start 1/default
+        translation table 1, independently translates to 290 aa identical to the annotation,
+        GenPept CAA69195.1 and UniProt O00625. HeLa clone/library metadata establishes
+        native-reference provenance, not a kojic-acid cell assay, historical preparation
+        or functional measurement.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAA69194.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: 'Independent complete 290-aa human reference, taxon 9606, HeLa-derived
+        pDR-Pirin #1, lambda DR2 library. GenPept and coded_by Y07867.1:205..1077
+        agree with the audited CDS and UniProt O00625. The deposited clone is not
+        a verified 2005 assay stock or full tagged construct.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/Y07867.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete CDS 205..1077 in the 1292-nt mRNA, codon_start 1/default
+        translation table 1, independently translates to 290 aa identical to the annotation,
+        GenPept CAA69194.1 and UniProt O00625. HeLa clone/library metadata establishes
+        native-reference provenance, not a kojic-acid cell assay, historical preparation
+        or functional measurement.
+  - subject: kojic_acid
+    predicate: is_database_reported_inhibitor_of
+    object: ecoli_yhhw
+    notes: UniProt reports inhibition by parent kojic acid of the annotated in-vitro
+      quercetinase activity. The compound is the neutral achiral owner CHEBI:43572,
+      not an extract, derivative or other inhibitor listed alongside it. No measured
+      Ki/IC50, direct binding, chelation mechanism or downstream cellular effect is
+      added.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P46852
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed YhhW entry version 158, sequence version 1, 231 aa, Escherichia
+        coli K12 taxon 83333. In-vitro quercetinase activity and kojic-acid inhibition
+        are annotated with PMID:15951572/DOI:10.1074/jbc.m501034200. The primary paper
+        remained tool-inaccessible; no alternate full text, figures or supplements
+        were retrieved. Its tentative physiological quercetin-protection hypothesis
+        is not a demonstrated kojic-acid mechanism or an antimicrobial-resistance
+        phenotype. The cited 1TQ5 cadmium structure is not adopted as a kojic-acid
+        complex; no structural binding claim is made.
+      snippet: Inhibited by kojic acid
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAC76464.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Independent complete 231-aa E. coli K-12 MG1655 reference, taxon 511145,
+        yhhW/b3439. GenPept and coded_by complement(U00096.3:3578950..3579645) agree
+        with the audited CDS and UniProt P46852. The deposit retains its substrain
+        taxonomy; it is not relabeled as the generic K12 taxon or identified as the
+        historical assay stock.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/U00096.3
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete CDS complement(3578950..3579645), read from its bounded
+        696-nt genome interval, codon_start 1/table 11, independently translates to
+        231 aa identical to its annotation, GenPept AAC76464.1 and UniProt P46852.
+        Protein-sequence correspondence does not establish nucleotide identity between
+        MG1655 and W3110, whole-genome equivalence, the 2005 assay substrain or a
+        complete engineered expression construct.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAE77854.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Independent complete 231-aa E. coli K-12 W3110 reference, taxon 316407,
+        yhhW. GenPept and coded_by AP009048.1:4060770..4061465 agree with the audited
+        CDS and UniProt P46852. The deposit retains its substrain taxonomy; it is
+        not relabeled as the generic K12 taxon or identified as the historical assay
+        stock.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AP009048.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete CDS 4060770..4061465, read from its bounded 696-nt genome
+        interval, codon_start 1/table 11, independently translates to 231 aa identical
+        to its annotation, GenPept BAE77854.1 and UniProt P46852. Protein-sequence
+        correspondence does not establish nucleotide identity between MG1655 and W3110,
+        whole-genome equivalence, the 2005 assay substrain or a complete engineered
+        expression construct.
+curation_history:
+- timestamp: '2026-10-09T12:27:43Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Created a new exact-owner CHEBI:43572/BEJNERDRQOWKJM-UHFFFAOYSA-N BIOACTIVITY
+    component with PIR/O00625 and YhhW/P46852 database-reported inhibition edges.
+    Each edge carries an exact UniProt snippet plus separately audited native protein/CDS
+    identity evidence. Source clone and substrain distinctions and unverified historical
+    assay-stock/construct limits are retained. No primary experiment, quantitative
+    potency, direct binding, cellular phenotype or producer role is inferred. No old
+    graph was moved or changed.
+  llm_assisted: true
