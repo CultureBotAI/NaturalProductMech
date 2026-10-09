@@ -388,6 +388,295 @@ causal_graphs:
       notes: RHEA:35555 is the pulcherriminic acid synthase master reaction; left-to-right
         RHEA:35556 oxidizes cyclo(L-leucyl-L-leucyl) to CHEBI:77663, the anion of
         this record's neutral CHEBI:71599.
+- graph_id: pulcherriminic-acid-klactis-database-regulation-secretion
+  scope: BIOSYNTHESIS
+  description: Database-qualified K. lactis PUL gene regulation and pulcherriminic-acid
+    secretion. PUL4 regulates genes encoding the PUL1/PUL2/PUL3 reference proteins;
+    PUL3 is annotated as required for acid secretion. Gene-expression predicates do
+    not assert protein-protein interactions. All four nodes denote reference proteins,
+    not verified historical assay stocks. No ordered yeast reaction, bacterial leucyl-tRNA/Rhea
+    transfer, direct promoter binding, iron-complex uptake, antimicrobial effect or
+    producer/BGC upgrade is asserted. The existing bacterial pathway is separate and
+    unchanged.
+  nodes:
+  - node_id: pul1
+    label: PUL1 (KLLA0_C19184g; K. lactis reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q6CSN3
+    grounding_status: GROUNDED
+  - node_id: pul2
+    label: PUL2 (KLLA0_C19206g; K. lactis reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q6CSN2
+    grounding_status: GROUNDED
+  - node_id: pul3
+    label: PUL3 (KLLA0_C19250g; K. lactis reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q6CSN0
+    grounding_status: GROUNDED
+  - node_id: pul4
+    label: PUL4 (KLLA0_C19228g; K. lactis reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q6CSN1
+    grounding_status: GROUNDED
+  - node_id: pulcherriminic_acid
+    label: pulcherriminic acid
+    node_type: COMPOUND
+    identifier: CHEBI:71599
+    grounding_status: GROUNDED
+  edges:
+  - subject: pul4
+    predicate: regulates expression of gene encoding
+    object: pul1
+    notes: Database-reported regulation of the named PUL gene. The object is its reference
+      protein, not a gene identifier or a physical interaction partner. No positive/negative
+      direction, direct promoter binding, binding site, protein abundance measurement
+      or specific transcriptional mechanism is asserted.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q6CSN1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: 'Reviewed PUL4 entry version 104, sequence version 1. FUNCTION assigns
+        regulation of PUL1, PUL2 and PUL3 expression to ECO:0000269/PMID:30297402.
+        This remains DATABASE_ASSERTION: DOI:10.1073/pnas.1806268115 was not independently
+        inspected. Predicted nuclear localization/Zn2-C6 features and automated GO
+        terms are not direct promoter-binding evidence.'
+      snippet: Regulates the expression of the PUL cluster genes PUL1, PUL2 and PUL3
+    - reference: https://www.uniprot.org/uniprotkb/Q6CSN1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry version 104, sequence version 1; 591 aa; PUL4, KLLA0_C19228g.
+        K. lactis reference strain ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 /
+        NRRL Y-1140 / WM37, taxon 284590. Reference identity, not experimental-stock
+        equality. PUL1/PUL2 are included as products of regulated genes, not verified
+        enzyme reactions. Their reaction annotations cite PMID:38140959, but the inspected
+        2024 methods use Metschnikowia APC1.2 constructs, not an independent K. lactis
+        experiment.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAH01909.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 591-aa deposited sequence equals Q6CSN1 and XP_453058.1.
+        Native CDS CR382123.1:1713787..1715562, locus KLLA0_C19228g, independently
+        translates to this sequence with codon_start 1/default table 1. Deposits name
+        NRRL Y-1140, chromosome C, BioSample SAMEA3138170 and species taxon 28985,
+        distinguished from UniProt strain taxon 284590. The comparison grounds the
+        reference only, not function, promoter, historical stock or expression construct.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/XM_453058.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: 'PROVISIONAL RefSeq mRNA, incomplete at both ends despite a complete
+        precise CDS: XM_453058.1:1..1776. Its CDS is nucleotide-identical to CR382123.1:1713787..1715562
+        and independently translates to XP_453058.1/Q6CSN1 (591 aa). This is not full-transcript
+        or whole-genome equality.'
+    - reference: https://www.uniprot.org/uniprotkb/Q6CSN3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry version 63, sequence version 1; 480 aa; PUL1, KLLA0_C19184g.
+        K. lactis reference strain ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 /
+        NRRL Y-1140 / WM37, taxon 284590. Reference identity, not experimental-stock
+        equality. PUL1/PUL2 are included as products of regulated genes, not verified
+        enzyme reactions. Their reaction annotations cite PMID:38140959, but the inspected
+        2024 methods use Metschnikowia APC1.2 constructs, not an independent K. lactis
+        experiment.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAH01907.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 480-aa deposited sequence equals Q6CSN3 and XP_453056.1.
+        Native CDS CR382123.1:1709494..1710936, locus KLLA0_C19184g, independently
+        translates to this sequence with codon_start 1/default table 1. Deposits name
+        NRRL Y-1140, chromosome C, BioSample SAMEA3138170 and species taxon 28985,
+        distinguished from UniProt strain taxon 284590. The comparison grounds the
+        reference only, not function, promoter, historical stock or expression construct.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/XM_453056.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: 'PROVISIONAL RefSeq mRNA, incomplete at both ends despite a complete
+        precise CDS: XM_453056.1:1..1443. Its CDS is nucleotide-identical to CR382123.1:1709494..1710936
+        and independently translates to XP_453056.1/Q6CSN3 (480 aa). This is not full-transcript
+        or whole-genome equality.'
+  - subject: pul4
+    predicate: regulates expression of gene encoding
+    object: pul2
+    notes: Database-reported regulation of the named PUL gene. The object is its reference
+      protein, not a gene identifier or a physical interaction partner. No positive/negative
+      direction, direct promoter binding, binding site, protein abundance measurement
+      or specific transcriptional mechanism is asserted.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q6CSN1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: 'Reviewed PUL4 entry version 104, sequence version 1. FUNCTION assigns
+        regulation of PUL1, PUL2 and PUL3 expression to ECO:0000269/PMID:30297402.
+        This remains DATABASE_ASSERTION: DOI:10.1073/pnas.1806268115 was not independently
+        inspected. Predicted nuclear localization/Zn2-C6 features and automated GO
+        terms are not direct promoter-binding evidence.'
+    - reference: https://www.uniprot.org/uniprotkb/Q6CSN1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry version 104, sequence version 1; 591 aa; PUL4, KLLA0_C19228g.
+        K. lactis reference strain ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 /
+        NRRL Y-1140 / WM37, taxon 284590. Reference identity, not experimental-stock
+        equality. PUL1/PUL2 are included as products of regulated genes, not verified
+        enzyme reactions. Their reaction annotations cite PMID:38140959, but the inspected
+        2024 methods use Metschnikowia APC1.2 constructs, not an independent K. lactis
+        experiment.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAH01909.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 591-aa deposited sequence equals Q6CSN1 and XP_453058.1.
+        Native CDS CR382123.1:1713787..1715562, locus KLLA0_C19228g, independently
+        translates to this sequence with codon_start 1/default table 1. Deposits name
+        NRRL Y-1140, chromosome C, BioSample SAMEA3138170 and species taxon 28985,
+        distinguished from UniProt strain taxon 284590. The comparison grounds the
+        reference only, not function, promoter, historical stock or expression construct.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/XM_453058.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: 'PROVISIONAL RefSeq mRNA, incomplete at both ends despite a complete
+        precise CDS: XM_453058.1:1..1776. Its CDS is nucleotide-identical to CR382123.1:1713787..1715562
+        and independently translates to XP_453058.1/Q6CSN1 (591 aa). This is not full-transcript
+        or whole-genome equality.'
+    - reference: https://www.uniprot.org/uniprotkb/Q6CSN2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry version 117, sequence version 1; 511 aa; PUL2, KLLA0_C19206g.
+        K. lactis reference strain ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 /
+        NRRL Y-1140 / WM37, taxon 284590. Reference identity, not experimental-stock
+        equality. PUL1/PUL2 are included as products of regulated genes, not verified
+        enzyme reactions. Their reaction annotations cite PMID:38140959, but the inspected
+        2024 methods use Metschnikowia APC1.2 constructs, not an independent K. lactis
+        experiment.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAH01908.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 511-aa deposited sequence equals Q6CSN2 and XP_453057.1.
+        Native CDS CR382123.1:1711813..1713348, locus KLLA0_C19206g, independently
+        translates to this sequence with codon_start 1/default table 1. Deposits name
+        NRRL Y-1140, chromosome C, BioSample SAMEA3138170 and species taxon 28985,
+        distinguished from UniProt strain taxon 284590. The comparison grounds the
+        reference only, not function, promoter, historical stock or expression construct.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/XM_453057.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: 'PROVISIONAL RefSeq mRNA, incomplete at both ends despite a complete
+        precise CDS: XM_453057.1:1..1536. Its CDS is nucleotide-identical to CR382123.1:1711813..1713348
+        and independently translates to XP_453057.1/Q6CSN2 (511 aa). This is not full-transcript
+        or whole-genome equality.'
+  - subject: pul4
+    predicate: regulates expression of gene encoding
+    object: pul3
+    notes: Database-reported regulation of the named PUL gene. The object is its reference
+      protein, not a gene identifier or a physical interaction partner. No positive/negative
+      direction, direct promoter binding, binding site, protein abundance measurement
+      or specific transcriptional mechanism is asserted.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q6CSN1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: 'Reviewed PUL4 entry version 104, sequence version 1. FUNCTION assigns
+        regulation of PUL1, PUL2 and PUL3 expression to ECO:0000269/PMID:30297402.
+        This remains DATABASE_ASSERTION: DOI:10.1073/pnas.1806268115 was not independently
+        inspected. Predicted nuclear localization/Zn2-C6 features and automated GO
+        terms are not direct promoter-binding evidence.'
+    - reference: https://www.uniprot.org/uniprotkb/Q6CSN1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry version 104, sequence version 1; 591 aa; PUL4, KLLA0_C19228g.
+        K. lactis reference strain ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 /
+        NRRL Y-1140 / WM37, taxon 284590. Reference identity, not experimental-stock
+        equality. PUL1/PUL2 are included as products of regulated genes, not verified
+        enzyme reactions. Their reaction annotations cite PMID:38140959, but the inspected
+        2024 methods use Metschnikowia APC1.2 constructs, not an independent K. lactis
+        experiment.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAH01909.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 591-aa deposited sequence equals Q6CSN1 and XP_453058.1.
+        Native CDS CR382123.1:1713787..1715562, locus KLLA0_C19228g, independently
+        translates to this sequence with codon_start 1/default table 1. Deposits name
+        NRRL Y-1140, chromosome C, BioSample SAMEA3138170 and species taxon 28985,
+        distinguished from UniProt strain taxon 284590. The comparison grounds the
+        reference only, not function, promoter, historical stock or expression construct.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/XM_453058.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: 'PROVISIONAL RefSeq mRNA, incomplete at both ends despite a complete
+        precise CDS: XM_453058.1:1..1776. Its CDS is nucleotide-identical to CR382123.1:1713787..1715562
+        and independently translates to XP_453058.1/Q6CSN1 (591 aa). This is not full-transcript
+        or whole-genome equality.'
+    - reference: https://www.uniprot.org/uniprotkb/Q6CSN0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry version 91, sequence version 1; 460 aa; PUL3, KLLA0_C19250g.
+        K. lactis reference strain ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 /
+        NRRL Y-1140 / WM37, taxon 284590. Reference identity, not experimental-stock
+        equality. PUL1/PUL2 are included as products of regulated genes, not verified
+        enzyme reactions. Their reaction annotations cite PMID:38140959, but the inspected
+        2024 methods use Metschnikowia APC1.2 constructs, not an independent K. lactis
+        experiment.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAH01910.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 460-aa deposited sequence equals Q6CSN0 and XP_453059.1.
+        Native CDS CR382123.1:1716088..1717470, locus KLLA0_C19250g, independently
+        translates to this sequence with codon_start 1/default table 1. Deposits name
+        NRRL Y-1140, chromosome C, BioSample SAMEA3138170 and species taxon 28985,
+        distinguished from UniProt strain taxon 284590. The comparison grounds the
+        reference only, not function, promoter, historical stock or expression construct.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/XM_453059.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: 'PROVISIONAL RefSeq mRNA, incomplete at both ends despite a complete
+        precise CDS: XM_453059.1:1..1383. Its CDS is nucleotide-identical to CR382123.1:1716088..1717470
+        and independently translates to XP_453059.1/Q6CSN0 (460 aa). This is not full-transcript
+        or whole-genome equality.'
+  - subject: pul3
+    predicate: is required for secretion of
+    object: pulcherriminic_acid
+    notes: Database requirement statement, not a purified-protein transport assay
+      or a claim about substrate specificity, transport stoichiometry, protonation
+      state or membrane topology. The acid name is represented by this neutral parent
+      owner; the transported ionic species is not established. Separate iron-complex
+      uptake is deliberately not transferred to the unresolved two-Fe pulcherrimin
+      record.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q6CSN0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed PUL3 entry version 91, sequence version 1. FUNCTION explicitly
+        distinguishes pulcherriminic-acid secretion from iron uptake through the pulcherrimin-iron
+        complex; only the former is adopted. Source annotations cite ECO:0000269/PMID:30297402
+        and PMID:40719541, not independently inspected primary results here. DOI:10.1073/pnas.1806268115
+        and DOI:10.1093/femsyr/foaf039 remain access-held. The disruption annotation
+        reports continued pigment production with impaired growth; no secretion rate,
+        loss-of-production phenotype or antimicrobial claim is inferred.
+      snippet: Required for both the secretion of pulcherriminic acid
+    - reference: https://www.uniprot.org/uniprotkb/Q6CSN0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry version 91, sequence version 1; 460 aa; PUL3, KLLA0_C19250g.
+        K. lactis reference strain ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 /
+        NRRL Y-1140 / WM37, taxon 284590. Reference identity, not experimental-stock
+        equality. PUL1/PUL2 are included as products of regulated genes, not verified
+        enzyme reactions. Their reaction annotations cite PMID:38140959, but the inspected
+        2024 methods use Metschnikowia APC1.2 constructs, not an independent K. lactis
+        experiment.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAH01910.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 460-aa deposited sequence equals Q6CSN0 and XP_453059.1.
+        Native CDS CR382123.1:1716088..1717470, locus KLLA0_C19250g, independently
+        translates to this sequence with codon_start 1/default table 1. Deposits name
+        NRRL Y-1140, chromosome C, BioSample SAMEA3138170 and species taxon 28985,
+        distinguished from UniProt strain taxon 284590. The comparison grounds the
+        reference only, not function, promoter, historical stock or expression construct.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/XM_453059.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: 'PROVISIONAL RefSeq mRNA, incomplete at both ends despite a complete
+        precise CDS: XM_453059.1:1..1383. Its CDS is nucleotide-identical to CR382123.1:1716088..1717470
+        and independently translates to XP_453059.1/Q6CSN0 (460 aa). This is not full-transcript
+        or whole-genome equality.'
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -403,4 +692,18 @@ curation_history:
   changes: Added the Bacillus subtilis 168 YvmC/CypX BIOSYNTHESIS pathway and causal
     graph for pulcherriminic acid; grounded YvmC to UniProtKB:O34351 with RHEA:46452
     and CypX to UniProtKB:O34926 with RHEA:35555.
+  llm_assisted: true
+- timestamp: '2026-10-09T15:13:15Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added a database-qualified K. lactis BIOSYNTHESIS graph with four reference
+    proteins: PUL4/Q6CSN1 regulates expression of genes encoding PUL1/Q6CSN3, PUL2/Q6CSN2
+    and PUL3/Q6CSN0; PUL3 is database-reported as required for pulcherriminic-acid
+    secretion. Four edges carry stable UniProt/NCBI references; short verbatim database
+    snippets support regulation and secretion. Reference CDS/protein equality is CURATOR_INFERENCE,
+    not independently inspected primary functional evidence or assay-stock identity.
+    No exact yeast reaction, ordered step, direct promoter binding, iron-complex uptake,
+    transported protonation state, antimicrobial claim or producer/BGC upgrade. Existing
+    bacterial pathway and graph, source fields, taxonomy, origin and classifications
+    are unchanged. Record remains SEEDED, not full-record sign-off.'
   llm_assisted: true
