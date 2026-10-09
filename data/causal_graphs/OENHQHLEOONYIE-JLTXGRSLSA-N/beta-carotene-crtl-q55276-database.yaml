@@ -1,0 +1,134 @@
+record_id: CHEBI:17579
+standard_inchi_key: OENHQHLEOONYIE-JLTXGRSLSA-N
+graph:
+  graph_id: beta-carotene-crtl-q55276-database
+  scope: BIOSYNTHESIS
+  description: 'CrtL (Synechococcus PCC 7942 reference): qualified terminal-cyclization
+    annotation. Separate organism-specific database example of terminal gamma-carotene
+    cyclization, not the uncultured-organism BGC0000646/FJ151553.1 enzyme. These alternative
+    examples are not a shared pathway or physical assembly. No native-production,
+    occurrence, producer, BGC, taxonomy or origin upgrade. The earlier lycopene step
+    remains excluded because its cached chemical representations require separate
+    review.'
+  nodes:
+  - node_id: cyclase
+    label: CrtL (Synechococcus PCC 7942 reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q55276
+    grounding_status: GROUNDED
+  - node_id: terminal_cyclization
+    label: Database-proposed terminal carotene cyclization
+    node_type: PROCESS
+    identifier: RHEA:32239
+    grounding_status: GROUNDED
+  - node_id: gamma_carotene
+    label: gamma-carotene
+    node_type: PRECURSOR
+    identifier: CHEBI:27740
+    grounding_status: GROUNDED
+  - node_id: beta_carotene
+    label: beta-carotene
+    node_type: COMPOUND
+    identifier: CHEBI:17579
+    grounding_status: GROUNDED
+  edges:
+  - subject: cyclase
+    predicate: is_database_proposed_catalyst_of
+    object: terminal_cyclization
+    notes: Separate organism-specific database example of terminal gamma-carotene
+      cyclization, not the uncultured-organism BGC0000646/FJ151553.1 enzyme. These
+      alternative examples are not a shared pathway or physical assembly. No native-production,
+      occurrence, producer, BGC, taxonomy or origin upgrade. The earlier lycopene
+      step remains excluded because its cached chemical representations require separate
+      review.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q55276
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry129/sequence1, 411aa. Protein existence1. Exact
+        terminal reaction ECO:0000269/PMID:7919981 and PMID:8344419 in UniProt. No
+        independent cofactor, herbicide, neurosporene, secretion or mature-chain claim.
+        RHEA:32239 cross-references CHEBI:27740 and CHEBI:17579. The primary papers
+        were not independently inspected; this remains DATABASE_ASSERTION, not an
+        independently verified assay, construct or stereoselectivity measurement.
+        Rhea was read through UniProt, not independently retrieved.
+      snippet: gamma-carotene = all-trans-beta-carotene
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAA52677.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: Historical lcy CDS X74599.1:121..1356 is1236nt including stop; GTG/table11
+        translation matches CAA52677.1 and canonical Q55276, all411aa. Native source
+        is Synechococcus PCC7942/tax1140. This is sequence-reference correspondence,
+        not independently inspected assay-construct or historical-stock identity.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABB58092.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: Later complement(CP000100.1:2138585..2139820), locusSynpcc7942_2062 without
+        a gene qualifier, is nucleotide-identical to the historical1236nt CDS. GTG/table11
+        translation matches ABB58092.1 and canonical411aa. Native PCC7942/tax1140
+        is consistent; BioSampleSAMN02598254 belongs only to the later genome. Native
+        SignalP prediction1..18 is not proof of secretion or a mature chain. Predicted
+        NAD binding and similarity FAD annotation are not independently adopted. WP_011378296.1/NC_007604.1
+        were not inspected.
+    - &id001
+      reference: https://www.ebi.ac.uk/chebi/CHEBI:27740
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: 'Inspected ChEBI255 gamma-carotene: neutral C40H56, Standard InChIKeyHRQKOYFGHJYEFS-BXOLYSJBSA-N.
+        Independent RDKit2026.03.5 parsing of cached SMILES and InChI reproduces the
+        full key. This is exact database chemical-identity correspondence, not an
+        independent experimental structure or stereoselectivity measurement.'
+    - &id002
+      reference: https://www.ebi.ac.uk/chebi/CHEBI:17579
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: 'Inspected ChEBI255 beta-carotene: neutral C40H56, Standard InChIKeyOENHQHLEOONYIE-JLTXGRSLSA-N.
+        Independent RDKit2026.03.5 parsing of cached SMILES and InChI reproduces the
+        full key. The existing MIBiG-derived owner SMILES and InChI independently
+        give this same key. This is exact database chemical-identity correspondence,
+        not an independent experimental structure or stereoselectivity measurement.'
+  - subject: gamma_carotene
+    predicate: is_database_proposed_substrate_of
+    object: terminal_cyclization
+    notes: Principal carotenoid substrate of the exact annotated terminal reaction,
+      not generic RHEA:55620 or the overall two-end lycopene reaction.
+    evidence:
+    - &id003
+      reference: https://www.uniprot.org/uniprotkb/Q55276
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry129/sequence1, 411aa. Protein existence1. Exact
+        terminal reaction ECO:0000269/PMID:7919981 and PMID:8344419 in UniProt. No
+        independent cofactor, herbicide, neurosporene, secretion or mature-chain claim.
+        RHEA:32239 cross-references CHEBI:27740 and CHEBI:17579. The primary papers
+        were not independently inspected; this remains DATABASE_ASSERTION, not an
+        independently verified assay, construct or stereoselectivity measurement.
+        Rhea was read through UniProt, not independently retrieved.
+    - *id001
+    - *id002
+  - subject: terminal_cyclization
+    predicate: has_database_proposed_product
+    object: beta_carotene
+    notes: Exact beta-carotene owner, not the final metabolite in every source organism
+      or an independently measured stereoselective product.
+    evidence:
+    - *id003
+    - *id001
+    - *id002
+curation_history:
+- timestamp: '2026-10-09T20:52:12Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added four qualified terminal-cyclase reference examples Q9HNE5, Q01331,
+    Q9P854 and Q55276: four BIOSYNTHESIS graphs, twelve cited edges, four short verbatim
+    UniProt reaction snippets and four unnumbered proposed pathway entries. Retained
+    NRC-1 canonical-versus-truncated initiation provenance, Eho10 catalogue/native
+    taxonomic scope, CarRA A436/G436 sequence conflict and CrtL deposit-specific gene/locus
+    and prediction limits. Functional evidence remains DATABASE_ASSERTION; no independently
+    inspected primary assay, construct equality or BGC0000646 assignment. Losslessly
+    migrated all three existing graphs to exact-owner components to retain complete
+    evidence within64KiB. Preserved existing pathway entries, seeder fields, history,
+    discussions and SEEDED status. No producer, occurrence, BGC, origin, taxonomy,
+    assembly or bioactivity upgrade; no full-record scientific sign-off. Lycopene
+    chemical-representation hold and all prior access holds remain. Component beta-carotene-crtl-q55276-database.'
+  llm_assisted: true

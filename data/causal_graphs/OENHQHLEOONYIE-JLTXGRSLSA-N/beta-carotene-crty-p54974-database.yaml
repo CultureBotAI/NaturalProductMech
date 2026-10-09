@@ -1,0 +1,168 @@
+record_id: CHEBI:17579
+standard_inchi_key: OENHQHLEOONYIE-JLTXGRSLSA-N
+graph:
+  graph_id: beta-carotene-crty-p54974-database
+  scope: BIOSYNTHESIS
+  description: Qualified Paracoccus sp. N81106 reference CrtY terminal-cyclization
+    annotation. Separate organism-specific database example of terminal gamma-carotene
+    cyclization, not the uncultured-organism BGC0000646/FJ151553.1 enzyme. These alternatives
+    are not a multi-organism pathway or physical assembly. No native-producer, occurrence
+    or BGC grade upgrade. The earlier lycopene step is not adopted; its cached chemical
+    representations require separate review.
+  nodes:
+  - node_id: crty
+    label: CrtY (Paracoccus sp. N81106 reference)
+    node_type: ENZYME
+    identifier: UniProtKB:P54974
+    grounding_status: GROUNDED
+  - node_id: terminal_cyclization
+    label: Database-proposed terminal carotene cyclization
+    node_type: PROCESS
+    identifier: RHEA:32239
+    grounding_status: GROUNDED
+  - node_id: gamma_carotene
+    label: gamma-carotene
+    node_type: PRECURSOR
+    identifier: CHEBI:27740
+    grounding_status: GROUNDED
+  - node_id: beta_carotene
+    label: beta-carotene
+    node_type: COMPOUND
+    identifier: CHEBI:17579
+    grounding_status: GROUNDED
+  edges:
+  - subject: crty
+    predicate: is_database_proposed_catalyst_of
+    object: terminal_cyclization
+    notes: Separate organism-specific database example of terminal gamma-carotene
+      cyclization, not the uncultured-organism BGC0000646/FJ151553.1 enzyme. These
+      alternatives are not a multi-organism pathway or physical assembly. No native-producer,
+      occurrence or BGC grade upgrade. The earlier lycopene step is not adopted; its
+      cached chemical representations require separate review. Both native deposits
+      name Paracoccus sp. N81106/taxon81397 and give MBIC01143 as a distribution alias,
+      with former name Agrobacterium aurantiacum. Their complete CrtY CDSs are nucleotide-identical.
+      The old pAK32 cloning-vector note does not establish an inspected assay construct.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P54974
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry61/sequence1, 386aa, protein existence1. The exact
+        terminal reaction is ECO0000250 by similarity to P21687; literature codes
+        on the broader FUNCTION do not promote this step to a direct assay. RHEA32239
+        names gamma-carotene and all-trans-beta-carotene (CHEBI27740/CHEBI17579).
+        The cited primary paper was not independently accessible; this remains DATABASE_ASSERTION,
+        not an inspected assay or experimentally verified construct. Rhea identifiers
+        were inspected through UniProt, not a fresh Rhea retrieval. No cofactor, mutant,
+        flux or quantitative stereoselectivity claim is added.
+      snippet: gamma-carotene = all-trans-beta-carotene
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAA09593.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: Complete crtY reference CDS D58420.2:1349..2509, 1161nt including stop,
+        codon_start1/table11, independently translates to native BAA09593.1 and canonical
+        UniProtP54974, all386aa. GTG initiates as methionine under table11. Both native
+        deposits name Paracoccus sp. N81106/taxon81397 and give MBIC01143 as a distribution
+        alias, with former name Agrobacterium aurantiacum. Their complete CrtY CDSs
+        are nucleotide-identical. The old pAK32 cloning-vector note does not establish
+        an inspected assay construct. Reference equality is not historical assay-stock/construct
+        identity or functional proof. Clipped neighboring CDS annotations in the bounded
+        slice were not adopted.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAE47467.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: Complete crtY reference CDS AB206672.1:2954..4114, 1161nt including stop,
+        codon_start1/table11, independently translates to native BAE47467.1 and canonical
+        UniProtP54974, all386aa. GTG initiates as methionine under table11. Both native
+        deposits name Paracoccus sp. N81106/taxon81397 and give MBIC01143 as a distribution
+        alias, with former name Agrobacterium aurantiacum. Their complete CrtY CDSs
+        are nucleotide-identical. The old pAK32 cloning-vector note does not establish
+        an inspected assay construct. Reference equality is not historical assay-stock/construct
+        identity or functional proof. Clipped neighboring CDS annotations in the bounded
+        slice were not adopted.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:27740
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: 'Inspected ChEBI255 gamma-carotene: neutral C40H56, Standard InChIKeyHRQKOYFGHJYEFS-BXOLYSJBSA-N.
+        Independent RDKit2026.03.5 parsing of cached SMILES and InChI reproduces the
+        full key. This is exact database chemical-identity correspondence, not an
+        independent experimental structure or stereoselectivity measurement.'
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:17579
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: 'Inspected ChEBI255 beta-carotene: neutral C40H56, Standard InChIKeyOENHQHLEOONYIE-JLTXGRSLSA-N.
+        Independent RDKit2026.03.5 parsing of cached SMILES and InChI reproduces the
+        full key. The existing MIBiG-derived owner SMILES and InChI independently
+        give this same key. This is exact database chemical-identity correspondence,
+        not an independent experimental structure or stereoselectivity measurement.'
+  - subject: gamma_carotene
+    predicate: is_database_proposed_substrate_of
+    object: terminal_cyclization
+    notes: Principal carotenoid substrate of the annotated terminal step only; not
+      generic RHEA55620 or the overall two-end lycopene reaction.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P54974
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry61/sequence1, 386aa, protein existence1. The exact
+        terminal reaction is ECO0000250 by similarity to P21687; literature codes
+        on the broader FUNCTION do not promote this step to a direct assay. RHEA32239
+        names gamma-carotene and all-trans-beta-carotene (CHEBI27740/CHEBI17579).
+        The cited primary paper was not independently accessible; this remains DATABASE_ASSERTION,
+        not an inspected assay or experimentally verified construct. Rhea identifiers
+        were inspected through UniProt, not a fresh Rhea retrieval. No cofactor, mutant,
+        flux or quantitative stereoselectivity claim is added.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:27740
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: 'Inspected ChEBI255 gamma-carotene: neutral C40H56, Standard InChIKeyHRQKOYFGHJYEFS-BXOLYSJBSA-N.
+        Independent RDKit2026.03.5 parsing of cached SMILES and InChI reproduces the
+        full key. This is exact database chemical-identity correspondence, not an
+        independent experimental structure or stereoselectivity measurement.'
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:17579
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: 'Inspected ChEBI255 beta-carotene: neutral C40H56, Standard InChIKeyOENHQHLEOONYIE-JLTXGRSLSA-N.
+        Independent RDKit2026.03.5 parsing of cached SMILES and InChI reproduces the
+        full key. The existing MIBiG-derived owner SMILES and InChI independently
+        give this same key. This is exact database chemical-identity correspondence,
+        not an independent experimental structure or stereoselectivity measurement.'
+  - subject: terminal_cyclization
+    predicate: has_database_proposed_product
+    object: beta_carotene
+    notes: Exact beta-carotene owner, not an assertion of the last metabolite in each
+      source organism. No native-production or measured stereoselectivity upgrade.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P54974
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed UniProt entry61/sequence1, 386aa, protein existence1. The exact
+        terminal reaction is ECO0000250 by similarity to P21687; literature codes
+        on the broader FUNCTION do not promote this step to a direct assay. RHEA32239
+        names gamma-carotene and all-trans-beta-carotene (CHEBI27740/CHEBI17579).
+        The cited primary paper was not independently accessible; this remains DATABASE_ASSERTION,
+        not an inspected assay or experimentally verified construct. Rhea identifiers
+        were inspected through UniProt, not a fresh Rhea retrieval. No cofactor, mutant,
+        flux or quantitative stereoselectivity claim is added.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:27740
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: 'Inspected ChEBI255 gamma-carotene: neutral C40H56, Standard InChIKeyHRQKOYFGHJYEFS-BXOLYSJBSA-N.
+        Independent RDKit2026.03.5 parsing of cached SMILES and InChI reproduces the
+        full key. This is exact database chemical-identity correspondence, not an
+        independent experimental structure or stereoselectivity measurement.'
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:17579
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: 'Inspected ChEBI255 beta-carotene: neutral C40H56, Standard InChIKeyOENHQHLEOONYIE-JLTXGRSLSA-N.
+        Independent RDKit2026.03.5 parsing of cached SMILES and InChI reproduces the
+        full key. The existing MIBiG-derived owner SMILES and InChI independently
+        give this same key. This is exact database chemical-identity correspondence,
+        not an independent experimental structure or stereoselectivity measurement.'
+curation_history:
+- timestamp: '2026-10-09T20:52:12Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Lossless migration of beta-carotene-crty-p54974-database from data/natural_products/terpenoids/carotene.yaml
+    at 487bb570b0c062bb51b9ec64c2de55682534d185. Entire graph and evidence unchanged;
+    prior provenance remains in owner history. Exact owner CHEBI:17579 / OENHQHLEOONYIE-JLTXGRSLSA-N.
+  llm_assisted: true
