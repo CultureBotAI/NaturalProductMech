@@ -53,6 +53,7 @@ import re
 import sys
 import unicodedata
 from collections import Counter, defaultdict
+from copy import deepcopy
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlsplit
@@ -273,8 +274,11 @@ CURATOR_OWNED_CARRIED_FIELDS = (
     "causal_graph_refs",
 )
 
+# Reserved for whole threads raised by curators, not source-generated questions.
+CURATOR_DISCUSSION_PREFIX = "curator-"
+
 #: Slots on a Discussion that belong to whoever worked it, not to the seeder.
-#: The seeder owns `discussion_id`, `kind` and `prompt` — it raises the
+#: For source-generated threads it owns `discussion_id`, `kind` and `prompt` — it raises the
 #: question and rewrites it each run — and everything else is the answer.
 CURATOR_OWNED_DISCUSSION_FIELDS = (
     "status",
@@ -304,16 +308,28 @@ def _standard_inchi_key(doc: dict[str, Any]) -> str | None:
 
 
 def carry_curator_owned_fields(payload: dict[str, Any], existing: dict[str, Any]) -> None:
-    """Carry graph curation across a re-seed of the same chemical structure."""
+    """Carry record curation across a re-seed of the same chemical structure."""
     standard_inchi_key = _standard_inchi_key(payload)
     if not standard_inchi_key or standard_inchi_key != _standard_inchi_key(existing):
         return
 
+    # Copy once to preserve YAML anchors shared across curator-owned sections.
+    existing = deepcopy(existing)
+    curator_discussions = {}
+    for discussion in existing.get("discussions") or []:
+        if not isinstance(discussion, dict):
+            continue
+        discussion_id = discussion.get("discussion_id")
+        if (isinstance(discussion_id, str)
+                and discussion_id.startswith(CURATOR_DISCUSSION_PREFIX)
+                and discussion_id != CURATOR_DISCUSSION_PREFIX):
+            if discussion_id in curator_discussions:
+                raise ValueError(f"duplicate curator discussion_id: {discussion_id}")
+            curator_discussions[discussion_id] = discussion
+
     for field in CURATOR_OWNED_CARRIED_FIELDS:
         if field in existing:
             payload[field] = existing[field]
-    if "curation_history" in existing:
-        payload["curation_history"] = existing["curation_history"]
 
     # A curator can only ever move a record OFF `SEEDED`, so a status that is
     # not `SEEDED` is a decision somebody made and the seeder must not undo it.
@@ -329,7 +345,10 @@ def carry_curator_owned_fields(payload: dict[str, Any], existing: dict[str, Any]
     # which is right: the condition that prompted it is gone.
     answered = {d.get("discussion_id"): d for d in existing.get("discussions") or []
                 if isinstance(d, dict) and d.get("discussion_id")}
-    for discussion in payload.get("discussions") or []:
+    for index, discussion in enumerate(payload.get("discussions") or []):
+        if discussion.get("discussion_id") in curator_discussions:
+            payload["discussions"][index] = curator_discussions[discussion["discussion_id"]]
+            continue
         # This adjudication is owned by the pinned curation table, not the YAML.
         if discussion.get("discussion_id") == "source-structure-correction":
             continue
@@ -339,6 +358,14 @@ def carry_curator_owned_fields(payload: dict[str, Any], existing: dict[str, Any]
         for field in CURATOR_OWNED_DISCUSSION_FIELDS:
             if field in previous_discussion:
                 discussion[field] = previous_discussion[field]
+
+    present = {d.get("discussion_id") for d in payload.get("discussions") or []}
+    for discussion_id, discussion in curator_discussions.items():
+        if discussion_id not in present:
+            payload.setdefault("discussions", []).append(discussion)
+    # A curator-only discussion section must be emitted before the audit trail.
+    if "curation_history" in existing:
+        payload["curation_history"] = existing["curation_history"]
 
 
 def carry_existing_curator_owned_fields(payload: dict[str, Any], path: Path) -> None:

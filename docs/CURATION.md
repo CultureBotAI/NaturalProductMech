@@ -102,7 +102,7 @@ protein mapping.
 ## What a re-seed keeps, and what it overwrites
 
 The corpus is generated, so a re-seed rebuilds every record. What it does *not*
-do is discard the work a curator did on one. Four things are carried forward
+do is discard the work a curator did on one. The following are carried forward
 from the file, matched on the record's Standard InChIKey so a reused slug
 cannot inherit another compound's curation:
 
@@ -112,13 +112,25 @@ cannot inherit another compound's curation:
 | `curation_history` | the trail, and re-stamped only when seeder-owned content changed |
 | `curation_status` when it is not `SEEDED` | only a curator moves a record off `SEEDED`, so only a curator can move it back |
 | curator-owned fields on a `discussion` | the seeder raises the question, you answer it |
+| whole `discussions` with `discussion_id: curator-<local-id>` | explicitly curator-owned questions, including their answers and evidence |
 
-On a discussion the seeder owns `discussion_id`, `kind` and `prompt` — it
-re-raises the question each run — and everything else is yours: `status`,
+On a source-generated discussion the seeder owns `discussion_id`, `kind` and
+`prompt` — it re-raises the question each run — and everything else is yours: `status`,
 `resolution_note`, `resolved_date`, `posed_by`, `rationale`, `evidence`,
 `proposed_experiments`, `notes`. Matching is on `discussion_id`. A discussion
 the seeder stops raising is dropped along with its answer, which is right: the
-condition that prompted it is gone.
+condition that prompted it is gone. The table-owned `source-structure-correction`
+discussion is rebuilt entirely from its curation table, not an old YAML answer.
+
+New curator-authored discussions must use the reserved `curator-` prefix plus
+a nonempty local ID. These threads are retained in full, in their existing
+relative order after source-generated discussions, even when resolved or
+archived. Their IDs must be unique. The seeder must not generate IDs in this
+namespace. An unprefixed custom question is not implicitly adopted: migrate
+it explicitly through the guarded curation path after checking its ownership.
+All discussion carry-forward requires the same Standard InChIKey; none crosses
+a structure change. Put a new `discussions` section before `curation_history`
+and run `just verify-reproduction` after a guarded write.
 
 **Everything else on a record is the seeder's**, and editing it by hand will be
 reverted on the next `just seed-apply` — and, since #85, reported by
@@ -290,7 +302,7 @@ schema-valid fixtures for both; copy those shapes rather than inventing one.
 
 ```yaml
 discussions:
-- discussion_id: producer-attribution
+- discussion_id: curator-producer-attribution
   kind: CURATION_TODO          # OPEN_QUESTION | KNOWLEDGE_GAP | CONTROVERSY | ...
   status: OPEN                 # OPEN | UNDER_DISCUSSION | RESOLVED | ARCHIVED
   prompt: >-
