@@ -204,7 +204,145 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>#</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>CrtZ (Pantoea ananas reference)<br><span class="mono">UniProtKB:P21688</span></td>
+  <td class="mono">RHEA:30331</td>
+  <td class="mono">CHEBI:17579 &rarr; CHEBI:27547</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/P21688</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>CrtZ (Paracoccus sp. N81106 reference)<br><span class="mono">UniProtKB:P54973</span></td>
+  <td class="mono">RHEA:30331</td>
+  <td class="mono">CHEBI:17579 &rarr; CHEBI:27547</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/P54973</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>CrtZ (Paracoccus sp. PC1 reference)<br><span class="mono">UniProtKB:Q44262</span></td>
+  <td class="mono">RHEA:30331</td>
+  <td class="mono">CHEBI:17579 &rarr; CHEBI:27547</td>
+  <td class="mono">https://www.uniprot.org/uniprotkb/Q44262</td>
+</tr>
+</table></div>
+<p class="sub">Entry 1: Unnumbered alternative organism-specific reference annotation. No common step order is invented. This is an organism-specific, database-proposed example, not the Xanthobacter autotrophicus Py2 BGC0000656 enzyme. Separate examples do not constitute a multi-organism assembly or a jointly measured pathway. Producer, occurrence and BGC evidence grades are unchanged. Only the principal carotenoid input and output are represented; not a complete stoichiometric model.</p><p class="sub">Entry 2: Unnumbered alternative organism-specific reference annotation. No common step order is invented. This is an organism-specific, database-proposed example, not the Xanthobacter autotrophicus Py2 BGC0000656 enzyme. Separate examples do not constitute a multi-organism assembly or a jointly measured pathway. Producer, occurrence and BGC evidence grades are unchanged. Only the principal carotenoid input and output are represented; not a complete stoichiometric model.</p><p class="sub">Entry 3: Unnumbered alternative organism-specific reference annotation. No common step order is invented. This is an organism-specific, database-proposed example, not the Xanthobacter autotrophicus Py2 BGC0000656 enzyme. Separate examples do not constitute a multi-organism assembly or a jointly measured pathway. Producer, occurrence and BGC evidence grades are unchanged. Only the principal carotenoid input and output are represented; not a complete stoichiometric model.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Qualified Pantoea ananas reference CrtZ annotation for overall beta-carotene hydroxylation. This is an organism-specific, database-proposed example, not the Xanthobacter autotrophicus Py2 BGC0000656 enzyme. Separate examples do not constitute a multi-organism assembly or a jointly measured pathway. Producer, occurrence and BGC evidence grades are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>CrtZ (Pantoea ananas reference)</td>
+  <td>is_database_proposed_catalyst_of</td>
+  <td>Database-proposed carotene hydroxylation</td>
+  <td>This is an organism-specific, database-proposed example, not the Xanthobacter autotrophicus Py2 BGC0000656 enzyme. Separate examples do not constitute a multi-organism assembly or a jointly measured pathway. Producer, occurrence and BGC evidence grades are unchanged. Native D90087.2 and BAA14129.1 name Pantoea ananatis/taxon553, without a strain qualifier; UniProt names Pantoea ananas/taxon553. ATCC19321/DSM30080/NCPPB800/NRRL B-14773/20D3 are UniProt bibliographic strain aliases, not an independently verified historical assay stock.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P21688<br>https://www.ncbi.nlm.nih.gov/nuccore/D90087.2<br>https://www.ebi.ac.uk/chebi/CHEBI:27547</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P21688</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Reviewed UniProt entry72/sequence1, 175aa; protein existence3 is inferred from homology. The exact RHEA30331 chemical assignment is ECO0000250 from Q9SZZ8, not a newly inspected native assay. FUNCTION names beta-carotene-to-zeaxanthin hydroxylation; the PC1 FUNCTION is also explicitly by similarity. Primary papers cited by UniProt were not independently accessible in this audit; no paper-derived experiment or measured stereoselectivity is asserted. Rhea provenance is read through UniProt, not a fresh Rhea retrieval.</dd><dt>snippet</dt><dd>from beta-carotene to zeaxanthin</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/D90087.2</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Complete CrtZ coding intervals independently translate with table11/codon1 to their deposited translations, native GenPept records and UniProtP21688, all175aa: BAA14129.1 / complement(D90087.2:5925..6452). Native D90087.2 and BAA14129.1 name Pantoea ananatis/taxon553, without a strain qualifier; UniProt names Pantoea ananas/taxon553. ATCC19321/DSM30080/NCPPB800/NRRL B-14773/20D3 are UniProt bibliographic strain aliases, not an independently verified historical assay stock. Bounded intervals include clipped neighboring CDS annotations; those neighbors were not independently translated or functionally adopted. Reference equality does not establish activity, native production, physical assembly or assay-construct identity.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/chebi/CHEBI:27547</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>The inspected UniProt reaction explicitly cross-references CHEBI17579 and CHEBI27547. The read-only ChEBI255 cache identifies neutral all-trans beta-carotene as OENHQHLEOONYIE-JLTXGRSLSA-N and neutral stereospecified zeaxanthin as JKQXZKUSFCKOGQ-QAYBQHTQSA-N, the exact existing owner key. This is database-to-owner correspondence, not a new experimental structure determination. No meso-zeaxanthin, other geometrical isomer, glycoside, astaxanthin or bound form is equated with the owner.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>beta-carotene</td>
+  <td>is_database_proposed_substrate_of</td>
+  <td>Database-proposed carotene hydroxylation</td>
+  <td>Principal carotenoid substrate only. Electron donor, oxygen, protons and water are not modelled as graph participants; no independently measured cofactor specificity or stoichiometric flux.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P21688<br>https://www.ebi.ac.uk/chebi/CHEBI:27547</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P21688</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Reviewed UniProt entry72/sequence1, 175aa; protein existence3 is inferred from homology. The exact RHEA30331 chemical assignment is ECO0000250 from Q9SZZ8, not a newly inspected native assay. FUNCTION names beta-carotene-to-zeaxanthin hydroxylation; the PC1 FUNCTION is also explicitly by similarity. Primary papers cited by UniProt were not independently accessible in this audit; no paper-derived experiment or measured stereoselectivity is asserted. Rhea provenance is read through UniProt, not a fresh Rhea retrieval.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/chebi/CHEBI:27547</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>The inspected UniProt reaction explicitly cross-references CHEBI17579 and CHEBI27547. The read-only ChEBI255 cache identifies neutral all-trans beta-carotene as OENHQHLEOONYIE-JLTXGRSLSA-N and neutral stereospecified zeaxanthin as JKQXZKUSFCKOGQ-QAYBQHTQSA-N, the exact existing owner key. This is database-to-owner correspondence, not a new experimental structure determination. No meso-zeaxanthin, other geometrical isomer, glycoside, astaxanthin or bound form is equated with the owner.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Database-proposed carotene hydroxylation</td>
+  <td>has_database_proposed_product</td>
+  <td>zeaxanthin</td>
+  <td>Overall annotated hydroxylation product, not an assertion that this is one elementary chemical event or the final metabolite in every source organism. No measured stereoselectivity, yield or native-producer upgrade.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P21688<br>https://www.ebi.ac.uk/chebi/CHEBI:27547</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P21688</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Reviewed UniProt entry72/sequence1, 175aa; protein existence3 is inferred from homology. The exact RHEA30331 chemical assignment is ECO0000250 from Q9SZZ8, not a newly inspected native assay. FUNCTION names beta-carotene-to-zeaxanthin hydroxylation; the PC1 FUNCTION is also explicitly by similarity. Primary papers cited by UniProt were not independently accessible in this audit; no paper-derived experiment or measured stereoselectivity is asserted. Rhea provenance is read through UniProt, not a fresh Rhea retrieval.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/chebi/CHEBI:27547</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>The inspected UniProt reaction explicitly cross-references CHEBI17579 and CHEBI27547. The read-only ChEBI255 cache identifies neutral all-trans beta-carotene as OENHQHLEOONYIE-JLTXGRSLSA-N and neutral stereospecified zeaxanthin as JKQXZKUSFCKOGQ-QAYBQHTQSA-N, the exact existing owner key. This is database-to-owner correspondence, not a new experimental structure determination. No meso-zeaxanthin, other geometrical isomer, glycoside, astaxanthin or bound form is equated with the owner.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Qualified Paracoccus sp. N81106 reference CrtZ annotation for overall beta-carotene hydroxylation. This is an organism-specific, database-proposed example, not the Xanthobacter autotrophicus Py2 BGC0000656 enzyme. Separate examples do not constitute a multi-organism assembly or a jointly measured pathway. Producer, occurrence and BGC evidence grades are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>CrtZ (Paracoccus sp. N81106 reference)</td>
+  <td>is_database_proposed_catalyst_of</td>
+  <td>Database-proposed carotene hydroxylation</td>
+  <td>This is an organism-specific, database-proposed example, not the Xanthobacter autotrophicus Py2 BGC0000656 enzyme. Separate examples do not constitute a multi-organism assembly or a jointly measured pathway. Producer, occurrence and BGC evidence grades are unchanged. Both native deposits name Paracoccus sp. N81106/taxon81397 and state its former Agrobacterium aurantiacum name and MBIC01143 distribution alias. Their complete crtZ CDSs are nucleotide-identical. This does not prove the sequence of a historical assay construct.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P54973<br>https://www.ncbi.nlm.nih.gov/nuccore/D58420.2<br>https://www.ebi.ac.uk/chebi/CHEBI:27547</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P54973</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Reviewed UniProt entry61/sequence1, 162aa; protein existence3 is inferred from homology. The exact RHEA30331 chemical assignment is ECO0000250 from Q9SZZ8, not a newly inspected native assay. FUNCTION names beta-carotene-to-zeaxanthin hydroxylation; the PC1 FUNCTION is also explicitly by similarity. Primary papers cited by UniProt were not independently accessible in this audit; no paper-derived experiment or measured stereoselectivity is asserted. Rhea provenance is read through UniProt, not a fresh Rhea retrieval. FUNCTION names beta-cryptoxanthin as an intermediate; no separate intermediate-structure claim is added.</dd><dt>snippet</dt><dd>from beta-carotene to zeaxanthin</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/D58420.2</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Complete CrtZ coding intervals independently translate with table11/codon1 to their deposited translations, native GenPept records and UniProtP54973, all162aa: BAA09592.1 / D58420.2:864..1352; BAE47466.1 / AB206672.1:2469..2957. Both native deposits name Paracoccus sp. N81106/taxon81397 and state its former Agrobacterium aurantiacum name and MBIC01143 distribution alias. Their complete crtZ CDSs are nucleotide-identical. This does not prove the sequence of a historical assay construct. Bounded intervals include clipped neighboring CDS annotations; those neighbors were not independently translated or functionally adopted. Reference equality does not establish activity, native production, physical assembly or assay-construct identity.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/chebi/CHEBI:27547</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>The inspected UniProt reaction explicitly cross-references CHEBI17579 and CHEBI27547. The read-only ChEBI255 cache identifies neutral all-trans beta-carotene as OENHQHLEOONYIE-JLTXGRSLSA-N and neutral stereospecified zeaxanthin as JKQXZKUSFCKOGQ-QAYBQHTQSA-N, the exact existing owner key. This is database-to-owner correspondence, not a new experimental structure determination. No meso-zeaxanthin, other geometrical isomer, glycoside, astaxanthin or bound form is equated with the owner.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>beta-carotene</td>
+  <td>is_database_proposed_substrate_of</td>
+  <td>Database-proposed carotene hydroxylation</td>
+  <td>Principal carotenoid substrate only. Electron donor, oxygen, protons and water are not modelled as graph participants; no independently measured cofactor specificity or stoichiometric flux.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P54973<br>https://www.ebi.ac.uk/chebi/CHEBI:27547</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P54973</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Reviewed UniProt entry61/sequence1, 162aa; protein existence3 is inferred from homology. The exact RHEA30331 chemical assignment is ECO0000250 from Q9SZZ8, not a newly inspected native assay. FUNCTION names beta-carotene-to-zeaxanthin hydroxylation; the PC1 FUNCTION is also explicitly by similarity. Primary papers cited by UniProt were not independently accessible in this audit; no paper-derived experiment or measured stereoselectivity is asserted. Rhea provenance is read through UniProt, not a fresh Rhea retrieval. FUNCTION names beta-cryptoxanthin as an intermediate; no separate intermediate-structure claim is added.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/chebi/CHEBI:27547</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>The inspected UniProt reaction explicitly cross-references CHEBI17579 and CHEBI27547. The read-only ChEBI255 cache identifies neutral all-trans beta-carotene as OENHQHLEOONYIE-JLTXGRSLSA-N and neutral stereospecified zeaxanthin as JKQXZKUSFCKOGQ-QAYBQHTQSA-N, the exact existing owner key. This is database-to-owner correspondence, not a new experimental structure determination. No meso-zeaxanthin, other geometrical isomer, glycoside, astaxanthin or bound form is equated with the owner.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Database-proposed carotene hydroxylation</td>
+  <td>has_database_proposed_product</td>
+  <td>zeaxanthin</td>
+  <td>Overall annotated hydroxylation product, not an assertion that this is one elementary chemical event or the final metabolite in every source organism. No measured stereoselectivity, yield or native-producer upgrade.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P54973<br>https://www.ebi.ac.uk/chebi/CHEBI:27547</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P54973</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Reviewed UniProt entry61/sequence1, 162aa; protein existence3 is inferred from homology. The exact RHEA30331 chemical assignment is ECO0000250 from Q9SZZ8, not a newly inspected native assay. FUNCTION names beta-carotene-to-zeaxanthin hydroxylation; the PC1 FUNCTION is also explicitly by similarity. Primary papers cited by UniProt were not independently accessible in this audit; no paper-derived experiment or measured stereoselectivity is asserted. Rhea provenance is read through UniProt, not a fresh Rhea retrieval. FUNCTION names beta-cryptoxanthin as an intermediate; no separate intermediate-structure claim is added.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/chebi/CHEBI:27547</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>The inspected UniProt reaction explicitly cross-references CHEBI17579 and CHEBI27547. The read-only ChEBI255 cache identifies neutral all-trans beta-carotene as OENHQHLEOONYIE-JLTXGRSLSA-N and neutral stereospecified zeaxanthin as JKQXZKUSFCKOGQ-QAYBQHTQSA-N, the exact existing owner key. This is database-to-owner correspondence, not a new experimental structure determination. No meso-zeaxanthin, other geometrical isomer, glycoside, astaxanthin or bound form is equated with the owner.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Qualified Paracoccus sp. PC1 reference CrtZ annotation for overall beta-carotene hydroxylation. This is an organism-specific, database-proposed example, not the Xanthobacter autotrophicus Py2 BGC0000656 enzyme. Separate examples do not constitute a multi-organism assembly or a jointly measured pathway. Producer, occurrence and BGC evidence grades are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>CrtZ (Paracoccus sp. PC1 reference)</td>
+  <td>is_database_proposed_catalyst_of</td>
+  <td>Database-proposed carotene hydroxylation</td>
+  <td>This is an organism-specific, database-proposed example, not the Xanthobacter autotrophicus Py2 BGC0000656 enzyme. Separate examples do not constitute a multi-organism assembly or a jointly measured pathway. Producer, occurrence and BGC evidence grades are unchanged. The native DNA/protein source names Paracoccus sp. with strainPC1 and taxon267; UniProt uses the named-strain taxon365615. Those taxonomy scopes are retained, not treated as identical identifiers. The exact 162-aa reference differs from the N81106 CrtZ sequence; no strain substitution.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q44262<br>https://www.ncbi.nlm.nih.gov/nuccore/D58422.2<br>https://www.ebi.ac.uk/chebi/CHEBI:27547</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q44262</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Reviewed UniProt entry57/sequence1, 162aa; protein existence3 is inferred from homology. The exact RHEA30331 chemical assignment is ECO0000250 from Q9SZZ8, not a newly inspected native assay. FUNCTION names beta-carotene-to-zeaxanthin hydroxylation; the PC1 FUNCTION is also explicitly by similarity. Primary papers cited by UniProt were not independently accessible in this audit; no paper-derived experiment or measured stereoselectivity is asserted. Rhea provenance is read through UniProt, not a fresh Rhea retrieval. FUNCTION names beta-cryptoxanthin as an intermediate; no separate intermediate-structure claim is added.</dd><dt>snippet</dt><dd>from beta-carotene to zeaxanthin</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/D58422.2</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Complete CrtZ coding intervals independently translate with table11/codon1 to their deposited translations, native GenPept records and UniProtQ44262, all162aa: BAA09597.1 / D58422.2:824..1312. The native DNA/protein source names Paracoccus sp. with strainPC1 and taxon267; UniProt uses the named-strain taxon365615. Those taxonomy scopes are retained, not treated as identical identifiers. The exact 162-aa reference differs from the N81106 CrtZ sequence; no strain substitution. Bounded intervals include clipped neighboring CDS annotations; those neighbors were not independently translated or functionally adopted. Reference equality does not establish activity, native production, physical assembly or assay-construct identity.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/chebi/CHEBI:27547</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>The inspected UniProt reaction explicitly cross-references CHEBI17579 and CHEBI27547. The read-only ChEBI255 cache identifies neutral all-trans beta-carotene as OENHQHLEOONYIE-JLTXGRSLSA-N and neutral stereospecified zeaxanthin as JKQXZKUSFCKOGQ-QAYBQHTQSA-N, the exact existing owner key. This is database-to-owner correspondence, not a new experimental structure determination. No meso-zeaxanthin, other geometrical isomer, glycoside, astaxanthin or bound form is equated with the owner.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>beta-carotene</td>
+  <td>is_database_proposed_substrate_of</td>
+  <td>Database-proposed carotene hydroxylation</td>
+  <td>Principal carotenoid substrate only. Electron donor, oxygen, protons and water are not modelled as graph participants; no independently measured cofactor specificity or stoichiometric flux.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q44262<br>https://www.ebi.ac.uk/chebi/CHEBI:27547</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q44262</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Reviewed UniProt entry57/sequence1, 162aa; protein existence3 is inferred from homology. The exact RHEA30331 chemical assignment is ECO0000250 from Q9SZZ8, not a newly inspected native assay. FUNCTION names beta-carotene-to-zeaxanthin hydroxylation; the PC1 FUNCTION is also explicitly by similarity. Primary papers cited by UniProt were not independently accessible in this audit; no paper-derived experiment or measured stereoselectivity is asserted. Rhea provenance is read through UniProt, not a fresh Rhea retrieval. FUNCTION names beta-cryptoxanthin as an intermediate; no separate intermediate-structure claim is added.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/chebi/CHEBI:27547</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>The inspected UniProt reaction explicitly cross-references CHEBI17579 and CHEBI27547. The read-only ChEBI255 cache identifies neutral all-trans beta-carotene as OENHQHLEOONYIE-JLTXGRSLSA-N and neutral stereospecified zeaxanthin as JKQXZKUSFCKOGQ-QAYBQHTQSA-N, the exact existing owner key. This is database-to-owner correspondence, not a new experimental structure determination. No meso-zeaxanthin, other geometrical isomer, glycoside, astaxanthin or bound form is equated with the owner.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Database-proposed carotene hydroxylation</td>
+  <td>has_database_proposed_product</td>
+  <td>zeaxanthin</td>
+  <td>Overall annotated hydroxylation product, not an assertion that this is one elementary chemical event or the final metabolite in every source organism. No measured stereoselectivity, yield or native-producer upgrade.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q44262<br>https://www.ebi.ac.uk/chebi/CHEBI:27547</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q44262</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>Reviewed UniProt entry57/sequence1, 162aa; protein existence3 is inferred from homology. The exact RHEA30331 chemical assignment is ECO0000250 from Q9SZZ8, not a newly inspected native assay. FUNCTION names beta-carotene-to-zeaxanthin hydroxylation; the PC1 FUNCTION is also explicitly by similarity. Primary papers cited by UniProt were not independently accessible in this audit; no paper-derived experiment or measured stereoselectivity is asserted. Rhea provenance is read through UniProt, not a fresh Rhea retrieval. FUNCTION names beta-cryptoxanthin as an intermediate; no separate intermediate-structure claim is added.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/chebi/CHEBI:27547</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-09</dd><dt>notes</dt><dd>The inspected UniProt reaction explicitly cross-references CHEBI17579 and CHEBI27547. The read-only ChEBI255 cache identifies neutral all-trans beta-carotene as OENHQHLEOONYIE-JLTXGRSLSA-N and neutral stereospecified zeaxanthin as JKQXZKUSFCKOGQ-QAYBQHTQSA-N, the exact existing owner key. This is database-to-owner correspondence, not a new experimental structure determination. No meso-zeaxanthin, other geometrical isomer, glycoside, astaxanthin or bound form is equated with the owner.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">25</span></h2>
