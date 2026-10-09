@@ -530,6 +530,248 @@ causal_graphs:
         stereo_complete false. Exact source-product stereochemical mapping is not
         adjudicated here; no chemistry or xref changes.
       retrieved_on: '2026-10-09'
+- graph_id: cyclooctatin-engineered-pdr-pdx-cotb4
+  scope: BIOSYNTHESIS
+  description: Non-native PdR/Pdx paired support of CotB4 in engineered E. coli BL21(DE3).
+    Wild-type Pdx and engineered paper W106E (full-length canonical W107E) are different
+    constructs using the same reference accession, not two native proteins. PdR carries
+    the S20 Gly insertion. Whole-cell product evidence does not establish individual
+    sufficiency, purified electron transfer, a physical complex or native partners.
+    Existing partial-stereo chemistry and native-producer claims are unchanged.
+  nodes:
+  - node_id: pdr
+    label: PdR (+Gly construct; reference accession)
+    node_type: ENZYME
+    identifier: UniProtKB:P16640
+    grounding_status: GROUNDED
+  - node_id: pdx_wt
+    label: Pdx (wild-type reference sequence)
+    node_type: PROTEIN
+    identifier: UniProtKB:P00259
+    grounding_status: GROUNDED
+  - node_id: pdx_w106e
+    label: Pdx-W106E (canonical W107E; reference accession)
+    node_type: PROTEIN
+    identifier: UniProtKB:P00259
+    grounding_status: GROUNDED
+  - node_id: cotb4_wt
+    label: Whole-cell CotB4 with wild-type Pdx
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: cotb4_w106e
+    label: Whole-cell CotB4 with Pdx-W106E
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: reported_cyclooctatin
+    label: cyclooctatin (reported product)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: pdr
+    predicate: with coexpressed wild-type Pdx supports
+    object: cotb4_wt
+    notes: Paired-system evidence under the stated whole-cell conditions.
+    evidence:
+    - reference: DOI:10.1186/s12934-016-0487-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Whole-cell CotB4 comparison with coexpressed PdR and wild-type Pdx in
+        engineered E. coli BL21(DE3), supplied cyclooctat-9-en-5,7-diol and a GC-MS
+        product readout after 48 hours. The Methods describe five cultures and an
+        empty-vector control. This establishes paired-system support, not individual
+        sufficiency or purified electron transfer.
+      retrieved_on: '2026-10-09'
+    - reference: https://www.uniprot.org/uniprotkb/P16640
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed Pseudomonas putida reference (taxon 303), camA, 422 aa; entry
+        version 131, sequence version 1. Native camphor-system annotation is not evidence
+        of native cyclooctatin production. This accession denotes the reference, not
+        a separate mutant entry.
+      retrieved_on: '2026-10-09'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/J05406.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited PdR CDS AAA25758.1; its annotated translation agrees with the
+        selected UniProt reference. Deposit strain provenance does not establish the
+        source strain of the synthetic 2016 construct.
+      retrieved_on: '2026-10-09'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/D00528.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited PdR CDS BAA00413.1; its annotated translation agrees with the
+        selected UniProt reference. Deposit strain provenance does not establish the
+        source strain of the synthetic 2016 construct.
+      retrieved_on: '2026-10-09'
+    - reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12934-016-0487-6/MediaObjects/12934_2016_487_MOESM1_ESM.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Figure S20 literal PdR ORF is 423 aa: Gly inserted after initiator Met
+        relative to the 422-aa P16640 reference. Both native CDSs independently translate
+        to the reference. The synthetic construct is not identical to P16640.'
+      retrieved_on: '2026-10-09'
+  - subject: pdx_wt
+    predicate: with coexpressed PdR supports
+    object: cotb4_wt
+    notes: Paired-system evidence under the stated whole-cell conditions.
+    evidence:
+    - reference: DOI:10.1186/s12934-016-0487-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Whole-cell CotB4 comparison with coexpressed PdR and wild-type Pdx in
+        engineered E. coli BL21(DE3), supplied cyclooctat-9-en-5,7-diol and a GC-MS
+        product readout after 48 hours. The Methods describe five cultures and an
+        empty-vector control. This establishes paired-system support, not individual
+        sufficiency or purified electron transfer.
+      retrieved_on: '2026-10-09'
+    - reference: https://www.uniprot.org/uniprotkb/P00259
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed Pseudomonas putida reference (taxon 303), camB, 107 aa; entry
+        version 144, sequence version 3. Native camphor-system annotation is not evidence
+        of native cyclooctatin production. UniProt annotates mature chain 2..107 and
+        a historical E/Q conflict at canonical residue 15; the selected canonical
+        sequence contains E. No assay-host initiator-Met processing is asserted. This
+        accession denotes the reference, not a separate mutant entry.
+      retrieved_on: '2026-10-09'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/J05406.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited Pdx CDS AAA25759.1; its annotated translation agrees with the
+        selected UniProt reference. Deposit strain provenance does not establish the
+        source strain of the synthetic 2016 construct.
+      retrieved_on: '2026-10-09'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/D00528.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited Pdx CDS BAA00414.1; its annotated translation agrees with the
+        selected UniProt reference. Deposit strain provenance does not establish the
+        source strain of the synthetic 2016 construct.
+      retrieved_on: '2026-10-09'
+    - reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12934-016-0487-6/MediaObjects/12934_2016_487_MOESM1_ESM.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Figure S20 literal wild-type Pdx ORF is 107 aa and equals P00259 and
+        both independently translated native CDSs, including E at canonical position
+        15. This is sequence identity evidence, not native-partner evidence.
+      retrieved_on: '2026-10-09'
+  - subject: cotb4_wt
+    predicate: yields
+    object: reported_cyclooctatin
+    notes: The reported product is not asserted stereochemically identical to the
+      partial-stereo owner and is not assigned an exact chemical identifier in this
+      graph.
+    evidence:
+    - reference: DOI:10.1186/s12934-016-0487-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results report only minor cyclooctatin formation with wild-type PdR/Pdx
+        and CotB4 under the tested conditions. The separate CotB3 comparison had no
+        detectable diol; no general inactivity claim is made.
+      retrieved_on: '2026-10-09'
+      snippet: only minor amounts of cyclooctatin
+    - reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12934-016-0487-6/MediaObjects/12934_2016_487_MOESM1_ESM.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Figure S1b shows the wild-type PdR/Pdx condition as a low-product comparator.
+        This is a condition-specific whole-cell product readout, not purified turnover.
+      retrieved_on: '2026-10-09'
+  - subject: pdr
+    predicate: with coexpressed Pdx-W106E supports
+    object: cotb4_w106e
+    notes: Paired-system evidence under the stated whole-cell conditions.
+    evidence:
+    - reference: DOI:10.1186/s12934-016-0487-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Whole-cell CotB4 comparison with coexpressed PdR and Pdx-W106E in engineered
+        E. coli BL21(DE3), supplied cyclooctat-9-en-5,7-diol and a GC-MS product readout
+        after 48 hours. The Methods describe five cultures and an empty-vector control.
+        This establishes paired-system support, not individual sufficiency or purified
+        electron transfer.
+      retrieved_on: '2026-10-09'
+    - reference: https://www.uniprot.org/uniprotkb/P16640
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed Pseudomonas putida reference (taxon 303), camA, 422 aa; entry
+        version 131, sequence version 1. Native camphor-system annotation is not evidence
+        of native cyclooctatin production. This accession denotes the reference, not
+        a separate mutant entry.
+      retrieved_on: '2026-10-09'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/J05406.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited PdR CDS AAA25758.1; its annotated translation agrees with the
+        selected UniProt reference. Deposit strain provenance does not establish the
+        source strain of the synthetic 2016 construct.
+      retrieved_on: '2026-10-09'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/D00528.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited PdR CDS BAA00413.1; its annotated translation agrees with the
+        selected UniProt reference. Deposit strain provenance does not establish the
+        source strain of the synthetic 2016 construct.
+      retrieved_on: '2026-10-09'
+    - reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12934-016-0487-6/MediaObjects/12934_2016_487_MOESM1_ESM.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Figure S20 literal PdR ORF is 423 aa: Gly inserted after initiator Met
+        relative to the 422-aa P16640 reference. Both native CDSs independently translate
+        to the reference. The synthetic construct is not identical to P16640.'
+      retrieved_on: '2026-10-09'
+  - subject: pdx_w106e
+    predicate: with coexpressed PdR supports
+    object: cotb4_w106e
+    notes: Paired-system evidence under the stated whole-cell conditions.
+    evidence:
+    - reference: DOI:10.1186/s12934-016-0487-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Whole-cell CotB4 comparison with coexpressed PdR and Pdx-W106E in engineered
+        E. coli BL21(DE3), supplied cyclooctat-9-en-5,7-diol and a GC-MS product readout
+        after 48 hours. The Methods describe five cultures and an empty-vector control.
+        This establishes paired-system support, not individual sufficiency or purified
+        electron transfer.
+      retrieved_on: '2026-10-09'
+    - reference: https://www.uniprot.org/uniprotkb/P00259
+      evidence_type: DATABASE_ASSERTION
+      notes: Reviewed Pseudomonas putida reference (taxon 303), camB, 107 aa; entry
+        version 144, sequence version 3. Native camphor-system annotation is not evidence
+        of native cyclooctatin production. UniProt annotates mature chain 2..107 and
+        a historical E/Q conflict at canonical residue 15; the selected canonical
+        sequence contains E. No assay-host initiator-Met processing is asserted. This
+        accession denotes the reference, not a separate mutant entry.
+      retrieved_on: '2026-10-09'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/J05406.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited Pdx CDS AAA25759.1; its annotated translation agrees with the
+        selected UniProt reference. Deposit strain provenance does not establish the
+        source strain of the synthetic 2016 construct.
+      retrieved_on: '2026-10-09'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/D00528.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Deposited Pdx CDS BAA00414.1; its annotated translation agrees with the
+        selected UniProt reference. Deposit strain provenance does not establish the
+        source strain of the synthetic 2016 construct.
+      retrieved_on: '2026-10-09'
+    - reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12934-016-0487-6/MediaObjects/12934_2016_487_MOESM1_ESM.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Figure S20 literal wild-type Pdx ORF is 107 aa and equals P00259 and
+        both independently translated native CDSs, including E at canonical position
+        15. This is sequence identity evidence, not native-partner evidence.
+      retrieved_on: '2026-10-09'
+    - reference: DOI:10.1186/s12934-016-0487-6
+      evidence_type: CURATOR_INFERENCE
+      notes: The Methods W106E primer maps to W107E in the full-length S20/P00259
+        ORF; the reference mature-chain numbering omits initiator Met. The 38-base
+        forward primer overlaps 32 printed S20 bases and changes only that translated
+        residue. Its terminal ATAATG extends beyond S20 and is not verified here.
+        The published reverse primer is its reverse complement. This is a primer/sequence
+        comparison, not independent mutant resequencing or full-plasmid verification.
+      retrieved_on: '2026-10-09'
+  - subject: cotb4_w106e
+    predicate: yields
+    object: reported_cyclooctatin
+    notes: The reported product is not asserted stereochemically identical to the
+      partial-stereo owner and is not assigned an exact chemical identifier in this
+      graph.
+    evidence:
+    - reference: DOI:10.1186/s12934-016-0487-6
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results report more cyclooctatin with Pdx-W106E than with wild-type Pdx;
+        this is not a claim of superiority to AfR/Afx or a numerical fold change.
+      retrieved_on: '2026-10-09'
+      snippet: also led to increased cyclooctatin formation
+    - reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12934-016-0487-6/MediaObjects/12934_2016_487_MOESM1_ESM.pdf
+      evidence_type: CURATOR_INFERENCE
+      notes: Figure S1b qualitatively places Pdx-W106E above wild-type PdR/Pdx but
+        below AfR/Afx for the CotB4 product. Its caption names a CotB3 control despite
+        the CotB4 panel; no normalized ratio or significance test is adopted. Tables
+        S1/S2 duplicate D38E labels for lanes 4/5, so no lane-specific mutant assignment,
+        densitometry or physical-complex inference is adopted.
+      retrieved_on: '2026-10-09'
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -560,4 +802,14 @@ curation_history:
     the AfR Gly insertion and Afx MTN deletion; do not assert native partners, individual
     sufficiency, purified electron transfer or a physical complex. Preserve all earlier
     claims, partial-stereo chemistry and SEEDED status.
+  llm_assisted: true
+- timestamp: '2026-10-09T06:38:17Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add PdR and wild-type/engineered Pdx reference-grounded constructs in a
+    six-edge BIOSYNTHESIS graph for paired whole-cell CotB4 support. Distinguish wild-type
+    minor product formation from paper W106E (canonical W107E), and retain the PdR
+    Gly insertion, qualitative comparator and assay limitations. Preserve all prior
+    claims, partial-stereo chemistry and SEEDED status; no native partners, individual
+    sufficiency, purified electron transfer or complex assertion.
   llm_assisted: true
