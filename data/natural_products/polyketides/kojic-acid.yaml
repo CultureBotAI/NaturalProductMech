@@ -831,6 +831,269 @@ causal_graphs:
     strains. KojA enzyme chemistry remains putative. No direct promoter binding, physical
     complex, ordered enzyme pathway or new native-production claim. The imported producer/BGC
     grades, computed filing class and natural-product origin remain unchanged.
+- graph_id: kojic-acid-kpea-kap126-database-regulation
+  scope: BIOSYNTHESIS
+  nodes:
+  - node_id: kpea_reference
+    label: KpeA native RIB40 reference
+    node_type: PROTEIN
+    identifier: UniProtKB:Q2UJJ4
+    grounding_status: GROUNDED
+  - node_id: kap1_reference
+    label: AoKap1 native RIB40 reference
+    node_type: PROTEIN
+    identifier: UniProtKB:Q2UUI8
+    grounding_status: GROUNDED
+  - node_id: kap2_reference
+    label: AoKap2 native RIB40 reference
+    node_type: PROTEIN
+    identifier: UniProtKB:Q2U6T7
+    grounding_status: GROUNDED
+  - node_id: kap6_reference
+    label: AoKap6 native RIB40 reference
+    node_type: PROTEIN
+    identifier: UniProtKB:Q2U5I2
+    grounding_status: GROUNDED
+  - node_id: production
+    label: Database-reported kojic-acid production
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: kojic_acid
+    label: kojic acid
+    node_type: COMPOUND
+    identifier: CHEBI:43572
+    grounding_status: GROUNDED
+  edges:
+  - subject: kpea_reference
+    predicate: is_database_reported_regulator_of
+    object: production
+    notes: KpeA is assigned regulation of kojic-acid production, likely through negative
+      control of kojR and kojA expression. The proposed expression mechanism retains
+      the database qualifier likely; no direct promoter binding is asserted. Native-reference
+      identity and database functional attribution remain separate claims.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2UJJ4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry version 74, sequence version 1. KpeA is assigned regulation
+        of kojic-acid production, likely through negative control of kojR and kojA
+        expression. The proposed expression mechanism retains the database qualifier
+        likely; no direct promoter binding is asserted. Adopted database annotation,
+        not a newly inspected functional experiment. The sequence-verified native
+        RIB40 reference is not a verified historical assay stock, mutant or complete
+        engineered construct. The cited primary study DOI:10.1016/j.fgb.2019.02.004
+        was tool-inaccessible; no alternate full text was retrieved. No disruption-phenotype,
+        quantitative production or protein-alone synthesis claim is added.
+      snippet: kojic acid production, likely by negatively controlling kojR and kojA
+        expression
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAE58271.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Complete native Aspergillus oryzae RIB40 reference, taxon 510516, locus
+        AO090003001186, 762 aa. GenPept sequence and coded_by complement(join(AP007155.1:3227455..3227555,AP007155.1:3227610..3227808,AP007155.1:3227863..3228714,AP007155.1:3228779..3229915))
+        agree with the audited native CDS and UniProt Q2UJJ4. Deposit identity is
+        distinct from independent functional or historical construct evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AP007155.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: Complete CDS complement(join(AP007155.1:3227455..3227555,AP007155.1:3227610..3227808,AP007155.1:3227863..3228714,AP007155.1:3228779..3229915)),
+        codon_start 1/default table 1, independently translates to 762 aa identical
+        to the CDS annotation, GenPept BAE58271.1 and UniProt Q2UJJ4. This bounded
+        native-reference audit does not establish chromosome/scaffold equivalence,
+        whole-genome identity, the assayed strain or full engineered construct, or
+        an upgraded producer/BGC evidence grade.
+  - subject: kap1_reference
+    predicate: is_database_reported_negative_regulator_of
+    object: production
+    notes: AoKap1 is assigned a negative-regulatory role in kojic-acid production
+      through effects on kojA, kojR and kojT expression. This is not direct DNA binding,
+      protein abundance or a transport reaction. The unrelated conidiation direction
+      is not adopted because the database and primary abstract differ on that phenotype.
+      Native-reference identity and database functional attribution remain separate
+      claims.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2UUI8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry version 60, sequence version 1. AoKap1 is assigned a negative-regulatory
+        role in kojic-acid production through effects on kojA, kojR and kojT expression.
+        This is not direct DNA binding, protein abundance or a transport reaction.
+        The unrelated conidiation direction is not adopted because the database and
+        primary abstract differ on that phenotype. Adopted database annotation, not
+        a newly inspected functional experiment. The sequence-verified native RIB40
+        reference is not a verified historical assay stock, mutant or complete engineered
+        construct. The cited primary study DOI:10.1007/s00203-021-02718-4 was subscription-preview
+        only; complete experimental methods and constructs were not inspected. No
+        disruption-phenotype, quantitative production or protein-alone synthesis claim
+        is added.
+      snippet: Acts as a negative regulation factor for kojic acid production
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAE54777.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Complete native Aspergillus oryzae RIB40 reference, taxon 510516, locus
+        AO090009000298, 253 aa. GenPept sequence and coded_by complement(join(AP007150.1:794136..794520,AP007150.1:794589..794868,AP007150.1:794959..795055))
+        agree with the audited native CDS and UniProt Q2UUI8. Deposit identity is
+        distinct from independent functional or historical construct evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AP007150.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: Complete CDS complement(join(AP007150.1:794136..794520,AP007150.1:794589..794868,AP007150.1:794959..795055)),
+        codon_start 1/default table 1, independently translates to 253 aa identical
+        to the CDS annotation, GenPept BAE54777.1 and UniProt Q2UUI8. This bounded
+        native-reference audit does not establish chromosome/scaffold equivalence,
+        whole-genome identity, the assayed strain or full engineered construct, or
+        an upgraded producer/BGC evidence grade.
+  - subject: kap2_reference
+    predicate: is_database_reported_regulator_of
+    object: production
+    notes: AoKap2 is assigned involvement in kojic-acid production through regulation
+      of kojA expression. No positive or negative production sign is assigned from
+      the separate negative growth-regulation annotation. Its probable ferric-reductase
+      chemistry is annotated by similarity and is not a demonstrated kojic-acid biosynthetic
+      reaction. Native-reference identity and database functional attribution remain
+      separate claims.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2U6T7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry version 112, sequence version 1. AoKap2 is assigned involvement
+        in kojic-acid production through regulation of kojA expression. No positive
+        or negative production sign is assigned from the separate negative growth-regulation
+        annotation. Its probable ferric-reductase chemistry is annotated by similarity
+        and is not a demonstrated kojic-acid biosynthetic reaction. Adopted database
+        annotation, not a newly inspected functional experiment. The sequence-verified
+        native RIB40 reference is not a verified historical assay stock, mutant or
+        complete engineered construct. The cited primary study DOI:10.1007/s11033-021-07084-4
+        was subscription-preview only; complete experimental methods and constructs
+        were not inspected. No disruption-phenotype, quantitative production or protein-alone
+        synthesis claim is added.
+      snippet: Involved in kojic acid production through the regulation of kojA expression
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAE62728.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Complete native Aspergillus oryzae RIB40 reference, taxon 510516, locus
+        AO090120000102, 752 aa. GenPept sequence and coded_by AP007166.1:243793..246051
+        agree with the audited native CDS and UniProt Q2U6T7. Deposit identity is
+        distinct from independent functional or historical construct evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AP007166.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: Complete CDS AP007166.1:243793..246051, codon_start 1/default table 1,
+        independently translates to 752 aa identical to the CDS annotation, GenPept
+        BAE62728.1 and UniProt Q2U6T7. This bounded native-reference audit does not
+        establish chromosome/scaffold equivalence, whole-genome identity, the assayed
+        strain or full engineered construct, or an upgraded producer/BGC evidence
+        grade.
+  - subject: kap6_reference
+    predicate: is_database_reported_participant_in
+    object: production
+    notes: AoKap6 is assigned a role in kojic-acid synthesis with a reported upstream
+      relationship to kojA and coordination with kojR and kojT. This does not establish
+      an enzymatic step, direct promoter binding, a physical protein complex or an
+      ordered biochemical pathway. Native-reference identity and database functional
+      attribution remain separate claims.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2U5I2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry version 53, sequence version 1. AoKap6 is assigned a role
+        in kojic-acid synthesis with a reported upstream relationship to kojA and
+        coordination with kojR and kojT. This does not establish an enzymatic step,
+        direct promoter binding, a physical protein complex or an ordered biochemical
+        pathway. Adopted database annotation, not a newly inspected functional experiment.
+        The sequence-verified native RIB40 reference is not a verified historical
+        assay stock, mutant or complete engineered construct. The cited primary study
+        DOI:10.1007/s11274-022-03361-x was subscription-preview only; complete experimental
+        methods and constructs were not inspected. No disruption-phenotype, quantitative
+        production or protein-alone synthesis claim is added.
+      snippet: Plays a role in kojic acid synthesis
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAE63183.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Complete native Aspergillus oryzae RIB40 reference, taxon 510516, locus
+        AO090113000133, 159 aa. GenPept sequence and coded_by complement(join(AP007166.1:1670637..1670974,AP007166.1:1671090..1671231))
+        agree with the audited native CDS and UniProt Q2U5I2. Deposit identity is
+        distinct from independent functional or historical construct evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AP007166.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: Complete CDS complement(join(AP007166.1:1670637..1670974,AP007166.1:1671090..1671231)),
+        codon_start 1/default table 1, independently translates to 159 aa identical
+        to the CDS annotation, GenPept BAE63183.1 and UniProt Q2U5I2. This bounded
+        native-reference audit does not establish chromosome/scaffold equivalence,
+        whole-genome identity, the assayed strain or full engineered construct, or
+        an upgraded producer/BGC evidence grade.
+  - subject: production
+    predicate: has_database_reported_product
+    object: kojic_acid
+    notes: The four database function annotations concern parent kojic acid, represented
+      by this neutral achiral owner CHEBI:43572/BEJNERDRQOWKJM-UHFFFAOYSA-N. This
+      is a production-regulation graph, not a four-enzyme pathway, a physical complex,
+      a measured protein-alone reaction, or evidence that all four proteins were tested
+      together.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2UJJ4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry version 74, sequence version 1. KpeA is assigned regulation
+        of kojic-acid production, likely through negative control of kojR and kojA
+        expression. The proposed expression mechanism retains the database qualifier
+        likely; no direct promoter binding is asserted. Adopted database annotation,
+        not a newly inspected functional experiment. The sequence-verified native
+        RIB40 reference is not a verified historical assay stock, mutant or complete
+        engineered construct. The cited primary study DOI:10.1016/j.fgb.2019.02.004
+        was tool-inaccessible; no alternate full text was retrieved. No disruption-phenotype,
+        quantitative production or protein-alone synthesis claim is added.
+    - reference: https://www.uniprot.org/uniprotkb/Q2UUI8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry version 60, sequence version 1. AoKap1 is assigned a negative-regulatory
+        role in kojic-acid production through effects on kojA, kojR and kojT expression.
+        This is not direct DNA binding, protein abundance or a transport reaction.
+        The unrelated conidiation direction is not adopted because the database and
+        primary abstract differ on that phenotype. Adopted database annotation, not
+        a newly inspected functional experiment. The sequence-verified native RIB40
+        reference is not a verified historical assay stock, mutant or complete engineered
+        construct. The cited primary study DOI:10.1007/s00203-021-02718-4 was subscription-preview
+        only; complete experimental methods and constructs were not inspected. No
+        disruption-phenotype, quantitative production or protein-alone synthesis claim
+        is added.
+    - reference: https://www.uniprot.org/uniprotkb/Q2U6T7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry version 112, sequence version 1. AoKap2 is assigned involvement
+        in kojic-acid production through regulation of kojA expression. No positive
+        or negative production sign is assigned from the separate negative growth-regulation
+        annotation. Its probable ferric-reductase chemistry is annotated by similarity
+        and is not a demonstrated kojic-acid biosynthetic reaction. Adopted database
+        annotation, not a newly inspected functional experiment. The sequence-verified
+        native RIB40 reference is not a verified historical assay stock, mutant or
+        complete engineered construct. The cited primary study DOI:10.1007/s11033-021-07084-4
+        was subscription-preview only; complete experimental methods and constructs
+        were not inspected. No disruption-phenotype, quantitative production or protein-alone
+        synthesis claim is added.
+    - reference: https://www.uniprot.org/uniprotkb/Q2U5I2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry version 53, sequence version 1. AoKap6 is assigned a role
+        in kojic-acid synthesis with a reported upstream relationship to kojA and
+        coordination with kojR and kojT. This does not establish an enzymatic step,
+        direct promoter binding, a physical protein complex or an ordered biochemical
+        pathway. Adopted database annotation, not a newly inspected functional experiment.
+        The sequence-verified native RIB40 reference is not a verified historical
+        assay stock, mutant or complete engineered construct. The cited primary study
+        DOI:10.1007/s11274-022-03361-x was subscription-preview only; complete experimental
+        methods and constructs were not inspected. No disruption-phenotype, quantitative
+        production or protein-alone synthesis claim is added.
+  description: Database-qualified KpeA, AoKap1, AoKap2 and AoKap6 roles in kojic-acid
+    production. Nodes denote sequence-verified native Aspergillus oryzae RIB40 references,
+    not verified assayed stocks or engineered constructs. KpeA expression control
+    remains likely; AoKap1 has a database-reported negative role; AoKap2 production
+    regulation is distinct from its probable ferric-reductase chemistry; AoKap6 is
+    not assigned an enzymatic reaction. No direct binding, physical complex, ordered
+    pathway, disruption phenotype or new native-production claim is added. Existing
+    graphs, imported producer/BGC grades, computed filing class, natural-product origin
+    and SEEDED status remain unchanged.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -866,4 +1129,18 @@ curation_history:
     identity, direct binding, physical complex, ordered pathway, phenotype or producer/BGC-grade
     upgrade. Preserved the old BIOACTIVITY graph, all source fields, chemistry, classification,
     natural-product origin, history and SEEDED status; not full-record sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-09T10:00:40Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a separate six-node/five-edge BIOSYNTHESIS production-regulation
+    graph for native RIB40 references KpeA/UniProtKB:Q2UJJ4, AoKap1/UniProtKB:Q2UUI8,
+    AoKap2/UniProtKB:Q2U6T7 and AoKap6/UniProtKB:Q2U5I2. Each edge has stable source
+    URLs; four protein edges include short exact UniProt snippets. Native GenPept/CDS
+    identity evidence is separate from database-level function and does not establish
+    assayed-construct equality. Kept KpeA control qualified as likely, AoKap1 negative
+    regulation, and AoKap2 regulation distinct from probable ferric-reductase chemistry.
+    No direct binding, physical complex, ordered enzyme pathway, quantitative or disruption
+    phenotype, or producer/BGC-grade upgrade. Preserved both existing graphs and every
+    other field and prior history item. Record remains SEEDED; not full-record sign-off.
   llm_assisted: true
