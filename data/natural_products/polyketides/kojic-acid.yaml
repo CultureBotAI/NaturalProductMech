@@ -1101,6 +1101,7 @@ causal_graph_refs:
 - kojic-acid-apricot-ppo-database-inhibition
 - kojic-acid-tyrp1-deposited-structures
 - kojic-acid-tyrbm-deposited-structures
+- kojic-acid-hst4-database-go-regulation
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -1230,4 +1231,17 @@ curation_history:
     identity details, geometry caveats, access stops and five graph claims remain
     intact. Direct UniProt activity and validation-report assertions retain their
     original types. No new biological claim or full-record sign-off.'
+  llm_assisted: true
+- timestamp: '2026-10-09T14:19:41Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added exact-owner BIOSYNTHESIS component kojic-acid-hst4-database-go-regulation:
+    Q2U2P7/AO090038000370, putative Hst4, acts_upstream_of_or_within GO:1900395, preserving
+    the AspGD annotation qualifier as a DATABASE_ASSERTION. Native and provisional
+    RefSeq CDS comparisons ground reference identity as CURATOR_INFERENCE, not an
+    independently inspected mutant experiment. No HstD alias, direct deacetylation,
+    quantitative phenotype, assay stock, full transcript, expression construct or
+    BGC membership is asserted. All nine prior graphs, source fields, producer grades,
+    taxonomy, classifications and natural-product origin are unchanged. Record remains
+    SEEDED, not full-record sign-off.'
   llm_assisted: true

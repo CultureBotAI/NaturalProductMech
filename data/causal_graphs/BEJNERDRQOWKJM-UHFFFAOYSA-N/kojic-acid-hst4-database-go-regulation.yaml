@@ -1,0 +1,104 @@
+record_id: CHEBI:43572
+standard_inchi_key: BEJNERDRQOWKJM-UHFFFAOYSA-N
+graph:
+  graph_id: kojic-acid-hst4-database-go-regulation
+  scope: BIOSYNTHESIS
+  description: Database-qualified GO annotation of Aspergillus oryzae RIB40 reference
+    protein AO090038000370, putative Hst4, to negative regulation of parent kojic-acid
+    biosynthesis. The exact acts_upstream_of_or_within relation is retained; this
+    does not identify a direct substrate, transcriptional target, biochemical reaction
+    or ordered pathway step. The primary experiment was not independently inspected.
+    No HstD alias, specific mutant phenotype, expression construct, quantitative production
+    effect, BGC membership or producer-grade upgrade is inferred.
+  nodes:
+  - node_id: ao090038000370
+    label: AO090038000370 (putative Hst4; RIB40 reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q2U2P7
+    grounding_status: GROUNDED
+  - node_id: negative_kojic_acid_biosynthesis
+    label: negative regulation of kojic acid biosynthetic process
+    node_type: PROCESS
+    identifier: GO:1900395
+    grounding_status: GROUNDED
+  edges:
+  - subject: ao090038000370
+    predicate: acts_upstream_of_or_within
+    object: negative_kojic_acid_biosynthesis
+    notes: Adopted AspGD/QuickGO database annotation, not a newly verified knockout
+      result. IMP/ECO:0000315 is the source evidence code; this edge remains DATABASE_ASSERTION.
+      Reference-sequence comparisons are CURATOR_INFERENCE and support grounding only.
+      The process already denotes negative regulation; no extra direct inhibitory
+      edge or compound-production measurement is asserted.
+    evidence:
+    - reference: https://www.ebi.ac.uk/QuickGO/services/annotation/search?geneProductId=UniProtKB%3AQ2U2P7&goId=GO%3A1900395&limit=100
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: 'Official response has one hit and one page: annotation UniProtKB:Q2U2P7!417351419,
+        symbol AO090038000370, taxon 510516, GO:1900395, qualifier acts_upstream_of_or_within,
+        IMP/ECO:0000315, assignedBy AspGD, annotation date 20130823, reference PMID:23729383,
+        no NOT qualifier or extension. DOI:10.1128/ec.00003-13 remains access-held;
+        no alternate retrieval or independently inspected primary phenotype is adopted.'
+    - reference: https://www.uniprot.org/uniprotkb/Q2U2P7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: Unreviewed entry version 109, sequence version 1, 571 aa; Aspergillus
+        oryzae ATCC 42149 / RIB40 taxon 510516, locus AO090038000370. GO:1900395 carries
+        IMP:AspGD and ECO:0000315/PMID:23729383. Protein existence is inferred from
+        homology, not experimental protein detection. Automated class-I sirtuin annotation
+        disagrees with the deposited NCBI sirtuin-5/class-III annotation; neither
+        class nor direct deacetylase activity is adopted.
+      snippet: P:negative regulation of kojic acid biosynthetic process
+    - reference: https://www.ebi.ac.uk/QuickGO/services/ontology/go/terms/GO%3A1900395
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-09'
+      notes: GO:1900395 is non-obsolete, biological_process, unrestricted. Its kojic-acid
+        process and exact systematic-name synonyms provide the compound context; formula-only
+        related synonyms are not chemical identity proof.
+      snippet: Any process that stops, prevents or reduces the frequency, rate or
+        extent of kojic acid biosynthetic process.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAE64168.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 571-aa deposited reference is identical to Q2U2P7. Native
+        Aspergillus oryzae RIB40, taxon 510516, locus AO090038000370, old locus AO070331000235.
+        Sequence equality grounds the reference, not the historical mutant stock,
+        assay protein or expression construct.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/XP_001825301.3
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: The complete 571-aa PROVISIONAL RefSeq is identical to Q2U2P7 and BAE64168.1.
+        Its putative Hst4 label is retained as provisional, not equated with HstD.
+        Same deposited RIB40/taxon 510516/locus metadata; no demonstrated protein
+        activity or experimental stock identity follows.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AP007169.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: Bounded native interval 961433..963216 (1784 nt) contains the complete
+        CDS complement(join(961433..962814,962883..963216)), codon_start 1/default
+        table 1. Independent translation of the 1716-nt spliced CDS is identical to
+        the 571-aa annotation, BAE64168.1 and Q2U2P7. No full scaffold, promoter or
+        experimental construct identity is established.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/XM_001825249.3
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: PROVISIONAL partial mRNA, incomplete on both ends, with a precise complete
+        CDS 1..1716, codon_start 1/default table 1. Its CDS is nucleotide-identical
+        to the spliced native CDS and independently translates to XP_001825301.3 and
+        Q2U2P7 (571 aa). This does not establish a full transcript or equate whole
+        genomic records.
+curation_history:
+- timestamp: '2026-10-09T14:19:41Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Created exact-owner component for data/natural_products/polyketides/kojic-acid.yaml
+    from 8adcd80964fd8f65488f0ca82aced291730d665c. Added exact-owner BIOSYNTHESIS
+    component kojic-acid-hst4-database-go-regulation: Q2U2P7/AO090038000370, putative
+    Hst4, acts_upstream_of_or_within GO:1900395, preserving the AspGD annotation qualifier
+    as a DATABASE_ASSERTION. Native and provisional RefSeq CDS comparisons ground
+    reference identity as CURATOR_INFERENCE, not an independently inspected mutant
+    experiment. No HstD alias, direct deacetylation, quantitative phenotype, assay
+    stock, full transcript, expression construct or BGC membership is asserted. All
+    nine prior graphs, source fields, producer grades, taxonomy, classifications and
+    natural-product origin are unchanged. Record remains SEEDED, not full-record sign-off.'
+  llm_assisted: true
