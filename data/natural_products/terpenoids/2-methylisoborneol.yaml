@@ -540,6 +540,79 @@ biosynthetic_pathway:
       Sequence identity was independently verified; RefSeq species/multispecies assignment
       is not an experimental strain record. No shell-cargo claim follows from its
       automated name.
+- enzyme_id: UniProtKB:Q9F1Y5
+  enzyme_label: SCO7701 (geranyl diphosphate 2-C-methyltransferase; database-supported)
+  proposed: false
+  notes: SCO7701/Q9F1Y5, 292 aa, is the native canonical reference. The non-proposed
+    assignment reflects UniProt experimental attribution, not a newly inspected primary
+    assay. The database assigns GPP methylation to 2-MeGPP in methylisoborneol biosynthesis;
+    this edge does not assert that the methyltransferase alone produces 2-MIB. Genomic
+    A3(2), 1147, the UniProt M145 label and the cited NRRL B-16638 stock are not equated.
+    No exact construct, reaction order, kinetics, shell-cargo relationship, native
+    producer/BGC grade or stereochemical upgrade is asserted.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/Q9F1Y5/entry
+    evidence_type: DATABASE_ASSERTION
+    snippet: SAM-dependent methylation of geranyl diphosphate (GPP)
+    retrieved_on: '2026-10-09'
+    notes: Reviewed entry 125, sequence 1. Function uses ECO:0000269/PMID:18563898;
+      its publication annotation includes PATHWAY and names methylisoborneol biosynthesis.
+      This is the inspected database assertion, not newly inspected primary evidence.
+      The cited DOI:10.1021/ja803639g and correction DOI:10.1021/ja104306p are access-held;
+      no kinetic values are adopted. The cited assay stock is A3(2)/NRRL B-16638,
+      not established here as identical to the genomic stocks.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/CAC44557.1
+    evidence_type: CURATOR_INFERENCE
+    snippet: SCO7701
+    retrieved_on: '2026-10-09'
+    notes: Native A3(2), taxon 100226, forward AL939132.1:172868..173746. All 292
+      residues match UniProt, GenPept, the annotated CDS and independent table-11
+      translation. This is canonical-reference identity, not an experimental construct.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/BAB20434.1
+    evidence_type: CURATOR_INFERENCE
+    snippet: orf4
+    retrieved_on: '2026-10-09'
+    notes: Native strain 1147, taxon 1902, forward AB035202.1:5872..6750. The CDS
+      and 292-aa translation exactly match the A3(2) reference. Sequence equality
+      does not equate strains or identify the cited assay stock.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/WP_011031840.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: WP_011031840.1
+    retrieved_on: '2026-10-09'
+    notes: Exact 292-aa reference; this RefSeq is multispecies (taxon 1883), not a
+      strain assignment.
+- enzyme_id: UniProtKB:Q9F1V8
+  enzyme_label: Strain-13189 2-methylisoborneol synthase (similarity-inferred)
+  proposed: true
+  notes: Q9F1V8/BAB20507.1, 437 aa, is a native strain-13189 reference with a similarity-inferred
+    MIB synthase role, not an assayed protein. Do not identify strain 13189 with NBRC
+    13350 or borrow BGC0000658. The adjacent putative methyltransferase BAB20508.1
+    is not assigned a specific MIB function from neighborhood alone. No exact construct,
+    reaction order, kinetics, shell-cargo relationship, native producer/BGC grade
+    or stereochemical upgrade is asserted.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/Q9F1V8/entry
+    evidence_type: DATABASE_ASSERTION
+    snippet: cyclization of 2-methylgeranyl diphosphate (2-MeGPP) to 2-methylisoborneol
+      (2-MIB)
+    retrieved_on: '2026-10-08'
+    notes: Reviewed entry 67, sequence 1, Streptomyces griseus/taxon 1911. Function
+      uses ECO:0000250 (sequence similarity), not experimental evidence for this protein.
+      The sequence-deposit reference names strain 13189 without a collection prefix.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/BAB20507.1
+    evidence_type: CURATOR_INFERENCE
+    snippet: '13189'
+    retrieved_on: '2026-10-09'
+    notes: Native genomic DNA, strain 13189/taxon 1911, forward AB040071.1:5255..6568.
+      All 437 residues match UniProt, GenPept, RefSeq, the annotated CDS and independent
+      table-11 translation. Q9F1V8 differs from NBRC 13350 B1VVB4 at residues 66 (P/S),
+      67 (T/A) and 77 (W/R); they are not interchangeable references.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/WP_030703894.1
+    evidence_type: DATABASE_ASSERTION
+    snippet: WP_030703894.1
+    retrieved_on: '2026-10-09'
+    notes: Exact 437-aa species-level RefSeq, taxon 1911, without a strain qualifier.
+      Its automatic encapsulin-cargo name is not adopted as functional evidence.
 causal_graphs:
 - graph_id: mib-sgr-native-proposed-roles
   scope: BIOSYNTHESIS
@@ -944,6 +1017,114 @@ causal_graphs:
     Canonical references ground the reported proteins; exact inserts, tags, linkers
     and variants remain outside this claim. The owner retains unspecified stereochemistry
     and existing source grades.
+- graph_id: mib-sco7701-database-role
+  scope: BIOSYNTHESIS
+  description: An independently database-attributed role, not a shared native pathway
+    with the other reference proteins. The owner retains unspecified stereochemistry
+    and existing source grades.
+  nodes:
+  - node_id: sco7701
+    label: SCO7701 (geranyl diphosphate 2-C-methyltransferase; database-supported)
+    node_type: ENZYME
+    identifier: UniProtKB:Q9F1Y5
+    grounding_status: GROUNDED
+  - node_id: mib
+    label: 2-methylisoborneol (stereochemistry unspecified)
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-0eb8c93c6f
+    grounding_status: GROUNDED
+  edges:
+  - subject: sco7701
+    predicate: is_database_annotated_biosynthetic_enzyme_for
+    object: mib
+    notes: SCO7701/Q9F1Y5, 292 aa, is the native canonical reference. The non-proposed
+      assignment reflects UniProt experimental attribution, not a newly inspected
+      primary assay. The database assigns GPP methylation to 2-MeGPP in methylisoborneol
+      biosynthesis; this edge does not assert that the methyltransferase alone produces
+      2-MIB. Genomic A3(2), 1147, the UniProt M145 label and the cited NRRL B-16638
+      stock are not equated. No exact construct, reaction order, kinetics, shell-cargo
+      relationship, native producer/BGC grade or stereochemical upgrade is asserted.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9F1Y5/entry
+      evidence_type: DATABASE_ASSERTION
+      snippet: SAM-dependent methylation of geranyl diphosphate (GPP)
+      retrieved_on: '2026-10-09'
+      notes: Reviewed entry 125, sequence 1. Function uses ECO:0000269/PMID:18563898;
+        its publication annotation includes PATHWAY and names methylisoborneol biosynthesis.
+        This is the inspected database assertion, not newly inspected primary evidence.
+        The cited DOI:10.1021/ja803639g and correction DOI:10.1021/ja104306p are access-held;
+        no kinetic values are adopted. The cited assay stock is A3(2)/NRRL B-16638,
+        not established here as identical to the genomic stocks.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAC44557.1
+      evidence_type: CURATOR_INFERENCE
+      snippet: SCO7701
+      retrieved_on: '2026-10-09'
+      notes: Native A3(2), taxon 100226, forward AL939132.1:172868..173746. All 292
+        residues match UniProt, GenPept, the annotated CDS and independent table-11
+        translation. This is canonical-reference identity, not an experimental construct.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAB20434.1
+      evidence_type: CURATOR_INFERENCE
+      snippet: orf4
+      retrieved_on: '2026-10-09'
+      notes: Native strain 1147, taxon 1902, forward AB035202.1:5872..6750. The CDS
+        and 292-aa translation exactly match the A3(2) reference. Sequence equality
+        does not equate strains or identify the cited assay stock.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/WP_011031840.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: WP_011031840.1
+      retrieved_on: '2026-10-09'
+      notes: Exact 292-aa reference; this RefSeq is multispecies (taxon 1883), not
+        a strain assignment.
+- graph_id: mib-13189-similarity-proposed-role
+  scope: BIOSYNTHESIS
+  description: An independently database-attributed role, not a shared native pathway
+    with the other reference proteins. The owner retains unspecified stereochemistry
+    and existing source grades.
+  nodes:
+  - node_id: mibs_13189
+    label: Strain-13189 2-methylisoborneol synthase (similarity-inferred)
+    node_type: ENZYME
+    identifier: UniProtKB:Q9F1V8
+    grounding_status: GROUNDED
+  - node_id: mib
+    label: 2-methylisoborneol (stereochemistry unspecified)
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-0eb8c93c6f
+    grounding_status: GROUNDED
+  edges:
+  - subject: mibs_13189
+    predicate: is_database_proposed_biosynthetic_enzyme_for
+    object: mib
+    notes: Q9F1V8/BAB20507.1, 437 aa, is a native strain-13189 reference with a similarity-inferred
+      MIB synthase role, not an assayed protein. Do not identify strain 13189 with
+      NBRC 13350 or borrow BGC0000658. The adjacent putative methyltransferase BAB20508.1
+      is not assigned a specific MIB function from neighborhood alone. No exact construct,
+      reaction order, kinetics, shell-cargo relationship, native producer/BGC grade
+      or stereochemical upgrade is asserted.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9F1V8/entry
+      evidence_type: DATABASE_ASSERTION
+      snippet: cyclization of 2-methylgeranyl diphosphate (2-MeGPP) to 2-methylisoborneol
+        (2-MIB)
+      retrieved_on: '2026-10-08'
+      notes: Reviewed entry 67, sequence 1, Streptomyces griseus/taxon 1911. Function
+        uses ECO:0000250 (sequence similarity), not experimental evidence for this
+        protein. The sequence-deposit reference names strain 13189 without a collection
+        prefix.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAB20507.1
+      evidence_type: CURATOR_INFERENCE
+      snippet: '13189'
+      retrieved_on: '2026-10-09'
+      notes: Native genomic DNA, strain 13189/taxon 1911, forward AB040071.1:5255..6568.
+        All 437 residues match UniProt, GenPept, RefSeq, the annotated CDS and independent
+        table-11 translation. Q9F1V8 differs from NBRC 13350 B1VVB4 at residues 66
+        (P/S), 67 (T/A) and 77 (W/R); they are not interchangeable references.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/WP_030703894.1
+      evidence_type: DATABASE_ASSERTION
+      snippet: WP_030703894.1
+      retrieved_on: '2026-10-09'
+      notes: Exact 437-aa species-level RefSeq, taxon 1911, without a strain qualifier.
+        Its automatic encapsulin-cargo name is not adopted as functional evidence.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -986,4 +1167,14 @@ curation_history:
     URLs and snippets. Preserve prior graphs, chemistry, source-owned claims and status.
     Do not equate reference sequences with exact cloned inserts or infer native production,
     reaction order, shell cargo, kinetics or stereochemical resolution.
+  llm_assisted: true
+- timestamp: '2026-10-09T03:04:34Z'
+  curator: OpenAI Codex
+  action: RECORD_CURATED
+  changes: Add separate database-attributed SCO7701/Q9F1Y5 and strain-13189 Q9F1V8
+    biosynthetic roles, with stable references, snippets and exact native-reference
+    identity checks. Preserve the distinction between UniProt experimental attribution
+    and similarity inference, without claiming newly inspected primary assays, exact
+    constructs, kinetics, native production, BGC upgrades, shell cargo or stereochemical
+    resolution. Preserve previous curation and status.
   llm_assisted: true
