@@ -794,12 +794,126 @@ biosynthetic_pathway:
       the exact owner. This is annotation-to-owner correspondence, not an independent
       assay stereochemical measurement. No meso-zeaxanthin, other geometrical isomer,
       astaxanthin or glycoside transfer.
+- enzyme_id: UniProtKB:Q9SZZ8
+  enzyme_label: BCH1 (A. thaliana canonical example)
+  reaction_id: RHEA:30331
+  substrate: CHEBI:17579
+  product: CHEBI:27547
+  proposed: true
+  notes: Unnumbered alternative reference annotation; no common step order. Deliberately
+    selected Arabidopsis thaliana/taxon3702 canonical-reference example, not the Xanthobacter
+    autotrophicus Py2 BGC0000656 enzyme. No producer, occurrence or BGC upgrade. Separate
+    paralog examples are alternatives, not consecutive steps or a physical protein
+    assembly. Proposed indicates qualified reference applicability, not a newly demonstrated
+    assay. Only the principal carotenoid input/output is modelled.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/Q9SZZ8
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-09'
+    notes: Reviewed UniProt entry135/sequence1, canonical310-aa precursor, protein
+      existence1. The overall RHEA:30331 assignment cites ECO:0000269/PMID:8798688,
+      but the primary paper (DOI:10.1074/jbc.271.40.24349) was not independently accessible.
+      Its original deposited protein covers canonical residues17..310, not the full
+      reference; exact historical assay-construct identity remains unresolved. The
+      canonical database example does not assert experimentally verified full-length
+      activity or isoform-2 activity. Adopted as a database assertion. Rhea is read
+      through UniProt, not a new Rhea retrieval. No mutant phenotype, physical assembly,
+      cofactor specificity, native-production or independent stereoselectivity claim.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF125576.1
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-09'
+    notes: Complete CDS AF125576.1:70..1002 translates to AAF85797.1 and canonical
+      Q9SZZ8,310aa. The seven-exon AF125577.1 CDS join(1178..1555,1635..1694,1771..1842,1916..2050,2425..2550,2656..2712,2799..2903)
+      and NM_118702.4:184..1116 yield AAF85798.1 and NP_194300.1, respectively. All
+      three933nt coding sequences are identical after splicing and translate with
+      codon_start1, standard table1 (no explicit transl_table). Native sources name
+      Arabidopsis thaliana/taxon3702; both AF12557x records lack an ecotype qualifier,
+      whereas reviewed TAIR/Araport RefSeq says Columbia. This is reference identity,
+      not a shared assay stock.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/U58919.1
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-09'
+    notes: The original Columbia mRNA has partial CDS <1..887, codon_start3. Translation
+      of its885nt in-frame segment yields AAC49443.1,294aa, exactly canonical residues17..310
+      plus a stop; that segment equals full-CDS nucleotides49..933. The missing16
+      residues are not recovered from this deposit. UniProt isoform2 changes216..224
+      GLGITVFGI to VSPSFIWSY and deletes225..310, a224-aa model whose native deposits
+      were not inspected. No activity transfer to that isoform. Predicted transit
+      peptide1..51/mature chain52..310 and annotated N-terminal deletion experiments
+      do not establish the historical construct. Other genomic cross-references uninspected.
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:27547
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-09'
+    notes: UniProt cross-references the overall reaction to CHEBI:17579 and CHEBI:27547.
+      The inspected ChEBI255 cache identifies neutral beta-carotene as OENHQHLEOONYIE-JLTXGRSLSA-N
+      and stereospecified neutral zeaxanthin as JKQXZKUSFCKOGQ-QAYBQHTQSA-N, the exact
+      owner. This is annotation-to-owner correspondence, not independent assay stereochemistry;
+      no meso-zeaxanthin, other geometrical isomer, lutein, astaxanthin or glycoside
+      transfer.
+- enzyme_id: UniProtKB:Q9LTG0
+  enzyme_label: BCH2 (A. thaliana canonical example)
+  reaction_id: RHEA:30331
+  substrate: CHEBI:17579
+  product: CHEBI:27547
+  proposed: true
+  notes: Unnumbered alternative reference annotation; no common step order. Deliberately
+    selected Arabidopsis thaliana/taxon3702 canonical-reference example, not the Xanthobacter
+    autotrophicus Py2 BGC0000656 enzyme. No producer, occurrence or BGC upgrade. Separate
+    paralog examples are alternatives, not consecutive steps or a physical protein
+    assembly. Proposed indicates qualified reference applicability, not a newly demonstrated
+    assay. Only the principal carotenoid input/output is modelled.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/Q9LTG0
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-09'
+    notes: Reviewed UniProt entry132/sequence1, canonical303-aa precursor, protein
+      existence2 at transcript level. The exact overall RHEA:30331 assignment is ECO:0000250
+      from Q9SZZ8, not an independently measured Q9LTG0 reaction. FUNCTION cites ECO:0000305
+      literature inferences; the 2001 paper (DOI:10.1023/A:1011623907959) was not
+      independently accessible. The234-aa alternative isoform is excluded; the canonical
+      reference is not asserted to be the historical assay construct. Adopted as a
+      database assertion. Rhea is read through UniProt, not a new Rhea retrieval.
+      No mutant phenotype, physical assembly, cofactor specificity, native-production
+      or independent stereoselectivity claim.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB025606.1?from=14249&to=16225
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-09'
+    notes: The bounded genomic slice14249..16225 contains the complete reverse-strand
+      seven-exon CDS complement(join(14249..14338,14478..14534,14637..14762,15093..15227,15321..15392,15710..15769,15854..16225)),
+      translating to BAA98075.1 and canonical Q9LTG0,303aa. AY074394.1:23..934, AY117225.1:1..912
+      and NM_124636.4:240..1151 yield AAL67090.1, AAM51300.1 and NP_200070.1. All
+      four912nt coding sequences are identical after splicing and translate with codon_start1,
+      standard table1 (no explicit transl_table). All inspected native sources name
+      Arabidopsis thaliana/taxon3702, ecotypeColumbia. cDNA clones RAFL09-37-B08(R18630)
+      and U18630 and reviewed TAIR/Araport RefSeq establish reference correspondence,
+      not historical assay-stock identity.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/NM_001125948.1
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-09'
+    notes: Alternative RefSeq CDS116..820 translates to NP_001119420.1,234aa, matching
+      UniProt Q9LTG0-2. Its705nt coding sequence equals the canonical CDS with nucleotides430..636
+      removed; the corresponding protein lacks canonical residues144..212. This distinct
+      isoform is excluded from the graph and pathway example. RefSeq gene-level function
+      text is not independent isoform-specific activity evidence. Predicted transit
+      peptide1..52/mature chain53..303 does not define an assay construct. Other genomic
+      cross-references and ESTs were not inspected.
+  - reference: https://www.ebi.ac.uk/chebi/CHEBI:27547
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-09'
+    notes: UniProt cross-references the overall reaction to CHEBI:17579 and CHEBI:27547.
+      The inspected ChEBI255 cache identifies neutral beta-carotene as OENHQHLEOONYIE-JLTXGRSLSA-N
+      and stereospecified neutral zeaxanthin as JKQXZKUSFCKOGQ-QAYBQHTQSA-N, the exact
+      owner. This is annotation-to-owner correspondence, not independent assay stereochemistry;
+      no meso-zeaxanthin, other geometrical isomer, lutein, astaxanthin or glycoside
+      transfer.
 causal_graph_refs:
 - zeaxanthin-crtz-p21688-database
 - zeaxanthin-crtz-p54973-database
 - zeaxanthin-crtz-q44262-database
 - zeaxanthin-ca1-o49815-database
 - zeaxanthin-crtz-q9spk6-database
+- zeaxanthin-bch1-q9szz8-database
+- zeaxanthin-bch2-q9ltg0-database
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -850,4 +964,15 @@ curation_history:
     chain, with transit peptide 1..58, not a cleavage interval. Preserved the limitation
     that this is not an independently verified assay-construct mapping. No identity,
     function, graph edge, source field or evidence grade changed.'
+  llm_assisted: true
+- timestamp: '2026-10-09T18:54:23Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added canonical-reference BCH1/Q9SZZ8 and BCH2/Q9LTG0 database examples:
+    two BIOSYNTHESIS graphs, six cited edges, two unnumbered proposed pathway entries
+    and two verbatim UniProt snippets. Preserved BCH1 historical 294-aa fragment versus310-aa
+    canonical limits, ecotype qualifiers, BCH2 similarity-derived reaction and excluded234-aa
+    isoform. No primary assay-construct equality, full-length activity proof, native-production,
+    BGC, producer, occurrence or assembly upgrade. Existing five components and all
+    prior biology/history retained; SEEDED unchanged, no full-record sign-off.'
   llm_assisted: true
