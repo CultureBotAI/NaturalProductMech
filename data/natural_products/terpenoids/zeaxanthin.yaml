@@ -741,8 +741,8 @@ biosynthetic_pathway:
       LL->FF,225 L->I,259 N->K,298 L->I and312 S->L, exactly the five UniProt sequence-conflict
       features covering six residues. No adjudication of sequencing error versus biological
       variation, and no transfer of a historical assay to the present canonical sequence.
-      Predicted transit cleavage59..315 and the ten annotated H->A mutants are not
-      assayed-construct mappings.
+      Predicted mature chain 59..315 (transit peptide 1..58) and the ten annotated
+      H->A mutants are not assayed-construct mappings.
   - reference: https://www.ebi.ac.uk/chebi/CHEBI:27547
     evidence_type: CURATOR_INFERENCE
     retrieved_on: '2026-10-09'
@@ -842,4 +842,12 @@ curation_history:
     all three existing graphs without changing their content into exact-owner components
     to retain full evidence within64KiB. Preserved all existing pathway entries, seeder
     fields, prior history and SEEDED status; no full-record sign-off.'
+  llm_assisted: true
+- timestamp: '2026-10-09T18:13:27Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Fixed issue #757: described predicted O49815 residues 59..315 as the mature
+    chain, with transit peptide 1..58, not a cleavage interval. Preserved the limitation
+    that this is not an independently verified assay-construct mapping. No identity,
+    function, graph edge, source field or evidence grade changed.'
   llm_assisted: true
