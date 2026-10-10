@@ -759,6 +759,10 @@ causal_graphs:
       notes: 'S2 Fig B spectrum: cosine 0.7741; figure library CCMSLIB00003135712
         differs from caption CCMSLIB00001059066. The author-assigned DFO B signal
         is retained with this discrepancy, not independently reidentified.'
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AL939118.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Coordinate comparison: SCO4049 213677..216025(+); SCO4050 216018..216638(+);
+        eight shared bases. Reference geometry does not demonstrate polar effects.'
   - subject: desg_perturbation
     predicate: disrupts_encoding_gene_of
     object: desg
@@ -801,6 +805,15 @@ causal_graphs:
       evidence_type: PRIMARY_EXPERIMENT
       notes: 'S4 Table: free B [M+H]+, predicted 561.3606 m/z. Metal-bound/adduct
         channels are not this compound node.'
+    - reference: DOI:10.1371/journal.pbio.3003183.s002
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'S2 Fig B spectrum: cosine 0.7741; figure library CCMSLIB00003135712
+        differs from caption CCMSLIB00001059066. The author-assigned DFO B signal
+        is retained with this discrepancy, not independently reidentified.'
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AL939118.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Coordinate comparison: SCO4049 213677..216025(+); SCO4050 216018..216638(+);
+        eight shared bases. Reference geometry does not demonstrate polar effects.'
   - subject: desh_perturbation
     predicate: disrupts_encoding_gene_of
     object: desh
@@ -845,6 +858,15 @@ causal_graphs:
       evidence_type: PRIMARY_EXPERIMENT
       notes: 'S4 Table: free B [M+H]+, predicted 561.3606 m/z. Metal-bound/adduct
         channels are not this compound node.'
+    - reference: DOI:10.1371/journal.pbio.3003183.s002
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'S2 Fig B spectrum: cosine 0.7741; figure library CCMSLIB00003135712
+        differs from caption CCMSLIB00001059066. The author-assigned DFO B signal
+        is retained with this discrepancy, not independently reidentified.'
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AL939118.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'Coordinate comparison: SCO4049 213677..216025(+); SCO4050 216018..216638(+);
+        eight shared bases. Reference geometry does not demonstrate polar effects.'
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
   curator: seed_from_sources
@@ -865,4 +887,11 @@ curation_history:
     and supplements. Verified native UniProt sequences and published primers. Preserved
     existing mechanisms, source assertions and SEEDED status; no direct catalytic
     reactions, metal-complex equivalence or exact mutant sequences added.
+  llm_assisted: true
+- timestamp: '2026-10-10T20:11:42Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Addressed adversarial review #785: each DesJGH phenotype edge now carries
+    its own spectral-identification caveats and native-overlap inference citation.
+    No effect directions, protein identities or prior mechanisms changed.'
   llm_assisted: true
