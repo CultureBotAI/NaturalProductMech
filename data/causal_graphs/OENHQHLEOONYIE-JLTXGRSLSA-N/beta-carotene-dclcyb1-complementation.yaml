@@ -1,0 +1,86 @@
+record_id: CHEBI:17579
+standard_inchi_key: OENHQHLEOONYIE-JLTXGRSLSA-N
+graph:
+  graph_id: beta-carotene-dclcyb1-complementation
+  scope: BIOSYNTHESIS
+  description: DcLCYB1 complementation and a separately identified sequence reference.
+    No BGC0000646 assignment, exact substrate/reaction, cofactor, assembly, native-producer,
+    origin, taxonomy or bioactivity upgrade. Existing chemical and access holds remain.
+  nodes:
+  - node_id: dclcyb1_tested
+    label: DcLCYB1 (Nantaise assay; sequence unresolved)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: dclcyb1_reference
+    label: LCYB (B493 reference; not verified assay sequence)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q2VEX7
+    grounding_status: GROUNDED
+  - node_id: complementation
+    label: DcLCYB1 heterologous complementation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: beta_carotene
+    label: beta-carotene
+    node_type: COMPOUND
+    identifier: CHEBI:17579
+    grounding_status: GROUNDED
+  edges:
+  - subject: dclcyb1_tested
+    predicate: is_expressed_in
+    object: complementation
+    notes: Assay participation, not purified-enzyme kinetics or canonical-reference
+      activity.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0058144
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-10'
+      notes: 'Methods and Fig.4: Nantaise-derived pET-Blue1/Lcyb1 in E. coli BL21
+        gold carrying pDS1B-delta-crtY; IPTG induction, empty-vector control.'
+  - subject: complementation
+    predicate: has_reported_product
+    object: beta_carotene
+    notes: Reported HPLC assignment; no isomer-purity or stereoselectivity measurement.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0058144
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-10'
+      notes: 'Fig.4: complemented cells show the assigned beta-carotene peak; control
+        lacks it. Methods use retention, absorption spectra and pigment standards.'
+      snippet: leading to β-carotene production.
+  - subject: dclcyb1_reference
+    predicate: is_cited_sequence_reference_for
+    object: dclcyb1_tested
+    notes: Reference correspondence only, not sequence equality; see curator-dclcyb1-construct-reference.
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0058144
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Paper cites DQ192190 but Fig.2 ends at residue521. Table1 reverse primers
+        map beyond the reference stop, including the purported stopless fusion primer.
+        Complete assay-construct sequence remains unresolved.
+    - reference: https://www.uniprot.org/uniprotkb/Q2VEX7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: UniProt2026_03, unreviewed entry61/sequence1; taxon79200, 508aa, LCYB,
+        DQ192190/ABB52071.1. GROUNDED identifies this reference only. Automatic ARBA
+        pathway annotations are not experimental evidence; RefSeq NP_001316089.1 was
+        not inspected.
+    - reference: https://www.ebi.ac.uk/ena/browser/view/DQ192190.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete B493 mRNA CDS408..1934, 1527nt, ATG, codon_start1, standard
+        code1 (no explicit transl_table), TAG stop; independent translation matches
+        ABB52071.1 and Q2VEX7, all508aa. Table1 forward primer matches408..428; reverse-primer
+        annealing spans1994..2013 (complete) or1997..2013 (localization). Predicted
+        amplicon408..2013 is1606nt and retains TAG. This reference calculation does
+        not establish the actual Nantaise clone, readthrough, processing or a corrected
+        construct.
+curation_history:
+- timestamp: '2026-10-10T20:52:29Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added four nodes and three cited edges separating the tested DcLCYB1 from
+    the Q2VEX7 reference. Primary assay evidence, database identity and sequence/primer
+    inference remain distinct; no full-record sign-off.
+  llm_assisted: true

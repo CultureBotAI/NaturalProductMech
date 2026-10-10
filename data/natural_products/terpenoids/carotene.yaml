@@ -647,6 +647,23 @@ discussions:
     explanation: Reviewed database annotation and sequence alternatives, not an independently
       inspected primary assay. Native reference comparisons are cited on the graph
       catalyst edge.
+- discussion_id: curator-dclcyb1-construct-reference
+  kind: OPEN_QUESTION
+  status: OPEN
+  prompt: What is the complete Nantaise assay sequence, and how does it map to the
+    B493 reference?
+  attaches_to:
+  - causal_graphs#beta-carotene-dclcyb1-complementation
+  posed_by: codex
+  posed_date: '2026-10-10'
+  rationale: Resolve cultivar, alignment length and primer discrepancies before assigning
+    a UniProt accession to the tested protein. Do not transfer DcLCYB1 activity to
+    DcLCYB2.
+  evidence:
+  - reference: DOI:10.1371/journal.pone.0058144
+    evidence_source: literature
+    explanation: Construct ambiguity is recorded on the reference edge; no sequence
+      correction is inferred.
 biosynthetic_pathway:
 - enzyme_id: UniProtKB:P21687
   enzyme_label: CrtY (Pantoea ananas reference)
@@ -682,14 +699,16 @@ biosynthetic_pathway:
       verified historical assay stock. Reference equality is not historical assay-stock/construct
       identity or functional proof. Clipped neighboring CDS annotations in the bounded
       slice were not adopted.
-  - reference: https://www.ebi.ac.uk/chebi/CHEBI:27740
+  - &id001
+    reference: https://www.ebi.ac.uk/chebi/CHEBI:27740
     evidence_type: CURATOR_INFERENCE
     retrieved_on: '2026-10-09'
     notes: 'Inspected ChEBI255 gamma-carotene: neutral C40H56, Standard InChIKeyHRQKOYFGHJYEFS-BXOLYSJBSA-N.
       Independent RDKit2026.03.5 parsing of cached SMILES and InChI reproduces the
       full key. This is exact database chemical-identity correspondence, not an independent
       experimental structure or stereoselectivity measurement.'
-  - reference: https://www.ebi.ac.uk/chebi/CHEBI:17579
+  - &id002
+    reference: https://www.ebi.ac.uk/chebi/CHEBI:17579
     evidence_type: CURATOR_INFERENCE
     retrieved_on: '2026-10-09'
     notes: 'Inspected ChEBI255 beta-carotene: neutral C40H56, Standard InChIKeyOENHQHLEOONYIE-JLTXGRSLSA-N.
@@ -732,21 +751,8 @@ biosynthetic_pathway:
       do not establish an assembly. Reference equality is not historical assay-stock/construct
       identity or functional proof. Clipped neighboring CDS annotations in the bounded
       slice were not adopted.
-  - reference: https://www.ebi.ac.uk/chebi/CHEBI:27740
-    evidence_type: CURATOR_INFERENCE
-    retrieved_on: '2026-10-09'
-    notes: 'Inspected ChEBI255 gamma-carotene: neutral C40H56, Standard InChIKeyHRQKOYFGHJYEFS-BXOLYSJBSA-N.
-      Independent RDKit2026.03.5 parsing of cached SMILES and InChI reproduces the
-      full key. This is exact database chemical-identity correspondence, not an independent
-      experimental structure or stereoselectivity measurement.'
-  - reference: https://www.ebi.ac.uk/chebi/CHEBI:17579
-    evidence_type: CURATOR_INFERENCE
-    retrieved_on: '2026-10-09'
-    notes: 'Inspected ChEBI255 beta-carotene: neutral C40H56, Standard InChIKeyOENHQHLEOONYIE-JLTXGRSLSA-N.
-      Independent RDKit2026.03.5 parsing of cached SMILES and InChI reproduces the
-      full key. The existing MIBiG-derived owner SMILES and InChI independently give
-      this same key. This is exact database chemical-identity correspondence, not
-      an independent experimental structure or stereoselectivity measurement.'
+  - *id001
+  - *id002
 - enzyme_id: UniProtKB:P54974
   enzyme_label: CrtY (Paracoccus sp. N81106 reference)
   reaction_id: RHEA:32239
@@ -795,21 +801,8 @@ biosynthetic_pathway:
       an inspected assay construct. Reference equality is not historical assay-stock/construct
       identity or functional proof. Clipped neighboring CDS annotations in the bounded
       slice were not adopted.
-  - reference: https://www.ebi.ac.uk/chebi/CHEBI:27740
-    evidence_type: CURATOR_INFERENCE
-    retrieved_on: '2026-10-09'
-    notes: 'Inspected ChEBI255 gamma-carotene: neutral C40H56, Standard InChIKeyHRQKOYFGHJYEFS-BXOLYSJBSA-N.
-      Independent RDKit2026.03.5 parsing of cached SMILES and InChI reproduces the
-      full key. This is exact database chemical-identity correspondence, not an independent
-      experimental structure or stereoselectivity measurement.'
-  - reference: https://www.ebi.ac.uk/chebi/CHEBI:17579
-    evidence_type: CURATOR_INFERENCE
-    retrieved_on: '2026-10-09'
-    notes: 'Inspected ChEBI255 beta-carotene: neutral C40H56, Standard InChIKeyOENHQHLEOONYIE-JLTXGRSLSA-N.
-      Independent RDKit2026.03.5 parsing of cached SMILES and InChI reproduces the
-      full key. The existing MIBiG-derived owner SMILES and InChI independently give
-      this same key. This is exact database chemical-identity correspondence, not
-      an independent experimental structure or stereoselectivity measurement.'
+  - *id001
+  - *id002
 - enzyme_id: UniProtKB:Q9HNE5
   enzyme_label: CrtY (H. salinarum NRC-1 canonical reference)
   reaction_id: RHEA:32239
@@ -852,23 +845,8 @@ biosynthetic_pathway:
       ALT_INIT/truncated-N-terminus caution; this is not a verified162aa assay construct
       or evidence that the canonical reference is experimentally full-length. The
       old IEA phytoene-synthase label and clipped Blh neighbor are not adopted.
-  - &id001
-    reference: https://www.ebi.ac.uk/chebi/CHEBI:27740
-    evidence_type: CURATOR_INFERENCE
-    retrieved_on: '2026-10-09'
-    notes: 'Inspected ChEBI255 gamma-carotene: neutral C40H56, Standard InChIKeyHRQKOYFGHJYEFS-BXOLYSJBSA-N.
-      Independent RDKit2026.03.5 parsing of cached SMILES and InChI reproduces the
-      full key. This is exact database chemical-identity correspondence, not an independent
-      experimental structure or stereoselectivity measurement.'
-  - &id002
-    reference: https://www.ebi.ac.uk/chebi/CHEBI:17579
-    evidence_type: CURATOR_INFERENCE
-    retrieved_on: '2026-10-09'
-    notes: 'Inspected ChEBI255 beta-carotene: neutral C40H56, Standard InChIKeyOENHQHLEOONYIE-JLTXGRSLSA-N.
-      Independent RDKit2026.03.5 parsing of cached SMILES and InChI reproduces the
-      full key. The existing MIBiG-derived owner SMILES and InChI independently give
-      this same key. This is exact database chemical-identity correspondence, not
-      an independent experimental structure or stereoselectivity measurement.'
+  - *id001
+  - *id002
 - enzyme_id: UniProtKB:Q01331
   enzyme_label: CrtY (Eho 10 database reference)
   reaction_id: RHEA:32239
@@ -1040,23 +1018,8 @@ biosynthetic_pathway:
       and their phenotype annotations are not canonical source evidence and are not
       adopted. Predicted transmembrane segments do not prove assembly or processing.
       Related AJ238028 was not inspected; no cofactor or induction claim.
-  - &id003
-    reference: https://www.ebi.ac.uk/chebi/CHEBI:27740
-    evidence_type: CURATOR_INFERENCE
-    retrieved_on: '2026-10-09'
-    notes: 'Inspected ChEBI255 gamma-carotene: neutral C40H56, Standard InChIKeyHRQKOYFGHJYEFS-BXOLYSJBSA-N.
-      Independent RDKit2026.03.5 parsing of cached SMILES and InChI reproduces the
-      full key. This is exact database chemical-identity correspondence, not an independent
-      experimental structure or stereoselectivity measurement.'
-  - &id004
-    reference: https://www.ebi.ac.uk/chebi/CHEBI:17579
-    evidence_type: CURATOR_INFERENCE
-    retrieved_on: '2026-10-09'
-    notes: 'Inspected ChEBI255 beta-carotene: neutral C40H56, Standard InChIKeyOENHQHLEOONYIE-JLTXGRSLSA-N.
-      Independent RDKit2026.03.5 parsing of cached SMILES and InChI reproduces the
-      full key. The existing MIBiG-derived owner SMILES and InChI independently give
-      this same key. This is exact database chemical-identity correspondence, not
-      an independent experimental structure or stereoselectivity measurement.'
+  - *id001
+  - *id002
 - enzyme_id: UniProtKB:Q67GH9
   enzyme_label: CarRA (B. trispora canonical P143 reference)
   reaction_id: RHEA:32239
@@ -1111,8 +1074,8 @@ biosynthetic_pathway:
       to P143, infer engineered origin, or treat the source industrial-strain note
       as a measured phenotype. PatentP200200202 was not inspected. No induction, cofactor,
       processing or assembly claim.
-  - *id003
-  - *id004
+  - *id001
+  - *id002
 causal_graph_refs:
 - beta-carotene-crty-p21687-database
 - beta-carotene-crty-b0r753-database
@@ -1143,6 +1106,7 @@ causal_graph_refs:
 - beta-lcyb-q43503-db
 - beta-lcyb-d9il23-db
 - beta-lcyb-q43578-db
+- beta-carotene-dclcyb1-complementation
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -1248,4 +1212,12 @@ curation_history:
   action: RECORD_CURATED
   changes: Added five database-qualified LCY-B biosynthesis reference graphs. Component
     evidence records reaction, sequence and assay limits. Prior biology/history preserved.
+  llm_assisted: true
+- timestamp: '2026-10-10T20:52:29Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added bounded DcLCYB1 complementation graph and unresolved assay-reference
+    discussion. Existing identical chemistry evidence uses YAML aliases without semantic
+    changes. All29 prior graphs, nine pathway steps, source fields, history and SEEDED
+    status preserved.
   llm_assisted: true
