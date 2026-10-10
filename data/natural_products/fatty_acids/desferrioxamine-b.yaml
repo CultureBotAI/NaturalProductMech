@@ -667,6 +667,184 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000940, BGC0000941,
     BGC0001453, BGC0002305. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
+causal_graphs:
+- graph_id: desferrioxamine-b-desjgh-bounded-genetics
+  scope: BIOSYNTHESIS
+  description: Streptomyces coelicolor M145 premature-stop genetics. Five-day ISP-2
+    extract LC-HRMS/MS signals are assigned to free desferrioxamine B, not metal complexes
+    or absolute concentrations. Canonical proteins denote targeted loci, not mutant
+    sequences. No direct catalysis, complete activity loss, protein-specific independence,
+    or quantitative complementation rescue is asserted. Gene-only traces do not distinguish
+    alternative stop alleles.
+  nodes:
+  - node_id: product
+    label: desferrioxamine B
+    node_type: COMPOUND
+    identifier: CHEBI:4356
+    grounding_status: GROUNDED
+  - node_id: desj
+    label: DesJ (SCO4048) native reference
+    node_type: PROTEIN
+    identifier: UniProtKB:Q9AK69
+    grounding_status: GROUNDED
+  - node_id: desj_perturbation
+    label: desJ premature-stop mutant
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: desg
+    label: DesG (SCO4049) native reference
+    node_type: PROTEIN
+    identifier: UniProtKB:Q9AK68
+    grounding_status: GROUNDED
+  - node_id: desg_perturbation
+    label: desG premature-stop mutant
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: desh
+    label: DesH (SCO4050) native reference
+    node_type: PROTEIN
+    identifier: UniProtKB:Q9AK67
+    grounding_status: GROUNDED
+  - node_id: desh_perturbation
+    label: desH premature-stop mutant
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: desj_perturbation
+    predicate: disrupts_encoding_gene_of
+    object: desj
+    notes: 'SCO4048: designed W55* or Q68*; no mutant protein accession assigned.
+      DesJ complement is pGWS1596 in methods but pGWS1586 in S5 Table.'
+    evidence:
+    - reference: DOI:10.1371/journal.pbio.3003183
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results 4; mutant construction methods.
+    - reference: DOI:10.1371/journal.pbio.3003183.s013
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'S5 Table: constructs; plasmid-name disagreements retained above.'
+    - reference: DOI:10.1371/journal.pbio.3003183.s014
+      evidence_type: CURATOR_INFERENCE
+      notes: S6 Table guide and check-primer sequences map uniquely in AL939118.1;
+        target codons permit stop-generating base edits. Complement primers replace
+        the native stop with TAA without changing translated residues.
+    - reference: https://www.uniprot.org/uniprotkb/Q9AK69
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed SCO4048, taxon 100226 (A3(2)/M145), 241 aa, sequence version
+        1; EMBL protein CAC32319.1. Automated functional annotations are not adopted.
+      retrieved_on: '2026-10-10'
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AL939118.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'CAC32319.1: full native CDS translation under table 11 equals Q9AK69.
+        Reference matching does not sequence the experimental stock.'
+  - subject: desj_perturbation
+    predicate: increases_assigned_LC_MS_signal_of
+    object: product
+    notes: Genetic metabolite-profile comparison, not purified enzyme activity. Native
+      desG/desH coding intervals overlap by eight bases; polar effects, bystander
+      edits and pathway compensation are not excluded.
+    evidence:
+    - reference: DOI:10.1371/journal.pbio.3003183
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results 4, Fig 3a; extraction and LC-MS methods.
+      snippet: only the levels of DFO B
+    - reference: DOI:10.1371/journal.pbio.3003183.s004
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'S4 Fig: genotype-labelled extracted-ion chromatograms.'
+    - reference: DOI:10.1371/journal.pbio.3003183.s012
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'S4 Table: free B [M+H]+, predicted 561.3606 m/z. Metal-bound/adduct
+        channels are not this compound node.'
+    - reference: DOI:10.1371/journal.pbio.3003183.s002
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'S2 Fig B spectrum: cosine 0.7741; figure library CCMSLIB00003135712
+        differs from caption CCMSLIB00001059066. The author-assigned DFO B signal
+        is retained with this discrepancy, not independently reidentified.'
+  - subject: desg_perturbation
+    predicate: disrupts_encoding_gene_of
+    object: desg
+    notes: 'SCO4049: designed W61*; no mutant protein accession assigned.'
+    evidence:
+    - reference: DOI:10.1371/journal.pbio.3003183
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results 4; mutant construction methods.
+    - reference: DOI:10.1371/journal.pbio.3003183.s013
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'S5 Table: constructs; plasmid-name disagreements retained above.'
+    - reference: DOI:10.1371/journal.pbio.3003183.s014
+      evidence_type: CURATOR_INFERENCE
+      notes: S6 Table guide and check-primer sequences map uniquely in AL939118.1;
+        target codons permit stop-generating base edits. Complement primers replace
+        the native stop with TAA without changing translated residues.
+    - reference: https://www.uniprot.org/uniprotkb/Q9AK68
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed SCO4049, taxon 100226 (A3(2)/M145), 782 aa, sequence version
+        1; EMBL protein CAC32320.1. Automated functional annotations are not adopted.
+      retrieved_on: '2026-10-10'
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AL939118.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'CAC32320.1: full native CDS translation under table 11 equals Q9AK68.
+        Reference matching does not sequence the experimental stock.'
+  - subject: desg_perturbation
+    predicate: decreases_assigned_LC_MS_signal_of
+    object: product
+    notes: Genetic metabolite-profile comparison, not purified enzyme activity. Native
+      desG/desH coding intervals overlap by eight bases; polar effects, bystander
+      edits and pathway compensation are not excluded.
+    evidence:
+    - reference: DOI:10.1371/journal.pbio.3003183
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results 4, Fig 3a; extraction and LC-MS methods.
+    - reference: DOI:10.1371/journal.pbio.3003183.s004
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'S4 Fig: genotype-labelled extracted-ion chromatograms.'
+    - reference: DOI:10.1371/journal.pbio.3003183.s012
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'S4 Table: free B [M+H]+, predicted 561.3606 m/z. Metal-bound/adduct
+        channels are not this compound node.'
+  - subject: desh_perturbation
+    predicate: disrupts_encoding_gene_of
+    object: desh
+    notes: 'SCO4050: designed W43* or Q91*; no mutant protein accession assigned.
+      W43* vector is pGWS1598 in methods but pGWS1589 in S5 Table; pGWS1598 also names
+      the complement.'
+    evidence:
+    - reference: DOI:10.1371/journal.pbio.3003183
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results 4; mutant construction methods.
+    - reference: DOI:10.1371/journal.pbio.3003183.s013
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'S5 Table: constructs; plasmid-name disagreements retained above.'
+    - reference: DOI:10.1371/journal.pbio.3003183.s014
+      evidence_type: CURATOR_INFERENCE
+      notes: S6 Table guide and check-primer sequences map uniquely in AL939118.1;
+        target codons permit stop-generating base edits. Complement primers replace
+        the native stop with TAA without changing translated residues.
+    - reference: https://www.uniprot.org/uniprotkb/Q9AK67
+      evidence_type: DATABASE_ASSERTION
+      notes: Unreviewed SCO4050, taxon 100226 (A3(2)/M145), 206 aa, sequence version
+        1; EMBL protein CAC32321.1. Automated functional annotations are not adopted.
+      retrieved_on: '2026-10-10'
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AL939118.1
+      evidence_type: CURATOR_INFERENCE
+      notes: 'CAC32321.1: full native CDS translation under table 11 equals Q9AK67.
+        Reference matching does not sequence the experimental stock.'
+  - subject: desh_perturbation
+    predicate: decreases_assigned_LC_MS_signal_of
+    object: product
+    notes: Genetic metabolite-profile comparison, not purified enzyme activity. Native
+      desG/desH coding intervals overlap by eight bases; polar effects, bystander
+      edits and pathway compensation are not excluded.
+    evidence:
+    - reference: DOI:10.1371/journal.pbio.3003183
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results 4, Fig 3a; extraction and LC-MS methods.
+    - reference: DOI:10.1371/journal.pbio.3003183.s004
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'S4 Fig: genotype-labelled extracted-ion chromatograms.'
+    - reference: DOI:10.1371/journal.pbio.3003183.s012
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'S4 Table: free B [M+H]+, predicted 561.3606 m/z. Metal-bound/adduct
+        channels are not this compound node.'
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
   curator: seed_from_sources
@@ -680,3 +858,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-10T20:03:19Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added bounded DesJGH genetics for desferrioxamine B from DOI:10.1371/journal.pbio.3003183
+    and supplements. Verified native UniProt sequences and published primers. Preserved
+    existing mechanisms, source assertions and SEEDED status; no direct catalytic
+    reactions, metal-complex equivalence or exact mutant sequences added.
+  llm_assisted: true

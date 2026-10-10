@@ -272,6 +272,61 @@ derived from a source. This is what the rest of the record exists to support.</p
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">Streptomyces coelicolor M145 premature-stop genetics. Five-day ISP-2 extract LC-HRMS/MS signals are assigned to free desferrioxamine E, not metal complexes or absolute concentrations. Canonical proteins denote targeted loci, not mutant sequences. No direct catalysis, complete activity loss, protein-specific independence, or quantitative complementation rescue is asserted. Gene-only traces do not distinguish alternative stop alleles.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>desG premature-stop mutant</td>
+  <td>disrupts_encoding_gene_of</td>
+  <td>DesG (SCO4049) native reference</td>
+  <td>SCO4049: designed W61*; no mutant protein accession assigned.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pbio.3003183<br>DOI:10.1371/journal.pbio.3003183.s013<br>DOI:10.1371/journal.pbio.3003183.s014<br>https://www.uniprot.org/uniprotkb/Q9AK68<br>https://www.ebi.ac.uk/ena/browser/view/AL939118.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results 4; mutant construction methods.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183.s013</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S5 Table: constructs; plasmid-name disagreements retained above.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183.s014</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>S6 Table guide and check-primer sequences map uniquely in AL939118.1; target codons permit stop-generating base edits. Complement primers replace the native stop with TAA without changing translated residues.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9AK68</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Unreviewed SCO4049, taxon 100226 (A3(2)/M145), 782 aa, sequence version 1; EMBL protein CAC32320.1. Automated functional annotations are not adopted.</dd><dt>retrieved on</dt><dd>2026-10-10</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/ena/browser/view/AL939118.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>CAC32320.1: full native CDS translation under table 11 equals Q9AK68. Reference matching does not sequence the experimental stock.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>desG premature-stop mutant</td>
+  <td>increases_assigned_LC_MS_signal_of</td>
+  <td>desferrioxamine E</td>
+  <td>Genetic metabolite-profile comparison, not purified enzyme activity. Native desG/desH coding intervals overlap by eight bases; polar effects, bystander edits and pathway compensation are not excluded.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pbio.3003183<br>DOI:10.1371/journal.pbio.3003183.s004<br>DOI:10.1371/journal.pbio.3003183.s012<br>DOI:10.1371/journal.pbio.3003183.s002</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results 4, Fig 3a; extraction and LC-MS methods.</dd><dt>snippet</dt><dd>significant increase in DFO E</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183.s004</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S4 Fig: genotype-labelled extracted-ion chromatograms.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183.s012</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S4 Table: free E [M+H]+, predicted 601.3556 m/z. Metal-bound/adduct channels are not this compound node.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183.s002</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S2 Fig E spectrum: cosine 0.9981, library CCMSLIB00005467773. This is spectral annotation, not a new structural determination.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>desH premature-stop mutant</td>
+  <td>disrupts_encoding_gene_of</td>
+  <td>DesH (SCO4050) native reference</td>
+  <td>SCO4050: designed W43* or Q91*; no mutant protein accession assigned. W43* vector is pGWS1598 in methods but pGWS1589 in S5 Table; pGWS1598 also names the complement.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pbio.3003183<br>DOI:10.1371/journal.pbio.3003183.s013<br>DOI:10.1371/journal.pbio.3003183.s014<br>https://www.uniprot.org/uniprotkb/Q9AK67<br>https://www.ebi.ac.uk/ena/browser/view/AL939118.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results 4; mutant construction methods.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183.s013</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S5 Table: constructs; plasmid-name disagreements retained above.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183.s014</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>S6 Table guide and check-primer sequences map uniquely in AL939118.1; target codons permit stop-generating base edits. Complement primers replace the native stop with TAA without changing translated residues.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9AK67</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Unreviewed SCO4050, taxon 100226 (A3(2)/M145), 206 aa, sequence version 1; EMBL protein CAC32321.1. Automated functional annotations are not adopted.</dd><dt>retrieved on</dt><dd>2026-10-10</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/ena/browser/view/AL939118.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>CAC32321.1: full native CDS translation under table 11 equals Q9AK67. Reference matching does not sequence the experimental stock.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>desH premature-stop mutant</td>
+  <td>increases_assigned_LC_MS_signal_of</td>
+  <td>desferrioxamine E</td>
+  <td>Genetic metabolite-profile comparison, not purified enzyme activity. Native desG/desH coding intervals overlap by eight bases; polar effects, bystander edits and pathway compensation are not excluded.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pbio.3003183<br>DOI:10.1371/journal.pbio.3003183.s004<br>DOI:10.1371/journal.pbio.3003183.s012</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Results 4, Fig 3a; extraction and LC-MS methods.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183.s004</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S4 Fig: genotype-labelled extracted-ion chromatograms.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pbio.3003183.s012</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>S4 Table: free E [M+H]+, predicted 601.3556 m/z. Metal-bound/adduct channels are not this compound node.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">25</span></h2>
