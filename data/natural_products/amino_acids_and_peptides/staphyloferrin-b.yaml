@@ -998,6 +998,8 @@ causal_graphs:
         equivalence of the two stocks is asserted. Sequence equality grounds a reference
         only, not an assayed construct, historical stock, native expression or function.
         Source/genomic annotations are not functional experiments.
+causal_graph_refs:
+- staphyloferrin-b-newman-sbnab-genetic-evidence
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
   curator: seed_from_sources
@@ -1028,4 +1030,13 @@ curation_history:
     direct binding, virulence phenotype, antimicrobial claim, transported charge-state
     assertion or producer/BGC upgrade. All seeder-owned fields and history preserved;
     SEEDED, not full-record sign-off.'
+  llm_assisted: true
+- timestamp: '2026-10-10T22:32:29Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added bounded Newman SbnA/A6QDA0 and SbnB/A0A0H3K9Y6 genetic references
+    from DOI:10.1186/1471-2180-11-199. Five nodes and four cited edges; canonical
+    sequence identity is separate from mutant stock identity. No exact catalytic,
+    producer, BGC or origin upgrade. Existing four graphs, four pathway steps, source-owned
+    fields, history and SEEDED status retained.
   llm_assisted: true
