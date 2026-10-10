@@ -329,6 +329,181 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-9c2e971d70
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: 8-azaguanine-cgmcc41633-def-genetic-evidence
+  scope: BIOSYNTHESIS
+  description: Bounded genetic evidence for native-reference 8-AzgD/E/F in Streptomyces
+    pathocidini CGMCC4.1633 (named S. albus subsp. pathocidicus in Hou et al.). The
+    three deletion interventions and their product phenotypes are distinct from the
+    encoded proteins. Main article and Figures 1/2 inspected; supplements and exact
+    mutant constructs were not. CHEBI:63486 is the neutral free-base compound anchor,
+    not an experimentally resolved solution tautomer or protonation state. No catalytic
+    reaction, physical complex, universal necessity, other-strain Ptn equivalence,
+    or producer/BGC evidence upgrade is asserted.
+  nodes:
+  - node_id: azaguanine
+    label: 8-azaguanine
+    node_type: COMPOUND
+    identifier: CHEBI:63486
+    grounding_status: GROUNDED
+  - node_id: azgd_reference
+    label: 8-AzgD (CGMCC4.1633 native reference)
+    node_type: PROTEIN
+    identifier: NCBIProtein:QLM04718.1
+    grounding_status: GROUNDED
+  - node_id: azgd_deletion
+    label: CGMCC4.1633 8-azgD deletion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: azge_reference
+    label: 8-AzgE (CGMCC4.1633 native reference)
+    node_type: PROTEIN
+    identifier: NCBIProtein:QLM04711.1
+    grounding_status: GROUNDED
+  - node_id: azge_deletion
+    label: CGMCC4.1633 8-azgE deletion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: azgf_reference
+    label: 8-AzgF (CGMCC4.1633 native reference)
+    node_type: PROTEIN
+    identifier: NCBIProtein:QLM04712.1
+    grounding_status: GROUNDED
+  - node_id: azgf_deletion
+    label: CGMCC4.1633 8-azgF deletion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: azgd_deletion
+    predicate: deletes_gene_represented_by
+    object: azgd_reference
+    notes: The identifier denotes the deposited native gene product, not an intact
+      protein present in the deletion strain or a sequenced mutant allele. No equivalent
+      UniProt reference or other-strain Ptn protein is substituted.
+    evidence:
+    - reference: DOI:10.3389/fbioe.2020.603514
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-10'
+      notes: The study names CGMCC4.1633 and deposits its 8-azg cluster as MT543149.
+        Its in-frame deletion method reports double crossover and a six-base scar.
+        Complete experimental mutant sequences and supplementary PCR data were not
+        independently inspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLM04718.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Independent GenPept QLM04718.1, complete 167 aa, 8-AzgD; source Streptomyces
+        pathocidini CGMCC4.1633, taxon 1650571. coded_by complement(MT543149.1:3192..3695),
+        translation table 11. The functional product-name annotations are not adopted
+        as enzyme assays.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MT543149.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete 504-nt reverse-strand CDS 3192..3695, codon_start 1, table 11
+        and ATG initiation independently translate to all 167 residues of QLM04718.1,
+        equal to the deposited CDS translation. Reference correspondence does not
+        establish historical stock or mutant sequence identity. The article says Illumina,
+        whereas the deposit assembly metadata says PacBio; that provenance discrepancy
+        is retained, not adjudicated.
+  - subject: azgd_deletion
+    predicate: has_reported_trace_amount_of
+    object: azaguanine
+    notes: 'Figure 2A, trace v: trace product remains. This is not complete abolition,
+      a numerical yield or a purified-enzyme reaction. Accumulated nucleoside congeners
+      are not merged into the free-base owner.'
+    evidence:
+    - reference: DOI:10.3389/fbioe.2020.603514
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-10'
+      notes: The Results report trace 8-azaguanine in the individual D and E mutant
+        broths; inspected Figure 2A distinguishes these outcomes from the F deletion.
+      snippet: only trace amount of 8-AZG
+  - subject: azge_deletion
+    predicate: deletes_gene_represented_by
+    object: azge_reference
+    notes: The identifier denotes the deposited native gene product, not an intact
+      protein present in the deletion strain or a sequenced mutant allele. No equivalent
+      UniProt reference or other-strain Ptn protein is substituted.
+    evidence:
+    - reference: DOI:10.3389/fbioe.2020.603514
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-10'
+      notes: The study names CGMCC4.1633 and deposits its 8-azg cluster as MT543149.
+        Its in-frame deletion method reports double crossover and a six-base scar.
+        Complete experimental mutant sequences and supplementary PCR data were not
+        independently inspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLM04711.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Independent GenPept QLM04711.1, complete 102 aa, 8-AzgE; source Streptomyces
+        pathocidini CGMCC4.1633, taxon 1650571. coded_by complement(MT543149.1:3702..4010),
+        translation table 11. The functional product-name annotations are not adopted
+        as enzyme assays.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MT543149.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete 309-nt reverse-strand CDS 3702..4010, codon_start 1, table 11
+        and GTG initiation independently translate to all 102 residues of QLM04711.1,
+        equal to the deposited CDS translation. Reference correspondence does not
+        establish historical stock or mutant sequence identity. The article says Illumina,
+        whereas the deposit assembly metadata says PacBio; that provenance discrepancy
+        is retained, not adjudicated.
+  - subject: azge_deletion
+    predicate: has_reported_trace_amount_of
+    object: azaguanine
+    notes: 'Figure 2A, trace vi: trace product remains. This is not complete abolition,
+      a numerical yield or a purified-enzyme reaction. Accumulated nucleoside congeners
+      are not merged into the free-base owner.'
+    evidence:
+    - reference: DOI:10.3389/fbioe.2020.603514
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-10'
+      notes: The Results report trace 8-azaguanine in the individual D and E mutant
+        broths; inspected Figure 2A distinguishes these outcomes from the F deletion.
+  - subject: azgf_deletion
+    predicate: deletes_gene_represented_by
+    object: azgf_reference
+    notes: The identifier denotes the deposited native gene product, not an intact
+      protein present in the deletion strain or a sequenced mutant allele. No equivalent
+      UniProt reference or other-strain Ptn protein is substituted.
+    evidence:
+    - reference: DOI:10.3389/fbioe.2020.603514
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-10'
+      notes: The study names CGMCC4.1633 and deposits its 8-azg cluster as MT543149.
+        Its in-frame deletion method reports double crossover and a six-base scar.
+        Complete experimental mutant sequences and supplementary PCR data were not
+        independently inspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLM04712.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Independent GenPept QLM04712.1, complete 206 aa, 8-AzgF; source Streptomyces
+        pathocidini CGMCC4.1633, taxon 1650571. coded_by complement(MT543149.1:4047..4667),
+        translation table 11. The functional product-name annotations are not adopted
+        as enzyme assays.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MT543149.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete 621-nt reverse-strand CDS 4047..4667, codon_start 1, table 11
+        and ATG initiation independently translate to all 206 residues of QLM04712.1,
+        equal to the deposited CDS translation. Reference correspondence does not
+        establish historical stock or mutant sequence identity. The article says Illumina,
+        whereas the deposit assembly metadata says PacBio; that provenance discrepancy
+        is retained, not adjudicated.
+  - subject: azgf_deletion
+    predicate: has_reported_loss_of_detectable
+    object: azaguanine
+    notes: 'Figure 2A, trace vii versus wild type i and authentic standard: reported
+      loss of detectable 8-azaguanine under the study conditions. No numerical detection
+      limit, absolute zero, general essentiality or directly measured GTP reaction
+      is asserted.'
+    evidence:
+    - reference: DOI:10.3389/fbioe.2020.603514
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-10'
+      notes: Native-strain deletion phenotype from the Results and inspected Figure
+        2A; HPLC with UV detection at 245 nm, compared with an authentic 8-azaguanine
+        standard.
+      snippet: 8-AZG production was completely abolished
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -342,3 +517,19 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-10T23:13:34Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added one seven-node, six-edge BIOSYNTHESIS graph for 8-AzgD/QLM04718.1,
+    8-AzgE/QLM04711.1 and 8-AzgF/QLM04712.1 native genetic references. All complete
+    CDSs independently translate to the versioned GenPept sequences; 8-AzgE GTG initiation
+    is handled with table 11. Exact-identifier UniProt search established no matching
+    entry, so no homolog or misprefixed accession was substituted. Each edge cites
+    DOI:10.3389/fbioe.2020.603514; two short verbatim snippets retained. F deletion
+    has reported loss of detectable product, while D/E deletions retain trace product.
+    Reference identity is not mutant or historical-stock sequence identity. The article/deposit
+    sequencing-platform discrepancy is explicit. No catalytic reaction, physical complex,
+    universal essentiality, congener, producer/BGC, origin, bioactivity or solution-microspecies
+    claim added. All prior owner fields and history preserved; SEEDED remains, not
+    full-record scientific sign-off.
+  llm_assisted: true
