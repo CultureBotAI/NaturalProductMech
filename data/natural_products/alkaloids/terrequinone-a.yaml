@@ -100,6 +100,296 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-8d95677594
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: terrequinone-tdi-canonical-process-references
+  scope: BIOSYNTHESIS
+  description: TdiA-TdiE canonical references in terrequinone A biosynthesis. Canonical
+    reference proteins, not independently inspected assay constructs. This graph adopts
+    database-supported process participation, not reaction order, substrate specificity,
+    catalytic stoichiometry, direct physical interactions, an obligate complex or
+    a complete pathway. GROUNDED denotes identifier identity, not experimental verification
+    by this curation. No producer, BGC, taxonomy, biosynthesis-origin or record-status
+    upgrade.
+  nodes:
+  - node_id: tdia
+    label: tdiA (canonical reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:A7XRY0
+    grounding_status: GROUNDED
+  - node_id: tdib
+    label: tdiB (canonical reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:A7XRY3
+    grounding_status: GROUNDED
+  - node_id: tdic
+    label: tdiC (canonical reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:A7XRY6
+    grounding_status: GROUNDED
+  - node_id: tdid
+    label: tdiD (canonical reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:A7XRY8
+    grounding_status: GROUNDED
+  - node_id: tdie
+    label: tdiE (canonical reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:A7XRZ1
+    grounding_status: GROUNDED
+  - node_id: terrequinone_biosynthesis
+    label: terrequinone A biosynthetic process
+    node_type: PROCESS
+    identifier: GO:1900796
+    grounding_status: GROUNDED
+  - node_id: terrequinone_a
+    label: terrequinone A
+    node_type: COMPOUND
+    identifier: CHEBI:64534
+    grounding_status: GROUNDED
+  edges:
+  - subject: tdia
+    predicate: is_database_supported_participant_in
+    object: terrequinone_biosynthesis
+    notes: Canonical reference proteins, not independently inspected assay constructs.
+      This graph adopts database-supported process participation, not reaction order,
+      substrate specificity, catalytic stoichiometry, direct physical interactions,
+      an obligate complex or a complete pathway. GROUNDED denotes identifier identity,
+      not experimental verification by this curation. No producer, BGC, taxonomy,
+      biosynthesis-origin or record-status upgrade. The MIBiG-derived GenBank translation
+      CBF80711.1 has 949 residues and differs from this 970-residue reference; UniProt
+      flags that genome model as erroneous. It is not treated as the same sequence.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A7XRY0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Swiss-Prot entry 83, sequence 1, 970 residues; protein existence 1:
+        Evidence at protein level. UniProt assigns taxon 227321, Aspergillus nidulans
+        FGSC A4 (also named Emericella nidulans). Its FUNCTION comment names terrequinone
+        A biosynthesis, and its GO:1900796 annotation is IMP:AspGD, citing PMID:17704773;
+        this remains a database assertion, not independent primary-assay review. The
+        mRNA reference is linked to DOI:10.1038/nchembio.2007.20 in UniProt. That
+        paper was available only as a subscription preview; methods, figures and supplements
+        were not inspected. The distinct 2023 engineered-host paper PMC9979454 presented
+        a browser challenge; its constructs are not transferred here. The MIBiG-derived
+        GenBank translation CBF80711.1 has 949 residues and differs from this 970-residue
+        reference; UniProt flags that genome model as erroneous. It is not treated
+        as the same sequence.'
+      snippet: part of the gene cluster that mediates the biosynthesis of terrequinone
+        A
+    - reference: https://www.ebi.ac.uk/ena/browser/view/EF550581.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete mRNA CDS 1..2913, ATG start, TAG stop, codon_start 1, standard
+        translation table 1. Translation equals deposited ABU51602.1 and all 970 canonical
+        A7XRY0 residues. The ENA source qualifier is Aspergillus nidulans, taxon 162425,
+        without an explicit strain; FGSC A4/taxon 227321 comes from UniProt, not this
+        qualifier. The deposit cites PMID:17704773 and DOI:10.1038/nchembio.2007.20.
+        This is reference-sequence correspondence only, not proof of assay tags, engineered
+        substitutions, recombinant processing or exact experimental stock. No full
+        native-genome reconstruction or current RefSeq audit is claimed.
+  - subject: tdib
+    predicate: is_database_supported_participant_in
+    object: terrequinone_biosynthesis
+    notes: Canonical reference proteins, not independently inspected assay constructs.
+      This graph adopts database-supported process participation, not reaction order,
+      substrate specificity, catalytic stoichiometry, direct physical interactions,
+      an obligate complex or a complete pathway. GROUNDED denotes identifier identity,
+      not experimental verification by this curation. No producer, BGC, taxonomy,
+      biosynthesis-origin or record-status upgrade. The MIBiG-derived GenBank translation
+      CBF80712.1 is identical to the canonical reference; this does not establish
+      historical assay-stock identity.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A7XRY3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Swiss-Prot entry 55, sequence 1, 419 residues; protein existence 1:
+        Evidence at protein level. UniProt assigns taxon 227321, Aspergillus nidulans
+        FGSC A4 (also named Emericella nidulans). Its FUNCTION comment names terrequinone
+        A biosynthesis, and its GO:1900796 annotation is IDA:AspGD, citing PMID:17704773;
+        this remains a database assertion, not independent primary-assay review. The
+        mRNA reference is linked to DOI:10.1038/nchembio.2007.20 in UniProt. That
+        paper was available only as a subscription preview; methods, figures and supplements
+        were not inspected. The distinct 2023 engineered-host paper PMC9979454 presented
+        a browser challenge; its constructs are not transferred here. The MIBiG-derived
+        GenBank translation CBF80712.1 is identical to the canonical reference; this
+        does not establish historical assay-stock identity.'
+      snippet: part of the gene cluster that mediates the biosynthesis of terrequinone
+        A
+    - reference: https://www.ebi.ac.uk/ena/browser/view/EF550582.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete mRNA CDS 1..1260, ATG start, TAG stop, codon_start 1, standard
+        translation table 1. Translation equals deposited ABU51603.1 and all 419 canonical
+        A7XRY3 residues. The ENA source qualifier is Aspergillus nidulans, taxon 162425,
+        without an explicit strain; FGSC A4/taxon 227321 comes from UniProt, not this
+        qualifier. The deposit cites PMID:17704773 and DOI:10.1038/nchembio.2007.20.
+        This is reference-sequence correspondence only, not proof of assay tags, engineered
+        substitutions, recombinant processing or exact experimental stock. No full
+        native-genome reconstruction or current RefSeq audit is claimed.
+  - subject: tdic
+    predicate: is_database_supported_participant_in
+    object: terrequinone_biosynthesis
+    notes: Canonical reference proteins, not independently inspected assay constructs.
+      This graph adopts database-supported process participation, not reaction order,
+      substrate specificity, catalytic stoichiometry, direct physical interactions,
+      an obligate complex or a complete pathway. GROUNDED denotes identifier identity,
+      not experimental verification by this curation. No producer, BGC, taxonomy,
+      biosynthesis-origin or record-status upgrade. The MIBiG-derived GenBank translation
+      CBF80714.1 is identical to the canonical reference; this does not establish
+      historical assay-stock identity. The UniProt recommended name specifies probable
+      NADPH dependence, the deposited transcript note says NAD(P)H, and the 2007 abstract
+      says NADH. No cofactor preference is resolved or asserted here.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A7XRY6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Swiss-Prot entry 62, sequence 1, 355 residues; protein existence 2:
+        Evidence at transcript level. UniProt assigns taxon 227321, Aspergillus nidulans
+        FGSC A4 (also named Emericella nidulans). Its FUNCTION comment names terrequinone
+        A biosynthesis, and its GO:1900796 annotation is IMP:UniProt, citing PMID:17704773;
+        this remains a database assertion, not independent primary-assay review. The
+        mRNA reference is linked to DOI:10.1038/nchembio.2007.20 in UniProt. That
+        paper was available only as a subscription preview; methods, figures and supplements
+        were not inspected. The distinct 2023 engineered-host paper PMC9979454 presented
+        a browser challenge; its constructs are not transferred here. The MIBiG-derived
+        GenBank translation CBF80714.1 is identical to the canonical reference; this
+        does not establish historical assay-stock identity. The UniProt recommended
+        name specifies probable NADPH dependence, the deposited transcript note says
+        NAD(P)H, and the 2007 abstract says NADH. No cofactor preference is resolved
+        or asserted here.'
+      snippet: part of the gene cluster that mediates the biosynthesis of terrequinone
+        A
+    - reference: https://www.ebi.ac.uk/ena/browser/view/EF550583.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete mRNA CDS 1..1068, ATG start, TGA stop, codon_start 1, standard
+        translation table 1. Translation equals deposited ABU51604.1 and all 355 canonical
+        A7XRY6 residues. The ENA source qualifier is Aspergillus nidulans, taxon 162425,
+        without an explicit strain; FGSC A4/taxon 227321 comes from UniProt, not this
+        qualifier. The deposit cites PMID:17704773 and DOI:10.1038/nchembio.2007.20.
+        This is reference-sequence correspondence only, not proof of assay tags, engineered
+        substitutions, recombinant processing or exact experimental stock. No full
+        native-genome reconstruction or current RefSeq audit is claimed.
+  - subject: tdid
+    predicate: is_database_supported_participant_in
+    object: terrequinone_biosynthesis
+    notes: Canonical reference proteins, not independently inspected assay constructs.
+      This graph adopts database-supported process participation, not reaction order,
+      substrate specificity, catalytic stoichiometry, direct physical interactions,
+      an obligate complex or a complete pathway. GROUNDED denotes identifier identity,
+      not experimental verification by this curation. No producer, BGC, taxonomy,
+      biosynthesis-origin or record-status upgrade. The MIBiG-derived GenBank translation
+      CBF80716.1 has 444 residues and differs from this 436-residue reference; UniProt
+      flags that genome model as erroneous. It is not treated as the same sequence.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A7XRY8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Swiss-Prot entry 77, sequence 1, 436 residues; protein existence 1:
+        Evidence at protein level. UniProt assigns taxon 227321, Aspergillus nidulans
+        FGSC A4 (also named Emericella nidulans). Its FUNCTION comment names terrequinone
+        A biosynthesis, and its GO:1900796 annotation is IMP:GO_Central, citing PMID:17704773;
+        this remains a database assertion, not independent primary-assay review. The
+        mRNA reference is linked to DOI:10.1038/nchembio.2007.20 in UniProt. That
+        paper was available only as a subscription preview; methods, figures and supplements
+        were not inspected. The distinct 2023 engineered-host paper PMC9979454 presented
+        a browser challenge; its constructs are not transferred here. The MIBiG-derived
+        GenBank translation CBF80716.1 has 444 residues and differs from this 436-residue
+        reference; UniProt flags that genome model as erroneous. It is not treated
+        as the same sequence.'
+      snippet: part of the gene cluster that mediates the biosynthesis of terrequinone
+        A
+    - reference: https://www.ebi.ac.uk/ena/browser/view/EF550584.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete mRNA CDS 1..1311, ATG start, TAA stop, codon_start 1, standard
+        translation table 1. Translation equals deposited ABU51605.1 and all 436 canonical
+        A7XRY8 residues. The ENA source qualifier is Aspergillus nidulans, taxon 162425,
+        without an explicit strain; FGSC A4/taxon 227321 comes from UniProt, not this
+        qualifier. The deposit cites PMID:17704773 and DOI:10.1038/nchembio.2007.20.
+        This is reference-sequence correspondence only, not proof of assay tags, engineered
+        substitutions, recombinant processing or exact experimental stock. No full
+        native-genome reconstruction or current RefSeq audit is claimed.
+  - subject: tdie
+    predicate: is_database_supported_participant_in
+    object: terrequinone_biosynthesis
+    notes: Canonical reference proteins, not independently inspected assay constructs.
+      This graph adopts database-supported process participation, not reaction order,
+      substrate specificity, catalytic stoichiometry, direct physical interactions,
+      an obligate complex or a complete pathway. GROUNDED denotes identifier identity,
+      not experimental verification by this curation. No producer, BGC, taxonomy,
+      biosynthesis-origin or record-status upgrade. The MIBiG-derived GenBank translation
+      CBF80718.1 has 296 residues and differs from this 317-residue reference; UniProt
+      flags that genome model as erroneous. It is not treated as the same sequence.
+      UniProt calls this a probable methyltransferase and also carries an alternative
+      protein-D label; the tdiE gene name and EF550585.1/ABU51606.1 sequence determine
+      the reference here. No methyltransferase activity, chaperone mechanism or TdiD
+      identity is adopted.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A7XRZ1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Swiss-Prot entry 50, sequence 1, 317 residues; protein existence 2:
+        Evidence at transcript level. UniProt assigns taxon 227321, Aspergillus nidulans
+        FGSC A4 (also named Emericella nidulans). Its FUNCTION comment names terrequinone
+        A biosynthesis, and its GO:1900796 annotation is IMP:GO_Central, citing PMID:17291795;
+        this remains a database assertion, not independent primary-assay review. The
+        mRNA reference is linked to DOI:10.1038/nchembio.2007.20 in UniProt. That
+        paper was available only as a subscription preview; methods, figures and supplements
+        were not inspected. The distinct 2023 engineered-host paper PMC9979454 presented
+        a browser challenge; its constructs are not transferred here. The MIBiG-derived
+        GenBank translation CBF80718.1 has 296 residues and differs from this 317-residue
+        reference; UniProt flags that genome model as erroneous. It is not treated
+        as the same sequence. UniProt calls this a probable methyltransferase and
+        also carries an alternative protein-D label; the tdiE gene name and EF550585.1/ABU51606.1
+        sequence determine the reference here. No methyltransferase activity, chaperone
+        mechanism or TdiD identity is adopted.'
+      snippet: part of the gene cluster that mediates the biosynthesis of terrequinone
+        A
+    - reference: https://www.ebi.ac.uk/ena/browser/view/EF550585.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete mRNA CDS 1..954, ATG start, TGA stop, codon_start 1, standard
+        translation table 1. Translation equals deposited ABU51606.1 and all 317 canonical
+        A7XRZ1 residues. The ENA source qualifier is Aspergillus nidulans, taxon 162425,
+        without an explicit strain; FGSC A4/taxon 227321 comes from UniProt, not this
+        qualifier. The deposit cites PMID:17704773 and DOI:10.1038/nchembio.2007.20.
+        This is reference-sequence correspondence only, not proof of assay tags, engineered
+        substitutions, recombinant processing or exact experimental stock. No full
+        native-genome reconstruction or current RefSeq audit is claimed.
+  - subject: terrequinone_biosynthesis
+    predicate: has_ontology_defined_primary_output
+    object: terrequinone_a
+    notes: GO process identity, not a direct enzyme-to-product reaction or a measurement.
+    evidence:
+    - reference: http://purl.obolibrary.org/obo/GO_1900796
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Existing local OAK GO cache inspected 2026-10-10, not a fresh ontology
+        download. GO:1900796 has the RO:0004008 (has primary output) restriction to
+        CHEBI:64534. The process is not being substituted for a single catalytic reaction.
+      snippet: The chemical reactions and pathways resulting in the formation of terrequinone
+        A.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:64534
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Existing local OAK ChEBI cache inspected 2026-10-10, not a fresh source
+        download. Pinned RDKit 2026.03.5 maps the owner MIBiG SMILES, owner InChI
+        and cached ChEBI InChI to HBMHEGGZNWXZRA-UHFFFAOYSA-N, C32H30N2O3, formal
+        charge 0 and no tetrahedral stereocenters. The cached ChEBI SMILES (also in
+        the committed ChEBI inventory) cannot be kekulized by this RDKit version and
+        is explicitly excluded from the equality assertion; it was not silently repaired.
+        The owner uses the valid MIBiG SMILES. This identity check is not an assay-product
+        determination.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000442.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Version 5 is active, quality questionable, completeness complete, and
+        lists one compound with exactly the owner SMILES and formula. Its biosynthesis
+        module names CBF80711.1, the 949-residue TdiA model flagged by UniProt; the
+        activity-assay annotation is not transferred to the distinct 970-residue canonical
+        sequence. No antiSMASH neighborhood inference is used. Existing source-owned
+        producer and BGC evidence is unchanged.
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
   curator: seed_from_sources
@@ -109,3 +399,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-10T02:25:26Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added five canonical Tdi protein references in a database-backed terrequinone
+    A biosynthetic process graph, with transcript translation checks and sequence-model
+    cautions. No exact reaction, assay-construct, producer, BGC, taxonomy, origin
+    or review-status upgrade.
+  llm_assisted: true
