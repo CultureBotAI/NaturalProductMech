@@ -1,0 +1,191 @@
+record_id: CHEBI:134612
+standard_inchi_key: SIAZVTIHOHTZDD-PWJLMRLQSA-N
+graph:
+  graph_id: staphyloferrin-b-newman-sbnab-genetic-evidence
+  scope: BIOSYNTHESIS
+  description: Bounded genetic evidence for Newman SbnA and SbnB, with deliberately
+    selected canonical references. Newman-derived delta-sfa background, not the owner's
+    NCTC 8325 BGC stock. Insertional inactivation, not a clean deletion or an independently
+    sequenced mutant. The paper reports absence of staphyloferrin B in mutant spent
+    supernatants by ESI-MS in iron-limited medium without added transferrin; those
+    spectra are data not shown. Growth and CAS readouts are not compound-specific
+    concentration measurements. The neutral owner is the author-assigned compound
+    anchor, not an independently verified protonation state, absolute stereopurity
+    or ferric-complex assignment. No direct catalysis, physical SbnA-SbnB complex,
+    exclusive pathway, producer/BGC, virulence or origin upgrade.
+  nodes:
+  - node_id: staphyloferrin_b
+    label: staphyloferrin B
+    node_type: COMPOUND
+    identifier: CHEBI:134612
+    grounding_status: GROUNDED
+  - node_id: sbna
+    label: SbnA (NWMN_0060; Newman reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:A6QDA0
+    grounding_status: GROUNDED
+  - node_id: sbna_insertion
+    label: 'H2131: sbnA insertion in Newman delta-sfa background'
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: sbnb
+    label: SbnB (NWMN_0061; Newman reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:A0A0H3K9Y6
+    grounding_status: GROUNDED
+  - node_id: sbnb_insertion
+    label: 'H1718: sbnB insertion in Newman delta-sfa background'
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: sbna_insertion
+    predicate: disrupts_gene_represented_by
+    object: sbna
+    notes: The canonical protein represents the named gene, not the altered allele.
+      Canonical 326-aa A6QDA0 matches all residues of BAF66332.1 and the independently
+      translated complete CDS AP009351.1:79725..80705, table 11, codon_start 1, TTG
+      start and TGA stop. Native source taxon 426430, strain Newman, BioSample SAMD00060913.
+      Sequence also equals the previously inspected NCTC 8325 reference Q2G1N3; this
+      is a distinct strain-specific accession, not a new amino-acid sequence. Reference
+      equality does not verify historical experimental stock, insertion allele, complete
+      plasmid, expression, processing or function.
+    evidence:
+    - reference: DOI:10.1186/1471-2180-11-199
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 1 identifies H2131 and the sbnA insertion; Methods and Results
+        specify the Newman delta-sfa genetic background. Newman-derived delta-sfa
+        background, not the owner's NCTC 8325 BGC stock. Insertional inactivation,
+        not a clean deletion or an independently sequenced mutant. The paper reports
+        absence of staphyloferrin B in mutant spent supernatants by ESI-MS in iron-limited
+        medium without added transferrin; those spectra are data not shown. Growth
+        and CAS readouts are not compound-specific concentration measurements. The
+        neutral owner is the author-assigned compound anchor, not an independently
+        verified protonation state, absolute stereopurity or ferric-complex assignment.
+        No direct catalysis, physical SbnA-SbnB complex, exclusive pathway, producer/BGC,
+        virulence or origin upgrade.
+    - reference: https://www.uniprot.org/uniprotkb/A6QDA0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: UniProt release 2026_03, entry 95, sequence 1. Reviewed; gene sbnA/NWMN_0060
+        and reference PMID:21906287 directly link the Newman entry to the inspected
+        2011 study. Its exact catalytic reaction cites later work, not a demonstrated
+        reaction in this 2011 paper.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AP009351.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Canonical 326-aa A6QDA0 matches all residues of BAF66332.1 and the independently
+        translated complete CDS AP009351.1:79725..80705, table 11, codon_start 1,
+        TTG start and TGA stop. Native source taxon 426430, strain Newman, BioSample
+        SAMD00060913. Sequence also equals the previously inspected NCTC 8325 reference
+        Q2G1N3; this is a distinct strain-specific accession, not a new amino-acid
+        sequence. Reference equality does not verify historical experimental stock,
+        insertion allele, complete plasmid, expression, processing or function.
+  - subject: sbna_insertion
+    predicate: has_reported_loss_of
+    object: staphyloferrin_b
+    notes: Reported loss in the stated genetic and culture context, not a universal
+      essentiality or zero-concentration measurement. Newman-derived delta-sfa background,
+      not the owner's NCTC 8325 BGC stock. Insertional inactivation, not a clean deletion
+      or an independently sequenced mutant. The paper reports absence of staphyloferrin
+      B in mutant spent supernatants by ESI-MS in iron-limited medium without added
+      transferrin; those spectra are data not shown. Growth and CAS readouts are not
+      compound-specific concentration measurements. The neutral owner is the author-assigned
+      compound anchor, not an independently verified protonation state, absolute stereopurity
+      or ferric-complex assignment. No direct catalysis, physical SbnA-SbnB complex,
+      exclusive pathway, producer/BGC, virulence or origin upgrade.
+    evidence:
+    - reference: DOI:10.1186/1471-2180-11-199
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results report the compound in parental delta-sfa supernatant and its
+        absence in the insertion mutants; ESI-MS data not shown. Figures 1-2 show
+        growth/CAS corroboration and complementation, not raw compound spectra. Newman-derived
+        delta-sfa background, not the owner's NCTC 8325 BGC stock. Insertional inactivation,
+        not a clean deletion or an independently sequenced mutant. The paper reports
+        absence of staphyloferrin B in mutant spent supernatants by ESI-MS in iron-limited
+        medium without added transferrin; those spectra are data not shown. Growth
+        and CAS readouts are not compound-specific concentration measurements. The
+        neutral owner is the author-assigned compound anchor, not an independently
+        verified protonation state, absolute stereopurity or ferric-complex assignment.
+        No direct catalysis, physical SbnA-SbnB complex, exclusive pathway, producer/BGC,
+        virulence or origin upgrade.
+      snippet: absent in the spent culture supernatants
+  - subject: sbnb_insertion
+    predicate: disrupts_gene_represented_by
+    object: sbnb
+    notes: The canonical protein represents the named gene, not the altered allele.
+      Canonical 336-aa A0A0H3K9Y6 matches all residues of BAF66333.1 and the independently
+      translated complete CDS AP009351.1:80702..81712, table 11, codon_start 1, ATG
+      start and TAA stop. Native source taxon 426430, strain Newman, BioSample SAMD00060913.
+      Sequence also equals the previously inspected NCTC 8325 reference Q2G1N2; this
+      is a distinct strain-specific accession, not a new amino-acid sequence. Reference
+      equality does not verify historical experimental stock, insertion allele, complete
+      plasmid, expression, processing or function.
+    evidence:
+    - reference: DOI:10.1186/1471-2180-11-199
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 1 identifies H1718 and the sbnB insertion; Methods and Results
+        specify the Newman delta-sfa genetic background. Newman-derived delta-sfa
+        background, not the owner's NCTC 8325 BGC stock. Insertional inactivation,
+        not a clean deletion or an independently sequenced mutant. The paper reports
+        absence of staphyloferrin B in mutant spent supernatants by ESI-MS in iron-limited
+        medium without added transferrin; those spectra are data not shown. Growth
+        and CAS readouts are not compound-specific concentration measurements. The
+        neutral owner is the author-assigned compound anchor, not an independently
+        verified protonation state, absolute stereopurity or ferric-complex assignment.
+        No direct catalysis, physical SbnA-SbnB complex, exclusive pathway, producer/BGC,
+        virulence or origin upgrade.
+    - reference: https://www.uniprot.org/uniprotkb/A0A0H3K9Y6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: UniProt release 2026_03, entry 53, sequence 1. Unreviewed; gene sbnB/NWMN_0061
+        and native BAF66333.1 establish the selected reference. The inherited ornithine-cyclodeaminase
+        label is not adopted as function; no FUNCTION or CATALYTIC ACTIVITY comment
+        is present. PDB-derived binding annotations and a PROSITE propagation caution
+        do not establish the 2011 construct or mechanism.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AP009351.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Canonical 336-aa A0A0H3K9Y6 matches all residues of BAF66333.1 and the
+        independently translated complete CDS AP009351.1:80702..81712, table 11, codon_start
+        1, ATG start and TAA stop. Native source taxon 426430, strain Newman, BioSample
+        SAMD00060913. Sequence also equals the previously inspected NCTC 8325 reference
+        Q2G1N2; this is a distinct strain-specific accession, not a new amino-acid
+        sequence. Reference equality does not verify historical experimental stock,
+        insertion allele, complete plasmid, expression, processing or function.
+  - subject: sbnb_insertion
+    predicate: has_reported_loss_of
+    object: staphyloferrin_b
+    notes: Reported loss in the stated genetic and culture context, not a universal
+      essentiality or zero-concentration measurement. Newman-derived delta-sfa background,
+      not the owner's NCTC 8325 BGC stock. Insertional inactivation, not a clean deletion
+      or an independently sequenced mutant. The paper reports absence of staphyloferrin
+      B in mutant spent supernatants by ESI-MS in iron-limited medium without added
+      transferrin; those spectra are data not shown. Growth and CAS readouts are not
+      compound-specific concentration measurements. The neutral owner is the author-assigned
+      compound anchor, not an independently verified protonation state, absolute stereopurity
+      or ferric-complex assignment. No direct catalysis, physical SbnA-SbnB complex,
+      exclusive pathway, producer/BGC, virulence or origin upgrade.
+    evidence:
+    - reference: DOI:10.1186/1471-2180-11-199
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Results report the compound in parental delta-sfa supernatant and its
+        absence in the insertion mutants; ESI-MS data not shown. Figures 1-2 show
+        growth/CAS corroboration and complementation, not raw compound spectra. Newman-derived
+        delta-sfa background, not the owner's NCTC 8325 BGC stock. Insertional inactivation,
+        not a clean deletion or an independently sequenced mutant. The paper reports
+        absence of staphyloferrin B in mutant spent supernatants by ESI-MS in iron-limited
+        medium without added transferrin; those spectra are data not shown. Growth
+        and CAS readouts are not compound-specific concentration measurements. The
+        neutral owner is the author-assigned compound anchor, not an independently
+        verified protonation state, absolute stereopurity or ferric-complex assignment.
+        No direct catalysis, physical SbnA-SbnB complex, exclusive pathway, producer/BGC,
+        virulence or origin upgrade.
+curation_history:
+- timestamp: '2026-10-10T22:32:29Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added bounded Newman SbnA/A6QDA0 and SbnB/A0A0H3K9Y6 genetic references
+    from DOI:10.1186/1471-2180-11-199. Five nodes and four cited edges; canonical
+    sequence identity is separate from mutant stock identity. No exact catalytic,
+    producer, BGC or origin upgrade.
+  llm_assisted: true
