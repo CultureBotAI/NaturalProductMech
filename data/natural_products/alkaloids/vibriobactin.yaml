@@ -87,6 +87,715 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-e845ff1256
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: vibriobactin-canonical-biosynthetic-participants
+  scope: BIOSYNTHESIS
+  description: 'Eleven selected canonical references across N16961, Lou15 and O395,
+    not a reconstructed single-strain pathway. Canonical reference proteins, not independently
+    inspected assay constructs. These edges describe database-associated or explicitly
+    putative biosynthetic participation, not a direct reaction, ordered pathway, substrate
+    specificity, stoichiometry or physical complex. GROUNDED denotes identifier identity,
+    not experimental validation. Strain references are not interchangeable. This owner
+    is free vibriobactin, CHEBI:9973, Standard InChIKey LLMKLMMXMOTPRU-YOAXHERRSA-N.
+    Owner and local ChEBI cache agree within each representation (SMILES versus SMILES;
+    InChI versus InChI) under RDKit 2026.03.5: C35H39N5O11, net charge zero, no iron.
+    Standard InChI reconstruction changes amide/imidic-acid tautomer encoding; equal
+    keys do not establish microstate identity. The separate BGC0000945-derived record
+    has key SNUNDXZQRUCXRW-KDUQSJINSA-N and incomplete stereo; it is not merged or
+    treated as an exact product equivalent. This supports named-compound correspondence,
+    not an exact assay-product microstate, ferric complex or Rhea reaction. Ontology
+    values were checked in the local cache on 2026-10-10, not freshly downloaded.
+    Primary methods, figures, supplements and constructs were not independently inspected.
+    The PMID:11112537 abstract is not full-methods evidence; its publisher returned
+    403. PMID:11112538 returned no usable article content and PMID:11160122 presented
+    a browser challenge. No biochemical assay or genetic-result claim is imported
+    from these access-limited sources.'
+  nodes:
+  - node_id: q56632
+    label: vibA (N16961 reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q56632
+    grounding_status: GROUNDED
+  - node_id: p0c6d3
+    label: vibB (N16961 reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:P0C6D3
+    grounding_status: GROUNDED
+  - node_id: o07898
+    label: vibC (N16961 reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:O07898
+    grounding_status: GROUNDED
+  - node_id: o07899
+    label: vibE (N16961 reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:O07899
+    grounding_status: GROUNDED
+  - node_id: q9ktv9
+    label: VC_0775 (putative VibH, N16961 reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q9KTV9
+    grounding_status: GROUNDED
+  - node_id: q9ktv7
+    label: VC_0780 (putative VibD, N16961 reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q9KTV7
+    grounding_status: GROUNDED
+  - node_id: q9rcf7
+    label: vibH (Lou15 (El Tor) reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q9RCF7
+    grounding_status: GROUNDED
+  - node_id: a5f3f4
+    label: vibB (O395 reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:A5F3F4
+    grounding_status: GROUNDED
+  - node_id: q9fdb2
+    label: vibE (O395 reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q9FDB2
+    grounding_status: GROUNDED
+  - node_id: q9fdb1
+    label: vibH (O395 reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q9FDB1
+    grounding_status: GROUNDED
+  - node_id: q9fdb0
+    label: vibF (O395 reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q9FDB0
+    grounding_status: GROUNDED
+  - node_id: vibriobactin
+    label: vibriobactin
+    node_type: COMPOUND
+    identifier: CHEBI:9973
+    grounding_status: GROUNDED
+  edges:
+  - subject: q56632
+    predicate: is_database_supported_biosynthetic_participant_for
+    object: vibriobactin
+    notes: Canonical reference proteins, not independently inspected assay constructs.
+      These edges describe database-associated or explicitly putative biosynthetic
+      participation, not a direct reaction, ordered pathway, substrate specificity,
+      stoichiometry or physical complex. GROUNDED denotes identifier identity, not
+      experimental validation. Strain references are not interchangeable. UniProt
+      protein existence is inferred from homology; its Met-1 versus Met-4 initiation
+      caution remains unresolved. Primary methods, figures, supplements and constructs
+      were not independently inspected. The PMID:11112537 abstract is not full-methods
+      evidence; its publisher returned 403. PMID:11112538 returned no usable article
+      content and PMID:11160122 presented a browser challenge. No biochemical assay
+      or genetic-result claim is imported from these access-limited sources.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q56632
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'UniProtKB reviewed (Swiss-Prot), entry 148, sequence 1, 262 residues;
+        protein existence 3: Inferred from homology. UniProt taxon 243277. The selected
+        canonical reference matches deposited AAF93939.1 from N16961. UniProt protein
+        existence is inferred from homology; its Met-1 versus Met-4 initiation caution
+        remains unresolved. Its PATHWAY comment explicitly names vibriobactin biosynthesis,
+        adopted as a database assertion only.'
+      snippet: Siderophore biosynthesis; vibriobactin biosynthesis
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AE003852.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS [830175:830964](+) (zero-based, end-exclusive), 789
+        nucleotides, ATG start, TGA stop, codon_start 1, bacterial code 11. Biopython
+        strand-aware cds=True translation equals deposited AAF93939.1 and all 262
+        canonical Q56632 residues. Source strain N16961 is explicit; CDS bounds are
+        exact and no translational exceptions are annotated. Alternative start codons
+        are translated as initiating methionine under code 11. This establishes reference-sequence
+        correspondence, not biological initiation, processing, tags, mutations, exact
+        assay stock or strain equivalence.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:9973
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: 'This owner is free vibriobactin, CHEBI:9973, Standard InChIKey LLMKLMMXMOTPRU-YOAXHERRSA-N.
+        Owner and local ChEBI cache agree within each representation (SMILES versus
+        SMILES; InChI versus InChI) under RDKit 2026.03.5: C35H39N5O11, net charge
+        zero, no iron. Standard InChI reconstruction changes amide/imidic-acid tautomer
+        encoding; equal keys do not establish microstate identity. The separate BGC0000945-derived
+        record has key SNUNDXZQRUCXRW-KDUQSJINSA-N and incomplete stereo; it is not
+        merged or treated as an exact product equivalent. This supports named-compound
+        correspondence, not an exact assay-product microstate, ferric complex or Rhea
+        reaction. Ontology values were checked in the local cache on 2026-10-10, not
+        freshly downloaded.'
+  - subject: p0c6d3
+    predicate: is_database_supported_biosynthetic_participant_for
+    object: vibriobactin
+    notes: Canonical reference proteins, not independently inspected assay constructs.
+      These edges describe database-associated or explicitly putative biosynthetic
+      participation, not a direct reaction, ordered pathway, substrate specificity,
+      stoichiometry or physical complex. GROUNDED denotes identifier identity, not
+      experimental validation. Strain references are not interchangeable. UniProt
+      protein-level existence does not identify an inspected assay stock. Its phosphopantetheine
+      cofactor annotation is by similarity; no loading-site or activation reaction
+      is adopted. Primary methods, figures, supplements and constructs were not independently
+      inspected. The PMID:11112537 abstract is not full-methods evidence; its publisher
+      returned 403. PMID:11112538 returned no usable article content and PMID:11160122
+      presented a browser challenge. No biochemical assay or genetic-result claim
+      is imported from these access-limited sources.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P0C6D3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'UniProtKB reviewed (Swiss-Prot), entry 89, sequence 1, 293 residues;
+        protein existence 1: Evidence at protein level. UniProt taxon 243277. The
+        selected canonical reference matches deposited AAF93936.1 from N16961. UniProt
+        protein-level existence does not identify an inspected assay stock. Its phosphopantetheine
+        cofactor annotation is by similarity; no loading-site or activation reaction
+        is adopted. Its PATHWAY comment explicitly names vibriobactin biosynthesis,
+        adopted as a database assertion only.'
+      snippet: Siderophore biosynthesis; vibriobactin biosynthesis
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AE003852.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS [826196:827078](+) (zero-based, end-exclusive), 882
+        nucleotides, ATG start, TGA stop, codon_start 1, bacterial code 11. Biopython
+        strand-aware cds=True translation equals deposited AAF93936.1 and all 293
+        canonical P0C6D3 residues. Source strain N16961 is explicit; CDS bounds are
+        exact and no translational exceptions are annotated. Alternative start codons
+        are translated as initiating methionine under code 11. This establishes reference-sequence
+        correspondence, not biological initiation, processing, tags, mutations, exact
+        assay stock or strain equivalence.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:9973
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: 'This owner is free vibriobactin, CHEBI:9973, Standard InChIKey LLMKLMMXMOTPRU-YOAXHERRSA-N.
+        Owner and local ChEBI cache agree within each representation (SMILES versus
+        SMILES; InChI versus InChI) under RDKit 2026.03.5: C35H39N5O11, net charge
+        zero, no iron. Standard InChI reconstruction changes amide/imidic-acid tautomer
+        encoding; equal keys do not establish microstate identity. The separate BGC0000945-derived
+        record has key SNUNDXZQRUCXRW-KDUQSJINSA-N and incomplete stereo; it is not
+        merged or treated as an exact product equivalent. This supports named-compound
+        correspondence, not an exact assay-product microstate, ferric complex or Rhea
+        reaction. Ontology values were checked in the local cache on 2026-10-10, not
+        freshly downloaded.'
+  - subject: o07898
+    predicate: is_database_supported_biosynthetic_participant_for
+    object: vibriobactin
+    notes: Canonical reference proteins, not independently inspected assay constructs.
+      These edges describe database-associated or explicitly putative biosynthetic
+      participation, not a direct reaction, ordered pathway, substrate specificity,
+      stoichiometry or physical complex. GROUNDED denotes identifier identity, not
+      experimental validation. Strain references are not interchangeable. UniProt
+      protein existence is inferred from homology; its Met-1 versus Met-3 initiation
+      caution remains unresolved. Primary methods, figures, supplements and constructs
+      were not independently inspected. The PMID:11112537 abstract is not full-methods
+      evidence; its publisher returned 403. PMID:11112538 returned no usable article
+      content and PMID:11160122 presented a browser challenge. No biochemical assay
+      or genetic-result claim is imported from these access-limited sources.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/O07898
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'UniProtKB reviewed (Swiss-Prot), entry 127, sequence 1, 395 residues;
+        protein existence 3: Inferred from homology. UniProt taxon 243277. The selected
+        canonical reference matches deposited AAF93938.1 from N16961. UniProt protein
+        existence is inferred from homology; its Met-1 versus Met-3 initiation caution
+        remains unresolved. Its PATHWAY comment explicitly names vibriobactin biosynthesis,
+        adopted as a database assertion only.'
+      snippet: Siderophore biosynthesis; vibriobactin biosynthesis
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AE003852.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS [828820:830008](-) (zero-based, end-exclusive), 1188
+        nucleotides, ATG start, TAA stop, codon_start 1, bacterial code 11. Biopython
+        strand-aware cds=True translation equals deposited AAF93938.1 and all 395
+        canonical O07898 residues. Source strain N16961 is explicit; CDS bounds are
+        exact and no translational exceptions are annotated. Alternative start codons
+        are translated as initiating methionine under code 11. This establishes reference-sequence
+        correspondence, not biological initiation, processing, tags, mutations, exact
+        assay stock or strain equivalence.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:9973
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: 'This owner is free vibriobactin, CHEBI:9973, Standard InChIKey LLMKLMMXMOTPRU-YOAXHERRSA-N.
+        Owner and local ChEBI cache agree within each representation (SMILES versus
+        SMILES; InChI versus InChI) under RDKit 2026.03.5: C35H39N5O11, net charge
+        zero, no iron. Standard InChI reconstruction changes amide/imidic-acid tautomer
+        encoding; equal keys do not establish microstate identity. The separate BGC0000945-derived
+        record has key SNUNDXZQRUCXRW-KDUQSJINSA-N and incomplete stereo; it is not
+        merged or treated as an exact product equivalent. This supports named-compound
+        correspondence, not an exact assay-product microstate, ferric complex or Rhea
+        reaction. Ontology values were checked in the local cache on 2026-10-10, not
+        freshly downloaded.'
+  - subject: o07899
+    predicate: is_database_supported_biosynthetic_participant_for
+    object: vibriobactin
+    notes: Canonical reference proteins, not independently inspected assay constructs.
+      These edges describe database-associated or explicitly putative biosynthetic
+      participation, not a direct reaction, ordered pathway, substrate specificity,
+      stoichiometry or physical complex. GROUNDED denotes identifier identity, not
+      experimental validation. Strain references are not interchangeable. UniProt
+      FUNCTION and catalytic assignments are transferred by similarity from P10378.
+      The PATHWAY assertion is used only for named-compound participation, not an
+      exact carrier-loading reaction or membrane topology. Primary methods, figures,
+      supplements and constructs were not independently inspected. The PMID:11112537
+      abstract is not full-methods evidence; its publisher returned 403. PMID:11112538
+      returned no usable article content and PMID:11160122 presented a browser challenge.
+      No biochemical assay or genetic-result claim is imported from these access-limited
+      sources.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/O07899
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'UniProtKB reviewed (Swiss-Prot), entry 134, sequence 1, 543 residues;
+        protein existence 3: Inferred from homology. UniProt taxon 243277. The selected
+        canonical reference matches deposited AAF93937.1 from N16961. UniProt FUNCTION
+        and catalytic assignments are transferred by similarity from P10378. The PATHWAY
+        assertion is used only for named-compound participation, not an exact carrier-loading
+        reaction or membrane topology. Its PATHWAY comment explicitly names vibriobactin
+        biosynthesis, adopted as a database assertion only.'
+      snippet: Siderophore biosynthesis; vibriobactin biosynthesis
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AE003852.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS [827178:828810](-) (zero-based, end-exclusive), 1632
+        nucleotides, ATG start, TGA stop, codon_start 1, bacterial code 11. Biopython
+        strand-aware cds=True translation equals deposited AAF93937.1 and all 543
+        canonical O07899 residues. Source strain N16961 is explicit; CDS bounds are
+        exact and no translational exceptions are annotated. Alternative start codons
+        are translated as initiating methionine under code 11. This establishes reference-sequence
+        correspondence, not biological initiation, processing, tags, mutations, exact
+        assay stock or strain equivalence.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:9973
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: 'This owner is free vibriobactin, CHEBI:9973, Standard InChIKey LLMKLMMXMOTPRU-YOAXHERRSA-N.
+        Owner and local ChEBI cache agree within each representation (SMILES versus
+        SMILES; InChI versus InChI) under RDKit 2026.03.5: C35H39N5O11, net charge
+        zero, no iron. Standard InChI reconstruction changes amide/imidic-acid tautomer
+        encoding; equal keys do not establish microstate identity. The separate BGC0000945-derived
+        record has key SNUNDXZQRUCXRW-KDUQSJINSA-N and incomplete stereo; it is not
+        merged or treated as an exact product equivalent. This supports named-compound
+        correspondence, not an exact assay-product microstate, ferric complex or Rhea
+        reaction. Ontology values were checked in the local cache on 2026-10-10, not
+        freshly downloaded.'
+  - subject: q9ktv9
+    predicate: is_putative_biosynthetic_participant_for
+    object: vibriobactin
+    notes: Canonical reference proteins, not independently inspected assay constructs.
+      These edges describe database-associated or explicitly putative biosynthetic
+      participation, not a direct reaction, ordered pathway, substrate specificity,
+      stoichiometry or physical complex. GROUNDED denotes identifier identity, not
+      experimental validation. Strain references are not interchangeable. The native
+      assignment is explicitly putative by sequence similarity. GTG is the annotated
+      start codon. PDB:1L5A and its mapped 3..438 range are uninspected structural
+      leads, not verified assay constructs. Primary methods, figures, supplements
+      and constructs were not independently inspected. The PMID:11112537 abstract
+      is not full-methods evidence; its publisher returned 403. PMID:11112538 returned
+      no usable article content and PMID:11160122 presented a browser challenge. No
+      biochemical assay or genetic-result claim is imported from these access-limited
+      sources.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9KTV9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'UniProtKB unreviewed (TrEMBL), entry 116, sequence 1, 438 residues;
+        protein existence 1: Evidence at protein level. UniProt taxon 243277. The
+        selected canonical reference matches deposited AAF93940.1 from N16961. The
+        native assignment is explicitly putative by sequence similarity. GTG is the
+        annotated start codon. PDB:1L5A and its mapped 3..438 range are uninspected
+        structural leads, not verified assay constructs.'
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AE003852.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Native deposit AE003852.1, source strain N16961, CDS AAF93940.1; the
+        quoted product/note is the named-compound association. Its note explicitly
+        says identified by sequence similarity; putative. This is a prediction, not
+        demonstrated function. The native assignment is explicitly putative by sequence
+        similarity. GTG is the annotated start codon. PDB:1L5A and its mapped 3..438
+        range are uninspected structural leads, not verified assay constructs.
+      snippet: vibriobactin synthesis protein, putative
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AE003852.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS [830975:832292](-) (zero-based, end-exclusive), 1317
+        nucleotides, GTG start, TGA stop, codon_start 1, bacterial code 11. Biopython
+        strand-aware cds=True translation equals deposited AAF93940.1 and all 438
+        canonical Q9KTV9 residues. Source strain N16961 is explicit; CDS bounds are
+        exact and no translational exceptions are annotated. Alternative start codons
+        are translated as initiating methionine under code 11. This establishes reference-sequence
+        correspondence, not biological initiation, processing, tags, mutations, exact
+        assay stock or strain equivalence.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:9973
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: 'This owner is free vibriobactin, CHEBI:9973, Standard InChIKey LLMKLMMXMOTPRU-YOAXHERRSA-N.
+        Owner and local ChEBI cache agree within each representation (SMILES versus
+        SMILES; InChI versus InChI) under RDKit 2026.03.5: C35H39N5O11, net charge
+        zero, no iron. Standard InChI reconstruction changes amide/imidic-acid tautomer
+        encoding; equal keys do not establish microstate identity. The separate BGC0000945-derived
+        record has key SNUNDXZQRUCXRW-KDUQSJINSA-N and incomplete stereo; it is not
+        merged or treated as an exact product equivalent. This supports named-compound
+        correspondence, not an exact assay-product microstate, ferric complex or Rhea
+        reaction. Ontology values were checked in the local cache on 2026-10-10, not
+        freshly downloaded.'
+  - subject: q9ktv7
+    predicate: is_putative_biosynthetic_participant_for
+    object: vibriobactin
+    notes: Canonical reference proteins, not independently inspected assay constructs.
+      These edges describe database-associated or explicitly putative biosynthetic
+      participation, not a direct reaction, ordered pathway, substrate specificity,
+      stoichiometry or physical complex. GROUNDED denotes identifier identity, not
+      experimental validation. Strain references are not interchangeable. The native
+      assignment is explicitly putative by sequence similarity, with a TTG start.
+      UniProt automated ARBA name/FUNCTION/PATHWAY/SUBUNIT annotations concern enterobactin
+      and EntB/EntF; those are not transferred to vibriobactin or adopted as complex
+      evidence. Lou15 Q9RCF2 remains a separate functional hold. Primary methods,
+      figures, supplements and constructs were not independently inspected. The PMID:11112537
+      abstract is not full-methods evidence; its publisher returned 403. PMID:11112538
+      returned no usable article content and PMID:11160122 presented a browser challenge.
+      No biochemical assay or genetic-result claim is imported from these access-limited
+      sources.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9KTV7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'UniProtKB unreviewed (TrEMBL), entry 117, sequence 1, 261 residues;
+        protein existence 3: Inferred from homology. UniProt taxon 243277. The selected
+        canonical reference matches deposited AAF93945.1 from N16961. The native assignment
+        is explicitly putative by sequence similarity, with a TTG start. UniProt automated
+        ARBA name/FUNCTION/PATHWAY/SUBUNIT annotations concern enterobactin and EntB/EntF;
+        those are not transferred to vibriobactin or adopted as complex evidence.
+        Lou15 Q9RCF2 remains a separate functional hold.'
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AE003852.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Native deposit AE003852.1, source strain N16961, CDS AAF93945.1; the
+        quoted product/note is the named-compound association. Its note explicitly
+        says identified by sequence similarity; putative. This is a prediction, not
+        demonstrated function. The native assignment is explicitly putative by sequence
+        similarity, with a TTG start. UniProt automated ARBA name/FUNCTION/PATHWAY/SUBUNIT
+        annotations concern enterobactin and EntB/EntF; those are not transferred
+        to vibriobactin or adopted as complex evidence. Lou15 Q9RCF2 remains a separate
+        functional hold.
+      snippet: vibriobactin synthase component D
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AE003852.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS [836437:837223](+) (zero-based, end-exclusive), 786
+        nucleotides, TTG start, TGA stop, codon_start 1, bacterial code 11. Biopython
+        strand-aware cds=True translation equals deposited AAF93945.1 and all 261
+        canonical Q9KTV7 residues. Source strain N16961 is explicit; CDS bounds are
+        exact and no translational exceptions are annotated. Alternative start codons
+        are translated as initiating methionine under code 11. This establishes reference-sequence
+        correspondence, not biological initiation, processing, tags, mutations, exact
+        assay stock or strain equivalence.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:9973
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: 'This owner is free vibriobactin, CHEBI:9973, Standard InChIKey LLMKLMMXMOTPRU-YOAXHERRSA-N.
+        Owner and local ChEBI cache agree within each representation (SMILES versus
+        SMILES; InChI versus InChI) under RDKit 2026.03.5: C35H39N5O11, net charge
+        zero, no iron. Standard InChI reconstruction changes amide/imidic-acid tautomer
+        encoding; equal keys do not establish microstate identity. The separate BGC0000945-derived
+        record has key SNUNDXZQRUCXRW-KDUQSJINSA-N and incomplete stereo; it is not
+        merged or treated as an exact product equivalent. This supports named-compound
+        correspondence, not an exact assay-product microstate, ferric complex or Rhea
+        reaction. Ontology values were checked in the local cache on 2026-10-10, not
+        freshly downloaded.'
+  - subject: q9rcf7
+    predicate: is_database_supported_biosynthetic_participant_for
+    object: vibriobactin
+    notes: Canonical reference proteins, not independently inspected assay constructs.
+      These edges describe database-associated or explicitly putative biosynthetic
+      participation, not a direct reaction, ordered pathway, substrate specificity,
+      stoichiometry or physical complex. GROUNDED denotes identifier identity, not
+      experimental validation. Strain references are not interchangeable. UniProt
+      is unreviewed and has no FUNCTION comment in the inspected entry. The U52150.2
+      native note explicitly associates VibH with vibriobactin biosynthesis. Lou15,
+      O395 and N16961 references are not equated as alleles or constructs. Primary
+      methods, figures, supplements and constructs were not independently inspected.
+      The PMID:11112537 abstract is not full-methods evidence; its publisher returned
+      403. PMID:11112538 returned no usable article content and PMID:11160122 presented
+      a browser challenge. No biochemical assay or genetic-result claim is imported
+      from these access-limited sources.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9RCF7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'UniProtKB unreviewed (TrEMBL), entry 56, sequence 1, 436 residues; protein
+        existence 4: Predicted. UniProt taxon 666. The selected canonical reference
+        matches deposited AAD48879.1 from Lou15 (El Tor). UniProt is unreviewed and
+        has no FUNCTION comment in the inspected entry. The U52150.2 native note explicitly
+        associates VibH with vibriobactin biosynthesis. Lou15, O395 and N16961 references
+        are not equated as alleles or constructs.'
+    - reference: https://www.ebi.ac.uk/ena/browser/view/U52150.2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Native deposit U52150.2, source strain Lou15 (El Tor), CDS AAD48879.1;
+        the quoted product/note is the named-compound association. It is a database
+        annotation, not an independently reviewed experiment. UniProt is unreviewed
+        and has no FUNCTION comment in the inspected entry. The U52150.2 native note
+        explicitly associates VibH with vibriobactin biosynthesis. Lou15, O395 and
+        N16961 references are not equated as alleles or constructs.
+      snippet: required for vibriobactin biosynthesis
+    - reference: https://www.ebi.ac.uk/ena/browser/view/U52150.2
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS [5052:6363](-) (zero-based, end-exclusive), 1311
+        nucleotides, ATG start, TGA stop, codon_start 1, bacterial code 11. Biopython
+        strand-aware cds=True translation equals deposited AAD48879.1 and all 436
+        canonical Q9RCF7 residues. Source strain Lou15 (El Tor) is explicit; CDS bounds
+        are exact and no translational exceptions are annotated. Alternative start
+        codons are translated as initiating methionine under code 11. This establishes
+        reference-sequence correspondence, not biological initiation, processing,
+        tags, mutations, exact assay stock or strain equivalence.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:9973
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: 'This owner is free vibriobactin, CHEBI:9973, Standard InChIKey LLMKLMMXMOTPRU-YOAXHERRSA-N.
+        Owner and local ChEBI cache agree within each representation (SMILES versus
+        SMILES; InChI versus InChI) under RDKit 2026.03.5: C35H39N5O11, net charge
+        zero, no iron. Standard InChI reconstruction changes amide/imidic-acid tautomer
+        encoding; equal keys do not establish microstate identity. The separate BGC0000945-derived
+        record has key SNUNDXZQRUCXRW-KDUQSJINSA-N and incomplete stereo; it is not
+        merged or treated as an exact product equivalent. This supports named-compound
+        correspondence, not an exact assay-product microstate, ferric complex or Rhea
+        reaction. Ontology values were checked in the local cache on 2026-10-10, not
+        freshly downloaded.'
+  - subject: a5f3f4
+    predicate: is_database_supported_biosynthetic_participant_for
+    object: vibriobactin
+    notes: Canonical reference proteins, not independently inspected assay constructs.
+      These edges describe database-associated or explicitly putative biosynthetic
+      participation, not a direct reaction, ordered pathway, substrate specificity,
+      stoichiometry or physical complex. GROUNDED denotes identifier identity, not
+      experimental validation. Strain references are not interchangeable. UniProt
+      FUNCTION and cofactor annotations are by similarity. Native AF287252.1 explicitly
+      names a vibriobactin synthetase subunit. Neither sequence identity to another
+      strain reference nor a shared paper citation proves assay-stock equivalence.
+      Primary methods, figures, supplements and constructs were not independently
+      inspected. The PMID:11112537 abstract is not full-methods evidence; its publisher
+      returned 403. PMID:11112538 returned no usable article content and PMID:11160122
+      presented a browser challenge. No biochemical assay or genetic-result claim
+      is imported from these access-limited sources.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A5F3F4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'UniProtKB reviewed (Swiss-Prot), entry 88, sequence 1, 293 residues;
+        protein existence 3: Inferred from homology. UniProt taxon 345073. The selected
+        canonical reference matches deposited AAG00563.1 from O395. UniProt FUNCTION
+        and cofactor annotations are by similarity. Native AF287252.1 explicitly names
+        a vibriobactin synthetase subunit. Neither sequence identity to another strain
+        reference nor a shared paper citation proves assay-stock equivalence.'
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF287252.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Native deposit AF287252.1, source strain O395, CDS AAG00563.1; the quoted
+        product/note is the named-compound association. It is a database annotation,
+        not an independently reviewed experiment. UniProt FUNCTION and cofactor annotations
+        are by similarity. Native AF287252.1 explicitly names a vibriobactin synthetase
+        subunit. Neither sequence identity to another strain reference nor a shared
+        paper citation proves assay-stock equivalence.
+      snippet: vibriobactin synthetase subunit VibB
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF287252.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS [0:882](+) (zero-based, end-exclusive), 882 nucleotides,
+        ATG start, TGA stop, codon_start 1, bacterial code 11. Biopython strand-aware
+        cds=True translation equals deposited AAG00563.1 and all 293 canonical A5F3F4
+        residues. Source strain O395 is explicit; CDS bounds are exact and no translational
+        exceptions are annotated. Alternative start codons are translated as initiating
+        methionine under code 11. This establishes reference-sequence correspondence,
+        not biological initiation, processing, tags, mutations, exact assay stock
+        or strain equivalence.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:9973
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: 'This owner is free vibriobactin, CHEBI:9973, Standard InChIKey LLMKLMMXMOTPRU-YOAXHERRSA-N.
+        Owner and local ChEBI cache agree within each representation (SMILES versus
+        SMILES; InChI versus InChI) under RDKit 2026.03.5: C35H39N5O11, net charge
+        zero, no iron. Standard InChI reconstruction changes amide/imidic-acid tautomer
+        encoding; equal keys do not establish microstate identity. The separate BGC0000945-derived
+        record has key SNUNDXZQRUCXRW-KDUQSJINSA-N and incomplete stereo; it is not
+        merged or treated as an exact product equivalent. This supports named-compound
+        correspondence, not an exact assay-product microstate, ferric complex or Rhea
+        reaction. Ontology values were checked in the local cache on 2026-10-10, not
+        freshly downloaded.'
+  - subject: q9fdb2
+    predicate: is_database_supported_biosynthetic_participant_for
+    object: vibriobactin
+    notes: Canonical reference proteins, not independently inspected assay constructs.
+      These edges describe database-associated or explicitly putative biosynthetic
+      participation, not a direct reaction, ordered pathway, substrate specificity,
+      stoichiometry or physical complex. GROUNDED denotes identifier identity, not
+      experimental validation. Strain references are not interchangeable. UniProt
+      is unreviewed; its automated PATHWAY comment says only siderophore biosynthesis.
+      Exact named-compound association comes from the native AF287253.1 subunit annotation,
+      not from a generic pathway transfer. Primary methods, figures, supplements and
+      constructs were not independently inspected. The PMID:11112537 abstract is not
+      full-methods evidence; its publisher returned 403. PMID:11112538 returned no
+      usable article content and PMID:11160122 presented a browser challenge. No biochemical
+      assay or genetic-result claim is imported from these access-limited sources.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9FDB2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'UniProtKB unreviewed (TrEMBL), entry 79, sequence 1, 543 residues; protein
+        existence 3: Inferred from homology. UniProt taxon 666. The selected canonical
+        reference matches deposited AAG00564.1 from O395. UniProt is unreviewed; its
+        automated PATHWAY comment says only siderophore biosynthesis. Exact named-compound
+        association comes from the native AF287253.1 subunit annotation, not from
+        a generic pathway transfer.'
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF287253.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Native deposit AF287253.1, source strain O395, CDS AAG00564.1; the quoted
+        product/note is the named-compound association. It is a database annotation,
+        not an independently reviewed experiment. UniProt is unreviewed; its automated
+        PATHWAY comment says only siderophore biosynthesis. Exact named-compound association
+        comes from the native AF287253.1 subunit annotation, not from a generic pathway
+        transfer.
+      snippet: vibriobactin synthetase subunit VibE
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF287253.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS [0:1632](+) (zero-based, end-exclusive), 1632 nucleotides,
+        ATG start, TGA stop, codon_start 1, bacterial code 11. Biopython strand-aware
+        cds=True translation equals deposited AAG00564.1 and all 543 canonical Q9FDB2
+        residues. Source strain O395 is explicit; CDS bounds are exact and no translational
+        exceptions are annotated. Alternative start codons are translated as initiating
+        methionine under code 11. This establishes reference-sequence correspondence,
+        not biological initiation, processing, tags, mutations, exact assay stock
+        or strain equivalence.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:9973
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: 'This owner is free vibriobactin, CHEBI:9973, Standard InChIKey LLMKLMMXMOTPRU-YOAXHERRSA-N.
+        Owner and local ChEBI cache agree within each representation (SMILES versus
+        SMILES; InChI versus InChI) under RDKit 2026.03.5: C35H39N5O11, net charge
+        zero, no iron. Standard InChI reconstruction changes amide/imidic-acid tautomer
+        encoding; equal keys do not establish microstate identity. The separate BGC0000945-derived
+        record has key SNUNDXZQRUCXRW-KDUQSJINSA-N and incomplete stereo; it is not
+        merged or treated as an exact product equivalent. This supports named-compound
+        correspondence, not an exact assay-product microstate, ferric complex or Rhea
+        reaction. Ontology values were checked in the local cache on 2026-10-10, not
+        freshly downloaded.'
+  - subject: q9fdb1
+    predicate: is_database_supported_biosynthetic_participant_for
+    object: vibriobactin
+    notes: Canonical reference proteins, not independently inspected assay constructs.
+      These edges describe database-associated or explicitly putative biosynthetic
+      participation, not a direct reaction, ordered pathway, substrate specificity,
+      stoichiometry or physical complex. GROUNDED denotes identifier identity, not
+      experimental validation. Strain references are not interchangeable. UniProt
+      is unreviewed and has no FUNCTION comment in the inspected entry. The selected
+      reference is tied to the O395 deposit, not every strain or synonym merged into
+      the UniProt entry; no N16961 or Lou15 construct equivalence is asserted. Primary
+      methods, figures, supplements and constructs were not independently inspected.
+      The PMID:11112537 abstract is not full-methods evidence; its publisher returned
+      403. PMID:11112538 returned no usable article content and PMID:11160122 presented
+      a browser challenge. No biochemical assay or genetic-result claim is imported
+      from these access-limited sources.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9FDB1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'UniProtKB unreviewed (TrEMBL), entry 91, sequence 1, 436 residues; protein
+        existence 4: Predicted. UniProt taxon 666. The selected canonical reference
+        matches deposited AAG00565.1 from O395. UniProt is unreviewed and has no FUNCTION
+        comment in the inspected entry. The selected reference is tied to the O395
+        deposit, not every strain or synonym merged into the UniProt entry; no N16961
+        or Lou15 construct equivalence is asserted.'
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF287254.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Native deposit AF287254.1, source strain O395, CDS AAG00565.1; the quoted
+        product/note is the named-compound association. It is a database annotation,
+        not an independently reviewed experiment. UniProt is unreviewed and has no
+        FUNCTION comment in the inspected entry. The selected reference is tied to
+        the O395 deposit, not every strain or synonym merged into the UniProt entry;
+        no N16961 or Lou15 construct equivalence is asserted.
+      snippet: vibriobactin synthetase subunit VibH
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF287254.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS [0:1311](+) (zero-based, end-exclusive), 1311 nucleotides,
+        ATG start, TGA stop, codon_start 1, bacterial code 11. Biopython strand-aware
+        cds=True translation equals deposited AAG00565.1 and all 436 canonical Q9FDB1
+        residues. Source strain O395 is explicit; CDS bounds are exact and no translational
+        exceptions are annotated. Alternative start codons are translated as initiating
+        methionine under code 11. This establishes reference-sequence correspondence,
+        not biological initiation, processing, tags, mutations, exact assay stock
+        or strain equivalence.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:9973
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: 'This owner is free vibriobactin, CHEBI:9973, Standard InChIKey LLMKLMMXMOTPRU-YOAXHERRSA-N.
+        Owner and local ChEBI cache agree within each representation (SMILES versus
+        SMILES; InChI versus InChI) under RDKit 2026.03.5: C35H39N5O11, net charge
+        zero, no iron. Standard InChI reconstruction changes amide/imidic-acid tautomer
+        encoding; equal keys do not establish microstate identity. The separate BGC0000945-derived
+        record has key SNUNDXZQRUCXRW-KDUQSJINSA-N and incomplete stereo; it is not
+        merged or treated as an exact product equivalent. This supports named-compound
+        correspondence, not an exact assay-product microstate, ferric complex or Rhea
+        reaction. Ontology values were checked in the local cache on 2026-10-10, not
+        freshly downloaded.'
+  - subject: q9fdb0
+    predicate: is_database_supported_biosynthetic_participant_for
+    object: vibriobactin
+    notes: Canonical reference proteins, not independently inspected assay constructs.
+      These edges describe database-associated or explicitly putative biosynthetic
+      participation, not a direct reaction, ordered pathway, substrate specificity,
+      stoichiometry or physical complex. GROUNDED denotes identifier identity, not
+      experimental validation. Strain references are not interchangeable. UniProt
+      is unreviewed with predicted protein existence; its automated PATHWAY comment
+      is generic. The complete O395 AF287255.1 reference is selected. Partial Q9RR50
+      and N16961 frameshift locus VC_2209 are not adopted as equivalent complete proteins.
+      Primary methods, figures, supplements and constructs were not independently
+      inspected. The PMID:11112537 abstract is not full-methods evidence; its publisher
+      returned 403. PMID:11112538 returned no usable article content and PMID:11160122
+      presented a browser challenge. No biochemical assay or genetic-result claim
+      is imported from these access-limited sources.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9FDB0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'UniProtKB unreviewed (TrEMBL), entry 139, sequence 1, 2413 residues;
+        protein existence 4: Predicted. UniProt taxon 666. The selected canonical
+        reference matches deposited AAG00566.1 from O395. UniProt is unreviewed with
+        predicted protein existence; its automated PATHWAY comment is generic. The
+        complete O395 AF287255.1 reference is selected. Partial Q9RR50 and N16961
+        frameshift locus VC_2209 are not adopted as equivalent complete proteins.'
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF287255.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Native deposit AF287255.1, source strain O395, CDS AAG00566.1; the quoted
+        product/note is the named-compound association. It is a database annotation,
+        not an independently reviewed experiment. UniProt is unreviewed with predicted
+        protein existence; its automated PATHWAY comment is generic. The complete
+        O395 AF287255.1 reference is selected. Partial Q9RR50 and N16961 frameshift
+        locus VC_2209 are not adopted as equivalent complete proteins.
+      snippet: vibriobactin synthetase subunit VibF
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF287255.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS [0:7242](+) (zero-based, end-exclusive), 7242 nucleotides,
+        ATG start, TAG stop, codon_start 1, bacterial code 11. Biopython strand-aware
+        cds=True translation equals deposited AAG00566.1 and all 2413 canonical Q9FDB0
+        residues. Source strain O395 is explicit; CDS bounds are exact and no translational
+        exceptions are annotated. Alternative start codons are translated as initiating
+        methionine under code 11. This establishes reference-sequence correspondence,
+        not biological initiation, processing, tags, mutations, exact assay stock
+        or strain equivalence.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:9973
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: 'This owner is free vibriobactin, CHEBI:9973, Standard InChIKey LLMKLMMXMOTPRU-YOAXHERRSA-N.
+        Owner and local ChEBI cache agree within each representation (SMILES versus
+        SMILES; InChI versus InChI) under RDKit 2026.03.5: C35H39N5O11, net charge
+        zero, no iron. Standard InChI reconstruction changes amide/imidic-acid tautomer
+        encoding; equal keys do not establish microstate identity. The separate BGC0000945-derived
+        record has key SNUNDXZQRUCXRW-KDUQSJINSA-N and incomplete stereo; it is not
+        merged or treated as an exact product equivalent. This supports named-compound
+        correspondence, not an exact assay-product microstate, ferric complex or Rhea
+        reaction. Ontology values were checked in the local cache on 2026-10-10, not
+        freshly downloaded.'
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -96,3 +805,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-10T03:43:25Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added eleven canonical vibriobactin protein references with nine database-supported
+    and two explicitly putative participation edges, native CDS checks and claim-level
+    citations/snippets. Retained strain, initiator, automated enterobactin, fragment,
+    frameshift and chemical-form limits. No exact reactions, assay constructs, source-owned
+    fields or review status upgraded.
+  llm_assisted: true
