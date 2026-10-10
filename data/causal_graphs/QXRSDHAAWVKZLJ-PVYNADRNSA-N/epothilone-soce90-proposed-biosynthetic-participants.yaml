@@ -1,0 +1,343 @@
+record_id: CHEBI:31550
+standard_inchi_key: QXRSDHAAWVKZLJ-PVYNADRNSA-N
+graph:
+  graph_id: epothilone-soce90-proposed-biosynthetic-participants
+  scope: BIOSYNTHESIS
+  description: 6 exact So ce90 references with proposed source-annotated biosynthetic
+    participation. Gene names follow this native deposit, not SMP44. Native PKS/NRPS
+    annotations do not establish exact module reactions. UniProt automated thailandamide
+    and fatty-acid annotations are not adopted. Only six new core references are included;
+    the existing Q9KIZ4 EpoK graph is not duplicated or rewritten. The primary 2000
+    paper was inaccessible; citation metadata is not treated as inspected experimental
+    evidence. Proposed biosynthetic participation from native-locus annotations and
+    the database cluster link, not an independently assayed catalytic function. No
+    exact substrate, intermediate, reaction order, stoichiometry, physical complex
+    or protein-to-final-product reaction is asserted. GROUNDED denotes reference identity,
+    not experimental validation. Strain-specific gene names and sequences are not
+    interchangeable with SMP44 or other strains; no assay construct or stock equivalence
+    is claimed.
+  nodes:
+  - node_id: biosynthesis
+    label: So ce90 proposed epothilone biosynthesis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: epothilone_b
+    label: epothilone B
+    node_type: COMPOUND
+    identifier: CHEBI:31550
+    grounding_status: GROUNDED
+  - node_id: epoa
+    label: EpoA (So ce90 reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q9L8C9
+    grounding_status: GROUNDED
+  - node_id: epop
+    label: EpoP (So ce90 reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q7BN95
+    grounding_status: GROUNDED
+  - node_id: epob
+    label: EpoB (So ce90 reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q9L8C8
+    grounding_status: GROUNDED
+  - node_id: epoc
+    label: EpoC (So ce90 reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q9L8C7
+    grounding_status: GROUNDED
+  - node_id: epod
+    label: EpoD (So ce90 reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q9L8C6
+    grounding_status: GROUNDED
+  - node_id: epoe
+    label: EpoE (So ce90 reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q9L8C5
+    grounding_status: GROUNDED
+  edges:
+  - subject: epoa
+    predicate: is_proposed_biosynthetic_participant_in
+    object: biosynthesis
+    notes: Proposed biosynthetic participation from native-locus annotations and the
+      database cluster link, not an independently assayed catalytic function. No exact
+      substrate, intermediate, reaction order, stoichiometry, physical complex or
+      protein-to-final-product reaction is asserted. GROUNDED denotes reference identity,
+      not experimental validation. Strain-specific gene names and sequences are not
+      interchangeable with SMP44 or other strains; no assay construct or stock equivalence
+      is claimed.
+    evidence:
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF210843.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Native AF210843.1, strain So ce90, taxon 56, gene epoA, protein AAF26919.1.
+        Product: polyketide synthase. Deposited note: EPOS A. This supports source
+        annotation, not independent functional validation. '
+      snippet: polyketide synthase
+    - reference: https://www.uniprot.org/uniprotkb/Q9L8C9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Unreviewed reference Q9L8C9, entry 127, sequence 1, 1421 residues; existence
+        4: Predicted. Native gene/protein and strain correspondence checked. Used
+        for identity only; automated thailandamide, fatty-acid, generic cofactor and
+        reaction annotations are not adopted.'
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF210843.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS [7609:11875](+) (zero-based, end-exclusive), explicit
+        codon_start1/code11, GTG initiation and TGA stop. Strand-aware cds=True translation
+        equals the deposited translation and all 1421 current UniProt residues; no
+        fuzzy CDS or translation exceptions. The proposed participation joins this
+        source-annotated gene product to the epothilone cluster attribution below,
+        not an independent assay. Proposed biosynthetic participation from native-locus
+        annotations and the database cluster link, not an independently assayed catalytic
+        function. No exact substrate, intermediate, reaction order, stoichiometry,
+        physical complex or protein-to-final-product reaction is asserted. GROUNDED
+        denotes reference identity, not experimental validation. Strain-specific gene
+        names and sequences are not interchangeable with SMP44 or other strains; no
+        assay construct or stock equivalence is claimed.
+  - subject: epop
+    predicate: is_proposed_biosynthetic_participant_in
+    object: biosynthesis
+    notes: Proposed biosynthetic participation from native-locus annotations and the
+      database cluster link, not an independently assayed catalytic function. No exact
+      substrate, intermediate, reaction order, stoichiometry, physical complex or
+      protein-to-final-product reaction is asserted. GROUNDED denotes reference identity,
+      not experimental validation. Strain-specific gene names and sequences are not
+      interchangeable with SMP44 or other strains; no assay construct or stock equivalence
+      is claimed.
+    evidence:
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF210843.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Native AF210843.1, strain So ce90, taxon 56, gene epoP, protein AAF26925.1.
+        Product: nonribosomal peptide synthetase. Deposited note: EPOS P; contains
+        condensation/heterocyclization, cysteine adenylation, putative NAD(P)H oxidase,
+        and peptidyl carrier domains. This supports source annotation, not independent
+        functional validation. '
+      snippet: nonribosomal peptide synthetase
+    - reference: https://www.uniprot.org/uniprotkb/Q7BN95
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Unreviewed reference Q7BN95, entry 100, sequence 1, 1410 residues; existence
+        4: Predicted. Native gene/protein and strain correspondence checked. Used
+        for identity only; automated thailandamide, fatty-acid, generic cofactor and
+        reaction annotations are not adopted.'
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF210843.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS [11871:16104](+) (zero-based, end-exclusive), explicit
+        codon_start1/code11, ATG initiation and TAA stop. Strand-aware cds=True translation
+        equals the deposited translation and all 1410 current UniProt residues; no
+        fuzzy CDS or translation exceptions. The proposed participation joins this
+        source-annotated gene product to the epothilone cluster attribution below,
+        not an independent assay. Proposed biosynthetic participation from native-locus
+        annotations and the database cluster link, not an independently assayed catalytic
+        function. No exact substrate, intermediate, reaction order, stoichiometry,
+        physical complex or protein-to-final-product reaction is asserted. GROUNDED
+        denotes reference identity, not experimental validation. Strain-specific gene
+        names and sequences are not interchangeable with SMP44 or other strains; no
+        assay construct or stock equivalence is claimed.
+  - subject: epob
+    predicate: is_proposed_biosynthetic_participant_in
+    object: biosynthesis
+    notes: Proposed biosynthetic participation from native-locus annotations and the
+      database cluster link, not an independently assayed catalytic function. No exact
+      substrate, intermediate, reaction order, stoichiometry, physical complex or
+      protein-to-final-product reaction is asserted. GROUNDED denotes reference identity,
+      not experimental validation. Strain-specific gene names and sequences are not
+      interchangeable with SMP44 or other strains; no assay construct or stock equivalence
+      is claimed.
+    evidence:
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF210843.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Native AF210843.1, strain So ce90, taxon 56, gene epoB, protein AAF26920.1.
+        Product: polyketide synthase. Deposited note: EPOS B. This supports source
+        annotation, not independent functional validation. '
+      snippet: polyketide synthase
+    - reference: https://www.uniprot.org/uniprotkb/Q9L8C8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Unreviewed reference Q9L8C8, entry 123, sequence 1, 1832 residues; existence
+        4: Predicted. Native gene/protein and strain correspondence checked. Used
+        for identity only; automated thailandamide, fatty-acid, generic cofactor and
+        reaction annotations are not adopted.'
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF210843.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS [16250:21749](+) (zero-based, end-exclusive), explicit
+        codon_start1/code11, ATG initiation and TGA stop. Strand-aware cds=True translation
+        equals the deposited translation and all 1832 current UniProt residues; no
+        fuzzy CDS or translation exceptions. The proposed participation joins this
+        source-annotated gene product to the epothilone cluster attribution below,
+        not an independent assay. Proposed biosynthetic participation from native-locus
+        annotations and the database cluster link, not an independently assayed catalytic
+        function. No exact substrate, intermediate, reaction order, stoichiometry,
+        physical complex or protein-to-final-product reaction is asserted. GROUNDED
+        denotes reference identity, not experimental validation. Strain-specific gene
+        names and sequences are not interchangeable with SMP44 or other strains; no
+        assay construct or stock equivalence is claimed.
+  - subject: epoc
+    predicate: is_proposed_biosynthetic_participant_in
+    object: biosynthesis
+    notes: Proposed biosynthetic participation from native-locus annotations and the
+      database cluster link, not an independently assayed catalytic function. No exact
+      substrate, intermediate, reaction order, stoichiometry, physical complex or
+      protein-to-final-product reaction is asserted. GROUNDED denotes reference identity,
+      not experimental validation. Strain-specific gene names and sequences are not
+      interchangeable with SMP44 or other strains; no assay construct or stock equivalence
+      is claimed.
+    evidence:
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF210843.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Native AF210843.1, strain So ce90, taxon 56, gene epoC, protein AAF26921.1.
+        Product: polyketide synthase. Deposited note: EPOS C. This supports source
+        annotation, not independent functional validation. '
+      snippet: polyketide synthase
+    - reference: https://www.uniprot.org/uniprotkb/Q9L8C7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Unreviewed reference Q9L8C7, entry 127, sequence 1, 7257 residues; existence
+        4: Predicted. Native gene/protein and strain correspondence checked. Used
+        for identity only; automated thailandamide, fatty-acid, generic cofactor and
+        reaction annotations are not adopted.'
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF210843.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS [21745:43519](+) (zero-based, end-exclusive), explicit
+        codon_start1/code11, ATG initiation and TGA stop. Strand-aware cds=True translation
+        equals the deposited translation and all 7257 current UniProt residues; no
+        fuzzy CDS or translation exceptions. The proposed participation joins this
+        source-annotated gene product to the epothilone cluster attribution below,
+        not an independent assay. Proposed biosynthetic participation from native-locus
+        annotations and the database cluster link, not an independently assayed catalytic
+        function. No exact substrate, intermediate, reaction order, stoichiometry,
+        physical complex or protein-to-final-product reaction is asserted. GROUNDED
+        denotes reference identity, not experimental validation. Strain-specific gene
+        names and sequences are not interchangeable with SMP44 or other strains; no
+        assay construct or stock equivalence is claimed.
+  - subject: epod
+    predicate: is_proposed_biosynthetic_participant_in
+    object: biosynthesis
+    notes: Proposed biosynthetic participation from native-locus annotations and the
+      database cluster link, not an independently assayed catalytic function. No exact
+      substrate, intermediate, reaction order, stoichiometry, physical complex or
+      protein-to-final-product reaction is asserted. GROUNDED denotes reference identity,
+      not experimental validation. Strain-specific gene names and sequences are not
+      interchangeable with SMP44 or other strains; no assay construct or stock equivalence
+      is claimed.
+    evidence:
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF210843.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Native AF210843.1, strain So ce90, taxon 56, gene epoD, protein AAF26922.1.
+        Product: polyketide synthase. Deposited note: EPOS D. This supports source
+        annotation, not independent functional validation. '
+      snippet: polyketide synthase
+    - reference: https://www.uniprot.org/uniprotkb/Q9L8C6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Unreviewed reference Q9L8C6, entry 123, sequence 1, 3798 residues; existence
+        4: Predicted. Native gene/protein and strain correspondence checked. Used
+        for identity only; automated thailandamide, fatty-acid, generic cofactor and
+        reaction annotations are not adopted.'
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF210843.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS [43523:54920](+) (zero-based, end-exclusive), explicit
+        codon_start1/code11, GTG initiation and TAA stop. Strand-aware cds=True translation
+        equals the deposited translation and all 3798 current UniProt residues; no
+        fuzzy CDS or translation exceptions. The proposed participation joins this
+        source-annotated gene product to the epothilone cluster attribution below,
+        not an independent assay. Proposed biosynthetic participation from native-locus
+        annotations and the database cluster link, not an independently assayed catalytic
+        function. No exact substrate, intermediate, reaction order, stoichiometry,
+        physical complex or protein-to-final-product reaction is asserted. GROUNDED
+        denotes reference identity, not experimental validation. Strain-specific gene
+        names and sequences are not interchangeable with SMP44 or other strains; no
+        assay construct or stock equivalence is claimed.
+  - subject: epoe
+    predicate: is_proposed_biosynthetic_participant_in
+    object: biosynthesis
+    notes: Proposed biosynthetic participation from native-locus annotations and the
+      database cluster link, not an independently assayed catalytic function. No exact
+      substrate, intermediate, reaction order, stoichiometry, physical complex or
+      protein-to-final-product reaction is asserted. GROUNDED denotes reference identity,
+      not experimental validation. Strain-specific gene names and sequences are not
+      interchangeable with SMP44 or other strains; no assay construct or stock equivalence
+      is claimed.
+    evidence:
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF210843.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Native AF210843.1, strain So ce90, taxon 56, gene epoE, protein AAF26923.1.
+        Product: polyketide synthase. Deposited note: EPOS E. This supports source
+        annotation, not independent functional validation. '
+      snippet: polyketide synthase
+    - reference: https://www.uniprot.org/uniprotkb/Q9L8C5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Unreviewed reference Q9L8C5, entry 136, sequence 1, 2439 residues; existence
+        4: Predicted. Native gene/protein and strain correspondence checked. Used
+        for identity only; automated thailandamide, fatty-acid, generic cofactor and
+        reaction annotations are not adopted.'
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF210843.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS [54934:62254](+) (zero-based, end-exclusive), explicit
+        codon_start1/code11, ATG initiation and TGA stop. Strand-aware cds=True translation
+        equals the deposited translation and all 2439 current UniProt residues; no
+        fuzzy CDS or translation exceptions. The proposed participation joins this
+        source-annotated gene product to the epothilone cluster attribution below,
+        not an independent assay. Proposed biosynthetic participation from native-locus
+        annotations and the database cluster link, not an independently assayed catalytic
+        function. No exact substrate, intermediate, reaction order, stoichiometry,
+        physical complex or protein-to-final-product reaction is asserted. GROUNDED
+        denotes reference identity, not experimental validation. Strain-specific gene
+        names and sequences are not interchangeable with SMP44 or other strains; no
+        assay construct or stock equivalence is claimed.
+  - subject: biosynthesis
+    predicate: is_source_associated_with_biosynthesis_of
+    object: epothilone_b
+    notes: Source-level cluster attribution shared across epothilone congeners, not
+      proof of B-specificity or sufficiency of these proteins. Gene names follow this
+      native deposit, not SMP44. Native PKS/NRPS annotations do not establish exact
+      module reactions. UniProt automated thailandamide and fatty-acid annotations
+      are not adopted. Only six new core references are included; the existing Q9KIZ4
+      EpoK graph is not duplicated or rewritten. The primary 2000 paper was inaccessible;
+      citation metadata is not treated as inspected experimental evidence. Proposed
+      biosynthetic participation from native-locus annotations and the database cluster
+      link, not an independently assayed catalytic function. No exact substrate, intermediate,
+      reaction order, stoichiometry, physical complex or protein-to-final-product
+      reaction is asserted. GROUNDED denotes reference identity, not experimental
+      validation. Strain-specific gene names and sequences are not interchangeable
+      with SMP44 or other strains; no assay construct or stock equivalence is claimed.
+    evidence:
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000988.5/annotations.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Active BGC0000988.5 associates AF210843.1 with one deposited compound
+        structure. Quality questionable, completeness unknown; locus and compound
+        evidence arrays are empty. Entry-level legacy citations do not become independently
+        inspected experiments. Producer SOURCE_ASSERTION and CLUSTER_UNSTATED grades
+        remain unchanged.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000988.5/annotations.json
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: The raw MIBiG structure, owner SMILES and owner InChI reproduce QXRSDHAAWVKZLJ-PVYNADRNSA-N,
+        C27H41NO6S, formal charge0 under RDKit2026.03.5. This maps the source structure
+        to CHEBI:31550; it does not recharacterize a native or engineered strain product.
+        The existing shared-structure discussion remains open.
+curation_history:
+- timestamp: '2026-10-10T05:55:37Z'
+  curator: codex
+  action: ADD_BIOSYNTHETIC_PROTEIN_GRAPH
+  changes: Added 6 exact So ce90 protein references and proposed, cited biosynthetic-participation
+    edges for owner data/natural_products/unclassified/epothilone-b.yaml at base 0e1c93968eecc0862f10e38cf77a1fa73097082f.
+    Native translation and chemical identity verified. Database assertions and curator
+    inferences only; no new experimental catalysis, strain transfer or source-grade
+    upgrade.
+  llm_assisted: true
