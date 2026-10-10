@@ -1128,6 +1128,16 @@ causal_graph_refs:
 - beta-carotene-lcy1-q43415-database
 - beta-carotene-umag06287-q4p0s6-similarity
 - beta-carotene-sr13176-e6zz11-similarity
+- beta-carotene-pa1-15240-b2atb0-similarity
+- beta-carotene-ptrg07366-b2waq3-similarity
+- beta-carotene-ao090020000159-q2u4x9-similarity
+- beta-carotene-lemap1140901-e4zub5-similarity
+- beta-carotene-trv03236-d4d802-similarity
+- beta-carotene-smac01277-d1z4k7-similarity
+- beta-carotene-glrg02475-e3q717-similarity
+- beta-carotene-mgyg02096-e4upp6-similarity
+- beta-carotene-snog00339-q0v6m5-similarity
+- beta-carotene-an07g00800-a2qm49-similarity
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -1215,4 +1225,16 @@ curation_history:
     or experimental claims added. Twelve older graphs, nine pathway steps, five Discussions,
     imported fields and history preserved. SEEDED and all prior scientific/access
     holds remain.'
+  llm_assisted: true
+- timestamp: '2026-10-10T00:11:50Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added B2ATB0,B2WAQ3,Q2U4X9,E4ZUB5,D4D802,D1Z4K7,E3Q717,E4UPP6,Q0V6M5,A2QM49
+    as ten separate BIOSYNTHESIS reference graphs: thirty cited edges and ten reaction
+    snippets. Functions are DATABASE_ASSERTION with ECO:0000250 from P37295; protein
+    existence3, not assays. Native CDS correspondence is CURATOR_INFERENCE. GROUNDED
+    denotes sequence identity, not experimental function. No pathway steps, Discussions,
+    producer/BGC/taxonomy/origin or experimental claims added. Fourteen older graphs,
+    nine pathway steps, five Discussions, imported fields and history preserved. SEEDED
+    and all prior scientific/access holds remain.'
   llm_assisted: true
