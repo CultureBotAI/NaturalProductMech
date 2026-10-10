@@ -236,6 +236,95 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-41a3517181
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: coelichelin-sco0492-db
+  scope: BIOSYNTHESIS
+  description: 'SCO0492 reference: database-proposed participation in coelichelin
+    biosynthesis. Deliberately selected canonical reference, not an independently
+    inspected assay construct. MIBiG version5 explicitly assigns its three coelichelin
+    NRPS modules to CAB53322.1; each adenylation-domain substrate annotation is Structure-based
+    inference. This graph adopts only proposed process participation, not those exact
+    substrates, module order, iteration, module skipping, product release, measured
+    stereoselectivity or a complete catalytic mechanism. MIBiG quality is questionable,
+    completeness unknown, and locus evidence is empty. No producer/BGC, taxonomy,
+    origin or experimental upgrade.'
+  nodes:
+  - node_id: sco0492
+    label: Peptide synthetase SCO0492 (reference sequence)
+    node_type: ENZYME
+    identifier: UniProtKB:Q9RK14
+    grounding_status: GROUNDED
+  - node_id: coelichelin
+    label: coelichelin
+    node_type: COMPOUND
+    identifier: CHEBI:80049
+    grounding_status: GROUNDED
+  edges:
+  - subject: sco0492
+    predicate: is_database_proposed_biosynthetic_participant_for
+    object: coelichelin
+    notes: Deliberately selected canonical reference, not an independently inspected
+      assay construct. MIBiG version5 explicitly assigns its three coelichelin NRPS
+      modules to CAB53322.1; each adenylation-domain substrate annotation is Structure-based
+      inference. This graph adopts only proposed process participation, not those
+      exact substrates, module order, iteration, module skipping, product release,
+      measured stereoselectivity or a complete catalytic mechanism. MIBiG quality
+      is questionable, completeness unknown, and locus evidence is empty. No producer/BGC,
+      taxonomy, origin or experimental upgrade. Primary DOI10.1038/nchembio731 was
+      available only as a subscription preview; DOI10.1039/B801016A returned an abstract-only
+      landing page. Neither primary experiment, figure, supplement nor construct was
+      independently inspected. No CchA/B/J/K or CchH alias transfer is made from conflicting
+      secondary locus labels.
+    evidence:
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000325.5/index.html
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: BGC0000325 version5 is active and lists exactly one compound, coelichelin,
+        with the same stereochemical SMILES as this owner. biosynthesis.modules Unk01/Unk02/Unk03
+        all name CAB53322.1. Their active fields are null, domain coordinates are
+        -1/-1, and substrate support is structure-based inference, not an enzyme assay.
+        The rendered entry maps CAB53322.1 to SCO0492. The antiSMASH region prediction
+        is not used as functional evidence. Deliberately selected canonical reference,
+        not an independently inspected assay construct. MIBiG version5 explicitly
+        assigns its three coelichelin NRPS modules to CAB53322.1; each adenylation-domain
+        substrate annotation is Structure-based inference. This graph adopts only
+        proposed process participation, not those exact substrates, module order,
+        iteration, module skipping, product release, measured stereoselectivity or
+        a complete catalytic mechanism. MIBiG quality is questionable, completeness
+        unknown, and locus evidence is empty. No producer/BGC, taxonomy, origin or
+        experimental upgrade.
+      snippet: Structure-based inference
+    - reference: https://www.uniprot.org/uniprotkb/Q9RK14
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Unreviewed TrEMBL entry150, sequence1, 3643aa, protein existence4: Predicted;
+        taxon100226, Streptomyces coelicolor A3(2)/M145 reference. SCO0492/SCF34.11c
+        maps to CAB53322.1 on AL645882 and AL939105. UniProt has no FUNCTION, PATHWAY
+        or CATALYTIC ACTIVITY comment for this entry; it is used for identity, not
+        an independent coelichelin functional assertion. Predicted carrier/PTM annotations
+        are not experimentally verified processing or activity.'
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AL939105.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete reverse-strand CDS AL939105.1:214989..225920, 10932nt including
+        TGA stop, ATG start, bacterial translation table11, codon_start1. Independent
+        translation equals deposited CAB53322.1 and all3643 canonical Q9RK14 residues.
+        The MIBiG-derived GenBank segment has the identical CDS and translation at
+        complement(20001..30932); its original-start offset493988 maps to AL645882.2:513989..524920.
+        The assembly joins AL939105.1:51..291000 after 299050bp, independently confirming
+        offset299000. ENA source is species taxon1902 with explicit strain A3(2);
+        it is not a native taxon100226 qualifier. Sequence equality establishes reference
+        identity, not identity of a historical assay stock or construct. RefSeq WP_011027156.1/NC_003888.3
+        remains uninspected.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:80049
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Existing local OAK ChEBI cache inspected2026-10-10, not a fresh ChEBI
+        download. Pinned RDKit2026.03.5 maps owner SMILES, owner InChI, MIBiG version5
+        compound SMILES and cached ChEBI SMILES to ZPJLQAOTGYKOBJ-OVYGPGRDSA-N, formula
+        C21H39N7O11, with no unspecified tetrahedral centers. This is the uncomplexed
+        compound, not its ferric or gallium complex. Chemical equality is not an assay
+        or an experimental stereochemical determination of the selected protein product.
 curation_history:
 - timestamp: '2026-09-10T05:54:17Z'
   curator: seed_from_sources
@@ -245,3 +334,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-10T01:44:38Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a database-proposed coelichelin biosynthesis participant graph for
+    SCO0492/UniProtKB:Q9RK14, with exact reference/CDS and chemical-identity checks.
+    No primary-assay, reaction-order, producer, BGC or origin upgrade.
+  llm_assisted: true
