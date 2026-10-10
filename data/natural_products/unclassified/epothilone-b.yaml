@@ -640,6 +640,333 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-30'
       notes: The Rhea Swiss-Prot mapping links RHEA:47808 to UniProtKB:Q9KIZ4.
+- graph_id: epothilone-smp44-source-annotated-assembly
+  scope: BIOSYNTHESIS
+  description: Six source-annotated SMP44 assembly proteins, mapped to complete native
+    AF217189.1 CDS sequences. Five PKS references and one NRPS reference contribute
+    to an epothilone assembly process, without an inferred protein-to-protein reaction
+    chain. The named epothilone B association is supported by the abstract-level whole-cluster
+    result and a separately verified MIBiG structure link. Source-annotated assembly
+    participation, not independently assayed catalysis. No direct protein-to-final-product
+    reaction, exact intermediate, stoichiometry, substrate specificity, physical complex
+    or complete reaction order is asserted. GROUNDED denotes identifier identity,
+    not experimental validation. SMP44 references are not interchangeable with So0157-2
+    proteins, whose epo gene names differ.
+  nodes:
+  - node_id: assembly
+    label: SMP44 epothilone core assembly
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: epothilone_b
+    label: epothilone B
+    node_type: COMPOUND
+    identifier: CHEBI:31550
+    grounding_status: GROUNDED
+  - node_id: epoa
+    label: EpoA (PKS, SMP44 reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q9KJ00
+    grounding_status: GROUNDED
+  - node_id: epob
+    label: EpoB (NRPS, SMP44 reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q9KIZ9
+    grounding_status: GROUNDED
+  - node_id: epoc
+    label: EpoC (PKS, SMP44 reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q9KIZ8
+    grounding_status: GROUNDED
+  - node_id: epod
+    label: EpoD (PKS, SMP44 reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q9KIZ7
+    grounding_status: GROUNDED
+  - node_id: epoe
+    label: EpoE (PKS, SMP44 reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q9KIZ6
+    grounding_status: GROUNDED
+  - node_id: epof
+    label: EpoF (PKS, SMP44 reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q9KIZ5
+    grounding_status: GROUNDED
+  edges:
+  - subject: epoa
+    predicate: has_source_annotated_assembly_role_in
+    object: assembly
+    notes: Source-annotated assembly participation, not independently assayed catalysis.
+      No direct protein-to-final-product reaction, exact intermediate, stoichiometry,
+      substrate specificity, physical complex or complete reaction order is asserted.
+      GROUNDED denotes identifier identity, not experimental validation. SMP44 references
+      are not interchangeable with So0157-2 proteins, whose epo gene names differ.
+    evidence:
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF217189.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Native AF217189.1, Sorangium cellulosum SMP44, taxon 56, AAF62880.1.
+        The deposited CDS note assigns this epothilone assembly role: type I polyketide
+        synthase; epothilone PKS loading module. Its module numbering is the depositor
+        annotation, not a reconstructed or experimentally verified reaction sequence.
+        Source-annotated assembly participation, not independently assayed catalysis.
+        No direct protein-to-final-product reaction, exact intermediate, stoichiometry,
+        substrate specificity, physical complex or complete reaction order is asserted.
+        GROUNDED denotes identifier identity, not experimental validation. SMP44 references
+        are not interchangeable with So0157-2 proteins, whose epo gene names differ.'
+      snippet: type I polyketide synthase; epothilone PKS loading module
+    - reference: https://www.uniprot.org/uniprotkb/Q9KJ00
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Unreviewed UniProt Q9KJ00, entry 134, sequence 1, 1421 residues; existence
+        4: Predicted. Native EMBL protein AAF62880.1, gene epoA, and publication strain
+        SMP44 match. UniProt is used for canonical identity, not its automated activity
+        assignments. UniProt automated FUNCTION statements about thailandamide are
+        not adopted. '
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF217189.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS [1997:6263](+) (zero-based, end-exclusive), 4266
+        nucleotides, GTG initiation, TGA stop, explicit codon_start 1 and genetic
+        code 11. Strand-aware Biopython cds=True translation equals all 1421 deposited
+        AAF62880.1 and current Q9KJ00 residues. No fuzzy CDS boundary or annotated
+        translation exception is present. Reference correspondence does not establish
+        an assay construct, tags, mutations, processing, or stock identity.
+  - subject: epob
+    predicate: has_source_annotated_assembly_role_in
+    object: assembly
+    notes: Source-annotated assembly participation, not independently assayed catalysis.
+      No direct protein-to-final-product reaction, exact intermediate, stoichiometry,
+      substrate specificity, physical complex or complete reaction order is asserted.
+      GROUNDED denotes identifier identity, not experimental validation. SMP44 references
+      are not interchangeable with So0157-2 proteins, whose epo gene names differ.
+    evidence:
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF217189.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Native AF217189.1, Sorangium cellulosum SMP44, taxon 56, AAF62881.1.
+        The deposited CDS note assigns this epothilone assembly role: non ribosomal
+        peptide synthetase; epothilone PKS module 1. Its module numbering is the depositor
+        annotation, not a reconstructed or experimentally verified reaction sequence.
+        Source-annotated assembly participation, not independently assayed catalysis.
+        No direct protein-to-final-product reaction, exact intermediate, stoichiometry,
+        substrate specificity, physical complex or complete reaction order is asserted.
+        GROUNDED denotes identifier identity, not experimental validation. SMP44 references
+        are not interchangeable with So0157-2 proteins, whose epo gene names differ.'
+      snippet: non ribosomal peptide synthetase; epothilone PKS module 1
+    - reference: https://www.uniprot.org/uniprotkb/Q9KIZ9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Unreviewed UniProt Q9KIZ9, entry 123, sequence 1, 1410 residues; existence
+        1: Evidence at protein level. Native EMBL protein AAF62881.1, gene epoB, and
+        publication strain SMP44 match. UniProt is used for canonical identity, not
+        its automated activity assignments. Protein-level existence includes structural
+        evidence for a fragment; the complete reference is not asserted to be that
+        crystallized construct. '
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF217189.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS [6259:10492](+) (zero-based, end-exclusive), 4233
+        nucleotides, ATG initiation, TAA stop, explicit codon_start 1 and genetic
+        code 11. Strand-aware Biopython cds=True translation equals all 1410 deposited
+        AAF62881.1 and current Q9KIZ9 residues. No fuzzy CDS boundary or annotated
+        translation exception is present. Reference correspondence does not establish
+        an assay construct, tags, mutations, processing, or stock identity.
+  - subject: epoc
+    predicate: has_source_annotated_assembly_role_in
+    object: assembly
+    notes: Source-annotated assembly participation, not independently assayed catalysis.
+      No direct protein-to-final-product reaction, exact intermediate, stoichiometry,
+      substrate specificity, physical complex or complete reaction order is asserted.
+      GROUNDED denotes identifier identity, not experimental validation. SMP44 references
+      are not interchangeable with So0157-2 proteins, whose epo gene names differ.
+    evidence:
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF217189.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Native AF217189.1, Sorangium cellulosum SMP44, taxon 56, AAF62882.1.
+        The deposited CDS note assigns this epothilone assembly role: type I polyketide
+        synthase; epothilone PKS module 2. Its module numbering is the depositor annotation,
+        not a reconstructed or experimentally verified reaction sequence. Source-annotated
+        assembly participation, not independently assayed catalysis. No direct protein-to-final-product
+        reaction, exact intermediate, stoichiometry, substrate specificity, physical
+        complex or complete reaction order is asserted. GROUNDED denotes identifier
+        identity, not experimental validation. SMP44 references are not interchangeable
+        with So0157-2 proteins, whose epo gene names differ.'
+      snippet: type I polyketide synthase; epothilone PKS module 2
+    - reference: https://www.uniprot.org/uniprotkb/Q9KIZ8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Unreviewed UniProt Q9KIZ8, entry 126, sequence 1, 1832 residues; existence
+        4: Predicted. Native EMBL protein AAF62882.1, gene epoC, and publication strain
+        SMP44 match. UniProt is used for canonical identity, not its automated activity
+        assignments. '
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF217189.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS [10638:16137](+) (zero-based, end-exclusive), 5499
+        nucleotides, ATG initiation, TGA stop, explicit codon_start 1 and genetic
+        code 11. Strand-aware Biopython cds=True translation equals all 1832 deposited
+        AAF62882.1 and current Q9KIZ8 residues. No fuzzy CDS boundary or annotated
+        translation exception is present. Reference correspondence does not establish
+        an assay construct, tags, mutations, processing, or stock identity.
+  - subject: epod
+    predicate: has_source_annotated_assembly_role_in
+    object: assembly
+    notes: Source-annotated assembly participation, not independently assayed catalysis.
+      No direct protein-to-final-product reaction, exact intermediate, stoichiometry,
+      substrate specificity, physical complex or complete reaction order is asserted.
+      GROUNDED denotes identifier identity, not experimental validation. SMP44 references
+      are not interchangeable with So0157-2 proteins, whose epo gene names differ.
+    evidence:
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF217189.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Native AF217189.1, Sorangium cellulosum SMP44, taxon 56, AAF62883.1.
+        The deposited CDS note assigns this epothilone assembly role: type I polyketide
+        synthase; epothilone PKS modules 3, 4, 5, and 6. Its module numbering is the
+        depositor annotation, not a reconstructed or experimentally verified reaction
+        sequence. Source-annotated assembly participation, not independently assayed
+        catalysis. No direct protein-to-final-product reaction, exact intermediate,
+        stoichiometry, substrate specificity, physical complex or complete reaction
+        order is asserted. GROUNDED denotes identifier identity, not experimental
+        validation. SMP44 references are not interchangeable with So0157-2 proteins,
+        whose epo gene names differ.'
+      snippet: type I polyketide synthase; epothilone PKS modules 3, 4, 5, and 6
+    - reference: https://www.uniprot.org/uniprotkb/Q9KIZ7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Unreviewed UniProt Q9KIZ7, entry 130, sequence 1, 7257 residues; existence
+        4: Predicted. Native EMBL protein AAF62883.1, gene epoD, and publication strain
+        SMP44 match. UniProt is used for canonical identity, not its automated activity
+        assignments. UniProt automated FUNCTION statements about thailandamide are
+        not adopted. '
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF217189.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS [16133:37907](+) (zero-based, end-exclusive), 21774
+        nucleotides, ATG initiation, TGA stop, explicit codon_start 1 and genetic
+        code 11. Strand-aware Biopython cds=True translation equals all 7257 deposited
+        AAF62883.1 and current Q9KIZ7 residues. No fuzzy CDS boundary or annotated
+        translation exception is present. Reference correspondence does not establish
+        an assay construct, tags, mutations, processing, or stock identity.
+  - subject: epoe
+    predicate: has_source_annotated_assembly_role_in
+    object: assembly
+    notes: Source-annotated assembly participation, not independently assayed catalysis.
+      No direct protein-to-final-product reaction, exact intermediate, stoichiometry,
+      substrate specificity, physical complex or complete reaction order is asserted.
+      GROUNDED denotes identifier identity, not experimental validation. SMP44 references
+      are not interchangeable with So0157-2 proteins, whose epo gene names differ.
+    evidence:
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF217189.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Native AF217189.1, Sorangium cellulosum SMP44, taxon 56, AAF62884.1.
+        The deposited CDS note assigns this epothilone assembly role: type I polyketide
+        synthase; epothilone PKS modules 7 and 8. Its module numbering is the depositor
+        annotation, not a reconstructed or experimentally verified reaction sequence.
+        Source-annotated assembly participation, not independently assayed catalysis.
+        No direct protein-to-final-product reaction, exact intermediate, stoichiometry,
+        substrate specificity, physical complex or complete reaction order is asserted.
+        GROUNDED denotes identifier identity, not experimental validation. SMP44 references
+        are not interchangeable with So0157-2 proteins, whose epo gene names differ.'
+      snippet: type I polyketide synthase; epothilone PKS modules 7 and 8
+    - reference: https://www.uniprot.org/uniprotkb/Q9KIZ6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Unreviewed UniProt Q9KIZ6, entry 130, sequence 1, 3798 residues; existence
+        4: Predicted. Native EMBL protein AAF62884.1, gene epoE, and publication strain
+        SMP44 match. UniProt is used for canonical identity, not its automated activity
+        assignments. UniProt automated FUNCTION statements about thailandamide are
+        not adopted. '
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF217189.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS [37911:49308](+) (zero-based, end-exclusive), 11397
+        nucleotides, GTG initiation, TAA stop, explicit codon_start 1 and genetic
+        code 11. Strand-aware Biopython cds=True translation equals all 3798 deposited
+        AAF62884.1 and current Q9KIZ6 residues. No fuzzy CDS boundary or annotated
+        translation exception is present. Reference correspondence does not establish
+        an assay construct, tags, mutations, processing, or stock identity.
+  - subject: epof
+    predicate: has_source_annotated_assembly_role_in
+    object: assembly
+    notes: Source-annotated assembly participation, not independently assayed catalysis.
+      No direct protein-to-final-product reaction, exact intermediate, stoichiometry,
+      substrate specificity, physical complex or complete reaction order is asserted.
+      GROUNDED denotes identifier identity, not experimental validation. SMP44 references
+      are not interchangeable with So0157-2 proteins, whose epo gene names differ.
+    evidence:
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF217189.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Native AF217189.1, Sorangium cellulosum SMP44, taxon 56, AAF62885.1.
+        The deposited CDS note assigns this epothilone assembly role: type I polyketide
+        synthase; epothilone PKS module 9. Its module numbering is the depositor annotation,
+        not a reconstructed or experimentally verified reaction sequence. Source-annotated
+        assembly participation, not independently assayed catalysis. No direct protein-to-final-product
+        reaction, exact intermediate, stoichiometry, substrate specificity, physical
+        complex or complete reaction order is asserted. GROUNDED denotes identifier
+        identity, not experimental validation. SMP44 references are not interchangeable
+        with So0157-2 proteins, whose epo gene names differ.'
+      snippet: type I polyketide synthase; epothilone PKS module 9
+    - reference: https://www.uniprot.org/uniprotkb/Q9KIZ5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Unreviewed UniProt Q9KIZ5, entry 138, sequence 1, 2439 residues; existence
+        4: Predicted. Native EMBL protein AAF62885.1, gene epoF, and publication strain
+        SMP44 match. UniProt is used for canonical identity, not its automated activity
+        assignments. UniProt automated FUNCTION statements about thailandamide are
+        not adopted. Automated fatty-acid synthase activities and generic lipid-metabolism
+        annotations are not imported as epothilone reactions. '
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AF217189.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS [49322:56642](+) (zero-based, end-exclusive), 7320
+        nucleotides, ATG initiation, TGA stop, explicit codon_start 1 and genetic
+        code 11. Strand-aware Biopython cds=True translation equals all 2439 deposited
+        AAF62885.1 and current Q9KIZ5 residues. No fuzzy CDS boundary or annotated
+        translation exception is present. Reference correspondence does not establish
+        an assay construct, tags, mutations, processing, or stock identity.
+  - subject: assembly
+    predicate: contributes_to_biosynthesis_of
+    object: epothilone_b
+    notes: The assembly process is shared by epothilone congeners, not B-specific.
+      It does not alone perform final epoxidation; the existing EpoK graph separately
+      records that step. No edge crosses graph-local node identifiers. Source-annotated
+      assembly participation, not independently assayed catalysis. No direct protein-to-final-product
+      reaction, exact intermediate, stoichiometry, substrate specificity, physical
+      complex or complete reaction order is asserted. GROUNDED denotes identifier
+      identity, not experimental validation. SMP44 references are not interchangeable
+      with So0157-2 proteins, whose epo gene names differ.
+    evidence:
+    - reference: DOI:10.1126/science.287.5453.640
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-10'
+      notes: Only the PubMed abstract was inspected. It reports coexpression of the
+        epothilone cluster genes in Streptomyces coelicolor and production of both
+        A and B. This is a whole-system result, not an independent assay of each EpoA-F
+        protein or proof that these six proteins alone make B. Full text returned
+        HTTP 403; constructs, figures, methods and supplements were not inspected.
+      snippet: Concomitant expression of these genes in the actinomycete Streptomyces
+        coelicolor produced epothilones A and B.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000991.4/annotations.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Active MIBiG BGC0000991 version 4 links AF217189.1 to one epothilone
+        structure. Entry quality is questionable, completeness unknown, and locus
+        evidence is empty; entry-level papers do not upgrade source-owned producer
+        or BGC evidence grades.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000991.4/annotations.json
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: The MIBiG structure, owner SMILES and owner Standard InChI each reproduce
+        QXRSDHAAWVKZLJ-PVYNADRNSA-N under RDKit 2026.03.5, formula C27H41NO6S, formal
+        charge zero. This anchors the database structure link to CHEBI:31550; it does
+        not independently reassess the chemical characterization of the heterologous
+        product. Other cluster entries and the shared-structure discussion remain
+        unreviewed.
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -659,4 +986,14 @@ curation_history:
   changes: Added exact UniProtKB:Q9KIZ4 EpoK grounding, the RHEA:47808 epothilone
     D to epothilone B epoxidation pathway step, and a BIOSYNTHESIS causal graph linking
     epothilone D through EpoK to epothilone B.
+  llm_assisted: true
+- timestamp: '2026-10-10T05:10:34Z'
+  curator: codex
+  action: ADD_BIOSYNTHETIC_PROTEIN_GRAPH
+  changes: Added six exact SMP44 EpoA-F UniProt references in a BIOSYNTHESIS graph
+    with native-deposit assembly-role assertions, seven cited edges and full-CDS identity
+    checks. The primary heterologous-production claim is abstract-only. Preserved
+    the existing EpoK graph/pathway, all source-owned fields and SEEDED status. No
+    individual enzyme assay, exact reaction, construct, inter-strain equivalence or
+    automated thailandamide annotation is adopted.
   llm_assisted: true
