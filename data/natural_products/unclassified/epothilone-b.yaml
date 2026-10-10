@@ -971,6 +971,7 @@ causal_graph_refs:
 - epothilone-soce90-proposed-biosynthetic-participants
 - epothilone-so0157-2-proposed-biosynthetic-participants
 - epothilone-kyc3013-proposed-biosynthetic-participants
+- epothilone-b-9pnd-deposited-tubulin-model
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -1019,4 +1020,13 @@ curation_history:
     UniProt examples. Every added edge has a stable URL. Preserved both old inline
     graphs, pathway, all prior history, source-owned fields, open discussion and SEEDED
     status.
+  llm_assisted: true
+- timestamp: '2026-10-10T06:46:13Z'
+  curator: codex
+  action: ADD_STRUCTURAL_PROTEIN_GRAPH
+  changes: Added the 9PND BIOACTIVITY model-contact graph with two exact mouse tubulin
+    model references, three cited edges and three verbatim snippets. Preserved existing
+    mechanism, source fields, history and SEEDED status. No alpha binding, isoform
+    homogeneity, processing state, affinity or downstream effect is inferred; ligand-validation
+    caveats remain explicit.
   llm_assisted: true
