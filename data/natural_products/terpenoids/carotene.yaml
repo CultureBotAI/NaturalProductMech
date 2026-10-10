@@ -1107,6 +1107,7 @@ causal_graph_refs:
 - beta-lcyb-d9il23-db
 - beta-lcyb-q43578-db
 - beta-carotene-dclcyb1-complementation
+- beta-carotene-dclcyb2-krd-complementation
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -1220,4 +1221,11 @@ curation_history:
     discussion. Existing identical chemistry evidence uses YAML aliases without semantic
     changes. All29 prior graphs, nine pathway steps, source fields, history and SEEDED
     status preserved.
+  llm_assisted: true
+- timestamp: '2026-10-10T21:44:51Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Added bounded KRD DcLcyB2 graph with Q2VEX6 printed-sequence grounding.
+    Preserved all30 prior components, nine pathway steps, six discussions, source
+    fields, history and SEEDED status; no full-record sign-off.
   llm_assisted: true
