@@ -1,0 +1,350 @@
+record_id: CHEBI:31550
+standard_inchi_key: QXRSDHAAWVKZLJ-PVYNADRNSA-N
+graph:
+  graph_id: epothilone-b-7dae-deposited-tubulin-partner-model
+  scope: BIOACTIVITY
+  description: A deposited mixed-species tubulin-partner crystallization complex,
+    not a native multispecies assembly. 7DAE version 1.1 (2023-11-29) models native-source
+    porcine tubulins (taxon 9823), an engineered mouse Stmn4 fragment (taxon 10090),
+    and an engineered chicken TTL construct (taxon 9031); the latter two are expressed
+    in E. coli (taxon 562) according to the deposit. Strains are unspecified. Alternate
+    conformers and partial protein-atom occupancies are retained. The primary paper
+    DOI:10.1016/j.bbrc.2020.11.082 was inaccessible; only its abstract on the PDB
+    page was inspected. No primary assay result is imported. GROUNDED identifies the
+    deposited model reference, not an independently assayed native protein. No native
+    isoform homogeneity, stock equivalence, processing state, affinity, potency, precise
+    hydrogen bond, drug-induced assembly or downstream effect is asserted. Other modeled
+    partners are not asserted to be drug targets.
+  nodes:
+  - node_id: epothilone_b
+    label: epothilone B
+    node_type: COMPOUND
+    identifier: CHEBI:31550
+    grounding_status: GROUNDED
+  - node_id: deposited_complex
+    label: 7DAE deposited tubulin-partner complex
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: protein_q2xvp4
+    label: TUBA1B (7DAE model reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q2XVP4
+    grounding_status: GROUNDED
+  - node_id: protein_a0a8d1uir5
+    label: LOC100624785 (7DAE model reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:A0A8D1UIR5
+    grounding_status: GROUNDED
+  - node_id: protein_p63042
+    label: Stmn4 (7DAE model reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:P63042
+    grounding_status: GROUNDED
+  - node_id: protein_np_001186321_1
+    label: TTL (7DAE model reference)
+    node_type: PROTEIN
+    identifier: NCBIProtein:NP_001186321.1
+    grounding_status: GROUNDED
+  edges:
+  - subject: epothilone_b
+    predicate: has_deposited_model_contact_with
+    object: protein_a0a8d1uir5
+    notes: The deposited X-ray resolution is 2.394 Angstrom. The official 2026-03-05
+      report flags 15 EPB bond lengths, 17 angles and six of 51 torsions, with no
+      chiral or ring outliers. Instance metrics RSCC 0.908, RSR 0.129, completeness
+      1.0 and six intermolecular clashes coexist with those geometry warnings. Density
+      illustrations are not independent refinement or an affinity measurement; no
+      precise hydrogen-bond chemistry is adjudicated. GROUNDED identifies the deposited
+      model reference, not an independently assayed native protein. No native isoform
+      homogeneity, stock equivalence, processing state, affinity, potency, precise
+      hydrogen bond, drug-induced assembly or downstream effect is asserted. Other
+      modeled partners are not asserted to be drug targets.
+    evidence:
+    - reference: https://www.rcsb.org/structure/7DAE
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Deposited EPB geometry and selected model-reference membership only.
+        A deposited mixed-species tubulin-partner crystallization complex, not a native
+        multispecies assembly. 7DAE version 1.1 (2023-11-29) models native-source
+        porcine tubulins (taxon 9823), an engineered mouse Stmn4 fragment (taxon 10090),
+        and an engineered chicken TTL construct (taxon 9031); the latter two are expressed
+        in E. coli (taxon 562) according to the deposit. Strains are unspecified.
+        Alternate conformers and partial protein-atom occupancies are retained.
+    - reference: https://files.rcsb.org/download/7DAE.cif
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: EPB label chain U has 35 heavy atoms, modeled occupancy 1.0, and nearest
+        beta-chain D distance approximately 2.644 Angstrom. Atom-site and instance-API
+        author labels are D502; original nonpolymer-scheme author numbering is a different
+        field. Modeled occupancy is not measured binding occupancy. Only beta model
+        D is a listed ligand neighbor. Other modeled proteins/copies are farther away.
+        No crystal symmetry mates were added; this is not an exhaustive crystal-contact
+        search.
+    - reference: https://www.rcsb.org/ligand/EPB
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: CCD stereochemical SMILES and InChI, and both owner encodings, independently
+        reproduce QXRSDHAAWVKZLJ-PVYNADRNSA-N; neutral C27H41NO6S with RDKit 2026.03.5.
+        This establishes deposited chemical identity, not recharacterization of the
+        sample.
+    - reference: https://files.rcsb.org/validation/view/7dae_full_validation.pdf
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: The deposited X-ray resolution is 2.394 Angstrom. The official 2026-03-05
+        report flags 15 EPB bond lengths, 17 angles and six of 51 torsions, with no
+        chiral or ring outliers. Instance metrics RSCC 0.908, RSR 0.129, completeness
+        1.0 and six intermolecular clashes coexist with those geometry warnings. Density
+        illustrations are not independent refinement or an affinity measurement; no
+        precise hydrogen-bond chemistry is adjudicated.
+    - reference: https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/7DAE/U
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: The ligand instance API lists only beta-chain D neighbors, agreeing with
+        the coordinate audit. The deposited X-ray resolution is 2.394 Angstrom. The
+        official 2026-03-05 report flags 15 EPB bond lengths, 17 angles and six of
+        51 torsions, with no chiral or ring outliers. Instance metrics RSCC 0.908,
+        RSR 0.129, completeness 1.0 and six intermolecular clashes coexist with those
+        geometry warnings. Density illustrations are not independent refinement or
+        an affinity measurement; no precise hydrogen-bond chemistry is adjudicated.
+  - subject: protein_q2xvp4
+    predicate: is_modeled_component_of
+    object: deposited_complex
+    notes: The full declared 451-aa sequence matches TUBA1B. Model chains A/C cover
+      1-439/1-440, leaving their remaining C-terminal residues unmodeled. Native proteoform
+      processing is not resolved. No alpha-tubulin drug-contact edge is asserted.
+      GROUNDED identifies the deposited model reference, not an independently assayed
+      native protein. No native isoform homogeneity, stock equivalence, processing
+      state, affinity, potency, precise hydrogen bond, drug-induced assembly or downstream
+      effect is asserted. Other modeled partners are not asserted to be drug targets.
+    evidence:
+    - reference: https://www.rcsb.org/structure/7DAE
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: A deposited mixed-species tubulin-partner crystallization complex, not
+        a native multispecies assembly. 7DAE version 1.1 (2023-11-29) models native-source
+        porcine tubulins (taxon 9823), an engineered mouse Stmn4 fragment (taxon 10090),
+        and an engineered chicken TTL construct (taxon 9031); the latter two are expressed
+        in E. coli (taxon 562) according to the deposit. Strains are unspecified.
+        Alternate conformers and partial protein-atom occupancies are retained. The
+        full declared 451-aa sequence matches TUBA1B. Model chains A/C cover 1-439/1-440,
+        leaving their remaining C-terminal residues unmodeled. Native proteoform processing
+        is not resolved. No alpha-tubulin drug-contact edge is asserted.
+      snippet: Tubulin alpha-1B chain
+    - reference: https://www.uniprot.org/uniprotkb/Q2XVP4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: UniProtKB reviewed (Swiss-Prot), gene TUBA1B, taxon 9823, 451 aa, entry
+        159, sequence 1. Exact reference/construct sequence correspondence is independently
+        checked; general function annotations are not transferred. The full declared
+        451-aa sequence matches TUBA1B. Model chains A/C cover 1-439/1-440, leaving
+        their remaining C-terminal residues unmodeled. Native proteoform processing
+        is not resolved. No alpha-tubulin drug-contact edge is asserted.
+    - reference: https://files.rcsb.org/download/7DAE.cif
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Every actual modeled residue agrees with its declared construct position.
+        Assembly 1 uses the identity operation and includes this protein and the EPB
+        instance. Membership does not demonstrate drug engagement, assembly kinetics
+        or native stoichiometry. Ranges refer to declared positions unless explicitly
+        stated otherwise. The full declared 451-aa sequence matches TUBA1B. Model
+        chains A/C cover 1-439/1-440, leaving their remaining C-terminal residues
+        unmodeled. Native proteoform processing is not resolved. No alpha-tubulin
+        drug-contact edge is asserted.
+  - subject: protein_a0a8d1uir5
+    predicate: is_modeled_component_of
+    object: deposited_complex
+    notes: The full declared 445-aa sequence matches LOC100624785. Model B covers
+      1-276 and 280-430; model D covers 2-431. Unmodeled intervals do not establish
+      sequence deletions. Some author residue numbers differ from declared/reference
+      positions. Only model D has the deposited EPB instance; neither every beta copy
+      nor every native beta isoform is asserted to bind the drug. GROUNDED identifies
+      the deposited model reference, not an independently assayed native protein.
+      No native isoform homogeneity, stock equivalence, processing state, affinity,
+      potency, precise hydrogen bond, drug-induced assembly or downstream effect is
+      asserted. Other modeled partners are not asserted to be drug targets.
+    evidence:
+    - reference: https://www.rcsb.org/structure/7DAE
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: A deposited mixed-species tubulin-partner crystallization complex, not
+        a native multispecies assembly. 7DAE version 1.1 (2023-11-29) models native-source
+        porcine tubulins (taxon 9823), an engineered mouse Stmn4 fragment (taxon 10090),
+        and an engineered chicken TTL construct (taxon 9031); the latter two are expressed
+        in E. coli (taxon 562) according to the deposit. Strains are unspecified.
+        Alternate conformers and partial protein-atom occupancies are retained. The
+        full declared 445-aa sequence matches LOC100624785. Model B covers 1-276 and
+        280-430; model D covers 2-431. Unmodeled intervals do not establish sequence
+        deletions. Some author residue numbers differ from declared/reference positions.
+        Only model D has the deposited EPB instance; neither every beta copy nor every
+        native beta isoform is asserted to bind the drug.
+      snippet: Tubulin beta chain
+    - reference: https://www.uniprot.org/uniprotkb/A0A8D1UIR5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: UniProtKB unreviewed (TrEMBL), gene LOC100624785, taxon 9823, 445 aa,
+        entry 20, sequence 1. Exact reference/construct sequence correspondence is
+        independently checked; general function annotations are not transferred. The
+        full declared 445-aa sequence matches LOC100624785. Model B covers 1-276 and
+        280-430; model D covers 2-431. Unmodeled intervals do not establish sequence
+        deletions. Some author residue numbers differ from declared/reference positions.
+        Only model D has the deposited EPB instance; neither every beta copy nor every
+        native beta isoform is asserted to bind the drug.
+    - reference: https://www.uniprot.org/uniprotkb/A0A287AGU7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: The original mmCIF beta reference A0A287AGU7 redirects to primary A0A8D1UIR5,
+        where it is retained as a secondary accession. Their full sequence matches
+        the 445-aa deposit.
+    - reference: https://files.rcsb.org/download/7DAE.cif
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Every actual modeled residue agrees with its declared construct position.
+        Assembly 1 uses the identity operation and includes this protein and the EPB
+        instance. Membership does not demonstrate drug engagement, assembly kinetics
+        or native stoichiometry. Ranges refer to declared positions unless explicitly
+        stated otherwise. The full declared 445-aa sequence matches LOC100624785.
+        Model B covers 1-276 and 280-430; model D covers 2-431. Unmodeled intervals
+        do not establish sequence deletions. Some author residue numbers differ from
+        declared/reference positions. Only model D has the deposited EPB instance;
+        neither every beta copy nor every native beta isoform is asserted to bind
+        the drug.
+  - subject: protein_p63042
+    predicate: is_modeled_component_of
+    object: deposited_complex
+    notes: The 143-aa construct is MA plus canonical Stmn4 residues 49-189. The deposit
+      annotates the leading M as initiating methionine and A as expression tag. Model
+      E covers declared positions 4-26 and 42-142, corresponding to canonical 50-72
+      and 88-188. This truncated crystallization partner is not a demonstrated EPB
+      target or a full-length native Stmn4 assay. GROUNDED identifies the deposited
+      model reference, not an independently assayed native protein. No native isoform
+      homogeneity, stock equivalence, processing state, affinity, potency, precise
+      hydrogen bond, drug-induced assembly or downstream effect is asserted. Other
+      modeled partners are not asserted to be drug targets.
+    evidence:
+    - reference: https://www.rcsb.org/structure/7DAE
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: A deposited mixed-species tubulin-partner crystallization complex, not
+        a native multispecies assembly. 7DAE version 1.1 (2023-11-29) models native-source
+        porcine tubulins (taxon 9823), an engineered mouse Stmn4 fragment (taxon 10090),
+        and an engineered chicken TTL construct (taxon 9031); the latter two are expressed
+        in E. coli (taxon 562) according to the deposit. Strains are unspecified.
+        Alternate conformers and partial protein-atom occupancies are retained. The
+        143-aa construct is MA plus canonical Stmn4 residues 49-189. The deposit annotates
+        the leading M as initiating methionine and A as expression tag. Model E covers
+        declared positions 4-26 and 42-142, corresponding to canonical 50-72 and 88-188.
+        This truncated crystallization partner is not a demonstrated EPB target or
+        a full-length native Stmn4 assay.
+      snippet: Stathmin-4
+    - reference: https://www.uniprot.org/uniprotkb/P63042
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: UniProtKB reviewed (Swiss-Prot), gene Stmn4, taxon 10090, 189 aa, entry
+        133, sequence 1. Exact reference/construct sequence correspondence is independently
+        checked; general function annotations are not transferred. The 143-aa construct
+        is MA plus canonical Stmn4 residues 49-189. The deposit annotates the leading
+        M as initiating methionine and A as expression tag. Model E covers declared
+        positions 4-26 and 42-142, corresponding to canonical 50-72 and 88-188. This
+        truncated crystallization partner is not a demonstrated EPB target or a full-length
+        native Stmn4 assay.
+    - reference: https://files.rcsb.org/download/7DAE.cif
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Every actual modeled residue agrees with its declared construct position.
+        Assembly 1 uses the identity operation and includes this protein and the EPB
+        instance. Membership does not demonstrate drug engagement, assembly kinetics
+        or native stoichiometry. Ranges refer to declared positions unless explicitly
+        stated otherwise. The 143-aa construct is MA plus canonical Stmn4 residues
+        49-189. The deposit annotates the leading M as initiating methionine and A
+        as expression tag. Model E covers declared positions 4-26 and 42-142, corresponding
+        to canonical 50-72 and 88-188. This truncated crystallization partner is not
+        a demonstrated EPB target or a full-length native Stmn4 assay.
+  - subject: protein_np_001186321_1
+    predicate: is_modeled_component_of
+    object: deposited_complex
+    notes: The 384-aa construct is the exact 378-aa NP_001186321.1 reference plus
+      six terminal histidine expression tags. Model F covers declared positions 1-101,125-152,158-363
+      and 372-384, including the tag. Unmodeled loops do not establish sequence deletions.
+      TTL is a modeled crystallization partner, not a demonstrated EPB target or a
+      native multispecies subunit. GROUNDED identifies the deposited model reference,
+      not an independently assayed native protein. No native isoform homogeneity,
+      stock equivalence, processing state, affinity, potency, precise hydrogen bond,
+      drug-induced assembly or downstream effect is asserted. Other modeled partners
+      are not asserted to be drug targets.
+    evidence:
+    - reference: https://www.rcsb.org/structure/7DAE
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: A deposited mixed-species tubulin-partner crystallization complex, not
+        a native multispecies assembly. 7DAE version 1.1 (2023-11-29) models native-source
+        porcine tubulins (taxon 9823), an engineered mouse Stmn4 fragment (taxon 10090),
+        and an engineered chicken TTL construct (taxon 9031); the latter two are expressed
+        in E. coli (taxon 562) according to the deposit. Strains are unspecified.
+        Alternate conformers and partial protein-atom occupancies are retained. The
+        384-aa construct is the exact 378-aa NP_001186321.1 reference plus six terminal
+        histidine expression tags. Model F covers declared positions 1-101,125-152,158-363
+        and 372-384, including the tag. Unmodeled loops do not establish sequence
+        deletions. TTL is a modeled crystallization partner, not a demonstrated EPB
+        target or a native multispecies subunit.
+      snippet: Tubulin tyrosine ligase
+    - reference: https://www.ncbi.nlm.nih.gov/protein/NP_001186321.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Versioned 378-aa Gallus gallus/taxon 9031 TTL reference, coded_by NM_001199392.3:141..1277.
+        It matches the deposited reference sequence before the six-His tag. RefSeq
+        states that transcript/genomic evidence was assembled because no full single
+        same-strain transcript was available; this is not independent native-CDS or
+        experimental-stock validation.
+    - reference: https://www.uniprot.org/uniparc/UPI00003AAEF8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: The exact 378-aa sequence archive contains inactive E1BQ43 and active
+        version-1 RefSeq NP_001186321 for taxon 9031. Its active UniProt link A0A8C9FGJ1
+        is taxon 9049 and is not substituted.
+    - reference: https://www.uniprot.org/uniprotkb/E1BQ43
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: The original mmCIF UniProt reference is deleted from its ENSEMBL source.
+        It is not used as an active UniProt identifier. Exact reference grounding
+        uses NCBIProtein:NP_001186321.1.
+    - reference: https://www.uniprot.org/uniprotkb/A0A8V0Z8P0
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: 'The current displayed 411-aa TTL reference differs from the deposited
+        378-aa sequence: the deposit corresponds to its 1-52 plus 86-411, before the
+        six-His tag. This is not the exact current canonical reference, and is not
+        silently substituted.'
+    - reference: https://files.rcsb.org/download/7DAE.cif
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Every actual modeled residue agrees with its declared construct position.
+        Assembly 1 uses the identity operation and includes this protein and the EPB
+        instance. Membership does not demonstrate drug engagement, assembly kinetics
+        or native stoichiometry. Ranges refer to declared positions unless explicitly
+        stated otherwise. The 384-aa construct is the exact 378-aa NP_001186321.1
+        reference plus six terminal histidine expression tags. Model F covers declared
+        positions 1-101,125-152,158-363 and 372-384, including the tag. Unmodeled
+        loops do not establish sequence deletions. TTL is a modeled crystallization
+        partner, not a demonstrated EPB target or a native multispecies subunit.
+curation_history:
+- timestamp: '2026-10-10T07:43:59Z'
+  curator: codex
+  action: ADD_STRUCTURAL_PROTEIN_GRAPH
+  changes: 'Added two qualified 6S8M/7DAE BIOACTIVITY deposited-model graphs: seven
+    exact protein references (six active UniProt, one versioned RefSeq), nine cited
+    edges and seven verbatim snippets. Drug contact is beta-model geometry only; partners
+    remain model members, not drug targets. Construct, strain, numbering and ligand-quality
+    limitations remain explicit. Preserved all six previous graphs, pathway, source
+    fields, prior history, open discussion and SEEDED status. Owner data/natural_products/unclassified/epothilone-b.yaml
+    at base 4b6afd3d0809ca45c2b92ac88d01ea1b9074b0f1.'
+  llm_assisted: true
+- timestamp: '2026-10-10T07:49:37Z'
+  curator: codex
+  action: CLARIFY_MODEL_CLAIM_SCOPE
+  changes: 'Clarified issue #782: the graph withholds other-partner drug-target assertions;
+    it does not establish biological non-target status. Missing coordinates do not
+    establish sequence deletions. The earlier history shorthand "not drug targets"
+    denotes the intended withheld claim, not demonstrated absence. Preserved all identifiers,
+    topology, evidence, snippets, source qualifications and earlier history. Review
+    finding: https://github.com/CultureBotAI/NaturalProductMech/issues/782.'
+  llm_assisted: true
