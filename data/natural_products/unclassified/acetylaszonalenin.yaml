@@ -90,6 +90,219 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: acetylaszonalenin-ana-canonical-participants
+  scope: BIOSYNTHESIS
+  description: AnaPS, AnaPT and AnaAT canonical references associated with acetylaszonalenin
+    biosynthesis. Canonical reference proteins, not independently inspected assay
+    constructs. Biosynthetic participation for the named compound is a database assertion,
+    not a direct single-enzyme reaction, ordered pathway, stoichiometry, substrate
+    specificity, physical interaction or complex. GROUNDED denotes identifier identity,
+    not independent experimental validation. The existing minted owner and all source-owned
+    claims remain unchanged. The current owner is the neutral acetylaszonalenin representation.
+    UniProt reaction cross-references include CHEBI:192682, whose cached label and
+    SMILES describe a zwitterion. Owner SMILES/InChI and cached ChEBI SMILES/InChI
+    share Standard InChIKey TXNJQKDZOVFCAQ-XRODADMRSA-N, formula C25H25N3O3 and net
+    charge zero under RDKit 2026.03.5, but the ChEBI SMILES has O- and N+ atoms whereas
+    the owner SMILES has no charged atoms. Standard InChI also normalizes tautomers.
+    This supports named-compound correspondence, not identical microstates or an exact
+    Rhea output. CHEBI:192682 is not adopted as the owner identifier or an exact structure
+    xref. Cached ontology values were inspected on 2026-10-10, not freshly downloaded.
+  nodes:
+  - node_id: anaps
+    label: anaPS (canonical reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:A1DN09
+    grounding_status: GROUNDED
+  - node_id: anapt
+    label: anaPT (canonical reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:A1DN10
+    grounding_status: GROUNDED
+  - node_id: anaat
+    label: anaAT (canonical reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:A1DN11
+    grounding_status: GROUNDED
+  - node_id: acetylaszonalenin
+    label: acetylaszonalenin
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-fd260f24d4
+    grounding_status: GROUNDED
+  edges:
+  - subject: anaps
+    predicate: is_database_supported_biosynthetic_participant_for
+    object: acetylaszonalenin
+    notes: Canonical reference proteins, not independently inspected assay constructs.
+      Biosynthetic participation for the named compound is a database assertion, not
+      a direct single-enzyme reaction, ordered pathway, stoichiometry, substrate specificity,
+      physical interaction or complex. GROUNDED denotes identifier identity, not independent
+      experimental validation. The existing minted owner and all source-owned claims
+      remain unchanged. UniProt includes an A-T-C-A-T-C domain description using an
+      NRPS12 label and attributes module-1 anthranilate activation/loading to PMID:20225828.
+      Neither that description nor a canonical sequence proves an independently inspected
+      complete-enzyme reaction. DOI:10.1074/jbc.M807606200 and PMID:20225828 were
+      unavailable through the inspected routes; primary methods, figures, supplements
+      and constructs were not reviewed. The separate DOI:10.1038/nchembio.1047 repository
+      PDF was also inaccessible.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A1DN09
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Swiss-Prot entry 106, sequence 1, 2359 residues; protein existence 1
+        (protein-level evidence). Gene anaPS, locus NFIA_055290, Aspergillus fischeri
+        NRRL 181 (also named Neosartorya fischeri), taxon 331117. Its FUNCTION comment
+        explicitly names participation in acetylaszonalenin biosynthesis and cites
+        PMID:19001367; this is adopted as a database assertion only. The linked Rhea
+        reactions are not adopted as exact owner reactions. UniProt includes an A-T-C-A-T-C
+        domain description using an NRPS12 label and attributes module-1 anthranilate
+        activation/loading to PMID:20225828. Neither that description nor a canonical
+        sequence proves an independently inspected complete-enzyme reaction. DOI:10.1074/jbc.M807606200
+        and PMID:20225828 were unavailable through the inspected routes; primary methods,
+        figures, supplements and constructs were not reviewed. The separate DOI:10.1038/nchembio.1047
+        repository PDF was also inaccessible.
+      snippet: part of the gene cluster that mediates the biosynthesis of the prenylated
+        pyrroloindoline diketopiperazine acetylaszonalenin
+    - reference: https://www.ebi.ac.uk/ena/browser/view/DS027698.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS complement(join(2428387..2435016,2435069..2435518)),
+        7080 nucleotides, ATG start, TAG stop, codon_start 1, standard code 1; translation
+        equals deposited EAW16180.1 and all 2359 canonical A1DN09 residues. Source
+        strain NRRL 181 and taxon 331117 are explicit. EMBL scaffold annotations and
+        matching FASTA both span 4032438 bases; the FASTA matches the deposited scaffold
+        MD5. Biopython applied the annotated strand and splice joins. CDS bounds are
+        complete despite partial UTR bounds on surrounding gene/mRNA features. EVM-predicted
+        native models and sequence equality are not evidence of assay tags, mutations,
+        processing or exact experimental stock. The current MIBiG page was unavailable;
+        the imported version 3 producer/locus assertions are unchanged, not upgraded.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:192682
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: The current owner is the neutral acetylaszonalenin representation. UniProt
+        reaction cross-references include CHEBI:192682, whose cached label and SMILES
+        describe a zwitterion. Owner SMILES/InChI and cached ChEBI SMILES/InChI share
+        Standard InChIKey TXNJQKDZOVFCAQ-XRODADMRSA-N, formula C25H25N3O3 and net
+        charge zero under RDKit 2026.03.5, but the ChEBI SMILES has O- and N+ atoms
+        whereas the owner SMILES has no charged atoms. Standard InChI also normalizes
+        tautomers. This supports named-compound correspondence, not identical microstates
+        or an exact Rhea output. CHEBI:192682 is not adopted as the owner identifier
+        or an exact structure xref. Cached ontology values were inspected on 2026-10-10,
+        not freshly downloaded.
+  - subject: anapt
+    predicate: is_database_supported_biosynthetic_participant_for
+    object: acetylaszonalenin
+    notes: Canonical reference proteins, not independently inspected assay constructs.
+      Biosynthetic participation for the named compound is a database assertion, not
+      a direct single-enzyme reaction, ordered pathway, stoichiometry, substrate specificity,
+      physical interaction or complex. GROUNDED denotes identifier identity, not independent
+      experimental validation. The existing minted owner and all source-owned claims
+      remain unchanged. UniProt binding-site annotations include similarity transfers,
+      and its substrate annotations span several substrates. No binding residue, substrate
+      specificity or stereochemical reaction is adopted here. PDB:4LD7 is an uninspected
+      structural lead, not a verified construct. DOI:10.1074/jbc.M807606200 and DOI:10.1039/b922440h
+      were unavailable through the inspected routes; no primary methods or assay constructs
+      were reviewed.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A1DN10
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Swiss-Prot entry 83, sequence 1, 437 residues; protein existence 1 (protein-level
+        evidence). Gene anaPT, locus NFIA_055300, Aspergillus fischeri NRRL 181 (also
+        named Neosartorya fischeri), taxon 331117. Its FUNCTION comment explicitly
+        names participation in acetylaszonalenin biosynthesis and cites PMID:19001367;
+        this is adopted as a database assertion only. The linked Rhea reactions are
+        not adopted as exact owner reactions. UniProt binding-site annotations include
+        similarity transfers, and its substrate annotations span several substrates.
+        No binding residue, substrate specificity or stereochemical reaction is adopted
+        here. PDB:4LD7 is an uninspected structural lead, not a verified construct.
+        DOI:10.1074/jbc.M807606200 and DOI:10.1039/b922440h were unavailable through
+        the inspected routes; no primary methods or assay constructs were reviewed.
+      snippet: part of the gene cluster that mediates the biosynthesis of the prenylated
+        pyrroloindoline diketopiperazine acetylaszonalenin
+    - reference: https://www.ebi.ac.uk/ena/browser/view/DS027698.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS join(2437444..2438630,2438682..2438808), 1314 nucleotides,
+        ATG start, TAG stop, codon_start 1, standard code 1; translation equals deposited
+        EAW16181.1 and all 437 canonical A1DN10 residues. Source strain NRRL 181 and
+        taxon 331117 are explicit. EMBL scaffold annotations and matching FASTA both
+        span 4032438 bases; the FASTA matches the deposited scaffold MD5. Biopython
+        applied the annotated strand and splice joins. CDS bounds are complete despite
+        partial UTR bounds on surrounding gene/mRNA features. EVM-predicted native
+        models and sequence equality are not evidence of assay tags, mutations, processing
+        or exact experimental stock. The current MIBiG page was unavailable; the imported
+        version 3 producer/locus assertions are unchanged, not upgraded.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:192682
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: The current owner is the neutral acetylaszonalenin representation. UniProt
+        reaction cross-references include CHEBI:192682, whose cached label and SMILES
+        describe a zwitterion. Owner SMILES/InChI and cached ChEBI SMILES/InChI share
+        Standard InChIKey TXNJQKDZOVFCAQ-XRODADMRSA-N, formula C25H25N3O3 and net
+        charge zero under RDKit 2026.03.5, but the ChEBI SMILES has O- and N+ atoms
+        whereas the owner SMILES has no charged atoms. Standard InChI also normalizes
+        tautomers. This supports named-compound correspondence, not identical microstates
+        or an exact Rhea output. CHEBI:192682 is not adopted as the owner identifier
+        or an exact structure xref. Cached ontology values were inspected on 2026-10-10,
+        not freshly downloaded.
+  - subject: anaat
+    predicate: is_database_supported_biosynthetic_participant_for
+    object: acetylaszonalenin
+    notes: Canonical reference proteins, not independently inspected assay constructs.
+      Biosynthetic participation for the named compound is a database assertion, not
+      a direct single-enzyme reaction, ordered pathway, stoichiometry, substrate specificity,
+      physical interaction or complex. GROUNDED denotes identifier identity, not independent
+      experimental validation. The existing minted owner and all source-owned claims
+      remain unchanged. UniProt names an O-acetyltransferase but its FUNCTION text
+      describes N1 acetylation. That naming conflict is retained, not resolved by
+      adopting a reaction. Its monomer annotation is by similarity to Q4WZ64, not
+      independent oligomeric-state evidence. DOI:10.1074/jbc.M807606200 and DOI:10.1039/b922440h
+      were unavailable through the inspected routes; no primary methods or assay constructs
+      were reviewed.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A1DN11
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Swiss-Prot entry 86, sequence 1, 509 residues; protein existence 1 (protein-level
+        evidence). Gene anaAT, locus NFIA_055310, Aspergillus fischeri NRRL 181 (also
+        named Neosartorya fischeri), taxon 331117. Its FUNCTION comment explicitly
+        names participation in acetylaszonalenin biosynthesis and cites PMID:19001367;
+        this is adopted as a database assertion only. The linked Rhea reactions are
+        not adopted as exact owner reactions. UniProt names an O-acetyltransferase
+        but its FUNCTION text describes N1 acetylation. That naming conflict is retained,
+        not resolved by adopting a reaction. Its monomer annotation is by similarity
+        to Q4WZ64, not independent oligomeric-state evidence. DOI:10.1074/jbc.M807606200
+        and DOI:10.1039/b922440h were unavailable through the inspected routes; no
+        primary methods or assay constructs were reviewed.
+      snippet: part of the gene cluster that mediates the biosynthesis of the prenylated
+        pyrroloindoline diketopiperazine acetylaszonalenin
+    - reference: https://www.ebi.ac.uk/ena/browser/view/DS027698.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS 2439622..2441151, 1530 nucleotides, ATG start, TGA
+        stop, codon_start 1, standard code 1; translation equals deposited EAW16182.1
+        and all 509 canonical A1DN11 residues. Source strain NRRL 181 and taxon 331117
+        are explicit. EMBL scaffold annotations and matching FASTA both span 4032438
+        bases; the FASTA matches the deposited scaffold MD5. Biopython applied the
+        annotated strand and splice joins. CDS bounds are complete despite partial
+        UTR bounds on surrounding gene/mRNA features. EVM-predicted native models
+        and sequence equality are not evidence of assay tags, mutations, processing
+        or exact experimental stock. The current MIBiG page was unavailable; the imported
+        version 3 producer/locus assertions are unchanged, not upgraded.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:192682
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: The current owner is the neutral acetylaszonalenin representation. UniProt
+        reaction cross-references include CHEBI:192682, whose cached label and SMILES
+        describe a zwitterion. Owner SMILES/InChI and cached ChEBI SMILES/InChI share
+        Standard InChIKey TXNJQKDZOVFCAQ-XRODADMRSA-N, formula C25H25N3O3 and net
+        charge zero under RDKit 2026.03.5, but the ChEBI SMILES has O- and N+ atoms
+        whereas the owner SMILES has no charged atoms. Standard InChI also normalizes
+        tautomers. This supports named-compound correspondence, not identical microstates
+        or an exact Rhea output. CHEBI:192682 is not adopted as the owner identifier
+        or an exact structure xref. Cached ontology values were inspected on 2026-10-10,
+        not freshly downloaded.
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
   curator: seed_from_sources
@@ -99,3 +312,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-10T03:03:35Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added three canonical AnaPS/AnaPT/AnaAT references as database-supported
+    acetylaszonalenin biosynthetic participants, with full native CDS translation
+    checks and explicit naming, assay and neutral/zwitterionic limits. No exact reaction,
+    chemical-identity replacement, producer, BGC, taxonomy, origin or review-status
+    upgrade.
+  llm_assisted: true
