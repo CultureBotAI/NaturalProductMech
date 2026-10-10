@@ -1,0 +1,208 @@
+record_id: CHEBI:31550
+standard_inchi_key: QXRSDHAAWVKZLJ-PVYNADRNSA-N
+graph:
+  graph_id: epothilone-b-9pnd-deposited-tubulin-model
+  scope: BIOACTIVITY
+  description: Deposited epothilone-B contact and tubulin model-subunit references
+    in 9PND version 1.2 (revised 2025-12-17), an in situ mouse thalamic-axon microtubule
+    reconstruction. The graph records model geometry and assembly membership, not
+    an isoform-specific drug assay. The local assembly node is the deposited segment,
+    not a claim that a native microtubule is a tetramer. The primary paper DOI:10.1038/s41586-025-09654-z
+    was inaccessible; only its abstract on the PDB page was inspected, and no downstream
+    causal result is imported. These are deposited model references, not proof of
+    uniform native isoforms, processing or post-translational modifications. No isoform-selective
+    binding, affinity, potency, precise hydrogen bond, downstream regeneration or
+    clinical effect is asserted. GROUNDED denotes reference identity, not an independent
+    functional assay.
+  nodes:
+  - node_id: epothilone_b
+    label: epothilone B
+    node_type: COMPOUND
+    identifier: CHEBI:31550
+    grounding_status: GROUNDED
+  - node_id: beta_tubulin
+    label: Tubb3 (9PND model reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q9ERD7
+    grounding_status: GROUNDED
+  - node_id: alpha_tubulin
+    label: Tuba1a (9PND model reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:P68369
+    grounding_status: GROUNDED
+  - node_id: microtubule_segment
+    label: 9PND modeled microtubule segment
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: epothilone_b
+    predicate: has_deposited_model_contact_with
+    object: beta_tubulin
+    notes: Contact is scoped to the 9PND deposited beta-tubulin model. The deposited
+      3.19-Angstrom resolution is not a ligand-specific fit estimate. The official
+      2026-03-06 validation report gives EPB instances B503/D503 two/three bond-angle
+      outliers and 18 of 51 analyzed torsions flagged in each; no EPB bond-length
+      or chiral outliers are reported. Its unmasked half-map FSC 0.143 estimate is
+      5.81 Angstrom, a different calculation from the reported resolution. These caveats
+      preclude treating model proximity as validated precise chemistry. No independent
+      map refitting or experimental reanalysis was performed. These are deposited
+      model references, not proof of uniform native isoforms, processing or post-translational
+      modifications. No isoform-selective binding, affinity, potency, precise hydrogen
+      bond, downstream regeneration or clinical effect is asserted. GROUNDED denotes
+      reference identity, not an independent functional assay.
+    evidence:
+    - reference: https://www.rcsb.org/structure/9PND
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Deposited EM model, version 1.2, with EPB ligand instances G/J (author
+        B/D, residue 503) and beta-tubulin entity 1, model chains A/B (author B/D).
+        This is database structural evidence, not an independently inspected primary
+        binding assay.
+      snippet: In situ microtubule of EpoB-induced regenerating axons
+    - reference: https://files.rcsb.org/download/9PND.cif
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: 'Coordinate inspection: EPB G/J each has 35 heavy atoms at modeled occupancy
+        1.0. Their nearest beta-chain heavy-atom distances are approximately 2.85/2.95
+        Angstrom, agreeing with the instance APIs. Model distances do not identify
+        a hydrogen bond or validate local fit; modeled occupancy is not measured binding
+        occupancy. Alpha-chain nearest distances exceed 13 Angstrom in this deposited
+        segment. These are deposited model references, not proof of uniform native
+        isoforms, processing or post-translational modifications. No isoform-selective
+        binding, affinity, potency, precise hydrogen bond, downstream regeneration
+        or clinical effect is asserted. GROUNDED denotes reference identity, not an
+        independent functional assay.'
+    - reference: https://www.rcsb.org/ligand/EPB
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: CCD EPB stereochemical SMILES and InChI, plus both owner structure encodings,
+        independently reproduce QXRSDHAAWVKZLJ-PVYNADRNSA-N; neutral C27H41NO6S under
+        RDKit 2026.03.5. This establishes deposited chemical identity, not recharacterization
+        of the biological sample.
+    - reference: https://files.rcsb.org/validation/view/9pnd_full_validation.pdf
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: The deposited 3.19-Angstrom resolution is not a ligand-specific fit estimate.
+        The official 2026-03-06 validation report gives EPB instances B503/D503 two/three
+        bond-angle outliers and 18 of 51 analyzed torsions flagged in each; no EPB
+        bond-length or chiral outliers are reported. Its unmasked half-map FSC 0.143
+        estimate is 5.81 Angstrom, a different calculation from the reported resolution.
+        These caveats preclude treating model proximity as validated precise chemistry.
+        No independent map refitting or experimental reanalysis was performed.
+    - reference: https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/9PND/G
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'EPB instance G (author B503): Q_score 0.441, completeness 1.0, intermolecular_clashes
+        7; 13 listed neighboring residues, all in beta model chain A. API clash metrics
+        are not equated to differently defined PDF counts. These metrics are descriptive,
+        not a pass/fail certificate or an affinity measurement.'
+    - reference: https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/9PND/J
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'EPB instance J (author D503): Q_score 0.448, completeness 1.0, intermolecular_clashes
+        4; 14 listed neighboring residues, all in beta model chain B. API clash metrics
+        are not equated to differently defined PDF counts. These metrics are descriptive,
+        not a pass/fail certificate or an affinity measurement.'
+  - subject: beta_tubulin
+    predicate: is_modeled_subunit_of
+    object: microtubule_segment
+    notes: Entity 1 model chains A/B (author B/D) contain coordinates for reference
+      residues 1-428; residues 429-450 are unmodeled. This does not establish that
+      every native beta subunit is Tubb3 or that the drug is beta-3 selective. These
+      are deposited model references, not proof of uniform native isoforms, processing
+      or post-translational modifications. No isoform-selective binding, affinity,
+      potency, precise hydrogen bond, downstream regeneration or clinical effect is
+      asserted. GROUNDED denotes reference identity, not an independent functional
+      assay.
+    evidence:
+    - reference: https://www.rcsb.org/structure/9PND
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: The depositor identifies this protein as a microtubule component. Native-source
+        metadata names Mus musculus, NCBITaxon:10090, thalamus/brain; strain is unspecified.
+        Entity 1 model chains A/B (author B/D) contain coordinates for reference residues
+        1-428; residues 429-450 are unmodeled. This does not establish that every
+        native beta subunit is Tubb3 or that the drug is beta-3 selective.
+      snippet: TUBB3 component of microtubules
+    - reference: https://www.uniprot.org/uniprotkb/Q9ERD7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Reviewed canonical Q9ERD7, gene Tubb3, taxon 10090, 450 aa, entry 200,
+        sequence 1. The full declared deposit sequence, original mmCIF reference and
+        current SIFTS mapping agree with this sequence. UniProt is used for identity,
+        not transfer of general function annotations.
+    - reference: https://files.rcsb.org/download/9PND.cif
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: All modeled residue identities agree with the corresponding canonical
+        positions. Author-defined assembly 1 includes both modeled copies of this
+        subunit and both EPB instances under the identity operation. Membership here
+        does not establish native oligomer stoichiometry or assembly kinetics. Entity
+        1 model chains A/B (author B/D) contain coordinates for reference residues
+        1-428; residues 429-450 are unmodeled. This does not establish that every
+        native beta subunit is Tubb3 or that the drug is beta-3 selective. These are
+        deposited model references, not proof of uniform native isoforms, processing
+        or post-translational modifications. No isoform-selective binding, affinity,
+        potency, precise hydrogen bond, downstream regeneration or clinical effect
+        is asserted. GROUNDED denotes reference identity, not an independent functional
+        assay.
+  - subject: alpha_tubulin
+    predicate: is_modeled_subunit_of
+    object: microtubule_segment
+    notes: Entity 2 model chains C/D (author A/C) contain coordinates for reference
+      residues 1-439; residues 440-451 are unmodeled. The deposited name says detyrosinated,
+      while the full declared reference ends Y451. The absent tail cannot settle native
+      processing; this node denotes the canonical model reference, not a tyrosinated
+      or detyrosinated proteoform. No alpha direct-contact edge is asserted. These
+      are deposited model references, not proof of uniform native isoforms, processing
+      or post-translational modifications. No isoform-selective binding, affinity,
+      potency, precise hydrogen bond, downstream regeneration or clinical effect is
+      asserted. GROUNDED denotes reference identity, not an independent functional
+      assay.
+    evidence:
+    - reference: https://www.rcsb.org/structure/9PND
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: The depositor identifies this protein as a microtubule component. Native-source
+        metadata names Mus musculus, NCBITaxon:10090, thalamus/brain; strain is unspecified.
+        Entity 2 model chains C/D (author A/C) contain coordinates for reference residues
+        1-439; residues 440-451 are unmodeled. The deposited name says detyrosinated,
+        while the full declared reference ends Y451. The absent tail cannot settle
+        native processing; this node denotes the canonical model reference, not a
+        tyrosinated or detyrosinated proteoform. No alpha direct-contact edge is asserted.
+      snippet: TUBA1A component of microtubules
+    - reference: https://www.uniprot.org/uniprotkb/P68369
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Reviewed canonical P68369, gene Tuba1a, taxon 10090, 451 aa, entry 191,
+        sequence 1. The full declared deposit sequence, original mmCIF reference and
+        current SIFTS mapping agree with this sequence. UniProt is used for identity,
+        not transfer of general function annotations.
+    - reference: https://files.rcsb.org/download/9PND.cif
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: All modeled residue identities agree with the corresponding canonical
+        positions. Author-defined assembly 1 includes both modeled copies of this
+        subunit and both EPB instances under the identity operation. Membership here
+        does not establish native oligomer stoichiometry or assembly kinetics. Entity
+        2 model chains C/D (author A/C) contain coordinates for reference residues
+        1-439; residues 440-451 are unmodeled. The deposited name says detyrosinated,
+        while the full declared reference ends Y451. The absent tail cannot settle
+        native processing; this node denotes the canonical model reference, not a
+        tyrosinated or detyrosinated proteoform. No alpha direct-contact edge is asserted.
+        These are deposited model references, not proof of uniform native isoforms,
+        processing or post-translational modifications. No isoform-selective binding,
+        affinity, potency, precise hydrogen bond, downstream regeneration or clinical
+        effect is asserted. GROUNDED denotes reference identity, not an independent
+        functional assay.
+curation_history:
+- timestamp: '2026-10-10T06:46:13Z'
+  curator: codex
+  action: ADD_STRUCTURAL_PROTEIN_GRAPH
+  changes: Added the 9PND BIOACTIVITY model-contact graph with two exact mouse tubulin
+    model references, three cited edges and three verbatim snippets. Preserved existing
+    mechanism, source fields, history and SEEDED status. No alpha binding, isoform
+    homogeneity, processing state, affinity or downstream effect is inferred; ligand-validation
+    caveats remain explicit. Owner data/natural_products/unclassified/epothilone-b.yaml
+    at base 371fe4f26d3132e76b79464b436fe47554ad2721.
+  llm_assisted: true
