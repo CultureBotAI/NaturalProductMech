@@ -227,6 +227,489 @@ discussions:
     and MIBiG calls it 'cyclopiazonic acid'. They share a Standard InChIKey, so if
     the names denote different compounds then one upstream record has the wrong structure.
     Check which.
+causal_graphs:
+- graph_id: cyclopiazonic-acid-nbrc-reference-context
+  scope: BIOSYNTHESIS
+  description: Six NBRC 4177 reference proteins; only CpaS/CpaA, CpaD and CpaO have
+    database-supported participation edges. CpaR/T/M are encoding context only. Reference-sequence
+    identity and cluster encoding context are distinct from function. GROUNDED denotes
+    identifier identity, not experimental validation. No exact reaction, ordered pathway,
+    substrate specificity, stoichiometry, physical complex, mature processing or assayed
+    construct is asserted. References from NBRC 4177, CA28, RIB40 and NRRL 3357 are
+    not interchangeable. MIBiG entry version 4 is active but quality questionable,
+    completeness unknown. Entry version is not a database release version. Its locus
+    has no evidence entries. Source producer/BGC assertion grades remain unchanged.
+    Primary methods, figures, supplements and constructs were not independently inspected.
+    PMID:21608094 was accessible as an abstract/publisher landing only; its UniProt
+    annotations are adopted as database assertions, not independently verified experiments.
+    Other CPA primary leads were inaccessible, rate-limited or browser-challenged.
+    No new biochemical assay claim is imported.
+  nodes:
+  - node_id: compound
+    label: (6aR,11aS,11bR)-10-acetyl-11-hydroxy-7,7-dimethyl-2,6,6a,7,11a,11b-hexahydro-9H-pyrrolo[1',2':2,3]isoindolo[4,5,6-cd]indol-9-one
+    node_type: COMPOUND
+    identifier: CHEBI:22450
+    grounding_status: GROUNDED
+  - node_id: cluster
+    label: BGC0000977 (NBRC 4177 reference)
+    node_type: GENE_CLUSTER
+    identifier: mibig:BGC0000977
+    grounding_status: GROUNDED
+  - node_id: cpaa
+    label: CpaS/CpaA (NBRC 4177 reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:B6F209
+    grounding_status: GROUNDED
+  - node_id: cpad
+    label: cpaD (NBRC 4177 reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:F5HN73
+    grounding_status: GROUNDED
+  - node_id: cpao
+    label: cpaO (NBRC 4177 reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:F5HN72
+    grounding_status: GROUNDED
+  - node_id: cpar
+    label: cpaR (NBRC 4177 reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:F5HN75
+    grounding_status: GROUNDED
+  - node_id: cpat
+    label: cpaT (NBRC 4177 reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:F5HN69
+    grounding_status: GROUNDED
+  - node_id: cpam
+    label: cpaM (NBRC 4177 reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:C9K203
+    grounding_status: GROUNDED
+  edges:
+  - subject: cluster
+    predicate: is_database_linked_to_structure
+    object: compound
+    notes: MIBiG entry version 4 is active but quality questionable, completeness
+      unknown. Entry version is not a database release version. Its locus has no evidence
+      entries. Source producer/BGC assertion grades remain unchanged. This graph retains
+      the exact source-matched neutral owner representation, formula C20H20N2O3, charge
+      zero. Its stored SMILES and InChI parse and agree within this owner under RDKit
+      2026.03.5. CHEBI:17734 and CHEBI:22450 remain separate hydroxyethylidene and
+      acetyl-enol representations with different Standard InChIKeys; no microstate
+      equivalence or owner merge is inferred. Charged Rhea participants CHEBI:58067/58256
+      are not substituted. The local ChEBI SMILES parse defect tracked in issue 777
+      is not used to repair or replace the owner chemistry. Existing CpaH and SERCA
+      content is outside this graph; issue 147 remains unresolved. Exact owner CHEBI:22450,
+      Standard InChIKey SZINUGQCTHLQAZ-DQYPLSBCSA-N.
+    evidence:
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000977.4/annotations.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: The first compound structure and locus AB506492.1 are linked in this
+        versioned MIBiG entry. MIBiG entry version 4 is active but quality questionable,
+        completeness unknown. Entry version is not a database release version. Its
+        locus has no evidence entries. Source producer/BGC assertion grades remain
+        unchanged.
+      snippet: cyclopiazonic acid
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000977.4/annotations.json
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: The first compound structure string exactly equals this owner SMILES.
+        The native deposit supplies the exact strain; a species label alone does not
+        establish it. This graph retains the exact source-matched neutral owner representation,
+        formula C20H20N2O3, charge zero. Its stored SMILES and InChI parse and agree
+        within this owner under RDKit 2026.03.5. CHEBI:17734 and CHEBI:22450 remain
+        separate hydroxyethylidene and acetyl-enol representations with different
+        Standard InChIKeys; no microstate equivalence or owner merge is inferred.
+        Charged Rhea participants CHEBI:58067/58256 are not substituted. The local
+        ChEBI SMILES parse defect tracked in issue 777 is not used to repair or replace
+        the owner chemistry. Existing CpaH and SERCA content is outside this graph;
+        issue 147 remains unresolved. Exact owner CHEBI:22450, Standard InChIKey SZINUGQCTHLQAZ-DQYPLSBCSA-N.
+  - subject: cluster
+    predicate: contains_cds_encoding_reference
+    object: cpaa
+    notes: Reference-sequence identity and cluster encoding context are distinct from
+      function. GROUNDED denotes identifier identity, not experimental validation.
+      No exact reaction, ordered pathway, substrate specificity, stoichiometry, physical
+      complex, mature processing or assayed construct is asserted. References from
+      NBRC 4177, CA28, RIB40 and NRRL 3357 are not interchangeable. cpaA is also called
+      CpaS. This is the complete 3907-residue canonical reference, not a selected
+      assay construct or demonstrated domain-by-domain mechanism.
+    evidence:
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AB506492.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Native deposit AB506492.1, strain NBRC 4177, taxon 5062, complete CDS
+        BAK26562.1, gene cpaA. This is source annotation and encoding context, not
+        an independent functional experiment.
+      snippet: /gene="cpaA"
+    - reference: https://www.uniprot.org/uniprotkb/B6F209
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Reviewed UniProt B6F209, entry 103, sequence 1, 3907 residues; protein
+        existence 1: Evidence at protein level. The EMBL protein cross-reference and
+        NBRC 4177 publication-strain annotation match the native deposit. cpaA is
+        also called CpaS. This is the complete 3907-residue canonical reference, not
+        a selected assay construct or demonstrated domain-by-domain mechanism.'
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AB506492.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS [12738:24462](+) (zero-based, end-exclusive), 11724
+        nucleotides, ATG start, TAA stop, codon_start 1, genetic code 1 explicitly
+        annotated. Strand-aware Biopython cds=True translation equals all 3907 deposited
+        BAK26562.1 residues and canonical B6F209. CDS bounds are exact with no annotated
+        translational exceptions. This establishes reference correspondence, not mature
+        processing, tags, mutations, exact assay stock or inter-strain equivalence.
+  - subject: cpaa
+    predicate: is_database_supported_biosynthetic_participant_for
+    object: compound
+    notes: Reference-sequence identity and cluster encoding context are distinct from
+      function. GROUNDED denotes identifier identity, not experimental validation.
+      No exact reaction, ordered pathway, substrate specificity, stoichiometry, physical
+      complex, mature processing or assayed construct is asserted. References from
+      NBRC 4177, CA28, RIB40 and NRRL 3357 are not interchangeable. cpaA is also called
+      CpaS. This is the complete 3907-residue canonical reference, not a selected
+      assay construct or demonstrated domain-by-domain mechanism. Primary methods,
+      figures, supplements and constructs were not independently inspected. PMID:21608094
+      was accessible as an abstract/publisher landing only; its UniProt annotations
+      are adopted as database assertions, not independently verified experiments.
+      Other CPA primary leads were inaccessible, rate-limited or browser-challenged.
+      No new biochemical assay claim is imported.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/B6F209
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: UniProt attributes impaired CPA production after disruption to PMID:21608094,
+        with NBRC 4177 explicitly listed in the reference strain annotation. Adopted
+        only as database-supported named-compound participation; a disruption observation
+        does not establish a direct substrate-to-product reaction.
+      snippet: Impairs the production of cyclopiazonic acid
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000977.4/annotations.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: This versioned cluster links native AB506492.1 to a CPA structure. MIBiG
+        entry version 4 is active but quality questionable, completeness unknown.
+        Entry version is not a database release version. Its locus has no evidence
+        entries. Source producer/BGC assertion grades remain unchanged.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000977.4/annotations.json
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Native protein correspondence and the exact source-owner SMILES link
+        support this bounded named-compound association, not the microstate of an
+        assayed product. This graph retains the exact source-matched neutral owner
+        representation, formula C20H20N2O3, charge zero. Its stored SMILES and InChI
+        parse and agree within this owner under RDKit 2026.03.5. CHEBI:17734 and CHEBI:22450
+        remain separate hydroxyethylidene and acetyl-enol representations with different
+        Standard InChIKeys; no microstate equivalence or owner merge is inferred.
+        Charged Rhea participants CHEBI:58067/58256 are not substituted. The local
+        ChEBI SMILES parse defect tracked in issue 777 is not used to repair or replace
+        the owner chemistry. Existing CpaH and SERCA content is outside this graph;
+        issue 147 remains unresolved. Exact owner CHEBI:22450, Standard InChIKey SZINUGQCTHLQAZ-DQYPLSBCSA-N.
+  - subject: cluster
+    predicate: contains_cds_encoding_reference
+    object: cpad
+    notes: Reference-sequence identity and cluster encoding context are distinct from
+      function. GROUNDED denotes identifier identity, not experimental validation.
+      No exact reaction, ordered pathway, substrate specificity, stoichiometry, physical
+      complex, mature processing or assayed construct is asserted. References from
+      NBRC 4177, CA28, RIB40 and NRRL 3357 are not interchangeable. The complete 437-residue
+      canonical reference is selected; no exact prenylation reaction or substrate
+      specificity is adopted.
+    evidence:
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AB506492.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Native deposit AB506492.1, strain NBRC 4177, taxon 5062, complete CDS
+        BAK26561.1, gene cpaD. This is source annotation and encoding context, not
+        an independent functional experiment.
+      snippet: /gene="cpaD"
+    - reference: https://www.uniprot.org/uniprotkb/F5HN73
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Reviewed UniProt F5HN73, entry 50, sequence 1, 437 residues; protein
+        existence 1: Evidence at protein level. The EMBL protein cross-reference and
+        NBRC 4177 publication-strain annotation match the native deposit. The complete
+        437-residue canonical reference is selected; no exact prenylation reaction
+        or substrate specificity is adopted.'
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AB506492.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS join{[10630:11784](-), [10406:10566](-)} (zero-based,
+        end-exclusive), 1314 nucleotides, ATG start, TAG stop, codon_start 1, genetic
+        code 1 explicitly annotated. Strand-aware Biopython cds=True translation equals
+        all 437 deposited BAK26561.1 residues and canonical F5HN73. CDS bounds are
+        exact with no annotated translational exceptions. This establishes reference
+        correspondence, not mature processing, tags, mutations, exact assay stock
+        or inter-strain equivalence.
+  - subject: cpad
+    predicate: is_database_supported_biosynthetic_participant_for
+    object: compound
+    notes: Reference-sequence identity and cluster encoding context are distinct from
+      function. GROUNDED denotes identifier identity, not experimental validation.
+      No exact reaction, ordered pathway, substrate specificity, stoichiometry, physical
+      complex, mature processing or assayed construct is asserted. References from
+      NBRC 4177, CA28, RIB40 and NRRL 3357 are not interchangeable. The complete 437-residue
+      canonical reference is selected; no exact prenylation reaction or substrate
+      specificity is adopted. Primary methods, figures, supplements and constructs
+      were not independently inspected. PMID:21608094 was accessible as an abstract/publisher
+      landing only; its UniProt annotations are adopted as database assertions, not
+      independently verified experiments. Other CPA primary leads were inaccessible,
+      rate-limited or browser-challenged. No new biochemical assay claim is imported.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/F5HN73
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: UniProt attributes impaired CPA production after disruption to PMID:21608094,
+        with NBRC 4177 explicitly listed in the reference strain annotation. Adopted
+        only as database-supported named-compound participation; a disruption observation
+        does not establish a direct substrate-to-product reaction.
+      snippet: Impairs the production of cyclopiazonic acid
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000977.4/annotations.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: This versioned cluster links native AB506492.1 to a CPA structure. MIBiG
+        entry version 4 is active but quality questionable, completeness unknown.
+        Entry version is not a database release version. Its locus has no evidence
+        entries. Source producer/BGC assertion grades remain unchanged.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000977.4/annotations.json
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Native protein correspondence and the exact source-owner SMILES link
+        support this bounded named-compound association, not the microstate of an
+        assayed product. This graph retains the exact source-matched neutral owner
+        representation, formula C20H20N2O3, charge zero. Its stored SMILES and InChI
+        parse and agree within this owner under RDKit 2026.03.5. CHEBI:17734 and CHEBI:22450
+        remain separate hydroxyethylidene and acetyl-enol representations with different
+        Standard InChIKeys; no microstate equivalence or owner merge is inferred.
+        Charged Rhea participants CHEBI:58067/58256 are not substituted. The local
+        ChEBI SMILES parse defect tracked in issue 777 is not used to repair or replace
+        the owner chemistry. Existing CpaH and SERCA content is outside this graph;
+        issue 147 remains unresolved. Exact owner CHEBI:22450, Standard InChIKey SZINUGQCTHLQAZ-DQYPLSBCSA-N.
+  - subject: cluster
+    predicate: contains_cds_encoding_reference
+    object: cpao
+    notes: Reference-sequence identity and cluster encoding context are distinct from
+      function. GROUNDED denotes identifier identity, not experimental validation.
+      No exact reaction, ordered pathway, substrate specificity, stoichiometry, physical
+      complex, mature processing or assayed construct is asserted. References from
+      NBRC 4177, CA28, RIB40 and NRRL 3357 are not interchangeable. The 455-residue
+      canonical precursor is selected. UniProt predicts signal residues 1..25 and
+      chain 26..455; no mature construct is adopted. Its FAD annotation is by similarity
+      to B8NI10, not a new exact-protein cofactor experiment.
+    evidence:
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AB506492.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Native deposit AB506492.1, strain NBRC 4177, taxon 5062, complete CDS
+        BAK26560.1, gene cpaO. This is source annotation and encoding context, not
+        an independent functional experiment.
+      snippet: /gene="cpaO"
+    - reference: https://www.uniprot.org/uniprotkb/F5HN72
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Reviewed UniProt F5HN72, entry 41, sequence 1, 455 residues; protein
+        existence 1: Evidence at protein level. The EMBL protein cross-reference and
+        NBRC 4177 publication-strain annotation match the native deposit. The 455-residue
+        canonical precursor is selected. UniProt predicts signal residues 1..25 and
+        chain 26..455; no mature construct is adopted. Its FAD annotation is by similarity
+        to B8NI10, not a new exact-protein cofactor experiment.'
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AB506492.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS [8570:9938](+) (zero-based, end-exclusive), 1368
+        nucleotides, ATG start, TAA stop, codon_start 1, genetic code 1 explicitly
+        annotated. Strand-aware Biopython cds=True translation equals all 455 deposited
+        BAK26560.1 residues and canonical F5HN72. CDS bounds are exact with no annotated
+        translational exceptions. This establishes reference correspondence, not mature
+        processing, tags, mutations, exact assay stock or inter-strain equivalence.
+  - subject: cpao
+    predicate: is_database_supported_biosynthetic_participant_for
+    object: compound
+    notes: Reference-sequence identity and cluster encoding context are distinct from
+      function. GROUNDED denotes identifier identity, not experimental validation.
+      No exact reaction, ordered pathway, substrate specificity, stoichiometry, physical
+      complex, mature processing or assayed construct is asserted. References from
+      NBRC 4177, CA28, RIB40 and NRRL 3357 are not interchangeable. The 455-residue
+      canonical precursor is selected. UniProt predicts signal residues 1..25 and
+      chain 26..455; no mature construct is adopted. Its FAD annotation is by similarity
+      to B8NI10, not a new exact-protein cofactor experiment. Primary methods, figures,
+      supplements and constructs were not independently inspected. PMID:21608094 was
+      accessible as an abstract/publisher landing only; its UniProt annotations are
+      adopted as database assertions, not independently verified experiments. Other
+      CPA primary leads were inaccessible, rate-limited or browser-challenged. No
+      new biochemical assay claim is imported.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/F5HN72
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: UniProt attributes impaired CPA production after disruption to PMID:21608094,
+        with NBRC 4177 explicitly listed in the reference strain annotation. Adopted
+        only as database-supported named-compound participation; a disruption observation
+        does not establish a direct substrate-to-product reaction.
+      snippet: Impairs the production of cyclopiazonic acid
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000977.4/annotations.json
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: This versioned cluster links native AB506492.1 to a CPA structure. MIBiG
+        entry version 4 is active but quality questionable, completeness unknown.
+        Entry version is not a database release version. Its locus has no evidence
+        entries. Source producer/BGC assertion grades remain unchanged.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000977.4/annotations.json
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Native protein correspondence and the exact source-owner SMILES link
+        support this bounded named-compound association, not the microstate of an
+        assayed product. This graph retains the exact source-matched neutral owner
+        representation, formula C20H20N2O3, charge zero. Its stored SMILES and InChI
+        parse and agree within this owner under RDKit 2026.03.5. CHEBI:17734 and CHEBI:22450
+        remain separate hydroxyethylidene and acetyl-enol representations with different
+        Standard InChIKeys; no microstate equivalence or owner merge is inferred.
+        Charged Rhea participants CHEBI:58067/58256 are not substituted. The local
+        ChEBI SMILES parse defect tracked in issue 777 is not used to repair or replace
+        the owner chemistry. Existing CpaH and SERCA content is outside this graph;
+        issue 147 remains unresolved. Exact owner CHEBI:22450, Standard InChIKey SZINUGQCTHLQAZ-DQYPLSBCSA-N.
+  - subject: cluster
+    predicate: contains_cds_encoding_reference
+    object: cpar
+    notes: Reference-sequence identity and cluster encoding context are distinct from
+      function. GROUNDED denotes identifier identity, not experimental validation.
+      No exact reaction, ordered pathway, substrate specificity, stoichiometry, physical
+      complex, mature processing or assayed construct is asserted. References from
+      NBRC 4177, CA28, RIB40 and NRRL 3357 are not interchangeable. Protein existence
+      is inferred from homology. Encoding context does not establish a required regulatory
+      role.
+    evidence:
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AB506492.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Native deposit AB506492.1, strain NBRC 4177, taxon 5062, complete CDS
+        BAK26563.1, gene cpaR. This is source annotation and encoding context, not
+        an independent functional experiment.
+      snippet: /gene="cpaR"
+    - reference: https://www.uniprot.org/uniprotkb/F5HN75
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Reviewed UniProt F5HN75, entry 42, sequence 1, 598 residues; protein
+        existence 3: Inferred from homology. The EMBL protein cross-reference and
+        NBRC 4177 publication-strain annotation match the native deposit. Protein
+        existence is inferred from homology. Encoding context does not establish a
+        required regulatory role.'
+    - reference: https://www.uniprot.org/uniprotkb/F5HN75
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: UniProt attributes to PMID:21608094 a disruption phenotype with no significant
+        effect on production of CPA, 2-oxo-CPA and their biosynthetic intermediates.
+        This is an assay-bounded reported negative observation, not universal dispensability
+        and not independently inspected experimental evidence. Protein existence is
+        inferred from homology. Encoding context does not establish a required regulatory
+        role.
+      snippet: Has no significant effect
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AB506492.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS join{[24908:25070](+), [25126:26761](+)} (zero-based,
+        end-exclusive), 1797 nucleotides, ATG start, TAG stop, codon_start 1, genetic
+        code 1 explicitly annotated. Strand-aware Biopython cds=True translation equals
+        all 598 deposited BAK26563.1 residues and canonical F5HN75. CDS bounds are
+        exact with no annotated translational exceptions. This establishes reference
+        correspondence, not mature processing, tags, mutations, exact assay stock
+        or inter-strain equivalence.
+  - subject: cluster
+    predicate: contains_cds_encoding_reference
+    object: cpat
+    notes: Reference-sequence identity and cluster encoding context are distinct from
+      function. GROUNDED denotes identifier identity, not experimental validation.
+      No exact reaction, ordered pathway, substrate specificity, stoichiometry, physical
+      complex, mature processing or assayed construct is asserted. References from
+      NBRC 4177, CA28, RIB40 and NRRL 3357 are not interchangeable. Protein existence
+      is inferred from homology. Encoding context does not establish a required transport
+      or biosynthetic role.
+    evidence:
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AB506492.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Native deposit AB506492.1, strain NBRC 4177, taxon 5062, complete CDS
+        BAK26557.1, gene cpaT. This is source annotation and encoding context, not
+        an independent functional experiment.
+      snippet: /gene="cpaT"
+    - reference: https://www.uniprot.org/uniprotkb/F5HN69
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Reviewed UniProt F5HN69, entry 40, sequence 1, 496 residues; protein
+        existence 3: Inferred from homology. The EMBL protein cross-reference and
+        NBRC 4177 publication-strain annotation match the native deposit. Protein
+        existence is inferred from homology. Encoding context does not establish a
+        required transport or biosynthetic role.'
+    - reference: https://www.uniprot.org/uniprotkb/F5HN69
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: UniProt attributes to PMID:21608094 a disruption phenotype with no significant
+        effect on production of CPA, 2-oxo-CPA and their biosynthetic intermediates.
+        This is an assay-bounded reported negative observation, not universal dispensability
+        and not independently inspected experimental evidence. Protein existence is
+        inferred from homology. Encoding context does not establish a required transport
+        or biosynthetic role.
+      snippet: Has no significant effect
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AB506492.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS join{[2552:3212](-), [2268:2493](-), [1606:2212](-)}
+        (zero-based, end-exclusive), 1491 nucleotides, ATG start, TGA stop, codon_start
+        1, genetic code 1 explicitly annotated. Strand-aware Biopython cds=True translation
+        equals all 496 deposited BAK26557.1 residues and canonical F5HN69. CDS bounds
+        are exact with no annotated translational exceptions. This establishes reference
+        correspondence, not mature processing, tags, mutations, exact assay stock
+        or inter-strain equivalence.
+  - subject: cluster
+    predicate: contains_cds_encoding_reference
+    object: cpam
+    notes: Reference-sequence identity and cluster encoding context are distinct from
+      function. GROUNDED denotes identifier identity, not experimental validation.
+      No exact reaction, ordered pathway, substrate specificity, stoichiometry, physical
+      complex, mature processing or assayed construct is asserted. References from
+      NBRC 4177, CA28, RIB40 and NRRL 3357 are not interchangeable. Protein existence
+      is inferred from homology. The native product is hypothetical; UniProt calls
+      it a putative methyltransferase and reports no apparent involvement in CPA/2-oxo-CPA
+      biosynthesis. No methylation or required biosynthetic role is asserted.
+    evidence:
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AB506492.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Native deposit AB506492.1, strain NBRC 4177, taxon 5062, complete CDS
+        BAK26558.1, gene cpaM. This is source annotation and encoding context, not
+        an independent functional experiment.
+      snippet: /gene="cpaM"
+    - reference: https://www.uniprot.org/uniprotkb/C9K203
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Reviewed UniProt C9K203, entry 49, sequence 1, 434 residues; protein
+        existence 3: Inferred from homology. The EMBL protein cross-reference and
+        NBRC 4177 publication-strain annotation match the native deposit. Protein
+        existence is inferred from homology. The native product is hypothetical; UniProt
+        calls it a putative methyltransferase and reports no apparent involvement
+        in CPA/2-oxo-CPA biosynthesis. No methylation or required biosynthetic role
+        is asserted.'
+    - reference: https://www.uniprot.org/uniprotkb/C9K203
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: UniProt attributes to PMID:21608094 a disruption phenotype with no significant
+        effect on production of CPA, 2-oxo-CPA and their biosynthetic intermediates.
+        This is an assay-bounded reported negative observation, not universal dispensability
+        and not independently inspected experimental evidence. Protein existence is
+        inferred from homology. The native product is hypothetical; UniProt calls
+        it a putative methyltransferase and reports no apparent involvement in CPA/2-oxo-CPA
+        biosynthesis. No methylation or required biosynthetic role is asserted.
+      snippet: Has no significant effect
+    - reference: https://www.ebi.ac.uk/ena/browser/view/AB506492.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete native CDS join{[5251:5293](-), [5035:5176](-), [4106:4982](-),
+        [4018:4042](-), [3719:3941](-)} (zero-based, end-exclusive), 1305 nucleotides,
+        ATG start, TAA stop, codon_start 1, genetic code 1 explicitly annotated. Strand-aware
+        Biopython cds=True translation equals all 434 deposited BAK26558.1 residues
+        and canonical C9K203. CDS bounds are exact with no annotated translational
+        exceptions. This establishes reference correspondence, not mature processing,
+        tags, mutations, exact assay stock or inter-strain equivalence.
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
   curator: seed_from_sources
@@ -240,3 +723,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-10T04:28:08Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added six exact NBRC 4177 canonical protein references with cluster encoding
+    edges, three database-supported CpaS/D/O participation edges and claim-level citations/snippets.
+    CpaR/T/M are encoding context only; preserved their reported non-significant disruption
+    effects. No source-owned fields, exact reactions, assay constructs or SEEDED status
+    upgraded.
+  llm_assisted: true
