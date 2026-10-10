@@ -1138,6 +1138,11 @@ causal_graph_refs:
 - beta-carotene-mgyg02096-e4upp6-similarity
 - beta-carotene-snog00339-q0v6m5-similarity
 - beta-carotene-an07g00800-a2qm49-similarity
+- beta-lcyb-q38933-db
+- beta-lcyb-q40424-db
+- beta-lcyb-q43503-db
+- beta-lcyb-d9il23-db
+- beta-lcyb-q43578-db
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -1237,4 +1242,10 @@ curation_history:
     producer/BGC/taxonomy/origin or experimental claims added. Fourteen older graphs,
     nine pathway steps, five Discussions, imported fields and history preserved. SEEDED
     and all prior scientific/access holds remain.'
+  llm_assisted: true
+- timestamp: '2026-10-10T01:01:03Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added five database-qualified LCY-B biosynthesis reference graphs. Component
+    evidence records reaction, sequence and assay limits. Prior biology/history preserved.
   llm_assisted: true

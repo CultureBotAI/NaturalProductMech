@@ -1,0 +1,127 @@
+record_id: CHEBI:17579
+standard_inchi_key: OENHQHLEOONYIE-JLTXGRSLSA-N
+graph:
+  graph_id: beta-lcyb-q40424-db
+  scope: BIOSYNTHESIS
+  description: 'LCY-B (Narcissus pseudonarcissus reference): Deliberately selected
+    canonical protein reference for a database-proposed biosynthetic process, not
+    an independently inspected assay construct. GROUNDED denotes reference identity,
+    not experimental function. These organism-specific alternatives are not a shared
+    pathway or physical assembly and are not BGC0000646/FJ151553.1 assignments. No
+    producer, occurrence, BGC, taxonomy or origin upgrade. No exact substrate, intermediate,
+    reaction order, cofactor or measured stereoselectivity is adopted; the earlier
+    lycopene chemical-representation hold remains.'
+  nodes:
+  - node_id: cyclase
+    label: LCY-B (Narcissus pseudonarcissus reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q40424
+    grounding_status: GROUNDED
+  - node_id: beta_carotene_biosynthesis
+    label: beta-carotene biosynthetic process
+    node_type: PROCESS
+    identifier: GO:1901812
+    grounding_status: GROUNDED
+  - node_id: beta_carotene
+    label: beta-carotene
+    node_type: COMPOUND
+    identifier: CHEBI:17579
+    grounding_status: GROUNDED
+  edges:
+  - subject: cyclase
+    predicate: is_database_proposed_participant_in
+    object: beta_carotene_biosynthesis
+    notes: Deliberately selected canonical protein reference for a database-proposed
+      biosynthetic process, not an independently inspected assay construct. GROUNDED
+      denotes reference identity, not experimental function. These organism-specific
+      alternatives are not a shared pathway or physical assembly and are not BGC0000646/FJ151553.1
+      assignments. No producer, occurrence, BGC, taxonomy or origin upgrade. No exact
+      substrate, intermediate, reaction order, cofactor or measured stereoselectivity
+      is adopted; the earlier lycopene chemical-representation hold remains.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q40424
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Reviewed UniProt entry97/sequence1, 503aa, 2: Evidence at transcript
+        level. PATHWAY has no explicit evidence tag. FUNCTION also names beta-carotene
+        formation; no independent assay claim is made. Generic reaction has no explicit
+        evidence tag. Only generic RHEA:55620 (CHEBI:139114 to CHEBI:139120) is annotated,
+        not RHEA:32239. The graph represents process participation, not an exact terminal
+        reaction or substrate; the separate beta-zeacarotene PATHWAY annotation is
+        not adopted for this owner. GO:1901812 is a curator mapping of PATHWAY wording,
+        not a retrieved GO gene-product annotation. Functional evidence remains DATABASE_ASSERTION;
+        primary assays were not independently inspected. Native gene lyc, lambda ZAP
+        library, no cultivar qualifier. Native beta-carotene formation annotation
+        is a database assertion, not an inspected experiment. UniProt PMID:9288918
+        is linked to localization, not automatically the generic reaction. DOI10.1111/j.1432-1033.1997.00942.x
+        was tool-inaccessible; not retried. Transit1..85 is ECO:0000255 prediction;
+        chain86..503 and predicted NAD binding are not assay constructs.'
+      snippet: Carotenoid biosynthesis; beta-carotene biosynthesis
+    - reference: http://purl.obolibrary.org/obo/GO_1901812
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Curator maps the explicit UniProt beta-carotene biosynthesis PATHWAY
+        wording to GO:1901812, not to an exact reaction. This is not a GO gene-product
+        annotation. Existing local OAK GO cache version2026-07-26 inspected2026-10-10;
+        term label and definition denote beta-carotene biosynthesis. AmiGO timed out;
+        no fresh ontology download is claimed.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAA67331.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete plus-strand mRNA CDS X98796.1:153..1664, 1512nt including stop,
+        ATG/codon_start1/standard code1, independently translates to CAA67331.1 and
+        canonical UniProtKB:Q40424, all 503aa. Native taxon39639. TGA stop. Native
+        gene lyc, lambda ZAP library, no cultivar qualifier. Native beta-carotene
+        formation annotation is a database assertion, not an inspected experiment.
+        UniProt PMID:9288918 is linked to localization, not automatically the generic
+        reaction. DOI10.1111/j.1432-1033.1997.00942.x was tool-inaccessible; not retried.
+        Transit1..85 is ECO:0000255 prediction; chain86..503 and predicted NAD binding
+        are not assay constructs. Exact reference/CDS correspondence is CURATOR_INFERENCE,
+        not assay-stock identity, experimental processing, genomic exon structure,
+        native production or functional proof.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/X98796.1?from=153&to=1664
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Complete plus-strand mRNA CDS X98796.1:153..1664, 1512nt including stop,
+        ATG/codon_start1/standard code1, independently translates to CAA67331.1 and
+        canonical UniProtKB:Q40424, all 503aa. Native taxon39639. TGA stop. Native
+        gene lyc, lambda ZAP library, no cultivar qualifier. Native beta-carotene
+        formation annotation is a database assertion, not an inspected experiment.
+        UniProt PMID:9288918 is linked to localization, not automatically the generic
+        reaction. DOI10.1111/j.1432-1033.1997.00942.x was tool-inaccessible; not retried.
+        Transit1..85 is ECO:0000255 prediction; chain86..503 and predicted NAD binding
+        are not assay constructs. Exact reference/CDS correspondence is CURATOR_INFERENCE,
+        not assay-stock identity, experimental processing, genomic exon structure,
+        native production or functional proof.
+  - subject: beta_carotene_biosynthesis
+    predicate: has_ontology_defined_primary_output
+    object: beta_carotene
+    notes: Process-class output definition only; not an enzyme-specific reaction experiment.
+    evidence:
+    - reference: http://purl.obolibrary.org/obo/GO_1901812
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Existing local OAK GO cache version2026-07-26 inspected2026-10-10: GO:1901812
+        has the RO:0004008 has primary output restriction to CHEBI:17579. This is
+        an ontology-level process definition, not an enzyme-specific terminal reaction,
+        assayed product, measured stereoselectivity or proof of native production.
+        AmiGO timed out on the attempted open; no retry or fresh ontology download.'
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:17579
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-09'
+      notes: 'Inspected ChEBI255 beta-carotene: neutral C40H56, Standard InChIKeyOENHQHLEOONYIE-JLTXGRSLSA-N.
+        Independent RDKit2026.03.5 parsing of cached SMILES and InChI reproduces the
+        full key. The existing MIBiG-derived owner SMILES and InChI independently
+        give this same key. This is exact database chemical-identity correspondence,
+        not an independent experimental structure or stereoselectivity measurement.'
+curation_history:
+- timestamp: '2026-10-10T01:01:03Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added beta-lcyb-q40424-db for CHEBI:17579 as a canonical reference with
+    two cited process-level edges and one verbatim UniProt PATHWAY snippet. Database
+    function, curator GO mapping and native CDS correspondence are distinct from the
+    ontology-defined chemical output. Generic RHEA:55620 is not promoted to RHEA:32239;
+    no substrate, intermediate, assay, producer, BGC, taxonomy or origin upgrade.
+    All prior biology/history and scientific/access holds remain; K4C9E2 excluded.
+  llm_assisted: true
