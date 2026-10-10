@@ -967,6 +967,10 @@ causal_graphs:
         not independently reassess the chemical characterization of the heterologous
         product. Other cluster entries and the shared-structure discussion remain
         unreviewed.
+causal_graph_refs:
+- epothilone-soce90-proposed-biosynthetic-participants
+- epothilone-so0157-2-proposed-biosynthetic-participants
+- epothilone-kyc3013-proposed-biosynthetic-participants
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -996,4 +1000,23 @@ curation_history:
     the existing EpoK graph/pathway, all source-owned fields and SEEDED status. No
     individual enzyme assay, exact reaction, construct, inter-strain equivalence or
     automated thailandamide annotation is adopted.
+  llm_assisted: true
+- timestamp: '2026-10-10T05:55:37Z'
+  curator: codex
+  action: ADD_BIOSYNTHETIC_PROTEIN_GRAPH
+  changes: Added the So ce90 six-protein canary graph component. Exact references
+    support proposed source-annotated biosynthetic participation, not new experimental
+    catalysis. KYC3013 uses versioned NCBIProtein identifiers, not deleted UniProt
+    examples. Every added edge has a stable URL. Preserved both old inline graphs,
+    pathway, all prior history, source-owned fields, open discussion and SEEDED status.
+  llm_assisted: true
+- timestamp: '2026-10-10T05:56:33Z'
+  curator: codex
+  action: ADD_BIOSYNTHETIC_PROTEIN_GRAPH
+  changes: Added separate So0157-2 and KYC3013 seven-protein graph components. Exact
+    references support proposed source-annotated biosynthetic participation, not new
+    experimental catalysis. KYC3013 uses versioned NCBIProtein identifiers, not deleted
+    UniProt examples. Every added edge has a stable URL. Preserved both old inline
+    graphs, pathway, all prior history, source-owned fields, open discussion and SEEDED
+    status.
   llm_assisted: true
