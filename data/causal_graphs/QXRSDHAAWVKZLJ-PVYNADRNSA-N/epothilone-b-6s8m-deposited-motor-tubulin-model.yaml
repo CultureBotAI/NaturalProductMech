@@ -1,0 +1,262 @@
+record_id: CHEBI:31550
+standard_inchi_key: QXRSDHAAWVKZLJ-PVYNADRNSA-N
+graph:
+  graph_id: epothilone-b-6s8m-deposited-motor-tubulin-model
+  scope: BIOACTIVITY
+  description: A modeled S. pombe microtubule-Cut7 segment, not a native three-subunit
+    microtubule. 6S8M version 1.4 (2025-10-01) supersedes 5MLV as alternative modeling
+    of the same data, not an independent experiment. All three gene-source and expression-host
+    tables name S. pombe NCBITaxon:4896 with unspecified strains; UniProt references
+    name strain 972, NCBITaxon:284812, which does not establish experimental-stock
+    equivalence. The primary paper DOI:10.1016/j.jmb.2019.01.011 was inaccessible;
+    only its abstract on the PDB page was inspected. No primary assay result is imported.
+    GROUNDED identifies the deposited model reference, not an independently assayed
+    native protein. No native isoform homogeneity, stock equivalence, processing state,
+    affinity, potency, precise hydrogen bond, drug-induced assembly or downstream
+    effect is asserted. Other modeled partners are not asserted to be drug targets.
+  nodes:
+  - node_id: epothilone_b
+    label: epothilone B
+    node_type: COMPOUND
+    identifier: CHEBI:31550
+    grounding_status: GROUNDED
+  - node_id: deposited_complex
+    label: 6S8M deposited microtubule-Cut7 segment
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: protein_p24339
+    label: cut7 (6S8M model reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:P24339
+    grounding_status: GROUNDED
+  - node_id: protein_p05219
+    label: nda3 (6S8M model reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:P05219
+    grounding_status: GROUNDED
+  - node_id: protein_p04688
+    label: nda2 (6S8M model reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:P04688
+    grounding_status: GROUNDED
+  edges:
+  - subject: epothilone_b
+    predicate: has_deposited_model_contact_with
+    object: protein_p05219
+    notes: The reported 4.5-Angstrom EM resolution is not ligand-specific. The official
+      2026-03-06 report flags four EPB bond lengths, 18 angles, 19 of 51 torsions
+      and one of three analyzed rings, with no chirality outliers. The instance API
+      gives Q_score 0.428, completeness 1.0 and 58 intermolecular clashes; the PDF
+      short-contact count 35 is a differently defined metric. Overall model Q-score
+      0.358 and atom inclusion 0.677 at contour 0.0811 are not ligand-specific. These
+      limitations preclude interpreting proximity as validated precise chemistry.
+      No independent map refitting occurred. GROUNDED identifies the deposited model
+      reference, not an independently assayed native protein. No native isoform homogeneity,
+      stock equivalence, processing state, affinity, potency, precise hydrogen bond,
+      drug-induced assembly or downstream effect is asserted. Other modeled partners
+      are not asserted to be drug targets.
+    evidence:
+    - reference: https://www.rcsb.org/structure/6S8M
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: Deposited EPB geometry and selected model-reference membership only.
+        A modeled S. pombe microtubule-Cut7 segment, not a native three-subunit microtubule.
+        6S8M version 1.4 (2025-10-01) supersedes 5MLV as alternative modeling of the
+        same data, not an independent experiment. All three gene-source and expression-host
+        tables name S. pombe NCBITaxon:4896 with unspecified strains; UniProt references
+        name strain 972, NCBITaxon:284812, which does not establish experimental-stock
+        equivalence.
+    - reference: https://files.rcsb.org/download/6S8M.cif
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: EPB label chain G has 35 heavy atoms, modeled occupancy 1.0, and nearest
+        beta-chain B distance approximately 2.799 Angstrom. Atom-site and instance-API
+        author labels are B502; original nonpolymer-scheme author numbering is a different
+        field. Modeled occupancy is not measured binding occupancy. The nearest alpha/Cut7
+        distances are 14.43/36.92 Angstrom; neither is assigned a drug-contact edge.
+    - reference: https://www.rcsb.org/ligand/EPB
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: CCD stereochemical SMILES and InChI, and both owner encodings, independently
+        reproduce QXRSDHAAWVKZLJ-PVYNADRNSA-N; neutral C27H41NO6S with RDKit 2026.03.5.
+        This establishes deposited chemical identity, not recharacterization of the
+        sample.
+    - reference: https://files.rcsb.org/validation/view/6s8m_full_validation.pdf
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: The reported 4.5-Angstrom EM resolution is not ligand-specific. The official
+        2026-03-06 report flags four EPB bond lengths, 18 angles, 19 of 51 torsions
+        and one of three analyzed rings, with no chirality outliers. The instance
+        API gives Q_score 0.428, completeness 1.0 and 58 intermolecular clashes; the
+        PDF short-contact count 35 is a differently defined metric. Overall model
+        Q-score 0.358 and atom inclusion 0.677 at contour 0.0811 are not ligand-specific.
+        These limitations preclude interpreting proximity as validated precise chemistry.
+        No independent map refitting occurred.
+    - reference: https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/6S8M/G
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: The ligand instance API lists only beta-chain B neighbors, agreeing with
+        the coordinate audit. The reported 4.5-Angstrom EM resolution is not ligand-specific.
+        The official 2026-03-06 report flags four EPB bond lengths, 18 angles, 19
+        of 51 torsions and one of three analyzed rings, with no chirality outliers.
+        The instance API gives Q_score 0.428, completeness 1.0 and 58 intermolecular
+        clashes; the PDF short-contact count 35 is a differently defined metric. Overall
+        model Q-score 0.358 and atom inclusion 0.677 at contour 0.0811 are not ligand-specific.
+        These limitations preclude interpreting proximity as validated precise chemistry.
+        No independent map refitting occurred.
+  - subject: protein_p24339
+    predicate: is_modeled_component_of
+    object: deposited_complex
+    notes: The 438-aa construct is GIDPFT plus canonical residues 1-432 of 1085-aa
+      Cut7. The six leading residues are deposited expression tags. Model label chain
+      A (author K) covers declared positions 74-302 and 324-438, corresponding to
+      canonical 68-296 and 318-432. Author numbers are declared positions plus 27.
+      This is neither full-length Cut7 nor evidence that Cut7 directly contacts EPB.
+      GROUNDED identifies the deposited model reference, not an independently assayed
+      native protein. No native isoform homogeneity, stock equivalence, processing
+      state, affinity, potency, precise hydrogen bond, drug-induced assembly or downstream
+      effect is asserted. Other modeled partners are not asserted to be drug targets.
+    evidence:
+    - reference: https://www.rcsb.org/structure/6S8M
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: A modeled S. pombe microtubule-Cut7 segment, not a native three-subunit
+        microtubule. 6S8M version 1.4 (2025-10-01) supersedes 5MLV as alternative
+        modeling of the same data, not an independent experiment. All three gene-source
+        and expression-host tables name S. pombe NCBITaxon:4896 with unspecified strains;
+        UniProt references name strain 972, NCBITaxon:284812, which does not establish
+        experimental-stock equivalence. The 438-aa construct is GIDPFT plus canonical
+        residues 1-432 of 1085-aa Cut7. The six leading residues are deposited expression
+        tags. Model label chain A (author K) covers declared positions 74-302 and
+        324-438, corresponding to canonical 68-296 and 318-432. Author numbers are
+        declared positions plus 27. This is neither full-length Cut7 nor evidence
+        that Cut7 directly contacts EPB.
+      snippet: Kinesin-like protein cut7
+    - reference: https://www.uniprot.org/uniprotkb/P24339
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: UniProtKB reviewed (Swiss-Prot), gene cut7, taxon 284812, 1085 aa, entry
+        180, sequence 3. Exact reference/construct sequence correspondence is independently
+        checked; general function annotations are not transferred. The 438-aa construct
+        is GIDPFT plus canonical residues 1-432 of 1085-aa Cut7. The six leading residues
+        are deposited expression tags. Model label chain A (author K) covers declared
+        positions 74-302 and 324-438, corresponding to canonical 68-296 and 318-432.
+        Author numbers are declared positions plus 27. This is neither full-length
+        Cut7 nor evidence that Cut7 directly contacts EPB.
+    - reference: https://files.rcsb.org/download/6S8M.cif
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Every actual modeled residue agrees with its declared construct position.
+        Assembly 1 uses the identity operation and includes this protein and the EPB
+        instance. Membership does not demonstrate drug engagement, assembly kinetics
+        or native stoichiometry. Ranges refer to declared positions unless explicitly
+        stated otherwise. The 438-aa construct is GIDPFT plus canonical residues 1-432
+        of 1085-aa Cut7. The six leading residues are deposited expression tags. Model
+        label chain A (author K) covers declared positions 74-302 and 324-438, corresponding
+        to canonical 68-296 and 318-432. Author numbers are declared positions plus
+        27. This is neither full-length Cut7 nor evidence that Cut7 directly contacts
+        EPB.
+  - subject: protein_p05219
+    predicate: is_modeled_component_of
+    object: deposited_complex
+    notes: The full declared 448-aa sequence matches nda3. Model chain B covers positions
+      2-430; position 1 and 431-448 are unmodeled, not demonstrated deletions. GROUNDED
+      identifies the deposited model reference, not an independently assayed native
+      protein. No native isoform homogeneity, stock equivalence, processing state,
+      affinity, potency, precise hydrogen bond, drug-induced assembly or downstream
+      effect is asserted. Other modeled partners are not asserted to be drug targets.
+    evidence:
+    - reference: https://www.rcsb.org/structure/6S8M
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: A modeled S. pombe microtubule-Cut7 segment, not a native three-subunit
+        microtubule. 6S8M version 1.4 (2025-10-01) supersedes 5MLV as alternative
+        modeling of the same data, not an independent experiment. All three gene-source
+        and expression-host tables name S. pombe NCBITaxon:4896 with unspecified strains;
+        UniProt references name strain 972, NCBITaxon:284812, which does not establish
+        experimental-stock equivalence. The full declared 448-aa sequence matches
+        nda3. Model chain B covers positions 2-430; position 1 and 431-448 are unmodeled,
+        not demonstrated deletions.
+      snippet: Tubulin beta chain
+    - reference: https://www.uniprot.org/uniprotkb/P05219
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: UniProtKB reviewed (Swiss-Prot), gene nda3, taxon 284812, 448 aa, entry
+        194, sequence 2. Exact reference/construct sequence correspondence is independently
+        checked; general function annotations are not transferred. The full declared
+        448-aa sequence matches nda3. Model chain B covers positions 2-430; position
+        1 and 431-448 are unmodeled, not demonstrated deletions.
+    - reference: https://files.rcsb.org/download/6S8M.cif
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Every actual modeled residue agrees with its declared construct position.
+        Assembly 1 uses the identity operation and includes this protein and the EPB
+        instance. Membership does not demonstrate drug engagement, assembly kinetics
+        or native stoichiometry. Ranges refer to declared positions unless explicitly
+        stated otherwise. The full declared 448-aa sequence matches nda3. Model chain
+        B covers positions 2-430; position 1 and 431-448 are unmodeled, not demonstrated
+        deletions.
+  - subject: protein_p04688
+    predicate: is_modeled_component_of
+    object: deposited_complex
+    notes: The full declared 455-aa sequence matches nda2. Model label chain C (author
+      A) covers 1-36 and 50-442; 37-49 and 443-455 are unmodeled. No alpha-tubulin
+      drug-contact edge is asserted. GROUNDED identifies the deposited model reference,
+      not an independently assayed native protein. No native isoform homogeneity,
+      stock equivalence, processing state, affinity, potency, precise hydrogen bond,
+      drug-induced assembly or downstream effect is asserted. Other modeled partners
+      are not asserted to be drug targets.
+    evidence:
+    - reference: https://www.rcsb.org/structure/6S8M
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: A modeled S. pombe microtubule-Cut7 segment, not a native three-subunit
+        microtubule. 6S8M version 1.4 (2025-10-01) supersedes 5MLV as alternative
+        modeling of the same data, not an independent experiment. All three gene-source
+        and expression-host tables name S. pombe NCBITaxon:4896 with unspecified strains;
+        UniProt references name strain 972, NCBITaxon:284812, which does not establish
+        experimental-stock equivalence. The full declared 455-aa sequence matches
+        nda2. Model label chain C (author A) covers 1-36 and 50-442; 37-49 and 443-455
+        are unmodeled. No alpha-tubulin drug-contact edge is asserted.
+      snippet: Tubulin alpha-1 chain
+    - reference: https://www.uniprot.org/uniprotkb/P04688
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: UniProtKB reviewed (Swiss-Prot), gene nda2, taxon 284812, 455 aa, entry
+        180, sequence 2. Exact reference/construct sequence correspondence is independently
+        checked; general function annotations are not transferred. The full declared
+        455-aa sequence matches nda2. Model label chain C (author A) covers 1-36 and
+        50-442; 37-49 and 443-455 are unmodeled. No alpha-tubulin drug-contact edge
+        is asserted.
+    - reference: https://files.rcsb.org/download/6S8M.cif
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: Every actual modeled residue agrees with its declared construct position.
+        Assembly 1 uses the identity operation and includes this protein and the EPB
+        instance. Membership does not demonstrate drug engagement, assembly kinetics
+        or native stoichiometry. Ranges refer to declared positions unless explicitly
+        stated otherwise. The full declared 455-aa sequence matches nda2. Model label
+        chain C (author A) covers 1-36 and 50-442; 37-49 and 443-455 are unmodeled.
+        No alpha-tubulin drug-contact edge is asserted.
+curation_history:
+- timestamp: '2026-10-10T07:43:59Z'
+  curator: codex
+  action: ADD_STRUCTURAL_PROTEIN_GRAPH
+  changes: 'Added two qualified 6S8M/7DAE BIOACTIVITY deposited-model graphs: seven
+    exact protein references (six active UniProt, one versioned RefSeq), nine cited
+    edges and seven verbatim snippets. Drug contact is beta-model geometry only; partners
+    remain model members, not drug targets. Construct, strain, numbering and ligand-quality
+    limitations remain explicit. Preserved all six previous graphs, pathway, source
+    fields, prior history, open discussion and SEEDED status. Owner data/natural_products/unclassified/epothilone-b.yaml
+    at base 4b6afd3d0809ca45c2b92ac88d01ea1b9074b0f1.'
+  llm_assisted: true
+- timestamp: '2026-10-10T07:49:37Z'
+  curator: codex
+  action: CLARIFY_MODEL_CLAIM_SCOPE
+  changes: 'Clarified issue #782: the graph withholds other-partner drug-target assertions;
+    it does not establish biological non-target status. Missing coordinates do not
+    establish sequence deletions. The earlier history shorthand "not drug targets"
+    denotes the intended withheld claim, not demonstrated absence. Preserved all identifiers,
+    topology, evidence, snippets, source qualifications and earlier history. Review
+    finding: https://github.com/CultureBotAI/NaturalProductMech/issues/782.'
+  llm_assisted: true

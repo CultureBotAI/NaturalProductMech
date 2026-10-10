@@ -972,6 +972,8 @@ causal_graph_refs:
 - epothilone-so0157-2-proposed-biosynthetic-participants
 - epothilone-kyc3013-proposed-biosynthetic-participants
 - epothilone-b-9pnd-deposited-tubulin-model
+- epothilone-b-6s8m-deposited-motor-tubulin-model
+- epothilone-b-7dae-deposited-tubulin-partner-model
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -1029,4 +1031,24 @@ curation_history:
     mechanism, source fields, history and SEEDED status. No alpha binding, isoform
     homogeneity, processing state, affinity or downstream effect is inferred; ligand-validation
     caveats remain explicit.
+  llm_assisted: true
+- timestamp: '2026-10-10T07:43:59Z'
+  curator: codex
+  action: ADD_STRUCTURAL_PROTEIN_GRAPHS
+  changes: 'Added two qualified 6S8M/7DAE BIOACTIVITY deposited-model graphs: seven
+    exact protein references (six active UniProt, one versioned RefSeq), nine cited
+    edges and seven verbatim snippets. Drug contact is beta-model geometry only; partners
+    remain model members, not drug targets. Construct, strain, numbering and ligand-quality
+    limitations remain explicit. Preserved all six previous graphs, pathway, source
+    fields, prior history, open discussion and SEEDED status.'
+  llm_assisted: true
+- timestamp: '2026-10-10T07:49:37Z'
+  curator: codex
+  action: CLARIFY_MODEL_CLAIM_SCOPE
+  changes: 'Clarified issue #782: the graph withholds other-partner drug-target assertions;
+    it does not establish biological non-target status. Missing coordinates do not
+    establish sequence deletions. The earlier history shorthand "not drug targets"
+    denotes the intended withheld claim, not demonstrated absence. Preserved all identifiers,
+    topology, evidence, snippets, source qualifications and earlier history. Review
+    finding: https://github.com/CultureBotAI/NaturalProductMech/issues/782.'
   llm_assisted: true
