@@ -293,14 +293,236 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 10 edges</span></h2>
+<p class="sub">Native SchM grounding, cassette genetics/complementation and recombinant His6-CalM methylation are separate claims. Main-text experimental results are adopted with explicit construct and figure/SI limits; the N-demethyl substrate remains chemically ungrounded.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>SchM native reference</td>
+  <td>is the native reference inferred for the product of</td>
+  <td>calM (paper locus)</td>
+  <td>Native reference identity is separate from the tagged assay protein. No exact full fusion sequence, physiological complex or untagged-native activity measurement is asserted.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AAC.01130-10<br>DOI:10.1016/j.biochi.2013.03.014<br>https://www.uniprot.org/uniprotkb/F8QZQ7/entry<br>https://www.ncbi.nlm.nih.gov/protein/AEH42477.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table3 assigns calM a 229-aa product. Its ordered HM452329 locus, length and compatible annotation support the inferred alias SchM.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1016/j.biochi.2013.03.014</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The 2013 study cites HM452329 and a229-aa CalM. Both printed pJTU3182 cloning primers uniquely match native SchM CDS ends. This supports the alias and template, not an independently sequenced complete plasmid or vector-derived fusion.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/F8QZQ7/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Directly resolved unreviewed entry version33, sequence version1; SchM,229aa. Species taxon1969 retains the NRRL3882 nucleotide-reference strain attribution and HM452329/AEH42477.1 cross-reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AEH42477.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>AEH42477.1,complement(HM452329.1:22502..23191); native NRRL3882,taxon1079985. Native DNA/code11/CDS, independent GenPept and current direct UniProt sequences agree. Product text is a deposited annotation.</dd><dt>snippet</dt><dd>N-methyl-transferase</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>calM (paper locus)</td>
+  <td>was replaced with neo in</td>
+  <td>WQL3 calM::neo disruption</td>
+  <td>A whole-locus perturbation is not a selective inhibition of purified CalM and does not by itself exclude polar effects.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.biochi.2013.03.014</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.biochi.2013.03.014</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods2.2 describes pJTU3179, double-crossover selection and PCR confirmation of WQL3. This was resistance-cassette replacement, not scarless deletion.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>WQL3 calM::neo disruption</td>
+  <td>lost detectable production of</td>
+  <td>calcimycin (A23187)</td>
+  <td>Reported main-text phenotype; figure pixels and detection limits were not independently inspected. No numerical zero yield asserted.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.biochi.2013.03.014</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.biochi.2013.03.014</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods2.3/Results3.3 report HPLC/MS after solid SFM cultivation at30C for6-10days, with a Sigma calcimycin standard. WQL3 accumulated the N-demethyl product instead of calcimycin.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>WQL3 calM::neo disruption</td>
+  <td>accumulated the product assigned as</td>
+  <td>N-demethylcalcimycin (paper substrate)</td>
+  <td>Paper-assigned chemical identity only. Supplementary spectra are uninspected; no exact chemical identifier, atom map or equivalence to cezomycin is adopted.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.biochi.2013.03.014</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.biochi.2013.03.014</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Results3.2-3.3 assign the accumulated compound by LC/MS and report supporting NMR in the supplement.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>calM (paper locus)</td>
+  <td>was carried on the complementation fragment supplied in</td>
+  <td>WQL6 calM-fragment complementation</td>
+  <td>Fragment boundaries and complete construct sequence were not independently checked. This is complementation, not scarless repair or proof that no adjacent sequence contributed.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.biochi.2013.03.014</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.biochi.2013.03.014</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods2.2 describes a BamHI fragment from pJTU3166 carrying calM in pSET152-derived pJTU3187, introduced into WQL3. Results3.3 describes its natural promoter.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>WQL6 calM-fragment complementation</td>
+  <td>restored reported production of</td>
+  <td>calcimycin (A23187)</td>
+  <td>Restored detection is not a measured equality of yield, expression level or pathway flux.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.biochi.2013.03.014</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.biochi.2013.03.014</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Results3.3 reports calcimycin production in WQL6 and LC/MS confirmation of the HPLC peak.</dd><dt>snippet</dt><dd>The resulting strain, WQL6, produced calcimycin.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>SchM native reference</td>
+  <td>provides the native sequence reference inferred for</td>
+  <td>His6-CalM (paper construct)</td>
+  <td>Native reference identity is separate from the tagged assay protein. No exact full fusion sequence, physiological complex or untagged-native activity measurement is asserted.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.biochi.2013.03.014</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.biochi.2013.03.014</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods2.4 clones the genomic calM insert into pET28a at BamHI/HindIII as pJTU3182, expressed in E.coli BL21(DE3)/pLysE and purified by nickel affinity. Printed primer ends match SchM; vector-derived residues remain unverified.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>His6-CalM (paper construct)</td>
+  <td>catalyzed N-methylation in</td>
+  <td>SAM-dependent CalM assay</td>
+  <td>This edge concerns the reported purified tagged construct and assay, not an independently sequenced native enzyme. No kinetics, substrate breadth or physiological sufficiency claimed.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.biochi.2013.03.014</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.biochi.2013.03.014</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods2.6/Results3.4:50uL,75mM Tris-HCl pH8.0,1mM SAM,2%DMSO,0.5mM substrate and1.6uM CalM;37C,15min, methanol quench and HPLC/MS. The reported negative control omitted SAM.</dd><dt>snippet</dt><dd>CalM is indeed an N-methyltransferase</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>N-demethylcalcimycin (paper substrate)</td>
+  <td>was the reported substrate in</td>
+  <td>SAM-dependent CalM assay</td>
+  <td>Retain the ungrounded paper substrate; do not substitute cezomycin or silently resolve its distinct stereochemical questions.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.biochi.2013.03.014</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.biochi.2013.03.014</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods2.5-2.6 uses the isolated WQL3-derived N-demethyl compound in the recombinant enzyme assay.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>SAM-dependent CalM assay</td>
+  <td>formed a product assigned as</td>
+  <td>calcimycin (A23187)</td>
+  <td>Reported main-text assay outcome, not a new inspection of Figure5 or supplementary spectra. No upstream ring-closure, activation or amination step is inferred.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.biochi.2013.03.014</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.biochi.2013.03.014</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Results3.4 reports calcimycin formation confirmed by mass spectrometry, contrasting with the no-SAM control.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 5 edges</span></h2>
+<p class="sub">Sequence-verified native SchR3 is mapped by inference to the paper locus. Separate experimental edges describe cassette disruption, increased calcimycin production and complementation. No assay construct, export activity or small-molecule mechanism is inferred from this phenotype alone.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>SchR3 native reference</td>
+  <td>is the native reference inferred for the product of</td>
+  <td>calR3 (paper locus)</td>
+  <td>Native reference identity is separate from the tagged assay protein. No exact full fusion sequence, physiological complex or untagged-native activity measurement is asserted.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AAC.01130-10<br>DOI:10.3389/fmicb.2017.02371<br>https://www.uniprot.org/uniprotkb/F8QZR9/entry<br>https://www.ncbi.nlm.nih.gov/protein/AEH42489.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table3 assigns calR3 a 211-aa product. Its ordered HM452329 locus, length and compatible annotation support the inferred alias SchR3.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2017.02371</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The 2017 study cites HM452329 and NRRL3882, targeting the calR3/calT neighborhood. Ordered loci and the 2011 length assignments support cal/Sch aliases. Held primer/figure details do not establish complete mutant, probe or recombinant construct sequences.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/F8QZR9/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Directly resolved unreviewed entry version51, sequence version1; SchR3,211aa. Species taxon1969 retains the NRRL3882 nucleotide-reference strain attribution and HM452329/AEH42489.1 cross-reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AEH42489.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>AEH42489.1,HM452329.1:43244..43879; native NRRL3882,taxon1079985. Native DNA/code11/CDS, independent GenPept and current direct UniProt sequences agree. Product text is a deposited annotation.</dd><dt>snippet</dt><dd>TetR family regulator</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>calR3 (paper locus)</td>
+  <td>was internally replaced by aac(3)IV-oriT in</td>
+  <td>GLX26 calR3 cassette disruption</td>
+  <td>Cassette disruption, not scarless deletion. Exact endpoints remain ungrounded because primer sequences and figure pixels were not inspected.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fmicb.2017.02371</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2017.02371</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods/Results describe pJTU3791 and a455bp internal replacement, double-crossover selection and PCR confirmation. The reported PCR products are714bp for WT and1643bp for GLX26.</dd><dt>snippet</dt><dd>an internal 455-bp DNA sequence in calR3 was replaced</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>GLX26 calR3 cassette disruption</td>
+  <td>increased reported production of</td>
+  <td>calcimycin (A23187)</td>
+  <td>Whole-strain production phenotype, not direct CalT transport or a catalytic measurement. Figure2 pixels, error estimates and quantitative normalization are uninspected. Growth measurements in TSBY are not treated as exclusion of every growth confound in solid SFM.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fmicb.2017.02371</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2017.02371</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Main Results report approximately8-fold higher calcimycin yield by HPLC than WT. Methods specify solid SFM,30C,7days.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>calR3 (paper locus)</td>
+  <td>was supplied on pJTU3795 in</td>
+  <td>GLX29 calR3 complementation</td>
+  <td>Complementation rather than scarless repair. Primer sequences and the complete insert remain uninspected; native promoter identity, dosage and neighboring effects are not assumed.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fmicb.2017.02371</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2017.02371</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods describe an intact genomic calR3 PCR fragment in integrating pJTU2170-derived pJTU3795, introduced into GLX26.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>GLX29 calR3 complementation</td>
+  <td>was reported to restore the wild-type production pattern of</td>
+  <td>calcimycin (A23187)</td>
+  <td>Qualitative main-text rescue claim only; no exact equality of yield or independently inspected chromatogram. Cezomycin outcomes are not imported.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fmicb.2017.02371</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2017.02371</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Results and Figure2 caption report restoration of production after calR3 complementation.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
+<p class="sub">Native references and a tagged DNA-binding assay support an explicitly inferred transcriptional model. CalT export remains the authors&#39; unproven hypothesis, separate from CalR3 perturbation phenotypes. RNA signal, protein abundance, DNA binding and small-molecule transport are not interchangeable readouts.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>SchR3 native reference</td>
+  <td>provides the native sequence reference inferred for</td>
+  <td>His6-CalR3 (paper construct)</td>
+  <td>Native reference identity is separate from the tagged assay protein. No exact full fusion sequence, physiological complex or untagged-native activity measurement is asserted.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AAC.01130-10<br>DOI:10.3389/fmicb.2017.02371<br>https://www.uniprot.org/uniprotkb/F8QZR9/entry<br>https://www.ncbi.nlm.nih.gov/protein/AEH42489.1<br>DOI:10.3389/fmicb.2017.02371</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table3 assigns calR3 a 211-aa product. Its ordered HM452329 locus, length and compatible annotation support the inferred alias SchR3.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2017.02371</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The 2017 study cites HM452329 and NRRL3882, targeting the calR3/calT neighborhood. Ordered loci and the 2011 length assignments support cal/Sch aliases. Held primer/figure details do not establish complete mutant, probe or recombinant construct sequences.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/F8QZR9/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Directly resolved unreviewed entry version51, sequence version1; SchR3,211aa. Species taxon1969 retains the NRRL3882 nucleotide-reference strain attribution and HM452329/AEH42489.1 cross-reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AEH42489.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>AEH42489.1,HM452329.1:43244..43879; native NRRL3882,taxon1079985. Native DNA/code11/CDS, independent GenPept and current direct UniProt sequences agree. Product text is a deposited annotation.</dd><dt>snippet</dt><dd>TetR family regulator</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2017.02371</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods reports the intact genomic gene cloned at NdeI/EcoRI in pET28a-calR3, sequence-validated by the authors, expressed in BL21(DE3)/pLysE and purified as N-terminal His6-CalR3. The actual insert/tag sequence was not independently inspected.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>His6-CalR3 (paper construct)</td>
+  <td>bound in the reported in-vitro assay to</td>
+  <td>T-R3L promoter probe (paper)</td>
+  <td>No exact probe sequence/coordinates, binding-site bases, stoichiometry, dimer or affinity value is adopted. Figure pixels and primer supplement remain uninspected.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fmicb.2017.02371</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2017.02371</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Main Methods/Results describe EMSA on the calT-calR3 intergenic probes, binding to T-R3L, and DNaseI protection. EMSA:37C,30min,20uL,20mM Tris-Cl,100mM KCl,10mM DTT,pH8.0.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>SchR3 native reference</td>
+  <td>is inferred to repress</td>
+  <td>calR3 transcription (regulatory model)</td>
+  <td>Regulatory interpretation, not reconstituted transcription. Primer/amplicon boundaries in the455bp cassette mutant are uninspected; the signal is not proof of intact wild-type calR3 mRNA or increased CalR3 protein in GLX26.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fmicb.2017.02371</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2017.02371</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Authors combine genomic-locus perturbation,96h TSBY RT-qPCR normalized to16S rDNA, recombinant DNA binding and reported TSP positions to interpret autorepression. The reported calR3 RT-qPCR signal rises about30-fold in GLX26.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>SchR3 native reference</td>
+  <td>is inferred to repress</td>
+  <td>calT transcription (regulatory model)</td>
+  <td>Transcript signal is not CalT protein abundance or a transport measurement. No exact promoter boundaries or reconstructed transcription assay is asserted.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fmicb.2017.02371</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2017.02371</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The same combined evidence supports the authors&#39; calT repression model. Main Results report about171-fold higher calT RT-qPCR signal in GLX26 at96h; the study uses16S rDNA normalization.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>SchT native reference</td>
+  <td>is the native reference inferred for the product encoded at the locus measured by</td>
+  <td>calT transcription (regulatory model)</td>
+  <td>Grounding the gene product does not turn the RNA readout into protein abundance or prove the annotated transporter substrate.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/AAC.01130-10<br>DOI:10.3389/fmicb.2017.02371<br>https://www.uniprot.org/uniprotkb/F8QZR8/entry<br>https://www.ncbi.nlm.nih.gov/protein/AEH42488.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/AAC.01130-10</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Table3 assigns calT a 749-aa product. Its ordered HM452329 locus, length and compatible annotation support the inferred alias SchT.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2017.02371</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The 2017 study cites HM452329 and NRRL3882, targeting the calR3/calT neighborhood. Ordered loci and the 2011 length assignments support cal/Sch aliases. Held primer/figure details do not establish complete mutant, probe or recombinant construct sequences.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/F8QZR8/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Directly resolved unreviewed entry version25, sequence version1; SchT,749aa. Species taxon1969 retains the NRRL3882 nucleotide-reference strain attribution and HM452329/AEH42488.1 cross-reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AEH42488.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>AEH42488.1,complement(HM452329.1:40840..43089); native NRRL3882,taxon1079985. Native DNA/code11/CDS, independent GenPept and current direct UniProt sequences agree. Product text is a deposited annotation.</dd><dt>snippet</dt><dd>transmembrane transport protein</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>SchT native reference</td>
+  <td>was proposed to export</td>
+  <td>calcimycin (A23187)</td>
+  <td>Explicit hypothesis, not measured flux, directionality, substrate specificity, energetic coupling or self-resistance. Whole-strain extracellular/intracellular yields do not isolate CalT activity; the Methods/Results medium descriptions differ, so no quantitative partition ratio is imported. No ligand-affinity, allostery or cezomycin chemistry claim is adopted.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fmicb.2017.02371</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fmicb.2017.02371</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Discussion proposes CalT-mediated export from transporter-family similarity and indirect calR3-disruption/transcript/partitioning observations. No direct CalT transport experiment is described.</dd><dt>snippet</dt><dd>CalT may be involved in expulsion of calcimycin</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
 
-<h2>Open questions <span class="tag">3</span></h2>
+<h2>Open questions <span class="tag">5</span></h2>
 <div class="note"><p><strong>curator-calcimycin-reference-and-experiment-boundaries</strong> — Can exact experimental sequences and individual protein functions resolve the remaining calcimycin reference, locus and construct boundaries?</p></div>
 <div class="note"><p><strong>curator-calcimycin-pks-prediction-boundaries</strong> — Which direct experiments establish starter transfer, module specificity and ordered handoffs for the proposed calcimycin carrier-PKS assembly?</p></div>
 <div class="note"><p><strong>curator-calcimycin-precursor-prediction-boundaries</strong> — Do sequence-verified CalB3 and CalB4 catalyze the proposed precursor reactions in vivo and in vitro?</p></div>
+<div class="note"><p><strong>curator-calcimycin-calm-construct-and-chemical-scope</strong> — Can the complete CalM construct and substrate/product spectra independently resolve the remaining assay boundaries?</p></div>
+<div class="note"><p><strong>curator-calcimycin-regulatory-assay-and-export-boundaries</strong> — Which construct, probe, RT-qPCR amplicon and direct transport data test the CalR3/CalT regulatory model?</p></div>
 
 <h2>Provenance</h2>
 <div class="scroll"><table>
