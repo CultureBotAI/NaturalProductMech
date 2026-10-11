@@ -103,6 +103,210 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: calcimycin-caln1-calb2-locus-disruption
+  scope: BIOSYNTHESIS
+  nodes:
+  - node_id: caln1_reference
+    label: SchN1 native reference
+    node_type: PROTEIN
+    identifier: UniProtKB:F8QZR3
+    grounding_status: GROUNDED
+  - node_id: caln1_locus
+    label: calN1 (paper locus)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: wql2
+    label: WQL2 calN1::neo disruption
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: calb2_reference
+    label: SchB2 native reference
+    node_type: PROTEIN
+    identifier: UniProtKB:F8QZR0
+    grounding_status: GROUNDED
+  - node_id: calb2_locus
+    label: calB2 (paper locus)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: wql4
+    label: WQL4 calB2::neo disruption
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: calcimycin
+    label: calcimycin (A23187)
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-18de581c96
+    grounding_status: GROUNDED
+  edges:
+  - subject: caln1_reference
+    predicate: is the native reference inferred for the product of
+    object: caln1_locus
+    evidence:
+    - reference: DOI:10.1128/AAC.01130-10
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Table 3 assigns calN1 a 379-aa product. The study deposits HM452329;
+        its ordered gene position, compatible name, length and putative function map
+        to SchN1. This alias mapping does not independently sequence the experimentally
+        disrupted strain.
+    - reference: UniProtKB:F8QZR3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Directly resolved unreviewed entry version 36, sequence version 1; SchN1,
+        379 aa. The HM452329 cross-reference names AEH42483.1. UniProt uses species
+        taxon 1969; its nucleotide-sequence citation identifies strain NRRL 3882.
+        No ortholog substituted.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AEH42483.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: acyl-CoA dehydrogenase
+      notes: AEH42483.1 is encoded by HM452329.1:32036..33175; native Streptomyces
+        chartreusis NRRL 3882, taxon 1079985. Native DNA/code-11 translation, deposited
+        CDS, separately retrieved GenPept and UniProt sequences agree exactly. Deposited
+        product text is an annotation, not a direct substrate-specific catalytic experiment.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/HM452329.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Versioned native cluster sequence supporting the reference identity and
+        gene order.
+    notes: The grounded node denotes the native reference protein. The paper locus
+      remains separate; inferred alias correspondence is not an exact assayed-protein
+      sequence claim.
+  - subject: caln1_locus
+    predicate: was internally replaced with neo in
+    object: wql2
+    evidence:
+    - reference: DOI:10.1128/AAC.01130-10
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: Methods and Figure 5 describe WQL2 from native NRRL 3882 using pJTU3175,
+        double-crossover internal replacement and flanking-PCR confirmation. This
+        was a resistance-cassette insertion, not a scarless deletion.
+    notes: The mutation concerns the encoding locus and could affect neighboring expression;
+      it is not a selective perturbation of purified protein activity.
+  - subject: wql2
+    predicate: abolished detectable production of
+    object: calcimycin
+    evidence:
+    - reference: DOI:10.1128/AAC.01130-10
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: Figure 6 compares WQL2 with native NRRL 3882 and a calcimycin standard.
+        Methods describe SFM cultivation at 30 C for 6-10 days, methanol extraction
+        and HPLC/MS; the displayed chromatograms use UV detection at 280 nm. The calcimycin
+        peak is absent in the mutant under these conditions; no detection limit is
+        supplied.
+      snippet: deletion of each of these three genes abolished the production of calcimycin
+    notes: This is a whole-strain production phenotype, not purified-enzyme catalysis,
+      sufficiency or proof that polar effects are excluded. The inspected study complements
+      calN2 in WQL5, not this locus. Figure 1 identifies calcimycin as compound 1
+      (R1=NHCH3), distinct from cezomycin (R1=H). No cezomycin phenotype is adopted
+      here.
+  - subject: calb2_reference
+    predicate: is the native reference inferred for the product of
+    object: calb2_locus
+    evidence:
+    - reference: DOI:10.1128/AAC.01130-10
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Table 3 assigns calB2 a 226-aa product. The study deposits HM452329;
+        its ordered gene position, compatible name, length and putative function map
+        to SchB2. This alias mapping does not independently sequence the experimentally
+        disrupted strain.
+    - reference: UniProtKB:F8QZR0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Directly resolved unreviewed entry version 29, sequence version 1; SchB2,
+        226 aa. The HM452329 cross-reference names AEH42480.1. UniProt uses species
+        taxon 1969; its nucleotide-sequence citation identifies strain NRRL 3882.
+        No ortholog substituted.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AEH42480.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: isochorismatase
+      notes: AEH42480.1 is encoded by complement(HM452329.1:28948..29628); native
+        Streptomyces chartreusis NRRL 3882, taxon 1079985. Native DNA/code-11 translation,
+        deposited CDS, separately retrieved GenPept and UniProt sequences agree exactly.
+        Deposited product text is an annotation, not a direct substrate-specific catalytic
+        experiment.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/HM452329.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Versioned native cluster sequence supporting the reference identity and
+        gene order.
+    notes: The grounded node denotes the native reference protein. The paper locus
+      remains separate; inferred alias correspondence is not an exact assayed-protein
+      sequence claim.
+  - subject: calb2_locus
+    predicate: was internally replaced with neo in
+    object: wql4
+    evidence:
+    - reference: DOI:10.1128/AAC.01130-10
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: Methods and Figure 5 describe WQL4 from native NRRL 3882 using pJTU3178,
+        double-crossover internal replacement and flanking-PCR confirmation. This
+        was a resistance-cassette insertion, not a scarless deletion.
+    notes: The mutation concerns the encoding locus and could affect neighboring expression;
+      it is not a selective perturbation of purified protein activity.
+  - subject: wql4
+    predicate: abolished detectable production of
+    object: calcimycin
+    evidence:
+    - reference: DOI:10.1128/AAC.01130-10
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: Figure 6 compares WQL4 with native NRRL 3882 and a calcimycin standard.
+        Methods describe SFM cultivation at 30 C for 6-10 days, methanol extraction
+        and HPLC/MS; the displayed chromatograms use UV detection at 280 nm. The calcimycin
+        peak is absent in the mutant under these conditions; no detection limit is
+        supplied.
+    notes: This is a whole-strain production phenotype, not purified-enzyme catalysis,
+      sufficiency or proof that polar effects are excluded. The inspected study complements
+      calN2 in WQL5, not this locus. Figure 1 identifies calcimycin as compound 1
+      (R1=NHCH3), distinct from cezomycin (R1=H). No cezomycin phenotype is adopted
+      here.
+  description: Two sequence-verified native protein references, SchN1 and SchB2, are
+    linked by explicit alias inferences to the 2011 calN1 and calB2 loci. Separate
+    experimental edges describe internal neo-cassette replacement and loss of detectable
+    calcimycin production in WQL2 and WQL4. These are whole-strain genetic effects,
+    not direct enzyme reactions or proof against polar effects. No physical complex,
+    CalN2 rescue transfer, CalA3 function or CalR3/CalT regulatory mechanism is asserted.
+discussions:
+- discussion_id: curator-calcimycin-reference-and-experiment-boundaries
+  kind: CURATION_TODO
+  status: OPEN
+  posed_by: codex
+  posed_date: '2026-10-11'
+  attaches_to:
+  - causal_graphs#calcimycin-caln1-calb2-locus-disruption
+  prompt: Can exact experimental sequences and individual protein functions resolve
+    the remaining calcimycin reference, locus and construct boundaries?
+  rationale: Native reference identity is secure, but the paper-to-deposit aliases
+    remain explicit inferences and the calN1/calB2 disruptions do not exclude polar
+    effects. Do not transfer the calN2 complementation result to these two loci.
+  evidence:
+  - reference: DOI:10.1128/AAC.01130-10
+    supports: PARTIAL
+    evidence_source: Inspected 2011 primary study
+    explanation: Methods, Table 3 and Figures 1, 4-6 distinguish chemical forms, native
+      gene assignments, cassette-disruption phenotypes and the calN2-only rescue.
+      Table 3 lists CalN2 as 495 aa and CalB1 as 534 aa; the deposit gives 494 and
+      535 aa, respectively. Neither mismatch is silently repaired.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/HM452329.1
+    supports: PARTIAL
+    evidence_source: Native NRRL 3882 sequence deposit
+    explanation: DNA, CDS, GenPept and UniProt agree for SchN1/SchB2; other source
+      annotations and later assayed constructs still need claim-specific review.
+  notes: No catalytic pathway step or molecular target added. CalN2/CalB1 length discrepancies
+    are retained for follow-up. The 2023 CalA3 paper DOI:10.1038/s41467-023-36989-w
+    was only partly accessible; a residue label beyond the 1618-aa native SchA3 reference
+    requires construct resolution. The 2017 CalR3 paper DOI:10.3389/fmicb.2017.02371
+    was read from previously retrieved XML, but its figures and primer supplement
+    remain uninspected after a browser challenge. Its proposed CalT export and small-molecule
+    interpretations are not adopted. Preserve source-owned grades, chemical identity,
+    natural origin and SEEDED status.
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
   curator: seed_from_sources
@@ -112,3 +316,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-11T10:15:29Z'
+  curator: codex
+  action: ADDED_CALCIMYCIN_NATIVE_PROTEIN_KNOCKOUT_CONTEXTS
+  changes: Added two sequence-verified native UniProt references with explicit inferred
+    paper-locus aliases and separate cassette-disruption production phenotypes, DOI/stable-URL
+    evidence and short snippets. Preserved source-owned fields and SEEDED status;
+    recorded length discrepancies, construct gaps and polar-effect limitations. No
+    direct enzyme reaction or regulatory mechanism asserted.
+  llm_assisted: true
