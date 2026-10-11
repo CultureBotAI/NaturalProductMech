@@ -240,6 +240,57 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-9df9a39704
 grounding_status: EXACT
 curation_status: SEEDED
+discussions:
+- discussion_id: shared-structure
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001118, BGC0001886.
+    Confirm they describe the same compound rather than an upstream cross-reference
+    error.'
+- discussion_id: curator-endocrocin-enc-reference-and-experimental-limits
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: Which experimental strains and native reactions support the Enc associations
+    and the imported Af293 producer grade?
+  rationale: Native Af293 sequences and their placement in BGC0001118 are verified,
+    but database genetic annotations do not by themselves establish the experimental
+    allele, source-strain attribution or exact catalytic mechanism.
+  notes: EncA/Q4W944, EncB/Q4W945, EncC/A4DA85 and EncD/Q4W946 match complete spliced
+    contig CDSs, deposited translations, GenPept and UniProt, with an independently
+    checked reverse-complement chromosome mapping. EncD uses EAL84395.2 and UniProt
+    sequence version 2, not an older sequence. The new graph is explicitly DATABASE_ASSERTION
+    plus reference-identity CURATOR_INFERENCE, with no newly inspected PRIMARY_EXPERIMENT
+    evidence. Previously inspected PubMed metadata for PMID:22492455 labels a CEA17
+    delta-nkuB background; this is not equated with the native Af293 references or
+    a complete allele determination. The 2012 article DOI:10.1128/AEM.07710-11 encountered
+    a browser challenge, the 2013 DOI:10.1371/journal.ppat.1003289 publisher link
+    was inaccessible, and the 2016 DOI:10.1111/1462-2920.13007 metadata request was
+    rate-limited; no alternate retrieval was attempted. Their citations within UniProt
+    remain database evidence. EncA reaction stoichiometry carries ECO:0000305; EncB
+    reaction chemistry is transferred by similarity from Q0CCY4; EncD exact chemistry
+    is unresolved. Neither a shared pathway paragraph nor a deletion phenotype establishes
+    every catalytic step. Distinct Tpc and regulatory-protein query hits are not adopted
+    without their own scope and identity audits. The Claviceps purpurea 20.1 BGC0001886
+    evidence is not merged into the Af293 graph, and the original shared-structure
+    discussion remains open and unchanged. No antimicrobial or immunosuppressive protein
+    target is inferred from phenotype screening. Source-owned fields, source grades,
+    prior history and SEEDED status are preserved; this curation is not a full-record
+    REVIEWED sign-off.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/Q4W944/entry
+    evidence_source: Reviewed UniProtKB database annotation, retrieved 2026-10-11
+    notes: Genetic association and reference/citation context, not newly inspected
+      full primary methods.
+  - reference: https://www.uniprot.org/uniprotkb/Q4W945/entry
+    evidence_source: Reviewed UniProtKB database annotation, retrieved 2026-10-11
+    notes: Specific reaction transferred by similarity; not adopted as independently
+      demonstrated native chemistry.
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/160483
+    evidence_source: PubChem and independent RDKit representation audit, retrieved
+      2026-10-11
+    notes: Neutral C16H10O7; SMILES, InChI and InChIKey agree, with no stereocenters.
+      Representation consistency does not resolve experimental strain or the shared-structure
+      question.
 causal_graphs:
 - graph_id: endocrocin-enc-reference-genetics
   scope: BIOSYNTHESIS
@@ -462,57 +513,6 @@ causal_graphs:
         in every mutant. The stored endocrocin structure agrees with PubChem CID 160483
         and an independent RDKit representation check. Atrochrysone derivatives, anthrones
         and trypacidin are not equated with this exact owner.
-discussions:
-- discussion_id: shared-structure
-  kind: CURATION_TODO
-  status: OPEN
-  prompt: 'This structure is reported by more than one MIBiG entry: BGC0001118, BGC0001886.
-    Confirm they describe the same compound rather than an upstream cross-reference
-    error.'
-- discussion_id: curator-endocrocin-enc-reference-and-experimental-limits
-  kind: CURATION_TODO
-  status: OPEN
-  prompt: Which experimental strains and native reactions support the Enc associations
-    and the imported Af293 producer grade?
-  rationale: Native Af293 sequences and their placement in BGC0001118 are verified,
-    but database genetic annotations do not by themselves establish the experimental
-    allele, source-strain attribution or exact catalytic mechanism.
-  notes: EncA/Q4W944, EncB/Q4W945, EncC/A4DA85 and EncD/Q4W946 match complete spliced
-    contig CDSs, deposited translations, GenPept and UniProt, with an independently
-    checked reverse-complement chromosome mapping. EncD uses EAL84395.2 and UniProt
-    sequence version 2, not an older sequence. The new graph is explicitly DATABASE_ASSERTION
-    plus reference-identity CURATOR_INFERENCE, with no newly inspected PRIMARY_EXPERIMENT
-    evidence. Previously inspected PubMed metadata for PMID:22492455 labels a CEA17
-    delta-nkuB background; this is not equated with the native Af293 references or
-    a complete allele determination. The 2012 article DOI:10.1128/AEM.07710-11 encountered
-    a browser challenge, the 2013 DOI:10.1371/journal.ppat.1003289 publisher link
-    was inaccessible, and the 2016 DOI:10.1111/1462-2920.13007 metadata request was
-    rate-limited; no alternate retrieval was attempted. Their citations within UniProt
-    remain database evidence. EncA reaction stoichiometry carries ECO:0000305; EncB
-    reaction chemistry is transferred by similarity from Q0CCY4; EncD exact chemistry
-    is unresolved. Neither a shared pathway paragraph nor a deletion phenotype establishes
-    every catalytic step. Distinct Tpc and regulatory-protein query hits are not adopted
-    without their own scope and identity audits. The Claviceps purpurea 20.1 BGC0001886
-    evidence is not merged into the Af293 graph, and the original shared-structure
-    discussion remains open and unchanged. No antimicrobial or immunosuppressive protein
-    target is inferred from phenotype screening. Source-owned fields, source grades,
-    prior history and SEEDED status are preserved; this curation is not a full-record
-    REVIEWED sign-off.
-  evidence:
-  - reference: https://www.uniprot.org/uniprotkb/Q4W944/entry
-    evidence_source: Reviewed UniProtKB database annotation, retrieved 2026-10-11
-    notes: Genetic association and reference/citation context, not newly inspected
-      full primary methods.
-  - reference: https://www.uniprot.org/uniprotkb/Q4W945/entry
-    evidence_source: Reviewed UniProtKB database annotation, retrieved 2026-10-11
-    notes: Specific reaction transferred by similarity; not adopted as independently
-      demonstrated native chemistry.
-  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/160483
-    evidence_source: PubChem and independent RDKit representation audit, retrieved
-      2026-10-11
-    notes: Neutral C16H10O7; SMILES, InChI and InChIKey agree, with no stereocenters.
-      Representation consistency does not resolve experimental strain or the shared-structure
-      question.
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
   curator: seed_from_sources
@@ -530,4 +530,11 @@ curation_history:
     snippets. Distinguish reference identity from experimental alleles, direct reactions
     and universal pathway requirements. Preserve source-owned fields, grades, shared-structure
     discussion and SEEDED status.
+  llm_assisted: true
+- timestamp: '2026-10-11T21:10:28Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: 'Resolve issue #832: preserve the seeded discussion section before the
+    new causal graph, matching seeder emission order. No biological claim or prior
+    history changed.'
   llm_assisted: true
