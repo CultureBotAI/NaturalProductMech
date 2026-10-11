@@ -3,11 +3,12 @@ standard_inchi_key: KMZYINVXZDQCKC-UHFFFAOYSA-N
 graph:
   graph_id: trypacidin-native-catalytic-references
   scope: BIOSYNTHESIS
-  description: 'Catalytic chemistry component. Across this owner''s two components:
-    Sequence-verified native Af293 references with explicitly database-level trypacidin
-    roles, not verified experimental alleles. Ten enzyme annotations and two regulators
-    are represented. TpcB/G/I catalytic roles remain similarity-derived. Named intermediates
-    are not exact chemical-species groundings or balanced equations. No atrochrysone-to-emodin-anthrone
+  description: 'Partial catalytic chemistry component; the atrochrysone-to-emodin-anthrone
+    connector is intentionally omitted. Across this owner''s two components: Sequence-verified
+    native Af293 references with explicitly database-level trypacidin roles, not verified
+    experimental alleles. Ten enzyme annotations and two regulators are represented.
+    TpcB/G/I catalytic roles remain similarity-derived. Named intermediates are not
+    exact chemical-species groundings or balanced equations. No atrochrysone-to-emodin-anthrone
     connector is asserted, so this is not a complete reconstituted pathway. The database
     spelling monomethylsulfochrin and the product''s unspecified stereochemistry remain
     unresolved. Genetic loss and impairment are distinguished; no direct promoter
@@ -862,4 +863,12 @@ curation_history:
     new evidence-backed component from base 28af2dbe1f329e1b41ee706722239925914c834a.
     Native references and database annotations only; no experimental allele or producer-grade
     upgrade.
+  llm_assisted: true
+- timestamp: '2026-10-11T22:58:29Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: 'Address PR834 review finding: explicitly declare the catalytic component
+    a partial view with the atrochrysone-to-emodin-anthrone connector intentionally
+    omitted. Preserve every node, edge and evidence item; do not invent a reaction
+    or weaken the corpus gate.'
   llm_assisted: true
