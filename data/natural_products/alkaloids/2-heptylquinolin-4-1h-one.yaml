@@ -171,6 +171,169 @@ grounding_notes: 'This structure matches more than one 3-star ChEBI entry: CHEBI
   share an InChIKey — so the identity is not picked here. A curator decides which
   term this record is.'
 curation_status: SEEDED
+causal_graphs:
+- graph_id: pqsbc-pao1-net-hhq-formation
+  scope: BIOSYNTHESIS
+  description: PAO1 PqsB/PqsC native references, their co-purified complex and net
+    HHQ formation. Protein references are distinguished from expression constructs.
+    The graph does not assign independent PqsB catalysis or enzyme-catalyzed ring
+    closure, and does not curate antimicrobial targets.
+  nodes:
+  - node_id: pqsb
+    label: 2-heptyl-4(1H)-quinolone synthase subunit PqsB
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9I4X2
+  - node_id: pqsc
+    label: 2-heptyl-4(1H)-quinolone synthase subunit PqsC
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9I4X1
+  - node_id: pqsbc
+    label: PqsBC complex from Pseudomonas aeruginosa PAO1
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: aba
+    label: 2-Aminobenzoylacetate (2-ABA, assay substrate)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: octanoyl_coa
+    label: Octanoyl-CoA (assay substrate)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: net_conversion
+    label: PqsBC-dependent net conversion to HHQ
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hhq
+    label: 2-heptylquinolin-4(1H)-one
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: naturalproductmech:mibig-182e475a70
+  edges:
+  - subject: pqsb
+    predicate: is_subunit_of
+    object: pqsbc
+    notes: Subunit association in the PAO1-derived preparation; not independent subunit
+      catalysis or a physiological stoichiometry claim.
+    evidence:
+    - reference: DOI:10.1074/jbc.M115.708453
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: Co-purification and gel filtration support association; structural analysis
+        used PqsC C129A.
+      snippet: form a tight complex
+    - reference: https://www.uniprot.org/uniprotkb/Q9I4X2/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed PAO1 entry version 108; PA0997, 283 aa, linked GenPept AAG04386.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAG04386.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Native reference chosen after exact CDS translation, GenPept and UniProt
+        comparison; accession does not denote the tagged assay construct.
+    - reference: https://doi.org/10.2210/pdb5DWZ/pdb
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: PqsB deposited sequence matches its 283-aa native reference. PqsC has
+        SAG plus native residues 2-348 with C129A. Several residues are unmodeled.
+        The mmCIF has older A0A accession mappings and tetrameric assemblies; neither
+        is silently substituted for the audited native references or physiological
+        oligomerization.
+  - subject: pqsc
+    predicate: is_subunit_of
+    object: pqsbc
+    notes: Subunit association in the PAO1-derived preparation; not independent subunit
+      catalysis or a physiological stoichiometry claim.
+    evidence:
+    - reference: DOI:10.1074/jbc.M115.708453
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: Co-purification and gel filtration support association; structural analysis
+        used PqsC C129A.
+      snippet: form a tight complex
+    - reference: https://www.uniprot.org/uniprotkb/Q9I4X1/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed PAO1 entry version 132; PA0998, 348 aa, linked GenPept AAG04387.1.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAG04387.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Native reference chosen after exact CDS translation, GenPept and UniProt
+        comparison; accession does not denote the tagged assay construct.
+    - reference: https://doi.org/10.2210/pdb5DWZ/pdb
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: PqsB deposited sequence matches its 283-aa native reference. PqsC has
+        SAG plus native residues 2-348 with C129A. Several residues are unmodeled.
+        The mmCIF has older A0A accession mappings and tetrameric assemblies; neither
+        is silently substituted for the audited native references or physiological
+        oligomerization.
+  - subject: pqsbc
+    predicate: supports_net_conversion
+    object: net_conversion
+    notes: Wild-type-derived preparation assayed with both substrates at 25 C in HEPES
+      pH 8.2; not the crystallized C129A variant.
+    evidence:
+    - reference: DOI:10.1074/jbc.M115.708453
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: HPLC product quantification and spectroscopic turnover assays; PqsC was
+        expressed with an N-terminal His8/TEV/linker fusion and purified with tag-cleavage
+        steps.
+  - subject: aba
+    predicate: is_substrate_in
+    object: net_conversion
+    evidence:
+    - reference: DOI:10.1074/jbc.M115.708453
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: 2-ABA was supplied with octanoyl-CoA in the purified-complex assay.
+  - subject: octanoyl_coa
+    predicate: is_substrate_in
+    object: net_conversion
+    evidence:
+    - reference: DOI:10.1074/jbc.M115.708453
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: Octanoyl-CoA was supplied with 2-ABA in the purified-complex assay.
+  - subject: net_conversion
+    predicate: yields_detected_product
+    object: hhq
+    notes: Net assay outcome only. Condensation followed by ring closure is not proof
+      that both occur within the enzyme active site.
+    evidence:
+    - reference: DOI:10.1074/jbc.M115.708453
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: HHQ was measured as product; no rate, yield or physiological sufficiency
+        is generalized here.
+      snippet: quantification of HHQ by HPLC
+discussions:
+- discussion_id: curator-pqsbc-construct-and-reaction-boundaries
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: What remains unresolved beyond the PqsBC net HHQ formation assay?
+  rationale: Accession nodes are native PAO1 references, not full expression-plasmid
+    sequences. The crystal contains C129A and an altered PqsC N-terminus. The paper
+    interprets a heterodimer, whereas current deposition assemblies are tetrameric;
+    physiological stoichiometry is not settled here. The elementary ring-closing step
+    remains unassigned. No PqsA/PqsD/PqsE/PqsH, mutant kinetic, downstream signalling
+    or antimicrobial target claim is imported from background citations.
+  notes: Main text, methods, tables and captions were inspected; figure pixels and
+    the supplementary movie were not. Source-owned producer grades, origin and ontology
+    grounding are unchanged. Owner SMILES/InChI/key agree under RDKit 2026.03.5. The
+    pinned CHEBI:62219 SMILES fails parsing and was excluded from identity proof.
+    The valid CHEBI:75306 hydroxy tautomer shares the owner StandardInChIKey, which
+    does not adjudicate the existing ChEBI ambiguity.
+  evidence:
+  - reference: DOI:10.1074/jbc.M115.708453
+    evidence_source: Primary article, main text read on 2026-10-11
+    notes: Discussion leaves the final cyclization mechanism unresolved.
+    snippet: ring closure could also occur non-enzymatically
+  - reference: https://doi.org/10.2210/pdb5DWZ/pdb
+    evidence_source: PDB database, retrieved 2026-10-11
+    notes: Construct, chain coverage and assembly metadata inspected independently.
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
   curator: seed_from_sources
@@ -180,3 +343,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-11T14:56:27Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add an evidence-backed PqsBC biosynthesis graph with two native PAO1 protein
+    references, complex association and net HHQ assay output. Preserve construct,
+    cyclization, oligomerization and chemical-source caveats; leave source-owned fields
+    and SEEDED status unchanged.
+  llm_assisted: true

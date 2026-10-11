@@ -115,6 +115,72 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
+<p class="sub">PAO1 PqsB/PqsC native references, their co-purified complex and net HHQ formation. Protein references are distinguished from expression constructs. The graph does not assign independent PqsB catalysis or enzyme-catalyzed ring closure, and does not curate antimicrobial targets.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>2-heptyl-4(1H)-quinolone synthase subunit PqsB</td>
+  <td>is_subunit_of</td>
+  <td>PqsBC complex from Pseudomonas aeruginosa PAO1</td>
+  <td>Subunit association in the PAO1-derived preparation; not independent subunit catalysis or a physiological stoichiometry claim.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1074/jbc.M115.708453<br>https://www.uniprot.org/uniprotkb/Q9I4X2/entry<br>https://www.ncbi.nlm.nih.gov/protein/AAG04386.1<br>https://doi.org/10.2210/pdb5DWZ/pdb</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1074/jbc.M115.708453</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Co-purification and gel filtration support association; structural analysis used PqsC C129A.</dd><dt>snippet</dt><dd>form a tight complex</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9I4X2/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed PAO1 entry version 108; PA0997, 283 aa, linked GenPept AAG04386.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAG04386.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native reference chosen after exact CDS translation, GenPept and UniProt comparison; accession does not denote the tagged assay construct.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://doi.org/10.2210/pdb5DWZ/pdb</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>PqsB deposited sequence matches its 283-aa native reference. PqsC has SAG plus native residues 2-348 with C129A. Several residues are unmodeled. The mmCIF has older A0A accession mappings and tetrameric assemblies; neither is silently substituted for the audited native references or physiological oligomerization.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>2-heptyl-4(1H)-quinolone synthase subunit PqsC</td>
+  <td>is_subunit_of</td>
+  <td>PqsBC complex from Pseudomonas aeruginosa PAO1</td>
+  <td>Subunit association in the PAO1-derived preparation; not independent subunit catalysis or a physiological stoichiometry claim.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1074/jbc.M115.708453<br>https://www.uniprot.org/uniprotkb/Q9I4X1/entry<br>https://www.ncbi.nlm.nih.gov/protein/AAG04387.1<br>https://doi.org/10.2210/pdb5DWZ/pdb</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1074/jbc.M115.708453</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Co-purification and gel filtration support association; structural analysis used PqsC C129A.</dd><dt>snippet</dt><dd>form a tight complex</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9I4X1/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed PAO1 entry version 132; PA0998, 348 aa, linked GenPept AAG04387.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAG04387.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native reference chosen after exact CDS translation, GenPept and UniProt comparison; accession does not denote the tagged assay construct.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://doi.org/10.2210/pdb5DWZ/pdb</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>PqsB deposited sequence matches its 283-aa native reference. PqsC has SAG plus native residues 2-348 with C129A. Several residues are unmodeled. The mmCIF has older A0A accession mappings and tetrameric assemblies; neither is silently substituted for the audited native references or physiological oligomerization.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>PqsBC complex from Pseudomonas aeruginosa PAO1</td>
+  <td>supports_net_conversion</td>
+  <td>PqsBC-dependent net conversion to HHQ</td>
+  <td>Wild-type-derived preparation assayed with both substrates at 25 C in HEPES pH 8.2; not the crystallized C129A variant.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1074/jbc.M115.708453</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1074/jbc.M115.708453</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>HPLC product quantification and spectroscopic turnover assays; PqsC was expressed with an N-terminal His8/TEV/linker fusion and purified with tag-cleavage steps.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>2-Aminobenzoylacetate (2-ABA, assay substrate)</td>
+  <td>is_substrate_in</td>
+  <td>PqsBC-dependent net conversion to HHQ</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1074/jbc.M115.708453</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1074/jbc.M115.708453</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>2-ABA was supplied with octanoyl-CoA in the purified-complex assay.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Octanoyl-CoA (assay substrate)</td>
+  <td>is_substrate_in</td>
+  <td>PqsBC-dependent net conversion to HHQ</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1074/jbc.M115.708453</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1074/jbc.M115.708453</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Octanoyl-CoA was supplied with 2-ABA in the purified-complex assay.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>PqsBC-dependent net conversion to HHQ</td>
+  <td>yields_detected_product</td>
+  <td>2-heptylquinolin-4(1H)-one</td>
+  <td>Net assay outcome only. Condensation followed by ring closure is not proof that both occur within the enzyme active site.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1074/jbc.M115.708453</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1074/jbc.M115.708453</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>HHQ was measured as product; no rate, yield or physiological sufficiency is generalized here.</dd><dt>snippet</dt><dd>quantification of HHQ by HPLC</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
@@ -123,6 +189,8 @@ isolation report left it.</p>
 <li>AntibioticMech — <a class="mono" href="https://culturebotai.github.io/AntibioticMech/pages/antibacterial/2-heptyl-4-hydroxyquinoline.html">CHEBI:75306</a>    (same structure, same inchikey)</li>
 </ul>
 
+<h2>Open questions <span class="tag">1</span></h2>
+<div class="note"><p><strong>curator-pqsbc-construct-and-reaction-boundaries</strong> — What remains unresolved beyond the PqsBC net HHQ formation assay?</p></div>
 
 <h2>Provenance</h2>
 <div class="scroll"><table>
