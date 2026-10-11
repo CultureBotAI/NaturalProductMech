@@ -135,6 +135,162 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-879c6cbc30
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: aurachin-c-auagh-annotated-downstream-conversion
+  scope: BIOSYNTHESIS
+  description: Database-annotated biosynthetic consumption of aurachin C toward the
+    distinct downstream congener aurachin B by native Sg a15 AuaG/H references. This
+    is not a pathway that forms aurachin C. AuaG net oxidation/rearrangement, AuaH
+    reduction and subsequent spontaneous dehydration are distinguished. Transient
+    epoxide/rearrangement steps, cofactors and byproducts are not separately drawn;
+    this is not a balanced reaction or a stable protein-complex claim. These proteins
+    are not assigned to the source-imported Streptomyces BGC0002591 or its KY810820.1
+    sequence.
+  nodes:
+  - node_id: aurachin_c
+    label: Aurachin C
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:90888
+  - node_id: auag
+    label: AuaG (Sg a15 native reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:H1ZZA4
+  - node_id: ketone
+    label: Aurachin rearrangement ketone
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: auah
+    label: AuaH (Sg a15 native reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:H1ZZB0
+  - node_id: diol
+    label: Reduced aurachin rearrangement intermediate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: aurachin_b
+    label: Aurachin B
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: aurachin_c
+    predicate: is_annotated_substrate_of
+    object: auag
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/H1ZZA4/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: The annotated substrate is aurachin C, also cross-referenced as CHEBI:90888
+        in the UniProt reaction. FAD, oxygen and NAD(P)H support the annotated oxidation;
+        NADH is preferred. Reviewed UniProtKB entry version 36, sequence version 1;
+        adopted annotation, not an independently inspected primary experiment. UniProt
+        cites DOI:10.1002/anie.201204138 for function.
+      snippet: Catalyzes the initial step in the conversion of aurachin C to aurachin
+        B
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CCD27744.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: 'Native Sg a15 reference: auaG, 383 aa, HE580420.1:3328..4479, strand
+        1. CDS-aware genomic translation, deposited translation, GenPept and UniProt
+        sequences agree exactly without ambiguous residues. GenBank/GenPept name Allostigmatella
+        aurantiaca Sg a15 (NCBITaxon:675526); UniProt names Stigmatella aurantiaca
+        (NCBITaxon:41) and explicitly gives strain Sg a15. Identity rests on sequence
+        and accession/strain links, not taxonomy-label equality. The native reference
+        does not establish the tagged or mutated experimental construct.'
+  - subject: auag
+    predicate: is_annotated_to_produce
+    object: ketone
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/H1ZZA4/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: The annotated net product is 4-hydroxy-2-methyl-3-oxo-4-[(2E,6E)-farnesyl]-3,4-dihydroquinoline
+        1-oxide. The annotation describes epoxidation and semipinacol rearrangement
+        with C3-to-C4 farnesyl migration. No separately trapped intermediate or newly
+        assigned stereochemistry is claimed. Reviewed UniProtKB entry version 36,
+        sequence version 1; adopted annotation, not an independently inspected primary
+        experiment. UniProt cites DOI:10.1002/anie.201204138 for function.
+  - subject: ketone
+    predicate: is_annotated_substrate_of
+    object: auah
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/H1ZZB0/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: AuaH reduces the rearranged ketone in the C-to-B conversion. Both NADH
+        and NADPH are annotated donors, with preference for NADH. The reaction is
+        drawn in the annotated biosynthetic reduction direction, not the reverse direction
+        used to write the database equation. Reviewed UniProtKB entry version 35,
+        sequence version 1; adopted annotation, not an independently inspected primary
+        experiment. UniProt cites DOI:10.1002/anie.201204138 for function.
+      snippet: which then undergoes a spontaneous dehydration to form aurachin B
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CCD27750.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: 'Native Sg a15 reference: auaH, 334 aa, HE580421.1:2606..3610, strand
+        -1. CDS-aware genomic translation, deposited translation, GenPept and UniProt
+        sequences agree exactly without ambiguous residues. GenBank/GenPept name Allostigmatella
+        aurantiaca Sg a15 (NCBITaxon:675526); UniProt names Stigmatella aurantiaca
+        (NCBITaxon:41) and explicitly gives strain Sg a15. Identity rests on sequence
+        and accession/strain links, not taxonomy-label equality. The native reference
+        does not establish the tagged or mutated experimental construct.'
+  - subject: auah
+    predicate: is_annotated_to_produce
+    object: diol
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/H1ZZB0/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: The annotated immediate reduction product is 3,4-dihydroxy-2-methyl-4-[(2E,6E)-farnesyl]-3,4-dihydroquinoline
+        1-oxide. AuaH is not drawn as a dehydration catalyst. Reviewed UniProtKB entry
+        version 35, sequence version 1; adopted annotation, not an independently inspected
+        primary experiment. UniProt cites DOI:10.1002/anie.201204138 for function.
+  - subject: diol
+    predicate: is_annotated_to_spontaneously_dehydrate_to
+    object: aurachin_b
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/H1ZZB0/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: UniProt explicitly annotates spontaneous dehydration of the reduced intermediate
+        to aurachin B. This is a chemical conversion, not an additional AuaH enzymatic
+        step. No new exact identifier or stereochemical assignment is made for the
+        intermediate or aurachin B. Reviewed UniProtKB entry version 35, sequence
+        version 1; adopted annotation, not an independently inspected primary experiment.
+        UniProt cites DOI:10.1002/anie.201204138 for function.
+discussions:
+- discussion_id: curator-aurachin-c-auagh-scope
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: Which independently inspected primary experiments can resolve native constructs
+    and formation of aurachin C, beyond its annotated conversion toward aurachin B?
+  rationale: Both primary article requests were inaccessible; no retry or alternate
+    retrieval was attempted. The graph adopts reviewed UniProt assertions, not independently
+    verified primary methods, figures or supplements.
+  notes: AuaG/H are native Sg a15 references on separate HE580420.1 and HE580421.1
+    loci, not proteins from the imported Streptomyces KY810820.1 cluster. GenBank/GenPept
+    currently use Allostigmatella aurantiaca Sg a15 (675526); UniProt uses Stigmatella
+    aurantiaca (41) with explicit Sg a15 strain references and exact sequence links.
+    No source-owned producer or occurrence taxon is silently equated, replaced or
+    upgraded. No AuaG/H protein complex, knockout phenotype, complete aurachin pathway
+    or antimicrobial target is added. Aurachin C SMILES, InChI and InChIKey agree
+    with PubChem CID6439171 and RDKit; chemical intermediates remain ungrounded. All
+    imported structure, classification, producer/BGC grades, occurrences and AntibioticMech
+    link remain unchanged; status stays SEEDED.
+  evidence:
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/6439171
+    evidence_source: PubChem, retrieved 2026-10-11
+    notes: Official properties match the stored aurachin C structure.
+  - reference: https://doi.org/10.1039/c1mb05328k
+    evidence_source: Access limitation recorded 2026-10-11
+    notes: Initial article open was inaccessible via the web tool (turn1611view0).
+      No retry or alternate article endpoint/copy retrieval.
+  - reference: https://doi.org/10.1002/anie.201204138
+    evidence_source: Access limitation recorded 2026-10-11
+    notes: Initial article open was inaccessible via the web tool (turn1611view1).
+      No retry or alternate article endpoint/copy retrieval.
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
@@ -144,3 +300,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-11T18:36:05Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add native Sg a15 AuaG/H references in a database-annotated five-edge graph
+    for aurachin C consumption toward aurachin B. Separate spontaneous dehydration
+    from AuaH reduction; preserve primary-access, construct, strain and downstream-congener
+    boundaries. All source-owned fields and SEEDED status retained.
+  llm_assisted: true
