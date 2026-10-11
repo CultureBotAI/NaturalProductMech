@@ -103,8 +103,8 @@ derived from a source. This is what the rest of the record exists to support.</p
 </tr>
 </table></div>
 <p class="sub">Step 1: Streptomyces chromofuscus ATCC 49982 Sc-IndC is the exact indigoidine synthase encoded by the MIBiG BGC0000375 indC CDS. The Sc-IndB coexpression effect is represented separately in the Sc-IndC causal graph; it is not assigned this Rhea-grounded synthase reaction or an additional ordered pathway step.</p>
-<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
-<p class="sub">Streptomyces chromofuscus ATCC 49982 Sc-IndC converts L-glutamine to the blue pigment indigoidine. Sc-IndB is represented as the native reference for a conditional yield-enhancing coexpression effect with Sc-IndC in E. coli BAP1, not as an assigned catalytic step.</p><div class="scroll"><table>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">Streptomyces chromofuscus ATCC 49982 Sc-IndC converts L-glutamine to the blue pigment indigoidine. Sc-IndB is represented as the native reference for a conditional yield-enhancing coexpression effect with Sc-IndC in E. coli BAP1, not as an assigned catalytic step. Additional GlnA coexpression is represented as host engineering; the reported BL21(DE3) protein sequence remains unresolved.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>L-glutamine</td>
@@ -140,6 +140,20 @@ derived from a source. This is what the rest of the record exists to support.</p
 </li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AFV27436.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native indB/Sc-indB record: S. chromofuscus ATCC 49982, taxon 42881, 614 residues, coded_by JX499187.1:6835..8679. Its putative-phosphatase product label and HAD/Questin-oxidase-like domain annotations do not establish a measured catalytic function and are not reconciled into a reaction claim.</dd></dl>
 </li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/JX499187.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The complete 1845-nt forward indB CDS, ATG start and TGA stop, independently translates under code 11 to all 614 residues of the deposited translation, AFV27436.1 and K4MZR0. Native-reference identity does not verify expression tags, engineered constructs or historical stock equivalence.</dd></dl>
 </li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000375.5/index.html</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>BGC0000375.5 links JX499187.1 and indB/AFV27436.1 to indigoidine, C10H8N4O4, the existing CHEBI:79296 owner. Compound correspondence is database-grounded; primary chemical-analysis data were not re-inspected. Entry quality is questionable and completeness unknown; no producer or cluster grade is upgraded.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>GlnA (BL21(DE3), sequence unresolved)</td>
+  <td>increases yield of when coexpressed with Sc-IndC</td>
+  <td>indigoidine</td>
+  <td>Reported additional GlnA expression in E. coli BAP1 carrying Sc-IndC, with or without Sc-IndB. This is a host-engineering yield effect, not native cluster membership, an isolated catalytic reaction or direct glutamine-flux measurement. The exact expressed sequence is unresolved; no protein accession is assigned.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1007/s10295-015-1642-5<br>https://www.ncbi.nlm.nih.gov/protein/ACT45548.1<br>https://www.ncbi.nlm.nih.gov/protein/CAQ34221.1<br>https://www.ncbi.nlm.nih.gov/nuccore/CP001509.3<br>https://www.ncbi.nlm.nih.gov/nuccore/AM946981.2<br>https://www.uniprot.org/uniprotkb/C6EF31/entry</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1007/s10295-015-1642-5</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Inspected methods/results identify BL21(DE3) as the glnA donor and pFC6/pFC7 coexpression in BAP1. The reported insert length is 1284 bp. Figure pixels, supplements and remaining text were not inspected after a failed continuation read; no quantitative titer or exact construct-sequence claim is curated.</dd><dt>snippet</dt><dd>overexpression of GlnA in E. coli BAP1 can greatly increase the production of indigoidine.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/ACT45548.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native BL21(DE3) glnA/ECD_03755 reference: 469 residues, coded_by complement(CP001509.3:3963323..3964732). This is a reference record, not an identification of the protein actually expressed in the paper.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/CAQ34221.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Independent BL21(DE3) glnA/B21_03704 reference: 469 residues, coded_by complement(AM946981.2:3963317..3964726). Its historical UniProt C6EF31 cross-reference is not evidence of current UniProt availability or construct equality.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/CP001509.3</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Complete 1410-nt reverse CDS, ATG start/TAA stop, code 11: independent translation matches all 469 residues of ACT45548.1 and CAQ34221.1. The reported primer template segments match both native endpoints. This does not reconcile the paper&#39;s 1284-bp length or prove an experimental stock/insert.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AM946981.2</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The independently deposited complete 1410-nt reverse CDS has identical coding DNA and translation. Agreement between native references does not establish the actual pFC6/pFC7 sequence; the 126-bp length discrepancy remains open.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/C6EF31/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>UniProt release 2026_03 returns C6EF31 as Inactive/DELETED, reason Not part of a reference proteome. It is not used as an active protein identifier. No alternative UniProt exemplar is selected from name similarity.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -181,6 +195,8 @@ by the corpus tests.</p>
 
 
 
+<h2>Open questions <span class="tag">1</span></h2>
+<div class="note"><p><strong>indigoidine-glna-construct-identity</strong> — Which complete GlnA protein sequence was expressed in pFC6/pFC7, and how should the reported 1284-bp fragment be reconciled with the 1410-bp BL21(DE3) references?</p></div>
 
 <h2>Provenance</h2>
 <div class="scroll"><table>

@@ -72,7 +72,7 @@ field coverage (records carrying at least one item):
   molecular_targets                      14
   causal_graphs                         264
   related_records                       210
-  discussions                           326
+  discussions                           327
 
 producer claims: 3407 (808 causal, 162 correlational)
   BGC_CHARACTERIZED                     808

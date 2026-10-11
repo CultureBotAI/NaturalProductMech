@@ -144,7 +144,8 @@ causal_graphs:
   description: Streptomyces chromofuscus ATCC 49982 Sc-IndC converts L-glutamine to
     the blue pigment indigoidine. Sc-IndB is represented as the native reference for
     a conditional yield-enhancing coexpression effect with Sc-IndC in E. coli BAP1,
-    not as an assigned catalytic step.
+    not as an assigned catalytic step. Additional GlnA coexpression is represented
+    as host engineering; the reported BL21(DE3) protein sequence remains unresolved.
   nodes:
   - node_id: l_glutamine
     label: L-glutamine
@@ -166,6 +167,10 @@ causal_graphs:
     node_type: PROTEIN
     identifier: UniProtKB:K4MZR0
     grounding_status: GROUNDED
+  - node_id: glna_bl21_reported
+    label: GlnA (BL21(DE3), sequence unresolved)
+    node_type: PROTEIN
+    grounding_status: REVIEW_NEEDED
   edges:
   - subject: l_glutamine
     predicate: is converted to indigoidine by
@@ -270,6 +275,54 @@ causal_graphs:
         the existing CHEBI:79296 owner. Compound correspondence is database-grounded;
         primary chemical-analysis data were not re-inspected. Entry quality is questionable
         and completeness unknown; no producer or cluster grade is upgraded.
+  - subject: glna_bl21_reported
+    predicate: increases yield of when coexpressed with Sc-IndC
+    object: indigoidine
+    notes: Reported additional GlnA expression in E. coli BAP1 carrying Sc-IndC, with
+      or without Sc-IndB. This is a host-engineering yield effect, not native cluster
+      membership, an isolated catalytic reaction or direct glutamine-flux measurement.
+      The exact expressed sequence is unresolved; no protein accession is assigned.
+    evidence:
+    - reference: DOI:10.1007/s10295-015-1642-5
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: Inspected methods/results identify BL21(DE3) as the glnA donor and pFC6/pFC7
+        coexpression in BAP1. The reported insert length is 1284 bp. Figure pixels,
+        supplements and remaining text were not inspected after a failed continuation
+        read; no quantitative titer or exact construct-sequence claim is curated.
+      snippet: overexpression of GlnA in E. coli BAP1 can greatly increase the production
+        of indigoidine.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ACT45548.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Native BL21(DE3) glnA/ECD_03755 reference: 469 residues, coded_by complement(CP001509.3:3963323..3964732).
+        This is a reference record, not an identification of the protein actually
+        expressed in the paper.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAQ34221.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Independent BL21(DE3) glnA/B21_03704 reference: 469 residues, coded_by
+        complement(AM946981.2:3963317..3964726). Its historical UniProt C6EF31 cross-reference
+        is not evidence of current UniProt availability or construct equality.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP001509.3
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: 'Complete 1410-nt reverse CDS, ATG start/TAA stop, code 11: independent
+        translation matches all 469 residues of ACT45548.1 and CAQ34221.1. The reported
+        primer template segments match both native endpoints. This does not reconcile
+        the paper''s 1284-bp length or prove an experimental stock/insert.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AM946981.2
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: The independently deposited complete 1410-nt reverse CDS has identical
+        coding DNA and translation. Agreement between native references does not establish
+        the actual pFC6/pFC7 sequence; the 126-bp length discrepancy remains open.
+    - reference: https://www.uniprot.org/uniprotkb/C6EF31/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: UniProt release 2026_03 returns C6EF31 as Inactive/DELETED, reason Not
+        part of a reference proteome. It is not used as an active protein identifier.
+        No alternative UniProt exemplar is selected from name similarity.
 - graph_id: indigoidine-lavendulae-bpsa-biosynthesis
   scope: BIOSYNTHESIS
   description: S. lavendulae ATCC11924 BpsA indigoidine biosynthesis, represented
@@ -367,6 +420,40 @@ causal_graphs:
         Compound correspondence is database-grounded; the original structure-analysis
         data were not re-inspected. The differently structured BGC0002295 record also
         named indigoidine is not treated as equivalent.'
+discussions:
+- discussion_id: indigoidine-glna-construct-identity
+  kind: KNOWLEDGE_GAP
+  status: OPEN
+  posed_by: codex
+  posed_date: '2026-10-11'
+  attaches_to:
+  - causal_graphs#indigoidine-indc-biosynthesis
+  prompt: Which complete GlnA protein sequence was expressed in pFC6/pFC7, and how
+    should the reported 1284-bp fragment be reconciled with the 1410-bp BL21(DE3)
+    references?
+  rationale: The conditional yield result can be represented without declaring an
+    exact protein sequence. Native reference and primer agreement cannot decide whether
+    the reported length is an error or reflects a different construct. Resolve this
+    before assigning an exact accession or transferring sequence-specific properties.
+    The deleted C6EF31 accession is a separate current-availability limitation.
+  evidence:
+  - reference: DOI:10.1007/s10295-015-1642-5
+    supports: SUPPORT
+    evidence_source: primary methods/results text
+    explanation: Reports the BL21(DE3) donor, 1284-bp fragment and pFC6/pFC7 cloning;
+      actual insert sequence and figure pixels are unverified.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/ACT45548.1
+    supports: SUPPORT
+    evidence_source: database
+    explanation: 469-residue native reference with a 1410-nt CDS.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/CAQ34221.1
+    supports: SUPPORT
+    evidence_source: database
+    explanation: Independent matching native protein reference.
+  - reference: https://www.uniprot.org/uniprotkb/C6EF31/entry
+    supports: SUPPORT
+    evidence_source: database
+    explanation: Historical accession is currently deleted, not an active example.
 curation_history:
 - timestamp: '2026-09-10T05:54:03Z'
   curator: seed_from_sources
@@ -409,4 +496,14 @@ curation_history:
     retained the complete BpsA mechanism and all prior evidence, source grades and
     history. Preserved automated-function disagreement and full-paper/construct limits;
     no Sc-IndB catalytic step, physical complex or native-essentiality claim added.
+  llm_assisted: true
+- timestamp: '2026-10-11T02:31:13Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added the reported BL21(DE3) GlnA coexpression-yield effect with primary
+    DOI and a verbatim snippet. Kept the protein REVIEW_NEEDED without an exact accession
+    and added a knowledge-gap discussion for the reported 1284-bp fragment versus
+    1410-bp native references and deleted UniProt C6EF31. Preserved all prior mechanisms,
+    source fields, grades and history; no catalytic step, construct equivalence or
+    native producer/cluster claim added.
   llm_assisted: true
