@@ -102,9 +102,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td class="mono">DOI:10.1007/s10295-012-1207-9</td>
 </tr>
 </table></div>
-<p class="sub">Step 1: Streptomyces chromofuscus ATCC 49982 Sc-IndC is the exact indigoidine synthase encoded by the MIBiG BGC0000375 indC CDS; Sc-IndB stimulation of indigoidine yield is left unexpanded because that accessory effect is not the Rhea-grounded synthase reaction curated here.</p>
-<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
-<p class="sub">Streptomyces chromofuscus ATCC 49982 Sc-IndC converts L-glutamine to the blue pigment indigoidine.</p><div class="scroll"><table>
+<p class="sub">Step 1: Streptomyces chromofuscus ATCC 49982 Sc-IndC is the exact indigoidine synthase encoded by the MIBiG BGC0000375 indC CDS. The Sc-IndB coexpression effect is represented separately in the Sc-IndC causal graph; it is not assigned this Rhea-grounded synthase reaction or an additional ordered pathway step.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Streptomyces chromofuscus ATCC 49982 Sc-IndC converts L-glutamine to the blue pigment indigoidine. Sc-IndB is represented as the native reference for a conditional yield-enhancing coexpression effect with Sc-IndC in E. coli BAP1, not as an assigned catalytic step.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>L-glutamine</td>
@@ -127,6 +127,19 @@ derived from a source. This is what the rest of the record exists to support.</p
 </li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000375.5/BGC0000375.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>MIBiG BGC0000375.5 places indC at 1630..5763 in the Streptomyces chromofuscus ATCC 49982 JX499187.1 cluster, with protein_id AFV27434.1 and product indigoidine synthase.</dd></dl>
 </li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/K4MP98</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>UniProtKB:K4MP98 is the unreviewed Streptomyces chromofuscus indC gene product and cross-references EMBL JX499187 protein AFV27434.1.</dd></dl>
 </li><li><dl><dt>reference</dt><dd>https://www.rhea-db.org/rhea/81499</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>RHEA:81499 is the overall indigoidine synthase reaction consuming FMN, L-glutamine, ATP and O2 to form indigoidine, FMNH2, AMP, diphosphate and H2O; RHEA:81500 is its left-to-right direction.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Sc-IndB (S. chromofuscus native reference)</td>
+  <td>increases yield of when coexpressed with Sc-IndC</td>
+  <td>indigoidine</td>
+  <td>Conditional coexpression effect reported in E. coli BAP1, represented by the exact native Sc-IndB reference. This is not an isolated Sc-IndB catalytic reaction, a demonstrated physical complex, or native essentiality.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1007/s10295-012-1207-9<br>https://www.uniprot.org/uniprotkb/K4MZR0/entry<br>https://www.ncbi.nlm.nih.gov/protein/AFV27436.1<br>https://www.ncbi.nlm.nih.gov/nuccore/JX499187.1<br>https://mibig.secondarymetabolites.org/repository/BGC0000375.5/index.html</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1007/s10295-012-1207-9</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The primary abstract reports increased indigoidine yield when Sc-IndB and Sc-IndC were coexpressed in E. coli BAP1. No quantitative value is curated here. Full text, methods, figures, tags and exact experimental constructs remain uninspected after the failed DOI access attempt.</dd><dt>snippet</dt><dd>The yield of indigoidine was dramatically increased</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/K4MZR0/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry 34, sequence 1, release 2026_03: indB, S. chromofuscus, 614 residues, EMBL JX499187/AFV27436.1; the reference comment names ATCC 49982. The automated PtkA/tyrosine-kinase name and RHEA:10596 annotation carry ECO:0000256 support, not a measured Sc-IndB kinase reaction. They are not adopted.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AFV27436.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native indB/Sc-indB record: S. chromofuscus ATCC 49982, taxon 42881, 614 residues, coded_by JX499187.1:6835..8679. Its putative-phosphatase product label and HAD/Questin-oxidase-like domain annotations do not establish a measured catalytic function and are not reconciled into a reaction claim.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/JX499187.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The complete 1845-nt forward indB CDS, ATG start and TGA stop, independently translates under code 11 to all 614 residues of the deposited translation, AFV27436.1 and K4MZR0. Native-reference identity does not verify expression tags, engineered constructs or historical stock equivalence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000375.5/index.html</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>BGC0000375.5 links JX499187.1 and indB/AFV27436.1 to indigoidine, C10H8N4O4, the existing CHEBI:79296 owner. Compound correspondence is database-grounded; primary chemical-analysis data were not re-inspected. Entry quality is questionable and completeness unknown; no producer or cluster grade is upgraded.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
