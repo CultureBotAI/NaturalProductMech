@@ -220,6 +220,103 @@ causal_graphs:
       notes: RHEA:81499 is the overall indigoidine synthase reaction consuming FMN,
         L-glutamine, ATP and O2 to form indigoidine, FMNH2, AMP, diphosphate and H2O;
         RHEA:81500 is its left-to-right direction.
+- graph_id: indigoidine-lavendulae-bpsa-biosynthesis
+  scope: BIOSYNTHESIS
+  description: S. lavendulae ATCC11924 BpsA indigoidine biosynthesis, represented
+    by its exact native reference. Catalytic activity requires the phosphopantetheinylated
+    enzyme. This is an independent organism-specific mechanism, not a downstream step
+    of the existing Sc-IndC pathway.
+  nodes:
+  - node_id: l_glutamine
+    label: L-glutamine zwitterion
+    node_type: PRECURSOR
+    identifier: CHEBI:58359
+    grounding_status: GROUNDED
+  - node_id: bpsa
+    label: BpsA (S. lavendulae native reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q1MWN4
+    grounding_status: GROUNDED
+  - node_id: indigoidine
+    label: indigoidine
+    node_type: COMPOUND
+    identifier: CHEBI:79296
+    grounding_status: GROUNDED
+  edges:
+  - subject: l_glutamine
+    predicate: is_substrate_for
+    object: bpsa
+    notes: Substrate use by the phosphopantetheinylated enzyme; no activity claim
+      for apo-BpsA.
+    evidence:
+    - reference: DOI:10.1074/jbc.M611319200
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: Primary abstract reports purified recombinant BPSA from S. lavendulae
+        ATCC11924 using L-Gln. Activity required phosphopantetheinylation by a Streptomyces
+        PPTase. Full text, methods, figures, tags and complete experimental constructs
+        were not inspected.
+      snippet: recombinant enzyme prefers L-Gln as a substrate.
+    - reference: https://www.uniprot.org/uniprotkb/Q1MWN4/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Reviewed entry 88, sequence 1, release 2026_03: bpsA, Streptomyces lavendulae,
+        1282 residues; FUNCTION and RHEA:81499 annotations cite PMID:17237222. This
+        is the exact native reference, not the S. chromofuscus Sc-IndC protein.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAE93896.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Blue-pigment synthetase bpsA; coded_by AB240063.1:686..4534, code 11.
+        NCBI uses subspecies taxon 58340; UniProt uses species taxon 1914. Native
+        records have no strain qualifier; ATCC11924 is attributed by the primary abstract
+        and UniProt reference comment, not inferred from a native strain field.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB240063.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: The complete 3849-nt forward CDS, ATG start and TGA stop, independently
+        translates to all 1282 residues in the deposited translation, BAE93896.1 and
+        Q1MWN4. Native-reference equality does not verify historical expression tags,
+        mutants or stocks.
+    - reference: https://www.rhea-db.org/rhea/81499
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Overall reaction connects L-glutamine to CHEBI:79296, key ALDIVIWLBSDGGN-ONEGZZNKSA-N;
+        RHEA:81500 is its forward direction. CHEBI:58359 is Rhea's zwitterionic substrate
+        representation, not a measured assay microspecies. This graph does not assign
+        every intermediate step to BpsA.
+  - subject: bpsa
+    predicate: catalyzes_overall_formation_of
+    object: indigoidine
+    notes: Overall pigment formation in the reported activated-enzyme context. No
+      direct assignment of spontaneous dimerization, reaction intermediates, native
+      essentiality or membership in BGC0000375/BGC0002295 is made.
+    evidence:
+    - reference: DOI:10.1074/jbc.M611319200
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: Primary abstract reports indigoidine formation by phosphopantetheinylated
+        purified BPSA and pigment production in heterologous hosts. This is not a
+        native knockout or producer-grade upgrade.
+    - reference: https://www.uniprot.org/uniprotkb/Q1MWN4/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Reviewed entry 88, sequence 1, release 2026_03: bpsA, Streptomyces lavendulae,
+        1282 residues; FUNCTION and RHEA:81499 annotations cite PMID:17237222. This
+        is the exact native reference, not the S. chromofuscus Sc-IndC protein.'
+    - reference: https://www.rhea-db.org/rhea/81499
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Overall reaction connects L-glutamine to CHEBI:79296, key ALDIVIWLBSDGGN-ONEGZZNKSA-N;
+        RHEA:81500 is its forward direction. CHEBI:58359 is Rhea's zwitterionic substrate
+        representation, not a measured assay microspecies. This graph does not assign
+        every intermediate step to BpsA.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:79296
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Current ChEBI structure matches this owner: C10H8N4O4, charge 0, ALDIVIWLBSDGGN-ONEGZZNKSA-N.
+        Compound correspondence is database-grounded; the original structure-analysis
+        data were not re-inspected. The differently structured BGC0002295 record also
+        named indigoidine is not treated as equivalent.'
 curation_history:
 - timestamp: '2026-09-10T05:54:03Z'
   curator: seed_from_sources
@@ -236,4 +333,21 @@ curation_history:
     step and BIOSYNTHESIS graph for the RHEA:81499 indigoidine synthase reaction,
     grounded to exact UniProtKB:K4MP98 / GenBank AFV27434.1 with Yu et al., MIBiG,
     UniProt and Rhea evidence.
+  llm_assisted: true
+- timestamp: '2026-10-11T01:04:25Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added an independent S. lavendulae BpsA BIOSYNTHESIS graph with two cited
+    edges, exact Q1MWN4/BAE93896.1/AB240063.1 native-reference grounding and required
+    phosphopantetheinylation context. Preserved Sc-IndC graph/pathway and all source
+    fields; full-paper, historical-construct and primary chemical-analysis limits
+    remain explicit.
+  llm_assisted: true
+- timestamp: '2026-10-11T01:19:49Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Corrected the new BpsA graph CHEBI:58359 node to the canonical label L-glutamine
+    zwitterion after the required label gate finding (#794). Preserved the identifier,
+    Rhea microspecies qualification, graph evidence and every pre-existing field and
+    history event.
   llm_assisted: true
