@@ -131,10 +131,104 @@ derived from a source. This is what the rest of the record exists to support.</p
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
+<p class="sub">Database-annotated PAO1 PhnAB anthranilate supply for PQS. Subunit roles and complex assembly include by-similarity evidence. This is not a balanced reaction, a complete reconstituted pathway or a primary native-complex assay; no stoichiometry or genetic essentiality is asserted.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>PhnA (PAO1 native reference)</td>
+  <td>is_annotated_component_of</td>
+  <td>Annotated PhnAB anthranilate synthase complex</td>
+  <td>Complex membership and subunit division are database annotations, including by-similarity evidence; native oligomeric stoichiometry was not measured here.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P09785/entry<br>https://www.ncbi.nlm.nih.gov/protein/AAG04390.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P09785/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 151; PA1001, 530 aa. Native PAO1 protein; not a historical trpE/trpG paralog assignment or an experimental allele.</dd><dt>snippet</dt><dd>two-step biosynthesis of anthranilate</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAG04390.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Exact agreement of genomic CDS-aware translation, deposited translation, GenPept and UniProt establishes the native reference, not an assay construct.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>PhnB (PAO1 native reference)</td>
+  <td>is_annotated_component_of</td>
+  <td>Annotated PhnAB anthranilate synthase complex</td>
+  <td>Complex membership and subunit division are database annotations, including by-similarity evidence; native oligomeric stoichiometry was not measured here.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P09786/entry<br>https://www.ncbi.nlm.nih.gov/protein/AAG04391.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P09786/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 154; PA1002, 200 aa. Native PAO1 protein; not a historical trpE/trpG paralog assignment or an experimental allele.</dd><dt>snippet</dt><dd>glutamine amidotransferase activity</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAG04391.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Exact agreement of genomic CDS-aware translation, deposited translation, GenPept and UniProt establishes the native reference, not an assay construct.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Chorismate</td>
+  <td>is_annotated_substrate_of</td>
+  <td>Annotated PhnAB anthranilate synthase complex</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P09785/entry<br>https://www.uniprot.org/uniprotkb/P09786/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P09785/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Chorismate is an annotated substrate of the overall complex reaction; this is not an independently inspected native-subunit assay.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P09786/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Corroborating reviewed component annotation; includes by-similarity evidence, not a separately inspected primary experiment.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>L-Glutamine</td>
+  <td>is_annotated_substrate_of</td>
+  <td>Annotated PhnAB anthranilate synthase complex</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P09785/entry<br>https://www.uniprot.org/uniprotkb/P09786/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P09785/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>L-Glutamine is the annotated nitrogen donor. Subunit-specific chemistry is inferred by similarity in UniProt, not newly demonstrated here.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P09786/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Corroborating reviewed component annotation; includes by-similarity evidence, not a separately inspected primary experiment.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Annotated PhnAB anthranilate synthase complex</td>
+  <td>is_annotated_to_produce</td>
+  <td>Anthranilate</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P09785/entry<br>https://www.uniprot.org/uniprotkb/P09786/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P09785/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The annotated overall reaction produces anthranilate, pyruvate, L-glutamate and a proton. The schematic omits byproduct nodes and does not assert native complex stoichiometry.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P09786/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Corroborating reviewed component annotation; includes by-similarity evidence, not a separately inspected primary experiment.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Anthranilate</td>
+  <td>is_annotated_precursor_of</td>
+  <td>2-heptyl-3-hydroxy-4-quinolone</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P09785/entry<br>https://www.uniprot.org/uniprotkb/P09786/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P09785/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>UniProt connects anthranilate supply to PQS through a multistep pathway; PhnAB does not directly convert anthranilate to PQS. No exclusive physiological dependence is asserted.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P09786/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Corroborating reviewed component annotation; includes by-similarity evidence, not a separately inspected primary experiment.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; bioactivity <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">PQS-stimulated, MvfR-associated pqsA promoter reporter response in PA14. The protein is a native reference; this graph does not identify an experimental construct or infer direct binding.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>2-heptyl-3-hydroxy-4-quinolone</td>
+  <td>increases_in_cellular_assay</td>
+  <td>MvfR-associated pqsA promoter reporter response (PA14)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1111/j.1365-2958.2006.05462.x</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1111/j.1365-2958.2006.05462.x</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>PQS increased pqsA-lacZ reporter activity in the PA14 pqsA/pqsH mutant background; this is a cellular transcriptional readout.</dd><dt>snippet</dt><dd>stimulate MvfR-dependent</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>MvfR (PA14 native reference)</td>
+  <td>is_native_reference_for_regulator_in</td>
+  <td>MvfR-associated pqsA promoter reporter response (PA14)</td>
+  <td>Reference mapping, not a direct-binding or isolated-protein activity claim. PA14 and PAO1 native MvfR sequences differ at residue 314.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1111/j.1365-2958.2006.05462.x<br>https://www.uniprot.org/uniprotkb/A0A0H2Z7A6/entry<br>https://www.ncbi.nlm.nih.gov/protein/ABJ10167.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1111/j.1365-2958.2006.05462.x</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The study names MvfR in PA14. Native reference selection does not identify its plasmid, mutant or tagged fragment sequences.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0H2Z7A6/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry version 57; PA14_51340, 332 aa, strain UCBPP-PA14 (NCBITaxon:208963). Exact strain takes priority over the PAO1 Swiss-Prot homolog.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/ABJ10167.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>PA14 genomic CDS translation, deposited translation, GenPept and UniProt sequences agree exactly.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
 
+<h2>Open questions <span class="tag">1</span></h2>
+<div class="note"><p><strong>curator-phnab-and-mvfr-evidence-boundaries</strong> — Which PhnAB primary functions and PA14 MvfR experimental sequences can be independently verified?</p></div>
 
 <h2>Provenance</h2>
 <div class="scroll"><table>
