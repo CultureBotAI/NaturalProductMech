@@ -494,6 +494,155 @@ causal_graphs:
     catalytic experiments. Genomic order is not assembly order. This graph neither
     makes a physical-complex claim nor transfers the separate calN1/calB2 whole-strain
     phenotypes to these proteins.
+- graph_id: calcimycin-proposed-precursor-supply
+  scope: BIOSYNTHESIS
+  nodes:
+  - node_id: calb3_reference
+    label: SchB3 native reference
+    node_type: PROTEIN
+    identifier: UniProtKB:F8QZR1
+    grounding_status: GROUNDED
+  - node_id: dhha_aromatization
+    label: Proposed DHHA aromatization
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: calb4_reference
+    label: SchB4 native reference
+    node_type: PROTEIN
+    identifier: UniProtKB:F8QZR2
+    grounding_status: GROUNDED
+  - node_id: dahp_entry
+    label: Proposed DAHP entry reaction
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: ha_supply
+    label: Proposed 3-hydroxyanthranilate supply
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: calcimycin
+    label: calcimycin (A23187)
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-18de581c96
+    grounding_status: GROUNDED
+  edges:
+  - subject: calb3_reference
+    predicate: is the native reference inferred for the proposed catalyst of
+    object: dhha_aromatization
+    evidence:
+    - reference: DOI:10.1128/AAC.01130-10
+      evidence_type: COMPUTATIONAL_PREDICTION
+      retrieved_on: '2026-10-11'
+      notes: Figure 7C assigns CalB3 to aromatization of trans-2,3-dihydro-3-hydroxyanthranilic
+        acid (DHHA) to 3-hydroxyanthranilic acid (HA). Table 3 gives a DhbA-like dehydrogenase
+        annotation. This is a homology-based substrate assignment, not a direct substrate-specific
+        assay.
+    - reference: DOI:10.1128/AAC.01130-10
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Table 3 assigns calB3 a 270-aa product. The cited HM452329 deposit's
+        ordered locus, compatible name, length and annotation support mapping to SchB3.
+        The cal/Sch correspondence is an inferred alias, not independently sequenced
+        assay-protein identity.
+    - reference: https://www.uniprot.org/uniprotkb/F8QZR1/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Unreviewed entry version 39, sequence version 1; SchB3, 270 aa; HM452329
+        cross-reference explicitly names AEH42481.1. Species taxon 1969 is accompanied
+        by the NRRL 3882 nucleotide-reference strain attribution.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AEH42481.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: 2,3-dihydroxybenzoate-2,3-dehydrogenase
+      notes: AEH42481.1, complement(HM452329.1:29661..30473); native NRRL 3882, taxon
+        1079985. Native DNA/code-11/CDS, independently retrieved GenPept and direct
+        UniProt sequences agree. Deposited product text is an annotation, not an experimentally
+        established reaction.
+    notes: The grounded node denotes the native reference, not a purified or engineered
+      construct. The proposed role is not measured catalysis, a physical complex or
+      an individual knockout phenotype. The separate calB2 disruption result is not
+      transferred to this protein.
+  - subject: calb4_reference
+    predicate: is the native reference inferred for the proposed catalyst of
+    object: dahp_entry
+    evidence:
+    - reference: DOI:10.1128/AAC.01130-10
+      evidence_type: COMPUTATIONAL_PREDICTION
+      retrieved_on: '2026-10-11'
+      notes: Figure 7C assigns CalB4 to conversion of phosphoenolpyruvate (PEP) and
+        erythrose-4-phosphate (E4P) to DAHP. Table 3 gives a PhzC-like DAHP-synthase
+        annotation. CalB4 is not assigned all intervening reactions to chorismate
+        or HA.
+    - reference: DOI:10.1128/AAC.01130-10
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Table 3 assigns calB4 a 404-aa product. The cited HM452329 deposit's
+        ordered locus, compatible name, length and annotation support mapping to SchB4.
+        The cal/Sch correspondence is an inferred alias, not independently sequenced
+        assay-protein identity.
+    - reference: https://www.uniprot.org/uniprotkb/F8QZR2/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Unreviewed entry version 29, sequence version 1; SchB4, 404 aa; HM452329
+        cross-reference explicitly names AEH42482.1. Species taxon 1969 is accompanied
+        by the NRRL 3882 nucleotide-reference strain attribution.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AEH42482.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: 3-deoxy-D-arabino-heptulosonate 7-phosphate
+      notes: AEH42482.1, complement(HM452329.1:30511..31725); native NRRL 3882, taxon
+        1079985. Native DNA/code-11/CDS, independently retrieved GenPept and direct
+        UniProt sequences agree. Deposited product text is an annotation, not an experimentally
+        established reaction.
+    notes: The grounded node denotes the native reference, not a purified or engineered
+      construct. The proposed role is not measured catalysis, a physical complex or
+      an individual knockout phenotype. The separate calB2 disruption result is not
+      transferred to this protein.
+  - subject: dhha_aromatization
+    predicate: is proposed as the terminal reaction in
+    object: ha_supply
+    evidence:
+    - reference: DOI:10.1128/AAC.01130-10
+      evidence_type: COMPUTATIONAL_PREDICTION
+      retrieved_on: '2026-10-11'
+      notes: Figure 7C places CalB3 on the DHHA-to-HA arrow. This is the terminal
+        reaction of the drawn precursor-supply model, not the terminal reaction of
+        calcimycin biosynthesis.
+    notes: No cofactor specificity, kinetic value, physiological flux or direct enzyme
+      assay is asserted.
+  - subject: dahp_entry
+    predicate: is proposed to feed the multistep pathway for
+    object: ha_supply
+    evidence:
+    - reference: DOI:10.1128/AAC.01130-10
+      evidence_type: COMPUTATIONAL_PREDICTION
+      retrieved_on: '2026-10-11'
+      notes: Figure 7C places DAHP upstream of chorismate, followed by the proposed
+        CalB1/CalB2/CalB3 route to HA. Its intervening unlabeled arrows are not assigned
+        to genes in the depicted cluster.
+    notes: This is an indirect multistep contribution, not direct CalB4 production
+      of chorismate or HA. No additional enzymes are invented for unlabeled steps;
+      the CalB1 reference-length discrepancy remains unresolved.
+  - subject: ha_supply
+    predicate: is proposed to provide the benzoxazole building block for
+    object: calcimycin
+    evidence:
+    - reference: DOI:10.1128/AAC.01130-10
+      evidence_type: COMPUTATIONAL_PREDICTION
+      retrieved_on: '2026-10-11'
+      notes: The 2011 prediction section and Figure 7C place the CalB route upstream
+        of the benzoxazole portion of calcimycin. The older feeding experiments cited
+        in its Discussion are not recast as directly inspected experiments on these
+        two proteins.
+      snippet: The proposed gene assignment for the pathway
+    notes: Precursor supply is not benzoxazole ring closure, attachment to the PKS
+      chain or sufficiency for final-product formation. No exact intermediate chemical
+      identifier, cezomycin equivalence, CalG termination or downstream tailoring
+      step is adopted.
+  description: Two sequence-verified native references map by explicit inference to
+    CalB3 and CalB4 in the 2011 proposed precursor pathway. The graph separates terminal
+    DHHA aromatization from DAHP entry into a multistep pathway. All functional edges
+    are predictions; no individual activity assay, physical complex or transfer of
+    the separate calB2 knockout phenotype is asserted.
 discussions:
 - discussion_id: curator-calcimycin-reference-and-experiment-boundaries
   kind: CURATION_TODO
@@ -563,6 +712,28 @@ discussions:
     2011 CalA3 inactivity prediction into a current inactivity claim, assign CalG
     termination from alternatives, or ground cezomycin by name despite the saved stereochemical
     discrepancy. No source-owned grade, chemical identity or SEEDED status is changed.
+- discussion_id: curator-calcimycin-precursor-prediction-boundaries
+  kind: CURATION_TODO
+  status: OPEN
+  posed_by: codex
+  posed_date: '2026-10-11'
+  attaches_to:
+  - causal_graphs#calcimycin-proposed-precursor-supply
+  prompt: Do sequence-verified CalB3 and CalB4 catalyze the proposed precursor reactions
+    in vivo and in vitro?
+  rationale: Native reference identity and the 2011 homology model do not establish
+    substrate specificity, cofactors, individual genetic requirements or pathway sufficiency.
+  evidence:
+  - reference: DOI:10.1128/AAC.01130-10
+    supports: PARTIAL
+    evidence_source: 2011 primary study, proposed precursor pathway
+    explanation: Table 3 and Figure 7C assign the two roles by homology. Methods genetically
+      test calN1, calN2 and calB2, not calB3 or calB4; unlabeled intervening shikimate
+      reactions are not assigned to this cluster.
+  notes: Issue814 remains open. Preserve the CalB1 534/535-aa conflict and all prior
+    construct and chemical-form restrictions. The separate 2013 calB1-3 mutant study
+    has not had its full Methods/figures inspected here and supplies no new experimental
+    edge. No source-owned grade, chemical identity or SEEDED status changes.
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
   curator: seed_from_sources
@@ -589,4 +760,13 @@ curation_history:
     aliases and tentative module order distinct from demonstrated catalysis. Preserved
     the prior knockout graph, source-owned fields, history and SEEDED status; updated
     the CalA3 identity discussion without adding a functional claim.
+  llm_assisted: true
+- timestamp: '2026-10-11T11:40:52Z'
+  curator: codex
+  action: ADDED_CALCIMYCIN_PROPOSED_PRECURSOR_PROTEINS
+  changes: Added SchB3 and SchB4 native references with explicit inferred CalB aliases,
+    DOI/stable-URL evidence and short snippets. A separate proposed precursor-supply
+    graph distinguishes DHHA aromatization from indirect DAHP entry. Preserved both
+    existing graphs, discussions, history, source-owned fields and SEEDED status;
+    no experimental activity or exact intermediate identity adopted.
   llm_assisted: true
