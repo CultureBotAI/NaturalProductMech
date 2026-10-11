@@ -531,6 +531,96 @@ causal_graphs:
         illustrates eDNA-clone complementation; it is not an image of this native-PPTase
         rescue.
       snippet: Production of indigoidine was restored
+- graph_id: indigoidine-fri5-lbpa-expression
+  scope: BIOSYNTHESIS
+  description: FRI-5 LbpA heterologous-expression evidence in S. avermitilis SUKA22.
+    The protein node is the exact native reference, not a verified engineered construct.
+    This independent graph does not extend the Sc-IndC, ATCC11924 BpsA or J1074 reporter
+    mechanisms.
+  nodes:
+  - node_id: lbpa
+    label: LbpA (S. lavendulae FRI-5 native reference)
+    node_type: ENZYME
+    identifier: UniProtKB:A0A1Q2SRM5
+    grounding_status: GROUNDED
+  - node_id: lbpa_expression
+    label: Heterologous lbpA expression in SUKA22
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: glutamine_feeding
+    label: L-glutamine feeding of SUKA22 expressing lbpA
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: indigoidine
+    label: indigoidine
+    node_type: COMPOUND
+    identifier: CHEBI:79296
+    grounding_status: GROUNDED
+  edges:
+  - subject: lbpa
+    predicate: is native reference for protein encoded in
+    object: lbpa_expression
+    notes: Reference-to-expression correspondence; not an isolated catalytic reaction
+      or proof of construct identity.
+    evidence:
+    - reference: DOI:10.1016/j.jbiosc.2017.04.020
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: The inspected primary abstract identifies FRI-5 lbpA and heterologous
+        expression in S. avermitilis SUKA22. Main text, methods, figures and supplements
+        remain uninspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/BAW81991.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Native lbpA reference from S. lavendulae FRI-5, taxon 1914: 1282 residues,
+        coded_by complement(LC209815.1:7353..11201). The deposit cites PMID:28533156.'
+    - reference: https://www.uniprot.org/uniprotkb/A0A1Q2SRM5/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Unreviewed entry 36, sequence 1: lbpA, S. lavendulae, 1282 residues;
+        EMBL LC209815/BAW81991.1 and a FRI-5 reference comment. Automated cofactor,
+        residue and enzyme-family annotations are not adopted as experiments.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LC209815.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: 'Complete 3849-nt reverse CDS, ATG start/TGA stop, code 11: independent
+        translation matches all 1282 residues of the deposited translation, BAW81991.1
+        and A0A1Q2SRM5. This grounds the native reference, not the uninspected experimental
+        insert or tags. The equal-length ATCC11924 BpsA reference BAE93896.1 differs
+        at 22 positions; Q1MWN4 is not substituted for FRI-5 LbpA.'
+  - subject: lbpa_expression
+    predicate: enables reported production of
+    object: indigoidine
+    notes: Host-level expression result, not purified-enzyme catalysis, native essentiality,
+      a physical complex or membership in BGC0000375/BGC0002295.
+    evidence:
+    - reference: DOI:10.1016/j.jbiosc.2017.04.020
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: The primary abstract reports pigment production after heterologous lbpA
+        expression. No titer, control comparison or analytical method is curated from
+        the uninspected full text.
+      snippet: led to indigoidine production
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:79296
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: CHEBI:79296 denotes indigoidine, C10H8N4O4, charge 0, ALDIVIWLBSDGGN-ONEGZZNKSA-N.
+        Compound correspondence is name/database-grounded; primary chemical-analysis
+        data for the FRI-5 experiment were not inspected. The differently structured
+        BGC0002295 owner is not treated as equivalent.
+  - subject: glutamine_feeding
+    predicate: enhances reported production of
+    object: indigoidine
+    notes: Conditional feeding effect in the lbpA-expressing heterologous host; not
+      direct substrate specificity, isotope incorporation or measured precursor flux.
+    evidence:
+    - reference: DOI:10.1016/j.jbiosc.2017.04.020
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: The primary abstract reports enhanced production with L-glutamine feeding.
+        No concentration, fold change, assay timing or mechanistic intermediate is
+        assigned.
+      snippet: enhanced dramatically by feeding of the indigoidine precursor l-glutamine.
 discussions:
 - discussion_id: curator-indigoidine-glna-construct-identity
   kind: KNOWLEDGE_GAP
@@ -667,4 +757,14 @@ curation_history:
     from curator chemistry comparison and primary-figure interpretation, with individually
     typed and cited evidence. Fixes issue #798; preserves every experimental claim,
     limitation, prior field and history event.'
+  llm_assisted: true
+- timestamp: '2026-10-11T04:36:09Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added an independent FRI-5 LbpA heterologous-expression graph with exact
+    native UniProtKB:A0A1Q2SRM5/BAW81991.1/LC209815.1 grounding, three cited edges
+    and abstract-level production/feeding evidence. Preserved all prior mechanisms,
+    source fields, grades and history. Full-paper, construct and primary chemical-analysis
+    limitations remain explicit; no direct catalytic or native-essentiality claim
+    added.
   llm_assisted: true
