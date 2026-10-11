@@ -93,6 +93,235 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-0641792807
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: auricin-ccm3239-paired-pks-disruptions
+  scope: BIOSYNTHESIS
+  description: Native CCM3239 paired PKS-region disruptions with contrasting auricin
+    readouts. Four protein nodes are sequence-verified native references, not proven
+    assay alleles. No physical complex or catalytic pathway is asserted. The distant
+    aur2AB references are outside the imported MIBiG BGC0000201 interval; that interval
+    is not extended.
+  nodes:
+  - node_id: aur2a
+    label: Aur2A (CCM3239 native reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:A0A2K8PT11
+    grounding_status: GROUNDED
+  - node_id: aur2b
+    label: Aur2B (CCM3239 native reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:A0A2K8PW16
+    grounding_status: GROUNDED
+  - node_id: aur1d
+    label: Aur1D (CCM3239 native reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:A0A2K8PSV3
+    grounding_status: GROUNDED
+  - node_id: aur1e
+    label: Aur1E (CCM3239 native reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:A0A2K8PUN7
+    grounding_status: GROUNDED
+  - node_id: aur2ab_disruption
+    label: AprR replacement of the CCM3239 aur2AB region
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: aur1de_disruption
+    label: AprR replacement of the CCM3239 aur1DE region
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: auricin
+    label: auricin
+    node_type: COMPOUND
+    identifier: CHEBI:156301
+    grounding_status: GROUNDED
+  edges:
+  - subject: aur2a
+    predicate: is a native reference for a gene product targeted by
+    object: aur2ab_disruption
+    notes: Reference-to-locus correspondence, not a verified experimental allele or
+      evidence that this protein alone causes the phenotype.
+    evidence:
+    - reference: DOI:10.1186/s13568-023-01591-2
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: Figure S10 identifies the protein reference; Table S2 gives the region-disruption
+        primers.
+    - reference: https://www.uniprot.org/uniprotkb/A0A2K8PT11/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Unreviewed entry 27, sequence 1; 423 residues, taxon 58340, SLAV_40510,
+        CP024986/ATZ29864.1. Automated enzyme names are not adopted as measured function.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AIE41912.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Native pSA3239 reference, KJ396772.2:9703..10974 (-). The corresponding
+        CP024986.1 CDS is 230108..231379 (+), protein ATZ29864.1. Both deposits identify
+        CCM3239.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Complete CDS translations, independent GenPept sequences and the direct
+        UniProt sequence agree. Coding DNA is identical across KJ396772.1/.2 and CP024986.1.
+        This is native-reference identity, not experimental stock verification.
+    - reference: DOI:10.1186/s13568-023-01591-2
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: The full printed S10 sequence matches this reference. Both corresponding
+        39-nt primer prefixes map uniquely in each deposit. Some coding-end sequence
+        lies within the homology arms; complete CDS removal is not inferred.
+  - subject: aur2b
+    predicate: is a native reference for a gene product targeted by
+    object: aur2ab_disruption
+    notes: Reference-to-locus correspondence, not a verified experimental allele or
+      evidence that this protein alone causes the phenotype.
+    evidence:
+    - reference: DOI:10.1186/s13568-023-01591-2
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: Figure S11 identifies the protein reference; Table S2 gives the region-disruption
+        primers.
+    - reference: https://www.uniprot.org/uniprotkb/A0A2K8PW16/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Unreviewed entry 25, sequence 1; 420 residues, taxon 58340, SLAV_40515,
+        CP024986/ATZ29865.1. Automated enzyme names are not adopted as measured function.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AIE41911.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Native pSA3239 reference, KJ396772.2:8444..9706 (-). The corresponding
+        CP024986.1 CDS is 231376..232638 (+), protein ATZ29865.1. Both deposits identify
+        CCM3239.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Complete CDS translations, independent GenPept sequences and the direct
+        UniProt sequence agree. Coding DNA is identical across KJ396772.1/.2 and CP024986.1.
+        This is native-reference identity, not experimental stock verification.
+    - reference: DOI:10.1186/s13568-023-01591-2
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: The full printed S11 sequence matches this reference. Both corresponding
+        39-nt primer prefixes map uniquely in each deposit. Some coding-end sequence
+        lies within the homology arms; complete CDS removal is not inferred.
+  - subject: aur1d
+    predicate: is a native reference for a gene product targeted by
+    object: aur1de_disruption
+    notes: Reference-to-locus correspondence, not a verified experimental allele or
+      evidence that this protein alone causes the phenotype.
+    evidence:
+    - reference: DOI:10.1186/s13568-023-01591-2
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: Figure S10 identifies the protein reference; Table S2 gives the region-disruption
+        primers.
+    - reference: https://www.uniprot.org/uniprotkb/A0A2K8PSV3/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Unreviewed entry 27, sequence 1; 422 residues, taxon 58340, SLAV_40245,
+        CP024986/ATZ29811.1. Automated enzyme names are not adopted as measured function.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAX57191.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Native pSA3239 reference, KJ396772.2:67454..68722 (+). The corresponding
+        CP024986.1 CDS is 172355..173623 (-), protein ATZ29811.1. Both deposits identify
+        CCM3239.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Complete CDS translations, independent GenPept sequences and the direct
+        UniProt sequence agree. Coding DNA is identical across KJ396772.1/.2 and CP024986.1.
+        This is native-reference identity, not experimental stock verification.
+    - reference: DOI:10.1186/s13568-023-01591-2
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: The full printed S10 sequence matches this reference. Both corresponding
+        39-nt primer prefixes map uniquely in each deposit. Some coding-end sequence
+        lies within the homology arms; complete CDS removal is not inferred.
+  - subject: aur1e
+    predicate: is a native reference for a gene product targeted by
+    object: aur1de_disruption
+    notes: Reference-to-locus correspondence, not a verified experimental allele or
+      evidence that this protein alone causes the phenotype.
+    evidence:
+    - reference: DOI:10.1186/s13568-023-01591-2
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: Figure S11 identifies the protein reference; Table S2 gives the region-disruption
+        primers.
+    - reference: https://www.uniprot.org/uniprotkb/A0A2K8PUN7/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Unreviewed entry 25, sequence 1; 405 residues, taxon 58340, SLAV_40240,
+        CP024986/ATZ29810.1. Automated enzyme names are not adopted as measured function.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAX57192.2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Native pSA3239 reference, KJ396772.2:68719..69936 (+). The corresponding
+        CP024986.1 CDS is 171141..172358 (-), protein ATZ29810.1. Both deposits identify
+        CCM3239.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Complete CDS translations, independent GenPept sequences and the direct
+        UniProt sequence agree. Coding DNA is identical across KJ396772.1/.2 and CP024986.1.
+        This is native-reference identity, not experimental stock verification.
+    - reference: DOI:10.1186/s13568-023-01591-2
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: The full printed S11 sequence matches this reference. Both corresponding
+        39-nt primer prefixes map uniquely in each deposit. Some coding-end sequence
+        lies within the homology arms; complete CDS removal is not inferred.
+  - subject: aur2ab_disruption
+    predicate: abolishes the reported production readout for
+    object: auricin
+    notes: Paired-region perturbation; individual essentiality, rescue, isolated catalysis
+      and absence of polar effects are not established.
+    evidence:
+    - reference: DOI:10.1186/s13568-023-01591-2
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: 'Native CCM3239 in Bennet medium: Figure 5 compares TLC/biochromatography
+        and 16-h HPLC; Figure S5 provides Southern controls. Not the engineered rabelomycin
+        experiment.'
+      snippet: deletion of the aur2AB genes resulted in the absence of auricin
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:156301
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Pinned ChEBI and MIBiG structures agree with the owner key DIESPMSGQPRWLG-VLKAYIDRSA-N:
+        neutral C28H31NO10, three unspecified tetrahedral centres. Compound correspondence
+        remains name/database-grounded; the assay readouts do not verify every stereocentre.'
+  - subject: aur1de_disruption
+    predicate: retains reported wild-type-like production readouts for
+    object: auricin
+    notes: Condition-specific negative control, not universal dispensability or proof
+      that these proteins have no biochemical activity.
+    evidence:
+    - reference: DOI:10.1186/s13568-023-01591-2
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: The matched CCM3239 comparison retains the auricin-associated TLC and
+        HPLC signals in Figure 5; Figure S4 provides Southern controls. No quantitative
+        equivalence or stereochemical proof is inferred.
+      snippet: had no effect on auricin production.
+discussions:
+- discussion_id: curator-auricin-individual-pks-contributions
+  kind: KNOWLEDGE_GAP
+  status: OPEN
+  posed_by: codex
+  posed_date: '2026-10-11'
+  attaches_to:
+  - causal_graphs#auricin-ccm3239-paired-pks-disruptions
+  prompt: What are the individual Aur2A and Aur2B contributions, and can complementation
+    separate loss of their activity from neighboring transcriptional effects?
+  rationale: Paired-region replacement and native-reference agreement do not establish
+    individual protein causality or complete experimental junction sequences.
+  evidence:
+  - reference: DOI:10.1186/s13568-023-01591-2
+    supports: SUPPORT
+    evidence_source: primary genetic comparison
+    explanation: Paired disruptions are compared; individual causal assignments remain
+      unresolved.
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
@@ -102,3 +331,13 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-11T05:56:02Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a native CCM3239 paired-PKS-disruption graph with four sequence-verified
+    UniProt references, six cited edges and an individual-causality discussion. Checked
+    complete native translations, GenPept, printed supplemental alignments and 39-nt
+    disruption-primer prefixes. Preserved imported identity, producer/BGC fields,
+    grades, incomplete stereochemistry and history. No individual essentiality, isolated
+    catalysis, new BGC membership or REVIEWED upgrade asserted.
+  llm_assisted: true
