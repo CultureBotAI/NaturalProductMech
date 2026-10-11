@@ -309,6 +309,197 @@ causal_graphs:
       notes: HHQ was measured as product; no rate, yield or physiological sufficiency
         is generalized here.
       snippet: quantification of HHQ by HPLC
+- graph_id: pqsade-pao1-annotated-hhq-precursors
+  scope: BIOSYNTHESIS
+  description: UniProt-annotated PAO1 PqsA/PqsD/PqsE precursor chemistry, connected
+    to the separately inspected net PqsBC HHQ assay. The upstream reactions are database
+    assertions, not primary assays inspected here. Native protein references are not
+    experimental constructs. This is not a balanced reaction diagram, a reconstituted
+    complete pathway or an essentiality claim; cofactors and byproducts are described
+    in evidence notes.
+  nodes:
+  - node_id: pqsa
+    label: Anthranilate--CoA ligase
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9I4X3
+  - node_id: pqsd
+    label: Anthraniloyl-CoA anthraniloyltransferase
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P20582
+  - node_id: pqse
+    label: 2-aminobenzoylacetyl-CoA thioesterase
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P20581
+  - node_id: anthranilate
+    label: Anthranilate
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: anthraniloyl_coa
+    label: Anthraniloyl-CoA
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: malonyl_coa
+    label: Malonyl-CoA
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: aba_coa
+    label: 2-Aminobenzoylacetyl-CoA (2-ABA-CoA)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: aba
+    label: 2-Aminobenzoylacetate (2-ABA)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: activation
+    label: Annotated anthranilate activation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: condensation
+    label: Annotated 2-ABA-CoA formation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hydrolysis
+    label: Annotated 2-ABA-CoA hydrolysis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hhq
+    label: 2-heptylquinolin-4(1H)-one
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: naturalproductmech:mibig-182e475a70
+  edges:
+  - subject: pqsa
+    predicate: is_annotated_to_catalyze
+    object: activation
+    notes: Native PAO1 reference, not an audited expression construct. Primary PqsA/PqsD/PqsE
+      assay methods were not inspected in this pass.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9I4X3/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed entry version 115; PA0996, 517 aa. UniProt annotates anthranilate
+        activation with ATP and CoA, releasing AMP and diphosphate.
+      snippet: Catalyzes the formation of anthraniloyl-CoA
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAG04385.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Native accession selected after exact PAO1 CDS translation, deposited
+        translation, GenPept and UniProt sequence comparison. This does not establish
+        the sequence of any experimental plasmid or mutant.
+  - subject: pqsd
+    predicate: is_annotated_to_catalyze
+    object: condensation
+    notes: Native PAO1 reference, not an audited expression construct. Primary PqsA/PqsD/PqsE
+      assay methods were not inspected in this pass.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P20582/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed entry version 147; PA0999, 337 aa. UniProt annotates condensation
+        of anthraniloyl-CoA with malonyl-CoA to form 2-ABA-CoA; no DHQ production
+        claim is added.
+      snippet: to form 2-aminobenzoylacetyl-CoA
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAG04388.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Native accession selected after exact PAO1 CDS translation, deposited
+        translation, GenPept and UniProt sequence comparison. This does not establish
+        the sequence of any experimental plasmid or mutant.
+  - subject: pqse
+    predicate: is_annotated_to_catalyze
+    object: hydrolysis
+    notes: Native PAO1 reference, not an audited expression construct. Primary PqsA/PqsD/PqsE
+      assay methods were not inspected in this pass.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P20581/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed entry version 129; PA1000, 301 aa. UniProt annotates hydrolysis
+        of 2-ABA-CoA to 2-ABA and CoA; catalytic annotation is not a genetic-essentiality
+        claim.
+      snippet: to form 2-aminobenzoylacetate (2-ABA)
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAG04389.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Native accession selected after exact PAO1 CDS translation, deposited
+        translation, GenPept and UniProt sequence comparison. This does not establish
+        the sequence of any experimental plasmid or mutant.
+  - subject: anthranilate
+    predicate: is_annotated_substrate_in
+    object: activation
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9I4X3/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Anthranilate is the aromatic substrate; ATP and CoA are additional reactants
+        in the cited annotation.
+  - subject: activation
+    predicate: has_annotated_product
+    object: anthraniloyl_coa
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9I4X3/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Anthraniloyl-CoA is the annotated activation product.
+  - subject: anthraniloyl_coa
+    predicate: is_annotated_substrate_in
+    object: condensation
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P20582/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Anthraniloyl-CoA is one annotated condensation substrate.
+  - subject: malonyl_coa
+    predicate: is_annotated_substrate_in
+    object: condensation
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P20582/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: This graph represents the malonyl-CoA annotation, not a separately audited
+        malonyl-ACP assay.
+  - subject: condensation
+    predicate: has_annotated_product
+    object: aba_coa
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P20582/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 2-ABA-CoA is the annotated product. Spontaneous cyclization and DHQ are
+        not treated as HHQ formation.
+  - subject: aba_coa
+    predicate: is_annotated_substrate_in
+    object: hydrolysis
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P20581/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 2-ABA-CoA is the annotated thioesterase substrate.
+  - subject: hydrolysis
+    predicate: has_annotated_product
+    object: aba
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P20581/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: The annotated hydrolysis releases 2-ABA. This does not establish exclusive
+        physiological dependence on PqsE.
+  - subject: aba
+    predicate: is_assay_precursor_of
+    object: hhq
+    notes: 'Separate net PqsBC assay: 2-ABA plus octanoyl-CoA gave detected HHQ. This
+      is not a one-step conversion by PqsE or a reconstitution of the complete PqsA/D/E/BC
+      route.'
+    evidence:
+    - reference: DOI:10.1074/jbc.M115.708453
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: The previously inspected PqsBC study supplied 2-ABA and octanoyl-CoA
+        to the purified complex and quantified HHQ by HPLC. The existing pqsbc-pao1-net-hhq-formation
+        graph retains the construct and cyclization limits.
 discussions:
 - discussion_id: curator-pqsbc-construct-and-reaction-boundaries
   kind: CURATION_TODO
@@ -334,6 +525,36 @@ discussions:
   - reference: https://doi.org/10.2210/pdb5DWZ/pdb
     evidence_source: PDB database, retrieved 2026-10-11
     notes: Construct, chain coverage and assembly metadata inspected independently.
+- discussion_id: curator-pqsade-annotation-and-primary-evidence
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: Which PqsA/PqsD/PqsE primary assays and constructs can be independently
+    verified?
+  rationale: Three native PAO1 references and their catalytic annotations are grounded
+    from reviewed UniProt entries and exact genomic/GenPept sequences. The 2008 PqsA
+    PDF was inaccessible, the 2013 PqsABCD page returned a browser challenge, and
+    the 2008 PqsD full-text endpoint returned HTTP 500. No alternate retrieval was
+    attempted. PqsE primary assay papers were not inspected. Database bibliography
+    entries are not treated as inspected experiments.
+  notes: No essentiality, PA14 regulatory function, DHQ product, kinetic value, experimental
+    construct identity or complete-route reconstitution is asserted. The 2016 PqsBC
+    paper is primary evidence only for the final net assay connection, not for new
+    PqsA/D/E catalytic experiments. Intermediate names remain ungrounded rather than
+    assigning an unaudited protonation-specific ChEBI identifier. Issue822, source-owned
+    chemistry, the pre-existing PqsBC graph and SEEDED status remain unchanged.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/Q9I4X3/entry
+    evidence_source: UniProtKB reviewed entry version 115, retrieved 2026-10-11
+    notes: Catalytic annotation adopted as a database assertion; primary assay and
+      construct audit remains separate.
+  - reference: https://www.uniprot.org/uniprotkb/P20582/entry
+    evidence_source: UniProtKB reviewed entry version 147, retrieved 2026-10-11
+    notes: Catalytic annotation adopted as a database assertion; primary assay and
+      construct audit remains separate.
+  - reference: https://www.uniprot.org/uniprotkb/P20581/entry
+    evidence_source: UniProtKB reviewed entry version 129, retrieved 2026-10-11
+    notes: Catalytic annotation adopted as a database assertion; primary assay and
+      construct audit remains separate.
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
   curator: seed_from_sources
@@ -350,4 +571,12 @@ curation_history:
     references, complex association and net HHQ assay output. Preserve construct,
     cyclization, oligomerization and chemical-source caveats; leave source-owned fields
     and SEEDED status unchanged.
+  llm_assisted: true
+- timestamp: '2026-10-11T15:53:36Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add three sequence-audited native PAO1 PqsA/PqsD/PqsE references and a
+    database-annotated precursor graph, connected to the separately inspected PqsBC
+    net HHQ assay. Preserve primary-access, construct, essentiality and chemical-grounding
+    limits; retain all existing graph content and source-owned fields.
   llm_assisted: true
