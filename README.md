@@ -70,7 +70,7 @@ field coverage (records carrying at least one item):
   bioactivities                         176
   bioactivity_summary                   318
   molecular_targets                      14
-  causal_graphs                         272
+  causal_graphs                         273
   related_records                       210
   discussions                           337
 

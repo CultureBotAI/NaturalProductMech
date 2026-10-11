@@ -247,6 +247,272 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0001118, BGC0001886.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+- discussion_id: curator-endocrocin-enc-reference-and-experimental-limits
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: Which experimental strains and native reactions support the Enc associations
+    and the imported Af293 producer grade?
+  rationale: Native Af293 sequences and their placement in BGC0001118 are verified,
+    but database genetic annotations do not by themselves establish the experimental
+    allele, source-strain attribution or exact catalytic mechanism.
+  notes: EncA/Q4W944, EncB/Q4W945, EncC/A4DA85 and EncD/Q4W946 match complete spliced
+    contig CDSs, deposited translations, GenPept and UniProt, with an independently
+    checked reverse-complement chromosome mapping. EncD uses EAL84395.2 and UniProt
+    sequence version 2, not an older sequence. The new graph is explicitly DATABASE_ASSERTION
+    plus reference-identity CURATOR_INFERENCE, with no newly inspected PRIMARY_EXPERIMENT
+    evidence. Previously inspected PubMed metadata for PMID:22492455 labels a CEA17
+    delta-nkuB background; this is not equated with the native Af293 references or
+    a complete allele determination. The 2012 article DOI:10.1128/AEM.07710-11 encountered
+    a browser challenge, the 2013 DOI:10.1371/journal.ppat.1003289 publisher link
+    was inaccessible, and the 2016 DOI:10.1111/1462-2920.13007 metadata request was
+    rate-limited; no alternate retrieval was attempted. Their citations within UniProt
+    remain database evidence. EncA reaction stoichiometry carries ECO:0000305; EncB
+    reaction chemistry is transferred by similarity from Q0CCY4; EncD exact chemistry
+    is unresolved. Neither a shared pathway paragraph nor a deletion phenotype establishes
+    every catalytic step. Distinct Tpc and regulatory-protein query hits are not adopted
+    without their own scope and identity audits. The Claviceps purpurea 20.1 BGC0001886
+    evidence is not merged into the Af293 graph, and the original shared-structure
+    discussion remains open and unchanged. No antimicrobial or immunosuppressive protein
+    target is inferred from phenotype screening. Source-owned fields, source grades,
+    prior history and SEEDED status are preserved; this curation is not a full-record
+    REVIEWED sign-off.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/Q4W944/entry
+    evidence_source: Reviewed UniProtKB database annotation, retrieved 2026-10-11
+    notes: Genetic association and reference/citation context, not newly inspected
+      full primary methods.
+  - reference: https://www.uniprot.org/uniprotkb/Q4W945/entry
+    evidence_source: Reviewed UniProtKB database annotation, retrieved 2026-10-11
+    notes: Specific reaction transferred by similarity; not adopted as independently
+      demonstrated native chemistry.
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/160483
+    evidence_source: PubChem and independent RDKit representation audit, retrieved
+      2026-10-11
+    notes: Neutral C16H10O7; SMILES, InChI and InChIKey agree, with no stereocenters.
+      Representation consistency does not resolve experimental strain or the shared-structure
+      question.
+causal_graphs:
+- graph_id: endocrocin-enc-reference-genetics
+  scope: BIOSYNTHESIS
+  description: Database-annotated endocrocin genetic associations with sequence-verified
+    Af293 EncA/B/C/D reference proteins. UniProt reports loss after encA/B/C disruption
+    and increased production after encD disruption. These are selected native references,
+    not verified experimental alleles. Primary methods and the experimental-strain
+    mapping remain unresolved; effects are not universal requirements across conditions
+    or alternative pathways. No complete reaction sequence, direct regulation, protein
+    complex, bioactivity target or source-grade upgrade is asserted.
+  nodes:
+  - node_id: enca
+    label: EncA (Af293 reference)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4W944
+  - node_id: encb
+    label: EncB (Af293 reference)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4W945
+  - node_id: encc
+    label: EncC (Af293 reference)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A4DA85
+  - node_id: encd
+    label: EncD (Af293 reference)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4W946
+  - node_id: production
+    label: Endocrocin production in the database-reported genetic context
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: endocrocin
+    label: Endocrocin
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:64450
+  edges:
+  - subject: enca
+    predicate: has_database_annotated_deletion_associated_loss_of
+    object: production
+    notes: The node is a selected native Af293 protein reference for the named gene.
+      The edge is a database-reported genetic phenotype, not the direct molecular
+      action of the canonical protein or proof that the experimental allele is identical
+      to Af293.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q4W944/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Abolishes the production of endocrocin
+      notes: 'Reviewed UniProtKB/Swiss-Prot disruption-phenotype annotation, entry
+        version 121, sequence version 1, gene encA, AFUA_4G00210, 1775 aa, NCBITaxon:330879.
+        The disruption annotation cites PMID22492455 and PMID23592999. The exact stoichiometric
+        catalytic annotation instead carries ECO:0000305. Neither that reaction, a
+        purified-protein assay nor the separate virulence annotation is asserted here.
+        Primary methods, exact experimental strain and complete allele were not independently
+        inspected. The reported effect is not generalized to every strain, culture
+        condition or alternative endocrocin route. Protein-existence annotation remains
+        1: Evidence at protein level; sequence agreement is not a new experimental
+        demonstration.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EAL84397.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: 'Native Af293 reference AFUA_4G00210, 1775 aa, EAL84397.1: join(AAHF01000017.1:384731..385044,
+        AAHF01000017.1:385106..385406, AAHF01000017.1:385458..388895, AAHF01000017.1:388954..390228).
+        Complete CDS translation with 4 spliced exons, deposited translation, separately
+        retrieved GenPept and reviewed UniProt sequences match exactly. Gene/locus
+        and explicit UniProt nucleotide/protein cross-references also agree. This
+        establishes reference identity, not the sequence of a tested deletion strain
+        or an engineered construct.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CM000172.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: The native contig interval AAHF01000017.1:380991..390228 is the exact
+        reverse complement of chromosome 4 CM000172.1:55988..65225 within the source-listed
+        BGC0001118 interval 54334..75724. This protein's chromosome exons, in translation
+        order with 1-based inclusive coordinates, are 61172..61485 (-), 60810..61110
+        (-), 57321..60758 (-), 55988..57262 (-). Spliced chromosome translation also
+        matches the deposited, GenPept and UniProt sequences. Genomic location and
+        sequence consistency do not independently demonstrate production by this strain
+        or revalidate the imported BGC_CHARACTERIZED grade.
+  - subject: encb
+    predicate: has_database_annotated_deletion_associated_loss_of
+    object: production
+    notes: The node is a selected native Af293 protein reference for the named gene.
+      The edge is a database-reported genetic phenotype, not the direct molecular
+      action of the canonical protein or proof that the experimental allele is identical
+      to Af293.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q4W945/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Abolishes the production of endocrocin
+      notes: 'Reviewed UniProtKB/Swiss-Prot disruption-phenotype annotation, entry
+        version 91, sequence version 1, gene encB, AFUA_4G00220, 315 aa, NCBITaxon:330879.
+        The disruption annotation cites PMID22492455. Its specific Rhea reaction is
+        transferred by similarity, ECO:0000250 from Q0CCY4; it is not independently
+        demonstrated native EncB chemistry in this graph. Primary methods, exact experimental
+        strain and complete allele were not independently inspected. The reported
+        effect is not generalized to every strain, culture condition or alternative
+        endocrocin route. Protein-existence annotation remains 1: Evidence at protein
+        level; sequence agreement is not a new experimental demonstration.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EAL84396.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: 'Native Af293 reference AFUA_4G00220, 315 aa, EAL84396.1: join(AAHF01000017.1:383360..383491,
+        AAHF01000017.1:383551..384366). Complete CDS translation with 2 spliced exons,
+        deposited translation, separately retrieved GenPept and reviewed UniProt sequences
+        match exactly. Gene/locus and explicit UniProt nucleotide/protein cross-references
+        also agree. This establishes reference identity, not the sequence of a tested
+        deletion strain or an engineered construct.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CM000172.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: The native contig interval AAHF01000017.1:380991..390228 is the exact
+        reverse complement of chromosome 4 CM000172.1:55988..65225 within the source-listed
+        BGC0001118 interval 54334..75724. This protein's chromosome exons, in translation
+        order with 1-based inclusive coordinates, are 62725..62856 (-), 61850..62665
+        (-). Spliced chromosome translation also matches the deposited, GenPept and
+        UniProt sequences. Genomic location and sequence consistency do not independently
+        demonstrate production by this strain or revalidate the imported BGC_CHARACTERIZED
+        grade.
+  - subject: encc
+    predicate: has_database_annotated_deletion_associated_loss_of
+    object: production
+    notes: The node is a selected native Af293 protein reference for the named gene.
+      The edge is a database-reported genetic phenotype, not the direct molecular
+      action of the canonical protein or proof that the experimental allele is identical
+      to Af293.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A4DA85/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: abolishes the production of endocrocin
+      notes: 'Reviewed UniProtKB/Swiss-Prot disruption-phenotype annotation, entry
+        version 63, sequence version 1, gene encC, AFUA_4G00225, 181 aa, NCBITaxon:330879.
+        The disruption annotation cites PMID22492455 and also mentions unstable anthrone
+        production. No exact anthrone structure, final reaction, spontaneous oxidation
+        rate or substrate-product step is assigned here. Primary methods, exact experimental
+        strain and complete allele were not independently inspected. The reported
+        effect is not generalized to every strain, culture condition or alternative
+        endocrocin route. Protein-existence annotation remains 1: Evidence at protein
+        level; sequence agreement is not a new experimental demonstration.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EBA27176.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: 'Native Af293 reference AFUA_4G00225, 181 aa, EBA27176.1: complement(join(AAHF01000017.1:382421..382905,
+        AAHF01000017.1:382987..383047)). Complete CDS translation with 2 spliced exons,
+        deposited translation, separately retrieved GenPept and reviewed UniProt sequences
+        match exactly. Gene/locus and explicit UniProt nucleotide/protein cross-references
+        also agree. This establishes reference identity, not the sequence of a tested
+        deletion strain or an engineered construct.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CM000172.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: The native contig interval AAHF01000017.1:380991..390228 is the exact
+        reverse complement of chromosome 4 CM000172.1:55988..65225 within the source-listed
+        BGC0001118 interval 54334..75724. This protein's chromosome exons, in translation
+        order with 1-based inclusive coordinates, are 63169..63229 (+), 63311..63795
+        (+). Spliced chromosome translation also matches the deposited, GenPept and
+        UniProt sequences. Genomic location and sequence consistency do not independently
+        demonstrate production by this strain or revalidate the imported BGC_CHARACTERIZED
+        grade.
+  - subject: encd
+    predicate: has_database_annotated_deletion_associated_increase_in
+    object: production
+    notes: The node is a selected native Af293 protein reference for the named gene.
+      The edge is a database-reported genetic phenotype, not the direct molecular
+      action of the canonical protein or proof that the experimental allele is identical
+      to Af293.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q4W946/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Results in increased endocrocin production
+      notes: 'Reviewed UniProtKB/Swiss-Prot disruption-phenotype annotation, entry
+        version 101, sequence version 2, gene encD, AFUA_4G00230, 337 aa, NCBITaxon:330879.
+        The disruption annotation cites PMID22492455 and has the opposite production
+        direction to the other three deletions. Increased product after deletion does
+        not establish direct transcriptional repression, a specific endocrocin-modifying
+        reaction or a quantified fold change. The database leaves the exact function
+        unresolved. Primary methods, exact experimental strain and complete allele
+        were not independently inspected. The reported effect is not generalized to
+        every strain, culture condition or alternative endocrocin route. Protein-existence
+        annotation remains 1: Evidence at protein level; sequence agreement is not
+        a new experimental demonstration.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EAL84395.2
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: 'Native Af293 reference AFUA_4G00230, 337 aa, EAL84395.2: join(AAHF01000017.1:380991..381216,
+        AAHF01000017.1:381265..381740, AAHF01000017.1:381804..382115). Complete CDS
+        translation with 3 spliced exons, deposited translation, separately retrieved
+        GenPept and reviewed UniProt sequences match exactly. Gene/locus and explicit
+        UniProt nucleotide/protein cross-references also agree. This establishes reference
+        identity, not the sequence of a tested deletion strain or an engineered construct.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CM000172.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: The native contig interval AAHF01000017.1:380991..390228 is the exact
+        reverse complement of chromosome 4 CM000172.1:55988..65225 within the source-listed
+        BGC0001118 interval 54334..75724. This protein's chromosome exons, in translation
+        order with 1-based inclusive coordinates, are 65000..65225 (-), 64476..64951
+        (-), 64101..64412 (-). Spliced chromosome translation also matches the deposited,
+        GenPept and UniProt sequences. Genomic location and sequence consistency do
+        not independently demonstrate production by this strain or revalidate the
+        imported BGC_CHARACTERIZED grade.
+  - subject: production
+    predicate: produces
+    object: endocrocin
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q4W944/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: The reviewed function annotation identifies the enc cluster with endocrocin
+        biosynthesis. This names the compound output of the database-described process,
+        not a final EncD-catalyzed reaction, a complete reconstitution, or production
+        in every mutant. The stored endocrocin structure agrees with PubChem CID 160483
+        and an independent RDKit representation check. Atrochrysone derivatives, anthrones
+        and trypacidin are not equated with this exact owner.
 curation_history:
 - timestamp: '2026-09-10T05:54:14Z'
   curator: seed_from_sources
@@ -256,3 +522,19 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-11T21:00:08Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add four sequence-verified Af293 EncA/B/C/D reference proteins with explicitly
+    database-backed genetic associations, stable identity URLs and short verbatim
+    snippets. Distinguish reference identity from experimental alleles, direct reactions
+    and universal pathway requirements. Preserve source-owned fields, grades, shared-structure
+    discussion and SEEDED status.
+  llm_assisted: true
+- timestamp: '2026-10-11T21:10:28Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: 'Resolve issue #832: preserve the seeded discussion section before the
+    new causal graph, matching seeder emission order. No biological claim or prior
+    history changed.'
+  llm_assisted: true
