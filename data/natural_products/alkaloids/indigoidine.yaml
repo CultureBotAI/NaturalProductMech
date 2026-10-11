@@ -421,7 +421,7 @@ causal_graphs:
         data were not re-inspected. The differently structured BGC0002295 record also
         named indigoidine is not treated as equivalent.'
 discussions:
-- discussion_id: indigoidine-glna-construct-identity
+- discussion_id: curator-indigoidine-glna-construct-identity
   kind: KNOWLEDGE_GAP
   status: OPEN
   posed_by: codex
@@ -506,4 +506,11 @@ curation_history:
     1410-bp native references and deleted UniProt C6EF31. Preserved all prior mechanisms,
     source fields, grades and history; no catalytic step, construct equivalence or
     native producer/cluster claim added.
+  llm_assisted: true
+- timestamp: '2026-10-11T02:51:36Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Migrated the GlnA construct-identity discussion to the reserved curator-
+    namespace so the seeder preserves it in full. Corrects the reproduction defect
+    found in PR #796; preserves all scientific claims, evidence and prior history.'
   llm_assisted: true
