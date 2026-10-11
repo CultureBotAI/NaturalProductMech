@@ -229,6 +229,45 @@ discussions:
   resolved_date: '2026-09-27'
   resolution_note: MIBiG BGC0001345.5, BGC0002324.3, BGC0002491.3, and BGC0002492.3
     all intentionally store exact myxochelin A rows with Standard InChIKey WNBVGSNESTZACV-LBPRGKRZSA-N.
+- discussion_id: curator-m920-protein-and-product-scope
+  kind: CURATION_TODO
+  status: OPEN
+  posed_by: codex
+  posed_date: '2026-10-11'
+  attaches_to:
+  - causal_graphs#myxochelin-a-m920-proposed-biosynthesis
+  prompt: Can the m9-20 readout be assigned to this exact stereoisomer, and which
+    clone proteins have experimentally demonstrated myxochelin functions?
+  rationale: The new graph preserves the paper's reported product identity without
+    an exact-structure endpoint. HRMS and C18 standard co-elution do not independently
+    establish absolute configuration. Protein identities are deposited reference sequences,
+    whereas their roles follow homology. This is an evidence-resolution gap, not evidence
+    that the product is a different enantiomer.
+  evidence:
+  - reference: DOI:10.1093/femsle/fnx155
+    supports: PARTIAL
+    evidence_source: primary main text and Figure 4
+    explanation: Whole-clone expression yielded the reported myxochelin A peak. The
+      paper describes an apparently truncated mxcF and proposes host PhzD-like compensation;
+      neither isolated clone-protein catalysis nor the compensation mechanism was
+      demonstrated in the inspected main text. The supplement remains uninspected.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/KY560365.1
+    supports: SUPPORT
+    evidence_source: GenBank, retrieved 2026-10-11
+    explanation: 'The MxcF-like region contains two separately annotated CDSs: ASV47082.1,
+      214 aa, and ASV47083.1, 70 aa. Their sequences match different parts of reference
+      MxcF; this does not establish two functional enzymes or justify fusing them.
+      ASV47083.1 is labelled isochorismatase in GenPept but its conserved-domain annotation
+      is carrier-protein-like. ASV47086.1 is the 253-aa PPTase reference; clone-level
+      indigoidine rescue is not an isolated-protein myxochelin activation experiment.'
+  notes: Resolve the standard's provenance and stereochemical applicability before
+    grounding the product endpoint. Obtain direct functional evidence before promoting
+    the four inferred edges or adopting the withheld proteins. No donor species, native-producer
+    claim, UniProt homolog substitution, physical complex, pathway completion or REVIEWED
+    status is inferred. Bounded UniProt queries for the locus and seven accessions
+    returned no exact hits on 2026-10-11; that is not proof that UniProt entries do
+    not exist. Existing imported occurrences and producer claims are preserved, not
+    revalidated.
 biosynthetic_pathway:
 - step_number: 1
   enzyme_id: UniProtKB:Q9F638
@@ -446,6 +485,196 @@ causal_graphs:
       retrieved_on: '2026-09-27'
       notes: UniProtKB:Q9F636 resolves to the AF299336.1 mxcG gene product used for
         the Stigmatella myxochelin pathway.
+- graph_id: myxochelin-a-m920-proposed-biosynthesis
+  scope: BIOSYNTHESIS
+  description: Partial, explicitly proposed protein assignments for environmental
+    clone m9-20, experimentally associated with a reported myxochelin A readout in
+    an engineered S. albus J1074 reporter. Four exact deposited protein references
+    are grounded; their individual catalytic functions are inferred, not assayed.
+    The product readout is deliberately not grounded to this stereospecific owner.
+    ASV47082.1/ASV47083.1 (MxcF-related), ASV47086.1 (PPTase), and proposed host PhzD
+    compensation are not assigned myxochelin-specific functions here. Keep separate
+    from the existing Stigmatella MxcE/F/G pathway.
+  nodes:
+  - node_id: mxcC_like
+    label: m9-20 MxcC-like reference protein
+    node_type: PROTEIN
+    identifier: NCBIProtein:ASV47079.1
+    grounding_status: GROUNDED
+  - node_id: mxcD_like
+    label: m9-20 MxcD-like reference protein
+    node_type: PROTEIN
+    identifier: NCBIProtein:ASV47080.1
+    grounding_status: GROUNDED
+  - node_id: mxcE_like
+    label: m9-20 MxcE-like reference protein
+    node_type: PROTEIN
+    identifier: NCBIProtein:ASV47081.1
+    grounding_status: GROUNDED
+  - node_id: mxcG_like
+    label: m9-20 MxcG-like reference protein
+    node_type: PROTEIN
+    identifier: NCBIProtein:ASV47084.1
+    grounding_status: GROUNDED
+  - node_id: m920_locus
+    label: environmental clone m9-20 (KY560365.1)
+    node_type: GENE_CLUSTER
+    identifier: genbank:KY560365.1
+    grounding_status: GROUNDED
+  - node_id: hosted_biosynthesis
+    label: m9-20-dependent biosynthesis in engineered S. albus J1074
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: reported_myxochelin_a
+    label: reported myxochelin A (absolute configuration unverified)
+    node_type: COMPOUND
+    grounding_status: REVIEW_NEEDED
+  edges:
+  - subject: mxcC_like
+    predicate: is proposed to supply DHBA for
+    object: hosted_biosynthesis
+    notes: Inferred role of the deposited MxcC-like homolog, not an individual enzyme
+      assay, deletion, essentiality result or demonstrated physical interaction. Figure
+      4C homology and gene order, checked against reference-locus AF299336.1 protein
+      alignments, support this assignment. The experiment introduced the complete
+      cosmid into the engineered S. albus J1074 reporter, not this protein alone.
+      These are environmental-clone reference sequences, not the existing Stigmatella
+      UniProt proteins or verified expressed constructs. Exact product stereochemistry
+      remains unassigned; see curator-m920-protein-and-product-scope.
+    evidence:
+    - reference: DOI:10.1093/femsle/fnx155
+      evidence_type: CURATOR_INFERENCE
+      notes: Figures 4C-E compare the m9-20 cluster with the Stigmatella mxc cluster
+        and propose myxochelin biosynthesis. Individual m9-20 catalytic activities
+        were not tested in the inspected main text. The supplement was not inspected
+        and is not used as evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ASV47079.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: 2,3-dihydro-2,3-dihydroxybenzoate dehydrogenase
+      notes: 'GenPept ASV47079.1: 263 aa, coded by KY560365.1:8829..9620; annotated
+        2,3-dihydro-2,3-dihydroxybenzoate dehydrogenase. The sequence exactly matches
+        both the deposited CDS translation and its independent genetic-code-11 translation.
+        Source: uncultured bacterium, taxon 77133, clone m9-20, Texas desert soil.
+        This validates the reference identity, not the catalytic assignment.'
+  - subject: mxcD_like
+    predicate: is proposed to supply DHBA for
+    object: hosted_biosynthesis
+    notes: Inferred role of the deposited MxcD-like homolog, not an individual enzyme
+      assay, deletion, essentiality result or demonstrated physical interaction. Figure
+      4C homology and gene order, checked against reference-locus AF299336.1 protein
+      alignments, support this assignment. The experiment introduced the complete
+      cosmid into the engineered S. albus J1074 reporter, not this protein alone.
+      These are environmental-clone reference sequences, not the existing Stigmatella
+      UniProt proteins or verified expressed constructs. Exact product stereochemistry
+      remains unassigned; see curator-m920-protein-and-product-scope.
+    evidence:
+    - reference: DOI:10.1093/femsle/fnx155
+      evidence_type: CURATOR_INFERENCE
+      notes: Figures 4C-E compare the m9-20 cluster with the Stigmatella mxc cluster
+        and propose myxochelin biosynthesis. Individual m9-20 catalytic activities
+        were not tested in the inspected main text. The supplement was not inspected
+        and is not used as evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ASV47080.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: isochorismate synthase
+      notes: 'GenPept ASV47080.1: 388 aa, coded by KY560365.1:9667..10833; annotated
+        isochorismate synthase. The sequence exactly matches both the deposited CDS
+        translation and its independent genetic-code-11 translation. Source: uncultured
+        bacterium, taxon 77133, clone m9-20, Texas desert soil. This validates the
+        reference identity, not the catalytic assignment.'
+  - subject: mxcE_like
+    predicate: is proposed to activate DHBA for
+    object: hosted_biosynthesis
+    notes: Inferred role of the deposited MxcE-like homolog, not an individual enzyme
+      assay, deletion, essentiality result or demonstrated physical interaction. Figure
+      4C homology and gene order, checked against reference-locus AF299336.1 protein
+      alignments, support this assignment. The experiment introduced the complete
+      cosmid into the engineered S. albus J1074 reporter, not this protein alone.
+      These are environmental-clone reference sequences, not the existing Stigmatella
+      UniProt proteins or verified expressed constructs. Exact product stereochemistry
+      remains unassigned; see curator-m920-protein-and-product-scope.
+    evidence:
+    - reference: DOI:10.1093/femsle/fnx155
+      evidence_type: CURATOR_INFERENCE
+      notes: Figures 4C-E compare the m9-20 cluster with the Stigmatella mxc cluster
+        and propose myxochelin biosynthesis. Individual m9-20 catalytic activities
+        were not tested in the inspected main text. The supplement was not inspected
+        and is not used as evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ASV47081.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: enterobactin synthase subunit E
+      notes: 'GenPept ASV47081.1: 540 aa, coded by KY560365.1:10830..12452; annotated
+        enterobactin synthase subunit E. The sequence exactly matches both the deposited
+        CDS translation and its independent genetic-code-11 translation. Source: uncultured
+        bacterium, taxon 77133, clone m9-20, Texas desert soil. This validates the
+        reference identity, not the catalytic assignment.'
+  - subject: mxcG_like
+    predicate: is proposed to assemble lysine and DHBA during
+    object: hosted_biosynthesis
+    notes: Inferred role of the deposited MxcG-like homolog, not an individual enzyme
+      assay, deletion, essentiality result or demonstrated physical interaction. Figure
+      4C homology and gene order, checked against reference-locus AF299336.1 protein
+      alignments, support this assignment. The experiment introduced the complete
+      cosmid into the engineered S. albus J1074 reporter, not this protein alone.
+      These are environmental-clone reference sequences, not the existing Stigmatella
+      UniProt proteins or verified expressed constructs. Exact product stereochemistry
+      remains unassigned; see curator-m920-protein-and-product-scope.
+    evidence:
+    - reference: DOI:10.1093/femsle/fnx155
+      evidence_type: CURATOR_INFERENCE
+      notes: Figures 4C-E compare the m9-20 cluster with the Stigmatella mxc cluster
+        and propose myxochelin biosynthesis. Individual m9-20 catalytic activities
+        were not tested in the inspected main text. The supplement was not inspected
+        and is not used as evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ASV47084.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: non-ribosomal peptide synthetase
+      notes: 'GenPept ASV47084.1: 1387 aa, coded by KY560365.1:13299..17462; annotated
+        non-ribosomal peptide synthetase. The sequence exactly matches both the deposited
+        CDS translation and its independent genetic-code-11 translation. Source: uncultured
+        bacterium, taxon 77133, clone m9-20, Texas desert soil. This validates the
+        reference identity, not the catalytic assignment.'
+  - subject: m920_locus
+    predicate: supports biosynthesis in the engineered reporter host
+    object: hosted_biosynthesis
+    notes: Whole-clone heterologous-expression result in S. albus J1074::bpsA with
+      the Sfp-type PPTase deleted. The clone-specific metabolite was absent from the
+      empty-vector control. This does not assign a native donor species, make the
+      host a native producer, or establish that each listed protein is necessary or
+      sufficient. No physical complex is inferred.
+    evidence:
+    - reference: DOI:10.1093/femsle/fnx155
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: a single, clone-specific peak
+      notes: Main-text results and Figure 4A report a clone-specific peak from m9-20
+        culture extracts. The tested unit was the complete cosmid.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KY560365.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: KY560365.1 is the 27,396-nt m9-20 environmental insert; its reference
+        cites PMID:28817927. The deposited source is an uncultured bacterium, not
+        Streptomyces sp. FxanaC1 or the expression host.
+  - subject: hosted_biosynthesis
+    predicate: produces a metabolite reported as
+    object: reported_myxochelin_a
+    notes: 'Reported identification by HRMS and co-elution with a purified myxochelin
+      A standard: measured [M+H]+ 405.1657 versus calculated 405.1656 for C20H24N2O7.
+      The inspected methods describe C18 co-injection, not a chiral separation; Figure
+      4B does not specify stereochemistry. Standard provenance and the supporting
+      Figure S4 were not independently inspected. The readout therefore has no exact-structure
+      identifier: this edge does not prove the S-configured owner or its opposite
+      enantiomer, and reports no stereochemical contradiction.'
+    evidence:
+    - reference: DOI:10.1093/femsle/fnx155
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: HRMS analysis of the clone-specific peak
+      notes: Main-text results, analytical methods and Figure 4 identify the clone-dependent
+        peak as myxochelin A. The supplementary co-elution figure is cited by the
+        authors but was not inspected.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -474,3 +703,13 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-11T07:17:02Z'
+  curator: codex
+  action: ADDED_M920_PROPOSED_PROTEIN_GRAPH
+  changes: Added four GenPept-grounded m9-20 reference proteins (ASV47079.1, ASV47080.1,
+    ASV47081.1, ASV47084.1) as explicitly inferred biosynthetic participants, separately
+    from whole-clone expression evidence. Kept the reported product endpoint ungrounded
+    pending stereochemical review and opened a cited scope discussion. Withheld MxcF-related
+    proteins, PPTase myxochelin activation and host compensation claims. Preserved
+    all prior graphs, pathway steps, source-owned fields, status and history.
+  llm_assisted: true
