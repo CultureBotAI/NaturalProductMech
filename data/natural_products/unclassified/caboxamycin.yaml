@@ -84,6 +84,324 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: caboxamycin-cassette-production
+  scope: BIOSYNTHESIS
+  nodes:
+  - node_id: dt87_23840
+    label: DT87_23840 native reference (NTK937)
+    node_type: PROTEIN
+    identifier: NCBIProtein:KDQ70105.1
+    grounding_status: GROUNDED
+  - node_id: dt87_23845
+    label: DT87_23845 native reference (NTK937)
+    node_type: PROTEIN
+    identifier: NCBIProtein:KDQ70106.1
+    grounding_status: GROUNDED
+  - node_id: dt87_23850
+    label: DT87_23850 native reference (NTK937)
+    node_type: PROTEIN
+    identifier: NCBIProtein:KDQ70107.1
+    grounding_status: GROUNDED
+  - node_id: dt87_23855
+    label: DT87_23855 native reference (NTK937)
+    node_type: PROTEIN
+    identifier: NCBIProtein:KDQ70108.1
+    grounding_status: GROUNDED
+  - node_id: dt87_23860
+    label: DT87_23860 native reference (NTK937)
+    node_type: PROTEIN
+    identifier: NCBIProtein:KDQ70109.1
+    grounding_status: GROUNDED
+  - node_id: reported_construct
+    label: pSET-cbxABCDE (reported expression construct)
+    node_type: OTHER
+    grounding_status: UNGROUNDED
+  - node_id: expression_j1074
+    label: pSET-cbxABCDE expression in S. albus J1074
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: expression_b29
+    label: pSET-cbxABCDE expression in S. albus B29
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: caboxamycin
+    label: caboxamycin (acid; compound 1)
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-3a5e98b320
+    grounding_status: GROUNDED
+  edges:
+  - subject: dt87_23840
+    predicate: has a native CDS inferred within the reported insert interval of
+    object: reported_construct
+    evidence:
+    - reference: DOI:10.1186/s12934-017-0709-6
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Methods give SS/fw and AH/rv for the reported cbxABCDE insert. Removing
+        their restriction-site extensions leaves GATCTGCGACGTGTCGCCGTC and GGTGTTGTCGGGCATGGTG.
+        Their inward exact matches delimit native JJOB01000001.1:5312386..5318622
+        (6237 nt), which contains this complete CDS. The authors report sequence-checking
+        the PCR fragment, but the actual assayed insert sequence was not independently
+        inspected here.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/JJOB01000001.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Each primer annealing sequence has one exact match in the expected orientation
+        across this deposited 7003153-nt contig and none in the opposite orientation.
+        The interval contains five complete CDSs, KDQ70105.1-KDQ70109.1, plus 15 nt
+        of KDQ70110.1; the latter is not a sixth intact protein. Other contigs and
+        mismatch-tolerant PCR are outside this check.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/KDQ70105.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: hypothetical protein
+      notes: Native KDQ70105.1, locus DT87_23840, 456 aa, coded by JJOB01000001.1:5312522..5313892;
+        Streptomyces sp. NTK 937, taxon 1487711. Native DNA/code-11 translation, CDS
+        and separately retrieved GenPept sequence agree exactly. Product text is deposited
+        annotation, not an adopted substrate-specific enzyme function.
+    notes: This is an inferred native-reference-to-insert mapping, not direct sequencing
+      of the assayed plasmid, a confirmed cbxA-E alias assignment, or a claim of individual
+      expression, necessity, sufficiency or catalysis. No physical protein complex
+      is asserted.
+  - subject: dt87_23845
+    predicate: has a native CDS inferred within the reported insert interval of
+    object: reported_construct
+    evidence:
+    - reference: DOI:10.1186/s12934-017-0709-6
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Methods give SS/fw and AH/rv for the reported cbxABCDE insert. Removing
+        their restriction-site extensions leaves GATCTGCGACGTGTCGCCGTC and GGTGTTGTCGGGCATGGTG.
+        Their inward exact matches delimit native JJOB01000001.1:5312386..5318622
+        (6237 nt), which contains this complete CDS. The authors report sequence-checking
+        the PCR fragment, but the actual assayed insert sequence was not independently
+        inspected here.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/JJOB01000001.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Each primer annealing sequence has one exact match in the expected orientation
+        across this deposited 7003153-nt contig and none in the opposite orientation.
+        The interval contains five complete CDSs, KDQ70105.1-KDQ70109.1, plus 15 nt
+        of KDQ70110.1; the latter is not a sixth intact protein. Other contigs and
+        mismatch-tolerant PCR are outside this check.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/KDQ70106.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: 3-oxoacyl-ACP synthase
+      notes: Native KDQ70106.1, locus DT87_23845, 351 aa, coded by JJOB01000001.1:5313889..5314944;
+        Streptomyces sp. NTK 937, taxon 1487711. Native DNA/code-11 translation, CDS
+        and separately retrieved GenPept sequence agree exactly. Product text is deposited
+        annotation, not an adopted substrate-specific enzyme function.
+    notes: This is an inferred native-reference-to-insert mapping, not direct sequencing
+      of the assayed plasmid, a confirmed cbxA-E alias assignment, or a claim of individual
+      expression, necessity, sufficiency or catalysis. No physical protein complex
+      is asserted.
+  - subject: dt87_23850
+    predicate: has a native CDS inferred within the reported insert interval of
+    object: reported_construct
+    evidence:
+    - reference: DOI:10.1186/s12934-017-0709-6
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Methods give SS/fw and AH/rv for the reported cbxABCDE insert. Removing
+        their restriction-site extensions leaves GATCTGCGACGTGTCGCCGTC and GGTGTTGTCGGGCATGGTG.
+        Their inward exact matches delimit native JJOB01000001.1:5312386..5318622
+        (6237 nt), which contains this complete CDS. The authors report sequence-checking
+        the PCR fragment, but the actual assayed insert sequence was not independently
+        inspected here.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/JJOB01000001.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Each primer annealing sequence has one exact match in the expected orientation
+        across this deposited 7003153-nt contig and none in the opposite orientation.
+        The interval contains five complete CDSs, KDQ70105.1-KDQ70109.1, plus 15 nt
+        of KDQ70110.1; the latter is not a sixth intact protein. Other contigs and
+        mismatch-tolerant PCR are outside this check.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/KDQ70107.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Triostin synthetase I
+      notes: Native KDQ70107.1, locus DT87_23850, 557 aa, coded by JJOB01000001.1:5314937..5316610;
+        Streptomyces sp. NTK 937, taxon 1487711. Native DNA/code-11 translation, CDS
+        and separately retrieved GenPept sequence agree exactly. Product text is deposited
+        annotation, not an adopted substrate-specific enzyme function.
+    notes: This is an inferred native-reference-to-insert mapping, not direct sequencing
+      of the assayed plasmid, a confirmed cbxA-E alias assignment, or a claim of individual
+      expression, necessity, sufficiency or catalysis. No physical protein complex
+      is asserted.
+  - subject: dt87_23855
+    predicate: has a native CDS inferred within the reported insert interval of
+    object: reported_construct
+    evidence:
+    - reference: DOI:10.1186/s12934-017-0709-6
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Methods give SS/fw and AH/rv for the reported cbxABCDE insert. Removing
+        their restriction-site extensions leaves GATCTGCGACGTGTCGCCGTC and GGTGTTGTCGGGCATGGTG.
+        Their inward exact matches delimit native JJOB01000001.1:5312386..5318622
+        (6237 nt), which contains this complete CDS. The authors report sequence-checking
+        the PCR fragment, but the actual assayed insert sequence was not independently
+        inspected here.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/JJOB01000001.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Each primer annealing sequence has one exact match in the expected orientation
+        across this deposited 7003153-nt contig and none in the opposite orientation.
+        The interval contains five complete CDSs, KDQ70105.1-KDQ70109.1, plus 15 nt
+        of KDQ70110.1; the latter is not a sixth intact protein. Other contigs and
+        mismatch-tolerant PCR are outside this check.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/KDQ70108.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: hypothetical protein
+      notes: Native KDQ70108.1, locus DT87_23855, 125 aa, coded by JJOB01000001.1:5316607..5316984;
+        Streptomyces sp. NTK 937, taxon 1487711. Native DNA/code-11 translation, CDS
+        and separately retrieved GenPept sequence agree exactly. Product text is deposited
+        annotation, not an adopted substrate-specific enzyme function.
+    notes: This is an inferred native-reference-to-insert mapping, not direct sequencing
+      of the assayed plasmid, a confirmed cbxA-E alias assignment, or a claim of individual
+      expression, necessity, sufficiency or catalysis. No physical protein complex
+      is asserted.
+  - subject: dt87_23860
+    predicate: has a native CDS inferred within the reported insert interval of
+    object: reported_construct
+    evidence:
+    - reference: DOI:10.1186/s12934-017-0709-6
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Methods give SS/fw and AH/rv for the reported cbxABCDE insert. Removing
+        their restriction-site extensions leaves GATCTGCGACGTGTCGCCGTC and GGTGTTGTCGGGCATGGTG.
+        Their inward exact matches delimit native JJOB01000001.1:5312386..5318622
+        (6237 nt), which contains this complete CDS. The authors report sequence-checking
+        the PCR fragment, but the actual assayed insert sequence was not independently
+        inspected here.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/JJOB01000001.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Each primer annealing sequence has one exact match in the expected orientation
+        across this deposited 7003153-nt contig and none in the opposite orientation.
+        The interval contains five complete CDSs, KDQ70105.1-KDQ70109.1, plus 15 nt
+        of KDQ70110.1; the latter is not a sixth intact protein. Other contigs and
+        mismatch-tolerant PCR are outside this check.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/KDQ70109.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: amidohydrolase
+      notes: Native KDQ70109.1, locus DT87_23860, 519 aa, coded by JJOB01000001.1:5316981..5318540;
+        Streptomyces sp. NTK 937, taxon 1487711. Native DNA/code-11 translation, CDS
+        and separately retrieved GenPept sequence agree exactly. Product text is deposited
+        annotation, not an adopted substrate-specific enzyme function.
+    notes: This is an inferred native-reference-to-insert mapping, not direct sequencing
+      of the assayed plasmid, a confirmed cbxA-E alias assignment, or a claim of individual
+      expression, necessity, sufficiency or catalysis. No physical protein complex
+      is asserted.
+  - subject: reported_construct
+    predicate: was the construct used in
+    object: expression_j1074
+    evidence:
+    - reference: DOI:10.1186/s12934-017-0709-6
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: Results and Methods report pSET-cbxABCDE in S. albus J1074, with the
+        cbxABCDE cassette under ermE*p and pSETeTc vector controls. This is the reported
+        experimental construct, not an independently sequenced copy of the mapped
+        native reference interval.
+    notes: J1074 is kept separate from the B29 replacement background. Host metabolic
+      contributions are not assigned to specific proteins by this experiment.
+  - subject: expression_j1074
+    predicate: yielded detectable production of
+    object: caboxamycin
+    evidence:
+    - reference: DOI:10.1186/s12934-017-0709-6
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      snippet: afforded a substantial production of 1 in both strains
+      notes: Results and Figure 2 identify compound 1 after pSET-cbxABCDE expression
+        in S. albus J1074; compare its pSETeTc control and the NTK937 reference chromatogram.
+        The figure reports UPLC at 330 nm. Figure 1 distinguishes acid caboxamycin
+        (1) from its methyl ester (2) and hydroxylated analog (3). No absolute yield
+        is adopted.
+    notes: This supports production in the whole engineered host context, not production
+      by any one mapped protein or a cell-free five-protein system. Products 2-19,
+      proposed host compensation and bioactivity claims are outside this edge.
+  - subject: reported_construct
+    predicate: was the construct used in
+    object: expression_b29
+    evidence:
+    - reference: DOI:10.1186/s12934-017-0709-6
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: Results and Methods report pSET-cbxABCDE in S. albus B29, with the cbxABCDE
+        cassette under ermE*p and pSETeTc vector controls. This is the reported experimental
+        construct, not an independently sequenced copy of the mapped native reference
+        interval.
+    notes: B29 is the reported plm15-plm16 replacement background; it is not interchangeable
+      with J1074. No particular host compensating protein is identified here.
+  - subject: expression_b29
+    predicate: yielded detectable production of
+    object: caboxamycin
+    evidence:
+    - reference: DOI:10.1186/s12934-017-0709-6
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      snippet: afforded a substantial production of 1 in both strains
+      notes: Results and Figure 2 identify compound 1 after pSET-cbxABCDE expression
+        in S. albus B29; compare its pSETeTc control and the NTK937 reference chromatogram.
+        The figure reports UPLC at 330 nm. Figure 1 distinguishes acid caboxamycin
+        (1) from its methyl ester (2) and hydroxylated analog (3). No absolute yield
+        is adopted.
+    notes: This supports production in the whole engineered host context, not production
+      by any one mapped protein or a cell-free five-protein system. Products 2-19,
+      proposed host compensation and bioactivity claims are outside this edge.
+  description: Five versioned native protein references are linked by explicitly inferred
+    CDS-to-insert mappings to the reported pSET-cbxABCDE construct. Separate primary
+    experimental edges describe caboxamycin production in S. albus J1074 and B29.
+    The five complete native CDSs do not establish one-to-one cbx aliases, individual
+    enzyme reactions or a physical protein complex; 15 nt of the next CDS is not a
+    sixth intact protein. The authors report PCR sequence checking, but the exact
+    assayed insert sequence was not independently inspected. The product endpoint
+    is acid caboxamycin (compound 1), not its methyl ester or other derivatives. Native
+    producer/BGC evidence grades and the natural-origin classification are unchanged.
+discussions:
+- discussion_id: curator-caboxamycin-cassette-and-protein-scope
+  kind: CURATION_TODO
+  status: OPEN
+  posed_by: codex
+  posed_date: '2026-10-11'
+  attaches_to:
+  - causal_graphs#caboxamycin-cassette-production
+  prompt: Can the cbxA-E aliases and assayed construct be tied directly to exact native
+    protein versions, and which individual catalytic or genetic effects are established?
+  rationale: Primer mapping identifies five complete native CDSs, but is not direct
+    evidence of the assayed insert sequence or each protein function. Whole-cassette
+    production in J1074 and B29 cannot identify individual necessities or host compensating
+    proteins. Legacy product annotations must not be substituted for substrate-specific
+    assays.
+  evidence:
+  - reference: DOI:10.1186/s12934-017-0709-6
+    supports: PARTIAL
+    evidence_source: Inspected 2017 primary study
+    explanation: Methods supply cassette primers and report PCR sequence checking.
+      Results and Figure 2 report acid caboxamycin in both hosts. The assayed construct
+      sequence and individual native protein aliases are not directly grounded by
+      the inspected text.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/JJOB01000001.1
+    supports: PARTIAL
+    evidence_source: Native NTK937 sequence deposit
+    explanation: Exact primer mapping and independent GenPept checks identify five
+      complete native CDSs plus a 15-nt overlap into the next CDS. Upstream DT87_23835
+      is annotated as disrupted and is not adopted as an intact CbxR protein.
+  notes: The original cluster study DOI:10.1111/1751-7915.12716 and official MIBiG
+    BGC0001444 gene-level entry remain uninspected under prior access stops; no alternate
+    retrieval was used. Earlier knockout/essentiality claims cited in the 2017 Background
+    are not adopted as this study's experiments. Exact-strain UniProt probes for cbxA
+    and DT87_23840 returned no result; changed-gene/taxon suggestions were rejected.
+    No global UniProt absence is claimed, and exact versioned GenPept references are
+    used. Unidentified host compensators, an unspecified O-methyltransferase, native
+    CbxR and derivatives 2-19 require separate evidence and chemical contexts. Keep
+    SEEDED status and all source-owned chemistry, occurrences, producer and cluster
+    grades.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -93,3 +411,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-11T09:29:44Z'
+  curator: codex
+  action: ADDED_CABOXAMYCIN_CASSETTE_PROTEIN_REFERENCES
+  changes: Added five versioned native protein references with inferred CDS-to-cassette
+    mappings, distinct J1074/B29 cassette-expression production contexts, DOI/stable
+    URL evidence and source snippets. Preserved chemical-form boundaries, source-owned
+    claims and SEEDED status; opened construct/alias/individual-function questions.
+    No individual enzyme reaction, physical complex or producer-grade upgrade.
+  llm_assisted: true
