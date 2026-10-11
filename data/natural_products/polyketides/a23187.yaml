@@ -273,6 +273,227 @@ causal_graphs:
     calcimycin production in WQL2 and WQL4. These are whole-strain genetic effects,
     not direct enzyme reactions or proof against polar effects. No physical complex,
     CalN2 rescue transfer, CalA3 function or CalR3/CalT regulatory mechanism is asserted.
+- graph_id: calcimycin-proposed-carrier-pks-assembly
+  scope: BIOSYNTHESIS
+  nodes:
+  - node_id: caln3_reference
+    label: SchN3 native reference
+    node_type: PROTEIN
+    identifier: UniProtKB:F8QZR5
+    grounding_status: GROUNDED
+  - node_id: cala1_reference
+    label: SchA1 native reference
+    node_type: PROTEIN
+    identifier: UniProtKB:F8QZQ3
+    grounding_status: GROUNDED
+  - node_id: cala2_reference
+    label: SchA2 native reference
+    node_type: PROTEIN
+    identifier: UniProtKB:F8QZQ4
+    grounding_status: GROUNDED
+  - node_id: cala5_reference
+    label: SchA5 native reference
+    node_type: PROTEIN
+    identifier: UniProtKB:F8QZS1
+    grounding_status: GROUNDED
+  - node_id: cala4_reference
+    label: SchA4 native reference
+    node_type: PROTEIN
+    identifier: UniProtKB:F8QZS0
+    grounding_status: GROUNDED
+  - node_id: proposed_assembly
+    label: 2011 proposed carrier-PKS assembly
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: calcimycin
+    label: calcimycin (A23187)
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-18de581c96
+    grounding_status: GROUNDED
+  edges:
+  - subject: caln3_reference
+    predicate: is the native reference inferred for a proposed participant in
+    object: proposed_assembly
+    evidence:
+    - reference: DOI:10.1128/AAC.01130-10
+      evidence_type: COMPUTATIONAL_PREDICTION
+      retrieved_on: '2026-10-11'
+      notes: Figure7A-B proposes a carrier-bound pyrrole starter supplied to the first
+        PKS module. Neither holo/loading state nor starter transfer is individually
+        demonstrated here.
+    - reference: DOI:10.1128/AAC.01130-10
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Table3 assigns CalN3 a 87-aa product. Its deposited HM452329 sequence
+        position, name and annotation support mapping to SchN3. The cal/Sch alias
+        and predicted role are not an assayed-protein identity claim.
+    - reference: https://www.uniprot.org/uniprotkb/F8QZR5/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Unreviewed entry version28, sequence version1: SchN3, 87aa; explicit
+        HM452329/AEH42485.1 cross-reference. UniProt species taxon1969 retains the
+        NRRL3882 nucleotide-reference strain attribution.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AEH42485.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: proline carrier protein
+      notes: AEH42485.1, HM452329.1:34679..34942; NRRL3882, taxon1079985. Native DNA/code11/CDS,
+        independently retrieved GenPept and direct UniProt sequences agree exactly.
+        Deposited product text is an annotation, not a catalytic measurement.
+    notes: The native protein node is not a purified, modified or engineered assay
+      construct. This edge records a predicted contribution, not demonstrated catalysis,
+      direct binding, a physical complex or an individual knockout phenotype.
+  - subject: cala1_reference
+    predicate: is the native reference inferred for a proposed participant in
+    object: proposed_assembly
+    evidence:
+    - reference: DOI:10.1128/AAC.01130-10
+      evidence_type: COMPUTATIONAL_PREDICTION
+      retrieved_on: '2026-10-11'
+      notes: Table4 and Figure7B assign modules1a/1b to the first two elongations,
+        both using methylmalonyl units, with ketoreduction in the second module. These
+        are domain-based predictions.
+    - reference: DOI:10.1128/AAC.01130-10
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Table3 assigns CalA1 a 2942-aa product. Its deposited HM452329 sequence
+        position, name and annotation support mapping to SchA1. The cal/Sch alias
+        and predicted role are not an assayed-protein identity claim.
+    - reference: https://www.uniprot.org/uniprotkb/F8QZQ3/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Unreviewed entry version60, sequence version1: SchA1, 2942aa; explicit
+        HM452329/AEH42473.1 cross-reference. UniProt species taxon1969 retains the
+        NRRL3882 nucleotide-reference strain attribution.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AEH42473.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: polyketide synthase
+      notes: AEH42473.1, HM452329.1:5100..13928; NRRL3882, taxon1079985. Native DNA/code11/CDS,
+        independently retrieved GenPept and direct UniProt sequences agree exactly.
+        Deposited product text is an annotation, not a catalytic measurement.
+    notes: The native protein node is not a purified, modified or engineered assay
+      construct. This edge records a predicted contribution, not demonstrated catalysis,
+      direct binding, a physical complex or an individual knockout phenotype.
+  - subject: cala2_reference
+    predicate: is the native reference inferred for a proposed participant in
+    object: proposed_assembly
+    evidence:
+    - reference: DOI:10.1128/AAC.01130-10
+      evidence_type: COMPUTATIONAL_PREDICTION
+      retrieved_on: '2026-10-11'
+      notes: Table4 proposes module3 with a methylmalonyl extender and full beta-carbon
+        reduction. Its placement relative to CalA5b follows the authors' tentative
+        assembly model, not genomic order.
+    - reference: DOI:10.1128/AAC.01130-10
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Table3 assigns CalA2 a 2063-aa product. Its deposited HM452329 sequence
+        position, name and annotation support mapping to SchA2. The cal/Sch alias
+        and predicted role are not an assayed-protein identity claim.
+    - reference: https://www.uniprot.org/uniprotkb/F8QZQ4/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Unreviewed entry version66, sequence version1: SchA2, 2063aa; explicit
+        HM452329/AEH42474.1 cross-reference. UniProt species taxon1969 retains the
+        NRRL3882 nucleotide-reference strain attribution.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AEH42474.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: polyketide synthase
+      notes: AEH42474.1, HM452329.1:14292..20483; NRRL3882, taxon1079985. Native DNA/code11/CDS,
+        independently retrieved GenPept and direct UniProt sequences agree exactly.
+        Deposited product text is an annotation, not a catalytic measurement.
+    notes: The native protein node is not a purified, modified or engineered assay
+      construct. This edge records a predicted contribution, not demonstrated catalysis,
+      direct binding, a physical complex or an individual knockout phenotype.
+  - subject: cala5_reference
+    predicate: is the native reference inferred for a proposed participant in
+    object: proposed_assembly
+    evidence:
+    - reference: DOI:10.1128/AAC.01130-10
+      evidence_type: COMPUTATIONAL_PREDICTION
+      retrieved_on: '2026-10-11'
+      notes: 'Table4 proposes modules4/5: a malonyl extension with inactive DH/KR,
+        then a methylmalonyl extension with full reduction. Assignment assumes CalA5b
+        follows CalA5a; individual activities and handoffs are not demonstrated.'
+      snippet: we tentatively named Cal5a PKS module 4
+    - reference: DOI:10.1128/AAC.01130-10
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Table3 assigns CalA5 a 3956-aa product. Its deposited HM452329 sequence
+        position, name and annotation support mapping to SchA5. The cal/Sch alias
+        and predicted role are not an assayed-protein identity claim.
+    - reference: https://www.uniprot.org/uniprotkb/F8QZS1/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Unreviewed entry version66, sequence version1: SchA5, 3956aa; explicit
+        HM452329/AEH42491.1 cross-reference. UniProt species taxon1969 retains the
+        NRRL3882 nucleotide-reference strain attribution.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AEH42491.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: polyketide synthase
+      notes: AEH42491.1, complement(HM452329.1:48948..60818); NRRL3882, taxon1079985.
+        Native DNA/code11/CDS, independently retrieved GenPept and direct UniProt
+        sequences agree exactly. Deposited product text is an annotation, not a catalytic
+        measurement.
+    notes: The native protein node is not a purified, modified or engineered assay
+      construct. This edge records a predicted contribution, not demonstrated catalysis,
+      direct binding, a physical complex or an individual knockout phenotype.
+  - subject: cala4_reference
+    predicate: is the native reference inferred for a proposed participant in
+    object: proposed_assembly
+    evidence:
+    - reference: DOI:10.1128/AAC.01130-10
+      evidence_type: COMPUTATIONAL_PREDICTION
+      retrieved_on: '2026-10-11'
+      notes: Table4 proposes terminal module6, a malonyl extension with ketoreduction.
+        Absence of a terminal TE domain does not identify the chain-release catalyst;
+        no CalG release or amide-forming role is adopted.
+    - reference: DOI:10.1128/AAC.01130-10
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Table3 assigns CalA4 a 1638-aa product. Its deposited HM452329 sequence
+        position, name and annotation support mapping to SchA4. The cal/Sch alias
+        and predicted role are not an assayed-protein identity claim.
+    - reference: https://www.uniprot.org/uniprotkb/F8QZS0/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Unreviewed entry version60, sequence version1: SchA4, 1638aa; explicit
+        HM452329/AEH42490.1 cross-reference. UniProt species taxon1969 retains the
+        NRRL3882 nucleotide-reference strain attribution.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AEH42490.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: polyketide synthase
+      notes: AEH42490.1, complement(HM452329.1:44006..48922); NRRL3882, taxon1079985.
+        Native DNA/code11/CDS, independently retrieved GenPept and direct UniProt
+        sequences agree exactly. Deposited product text is an annotation, not a catalytic
+        measurement.
+    notes: The native protein node is not a purified, modified or engineered assay
+      construct. This edge records a predicted contribution, not demonstrated catalysis,
+      direct binding, a physical complex or an individual knockout phenotype.
+  - subject: proposed_assembly
+    predicate: is proposed to contribute the polyketide backbone of
+    object: calcimycin
+    evidence:
+    - reference: DOI:10.1128/AAC.01130-10
+      evidence_type: COMPUTATIONAL_PREDICTION
+      retrieved_on: '2026-10-11'
+      notes: Table4 and Figure7B propose six elongations using four methylmalonyl
+        and two malonyl units, in CalA1-CalA2-CalA5-CalA4 order after carrier-delivered
+        starter loading. The order is a model, not a reconstituted assembly-line experiment.
+    notes: Backbone contribution is not complete calcimycin production or catalytic
+      sufficiency. No intermediate chemical identifier, cezomycin equivalence, CalA3
+      inactivity/activity, chain-release, benzoxazole formation, spirocyclization
+      or tailoring mechanism is asserted.
+  description: Five sequence-verified native references map by explicit inference
+    to the starter carrier and four PKSs in the 2011 proposed calcimycin assembly
+    model. Module assignments and order are computational predictions, not individual
+    catalytic experiments. Genomic order is not assembly order. This graph neither
+    makes a physical-complex claim nor transfers the separate calN1/calB2 whole-strain
+    phenotypes to these proteins.
 discussions:
 - discussion_id: curator-calcimycin-reference-and-experiment-boundaries
   kind: CURATION_TODO
@@ -299,14 +520,49 @@ discussions:
     evidence_source: Native NRRL 3882 sequence deposit
     explanation: DNA, CDS, GenPept and UniProt agree for SchN1/SchB2; other source
       annotations and later assayed constructs still need claim-specific review.
-  notes: No catalytic pathway step or molecular target added. CalN2/CalB1 length discrepancies
-    are retained for follow-up. The 2023 CalA3 paper DOI:10.1038/s41467-023-36989-w
+  - reference: https://www.rcsb.org/structure/7WVZ
+    supports: PARTIAL
+    evidence_source: Independent native sequence and deposited-coordinate audit
+    explanation: Full-native CalA3 A0A2N9BJK0/SOR83529.1 is1727aa; legacy AEH42487.1/F8QZR7
+      equals its residues110-1727. Deposited7WVZ adds AAALEHHHHHH; chainA models1-1719
+      and chainB9-1719. This resolves native/deposited-construct numbering, not functional
+      assays.
+  notes: 'No catalytic pathway step or molecular target added. CalN2/CalB1 length
+    discrepancies are retained for follow-up. The 2023 CalA3 paper DOI:10.1038/s41467-023-36989-w
     was only partly accessible; a residue label beyond the 1618-aa native SchA3 reference
     requires construct resolution. The 2017 CalR3 paper DOI:10.3389/fmicb.2017.02371
     was read from previously retrieved XML, but its figures and primer supplement
     remain uninspected after a browser challenge. Its proposed CalT export and small-molecule
     interpretations are not adopted. Preserve source-owned grades, chemical identity,
-    natural origin and SEEDED status.
+    natural origin and SEEDED status. Follow-up identity resolution: the CalA3 numbering
+    question above is now resolved at native-reference and deposited7WVZ-construct
+    level; full-nativeR1718 maps to legacyR1609. The held 2023 paper methods and functional
+    assignments remain unadopted. Issue814 also retains exact cezomycin stereochemical
+    grounding and other assay/construct questions.'
+- discussion_id: curator-calcimycin-pks-prediction-boundaries
+  kind: CURATION_TODO
+  status: OPEN
+  posed_by: codex
+  posed_date: '2026-10-11'
+  attaches_to:
+  - causal_graphs#calcimycin-proposed-carrier-pks-assembly
+  prompt: Which direct experiments establish starter transfer, module specificity
+    and ordered handoffs for the proposed calcimycin carrier-PKS assembly?
+  rationale: Sequence identity and the source's domain model do not establish individual
+    activity, carrier modification/loading, protein interactions or final-product
+    sufficiency.
+  evidence:
+  - reference: DOI:10.1128/AAC.01130-10
+    supports: PARTIAL
+    evidence_source: 2011 primary study, prediction sections
+    explanation: Methods use BLAST and NRPS-PKS domain prediction. Table4/Figure7
+      propose the module functions; the CalA2/CalA5b placement is tentative. The study
+      genetically tests calN1, calN2 and calB2, not these five individual protein
+      activities.
+  notes: Keep issue814 follow-ups and all source-access stops. Do not promote the
+    2011 CalA3 inactivity prediction into a current inactivity claim, assign CalG
+    termination from alternatives, or ground cezomycin by name despite the saved stereochemical
+    discrepancy. No source-owned grade, chemical identity or SEEDED status is changed.
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
   curator: seed_from_sources
@@ -324,4 +580,13 @@ curation_history:
     evidence and short snippets. Preserved source-owned fields and SEEDED status;
     recorded length discrepancies, construct gaps and polar-effect limitations. No
     direct enzyme reaction or regulatory mechanism asserted.
+  llm_assisted: true
+- timestamp: '2026-10-11T11:02:43Z'
+  curator: codex
+  action: ADDED_CALCIMYCIN_PROPOSED_ASSEMBLY_PROTEINS
+  changes: Added five native UniProt references to a separate proposed carrier-PKS
+    assembly graph with DOI/stable-URL evidence and snippets. Kept predicted roles,
+    aliases and tentative module order distinct from demonstrated catalysis. Preserved
+    the prior knockout graph, source-owned fields, history and SEEDED status; updated
+    the CalA3 identity discussion without adding a functional claim.
   llm_assisted: true
