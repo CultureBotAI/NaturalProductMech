@@ -181,6 +181,114 @@ isolation report left it.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">12 nodes, 11 edges</span></h2>
+<p class="sub">UniProt-annotated PAO1 PqsA/PqsD/PqsE precursor chemistry, connected to the separately inspected net PqsBC HHQ assay. The upstream reactions are database assertions, not primary assays inspected here. Native protein references are not experimental constructs. This is not a balanced reaction diagram, a reconstituted complete pathway or an essentiality claim; cofactors and byproducts are described in evidence notes.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Anthranilate--CoA ligase</td>
+  <td>is_annotated_to_catalyze</td>
+  <td>Annotated anthranilate activation</td>
+  <td>Native PAO1 reference, not an audited expression construct. Primary PqsA/PqsD/PqsE assay methods were not inspected in this pass.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q9I4X3/entry<br>https://www.ncbi.nlm.nih.gov/protein/AAG04385.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9I4X3/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 115; PA0996, 517 aa. UniProt annotates anthranilate activation with ATP and CoA, releasing AMP and diphosphate.</dd><dt>snippet</dt><dd>Catalyzes the formation of anthraniloyl-CoA</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAG04385.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native accession selected after exact PAO1 CDS translation, deposited translation, GenPept and UniProt sequence comparison. This does not establish the sequence of any experimental plasmid or mutant.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Anthraniloyl-CoA anthraniloyltransferase</td>
+  <td>is_annotated_to_catalyze</td>
+  <td>Annotated 2-ABA-CoA formation</td>
+  <td>Native PAO1 reference, not an audited expression construct. Primary PqsA/PqsD/PqsE assay methods were not inspected in this pass.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P20582/entry<br>https://www.ncbi.nlm.nih.gov/protein/AAG04388.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P20582/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 147; PA0999, 337 aa. UniProt annotates condensation of anthraniloyl-CoA with malonyl-CoA to form 2-ABA-CoA; no DHQ production claim is added.</dd><dt>snippet</dt><dd>to form 2-aminobenzoylacetyl-CoA</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAG04388.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native accession selected after exact PAO1 CDS translation, deposited translation, GenPept and UniProt sequence comparison. This does not establish the sequence of any experimental plasmid or mutant.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>2-aminobenzoylacetyl-CoA thioesterase</td>
+  <td>is_annotated_to_catalyze</td>
+  <td>Annotated 2-ABA-CoA hydrolysis</td>
+  <td>Native PAO1 reference, not an audited expression construct. Primary PqsA/PqsD/PqsE assay methods were not inspected in this pass.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P20581/entry<br>https://www.ncbi.nlm.nih.gov/protein/AAG04389.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P20581/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 129; PA1000, 301 aa. UniProt annotates hydrolysis of 2-ABA-CoA to 2-ABA and CoA; catalytic annotation is not a genetic-essentiality claim.</dd><dt>snippet</dt><dd>to form 2-aminobenzoylacetate (2-ABA)</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAG04389.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native accession selected after exact PAO1 CDS translation, deposited translation, GenPept and UniProt sequence comparison. This does not establish the sequence of any experimental plasmid or mutant.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Anthranilate</td>
+  <td>is_annotated_substrate_in</td>
+  <td>Annotated anthranilate activation</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q9I4X3/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9I4X3/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Anthranilate is the aromatic substrate; ATP and CoA are additional reactants in the cited annotation.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Annotated anthranilate activation</td>
+  <td>has_annotated_product</td>
+  <td>Anthraniloyl-CoA</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q9I4X3/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q9I4X3/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Anthraniloyl-CoA is the annotated activation product.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Anthraniloyl-CoA</td>
+  <td>is_annotated_substrate_in</td>
+  <td>Annotated 2-ABA-CoA formation</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P20582/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P20582/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Anthraniloyl-CoA is one annotated condensation substrate.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Malonyl-CoA</td>
+  <td>is_annotated_substrate_in</td>
+  <td>Annotated 2-ABA-CoA formation</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P20582/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P20582/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>This graph represents the malonyl-CoA annotation, not a separately audited malonyl-ACP assay.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Annotated 2-ABA-CoA formation</td>
+  <td>has_annotated_product</td>
+  <td>2-Aminobenzoylacetyl-CoA (2-ABA-CoA)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P20582/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P20582/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>2-ABA-CoA is the annotated product. Spontaneous cyclization and DHQ are not treated as HHQ formation.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>2-Aminobenzoylacetyl-CoA (2-ABA-CoA)</td>
+  <td>is_annotated_substrate_in</td>
+  <td>Annotated 2-ABA-CoA hydrolysis</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P20581/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P20581/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>2-ABA-CoA is the annotated thioesterase substrate.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Annotated 2-ABA-CoA hydrolysis</td>
+  <td>has_annotated_product</td>
+  <td>2-Aminobenzoylacetate (2-ABA)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P20581/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P20581/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The annotated hydrolysis releases 2-ABA. This does not establish exclusive physiological dependence on PqsE.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>2-Aminobenzoylacetate (2-ABA)</td>
+  <td>is_assay_precursor_of</td>
+  <td>2-heptylquinolin-4(1H)-one</td>
+  <td>Separate net PqsBC assay: 2-ABA plus octanoyl-CoA gave detected HHQ. This is not a one-step conversion by PqsE or a reconstitution of the complete PqsA/D/E/BC route.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1074/jbc.M115.708453</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1074/jbc.M115.708453</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The previously inspected PqsBC study supplied 2-ABA and octanoyl-CoA to the purified complex and quantified HHQ by HPLC. The existing pqsbc-pao1-net-hhq-formation graph retains the construct and cyclization limits.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
@@ -189,8 +297,9 @@ by the corpus tests.</p>
 <li>AntibioticMech — <a class="mono" href="https://culturebotai.github.io/AntibioticMech/pages/antibacterial/2-heptyl-4-hydroxyquinoline.html">CHEBI:75306</a>    (same structure, same inchikey)</li>
 </ul>
 
-<h2>Open questions <span class="tag">1</span></h2>
+<h2>Open questions <span class="tag">2</span></h2>
 <div class="note"><p><strong>curator-pqsbc-construct-and-reaction-boundaries</strong> — What remains unresolved beyond the PqsBC net HHQ formation assay?</p></div>
+<div class="note"><p><strong>curator-pqsade-annotation-and-primary-evidence</strong> — Which PqsA/PqsD/PqsE primary assays and constructs can be independently verified?</p></div>
 
 <h2>Provenance</h2>
 <div class="scroll"><table>
