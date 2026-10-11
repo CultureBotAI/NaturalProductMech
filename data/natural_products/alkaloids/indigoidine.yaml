@@ -621,6 +621,138 @@ causal_graphs:
         No concentration, fold change, assay timing or mechanistic intermediate is
         assigned.
       snippet: enhanced dramatically by feeding of the indigoidine precursor l-glutamine.
+- graph_id: indigoidine-ccm3239-bpsa-interventions
+  scope: BIOSYNTHESIS
+  description: CCM3239 bpsA deletion and upstream-promoter interventions. Historical
+    and current native protein references differ at residue 385 and are separate nodes,
+    not verified experimental alleles. The readouts support genetic involvement, not
+    isolated catalysis or a mechanism shared with the other indigoidine graphs.
+  nodes:
+  - node_id: bpsa_historical
+    label: BpsA (CCM3239 historical reference, Ala385)
+    node_type: ENZYME
+    identifier: NCBIProtein:ACK77757.1
+    grounding_status: GROUNDED
+  - node_id: bpsa_current
+    label: BpsA (CCM3239 current reference, Thr385)
+    node_type: ENZYME
+    identifier: UniProtKB:A0A2K8PVS5
+    grounding_status: GROUNDED
+  - node_id: bpsa_deletion
+    label: Reported bpsA deletion in CCM3239
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: bpsa_promoter
+    label: AprR-kasOp* insertion upstream of CCM3239 bpsA
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: indigoidine
+    label: indigoidine
+    node_type: COMPOUND
+    identifier: CHEBI:79296
+    grounding_status: GROUNDED
+  edges:
+  - subject: bpsa_historical
+    predicate: is historical reference for the gene product targeted by
+    object: bpsa_deletion
+    notes: Reference-to-locus correspondence, not proof of the tested parental allele.
+    evidence:
+    - reference: DOI:10.1007/s12223-010-0018-5
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: The public abstract identifies bpsA and its deletion in the strain then
+        named S. aureofaciens CCM3239. Full methods, deletion boundaries and figures
+        are uninspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ACK77757.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Historical 1283-residue reference: sa8, coded_by FJ479754.1:14654..18505;
+        replaced by ACK77757.2. It is not assigned the current UniProt accession.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ479754.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: CCM3239 historical deposit, taxon 1894, cites PMID:20490753 and was replaced
+        by KJ396772.1 in 2014. Native reference identity does not verify an experimental
+        stock.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ479754.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Complete 3852-nt forward CDS, ATG/TAG, code 11, translates exactly to
+        all 1283 residues of ACK77757.1. Comparison with the current KJ396772.2 bpsA
+        CDS finds changes at coding positions 15, 1152 and 1153; only the last changes
+        a residue, Ala385 (GCC) to Thr385 (ACC). This is reference-version comparison,
+        not an experimentally demonstrated mutation or a UniProt equivalence.
+  - subject: bpsa_deletion
+    predicate: abolishes reported blue-pigment production of
+    object: indigoidine
+    notes: Abstract-level deletion phenotype in the tested strain. No rescue, isolated
+      catalytic step, universal essentiality or BGC membership is asserted.
+    evidence:
+    - reference: DOI:10.1007/s12223-010-0018-5
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: The abstract reports loss of extracellular blue pigment after deletion
+        and attributes the pigment to indigoidine by its properties. Primary chemical
+        analyses and assay conditions are uninspected.
+      snippet: failed to produce the blue pigment.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:79296
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Indigoidine: C10H8N4O4, charge 0, ALDIVIWLBSDGGN-ONEGZZNKSA-N. Compound
+        correspondence for both interventions is name/database-grounded, not new structural
+        verification. The differently structured BGC0002295 owner is excluded.'
+  - subject: bpsa_current
+    predicate: has its encoding locus preceded by
+    object: bpsa_promoter
+    notes: Reference-to-intervention correspondence only; the complete engineered
+      bpsA allele and residue 385 genotype are unresolved.
+    evidence:
+    - reference: DOI:10.1007/s00253-026-13908-9
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: Methods, Figure 1, Table S2, Table S3 and Figure S1 identify upstream
+        cassette insertion using pCosSA19 and BpsAkasDir/Rev, with four mutants and
+        Southern controls. The study names KJ396772/CP024986 as pSA3239 references.
+    - reference: https://www.uniprot.org/uniprotkb/A0A2K8PVS5/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Unreviewed entry 32, sequence 1: 1283 residues; CCM3239, taxon 58340,
+        tycC5/SLAV_40115, CP024986/ATZ29785.1. The automated Tyrocidine synthase 3
+        name is not adopted as the measured function.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KJ396772.2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: bpsA/ACK77757.2 at 93052..96903 on plasmid pSA3239 in S. lavendulae subsp.
+        lavendulae CCM3239. Historical S. aureofaciens naming is retained as source
+        context, not another producer assignment.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Complete reverse CDS at 144174..148025 is identical to the KJ396772.1/.2
+        3852-nt bpsA CDS. All code-11 translations equal ACK77757.2, ATZ29785.1 and
+        A0A2K8PVS5. This establishes the current native reference, not the engineered
+        stock or identity with historical ACK77757.1.
+    - reference: DOI:10.1007/s00253-026-13908-9
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Both reported cassette primers have unique 40-nt native homology prefixes
+        at the bpsA upstream/start region in all three current deposits. Prefix agreement
+        and Southern blots do not sequence the complete mutant allele. Generic chromosomal
+        wording does not override the pSA3239 locus mapping.
+  - subject: bpsa_promoter
+    predicate: increases the reported pigment readout for
+    object: indigoidine
+    notes: Intervention-level result; neighboring transcriptional effects remain possible.
+      Not proof that BpsA alone accounts for the increase.
+    evidence:
+    - reference: DOI:10.1007/s00253-026-13908-9
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: Results and Figure 1 compare mutants with WT after 22 h in Bennet medium.
+        The DMSO-extract measurement is OD613 per mg wet cells, not a mass concentration
+        or a purified-enzyme rate. No numerical fold change is curated.
+      snippet: dramatic overproduction of indigoidine compared to the wild-type (WT)
+        strain.
 discussions:
 - discussion_id: curator-indigoidine-glna-construct-identity
   kind: KNOWLEDGE_GAP
@@ -680,6 +812,35 @@ discussions:
     explanation: Native 3849-nt CDS translates to all 1282 residues of BAE93896.1.
       Exact primer suffix search finds the forward endpoint but not the reverse endpoint;
       actual reporter sequence equivalence is unresolved.
+- discussion_id: curator-indigoidine-ccm3239-bpsa-alleles
+  kind: KNOWLEDGE_GAP
+  status: OPEN
+  posed_by: codex
+  posed_date: '2026-10-11'
+  attaches_to:
+  - causal_graphs#indigoidine-ccm3239-bpsa-interventions
+  prompt: Which complete bpsA alleles occur in the parental stocks and engineered
+    strains used for the 2010 deletion and 2026 upstream-promoter experiments?
+  rationale: Historical ACK77757.1 encodes Ala385, whereas ACK77757.2, ATZ29785.1
+    and UniProtKB:A0A2K8PVS5 encode Thr385. A sequence-record replacement does not
+    identify the tested genotypes. Keep the two native references distinct and do
+    not transfer sequence-specific functional claims until the experimental alleles
+    are resolved.
+  evidence:
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/FJ479754.1
+    supports: SUPPORT
+    evidence_source: curator sequence comparison
+    explanation: Complete historical translation matches ACK77757.1; comparison with
+      KJ396772.2 finds three coding nucleotide differences and one amino-acid difference.
+  - reference: DOI:10.1007/s12223-010-0018-5
+    supports: SUPPORT
+    evidence_source: primary abstract
+    explanation: Deletion phenotype reported; full experimental methods remain uninspected.
+  - reference: DOI:10.1007/s00253-026-13908-9
+    supports: SUPPORT
+    evidence_source: primary methods and selected supplement
+    explanation: Cassette primers and Southern controls locate the intervention; no
+      complete BpsA allele sequence was established in this audit.
 curation_history:
 - timestamp: '2026-09-10T05:54:03Z'
   curator: seed_from_sources
@@ -767,4 +928,14 @@ curation_history:
     source fields, grades and history. Full-paper, construct and primary chemical-analysis
     limitations remain explicit; no direct catalytic or native-essentiality claim
     added.
+  llm_assisted: true
+- timestamp: '2026-10-11T05:13:45Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added a separate CCM3239 BpsA intervention graph with four cited edges,
+    historical NCBIProtein:ACK77757.1 and current UniProtKB:A0A2K8PVS5 native references,
+    and a discussion preserving the unresolved experimental alleles. Verified complete
+    native translations and retained the Ala385/Thr385 discrepancy. Preserved all
+    earlier graphs, pathway, source fields, grades and history. Deletion and upstream-promoter
+    readouts are not asserted as isolated catalysis or new producer/BGC grades.
   llm_assisted: true

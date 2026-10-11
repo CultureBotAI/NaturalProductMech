@@ -276,13 +276,64 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">CCM3239 bpsA deletion and upstream-promoter interventions. Historical and current native protein references differ at residue 385 and are separate nodes, not verified experimental alleles. The readouts support genetic involvement, not isolated catalysis or a mechanism shared with the other indigoidine graphs.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>BpsA (CCM3239 historical reference, Ala385)</td>
+  <td>is historical reference for the gene product targeted by</td>
+  <td>Reported bpsA deletion in CCM3239</td>
+  <td>Reference-to-locus correspondence, not proof of the tested parental allele.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1007/s12223-010-0018-5<br>https://www.ncbi.nlm.nih.gov/protein/ACK77757.1<br>https://www.ncbi.nlm.nih.gov/nuccore/FJ479754.1<br>https://www.ncbi.nlm.nih.gov/nuccore/FJ479754.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1007/s12223-010-0018-5</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The public abstract identifies bpsA and its deletion in the strain then named S. aureofaciens CCM3239. Full methods, deletion boundaries and figures are uninspected.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/ACK77757.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Historical 1283-residue reference: sa8, coded_by FJ479754.1:14654..18505; replaced by ACK77757.2. It is not assigned the current UniProt accession.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/FJ479754.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>CCM3239 historical deposit, taxon 1894, cites PMID:20490753 and was replaced by KJ396772.1 in 2014. Native reference identity does not verify an experimental stock.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/FJ479754.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Complete 3852-nt forward CDS, ATG/TAG, code 11, translates exactly to all 1283 residues of ACK77757.1. Comparison with the current KJ396772.2 bpsA CDS finds changes at coding positions 15, 1152 and 1153; only the last changes a residue, Ala385 (GCC) to Thr385 (ACC). This is reference-version comparison, not an experimentally demonstrated mutation or a UniProt equivalence.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Reported bpsA deletion in CCM3239</td>
+  <td>abolishes reported blue-pigment production of</td>
+  <td>indigoidine</td>
+  <td>Abstract-level deletion phenotype in the tested strain. No rescue, isolated catalytic step, universal essentiality or BGC membership is asserted.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1007/s12223-010-0018-5<br>https://www.ebi.ac.uk/chebi/CHEBI:79296</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1007/s12223-010-0018-5</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The abstract reports loss of extracellular blue pigment after deletion and attributes the pigment to indigoidine by its properties. Primary chemical analyses and assay conditions are uninspected.</dd><dt>snippet</dt><dd>failed to produce the blue pigment.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/chebi/CHEBI:79296</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Indigoidine: C10H8N4O4, charge 0, ALDIVIWLBSDGGN-ONEGZZNKSA-N. Compound correspondence for both interventions is name/database-grounded, not new structural verification. The differently structured BGC0002295 owner is excluded.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>BpsA (CCM3239 current reference, Thr385)</td>
+  <td>has its encoding locus preceded by</td>
+  <td>AprR-kasOp* insertion upstream of CCM3239 bpsA</td>
+  <td>Reference-to-intervention correspondence only; the complete engineered bpsA allele and residue 385 genotype are unresolved.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1007/s00253-026-13908-9<br>https://www.uniprot.org/uniprotkb/A0A2K8PVS5/entry<br>https://www.ncbi.nlm.nih.gov/nuccore/KJ396772.2<br>https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1<br>DOI:10.1007/s00253-026-13908-9</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1007/s00253-026-13908-9</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods, Figure 1, Table S2, Table S3 and Figure S1 identify upstream cassette insertion using pCosSA19 and BpsAkasDir/Rev, with four mutants and Southern controls. The study names KJ396772/CP024986 as pSA3239 references.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A2K8PVS5/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed entry 32, sequence 1: 1283 residues; CCM3239, taxon 58340, tycC5/SLAV_40115, CP024986/ATZ29785.1. The automated Tyrocidine synthase 3 name is not adopted as the measured function.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/KJ396772.2</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>bpsA/ACK77757.2 at 93052..96903 on plasmid pSA3239 in S. lavendulae subsp. lavendulae CCM3239. Historical S. aureofaciens naming is retained as source context, not another producer assignment.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Complete reverse CDS at 144174..148025 is identical to the KJ396772.1/.2 3852-nt bpsA CDS. All code-11 translations equal ACK77757.2, ATZ29785.1 and A0A2K8PVS5. This establishes the current native reference, not the engineered stock or identity with historical ACK77757.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1007/s00253-026-13908-9</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Both reported cassette primers have unique 40-nt native homology prefixes at the bpsA upstream/start region in all three current deposits. Prefix agreement and Southern blots do not sequence the complete mutant allele. Generic chromosomal wording does not override the pSA3239 locus mapping.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>AprR-kasOp* insertion upstream of CCM3239 bpsA</td>
+  <td>increases the reported pigment readout for</td>
+  <td>indigoidine</td>
+  <td>Intervention-level result; neighboring transcriptional effects remain possible. Not proof that BpsA alone accounts for the increase.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1007/s00253-026-13908-9</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1007/s00253-026-13908-9</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Results and Figure 1 compare mutants with WT after 22 h in Bennet medium. The DMSO-extract measurement is OD613 per mg wet cells, not a mass concentration or a purified-enzyme rate. No numerical fold change is curated.</dd><dt>snippet</dt><dd>dramatic overproduction of indigoidine compared to the wild-type (WT) strain.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
 
-<h2>Open questions <span class="tag">2</span></h2>
+<h2>Open questions <span class="tag">3</span></h2>
 <div class="note"><p><strong>curator-indigoidine-glna-construct-identity</strong> — Which complete GlnA protein sequence was expressed in pFC6/pFC7, and how should the reported 1284-bp fragment be reconciled with the 1410-bp BL21(DE3) references?</p></div>
 <div class="note"><p><strong>curator-indigoidine-bpsa-reporter-construct</strong> — What is the complete sequence of the BpsA reporter used in the J1074 PPTase experiment?</p></div>
+<div class="note"><p><strong>curator-indigoidine-ccm3239-bpsa-alleles</strong> — Which complete bpsA alleles occur in the parental stocks and engineered strains used for the 2010 deletion and 2026 upstream-promoter experiments?</p></div>
 
 <h2>Provenance</h2>
 <div class="scroll"><table>
