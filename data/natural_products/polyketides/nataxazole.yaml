@@ -97,6 +97,476 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: nataxazole-native-core-protein-participation
+  scope: BIOSYNTHESIS
+  description: 'Partial map of twelve native protein references explicitly annotated
+    for nataxazole biosynthesis in GenBank LN713864.1, not a reconstructed sequence
+    of experimentally demonstrated reactions. NatAM and NatL2 are grounded to exact
+    UniProt/native sequences and checked against independent PDB deposits; the other
+    ten references use verified GenPept identifiers without substituting homologs.
+    All participation edges are database assertions, and NatAC2 remains proposed.
+    The core-cluster association does not establish conversion to the exact final
+    methyl ester: no nataxazole product endpoint, producer upgrade or complete-pathway
+    claim is added. Native regulatory and transport candidates remain outside this
+    core-protein mechanism; the functionless NatX annotation is not promoted.'
+  nodes:
+  - node_id: natp
+    label: natP reference protein (Tu 6176)
+    node_type: PROTEIN
+    identifier: NCBIProtein:CEK42816.1
+    grounding_status: GROUNDED
+  - node_id: natal
+    label: natAL reference protein (Tu 6176)
+    node_type: PROTEIN
+    identifier: NCBIProtein:CEK42817.1
+    grounding_status: GROUNDED
+  - node_id: natan
+    label: natAN reference protein (Tu 6176)
+    node_type: PROTEIN
+    identifier: NCBIProtein:CEK42818.1
+    grounding_status: GROUNDED
+  - node_id: natis
+    label: natIS reference protein (Tu 6176)
+    node_type: PROTEIN
+    identifier: NCBIProtein:CEK42819.1
+    grounding_status: GROUNDED
+  - node_id: natdb
+    label: natDB reference protein (Tu 6176)
+    node_type: PROTEIN
+    identifier: NCBIProtein:CEK42820.1
+    grounding_status: GROUNDED
+  - node_id: natam
+    label: natAM reference protein (Tu 6176)
+    node_type: PROTEIN
+    identifier: UniProtKB:A0A022MQ12
+    grounding_status: GROUNDED
+  - node_id: natac1
+    label: natAC1 reference protein (Tu 6176)
+    node_type: PROTEIN
+    identifier: NCBIProtein:CEK42822.1
+    grounding_status: GROUNDED
+  - node_id: natl1
+    label: natL1 reference protein (Tu 6176)
+    node_type: PROTEIN
+    identifier: NCBIProtein:CEK42823.1
+    grounding_status: GROUNDED
+  - node_id: nats
+    label: natS reference protein (Tu 6176)
+    node_type: PROTEIN
+    identifier: NCBIProtein:CEK42824.1
+    grounding_status: GROUNDED
+  - node_id: natl2
+    label: natL2 reference protein (Tu 6176)
+    node_type: PROTEIN
+    identifier: UniProtKB:A0A022MRT4
+    grounding_status: GROUNDED
+  - node_id: natpk
+    label: natPK reference protein (Tu 6176)
+    node_type: PROTEIN
+    identifier: NCBIProtein:CEK42827.1
+    grounding_status: GROUNDED
+  - node_id: natac2
+    label: natAC2 reference protein (Tu 6176)
+    node_type: PROTEIN
+    identifier: NCBIProtein:CEK42831.1
+    grounding_status: GROUNDED
+  - node_id: core_biosynthesis
+    label: nataxazole-associated core biosynthesis (partial, source-annotated)
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: natp
+    predicate: is annotated to participate in
+    object: core_biosynthesis
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LN713864.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Nataxazole biosynthesis
+      notes: The deposited natP CDS explicitly carries this function qualifier; the
+        association is not inferred from adjacency alone. This is a source annotation,
+        not independent verification of an enzyme reaction, necessity or sufficiency.
+        LN713864.1 cites PMID:25892546; the full paper was not inspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42816.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: 4'-phosphopantetheinyl transferase
+      notes: GenPept CEK42816.1, natP, 236 aa, coded by complement(LN713864.1:16307..17017);
+        source Streptomyces sp. Tu 6176, taxon 1470557. GenPept sequence, native CDS
+        translation and an independent genetic-code-11 translation agree exactly.
+        The product name is deposited nomenclature, not an adopted substrate-specific
+        reaction.
+    notes: Database-backed biosynthetic participation only. No reaction order, exact
+      substrate/product pair, catalytic rate, deletion phenotype or essentiality is
+      asserted. The protein node identifies the native reference, not an unspecified
+      engineered construct. See curator-nataxazole-reaction-and-product-scope for
+      the final-product and mechanism limits.
+  - subject: natal
+    predicate: is annotated to participate in
+    object: core_biosynthesis
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LN713864.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Nataxazole biosynthesis
+      notes: The deposited natAL CDS explicitly carries this function qualifier; the
+        association is not inferred from adjacency alone. This is a source annotation,
+        not independent verification of an enzyme reaction, necessity or sufficiency.
+        LN713864.1 cites PMID:25892546; the full paper was not inspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42817.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: 3-deoxy-D-arabinose-heptulosonic 7-phosphate synthase
+      notes: GenPept CEK42817.1, natAL, 460 aa, coded by complement(LN713864.1:17014..18396);
+        source Streptomyces sp. Tu 6176, taxon 1470557. GenPept sequence, native CDS
+        translation and an independent genetic-code-11 translation agree exactly.
+        The product name is deposited nomenclature, not an adopted substrate-specific
+        reaction.
+    notes: Database-backed biosynthetic participation only. No reaction order, exact
+      substrate/product pair, catalytic rate, deletion phenotype or essentiality is
+      asserted. The protein node identifies the native reference, not an unspecified
+      engineered construct. See curator-nataxazole-reaction-and-product-scope for
+      the final-product and mechanism limits.
+  - subject: natan
+    predicate: is annotated to participate in
+    object: core_biosynthesis
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LN713864.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Nataxazole biosynthesis
+      notes: The deposited natAN CDS explicitly carries this function qualifier; the
+        association is not inferred from adjacency alone. This is a source annotation,
+        not independent verification of an enzyme reaction, necessity or sufficiency.
+        LN713864.1 cites PMID:25892546; the full paper was not inspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42818.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Anthranilate synthase
+      notes: GenPept CEK42818.1, natAN, 636 aa, coded by complement(LN713864.1:18393..20303);
+        source Streptomyces sp. Tu 6176, taxon 1470557. GenPept sequence, native CDS
+        translation and an independent genetic-code-11 translation agree exactly.
+        The product name is deposited nomenclature, not an adopted substrate-specific
+        reaction.
+    notes: Database-backed biosynthetic participation only. No reaction order, exact
+      substrate/product pair, catalytic rate, deletion phenotype or essentiality is
+      asserted. The protein node identifies the native reference, not an unspecified
+      engineered construct. See curator-nataxazole-reaction-and-product-scope for
+      the final-product and mechanism limits.
+  - subject: natis
+    predicate: is annotated to participate in
+    object: core_biosynthesis
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LN713864.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Nataxazol biosynthesis
+      notes: The deposited natIS CDS explicitly carries this function qualifier; the
+        association is not inferred from adjacency alone. This is a source annotation,
+        not independent verification of an enzyme reaction, necessity or sufficiency.
+        LN713864.1 cites PMID:25892546; the full paper was not inspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42819.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Isochorismatase
+      notes: GenPept CEK42819.1, natIS, 230 aa, coded by complement(LN713864.1:20300..20992);
+        source Streptomyces sp. Tu 6176, taxon 1470557. GenPept sequence, native CDS
+        translation and an independent genetic-code-11 translation agree exactly.
+        The product name is deposited nomenclature, not an adopted substrate-specific
+        reaction.
+    notes: Database-backed biosynthetic participation only. No reaction order, exact
+      substrate/product pair, catalytic rate, deletion phenotype or essentiality is
+      asserted. The protein node identifies the native reference, not an unspecified
+      engineered construct. See curator-nataxazole-reaction-and-product-scope for
+      the final-product and mechanism limits.
+  - subject: natdb
+    predicate: is annotated to participate in
+    object: core_biosynthesis
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LN713864.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Nataxazole biosynthesis
+      notes: The deposited natDB CDS explicitly carries this function qualifier; the
+        association is not inferred from adjacency alone. This is a source annotation,
+        not independent verification of an enzyme reaction, necessity or sufficiency.
+        LN713864.1 cites PMID:25892546; the full paper was not inspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42820.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: 2,3-dihydro-3-hydroxyanthranilate dehydrogenase
+      notes: GenPept CEK42820.1, natDB, 274 aa, coded by complement(LN713864.1:21340..22164);
+        source Streptomyces sp. Tu 6176, taxon 1470557. GenPept sequence, native CDS
+        translation and an independent genetic-code-11 translation agree exactly.
+        The product name is deposited nomenclature, not an adopted substrate-specific
+        reaction.
+    notes: Database-backed biosynthetic participation only. No reaction order, exact
+      substrate/product pair, catalytic rate, deletion phenotype or essentiality is
+      asserted. The protein node identifies the native reference, not an unspecified
+      engineered construct. See curator-nataxazole-reaction-and-product-scope for
+      the final-product and mechanism limits.
+  - subject: natam
+    predicate: is annotated to participate in
+    object: core_biosynthesis
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LN713864.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Nataxazole biosynthesis
+      notes: The deposited natAM CDS explicitly carries this function qualifier; the
+        association is not inferred from adjacency alone. This is a source annotation,
+        not independent verification of an enzyme reaction, necessity or sufficiency.
+        LN713864.1 cites PMID:25892546; the full paper was not inspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42821.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Amidohydrolase
+      notes: GenPept CEK42821.1, natAM, 494 aa, coded by complement(LN713864.1:22161..23645);
+        source Streptomyces sp. Tu 6176, taxon 1470557. GenPept sequence, native CDS
+        translation and an independent genetic-code-11 translation agree exactly.
+        The product name is deposited nomenclature, not an adopted substrate-specific
+        reaction.
+    - reference: https://www.uniprot.org/uniprotkb/A0A022MQ12/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Unreviewed UniProtKB A0A022MQ12: gene natAM, taxon 1470557, exact native
+        CEK42821.1 sequence and LN713864 cross-reference. The entry has no curated
+        reaction comments. This is the matching native protein, not a convenient homolog;
+        native accession identity is separate from construct identity.'
+    - reference: DOI:10.2210/pdb6SJ2/pdb
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: NatAM is 494 aa; PDB 6SJ2 entity 1 is 519 aa, with a 25-aa N-terminal
+        extension MSYYHHHHHHDYDIPTTENLYFQGA and an unchanged native sequence at positions
+        26-519 in chains A/B. The deposit annotates Streptomyces albus as expression
+        host; that metadata is not independently resolved against the uninspected
+        methods. The independent PDB coordinate dataset and reference alignment were
+        inspected for identity. DOI:10.1002/anie.201915685 is its cited primary paper,
+        not a claimed full-paper read. The deposited 3-hydroxyanthranilic-acid ligand
+        is not nataxazole, and no final-product binding, catalytic conversion or NatAM-NatL2
+        complex is inferred.
+    notes: Database-backed biosynthetic participation only. No reaction order, exact
+      substrate/product pair, catalytic rate, deletion phenotype or essentiality is
+      asserted. The protein node identifies the native reference, not an unspecified
+      engineered construct. See curator-nataxazole-reaction-and-product-scope for
+      the final-product and mechanism limits.
+  - subject: natac1
+    predicate: is annotated to participate in
+    object: core_biosynthesis
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LN713864.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Nataxazole biosynthesis
+      notes: The deposited natAC1 CDS explicitly carries this function qualifier;
+        the association is not inferred from adjacency alone. This is a source annotation,
+        not independent verification of an enzyme reaction, necessity or sufficiency.
+        LN713864.1 cites PMID:25892546; the full paper was not inspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42822.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Acyl carrier protein
+      notes: GenPept CEK42822.1, natAC1, 89 aa, coded by complement(LN713864.1:23645..23914);
+        source Streptomyces sp. Tu 6176, taxon 1470557. GenPept sequence, native CDS
+        translation and an independent genetic-code-11 translation agree exactly.
+        The product name is deposited nomenclature, not an adopted substrate-specific
+        reaction.
+    notes: Database-backed biosynthetic participation only. No reaction order, exact
+      substrate/product pair, catalytic rate, deletion phenotype or essentiality is
+      asserted. The protein node identifies the native reference, not an unspecified
+      engineered construct. See curator-nataxazole-reaction-and-product-scope for
+      the final-product and mechanism limits.
+  - subject: natl1
+    predicate: is annotated to participate in
+    object: core_biosynthesis
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LN713864.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Nataxazole biosynthesis
+      notes: The deposited natL1 CDS explicitly carries this function qualifier; the
+        association is not inferred from adjacency alone. This is a source annotation,
+        not independent verification of an enzyme reaction, necessity or sufficiency.
+        LN713864.1 cites PMID:25892546; the full paper was not inspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42823.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: AMP-dependent synthetase and ligase
+      notes: GenPept CEK42823.1, natL1, 539 aa, coded by complement(LN713864.1:23916..25535);
+        source Streptomyces sp. Tu 6176, taxon 1470557. GenPept sequence, native CDS
+        translation and an independent genetic-code-11 translation agree exactly.
+        The product name is deposited nomenclature, not an adopted substrate-specific
+        reaction.
+    notes: Database-backed biosynthetic participation only. No reaction order, exact
+      substrate/product pair, catalytic rate, deletion phenotype or essentiality is
+      asserted. The protein node identifies the native reference, not an unspecified
+      engineered construct. See curator-nataxazole-reaction-and-product-scope for
+      the final-product and mechanism limits.
+  - subject: nats
+    predicate: is annotated to participate in
+    object: core_biosynthesis
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LN713864.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Nataxazole biosynthesis
+      notes: The deposited natS CDS explicitly carries this function qualifier; the
+        association is not inferred from adjacency alone. This is a source annotation,
+        not independent verification of an enzyme reaction, necessity or sufficiency.
+        LN713864.1 cites PMID:25892546; the full paper was not inspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42824.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: 3-oxoacyl-ACP synthase III
+      notes: GenPept CEK42824.1, natS, 350 aa, coded by complement(LN713864.1:25528..26580);
+        source Streptomyces sp. Tu 6176, taxon 1470557. GenPept sequence, native CDS
+        translation and an independent genetic-code-11 translation agree exactly.
+        The product name is deposited nomenclature, not an adopted substrate-specific
+        reaction.
+    notes: Database-backed biosynthetic participation only. No reaction order, exact
+      substrate/product pair, catalytic rate, deletion phenotype or essentiality is
+      asserted. The protein node identifies the native reference, not an unspecified
+      engineered construct. See curator-nataxazole-reaction-and-product-scope for
+      the final-product and mechanism limits.
+  - subject: natl2
+    predicate: is annotated to participate in
+    object: core_biosynthesis
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LN713864.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Nataxazole biosynthesis
+      notes: The deposited natL2 CDS explicitly carries this function qualifier; the
+        association is not inferred from adjacency alone. This is a source annotation,
+        not independent verification of an enzyme reaction, necessity or sufficiency.
+        LN713864.1 cites PMID:25892546; the full paper was not inspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42825.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: AMP-dependent synthetase and ligase
+      notes: GenPept CEK42825.1, natL2, 436 aa, coded by LN713864.1:27193..28503;
+        source Streptomyces sp. Tu 6176, taxon 1470557. GenPept sequence, native CDS
+        translation and an independent genetic-code-11 translation agree exactly.
+        The product name is deposited nomenclature, not an adopted substrate-specific
+        reaction.
+    - reference: https://www.uniprot.org/uniprotkb/A0A022MRT4/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Unreviewed UniProtKB A0A022MRT4: gene natL2, taxon 1470557, exact native
+        CEK42825.1 sequence and LN713864 cross-reference. The entry has no curated
+        reaction comments. This is the matching native protein, not a convenient homolog;
+        native accession identity is separate from construct identity.'
+    - reference: DOI:10.2210/pdb6SIY/pdb
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: NatL2 is 436 aa; PDB 6SIY entity 1 is the identical 436-aa deposited
+        polymer in chains A/B, without a deposited extension or native substitution.
+        The deposit annotates Escherichia coli BL21 as expression host. This does
+        not prove that every functional-assay construct lacked tags. The independent
+        PDB coordinate dataset and reference alignment were inspected for identity.
+        DOI:10.1002/anie.201915685 is its cited primary paper, not a claimed full-paper
+        read. The deposited 3-hydroxyanthranilic-acid ligand is not nataxazole, and
+        no final-product binding, catalytic conversion or NatAM-NatL2 complex is inferred.
+    notes: Database-backed biosynthetic participation only. No reaction order, exact
+      substrate/product pair, catalytic rate, deletion phenotype or essentiality is
+      asserted. The protein node identifies the native reference, not an unspecified
+      engineered construct. See curator-nataxazole-reaction-and-product-scope for
+      the final-product and mechanism limits.
+  - subject: natpk
+    predicate: is annotated to participate in
+    object: core_biosynthesis
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LN713864.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Nataxazole biosynthesis
+      notes: The deposited natPK CDS explicitly carries this function qualifier; the
+        association is not inferred from adjacency alone. This is a source annotation,
+        not independent verification of an enzyme reaction, necessity or sufficiency.
+        LN713864.1 cites PMID:25892546; the full paper was not inspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42827.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: 6-methylsalicylic acid synthase, type I PKS
+      notes: GenPept CEK42827.1, natPK, 1717 aa, coded by LN713864.1:29077..34230;
+        source Streptomyces sp. Tu 6176, taxon 1470557. GenPept sequence, native CDS
+        translation and an independent genetic-code-11 translation agree exactly.
+        The product name is deposited nomenclature, not an adopted substrate-specific
+        reaction.
+    notes: Database-backed biosynthetic participation only. No reaction order, exact
+      substrate/product pair, catalytic rate, deletion phenotype or essentiality is
+      asserted. The protein node identifies the native reference, not an unspecified
+      engineered construct. See curator-nataxazole-reaction-and-product-scope for
+      the final-product and mechanism limits.
+  - subject: natac2
+    predicate: is proposed to participate in
+    object: core_biosynthesis
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LN713864.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Proposed nataxazole biosynthesis
+      notes: The deposited natAC2 CDS explicitly carries this function qualifier;
+        the association is not inferred from adjacency alone. This is a source annotation,
+        not independent verification of an enzyme reaction, necessity or sufficiency.
+        LN713864.1 cites PMID:25892546; the full paper was not inspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42831.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Acyl carrier protein
+      notes: GenPept CEK42831.1, natAC2, 88 aa, coded by LN713864.1:40190..40456;
+        source Streptomyces sp. Tu 6176, taxon 1470557. GenPept sequence, native CDS
+        translation and an independent genetic-code-11 translation agree exactly.
+        The product name is deposited nomenclature, not an adopted substrate-specific
+        reaction.
+    notes: Database-backed biosynthetic participation only. No reaction order, exact
+      substrate/product pair, catalytic rate, deletion phenotype or essentiality is
+      asserted. The protein node identifies the native reference, not an unspecified
+      engineered construct. NatAC2 remains explicitly proposed in the source. See
+      curator-nataxazole-reaction-and-product-scope for the final-product and mechanism
+      limits.
+discussions:
+- discussion_id: curator-nataxazole-reaction-and-product-scope
+  kind: CURATION_TODO
+  status: OPEN
+  posed_by: codex
+  posed_date: '2026-10-11'
+  attaches_to:
+  - causal_graphs#nataxazole-native-core-protein-participation
+  prompt: Which exact reactions and constructs establish the native core-protein roles,
+    and which additional steps connect the core pathway to the exact nataxazole methyl
+    ester?
+  rationale: The added graph records explicit deposited protein-function annotations,
+    not individual functional experiments. The public 2015 abstract distinguishes
+    AJI9561 production by the transferred cluster from nataxazole and reports the
+    missing O-methyltransferase gene. A complete final-product pathway cannot be inferred
+    from the twelve annotations. NatAM and NatL2 structure identities are verified,
+    but neither structure is a nataxazole complex or proof of a two-enzyme complete
+    pathway.
+  evidence:
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/LN713864.1
+    supports: PARTIAL
+    evidence_source: GenBank, retrieved 2026-10-11
+    explanation: Native gene labels, protein sequences and biosynthesis function qualifiers
+      were inspected; NatAC2 is explicitly proposed. These annotations do not distinguish
+      all demonstrated reactions from historical proposals.
+  - reference: DOI:10.1002/cbic.201500153
+    supports: PARTIAL
+    evidence_source: PubMed:25892546 public abstract only
+    explanation: The abstract reports heterologous AJI9561 production and absence
+      of the required O-methyltransferase gene from the characterized cluster. Full
+      text and supplements were inaccessible and are not used as inspected evidence.
+  notes: Resolve ester-versus-amide intermediate assignments and the separate second-ring
+    mechanism before adding ordered reaction steps. DOI:10.1002/anie.201915685 (NatL2/NatAM)
+    and DOI:10.1021/acscatal.5c00835 (NatS) are further leads whose full papers and
+    supplements were not inspected. Retain their access stops. PDB 6SJ2 contains a
+    25-aa NatAM extension and names S. albus as expression host; PDB 6SIY contains
+    the native-length NatL2 polymer and names E. coli BL21. No host equivalence or
+    native producer attribution follows from expression metadata. Other native regulators
+    and transporters require separately scoped evidence. Existing source-owned chemistry,
+    classification, occurrences and producer grades remain unchanged, and the record
+    remains SEEDED.
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
   curator: seed_from_sources
@@ -106,3 +576,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-11T08:05:56Z'
+  curator: codex
+  action: ADDED_NATIVE_NATAXAZOLE_PROTEIN_PARTICIPATION
+  changes: Added twelve database-asserted core biosynthesis protein participants with
+    versioned native/GenPept evidence and snippets, exact NatAM/NatL2 UniProt grounding,
+    PDB construct qualifications and an open reaction/final-product scope discussion.
+    No primary catalytic steps, final-product endpoint, source-owned change or status
+    upgrade.
+  llm_assisted: true
