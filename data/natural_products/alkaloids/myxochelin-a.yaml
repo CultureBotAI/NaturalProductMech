@@ -519,8 +519,7 @@ causal_graphs:
   - node_id: m920_locus
     label: environmental clone m9-20 (KY560365.1)
     node_type: GENE_CLUSTER
-    identifier: genbank:KY560365.1
-    grounding_status: GROUNDED
+    grounding_status: UNGROUNDED
   - node_id: hosted_biosynthesis
     label: m9-20-dependent biosynthesis in engineered S. albus J1074
     node_type: PROCESS
@@ -712,4 +711,12 @@ curation_history:
     pending stereochemical review and opened a cited scope discussion. Withheld MxcF-related
     proteins, PPTase myxochelin activation and host compensation claims. Preserved
     all prior graphs, pathway steps, source-owned fields, status and history.
+  llm_assisted: true
+- timestamp: '2026-10-11T07:33:50Z'
+  curator: codex
+  action: CORRECTED_M920_NODE_IDENTIFIER
+  changes: 'Addressed issue 807: removed the unsupported genbank graph-node CURIE
+    and left the clone node formally ungrounded. Retained KY560365.1 in its label
+    and stable sequence evidence URL. No global identifier skip-list change, protein
+    identity change or scientific claim upgrade; issue 805 remains open.'
   llm_assisted: true
