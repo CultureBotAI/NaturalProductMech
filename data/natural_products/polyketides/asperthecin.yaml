@@ -92,6 +92,214 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-88cbae17de
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: asperthecin-aptabc-genetic-production
+  scope: BIOSYNTHESIS
+  description: Genetics-supported asperthecin production with AptA/B/C FGSC A4 reference
+    proteins. Gene deletions in the 2021 laboratory strains remove the assigned asperthecin
+    signal during sexual development. The reference proteins are not asserted to be
+    the exact experimental alleles. No complete pathway, reaction order, immediate
+    intermediates, native chain-shortening enzyme, protein complex or direct UV-protection
+    mechanism is assigned. The source-imported producer and BGC grades remain unchanged.
+  nodes:
+  - node_id: apta
+    label: AptA (FGSC A4 reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q5B0D0
+  - node_id: aptb
+    label: AptB (FGSC A4 reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q5B0C9
+  - node_id: aptc
+    label: AptC (FGSC A4 reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q5B0C8
+  - node_id: production
+    label: Asperthecin production during sexual development
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: asperthecin
+    label: Asperthecin
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:64161
+  edges:
+  - subject: apta
+    predicate: has_gene_deletion_support_for
+    object: production
+    notes: The node denotes the native FGSC A4 reference for the named gene. The evidence
+      concerns a gene-deletion phenotype in laboratory backgrounds, not a purified-protein
+      reaction or proof of identical alleles in every tested strain.
+    evidence:
+    - reference: DOI:10.1093/jimb/kuab055
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: 'Palmer et al. 2021, Table 1, Methods, pp5-7 and Fig.4: the aptA-deletion
+        line RJMP240.8 is listed in a veA+ background. The authors crossed RDIT55.37
+        with the corresponding earlier deletion line to generate the study strains;
+        they report loss of asperthecin in the aptA deletion samples. Cleistothecial
+        extracts after sexual induction on Champe medium at 37 C in darkness were
+        compared with an asperthecin standard by HPLC-DAD; the article also reports
+        mass-spectrometric identification. This supports involvement in production
+        under those conditions, not sufficiency of three purified enzymes or a specific
+        substrate/product step. The FGSC A4 canonical accession is an explicitly selected
+        reference, not the sequenced complete experimental allele.'
+    - reference: https://www.uniprot.org/uniprotkb/Q5B0D0/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Fails to produce asperthecin
+      notes: Reviewed UniProtKB entry version 129, sequence version 1, disruption-phenotype
+        annotation; the function comment identifies aptA as part of the asperthecin
+        cluster. The shared detailed pathway paragraph is not adopted as a complete
+        native reaction sequence. AptB cross-pathway Claisen chemistry is not assigned
+        as a native asperthecin-forming step.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF70387.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Native FGSC A4 (NCBITaxon:227321) reference ANIA_06000, aptA, 1792 aa;
+        join(BN001301.1:1542669..1542985, BN001301.1:1543039..1544140,BN001301.1:1544202..1546844,
+        BN001301.1:1546898..1548214). CDS-aware genomic translation with intron splicing,
+        deposited translation, independent GenPept and reviewed UniProt sequences
+        match exactly. The 2021 paper explicitly used the FGSC A4 reference genome
+        for SNP analysis, but its deletion lines and historical mutant alleles are
+        not equated with the canonical sequence. No engineered tag, purified assay
+        construct, precursor processing or physical protein complex is inferred.
+  - subject: aptb
+    predicate: has_gene_deletion_support_for
+    object: production
+    notes: The node denotes the native FGSC A4 reference for the named gene. The evidence
+      concerns a gene-deletion phenotype in laboratory backgrounds, not a purified-protein
+      reaction or proof of identical alleles in every tested strain.
+    evidence:
+    - reference: DOI:10.1093/jimb/kuab055
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: 'Palmer et al. 2021, Table 1, Methods, pp5-7 and Fig.4: the aptB-deletion
+        line RJMP238.5 is listed in a veA+ background. The authors crossed RDIT55.37
+        with the corresponding earlier deletion line to generate the study strains;
+        they report loss of asperthecin in the aptB deletion samples. Cleistothecial
+        extracts after sexual induction on Champe medium at 37 C in darkness were
+        compared with an asperthecin standard by HPLC-DAD; the article also reports
+        mass-spectrometric identification. This supports involvement in production
+        under those conditions, not sufficiency of three purified enzymes or a specific
+        substrate/product step. The FGSC A4 canonical accession is an explicitly selected
+        reference, not the sequenced complete experimental allele.'
+    - reference: https://www.uniprot.org/uniprotkb/Q5B0C9/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Fails to produce asperthecin
+      notes: Reviewed UniProtKB entry version 108, sequence version 1, disruption-phenotype
+        annotation; the function comment identifies aptB as part of the asperthecin
+        cluster. The shared detailed pathway paragraph is not adopted as a complete
+        native reaction sequence. AptB cross-pathway Claisen chemistry is not assigned
+        as a native asperthecin-forming step.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF70385.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Native FGSC A4 (NCBITaxon:227321) reference ANIA_06001, aptB, 309 aa;
+        complement(join(BN001301.1:1541240..1541959, BN001301.1:1542027..1542236)).
+        CDS-aware genomic translation with intron splicing, deposited translation,
+        independent GenPept and reviewed UniProt sequences match exactly. The 2021
+        paper explicitly used the FGSC A4 reference genome for SNP analysis, but its
+        deletion lines and historical mutant alleles are not equated with the canonical
+        sequence. No engineered tag, purified assay construct, precursor processing
+        or physical protein complex is inferred.
+  - subject: aptc
+    predicate: has_gene_deletion_support_for
+    object: production
+    notes: The node denotes the native FGSC A4 reference for the named gene. The evidence
+      concerns a gene-deletion phenotype in laboratory backgrounds, not a purified-protein
+      reaction or proof of identical alleles in every tested strain.
+    evidence:
+    - reference: DOI:10.1093/jimb/kuab055
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: 'Palmer et al. 2021, Table 1, Methods, pp5-7 and Fig.4: the aptC-deletion
+        line RJMP239.7 is listed in a veA+ background. The authors crossed RDIT55.37
+        with the corresponding earlier deletion line to generate the study strains;
+        they report loss of asperthecin in the aptC deletion samples. Cleistothecial
+        extracts after sexual induction on Champe medium at 37 C in darkness were
+        compared with an asperthecin standard by HPLC-DAD; the article also reports
+        mass-spectrometric identification. This supports involvement in production
+        under those conditions, not sufficiency of three purified enzymes or a specific
+        substrate/product step. The FGSC A4 canonical accession is an explicitly selected
+        reference, not the sequenced complete experimental allele.'
+    - reference: https://www.uniprot.org/uniprotkb/Q5B0C8/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Fails to produce asperthecin
+      notes: Reviewed UniProtKB entry version 112, sequence version 1, disruption-phenotype
+        annotation; the function comment identifies aptC as part of the asperthecin
+        cluster. The shared detailed pathway paragraph is not adopted as a complete
+        native reaction sequence. AptB cross-pathway Claisen chemistry is not assigned
+        as a native asperthecin-forming step.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF70383.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Native FGSC A4 (NCBITaxon:227321) reference ANIA_06002, aptC, 417 aa;
+        BN001301.1:1539841..1541094. CDS-aware genomic translation with intron splicing,
+        deposited translation, independent GenPept and reviewed UniProt sequences
+        match exactly. The 2021 paper explicitly used the FGSC A4 reference genome
+        for SNP analysis, but its deletion lines and historical mutant alleles are
+        not equated with the canonical sequence. No engineered tag, purified assay
+        construct, precursor processing or physical protein complex is inferred.
+  - subject: production
+    predicate: produces
+    object: asperthecin
+    evidence:
+    - reference: DOI:10.1093/jimb/kuab055
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      snippet: we were able to consistently identify asperthecin
+      notes: 'Palmer et al. 2021 pp5-7 and Fig.4: the wild-type extract contains the
+        peak assigned by comparison with an asperthecin standard; the discussion reports
+        HPLC and mass-spectrometric identification. This is the compound-level output
+        of the observed process, not an additional AptC-catalyzed final reaction.
+        Unidentified pigments, hypothetical polymers and ascoquinone A are not equated
+        with the exact owner.'
+discussions:
+- discussion_id: curator-asperthecin-apt-reference-and-pathway-limits
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: Which native reactions and experimentally verified alleles connect AptA/B/C
+    to the final asperthecin structure?
+  rationale: The inspected 2021 study supports gene-level involvement and distinguishes
+    deletion backgrounds, but leaves native chain shortening and several pigment identities
+    unresolved. Canonical reference identity is stronger than our knowledge of complete
+    experimental alleles.
+  notes: 'The native FGSC A4 references on BN001301.1 match the complete spliced CDS,
+    deposited translation, GenPept and UniProt sequences. The 2021 study uses laboratory
+    crosses, not an unmodified FGSC A4 assay: aptA RJMP240.8, aptB RJMP238.5 and aptC
+    RJMP239.7 are listed in Table 1. Historical clA6 is an aptA frameshift and clB1
+    an aptB premature-stop allele; neither is represented as wild type. blA1 is not
+    an identified aptC mutation. The article states chromosome 3 for the apt cluster,
+    whereas the native BN001301.1 record states chromosome I; this textual discrepancy
+    is not used to remap the sequence-verified locus. Do not equate recombinant anthracenone
+    products, the cross-pathway naphthacenedione scaffold or putative ascoquinone
+    polymers with the exact asperthecin owner. The 2021 aygA deletion did not support
+    assigning AygA as the missing chain-shortening enzyme; absence of a tested production
+    effect is not universal inactivity. The 2008 and 2011 full-article requests encountered
+    browser challenges and were stopped without alternate retrieval. Their indexed
+    excerpts and UniProt summaries are not independently inspected complete methods.
+    No final-product enzymatic sufficiency, direct protein-protein interaction, regulatory
+    causality, antimicrobial target or source-owned grade upgrade is added. All imported
+    fields, history and SEEDED status are preserved.'
+  evidence:
+  - reference: DOI:10.1093/jimb/kuab055
+    evidence_source: Inspected primary article, Table 1, Fig.4 and Methods/Discussion
+    notes: Genetic support and assay/strain limitations; canonical references are
+      not complete laboratory-allele determinations.
+  - reference: https://cronfa.swansea.ac.uk/Record/cronfa61513/Download/61513__25525__7f91b71bd7b04b3d91c546ed3366c5a6.pdf
+    evidence_source: Public institutional copy of the primary article, retrieved 2026-10-11
+    notes: Full nine-page article inspected; Table 1 and Fig.4 also reviewed as rendered
+      pages.
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/3084060
+    evidence_source: PubChem, retrieved 2026-10-11
+    notes: Stored SMILES, InChI and InChIKey agree with the official properties and
+      independent RDKit calculation; neutral C15H10O8, no stereocenters.
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
@@ -101,3 +309,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-11T19:36:23Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add three sequence-verified FGSC A4 AptA/B/C references in a genetics-supported
+    asperthecin production graph, with primary DOI, stable database URLs and short
+    snippets. Separate laboratory deletion phenotypes from canonical reference sequences
+    and unproven native reaction steps; preserve all source-owned fields and SEEDED
+    status.
+  llm_assisted: true
