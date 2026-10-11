@@ -207,6 +207,112 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 10 edges</span></h2>
+<p class="sub">Reported native genetic-test outcomes for 8-AzgC/H/I/J/K in Streptomyces pathocidini CGMCC4.1633, named S. albus subsp. pathocidicus in Hou et al. C/H/J deletions have reported reduced product, K a small increase, and I no reported change. I is included to preserve the negative experimental context, not to assign a positive biosynthetic function. Deletion interventions are distinct from deposited protein references. Evidence is the archived main-text Methods/Results; supplementary Figure 4 and PCR data remain uninspected. No catalytic reaction, transcriptional regulation, physical assembly, general essentiality/dispensability, J1074 equivalence or producer/BGC upgrade is asserted. CHEBI:63486 denotes the neutral free base, not a resolved solution tautomer or protonation state.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>CGMCC4.1633 8-azgC deletion</td>
+  <td>deletes_gene_represented_by</td>
+  <td>8-AzgC (CGMCC4.1633 native reference)</td>
+  <td>The accession denotes the deposited native gene product, not an intact protein in the deletion strain or an independently sequenced mutant allele. No exact UniProt mapping was established by the archived identifier-specific query; no homolog or other-strain Ptn protein is substituted.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fbioe.2020.603514<br>https://www.ncbi.nlm.nih.gov/protein/QLM04710.1<br>https://www.ncbi.nlm.nih.gov/nuccore/MT543149.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fbioe.2020.603514</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-10</dd><dt>notes</dt><dd>The Methods explicitly list this individual knockout among the native CGMCC4.1633 interventions using pKC1139 and S17-1 conjugation, separate from J1074 heterologous expression. The Results report in-frame double crossovers with six-base scars. Supplementary PCR evidence, complete mutant sequences and possible polar effects were not independently verified.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/QLM04710.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-10</dd><dt>notes</dt><dd>Independent GenPept QLM04710.1: 8-AzgC, complete 236 aa; Streptomyces pathocidini CGMCC4.1633, taxon 1650571. coded_by complement(MT543149.1:2417..3127), table 11. Product-name and domain annotations are not adopted as biochemical assays.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/MT543149.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-10</dd><dt>notes</dt><dd>The complete 711-nt reverse-strand CDS 2417..3127, codon_start 1, table 11 and ATG initiation independently translate to all 236 residues of QLM04710.1, matching the deposited translation. Reference correspondence is not historical-stock or mutant-sequence identity. Article Illumina versus deposit PacBio metadata remains unresolved.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>CGMCC4.1633 8-azgC deletion</td>
+  <td>has_reported_reduced_amount_of</td>
+  <td>8-azaguanine</td>
+  <td>The Results report lower 8-azaguanine in this individual mutant fermentation broth relative to wild type. This is a qualitative main-text report, not abolition, a quantified yield, statistical significance or a catalytic assignment.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fbioe.2020.603514</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fbioe.2020.603514</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-10</dd><dt>notes</dt><dd>Native-knockout Methods and Results main text were inspected. The article cites supplementary Figure 4 for these phenotypes; that figure and supplementary PCR/allele data were not inspected. The general production-analysis method uses HPLC/UV at 245 nm with authentic 8-azaguanine. No independent peak integration, replicate assessment or quantitative phenotype estimate was performed.</dd><dt>snippet</dt><dd>correspondingly decreased</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>CGMCC4.1633 8-azgH deletion</td>
+  <td>deletes_gene_represented_by</td>
+  <td>8-AzgH (CGMCC4.1633 native reference)</td>
+  <td>The accession denotes the deposited native gene product, not an intact protein in the deletion strain or an independently sequenced mutant allele. No exact UniProt mapping was established by the archived identifier-specific query; no homolog or other-strain Ptn protein is substituted.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fbioe.2020.603514<br>https://www.ncbi.nlm.nih.gov/protein/QLM04714.1<br>https://www.ncbi.nlm.nih.gov/nuccore/MT543149.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fbioe.2020.603514</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-10</dd><dt>notes</dt><dd>The Methods explicitly list this individual knockout among the native CGMCC4.1633 interventions using pKC1139 and S17-1 conjugation, separate from J1074 heterologous expression. The Results report in-frame double crossovers with six-base scars. Supplementary PCR evidence, complete mutant sequences and possible polar effects were not independently verified.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/QLM04714.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-10</dd><dt>notes</dt><dd>Independent GenPept QLM04714.1: 8-AzgH, complete 378 aa; Streptomyces pathocidini CGMCC4.1633, taxon 1650571. coded_by MT543149.1:6461..7597, table 11. Product-name and domain annotations are not adopted as biochemical assays.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/MT543149.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-10</dd><dt>notes</dt><dd>The complete 1137-nt forward-strand CDS 6461..7597, codon_start 1, table 11 and TTG initiation independently translate to all 378 residues of QLM04714.1, matching the deposited translation. Reference correspondence is not historical-stock or mutant-sequence identity. Article Illumina versus deposit PacBio metadata remains unresolved.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>CGMCC4.1633 8-azgH deletion</td>
+  <td>has_reported_reduced_amount_of</td>
+  <td>8-azaguanine</td>
+  <td>The Results report lower 8-azaguanine in this individual mutant fermentation broth relative to wild type. This is a qualitative main-text report, not abolition, a quantified yield, statistical significance or a catalytic assignment.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fbioe.2020.603514</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fbioe.2020.603514</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-10</dd><dt>notes</dt><dd>Native-knockout Methods and Results main text were inspected. The article cites supplementary Figure 4 for these phenotypes; that figure and supplementary PCR/allele data were not inspected. The general production-analysis method uses HPLC/UV at 245 nm with authentic 8-azaguanine. No independent peak integration, replicate assessment or quantitative phenotype estimate was performed.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>CGMCC4.1633 8-azgI deletion</td>
+  <td>deletes_gene_represented_by</td>
+  <td>8-AzgI (CGMCC4.1633 native reference)</td>
+  <td>The accession denotes the deposited native gene product, not an intact protein in the deletion strain or an independently sequenced mutant allele. No exact UniProt mapping was established by the archived identifier-specific query; no homolog or other-strain Ptn protein is substituted.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fbioe.2020.603514<br>https://www.ncbi.nlm.nih.gov/protein/QLM04715.1<br>https://www.ncbi.nlm.nih.gov/nuccore/MT543149.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fbioe.2020.603514</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-10</dd><dt>notes</dt><dd>The Methods explicitly list this individual knockout among the native CGMCC4.1633 interventions using pKC1139 and S17-1 conjugation, separate from J1074 heterologous expression. The Results report in-frame double crossovers with six-base scars. Supplementary PCR evidence, complete mutant sequences and possible polar effects were not independently verified.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/QLM04715.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-10</dd><dt>notes</dt><dd>Independent GenPept QLM04715.1: 8-AzgI, complete 682 aa; Streptomyces pathocidini CGMCC4.1633, taxon 1650571. coded_by MT543149.1:7863..9911, table 11. Product-name and domain annotations are not adopted as biochemical assays.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/MT543149.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-10</dd><dt>notes</dt><dd>The complete 2049-nt forward-strand CDS 7863..9911, codon_start 1, table 11 and TTG initiation independently translate to all 682 residues of QLM04715.1, matching the deposited translation. Reference correspondence is not historical-stock or mutant-sequence identity. Article Illumina versus deposit PacBio metadata remains unresolved.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>CGMCC4.1633 8-azgI deletion</td>
+  <td>has_reported_no_change_in_amount_of</td>
+  <td>8-azaguanine</td>
+  <td>The Results report no effect on 8-azaguanine production after this deletion under the tested conditions. Included as an explicit negative genetic-test context, not a positive biosynthetic role or causal effect. No equivalence margin, detection power, universal dispensability or biochemical function is established by this report.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fbioe.2020.603514</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fbioe.2020.603514</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-10</dd><dt>notes</dt><dd>Native-knockout Methods and Results main text were inspected. The article cites supplementary Figure 4 for these phenotypes; that figure and supplementary PCR/allele data were not inspected. The general production-analysis method uses HPLC/UV at 245 nm with authentic 8-azaguanine. No independent peak integration, replicate assessment or quantitative phenotype estimate was performed.</dd><dt>snippet</dt><dd>had no effect</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>CGMCC4.1633 8-azgJ deletion</td>
+  <td>deletes_gene_represented_by</td>
+  <td>8-AzgJ (CGMCC4.1633 native reference)</td>
+  <td>The accession denotes the deposited native gene product, not an intact protein in the deletion strain or an independently sequenced mutant allele. No exact UniProt mapping was established by the archived identifier-specific query; no homolog or other-strain Ptn protein is substituted.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fbioe.2020.603514<br>https://www.ncbi.nlm.nih.gov/protein/QLM04716.1<br>https://www.ncbi.nlm.nih.gov/nuccore/MT543149.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fbioe.2020.603514</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-10</dd><dt>notes</dt><dd>The Methods explicitly list this individual knockout among the native CGMCC4.1633 interventions using pKC1139 and S17-1 conjugation, separate from J1074 heterologous expression. The Results report in-frame double crossovers with six-base scars. Supplementary PCR evidence, complete mutant sequences and possible polar effects were not independently verified.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/QLM04716.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-10</dd><dt>notes</dt><dd>Independent GenPept QLM04716.1: 8-AzgJ, complete 103 aa; Streptomyces pathocidini CGMCC4.1633, taxon 1650571. coded_by MT543149.1:10045..10356, table 11. Product-name and domain annotations are not adopted as biochemical assays.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/MT543149.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-10</dd><dt>notes</dt><dd>The complete 312-nt forward-strand CDS 10045..10356, codon_start 1, table 11 and GTG initiation independently translate to all 103 residues of QLM04716.1, matching the deposited translation. Reference correspondence is not historical-stock or mutant-sequence identity. Article Illumina versus deposit PacBio metadata remains unresolved.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>CGMCC4.1633 8-azgJ deletion</td>
+  <td>has_reported_reduced_amount_of</td>
+  <td>8-azaguanine</td>
+  <td>The Results report lower 8-azaguanine in this individual mutant fermentation broth relative to wild type. This is a qualitative main-text report, not abolition, a quantified yield, statistical significance or a catalytic assignment.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fbioe.2020.603514</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fbioe.2020.603514</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-10</dd><dt>notes</dt><dd>Native-knockout Methods and Results main text were inspected. The article cites supplementary Figure 4 for these phenotypes; that figure and supplementary PCR/allele data were not inspected. The general production-analysis method uses HPLC/UV at 245 nm with authentic 8-azaguanine. No independent peak integration, replicate assessment or quantitative phenotype estimate was performed.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>CGMCC4.1633 8-azgK deletion</td>
+  <td>deletes_gene_represented_by</td>
+  <td>8-AzgK (CGMCC4.1633 native reference)</td>
+  <td>The accession denotes the deposited native gene product, not an intact protein in the deletion strain or an independently sequenced mutant allele. No exact UniProt mapping was established by the archived identifier-specific query; no homolog or other-strain Ptn protein is substituted.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fbioe.2020.603514<br>https://www.ncbi.nlm.nih.gov/protein/QLM04717.1<br>https://www.ncbi.nlm.nih.gov/nuccore/MT543149.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fbioe.2020.603514</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-10</dd><dt>notes</dt><dd>The Methods explicitly list this individual knockout among the native CGMCC4.1633 interventions using pKC1139 and S17-1 conjugation, separate from J1074 heterologous expression. The Results report in-frame double crossovers with six-base scars. Supplementary PCR evidence, complete mutant sequences and possible polar effects were not independently verified.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/QLM04717.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-10</dd><dt>notes</dt><dd>Independent GenPept QLM04717.1: 8-AzgK, complete 277 aa; Streptomyces pathocidini CGMCC4.1633, taxon 1650571. coded_by MT543149.1:10590..11423, table 11. Product-name and domain annotations are not adopted as biochemical assays.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/MT543149.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-10</dd><dt>notes</dt><dd>The complete 834-nt forward-strand CDS 10590..11423, codon_start 1, table 11 and ATG initiation independently translate to all 277 residues of QLM04717.1, matching the deposited translation. Reference correspondence is not historical-stock or mutant-sequence identity. Article Illumina versus deposit PacBio metadata remains unresolved.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>CGMCC4.1633 8-azgK deletion</td>
+  <td>has_reported_small_increase_in_amount_of</td>
+  <td>8-azaguanine</td>
+  <td>The Results report a small increase in 8-azaguanine titer after this deletion. The article interprets K as a negative transcriptional regulator, but the genetic phenotype alone does not establish that mechanism; it is not adopted here. The deposited glycosyltransferase annotation is not an enzyme assay. No numerical increase or statistical significance is asserted.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.3389/fbioe.2020.603514</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.3389/fbioe.2020.603514</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-10</dd><dt>notes</dt><dd>Native-knockout Methods and Results main text were inspected. The article cites supplementary Figure 4 for these phenotypes; that figure and supplementary PCR/allele data were not inspected. The general production-analysis method uses HPLC/UV at 245 nm with authentic 8-azaguanine. No independent peak integration, replicate assessment or quantitative phenotype estimate was performed.</dd><dt>snippet</dt><dd>a small titer increase</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 <h2>Bioactivities <span class="tag">25</span></h2>

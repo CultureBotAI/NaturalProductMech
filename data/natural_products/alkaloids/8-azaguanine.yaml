@@ -682,6 +682,305 @@ causal_graphs:
         2A; HPLC/UV at 245 nm. The panel has no quantitative vertical scale or integrated
         yield values. Lower titer is the authors' report, not an independent numerical
         estimate from the plotted traces.
+- graph_id: 8-azaguanine-cgmcc41633-chijk-genetic-evidence
+  scope: BIOSYNTHESIS
+  description: Reported native genetic-test outcomes for 8-AzgC/H/I/J/K in Streptomyces
+    pathocidini CGMCC4.1633, named S. albus subsp. pathocidicus in Hou et al. C/H/J
+    deletions have reported reduced product, K a small increase, and I no reported
+    change. I is included to preserve the negative experimental context, not to assign
+    a positive biosynthetic function. Deletion interventions are distinct from deposited
+    protein references. Evidence is the archived main-text Methods/Results; supplementary
+    Figure 4 and PCR data remain uninspected. No catalytic reaction, transcriptional
+    regulation, physical assembly, general essentiality/dispensability, J1074 equivalence
+    or producer/BGC upgrade is asserted. CHEBI:63486 denotes the neutral free base,
+    not a resolved solution tautomer or protonation state.
+  nodes:
+  - node_id: azaguanine
+    label: 8-azaguanine
+    node_type: COMPOUND
+    identifier: CHEBI:63486
+    grounding_status: GROUNDED
+  - node_id: azgc_reference
+    label: 8-AzgC (CGMCC4.1633 native reference)
+    node_type: PROTEIN
+    identifier: NCBIProtein:QLM04710.1
+    grounding_status: GROUNDED
+  - node_id: azgc_deletion
+    label: CGMCC4.1633 8-azgC deletion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: azgh_reference
+    label: 8-AzgH (CGMCC4.1633 native reference)
+    node_type: PROTEIN
+    identifier: NCBIProtein:QLM04714.1
+    grounding_status: GROUNDED
+  - node_id: azgh_deletion
+    label: CGMCC4.1633 8-azgH deletion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: azgi_reference
+    label: 8-AzgI (CGMCC4.1633 native reference)
+    node_type: PROTEIN
+    identifier: NCBIProtein:QLM04715.1
+    grounding_status: GROUNDED
+  - node_id: azgi_deletion
+    label: CGMCC4.1633 8-azgI deletion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: azgj_reference
+    label: 8-AzgJ (CGMCC4.1633 native reference)
+    node_type: PROTEIN
+    identifier: NCBIProtein:QLM04716.1
+    grounding_status: GROUNDED
+  - node_id: azgj_deletion
+    label: CGMCC4.1633 8-azgJ deletion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: azgk_reference
+    label: 8-AzgK (CGMCC4.1633 native reference)
+    node_type: PROTEIN
+    identifier: NCBIProtein:QLM04717.1
+    grounding_status: GROUNDED
+  - node_id: azgk_deletion
+    label: CGMCC4.1633 8-azgK deletion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: azgc_deletion
+    predicate: deletes_gene_represented_by
+    object: azgc_reference
+    notes: The accession denotes the deposited native gene product, not an intact
+      protein in the deletion strain or an independently sequenced mutant allele.
+      No exact UniProt mapping was established by the archived identifier-specific
+      query; no homolog or other-strain Ptn protein is substituted.
+    evidence:
+    - reference: DOI:10.3389/fbioe.2020.603514
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-10'
+      notes: The Methods explicitly list this individual knockout among the native
+        CGMCC4.1633 interventions using pKC1139 and S17-1 conjugation, separate from
+        J1074 heterologous expression. The Results report in-frame double crossovers
+        with six-base scars. Supplementary PCR evidence, complete mutant sequences
+        and possible polar effects were not independently verified.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLM04710.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Independent GenPept QLM04710.1: 8-AzgC, complete 236 aa; Streptomyces
+        pathocidini CGMCC4.1633, taxon 1650571. coded_by complement(MT543149.1:2417..3127),
+        table 11. Product-name and domain annotations are not adopted as biochemical
+        assays.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MT543149.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: The complete 711-nt reverse-strand CDS 2417..3127, codon_start 1, table
+        11 and ATG initiation independently translate to all 236 residues of QLM04710.1,
+        matching the deposited translation. Reference correspondence is not historical-stock
+        or mutant-sequence identity. Article Illumina versus deposit PacBio metadata
+        remains unresolved.
+  - subject: azgc_deletion
+    predicate: has_reported_reduced_amount_of
+    object: azaguanine
+    notes: The Results report lower 8-azaguanine in this individual mutant fermentation
+      broth relative to wild type. This is a qualitative main-text report, not abolition,
+      a quantified yield, statistical significance or a catalytic assignment.
+    evidence:
+    - reference: DOI:10.3389/fbioe.2020.603514
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-10'
+      notes: Native-knockout Methods and Results main text were inspected. The article
+        cites supplementary Figure 4 for these phenotypes; that figure and supplementary
+        PCR/allele data were not inspected. The general production-analysis method
+        uses HPLC/UV at 245 nm with authentic 8-azaguanine. No independent peak integration,
+        replicate assessment or quantitative phenotype estimate was performed.
+      snippet: correspondingly decreased
+  - subject: azgh_deletion
+    predicate: deletes_gene_represented_by
+    object: azgh_reference
+    notes: The accession denotes the deposited native gene product, not an intact
+      protein in the deletion strain or an independently sequenced mutant allele.
+      No exact UniProt mapping was established by the archived identifier-specific
+      query; no homolog or other-strain Ptn protein is substituted.
+    evidence:
+    - reference: DOI:10.3389/fbioe.2020.603514
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-10'
+      notes: The Methods explicitly list this individual knockout among the native
+        CGMCC4.1633 interventions using pKC1139 and S17-1 conjugation, separate from
+        J1074 heterologous expression. The Results report in-frame double crossovers
+        with six-base scars. Supplementary PCR evidence, complete mutant sequences
+        and possible polar effects were not independently verified.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLM04714.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Independent GenPept QLM04714.1: 8-AzgH, complete 378 aa; Streptomyces
+        pathocidini CGMCC4.1633, taxon 1650571. coded_by MT543149.1:6461..7597, table
+        11. Product-name and domain annotations are not adopted as biochemical assays.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MT543149.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: The complete 1137-nt forward-strand CDS 6461..7597, codon_start 1, table
+        11 and TTG initiation independently translate to all 378 residues of QLM04714.1,
+        matching the deposited translation. Reference correspondence is not historical-stock
+        or mutant-sequence identity. Article Illumina versus deposit PacBio metadata
+        remains unresolved.
+  - subject: azgh_deletion
+    predicate: has_reported_reduced_amount_of
+    object: azaguanine
+    notes: The Results report lower 8-azaguanine in this individual mutant fermentation
+      broth relative to wild type. This is a qualitative main-text report, not abolition,
+      a quantified yield, statistical significance or a catalytic assignment.
+    evidence:
+    - reference: DOI:10.3389/fbioe.2020.603514
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-10'
+      notes: Native-knockout Methods and Results main text were inspected. The article
+        cites supplementary Figure 4 for these phenotypes; that figure and supplementary
+        PCR/allele data were not inspected. The general production-analysis method
+        uses HPLC/UV at 245 nm with authentic 8-azaguanine. No independent peak integration,
+        replicate assessment or quantitative phenotype estimate was performed.
+  - subject: azgi_deletion
+    predicate: deletes_gene_represented_by
+    object: azgi_reference
+    notes: The accession denotes the deposited native gene product, not an intact
+      protein in the deletion strain or an independently sequenced mutant allele.
+      No exact UniProt mapping was established by the archived identifier-specific
+      query; no homolog or other-strain Ptn protein is substituted.
+    evidence:
+    - reference: DOI:10.3389/fbioe.2020.603514
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-10'
+      notes: The Methods explicitly list this individual knockout among the native
+        CGMCC4.1633 interventions using pKC1139 and S17-1 conjugation, separate from
+        J1074 heterologous expression. The Results report in-frame double crossovers
+        with six-base scars. Supplementary PCR evidence, complete mutant sequences
+        and possible polar effects were not independently verified.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLM04715.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Independent GenPept QLM04715.1: 8-AzgI, complete 682 aa; Streptomyces
+        pathocidini CGMCC4.1633, taxon 1650571. coded_by MT543149.1:7863..9911, table
+        11. Product-name and domain annotations are not adopted as biochemical assays.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MT543149.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: The complete 2049-nt forward-strand CDS 7863..9911, codon_start 1, table
+        11 and TTG initiation independently translate to all 682 residues of QLM04715.1,
+        matching the deposited translation. Reference correspondence is not historical-stock
+        or mutant-sequence identity. Article Illumina versus deposit PacBio metadata
+        remains unresolved.
+  - subject: azgi_deletion
+    predicate: has_reported_no_change_in_amount_of
+    object: azaguanine
+    notes: The Results report no effect on 8-azaguanine production after this deletion
+      under the tested conditions. Included as an explicit negative genetic-test context,
+      not a positive biosynthetic role or causal effect. No equivalence margin, detection
+      power, universal dispensability or biochemical function is established by this
+      report.
+    evidence:
+    - reference: DOI:10.3389/fbioe.2020.603514
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-10'
+      notes: Native-knockout Methods and Results main text were inspected. The article
+        cites supplementary Figure 4 for these phenotypes; that figure and supplementary
+        PCR/allele data were not inspected. The general production-analysis method
+        uses HPLC/UV at 245 nm with authentic 8-azaguanine. No independent peak integration,
+        replicate assessment or quantitative phenotype estimate was performed.
+      snippet: had no effect
+  - subject: azgj_deletion
+    predicate: deletes_gene_represented_by
+    object: azgj_reference
+    notes: The accession denotes the deposited native gene product, not an intact
+      protein in the deletion strain or an independently sequenced mutant allele.
+      No exact UniProt mapping was established by the archived identifier-specific
+      query; no homolog or other-strain Ptn protein is substituted.
+    evidence:
+    - reference: DOI:10.3389/fbioe.2020.603514
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-10'
+      notes: The Methods explicitly list this individual knockout among the native
+        CGMCC4.1633 interventions using pKC1139 and S17-1 conjugation, separate from
+        J1074 heterologous expression. The Results report in-frame double crossovers
+        with six-base scars. Supplementary PCR evidence, complete mutant sequences
+        and possible polar effects were not independently verified.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLM04716.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Independent GenPept QLM04716.1: 8-AzgJ, complete 103 aa; Streptomyces
+        pathocidini CGMCC4.1633, taxon 1650571. coded_by MT543149.1:10045..10356,
+        table 11. Product-name and domain annotations are not adopted as biochemical
+        assays.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MT543149.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: The complete 312-nt forward-strand CDS 10045..10356, codon_start 1, table
+        11 and GTG initiation independently translate to all 103 residues of QLM04716.1,
+        matching the deposited translation. Reference correspondence is not historical-stock
+        or mutant-sequence identity. Article Illumina versus deposit PacBio metadata
+        remains unresolved.
+  - subject: azgj_deletion
+    predicate: has_reported_reduced_amount_of
+    object: azaguanine
+    notes: The Results report lower 8-azaguanine in this individual mutant fermentation
+      broth relative to wild type. This is a qualitative main-text report, not abolition,
+      a quantified yield, statistical significance or a catalytic assignment.
+    evidence:
+    - reference: DOI:10.3389/fbioe.2020.603514
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-10'
+      notes: Native-knockout Methods and Results main text were inspected. The article
+        cites supplementary Figure 4 for these phenotypes; that figure and supplementary
+        PCR/allele data were not inspected. The general production-analysis method
+        uses HPLC/UV at 245 nm with authentic 8-azaguanine. No independent peak integration,
+        replicate assessment or quantitative phenotype estimate was performed.
+  - subject: azgk_deletion
+    predicate: deletes_gene_represented_by
+    object: azgk_reference
+    notes: The accession denotes the deposited native gene product, not an intact
+      protein in the deletion strain or an independently sequenced mutant allele.
+      No exact UniProt mapping was established by the archived identifier-specific
+      query; no homolog or other-strain Ptn protein is substituted.
+    evidence:
+    - reference: DOI:10.3389/fbioe.2020.603514
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-10'
+      notes: The Methods explicitly list this individual knockout among the native
+        CGMCC4.1633 interventions using pKC1139 and S17-1 conjugation, separate from
+        J1074 heterologous expression. The Results report in-frame double crossovers
+        with six-base scars. Supplementary PCR evidence, complete mutant sequences
+        and possible polar effects were not independently verified.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLM04717.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-10'
+      notes: 'Independent GenPept QLM04717.1: 8-AzgK, complete 277 aa; Streptomyces
+        pathocidini CGMCC4.1633, taxon 1650571. coded_by MT543149.1:10590..11423,
+        table 11. Product-name and domain annotations are not adopted as biochemical
+        assays.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/MT543149.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-10'
+      notes: The complete 834-nt forward-strand CDS 10590..11423, codon_start 1, table
+        11 and ATG initiation independently translate to all 277 residues of QLM04717.1,
+        matching the deposited translation. Reference correspondence is not historical-stock
+        or mutant-sequence identity. Article Illumina versus deposit PacBio metadata
+        remains unresolved.
+  - subject: azgk_deletion
+    predicate: has_reported_small_increase_in_amount_of
+    object: azaguanine
+    notes: The Results report a small increase in 8-azaguanine titer after this deletion.
+      The article interprets K as a negative transcriptional regulator, but the genetic
+      phenotype alone does not establish that mechanism; it is not adopted here. The
+      deposited glycosyltransferase annotation is not an enzyme assay. No numerical
+      increase or statistical significance is asserted.
+    evidence:
+    - reference: DOI:10.3389/fbioe.2020.603514
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-10'
+      notes: Native-knockout Methods and Results main text were inspected. The article
+        cites supplementary Figure 4 for these phenotypes; that figure and supplementary
+        PCR/allele data were not inspected. The general production-analysis method
+        uses HPLC/UV at 245 nm with authentic 8-azaguanine. No independent peak integration,
+        replicate assessment or quantitative phenotype estimate was performed.
+      snippet: a small titer increase
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -727,4 +1026,21 @@ curation_history:
     article/deposit sequencing-platform discrepancy is retained. All previous fields,
     D/E/F graph and history preserved; SEEDED remains, not full-record scientific
     sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-11T00:34:38Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Added an eleven-node, ten-edge BIOSYNTHESIS graph for native references
+    8-AzgC/QLM04710.1, H/QLM04714.1, I/QLM04715.1, J/QLM04716.1 and K/QLM04717.1.
+    Independent complete CDS translations match GenPept under code 11, including H/I
+    TTG and J GTG initiation. Every edge cites DOI:10.3389/fbioe.2020.603514; three
+    short verbatim snippets total nine new words. Native knockout Methods and Results
+    report reduced product for C/H/J, a small increase for K and no change for I.
+    I is negative-test context, not a positive role or general dispensability. Supplementary
+    Figure 4, PCR evidence and exact mutant alleles remain uninspected; no quantitative,
+    statistical, catalytic, K transcriptional regulation or polar-effect claim is
+    adopted. No exact UniProt mapping was established in the archived query; no homolog
+    substituted. Native reference identity is not historical-stock identity; the sequencing-platform
+    discrepancy is retained. Both earlier graphs, all other owner fields and history
+    are preserved. SEEDED remains, not full-record scientific sign-off.
   llm_assisted: true
