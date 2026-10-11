@@ -166,7 +166,61 @@ discussions:
   resolved_date: '2026-09-28'
   resolution_note: 'Resolved by live MIBiG and local exact InChIKey review: BGC0000223.5,
     BGC0000262.5, and BGC0001904.2 all intentionally store the complete-stereo rabelomycin
-    structure JJOLHRYZQSDLSA-IBGZPJMESA-N.'
+    structure JJOLHRYZQSDLSA-IBGZPJMESA-N. This establishes agreement among database
+    structures, not primary experimental proof of absolute configuration; see curator-rabelomycin-absolute-configuration
+    for the unresolved stereochemical applicability audit.'
+- discussion_id: curator-rabelomycin-absolute-configuration
+  kind: CURATION_TODO
+  status: OPEN
+  posed_by: codex
+  posed_date: '2026-10-11'
+  attaches_to:
+  - causal_graphs#rabelomycin-pga64-cyclization
+  - biosynthetic_pathway#1
+  prompt: Which absolute configuration is supported for each rabelomycin source claim,
+    and do the existing pathway and candidate protein graphs apply to this S-configured
+    owner?
+  rationale: The owner denotes JJOLHRYZQSDLSA-IBGZPJMESA-N (S), whereas PDB ligand
+    2V4 denotes JJOLHRYZQSDLSA-LJQANCHMSA-N (R). Agreement of the three pinned MIBiG
+    rows on the S key does not establish absolute configuration in the underlying
+    experiments. Name, formula, retention time, UV spectrum and mass alone do not
+    settle this discrepancy.
+  evidence:
+  - reference: https://www.rcsb.org/ligand/2V4
+    supports: SUPPORT
+    evidence_source: PDB chemical component dictionary, retrieved 2026-10-11
+    snippet: (3R)-3,6,8-trihydroxy-3-methyl-3,4-dihydrotetraphene-1,7,12(2H)-trione
+    explanation: 'Database assertion: 2V4 has the R key, neutral C19H14O6 and one
+      stereocentre. Independent RDKit 2026.03.5 conversion of the deposited isomeric
+      SMILES and InChI agrees; the pinned owner converts to S. A dictionary assignment
+      does not determine the configuration of every reported isolate.'
+  - reference: DOI:10.2210/pdb4OSO/pdb
+    supports: SUPPORT
+    evidence_source: PDB structure entry, retrieved 2026-10-11
+    explanation: LanV complex 4OSO lists ligand 2V4. Product-analogue binding is not
+      a demonstrated rabelomycin biosynthetic reaction or antimicrobial mechanism.
+      No LanV protein node is added to this owner.
+  - reference: DOI:10.1186/s13568-023-01591-2
+    supports: PARTIAL
+    evidence_source: primary Figure 1a, engineered-host results and supplement
+    explanation: 'Curator interpretation: the depicted methyl wedge and OH dash map
+      to R on the owner topology; mirrored and rotated-coordinate controls check the
+      interpretation. This is not an experimental absolute-configuration assignment.
+      The reported engineered M1146 product identification uses chromatographic/spectral
+      and high-resolution mass comparisons. LanABCFDLE and mixed Aur/Lan construct
+      claims remain unassigned to the S owner.'
+  - reference: https://github.com/CultureBotAI/NaturalProductMech/issues/803
+    supports: SUPPORT
+    evidence_source: curation follow-up
+    explanation: Tracks source/xref reconciliation, exact-structure review of the
+      existing PGA64 mechanism, and any required reproducible identity migration.
+  notes: Keep the current chemical structure, imported producer/BGC/occurrence claims
+    and exact-xref values unchanged pending source-level adjudication; their preservation
+    here is not revalidation. The PDB cross-reference to PubChem 443810, also present
+    on this owner, requires independent checking, as do NPAtlas and ChEBI. Do not
+    transfer new protein claims between enantiomers. Re-audit existing PGA64 claims
+    before any identity change, and retain SEEDED status. This discussion does not
+    establish that all natural rabelomycin has one configuration.
 biosynthetic_pathway:
 - step_number: 1
   enzyme_label: PgaY/PgaF and PgaL angucyclinone cyclization module
@@ -175,7 +229,9 @@ biosynthetic_pathway:
     proteins from the demonstrated BGC0000262 angucycline locus. The exact nascent
     polyketide intermediate and the final oxidation from the UWM6 branch toward rabelomycin
     are left unexpanded, so the module rather than a single substrate-to-product reaction
-    is curated.
+    is curated. Exact S-configured product assignment has not been established by
+    the new stereochemistry audit; retain this proposed module subject to curator-rabelomycin-absolute-configuration,
+    not as independent stereochemical proof.
   evidence:
   - reference: DOI:10.1128/AAC.47.4.1291-1296.2003
     evidence_type: PRIMARY_EXPERIMENT
@@ -216,7 +272,9 @@ causal_graphs:
 - graph_id: rabelomycin-pga64-cyclization
   scope: BIOSYNTHESIS
   description: Partial Streptomyces sp. PGA64 rabelomycin biosynthesis graph for the
-    BGC0000262 PgaY/PgaF and PgaL cyclization/aromatization proteins.
+    BGC0000262 PgaY/PgaF and PgaL cyclization/aromatization proteins. Applicability
+    to the exact S-configured owner remains under review in curator-rabelomycin-absolute-configuration;
+    the shared compound name is not stereochemical proof.
   nodes:
   - node_id: nascent_angucycline_polyketide
     label: nascent angucycline polyketide
@@ -325,6 +383,10 @@ causal_graphs:
     object: rabelomycin
     notes: The graph captures the cyclization branch of the demonstrated BGC0000262
       locus and leaves the unresolved rabelomycin-proximal oxidation as future curation.
+      The compound endpoint follows the imported MIBiG identity; it is not independent
+      evidence that the experimental product has the owner's S configuration. See
+      curator-rabelomycin-absolute-configuration before extending or transferring
+      this edge.
     evidence:
     - reference: DOI:10.1128/AAC.47.4.1291-1296.2003
       evidence_type: PRIMARY_EXPERIMENT
@@ -355,4 +417,14 @@ curation_history:
     AAK57524.1 to UniProtKB:Q93LY5 and AAK57529.1 to UniProtKB:Q93LY0; resolved the
     shared-structure discussion after exact BGC0000223/BGC0000262/BGC0001904 rabelomycin
     review.
+  llm_assisted: true
+- timestamp: '2026-10-11T06:42:19Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Recorded an open rabelomycin S/R applicability audit with stable PDB, primary-paper
+    and issue 803 references; qualified existing PGA64 pathway, graph endpoint and
+    database-agreement resolution. Compared owner chemistry with PDB 2V4 and interpreted
+    Figure 1a with mirror/rotation controls, without claiming experimental absolute
+    configuration. Added no proteins or edges; preserved source-owned identity, xrefs,
+    claims, grades and previous history.
   llm_assisted: true
