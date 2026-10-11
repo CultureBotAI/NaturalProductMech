@@ -260,6 +260,138 @@ causal_graphs:
         of the observed process, not an additional AptC-catalyzed final reaction.
         Unidentified pigments, hypothetical polymers and ascoquinone A are not equated
         with the exact owner.'
+- graph_id: asperthecin-developmental-genetics
+  scope: BIOSYNTHESIS
+  description: Developmental-gene perturbations associated with asperthecin production.
+    NsdD deletion lacks detectable asperthecin and cleistothecia; MAT1/MatB deletion
+    increases asperthecin despite absent ascospores. The nodes are sequence-verified
+    FGSC A4 references, not complete experimental alleles. Genetic effects are not
+    equated with direct apt-promoter regulation, a catalytic reaction, a regulatory
+    protein complex or universal production requirements. The source-imported producer
+    and BGC grades are unchanged.
+  nodes:
+  - node_id: nsdd
+    label: NsdD (FGSC A4 reference)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:G5EB07
+  - node_id: mat1
+    label: MAT1/MatB (FGSC A4 reference)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:G5EAT5
+  - node_id: production
+    label: Asperthecin production under sexual-induction conditions
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: asperthecin
+    label: Asperthecin
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:64161
+  edges:
+  - subject: nsdd
+    predicate: has_deletion_associated_loss_of
+    object: production
+    notes: The protein node is an explicitly selected native reference for the named
+      developmental gene. The edge concerns a laboratory gene-deletion phenotype,
+      not the direct molecular action of the canonical protein.
+    evidence:
+    - reference: DOI:10.1093/jimb/kuab055
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      snippet: knockout strains of two genes involved in sexual development
+      notes: 'Palmer et al. 2021, Table 1, Methods and Fig.4/p6: Table 1 lists the
+        nsdD-deletion strain RDIT88.13 in a veA+ background. The nsdD-deletion profile
+        lacks the assigned asperthecin peak, and Fig.4 also labels this genotype as
+        lacking cleistothecia and ascospores. This is a developmental-context-associated
+        loss of detectable metabolite, not proof of a direct effect on an apt promoter
+        or of a missing catalytic step. The extraction/analytical workflow uses sexual-induction
+        conditions, Champe medium at 37 C in darkness for 18 days and HPLC-DAD comparisons
+        to an asperthecin standard; the article also reports mass-spectrometric identification.
+        No fold change, detection limit or universal biosynthetic essentiality is
+        inferred.'
+    - reference: https://www.uniprot.org/uniprotkb/G5EB07/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Unreviewed UniProtKB/TrEMBL native reference, entry version 77, sequence
+        version 1, gene nsdD, ANIA_03152, 461 aa, NCBITaxon:227321. Protein-existence
+        annotation remains 4: Predicted. This entry supplies reference identity, not
+        an independently curated asperthecin mechanism or proof of the complete laboratory
+        allele.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF83303.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: 'Native FGSC A4 reference ANIA_03152, nsdD, 461 aa, chromosome VI: complement(join(BN001306.1:1594943..1595152,
+        BN001306.1:1595209..1595538,BN001306.1:1595588..1596401, BN001306.1:1596476..1596507)).
+        Reverse-strand CDS translation with 4 spliced exons exactly matches the deposited
+        translation, independently retrieved GenPept and UniProt sequences. This is
+        reference-sequence consistency, not independent sequencing of the experimental
+        mutant or its parent. Both references lie outside the imported apt-cluster
+        interval on BN001301.1. No engineered construct, direct DNA-binding target
+        or protein complex is inferred.'
+  - subject: mat1
+    predicate: has_deletion_associated_increase_in
+    object: production
+    notes: The protein node is an explicitly selected native reference for the named
+      developmental gene. The edge concerns a laboratory gene-deletion phenotype,
+      not the direct molecular action of the canonical protein.
+    evidence:
+    - reference: DOI:10.1093/jimb/kuab055
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      snippet: an overproduction of asperthecin
+      notes: 'Palmer et al. 2021, Table 1 and Fig.4/p6: the article calls the alpha-box
+        gene MAT-1 (matB), reports increased asperthecin in the matB-deletion profile,
+        and labels that genotype as having cleistothecia but no ascospores. Table
+        1 lists two single matB-deletion backgrounds, TJMP190.4 and RJMP290.2, plus
+        the matB/aptC double deletion RJMP291.12. Fig.4 labels genotypes rather than
+        an unambiguous single-strain identifier, so the plotted single deletion is
+        not assigned uniquely to either Table 1 line here. The double-deletion profile
+        resembles aptC deletion, not restoration of final asperthecin. HPLC-DAD comparisons
+        use an asperthecin standard under the stated sexual-induction conditions.
+        This is not a quantitative fold-change claim or evidence that MAT1 directly
+        represses apt transcription.'
+    - reference: https://www.uniprot.org/uniprotkb/G5EAT5/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Unreviewed UniProtKB/TrEMBL native reference, entry version 61, sequence
+        version 1, gene MAT1, ANIA_02755, 361 aa, NCBITaxon:227321. Protein-existence
+        annotation remains 3: Inferred from homology. This entry supplies reference
+        identity, not an independently curated asperthecin mechanism or proof of the
+        complete laboratory allele.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF84081.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: 'Native FGSC A4 reference ANIA_02755, MAT1, 361 aa, chromosome VI: complement(join(BN001306.1:2857276..2858072,
+        BN001306.1:2858129..2858417)). Reverse-strand CDS translation with 2 spliced
+        exons exactly matches the deposited translation, independently retrieved GenPept
+        and UniProt sequences. This is reference-sequence consistency, not independent
+        sequencing of the experimental mutant or its parent. Both references lie outside
+        the imported apt-cluster interval on BN001301.1. No engineered construct,
+        direct DNA-binding target or protein complex is inferred.'
+    - reference: https://www.ncbi.nlm.nih.gov/gene/2874476
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: NCBI Gene identifies MAT1/ANIA_02755. The independently retrieved native
+        GenPept product is named MAT-1 and an alpha-box protein, matching the paper's
+        explicit MAT-1 (matB) terminology. The Gene record itself provides no matB
+        synonym. This supports the selected native reference by gene name and protein
+        class, not a sequenced mapping of the plotted deletion allele or its construction
+        primers.
+  - subject: production
+    predicate: produces
+    object: asperthecin
+    evidence:
+    - reference: DOI:10.1093/jimb/kuab055
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: Fig.4 and the discussion identify the asperthecin signal in positive
+        extracts by comparison with the standard and report HPLC/mass-spectrometric
+        identification. This identifies the measured compound in the production process;
+        it does not say every mutant produces it or that either regulator catalyzes
+        its formation. Unknown pigments and hypothetical polymers are not equated
+        with CHEBI:64161.
 discussions:
 - discussion_id: curator-asperthecin-apt-reference-and-pathway-limits
   kind: CURATION_TODO
@@ -300,6 +432,40 @@ discussions:
     evidence_source: PubChem, retrieved 2026-10-11
     notes: Stored SMILES, InChI and InChIKey agree with the official properties and
       independent RDKit calculation; neutral C15H10O8, no stereocenters.
+- discussion_id: curator-asperthecin-developmental-regulator-limits
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: Which direct molecular connections, if any, link NsdD and MAT1/MatB to asperthecin
+    production independently of developmental changes?
+  rationale: The inspected deletion phenotypes occur alongside different sexual-development
+    states. Native reference sequences are verified, but direct apt-promoter regulation
+    and complete laboratory-allele identity are not established.
+  notes: The prior AptA/B/C graph and its evidence are preserved unchanged. The new
+    graph adds only the 2021 developmental-gene deletion associations. NsdD/G5EB07
+    (ANIA_03152, 461 aa) and MAT1/G5EAT5 (ANIA_02755, 361 aa) are unreviewed native
+    FGSC A4 references on chromosome VI. Their protein-existence flags remain predicted
+    and inferred from homology, respectively; exact sequence agreement does not upgrade
+    those annotations. The paper explicitly equates MAT-1 with matB and identifies
+    an alpha-box protein; NCBI Gene2874476 confirms MAT1/ANIA_02755 but supplies no
+    matB synonym. The native GenPept product names and current explicit CDS xrefs
+    support the chosen reference; inherited product-text accessions Q92226 and Q7Z896
+    are not assumed to be additional exact groundings. Table 1 lists RDIT88.13 for
+    nsdD deletion, two single matB-deletion lines TJMP190.4 and RJMP290.2, and the
+    matB/aptC double deletion RJMP291.12. The plotted single matB-deletion profile
+    is not uniquely assigned to one Table 1 line. The nsdD phenotype lacks cleistothecia
+    as well as detectable asperthecin, so the graph does not separate direct pathway
+    control from developmental or sampling effects. No new catalytic step, fold change,
+    physical NsdD-MAT1 complex, regulatory binding site, molecular target or source-owned
+    grade upgrade is added. Existing access stops and all original source-owned fields,
+    history and SEEDED status remain unchanged.
+  evidence:
+  - reference: DOI:10.1093/jimb/kuab055
+    evidence_source: Inspected primary article, Table 1, Methods and Fig.4
+    notes: Gene-deletion and developmental-context evidence; not direct regulatory-mechanism
+      or complete allele proof.
+  - reference: https://www.ncbi.nlm.nih.gov/gene/2874476
+    evidence_source: NCBI Gene, retrieved 2026-10-11
+    notes: MAT1/ANIA_02755 gene identity; no additional matB synonym provided.
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
@@ -317,4 +483,13 @@ curation_history:
     snippets. Separate laboratory deletion phenotypes from canonical reference sequences
     and unproven native reaction steps; preserve all source-owned fields and SEEDED
     status.
+  llm_assisted: true
+- timestamp: '2026-10-11T20:20:02Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add two sequence-verified FGSC A4 developmental-gene protein references,
+    NsdD and MAT1/MatB, with primary deletion-phenotype evidence, stable identity
+    URLs and short snippets. Distinguish developmental associations and native reference
+    mapping from direct regulation, catalytic steps or complete experimental alleles.
+    Preserve the prior AptA/B/C graph, source-owned fields and SEEDED status.
   llm_assisted: true

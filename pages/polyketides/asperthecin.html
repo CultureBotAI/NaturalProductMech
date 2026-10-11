@@ -138,12 +138,51 @@ isolation report left it.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
+<p class="sub">Developmental-gene perturbations associated with asperthecin production. NsdD deletion lacks detectable asperthecin and cleistothecia; MAT1/MatB deletion increases asperthecin despite absent ascospores. The nodes are sequence-verified FGSC A4 references, not complete experimental alleles. Genetic effects are not equated with direct apt-promoter regulation, a catalytic reaction, a regulatory protein complex or universal production requirements. The source-imported producer and BGC grades are unchanged.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>NsdD (FGSC A4 reference)</td>
+  <td>has_deletion_associated_loss_of</td>
+  <td>Asperthecin production under sexual-induction conditions</td>
+  <td>The protein node is an explicitly selected native reference for the named developmental gene. The edge concerns a laboratory gene-deletion phenotype, not the direct molecular action of the canonical protein.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1093/jimb/kuab055<br>https://www.uniprot.org/uniprotkb/G5EB07/entry<br>https://www.ncbi.nlm.nih.gov/protein/CBF83303.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1093/jimb/kuab055</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>knockout strains of two genes involved in sexual development</dd><dt>notes</dt><dd>Palmer et al. 2021, Table 1, Methods and Fig.4/p6: Table 1 lists the nsdD-deletion strain RDIT88.13 in a veA+ background. The nsdD-deletion profile lacks the assigned asperthecin peak, and Fig.4 also labels this genotype as lacking cleistothecia and ascospores. This is a developmental-context-associated loss of detectable metabolite, not proof of a direct effect on an apt promoter or of a missing catalytic step. The extraction/analytical workflow uses sexual-induction conditions, Champe medium at 37 C in darkness for 18 days and HPLC-DAD comparisons to an asperthecin standard; the article also reports mass-spectrometric identification. No fold change, detection limit or universal biosynthetic essentiality is inferred.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/G5EB07/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed UniProtKB/TrEMBL native reference, entry version 77, sequence version 1, gene nsdD, ANIA_03152, 461 aa, NCBITaxon:227321. Protein-existence annotation remains 4: Predicted. This entry supplies reference identity, not an independently curated asperthecin mechanism or proof of the complete laboratory allele.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/CBF83303.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native FGSC A4 reference ANIA_03152, nsdD, 461 aa, chromosome VI: complement(join(BN001306.1:1594943..1595152, BN001306.1:1595209..1595538,BN001306.1:1595588..1596401, BN001306.1:1596476..1596507)). Reverse-strand CDS translation with 4 spliced exons exactly matches the deposited translation, independently retrieved GenPept and UniProt sequences. This is reference-sequence consistency, not independent sequencing of the experimental mutant or its parent. Both references lie outside the imported apt-cluster interval on BN001301.1. No engineered construct, direct DNA-binding target or protein complex is inferred.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>MAT1/MatB (FGSC A4 reference)</td>
+  <td>has_deletion_associated_increase_in</td>
+  <td>Asperthecin production under sexual-induction conditions</td>
+  <td>The protein node is an explicitly selected native reference for the named developmental gene. The edge concerns a laboratory gene-deletion phenotype, not the direct molecular action of the canonical protein.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1093/jimb/kuab055<br>https://www.uniprot.org/uniprotkb/G5EAT5/entry<br>https://www.ncbi.nlm.nih.gov/protein/CBF84081.1<br>https://www.ncbi.nlm.nih.gov/gene/2874476</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1093/jimb/kuab055</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>an overproduction of asperthecin</dd><dt>notes</dt><dd>Palmer et al. 2021, Table 1 and Fig.4/p6: the article calls the alpha-box gene MAT-1 (matB), reports increased asperthecin in the matB-deletion profile, and labels that genotype as having cleistothecia but no ascospores. Table 1 lists two single matB-deletion backgrounds, TJMP190.4 and RJMP290.2, plus the matB/aptC double deletion RJMP291.12. Fig.4 labels genotypes rather than an unambiguous single-strain identifier, so the plotted single deletion is not assigned uniquely to either Table 1 line here. The double-deletion profile resembles aptC deletion, not restoration of final asperthecin. HPLC-DAD comparisons use an asperthecin standard under the stated sexual-induction conditions. This is not a quantitative fold-change claim or evidence that MAT1 directly represses apt transcription.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/G5EAT5/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Unreviewed UniProtKB/TrEMBL native reference, entry version 61, sequence version 1, gene MAT1, ANIA_02755, 361 aa, NCBITaxon:227321. Protein-existence annotation remains 3: Inferred from homology. This entry supplies reference identity, not an independently curated asperthecin mechanism or proof of the complete laboratory allele.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/CBF84081.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native FGSC A4 reference ANIA_02755, MAT1, 361 aa, chromosome VI: complement(join(BN001306.1:2857276..2858072, BN001306.1:2858129..2858417)). Reverse-strand CDS translation with 2 spliced exons exactly matches the deposited translation, independently retrieved GenPept and UniProt sequences. This is reference-sequence consistency, not independent sequencing of the experimental mutant or its parent. Both references lie outside the imported apt-cluster interval on BN001301.1. No engineered construct, direct DNA-binding target or protein complex is inferred.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/gene/2874476</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>NCBI Gene identifies MAT1/ANIA_02755. The independently retrieved native GenPept product is named MAT-1 and an alpha-box protein, matching the paper&#39;s explicit MAT-1 (matB) terminology. The Gene record itself provides no matB synonym. This supports the selected native reference by gene name and protein class, not a sequenced mapping of the plotted deletion allele or its construction primers.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Asperthecin production under sexual-induction conditions</td>
+  <td>produces</td>
+  <td>Asperthecin</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1093/jimb/kuab055</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1093/jimb/kuab055</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Fig.4 and the discussion identify the asperthecin signal in positive extracts by comparison with the standard and report HPLC/mass-spectrometric identification. This identifies the measured compound in the production process; it does not say every mutant produces it or that either regulator catalyzes its formation. Unknown pigments and hypothetical polymers are not equated with CHEBI:64161.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
 
-<h2>Open questions <span class="tag">1</span></h2>
+<h2>Open questions <span class="tag">2</span></h2>
 <div class="note"><p><strong>curator-asperthecin-apt-reference-and-pathway-limits</strong> — Which native reactions and experimentally verified alleles connect AptA/B/C to the final asperthecin structure?</p></div>
+<div class="note"><p><strong>curator-asperthecin-developmental-regulator-limits</strong> — Which direct molecular connections, if any, link NsdD and MAT1/MatB to asperthecin production independently of developmental changes?</p></div>
 
 <h2>Provenance</h2>
 <div class="scroll"><table>
