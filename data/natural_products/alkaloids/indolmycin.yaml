@@ -230,6 +230,194 @@ causal_graphs:
       notes: Current reviewed UniProtKB:A0A0D4BSP3 resolves as the 237 aa Streptomyces
         griseus Ind7 N-demethylindolmycin N-methyltransferase and cross-references
         EMBL KM596502 protein AJT38688.1.
+- graph_id: indolmycin-ind1-ind2-annotated-precursor-branch
+  scope: BIOSYNTHESIS
+  description: Native ATCC 12648 Ind1 and Ind2 references support a database-annotated
+    precursor branch. C-methylation and NADH-dependent reduction are separate processes;
+    the downstream connection to indolmycin is multistep and inferred. The primary
+    study was not newly inspected in full, and ring assembly is not represented by
+    these edges.
+  nodes:
+  - node_id: ind1
+    label: Ind1 native C-methyltransferase
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A0D4BS77
+  - node_id: ind2
+    label: Ind2 native reductase
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A0D4BSN8
+  - node_id: c_methylation
+    label: Annotated indolepyruvate C-methylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: reduction
+    label: Annotated NADH-dependent reduction
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: indolepyruvate
+    label: Indolepyruvate (database substrate)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: methylindolepyruvate
+    label: Methylindolepyruvate (database intermediate)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: indolmycenate
+    label: Indolmycenate (database product)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: indolmycin
+    label: indolmycin
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: naturalproductmech:mibig-3f4d7c9236
+  edges:
+  - subject: ind1
+    predicate: is annotated to catalyze
+    object: c_methylation
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed entry version 27, sequence version 1. FUNCTION assigns SAM-dependent
+        side-chain C-methylation of indolepyruvate in indolmycin biosynthesis.
+      snippet: to yield 3-methylindolepyruvate
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Native indolmycin cluster maps ind1 to AJT38682.1, KM596502.1:2494..3483,
+        329 aa. CDS-aware genetic-code-11 translation agrees with the deposited CDS,
+        independently fetched GenPept and direct UniProt sequences. The native source
+        is Streptomyces griseus subsp. griseus ATCC 12648, taxon 67263.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AJT38682.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Versioned native ind1 protein. UniProt uses species taxon 1911, retains
+        the ATCC 12648 nucleotide-reference attribution, and cross-references KM596502/AJT38682.1.
+        This is native sequence identity, not independent verification of a recombinant
+        assay construct.
+    notes: Database-supported biosynthetic role, not a newly inspected primary experiment.
+      No exact recombinant construct, kinetics, knockout phenotype or physiological
+      sufficiency is asserted.
+  - subject: indolepyruvate
+    predicate: is the annotated substrate of
+    object: c_methylation
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed entry version 27, sequence version 1. FUNCTION names (indol-3-yl)pyruvate
+        as the methyl acceptor; S-adenosyl-L-methionine supplies the methyl group.
+    notes: 'The database-named intermediate remains ungrounded: no exact chemical
+      identifier, protonation, tautomer or stereochemical mapping is adopted.'
+  - subject: c_methylation
+    predicate: yields the annotated product
+    object: methylindolepyruvate
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed entry version 27, sequence version 1. FUNCTION names 3-methylindolepyruvate
+        as the product. The Ind1 and Ind2 catalytic annotations reference the same
+        methylated substrate/product entity; the graph uses a shared ungrounded name,
+        not an independently audited exact chemical CURIE.
+    notes: 'The database-named intermediate remains ungrounded: no exact chemical
+      identifier, protonation, tautomer or stereochemical mapping is adopted.'
+  - subject: ind2
+    predicate: is annotated to catalyze
+    object: reduction
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed entry version 25, sequence version 1. FUNCTION assigns NADH-dependent
+        reduction of beta-methylindolepyruvate in indolmycin biosynthesis.
+      snippet: Catalyzes the NADH-dependent reduction of beta-methylindolepyruvate
+        to yield indolmycenate
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Native indolmycin cluster maps ind2 to AJT38683.1, KM596502.1:3480..5192,
+        570 aa. CDS-aware genetic-code-11 translation agrees with the deposited CDS,
+        independently fetched GenPept and direct UniProt sequences. The native source
+        is Streptomyces griseus subsp. griseus ATCC 12648, taxon 67263.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AJT38683.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Versioned native ind2 protein. UniProt uses species taxon 1911, retains
+        the ATCC 12648 nucleotide-reference attribution, and cross-references KM596502/AJT38683.1.
+        This is native sequence identity, not independent verification of a recombinant
+        assay construct.
+    notes: Database-supported biosynthetic role, not a newly inspected primary experiment.
+      No exact recombinant construct, kinetics, knockout phenotype or physiological
+      sufficiency is asserted. The by-similarity active-site annotation is not experimental
+      mutagenesis evidence.
+  - subject: methylindolepyruvate
+    predicate: is the annotated substrate of
+    object: reduction
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed entry version 25, sequence version 1. FUNCTION names beta-methylindolepyruvate
+        as the substrate. The reduction direction follows FUNCTION; the displayed
+        Rhea equation is written in the opposite oxidation direction and is not copied
+        as a biosynthetic direction.
+    notes: 'The database-named intermediate remains ungrounded: no exact chemical
+      identifier, protonation, tautomer or stereochemical mapping is adopted.'
+  - subject: reduction
+    predicate: yields the annotated product
+    object: indolmycenate
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed entry version 25, sequence version 1. FUNCTION names indolmycenate
+        as the reduction product. No exact Rhea reaction or intermediate chemical
+        identifier is adopted.
+    notes: 'The database-named intermediate remains ungrounded: no exact chemical
+      identifier, protonation, tautomer or stereochemical mapping is adopted.'
+  - subject: indolmycenate
+    predicate: is inferred to feed downstream biosynthesis of
+    object: indolmycin
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Reviewed entry version 25, sequence version 1. FUNCTION places the indolmycenate-forming
+        reaction in indolmycin biosynthesis. The curator represents a multistep downstream
+        relationship, not a direct Ind2-to-final-product reaction.
+    notes: Indolmycenate is not indolmycin. This edge does not assert ring closure,
+      final methylation, sufficiency of Ind1/Ind2 or a fully reconstructed pathway.
+discussions:
+- discussion_id: curator-indolmycin-precursor-primary-and-chemical-scope
+  kind: CURATION_TODO
+  status: OPEN
+  posed_by: codex
+  posed_date: '2026-10-11'
+  attaches_to:
+  - causal_graphs#indolmycin-ind1-ind2-annotated-precursor-branch
+  prompt: Which primary construct and chemical data resolve the Ind1/Ind2 assays,
+    exact intermediates and downstream oxazolinone assembly?
+  rationale: Current UniProt FUNCTION annotations and native sequences support the
+    added database roles. They do not independently establish the complete assayed
+    constructs or exact intermediate forms.
+  evidence:
+  - reference: DOI:10.1073/pnas.1419964112
+    supports: PARTIAL
+    evidence_source: Indexed abstract/excerpts and database-linked citation; full
+      article not newly inspected
+    explanation: The 2015 study is a primary follow-up lead, not newly adopted experimental
+      support for these edges. Its fullTextXML request returned HTTP 500 on 2026-10-11;
+      no alternate retrieval was attempted.
+  notes: Retain the existing Ind7 pathway, graph and their earlier evidence unchanged.
+    Keep new roles at DATABASE_ASSERTION and the downstream link at CURATOR_INFERENCE.
+    Do not transfer the 1975 unsequenced preparation kinetics to these native references,
+    equate an inferred active site with mutagenesis, or infer Ind3/Ind4/Ind5/Ind6/Ind8
+    function from cluster membership alone. Assay constructs, primary figures/supplements
+    and exact intermediate chemical forms remain uninspected in this continuation.
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
   curator: seed_from_sources
@@ -248,4 +436,13 @@ curation_history:
   action: RECORD_CURATED
   changes: Added the evidence-backed Ind7 N-demethylindolmycin N-methyltransferase
     biosynthetic pathway step and BIOSYNTHESIS causal graph grounded to UniProtKB:A0A0D4BSP3.
+  llm_assisted: true
+- timestamp: '2026-10-11T13:12:45Z'
+  curator: codex
+  action: ADDED_INDOLMYCIN_PRECURSOR_REFERENCES
+  changes: Added sequence-verified native Ind1 and Ind2 references in a database-supported
+    precursor graph, with stable URLs and short snippets. Separated annotated C-methylation
+    and reduction from the inferred multistep downstream relationship to indolmycin.
+    Preserved the prior Ind7 pathway/graph, source-owned fields and SEEDED status;
+    recorded primary-access, construct and chemical-form limitations.
   llm_assisted: true

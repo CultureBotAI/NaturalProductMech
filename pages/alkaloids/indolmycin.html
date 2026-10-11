@@ -135,10 +135,85 @@ derived from a source. This is what the rest of the record exists to support.</p
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 7 edges</span></h2>
+<p class="sub">Native ATCC 12648 Ind1 and Ind2 references support a database-annotated precursor branch. C-methylation and NADH-dependent reduction are separate processes; the downstream connection to indolmycin is multistep and inferred. The primary study was not newly inspected in full, and ring assembly is not represented by these edges.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Ind1 native C-methyltransferase</td>
+  <td>is annotated to catalyze</td>
+  <td>Annotated indolepyruvate C-methylation</td>
+  <td>Database-supported biosynthetic role, not a newly inspected primary experiment. No exact recombinant construct, kinetics, knockout phenotype or physiological sufficiency is asserted.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry<br>https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1<br>https://www.ncbi.nlm.nih.gov/protein/AJT38682.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 27, sequence version 1. FUNCTION assigns SAM-dependent side-chain C-methylation of indolepyruvate in indolmycin biosynthesis.</dd><dt>snippet</dt><dd>to yield 3-methylindolepyruvate</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native indolmycin cluster maps ind1 to AJT38682.1, KM596502.1:2494..3483, 329 aa. CDS-aware genetic-code-11 translation agrees with the deposited CDS, independently fetched GenPept and direct UniProt sequences. The native source is Streptomyces griseus subsp. griseus ATCC 12648, taxon 67263.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AJT38682.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Versioned native ind1 protein. UniProt uses species taxon 1911, retains the ATCC 12648 nucleotide-reference attribution, and cross-references KM596502/AJT38682.1. This is native sequence identity, not independent verification of a recombinant assay construct.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Indolepyruvate (database substrate)</td>
+  <td>is the annotated substrate of</td>
+  <td>Annotated indolepyruvate C-methylation</td>
+  <td>The database-named intermediate remains ungrounded: no exact chemical identifier, protonation, tautomer or stereochemical mapping is adopted.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 27, sequence version 1. FUNCTION names (indol-3-yl)pyruvate as the methyl acceptor; S-adenosyl-L-methionine supplies the methyl group.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Annotated indolepyruvate C-methylation</td>
+  <td>yields the annotated product</td>
+  <td>Methylindolepyruvate (database intermediate)</td>
+  <td>The database-named intermediate remains ungrounded: no exact chemical identifier, protonation, tautomer or stereochemical mapping is adopted.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0D4BS77/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 27, sequence version 1. FUNCTION names 3-methylindolepyruvate as the product. The Ind1 and Ind2 catalytic annotations reference the same methylated substrate/product entity; the graph uses a shared ungrounded name, not an independently audited exact chemical CURIE.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Ind2 native reductase</td>
+  <td>is annotated to catalyze</td>
+  <td>Annotated NADH-dependent reduction</td>
+  <td>Database-supported biosynthetic role, not a newly inspected primary experiment. No exact recombinant construct, kinetics, knockout phenotype or physiological sufficiency is asserted. The by-similarity active-site annotation is not experimental mutagenesis evidence.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry<br>https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1<br>https://www.ncbi.nlm.nih.gov/protein/AJT38683.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 25, sequence version 1. FUNCTION assigns NADH-dependent reduction of beta-methylindolepyruvate in indolmycin biosynthesis.</dd><dt>snippet</dt><dd>Catalyzes the NADH-dependent reduction of beta-methylindolepyruvate to yield indolmycenate</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/KM596502.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native indolmycin cluster maps ind2 to AJT38683.1, KM596502.1:3480..5192, 570 aa. CDS-aware genetic-code-11 translation agrees with the deposited CDS, independently fetched GenPept and direct UniProt sequences. The native source is Streptomyces griseus subsp. griseus ATCC 12648, taxon 67263.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AJT38683.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Versioned native ind2 protein. UniProt uses species taxon 1911, retains the ATCC 12648 nucleotide-reference attribution, and cross-references KM596502/AJT38683.1. This is native sequence identity, not independent verification of a recombinant assay construct.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Methylindolepyruvate (database intermediate)</td>
+  <td>is the annotated substrate of</td>
+  <td>Annotated NADH-dependent reduction</td>
+  <td>The database-named intermediate remains ungrounded: no exact chemical identifier, protonation, tautomer or stereochemical mapping is adopted.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 25, sequence version 1. FUNCTION names beta-methylindolepyruvate as the substrate. The reduction direction follows FUNCTION; the displayed Rhea equation is written in the opposite oxidation direction and is not copied as a biosynthetic direction.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Annotated NADH-dependent reduction</td>
+  <td>yields the annotated product</td>
+  <td>Indolmycenate (database product)</td>
+  <td>The database-named intermediate remains ungrounded: no exact chemical identifier, protonation, tautomer or stereochemical mapping is adopted.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 25, sequence version 1. FUNCTION names indolmycenate as the reduction product. No exact Rhea reaction or intermediate chemical identifier is adopted.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Indolmycenate (database product)</td>
+  <td>is inferred to feed downstream biosynthesis of</td>
+  <td>indolmycin</td>
+  <td>Indolmycenate is not indolmycin. This edge does not assert ring closure, final methylation, sufficiency of Ind1/Ind2 or a fully reconstructed pathway.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A0D4BSN8/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Reviewed entry version 25, sequence version 1. FUNCTION places the indolmycenate-forming reaction in indolmycin biosynthesis. The curator represents a multistep downstream relationship, not a direct Ind2-to-final-product reaction.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
 
+<h2>Open questions <span class="tag">1</span></h2>
+<div class="note"><p><strong>curator-indolmycin-precursor-primary-and-chemical-scope</strong> — Which primary construct and chemical data resolve the Ind1/Ind2 assays, exact intermediates and downstream oxazolinone assembly?</p></div>
 
 <h2>Provenance</h2>
 <div class="scroll"><table>
