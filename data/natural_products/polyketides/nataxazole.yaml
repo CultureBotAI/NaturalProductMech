@@ -526,6 +526,286 @@ causal_graphs:
       engineered construct. NatAC2 remains explicitly proposed in the source. See
       curator-nataxazole-reaction-and-product-scope for the final-product and mechanism
       limits.
+- graph_id: nataxazole-native-regulation-and-transport
+  scope: BIOSYNTHESIS
+  description: 'Native cluster-associated regulation and proposed transport, separate
+    from the core biosynthesis-protein map. Eight versioned GenPept references are
+    supported by explicit LN713864.1 annotations and exact native DNA/protein sequence
+    checks. All edges are database assertions: NatR1-4 are annotated regulators without
+    an adopted regulatory sign or direct target, and NatT1-4 remain proposed transporters
+    without a demonstrated substrate or direction. The common process groups source-associated
+    roles; it is not a physical complex, ordered reaction sequence or proof that these
+    proteins produce or export the exact final nataxazole methyl ester. No bioactivity
+    target or self-resistance mechanism is asserted. Versioned native identifiers
+    are used without substituting homologs or unaudited UniProt accessions.'
+  nodes:
+  - node_id: natr1
+    label: natR1 reference protein (Tu 6176)
+    node_type: PROTEIN
+    identifier: NCBIProtein:CEK42811.1
+    grounding_status: GROUNDED
+  - node_id: natr2
+    label: natR2 reference protein (Tu 6176)
+    node_type: PROTEIN
+    identifier: NCBIProtein:CEK42815.1
+    grounding_status: GROUNDED
+  - node_id: natr3
+    label: natR3 reference protein (Tu 6176)
+    node_type: PROTEIN
+    identifier: NCBIProtein:CEK42828.1
+    grounding_status: GROUNDED
+  - node_id: natr4
+    label: natR4 reference protein (Tu 6176)
+    node_type: PROTEIN
+    identifier: NCBIProtein:CEK42830.1
+    grounding_status: GROUNDED
+  - node_id: natt1
+    label: natT1 reference protein (Tu 6176)
+    node_type: PROTEIN
+    identifier: NCBIProtein:CEK42812.1
+    grounding_status: GROUNDED
+  - node_id: natt2
+    label: natT2 reference protein (Tu 6176)
+    node_type: PROTEIN
+    identifier: NCBIProtein:CEK42813.1
+    grounding_status: GROUNDED
+  - node_id: natt3
+    label: natT3 reference protein (Tu 6176)
+    node_type: PROTEIN
+    identifier: NCBIProtein:CEK42814.1
+    grounding_status: GROUNDED
+  - node_id: natt4
+    label: natT4 reference protein (Tu 6176)
+    node_type: PROTEIN
+    identifier: NCBIProtein:CEK42829.1
+    grounding_status: GROUNDED
+  - node_id: cluster_associated_system
+    label: nataxazole-associated biosynthetic system (source-annotated, partial)
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: natr1
+    predicate: has an annotated regulatory role in
+    object: cluster_associated_system
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LN713864.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Nataxazole biosynthesis cluster regulator
+      notes: The deposited CDS explicitly carries this function qualifier; the association
+        is not inferred from gene neighborhood alone. This is a database annotation,
+        not a direct functional experiment. LN713864.1 cites PMID:25892546; its full
+        paper and supplements were not inspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42811.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: LuxR-family transcriptional regulator
+      notes: GenPept CEK42811.1, natR1, 935 aa, coded by complement(LN713864.1:6125..8932);
+        native Streptomyces sp. Tu 6176, taxon 1470557. The independent GenPept sequence,
+        native CDS annotation and genetic-code-11 DNA translation agree exactly. Gene,
+        product and function qualifiers also match. The accession identifies the native
+        reference, not an unspecified overexpression plasmid, tagged construct or
+        homolog.
+    notes: No individual essentiality, complete pathway, final-product sufficiency,
+      producer-grade upgrade or physical protein complex is asserted. No activating
+      or repressing sign, direct DNA binding, target promoter, transcriptional response
+      or yield change is adopted from this annotation. See curator-nataxazole-regulation-and-transport-scope
+      for the unresolved mechanism.
+  - subject: natr2
+    predicate: has an annotated regulatory role in
+    object: cluster_associated_system
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LN713864.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Nataxazole biosynthesis cluster regulator
+      notes: The deposited CDS explicitly carries this function qualifier; the association
+        is not inferred from gene neighborhood alone. This is a database annotation,
+        not a direct functional experiment. LN713864.1 cites PMID:25892546; its full
+        paper and supplements were not inspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42815.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: TetR-family transcriptional regulator
+      notes: GenPept CEK42815.1, natR2, 198 aa, coded by LN713864.1:15560..16156;
+        native Streptomyces sp. Tu 6176, taxon 1470557. The independent GenPept sequence,
+        native CDS annotation and genetic-code-11 DNA translation agree exactly. Gene,
+        product and function qualifiers also match. The accession identifies the native
+        reference, not an unspecified overexpression plasmid, tagged construct or
+        homolog.
+    notes: No individual essentiality, complete pathway, final-product sufficiency,
+      producer-grade upgrade or physical protein complex is asserted. No activating
+      or repressing sign, direct DNA binding, target promoter, transcriptional response
+      or yield change is adopted from this annotation. See curator-nataxazole-regulation-and-transport-scope
+      for the unresolved mechanism.
+  - subject: natr3
+    predicate: has an annotated regulatory role in
+    object: cluster_associated_system
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LN713864.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Nataxazole biosynthesis cluster regulator
+      notes: The deposited CDS explicitly carries this function qualifier; the association
+        is not inferred from gene neighborhood alone. This is a database annotation,
+        not a direct functional experiment. LN713864.1 cites PMID:25892546; its full
+        paper and supplements were not inspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42828.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: TetR-family transcriptional regulator
+      notes: GenPept CEK42828.1, natR3, 232 aa, coded by complement(LN713864.1:34517..35215);
+        native Streptomyces sp. Tu 6176, taxon 1470557. The independent GenPept sequence,
+        native CDS annotation and genetic-code-11 DNA translation agree exactly. Gene,
+        product and function qualifiers also match. The accession identifies the native
+        reference, not an unspecified overexpression plasmid, tagged construct or
+        homolog.
+    notes: No individual essentiality, complete pathway, final-product sufficiency,
+      producer-grade upgrade or physical protein complex is asserted. No activating
+      or repressing sign, direct DNA binding, target promoter, transcriptional response
+      or yield change is adopted from this annotation. See curator-nataxazole-regulation-and-transport-scope
+      for the unresolved mechanism.
+  - subject: natr4
+    predicate: has an annotated regulatory role in
+    object: cluster_associated_system
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LN713864.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Nataxazole biosynthesis cluter regulator
+      notes: The deposited CDS explicitly carries this function qualifier; the association
+        is not inferred from gene neighborhood alone. This is a database annotation,
+        not a direct functional experiment. LN713864.1 cites PMID:25892546; its full
+        paper and supplements were not inspected. The source spelling "cluter" is
+        retained verbatim.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42830.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: SARP-family trancriptional regulator
+      notes: GenPept CEK42830.1, natR4, 845 aa, coded by LN713864.1:37329..39866;
+        native Streptomyces sp. Tu 6176, taxon 1470557. The independent GenPept sequence,
+        native CDS annotation and genetic-code-11 DNA translation agree exactly. Gene,
+        product and function qualifiers also match. The accession identifies the native
+        reference, not an unspecified overexpression plasmid, tagged construct or
+        homolog.
+    notes: No individual essentiality, complete pathway, final-product sufficiency,
+      producer-grade upgrade or physical protein complex is asserted. No activating
+      or repressing sign, direct DNA binding, target promoter, transcriptional response
+      or yield change is adopted from this annotation. See curator-nataxazole-regulation-and-transport-scope
+      for the unresolved mechanism.
+  - subject: natt1
+    predicate: has a proposed transport role in
+    object: cluster_associated_system
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LN713864.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Proposed nataxazole transporter
+      notes: The deposited CDS explicitly carries this function qualifier; the association
+        is not inferred from gene neighborhood alone. This is a database annotation,
+        not a direct functional experiment. LN713864.1 cites PMID:25892546; its full
+        paper and supplements were not inspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42812.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: ABC transporter
+      notes: GenPept CEK42812.1, natT1, 579 aa, coded by complement(LN713864.1:9384..11123);
+        native Streptomyces sp. Tu 6176, taxon 1470557. The independent GenPept sequence,
+        native CDS annotation and genetic-code-11 DNA translation agree exactly. Gene,
+        product and function qualifiers also match. The accession identifies the native
+        reference, not an unspecified overexpression plasmid, tagged construct or
+        homolog.
+    notes: No individual essentiality, complete pathway, final-product sufficiency,
+      producer-grade upgrade or physical protein complex is asserted. Transport involvement
+      remains proposed, as in the source. No import or export direction, transported
+      chemical form, flux, ATP dependence in this pathway, or self-resistance phenotype
+      is established here. See curator-nataxazole-regulation-and-transport-scope for
+      the unresolved mechanism.
+  - subject: natt2
+    predicate: has a proposed transport role in
+    object: cluster_associated_system
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LN713864.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Proposed nataxazole transporter
+      notes: The deposited CDS explicitly carries this function qualifier; the association
+        is not inferred from gene neighborhood alone. This is a database annotation,
+        not a direct functional experiment. LN713864.1 cites PMID:25892546; its full
+        paper and supplements were not inspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42813.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: ABC transporter
+      notes: GenPept CEK42813.1, natT2, 608 aa, coded by complement(LN713864.1:11123..12949);
+        native Streptomyces sp. Tu 6176, taxon 1470557. The independent GenPept sequence,
+        native CDS annotation and genetic-code-11 DNA translation agree exactly. Gene,
+        product and function qualifiers also match. The accession identifies the native
+        reference, not an unspecified overexpression plasmid, tagged construct or
+        homolog.
+    notes: No individual essentiality, complete pathway, final-product sufficiency,
+      producer-grade upgrade or physical protein complex is asserted. Transport involvement
+      remains proposed, as in the source. No import or export direction, transported
+      chemical form, flux, ATP dependence in this pathway, or self-resistance phenotype
+      is established here. See curator-nataxazole-regulation-and-transport-scope for
+      the unresolved mechanism.
+  - subject: natt3
+    predicate: has a proposed transport role in
+    object: cluster_associated_system
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LN713864.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Proposed nataxazole transporter
+      notes: The deposited CDS explicitly carries this function qualifier; the association
+        is not inferred from gene neighborhood alone. This is a database annotation,
+        not a direct functional experiment. LN713864.1 cites PMID:25892546; its full
+        paper and supplements were not inspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42814.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: MMPL domain-containing transport protein
+      notes: GenPept CEK42814.1, natT3, 722 aa, coded by complement(LN713864.1:13128..15296);
+        native Streptomyces sp. Tu 6176, taxon 1470557. The independent GenPept sequence,
+        native CDS annotation and genetic-code-11 DNA translation agree exactly. Gene,
+        product and function qualifiers also match. The accession identifies the native
+        reference, not an unspecified overexpression plasmid, tagged construct or
+        homolog.
+    notes: No individual essentiality, complete pathway, final-product sufficiency,
+      producer-grade upgrade or physical protein complex is asserted. Transport involvement
+      remains proposed, as in the source. No import or export direction, transported
+      chemical form, flux, ATP dependence in this pathway, or self-resistance phenotype
+      is established here. See curator-nataxazole-regulation-and-transport-scope for
+      the unresolved mechanism.
+  - subject: natt4
+    predicate: has a proposed transport role in
+    object: cluster_associated_system
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/LN713864.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Proposed nataxazole transporter
+      notes: The deposited CDS explicitly carries this function qualifier; the association
+        is not inferred from gene neighborhood alone. This is a database annotation,
+        not a direct functional experiment. LN713864.1 cites PMID:25892546; its full
+        paper and supplements were not inspected.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42829.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      snippet: Drug resistance transporter, EmrB/QacA-family transporter
+      notes: GenPept CEK42829.1, natT4, 515 aa, coded by LN713864.1:35535..37082;
+        native Streptomyces sp. Tu 6176, taxon 1470557. The independent GenPept sequence,
+        native CDS annotation and genetic-code-11 DNA translation agree exactly. Gene,
+        product and function qualifiers also match. The accession identifies the native
+        reference, not an unspecified overexpression plasmid, tagged construct or
+        homolog.
+    notes: No individual essentiality, complete pathway, final-product sufficiency,
+      producer-grade upgrade or physical protein complex is asserted. Transport involvement
+      remains proposed, as in the source. No import or export direction, transported
+      chemical form, flux, ATP dependence in this pathway, or self-resistance phenotype
+      is established here. The deposited "Drug resistance transporter" product name
+      is not a demonstrated nataxazole-resistance result or a compound target. See
+      curator-nataxazole-regulation-and-transport-scope for the unresolved mechanism.
 discussions:
 - discussion_id: curator-nataxazole-reaction-and-product-scope
   kind: CURATION_TODO
@@ -567,6 +847,47 @@ discussions:
     and transporters require separately scoped evidence. Existing source-owned chemistry,
     classification, occurrences and producer grades remain unchanged, and the record
     remains SEEDED.
+- discussion_id: curator-nataxazole-regulation-and-transport-scope
+  kind: CURATION_TODO
+  status: OPEN
+  posed_by: codex
+  posed_date: '2026-10-11'
+  attaches_to:
+  - causal_graphs#nataxazole-native-regulation-and-transport
+  prompt: Which native regulatory targets and signs, and which transporter substrates
+    and directions, are experimentally established for NatR1-4 and NatT1-4?
+  rationale: Exact sequence identity and an explicit biosynthetic-cluster annotation
+    do not establish a regulatory effect or transport mechanism. The four NatT function
+    qualifiers are explicitly proposed. The NatT4 product name mentions drug resistance
+    but is not evidence of nataxazole-specific self-resistance. Regulation, transport,
+    native protein identity and assay-construct identity must be evaluated separately
+    before strengthening the graph.
+  evidence:
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/LN713864.1
+    supports: PARTIAL
+    evidence_source: GenBank LN713864.1, retrieved 2026-10-11
+    explanation: Four regulator annotations and four proposed-transporter annotations
+      were inspected with their native sequences. Neither positive/negative regulatory
+      signs nor transport directions are stated in those qualifiers.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42811.1
+    supports: PARTIAL
+    evidence_source: GenPept natR1 reference
+    explanation: Native regulator identity and annotation agree with the nucleotide
+      record; predicted domains are not direct regulatory assays.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42829.1
+    supports: PARTIAL
+    evidence_source: GenPept natT4 reference
+    explanation: The record combines a drug-resistance-family product name with an
+      explicitly proposed nataxazole transporter function; no compound-specific resistance
+      phenotype is supplied by these annotations.
+  notes: Keep PMID:25892546 / DOI:10.1002/cbic.201500153 as an uninspected full-paper
+    lead under the existing access stop. Do not upgrade a database assertion by citing
+    its uninspected primary reference. A bounded exact-strain NatR1 UniProt search
+    returned no result; changed-gene/taxon suggestions were rejected. This does not
+    establish that UniProt lacks all eight native proteins. No example was selected
+    here, and the versioned GenPept sequences provide the actual grounding. The previous
+    core graph and its final-methylation discussion remain unchanged; source-owned
+    fields and SEEDED status are retained.
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
   curator: seed_from_sources
@@ -584,4 +905,21 @@ curation_history:
     PDB construct qualifications and an open reaction/final-product scope discussion.
     No primary catalytic steps, final-product endpoint, source-owned change or status
     upgrade.
+  llm_assisted: true
+- timestamp: '2026-10-11T08:43:42Z'
+  curator: codex
+  action: ADDED_NATAXAZOLE_REGULATORY_TRANSPORT_REFERENCES
+  changes: Added eight versioned native regulatory/proposed-transport protein references
+    in a separate database-assertion graph, with stable URLs, verbatim source snippets,
+    independent DNA/GenPept identity checks and an open functional-scope discussion.
+    No experimental regulatory sign, transport direction, resistance phenotype or
+    final-product sufficiency; existing graphs, discussions, source-owned claims and
+    SEEDED status preserved.
+  llm_assisted: true
+- timestamp: '2026-10-11T08:48:00Z'
+  curator: codex
+  action: CLARIFIED_NATAXAZOLE_GRAPH_CONTEXT
+  changes: Clarified the new graph description to call the preserved annotation-only
+    core graph a biosynthesis-protein map, not a catalytic-protein map. No protein,
+    identifier, edge, evidence or existing graph changed.
   llm_assisted: true
