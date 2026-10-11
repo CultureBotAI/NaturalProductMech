@@ -212,13 +212,71 @@ isolation report left it.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 5 edges</span></h2>
+<p class="sub">Database-annotated endocrocin associations with sequence-verified native Af293 LaeA, CsdA and LaeB references, not verified experimental alleles. LaeA deletion is reported to reduce production. CsdA and LaeB have unsigned regulatory associations only; fumiquinazoline C phenotypes and similarity-derived splicing details are not transferred to endocrocin. Separate process nodes preserve distinct source contexts. No direct binding, complex stoichiometry, exact catalytic step, universal essentiality, virulence mechanism or producer-grade upgrade is asserted.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>LaeA (Af293 reference)</td>
+  <td>has_database_annotated_deletion_associated_reduction_in</td>
+  <td>Endocrocin production in the database-reported LaeA context</td>
+  <td>Selected native Af293 reference, not a verified experimental allele. The predicate records the scope of the database annotation, not a demonstrated direct molecular action.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WRY5/entry<br>https://www.ncbi.nlm.nih.gov/protein/EAL90797.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AAHF01000004.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WRY5/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>Reduces the production of endocrocin</dd><dt>notes</dt><dd>Reviewed UniProtKB disruption phenotype annotation; entry version 97, sequence version 1; laeA, AFUA_1G14660, 373 aa, NCBITaxon:330879. The disruption annotation cites PMID:22492455, DOI:10.1128/AEM.07710-11. Reduction is not complete loss or universal essentiality. The LaeA automethylation and velvet-complex annotations are similarity-derived and are not adopted as direct endocrocin mechanisms. Canonical EAL90797.1 is selected; AAR01218.1 is ALT_SEQ with an erroneous-gene-model warning. The alternate sequence was not retrieved or compared, so no measured sequence difference is asserted. Primary methods, strain/construct identity, assay conditions and exact endocrocin-specific intermediate mechanism were not independently established. Protein-existence annotation remains 2: Evidence at transcript level.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAL90797.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native Af293 AFUA_1G14660, EAL90797.1, 373 aa. Complete spliced CDS translation, deposited translation, separately retrieved GenPept and reviewed UniProt sequences match exactly. Explicit nucleotide/protein cross-references and locus agree. This establishes reference identity, not the sequence of an assayed mutant or an independent experiment demonstrating regulation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AAHF01000004.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native CDS: join(AAHF01000004.1:1670850..1671079, AAHF01000004.1:1671225..1672116). Exact exon coordinates and strand, codon start 1, translation table 1, complete start/stop and unambiguous sequence were checked. This is a global-regulator reference outside the Enc cluster, not an additional BGC0001118 biosynthetic gene or a new producer-grade assertion.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>CsdA (Af293 reference)</td>
+  <td>has_database_annotated_regulatory_association_with</td>
+  <td>Endocrocin production in the database-reported CsdA/LaeB context</td>
+  <td>Selected native Af293 reference, not a verified experimental allele. The predicate records the scope of the database annotation, not a demonstrated direct molecular action.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WE89/entry<br>https://www.ncbi.nlm.nih.gov/protein/EAL86088.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AAHF01000011.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WE89/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>including gliotoxin, endocrocin, fumihopaside and neosartoricin</dd><dt>notes</dt><dd>Reviewed UniProtKB function annotation; entry version 129, sequence version 1; csdA, AFUA_5G02160, 613 aa, NCBITaxon:330879. The function annotation explicitly includes endocrocin among regulated products and cites PMID:41498629, DOI:10.1002/advs.202519021. This is unsigned regulation: no endocrocin-specific increase, decrease, deletion phenotype or fold change is assigned. The quantified disruption phenotypes and SebA/fmqA-E mechanism concern fumiquinazoline C, not endocrocin. Motif-specific GUCGGUAU and intron-2 splicing details transferred by similarity are not adopted as native endocrocin mechanisms. No physical-complex or direct promoter-binding edge is asserted. Primary methods, strain/construct identity, assay conditions and exact endocrocin-specific intermediate mechanism were not independently established. Protein-existence annotation remains 1: Evidence at protein level.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAL86088.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native Af293 AFUA_5G02160, EAL86088.1, 613 aa. Complete spliced CDS translation, deposited translation, separately retrieved GenPept and reviewed UniProt sequences match exactly. Explicit nucleotide/protein cross-references and locus agree. This establishes reference identity, not the sequence of an assayed mutant or an independent experiment demonstrating regulation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AAHF01000011.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native CDS: join(AAHF01000011.1:651949..652104, AAHF01000011.1:652255..652312, AAHF01000011.1:652476..653182, AAHF01000011.1:653244..654164). Exact exon coordinates and strand, codon start 1, translation table 1, complete start/stop and unambiguous sequence were checked. This is a global-regulator reference outside the Enc cluster, not an additional BGC0001118 biosynthetic gene or a new producer-grade assertion.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>LaeB (Af293 reference)</td>
+  <td>has_database_annotated_regulatory_association_with</td>
+  <td>Endocrocin production in the database-reported CsdA/LaeB context</td>
+  <td>Selected native Af293 reference, not a verified experimental allele. The predicate records the scope of the database annotation, not a demonstrated direct molecular action.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WUK4/entry<br>https://www.ncbi.nlm.nih.gov/protein/EAL91722.1<br>https://www.ncbi.nlm.nih.gov/nuccore/AAHF01000003.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WUK4/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>including gliotoxin, endocrocin, fumihopaside and neosartoricin</dd><dt>notes</dt><dd>Reviewed UniProtKB function annotation; entry version 68, sequence version 1; laeB, AFUA_5G08770, 609 aa, NCBITaxon:330879. The function annotation explicitly includes endocrocin among regulated products and cites PMID:41498629, DOI:10.1002/advs.202519021. This is unsigned regulation: no endocrocin-specific increase, decrease, deletion phenotype or fold change is assigned. The quantified disruption phenotypes and SebA/fmqA-E mechanism concern fumiquinazoline C, not endocrocin. Motif-specific GUCGGUAU and intron-2 splicing details transferred by similarity are not adopted as native endocrocin mechanisms. No physical-complex or direct promoter-binding edge is asserted. Primary methods, strain/construct identity, assay conditions and exact endocrocin-specific intermediate mechanism were not independently established. Protein-existence annotation remains 1: Evidence at protein level.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAL91722.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native Af293 AFUA_5G08770, EAL91722.1, 609 aa. Complete spliced CDS translation, deposited translation, separately retrieved GenPept and reviewed UniProt sequences match exactly. Explicit nucleotide/protein cross-references and locus agree. This establishes reference identity, not the sequence of an assayed mutant or an independent experiment demonstrating regulation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AAHF01000003.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native CDS: complement(join(AAHF01000003.1:1699640..1700424 ,AAHF01000003.1:1700838..1701882)). Exact exon coordinates and strand, codon start 1, translation table 1, complete start/stop and unambiguous sequence were checked. This is a global-regulator reference outside the Enc cluster, not an additional BGC0001118 biosynthetic gene or a new producer-grade assertion.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Endocrocin production in the database-reported LaeA context</td>
+  <td>produces</td>
+  <td>Endocrocin</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WRY5/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WRY5/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The function annotation names endocrocin as a regulated product. This edge identifies the product of the cited regulatory context; it is not a terminal catalytic reaction or proof of production in every mutant, strain or condition. The two source contexts are not equated. The owner structure is unchanged from the PubChem CID160483/RDKit identity audit.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Endocrocin production in the database-reported CsdA/LaeB context</td>
+  <td>produces</td>
+  <td>Endocrocin</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WUK4/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WUK4/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The function annotation names endocrocin as a regulated product. This edge identifies the product of the cited regulatory context; it is not a terminal catalytic reaction or proof of production in every mutant, strain or condition. The two source contexts are not equated. The owner structure is unchanged from the PubChem CID160483/RDKit identity audit.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
 
-<h2>Open questions <span class="tag">2</span></h2>
+<h2>Open questions <span class="tag">3</span></h2>
 <div class="note"><p><strong>shared-structure</strong> — This structure is reported by more than one MIBiG entry: BGC0001118, BGC0001886. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
 <div class="note"><p><strong>curator-endocrocin-enc-reference-and-experimental-limits</strong> — Which experimental strains and native reactions support the Enc associations and the imported Af293 producer grade?</p></div>
+<div class="note"><p><strong>curator-endocrocin-global-regulator-limits</strong> — Which experimental alleles, conditions and endocrocin-specific effects support the global-regulator annotations?</p></div>
 
 <h2>Provenance</h2>
 <div class="scroll"><table>
