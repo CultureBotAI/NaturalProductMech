@@ -191,12 +191,61 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 4 edges</span></h2>
+<p class="sub">PPTase deletion/rescue in engineered J1074 carrying a heterologous BpsA indigoidine reporter. AGI92022.1 denotes the native PPTase reference, not a verified engineered allele. The reporter sequence is unresolved; this graph does not extend the canonical BpsA or native IndC mechanism.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>XNR_5716 PPTase (J1074 native reference)</td>
+  <td>has its encoding locus targeted by</td>
+  <td>PPTase deletion in J1074 BpsA reporter</td>
+  <td>Reference-to-intervention correspondence, not a direct catalytic edge.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1093/femsle/fnx155<br>https://www.ncbi.nlm.nih.gov/protein/AGI92022.1<br>https://www.ncbi.nlm.nih.gov/nuccore/CP004370.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1093/femsle/fnx155</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Methods identify xnr_5716 as the J1074 Sfp-type PPTase locus deleted using CRISPR/Cas9.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI92022.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native XNR_5716 reference, J1074, 226 residues; complement(CP004370.1:6439414..6440094). Current NCBI taxon 1886 is S. albidoflavus; the paper uses S. albus. Actual engineered alleles were not sequenced here.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/CP004370.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Complete 681-nt reverse CDS (ATG/TAG, code 11) translates to all 226 residues of AGI92022.1. Both reported CRISPR guide template segments match uniquely inside this locus; screening primers flank it. Reference/guide correspondence is not verification of an experimental stock or rescue insert. A bounded UniProt query for XNR_5716 or EMBL AGI92022 returned no entries; no UniProt exemplar is assigned.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>PPTase deletion in J1074 BpsA reporter</td>
+  <td>abolishes detectable reporter production of</td>
+  <td>indigoidine</td>
+  <td>Restricted to the tested engineered reporter context; not universal essentiality or native IndC dependence.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1093/femsle/fnx155<br>https://www.ebi.ac.uk/chebi/CHEBI:79296<br>https://mibig.secondarymetabolites.org/repository/BGC0000375.5/index.html<br>DOI:10.1093/femsle/fnx155</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1093/femsle/fnx155</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Results and Figure 1C report loss of blue pigment following deletion. The full main text and relevant figure were inspected; supplemental PCR data were not inspected.</dd><dt>snippet</dt><dd>no longer produces indigoidine.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ebi.ac.uk/chebi/CHEBI:79296</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>CHEBI:79296 denotes indigoidine: ALDIVIWLBSDGGN-ONEGZZNKSA-N, C10H8N4O4, charge 0.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000375.5/index.html</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Pinned BGC0000375.5 row and owner SMILES/InChI independently parse with RDKit 2026.03.5 to the same Standard InChIKey ALDIVIWLBSDGGN-ONEGZZNKSA-N, formula C10H8N4O4 and charge 0. The different BGC0002295 owner is excluded. This is a curator comparison, not new primary analytical confirmation.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1093/femsle/fnx155</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The inspected Figure 1 indigoidine schematic is consistent with this owner structure. This visual interpretation is not new analytical confirmation.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>XNR_5716 PPTase (J1074 native reference)</td>
+  <td>is native reference for protein supplied in</td>
+  <td>PPTase reintroduction in deletion reporter</td>
+  <td>Reference-to-intervention correspondence; complete rescue-construct sequence remains unverified.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1093/femsle/fnx155<br>https://www.ncbi.nlm.nih.gov/protein/AGI92022.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1093/femsle/fnx155</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Results describe reintroduction of the deleted PPTase in trans at phiC31 under ermE* control.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI92022.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native XNR_5716 reference, J1074, 226 residues; complement(CP004370.1:6439414..6440094). Current NCBI taxon 1886 is S. albidoflavus; the paper uses S. albus. Actual engineered alleles were not sequenced here.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>PPTase reintroduction in deletion reporter</td>
+  <td>restores reporter production of</td>
+  <td>indigoidine</td>
+  <td>Genetic complementation readout, not purified phosphopantetheinyl-transfer activity, a physical complex, or membership in BGC0000375/BGC0002295.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1093/femsle/fnx155</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1093/femsle/fnx155</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native-PPTase rescue is described in Results text. Figure 1C bottom instead illustrates eDNA-clone complementation; it is not an image of this native-PPTase rescue.</dd><dt>snippet</dt><dd>Production of indigoidine was restored</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
 
-<h2>Open questions <span class="tag">1</span></h2>
+<h2>Open questions <span class="tag">2</span></h2>
 <div class="note"><p><strong>curator-indigoidine-glna-construct-identity</strong> — Which complete GlnA protein sequence was expressed in pFC6/pFC7, and how should the reported 1284-bp fragment be reconciled with the 1410-bp BL21(DE3) references?</p></div>
+<div class="note"><p><strong>curator-indigoidine-bpsa-reporter-construct</strong> — What is the complete sequence of the BpsA reporter used in the J1074 PPTase experiment?</p></div>
 
 <h2>Provenance</h2>
 <div class="scroll"><table>

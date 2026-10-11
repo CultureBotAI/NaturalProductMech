@@ -420,6 +420,117 @@ causal_graphs:
         Compound correspondence is database-grounded; the original structure-analysis
         data were not re-inspected. The differently structured BGC0002295 record also
         named indigoidine is not treated as equivalent.'
+- graph_id: indigoidine-j1074-pptase-reporter
+  scope: BIOSYNTHESIS
+  description: PPTase deletion/rescue in engineered J1074 carrying a heterologous
+    BpsA indigoidine reporter. AGI92022.1 denotes the native PPTase reference, not
+    a verified engineered allele. The reporter sequence is unresolved; this graph
+    does not extend the canonical BpsA or native IndC mechanism.
+  nodes:
+  - node_id: j1074_pptase
+    label: XNR_5716 PPTase (J1074 native reference)
+    node_type: PROTEIN
+    identifier: NCBIProtein:AGI92022.1
+    grounding_status: GROUNDED
+  - node_id: pptase_deletion
+    label: PPTase deletion in J1074 BpsA reporter
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: pptase_rescue
+    label: PPTase reintroduction in deletion reporter
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: indigoidine
+    label: indigoidine
+    node_type: COMPOUND
+    identifier: CHEBI:79296
+    grounding_status: GROUNDED
+  edges:
+  - subject: j1074_pptase
+    predicate: has its encoding locus targeted by
+    object: pptase_deletion
+    notes: Reference-to-intervention correspondence, not a direct catalytic edge.
+    evidence:
+    - reference: DOI:10.1093/femsle/fnx155
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: Methods identify xnr_5716 as the J1074 Sfp-type PPTase locus deleted
+        using CRISPR/Cas9.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGI92022.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Native XNR_5716 reference, J1074, 226 residues; complement(CP004370.1:6439414..6440094).
+        Current NCBI taxon 1886 is S. albidoflavus; the paper uses S. albus. Actual
+        engineered alleles were not sequenced here.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP004370.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Complete 681-nt reverse CDS (ATG/TAG, code 11) translates to all 226
+        residues of AGI92022.1. Both reported CRISPR guide template segments match
+        uniquely inside this locus; screening primers flank it. Reference/guide correspondence
+        is not verification of an experimental stock or rescue insert. A bounded UniProt
+        query for XNR_5716 or EMBL AGI92022 returned no entries; no UniProt exemplar
+        is assigned.
+  - subject: pptase_deletion
+    predicate: abolishes detectable reporter production of
+    object: indigoidine
+    notes: Restricted to the tested engineered reporter context; not universal essentiality
+      or native IndC dependence.
+    evidence:
+    - reference: DOI:10.1093/femsle/fnx155
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: Results and Figure 1C report loss of blue pigment following deletion.
+        The full main text and relevant figure were inspected; supplemental PCR data
+        were not inspected.
+      snippet: no longer produces indigoidine.
+    - reference: https://www.ebi.ac.uk/chebi/CHEBI:79296
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'CHEBI:79296 denotes indigoidine: ALDIVIWLBSDGGN-ONEGZZNKSA-N, C10H8N4O4,
+        charge 0.'
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000375.5/index.html
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: Pinned BGC0000375.5 row and owner SMILES/InChI independently parse with
+        RDKit 2026.03.5 to the same Standard InChIKey ALDIVIWLBSDGGN-ONEGZZNKSA-N,
+        formula C10H8N4O4 and charge 0. The different BGC0002295 owner is excluded.
+        This is a curator comparison, not new primary analytical confirmation.
+    - reference: DOI:10.1093/femsle/fnx155
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: The inspected Figure 1 indigoidine schematic is consistent with this
+        owner structure. This visual interpretation is not new analytical confirmation.
+  - subject: j1074_pptase
+    predicate: is native reference for protein supplied in
+    object: pptase_rescue
+    notes: Reference-to-intervention correspondence; complete rescue-construct sequence
+      remains unverified.
+    evidence:
+    - reference: DOI:10.1093/femsle/fnx155
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: Results describe reintroduction of the deleted PPTase in trans at phiC31
+        under ermE* control.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGI92022.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Native XNR_5716 reference, J1074, 226 residues; complement(CP004370.1:6439414..6440094).
+        Current NCBI taxon 1886 is S. albidoflavus; the paper uses S. albus. Actual
+        engineered alleles were not sequenced here.
+  - subject: pptase_rescue
+    predicate: restores reporter production of
+    object: indigoidine
+    notes: Genetic complementation readout, not purified phosphopantetheinyl-transfer
+      activity, a physical complex, or membership in BGC0000375/BGC0002295.
+    evidence:
+    - reference: DOI:10.1093/femsle/fnx155
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-11'
+      notes: Native-PPTase rescue is described in Results text. Figure 1C bottom instead
+        illustrates eDNA-clone complementation; it is not an image of this native-PPTase
+        rescue.
+      snippet: Production of indigoidine was restored
 discussions:
 - discussion_id: curator-indigoidine-glna-construct-identity
   kind: KNOWLEDGE_GAP
@@ -454,6 +565,31 @@ discussions:
     supports: SUPPORT
     evidence_source: database
     explanation: Historical accession is currently deleted, not an active example.
+- discussion_id: curator-indigoidine-bpsa-reporter-construct
+  kind: KNOWLEDGE_GAP
+  status: OPEN
+  posed_by: codex
+  posed_date: '2026-10-11'
+  attaches_to:
+  - causal_graphs#indigoidine-j1074-pptase-reporter
+  prompt: What is the complete sequence of the BpsA reporter used in the J1074 PPTase
+    experiment?
+  rationale: The reported reverse primer has no exact 3-prime template suffix of at
+    least 15 nt in AB240063.1, although the forward endpoint matches. This does not
+    prove a nonsynonymous change or a wrong reporter. Do not equate the reporter with
+    BAE93896.1/UniProtKB:Q1MWN4 without resolving the construct.
+  evidence:
+  - reference: DOI:10.1093/femsle/fnx155
+    supports: SUPPORT
+    evidence_source: primary methods
+    explanation: Reporter amplified from pCDF-duet::bpsA and cloned into pIJ10257;
+      methods give the two primers but not a full insert sequence.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB240063.1
+    supports: SUPPORT
+    evidence_source: curator sequence comparison
+    explanation: Native 3849-nt CDS translates to all 1282 residues of BAE93896.1.
+      Exact primer suffix search finds the forward endpoint but not the reverse endpoint;
+      actual reporter sequence equivalence is unresolved.
 curation_history:
 - timestamp: '2026-09-10T05:54:03Z'
   curator: seed_from_sources
@@ -513,4 +649,22 @@ curation_history:
   changes: 'Migrated the GlnA construct-identity discussion to the reserved curator-
     namespace so the seeder preserves it in full. Corrects the reproduction defect
     found in PR #796; preserves all scientific claims, evidence and prior history.'
+  llm_assisted: true
+- timestamp: '2026-10-11T03:51:03Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Added a separate J1074 PPTase deletion/rescue reporter graph: one native
+    protein reference NCBIProtein:AGI92022.1, two interventions and four cited edges.
+    Verified complete native translation and guide correspondence; retained unresolved
+    engineered alleles and BpsA reporter identity in notes and a curator-owned discussion.
+    Preserved both prior graphs, pathway, source fields, grades and history; no direct
+    catalytic reaction, BGC membership or native IndC requirement asserted.'
+  llm_assisted: true
+- timestamp: '2026-10-11T03:56:40Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Separated the new PPTase reporter graph''s database structure assertion
+    from curator chemistry comparison and primary-figure interpretation, with individually
+    typed and cited evidence. Fixes issue #798; preserves every experimental claim,
+    limitation, prior field and history event.'
   llm_assisted: true
