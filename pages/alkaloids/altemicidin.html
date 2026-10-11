@@ -90,10 +90,261 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 5 edges</span></h2>
+<p class="sub">Database-annotated early scaffold formation by native SbzP/Q from Streptomyces sp. NCIMB 40513. Intermediate numbers follow UniProt annotations. This partial schematic omits cofactors/byproducts as nodes; it is not a balanced reaction or a full pathway reconstitution.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>NAD(+)</td>
+  <td>is_annotated_substrate_of</td>
+  <td>SbzP (NCIMB 40513 native reference)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P0DY52/entry<br>https://www.ncbi.nlm.nih.gov/protein/BBG06565.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY52/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>NAD(+) supplies the scaffold precursor rather than acting solely as a redox cofactor. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd><dt>snippet</dt><dd>uses S-adenosyl-L-methionine and NAD(+) to form a 6-azatetrahydroindane scaffold</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/BBG06565.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native reference: sbzP, 523 aa, Streptomyces sp. NCIMB 40513 (NCBITaxon:1931), reverse-strand LC420052.1:16668..18239. CDS-aware genomic translation, deposited translation, GenPept and UniProt sequences agree exactly without ambiguous residues. This does not establish the sequence of a tagged, fused, truncated or mutated experimental construct.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>S-adenosyl-L-methionine</td>
+  <td>is_annotated_substrate_of</td>
+  <td>SbzP (NCIMB 40513 native reference)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P0DY52/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY52/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>SAM is the annotated aminocarboxypropyl donor in scaffold formation. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>SbzP (NCIMB 40513 native reference)</td>
+  <td>is_annotated_to_produce</td>
+  <td>Altemicidin intermediate 1 (UniProt annotation)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P0DY52/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY52/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>UniProt annotates formation of the 6-azatetrahydroindane scaffold intermediate 1, with methylthioadenosine and protons as byproducts. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Altemicidin intermediate 1 (UniProt annotation)</td>
+  <td>is_annotated_substrate_of</td>
+  <td>SbzQ (NCIMB 40513 native reference)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P0DY53/entry<br>https://www.ncbi.nlm.nih.gov/protein/BBG06566.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY53/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>SbzQ is annotated to hydroxylate intermediate 1; oxygen and 2-oxoglutarate are cosubstrates. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd><dt>snippet</dt><dd>leading to the formation of altemicidin intermediate 2</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/BBG06566.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native reference: sbzQ, 304 aa, Streptomyces sp. NCIMB 40513 (NCBITaxon:1931), reverse-strand LC420052.1:18324..19238. CDS-aware genomic translation, deposited translation, GenPept and UniProt sequences agree exactly without ambiguous residues. This does not establish the sequence of a tagged, fused, truncated or mutated experimental construct.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>SbzQ (NCIMB 40513 native reference)</td>
+  <td>is_annotated_to_produce</td>
+  <td>Altemicidin intermediate 2 (UniProt annotation)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P0DY53/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY53/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The annotated hydroxylation yields intermediate 2, succinate and carbon dioxide. No new exact chemical identifier or experimental construct is assigned. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">11 nodes, 10 edges</span></h2>
+<p class="sub">Database-annotated sulfamoyl precursor synthesis, carrier loading and transfer in altemicidin biosynthesis. SbzG and SbzK nodes denote native carrier references, not stand-alone enzymes or permanently acylated proteins. Carrier loading includes in-vitro database annotations. Only SbzG donor use is drawn for SbzI; the probable SbzK handoff is not asserted. No stable complex, stoichiometry or in-vivo carrier interchangeability is claimed.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>L-Cysteine</td>
+  <td>is_annotated_substrate_of</td>
+  <td>SbzM (NCIMB 40513 native reference)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P0DY49/entry<br>https://www.ncbi.nlm.nih.gov/protein/BBG06562.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY49/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>SbzM is annotated to act on L-cysteine through oxidation/decarboxylation and rearrangement; the transient species are not separately grounded here. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd><dt>snippet</dt><dd>oxidation and decarboxylation of L-cysteine</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/BBG06562.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native reference: sbzM, 228 aa, Streptomyces sp. NCIMB 40513 (NCBITaxon:1931), reverse-strand LC420052.1:14000..14686. CDS-aware genomic translation, deposited translation, GenPept and UniProt sequences agree exactly without ambiguous residues. This does not establish the sequence of a tagged, fused, truncated or mutated experimental construct.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>SbzM (NCIMB 40513 native reference)</td>
+  <td>is_annotated_to_produce</td>
+  <td>2-Oxoethane-1-sulfonamide</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P0DY49/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY49/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The annotated net conversion yields 2-oxoethane-1-sulfonamide, with oxygen consumption and carbon dioxide/water byproducts. No individual microscopic step or metal specificity is newly established. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>2-Oxoethane-1-sulfonamide</td>
+  <td>is_annotated_substrate_of</td>
+  <td>SbzJ (NCIMB 40513 native reference)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P0DY46/entry<br>https://www.ncbi.nlm.nih.gov/protein/BBG06559.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY46/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>UniProt annotates aldehyde oxidation by SbzJ with NAD(+) and water. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd><dt>snippet</dt><dd>conversion of 2-oxoethane-1-sulfonamide to 2-sulfamoylacetate</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/BBG06559.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native reference: sbzJ, 464 aa, Streptomyces sp. NCIMB 40513 (NCBITaxon:1931), reverse-strand LC420052.1:10630..12024. CDS-aware genomic translation, deposited translation, GenPept and UniProt sequences agree exactly without ambiguous residues. This does not establish the sequence of a tagged, fused, truncated or mutated experimental construct.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>SbzJ (NCIMB 40513 native reference)</td>
+  <td>is_annotated_to_produce</td>
+  <td>2-Sulfamoylacetate</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P0DY46/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY46/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The annotated oxidation yields 2-sulfamoylacetate with NADH and protons. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>2-Sulfamoylacetate</td>
+  <td>is_annotated_substrate_of</td>
+  <td>SbzL (NCIMB 40513 native reference)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P0DY48/entry<br>https://www.ncbi.nlm.nih.gov/protein/BBG06561.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY48/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>SbzL is annotated to activate 2-sulfamoylacetate for ATP-dependent loading onto a holo carrier; AMP and diphosphate are omitted byproducts. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd><dt>snippet</dt><dd>ATP-dependent loading of 2-sulfamoylacetate onto an acyl carrier protein</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/BBG06561.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native reference: sbzL, 559 aa, Streptomyces sp. NCIMB 40513 (NCBITaxon:1931), reverse-strand LC420052.1:12317..13996. CDS-aware genomic translation, deposited translation, GenPept and UniProt sequences agree exactly without ambiguous residues. This does not establish the sequence of a tagged, fused, truncated or mutated experimental construct.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>SbzL (NCIMB 40513 native reference)</td>
+  <td>is_annotated_to_load_2_sulfamoylacetate_onto</td>
+  <td>SbzG (NCIMB 40513 native reference)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P0DY48/entry<br>https://www.uniprot.org/uniprotkb/P0DY36/entry<br>https://www.ncbi.nlm.nih.gov/protein/BBG06556.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY48/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>SbzG is an annotated in-vitro carrier acceptor for SbzL. This edge concerns acyl loading of the holo form, not a permanent protein-protein complex. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY36/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>SbzG is an annotated in-vitro carrier acceptor for SbzL. This edge concerns acyl loading of the holo form, not a permanent protein-protein complex. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd><dt>snippet</dt><dd>It can transfer 2-sulfamoylacetate to SbzI</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/BBG06556.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native reference: sbzG, 85 aa, Streptomyces sp. NCIMB 40513 (NCBITaxon:1931), reverse-strand LC420052.1:8750..9007. CDS-aware genomic translation, deposited translation, GenPept and UniProt sequences agree exactly without ambiguous residues. This does not establish the sequence of a tagged, fused, truncated or mutated experimental construct.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>SbzL (NCIMB 40513 native reference)</td>
+  <td>is_annotated_to_load_2_sulfamoylacetate_onto</td>
+  <td>SbzK (NCIMB 40513 native reference)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P0DY48/entry<br>https://www.uniprot.org/uniprotkb/P0DY47/entry<br>https://www.ncbi.nlm.nih.gov/protein/BBG06560.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY48/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>SbzK is an annotated in-vitro carrier acceptor for SbzL. This does not prove native redundancy with SbzG or direct donor use by SbzI. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY47/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>SbzK is an annotated in-vitro carrier acceptor for SbzL. This does not prove native redundancy with SbzG or direct donor use by SbzI. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd><dt>snippet</dt><dd>In vitro, can accept 2-sulfamoylacetate from SbzL</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/BBG06560.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native reference: sbzK, 93 aa, Streptomyces sp. NCIMB 40513 (NCBITaxon:1931), reverse-strand LC420052.1:12039..12320. CDS-aware genomic translation, deposited translation, GenPept and UniProt sequences agree exactly without ambiguous residues. This does not establish the sequence of a tagged, fused, truncated or mutated experimental construct.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>SbzG (NCIMB 40513 native reference)</td>
+  <td>is_annotated_acyl_donor_carrier_for</td>
+  <td>SbzI (NCIMB 40513 native reference)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P0DY36/entry<br>https://www.uniprot.org/uniprotkb/P0DY45/entry<br>https://www.ncbi.nlm.nih.gov/protein/BBG06558.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY36/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The loaded SbzG carrier supplies the 2-sulfamoylacetyl group to SbzI. UniProt marks SbzK acceptance only as probable, so no SbzK-to-SbzI edge is added. Native reference mapping does not resolve the 2024 fused constructs. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY45/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The loaded SbzG carrier supplies the 2-sulfamoylacetyl group to SbzI. UniProt marks SbzK acceptance only as probable, so no SbzK-to-SbzI edge is added. Native reference mapping does not resolve the 2024 fused constructs. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd><dt>snippet</dt><dd>probably also from SbzK</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/BBG06558.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native reference: sbzI, 188 aa, Streptomyces sp. NCIMB 40513 (NCBITaxon:1931), reverse-strand LC420052.1:10061..10627. CDS-aware genomic translation, deposited translation, GenPept and UniProt sequences agree exactly without ambiguous residues. This does not establish the sequence of a tagged, fused, truncated or mutated experimental construct.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Altemicidin intermediate 2 (UniProt annotation)</td>
+  <td>is_annotated_substrate_of</td>
+  <td>SbzI (NCIMB 40513 native reference)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P0DY45/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY45/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The intermediate-2 amino group is the annotated acceptor of the carrier-borne 2-sulfamoylacetyl group. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>SbzI (NCIMB 40513 native reference)</td>
+  <td>is_annotated_to_produce</td>
+  <td>Altemicidin intermediate 3 (UniProt annotation)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P0DY45/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY45/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The annotated transfer yields intermediate 3 and releases holo carrier. This is not direct formation of altemicidin. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">Database-annotated late reduction and N-methylation yielding the altemicidin scaffold. No edge connects intermediate 3 to didehydrodemethylaltemicidin: the intervening chemistry is unresolved in the adopted evidence. The owner denotes the neutral compound; this schematic does not assert a balanced, protonation-specific Rhea reaction.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Didehydrodemethylaltemicidin</td>
+  <td>is_annotated_substrate_of</td>
+  <td>SbzF (NCIMB 40513 native reference)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P0DY35/entry<br>https://www.ncbi.nlm.nih.gov/protein/BBG06555.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY35/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>SbzF is annotated to reduce didehydrodemethylaltemicidin with reduced coenzyme F420. A particular F420 glutamate-chain length is not assigned. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd><dt>snippet</dt><dd>conversion of didehydrodemethylaltemicidin to demethylaltemicidin</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/BBG06555.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native reference: sbzF, 320 aa, Streptomyces sp. NCIMB 40513 (NCBITaxon:1931), reverse-strand LC420052.1:7743..8705. CDS-aware genomic translation, deposited translation, GenPept and UniProt sequences agree exactly without ambiguous residues. This does not establish the sequence of a tagged, fused, truncated or mutated experimental construct.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>SbzF (NCIMB 40513 native reference)</td>
+  <td>is_annotated_to_produce</td>
+  <td>Demethylaltemicidin</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P0DY35/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY35/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The annotated reduction yields demethylaltemicidin with oxidized F420 and a proton. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Demethylaltemicidin</td>
+  <td>is_annotated_substrate_of</td>
+  <td>SbzE (NCIMB 40513 native reference)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P0DY34/entry<br>https://www.ncbi.nlm.nih.gov/protein/BBG06554.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY34/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>SbzE is annotated to methylate demethylaltemicidin using SAM. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd><dt>snippet</dt><dd>conversion of demethylaltemicidin to altemicidin</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/BBG06554.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native reference: sbzE, 260 aa, Streptomyces sp. NCIMB 40513 (NCBITaxon:1931), reverse-strand LC420052.1:6905..7687. CDS-aware genomic translation, deposited translation, GenPept and UniProt sequences agree exactly without ambiguous residues. This does not establish the sequence of a tagged, fused, truncated or mutated experimental construct.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>SbzE (NCIMB 40513 native reference)</td>
+  <td>is_annotated_to_produce</td>
+  <td>Altemicidin</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P0DY34/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY34/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>UniProt annotates altemicidin formation with S-adenosylhomocysteine and a proton. This is the altemicidin scaffold, not its later isoleucylated SB-203207 or SB-203208 congeners. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<p class="sub">Database-annotated participation of native SbzH/N/O in altemicidin biosynthesis, without an individual catalytic assignment, fixed reaction order or complex claim. The process node is not a protein complex and does not fill the unresolved intermediate-3-to-late-tailoring connection.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>SbzH (NCIMB 40513 native reference)</td>
+  <td>is_annotated_participant_in</td>
+  <td>Altemicidin biosynthesis (annotated participation)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P0DY37/entry<br>https://www.ncbi.nlm.nih.gov/protein/BBG06557.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY37/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>UniProt annotates SbzH involvement in altemicidin biosynthesis. This does not assign its individual reaction, prove an H/N/O complex or identify an assay construct. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd><dt>snippet</dt><dd>Involved in the biosynthesis of the sulfonamide antibiotics altemicidin</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/BBG06557.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native reference: sbzH, 334 aa, Streptomyces sp. NCIMB 40513 (NCBITaxon:1931), reverse-strand LC420052.1:9057..10061. CDS-aware genomic translation, deposited translation, GenPept and UniProt sequences agree exactly without ambiguous residues. This does not establish the sequence of a tagged, fused, truncated or mutated experimental construct.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>SbzN (NCIMB 40513 native reference)</td>
+  <td>is_annotated_participant_in</td>
+  <td>Altemicidin biosynthesis (annotated participation)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P0DY50/entry<br>https://www.ncbi.nlm.nih.gov/protein/BBG06563.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY50/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>UniProt annotates SbzN involvement in altemicidin biosynthesis. This does not assign its individual reaction, prove an H/N/O complex or identify an assay construct. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd><dt>snippet</dt><dd>Involved in the biosynthesis of the sulfonamide antibiotics altemicidin</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/BBG06563.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native reference: sbzN, 385 aa, Streptomyces sp. NCIMB 40513 (NCBITaxon:1931), reverse-strand LC420052.1:14704..15861. CDS-aware genomic translation, deposited translation, GenPept and UniProt sequences agree exactly without ambiguous residues. This does not establish the sequence of a tagged, fused, truncated or mutated experimental construct.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>SbzO (NCIMB 40513 native reference)</td>
+  <td>is_annotated_participant_in</td>
+  <td>Altemicidin biosynthesis (annotated participation)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P0DY51/entry<br>https://www.ncbi.nlm.nih.gov/protein/BBG06564.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY51/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>UniProt annotates SbzO involvement in altemicidin biosynthesis. This does not assign its individual reaction, prove an H/N/O complex or identify an assay construct. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd><dt>snippet</dt><dd>Involved in the biosynthesis of the sulfonamide antibiotics altemicidin</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/BBG06564.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>Native reference: sbzO, 268 aa, Streptomyces sp. NCIMB 40513 (NCBITaxon:1931), reverse-strand LC420052.1:15858..16664. CDS-aware genomic translation, deposited translation, GenPept and UniProt sequences agree exactly without ambiguous residues. This does not establish the sequence of a tagged, fused, truncated or mutated experimental construct.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Altemicidin biosynthesis (annotated participation)</td>
+  <td>is_annotated_pathway_for</td>
+  <td>Altemicidin</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P0DY37/entry<br>https://www.uniprot.org/uniprotkb/P0DY50/entry<br>https://www.uniprot.org/uniprotkb/P0DY51/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY37/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The annotated pathway concerns altemicidin as well as downstream congeners. Participation is not a claim that any one of SbzH/N/O directly produces the final compound. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY50/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The annotated pathway concerns altemicidin as well as downstream congeners. Participation is not a claim that any one of SbzH/N/O directly produces the final compound. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P0DY51/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>notes</dt><dd>The annotated pathway concerns altemicidin as well as downstream congeners. Participation is not a claim that any one of SbzH/N/O directly produces the final compound. Reviewed UniProtKB entry version 3, sequence version 1; annotation evidence, not an independently inspected primary experiment.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
 
+<h2>Open questions <span class="tag">1</span></h2>
+<div class="note"><p><strong>curator-altemicidin-sbz-evidence-boundaries</strong> — Which primary experimental constructs and intervening steps can be independently verified for the altemicidin Sbz pathway?</p></div>
 
 <h2>Provenance</h2>
 <div class="scroll"><table>
