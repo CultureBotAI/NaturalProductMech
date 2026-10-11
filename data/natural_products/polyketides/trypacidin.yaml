@@ -100,6 +100,48 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graph_refs:
+- trypacidin-native-catalytic-references
+- trypacidin-native-genetic-regulatory-references
+discussions:
+- discussion_id: curator-trypacidin-reference-and-pathway-limits
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: What is TpcF's function, and which primary experiments resolve the missing
+    connector, intermediate identities and experimental alleles?
+  rationale: Complete native-reference identity does not establish exact biochemical
+    mechanisms, experimental constructs or product stereochemistry.
+  notes: TpcF/Q4WQZ2, EAL89342.1, AFUA_4G14530, 225 aa passed the same native Af293
+    identity audit, but UniProt explicitly leaves its pathway function unresolved.
+    It is retained as a lead, not an enzyme or causal graph participant. The ten enzyme
+    references TpcA/B/C/G/H/I/J/K/L/M and regulators TpcD/E are adopted at DATABASE_ASSERTION
+    level only. TpcB/G/I catalytic annotations are similarity-derived; TpcI FUNCTION
+    and catalytic annotation name distinct transfer donors Q0CCX8 and Q0CCX5. TpcG's
+    physiological reaction direction is right-to-left in the cited Rhea equation.
+    TpcE/H/L use current sequence version 2; TpcD/E transcript-level protein-existence
+    flags are not upgraded. The shared annotation's atrochrysone-to-emodin-anthrone
+    wording is insufficient for an exact connector; no enzyme is invented. The database
+    spelling monomethylsulfochrin is not silently corrected or assigned an exact structure.
+    Stored SMILES, InChI and InChIKey agree with PubChem CID3035292 and RDKit but
+    leave one stereocenter unspecified. No exact natural stereoisomer or assay compound
+    is newly established. Primary DOI:10.1111/1462-2920.13007 remains stopped. The
+    abstract of DOI:10.1007/s00253-015-6898-1 was inspected, but complete methods
+    and construct identity were not established; the publisher response was not recoverable
+    after a context transition. DOI:10.1021/acssynbio.6b00203 returned a browser challenge.
+    No alternate retrieval was attempted. DOI:10.1016/j.ymben.2019.04.008 remains
+    database-metadata-only. Producer and BGC grades, Rumex/fungal occurrences, source-owned
+    fields, prior history and SEEDED status are unchanged. This is not a full-record
+    REVIEWED sign-off.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/Q4WQZ2/entry
+    evidence_source: Reviewed UniProtKB FUNCTION annotation, retrieved 2026-10-11
+    notes: The function of tpcF within the pathway has still to be determined. This
+      short database quotation supports the unresolved-role hold, not a catalytic
+      assignment.
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/3035292
+    evidence_source: PubChem PUG REST structure response, retrieved 2026-10-11
+    notes: Stored representation agrees at its unspecified stereochemical resolution;
+      one unassigned stereocenter remains.
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -109,3 +151,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-11T22:42:17Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add twelve native Af293 Tpc protein references with database-backed catalytic/regulatory
+    claims, stable URLs and evidence snippets. Retain similarity-derived reactions,
+    loss versus impairment, incomplete connector, unresolved TpcF role and unspecified
+    product stereochemistry. Preserve source-owned fields, grades and SEEDED status.
+  llm_assisted: true
