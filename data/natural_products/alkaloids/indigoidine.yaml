@@ -228,7 +228,7 @@ causal_graphs:
     of the existing Sc-IndC pathway.
   nodes:
   - node_id: l_glutamine
-    label: L-glutamine (Rhea zwitterion)
+    label: L-glutamine zwitterion
     node_type: PRECURSOR
     identifier: CHEBI:58359
     grounding_status: GROUNDED
@@ -342,4 +342,12 @@ curation_history:
     phosphopantetheinylation context. Preserved Sc-IndC graph/pathway and all source
     fields; full-paper, historical-construct and primary chemical-analysis limits
     remain explicit.
+  llm_assisted: true
+- timestamp: '2026-10-11T01:19:49Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Corrected the new BpsA graph CHEBI:58359 node to the canonical label L-glutamine
+    zwitterion after the required label gate finding (#794). Preserved the identifier,
+    Rhea microspecies qualification, graph evidence and every pre-existing field and
+    history event.
   llm_assisted: true
