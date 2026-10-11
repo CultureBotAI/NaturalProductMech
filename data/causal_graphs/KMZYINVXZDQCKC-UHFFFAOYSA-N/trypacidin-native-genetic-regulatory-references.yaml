@@ -1,0 +1,216 @@
+record_id: naturalproductmech:mibig-cfc470b905
+standard_inchi_key: KMZYINVXZDQCKC-UHFFFAOYSA-N
+graph:
+  graph_id: trypacidin-native-genetic-regulatory-references
+  scope: BIOSYNTHESIS
+  description: 'Genetic and regulatory effects component. Across this owner''s two
+    components: Sequence-verified native Af293 references with explicitly database-level
+    trypacidin roles, not verified experimental alleles. Ten enzyme annotations and
+    two regulators are represented. TpcB/G/I catalytic roles remain similarity-derived.
+    Named intermediates are not exact chemical-species groundings or balanced equations.
+    No atrochrysone-to-emodin-anthrone connector is asserted, so this is not a complete
+    reconstituted pathway. The database spelling monomethylsulfochrin and the product''s
+    unspecified stereochemistry remain unresolved. Genetic loss and impairment are
+    distinguished; no direct promoter binding, physical complex, bioactivity target,
+    virulence mechanism, universal essentiality or producer-grade upgrade is asserted.
+    TpcF is held without a catalytic assignment.'
+  nodes:
+  - node_id: tpca
+    label: TpcA (Af293 reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4WQZ7
+  - node_id: tpcb
+    label: TpcB (Af293 reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4WQZ6
+  - node_id: tpcc
+    label: TpcC (Af293 reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4WQZ5
+  - node_id: tpcd
+    label: TpcD (Af293 reference)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4WQZ4
+  - node_id: tpce
+    label: TpcE (Af293 reference)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4WQZ3
+  - node_id: trypacidin
+    label: Trypacidin (stereochemistry unspecified)
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: naturalproductmech:mibig-cfc470b905
+  - node_id: production
+    label: Database-reported trypacidin production contexts
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: tpcd
+    predicate: has_database_annotated_regulatory_role_in
+    object: production
+    notes: Native reference, not a verified experimental allele. Regulation does not
+      establish direct promoter binding or a physical TpcD-TpcE complex.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q4WQZ4/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed UniProtKB function annotation, release 2026_03, entry version
+        77, sequence version 1. TpcD is annotated as a coactivator and TpcE as a transcription
+        factor regulating trypacidin production. Annotations cite PMID:26242966 and
+        PMID:26278536; no particular promoter contact, complex stoichiometry or complete
+        regulatory mechanism is asserted. Source annotations are not newly inspected
+        primary experiments; native reference identity does not establish the assayed
+        strain or construct sequence.
+      snippet: With tpcE, coregulates the production of trypacidin
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EAL89340.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: 'Native Af293 NCBITaxon:330879 reference tpcD/AFUA_4G14550, 437 aa. Spliced
+        contig and chromosome CDS sequences and translations, both deposited translations,
+        separately retrieved GenPept and reviewed UniProt sequences agree exactly.
+        Locus and explicit nucleotide/protein cross-references agree. Protein-existence
+        annotation remains 2: Evidence at transcript level. This is not a verified
+        experimental allele or an independent functional experiment.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AAHF01000005.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: 'Complete native CDS: join(AAHF01000005.1:87081..87830, AAHF01000005.1:87883..88446).
+        Exon coordinates/strands, codon start 1, translation table 1 and unambiguous
+        start/stop checked. AAHF01000005.1:77804..101601 maps exactly as reverse complement
+        to CM000172.1:3822105..3845902 within the source BGC0001403 interval. This
+        reference mapping does not upgrade the source producer or locus evidence grades.'
+  - subject: tpce
+    predicate: has_database_annotated_regulatory_role_in
+    object: production
+    notes: Native reference, not a verified experimental allele. Regulation does not
+      establish direct promoter binding or a physical TpcD-TpcE complex.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q4WQZ3/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed UniProtKB function annotation, release 2026_03, entry version
+        104, sequence version 2. TpcD is annotated as a coactivator and TpcE as a
+        transcription factor regulating trypacidin production. Annotations cite PMID:26242966
+        and PMID:26278536; no particular promoter contact, complex stoichiometry or
+        complete regulatory mechanism is asserted. Source annotations are not newly
+        inspected primary experiments; native reference identity does not establish
+        the assayed strain or construct sequence.
+      snippet: Transcription factor that regulates the expression of the gene clusters
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EAL89341.2
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: 'Native Af293 NCBITaxon:330879 reference tpcE/AFUA_4G14540, 396 aa. Spliced
+        contig and chromosome CDS sequences and translations, both deposited translations,
+        separately retrieved GenPept and reviewed UniProt sequences agree exactly.
+        Locus and explicit nucleotide/protein cross-references agree. Protein-existence
+        annotation remains 2: Evidence at transcript level. This is not a verified
+        experimental allele or an independent functional experiment.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AAHF01000005.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: 'Complete native CDS: AAHF01000005.1:89818..91008. Exon coordinates/strands,
+        codon start 1, translation table 1 and unambiguous start/stop checked. AAHF01000005.1:77804..101601
+        maps exactly as reverse complement to CM000172.1:3822105..3845902 within the
+        source BGC0001403 interval. This reference mapping does not upgrade the source
+        producer or locus evidence grades.'
+  - subject: tpca
+    predicate: has_database_annotated_deletion_associated_loss_of
+    object: production
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q4WQZ7/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Reviewed UniProtKB disruption phenotype annotation, release 2026_03,
+        entry version 105, sequence version 1. The disruption annotation reports loss
+        of trypacidin production. Database-cited PubMed sources: 26242966. Questin
+        phenotypes and phagocytosis claims are not separately adopted here. Contexts
+        from different papers are not equated; no universal essentiality claim. Source
+        annotations are not newly inspected primary experiments; native reference
+        identity does not establish the assayed strain or construct sequence.'
+  - subject: tpcb
+    predicate: has_database_annotated_deletion_associated_impairment_of
+    object: production
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q4WQZ6/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Reviewed UniProtKB disruption phenotype annotation, release 2026_03,
+        entry version 85, sequence version 1. The disruption annotation reports impaired
+        trypacidin production, not necessarily complete loss. Database-cited PubMed
+        sources: 26242966, 26278536. Questin phenotypes and phagocytosis claims are
+        not separately adopted here. Contexts from different papers are not equated;
+        no universal essentiality claim. Source annotations are not newly inspected
+        primary experiments; native reference identity does not establish the assayed
+        strain or construct sequence.'
+  - subject: tpcc
+    predicate: has_database_annotated_deletion_associated_impairment_of
+    object: production
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q4WQZ5/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Reviewed UniProtKB disruption phenotype annotation, release 2026_03,
+        entry version 119, sequence version 1. The disruption annotation reports impaired
+        trypacidin production, not necessarily complete loss. Database-cited PubMed
+        sources: 26242966, 26278536, 27611015. Questin phenotypes and phagocytosis
+        claims are not separately adopted here. Contexts from different papers are
+        not equated; no universal essentiality claim. Source annotations are not newly
+        inspected primary experiments; native reference identity does not establish
+        the assayed strain or construct sequence.'
+  - subject: tpcd
+    predicate: has_database_annotated_deletion_associated_loss_of
+    object: production
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q4WQZ4/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Reviewed UniProtKB disruption phenotype annotation, release 2026_03,
+        entry version 77, sequence version 1. The disruption annotation reports loss
+        of trypacidin production. Database-cited PubMed sources: 26242966, 26278536.
+        Questin phenotypes and phagocytosis claims are not separately adopted here.
+        Contexts from different papers are not equated; no universal essentiality
+        claim. Source annotations are not newly inspected primary experiments; native
+        reference identity does not establish the assayed strain or construct sequence.'
+  - subject: tpce
+    predicate: has_database_annotated_deletion_associated_loss_of
+    object: production
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q4WQZ3/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Reviewed UniProtKB disruption phenotype annotation, release 2026_03,
+        entry version 104, sequence version 2. The disruption annotation reports loss
+        of trypacidin production. Database-cited PubMed sources: 26242966. Questin
+        phenotypes and phagocytosis claims are not separately adopted here. Contexts
+        from different papers are not equated; no universal essentiality claim. Source
+        annotations are not newly inspected primary experiments; native reference
+        identity does not establish the assayed strain or construct sequence.'
+  - subject: production
+    predicate: has_named_product
+    object: trypacidin
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q4WQZ3/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed UniProtKB function annotation, release 2026_03, entry version
+        104, sequence version 2. The annotation names trypacidin. This product-context
+        edge is not a terminal catalytic reaction or proof of production in every
+        mutant. The unchanged owner representation matches PubChem CID3035292 and
+        RDKit, with one unspecified stereocenter; an exact natural stereoisomer is
+        not established. Source annotations are not newly inspected primary experiments;
+        native reference identity does not establish the assayed strain or construct
+        sequence.
+curation_history:
+- timestamp: '2026-10-11T22:42:18Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add trypacidin-native-genetic-regulatory-references for naturalproductmech:mibig-cfc470b905;
+    new evidence-backed component from base 28af2dbe1f329e1b41ee706722239925914c834a.
+    Native references and database annotations only; no experimental allele or producer-grade
+    upgrade.
+  llm_assisted: true
