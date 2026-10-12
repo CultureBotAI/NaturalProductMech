@@ -70,9 +70,9 @@ field coverage (records carrying at least one item):
   bioactivities                         176
   bioactivity_summary                   318
   molecular_targets                      14
-  causal_graphs                         278
+  causal_graphs                         279
   related_records                       210
-  discussions                           343
+  discussions                           344
 
 producer claims: 3407 (808 causal, 162 correlational)
   BGC_CHARACTERIZED                     808

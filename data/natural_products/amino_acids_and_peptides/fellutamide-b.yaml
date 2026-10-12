@@ -80,6 +80,350 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: fellutamide-b-proposed-assembly-native-references
+  scope: BIOSYNTHESIS
+  description: Partial proposed assembly view from reviewed UniProt annotations. FGSC
+    A4 accessions are verified native reference sequences, not verified assay alleles.
+    Reaction ordering is annotation-derived, not genomic ordering or directly inspected
+    enzymology. Carrier-bound intermediates and detailed catalytic domains are omitted.
+    The tentative auxiliary InpF role is intentionally left unconnected to the main
+    sequence because its mechanistic placement is unresolved. The existing MIBiG-derived
+    product identity is retained, including its leucinal S center; no source correction
+    or full primary stereochemical review is claimed.
+  nodes:
+  - node_id: inpc
+    label: InpC (FGSC A4 native reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q5B7J0
+    grounding_status: GROUNDED
+  - node_id: lipid_activation
+    label: Proposed 3-hydroxydodecanoate activation and loading onto InpB
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: inpb
+    label: InpB (FGSC A4 native reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q5B7I4
+    grounding_status: GROUNDED
+  - node_id: dipeptide_extension
+    label: Proposed sequential L-Asn and L-Gln incorporation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: inpa
+    label: InpA (FGSC A4 native reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q5B7I5
+    grounding_status: GROUNDED
+  - node_id: leucinal_release
+    label: Proposed L-Leu incorporation and reductive product release
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: inpf
+    label: InpF (FGSC A4 native reference)
+    node_type: ENZYME
+    identifier: UniProtKB:Q5B7I6
+    grounding_status: GROUNDED
+  - node_id: auxiliary_transfer
+    label: Possible auxiliary lipodipeptide release or transfer between InpB and InpA
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: fellutamide_b
+    label: fellutamide B (existing MIBiG-derived owner)
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-a7c02b2a6d
+    grounding_status: GROUNDED
+  edges:
+  - subject: inpc
+    predicate: is_proposed_to_participate_in
+    object: lipid_activation
+    notes: Native-reference database assignment, not a newly inspected experiment
+      on this exact allele.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q5B7J0/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed FGSC A4 inpC/ANIA_03490, taxon227321; entry 91, sequence 1,
+        annotation 2026-09-02. FUNCTION annotation. UniProt FUNCTION proposes acyl-AMP
+        formation and loading onto the InpB carrier. No direct acyl-CoA intermediate
+        is asserted merely because the entry is named an acyl-CoA ligase.
+      snippet: inpC activates 3-hydroxydodecanoic acid
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF76048.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: CBF76048.1, 583 aa, ANIA_03490; complete spliced CDS
+        on BN001302.1:3944773..3946984 (7 exon(s), strand 1), GenPept and UniProt
+        sequences agree, including start/stop. Native FGSC A4 reference, not a verified
+        experimental allele.'
+  - subject: inpb
+    predicate: is_proposed_to_participate_in
+    object: dipeptide_extension
+    notes: Native-reference database assignment, not a newly inspected experiment
+      on this exact allele.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q5B7I4/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed FGSC A4 inpB/ANIA_03496, taxon227321; entry 128, sequence 1,
+        annotation 2026-09-02. FUNCTION annotation. UniProt FUNCTION describes sequential
+        extension of the carrier-bound lipid. No independently inspected purified-enzyme
+        or substrate-specificity assay is claimed.
+      snippet: sequentially extended with L-Asn and L-Gln
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF76036.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: CBF76036.1, 2326 aa, ANIA_03496; complete spliced CDS
+        on BN001302.1:3924481..3931509 (2 exon(s), strand -1), GenPept and UniProt
+        sequences agree, including start/stop. Native FGSC A4 reference, not a verified
+        experimental allele.'
+  - subject: inpa
+    predicate: is_proposed_to_participate_in
+    object: leucinal_release
+    notes: Native-reference database assignment, not a newly inspected experiment
+      on this exact allele.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q5B7I5/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed FGSC A4 inpA/ANIA_03495, taxon227321; entry 131, sequence 1,
+        annotation 2026-09-02. FUNCTION annotation. UniProt FUNCTION assigns L-Leu
+        incorporation and reductive release of (2S)-fellutamide B. The terminal domain
+        mechanism and experimental construct are not independently verified; no hydrolytic
+        release is asserted.
+      snippet: addition of the third amino acid, L-Leu
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF76038.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: CBF76038.1, 1480 aa, ANIA_03495; complete spliced CDS
+        on BN001302.1:3932343..3936952 (2 exon(s), strand 1), GenPept and UniProt
+        sequences agree, including start/stop. Native FGSC A4 reference, not a verified
+        experimental allele.'
+  - subject: inpf
+    predicate: is_proposed_to_participate_in
+    object: auxiliary_transfer
+    notes: Native-reference database assignment, not a newly inspected experiment
+      on this exact allele.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q5B7I6/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed FGSC A4 inpF/ANIA_03494, taxon227321; entry 94, sequence 1,
+        annotation 2026-09-02. FUNCTION annotation. UniProt says this transfer role
+        might occur. Do not turn it into an obligatory transfer step or a demonstrated
+        biochemical reaction; the annotated disruption reduces, rather than eliminates,
+        fellutamide production.
+      snippet: InpF might be involved in the release and transfer
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF76040.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: CBF76040.1, 437 aa, ANIA_03494; complete spliced CDS
+        on BN001302.1:3937185..3938498 (1 exon(s), strand -1), GenPept and UniProt
+        sequences agree, including start/stop. Native FGSC A4 reference, not a verified
+        experimental allele.'
+  - subject: lipid_activation
+    predicate: is_proposed_to_lead_to
+    object: dipeptide_extension
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q5B7I4/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed FGSC A4 inpB/ANIA_03496, taxon227321; entry 128, sequence 1,
+        annotation 2026-09-02. FUNCTION annotation cites PMID27294372 / DOI10.1021/acschembio.6b00213.
+        The reaction sequence is proposed, not independently inspected biochemical
+        reconstruction. The product node retains this owner's source-defined chemical
+        identity; no primary isomer-level sign-off.
+  - subject: dipeptide_extension
+    predicate: is_proposed_to_lead_to
+    object: leucinal_release
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q5B7I5/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed FGSC A4 inpA/ANIA_03495, taxon227321; entry 131, sequence 1,
+        annotation 2026-09-02. FUNCTION annotation cites PMID27294372 / DOI10.1021/acschembio.6b00213.
+        The reaction sequence is proposed, not independently inspected biochemical
+        reconstruction. The product node retains this owner's source-defined chemical
+        identity; no primary isomer-level sign-off.
+  - subject: leucinal_release
+    predicate: is_proposed_to_lead_to
+    object: fellutamide_b
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q5B7I5/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed FGSC A4 inpA/ANIA_03495, taxon227321; entry 131, sequence 1,
+        annotation 2026-09-02. FUNCTION annotation cites PMID27294372 / DOI10.1021/acschembio.6b00213.
+        The reaction sequence is proposed, not independently inspected biochemical
+        reconstruction. The product node retains this owner's source-defined chemical
+        identity; no primary isomer-level sign-off.
+- graph_id: fellutamide-b-regulation-and-self-resistance
+  scope: BIOSYNTHESIS
+  description: 'Partial producer-regulation and self-resistance view. Mediation links
+    to the proposed assembly graph are intentionally omitted: ScpR transcriptional
+    control does not by itself prove productive cluster activation. InpD resistance
+    involvement remains tentative and no export substrate is demonstrated. InpE is
+    a producer-resistance subunit, not an adopted inhibited target. The conditional
+    InpE requirement is bounded to one inspected primary abstract; other role assignments
+    are database assertions. Reference sequences do not establish experimental allele
+    identity, quantitative phenotypes, direct promoter contacts or complete proteasome
+    assembly.'
+  nodes:
+  - node_id: scpr
+    label: ScpR (FGSC A4 native reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q5B7I8
+    grounding_status: GROUNDED
+  - node_id: inp_expression
+    label: Control of inpA, inpB and other inp-cluster gene expression
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: inpd
+    label: InpD (FGSC A4 native reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q5B7I9
+    grounding_status: GROUNDED
+  - node_id: possible_resistance
+    label: Possible contribution to producer self-resistance
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: inpe
+    label: InpE (FGSC A4 native reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q5B7I7
+    grounding_status: GROUNDED
+  - node_id: producer_resistance
+    label: Resistance to internally produced fellutamides
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: inpe_deletion_cluster_activation
+    label: inpE deletion with inp-cluster expression activated
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: resistance_requirement
+    label: InpE-dependent resistance to internally produced fellutamide B
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: scpr
+    predicate: is_annotated_to_participate_in
+    object: inp_expression
+    notes: Native-reference database assignment, not a newly inspected experiment
+      on this exact allele.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q5B7I8/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed FGSC A4 scpR/ANIA_03492, taxon227321; entry 94, sequence 1,
+        annotation 2026-09-02. FUNCTION annotation. UniProt FUNCTION assigns transcriptional
+        control. This does not establish sufficient fellutamide production from ScpR
+        induction alone, direct promoter binding, or complete cluster activation under
+        all conditions.
+      snippet: controls the expression of the nonribosomal peptide synthases inpA
+        and inpB
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF76044.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: CBF76044.1, 277 aa, ANIA_03492; complete spliced CDS
+        on BN001302.1:3941131..3941964 (1 exon(s), strand -1), GenPept and UniProt
+        sequences agree, including start/stop. Native FGSC A4 reference, not a verified
+        experimental allele.'
+  - subject: inpd
+    predicate: is_proposed_to_participate_in
+    object: possible_resistance
+    notes: Native-reference database assignment, not a newly inspected experiment
+      on this exact allele.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q5B7I9/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed FGSC A4 inpD/ANIA_03491, taxon227321; entry 102, sequence 1,
+        annotation 2026-09-02. FUNCTION annotation. UniProt proposes a resistance
+        contribution, not demonstrated fellutamide export or cargo specificity. Its
+        DISRUPTION PHENOTYPE annotation reports no effect on fellutamide production;
+        production essentiality is not asserted.
+      snippet: may contribute to fellutamide resistance as well
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF76046.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: CBF76046.1, 517 aa, ANIA_03491; complete spliced CDS
+        on BN001302.1:3942367..3944133 (4 exon(s), strand -1), GenPept and UniProt
+        sequences agree, including start/stop. Native FGSC A4 reference, not a verified
+        experimental allele.'
+  - subject: inpe
+    predicate: is_annotated_to_participate_in
+    object: producer_resistance
+    notes: Native-reference database assignment, not a newly inspected experiment
+      on this exact allele.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q5B7I7/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed FGSC A4 inpE/ANIA_03493, taxon227321; entry 114, sequence 1,
+        annotation 2026-09-02. FUNCTION annotation. UniProt assigns producer self-resistance
+        to this beta-type proteasome subunit. This is not evidence that InpE is an
+        inhibited bioactivity target, nor a verified assembled proteasome complex.
+      snippet: confers resistance to internally produced fellutamides
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF76042.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: CBF76042.1, 215 aa, ANIA_03493; complete spliced CDS
+        on BN001302.1:3939805..3940513 (2 exon(s), strand -1), GenPept and UniProt
+        sequences agree, including start/stop. Native FGSC A4 reference, not a verified
+        experimental allele.'
+  - subject: inpe
+    predicate: is_native_reference_for_targeted_gene_in
+    object: inpe_deletion_cluster_activation
+    notes: Identity mapping only; the native reference is not the deletion allele.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q5B7I7/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed FGSC A4 inpE/ANIA_03493, taxon227321; entry 114, sequence 1,
+        annotation 2026-09-02. Gene identity for the named perturbation only.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF76042.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: CBF76042.1, 215 aa, ANIA_03493; complete spliced CDS
+        on BN001302.1:3939805..3940513 (2 exon(s), strand -1), GenPept and UniProt
+        sequences agree, including start/stop. Native FGSC A4 reference, not a verified
+        experimental allele.'
+  - subject: inpe_deletion_cluster_activation
+    predicate: demonstrates_requirement_for
+    object: resistance_requirement
+    evidence:
+    - reference: DOI:10.1021/acschembio.6b00213
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      snippet: required for resistance to internally produced fellutamide B
+      notes: Only the author abstract indexed at https://europepmc.org/article/MED/27294372
+        was inspected. It combines inpE deletion with activation of inp-cluster expression
+        and reports a requirement for resistance to internally produced fellutamide
+        B. Full Methods, strain, alleles, dose, growth measurement and primary chemical
+        stereochemistry remain unverified. This is a conditional producer-resistance
+        result, not a purified binding assay or general drug-susceptibility claim.
+discussions:
+- discussion_id: curator-fellutamide-b-assembly-and-assay-scope
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: Which direct assays resolve InpF transfer, InpD transport, terminal release
+    chemistry and exact experimental alleles?
+  rationale: Seven native FGSC A4 references are sequence-verified. Assembly and auxiliary
+    roles remain reviewed UniProt annotations, not independently inspected primary
+    biochemical assays. The single primary abstract supports conditional InpE producer
+    resistance. RDKit 2026.03.5 confirms the existing fully specified structure and
+    leucinal S center, consistent with the database (2S)-fellutamide B label; primary
+    figures and spectra remain uninspected. Preserve MINTED identity, source-owned
+    provenance and SEEDED status. Mycobacterial proteasome hits are separate bioactivity
+    leads, not producer enzymes or automatic alpha-subunit binding targets.
+  evidence:
+  - reference: DOI:10.1021/acschembio.6b00213
+    evidence_source: Inspected author abstract only
+    notes: Full text was not obtained; detailed enzymology and experimental chemical
+      identity remain unverified.
+  - reference: https://www.uniprot.org/uniprotkb/Q5B7I5/entry
+    evidence_source: Reviewed UniProt FUNCTION
+    notes: Database annotation proposes reductive release of (2S)-fellutamide B; terminal-domain
+      catalysis is not independently verified.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -89,3 +433,15 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-12T10:57:53Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: 'Add seven sequence-verified native FGSC A4 InpA-F and ScpR references
+    in two partial BIOSYNTHESIS graphs: proposed database-annotated assembly, regulation
+    and self-resistance, plus an abstract-bounded conditional InpE requirement. Six
+    accessions are new to the corpus; ScpR was previously represented for asperfuranone.
+    Add edge-local stable references, eight short snippets and an unresolved scope
+    discussion. Preserve all source-owned identity/provenance, history and SEEDED
+    status; no experimental-allele, full-primary stereochemical or direct-binding
+    sign-off.'
+  llm_assisted: true
