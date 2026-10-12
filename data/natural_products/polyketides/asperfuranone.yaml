@@ -64,6 +64,393 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: asperfuranone-native-reference-genetic-perturbations
+  scope: BIOSYNTHESIS
+  description: Partial genetic-perturbation view; mediation and chemical reaction
+    steps are intentionally omitted. The 2009 alcAp-afoA experiments used an nkuA-deletion/stcJ-deletion
+    background; AfoA was induced, not deleted. The 2010 ScpR experiments are abstract-bounded,
+    including afoA deletion during ScpR induction. Shared outcome nodes denote readout
+    categories, not pooled cultures. FGSC A4 accessions are native references, not
+    verified experimental alleles. Claims concern asperfuranone at this owner's stereo-unspecified
+    resolution, not every possible stereoisomer. No direct promoter binding, transport
+    substrate, catalytic order or universal phenotype is asserted. The 2009 Results,
+    Table 1, captions and partial Methods were inspected; figure images, detailed
+    spectra and supplement were not. No primary isomer-level identity sign-off is
+    claimed.
+  nodes:
+  - node_id: afoa
+    label: AfoA (FGSC A4 native reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q5BEK1
+    grounding_status: GROUNDED
+  - node_id: afob
+    label: AfoB (FGSC A4 native reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q5BEJ9
+    grounding_status: GROUNDED
+  - node_id: afoc
+    label: AfoC (FGSC A4 native reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q5BEJ8
+    grounding_status: GROUNDED
+  - node_id: afod
+    label: AfoD (FGSC A4 native reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q5BEJ7
+    grounding_status: GROUNDED
+  - node_id: afoe
+    label: AfoE (FGSC A4 native reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q5BEJ6
+    grounding_status: GROUNDED
+  - node_id: afof
+    label: AfoF (FGSC A4 native reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q5BEJ5
+    grounding_status: GROUNDED
+  - node_id: afog
+    label: AfoG (FGSC A4 native reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q5BEJ4
+    grounding_status: GROUNDED
+  - node_id: scpr
+    label: ScpR (FGSC A4 native reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q5B7I8
+    grounding_status: GROUNDED
+  - node_id: detected
+    label: Asperfuranone production detected in the indicated experiment
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: diminished
+    label: Asperfuranone production strongly diminished in the indicated experiment
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: abolished
+    label: Asperfuranone production abolished in the indicated experiment
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: afoa_induction
+    label: alcAp-afoA induction
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: afob_deletion
+    label: afoB deletion under alcAp-afoA induction
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: afoc_deletion
+    label: afoC deletion under alcAp-afoA induction
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: afod_deletion
+    label: afoD deletion under alcAp-afoA induction
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: afoe_deletion
+    label: afoE deletion under alcAp-afoA induction
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: afof_deletion
+    label: afoF deletion under alcAp-afoA induction
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: afog_deletion
+    label: afoG deletion under alcAp-afoA induction
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: scpr_induction
+    label: alcAp-scpR induction
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: afoa_deletion_scpr
+    label: afoA deletion under alcAp-scpR induction
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: afoa
+    predicate: is_native_reference_for_targeted_gene_in
+    object: afoa_induction
+    notes: Native reference identity only, not a verified experimental allele, measured
+      protein abundance or direct molecular activity.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q5BEK1/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed afoA/ANIA_01029, FGSC A4 taxon227321; entry 127, sequence 1,
+        annotation 2026-09-02. This database identity mapping is separate from the
+        primary outcome evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF88304.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'CBF88304.1, 666 aa: complete spliced CDS on BN001308.1:1698501..1700854
+        (4 exon(s), strand 1), GenPept translation and UniProt sequence agree, including
+        start/stop. Native FGSC A4; experimental strain and allele equivalence remain
+        unverified.'
+  - subject: afoa_induction
+    predicate: results_in
+    object: detected
+    evidence:
+    - reference: DOI:10.1021/ja8088185
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Results/Discussion; experimental details and inspection limits are qualified
+        in the graph description.
+  - subject: afob
+    predicate: is_native_reference_for_targeted_gene_in
+    object: afob_deletion
+    notes: Native reference identity only, not a verified experimental allele, measured
+      protein abundance or direct molecular activity.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q5BEJ9/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed afoB/ANIA_01031, FGSC A4 taxon227321; entry 106, sequence 1,
+        annotation 2026-09-02. This database identity mapping is separate from the
+        primary outcome evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF88300.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'CBF88300.1, 538 aa: complete spliced CDS on BN001308.1:1693289..1695321
+        (6 exon(s), strand 1), GenPept translation and UniProt sequence agree, including
+        start/stop. Native FGSC A4; experimental strain and allele equivalence remain
+        unverified.'
+  - subject: afob_deletion
+    predicate: results_in
+    object: diminished
+    evidence:
+    - reference: DOI:10.1021/ja8088185
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Results/Discussion; experimental details and inspection limits are qualified
+        in the graph description.
+      snippet: strongly diminished production
+  - subject: afoc
+    predicate: is_native_reference_for_targeted_gene_in
+    object: afoc_deletion
+    notes: Native reference identity only, not a verified experimental allele, measured
+      protein abundance or direct molecular activity.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q5BEJ8/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed afoC/ANIA_01032, FGSC A4 taxon227321; entry 106, sequence 1,
+        annotation 2026-09-02. This database identity mapping is separate from the
+        primary outcome evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF88298.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'CBF88298.1, 297 aa: complete spliced CDS on BN001308.1:1692011..1692904
+        (1 exon(s), strand 1), GenPept translation and UniProt sequence agree, including
+        start/stop. Native FGSC A4; experimental strain and allele equivalence remain
+        unverified.'
+  - subject: afoc_deletion
+    predicate: results_in
+    object: diminished
+    evidence:
+    - reference: DOI:10.1021/ja8088185
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Results/Discussion; experimental details and inspection limits are qualified
+        in the graph description.
+  - subject: afod
+    predicate: is_native_reference_for_targeted_gene_in
+    object: afod_deletion
+    notes: Native reference identity only, not a verified experimental allele, measured
+      protein abundance or direct molecular activity.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q5BEJ7/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed afoD/ANIA_01033, FGSC A4 taxon227321; entry 116, sequence 1,
+        annotation 2026-09-02. This database identity mapping is separate from the
+        primary outcome evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF88297.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'CBF88297.1, 440 aa: complete spliced CDS on BN001308.1:1689954..1691405
+        (3 exon(s), strand -1), GenPept translation and UniProt sequence agree, including
+        start/stop. Native FGSC A4; experimental strain and allele equivalence remain
+        unverified.'
+  - subject: afod_deletion
+    predicate: results_in
+    object: abolished
+    evidence:
+    - reference: DOI:10.1021/ja8088185
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Results/Discussion; experimental details and inspection limits are qualified
+        in the graph description.
+      snippet: fully eliminated asperfuranone (1) production
+  - subject: afoe
+    predicate: is_native_reference_for_targeted_gene_in
+    object: afoe_deletion
+    notes: Native reference identity only, not a verified experimental allele, measured
+      protein abundance or direct molecular activity.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q5BEJ6/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed afoE/ANIA_01034, FGSC A4 taxon227321; entry 144, sequence 1,
+        annotation 2026-09-02. This database identity mapping is separate from the
+        primary outcome evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF88295.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'CBF88295.1, 2793 aa: complete spliced CDS on BN001308.1:1680174..1689104
+        (3 exon(s), strand -1), GenPept translation and UniProt sequence agree, including
+        start/stop. Native FGSC A4; experimental strain and allele equivalence remain
+        unverified.'
+  - subject: afoe_deletion
+    predicate: results_in
+    object: abolished
+    evidence:
+    - reference: DOI:10.1021/ja8088185
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Results/Discussion; experimental details and inspection limits are qualified
+        in the graph description.
+  - subject: afof
+    predicate: is_native_reference_for_targeted_gene_in
+    object: afof_deletion
+    notes: Native reference identity only, not a verified experimental allele, measured
+      protein abundance or direct molecular activity.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q5BEJ5/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed afoF/ANIA_01035, FGSC A4 taxon227321; entry 105, sequence 1,
+        annotation 2026-09-02. This database identity mapping is separate from the
+        primary outcome evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF88293.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'CBF88293.1, 481 aa: complete spliced CDS on BN001308.1:1678054..1679646
+        (3 exon(s), strand -1), GenPept translation and UniProt sequence agree, including
+        start/stop. Native FGSC A4; experimental strain and allele equivalence remain
+        unverified.'
+  - subject: afof_deletion
+    predicate: results_in
+    object: abolished
+    evidence:
+    - reference: DOI:10.1021/ja8088185
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Results/Discussion; experimental details and inspection limits are qualified
+        in the graph description.
+  - subject: afog
+    predicate: is_native_reference_for_targeted_gene_in
+    object: afog_deletion
+    notes: Native reference identity only, not a verified experimental allele, measured
+      protein abundance or direct molecular activity.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q5BEJ4/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed afoG/ANIA_01036, FGSC A4 taxon227321; entry 152, sequence 1,
+        annotation 2026-09-02. This database identity mapping is separate from the
+        primary outcome evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF88289.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'CBF88289.1, 2527 aa: complete spliced CDS on BN001308.1:1668237..1676285
+        (5 exon(s), strand 1), GenPept translation and UniProt sequence agree, including
+        start/stop. Native FGSC A4; experimental strain and allele equivalence remain
+        unverified.'
+  - subject: afog_deletion
+    predicate: results_in
+    object: abolished
+    evidence:
+    - reference: DOI:10.1021/ja8088185
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Results/Discussion; experimental details and inspection limits are qualified
+        in the graph description.
+  - subject: scpr
+    predicate: is_native_reference_for_targeted_gene_in
+    object: scpr_induction
+    notes: Native reference identity only, not a verified experimental allele, measured
+      protein abundance or direct molecular activity.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q5B7I8/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed scpR/ANIA_03492, FGSC A4 taxon227321; entry 94, sequence 1,
+        annotation 2026-09-02. This database identity mapping is separate from the
+        primary outcome evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF76044.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'CBF76044.1, 277 aa: complete spliced CDS on BN001302.1:3941131..3941964
+        (1 exon(s), strand -1), GenPept translation and UniProt sequence agree, including
+        start/stop. Native FGSC A4; experimental strain and allele equivalence remain
+        unverified.'
+  - subject: scpr_induction
+    predicate: results_in
+    object: detected
+    evidence:
+    - reference: DOI:10.1128/aem.00683-10
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Author abstract only, indexed at https://europepmc.org/article/MED/20952652.
+        Full Methods and figures were not inspected; inferred promoter contact is
+        not adopted as direct binding.
+      snippet: revealed the production of the polyketide asperfuranone
+  - subject: afoa
+    predicate: is_native_reference_for_targeted_gene_in
+    object: afoa_deletion_scpr
+    notes: Native reference identity only, not a verified experimental allele, measured
+      protein abundance or direct molecular activity.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q5BEK1/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed afoA/ANIA_01029, FGSC A4 taxon227321; entry 127, sequence 1,
+        annotation 2026-09-02. This database identity mapping is separate from the
+        primary outcome evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF88304.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'CBF88304.1, 666 aa: complete spliced CDS on BN001308.1:1698501..1700854
+        (4 exon(s), strand 1), GenPept translation and UniProt sequence agree, including
+        start/stop. Native FGSC A4; experimental strain and allele equivalence remain
+        unverified.'
+  - subject: afoa_deletion_scpr
+    predicate: results_in
+    object: abolished
+    evidence:
+    - reference: DOI:10.1128/aem.00683-10
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Author abstract only, indexed at https://europepmc.org/article/MED/20952652.
+        Full Methods and figures were not inspected; inferred promoter contact is
+        not adopted as direct binding.
+      snippet: was abolished after the deletion of the asperfuranone activator gene
+        afoA
+discussions:
+- discussion_id: curator-asperfuranone-identity-and-experimental-scope
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: Can primary stereochemical detail, experimental alleles and molecular mediation
+    be resolved without conflating reference sequences and perturbations?
+  rationale: RDKit 2026.03.5 confirms SMILES/InChI/key agreement, three unspecified
+    tetrahedral centers and two unspecified double bonds. Removing stereochemistry
+    from saved CHEBI:64397 yields this connectivity, but its full key differs. Retain
+    the source-owned MINTED identity and SEEDED status; no ChEBI equivalence or stereo
+    replacement is authorized. The 2009 abstract reverses AfoE/AfoG PKS types relative
+    to Results/Table 1; UniProt AfoA deletion attribution to that paper is not adopted.
+    The 2010 abstract does not establish a direct ScpR promoter-binding assay.
+  evidence:
+  - reference: https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:64397
+    evidence_source: Committed ChEBI inventory, not a new remote retrieval
+    notes: Defined key ZNGSMORVYUMUDS-BYQFYWKXSA-N differs from this stereo-unspecified
+      owner.
+  - reference: DOI:10.1021/ja8088185
+    evidence_source: Inspected Results/Discussion and Table 1
+    notes: AfoE is NR-PKS; AfoG is HR-PKS. No AfoA deletion in this study.
+  - reference: DOI:10.1128/aem.00683-10
+    evidence_source: Inspected author abstract only
+    notes: Genetic dependence is not direct promoter-binding evidence.
 curation_history:
 - timestamp: '2026-09-10T05:54:17Z'
   curator: seed_from_sources
@@ -73,3 +460,14 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-12T10:18:33Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: 'Add eight native-sequence-verified FGSC A4 AfoA-G and ScpR reference proteins
+    in one partial BIOSYNTHESIS graph: nine distinct perturbations, three outcome
+    categories, 18 edges, edge-local sources and four short snippets. Distinguish
+    2009 inspected genetic results from 2010 abstract-only evidence, native references
+    from experimental alleles, and stereo-unspecified owner scope from complete isomer
+    identity. Preserve all source-owned fields and SEEDED status; add an unresolved
+    scope discussion.'
+  llm_assisted: true
