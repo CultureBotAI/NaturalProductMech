@@ -144,13 +144,13 @@ by the corpus tests.</p>
 {% if r.targets %}
 <h2>Molecular targets <span class="tag">{{ r.targets|length }}</span></h2>
 <div class="scroll"><table>
-<tr><th>Target</th><th>Assay organism</th><th>Measurement</th><th>Reference</th></tr>
+<tr><th>Target</th><th>Target organism</th><th>Measurement</th><th>Evidence</th></tr>
 {% for t in r.targets %}
 <tr>
-  <td>{{ t.target_label }}{% if t.protein_examples %}<br><span class="mono">{{ t.protein_examples|join(', ') }}</span>{% endif %}</td>
+  <td>{{ t.target_label }}{% if t.target_type or t.relation %}<br><span class="mono">{{ t.target_type or '' }}{% if t.relation %} {{ t.relation }}{% endif %}</span>{% endif %}{% if t.protein_examples %}<br><span class="mono">{{ t.protein_examples|join(', ') }}</span>{% endif %}{% if t.notes %}<p class="graph-evidence sub">{{ t.notes }}</p>{% endif %}</td>
   <td>{{ t.taxon_label or '' }}{% if t.taxon_id %}<br><span class="mono">{{ t.taxon_id }}</span>{% endif %}</td>
   <td>{{ t.measurement }}</td>
-  <td class="mono">{{ t.reference }}</td>
+  <td><details class="graph-evidence target-evidence"><summary class="mono">{% for item in t.evidence %}{{ item.reference }}{% if not loop.last %}<br>{% endif %}{% endfor %}</summary>{{ source_fields(t.evidence) }}</details></td>
 </tr>
 {% endfor %}
 </table></div>

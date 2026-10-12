@@ -153,6 +153,40 @@ def test_graph_evidence_details_reach_html_without_changing_sources(
     assert {p: p.read_bytes() for p in tmp_path.rglob("*.yaml")} == before
 
 
+@pytest.mark.parametrize("source", ["CURATOR", "BINDINGDB"])
+@pytest.mark.parametrize("detailed", [False, True])
+def test_target_qualifications_and_all_evidence_reach_html(source, detailed):
+    evidence = [{"reference": "DOI:10.1/synthetic"}]
+    if detailed:
+        evidence[0].update(evidence_type="PRIMARY_EXPERIMENT",
+                           notes="Abstract only; no strain-specific assay.",
+                           snippet='Synthetic <quoted> evidence & context.')
+        evidence.append({"reference": "https://example.org/structure?a=1&b=2",
+                         "evidence_type": "DATABASE_ASSERTION",
+                         "notes": "Processed tagged construct, not the precursor."})
+    target = {"target_label": "Synthetic proteasome complex", "target_type": "PROTEIN_COMPLEX",
+              "relation": "INHIBITS", "source": source,
+              "protein_examples": ["UniProtKB:P12345"],
+              "notes": 'Deliberate reference only <script>alert("test")</script>.',
+              "evidence": evidence}
+    doc = {"identifier": "CHEBI:1", "np_pathway": "POLYKETIDES", "molecular_targets": [target]}
+    before = deepcopy(doc)
+    view = render_pages.build_record(REPO_ROOT / "data/natural_products/polyketides/synthetic.yaml", doc)
+    env = Environment(loader=FileSystemLoader(str(render_pages.TEMPLATES_DIR)),
+                      autoescape=select_autoescape(["html"]))
+    rendered = env.get_template("record.html").render(r=view)
+    assert str(escape(target["notes"])) in rendered
+    assert "PROTEIN_COMPLEX" in rendered and "INHIBITS" in rendered
+    assert "UniProtKB:P12345" in rendered
+    assert '<details class="graph-evidence target-evidence">' in rendered
+    assert "<script>" not in rendered
+    for item in evidence:
+        for key, value in item.items():
+            assert f"<dt>{key.replace('_', ' ')}</dt>" in rendered
+            assert f"<dd>{escape(value)}</dd>" in rendered
+    assert doc == before
+
+
 def test_pathway_step_without_grounded_compounds_renders_as_ungrounded():
     record = render_pages.build_record(
         REPO_ROOT / "data" / "natural_products" / "carbohydrates" / "coformycin.yaml",

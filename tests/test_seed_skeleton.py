@@ -1062,6 +1062,83 @@ def _structure(key="AAA-BBB-C"):
     return {"chemical_structure": {"standard_inchi_key": key}}
 
 
+def _curator_target():
+    return {"target_label": "Synthetic test complex", "target_type": "PROTEIN_COMPLEX",
+            "source": "CURATOR", "protein_examples": ["UniProtKB:P12345"],
+            "evidence": [{"reference": "https://example.org/synthetic-test",
+                          "evidence_type": "CURATOR_INFERENCE"}]}
+
+
+def test_curator_targets_preserve_imported_rows_and_nested_evidence():
+    target = _curator_target()
+    imported = {"target_label": "Current imported target", "source": "BINDINGDB"}
+    existing = {**_structure(), "molecular_targets": [
+        {**imported, "target_label": "Stale imported target"}, target],
+        "curation_history": []}
+    before = deepcopy(existing)
+    payload = {**_structure(), "molecular_targets": [imported]}
+    for _ in range(2):
+        seed.carry_curator_owned_fields(payload, existing)
+        assert payload["molecular_targets"] == [imported, target]
+        assert list(payload).index("molecular_targets") < list(payload).index("curation_history")
+    payload["molecular_targets"][1]["evidence"][0]["reference"] = "edited copy"
+    assert existing == before
+
+
+@pytest.mark.parametrize("source", [None, "BINDINGDB", "PUBCHEM", "curator"])
+def test_only_explicit_curator_targets_are_carried(source):
+    target = _curator_target()
+    if source is None:
+        target.pop("source")
+    else:
+        target["source"] = source
+    payload = _structure()
+    seed.carry_curator_owned_fields(payload, {**_structure(), "molecular_targets": [target]})
+    assert "molecular_targets" not in payload
+
+
+@pytest.mark.parametrize("old_key,new_key", [("OLD", "NEW"), (None, None), ("OLD", None), (None, "NEW")])
+def test_curator_targets_require_matching_structure(old_key, new_key):
+    payload = _structure(new_key)
+    seed.carry_curator_owned_fields(
+        payload, {**_structure(old_key), "molecular_targets": [_curator_target()]})
+    assert "molecular_targets" not in payload
+
+
+def test_curator_targets_keep_order_and_shared_graph_evidence():
+    first = _curator_target()
+    second = {**first, "target_label": "Another synthetic test complex"}
+    existing = {**_structure(), "molecular_targets": [first, second],
+                "causal_graphs": [{"evidence": first["evidence"]}], "curation_history": []}
+    payload = _structure()
+    for _ in range(2):
+        seed.carry_curator_owned_fields(payload, existing)
+        assert payload["molecular_targets"] == [first, second]
+        assert payload["molecular_targets"][0]["evidence"] is payload["causal_graphs"][0]["evidence"]
+        assert list(payload).index("molecular_targets") < list(payload).index("causal_graphs")
+
+
+def test_curator_target_reseeds_byte_identically(tmp_path, monkeypatch):
+    corpus = tmp_path / "data" / "natural_products"
+    monkeypatch.setattr(seed, "REPO_ROOT", tmp_path)
+    monkeypatch.setattr(seed, "CORPUS_DIR", corpus)
+    monkeypatch.setattr(seed, "PATHS_FILE", corpus / "PATHS.tsv")
+    inventories = {"mibig_compounds": [MIBIG_ROW]}
+    generated = seed.build_records(inventories)[0]
+    path = seed.record_path(generated["np_pathway"], generated["_slug"])
+    payload = {k: v for k, v in generated.items() if not k.startswith(seed.INTERNAL_PREFIX)}
+    payload["molecular_targets"] = [_curator_target()]
+    seed.record_curation_event(payload, curator="test", action="RECORD_CURATED",
+                               changes="Add a synthetic curator target fixture.")
+    seed.write_validated_natural_product(payload, path)
+    original = path.read_bytes()
+    history = deepcopy(payload["curation_history"])
+    for _ in range(2):
+        assert seed.write_records(seed.build_records(inventories)) == 1
+        assert path.read_bytes() == original
+        assert yaml.safe_load(path.read_text())["curation_history"] == history
+
+
 def test_a_curator_status_survives_a_reseed():
     """`curate-yaml-record`'s first instruction is to move a record off
     SEEDED, and before #79 the next re-seed put it straight back."""
