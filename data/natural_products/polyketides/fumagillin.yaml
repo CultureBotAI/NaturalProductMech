@@ -898,6 +898,364 @@ causal_graphs:
       notes: UniProt release 2026_03. FUNCTION and CATALYTIC ACTIVITY assign prefumagillin
         formation. No transfer yield, native essentiality, domain-level PKS mechanism
         or reconstituted pathway claim.
+- graph_id: fumagillin-fumr-vea-laea-regulation
+  scope: BIOSYNTHESIS
+  description: Partial fumagillin genetic-regulation graph from DOI10.1371/journal.pone.0077147.
+    Separate perturbation components retain the measured outcomes; unproven mediation
+    links between them are intentionally omitted. Separate Af293 protein references,
+    accession-unresolved experimental proteins, genes, perturbations and measured
+    outcomes. CEA10 controls the VeA series; TSD51.1 controls CEA17ku80-derived fumR/laeA
+    deletions. Both veA deletion and overexpression decrease expression and product
+    signal. FumR deletion lowers the nine assayed cluster transcripts and makes fumagillin
+    undetectable at the tested times. LaeA edges concern transcripts only. No direct
+    promoter binding, protein-abundance measurement, velvet-complex assembly, universal
+    essentiality, complete pathway or exact experimental-allele mapping is asserted.
+  nodes:
+  - node_id: fumr_reference
+    label: FumR (Af293 reference, 622 aa)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4WAY8
+  - node_id: fumr_experimental
+    label: FumR (experimental strain series; allele unresolved)
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: fumr_gene
+    label: fumR gene (experimental strain series)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: vea_reference
+    label: VeA (Af293 reference, 570 aa)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:E9RCK4
+  - node_id: vea_experimental
+    label: VeA (experimental strain series; allele unresolved)
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: vea_gene
+    label: veA gene (experimental strain series)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: laea_reference
+    label: LaeA (Af293 reference, 373 aa)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4WRY5
+  - node_id: laea_experimental
+    label: LaeA (experimental strain series; allele unresolved)
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: laea_gene
+    label: laeA gene (experimental strain series)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: delete_fumr
+    label: fumR gene replacement (TSD53.1)
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: delete_vea
+    label: veA deletion (TSD1.15)
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: overexpress_vea
+    label: veA overexpression (TSD2.8)
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: delete_laea
+    label: laeA gene replacement (TSD62.1)
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: lower_cluster_transcripts
+    label: Lower assayed fumagillin-cluster transcript levels
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: fumagillin_not_detected
+    label: Fumagillin not detected in culture extract
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: lower_fumr_transcript
+    label: Lower fumR transcript level
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: lower_pks_transcript
+    label: Lower Afu8g00370 PKS transcript level
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: lower_fumagillin
+    label: Lower relative fumagillin LC-MS signal
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: fumr_reference
+    predicate: is_reference_example_for
+    object: fumr_experimental
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q4WAY8/entry
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: 'Selected reference, not an identical experimental allele. AFUA_8G00420:
+        native Af293 CDS, EAL85124.1 and UniProt2026_03 agree exactly at 622 aa; taxon330879. '
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EAL85124.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Versioned reference identity. Complete spliced CDS, strand and coordinates
+        independently verified: complement(join(AAHF01000014.1:698638..700031, AAHF01000014.1:700097..700364,
+        AAHF01000014.1:700420..700626)).'
+    - reference: DOI:10.1371/journal.pone.0077147
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: Table S1 names CEA10 as control for the VeA series and CEA17ku80-derived
+        TSD51.1 control, TSD53.1 deltafumR and TSD62.1 deltalaeA. Af293 is the transcriptome
+        reference, not proof of assay-strain allele identity. No full experimental
+        allele sequence was established.
+  - subject: fumr_gene
+    predicate: encodes
+    object: fumr_experimental
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0077147
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Introduction/Results identify FumR as the product of the manipulated
+        gene. This entity relationship is not a protein-abundance measurement or an
+        exact-accession assignment. FumR is described as a putative C6 transcription
+        factor; its DNA-binding motif is not direct evidence of promoter occupancy.
+  - subject: vea_reference
+    predicate: is_reference_example_for
+    object: vea_experimental
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/E9RCK4/entry
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: 'Selected reference, not an identical experimental allele. AFUA_1G12490:
+        native Af293 CDS, EAL90581.1 and UniProt2026_03 agree exactly at 570 aa; taxon330879. '
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EAL90581.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Versioned reference identity. Complete spliced CDS, strand and coordinates
+        independently verified: complement(join(AAHF01000004.1:1042372..1043936 ,AAHF01000004.1:1044007..1044154)).'
+    - reference: DOI:10.1371/journal.pone.0077147
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: Table S1 names CEA10 as control for the VeA series and CEA17ku80-derived
+        TSD51.1 control, TSD53.1 deltafumR and TSD62.1 deltalaeA. Af293 is the transcriptome
+        reference, not proof of assay-strain allele identity. No full experimental
+        allele sequence was established.
+  - subject: vea_gene
+    predicate: encodes
+    object: vea_experimental
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0077147
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Introduction/Results identify VeA as the product of the manipulated gene.
+        This entity relationship is not a protein-abundance measurement or an exact-accession
+        assignment. No purified protein assay or directly demonstrated A. fumigatus
+        VeA-LaeA interaction is asserted here.
+  - subject: laea_reference
+    predicate: is_reference_example_for
+    object: laea_experimental
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q4WRY5/entry
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: 'Selected reference, not an identical experimental allele. AFUA_1G14660:
+        native Af293 CDS, EAL90797.1 and UniProt2026_03 agree exactly at 373 aa; taxon330879.
+        Alternative AAR01218.1 is flagged as an erroneous gene model in UniProt; it
+        was not independently sequence-compared here. '
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EAL90797.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Versioned reference identity. Complete spliced CDS, strand and coordinates
+        independently verified: join(AAHF01000004.1:1670850..1671079, AAHF01000004.1:1671225..1672116).'
+    - reference: DOI:10.1371/journal.pone.0077147
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: Table S1 names CEA10 as control for the VeA series and CEA17ku80-derived
+        TSD51.1 control, TSD53.1 deltafumR and TSD62.1 deltalaeA. Af293 is the transcriptome
+        reference, not proof of assay-strain allele identity. No full experimental
+        allele sequence was established.
+  - subject: laea_gene
+    predicate: encodes
+    object: laea_experimental
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0077147
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Introduction/Results identify LaeA as the product of the manipulated
+        gene. This entity relationship is not a protein-abundance measurement or an
+        exact-accession assignment. No purified protein assay or directly demonstrated
+        A. fumigatus VeA-LaeA interaction is asserted here.
+  - subject: delete_fumr
+    predicate: replaces
+    object: fumr_gene
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0077147
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Methods, Figure S2, Table S1: fumR replaced by A. parasiticus pyrG in
+        CEA17ku80; TSD53.1. PCR screening and Southern-blot validation reported. The
+        marker is not a fumagillin biosynthetic enzyme.'
+  - subject: delete_laea
+    predicate: replaces
+    object: laea_gene
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0077147
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Methods, Figure S3, Table S1: laeA replaced by A. parasiticus pyrG in
+        CEA17ku80; TSD62.1. Southern-blot validation reported.'
+  - subject: delete_vea
+    predicate: deletes
+    object: vea_gene
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0077147
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Table S1: TSD1.15, pyrG1; delta-veA::pyrG A. fumigatus; CEA10 control.
+        Genotype statement, not a direct protein-depletion measurement.'
+  - subject: overexpress_vea
+    predicate: overexpresses
+    object: vea_gene
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0077147
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Table S1: TSD2.8, pyrG1; gpdA(p)::veA::trpC(t)::pyrG A. fumigatus. No
+        quantitative VeA protein dosage measured in the represented assays.'
+  - subject: delete_fumr
+    predicate: results_in
+    object: lower_cluster_transcripts
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0077147
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure 5/Results: TSD53.1 versus TSD51.1 at 48 h and 72 h. Czapek-Dox
+        stationary liquid cultures. qRT-PCR, 18S reference, three replicates with
+        standard-error bars; transcript readout, not protein abundance or direct promoter
+        binding. Nine assayed loci: Afu8g00370, Afu8g00520, Afu8g00380, Afu8g00510,
+        Afu8g00500, Afu8g00480, Afu8g00470, Afu8g00440 and Afu8g00430. Afu8g00470
+        retains appreciable residual expression; not complete silencing of every cluster
+        gene. Figure 5 labels, Results and Table S2 support Afu8g00380 where the caption
+        mistakenly repeats Afu8g00370.'
+  - subject: delete_fumr
+    predicate: results_in
+    object: fumagillin_not_detected
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0077147
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure 6: TSD53.1 versus TSD51.1 at 72 h and 120 h. Czapek-Dox stationary
+        liquid cultures. Chloroform-extracted supernatants analyzed by LC-MS; commercial
+        fumagillin standard and three replicates. No detected fumagillin in the deletion
+        strain under these conditions, not absolute zero or universal essentiality.
+        No numerical detection limit or fumR complementation rescue is established
+        by this experiment.'
+      snippet: No fumagillin was detected
+  - subject: delete_vea
+    predicate: results_in
+    object: lower_fumr_transcript
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0077147
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure S1A/Results: 72 h, CEA10 control, TSD1.15 deletion or TSD2.8
+        overexpression. Czapek-Dox stationary liquid cultures. qRT-PCR, 18S reference,
+        three replicates with standard-error bars; transcript readout, not protein
+        abundance or direct promoter binding. Authors report 12% of wild-type fumR
+        expression. Both deletion and overexpression decrease this readout; no monotonic
+        dosage rule is inferred.'
+  - subject: delete_vea
+    predicate: results_in
+    object: lower_pks_transcript
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0077147
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure S1B/Results: 72 h, CEA10 control, TSD1.15 deletion or TSD2.8
+        overexpression. Czapek-Dox stationary liquid cultures. qRT-PCR, 18S reference,
+        three replicates with standard-error bars; transcript readout, not protein
+        abundance or direct promoter binding. Authors report 3% of wild-type Afu8g00370
+        expression. This is a PKS-gene transcript measurement, not a PKS catalytic
+        assay.'
+  - subject: delete_vea
+    predicate: results_in
+    object: lower_fumagillin
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0077147
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure 4A: 120 h, CEA10 control, TSD1.15 deletion or TSD2.8 overexpression;
+        TSD3.5 complementation also shown. Czapek-Dox stationary liquid cultures.
+        Extracted-ion LC-MS signal for fumagillin, m/z459 [M+H]+, normalized to wild
+        type; three samples and standard-error bars. Both perturbations reduce the
+        signal. This qualitative direction does not imply complete loss, absolute
+        yield or a quantitative protein-dosage response.'
+  - subject: overexpress_vea
+    predicate: results_in
+    object: lower_fumr_transcript
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0077147
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure S1A/Results: 72 h, CEA10 control, TSD1.15 deletion or TSD2.8
+        overexpression. Czapek-Dox stationary liquid cultures. qRT-PCR, 18S reference,
+        three replicates with standard-error bars; transcript readout, not protein
+        abundance or direct promoter binding. Authors report 5% of wild-type fumR
+        expression. Both deletion and overexpression decrease this readout; no monotonic
+        dosage rule is inferred.'
+  - subject: overexpress_vea
+    predicate: results_in
+    object: lower_pks_transcript
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0077147
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure S1B/Results: 72 h, CEA10 control, TSD1.15 deletion or TSD2.8
+        overexpression. Czapek-Dox stationary liquid cultures. qRT-PCR, 18S reference,
+        three replicates with standard-error bars; transcript readout, not protein
+        abundance or direct promoter binding. Authors report 0.1% of wild-type Afu8g00370
+        expression. This is a PKS-gene transcript measurement, not a PKS catalytic
+        assay.'
+  - subject: overexpress_vea
+    predicate: results_in
+    object: lower_fumagillin
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0077147
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure 4A: 120 h, CEA10 control, TSD1.15 deletion or TSD2.8 overexpression;
+        TSD3.5 complementation also shown. Czapek-Dox stationary liquid cultures.
+        Extracted-ion LC-MS signal for fumagillin, m/z459 [M+H]+, normalized to wild
+        type; three samples and standard-error bars. Both perturbations reduce the
+        signal. This qualitative direction does not imply complete loss, absolute
+        yield or a quantitative protein-dosage response.'
+  - subject: delete_laea
+    predicate: results_in
+    object: lower_fumr_transcript
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0077147
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure 7 upper panel/Results: TSD62.1 versus corresponding control TSD51.1,
+        48 h and 72 h respectively. Czapek-Dox stationary liquid cultures. qRT-PCR,
+        18S reference, three replicates with standard-error bars; transcript readout,
+        not protein abundance or direct promoter binding. Authors report 3% and 8%
+        of wild-type transcript levels. No LaeA-specific fumagillin production assay
+        or mediation through FumR is asserted from these expression data alone.'
+  - subject: delete_laea
+    predicate: results_in
+    object: lower_pks_transcript
+    evidence:
+    - reference: DOI:10.1371/journal.pone.0077147
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure 7 lower panel/Results: TSD62.1 versus corresponding control TSD51.1,
+        48 h and 72 h respectively. Czapek-Dox stationary liquid cultures. qRT-PCR,
+        18S reference, three replicates with standard-error bars; transcript readout,
+        not protein abundance or direct promoter binding. Authors report 9% and 7%
+        of wild-type transcript levels. No LaeA-specific fumagillin production assay
+        or mediation through FumR is asserted from these expression data alone.'
 discussions:
 - discussion_id: curator-fumagillin-abm-assay-identity
   kind: CURATION_TODO
@@ -950,6 +1308,22 @@ discussions:
   - reference: https://www.uniprot.org/uniprotkb/Q4WAY4/entry
     evidence_source: UniProt2026_03 FUNCTION and CATALYTIC ACTIVITY
     notes: Database wording discrepancy; no chemical-ID equivalence assumed.
+- discussion_id: curator-fumagillin-regulator-alleles
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: Which experimental-strain allele sequences ground FumR, VeA and LaeA, and
+    which direct regulatory contacts mediate the fumagillin phenotype?
+  rationale: Af293 genomic, GenPept and UniProt sequences agree, but the primary assays
+    use CEA10/CEA17ku80-derived strain series. Expression and deletion phenotypes
+    do not establish direct promoter binding, velvet-complex interaction or FumR mediation.
+  notes: Keep experimental proteins ungrounded and references separate. Preserve both
+    directions of VeA perturbation, residual Afu8g00470 expression, and the Figure
+    5 caption duplicate resolved by plotted labels/Results/Table S2. Existing source-owned
+    fields and SEEDED status remain unchanged.
+  evidence:
+  - reference: DOI:10.1371/journal.pone.0077147
+    evidence_source: Figures 4-7, Figure S1, Methods, Tables S1-S2
+    notes: Full text and supplements inspected; no full-record REVIEWED sign-off.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -992,4 +1366,30 @@ curation_history:
     corrected PKS/TC models, source numbering and donor-name discrepancies. Cite every
     edge; preserve prior graphs, discussions, history, SEEDED status and source-owned
     fields.
+  llm_assisted: true
+- timestamp: '2026-10-12T03:45:32Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add FumR/VeA/LaeA genetic-regulation graph with three sequence-verified
+    Af293 references separate from experimental alleles, gene perturbations and measured
+    outcomes. Two globally new proteins and LaeA coverage for this owner. Preserve
+    non-monotonic VeA perturbations, residual cluster transcription, condition-limited
+    fumagillin non-detection and expression-only LaeA evidence. Cite all edges; preserve
+    prior graphs, source-owned fields, SEEDED status and history.
+  llm_assisted: true
+- timestamp: '2026-10-12T03:54:09Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: 'Address adversarial review issue #844: change nine decreases predicates
+    to results_in because their target PHENOTYPE nodes already denote lowered transcript
+    levels or product signal. Eliminate double-negative graph polarity without changing
+    measured directions, evidence, nodes or strain/time qualifiers.'
+  llm_assisted: true
+- timestamp: '2026-10-12T04:03:26Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: 'Address QC/review issue #845: explicitly label the genetic-regulation
+    graph as a partial view with separate perturbation components and unproven mediation
+    links intentionally omitted. Preserve every node, edge, evidence item and experimental
+    qualifier; do not invent a causal connection to satisfy topology checks.'
   llm_assisted: true
