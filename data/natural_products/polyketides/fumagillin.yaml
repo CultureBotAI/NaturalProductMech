@@ -171,6 +171,98 @@ causal_graphs:
       notes: RCSB PDB identifies PDB 1BOA entity 1 as a methionine aminopeptidase
         mapped to UniProtKB:P50579, entity 3 as FUG fumagillin, and reports a 1.484
         Angstrom covalent bond between His231 NE2 and FUG C11.
+- graph_id: fumagillin-abm-terminal-conversion
+  scope: BIOSYNTHESIS
+  description: Terminal conversion assay, not a complete pathway. The A1159-derived
+    experimental enzyme remains accession-unresolved; Af293 is a separate reference
+    example, not an asserted identical allele. Main Figure4 names BJ5464-NpgA; supplement
+    S6-S8 specifies BY4705. The host discrepancy is retained. No producer, essentiality,
+    cofactor-independence or purified-enzyme sufficiency claim is added.
+  nodes:
+  - node_id: abm_af293
+    label: Fma-ABM (Af293 reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4WAZ2
+  - node_id: abm_assayed
+    label: Fma-ABM (A1159-derived construct)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: conversion
+    label: Fma-ABM-containing yeast microsomal conversion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: prefumagillin
+    label: Prefumagillin (paper compound 4)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: fumagillin
+    label: fumagillin
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:48635
+  edges:
+  - subject: abm_af293
+    predicate: is_reference_example_for
+    object: abm_assayed
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q4WAZ2/entry
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: Selected same-named AFUA_8G00470 reference, not sequence identity of
+        the assayed insert. Release2026_03 Q4WAZ2 matches the275-aa EAL85120.1 and
+        translated spliced AAHF01000014.1 CDS exactly; coded_by coordinates, strand,
+        complete start/stop, Af293 and taxon330879 agree. No experimental allele or
+        A1159-to-Af293 equivalence was established.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EAL85120.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Versioned native Af293 protein reference. The linked genomic CDS is join(690371..690445,690513..691265)
+        on AAHF01000014.1; no custom splice repair.
+  - subject: abm_assayed
+    predicate: catalyzes_in_microsomal_fraction
+    object: conversion
+    evidence:
+    - reference: DOI:10.1021/ja500881e
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure4B and supplement S6-S8: A1159 cDNA in pKW20202; microsomal preparation,
+        not homogeneous protein.'
+      snippet: Heat-inactivated Af470 was used in reaction as a negative control.
+  - subject: prefumagillin
+    predicate: is_substrate_in
+    object: conversion
+    evidence:
+    - reference: DOI:10.1021/ja500881e
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Supplement S7-S8: 100 uM compound4, 30 C, 14 h; no kinetic constant
+        inferred.'
+  - subject: conversion
+    predicate: produces_detected_product
+    object: fumagillin
+    evidence:
+    - reference: DOI:10.1021/ja500881e
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure4B: LC-MS-supported compound4-to-compound1 conversion. Individual
+        oxidative intermediates were not directly resolved by this assay.'
+discussions:
+- discussion_id: curator-fumagillin-abm-assay-identity
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: Which deposited insert sequence and yeast-host assignment resolve the Fma-ABM
+    microsomal assay?
+  rationale: Keep the native Af293 reference separate from the A1159-derived experimental
+    participant until exact construct identity is established.
+  notes: Primary article and supplement were inspected. Main/supplement host labels
+    disagree. The distinct2013 discovery article DOI10.1021/ja312503y returned HTTP500;
+    no retry or alternate retrieval. Existing source-owned fields, SEEDED status,
+    history and human MetAP2 graph are unchanged.
+  evidence:
+  - reference: DOI:10.1021/ja500881e
+    evidence_source: Primary article Figure4 and supplement S6-S8/S13-S14, retrieved2026-10-12
+    notes: No full-record REVIEWED sign-off or native-strain essentiality transfer.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -186,4 +278,12 @@ curation_history:
   changes: Added a BIOACTIVITY causal graph for fumagillin covalent binding to human
     METAP2, grounded the enzyme node to UniProtKB:P50579 via PDB 1BOA chain A, and
     cited DOI:10.1126/science.282.5392.1324 and DOI:10.2210/pdb1boa/pdb.
+  llm_assisted: true
+- timestamp: '2026-10-12T01:44:11Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add a four-edge BIOSYNTHESIS graph for the primary Fma-ABM microsomal prefumagillin-to-fumagillin
+    assay, with accession-unresolved A1159-derived participant and separately sequence-verified
+    Af293 Q4WAZ2 reference. Preserve host discrepancy, source-owned fields, SEEDED
+    status, prior history and human MetAP2 graph.
   llm_assisted: true
