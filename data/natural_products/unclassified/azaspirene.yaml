@@ -84,6 +84,188 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graphs:
+- graph_id: azaspirene-af293-reconstitution
+  scope: BIOSYNTHESIS
+  nodes:
+  - node_id: psoa
+    label: PsoA (Af293 reference; tagged construct tested)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4WAZ9
+  - node_id: psob
+    label: PsoB (Af293 reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4WAZ8
+  - node_id: psof
+    label: PsoF (Af293 reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4WAZ0
+  - node_id: psog
+    label: PsoG (Af293-derived construct; protein accession unresolved)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: yeast_reconstitution
+    label: Four-gene reconstitution in yeast BJ5464-NpgA
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: azaspirene
+    label: Azaspirene
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: naturalproductmech:mibig-a469ae857b
+  - node_id: propionyl_coa
+    label: Propionyl-CoA
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: priming
+    label: PsoA starter selection in vitro
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: psoa
+    predicate: is_encoded_in_successful_reconstitution
+    object: yeast_reconstitution
+    evidence:
+    - reference: DOI:10.1021/ol503179v
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure2a and supplement sections2/5: tested coexpression membership,
+        not isolated-enzyme sufficiency or a physical complex.'
+    - reference: https://www.uniprot.org/uniprotkb/Q4WAZ9/entry
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: 'Selected Af293 native reference, not a deposited experimental construct:
+        AFUA_8G00540, EAL85113.2, 4007 aa. Release2026_03 UniProt, spliced AAHF01000014.1
+        CDS and separately retrieved GenPept sequences agree exactly; coded_by coordinates,
+        strand, start/stop, strain and taxon330879 checked. Protein-existence grades
+        are not upgraded. The supplement names Af293 as cloning source; tags and assay
+        hosts differ from the native context.'
+  - subject: psob
+    predicate: is_encoded_in_successful_reconstitution
+    object: yeast_reconstitution
+    evidence:
+    - reference: DOI:10.1021/ol503179v
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure2a and supplement sections2/5: tested coexpression membership,
+        not isolated-enzyme sufficiency or a physical complex.'
+    - reference: https://www.uniprot.org/uniprotkb/Q4WAZ8/entry
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: 'Selected Af293 native reference, not a deposited experimental construct:
+        AFUA_8G00530, EAL85114.1, 445 aa. Release2026_03 UniProt, spliced AAHF01000014.1
+        CDS and separately retrieved GenPept sequences agree exactly; coded_by coordinates,
+        strand, start/stop, strain and taxon330879 checked. Protein-existence grades
+        are not upgraded. The supplement names Af293 as cloning source; tags and assay
+        hosts differ from the native context.'
+  - subject: psof
+    predicate: is_encoded_in_successful_reconstitution
+    object: yeast_reconstitution
+    evidence:
+    - reference: DOI:10.1021/ol503179v
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure2a and supplement sections2/5: tested coexpression membership,
+        not isolated-enzyme sufficiency or a physical complex.'
+    - reference: https://www.uniprot.org/uniprotkb/Q4WAZ0/entry
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: 'Selected Af293 native reference, not a deposited experimental construct:
+        AFUA_8G00440, EAL85122.1, 905 aa. Release2026_03 UniProt, spliced AAHF01000014.1
+        CDS and separately retrieved GenPept sequences agree exactly; coded_by coordinates,
+        strand, start/stop, strain and taxon330879 checked. Protein-existence grades
+        are not upgraded. The supplement names Af293 as cloning source; tags and assay
+        hosts differ from the native context.'
+  - subject: psog
+    predicate: is_encoded_in_successful_reconstitution
+    object: yeast_reconstitution
+    evidence:
+    - reference: DOI:10.1021/ol503179v
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure2a and supplement sections2/5: tested coexpression membership,
+        not isolated-enzyme sufficiency or a physical complex.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/CM000176.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: TableS1 PsoG seg1f 3-prime sequence matches chromosome99604..99621 and
+        reverse-strand WGS694118..694135, between annotated AFUA_8G00440/00460. Neither
+        inspected nucleotide record annotates a CDS at that start. No deposited protein
+        or exact assayed sequence was established. AFUA_8G00430/Q4WAY9/EAL85123.1
+        is a different157-aa locus and is not adopted. Three bounded current UniProt
+        queries did not resolve PsoG; this is not global absence. Primer matching
+        is not splice-model validation.
+  - subject: yeast_reconstitution
+    predicate: produced_detected_product
+    object: azaspirene
+    evidence:
+    - reference: DOI:10.1021/ol503179v
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure2a: product matched an authentic standard by LC-MS; not proof
+        that every enzyme is individually essential.'
+      snippet: compared to the authentic standard
+  - subject: psoa
+    predicate: catalyzes
+    object: priming
+    evidence:
+    - reference: DOI:10.1021/ol503179v
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure2b and supplement FigureS4: purified PsoA starter assays; no complete
+        azaspirene synthesis in vitro.'
+  - subject: propionyl_coa
+    predicate: is_preferred_starter_in
+    object: priming
+    evidence:
+    - reference: DOI:10.1021/ol503179v
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Competition experiment supports preference, not exclusive substrate use.
+        Four malonyl-derived extensions were isotope-supported.
+  - subject: psog
+    predicate: omission_changed_product_profile_in
+    object: yeast_reconstitution
+    evidence:
+    - reference: DOI:10.1021/ol503179v
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Without PsoG, peaks7/8 appeared. Their structures were not determined;
+        the proposed hydroxylation is not a demonstrated purified-enzyme reaction.
+  description: Partial experimental reconstitution, not a complete ordered pathway.
+    Supplement sections2-5 specify Af293-derived cloning, N-FLAG/C-His6 PsoA, N-His6
+    PsoB/PsoF for bacterial protein purification, and a separate yeast PsoB/PsoG vector.
+    Canonical entries are native reference examples, not verified full insert sequences.
+    PsoG remains ungrounded. No transfer to pseurotin A/D, no direct PsoB catalytic
+    assignment, and no inference of native essentiality. Primary starter preference
+    takes precedence over the acetyl-starter statement in UniProt; that discrepant
+    database statement is not adopted.
+discussions:
+- discussion_id: curator-azaspirene-construct-and-pathway-limits
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: Which deposited experimental sequences resolve PsoG and the complete tagged
+    constructs, and which intermediate-specific reactions are directly established?
+  rationale: Three native UniProt references are sequence-verified; a fourth named
+    experimental protein remains accession-unresolved. This graph does not repair
+    source-owned producer or locus claims.
+  notes: Figure1 was inspected separately from the owner SMILES/InChI/key reconstruction.
+    The stored azaspirene representation is internally consistent and stereochemically
+    specified, but database agreement is not a new absolute-configuration experiment.
+    MIBiG BGC0001037 also lists pseurotin; that owner has a PubChem stereochemical-resolution/xref
+    issue and is not changed here. The inspected full article and supplement are DOI10.1021/ol503179v/PMID25494235/PMC4275151.
+    The separate supercluster paper DOI10.1073/pnas.1313258110/PMID24082142/PMC3801025
+    returned HTTP500; no retry or alternate retrieval was attempted. No claims from
+    its uninspected full methods are added. No source-owned fields, production grades,
+    assays, classifications or SEEDED status are changed.
+  evidence:
+  - reference: DOI:10.1021/ol503179v
+    evidence_source: Primary article and supporting information, retrieved 2026-10-12
+    notes: Figure1/2, supplement methods and primer table inspected. Native identity
+      verification and experimental construct identity remain distinct.
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -93,3 +275,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-12T00:56:41Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: 'Add an eight-edge azaspirene BIOSYNTHESIS graph from inspected primary
+    article/supplement: three sequence-verified Af293 UniProt references and accession-unresolved
+    PsoG. Distinguish tagged yeast/in-vitro constructs, starter preference, unresolved
+    products and native identity; retain source-owned fields and SEEDED status.'
+  llm_assisted: true
