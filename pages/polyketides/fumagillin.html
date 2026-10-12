@@ -321,6 +321,205 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">9 nodes, 9 edges</span></h2>
+<p class="sub">C6H-only 6-to-7 and paired C6H/MT 6-to-2 assays. Two reference sequences are separate from accession-unresolved experimental constructs. C6H primers match reference aa39-309; MT has an explicitly partial 5-prime transcript boundary. Full inserts and fungal source strains remain unverified. Figure 4C/Results/assay recipe take precedence over conflicting Chemical Analysis numbering. No isolated MT sufficiency, sole-product yield, essentiality or complete native pathway is asserted.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Fma-C6H (Af293 reference, 309 aa)</td>
+  <td>is_reference_example_for</td>
+  <td>Fma-C6H (pKW20172 experimental construct)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WAZ3/entry<br>https://www.ncbi.nlm.nih.gov/protein/EAL85119.2<br>DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WAZ3/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected reference, not an identical experimental allele. AFUA_8G00480 native Af293 CDS, GenPept and UniProt agree exactly at 309 aa. Supplement Table S2 primer-compatible reference interval is aa39-309 (271 aa; coding nt115-927), not the entire native protein. This boundary match is not proof of the full insert, intervening sequence, source strain or tag residues.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAL85119.2</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned reference sequence independently compared with nucleotide CDS translation and UniProt2026_03. Complete reverse-strand native CDS on AAHF01000014.1:689045..689974.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Supplement Table S2 primer alignment only; full insert equivalence remains unresolved. AFUA_8G00480 native Af293 CDS, GenPept and UniProt agree exactly at 309 aa. Supplement Table S2 primer-compatible reference interval is aa39-309 (271 aa; coding nt115-927), not the entire native protein. This boundary match is not proof of the full insert, intervening sequence, source strain or tag residues.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Fma-MT (Af293 submitted reference, partial 5-prime CDS)</td>
+  <td>is_reference_example_for</td>
+  <td>Fma-MT (pKW20174 experimental construct)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A067Z9B6/entry<br>https://www.ncbi.nlm.nih.gov/protein/AHL19974.1<br>DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A067Z9B6/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected reference, not an identical experimental allele. The 400-aa submitted reference matches KJ187001.1 and GenPept exactly. Both source records name Af293 at species taxon746128, while UniProt uses strain taxon330879. KJ187001.1:&lt;1..1203 is explicitly partial at the 5-prime boundary. Table S2 primers bracket the 400-aa submitted segment but do not establish the complete native N terminus, full experimental insert or fungal source strain.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AHL19974.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned reference sequence independently compared with nucleotide CDS translation and UniProt2026_03. Partial KJ187001.1:&lt;1..1203 boundary is retained, not repaired.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Supplement Table S2 primer alignment only; full insert equivalence remains unresolved. The 400-aa submitted reference matches KJ187001.1 and GenPept exactly. Both source records name Af293 at species taxon746128, while UniProt uses strain taxon330879. KJ187001.1:&lt;1..1203 is explicitly partial at the 5-prime boundary. Table S2 primers bracket the 400-aa submitted segment but do not establish the complete native N terminus, full experimental insert or fungal source strain.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Fma-C6H (pKW20172 experimental construct)</td>
+  <td>catalyzes</td>
+  <td>Purified C6H assay with compound 6</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 4C and Results: pKW20172 C-terminal His6 enzyme expressed in E. coli BL21(DE3) and purified by nickel affinity. Boiled-enzyme control retains substrate 6.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>6-demethoxyfumagillol (paper compound 6)</td>
+  <td>is_substrate_in</td>
+  <td>Purified C6H assay with compound 6</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Dedicated C6H/MT assay methods: 10 uM C6H, 20 uM compound 6, 1 mM sodium ascorbate, 1 mM alpha-ketoglutarate, 100 mM NaCl, 100 mM Tris-HCl pH7.4, 1 h. Temperature and an iron-addition dose are not specified here; no cofactor independence inferred.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Purified C6H assay with compound 6</td>
+  <td>produces_detected_product</td>
+  <td>6-hydroxylfumagillol (paper compound 7)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 4C and Results agree on this pair. Chemical Analysis instead labels C6H conversion 7 to 8 and paired conversion 7 to 2; these inconsistent numbers are not adopted. No sole-product yield, kinetic constant or obligatory native order is asserted.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Fma-C6H (pKW20172 experimental construct)</td>
+  <td>is_added_purified_enzyme_in</td>
+  <td>Purified C6H plus MT co-incubation with compound 6</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 4C: co-incubation includes the same recombinant C6H plus MT; this is distinct from the C6H-only assay.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Fma-MT (pKW20174 experimental construct)</td>
+  <td>is_added_purified_enzyme_in</td>
+  <td>Purified C6H plus MT co-incubation with compound 6</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 4C and methods: 10 uM pKW20174 C-terminal His6 MT from E. coli BL21(DE3), nickel-affinity purified, added with 1 mM SAM. A combined assay, not an independently demonstrated isolated MT conversion of 7 to 2.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>6-demethoxyfumagillol (paper compound 6)</td>
+  <td>is_substrate_in</td>
+  <td>Purified C6H plus MT co-incubation with compound 6</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Dedicated C6H/MT assay methods: 10 uM C6H, 20 uM compound 6, 1 mM sodium ascorbate, 1 mM alpha-ketoglutarate, 100 mM NaCl, 100 mM Tris-HCl pH7.4, 1 h. Temperature and an iron-addition dose are not specified here; no cofactor independence inferred. The paired assay additionally contains 10 uM MT and 1 mM SAM.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Purified C6H plus MT co-incubation with compound 6</td>
+  <td>produces_detected_product</td>
+  <td>fumagillol (paper compound 2)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja500881e</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja500881e</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 4C and Results agree on this pair. Chemical Analysis instead labels C6H conversion 7 to 8 and paired conversion 7 to 2; these inconsistent numbers are not adopted. No sole-product yield, kinetic constant or obligatory native order is asserted. Residual compound 7 is visible in the paired-assay trace.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">13 nodes, 11 edges</span></h2>
+<p class="sub">Database-annotated precursor assembly by Fma-PKS, Fma-TC and Fma-AT. All catalytic edges cite inspected UniProt annotations, not newly inspected experiments from the inaccessible 2013 discovery article. Corrected PKS/TC mRNA references replace erroneous genomic models. PKS-bound donor labels follow FUNCTION dodecapentaenoyl wording while retaining the CATALYTIC ACTIVITY dodecapentaneoyl spelling discrepancy. Chemical and reaction IDs are not assigned. This partial graph does not connect uninspected intermediate steps or establish a complete native pathway.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>Fma-PKS (Af293 reference)</td>
+  <td>is_annotated_to_catalyze</td>
+  <td>Annotated PKS chain assembly</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WAY3/entry<br>https://www.ncbi.nlm.nih.gov/protein/AGI05041.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WAY3/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. Sequence identity: AGI05041.1, KC407775.1 CDS and UniProt agree exactly (2435 aa). Reference identity, not an assayed construct. Corrected mRNA KC407775.1 is used; old genomic EAL85129.1 (2462 aa) is an erroneous model, not the 2435-aa reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI05041.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned reference identity; coded_by KC407775.1:1..7308. No experimental insert identity claim.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Fma-TC (Af293 reference)</td>
+  <td>is_annotated_to_catalyze</td>
+  <td>Annotated terpene cyclization</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/M4VQY9/entry<br>https://www.ncbi.nlm.nih.gov/protein/AGI05042.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/M4VQY9/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. Sequence identity: AGI05042.1, KC407776.1 CDS and UniProt agree exactly (289 aa). Reference identity, not an assayed construct. Corrected mRNA KC407776.1 is used; old genomic EAL85115.1 (173 aa) is an erroneous model, not the 289-aa reference.</dd><dt>snippet</dt><dd>converts farnesyl pyrophosphate (FPP) to beta-trans-bergamotene</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI05042.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned reference identity; coded_by KC407776.1:1..870. No experimental insert identity claim.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Fma-AT (Af293 reference)</td>
+  <td>is_annotated_to_catalyze</td>
+  <td>Annotated polyketide transfer</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WAY4/entry<br>https://www.ncbi.nlm.nih.gov/protein/EAL85128.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WAY4/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. Sequence identity: EAL85128.1, AAHF01000014.1 CDS and UniProt agree exactly (292 aa). Reference identity, not an assayed construct. Native AFUA_8G00380 CDS and EAL85128.1 are 292 aa; genomic strand, coordinates and translation agree.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAL85128.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned reference identity; coded_by complement(join(AAHF01000014.1:705444..706217, AAHF01000014.1:706265..706369)). No experimental insert identity claim.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Acetyl-CoA starter</td>
+  <td>is_annotated_starter_in</td>
+  <td>Annotated PKS chain assembly</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WAY3/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WAY3/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. FUNCTION assigns one acetyl-CoA starter and five malonyl-CoA extender units; no balanced reaction or coproduct accounting is added.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Malonyl-CoA extender</td>
+  <td>is_annotated_extender_in</td>
+  <td>Annotated PKS chain assembly</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WAY3/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WAY3/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. FUNCTION assigns five malonyl-CoA extender units per chain.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Annotated PKS chain assembly</td>
+  <td>is_annotated_to_form</td>
+  <td>PKS-bound dodecapentaenoyl moiety</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WAY3/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WAY3/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. FUNCTION names the dodecapentaenoyl moiety; CATALYTIC ACTIVITY represents a PKS-bound donor but spells it dodecapentaneoyl. The discrepancy is retained; no free-acid product, chemical CURIE or reaction identifier is inferred.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Farnesyl pyrophosphate (FPP)</td>
+  <td>is_annotated_substrate_in</td>
+  <td>Annotated terpene cyclization</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/M4VQY9/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/M4VQY9/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. FUNCTION assigns FPP cyclization by af520; this is a database-backed precursor transformation, not a newly inspected primary assay.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Annotated terpene cyclization</td>
+  <td>is_annotated_to_form</td>
+  <td>beta-trans-bergamotene</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/M4VQY9/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/M4VQY9/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. FUNCTION names beta-trans-bergamotene. Chemical stereochemical identifiers are not independently grounded here.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>PKS-bound dodecapentaenoyl moiety</td>
+  <td>is_annotated_acyl_donor_in</td>
+  <td>Annotated polyketide transfer</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WAY4/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WAY4/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. FUNCTION assigns transfer of the af370-derived dodecapentaenoyl group. CATALYTIC ACTIVITY identifies a PKS-bound donor but spells it dodecapentaneoyl; spelling conflict retained without chemical/Rhea grounding.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Fumagillol</td>
+  <td>is_annotated_acceptor_in</td>
+  <td>Annotated polyketide transfer</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WAY4/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WAY4/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. CATALYTIC ACTIVITY names fumagillol as acceptor; FUNCTION describes a 5R-hydroxy-seco-sesquiterpene. No complete pathway order is inferred.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Annotated polyketide transfer</td>
+  <td>is_annotated_to_form</td>
+  <td>Prefumagillin</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WAY4/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WAY4/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>UniProt release 2026_03. FUNCTION and CATALYTIC ACTIVITY assign prefumagillin formation. No transfer yield, native essentiality, domain-level PKS mechanism or reconstituted pathway claim.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
@@ -328,9 +527,10 @@ by the corpus tests.</p>
 <ul><li>AntibioticMech — <a class="mono" href="https://culturebotai.github.io/AntibioticMech/pages/antibacterial/fumagillin.html">CHEBI:48635</a>    (same structure, same inchikey)</li>
 </ul>
 
-<h2>Open questions <span class="tag">2</span></h2>
+<h2>Open questions <span class="tag">3</span></h2>
 <div class="note"><p><strong>curator-fumagillin-abm-assay-identity</strong> — Which deposited insert sequence and yeast-host assignment resolve the Fma-ABM microsomal assay?</p></div>
 <div class="note"><p><strong>curator-fumagillin-p450-kr-assay-scope</strong> — Which deposited construct sequences resolve these reference mappings, and should the transposed Fma-KR methods product numbers be corrected?</p></div>
+<div class="note"><p><strong>curator-fumagillin-c6h-mt-reference-scope</strong> — Which deposited inserts and fungal strains resolve C6H/MT assay identity, and can the source numbering and donor-name discrepancies be reconciled?</p></div>
 
 <h2>Provenance</h2>
 <div class="scroll"><table>
