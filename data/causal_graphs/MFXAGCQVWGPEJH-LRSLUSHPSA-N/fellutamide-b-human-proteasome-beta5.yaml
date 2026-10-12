@@ -1,0 +1,109 @@
+record_id: naturalproductmech:mibig-a7c02b2a6d
+standard_inchi_key: MFXAGCQVWGPEJH-LRSLUSHPSA-N
+graph:
+  graph_id: fellutamide-b-human-proteasome-beta5
+  scope: BIOACTIVITY
+  description: Partial human beta5 inhibition view. The human beta5 assay is supported
+    only by the cached 2010 author abstract. P28074 is the deliberately selected PSMB5
+    canonical isoform1 reference, not an independently sequenced assay preparation.
+    Isoforms2/3, immunoproteasome beta5i, donor, tissue and exact construct are not
+    resolved or substituted. The abstract-level activity claim is separate from native-reference
+    identity and database-described complex membership. No transfer of the yeast structural
+    adduct, quantitative Ki, exact preparation or downstream NGF phenotype to this
+    graph.
+  nodes:
+  - node_id: fellutamide_b
+    label: fellutamide B (free compound)
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: naturalproductmech:mibig-a7c02b2a6d
+  - node_id: human_core
+    label: Human20S proteasome core
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: psmb5_reference
+    label: PSMB5 precursor (human canonical reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P28074
+  - node_id: beta5_activity
+    label: Human proteasome beta5 active-site activity
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: fellutamide_b
+    predicate: inhibits
+    object: beta5_activity
+    evidence:
+    - reference: DOI:10.1016/j.abb.2010.06.009
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Only the previously inspected author abstract at https://europepmc.org/article/MED/20558127
+        is used. It explicitly reports time-dependent inhibition of the human proteasome
+        beta5 active site. Full Methods, exact preparation, dose/substrate conditions
+        and kinetic construct remain uninspected. No quantitative affinity, all-beta-subunit
+        inhibition, NGF induction, microbial killing or irreversible inhibition claim
+        is adopted. The human beta5 assay is supported only by the cached 2010 author
+        abstract. P28074 is the deliberately selected PSMB5 canonical isoform1 reference,
+        not an independently sequenced assay preparation. Isoforms2/3, immunoproteasome
+        beta5i, donor, tissue and exact construct are not resolved or substituted.
+      snippet: it inhibits the human proteasome beta5 active site following a two-step
+        mechanism
+  - subject: psmb5_reference
+    predicate: is_reference_for_subunit_responsible_for
+    object: beta5_activity
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P28074/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed PSMB5 reference, taxon9606; entry256, sequence3, annotation2026-09-02.
+        FUNCTION assigns chymotrypsin-like activity within the20S core; propeptide1-59,
+        mature chain60-263 and nucleophileThr60. This is canonical isoform1, not an
+        isolated-precursor activity assay. Historical sequence cautions concern AAP35423.1,
+        BAA06097.1, CAD97956.1; these sequences are not used instead of the matching
+        canonical RefSeq.
+      snippet: Within the 20S core complex, PSMB5 displays a chymotrypsin-like activity
+    - reference: https://www.ncbi.nlm.nih.gov/protein/NP_002788.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: PSMB5, 263aa, taxon9606; complete CDS of RefSeq transcript
+        NM_002797.5 at [19:811](+), including start/stop, translates to NP_002788.1
+        and UniProt P28074 under table1. This verifies reference annotations, not
+        the experimental donor, physiological initiation choice or assay allele.'
+    notes: The human beta5 assay is supported only by the cached 2010 author abstract.
+      P28074 is the deliberately selected PSMB5 canonical isoform1 reference, not
+      an independently sequenced assay preparation. Isoforms2/3, immunoproteasome
+      beta5i, donor, tissue and exact construct are not resolved or substituted.
+  - subject: beta5_activity
+    predicate: is_catalytic_activity_of
+    object: human_core
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P28074/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed PSMB5 reference, taxon9606; entry256, sequence3, annotation2026-09-02.
+        FUNCTION places the beta5 catalytic activity within the20S core, not in a
+        free precursor. Historical sequence cautions concern AAP35423.1, BAA06097.1,
+        CAD97956.1; these sequences are not used instead of the matching canonical
+        RefSeq.
+  - subject: psmb5_reference
+    predicate: is_reference_for_component_of
+    object: human_core
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P28074/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed PSMB5 reference, taxon9606; entry256, sequence3, annotation2026-09-02.
+        SUBUNIT and FUNCTION identify PSMB5 as a core proteasome component. Membership
+        alone is not a compound-binding assay. Historical sequence cautions concern
+        AAP35423.1, BAA06097.1, CAD97956.1; these sequences are not used instead of
+        the matching canonical RefSeq.
+curation_history:
+- timestamp: '2026-10-12T12:32:56Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add new exact-owner eukaryotic proteasome graph for naturalproductmech:mibig-a7c02b2a6d
+    on baseline e90e210e42af4d57dc9630cfc34d6d4d7ac11244. Previous inline graphs and
+    parent history are preserved; this component contains new evidence, not a biological
+    rewrite of old graphs.
+  llm_assisted: true

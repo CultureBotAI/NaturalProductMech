@@ -270,8 +270,278 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; bioactivity <span class="tag">19 nodes, 21 edges</span></h2>
+<p class="sub">Partial structural association and target-complex composition view, not a temporal assembly pathway. All14 core-subunit types are represented as reference proteins; only beta1/PRE3, beta2/PUP1 and beta5/PRE2 have deposited drug-contact edges. S288c accessions are deliberately selected reference examples, not proof that the baker&#39;s-yeast preparation was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted; they are not adopted as live identifiers. Matching deposited polymer spans do not prove physical truncation of the purified proteins or complete assay-construct identity. In particular, the deposited PUP1 span ends at251 while the annotated mature chain ends at261; absence from the polymer sequence does not establish engineered deletion. PRE4 initiation remains uncertain. The primary2008 full text was not obtained; independent deposition and reference datasets support these claims. No quantitative inhibition, NGF mechanism, all-subunit binding or complete donor-strain reconstruction is asserted.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>fellutamide B (free compound)</td>
+  <td>is_deposited_in_complex_with</td>
+  <td>S. cerevisiae 20S proteasome core</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.rcsb.org/structure/3D29<br>https://files.rcsb.org/download/3D29.cif</summary><ul><li><dl><dt>reference</dt><dd>https://www.rcsb.org/structure/3D29</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Independent2.60-angstrom structural deposit3D29 contains two copies of each of14 yeast core-subunit types and six ligand copies. This is structural association, not an adopted quantitative yeast inhibition assay.</dd><dt>snippet</dt><dd>Proteasome Inhibition by Fellutamide B</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://files.rcsb.org/download/3D29.cif</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Curator mapping with RDKit2026.03.5: all six NQL/HXD ligands have39 modeled heavy atoms and retain S/S/S peptide centers plus R lipid3-OH. Reversing the covalent hemiacetal to the free aldehyde reconstructs owner InChIKey MFXAGCQVWGPEJH-LRSLUSHPSA-N. This is coordinate-based mapping, not independent experimental structure elucidation or density-validation sign-off. The new bound hemiacetal center is not assigned to the free owner.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>PRE8 (S288c reference)</td>
+  <td>is_reference_for_component_of</td>
+  <td>S. cerevisiae 20S proteasome core</td>
+  <td>Complex membership only; no direct fellutamide-binding edge is asserted for this subunit.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P23639/entry<br>https://www.ncbi.nlm.nih.gov/protein/NP_013618.1<br>https://www.rcsb.org/structure/3D29</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P23639/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Reviewed PRE8 reference, taxon559292; entry244, sequence1, annotation2026-09-02. Native sequence and core-subunit identity for an explicitly selected reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/NP_013618.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Identity only: PRE8, 250aa, taxon559292; complete CDS of RefSeq transcript NM_001182451.1 at [0:753](+), including start/stop, translates to NP_013618.1 and UniProt P23639 under table1. This verifies reference annotations, not the experimental donor, physiological initiation choice or assay allele.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.rcsb.org/structure/3D29</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Entity1, author chainsA/O, deposited polymer250aa exactly matches P23639 residues1-250. The mmCIF references A0A6L1BIF8. S288c accessions are deliberately selected reference examples, not proof that the baker&#39;s-yeast preparation was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted; they are not adopted as live identifiers. Matching deposited polymer spans do not prove physical truncation of the purified proteins or complete assay-construct identity.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>PRE9 (S288c reference)</td>
+  <td>is_reference_for_component_of</td>
+  <td>S. cerevisiae 20S proteasome core</td>
+  <td>Complex membership only; no direct fellutamide-binding edge is asserted for this subunit.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P23638/entry<br>https://www.ncbi.nlm.nih.gov/protein/NP_011651.3<br>https://www.rcsb.org/structure/3D29</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P23638/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Reviewed PRE9 reference, taxon559292; entry239, sequence1, annotation2026-09-02. Native sequence and core-subunit identity for an explicitly selected reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/NP_011651.3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Identity only: PRE9, 258aa, taxon559292; complete CDS of RefSeq transcript NM_001181264.3 at [0:777](+), including start/stop, translates to NP_011651.3 and UniProt P23638 under table1. This verifies reference annotations, not the experimental donor, physiological initiation choice or assay allele.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.rcsb.org/structure/3D29</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Entity2, author chainsB/P, deposited polymer244aa exactly matches P23638 residues2-245. The mmCIF references A0A6A5PXC6. S288c accessions are deliberately selected reference examples, not proof that the baker&#39;s-yeast preparation was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted; they are not adopted as live identifiers. Matching deposited polymer spans do not prove physical truncation of the purified proteins or complete assay-construct identity.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>PRE6 (S288c reference)</td>
+  <td>is_reference_for_component_of</td>
+  <td>S. cerevisiae 20S proteasome core</td>
+  <td>Complex membership only; no direct fellutamide-binding edge is asserted for this subunit.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P40303/entry<br>https://www.ncbi.nlm.nih.gov/protein/NP_014604.1<br>https://www.rcsb.org/structure/3D29</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P40303/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Reviewed PRE6 reference, taxon559292; entry238, sequence1, annotation2026-09-02. Native sequence and core-subunit identity for an explicitly selected reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/NP_014604.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Identity only: PRE6, 254aa, taxon559292; complete CDS of RefSeq transcript NM_001183292.1 at [0:765](+), including start/stop, translates to NP_014604.1 and UniProt P40303 under table1. This verifies reference annotations, not the experimental donor, physiological initiation choice or assay allele.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.rcsb.org/structure/3D29</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Entity3, author chainsC/Q, deposited polymer241aa exactly matches P40303 residues3-243. The mmCIF references A0A6A5Q273. S288c accessions are deliberately selected reference examples, not proof that the baker&#39;s-yeast preparation was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted; they are not adopted as live identifiers. Matching deposited polymer spans do not prove physical truncation of the purified proteins or complete assay-construct identity.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>PUP2 (S288c reference)</td>
+  <td>is_reference_for_component_of</td>
+  <td>S. cerevisiae 20S proteasome core</td>
+  <td>Complex membership only; no direct fellutamide-binding edge is asserted for this subunit.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P32379/entry<br>https://www.ncbi.nlm.nih.gov/protein/NP_011769.1<br>https://www.rcsb.org/structure/3D29</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P32379/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Reviewed PUP2 reference, taxon559292; entry242, sequence2, annotation2026-09-02. Native sequence and core-subunit identity for an explicitly selected reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/NP_011769.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Identity only: PUP2, 260aa, taxon559292; complete CDS of RefSeq transcript NM_001181382.1 at [0:783](+), including start/stop, translates to NP_011769.1 and UniProt P32379 under table1. This verifies reference annotations, not the experimental donor, physiological initiation choice or assay allele.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.rcsb.org/structure/3D29</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Entity4, author chainsD/R, deposited polymer242aa exactly matches P32379 residues9-250. The mmCIF references A0A6A5PXN2. S288c accessions are deliberately selected reference examples, not proof that the baker&#39;s-yeast preparation was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted; they are not adopted as live identifiers. Matching deposited polymer spans do not prove physical truncation of the purified proteins or complete assay-construct identity.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>PRE5 (S288c reference)</td>
+  <td>is_reference_for_component_of</td>
+  <td>S. cerevisiae 20S proteasome core</td>
+  <td>Complex membership only; no direct fellutamide-binding edge is asserted for this subunit.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P40302/entry<br>https://www.ncbi.nlm.nih.gov/protein/NP_014045.1<br>https://www.rcsb.org/structure/3D29</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P40302/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Reviewed PRE5 reference, taxon559292; entry240, sequence1, annotation2026-09-02. Native sequence and core-subunit identity for an explicitly selected reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/NP_014045.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Identity only: PRE5, 234aa, taxon559292; complete CDS of RefSeq transcript NM_001182825.1 at [0:705](+), including start/stop, translates to NP_014045.1 and UniProt P40302 under table1. This verifies reference annotations, not the experimental donor, physiological initiation choice or assay allele.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.rcsb.org/structure/3D29</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Entity5, author chainsE/S, deposited polymer233aa exactly matches P40302 residues2-234. The mmCIF references A0A6A5PTH4. S288c accessions are deliberately selected reference examples, not proof that the baker&#39;s-yeast preparation was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted; they are not adopted as live identifiers. Matching deposited polymer spans do not prove physical truncation of the purified proteins or complete assay-construct identity.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>PRE10 (S288c reference)</td>
+  <td>is_reference_for_component_of</td>
+  <td>S. cerevisiae 20S proteasome core</td>
+  <td>Complex membership only; no direct fellutamide-binding edge is asserted for this subunit.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P21242/entry<br>https://www.ncbi.nlm.nih.gov/protein/NP_015007.1<br>https://www.rcsb.org/structure/3D29</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P21242/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Reviewed PRE10 reference, taxon559292; entry251, sequence2, annotation2026-09-02. Native sequence and core-subunit identity for an explicitly selected reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/NP_015007.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Identity only: PRE10, 288aa, taxon559292; complete CDS of RefSeq transcript NM_001183782.1 at [0:867](+), including start/stop, translates to NP_015007.1 and UniProt P21242 under table1. This verifies reference annotations, not the experimental donor, physiological initiation choice or assay allele.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.rcsb.org/structure/3D29</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Entity6, author chainsF/T, deposited polymer244aa exactly matches P21242 residues5-248. The mmCIF references A0A6A5Q4M4. S288c accessions are deliberately selected reference examples, not proof that the baker&#39;s-yeast preparation was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted; they are not adopted as live identifiers. Matching deposited polymer spans do not prove physical truncation of the purified proteins or complete assay-construct identity.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>SCL1 (S288c reference)</td>
+  <td>is_reference_for_component_of</td>
+  <td>S. cerevisiae 20S proteasome core</td>
+  <td>Complex membership only; no direct fellutamide-binding edge is asserted for this subunit.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P21243/entry<br>https://www.ncbi.nlm.nih.gov/protein/NP_011504.3<br>https://www.rcsb.org/structure/3D29</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P21243/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Reviewed SCL1 reference, taxon559292; entry254, sequence1, annotation2026-09-02. Native sequence and core-subunit identity for an explicitly selected reference. Historical sequence cautions concern AAA35020.1; these sequences are not used instead of the matching canonical RefSeq.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/NP_011504.3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Identity only: SCL1, 252aa, taxon559292; complete CDS of RefSeq transcript NM_001180876.3 at [0:759](+), including start/stop, translates to NP_011504.3 and UniProt P21243 under table1. This verifies reference annotations, not the experimental donor, physiological initiation choice or assay allele.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.rcsb.org/structure/3D29</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Entity7, author chainsG/U, deposited polymer243aa exactly matches P21243 residues10-252. The mmCIF references A0A6A5PYC9. S288c accessions are deliberately selected reference examples, not proof that the baker&#39;s-yeast preparation was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted; they are not adopted as live identifiers. Matching deposited polymer spans do not prove physical truncation of the purified proteins or complete assay-construct identity.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>PUP1 (S288c reference)</td>
+  <td>is_sequence_reference_for</td>
+  <td>3D29 beta2 (PUP1) deposited polymer</td>
+  <td>The native precursor is not the processed structural polymer. The modeled N-terminal Thr1 maps to canonical Thr30; native sequence and modeled span are kept distinct.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P25043/entry<br>https://www.ncbi.nlm.nih.gov/protein/NP_014800.3<br>https://www.rcsb.org/structure/3D29</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P25043/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Reviewed PUP1 reference, taxon559292; entry234, sequence1, annotation2026-09-02. Native sequence and core-subunit identity for an explicitly selected reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/NP_014800.3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Identity only: PUP1, 261aa, taxon559292; complete CDS of RefSeq transcript NM_001183576.3 at [0:786](+), including start/stop, translates to NP_014800.3 and UniProt P25043 under table1. This verifies reference annotations, not the experimental donor, physiological initiation choice or assay allele.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.rcsb.org/structure/3D29</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Entity8, author chainsH/V, deposited polymer222aa exactly matches P25043 residues30-251. The mmCIF references A0A6A5Q449. S288c accessions are deliberately selected reference examples, not proof that the baker&#39;s-yeast preparation was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted; they are not adopted as live identifiers. Matching deposited polymer spans do not prove physical truncation of the purified proteins or complete assay-construct identity.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>3D29 beta2 (PUP1) deposited polymer</td>
+  <td>is_catalytic_inner_ring_component_of</td>
+  <td>S. cerevisiae 20S proteasome core</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.rcsb.org/structure/3D29</summary><ul><li><dl><dt>reference</dt><dd>https://www.rcsb.org/structure/3D29</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Author chainsH/V are the two beta2 copies in the yeast core. Each modeled N-terminal Thr OG1 is covalently linked to the terminal ligand LEU C atom.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>fellutamide B (free compound)</td>
+  <td>is_modeled_as_covalent_adduct_with</td>
+  <td>3D29 beta2 (PUP1) deposited polymer</td>
+  <td>The bound hemiacetal is chemically distinct from the free aldehyde and has an additional stereocenter. This edge reports the deposited covalent model only.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.rcsb.org/structure/3D29<br>https://files.rcsb.org/download/3D29.cif</summary><ul><li><dl><dt>reference</dt><dd>https://www.rcsb.org/structure/3D29</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Two explicit covalent contacts for author chainsH/V: mature Thr1 OG1 to ligand residue3 LEU C. No isolated-subunit assay, quantitative affinity or irreversible inhibition is implied.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://files.rcsb.org/download/3D29.cif</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Curator mapping with RDKit2026.03.5: all six NQL/HXD ligands have39 modeled heavy atoms and retain S/S/S peptide centers plus R lipid3-OH. Reversing the covalent hemiacetal to the free aldehyde reconstructs owner InChIKey MFXAGCQVWGPEJH-LRSLUSHPSA-N. This is coordinate-based mapping, not independent experimental structure elucidation or density-validation sign-off. The new bound hemiacetal center is not assigned to the free owner.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>PUP3 (S288c reference)</td>
+  <td>is_reference_for_component_of</td>
+  <td>S. cerevisiae 20S proteasome core</td>
+  <td>Complex membership only; no direct fellutamide-binding edge is asserted for this subunit.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P25451/entry<br>https://www.ncbi.nlm.nih.gov/protein/NP_011020.3<br>https://www.rcsb.org/structure/3D29</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P25451/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Reviewed PUP3 reference, taxon559292; entry233, sequence1, annotation2026-09-02. Native sequence and core-subunit identity for an explicitly selected reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/NP_011020.3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Identity only: PUP3, 205aa, taxon559292; complete CDS of RefSeq transcript NM_001178985.3 at [0:618](+), including start/stop, translates to NP_011020.3 and UniProt P25451 under table1. This verifies reference annotations, not the experimental donor, physiological initiation choice or assay allele.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.rcsb.org/structure/3D29</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Entity9, author chainsI/W, deposited polymer204aa exactly matches P25451 residues2-205. The mmCIF references A0A6L0YA22. S288c accessions are deliberately selected reference examples, not proof that the baker&#39;s-yeast preparation was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted; they are not adopted as live identifiers. Matching deposited polymer spans do not prove physical truncation of the purified proteins or complete assay-construct identity.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>PRE1 (S288c reference)</td>
+  <td>is_reference_for_component_of</td>
+  <td>S. cerevisiae 20S proteasome core</td>
+  <td>Complex membership only; no direct fellutamide-binding edge is asserted for this subunit.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P22141/entry<br>https://www.ncbi.nlm.nih.gov/protein/NP_010928.1<br>https://www.rcsb.org/structure/3D29</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P22141/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Reviewed PRE1 reference, taxon559292; entry244, sequence2, annotation2026-09-02. Native sequence and core-subunit identity for an explicitly selected reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/NP_010928.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Identity only: PRE1, 198aa, taxon559292; complete CDS of RefSeq transcript NM_001178903.1 at [0:597](+), including start/stop, translates to NP_010928.1 and UniProt P22141 under table1. This verifies reference annotations, not the experimental donor, physiological initiation choice or assay allele.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.rcsb.org/structure/3D29</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Entity10, author chainsJ/X, deposited polymer198aa exactly matches P22141 residues1-198. The mmCIF references A0A6A5Q0W2. S288c accessions are deliberately selected reference examples, not proof that the baker&#39;s-yeast preparation was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted; they are not adopted as live identifiers. Matching deposited polymer spans do not prove physical truncation of the purified proteins or complete assay-construct identity.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>PRE2 (S288c reference)</td>
+  <td>is_sequence_reference_for</td>
+  <td>3D29 beta5 (PRE2) deposited polymer</td>
+  <td>The native precursor is not the processed structural polymer. The modeled N-terminal Thr1 maps to canonical Thr76; native sequence and modeled span are kept distinct.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P30656/entry<br>https://www.ncbi.nlm.nih.gov/protein/NP_015428.1<br>https://www.rcsb.org/structure/3D29</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P30656/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Reviewed PRE2 reference, taxon559292; entry235, sequence3, annotation2026-09-02. Native sequence and core-subunit identity for an explicitly selected reference. Historical sequence cautions concern CAA82203.1; these sequences are not used instead of the matching canonical RefSeq.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/NP_015428.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Identity only: PRE2, 287aa, taxon559292; complete CDS of RefSeq transcript NM_001184200.1 at [0:864](+), including start/stop, translates to NP_015428.1 and UniProt P30656 under table1. This verifies reference annotations, not the experimental donor, physiological initiation choice or assay allele.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.rcsb.org/structure/3D29</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Entity11, author chainsK/Y, deposited polymer212aa exactly matches P30656 residues76-287. The mmCIF references A0A6A5Q5W3. S288c accessions are deliberately selected reference examples, not proof that the baker&#39;s-yeast preparation was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted; they are not adopted as live identifiers. Matching deposited polymer spans do not prove physical truncation of the purified proteins or complete assay-construct identity.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>3D29 beta5 (PRE2) deposited polymer</td>
+  <td>is_catalytic_inner_ring_component_of</td>
+  <td>S. cerevisiae 20S proteasome core</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.rcsb.org/structure/3D29</summary><ul><li><dl><dt>reference</dt><dd>https://www.rcsb.org/structure/3D29</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Author chainsK/Y are the two beta5 copies in the yeast core. Each modeled N-terminal Thr OG1 is covalently linked to the terminal ligand LEU C atom.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>fellutamide B (free compound)</td>
+  <td>is_modeled_as_covalent_adduct_with</td>
+  <td>3D29 beta5 (PRE2) deposited polymer</td>
+  <td>The bound hemiacetal is chemically distinct from the free aldehyde and has an additional stereocenter. This edge reports the deposited covalent model only.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.rcsb.org/structure/3D29<br>https://files.rcsb.org/download/3D29.cif</summary><ul><li><dl><dt>reference</dt><dd>https://www.rcsb.org/structure/3D29</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Two explicit covalent contacts for author chainsK/Y: mature Thr1 OG1 to ligand residue3 LEU C. No isolated-subunit assay, quantitative affinity or irreversible inhibition is implied.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://files.rcsb.org/download/3D29.cif</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Curator mapping with RDKit2026.03.5: all six NQL/HXD ligands have39 modeled heavy atoms and retain S/S/S peptide centers plus R lipid3-OH. Reversing the covalent hemiacetal to the free aldehyde reconstructs owner InChIKey MFXAGCQVWGPEJH-LRSLUSHPSA-N. This is coordinate-based mapping, not independent experimental structure elucidation or density-validation sign-off. The new bound hemiacetal center is not assigned to the free owner.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>PRE7 (S288c reference)</td>
+  <td>is_reference_for_component_of</td>
+  <td>S. cerevisiae 20S proteasome core</td>
+  <td>Complex membership only; no direct fellutamide-binding edge is asserted for this subunit.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P23724/entry<br>https://www.ncbi.nlm.nih.gov/protein/NP_009512.1<br>https://www.rcsb.org/structure/3D29</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P23724/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Reviewed PRE7 reference, taxon559292; entry244, sequence1, annotation2026-09-02. Native sequence and core-subunit identity for an explicitly selected reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/NP_009512.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Identity only: PRE7, 241aa, taxon559292; complete CDS of RefSeq transcript NM_001178281.1 at [0:726](+), including start/stop, translates to NP_009512.1 and UniProt P23724 under table1. This verifies reference annotations, not the experimental donor, physiological initiation choice or assay allele.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.rcsb.org/structure/3D29</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Entity12, author chainsL/Z, deposited polymer222aa exactly matches P23724 residues20-241. The mmCIF references A0A6A5Q0P3. S288c accessions are deliberately selected reference examples, not proof that the baker&#39;s-yeast preparation was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted; they are not adopted as live identifiers. Matching deposited polymer spans do not prove physical truncation of the purified proteins or complete assay-construct identity.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>PRE4 (S288c reference)</td>
+  <td>is_reference_for_component_of</td>
+  <td>S. cerevisiae 20S proteasome core</td>
+  <td>Complex membership only; no direct fellutamide-binding edge is asserted for this subunit.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P30657/entry<br>https://www.ncbi.nlm.nih.gov/protein/NP_116708.1<br>https://www.rcsb.org/structure/3D29</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P30657/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Reviewed PRE4 reference, taxon559292; entry235, sequence1, annotation2026-09-02. Native sequence and core-subunit identity for an explicitly selected reference. UniProt leaves initiation at Met1 versus Met31 unresolved; the 266-aa reference is not a resolved physiological initiation claim.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/NP_116708.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Identity only: PRE4, 266aa, taxon559292; complete CDS of RefSeq transcript NM_001180015.1 at [0:801](+), including start/stop, translates to NP_116708.1 and UniProt P30657 under table1. This verifies reference annotations, not the experimental donor, physiological initiation choice or assay allele.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.rcsb.org/structure/3D29</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Entity13, author chainsM/1, deposited polymer233aa exactly matches P30657 residues34-266. The mmCIF references A0A8H8ULD3. S288c accessions are deliberately selected reference examples, not proof that the baker&#39;s-yeast preparation was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted; they are not adopted as live identifiers. Matching deposited polymer spans do not prove physical truncation of the purified proteins or complete assay-construct identity.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>PRE3 (S288c reference)</td>
+  <td>is_sequence_reference_for</td>
+  <td>3D29 beta1 (PRE3) deposited polymer</td>
+  <td>The native precursor is not the processed structural polymer. The modeled N-terminal Thr1 maps to canonical Thr20; native sequence and modeled span are kept distinct.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P38624/entry<br>https://www.ncbi.nlm.nih.gov/protein/NP_012533.1<br>https://www.rcsb.org/structure/3D29</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P38624/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Reviewed PRE3 reference, taxon559292; entry231, sequence2, annotation2026-09-02. Native sequence and core-subunit identity for an explicitly selected reference. Historical sequence cautions concern CAA55591.1, CAA60921.1; these sequences are not used instead of the matching canonical RefSeq.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/NP_012533.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Identity only: PRE3, 215aa, taxon559292; complete CDS of RefSeq transcript NM_001181435.1 at [0:648](+), including start/stop, translates to NP_012533.1 and UniProt P38624 under table1. This verifies reference annotations, not the experimental donor, physiological initiation choice or assay allele.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.rcsb.org/structure/3D29</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Entity14, author chainsN/2, deposited polymer196aa exactly matches P38624 residues20-215. The mmCIF references P38624. S288c accessions are deliberately selected reference examples, not proof that the baker&#39;s-yeast preparation was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted; they are not adopted as live identifiers. Matching deposited polymer spans do not prove physical truncation of the purified proteins or complete assay-construct identity.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>3D29 beta1 (PRE3) deposited polymer</td>
+  <td>is_catalytic_inner_ring_component_of</td>
+  <td>S. cerevisiae 20S proteasome core</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.rcsb.org/structure/3D29</summary><ul><li><dl><dt>reference</dt><dd>https://www.rcsb.org/structure/3D29</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Author chainsN/2 are the two beta1 copies in the yeast core. Each modeled N-terminal Thr OG1 is covalently linked to the terminal ligand LEU C atom.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>fellutamide B (free compound)</td>
+  <td>is_modeled_as_covalent_adduct_with</td>
+  <td>3D29 beta1 (PRE3) deposited polymer</td>
+  <td>The bound hemiacetal is chemically distinct from the free aldehyde and has an additional stereocenter. This edge reports the deposited covalent model only.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.rcsb.org/structure/3D29<br>https://files.rcsb.org/download/3D29.cif</summary><ul><li><dl><dt>reference</dt><dd>https://www.rcsb.org/structure/3D29</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Two explicit covalent contacts for author chainsN/2: mature Thr1 OG1 to ligand residue3 LEU C. No isolated-subunit assay, quantitative affinity or irreversible inhibition is implied.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://files.rcsb.org/download/3D29.cif</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Curator mapping with RDKit2026.03.5: all six NQL/HXD ligands have39 modeled heavy atoms and retain S/S/S peptide centers plus R lipid3-OH. Reversing the covalent hemiacetal to the free aldehyde reconstructs owner InChIKey MFXAGCQVWGPEJH-LRSLUSHPSA-N. This is coordinate-based mapping, not independent experimental structure elucidation or density-validation sign-off. The new bound hemiacetal center is not assigned to the free owner.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; bioactivity <span class="tag">4 nodes, 4 edges</span></h2>
+<p class="sub">Partial human beta5 inhibition view. The human beta5 assay is supported only by the cached 2010 author abstract. P28074 is the deliberately selected PSMB5 canonical isoform1 reference, not an independently sequenced assay preparation. Isoforms2/3, immunoproteasome beta5i, donor, tissue and exact construct are not resolved or substituted. The abstract-level activity claim is separate from native-reference identity and database-described complex membership. No transfer of the yeast structural adduct, quantitative Ki, exact preparation or downstream NGF phenotype to this graph.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>fellutamide B (free compound)</td>
+  <td>inhibits</td>
+  <td>Human proteasome beta5 active-site activity</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.abb.2010.06.009</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.abb.2010.06.009</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Only the previously inspected author abstract at https://europepmc.org/article/MED/20558127 is used. It explicitly reports time-dependent inhibition of the human proteasome beta5 active site. Full Methods, exact preparation, dose/substrate conditions and kinetic construct remain uninspected. No quantitative affinity, all-beta-subunit inhibition, NGF induction, microbial killing or irreversible inhibition claim is adopted. The human beta5 assay is supported only by the cached 2010 author abstract. P28074 is the deliberately selected PSMB5 canonical isoform1 reference, not an independently sequenced assay preparation. Isoforms2/3, immunoproteasome beta5i, donor, tissue and exact construct are not resolved or substituted.</dd><dt>snippet</dt><dd>it inhibits the human proteasome beta5 active site following a two-step mechanism</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>PSMB5 precursor (human canonical reference)</td>
+  <td>is_reference_for_subunit_responsible_for</td>
+  <td>Human proteasome beta5 active-site activity</td>
+  <td>The human beta5 assay is supported only by the cached 2010 author abstract. P28074 is the deliberately selected PSMB5 canonical isoform1 reference, not an independently sequenced assay preparation. Isoforms2/3, immunoproteasome beta5i, donor, tissue and exact construct are not resolved or substituted.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P28074/entry<br>https://www.ncbi.nlm.nih.gov/protein/NP_002788.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P28074/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Reviewed PSMB5 reference, taxon9606; entry256, sequence3, annotation2026-09-02. FUNCTION assigns chymotrypsin-like activity within the20S core; propeptide1-59, mature chain60-263 and nucleophileThr60. This is canonical isoform1, not an isolated-precursor activity assay. Historical sequence cautions concern AAP35423.1, BAA06097.1, CAD97956.1; these sequences are not used instead of the matching canonical RefSeq.</dd><dt>snippet</dt><dd>Within the 20S core complex, PSMB5 displays a chymotrypsin-like activity</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/NP_002788.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Identity only: PSMB5, 263aa, taxon9606; complete CDS of RefSeq transcript NM_002797.5 at [19:811](+), including start/stop, translates to NP_002788.1 and UniProt P28074 under table1. This verifies reference annotations, not the experimental donor, physiological initiation choice or assay allele.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Human proteasome beta5 active-site activity</td>
+  <td>is_catalytic_activity_of</td>
+  <td>Human20S proteasome core</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P28074/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P28074/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Reviewed PSMB5 reference, taxon9606; entry256, sequence3, annotation2026-09-02. FUNCTION places the beta5 catalytic activity within the20S core, not in a free precursor. Historical sequence cautions concern AAP35423.1, BAA06097.1, CAD97956.1; these sequences are not used instead of the matching canonical RefSeq.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>PSMB5 precursor (human canonical reference)</td>
+  <td>is_reference_for_component_of</td>
+  <td>Human20S proteasome core</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/P28074/entry</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P28074/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Reviewed PSMB5 reference, taxon9606; entry256, sequence3, annotation2026-09-02. SUBUNIT and FUNCTION identify PSMB5 as a core proteasome component. Membership alone is not a compound-binding assay. Historical sequence cautions concern AAP35423.1, BAA06097.1, CAD97956.1; these sequences are not used instead of the matching canonical RefSeq.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
-<h2>Molecular targets <span class="tag">1</span></h2>
+<h2>Molecular targets <span class="tag">3</span></h2>
 <div class="scroll"><table>
 <tr><th>Target</th><th>Target organism</th><th>Measurement</th><th>Evidence</th></tr>
 <tr>
@@ -284,13 +554,33 @@ by the corpus tests.</p>
 </li></ul>
 </details></td>
 </tr>
+<tr>
+  <td>Saccharomyces cerevisiae 20S proteasome core<br><span class="mono">PROTEIN_COMPLEX BINDS</span><br><span class="mono">UniProtKB:P38624, UniProtKB:P25043, UniProtKB:P30656</span><p class="graph-evidence sub">Structural-model binding only: six covalent ligand contacts across the beta1,beta2,beta5 copies. The remaining11 subunit types are complex members, not adopted direct-binding examples. S288c accessions are deliberately selected reference examples, not proof that the baker&#39;s-yeast preparation was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted; they are not adopted as live identifiers. Matching deposited polymer spans do not prove physical truncation of the purified proteins or complete assay-construct identity. No quantitative inhibition measurement or irreversible-binding claim.</p></td>
+  <td>Saccharomyces cerevisiae<br><span class="mono">NCBITaxon:4932</span></td>
+  <td></td>
+  <td><details class="graph-evidence target-evidence"><summary class="mono">https://www.rcsb.org/structure/3D29<br>https://files.rcsb.org/download/3D29.cif</summary><ul><li><dl><dt>reference</dt><dd>https://www.rcsb.org/structure/3D29</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>3D29 explicit covalent contacts at author chainsH/V,K/Y,N/2. UniProt examples map the canonical precursors to their deposited processed polymer spans.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://files.rcsb.org/download/3D29.cif</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Curator mapping with RDKit2026.03.5: all six NQL/HXD ligands have39 modeled heavy atoms and retain S/S/S peptide centers plus R lipid3-OH. Reversing the covalent hemiacetal to the free aldehyde reconstructs owner InChIKey MFXAGCQVWGPEJH-LRSLUSHPSA-N. This is coordinate-based mapping, not independent experimental structure elucidation or density-validation sign-off. The new bound hemiacetal center is not assigned to the free owner.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Human20S proteasome beta5 activity<br><span class="mono">PROTEIN_COMPLEX INHIBITS</span><br><span class="mono">UniProtKB:P28074</span><p class="graph-evidence sub">The human beta5 assay is supported only by the cached 2010 author abstract. P28074 is the deliberately selected PSMB5 canonical isoform1 reference, not an independently sequenced assay preparation. Isoforms2/3, immunoproteasome beta5i, donor, tissue and exact construct are not resolved or substituted. Target scope is beta5 activity within the complex, not all proteasome sites or an isolated precursor. No quantitative measurement adopted.</p></td>
+  <td>Homo sapiens<br><span class="mono">NCBITaxon:9606</span></td>
+  <td></td>
+  <td><details class="graph-evidence target-evidence"><summary class="mono">DOI:10.1016/j.abb.2010.06.009<br>https://www.uniprot.org/uniprotkb/P28074/entry<br>https://www.ncbi.nlm.nih.gov/protein/NP_002788.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.abb.2010.06.009</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Only the previously inspected author abstract at https://europepmc.org/article/MED/20558127 is used. It explicitly reports time-dependent inhibition of the human proteasome beta5 active site. Full Methods, exact preparation, dose/substrate conditions and kinetic construct remain uninspected. No quantitative affinity, all-beta-subunit inhibition, NGF induction, microbial killing or irreversible inhibition claim is adopted. The human beta5 assay is supported only by the cached 2010 author abstract. P28074 is the deliberately selected PSMB5 canonical isoform1 reference, not an independently sequenced assay preparation. Isoforms2/3, immunoproteasome beta5i, donor, tissue and exact construct are not resolved or substituted.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/P28074/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Reviewed PSMB5 reference, taxon9606; entry256, sequence3, annotation2026-09-02. Canonical reference for the beta5 component, with mature chain60-263; other isoforms and beta5i are not selected. Historical sequence cautions concern AAP35423.1, BAA06097.1, CAD97956.1; these sequences are not used instead of the matching canonical RefSeq.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/NP_002788.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Identity only: PSMB5, 263aa, taxon9606; complete CDS of RefSeq transcript NM_002797.5 at [19:811](+), including start/stop, translates to NP_002788.1 and UniProt P28074 under table1. This verifies reference annotations, not the experimental donor, physiological initiation choice or assay allele.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
 </table></div>
 
 
 
-<h2>Open questions <span class="tag">2</span></h2>
+<h2>Open questions <span class="tag">3</span></h2>
 <div class="note"><p><strong>curator-fellutamide-b-assembly-and-assay-scope</strong> — Which direct assays resolve InpF transfer, InpD transport, terminal release chemistry and exact experimental alleles?</p></div>
 <div class="note"><p><strong>curator-fellutamide-b-proteasome-strain-and-construct</strong> — Which donor strain and exact kinetic construct were used, and how should the conflicting3KRD strain metadata be resolved?</p></div>
+<div class="note"><p><strong>curator-fellutamide-b-eukaryotic-reference-and-assay-scope</strong> — Which experimental donor strains, complete preparations and human isoforms were used, and how should PRE4 initiation and inactive deposit references be resolved?</p></div>
 
 <h2>Provenance</h2>
 <div class="scroll"><table>
