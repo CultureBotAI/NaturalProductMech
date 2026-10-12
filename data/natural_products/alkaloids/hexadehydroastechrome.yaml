@@ -86,6 +86,361 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-fbd46ce93a
 grounding_status: EXACT
 curation_status: SEEDED
+causal_graphs:
+- graph_id: hexadehydroastechrome-annotated-assembly
+  scope: BIOSYNTHESIS
+  description: Partial database-annotated assembly view, not an ordered experimental
+    pathway. Five sequence-verified CEA10/A1163 protein references are distinct from
+    the seeded Af293 producer and unresolved experimental alleles. HasE substrate
+    timing remains alternative; tailoring order and exact intermediates are not fixed.
+    Abstract contribution edges do not mean direct conversion to the final Fe(III)
+    complex.
+  nodes:
+  - node_id: hasd
+    label: HasD (CEA10/A1163 annotated reference)
+    node_type: ENZYME
+    identifier: UniProtKB:B0XWK8
+    grounding_status: GROUNDED
+  - node_id: hase
+    label: HasE (CEA10/A1163 annotated reference)
+    node_type: ENZYME
+    identifier: UniProtKB:B0XWK7
+    grounding_status: GROUNDED
+  - node_id: hash
+    label: HasH (CEA10/A1163 annotated reference)
+    node_type: ENZYME
+    identifier: UniProtKB:B0XWK4
+    grounding_status: GROUNDED
+  - node_id: hasc
+    label: HasC (CEA10/A1163 annotated reference)
+    node_type: ENZYME
+    identifier: UniProtKB:B0XWK9
+    grounding_status: GROUNDED
+  - node_id: hasg
+    label: HasG (CEA10/A1163 annotated reference)
+    node_type: ENZYME
+    identifier: UniProtKB:B0XWK5
+    grounding_status: GROUNDED
+  - node_id: trp_ala_assembly
+    label: Tethered Trp-Ala assembly
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: c7_prenylation
+    label: C7 prenylation of tethered Trp or Trp-Ala
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: p450_tailoring
+    label: P450 tailoring of tethered intermediates
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: o_methylation
+    label: O-methylation during ligand tailoring
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: sidechain_oxidation
+    label: Prenyl-to-methylbutadienyl side-chain conversion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: iron_complexation
+    label: Three ligand molecules complex with Fe(III)
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: has
+    label: hexadehydroastechrome
+    node_type: COMPOUND
+    identifier: CHEBI:73878
+    grounding_status: GROUNDED
+  edges:
+  - subject: hasd
+    predicate: annotated_to_catalyze
+    object: trp_ala_assembly
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/B0XWK8/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Inspected UniProt FUNCTION annotation, citing PMID23360537; its primary
+        paper was not retrieved. DATABASE_ASSERTION, not a directly inspected experiment.
+        CEA10/A1163 reference is not equated to the Af293 producer or an experimental
+        allele. NRPS annotation condenses tryptophan and alanine. No particular phosphopantetheinyl
+        transferase is assigned.
+      snippet: condenses tryptophan and alanine
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EDP52461.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: A1163 AFUB_036270, taxon451804, versioned GenPept EDP52461.1
+        matches reviewed UniProt and the complete spliced CDS on DS499596.1, including
+        start/stop and strand. Sequence agreement does not establish functional activity
+        or the experimental allele.'
+  - subject: trp_ala_assembly
+    predicate: contributes_to_biosynthesis_of
+    object: has
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/B0XWK8/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Inspected UniProt FUNCTION annotation, citing PMID23360537; its primary
+        paper was not retrieved. DATABASE_ASSERTION, not a directly inspected experiment.
+        CEA10/A1163 reference is not equated to the Af293 producer or an experimental
+        allele. The function is assigned to HAS biosynthesis. This abstract contribution
+        edge does not assert a direct one-step conversion to the iron complex or an
+        ordered complete pathway.
+  - subject: hase
+    predicate: annotated_to_catalyze
+    object: c7_prenylation
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/B0XWK7/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Inspected UniProt FUNCTION annotation, citing PMID23360537; its primary
+        paper was not retrieved. DATABASE_ASSERTION, not a directly inspected experiment.
+        CEA10/A1163 reference is not equated to the Af293 producer or an experimental
+        allele. The annotation leaves two alternatives: HasD-tethered tryptophan OR
+        the tethered Trp-Ala dipeptide. No fixed timing or free-tryptophan assay kinetics
+        is transferred to the native tethered route.'
+      snippet: hasD-tethered tryptophan or the resulting tethered Trp-Ala dipeptid
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EDP52460.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: A1163 AFUB_036260, taxon451804, versioned GenPept EDP52460.1
+        matches reviewed UniProt and the complete spliced CDS on DS499596.1, including
+        start/stop and strand. Sequence agreement does not establish functional activity
+        or the experimental allele.'
+  - subject: c7_prenylation
+    predicate: contributes_to_biosynthesis_of
+    object: has
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/B0XWK7/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Inspected UniProt FUNCTION annotation, citing PMID23360537; its primary
+        paper was not retrieved. DATABASE_ASSERTION, not a directly inspected experiment.
+        CEA10/A1163 reference is not equated to the Af293 producer or an experimental
+        allele. The function is assigned to HAS biosynthesis. This abstract contribution
+        edge does not assert a direct one-step conversion to the iron complex or an
+        ordered complete pathway.
+  - subject: hash
+    predicate: annotated_to_catalyze
+    object: p450_tailoring
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/B0XWK4/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Inspected UniProt FUNCTION annotation, citing PMID23360537; its primary
+        paper was not retrieved. DATABASE_ASSERTION, not a directly inspected experiment.
+        CEA10/A1163 reference is not equated to the Af293 producer or an experimental
+        allele. P450 annotation places HasH with HasC and HasG in tailoring toward
+        the released O-methylated diketopiperazine ligand. The exact isolated substrate/product
+        and reaction order are not resolved here.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EDP52457.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: A1163 AFUB_036230, taxon451804, versioned GenPept EDP52457.1
+        matches reviewed UniProt and the complete spliced CDS on DS499596.1, including
+        start/stop and strand. Sequence agreement does not establish functional activity
+        or the experimental allele.'
+  - subject: p450_tailoring
+    predicate: contributes_to_biosynthesis_of
+    object: has
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/B0XWK4/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Inspected UniProt FUNCTION annotation, citing PMID23360537; its primary
+        paper was not retrieved. DATABASE_ASSERTION, not a directly inspected experiment.
+        CEA10/A1163 reference is not equated to the Af293 producer or an experimental
+        allele. The function is assigned to HAS biosynthesis. This abstract contribution
+        edge does not assert a direct one-step conversion to the iron complex or an
+        ordered complete pathway.
+  - subject: hasc
+    predicate: annotated_to_catalyze
+    object: o_methylation
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/B0XWK9/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Inspected UniProt FUNCTION annotation, citing PMID23360537; its primary
+        paper was not retrieved. DATABASE_ASSERTION, not a directly inspected experiment.
+        CEA10/A1163 reference is not equated to the Af293 producer or an experimental
+        allele. O-methyltransferase annotation places HasC with HasH and HasG in tailoring
+        toward the released O-methylated diketopiperazine ligand. No atom-specific
+        methylation site or verified reaction order is asserted.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EDP52462.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: A1163 AFUB_036280, taxon451804, versioned GenPept EDP52462.1
+        matches reviewed UniProt and the complete spliced CDS on DS499596.1, including
+        start/stop and strand. Sequence agreement does not establish functional activity
+        or the experimental allele.'
+  - subject: o_methylation
+    predicate: contributes_to_biosynthesis_of
+    object: has
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/B0XWK9/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Inspected UniProt FUNCTION annotation, citing PMID23360537; its primary
+        paper was not retrieved. DATABASE_ASSERTION, not a directly inspected experiment.
+        CEA10/A1163 reference is not equated to the Af293 producer or an experimental
+        allele. The function is assigned to HAS biosynthesis. This abstract contribution
+        edge does not assert a direct one-step conversion to the iron complex or an
+        ordered complete pathway.
+  - subject: hasg
+    predicate: annotated_to_catalyze
+    object: sidechain_oxidation
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/B0XWK5/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Inspected UniProt FUNCTION annotation, citing PMID23360537; its primary
+        paper was not retrieved. DATABASE_ASSERTION, not a directly inspected experiment.
+        CEA10/A1163 reference is not equated to the Af293 producer or an experimental
+        allele. The oxidoreductase is annotated to convert a prenyl side chain to
+        a methylbutadienyl side chain. No purified assay, isolated substrate, or proven
+        timing relative to ligand release is asserted.
+      snippet: methylbutadienyl side chain
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EDP52458.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: A1163 AFUB_036240, taxon451804, versioned GenPept EDP52458.1
+        matches reviewed UniProt and the complete spliced CDS on DS499596.1, including
+        start/stop and strand. Sequence agreement does not establish functional activity
+        or the experimental allele.'
+  - subject: sidechain_oxidation
+    predicate: contributes_to_biosynthesis_of
+    object: has
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/B0XWK5/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Inspected UniProt FUNCTION annotation, citing PMID23360537; its primary
+        paper was not retrieved. DATABASE_ASSERTION, not a directly inspected experiment.
+        CEA10/A1163 reference is not equated to the Af293 producer or an experimental
+        allele. The function is assigned to HAS biosynthesis. This abstract contribution
+        edge does not assert a direct one-step conversion to the iron complex or an
+        ordered complete pathway.
+  - subject: iron_complexation
+    predicate: produces
+    object: has
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/B0XWK8/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Inspected UniProt FUNCTION annotation, citing PMID23360537; its primary
+        paper was not retrieved. DATABASE_ASSERTION, not a directly inspected experiment.
+        CEA10/A1163 reference is not equated to the Af293 producer or an experimental
+        allele. The annotation describes assembly of three O-methylated diketopiperazine
+        ligand molecules with Fe(III) to give HAS. No specific protein catalyst for
+        complexation is assigned; this is not a protein trimer.
+- graph_id: hexadehydroastechrome-annotated-regulation
+  scope: BIOSYNTHESIS
+  description: Partial database-annotated view of cluster regulation and transporter
+    requirement. Links between gene-expression regulation and transporter-dependent
+    production are intentionally omitted because their mediation is not established
+    here. CEA10/A1163 reference accessions are not assigned to experimental alleles.
+    HasA positive regulation is not direct promoter binding, HasB requirement is not
+    an identified transport reaction, and the HasF null regulatory finding applies
+    only to tested growth conditions.
+  nodes:
+  - node_id: hasa
+    label: HasA (CEA10/A1163 annotated reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:B0XWT0
+    grounding_status: GROUNDED
+  - node_id: hasb
+    label: HasB (CEA10/A1163 annotated reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:B0XWL0
+    grounding_status: GROUNDED
+  - node_id: hasf
+    label: HasF (CEA10/A1163 annotated reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:B0XWK6
+    grounding_status: GROUNDED
+  - node_id: cluster_expression
+    label: HAS biosynthetic-gene expression
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: has_production
+    label: HAS production
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: hasa
+    predicate: annotated_positive_regulator_of
+    object: cluster_expression
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/B0XWT0/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Inspected UniProt FUNCTION annotation, citing PMID23360537; its primary
+        paper was not retrieved. DATABASE_ASSERTION, not a directly inspected experiment.
+        CEA10/A1163 reference is not equated to the Af293 producer or an experimental
+        allele. Positive regulation is a database annotation; direct DNA contact,
+        promoter targets and mediation are not established here.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EDP52464.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: A1163 AFUB_036300, taxon451804, versioned GenPept EDP52464.1
+        matches reviewed UniProt and the complete spliced CDS on DS499596.1, including
+        start/stop and strand. Sequence agreement does not establish functional activity
+        or the experimental allele.'
+  - subject: hasb
+    predicate: annotated_required_for
+    object: has_production
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/B0XWL0/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Inspected UniProt FUNCTION annotation, citing PMID23360537; its primary
+        paper was not retrieved. DATABASE_ASSERTION, not a directly inspected experiment.
+        CEA10/A1163 reference is not equated to the Af293 producer or an experimental
+        allele. The MFS-type transporter is annotated as required for production.
+        No transported substrate, compartment, transport direction, or direct efflux
+        of HAS is asserted; this is not universal essentiality.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EDP52463.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: A1163 AFUB_036290, taxon451804, versioned GenPept EDP52463.1
+        matches reviewed UniProt and the complete spliced CDS on DS499596.1, including
+        start/stop and strand. Sequence agreement does not establish functional activity
+        or the experimental allele.'
+  - subject: hasf
+    predicate: not_observed_to_regulate_under_tested_conditions
+    object: cluster_expression
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/B0XWK6/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Inspected UniProt FUNCTION annotation, citing PMID23360537; its primary
+        paper was not retrieved. DATABASE_ASSERTION, not a directly inspected experiment.
+        CEA10/A1163 reference is not equated to the Af293 producer or an experimental
+        allele. The annotation explicitly reports no regulation under the tested growth
+        conditions. The disruption annotation likewise reports no effect on production
+        in tested laboratory conditions; neither establishes universal dispensability.
+        Exact assay strain and conditions were not independently verified.
+      snippet: at least under the growth conditions tested
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EDP52459.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: A1163 AFUB_036250, taxon451804, versioned GenPept EDP52459.1
+        matches reviewed UniProt and the complete spliced CDS on DS499596.1, including
+        start/stop and strand. Sequence agreement does not establish functional activity
+        or the experimental allele.'
+discussions:
+- discussion_id: curator-has-cluster-reference-and-mechanism-limits
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: Which experimental alleles, substrate timings and conditions establish the
+    HAS assembly and regulatory mechanism?
+  rationale: Reviewed CEA10/A1163 HasA-HasH references have matching native CDS translations,
+    but are not equated with seeded Af293 or experimental alleles. The 2013 primary
+    paper was not retrieved; current graph edges adopt UniProt annotations only. Keep
+    HasE timing alternatives, HasF condition-specific null regulation, unknown HasB
+    cargo and unresolved tailoring order.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/B0XWK7/entry
+    evidence_source: UniProt FUNCTION annotation
+    notes: Database evidence only; primary citation DOI10.1021/ja311145n remains uninspected.
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -95,3 +450,20 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-12T08:27:07Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add two partial BIOSYNTHESIS graphs with eight native-sequence-verified
+    CEA10/A1163 HasA-HasH reference proteins, edge-local database citations and four
+    snippets. Preserve HasE timing ambiguity, HasF condition-bounded null regulation,
+    unknown HasB cargo, all seeded fields and SEEDED status. Do not equate reference
+    sequences to experimental alleles or promote database annotations to primary experiments.
+  llm_assisted: true
+- timestamp: '2026-10-12T08:42:47Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: 'Address review issue #855: explicitly declare the regulation graph a partial
+    view and explain that unproven mediation links are intentionally omitted. Preserve
+    every node, edge, reference, snippet and seeded field; do not invent a connection
+    or weaken the corpus invariant.'
+  llm_assisted: true
