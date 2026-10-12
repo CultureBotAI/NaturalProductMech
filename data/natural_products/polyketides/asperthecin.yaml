@@ -392,6 +392,211 @@ causal_graphs:
         it does not say every mutant produces it or that either regulator catalyzes
         its formation. Unknown pigments and hypothetical polymers are not equated
         with CHEBI:64161.
+- graph_id: asperthecin-regulatory-perturbation-followup
+  scope: BIOSYNTHESIS
+  description: Partial view of four distinct regulatory perturbations affecting asperthecin
+    production. Mediation links among these experiments and the AptABC biosynthetic
+    machinery are intentionally omitted because they are not established here. FGSC
+    A4 accessions identify native reference proteins, not verified experimental alleles.
+    AflR deletion is in an OE:rsmA background; NapA is overexpressed, not deleted;
+    AtnN deletion is tested in Czapek-Dox broth. Those three outcomes are bounded
+    to inspected primary abstracts. LaeB disruption is an exact-compound UniProt annotation
+    only. No direct apt-promoter binding, physical complex, reaction step, quantitative
+    titer or universal effect is asserted.
+  nodes:
+  - node_id: aflr
+    label: AflR (FGSC A4 native reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:P52957
+    grounding_status: GROUNDED
+  - node_id: aflr_deletion_oe_rsma
+    label: aflR deletion in an OE:rsmA background
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: reduced_asperthecin
+    label: Reduced asperthecin synthesis in the tested OE:rsmA background
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: napa
+    label: NapA (FGSC A4 native reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q5AW17
+    grounding_status: GROUNDED
+  - node_id: napa_overexpression
+    label: napA overexpression
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: decreased_asperthecin
+    label: Decreased asperthecin production in the tested napA-overexpression culture
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: atnn
+    label: AtnN (FGSC A4 native reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:C8V3N0
+    grounding_status: GROUNDED
+  - node_id: atnn_deletion_czapek_dox
+    label: atnN deletion in Czapek-Dox broth
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: increased_asperthecin
+    label: Increased asperthecin production in Czapek-Dox broth
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: laeb
+    label: LaeB (FGSC A4 native reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:Q5B431
+    grounding_status: GROUNDED
+  - node_id: laeb_disruption
+    label: laeB disruption (database-annotated experiment)
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: activated_asperthecin
+    label: Activation of asperthecin biosynthesis (database annotation)
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: aflr
+    predicate: is_native_reference_for_targeted_gene_in
+    object: aflr_deletion_oe_rsma
+    notes: The accession identifies a native FGSC A4 reference for the named gene,
+      not the disrupted or overexpressed experimental allele. Identity mapping is
+      not a claim that native protein abundance or direct activity was measured.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P52957/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed reference ANIA_07820, taxon227321; entry 136, sequence 2, annotation
+        2026-09-02. Gene-to-claim cross-reference PMID22283524; database citation
+        does not by itself constitute primary evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF80174.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: CBF80174.1, ANIA_07820, 433 aa matches reviewed UniProt
+        and complete spliced CDS on BN001304.1:2718656..2719957 (1 exon(s), strand
+        1), including start/stop. Native FGSC A4 taxon227321; exact experimental allele
+        and strain equivalence remain unverified.'
+  - subject: aflr_deletion_oe_rsma
+    predicate: results_in
+    object: reduced_asperthecin
+    evidence:
+    - reference: DOI:10.1111/j.1365-2958.2012.07986.x
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Only the author abstract indexed at https://europepmc.org/article/MED/22283524
+        was inspected. Full Methods, figures, experimental strain and allele sequence
+        remain unverified. No quantitative titer or universal phenotype is asserted.
+        The abstract specifically reports reduced asperthecin after aflR deletion
+        in an overexpression rsmA (OE:rsmA) background. Not a basal wild-type deletion
+        result. AflR promoter binding and sterigmatocystin regulation do not establish
+        direct binding to asperthecin-cluster promoters.
+      snippet: significantly reduces asperthecin synthesis
+  - subject: napa
+    predicate: is_native_reference_for_targeted_gene_in
+    object: napa_overexpression
+    notes: The accession identifies a native FGSC A4 reference for the named gene,
+      not the disrupted or overexpressed experimental allele. Identity mapping is
+      not a claim that native protein abundance or direct activity was measured.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q5AW17/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed reference ANIA_07513, taxon227321; entry 125, sequence 1, annotation
+        2026-09-02. Gene-to-claim cross-reference PMID23154967; database citation
+        does not by itself constitute primary evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF79538.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: CBF79538.1, ANIA_07513, 577 aa matches reviewed UniProt
+        and complete spliced CDS on BN001304.1:1734467..1736306 (3 exon(s), strand
+        1), including start/stop. Native FGSC A4 taxon227321; exact experimental allele
+        and strain equivalence remain unverified.'
+  - subject: napa_overexpression
+    predicate: results_in
+    object: decreased_asperthecin
+    evidence:
+    - reference: DOI:10.1099/mic.0.063370-0
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Only the author abstract indexed at https://europepmc.org/article/MED/23154967
+        was inspected. Full Methods, figures, experimental strain and allele sequence
+        remain unverified. No quantitative titer or universal phenotype is asserted.
+        The abstract reports decreased asperthecin in OE::napA. This is overexpression,
+        not deletion; no knockout-increase claim is inferred. The 100-fold change
+        reported for OE::rsmA sterigmatocystin is not transferred to NapA or asperthecin.
+        FRET self-association does not establish an asperthecin-regulatory complex.
+      snippet: 'OE : : napA displayed decreased production of sterigmatocystin, emericellin,
+        asperthecin'
+  - subject: atnn
+    predicate: is_native_reference_for_targeted_gene_in
+    object: atnn_deletion_czapek_dox
+    notes: The accession identifies a native FGSC A4 reference for the named gene,
+      not the disrupted or overexpressed experimental allele. Identity mapping is
+      not a claim that native protein abundance or direct activity was measured.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/C8V3N0/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Reviewed reference ANIA_07872, taxon227321; entry 69, sequence 1, annotation
+        2026-09-02. Gene-to-claim cross-reference PMID39643398; database citation
+        does not by itself constitute primary evidence. Reject old EAA58917.1: UniProt
+        warns of an erroneous gene model.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF73428.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: CBF73428.1, ANIA_07872, 610 aa matches reviewed UniProt
+        and complete spliced CDS on BN001302.1:74783..76663 (2 exon(s), strand -1),
+        including start/stop. Native FGSC A4 taxon227321; exact experimental allele
+        and strain equivalence remain unverified.'
+  - subject: atnn_deletion_czapek_dox
+    predicate: results_in
+    object: increased_asperthecin
+    evidence:
+    - reference: DOI:10.1016/j.funbio.2024.11.006
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Only the author abstract indexed at https://europepmc.org/article/MED/39643398
+        was inspected. Full Methods, figures, experimental strain and allele sequence
+        remain unverified. No quantitative titer or universal phenotype is asserted.
+        The abstract reports increased asperthecin in the atnN deletion mutant in
+        Czapek-Dox Broth. Do not transfer the complex-medium atnN-overexpression siderophore
+        results or minimal-medium sterigmatocystin results to this asperthecin observation.
+      snippet: increased asperthecin production was observed
+  - subject: laeb
+    predicate: is_native_reference_for_targeted_gene_in
+    object: laeb_disruption
+    notes: The accession identifies a native FGSC A4 reference for the named gene,
+      not the disrupted or overexpressed experimental allele. Identity mapping is
+      not a claim that native protein abundance or direct activity was measured.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q5B431/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed reference ANIA_04699, taxon227321; entry 74, sequence 1, annotation
+        2026-09-02. Gene-to-claim cross-reference PMID29947411; database citation
+        does not by itself constitute primary evidence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CBF76971.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: CBF76971.1, ANIA_04699, 650 aa matches reviewed UniProt
+        and complete spliced CDS on BN001303.1:1252763..1255155 (3 exon(s), strand
+        -1), including start/stop. Native FGSC A4 taxon227321; exact experimental
+        allele and strain equivalence remain unverified.'
+  - subject: laeb_disruption
+    predicate: annotated_to_result_in
+    object: activated_asperthecin
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q5B431/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: UniProt DISRUPTION PHENOTYPE annotates activation of asperthecin biosynthesis
+        after laeB disruption, citing PMID29947411 / DOI10.1039/c8ob01326h. The inspected
+        paper abstract does not name asperthecin; full text was not obtained. The
+        exact-compound effect is DATABASE_ASSERTION, not independently inspected primary
+        experimental evidence. No CsdA physical complex, splicing mechanism or direct
+        apt-promoter contact is adopted.
+      snippet: leads to the activation of several secondary metabolism pathways
 discussions:
 - discussion_id: curator-asperthecin-apt-reference-and-pathway-limits
   kind: CURATION_TODO
@@ -466,6 +671,22 @@ discussions:
   - reference: https://www.ncbi.nlm.nih.gov/gene/2874476
     evidence_source: NCBI Gene, retrieved 2026-10-11
     notes: MAT1/ANIA_02755 gene identity; no additional matB synonym provided.
+- discussion_id: curator-asperthecin-regulator-perturbation-limits
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: Which experimental alleles, assay conditions and mediating steps establish
+    the four regulator effects on asperthecin?
+  rationale: Four native FGSC A4 sequences were verified, but the full primary Methods
+    and experimental allele sequences remain uninspected. Preserve the OE:rsmA background
+    for aflR deletion, napA overexpression, and Czapek-Dox broth for atnN deletion.
+    LaeB exact-compound activation is a UniProt annotation because the inspected abstract
+    does not name asperthecin. Keep the four experiments separate and do not infer
+    apt-promoter contacts or universal regulatory signs.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/Q5B431/entry
+    evidence_source: UniProt DISRUPTION PHENOTYPE
+    notes: Exact-compound database annotation; DOI10.1039/c8ob01326h remains uninspected
+      beyond its abstract.
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
@@ -492,4 +713,14 @@ curation_history:
     URLs and short snippets. Distinguish developmental associations and native reference
     mapping from direct regulation, catalytic steps or complete experimental alleles.
     Preserve the prior AptA/B/C graph, source-owned fields and SEEDED status.
+  llm_assisted: true
+- timestamp: '2026-10-12T09:28:23Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add one partial BIOSYNTHESIS graph with four native-sequence-verified FGSC
+    A4 AflR, NapA, AtnN and LaeB reference proteins, explicit perturbation/outcome
+    nodes, edge-local sources and four verbatim snippets. Preserve primary-abstract
+    versus database evidence, experiment-specific conditions, all prior graphs/discussions/history,
+    source-owned fields and SEEDED status. Reject cautioned AtnN EAA58917.1; do not
+    equate native references to experimental alleles.
   llm_assisted: true
