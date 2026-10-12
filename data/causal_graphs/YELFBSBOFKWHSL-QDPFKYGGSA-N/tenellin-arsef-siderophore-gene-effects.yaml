@@ -1,0 +1,205 @@
+record_id: naturalproductmech:mibig-34ab171b17
+standard_inchi_key: YELFBSBOFKWHSL-QDPFKYGGSA-N
+graph:
+  graph_id: tenellin-arsef-siderophore-gene-effects
+  scope: BIOSYNTHESIS
+  nodes:
+  - node_id: sida
+    label: SIDA (ARSEF 2860 reference; genetic effect)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:J4W6X9
+  - node_id: sidda
+    label: SIDDA / SIDD (ARSEF 2860 reference; genetic effect)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:J4UJF5
+  - node_id: sidf
+    label: SIDF (ARSEF 2860 reference; genetic effect)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:J4W0D1
+  - node_id: sidi
+    label: SIDI (ARSEF 2860 reference; genetic effect)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:J5JLF2
+  - node_id: tenellin_production
+    label: Database-reported tenellin production in siderophore-gene disruption contexts
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: tenellin
+    label: Tenellin (one stereocenter unspecified)
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: naturalproductmech:mibig-34ab171b17
+  edges:
+  - subject: sida
+    predicate: has_database_annotated_disruption_associated_impairment_of
+    object: tenellin_production
+    notes: Reference protein, not a verified experimental allele. Genetic effect does
+      not establish a catalytic step in tenellin assembly.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/J4W6X9/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Reviewed UniProtKB DISRUPTION PHENOTYPE annotation, release 2026_03,
+        entry 53, sequence 1. The DISRUPTION PHENOTYPE annotation explicitly includes
+        impaired tenellin production among multiple affected products (PMID:39109629,
+        DOI:10.1021/acs.jafc.4c02957). This is a genetic production-effect claim,
+        not complete loss, direct tenellin catalysis, an ornithine-derived tenellin
+        precursor claim or an established indirect regulatory mechanism. SIDDA/SIDF/SIDI
+        text says six products but lists seven; no product count is adopted. The current
+        UniProt gene symbol SIDDA is retained beside the FUNCTION label SIDD. Primary
+        methods were not inspected: the publisher returned HTTP403 and no alternate
+        retrieval was attempted. Database annotation, not independently inspected
+        primary experiments or a verified assayed allele. No generalization of a deletion
+        phenotype to every native strain or construct.'
+      snippet: rhodotorulic acid (RA) and tenellin
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EJP66050.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: 'Reference identity: SIDA/BBA_05021, NCBITaxon:655819; coded_by join(JH725161.1:424117..425081,
+        JH725161.1:425142..425709,JH725161.1:425768..425845). Coordinates, strands,
+        codon start, complete start/stop and source cross-references checked. The
+        complete spliced native CDS, deposited translation, separately retrieved GenPept
+        and current UniProt sequence agree exactly (536 aa). The scaffold and GenPept
+        source qualifiers explicitly name ARSEF 2860. Protein-existence annotation
+        remains 3: Inferred from homology. No experimental construct identity or functional
+        experiment is newly established.'
+  - subject: sidda
+    predicate: has_database_annotated_disruption_associated_impairment_of
+    object: tenellin_production
+    notes: Reference protein, not a verified experimental allele. Genetic effect does
+      not establish a catalytic step in tenellin assembly.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/J4UJF5/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Reviewed UniProtKB DISRUPTION PHENOTYPE annotation, release 2026_03,
+        entry 66, sequence 1. The DISRUPTION PHENOTYPE annotation explicitly includes
+        impaired tenellin production among multiple affected products (PMID:39109629,
+        DOI:10.1021/acs.jafc.4c02957). This is a genetic production-effect claim,
+        not complete loss, direct tenellin catalysis, an ornithine-derived tenellin
+        precursor claim or an established indirect regulatory mechanism. SIDDA/SIDF/SIDI
+        text says six products but lists seven; no product count is adopted. The current
+        UniProt gene symbol SIDDA is retained beside the FUNCTION label SIDD. Primary
+        methods were not inspected: the publisher returned HTTP403 and no alternate
+        retrieval was attempted. Database annotation, not independently inspected
+        primary experiments or a verified assayed allele. No generalization of a deletion
+        phenotype to every native strain or construct.'
+      snippet: rhodotorulic acid (RA) and tenellin
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EJP63992.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: 'Reference identity: SIDDA/BBA_06997, NCBITaxon:655819; coded_by JH725171.1:154330..159861.
+        Coordinates, strands, codon start, complete start/stop and source cross-references
+        checked. The complete spliced native CDS, deposited translation, separately
+        retrieved GenPept and current UniProt sequence agree exactly (1843 aa). The
+        scaffold and GenPept source qualifiers explicitly name ARSEF 2860. Protein-existence
+        annotation remains 3: Inferred from homology. No experimental construct identity
+        or functional experiment is newly established.'
+  - subject: sidf
+    predicate: has_database_annotated_disruption_associated_impairment_of
+    object: tenellin_production
+    notes: Reference protein, not a verified experimental allele. Genetic effect does
+      not establish a catalytic step in tenellin assembly.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/J4W0D1/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Reviewed UniProtKB DISRUPTION PHENOTYPE annotation, release 2026_03,
+        entry 36, sequence 1. The DISRUPTION PHENOTYPE annotation explicitly includes
+        impaired tenellin production among multiple affected products (PMID:39109629,
+        DOI:10.1021/acs.jafc.4c02957). This is a genetic production-effect claim,
+        not complete loss, direct tenellin catalysis, an ornithine-derived tenellin
+        precursor claim or an established indirect regulatory mechanism. SIDDA/SIDF/SIDI
+        text says six products but lists seven; no product count is adopted. The current
+        UniProt gene symbol SIDDA is retained beside the FUNCTION label SIDD. Primary
+        methods were not inspected: the publisher returned HTTP403 and no alternate
+        retrieval was attempted. Database annotation, not independently inspected
+        primary experiments or a verified assayed allele. No generalization of a deletion
+        phenotype to every native strain or construct.'
+      snippet: rhodotorulic acid (RA) and tenellin
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EJP63990.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: 'Reference identity: SIDF/BBA_06995, NCBITaxon:655819; coded_by join(JH725171.1:148284..149288,
+        JH725171.1:149368..149730). Coordinates, strands, codon start, complete start/stop
+        and source cross-references checked. The complete spliced native CDS, deposited
+        translation, separately retrieved GenPept and current UniProt sequence agree
+        exactly (455 aa). The scaffold and GenPept source qualifiers explicitly name
+        ARSEF 2860. Protein-existence annotation remains 3: Inferred from homology.
+        No experimental construct identity or functional experiment is newly established.'
+  - subject: sidi
+    predicate: has_database_annotated_disruption_associated_impairment_of
+    object: tenellin_production
+    notes: Reference protein, not a verified experimental allele. Genetic effect does
+      not establish a catalytic step in tenellin assembly.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/J5JLF2/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Reviewed UniProtKB DISRUPTION PHENOTYPE annotation, release 2026_03,
+        entry 45, sequence 1. The DISRUPTION PHENOTYPE annotation explicitly includes
+        impaired tenellin production among multiple affected products (PMID:39109629,
+        DOI:10.1021/acs.jafc.4c02957). This is a genetic production-effect claim,
+        not complete loss, direct tenellin catalysis, an ornithine-derived tenellin
+        precursor claim or an established indirect regulatory mechanism. SIDDA/SIDF/SIDI
+        text says six products but lists seven; no product count is adopted. The current
+        UniProt gene symbol SIDDA is retained beside the FUNCTION label SIDD. Primary
+        methods were not inspected: the publisher returned HTTP403 and no alternate
+        retrieval was attempted. Database annotation, not independently inspected
+        primary experiments or a verified assayed allele. No generalization of a deletion
+        phenotype to every native strain or construct.'
+      snippet: rhodotorulic acid (RA) and tenellin
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EJP63991.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: 'Reference identity: SIDI/BBA_06996, NCBITaxon:655819; coded_by complement(join(JH725171.1:150011..151067,
+        JH725171.1:151145..151818)). Coordinates, strands, codon start, complete start/stop
+        and source cross-references checked. The complete spliced native CDS, deposited
+        translation, separately retrieved GenPept and current UniProt sequence agree
+        exactly (576 aa). The scaffold and GenPept source qualifiers explicitly name
+        ARSEF 2860. Protein-existence annotation remains 3: Inferred from homology.
+        No experimental construct identity or functional experiment is newly established.'
+  - subject: tenellin_production
+    predicate: has_named_product
+    object: tenellin
+    notes: The source explicitly names tenellin, but its complete experimental structure/assay
+      context was not independently inspected.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/J4W6X9/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: 'Reviewed UniProtKB DISRUPTION PHENOTYPE annotation, release 2026_03,
+        entry 53, sequence 1. The DISRUPTION PHENOTYPE annotation explicitly includes
+        impaired tenellin production among multiple affected products (PMID:39109629,
+        DOI:10.1021/acs.jafc.4c02957). This is a genetic production-effect claim,
+        not complete loss, direct tenellin catalysis, an ornithine-derived tenellin
+        precursor claim or an established indirect regulatory mechanism. SIDDA/SIDF/SIDI
+        text says six products but lists seven; no product count is adopted. The current
+        UniProt gene symbol SIDDA is retained beside the FUNCTION label SIDD. Primary
+        methods were not inspected: the publisher returned HTTP403 and no alternate
+        retrieval was attempted. Database annotation, not independently inspected
+        primary experiments or a verified assayed allele. No generalization of a deletion
+        phenotype to every native strain or construct.'
+  description: Partial database-derived genetic production-effect view, separate from
+    direct tenellin assembly. Native ARSEF 2860 references SIDA, SIDDA/SIDD, SIDF
+    and SIDI have disruption annotations explicitly naming impaired tenellin production.
+    Their usual siderophore catalytic roles are not transferred into tenellin biosynthetic
+    reactions. Neither complete production loss, direct catalysis, ornithine incorporation,
+    a specific regulatory mechanism nor verified assayed alleles is asserted. SIDC/SIDL/SIDH
+    lack an equally specific tenellin production-effect statement in the inspected
+    annotations; they remain follow-up leads, not proven irrelevant. No source-owned
+    producer or cluster grade changes.
+curation_history:
+- timestamp: '2026-10-11T23:58:12Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add tenellin-arsef-siderophore-gene-effects for naturalproductmech:mibig-34ab171b17
+    from base 598d6b656ee3703b74a833807deb8fe9c3de7500; first two graph objects preserved
+    exactly from unmerged owner draft SHA256 696926c74d57ec820c6f897fd60f80a5fe66bcb170936622a252cabbbf7bd922,
+    whose history remains on the owner. Third component addresses issue836 with four
+    database-reported genetic production effects, not tenellin catalysis.
+  llm_assisted: true

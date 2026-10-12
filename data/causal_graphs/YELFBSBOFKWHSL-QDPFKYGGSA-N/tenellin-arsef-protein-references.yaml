@@ -1,0 +1,478 @@
+record_id: naturalproductmech:mibig-34ab171b17
+standard_inchi_key: YELFBSBOFKWHSL-QDPFKYGGSA-N
+graph:
+  graph_id: tenellin-arsef-protein-references
+  scope: BIOSYNTHESIS
+  nodes:
+  - node_id: tens
+    label: TenS (ARSEF 2860 reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:J4KMC1
+  - node_id: tenc
+    label: TenC (ARSEF 2860 reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:J5JCC9
+  - node_id: tena
+    label: TenA (ARSEF 2860 reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:J5JKC1
+  - node_id: tenb
+    label: TenB (ARSEF 2860 reference, corrected model)
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+    identifier: UniProtKB:J4UJ10
+  - node_id: tenr
+    label: TenR (ARSEF 2860 reference)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:J4VZG1
+  - node_id: assembly
+    label: TenS/TenC-dependent scaffold assembly
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: expansion
+    label: Pretenellin A oxidative ring expansion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hydroxylation
+    label: Pretenellin B N-hydroxylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: pretenellin_a
+    label: Pretenellin A (source spellings vary)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: pretenellin_b
+    label: Pretenellin B
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: tenellin
+    label: Tenellin (one stereocenter unspecified)
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: naturalproductmech:mibig-34ab171b17
+  - node_id: tenellin_production
+    label: Database-reported tenellin production contexts
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: pyridone_production
+    label: Tenellin-type 2-pyridone and intermediate production (broader phenotype)
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: tens
+    predicate: has_database_annotated_catalytic_role_in
+    object: assembly
+    notes: Selected ARSEF 2860 reference, not a verified experimental allele.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/J4KMC1/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed UniProtKB FUNCTION annotation, release 2026_03, entry 80, sequence
+        1. Scaffold assembly role attributed to PMID:18266306 and PMID:34903054. No
+        substrate carbon count, domain-absence assertion or complete balanced reaction
+        is adopted. Database annotation, not independently inspected primary experiments
+        or a verified assayed allele. No generalization of a deletion phenotype to
+        every native strain or construct.
+      snippet: TenS catalyzes the assembly of the polyketide-amino acid backbone
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EJP63694.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: 'Reference identity: tenS/BBA_07338, NCBITaxon:655819; coded_by join(JH725173.1:168696..169972,
+        JH725173.1:170096..173318,JH725173.1:173416..181623). Coordinates, strands,
+        codon start, complete start/stop and source cross-references checked. The
+        complete spliced native CDS, deposited translation, separately retrieved GenPept
+        and current UniProt sequence agree exactly (4235 aa). The scaffold and GenPept
+        source qualifiers explicitly name ARSEF 2860. Protein-existence annotation
+        remains 1: Evidence at protein level. No experimental construct identity or
+        functional experiment is newly established.'
+  - subject: tenc
+    predicate: has_database_annotated_catalytic_role_in
+    object: assembly
+    notes: Selected ARSEF 2860 reference, not a verified experimental allele.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/J5JCC9/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed UniProtKB FUNCTION annotation, release 2026_03, entry 44, sequence
+        1. Collaborating trans-enoyl reductase role attributed to PMID:18266306 and
+        PMID:34903054. Functional collaboration does not establish a stable physical
+        TenS-TenC complex. Database annotation, not independently inspected primary
+        experiments or a verified assayed allele. No generalization of a deletion
+        phenotype to every native strain or construct.
+      snippet: TenC collaborates with the hybrid PKS-NRPS synthetase tenS
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EJP63693.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: 'Reference identity: tenC/BBA_07337, NCBITaxon:655819; coded_by complement(JH725173.1:166856..168022).
+        Coordinates, strands, codon start, complete start/stop and source cross-references
+        checked. The complete spliced native CDS, deposited translation, separately
+        retrieved GenPept and current UniProt sequence agree exactly (388 aa). The
+        scaffold and GenPept source qualifiers explicitly name ARSEF 2860. Protein-existence
+        annotation remains 1: Evidence at protein level. No experimental construct
+        identity or functional experiment is newly established.'
+  - subject: tena
+    predicate: has_database_annotated_catalytic_role_in
+    object: expansion
+    notes: Selected ARSEF 2860 reference, not a verified experimental allele.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/J5JKC1/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed UniProtKB FUNCTION annotation, release 2026_03, entry 40, sequence
+        1. Oxidative ring expansion of pretenellin A to pretenellin B attributed to
+        PMID:19067514 and PMID:34903054. The separate pyridovericin branch is not
+        tenellin and is not imported. Database annotation, not independently inspected
+        primary experiments or a verified assayed allele. No generalization of a deletion
+        phenotype to every native strain or construct.
+      snippet: TenA catalyzes an oxidative ring expansion of pretenellin A
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EJP63691.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: 'Reference identity: tenA/BBA_07335, NCBITaxon:655819; coded_by join(JH725173.1:162502..163086,
+        JH725173.1:163154..164158). Coordinates, strands, codon start, complete start/stop
+        and source cross-references checked. The complete spliced native CDS, deposited
+        translation, separately retrieved GenPept and current UniProt sequence agree
+        exactly (529 aa). The scaffold and GenPept source qualifiers explicitly name
+        ARSEF 2860. Protein-existence annotation remains 1: Evidence at protein level.
+        No experimental construct identity or functional experiment is newly established.'
+  - subject: tenb
+    predicate: has_database_annotated_catalytic_role_in
+    object: hydroxylation
+    notes: J4UJ10 sequence version 2 is 544 aa; deposited EJP63692.1 and RefSeq XP_008600655.1
+      are 490 aa. UniProt marks the deposited gene model erroneous. The corrected
+      protein is not sequence-identical to those records. Its exact native splice/experimental
+      sequence remains REVIEW_NEEDED.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/J4UJ10/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed UniProtKB FUNCTION annotation, release 2026_03, entry 52, sequence
+        2. Selective N-hydroxylation attributed to PMID:19067514 and PMID:34903054.
+        The shared FUNCTION paragraph uses tellinin; the DISRUPTION PHENOTYPE names
+        tenellin and accumulation of pretenellin B. Product labels follow those contextual
+        annotations, not a new exact intermediate structure assignment. Database annotation,
+        not independently inspected primary experiments or a verified assayed allele.
+        No generalization of a deletion phenotype to every native strain or construct.
+      snippet: TenB catalyzes the selective N-hydroxylation of the 2-pyridone nitrogen
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EJP63692.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: 'Reference identity: tenB/BBA_07336, NCBITaxon:655819; coded_by complement(join(JH725173.1:164565..165962,
+        JH725173.1:166179..166253)). Coordinates, strands, codon start, complete start/stop
+        and source cross-references checked. J4UJ10 sequence version 2 is 544 aa;
+        deposited EJP63692.1 and RefSeq XP_008600655.1 are 490 aa. UniProt marks the
+        deposited gene model erroneous. The corrected protein is not sequence-identical
+        to those records. Its exact native splice/experimental sequence remains REVIEW_NEEDED.
+        The deposited 490-aa model reproduces from its scaffold CDS. Bounded sequence-guided
+        removal of 54 nt within the annotated 216-nt intron gives two models compatible
+        with the curated 544-aa protein, with noncanonical donor dinucleotides. These
+        are compatibility checks only, not validated exon boundaries or repaired annotations.
+        The scaffold and GenPept source qualifiers explicitly name ARSEF 2860. Protein-existence
+        annotation remains 1: Evidence at protein level. No experimental construct
+        identity or functional experiment is newly established.'
+  - subject: assembly
+    predicate: has_named_product
+    object: pretenellin_a
+    notes: Partial database-derived pathway view.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/J4KMC1/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed UniProtKB FUNCTION annotation, release 2026_03, entry 80, sequence
+        1. Scaffold assembly role attributed to PMID:18266306 and PMID:34903054. No
+        substrate carbon count, domain-absence assertion or complete balanced reaction
+        is adopted. Named-intermediate view only; cofactors, stereochemical outcomes
+        and detailed carbon accounting are omitted. The FUNCTION paragraph spells
+        the early intermediate pretellinin A in places; the TenA-specific sentence
+        names pretenellin A. No exact intermediate chemical identifiers are assigned.
+        Database annotation, not independently inspected primary experiments or a
+        verified assayed allele. No generalization of a deletion phenotype to every
+        native strain or construct.
+  - subject: pretenellin_a
+    predicate: is_named_substrate_of
+    object: expansion
+    notes: Partial database-derived pathway view.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/J5JKC1/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed UniProtKB FUNCTION annotation, release 2026_03, entry 40, sequence
+        1. Oxidative ring expansion of pretenellin A to pretenellin B attributed to
+        PMID:19067514 and PMID:34903054. The separate pyridovericin branch is not
+        tenellin and is not imported. Named-intermediate view only; cofactors, stereochemical
+        outcomes and detailed carbon accounting are omitted. The FUNCTION paragraph
+        spells the early intermediate pretellinin A in places; the TenA-specific sentence
+        names pretenellin A. No exact intermediate chemical identifiers are assigned.
+        Database annotation, not independently inspected primary experiments or a
+        verified assayed allele. No generalization of a deletion phenotype to every
+        native strain or construct.
+  - subject: expansion
+    predicate: has_named_product
+    object: pretenellin_b
+    notes: Partial database-derived pathway view.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/J5JKC1/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed UniProtKB FUNCTION annotation, release 2026_03, entry 40, sequence
+        1. Oxidative ring expansion of pretenellin A to pretenellin B attributed to
+        PMID:19067514 and PMID:34903054. The separate pyridovericin branch is not
+        tenellin and is not imported. Named-intermediate view only; cofactors, stereochemical
+        outcomes and detailed carbon accounting are omitted. The FUNCTION paragraph
+        spells the early intermediate pretellinin A in places; the TenA-specific sentence
+        names pretenellin A. No exact intermediate chemical identifiers are assigned.
+        Database annotation, not independently inspected primary experiments or a
+        verified assayed allele. No generalization of a deletion phenotype to every
+        native strain or construct.
+  - subject: pretenellin_b
+    predicate: is_named_substrate_of
+    object: hydroxylation
+    notes: Partial database-derived pathway view. J4UJ10 sequence version 2 is 544
+      aa; deposited EJP63692.1 and RefSeq XP_008600655.1 are 490 aa. UniProt marks
+      the deposited gene model erroneous. The corrected protein is not sequence-identical
+      to those records. Its exact native splice/experimental sequence remains REVIEW_NEEDED.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/J4UJ10/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed UniProtKB FUNCTION annotation, release 2026_03, entry 52, sequence
+        2. Selective N-hydroxylation attributed to PMID:19067514 and PMID:34903054.
+        The shared FUNCTION paragraph uses tellinin; the DISRUPTION PHENOTYPE names
+        tenellin and accumulation of pretenellin B. Product labels follow those contextual
+        annotations, not a new exact intermediate structure assignment. Named-intermediate
+        view only; cofactors, stereochemical outcomes and detailed carbon accounting
+        are omitted. The FUNCTION paragraph spells the early intermediate pretellinin
+        A in places; the TenA-specific sentence names pretenellin A. No exact intermediate
+        chemical identifiers are assigned. Database annotation, not independently
+        inspected primary experiments or a verified assayed allele. No generalization
+        of a deletion phenotype to every native strain or construct.
+  - subject: hydroxylation
+    predicate: has_named_product
+    object: tenellin
+    notes: Partial database-derived pathway view. J4UJ10 sequence version 2 is 544
+      aa; deposited EJP63692.1 and RefSeq XP_008600655.1 are 490 aa. UniProt marks
+      the deposited gene model erroneous. The corrected protein is not sequence-identical
+      to those records. Its exact native splice/experimental sequence remains REVIEW_NEEDED.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/J4UJ10/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed UniProtKB FUNCTION annotation, release 2026_03, entry 52, sequence
+        2. Selective N-hydroxylation attributed to PMID:19067514 and PMID:34903054.
+        The shared FUNCTION paragraph uses tellinin; the DISRUPTION PHENOTYPE names
+        tenellin and accumulation of pretenellin B. Product labels follow those contextual
+        annotations, not a new exact intermediate structure assignment. Named-intermediate
+        view only; cofactors, stereochemical outcomes and detailed carbon accounting
+        are omitted. The FUNCTION paragraph spells the early intermediate pretellinin
+        A in places; the TenA-specific sentence names pretenellin A. No exact intermediate
+        chemical identifiers are assigned. Database annotation, not independently
+        inspected primary experiments or a verified assayed allele. No generalization
+        of a deletion phenotype to every native strain or construct.
+  - subject: tena
+    predicate: has_database_annotated_disruption_associated_loss_of
+    object: tenellin_production
+    notes: Database annotation, not independently inspected primary experiments or
+      a verified assayed allele. No generalization of a deletion phenotype to every
+      native strain or construct.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/J5JKC1/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed UniProtKB DISRUPTION PHENOTYPE annotation, release 2026_03,
+        entry 40, sequence 1. The database reports failure to produce tenellin after
+        disruption (PMID:19067514 and PMID:34903054). This is an annotation spanning
+        experimental contexts, not newly established strain-specific essentiality.
+        Database annotation, not independently inspected primary experiments or a
+        verified assayed allele. No generalization of a deletion phenotype to every
+        native strain or construct.
+  - subject: tenb
+    predicate: has_database_annotated_disruption_associated_loss_of
+    object: tenellin_production
+    notes: Database annotation, not independently inspected primary experiments or
+      a verified assayed allele. No generalization of a deletion phenotype to every
+      native strain or construct. J4UJ10 sequence version 2 is 544 aa; deposited EJP63692.1
+      and RefSeq XP_008600655.1 are 490 aa. UniProt marks the deposited gene model
+      erroneous. The corrected protein is not sequence-identical to those records.
+      Its exact native splice/experimental sequence remains REVIEW_NEEDED.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/J4UJ10/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed UniProtKB DISRUPTION PHENOTYPE annotation, release 2026_03,
+        entry 52, sequence 2. The database reports failure to produce tenellin after
+        disruption (PMID:19067514 and PMID:34903054). This is an annotation spanning
+        experimental contexts, not newly established strain-specific essentiality.
+        Pretenellin B accumulation is attributed to PMID:19067514; the separate pyridovericin
+        accumulation attributed to PMID:34903054 is not treated as tenellin. Database
+        annotation, not independently inspected primary experiments or a verified
+        assayed allele. No generalization of a deletion phenotype to every native
+        strain or construct.
+  - subject: tens
+    predicate: has_database_annotated_disruption_associated_impairment_of
+    object: pyridone_production
+    notes: The reported phenotype covers a broader compound class and intermediates;
+      it is not relabelled as complete loss of this exact tenellin structure.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/J4KMC1/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed UniProtKB DISRUPTION PHENOTYPE annotation, release 2026_03,
+        entry 80, sequence 1. Impairment of tenellin-type 2-pyridones and intermediates,
+        attributed to PMID:17216664 and PMID:34903054; no exact tenellin-only essentiality
+        claim. Database annotation, not independently inspected primary experiments
+        or a verified assayed allele. No generalization of a deletion phenotype to
+        every native strain or construct.
+  - subject: tenellin_production
+    predicate: has_named_product
+    object: tenellin
+    notes: Product context, not a separate catalytic step or production in every mutant.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/J4UJ10/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed UniProtKB DISRUPTION PHENOTYPE annotation, release 2026_03,
+        entry 52, sequence 2. The phenotype annotation explicitly names tenellin.
+        Stored SMILES, InChI and InChIKey agree with PubChem CID54704235 and pinned
+        RDKit but leave one stereocenter unspecified. Database annotation, not independently
+        inspected primary experiments or a verified assayed allele. No generalization
+        of a deletion phenotype to every native strain or construct.
+  - subject: tenr
+    predicate: has_database_annotated_positive_expression_effect_on
+    object: tens
+    notes: Database annotation, not independently inspected primary experiments or
+      a verified assayed allele. No generalization of a deletion phenotype to every
+      native strain or construct.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/J4VZG1/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed UniProtKB FUNCTION annotation, release 2026_03, entry 72, sequence
+        1. TenR is annotated to positively regulate pathway-gene expression (PMID:34903054).
+        No direct promoter binding, physical complex, gene deletion essentiality or
+        native assay construct is asserted. Database annotation, not independently
+        inspected primary experiments or a verified assayed allele. No generalization
+        of a deletion phenotype to every native strain or construct.
+      snippet: Transcription factor that positively regulates the expression of the
+        genes
+    - reference: https://www.uniprot.org/uniprotkb/J4KMC1/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed UniProtKB INDUCTION annotation, release 2026_03, entry 80, sequence
+        1. The target INDUCTION annotation names tenR. TenS INDUCTION cites PMID:17216664,
+        whereas TenR FUNCTION cites PMID:34903054; this citation mismatch is retained
+        as unresolved, not interpreted as the same experiment. Database annotation,
+        not independently inspected primary experiments or a verified assayed allele.
+        No generalization of a deletion phenotype to every native strain or construct.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EJP63690.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-11'
+      notes: 'Reference identity: tenR/BBA_07334, NCBITaxon:655819; coded_by complement(JH725173.1:158525..161152).
+        Coordinates, strands, codon start, complete start/stop and source cross-references
+        checked. The complete spliced native CDS, deposited translation, separately
+        retrieved GenPept and current UniProt sequence agree exactly (875 aa). The
+        scaffold and GenPept source qualifiers explicitly name ARSEF 2860. Protein-existence
+        annotation remains 3: Inferred from homology. No experimental construct identity
+        or functional experiment is newly established.'
+  - subject: tenr
+    predicate: has_database_annotated_positive_expression_effect_on
+    object: tenc
+    notes: Database annotation, not independently inspected primary experiments or
+      a verified assayed allele. No generalization of a deletion phenotype to every
+      native strain or construct.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/J4VZG1/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed UniProtKB FUNCTION annotation, release 2026_03, entry 72, sequence
+        1. TenR is annotated to positively regulate pathway-gene expression (PMID:34903054).
+        No direct promoter binding, physical complex, gene deletion essentiality or
+        native assay construct is asserted. Database annotation, not independently
+        inspected primary experiments or a verified assayed allele. No generalization
+        of a deletion phenotype to every native strain or construct.
+    - reference: https://www.uniprot.org/uniprotkb/J5JCC9/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed UniProtKB INDUCTION annotation, release 2026_03, entry 44, sequence
+        1. The target INDUCTION annotation names tenR and cites PMID:34903054. Database
+        annotation, not independently inspected primary experiments or a verified
+        assayed allele. No generalization of a deletion phenotype to every native
+        strain or construct.
+  - subject: tenr
+    predicate: has_database_annotated_positive_expression_effect_on
+    object: tena
+    notes: Database annotation, not independently inspected primary experiments or
+      a verified assayed allele. No generalization of a deletion phenotype to every
+      native strain or construct.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/J4VZG1/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed UniProtKB FUNCTION annotation, release 2026_03, entry 72, sequence
+        1. TenR is annotated to positively regulate pathway-gene expression (PMID:34903054).
+        No direct promoter binding, physical complex, gene deletion essentiality or
+        native assay construct is asserted. Database annotation, not independently
+        inspected primary experiments or a verified assayed allele. No generalization
+        of a deletion phenotype to every native strain or construct.
+    - reference: https://www.uniprot.org/uniprotkb/J5JKC1/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed UniProtKB INDUCTION annotation, release 2026_03, entry 40, sequence
+        1. The target INDUCTION annotation names tenR and cites PMID:34903054. Database
+        annotation, not independently inspected primary experiments or a verified
+        assayed allele. No generalization of a deletion phenotype to every native
+        strain or construct.
+  - subject: tenr
+    predicate: has_database_annotated_positive_expression_effect_on
+    object: tenb
+    notes: Database annotation, not independently inspected primary experiments or
+      a verified assayed allele. No generalization of a deletion phenotype to every
+      native strain or construct. J4UJ10 sequence version 2 is 544 aa; deposited EJP63692.1
+      and RefSeq XP_008600655.1 are 490 aa. UniProt marks the deposited gene model
+      erroneous. The corrected protein is not sequence-identical to those records.
+      Its exact native splice/experimental sequence remains REVIEW_NEEDED.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/J4VZG1/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed UniProtKB FUNCTION annotation, release 2026_03, entry 72, sequence
+        1. TenR is annotated to positively regulate pathway-gene expression (PMID:34903054).
+        No direct promoter binding, physical complex, gene deletion essentiality or
+        native assay construct is asserted. Database annotation, not independently
+        inspected primary experiments or a verified assayed allele. No generalization
+        of a deletion phenotype to every native strain or construct.
+    - reference: https://www.uniprot.org/uniprotkb/J4UJ10/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-11'
+      notes: Reviewed UniProtKB INDUCTION annotation, release 2026_03, entry 52, sequence
+        2. The target INDUCTION annotation names tenR and cites PMID:34903054. Database
+        annotation, not independently inspected primary experiments or a verified
+        assayed allele. No generalization of a deletion phenotype to every native
+        strain or construct.
+  description: Partial ARSEF 2860 reference view of tenellin assembly, oxidative ring
+    expansion, N-hydroxylation and database-reported genetic effects. References are
+    not verified experimental alleles; database annotations aggregate citations across
+    strains and constructs. TenS/TenC collaboration is not a physical-complex claim.
+    Named intermediates remain chemically ungrounded; variable source spellings, detailed
+    precursor accounting and exact stereochemical assignments remain unresolved. Broader
+    2-pyridone impairment is separated from tenellin loss. No congener-specific glycosylation,
+    siderophore mechanism, bioactivity target, host-infection phenotype or engineered
+    domain-swap product is transferred to tenellin. J4UJ10 sequence version 2 is 544
+    aa; deposited EJP63692.1 and RefSeq XP_008600655.1 are 490 aa. UniProt marks the
+    deposited gene model erroneous. The corrected protein is not sequence-identical
+    to those records. Its exact native splice/experimental sequence remains REVIEW_NEEDED.
+    TenR regulation does not establish direct DNA binding; the TenS induction citation
+    mismatch is not resolved.
+curation_history:
+- timestamp: '2026-10-11T23:58:12Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add tenellin-arsef-protein-references for naturalproductmech:mibig-34ab171b17
+    from base 598d6b656ee3703b74a833807deb8fe9c3de7500; first two graph objects preserved
+    exactly from unmerged owner draft SHA256 696926c74d57ec820c6f897fd60f80a5fe66bcb170936622a252cabbbf7bd922,
+    whose history remains on the owner. Third component addresses issue836 with four
+    database-reported genetic production effects, not tenellin catalysis.
+  llm_assisted: true

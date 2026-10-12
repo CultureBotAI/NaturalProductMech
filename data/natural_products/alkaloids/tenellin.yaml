@@ -85,6 +85,62 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+causal_graph_refs:
+- tenellin-cbs-protein-references
+- tenellin-arsef-protein-references
+- tenellin-arsef-siderophore-gene-effects
+discussions:
+- discussion_id: curator-tenellin-reference-model-and-evidence-limits
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: Which experimental sequences resolve ARSEF TenB and the TenS induction citation,
+    and what primary evidence establishes exact intermediates and product stereochemistry?
+  rationale: Thirteen reviewed references are represented; twelve match deposited
+    CDS translations and corrected TenB remains unresolved. Database roles are not
+    evidence of identical assayed alleles or a complete pathway.
+  notes: 'J4UJ10 sequence version 2 is 544 aa; deposited EJP63692.1 and RefSeq XP_008600655.1
+    are 490 aa. UniProt marks the deposited gene model erroneous. The corrected protein
+    is not sequence-identical to those records. Its exact native splice/experimental
+    sequence remains REVIEW_NEEDED. The two noncanonical, sequence-compatible local
+    splice models are not adopted as validated gene models. TenR/J4VZG1 remains protein-existence
+    3 (inferred from homology); CBS TenC/A0JJU0 remains level 2 (transcript). The
+    TenS induction citation PMID:17216664 differs from the TenR-function citation
+    PMID:34903054. The shared UniProt text uses triketide and variable intermediate/product
+    spellings; detailed carbon accounting and exact intermediate identifiers are withheld
+    pending primary review. The stored product agrees with PubChem CID54704235 and
+    RDKit 2026.03.5 but has one unassigned stereocenter. The search-returned abstract
+    of DOI:10.1021/ja206914q / PMID:21899331 describes engineered domain swaps in
+    Aspergillus oryzae; it does not establish an unmodified native experimental allele.
+    The TenB accession A0JJT9 also cross-references HM243222/ADN43683.1 from desmethylbassianin
+    strain 992.05; this graph uses the separately verified AM409327.1/CAL69595.1 mapping
+    and does not treat the clusters or congeners as equivalent. GT1/J4VV61 and MT1/J4KLK4
+    annotations concern 15-hydroxytenellin glycosylation/methylation, not native tenellin
+    formation. Adversarial review issue836 identified four omitted tenellin-linked
+    genetic effects. SIDA/J4W6X9, SIDDA/SIDD/J4UJF5, SIDF/J4W0D1 and SIDI/J5JLF2 are
+    now separately represented from explicit tenellin-impairment annotations, not
+    as tenellin catalytic enzymes or a resolved indirect mechanism. All four reference
+    sequences match native CDS and GenPept but retain protein-existence level 3 (inferred
+    from homology). SIDC/SIDL/SIDH lack equally specific tenellin effects in the inspected
+    annotations; GT1/MT1 concern a different glycoside and stpks1 concerns strobilurin.
+    These remain follow-up leads for appropriate owners, not proof of global irrelevance.
+    The third component fixes the missing effects; the first two graphs are migrated
+    without biological changes because the complete inline record would exceed 64
+    KiB. Four source requests stopped: DOI:10.1021/acs.jafc.4c02957 returned HTTP403;
+    PMID:34903054 returned a browser challenge; DOI:10.1021/ja807052c and DOI:10.1002/cbic.200700390
+    were inaccessible through the tool without a specific publisher error established.
+    No alternate retrieval was attempted. Source-owned chemistry, MIBiG/LOTUS claims,
+    producer/BGC grades and SEEDED status are unchanged; this is not full-record REVIEWED
+    sign-off.'
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/J4UJ10/entry
+    evidence_source: Reviewed UniProtKB sequence caution; release 2026_03, retrieved
+      2026-10-11
+    notes: Corrected 544-aa sequence version 2 differs from its deposited 490-aa GenPept/RefSeq
+      gene model.
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/54704235
+    evidence_source: PubChem exact-InChIKey lookup, retrieved 2026-10-11
+    notes: Matches the stored unspecified-stereocenter representation, not a newly
+      established natural stereoisomer.
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -94,3 +150,23 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-11T23:46:44Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add nine strain-separated tenellin protein references with stable URLs
+    and short evidence snippets in two BIOSYNTHESIS graphs. Eight match native CDS/GenPept/UniProt
+    sequences; corrected ARSEF TenB remains REVIEW_NEEDED. Distinguish database annotations
+    from inspected experiments, loss from broader impairment, native from engineered/congener
+    pathways, and unresolved stereochemistry. Preserve all source-owned fields, history
+    and SEEDED status.
+  llm_assisted: true
+- timestamp: '2026-10-11T23:58:08Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: 'Address adversarial review issue836: retain four additional native SIDA,
+    SIDDA/SIDD, SIDF and SIDI references with explicitly database-level tenellin-impairment
+    effects, not direct catalytic assignments. Correct overbroad siderophore exclusions.
+    Preserve the first two graphs exactly while moving all three to exact-owner components
+    to meet the 64-KiB review limit. Preserve source fields, corrected-TenB uncertainty,
+    old history and SEEDED status.'
+  llm_assisted: true
