@@ -500,10 +500,15 @@ discussions:
   status: OPEN
   prompt: How should the NRRL864 MpaH' canonical433-aa sequence be reconciled with
     deposited AJG44385.1/KM595305.1 (398aa)?
-  rationale: UniProt marks AJG44385.1 as an erroneous gene model (ALT_SEQ). Native
+  rationale: 'UniProt marks AJG44385.1 as an erroneous gene model (ALT_SEQ). Native
     CDS translation confirms the398-aa deposit, not the corrected433-aa canonical
-    sequence. MpaH' is not added as a grounded graph protein in this curation. Independent
-    structural sequence mapping remains a lead, not an inspected resolution.
+    sequence. MpaH'' is not added as a grounded graph protein in this curation. Independent
+    structural sequence mapping remains a lead, not an inspected resolution. Follow-up2026-10-12:
+    independent7DBI entity sequence agrees with all433 canonical residues after SeMet
+    normalization; 7DBL agrees except documentedS139A. This now supports a separate
+    structural-reference graph, but does not repair the398-aa genomic model or authenticate
+    the2025 assay construct. The native-model question remains OPEN; the earlier reference
+    graph remains unchanged.'
   evidence:
   - reference: https://www.uniprot.org/uniprotkb/A0A0B5LB55
     evidence_source: Reviewed UniProt sequence caution, inspected2026-10-12
@@ -512,6 +517,10 @@ discussions:
     evidence_source: Independent native GenPept and complete genomic CDS translation
     notes: KM595305.1 three-exon model translates to398aa and disagrees with canonical
       UniProt.
+  - reference: https://www.ebi.ac.uk/pdbe/entry-files/download/7dbi.cif
+    evidence_source: Independent structural entity sequence comparison,2026-10-12
+    notes: Declared sequence433aa equals canonical UniProt; observed coordinates cover
+      only417-420 residues per chain. Native splice model unresolved.
 causal_graphs:
 - graph_id: mycophenolic-acid-impdh-inhibition
   scope: BIOACTIVITY
@@ -837,6 +846,8 @@ causal_graphs:
 causal_graph_refs:
 - mycophenolic-acid-nrrl864-core-biosynthesis-reference
 - mycophenolic-acid-ibt23078-core-biosynthesis-reference
+- mycophenolic-acid-pb864-sidechain-reconstitution
+- mycophenolic-acid-mpah-prime-structural-reference
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -912,4 +923,17 @@ curation_history:
   changes: 'Resolve review issue863: restore the existing discussions-before-causal_graphs
     field order required by byte-identical seeding. Preserve all biological values,
     prior history and both component files; formatting-order repair only.'
+  llm_assisted: true
+- timestamp: '2026-10-12T14:35:34Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add eight paper-labelled side-chain enzymes and the paper-labelled MpaH'
+    assay in a2025 reconstitution graph, with claim-level DOI citations and a short
+    verbatim snippet. Ground the separate MpaH' canonical reference to UniProtKB:A0A0B5LB55
+    via independent7DBI/7DBL entity sequences, preserving apo/SeMet/S139A/partial-coordinate
+    distinctions and database-only reaction provenance. Do not authenticate2025 constructs
+    or repair the398-aa native model. Keep ACL891 candidateP9WEY3 unadopted. Preserve
+    all five existing graphs, source grades, other discussions, SEEDED status, AntibioticMech
+    link and previous history; no full-record sign-off. Store new graphs as exact-owner
+    components.
   llm_assisted: true

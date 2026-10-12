@@ -1,0 +1,524 @@
+record_id: CHEBI:168396
+standard_inchi_key: HPNSFSBZBAHARI-RUDMXATFSA-N
+graph:
+  graph_id: mycophenolic-acid-pb864-sidechain-reconstitution
+  scope: BIOSYNTHESIS
+  description: Penicillium brevicompactum NRRL864 (Pb864), in-vitro side-chain assembly.
+    Compound numbers follow Fan et al. 2025. Cached main text and captions only; supplementary
+    sequences and methods were inaccessible. Paper-labelled proteins remain ungrounded
+    or review-needed, not substituted with homologs. No native necessity, physiological
+    rate limit, localization, preferred methylation order or quantitative kinetics
+    is asserted. The demethylated branch stops at 3-CoA here; no unrepresented downstream
+    steps are implied.
+  nodes:
+  - node_id: pbacl75
+    label: PbACL75 (Pb864 paper label)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: pbacl1224
+    label: PbACL1224 (Pb864 paper label)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: pbacl891
+    label: PbACL891 (Pb864 paper label)
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+  - node_id: pbacox323
+    label: PbACOX323 (Pb864 paper label)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: pbdecr799
+    label: PbDECR799 (Pb864 paper label)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: pbeci1007
+    label: PbECI1007 (Pb864 paper label)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: pbechd1071
+    label: PbECHD1071 (Pb864 paper label)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: pbkt298
+    label: PbKT298 (Pb864 paper label)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: mpah_prime
+    label: MpaH' (2025 assay label)
+    node_type: ENZYME
+    grounding_status: REVIEW_NEEDED
+  - node_id: c2
+    label: MFDHMP-3C (2)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: c3
+    label: FDHMP-3C (3)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: c2_coa
+    label: MFDHMP-3C-CoA (2-CoA)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: c3_coa
+    label: FDHMP-3C-CoA (3-CoA)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: c5_coa
+    label: 2,4-Dienoyl intermediate (5-CoA)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: c9_coa
+    label: 3-Enoyl intermediate (9-CoA)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: c10_coa
+    label: 2-Enoyl intermediate (10-CoA)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: c7_coa
+    label: 3-Hydroxy intermediate (7-CoA)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: c8_coa
+    label: 3-Keto intermediate (8-CoA)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: c6_coa
+    label: MFDHMP-5C-CoA (6-CoA)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: c4_coa
+    label: 2-Enoyl intermediate (4-CoA)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: c12_coa
+    label: 3-Hydroxy intermediate (12-CoA)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: c11_coa
+    label: 3-Keto intermediate (11-CoA)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: c1_coa
+    label: MPA-CoA (1-CoA)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: mpa
+    label: mycophenolic acid
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: CHEBI:168396
+  - node_id: acetyl_coa
+    label: Acetyl-CoA
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: propionyl_coa
+    label: Propionyl-CoA
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: activation_2
+    label: CoA ligation of 2
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: activation_3
+    label: CoA ligation of 3
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: oxidation_1
+    label: First-cycle desaturation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: reduction
+    label: Dienoyl-CoA reduction
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: isomerization
+    label: Delta3-to-Delta2 isomerization
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hydration_dehydrogenation_1
+    label: First-cycle hydration/dehydrogenation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: thiolysis_1
+    label: First-cycle thiolysis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: oxidation_2
+    label: Second-cycle desaturation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hydration_dehydrogenation_2
+    label: Second-cycle hydration/dehydrogenation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: thiolysis_2
+    label: Second-cycle thiolysis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hydrolysis
+    label: MPA-CoA hydrolysis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: pbacl75
+    predicate: catalyzes_in_reported_assay
+    object: activation_2
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.1.
+      snippet: PbACL75, PbACL1224, PbACL891
+    notes: ATP, CoA, Mg2+; individual purified ligases.
+  - subject: pbacl1224
+    predicate: catalyzes_in_reported_assay
+    object: activation_2
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.1.
+  - subject: pbacl891
+    predicate: catalyzes_in_reported_assay
+    object: activation_2
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.1.
+    - reference: https://www.uniprot.org/uniprotkb/P9WEY3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed ACL891,707aa,taxon5074; cites PMID31209052, not the 2025 experiment.
+        Species-level candidate only.
+    notes: P9WEY3 is an unadopted species/name candidate; the 2025 construct sequence
+      was not inspected.
+  - subject: c2
+    predicate: is_reported_substrate_of
+    object: activation_2
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.1.
+  - subject: activation_2
+    predicate: has_reported_product
+    object: c2_coa
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.1.
+  - subject: pbacl75
+    predicate: catalyzes_in_reported_assay
+    object: activation_3
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.1.
+  - subject: pbacl1224
+    predicate: catalyzes_in_reported_assay
+    object: activation_3
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.1.
+  - subject: pbacl891
+    predicate: catalyzes_in_reported_assay
+    object: activation_3
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.1.
+  - subject: c3
+    predicate: is_reported_substrate_of
+    object: activation_3
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.1.
+  - subject: activation_3
+    predicate: has_reported_product
+    object: c3_coa
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.1.
+  - subject: pbacox323
+    predicate: catalyzes_in_reported_assay
+    object: oxidation_1
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.2.
+  - subject: c2_coa
+    predicate: is_reported_substrate_of
+    object: oxidation_1
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.2.
+  - subject: oxidation_1
+    predicate: has_reported_product
+    object: c5_coa
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.2.
+  - subject: pbdecr799
+    predicate: catalyzes_in_reported_assay
+    object: reduction
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.3.
+    notes: NADPH-dependent assay.
+  - subject: c5_coa
+    predicate: is_reported_substrate_of
+    object: reduction
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.3.
+  - subject: reduction
+    predicate: has_reported_product
+    object: c9_coa
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.3.
+  - subject: pbeci1007
+    predicate: catalyzes_in_reported_assay
+    object: isomerization
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.4.
+    notes: Reported hydrolysis/chiral-HPLC and NMR distinguish the isomers despite
+      initial coelution.
+  - subject: c9_coa
+    predicate: is_reported_substrate_of
+    object: isomerization
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.4.
+  - subject: isomerization
+    predicate: has_reported_product
+    object: c10_coa
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.4.
+  - subject: pbechd1071
+    predicate: catalyzes_in_reported_assay
+    object: hydration_dehydrogenation_1
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.5; 2.7.
+    notes: Combined transformation; NAD+/FAD assay. Cofactor mechanism unresolved;
+      not two isolated half-reaction assays.
+  - subject: c10_coa
+    predicate: is_reported_substrate_of
+    object: hydration_dehydrogenation_1
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.5; 2.7.
+  - subject: hydration_dehydrogenation_1
+    predicate: has_reported_product
+    object: c8_coa
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.5; 2.7.
+  - subject: hydration_dehydrogenation_1
+    predicate: has_reported_detected_intermediate
+    object: c7_coa
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.5; 2.7.
+    notes: Intermediate detected in the one-pot system; attribution follows the reported
+      reaction scheme.
+  - subject: pbkt298
+    predicate: catalyzes_in_reported_assay
+    object: thiolysis_1
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.6.
+    notes: Enzyme addition to the specified reconstituted mixture, not an isolated-substrate
+      assay.
+  - subject: c8_coa
+    predicate: is_reported_substrate_of
+    object: thiolysis_1
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.6.
+  - subject: thiolysis_1
+    predicate: has_reported_product
+    object: c6_coa
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.6.
+  - subject: thiolysis_1
+    predicate: has_reported_product
+    object: acetyl_coa
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.6.
+  - subject: pbacox323
+    predicate: catalyzes_in_reported_assay
+    object: oxidation_2
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.2.
+  - subject: c6_coa
+    predicate: is_reported_substrate_of
+    object: oxidation_2
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.2.
+  - subject: oxidation_2
+    predicate: has_reported_product
+    object: c4_coa
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.2.
+  - subject: pbechd1071
+    predicate: catalyzes_in_reported_assay
+    object: hydration_dehydrogenation_2
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.5; 2.7.
+    notes: Combined transformation; NAD+/FAD assay. Cofactor mechanism unresolved;
+      not two isolated half-reaction assays.
+  - subject: c4_coa
+    predicate: is_reported_substrate_of
+    object: hydration_dehydrogenation_2
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.5; 2.7.
+  - subject: hydration_dehydrogenation_2
+    predicate: has_reported_product
+    object: c11_coa
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.5; 2.7.
+  - subject: hydration_dehydrogenation_2
+    predicate: has_reported_detected_intermediate
+    object: c12_coa
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.5; 2.7.
+    notes: Intermediate detected in the one-pot system; attribution follows the reported
+      reaction scheme.
+  - subject: pbkt298
+    predicate: catalyzes_in_reported_assay
+    object: thiolysis_2
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.6.
+    notes: Enzyme addition to the specified reconstituted mixture, not an isolated-substrate
+      assay.
+  - subject: c11_coa
+    predicate: is_reported_substrate_of
+    object: thiolysis_2
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.6.
+  - subject: thiolysis_2
+    predicate: has_reported_product
+    object: c1_coa
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.6.
+  - subject: thiolysis_2
+    predicate: has_reported_product
+    object: propionyl_coa
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.6.
+  - subject: mpah_prime
+    predicate: catalyzes_in_reported_assay
+    object: hydrolysis
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.7; Figure2 caption.
+    notes: Addition to the final cascade mixture. The independent 2021 structure does
+      not authenticate this 2025 construct.
+  - subject: c1_coa
+    predicate: is_reported_substrate_of
+    object: hydrolysis
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.7; Figure2 caption.
+  - subject: hydrolysis
+    predicate: has_reported_product
+    object: mpa
+    evidence:
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Main text, section2.7; Figure2 caption.
+curation_history:
+- timestamp: '2026-10-12T14:35:34Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add scoped side-chain protein evidence for CHEBI:168396 on baseline 0884f349d8d00a68b071512b20c2fe4ab424e2de.
+    Existing graphs are preserved; not full-record sign-off.
+  llm_assisted: true
