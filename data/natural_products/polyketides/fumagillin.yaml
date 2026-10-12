@@ -247,6 +247,284 @@ causal_graphs:
       retrieved_on: '2026-10-12'
       notes: 'Figure4B: LC-MS-supported compound4-to-compound1 conversion. Individual
         oxidative intermediates were not directly resolved by this assay.'
+- graph_id: fumagillin-p450-cpr-kr-assays
+  scope: BIOSYNTHESIS
+  description: Precursor assays in fumagillin biosynthesis, not a complete or obligatorily
+    ordered native pathway. Three Af293 references are separate from accession-unresolved
+    experimental constructs. BJ5464-NpgA is the expression host; complete inserts
+    and exact fungal source strains remain unverified. The combined microsomal assay
+    is distinct from the existing Fma-ABM terminal conversion. Purified KR pairs follow
+    Figure 8 and Results; the methods paragraph swaps the first two product numbers.
+    No producer upgrade, native essentiality, isolated CPR sufficiency or kinetic
+    constants are asserted.
+  nodes:
+  - node_id: p450_af293
+    label: Fma-P450 (Af293 reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4WAZ6
+  - node_id: p450_assayed
+    label: Fma-P450 (experimental construct)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: kr_af293
+    label: Fma-KR (Af293 reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4WAZ4
+  - node_id: kr_assayed
+    label: Fma-KR (experimental construct)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: cpr_af293
+    label: AfCPR (Af293 reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4WM67
+  - node_id: cpr_assayed
+    label: AfCPR (experimental construct)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: combined_assay
+    label: P450/CPR microsomes plus purified KR assay
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: compound_8
+    label: 5R-hydroxy-beta-trans-bergamotene (paper compound 8)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: compound_6
+    label: 6-demethoxyfumagillol (paper compound 6)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: compound_21
+    label: 5-keto-cordycol (paper compound 21)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: compound_22
+    label: 5-keto-demethoxyfumagillol (paper compound 22)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: compound_23
+    label: 5-keto-fumagillol (paper compound 23)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: compound_9
+    label: cordycol (paper compound 9)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: compound_2
+    label: fumagillol (paper compound 2)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: kr_reduction_21
+    label: Fma-KR reduction of compound 21
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: kr_reduction_22
+    label: Fma-KR reduction of compound 22
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: kr_reduction_23
+    label: Fma-KR reduction of compound 23
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: p450_af293
+    predicate: is_reference_example_for
+    object: p450_assayed
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q4WAZ6/entry
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: Selected AFUA_8G00510 native Af293 reference, not sequence identity of
+        the experimental insert. UniProt release 2026_03, complete spliced genomic
+        CDS and EAL85116.1 agree exactly (536 aa; taxon 330879). Full experimental
+        allele and source-strain equivalence remain unverified.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EAL85116.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Versioned Af293 sequence; coded_by join(AAHF01000014.1:681143..681672,
+        AAHF01000014.1:681727..682807). Coordinates, strand and complete CDS translation
+        verified without splice repair.
+  - subject: kr_af293
+    predicate: is_reference_example_for
+    object: kr_assayed
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q4WAZ4/entry
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: Selected AFUA_8G00490 native Af293 reference, not sequence identity of
+        the experimental insert. UniProt release 2026_03, complete spliced genomic
+        CDS and EAL85118.1 agree exactly (1017 aa; taxon 330879). Full experimental
+        allele and source-strain equivalence remain unverified.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EAL85118.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Versioned Af293 sequence; coded_by complement(join(AAHF01000014.1:685490..685801,
+        AAHF01000014.1:685856..686210, AAHF01000014.1:686258..688644)). Coordinates,
+        strand and complete CDS translation verified without splice repair.
+  - subject: cpr_af293
+    predicate: is_reference_example_for
+    object: cpr_assayed
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q4WM67/entry
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: Selected AFUA_6G10990 native Af293 reference, not sequence identity of
+        the experimental insert. UniProt release 2026_03, complete spliced genomic
+        CDS and EAL88947.1 agree exactly (695 aa; taxon 330879). Full experimental
+        allele and source-strain equivalence remain unverified.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EAL88947.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Versioned Af293 sequence; coded_by complement(join(AAHF01000006.1:1387496..1387792
+        ,AAHF01000006.1:1387850..1389640)). Coordinates, strand and complete CDS translation
+        verified without splice repair.
+  - subject: p450_assayed
+    predicate: catalyzes_in_microsomal_fraction
+    object: combined_assay
+    evidence:
+    - reference: DOI:10.1021/ja500881e
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure 8E and supplement S9-S10: pHCfmaP450 and pHCfmaCPR coexpression
+        in yeast; P450 remains in microsomes. S9 describes an N-terminal His6 tag.
+        Not purified-P450 sufficiency.'
+  - subject: cpr_assayed
+    predicate: is_coexpressed_redox_partner_in
+    object: combined_assay
+    evidence:
+    - reference: DOI:10.1021/ja500881e
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Figure 8E; supplement S5/S9-S10 identifies AFUA_6G10990 and pHCfmaCPR.
+        AfCPR is present in the microsomal preparation; no isolated CPR omission/rescue
+        experiment or necessity/sufficiency claim.
+  - subject: kr_assayed
+    predicate: is_added_purified_enzyme_in
+    object: combined_assay
+    evidence:
+    - reference: DOI:10.1021/ja500881e
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure 8E and supplement S8-S10: pHCfmaKR expression in BJ5464-NpgA,
+        His6-tagged soluble protein purified by Ni-NTA. Assay contains 10 uM Fma-KR,
+        10 mg/mL wet microsomes and NADPH regeneration.'
+  - subject: compound_8
+    predicate: is_substrate_in
+    object: combined_assay
+    evidence:
+    - reference: DOI:10.1021/ja500881e
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure 8E and supplement S10: 1 mM compound 8, 2 mM NADPH, 100 mM PBS
+        pH 7.4, 100 uL total. The overnight endpoint is not a kinetic constant.'
+      snippet: The reaction was incubated at room temperature overnight
+  - subject: combined_assay
+    predicate: produces_detected_product
+    object: compound_6
+    evidence:
+    - reference: DOI:10.1021/ja500881e
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure 8E and Results: LC-MS detects 6 among the products; not an exclusive-product
+        or quantitative-yield claim. Fma-KR shifts the profile toward the natural
+        5R-hydroxy isomer. Microscopic step order is not established by this combined
+        assay.'
+  - subject: kr_assayed
+    predicate: catalyzes
+    object: kr_reduction_21
+    evidence:
+    - reference: DOI:10.1021/ja500881e
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure 8A and Results: purified recombinant Fma-KR gives the 5R-hydroxy
+        product. A control with NADPH and substrate but without Fma-KR is shown. No
+        native essentiality or obligatory pathway order inferred.'
+  - subject: compound_21
+    predicate: is_substrate_in
+    object: kr_reduction_21
+    evidence:
+    - reference: DOI:10.1021/ja500881e
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Experimental Section, Fma-KR assays: 10 uM enzyme, 1 mM substrate, 2
+        mM NADPH, 100 mM PBS pH 7.4, room temperature overnight. These ketone substrates
+        were prepared by PCC oxidation; do not assert their isolation as native intermediates.'
+  - subject: kr_reduction_21
+    predicate: produces_detected_product
+    object: compound_9
+    evidence:
+    - reference: DOI:10.1021/ja500881e
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Figure 8A and Results explicitly support 21 to 9. The Fma-KR methods
+        paragraph transposes product numbers 6 and 9 for substrates 21 and 22; the
+        plotted assays and Results agree on 21 to 9 and 22 to 6. This graph retains
+        that source discrepancy.
+  - subject: kr_assayed
+    predicate: catalyzes
+    object: kr_reduction_22
+    evidence:
+    - reference: DOI:10.1021/ja500881e
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure 8B and Results: purified recombinant Fma-KR gives the 5R-hydroxy
+        product. A control with NADPH and substrate but without Fma-KR is shown. No
+        native essentiality or obligatory pathway order inferred.'
+  - subject: compound_22
+    predicate: is_substrate_in
+    object: kr_reduction_22
+    evidence:
+    - reference: DOI:10.1021/ja500881e
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Experimental Section, Fma-KR assays: 10 uM enzyme, 1 mM substrate, 2
+        mM NADPH, 100 mM PBS pH 7.4, room temperature overnight. These ketone substrates
+        were prepared by PCC oxidation; do not assert their isolation as native intermediates.'
+  - subject: kr_reduction_22
+    predicate: produces_detected_product
+    object: compound_6
+    evidence:
+    - reference: DOI:10.1021/ja500881e
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Figure 8B and Results explicitly support 22 to 6. The Fma-KR methods
+        paragraph transposes product numbers 6 and 9 for substrates 21 and 22; the
+        plotted assays and Results agree on 21 to 9 and 22 to 6. This graph retains
+        that source discrepancy.
+  - subject: kr_assayed
+    predicate: catalyzes
+    object: kr_reduction_23
+    evidence:
+    - reference: DOI:10.1021/ja500881e
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure 8C and Results: purified recombinant Fma-KR gives the 5R-hydroxy
+        product. A control with NADPH and substrate but without Fma-KR is shown. No
+        native essentiality or obligatory pathway order inferred.'
+  - subject: compound_23
+    predicate: is_substrate_in
+    object: kr_reduction_23
+    evidence:
+    - reference: DOI:10.1021/ja500881e
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Experimental Section, Fma-KR assays: 10 uM enzyme, 1 mM substrate, 2
+        mM NADPH, 100 mM PBS pH 7.4, room temperature overnight. These ketone substrates
+        were prepared by PCC oxidation; do not assert their isolation as native intermediates.'
+  - subject: kr_reduction_23
+    predicate: produces_detected_product
+    object: compound_2
+    evidence:
+    - reference: DOI:10.1021/ja500881e
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Figure 8C and Results explicitly support 23 to 2. The Fma-KR methods
+        paragraph transposes product numbers 6 and 9 for substrates 21 and 22; the
+        plotted assays and Results agree on 21 to 9 and 22 to 6. This graph retains
+        that source discrepancy.
 discussions:
 - discussion_id: curator-fumagillin-abm-assay-identity
   kind: CURATION_TODO
@@ -263,6 +541,22 @@ discussions:
   - reference: DOI:10.1021/ja500881e
     evidence_source: Primary article Figure4 and supplement S6-S8/S13-S14, retrieved2026-10-12
     notes: No full-record REVIEWED sign-off or native-strain essentiality transfer.
+- discussion_id: curator-fumagillin-p450-kr-assay-scope
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: Which deposited construct sequences resolve these reference mappings, and
+    should the transposed Fma-KR methods product numbers be corrected?
+  rationale: Af293 sequence identity does not establish experimental allele identity.
+    Figure 8A-C and Results consistently give 21 to 9, 22 to 6 and 23 to 2; methods
+    list 6, 9 and 2 in that order.
+  notes: Retain exact assay context and source discrepancy. KR can reduce multiple
+    substrates in vitro; that does not fix its native timing. The original ABM host
+    discrepancy remains separate and unchanged.
+  evidence:
+  - reference: DOI:10.1021/ja500881e
+    evidence_source: Results, Figure 8, Experimental Section Fma-KR assays, supplement
+      S8-S10/S13-S14
+    notes: Primary source inspected; no full-record REVIEWED sign-off.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -286,4 +580,13 @@ curation_history:
     assay, with accession-unresolved A1159-derived participant and separately sequence-verified
     Af293 Q4WAZ2 reference. Preserve host discrepancy, source-owned fields, SEEDED
     status, prior history and human MetAP2 graph.
+  llm_assisted: true
+- timestamp: '2026-10-12T02:21:34Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add Fma-P450/AfCPR/Fma-KR combined microsomal assay and three purified
+    Fma-KR reductions, with three independently sequence-verified Af293 references
+    separate from ungrounded experimental constructs. Cite all 17 edges; preserve
+    the source product-numbering discrepancy, prior graphs/discussion/history, SEEDED
+    status and source-owned fields. No complete native pathway or essentiality claim.
   llm_assisted: true
