@@ -1,0 +1,107 @@
+record_id: CHEBI:48635
+standard_inchi_key: NGGMYCMLYOUNGM-CSDLUJIJSA-N
+graph:
+  graph_id: fumagillin-acea-copper-transcript
+  scope: BIOSYNTHESIS
+  description: 'Partial fumagillin regulation view: AceA deletion and the reported
+    Afu8g00430 transcript difference under copper stress. The independently verified
+    Af293 protein is a separate reference, not the experimental allele. This paper
+    measures RNA, not enzyme catalysis. Only the shared Figure2/Table S11 locus claim
+    is added; broader cluster labels and other loci are not generalized. No direct
+    promoter binding, protein-abundance measurement, product yield, universal essentiality
+    or complete pathway is asserted. Strain and growth-time wording differences remain
+    explicit in evidence.'
+  nodes:
+  - node_id: acea_reference
+    label: AceA (Af293 reference, 667 aa)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4WN33
+  - node_id: acea_experimental
+    label: AceA (experimental strain; allele unresolved)
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: acea_gene
+    label: aceA gene (experimental AFUB_073740 locus)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: delete_acea
+    label: aceA deletion under copper stress
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: lower_430
+    label: Lower Afu8g00430 transcript under copper stress
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: acea_reference
+    predicate: is_reference_example_for
+    object: acea_experimental
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q4WN33/entry
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: Selected reference, not an identical experimental allele. UniProt2026_03
+        Q4WN33, native AFUA_6G07780 spliced CDS and GenPept EAL88631.1 agree exactly
+        at 667 aa; Af293 taxon330879. The paper uses a different strain background
+        and does not establish its complete AceA allele sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EAL88631.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Complete versioned native reference; coded_by complement(join(AAHF01000006.1:457442..457708,457749..457877,458448..459805,459861..460034,460105..460180)).
+        Genomic strand, exact coordinates, start/stop and translation independently
+        checked.
+    - reference: DOI:10.1080/21505594.2021.1958057
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: Table S1 identifies the experimental deletion as delta-akuB::PyrG1, delta-AFUB_073740::PyrG
+        in akuBKU80, CEA17 background. Methods and this table take precedence for
+        strain description; Results also calls WT A1163. No Af293-to-experimental
+        sequence identity is asserted.
+  - subject: acea_gene
+    predicate: encodes
+    object: acea_experimental
+    evidence:
+    - reference: DOI:10.1080/21505594.2021.1958057
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Introduction and Results identify AceA as the transcription factor encoded
+        by aceA. This is an entity relationship, not a measurement of protein abundance,
+        purified-protein activity or direct binding to this promoter.
+  - subject: delete_acea
+    predicate: replaces
+    object: acea_gene
+    evidence:
+    - reference: DOI:10.1080/21505594.2021.1958057
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Table S1, PDF page3: delta-AFUB_073740::PyrG in the akuBKU80 CEA17 background;
+        corresponding akuBKU80 WT control. The deletion strain is attributed to Weimann2017
+        by the table. No newly performed complementation or full-allele sequencing
+        is inferred.'
+  - subject: delete_acea
+    predicate: results_in
+    object: lower_430
+    evidence:
+    - reference: DOI:10.1080/21505594.2021.1958057
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Figure2a/c explicitly compares WT(+Cu)/deltaaceA(+Cu); Afu8g00430 is
+        higher in WT, also listed in the upregulated group in Table S11A. Thus the
+        deletion strain has lower transcript abundance under this comparison. RNAseq,
+        three samples per group, MM liquid, 37 C, 200 uM Cu for1 h. Methods specifies24
+        h growth plus1 h exposure; Results says25 h before exposure, a retained discrepancy.
+        Reads mapped to A1163; the Afu locus label is retained as printed, not assigned
+        an exact experimental protein accession. The reported2.42 ratio and category
+        enrichment P-value are not turned into a new per-gene statistical or protein
+        measurement. This is not whole-cluster silencing, direct AceA-promoter occupancy,
+        FumR mediation or a fumagillin product-yield assay.
+      snippet: AceA directly or indirectly activates these genes
+curation_history:
+- timestamp: '2026-10-12T04:57:20Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Create a five-node, four-edge BIOSYNTHESIS component for AceA reference
+    identity, experimental gene/protein, deletion and the Afu8g00430 transcript comparison.
+    Cite all edges; retain experimental strain and sampling-time limits.
+  llm_assisted: true
