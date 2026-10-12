@@ -119,6 +119,81 @@ molecular_targets:
     retrieved_on: '2026-10-12'
     notes: 'Structural corroboration and construct mapping only: entity2 is the processed
       beta sequence plus6His. Conflicting strain identifiers remain unresolved.'
+- target_label: Saccharomyces cerevisiae 20S proteasome core
+  target_type: PROTEIN_COMPLEX
+  relation: BINDS
+  taxon_id: NCBITaxon:4932
+  taxon_label: Saccharomyces cerevisiae
+  protein_examples:
+  - UniProtKB:P38624
+  - UniProtKB:P25043
+  - UniProtKB:P30656
+  source: CURATOR
+  notes: 'Structural-model binding only: six covalent ligand contacts across the beta1,beta2,beta5
+    copies. The remaining11 subunit types are complex members, not adopted direct-binding
+    examples. S288c accessions are deliberately selected reference examples, not proof
+    that the baker''s-yeast preparation was S288c. Thirteen UniProt accessions stored
+    in the mmCIF are now deleted; they are not adopted as live identifiers. Matching
+    deposited polymer spans do not prove physical truncation of the purified proteins
+    or complete assay-construct identity. No quantitative inhibition measurement or
+    irreversible-binding claim.'
+  evidence:
+  - reference: https://www.rcsb.org/structure/3D29
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-12'
+    notes: 3D29 explicit covalent contacts at author chainsH/V,K/Y,N/2. UniProt examples
+      map the canonical precursors to their deposited processed polymer spans.
+  - reference: https://files.rcsb.org/download/3D29.cif
+    evidence_type: CURATOR_INFERENCE
+    retrieved_on: '2026-10-12'
+    notes: 'Curator mapping with RDKit2026.03.5: all six NQL/HXD ligands have39 modeled
+      heavy atoms and retain S/S/S peptide centers plus R lipid3-OH. Reversing the
+      covalent hemiacetal to the free aldehyde reconstructs owner InChIKey MFXAGCQVWGPEJH-LRSLUSHPSA-N.
+      This is coordinate-based mapping, not independent experimental structure elucidation
+      or density-validation sign-off. The new bound hemiacetal center is not assigned
+      to the free owner.'
+- target_label: Human20S proteasome beta5 activity
+  target_type: PROTEIN_COMPLEX
+  relation: INHIBITS
+  taxon_id: NCBITaxon:9606
+  taxon_label: Homo sapiens
+  protein_examples:
+  - UniProtKB:P28074
+  source: CURATOR
+  notes: The human beta5 assay is supported only by the cached 2010 author abstract.
+    P28074 is the deliberately selected PSMB5 canonical isoform1 reference, not an
+    independently sequenced assay preparation. Isoforms2/3, immunoproteasome beta5i,
+    donor, tissue and exact construct are not resolved or substituted. Target scope
+    is beta5 activity within the complex, not all proteasome sites or an isolated
+    precursor. No quantitative measurement adopted.
+  evidence:
+  - reference: DOI:10.1016/j.abb.2010.06.009
+    evidence_type: PRIMARY_EXPERIMENT
+    retrieved_on: '2026-10-12'
+    notes: Only the previously inspected author abstract at https://europepmc.org/article/MED/20558127
+      is used. It explicitly reports time-dependent inhibition of the human proteasome
+      beta5 active site. Full Methods, exact preparation, dose/substrate conditions
+      and kinetic construct remain uninspected. No quantitative affinity, all-beta-subunit
+      inhibition, NGF induction, microbial killing or irreversible inhibition claim
+      is adopted. The human beta5 assay is supported only by the cached 2010 author
+      abstract. P28074 is the deliberately selected PSMB5 canonical isoform1 reference,
+      not an independently sequenced assay preparation. Isoforms2/3, immunoproteasome
+      beta5i, donor, tissue and exact construct are not resolved or substituted.
+  - reference: https://www.uniprot.org/uniprotkb/P28074/entry
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-12'
+    notes: Reviewed PSMB5 reference, taxon9606; entry256, sequence3, annotation2026-09-02.
+      Canonical reference for the beta5 component, with mature chain60-263; other
+      isoforms and beta5i are not selected. Historical sequence cautions concern AAP35423.1,
+      BAA06097.1, CAD97956.1; these sequences are not used instead of the matching
+      canonical RefSeq.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/NP_002788.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-12'
+    notes: 'Identity only: PSMB5, 263aa, taxon9606; complete CDS of RefSeq transcript
+      NM_002797.5 at [19:811](+), including start/stop, translates to NP_002788.1
+      and UniProt P28074 under table1. This verifies reference annotations, not the
+      experimental donor, physiological initiation choice or assay allele.'
 causal_graphs:
 - graph_id: fellutamide-b-proposed-assembly-native-references
   scope: BIOSYNTHESIS
@@ -587,6 +662,9 @@ causal_graphs:
         from the deposited dodecanoate identity reproduces owner InChIKey MFXAGCQVWGPEJH-LRSLUSHPSA-N.
         Only32 of39 ligand heavy atoms are observed in that chain; no complete density,
         primary stereochemical or experimental preparation sign-off.'
+causal_graph_refs:
+- fellutamide-b-yeast-proteasome-reference-assembly
+- fellutamide-b-human-proteasome-beta5
 discussions:
 - discussion_id: curator-fellutamide-b-assembly-and-assay-scope
   kind: CURATION_TODO
@@ -622,8 +700,8 @@ discussions:
     beta chain, but not the kinetic construct. The ligand geometry supports the existing
     owner at its four retained centers, while distal lipid density is incomplete.
     Keep SEEDED status; primary Methods, assay preparation and full structural validation
-    remain uninspected. Human beta5 and yeast proteasome mentions are separate uncurated
-    leads.
+    remain uninspected. Human beta5 and yeast proteasome now have separate qualified
+    reference graphs; their donor and kinetic-preparation limits remain unresolved.
   evidence:
   - reference: https://www.rcsb.org/structure/3KRD
     evidence_source: Inspected independent mmCIF deposition
@@ -632,6 +710,39 @@ discussions:
   - reference: DOI:10.1016/j.abb.2010.06.009
     evidence_source: Inspected author abstract only
     notes: Full article access stopped at browser challenge; no alternative retrieved.
+- discussion_id: curator-fellutamide-b-eukaryotic-reference-and-assay-scope
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: Which experimental donor strains, complete preparations and human isoforms
+    were used, and how should PRE4 initiation and inactive deposit references be resolved?
+  rationale: S288c accessions are deliberately selected reference examples, not proof
+    that the baker's-yeast preparation was S288c. Thirteen UniProt accessions stored
+    in the mmCIF are now deleted; they are not adopted as live identifiers. Matching
+    deposited polymer spans do not prove physical truncation of the purified proteins
+    or complete assay-construct identity. The human beta5 assay is supported only
+    by the cached 2010 author abstract. P28074 is the deliberately selected PSMB5
+    canonical isoform1 reference, not an independently sequenced assay preparation.
+    Isoforms2/3, immunoproteasome beta5i, donor, tissue and exact construct are not
+    resolved or substituted. PRE4 may initiate at Met1 or Met31; reference-CDS agreement
+    does not resolve translation initiation. All six deposited ligands map to the
+    free owner after adduct reversal, but full primary Methods, density validation
+    and experimental preparation identity remain uninspected. Preserve source-owned
+    identity and SEEDED status.
+  evidence:
+  - reference: https://www.rcsb.org/structure/3D29
+    evidence_source: Independent structural deposition
+    notes: Native-purified baker's yeast;13 deposited UniProt accessions now inactive.
+      PUP1 deposited span30-251 is shorter than annotated mature30-261.
+  - reference: https://www.uniprot.org/uniprotkb/P30657/entry
+    evidence_source: Reviewed reference CAUTION
+    notes: Physiological initiation at Met1 versus Met31 remains uncertain.
+  - reference: DOI:10.1016/j.abb.2010.06.009
+    evidence_source: Cached author abstract only
+    notes: Human beta5 inhibition; exact kinetic preparation and isoform not inspected.
+  - reference: DOI:10.1016/j.chembiol.2008.03.020
+    evidence_source: Author abstract and independent PDB deposit, not full paper
+    notes: First full-text API request failedHTTP500. No retry or alternative article
+      was retrieved; detailed experimental methods remain unverified.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -663,4 +774,17 @@ curation_history:
     Preserve H37Rv/H37Ra provenance conflict, chemical identity, existing graphs/history
     and SEEDED status; add stable edge evidence, four short snippets and a scope discussion.
     No quantitative affinity or microbial killing claim.
+  llm_assisted: true
+- timestamp: '2026-10-12T12:32:55Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add15 eukaryotic proteasome reference proteins in two qualified BIOACTIVITY
+    graphs:14 yeast core components with three separately represented processed catalytic
+    polymers, plus human beta5 activity. Twelve accessions are new to the corpus.
+    Add21 yeast and4 human edges, two qualified complex-level targets, edge-local
+    stable references and short snippets. Reject13 inactive deposit accessions; retain
+    donor, isoform, PRE4 initiation and primary-access limits. Preserve prior graphs,
+    source identity/provenance and SEEDED status. Store the two new graphs in exact-owner
+    components because the complete inline record exceeds64KiB; preserve all three
+    prior inline graphs unchanged.
   llm_assisted: true

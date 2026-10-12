@@ -76,8 +76,8 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
-<h2>Causal graph &mdash; biosynthesis <span class="tag">20 nodes, 18 edges</span></h2>
-<p class="sub">Partial genetic-perturbation view; mediation and chemical reaction steps are intentionally omitted. The 2009 alcAp-afoA experiments used an nkuA-deletion/stcJ-deletion background; AfoA was induced, not deleted. The 2010 ScpR experiments are abstract-bounded, including afoA deletion during ScpR induction. Shared outcome nodes denote readout categories, not pooled cultures. FGSC A4 accessions are native references, not verified experimental alleles. Claims concern asperfuranone at this owner&#39;s stereo-unspecified resolution, not every possible stereoisomer. No direct promoter binding, transport substrate, catalytic order or universal phenotype is asserted. The 2009 Results, Table 1, captions and partial Methods were inspected; figure images, detailed spectra and supplement were not. No primary isomer-level identity sign-off is claimed.</p><div class="scroll"><table>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">22 nodes, 20 edges</span></h2>
+<p class="sub">Partial genetic-perturbation view; mediation and chemical reaction steps are intentionally omitted. The 2009 alcAp-afoA experiments used an nkuA-deletion/stcJ-deletion background; AfoA was induced, not deleted. The 2010 ScpR experiments are abstract-bounded, including afoA deletion during ScpR induction. Shared outcome nodes denote readout categories, not pooled cultures. FGSC A4 accessions are native references, not verified experimental alleles. Claims concern asperfuranone at this owner&#39;s stereo-unspecified resolution, not every possible stereoisomer. No direct promoter binding, transport substrate, catalytic order or universal phenotype is asserted. The 2009 Results, Table 1, captions and partial Methods were inspected; figure images, detailed spectra and supplement were not. No primary isomer-level identity sign-off is claimed. The added2010 negative-control condition combines inpB deletion with alcAp-scpR induction and retains asperfuranone detection. It does not establish universal InpB dispensability, a quantitative yield, or direct ScpR promoter binding.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>AfoA (FGSC A4 native reference)</td>
@@ -247,6 +247,25 @@ isolation report left it.</p>
   <td>Asperfuranone production abolished in the indicated experiment</td>
   <td></td>
   <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/aem.00683-10</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/aem.00683-10</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Author abstract only, indexed at https://europepmc.org/article/MED/20952652. Full Methods and figures were not inspected; inferred promoter contact is not adopted as direct binding.</dd><dt>snippet</dt><dd>was abolished after the deletion of the asperfuranone activator gene afoA</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>InpB (FGSC A4 native reference)</td>
+  <td>is_native_reference_for_targeted_gene_in</td>
+  <td>inpB deletion under alcAp-scpR induction</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q5B7I4/entry<br>https://www.ncbi.nlm.nih.gov/protein/CBF76036.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q5B7I4/entry</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Reviewed inpB/ANIA_03496, FGSC A4 taxon227321; entry128, sequence1, annotation2026-09-02. Native reference for the named deletion, not the deletion allele or an asperfuranone catalytic enzyme.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/CBF76036.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>CBF76036.1,2326aa; complete two-exon reverse-strand CDS on BN001302.1:3924481..3931509 agrees with GenPept and UniProt including start/stop. Previously retrieved native sequences rechecked; experimental strain/allele identity remains unverified.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>inpB deletion under alcAp-scpR induction</td>
+  <td>results_in</td>
+  <td>Asperfuranone production detected in the indicated experiment</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/aem.00683-10</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/aem.00683-10</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Previously inspected author abstract at https://europepmc.org/article/MED/20952652 describes inpB deletion plus the alcAp-scpR cassette and detects asperfuranone under inducing conditions. This is a conditional negative-control result, not evidence of equal yield, universal gene dispensability, lack of any biochemical role, or direct promoter contact. Full Methods and exact alleles remain uninspected.</dd><dt>snippet</dt><dd>the existence of the polyketide product asperfuranone</dd></dl>
 </li></ul>
 </details></td>
 </tr>

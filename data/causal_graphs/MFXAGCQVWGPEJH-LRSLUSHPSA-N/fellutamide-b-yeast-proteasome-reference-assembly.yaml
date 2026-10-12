@@ -1,0 +1,636 @@
+record_id: naturalproductmech:mibig-a7c02b2a6d
+standard_inchi_key: MFXAGCQVWGPEJH-LRSLUSHPSA-N
+graph:
+  graph_id: fellutamide-b-yeast-proteasome-reference-assembly
+  scope: BIOACTIVITY
+  description: Partial structural association and target-complex composition view,
+    not a temporal assembly pathway. All14 core-subunit types are represented as reference
+    proteins; only beta1/PRE3, beta2/PUP1 and beta5/PRE2 have deposited drug-contact
+    edges. S288c accessions are deliberately selected reference examples, not proof
+    that the baker's-yeast preparation was S288c. Thirteen UniProt accessions stored
+    in the mmCIF are now deleted; they are not adopted as live identifiers. Matching
+    deposited polymer spans do not prove physical truncation of the purified proteins
+    or complete assay-construct identity. In particular, the deposited PUP1 span ends
+    at251 while the annotated mature chain ends at261; absence from the polymer sequence
+    does not establish engineered deletion. PRE4 initiation remains uncertain. The
+    primary2008 full text was not obtained; independent deposition and reference datasets
+    support these claims. No quantitative inhibition, NGF mechanism, all-subunit binding
+    or complete donor-strain reconstruction is asserted.
+  nodes:
+  - node_id: fellutamide_b
+    label: fellutamide B (free compound)
+    node_type: COMPOUND
+    grounding_status: GROUNDED
+    identifier: naturalproductmech:mibig-a7c02b2a6d
+  - node_id: yeast_core
+    label: S. cerevisiae 20S proteasome core
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: pre8_reference
+    label: PRE8 (S288c reference)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P23639
+  - node_id: pre9_reference
+    label: PRE9 (S288c reference)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P23638
+  - node_id: pre6_reference
+    label: PRE6 (S288c reference)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P40303
+  - node_id: pup2_reference
+    label: PUP2 (S288c reference)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P32379
+  - node_id: pre5_reference
+    label: PRE5 (S288c reference)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P40302
+  - node_id: pre10_reference
+    label: PRE10 (S288c reference)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P21242
+  - node_id: scl1_reference
+    label: SCL1 (S288c reference)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P21243
+  - node_id: pup1_reference
+    label: PUP1 (S288c reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P25043
+  - node_id: pup1_deposited
+    label: 3D29 beta2 (PUP1) deposited polymer
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: pup3_reference
+    label: PUP3 (S288c reference)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P25451
+  - node_id: pre1_reference
+    label: PRE1 (S288c reference)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P22141
+  - node_id: pre2_reference
+    label: PRE2 (S288c reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P30656
+  - node_id: pre2_deposited
+    label: 3D29 beta5 (PRE2) deposited polymer
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: pre7_reference
+    label: PRE7 (S288c reference)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P23724
+  - node_id: pre4_reference
+    label: PRE4 (S288c reference)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P30657
+  - node_id: pre3_reference
+    label: PRE3 (S288c reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P38624
+  - node_id: pre3_deposited
+    label: 3D29 beta1 (PRE3) deposited polymer
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: fellutamide_b
+    predicate: is_deposited_in_complex_with
+    object: yeast_core
+    evidence:
+    - reference: https://www.rcsb.org/structure/3D29
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Independent2.60-angstrom structural deposit3D29 contains two copies of
+        each of14 yeast core-subunit types and six ligand copies. This is structural
+        association, not an adopted quantitative yeast inhibition assay.
+      snippet: Proteasome Inhibition by Fellutamide B
+    - reference: https://files.rcsb.org/download/3D29.cif
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: 'Curator mapping with RDKit2026.03.5: all six NQL/HXD ligands have39
+        modeled heavy atoms and retain S/S/S peptide centers plus R lipid3-OH. Reversing
+        the covalent hemiacetal to the free aldehyde reconstructs owner InChIKey MFXAGCQVWGPEJH-LRSLUSHPSA-N.
+        This is coordinate-based mapping, not independent experimental structure elucidation
+        or density-validation sign-off. The new bound hemiacetal center is not assigned
+        to the free owner.'
+  - subject: pre8_reference
+    predicate: is_reference_for_component_of
+    object: yeast_core
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P23639/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed PRE8 reference, taxon559292; entry244, sequence1, annotation2026-09-02.
+        Native sequence and core-subunit identity for an explicitly selected reference.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/NP_013618.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: PRE8, 250aa, taxon559292; complete CDS of RefSeq transcript
+        NM_001182451.1 at [0:753](+), including start/stop, translates to NP_013618.1
+        and UniProt P23639 under table1. This verifies reference annotations, not
+        the experimental donor, physiological initiation choice or assay allele.'
+    - reference: https://www.rcsb.org/structure/3D29
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Entity1, author chainsA/O, deposited polymer250aa exactly matches P23639
+        residues1-250. The mmCIF references A0A6L1BIF8. S288c accessions are deliberately
+        selected reference examples, not proof that the baker's-yeast preparation
+        was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted;
+        they are not adopted as live identifiers. Matching deposited polymer spans
+        do not prove physical truncation of the purified proteins or complete assay-construct
+        identity.
+    notes: Complex membership only; no direct fellutamide-binding edge is asserted
+      for this subunit.
+  - subject: pre9_reference
+    predicate: is_reference_for_component_of
+    object: yeast_core
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P23638/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed PRE9 reference, taxon559292; entry239, sequence1, annotation2026-09-02.
+        Native sequence and core-subunit identity for an explicitly selected reference.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/NP_011651.3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: PRE9, 258aa, taxon559292; complete CDS of RefSeq transcript
+        NM_001181264.3 at [0:777](+), including start/stop, translates to NP_011651.3
+        and UniProt P23638 under table1. This verifies reference annotations, not
+        the experimental donor, physiological initiation choice or assay allele.'
+    - reference: https://www.rcsb.org/structure/3D29
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Entity2, author chainsB/P, deposited polymer244aa exactly matches P23638
+        residues2-245. The mmCIF references A0A6A5PXC6. S288c accessions are deliberately
+        selected reference examples, not proof that the baker's-yeast preparation
+        was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted;
+        they are not adopted as live identifiers. Matching deposited polymer spans
+        do not prove physical truncation of the purified proteins or complete assay-construct
+        identity.
+    notes: Complex membership only; no direct fellutamide-binding edge is asserted
+      for this subunit.
+  - subject: pre6_reference
+    predicate: is_reference_for_component_of
+    object: yeast_core
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P40303/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed PRE6 reference, taxon559292; entry238, sequence1, annotation2026-09-02.
+        Native sequence and core-subunit identity for an explicitly selected reference.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/NP_014604.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: PRE6, 254aa, taxon559292; complete CDS of RefSeq transcript
+        NM_001183292.1 at [0:765](+), including start/stop, translates to NP_014604.1
+        and UniProt P40303 under table1. This verifies reference annotations, not
+        the experimental donor, physiological initiation choice or assay allele.'
+    - reference: https://www.rcsb.org/structure/3D29
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Entity3, author chainsC/Q, deposited polymer241aa exactly matches P40303
+        residues3-243. The mmCIF references A0A6A5Q273. S288c accessions are deliberately
+        selected reference examples, not proof that the baker's-yeast preparation
+        was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted;
+        they are not adopted as live identifiers. Matching deposited polymer spans
+        do not prove physical truncation of the purified proteins or complete assay-construct
+        identity.
+    notes: Complex membership only; no direct fellutamide-binding edge is asserted
+      for this subunit.
+  - subject: pup2_reference
+    predicate: is_reference_for_component_of
+    object: yeast_core
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P32379/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed PUP2 reference, taxon559292; entry242, sequence2, annotation2026-09-02.
+        Native sequence and core-subunit identity for an explicitly selected reference.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/NP_011769.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: PUP2, 260aa, taxon559292; complete CDS of RefSeq transcript
+        NM_001181382.1 at [0:783](+), including start/stop, translates to NP_011769.1
+        and UniProt P32379 under table1. This verifies reference annotations, not
+        the experimental donor, physiological initiation choice or assay allele.'
+    - reference: https://www.rcsb.org/structure/3D29
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Entity4, author chainsD/R, deposited polymer242aa exactly matches P32379
+        residues9-250. The mmCIF references A0A6A5PXN2. S288c accessions are deliberately
+        selected reference examples, not proof that the baker's-yeast preparation
+        was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted;
+        they are not adopted as live identifiers. Matching deposited polymer spans
+        do not prove physical truncation of the purified proteins or complete assay-construct
+        identity.
+    notes: Complex membership only; no direct fellutamide-binding edge is asserted
+      for this subunit.
+  - subject: pre5_reference
+    predicate: is_reference_for_component_of
+    object: yeast_core
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P40302/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed PRE5 reference, taxon559292; entry240, sequence1, annotation2026-09-02.
+        Native sequence and core-subunit identity for an explicitly selected reference.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/NP_014045.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: PRE5, 234aa, taxon559292; complete CDS of RefSeq transcript
+        NM_001182825.1 at [0:705](+), including start/stop, translates to NP_014045.1
+        and UniProt P40302 under table1. This verifies reference annotations, not
+        the experimental donor, physiological initiation choice or assay allele.'
+    - reference: https://www.rcsb.org/structure/3D29
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Entity5, author chainsE/S, deposited polymer233aa exactly matches P40302
+        residues2-234. The mmCIF references A0A6A5PTH4. S288c accessions are deliberately
+        selected reference examples, not proof that the baker's-yeast preparation
+        was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted;
+        they are not adopted as live identifiers. Matching deposited polymer spans
+        do not prove physical truncation of the purified proteins or complete assay-construct
+        identity.
+    notes: Complex membership only; no direct fellutamide-binding edge is asserted
+      for this subunit.
+  - subject: pre10_reference
+    predicate: is_reference_for_component_of
+    object: yeast_core
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P21242/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed PRE10 reference, taxon559292; entry251, sequence2, annotation2026-09-02.
+        Native sequence and core-subunit identity for an explicitly selected reference.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/NP_015007.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: PRE10, 288aa, taxon559292; complete CDS of RefSeq transcript
+        NM_001183782.1 at [0:867](+), including start/stop, translates to NP_015007.1
+        and UniProt P21242 under table1. This verifies reference annotations, not
+        the experimental donor, physiological initiation choice or assay allele.'
+    - reference: https://www.rcsb.org/structure/3D29
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Entity6, author chainsF/T, deposited polymer244aa exactly matches P21242
+        residues5-248. The mmCIF references A0A6A5Q4M4. S288c accessions are deliberately
+        selected reference examples, not proof that the baker's-yeast preparation
+        was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted;
+        they are not adopted as live identifiers. Matching deposited polymer spans
+        do not prove physical truncation of the purified proteins or complete assay-construct
+        identity.
+    notes: Complex membership only; no direct fellutamide-binding edge is asserted
+      for this subunit.
+  - subject: scl1_reference
+    predicate: is_reference_for_component_of
+    object: yeast_core
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P21243/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed SCL1 reference, taxon559292; entry254, sequence1, annotation2026-09-02.
+        Native sequence and core-subunit identity for an explicitly selected reference.
+        Historical sequence cautions concern AAA35020.1; these sequences are not used
+        instead of the matching canonical RefSeq.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/NP_011504.3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: SCL1, 252aa, taxon559292; complete CDS of RefSeq transcript
+        NM_001180876.3 at [0:759](+), including start/stop, translates to NP_011504.3
+        and UniProt P21243 under table1. This verifies reference annotations, not
+        the experimental donor, physiological initiation choice or assay allele.'
+    - reference: https://www.rcsb.org/structure/3D29
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Entity7, author chainsG/U, deposited polymer243aa exactly matches P21243
+        residues10-252. The mmCIF references A0A6A5PYC9. S288c accessions are deliberately
+        selected reference examples, not proof that the baker's-yeast preparation
+        was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted;
+        they are not adopted as live identifiers. Matching deposited polymer spans
+        do not prove physical truncation of the purified proteins or complete assay-construct
+        identity.
+    notes: Complex membership only; no direct fellutamide-binding edge is asserted
+      for this subunit.
+  - subject: pup1_reference
+    predicate: is_sequence_reference_for
+    object: pup1_deposited
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P25043/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed PUP1 reference, taxon559292; entry234, sequence1, annotation2026-09-02.
+        Native sequence and core-subunit identity for an explicitly selected reference.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/NP_014800.3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: PUP1, 261aa, taxon559292; complete CDS of RefSeq transcript
+        NM_001183576.3 at [0:786](+), including start/stop, translates to NP_014800.3
+        and UniProt P25043 under table1. This verifies reference annotations, not
+        the experimental donor, physiological initiation choice or assay allele.'
+    - reference: https://www.rcsb.org/structure/3D29
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Entity8, author chainsH/V, deposited polymer222aa exactly matches P25043
+        residues30-251. The mmCIF references A0A6A5Q449. S288c accessions are deliberately
+        selected reference examples, not proof that the baker's-yeast preparation
+        was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted;
+        they are not adopted as live identifiers. Matching deposited polymer spans
+        do not prove physical truncation of the purified proteins or complete assay-construct
+        identity.
+    notes: The native precursor is not the processed structural polymer. The modeled
+      N-terminal Thr1 maps to canonical Thr30; native sequence and modeled span are
+      kept distinct.
+  - subject: pup1_deposited
+    predicate: is_catalytic_inner_ring_component_of
+    object: yeast_core
+    evidence:
+    - reference: https://www.rcsb.org/structure/3D29
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Author chainsH/V are the two beta2 copies in the yeast core. Each modeled
+        N-terminal Thr OG1 is covalently linked to the terminal ligand LEU C atom.
+  - subject: fellutamide_b
+    predicate: is_modeled_as_covalent_adduct_with
+    object: pup1_deposited
+    evidence:
+    - reference: https://www.rcsb.org/structure/3D29
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Two explicit covalent contacts for author chainsH/V: mature Thr1 OG1
+        to ligand residue3 LEU C. No isolated-subunit assay, quantitative affinity
+        or irreversible inhibition is implied.'
+    - reference: https://files.rcsb.org/download/3D29.cif
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: 'Curator mapping with RDKit2026.03.5: all six NQL/HXD ligands have39
+        modeled heavy atoms and retain S/S/S peptide centers plus R lipid3-OH. Reversing
+        the covalent hemiacetal to the free aldehyde reconstructs owner InChIKey MFXAGCQVWGPEJH-LRSLUSHPSA-N.
+        This is coordinate-based mapping, not independent experimental structure elucidation
+        or density-validation sign-off. The new bound hemiacetal center is not assigned
+        to the free owner.'
+    notes: The bound hemiacetal is chemically distinct from the free aldehyde and
+      has an additional stereocenter. This edge reports the deposited covalent model
+      only.
+  - subject: pup3_reference
+    predicate: is_reference_for_component_of
+    object: yeast_core
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P25451/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed PUP3 reference, taxon559292; entry233, sequence1, annotation2026-09-02.
+        Native sequence and core-subunit identity for an explicitly selected reference.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/NP_011020.3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: PUP3, 205aa, taxon559292; complete CDS of RefSeq transcript
+        NM_001178985.3 at [0:618](+), including start/stop, translates to NP_011020.3
+        and UniProt P25451 under table1. This verifies reference annotations, not
+        the experimental donor, physiological initiation choice or assay allele.'
+    - reference: https://www.rcsb.org/structure/3D29
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Entity9, author chainsI/W, deposited polymer204aa exactly matches P25451
+        residues2-205. The mmCIF references A0A6L0YA22. S288c accessions are deliberately
+        selected reference examples, not proof that the baker's-yeast preparation
+        was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted;
+        they are not adopted as live identifiers. Matching deposited polymer spans
+        do not prove physical truncation of the purified proteins or complete assay-construct
+        identity.
+    notes: Complex membership only; no direct fellutamide-binding edge is asserted
+      for this subunit.
+  - subject: pre1_reference
+    predicate: is_reference_for_component_of
+    object: yeast_core
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P22141/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed PRE1 reference, taxon559292; entry244, sequence2, annotation2026-09-02.
+        Native sequence and core-subunit identity for an explicitly selected reference.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/NP_010928.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: PRE1, 198aa, taxon559292; complete CDS of RefSeq transcript
+        NM_001178903.1 at [0:597](+), including start/stop, translates to NP_010928.1
+        and UniProt P22141 under table1. This verifies reference annotations, not
+        the experimental donor, physiological initiation choice or assay allele.'
+    - reference: https://www.rcsb.org/structure/3D29
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Entity10, author chainsJ/X, deposited polymer198aa exactly matches P22141
+        residues1-198. The mmCIF references A0A6A5Q0W2. S288c accessions are deliberately
+        selected reference examples, not proof that the baker's-yeast preparation
+        was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted;
+        they are not adopted as live identifiers. Matching deposited polymer spans
+        do not prove physical truncation of the purified proteins or complete assay-construct
+        identity.
+    notes: Complex membership only; no direct fellutamide-binding edge is asserted
+      for this subunit.
+  - subject: pre2_reference
+    predicate: is_sequence_reference_for
+    object: pre2_deposited
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P30656/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed PRE2 reference, taxon559292; entry235, sequence3, annotation2026-09-02.
+        Native sequence and core-subunit identity for an explicitly selected reference.
+        Historical sequence cautions concern CAA82203.1; these sequences are not used
+        instead of the matching canonical RefSeq.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/NP_015428.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: PRE2, 287aa, taxon559292; complete CDS of RefSeq transcript
+        NM_001184200.1 at [0:864](+), including start/stop, translates to NP_015428.1
+        and UniProt P30656 under table1. This verifies reference annotations, not
+        the experimental donor, physiological initiation choice or assay allele.'
+    - reference: https://www.rcsb.org/structure/3D29
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Entity11, author chainsK/Y, deposited polymer212aa exactly matches P30656
+        residues76-287. The mmCIF references A0A6A5Q5W3. S288c accessions are deliberately
+        selected reference examples, not proof that the baker's-yeast preparation
+        was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted;
+        they are not adopted as live identifiers. Matching deposited polymer spans
+        do not prove physical truncation of the purified proteins or complete assay-construct
+        identity.
+    notes: The native precursor is not the processed structural polymer. The modeled
+      N-terminal Thr1 maps to canonical Thr76; native sequence and modeled span are
+      kept distinct.
+  - subject: pre2_deposited
+    predicate: is_catalytic_inner_ring_component_of
+    object: yeast_core
+    evidence:
+    - reference: https://www.rcsb.org/structure/3D29
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Author chainsK/Y are the two beta5 copies in the yeast core. Each modeled
+        N-terminal Thr OG1 is covalently linked to the terminal ligand LEU C atom.
+  - subject: fellutamide_b
+    predicate: is_modeled_as_covalent_adduct_with
+    object: pre2_deposited
+    evidence:
+    - reference: https://www.rcsb.org/structure/3D29
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Two explicit covalent contacts for author chainsK/Y: mature Thr1 OG1
+        to ligand residue3 LEU C. No isolated-subunit assay, quantitative affinity
+        or irreversible inhibition is implied.'
+    - reference: https://files.rcsb.org/download/3D29.cif
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: 'Curator mapping with RDKit2026.03.5: all six NQL/HXD ligands have39
+        modeled heavy atoms and retain S/S/S peptide centers plus R lipid3-OH. Reversing
+        the covalent hemiacetal to the free aldehyde reconstructs owner InChIKey MFXAGCQVWGPEJH-LRSLUSHPSA-N.
+        This is coordinate-based mapping, not independent experimental structure elucidation
+        or density-validation sign-off. The new bound hemiacetal center is not assigned
+        to the free owner.'
+    notes: The bound hemiacetal is chemically distinct from the free aldehyde and
+      has an additional stereocenter. This edge reports the deposited covalent model
+      only.
+  - subject: pre7_reference
+    predicate: is_reference_for_component_of
+    object: yeast_core
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P23724/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed PRE7 reference, taxon559292; entry244, sequence1, annotation2026-09-02.
+        Native sequence and core-subunit identity for an explicitly selected reference.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/NP_009512.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: PRE7, 241aa, taxon559292; complete CDS of RefSeq transcript
+        NM_001178281.1 at [0:726](+), including start/stop, translates to NP_009512.1
+        and UniProt P23724 under table1. This verifies reference annotations, not
+        the experimental donor, physiological initiation choice or assay allele.'
+    - reference: https://www.rcsb.org/structure/3D29
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Entity12, author chainsL/Z, deposited polymer222aa exactly matches P23724
+        residues20-241. The mmCIF references A0A6A5Q0P3. S288c accessions are deliberately
+        selected reference examples, not proof that the baker's-yeast preparation
+        was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted;
+        they are not adopted as live identifiers. Matching deposited polymer spans
+        do not prove physical truncation of the purified proteins or complete assay-construct
+        identity.
+    notes: Complex membership only; no direct fellutamide-binding edge is asserted
+      for this subunit.
+  - subject: pre4_reference
+    predicate: is_reference_for_component_of
+    object: yeast_core
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P30657/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed PRE4 reference, taxon559292; entry235, sequence1, annotation2026-09-02.
+        Native sequence and core-subunit identity for an explicitly selected reference.
+        UniProt leaves initiation at Met1 versus Met31 unresolved; the 266-aa reference
+        is not a resolved physiological initiation claim.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/NP_116708.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: PRE4, 266aa, taxon559292; complete CDS of RefSeq transcript
+        NM_001180015.1 at [0:801](+), including start/stop, translates to NP_116708.1
+        and UniProt P30657 under table1. This verifies reference annotations, not
+        the experimental donor, physiological initiation choice or assay allele.'
+    - reference: https://www.rcsb.org/structure/3D29
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Entity13, author chainsM/1, deposited polymer233aa exactly matches P30657
+        residues34-266. The mmCIF references A0A8H8ULD3. S288c accessions are deliberately
+        selected reference examples, not proof that the baker's-yeast preparation
+        was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted;
+        they are not adopted as live identifiers. Matching deposited polymer spans
+        do not prove physical truncation of the purified proteins or complete assay-construct
+        identity.
+    notes: Complex membership only; no direct fellutamide-binding edge is asserted
+      for this subunit.
+  - subject: pre3_reference
+    predicate: is_sequence_reference_for
+    object: pre3_deposited
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P38624/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed PRE3 reference, taxon559292; entry231, sequence2, annotation2026-09-02.
+        Native sequence and core-subunit identity for an explicitly selected reference.
+        Historical sequence cautions concern CAA55591.1, CAA60921.1; these sequences
+        are not used instead of the matching canonical RefSeq.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/NP_012533.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: PRE3, 215aa, taxon559292; complete CDS of RefSeq transcript
+        NM_001181435.1 at [0:648](+), including start/stop, translates to NP_012533.1
+        and UniProt P38624 under table1. This verifies reference annotations, not
+        the experimental donor, physiological initiation choice or assay allele.'
+    - reference: https://www.rcsb.org/structure/3D29
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Entity14, author chainsN/2, deposited polymer196aa exactly matches P38624
+        residues20-215. The mmCIF references P38624. S288c accessions are deliberately
+        selected reference examples, not proof that the baker's-yeast preparation
+        was S288c. Thirteen UniProt accessions stored in the mmCIF are now deleted;
+        they are not adopted as live identifiers. Matching deposited polymer spans
+        do not prove physical truncation of the purified proteins or complete assay-construct
+        identity.
+    notes: The native precursor is not the processed structural polymer. The modeled
+      N-terminal Thr1 maps to canonical Thr20; native sequence and modeled span are
+      kept distinct.
+  - subject: pre3_deposited
+    predicate: is_catalytic_inner_ring_component_of
+    object: yeast_core
+    evidence:
+    - reference: https://www.rcsb.org/structure/3D29
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Author chainsN/2 are the two beta1 copies in the yeast core. Each modeled
+        N-terminal Thr OG1 is covalently linked to the terminal ligand LEU C atom.
+  - subject: fellutamide_b
+    predicate: is_modeled_as_covalent_adduct_with
+    object: pre3_deposited
+    evidence:
+    - reference: https://www.rcsb.org/structure/3D29
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Two explicit covalent contacts for author chainsN/2: mature Thr1 OG1
+        to ligand residue3 LEU C. No isolated-subunit assay, quantitative affinity
+        or irreversible inhibition is implied.'
+    - reference: https://files.rcsb.org/download/3D29.cif
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: 'Curator mapping with RDKit2026.03.5: all six NQL/HXD ligands have39
+        modeled heavy atoms and retain S/S/S peptide centers plus R lipid3-OH. Reversing
+        the covalent hemiacetal to the free aldehyde reconstructs owner InChIKey MFXAGCQVWGPEJH-LRSLUSHPSA-N.
+        This is coordinate-based mapping, not independent experimental structure elucidation
+        or density-validation sign-off. The new bound hemiacetal center is not assigned
+        to the free owner.'
+    notes: The bound hemiacetal is chemically distinct from the free aldehyde and
+      has an additional stereocenter. This edge reports the deposited covalent model
+      only.
+curation_history:
+- timestamp: '2026-10-12T12:32:56Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add new exact-owner eukaryotic proteasome graph for naturalproductmech:mibig-a7c02b2a6d
+    on baseline e90e210e42af4d57dc9630cfc34d6d4d7ac11244. Previous inline graphs and
+    parent history are preserved; this component contains new evidence, not a biological
+    rewrite of old graphs.
+  llm_assisted: true
