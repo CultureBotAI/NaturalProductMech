@@ -1,0 +1,270 @@
+record_id: CHEBI:168396
+standard_inchi_key: HPNSFSBZBAHARI-RUDMXATFSA-N
+graph:
+  graph_id: mycophenolic-acid-nrrl864-core-biosynthesis-reference
+  scope: BIOSYNTHESIS
+  description: Penicillium brevicompactum NRRL864. Database-annotated partial biosynthesis,
+    not a new primary-experiment assessment. Reference-CDS identity does not authenticate
+    assay stocks, constructs, localization or reaction rates. Intermediates remain
+    ungrounded; ionic reaction participants are not relabelled as neutral CHEBI:168396.
+    No missing side-chain-processing steps, preferred methylation order or complete
+    physiological route are inferred. MpaF resistance proteins are excluded, and existing
+    MpaG graphs and AntibioticMech content remain unchanged. MpaH' is withheld because
+    canonical433aa conflicts with the deposited398aa gene model.
+  nodes:
+  - node_id: mpac
+    label: MpaC' (NRRL864 reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A0B5KU17
+  - node_id: mpade
+    label: MpaDE' (NRRL864 reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A0B5KYT4
+  - node_id: mpaa
+    label: MpaA' (NRRL864 reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A0B5L778
+  - node_id: mpab
+    label: MpaB' (NRRL864 reference)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A0B5LB52
+  - node_id: moa
+    label: 5-Methylorsellinate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: dhmb
+    label: DHMB carboxylate intermediate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: dhmp
+    label: 5,7-Dihydroxy-4-methylphthalide (DHMP)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: fdhmp
+    label: 4-Farnesyl-3,5-dihydroxy-6-methylphthalide (FDHMP)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: fdhmp_minus_3c
+    label: FDHMP-3C carboxylate intermediate
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: polyketide_synthesis
+    label: 5-Methylorsellinate synthesis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hydroxylation
+    label: 5-Methylorsellinate hydroxylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: lactonization
+    label: DHMB lactonization
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: farnesylation
+    label: DHMP farnesylation
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: side_chain_cleavage
+    label: FDHMP side-chain cleavage
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: mpac
+    predicate: is_database_annotated_catalyst_of
+    object: polyketide_synthesis
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0B5KU17
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Reviewed mpaC'', taxon5074; entry46, sequence1, annotation2026-09-02.
+        CATALYTIC ACTIVITY assigns RHEA:63056; provenance: ECO:0000269 PubMed:31209052.
+        These are database evidence codes, not independently inspected primary assays
+        in this curation.'
+      snippet: 3 malonyl-CoA + acetyl-CoA + S-adenosyl-L-methionine + H(+) = 5-methylorsellinate
+        + S-adenosyl-L-homocysteine + 3 CO2 + 4 CoA
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AJG44381.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Native reference identity only: Penicillium brevicompactum NRRL864,
+        taxon5074, AJG44381.1, 2190 residues. No experimental stock or engineered
+        construct is identified.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KM595305.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: Complete 6573-nt/8-exon CDS; complement(join(KM595305.1:14460..15385,
+        KM595305.1:15460..15697,KM595305.1:16433..18732, KM595305.1:18793..19396,KM595305.1:19502..19896,
+        KM595305.1:19962..20337,KM595305.1:20407..21507, KM595305.1:21582..22214)).
+        Table1/codon1 translation equals the CDS annotation, GenPept and all 2190
+        UniProt residues. Independent GenPept coded_by extraction gives identical
+        DNA.
+    notes: Database reaction uses acetyl-CoA, three malonyl-CoA and SAM; it is not
+      an assertion of a free precursor pool or a new assay.
+  - subject: polyketide_synthesis
+    predicate: has_database_reaction_product
+    object: moa
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0B5KU17
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'CATALYTIC ACTIVITY assigns RHEA:63056; provenance: ECO:0000269 PubMed:31209052.'
+  - subject: mpade
+    predicate: is_database_annotated_catalyst_of
+    object: hydroxylation
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0B5KYT4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Reviewed mpaDE'', taxon5074; entry38, sequence1, annotation2026-01-28.
+        CATALYTIC ACTIVITY assigns RHEA:66668; provenance: ECO:0000269 PubMed:31209052.
+        These are database evidence codes, not independently inspected primary assays
+        in this curation.'
+      snippet: Cytochrome P450 monooxygenase mpaDE'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AJG44382.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Native reference identity only: Penicillium brevicompactum NRRL864,
+        taxon5074, AJG44382.1, 853 residues. No experimental stock or engineered construct
+        is identified.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KM595305.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: Complete 2562-nt/7-exon CDS; join(KM595305.1:25534..25821, KM595305.1:25895..26263,KM595305.1:26322..26536,
+        KM595305.1:26600..27050,KM595305.1:27105..27194, KM595305.1:27245..27435,KM595305.1:27485..28442).
+        Table1/codon1 translation equals the CDS annotation, GenPept and all 853 UniProt
+        residues. Independent GenPept coded_by extraction gives identical DNA.
+    notes: One fused protein has two database-annotated activities; no separate MpaD
+      or MpaE protein is added.
+  - subject: moa
+    predicate: is_substrate_in_database_reaction
+    object: hydroxylation
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0B5KYT4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'CATALYTIC ACTIVITY assigns RHEA:66668; provenance: ECO:0000269 PubMed:31209052.'
+  - subject: hydroxylation
+    predicate: has_database_reaction_product
+    object: dhmb
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0B5KYT4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'CATALYTIC ACTIVITY assigns RHEA:66668; provenance: ECO:0000269 PubMed:31209052.'
+  - subject: mpade
+    predicate: is_database_annotated_catalyst_of
+    object: lactonization
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0B5KYT4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'CATALYTIC ACTIVITY assigns RHEA:66672; provenance: ECO:0000269 PubMed:31209052.'
+    notes: One fused protein has two database-annotated activities; no separate MpaD
+      or MpaE protein is added.
+  - subject: dhmb
+    predicate: is_substrate_in_database_reaction
+    object: lactonization
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0B5KYT4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'CATALYTIC ACTIVITY assigns RHEA:66672; provenance: ECO:0000269 PubMed:31209052.'
+  - subject: lactonization
+    predicate: has_database_reaction_product
+    object: dhmp
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0B5KYT4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'CATALYTIC ACTIVITY assigns RHEA:66672; provenance: ECO:0000269 PubMed:31209052.'
+  - subject: mpaa
+    predicate: is_database_annotated_catalyst_of
+    object: farnesylation
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0B5L778
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Reviewed mpaA'', taxon5074; entry27, sequence1, annotation2026-09-02.
+        CATALYTIC ACTIVITY assigns RHEA:66676; provenance: ECO:0000269 PubMed:31209052.
+        These are database evidence codes, not independently inspected primary assays
+        in this curation.'
+      snippet: 5,7-dihydroxy-4-methylphthalide + (2E,6E)-farnesyl diphosphate = 4-farnesyl-3,5-dihydroxy-6-methylphthalide
+        + diphosphate
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AJG44379.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Native reference identity only: Penicillium brevicompactum NRRL864,
+        taxon5074, AJG44379.1, 331 residues. No experimental stock or engineered construct
+        is identified.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KM595305.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: Complete 996-nt/3-exon CDS; complement(join(KM595305.1:9939..10533, KM595305.1:10607..10901,KM595305.1:10972..11077)).
+        Table1/codon1 translation equals the CDS annotation, GenPept and all 331 UniProt
+        residues. Independent GenPept coded_by extraction gives identical DNA.
+  - subject: dhmp
+    predicate: is_substrate_in_database_reaction
+    object: farnesylation
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0B5L778
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'CATALYTIC ACTIVITY assigns RHEA:66676; provenance: ECO:0000269 PubMed:31209052.'
+  - subject: farnesylation
+    predicate: has_database_reaction_product
+    object: fdhmp
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0B5L778
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'CATALYTIC ACTIVITY assigns RHEA:66676; provenance: ECO:0000269 PubMed:31209052.'
+  - subject: mpab
+    predicate: is_database_annotated_catalyst_of
+    object: side_chain_cleavage
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0B5LB52
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Reviewed mpaB'', taxon5074; entry23, sequence1, annotation2026-01-28.
+        CATALYTIC ACTIVITY assigns RHEA:66688; provenance: ECO:0000269 PubMed:31209052.
+        These are database evidence codes, not independently inspected primary assays
+        in this curation.'
+      snippet: ER-bound oxygenase mpaB'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AJG44380.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Native reference identity only: Penicillium brevicompactum NRRL864,
+        taxon5074, AJG44380.1, 423 residues. No experimental stock or engineered construct
+        is identified.'
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/KM595305.1
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: Complete 1272-nt/3-exon CDS; join(KM595305.1:12565..12849, KM595305.1:12948..13534,KM595305.1:13608..14007).
+        Table1/codon1 translation equals the CDS annotation, GenPept and all 423 UniProt
+        residues. Independent GenPept coded_by extraction gives identical DNA.
+  - subject: fdhmp
+    predicate: is_substrate_in_database_reaction
+    object: side_chain_cleavage
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0B5LB52
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'CATALYTIC ACTIVITY assigns RHEA:66688; provenance: ECO:0000269 PubMed:31209052.'
+  - subject: side_chain_cleavage
+    predicate: has_database_reaction_product
+    object: fdhmp_minus_3c
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0B5LB52
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'CATALYTIC ACTIVITY assigns RHEA:66688; provenance: ECO:0000269 PubMed:31209052.'
+curation_history:
+- timestamp: '2026-10-12T13:41:51Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add new strain-specific reference graph for CHEBI:168396 on baseline dad8ea0b0bd919fbafce7a80295ad7b71826af3d;
+    all prior inline graphs and owner history are unchanged.
+  llm_assisted: true

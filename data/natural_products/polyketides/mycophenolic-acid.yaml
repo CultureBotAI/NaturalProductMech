@@ -495,6 +495,23 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000104, BGC0001677,
     BGC0002616, BGC0002619. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
+- discussion_id: curator-mpah-prime-reference-gene-model
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: How should the NRRL864 MpaH' canonical433-aa sequence be reconciled with
+    deposited AJG44385.1/KM595305.1 (398aa)?
+  rationale: UniProt marks AJG44385.1 as an erroneous gene model (ALT_SEQ). Native
+    CDS translation confirms the398-aa deposit, not the corrected433-aa canonical
+    sequence. MpaH' is not added as a grounded graph protein in this curation. Independent
+    structural sequence mapping remains a lead, not an inspected resolution.
+  evidence:
+  - reference: https://www.uniprot.org/uniprotkb/A0A0B5LB55
+    evidence_source: Reviewed UniProt sequence caution, inspected2026-10-12
+    notes: Entry20, sequence2; canonical433aa versus erroneous398-aa AJG44385.1.
+  - reference: https://www.ncbi.nlm.nih.gov/protein/AJG44385.1
+    evidence_source: Independent native GenPept and complete genomic CDS translation
+    notes: KM595305.1 three-exon model translates to398aa and disagrees with canonical
+      UniProt.
 causal_graphs:
 - graph_id: mycophenolic-acid-impdh-inhibition
   scope: BIOACTIVITY
@@ -817,6 +834,9 @@ causal_graphs:
       or assay transfer is asserted. The different-structure same-label BGC0001360
       record is not included; all source grades and old graphs remain unchanged, including
       the AntibioticMech link.
+causal_graph_refs:
+- mycophenolic-acid-nrrl864-core-biosynthesis-reference
+- mycophenolic-acid-ibt23078-core-biosynthesis-reference
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -871,4 +891,25 @@ curation_history:
     graphs, all source fields, producer/BGC grades, occurrences, AntibioticMech link,
     open discussion, SEEDED status and append-only history. The different-structure
     same-label owner is unchanged. Not full-record sign-off.'
+  llm_assisted: true
+- timestamp: '2026-10-12T13:41:51Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: 'Add nine sequence-verified biosynthetic reference proteins in two strain-specific
+    BIOSYNTHESIS graphs: NRRL864 MpaA''/B''/C''/DE'' and IBT23078 MpaA/B/C/DE/H. Add32
+    nodes and31 qualified edges, stable UniProt/NCBI references and nine short verbatim
+    database snippets. Preserve database-only provenance, by-similarity MpaB and curator-inferred
+    MpaH. Verify the corrected853-aa MpaDE fusion via BK008023.1/DAA35181.1; exclude
+    old split models. Hold MpaH'' gene-model disagreement in an open discussion. No
+    resistance proteins, primary-assay transfer, ionic-to-neutral identity substitution,
+    source-grade changes or full-record sign-off. Preserve all three old graphs, history,
+    source fields, existing discussion and SEEDED status. Store only new graphs in
+    exact-owner components to respect64KiB limits.'
+  llm_assisted: true
+- timestamp: '2026-10-12T13:49:58Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: 'Resolve review issue863: restore the existing discussions-before-causal_graphs
+    field order required by byte-identical seeding. Preserve all biological values,
+    prior history and both component files; formatting-order repair only.'
   llm_assisted: true
