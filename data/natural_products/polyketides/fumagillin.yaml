@@ -903,6 +903,7 @@ causal_graph_refs:
 - fumagillin-acea-copper-transcript
 - fumagillin-ppta-loss-rescue
 - fumagillin-ppza-iron-depletion
+- fumagillin-srea-hapx-iron-regulation
 discussions:
 - discussion_id: curator-fumagillin-abm-assay-identity
   kind: CURATION_TODO
@@ -1014,6 +1015,20 @@ discussions:
     evidence_source: Results2.3, Figure4, Discussion and Methods4.2/4.3/4.6
     notes: Primary sections and Figure4 inspected. Do not generalize the iron-depletion
       result to iron repletion or infer full-record REVIEWED status.
+- discussion_id: curator-fumagillin-iron-regulator-alleles
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: Which ATCC46645 allele sequences and direct regulatory mechanisms explain
+    the SreA/HapX fumagillin phenotypes?
+  rationale: Keep verified Af293 reference proteins separate from experimental alleles.
+    Deletion outcomes vary with iron; Figure9 uses WT-normalized comparisons whereas
+    Figure8 uses within-strain iron-replete normalization. Direct promoter occupancy,
+    mediation and fumagillin complementation remain unestablished here.
+  evidence:
+  - reference: DOI:10.3389/fmicb.2014.00530
+    evidence_source: Primary Methods, Results and Figure7-9 captions
+    notes: Evidence supports bounded genetic phenotypes, not a full-record REVIEWED
+      sign-off.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -1120,4 +1135,11 @@ curation_history:
     Preserve all eight prior graphs, source-owned fields, SEEDED status and history;
     distinguish sequence-verified B0XUR7 reference from unresolved CEA17 experimental
     allele.
+  llm_assisted: true
+- timestamp: '2026-10-12T07:32:58Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add SreA/HapX iron-conditioned fumagillin deletion graph with two sequence-verified
+    Af293 reference examples separate from ATCC46645 experimental alleles. Preserve
+    all nine prior graphs, source-owned fields, SEEDED status and history.
   llm_assisted: true

@@ -1,0 +1,213 @@
+record_id: CHEBI:48635
+standard_inchi_key: NGGMYCMLYOUNGM-CSDLUJIJSA-N
+graph:
+  graph_id: fumagillin-srea-hapx-iron-regulation
+  scope: BIOSYNTHESIS
+  description: 'Partial fumagillin genetic-regulation view: SreA and HapX deletion
+    outcomes at specified iron concentrations. Separate perturbation components intentionally
+    omit unproven mediation links. Af293 protein references are not equated to experimental
+    ATCC46645 alleles. HPLC-PDA peak areas are dry-weight normalized and compared
+    with WT at each iron condition. No direct promoter binding, protein-abundance
+    measurement, universal essentiality, complete pathway or rescue claim is asserted.'
+  nodes:
+  - node_id: srea_reference
+    label: SreA (Af293 reference, 546 aa)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4WV91
+  - node_id: srea_experimental
+    label: SreA (ATCC46645 experimental allele unresolved)
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: srea_gene
+    label: SreA gene (ATCC46645 background)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: srea_deletion
+    label: SreA gene deletion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: hapx_reference
+    label: HapX (Af293 reference, 491 aa)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q4WER3
+  - node_id: hapx_experimental
+    label: HapX (ATCC46645 experimental allele unresolved)
+    node_type: PROTEIN
+    grounding_status: UNGROUNDED
+  - node_id: hapx_gene
+    label: HapX gene (ATCC46645 background)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: hapx_deletion
+    label: HapX gene deletion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: lower_fumagillin_high_iron
+    label: Lower relative fumagillin at 1 mM iron
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: higher_fumagillin_no_iron
+    label: Higher relative fumagillin with no added iron
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: higher_fumagillin_replete
+    label: Higher relative fumagillin at 30 uM iron
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: srea_reference
+    predicate: is_reference_example_for
+    object: srea_experimental
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q4WV91/entry
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: Selected Af293 reference, not an identical ATCC46645 allele. Reviewed
+        UniProt Q4WV91, AFUA_5G11260, taxon330879, 546 aa agrees exactly with versioned
+        GenPept and the complete native genomic CDS translation.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EAL91485.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Native Af293 EAL91485.1: exact locus, strand, complete start/stop and
+        translation checked against UniProt. The versioned protein and its linked
+        nucleotide sequence do not establish the complete experimental allele.'
+    - reference: DOI:10.3389/fmicb.2014.00530
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: Methods, Strains and culture conditions, identifies ATCC46645 as the
+        wild type for these metabolite experiments; Af293 is used in a separate RNA-seq
+        series. This supports selecting a separate named reference example, not assigning
+        the Af293 accession to the experimental allele. No strain equivalence is asserted.
+  - subject: srea_gene
+    predicate: encodes
+    object: srea_experimental
+    evidence:
+    - reference: DOI:10.3389/fmicb.2014.00530
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Introduction and Results identify SreA as the transcription factor encoded
+        by the named gene. This entity relationship does not measure protein abundance
+        or direct contact with a fumagillin-cluster promoter.
+  - subject: srea_deletion
+    predicate: deletes
+    object: srea_gene
+    evidence:
+    - reference: DOI:10.3389/fmicb.2014.00530
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Methods, Strains and culture conditions, and Results name the delta-srea
+        strain alongside ATCC46645 for secondary-metabolite analysis. No new construct
+        sequence, insertion-site claim or fumagillin complementation experiment is
+        inferred.
+  - subject: hapx_reference
+    predicate: is_reference_example_for
+    object: hapx_experimental
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q4WER3/entry
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: Selected Af293 reference, not an identical ATCC46645 allele. Reviewed
+        UniProt Q4WER3, AFUA_5G03920, taxon330879, 491 aa agrees exactly with versioned
+        GenPept and the complete native genomic CDS translation.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EAL85914.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Native Af293 EAL85914.1: exact locus, strand, complete start/stop and
+        translation checked against UniProt. The versioned protein and its linked
+        nucleotide sequence do not establish the complete experimental allele.'
+    - reference: DOI:10.3389/fmicb.2014.00530
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: Methods, Strains and culture conditions, identifies ATCC46645 as the
+        wild type for these metabolite experiments; Af293 is used in a separate RNA-seq
+        series. This supports selecting a separate named reference example, not assigning
+        the Af293 accession to the experimental allele. No strain equivalence is asserted.
+  - subject: hapx_gene
+    predicate: encodes
+    object: hapx_experimental
+    evidence:
+    - reference: DOI:10.3389/fmicb.2014.00530
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Introduction and Results identify HapX as the transcription factor encoded
+        by the named gene. This entity relationship does not measure protein abundance
+        or direct contact with a fumagillin-cluster promoter.
+  - subject: hapx_deletion
+    predicate: deletes
+    object: hapx_gene
+    evidence:
+    - reference: DOI:10.3389/fmicb.2014.00530
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Methods, Strains and culture conditions, and Results name the delta-hapx
+        strain alongside ATCC46645 for secondary-metabolite analysis. No new construct
+        sequence, insertion-site claim or fumagillin complementation experiment is
+        inferred.
+  - subject: srea_deletion
+    predicate: results_in
+    object: lower_fumagillin_high_iron
+    evidence:
+    - reference: DOI:10.3389/fmicb.2014.00530
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Methods and Results/Figure9 caption: ATCC46645 wild type and deletion
+        strains; triplicate 50 mL GMM cultures, 5e6 conidia/mL, 5 days at25 C,250
+        rpm,ambient light. Supernatant extracts analyzed by HPLC-PDA against commercial
+        fumagillin standard; peak areas normalized to sample dry weight, then mutant
+        relative to WT at the same iron concentration. This differs from Figure8 normalization
+        to30 uM within each strain. No absolute yield or fold change is assigned.
+        Results reports reduced fumagillin in delta-sreA at high iron (1 mM). Do not
+        generalize to all iron conditions or infer direct promoter binding.'
+      snippet: was greatly reduced in
+  - subject: hapx_deletion
+    predicate: results_in
+    object: higher_fumagillin_no_iron
+    evidence:
+    - reference: DOI:10.3389/fmicb.2014.00530
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Methods and Results/Figure9 caption: ATCC46645 wild type and deletion
+        strains; triplicate 50 mL GMM cultures, 5e6 conidia/mL, 5 days at25 C,250
+        rpm,ambient light. Supernatant extracts analyzed by HPLC-PDA against commercial
+        fumagillin standard; peak areas normalized to sample dry weight, then mutant
+        relative to WT at the same iron concentration. This differs from Figure8 normalization
+        to30 uM within each strain. No absolute yield or fold change is assigned.
+        Results reports significantly increased fumagillin in delta-hapX versus WT
+        under no-iron conditions (0 added iron). No-added-iron medium is not a claim
+        of chemically zero iron.'
+      snippet: significantly increased in
+  - subject: hapx_deletion
+    predicate: results_in
+    object: higher_fumagillin_replete
+    evidence:
+    - reference: DOI:10.3389/fmicb.2014.00530
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Methods and Results/Figure9 caption: ATCC46645 wild type and deletion
+        strains; triplicate 50 mL GMM cultures, 5e6 conidia/mL, 5 days at25 C,250
+        rpm,ambient light. Supernatant extracts analyzed by HPLC-PDA against commercial
+        fumagillin standard; peak areas normalized to sample dry weight, then mutant
+        relative to WT at the same iron concentration. This differs from Figure8 normalization
+        to30 uM within each strain. No absolute yield or fold change is assigned.
+        Results reports significantly increased fumagillin in delta-hapX versus WT
+        under iron-replete conditions (30 uM). Do not extrapolate this direction to1
+        mM iron.'
+curation_history:
+- timestamp: '2026-10-12T07:32:58Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Create eleven-node, nine-edge SreA/HapX graph with edge-level DOI or stable
+    URL references and two primary snippets. Distinguish dry-weight normalization
+    and same-condition WT comparison from within-strain normalization; no direct binding,
+    complete experimental allele or rescue claim.
+  llm_assisted: true
+- timestamp: '2026-10-12T07:42:57Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: 'Address adversarial review issue #852: cite the primary Methods strain
+    context directly on both reference-example edges and separate it from UniProt/GenPept
+    sequence evidence. No change to nodes, phenotype directions, iron conditions or
+    experimental-allele uncertainty.'
+  llm_assisted: true
