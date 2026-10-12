@@ -333,11 +333,13 @@ causal_graphs:
         complexation is assigned; this is not a protein trimer.
 - graph_id: hexadehydroastechrome-annotated-regulation
   scope: BIOSYNTHESIS
-  description: Database-annotated cluster regulation and transporter requirement.
-    CEA10/A1163 reference accessions are not assigned to experimental alleles. HasA
-    positive regulation is not direct promoter binding, HasB requirement is not an
-    identified transport reaction, and the HasF null regulatory finding applies only
-    to tested growth conditions.
+  description: Partial database-annotated view of cluster regulation and transporter
+    requirement. Links between gene-expression regulation and transporter-dependent
+    production are intentionally omitted because their mediation is not established
+    here. CEA10/A1163 reference accessions are not assigned to experimental alleles.
+    HasA positive regulation is not direct promoter binding, HasB requirement is not
+    an identified transport reaction, and the HasF null regulatory finding applies
+    only to tested growth conditions.
   nodes:
   - node_id: hasa
     label: HasA (CEA10/A1163 annotated reference)
@@ -456,4 +458,12 @@ curation_history:
     snippets. Preserve HasE timing ambiguity, HasF condition-bounded null regulation,
     unknown HasB cargo, all seeded fields and SEEDED status. Do not equate reference
     sequences to experimental alleles or promote database annotations to primary experiments.
+  llm_assisted: true
+- timestamp: '2026-10-12T08:42:47Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: 'Address review issue #855: explicitly declare the regulation graph a partial
+    view and explain that unproven mediation links are intentionally omitted. Preserve
+    every node, edge, reference, snippet and seeded field; do not invent a connection
+    or weaken the corpus invariant.'
   llm_assisted: true
