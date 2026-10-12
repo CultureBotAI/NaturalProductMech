@@ -1256,6 +1256,8 @@ causal_graphs:
         not protein abundance or direct promoter binding. Authors report 9% and 7%
         of wild-type transcript levels. No LaeA-specific fumagillin production assay
         or mediation through FumR is asserted from these expression data alone.'
+causal_graph_refs:
+- fumagillin-acea-copper-transcript
 discussions:
 - discussion_id: curator-fumagillin-abm-assay-identity
   kind: CURATION_TODO
@@ -1324,6 +1326,19 @@ discussions:
   - reference: DOI:10.1371/journal.pone.0077147
     evidence_source: Figures 4-7, Figure S1, Methods, Tables S1-S2
     notes: Full text and supplements inspected; no full-record REVIEWED sign-off.
+- discussion_id: curator-fumagillin-acea-scope
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: Which experimental AceA allele and full RNAseq comparison resolve the strain,
+    timing and broader cluster-label ambiguities?
+  rationale: Keep Af293 Q4WN33 separate from the CEA17-background AFUB_073740 experiment.
+    Figure2 and Table S11 support the limited Afu8g00430 transcript claim, not direct
+    binding or product yield.
+  evidence:
+  - reference: DOI:10.1080/21505594.2021.1958057
+    evidence_source: Methods, Figure2, Tables S1 and S11
+    notes: Retain Methods24 h versus Results25 h pre-exposure wording and akuBKU80
+      versus A1163 naming. No full-record REVIEWED sign-off.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -1392,4 +1407,20 @@ curation_history:
     graph as a partial view with separate perturbation components and unproven mediation
     links intentionally omitted. Preserve every node, edge, evidence item and experimental
     qualifier; do not invent a causal connection to satisfy topology checks.'
+  llm_assisted: true
+- timestamp: '2026-10-12T04:57:20Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add one exact-owner AceA copper-stress transcript graph component and scope
+    discussion. Preserve all six inline graphs, source-owned fields, SEEDED status
+    and history. Separate sequence-verified Af293 Q4WN33 reference from experimental
+    allele; no product-yield or direct-binding claim.
+  llm_assisted: true
+- timestamp: '2026-10-12T05:05:33Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: 'Address review issue #847: order causal_graph_refs before curator discussions,
+    matching the seeder carry-forward helper and restoring byte-identical reproduction.
+    Preserve every graph, component byte, source-owned field and prior event; no biological
+    change.'
   llm_assisted: true
