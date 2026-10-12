@@ -1,0 +1,143 @@
+record_id: CHEBI:48635
+standard_inchi_key: NGGMYCMLYOUNGM-CSDLUJIJSA-N
+graph:
+  graph_id: fumagillin-ppta-loss-rescue
+  scope: BIOSYNTHESIS
+  description: 'Partial fumagillin biosynthesis view: pptA genetic deletion and native-locus
+    rescue in CEA10-derived A1160p+, with the bounded LC-MS detection phenotype. A
+    separately sequence-verified CEA10/A1163 reference is not equated to the experimental
+    allele. No direct PptA-to-FmaPKS priming, catalytic substrate/product step, protein-abundance
+    measurement, universal essentiality or fumagillin-mediated virulence mechanism
+    is asserted; the paper''s recombinant activity assay uses AarA.'
+  nodes:
+  - node_id: ppta_reference
+    label: PptA (CEA10/A1163 reference, 357 aa)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:B0XWE4
+  - node_id: ppta_experimental
+    label: PptA (A1160p+ experimental allele unresolved)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: ppta_gene
+    label: pptA gene (experimental AFUB_024520 locus)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: delete_ppta
+    label: pptA deletion in A1160p+
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: restore_ppta
+    label: pptA restoration at its original locus
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: fumagillin_not_detected
+    label: Fumagillin peak not detected in 7-day SAB extract
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: fumagillin_peak_restored
+    label: Fumagillin peak restored in 7-day SAB extract
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: ppta_reference
+    predicate: is_reference_example_for
+    object: ppta_experimental
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/B0XWE4/entry
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: Selected genomic reference, not a proven identical experimental allele.
+        Unreviewed UniProt B0XWE4, AFUB_024520, taxon451804 CEA10/A1163, 357 aa. Complete
+        native CDS translation, GenPept and UniProt sequence agree exactly. Prefer
+        the matching AFUB locus/background over reviewed but different Af293 Q4X1W0.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EDP54396.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Versioned A1163 native reference EDP54396.1, coded_by DS499595.1:2189402..2190475.
+        Exact start/stop, coordinates, strand and complete translation independently
+        checked. This is not full experimental-allele or recombinant-construct sequencing.
+    - reference: DOI:10.1128/mbio.01504-16
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: Methods uses CADRE pptA AFUB_024520A. Table1 and Strains identify the
+        parent as A1160p+, derived from CEA10 with Ku80 deletion and pyrG+. Shared
+        locus/background supports a reference example, not full allele identity.
+  - subject: ppta_gene
+    predicate: encodes
+    object: ppta_experimental
+    evidence:
+    - reference: DOI:10.1128/mbio.01504-16
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Results and Methods identify pptA as the gene encoding phosphopantetheinyl
+        transferase PptA. This entity relationship is not a protein-abundance measurement
+        or a purified FmaPKS activation assay.
+  - subject: delete_ppta
+    predicate: replaces
+    object: ppta_gene
+    evidence:
+    - reference: DOI:10.1128/mbio.01504-16
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Table1, mutant-generation Methods and Figure S4A: delta-pptA is derived
+        from A1160p+, carries the hph replacement cassette and lacks pptA. PCR and
+        Southern blotting verify locus recombination; Table S4 lists the genetic primers.'
+  - subject: restore_ppta
+    predicate: restores
+    object: ppta_gene
+    evidence:
+    - reference: DOI:10.1128/mbio.01504-16
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Methods restores pptA at its original locus using a fragment amplified
+        with P1/P4; Table1 describes pptA rec derived from delta-pptA, hph negative.
+        PCR and Southern blotting (Figure S4A) confirm recombination. Selection was
+        on VMM lacking supplemental lysine and iron; that selection medium is not
+        substituted for the metabolite-assay medium.
+  - subject: delete_ppta
+    predicate: results_in
+    object: fumagillin_not_detected
+    evidence:
+    - reference: DOI:10.1128/mbio.01504-16
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure2B and Secondary metabolite assay Methods: A1160p+ parent, delta-pptA
+        and pptA rec; 1e7 spores in 100 mL SAB for 7 days at 30 C; equal-volume ethyl-acetate
+        extraction of supernatants, dried and redissolved in 1 mL methanol. Fumagillin
+        is assigned at retention time 13.50 min; identification uses retention time
+        and exact mass against isolated standards. The displayed trace is absorbance
+        in mAU. No numerical detection limit, biomass-normalized yield, replicate
+        count or metabolite-specific supplementation regimen is supplied for this
+        comparison. Results reports absence of the named peaks, including fumagillin,
+        in delta-pptA; parent provides the positive comparison and medium-only extract
+        the background control. This means not detected under these conditions, not
+        absolute zero biosynthesis, all-metabolite absence or universal essentiality.'
+      snippet: None of these peaks was identified
+  - subject: restore_ppta
+    predicate: results_in
+    object: fumagillin_peak_restored
+    evidence:
+    - reference: DOI:10.1128/mbio.01504-16
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure2B and Secondary metabolite assay Methods: A1160p+ parent, delta-pptA
+        and pptA rec; 1e7 spores in 100 mL SAB for 7 days at 30 C; equal-volume ethyl-acetate
+        extraction of supernatants, dried and redissolved in 1 mL methanol. Fumagillin
+        is assigned at retention time 13.50 min; identification uses retention time
+        and exact mass against isolated standards. The displayed trace is absorbance
+        in mAU. No numerical detection limit, biomass-normalized yield, replicate
+        count or metabolite-specific supplementation regimen is supplied for this
+        comparison. The reconstituted isolate restores the fumagillin-associated peak
+        and a parental-like profile. This is qualitative genetic rescue, not a quantified
+        fold change or equal normalized production rate.'
+      snippet: consistent with that of the parental isolate
+curation_history:
+- timestamp: '2026-10-12T05:55:06Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Create seven-node, six-edge PptA BIOSYNTHESIS graph with edge-level citations
+    and two primary snippets. Bound deletion and native-locus rescue to the 7-day
+    SAB LC-MS phenotype; do not infer direct FmaPKS priming or quantitative product
+    yield.
+  llm_assisted: true
