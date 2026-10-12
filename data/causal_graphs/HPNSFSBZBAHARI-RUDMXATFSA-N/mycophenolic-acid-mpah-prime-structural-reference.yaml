@@ -1,0 +1,84 @@
+record_id: CHEBI:168396
+standard_inchi_key: HPNSFSBZBAHARI-RUDMXATFSA-N
+graph:
+  graph_id: mycophenolic-acid-mpah-prime-structural-reference
+  scope: BIOSYNTHESIS
+  description: MpaH' canonical reference grounded by independent structural entity
+    sequences. Reaction provenance remains database-only; the 2021 article itself
+    was not inspected beyond its abstract. No native gene-model repair, assay-stock
+    authentication, mutant catalysis, bound CoA substrate, quantitative specificity
+    or dimer mechanism is claimed. Ionic mycophenolate remains distinct from neutral
+    CHEBI:168396 and the 2025 paper-labelled assay.
+  nodes:
+  - node_id: mpah_prime
+    label: Type I acyl-CoA thioesterase mpaH'
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A0B5LB55
+  - node_id: mpa_coa
+    label: Mycophenolyl-CoA
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: hydrolysis
+    label: Database-annotated thioester hydrolysis
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: mycophenolate
+    label: Mycophenolate (ionic product)
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: mpah_prime
+    predicate: is_database_annotated_catalyst_of
+    object: hydrolysis
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0B5LB55
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed433-aa MpaH', sequence2; RHEA:66704, ECO:0000269/PMID31209052.
+        Database assertion, not an independently inspected 2019 assay.
+      snippet: mycophenolyl-CoA + H2O = mycophenolate + CoA + H(+)
+    - reference: https://www.ebi.ac.uk/pdbe/entry-files/download/7dbi.cif
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: Independent NRRL864/taxon5074 deposit, chainsA-D, 1.99A. Entire433-aa
+        declared canonical entity sequence equals A0A0B5LB55 after MSE-to-M normalization.
+        Observed chains contain417-420 residues, not all433. Apo deposit contains
+        water, no MPA-CoA. Deposit DBREF self-references PDB, so this mapping is computed,
+        not a deposited UniProt cross-reference.
+    - reference: https://www.ebi.ac.uk/pdbe/entry-files/download/7dbl.cif
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: Independent NRRL864 deposit, chainsA-D,1.84A. Declared433-aa entity differs
+        from A0A0B5LB55 only at S139A, agreeing with the deposit mutation. MOA is
+        a product ligand, not MPA-CoA; no catalytic activity is transferred from this
+        mutant structure.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AJG44385.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: The398-aa native reference remains an erroneous gene-model candidate,
+        not a sequence match; structural agreement does not repair KM595305.1 or establish
+        native splice junctions.
+  - subject: mpa_coa
+    predicate: is_substrate_in_database_reaction
+    object: hydrolysis
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0B5LB55
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: CATALYTIC ACTIVITY RHEA:66704; database reaction only.
+  - subject: hydrolysis
+    predicate: has_database_reaction_product
+    object: mycophenolate
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0B5LB55
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: CATALYTIC ACTIVITY RHEA:66704; database reaction only.
+curation_history:
+- timestamp: '2026-10-12T14:35:34Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add scoped side-chain protein evidence for CHEBI:168396 on baseline 0884f349d8d00a68b071512b20c2fe4ab424e2de.
+    Existing graphs are preserved; not full-record sign-off.
+  llm_assisted: true
