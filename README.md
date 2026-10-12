@@ -69,7 +69,7 @@ field coverage (records carrying at least one item):
   biosynthetic_pathway                  164
   bioactivities                         176
   bioactivity_summary                   318
-  molecular_targets                      14
+  molecular_targets                      15
   causal_graphs                         279
   related_records                       210
   discussions                           344

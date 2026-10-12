@@ -109,10 +109,20 @@ cannot inherit another compound's curation:
 | carried | why |
 |---|---|
 | `biosynthetic_pathway`, `causal_graphs`, `causal_graph_refs` | M6 curation; the seeder does not produce them at all |
+| `molecular_targets` items with `source: CURATOR` | explicit curator ownership; appended after freshly rebuilt imported targets |
 | `curation_history` | the trail, and re-stamped only when seeder-owned content changed |
 | `curation_status` when it is not `SEEDED` | only a curator moves a record off `SEEDED`, so only a curator can move it back |
 | curator-owned fields on a `discussion` | the seeder raises the question, you answer it |
 | whole `discussions` with `discussion_id: curator-<local-id>` | explicitly curator-owned questions, including their answers and evidence |
+
+Curator molecular targets retain their evidence, examples and order only for
+the same nonempty Standard InChIKey. Imported or unmarked target items are not
+carried forward. Do not relabel an imported row as `CURATOR` to freeze stale
+source data; author a separately evidenced claim. This does not permit copying
+antimicrobial mechanisms from a linked AntibioticMech record. When adding the
+first curator target to a record without imported targets, place the section
+before curator pathway/graph sections and `curation_history`, then verify
+reproduction.
 
 On a source-generated discussion the seeder owns `discussion_id`, `kind` and
 `prompt` — it re-raises the question each run — and everything else is yours: `status`,

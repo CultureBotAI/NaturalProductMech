@@ -80,6 +80,45 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+molecular_targets:
+- target_label: Mycobacterium tuberculosis 20S proteasome core
+  target_type: PROTEIN_COMPLEX
+  relation: INHIBITS
+  taxon_id: NCBITaxon:1773
+  taxon_label: Mycobacterium tuberculosis
+  protein_examples:
+  - UniProtKB:P9WHT9
+  source: CURATOR
+  notes: Target identity is the complex, not an isolated beta subunit. The example
+    is deliberately selected H37Rv native PrcB; its mature58-291 sequence matches
+    the structural beta chain before the6His tag. PrcA is only a complex component
+    in the graph, not a direct binding-target example. 3KRD names H37Rv but also gives
+    H37Ra accessions A5U4D5/A5U4D6 and MRA_2124/MRA_2125. The H37Ra and H37Rv reference
+    sequences are identical. H37Rv accessions here are deliberately selected native
+    references, not proof of the experimental donor strain. Species-level target scope
+    follows the abstract, not a verified H37Rv kinetic assay. No measurement adopted.
+  evidence:
+  - reference: DOI:10.1016/j.abb.2010.06.009
+    evidence_type: PRIMARY_EXPERIMENT
+    retrieved_on: '2026-10-12'
+    notes: Only the author abstract indexed at https://europepmc.org/article/MED/20558127
+      was inspected. It reports time-dependent M. tuberculosis proteasome inhibition
+      and a co-crystal with fellutamide B. Full Methods, kinetic-assay constructs,
+      substrate conditions and experimental compound preparation were not inspected.
+      No quantitative Ki, strain-specific susceptibility, growth inhibition or downstream
+      killing claim is adopted.
+  - reference: https://www.uniprot.org/uniprotkb/P9WHT9/entry
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-12'
+    notes: Reviewed H37Rv native reference; entry68, sequence1, annotation2026-09-02.
+      ACTIVITY REGULATION annotates fellutamide B inhibition of proteasome activity,
+      not isolated precursor inhibition.
+    snippet: Proteasome activity is potently inhibited by fellutamide B
+  - reference: https://www.rcsb.org/structure/3KRD
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-12'
+    notes: 'Structural corroboration and construct mapping only: entity2 is the processed
+      beta sequence plus6His. Conflicting strain identifiers remain unresolved.'
 causal_graphs:
 - graph_id: fellutamide-b-proposed-assembly-native-references
   scope: BIOSYNTHESIS
@@ -401,6 +440,153 @@ causal_graphs:
         B. Full Methods, strain, alleles, dose, growth measurement and primary chemical
         stereochemistry remain unverified. This is a conditional producer-resistance
         result, not a purified binding assay or general drug-susceptibility claim.
+- graph_id: fellutamide-b-mycobacterial-proteasome
+  scope: BIOACTIVITY
+  description: Partial inhibition and structural-target view, separate from producer
+    biosynthesis and self-resistance. H37Rv PrcA/PrcB are sequence-verified reference
+    examples. The processed tagged structural beta chain is represented separately
+    and left without a misleading canonical identifier. 3KRD names H37Rv but also
+    gives H37Ra accessions A5U4D5/A5U4D6 and MRA_2124/MRA_2125. The H37Ra and H37Rv
+    reference sequences are identical. H37Rv accessions here are deliberately selected
+    native references, not proof of the experimental donor strain. Complex identity
+    has no adopted ontology accession. Abstract-bounded inhibition is distinct from
+    the independent deposited covalent model; no human or yeast target transfer, Ki
+    measurement, microbial growth effect or complete mechanism is asserted.
+  nodes:
+  - node_id: fellutamide_b
+    label: fellutamide B (free compound)
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-a7c02b2a6d
+    grounding_status: GROUNDED
+  - node_id: mtb_core
+    label: M. tuberculosis 20S proteasome core
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
+  - node_id: prca_reference
+    label: PrcA (H37Rv native reference)
+    node_type: PROTEIN
+    identifier: UniProtKB:P9WHU1
+    grounding_status: GROUNDED
+  - node_id: prcb_reference
+    label: PrcB precursor (H37Rv native reference)
+    node_type: ENZYME
+    identifier: UniProtKB:P9WHT9
+    grounding_status: GROUNDED
+  - node_id: prcb_construct
+    label: 3KRD mature PrcB plus C-terminal 6His
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: fellutamide_b
+    predicate: inhibits
+    object: mtb_core
+    evidence:
+    - reference: DOI:10.1016/j.abb.2010.06.009
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Only the author abstract indexed at https://europepmc.org/article/MED/20558127
+        was inspected. It reports time-dependent M. tuberculosis proteasome inhibition
+        and a co-crystal with fellutamide B. Full Methods, kinetic-assay constructs,
+        substrate conditions and experimental compound preparation were not inspected.
+        No quantitative Ki, strain-specific susceptibility, growth inhibition or downstream
+        killing claim is adopted.
+      snippet: 1 inhibits the Mtb proteasome in a single-step binding mechanism
+  - subject: prca_reference
+    predicate: is_reference_for_outer_ring_subunit_of
+    object: mtb_core
+    notes: Complex membership only; no direct alpha-subunit drug-binding claim. 3KRD
+      names H37Rv but also gives H37Ra accessions A5U4D5/A5U4D6 and MRA_2124/MRA_2125.
+      The H37Ra and H37Rv reference sequences are identical. H37Rv accessions here
+      are deliberately selected native references, not proof of the experimental donor
+      strain.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P9WHU1/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed H37Rv native reference; entry68, sequence1, annotation2026-09-02.
+        SUBUNIT annotation assigns the outer alpha rings.
+      snippet: two outer rings, each composed of seven alpha subunits
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CCP44884.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: native H37Rv prcA/Rv2109c, taxon83332, 248aa. Complete
+        reverse-strand CDS on AL123456.3:2368983..2369729, GenPept CCP44884.1 and
+        UniProt P9WHU1 agree including start/stop under translation table11. Not a
+        verified kinetic-assay construct.'
+    - reference: https://www.rcsb.org/structure/3KRD
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Entity1 polymer sequence is identical to full-length H37Rv PrcA1-248.
+        The deposited complex contains14 alpha and14 beta chains; sequence identity
+        does not resolve the conflicting donor-strain metadata.
+  - subject: prcb_reference
+    predicate: is_sequence_reference_for
+    object: prcb_construct
+    notes: Reference-to-construct mapping only, not equivalence of full precursor
+      and processed tagged protein. 3KRD names H37Rv but also gives H37Ra accessions
+      A5U4D5/A5U4D6 and MRA_2124/MRA_2125. The H37Ra and H37Rv reference sequences
+      are identical. H37Rv accessions here are deliberately selected native references,
+      not proof of the experimental donor strain.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P9WHT9/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Reviewed H37Rv native reference; entry68, sequence1, annotation2026-09-02.
+        Propeptide1-57; mature chain58-291 with active-site Thr58. Reference precursor
+        is291aa.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CCP44885.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 'Identity only: native H37Rv prcB/Rv2110c, taxon83332, 291aa. Complete
+        reverse-strand CDS on AL123456.3:2369726..2370601, GenPept CCP44885.1 and
+        UniProt P9WHT9 agree including start/stop under translation table11. Not a
+        verified kinetic-assay construct.'
+    - reference: https://www.rcsb.org/structure/3KRD
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Entity2 is exactly PrcB58-291 followed by HHHHHH,240aa. The deposit marks
+        six expression-tag residues. Native-reference Thr58 corresponds to deposited
+        beta label_seq_id1/auth_seq_id301. This is the deposited structural polymer,
+        not a verified kinetic-assay preparation.
+    - reference: https://www.uniprot.org/uniprotkb/A5U4D6/entry
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: The deposit-linked H37Ra PrcB/MRA_2125 sequence is identical to H37Rv
+        P9WHT9. It is not silently adopted as an experimentally verified H37Ra target.
+  - subject: prcb_construct
+    predicate: is_catalytic_inner_ring_component_of
+    object: mtb_core
+    evidence:
+    - reference: https://www.rcsb.org/structure/3KRD
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Independent2.50-angstrom deposit:14 beta chains in the assembled core,
+        each bearing a covalent linkage from its first mature Thr OG1 to the ligand
+        terminal LEU C atom. Component identity is structural-dataset evidence, not
+        a full primary-paper read.
+  - subject: fellutamide_b
+    predicate: is_modeled_as_covalent_adduct_with
+    object: prcb_construct
+    notes: A bound hemiacetal is not the free aldehyde owner and has an additional
+      stereocenter. This edge reports a deposited structural model, not irreversible
+      inhibition, proof of purified-beta-alone activity, or quantitative affinity.
+    evidence:
+    - reference: https://www.rcsb.org/structure/3KRD
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: 3KRD stores the ligand as NQL peptide plus HXD lipid. All14 beta-ligand
+        linkages are explicitly deposited as covalent Thr OG1 to ligand terminal C.
+        Alpha-subunit binding is not inferred.
+      snippet: in complex with Fellutamide B
+    - reference: https://files.rcsb.org/download/3KRD.cif
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: 'Curator mapping with RDKit2026.03.5: representative ligand chain a retains
+        S/S/S peptide centers and R lipid3-OH geometry. Reversing the modeled hemiacetal
+        to free aldehyde and completing the seven unobserved distal lipid carbons
+        from the deposited dodecanoate identity reproduces owner InChIKey MFXAGCQVWGPEJH-LRSLUSHPSA-N.
+        Only32 of39 ligand heavy atoms are observed in that chain; no complete density,
+        primary stereochemical or experimental preparation sign-off.'
 discussions:
 - discussion_id: curator-fellutamide-b-assembly-and-assay-scope
   kind: CURATION_TODO
@@ -424,6 +610,28 @@ discussions:
     evidence_source: Reviewed UniProt FUNCTION
     notes: Database annotation proposes reductive release of (2S)-fellutamide B; terminal-domain
       catalysis is not independently verified.
+- discussion_id: curator-fellutamide-b-proteasome-strain-and-construct
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: Which donor strain and exact kinetic construct were used, and how should
+    the conflicting3KRD strain metadata be resolved?
+  rationale: 3KRD names H37Rv but also gives H37Ra accessions A5U4D5/A5U4D6 and MRA_2124/MRA_2125.
+    The H37Ra and H37Rv reference sequences are identical. H37Rv accessions here are
+    deliberately selected native references, not proof of the experimental donor strain.
+    Independent sequence checks confirm reference identity and a processed6His structural
+    beta chain, but not the kinetic construct. The ligand geometry supports the existing
+    owner at its four retained centers, while distal lipid density is incomplete.
+    Keep SEEDED status; primary Methods, assay preparation and full structural validation
+    remain uninspected. Human beta5 and yeast proteasome mentions are separate uncurated
+    leads.
+  evidence:
+  - reference: https://www.rcsb.org/structure/3KRD
+    evidence_source: Inspected independent mmCIF deposition
+    notes: H37Rv strain text conflicts with H37Ra accession/locus metadata; beta entity58-291
+      plus6His.
+  - reference: DOI:10.1016/j.abb.2010.06.009
+    evidence_source: Inspected author abstract only
+    notes: Full article access stopped at browser challenge; no alternative retrieved.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -444,4 +652,15 @@ curation_history:
     discussion. Preserve all source-owned identity/provenance, history and SEEDED
     status; no experimental-allele, full-primary stereochemical or direct-binding
     sign-off.'
+  llm_assisted: true
+- timestamp: '2026-10-12T11:42:00Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add two sequence-verified H37Rv proteasome reference proteins, one qualified
+    BIOACTIVITY graph with five nodes/five edges, and a complex-level target with
+    PrcB example. Separate native precursor from the processed6His structural construct;
+    distinguish alpha membership from beta covalent modeling and abstract-only inhibition.
+    Preserve H37Rv/H37Ra provenance conflict, chemical identity, existing graphs/history
+    and SEEDED status; add stable edge evidence, four short snippets and a scope discussion.
+    No quantitative affinity or microbial killing claim.
   llm_assisted: true

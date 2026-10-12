@@ -327,6 +327,15 @@ def carry_curator_owned_fields(payload: dict[str, Any], existing: dict[str, Any]
                 raise ValueError(f"duplicate curator discussion_id: {discussion_id}")
             curator_discussions[discussion_id] = discussion
 
+    # Imported targets are rebuilt; only explicitly curator-owned items survive.
+    curator_targets = [target for target in existing.get("molecular_targets") or []
+                       if isinstance(target, dict) and target.get("source") == "CURATOR"]
+    if curator_targets:
+        payload["molecular_targets"] = [
+            target for target in payload.get("molecular_targets") or []
+            if target.get("source") != "CURATOR"
+        ] + curator_targets
+
     for field in CURATOR_OWNED_CARRIED_FIELDS:
         if field in existing:
             payload[field] = existing[field]
