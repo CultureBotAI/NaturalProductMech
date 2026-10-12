@@ -818,6 +818,67 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
+<p class="sub">Partial fumagillin genetic-regulation view: ppzA deletion and complementation under iron depletion. The independently sequence-verified CEA10/A1163 reference is not equated to the experimental CEA17 allele. Preserve the unspecified Figure4 timepoint, non-specific metal chelation and qualitative LC-MS scope. No direct phosphatase substrate, complete pathway, iron-repletion reduction, universal essentiality or fumagillin-mediated virulence is asserted.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>PpzA (CEA10/A1163 reference, 540 aa)</td>
+  <td>is_reference_example_for</td>
+  <td>PpzA (CEA17 experimental allele unresolved)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/B0XUR7/entry<br>https://www.ncbi.nlm.nih.gov/protein/EDP54052.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/B0XUR7/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected reference, not a proven identical experimental allele. Reviewed UniProt2026_03 B0XUR7 names ppzA/AFUB_021020, CEA10/A1163 taxon451804,540 aa and cites both primary papers for function/disruption. Complete native CDS, GenPept and UniProt sequence agree exactly.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EDP54052.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned A1163 EDP54052.1, coded_by complement(join(DS499595.1:1057660..1057944,DS499595.1:1058020..1059357)). Exact strand, splicing, start/stop and translation checked. Native reference identity does not establish the complete CEA17 experimental allele.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>ppzA gene (CEA17 experimental background)</td>
+  <td>encodes</td>
+  <td>PpzA (CEA17 experimental allele unresolved)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1111/cmi.12770</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1111/cmi.12770</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>The paper identifies ppzA as encoding protein phosphatase Z PpzA; Methods4.2 names CEA17 pyrG+/pyrG- akuBKU80 parental backgrounds. Gene identity is not a direct measurement of protein abundance or a specific fumagillin-enzyme substrate assignment.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>ppzA deletion under iron depletion</td>
+  <td>deletes</td>
+  <td>ppzA gene (CEA17 experimental background)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1534/g3.115.016766</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1534/g3.115.016766</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>The2015 Materials and Methods, Strains and DNA manipulations sections, specify CEA17-80 ku80-/pyrG- as deletion recipient and pyrG replacement strategy. Table1 labels PpzA with reference locus Afu2g03950; this does not make the mutant an Af293 strain.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>ppzA complementation under iron depletion</td>
+  <td>reintroduces</td>
+  <td>ppzA gene (CEA17 experimental background)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1111/cmi.12770</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1111/cmi.12770</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods4.3 reports co-transformation of the ppzA ORF with about1 kb each flanking region plus pHATalpha, hygromycin selection and PCR confirmation. The integration site and copy number are not established here; do not call this proven native-locus restoration.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>ppzA deletion under iron depletion</td>
+  <td>results_in</td>
+  <td>Lower fumagillin LC-MS signal under iron depletion</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1111/cmi.12770</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1111/cmi.12770</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure4a and Methods4.6: CEA17 wild type, delta-ppzA and complemented strain; 5e7 spores, MM for24 h at37 C and200 rpm, then iron-free MM with200 uM BPS and300 uM ferrozine; triplicate conditions. Methods lists2 and4 h transfers, but Figure4 does not assign a particular timepoint. Fumagillin EIC m/z459.23 [M+H]+ is a qualitative readout, not a biomass-normalized production rate or absolute yield. Results2.3 and Discussion specifically support reduced fumagillin under iron depletion. No all-condition absence, quantitative fold change or iron-repletion reduction is inferred. Growth effects and chelation of other metals are not excluded.</dd><dt>snippet</dt><dd>reduction in the production of fumagillin during iron starvation</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>ppzA complementation under iron depletion</td>
+  <td>results_in</td>
+  <td>Higher fumagillin LC-MS signal after complementation</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1111/cmi.12770</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1111/cmi.12770</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure4a and Methods4.6: CEA17 wild type, delta-ppzA and complemented strain; 5e7 spores, MM for24 h at37 C and200 rpm, then iron-free MM with200 uM BPS and300 uM ferrozine; triplicate conditions. Methods lists2 and4 h transfers, but Figure4 does not assign a particular timepoint. Fumagillin EIC m/z459.23 [M+H]+ is a qualitative readout, not a biomass-normalized production rate or absolute yield. Figure4a shows a higher complemented-strain fumagillin peak than deletion; Results describes increased or comparable secondary-metabolite production versus wild type. Qualitative genetic rescue is not proof of equal wild-type yield, insertion-site identity or a direct phosphatase reaction.</dd><dt>snippet</dt><dd>complementing strain has increased or comparable SM production</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
@@ -825,13 +886,14 @@ by the corpus tests.</p>
 <ul><li>AntibioticMech — <a class="mono" href="https://culturebotai.github.io/AntibioticMech/pages/antibacterial/fumagillin.html">CHEBI:48635</a>    (same structure, same inchikey)</li>
 </ul>
 
-<h2>Open questions <span class="tag">6</span></h2>
+<h2>Open questions <span class="tag">7</span></h2>
 <div class="note"><p><strong>curator-fumagillin-abm-assay-identity</strong> — Which deposited insert sequence and yeast-host assignment resolve the Fma-ABM microsomal assay?</p></div>
 <div class="note"><p><strong>curator-fumagillin-p450-kr-assay-scope</strong> — Which deposited construct sequences resolve these reference mappings, and should the transposed Fma-KR methods product numbers be corrected?</p></div>
 <div class="note"><p><strong>curator-fumagillin-c6h-mt-reference-scope</strong> — Which deposited inserts and fungal strains resolve C6H/MT assay identity, and can the source numbering and donor-name discrepancies be reconciled?</p></div>
 <div class="note"><p><strong>curator-fumagillin-regulator-alleles</strong> — Which experimental-strain allele sequences ground FumR, VeA and LaeA, and which direct regulatory contacts mediate the fumagillin phenotype?</p></div>
 <div class="note"><p><strong>curator-fumagillin-acea-scope</strong> — Which experimental AceA allele and full RNAseq comparison resolve the strain, timing and broader cluster-label ambiguities?</p></div>
 <div class="note"><p><strong>curator-fumagillin-ppta-scope</strong> — What complete A1160p+ PptA allele and direct FmaPKS activation evidence would extend the genetic loss/rescue claim?</p></div>
+<div class="note"><p><strong>curator-fumagillin-ppza-scope</strong> — Which complete CEA17 PpzA allele, sampling time and direct mechanism resolve the iron-depletion fumagillin phenotype?</p></div>
 
 <h2>Provenance</h2>
 <div class="scroll"><table>

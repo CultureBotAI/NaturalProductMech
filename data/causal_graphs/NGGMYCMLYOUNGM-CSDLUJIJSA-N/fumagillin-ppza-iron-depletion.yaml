@@ -1,0 +1,143 @@
+record_id: CHEBI:48635
+standard_inchi_key: NGGMYCMLYOUNGM-CSDLUJIJSA-N
+graph:
+  graph_id: fumagillin-ppza-iron-depletion
+  scope: BIOSYNTHESIS
+  description: 'Partial fumagillin genetic-regulation view: ppzA deletion and complementation
+    under iron depletion. The independently sequence-verified CEA10/A1163 reference
+    is not equated to the experimental CEA17 allele. Preserve the unspecified Figure4
+    timepoint, non-specific metal chelation and qualitative LC-MS scope. No direct
+    phosphatase substrate, complete pathway, iron-repletion reduction, universal essentiality
+    or fumagillin-mediated virulence is asserted.'
+  nodes:
+  - node_id: ppza_reference
+    label: PpzA (CEA10/A1163 reference, 540 aa)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:B0XUR7
+  - node_id: ppza_experimental
+    label: PpzA (CEA17 experimental allele unresolved)
+    node_type: ENZYME
+    grounding_status: UNGROUNDED
+  - node_id: ppza_gene
+    label: ppzA gene (CEA17 experimental background)
+    node_type: GENE
+    grounding_status: UNGROUNDED
+  - node_id: delete_ppza
+    label: ppzA deletion under iron depletion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: complement_ppza
+    label: ppzA complementation under iron depletion
+    node_type: PROCESS
+    grounding_status: UNGROUNDED
+  - node_id: lower_fumagillin
+    label: Lower fumagillin LC-MS signal under iron depletion
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  - node_id: rescued_fumagillin
+    label: Higher fumagillin LC-MS signal after complementation
+    node_type: PHENOTYPE
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: ppza_reference
+    predicate: is_reference_example_for
+    object: ppza_experimental
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/B0XUR7/entry
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-12'
+      notes: Selected reference, not a proven identical experimental allele. Reviewed
+        UniProt2026_03 B0XUR7 names ppzA/AFUB_021020, CEA10/A1163 taxon451804,540
+        aa and cites both primary papers for function/disruption. Complete native
+        CDS, GenPept and UniProt sequence agree exactly.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/EDP54052.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-12'
+      notes: Versioned A1163 EDP54052.1, coded_by complement(join(DS499595.1:1057660..1057944,DS499595.1:1058020..1059357)).
+        Exact strand, splicing, start/stop and translation checked. Native reference
+        identity does not establish the complete CEA17 experimental allele.
+  - subject: ppza_gene
+    predicate: encodes
+    object: ppza_experimental
+    evidence:
+    - reference: DOI:10.1111/cmi.12770
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: The paper identifies ppzA as encoding protein phosphatase Z PpzA; Methods4.2
+        names CEA17 pyrG+/pyrG- akuBKU80 parental backgrounds. Gene identity is not
+        a direct measurement of protein abundance or a specific fumagillin-enzyme
+        substrate assignment.
+  - subject: delete_ppza
+    predicate: deletes
+    object: ppza_gene
+    evidence:
+    - reference: DOI:10.1534/g3.115.016766
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: The2015 Materials and Methods, Strains and DNA manipulations sections,
+        specify CEA17-80 ku80-/pyrG- as deletion recipient and pyrG replacement strategy.
+        Table1 labels PpzA with reference locus Afu2g03950; this does not make the
+        mutant an Af293 strain.
+  - subject: complement_ppza
+    predicate: reintroduces
+    object: ppza_gene
+    evidence:
+    - reference: DOI:10.1111/cmi.12770
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: Methods4.3 reports co-transformation of the ppzA ORF with about1 kb each
+        flanking region plus pHATalpha, hygromycin selection and PCR confirmation.
+        The integration site and copy number are not established here; do not call
+        this proven native-locus restoration.
+  - subject: delete_ppza
+    predicate: results_in
+    object: lower_fumagillin
+    evidence:
+    - reference: DOI:10.1111/cmi.12770
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure4a and Methods4.6: CEA17 wild type, delta-ppzA and complemented
+        strain; 5e7 spores, MM for24 h at37 C and200 rpm, then iron-free MM with200
+        uM BPS and300 uM ferrozine; triplicate conditions. Methods lists2 and4 h transfers,
+        but Figure4 does not assign a particular timepoint. Fumagillin EIC m/z459.23
+        [M+H]+ is a qualitative readout, not a biomass-normalized production rate
+        or absolute yield. Results2.3 and Discussion specifically support reduced
+        fumagillin under iron depletion. No all-condition absence, quantitative fold
+        change or iron-repletion reduction is inferred. Growth effects and chelation
+        of other metals are not excluded.'
+      snippet: reduction in the production of fumagillin during iron starvation
+  - subject: complement_ppza
+    predicate: results_in
+    object: rescued_fumagillin
+    evidence:
+    - reference: DOI:10.1111/cmi.12770
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-12'
+      notes: 'Figure4a and Methods4.6: CEA17 wild type, delta-ppzA and complemented
+        strain; 5e7 spores, MM for24 h at37 C and200 rpm, then iron-free MM with200
+        uM BPS and300 uM ferrozine; triplicate conditions. Methods lists2 and4 h transfers,
+        but Figure4 does not assign a particular timepoint. Fumagillin EIC m/z459.23
+        [M+H]+ is a qualitative readout, not a biomass-normalized production rate
+        or absolute yield. Figure4a shows a higher complemented-strain fumagillin
+        peak than deletion; Results describes increased or comparable secondary-metabolite
+        production versus wild type. Qualitative genetic rescue is not proof of equal
+        wild-type yield, insertion-site identity or a direct phosphatase reaction.'
+      snippet: complementing strain has increased or comparable SM production
+curation_history:
+- timestamp: '2026-10-12T06:44:43Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Create seven-node, six-edge PpzA genetic-regulation graph with edge-level
+    references and two primary snippets. Limit fumagillin outcomes to qualitative
+    LC-MS under iron depletion; no direct phosphatase substrate or experimental allele
+    identity claim.
+  llm_assisted: true
+- timestamp: '2026-10-12T06:54:51Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: 'Address adversarial review issue #850: remove the2017 Methods4.2/4.3 attribution
+    from evidence citing the2015 paper. Retain only the inspected2015 strain/genetic
+    methods and Table1 support; graph direction, phenotype and all other evidence
+    unchanged.'
+  llm_assisted: true
