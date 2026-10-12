@@ -756,6 +756,68 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
+<p class="sub">Partial fumagillin biosynthesis view: pptA genetic deletion and native-locus rescue in CEA10-derived A1160p+, with the bounded LC-MS detection phenotype. A separately sequence-verified CEA10/A1163 reference is not equated to the experimental allele. No direct PptA-to-FmaPKS priming, catalytic substrate/product step, protein-abundance measurement, universal essentiality or fumagillin-mediated virulence mechanism is asserted; the paper&#39;s recombinant activity assay uses AarA.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>PptA (CEA10/A1163 reference, 357 aa)</td>
+  <td>is_reference_example_for</td>
+  <td>PptA (A1160p+ experimental allele unresolved)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/B0XWE4/entry<br>https://www.ncbi.nlm.nih.gov/protein/EDP54396.1<br>DOI:10.1128/mbio.01504-16</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/B0XWE4/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected genomic reference, not a proven identical experimental allele. Unreviewed UniProt B0XWE4, AFUB_024520, taxon451804 CEA10/A1163, 357 aa. Complete native CDS translation, GenPept and UniProt sequence agree exactly. Prefer the matching AFUB locus/background over reviewed but different Af293 Q4X1W0.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EDP54396.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned A1163 native reference EDP54396.1, coded_by DS499595.1:2189402..2190475. Exact start/stop, coordinates, strand and complete translation independently checked. This is not full experimental-allele or recombinant-construct sequencing.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1128/mbio.01504-16</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods uses CADRE pptA AFUB_024520A. Table1 and Strains identify the parent as A1160p+, derived from CEA10 with Ku80 deletion and pyrG+. Shared locus/background supports a reference example, not full allele identity.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>pptA gene (experimental AFUB_024520 locus)</td>
+  <td>encodes</td>
+  <td>PptA (A1160p+ experimental allele unresolved)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/mbio.01504-16</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/mbio.01504-16</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Results and Methods identify pptA as the gene encoding phosphopantetheinyl transferase PptA. This entity relationship is not a protein-abundance measurement or a purified FmaPKS activation assay.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>pptA deletion in A1160p+</td>
+  <td>replaces</td>
+  <td>pptA gene (experimental AFUB_024520 locus)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/mbio.01504-16</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/mbio.01504-16</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Table1, mutant-generation Methods and Figure S4A: delta-pptA is derived from A1160p+, carries the hph replacement cassette and lacks pptA. PCR and Southern blotting verify locus recombination; Table S4 lists the genetic primers.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>pptA restoration at its original locus</td>
+  <td>restores</td>
+  <td>pptA gene (experimental AFUB_024520 locus)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/mbio.01504-16</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/mbio.01504-16</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods restores pptA at its original locus using a fragment amplified with P1/P4; Table1 describes pptA rec derived from delta-pptA, hph negative. PCR and Southern blotting (Figure S4A) confirm recombination. Selection was on VMM lacking supplemental lysine and iron; that selection medium is not substituted for the metabolite-assay medium.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>pptA deletion in A1160p+</td>
+  <td>results_in</td>
+  <td>Fumagillin peak not detected in 7-day SAB extract</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/mbio.01504-16</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/mbio.01504-16</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure2B and Secondary metabolite assay Methods: A1160p+ parent, delta-pptA and pptA rec; 1e7 spores in 100 mL SAB for 7 days at 30 C; equal-volume ethyl-acetate extraction of supernatants, dried and redissolved in 1 mL methanol. Fumagillin is assigned at retention time 13.50 min; identification uses retention time and exact mass against isolated standards. The displayed trace is absorbance in mAU. No numerical detection limit, biomass-normalized yield, replicate count or metabolite-specific supplementation regimen is supplied for this comparison. Results reports absence of the named peaks, including fumagillin, in delta-pptA; parent provides the positive comparison and medium-only extract the background control. This means not detected under these conditions, not absolute zero biosynthesis, all-metabolite absence or universal essentiality.</dd><dt>snippet</dt><dd>None of these peaks was identified</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>pptA restoration at its original locus</td>
+  <td>results_in</td>
+  <td>Fumagillin peak restored in 7-day SAB extract</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/mbio.01504-16</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/mbio.01504-16</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure2B and Secondary metabolite assay Methods: A1160p+ parent, delta-pptA and pptA rec; 1e7 spores in 100 mL SAB for 7 days at 30 C; equal-volume ethyl-acetate extraction of supernatants, dried and redissolved in 1 mL methanol. Fumagillin is assigned at retention time 13.50 min; identification uses retention time and exact mass against isolated standards. The displayed trace is absorbance in mAU. No numerical detection limit, biomass-normalized yield, replicate count or metabolite-specific supplementation regimen is supplied for this comparison. The reconstituted isolate restores the fumagillin-associated peak and a parental-like profile. This is qualitative genetic rescue, not a quantified fold change or equal normalized production rate.</dd><dt>snippet</dt><dd>consistent with that of the parental isolate</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
@@ -763,12 +825,13 @@ by the corpus tests.</p>
 <ul><li>AntibioticMech — <a class="mono" href="https://culturebotai.github.io/AntibioticMech/pages/antibacterial/fumagillin.html">CHEBI:48635</a>    (same structure, same inchikey)</li>
 </ul>
 
-<h2>Open questions <span class="tag">5</span></h2>
+<h2>Open questions <span class="tag">6</span></h2>
 <div class="note"><p><strong>curator-fumagillin-abm-assay-identity</strong> — Which deposited insert sequence and yeast-host assignment resolve the Fma-ABM microsomal assay?</p></div>
 <div class="note"><p><strong>curator-fumagillin-p450-kr-assay-scope</strong> — Which deposited construct sequences resolve these reference mappings, and should the transposed Fma-KR methods product numbers be corrected?</p></div>
 <div class="note"><p><strong>curator-fumagillin-c6h-mt-reference-scope</strong> — Which deposited inserts and fungal strains resolve C6H/MT assay identity, and can the source numbering and donor-name discrepancies be reconciled?</p></div>
 <div class="note"><p><strong>curator-fumagillin-regulator-alleles</strong> — Which experimental-strain allele sequences ground FumR, VeA and LaeA, and which direct regulatory contacts mediate the fumagillin phenotype?</p></div>
 <div class="note"><p><strong>curator-fumagillin-acea-scope</strong> — Which experimental AceA allele and full RNAseq comparison resolve the strain, timing and broader cluster-label ambiguities?</p></div>
+<div class="note"><p><strong>curator-fumagillin-ppta-scope</strong> — What complete A1160p+ PptA allele and direct FmaPKS activation evidence would extend the genetic loss/rescue claim?</p></div>
 
 <h2>Provenance</h2>
 <div class="scroll"><table>
