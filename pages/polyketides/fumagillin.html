@@ -520,6 +520,198 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">18 nodes, 20 edges</span></h2>
+<p class="sub">Partial fumagillin genetic-regulation graph from DOI10.1371/journal.pone.0077147. Separate perturbation components retain the measured outcomes; unproven mediation links between them are intentionally omitted. Separate Af293 protein references, accession-unresolved experimental proteins, genes, perturbations and measured outcomes. CEA10 controls the VeA series; TSD51.1 controls CEA17ku80-derived fumR/laeA deletions. Both veA deletion and overexpression decrease expression and product signal. FumR deletion lowers the nine assayed cluster transcripts and makes fumagillin undetectable at the tested times. LaeA edges concern transcripts only. No direct promoter binding, protein-abundance measurement, velvet-complex assembly, universal essentiality, complete pathway or exact experimental-allele mapping is asserted.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>FumR (Af293 reference, 622 aa)</td>
+  <td>is_reference_example_for</td>
+  <td>FumR (experimental strain series; allele unresolved)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WAY8/entry<br>https://www.ncbi.nlm.nih.gov/protein/EAL85124.1<br>DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WAY8/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected reference, not an identical experimental allele. AFUA_8G00420: native Af293 CDS, EAL85124.1 and UniProt2026_03 agree exactly at 622 aa; taxon330879. </dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAL85124.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned reference identity. Complete spliced CDS, strand and coordinates independently verified: complement(join(AAHF01000014.1:698638..700031, AAHF01000014.1:700097..700364, AAHF01000014.1:700420..700626)).</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Table S1 names CEA10 as control for the VeA series and CEA17ku80-derived TSD51.1 control, TSD53.1 deltafumR and TSD62.1 deltalaeA. Af293 is the transcriptome reference, not proof of assay-strain allele identity. No full experimental allele sequence was established.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>fumR gene (experimental strain series)</td>
+  <td>encodes</td>
+  <td>FumR (experimental strain series; allele unresolved)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Introduction/Results identify FumR as the product of the manipulated gene. This entity relationship is not a protein-abundance measurement or an exact-accession assignment. FumR is described as a putative C6 transcription factor; its DNA-binding motif is not direct evidence of promoter occupancy.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>VeA (Af293 reference, 570 aa)</td>
+  <td>is_reference_example_for</td>
+  <td>VeA (experimental strain series; allele unresolved)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/E9RCK4/entry<br>https://www.ncbi.nlm.nih.gov/protein/EAL90581.1<br>DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E9RCK4/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected reference, not an identical experimental allele. AFUA_1G12490: native Af293 CDS, EAL90581.1 and UniProt2026_03 agree exactly at 570 aa; taxon330879. </dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAL90581.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned reference identity. Complete spliced CDS, strand and coordinates independently verified: complement(join(AAHF01000004.1:1042372..1043936 ,AAHF01000004.1:1044007..1044154)).</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Table S1 names CEA10 as control for the VeA series and CEA17ku80-derived TSD51.1 control, TSD53.1 deltafumR and TSD62.1 deltalaeA. Af293 is the transcriptome reference, not proof of assay-strain allele identity. No full experimental allele sequence was established.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>veA gene (experimental strain series)</td>
+  <td>encodes</td>
+  <td>VeA (experimental strain series; allele unresolved)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Introduction/Results identify VeA as the product of the manipulated gene. This entity relationship is not a protein-abundance measurement or an exact-accession assignment. No purified protein assay or directly demonstrated A. fumigatus VeA-LaeA interaction is asserted here.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>LaeA (Af293 reference, 373 aa)</td>
+  <td>is_reference_example_for</td>
+  <td>LaeA (experimental strain series; allele unresolved)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q4WRY5/entry<br>https://www.ncbi.nlm.nih.gov/protein/EAL90797.1<br>DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q4WRY5/entry</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Selected reference, not an identical experimental allele. AFUA_1G14660: native Af293 CDS, EAL90797.1 and UniProt2026_03 agree exactly at 373 aa; taxon330879. Alternative AAR01218.1 is flagged as an erroneous gene model in UniProt; it was not independently sequence-compared here. </dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/EAL90797.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Versioned reference identity. Complete spliced CDS, strand and coordinates independently verified: join(AAHF01000004.1:1670850..1671079, AAHF01000004.1:1671225..1672116).</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Table S1 names CEA10 as control for the VeA series and CEA17ku80-derived TSD51.1 control, TSD53.1 deltafumR and TSD62.1 deltalaeA. Af293 is the transcriptome reference, not proof of assay-strain allele identity. No full experimental allele sequence was established.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>laeA gene (experimental strain series)</td>
+  <td>encodes</td>
+  <td>LaeA (experimental strain series; allele unresolved)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Introduction/Results identify LaeA as the product of the manipulated gene. This entity relationship is not a protein-abundance measurement or an exact-accession assignment. No purified protein assay or directly demonstrated A. fumigatus VeA-LaeA interaction is asserted here.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>fumR gene replacement (TSD53.1)</td>
+  <td>replaces</td>
+  <td>fumR gene (experimental strain series)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods, Figure S2, Table S1: fumR replaced by A. parasiticus pyrG in CEA17ku80; TSD53.1. PCR screening and Southern-blot validation reported. The marker is not a fumagillin biosynthetic enzyme.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>laeA gene replacement (TSD62.1)</td>
+  <td>replaces</td>
+  <td>laeA gene (experimental strain series)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Methods, Figure S3, Table S1: laeA replaced by A. parasiticus pyrG in CEA17ku80; TSD62.1. Southern-blot validation reported.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>veA deletion (TSD1.15)</td>
+  <td>deletes</td>
+  <td>veA gene (experimental strain series)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Table S1: TSD1.15, pyrG1; delta-veA::pyrG A. fumigatus; CEA10 control. Genotype statement, not a direct protein-depletion measurement.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>veA overexpression (TSD2.8)</td>
+  <td>overexpresses</td>
+  <td>veA gene (experimental strain series)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Table S1: TSD2.8, pyrG1; gpdA(p)::veA::trpC(t)::pyrG A. fumigatus. No quantitative VeA protein dosage measured in the represented assays.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>fumR gene replacement (TSD53.1)</td>
+  <td>results_in</td>
+  <td>Lower assayed fumagillin-cluster transcript levels</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 5/Results: TSD53.1 versus TSD51.1 at 48 h and 72 h. Czapek-Dox stationary liquid cultures. qRT-PCR, 18S reference, three replicates with standard-error bars; transcript readout, not protein abundance or direct promoter binding. Nine assayed loci: Afu8g00370, Afu8g00520, Afu8g00380, Afu8g00510, Afu8g00500, Afu8g00480, Afu8g00470, Afu8g00440 and Afu8g00430. Afu8g00470 retains appreciable residual expression; not complete silencing of every cluster gene. Figure 5 labels, Results and Table S2 support Afu8g00380 where the caption mistakenly repeats Afu8g00370.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>fumR gene replacement (TSD53.1)</td>
+  <td>results_in</td>
+  <td>Fumagillin not detected in culture extract</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 6: TSD53.1 versus TSD51.1 at 72 h and 120 h. Czapek-Dox stationary liquid cultures. Chloroform-extracted supernatants analyzed by LC-MS; commercial fumagillin standard and three replicates. No detected fumagillin in the deletion strain under these conditions, not absolute zero or universal essentiality. No numerical detection limit or fumR complementation rescue is established by this experiment.</dd><dt>snippet</dt><dd>No fumagillin was detected</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>veA deletion (TSD1.15)</td>
+  <td>results_in</td>
+  <td>Lower fumR transcript level</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure S1A/Results: 72 h, CEA10 control, TSD1.15 deletion or TSD2.8 overexpression. Czapek-Dox stationary liquid cultures. qRT-PCR, 18S reference, three replicates with standard-error bars; transcript readout, not protein abundance or direct promoter binding. Authors report 12% of wild-type fumR expression. Both deletion and overexpression decrease this readout; no monotonic dosage rule is inferred.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>veA deletion (TSD1.15)</td>
+  <td>results_in</td>
+  <td>Lower Afu8g00370 PKS transcript level</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure S1B/Results: 72 h, CEA10 control, TSD1.15 deletion or TSD2.8 overexpression. Czapek-Dox stationary liquid cultures. qRT-PCR, 18S reference, three replicates with standard-error bars; transcript readout, not protein abundance or direct promoter binding. Authors report 3% of wild-type Afu8g00370 expression. This is a PKS-gene transcript measurement, not a PKS catalytic assay.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>veA deletion (TSD1.15)</td>
+  <td>results_in</td>
+  <td>Lower relative fumagillin LC-MS signal</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 4A: 120 h, CEA10 control, TSD1.15 deletion or TSD2.8 overexpression; TSD3.5 complementation also shown. Czapek-Dox stationary liquid cultures. Extracted-ion LC-MS signal for fumagillin, m/z459 [M+H]+, normalized to wild type; three samples and standard-error bars. Both perturbations reduce the signal. This qualitative direction does not imply complete loss, absolute yield or a quantitative protein-dosage response.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>veA overexpression (TSD2.8)</td>
+  <td>results_in</td>
+  <td>Lower fumR transcript level</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure S1A/Results: 72 h, CEA10 control, TSD1.15 deletion or TSD2.8 overexpression. Czapek-Dox stationary liquid cultures. qRT-PCR, 18S reference, three replicates with standard-error bars; transcript readout, not protein abundance or direct promoter binding. Authors report 5% of wild-type fumR expression. Both deletion and overexpression decrease this readout; no monotonic dosage rule is inferred.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>veA overexpression (TSD2.8)</td>
+  <td>results_in</td>
+  <td>Lower Afu8g00370 PKS transcript level</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure S1B/Results: 72 h, CEA10 control, TSD1.15 deletion or TSD2.8 overexpression. Czapek-Dox stationary liquid cultures. qRT-PCR, 18S reference, three replicates with standard-error bars; transcript readout, not protein abundance or direct promoter binding. Authors report 0.1% of wild-type Afu8g00370 expression. This is a PKS-gene transcript measurement, not a PKS catalytic assay.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>veA overexpression (TSD2.8)</td>
+  <td>results_in</td>
+  <td>Lower relative fumagillin LC-MS signal</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 4A: 120 h, CEA10 control, TSD1.15 deletion or TSD2.8 overexpression; TSD3.5 complementation also shown. Czapek-Dox stationary liquid cultures. Extracted-ion LC-MS signal for fumagillin, m/z459 [M+H]+, normalized to wild type; three samples and standard-error bars. Both perturbations reduce the signal. This qualitative direction does not imply complete loss, absolute yield or a quantitative protein-dosage response.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>laeA gene replacement (TSD62.1)</td>
+  <td>results_in</td>
+  <td>Lower fumR transcript level</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 7 upper panel/Results: TSD62.1 versus corresponding control TSD51.1, 48 h and 72 h respectively. Czapek-Dox stationary liquid cultures. qRT-PCR, 18S reference, three replicates with standard-error bars; transcript readout, not protein abundance or direct promoter binding. Authors report 3% and 8% of wild-type transcript levels. No LaeA-specific fumagillin production assay or mediation through FumR is asserted from these expression data alone.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>laeA gene replacement (TSD62.1)</td>
+  <td>results_in</td>
+  <td>Lower Afu8g00370 PKS transcript level</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1371/journal.pone.0077147</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1371/journal.pone.0077147</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>retrieved on</dt><dd>2026-10-12</dd><dt>notes</dt><dd>Figure 7 lower panel/Results: TSD62.1 versus corresponding control TSD51.1, 48 h and 72 h respectively. Czapek-Dox stationary liquid cultures. qRT-PCR, 18S reference, three replicates with standard-error bars; transcript readout, not protein abundance or direct promoter binding. Authors report 9% and 7% of wild-type transcript levels. No LaeA-specific fumagillin production assay or mediation through FumR is asserted from these expression data alone.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
@@ -527,10 +719,11 @@ by the corpus tests.</p>
 <ul><li>AntibioticMech — <a class="mono" href="https://culturebotai.github.io/AntibioticMech/pages/antibacterial/fumagillin.html">CHEBI:48635</a>    (same structure, same inchikey)</li>
 </ul>
 
-<h2>Open questions <span class="tag">3</span></h2>
+<h2>Open questions <span class="tag">4</span></h2>
 <div class="note"><p><strong>curator-fumagillin-abm-assay-identity</strong> — Which deposited insert sequence and yeast-host assignment resolve the Fma-ABM microsomal assay?</p></div>
 <div class="note"><p><strong>curator-fumagillin-p450-kr-assay-scope</strong> — Which deposited construct sequences resolve these reference mappings, and should the transposed Fma-KR methods product numbers be corrected?</p></div>
 <div class="note"><p><strong>curator-fumagillin-c6h-mt-reference-scope</strong> — Which deposited inserts and fungal strains resolve C6H/MT assay identity, and can the source numbering and donor-name discrepancies be reconciled?</p></div>
+<div class="note"><p><strong>curator-fumagillin-regulator-alleles</strong> — Which experimental-strain allele sequences ground FumR, VeA and LaeA, and which direct regulatory contacts mediate the fumagillin phenotype?</p></div>
 
 <h2>Provenance</h2>
 <div class="scroll"><table>
