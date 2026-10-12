@@ -902,6 +902,7 @@ causal_graph_refs:
 - fumagillin-fumr-vea-laea-regulation
 - fumagillin-acea-copper-transcript
 - fumagillin-ppta-loss-rescue
+- fumagillin-ppza-iron-depletion
 discussions:
 - discussion_id: curator-fumagillin-abm-assay-identity
   kind: CURATION_TODO
@@ -999,6 +1000,20 @@ discussions:
     notes: A1160p+ genetic results and AarA recombinant assay are distinct. Preserve
       unspecified metabolite-assay supplementation and detection limits; no full-record
       REVIEWED sign-off.
+- discussion_id: curator-fumagillin-ppza-scope
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: Which complete CEA17 PpzA allele, sampling time and direct mechanism resolve
+    the iron-depletion fumagillin phenotype?
+  rationale: Keep B0XUR7 as a separate native reference. Figure4 does not label the2
+    h/4 h timepoint; complementation locus/copy number and biomass-normalized production
+    remain unresolved. Chelators can affect other metals. No direct phosphatase substrate,
+    SdsA mediation or fumagillin-specific virulence is established.
+  evidence:
+  - reference: DOI:10.1111/cmi.12770
+    evidence_source: Results2.3, Figure4, Discussion and Methods4.2/4.3/4.6
+    notes: Primary sections and Figure4 inspected. Do not generalize the iron-depletion
+      result to iron repletion or infer full-record REVIEWED status.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -1097,4 +1112,12 @@ curation_history:
   changes: Add exact-owner PptA loss/rescue graph and scope discussion. Preserve source-owned
     fields, SEEDED status, prior graphs and history; separate verified native B0XWE4
     reference from unresolved A1160p+ experimental allele.
+  llm_assisted: true
+- timestamp: '2026-10-12T06:44:43Z'
+  curator: Codex
+  action: RECORD_CURATED
+  changes: Add PpzA iron-depletion deletion/complementation graph and scope discussion.
+    Preserve all eight prior graphs, source-owned fields, SEEDED status and history;
+    distinguish sequence-verified B0XUR7 reference from unresolved CEA17 experimental
+    allele.
   llm_assisted: true
