@@ -1,0 +1,15 @@
+uv run python scripts/run_qc.py
+
+=== qc: lint ===
+why: Fail fast on syntax, import, and style defects before expensive checks.
+All checks passed!
+
+=== qc: vendored-sync ===
+why: Governed files must be byte-identical to claw at the pinned ref.
+OK: 22 governed artifacts match the pinned claw revision
+
+=== qc: documentation ===
+why: README's generated statistics must match the corpus a reader would download.
+README statistics block is stale; run `just docs-stats`
+qc stopped: documentation failed with exit code 1
+error: recipe `qc` failed on line 288 with exit code 1

@@ -1,0 +1,33 @@
+from pathlib import Path
+import yaml
+
+from naturalproductmech.curate.curation_event import record_curation_event
+from naturalproductmech.validation.write_validated import write_validated_natural_product
+
+path = Path('data/natural_products/alkaloids/yersiniabactin-2.yaml')
+doc = yaml.safe_load(path.read_text())
+assert doc['identifier'] == 'naturalproductmech:mibig-66a349ed2d'
+assert doc['chemical_structure']['standard_inchi_key'] == 'CARQCAHMXWHUIE-NRMQOZBLSA-N'
+assert doc['curation_status'] == 'SEEDED'
+discussion_id = 'curator-ecoli-occurrence-evidence-hold'
+assert not any(d['discussion_id'] == discussion_id for d in doc.get('discussions', []))
+history = doc.pop('curation_history')
+doc.setdefault('discussions', []).append({
+    'discussion_id': discussion_id,
+    'kind': 'CURATION_TODO',
+    'status': 'OPEN',
+    'prompt': 'Does the cited comparative-genomics study directly detect this yersiniabactin form in Escherichia coli A0 34/86?',
+    'rationale': 'The inspected abstract describes genomic regions, not a chemical detection experiment. Full-text adjudication remains unavailable. This is a provisional evidence gap, not proof of absent detection or nonproduction; the imported LOTUS occurrence and producer grades remain unchanged.',
+    'evidence': [{
+        'reference': 'DOI:10.1016/j.ijmm.2006.06.007',
+        'evidence_source': 'abstract only; curator interpretation',
+        'notes': 'No complete methods/results inspection is claimed. Obtain authorized full text and verify the compound form, isolate and chemical readout before revising the occurrence.',
+    }],
+    'notes': 'Tracked in https://github.com/CultureBotAI/NaturalProductMech/issues/902. No whole-record REVIEWED promotion.',
+})
+doc['curation_history'] = history
+record_curation_event(doc, curator='codex', action='RECORD_CURATED',
+                      changes='Record the unresolved E. coli LOTUS occurrence evidence question (#902); retain the imported assertion and SEEDED status pending authorized full-text adjudication.',
+                      llm_assisted=True)
+write_validated_natural_product(doc, path)
+print('Added one evidence-limited curator discussion; scientific assertions retained.')

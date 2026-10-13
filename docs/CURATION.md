@@ -120,6 +120,24 @@ curator attribution. It does not change a BGC's host, infer a strain taxon ID,
 upgrade a grade or imply a species-wide experiment. Regenerate through the
 normal canary and guarded seeder, then verify reproduction and full QC.
 
+## MIBiG PubChem xref exclusions
+
+`curation/mibig_xref_exclusions.tsv` withholds a reviewed nonexact PubChem xref
+from one MIBiG compound row. Each decision has `source_id` (`BGC:compound_index`),
+`expected_source_row_sha256` (the complete untouched row's `row_digest`), literal
+`xref` (`pubchem:<CID>`), stable `reference`, `curator`, ISO `date` and `rationale`.
+Missing or duplicate targets/decisions, malformed fields and source drift stop
+seeding. The xref must actually occur in the pinned row. A concurrent structure
+replacement is rejected for separate adjudication. If another row contributing
+to the same owner reintroduces the excluded xref, seeding fails until all relevant
+assertions have been reviewed. A decision must reach an emitted owner.
+
+Raw inventories, owner identities, other xrefs and assay joins are unchanged.
+The upstream assertion, source digest and curator's reason remain in a table-owned
+`source-xref-exclusion-...` discussion, whose adjudication cannot be overwritten
+by an old YAML answer. This narrow action does not establish a replacement xref,
+merge owners or validate any assays. Canary, reproduction and full QC are required.
+
 ## What a re-seed keeps, and what it overwrites
 
 The corpus is generated, so a re-seed rebuilds every record. What it does *not*

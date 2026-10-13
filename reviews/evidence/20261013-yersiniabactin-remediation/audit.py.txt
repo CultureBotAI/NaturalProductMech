@@ -1,0 +1,52 @@
+import hashlib
+import json
+import subprocess
+from copy import deepcopy
+from pathlib import Path
+import yaml
+
+base = '8b5a3ebf476c27b21d49a89d7e5684cef41a367d'
+expected = {'data/natural_products/alkaloids/yersiniabactin.yaml',
+            'data/natural_products/alkaloids/yersiniabactin-2.yaml'}
+paths = sorted(str(p) for directory in ('data/natural_products', 'data/causal_graphs')
+               for p in Path(directory).rglob('*.yaml'))
+assert len(paths) == 3115 + 243
+blob = subprocess.check_output(['git', 'cat-file', '--batch'],
+                               input=''.join(f'{base}:{p}\n' for p in paths).encode())
+offset = 0
+changed = []
+for path in paths:
+    end = blob.index(b'\n', offset)
+    _, kind, size = blob[offset:end].split()
+    assert kind == b'blob'
+    offset = end + 1
+    old = blob[offset:offset+int(size)]
+    offset += int(size) + 1
+    current = Path(path).read_bytes()
+    if old == current:
+        continue
+    assert path in expected
+    changed.append(path)
+    before, after = yaml.safe_load(old), yaml.safe_load(current)
+    assert after['curation_history'][:len(before['curation_history'])] == before['curation_history']
+    after.pop('curation_history'); before.pop('curation_history')
+    for producer in after['producer_organisms']:
+        if producer['biosynthetic_gene_cluster'] in ('mibig:BGC0001055', 'mibig:BGC0000467'):
+            assert producer.pop('strain') in ('A0 34/86', 'WA-314 (sub_strain WA-C)')
+            assert producer['evidence'].pop()['evidence_type'] == 'CURATOR_INFERENCE'
+    if path.endswith('yersiniabactin.yaml'):
+        assert after['xrefs'] == ['npatlas:NPA015861']
+        after['xrefs'].append('pubchem:5462519')
+        assert after['discussions'].pop(0)['discussion_id'].startswith('source-xref-exclusion-')
+    else:
+        discussion, = after.pop('discussions')
+        assert discussion['discussion_id'] == 'curator-ecoli-occurrence-evidence-hold'
+        assert discussion['status'] == 'OPEN'
+    assert before == after, path
+assert set(changed) == expected and offset == len(blob)
+assert not subprocess.check_output(['git', 'diff', base, '--', 'data/raw', 'data/natural_products/PATHS.tsv'])
+result = {'base':base, 'owners':3115, 'components':243, 'ignored_files_included':True,
+          'changed_owners':changed, 'raw_inventories_and_path_lock_unchanged':True,
+          'chemistry_taxonomy_grades_occurrences_status_and_unrelated_fields_unchanged':True}
+Path(__file__).with_name('scope-audit.json').write_text(json.dumps(result, indent=2))
+print(json.dumps(result, indent=2))

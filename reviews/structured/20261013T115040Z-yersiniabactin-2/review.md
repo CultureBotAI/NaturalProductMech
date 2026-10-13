@@ -1,0 +1,878 @@
+# Yersiniabactin: partially specified tautomer and E.coli provenance
+
+- Review: 20261013T115040Z-yersiniabactin-2
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-13T11:33:20.074250Z
+- Finished UTC: 2026-10-13T11:50:40.063730Z
+- Reviewer: Codex (self_review)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Exact MIBiG/PubChem chemistry is internally consistent, with one undefined stereocenter honestly flagged. One confirmed minor strain omission and one provisional major occurrence-evidence gap remain. Partial needs_curation; primary isolation/stereochemistry and complete E.coli experiment checks remain access-limited.
+
+## Scope And Provenance
+
+One exact resolved owner; same-label sibling consulted only as identity context. Full corpus goal remains3115 owners and243 attached components.
+
+Selection: Next exact path in the verified exhaustive campaign checkpoint; same-label/different-key candidates prioritized, not a sample.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: git_commit at Git base 8b5a3ebf476c27b21d49a89d7e5684cef41a367d.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-66a349ed2d | data/natural_products/alkaloids/yersiniabactin-2.yaml | generated | yersiniabactin |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| strict-2 | failed | False | naturalproductmech:mibig-66a349ed2d | Initial just wrapper failed on sandbox-denied uv cache; replaced by the documented script in the existing repository environment. |
+| strict-2-local | passed | True | naturalproductmech:mibig-66a349ed2d | One owner and all referenced components: zero schema errors. |
+| chemistry | failed | False | naturalproductmech:mibig-66a349ed2d | Initial temporary RDKit environment failed on incomplete NumPy before calculating results; failure retained. |
+| chemistry-local-numpy | passed | True | naturalproductmech:mibig-66a349ed2d | Exact pinned RDKit calculations succeeded using existing repository NumPy via PYTHONPATH; no package or corpus edits. |
+| labels | passed | True | naturalproductmech:mibig-66a349ed2d | Full-corpus configured gate exited0: 13434 canonical,646 synonym,35 exception,499 nonblocking mismatch warnings,4649 no-adapter skips. Minted chemical identifiers are skipped; this is not chemical-identity verification. |
+| qc | passed | True | naturalproductmech:mibig-66a349ed2d | Full documented QC exited0:674 tests passed,3 skipped,2 warnings; strict schema3115 owners with zero errors; lint, vendored synchronization, provenance, site, reproduction and corpus lock passed. Deterministic success is not scientific sign-off. |
+| review-queue | passed | False | naturalproductmech:mibig-66a349ed2d | Exhaustive native queue generated to the private workspace:8930 diagnostic rows. Multiple diagnostics per record are not distinct owners or completed reviews. |
+| Structured source applicability | not_applicable | False | naturalproductmech:mibig-66a349ed2d | These owners store BGC/genome accessions but no gene, locus-tag, protein-example, regulator or expression-module claims. MIBiG and INSDC were used first for structured cross-checks. iModulon membership would not establish chemical identity or production. No coverage-absence claim is made. |
+| Primary experiment and exact isolate-form verification | unavailable | True | naturalproductmech:mibig-66a349ed2d | Primary abstracts were inspected but complete experimental and chemical-form verification is access-limited. No source was retrieved through an alternate route after explicit403 or reCAPTCHA. See limitations. |
+| Initial review-draft format validation | failed | False | naturalproductmech:mibig-66a349ed2d | Initial generated drafts contained YAML aliases; the canonical validator rejected that format. The assessed content was reserialized without aliases before canonical validation and saving. No scientific inputs or findings changed. |
+| Draft review ID timestamp validation | failed | False | naturalproductmech:mibig-66a349ed2d | Alias-free draft validation exposed a review_id prefix that no longer matched finished_at after the format repair. Both timestamp fields were synchronized before final validation. Scientific evidence access timestamps, input hashes and assessments were retained. |
+| Single-record scope validation | failed | False | naturalproductmech:mibig-66a349ed2d | The draft incorrectly placed the campaign denominator3115 in a kind:record artifact. Its schema denominator is now1, with the full3115-owner/243-component campaign explicitly retained in scope prose and the checkpoint. No population was removed from the goal. |
+
+## Scientific And Domain Assessments
+
+### Database identity and internal structure
+
+identity: supported. Targets: naturalproductmech:mibig-66a349ed2d.
+
+The exact owner matches active MIBiG1055 and PubChem5462519; internal chemistry is consistent. Minted identity is justified against the pinned ChEBI inventory. Natural experimental tautomer/stereo assignment remains unresolved; no claim that the two named owners are unrelated molecules.
+
+### Filing and asserted origin
+
+provenance: supported. Targets: naturalproductmech:mibig-66a349ed2d.
+
+Pinned NPClassifier2026-09-07 supplies Alkaloids; NRPS/PKS come separately from MIBiG. NATURAL_PRODUCT admission rests on source assertions, not this computation. No asserted chemical class or optional assay measurement was fabricated.
+
+### E.coli producer and locus scope
+
+evidence: concern. Targets: naturalproductmech:mibig-66a349ed2d.
+
+SOURCE_ASSERTION/CLUSTER_UNSTATED match MIBiG. Genomic identification does not establish native metabolite production. A0 34/86 is available in both citation and sequence but absent from the producer. No upgrade to causal evidence is justified by the inspected material.
+
+### Four structure-organism-publication claims
+
+evidence: unknown. Targets: naturalproductmech:mibig-66a349ed2d.
+
+All four exact-key LOTUS rows were checked. The1993 Yersinia abstract supports culture isolation; the1995 isolation and2001 stereochemistry articles were inaccessible. The E.coli DOI is the same genomic paper as the producer PMID, and its inspected abstract does not demonstrate chemical detection. Different reference spellings are not independent evidence.
+
+### Optional mechanism and assay scope
+
+completeness: unknown. Targets: naturalproductmech:mibig-66a349ed2d.
+
+Entire owner and history read, including absence of stored graphs, pathways, proteins, assays and clinical claims. Cited sources provide bounded biosynthesis leads, but no unsupported optional fields were filled and missing optional content was not treated as false. Exact primary chemical-form verification is the remaining sign-off gate.
+
+### Native deterministic and provenance gates
+
+schema: supported. Targets: naturalproductmech:mibig-66a349ed2d.
+
+Strict owner validation and complete native QC pass; source byte checks and exact corpus enumeration preserve every owner/component. Label gate has known skips and warning-level mismatches. These checks cannot prove literature support.
+
+## Findings
+
+### F1: Producer assertion drops the available A0 34/86 strain
+
+minor / open / confirmed; issue key: yersiniabactin-BGC0001055-producer-strain.
+
+The species-level taxon562 producer has neither strain nor a strain qualifier. AM236324.1 and the cited paper identify A0 34/86. Preserve this context without changing the taxon or upgrading the source-assertion evidence.
+
+### F2: E.coli occurrence needs direct chemical-detection support
+
+major / open / provisional; issue key: yersiniabactin-lotus-ecoli-genomic-citation.
+
+The occurrence claims that this structure was found in E.coli, but its DOI is a comparative-genomics paper whose inspected abstract reports genes rather than metabolite detection. This is a provisional evidence gap, not proof that the complete paper contains no chemical experiment, nor proof of nonproduction.
+
+## Recommended Actions And Acceptance Checks
+
+### A1
+
+Add a full-raw-row-pinned A0 34/86 qualification to BGC0001055:1, retaining taxon562 and existing evidence grades.
+
+- Verify full raw source-row digest and ENA strain citation.
+- Canary only this record; confirm no chemistry or grade changes.
+- Strict validation, reproduction and full QC pass.
+
+### A2
+
+With authorized article access, locate the exact E.coli isolation/detection result or adjudicate the LOTUS occurrence as unsupported. Do not remove it solely from abstract silence. If correction is needed, implement a tested source-row-pinned extraction/overlay path; reserved decisions.tsv cannot do this.
+
+- Inspect the complete cited paper or user-supplied source without bypassing access restrictions.
+- Evidence must identify compound form, A0 34/86 and a chemical detection experiment rather than gene presence.
+- Any later row exclusion preserves provenance and passes exact-key occurrence, reproduction and full QC regressions.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/natural_products/alkaloids/yersiniabactin-2.yaml; Entire owner, all history, and read_natural_product resolved view | context_only | Full owner read; no inline causal graphs or causal_graph_refs. No protein examples, pathway steps, assays, molecular targets, clinical assertions or sibling links are stored. Existing status is SEEDED; no data or history was changed. |
+| inventories | data/raw/mibig_compounds.tsv; BGC0001055:1 line1206; BGC0000467:1 line651; BGC0002570:1 line3267; LOTUS exact-key rows712-715 and3026; NPClassifier rows257 and1111 | supports | Parsed exact-key source rows reproduce the source concepts, database evidence, computed Alkaloids filing and xrefs. Both keys have zero matches in the pinned ChEBI structure/origin and AntibioticMech inventories. This supports minted identity relative to these inventories, not absence from all current databases. Occurrences remain distinct claims from producers; DOI/PMID aliases do not provide independent experiments. |
+| chemistry | RDKit:2026.03.5; MolFromSmiles; MolToInchi; MolToInchiKey; FindMolChiralCenters(includeUnassigned=True); CalcMolFormula; GetFormalCharge; ExactMolWt; RemoveStereochemistry; TautomerEnumerator.Canonicalize | supports | Both stored SMILES reproduce their stored InChIs and keys; both calculate C21H27N3O4S3, charge0, exact mass481.116369344 Da. yersiniabactin-2 has CIP assignments at zero-based atom indices1:S,9:S,10:R,15:R and unspecified atom13; yersiniabactin has five unspecified centers. Both stereo_complete:false values are honest. Removing stereo then canonicalizing tautomers yields JHYVWAMMAMCUIR-UHFFFAOYSA-N for both. This is computational context, not experimental form assignment or authority to merge owners. The initial isolated environment failed on missing numpy.__config__; the successful rerun used the existing repository NumPy via PYTHONPATH without modifying packages. |
+| pubchem | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5462519/property/InChI,InChIKey,MolecularFormula,CanonicalSMILES,IsomericSMILES/JSON; PropertyTable.Properties[0] | supports | CID5462519 denotes CARQCAHMXWHUIE-NRMQOZBLSA-N, with the same SMILES/InChI as yersiniabactin-2 and formulaC21H27N3O4S3. It does not denote the all-stereocenters-unspecified JHYVWAMMAMCUIR-UHFFFAOYSA-N representation. |
+| taxonomy | data/raw/corpus_taxa.obo; NCBITaxon:562,630,223283; inspected ENA source features; Wikidata Q25419 and Q135177 organism pages | supports | The pinned taxonomy labels resolve to Escherichia coli, Yersinia enterocolitica and Pseudomonas syringae pv. tomato str. DC3000 respectively. ENA verifies the same taxids on the cited sequence deposits. Wikidata labels match their organism notes; the Q135177 page succeeded after an initial transport timeout. OTHER_BACTERIAL is a broad computed facet, not a new experimental claim. |
+| governance | docs/CURATION.md; Producer strain context, locus-evidence overrides, generated ownership, REVIEWED gate; docs/HARMONIZATION.md identity and producer/occurrence sections; conf/producer_evidence.tsv | context_only | SOURCE_ASSERTION and CLUSTER_UNSTATED honestly preserve ungraded database claims; method absence is not evidence of absent biology. Native knockouts may support both producer and locus. Xrefs assert the same structure. Strain changes use complete-row-pinned curation/mibig_producer_strains.tsv. decisions.tsv is reserved, not a functioning correction path. |
+| mibig1055 | https://mibig.secondarymetabolites.org/repository/BGC0001055.5/annotations.json; version5,status,compounds[0],taxonomy,loci[0],legacy_references | supports | Active BGC0001055v5 names yersiniabactin, exactly supplies the owner chemistry and PubChem xref, assigns taxon562 and AM236324.1, and has no locus method. Its citation is PMID17049458. NRPS/PKS are cluster classes, not the computed filing class. |
+| hejnova2006 | https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:17049458%20AND%20SRC:MED&amp;format=json&amp;resultType=core; resultList.result[id=17049458].abstractText; DOI metadata | partial | The abstract identifies E.coli A0 34/86 and reports BAC-array/comparative-sequence identification of yersiniabactin-system genes. PMID17049458 is DOI10.1016/j.ijmm.2006.06.007, also used by the LOTUS occurrence. No metabolite detection is described in the inspected abstract; the subscription full article was not inspected. This does not establish that the complete paper lacks such an experiment. |
+| ena1055 | https://www.ebi.ac.uk/ena/browser/api/embl/AM236324.1?download=false; ID; DE; reference2; source feature1..84189 | supports | AM236324.1 is an 84189bp E.coli sequence; source strainA0 34/86, taxon562. Its reference2 explicitly joins PMID17049458 to DOI10.1016/j.ijmm.2006.06.007. It includes yersiniabactin,cob,pdu clusters, so the entire accession is not automatically a precisely delimited biosynthetic cluster. |
+| haag1993 | https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:(17660289%20OR%209457855%20OR%208245841)%20AND%20SRC:MED&amp;format=json&amp;resultType=core; resultList.result[id=8245841].abstractText | partial | The abstract reports isolation from H1852 spent medium, production under iron limitation by WA-C, and iron-transport assays. It supports a Y.enterocolitica occurrence and strain-specific biological origin at abstract level; it does not establish every encoded stereocenter or tautomer in this record. |
+
+## Limits And Additional Notes
+
+- This record observation assesses the captured main commit8b5a3ebf, whose input bytes still match the working tree. It does not reassess any other owner or claim all3115 records reviewed.
+- Full primary experimental and isolate-form verification is incomplete. Chemical normalization, metadata, database assertions and abstract-level descriptions are not substituted for inspected methods/results.
+- All174 inherited access stops were preserved; none was retried. This review records additional source-specific stops. No paid research, contact, GitHub mutation, record edit or native status promotion occurred.
+- Wiley DOI10.1002/jlac.1995199510243 and ScienceDirect DOI10.1016/S0040-4020(01)00012-6 returned403. Search-result snippets were not promoted to inspected primary evidence.
+- The1993 publisher abstract was inspected; its full-text endpoint returned403. The2006 DOI transport failed and EuropePMC metadata lists subscription-only full text; its abstract was inspected before that access limit. No alternate full-text retrieval was attempted.
+- Only immutable review outputs are authorized. Proposed corrective actions have not been executed.
+- Primary summaries above are paraphrases, not quotations. Source access timestamps for retrieved snapshots are preserved from receipts; local/current-page assessments record inspection time.
+- Required full-text access remains unavailable, so completed status and a passing whole-record verdict are deliberately not claimed.
+- The single-record artifact denominator is1. The exhaustive campaign remains3115 owners and243 components; partial observations are not scientific completions.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261013T115040Z-yersiniabactin-2
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Yersiniabactin: partially specified tautomer and E.coli provenance'
+started_at: '2026-10-13T11:33:20.074250Z'
+finished_at: '2026-10-13T11:50:40.063730Z'
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: self_review
+  independence_basis: Same assistant/thread as preceding corpus curation and publication;
+    this is not independent human sign-off.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Exact MIBiG/PubChem chemistry is internally consistent, with one undefined
+  stereocenter honestly flagged. One confirmed minor strain omission and one provisional
+  major occurrence-evidence gap remain. Partial needs_curation; primary isolation/stereochemistry
+  and complete E.coli experiment checks remain access-limited.
+source:
+  git_revision: 8b5a3ebf476c27b21d49a89d7e5684cef41a367d
+  state: git_commit
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: 49e2ab03c7e82013e9d68356de2c9965c9f8517a3408a44124076f4ca1b529cd
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/decisions.tsv
+    sha256: 7214a74975fb2cb65521da18dd14ea1c65665f50060106976dc0db9caf887805
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: a1eb14fec4a7cee0c2fc25c43091e75af24ae62c44c4f7659ed7aedf0e6a0e6c
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: f075713522db63c54eb4054b539cf421b42feb6375a2736e7386e8d7abeeea32
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: 5b1edc057cdcc732f61de2964cd175fa3bc2dca929c5d2823142f61313545a7e
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: bf38e4f0c7e4bcbdf184a4e7b8b024752251e8f34c015c0b82cedca98a8a5729
+    role: context
+  - path: data/natural_products/alkaloids/yersiniabactin-2.yaml
+    sha256: 5788fa8b0f19f7e6ad13fd4e5dcd0a8ba33f59e0b487312dd0129de1f0fb647e
+    role: target
+  - path: data/natural_products/alkaloids/yersiniabactin.yaml
+    sha256: 62d868a1addba9468c051fce7d15f9099456e5b1608693e0af0487b3c6c598c0
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: 373f049029be3db137e062ff5f872a2400a9d5b423f3e108ea44ebde2f8dcc7d
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: 7b9b9f78f5b14aea9fabb163bbaa9e842920a7e9b07deac8f98c97666e9e23fc
+    role: context
+  - path: docs/CURATION.md
+    sha256: e0b1b524d1dfdb16f2c100ab3794f3e69e2740d7352060f04b82d5f7020e76b4
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: pyproject.toml
+    sha256: 02505a46585e870eac7333f31a6773df51465ef13969d4d490fbc0247931d85c
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_lotus.py
+    sha256: 8a8c524f60f85d2bb54412ca055a6a45e0d37ec5f4584d8d70be454b8f664290
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 4daf8b2b5864b55c9d8d50a85572bbd71d6b1d8223e492a8961479c497d026ea
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/history.yaml
+    sha256: b01b06f1b9a37db205c26c31ec0fd910690848507c7e1bfb73b424ac0829c52d
+    role: context
+  - path: src/naturalproductmech/schema/mech_shared.yaml
+    sha256: c2e7054fd32635e380c698282bd886a9105861009b9f0474f02bb1b80865e895
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: uv.lock
+    sha256: c62a5739e3ffeb12cc57b3bf12a31dcf9cdfbf00b417f4ba3a801d51ef9efbe3
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-66a349ed2d
+  path: data/natural_products/alkaloids/yersiniabactin-2.yaml
+  label: yersiniabactin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Imported chemical, producer and cluster assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Imported structure-organism-reference triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Pinned ChEBI grounding inventory
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_origins.tsv
+    role: Pinned ChEBI occurrence inventory
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/antibioticmech_inchikeys.tsv
+    role: Pinned sibling exact-structure joins
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated harmonization and grading
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: MIBiG extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_lotus.py
+    role: LOTUS extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Implemented pinned structure corrections
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Implemented exact-context method corrections
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Implemented pinned strain qualifications
+scope:
+  description: One exact resolved owner; same-label sibling consulted only as identity
+    context. Full corpus goal remains3115 owners and243 attached components.
+  selection: Next exact path in the verified exhaustive campaign checkpoint; same-label/different-key
+    candidates prioritized, not a sample.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-66a349ed2d
+  exclusions:
+  - target: Other3114 owners
+    reason: Not scientifically assessed by this single-record observation; retained
+      in the campaign checkpoint.
+checks:
+- check_id: strict-2
+  name: strict-2
+  status: failed
+  required: false
+  command: just validate-strict data/natural_products/alkaloids/yersiniabactin-2.yaml
+    --out /private/tmp/npmech-yersiniabactin-resume-20261013-pwkZfyO5/strict-2.tsv
+  exit_code: 2
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-66a349ed2d
+  summary: Initial just wrapper failed on sandbox-denied uv cache; replaced by the
+    documented script in the existing repository environment.
+  scope_note: Actual command result retained; log SHA256 defb2861f9823f884a72bb6f5abfcb284aa227d04c1451583cfc8b92094e3dd6
+- check_id: strict-2-local
+  name: strict-2-local
+  status: passed
+  required: true
+  command: .venv/bin/python scripts/validate_strict.py data/natural_products/alkaloids/yersiniabactin-2.yaml
+    --out /private/tmp/npmech-yersiniabactin-resume-20261013-pwkZfyO5/strict-2.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-66a349ed2d
+  summary: 'One owner and all referenced components: zero schema errors.'
+  scope_note: Actual command result retained; log SHA256 a1f1882f151848f9c7e91af4a5da26883a14a845b59d78f2cd0dccbb1dd29b82
+- check_id: chemistry
+  name: chemistry
+  status: failed
+  required: false
+  command: env RDBASE=/private/tmp/npmech-rdkit-2026.03.5/share/RDKit /private/tmp/npmech-rdkit-2026.03.5/bin/python
+    /private/tmp/npmech-yersiniabactin-resume-20261013-pwkZfyO5/chemistry.py
+  exit_code: 1
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-66a349ed2d
+  summary: Initial temporary RDKit environment failed on incomplete NumPy before calculating
+    results; failure retained.
+  scope_note: Actual command result retained; log SHA256 9e2f8f60cbb671ef22e14c0a3e61314e3ff0f843ff3e0a732b5abfc92f1b8606
+- check_id: chemistry-local-numpy
+  name: chemistry-local-numpy
+  status: passed
+  required: true
+  command: env RDBASE=/private/tmp/npmech-rdkit-2026.03.5/share/RDKit PYTHONPATH=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/lib/python3.13/site-packages
+    /private/tmp/npmech-rdkit-2026.03.5/bin/python /private/tmp/npmech-yersiniabactin-resume-20261013-pwkZfyO5/chemistry.py
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-66a349ed2d
+  summary: Exact pinned RDKit calculations succeeded using existing repository NumPy
+    via PYTHONPATH; no package or corpus edits.
+  scope_note: Actual command result retained; log SHA256 9d2b12be23b2c9f299775c16e01abaddc87b2ba509a58f004e4c975a6d056b74
+- check_id: labels
+  name: labels
+  status: passed
+  required: true
+  command: .venv/bin/python scripts/validate_id_label_correspondence.py -c conf/id_label_targets.yaml
+    --report /private/tmp/npmech-yersiniabactin-resume-20261013-pwkZfyO5/labels.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-66a349ed2d
+  summary: 'Full-corpus configured gate exited0: 13434 canonical,646 synonym,35 exception,499
+    nonblocking mismatch warnings,4649 no-adapter skips. Minted chemical identifiers
+    are skipped; this is not chemical-identity verification.'
+  scope_note: Actual command result retained; log SHA256 1a95f2dc962338474cd8c5b7596110787f446a0c14bb65cf03451d1d0b011611
+- check_id: qc
+  name: qc
+  status: passed
+  required: true
+  command: just qc
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-66a349ed2d
+  summary: Full documented QC exited0:674 tests passed,3 skipped,2 warnings; strict
+    schema3115 owners with zero errors; lint, vendored synchronization, provenance,
+    site, reproduction and corpus lock passed. Deterministic success is not scientific
+    sign-off.
+  scope_note: Actual command result retained; log SHA256 a2785c0ac9e2e6cd6b989eaab6b597abd74eaecf0190b6e37f36cf6d04297001
+- check_id: review-queue
+  name: review-queue
+  status: passed
+  required: false
+  command: .venv/bin/python scripts/curation_worklist.py --review-records --limit
+    0 --tsv /private/tmp/npmech-yersiniabactin-resume-20261013-pwkZfyO5/review-queue.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-66a349ed2d
+  summary: Exhaustive native queue generated to the private workspace:8930 diagnostic
+    rows. Multiple diagnostics per record are not distinct owners or completed reviews.
+  scope_note: Actual command result retained; log SHA256 03dc0194019c5eff3a736dca9b062f6330000d2ce22c331164d865a6b95a33ba
+- check_id: imodulondb
+  name: Structured source applicability
+  status: not_applicable
+  required: false
+  target_ids:
+  - naturalproductmech:mibig-66a349ed2d
+  summary: These owners store BGC/genome accessions but no gene, locus-tag, protein-example,
+    regulator or expression-module claims. MIBiG and INSDC were used first for structured
+    cross-checks. iModulon membership would not establish chemical identity or production.
+    No coverage-absence claim is made.
+- check_id: primary-fulltext
+  name: Primary experiment and exact isolate-form verification
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-66a349ed2d
+  summary: Primary abstracts were inspected but complete experimental and chemical-form
+    verification is access-limited. No source was retrieved through an alternate route
+    after explicit403 or reCAPTCHA. See limitations.
+- check_id: initial-draft-validation
+  name: Initial review-draft format validation
+  status: failed
+  required: false
+  target_ids:
+  - naturalproductmech:mibig-66a349ed2d
+  command: .venv/bin/python scripts/record_review.py validate /private/tmp/npmech-yersiniabactin-resume-20261013-pwkZfyO5/yersiniabactin-2-review.yaml
+    /private/tmp/npmech-yersiniabactin-resume-20261013-pwkZfyO5/yersiniabactin-review.yaml
+  exit_code: 1
+  expected_exit_code: 0
+  summary: Initial generated drafts contained YAML aliases; the canonical validator
+    rejected that format. The assessed content was reserialized without aliases before
+    canonical validation and saving. No scientific inputs or findings changed.
+  scope_note: Superseded draft-format failure retained; log SHA256 9754fbee2c8d2e0dd5f2db7cea93dfda03c23dd6e71a1d9c6d83c082b95130e5
+- check_id: draft-timestamp-validation
+  name: Draft review ID timestamp validation
+  status: failed
+  required: false
+  target_ids:
+  - naturalproductmech:mibig-66a349ed2d
+  command: .venv/bin/python scripts/record_review.py validate /private/tmp/npmech-yersiniabactin-resume-20261013-pwkZfyO5/yersiniabactin-2-review-final.yaml
+    /private/tmp/npmech-yersiniabactin-resume-20261013-pwkZfyO5/yersiniabactin-review-final.yaml
+  exit_code: 1
+  expected_exit_code: 0
+  summary: Alias-free draft validation exposed a review_id prefix that no longer matched
+    finished_at after the format repair. Both timestamp fields were synchronized before
+    final validation. Scientific evidence access timestamps, input hashes and assessments
+    were retained.
+  scope_note: Superseded draft-format failure retained; log SHA256 3c7e67c4c4c88de1a166d7eeee24a05e6b27068c39c47270c8e0d3517ac53414
+- check_id: draft-scope-validation
+  name: Single-record scope validation
+  status: failed
+  required: false
+  target_ids:
+  - naturalproductmech:mibig-66a349ed2d
+  command: .venv/bin/python scripts/record_review.py validate /private/tmp/npmech-yersiniabactin-resume-20261013-pwkZfyO5/yersiniabactin-2-review-ready.yaml
+    /private/tmp/npmech-yersiniabactin-resume-20261013-pwkZfyO5/yersiniabactin-review-ready.yaml
+  exit_code: 1
+  expected_exit_code: 0
+  summary: The draft incorrectly placed the campaign denominator3115 in a kind:record
+    artifact. Its schema denominator is now1, with the full3115-owner/243-component
+    campaign explicitly retained in scope prose and the checkpoint. No population
+    was removed from the goal.
+  scope_note: Superseded metadata failure retained; log SHA256 0718f3a1cea866e4344af3f5172f09f39b99d830afe6f8a5a6607b2820a0cc97
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/natural_products/alkaloids/yersiniabactin-2.yaml
+  locator: Entire owner, all history, and read_natural_product resolved view
+  accessed_at: '2026-10-13T11:33:25.524834Z'
+  support: context_only
+  summary: Full owner read; no inline causal graphs or causal_graph_refs. No protein
+    examples, pathway steps, assays, molecular targets, clinical assertions or sibling
+    links are stored. Existing status is SEEDED; no data or history was changed.
+  snapshot_sha256: 5788fa8b0f19f7e6ad13fd4e5dcd0a8ba33f59e0b487312dd0129de1f0fb647e
+- evidence_id: inventories
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: BGC0001055:1 line1206; BGC0000467:1 line651; BGC0002570:1 line3267; LOTUS
+    exact-key rows712-715 and3026; NPClassifier rows257 and1111
+  accessed_at: '2026-10-13T11:33:25.524834Z'
+  support: supports
+  summary: Parsed exact-key source rows reproduce the source concepts, database evidence,
+    computed Alkaloids filing and xrefs. Both keys have zero matches in the pinned
+    ChEBI structure/origin and AntibioticMech inventories. This supports minted identity
+    relative to these inventories, not absence from all current databases. Occurrences
+    remain distinct claims from producers; DOI/PMID aliases do not provide independent
+    experiments.
+  search_scope: csv.DictReader read every row in the six explicitly named inventories,
+    including paths independently of gitignore. Complete corpus and component paths
+    were enumerated with Path.rglob. Hidden/ignored-inclusive rg searched curation,
+    data/natural_products and reviews/structured for labels, keys and three accessions.
+    No matching strain/correction decision or earlier review bundle was found in those
+    searched inputs.
+- evidence_id: chemistry
+  kind: validation
+  reference: RDKit:2026.03.5
+  locator: MolFromSmiles; MolToInchi; MolToInchiKey; FindMolChiralCenters(includeUnassigned=True);
+    CalcMolFormula; GetFormalCharge; ExactMolWt; RemoveStereochemistry; TautomerEnumerator.Canonicalize
+  accessed_at: '2026-10-13T11:37:35.103208Z'
+  support: supports
+  snapshot_sha256: ed26c7e5c80f8ff3a59420e619be3b0a373afcdb241d302ae33bfd35d2e36a65
+  summary: Both stored SMILES reproduce their stored InChIs and keys; both calculate
+    C21H27N3O4S3, charge0, exact mass481.116369344 Da. yersiniabactin-2 has CIP assignments
+    at zero-based atom indices1:S,9:S,10:R,15:R and unspecified atom13; yersiniabactin
+    has five unspecified centers. Both stereo_complete:false values are honest. Removing
+    stereo then canonicalizing tautomers yields JHYVWAMMAMCUIR-UHFFFAOYSA-N for both.
+    This is computational context, not experimental form assignment or authority to
+    merge owners. The initial isolated environment failed on missing numpy.__config__;
+    the successful rerun used the existing repository NumPy via PYTHONPATH without
+    modifying packages.
+- evidence_id: pubchem
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5462519/property/InChI,InChIKey,MolecularFormula,CanonicalSMILES,IsomericSMILES/JSON
+  locator: PropertyTable.Properties[0]
+  accessed_at: '2026-10-13T11:34:05.349671Z'
+  support: supports
+  summary: CID5462519 denotes CARQCAHMXWHUIE-NRMQOZBLSA-N, with the same SMILES/InChI
+    as yersiniabactin-2 and formulaC21H27N3O4S3. It does not denote the all-stereocenters-unspecified
+    JHYVWAMMAMCUIR-UHFFFAOYSA-N representation.
+  snapshot_sha256: ee473526166fcf941d6a784605882a5a680168e4e7575cf8d3a3c45b32a9772f
+- evidence_id: taxonomy
+  kind: authority
+  reference: data/raw/corpus_taxa.obo
+  locator: NCBITaxon:562,630,223283; inspected ENA source features; Wikidata Q25419
+    and Q135177 organism pages
+  accessed_at: '2026-10-13T11:48:01.071430Z'
+  support: supports
+  summary: The pinned taxonomy labels resolve to Escherichia coli, Yersinia enterocolitica
+    and Pseudomonas syringae pv. tomato str. DC3000 respectively. ENA verifies the
+    same taxids on the cited sequence deposits. Wikidata labels match their organism
+    notes; the Q135177 page succeeded after an initial transport timeout. OTHER_BACTERIAL
+    is a broad computed facet, not a new experimental claim.
+- evidence_id: governance
+  kind: record_content
+  reference: docs/CURATION.md
+  locator: Producer strain context, locus-evidence overrides, generated ownership,
+    REVIEWED gate; docs/HARMONIZATION.md identity and producer/occurrence sections;
+    conf/producer_evidence.tsv
+  accessed_at: '2026-10-13T11:48:01.071833Z'
+  support: context_only
+  summary: SOURCE_ASSERTION and CLUSTER_UNSTATED honestly preserve ungraded database
+    claims; method absence is not evidence of absent biology. Native knockouts may
+    support both producer and locus. Xrefs assert the same structure. Strain changes
+    use complete-row-pinned curation/mibig_producer_strains.tsv. decisions.tsv is
+    reserved, not a functioning correction path.
+- evidence_id: mibig1055
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001055.5/annotations.json
+  locator: version5,status,compounds[0],taxonomy,loci[0],legacy_references
+  accessed_at: '2026-10-13T11:39:14.864108Z'
+  support: supports
+  summary: Active BGC0001055v5 names yersiniabactin, exactly supplies the owner chemistry
+    and PubChem xref, assigns taxon562 and AM236324.1, and has no locus method. Its
+    citation is PMID17049458. NRPS/PKS are cluster classes, not the computed filing
+    class.
+  snapshot_sha256: f6a440fe9c1a60af476d45b418f0c2fdff308d320a3ba7d884703485a94d9429
+- evidence_id: hejnova2006
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:17049458%20AND%20SRC:MED&format=json&resultType=core
+  locator: resultList.result[id=17049458].abstractText; DOI metadata
+  accessed_at: '2026-10-13T11:34:37.327795Z'
+  support: partial
+  summary: The abstract identifies E.coli A0 34/86 and reports BAC-array/comparative-sequence
+    identification of yersiniabactin-system genes. PMID17049458 is DOI10.1016/j.ijmm.2006.06.007,
+    also used by the LOTUS occurrence. No metabolite detection is described in the
+    inspected abstract; the subscription full article was not inspected. This does
+    not establish that the complete paper lacks such an experiment.
+  snapshot_sha256: bb65923604291ccd1d1e43178896032f636a1d938a3b22896dd3c132d3608019
+- evidence_id: ena1055
+  kind: authority
+  reference: https://www.ebi.ac.uk/ena/browser/api/embl/AM236324.1?download=false
+  locator: ID; DE; reference2; source feature1..84189
+  accessed_at: '2026-10-13T11:35:30.090632Z'
+  support: supports
+  summary: AM236324.1 is an 84189bp E.coli sequence; source strainA0 34/86, taxon562.
+    Its reference2 explicitly joins PMID17049458 to DOI10.1016/j.ijmm.2006.06.007.
+    It includes yersiniabactin,cob,pdu clusters, so the entire accession is not automatically
+    a precisely delimited biosynthetic cluster.
+  snapshot_sha256: c0dac308fd9404470a0222cc5b1b3ea778870644bff2def36c8587784c0f31e2
+- evidence_id: haag1993
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:(17660289%20OR%209457855%20OR%208245841)%20AND%20SRC:MED&format=json&resultType=core
+  locator: resultList.result[id=8245841].abstractText
+  accessed_at: '2026-10-13T11:35:01.118815Z'
+  support: partial
+  summary: The abstract reports isolation from H1852 spent medium, production under
+    iron limitation by WA-C, and iron-transport assays. It supports a Y.enterocolitica
+    occurrence and strain-specific biological origin at abstract level; it does not
+    establish every encoded stereocenter or tautomer in this record.
+  snapshot_sha256: 903f5030fc877ebe1ff14a555d74be2792ef0df86cf3dac2e6a50557edee7609
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Database identity and internal structure
+  outcome: supported
+  summary: The exact owner matches active MIBiG1055 and PubChem5462519; internal chemistry
+    is consistent. Minted identity is justified against the pinned ChEBI inventory.
+    Natural experimental tautomer/stereo assignment remains unresolved; no claim that
+    the two named owners are unrelated molecules.
+  target_ids:
+  - naturalproductmech:mibig-66a349ed2d
+  evidence_ids:
+  - owner
+  - inventories
+  - chemistry
+  - pubchem
+  - mibig1055
+  dimensions:
+  - name: structure
+    value: CARQCAHMXWHUIE-NRMQOZBLSA-N
+    definition: Exact owner key
+    evidence_ids:
+    - owner
+    - chemistry
+  - name: stereochemistry
+    value: four specified centers; one unspecified
+    definition: RDKit zero-based atom-index assignment, not paper numbering
+    evidence_ids:
+    - chemistry
+- assessment_id: classification
+  area: provenance
+  topic: Filing and asserted origin
+  outcome: supported
+  summary: Pinned NPClassifier2026-09-07 supplies Alkaloids; NRPS/PKS come separately
+    from MIBiG. NATURAL_PRODUCT admission rests on source assertions, not this computation.
+    No asserted chemical class or optional assay measurement was fabricated.
+  target_ids:
+  - naturalproductmech:mibig-66a349ed2d
+  evidence_ids:
+  - inventories
+  - mibig1055
+  - governance
+- assessment_id: producer
+  area: evidence
+  topic: E.coli producer and locus scope
+  outcome: concern
+  summary: SOURCE_ASSERTION/CLUSTER_UNSTATED match MIBiG. Genomic identification does
+    not establish native metabolite production. A0 34/86 is available in both citation
+    and sequence but absent from the producer. No upgrade to causal evidence is justified
+    by the inspected material.
+  target_ids:
+  - naturalproductmech:mibig-66a349ed2d
+  evidence_ids:
+  - owner
+  - mibig1055
+  - hejnova2006
+  - ena1055
+  dimensions:
+  - name: strain
+    value: A0 34/86
+    definition: Exact source-deposit strain, absent in generated producer
+    evidence_ids:
+    - ena1055
+  - name: evidence-tier
+    value: SOURCE_ASSERTION;CLUSTER_UNSTATED
+    definition: Separate producer and locus grades
+    evidence_ids:
+    - owner
+    - mibig1055
+- assessment_id: occurrences
+  area: evidence
+  topic: Four structure-organism-publication claims
+  outcome: unknown
+  summary: All four exact-key LOTUS rows were checked. The1993 Yersinia abstract supports
+    culture isolation; the1995 isolation and2001 stereochemistry articles were inaccessible.
+    The E.coli DOI is the same genomic paper as the producer PMID, and its inspected
+    abstract does not demonstrate chemical detection. Different reference spellings
+    are not independent evidence.
+  target_ids:
+  - naturalproductmech:mibig-66a349ed2d
+  evidence_ids:
+  - inventories
+  - hejnova2006
+  - haag1993
+- assessment_id: complete
+  area: completeness
+  topic: Optional mechanism and assay scope
+  outcome: unknown
+  summary: Entire owner and history read, including absence of stored graphs, pathways,
+    proteins, assays and clinical claims. Cited sources provide bounded biosynthesis
+    leads, but no unsupported optional fields were filled and missing optional content
+    was not treated as false. Exact primary chemical-form verification is the remaining
+    sign-off gate.
+  target_ids:
+  - naturalproductmech:mibig-66a349ed2d
+  evidence_ids:
+  - owner
+  - inventories
+  - governance
+- assessment_id: validation
+  area: schema
+  topic: Native deterministic and provenance gates
+  outcome: supported
+  summary: Strict owner validation and complete native QC pass; source byte checks
+    and exact corpus enumeration preserve every owner/component. Label gate has known
+    skips and warning-level mismatches. These checks cannot prove literature support.
+  target_ids:
+  - naturalproductmech:mibig-66a349ed2d
+  evidence_ids:
+  - owner
+  - governance
+  - chemistry
+findings:
+- finding_id: F1
+  issue_key: yersiniabactin-BGC0001055-producer-strain
+  category: scope
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Producer assertion drops the available A0 34/86 strain
+  description: The species-level taxon562 producer has neither strain nor a strain
+    qualifier. AM236324.1 and the cited paper identify A0 34/86. Preserve this context
+    without changing the taxon or upgrading the source-assertion evidence.
+  target_ids:
+  - naturalproductmech:mibig-66a349ed2d
+  field_paths:
+  - producer_organisms[0].strain
+  evidence_ids:
+  - owner
+  - ena1055
+  - hejnova2006
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Implemented complete-source-row-pinned strain qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated producer claim
+  rule_id: review-checklist:Identity; Equivalence; Producer organisms; Occurrences;
+    docs/CURATION.md:Evidence rules
+  native_severity: minor
+  normalization_reason: Material unsupported identity/evidence is major; bounded lost
+    strain provenance is minor. Provisional findings require source adjudication before
+    correction.
+- finding_id: F2
+  issue_key: yersiniabactin-lotus-ecoli-genomic-citation
+  category: evidence
+  severity: major
+  status: open
+  certainty: provisional
+  title: E.coli occurrence needs direct chemical-detection support
+  description: The occurrence claims that this structure was found in E.coli, but
+    its DOI is a comparative-genomics paper whose inspected abstract reports genes
+    rather than metabolite detection. This is a provisional evidence gap, not proof
+    that the complete paper contains no chemical experiment, nor proof of nonproduction.
+  target_ids:
+  - naturalproductmech:mibig-66a349ed2d
+  field_paths:
+  - occurrences[3].evidence
+  evidence_ids:
+  - owner
+  - inventories
+  - hejnova2006
+  - ena1055
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Exact imported occurrence row
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_lotus.py
+    role: Occurrence extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Occurrence emission
+  rule_id: review-checklist:Identity; Equivalence; Producer organisms; Occurrences;
+    docs/CURATION.md:Evidence rules
+  native_severity: major
+  normalization_reason: Material unsupported identity/evidence is major; bounded lost
+    strain provenance is minor. Provisional findings require source adjudication before
+    correction.
+actions:
+- action_id: A1
+  description: Add a full-raw-row-pinned A0 34/86 qualification to BGC0001055:1, retaining
+    taxon562 and existing evidence grades.
+  finding_ids:
+  - F1
+  target_ids:
+  - naturalproductmech:mibig-66a349ed2d
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Implemented complete-source-row-pinned strain qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated producer claim
+  acceptance_checks:
+  - Verify full raw source-row digest and ENA strain citation.
+  - Canary only this record; confirm no chemistry or grade changes.
+  - Strict validation, reproduction and full QC pass.
+  generator: scripts/seed_from_sources.py
+- action_id: A2
+  description: With authorized article access, locate the exact E.coli isolation/detection
+    result or adjudicate the LOTUS occurrence as unsupported. Do not remove it solely
+    from abstract silence. If correction is needed, implement a tested source-row-pinned
+    extraction/overlay path; reserved decisions.tsv cannot do this.
+  finding_ids:
+  - F2
+  target_ids:
+  - naturalproductmech:mibig-66a349ed2d
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Exact imported occurrence row
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_lotus.py
+    role: Occurrence extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Occurrence emission
+  acceptance_checks:
+  - Inspect the complete cited paper or user-supplied source without bypassing access
+    restrictions.
+  - Evidence must identify compound form, A0 34/86 and a chemical detection experiment
+    rather than gene presence.
+  - Any later row exclusion preserves provenance and passes exact-key occurrence,
+    reproduction and full QC regressions.
+limitations:
+- This record observation assesses the captured main commit8b5a3ebf, whose input bytes
+  still match the working tree. It does not reassess any other owner or claim all3115
+  records reviewed.
+- Full primary experimental and isolate-form verification is incomplete. Chemical
+  normalization, metadata, database assertions and abstract-level descriptions are
+  not substituted for inspected methods/results.
+- All174 inherited access stops were preserved; none was retried. This review records
+  additional source-specific stops. No paid research, contact, GitHub mutation, record
+  edit or native status promotion occurred.
+- Wiley DOI10.1002/jlac.1995199510243 and ScienceDirect DOI10.1016/S0040-4020(01)00012-6
+  returned403. Search-result snippets were not promoted to inspected primary evidence.
+- The1993 publisher abstract was inspected; its full-text endpoint returned403. The2006
+  DOI transport failed and EuropePMC metadata lists subscription-only full text; its
+  abstract was inspected before that access limit. No alternate full-text retrieval
+  was attempted.
+notes:
+- Only immutable review outputs are authorized. Proposed corrective actions have not
+  been executed.
+- Primary summaries above are paraphrases, not quotations. Source access timestamps
+  for retrieved snapshots are preserved from receipts; local/current-page assessments
+  record inspection time.
+- Required full-text access remains unavailable, so completed status and a passing
+  whole-record verdict are deliberately not claimed.
+- The single-record artifact denominator is1. The exhaustive campaign remains3115
+  owners and243 components; partial observations are not scientific completions.
+```
