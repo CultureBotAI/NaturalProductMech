@@ -1,0 +1,181 @@
+{
+  "status": "inspection_only",
+  "repository": "CultureBotAI/NaturalProductMech",
+  "source": {
+    "git_revision": "115e3c962ac60ff68abc8f0748769ee20a9cfd57",
+    "state": "working_tree",
+    "inputs": [
+      {
+        "path": ".claude/skills/review-yaml-record/SKILL.md",
+        "sha256": "493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae",
+        "role": "context"
+      },
+      {
+        "path": "curation/mibig_xref_exclusions.tsv",
+        "sha256": "21f15282d9684d75bd9146dd08087d257500ff1c0f4307d4612db8f95450c63f",
+        "role": "context"
+      },
+      {
+        "path": "data/natural_products/amino_acids_and_peptides/bacilysin-2.yaml",
+        "sha256": "ca47263447870a484802ba0af85f8e97e2df10aadb5c6591905a9a05305458bc",
+        "role": "target"
+      },
+      {
+        "path": "data/raw/chebi_structures.tsv",
+        "sha256": "62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2",
+        "role": "context"
+      },
+      {
+        "path": "data/raw/lotus_occurrences.tsv",
+        "sha256": "ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94",
+        "role": "context"
+      },
+      {
+        "path": "data/raw/mibig_compounds.tsv",
+        "sha256": "e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6",
+        "role": "context"
+      },
+      {
+        "path": "data/raw/pubchem_bioassay.tsv",
+        "sha256": "6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b",
+        "role": "context"
+      },
+      {
+        "path": "docs/CURATION.md",
+        "sha256": "245df036e09a00a2f92a5f78c70eadb210cef7d70046e8ee35377a9e636cd30b",
+        "role": "context"
+      },
+      {
+        "path": "docs/HARMONIZATION.md",
+        "sha256": "c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79",
+        "role": "context"
+      },
+      {
+        "path": "docs/record-review-profile.md",
+        "sha256": "1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a",
+        "role": "context"
+      },
+      {
+        "path": "docs/record-reviews.md",
+        "sha256": "452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b",
+        "role": "context"
+      },
+      {
+        "path": "reviews/evidence/20261013-bacilysin/artifacts/chemistry.json.gz",
+        "sha256": "d65984799d98453bc5367cd00feb10172f87756b94525a6ec63f4c359b856f50",
+        "role": "context"
+      },
+      {
+        "path": "reviews/evidence/20261013-bacilysin/artifacts/reassignment-chemistry.json.gz",
+        "sha256": "c274cec28c0f5002a88ed4dc68fee2a4da27549ee8ccaea2c2e2cceb25e09f99",
+        "role": "context"
+      },
+      {
+        "path": "reviews/evidence/20261013-bacilysin/manifest.json",
+        "sha256": "aa269cb5e20b1524cb14c9c2cf5f3b700c1b55ea0348f1b73402e4b5d0b30a8b",
+        "role": "context"
+      },
+      {
+        "path": "reviews/structured/20261013T140252Z-bacilysin-2/review.yaml",
+        "sha256": "67536a5182bf1a8f74e05462ff6bcc1b5d2f42576ee23c1af331dfc3c09e56e9",
+        "role": "context"
+      },
+      {
+        "path": "scripts/seed_from_sources.py",
+        "sha256": "8d82d7633e0492e9fe16011f6e5af6f8024f573e80c8a24176b65e2941478b71",
+        "role": "context"
+      },
+      {
+        "path": "src/naturalproductmech/curate/xref_exclusions.py",
+        "sha256": "17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157",
+        "role": "context"
+      },
+      {
+        "path": "tests/test_bacilysin_review_archive.py",
+        "sha256": "f32e78b83b09e1a82b1c69a885719717e12b7eb4afb10b1ae6124fb1abe3116c",
+        "role": "context"
+      },
+      {
+        "path": "tests/test_xref_exclusions.py",
+        "sha256": "3f26bef1b535e782a8ef33b3133f7a9172b03cfb5188cddc3c8a2ff55899dc48",
+        "role": "context"
+      }
+    ]
+  },
+  "targets": [
+    {
+      "target_id": "naturalproductmech:mibig-5044e5068f",
+      "path": "data/natural_products/amino_acids_and_peptides/bacilysin-2.yaml",
+      "label": "bacilysin",
+      "record_class": "NaturalProductRecord",
+      "kind": "generated",
+      "owner_paths": [
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/mibig_compounds.tsv",
+          "role": "Imported chemical, producer and cluster assertions"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/lotus_occurrences.tsv",
+          "role": "Imported structure-organism-reference triples"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/chebi_structures.tsv",
+          "role": "Pinned ChEBI grounding inventory"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/chebi_origins.tsv",
+          "role": "Pinned ChEBI occurrence inventory"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/npclassifier.tsv",
+          "role": "Pinned computed classification"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/antibioticmech_inchikeys.tsv",
+          "role": "Pinned sibling exact-structure joins"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/seed_from_sources.py",
+          "role": "Generated harmonization and grading"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/extract_mibig.py",
+          "role": "MIBiG extraction"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/extract_lotus.py",
+          "role": "LOTUS extraction"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_structure_corrections.tsv",
+          "role": "Implemented pinned structure corrections"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_locus_evidence_overrides.tsv",
+          "role": "Implemented exact-context method corrections"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_producer_strains.tsv",
+          "role": "Implemented pinned strain qualifications"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_xref_exclusions.tsv",
+          "role": "Implemented exact-row-pinned PubChem xref exclusions"
+        }
+      ]
+    }
+  ]
+}

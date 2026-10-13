@@ -1,0 +1,68 @@
+import gzip
+import hashlib
+import json
+import subprocess
+from datetime import datetime, timezone
+from pathlib import Path
+
+import yaml
+
+ROOT = Path.cwd()
+WORK = Path(__file__).parent
+DEST = ROOT / 'reviews/evidence/20261013-bacilysin-remediation/post-commit'
+previous = json.loads((WORK / 'successor-inspect.json').read_text())
+receipt = json.loads((WORK / 'capture.receipt.json').read_text())
+started = datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z')
+result = subprocess.run(receipt['command'], text=True, capture_output=True)
+assert result.returncode == 0, result.stderr
+current = json.loads(result.stdout)
+assert current['source']['inputs'] == previous['source']['inputs']
+assert current['targets'] == previous['targets']
+
+
+def digest(blob):
+    return hashlib.sha256(blob).hexdigest()
+
+
+for row in current['source']['inputs']:
+    assert digest((ROOT / row['path']).read_bytes()) == row['sha256']
+finished = datetime.now(timezone.utc)
+proof = dict(started_at=started, finished_at=finished.isoformat().replace('+00:00', 'Z'),
+             command=receipt['command'], exit_code=result.returncode, stderr=result.stderr,
+             old_base=previous['source']['git_revision'], new_base=current['source']['git_revision'],
+             source_inputs=current['source']['inputs'],
+             assessment='All19 captured input bytes and exact target metadata are identical after commit. '
+                        'Re-read current owner, decisions, consumer and retained chemistry/scope checks; '
+                        'the bounded xref disposition and all remaining scientific limitations are unchanged.',
+             prior_save='Rejected before persistence because the working-tree base changed. No saved bundle was modified.')
+DEST.mkdir(exist_ok=False)
+(DEST / 'inspection.json').write_text(result.stdout)
+(DEST / 'reassessment.json').write_text(json.dumps(proof, indent=2) + '\n')
+for name in ['successor.yaml', 'successor-save.log', 'successor-save.receipt.json']:
+    (DEST / (name + '.gz')).write_bytes(gzip.compress((WORK / name).read_bytes(), mtime=0))
+(DEST / 'reinspect_finalize.py.txt').write_bytes(Path(__file__).read_bytes())
+doc = yaml.safe_load((WORK / 'successor.yaml').read_text())
+doc['source'] = current['source']
+doc['review_id'] = finished.strftime('%Y%m%dT%H%M%SZ') + '-bacilysin-2-xref-resolution'
+doc['finished_at'] = proof['finished_at']
+doc['evidence'].append(dict(evidence_id='reinspection', kind='validation',
+                            reference=str((DEST / 'reassessment.json').relative_to(ROOT)),
+                            locator='Post-commit canonical inspection and byte-identical source reassessment',
+                            accessed_at=proof['finished_at'], support='supports',
+                            snapshot_sha256=digest((DEST / 'reassessment.json').read_bytes()),
+                            summary=proof['assessment']))
+doc['findings'][0]['evidence_ids'].append('reinspection')
+doc['assessments'][1]['evidence_ids'].append('reinspection')
+doc['limitations'].append('An unsaved draft was rejected after the implementation commit moved HEAD. '
+                          'Canonical reinspection and explicit reassessment proved all19 reviewed inputs byte-identical; '
+                          'the final source base is the recaptured commit, not a silent hash refresh.')
+
+
+class Dumper(yaml.SafeDumper):
+    def ignore_aliases(self, data):
+        return True
+
+
+with (WORK / 'successor-final.yaml').open('x') as handle:
+    yaml.dump(doc, handle, Dumper=Dumper, sort_keys=False, allow_unicode=False, width=100)
+print(doc['review_id'])
