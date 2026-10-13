@@ -36,7 +36,6 @@ bgc_class:
 - OTHER
 xrefs:
 - pubchem:90658043
-- pubchem:644246
 producer_taxon_groups:
 - FUNGAL
 producer_organisms:
@@ -76,6 +75,64 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+discussions:
+- discussion_id: source-xref-exclusion-BGC0000900-1-pubchem-644246
+  kind: CONTROVERSY
+  status: RESOLVED
+  prompt: Does the imported pubchem:644246 identify this exact structure?
+  resolution_note: 'MIBiG source row BGC0000900:1 asserts pubchem:644246; the raw
+    inventory is unchanged. This xref is withheld from exact equivalence. PubChem
+    CID644246 represents GGUNGDGGXMHBMJ-HCMAANCNSA-N, C27H42FeN9O12 with iron-55 and
+    three undefined peptide centers, not this ZZDYFKJSJLUQON-UFYCRDLUSA-N C26 iron-free
+    structure with one N-formyl hydroxamate. CID90658043 matches the unchanged owner
+    and is retained. CID644246 remains exact for the separate BGC0000901 owner. No
+    chemistry, isotope, stereochemistry, source claim or assay is transferred. See
+    issue #919 and review 20261013T170121Z-ferrichrome-2 F2; the separate identity
+    conflict in #918 remains unresolved. Source row SHA256 78b115cce5a8a133196da68d8dd417a75f5a8f42aa0344a1d3c76d389e58f791.
+    Curator: codex; date: 2026-10-13.'
+  evidence:
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/644246
+    evidence_source: database structure; curator interpretation
+    notes: 'MIBiG source row BGC0000900:1 asserts pubchem:644246; the raw inventory
+      is unchanged. This xref is withheld from exact equivalence. PubChem CID644246
+      represents GGUNGDGGXMHBMJ-HCMAANCNSA-N, C27H42FeN9O12 with iron-55 and three
+      undefined peptide centers, not this ZZDYFKJSJLUQON-UFYCRDLUSA-N C26 iron-free
+      structure with one N-formyl hydroxamate. CID90658043 matches the unchanged owner
+      and is retained. CID644246 remains exact for the separate BGC0000901 owner.
+      No chemistry, isotope, stereochemistry, source claim or assay is transferred.
+      See issue #919 and review 20261013T170121Z-ferrichrome-2 F2; the separate identity
+      conflict in #918 remains unresolved. Source row SHA256 78b115cce5a8a133196da68d8dd417a75f5a8f42aa0344a1d3c76d389e58f791.
+      Curator: codex; date: 2026-10-13.'
+- discussion_id: curator-ferrichrome-constitution-conflict
+  kind: CURATION_TODO
+  status: OPEN
+  posed_by: codex
+  prompt: The imported C26 structure has two N-acetyl and one N-formyl hydroxamates,
+    whereas named ferrichrome and its metal-free ligand have C27 and three N-acetyl
+    groups. Which exact product does BGC0000900 version 5 establish?
+  rationale: This is a constitutional conflict, not merely removal of iron. The current
+    structure, natural-origin assertion, producer, locus and LOTUS occurrence are
+    retained as source assertions pending exact-product adjudication, not independently
+    validated claims for this graph. PubChem CID90658043 matches the imported structure
+    but does not establish its name or biosynthesis. Do not replace it with CHEBI:5019,
+    CHEBI:90132 or the separate iron-55 owner, merge owners, or transfer occurrences,
+    assays or graphs without primary evidence and a guarded migration. The cited occurrence
+    paper remains unavailable; no production is inferred from detection.
+  evidence:
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000900.5/annotations.json
+    evidence_source: database
+    explanation: Versioned source structure agrees with the imported C26 graph; agreement
+      is not independent named-product proof.
+  - reference: CHEBI:5019
+    evidence_source: database
+    explanation: Named ferrichrome is C27H42FeN9O12 with three N-acetyl groups.
+  - reference: CHEBI:90132
+    evidence_source: database
+    explanation: The metal-free ligand is C27H45N9O12, also triacetylated; metal removal
+      does not explain the C26 graph.
+  - reference: https://github.com/CultureBotAI/NaturalProductMech/issues/918
+    explanation: Open exact-product adjudication; adding this qualification does not
+      resolve the identity blocker.
 curation_history:
 - timestamp: '2026-09-10T05:54:17Z'
   curator: seed_from_sources
@@ -85,3 +142,14 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T17:16:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T17:17:19Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add a cited OPEN exact-form qualification; preserve imported chemistry,
+    conservative evidence grades and SEEDED status. No structure or experimental identity
+    adjudication.
+  llm_assisted: true
