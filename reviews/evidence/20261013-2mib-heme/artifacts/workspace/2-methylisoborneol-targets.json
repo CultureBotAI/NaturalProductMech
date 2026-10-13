@@ -1,0 +1,78 @@
+{
+  "targets": [
+    {
+      "target_id": "naturalproductmech:mibig-0eb8c93c6f",
+      "path": "data/natural_products/terpenoids/2-methylisoborneol.yaml",
+      "label": "2-methylisoborneol",
+      "record_class": "NaturalProductRecord",
+      "kind": "generated",
+      "owner_paths": [
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/mibig_compounds.tsv",
+          "role": "Imported compound, producer and cluster assertions"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/lotus_occurrences.tsv",
+          "role": "Structure-organism-reference occurrence assertions"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/seed_from_sources.py",
+          "role": "Source harmonization and generated owner emission"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_structure_corrections.tsv",
+          "role": "Implemented narrow structure correction input"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_locus_evidence_overrides.tsv",
+          "role": "Implemented source-method correction input"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/natural_products/terpenoids/2-methylisoborneol.yaml",
+          "role": "Curator-owned pathway, graph references, discussions and audit history"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-sgr-native-proposed-roles.yaml",
+          "role": "Exact-owner maintained mechanism component"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-sace-native-proposed-roles.yaml",
+          "role": "Exact-owner maintained mechanism component"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-ambo-native-proposed-roles.yaml",
+          "role": "Exact-owner maintained mechanism component"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-three-canonical-references-coupled-assays.yaml",
+          "role": "Exact-owner maintained mechanism component"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-sco7701-database-role.yaml",
+          "role": "Exact-owner maintained mechanism component"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-13189-similarity-proposed-role.yaml",
+          "role": "Exact-owner maintained mechanism component"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-lasali-deposited-database-roles.yaml",
+          "role": "Exact-owner maintained mechanism component"
+        }
+      ]
+    }
+  ]
+}

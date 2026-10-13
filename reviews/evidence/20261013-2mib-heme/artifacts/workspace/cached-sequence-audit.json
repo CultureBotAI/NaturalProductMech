@@ -1,0 +1,2078 @@
+{
+  "accessed_at": "2026-10-13T05:31:37.497812Z",
+  "source_hashes": {
+    "/private/tmp/npmech-next/avi/MIB-Sgr-locus-20261008.json": "54b09b489c222e64239cc1b14fe54952aabf834d58c8e0932739e5613ae2c750",
+    "/private/tmp/npmech-next/avi/MIB-reviewed-20261008.json": "099097d4bc32a4be8c9d70440910f8b35208eafbd90d374ad340fab2882d4a07",
+    "/private/tmp/npmech-next/avi/MIB-GPPMT-reviewed-20261009.json": "d9891906296330a4e4b001d43cff71e4c4dcd80067e2d3ed32667269f1664a3c",
+    "/private/tmp/npmech-next/avi/MIB-SeMIBS-K0K6P8-20261009.json": "ac0bab099b485fb967836bd1c5726e4d3ee6b8a12a5a3b2125f5bd7ee729ae68",
+    "/private/tmp/npmech-next/avi/MIB-SeSp-uniprot-mibs-name-20261009.json": "1d7b98cdc062162432d2d3509ce66888ea7c265705cd6fb24ad5766514ee527d",
+    "/private/tmp/npmech-next/avi/MIB-13189-proteins-20261009.gp": "37712d9dd6f2f6649b8fa68a86763514ff149e4b4afe9eb46a464c1b64684b2e",
+    "/private/tmp/npmech-next/avi/MIB-Ambo-native-20261009.gp": "10bd61c96788578b8b1ce10d87ca219e477d4671d96cf01cc0ed2faf750d4784",
+    "/private/tmp/npmech-next/avi/MIB-Lasali-native-20261009.gp": "09be60760ef2db941d37e4edd8da700150db516e029bcd8563e1cf62a92572f6",
+    "/private/tmp/npmech-next/avi/MIB-SACE-native-20261009.gp": "02c834ac6195daeb787ba18e78581ba5602439336457e7c80cc1f4ea7b86d2c8",
+    "/private/tmp/npmech-next/avi/MIB-SCO-proteins-20261009.gp": "5073e793003489c0dfed9d724c96c030a2519805fa555ec213f3bef81288ec17",
+    "/private/tmp/npmech-next/avi/MIB-SCO7701-proteins-20261009.gp": "a468f47c7074cc5062ab5372c543b083670c0da7e251521980805592813e188b",
+    "/private/tmp/npmech-next/avi/MIB-SeMIBS-genpept-20261009.gp": "4cc6e11fc27693810cbf471956acbb1c497397c23d94b492227033d458963842",
+    "/private/tmp/npmech-next/avi/MIB-SeSp-refseq-20261009.gp": "216c229621af652ff9744909caa871db5f940dc82ded94e865e3799c7c184ea3",
+    "/private/tmp/npmech-next/avi/MIB-Sgr-native-20261008.gp": "8e6ea1e08fea5066ca44148a358684bfb90ea7685ba6fef99505ac567fae36f7",
+    "/private/tmp/npmech-next/avi/MIB-13189-AB040071-full-20261009.gb": "e3e3e8f6b4630644282ba5b2ead1862ce37f409a7975fc6f6f7019edbdb53a21",
+    "/private/tmp/npmech-next/avi/MIB-13189-AB040071-region-20261009.gb": "bfdbfd335617b56595941aa407a4aa359bfceb92b0d609eafb9b9bd1e176be35",
+    "/private/tmp/npmech-next/avi/MIB-Ambo-AM238663-region-20261009.gb": "9c5b11f1c094155bd1f1c7b8fc01a56ce7af179e63abba505a16e18bc2bfef0a",
+    "/private/tmp/npmech-next/avi/MIB-Ambo-CP012382-region-20261009.gb": "4969a42774624b2db84390611375f0740c999ead21387b19a748647e8d1df1ff",
+    "/private/tmp/npmech-next/avi/MIB-Lasali-AB547324-20261009.gb": "aa98470a8e2fd9449f470c7554b7566ffa519e2f97226ccdee834507fe9669b2",
+    "/private/tmp/npmech-next/avi/MIB-SACE-region-20261009.gb": "3284789e28d8f7a56a1371f47eed91e2b6b28b673248d6c1c46e1d30beb8f9f0",
+    "/private/tmp/npmech-next/avi/MIB-SCO-AL939132-region-20261009.gb": "770faaf7defd545743cc98a6d01d739ee501c9150b1566ac4b44d692b57986c3",
+    "/private/tmp/npmech-next/avi/MIB-SCO7701-AB035202-region-20261009.gb": "2bb64c1e344fa45bd738f424e00d8102829f4d23c0224ad73d434084b980699e",
+    "/private/tmp/npmech-next/avi/MIB-SCO7701-AL939132-region-20261009.gb": "66aedd937c8db6b2c74a6d9e26460178ea2827acc7b0c2de781aac070c13732d",
+    "/private/tmp/npmech-next/avi/MIB-SeMIBS-HE804045-region-20261009.gb": "64d2172ac5cd76ac6aeb5071f3ccdf1c37fab7028dcd26364f60ad6578e4df49",
+    "/private/tmp/npmech-next/avi/MIB-Sgr-region-20261008.gb": "e9dbb8a79f2f24083538465168681a5b1d006b48084e3901da044f7acc953f33",
+    "/private/tmp/npmech-next/avi/MIB-SpMIBS-KB913030-region-20261009.gb": "ebdcced34254f412527b16b6cfb5858de2f0385752d3dc48980fd830f13816a8",
+    "/private/tmp/npmech-lasali-4f84-3JF9Yf/entity.json": "43b6c02ffd5d96f52644509495ae0ba7c69a2d477a2da54176dd1f8f208aea59"
+  },
+  "proteins": [
+    {
+      "accession": "B1VVB3",
+      "length": 292,
+      "sequence_sha256": "2b68c4399efe638877d86ae9273ed77f394d21df3b79175243914441dc9ae4bb",
+      "proteins": [
+        {
+          "protein_id": "BAG18097.1",
+          "sequence_matches": true,
+          "source": [
+            {
+              "organism": [
+                "Streptomyces griseus subsp. griseus NBRC 13350"
+              ],
+              "strain": [
+                "NBRC 13350"
+              ],
+              "db_xref": [
+                "taxon:455632"
+              ],
+              "note": [
+                "synonym: Streptomyces griseus subsp. griseus IFO 13350"
+              ]
+            }
+          ],
+          "cds": [
+            {
+              "locus_tag": [
+                "SGR_1268"
+              ],
+              "coded_by": [
+                "complement(AP009493.1:1490671..1491549)"
+              ],
+              "transl_table": [
+                "11"
+              ]
+            }
+          ],
+          "genomic_translations": [
+            {
+              "file": "/private/tmp/npmech-next/avi/MIB-Sgr-region-20261008.gb",
+              "accession": "AP009493.1",
+              "source": [
+                {
+                  "organism": [
+                    "Streptomyces griseus subsp. griseus NBRC 13350"
+                  ],
+                  "mol_type": [
+                    "genomic DNA"
+                  ],
+                  "strain": [
+                    "NBRC 13350"
+                  ],
+                  "db_xref": [
+                    "taxon:455632"
+                  ],
+                  "note": [
+                    "synonym: Streptomyces griseus subsp. griseus IFO 13350"
+                  ]
+                }
+              ],
+              "coordinates": [
+                1490671,
+                1491549,
+                -1
+              ],
+              "translation_matches": true,
+              "sequence_sha256": "2b68c4399efe638877d86ae9273ed77f394d21df3b79175243914441dc9ae4bb"
+            }
+          ]
+        }
+      ],
+      "organism": {
+        "scientificName": "Streptomyces griseus subsp. griseus (strain JCM 4626 / CBS 651.72 / NBRC 13350 / KCC S-0626 / ISP 5235)",
+        "taxonId": 455632,
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000313",
+            "source": "EMBL",
+            "id": "BAG18097.1"
+          },
+          {
+            "evidenceCode": "ECO:0000313",
+            "source": "Proteomes",
+            "id": "UP000001685"
+          }
+        ],
+        "lineage": [
+          "Bacteria",
+          "Bacillati",
+          "Actinomycetota",
+          "Actinomycetes",
+          "Kitasatosporales",
+          "Streptomycetaceae",
+          "Streptomyces"
+        ]
+      },
+      "entry_type": "UniProtKB unreviewed (TrEMBL)",
+      "audit": {
+        "firstPublicDate": "2008-05-20",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "2008-05-20",
+        "entryVersion": 74,
+        "sequenceVersion": 1
+      },
+      "genes": [
+        {
+          "orderedLocusNames": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000313",
+                  "source": "EMBL",
+                  "id": "BAG18097.1"
+                }
+              ],
+              "value": "SGR_1268"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000256",
+                  "source": "ARBA",
+                  "id": "ARBA00053922"
+                }
+              ],
+              "value": "Catalyzes the SAM-dependent methylation of geranyl diphosphate (GPP) to yield (E)-2-methylgeranyl diphosphate (2-MeGPP)"
+            }
+          ],
+          "commentType": "FUNCTION"
+        }
+      ]
+    },
+    {
+      "accession": "B1VVB4",
+      "length": 437,
+      "sequence_sha256": "d58580e72954dedcba6ddbaceabcf14e150d00ff7b9addfc42f90a04b959297d",
+      "proteins": [
+        {
+          "protein_id": "BAG18098.1",
+          "sequence_matches": true,
+          "source": [
+            {
+              "organism": [
+                "Streptomyces griseus subsp. griseus NBRC 13350"
+              ],
+              "strain": [
+                "NBRC 13350"
+              ],
+              "db_xref": [
+                "taxon:455632"
+              ],
+              "note": [
+                "synonym: Streptomyces griseus subsp. griseus IFO 13350"
+              ]
+            }
+          ],
+          "cds": [
+            {
+              "locus_tag": [
+                "SGR_1269"
+              ],
+              "coded_by": [
+                "complement(AP009493.1:1491583..1492896)"
+              ],
+              "transl_table": [
+                "11"
+              ]
+            }
+          ],
+          "genomic_translations": [
+            {
+              "file": "/private/tmp/npmech-next/avi/MIB-Sgr-region-20261008.gb",
+              "accession": "AP009493.1",
+              "source": [
+                {
+                  "organism": [
+                    "Streptomyces griseus subsp. griseus NBRC 13350"
+                  ],
+                  "mol_type": [
+                    "genomic DNA"
+                  ],
+                  "strain": [
+                    "NBRC 13350"
+                  ],
+                  "db_xref": [
+                    "taxon:455632"
+                  ],
+                  "note": [
+                    "synonym: Streptomyces griseus subsp. griseus IFO 13350"
+                  ]
+                }
+              ],
+              "coordinates": [
+                1491583,
+                1492896,
+                -1
+              ],
+              "translation_matches": true,
+              "sequence_sha256": "d58580e72954dedcba6ddbaceabcf14e150d00ff7b9addfc42f90a04b959297d"
+            }
+          ]
+        }
+      ],
+      "organism": {
+        "scientificName": "Streptomyces griseus subsp. griseus (strain JCM 4626 / CBS 651.72 / NBRC 13350 / KCC S-0626 / ISP 5235)",
+        "taxonId": 455632,
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000313",
+            "source": "EMBL",
+            "id": "BAG18098.1"
+          },
+          {
+            "evidenceCode": "ECO:0000313",
+            "source": "Proteomes",
+            "id": "UP000001685"
+          }
+        ],
+        "lineage": [
+          "Bacteria",
+          "Bacillati",
+          "Actinomycetota",
+          "Actinomycetes",
+          "Kitasatosporales",
+          "Streptomycetaceae",
+          "Streptomyces"
+        ]
+      },
+      "entry_type": "UniProtKB unreviewed (TrEMBL)",
+      "audit": {
+        "firstPublicDate": "2008-05-20",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "2008-05-20",
+        "entryVersion": 79,
+        "sequenceVersion": 1
+      },
+      "genes": [
+        {
+          "orderedLocusNames": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000313",
+                  "source": "EMBL",
+                  "id": "BAG18098.1"
+                }
+              ],
+              "value": "SGR_1269"
+            }
+          ]
+        }
+      ],
+      "functions": []
+    },
+    {
+      "accession": "A4FG18",
+      "length": 285,
+      "sequence_sha256": "fb0d711ae19c19a3d225090d8c78a8f81c3b80fe960e900abc8d7f39d0351394",
+      "proteins": [
+        {
+          "protein_id": "CAM02993.1",
+          "sequence_matches": true,
+          "source": [
+            {
+              "organism": [
+                "Saccharopolyspora erythraea NRRL 2338"
+              ],
+              "strain": [
+                "NRRL 2338"
+              ],
+              "type_material": [
+                "type strain of Streptomyces erythraeus"
+              ],
+              "db_xref": [
+                "taxon:405948"
+              ],
+              "focus": [
+                ""
+              ]
+            }
+          ],
+          "cds": [
+            {
+              "locus_tag": [
+                "SACE_3721"
+              ],
+              "coded_by": [
+                "complement(AM420293.1:4075163..4076020)"
+              ],
+              "transl_table": [
+                "11"
+              ],
+              "db_xref": [
+                "EnsemblGenomes-Gn:SACE_3721",
+                "EnsemblGenomes-Tr:CAM02993",
+                "GOA:A4FG18",
+                "InterPro:IPR013216",
+                "InterPro:IPR029063"
+              ]
+            }
+          ],
+          "genomic_translations": [
+            {
+              "file": "/private/tmp/npmech-next/avi/MIB-SACE-region-20261009.gb",
+              "accession": "AM420293.1",
+              "source": [
+                {
+                  "organism": [
+                    "Saccharopolyspora erythraea NRRL 2338"
+                  ],
+                  "mol_type": [
+                    "genomic DNA"
+                  ],
+                  "strain": [
+                    "NRRL 2338"
+                  ],
+                  "type_material": [
+                    "type strain of Streptomyces erythraeus"
+                  ],
+                  "db_xref": [
+                    "taxon:405948"
+                  ],
+                  "focus": [
+                    ""
+                  ]
+                }
+              ],
+              "coordinates": [
+                4075163,
+                4076020,
+                -1
+              ],
+              "translation_matches": true,
+              "sequence_sha256": "fb0d711ae19c19a3d225090d8c78a8f81c3b80fe960e900abc8d7f39d0351394"
+            }
+          ]
+        }
+      ],
+      "organism": {
+        "scientificName": "Saccharopolyspora erythraea (strain ATCC 11635 / DSM 40517 / JCM 4748 / NBRC 13426 / NCIMB 8594 / NRRL 2338)",
+        "taxonId": 405948,
+        "lineage": [
+          "Bacteria",
+          "Bacillati",
+          "Actinomycetota",
+          "Actinomycetes",
+          "Pseudonocardiales",
+          "Pseudonocardiaceae",
+          "Saccharopolyspora"
+        ]
+      },
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "audit": {
+        "firstPublicDate": "2011-01-11",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "2007-04-17",
+        "entryVersion": 79,
+        "sequenceVersion": 1
+      },
+      "genes": [
+        {
+          "orderedLocusNames": [
+            {
+              "value": "SACE_3721"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000305",
+                  "source": "PubMed",
+                  "id": "18492804"
+                }
+              ],
+              "value": "Catalyzes the SAM-dependent methylation of geranyl diphosphate (GPP) to yield (E)-2-methylgeranyl diphosphate (2-MeGPP)"
+            }
+          ],
+          "commentType": "FUNCTION"
+        }
+      ]
+    },
+    {
+      "accession": "A4FG19",
+      "length": 354,
+      "sequence_sha256": "f1eb41aa82d48aafa9b3d6df25ab5f90ccee9276c9b0fb7013dbb88f1b2185d7",
+      "proteins": [
+        {
+          "protein_id": "CAM02994.1",
+          "sequence_matches": true,
+          "source": [
+            {
+              "organism": [
+                "Saccharopolyspora erythraea NRRL 2338"
+              ],
+              "strain": [
+                "NRRL 2338"
+              ],
+              "type_material": [
+                "type strain of Streptomyces erythraeus"
+              ],
+              "db_xref": [
+                "taxon:405948"
+              ],
+              "focus": [
+                ""
+              ]
+            }
+          ],
+          "cds": [
+            {
+              "locus_tag": [
+                "SACE_3722"
+              ],
+              "coded_by": [
+                "complement(AM420293.1:4076035..4077099)"
+              ],
+              "transl_table": [
+                "11"
+              ],
+              "db_xref": [
+                "EnsemblGenomes-Gn:SACE_3722",
+                "EnsemblGenomes-Tr:CAM02994",
+                "GOA:A4FG19",
+                "InterPro:IPR005630",
+                "InterPro:IPR008949"
+              ]
+            }
+          ],
+          "genomic_translations": [
+            {
+              "file": "/private/tmp/npmech-next/avi/MIB-SACE-region-20261009.gb",
+              "accession": "AM420293.1",
+              "source": [
+                {
+                  "organism": [
+                    "Saccharopolyspora erythraea NRRL 2338"
+                  ],
+                  "mol_type": [
+                    "genomic DNA"
+                  ],
+                  "strain": [
+                    "NRRL 2338"
+                  ],
+                  "type_material": [
+                    "type strain of Streptomyces erythraeus"
+                  ],
+                  "db_xref": [
+                    "taxon:405948"
+                  ],
+                  "focus": [
+                    ""
+                  ]
+                }
+              ],
+              "coordinates": [
+                4076035,
+                4077099,
+                -1
+              ],
+              "translation_matches": true,
+              "sequence_sha256": "f1eb41aa82d48aafa9b3d6df25ab5f90ccee9276c9b0fb7013dbb88f1b2185d7"
+            }
+          ]
+        }
+      ],
+      "organism": {
+        "scientificName": "Saccharopolyspora erythraea (strain ATCC 11635 / DSM 40517 / JCM 4748 / NBRC 13426 / NCIMB 8594 / NRRL 2338)",
+        "taxonId": 405948,
+        "lineage": [
+          "Bacteria",
+          "Bacillati",
+          "Actinomycetota",
+          "Actinomycetes",
+          "Pseudonocardiales",
+          "Pseudonocardiaceae",
+          "Saccharopolyspora"
+        ]
+      },
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "audit": {
+        "firstPublicDate": "2011-01-11",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "2007-04-17",
+        "entryVersion": 85,
+        "sequenceVersion": 1
+      },
+      "genes": [
+        {
+          "orderedLocusNames": [
+            {
+              "value": "SACE_3722"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000305",
+                  "source": "PubMed",
+                  "id": "18492804"
+                }
+              ],
+              "value": "Catalyzes the cyclization of 2-methylgeranyl diphosphate (2-MeGPP) to 2-methylisoborneol (2-MIB), which likely involves the intermediacy of 2-methyllinalyl diphosphate"
+            }
+          ],
+          "commentType": "FUNCTION"
+        }
+      ]
+    },
+    {
+      "accession": "A3KI17",
+      "length": 440,
+      "sequence_sha256": "d028e2d8835d3daf17494690fa4b737aead08328bf34a5b496f866baf133ebc2",
+      "proteins": [
+        {
+          "protein_id": "CAJ89344.1",
+          "sequence_matches": true,
+          "source": [
+            {
+              "organism": [
+                "Streptomyces ambofaciens ATCC 23877"
+              ],
+              "strain": [
+                "ATCC 23877"
+              ],
+              "type_material": [
+                "type strain of Streptomyces ambofaciens"
+              ],
+              "db_xref": [
+                "taxon:278992"
+              ]
+            }
+          ],
+          "cds": [
+            {
+              "locus_tag": [
+                "SAML0357"
+              ],
+              "coded_by": [
+                "AM238663.1:360632..361954"
+              ],
+              "inference": [
+                "protein motif:SUPERFAMILY:8576",
+                "similar to DNA sequence:INSDC:CAD55534.1"
+              ],
+              "transl_table": [
+                "11"
+              ],
+              "db_xref": [
+                "GOA:A3KI17",
+                "InterPro:IPR005630",
+                "InterPro:IPR008949",
+                "UniProtKB/TrEMBL:A3KI17"
+              ]
+            }
+          ],
+          "genomic_translations": [
+            {
+              "file": "/private/tmp/npmech-next/avi/MIB-Ambo-AM238663-region-20261009.gb",
+              "accession": "AM238663.1",
+              "source": [
+                {
+                  "organism": [
+                    "Streptomyces ambofaciens ATCC 23877"
+                  ],
+                  "mol_type": [
+                    "genomic DNA"
+                  ],
+                  "strain": [
+                    "ATCC 23877"
+                  ],
+                  "type_material": [
+                    "type strain of Streptomyces ambofaciens"
+                  ],
+                  "db_xref": [
+                    "taxon:278992"
+                  ]
+                }
+              ],
+              "coordinates": [
+                360632,
+                361954,
+                1
+              ],
+              "translation_matches": true,
+              "sequence_sha256": "d028e2d8835d3daf17494690fa4b737aead08328bf34a5b496f866baf133ebc2"
+            }
+          ]
+        },
+        {
+          "protein_id": "AKZ53458.1",
+          "sequence_matches": true,
+          "source": [
+            {
+              "organism": [
+                "Streptomyces ambofaciens ATCC 23877"
+              ],
+              "strain": [
+                "ATCC 23877"
+              ],
+              "isolation_source": [
+                "soil"
+              ],
+              "culture_collection": [
+                "ATCC:23877"
+              ],
+              "type_material": [
+                "type strain of Streptomyces ambofaciens"
+              ],
+              "db_xref": [
+                "taxon:278992"
+              ],
+              "geo_loc_name": [
+                "France: Picardie"
+              ],
+              "collection_date": [
+                "1954"
+              ]
+            }
+          ],
+          "cds": [
+            {
+              "locus_tag": [
+                "SAM23877_0409"
+              ],
+              "coded_by": [
+                "CP012382.1:360601..361923"
+              ],
+              "inference": [
+                "ab initio prediction:AMIGene:2.0"
+              ],
+              "transl_table": [
+                "11"
+              ]
+            }
+          ],
+          "genomic_translations": [
+            {
+              "file": "/private/tmp/npmech-next/avi/MIB-Ambo-CP012382-region-20261009.gb",
+              "accession": "CP012382.1",
+              "source": [
+                {
+                  "organism": [
+                    "Streptomyces ambofaciens ATCC 23877"
+                  ],
+                  "mol_type": [
+                    "genomic DNA"
+                  ],
+                  "strain": [
+                    "ATCC 23877"
+                  ],
+                  "isolation_source": [
+                    "soil"
+                  ],
+                  "culture_collection": [
+                    "ATCC:23877"
+                  ],
+                  "type_material": [
+                    "type strain of Streptomyces ambofaciens"
+                  ],
+                  "db_xref": [
+                    "taxon:278992"
+                  ],
+                  "geo_loc_name": [
+                    "France: Picardie"
+                  ],
+                  "collection_date": [
+                    "1954"
+                  ]
+                }
+              ],
+              "coordinates": [
+                360601,
+                361923,
+                1
+              ],
+              "translation_matches": true,
+              "sequence_sha256": "d028e2d8835d3daf17494690fa4b737aead08328bf34a5b496f866baf133ebc2"
+            }
+          ]
+        }
+      ],
+      "organism": {
+        "scientificName": "Streptomyces ambofaciens (strain ATCC 23877 / 3486 / DSM 40053 / JCM 4204 / NBRC 12836 / NRRL B-2516)",
+        "taxonId": 278992,
+        "lineage": [
+          "Bacteria",
+          "Bacillati",
+          "Actinomycetota",
+          "Actinomycetes",
+          "Kitasatosporales",
+          "Streptomycetaceae",
+          "Streptomyces"
+        ]
+      },
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "audit": {
+        "firstPublicDate": "2011-01-11",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "2007-04-03",
+        "entryVersion": 57,
+        "sequenceVersion": 1
+      },
+      "genes": [
+        {
+          "orfNames": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000312",
+                  "source": "EMBL",
+                  "id": "AKZ53458.1"
+                }
+              ],
+              "value": "SAM23877_0409"
+            },
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000312",
+                  "source": "EMBL",
+                  "id": "CAJ89344.1"
+                }
+              ],
+              "value": "SAML0357"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000305",
+                  "source": "PubMed",
+                  "id": "18492804"
+                }
+              ],
+              "value": "Catalyzes the cyclization of 2-methylgeranyl diphosphate (2-MeGPP) to 2-methylisoborneol (2-MIB), which likely involves the intermediacy of 2-methyllinalyl diphosphate"
+            }
+          ],
+          "commentType": "FUNCTION"
+        }
+      ]
+    },
+    {
+      "accession": "A3KI18",
+      "length": 291,
+      "sequence_sha256": "544c5a3b1f4dd707c489e8a1e48ddd252b234b57e04b18ff9105e2c9e05133a0",
+      "proteins": [
+        {
+          "protein_id": "CAJ89345.1",
+          "sequence_matches": true,
+          "source": [
+            {
+              "organism": [
+                "Streptomyces ambofaciens ATCC 23877"
+              ],
+              "strain": [
+                "ATCC 23877"
+              ],
+              "type_material": [
+                "type strain of Streptomyces ambofaciens"
+              ],
+              "db_xref": [
+                "taxon:278992"
+              ]
+            }
+          ],
+          "cds": [
+            {
+              "locus_tag": [
+                "SAML0358"
+              ],
+              "coded_by": [
+                "AM238663.1:361970..362845"
+              ],
+              "inference": [
+                "protein motif:SUPERFAMILY:53335",
+                "similar to DNA sequence:INSDC:CAC44557.1"
+              ],
+              "transl_table": [
+                "11"
+              ],
+              "db_xref": [
+                "GOA:A3KI18",
+                "InterPro:IPR003333",
+                "UniProtKB/TrEMBL:A3KI18"
+              ]
+            }
+          ],
+          "genomic_translations": [
+            {
+              "file": "/private/tmp/npmech-next/avi/MIB-Ambo-AM238663-region-20261009.gb",
+              "accession": "AM238663.1",
+              "source": [
+                {
+                  "organism": [
+                    "Streptomyces ambofaciens ATCC 23877"
+                  ],
+                  "mol_type": [
+                    "genomic DNA"
+                  ],
+                  "strain": [
+                    "ATCC 23877"
+                  ],
+                  "type_material": [
+                    "type strain of Streptomyces ambofaciens"
+                  ],
+                  "db_xref": [
+                    "taxon:278992"
+                  ]
+                }
+              ],
+              "coordinates": [
+                361970,
+                362845,
+                1
+              ],
+              "translation_matches": true,
+              "sequence_sha256": "544c5a3b1f4dd707c489e8a1e48ddd252b234b57e04b18ff9105e2c9e05133a0"
+            }
+          ]
+        },
+        {
+          "protein_id": "AKZ53459.1",
+          "sequence_matches": true,
+          "source": [
+            {
+              "organism": [
+                "Streptomyces ambofaciens ATCC 23877"
+              ],
+              "strain": [
+                "ATCC 23877"
+              ],
+              "isolation_source": [
+                "soil"
+              ],
+              "culture_collection": [
+                "ATCC:23877"
+              ],
+              "type_material": [
+                "type strain of Streptomyces ambofaciens"
+              ],
+              "db_xref": [
+                "taxon:278992"
+              ],
+              "geo_loc_name": [
+                "France: Picardie"
+              ],
+              "collection_date": [
+                "1954"
+              ]
+            }
+          ],
+          "cds": [
+            {
+              "locus_tag": [
+                "SAM23877_0410"
+              ],
+              "coded_by": [
+                "CP012382.1:361939..362814"
+              ],
+              "inference": [
+                "ab initio prediction:AMIGene:2.0"
+              ],
+              "transl_table": [
+                "11"
+              ]
+            }
+          ],
+          "genomic_translations": [
+            {
+              "file": "/private/tmp/npmech-next/avi/MIB-Ambo-CP012382-region-20261009.gb",
+              "accession": "CP012382.1",
+              "source": [
+                {
+                  "organism": [
+                    "Streptomyces ambofaciens ATCC 23877"
+                  ],
+                  "mol_type": [
+                    "genomic DNA"
+                  ],
+                  "strain": [
+                    "ATCC 23877"
+                  ],
+                  "isolation_source": [
+                    "soil"
+                  ],
+                  "culture_collection": [
+                    "ATCC:23877"
+                  ],
+                  "type_material": [
+                    "type strain of Streptomyces ambofaciens"
+                  ],
+                  "db_xref": [
+                    "taxon:278992"
+                  ],
+                  "geo_loc_name": [
+                    "France: Picardie"
+                  ],
+                  "collection_date": [
+                    "1954"
+                  ]
+                }
+              ],
+              "coordinates": [
+                361939,
+                362814,
+                1
+              ],
+              "translation_matches": true,
+              "sequence_sha256": "544c5a3b1f4dd707c489e8a1e48ddd252b234b57e04b18ff9105e2c9e05133a0"
+            }
+          ]
+        }
+      ],
+      "organism": {
+        "scientificName": "Streptomyces ambofaciens (strain ATCC 23877 / 3486 / DSM 40053 / JCM 4204 / NBRC 12836 / NRRL B-2516)",
+        "taxonId": 278992,
+        "lineage": [
+          "Bacteria",
+          "Bacillati",
+          "Actinomycetota",
+          "Actinomycetes",
+          "Kitasatosporales",
+          "Streptomycetaceae",
+          "Streptomyces"
+        ]
+      },
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "audit": {
+        "firstPublicDate": "2011-01-11",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "2007-04-03",
+        "entryVersion": 53,
+        "sequenceVersion": 1
+      },
+      "genes": [
+        {
+          "orfNames": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000312",
+                  "source": "EMBL",
+                  "id": "AKZ53459.1"
+                }
+              ],
+              "value": "SAM23877_0410"
+            },
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000312",
+                  "source": "EMBL",
+                  "id": "CAJ89345.1"
+                }
+              ],
+              "value": "SAML0358"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000305",
+                  "source": "PubMed",
+                  "id": "18492804"
+                }
+              ],
+              "value": "Catalyzes the SAM-dependent methylation of geranyl diphosphate (GPP) to yield (E)-2-methylgeranyl diphosphate (2-MeGPP)"
+            }
+          ],
+          "commentType": "FUNCTION"
+        }
+      ]
+    },
+    {
+      "accession": "Q9F1Y6",
+      "length": 440,
+      "sequence_sha256": "f9820638439fad0bd3e3e6cdd05a0cc2d19c2467227f01286446ae75d53a48c0",
+      "proteins": [
+        {
+          "protein_id": "CAD55534.1",
+          "sequence_matches": true,
+          "source": [
+            {
+              "organism": [
+                "Streptomyces coelicolor A3(2)"
+              ],
+              "strain": [
+                "A3(2)"
+              ],
+              "serovar": [
+                "A3(2)"
+              ],
+              "db_xref": [
+                "taxon:100226"
+              ]
+            }
+          ],
+          "cds": [
+            {
+              "gene": [
+                "SCO7700"
+              ],
+              "gene_synonym": [
+                "SC1A4.08",
+                "SCBAC12C8.01"
+              ],
+              "coded_by": [
+                "AL939132.1:171530..172852"
+              ],
+              "note": [
+                "SCBAC12C8.01, possible cyclase, len: >137aa: strongly similar to C-terminus of TR:Q9F1V8 (EMBL:AB040071) cyclase from Streptomyces griseus (437 aa) fasta scores; opt: 788, Z-score: 962.7, 82.482% identity (82.482% ungapped) in 137 aa overlap. Previously sequenced as TR:Q9F1Y6 (EMBL:AB035202) ORF2.; SC1A4.08, unknown (fragment), len: >367 aa. High content in alanine and proline amino acid residues"
+              ],
+              "transl_table": [
+                "11"
+              ],
+              "db_xref": [
+                "GOA:Q9F1Y6",
+                "InterPro:IPR005630",
+                "InterPro:IPR008949",
+                "PDB:3V1V",
+                "PDB:3V1X",
+                "PDB:4LA5",
+                "PDB:4LA6"
+              ]
+            }
+          ],
+          "genomic_translations": [
+            {
+              "file": "/private/tmp/npmech-next/avi/MIB-SCO-AL939132-region-20261009.gb",
+              "accession": "AL939132.1",
+              "source": [
+                {
+                  "organism": [
+                    "Streptomyces coelicolor A3(2)"
+                  ],
+                  "mol_type": [
+                    "genomic DNA"
+                  ],
+                  "strain": [
+                    "A3(2)"
+                  ],
+                  "serovar": [
+                    "A3(2)"
+                  ],
+                  "db_xref": [
+                    "taxon:100226"
+                  ]
+                }
+              ],
+              "coordinates": [
+                171530,
+                172852,
+                1
+              ],
+              "translation_matches": true,
+              "sequence_sha256": "f9820638439fad0bd3e3e6cdd05a0cc2d19c2467227f01286446ae75d53a48c0"
+            }
+          ]
+        },
+        {
+          "protein_id": "WP_011031839.1",
+          "sequence_matches": true,
+          "source": [
+            {
+              "organism": [
+                "Streptomyces"
+              ],
+              "db_xref": [
+                "taxon:1883"
+              ]
+            }
+          ],
+          "cds": [],
+          "genomic_translations": []
+        }
+      ],
+      "organism": {
+        "scientificName": "Streptomyces coelicolor (strain ATCC BAA-471 / A3(2) / M145)",
+        "taxonId": 100226,
+        "lineage": [
+          "Bacteria",
+          "Bacillati",
+          "Actinomycetota",
+          "Actinomycetes",
+          "Kitasatosporales",
+          "Streptomycetaceae",
+          "Streptomyces",
+          "Streptomyces albidoflavus group"
+        ]
+      },
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "audit": {
+        "firstPublicDate": "2003-08-15",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "2001-03-01",
+        "entryVersion": 113,
+        "sequenceVersion": 1
+      },
+      "genes": [
+        {
+          "orderedLocusNames": [
+            {
+              "value": "SCO7700"
+            }
+          ],
+          "orfNames": [
+            {
+              "value": "SC1A4.08"
+            },
+            {
+              "value": "SCBAC12C8.01"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "18563898"
+                }
+              ],
+              "value": "Catalyzes the cyclization of 2-methylgeranyl diphosphate (2-MeGPP) to 2-methylisoborneol (2-MIB), which likely involves the intermediacy of 2-methyllinalyl diphosphate. Is also able to catalyze the cyclization of geranyl diphosphate (GPP), albeit with much lower efficiency, leading to the formation of a complex mixture of cyclic monoterpenes, consisting of alpha-pinene (6%), beta-pinene (23%), limonene (32%), gamma-terpinene (29%), and delta-terpinene (10%)"
+            }
+          ],
+          "commentType": "FUNCTION"
+        }
+      ]
+    },
+    {
+      "accession": "K0K6P8",
+      "length": 362,
+      "sequence_sha256": "53a1193adfa61991d3d001ed9642b86b168463a1608455502c393de6c6232f55",
+      "proteins": [
+        {
+          "protein_id": "CCH33192.1",
+          "sequence_matches": true,
+          "source": [
+            {
+              "organism": [
+                "Saccharothrix espanaensis DSM 44229"
+              ],
+              "strain": [
+                "type strain: DSM 44229"
+              ],
+              "type_material": [
+                "type strain of Saccharothrix espanaensis"
+              ],
+              "db_xref": [
+                "taxon:1179773"
+              ]
+            }
+          ],
+          "cds": [
+            {
+              "locus_tag": [
+                "BN6_59350"
+              ],
+              "coded_by": [
+                "HE804045.1:6630735..6631823"
+              ],
+              "transl_table": [
+                "11"
+              ],
+              "db_xref": [
+                "EnsemblGenomes-Gn:BN6_59350",
+                "EnsemblGenomes-Tr:CCH33192",
+                "GOA:K0K6P8",
+                "InterPro:IPR005630",
+                "InterPro:IPR008949",
+                "UniProtKB/TrEMBL:K0K6P8"
+              ]
+            }
+          ],
+          "genomic_translations": [
+            {
+              "file": "/private/tmp/npmech-next/avi/MIB-SeMIBS-HE804045-region-20261009.gb",
+              "accession": "HE804045.1",
+              "source": [
+                {
+                  "organism": [
+                    "Saccharothrix espanaensis DSM 44229"
+                  ],
+                  "mol_type": [
+                    "genomic DNA"
+                  ],
+                  "strain": [
+                    "type strain: DSM 44229"
+                  ],
+                  "type_material": [
+                    "type strain of Saccharothrix espanaensis"
+                  ],
+                  "db_xref": [
+                    "taxon:1179773"
+                  ]
+                }
+              ],
+              "coordinates": [
+                6630735,
+                6631823,
+                1
+              ],
+              "translation_matches": true,
+              "sequence_sha256": "53a1193adfa61991d3d001ed9642b86b168463a1608455502c393de6c6232f55"
+            }
+          ]
+        },
+        {
+          "protein_id": "WP_015103303.1",
+          "sequence_matches": true,
+          "source": [
+            {
+              "organism": [
+                "Saccharothrix espanaensis"
+              ],
+              "db_xref": [
+                "taxon:103731"
+              ]
+            }
+          ],
+          "cds": [],
+          "genomic_translations": []
+        }
+      ],
+      "organism": {
+        "scientificName": "Saccharothrix espanaensis (strain ATCC 51144 / DSM 44229 / JCM 9112 / NBRC 15066 / NRRL 15764)",
+        "taxonId": 1179773,
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000313",
+            "source": "EMBL",
+            "id": "CCH33192.1"
+          },
+          {
+            "evidenceCode": "ECO:0000313",
+            "source": "Proteomes",
+            "id": "UP000006281"
+          }
+        ],
+        "lineage": [
+          "Bacteria",
+          "Bacillati",
+          "Actinomycetota",
+          "Actinomycetes",
+          "Pseudonocardiales",
+          "Pseudonocardiaceae",
+          "Saccharothrix"
+        ]
+      },
+      "entry_type": "UniProtKB unreviewed (TrEMBL)",
+      "audit": {
+        "firstPublicDate": "2012-11-28",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "2012-11-28",
+        "entryVersion": 55,
+        "sequenceVersion": 1
+      },
+      "genes": [
+        {
+          "orderedLocusNames": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000313",
+                  "source": "EMBL",
+                  "id": "CCH33192.1"
+                }
+              ],
+              "value": "BN6_59350"
+            }
+          ]
+        }
+      ],
+      "functions": []
+    },
+    {
+      "accession": "WP_019890277.1",
+      "length": 438,
+      "sequence_sha256": "cc24d86e5dfa81c5d93fc193852f43da2227f61ad9f72d7a644f0bd1dc30600f",
+      "proteins": [
+        {
+          "protein_id": "WP_019890277.1",
+          "sequence_matches": true,
+          "source": [
+            {
+              "organism": [
+                "Streptomyces purpureus"
+              ],
+              "db_xref": [
+                "taxon:1951"
+              ]
+            }
+          ],
+          "cds": [],
+          "genomic_translations": [
+            {
+              "file": "/private/tmp/npmech-next/avi/MIB-SpMIBS-KB913030-region-20261009.gb",
+              "accession": "NZ_KB913030.1",
+              "source": [
+                {
+                  "organism": [
+                    "Streptomyces purpureus KA281"
+                  ],
+                  "mol_type": [
+                    "genomic DNA"
+                  ],
+                  "submitter_seqid": [
+                    "StrpuDRAFT_scaffold1.1"
+                  ],
+                  "strain": [
+                    "KA281"
+                  ],
+                  "isolation_source": [
+                    "Soil with decomposing organic matter, Idaho"
+                  ],
+                  "culture_collection": [
+                    "ATCC:21405"
+                  ],
+                  "type_material": [
+                    "type strain of Kitasatoa kauaiensis"
+                  ],
+                  "db_xref": [
+                    "taxon:1054860"
+                  ]
+                }
+              ],
+              "coordinates": [
+                5956391,
+                5957707,
+                1
+              ],
+              "translation_matches": true,
+              "sequence_sha256": "cc24d86e5dfa81c5d93fc193852f43da2227f61ad9f72d7a644f0bd1dc30600f"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "accession": "Q9F1Y5",
+      "length": 292,
+      "sequence_sha256": "75fd08e1a005c55cbd677978b739ecb873e2011a56ea6ad8eb8321598e0fe0ee",
+      "proteins": [
+        {
+          "protein_id": "CAC44557.1",
+          "sequence_matches": true,
+          "source": [
+            {
+              "organism": [
+                "Streptomyces coelicolor A3(2)"
+              ],
+              "strain": [
+                "A3(2)"
+              ],
+              "serovar": [
+                "A3(2)"
+              ],
+              "db_xref": [
+                "taxon:100226"
+              ]
+            }
+          ],
+          "cds": [
+            {
+              "gene": [
+                "SCO7701"
+              ],
+              "gene_synonym": [
+                "SCBAC12C8.02"
+              ],
+              "coded_by": [
+                "AL939132.1:172868..173746"
+              ],
+              "note": [
+                "SCBAC12C8.02, possible methyltransferase, len: 396aa: similar to many eg. TR:Q9F1V7 (EMBL:AB040071) methyltransferase from Streptomyces griseus (316 aa) fasta scores; opt: 1550, Z-score: 1809.5, 82.246% identity (82.545% ungapped) in 276 aa overlap. Previously sequenced as TR:Q9F1Y5 (EMBL:AB035202) ORF4."
+              ],
+              "transl_table": [
+                "11"
+              ],
+              "db_xref": [
+                "GOA:Q9F1Y5",
+                "InterPro:IPR003333",
+                "InterPro:IPR029063",
+                "PDB:3VC1",
+                "PDB:3VC2"
+              ]
+            }
+          ],
+          "genomic_translations": [
+            {
+              "file": "/private/tmp/npmech-next/avi/MIB-SCO7701-AL939132-region-20261009.gb",
+              "accession": "AL939132.1",
+              "source": [
+                {
+                  "organism": [
+                    "Streptomyces coelicolor A3(2)"
+                  ],
+                  "mol_type": [
+                    "genomic DNA"
+                  ],
+                  "strain": [
+                    "A3(2)"
+                  ],
+                  "serovar": [
+                    "A3(2)"
+                  ],
+                  "db_xref": [
+                    "taxon:100226"
+                  ]
+                }
+              ],
+              "coordinates": [
+                172868,
+                173746,
+                1
+              ],
+              "translation_matches": true,
+              "sequence_sha256": "75fd08e1a005c55cbd677978b739ecb873e2011a56ea6ad8eb8321598e0fe0ee"
+            }
+          ]
+        },
+        {
+          "protein_id": "BAB20434.1",
+          "sequence_matches": true,
+          "source": [
+            {
+              "organism": [
+                "Streptomyces coelicolor"
+              ],
+              "strain": [
+                "1147"
+              ],
+              "db_xref": [
+                "taxon:1902"
+              ]
+            }
+          ],
+          "cds": [
+            {
+              "gene": [
+                "orf4"
+              ],
+              "coded_by": [
+                "AB035202.1:5872..6750"
+              ],
+              "note": [
+                "sterol-C-methyltransferase homologue"
+              ],
+              "transl_table": [
+                "11"
+              ]
+            }
+          ],
+          "genomic_translations": [
+            {
+              "file": "/private/tmp/npmech-next/avi/MIB-SCO7701-AB035202-region-20261009.gb",
+              "accession": "AB035202.1",
+              "source": [
+                {
+                  "organism": [
+                    "Streptomyces coelicolor"
+                  ],
+                  "mol_type": [
+                    "genomic DNA"
+                  ],
+                  "strain": [
+                    "1147"
+                  ],
+                  "db_xref": [
+                    "taxon:1902"
+                  ]
+                }
+              ],
+              "coordinates": [
+                5872,
+                6750,
+                1
+              ],
+              "translation_matches": true,
+              "sequence_sha256": "75fd08e1a005c55cbd677978b739ecb873e2011a56ea6ad8eb8321598e0fe0ee"
+            }
+          ]
+        },
+        {
+          "protein_id": "WP_011031840.1",
+          "sequence_matches": true,
+          "source": [
+            {
+              "organism": [
+                "Streptomyces"
+              ],
+              "db_xref": [
+                "taxon:1883"
+              ]
+            }
+          ],
+          "cds": [],
+          "genomic_translations": []
+        }
+      ],
+      "organism": {
+        "scientificName": "Streptomyces coelicolor (strain ATCC BAA-471 / A3(2) / M145)",
+        "taxonId": 100226,
+        "lineage": [
+          "Bacteria",
+          "Bacillati",
+          "Actinomycetota",
+          "Actinomycetes",
+          "Kitasatosporales",
+          "Streptomycetaceae",
+          "Streptomyces",
+          "Streptomyces albidoflavus group"
+        ]
+      },
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "audit": {
+        "firstPublicDate": "2011-01-11",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "2001-03-01",
+        "entryVersion": 125,
+        "sequenceVersion": 1
+      },
+      "genes": [
+        {
+          "orderedLocusNames": [
+            {
+              "value": "SCO7701"
+            }
+          ],
+          "orfNames": [
+            {
+              "value": "orf4"
+            },
+            {
+              "value": "SCBAC12C8.02"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "18563898"
+                }
+              ],
+              "value": "Catalyzes the SAM-dependent methylation of geranyl diphosphate (GPP) to yield (E)-2-methylgeranyl diphosphate (2-MeGPP)"
+            }
+          ],
+          "commentType": "FUNCTION"
+        }
+      ]
+    },
+    {
+      "accession": "Q9F1V8",
+      "length": 437,
+      "sequence_sha256": "b911259016bbb2d183190ee7a7fd886ee97f43fa6507d7c81cc7bbd9bc7b804d",
+      "proteins": [
+        {
+          "protein_id": "BAB20507.1",
+          "sequence_matches": true,
+          "source": [
+            {
+              "organism": [
+                "Streptomyces griseus"
+              ],
+              "strain": [
+                "13189"
+              ],
+              "db_xref": [
+                "taxon:1911"
+              ]
+            }
+          ],
+          "cds": [
+            {
+              "coded_by": [
+                "AB040071.1:5255..6568"
+              ],
+              "note": [
+                "putative"
+              ],
+              "transl_table": [
+                "11"
+              ]
+            }
+          ],
+          "genomic_translations": [
+            {
+              "file": "/private/tmp/npmech-next/avi/MIB-13189-AB040071-full-20261009.gb",
+              "accession": "AB040071.1",
+              "source": [
+                {
+                  "organism": [
+                    "Streptomyces griseus"
+                  ],
+                  "mol_type": [
+                    "genomic DNA"
+                  ],
+                  "strain": [
+                    "13189"
+                  ],
+                  "db_xref": [
+                    "taxon:1911"
+                  ]
+                }
+              ],
+              "coordinates": [
+                5255,
+                6568,
+                1
+              ],
+              "translation_matches": true,
+              "sequence_sha256": "b911259016bbb2d183190ee7a7fd886ee97f43fa6507d7c81cc7bbd9bc7b804d"
+            },
+            {
+              "file": "/private/tmp/npmech-next/avi/MIB-13189-AB040071-region-20261009.gb",
+              "accession": "AB040071.1",
+              "source": [
+                {
+                  "organism": [
+                    "Streptomyces griseus"
+                  ],
+                  "mol_type": [
+                    "genomic DNA"
+                  ],
+                  "strain": [
+                    "13189"
+                  ],
+                  "db_xref": [
+                    "taxon:1911"
+                  ]
+                }
+              ],
+              "coordinates": [
+                5255,
+                6568,
+                1
+              ],
+              "translation_matches": true,
+              "sequence_sha256": "b911259016bbb2d183190ee7a7fd886ee97f43fa6507d7c81cc7bbd9bc7b804d"
+            }
+          ]
+        },
+        {
+          "protein_id": "WP_030703894.1",
+          "sequence_matches": true,
+          "source": [
+            {
+              "organism": [
+                "Streptomyces griseus"
+              ],
+              "db_xref": [
+                "taxon:1911"
+              ]
+            }
+          ],
+          "cds": [],
+          "genomic_translations": []
+        }
+      ],
+      "organism": {
+        "scientificName": "Streptomyces griseus",
+        "taxonId": 1911,
+        "lineage": [
+          "Bacteria",
+          "Bacillati",
+          "Actinomycetota",
+          "Actinomycetes",
+          "Kitasatosporales",
+          "Streptomycetaceae",
+          "Streptomyces"
+        ]
+      },
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "audit": {
+        "firstPublicDate": "2003-08-15",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "2001-03-01",
+        "entryVersion": 67,
+        "sequenceVersion": 1
+      },
+      "genes": null,
+      "functions": [
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250"
+                }
+              ],
+              "value": "Catalyzes the cyclization of 2-methylgeranyl diphosphate (2-MeGPP) to 2-methylisoborneol (2-MIB), which likely involves the intermediacy of 2-methyllinalyl diphosphate"
+            }
+          ],
+          "commentType": "FUNCTION"
+        }
+      ]
+    },
+    {
+      "accession": "D3KYU2",
+      "length": 481,
+      "sequence_sha256": "4b95a23cd0b1419ed7c66247c0e1bd49f6b1afe7200bc8e4cf52df23d52fcc99",
+      "proteins": [
+        {
+          "protein_id": "BAI77523.1",
+          "sequence_matches": true,
+          "source": [
+            {
+              "organism": [
+                "Streptomyces lasalocidi"
+              ],
+              "strain": [
+                "ATCC 31180"
+              ],
+              "type_material": [
+                "type strain of Streptomyces lasalocidi"
+              ],
+              "db_xref": [
+                "taxon:324833"
+              ],
+              "plasmid": [
+                "pKSL"
+              ]
+            }
+          ],
+          "cds": [
+            {
+              "gene": [
+                "tpc"
+              ],
+              "coded_by": [
+                "AB547324.1:1729..3174"
+              ],
+              "transl_table": [
+                "11"
+              ]
+            }
+          ],
+          "genomic_translations": [
+            {
+              "file": "/private/tmp/npmech-next/avi/MIB-Lasali-AB547324-20261009.gb",
+              "accession": "AB547324.1",
+              "source": [
+                {
+                  "organism": [
+                    "Streptomyces lasalocidi"
+                  ],
+                  "mol_type": [
+                    "genomic DNA"
+                  ],
+                  "strain": [
+                    "ATCC 31180"
+                  ],
+                  "type_material": [
+                    "type strain of Streptomyces lasalocidi"
+                  ],
+                  "db_xref": [
+                    "taxon:324833"
+                  ],
+                  "plasmid": [
+                    "pKSL"
+                  ]
+                }
+              ],
+              "coordinates": [
+                1729,
+                3174,
+                1
+              ],
+              "translation_matches": true,
+              "sequence_sha256": "4b95a23cd0b1419ed7c66247c0e1bd49f6b1afe7200bc8e4cf52df23d52fcc99"
+            }
+          ]
+        }
+      ],
+      "organism": {
+        "scientificName": "Streptomyces lasalocidi",
+        "commonName": "Streptomyces lasaliensis",
+        "taxonId": 324833,
+        "lineage": [
+          "Bacteria",
+          "Bacillati",
+          "Actinomycetota",
+          "Actinomycetes",
+          "Kitasatosporales",
+          "Streptomycetaceae",
+          "Streptomyces"
+        ]
+      },
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "audit": {
+        "firstPublicDate": "2011-01-11",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "2010-04-20",
+        "entryVersion": 40,
+        "sequenceVersion": 1
+      },
+      "genes": [
+        {
+          "geneName": {
+            "value": "tpc"
+          }
+        }
+      ],
+      "functions": [
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "18492804"
+                }
+              ],
+              "value": "Catalyzes the cyclization of 2-methylgeranyl diphosphate (2-MeGPP) to 2-methylisoborneol (2-MIB), which likely involves the intermediacy of 2-methyllinalyl diphosphate"
+            }
+          ],
+          "commentType": "FUNCTION"
+        }
+      ]
+    },
+    {
+      "accession": "D3KYU3",
+      "length": 300,
+      "sequence_sha256": "84b99757861624904781e61f86ed7ff684ffabb5be7dfd3d9901ca10de5b2bec",
+      "proteins": [
+        {
+          "protein_id": "BAI77524.1",
+          "sequence_matches": true,
+          "source": [
+            {
+              "organism": [
+                "Streptomyces lasalocidi"
+              ],
+              "strain": [
+                "ATCC 31180"
+              ],
+              "type_material": [
+                "type strain of Streptomyces lasalocidi"
+              ],
+              "db_xref": [
+                "taxon:324833"
+              ],
+              "plasmid": [
+                "pKSL"
+              ]
+            }
+          ],
+          "cds": [
+            {
+              "gene": [
+                "gdpmt"
+              ],
+              "coded_by": [
+                "AB547324.1:3219..4121"
+              ],
+              "transl_table": [
+                "11"
+              ]
+            }
+          ],
+          "genomic_translations": [
+            {
+              "file": "/private/tmp/npmech-next/avi/MIB-Lasali-AB547324-20261009.gb",
+              "accession": "AB547324.1",
+              "source": [
+                {
+                  "organism": [
+                    "Streptomyces lasalocidi"
+                  ],
+                  "mol_type": [
+                    "genomic DNA"
+                  ],
+                  "strain": [
+                    "ATCC 31180"
+                  ],
+                  "type_material": [
+                    "type strain of Streptomyces lasalocidi"
+                  ],
+                  "db_xref": [
+                    "taxon:324833"
+                  ],
+                  "plasmid": [
+                    "pKSL"
+                  ]
+                }
+              ],
+              "coordinates": [
+                3219,
+                4121,
+                1
+              ],
+              "translation_matches": true,
+              "sequence_sha256": "84b99757861624904781e61f86ed7ff684ffabb5be7dfd3d9901ca10de5b2bec"
+            }
+          ]
+        }
+      ],
+      "organism": {
+        "scientificName": "Streptomyces lasalocidi",
+        "commonName": "Streptomyces lasaliensis",
+        "taxonId": 324833,
+        "lineage": [
+          "Bacteria",
+          "Bacillati",
+          "Actinomycetota",
+          "Actinomycetes",
+          "Kitasatosporales",
+          "Streptomycetaceae",
+          "Streptomyces"
+        ]
+      },
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "audit": {
+        "firstPublicDate": "2011-01-11",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "2010-04-20",
+        "entryVersion": 47,
+        "sequenceVersion": 1
+      },
+      "genes": [
+        {
+          "geneName": {
+            "value": "gdpmt"
+          }
+        }
+      ],
+      "functions": [
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "18492804"
+                }
+              ],
+              "value": "Catalyzes the SAM-dependent methylation of geranyl diphosphate (GPP) to yield (E)-2-methylgeranyl diphosphate (2-MeGPP)"
+            }
+          ],
+          "commentType": "FUNCTION"
+        }
+      ]
+    }
+  ],
+  "sp_mismatch": [
+    [
+      107,
+      "T",
+      "A"
+    ],
+    [
+      116,
+      "G",
+      "R"
+    ]
+  ],
+  "sgr_mismatch": [
+    [
+      66,
+      "P",
+      "S"
+    ],
+    [
+      67,
+      "T",
+      "A"
+    ],
+    [
+      77,
+      "W",
+      "R"
+    ]
+  ],
+  "pdb4f84": {
+    "tag_length": 20,
+    "canonical_length": 300,
+    "exact_match": true,
+    "alignment": [
+      {
+        "provenance_source": "SIFTS",
+        "reference_database_accession": "D3KYU3",
+        "reference_database_name": "UniProt",
+        "aligned_regions": [
+          {
+            "entity_beg_seq_id": 21,
+            "length": 300,
+            "ref_beg_seq_id": 1
+          }
+        ]
+      }
+    ],
+    "source": [
+      {
+        "pdbx_alt_source_flag": "sample",
+        "pdbx_gene_src_gene": "gdpmt",
+        "pdbx_gene_src_ncbi_taxonomy_id": "324833",
+        "pdbx_gene_src_scientific_name": "Streptomyces lasaliensis",
+        "pdbx_host_org_ncbi_taxonomy_id": "562",
+        "pdbx_host_org_scientific_name": "Escherichia coli",
+        "pdbx_host_org_strain": "BL21(DE3)",
+        "pdbx_host_org_vector_type": "PLASMID",
+        "pdbx_src_id": 1,
+        "plasmid_name": "pET26b"
+      }
+    ]
+  },
+  "limitations": "Cached database identity and annotated function evidence only; no primary paper or exact assay insert verified."
+}

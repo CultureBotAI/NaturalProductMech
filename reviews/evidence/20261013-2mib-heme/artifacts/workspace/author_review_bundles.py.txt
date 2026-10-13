@@ -1,0 +1,295 @@
+import csv
+import hashlib
+import json
+import shlex
+from collections import Counter
+from datetime import datetime, timezone
+from pathlib import Path
+
+import yaml
+
+ROOT = Path(__file__).parent
+REPO = Path.cwd()
+PROJECT = 'CultureBotAI/NaturalProductMech'
+CAPTURE = json.loads((ROOT / 'capture.json').read_text())
+LOCAL = json.loads((ROOT / 'local-source-audit.json').read_text())
+SEQ = json.loads((ROOT / 'cached-sequence-audit.json').read_text())
+CHEM = json.loads((ROOT / 'aux-chemistry.json').read_text())
+
+
+def now():
+    return datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z')
+
+
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def owner(path, role):
+    return dict(repository=PROJECT, path=path, role=role)
+
+
+def evidence(eid, kind, reference, summary, support='context_only', accessed=None, **kwargs):
+    return dict(evidence_id=eid, kind=kind, reference=reference, accessed_at=accessed or now(),
+                support=support, summary=summary, **kwargs)
+
+
+def assessment(tid, aid, area, topic, outcome, summary, eids, **kwargs):
+    return dict(assessment_id=aid, area=area, topic=topic, outcome=outcome, summary=summary,
+                target_ids=[tid], evidence_ids=eids, **kwargs)
+
+
+def check(tid, cid, status, summary, required=True, **kwargs):
+    return dict(check_id=cid, name=cid, status=status, required=required, summary=summary,
+                target_ids=[tid], **kwargs)
+
+
+def fresh_check(tid, name):
+    r = json.loads((ROOT / (name + '-fresh.receipt.json')).read_text())
+    summary = r['log'].strip()
+    if name == 'labels':
+        summary = r['log'][-2400:].strip()
+    if name == 'queue':
+        with (ROOT / 'review-queue.tsv').open() as stream:
+            counts = Counter(row['queue'] for row in csv.DictReader(stream, delimiter='\t'))
+        summary = 'Native curation queue regenerated without changing corpus status: ' + json.dumps(dict(counts)) + '. This queue is not scientific review coverage.'
+    return check(tid, name, 'passed' if r['exit_code'] == 0 else 'failed',
+                 summary,
+                 command=shlex.join(r['command']), exit_code=r['exit_code'],
+                 scope_note='Actual fresh run from ' + r['started_at'] + ' to ' + r['finished_at'] +
+                 '; output SHA-256 ' + r['log_sha256'] + '. Results retained here, not dependent on the temporary log. ' +
+                 ('Reporting mode is non-blocking; exit zero does not mean all labels match. Unsupported adapters remain skipped.' if name == 'labels' else 'Deterministic check, not scientific sign-off.'))
+
+
+def start_review(index):
+    capture = CAPTURE['targets'][index]
+    row = LOCAL['rows'][index]
+    path = REPO / row['path']
+    slug = path.stem
+    inspection = json.loads((ROOT / (slug + '-inspect.log')).read_text())
+    for item in inspection['source']['inputs']:
+        assert sha(REPO / item['path']) == item['sha256'], item['path']
+    doc = yaml.safe_load(path.read_text())
+    tid = row['identifier']
+    finished = now()
+    review_id = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ') + '-' + slug
+    r = dict(schema_version='1.0.0', review_id=review_id, kind='record', repository=PROJECT,
+             title=doc['label'] + ': identity and claim-level scientific review (' + doc['chemical_structure']['structure_source_id'] + ')',
+             started_at=capture['started_at'], finished_at=finished,
+             reviewer=dict(identity='Codex', kind='agent', independence='self_review',
+                           independence_basis='Same assistant/thread previously curated this repository. No independent reviewer is claimed; owners and components were not changed.'),
+             skill='.claude/skills/review-yaml-record/SKILL.md', completion='partial', scientific_review=True,
+             verdict='blocked', summary='', source=inspection['source'], targets=inspection['targets'],
+             scope=dict(description='One complete owner and every referenced graph component. Part of the full 3115-owner, 242-component campaign; this report is not a sampled corpus verdict.',
+                        selection='Exact path and minted identifier from the saved ignored-inclusive campaign frontier, continuing in its selected order.',
+                        coverage='full', population_size=1, reviewed_target_ids=[tid]),
+             checks=[], evidence=[], assessments=[], findings=[], actions=[], limitations=[], notes=[])
+    for kind in ['inspect', 'strict']:
+        receipt = json.loads((ROOT / (slug + '-' + kind + '.receipt.json')).read_text())
+        content = (ROOT / (slug + '-' + kind + '.log')).read_text()
+        r['checks'].append(check(tid, kind, 'passed',
+             'Canonical target/base/input capture succeeded before assessment.' if kind == 'inspect' else content.strip(),
+             command=shlex.join(receipt['command']), exit_code=receipt['exit_code'],
+             scope_note='Run ' + receipt['started_at'] + ' to ' + receipt['finished_at'] + '; output SHA-256 ' + receipt['sha256']))
+    for kind in ['corpus', 'reproduction', 'provenance', 'labels', 'queue']:
+        r['checks'].append(fresh_check(tid, kind))
+    r['checks'].extend([
+        check(tid, 'full-qc-baseline', 'skipped', 'Full QC was not rerun for these read-only observations. Historical full QC at e66f934111777c4ebfe69475d0520c0cfa074785 passed 554 tests with 3 skips. All 3115 owners, 242 components and captured baseline source inputs were rehashed unchanged; fresh corpus, reproduction, provenance and per-owner strict checks are recorded separately.', required=False,
+              evidence_ids=['historical-qc']),
+        check(tid, 'pinned-chemistry', 'unavailable', 'The repository environment has no rdkit module. No new pinned RDKit 2026.3.5 SMILES/InChI/key calculation was performed. A successful older-toolkit auxiliary calculation is recorded separately, not substituted for the pinned native check.', command=".venv/bin/python -c 'import rdkit; print(rdkit.__version__)'", exit_code=1),
+        check(tid, 'current-sources', 'unavailable', 'Current MIBiG/PubChem and required primary-source checks could not be completed; per-source failures and retained access stops are recorded in evidence and limitations.', evidence_ids=['access-limits']),
+        check(tid, 'imodulondb', 'not_applicable', 'No transcriptomic dataset, expression module or regulator claim is asserted here. Protein identity is checked with cached structured UniProt/GenBank where present; absence of an iModulonDB check is not negative biological evidence.', required=False),
+    ])
+    chemistry = next(c for c in CHEM['rows'] if c['identifier'] == tid)
+    r['evidence'].append(evidence('aux-chemistry', 'validation', 'RDKit 2024.03.5 core molecule/InChI API',
+        'Auxiliary reparse of this exact owner SMILES with MolFromSmiles, MolToInchi, InchiToInchiKey, iron atom count and FindMolChiralCenters(includeUnassigned=True): ' + json.dumps(chemistry) + '. ' + CHEM['limitation'], 'partial', accessed=CHEM['accessed_at']))
+    r['checks'].append(check(tid, 'aux-chemistry', 'passed',
+        'Older RDKit core operations parsed this SMILES and reproduced its exact Standard InChI and key. Missing NumPy import diagnostics were emitted; successful core operations alone are reported. Does not satisfy the unavailable pinned 2026.3.5 check.', required=False,
+        command='env PYENV_VERSION=3.12.11 PYTHONPATH=/Users/marcin/.cache/uv/archive-v0/emAjwJ0D1JTZTu-QXHtug python3.12 /private/tmp/npmech-record-reviews-next-PKCU4Z/aux_chemistry.py', exit_code=0, evidence_ids=['aux-chemistry']))
+    r['assessments'].append(assessment(tid, 'serialization', 'consistency', 'Auxiliary chemical serialization check', 'supported',
+        'RDKit 2024.03.5 reproduces the saved InChI and InChIKey. Iron atom count is ' + str(chemistry['iron_atoms']) + '; tetrahedral centres: ' + json.dumps(chemistry['chiral_centers']) + '. This proves only limited internal serialization consistency, not correct biological identity or pinned-toolkit equivalence.', ['aux-chemistry', 'owner']))
+    r['evidence'].extend([
+        evidence('owner', 'record_content', row['path'], 'Complete YAML owner read, including source concepts, all evidence objects, optional fields and full curation history; SHA-256 ' + sha(path) + '. ' + str(len(capture['graph_components'])) + ' referenced graph components also read in full.', 'supports', accessed=capture['started_at'], snapshot_sha256=sha(path)),
+        evidence('inventory', 'database', 'data/raw/mibig_compounds.tsv',
+                 'Exact compound rows inspected from the committed inventory: ' + json.dumps(row['source_rows'], ensure_ascii=True) + '. This proves the seeded database assertion, not current live status or primary experimental support.', 'partial', accessed=LOCAL['accessed_at'], snapshot_sha256=sha(REPO / 'data/raw/mibig_compounds.tsv')),
+        evidence('taxonomy', 'authority', 'data/raw/corpus_taxa.obo',
+                 'Parsed exact taxon terms and synonyms with pronto 2.7.3; compared taxonomy-group rows: ' + json.dumps(row['taxonomy'], ensure_ascii=True) + '. Pinned snapshot, not a fresh NCBI taxonomy release.', 'partial', accessed=LOCAL['accessed_at'], snapshot_sha256=sha(REPO / 'data/raw/corpus_taxa.obo')),
+        evidence('classification', 'database', 'data/raw/npclassifier.tsv',
+                 'Exact-key row: ' + json.dumps(row['classifier'], ensure_ascii=True) + '. Computed filing provenance only; BGC class and origin are separate source assertions.', 'supports', accessed=LOCAL['accessed_at'], snapshot_sha256=sha(REPO / 'data/raw/npclassifier.tsv')),
+        evidence('chebi-local', 'authority', 'data/raw/chebi_structures.tsv',
+                 'Whole committed inventory exact-key search: ' + json.dumps(row['chebi_exact']) + '; connectivity-only candidates: ' + json.dumps(row['chebi_connectivity'], ensure_ascii=True) + '. No exact default-structure match in this inventory. A connectivity match is not exact stereochemical/protonation identity.', 'partial', accessed=LOCAL['accessed_at'], snapshot_sha256=sha(REPO / 'data/raw/chebi_structures.tsv'),
+                 search_scope='All rows parsed with csv.DictReader, independent of ignore rules; exact and first-block InChIKey comparisons bounded to this committed ChEBI inventory, not all current ChEBI.'),
+        evidence('ownership', 'record_content', 'docs/CURATION.md',
+                 'Read maintained-input boundaries. REPLACE_WITH_CHEBI is a narrow pinned-row structure correction, rejects occupied destinations and does not merge records. Locus overrides alter method grading, not chemistry or organism identity. The reserved decisions.tsv has no consumer. Applicable rows in both implemented correction tables: ' + json.dumps(row['applicable_corrections']) + '.', 'supports', snapshot_sha256=sha(REPO / 'docs/CURATION.md'),
+                 search_scope='All rows in both implemented curation tables parsed with csv, including ignored files; bounded absence of applicable corrections, not absence of evidence elsewhere.'),
+        evidence('historical-qc', 'validation', 'reviews/evidence/20261013-first-two-records/artifacts/qc.log.txt',
+                 'Historical baseline only: complete QC succeeded before the prior reports were published. The current capture and subsequent local-source audit revalidated every campaign owner/component hash and captured baseline input. No new full-QC run is claimed.', 'context_only', snapshot_sha256=sha(REPO / 'reviews/evidence/20261013-first-two-records/artifacts/qc.log.txt')),
+    ])
+    r['assessments'].extend([
+        assessment(tid, 'filing', 'consistency', 'Computed filing, asserted BGC class, biological origin and taxonomy axes', 'supported',
+                   'Filing and model version match the exact-key NPClassifier row. The BGC class is retained separately. NATURAL_PRODUCT is imported biological-origin context, not a claim that a recombinant assay used a native production system. Producer taxon groups do not substitute for exact taxon/strain identifiers.', ['owner', 'classification', 'inventory', 'taxonomy']),
+        assessment(tid, 'generated-boundary', 'ownership', 'Maintained correction ownership', 'supported',
+                   'Seed-owned identity, taxonomy and source assertions must be fixed upstream or through an implemented tested correction path; generated owner/page patches would not be durable. Curated pathway/component changes require guarded writers and history. No changes were made.', ['ownership']),
+        assessment(tid, 'audit', 'provenance', 'Native status and complete audit trail', 'supported',
+                   'Status remains SEEDED. Existing history describes seeding' + (' and later qualified protein/graph curation, including component migration' if index == 0 else '') + '. This review neither appends history nor promotes scientific status. Validation and reproduction do not establish biological truth.', ['owner', 'historical-qc']),
+    ])
+    missing = [k for k in ['bioactivities', 'bioactivity_summary', 'molecular_targets', 'related_records', 'clinical_status', 'datasets'] if not doc.get(k)]
+    r['assessments'].append(assessment(tid, 'optional-claims', 'completeness', 'Optional activity, targets, clinical, datasets and cross-corpus claims', 'not_applicable',
+        'Full owner/resolved view has no assertions in: ' + ', '.join(missing) + '. Their absence is not a required-field defect; no extract-level result, assay spectrum, clinical status or sibling identity is inferred.', ['owner']))
+    r['limitations'].extend([
+        'Partial scientific assessment, not a scientific pass. Required source and exact-chemistry checks remain unavailable; no native status promotion.',
+        'The full campaign remains 3115 owner records plus 242 referenced graph components. This report covers one owner, not the unassessed remainder.',
+        'Cached inventories and sequence records establish only their pinned assertions. Live currentness and experimental support are not inferred from validation or database quality/review labels.',
+        'Review-only scope: no corpus mutation, history event, generated page, GitHub issue, PR or publication was performed.',
+    ])
+    r['notes'].append('Guidance conflict resolved in favor of CLAUDE.md and the active profile: the checklist mentions decisions.tsv, but that reserved file is not consumed. Do not use it as an effective correction path.')
+    return r, doc, row, capture
+
+
+def heme(index):
+    r, doc, row, capture = start_review(index)
+    tid = row['identifier']
+    metal_free = index == 1
+    pmid = '17906152' if metal_free else '16914272'
+    bgc = 'BGC0000905' if metal_free else 'BGC0000906'
+    r['evidence'].extend([
+        evidence('heme-authority', 'authority', 'https://www.ebi.ac.uk/chebi/CHEBI:30413',
+                 'ChEBI defines heme by an iron-chelating tetrapyrrole and places it under iron coordination entities. This is class-level identity evidence only, not an exact replacement structure or organism claim.', 'refutes' if metal_free else 'partial', accessed='2026-10-13T05:29:08Z', locator='Definition and outgoing ontology relations'),
+        evidence('ferroheme-d1-authority', 'authority', 'https://www.ebi.ac.uk/chebi/CHEBI:60549',
+                 'Inspected ferroheme d1(4-) entry: C34H26FeN4O10, charge -4, InChIKey YTCKFKAUGWIMPJ-FSQDTXDGSA-H; explicit stereochemistry and conjugate-base relation to CHEBI:61147. It is not an exact xref for either reviewed owner. Timestamp records reinspection of the retained web result, not a second retrieval.', 'partial', accessed='2026-10-13T05:40:23Z', locator='Definition, formula, SMILES, InChI, InChIKey and conjugate-acid/base relation'),
+        evidence('access-limits', 'search', 'https://pubmed.ncbi.nlm.nih.gov/' + pmid + '/',
+                 'Search returned bibliographic leads, but direct source opening returned a browser/reCAPTCHA challenge on 2026-10-13. No primary source text was accepted. MIBiG ' + bgc + ' and PubChem PUG for CIDs 6438545/53356663 returned tool access errors. CHEBI:61147 also returned a tool access error; local pinned inventory and independently accessible CHEBI:60549 are distinguished. No stopped paper was retried or fetched through an alternate route. Timestamp records result reinspection.', 'unknown', accessed='2026-10-13T05:40:23Z',
+                 search_scope='Exact PMID search and one PubMed open; exact MIBiG entry open; one PubChem property request for the two cited CIDs; exact ChEBI entries. Search snippets were leads, not proof of production or a negative claim about the paper.'),
+    ])
+    r['assessments'].extend([
+        assessment(tid, 'identity', 'identity', 'Chemical entity, label and metal state', 'concern' if metal_free else 'unknown',
+                   ('The SMILES has no Fe atom and the InChI formula layer is C34H32N4O10 with /p-2. It cannot denote the iron chelate named heme D1. This is a constitutional conflict, independent of toolkit recalculation. The exact intended corrected structure is not resolved.' if metal_free else
+                    'The representation includes Fe(II) and the ferroheme-d1 connectivity family, but uses disconnected ion/proton encoding and unspecified ring stereochemistry. It is not the iron-free sibling. Exact stereochemistry, charge/protonation and source-supported equivalence remain unresolved; different InChIKeys alone are not proof of different organometallic identity.'),
+                   ['owner', 'inventory', 'heme-authority', 'ferroheme-d1-authority', 'chebi-local']),
+        assessment(tid, 'stereo', 'representation', 'SMILES/InChI/InChIKey and stereochemical resolution', 'unknown',
+                   ('Two ring stereocentres and alkene geometry are encoded, consistent with the source stereo_complete flag, but they do not repair the absent metal. No independent pinned-toolkit recomputation was available.' if metal_free else
+                    'stereo_complete=false accurately warns that ring stereochemistry is absent. ChEBI connectivity candidates encode defined ring centres and differ in protonation, so neither can be silently substituted. Pinned-toolkit equivalence was not recomputed.'), ['owner', 'chebi-local']),
+        assessment(tid, 'equivalence', 'grounding', 'Minted identity, PubChem xrefs and similarly named owners', 'unknown',
+                   'No exact key exists in the committed eligible ChEBI inventory. PubChem ' + ('6438545 and 53356663' if metal_free else '6438545') + ' equivalence could not be checked. The other heme d1 owner shares CID6438545 but differs in metal and stereochemical encoding; this is a reason to audit the xref, not permission to merge or a verified PubChem contradiction.', ['owner', 'chebi-local', 'access-limits']),
+        assessment(tid, 'producer-bgc', 'evidence', 'Exact producer, genome accession and BGC link evidence', 'unknown',
+                   bgc + ' preserves the committed version, taxon and genome ' + row['source_rows'][0]['genome_accession'] + '. Empty locus method/coordinates are reported without upgrading SOURCE_ASSERTION or CLUSTER_UNSTATED. Entry-level PMID:' + pmid + ' is marked DATABASE_ASSERTION, not a newly read experiment. Current entry status, genome record and direct biosynthetic support remain unverified.', ['inventory', 'owner', 'access-limits']),
+        assessment(tid, 'taxon', 'nomenclature', 'Producer taxon and name', 'supported',
+                   ('NCBITaxon:28064 uses the source name Heliobacillus mobilis; the pinned taxonomy lists Heliobacterium mobile and explicitly retains Heliobacillus mobilis as a synonym. This is not a wrong-taxon finding.' if metal_free else
+                    'NCBITaxon:35700 and Heliophilum fasciatum agree in the pinned taxonomy. No strain is specified, so no narrower strain assertion is inferred.'), ['taxonomy', 'inventory']),
+        assessment(tid, 'absent-mechanism', 'completeness', 'Occurrences, pathway, graphs and discussions', 'not_applicable',
+                   'Complete owner and resolved view contain no occurrences, biosynthetic steps, causal graphs or graph references. No missing graph is inferred: a complete mechanism is a curation goal, not a review prerequisite. The iron-free identity concern is separately recorded where applicable.', ['owner']),
+    ])
+    if metal_free:
+        r['verdict'] = 'needs_curation'
+        r['summary'] = 'Confirmed blocker: the heme D1-labelled structure is iron-free. Full owner assessed, but current source, primary biosynthesis, xref and pinned chemistry checks remain incomplete. One blocker, no corpus edits.'
+        owners = [owner('data/raw/mibig_compounds.tsv', 'Raw BGC0000905 compound 1 assertion'), owner('scripts/extract_mibig.py', 'Structure extraction'), owner('scripts/seed_from_sources.py', 'Generated owner and source-concept harmonization'), owner('curation/mibig_structure_corrections.tsv', 'Only usable if an exact eligible, unoccupied ChEBI target is demonstrated')]
+        r['findings'].append(dict(finding_id='F1', issue_key='bgc0000905-heme-d1-missing-iron', category='identity', severity='blocker', status='open', certainty='confirmed',
+            title='Heme D1 label is attached to an iron-free tetrapyrrole',
+            description='Both maintained MIBiG inventory and generated owner omit Fe entirely: SMILES contains only C/N/O/H and the Standard InChI formula has no Fe component. A heme is an iron chelate. This is not merely a metal-coordinate bond representation difference, and validation/reproduction do not detect the semantic conflict. The observation does not establish the correct PubChem CID, exact ferroheme form, replacement label or producer evidence.',
+            target_ids=[tid], field_paths=['label', 'chemical_structure', 'source_concepts[0]'], evidence_ids=['owner', 'inventory', 'heme-authority', 'ferroheme-d1-authority'],
+            rule_id='docs/HARMONIZATION.md: one individual structure; review-checklist: Identity/Structure', native_severity='blocker',
+            normalization_reason='Wrong constitution makes the record denote a different chemical entity from its label.', owner_paths=owners))
+        r['actions'].append(dict(action_id='resolve-heme-identity', description='Resolve the intended biological product and exact metal/stereo/protonation state from inspectable primary or authoritative compound evidence. Correct the maintained source transformation, or use the narrow ChEBI correction only after proving eligibility and an unoccupied target. Do not just insert Fe into SMILES, rename the generated owner, or merge with BGC0000906 by shared label/CID.', finding_ids=['F1'], target_ids=[tid], owner_paths=owners,
+            acceptance_checks=['Exact compound evidence supports label, iron state, stereochemistry, protonation and every retained xref.', 'Pinned RDKit chemistry is mutually consistent; correction row digests and occupied-destination checks pass.', 'Re-audit producer/BGC claims rather than transferring them by name. Canary and guarded migration if needed; verify-reproduction, verify-corpus, strict validation, provenance, generated-page and QC gates pass.'], generator='scripts/seed_from_sources.py'))
+    else:
+        r['summary'] = 'Partial assessment of the iron-containing heme d1 owner. Cached taxon, source grading and computed filing are consistent; exact chemical/xref equivalence and primary producer/BGC support remain unverified. No confirmed defect in this scope; blocked verdict is not a pass.'
+    r['actions'].append(dict(action_id='complete-source-review', description='Complete this exact owner review when authorized inspectable source material is available; preserve access stops and do not substitute search snippets or the similarly named sibling.', finding_ids=[], target_ids=[tid], ownership_note='Evidence collection only; any subsequent corpus curation requires separate authorization.', acceptance_checks=['Inspect the cited PMID and the exact versioned MIBiG/genome assertions.', 'Verify each PubChem xref at metal, stereochemical and protonation resolution.', 'Run the pinned chemical consistency calculation and save a successor review with finding lineage where relevant.']))
+    r['limitations'].append('PMID:' + pmid + ' browser challenge; exact MIBiG entry and cited PubChem structures unavailable. GenBank accession currentness was not independently verified. No conclusion about absence of experiments is drawn from access failure.')
+    return r
+
+
+def mib():
+    r, doc, row, capture = start_review(0)
+    tid = row['identifier']
+    r['verdict'] = 'needs_curation'
+    r['summary'] = 'Complete owner and all seven components assessed. Cached structured sources support the 13 canonical protein identities and bounded database-role qualifiers. One confirmed major species/strain identifier mismatch in an occurrence. Primary occurrence/assay checks, live currentness, PubChem equivalence and pinned chemistry remain incomplete.'
+    r['evidence'].extend([
+        evidence('chebi-live', 'authority', 'https://www.ebi.ac.uk/chebi/CHEBI:61987',
+                 'Inspected 2-methylisoborneol entry: C11H20O, key LFYXNXGVLGKVCJ-FBIMIBRVSA-N, explicitly (1R,2R,4R). Its connectivity agrees with this owner but its stereochemical specificity does not. It is not an exact grounding for the unspecified-stereo key.', 'partial', accessed='2026-10-13T05:23:27Z'),
+        evidence('lotus', 'database', 'data/raw/lotus_occurrences.tsv',
+                 'Parsed all rows and selected the 13 exact-key structure-organism-reference triples: ' + json.dumps(row['lotus']) + '. These are database assertions, not independently confirmed occurrence experiments.', 'partial', accessed=LOCAL['accessed_at'], snapshot_sha256=sha(REPO / 'data/raw/lotus_occurrences.tsv')),
+        evidence('taxonomy-search', 'search', 'conf/id_label_targets.yaml',
+                 'Ignored-inclusive search found the exact taxon in corpus_taxa.obo and the historical label-drift warning for occurrences[7], not a documented scope exception in the searched configuration/curation/code/research/review trees. Cached term 426436 is Phormidium tenue BDU 40061 with no synonyms.', 'supports',
+                 search_scope='rg -n --hidden --no-ignore -F -e 426436 -e "BDU 40061" -e "Phormidium tenue" conf curation scripts src research reviews data/raw/taxon_merged.tsv data/raw/corpus_taxa.obo; ignored files included; scope bounded to named roots.'),
+        evidence('access-limits', 'search', 'DOI:10.1002/chem.202300775',
+                 'Original publisher main-text URL returned a tool access error on 2026-10-13; the separately recorded supplement HTTP403 stop was retained. Eight occurrence DOI opens also failed: 10.1007/S10295-013-1383-2, 10.1007/S10295-015-1685-7, 10.1007/S10295-019-02172-8, 10.1007/S12275-013-2586-Y, 10.1021/BI201827A, 10.1039/C4CC00177J, 10.1111/1574-6968.12088, 10.1248/CPB.31.659. PMID17369815 yielded no usable source text; PubChem16913, MIBiG0658/0659 and live NCBITaxon426436 opens failed. Cached curator extraction of the 2023 paper is explicitly not a full-text snapshot and was not accepted as primary evidence. Timestamp records result reinspection.', 'unknown', accessed='2026-10-13T05:40:23Z',
+                 search_scope='Exact DOI/publisher, PMID, MIBiG, PubChem and NCBI endpoints only. Inherited stops for 10.1073/pnas.0802312105/PMID18492804/PMC2387273, 10.1021/ja803639g/PMID18563898, 10.1021/ja104306p, 10.1107/S0907444912038486 and the 2023 supplement were not retried or bypassed. DOI10.1038/NBT1297 is the PMID17369815 lead and was not used as an alternate retrieval.'),
+    ])
+    r['checks'].append(check(tid, 'cached-protein-identity', 'passed',
+        '13 reference proteins compared to all listed cached GenPept sequences; each has at least one exact CDS translation. UniProt sequence, GenPept sequence, annotated CDS and independent table-11 translation agree where UniProt exists. Specific near-reference mismatches and 4F84 tag mapping also pass.',
+        command='/Users/marcin/.cache/uv/archive-v0/_rI3ZpIXzy86ptcWte4iX/bin/python /private/tmp/npmech-record-reviews-next-PKCU4Z/audit_cached_sequences.py', exit_code=0,
+        evidence_ids=['protein-' + p['accession'].replace('.', '-') for p in SEQ['proteins']] + ['pdb4f84'],
+        scope_note='Biopython 1.88 auxiliary identity analysis; not a native quality gate or a primary assay review. Essential source hashes, coordinates and results are embedded in evidence.'))
+    for protein in SEQ['proteins']:
+        acc = protein['accession']
+        eid = 'protein-' + acc.replace('.', '-')
+        function_evidence = sorted({e['evidenceCode'] + (('/' + e.get('id', '')) if e.get('id') else '') for c in protein.get('functions', []) for text in c.get('texts', []) for e in text.get('evidences', [])})
+        if acc == 'B1VVB4':
+            function_evidence = ['ECO:0000256/ARBA00035573 catalytic reaction; ECO:0000256/ARBA00035653 synthase subfamily']
+        comparisons = []
+        for p in protein['proteins']:
+            comparisons.append(dict(protein_id=p['protein_id'], source=p['source'], cds=p['cds'],
+                                    genome=[dict(accession=g['accession'], coordinates=g['coordinates'], source=g['source'],
+                                                 snapshot_sha256=SEQ['source_hashes'][g['file']]) for g in p['genomic_translations']]))
+        r['evidence'].append(evidence(eid, 'database', 'https://www.ncbi.nlm.nih.gov/protein/' + acc if acc.startswith('WP_') else 'https://www.uniprot.org/uniprotkb/' + acc + '/entry',
+             'Cached reference reinspection: ' + str(protein['length']) + ' aa; sequence SHA-256 ' + protein['sequence_sha256'] +
+             '; entry audit ' + json.dumps(protein.get('audit')) + '; function evidence ' + json.dumps(function_evidence) +
+             '; all listed sequence comparisons exact, annotated CDS equals independent table-11 translation: ' + json.dumps(comparisons) +
+             '. Does not establish assay insert, strain equivalence or native product formation.', 'partial', accessed=SEQ['accessed_at']))
+    r['evidence'].append(evidence('pdb4f84', 'database', 'https://data.rcsb.org/rest/v1/core/polymer_entity/4F84/1',
+         'Raw cached entity reinspection and direct sequence comparison: 20-aa MGSSHHHHHHSSGLVPRGSH extension plus all 300 D3KYU3 residues; entity 21..320 maps to reference 1..300, zero mutations. Source taxon324833 has no strain qualifier; expression pET26b/E. coli BL21(DE3). Deposition identity only, not catalytic, proteolytic or native assembly evidence.', 'supports', accessed=SEQ['accessed_at'], snapshot_sha256=SEQ['source_hashes']['/private/tmp/npmech-lasali-4f84-3JF9Yf/entity.json']))
+    r['assessments'].extend([
+        assessment(tid, 'identity', 'identity', 'Exact constitution and stereochemical boundary', 'supported',
+             'The C11H20O bornane connectivity matches the 2-MIB ChEBI connectivity family. This is not the wrong-constitution BGC0000657 owner reviewed earlier. Explicitly unspecified stereochemistry and stereo_complete=false are retained; no exact CHEBI:61987 identity or reaction-product stereochemistry upgrade is warranted.', ['owner', 'inventory', 'chebi-local', 'chebi-live']),
+        assessment(tid, 'equivalence', 'grounding', 'PubChem identity and shared-structure discussion', 'unknown',
+             'PubChem16913 could not be verified. Both BGC0000658 and BGC0000659 contribute exact-key source concepts here; the existing shared-structure discussion is retained, not resolved by label or a partial assay report. No parent/congener relation is invented.', ['owner', 'inventory', 'access-limits']),
+        assessment(tid, 'producer-bgc', 'evidence', 'Two native producer and BGC assertions', 'unknown',
+             'Pinned BGC0000658v3/S.griseus NBRC13350 and BGC0000659v3/S.erythraea NRRL2338 both retain SOURCE_ASSERTION and CLUSTER_UNSTATED. The cached genome/CDS mappings agree with their specified loci. PMID17369815 and current MIBiG status were not verified; database roles and recombinant assays do not upgrade native producer evidence.', ['inventory', 'protein-B1VVB3', 'protein-B1VVB4', 'protein-A4FG18', 'protein-A4FG19', 'access-limits']),
+        assessment(tid, 'taxon-scope', 'grounding', 'Occurrence species-versus-strain identity', 'concern',
+             'occurrences[7] pairs the species-level label Phormidium tenue with NCBITaxon426436, whose pinned name is Phormidium tenue BDU 40061. No strain qualifier or scope explanation accompanies this occurrence. The record needs an evidence-led choice of taxon and label, not a cosmetic substitution.', ['owner', 'taxonomy', 'lotus', 'taxonomy-search']),
+    ])
+    for i, occurrence in enumerate(doc['occurrences']):
+        ref = occurrence['evidence'][0]['reference']
+        r['assessments'].append(assessment(tid, 'occurrence-' + str(i), 'evidence', 'Occurrence ' + str(i) + ': ' + occurrence['taxon_id'] + ' / ' + ref,
+            'concern' if i == 7 else 'unknown',
+            'Exact-key LOTUS triple is present and correctly marked DATABASE_ASSERTION, not promoted to production. Direct detection/isolation, exact chemical form and source organism scope could not be checked because the cited source was inaccessible or access-held.' + (' The species/strain identifier mismatch is separately confirmed as F1.' if i == 7 else ''), ['lotus', 'owner', 'access-limits'] + (['taxonomy'] if i == 7 else [])))
+    groups = [
+        ('mib-sgr-native-proposed-roles', ['B1VVB3', 'B1VVB4'], 'supported', 'Automated ECO:0000256 methyltransferase and synthase annotations remain proposed. NBRC13350 identity and reverse-strand locus are exact. No primary assay or shell/cargo claim is inferred.'),
+        ('mib-sace-native-proposed-roles', ['A4FG18', 'A4FG19'], 'supported', 'ECO:0000305 reaction annotations citing PMID18492804 remain proposed database roles. NRRL2338 identity is exact; process-level IDA does not establish the exact reaction or convert the role to a newly inspected experiment.'),
+        ('mib-ambo-native-proposed-roles', ['A3KI17', 'A3KI18'], 'supported', 'Both genomic accessions map exactly to ATCC23877 proteins. ECO:0000305 role evidence remains proposed. Similarity and shared pathway context are not primary assays.'),
+        ('mib-three-canonical-references-coupled-assays', ['Q9F1Y6', 'K0K6P8', 'WP_019890277.1'], 'unknown', 'The three canonical references are sequence-supported, but the claimed coupled FPPS assay and GC/MS product formation could not be reread in primary text. The graph distinguishes canonical references from exact experimental inserts and does not equate stocks. WP_019890277.1 differs from A0A918LM63 at107 T/A and116 G/R, confirming the refusal to substitute that UniProt entry.'),
+        ('mib-sco7701-database-role', ['Q9F1Y5'], 'supported', 'Database experimental attribution ECO:0000269/PMID18563898 is retained as a database claim. A3(2), 1147 and multispecies RefSeq identities are distinguished. The edge does not claim methyltransferase alone makes 2-MIB.'),
+        ('mib-13189-similarity-proposed-role', ['Q9F1V8'], 'supported', 'ECO:0000250 role remains proposed. The sequence belongs to the 13189 deposit; it differs from B1VVB4 at66 P/S,67 T/A and77 W/R. No NBRC13350 strain/locus transfer is made.'),
+        ('mib-lasali-deposited-database-roles', ['D3KYU2', 'D3KYU3'], 'supported', 'Both deposited ATCC31180 proteins and ECO:0000269/PMID18492804 database attribution are supported. pKSL native-versus-clone provenance and DSM aliases remain unresolved as stated. PDB4F84 supports only tagged reference identity; no neighboring nbp function or assembly is inferred.'),
+    ]
+    for graph, accs, outcome, summary in groups:
+        component = next(c for c in capture['graph_components'] if c['path'].endswith('/' + graph + '.yaml'))
+        eid = 'graph-' + graph
+        r['evidence'].append(evidence(eid, 'record_content', component['path'], 'Complete component, graph ownership, all nodes/edges, qualifications, evidence and audit trail read. Matches the owner identifier and LFYXNXGVLGKVCJ-UHFFFAOYSA-N structure; BIOSYNTHESIS scope.', 'supports', accessed=capture['started_at'], snapshot_sha256=component['sha256']))
+        r['assessments'].append(assessment(tid, graph, 'graph', 'Pathway roles and component ' + graph, outcome, summary,
+            [eid] + ['protein-' + a.replace('.', '-') for a in accs] + (['access-limits'] if outcome == 'unknown' else []) + (['pdb4f84'] if graph.startswith('mib-lasali') else []),
+            dimensions=[dict(name='claim-tier', value='qualified database role' if outcome == 'supported' else 'primary assay assertion not reverified', definition='Evidence tier evaluated for this component, not the native producer claim.', evidence_ids=[eid])]))
+    r['assessments'].append(assessment(tid, 'graph-integrity', 'graph', 'Complete graph representation and evidence placement', 'supported',
+         'Seven exact-owner components, 20 nodes and 13 directed role edges were read; all edges have evidence and declared endpoints. Thirteen pathway-role entries are qualified individually. Graphs do not combine strains into a single ordered native pathway, claim a shell/cargo mechanism, or promote undefined compound stereochemistry. The three experimental edges remain scientifically unverified in this review.', ['owner'] + ['graph-' + g[0] for g in groups]))
+    owners = [owner('data/raw/lotus_occurrences.tsv', 'Imported exact-key organism/reference triple'), owner('scripts/extract_lotus.py', 'Taxon mapping and occurrence extraction'), owner('scripts/seed_from_sources.py', 'Generated occurrence emission')]
+    r['findings'].append(dict(finding_id='F1', issue_key='2mib-occurrence-phormidium-426436-strain-scope', category='grounding', severity='major', status='open', certainty='confirmed',
+         title='Species-labelled Phormidium occurrence points to a specific strain taxon',
+         description='The occurrence names Phormidium tenue without a strain, but NCBITaxon:426436 is Phormidium tenue BDU 40061 in the pinned authority. The inherited LOTUS triple already contains this mismatch, and no scope exception was found in the bounded ignored-inclusive search. It is confirmed that identifier and displayed scope disagree; whether the paper supports BDU40061 or a different taxon is unresolved. Do not claim that the inaccessible paper lacks strain evidence.',
+         target_ids=[tid], field_paths=['occurrences[7].taxon_id', 'occurrences[7].taxon_label'], evidence_ids=['owner', 'lotus', 'taxonomy', 'taxonomy-search'], rule_id='review-checklist: Occurrences/Producer organisms; docs/HARMONIZATION.md: exact taxon and strain grounding', native_severity='major', normalization_reason='Materially different taxonomic scope affects occurrence joins and is not merely spelling drift.', owner_paths=owners))
+    r['actions'].append(dict(action_id='resolve-phormidium-scope', description='Inspect DOI10.1248/CPB.31.659 when legitimately accessible and identify the actual organism/strain. Correct the maintained LOTUS source mapping or implement a tested, source-pinned correction input. Do not silently relabel the occurrence to BDU40061, broaden a strain result, or patch generated YAML.', finding_ids=['F1'], target_ids=[tid], owner_paths=owners,
+         acceptance_checks=['Claim-level occurrence evidence establishes exact organism and chemical form.', 'Identifier and displayed label express the same supported taxonomic scope; no production upgrade.', 'Regenerated occurrence reproduces; strict, taxonomy correspondence, source provenance and corpus gates pass.'], generator='scripts/extract_lotus.py and scripts/seed_from_sources.py'))
+    r['actions'].append(dict(action_id='finish-primary-and-xref-review', description='Complete the outstanding primary occurrence/assay, current BGC, PubChem and pinned chemistry checks when inspectable sources are available; preserve all access stops. Save a successor observation without rewriting this bundle.', finding_ids=[], target_ids=[tid], ownership_note='Evidence collection only; review does not authorize changing records.', acceptance_checks=['Every one of the 13 occurrence triples has source-level support or an explicit evidence-backed disposition.', 'Three coupled-assay edges are checked against primary text without claiming inaccessible construct/SI details.', 'Exact PubChem/stereochemical identity and current BGC status checked; required unavailable checks resolved or explicitly retained.']))
+    r['limitations'].append('No cited primary paper was newly accepted as inspected text in this assessment. Eight occurrence DOI attempts failed; ACS/PNAS/IUCr and supplement stops were preserved. Main 202300775 also failed this attempt. These access failures are not evidence that the claims are false.')
+    r['limitations'].append('All 13 protein checks use cached official records from 2026-10-08/09. This reinspection does not certify current live UniProt/GenBank status or experimental construct identity. Cached raw-source SHA-256 manifest: ' + json.dumps(SEQ['source_hashes']))
+    return r
+
+
+reviews = [mib(), heme(1), heme(2)]
+for r in reviews:
+    r['finished_at'] = now()
+    out = ROOT / (r['review_id'] + '-draft.yaml')
+    with out.open('x') as stream:
+        yaml.safe_dump(r, stream, sort_keys=False, allow_unicode=False, width=94)
+    print(str(out), flush=True)
+with (ROOT / 'draft-paths.json').open('x') as stream:
+    json.dump([str(ROOT / (r['review_id'] + '-draft.yaml')) for r in reviews], stream, indent=2)

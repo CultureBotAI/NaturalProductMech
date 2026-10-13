@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python",
+    "scripts/validate_id_label_correspondence.py",
+    "-c",
+    "conf/id_label_targets.yaml",
+    "--report",
+    "/private/tmp/npmech-record-reviews-next-PKCU4Z/labels.tsv"
+  ],
+  "started_at": "2026-10-13T05:37:54.045148Z",
+  "finished_at": "2026-10-13T05:39:55.736120Z",
+  "exit_code": 0,
+  "log_sha256": "803d0d84664eb9a85ed2e3c0060b95139dbdfaf29150ccb78f95589b37bb531d",
+  "log": "\nid\u2194label correspondence summary:\n          OK_CANONICAL: 13434\n            OK_SYNONYM: 646\n          OK_EXCEPTION: 35\n              MISMATCH: 499\n    SKIPPED_NO_ADAPTER: 4649\n\nWrote 499 flagged pairs to /private/tmp/npmech-record-reviews-next-PKCU4Z/labels.tsv\n"
+}

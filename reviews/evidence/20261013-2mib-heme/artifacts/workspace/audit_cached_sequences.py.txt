@@ -1,0 +1,111 @@
+import hashlib
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+
+from Bio import SeqIO
+
+ROOT = Path(__file__).parent
+CACHE = Path('/private/tmp/npmech-next/avi')
+PAIRS = {
+    'B1VVB3': ['BAG18097.1'], 'B1VVB4': ['BAG18098.1'],
+    'A4FG18': ['CAM02993.1'], 'A4FG19': ['CAM02994.1'],
+    'A3KI17': ['CAJ89344.1', 'AKZ53458.1'],
+    'A3KI18': ['CAJ89345.1', 'AKZ53459.1'],
+    'Q9F1Y6': ['CAD55534.1', 'WP_011031839.1'],
+    'K0K6P8': ['CCH33192.1', 'WP_015103303.1'],
+    'WP_019890277.1': ['WP_019890277.1'],
+    'Q9F1Y5': ['CAC44557.1', 'BAB20434.1', 'WP_011031840.1'],
+    'Q9F1V8': ['BAB20507.1', 'WP_030703894.1'],
+    'D3KYU2': ['BAI77523.1'], 'D3KYU3': ['BAI77524.1'],
+}
+JSONS = ['MIB-Sgr-locus-20261008.json', 'MIB-reviewed-20261008.json',
+         'MIB-GPPMT-reviewed-20261009.json', 'MIB-SeMIBS-K0K6P8-20261009.json',
+         'MIB-SeSp-uniprot-mibs-name-20261009.json']
+
+
+def digest(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def source(record):
+    return [f.qualifiers for f in record.features if f.type == 'source']
+
+
+entries = {}
+inputs = {}
+for name in JSONS:
+    path = CACHE / name
+    doc = json.loads(path.read_text())
+    inputs[str(path)] = digest(path)
+    for entry in doc.get('results', [doc]):
+        entries[entry['primaryAccession']] = entry
+
+proteins = {}
+for path in sorted(CACHE.glob('MIB-*.gp')):
+    for record in SeqIO.parse(path, 'genbank'):
+        if any(record.id in ids for ids in PAIRS.values()):
+            inputs[str(path)] = digest(path)
+            proteins.setdefault(record.id, []).append((path, record))
+
+translations = {}
+for path in sorted(CACHE.glob('MIB-*.gb')):
+    genome = SeqIO.read(path, 'genbank')
+    # REGION coordinates in an NCBI flat file are offsets into the accession.
+    acc_line = next(line for line in path.read_text().splitlines() if line.startswith('ACCESSION'))
+    offset = int(acc_line.split('REGION: ')[1].split('..')[0]) - 1 if 'REGION: ' in acc_line else 0
+    for feature in genome.features:
+        ids = feature.qualifiers.get('protein_id', [])
+        if feature.type != 'CDS' or not ids or ids[0] not in proteins:
+            continue
+        pid = ids[0]
+        if str(feature.location).count('<') or str(feature.location).count('>'):
+            continue
+        actual = str(feature.extract(genome.seq).translate(table=int(feature.qualifiers.get('transl_table', ['11'])[0]), cds=True))
+        assert actual == feature.qualifiers['translation'][0]
+        assert all(actual == str(p.seq) for _, p in proteins[pid]), (path, pid)
+        inputs[str(path)] = digest(path)
+        translations.setdefault(pid, []).append(dict(
+            file=str(path), accession=genome.id, source=source(genome),
+            coordinates=[int(feature.location.start) + offset + 1,
+                         int(feature.location.end) + offset, feature.location.strand],
+            translation_matches=True, sequence_sha256=hashlib.sha256(actual.encode()).hexdigest()))
+
+rows = []
+for accession, pids in PAIRS.items():
+    entry = entries.get(accession)
+    seq = entry['sequence']['value'] if entry else str(proteins[accession][0][1].seq)
+    row = dict(accession=accession, length=len(seq), sequence_sha256=hashlib.sha256(seq.encode()).hexdigest(), proteins=[])
+    if entry:
+        row.update(organism=entry['organism'], entry_type=entry['entryType'], audit=entry['entryAudit'],
+                   genes=entry.get('genes'), functions=[c for c in entry.get('comments', []) if c['commentType'] == 'FUNCTION'])
+    for pid in pids:
+        assert pid in proteins, pid
+        for file, protein in proteins[pid]:
+            assert seq == str(protein.seq), (accession, pid)
+        p = proteins[pid][0][1]
+        row['proteins'].append(dict(protein_id=pid, sequence_matches=True, source=source(p),
+             cds=[f.qualifiers for f in p.features if f.type == 'CDS'], genomic_translations=translations.get(pid, [])))
+    assert any(p['genomic_translations'] for p in row['proteins']), accession
+    rows.append(row)
+
+sp = entries['A0A918LM63']['sequence']['value']
+wp = str(proteins['WP_019890277.1'][0][1].seq)
+sp_differences = [[i, a, b] for i, (a, b) in enumerate(zip(wp, sp), 1) if a != b]
+assert len(sp) == len(wp) == 438 and sp_differences == [[107, 'T', 'A'], [116, 'G', 'R']]
+sgr_diff = [[i, a, b] for i, (a, b) in enumerate(zip(entries['Q9F1V8']['sequence']['value'], entries['B1VVB4']['sequence']['value']), 1) if a != b]
+assert sgr_diff == [[66, 'P', 'S'], [67, 'T', 'A'], [77, 'W', 'R']]
+pdb_path = Path('/private/tmp/npmech-lasali-4f84-3JF9Yf/entity.json')
+entity = json.loads(pdb_path.read_text())
+inputs[str(pdb_path)] = digest(pdb_path)
+assert entity['entity_poly']['pdbx_seq_one_letter_code_can'] == 'MGSSHHHHHHSSGLVPRGSH' + entries['D3KYU3']['sequence']['value']
+assert entity['entity_poly']['rcsb_mutation_count'] == 0
+assert entity['rcsb_polymer_entity_align'][0]['aligned_regions'] == [dict(entity_beg_seq_id=21, length=300, ref_beg_seq_id=1)]
+result = dict(accessed_at=datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z'),
+              source_hashes=inputs, proteins=rows, sp_mismatch=sp_differences, sgr_mismatch=sgr_diff,
+              pdb4f84=dict(tag_length=20, canonical_length=300, exact_match=True,
+                          alignment=entity['rcsb_polymer_entity_align'], source=entity['entity_src_gen']),
+              limitations='Cached database identity and annotated function evidence only; no primary paper or exact assay insert verified.')
+with (ROOT / 'cached-sequence-audit.json').open('x') as stream:
+    json.dump(result, stream, indent=2)
+print(json.dumps(result, indent=2))

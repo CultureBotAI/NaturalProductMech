@@ -1,0 +1,160 @@
+LOCUS       CP012382                2501 bp    DNA     linear   BCT 17-AUG-2015
+DEFINITION  Streptomyces ambofaciens ATCC 23877, complete genome.
+ACCESSION   CP012382 REGION: 360500..363000
+VERSION     CP012382.1
+DBLINK      BioProject: PRJNA93
+            BioSample: SAMN03921868
+KEYWORDS    .
+SOURCE      Streptomyces ambofaciens ATCC 23877
+  ORGANISM  Streptomyces ambofaciens ATCC 23877
+            Bacteria; Bacillati; Actinomycetota; Actinomycetes;
+            Kitasatosporales; Streptomycetaceae; Streptomyces.
+REFERENCE   1  (bases 1 to 2501)
+  AUTHORS   Thibessard,A., Haas,D., Gerbaud,C., Aigle,B., Lautru,S.,
+            Pernodet,J.-L. and Leblond,P.
+  TITLE     Complete genome sequence of Streptomyces ambofaciens ATCC 23877,
+            the spiramycin producer
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 2501)
+  AUTHORS   Thibessard,A., Haas,D., Gerbaud,C., Aigle,B., Lautru,S.,
+            Pernodet,J.-L. and Leblond,P.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (29-JUL-2015) Faculte des Sciences et Technologies,
+            Universite de Lorraine, Boulevard des Aiguillettes, Vandoeuvre les
+            Nancy F-54506, France
+COMMENT     ##Genome-Assembly-Data-START##
+            Assembly Method       :: CLC workbench v. 7.0.3
+            Genome Coverage       :: 114
+            Sequencing Technology :: Illumina
+            ##Genome-Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2501
+                     /organism="Streptomyces ambofaciens ATCC 23877"
+                     /mol_type="genomic DNA"
+                     /strain="ATCC 23877"
+                     /isolation_source="soil"
+                     /culture_collection="ATCC:23877"
+                     /type_material="type strain of Streptomyces ambofaciens"
+                     /db_xref="taxon:278992"
+                     /geo_loc_name="France: Picardie"
+                     /collection_date="1954"
+     gene            <1..26
+                     /locus_tag="SAM23877_0408"
+     CDS             <1..26
+                     /locus_tag="SAM23877_0408"
+                     /inference="ab initio prediction:AMIGene:2.0"
+                     /note="Evidence 3 : Function proposed based on presence of
+                     conserved amino acid motif, structural feature or limited
+                     homology"
+                     /codon_start=3
+                     /transl_table=11
+                     /product="putative nucleotide-binding protein"
+                     /protein_id="AKZ53457.1"
+                     /translation="MSVDSIPEARTTPDAPQQSLSTAAARNLATTTKSAPQMQEITSR
+                     WLLRMLPWVEAQGGAYRVNRRLRHTLGDGRVEFVQEGATVRVIPRELTELAVLRGFED
+                     IDVLTALAGRCTQRDFAAGEVLVERGSPAGRIHLIAHGRVSQTSEGRYGEEVALAVLA
+                     DGDHFGENALSDSDARHDCTVTAETAGTLLTLSRADFTAVQASAPHLRAHVEEYDSRR
+                     RQRQNKHGEAEIAVSAGHFGEADLPNTFVDYELNPREYELSVAQTVLKIHTRVVDLYN
+                     GPMNQTEEQLRLTVEALRERQEHELINNREFGLLHNADFKQRIQPRSGPPTPDDMDDL
+                     LCRRRGTKLFLAHPRTIAAIGRGFSACGLYPDHVDLGGQSVPAWRGVPILPCNKIPIS
+                     KEQTSSIIAMRTGEDNQGVIGLRQTGLPDEYEPGLSVRFMGINEQAIISYLVSTYYSA
+                     AVLLPDALGVMENVQVAHGPR"
+     gene            102..1424
+                     /locus_tag="SAM23877_0409"
+     CDS             102..1424
+                     /locus_tag="SAM23877_0409"
+                     /EC_number="4.2.3.118"
+                     /inference="ab initio prediction:AMIGene:2.0"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="2-methylisoborneol synthase"
+                     /protein_id="AKZ53458.1"
+                     /translation="MPDSGPLGPHSPDHRPTPATTVPDAPASKPPDVAVTPTASEFLA
+                     ALHPPVPIPSPSPPSGSASAAADTPDATTVGSALQRILRGPTGPGTAALALSVRHDPP
+                     SLPGSPAPAEPAAGRAVPGLYHHPVPEPDPARVEEVSRRIKRWAEDEVQLYPEDWEGE
+                     FDGFSVGRYMVACHPDAPTVDHLMLATRLMVAENAVDDCYCEDHGGSPVGLGGRLLLA
+                     HTAIDPFHTTAEYAPPWRESLTSDAPRRAYRSAMDYFVRAATPSQADRYRHDMARLHL
+                     GYLAEAAWAQTDHVPEVWEYLAMRQFNNFRPCPTITDTVGGYELPADLHARPDMQRVI
+                     ALAGNATTIVNDLYSYTKELDSPGRHLNLPVVIAERERLSERDAYLKAVEVHNELQHA
+                     FEAAAAELAKACPLPTVLRFLKGVAAWVDGNHDWHRTNTYRYSLPDFW"
+     gene            1440..2315
+                     /locus_tag="SAM23877_0410"
+     CDS             1440..2315
+                     /locus_tag="SAM23877_0410"
+                     /EC_number="2.1.1.255"
+                     /inference="ab initio prediction:AMIGene:2.0"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Geranyl diphosphate 2-C-methyltransferase"
+                     /protein_id="AKZ53459.1"
+                     /translation="MTTESTSTVTAKIPAPATPYQGDIARYWNNEARPVNLRLGDVDG
+                     LYHHHYGIGAVDHAALGDPADSEYEKKLIAELHRLESAQAEFLMDHLGPIGSDDTLVD
+                     AGCGRGGSMVMAHRRFGCKVEGVTLSASQADFGNARARELRIEDHVRSRVCNMLDTPF
+                     DKGSIAASWNNESTMYVDLHDLFAEHSRFLEVGGRYVTITGCWNPRYGQPSKWVSQIN
+                     AHFECNIHSRREYLRAMADNRLVPHTIVDLTPDTLPYWELRATSSLVTGIEKAFIESY
+                     RDGSFQYVLIAADRV"
+     gene            complement(2418..>2501)
+                     /locus_tag="SAM23877_0411"
+     CDS             complement(2418..>2501)
+                     /locus_tag="SAM23877_0411"
+                     /inference="ab initio prediction:AMIGene:2.0"
+                     /note="Evidence 3 : Function proposed based on presence of
+                     conserved amino acid motif, structural feature or limited
+                     homology"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="putative ATP binding protein"
+                     /protein_id="AKZ53460.1"
+                     /translation="MRVLLVGAGGVGGAVTRIAARRDFLTHMVVADYDLSRARAAVDA
+                     LPGQGDRFSALRLDASDEEAVRRALTAHRCDVLLNATDPRFVMPLFRAALAGGVDYVD
+                     MAMSLSAPHASRPYEECGVKLGDAQFELGERWAASGRLALVGMGVEPGLSDVFARYAA
+                     DELFDEIDEIGVRDGANLTVEGYEFAPSFSIWTTIEECLNPPVVYEKERGWFTTAPFS
+                     EPEVFEFPEGIGPVECVNVEHEEVLLIPRWVDARRVTFKYGLGDAFIARLKTLHELGL
+                     DSTGKVTVPGEDGPVRVSPRDVVAACLPDPATLGDRMTGKTCAGTWVTGTKDGRRREV
+                     YLYHVVDNQWSMREYGSQAVVWQTAINPVVALELLATGVWSGQGVLGPEALPAGPFLD
+                     LLTAYGSPWGLREEV"
+ORIGIN      
+        1 tgcaggtcgc ccacgggccg cgctgacgtc ccggtccgcc gcgggttcac gcctcacccg
+       61 cccccgtacc gcagagccct caccgcagca aggagccgcc gatgcccgac tccgggcccc
+      121 tcggacccca tagccctgac caccggccga cgccggccac caccgtgccg gacgccccgg
+      181 cgtcgaagcc gccggacgtc gcggtcaccc cgaccgcctc ggaattcctg gcagcgctgc
+      241 accccccggt cccgattccc tccccctcac cgccctcggg gtctgcctcc gccgcagcgg
+      301 acacgcctga cgcgaccacc gtcggctccg cgctccagcg gatcctgcgc ggaccgaccg
+      361 gcccgggcac ggctgcgctc gccctgtccg tcaggcacga ccccccgtcg cttccagggt
+      421 ctccggctcc cgccgagccc gccgcggggc gggccgtccc cggcctctac caccaccccg
+      481 tcccggagcc cgacccggca cgcgtggagg aggtgagccg ccggatcaag cgctgggccg
+      541 aggacgaggt ccagctctac cccgaggact gggaggggga gttcgacggc ttctccgtcg
+      601 gccgttacat ggtggcctgc caccccgacg ccccgacggt cgaccacctg atgctcgcga
+      661 cgcggctgat ggtcgcggag aacgcggtgg acgactgcta ctgcgaggac cacggcgggt
+      721 cgcccgtcgg cctcggcgga cgcctcctcc tcgcgcacac cgcgatcgac cccttccaca
+      781 ccaccgcgga gtacgcgccg ccgtggcggg agtcgctcac gtcggacgcc ccgcggcggg
+      841 cgtaccgcag cgcgatggac tacttcgtcc gcgcggccac cccctcccag gccgaccgct
+      901 accggcacga catggcccgg ctccacctgg gctacctcgc cgaggccgcc tgggcacaga
+      961 ccgatcacgt tccggaggtg tgggagtacc tggcgatgcg ccagttcaac aacttccgcc
+     1021 cctgcccgac gatcaccgac accgtcggcg gctacgagct gcccgcggac ctgcacgccc
+     1081 gtccggacat gcaacgggtc atcgccctcg ccggcaacgc gaccaccatc gtcaacgacc
+     1141 tctactcgta caccaaggaa ctcgacagcc cgggccgcca cctgaacctc ccggtggtga
+     1201 tcgccgaacg cgagcggctc tccgagcgcg acgcctatct gaaggccgtc gaggtccaca
+     1261 acgaactgca gcacgccttc gaggccgccg cggccgaact cgccaaggcc tgccccctgc
+     1321 ccaccgtgct gcgcttcctc aagggcgtgg ccgcctgggt cgacggcaac cacgactggc
+     1381 accgcaccaa cacctaccgc tacagcctgc ccgacttctg gtaaagaacg gacatatctg
+     1441 tgaccactga atcgacctcc accgtcacgg cgaagatccc ggccccggcg acgccctacc
+     1501 agggggacat cgcccgctac tggaacaacg aggcgcggcc ggtcaacctg cgcctcggtg
+     1561 acgtggacgg gctctaccac caccactacg gcatcggcgc cgtggaccac gccgcgctcg
+     1621 gcgacccggc ggacagcgag tacgagaaga agctcatcgc cgagctgcac cggctggagt
+     1681 cggcgcaggc ggagttcctc atggaccacc tcggtccgat cggctccgac gacacgctcg
+     1741 tcgacgccgg atgcgggcgc ggcgggtcca tggtcatggc ccaccgccgc ttcggctgca
+     1801 aggtcgaagg cgtcaccctg tcggcctccc aggccgactt cggcaacgcc cgcgcacgag
+     1861 aactgcggat cgaggaccac gtccgctccc gcgtgtgcaa catgctcgac acccccttcg
+     1921 acaagggcag catcgcggcc tcgtggaaca acgagtcgac gatgtacgtc gacctgcacg
+     1981 acctgttcgc cgagcactcc cgcttcctcg aggtgggcgg ccggtacgtg acgatcaccg
+     2041 ggtgctggaa cccccgctac ggccagccgt cgaagtgggt ctcccagatc aacgcccact
+     2101 tcgagtgcaa catccactcc cgccgcgagt acctgcgcgc catggccgac aaccggctgg
+     2161 tgccgcacac catcgtcgac ctcactccgg acaccctgcc ctactgggaa ctgcgggcca
+     2221 cgtcctcgct ggtcaccggg atcgagaagg cgttcatcga gtcctaccgc gacgggtcct
+     2281 tccagtacgt cctgatcgcg gccgaccgcg tgtaggcccg gcgggtcccg cactggcgtc
+     2341 ccggccccgc gagccgccgg gacgcctggc gcgcgttccc tccccgcacg gcacgccggc
+     2401 gcaccgcctc tcgcggctca cacctcctcg cgcagacccc agggcgagcc gtacgcggtg
+     2461 agcaggtcca ggaacgggcc ggccggcagt gcctccggac c
+//
+

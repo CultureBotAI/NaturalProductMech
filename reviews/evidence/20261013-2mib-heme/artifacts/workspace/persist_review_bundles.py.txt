@@ -1,0 +1,33 @@
+import hashlib
+import json
+import subprocess
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+
+ROOT = Path(__file__).parent
+
+
+def now():
+    return datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z')
+
+
+def run(name, args):
+    start = now()
+    log = ROOT / (name + '.log')
+    with log.open('x') as stream:
+        result = subprocess.run([sys.executable] + args, stdout=stream, stderr=subprocess.STDOUT, text=True)
+    receipt = dict(started_at=start, finished_at=now(), command=[sys.executable] + args,
+                   exit_code=result.returncode, log_sha256=hashlib.sha256(log.read_bytes()).hexdigest(), output=log.read_text())
+    with (ROOT / (name + '.receipt.json')).open('x') as stream:
+        json.dump(receipt, stream, indent=2)
+    print(json.dumps(receipt), flush=True)
+    assert result.returncode == 0, name
+
+
+paths = json.loads((ROOT / 'validated-draft-candidates.json').read_text())
+run('final-draft-validation', ['scripts/record_review.py', 'validate'] + paths)
+for index, path in enumerate(paths):
+    run('save-review-' + str(index), ['scripts/record_review.py', 'save', '--content', path])
+run('saved-bundle-check', ['scripts/record_review.py', 'check', '--require-reviews'])
+run('review-tests', ['-m', 'pytest', '-q', 'tests/test_record_review_contract.py', 'tests/test_review_evidence_archive.py'])

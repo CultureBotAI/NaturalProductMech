@@ -1,0 +1,25 @@
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+
+from rdkit import Chem, rdBase
+
+ROOT = Path(__file__).parent
+rows = []
+for slug in ['2-methylisoborneol', 'heme-d1-2', 'heme-d1']:
+    doc = json.loads((ROOT / (slug + '-resolved.json')).read_text())
+    chemical = doc['chemical_structure']
+    mol = Chem.MolFromSmiles(chemical['smiles'])
+    assert mol is not None
+    inchi = Chem.MolToInchi(mol)
+    key = Chem.InchiToInchiKey(inchi)
+    rows.append(dict(identifier=doc['identifier'], iron_atoms=sum(a.GetSymbol() == 'Fe' for a in mol.GetAtoms()),
+                     calculated_inchi=inchi, calculated_key=key,
+                     inchi_matches=inchi == chemical['standard_inchi'], key_matches=key == chemical['standard_inchi_key'],
+                     chiral_centers=Chem.FindMolChiralCenters(mol, includeUnassigned=True)))
+result = dict(accessed_at=datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z'),
+              rdkit_version=rdBase.rdkitVersion, rows=rows,
+              limitation='Auxiliary RDKit 2024.03.5 only, not the pinned 2026.3.5 native chemistry environment. Import emits missing-NumPy diagnostics; only successful core molecule/InChI operations are reported.')
+with (ROOT / 'aux-chemistry.json').open('x') as stream:
+    json.dump(result, stream, indent=2)
+print(json.dumps(result, indent=2))
