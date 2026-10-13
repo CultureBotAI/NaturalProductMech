@@ -60,6 +60,15 @@ producer_organisms:
   - reference: PMID:18215476
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000751 entry version 3; citation taken from the entry level
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY496881.1
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: 8329. GenBank AY496881.1 source feature identifies strain
+      8329 and serotype 12. This qualifies the deposited locus, not exact capsule-product
+      identity, which remains open in issue #937. No taxon, structure or evidence-grade
+      change. See issue #938. Taxon identity and evidence grade are unchanged; this
+      is not a species-wide experiment. MIBiG source row BGC0000751:1; SHA256 10f7678a33ca41e17dd1ed8c4287624fb18944a4af0cfab96ac88febcc15115c.
+      Curator: codex; date: 2026-10-13.'
+  strain: '8329'
 - taxon_id: NCBITaxon:754256
   taxon_label: Actinobacillus pleuropneumoniae serovar 6 str. Femo
   evidence_basis: SOURCE_ASSERTION
@@ -72,6 +81,15 @@ producer_organisms:
   - reference: PMID:18215476
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000752 entry version 3; citation taken from the entry level
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY534316.1
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: Femo. GenBank AY534316.1 source feature identifies strain
+      Femo and serotype 6. This qualifies the deposited locus, not exact capsule-product
+      identity, which remains open in issue #937. No taxon, structure or evidence-grade
+      change. See issue #938. Taxon identity and evidence grade are unchanged; this
+      is not a species-wide experiment. MIBiG source row BGC0000752:1; SHA256 2226e3ae1eefad031a9ad65ad4186d8a63bad60f87b215955bc5fcf452350770.
+      Curator: codex; date: 2026-10-13.'
+  strain: Femo
 - taxon_id: NCBITaxon:715
   taxon_label: Actinobacillus pleuropneumoniae
   evidence_basis: SOURCE_ASSERTION
@@ -84,6 +102,16 @@ producer_organisms:
   - reference: PMID:18215476
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000753 entry version 3; citation taken from the entry level
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY534317.1
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: isolate 72-14676. GenBank AY534317.1 source feature identifies
+      isolate 72-14676 and serotype 7. This qualifies the deposited locus, not exact
+      capsule-product identity, which remains open in issue #937. No taxon, structure
+      or evidence-grade change. See issue #938. Taxon identity and evidence grade
+      are unchanged; this is not a species-wide experiment. MIBiG source row BGC0000753:1;
+      SHA256 6a147ce201f8aebd556b101422715217e53491d71196e7b819b51b837fdc5d87. Curator:
+      codex; date: 2026-10-13.'
+  strain: isolate 72-14676
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0000751
   entry_version: '3'
@@ -151,6 +179,53 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000751, BGC0000752,
     BGC0000753. Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+- discussion_id: curator-capsule-exact-product-assignment
+  kind: CURATION_TODO
+  status: OPEN
+  posed_by: codex
+  prompt: Which exact chemical product does each deposited capsule locus support?
+  rationale: Three serotype 12/6/7 loci share one finite type-7-labelled graph. Its
+    n-propoxy substituent, geminal ring diol and phosphate monoester require adjudication
+    against capsule chemistry. The accessible 2024 study describes a glycosylglycerol-phosphate
+    polymer backbone, not this finite graph, and its AP76 enzyme context is not the
+    imported isolate 72-14676. A. lignieresii occurrence support remains unknown because
+    the cited full paper is inaccessible; absence from its abstract is not refutation.
+    Registry names/MeSH associations are name-based and are not independent chemical
+    certification. Exact PubChem graph agreement is verified; deleting its xref alone
+    would not repair the biological assignment. The confirmed defect is unsupported
+    exact-product assignment across the recorded contexts, not an experimentally established
+    replacement structure. Preserve existing keys, source assertions and SEEDED status
+    pending primary-chemistry adjudication; no automatic split, merge, stereochemical
+    completion or registry-serotype rename.
+  evidence:
+  - reference: https://github.com/CultureBotAI/NaturalProductMech/issues/937
+    explanation: Open exact-product adjudication; qualification is mitigation, not
+      resolution.
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/195740
+    evidence_source: database
+    explanation: Registry title uses type 7; exact graph/key agrees, but name-based
+      MeSH association is not biological identity certification.
+  - reference: PMID:18215476
+    evidence_source: abstract
+    explanation: Metadata and abstract inspected; full text denied. No exact-product
+      equivalence inferred from genotyping or capsule-gene comparisons.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY496881.1
+    evidence_source: database
+    explanation: Deposited strain context 8329, serotype 12; not exact molecular-product
+      proof.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY534316.1
+    evidence_source: database
+    explanation: Deposited strain context Femo, serotype 6; not exact molecular-product
+      proof.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AY534317.1
+    evidence_source: database
+    explanation: Deposited isolate context isolate 72-14676, serotype 7; not exact
+      molecular-product proof.
+  - reference: DOI:10.1038/s41589-024-01664-8
+    evidence_source: full_text
+    explanation: Cps7D backbone polymerization and cloning methods inspected; AP76
+      experimental context is not imported isolate 72-14676, and backbone synthesis
+      does not specify all native capsule modifications.
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
@@ -164,3 +239,13 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T21:09:42Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T21:09:44Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cited OPEN capsule-product identity qualification for issue #937;
+    no chemical, taxonomic, evidence-grade or scientific-status changes.'
+  llm_assisted: true

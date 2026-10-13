@@ -53,6 +53,16 @@ producer_organisms:
   - reference: PMID:17599305
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000728 entry version 5; citation taken from the entry level
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB289645.1
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: Kauffmann E5051. GenBank AB289645.1 source feature identifies
+      strain Kauffmann E5051 and serotype K5. This qualifies the deposited locus,
+      not exact capsule-product identity, which remains open in issue #935. No taxon,
+      structure or evidence-grade change. See issue #938. Taxon identity and evidence
+      grade are unchanged; this is not a species-wide experiment. MIBiG source row
+      BGC0000728:1; SHA256 33c6a8312ae6f8cb562fdb2d97488c06dfebdda1b4c558b9f81804419a2ebf6c.
+      Curator: codex; date: 2026-10-13.'
+  strain: Kauffmann E5051
 - taxon_id: NCBITaxon:573
   taxon_label: Klebsiella pneumoniae
   evidence_basis: SOURCE_ASSERTION
@@ -65,6 +75,16 @@ producer_organisms:
   - reference: PMID:17599305
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000729 entry version 3; citation taken from the entry level
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB289646.1
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: NTUH-K9534. GenBank AB289646.1 source feature identifies
+      strain NTUH-K9534 and serotype K5. This qualifies the deposited locus, not exact
+      capsule-product identity, which remains open in issue #935. No taxon, structure
+      or evidence-grade change. See issue #938. Taxon identity and evidence grade
+      are unchanged; this is not a species-wide experiment. MIBiG source row BGC0000729:1;
+      SHA256 90256f1a1203b425fb4f46d119dc9b8ef1a970fc951e3897afdfb7b9853913ad. Curator:
+      codex; date: 2026-10-13.'
+  strain: NTUH-K9534
 - taxon_id: NCBITaxon:573
   taxon_label: Klebsiella pneumoniae
   evidence_basis: SOURCE_ASSERTION
@@ -77,6 +97,15 @@ producer_organisms:
   - reference: PMID:17599305
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000730 entry version 3; citation taken from the entry level
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB289647.1
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: 889/50. GenBank AB289647.1 source feature identifies strain
+      889/50 and serotype K20. This qualifies the deposited locus, not exact capsule-product
+      identity, which remains open in issue #935. No taxon, structure or evidence-grade
+      change. See issue #938. Taxon identity and evidence grade are unchanged; this
+      is not a species-wide experiment. MIBiG source row BGC0000730:1; SHA256 d274e2ce22c09d99af3d1de8a40973c06ceb85b1ee495c0b20be2c66616c208b.
+      Curator: codex; date: 2026-10-13.'
+  strain: 889/50
 - taxon_id: NCBITaxon:573
   taxon_label: Klebsiella pneumoniae
   evidence_basis: SOURCE_ASSERTION
@@ -89,6 +118,16 @@ producer_organisms:
   - reference: PMID:17599305
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000731 entry version 3; citation taken from the entry level
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB289648.1
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: NTUH-KP13. GenBank AB289648.1 source feature identifies
+      strain NTUH-KP13 and serotype K20. This qualifies the deposited locus, not exact
+      capsule-product identity, which remains open in issue #935. No taxon, structure
+      or evidence-grade change. See issue #938. Taxon identity and evidence grade
+      are unchanged; this is not a species-wide experiment. MIBiG source row BGC0000731:1;
+      SHA256 9a7eb842cce2c1dcd1a8d4eb95cbe77725c0ccaeab4f583f653a33ba54f20b7a. Curator:
+      codex; date: 2026-10-13.'
+  strain: NTUH-KP13
 - taxon_id: NCBITaxon:573
   taxon_label: Klebsiella pneumoniae
   evidence_basis: SOURCE_ASSERTION
@@ -101,6 +140,16 @@ producer_organisms:
   - reference: PMID:17599305
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000733 entry version 3; citation taken from the entry level
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB289650.1
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: NTUH-KP35. GenBank AB289650.1 source feature identifies
+      strain NTUH-KP35 and serotype K54. This qualifies the deposited locus, not exact
+      capsule-product identity, which remains open in issue #935. No taxon, structure
+      or evidence-grade change. See issue #938. Taxon identity and evidence grade
+      are unchanged; this is not a species-wide experiment. MIBiG source row BGC0000733:1;
+      SHA256 0f9121200f320fe1b3ab1b29c93b45f88b2444a44925b72d6be2b739bd599d71. Curator:
+      codex; date: 2026-10-13.'
+  strain: NTUH-KP35
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0000728
   entry_version: '5'
@@ -204,6 +253,53 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000728, BGC0000729,
     BGC0000730, BGC0000731, BGC0000733. Confirm they describe the same compound rather
     than an upstream cross-reference error.'
+- discussion_id: curator-capsule-exact-product-assignment
+  kind: CURATION_TODO
+  status: OPEN
+  posed_by: codex
+  prompt: Which exact chemical product does each deposited capsule locus support?
+  rationale: Five deposited K5/K20/K54 loci share one finite, stereochemically undefined
+    six-ring graph. PubChem names that graph as K15. The inspected study abstract
+    concerns genotyping and clinical/serum-resistance comparisons, not exact product
+    structural assignment. Registry names/MeSH associations are name-based and are
+    not independent chemical certification. Exact PubChem graph agreement is verified;
+    deleting its xref alone would not repair the biological assignment. The confirmed
+    defect is unsupported exact-product assignment across the recorded contexts, not
+    an experimentally established replacement structure. Preserve existing keys, source
+    assertions and SEEDED status pending primary-chemistry adjudication; no automatic
+    split, merge, stereochemical completion or registry-serotype rename.
+  evidence:
+  - reference: https://github.com/CultureBotAI/NaturalProductMech/issues/935
+    explanation: Open exact-product adjudication; qualification is mitigation, not
+      resolution.
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/3083199
+    evidence_source: database
+    explanation: Registry title uses K15; exact graph/key agrees, but name-based MeSH
+      association is not biological identity certification.
+  - reference: PMID:17599305
+    evidence_source: abstract
+    explanation: Metadata and abstract inspected; full text denied. No exact-product
+      equivalence inferred from genotyping or capsule-gene comparisons.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB289645.1
+    evidence_source: database
+    explanation: Deposited strain context Kauffmann E5051, serotype K5; not exact
+      molecular-product proof.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB289646.1
+    evidence_source: database
+    explanation: Deposited strain context NTUH-K9534, serotype K5; not exact molecular-product
+      proof.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB289647.1
+    evidence_source: database
+    explanation: Deposited strain context 889/50, serotype K20; not exact molecular-product
+      proof.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB289648.1
+    evidence_source: database
+    explanation: Deposited strain context NTUH-KP13, serotype K20; not exact molecular-product
+      proof.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB289650.1
+    evidence_source: database
+    explanation: Deposited strain context NTUH-KP35, serotype K54; not exact molecular-product
+      proof.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -217,3 +313,13 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T21:09:26Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T21:09:44Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cited OPEN capsule-product identity qualification for issue #935;
+    no chemical, taxonomic, evidence-grade or scientific-status changes.'
+  llm_assisted: true
