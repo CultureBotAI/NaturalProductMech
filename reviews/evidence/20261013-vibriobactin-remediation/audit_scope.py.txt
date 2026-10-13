@@ -1,0 +1,80 @@
+import copy
+import hashlib
+import io
+import json
+import subprocess
+import tarfile
+from datetime import datetime, timezone
+from pathlib import Path
+
+import yaml
+
+BASE = '0c479f05'
+WORK = Path(__file__).parent
+OLD = ('This taxon is also recorded as a producer, from a different source '
+       'and citation. The two corroborate each other rather than duplicating.')
+NEW = ('This taxon is also recorded as a producer. Production and occurrence '
+       'are distinct claims; their citations may refer to the same publication. '
+       'Publication independence has not been established.')
+archive = subprocess.check_output(['git', 'archive', BASE, 'data/natural_products',
+                                   'data/causal_graphs', 'data/raw', 'reviews/structured'])
+changed = []
+owners = components = reviews = raw = occurrences = 0
+archive_paths = set()
+with tarfile.open(fileobj=io.BytesIO(archive)) as tar:
+    for member in tar.getmembers():
+        if not member.isfile():
+            continue
+        path = Path(member.name)
+        archive_paths.add(path.as_posix())
+        before_bytes = tar.extractfile(member).read()
+        after_bytes = path.read_bytes()
+        if str(path).startswith('data/natural_products/') and path.suffix == '.yaml':
+            owners += 1
+            before = yaml.safe_load(before_bytes)
+            after = yaml.safe_load(after_bytes)
+            expected = copy.deepcopy(before)
+            for occurrence in expected.get('occurrences', []):
+                if OLD in occurrence.get('notes', ''):
+                    occurrence['notes'] = occurrence['notes'].replace(OLD, NEW)
+                    occurrences += 1
+            if before['identifier'] == 'CHEBI:9973':
+                producer, = after['producer_organisms']
+                cluster, = after['biosynthetic_gene_clusters']
+                old_producer, = before['producer_organisms']
+                old_cluster, = before['biosynthetic_gene_clusters']
+                assert producer['evidence_basis'] == old_producer['evidence_basis'] == 'SOURCE_ASSERTION'
+                assert producer['taxon_id'] == old_producer['taxon_id'] == 'NCBITaxon:666'
+                assert producer['strain'] == 'Lou15 (El Tor)'
+                assert producer['evidence'][0] == old_producer['evidence'][0]
+                assert cluster['evidence'][0] == old_cluster['evidence'][0]
+                assert len(producer['evidence']) == 3 and len(cluster['evidence']) == 2
+                assert cluster['link_evidence_basis'] == 'CLUSTER_UNSTATED'
+                assert 'locus_evidence_methods' not in cluster
+                expected['producer_organisms'] = copy.deepcopy(after['producer_organisms'])
+                expected['biosynthetic_gene_clusters'] = copy.deepcopy(after['biosynthetic_gene_clusters'])
+            if before_bytes != after_bytes:
+                assert after['curation_history'][:-1] == before['curation_history'], path
+                assert len(after['curation_history']) == len(before['curation_history']) + 1, path
+                expected['curation_history'] = after['curation_history']
+                changed.append(dict(path=str(path), identifier=after['identifier'],
+                                    sha256=hashlib.sha256(after_bytes).hexdigest()))
+            assert expected == after, f'Unexpected semantic change: {path}'
+        else:
+            assert before_bytes == after_bytes, f'Unexpected byte change: {path}'
+            components += str(path).startswith('data/causal_graphs/') and path.suffix == '.yaml'
+            reviews += str(path).startswith('reviews/structured/')
+            raw += str(path).startswith('data/raw/')
+for directory in ('data/natural_products', 'data/causal_graphs'):
+    assert {str(p) for p in Path(directory).rglob('*.yaml')} == {
+        p for p in archive_paths if p.startswith(directory + '/') and p.endswith('.yaml')}
+assert owners == 3115 and components == 243
+assert len(changed) == 732, len(changed)
+report = dict(base=BASE, finished_at=datetime.now(timezone.utc).isoformat(),
+              ignored_inclusive=True, owners=owners, components=components,
+              old_review_files_preserved=reviews, raw_files_preserved=raw,
+              changed_owners=len(changed), changed_occurrence_notes=occurrences,
+              changed=changed, checks='Only qualified changes and appended history; no chemistry, graph, status or population changes.')
+with (WORK / 'scope-audit.json').open('x') as handle:
+    json.dump(report, handle, indent=2)
+print(json.dumps({k: v for k, v in report.items() if k != 'changed'}, indent=2))

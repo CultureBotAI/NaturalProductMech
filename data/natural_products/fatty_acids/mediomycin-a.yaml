@@ -35,8 +35,8 @@ occurrences:
   taxon_source: NCBITaxon
   detection_context: ATCC23936
   notes: Mediomycin A(syn/anti relative configuration) This taxon is also recorded
-    as a producer, from a different source and citation. The two corroborate each
-    other rather than duplicating.
+    as a producer. Production and occurrence are distinct claims; their citations
+    may refer to the same publication. Publication independence has not been established.
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:66687
@@ -103,3 +103,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T10:44:57Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

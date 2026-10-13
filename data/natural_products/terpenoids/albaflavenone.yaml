@@ -243,8 +243,9 @@ occurrences:
     notes: ChEBI compound origin for CHEBI:51460
   taxon_id: NCBITaxon:100226
   taxon_source: NCBITaxon
-  notes: This taxon is also recorded as a producer, from a different source and citation.
-    The two corroborate each other rather than duplicating.
+  notes: This taxon is also recorded as a producer. Production and occurrence are
+    distinct claims; their citations may refer to the same publication. Publication
+    independence has not been established.
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:51460
@@ -479,3 +480,7 @@ curation_history:
     protein UNGROUNDED; do not substitute Q82IV2 or Q9K498, infer an exact construct,
     equate strains or upgrade native production, chemistry, BGC grades or SEEDED status.
   llm_assisted: true
+- timestamp: '2026-10-13T10:45:07Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

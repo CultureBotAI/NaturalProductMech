@@ -35,8 +35,9 @@ occurrences:
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q22285373 Taxon id NCBITaxon:66889,
     as given by LOTUS, was merged into NCBITaxon:28893 by NCBI Taxonomy; rewritten
-    at seed time. This taxon is also recorded as a producer, from a different source
-    and citation. The two corroborate each other rather than duplicating.
+    at seed time. This taxon is also recorded as a producer. Production and occurrence
+    are distinct claims; their citations may refer to the same publication. Publication
+    independence has not been established.
 - taxon_id: NCBITaxon:28893
   taxon_label: Streptomyces flavoviridis
   taxon_source: NCBITaxon
@@ -48,8 +49,9 @@ occurrences:
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q22285373 Taxon id NCBITaxon:66889,
     as given by LOTUS, was merged into NCBITaxon:28893 by NCBI Taxonomy; rewritten
-    at seed time. This taxon is also recorded as a producer, from a different source
-    and citation. The two corroborate each other rather than duplicating.
+    at seed time. This taxon is also recorded as a producer. Production and occurrence
+    are distinct claims; their citations may refer to the same publication. Publication
+    independence has not been established.
 - taxon_label: Streptomyces flavoviridis
   source: CHEBI
   evidence:
@@ -59,9 +61,9 @@ occurrences:
   taxon_id: NCBITaxon:28893
   taxon_source: NCBITaxon
   notes: Taxon id NCBITaxon:66889, as given by ChEBI, was merged into NCBITaxon:28893
-    by NCBI Taxonomy; rewritten at seed time. This taxon is also recorded as a producer,
-    from a different source and citation. The two corroborate each other rather than
-    duplicating.
+    by NCBI Taxonomy; rewritten at seed time. This taxon is also recorded as a producer.
+    Production and occurrence are distinct claims; their citations may refer to the
+    same publication. Publication independence has not been established.
   detection_context: ATCC21892
 related_records:
 - corpus: AntibioticMech
@@ -133,3 +135,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T10:45:17Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

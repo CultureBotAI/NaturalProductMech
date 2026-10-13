@@ -114,7 +114,8 @@ def test_withdrawal_requires_one_target(source, withdrawal, count):
 
 @pytest.mark.parametrize("field", [
     "reference", "rationale", "curator", "date", "source", "source_id",
-    *["expected_" + field for field in seed.MIBIG_WITHDRAWAL_CONTEXT],
+    *["expected_" + field for field in seed.MIBIG_WITHDRAWAL_CONTEXT
+      if field not in {"locus_from", "locus_to"}],
 ])
 @pytest.mark.parametrize("blank", ["", "  ", None])
 def test_withdrawal_requires_citation_rationale_and_context(withdrawal, field, blank):
@@ -181,3 +182,66 @@ def test_missing_action_does_not_allow_empty_methods(withdrawal):
     del withdrawal["action"]
     with pytest.raises(ValueError, match="no methods"):
         seed.load_mibig_locus_evidence_overrides([withdrawal])
+
+
+@pytest.mark.parametrize("field", ["expected_locus_from", "expected_locus_to"])
+@pytest.mark.parametrize("invalid", [None, "  ", "unknown", "-1", "1.5"])
+def test_withdrawal_rejects_invalid_bounds(withdrawal, field, invalid):
+    withdrawal[field] = invalid
+    with pytest.raises(ValueError, match="explicit pinned bounds"):
+        seed.load_mibig_locus_evidence_overrides([withdrawal])
+
+
+@pytest.mark.parametrize("field", ["expected_locus_from", "expected_locus_to"])
+def test_withdrawal_rejects_missing_bounds(withdrawal, field):
+    del withdrawal[field]
+    with pytest.raises(ValueError, match="explicit pinned bounds"):
+        seed.load_mibig_locus_evidence_overrides([withdrawal])
+
+
+@pytest.mark.parametrize("field", ["locus_from", "locus_to"])
+def test_explicit_empty_bound_is_still_a_drift_pin(source, withdrawal, field):
+    withdrawal["expected_" + field] = ""
+    with pytest.raises(ValueError, match="source context changed: " + field):
+        build([source], withdrawal)
+    source[field] = ""
+    assert build([source], withdrawal)[0]["biosynthetic_gene_clusters"][0][
+        "link_evidence_basis"] == "CLUSTER_UNSTATED"
+    source[field] = "1"
+    with pytest.raises(ValueError, match="source context changed: " + field):
+        build([source], withdrawal)
+
+
+def test_vibriobactin_transport_withdrawal_and_strain_are_claim_scoped():
+    source, = [row for row in seed.read_tsv(ROOT / "data/raw/mibig_compounds.tsv")
+               if row["mibig_accession"] == "BGC0002494"]
+    withdrawal, = [row for row in seed.read_tsv(seed.MIBIG_LOCUS_EVIDENCE_OVERRIDES)
+                   if row["source_id"] == "BGC0002494"]
+    strain, = [row for row in seed.read_tsv(seed.MIBIG_PRODUCER_STRAINS)
+               if row["source_id"] == "BGC0002494:1"]
+    original = copy.deepcopy(source)
+    inventories = {"mibig_compounds": [source]}
+    before, = seed.build_records(inventories)
+    after, = seed.build_records({**inventories,
+                                "mibig_locus_evidence_overrides": [withdrawal],
+                                "mibig_producer_strains": [strain]})
+    assert source == original
+    assert source["locus_from"] == source["locus_to"] == ""
+    assert before["chemical_structure"] == after["chemical_structure"]
+    assert before["source_concepts"] == after["source_concepts"]
+    producer, = after["producer_organisms"]
+    cluster, = after["biosynthetic_gene_clusters"]
+    assert producer["taxon_id"] == cluster["organism_taxon_id"] == "NCBITaxon:666"
+    assert producer["strain"] == "Lou15 (El Tor)"
+    assert producer["evidence_basis"] == "SOURCE_ASSERTION"
+    assert cluster["link_evidence_basis"] == "CLUSTER_UNSTATED"
+    assert cluster["genome_accession"] == "genbank:U52150.2"
+    assert "locus_evidence_methods" not in cluster
+    for claim in (producer, cluster):
+        assert claim["evidence"][0] == seed.mibig_evidence(source)[0]
+        qualification = claim["evidence"][1]
+        assert qualification["evidence_type"] == "CURATOR_INFERENCE"
+        assert qualification["reference"] == withdrawal["reference"]
+        assert "Heterologous expression" in qualification["notes"]
+    assert len(producer["evidence"]) == 3
+    assert len(cluster["evidence"]) == 2

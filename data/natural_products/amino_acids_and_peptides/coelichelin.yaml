@@ -185,8 +185,9 @@ occurrences:
     notes: ChEBI compound origin for CHEBI:80049
   taxon_id: NCBITaxon:100226
   taxon_source: NCBITaxon
-  notes: This taxon is also recorded as a producer, from a different source and citation.
-    The two corroborate each other rather than duplicating.
+  notes: This taxon is also recorded as a producer. Production and occurrence are
+    distinct claims; their citations may refer to the same publication. Publication
+    independence has not been established.
 bgc_class:
 - NRPS
 xrefs:
@@ -341,3 +342,7 @@ curation_history:
     SCO0492/UniProtKB:Q9RK14, with exact reference/CDS and chemical-identity checks.
     No primary-assay, reaction-order, producer, BGC or origin upgrade.
   llm_assisted: true
+- timestamp: '2026-10-13T10:46:06Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

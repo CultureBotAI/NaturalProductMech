@@ -269,8 +269,8 @@ def test_no_record_repeats_an_occurrence(records):
     grows with every occurrence source, because CyanoMetDB and NPAtlas would
     both overlap LOTUS heavily (#26).
 
-    Note what is NOT a duplicate: the same taxon from two different references
-    is two independent reports, which is more evidence rather than less.
+    Different reference strings are retained. This does not resolve DOI/PMID
+    aliases or establish independent publications.
     """
     offenders = []
     for record in records:
@@ -284,16 +284,15 @@ def test_no_record_repeats_an_occurrence(records):
     assert not offenders, f"repeated occurrences: {offenders[:5]}"
 
 
-def test_a_taxon_in_both_fields_says_it_is_corroboration(records):
-    """A producer that is also an occurrence looks like a failure to
-    deduplicate and is the opposite: two claims, two citations, two sources
-    (#27). The record has to say so, or a reader draws the wrong conclusion."""
+def test_taxon_overlap_does_not_claim_publication_independence(records):
+    """Distinct biological claims may cite the same publication (#891)."""
     offenders = []
     for record in records:
         producers = {p.get("taxon_id") for p in record.get("producer_organisms") or []}
         for occurrence in record.get("occurrences") or []:
             if occurrence.get("taxon_id") in producers and \
-                    "corroborate" not in (occurrence.get("notes") or ""):
+                    "Publication independence has not been established." not in \
+                    (occurrence.get("notes") or ""):
                 offenders.append((record["identifier"], occurrence.get("taxon_id")))
     assert not offenders, f"uncommented producer/occurrence overlap: {offenders[:5]}"
 

@@ -97,8 +97,9 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q10399964 This taxon is
-    also recorded as a producer, from a different source and citation. The two corroborate
-    each other rather than duplicating.
+    also recorded as a producer. Production and occurrence are distinct claims; their
+    citations may refer to the same publication. Publication independence has not
+    been established.
 bioactivities:
 - assay: 'Inhibitory Effects on Recombinant AOX Protein from US Patent US11565996:
     "Compounds for use as inhibitors of alternative oxidase or cytochrome bc1 complex"'
@@ -340,6 +341,10 @@ curation_history:
     step and BIOSYNTHESIS causal graph grounded to UniProtKB:A0A455R5K2.
   llm_assisted: true
 - timestamp: '2026-10-13T07:43:11Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T10:45:24Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.

@@ -104,8 +104,9 @@ occurrences:
     notes: ChEBI compound origin for CHEBI:138511
   taxon_id: NCBITaxon:285508
   taxon_source: NCBITaxon
-  notes: This taxon is also recorded as a producer, from a different source and citation.
-    The two corroborate each other rather than duplicating.
+  notes: This taxon is also recorded as a producer. Production and occurrence are
+    distinct claims; their citations may refer to the same publication. Publication
+    independence has not been established.
 bioactivities:
 - assay: Luminescence Cell-Based Primary HTS to Identify Inhibitors of MITF
   evidence:
@@ -271,3 +272,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T10:42:38Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

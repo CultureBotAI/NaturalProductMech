@@ -79,13 +79,13 @@ producer claims: 3407 (808 causal, 162 correlational)
   BGC_CORRELATED                        162
   SOURCE_ASSERTION                     2437
 
-cluster link claims: 3449 (1359 demonstrated)
+cluster link claims: 3449 (1358 demonstrated)
   CLUSTER_CORRELATED                    110
-  CLUSTER_DEMONSTRATED                 1359
+  CLUSTER_DEMONSTRATED                 1358
   CLUSTER_PREDICTED                       2
-  CLUSTER_UNSTATED                     1978
+  CLUSTER_UNSTATED                     1979
 
-records where a producer taxon is independently corroborated by a cited occurrence: 732
+records with a producer taxon also reported in a cited occurrence (publication independence not assessed): 732
 records whose only origin evidence is a gene cluster with no named host: 27
 
 These grade two different questions and they come apart. A producer
