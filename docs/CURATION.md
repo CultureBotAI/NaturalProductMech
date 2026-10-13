@@ -120,6 +120,27 @@ curator attribution. It does not change a BGC's host, infer a strain taxon ID,
 upgrade a grade or imply a species-wide experiment. Regenerate through the
 normal canary and guarded seeder, then verify reproduction and full QC.
 
+## MIBiG claim-specific reference corrections
+
+`curation/mibig_claim_references.tsv` corrects citation routing for one exact
+MIBiG compound row. It requires `source_id` (`BGC:compound_index`), the complete
+untouched row's `expected_source_row_sha256`, separate `producer_reference` and
+`locus_reference`, an inspected `source_reference` supporting the selection,
+`curator`, ISO `date` and `rationale`. Each reference must be a stable DOI, PMID
+or HTTPS URL. Missing/duplicate rows, unknown fields, malformed attribution,
+source drift, a withheld producer or an unemitted owner stop seeding. A
+concurrent structure replacement requires separate adjudication and is rejected.
+
+Only the selected citation changes on the two claims. It remains
+`DATABASE_ASSERTION`; a separate `CURATOR_INFERENCE` explains the routing and
+preserves the original citation, source level and complete row pin. Raw
+inventories and other corrections remain unchanged. This does not change a
+taxon, locus coordinate, chemistry or evidence grade. The initial BGC0002527
+decision routes its entry reference to its producer/locus instead of recycling
+its compound-bioactivity reference. It does not claim independent full-text
+verification or fix the extractor's generic selection for unreviewed rows.
+Run a canary, reproduction and full QC after a reviewed decision.
+
 ## MIBiG chemical xref exclusions
 
 `curation/mibig_xref_exclusions.tsv` withholds a reviewed nonexact PubChem or NPAtlas xref

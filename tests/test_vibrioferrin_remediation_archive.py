@@ -1,0 +1,104 @@
+"""Scoped dispositions preserve evidence and unfinished scientific work."""
+
+import gzip
+import hashlib
+import json
+import re
+from pathlib import Path, PurePosixPath
+
+import yaml
+
+ROOT = Path(__file__).resolve().parents[1]
+ARCHIVE = ROOT / "reviews/evidence/20261013-vibrioferrin-remediation"
+
+
+def digest(raw):
+    return hashlib.sha256(raw).hexdigest()
+
+
+def test_remediation_integrity_lineage_and_full_campaign():
+    manifest = json.loads((ARCHIVE / "manifest.json").read_text())
+    upstream_path = ROOT / manifest["upstream_manifest"]
+    assert digest(upstream_path.read_bytes()) == manifest["upstream_sha256"]
+    upstream = json.loads(upstream_path.read_text())
+    upstream_rows = {r["original_path"]: r
+                     for r in upstream["artifacts"] + upstream["reference_only_sources"]}
+    artifacts, rows, paths = {}, {}, set()
+    for row in manifest["artifacts"]:
+        relative = PurePosixPath(row["path"])
+        assert not relative.is_absolute() and ".." not in relative.parts
+        assert relative.parts[0] == "artifacts"
+        path = ARCHIVE / relative
+        assert not any(p.is_symlink() for p in (path, *path.parents))
+        assert path.resolve().is_relative_to(ARCHIVE.resolve())
+        stored = path.read_bytes()
+        raw = gzip.decompress(stored)
+        assert len(stored) == row["stored_bytes"] and digest(stored) == row["stored_sha256"]
+        assert len(raw) == row["bytes"] and digest(raw) == row["sha256"]
+        assert row["original_path"] not in artifacts
+        artifacts[row["original_path"]] = raw
+        rows[row["original_path"]] = row
+        paths.add(path)
+    assert paths == {p for p in (ARCHIVE / "artifacts").rglob("*") if p.is_file()}
+    final = json.loads(artifacts[manifest["final_verification"]["receipt"]])
+    assert final["exit_code"] == 0 and "28 passed" in artifacts[final["log"]].decode()
+    for original, raw in artifacts.items():
+        if original.endswith(".receipt.json"):
+            receipt = json.loads(raw)
+            assert receipt["started_at"] <= receipt["finished_at"]
+            if "log" in receipt:
+                assert digest(artifacts[receipt["log"]]) == receipt["log_sha256"]
+    qc, = [json.loads(raw) for path, raw in artifacts.items() if path.endswith("/qc.receipt.json")]
+    assert qc["exit_code"] == 0
+    assert "All NaturalProductMech quality gates passed." in artifacts[qc["log"]].decode()
+    scope, = [json.loads(raw) for path, raw in artifacts.items() if path.endswith("/scope-audit.json")]
+    assert scope["owners"] == 3115 and scope["components"] == 243
+    assert scope["unchanged_owners"] == 3113 and scope["immutable_prior_observations"] == 40
+    checkpoint = json.loads(artifacts[manifest["checkpoint"]])
+    prior_row = upstream_rows[upstream["checkpoint"]]
+    prior = json.loads(gzip.decompress((upstream_path.parent / prior_row["path"]).read_bytes()))
+    previous_stops = prior["access_stops_no_alternate_retrieval"]
+    assert checkpoint["access_stops_no_alternate_retrieval"][:len(previous_stops)] == previous_stops
+    assert len(checkpoint["access_stops_no_alternate_retrieval"]) == 224
+    assert len(checkpoint["all_review_observations"]) == 42
+    assert len(checkpoint["reviews"]) == 27 and checkpoint["partial_reviews"] == 26
+    assert checkpoint["unassessed_records"] == len(checkpoint["pending_in_priority_order"]) == 3088
+    assert checkpoint["findings"] == {"blocker": 9, "major": 7, "minor": 1}
+    owners = {r["path"] for r in checkpoint["records"]}
+    reviewed = {r["path"] for r in checkpoint["reviews"]}
+    pending = set(checkpoint["pending_in_priority_order"])
+    assert len(owners) == 3115 and reviewed.isdisjoint(pending) and owners == reviewed | pending
+    assert checkpoint["queue_verification"]["owner_paths"] == 3115
+    assert checkpoint["unpublished_research_handoff"]["saved_reviews"] == 0
+    caps, = [json.loads(raw) for path, raw in artifacts.items()
+             if path.endswith("capsular-access-receipts.json")]
+    assert len(caps) == 6 and all(r["receipt"]["status"] == 403 for r in caps)
+    for observation in checkpoint["all_review_observations"]:
+        assert digest((ROOT / observation["yaml"]).read_bytes()) == observation["yaml_sha256"]
+        assert digest((ROOT / observation["markdown"]).read_bytes()) == observation["markdown_sha256"]
+    assert len(manifest["reviews"]) == 2
+    for row in manifest["reviews"]:
+        raw = (ROOT / row["path"]).read_bytes()
+        assert digest(raw) == row["sha256"]
+        assert digest((ROOT / row["markdown"]).read_bytes()) == row["markdown_sha256"]
+        review = yaml.safe_load(raw)
+        assert review["source"]["git_revision"] == row["source_base"]
+        assert review["completion"] == "partial" and review["verdict"] == "needs_curation"
+        temporary = {p.rstrip(".") for p in re.findall(r"/private/tmp/[A-Za-z0-9_./-]+", raw.decode())}
+        assert temporary <= rows.keys() | upstream_rows.keys()
+        snapshots = {r["evidence_id"]: r for r in row["evidence_snapshots"]}
+        assert snapshots.keys() == {e["evidence_id"] for e in review["evidence"] if "snapshot_sha256" in e}
+        for evidence in review["evidence"]:
+            snapshot = snapshots[evidence["evidence_id"]]
+            source = rows if snapshot["archive"] == "current" else upstream_rows
+            assert snapshot["sha256"] == evidence["snapshot_sha256"]
+            assert source[snapshot["original_path"]]["sha256"] == snapshot["sha256"]
+        chebi = review["targets"][0]["target_id"] == "CHEBI:84585"
+        prior = "20261013T193947Z-vibrioferrin" if chebi else "20261013T193946Z-vibrioferrin-2"
+        unresolved = "F3" if chebi else "F1"
+        for finding in review["findings"]:
+            assert finding["status"] == ("open" if finding["finding_id"] == unresolved else "resolved")
+            assert finding["previous_occurrences"] == [{
+                "repository": "CultureBotAI/NaturalProductMech", "review_id": prior,
+                "finding_id": finding["finding_id"],
+            }]
