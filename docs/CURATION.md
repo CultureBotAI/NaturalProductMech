@@ -99,6 +99,24 @@ This corrects BGC0000892 version 4: its experiments concern DSM50341, not the
 BSR3 genome it lists. It does not relabel either strain or prove a native
 protein mapping.
 
+## MIBiG producer strain context
+
+`curation/mibig_producer_strains.tsv` adds an inspected source's strain to one
+producer claim, keyed by `BGC accession:compound_index`. It pins the complete
+untouched source row with `expected_source_row_sha256`, computed with
+`naturalproductmech.curate.structure_corrections.row_digest`. Each row requires
+`strain`, a stable DOI/PMID/HTTPS `reference`, `curator`, ISO `date` and `rationale`.
+Missing or duplicate source rows, unknown fields, invalid attribution and any
+source drift stop seeding. A simultaneous structure replacement needs separate
+adjudication and is rejected for a qualified producer.
+
+The original database assertion, taxon identifier and evidence grade remain.
+The qualification sets only `producer_organisms[].strain` and appends separate
+claim-level `CURATOR_INFERENCE` evidence with citation, rationale, source pin and
+curator attribution. It does not change a BGC's host, infer a strain taxon ID,
+upgrade a grade or imply a species-wide experiment. Regenerate through the
+normal canary and guarded seeder, then verify reproduction and full QC.
+
 ## What a re-seed keeps, and what it overwrites
 
 The corpus is generated, so a re-seed rebuilds every record. What it does *not*

@@ -1,0 +1,800 @@
+# MIBiG-backed prodigiosin: congener attribution and strain provenance review
+
+- Review: 20261013T085546Z-prodigiosin-2
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-13T08:35:07.575418Z
+- Finished UTC: 2026-10-13T08:55:46.471179Z
+- Reviewer: Codex (self_review)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+One major congener-attribution finding and one minor strain-provenance finding. Exact source identity, versioned cluster annotations and computed filing are supported; several occurrence claims and pinned chemistry remain incomplete.
+
+## Scope And Provenance
+
+Historical observation of base 95b25be273d45a087df8d1262303713a2a2d8c17: one exactly resolved prodigiosin owner; its same-label sibling is identity context, not interchangeable. Campaign denominator remains 3115 owners and 243 components.
+
+Selection: Next pending exact path in the exhaustive campaign checkpoint: data/natural_products/alkaloids/prodigiosin-2.yaml.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: git_commit at Git base 95b25be273d45a087df8d1262303713a2a2d8c17.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-d764a5151a | data/natural_products/alkaloids/prodigiosin-2.yaml | generated | prodigiosin |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| prodigiosin-2-inspect | passed | True | naturalproductmech:mibig-d764a5151a | Canonical target and maintained-input capture before assessment. |
+| strict-prodigiosin-2 | failed | False | naturalproductmech:mibig-d764a5151a | Initial just invocation could not open the default uv cache. Superseded by successful direct native validator. |
+| strict-prodigiosin-2-retry | failed | False | naturalproductmech:mibig-d764a5151a | Temporary-cache retry could not resolve hatchling without network. Superseded by successful direct native validator. |
+| strict-prodigiosin-2-direct | passed | True | naturalproductmech:mibig-d764a5151a | Native closed-schema validator: one owner, zero errors; complete-mechanism reader resolved zero graphs. |
+| qc | failed | False | naturalproductmech:mibig-d764a5151a | Initial just qc could not open the default uv cache; superseded by the permitted retry. |
+| qc-retry | passed | True | naturalproductmech:mibig-d764a5151a | Full native quality gate passed: 623 tests passed, 3 skipped; all 3115 owners validate and reproduce. Deterministic validation does not certify the scientific claims. |
+| corpus | passed | True | naturalproductmech:mibig-d764a5151a | Documented complete corpus consistency check; not a sampled substitute. |
+| queue | passed | True | naturalproductmech:mibig-d764a5151a | Fresh exhaustive native review queue, retained in private workspace; no native status edits. |
+| labels | passed | True | naturalproductmech:mibig-d764a5151a | Exit zero with 499 corpus warning mismatches and 4649 skipped-no-adapter pairs; not a universal identifier pass. |
+| pinned-chemistry | failed | True | naturalproductmech:mibig-d764a5151a | Exact pinned RDKit version has no macOS x86_64 wheel; chemical recalculation unavailable. |
+| Every nearest primary source and exact chemical form | unavailable | True | naturalproductmech:mibig-d764a5151a | Access stops and uninspected full texts prevent complete occurrence, strain, and exact chemical-form adjudication. |
+| Structured expression-module cross-check | not_applicable | False | naturalproductmech:mibig-d764a5151a | No gene, regulator, protein-example, pathway-step or transcriptomic claim is encoded in this owner. Official MIBiG structured annotations were inspected for the BGC assertions; expression-module membership cannot establish chemical occurrence. |
+
+## Scientific And Domain Assessments
+
+### Exact owner, chemical cross-reference and sibling boundary
+
+identity: supported. Targets: naturalproductmech:mibig-d764a5151a.
+
+Minted identity agrees exactly with PubChem and three MIBiG structures. The ChEBI-backed sibling has a different Standard InChI and key; no merge, wrong-identity finding or chemical equivalence is inferred from the shared label.
+
+### Computed filing versus asserted biosynthetic class
+
+consistency: supported. Targets: naturalproductmech:mibig-d764a5151a.
+
+ALKALOIDS and Proline alkaloids match the pinned NPClassifier row; class_results is empty and stays empty. PKS is the separately asserted cluster class. Taxon-group membership remains source-derived, not proof of a particular occurrence.
+
+### All three producer and cluster assertions
+
+evidence: supported. Targets: naturalproductmech:mibig-d764a5151a.
+
+SOURCE_ASSERTION and CLUSTER_UNSTATED match all three versioned annotations. Native strain qualifiers should be preserved before stronger causal grading; no grade was changed.
+
+### All fourteen occurrence rows
+
+evidence: concern. Targets: naturalproductmech:mibig-d764a5151a.
+
+Three occurrence rows cite papers whose inspected abstracts identify different congeners; eight rows remain source-access limited. Three other rows have bounded named-compound support, not full exact-form verification.
+
+Zero-based row dispositions: 0 Hahella/Kim abstract supports named prodigiosin; 1,6 DOI9772-5 challenged; 2,7 DOI4324-3 challenged; 3,8 DOI9117-x challenged; 4,9 Feitelson concerns undecylprodigiosin; 5,10 JB.00017-11 challenged; 11 Kawasaki concerns prodigiosin R1; 12 Brecht abstract supports the named pigment; 13 Harris supports S. marcescens ATCC274. The five-paper duplication across S. albidoflavus and S. coelicolor also needs taxonomic/statement-level investigation; no automatic remapping is justified.
+
+### Mechanism and other optional claim surfaces
+
+completeness: unknown. Targets: naturalproductmech:mibig-d764a5151a.
+
+No encoded graph, pathway, assay, target, clinical or dataset assertion needs edge-level validation. Published biosynthetic work is a curation lead, not an inferred complete mechanism; absence of an optional field is not a scientific negative.
+
+## Findings
+
+### F1: Related prodiginine citations are attached to exact prodigiosin occurrences
+
+major / open / confirmed; issue key: prodigiosin-lotus-congener-attribution.
+
+LOTUS rows9283/9288 cite an undecylprodigiosin study; row9290 cites prodigiosin R1 in the roseophilin producer. Owner occurrences[4], [9] and [11] instead assert detection of its C20H25N3O prodigiosin structure. This is a claim/source mismatch, not proof those taxa never make prodigiosin. No transfer to another owner is authorized without exact chemical and taxonomic review.
+
+### F2: Serratia producer assertions omit available strain qualifiers
+
+minor / open / confirmed; issue key: prodigiosin-serratia-strain-provenance.
+
+Producer rows0/1 retain broad source taxon labels without ATCC39006/ATCC274 in strain or notes, although their cited abstract names these strains. Preserve the source taxon identifiers while recording strain context; do not silently identify ATCC39006 as S. marcescens.
+
+## Recommended Actions And Acceptance Checks
+
+### correct-occurrences
+
+Reassess the three exact LOTUS triples and implement a hash-pinned, provenance-preserving source correction or exclusion through a tested maintained consumer. decisions.tsv is reserved and does not alter seeding. Do not repair generated YAML directly or silently retarget to a congener.
+
+- Exact disputed triples no longer claim this structure unless a nearest primary passage supports it.
+- Retain original frozen-source provenance and unaffected occurrences; validate exact compound and taxon before any reassignment.
+- Dry-run/canary, strict validation, reproduction and full QC pass without scientific status promotion.
+
+### preserve-strains
+
+Add reviewed strain context through maintained producer provenance; keep conservative evidence grades unless exact experiments are separately verified.
+
+- ATCC39006 and ATCC274 are distinguished in the generated claims.
+- Taxon identifiers are not guessed, original database provenance remains, and reproduction passes.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/natural_products/alkaloids/prodigiosin-2.yaml; Complete YAML, including curation_history | partial | Entire owner and audit trail read. No inline or referenced graphs; no quantitative assays, molecular targets, clinical claims or datasets. Native SEEDED status retained. |
+| inventory | /private/tmp/npmech-prodigiosin-review-m1Ai8z/inventory-audit.json | partial | Structured scan of complete six TSV inventories retains exact row numbers and keys; four live versioned annotations match stored compound SMILES, taxon, genome accession and active status. |
+| receipts | /private/tmp/npmech-prodigiosin-review-m1Ai8z | partial | Actual inspect, strict, corpus, queue, full-QC, label and chemistry execution receipts preserve commands, UTC timing, exit codes and log hashes. Initial environment failures are retained, not counted as passes. |
+| capture | /private/tmp/npmech-prodigiosin-review-m1Ai8z/capture.json | partial | Ignored-inclusive Path.rglob inventory and SHA256 checks confirm all 3115 owners, 243 components and nine prior review observations match the post-merge checkpoint. |
+| rubric | .claude/skills/curate-yaml-record/references/review-checklist.md | supports | Exact compound/taxon and claim-level evidence rules, strain scope, generated ownership, and native REVIEWED gates. |
+| pubchem | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5351169/property/InChI,InChIKey,MolecularFormula,IsomericSMILES/JSON | supports | CID5351169 exactly matches owner SMILES, Standard InChI and WKGQSEFBQTWRPT-UUPRNIFOSA-N; formula C20H25N3O. This does not establish tautomer equivalence to CHEBI:82758. |
+| harris | https://www.microbiologyresearch.org/content/journal/micro/10.1099/mic.0.27222-0; Abstract; PMID15528645 | partial | Abstract identifies S. marcescens ATCC274 and Serratia sp. ATCC39006, cloned and heterologously expressed clusters, and 14 versus 15 ORFs. Full methods and structures were not inspected. |
+| kim | https://pubmed.ncbi.nlm.nih.gov/17381736/; Abstract; DOI10.1111/j.1365-2672.2006.03172.x | partial | Abstract identifies prodigiosin in KCTC2396 alongside distinct congeners. It supports named-compound occurrence, not exact tautomer/geometry or gene-by-gene causality. |
+| feitelson | https://www.microbiologyresearch.org/content/journal/micro/10.1099/00221287-131-9-2431; Abstract, opening and concluding paragraphs | refutes | Publisher abstract identifies undecylprodigiosin in S. coelicolor A3(2), not this exact prodigiosin structure. Homology and mutant work cannot be transferred across congeners. |
+| kawasaki | https://www.nature.com/articles/ja200927; Abstract | refutes | Public abstract identifies prodigiosin R1 and roseophilin in S. griseoviridis 2464-S5. This is not an exact prodigiosin occurrence assertion; full text is subscription-limited. |
+| brecht | https://pubmed.ncbi.nlm.nih.gov/543774/; Abstract; DOI10.1007/BF00411284 | partial | Abstract mentions prodigiosin in S. olivaceus strain Tu1379, alongside imacidins. Exact chemical-form characterization is not supplied in the inspected abstract. |
+| BGC0000258 | https://mibig.secondarymetabolites.org/repository/BGC0000258.3/annotations.json | supports | Version3 is active and names prodigiosin, its source SMILES and expected native taxon/genome. Locus evidence list is empty, agreeing with conservative source grades. |
+| BGC0000259 | https://mibig.secondarymetabolites.org/repository/BGC0000259.3/annotations.json | supports | Version3 is active and names prodigiosin, its source SMILES and expected native taxon/genome. Locus evidence list is empty, agreeing with conservative source grades. |
+| BGC0000260 | https://mibig.secondarymetabolites.org/repository/BGC0000260.3/annotations.json | supports | Version3 is active and names prodigiosin, its source SMILES and expected native taxon/genome. Locus evidence list is empty, agreeing with conservative source grades. |
+
+## Limits And Additional Notes
+
+- Partial scientific observation, not a completed record review, native status promotion, curation event, or evidence that all 3115 owners have been reviewed.
+- Pinned RDKit 2026.3.5 cannot run on this x86_64 macOS environment because that release has no compatible wheel. No substitute version was used. Internal chemistry and tautomer/stereochemical equivalence remain unverified.
+- Versioned live MIBiG annotations were checked; an unversioned latest-release comparison and independent GenBank sequence validation were not completed. Active status at a versioned endpoint is not a claim that no newer version exists.
+- Repository-wide identifier-label validation is not exhaustive identifier verification: 499 warning-level mismatches and 4649 skipped-no-adapter pairs were retained. No full sequence, Wikidata statement, DOI full-text, or taxonomy revision audit is inferred from this gate.
+- This observation assesses the captured base without changing its scientific owners, raw inventories, pages or curation history. Separately authorized publication and remediation are not performed by saving this review and require their own dispositions.
+- All inherited access stops remain binding. This continuation added challenges for PMID22777253/DOI10.1007/s10482-012-9772-5, PMID28785950/DOI10.1007/s11427-017-9117-x, PMID30306508/DOI10.1007/s11033-018-4324-3, PMC3133208/PMID21515779/DOI10.1128/JB.00017-11, and PMC1572367/PMID11015311/DOI10.1038/sj.bjp.0703614. DOI10.1039/C8GC03728K full text returned 403. DOI10.1038/ja.2009.27 exposed only a subscription preview. No alternate full-text retrieval was attempted after these stops.
+- No primary source assessment is inferred for the eight access-limited occurrence rows. Source-supported summaries are bounded by inspected abstracts, not full studies. Two warning-level label pairs concern NCBITaxon:616 (source Serratia sp. versus canonical Serratia sp. (in: enterobacteria)).
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+started_at: '2026-10-13T08:35:07.575418Z'
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: self_review
+  independence_basis: Same assistant/thread as prior repository work; direct source-checking
+    pass, not an independent human or agent review.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+source:
+  git_revision: 95b25be273d45a087df8d1262303713a2a2d8c17
+  state: git_commit
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: 49e2ab03c7e82013e9d68356de2c9965c9f8517a3408a44124076f4ca1b529cd
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/decisions.tsv
+    sha256: 7214a74975fb2cb65521da18dd14ea1c65665f50060106976dc0db9caf887805
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 0b2e8b991c926f9a67a3094964b0335dd1cd347fbf548674fa273db8fac3a4b2
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: 5b1edc057cdcc732f61de2964cd175fa3bc2dca929c5d2823142f61313545a7e
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: bf38e4f0c7e4bcbdf184a4e7b8b024752251e8f34c015c0b82cedca98a8a5729
+    role: context
+  - path: data/natural_products/alkaloids/prodigiosin-2.yaml
+    sha256: 0fbbeacf7759efc05c6cfeae61e6b74f57629831e9e41b621690b18ad3ee7faf
+    role: target
+  - path: data/natural_products/alkaloids/prodigiosin.yaml
+    sha256: 2fad9a2a3e1002218191a7b4c6bf211f7b8e13de4c2413a11f6234c67e991754
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: 373f049029be3db137e062ff5f872a2400a9d5b423f3e108ea44ebde2f8dcc7d
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: docs/CURATION.md
+    sha256: 21ad646576ece0cb33a7a6746c22382c71b60f6ae991a422a537b8454c1216fb
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: 30c7007e57806c245674ce922e0f8c485b1a8a12a9f9fb95850ba6ee4f8cddc2
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: pyproject.toml
+    sha256: 02505a46585e870eac7333f31a6773df51465ef13969d4d490fbc0247931d85c
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: src/naturalproductmech/schema/history.yaml
+    sha256: b01b06f1b9a37db205c26c31ec0fd910690848507c7e1bfb73b424ac0829c52d
+    role: context
+  - path: src/naturalproductmech/schema/mech_shared.yaml
+    sha256: c2e7054fd32635e380c698282bd886a9105861009b9f0474f02bb1b80865e895
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: uv.lock
+    sha256: c62a5739e3ffeb12cc57b3bf12a31dcf9cdfbf00b417f4ba3a801d51ef9efbe3
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-d764a5151a
+  path: data/natural_products/alkaloids/prodigiosin-2.yaml
+  label: prodigiosin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Imported exact chemical, producer and BGC assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Imported organism-reference triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Imported ChEBI identity and definition
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_origins.tsv
+    role: Imported ChEBI occurrence assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/antibioticmech_inchikeys.tsv
+    role: Pinned same-structure sibling inventory
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Harmonization and generated record emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_lotus.py
+    role: Occurrence source extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Cluster source extraction
+scope:
+  description: 'Historical observation of base 95b25be273d45a087df8d1262303713a2a2d8c17:
+    one exactly resolved prodigiosin owner; its same-label sibling is identity context,
+    not interchangeable. Campaign denominator remains 3115 owners and 243 components.'
+  selection: 'Next pending exact path in the exhaustive campaign checkpoint: data/natural_products/alkaloids/prodigiosin-2.yaml.'
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-d764a5151a
+checks:
+- check_id: prodigiosin-2-inspect
+  name: prodigiosin-2-inspect
+  status: passed
+  required: true
+  summary: Canonical target and maintained-input capture before assessment.
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    scripts/record_review.py inspect --targets /private/tmp/npmech-prodigiosin-review-m1Ai8z/prodigiosin-2-targets.json
+    --input docs/CURATION.md --input docs/HARMONIZATION.md --input docs/record-review-profile.md
+    --input docs/record-reviews.md --input CLAUDE.md --input justfile --input conf/record_review.yaml
+    --input .claude/skills/review-yaml-record/SKILL.md --input .claude/skills/curate-yaml-record/references/review-checklist.md
+    --input src/naturalproductmech/schema/naturalproductmech.yaml --input src/naturalproductmech/schema/mech_shared.yaml
+    --input src/naturalproductmech/schema/history.yaml --input schema/record_review.yaml
+    --input conf/producer_evidence.tsv --input conf/id_label_targets.yaml --input
+    data/raw/corpus_taxa.obo --input data/raw/MANIFEST.yaml --input data/natural_products/PATHS.tsv
+    --input curation/decisions.tsv --input curation/mibig_locus_evidence_overrides.tsv
+    --input curation/mibig_structure_corrections.tsv --input pyproject.toml --input
+    uv.lock --input data/natural_products/alkaloids/prodigiosin.yaml --input data/natural_products/alkaloids/prodigiosin-2.yaml
+  exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-d764a5151a
+  evidence_ids:
+  - receipts
+- check_id: strict-prodigiosin-2
+  name: strict-prodigiosin-2
+  status: failed
+  required: false
+  summary: Initial just invocation could not open the default uv cache. Superseded
+    by successful direct native validator.
+  command: just validate-strict data/natural_products/alkaloids/prodigiosin-2.yaml
+    --out /private/tmp/npmech-prodigiosin-review-m1Ai8z/strict-prodigiosin-2.tsv
+  exit_code: 2
+  target_ids:
+  - naturalproductmech:mibig-d764a5151a
+  evidence_ids:
+  - receipts
+- check_id: strict-prodigiosin-2-retry
+  name: strict-prodigiosin-2-retry
+  status: failed
+  required: false
+  summary: Temporary-cache retry could not resolve hatchling without network. Superseded
+    by successful direct native validator.
+  command: env UV_CACHE_DIR=/private/tmp/npmech-prodigiosin-review-m1Ai8z/uv-cache
+    just validate-strict data/natural_products/alkaloids/prodigiosin-2.yaml --out
+    /private/tmp/npmech-prodigiosin-review-m1Ai8z/strict-prodigiosin-2.tsv
+  exit_code: 1
+  target_ids:
+  - naturalproductmech:mibig-d764a5151a
+  evidence_ids:
+  - receipts
+- check_id: strict-prodigiosin-2-direct
+  name: strict-prodigiosin-2-direct
+  status: passed
+  required: true
+  summary: 'Native closed-schema validator: one owner, zero errors; complete-mechanism
+    reader resolved zero graphs.'
+  command: .venv/bin/python scripts/validate_strict.py data/natural_products/alkaloids/prodigiosin-2.yaml
+    --out /private/tmp/npmech-prodigiosin-review-m1Ai8z/strict-prodigiosin-2.tsv
+  exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-d764a5151a
+  evidence_ids:
+  - receipts
+- check_id: qc
+  name: qc
+  status: failed
+  required: false
+  summary: Initial just qc could not open the default uv cache; superseded by the
+    permitted retry.
+  command: just qc
+  exit_code: 2
+  target_ids:
+  - naturalproductmech:mibig-d764a5151a
+  evidence_ids:
+  - receipts
+- check_id: qc-retry
+  name: qc-retry
+  status: passed
+  required: true
+  summary: 'Full native quality gate passed: 623 tests passed, 3 skipped; all 3115
+    owners validate and reproduce. Deterministic validation does not certify the scientific
+    claims.'
+  command: env UV_CACHE_DIR=/private/tmp/npmech-prodigiosin-review-m1Ai8z/uv-cache
+    just qc
+  exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-d764a5151a
+  evidence_ids:
+  - receipts
+- check_id: corpus
+  name: corpus
+  status: passed
+  required: true
+  summary: Documented complete corpus consistency check; not a sampled substitute.
+  command: .venv/bin/python scripts/verify_corpus.py --summary
+  exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-d764a5151a
+  evidence_ids:
+  - receipts
+- check_id: queue
+  name: queue
+  status: passed
+  required: true
+  summary: Fresh exhaustive native review queue, retained in private workspace; no
+    native status edits.
+  command: .venv/bin/python scripts/curation_worklist.py --review-records --limit
+    0 --tsv /private/tmp/npmech-prodigiosin-review-m1Ai8z/review-queue.tsv
+  exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-d764a5151a
+  evidence_ids:
+  - receipts
+- check_id: labels
+  name: labels
+  status: passed
+  required: true
+  summary: Exit zero with 499 corpus warning mismatches and 4649 skipped-no-adapter
+    pairs; not a universal identifier pass.
+  command: env UV_CACHE_DIR=/private/tmp/npmech-prodigiosin-review-m1Ai8z/uv-cache
+    uv run python scripts/validate_id_label_correspondence.py -c conf/id_label_targets.yaml
+    --report /private/tmp/npmech-prodigiosin-review-m1Ai8z/labels.tsv
+  exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-d764a5151a
+  evidence_ids:
+  - receipts
+- check_id: pinned-chemistry
+  name: pinned-chemistry
+  status: failed
+  required: true
+  summary: Exact pinned RDKit version has no macOS x86_64 wheel; chemical recalculation
+    unavailable.
+  command: env UV_CACHE_DIR=/private/tmp/npmech-prodigiosin-review-m1Ai8z/uv-cache
+    uv run --isolated --no-project --with rdkit==2026.3.5 --with numpy==2.2.6 --with
+    pyyaml python -c 'from rdkit import rdBase; print(rdBase.rdkitVersion)'
+  exit_code: 1
+  target_ids:
+  - naturalproductmech:mibig-d764a5151a
+  evidence_ids:
+  - receipts
+- check_id: primary-completeness
+  name: Every nearest primary source and exact chemical form
+  status: unavailable
+  required: true
+  summary: Access stops and uninspected full texts prevent complete occurrence, strain,
+    and exact chemical-form adjudication.
+  target_ids:
+  - naturalproductmech:mibig-d764a5151a
+- check_id: imodulondb
+  name: Structured expression-module cross-check
+  status: not_applicable
+  required: false
+  summary: No gene, regulator, protein-example, pathway-step or transcriptomic claim
+    is encoded in this owner. Official MIBiG structured annotations were inspected
+    for the BGC assertions; expression-module membership cannot establish chemical
+    occurrence.
+  target_ids:
+  - naturalproductmech:mibig-d764a5151a
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/natural_products/alkaloids/prodigiosin-2.yaml
+  accessed_at: '2026-10-13T08:55:44.626441Z'
+  support: partial
+  summary: Entire owner and audit trail read. No inline or referenced graphs; no quantitative
+    assays, molecular targets, clinical claims or datasets. Native SEEDED status retained.
+  locator: Complete YAML, including curation_history
+  snapshot_sha256: 0fbbeacf7759efc05c6cfeae61e6b74f57629831e9e41b621690b18ad3ee7faf
+- evidence_id: inventory
+  kind: record_content
+  reference: /private/tmp/npmech-prodigiosin-review-m1Ai8z/inventory-audit.json
+  accessed_at: '2026-10-13T08:55:44.626677Z'
+  support: partial
+  summary: Structured scan of complete six TSV inventories retains exact row numbers
+    and keys; four live versioned annotations match stored compound SMILES, taxon,
+    genome accession and active status.
+  snapshot_sha256: eb638a9bb10b0bf06bfc25fa57fae6f32b285f8f77d149e156b0a413ffddc7d5
+  search_scope: Complete named TSVs parsed with csv.DictReader; ignored files included.
+    Both owner files read completely. Relevant curation paths searched with rg --hidden
+    --no-ignore; no record-only correction is assumed.
+- evidence_id: receipts
+  kind: validation
+  reference: /private/tmp/npmech-prodigiosin-review-m1Ai8z
+  accessed_at: '2026-10-13T08:55:44.626832Z'
+  support: partial
+  summary: Actual inspect, strict, corpus, queue, full-QC, label and chemistry execution
+    receipts preserve commands, UTC timing, exit codes and log hashes. Initial environment
+    failures are retained, not counted as passes.
+- evidence_id: capture
+  kind: validation
+  reference: /private/tmp/npmech-prodigiosin-review-m1Ai8z/capture.json
+  accessed_at: '2026-10-13T08:55:44.626859Z'
+  support: partial
+  summary: Ignored-inclusive Path.rglob inventory and SHA256 checks confirm all 3115
+    owners, 243 components and nine prior review observations match the post-merge
+    checkpoint.
+  snapshot_sha256: 2d47ab2c1b0192bebf9b53d384f2f23324d51ae19321db8605adc5e7007317f7
+- evidence_id: rubric
+  kind: record_content
+  reference: .claude/skills/curate-yaml-record/references/review-checklist.md
+  accessed_at: '2026-10-13T08:55:44.626962Z'
+  support: supports
+  summary: Exact compound/taxon and claim-level evidence rules, strain scope, generated
+    ownership, and native REVIEWED gates.
+- evidence_id: pubchem
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5351169/property/InChI,InChIKey,MolecularFormula,IsomericSMILES/JSON
+  accessed_at: '2026-10-13T08:55:44.627169Z'
+  support: supports
+  summary: CID5351169 exactly matches owner SMILES, Standard InChI and WKGQSEFBQTWRPT-UUPRNIFOSA-N;
+    formula C20H25N3O. This does not establish tautomer equivalence to CHEBI:82758.
+  snapshot_sha256: fe294123f1560bbff5453350179142a364be10e5f976633ea1107dfc0e4def67
+- evidence_id: harris
+  kind: primary_source
+  reference: https://www.microbiologyresearch.org/content/journal/micro/10.1099/mic.0.27222-0
+  accessed_at: '2026-10-13T08:55:44.627276Z'
+  support: partial
+  summary: Abstract identifies S. marcescens ATCC274 and Serratia sp. ATCC39006, cloned
+    and heterologously expressed clusters, and 14 versus 15 ORFs. Full methods and
+    structures were not inspected.
+  locator: Abstract; PMID15528645
+- evidence_id: kim
+  kind: primary_source
+  reference: https://pubmed.ncbi.nlm.nih.gov/17381736/
+  accessed_at: '2026-10-13T08:55:44.627285Z'
+  support: partial
+  summary: Abstract identifies prodigiosin in KCTC2396 alongside distinct congeners.
+    It supports named-compound occurrence, not exact tautomer/geometry or gene-by-gene
+    causality.
+  locator: Abstract; DOI10.1111/j.1365-2672.2006.03172.x
+- evidence_id: feitelson
+  kind: primary_source
+  reference: https://www.microbiologyresearch.org/content/journal/micro/10.1099/00221287-131-9-2431
+  accessed_at: '2026-10-13T08:55:44.627289Z'
+  support: refutes
+  summary: Publisher abstract identifies undecylprodigiosin in S. coelicolor A3(2),
+    not this exact prodigiosin structure. Homology and mutant work cannot be transferred
+    across congeners.
+  locator: Abstract, opening and concluding paragraphs
+- evidence_id: kawasaki
+  kind: primary_source
+  reference: https://www.nature.com/articles/ja200927
+  accessed_at: '2026-10-13T08:55:44.627294Z'
+  support: refutes
+  summary: Public abstract identifies prodigiosin R1 and roseophilin in S. griseoviridis
+    2464-S5. This is not an exact prodigiosin occurrence assertion; full text is subscription-limited.
+  locator: Abstract
+- evidence_id: brecht
+  kind: primary_source
+  reference: https://pubmed.ncbi.nlm.nih.gov/543774/
+  accessed_at: '2026-10-13T08:55:44.627297Z'
+  support: partial
+  summary: Abstract mentions prodigiosin in S. olivaceus strain Tu1379, alongside
+    imacidins. Exact chemical-form characterization is not supplied in the inspected
+    abstract.
+  locator: Abstract; DOI10.1007/BF00411284
+- evidence_id: BGC0000258
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000258.3/annotations.json
+  accessed_at: '2026-10-13T08:55:44.627304Z'
+  support: supports
+  summary: Version3 is active and names prodigiosin, its source SMILES and expected
+    native taxon/genome. Locus evidence list is empty, agreeing with conservative
+    source grades.
+  snapshot_sha256: 3f3c7e614de0024fe33a7cda4eabc179ed622e17588a319ecddcad57f03f5886
+- evidence_id: BGC0000259
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000259.3/annotations.json
+  accessed_at: '2026-10-13T08:55:44.627410Z'
+  support: supports
+  summary: Version3 is active and names prodigiosin, its source SMILES and expected
+    native taxon/genome. Locus evidence list is empty, agreeing with conservative
+    source grades.
+  snapshot_sha256: b31ae607f9467b5c8eb3fdd70703f938d151d9c815b2368a74838ca36c0f6f34
+- evidence_id: BGC0000260
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000260.3/annotations.json
+  accessed_at: '2026-10-13T08:55:44.627507Z'
+  support: supports
+  summary: Version3 is active and names prodigiosin, its source SMILES and expected
+    native taxon/genome. Locus evidence list is empty, agreeing with conservative
+    source grades.
+  snapshot_sha256: bd0d6ec91541591490ef75992ecbc4c1742f6c403b761b06710a7b827500a7f5
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact owner, chemical cross-reference and sibling boundary
+  outcome: supported
+  summary: Minted identity agrees exactly with PubChem and three MIBiG structures.
+    The ChEBI-backed sibling has a different Standard InChI and key; no merge, wrong-identity
+    finding or chemical equivalence is inferred from the shared label.
+  target_ids:
+  - naturalproductmech:mibig-d764a5151a
+  evidence_ids:
+  - owner
+  - inventory
+  - pubchem
+- assessment_id: classification
+  area: consistency
+  topic: Computed filing versus asserted biosynthetic class
+  outcome: supported
+  summary: ALKALOIDS and Proline alkaloids match the pinned NPClassifier row; class_results
+    is empty and stays empty. PKS is the separately asserted cluster class. Taxon-group
+    membership remains source-derived, not proof of a particular occurrence.
+  target_ids:
+  - naturalproductmech:mibig-d764a5151a
+  evidence_ids:
+  - owner
+  - inventory
+- assessment_id: producers
+  area: evidence
+  topic: All three producer and cluster assertions
+  outcome: supported
+  summary: SOURCE_ASSERTION and CLUSTER_UNSTATED match all three versioned annotations.
+    Native strain qualifiers should be preserved before stronger causal grading; no
+    grade was changed.
+  target_ids:
+  - naturalproductmech:mibig-d764a5151a
+  evidence_ids:
+  - BGC0000258
+  - BGC0000259
+  - BGC0000260
+  - harris
+  - kim
+- assessment_id: occurrences
+  area: evidence
+  topic: All fourteen occurrence rows
+  outcome: concern
+  summary: Three occurrence rows cite papers whose inspected abstracts identify different
+    congeners; eight rows remain source-access limited. Three other rows have bounded
+    named-compound support, not full exact-form verification.
+  target_ids:
+  - naturalproductmech:mibig-d764a5151a
+  evidence_ids:
+  - owner
+  - inventory
+  - feitelson
+  - kawasaki
+  - harris
+  - kim
+  - brecht
+  details: 'Zero-based row dispositions: 0 Hahella/Kim abstract supports named prodigiosin;
+    1,6 DOI9772-5 challenged; 2,7 DOI4324-3 challenged; 3,8 DOI9117-x challenged;
+    4,9 Feitelson concerns undecylprodigiosin; 5,10 JB.00017-11 challenged; 11 Kawasaki
+    concerns prodigiosin R1; 12 Brecht abstract supports the named pigment; 13 Harris
+    supports S. marcescens ATCC274. The five-paper duplication across S. albidoflavus
+    and S. coelicolor also needs taxonomic/statement-level investigation; no automatic
+    remapping is justified.'
+- assessment_id: optional
+  area: completeness
+  topic: Mechanism and other optional claim surfaces
+  outcome: unknown
+  summary: No encoded graph, pathway, assay, target, clinical or dataset assertion
+    needs edge-level validation. Published biosynthetic work is a curation lead, not
+    an inferred complete mechanism; absence of an optional field is not a scientific
+    negative.
+  target_ids:
+  - naturalproductmech:mibig-d764a5151a
+  evidence_ids:
+  - owner
+  - harris
+findings:
+- finding_id: F1
+  issue_key: prodigiosin-lotus-congener-attribution
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Related prodiginine citations are attached to exact prodigiosin occurrences
+  description: LOTUS rows9283/9288 cite an undecylprodigiosin study; row9290 cites
+    prodigiosin R1 in the roseophilin producer. Owner occurrences[4], [9] and [11]
+    instead assert detection of its C20H25N3O prodigiosin structure. This is a claim/source
+    mismatch, not proof those taxa never make prodigiosin. No transfer to another
+    owner is authorized without exact chemical and taxonomic review.
+  target_ids:
+  - naturalproductmech:mibig-d764a5151a
+  field_paths:
+  - occurrences[4]
+  - occurrences[9]
+  - occurrences[11]
+  evidence_ids:
+  - inventory
+  - feitelson
+  - kawasaki
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Exact-key imported occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_lotus.py
+    role: Frozen occurrence extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Occurrence harmonization; requires a tested correction consumer
+  rule_id: 'Native checklist: exact compound and taxon, narrow evidence, producer
+    strain where supplied'
+  native_severity: major
+  normalization_reason: Wrong claim-to-source attribution changes biological interpretation
+    while deterministic gates pass.
+- finding_id: F2
+  issue_key: prodigiosin-serratia-strain-provenance
+  category: scope
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Serratia producer assertions omit available strain qualifiers
+  description: Producer rows0/1 retain broad source taxon labels without ATCC39006/ATCC274
+    in strain or notes, although their cited abstract names these strains. Preserve
+    the source taxon identifiers while recording strain context; do not silently identify
+    ATCC39006 as S. marcescens.
+  target_ids:
+  - naturalproductmech:mibig-d764a5151a
+  field_paths:
+  - producer_organisms[0]
+  - producer_organisms[1]
+  evidence_ids:
+  - owner
+  - harris
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Source cluster and taxon context
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Cluster extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Seeded producer representation
+  rule_id: 'Native checklist: exact compound and taxon, narrow evidence, producer
+    strain where supplied'
+  native_severity: minor
+  normalization_reason: Bounded loss of source strain provenance; producer evidence
+    grade is not falsely upgraded.
+actions:
+- action_id: correct-occurrences
+  finding_ids:
+  - F1
+  target_ids:
+  - naturalproductmech:mibig-d764a5151a
+  description: Reassess the three exact LOTUS triples and implement a hash-pinned,
+    provenance-preserving source correction or exclusion through a tested maintained
+    consumer. decisions.tsv is reserved and does not alter seeding. Do not repair
+    generated YAML directly or silently retarget to a congener.
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Exact-key imported occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_lotus.py
+    role: Frozen occurrence extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Occurrence harmonization; requires a tested correction consumer
+  generator: scripts/seed_from_sources.py
+  acceptance_checks:
+  - Exact disputed triples no longer claim this structure unless a nearest primary
+    passage supports it.
+  - Retain original frozen-source provenance and unaffected occurrences; validate
+    exact compound and taxon before any reassignment.
+  - Dry-run/canary, strict validation, reproduction and full QC pass without scientific
+    status promotion.
+- action_id: preserve-strains
+  finding_ids:
+  - F2
+  target_ids:
+  - naturalproductmech:mibig-d764a5151a
+  description: Add reviewed strain context through maintained producer provenance;
+    keep conservative evidence grades unless exact experiments are separately verified.
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Source cluster and taxon context
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Cluster extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Seeded producer representation
+  generator: scripts/seed_from_sources.py
+  acceptance_checks:
+  - ATCC39006 and ATCC274 are distinguished in the generated claims.
+  - Taxon identifiers are not guessed, original database provenance remains, and reproduction
+    passes.
+limitations:
+- Partial scientific observation, not a completed record review, native status promotion,
+  curation event, or evidence that all 3115 owners have been reviewed.
+- Pinned RDKit 2026.3.5 cannot run on this x86_64 macOS environment because that release
+  has no compatible wheel. No substitute version was used. Internal chemistry and
+  tautomer/stereochemical equivalence remain unverified.
+- Versioned live MIBiG annotations were checked; an unversioned latest-release comparison
+  and independent GenBank sequence validation were not completed. Active status at
+  a versioned endpoint is not a claim that no newer version exists.
+- 'Repository-wide identifier-label validation is not exhaustive identifier verification:
+  499 warning-level mismatches and 4649 skipped-no-adapter pairs were retained. No
+  full sequence, Wikidata statement, DOI full-text, or taxonomy revision audit is
+  inferred from this gate.'
+- This observation assesses the captured base without changing its scientific owners,
+  raw inventories, pages or curation history. Separately authorized publication and
+  remediation are not performed by saving this review and require their own dispositions.
+- All inherited access stops remain binding. This continuation added challenges for
+  PMID22777253/DOI10.1007/s10482-012-9772-5, PMID28785950/DOI10.1007/s11427-017-9117-x,
+  PMID30306508/DOI10.1007/s11033-018-4324-3, PMC3133208/PMID21515779/DOI10.1128/JB.00017-11,
+  and PMC1572367/PMID11015311/DOI10.1038/sj.bjp.0703614. DOI10.1039/C8GC03728K full
+  text returned 403. DOI10.1038/ja.2009.27 exposed only a subscription preview. No
+  alternate full-text retrieval was attempted after these stops.
+- 'No primary source assessment is inferred for the eight access-limited occurrence
+  rows. Source-supported summaries are bounded by inspected abstracts, not full studies.
+  Two warning-level label pairs concern NCBITaxon:616 (source Serratia sp. versus
+  canonical Serratia sp. (in: enterobacteria)).'
+title: 'MIBiG-backed prodigiosin: congener attribution and strain provenance review'
+summary: One major congener-attribution finding and one minor strain-provenance finding.
+  Exact source identity, versioned cluster annotations and computed filing are supported;
+  several occurrence claims and pinned chemistry remain incomplete.
+finished_at: '2026-10-13T08:55:46.471179Z'
+review_id: 20261013T085546Z-prodigiosin-2
+```

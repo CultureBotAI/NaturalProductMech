@@ -1,0 +1,156 @@
+identifier: CHEBI:82758
+label: prodigiosin
+chemical_structure:
+  smiles: CCCCCC1=C\C(=C\C2=C(OC)C=C(N2)C2=CC=CN2)N=C1C
+  standard_inchi: InChI=1S/C20H25N3O/c1-4-5-6-8-15-11-16(22-14(15)2)12-19-20(24-3)13-18(23-19)17-9-7-10-21-17/h7,9-13,21,23H,4-6,8H2,1-3H3/b16-12-
+  standard_inchi_key: SZXDNGVQRDTJSD-VBKFSLOCSA-N
+  stereo_complete: true
+  structure_source: MIBIG
+  structure_source_id: mibig:BGC0002675
+np_pathway: ALKALOIDS
+biosynthesis_origin: NATURAL_PRODUCT
+definition: A member of the class of tripyrroles that is a red-coloured pigment with
+  antibiotic properties produced by Serratia marcescens.
+definition_source: CHEBI:82758
+np_classification:
+  tool: NPClassifier
+  tool_version: npclassifier.gnps2.org@2026-09-07
+  pathway_results:
+  - Alkaloids
+  superclass_results:
+  - Proline alkaloids
+  class_results:
+  - Prodigiosins
+  is_glycoside: false
+occurrence_taxon_groups:
+- OTHER_BACTERIAL
+occurrences:
+- taxon_id: NCBITaxon:562
+  taxon_label: Escherichia coli
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1039/C8GC03728K
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q25419
+- taxon_id: NCBITaxon:615
+  taxon_label: Serratia marcescens
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1038/SJ.BJP.0703614
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q140004
+- taxon_id: NCBITaxon:615
+  taxon_label: Serratia marcescens
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.1111/J.1365-2958.2005.04602.X
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q140004
+- taxon_label: Serratia marcescens
+  source: CHEBI
+  evidence:
+  - reference: PMID:15853884
+    evidence_type: DATABASE_ASSERTION
+    notes: ChEBI compound origin for CHEBI:82758
+  taxon_id: NCBITaxon:615
+  taxon_source: NCBITaxon
+- taxon_id: NCBITaxon:687
+  taxon_label: Vibrio gazogenes
+  taxon_source: NCBITaxon
+  source: LOTUS
+  evidence:
+  - reference: DOI:10.7164/ANTIBIOTICS.47.257
+    evidence_type: DATABASE_ASSERTION
+    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
+      was found in the organism; it does not assert that the organism produces it.
+  notes: Wikidata organism http://www.wikidata.org/entity/Q26299305
+related_records:
+- corpus: AntibioticMech
+  identifier: CHEBI:82758
+  relation: SAME_STRUCTURE
+  basis: SAME_INCHIKEY
+  source_version: 74f6cc836249
+bioactivity_summary:
+- ANTIMICROBIAL_UNSPECIFIED
+bgc_class:
+- PKS
+compound_classes:
+- Proline-derived
+producer_taxon_groups:
+- OTHER_BACTERIAL
+producer_organisms:
+- taxon_id: NCBITaxon:43658
+  taxon_label: Pseudoalteromonas rubra
+  evidence_basis: BGC_CHARACTERIZED
+  biosynthetic_gene_cluster: mibig:BGC0002675
+  source: MIBIG
+  source_version: '2'
+  notes: 'Locus evidence: Knock-out studies. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.'
+  evidence:
+  - reference: DOI:10.1128/spectrum.01171-21
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002675 entry version 2; citation taken from the compound evidence
+      level
+  - reference: DOI:10.1128/spectrum.01171-21
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: S4059. Wang et al. test pigC deletion in P. rubra S4059
+      and identify its genome as CP045429. The published experiment is strain-specific.
+      Taxon identity and evidence grade are unchanged; this is not a species-wide
+      experiment. MIBiG source row BGC0002675:1; SHA256 d3b55b2c6b091c7c8da99f5634fdb02e208328c4dc1c317750a341bdef639de0.
+      Curator: codex; date: 2026-10-13.'
+  strain: S4059
+biosynthetic_gene_clusters:
+- accession: mibig:BGC0002675
+  entry_version: '2'
+  entry_status: active
+  organism_taxon_id: NCBITaxon:43658
+  organism_label: Pseudoalteromonas rubra
+  evidence:
+  - reference: DOI:10.1128/spectrum.01171-21
+    evidence_type: DATABASE_ASSERTION
+    notes: MIBiG BGC0002675 entry version 2; citation taken from the compound evidence
+      level
+  genome_accession: genbank:CP045429.1
+  locus_from: 3210799
+  locus_to: 3231052
+  bgc_class:
+  - PKS
+  locus_evidence_methods:
+  - Knock-out studies
+  link_evidence_basis: CLUSTER_DEMONSTRATED
+source_concepts:
+- source: MIBIG
+  source_id: BGC0002675
+  source_label: prodigiosin
+  source_version: '2'
+  minted_identifier: naturalproductmech:mibig-33b8a8e664
+- source: CHEBI
+  source_id: CHEBI:82758
+  source_label: prodigiosin
+  source_version: 3-star
+  minted_identifier: naturalproductmech:chebi-f6f9d91556
+grounding_status: EXACT
+curation_status: SEEDED
+curation_history:
+- timestamp: '2026-09-10T05:54:13Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-09-25T03:03:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T09:00:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

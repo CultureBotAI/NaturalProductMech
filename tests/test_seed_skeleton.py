@@ -476,6 +476,56 @@ CHEBI_ROW = {
 }
 
 
+def test_producer_strain_only_changes_qualified_producer():
+    from naturalproductmech.curate.structure_corrections import row_digest
+
+    source = deepcopy(MIBIG_ROW)
+    neighbor = {**source, "mibig_accession": "BGC0000056"}
+    qualification = {
+        "source_id": "BGC0000055:1", "expected_source_row_sha256": row_digest(source),
+        "strain": "reviewed strain", "reference": "PMID:1", "curator": "codex",
+        "date": "2026-10-13", "rationale": "A bounded test fixture.",
+    }
+    inventories = {"mibig_compounds": [source, neighbor]}
+    before = seed.build_records(inventories)
+    after = seed.build_records({**inventories, "mibig_producer_strains": [qualification]})
+    assert len(before) == len(after) == 1
+    producer = after[0]["producer_organisms"][0]
+    assert producer.pop("strain") == "reviewed strain"
+    assert producer["evidence"].pop()["evidence_type"] == "CURATOR_INFERENCE"
+    assert before == after
+
+
+def test_producer_strain_does_not_cross_structure_correction(monkeypatch):
+    from naturalproductmech.curate.structure_corrections import row_digest
+
+    qualification = {
+        "source_id": "BGC0000055:1", "expected_source_row_sha256": row_digest(MIBIG_ROW),
+        "strain": "reviewed strain", "reference": "PMID:1", "curator": "codex",
+        "date": "2026-10-13", "rationale": "A bounded test fixture.",
+    }
+    monkeypatch.setattr(seed, "apply_structure_corrections", lambda rows, *_: [
+        {**row, "structure_correction_note": "Reassigned structure",
+         "structure_correction_reference": "PMID:1"} for row in rows
+    ])
+    with pytest.raises(ValueError, match="strain context needs review"):
+        seed.build_records({"mibig_compounds": [MIBIG_ROW],
+                            "mibig_producer_strains": [qualification]})
+
+
+def test_strain_qualification_cannot_disappear_on_an_unemitted_row():
+    from naturalproductmech.curate.structure_corrections import row_digest
+
+    row = {**MIBIG_ROW, "standard_inchi_key": ""}
+    qualification = {
+        "source_id": "BGC0000055:1", "expected_source_row_sha256": row_digest(row),
+        "strain": "reviewed strain", "reference": "PMID:1", "curator": "codex",
+        "date": "2026-10-13", "rationale": "A bounded test fixture.",
+    }
+    with pytest.raises(ValueError, match="did not reach a producer"):
+        seed.build_records({"mibig_compounds": [row], "mibig_producer_strains": [qualification]})
+
+
 def test_reseed_carries_curated_biosynthesis_graphs(monkeypatch, tmp_path):
     """Curated graphs live beside seeded fields and must survive `seed-apply`."""
     corpus_dir = tmp_path / "data" / "natural_products"

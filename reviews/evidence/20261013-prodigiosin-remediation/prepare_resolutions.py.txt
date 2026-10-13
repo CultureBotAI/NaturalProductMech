@@ -1,0 +1,59 @@
+import hashlib
+import json
+import shutil
+import subprocess
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+
+root = Path.cwd()
+work = Path(__file__).parent
+snapshot = Path('/private/tmp/npmech-prodigiosin-resolution-base-o3Ovfn')
+evidence = root / 'reviews/evidence/20261013-prodigiosin-remediation'
+evidence.mkdir(exist_ok=True)
+sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
+base = '95b25be273d45a087df8d1262303713a2a2d8c17'
+assert subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=snapshot, text=True).strip() == base
+files = [
+    'docs/CURATION.md', 'scripts/seed_from_sources.py',
+    'src/naturalproductmech/curate/producer_strains.py', 'curation/mibig_producer_strains.tsv',
+    'tests/test_producer_strains.py', 'tests/test_seed_skeleton.py',
+    'tests/test_prodigiosin_review_archive.py', 'data/raw/mibig_compounds.tsv',
+    'src/naturalproductmech/schema/naturalproductmech.yaml',
+    'scripts/render_pages.py', 'src/naturalproductmech/templates/record.html',
+    'tests/test_render_pages.py',
+    'tests/test_structure_corrections.py',
+]
+for label in ['strain-focus', 'seed-dry', 'seed-canary', 'seed-second', 'render', 'archive-tests',
+              'render-strains', 'render-final', 'final-focus', 'final-focus-retry',
+              'fixture-focus', 'qc-remediation', 'qc-final']:
+    for suffix in ['.log', '.receipt.json']:
+        shutil.copyfile(work / (label + suffix), evidence / (label + suffix))
+shutil.copyfile(work / 'remediation-audit.json', evidence / 'remediation-audit.json')
+files += [str(p.relative_to(root)) for p in evidence.iterdir() if p.is_file()]
+files += [str(p.relative_to(root)) for p in (root / 'reviews/structured').rglob('*') if p.is_file()]
+saved = json.loads((work / 'saved-reviews.json').read_text())
+files += [r['owner'] for r in saved]
+for name in files:
+    destination = snapshot / name
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(root / name, destination)
+    assert sha(root / name) == sha(destination)
+for item in saved:
+    command = [sys.executable, 'scripts/record_review.py', 'inspect', '--targets',
+               str(work / (Path(item['owner']).stem + '-targets.json'))]
+    for name in files:
+        if not name.endswith('/review.md'):
+            command += ['--input', name]
+    started = datetime.now(timezone.utc).isoformat()
+    result = subprocess.run(command, cwd=snapshot, text=True, capture_output=True)
+    label = Path(item['owner']).stem + '-resolution-final-inspect'
+    path = work / (label + '.json')
+    with path.open('x') as handle:
+        handle.write(result.stdout)
+    (work / (label + '.receipt.json')).write_text(json.dumps(dict(
+        command=command, cwd=str(snapshot), started_at=started, finished_at=datetime.now(timezone.utc).isoformat(),
+        exit_code=result.returncode, log=str(path), log_sha256=sha(path)), indent=2))
+    print(result.stderr)
+    assert result.returncode == 0
+print('Captured exact remediation inputs in a detached durable-base worktree.')

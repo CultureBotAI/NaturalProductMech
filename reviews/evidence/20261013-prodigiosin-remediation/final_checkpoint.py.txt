@@ -1,0 +1,70 @@
+import copy
+import gzip
+import hashlib
+import json
+from collections import Counter
+from datetime import datetime, timezone
+from pathlib import Path
+
+import yaml
+
+root = Path.cwd()
+work = Path(__file__).parent
+sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
+checkpoint = copy.deepcopy(json.loads((work / 'review-campaign-checkpoint.json').read_text()))
+resolutions = json.loads((work / 'saved-resolutions.json').read_text())
+for item in resolutions:
+    owner = root / item['owner']
+    snapshot_path = root / 'reviews/evidence/20261013-prodigiosin-remediation' / (owner.stem + '-owner.yaml')
+    with snapshot_path.open('xb') as handle:
+        handle.write(owner.read_bytes())
+    path = root / item['path']
+    review = yaml.safe_load(path.read_text())
+    md = path.with_suffix('.md')
+    entry = dict(review_id=review['review_id'], yaml=item['path'], yaml_sha256=sha(path),
+                 markdown=str(md.relative_to(root)), markdown_sha256=sha(md),
+                 target_id=review['targets'][0]['target_id'], path=review['targets'][0]['path'],
+                 verdict=review['verdict'], completion=review['completion'], scientific_review=True,
+                 findings=review['findings'], finished_at=review['finished_at'])
+    checkpoint['all_review_observations'].append(entry)
+    index = next(i for i, row in enumerate(checkpoint['reviews']) if row['path'] == entry['path'])
+    checkpoint['reviews'][index] = entry
+heads = {}
+for observation in sorted(checkpoint['all_review_observations'], key=lambda r: r['finished_at']):
+    for finding in observation['findings']:
+        for previous in finding.get('previous_occurrences', []):
+            predecessor = heads.pop((previous['review_id'], previous['finding_id']))
+            assert predecessor['issue_key'] == finding['issue_key']
+        heads[(observation['review_id'], finding['finding_id'])] = dict(
+            finding, review_id=observation['review_id'], finished_at=observation['finished_at'])
+counts = dict(Counter(f['severity'] for f in heads.values() if f['status'] in {'open', 'deferred'}))
+assert counts == {'blocker': 4, 'major': 4}
+changed = []
+for row in checkpoint['records']:
+    path = root / row['path']
+    if row['sha256'] != sha(path):
+        changed.append(row['path'])
+        row.update(sha256=sha(path), bytes=path.stat().st_size)
+    for component in row['graph_components']:
+        assert component['sha256'] == sha(root / component['path'])
+assert set(changed) == {r['owner'] for r in resolutions}
+assert len(checkpoint['reviews']) == checkpoint['partial_reviews'] == 10
+assert len(checkpoint['all_review_observations']) == 13
+assert len(checkpoint['pending_in_priority_order']) == 3105
+checkpoint.update(recorded_at=datetime.now(timezone.utc).isoformat(), corpus_state='working_tree',
+    scientific_review_bundles=13, latest_finding_heads=list(heads.values()), findings=counts,
+    count_note='Ten unique partial owners; thirteen immutable observations include three scoped dispositions. Zero completed owners.',
+    publication=dict(pr=883, phase='final reviewed working tree before merge',
+                     addressed_issues=[882, 885, 887, 888, 889], remaining_scientific_issues=[884, 886]),
+    required_work_remaining='Complete all ten partial owners and all 3105 pending owners; do not count validators or strain-only resolutions as complete reviews.',
+    previous_turn_classification='progress: two partial reviews, strain fixes, rendered evidence and durable audit archive',
+    prior_checkpoint='reviews/evidence/20261013-prodigiosin/artifacts/workspace/review-campaign-checkpoint.json.gz',
+    prior_checkpoint_sha256=sha(root / 'reviews/evidence/20261013-prodigiosin/artifacts/workspace/review-campaign-checkpoint.json.gz'))
+path = work / 'pre-merge-campaign-checkpoint.json'
+with path.open('x') as handle:
+    json.dump(checkpoint, handle, indent=2)
+archive = root / 'reviews/evidence/20261013-prodigiosin-remediation/pre-merge-campaign-checkpoint.json.gz'
+with archive.open('xb') as handle:
+    handle.write(gzip.compress(path.read_bytes(), mtime=0))
+print(json.dumps(dict(partial_owners=10, observations=13, completed=0, pending=3105,
+                     open_findings=counts, archived=str(archive))))

@@ -1,0 +1,16 @@
+uv run python scripts/validate_strict.py data/natural_products/alkaloids/prodigiosin-2.yaml --out /private/tmp/npmech-prodigiosin-review-m1Ai8z/strict-prodigiosin-2.tsv
+   Building naturalproductmech @ file:///Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech
+  × Failed to build `naturalproductmech @
+  │ file:///Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech`
+  ├─▶ Failed to resolve requirements from `build-system.requires`
+  ├─▶ No solution found when resolving: `hatchling`
+  ├─▶ Failed to fetch: `https://pypi.org/simple/hatchling/`
+  ├─▶ Could not connect, are you offline?
+  ├─▶ Request failed after 3 retries
+  ├─▶ error sending request for url (https://pypi.org/simple/hatchling/)
+  ├─▶ client error (Connect)
+  ├─▶ dns error: failed to lookup address information: nodename nor servname
+  │   provided, or not known
+  ╰─▶ failed to lookup address information: nodename nor servname provided, or
+      not known
+error: recipe `validate-strict` failed on line 158 with exit code 1

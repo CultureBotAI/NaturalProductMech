@@ -1,0 +1,111 @@
+uv run python scripts/run_qc.py
+
+=== qc: lint ===
+why: Fail fast on syntax, import, and style defects before expensive checks.
+All checks passed!
+
+=== qc: vendored-sync ===
+why: Governed files must be byte-identical to claw at the pinned ref.
+OK: 22 governed artifacts match the pinned claw revision
+
+=== qc: documentation ===
+why: README's generated statistics must match the corpus a reader would download.
+README statistics block is current
+
+=== qc: raw-data provenance ===
+why: Every committed inventory must retain its source metadata and integrity hash.
+provenance OK: 15 inventories, 0 upstream files, retrieved 2026-10-07
+
+=== qc: source queue ===
+why: An ADOPTED source must be one the pipeline reads under verified redistribution terms.
+source queue OK: 44 sources — 10 adopted, 14 blocked, 18 candidate, 2 evaluating
+next up: discovery-literature (P1, causal_graphs), mite (P2, biosynthetic_pathway), npdia (P2, biosynthetic_pathway)
+
+=== qc: tests ===
+why: Tests cover harmonization rules and corpus-wide invariants validation cannot see.
+........................................................................ [ 11%]
+........................................................................ [ 22%]
+........................................................................ [ 33%]
+........................................................................ [ 44%]
+........................................................................ [ 55%]
+........................................................................ [ 66%]
+........................................................................ [ 77%]
+................sss....................................................F [ 88%]
+........................................................................ [ 99%]
+...                                                                      [100%]
+=================================== FAILURES ===================================
+_________________ test_corrected_seed_joins_only_corrected_key _________________
+
+inputs = ([{'mibig_accession': 'BGC0000024', 'entry_version': '5', 'entry_status': 'active', 'entry_quality': 'questionable', ....terium, Streptomyces thioluteus and exhibits antitumor, antifungal, and insecticidal activities.', 'stars': '3', ...}])
+
+    def test_corrected_seed_joins_only_corrected_key(inputs):
+        inventories = seed.read_inventories()
+        inventories["mibig_compounds"] = inputs[0]
+        inventories.pop("mibig_locus_evidence_overrides")
+>       doc, = seed.build_records(inventories)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_structure_corrections.py:113: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/seed_from_sources.py:753: in build_records
+    producer_strains = load_producer_strains(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+source_rows = [{'mibig_accession': 'BGC0000024', 'entry_version': '5', 'entry_status': 'active', 'entry_quality': 'questionable', ...}]
+qualifications = [{'source_id': 'BGC0000258:1', 'expected_source_row_sha256': 'd2b8987923a920a62edb3396dd645f055e938a3c1354525f573bc9da...a99f5634fdb02e208328c4dc1c317750a341bdef639de0', 'strain': 'S4059', 'reference': 'DOI:10.1128/spectrum.01171-21', ...}]
+
+    def load_producer_strains(
+        source_rows: list[dict[str, str]],
+        qualifications: list[dict[str, str]],
+    ) -> dict[str, dict[str, str]]:
+        """Resolve each qualification against exactly one complete raw compound row."""
+        result = {}
+        required = {
+            "source_id", "expected_source_row_sha256", "strain", "reference",
+            "curator", "date", "rationale",
+        }
+        for item in qualifications:
+            if set(item) != required or any(
+                not isinstance(item[field], str) or not item[field].strip() for field in required
+            ):
+                raise ValueError("producer strain requires exact fields, source pin and attribution")
+            source_id = item["source_id"]
+            if not re.fullmatch(r"BGC\d{7}:\d+", source_id) or source_id in result:
+                raise ValueError(f"{source_id}: invalid or duplicate producer strain qualification")
+            if not re.fullmatch(r"[a-f0-9]{64}", item["expected_source_row_sha256"]):
+                raise ValueError(f"{source_id}: invalid source digest")
+            if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", item["date"]):
+                raise ValueError(f"{source_id}: invalid qualification date")
+            date.fromisoformat(item["date"])
+            reference = item["reference"]
+            url = urlsplit(reference)
+            if not (re.fullmatch(r"(?:DOI:10\.\d{4,9}/\S+|PMID:\d+)", reference) or (
+                url.scheme == "https" and url.hostname and not re.search(r"\s", reference)
+            )):
+                raise ValueError(f"{source_id}: qualification requires a stable reference")
+            matches = [row for row in source_rows
+                       if f"{row['mibig_accession']}:{row['compound_index']}" == source_id]
+            if len(matches) != 1:
+>               raise ValueError(f"{source_id}: qualification requires exactly one source row")
+E               ValueError: BGC0000258:1: qualification requires exactly one source row
+
+src/naturalproductmech/curate/producer_strains.py:44: ValueError
+=============================== warnings summary ===============================
+tests/test_id_label_config.py::test_go_nodes_are_resolved_and_invalid_pairs_fail[canonical-OK_CANONICAL-record_identity]
+  /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/lib/python3.13/site-packages/sssom_schema/datamodel/sssom_schema.py:20: DeprecationWarning: The LinkML dataclass extension patch is deprecated and will be removed in a future release.
+  If you're currently using Python < 3.13, where this patch still applies, you should:
+    • Upgrade your LinkML tooling to version >= 1.9.0 (which no longer needs this patch), OR
+    • Migrate to Pydantic models if you're using LinkML's generated classes at runtime.
+  
+    from linkml_runtime.utils.dataclass_extensions_376 import dataclasses_init_fn_with_kwargs
+
+tests/test_id_label_config.py::test_go_nodes_are_resolved_and_invalid_pairs_fail[canonical-OK_CANONICAL-record_identity]
+  /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/lib/python3.13/site-packages/sssom/util.py:109: Pandas4Warning: The 'mode.copy_on_write' option is deprecated. Copy-on-Write can no longer be disabled (it is always enabled with pandas >= 3.0), and setting the option has no impact. This option will be removed in pandas 4.0.
+    pd.options.mode.copy_on_write = True
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_structure_corrections.py::test_corrected_seed_joins_only_corrected_key
+1 failed, 647 passed, 3 skipped, 2 warnings in 426.10s (0:07:06)
+qc stopped: tests failed with exit code 1
+error: recipe `qc` failed on line 288 with exit code 1

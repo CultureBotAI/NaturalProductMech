@@ -1,0 +1,19 @@
+{
+  "command": [
+    "env",
+    "RECORD_REVIEW_BASE=95b25be273d45a087df8d1262303713a2a2d8c17",
+    ".venv/bin/pytest",
+    "-q",
+    "tests/test_record_review_contract.py",
+    "tests/test_prodigiosin_review_archive.py",
+    "tests/test_producer_strains.py",
+    "tests/test_seed_skeleton.py",
+    "tests/test_render_pages.py",
+    "tests/test_structure_corrections.py"
+  ],
+  "started_at": "2026-10-13T09:29:18.272811Z",
+  "finished_at": "2026-10-13T09:30:09.896754Z",
+  "exit_code": 0,
+  "log": "/private/tmp/npmech-prodigiosin-review-m1Ai8z/publication-focus.log",
+  "log_sha256": "bbeb670a5876717bbfa504a520cea8f3505bc2650d11c99d2db8b6d66f51b268"
+}

@@ -1,0 +1,120 @@
+import copy
+import hashlib
+import json
+import shutil
+import subprocess
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+
+import yaml
+
+root = Path.cwd()
+work = Path(__file__).parent
+snapshot = Path('/private/tmp/npmech-prodigiosin-resolution-base-o3Ovfn')
+archive = 'reviews/evidence/20261013-prodigiosin-remediation'
+repo = 'CultureBotAI/NaturalProductMech'
+now = lambda: datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z')
+sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
+
+
+class Dumper(yaml.SafeDumper):
+    def ignore_aliases(self, data):
+        return True
+
+
+saved = []
+for original in json.loads((work / 'saved-reviews.json').read_text()):
+    slug = Path(original['owner']).stem
+    old = yaml.safe_load((root / original['path']).read_text())
+    inspection = json.loads((work / (slug + '-resolution-final-inspect.json')).read_text())
+    inspect_receipt = json.loads((work / (slug + '-resolution-final-inspect.receipt.json')).read_text())
+    for item in inspection['source']['inputs']:
+        assert sha(root / item['path']) == sha(snapshot / item['path']) == item['sha256']
+    # Read the whole remediated owner again before the scoped disposition.
+    owner = yaml.safe_load((root / original['owner']).read_text())
+    assert owner['identifier'] == old['targets'][0]['target_id']
+    tid = owner['identifier']
+    expected = {'mibig:BGC0000258': 'ATCC 39006', 'mibig:BGC0000259': 'ATCC 274'} if slug.endswith('-2') else {'mibig:BGC0002675': 'S4059'}
+    for producer in owner['producer_organisms']:
+        if producer['biosynthetic_gene_cluster'] in expected:
+            assert producer['strain'] == expected[producer['biosynthetic_gene_cluster']]
+            assert producer['evidence'][0]['evidence_type'] == 'DATABASE_ASSERTION'
+            assert producer['evidence'][-1]['evidence_type'] == 'CURATOR_INFERENCE'
+    issue = 885 if slug.endswith('-2') else 887
+    stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+    review_id = stamp + '-' + slug + '-strain-resolution'
+    checks = []
+    for label, required in [('final-focus', False), ('final-focus-retry', True), ('qc-remediation', False), ('qc-final', True), ('fixture-focus', True), ('render-final', True), ('archive-tests', True)]:
+        receipt = json.loads((root / archive / (label + '.receipt.json')).read_text())
+        checks.append(dict(check_id=label, name=label, required=required,
+            status='passed' if receipt['exit_code'] == 0 else 'failed', exit_code=receipt['exit_code'],
+            command=' '.join(receipt['command']), target_ids=[tid], evidence_ids=['validation'],
+            summary=('Initial renderer deduplication regression; fixed and superseded by the passing retry.'
+                     if label == 'final-focus' else 'Isolated structure-correction fixture retained unrelated qualification rows; fixed without weakening production checks and superseded by qc-final.'
+                     if label == 'qc-remediation' else 'Recorded native check; exact output and timing retained in the archive.')))
+    assert all(c['status'] == 'passed' for c in checks if c['required'])
+    finding = copy.deepcopy(next(f for f in old['findings'] if f['finding_id'] == 'F2'))
+    finding.update(status='resolved', evidence_ids=['previous', 'owner', 'maintained-input', 'audit', 'validation', 'primary'],
+        disposition_reason='The pinned maintained qualification now supplies the missing strain and separate curator evidence. Guarded regeneration, exhaustive unchanged-field audit, focused regressions and native QC pass. No identity, taxon, grade, occurrence or status changes; no whole-record sign-off.',
+        previous_occurrences=[dict(repository=repo, review_id=old['review_id'], finding_id='F2')],
+        external_issues=[f'https://github.com/{repo}/issues/{issue}'])
+    finding['owner_paths'] += [dict(repository=repo, path='curation/mibig_producer_strains.tsv', role='Exact raw-source-pinned strain qualifications'),
+                              dict(repository=repo, path='src/naturalproductmech/curate/producer_strains.py', role='Fail-closed qualification validator')]
+    primary = copy.deepcopy(next(e for e in old['evidence'] if e['evidence_id'] == ('harris' if slug.endswith('-2') else 'wang')))
+    primary['evidence_id'] = 'primary'
+    evidence = [primary]
+    for eid, path, summary in [
+        ('previous', original['path'], 'Immutable original observation; this successor resolves only F2.'),
+        ('owner', original['owner'], 'Complete current owner read; explicit strains and separate evidence retained without broadening scope.'),
+        ('maintained-input', 'curation/mibig_producer_strains.tsv', 'Complete raw-row pins and inspected source citations; no raw inventory mutation.'),
+        ('audit', archive + '/remediation-audit.json', 'Ignored-inclusive audit of all 3115 owners and 243 components; only the two intended owners change.'),
+        ('validation', archive + '/qc-final.log', 'Fresh full gate passed on the final implementation, including renderer and isolated fixture fixes.'),
+    ]:
+        evidence.append(dict(evidence_id=eid, kind='validation' if eid in {'audit', 'validation'} else 'record_content',
+            reference=path, accessed_at=now(), snapshot_sha256=sha(root / path), support='supports', summary=summary))
+    review = dict(schema_version='1.0.0', review_id=review_id, kind='record', repository=repo,
+        title=f'{owner["label"]} ({tid}): scoped producer strain resolution',
+        started_at=inspect_receipt['started_at'].replace('+00:00', 'Z'), finished_at=now(), reviewer=old['reviewer'],
+        skill=old['skill'], completion='partial', verdict='pass_with_limitations', scientific_review=True,
+        summary=f'Resolve only F2 and GitHub #{issue}; the original major occurrence finding remains open. No completed scientific review is claimed.',
+        source=inspection['source'], targets=inspection['targets'],
+        scope=dict(description='Producer strain provenance only; 3115-owner campaign remains active, ten owners partial and zero complete.',
+            selection=f'Exact F2 follow-up from {old["review_id"]}.', coverage='partial', population_size=1, reviewed_target_ids=[tid]),
+        checks=checks, evidence=evidence,
+        assessments=[dict(assessment_id='strain', area='evidence', topic='Explicit strain scope and retained source assertion',
+            outcome='supported', summary='The generated producer has the source-supported strain, unchanged taxon/grade and original database evidence plus attributed curator interpretation.',
+            target_ids=[tid], evidence_ids=['owner', 'primary', 'maintained-input', 'audit', 'validation']),
+            dict(assessment_id='completeness', area='completeness', topic='Whole-record scientific review', outcome='unknown',
+                 summary='F1, chemical equivalence and access-limited occurrence checks are not resolved by adding strain context.', target_ids=[tid], evidence_ids=['previous'])],
+        findings=[finding], actions=[], limitations=[
+            'Partial scoped disposition, not a whole-record pass. The native SEEDED status and all occurrence claims remain unchanged.',
+            'The major occurrence finding F1 remains open; a newer scoped passing observation does not close it.',
+            'All inherited access stops and exact pinned chemistry limitations remain. No primary full text was retrieved around an access restriction.',
+            'The same assistant implemented and reviewed these changes; this is self-review, not an independent reviewer.',
+            'Inspected and saved in a detached durable-main-base worktree populated with the exact remediated bytes. Working-tree hashes attest those bytes, not their existence in the base commit.',
+            'Initial full QC failed on an isolated test fixture. Its receipt is retained; a fresh full QC run and focused retries validate the final implementation. The archive-lineage regression added afterward requires a focused check and final-head CI. Protected PR and merge-queue CI must cover the final committed head.',
+        ], related_reviews=[dict(repository=repo, review_id=old['review_id'], relationship='Scoped F2 resolution only')],
+        links=[f'https://github.com/{repo}/pull/883', f'https://github.com/{repo}/issues/{issue}'])
+    draft = work / (review_id + '.yaml')
+    with draft.open('x') as handle:
+        yaml.dump(review, handle, Dumper=Dumper, sort_keys=False, allow_unicode=False, width=96)
+    for subcommand in [['validate', str(draft)], ['save', '--content', str(draft)]]:
+        command = [sys.executable, 'scripts/record_review.py', *subcommand]
+        started = now()
+        result = subprocess.run(command, cwd=snapshot, text=True, capture_output=True)
+        label = review_id + '-' + subcommand[0]
+        log = work / (label + '.log')
+        log.write_text(result.stdout + result.stderr)
+        (work / (label + '.receipt.json')).write_text(json.dumps(dict(command=command, cwd=str(snapshot),
+            started_at=started, finished_at=now(), exit_code=result.returncode, log=str(log), log_sha256=sha(log)), indent=2))
+        print(log.read_text(), flush=True)
+        assert result.returncode == 0
+    destination = root / 'reviews/structured' / review_id
+    destination.mkdir(exist_ok=False)
+    for name in ['review.yaml', 'review.md']:
+        shutil.copyfile(snapshot / 'reviews/structured' / review_id / name, destination / name)
+    saved.append(dict(review_id=review_id, path=str((destination / 'review.yaml').relative_to(root)), owner=original['owner'], issue=issue))
+with (work / 'saved-resolutions.json').open('x') as handle:
+    json.dump(saved, handle, indent=2)
+print(json.dumps(saved, indent=2))

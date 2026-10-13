@@ -174,7 +174,8 @@ def build_record(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
     producers = []
     for p in doc.get("producer_organisms") or []:
         producers.append({**p, "causal": p.get("evidence_basis") in CAUSAL_BASES,
-                          "evidence": p.get("evidence") or []})
+                          "evidence": p.get("evidence") or [],
+                          "references": list(dict.fromkeys(references(p)))})
     occurrences = []
     for o in doc.get("occurrences") or []:
         occurrences.append({**o, "reference": first_reference(o)})

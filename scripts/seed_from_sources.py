@@ -63,6 +63,10 @@ import yaml
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from naturalproductmech.curate.curation_event import record_curation_event  # noqa: E402
+from naturalproductmech.curate.producer_strains import (  # noqa: E402
+    load_producer_strains,
+    qualify_producer,
+)
 from naturalproductmech.curate.structure_corrections import apply_structure_corrections  # noqa: E402
 from naturalproductmech.grading import (  # noqa: E402
     grade_cluster_link,
@@ -82,6 +86,7 @@ PATHS_FILE = CORPUS_DIR / "PATHS.tsv"
 CONF_PATH = REPO_ROOT / "conf" / "sources.yaml"
 MIBIG_LOCUS_EVIDENCE_OVERRIDES = CURATION_DIR / "mibig_locus_evidence_overrides.tsv"
 MIBIG_STRUCTURE_CORRECTIONS = CURATION_DIR / "mibig_structure_corrections.tsv"
+MIBIG_PRODUCER_STRAINS = CURATION_DIR / "mibig_producer_strains.tsv"
 
 # MIBiG's cluster vocabulary -> the schema enum. Six values in 4.0; `alkaloid`
 # was removed when compound classification was split from cluster
@@ -416,6 +421,8 @@ def read_inventories() -> dict[str, list[dict[str, str]]]:
             MIBIG_LOCUS_EVIDENCE_OVERRIDES)
     if MIBIG_STRUCTURE_CORRECTIONS.exists():
         inventories[MIBIG_STRUCTURE_CORRECTIONS.stem] = read_tsv(MIBIG_STRUCTURE_CORRECTIONS)
+    if MIBIG_PRODUCER_STRAINS.exists():
+        inventories[MIBIG_PRODUCER_STRAINS.stem] = read_tsv(MIBIG_PRODUCER_STRAINS)
     return inventories
 
 
@@ -743,6 +750,9 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     `just worklist` ranks them.
     """
     raw_mibig_rows = inventories.get("mibig_compounds") or []
+    producer_strains = load_producer_strains(
+        raw_mibig_rows, inventories.get("mibig_producer_strains") or [])
+    applied_strains: set[str] = set()
     mibig_rows = apply_structure_corrections(
         raw_mibig_rows,
         inventories.get("mibig_structure_corrections") or [],
@@ -1019,6 +1029,13 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                 })
                 rewrite_merged_taxon(
                     producers[-1], "taxon_id", merges, taxon_rewrites, "MIBiG", note=True)
+                qualification = producer_strains.get(f"{accession}:{row['compound_index']}")
+                if qualification:
+                    if row.get("structure_correction_note"):
+                        raise ValueError(
+                            f"{accession}: strain context needs review after structure correction")
+                    qualify_producer(producers[-1], qualification)
+                    applied_strains.add(qualification["source_id"])
 
             cluster = mibig_cluster(row, accession, host=host)
             rewrite_merged_taxon(cluster, "organism_taxon_id", merges, taxon_rewrites, "MIBiG", note=True)
@@ -1532,6 +1549,9 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     else:
         print("taxon_merged.tsv: ABSENT — merged ids left as the sources gave them. "
               "Run `just extract-taxonomy` first if this was not intended.", file=sys.stderr)
+    if producer_strains.keys() - applied_strains:
+        raise ValueError("strain qualifications did not reach a producer: "
+                         + ", ".join(sorted(producer_strains.keys() - applied_strains)))
     return records
 
 

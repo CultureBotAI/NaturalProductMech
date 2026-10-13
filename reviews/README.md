@@ -4,6 +4,27 @@ The authoritative observations are immutable YAML/Markdown pairs under
 [`structured/`](structured/). They follow [the shared contract](../docs/record-reviews.md).
 They do not change records, native curation status or source inventories.
 
+## Prodigiosin Checkpoint
+
+The October 13 prodigiosin update brings the campaign to **10 unique partially
+assessed owners, 13 saved observations, zero complete and 3,105 unassessed**.
+The corpus has 3,115 owners and 243 referenced graph components. Successor
+observations resolve only the producer strain findings; both major occurrence
+findings remain open. No record is promoted to REVIEWED.
+
+| Exact Owner | Initial Observation | Strain Resolution | Open Follow-Up |
+| --- | --- | --- | --- |
+| `naturalproductmech:mibig-d764a5151a` | [Markdown](structured/20261013T085546Z-prodigiosin-2/review.md), [YAML](structured/20261013T085546Z-prodigiosin-2/review.yaml) | [Markdown](structured/20261013T092818Z-prodigiosin-2-strain-resolution/review.md), [YAML](structured/20261013T092818Z-prodigiosin-2-strain-resolution/review.yaml) | [#884: congener attribution](https://github.com/CultureBotAI/NaturalProductMech/issues/884) |
+| `CHEBI:82758` | [Markdown](structured/20261013T085654Z-prodigiosin/review.md), [YAML](structured/20261013T085654Z-prodigiosin/review.yaml) | [Markdown](structured/20261013T092822Z-prodigiosin-strain-resolution/review.md), [YAML](structured/20261013T092822Z-prodigiosin-strain-resolution/review.yaml) | [#886: occurrence taxon](https://github.com/CultureBotAI/NaturalProductMech/issues/886) |
+
+The [baseline manifest](evidence/20261013-prodigiosin/manifest.json) and
+[remediation manifest](evidence/20261013-prodigiosin-remediation/manifest.json)
+retain input hashes, command receipts, failed attempts and successful retries.
+The [pre-merge checkpoint](evidence/20261013-prodigiosin-remediation/pre-merge-campaign-checkpoint.json.gz)
+accounts for every owner and component and preserves the remaining review queue.
+These are partial scientific observations with access and chemistry limitations,
+not completed reviews. Later observations do not silently close earlier findings.
+
 ## First Campaign Checkpoint
 
 At corpus base `e66f934111777c4ebfe69475d0520c0cfa074785`, the ignored-inclusive

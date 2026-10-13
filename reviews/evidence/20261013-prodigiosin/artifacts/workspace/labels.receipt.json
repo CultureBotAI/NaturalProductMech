@@ -1,0 +1,19 @@
+{
+  "command": [
+    "env",
+    "UV_CACHE_DIR=/private/tmp/npmech-prodigiosin-review-m1Ai8z/uv-cache",
+    "uv",
+    "run",
+    "python",
+    "scripts/validate_id_label_correspondence.py",
+    "-c",
+    "conf/id_label_targets.yaml",
+    "--report",
+    "/private/tmp/npmech-prodigiosin-review-m1Ai8z/labels.tsv"
+  ],
+  "started_at": "2026-10-13T08:37:54.444579Z",
+  "finished_at": "2026-10-13T08:39:42.243723Z",
+  "exit_code": 0,
+  "log": "/private/tmp/npmech-prodigiosin-review-m1Ai8z/labels.log",
+  "log_sha256": "8a1e307e795efe465c36bb3b61f7f5b0c2a0be3bf85475ddf5cae59697549ae1"
+}
