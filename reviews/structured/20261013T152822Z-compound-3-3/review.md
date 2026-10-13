@@ -1,0 +1,833 @@
+# Compound 3 (BGC0002173.2): source-linked partial review
+
+- Review: 20261013T152822Z-compound-3-3
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-13T15:04:31.228229Z
+- Finished UTC: 2026-10-13T15:28:22.837858Z
+- Reviewer: Codex (self_review)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Exact versioned source representation, internal chemistry, producer taxonomy and sequence interval are consistent. Required full-text compound-specific identity/production checks remain unavailable after HTTP403; no confirmed new finding in the inspected subset. This is not a whole-record scientific pass.
+
+## Scope And Provenance
+
+One exact owner; same-label records are context only. Full campaign denominator remains3115 owners and243 components.
+
+Selection: Next exact pending owner from the exhaustive campaign queue; no sampling or scope reduction.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: git_commit at Git base 47a738c235579895703f4f76b6af05cadaf31c99.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-f5e8fe411a | data/natural_products/terpenoids/compound-3-3.yaml | generated | compound 3 |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| strict-final | passed | True | naturalproductmech:mibig-f5e8fe411a | All three selected exact owners passed closed-schema validation with zero errors. |
+| qc-current | passed | True | naturalproductmech:mibig-f5e8fe411a | Full native QC passed on the same unchanged 47a738c2 scientific inputs: 741 tests passed, 3 skipped, 2 dependency warnings. All 3115 owners passed schema validation; provenance, generated site, exact reproduction, graph/history tests and PATHS.tsv integrity passed. This is deterministic evidence, not biological sign-off. |
+| labels-current | passed | True | naturalproductmech:mibig-f5e8fe411a | Configured label gate passed: 13434 canonical, 646 synonyms, 35 exceptions, 499 nonblocking warning mismatches and 4649 no-adapter skips. Minted compound identity is not certified by this gate; exact producer taxon/name/rank were independently checked against NCBI. |
+| chemistry | passed | True | naturalproductmech:mibig-f5e8fe411a | Pinned RDKit2026.03.5 independently regenerated the exact stored Standard InChI and key, and matched the versioned MIBiG compound. This checks representation, not experimental identity. |
+| search-final | passed | False | naturalproductmech:mibig-f5e8fe411a | Ignored-inclusive identifier, name, slug, key and citation search covered repository files except .git and .venv. Complete selected-owner parsing and structured source-table scans supplied the bounded absence findings. |
+| queue-current | passed | False | naturalproductmech:mibig-f5e8fe411a | Native pending queue contains the full corpus; diagnostics do not count as completed scientific reviews. No status was promoted. |
+| queue-final | passed | False | naturalproductmech:mibig-f5e8fe411a | Queue regenerated after this batch assessment:8930 diagnostic rows cover all3115 distinct owners plus the non-owner unresolved_taxa.tsv diagnostics. Native SEEDED statuses are unchanged; structured review completion is tracked separately. |
+| Exact compound primary-source assessment | unavailable | True | naturalproductmech:mibig-f5e8fe411a | The publisher returned HTTP403. Metadata and abstract cannot establish the paper-local compound3 structure, experimental strain/context, or a compound-specific production/cluster method. No alternate-route retrieval was attempted. |
+| Structured expression-source applicability | not_applicable | False | naturalproductmech:mibig-f5e8fe411a | The owner asserts no named gene/protein/regulator/module or transcriptomics dataset. Exact MIBiG, taxonomy and GenBank source adapters were used first. Contextual genes in the paper/sequence annotation are not additional owner assertions; no iModulonDB coverage or absence claim is made. |
+
+## Scientific And Domain Assessments
+
+### Paper-local exact identity and chemical boundaries
+
+identity: unknown. Targets: naturalproductmech:mibig-f5e8fe411a.
+
+The versioned database graph is unambiguous, but the exact paper-local compound3 assignment and experimental stereochemistry cannot be checked from the abstract. Do not rename it after the end product, merge it with another compound3, or promote status.
+
+### Structure-source roundtrip
+
+consistency: supported. Targets: naturalproductmech:mibig-f5e8fe411a.
+
+SMILES, InChI and key agree under the pinned chemistry runtime and match the exact MIBiG compound index. stereo_complete correctly describes encoded tetrahedral resolution. Formula/mass are review calculations because the owner does not assert those optional fields.
+
+### Minted identity and exact equivalence
+
+grounding: supported. Targets: naturalproductmech:mibig-f5e8fe411a.
+
+No pinned3-star ChEBI exact-key match supports grounding; keeping the content-hashed minted ID is consistent with the inventory. No xref, broader-parent or sibling-equivalence assertion needs to be repaired. This conclusion does not assert that no registry name exists.
+
+### Independent origin, taxon and chemical-class facets
+
+representation: supported. Targets: naturalproductmech:mibig-f5e8fe411a.
+
+Filing and non-glycoside prediction match NPClassifier@2026-09-07 and PATHS.tsv; BGC classes remain source assertions. FUNGAL agrees with the independently resolved taxon lineage. Natural-product origin comes from the MIBiG claim rather than structural similarity. Natural versus engineered production of this specific numbered compound is not resolved from the abstract; retain that limit instead of treating taxonomy as production evidence. TERPENE/SACCHARIDE describe the cluster; they do not require every intermediate, including this non-glycoside graph, to contain a sugar.
+
+### Strain and biological-origin evidence
+
+scope: unknown. Targets: naturalproductmech:mibig-f5e8fe411a.
+
+Aspergillus fumigatus A1163 is a strain-level taxon and matches the sequence source. SOURCE_ASSERTION honestly preserves the database grade; native versus engineered production of compound3 remains unverified. No transfer from the end-product abstract is justified.
+
+### Natural versus engineered origin of the exact compound
+
+evidence: unknown. Targets: naturalproductmech:mibig-f5e8fe411a.
+
+NATURAL_PRODUCT is faithfully imported from an asserted database origin, but the abstract does not distinguish native production of this exact compound3 from heterologous reconstruction or another experimental context. This biological facet remains unknown despite correct fungal taxonomy and computed chemical filing.
+
+### Versioned active BGC and compound-specific locus support
+
+evidence: unknown. Targets: naturalproductmech:mibig-f5e8fe411a.
+
+Active accession/version, exact interval and named host are confirmed. Empty MIBiG method metadata correctly remains CLUSTER_UNSTATED. Abstract experiments on the overall pathway/end product cannot be assigned to compound3 without full-text inspection.
+
+### Compound-specific activity and mechanism
+
+scope: supported. Targets: naturalproductmech:mibig-f5e8fe411a.
+
+The owner correctly makes no pure-compound assay, target, activity-summary, pathway or causal-graph assertion. End-product phytotoxicity/SthB catalysis or fumihopasideA heat/UV protection cannot be projected to this numbered intermediate.
+
+### Occurrences, cross-corpus links, clinical and dataset fields
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-f5e8fe411a.
+
+These optional claims are not present in the complete owner; exact-key source scans support the absence of seeded occurrences/assays/sibling joins in the listed inventories. No need to populate unrelated optional fields merely to complete a review.
+
+### Existing paper-local naming question
+
+nomenclature: supported. Targets: naturalproductmech:mibig-f5e8fe411a.
+
+The needs-a-name discussion acknowledges the unresolved descriptive name. A paper-local compound number is not globally unique. A descriptive name requires the inaccessible primary compound mapping; the generic label is already queued rather than silently treated as a common name.
+
+### History, deterministic validation and maintained ownership
+
+provenance: supported. Targets: naturalproductmech:mibig-f5e8fe411a.
+
+Both history entries are seeding events, and SEEDED remains accurate. All required native deterministic checks passed. Scientific findings do not authorize edits or status promotion. Future producer corrections belong to the pinned strain table; a structure qualification can be a curator-prefixed discussion retained through guarded writers. Reserved decisions.tsv is not consumed.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/natural_products/terpenoids/compound-3-3.yaml; Complete raw YAML, discussions and both history entries | supports | Exact generated, MINTED, SEEDED owner. No xrefs, occurrences, bioactivity summaries/measurements, pathway, molecular targets, clinical assertions, datasets, related_records or causal_graph_refs/inline graphs are present. The existing needs-a-name discussion explicitly queues paper-local numbering. |
+| resolved | /private/tmp/npmech-compound3-review-2EX0Ug/compound-3-3-resolved.json; Complete native read_natural_product result, verified equal to the current owner | supports | Resolved mechanism has no attached components or hidden mechanism claims. Raw YAML and resolved JSON have distinct hashes. |
+| inventories | /private/tmp/npmech-compound3-review-2EX0Ug/source-rows.json; Complete parsed exact-key scans of seven pinned TSV inventories with row numbers | supports | Exactly one MIBiG row for BGC0002173:2 and one NPClassifier row. No exact-key match in the pinned LOTUS, ChEBI structure/origin, AntibioticMech or PubChem BioAssay inventories. This is not a live/global registry absence claim. |
+| chemistry | /private/tmp/npmech-compound3-review-2EX0Ug/chemistry.json; compound-3-3 result from RDKit2026.03.5 | supports | Stored SMILES regenerates NEAWGFXMEIEWAS-WIVQCPOBSA-N and exact InChI; formula C31H52O4, charge 0, computed neutral monoisotopic mass 488.38656014399993 Da. 11 specified and 0 unspecified tetrahedral centers agree with stereo_complete. These are calculations, not measurements. |
+| mibig | https://mibig.secondarymetabolites.org/repository/BGC0002173.2/annotations.json; Exact accession/version; compounds[1], loci, taxonomy, biosynthesis classes and legacy references; captured 2026-10-13T15:03:02.796904Z; local payload /private/tmp/npmech-compound3-review-2EX0Ug/BGC0002173.2.json | supports | Active entry names compound3 at exact index 2; stored structure, host, locus bounds, method list and classes match. Quality/questionable and reviewer metadata are not scientific truth signals. This verifies the pinned version, not a claim that it is the latest version. |
+| taxonomy | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=2163413,321614,451804&amp;retmode=xml; Exact direct Taxon node for NCBITaxon:451804; captured 2026-10-13T15:05:33.672393Z; local payload /private/tmp/npmech-compound3-review-2EX0Ug/taxonomy.xml | supports | Aspergillus fumigatus A1163 resolves at rank strain; its lineage contains Fungi. A taxon/group classification does not prove compound production. |
+| genome | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&amp;id=DS499598.1&amp;seq_start=2415644&amp;seq_stop=2423329&amp;rettype=gbwithparts&amp;retmode=xml; GBSeq and source/CDS features within the exact requested BGC interval; returned coordinates are rebased to the window; captured 2026-10-13T15:06:17.430537Z; local payload /private/tmp/npmech-compound3-review-2EX0Ug/DS499598.1-region.xml | supports | DS499598.1 interval2415644..2423329 is 7686nt, A1163 scaffold5. AFUB_071550/071560/071569/071570 encode annotated putative/hypothetical products EDP50814.1..EDP50817.1. Annotation alone does not prove the exact compound3 pathway. |
+| metadata | https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:31081214%20OR%20EXT_ID:31553484%20OR%20EXT_ID:30977375&amp;format=json&amp;resultType=core&amp;pageSize=100; EuropePMC PMID:30977375 title, DOI, abstract and publication links only; captured 2026-10-13T14:11:09.732857Z; local payload /private/tmp/npmech-compound3-review-2EX0Ug/literature-metadata.json | partial | Characterization and Biosynthesis of a Rare Fungal Hopane-Type Triterpenoid Glycoside Involved in the Antistress Property of Aspergillus fumigatus.; DOI:10.1021/acs.orglett.9b00984. The abstract concerns fumihopasideA, afum deletion/reconstitution and heat/UV protection. It does not identify compound3 or establish its assay/production context. |
+| scope-proof | /private/tmp/npmech-compound3-review-2EX0Ug/final-resumption.json; Ignored-inclusive complete owner/component hash comparison and exact Git-tree verification | supports | All3115 owners,243 components and26 prior immutable observations are unchanged; every captured input equals its bytes at commit47a738c235579895703f4f76b6af05cadaf31c99. This review assesses that exact revision, which also matches the current scientific content. |
+| access | https://doi.org/10.1021/acs.orglett.9b00984; HTTP403 error payload, not full paper or supporting information; captured 2026-10-13T15:04:39.733487Z; local payload /private/tmp/npmech-compound3-review-2EX0Ug/paper30977375.html | unknown | Required primary figures, methods and exact compound-number mapping are unavailable. The first web-tool access was unavailable; a request to the same public URL returned403. Retrieval stopped for this source; no alternate path or host bypass. |
+
+## Limits And Additional Notes
+
+- This assesses one exact owner at commit47a738c235579895703f4f76b6af05cadaf31c99, whose scientific inputs still match the worktree. It is not a three-record category merge or an all-corpus scientific sign-off.
+- RDKit validates internal representation, not experimental structure; database quality flags and green QC do not resolve scientific uncertainty.
+- Evidence payloads/receipts are retained in the session workspace; stable public references, exact locators and hashes are recorded here. No Git publication or source-archive adoption occurred in this read-only review turn.
+- All prior193 access limitations remain in the campaign; two new publisher403 stops apply to the other/current compound3 papers. No alternate-route access was used.
+- Publisher full text/supporting information are unavailable. Exact chemical numbering, stereochemistry, native versus heterologous production context, and compound-specific pathway evidence remain unassessed. No finding is raised merely because the paper could not be accessed.
+- Source state is git_commit because all input hashes were independently checked against Git47a738c2 before assessment. The observation does not silently replace stale provenance.
+- Save/contract checks occur after authoring and are captured in separate receipts, not invented as pre-save successes.
+- Only review artifacts are authorized here. No record/history/status mutation, regeneration, GitHub issue, PR or paid provider call.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261013T152822Z-compound-3-3
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Compound 3 (BGC0002173.2): source-linked partial review'
+started_at: '2026-10-13T15:04:31.228229Z'
+finished_at: '2026-10-13T15:28:22.837858Z'
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: self_review
+  independence_basis: Same assistant/thread as the corpus review campaign; not independent
+    human sign-off.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Exact versioned source representation, internal chemistry, producer taxonomy
+  and sequence interval are consistent. Required full-text compound-specific identity/production
+  checks remain unavailable after HTTP403; no confirmed new finding in the inspected
+  subset. This is not a whole-record scientific pass.
+source:
+  git_revision: 47a738c235579895703f4f76b6af05cadaf31c99
+  state: git_commit
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: 49e2ab03c7e82013e9d68356de2c9965c9f8517a3408a44124076f4ca1b529cd
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/decisions.tsv
+    sha256: 7214a74975fb2cb65521da18dd14ea1c65665f50060106976dc0db9caf887805
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: a1eb14fec4a7cee0c2fc25c43091e75af24ae62c44c4f7659ed7aedf0e6a0e6c
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: 8762b6c3e9b048d64965049aad4addbaefdf76e817f6043e42301c68e301c25a
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: 5b1edc057cdcc732f61de2964cd175fa3bc2dca929c5d2823142f61313545a7e
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: 21f15282d9684d75bd9146dd08087d257500ff1c0f4307d4612db8f95450c63f
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: bf38e4f0c7e4bcbdf184a4e7b8b024752251e8f34c015c0b82cedca98a8a5729
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/compound-3.yaml
+    sha256: b8d5f67447bdbd0517bea27516210d2a9d53fd1c514260d1117a419b27cde248
+    role: context
+  - path: data/natural_products/polyketides/compound-3-2.yaml
+    sha256: 878c4431d82f122401f59ae947339d8838c0bda9f134a8bfef1ae91316388ff4
+    role: context
+  - path: data/natural_products/terpenoids/compound-3-3.yaml
+    sha256: 204bb3e4db7b6f0d66c37af04e2b8af52c9be6dd7a7023ecd15252d95393cb5e
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: 373f049029be3db137e062ff5f872a2400a9d5b423f3e108ea44ebde2f8dcc7d
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: 7b9b9f78f5b14aea9fabb163bbaa9e842920a7e9b07deac8f98c97666e9e23fc
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 245df036e09a00a2f92a5f78c70eadb210cef7d70046e8ee35377a9e636cd30b
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: pyproject.toml
+    sha256: 02505a46585e870eac7333f31a6773df51465ef13969d4d490fbc0247931d85c
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_lotus.py
+    sha256: 8a8c524f60f85d2bb54412ca055a6a45e0d37ec5f4584d8d70be454b8f664290
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/run_qc.py
+    sha256: ff44ed3e40a9b3582eb84e38a81301745ae80d16445756d09a7efb2a480b1abb
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 8d82d7633e0492e9fe16011f6e5af6f8024f573e80c8a24176b65e2941478b71
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: 6026ddca19f0989d499b1681f7724fbab23918de8d3957750b49bbfe1a9c0bff
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: a8b8834788b4714cf1cb0d1cc410d5c2f88112a32ad8621c8e043f0a4bc38a9d
+    role: context
+  - path: src/naturalproductmech/curate/xref_exclusions.py
+    sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/history.yaml
+    sha256: b01b06f1b9a37db205c26c31ec0fd910690848507c7e1bfb73b424ac0829c52d
+    role: context
+  - path: src/naturalproductmech/schema/mech_shared.yaml
+    sha256: c2e7054fd32635e380c698282bd886a9105861009b9f0474f02bb1b80865e895
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: uv.lock
+    sha256: c62a5739e3ffeb12cc57b3bf12a31dcf9cdfbf00b417f4ba3a801d51ef9efbe3
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-f5e8fe411a
+  path: data/natural_products/terpenoids/compound-3-3.yaml
+  label: compound 3
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Imported chemical, producer and cluster assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Imported structure-organism-reference triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Pinned ChEBI grounding inventory
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_origins.tsv
+    role: Pinned ChEBI occurrence inventory
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/antibioticmech_inchikeys.tsv
+    role: Pinned sibling exact-structure joins
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated harmonization and grading
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: MIBiG extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_lotus.py
+    role: LOTUS extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Implemented pinned structure corrections
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Implemented exact-context method corrections
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Implemented pinned strain qualifications
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_xref_exclusions.tsv
+    role: Implemented complete-row-pinned literal PubChem and NPAtlas exclusions;
+      no decision applies here
+scope:
+  description: One exact owner; same-label records are context only. Full campaign
+    denominator remains3115 owners and243 components.
+  selection: Next exact pending owner from the exhaustive campaign queue; no sampling
+    or scope reduction.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-f5e8fe411a
+  exclusions:
+  - target: Other3114 owners
+    reason: Outside this single-record observation; retained in the full campaign
+      checkpoint.
+checks:
+- check_id: strict-final
+  name: strict-final
+  status: passed
+  required: true
+  command: .venv/bin/python scripts/validate_strict.py data/natural_products/amino_acids_and_peptides/compound-3.yaml
+    data/natural_products/polyketides/compound-3-2.yaml data/natural_products/terpenoids/compound-3-3.yaml
+    --out /private/tmp/npmech-compound3-review-2EX0Ug/strict-final.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-f5e8fe411a
+  summary: All three selected exact owners passed closed-schema validation with zero
+    errors.
+  scope_note: Actual run 2026-10-13T15:22:35.126461Z to 2026-10-13T15:22:44.922805Z;
+    log SHA256 8d99e4baa630e7d1086cb56b7e0f9edf3114b61193e48de545178923a3bd4622
+- check_id: qc-current
+  name: qc-current
+  status: passed
+  required: true
+  command: .venv/bin/python scripts/run_qc.py
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-f5e8fe411a
+  summary: 'Full native QC passed on the same unchanged 47a738c2 scientific inputs:
+    741 tests passed, 3 skipped, 2 dependency warnings. All 3115 owners passed schema
+    validation; provenance, generated site, exact reproduction, graph/history tests
+    and PATHS.tsv integrity passed. This is deterministic evidence, not biological
+    sign-off.'
+  scope_note: Actual run 2026-10-13T15:02:50.310979Z to 2026-10-13T15:18:45.989504Z;
+    log SHA256 baa5fa5798442a476947d4ec74bc8c6b042b90f068149de7bddf9c3226e9be3f
+- check_id: labels-current
+  name: labels-current
+  status: passed
+  required: true
+  command: .venv/bin/python scripts/validate_id_label_correspondence.py -c conf/id_label_targets.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-f5e8fe411a
+  summary: 'Configured label gate passed: 13434 canonical, 646 synonyms, 35 exceptions,
+    499 nonblocking warning mismatches and 4649 no-adapter skips. Minted compound
+    identity is not certified by this gate; exact producer taxon/name/rank were independently
+    checked against NCBI.'
+  scope_note: Actual run 2026-10-13T15:05:23.435281Z to 2026-10-13T15:07:02.278808Z;
+    log SHA256 556ef5804e095767472c0aa8a542d5bff7e332470383a992e6b260103034414b
+- check_id: chemistry
+  name: chemistry
+  status: passed
+  required: true
+  command: env RDBASE=/private/tmp/npmech-rdkit-2026.03.5/share/RDKit PYTHONPATH=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/lib/python3.13/site-packages
+    /private/tmp/npmech-rdkit-2026.03.5/bin/python /private/tmp/npmech-compound3-review-2EX0Ug/chemistry.py
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-f5e8fe411a
+  summary: Pinned RDKit2026.03.5 independently regenerated the exact stored Standard
+    InChI and key, and matched the versioned MIBiG compound. This checks representation,
+    not experimental identity.
+  scope_note: Actual run 2026-10-13T15:22:05.076102Z to 2026-10-13T15:22:10.246104Z;
+    log SHA256 4d3e427cda5cc8c9b8a64e997b5c4c27c719dd78622dc3a99e7dec2b5c40d01e
+- check_id: search-final
+  name: search-final
+  status: passed
+  required: false
+  command: rg --no-ignore --hidden -l -i 'compound[- ]3|BGC0002321|BGC0002165|BGC0002173|RHGNLLJMHSJJRX|PXUDDXPBZDEGAF|NEAWGFXMEIEWAS|31081214|31553484|30977375'
+    . -g '!.git/**' -g '!.venv/**'
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-f5e8fe411a
+  summary: Ignored-inclusive identifier, name, slug, key and citation search covered
+    repository files except .git and .venv. Complete selected-owner parsing and structured
+    source-table scans supplied the bounded absence findings.
+  scope_note: Actual run 2026-10-13T15:22:06.214519Z to 2026-10-13T15:22:06.618420Z;
+    log SHA256 0e545771b4b6f71975f173c2cde301139a864f03438e07d21c55acd59f80bd93
+- check_id: queue-current
+  name: queue-current
+  status: passed
+  required: false
+  command: .venv/bin/python scripts/curation_worklist.py --review-records --limit
+    0 --tsv /private/tmp/npmech-compound3-review-2EX0Ug/queue-current.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-f5e8fe411a
+  summary: Native pending queue contains the full corpus; diagnostics do not count
+    as completed scientific reviews. No status was promoted.
+  scope_note: Actual run 2026-10-13T15:05:24.611956Z to 2026-10-13T15:06:06.221834Z;
+    log SHA256 654022334de1e21d0cad4dd9760384da849a5f426f255106a7e7944f8bb3ec5f
+- check_id: queue-final
+  name: queue-final
+  status: passed
+  required: false
+  command: .venv/bin/python scripts/curation_worklist.py --review-records --limit
+    0 --tsv /private/tmp/npmech-compound3-review-2EX0Ug/queue-final.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-f5e8fe411a
+  summary: Queue regenerated after this batch assessment:8930 diagnostic rows cover
+    all3115 distinct owners plus the non-owner unresolved_taxa.tsv diagnostics. Native
+    SEEDED statuses are unchanged; structured review completion is tracked separately.
+  scope_note: Actual run 2026-10-13T15:26:23.187387Z to 2026-10-13T15:27:37.568845Z;
+    log SHA256 3434e7d8e48ca8962b832c4cc169306f3a27015e841c3bf3d3f341eaffa5245e
+- check_id: primary-claims
+  name: Exact compound primary-source assessment
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-f5e8fe411a
+  evidence_ids:
+  - metadata
+  - access
+  summary: The publisher returned HTTP403. Metadata and abstract cannot establish
+    the paper-local compound3 structure, experimental strain/context, or a compound-specific
+    production/cluster method. No alternate-route retrieval was attempted.
+- check_id: imodulondb
+  name: Structured expression-source applicability
+  status: not_applicable
+  required: false
+  target_ids:
+  - naturalproductmech:mibig-f5e8fe411a
+  summary: The owner asserts no named gene/protein/regulator/module or transcriptomics
+    dataset. Exact MIBiG, taxonomy and GenBank source adapters were used first. Contextual
+    genes in the paper/sequence annotation are not additional owner assertions; no
+    iModulonDB coverage or absence claim is made.
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/natural_products/terpenoids/compound-3-3.yaml
+  locator: Complete raw YAML, discussions and both history entries
+  accessed_at: '2026-10-13T15:28:22.835689Z'
+  support: supports
+  summary: Exact generated, MINTED, SEEDED owner. No xrefs, occurrences, bioactivity
+    summaries/measurements, pathway, molecular targets, clinical assertions, datasets,
+    related_records or causal_graph_refs/inline graphs are present. The existing needs-a-name
+    discussion explicitly queues paper-local numbering.
+  snapshot_sha256: 204bb3e4db7b6f0d66c37af04e2b8af52c9be6dd7a7023ecd15252d95393cb5e
+- evidence_id: resolved
+  kind: record_content
+  reference: /private/tmp/npmech-compound3-review-2EX0Ug/compound-3-3-resolved.json
+  locator: Complete native read_natural_product result, verified equal to the current
+    owner
+  accessed_at: '2026-10-13T15:28:22.835822Z'
+  support: supports
+  summary: Resolved mechanism has no attached components or hidden mechanism claims.
+    Raw YAML and resolved JSON have distinct hashes.
+  snapshot_sha256: 5e07d0997144fa9195e09ad658cb595f5214b65d1d8e2aafb77494e7b7ef46ec
+- evidence_id: inventories
+  kind: database
+  reference: /private/tmp/npmech-compound3-review-2EX0Ug/source-rows.json
+  locator: Complete parsed exact-key scans of seven pinned TSV inventories with row
+    numbers
+  accessed_at: '2026-10-13T15:28:22.835906Z'
+  support: supports
+  summary: Exactly one MIBiG row for BGC0002173:2 and one NPClassifier row. No exact-key
+    match in the pinned LOTUS, ChEBI structure/origin, AntibioticMech or PubChem BioAssay
+    inventories. This is not a live/global registry absence claim.
+  snapshot_sha256: 1e3a82b30800d8768d80dfbc1a247c0cdf59f749cc998fa8e130e3eaaef739e6
+  search_scope: Complete structured scans of mibig_compounds, npclassifier, lotus_occurrences,
+    chebi_structures, chebi_origins, antibioticmech_inchikeys and pubchem_bioassay
+    TSVs. Repository rg --no-ignore --hidden included ignored/hidden files except
+    .git and .venv; no universal absence inference.
+- evidence_id: chemistry
+  kind: validation
+  reference: /private/tmp/npmech-compound3-review-2EX0Ug/chemistry.json
+  locator: compound-3-3 result from RDKit2026.03.5
+  accessed_at: '2026-10-13T15:28:22.835996Z'
+  support: supports
+  summary: Stored SMILES regenerates NEAWGFXMEIEWAS-WIVQCPOBSA-N and exact InChI;
+    formula C31H52O4, charge 0, computed neutral monoisotopic mass 488.38656014399993
+    Da. 11 specified and 0 unspecified tetrahedral centers agree with stereo_complete.
+    These are calculations, not measurements.
+  snapshot_sha256: 005f12f3a86dd3a8a2abcefb796865f36353f60e5d3522ec9da3d61999e892a9
+- evidence_id: mibig
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0002173.2/annotations.json
+  locator: Exact accession/version; compounds[1], loci, taxonomy, biosynthesis classes
+    and legacy references; captured 2026-10-13T15:03:02.796904Z; local payload /private/tmp/npmech-compound3-review-2EX0Ug/BGC0002173.2.json
+  accessed_at: '2026-10-13T15:28:22.836269Z'
+  support: supports
+  summary: Active entry names compound3 at exact index 2; stored structure, host,
+    locus bounds, method list and classes match. Quality/questionable and reviewer
+    metadata are not scientific truth signals. This verifies the pinned version, not
+    a claim that it is the latest version.
+  snapshot_sha256: 3a33f9c7e000376127c90a3ce33027d90b7789c1f9d2ed9531953d3a7935fd42
+- evidence_id: taxonomy
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=2163413,321614,451804&retmode=xml
+  locator: Exact direct Taxon node for NCBITaxon:451804; captured 2026-10-13T15:05:33.672393Z;
+    local payload /private/tmp/npmech-compound3-review-2EX0Ug/taxonomy.xml
+  accessed_at: '2026-10-13T15:28:22.836506Z'
+  support: supports
+  summary: Aspergillus fumigatus A1163 resolves at rank strain; its lineage contains
+    Fungi. A taxon/group classification does not prove compound production.
+  snapshot_sha256: fc6f635ce6beb308f2cb2c4a9a655461e69d1a257aa30b15c39f42d99979d6c7
+- evidence_id: genome
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=DS499598.1&seq_start=2415644&seq_stop=2423329&rettype=gbwithparts&retmode=xml
+  locator: GBSeq and source/CDS features within the exact requested BGC interval;
+    returned coordinates are rebased to the window; captured 2026-10-13T15:06:17.430537Z;
+    local payload /private/tmp/npmech-compound3-review-2EX0Ug/DS499598.1-region.xml
+  accessed_at: '2026-10-13T15:28:22.836871Z'
+  support: supports
+  summary: DS499598.1 interval2415644..2423329 is 7686nt, A1163 scaffold5. AFUB_071550/071560/071569/071570
+    encode annotated putative/hypothetical products EDP50814.1..EDP50817.1. Annotation
+    alone does not prove the exact compound3 pathway.
+  snapshot_sha256: 56332b4b86fe34c2e4af2302c06c00e6e750c0652ed245ea6caac09f7ba91ec9
+- evidence_id: metadata
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:31081214%20OR%20EXT_ID:31553484%20OR%20EXT_ID:30977375&format=json&resultType=core&pageSize=100
+  locator: EuropePMC PMID:30977375 title, DOI, abstract and publication links only;
+    captured 2026-10-13T14:11:09.732857Z; local payload /private/tmp/npmech-compound3-review-2EX0Ug/literature-metadata.json
+  accessed_at: '2026-10-13T15:28:22.837340Z'
+  support: partial
+  summary: Characterization and Biosynthesis of a Rare Fungal Hopane-Type Triterpenoid
+    Glycoside Involved in the Antistress Property of Aspergillus fumigatus.; DOI:10.1021/acs.orglett.9b00984.
+    The abstract concerns fumihopasideA, afum deletion/reconstitution and heat/UV
+    protection. It does not identify compound3 or establish its assay/production context.
+  snapshot_sha256: 800a7283d7c6ba1aee8bc4c212f1de7ae882b243c527e2cd800e1e77f3b0ebba
+- evidence_id: scope-proof
+  kind: validation
+  reference: /private/tmp/npmech-compound3-review-2EX0Ug/final-resumption.json
+  locator: Ignored-inclusive complete owner/component hash comparison and exact Git-tree
+    verification
+  accessed_at: '2026-10-13T15:28:22.837498Z'
+  support: supports
+  summary: All3115 owners,243 components and26 prior immutable observations are unchanged;
+    every captured input equals its bytes at commit47a738c235579895703f4f76b6af05cadaf31c99.
+    This review assesses that exact revision, which also matches the current scientific
+    content.
+  snapshot_sha256: da2d1f4b38bef8e6351b2270552a7a4f6068771a52148eb6149ddc44609fafbb
+- evidence_id: access
+  kind: search
+  reference: https://doi.org/10.1021/acs.orglett.9b00984
+  locator: HTTP403 error payload, not full paper or supporting information; captured
+    2026-10-13T15:04:39.733487Z; local payload /private/tmp/npmech-compound3-review-2EX0Ug/paper30977375.html
+  accessed_at: '2026-10-13T15:28:22.837764Z'
+  support: unknown
+  summary: Required primary figures, methods and exact compound-number mapping are
+    unavailable. The first web-tool access was unavailable; a request to the same
+    public URL returned403. Retrieval stopped for this source; no alternate path or
+    host bypass.
+  snapshot_sha256: fb1b50627d85bfab70fa639ebacb241b7988d450aa9a7f18e39e4e6a05d2da5b
+  search_scope: Exact public URL https://doi.org/10.1021/acs.orglett.9b00984 at 2026-10-13T15:04:39.733487Z;
+    HTTP403 and metadata/abstract only. Retrieval stopped for this paper, including
+    alternate hosts/paths. No absence-of-evidence claim follows.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Paper-local exact identity and chemical boundaries
+  outcome: unknown
+  summary: The versioned database graph is unambiguous, but the exact paper-local
+    compound3 assignment and experimental stereochemistry cannot be checked from the
+    abstract. Do not rename it after the end product, merge it with another compound3,
+    or promote status.
+  target_ids:
+  - naturalproductmech:mibig-f5e8fe411a
+  evidence_ids:
+  - owner
+  - mibig
+  - chemistry
+  - metadata
+  - access
+  dimensions:
+  - name: exact-key
+    value: NEAWGFXMEIEWAS-WIVQCPOBSA-N
+    definition: Stored exact owner identity, not a proposed replacement
+    evidence_ids:
+    - owner
+    - chemistry
+  - name: stereo-resolution
+    value: 11 specified/0 unspecified centers
+    definition: Computed representation only; experimental assignment is assessed
+      separately
+    evidence_ids:
+    - chemistry
+- assessment_id: representation
+  area: consistency
+  topic: Structure-source roundtrip
+  outcome: supported
+  summary: SMILES, InChI and key agree under the pinned chemistry runtime and match
+    the exact MIBiG compound index. stereo_complete correctly describes encoded tetrahedral
+    resolution. Formula/mass are review calculations because the owner does not assert
+    those optional fields.
+  target_ids:
+  - naturalproductmech:mibig-f5e8fe411a
+  evidence_ids:
+  - owner
+  - mibig
+  - chemistry
+- assessment_id: grounding
+  area: grounding
+  topic: Minted identity and exact equivalence
+  outcome: supported
+  summary: No pinned3-star ChEBI exact-key match supports grounding; keeping the content-hashed
+    minted ID is consistent with the inventory. No xref, broader-parent or sibling-equivalence
+    assertion needs to be repaired. This conclusion does not assert that no registry
+    name exists.
+  target_ids:
+  - naturalproductmech:mibig-f5e8fe411a
+  evidence_ids:
+  - owner
+  - inventories
+- assessment_id: classification
+  area: representation
+  topic: Independent origin, taxon and chemical-class facets
+  outcome: supported
+  summary: Filing and non-glycoside prediction match NPClassifier@2026-09-07 and PATHS.tsv;
+    BGC classes remain source assertions. FUNGAL agrees with the independently resolved
+    taxon lineage. Natural-product origin comes from the MIBiG claim rather than structural
+    similarity. Natural versus engineered production of this specific numbered compound
+    is not resolved from the abstract; retain that limit instead of treating taxonomy
+    as production evidence. TERPENE/SACCHARIDE describe the cluster; they do not require
+    every intermediate, including this non-glycoside graph, to contain a sugar.
+  target_ids:
+  - naturalproductmech:mibig-f5e8fe411a
+  evidence_ids:
+  - owner
+  - inventories
+  - mibig
+  - taxonomy
+  - metadata
+  - access
+- assessment_id: producer
+  area: scope
+  topic: Strain and biological-origin evidence
+  outcome: unknown
+  summary: Aspergillus fumigatus A1163 is a strain-level taxon and matches the sequence
+    source. SOURCE_ASSERTION honestly preserves the database grade; native versus
+    engineered production of compound3 remains unverified. No transfer from the end-product
+    abstract is justified.
+  target_ids:
+  - naturalproductmech:mibig-f5e8fe411a
+  evidence_ids:
+  - owner
+  - mibig
+  - taxonomy
+  - genome
+  - metadata
+  - access
+  dimensions:
+  - name: taxon-rank
+    value: strain
+    definition: NCBI rank for the exact producer taxon ID
+    evidence_ids:
+    - taxonomy
+  - name: producer-grade
+    value: SOURCE_ASSERTION
+    definition: Native record grade, not upgraded by this review
+    evidence_ids:
+    - owner
+    - mibig
+- assessment_id: origin
+  area: evidence
+  topic: Natural versus engineered origin of the exact compound
+  outcome: unknown
+  summary: NATURAL_PRODUCT is faithfully imported from an asserted database origin,
+    but the abstract does not distinguish native production of this exact compound3
+    from heterologous reconstruction or another experimental context. This biological
+    facet remains unknown despite correct fungal taxonomy and computed chemical filing.
+  target_ids:
+  - naturalproductmech:mibig-f5e8fe411a
+  evidence_ids:
+  - owner
+  - mibig
+  - metadata
+  - access
+- assessment_id: cluster
+  area: evidence
+  topic: Versioned active BGC and compound-specific locus support
+  outcome: unknown
+  summary: Active accession/version, exact interval and named host are confirmed.
+    Empty MIBiG method metadata correctly remains CLUSTER_UNSTATED. Abstract experiments
+    on the overall pathway/end product cannot be assigned to compound3 without full-text
+    inspection.
+  target_ids:
+  - naturalproductmech:mibig-f5e8fe411a
+  evidence_ids:
+  - owner
+  - mibig
+  - genome
+  - metadata
+  - access
+- assessment_id: activity
+  area: scope
+  topic: Compound-specific activity and mechanism
+  outcome: supported
+  summary: The owner correctly makes no pure-compound assay, target, activity-summary,
+    pathway or causal-graph assertion. End-product phytotoxicity/SthB catalysis or
+    fumihopasideA heat/UV protection cannot be projected to this numbered intermediate.
+  target_ids:
+  - naturalproductmech:mibig-f5e8fe411a
+  evidence_ids:
+  - owner
+  - resolved
+  - metadata
+- assessment_id: optional
+  area: completeness
+  topic: Occurrences, cross-corpus links, clinical and dataset fields
+  outcome: not_applicable
+  summary: These optional claims are not present in the complete owner; exact-key
+    source scans support the absence of seeded occurrences/assays/sibling joins in
+    the listed inventories. No need to populate unrelated optional fields merely to
+    complete a review.
+  target_ids:
+  - naturalproductmech:mibig-f5e8fe411a
+  evidence_ids:
+  - owner
+  - resolved
+  - inventories
+- assessment_id: naming
+  area: nomenclature
+  topic: Existing paper-local naming question
+  outcome: supported
+  summary: The needs-a-name discussion acknowledges the unresolved descriptive name.
+    A paper-local compound number is not globally unique. A descriptive name requires
+    the inaccessible primary compound mapping; the generic label is already queued
+    rather than silently treated as a common name.
+  target_ids:
+  - naturalproductmech:mibig-f5e8fe411a
+  evidence_ids:
+  - owner
+  - mibig
+  - access
+- assessment_id: audit
+  area: provenance
+  topic: History, deterministic validation and maintained ownership
+  outcome: supported
+  summary: Both history entries are seeding events, and SEEDED remains accurate. All
+    required native deterministic checks passed. Scientific findings do not authorize
+    edits or status promotion. Future producer corrections belong to the pinned strain
+    table; a structure qualification can be a curator-prefixed discussion retained
+    through guarded writers. Reserved decisions.tsv is not consumed.
+  target_ids:
+  - naturalproductmech:mibig-f5e8fe411a
+  evidence_ids:
+  - owner
+  - scope-proof
+findings: []
+actions: []
+limitations:
+- This assesses one exact owner at commit47a738c235579895703f4f76b6af05cadaf31c99,
+  whose scientific inputs still match the worktree. It is not a three-record category
+  merge or an all-corpus scientific sign-off.
+- RDKit validates internal representation, not experimental structure; database quality
+  flags and green QC do not resolve scientific uncertainty.
+- Evidence payloads/receipts are retained in the session workspace; stable public
+  references, exact locators and hashes are recorded here. No Git publication or source-archive
+  adoption occurred in this read-only review turn.
+- All prior193 access limitations remain in the campaign; two new publisher403 stops
+  apply to the other/current compound3 papers. No alternate-route access was used.
+- Publisher full text/supporting information are unavailable. Exact chemical numbering,
+  stereochemistry, native versus heterologous production context, and compound-specific
+  pathway evidence remain unassessed. No finding is raised merely because the paper
+  could not be accessed.
+notes:
+- Source state is git_commit because all input hashes were independently checked against
+  Git47a738c2 before assessment. The observation does not silently replace stale provenance.
+- Save/contract checks occur after authoring and are captured in separate receipts,
+  not invented as pre-save successes.
+- Only review artifacts are authorized here. No record/history/status mutation, regeneration,
+  GitHub issue, PR or paid provider call.
+```
