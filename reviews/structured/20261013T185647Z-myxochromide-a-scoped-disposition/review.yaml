@@ -1,0 +1,593 @@
+schema_version: 1.0.0
+review_id: 20261013T185647Z-myxochromide-a-scoped-disposition
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'myxochromide-a: scoped strain and identity-qualification disposition'
+started_at: '2026-10-13T18:43:47.085764Z'
+finished_at: '2026-10-13T18:56:47.058801Z'
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: self_review
+  independence_basis: Same assistant implemented changes and performed a separate
+    adversarial pass; not independent human review.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: F2 strain provenance is resolved; F1 identity remains open.
+source:
+  git_revision: 223df4f16fc774aa01e81cf038ea21bebf9c531f
+  state: git_commit
+  inputs:
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: 1688222f88ac4b89e831f95fed2bb7b2be04cd01eac0322ba9b0c8227b3c62a6
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/myxochromide-a.yaml
+    sha256: f154b892033a74b96a0b2ef3913b5a7263e0ff788f412e4aeed4a514ef793e50
+    role: target
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: docs/CURATION.md
+    sha256: 245df036e09a00a2f92a5f78c70eadb210cef7d70046e8ee35377a9e636cd30b
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: reviews/evidence/20261013-myxochromide/manifest.json
+    sha256: 4c99e064525c9b76499db8157c40c5d921a3c55506a45acdcae445e7407a3bf3
+    role: context
+  - path: reviews/structured/20261013T182624Z-myxochromide-a/review.yaml
+    sha256: 76d87cfbaa998e6d2cf8e3ea56e80728178e4de1b3dcb4497da5f7dbe62be6d9
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 8d82d7633e0492e9fe16011f6e5af6f8024f573e80c8a24176b65e2941478b71
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: 6026ddca19f0989d499b1681f7724fbab23918de8d3957750b49bbfe1a9c0bff
+    role: context
+  - path: src/naturalproductmech/schema/mech_shared.yaml
+    sha256: c2e7054fd32635e380c698282bd886a9105861009b9f0474f02bb1b80865e895
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: tests/test_myxochromide_curation.py
+    sha256: 67630f73544870e90e374ea6634fa6b70f1fc126684181a0207a115904a2046a
+    role: context
+  - path: tests/test_myxochromide_review_archive.py
+    sha256: d2cd57baed0e3fc0f4bf734d79a81f291fd4052e662c5651a924ef7da689186a
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-82041a5d45
+  path: data/natural_products/amino_acids_and_peptides/myxochromide-a.yaml
+  label: myxochromide A
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Imported chemical, producer and cluster assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Imported structure-organism-reference triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Pinned ChEBI grounding inventory
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_origins.tsv
+    role: Pinned ChEBI occurrence inventory
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/antibioticmech_inchikeys.tsv
+    role: Pinned sibling exact-structure joins
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated harmonization and grading
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: MIBiG extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_lotus.py
+    role: LOTUS extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Implemented pinned structure corrections
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Implemented exact-context method corrections
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Implemented pinned strain qualifications
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_xref_exclusions.tsv
+    role: Implemented complete-row-pinned PubChem and NPAtlas exclusions
+scope:
+  description: One exact owner; scoped predecessor disposition, not a new whole-record
+    assessment.
+  selection: User-authorized PR adversarial review and issue remediation.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-82041a5d45
+  exclusions:
+  - target: Other owners and uncompleted primary-source checks
+    reason: No increase in full-record coverage. The campaign remains 3115 owners
+      and 243 components.
+checks:
+- check_id: focused-corrected
+  name: focused-corrected
+  status: passed
+  required: true
+  command: .venv/bin/python -m pytest -q tests/test_myxochromide_curation.py tests/test_myxochromide_review_archive.py
+    tests/test_producer_strains.py
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-82041a5d45
+  summary: '23 focused tests passed: exact strain overlay scope, qualification carry-forward,
+    archive integrity and historical full-population accounting.'
+  scope_note: Executed 2026-10-13T18:42:05.354126Z to 2026-10-13T18:42:07.929133Z;
+    log /private/tmp/npmech-myxochromide-publish-MyX4Nq/focused-corrected.log; SHA256
+    df52569fc01cd4c5fe74bf6976820ba29f0cc6a63d35dfa6ad236ead236c271d
+- check_id: strict
+  name: strict
+  status: passed
+  required: true
+  command: .venv/bin/python scripts/validate_strict.py data/natural_products/amino_acids_and_peptides/myxochromide-a.yaml
+    data/natural_products/unclassified/myxochromide-a-2.yaml --out /private/tmp/npmech-myxochromide-publish-MyX4Nq/strict.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-82041a5d45
+  summary: Both exact owners passed closed-schema validation with zero errors.
+  scope_note: Executed 2026-10-13T18:42:50.526630Z to 2026-10-13T18:42:54.090875Z;
+    log /private/tmp/npmech-myxochromide-publish-MyX4Nq/strict.log; SHA256 51c87e9fb0008b93cac300e9672f52fe9e9c9a050e843349a90bb792f72ad29c
+- check_id: reseed-a
+  name: reseed-a
+  status: passed
+  required: true
+  command: .venv/bin/python scripts/seed_from_sources.py --apply --only naturalproductmech:mibig-82041a5d45
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-82041a5d45
+  summary: C45 owner regenerated byte-identically, including its qualifications and
+    history.
+  scope_note: Executed 2026-10-13T18:42:49.371191Z to 2026-10-13T18:42:52.898122Z;
+    log /private/tmp/npmech-myxochromide-publish-MyX4Nq/reseed-a.log; SHA256 67e92562fe50792bab3f0f4aac51f3fb0afa9d85dd044b9cfbde8fbb6bdc6d39
+- check_id: reseed-b
+  name: reseed-b
+  status: passed
+  required: true
+  command: .venv/bin/python scripts/seed_from_sources.py --apply --only naturalproductmech:mibig-99085b9c8b
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-82041a5d45
+  summary: C44 owner regenerated byte-identically, including its qualification and
+    history.
+  scope_note: Executed 2026-10-13T18:43:04.785532Z to 2026-10-13T18:43:08.047957Z;
+    log /private/tmp/npmech-myxochromide-publish-MyX4Nq/reseed-b.log; SHA256 67e92562fe50792bab3f0f4aac51f3fb0afa9d85dd044b9cfbde8fbb6bdc6d39
+- check_id: scope-audit
+  name: scope-audit
+  status: passed
+  required: true
+  command: .venv/bin/python /private/tmp/npmech-myxochromide-publish-MyX4Nq/scope_audit.py
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-82041a5d45
+  summary: All 3115 owners and 243 components retained; only two expected owners changed.
+    All raw inventories, path lock, 3113 other owners and 36 prior review pairs are
+    unchanged.
+  scope_note: Executed 2026-10-13T18:42:23.567572Z to 2026-10-13T18:42:24.186109Z;
+    log /private/tmp/npmech-myxochromide-publish-MyX4Nq/scope-audit.log; SHA256 8251e5b35b33b2556bb615da00dc7d026d73289b4d0c7dd86406cacd6d3d4103
+- check_id: labels
+  name: labels
+  status: passed
+  required: true
+  command: .venv/bin/python scripts/validate_id_label_correspondence.py -c conf/id_label_targets.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-82041a5d45
+  summary: Configured ID-label check passed with existing nonblocking mismatches and
+    no-adapter skips; not chemical-equivalence approval.
+  scope_note: Executed 2026-10-13T18:42:48.190259Z to 2026-10-13T18:44:49.047750Z;
+    log /private/tmp/npmech-myxochromide-publish-MyX4Nq/labels.log; SHA256 556ef5804e095767472c0aa8a542d5bff7e332470383a992e6b260103034414b
+- check_id: qc
+  name: qc
+  status: passed
+  required: true
+  command: env RECORD_REVIEW_BASE=606252dd3e23f7b3da0120a8cc7732bd01efecc8 .venv/bin/python
+    scripts/run_qc.py
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-82041a5d45
+  summary: Fresh full native QC passed. Exact test counts and skipped checks are in
+    the retained log. Includes governance, documentation, raw provenance, source queue,
+    tests, all-owner strict validation, site consistency, exact reproduction and path
+    lock.
+  scope_note: Executed 2026-10-13T18:42:37.393405Z to 2026-10-13T18:56:46.781998Z;
+    log /private/tmp/npmech-myxochromide-publish-MyX4Nq/qc.log; SHA256 65b3d5000a0b19a843eb64aedd3e2716a3b2db5fea35ad59cfb85b317711b210
+- check_id: focused-initial
+  name: Initial focused test selection
+  status: failed
+  required: false
+  command: .venv/bin/python -m pytest -q tests/test_myxochromide_curation.py tests/test_myxochromide_review_archive.py
+    tests/test_producer_strains.py tests/test_seed_from_sources.py
+  exit_code: 4
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-82041a5d45
+  summary: Incorrect test filename caused no tests to run. The corrected focused selection
+    passed; full QC includes the actual seeder suite.
+- check_id: exact-primary
+  name: Exact-strain experimental product identity
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-82041a5d45
+  summary: The previously denied 2017 primary text remains unavailable. No fresh primary
+    retrieval or final stereochemical adjudication is claimed.
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/natural_products/amino_acids_and_peptides/myxochromide-a.yaml
+  locator: Entire current YAML and append-only history
+  accessed_at: '2026-10-13T18:56:47.057033Z'
+  support: supports
+  summary: OPEN identity qualification is present; chemistry, taxon IDs, source concepts,
+    evidence grades and SEEDED status are unchanged.
+  snapshot_sha256: f154b892033a74b96a0b2ef3913b5a7263e0ff788f412e4aeed4a514ef793e50
+- evidence_id: prior
+  kind: record_content
+  reference: reviews/structured/20261013T182624Z-myxochromide-a/review.yaml
+  locator: Exact immutable predecessor findings
+  accessed_at: '2026-10-13T18:56:47.057368Z'
+  support: supports
+  summary: The prior full-record partial observation remains unchanged; this report
+    only reassesses disposition.
+  snapshot_sha256: 76d87cfbaa998e6d2cf8e3ea56e80728178e4de1b3dcb4497da5f7dbe62be6d9
+- evidence_id: strain-table
+  kind: record_content
+  reference: curation/mibig_producer_strains.tsv
+  locator: Complete-row-pinned BGC0001426:1,1427:1,1428:1
+  accessed_at: '2026-10-13T18:56:47.057561Z'
+  support: supports
+  summary: The three source-specific qualifiers are DK897, A47 and Mx48; no grade
+    or chemical-identity change.
+  snapshot_sha256: 1688222f88ac4b89e831f95fed2bb7b2be04cd01eac0322ba9b0c8227b3c62a6
+- evidence_id: scope-proof
+  kind: validation
+  reference: /private/tmp/npmech-myxochromide-publish-MyX4Nq/scope-audit.json
+  locator: Full corpus hashes and exact field comparison
+  accessed_at: '2026-10-13T18:56:47.057648Z'
+  support: supports
+  summary: Only three strain qualifiers, cited OPEN discussions and append-only history
+    differ; no migration or unrelated record change.
+  snapshot_sha256: f500fb4849c555599b26b27d871b7457f07e622db12f3ed0d4c3ac2b38c1b830
+- evidence_id: regressions
+  kind: validation
+  reference: /private/tmp/npmech-myxochromide-publish-MyX4Nq/focused-corrected.log
+  locator: 23 focused tests
+  accessed_at: '2026-10-13T18:56:47.058116Z'
+  support: supports
+  summary: Exact overlay scope, carry-forward restrictions and evidence durability
+    checks passed.
+  snapshot_sha256: df52569fc01cd4c5fe74bf6976820ba29f0cc6a63d35dfa6ad236ead236c271d
+- evidence_id: archive
+  kind: validation
+  reference: reviews/evidence/20261013-myxochromide/manifest.json
+  locator: 121 retained artifacts and 12 reference-only sources
+  accessed_at: '2026-10-13T18:56:47.058209Z'
+  support: supports
+  summary: Original review inputs and historical full-population checkpoint are recoverable
+    without redistributing publisher content.
+  snapshot_sha256: 4c99e064525c9b76499db8157c40c5d921a3c55506a45acdcae445e7407a3bf3
+- evidence_id: chemistry
+  kind: validation
+  reference: /private/tmp/npmech-myxochromide-resume-A59XD1/chemistry.json
+  locator: myxochromide-a and corresponding version4 MIBiG structures; same captured
+    source reassessed for disposition, not a fresh retrieval
+  accessed_at: '2026-10-13T18:56:47.058456Z'
+  support: supports
+  summary: Computed C45H63N7O9, charge0, exact mass845.4687265960001 Da; 7 specified/0
+    undefined tetrahedral centers; ring sizes[21, 5]; 8 specified E carbon double
+    bonds. Exact roundtrips passed. These are calculations, not measurements.
+  snapshot_sha256: 87b9a59107b6ba70a171c7085f58fffcf09470151afe3036accfb48d86dd80cc
+- evidence_id: core
+  kind: validation
+  reference: /private/tmp/npmech-myxochromide-resume-A59XD1/core-diagnostics.json
+  locator: Virtual ester/amide hydrolysis excluding terminal carboxamides; same captured
+    source reassessed for disposition, not a fresh retrieval
+  accessed_at: '2026-10-13T18:56:47.058471Z'
+  support: supports
+  summary: Owner-derived proline is ONIBWKKTOPOVIA-SCSAIBSYSA-N (R); positional connectivity
+    and stereotags were preserved computationally. A diagnostic only, not proof of
+    an actual hydrolysis experiment.
+  snapshot_sha256: 3cc9afec28add1d6a853f708ad221c101039f2a3a67a431426152254b903040d
+- evidence_id: proline
+  kind: database
+  reference: /private/tmp/npmech-myxochromide-resume-A59XD1/proline-context.json
+  locator: Module5 substrate structures and declared evidence methods; same captured
+    source reassessed for disposition, not a fresh retrieval
+  accessed_at: '2026-10-13T18:56:47.058482Z'
+  support: partial
+  summary: All five MIBiG entries depict ONIBWKKTOPOVIA-BYPYZUCNSA-N (S) proline.
+    BGC0001425 marks structure-based inference; the others mark sequence-based prediction.
+    None is independent experimental proof of final product stereochemistry.
+  snapshot_sha256: 99edda5ddf49f6681522121f127653050da93653cd24bdcc27bee9f0917b3c66
+- evidence_id: sequences
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KX622592.1,KX622595.1,KX622596.1,KX622597.1,KX622598.1&rettype=gbwithparts&retmode=xml
+  locator: Five GBSeq source features, organism/strain/taxid qualifiers, accession
+    versions and citation fields; captured 2026-10-13T17:09:35.405974Z..2026-10-13T17:09:35.969078Z,
+    HTTP200; payload /private/tmp/npmech-myxochromide-review-RK6G2y/sequences.xml;
+    receipt SHA256 6e4e1e6ddc850ed2ea0a2c8c34ed4c5a05ae0ea56f031cd8a2a704895dedf959;
+    same captured source reassessed for disposition, not a fresh retrieval
+  accessed_at: '2026-10-13T18:56:47.058491Z'
+  support: supports
+  summary: KX622595.1:DK1622; KX622596.1:DK897; KX622597.1:A47; KX622598.1:Mx48; KX622592.1:HW-1.
+    All cite PMID28128551. Sequence annotation anchors the isolate and deposited locus,
+    not exact metabolite production.
+  snapshot_sha256: 1af4ae7685a1910151516a8f489752ef72fcb02d315a1cdff3d376350c0ac03b
+- evidence_id: si2006
+  kind: primary_source
+  reference: https://www.wiley-vch.de/contents/jc_2002/2006/z503737_s.pdf
+  locator: PDF pages2-5, Figures1-2/Table1; page11; full14-page extraction plus visual
+    inspection; captured 2026-10-13T18:17:00.879761Z..2026-10-13T18:17:03.282460Z,
+    HTTP200; payload /private/tmp/npmech-myxochromide-resume-A59XD1/wenzel2006-si.pdf;
+    receipt SHA256 051f925a2216b59579666d8431eba3b2cc9db72ee1b4aa328f840f05e598e423;
+    same captured source reassessed for disposition, not a fresh retrieval
+  accessed_at: '2026-10-13T18:56:47.058500Z'
+  support: partial
+  summary: A3 was characterized from DK1050, a DK1622 derivative; Figures1-2 depict
+    a glutamine-based19-membered core shared by A2-A4. Table1 assigns L-proline; A3
+    has an18-carbon octaenoyl chain. Page11 reports a verified DK1622 mchC insertion
+    mutant lacking myxochromide A. This is independent2006 evidence, not the denied2017
+    article and not proof for HW-1, DK897, A47 or Mx48.
+  snapshot_sha256: 73541b18547b10249370a207f76d1556104ede46dab515b6848eebeebf0c57af
+- evidence_id: paper-access
+  kind: primary_source
+  reference: https://doi.org/10.1021/acschembio.6b00953
+  locator: Denial payload only, not article content; captured 2026-10-13T17:09:09.525153Z..2026-10-13T17:09:10.249519Z,
+    HTTP403; payload /private/tmp/npmech-myxochromide-review-RK6G2y/paper28128551.html;
+    receipt SHA256 0883d3944016f08e493fc93437b6db2f571a2e2f198c041414f49931a1137fd4;
+    same captured source reassessed for disposition, not a fresh retrieval
+  accessed_at: '2026-10-13T18:56:47.058508Z'
+  support: unknown
+  summary: HTTP403 stops full2017 paper access. No alternate copy retrieved; absence
+    of accessible full text is not evidence of absence.
+  snapshot_sha256: d811f43ffb51bed8b1f2c7b66a15ec1bef656c22c6ebab42f9c74d9e51031377
+findings:
+- finding_id: F1
+  issue_key: mibig-BGC0001425-1428-myxochromide-a-core-identity
+  category: identity
+  severity: blocker
+  status: open
+  certainty: provisional
+  title: The imported A-type structure conflicts with the experimentally characterized
+    peptide core
+  description: 'The four source rows encode a 21-membered lactone with the terminal
+    amino-acid carboxamide attached at the alpha carbon. The independently inspected
+    2006 A-series structure has a 19-membered glutamine-based core. Its A3 side-chain
+    length matches this C45 graph, so the ring difference is not explained merely
+    by A2/A3/A4 chain variation. Virtual hydrolysis also exposes an R-proline fragment,
+    opposite the same MIBiG entries'' S-proline substrate depiction. These differences
+    are confirmed observations, but the exact assignment across all four 2017 strain
+    entries remains provisional: the cited 2017 full paper is unavailable, and the
+    older structure elucidation used DK1050, not every listed strain. The existing
+    shared-structure discussion does not state this chemical conflict. Do not select
+    a replacement or transfer claims merely from the common label.'
+  target_ids:
+  - naturalproductmech:mibig-82041a5d45
+  field_paths:
+  - label
+  - chemical_structure
+  - biosynthesis_origin
+  - producer_organisms
+  - biosynthetic_gene_clusters
+  - discussions
+  evidence_ids:
+  - owner
+  - prior
+  - scope-proof
+  - regressions
+  - chemistry
+  - core
+  - proline
+  - si2006
+  - paper-access
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Versioned source chemistry, taxon and locus assertions; retain raw provenance
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: MIBiG extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Structure-key grouping, evidence grading and generated records
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/amino_acids_and_peptides/myxochromide-a.yaml
+    role: Curator-owned cited qualification only through validated curation; seeded
+      chemistry is not hand-editable
+  rule_id: review-checklist:Identity/Structure; docs/HARMONIZATION.md:one record per
+    exact structure
+  native_severity: blocker
+  normalization_reason: If the experimentally characterized A-core assignment applies,
+    this is a different constitution, not a stylistic label issue. Severity reflects
+    the identity consequence; certainty remains provisional until per-strain exact-product
+    adjudication.
+  previous_occurrences:
+  - repository: CultureBotAI/NaturalProductMech
+    review_id: 20261013T182624Z-myxochromide-a
+    finding_id: F1
+  external_issues:
+  - https://github.com/CultureBotAI/NaturalProductMech/issues/924
+  disposition_reason: Cited OPEN qualification now exposes the concern, but does not
+    resolve it. The imported graph and uncertainty remain unchanged; source predictions
+    and the independent 2006 experiment in another strain cannot substitute for exact-strain
+    2017 evidence. No replacement or stereo flip was made.
+- finding_id: F2
+  issue_key: mibig-BGC0001426-1428-myxochromide-a-source-strains
+  category: provenance
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Three species-level producer claims omit the deposited source strains
+  description: GenBank source features identify KX622596.1 as DK897, KX622597.1 as
+    A47 and KX622598.1 as Mx48. The matching BGC0001426/1427/1428 producer items retain
+    only NCBITaxon:34 and the species label, without strain qualifiers. Their BGC
+    links still preserve traceability, making this a bounded provenance defect rather
+    than proof of species-wide production. Qualify these exact source claims without
+    altering taxon IDs, evidence grades or unresolved product identity. DK1622 is
+    already represented by a strain-rank taxon.
+  target_ids:
+  - naturalproductmech:mibig-82041a5d45
+  field_paths:
+  - producer_organisms[1].strain
+  - producer_organisms[2].strain
+  - producer_organisms[3].strain
+  evidence_ids:
+  - owner
+  - prior
+  - scope-proof
+  - regressions
+  - strain-table
+  - sequences
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Implemented complete-source-row-pinned strain qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Validated strain qualification loader and evidence helper
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Versioned source chemistry, taxon and locus assertions; retain raw provenance
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: MIBiG extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Structure-key grouping, evidence grading and generated records
+  rule_id: review-checklist:Producer organisms; docs/CURATION.md:MIBiG producer strain
+    context
+  native_severity: minor
+  normalization_reason: Explicit BGC/accession provenance remains, but inspected strain
+    qualifiers have been lost. This finding does not establish exact-congener biosynthesis.
+  previous_occurrences:
+  - repository: CultureBotAI/NaturalProductMech
+    review_id: 20261013T182624Z-myxochromide-a
+    finding_id: F2
+  external_issues:
+  - https://github.com/CultureBotAI/NaturalProductMech/issues/926
+  disposition_reason: Resolved only the missing deposited strain qualifiers. Complete-row-pinned
+    overlays add separate curator inference without altering the original source assertions,
+    taxon IDs, chemical graph or grades. Regeneration and full QC pass; exact congener
+    identity remains unresolved.
+assessments:
+- assessment_id: bounded-fix
+  area: scope
+  topic: Exact strain context and visible identity qualification
+  outcome: supported
+  target_ids:
+  - naturalproductmech:mibig-82041a5d45
+  evidence_ids:
+  - owner
+  - strain-table
+  - scope-proof
+  - regressions
+  summary: Reviewed changes are confined to three deposited strain qualifiers and
+    explicit uncertainty. Existing chemistry and evidence tiers are preserved.
+- assessment_id: identity
+  area: identity
+  topic: Exact-strain chemical identity remains unresolved
+  outcome: concern
+  target_ids:
+  - naturalproductmech:mibig-82041a5d45
+  evidence_ids:
+  - owner
+  - prior
+  - chemistry
+  - core
+  - proline
+  - si2006
+  - paper-access
+  summary: 'Issue #924 remains open. This partial successor does not validate the
+    experimentally produced molecule or promote native status.'
+- assessment_id: publication
+  area: provenance
+  topic: Immutable predecessor and durable evidence
+  outcome: supported
+  target_ids:
+  - naturalproductmech:mibig-82041a5d45
+  evidence_ids:
+  - prior
+  - archive
+  - scope-proof
+  - regressions
+  summary: Original reviews and the full unfinished campaign remain intact. Passing
+    deterministic checks establish consistency, not completed science.
+actions:
+- action_id: A1
+  description: Inspect exact-strain primary product evidence before any change of
+    constitution or stereochemistry.
+  finding_ids:
+  - F1
+  target_ids:
+  - naturalproductmech:mibig-82041a5d45
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Versioned source chemistry, taxon and locus assertions; retain raw provenance
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: MIBiG extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Structure-key grouping, evidence grading and generated records
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/amino_acids_and_peptides/myxochromide-a.yaml
+    role: Curator-owned cited qualification only through validated curation; seeded
+      chemistry is not hand-editable
+  acceptance_checks:
+  - Distinguish congener side chains, peptide connectivity and final-product configuration.
+  - Retain prediction-versus-experiment and strain boundaries.
+  - Use a separately audited guarded migration only if supported; canary, reproduction
+    and full QC must pass.
+limitations:
+- Scoped partial successor adds no newly assessed owner; all prior scientific access
+  limits remain.
+- Full QC ran before these successor reports; their canonical checks and contract
+  tests run after saving.
+- The exact inspected input commit is retained by review-base/myxochromide-remediation-20261013.
+- The initial focused command used an incorrect filename and ran no tests; corrected
+  focused and full-suite runs are recorded separately.
+- Both native records remain SEEDED. The 3090 unassessed owners and 24 partial assessments
+  remain in scope.
+related_reviews:
+- repository: CultureBotAI/NaturalProductMech
+  review_id: 20261013T182624Z-myxochromide-a
+  relationship: Scoped disposition; immutable full assessment retained.
+links:
+- https://github.com/CultureBotAI/NaturalProductMech/pull/923
