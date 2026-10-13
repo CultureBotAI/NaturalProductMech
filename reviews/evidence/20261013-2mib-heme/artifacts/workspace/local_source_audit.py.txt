@@ -1,0 +1,59 @@
+import csv
+import hashlib
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+
+import pronto
+import yaml
+
+ROOT = Path(__file__).parent
+REPO = Path.cwd()
+capture = json.loads((ROOT / 'capture.json').read_text())
+baseline = json.loads((REPO / 'reviews/evidence/20261013-first-two-records/artifacts/review-campaign-checkpoint.json').read_text())
+for row in baseline['records']:
+    assert hashlib.sha256((REPO / row['path']).read_bytes()).hexdigest() == row['sha256']
+    for component in row['graph_components']:
+        assert hashlib.sha256((REPO / component['path']).read_bytes()).hexdigest() == component['sha256']
+assert {r['path'] for r in baseline['records']} == {str(p.relative_to(REPO)) for p in (REPO / 'data/natural_products').rglob('*.yaml')}
+
+
+def table(path):
+    with (REPO / path).open() as stream:
+        return list(csv.DictReader(stream, delimiter='\t'))
+
+
+tables = {name: table('data/raw/' + name + '.tsv') for name in ['mibig_compounds', 'lotus_occurrences', 'chebi_structures', 'npclassifier', 'taxon_groups']}
+corrections = {name: table('curation/' + name + '.tsv') for name in ['mibig_structure_corrections', 'mibig_locus_evidence_overrides']}
+taxonomy = pronto.Ontology('data/raw/corpus_taxa.obo')
+rows = []
+for target in capture['targets']:
+    path = REPO / target['path']
+    doc = yaml.safe_load(path.read_text())
+    inspection = json.loads((ROOT / (path.stem + '-inspect.log')).read_text())
+    for item in inspection['source']['inputs']:
+        assert hashlib.sha256((REPO / item['path']).read_bytes()).hexdigest() == item['sha256']
+    key = doc['chemical_structure']['standard_inchi_key']
+    ids = {s['source_id'] for s in doc['source_concepts']}
+    bgcs = [r for r in tables['mibig_compounds'] if r['mibig_accession'] in ids]
+    organisms = doc.get('producer_organisms', []) + doc.get('occurrences', [])
+    taxon_ids = sorted({o['taxon_id'] for o in organisms})
+    taxa = []
+    for taxon_id in taxon_ids:
+        term = taxonomy.get(taxon_id)
+        taxa.append(dict(taxon_id=taxon_id, record_labels=sorted({o['taxon_label'] for o in organisms if o['taxon_id'] == taxon_id}),
+                         cached_name=term.name if term else None,
+                         cached_synonyms=sorted(s.description for s in term.synonyms) if term else [],
+                         groups=[r['taxon_group'] for r in tables['taxon_groups'] if r['taxon_id'] == taxon_id]))
+    rows.append(dict(path=target['path'], identifier=doc['identifier'], key=key, source_rows=bgcs,
+                     classifier=[r for r in tables['npclassifier'] if r['standard_inchi_key'] == key],
+                     lotus=[r for r in tables['lotus_occurrences'] if r['standard_inchi_key'] == key],
+                     chebi_exact=[r for r in tables['chebi_structures'] if r['standard_inchi_key'] == key],
+                     chebi_connectivity=[r for r in tables['chebi_structures'] if r['standard_inchi_key'].split('-')[0] == key.split('-')[0]],
+                     applicable_corrections={name: [r for r in records if r.get('source_id', '').split(':')[0] in ids or r.get('minted_identifier') == doc['identifier']] for name, records in corrections.items()},
+                     taxonomy=taxa))
+result = dict(accessed_at=datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z'),
+              full_population_hashes_unchanged=True, population=3115, components=242, rows=rows)
+with (ROOT / 'local-source-audit.json').open('x') as stream:
+    json.dump(result, stream, indent=2)
+print(json.dumps(result, indent=2))

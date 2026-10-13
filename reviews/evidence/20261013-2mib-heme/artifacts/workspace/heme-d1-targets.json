@@ -1,0 +1,43 @@
+{
+  "targets": [
+    {
+      "target_id": "naturalproductmech:mibig-27b36d36c8",
+      "path": "data/natural_products/unclassified/heme-d1.yaml",
+      "label": "heme D1",
+      "record_class": "NaturalProductRecord",
+      "kind": "generated",
+      "owner_paths": [
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/mibig_compounds.tsv",
+          "role": "Imported compound, producer and cluster assertions"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/lotus_occurrences.tsv",
+          "role": "Structure-organism-reference occurrence assertions"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/seed_from_sources.py",
+          "role": "Source harmonization and generated owner emission"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_structure_corrections.tsv",
+          "role": "Implemented narrow structure correction input"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_locus_evidence_overrides.tsv",
+          "role": "Implemented source-method correction input"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/natural_products/unclassified/heme-d1.yaml",
+          "role": "Curator-owned pathway, graph references, discussions and audit history"
+        }
+      ]
+    }
+  ]
+}

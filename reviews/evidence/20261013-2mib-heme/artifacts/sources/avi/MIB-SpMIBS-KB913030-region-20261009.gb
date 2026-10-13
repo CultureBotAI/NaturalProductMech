@@ -1,0 +1,232 @@
+LOCUS       NZ_KB913030             1501 bp    DNA     linear   CON 27-APR-2026
+DEFINITION  Streptomyces purpureus KA281 StrpuDRAFT_scaffold1.1, whole genome
+            shotgun sequence.
+ACCESSION   NZ_KB913030 REGION: 5956300..5957800
+VERSION     NZ_KB913030.1
+DBLINK      BioProject: PRJNA224116
+            BioSample: SAMN02261248
+            Assembly: GCF_000384175.1
+KEYWORDS    WGS; GSC:MIGS:2.1; IMPROVED_HIGH_QUALITY_DRAFT; RefSeq.
+SOURCE      Streptomyces purpureus KA281
+  ORGANISM  Streptomyces purpureus KA281
+            Bacteria; Bacillati; Actinomycetota; Actinomycetes;
+            Kitasatosporales; Streptomycetaceae; Streptomyces.
+REFERENCE   1  (bases 1 to 1501)
+  AUTHORS   Poust,S., Huntemann,M., Han,J., Chen,A., Kyrpides,N.,
+            Mavromatis,K., Markowitz,V., Palaniappan,K., Ivanova,N.,
+            Schaumberg,A., Pati,A., Liolios,K., Nordberg,H.P., Cantor,M.N.,
+            Hua,S.X. and Woyke,T.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (16-APR-2013) DOE Joint Genome Institute, 2800 Mitchell
+            Drive, Walnut Creek, CA 94598-1698, USA
+COMMENT     REFSEQ INFORMATION: The reference sequence is identical to
+            KB913030.1.
+            URL -- http://www.jgi.doe.gov
+            JGI Project ID: 404834
+            Source DNA and Organism available from Sean  Poust
+            (poust@berkeley.edu)
+            Source DNA available from Sean  Poust (poust@berkeley.edu)
+            Organism available from Sean  Poust (poust@berkeley.edu)
+            Contacts: Sean  Poust (poust@berkeley.edu)
+                      Tanja Woyke (microbe@cuba.jgi-psf.org)
+            Whole genome sequencing and draft assembly at JGI-PGF
+            Annotation by JGI-ORNL
+            The JGI and collaborators endorse the principles for the
+            distribution and use of large scale sequencing data adopted by the
+            larger genome sequencing community and urge users of this data to
+            follow them. It is our intention to publish the work of this
+            project in a timely fashion and we welcome collaborative
+            interaction on the project and analysis.
+            (http://www.genome.gov/page.cfm?pageID=10506376)
+            Full annotations are available from IMG.
+            The annotation was added by the NCBI Prokaryotic Genome Annotation
+            Pipeline (PGAP). Information about PGAP can be found here:
+            https://www.ncbi.nlm.nih.gov/genome/annotation_prok/
+            
+            ##MIGS-Data-START##
+            investigation_type       :: bacteria_archaea
+            project_name             :: Streptomyces purpureus KA281, ATCC
+                                        21405
+            collection_date          :: Missing
+            lat_lon                  :: Missing
+            depth                    :: Missing
+            alt_elev                 :: Missing
+            country                  :: Missing
+            num_replicons            :: Missing
+            ref_biomaterial          :: ATCC 39115, DSM 43360, CCRC 12066, BCRC
+                                        12066, MTCC 3024, NBRC 13925, NCIMB
+                                        11313
+            biotic_relationship      :: Free living
+            rel_to_oxygen            :: Aerobe
+            isol_growth_condt        :: Missing
+            assembly                 :: Velvet v. 1.1.05; ALLPATHS v. r30750;
+                                        Phrap v. 4.24
+            finishing_strategy       :: Missing
+            environment              :: Soil
+            trophic_level            :: Missing
+            sequencing_meth          :: WGS
+            GOLD Stamp ID            :: Gi38813
+            Current Finishing Status :: Level 6: Finished
+            Type Strain              :: Yes
+            Funding Program          :: DOE-JBEI 2010
+            Isolation Site           :: Soil with decomposing organic matter,
+                                        Idaho
+            Cell Shape               :: Filament-shaped
+            Motility                 :: Nonmotile
+            Sporulation              :: Sporulating
+            Temperature Range        :: Mesophile
+            Gram Staining            :: Gram+
+            ##MIGS-Data-END##
+            
+            ##Genome-Assembly-Data-START##
+            Finishing Goal           :: Improved High-Quality Draft
+            Current Finishing Status :: Improved High-Quality Draft
+            Assembly Method          :: Velvet v. 1.1.05; ALLPATHS v. r30750;
+                                        Phrap v. 4.24
+            Genome Coverage          :: Unknown
+            Sequencing Technology    :: Illumina HiSeq 2000
+            ##Genome-Assembly-Data-END##
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider               :: NCBI RefSeq
+            Annotation Name                   :: GCF_000384175.1-RS_2026_04_26
+            Annotation Date                   :: 04/26/2026 11:16:23
+            Annotation Pipeline               :: NCBI Prokaryotic Genome
+                                                 Annotation Pipeline (PGAP)
+            Annotation Method                 :: Best-placed reference protein
+                                                 set; GeneMarkS-2+
+            Annotation Software revision      :: 6.11
+            Features Annotated                :: Gene; CDS; rRNA; tRNA; ncRNA
+            Genes (total)                     :: 6,881
+            CDSs (total)                      :: 6,791
+            Genes (coding)                    :: 6,616
+            CDSs (with protein)               :: 6,616
+            Genes (RNA)                       :: 90
+            rRNAs                             :: 6, 6, 5 (5S, 16S, 23S)
+            complete rRNAs                    :: 6, 6, 5 (5S, 16S, 23S)
+            tRNAs                             :: 70
+            ncRNAs                            :: 3
+            Pseudo Genes (total)              :: 175
+            CDSs (without protein)            :: 175
+            Pseudo Genes (ambiguous residues) :: 0 of 175
+            Pseudo Genes (frameshifted)       :: 68 of 175
+            Pseudo Genes (incomplete)         :: 140 of 175
+            Pseudo Genes (internal stop)      :: 8 of 175
+            Pseudo Genes (multiple problems)  :: 37 of 175
+            CRISPR Arrays                     :: 3
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1501
+                     /organism="Streptomyces purpureus KA281"
+                     /mol_type="genomic DNA"
+                     /submitter_seqid="StrpuDRAFT_scaffold1.1"
+                     /strain="KA281"
+                     /isolation_source="Soil with decomposing organic matter,
+                     Idaho"
+                     /culture_collection="ATCC:21405"
+                     /type_material="type strain of Kitasatoa kauaiensis"
+                     /db_xref="taxon:1054860"
+     gene            <1..52
+                     /locus_tag="STRPU_RS0127435"
+     CDS             <1..52
+                     /locus_tag="STRPU_RS0127435"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:WP_019890275.1"
+                     /GO_component="GO:0140737 - encapsulin nanocompartment
+                     [Evidence IEA]"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=2
+                     /transl_table=11
+                     /product="family 2B encapsulin nanocompartment shell
+                     protein"
+                     /protein_id="WP_019890275.1"
+                     /translation="MSVDTSRPAVAITTQERVQQSLSTAAARNLATTTKSEPQMQGIS
+                     SRWLLRKLPWVHVPGGTYRVNRRLSYTVGDGRVTFLKDGSKVQVIPAELAELPLLRGF
+                     DDLTALGALAAKFVQKEYEPGQVIVHAGKKADHIYMIAHGKVEKVGTGKYGDDTILGR
+                     LGDGDTFGGQLLAGNGAKWEFTARAATSVTILALPVSAYKTVAGQYDGLREHVQALGA
+                     NGHKVNKHGEAVIDISAGHVGEAVLPGAFADYELTPREYELSVAQTVLKVHSRVADLY
+                     NQPMNQTQQQLRLTVQELRERQEYELVNNPEFGLLHNTDFEQRIQTHSGPPTPDDLDD
+                     LLSMRRGTQYMFAHPRAIAAFGKECNKRGISLGSVDVDGHHIPAWRGVPILPCGKIPV
+                     TEHQSSSIIAMRTGEDNEGVIGLFQTGIPDEVEPGLNVRFMGIDAQAIISYLVTTYYS
+                     AAILVPDAIGILENVEVRPRA"
+     gene            92..1408
+                     /locus_tag="STRPU_RS0127440"
+     CDS             92..1408
+                     /locus_tag="STRPU_RS0127440"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:WP_019890277.1"
+                     /GO_component="GO:0140737 - encapsulin nanocompartment
+                     [Evidence IEA]"
+                     /GO_function="GO:0010333 - terpene synthase activity
+                     [Evidence IEA]"
+                     /GO_process="GO:0042214 - terpene metabolic process
+                     [Evidence IEA]"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="family 2 encapsulin nanocompartment cargo
+                     protein terpene cyclase"
+                     /protein_id="WP_019890277.1"
+                     /translation="MSLLTRISAAASAHQAAELVSALLTNPARPARPDLLGPGSSVRS
+                     GRPEVRRALGGPSGLGTAAARALIPQPSPGASQIAAPRPPTRPALPALGPPTGLGTSA
+                     ARFSTQGRQDGEPGPETGAKRSAPPVLYCPPAARDDRALGDAVNERLVAWAEEVGIYP
+                     GRLDMVRTANFGRLMMLAHPETDDPDMLLAAAKCGLSEWAVDDHIVDCEVEEARHEVL
+                     GQRLAICHSVIDQAQLPLRYAPQLEAVVRKDPVAVALRSALDGLSRYATTTQVRRLRH
+                     ELAIMFVAYNQEAVWHTTGQRPPVWEYLMHRHENSFIPCMVLVDAIAGYEVPMAEFSD
+                     PRVRRTFNLAGTATVLMNDLYSMGKEDPTDFSLPMLIAAEEQCSLEEAVEQSVLIHDE
+                     LMHTFEAEASALAATGSPELGRFLAGSWAWVAGNREWHAGSGRYNS"
+     gene            1481..>1501
+                     /locus_tag="STRPU_RS0127445"
+     CDS             1481..>1501
+                     /locus_tag="STRPU_RS0127445"
+                     /EC_number="2.1.1.255"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:WP_016640631.1"
+                     /GO_function="GO:0000287 - magnesium ion binding [Evidence
+                     IEA]; GO:1904047 - S-adenosyl-L-methionine binding
+                     [Evidence IEA]; GO:0008757 -
+                     S-adenosylmethionine-dependent methyltransferase activity
+                     [Evidence IEA]"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="geranyl diphosphate 2-C-methyltransferase"
+                     /protein_id="WP_028798110.1"
+                     /translation="MTTTAPMTDVLRTEYQKSVASYWNTNQQDPVNLRLGEVDGLYHH
+                     HYGLGEYDPSVLEGDESTRDQRIIEELHRLETAQADVLLDHLGDIAPGHLLLDAGSGR
+                     GGTSFMAHERFGCQVDGVSISEYQVGFANTQAEERGVADRVRFHFRNMLDTQFPTGSR
+                     RAIWTNETTMYVDLFELFDEFSRLLEYGGRYVCITGCSNDVTGGRSKAVSRIDEHYTC
+                     NIHPRSEYFKAMAANNLVPINVVDLTPQTIPYWELRAKCSVATGIEDPFLTAYKEGSF
+                     HYLLIVADRI"
+ORIGIN      
+        1 cccggacgcc atcggcatcc tcgagaacgt cgaggtccgt ccgcgtgcct gaccgcctcc
+       61 ccgccaccac cggtgaagga gggccgagcc ggtgtccctg ctgacccgga tctccgccgc
+      121 ggcctcggcg caccaggcgg cggagctcgt gagcgccctg ctgaccaacc cggcgcgccc
+      181 cgcgcgcccc gacctgctgg ggccgggatc ctcggtccgt tcggggcggc cggaggtgcg
+      241 ccgcgccctc ggcggcccgt cggggctcgg caccgccgcg gcccgcgcgc tcatcccgca
+      301 gccctccccg ggcgcgtcgc agatcgccgc cccgcgcccg ccgacccgcc ccgccctgcc
+      361 cgcgctcggc ccgcccaccg ggctcggcac ctccgctgcg cggttctcca cgcaggggcg
+      421 acaggacggc gaacccgggc cggagaccgg cgccaagcgc tccgccccgc ccgtgctgta
+      481 ctgtccgccc gccgcccgtg acgaccgcgc gctcggcgac gccgtcaacg aacgcctggt
+      541 cgcctgggcc gaggaggtcg ggatctaccc cggccgcctc gacatggtca ggaccgccaa
+      601 cttcggccgc ctgatgatgc tcgcccaccc cgagacggac gaccccgaca tgctcctcgc
+      661 ggccgcgaag tgcggtctct cggagtgggc cgtcgacgac cacatcgtcg actgcgaggt
+      721 ggaggaggcg cgccacgagg tgctgggaca gcgcctcgcg atctgccact ccgtcatcga
+      781 ccaggcccaa ctgcccctgc gctacgcccc ccagctcgaa gcggtcgtcc gcaaggaccc
+      841 cgtggcggtc gccctgcgct ccgccctcga cggcctctcc cgctacgcca ccacgacaca
+      901 ggtgcgccgg ctccgccacg aactggccat catgttcgtc gcgtacaacc aggaggcggt
+      961 ctggcacacc actgggcaac ggccgcccgt ctgggagtac ctgatgcacc ggcacgagaa
+     1021 cagcttcatc ccgtgcatgg tgctcgtcga cgcgatcgcc ggctacgagg tcccgatggc
+     1081 cgagttctcc gacccccggg tgcgccgcac cttcaacctg gcgggtaccg cgaccgtcct
+     1141 gatgaacgac ctctactcga tgggcaagga agaccccacg gacttcagcc tgcccatgct
+     1201 gatcgccgcc gaggagcagt gctccctgga ggaggccgtc gagcagagcg tcctcatcca
+     1261 cgacgagctg atgcacacct tcgaggccga ggcctcggcc ctcgccgcca ccggctcccc
+     1321 cgaactcggc cgcttcctgg ccggatcctg ggcctgggtg gccggcaacc gcgagtggca
+     1381 cgccggcagc ggccgctaca acagctgacc ccccccacgc caactcccca cgccaacccc
+     1441 acttcacccc ccccacctca cgcaaggagc ccccgtcccc atgaccacaa ccgcccccat
+     1501 g
+//
+

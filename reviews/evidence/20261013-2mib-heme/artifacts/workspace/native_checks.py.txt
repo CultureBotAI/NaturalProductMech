@@ -1,0 +1,32 @@
+import hashlib
+import json
+import subprocess
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+
+ROOT = Path(__file__).parent
+
+
+def now():
+    return datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z')
+
+
+commands = [
+    ('corpus', ['scripts/verify_corpus.py', '--summary']),
+    ('reproduction', ['scripts/check_reproduction.py']),
+    ('provenance', ['scripts/check_provenance.py']),
+    ('labels', ['scripts/validate_id_label_correspondence.py', '-c', 'conf/id_label_targets.yaml', '--report', str(ROOT / 'labels.tsv')]),
+    ('queue', ['scripts/curation_worklist.py', '--review-records', '--limit', '0', '--tsv', str(ROOT / 'review-queue.tsv')]),
+]
+for name, args in commands:
+    started = now()
+    command = [sys.executable] + args
+    log = ROOT / (name + '-fresh.log')
+    with log.open('x') as stream:
+        result = subprocess.run(command, text=True, stdout=stream, stderr=subprocess.STDOUT)
+    receipt = dict(command=command, started_at=started, finished_at=now(), exit_code=result.returncode,
+                   log_sha256=hashlib.sha256(log.read_bytes()).hexdigest(), log=log.read_text())
+    with (ROOT / (name + '-fresh.receipt.json')).open('x') as stream:
+        json.dump(receipt, stream, indent=2)
+    print(json.dumps(dict(name=name, exit_code=result.returncode, finished_at=receipt['finished_at'], tail=receipt['log'][-1200:])), flush=True)

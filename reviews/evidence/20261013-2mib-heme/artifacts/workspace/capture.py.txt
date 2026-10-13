@@ -1,0 +1,130 @@
+import csv
+from datetime import datetime, timezone
+import hashlib
+import json
+from pathlib import Path
+import subprocess
+import sys
+
+import yaml
+
+from naturalproductmech.graph_components import read_natural_product
+
+ROOT = Path(__file__).parent
+REPO = Path.cwd()
+PROJECT = 'CultureBotAI/NaturalProductMech'
+ARCHIVE = REPO / 'reviews/evidence/20261013-first-two-records/artifacts'
+TARGETS = [
+    'data/natural_products/terpenoids/2-methylisoborneol.yaml',
+    'data/natural_products/alkaloids/heme-d1-2.yaml',
+    'data/natural_products/unclassified/heme-d1.yaml',
+]
+
+
+def now():
+    return datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z')
+
+
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def save(name, value):
+    with (ROOT / name).open('x') as stream:
+        json.dump(value, stream, indent=2)
+        stream.write('\n')
+
+
+def run(name, args):
+    started = now()
+    with (ROOT / (name + '.log')).open('x') as stream:
+        result = subprocess.run(args, cwd=REPO, text=True, stdout=stream, stderr=subprocess.STDOUT)
+    receipt = dict(command=args, started_at=started, finished_at=now(), exit_code=result.returncode,
+                   log=str(ROOT / (name + '.log')), sha256=sha(ROOT / (name + '.log')))
+    save(name + '.receipt.json', receipt)
+    print(json.dumps(receipt), flush=True)
+    return result.returncode
+
+
+def walk(value):
+    if isinstance(value, dict):
+        yield value
+        for nested in value.values():
+            yield from walk(nested)
+    elif isinstance(value, list):
+        for nested in value:
+            yield from walk(nested)
+
+
+def capture():
+    previous = json.loads((ARCHIVE / 'review-campaign-checkpoint.json').read_text())
+    by_path = {r['path']: r for r in previous['records']}
+    assert set(by_path) == {str(p.relative_to(REPO)) for p in (REPO / 'data/natural_products').rglob('*.yaml')}
+    components = {c['path']: c['sha256'] for r in by_path.values() for c in r['graph_components']}
+    assert set(components) == {str(p.relative_to(REPO)) for p in (REPO / 'data/causal_graphs').rglob('*.yaml')}
+    for row in by_path.values():
+        assert sha(REPO / row['path']) == row['sha256']
+    for path, digest in components.items():
+        assert sha(REPO / path) == digest
+    base = subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip()
+    assert base == 'e9a4cab937b614e80cf1a90d2bc98fabb80a5bc5'
+    records = []
+    stops_path = Path('/private/tmp/npmech-mycophenolic-sidechain-20261012-zirZ3S/protein-frontier-20261012-mycophenolic-sidechain-merged.json')
+    assert sha(stops_path) == '810ac00abcf3732108d1fecc011918d748813874154203b090bd63a8be55a601'
+    stops_doc = json.loads(stops_path.read_text())
+    stops = stops_doc['access_stops_no_alternate_retrieval'] + stops_doc['access_stop_aliases_no_alternate_retrieval']
+    common = ['CLAUDE.md', 'justfile', 'docs/record-review-profile.md', 'docs/record-reviews.md',
+              '.claude/skills/review-yaml-record/SKILL.md',
+              '.claude/skills/curate-yaml-record/references/review-checklist.md',
+              'docs/CURATION.md', 'docs/HARMONIZATION.md', 'conf/record_review.yaml',
+              'schema/record_review.yaml', 'src/naturalproductmech/schema/naturalproductmech.yaml',
+              'conf/producer_evidence.tsv', 'conf/id_label_targets.yaml',
+              'data/raw/MANIFEST.yaml', 'data/raw/mibig_compounds.tsv', 'data/raw/lotus_occurrences.tsv',
+              'data/raw/chebi_structures.tsv', 'data/raw/corpus_taxa.obo', 'data/raw/taxon_groups.tsv',
+              'data/raw/taxon_merged.tsv', 'data/raw/npclassifier.tsv', 'data/natural_products/PATHS.tsv',
+              'curation/mibig_structure_corrections.tsv', 'curation/mibig_locus_evidence_overrides.tsv',
+              'scripts/extract_mibig.py', 'scripts/extract_lotus.py', 'scripts/seed_from_sources.py',
+              'src/naturalproductmech/graph_components.py']
+    for relative in TARGETS:
+        path = REPO / relative
+        owner = yaml.safe_load(path.read_text())
+        slug = path.stem
+        owner_paths = [dict(repository=PROJECT, path=p, role=role) for p, role in [
+            ('data/raw/mibig_compounds.tsv', 'Imported compound, producer and cluster assertions'),
+            ('data/raw/lotus_occurrences.tsv', 'Structure-organism-reference occurrence assertions'),
+            ('scripts/seed_from_sources.py', 'Source harmonization and generated owner emission'),
+            ('curation/mibig_structure_corrections.tsv', 'Implemented narrow structure correction input'),
+            ('curation/mibig_locus_evidence_overrides.tsv', 'Implemented source-method correction input'),
+            (relative, 'Curator-owned pathway, graph references, discussions and audit history')]]
+        owner_paths.extend(dict(repository=PROJECT, path=c['path'], role='Exact-owner maintained mechanism component')
+                           for c in by_path[relative]['graph_components'])
+        target = dict(target_id=owner['identifier'], path=relative, label=owner['label'],
+                      record_class='NaturalProductRecord', kind='generated', owner_paths=owner_paths)
+        save(slug + '-targets.json', dict(targets=[target]))
+        args = [sys.executable, 'scripts/record_review.py', 'inspect', '--targets', str(ROOT / (slug + '-targets.json'))]
+        for extra in common + [c['path'] for c in by_path[relative]['graph_components']]:
+            args.extend(['--input', extra])
+        assert run(slug + '-inspect', args) == 0
+        resolved = read_natural_product(path)
+        save(slug + '-resolved.json', resolved)
+        refs = sorted({item['reference'] for item in walk(resolved) if isinstance(item.get('reference'), str)})
+        row = dict(path=relative, identifier=owner['identifier'], started_at=now(), references=refs,
+                   graphs=[dict(graph_id=g['graph_id'], nodes=len(g.get('nodes', [])), edges=len(g.get('edges', [])))
+                           for g in resolved.get('causal_graphs', [])],
+                   graph_components=by_path[relative]['graph_components'])
+        needles = [ref.split(':', 1)[1].casefold() if ref.startswith(('PMID:', 'DOI:')) else ref.casefold() for ref in refs]
+        row['inherited_access_stops'] = [s for s in stops if any(n in json.dumps(s).casefold() for n in needles)]
+        records.append(row)
+        assert run(slug + '-strict', [sys.executable, 'scripts/validate_strict.py', relative,
+                                     '--out', str(ROOT / (slug + '-strict.tsv'))]) == 0
+    baseline_inputs = yaml.safe_load((REPO / 'reviews/structured/20261013T044353Z-mycophenolic-acid-2/review.yaml').read_text())['source']['inputs']
+    for row in baseline_inputs:
+        assert sha(REPO / row['path']) == row['sha256']
+    save('capture.json', dict(captured_at=now(), base=base, prior_turn='progress: PR866 merged; release complete',
+                             population=3115, graph_components=242, unchanged_owner_and_component_hashes=True,
+                             baseline_inputs_unchanged=True, targets=records))
+    print(json.dumps(records, indent=2), flush=True)
+
+
+if __name__ == '__main__':
+    capture()

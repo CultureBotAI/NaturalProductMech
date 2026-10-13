@@ -1,0 +1,86 @@
+import hashlib
+import json
+import subprocess
+from collections import Counter
+from datetime import datetime, timezone
+from pathlib import Path
+
+import yaml
+
+ROOT = Path(__file__).parent
+REPO = Path.cwd()
+old = json.loads((REPO / 'reviews/evidence/20261013-first-two-records/artifacts/review-campaign-checkpoint.json').read_text())
+
+
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+records = old['records']
+assert {row['path'] for row in records} == {str(p.relative_to(REPO)) for p in (REPO / 'data/natural_products').rglob('*.yaml')}
+components = {c['path']: c['sha256'] for row in records for c in row['graph_components']}
+assert set(components) == {str(p.relative_to(REPO)) for p in (REPO / 'data/causal_graphs').rglob('*.yaml')}
+for row in records:
+    assert sha(REPO / row['path']) == row['sha256']
+for path, digest in components.items():
+    assert sha(REPO / path) == digest
+reports = []
+by_target = {}
+for path in sorted((REPO / 'reviews/structured').rglob('review.yaml')):
+    doc = yaml.safe_load(path.read_text())
+    assert doc['kind'] == 'record' and len(doc['targets']) == 1
+    target = doc['targets'][0]
+    row = dict(review_id=doc['review_id'], yaml=str(path.relative_to(REPO)), yaml_sha256=sha(path),
+               markdown=str(path.with_suffix('.md').relative_to(REPO)), markdown_sha256=sha(path.with_suffix('.md')),
+               target_id=target['target_id'], path=target['path'], verdict=doc['verdict'], completion=doc['completion'],
+               findings=[{k: finding[k] for k in ['issue_key', 'severity', 'certainty', 'status']} for finding in doc['findings']])
+    reports.append(row)
+    by_target[target['target_id']] = row
+assert len(reports) == len(by_target) == 5
+for row in records:
+    row['review_state'] = by_target[row['identifier']]['completion'] if row['identifier'] in by_target else 'unassessed'
+partial = [r['path'] for r in reports if r['completion'] == 'partial']
+unassessed = [p for p in old['pending_in_priority_order'] if p not in {r['path'] for r in reports}]
+assert len(unassessed) == 3110 and len(partial) == 5
+base = subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip()
+branch = subprocess.check_output(['git', 'branch', '--show-current'], text=True).strip()
+assert base == 'e9a4cab937b614e80cf1a90d2bc98fabb80a5bc5'
+new_stops = [
+    'PMID:17906152 PubMed browser/reCAPTCHA challenge; no alternate retrieval',
+    'PMID:16914272 PubMed browser/reCAPTCHA challenge; no alternate retrieval',
+    'PMID:17369815 no usable source text; DOI:10.1038/NBT1297 retained as the same lead, no alternate retrieval',
+    'DOI:10.1002/chem.202300775 original publisher main URL tool access error; supplement inherited HTTP403 stop still applies',
+    'DOI:10.1007/S10295-013-1383-2 tool access error',
+    'DOI:10.1007/S10295-015-1685-7 tool access error',
+    'DOI:10.1007/S10295-019-02172-8 tool access error',
+    'DOI:10.1007/S12275-013-2586-Y tool access error',
+    'DOI:10.1021/BI201827A tool access error',
+    'DOI:10.1039/C4CC00177J tool access error',
+    'DOI:10.1111/1574-6968.12088 tool access error',
+    'DOI:10.1248/CPB.31.659 tool access error',
+    'PubChem CIDs16913,6438545,53356663 PUG property access unavailable',
+    'MIBiG BGC0000658, BGC0000659, BGC0000905, BGC0000906 entry access unavailable',
+    'NCBITaxon:426436 live taxonomy browser access unavailable',
+    'CHEBI:61147 live page access unavailable; pinned inventory is distinct evidence',
+]
+result = dict(objective=old['objective'], goal_status='active', turn_classification='progress',
+              previous_turn_classification='progress: verified prior PR and completed branch cleanup; current turn resumed scientific reviews',
+              recorded_at=datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z'), base=base, branch=branch,
+              population=len(records), graph_components=len(components), scientific_review_bundles=len(reports),
+              completed_scientific_reviews=0, partial_reviews=5, unassessed_records=3110,
+              findings=dict(Counter(f['severity'] for r in reports for f in r['findings'])),
+              all_records_and_components_unchanged=True, no_record_mutations=True, no_github_mutations=True,
+              reviews=reports, records=records, pending_in_priority_order=unassessed, partial_followups=partial,
+              priority_method=old['priority_method'], live_sessions=[],
+              inherited_scientific_access_stops=old['inherited_scientific_access_stops'],
+              previous_unavailable_access_attempts=old['new_unavailable_access_attempts'],
+              new_unavailable_access_attempts=new_stops,
+              native_checks={name: json.loads((ROOT / (name + '-fresh.receipt.json')).read_text())['exit_code'] for name in ['corpus', 'reproduction', 'provenance', 'labels', 'queue']},
+              shared_check=dict(valid_reviews=5, contract_and_archive_tests='8 passed in 7.72s'),
+              required_work_remaining='Review all 3110 unassessed owners and their referenced components claim by claim; resolve evidence gaps in all five partial assessments. Full scope remains 3115 owners and 242 components. No deterministic check counts as a completed scientific review.',
+              do_not_replay=['capture.py', 'audit_cached_sequences.py', 'local_source_audit.py', 'native_checks.py', 'aux_chemistry.py', 'author_review_bundles.py', 'normalize_drafts.py', 'persist_review_bundles.py', 'checkpoint_reviews.py'],
+              temporary_workspace=str(ROOT))
+with (ROOT / 'review-campaign-checkpoint.json').open('x') as stream:
+    json.dump(result, stream, indent=2)
+print(json.dumps({k: result[k] for k in ['goal_status', 'population', 'graph_components', 'scientific_review_bundles', 'completed_scientific_reviews', 'partial_reviews', 'unassessed_records', 'findings', 'all_records_and_components_unchanged']}))
+print('Next unassessed: ' + ', '.join(unassessed[:5]))

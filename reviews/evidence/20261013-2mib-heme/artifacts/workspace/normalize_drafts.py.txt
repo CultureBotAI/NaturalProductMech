@@ -1,0 +1,21 @@
+import json
+from pathlib import Path
+
+import yaml
+
+ROOT = Path(__file__).parent
+paths = json.loads((ROOT / 'draft-paths.json').read_text())
+outputs = []
+for name in paths:
+    path = Path(name)
+    doc = yaml.safe_load(path.read_text())
+    # JSON roundtrip removes shared object identities without changing values.
+    normalized = json.loads(json.dumps(doc))
+    assert normalized == doc
+    target = path.with_name(path.stem + '-v2.yaml')
+    with target.open('x') as stream:
+        yaml.safe_dump(normalized, stream, sort_keys=False, allow_unicode=False, width=94)
+    outputs.append(str(target))
+with (ROOT / 'validated-draft-candidates.json').open('x') as stream:
+    json.dump(outputs, stream, indent=2)
+print('\n'.join(outputs))

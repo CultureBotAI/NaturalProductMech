@@ -1,0 +1,1628 @@
+schema_version: 1.0.0
+review_id: 20261013T054205Z-2-methylisoborneol
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: '2-methylisoborneol: identity and claim-level scientific review (mibig:BGC0000658)'
+started_at: '2026-10-13T05:21:54.418937Z'
+finished_at: '2026-10-13T05:42:05.209035Z'
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: self_review
+  independence_basis: Same assistant/thread previously curated this repository. No
+    independent reviewer is claimed; owners and components were not changed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+scientific_review: true
+verdict: needs_curation
+summary: Complete owner and all seven components assessed. Cached structured sources
+  support the 13 canonical protein identities and bounded database-role qualifiers.
+  One confirmed major species/strain identifier mismatch in an occurrence. Primary
+  occurrence/assay checks, live currentness, PubChem equivalence and pinned chemistry
+  remain incomplete.
+source:
+  git_revision: e9a4cab937b614e80cf1a90d2bc98fabb80a5bc5
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: 49e2ab03c7e82013e9d68356de2c9965c9f8517a3408a44124076f4ca1b529cd
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 0b2e8b991c926f9a67a3094964b0335dd1cd347fbf548674fa273db8fac3a4b2
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: 5b1edc057cdcc732f61de2964cd175fa3bc2dca929c5d2823142f61313545a7e
+    role: context
+  - path: data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-13189-similarity-proposed-role.yaml
+    sha256: 667de1ca8109db09a0495c27fbb73aaa4a2cef4cfa3cea6d17767374f590cc0a
+    role: context
+  - path: data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-ambo-native-proposed-roles.yaml
+    sha256: 7fa37d0f7fef97e85e54e473c6fa13a98ce51159317d19fef8acfc303dd6daaf
+    role: context
+  - path: data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-lasali-deposited-database-roles.yaml
+    sha256: f6002623f7f625b91e5cac02c47ae65f653dcc064db6ec9cce61b11b17974c81
+    role: context
+  - path: data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-sace-native-proposed-roles.yaml
+    sha256: 249606f748b9d865568f3fc41dba1c070f2a841c7b4280cadc3250a7d741ec2e
+    role: context
+  - path: data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-sco7701-database-role.yaml
+    sha256: abdebe433161973866bfc91814a4324787d30d2b7d113860652eaa06ad81757a
+    role: context
+  - path: data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-sgr-native-proposed-roles.yaml
+    sha256: 75c62611be5b682bf101f620f60892c5139c90531d99755e9c2842f1c380161f
+    role: context
+  - path: data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-three-canonical-references-coupled-assays.yaml
+    sha256: 47c5c7db64337a751000d4fa603f5808ed076b55380da1566f9f9db93d78b852
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: bf38e4f0c7e4bcbdf184a4e7b8b024752251e8f34c015c0b82cedca98a8a5729
+    role: context
+  - path: data/natural_products/terpenoids/2-methylisoborneol.yaml
+    sha256: 6c2fc8f83147b5eb73769c75e0ce32c1837d1166bd004e53da5d2632d0fbd94a
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: 373f049029be3db137e062ff5f872a2400a9d5b423f3e108ea44ebde2f8dcc7d
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: 7b9b9f78f5b14aea9fabb163bbaa9e842920a7e9b07deac8f98c97666e9e23fc
+    role: context
+  - path: data/raw/taxon_groups.tsv
+    sha256: f73f228d57d79a1d85a1441efa6829917b1ffecac08cb7bdd4fc855046255f8f
+    role: context
+  - path: data/raw/taxon_merged.tsv
+    sha256: 97b3efa66d4fc1679ab65ae547e78b2f627f37bc8e45ae33f2719008fe3863bb
+    role: context
+  - path: docs/CURATION.md
+    sha256: 3b979068592adbb0611de95927ca31eaabb5fb5d791aa09973e3b1e8d5a19011
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: 30c7007e57806c245674ce922e0f8c485b1a8a12a9f9fb95850ba6ee4f8cddc2
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_lotus.py
+    sha256: 8a8c524f60f85d2bb54412ca055a6a45e0d37ec5f4584d8d70be454b8f664290
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 2da30b7ccf4b9543ecbe02eb0c8662e51a82c0745aa45be28afbf8ceb38fc1be
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-0eb8c93c6f
+  path: data/natural_products/terpenoids/2-methylisoborneol.yaml
+  label: 2-methylisoborneol
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Imported compound, producer and cluster assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Structure-organism-reference occurrence assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Source harmonization and generated owner emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Implemented narrow structure correction input
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Implemented source-method correction input
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/terpenoids/2-methylisoborneol.yaml
+    role: Curator-owned pathway, graph references, discussions and audit history
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-sgr-native-proposed-roles.yaml
+    role: Exact-owner maintained mechanism component
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-sace-native-proposed-roles.yaml
+    role: Exact-owner maintained mechanism component
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-ambo-native-proposed-roles.yaml
+    role: Exact-owner maintained mechanism component
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-three-canonical-references-coupled-assays.yaml
+    role: Exact-owner maintained mechanism component
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-sco7701-database-role.yaml
+    role: Exact-owner maintained mechanism component
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-13189-similarity-proposed-role.yaml
+    role: Exact-owner maintained mechanism component
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-lasali-deposited-database-roles.yaml
+    role: Exact-owner maintained mechanism component
+scope:
+  description: One complete owner and every referenced graph component. Part of the
+    full 3115-owner, 242-component campaign; this report is not a sampled corpus verdict.
+  selection: Exact path and minted identifier from the saved ignored-inclusive campaign
+    frontier, continuing in its selected order.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+checks:
+- check_id: inspect
+  name: inspect
+  status: passed
+  required: true
+  summary: Canonical target/base/input capture succeeded before assessment.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python3
+    scripts/record_review.py inspect --targets /private/tmp/npmech-record-reviews-next-PKCU4Z/2-methylisoborneol-targets.json
+    --input CLAUDE.md --input justfile --input docs/record-review-profile.md --input
+    docs/record-reviews.md --input .claude/skills/review-yaml-record/SKILL.md --input
+    .claude/skills/curate-yaml-record/references/review-checklist.md --input docs/CURATION.md
+    --input docs/HARMONIZATION.md --input conf/record_review.yaml --input schema/record_review.yaml
+    --input src/naturalproductmech/schema/naturalproductmech.yaml --input conf/producer_evidence.tsv
+    --input conf/id_label_targets.yaml --input data/raw/MANIFEST.yaml --input data/raw/mibig_compounds.tsv
+    --input data/raw/lotus_occurrences.tsv --input data/raw/chebi_structures.tsv --input
+    data/raw/corpus_taxa.obo --input data/raw/taxon_groups.tsv --input data/raw/taxon_merged.tsv
+    --input data/raw/npclassifier.tsv --input data/natural_products/PATHS.tsv --input
+    curation/mibig_structure_corrections.tsv --input curation/mibig_locus_evidence_overrides.tsv
+    --input scripts/extract_mibig.py --input scripts/extract_lotus.py --input scripts/seed_from_sources.py
+    --input src/naturalproductmech/graph_components.py --input data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-sgr-native-proposed-roles.yaml
+    --input data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-sace-native-proposed-roles.yaml
+    --input data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-ambo-native-proposed-roles.yaml
+    --input data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-three-canonical-references-coupled-assays.yaml
+    --input data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-sco7701-database-role.yaml
+    --input data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-13189-similarity-proposed-role.yaml
+    --input data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-lasali-deposited-database-roles.yaml
+  exit_code: 0
+  scope_note: Run 2026-10-13T05:21:51.087914Z to 2026-10-13T05:21:53.582551Z; output
+    SHA-256 d2969c930d2743e651f6efdc9e2050a446a099ce17ccb2647a7e4a6586afe937
+- check_id: strict
+  name: strict
+  status: passed
+  required: true
+  summary: "Validating 1 files with 15 workers; schema=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/src/naturalproductmech/schema/naturalproductmech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  files with ERROR:\
+    \   0\n  total ERROR rows:   0\n  TSV:                /private/tmp/npmech-record-reviews-next-PKCU4Z/2-methylisoborneol-strict.tsv"
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python3
+    scripts/validate_strict.py data/natural_products/terpenoids/2-methylisoborneol.yaml
+    --out /private/tmp/npmech-record-reviews-next-PKCU4Z/2-methylisoborneol-strict.tsv
+  exit_code: 0
+  scope_note: Run 2026-10-13T05:21:54.450482Z to 2026-10-13T05:21:59.595438Z; output
+    SHA-256 db660b33fddfe012828e68407322376ca1907c7501dc389f2db03ae81c51e9dc
+- check_id: corpus
+  name: corpus
+  status: passed
+  required: true
+  summary: "lockfile integrity OK: 3115 records, each filed where PATHS.tsv pins it\n\
+    \  lockfile rows: 3115, files on disk: 3115"
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    scripts/verify_corpus.py --summary
+  exit_code: 0
+  scope_note: Actual fresh run from 2026-10-13T05:33:54.158149Z to 2026-10-13T05:35:23.137082Z;
+    output SHA-256 f41149d35ddb3ab65a8fe2fdf8bfd6242ff6753e740c3482f9ed0f0bb7122b50.
+    Results retained here, not dependent on the temporary log. Deterministic check,
+    not scientific sign-off.
+- check_id: reproduction
+  name: reproduction
+  status: passed
+  required: true
+  summary: 'molecular targets whose assay organism did not resolve: 5 (1 distinct:
+    Human…)
+
+    producer claims withheld — taxon names no single organism: 42 (NCBITaxon:77133
+    36, NCBITaxon:12908 3, NCBITaxon:1163772 2, NCBITaxon:155900 1)
+
+    taxon ids rewritten through taxon_merged.tsv: 161 (ChEBI 8, LOTUS 147, MIBiG 6)
+
+    corpus reproduction OK: 3115 records are byte-identical to what the seeder builds
+    from data/raw/'
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    scripts/check_reproduction.py
+  exit_code: 0
+  scope_note: Actual fresh run from 2026-10-13T05:35:23.137928Z to 2026-10-13T05:37:53.396103Z;
+    output SHA-256 d76e0bdd701f4e95ea43c705242db68502c2e347cf60baf2321fa70034472fcd.
+    Results retained here, not dependent on the temporary log. Deterministic check,
+    not scientific sign-off.
+- check_id: provenance
+  name: provenance
+  status: passed
+  required: true
+  summary: 'provenance OK: 15 inventories, 0 upstream files, retrieved 2026-10-07'
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    scripts/check_provenance.py
+  exit_code: 0
+  scope_note: Actual fresh run from 2026-10-13T05:37:53.397792Z to 2026-10-13T05:37:54.044163Z;
+    output SHA-256 edfd9b0adb518e4962a19be934e3364eb2a3d8527de0159322af10d2ddf6a252.
+    Results retained here, not dependent on the temporary log. Deterministic check,
+    not scientific sign-off.
+- check_id: labels
+  name: labels
+  status: passed
+  required: true
+  summary: "id↔label correspondence summary:\n          OK_CANONICAL: 13434\n    \
+    \        OK_SYNONYM: 646\n          OK_EXCEPTION: 35\n              MISMATCH:\
+    \ 499\n    SKIPPED_NO_ADAPTER: 4649\n\nWrote 499 flagged pairs to /private/tmp/npmech-record-reviews-next-PKCU4Z/labels.tsv"
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    scripts/validate_id_label_correspondence.py -c conf/id_label_targets.yaml --report
+    /private/tmp/npmech-record-reviews-next-PKCU4Z/labels.tsv
+  exit_code: 0
+  scope_note: Actual fresh run from 2026-10-13T05:37:54.045148Z to 2026-10-13T05:39:55.736120Z;
+    output SHA-256 803d0d84664eb9a85ed2e3c0060b95139dbdfaf29150ccb78f95589b37bb531d.
+    Results retained here, not dependent on the temporary log. Reporting mode is non-blocking;
+    exit zero does not mean all labels match. Unsupported adapters remain skipped.
+- check_id: queue
+  name: queue
+  status: passed
+  required: true
+  summary: 'Native curation queue regenerated without changing corpus status: {"producer-evidence":
+    2289, "biosynthesis": 1194, "structure-disagreement": 5, "name-disagreement":
+    68, "unnamed-producer": 39, "shared-structure": 208, "needs-a-name": 18, "occurrence-only":
+    12, "pathway-ambiguous": 620, "unresolved-taxa": 3329, "stereo-incomplete": 1124,
+    "record-review": 25}. This queue is not scientific review coverage.'
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    scripts/curation_worklist.py --review-records --limit 0 --tsv /private/tmp/npmech-record-reviews-next-PKCU4Z/review-queue.tsv
+  exit_code: 0
+  scope_note: Actual fresh run from 2026-10-13T05:39:55.737055Z to 2026-10-13T05:40:47.760630Z;
+    output SHA-256 854e4142b7742735c1b6f82dd04f6a0c8ecf61c68fe4527f59e509e88bbd175b.
+    Results retained here, not dependent on the temporary log. Deterministic check,
+    not scientific sign-off.
+- check_id: full-qc-baseline
+  name: full-qc-baseline
+  status: skipped
+  required: false
+  summary: Full QC was not rerun for these read-only observations. Historical full
+    QC at e66f934111777c4ebfe69475d0520c0cfa074785 passed 554 tests with 3 skips.
+    All 3115 owners, 242 components and captured baseline source inputs were rehashed
+    unchanged; fresh corpus, reproduction, provenance and per-owner strict checks
+    are recorded separately.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - historical-qc
+- check_id: pinned-chemistry
+  name: pinned-chemistry
+  status: unavailable
+  required: true
+  summary: The repository environment has no rdkit module. No new pinned RDKit 2026.3.5
+    SMILES/InChI/key calculation was performed. A successful older-toolkit auxiliary
+    calculation is recorded separately, not substituted for the pinned native check.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  command: .venv/bin/python -c 'import rdkit; print(rdkit.__version__)'
+  scope_note: The displayed availability probe exited 1 with ModuleNotFoundError.
+    The requested pinned chemical calculation itself was not executed.
+- check_id: current-sources
+  name: current-sources
+  status: unavailable
+  required: true
+  summary: Current MIBiG/PubChem and required primary-source checks could not be completed;
+    per-source failures and retained access stops are recorded in evidence and limitations.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - access-limits
+- check_id: imodulondb
+  name: imodulondb
+  status: not_applicable
+  required: false
+  summary: No transcriptomic dataset, expression module or regulator claim is asserted
+    here. Protein identity is checked with cached structured UniProt/GenBank where
+    present; absence of an iModulonDB check is not negative biological evidence.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+- check_id: aux-chemistry
+  name: aux-chemistry
+  status: passed
+  required: false
+  summary: Older RDKit core operations parsed this SMILES and reproduced its exact
+    Standard InChI and key. Missing NumPy import diagnostics were emitted; successful
+    core operations alone are reported. Does not satisfy the unavailable pinned 2026.3.5
+    check.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  command: env PYENV_VERSION=3.12.11 PYTHONPATH=/Users/marcin/.cache/uv/archive-v0/emAjwJ0D1JTZTu-QXHtug
+    python3.12 /private/tmp/npmech-record-reviews-next-PKCU4Z/aux_chemistry.py
+  exit_code: 0
+  evidence_ids:
+  - aux-chemistry
+- check_id: cached-protein-identity
+  name: cached-protein-identity
+  status: passed
+  required: true
+  summary: 13 reference proteins compared to all listed cached GenPept sequences;
+    each has at least one exact CDS translation. UniProt sequence, GenPept sequence,
+    annotated CDS and independent table-11 translation agree where UniProt exists.
+    Specific near-reference mismatches and 4F84 tag mapping also pass.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  command: /Users/marcin/.cache/uv/archive-v0/_rI3ZpIXzy86ptcWte4iX/bin/python /private/tmp/npmech-record-reviews-next-PKCU4Z/audit_cached_sequences.py
+  exit_code: 0
+  evidence_ids:
+  - protein-B1VVB3
+  - protein-B1VVB4
+  - protein-A4FG18
+  - protein-A4FG19
+  - protein-A3KI17
+  - protein-A3KI18
+  - protein-Q9F1Y6
+  - protein-K0K6P8
+  - protein-WP_019890277-1
+  - protein-Q9F1Y5
+  - protein-Q9F1V8
+  - protein-D3KYU2
+  - protein-D3KYU3
+  - pdb4f84
+  scope_note: Biopython 1.88 auxiliary identity analysis; not a native quality gate
+    or a primary assay review. Essential source hashes, coordinates and results are
+    embedded in evidence.
+evidence:
+- evidence_id: aux-chemistry
+  kind: validation
+  reference: RDKit 2024.03.5 core molecule/InChI API
+  accessed_at: '2026-10-13T05:41:06.911891Z'
+  support: partial
+  summary: 'Auxiliary reparse of this exact owner SMILES with MolFromSmiles, MolToInchi,
+    InchiToInchiKey, iron atom count and FindMolChiralCenters(includeUnassigned=True):
+    {"identifier": "naturalproductmech:mibig-0eb8c93c6f", "iron_atoms": 0, "calculated_inchi":
+    "InChI=1S/C11H20O/c1-9(2)8-5-6-10(9,3)11(4,12)7-8/h8,12H,5-7H2,1-4H3", "calculated_key":
+    "LFYXNXGVLGKVCJ-UHFFFAOYSA-N", "inchi_matches": true, "key_matches": true, "chiral_centers":
+    [[2, "?"], [5, "?"], [6, "?"]]}. Auxiliary RDKit 2024.03.5 only, not the pinned
+    2026.3.5 native chemistry environment. Import emits missing-NumPy diagnostics;
+    only successful core molecule/InChI operations are reported.'
+- evidence_id: owner
+  kind: record_content
+  reference: data/natural_products/terpenoids/2-methylisoborneol.yaml
+  accessed_at: '2026-10-13T05:21:54.418937Z'
+  support: supports
+  summary: Complete YAML owner read, including source concepts, all evidence objects,
+    optional fields and full curation history; SHA-256 6c2fc8f83147b5eb73769c75e0ce32c1837d1166bd004e53da5d2632d0fbd94a.
+    7 referenced graph components also read in full.
+  snapshot_sha256: 6c2fc8f83147b5eb73769c75e0ce32c1837d1166bd004e53da5d2632d0fbd94a
+- evidence_id: inventory
+  kind: database
+  reference: data/raw/mibig_compounds.tsv
+  accessed_at: '2026-10-13T05:32:54.791756Z'
+  support: partial
+  summary: 'Exact compound rows inspected from the committed inventory: [{"mibig_accession":
+    "BGC0000658", "entry_version": "3", "entry_status": "active", "entry_quality":
+    "questionable", "entry_completeness": "unknown", "compound_name": "2-methylisoborneol",
+    "compound_index": "1", "smiles": "CC1(C2CCC1(C(C2)(C)O)C)C", "standard_inchi":
+    "InChI=1S/C11H20O/c1-9(2)8-5-6-10(9,3)11(4,12)7-8/h8,12H,5-7H2,1-4H3", "standard_inchi_key":
+    "LFYXNXGVLGKVCJ-UHFFFAOYSA-N", "stereo_complete": "false", "compound_classes":
+    "", "database_ids": "pubchem:16913", "taxon_id": "NCBITaxon:455632", "taxon_label":
+    "Streptomyces griseus subsp. griseus NBRC 13350", "bgc_classes": "terpene", "bgc_subclasses":
+    "Unknown", "genome_accession": "AP009493.1", "locus_from": "1490671", "locus_to":
+    "1492896", "locus_evidence_methods": "", "producer_evidence_basis": "SOURCE_ASSERTION",
+    "cluster_link_evidence_basis": "CLUSTER_UNSTATED", "primary_reference": "PMID:17369815",
+    "reference_basis": "ENTRY"}, {"mibig_accession": "BGC0000659", "entry_version":
+    "3", "entry_status": "active", "entry_quality": "questionable", "entry_completeness":
+    "unknown", "compound_name": "2-methylisoborneol", "compound_index": "1", "smiles":
+    "CC1(C2CCC1(C(C2)(C)O)C)C", "standard_inchi": "InChI=1S/C11H20O/c1-9(2)8-5-6-10(9,3)11(4,12)7-8/h8,12H,5-7H2,1-4H3",
+    "standard_inchi_key": "LFYXNXGVLGKVCJ-UHFFFAOYSA-N", "stereo_complete": "false",
+    "compound_classes": "", "database_ids": "pubchem:16913", "taxon_id": "NCBITaxon:405948",
+    "taxon_label": "Saccharopolyspora erythraea NRRL 2338", "bgc_classes": "terpene",
+    "bgc_subclasses": "Unknown", "genome_accession": "AM420293.1", "locus_from": "4075163",
+    "locus_to": "4077099", "locus_evidence_methods": "", "producer_evidence_basis":
+    "SOURCE_ASSERTION", "cluster_link_evidence_basis": "CLUSTER_UNSTATED", "primary_reference":
+    "PMID:17369815", "reference_basis": "ENTRY"}]. This proves the seeded database
+    assertion, not current live status or primary experimental support.'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: taxonomy
+  kind: authority
+  reference: data/raw/corpus_taxa.obo
+  accessed_at: '2026-10-13T05:32:54.791756Z'
+  support: partial
+  summary: 'Parsed exact taxon terms and synonyms with pronto 2.7.3; compared taxonomy-group
+    rows: [{"taxon_id": "NCBITaxon:1836", "record_labels": ["Saccharopolyspora erythraea"],
+    "cached_name": "Saccharopolyspora erythraea", "cached_synonyms": ["Actinomyces
+    erythreus", "Saccharopolyspora erythraea (Waksman 1923) Labeda 1987", "Saccharopolyspora
+    spinosporotrichia", "Streptomyces erythraeus corrig. (Waksman 1923) Waksman and
+    Henrici 1948 (Approved Lists 1980)", "Streptomyces erythreus"], "groups": ["ACTINOBACTERIAL"]},
+    {"taxon_id": "NCBITaxon:1886", "record_labels": ["Streptomyces albidoflavus"],
+    "cached_name": "Streptomyces albidoflavus", "cached_synonyms": ["Actinomyces albidoflavus",
+    "Actinomyces globisporus var. caucasicus", "Cladothrix albido-flava", "Streptomyces
+    albidoflavus (Rossi Doria 1891) Waksman and Henrici 1948 (Approved Lists 1980)",
+    "Streptomyces globisporus subsp. caucasicus"], "groups": ["ACTINOBACTERIAL"]},
+    {"taxon_id": "NCBITaxon:1902", "record_labels": ["Streptomyces coelicolor"], "cached_name":
+    "Streptomyces coelicolor", "cached_synonyms": ["Actinomyces coelicolor", "Cladothrix
+    coelicolor", "Nocardia coelicolor", "Streptomyces coelicolor (Muller 1908) Waksman
+    and Henrici 1948 (Approved Lists 1980)", "Streptomyces coelicolor subspecies coelicolor"],
+    "groups": ["ACTINOBACTERIAL"]}, {"taxon_id": "NCBITaxon:405948", "record_labels":
+    ["Saccharopolyspora erythraea NRRL 2338"], "cached_name": "Saccharopolyspora erythraea
+    NRRL 2338", "cached_synonyms": ["Saccharopolyspora erythraea ATCC 11635", "Saccharopolyspora
+    erythraea DSM 40517", "Saccharopolyspora erythraea JCM 4748", "Saccharopolyspora
+    erythraea str. NRRL 2338", "Saccharopolyspora erythraea strain NRRL 2338"], "groups":
+    ["ACTINOBACTERIAL"]}, {"taxon_id": "NCBITaxon:426436", "record_labels": ["Phormidium
+    tenue"], "cached_name": "Phormidium tenue BDU 40061", "cached_synonyms": [], "groups":
+    ["CYANOBACTERIAL"]}, {"taxon_id": "NCBITaxon:42684", "record_labels": ["Streptomyces
+    collinus"], "cached_name": "Streptomyces collinus", "cached_synonyms": [], "groups":
+    ["ACTINOBACTERIAL"]}, {"taxon_id": "NCBITaxon:455632", "record_labels": ["Streptomyces
+    griseus subsp. griseus NBRC 13350"], "cached_name": "Streptomyces griseus subsp.
+    griseus NBRC 13350", "cached_synonyms": ["Streptomyces griseus subsp. griseus
+    IFO 13350", "Streptomyces griseus subsp. griseus str. NBRC 13350", "Streptomyces
+    griseus subsp. griseus strain NBRC 13350"], "groups": ["ACTINOBACTERIAL"]}, {"taxon_id":
+    "NCBITaxon:67267", "record_labels": ["Streptomyces alboflavus"], "cached_name":
+    "Streptomyces alboflavus", "cached_synonyms": ["Actinomyces alboflavus", "Streptomyces
+    albiflavus"], "groups": ["ACTINOBACTERIAL"]}, {"taxon_id": "NCBITaxon:68270",
+    "record_labels": ["Streptomyces spectabilis"], "cached_name": "Streptomyces spectabilis",
+    "cached_synonyms": [], "groups": ["ACTINOBACTERIAL"]}, {"taxon_id": "NCBITaxon:68280",
+    "record_labels": ["Streptomyces violaceusniger"], "cached_name": "Streptomyces
+    violaceusniger", "cached_synonyms": ["\"Streptomyces violaceo-niger\" (Waksman
+    and Curtis 1916) Waksman and Henrici 1948", "Actinomyces violaceus-niger", "Streptomyces
+    violaceiniger", "Streptomyces violaceoniger", "Streptomyces violaceus-niger"],
+    "groups": ["ACTINOBACTERIAL"]}]. Pinned snapshot, not a fresh NCBI taxonomy release.'
+  snapshot_sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+- evidence_id: classification
+  kind: database
+  reference: data/raw/npclassifier.tsv
+  accessed_at: '2026-10-13T05:32:54.791756Z'
+  support: supports
+  summary: 'Exact-key row: [{"standard_inchi_key": "LFYXNXGVLGKVCJ-UHFFFAOYSA-N",
+    "smiles": "CC1(C2CCC1(C(C2)(C)O)C)C", "pathway_results": "Terpenoids", "superclass_results":
+    "Monoterpenoids", "class_results": "Camphane monoterpenoids", "is_glycoside":
+    "false", "model_version": "npclassifier.gnps2.org@2026-09-07"}]. Computed filing
+    provenance only; BGC class and origin are separate source assertions.'
+  snapshot_sha256: 7b9b9f78f5b14aea9fabb163bbaa9e842920a7e9b07deac8f98c97666e9e23fc
+- evidence_id: chebi-local
+  kind: authority
+  reference: data/raw/chebi_structures.tsv
+  accessed_at: '2026-10-13T05:32:54.791756Z'
+  support: partial
+  summary: 'Whole committed inventory exact-key search: []; connectivity-only candidates:
+    [{"chebi_id": "CHEBI:61987", "name": "2-methylisoborneol", "definition": "An bornane
+    monoterpenoid comprising isoborneol carrying a 2-methyl substituent (the 1R,2R,4R-diastereomer).",
+    "stars": "3", "standard_inchi_key": "LFYXNXGVLGKVCJ-FBIMIBRVSA-N", "smiles": "CC1(C)[C@@H]2CC[C@@]1(C)[C@](C)(O)C2"}].
+    No exact default-structure match in this inventory. A connectivity match is not
+    exact stereochemical/protonation identity.'
+  snapshot_sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+  search_scope: All rows parsed with csv.DictReader, independent of ignore rules;
+    exact and first-block InChIKey comparisons bounded to this committed ChEBI inventory,
+    not all current ChEBI.
+- evidence_id: ownership
+  kind: record_content
+  reference: docs/CURATION.md
+  accessed_at: '2026-10-13T05:42:04.211474Z'
+  support: supports
+  summary: 'Read maintained-input boundaries. REPLACE_WITH_CHEBI is a narrow pinned-row
+    structure correction, rejects occupied destinations and does not merge records.
+    Locus overrides alter method grading, not chemistry or organism identity. The
+    reserved decisions.tsv has no consumer. Applicable rows in both implemented correction
+    tables: {"mibig_structure_corrections": [], "mibig_locus_evidence_overrides":
+    []}.'
+  snapshot_sha256: 3b979068592adbb0611de95927ca31eaabb5fb5d791aa09973e3b1e8d5a19011
+  search_scope: All rows in both implemented curation tables parsed with csv, including
+    ignored files; bounded absence of applicable corrections, not absence of evidence
+    elsewhere.
+- evidence_id: historical-qc
+  kind: validation
+  reference: reviews/evidence/20261013-first-two-records/artifacts/qc.log.txt
+  accessed_at: '2026-10-13T05:42:04.214494Z'
+  support: context_only
+  summary: 'Historical baseline only: complete QC succeeded before the prior reports
+    were published. The current capture and subsequent local-source audit revalidated
+    every campaign owner/component hash and captured baseline input. No new full-QC
+    run is claimed.'
+  snapshot_sha256: 0c04323074ee7b0b9bf526e53dcd1c8f4208f74f2053e31a464070abb10df41e
+- evidence_id: chebi-live
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:61987
+  accessed_at: '2026-10-13T05:23:27Z'
+  support: partial
+  summary: 'Inspected 2-methylisoborneol entry: C11H20O, key LFYXNXGVLGKVCJ-FBIMIBRVSA-N,
+    explicitly (1R,2R,4R). Its connectivity agrees with this owner but its stereochemical
+    specificity does not. It is not an exact grounding for the unspecified-stereo
+    key.'
+- evidence_id: lotus
+  kind: database
+  reference: data/raw/lotus_occurrences.tsv
+  accessed_at: '2026-10-13T05:32:54.791756Z'
+  support: partial
+  summary: 'Parsed all rows and selected the 13 exact-key structure-organism-reference
+    triples: [{"standard_inchi_key": "LFYXNXGVLGKVCJ-UHFFFAOYSA-N", "organism_name":
+    "Saccharopolyspora erythraea", "taxon_id": "NCBITaxon:1836", "organism_wikidata":
+    "http://www.wikidata.org/entity/Q7396613", "reference_doi": "10.1038/NBT1297",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q100306102"}, {"standard_inchi_key":
+    "LFYXNXGVLGKVCJ-UHFFFAOYSA-N", "organism_name": "Streptomyces albidoflavus", "taxon_id":
+    "NCBITaxon:1886", "organism_wikidata": "http://www.wikidata.org/entity/Q22286833",
+    "reference_doi": "10.1007/S10295-013-1383-2", "structure_wikidata": "http://www.wikidata.org/entity/Q100306102"},
+    {"standard_inchi_key": "LFYXNXGVLGKVCJ-UHFFFAOYSA-N", "organism_name": "Streptomyces
+    albidoflavus", "taxon_id": "NCBITaxon:1886", "organism_wikidata": "http://www.wikidata.org/entity/Q22286833",
+    "reference_doi": "10.1021/BI201827A", "structure_wikidata": "http://www.wikidata.org/entity/Q100306102"},
+    {"standard_inchi_key": "LFYXNXGVLGKVCJ-UHFFFAOYSA-N", "organism_name": "Streptomyces
+    albidoflavus", "taxon_id": "NCBITaxon:1886", "organism_wikidata": "http://www.wikidata.org/entity/Q22286833",
+    "reference_doi": "10.1021/JA803639G", "structure_wikidata": "http://www.wikidata.org/entity/Q100306102"},
+    {"standard_inchi_key": "LFYXNXGVLGKVCJ-UHFFFAOYSA-N", "organism_name": "Streptomyces
+    coelicolor", "taxon_id": "NCBITaxon:1902", "organism_wikidata": "http://www.wikidata.org/entity/Q2355919",
+    "reference_doi": "10.1007/S10295-013-1383-2", "structure_wikidata": "http://www.wikidata.org/entity/Q100306102"},
+    {"standard_inchi_key": "LFYXNXGVLGKVCJ-UHFFFAOYSA-N", "organism_name": "Streptomyces
+    coelicolor", "taxon_id": "NCBITaxon:1902", "organism_wikidata": "http://www.wikidata.org/entity/Q2355919",
+    "reference_doi": "10.1021/BI201827A", "structure_wikidata": "http://www.wikidata.org/entity/Q100306102"},
+    {"standard_inchi_key": "LFYXNXGVLGKVCJ-UHFFFAOYSA-N", "organism_name": "Streptomyces
+    coelicolor", "taxon_id": "NCBITaxon:1902", "organism_wikidata": "http://www.wikidata.org/entity/Q2355919",
+    "reference_doi": "10.1021/JA803639G", "structure_wikidata": "http://www.wikidata.org/entity/Q100306102"},
+    {"standard_inchi_key": "LFYXNXGVLGKVCJ-UHFFFAOYSA-N", "organism_name": "Phormidium
+    tenue", "taxon_id": "NCBITaxon:426436", "organism_wikidata": "http://www.wikidata.org/entity/Q104247955",
+    "reference_doi": "10.1248/CPB.31.659", "structure_wikidata": "http://www.wikidata.org/entity/Q100306102"},
+    {"standard_inchi_key": "LFYXNXGVLGKVCJ-UHFFFAOYSA-N", "organism_name": "Streptomyces
+    collinus", "taxon_id": "NCBITaxon:42684", "organism_wikidata": "http://www.wikidata.org/entity/Q22287122",
+    "reference_doi": "10.1007/S10295-015-1685-7", "structure_wikidata": "http://www.wikidata.org/entity/Q100306102"},
+    {"standard_inchi_key": "LFYXNXGVLGKVCJ-UHFFFAOYSA-N", "organism_name": "Streptomyces
+    alboflavus", "taxon_id": "NCBITaxon:67267", "organism_wikidata": "http://www.wikidata.org/entity/Q22286851",
+    "reference_doi": "10.1007/S12275-013-2586-Y", "structure_wikidata": "http://www.wikidata.org/entity/Q100306102"},
+    {"standard_inchi_key": "LFYXNXGVLGKVCJ-UHFFFAOYSA-N", "organism_name": "Streptomyces
+    alboflavus", "taxon_id": "NCBITaxon:67267", "organism_wikidata": "http://www.wikidata.org/entity/Q22286851",
+    "reference_doi": "10.1111/1574-6968.12088", "structure_wikidata": "http://www.wikidata.org/entity/Q100306102"},
+    {"standard_inchi_key": "LFYXNXGVLGKVCJ-UHFFFAOYSA-N", "organism_name": "Streptomyces
+    spectabilis", "taxon_id": "NCBITaxon:68270", "organism_wikidata": "http://www.wikidata.org/entity/Q26292721",
+    "reference_doi": "10.1007/S10295-019-02172-8", "structure_wikidata": "http://www.wikidata.org/entity/Q100306102"},
+    {"standard_inchi_key": "LFYXNXGVLGKVCJ-UHFFFAOYSA-N", "organism_name": "Streptomyces
+    violaceusniger", "taxon_id": "NCBITaxon:68280", "organism_wikidata": "http://www.wikidata.org/entity/Q26293318",
+    "reference_doi": "10.1039/C4CC00177J", "structure_wikidata": "http://www.wikidata.org/entity/Q100306102"}].
+    These are database assertions, not independently confirmed occurrence experiments.'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: taxonomy-search
+  kind: search
+  reference: conf/id_label_targets.yaml
+  accessed_at: '2026-10-13T05:42:04.223316Z'
+  support: supports
+  summary: Ignored-inclusive search found the exact taxon in corpus_taxa.obo and the
+    historical label-drift warning for occurrences[7], not a documented scope exception
+    in the searched configuration/curation/code/research/review trees. Cached term
+    426436 is Phormidium tenue BDU 40061 with no synonyms.
+  search_scope: rg -n --hidden --no-ignore -F -e 426436 -e "BDU 40061" -e "Phormidium
+    tenue" conf curation scripts src research reviews data/raw/taxon_merged.tsv data/raw/corpus_taxa.obo;
+    ignored files included; scope bounded to named roots.
+- evidence_id: access-limits
+  kind: search
+  reference: DOI:10.1002/chem.202300775
+  accessed_at: '2026-10-13T05:40:23Z'
+  support: unknown
+  summary: 'Original publisher main-text URL returned a tool access error on 2026-10-13;
+    the separately recorded supplement HTTP403 stop was retained. Eight occurrence
+    DOI opens also failed: 10.1007/S10295-013-1383-2, 10.1007/S10295-015-1685-7, 10.1007/S10295-019-02172-8,
+    10.1007/S12275-013-2586-Y, 10.1021/BI201827A, 10.1039/C4CC00177J, 10.1111/1574-6968.12088,
+    10.1248/CPB.31.659. PMID17369815 yielded no usable source text; PubChem16913,
+    MIBiG0658/0659 and live NCBITaxon426436 opens failed. Cached curator extraction
+    of the 2023 paper is explicitly not a full-text snapshot and was not accepted
+    as primary evidence. Timestamp records result reinspection.'
+  search_scope: Exact DOI/publisher, PMID, MIBiG, PubChem and NCBI endpoints only.
+    Inherited stops for 10.1073/pnas.0802312105/PMID18492804/PMC2387273, 10.1021/ja803639g/PMID18563898,
+    10.1021/ja104306p, 10.1107/S0907444912038486 and the 2023 supplement were not
+    retried or bypassed. DOI10.1038/NBT1297 is the PMID17369815 lead and was not used
+    as an alternate retrieval.
+- evidence_id: protein-B1VVB3
+  kind: database
+  reference: https://www.uniprot.org/uniprotkb/B1VVB3/entry
+  accessed_at: '2026-10-13T05:31:37.497812Z'
+  support: partial
+  summary: 'Cached reference reinspection: 292 aa; sequence SHA-256 2b68c4399efe638877d86ae9273ed77f394d21df3b79175243914441dc9ae4bb;
+    entry audit {"firstPublicDate": "2008-05-20", "lastAnnotationUpdateDate": "2026-09-02",
+    "lastSequenceUpdateDate": "2008-05-20", "entryVersion": 74, "sequenceVersion":
+    1}; function evidence ["ECO:0000256/ARBA00053922"]; all listed sequence comparisons
+    exact, annotated CDS equals independent table-11 translation: [{"protein_id":
+    "BAG18097.1", "source": [{"organism": ["Streptomyces griseus subsp. griseus NBRC
+    13350"], "strain": ["NBRC 13350"], "db_xref": ["taxon:455632"], "note": ["synonym:
+    Streptomyces griseus subsp. griseus IFO 13350"]}], "cds": [{"locus_tag": ["SGR_1268"],
+    "coded_by": ["complement(AP009493.1:1490671..1491549)"], "transl_table": ["11"]}],
+    "genome": [{"accession": "AP009493.1", "coordinates": [1490671, 1491549, -1],
+    "source": [{"organism": ["Streptomyces griseus subsp. griseus NBRC 13350"], "mol_type":
+    ["genomic DNA"], "strain": ["NBRC 13350"], "db_xref": ["taxon:455632"], "note":
+    ["synonym: Streptomyces griseus subsp. griseus IFO 13350"]}], "snapshot_sha256":
+    "e9dbb8a79f2f24083538465168681a5b1d006b48084e3901da044f7acc953f33"}]}]. Does not
+    establish assay insert, strain equivalence or native product formation.'
+- evidence_id: protein-B1VVB4
+  kind: database
+  reference: https://www.uniprot.org/uniprotkb/B1VVB4/entry
+  accessed_at: '2026-10-13T05:31:37.497812Z'
+  support: partial
+  summary: 'Cached reference reinspection: 437 aa; sequence SHA-256 d58580e72954dedcba6ddbaceabcf14e150d00ff7b9addfc42f90a04b959297d;
+    entry audit {"firstPublicDate": "2008-05-20", "lastAnnotationUpdateDate": "2026-09-02",
+    "lastSequenceUpdateDate": "2008-05-20", "entryVersion": 79, "sequenceVersion":
+    1}; function evidence ["ECO:0000256/ARBA00035573 catalytic reaction; ECO:0000256/ARBA00035653
+    synthase subfamily"]; all listed sequence comparisons exact, annotated CDS equals
+    independent table-11 translation: [{"protein_id": "BAG18098.1", "source": [{"organism":
+    ["Streptomyces griseus subsp. griseus NBRC 13350"], "strain": ["NBRC 13350"],
+    "db_xref": ["taxon:455632"], "note": ["synonym: Streptomyces griseus subsp. griseus
+    IFO 13350"]}], "cds": [{"locus_tag": ["SGR_1269"], "coded_by": ["complement(AP009493.1:1491583..1492896)"],
+    "transl_table": ["11"]}], "genome": [{"accession": "AP009493.1", "coordinates":
+    [1491583, 1492896, -1], "source": [{"organism": ["Streptomyces griseus subsp.
+    griseus NBRC 13350"], "mol_type": ["genomic DNA"], "strain": ["NBRC 13350"], "db_xref":
+    ["taxon:455632"], "note": ["synonym: Streptomyces griseus subsp. griseus IFO 13350"]}],
+    "snapshot_sha256": "e9dbb8a79f2f24083538465168681a5b1d006b48084e3901da044f7acc953f33"}]}].
+    Does not establish assay insert, strain equivalence or native product formation.'
+- evidence_id: protein-A4FG18
+  kind: database
+  reference: https://www.uniprot.org/uniprotkb/A4FG18/entry
+  accessed_at: '2026-10-13T05:31:37.497812Z'
+  support: partial
+  summary: 'Cached reference reinspection: 285 aa; sequence SHA-256 fb0d711ae19c19a3d225090d8c78a8f81c3b80fe960e900abc8d7f39d0351394;
+    entry audit {"firstPublicDate": "2011-01-11", "lastAnnotationUpdateDate": "2026-09-02",
+    "lastSequenceUpdateDate": "2007-04-17", "entryVersion": 79, "sequenceVersion":
+    1}; function evidence ["ECO:0000305/18492804"]; all listed sequence comparisons
+    exact, annotated CDS equals independent table-11 translation: [{"protein_id":
+    "CAM02993.1", "source": [{"organism": ["Saccharopolyspora erythraea NRRL 2338"],
+    "strain": ["NRRL 2338"], "type_material": ["type strain of Streptomyces erythraeus"],
+    "db_xref": ["taxon:405948"], "focus": [""]}], "cds": [{"locus_tag": ["SACE_3721"],
+    "coded_by": ["complement(AM420293.1:4075163..4076020)"], "transl_table": ["11"],
+    "db_xref": ["EnsemblGenomes-Gn:SACE_3721", "EnsemblGenomes-Tr:CAM02993", "GOA:A4FG18",
+    "InterPro:IPR013216", "InterPro:IPR029063"]}], "genome": [{"accession": "AM420293.1",
+    "coordinates": [4075163, 4076020, -1], "source": [{"organism": ["Saccharopolyspora
+    erythraea NRRL 2338"], "mol_type": ["genomic DNA"], "strain": ["NRRL 2338"], "type_material":
+    ["type strain of Streptomyces erythraeus"], "db_xref": ["taxon:405948"], "focus":
+    [""]}], "snapshot_sha256": "3284789e28d8f7a56a1371f47eed91e2b6b28b673248d6c1c46e1d30beb8f9f0"}]}].
+    Does not establish assay insert, strain equivalence or native product formation.'
+- evidence_id: protein-A4FG19
+  kind: database
+  reference: https://www.uniprot.org/uniprotkb/A4FG19/entry
+  accessed_at: '2026-10-13T05:31:37.497812Z'
+  support: partial
+  summary: 'Cached reference reinspection: 354 aa; sequence SHA-256 f1eb41aa82d48aafa9b3d6df25ab5f90ccee9276c9b0fb7013dbb88f1b2185d7;
+    entry audit {"firstPublicDate": "2011-01-11", "lastAnnotationUpdateDate": "2026-09-02",
+    "lastSequenceUpdateDate": "2007-04-17", "entryVersion": 85, "sequenceVersion":
+    1}; function evidence ["ECO:0000305/18492804"]; all listed sequence comparisons
+    exact, annotated CDS equals independent table-11 translation: [{"protein_id":
+    "CAM02994.1", "source": [{"organism": ["Saccharopolyspora erythraea NRRL 2338"],
+    "strain": ["NRRL 2338"], "type_material": ["type strain of Streptomyces erythraeus"],
+    "db_xref": ["taxon:405948"], "focus": [""]}], "cds": [{"locus_tag": ["SACE_3722"],
+    "coded_by": ["complement(AM420293.1:4076035..4077099)"], "transl_table": ["11"],
+    "db_xref": ["EnsemblGenomes-Gn:SACE_3722", "EnsemblGenomes-Tr:CAM02994", "GOA:A4FG19",
+    "InterPro:IPR005630", "InterPro:IPR008949"]}], "genome": [{"accession": "AM420293.1",
+    "coordinates": [4076035, 4077099, -1], "source": [{"organism": ["Saccharopolyspora
+    erythraea NRRL 2338"], "mol_type": ["genomic DNA"], "strain": ["NRRL 2338"], "type_material":
+    ["type strain of Streptomyces erythraeus"], "db_xref": ["taxon:405948"], "focus":
+    [""]}], "snapshot_sha256": "3284789e28d8f7a56a1371f47eed91e2b6b28b673248d6c1c46e1d30beb8f9f0"}]}].
+    Does not establish assay insert, strain equivalence or native product formation.'
+- evidence_id: protein-A3KI17
+  kind: database
+  reference: https://www.uniprot.org/uniprotkb/A3KI17/entry
+  accessed_at: '2026-10-13T05:31:37.497812Z'
+  support: partial
+  summary: 'Cached reference reinspection: 440 aa; sequence SHA-256 d028e2d8835d3daf17494690fa4b737aead08328bf34a5b496f866baf133ebc2;
+    entry audit {"firstPublicDate": "2011-01-11", "lastAnnotationUpdateDate": "2026-09-02",
+    "lastSequenceUpdateDate": "2007-04-03", "entryVersion": 57, "sequenceVersion":
+    1}; function evidence ["ECO:0000305/18492804"]; all listed sequence comparisons
+    exact, annotated CDS equals independent table-11 translation: [{"protein_id":
+    "CAJ89344.1", "source": [{"organism": ["Streptomyces ambofaciens ATCC 23877"],
+    "strain": ["ATCC 23877"], "type_material": ["type strain of Streptomyces ambofaciens"],
+    "db_xref": ["taxon:278992"]}], "cds": [{"locus_tag": ["SAML0357"], "coded_by":
+    ["AM238663.1:360632..361954"], "inference": ["protein motif:SUPERFAMILY:8576",
+    "similar to DNA sequence:INSDC:CAD55534.1"], "transl_table": ["11"], "db_xref":
+    ["GOA:A3KI17", "InterPro:IPR005630", "InterPro:IPR008949", "UniProtKB/TrEMBL:A3KI17"]}],
+    "genome": [{"accession": "AM238663.1", "coordinates": [360632, 361954, 1], "source":
+    [{"organism": ["Streptomyces ambofaciens ATCC 23877"], "mol_type": ["genomic DNA"],
+    "strain": ["ATCC 23877"], "type_material": ["type strain of Streptomyces ambofaciens"],
+    "db_xref": ["taxon:278992"]}], "snapshot_sha256": "9c5b11f1c094155bd1f1c7b8fc01a56ce7af179e63abba505a16e18bc2bfef0a"}]},
+    {"protein_id": "AKZ53458.1", "source": [{"organism": ["Streptomyces ambofaciens
+    ATCC 23877"], "strain": ["ATCC 23877"], "isolation_source": ["soil"], "culture_collection":
+    ["ATCC:23877"], "type_material": ["type strain of Streptomyces ambofaciens"],
+    "db_xref": ["taxon:278992"], "geo_loc_name": ["France: Picardie"], "collection_date":
+    ["1954"]}], "cds": [{"locus_tag": ["SAM23877_0409"], "coded_by": ["CP012382.1:360601..361923"],
+    "inference": ["ab initio prediction:AMIGene:2.0"], "transl_table": ["11"]}], "genome":
+    [{"accession": "CP012382.1", "coordinates": [360601, 361923, 1], "source": [{"organism":
+    ["Streptomyces ambofaciens ATCC 23877"], "mol_type": ["genomic DNA"], "strain":
+    ["ATCC 23877"], "isolation_source": ["soil"], "culture_collection": ["ATCC:23877"],
+    "type_material": ["type strain of Streptomyces ambofaciens"], "db_xref": ["taxon:278992"],
+    "geo_loc_name": ["France: Picardie"], "collection_date": ["1954"]}], "snapshot_sha256":
+    "4969a42774624b2db84390611375f0740c999ead21387b19a748647e8d1df1ff"}]}]. Does not
+    establish assay insert, strain equivalence or native product formation.'
+- evidence_id: protein-A3KI18
+  kind: database
+  reference: https://www.uniprot.org/uniprotkb/A3KI18/entry
+  accessed_at: '2026-10-13T05:31:37.497812Z'
+  support: partial
+  summary: 'Cached reference reinspection: 291 aa; sequence SHA-256 544c5a3b1f4dd707c489e8a1e48ddd252b234b57e04b18ff9105e2c9e05133a0;
+    entry audit {"firstPublicDate": "2011-01-11", "lastAnnotationUpdateDate": "2026-09-02",
+    "lastSequenceUpdateDate": "2007-04-03", "entryVersion": 53, "sequenceVersion":
+    1}; function evidence ["ECO:0000305/18492804"]; all listed sequence comparisons
+    exact, annotated CDS equals independent table-11 translation: [{"protein_id":
+    "CAJ89345.1", "source": [{"organism": ["Streptomyces ambofaciens ATCC 23877"],
+    "strain": ["ATCC 23877"], "type_material": ["type strain of Streptomyces ambofaciens"],
+    "db_xref": ["taxon:278992"]}], "cds": [{"locus_tag": ["SAML0358"], "coded_by":
+    ["AM238663.1:361970..362845"], "inference": ["protein motif:SUPERFAMILY:53335",
+    "similar to DNA sequence:INSDC:CAC44557.1"], "transl_table": ["11"], "db_xref":
+    ["GOA:A3KI18", "InterPro:IPR003333", "UniProtKB/TrEMBL:A3KI18"]}], "genome": [{"accession":
+    "AM238663.1", "coordinates": [361970, 362845, 1], "source": [{"organism": ["Streptomyces
+    ambofaciens ATCC 23877"], "mol_type": ["genomic DNA"], "strain": ["ATCC 23877"],
+    "type_material": ["type strain of Streptomyces ambofaciens"], "db_xref": ["taxon:278992"]}],
+    "snapshot_sha256": "9c5b11f1c094155bd1f1c7b8fc01a56ce7af179e63abba505a16e18bc2bfef0a"}]},
+    {"protein_id": "AKZ53459.1", "source": [{"organism": ["Streptomyces ambofaciens
+    ATCC 23877"], "strain": ["ATCC 23877"], "isolation_source": ["soil"], "culture_collection":
+    ["ATCC:23877"], "type_material": ["type strain of Streptomyces ambofaciens"],
+    "db_xref": ["taxon:278992"], "geo_loc_name": ["France: Picardie"], "collection_date":
+    ["1954"]}], "cds": [{"locus_tag": ["SAM23877_0410"], "coded_by": ["CP012382.1:361939..362814"],
+    "inference": ["ab initio prediction:AMIGene:2.0"], "transl_table": ["11"]}], "genome":
+    [{"accession": "CP012382.1", "coordinates": [361939, 362814, 1], "source": [{"organism":
+    ["Streptomyces ambofaciens ATCC 23877"], "mol_type": ["genomic DNA"], "strain":
+    ["ATCC 23877"], "isolation_source": ["soil"], "culture_collection": ["ATCC:23877"],
+    "type_material": ["type strain of Streptomyces ambofaciens"], "db_xref": ["taxon:278992"],
+    "geo_loc_name": ["France: Picardie"], "collection_date": ["1954"]}], "snapshot_sha256":
+    "4969a42774624b2db84390611375f0740c999ead21387b19a748647e8d1df1ff"}]}]. Does not
+    establish assay insert, strain equivalence or native product formation.'
+- evidence_id: protein-Q9F1Y6
+  kind: database
+  reference: https://www.uniprot.org/uniprotkb/Q9F1Y6/entry
+  accessed_at: '2026-10-13T05:31:37.497812Z'
+  support: partial
+  summary: 'Cached reference reinspection: 440 aa; sequence SHA-256 f9820638439fad0bd3e3e6cdd05a0cc2d19c2467227f01286446ae75d53a48c0;
+    entry audit {"firstPublicDate": "2003-08-15", "lastAnnotationUpdateDate": "2026-09-02",
+    "lastSequenceUpdateDate": "2001-03-01", "entryVersion": 113, "sequenceVersion":
+    1}; function evidence ["ECO:0000269/18563898"]; all listed sequence comparisons
+    exact, annotated CDS equals independent table-11 translation: [{"protein_id":
+    "CAD55534.1", "source": [{"organism": ["Streptomyces coelicolor A3(2)"], "strain":
+    ["A3(2)"], "serovar": ["A3(2)"], "db_xref": ["taxon:100226"]}], "cds": [{"gene":
+    ["SCO7700"], "gene_synonym": ["SC1A4.08", "SCBAC12C8.01"], "coded_by": ["AL939132.1:171530..172852"],
+    "note": ["SCBAC12C8.01, possible cyclase, len: >137aa: strongly similar to C-terminus
+    of TR:Q9F1V8 (EMBL:AB040071) cyclase from Streptomyces griseus (437 aa) fasta
+    scores; opt: 788, Z-score: 962.7, 82.482% identity (82.482% ungapped) in 137 aa
+    overlap. Previously sequenced as TR:Q9F1Y6 (EMBL:AB035202) ORF2.; SC1A4.08, unknown
+    (fragment), len: >367 aa. High content in alanine and proline amino acid residues"],
+    "transl_table": ["11"], "db_xref": ["GOA:Q9F1Y6", "InterPro:IPR005630", "InterPro:IPR008949",
+    "PDB:3V1V", "PDB:3V1X", "PDB:4LA5", "PDB:4LA6"]}], "genome": [{"accession": "AL939132.1",
+    "coordinates": [171530, 172852, 1], "source": [{"organism": ["Streptomyces coelicolor
+    A3(2)"], "mol_type": ["genomic DNA"], "strain": ["A3(2)"], "serovar": ["A3(2)"],
+    "db_xref": ["taxon:100226"]}], "snapshot_sha256": "770faaf7defd545743cc98a6d01d739ee501c9150b1566ac4b44d692b57986c3"}]},
+    {"protein_id": "WP_011031839.1", "source": [{"organism": ["Streptomyces"], "db_xref":
+    ["taxon:1883"]}], "cds": [], "genome": []}]. Does not establish assay insert,
+    strain equivalence or native product formation.'
+- evidence_id: protein-K0K6P8
+  kind: database
+  reference: https://www.uniprot.org/uniprotkb/K0K6P8/entry
+  accessed_at: '2026-10-13T05:31:37.497812Z'
+  support: partial
+  summary: 'Cached reference reinspection: 362 aa; sequence SHA-256 53a1193adfa61991d3d001ed9642b86b168463a1608455502c393de6c6232f55;
+    entry audit {"firstPublicDate": "2012-11-28", "lastAnnotationUpdateDate": "2026-09-02",
+    "lastSequenceUpdateDate": "2012-11-28", "entryVersion": 55, "sequenceVersion":
+    1}; function evidence []; all listed sequence comparisons exact, annotated CDS
+    equals independent table-11 translation: [{"protein_id": "CCH33192.1", "source":
+    [{"organism": ["Saccharothrix espanaensis DSM 44229"], "strain": ["type strain:
+    DSM 44229"], "type_material": ["type strain of Saccharothrix espanaensis"], "db_xref":
+    ["taxon:1179773"]}], "cds": [{"locus_tag": ["BN6_59350"], "coded_by": ["HE804045.1:6630735..6631823"],
+    "transl_table": ["11"], "db_xref": ["EnsemblGenomes-Gn:BN6_59350", "EnsemblGenomes-Tr:CCH33192",
+    "GOA:K0K6P8", "InterPro:IPR005630", "InterPro:IPR008949", "UniProtKB/TrEMBL:K0K6P8"]}],
+    "genome": [{"accession": "HE804045.1", "coordinates": [6630735, 6631823, 1], "source":
+    [{"organism": ["Saccharothrix espanaensis DSM 44229"], "mol_type": ["genomic DNA"],
+    "strain": ["type strain: DSM 44229"], "type_material": ["type strain of Saccharothrix
+    espanaensis"], "db_xref": ["taxon:1179773"]}], "snapshot_sha256": "64d2172ac5cd76ac6aeb5071f3ccdf1c37fab7028dcd26364f60ad6578e4df49"}]},
+    {"protein_id": "WP_015103303.1", "source": [{"organism": ["Saccharothrix espanaensis"],
+    "db_xref": ["taxon:103731"]}], "cds": [], "genome": []}]. Does not establish assay
+    insert, strain equivalence or native product formation.'
+- evidence_id: protein-WP_019890277-1
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/protein/WP_019890277.1
+  accessed_at: '2026-10-13T05:31:37.497812Z'
+  support: partial
+  summary: 'Cached reference reinspection: 438 aa; sequence SHA-256 cc24d86e5dfa81c5d93fc193852f43da2227f61ad9f72d7a644f0bd1dc30600f;
+    entry audit null; function evidence []; all listed sequence comparisons exact,
+    annotated CDS equals independent table-11 translation: [{"protein_id": "WP_019890277.1",
+    "source": [{"organism": ["Streptomyces purpureus"], "db_xref": ["taxon:1951"]}],
+    "cds": [], "genome": [{"accession": "NZ_KB913030.1", "coordinates": [5956391,
+    5957707, 1], "source": [{"organism": ["Streptomyces purpureus KA281"], "mol_type":
+    ["genomic DNA"], "submitter_seqid": ["StrpuDRAFT_scaffold1.1"], "strain": ["KA281"],
+    "isolation_source": ["Soil with decomposing organic matter, Idaho"], "culture_collection":
+    ["ATCC:21405"], "type_material": ["type strain of Kitasatoa kauaiensis"], "db_xref":
+    ["taxon:1054860"]}], "snapshot_sha256": "ebdcced34254f412527b16b6cfb5858de2f0385752d3dc48980fd830f13816a8"}]}].
+    Does not establish assay insert, strain equivalence or native product formation.'
+- evidence_id: protein-Q9F1Y5
+  kind: database
+  reference: https://www.uniprot.org/uniprotkb/Q9F1Y5/entry
+  accessed_at: '2026-10-13T05:31:37.497812Z'
+  support: partial
+  summary: 'Cached reference reinspection: 292 aa; sequence SHA-256 75fd08e1a005c55cbd677978b739ecb873e2011a56ea6ad8eb8321598e0fe0ee;
+    entry audit {"firstPublicDate": "2011-01-11", "lastAnnotationUpdateDate": "2026-09-02",
+    "lastSequenceUpdateDate": "2001-03-01", "entryVersion": 125, "sequenceVersion":
+    1}; function evidence ["ECO:0000269/18563898"]; all listed sequence comparisons
+    exact, annotated CDS equals independent table-11 translation: [{"protein_id":
+    "CAC44557.1", "source": [{"organism": ["Streptomyces coelicolor A3(2)"], "strain":
+    ["A3(2)"], "serovar": ["A3(2)"], "db_xref": ["taxon:100226"]}], "cds": [{"gene":
+    ["SCO7701"], "gene_synonym": ["SCBAC12C8.02"], "coded_by": ["AL939132.1:172868..173746"],
+    "note": ["SCBAC12C8.02, possible methyltransferase, len: 396aa: similar to many
+    eg. TR:Q9F1V7 (EMBL:AB040071) methyltransferase from Streptomyces griseus (316
+    aa) fasta scores; opt: 1550, Z-score: 1809.5, 82.246% identity (82.545% ungapped)
+    in 276 aa overlap. Previously sequenced as TR:Q9F1Y5 (EMBL:AB035202) ORF4."],
+    "transl_table": ["11"], "db_xref": ["GOA:Q9F1Y5", "InterPro:IPR003333", "InterPro:IPR029063",
+    "PDB:3VC1", "PDB:3VC2"]}], "genome": [{"accession": "AL939132.1", "coordinates":
+    [172868, 173746, 1], "source": [{"organism": ["Streptomyces coelicolor A3(2)"],
+    "mol_type": ["genomic DNA"], "strain": ["A3(2)"], "serovar": ["A3(2)"], "db_xref":
+    ["taxon:100226"]}], "snapshot_sha256": "66aedd937c8db6b2c74a6d9e26460178ea2827acc7b0c2de781aac070c13732d"}]},
+    {"protein_id": "BAB20434.1", "source": [{"organism": ["Streptomyces coelicolor"],
+    "strain": ["1147"], "db_xref": ["taxon:1902"]}], "cds": [{"gene": ["orf4"], "coded_by":
+    ["AB035202.1:5872..6750"], "note": ["sterol-C-methyltransferase homologue"], "transl_table":
+    ["11"]}], "genome": [{"accession": "AB035202.1", "coordinates": [5872, 6750, 1],
+    "source": [{"organism": ["Streptomyces coelicolor"], "mol_type": ["genomic DNA"],
+    "strain": ["1147"], "db_xref": ["taxon:1902"]}], "snapshot_sha256": "2bb64c1e344fa45bd738f424e00d8102829f4d23c0224ad73d434084b980699e"}]},
+    {"protein_id": "WP_011031840.1", "source": [{"organism": ["Streptomyces"], "db_xref":
+    ["taxon:1883"]}], "cds": [], "genome": []}]. Does not establish assay insert,
+    strain equivalence or native product formation.'
+- evidence_id: protein-Q9F1V8
+  kind: database
+  reference: https://www.uniprot.org/uniprotkb/Q9F1V8/entry
+  accessed_at: '2026-10-13T05:31:37.497812Z'
+  support: partial
+  summary: 'Cached reference reinspection: 437 aa; sequence SHA-256 b911259016bbb2d183190ee7a7fd886ee97f43fa6507d7c81cc7bbd9bc7b804d;
+    entry audit {"firstPublicDate": "2003-08-15", "lastAnnotationUpdateDate": "2026-09-02",
+    "lastSequenceUpdateDate": "2001-03-01", "entryVersion": 67, "sequenceVersion":
+    1}; function evidence ["ECO:0000250"]; all listed sequence comparisons exact,
+    annotated CDS equals independent table-11 translation: [{"protein_id": "BAB20507.1",
+    "source": [{"organism": ["Streptomyces griseus"], "strain": ["13189"], "db_xref":
+    ["taxon:1911"]}], "cds": [{"coded_by": ["AB040071.1:5255..6568"], "note": ["putative"],
+    "transl_table": ["11"]}], "genome": [{"accession": "AB040071.1", "coordinates":
+    [5255, 6568, 1], "source": [{"organism": ["Streptomyces griseus"], "mol_type":
+    ["genomic DNA"], "strain": ["13189"], "db_xref": ["taxon:1911"]}], "snapshot_sha256":
+    "e3e3e8f6b4630644282ba5b2ead1862ce37f409a7975fc6f6f7019edbdb53a21"}, {"accession":
+    "AB040071.1", "coordinates": [5255, 6568, 1], "source": [{"organism": ["Streptomyces
+    griseus"], "mol_type": ["genomic DNA"], "strain": ["13189"], "db_xref": ["taxon:1911"]}],
+    "snapshot_sha256": "bfdbfd335617b56595941aa407a4aa359bfceb92b0d609eafb9b9bd1e176be35"}]},
+    {"protein_id": "WP_030703894.1", "source": [{"organism": ["Streptomyces griseus"],
+    "db_xref": ["taxon:1911"]}], "cds": [], "genome": []}]. Does not establish assay
+    insert, strain equivalence or native product formation.'
+- evidence_id: protein-D3KYU2
+  kind: database
+  reference: https://www.uniprot.org/uniprotkb/D3KYU2/entry
+  accessed_at: '2026-10-13T05:31:37.497812Z'
+  support: partial
+  summary: 'Cached reference reinspection: 481 aa; sequence SHA-256 4b95a23cd0b1419ed7c66247c0e1bd49f6b1afe7200bc8e4cf52df23d52fcc99;
+    entry audit {"firstPublicDate": "2011-01-11", "lastAnnotationUpdateDate": "2026-09-02",
+    "lastSequenceUpdateDate": "2010-04-20", "entryVersion": 40, "sequenceVersion":
+    1}; function evidence ["ECO:0000269/18492804"]; all listed sequence comparisons
+    exact, annotated CDS equals independent table-11 translation: [{"protein_id":
+    "BAI77523.1", "source": [{"organism": ["Streptomyces lasalocidi"], "strain": ["ATCC
+    31180"], "type_material": ["type strain of Streptomyces lasalocidi"], "db_xref":
+    ["taxon:324833"], "plasmid": ["pKSL"]}], "cds": [{"gene": ["tpc"], "coded_by":
+    ["AB547324.1:1729..3174"], "transl_table": ["11"]}], "genome": [{"accession":
+    "AB547324.1", "coordinates": [1729, 3174, 1], "source": [{"organism": ["Streptomyces
+    lasalocidi"], "mol_type": ["genomic DNA"], "strain": ["ATCC 31180"], "type_material":
+    ["type strain of Streptomyces lasalocidi"], "db_xref": ["taxon:324833"], "plasmid":
+    ["pKSL"]}], "snapshot_sha256": "aa98470a8e2fd9449f470c7554b7566ffa519e2f97226ccdee834507fe9669b2"}]}].
+    Does not establish assay insert, strain equivalence or native product formation.'
+- evidence_id: protein-D3KYU3
+  kind: database
+  reference: https://www.uniprot.org/uniprotkb/D3KYU3/entry
+  accessed_at: '2026-10-13T05:31:37.497812Z'
+  support: partial
+  summary: 'Cached reference reinspection: 300 aa; sequence SHA-256 84b99757861624904781e61f86ed7ff684ffabb5be7dfd3d9901ca10de5b2bec;
+    entry audit {"firstPublicDate": "2011-01-11", "lastAnnotationUpdateDate": "2026-09-02",
+    "lastSequenceUpdateDate": "2010-04-20", "entryVersion": 47, "sequenceVersion":
+    1}; function evidence ["ECO:0000269/18492804"]; all listed sequence comparisons
+    exact, annotated CDS equals independent table-11 translation: [{"protein_id":
+    "BAI77524.1", "source": [{"organism": ["Streptomyces lasalocidi"], "strain": ["ATCC
+    31180"], "type_material": ["type strain of Streptomyces lasalocidi"], "db_xref":
+    ["taxon:324833"], "plasmid": ["pKSL"]}], "cds": [{"gene": ["gdpmt"], "coded_by":
+    ["AB547324.1:3219..4121"], "transl_table": ["11"]}], "genome": [{"accession":
+    "AB547324.1", "coordinates": [3219, 4121, 1], "source": [{"organism": ["Streptomyces
+    lasalocidi"], "mol_type": ["genomic DNA"], "strain": ["ATCC 31180"], "type_material":
+    ["type strain of Streptomyces lasalocidi"], "db_xref": ["taxon:324833"], "plasmid":
+    ["pKSL"]}], "snapshot_sha256": "aa98470a8e2fd9449f470c7554b7566ffa519e2f97226ccdee834507fe9669b2"}]}].
+    Does not establish assay insert, strain equivalence or native product formation.'
+- evidence_id: pdb4f84
+  kind: database
+  reference: https://data.rcsb.org/rest/v1/core/polymer_entity/4F84/1
+  accessed_at: '2026-10-13T05:31:37.497812Z'
+  support: supports
+  summary: 'Raw cached entity reinspection and direct sequence comparison: 20-aa MGSSHHHHHHSSGLVPRGSH
+    extension plus all 300 D3KYU3 residues; entity 21..320 maps to reference 1..300,
+    zero mutations. Source taxon324833 has no strain qualifier; expression pET26b/E.
+    coli BL21(DE3). Deposition identity only, not catalytic, proteolytic or native
+    assembly evidence.'
+  snapshot_sha256: 43b6c02ffd5d96f52644509495ae0ba7c69a2d477a2da54176dd1f8f208aea59
+- evidence_id: graph-mib-sgr-native-proposed-roles
+  kind: record_content
+  reference: data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-sgr-native-proposed-roles.yaml
+  accessed_at: '2026-10-13T05:21:54.418937Z'
+  support: supports
+  summary: Complete component, graph ownership, all nodes/edges, qualifications, evidence
+    and audit trail read. Matches the owner identifier and LFYXNXGVLGKVCJ-UHFFFAOYSA-N
+    structure; BIOSYNTHESIS scope.
+  snapshot_sha256: 75c62611be5b682bf101f620f60892c5139c90531d99755e9c2842f1c380161f
+- evidence_id: graph-mib-sace-native-proposed-roles
+  kind: record_content
+  reference: data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-sace-native-proposed-roles.yaml
+  accessed_at: '2026-10-13T05:21:54.418937Z'
+  support: supports
+  summary: Complete component, graph ownership, all nodes/edges, qualifications, evidence
+    and audit trail read. Matches the owner identifier and LFYXNXGVLGKVCJ-UHFFFAOYSA-N
+    structure; BIOSYNTHESIS scope.
+  snapshot_sha256: 249606f748b9d865568f3fc41dba1c070f2a841c7b4280cadc3250a7d741ec2e
+- evidence_id: graph-mib-ambo-native-proposed-roles
+  kind: record_content
+  reference: data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-ambo-native-proposed-roles.yaml
+  accessed_at: '2026-10-13T05:21:54.418937Z'
+  support: supports
+  summary: Complete component, graph ownership, all nodes/edges, qualifications, evidence
+    and audit trail read. Matches the owner identifier and LFYXNXGVLGKVCJ-UHFFFAOYSA-N
+    structure; BIOSYNTHESIS scope.
+  snapshot_sha256: 7fa37d0f7fef97e85e54e473c6fa13a98ce51159317d19fef8acfc303dd6daaf
+- evidence_id: graph-mib-three-canonical-references-coupled-assays
+  kind: record_content
+  reference: data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-three-canonical-references-coupled-assays.yaml
+  accessed_at: '2026-10-13T05:21:54.418937Z'
+  support: supports
+  summary: Complete component, graph ownership, all nodes/edges, qualifications, evidence
+    and audit trail read. Matches the owner identifier and LFYXNXGVLGKVCJ-UHFFFAOYSA-N
+    structure; BIOSYNTHESIS scope.
+  snapshot_sha256: 47c5c7db64337a751000d4fa603f5808ed076b55380da1566f9f9db93d78b852
+- evidence_id: graph-mib-sco7701-database-role
+  kind: record_content
+  reference: data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-sco7701-database-role.yaml
+  accessed_at: '2026-10-13T05:21:54.418937Z'
+  support: supports
+  summary: Complete component, graph ownership, all nodes/edges, qualifications, evidence
+    and audit trail read. Matches the owner identifier and LFYXNXGVLGKVCJ-UHFFFAOYSA-N
+    structure; BIOSYNTHESIS scope.
+  snapshot_sha256: abdebe433161973866bfc91814a4324787d30d2b7d113860652eaa06ad81757a
+- evidence_id: graph-mib-13189-similarity-proposed-role
+  kind: record_content
+  reference: data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-13189-similarity-proposed-role.yaml
+  accessed_at: '2026-10-13T05:21:54.418937Z'
+  support: supports
+  summary: Complete component, graph ownership, all nodes/edges, qualifications, evidence
+    and audit trail read. Matches the owner identifier and LFYXNXGVLGKVCJ-UHFFFAOYSA-N
+    structure; BIOSYNTHESIS scope.
+  snapshot_sha256: 667de1ca8109db09a0495c27fbb73aaa4a2cef4cfa3cea6d17767374f590cc0a
+- evidence_id: graph-mib-lasali-deposited-database-roles
+  kind: record_content
+  reference: data/causal_graphs/LFYXNXGVLGKVCJ-UHFFFAOYSA-N/mib-lasali-deposited-database-roles.yaml
+  accessed_at: '2026-10-13T05:21:54.418937Z'
+  support: supports
+  summary: Complete component, graph ownership, all nodes/edges, qualifications, evidence
+    and audit trail read. Matches the owner identifier and LFYXNXGVLGKVCJ-UHFFFAOYSA-N
+    structure; BIOSYNTHESIS scope.
+  snapshot_sha256: f6002623f7f625b91e5cac02c47ae65f653dcc064db6ec9cce61b11b17974c81
+assessments:
+- assessment_id: serialization
+  area: consistency
+  topic: Auxiliary chemical serialization check
+  outcome: supported
+  summary: 'RDKit 2024.03.5 reproduces the saved InChI and InChIKey. Iron atom count
+    is 0; tetrahedral centres: [[2, "?"], [5, "?"], [6, "?"]]. This proves only limited
+    internal serialization consistency, not correct biological identity or pinned-toolkit
+    equivalence.'
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - aux-chemistry
+  - owner
+- assessment_id: filing
+  area: consistency
+  topic: Computed filing, asserted BGC class, biological origin and taxonomy axes
+  outcome: supported
+  summary: Filing and model version match the exact-key NPClassifier row. The BGC
+    class is retained separately. NATURAL_PRODUCT is imported biological-origin context,
+    not a claim that a recombinant assay used a native production system. Producer
+    taxon groups do not substitute for exact taxon/strain identifiers.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - owner
+  - classification
+  - inventory
+  - taxonomy
+- assessment_id: generated-boundary
+  area: ownership
+  topic: Maintained correction ownership
+  outcome: supported
+  summary: Seed-owned identity, taxonomy and source assertions must be fixed upstream
+    or through an implemented tested correction path; generated owner/page patches
+    would not be durable. Curated pathway/component changes require guarded writers
+    and history. No changes were made.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - ownership
+- assessment_id: audit
+  area: provenance
+  topic: Native status and complete audit trail
+  outcome: supported
+  summary: Status remains SEEDED. Existing history describes seeding and later qualified
+    protein/graph curation, including component migration. This review neither appends
+    history nor promotes scientific status. Validation and reproduction do not establish
+    biological truth.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - owner
+  - historical-qc
+- assessment_id: optional-claims
+  area: completeness
+  topic: Optional activity, targets, clinical, datasets and cross-corpus claims
+  outcome: not_applicable
+  summary: 'Full owner/resolved view has no assertions in: bioactivities, bioactivity_summary,
+    molecular_targets, related_records, clinical_status, datasets. Their absence is
+    not a required-field defect; no extract-level result, assay spectrum, clinical
+    status or sibling identity is inferred.'
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - owner
+- assessment_id: identity
+  area: identity
+  topic: Exact constitution and stereochemical boundary
+  outcome: supported
+  summary: The C11H20O bornane connectivity matches the 2-MIB ChEBI connectivity family.
+    This is not the wrong-constitution BGC0000657 owner reviewed earlier. Explicitly
+    unspecified stereochemistry and stereo_complete=false are retained; no exact CHEBI:61987
+    identity or reaction-product stereochemistry upgrade is warranted.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - owner
+  - inventory
+  - chebi-local
+  - chebi-live
+- assessment_id: equivalence
+  area: grounding
+  topic: PubChem identity and shared-structure discussion
+  outcome: unknown
+  summary: PubChem16913 could not be verified. Both BGC0000658 and BGC0000659 contribute
+    exact-key source concepts here; the existing shared-structure discussion is retained,
+    not resolved by label or a partial assay report. No parent/congener relation is
+    invented.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - owner
+  - inventory
+  - access-limits
+- assessment_id: producer-bgc
+  area: evidence
+  topic: Two native producer and BGC assertions
+  outcome: unknown
+  summary: Pinned BGC0000658v3/S.griseus NBRC13350 and BGC0000659v3/S.erythraea NRRL2338
+    both retain SOURCE_ASSERTION and CLUSTER_UNSTATED. The cached genome/CDS mappings
+    agree with their specified loci. PMID17369815 and current MIBiG status were not
+    verified; database roles and recombinant assays do not upgrade native producer
+    evidence.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - inventory
+  - protein-B1VVB3
+  - protein-B1VVB4
+  - protein-A4FG18
+  - protein-A4FG19
+  - access-limits
+- assessment_id: taxon-scope
+  area: grounding
+  topic: Occurrence species-versus-strain identity
+  outcome: concern
+  summary: occurrences[7] pairs the species-level label Phormidium tenue with NCBITaxon426436,
+    whose pinned name is Phormidium tenue BDU 40061. No strain qualifier or scope
+    explanation accompanies this occurrence. The record needs an evidence-led choice
+    of taxon and label, not a cosmetic substitution.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - owner
+  - taxonomy
+  - lotus
+  - taxonomy-search
+- assessment_id: occurrence-0
+  area: evidence
+  topic: 'Occurrence 0: NCBITaxon:1836 / DOI:10.1038/NBT1297'
+  outcome: unknown
+  summary: Exact-key LOTUS triple is present and correctly marked DATABASE_ASSERTION,
+    not promoted to production. Direct detection/isolation, exact chemical form and
+    source organism scope could not be checked because the cited source was inaccessible
+    or access-held.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - lotus
+  - owner
+  - access-limits
+- assessment_id: occurrence-1
+  area: evidence
+  topic: 'Occurrence 1: NCBITaxon:1886 / DOI:10.1007/S10295-013-1383-2'
+  outcome: unknown
+  summary: Exact-key LOTUS triple is present and correctly marked DATABASE_ASSERTION,
+    not promoted to production. Direct detection/isolation, exact chemical form and
+    source organism scope could not be checked because the cited source was inaccessible
+    or access-held.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - lotus
+  - owner
+  - access-limits
+- assessment_id: occurrence-2
+  area: evidence
+  topic: 'Occurrence 2: NCBITaxon:1886 / DOI:10.1021/BI201827A'
+  outcome: unknown
+  summary: Exact-key LOTUS triple is present and correctly marked DATABASE_ASSERTION,
+    not promoted to production. Direct detection/isolation, exact chemical form and
+    source organism scope could not be checked because the cited source was inaccessible
+    or access-held.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - lotus
+  - owner
+  - access-limits
+- assessment_id: occurrence-3
+  area: evidence
+  topic: 'Occurrence 3: NCBITaxon:1886 / DOI:10.1021/JA803639G'
+  outcome: unknown
+  summary: Exact-key LOTUS triple is present and correctly marked DATABASE_ASSERTION,
+    not promoted to production. Direct detection/isolation, exact chemical form and
+    source organism scope could not be checked because the cited source was inaccessible
+    or access-held.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - lotus
+  - owner
+  - access-limits
+- assessment_id: occurrence-4
+  area: evidence
+  topic: 'Occurrence 4: NCBITaxon:1902 / DOI:10.1007/S10295-013-1383-2'
+  outcome: unknown
+  summary: Exact-key LOTUS triple is present and correctly marked DATABASE_ASSERTION,
+    not promoted to production. Direct detection/isolation, exact chemical form and
+    source organism scope could not be checked because the cited source was inaccessible
+    or access-held.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - lotus
+  - owner
+  - access-limits
+- assessment_id: occurrence-5
+  area: evidence
+  topic: 'Occurrence 5: NCBITaxon:1902 / DOI:10.1021/BI201827A'
+  outcome: unknown
+  summary: Exact-key LOTUS triple is present and correctly marked DATABASE_ASSERTION,
+    not promoted to production. Direct detection/isolation, exact chemical form and
+    source organism scope could not be checked because the cited source was inaccessible
+    or access-held.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - lotus
+  - owner
+  - access-limits
+- assessment_id: occurrence-6
+  area: evidence
+  topic: 'Occurrence 6: NCBITaxon:1902 / DOI:10.1021/JA803639G'
+  outcome: unknown
+  summary: Exact-key LOTUS triple is present and correctly marked DATABASE_ASSERTION,
+    not promoted to production. Direct detection/isolation, exact chemical form and
+    source organism scope could not be checked because the cited source was inaccessible
+    or access-held.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - lotus
+  - owner
+  - access-limits
+- assessment_id: occurrence-7
+  area: evidence
+  topic: 'Occurrence 7: NCBITaxon:426436 / DOI:10.1248/CPB.31.659'
+  outcome: concern
+  summary: Exact-key LOTUS triple is present and correctly marked DATABASE_ASSERTION,
+    not promoted to production. Direct detection/isolation, exact chemical form and
+    source organism scope could not be checked because the cited source was inaccessible
+    or access-held. The species/strain identifier mismatch is separately confirmed
+    as F1.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - lotus
+  - owner
+  - access-limits
+  - taxonomy
+- assessment_id: occurrence-8
+  area: evidence
+  topic: 'Occurrence 8: NCBITaxon:42684 / DOI:10.1007/S10295-015-1685-7'
+  outcome: unknown
+  summary: Exact-key LOTUS triple is present and correctly marked DATABASE_ASSERTION,
+    not promoted to production. Direct detection/isolation, exact chemical form and
+    source organism scope could not be checked because the cited source was inaccessible
+    or access-held.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - lotus
+  - owner
+  - access-limits
+- assessment_id: occurrence-9
+  area: evidence
+  topic: 'Occurrence 9: NCBITaxon:67267 / DOI:10.1007/S12275-013-2586-Y'
+  outcome: unknown
+  summary: Exact-key LOTUS triple is present and correctly marked DATABASE_ASSERTION,
+    not promoted to production. Direct detection/isolation, exact chemical form and
+    source organism scope could not be checked because the cited source was inaccessible
+    or access-held.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - lotus
+  - owner
+  - access-limits
+- assessment_id: occurrence-10
+  area: evidence
+  topic: 'Occurrence 10: NCBITaxon:67267 / DOI:10.1111/1574-6968.12088'
+  outcome: unknown
+  summary: Exact-key LOTUS triple is present and correctly marked DATABASE_ASSERTION,
+    not promoted to production. Direct detection/isolation, exact chemical form and
+    source organism scope could not be checked because the cited source was inaccessible
+    or access-held.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - lotus
+  - owner
+  - access-limits
+- assessment_id: occurrence-11
+  area: evidence
+  topic: 'Occurrence 11: NCBITaxon:68270 / DOI:10.1007/S10295-019-02172-8'
+  outcome: unknown
+  summary: Exact-key LOTUS triple is present and correctly marked DATABASE_ASSERTION,
+    not promoted to production. Direct detection/isolation, exact chemical form and
+    source organism scope could not be checked because the cited source was inaccessible
+    or access-held.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - lotus
+  - owner
+  - access-limits
+- assessment_id: occurrence-12
+  area: evidence
+  topic: 'Occurrence 12: NCBITaxon:68280 / DOI:10.1039/C4CC00177J'
+  outcome: unknown
+  summary: Exact-key LOTUS triple is present and correctly marked DATABASE_ASSERTION,
+    not promoted to production. Direct detection/isolation, exact chemical form and
+    source organism scope could not be checked because the cited source was inaccessible
+    or access-held.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - lotus
+  - owner
+  - access-limits
+- assessment_id: mib-sgr-native-proposed-roles
+  area: graph
+  topic: Pathway roles and component mib-sgr-native-proposed-roles
+  outcome: supported
+  summary: Automated ECO:0000256 methyltransferase and synthase annotations remain
+    proposed. NBRC13350 identity and reverse-strand locus are exact. No primary assay
+    or shell/cargo claim is inferred.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - graph-mib-sgr-native-proposed-roles
+  - protein-B1VVB3
+  - protein-B1VVB4
+  dimensions:
+  - name: claim-tier
+    value: qualified database role
+    definition: Evidence tier evaluated for this component, not the native producer
+      claim.
+    evidence_ids:
+    - graph-mib-sgr-native-proposed-roles
+- assessment_id: mib-sace-native-proposed-roles
+  area: graph
+  topic: Pathway roles and component mib-sace-native-proposed-roles
+  outcome: supported
+  summary: ECO:0000305 reaction annotations citing PMID18492804 remain proposed database
+    roles. NRRL2338 identity is exact; process-level IDA does not establish the exact
+    reaction or convert the role to a newly inspected experiment.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - graph-mib-sace-native-proposed-roles
+  - protein-A4FG18
+  - protein-A4FG19
+  dimensions:
+  - name: claim-tier
+    value: qualified database role
+    definition: Evidence tier evaluated for this component, not the native producer
+      claim.
+    evidence_ids:
+    - graph-mib-sace-native-proposed-roles
+- assessment_id: mib-ambo-native-proposed-roles
+  area: graph
+  topic: Pathway roles and component mib-ambo-native-proposed-roles
+  outcome: supported
+  summary: Both genomic accessions map exactly to ATCC23877 proteins. ECO:0000305
+    role evidence remains proposed. Similarity and shared pathway context are not
+    primary assays.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - graph-mib-ambo-native-proposed-roles
+  - protein-A3KI17
+  - protein-A3KI18
+  dimensions:
+  - name: claim-tier
+    value: qualified database role
+    definition: Evidence tier evaluated for this component, not the native producer
+      claim.
+    evidence_ids:
+    - graph-mib-ambo-native-proposed-roles
+- assessment_id: mib-three-canonical-references-coupled-assays
+  area: graph
+  topic: Pathway roles and component mib-three-canonical-references-coupled-assays
+  outcome: unknown
+  summary: The three canonical references are sequence-supported, but the claimed
+    coupled FPPS assay and GC/MS product formation could not be reread in primary
+    text. The graph distinguishes canonical references from exact experimental inserts
+    and does not equate stocks. WP_019890277.1 differs from A0A918LM63 at107 T/A and116
+    G/R, confirming the refusal to substitute that UniProt entry.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - graph-mib-three-canonical-references-coupled-assays
+  - protein-Q9F1Y6
+  - protein-K0K6P8
+  - protein-WP_019890277-1
+  - access-limits
+  dimensions:
+  - name: claim-tier
+    value: primary assay assertion not reverified
+    definition: Evidence tier evaluated for this component, not the native producer
+      claim.
+    evidence_ids:
+    - graph-mib-three-canonical-references-coupled-assays
+- assessment_id: mib-sco7701-database-role
+  area: graph
+  topic: Pathway roles and component mib-sco7701-database-role
+  outcome: supported
+  summary: Database experimental attribution ECO:0000269/PMID18563898 is retained
+    as a database claim. A3(2), 1147 and multispecies RefSeq identities are distinguished.
+    The edge does not claim methyltransferase alone makes 2-MIB.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - graph-mib-sco7701-database-role
+  - protein-Q9F1Y5
+  dimensions:
+  - name: claim-tier
+    value: qualified database role
+    definition: Evidence tier evaluated for this component, not the native producer
+      claim.
+    evidence_ids:
+    - graph-mib-sco7701-database-role
+- assessment_id: mib-13189-similarity-proposed-role
+  area: graph
+  topic: Pathway roles and component mib-13189-similarity-proposed-role
+  outcome: supported
+  summary: ECO:0000250 role remains proposed. The sequence belongs to the 13189 deposit;
+    it differs from B1VVB4 at66 P/S,67 T/A and77 W/R. No NBRC13350 strain/locus transfer
+    is made.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - graph-mib-13189-similarity-proposed-role
+  - protein-Q9F1V8
+  dimensions:
+  - name: claim-tier
+    value: qualified database role
+    definition: Evidence tier evaluated for this component, not the native producer
+      claim.
+    evidence_ids:
+    - graph-mib-13189-similarity-proposed-role
+- assessment_id: mib-lasali-deposited-database-roles
+  area: graph
+  topic: Pathway roles and component mib-lasali-deposited-database-roles
+  outcome: supported
+  summary: Both deposited ATCC31180 proteins and ECO:0000269/PMID18492804 database
+    attribution are supported. pKSL native-versus-clone provenance and DSM aliases
+    remain unresolved as stated. PDB4F84 supports only tagged reference identity;
+    no neighboring nbp function or assembly is inferred.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - graph-mib-lasali-deposited-database-roles
+  - protein-D3KYU2
+  - protein-D3KYU3
+  - pdb4f84
+  dimensions:
+  - name: claim-tier
+    value: qualified database role
+    definition: Evidence tier evaluated for this component, not the native producer
+      claim.
+    evidence_ids:
+    - graph-mib-lasali-deposited-database-roles
+- assessment_id: graph-integrity
+  area: graph
+  topic: Complete graph representation and evidence placement
+  outcome: supported
+  summary: Seven exact-owner components, 20 nodes and 13 directed role edges were
+    read; all edges have evidence and declared endpoints. Thirteen pathway-role entries
+    are qualified individually. Graphs do not combine strains into a single ordered
+    native pathway, claim a shell/cargo mechanism, or promote undefined compound stereochemistry.
+    The three experimental edges remain scientifically unverified in this review.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  evidence_ids:
+  - owner
+  - graph-mib-sgr-native-proposed-roles
+  - graph-mib-sace-native-proposed-roles
+  - graph-mib-ambo-native-proposed-roles
+  - graph-mib-three-canonical-references-coupled-assays
+  - graph-mib-sco7701-database-role
+  - graph-mib-13189-similarity-proposed-role
+  - graph-mib-lasali-deposited-database-roles
+findings:
+- finding_id: F1
+  issue_key: 2mib-occurrence-phormidium-426436-strain-scope
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Species-labelled Phormidium occurrence points to a specific strain taxon
+  description: The occurrence names Phormidium tenue without a strain, but NCBITaxon:426436
+    is Phormidium tenue BDU 40061 in the pinned authority. The inherited LOTUS triple
+    already contains this mismatch, and no scope exception was found in the bounded
+    ignored-inclusive search. It is confirmed that identifier and displayed scope
+    disagree; whether the paper supports BDU40061 or a different taxon is unresolved.
+    Do not claim that the inaccessible paper lacks strain evidence.
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  field_paths:
+  - occurrences[7].taxon_id
+  - occurrences[7].taxon_label
+  evidence_ids:
+  - owner
+  - lotus
+  - taxonomy
+  - taxonomy-search
+  rule_id: 'review-checklist: Occurrences/Producer organisms; docs/HARMONIZATION.md:
+    exact taxon and strain grounding'
+  native_severity: major
+  normalization_reason: Materially different taxonomic scope affects occurrence joins
+    and is not merely spelling drift.
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Imported exact-key organism/reference triple
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_lotus.py
+    role: Taxon mapping and occurrence extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated occurrence emission
+actions:
+- action_id: resolve-phormidium-scope
+  description: Inspect DOI10.1248/CPB.31.659 when legitimately accessible and identify
+    the actual organism/strain. Correct the maintained LOTUS source mapping or implement
+    a tested, source-pinned correction input. Do not silently relabel the occurrence
+    to BDU40061, broaden a strain result, or patch generated YAML.
+  finding_ids:
+  - F1
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Imported exact-key organism/reference triple
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_lotus.py
+    role: Taxon mapping and occurrence extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated occurrence emission
+  acceptance_checks:
+  - Claim-level occurrence evidence establishes exact organism and chemical form.
+  - Identifier and displayed label express the same supported taxonomic scope; no
+    production upgrade.
+  - Regenerated occurrence reproduces; strict, taxonomy correspondence, source provenance
+    and corpus gates pass.
+  generator: scripts/extract_lotus.py and scripts/seed_from_sources.py
+- action_id: finish-primary-and-xref-review
+  description: Complete the outstanding primary occurrence/assay, current BGC, PubChem
+    and pinned chemistry checks when inspectable sources are available; preserve all
+    access stops. Save a successor observation without rewriting this bundle.
+  finding_ids: []
+  target_ids:
+  - naturalproductmech:mibig-0eb8c93c6f
+  ownership_note: Evidence collection only; review does not authorize changing records.
+  acceptance_checks:
+  - Every one of the 13 occurrence triples has source-level support or an explicit
+    evidence-backed disposition.
+  - Three coupled-assay edges are checked against primary text without claiming inaccessible
+    construct/SI details.
+  - Exact PubChem/stereochemical identity and current BGC status checked; required
+    unavailable checks resolved or explicitly retained.
+limitations:
+- Partial scientific assessment, not a scientific pass. Required source and exact-chemistry
+  checks remain unavailable; no native status promotion.
+- The full campaign remains 3115 owner records plus 242 referenced graph components.
+  This report covers one owner, not the unassessed remainder.
+- Cached inventories and sequence records establish only their pinned assertions.
+  Live currentness and experimental support are not inferred from validation or database
+  quality/review labels.
+- 'Review-only scope: no corpus mutation, history event, generated page, GitHub issue,
+  PR or publication was performed.'
+- No cited primary paper was newly accepted as inspected text in this assessment.
+  Eight occurrence DOI attempts failed; ACS/PNAS/IUCr and supplement stops were preserved.
+  Main 202300775 also failed this attempt. These access failures are not evidence
+  that the claims are false.
+- 'All 13 protein checks use cached official records from 2026-10-08/09. This reinspection
+  does not certify current live UniProt/GenBank status or experimental construct identity.
+  Cached raw-source SHA-256 manifest: {"/private/tmp/npmech-next/avi/MIB-Sgr-locus-20261008.json":
+  "54b09b489c222e64239cc1b14fe54952aabf834d58c8e0932739e5613ae2c750", "/private/tmp/npmech-next/avi/MIB-reviewed-20261008.json":
+  "099097d4bc32a4be8c9d70440910f8b35208eafbd90d374ad340fab2882d4a07", "/private/tmp/npmech-next/avi/MIB-GPPMT-reviewed-20261009.json":
+  "d9891906296330a4e4b001d43cff71e4c4dcd80067e2d3ed32667269f1664a3c", "/private/tmp/npmech-next/avi/MIB-SeMIBS-K0K6P8-20261009.json":
+  "ac0bab099b485fb967836bd1c5726e4d3ee6b8a12a5a3b2125f5bd7ee729ae68", "/private/tmp/npmech-next/avi/MIB-SeSp-uniprot-mibs-name-20261009.json":
+  "1d7b98cdc062162432d2d3509ce66888ea7c265705cd6fb24ad5766514ee527d", "/private/tmp/npmech-next/avi/MIB-13189-proteins-20261009.gp":
+  "37712d9dd6f2f6649b8fa68a86763514ff149e4b4afe9eb46a464c1b64684b2e", "/private/tmp/npmech-next/avi/MIB-Ambo-native-20261009.gp":
+  "10bd61c96788578b8b1ce10d87ca219e477d4671d96cf01cc0ed2faf750d4784", "/private/tmp/npmech-next/avi/MIB-Lasali-native-20261009.gp":
+  "09be60760ef2db941d37e4edd8da700150db516e029bcd8563e1cf62a92572f6", "/private/tmp/npmech-next/avi/MIB-SACE-native-20261009.gp":
+  "02c834ac6195daeb787ba18e78581ba5602439336457e7c80cc1f4ea7b86d2c8", "/private/tmp/npmech-next/avi/MIB-SCO-proteins-20261009.gp":
+  "5073e793003489c0dfed9d724c96c030a2519805fa555ec213f3bef81288ec17", "/private/tmp/npmech-next/avi/MIB-SCO7701-proteins-20261009.gp":
+  "a468f47c7074cc5062ab5372c543b083670c0da7e251521980805592813e188b", "/private/tmp/npmech-next/avi/MIB-SeMIBS-genpept-20261009.gp":
+  "4cc6e11fc27693810cbf471956acbb1c497397c23d94b492227033d458963842", "/private/tmp/npmech-next/avi/MIB-SeSp-refseq-20261009.gp":
+  "216c229621af652ff9744909caa871db5f940dc82ded94e865e3799c7c184ea3", "/private/tmp/npmech-next/avi/MIB-Sgr-native-20261008.gp":
+  "8e6ea1e08fea5066ca44148a358684bfb90ea7685ba6fef99505ac567fae36f7", "/private/tmp/npmech-next/avi/MIB-13189-AB040071-full-20261009.gb":
+  "e3e3e8f6b4630644282ba5b2ead1862ce37f409a7975fc6f6f7019edbdb53a21", "/private/tmp/npmech-next/avi/MIB-13189-AB040071-region-20261009.gb":
+  "bfdbfd335617b56595941aa407a4aa359bfceb92b0d609eafb9b9bd1e176be35", "/private/tmp/npmech-next/avi/MIB-Ambo-AM238663-region-20261009.gb":
+  "9c5b11f1c094155bd1f1c7b8fc01a56ce7af179e63abba505a16e18bc2bfef0a", "/private/tmp/npmech-next/avi/MIB-Ambo-CP012382-region-20261009.gb":
+  "4969a42774624b2db84390611375f0740c999ead21387b19a748647e8d1df1ff", "/private/tmp/npmech-next/avi/MIB-Lasali-AB547324-20261009.gb":
+  "aa98470a8e2fd9449f470c7554b7566ffa519e2f97226ccdee834507fe9669b2", "/private/tmp/npmech-next/avi/MIB-SACE-region-20261009.gb":
+  "3284789e28d8f7a56a1371f47eed91e2b6b28b673248d6c1c46e1d30beb8f9f0", "/private/tmp/npmech-next/avi/MIB-SCO-AL939132-region-20261009.gb":
+  "770faaf7defd545743cc98a6d01d739ee501c9150b1566ac4b44d692b57986c3", "/private/tmp/npmech-next/avi/MIB-SCO7701-AB035202-region-20261009.gb":
+  "2bb64c1e344fa45bd738f424e00d8102829f4d23c0224ad73d434084b980699e", "/private/tmp/npmech-next/avi/MIB-SCO7701-AL939132-region-20261009.gb":
+  "66aedd937c8db6b2c74a6d9e26460178ea2827acc7b0c2de781aac070c13732d", "/private/tmp/npmech-next/avi/MIB-SeMIBS-HE804045-region-20261009.gb":
+  "64d2172ac5cd76ac6aeb5071f3ccdf1c37fab7028dcd26364f60ad6578e4df49", "/private/tmp/npmech-next/avi/MIB-Sgr-region-20261008.gb":
+  "e9dbb8a79f2f24083538465168681a5b1d006b48084e3901da044f7acc953f33", "/private/tmp/npmech-next/avi/MIB-SpMIBS-KB913030-region-20261009.gb":
+  "ebdcced34254f412527b16b6cfb5858de2f0385752d3dc48980fd830f13816a8", "/private/tmp/npmech-lasali-4f84-3JF9Yf/entity.json":
+  "43b6c02ffd5d96f52644509495ae0ba7c69a2d477a2da54176dd1f8f208aea59"}'
+notes:
+- 'Guidance conflict resolved in favor of CLAUDE.md and the active profile: the checklist
+  mentions decisions.tsv, but that reserved file is not consumed. Do not use it as
+  an effective correction path.'
