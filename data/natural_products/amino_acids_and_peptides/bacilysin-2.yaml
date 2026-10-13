@@ -44,9 +44,6 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q131238
 bgc_class:
 - OTHER
-xrefs:
-- npatlas:NPA015870
-- pubchem:160175
 producer_taxon_groups:
 - OTHER_BACTERIAL
 producer_organisms:
@@ -86,6 +83,57 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+discussions:
+- discussion_id: source-xref-exclusion-BGC0000888-1-pubchem-160175
+  kind: CONTROVERSY
+  status: RESOLVED
+  prompt: Does the imported pubchem:160175 identify this exact structure?
+  resolution_note: 'MIBiG source row BGC0000888:1 asserts pubchem:160175; the raw
+    inventory is unchanged. This xref is withheld from exact equivalence. PubChem
+    CID160175 represents JJOSOKMLZZVGKD-INVWQFOESA-N with anhydride connectivity,
+    not this XFOUAXMJRHNTOP-PCPUDTNWSA-N peptide owner. Matching formula and name
+    do not establish exact equivalence. No structure, occurrence, assay or producer
+    claim is transferred. See issue #911 and review 20261013T140252Z-bacilysin-2 F1.
+    Source row SHA256 bb86b4afe26dc6155af06d704d3ea0fc7f50fc98a46fa25d4f590628419c89b7.
+    Curator: codex; date: 2026-10-13.'
+  evidence:
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/160175
+    evidence_source: database structure; curator interpretation
+    notes: 'MIBiG source row BGC0000888:1 asserts pubchem:160175; the raw inventory
+      is unchanged. This xref is withheld from exact equivalence. PubChem CID160175
+      represents JJOSOKMLZZVGKD-INVWQFOESA-N with anhydride connectivity, not this
+      XFOUAXMJRHNTOP-PCPUDTNWSA-N peptide owner. Matching formula and name do not
+      establish exact equivalence. No structure, occurrence, assay or producer claim
+      is transferred. See issue #911 and review 20261013T140252Z-bacilysin-2 F1. Source
+      row SHA256 bb86b4afe26dc6155af06d704d3ea0fc7f50fc98a46fa25d4f590628419c89b7.
+      Curator: codex; date: 2026-10-13.'
+- discussion_id: source-xref-exclusion-BGC0000888-1-npatlas-NPA015870
+  kind: CONTROVERSY
+  status: RESOLVED
+  prompt: Does the imported npatlas:NPA015870 identify this exact structure?
+  resolution_note: 'MIBiG source row BGC0000888:1 asserts npatlas:NPA015870; the raw
+    inventory is unchanged. This xref is withheld from exact equivalence. NPAtlas
+    historical version 1 and embedded ClassyFire structure match XFOUAXMJRHNTOP-PCPUDTNWSA-N,
+    but current version 2 is XFOUAXMJRHNTOP-NWQNCHOTSA-N with two additional assigned
+    centers. The unversioned entry is not exact equivalence at the owner''s stereo
+    resolution. Its 1993 reassignment citation (DOI:10.1071/ch9931443) remains a primary-evidence
+    gap; NPAtlas and ChEBI stereo disagreement is unresolved. No centers are filled
+    or authority chosen. See issue #911 and review 20261013T140252Z-bacilysin-2 F1.
+    Source row SHA256 bb86b4afe26dc6155af06d704d3ea0fc7f50fc98a46fa25d4f590628419c89b7.
+    Curator: codex; date: 2026-10-13.'
+  evidence:
+  - reference: https://www.npatlas.org/api/v1/compound/NPA015870?include=classifications
+    evidence_source: database structure; curator interpretation
+    notes: 'MIBiG source row BGC0000888:1 asserts npatlas:NPA015870; the raw inventory
+      is unchanged. This xref is withheld from exact equivalence. NPAtlas historical
+      version 1 and embedded ClassyFire structure match XFOUAXMJRHNTOP-PCPUDTNWSA-N,
+      but current version 2 is XFOUAXMJRHNTOP-NWQNCHOTSA-N with two additional assigned
+      centers. The unversioned entry is not exact equivalence at the owner''s stereo
+      resolution. Its 1993 reassignment citation (DOI:10.1071/ch9931443) remains a
+      primary-evidence gap; NPAtlas and ChEBI stereo disagreement is unresolved. No
+      centers are filled or authority chosen. See issue #911 and review 20261013T140252Z-bacilysin-2
+      F1. Source row SHA256 bb86b4afe26dc6155af06d704d3ea0fc7f50fc98a46fa25d4f590628419c89b7.
+      Curator: codex; date: 2026-10-13.'
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -95,3 +143,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T14:18:13Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

@@ -21,7 +21,9 @@ def inputs():
     rows = [row for row in seed.read_tsv(ROOT / "data/raw/mibig_compounds.tsv")
             if row["mibig_accession"] in ("BGC0000467", "BGC0001055", "BGC0002570")]
     return {"mibig_compounds": rows,
-            "mibig_xref_exclusions": seed.read_tsv(seed.MIBIG_XREF_EXCLUSIONS)}
+            "mibig_xref_exclusions": [
+                d for d in seed.read_tsv(seed.MIBIG_XREF_EXCLUSIONS)
+                if d["source_id"] == "BGC0000467:1"]}
 
 
 def test_exact_owner_only_and_raw_source_preserved(inputs):
@@ -67,6 +69,8 @@ def test_incomplete_decisions_fail(inputs, field, value):
 @pytest.mark.parametrize("field,value", [
     ("source_id", "BGC0000467"), ("xref", "pubchem:0"), ("xref", "CHEBI:1"),
     ("xref", "pubchem:123"), ("reference", "https://"), ("reference", "uncited"),
+    ("xref", "npatlas:NPA15870"), ("xref", "npatlas:npa015870"),
+    ("xref", "NPAtlas:NPA015870"), ("xref", "npatlas:NPA015870.1"),
     ("date", "2026-02-30"), ("date", "20261013"), ("date", "2026-10-13 "),
     ("expected_source_row_sha256", "z" * 64), ("unexpected", "field"),
 ])
@@ -137,6 +141,51 @@ def test_multiple_xrefs_have_independent_decisions(inputs):
                  if d["identifier"] == "naturalproductmech:mibig-5395461679")
     assert owner["xrefs"] == ["npatlas:NPA015861"]
     assert len({d["discussion_id"] for d in owner["discussions"]}) == 3
+
+
+@pytest.fixture
+def bacilysin_inputs():
+    return {
+        "mibig_compounds": [r for r in seed.read_tsv(ROOT / "data/raw/mibig_compounds.tsv")
+                            if r["mibig_accession"] in ("BGC0000888", "BGC0001184")],
+        "mibig_xref_exclusions": [d for d in seed.read_tsv(seed.MIBIG_XREF_EXCLUSIONS)
+                                  if d["source_id"] == "BGC0000888:1"],
+    }
+
+
+def test_bacilysin_withholds_only_two_nonexact_xrefs(bacilysin_inputs):
+    original = deepcopy(bacilysin_inputs)
+    baseline = seed.build_records({"mibig_compounds": bacilysin_inputs["mibig_compounds"]})
+    after = seed.build_records(bacilysin_inputs)
+    owner = next(d for d in after if d["identifier"] == "naturalproductmech:mibig-5044e5068f")
+    assert "xrefs" not in owner
+    discussions = owner.pop("discussions")
+    assert len(discussions) == 2
+    assert len({d["discussion_id"] for d in discussions}) == 2
+    assert all(d["status"] == "RESOLVED" for d in discussions)
+    atlas = next(d for d in discussions if "npatlas" in d["discussion_id"])
+    assert "historical version 1" in atlas["resolution_note"]
+    assert "stereo disagreement is unresolved" in atlas["resolution_note"]
+    owner["xrefs"] = ["npatlas:NPA015870", "pubchem:160175"]
+    assert after == baseline
+    assert original == bacilysin_inputs
+
+
+@pytest.mark.parametrize("failure", ["drift", "missing", "duplicate", "reintroduced"])
+def test_npatlas_exclusions_fail_closed(bacilysin_inputs, failure):
+    rows = bacilysin_inputs["mibig_compounds"]
+    source = next(r for r in rows if r["mibig_accession"] == "BGC0000888")
+    if failure == "drift":
+        source["entry_version"] = "99"
+    elif failure == "missing":
+        bacilysin_inputs["mibig_compounds"].remove(source)
+    elif failure == "duplicate":
+        bacilysin_inputs["mibig_xref_exclusions"].append(
+            deepcopy(bacilysin_inputs["mibig_xref_exclusions"][-1]))
+    else:
+        rows.append({**source, "mibig_accession": "BGC9999999", "database_ids": "npatlas:NPA015870"})
+    with pytest.raises(ValueError):
+        seed.build_records(bacilysin_inputs)
 
 
 def test_yersiniabactin_strain_decisions_preserve_other_claims(inputs):
