@@ -111,6 +111,7 @@ def test_corrected_seed_joins_only_corrected_key(inputs):
     inventories["mibig_compounds"] = inputs[0]
     inventories.pop("mibig_locus_evidence_overrides")
     inventories.pop("mibig_producer_strains")
+    inventories.pop("mibig_producer_isolates")
     inventories.pop("mibig_xref_exclusions")
     inventories.pop("mibig_claim_references")
     inventories.pop("pubchem_bioassay_exclusions")
