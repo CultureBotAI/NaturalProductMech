@@ -1,0 +1,1187 @@
+# Gentamicin exact-owner review: gentamicin-2
+
+- Review: 20261013T221636Z-gentamicin-2
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-13T21:59:46.535669Z
+- Finished UTC: 2026-10-13T22:16:36.313831Z
+- Reviewer: Codex (self_review)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+One major identity-scope finding and one minor missing strain qualification; structure encoding and database grading are internally consistent.
+
+## Scope And Provenance
+
+One exact native owner, all nested assertions and history, and complete resolved mechanism.
+
+Selection: Next pending exact owner in full3115-record campaign; same-label sibling is separately reviewed. No sampling or scope reduction.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: git_commit at Git base 1a61a20211407943dda926467f44c2941a4efb4f.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-b697ac65fb | data/natural_products/carbohydrates/gentamicin-2.yaml | generated | gentamicin |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| gentamicin-2-inspect | passed | True | naturalproductmech:mibig-b697ac65fb | Canonical input inspection before assessment. |
+| strict | passed | True | naturalproductmech:mibig-b697ac65fb | Both exact owners and any referenced components validated with zero errors. |
+| resolved | passed | True | naturalproductmech:mibig-b697ac65fb | Full native read succeeded; neither owner has a graph component. |
+| chemistry | passed | True | naturalproductmech:mibig-b697ac65fb | Pinned RDKit roundtrips and source table/sequence/taxonomy inspection succeeded. |
+| labels | passed | True | naturalproductmech:mibig-b697ac65fb | Full-corpus label gate exited0:13434canonical,646synonym,35exception;499nonblocking mismatches and4649skipped adapters. Not a full scientific identity pass. |
+| local-search | passed | False | naturalproductmech:mibig-b697ac65fb | Ignored-inclusive source/reference search completed. |
+| queue | passed | False | naturalproductmech:mibig-b697ac65fb | Full queue computed to temporary output:8930diagnostic rows covering3115owners. No status or committed queue change. |
+| sources | failed | False | naturalproductmech:mibig-b697ac65fb | Initial chemistry helper unavailable in the project environment (RDKit missing); recovered with pinned isolated runtime and separate native resolved read. |
+| sources-pinned | failed | False | naturalproductmech:mibig-b697ac65fb | First isolated-runtime attempt lacked project import path; no scientific conclusion taken from failure. |
+| sources-pinned-resolved | failed | False | naturalproductmech:mibig-b697ac65fb | Cross-environment native import failed on sysconfig; separated native and chemistry phases, both then succeeded. |
+| imodulondb | failed | False | naturalproductmech:mibig-b697ac65fb | Adapter execution failed: missing dotenv. Official dataset API fallback inspected and no applicable native producer found. |
+| qc | passed | True | naturalproductmech:mibig-b697ac65fb | Fresh full native QC, including corpus shape, history/reference tests, inventory provenance and reproduction. Read the complete receipt/log; deterministic gates are not scientific sign-off. |
+| Exact compound and strain evidence | unavailable | True | naturalproductmech:mibig-b697ac65fb | Full source closure remains incomplete. PubMed25641167 and19362651 challenged; 1963 ACS paper denied403;1975A3 paper tool-inaccessible. No alternate full-paper retrieval. Wikidata organism IDs were denied403. These limits preclude completed status. |
+
+## Scientific And Domain Assessments
+
+### Individual compound versus complex/congener
+
+identity: concern. Targets: naturalproductmech:mibig-b697ac65fb.
+
+The generic gentamicin label hides an X2-connectivity record with all14tetrahedral centers unspecified. It is not the gentamicin C mixture. The cited2015abstract is X2-specific, but exact experimental assignment to this stereo-unspecified owner remains partial. Do not merge it with the BDTQ owner or install CID15574862 as exact identity.
+
+### Encoded chemistry and stereochemical resolution
+
+consistency: supported. Targets: naturalproductmech:mibig-b697ac65fb.
+
+SMILES, InChI and InChIKey are internally consistent. stereo_complete:false correctly exposes14unassigned centers; no automatic completion is justified.
+
+### ChEBI, exact xrefs and sibling boundaries
+
+grounding: supported. Targets: naturalproductmech:mibig-b697ac65fb.
+
+Pinned ChEBI inventory has no exact-key match; minted identity is faithful to source resolution. No xrefs, parent, congener or related_records are asserted. A stereo-resolved X2 registry or sibling record cannot be adopted as an exact match to this key.
+
+### Filing, chemistry, taxonomy and origin axes
+
+representation: supported. Targets: naturalproductmech:mibig-b697ac65fb.
+
+CARBOHYDRATES, Polyols and glycoside=true reproduce the pinned NPClassifier version; SACCHARIDE is a separate MIBiG biosynthetic class. ACTINOBACTERIAL follows Micromonospora taxonomy. These axes neither identify a congener nor independently prove natural origin.
+
+### Natural origin and producer evidence
+
+scope: concern. Targets: naturalproductmech:mibig-b697ac65fb.
+
+A natural gentamicin-family origin is consistent with the sources, but exact compound assignment is limited as detailed in F1. SOURCE_ASSERTION is not inflated to direct experimental proof. Deposited strain context is missing (F2).
+
+### Exact active BGC and sequence versions
+
+provenance: supported. Targets: naturalproductmech:mibig-b697ac65fb.
+
+BGC0001603v3 is active, names gentamicin, and supplies the exact imported structure and locus. Zero/unstated source bounds remain unstated. CLUSTER_UNSTATED matches empty methods. DSM43036 andATCC15835 are equivalent collection designations, not a strain conflict; AY524043/AJ628149/KY971520 are distinct deposits and are not asserted to be experimentally interchangeable.
+
+### Claim-level occurrence citations
+
+evidence: not_applicable. Targets: naturalproductmech:mibig-b697ac65fb.
+
+No occurrence object is asserted; no absence of literature evidence is inferred.
+
+### Pure-compound bioactivity and summaries
+
+evidence: not_applicable. Targets: naturalproductmech:mibig-b697ac65fb.
+
+No activity, summary or molecular target is asserted.
+
+### Complete mechanism and protein examples
+
+graph: not_applicable. Targets: naturalproductmech:mibig-b697ac65fb.
+
+No inline graph, graph ref, pathway step or protein example is present in the full resolved owner. Native absence of optional graphs is not a finding, and not a claim that literature lacks mechanisms. No homolog, cloning host or expression module is treated as native mechanistic proof.
+
+### Clinical assertions, datasets and other optional fields
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-b697ac65fb.
+
+No clinical-status object, dataset, parent-compound or congener relationship is asserted. Optional omissions alone are not defects. The clinical-dose deposit is not a licence to add a regulatory approval claim.
+
+### Status, audit trail and maintained ownership
+
+provenance: supported. Targets: naturalproductmech:mibig-b697ac65fb.
+
+SEEDED is retained. Seed events describe generated inputs; no saved review promotes status. Corrections belong in implemented input tables or reviewed extractor/seeder behavior, never direct edits of the generated owner or page.
+
+## Findings
+
+### F1: Generic gentamicin name obscures the X2 precursor and unresolved stereochemical scope
+
+major / open / confirmed; issue key: gentamicin-2-exact-product-assignment.
+
+HFLK connectivity matches the X2 candidate, not the clinically used C complex. Both the2015cited abstract and2004Figure3 distinguish that precursor. No specific congener label or qualification is present. Exact stereochemical and experimental strain attribution remain incomplete; this is not a demand to invent stereo or evidence grades.
+
+### F2: Producer omits the deposited strain qualification
+
+minor / open / confirmed; issue key: gentamicin-2-deposited-strain-context.
+
+KY971520.1 source feature supplies ATCC 15835, whereas the record gives only species1877. DSMZ lists DSM43036 andATCC15835 as equivalent collection numbers; this is lost context, not evidence of mismatched strains. A strain qualification alone does not prove this exact metabolite is produced.
+
+## Recommended Actions And Acceptance Checks
+
+### A1
+
+Adjudicate the exact congener against primary structure evidence and source-version provenance. Preserve the raw generic label, then implement a tested maintained qualification or correction path for the reviewed product. Do not merge the two owners, transfer mixture claims, replace with a stereo-different CID, or use reserved decisions.tsv. A source correction requiring a non-ChEBI destination needs separately implemented ownership/migration logic.
+
+- Primary evidence resolves named congener and supported stereochemical resolution.
+- Every producer, occurrence, xref and assay is re-audited for the selected exact structure.
+- Future tests prove no silent same-name merge or transfer between BDTQ and HFLK; reproduction and native gates pass.
+
+### A2
+
+Add a reviewed BGC0001603:1 qualification for ATCC 15835 citing KY971520.1 and exact source-row hash. Preserve taxon, database assertion, grades, chemical identity and BGC fields. Mention collection equivalence only with the inspected DSMZ source.
+
+- Source-row pin and deposited spelling are exact.
+- Only strain and separate curator qualification evidence change; no grade or scientific-status promotion.
+- Canary and full reproduction/native gates pass.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| rules | docs/HARMONIZATION.md; Unit of corpus, exact identity, producer/occurrence and filing sections | supports | One owner denotes one chemical structure, not a mixture or generic class. Computed filing, taxonomy, natural origin and BGC evidence are separate axes. |
+| ownership | docs/CURATION.md; Implemented corrections and REVIEWED gate | supports | Generated claims require maintained input changes. The strain and xref tables are implemented and complete-row pinned. decisions.tsv is unconsumed; existing structure replacement only supports an unoccupied exact ChEBI destination. |
+| inventories | data/raw/mibig_compounds.tsv; inspection.json source_rows per owner; source input hashes retained | supports | Both exact source rows, classifier rows, all matching LOTUS/assay/sibling rows and absence of exact-key ChEBI grounding were inspected with structured TSV parsers. No exact-key AntibioticMech join is present; connectivity-only gentamicin X is not equivalent. |
+| chemistry | /private/tmp/npmech-gentamicin-review-c2YN3q/inspection.json; records chemistry; structures.png visually inspected | supports | Pinned RDKit2026.03.5 roundtrips both SMILES to their recorded InChI and key. HFLKNINDVFJPQT has C19H38N4O10 and14 unassigned centers; BDTQHFBWYNCGHN has C18H36N4O10 and14 assigned centers. Both neutral. Internal agreement does not establish biological identity. |
+| pubchem | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/72396,15574862/property/InChI,InChIKey,MolecularFormula,IsomericSMILES/JSON; Official properties for both CIDs; original retrieval 2026-10-13T22:00:44.082843Z..2026-10-13T22:00:44.942044Z, HTTP 200; payload /private/tmp/npmech-gentamicin-review-c2YN3q/pubchem.json; receipt SHA256 812b00d278a1488738eedbd671c8247ecfd20b609b2e30917aab4f906cbc8f6d. accessed_at records local reinspection. | supports | CID72396 is VEGXETMJINRLTH-BOZYPMBZSA-N/C19H39N5O7, not the BDTQ owner. CID15574862 is HFLKNINDVFJPQT-ZFAMMYHGSA-N/C19H38N4O10; it shares connectivity, not stereochemical identity, with the HFLK owner. |
+| pubchem-a3 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/86490/property/InChI,InChIKey,MolecularFormula,IsomericSMILES/JSON; CID86490 properties; original retrieval 2026-10-13T22:03:22.935227Z..2026-10-13T22:03:23.454929Z, HTTP 200; payload /private/tmp/npmech-gentamicin-review-c2YN3q/pubchem-A3.json; receipt SHA256 69be490e975e8cba3223ef6641f1cbe0e82a03f436469c589e6223c0fedd1eb5. accessed_at records local reinspection. | supports | CID86490 has BDTQHFBWYNCGHN-UHFFFAOYSA-N: connectivity matches the BDTQ owner but stereo does not. It is a candidate for identity research, not an exact replacement xref. |
+| names | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/72396,15574862,86490/synonyms/JSON; CID-specific depositor synonyms; original retrieval 2026-10-13T22:03:46.600538Z..2026-10-13T22:03:47.001206Z, HTTP 200; payload /private/tmp/npmech-gentamicin-review-c2YN3q/synonyms.json; receipt SHA256 564f043ce175dc62127f696b26632420a129bd400b872d97d464e9b680ee178f. accessed_at records local reinspection. | supports | Registry synonyms name CID72396 gentamicin C1a, CID15574862 gentamicin X2 and CID86490 gentamicin A3. These are database names, not independent experimental structure determination. |
+| taxonomy | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=1873,1877&amp;retmode=xml; TaxId, ScientificName, Rank and Lineage; original retrieval 2026-10-13T22:01:14.410602Z..2026-10-13T22:01:14.730413Z, HTTP 200; payload /private/tmp/npmech-gentamicin-review-c2YN3q/taxonomy.xml; receipt SHA256 7933ab22627b953b862d2007877919844b891501ca2b5e545613c3e1ca230dbc. accessed_at records local reinspection. | supports | NCBITaxon1873 resolves to genus Micromonospora and1877 to species Micromonospora echinospora; both are within Actinomycetota. This supports the taxonomic grouping, not the exact-product attribution. |
+| sequences | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&amp;id=AJ628149.4,KY971520.1&amp;rettype=gbwithparts&amp;retmode=xml; Source features and references of both exact accession versions; original retrieval 2026-10-13T22:00:45.134607Z..2026-10-13T22:00:45.780343Z, HTTP 200; payload /private/tmp/npmech-gentamicin-review-c2YN3q/sequences.xml; receipt SHA256 8f1094d122aa9f5c2bc866a600cb21e210eb4e038e8637b63d30b8e08dded1a4. accessed_at records local reinspection. | supports | AJ628149.4 is deposited with strain DSM43036; KY971520.1 with ATCC15835 and culture_collection ATCC:15835. Both use taxon1877 and have unpublished/direct-submission references. The deposits establish sequence context, not the experimental identity of a product. |
+| primary2004 | https://www.jstage.jst.go.jp/article/antibiotics1968/57/7/57_7_436/_pdf/-char/en; DOI10.7164/antibiotics.57.436, all ten pages text inspected; Table1 p437, Figure2 p442 and Figure3 p443 visually inspected; original retrieval 2026-10-13T22:00:54.909277Z..2026-10-13T22:00:58.396615Z, HTTP 200; payload /private/tmp/npmech-gentamicin-review-c2YN3q/primary2004.pdf; receipt SHA256 695767ce0bc23d65185cd4c50e897d8fd5ad18f2839bf2c292f3b69df817e29f. accessed_at records local reinspection. | supports | Unwin et al. study the gentamicin C complex in ATCC15835 using a gntB insertion and an immunoassay. The deposited sequence named in Methods is AY524043. Figure3 distinguishes A/A2/X2 intermediates from C congeners; it presents predicted enzyme assignments. This does not identify the BDTQ graph as their measured product. |
+| dsmz | https://webshop.dsmz.de/en/bacteria/Micromonospora-echinospora-subsp-echinospora-oxid-2.html; DSM No. and Other collection no.; official web page inspected during this review; accessed_at is reinspection of returned source text | supports | DSMZ explicitly lists ATCC15835 among the equivalent collection numbers for DSM43036. Different collection labels therefore do not prove different strains. Different sequence deposits still need exact locus mapping. |
+| np-atlas | https://www.npatlas.org/api/v1/compound/NPA009026?include=classifications; Official export linked from compound page; inchikey/inchi/smiles/formula, origin and mol_structures; version2024_09. Returned API text reinspected; not redistributed. | supports | NPA009026 (resolving the shorter NPA09026 alias) exactly matches BDTQHFBWYNCGHN-CUYCKOLISA-N and its molecular formula. The origin is Micromonospora sp. and DOI10.1021/jm00340a034. Exact database agreement is retained; it does not validate the historical assignment to the complex. |
+| primary2015-abstract | https://hero.epa.gov/reference/7214436/; Huang et al., PMID25641167, DOI10.1016/j.chembiol.2014.12.012; primary abstract reproduced by EPA HERO. PubMed page displayed reCAPTCHA; no challenge bypass or full-paper retrieval. | partial | The reproduced primary abstract identifies gentamicin X2 as a precursor of the C complex and reports native mutations plus enzyme reconstitution. Only that abstract was inspected; the paper, figures, supplements and exact experimental strain were not verified. |
+| imodulondb | https://imodulondb.org/api/datasets; Complete /api/datasets response; original retrieval 2026-10-13T22:01:44.594107Z..2026-10-13T22:01:44.975219Z, HTTP 200; payload /private/tmp/npmech-gentamicin-review-c2YN3q/imodulondb-datasets.json; receipt SHA256 16c98a92c967c309fdc80c50075e8387259c4ec683fd0b3169a79c4b36f80378. accessed_at records local reinspection. | supports | Official inventory contains20 organism entries and no Micromonospora dataset. Native transcriptomic cross-check is not applicable; E.coli cloning-host data are not evidence for this producer. Adapter failed on missing dotenv, so the official dataset API was inspected. |
+| local-search | /private/tmp/npmech-gentamicin-review-c2YN3q/local-search.log; Full recorded command and log; .git metadata excluded, ignored source files included; compressed files not claimed to be text-exhaustive | supports | Ignored/hidden-inclusive repository search found the two owners, source rows and derived/historical coverage references. Both complete resolved records have no inline or referenced graphs. No prior canonical review targets these two owner IDs in the validated48-observation checkpoint. |
+| baseline | /private/tmp/npmech-gentamicin-review-c2YN3q/capture.json; prepare.py assertions, base commit and exact-target inspections | supports | The prior checkpoint was revalidated against all3115owner files,243components and48immutable YAML/Markdown pairs before this assessment. Same-label candidate selection does not prejudge equivalence. |
+| assay | https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1195/JSON?cid=72396; PC_AssaySubmit.assay.descr.protocol/results and data[0]; original dose units retained in source, not converted to MIC; original retrieval 2026-10-13T22:01:13.729676Z..2026-10-13T22:01:14.195513Z, HTTP 200; payload /private/tmp/npmech-gentamicin-review-c2YN3q/assay1195-cid72396.json; receipt SHA256 4e0949e9625ee728f4707bdd638627902199679984cb91653374c4d2160bd8f0. accessed_at records local reinspection. | supports | AID1195 assigns Active to every substance with a reported maximum recommended daily dose. The CID72396 query returns SID48416051 and dose metadata, not a pure-BDTQ-compound assay. This administrative outcome is not positive biological activity. |
+| assay-owner | scripts/extract_pubchem_bioassay.py; cid_to_key; rows_from_summary; scripts/seed_from_sources.py bioactivities loop | supports | cid_to_key trusts owner xrefs and associates a CID with an owner key without chemical revalidation. rows_from_summary admits a named positive call without protocol-level meaning. The seeder then emits ACTIVE from the stored outcome. |
+| owner | data/natural_products/carbohydrates/gentamicin-2.yaml; Complete raw YAML and read_natural_product result | supports | The entire owner, every nested claim, history and complete resolved view were read. Target selection is by exact path and identifier; the sibling is context only. |
+| mibig | https://mibig.secondarymetabolites.org/repository/BGC0001603.3/annotations.json; Full exact version JSON, including all compound evidence and legacy references; original retrieval 2026-10-13T22:00:29.607408Z..2026-10-13T22:00:30.813519Z, HTTP 200; payload /private/tmp/npmech-gentamicin-review-c2YN3q/BGC0001603.3.json; receipt SHA256 e7311aef1ffeb81c046a98a914dd8e74009a5e909fa0dbc36923b5e6440dd921. accessed_at records local reinspection. | supports | BGC0001603 version3 is active and matches the imported chemical graph, taxon, saccharide class and genome accession. Locus evidence methods are empty; SOURCE_ASSERTION and CLUSTER_UNSTATED accurately preserve that database tier. Quality/reviewer placeholders are not truth signals. |
+
+## Limits And Additional Notes
+
+- Full exact-product evidence remains incomplete; inaccessible1963and1975papers cannot be treated as refutation.2015primary abstract only; no full experimental or stereochemical adjudication.
+- PMID19362651 is a source-level additional reference whose content was not inspected after a PubMed challenge; no mechanistic claims are inferred from it.
+- Wikidata Q3061522 andQ6839685 returned403. Independent NCBI taxon verification does not recover those mappings.
+- Web-only source text was reinspected while authoring; accessed_at for those entries records that local reinspection, not an invented exact original request timestamp. HTTP payload receipts retain actual timestamps.
+- The label gate has499warnings and4649adapter skips across the corpus; it is not a chemical-identity or primary-evidence certificate.
+- Only new review artifacts are written. No record, component, inventory, page, history or native status was modified; no GitHub mutation was performed.
+- Source hashes match both the reviewed working tree and base commit; this observation explicitly assesses that immutable revision.
+- Same-label structures are not duplicates: retain their distinct keys pending exact product adjudication.
+- The record contains no clinical or molecular-target claim; the broader gentamicin literature does not authorize importing those mechanisms here.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261013T221636Z-gentamicin-2
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Gentamicin exact-owner review: gentamicin-2'
+started_at: '2026-10-13T21:59:46.535669Z'
+finished_at: '2026-10-13T22:16:36.313831Z'
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: self_review
+  independence_basis: Same assistant performing the ongoing campaign, not independent
+    human sign-off.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+native_verdict: SEEDED retained; exact-product REVIEWED gate not met
+scientific_review: true
+summary: One major identity-scope finding and one minor missing strain qualification;
+  structure encoding and database grading are internally consistent.
+source:
+  git_revision: 1a61a20211407943dda926467f44c2941a4efb4f
+  state: git_commit
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: 49e2ab03c7e82013e9d68356de2c9965c9f8517a3408a44124076f4ca1b529cd
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/decisions.tsv
+    sha256: 7214a74975fb2cb65521da18dd14ea1c65665f50060106976dc0db9caf887805
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f3f808ad1e58d79947aa82ecf1272e465cfbef57e5a4cd646731af23bb48ce75
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: a1eb14fec4a7cee0c2fc25c43091e75af24ae62c44c4f7659ed7aedf0e6a0e6c
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: 1cdea1a2338304087cb64ee0eedac76e6e0adb97babed2c64d808eda4835225c
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: 5b1edc057cdcc732f61de2964cd175fa3bc2dca929c5d2823142f61313545a7e
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: ac01b66bb97bc2c4e16558227fed641e28daa3c5926a09e213e98c38a09856a2
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: bf38e4f0c7e4bcbdf184a4e7b8b024752251e8f34c015c0b82cedca98a8a5729
+    role: context
+  - path: data/natural_products/carbohydrates/gentamicin-2.yaml
+    sha256: d8874c3afabccc354db48d576775c0e937ff016ab0f7802485794e7d380e2da8
+    role: target
+  - path: data/natural_products/carbohydrates/gentamicin.yaml
+    sha256: 979381b11a22b8754a0dc1eb29a950f09757c20a705a0762064fd7f97f067dc1
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: 373f049029be3db137e062ff5f872a2400a9d5b423f3e108ea44ebde2f8dcc7d
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: 7b9b9f78f5b14aea9fabb163bbaa9e842920a7e9b07deac8f98c97666e9e23fc
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: aba5606d7e5e7c2887e66294655db26a10e853a42893d71aab8f015dc9b91c71
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: pyproject.toml
+    sha256: 02505a46585e870eac7333f31a6773df51465ef13969d4d490fbc0247931d85c
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_lotus.py
+    sha256: 8a8c524f60f85d2bb54412ca055a6a45e0d37ec5f4584d8d70be454b8f664290
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/extract_pubchem_bioassay.py
+    sha256: 24f9d794e7cf97c420351cb751f8767f7d81a5f22aed01669b2318d6755e7c00
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/run_qc.py
+    sha256: ff44ed3e40a9b3582eb84e38a81301745ae80d16445756d09a7efb2a480b1abb
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 21fd298fb528f1179286125bc3d12f36ae72ca6c1e0f783cf94dcace2648f292
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: 6026ddca19f0989d499b1681f7724fbab23918de8d3957750b49bbfe1a9c0bff
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: a8b8834788b4714cf1cb0d1cc410d5c2f88112a32ad8621c8e043f0a4bc38a9d
+    role: context
+  - path: src/naturalproductmech/curate/xref_exclusions.py
+    sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/history.yaml
+    sha256: b01b06f1b9a37db205c26c31ec0fd910690848507c7e1bfb73b424ac0829c52d
+    role: context
+  - path: src/naturalproductmech/schema/mech_shared.yaml
+    sha256: c2e7054fd32635e380c698282bd886a9105861009b9f0474f02bb1b80865e895
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: uv.lock
+    sha256: c62a5739e3ffeb12cc57b3bf12a31dcf9cdfbf00b417f4ba3a801d51ef9efbe3
+    role: context
+scope:
+  description: One exact native owner, all nested assertions and history, and complete
+    resolved mechanism.
+  selection: Next pending exact owner in full3115-record campaign; same-label sibling
+    is separately reviewed. No sampling or scope reduction.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  exclusions:
+  - target: Other3114owners and their components
+    reason: Outside this one-owner observation, not excluded from the full campaign;
+      unassessed and partial work remain pending.
+targets:
+- target_id: naturalproductmech:mibig-b697ac65fb
+  path: data/natural_products/carbohydrates/gentamicin-2.yaml
+  label: gentamicin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Imported chemical, producer and cluster assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Imported structure-organism-reference triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Pinned ChEBI grounding inventory
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_origins.tsv
+    role: Pinned ChEBI occurrence inventory
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/antibioticmech_inchikeys.tsv
+    role: Pinned sibling exact-structure joins
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated harmonization and grading
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: MIBiG extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_lotus.py
+    role: LOTUS extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Implemented pinned structure corrections
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Implemented exact-context method corrections
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Implemented pinned strain qualifications
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_xref_exclusions.tsv
+    role: Implemented complete-row-pinned PubChem and NPAtlas exclusions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Imported compound-specific assay observations
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_pubchem_bioassay.py
+    role: BioAssay extraction
+checks:
+- check_id: gentamicin-2-inspect
+  name: gentamicin-2-inspect
+  status: passed
+  required: true
+  command: uv run python scripts/record_review.py inspect --targets /private/tmp/npmech-gentamicin-review-c2YN3q/gentamicin-2-targets.json
+    --input .claude/skills/curate-yaml-record/references/review-checklist.md --input
+    .claude/skills/review-yaml-record/SKILL.md --input CLAUDE.md --input conf/id_label_targets.yaml
+    --input conf/producer_evidence.tsv --input conf/record_review.yaml --input curation/decisions.tsv
+    --input curation/mibig_claim_references.tsv --input curation/mibig_locus_evidence_overrides.tsv
+    --input curation/mibig_producer_strains.tsv --input curation/mibig_structure_corrections.tsv
+    --input curation/mibig_xref_exclusions.tsv --input data/natural_products/PATHS.tsv
+    --input data/natural_products/carbohydrates/gentamicin-2.yaml --input data/natural_products/carbohydrates/gentamicin.yaml
+    --input data/raw/MANIFEST.yaml --input data/raw/antibioticmech_inchikeys.tsv --input
+    data/raw/chebi_origins.tsv --input data/raw/chebi_structures.tsv --input data/raw/corpus_taxa.obo
+    --input data/raw/lotus_occurrences.tsv --input data/raw/mibig_compounds.tsv --input
+    data/raw/npclassifier.tsv --input data/raw/pubchem_bioassay.tsv --input docs/CURATION.md
+    --input docs/HARMONIZATION.md --input docs/record-review-profile.md --input docs/record-reviews.md
+    --input justfile --input pyproject.toml --input schema/record_review.yaml --input
+    scripts/extract_lotus.py --input scripts/extract_mibig.py --input scripts/extract_pubchem_bioassay.py
+    --input scripts/record_review.py --input scripts/run_qc.py --input scripts/seed_from_sources.py
+    --input src/naturalproductmech/curate/producer_strains.py --input src/naturalproductmech/curate/structure_corrections.py
+    --input src/naturalproductmech/curate/xref_exclusions.py --input src/naturalproductmech/graph_components.py
+    --input src/naturalproductmech/schema/history.yaml --input src/naturalproductmech/schema/mech_shared.yaml
+    --input src/naturalproductmech/schema/naturalproductmech.yaml --input uv.lock
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  summary: Canonical input inspection before assessment.
+  scope_note: Actual run 2026-10-13T21:59:46.547020Z..2026-10-13T21:59:48.763057Z;
+    log /private/tmp/npmech-gentamicin-review-c2YN3q/gentamicin-2-inspect.json; SHA256
+    cfb95a3f32c2b13942513357bd2b6f0dd7e5a003a6614675c392eeb9311db046
+- check_id: strict
+  name: strict
+  status: passed
+  required: true
+  command: just validate-strict data/natural_products/carbohydrates/gentamicin-2.yaml
+    data/natural_products/carbohydrates/gentamicin.yaml --out /private/tmp/npmech-gentamicin-review-c2YN3q/strict.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  summary: Both exact owners and any referenced components validated with zero errors.
+  scope_note: Actual run 2026-10-13T22:01:43.288282Z..2026-10-13T22:01:48.516012Z;
+    log /private/tmp/npmech-gentamicin-review-c2YN3q/strict.log; SHA256 5c44a9f407747b58df42df3a23227ef356fecad4461c6ea4465cd41759f2f463
+- check_id: resolved
+  name: resolved
+  status: passed
+  required: true
+  command: uv run python -c 'import json; from pathlib import Path; from naturalproductmech.graph_components
+    import read_natural_product; w=Path('"'"'/private/tmp/npmech-gentamicin-review-c2YN3q'"'"');
+    [(w/f'"'"'{s}-resolved.json'"'"').write_text(json.dumps(read_natural_product(Path(f'"'"'data/natural_products/carbohydrates/{s}.yaml'"'"')),indent=2))
+    for s in ('"'"'gentamicin-2'"'"','"'"'gentamicin'"'"')]; print('"'"'Both complete
+    resolved owners captured.'"'"')'
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  summary: Full native read succeeded; neither owner has a graph component.
+  scope_note: Actual run 2026-10-13T22:03:01.083199Z..2026-10-13T22:03:02.718829Z;
+    log /private/tmp/npmech-gentamicin-review-c2YN3q/resolved.log; SHA256 aa4d786ca7ff8d146440d2e32aaa4b8848bed377bb7cdc101729e1716ac85915
+- check_id: chemistry
+  name: chemistry
+  status: passed
+  required: true
+  command: env RDBASE=/private/tmp/npmech-rdkit-2026.03.5/share/RDKit PYTHONPATH=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/lib/python3.13/site-packages
+    /private/tmp/npmech-rdkit-2026.03.5/bin/python /private/tmp/npmech-gentamicin-review-c2YN3q/inspect_sources.py
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  summary: Pinned RDKit roundtrips and source table/sequence/taxonomy inspection succeeded.
+  scope_note: Actual run 2026-10-13T22:03:12.015914Z..2026-10-13T22:03:13.708656Z;
+    log /private/tmp/npmech-gentamicin-review-c2YN3q/chemistry.log; SHA256 fd2380b23db14e4a05e517e9a50801cf5cebc36c23a5ee2454546b984712d113
+- check_id: labels
+  name: labels
+  status: passed
+  required: true
+  command: just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  summary: Full-corpus label gate exited0:13434canonical,646synonym,35exception;499nonblocking
+    mismatches and4649skipped adapters. Not a full scientific identity pass.
+  scope_note: Actual run 2026-10-13T21:59:52.482310Z..2026-10-13T22:01:47.865417Z;
+    log /private/tmp/npmech-gentamicin-review-c2YN3q/labels.log; SHA256 19a4f6cca7894851de23ee2062f52d29b32def53c7b4f59edbc6c45ec4ce9828
+- check_id: local-search
+  name: local-search
+  status: passed
+  required: false
+  command: rg --no-ignore --hidden -l -i 'gentamicin|HFLKNINDVFJPQT|BDTQHFBWYNCGHN|BGC0000696|BGC0001603'
+    . -g '!.git/**'
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  summary: Ignored-inclusive source/reference search completed.
+  scope_note: Actual run 2026-10-13T22:01:42.085389Z..2026-10-13T22:01:43.221446Z;
+    log /private/tmp/npmech-gentamicin-review-c2YN3q/local-search.log; SHA256 d147b60d0a5e1985cf36e01035bbb281ec1fc5b437e3058116eca7430165663b
+- check_id: queue
+  name: queue
+  status: passed
+  required: false
+  command: just review-queue --tsv /private/tmp/npmech-gentamicin-review-c2YN3q/review-queue.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  summary: Full queue computed to temporary output:8930diagnostic rows covering3115owners.
+    No status or committed queue change.
+  scope_note: Actual run 2026-10-13T22:04:12.374962Z..2026-10-13T22:04:53.469381Z;
+    log /private/tmp/npmech-gentamicin-review-c2YN3q/queue.log; SHA256 0110fba1f2e652e18596932e99cd3d930576fac4e429f258ef4e52619e5dbc64
+- check_id: sources
+  name: sources
+  status: failed
+  required: false
+  command: uv run python /private/tmp/npmech-gentamicin-review-c2YN3q/inspect_sources.py
+  exit_code: 1
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  summary: Initial chemistry helper unavailable in the project environment (RDKit
+    missing); recovered with pinned isolated runtime and separate native resolved
+    read.
+  scope_note: Actual run 2026-10-13T22:01:41.705212Z..2026-10-13T22:01:41.872744Z;
+    log /private/tmp/npmech-gentamicin-review-c2YN3q/sources.log; SHA256 b92a7c451c164148f1c3963d251b8a3b73aba8ef0745802a0de05b213aea3f79
+- check_id: sources-pinned
+  name: sources-pinned
+  status: failed
+  required: false
+  command: env RDBASE=/private/tmp/npmech-rdkit-2026.03.5/share/RDKit PYTHONPATH=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/lib/python3.13/site-packages
+    /private/tmp/npmech-rdkit-2026.03.5/bin/python /private/tmp/npmech-gentamicin-review-c2YN3q/inspect_sources.py
+  exit_code: 1
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  summary: First isolated-runtime attempt lacked project import path; no scientific
+    conclusion taken from failure.
+  scope_note: Actual run 2026-10-13T22:02:09.045365Z..2026-10-13T22:02:10.583331Z;
+    log /private/tmp/npmech-gentamicin-review-c2YN3q/sources-pinned.log; SHA256 7c287951d5292b2c7144b333efe53b682d54a76b4f71ab7859cbd78a9ce5443d
+- check_id: sources-pinned-resolved
+  name: sources-pinned-resolved
+  status: failed
+  required: false
+  command: env RDBASE=/private/tmp/npmech-rdkit-2026.03.5/share/RDKit PYTHONPATH=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/src:/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/lib/python3.13/site-packages
+    /private/tmp/npmech-rdkit-2026.03.5/bin/python /private/tmp/npmech-gentamicin-review-c2YN3q/inspect_sources.py
+  exit_code: 1
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  summary: Cross-environment native import failed on sysconfig; separated native and
+    chemistry phases, both then succeeded.
+  scope_note: Actual run 2026-10-13T22:02:41.919733Z..2026-10-13T22:02:43.206037Z;
+    log /private/tmp/npmech-gentamicin-review-c2YN3q/sources-pinned-resolved.log;
+    SHA256 1d4e86ced1fe97e48130e0c0fe8135ba8ac44b705b78efac5d103614ca5b0105
+- check_id: imodulondb
+  name: imodulondb
+  status: failed
+  required: false
+  command: env PYTHONPATH=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/culturebotai-claw/src
+    /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    -m kg_microbe_sources imodulondb datasets
+  exit_code: 1
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  summary: 'Adapter execution failed: missing dotenv. Official dataset API fallback
+    inspected and no applicable native producer found.'
+  scope_note: Actual run 2026-10-13T22:00:30.753626Z..2026-10-13T22:00:30.976942Z;
+    log /private/tmp/npmech-gentamicin-review-c2YN3q/imodulondb.log; SHA256 be13fff4b31d02f3b7fe45bd95889a11a4a599b3cc24b788b0908e41038d92dc
+- check_id: qc
+  name: qc
+  status: passed
+  required: true
+  command: just qc
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  summary: Fresh full native QC, including corpus shape, history/reference tests,
+    inventory provenance and reproduction. Read the complete receipt/log; deterministic
+    gates are not scientific sign-off.
+  scope_note: Actual run 2026-10-13T21:59:51.311292Z..2026-10-13T22:15:28.491962Z;
+    log /private/tmp/npmech-gentamicin-review-c2YN3q/qc.log; SHA256 e7e6a96fd8d038c2fdb1c8f948673677278f75eeac6719b8989c54fd163618d2
+- check_id: required-literature
+  name: Exact compound and strain evidence
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  summary: Full source closure remains incomplete. PubMed25641167 and19362651 challenged;
+    1963 ACS paper denied403;1975A3 paper tool-inaccessible. No alternate full-paper
+    retrieval. Wikidata organism IDs were denied403. These limits preclude completed
+    status.
+evidence:
+- evidence_id: rules
+  kind: record_content
+  reference: docs/HARMONIZATION.md
+  locator: Unit of corpus, exact identity, producer/occurrence and filing sections
+  accessed_at: '2026-10-13T22:16:34.049280Z'
+  support: supports
+  summary: One owner denotes one chemical structure, not a mixture or generic class.
+    Computed filing, taxonomy, natural origin and BGC evidence are separate axes.
+  snapshot_sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+- evidence_id: ownership
+  kind: record_content
+  reference: docs/CURATION.md
+  locator: Implemented corrections and REVIEWED gate
+  accessed_at: '2026-10-13T22:16:34.049848Z'
+  support: supports
+  summary: Generated claims require maintained input changes. The strain and xref
+    tables are implemented and complete-row pinned. decisions.tsv is unconsumed; existing
+    structure replacement only supports an unoccupied exact ChEBI destination.
+  snapshot_sha256: aba5606d7e5e7c2887e66294655db26a10e853a42893d71aab8f015dc9b91c71
+- evidence_id: inventories
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: inspection.json source_rows per owner; source input hashes retained
+  accessed_at: '2026-10-13T22:16:34.050021Z'
+  support: supports
+  summary: Both exact source rows, classifier rows, all matching LOTUS/assay/sibling
+    rows and absence of exact-key ChEBI grounding were inspected with structured TSV
+    parsers. No exact-key AntibioticMech join is present; connectivity-only gentamicin
+    X is not equivalent.
+  snapshot_sha256: 47fb0302f9b214192dfdc03dfa5bc8918bd8db6c5c2748e6410fdd0a859139d5
+- evidence_id: chemistry
+  kind: validation
+  reference: /private/tmp/npmech-gentamicin-review-c2YN3q/inspection.json
+  locator: records chemistry; structures.png visually inspected
+  accessed_at: '2026-10-13T22:16:34.050199Z'
+  support: supports
+  summary: Pinned RDKit2026.03.5 roundtrips both SMILES to their recorded InChI and
+    key. HFLKNINDVFJPQT has C19H38N4O10 and14 unassigned centers; BDTQHFBWYNCGHN has
+    C18H36N4O10 and14 assigned centers. Both neutral. Internal agreement does not
+    establish biological identity.
+  snapshot_sha256: 47fb0302f9b214192dfdc03dfa5bc8918bd8db6c5c2748e6410fdd0a859139d5
+- evidence_id: pubchem
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/72396,15574862/property/InChI,InChIKey,MolecularFormula,IsomericSMILES/JSON
+  locator: Official properties for both CIDs; original retrieval 2026-10-13T22:00:44.082843Z..2026-10-13T22:00:44.942044Z,
+    HTTP 200; payload /private/tmp/npmech-gentamicin-review-c2YN3q/pubchem.json; receipt
+    SHA256 812b00d278a1488738eedbd671c8247ecfd20b609b2e30917aab4f906cbc8f6d. accessed_at
+    records local reinspection.
+  accessed_at: '2026-10-13T22:16:34.050641Z'
+  support: supports
+  summary: CID72396 is VEGXETMJINRLTH-BOZYPMBZSA-N/C19H39N5O7, not the BDTQ owner.
+    CID15574862 is HFLKNINDVFJPQT-ZFAMMYHGSA-N/C19H38N4O10; it shares connectivity,
+    not stereochemical identity, with the HFLK owner.
+  snapshot_sha256: b61555527d3e752c2a5a48467eebad9b34ff8ed1bf3b9c2b929f47c5e37d12bf
+- evidence_id: pubchem-a3
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/86490/property/InChI,InChIKey,MolecularFormula,IsomericSMILES/JSON
+  locator: CID86490 properties; original retrieval 2026-10-13T22:03:22.935227Z..2026-10-13T22:03:23.454929Z,
+    HTTP 200; payload /private/tmp/npmech-gentamicin-review-c2YN3q/pubchem-A3.json;
+    receipt SHA256 69be490e975e8cba3223ef6641f1cbe0e82a03f436469c589e6223c0fedd1eb5.
+    accessed_at records local reinspection.
+  accessed_at: '2026-10-13T22:16:34.050897Z'
+  support: supports
+  summary: 'CID86490 has BDTQHFBWYNCGHN-UHFFFAOYSA-N: connectivity matches the BDTQ
+    owner but stereo does not. It is a candidate for identity research, not an exact
+    replacement xref.'
+  snapshot_sha256: 5b3ebf3c1f72b6938f0d37910ef6d75f87d639d46be87835e89eb2add0fd1018
+- evidence_id: names
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/72396,15574862,86490/synonyms/JSON
+  locator: CID-specific depositor synonyms; original retrieval 2026-10-13T22:03:46.600538Z..2026-10-13T22:03:47.001206Z,
+    HTTP 200; payload /private/tmp/npmech-gentamicin-review-c2YN3q/synonyms.json;
+    receipt SHA256 564f043ce175dc62127f696b26632420a129bd400b872d97d464e9b680ee178f.
+    accessed_at records local reinspection.
+  accessed_at: '2026-10-13T22:16:34.051135Z'
+  support: supports
+  summary: Registry synonyms name CID72396 gentamicin C1a, CID15574862 gentamicin
+    X2 and CID86490 gentamicin A3. These are database names, not independent experimental
+    structure determination.
+  snapshot_sha256: fa6f46a3b41c168682ac6ef6870332fc2b5009f8bc89e129bda924922e29234e
+- evidence_id: taxonomy
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1873,1877&retmode=xml
+  locator: TaxId, ScientificName, Rank and Lineage; original retrieval 2026-10-13T22:01:14.410602Z..2026-10-13T22:01:14.730413Z,
+    HTTP 200; payload /private/tmp/npmech-gentamicin-review-c2YN3q/taxonomy.xml; receipt
+    SHA256 7933ab22627b953b862d2007877919844b891501ca2b5e545613c3e1ca230dbc. accessed_at
+    records local reinspection.
+  accessed_at: '2026-10-13T22:16:34.051387Z'
+  support: supports
+  summary: NCBITaxon1873 resolves to genus Micromonospora and1877 to species Micromonospora
+    echinospora; both are within Actinomycetota. This supports the taxonomic grouping,
+    not the exact-product attribution.
+  snapshot_sha256: d671bb3057e8a3fd7aab8d48ef68f77679d4a5ecc6e60ce08ec23c265b6644b7
+- evidence_id: sequences
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=AJ628149.4,KY971520.1&rettype=gbwithparts&retmode=xml
+  locator: Source features and references of both exact accession versions; original
+    retrieval 2026-10-13T22:00:45.134607Z..2026-10-13T22:00:45.780343Z, HTTP 200;
+    payload /private/tmp/npmech-gentamicin-review-c2YN3q/sequences.xml; receipt SHA256
+    8f1094d122aa9f5c2bc866a600cb21e210eb4e038e8637b63d30b8e08dded1a4. accessed_at
+    records local reinspection.
+  accessed_at: '2026-10-13T22:16:34.051646Z'
+  support: supports
+  summary: AJ628149.4 is deposited with strain DSM43036; KY971520.1 with ATCC15835
+    and culture_collection ATCC:15835. Both use taxon1877 and have unpublished/direct-submission
+    references. The deposits establish sequence context, not the experimental identity
+    of a product.
+  snapshot_sha256: 701076e79da9eb1c73dc29f60dceb636e8d6b9d9f2e38ac9e044bac8b0a54498
+- evidence_id: primary2004
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/antibiotics1968/57/7/57_7_436/_pdf/-char/en
+  locator: DOI10.7164/antibiotics.57.436, all ten pages text inspected; Table1 p437,
+    Figure2 p442 and Figure3 p443 visually inspected; original retrieval 2026-10-13T22:00:54.909277Z..2026-10-13T22:00:58.396615Z,
+    HTTP 200; payload /private/tmp/npmech-gentamicin-review-c2YN3q/primary2004.pdf;
+    receipt SHA256 695767ce0bc23d65185cd4c50e897d8fd5ad18f2839bf2c292f3b69df817e29f.
+    accessed_at records local reinspection.
+  accessed_at: '2026-10-13T22:16:34.052863Z'
+  support: supports
+  summary: Unwin et al. study the gentamicin C complex in ATCC15835 using a gntB insertion
+    and an immunoassay. The deposited sequence named in Methods is AY524043. Figure3
+    distinguishes A/A2/X2 intermediates from C congeners; it presents predicted enzyme
+    assignments. This does not identify the BDTQ graph as their measured product.
+  snapshot_sha256: 8a4e6efbb5bb223ec82117a68afaab45b1ae9e9597e907a6f1309597858956f5
+- evidence_id: dsmz
+  kind: authority
+  reference: https://webshop.dsmz.de/en/bacteria/Micromonospora-echinospora-subsp-echinospora-oxid-2.html
+  locator: DSM No. and Other collection no.; official web page inspected during this
+    review; accessed_at is reinspection of returned source text
+  accessed_at: '2026-10-13T22:16:34.056933Z'
+  support: supports
+  summary: DSMZ explicitly lists ATCC15835 among the equivalent collection numbers
+    for DSM43036. Different collection labels therefore do not prove different strains.
+    Different sequence deposits still need exact locus mapping.
+- evidence_id: np-atlas
+  kind: database
+  reference: https://www.npatlas.org/api/v1/compound/NPA009026?include=classifications
+  locator: Official export linked from compound page; inchikey/inchi/smiles/formula,
+    origin and mol_structures; version2024_09. Returned API text reinspected; not
+    redistributed.
+  accessed_at: '2026-10-13T22:16:34.056946Z'
+  support: supports
+  summary: NPA009026 (resolving the shorter NPA09026 alias) exactly matches BDTQHFBWYNCGHN-CUYCKOLISA-N
+    and its molecular formula. The origin is Micromonospora sp. and DOI10.1021/jm00340a034.
+    Exact database agreement is retained; it does not validate the historical assignment
+    to the complex.
+- evidence_id: primary2015-abstract
+  kind: primary_source
+  reference: https://hero.epa.gov/reference/7214436/
+  locator: Huang et al., PMID25641167, DOI10.1016/j.chembiol.2014.12.012; primary
+    abstract reproduced by EPA HERO. PubMed page displayed reCAPTCHA; no challenge
+    bypass or full-paper retrieval.
+  accessed_at: '2026-10-13T22:16:34.056951Z'
+  support: partial
+  summary: The reproduced primary abstract identifies gentamicin X2 as a precursor
+    of the C complex and reports native mutations plus enzyme reconstitution. Only
+    that abstract was inspected; the paper, figures, supplements and exact experimental
+    strain were not verified.
+- evidence_id: imodulondb
+  kind: database
+  reference: https://imodulondb.org/api/datasets
+  locator: Complete /api/datasets response; original retrieval 2026-10-13T22:01:44.594107Z..2026-10-13T22:01:44.975219Z,
+    HTTP 200; payload /private/tmp/npmech-gentamicin-review-c2YN3q/imodulondb-datasets.json;
+    receipt SHA256 16c98a92c967c309fdc80c50075e8387259c4ec683fd0b3169a79c4b36f80378.
+    accessed_at records local reinspection.
+  accessed_at: '2026-10-13T22:16:34.057466Z'
+  support: supports
+  summary: Official inventory contains20 organism entries and no Micromonospora dataset.
+    Native transcriptomic cross-check is not applicable; E.coli cloning-host data
+    are not evidence for this producer. Adapter failed on missing dotenv, so the official
+    dataset API was inspected.
+  snapshot_sha256: 155607e7023efdead5ebab3919279a0776d5665a7de9e28b67f02f8f521b0693
+- evidence_id: local-search
+  kind: search
+  reference: /private/tmp/npmech-gentamicin-review-c2YN3q/local-search.log
+  locator: Full recorded command and log; .git metadata excluded, ignored source files
+    included; compressed files not claimed to be text-exhaustive
+  accessed_at: '2026-10-13T22:16:34.057698Z'
+  support: supports
+  summary: Ignored/hidden-inclusive repository search found the two owners, source
+    rows and derived/historical coverage references. Both complete resolved records
+    have no inline or referenced graphs. No prior canonical review targets these two
+    owner IDs in the validated48-observation checkpoint.
+  snapshot_sha256: d147b60d0a5e1985cf36e01035bbb281ec1fc5b437e3058116eca7430165663b
+  search_scope: Entire repository, including ignored and hidden files, except .git
+    metadata; terms gentamicin, HFLKNINDVFJPQT, BDTQHFBWYNCGHN, BGC0000696 and BGC0001603.
+    Compressed content is not claimed text-exhaustive.
+- evidence_id: baseline
+  kind: validation
+  reference: /private/tmp/npmech-gentamicin-review-c2YN3q/capture.json
+  locator: prepare.py assertions, base commit and exact-target inspections
+  accessed_at: '2026-10-13T22:16:34.057854Z'
+  support: supports
+  summary: The prior checkpoint was revalidated against all3115owner files,243components
+    and48immutable YAML/Markdown pairs before this assessment. Same-label candidate
+    selection does not prejudge equivalence.
+  snapshot_sha256: b6d14304f1b9c447399380a5bea45c0d4cc085f602e3ed2a94b81dc397600bd1
+- evidence_id: assay
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1195/JSON?cid=72396
+  locator: PC_AssaySubmit.assay.descr.protocol/results and data[0]; original dose
+    units retained in source, not converted to MIC; original retrieval 2026-10-13T22:01:13.729676Z..2026-10-13T22:01:14.195513Z,
+    HTTP 200; payload /private/tmp/npmech-gentamicin-review-c2YN3q/assay1195-cid72396.json;
+    receipt SHA256 4e0949e9625ee728f4707bdd638627902199679984cb91653374c4d2160bd8f0.
+    accessed_at records local reinspection.
+  accessed_at: '2026-10-13T22:16:34.058254Z'
+  support: supports
+  summary: AID1195 assigns Active to every substance with a reported maximum recommended
+    daily dose. The CID72396 query returns SID48416051 and dose metadata, not a pure-BDTQ-compound
+    assay. This administrative outcome is not positive biological activity.
+  snapshot_sha256: 6fa650fd1bff8ceb6715b56ca6b321f403c68a93ff117b7298d5a80a3550b50a
+- evidence_id: assay-owner
+  kind: record_content
+  reference: scripts/extract_pubchem_bioassay.py
+  locator: cid_to_key; rows_from_summary; scripts/seed_from_sources.py bioactivities
+    loop
+  accessed_at: '2026-10-13T22:16:34.058352Z'
+  support: supports
+  summary: cid_to_key trusts owner xrefs and associates a CID with an owner key without
+    chemical revalidation. rows_from_summary admits a named positive call without
+    protocol-level meaning. The seeder then emits ACTIVE from the stored outcome.
+  snapshot_sha256: 24f9d794e7cf97c420351cb751f8767f7d81a5f22aed01669b2318d6755e7c00
+- evidence_id: owner
+  kind: record_content
+  reference: data/natural_products/carbohydrates/gentamicin-2.yaml
+  locator: Complete raw YAML and read_natural_product result
+  accessed_at: '2026-10-13T22:16:36.308356Z'
+  support: supports
+  summary: The entire owner, every nested claim, history and complete resolved view
+    were read. Target selection is by exact path and identifier; the sibling is context
+    only.
+  snapshot_sha256: d8874c3afabccc354db48d576775c0e937ff016ab0f7802485794e7d380e2da8
+- evidence_id: mibig
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001603.3/annotations.json
+  locator: Full exact version JSON, including all compound evidence and legacy references;
+    original retrieval 2026-10-13T22:00:29.607408Z..2026-10-13T22:00:30.813519Z, HTTP
+    200; payload /private/tmp/npmech-gentamicin-review-c2YN3q/BGC0001603.3.json; receipt
+    SHA256 e7311aef1ffeb81c046a98a914dd8e74009a5e909fa0dbc36923b5e6440dd921. accessed_at
+    records local reinspection.
+  accessed_at: '2026-10-13T22:16:36.308901Z'
+  support: supports
+  summary: BGC0001603 version3 is active and matches the imported chemical graph,
+    taxon, saccharide class and genome accession. Locus evidence methods are empty;
+    SOURCE_ASSERTION and CLUSTER_UNSTATED accurately preserve that database tier.
+    Quality/reviewer placeholders are not truth signals.
+  snapshot_sha256: cebf244f4bb370957bd6ae458de8ca2be925abf4168627dc4d8056338f1ebfbe
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Individual compound versus complex/congener
+  outcome: concern
+  summary: The generic gentamicin label hides an X2-connectivity record with all14tetrahedral
+    centers unspecified. It is not the gentamicin C mixture. The cited2015abstract
+    is X2-specific, but exact experimental assignment to this stereo-unspecified owner
+    remains partial. Do not merge it with the BDTQ owner or install CID15574862 as
+    exact identity.
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  evidence_ids:
+  - owner
+  - chemistry
+  - mibig
+  - np-atlas
+  - names
+  - pubchem-a3
+  - primary2004
+  - primary2015-abstract
+- assessment_id: structure
+  area: consistency
+  topic: Encoded chemistry and stereochemical resolution
+  outcome: supported
+  summary: SMILES, InChI and InChIKey are internally consistent. stereo_complete:false
+    correctly exposes14unassigned centers; no automatic completion is justified.
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  evidence_ids:
+  - owner
+  - chemistry
+- assessment_id: grounding
+  area: grounding
+  topic: ChEBI, exact xrefs and sibling boundaries
+  outcome: supported
+  summary: Pinned ChEBI inventory has no exact-key match; minted identity is faithful
+    to source resolution. No xrefs, parent, congener or related_records are asserted.
+    A stereo-resolved X2 registry or sibling record cannot be adopted as an exact
+    match to this key.
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  evidence_ids:
+  - owner
+  - inventories
+  - np-atlas
+  - pubchem
+  - pubchem-a3
+- assessment_id: facets
+  area: representation
+  topic: Filing, chemistry, taxonomy and origin axes
+  outcome: supported
+  summary: CARBOHYDRATES, Polyols and glycoside=true reproduce the pinned NPClassifier
+    version; SACCHARIDE is a separate MIBiG biosynthetic class. ACTINOBACTERIAL follows
+    Micromonospora taxonomy. These axes neither identify a congener nor independently
+    prove natural origin.
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  evidence_ids:
+  - owner
+  - inventories
+  - mibig
+  - taxonomy
+  - rules
+  dimensions:
+  - name: taxonomy
+    value: NCBITaxon1877 species Micromonospora echinospora
+    definition: Producer taxonomic resolution, independent of chemical origin
+    evidence_ids:
+    - taxonomy
+  - name: stereochemical_resolution
+    value: 14unassigned centers
+    definition: Encoded tetrahedral centers calculated with pinned RDKit, not experimental
+      proof
+    evidence_ids:
+    - chemistry
+  - name: evidence_tier
+    value: SOURCE_ASSERTION / CLUSTER_UNSTATED
+    definition: Separate native producer and locus grades
+    evidence_ids:
+    - owner
+    - mibig
+- assessment_id: origin
+  area: scope
+  topic: Natural origin and producer evidence
+  outcome: concern
+  summary: A natural gentamicin-family origin is consistent with the sources, but
+    exact compound assignment is limited as detailed in F1. SOURCE_ASSERTION is not
+    inflated to direct experimental proof. Deposited strain context is missing (F2).
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  evidence_ids:
+  - owner
+  - primary2004
+  - primary2015-abstract
+  - mibig
+  - sequences
+- assessment_id: cluster
+  area: provenance
+  topic: Exact active BGC and sequence versions
+  outcome: supported
+  summary: BGC0001603v3 is active, names gentamicin, and supplies the exact imported
+    structure and locus. Zero/unstated source bounds remain unstated. CLUSTER_UNSTATED
+    matches empty methods. DSM43036 andATCC15835 are equivalent collection designations,
+    not a strain conflict; AY524043/AJ628149/KY971520 are distinct deposits and are
+    not asserted to be experimentally interchangeable.
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  evidence_ids:
+  - mibig
+  - sequences
+  - dsmz
+  - primary2004
+- assessment_id: occurrences
+  area: evidence
+  topic: Claim-level occurrence citations
+  outcome: not_applicable
+  summary: No occurrence object is asserted; no absence of literature evidence is
+    inferred.
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  evidence_ids:
+  - owner
+  - inventories
+  - primary2004
+  - taxonomy
+- assessment_id: activity
+  area: evidence
+  topic: Pure-compound bioactivity and summaries
+  outcome: not_applicable
+  summary: No activity, summary or molecular target is asserted.
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  evidence_ids:
+  - owner
+  - assay
+  - assay-owner
+  - pubchem
+- assessment_id: mechanism
+  area: graph
+  topic: Complete mechanism and protein examples
+  outcome: not_applicable
+  summary: No inline graph, graph ref, pathway step or protein example is present
+    in the full resolved owner. Native absence of optional graphs is not a finding,
+    and not a claim that literature lacks mechanisms. No homolog, cloning host or
+    expression module is treated as native mechanistic proof.
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  evidence_ids:
+  - owner
+  - local-search
+  - imodulondb
+- assessment_id: optional
+  area: completeness
+  topic: Clinical assertions, datasets and other optional fields
+  outcome: not_applicable
+  summary: No clinical-status object, dataset, parent-compound or congener relationship
+    is asserted. Optional omissions alone are not defects. The clinical-dose deposit
+    is not a licence to add a regulatory approval claim.
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  evidence_ids:
+  - owner
+- assessment_id: history
+  area: provenance
+  topic: Status, audit trail and maintained ownership
+  outcome: supported
+  summary: SEEDED is retained. Seed events describe generated inputs; no saved review
+    promotes status. Corrections belong in implemented input tables or reviewed extractor/seeder
+    behavior, never direct edits of the generated owner or page.
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  evidence_ids:
+  - owner
+  - ownership
+  - baseline
+findings:
+- finding_id: F1
+  issue_key: gentamicin-2-exact-product-assignment
+  category: identity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generic gentamicin name obscures the X2 precursor and unresolved stereochemical
+    scope
+  description: HFLK connectivity matches the X2 candidate, not the clinically used
+    C complex. Both the2015cited abstract and2004Figure3 distinguish that precursor.
+    No specific congener label or qualification is present. Exact stereochemical and
+    experimental strain attribution remain incomplete; this is not a demand to invent
+    stereo or evidence grades.
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  field_paths:
+  - label
+  - chemical_structure
+  - producer_organisms
+  - biosynthetic_gene_clusters
+  evidence_ids:
+  - owner
+  - mibig
+  - primary2004
+  - primary2015-abstract
+  - chemistry
+  - pubchem
+  - pubchem-a3
+  - names
+  - np-atlas
+  rule_id: 'NaturalProductRecord checklist: identity'
+  native_severity: major
+  normalization_reason: A materially ambiguous or unsupported identity/evidence claim
+    requires correction before scientific sign-off.
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Source-specific compound naming and structure extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Exact-key grouping and generated identity
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Pinned source assertion; do not rewrite without reviewed provenance
+- finding_id: F2
+  issue_key: gentamicin-2-deposited-strain-context
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Producer omits the deposited strain qualification
+  description: KY971520.1 source feature supplies ATCC 15835, whereas the record gives
+    only species1877. DSMZ lists DSM43036 andATCC15835 as equivalent collection numbers;
+    this is lost context, not evidence of mismatched strains. A strain qualification
+    alone does not prove this exact metabolite is produced.
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  field_paths:
+  - producer_organisms[0].strain
+  evidence_ids:
+  - owner
+  - sequences
+  - dsmz
+  - taxonomy
+  - ownership
+  rule_id: 'NaturalProductRecord checklist: provenance'
+  native_severity: minor
+  normalization_reason: Bounded provenance loss; repairing it does not resolve the
+    independent exact-product question.
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Implemented complete-row-pinned producer-strain qualifications
+actions:
+- action_id: A1
+  description: Adjudicate the exact congener against primary structure evidence and
+    source-version provenance. Preserve the raw generic label, then implement a tested
+    maintained qualification or correction path for the reviewed product. Do not merge
+    the two owners, transfer mixture claims, replace with a stereo-different CID,
+    or use reserved decisions.tsv. A source correction requiring a non-ChEBI destination
+    needs separately implemented ownership/migration logic.
+  finding_ids:
+  - F1
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Source-specific compound naming and structure extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Exact-key grouping and generated identity
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Pinned source assertion; do not rewrite without reviewed provenance
+  acceptance_checks:
+  - Primary evidence resolves named congener and supported stereochemical resolution.
+  - Every producer, occurrence, xref and assay is re-audited for the selected exact
+    structure.
+  - Future tests prove no silent same-name merge or transfer between BDTQ and HFLK;
+    reproduction and native gates pass.
+  generator: 'Authorized curation only: maintained input change, canary seeding and
+    guarded writer with history; then just verify-reproduction, just render and just
+    qc. No changes made by this review.'
+- action_id: A2
+  description: Add a reviewed BGC0001603:1 qualification for ATCC 15835 citing KY971520.1
+    and exact source-row hash. Preserve taxon, database assertion, grades, chemical
+    identity and BGC fields. Mention collection equivalence only with the inspected
+    DSMZ source.
+  finding_ids:
+  - F2
+  target_ids:
+  - naturalproductmech:mibig-b697ac65fb
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Implemented complete-row-pinned producer-strain qualifications
+  acceptance_checks:
+  - Source-row pin and deposited spelling are exact.
+  - Only strain and separate curator qualification evidence change; no grade or scientific-status
+    promotion.
+  - Canary and full reproduction/native gates pass.
+  generator: 'Authorized curation only: maintained input change, canary seeding and
+    guarded writer with history; then just verify-reproduction, just render and just
+    qc. No changes made by this review.'
+limitations:
+- Full exact-product evidence remains incomplete; inaccessible1963and1975papers cannot
+  be treated as refutation.2015primary abstract only; no full experimental or stereochemical
+  adjudication.
+- PMID19362651 is a source-level additional reference whose content was not inspected
+  after a PubMed challenge; no mechanistic claims are inferred from it.
+- Wikidata Q3061522 andQ6839685 returned403. Independent NCBI taxon verification does
+  not recover those mappings.
+- Web-only source text was reinspected while authoring; accessed_at for those entries
+  records that local reinspection, not an invented exact original request timestamp.
+  HTTP payload receipts retain actual timestamps.
+- The label gate has499warnings and4649adapter skips across the corpus; it is not
+  a chemical-identity or primary-evidence certificate.
+- Only new review artifacts are written. No record, component, inventory, page, history
+  or native status was modified; no GitHub mutation was performed.
+notes:
+- Source hashes match both the reviewed working tree and base commit; this observation
+  explicitly assesses that immutable revision.
+- 'Same-label structures are not duplicates: retain their distinct keys pending exact
+  product adjudication.'
+- The record contains no clinical or molecular-target claim; the broader gentamicin
+  literature does not authorize importing those mechanisms here.
+tags:
+- gentamicin
+- exact-identity
+- record-review-campaign
+```
