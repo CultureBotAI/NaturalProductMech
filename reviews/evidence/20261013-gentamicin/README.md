@@ -27,6 +27,8 @@ Article text, derivatives and denied responses are reference-only: source URLs
 and hashes are retained without assuming redistribution rights. Web-only
 authority observations are explicitly distinguished from captured payloads.
 Local runtime binaries and ontology caches are not redistributed.
+Stored filenames use portable characters; historical `<commit>:path` locators
+remain unchanged in the manifest. The regression for #946 checks that distinction.
 
 The adversarial pass was performed by the implementing assistant, not an
 independent human reviewer. Checks cover complete-row drift, missing/ambiguous

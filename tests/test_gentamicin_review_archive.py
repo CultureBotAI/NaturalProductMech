@@ -25,6 +25,7 @@ def test_gentamicin_archive_and_scoped_dispositions():
         relative = PurePosixPath(row["path"])
         assert not relative.is_absolute() and ".." not in relative.parts
         assert relative.parts[0] == "artifacts"
+        assert not any(c in relative.name for c in '<>:"\\|?*')
         path = ARCHIVE / relative
         assert not any(p.is_symlink() for p in (path, *path.parents))
         assert path.resolve().is_relative_to(ARCHIVE.resolve())
