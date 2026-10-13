@@ -1,0 +1,1024 @@
+schema_version: 1.0.0
+review_id: 20261013T102720Z-vibriobactin
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'ChEBI vibriobactin: locus evidence and reference-protein review'
+started_at: '2026-10-13T10:00:02.865868Z'
+finished_at: '2026-10-13T10:27:20.077051Z'
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: self_review
+  independence_basis: Same assistant/thread as earlier curation; this source-checking
+    pass is not an independent reviewer.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: One major locus-evidence finding and two minor provenance findings. Chemistry
+  and all 11 bounded protein references check; inaccessible primary sources prevent
+  scientific completion.
+source:
+  git_revision: 9e5163ca9689a98df9af76f1ccb38fe0df72594c
+  state: git_commit
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: 49e2ab03c7e82013e9d68356de2c9965c9f8517a3408a44124076f4ca1b529cd
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/decisions.tsv
+    sha256: 7214a74975fb2cb65521da18dd14ea1c65665f50060106976dc0db9caf887805
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 0b2e8b991c926f9a67a3094964b0335dd1cd347fbf548674fa273db8fac3a4b2
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: 13341e78333d6efbb8a0331a675aa076d13a5830af8d5f860f743022a6c6268a
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: 5b1edc057cdcc732f61de2964cd175fa3bc2dca929c5d2823142f61313545a7e
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: bf38e4f0c7e4bcbdf184a4e7b8b024752251e8f34c015c0b82cedca98a8a5729
+    role: context
+  - path: data/natural_products/alkaloids/vibriobactin-2.yaml
+    sha256: bcbfffd663da7407c060c01279749ff5cfbef9da325e8e19d20fc4f1b05fe093
+    role: context
+  - path: data/natural_products/alkaloids/vibriobactin.yaml
+    sha256: c4452dbc65a7835ce78817f41e65474e31a6a00b1e914a4d688cec895d1d2a6e
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: 373f049029be3db137e062ff5f872a2400a9d5b423f3e108ea44ebde2f8dcc7d
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: 7b9b9f78f5b14aea9fabb163bbaa9e842920a7e9b07deac8f98c97666e9e23fc
+    role: context
+  - path: docs/CURATION.md
+    sha256: 4b9e28dde3917c1f6a45c5c4a1443459dc80504c06cf63198783d37c88e50f80
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: 30c7007e57806c245674ce922e0f8c485b1a8a12a9f9fb95850ba6ee4f8cddc2
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: pyproject.toml
+    sha256: 02505a46585e870eac7333f31a6773df51465ef13969d4d490fbc0247931d85c
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_lotus.py
+    sha256: 8a8c524f60f85d2bb54412ca055a6a45e0d37ec5f4584d8d70be454b8f664290
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 1b9616ed25b5dd7b8053109beea665dd178ea73055ece551ba69e9cc63bff7a7
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: 6026ddca19f0989d499b1681f7724fbab23918de8d3957750b49bbfe1a9c0bff
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/history.yaml
+    sha256: b01b06f1b9a37db205c26c31ec0fd910690848507c7e1bfb73b424ac0829c52d
+    role: context
+  - path: src/naturalproductmech/schema/mech_shared.yaml
+    sha256: c2e7054fd32635e380c698282bd886a9105861009b9f0474f02bb1b80865e895
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: uv.lock
+    sha256: c62a5739e3ffeb12cc57b3bf12a31dcf9cdfbf00b417f4ba3a801d51ef9efbe3
+    role: context
+targets:
+- target_id: CHEBI:9973
+  path: data/natural_products/alkaloids/vibriobactin.yaml
+  label: vibriobactin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Imported chemical, producer and BGC assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Imported exact structure-organism-reference triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: ChEBI identity and definition
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_origins.tsv
+    role: ChEBI occurrence assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/antibioticmech_inchikeys.tsv
+    role: Pinned exact-structure sibling joins
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated source harmonization
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: MIBiG extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_lotus.py
+    role: LOTUS occurrence extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/vibriobactin.yaml
+    role: Curator-owned inline graph; use validated writer, not seeder edits
+scope:
+  description: One exact owner at commit 9e5163ca9689a98df9af76f1ccb38fe0df72594c;
+    complete owner and mechanisms read. Same-label sibling is identity context only.
+    The full campaign remains3115 owners and 243 components.
+  selection: 'Next pending exact path in the exhaustive post-merge checkpoint: data/natural_products/alkaloids/vibriobactin.yaml'
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:9973
+checks:
+- check_id: vibriobactin-inspect
+  name: vibriobactin-inspect
+  status: passed
+  required: true
+  summary: Original canonical exact-owner capture before assessment.
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    scripts/record_review.py inspect --targets /private/tmp/npmech-vibriobactin-review-8vouqXEu/vibriobactin-targets.json
+    --input CLAUDE.md --input justfile --input docs/CURATION.md --input docs/HARMONIZATION.md
+    --input docs/record-review-profile.md --input docs/record-reviews.md --input conf/record_review.yaml
+    --input .claude/skills/review-yaml-record/SKILL.md --input .claude/skills/curate-yaml-record/references/review-checklist.md
+    --input schema/record_review.yaml --input src/naturalproductmech/schema/naturalproductmech.yaml
+    --input src/naturalproductmech/schema/mech_shared.yaml --input src/naturalproductmech/schema/history.yaml
+    --input src/naturalproductmech/graph_components.py --input conf/producer_evidence.tsv
+    --input conf/id_label_targets.yaml --input data/raw/corpus_taxa.obo --input data/raw/MANIFEST.yaml
+    --input data/natural_products/PATHS.tsv --input curation/decisions.tsv --input
+    curation/mibig_locus_evidence_overrides.tsv --input curation/mibig_structure_corrections.tsv
+    --input curation/mibig_producer_strains.tsv --input pyproject.toml --input uv.lock
+    --input data/natural_products/alkaloids/vibriobactin-2.yaml --input data/natural_products/alkaloids/vibriobactin.yaml
+  exit_code: 0
+  target_ids:
+  - CHEBI:9973
+  evidence_ids:
+  - receipts
+- check_id: vibriobactin-final-inspect
+  name: vibriobactin-final-inspect
+  status: passed
+  required: true
+  summary: Rechecked all earlier hashes and added maintained-source hashes; no silently
+    refreshed changed inputs.
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    scripts/record_review.py inspect --targets /private/tmp/npmech-vibriobactin-review-8vouqXEu/vibriobactin-targets.json
+    --input .claude/skills/curate-yaml-record/references/review-checklist.md --input
+    .claude/skills/review-yaml-record/SKILL.md --input CLAUDE.md --input conf/id_label_targets.yaml
+    --input conf/producer_evidence.tsv --input conf/record_review.yaml --input curation/decisions.tsv
+    --input curation/mibig_locus_evidence_overrides.tsv --input curation/mibig_producer_strains.tsv
+    --input curation/mibig_structure_corrections.tsv --input data/natural_products/PATHS.tsv
+    --input data/natural_products/alkaloids/vibriobactin-2.yaml --input data/natural_products/alkaloids/vibriobactin.yaml
+    --input data/raw/MANIFEST.yaml --input data/raw/antibioticmech_inchikeys.tsv --input
+    data/raw/chebi_origins.tsv --input data/raw/chebi_structures.tsv --input data/raw/corpus_taxa.obo
+    --input data/raw/lotus_occurrences.tsv --input data/raw/mibig_compounds.tsv --input
+    data/raw/npclassifier.tsv --input docs/CURATION.md --input docs/HARMONIZATION.md
+    --input docs/record-review-profile.md --input docs/record-reviews.md --input justfile
+    --input pyproject.toml --input schema/record_review.yaml --input scripts/extract_lotus.py
+    --input scripts/extract_mibig.py --input scripts/record_review.py --input scripts/seed_from_sources.py
+    --input src/naturalproductmech/curate/producer_strains.py --input src/naturalproductmech/graph_components.py
+    --input src/naturalproductmech/schema/history.yaml --input src/naturalproductmech/schema/mech_shared.yaml
+    --input src/naturalproductmech/schema/naturalproductmech.yaml --input uv.lock
+  exit_code: 0
+  target_ids:
+  - CHEBI:9973
+  evidence_ids:
+  - receipts
+- check_id: revalidate
+  name: revalidate
+  status: passed
+  required: true
+  summary: All 3,115 owners, 243 components and 13 prior observations match the authoritative
+    post-merge checkpoint.
+  command: .venv/bin/python /private/tmp/npmech-vibriobactin-review-8vouqXEu/audit_current.py
+    revalidate
+  exit_code: 0
+  target_ids:
+  - CHEBI:9973
+  evidence_ids:
+  - receipts
+- check_id: strict-vibriobactin
+  name: strict-vibriobactin
+  status: passed
+  required: true
+  summary: 'Native closed-schema validator: one owner, zero errors.'
+  command: .venv/bin/python scripts/validate_strict.py data/natural_products/alkaloids/vibriobactin.yaml
+    --out /private/tmp/npmech-vibriobactin-review-8vouqXEu/strict-vibriobactin.tsv
+  exit_code: 0
+  target_ids:
+  - CHEBI:9973
+  evidence_ids:
+  - receipts
+- check_id: qc
+  name: qc
+  status: passed
+  required: true
+  summary: 'Full native QC passed: 652 tests, 3 skipped; 3,115 owners validate and
+    reproduce; site, provenance, vendor, lint and corpus gates pass. This is not scientific
+    sign-off.'
+  command: env UV_CACHE_DIR=/private/tmp/npmech-prodigiosin-review-m1Ai8z/uv-cache
+    just qc
+  exit_code: 0
+  target_ids:
+  - CHEBI:9973
+  evidence_ids:
+  - receipts
+- check_id: labels-enforce
+  name: labels-enforce
+  status: passed
+  required: true
+  summary: Native enforcement exits 0;499 warning mismatches and 4,649 skipped-no-adapter
+    pairs remain corpus-wide. No target-owner warning rows in the report.
+  command: .venv/bin/python scripts/validate_id_label_correspondence.py -c conf/id_label_targets.yaml
+  exit_code: 0
+  target_ids:
+  - CHEBI:9973
+  evidence_ids:
+  - receipts
+- check_id: labels-report
+  name: labels-report
+  status: passed
+  required: true
+  summary: Diagnostic report complements enforcement, not a substitute for it; report
+    mode itself always exits 0.
+  command: .venv/bin/python scripts/validate_id_label_correspondence.py -c conf/id_label_targets.yaml
+    --report /private/tmp/npmech-vibriobactin-review-8vouqXEu/labels.tsv
+  exit_code: 0
+  target_ids:
+  - CHEBI:9973
+  evidence_ids:
+  - receipts
+- check_id: queue
+  name: queue
+  status: passed
+  required: true
+  summary: Fresh native queue contains 8,931 diagnostics covering all 3,115 owner
+    paths plus curation/unresolved_taxa.tsv; it is not a count of reviews.
+  command: .venv/bin/python scripts/curation_worklist.py --review-records --limit
+    0 --tsv /private/tmp/npmech-vibriobactin-review-8vouqXEu/review-queue.tsv
+  exit_code: 0
+  target_ids:
+  - CHEBI:9973
+  evidence_ids:
+  - receipts
+- check_id: chemistry
+  name: chemistry
+  status: failed
+  required: false
+  summary: Initial import failed because the relocated RDKit environment lacks RDPaths;
+    the configured retry supersedes this execution, without hiding the failure.
+  command: .venv/bin/python /private/tmp/npmech-vibriobactin-review-8vouqXEu/audit_current.py
+    chemistry
+  exit_code: 1
+  target_ids:
+  - CHEBI:9973
+  evidence_ids:
+  - receipts
+- check_id: chemistry-configured
+  name: chemistry-configured
+  status: passed
+  required: true
+  summary: Full chemical recalculation passed with exact RDKit 2026.03.5 and RDBASE
+    pointing to its existing share/RDKit directory; no package or record was patched.
+  command: env RDBASE=/private/tmp/npmech-rdkit-2026.03.5/share/RDKit .venv/bin/python
+    /private/tmp/npmech-vibriobactin-review-8vouqXEu/audit_current.py chemistry
+  exit_code: 0
+  target_ids:
+  - CHEBI:9973
+  evidence_ids:
+  - receipts
+- check_id: primary-completeness
+  name: Nearest primary sources and exact experimental product
+  status: unavailable
+  required: true
+  summary: Blocked 1997/1984 sources and uninspected experimental chemical-form details
+    preclude a completed scientific review. Protein primary-method access limits remain
+    explicit.
+  target_ids:
+  - CHEBI:9973
+  evidence_ids:
+  - access
+- check_id: imodulondb-applicability
+  name: Structured expression-module cross-check
+  status: not_applicable
+  required: false
+  summary: Catalogue retrieval succeeded, but no V. cholerae dataset matches either
+    record; expression modules cannot establish chemical identity.
+  target_ids:
+  - CHEBI:9973
+  evidence_ids:
+  - imodulondb
+- check_id: wikidata
+  name: Occurrence organism provenance link
+  status: unavailable
+  required: false
+  summary: Official Q160821 page timed out; stable taxon identity is separately checked,
+    but live Wikidata statements were not read.
+  target_ids:
+  - CHEBI:9973
+  evidence_ids:
+  - taxonomy
+- check_id: uniprot
+  name: uniprot
+  status: passed
+  required: true
+  summary: All 11 official current UniProt JSON requests returned 200 and the expected
+    primary accessions.
+  command: .venv/bin/python /private/tmp/npmech-vibriobactin-review-8vouqXEu/audit_current.py
+    download
+  exit_code: 0
+  target_ids:
+  - CHEBI:9973
+  evidence_ids:
+  - receipts
+- check_id: protein-audit
+  name: protein-audit
+  status: passed
+  required: true
+  summary: Independent current-graph audit passed 11 exact native CDS translations,
+    evidence snippets, strain qualifiers and graph predicates; native ENA snapshots
+    remain historical pins.
+  command: env UV_CACHE_DIR=/private/tmp/npmech-prodigiosin-review-m1Ai8z/uv-cache
+    uv run --isolated --no-project --with biopython==1.85 --with pyyaml==6.0.3 python
+    /private/tmp/npmech-vibriobactin-review-8vouqXEu/audit_current.py proteins
+  exit_code: 0
+  target_ids:
+  - CHEBI:9973
+  evidence_ids:
+  - receipts
+- check_id: draft-serialization
+  name: Initial draft validation
+  status: failed
+  required: false
+  summary: Draft YAML serialization introduced aliases rejected by the canonical validator.
+    Final serialization disables aliases; original failed draft and receipt are retained.
+  command: .venv/bin/python scripts/record_review.py validate /private/tmp/npmech-vibriobactin-review-8vouqXEu/20261013T102409Z-vibriobactin.yaml
+  exit_code: 1
+  target_ids:
+  - CHEBI:9973
+  evidence_ids:
+  - receipts
+- check_id: imodulondb-catalogue
+  name: Shared-adapter dataset catalogue
+  status: passed
+  required: false
+  command: env UV_CACHE_DIR=/private/tmp/npmech-prodigiosin-review-m1Ai8z/uv-cache
+    uv run --project ../../culturebotai-claw kg-microbe-sources imodulondb datasets
+  exit_code: 0
+  summary: Catalogue retrieval executed successfully; the distinct applicability assessment
+    remains not_applicable.
+  target_ids:
+  - CHEBI:9973
+  evidence_ids:
+  - imodulondb
+- check_id: draft-check-semantics
+  name: Intermediate draft validation
+  status: failed
+  required: false
+  summary: The applicability assessment incorrectly carried the executed catalogue
+    command exit code. These are now separate checks; the failed draft and receipt
+    remain.
+  command: .venv/bin/python scripts/record_review.py validate /private/tmp/npmech-vibriobactin-review-8vouqXEu/20261013T102604Z-vibriobactin-final.yaml
+  exit_code: 1
+  target_ids:
+  - CHEBI:9973
+  evidence_ids:
+  - receipts
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/natural_products/alkaloids/vibriobactin.yaml
+  accessed_at: '2026-10-13T10:24:09.824122Z'
+  support: supports
+  summary: Complete owner, evidence and history read; complete-mechanism reader resolves
+    one inline graph with 12 nodes and 11 edges, and no referenced components.
+  locator: Entire YAML and resolved analysis view
+  snapshot_sha256: c4452dbc65a7835ce78817f41e65474e31a6a00b1e914a4d688cec895d1d2a6e
+- evidence_id: inventory
+  kind: record_content
+  reference: /private/tmp/npmech-vibriobactin-review-8vouqXEu/source-rows.json
+  accessed_at: '2026-10-13T10:24:09.824443Z'
+  support: supports
+  summary: Complete six TSV inventories parsed by exact keys. MIBiG lines 1032/3118,
+    LOTUS lines 8442/4223, ChEBI line 2054 and NPClassifier lines 2276/1371 retain
+    distinct structures. No matching ChEBI occurrence or AntibioticMech row in those
+    complete inventories.
+  snapshot_sha256: 1bc8ee3bebc08178770b227e3068a87dabcc3f3a562568a49e1cc0494b360ddc
+  search_scope: csv.DictReader over all rows of the six named committed inventories;
+    ignored-file status does not filter parsed rows. This is not a claim about all
+    external databases.
+- evidence_id: receipts
+  kind: validation
+  reference: /private/tmp/npmech-vibriobactin-review-8vouqXEu
+  accessed_at: '2026-10-13T10:24:09.824543Z'
+  support: supports
+  summary: Executed-command receipts preserve UTC timing, commands, actual exit codes
+    and log hashes. The initial chemistry import failure is retained beside the configured
+    successful retry. QC was completed on the same verified corpus bytes.
+- evidence_id: capture
+  kind: validation
+  reference: /private/tmp/npmech-vibriobactin-review-8vouqXEu/revalidate-current.json
+  accessed_at: '2026-10-13T10:24:09.824573Z'
+  support: supports
+  summary: Ignored-inclusive Path.rglob and SHA256 checks cover all 3,115 owners,
+    243 graph components and 13 pre-existing immutable review pairs; all match the
+    prior campaign checkpoint.
+  snapshot_sha256: 610a23083d7fcf140f31f2ae6b81fa367eb5f36453b3b59b96cc71427d9ff2d0
+- evidence_id: chemistry
+  kind: validation
+  reference: /private/tmp/npmech-vibriobactin-review-8vouqXEu/chemistry-current.json
+  accessed_at: '2026-10-13T10:24:09.824672Z'
+  support: supports
+  summary: RDKit 2026.03.5 recomputes each stored key from SMILES and Standard InChI.
+    Both forms have C35H39N5O11, charge 0 and no Fe. The minted representation has
+    two unassigned stereocentres; the ChEBI form has none. Within-representation ChEBI
+    matches hold; InChI reconstruction changes amide/imidic-acid encoding.
+  locator: structures, cached_chebi and pubchem
+  snapshot_sha256: 3786e88f8bde82a3b83e4e903481b8557dc84300afb2a81abea62a9faf9259ab
+- evidence_id: bgc
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0002494.3/annotations.json
+  accessed_at: '2026-10-13T10:03:32.563446Z'
+  support: supports
+  summary: Active entry version 3 matches the owner source compound SMILES, taxonomy,
+    genome accession and original locus method. Entry quality is not used as scientific
+    validation. U52150.2 has zero/unspecified bounds and Heterologous expression;
+    legacy references explicitly identify PMID:10601218 and DOI:10.1128/JB.181.24.7588-7596.1999
+    as one citation.
+  snapshot_sha256: 722e08705a23d46e4d2afe318b107f4f7e41f4040d5f3bae4e80eca577de4e06
+- evidence_id: rubric
+  kind: record_content
+  reference: docs/record-review-profile.md
+  accessed_at: '2026-10-13T10:24:09.825371Z'
+  support: supports
+  summary: Exact structure, narrow claim evidence, producer-versus-occurrence and
+    locus-versus-taxon rules. docs/CURATION.md owns implemented corrections; decisions.tsv
+    is reserved and cannot effect a fix.
+- evidence_id: local-search
+  kind: search
+  reference: curation; conf; reviews/structured
+  accessed_at: '2026-10-13T10:24:09.825383Z'
+  support: context_only
+  summary: No pre-existing vibriobactin-specific correction or structured observation
+    matched the bounded ignored-inclusive search before these reviews were saved.
+  search_scope: rg --hidden --no-ignore for vibriobactin, BGC0002494, BGC0000945,
+    LLMKLMMXMOTPRU and SNUNDXZQRUCXRW under curation, conf and reviews/structured;
+    only the known generated record_review_queue.tsv was excluded. No global absence
+    claim.
+- evidence_id: taxonomy
+  kind: database
+  reference: data/raw/corpus_taxa.obo
+  accessed_at: '2026-10-13T10:24:09.825394Z'
+  support: partial
+  summary: Pinned corpus taxonomy resolves NCBITaxon:666 as Vibrio cholerae and 243277
+    as the N16961 strain. Current A5F3F4 explicitly resolves 345073 to O395; native
+    O395 deposits use the broader 666. Those source scopes remain distinct.
+  locator: Terms 666 and 243277; A5F3F4 organism object
+  snapshot_sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+- evidence_id: imodulondb
+  kind: database
+  reference: /private/tmp/npmech-vibriobactin-review-8vouqXEu/imodulondb.log
+  accessed_at: '2026-10-13T10:24:09.833607Z'
+  support: context_only
+  summary: The complete shared-adapter catalogue lists V. natriegens, not V. cholerae.
+    No applicable dataset was found in that catalogue; no substitute-species query
+    or negative biological conclusion was made.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+- evidence_id: access
+  kind: search
+  reference: https://journals.asm.org/doi/10.1128/jb.179.22.7055-7062.1997
+  accessed_at: '2026-10-13T10:18:32Z'
+  support: unknown
+  summary: PMID:9371453/DOI:10.1128/JB.179.22.7055-7062.1997 returned publisher 403
+    at 10:01:33Z. The 1984 isolation DOI:10.1016/S0021-9258(17)43671-4 first had a
+    DOI-tool error, then official JBC 403 at 10:18:32Z. No alternate content route
+    was attempted after either 403.
+  search_scope: Exact cited1997 publisher URL; exact1984 DOI and official JBC fulltext
+    URL. Previous PMID:11112537 publisher 403, PMID:11112538 unusable content and
+    PMID:11160122 challenge remain binding; no full-methods claims inferred.
+- evidence_id: chebi
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:9973
+  accessed_at: '2026-10-13T10:14:03Z'
+  support: supports
+  summary: Live name, definition, InChI/key, formula C35H39N5O11 and charge 0 match.
+    Ferric-vibriobactin is a separate ontology entity. Exclusivity to V. cholerae
+    is copied from ChEBI, not established here by a species-wide experimental survey.
+  locator: Identity, definition, chemistry and ontology sections
+- evidence_id: npatlas
+  kind: database
+  reference: https://www.npatlas.org/explore/compounds/NPA033096
+  accessed_at: '2026-10-13T10:14:03Z'
+  support: supports
+  summary: Chemical SMILES/InChI/key agree. The displayed Unknown-fungus/Fungi origin
+    metadata conflicts with its V. cholerae isolation citation; it is not imported
+    as a producer and does not invalidate the exact chemical xref.
+  locator: Properties and original isolation metadata
+- evidence_id: wyckoff1999
+  kind: primary_source
+  reference: https://journals.asm.org/doi/10.1128/jb.181.24.7588-7596.1999
+  accessed_at: '2026-10-13T10:14:03Z'
+  support: refutes
+  summary: Heterologous complementation tests Viu-dependent transport, not product
+    biosynthesis. Lou15 supplies siderophore; viu mutants retain production. U52150
+    maps the transport region flanked by biosynthetic annotations.
+  locator: Main text, Table 1, Table 3 and notes, characterization of viu mutants;
+    figures read as captions, not image pixels
+- evidence_id: proteins
+  kind: database
+  reference: /private/tmp/npmech-vibriobactin-review-8vouqXEu/proteins-current.json
+  accessed_at: '2026-10-13T10:24:09.839463Z'
+  support: supports
+  summary: All 11 current UniProt entries resolve; their canonical sequences match
+    code 11 cds=True translations from six pinned native EMBL deposits. Entry/sequence
+    versions, taxon, strain, coordinates, starts/stops and source annotations support
+    nine database-associated and two explicitly putative edges.
+  locator: proteins, source_pins and frameshift
+  snapshot_sha256: 12e4cca01454b0ffe27612118b2dfabea4472bca680a0ad2aeb6115b9f631bb2
+- evidence_id: seeder
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  accessed_at: '2026-10-13T10:24:09.839644Z'
+  support: refutes
+  summary: Lines 1165-1175 attach an independent-citation corroboration note solely
+    when a producer taxon matches an occurrence taxon; publication identity is not
+    compared.
+  locator: Producer/occurrence corroboration loop
+  snapshot_sha256: 1b9616ed25b5dd7b8053109beea665dd178ea73055ece551ba69e9cc63bff7a7
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact chemical representation and grounding
+  outcome: supported
+  summary: Database identity and internal chemistry match LLMKLMMXMOTPRU-YOAXHERRSA-N.
+    Live ChEBI9973 and NPAtlasNPA033096 agree with the neutral free-compound form.
+    This is not the ferric complex or the other same-label tautomer/stereo representation.
+  target_ids:
+  - CHEBI:9973
+  evidence_ids:
+  - owner
+  - chemistry
+  - bgc
+  - inventory
+  - chebi
+  - npatlas
+- assessment_id: classification
+  area: consistency
+  topic: Computed filing versus biological origin and taxonomy
+  outcome: supported
+  summary: Pinned NPClassifier Alkaloids/Ornithine alkaloids/Polyamines remains computed.
+    MIBiG NRPS/TypeI is an independent source classification. NATURAL_PRODUCT comes
+    from source origin, not structural prediction; the assay host is not reclassified
+    as an engineered producer. OTHER_BACTERIAL is consistent with the retained Vibrio
+    taxon.
+  target_ids:
+  - CHEBI:9973
+  evidence_ids:
+  - owner
+  - inventory
+  - bgc
+  - taxonomy
+- assessment_id: audit
+  area: provenance
+  topic: Generated inputs, status and history
+  outcome: supported
+  summary: Source hashes and full-corpus reproduction match. Native SEEDED status
+    and history remain unchanged; this review does not perform curation. No quantitative
+    activity, molecular target, clinical-status, dataset or cross-corpus assertion
+    is encoded.
+  target_ids:
+  - CHEBI:9973
+  evidence_ids:
+  - owner
+  - capture
+  - receipts
+- assessment_id: cluster
+  area: evidence
+  topic: BGC locus evidence grade
+  outcome: concern
+  summary: The source metadata is faithfully reproduced but does not justify CLUSTER_DEMONSTRATED
+    for biosynthesis; see F1. SOURCE_ASSERTION for the taxon is not a causal producer
+    grade.
+  target_ids:
+  - CHEBI:9973
+  evidence_ids:
+  - bgc
+  - wyckoff1999
+  - owner
+- assessment_id: origin
+  area: scope
+  topic: Producer and occurrence context
+  outcome: concern
+  summary: Named-compound occurrence is supported, but exact assay microstate remains
+    unverified. The missing strain qualifier and false citation-independence note
+    are separate bounded defects; see F2-F3.
+  target_ids:
+  - CHEBI:9973
+  evidence_ids:
+  - owner
+  - bgc
+  - wyckoff1999
+  - proteins
+  - seeder
+- assessment_id: graph
+  area: graph
+  topic: All11 protein participation edges
+  outcome: supported
+  summary: Within their explicitly limited predicates, all 11 edges have source support.
+    N16961, Lou15 and O395 are not conflated; uncertain initiation, automated enterobactin
+    annotations, inferred/predicted protein existence, absent exact reactions and
+    uninspected assay constructs remain qualified.
+  target_ids:
+  - CHEBI:9973
+  evidence_ids:
+  - owner
+  - proteins
+  - chemistry
+  dimensions:
+  - name: strains
+    value: N16961; Lou15 (El Tor); O395
+    definition: Distinct reference provenance, not one reconstructed strain pathway.
+    evidence_ids:
+    - proteins
+  - name: claim-tier
+    value: 9 database-associated; 2 putative
+    definition: Participation annotations, not eleven demonstrated reactions.
+    evidence_ids:
+    - owner
+    - proteins
+findings:
+- finding_id: F1
+  issue_key: vibriobactin-bgc2494-transport-as-biosynthesis
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Transport complementation is graded as demonstrated biosynthesis
+  description: BGC0002494 imports Heterologous expression from the 1999 transport
+    study. Its supported phenotype is siderophore utilization, not biosynthetic production
+    by the locus. CLUSTER_DEMONSTRATED therefore overstates this evidence. This does
+    not refute VibD/VibH participation or native production.
+  target_ids:
+  - CHEBI:9973
+  field_paths:
+  - biosynthetic_gene_clusters[0].link_evidence_basis
+  - biosynthetic_gene_clusters[0].locus_evidence_methods
+  - producer_organisms[0].notes
+  evidence_ids:
+  - owner
+  - bgc
+  - wyckoff1999
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Implemented pinned source-method withdrawal
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Locus and producer grade harmonization
+  rule_id: 'Native checklist: narrow claim-level evidence; Gene clusters; Producer
+    organisms; Evidence standard'
+  native_severity: major
+  normalization_reason: Material evidence-tier inflation survives deterministic validation;
+    normalized as major unsupported evidence.
+- finding_id: F2
+  issue_key: vibriobactin-same-publication-corroboration
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: The producer and occurrence cite the same publication
+  description: The occurrence DOI and producer PMID:10601218 are the same publication,
+    explicitly aliased by MIBiG. The generated note incorrectly claims a different
+    citation and independent corroboration. Two database assertions are not two experiments.
+  target_ids:
+  - CHEBI:9973
+  field_paths:
+  - occurrences[0].notes
+  evidence_ids:
+  - owner
+  - bgc
+  - seeder
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated cross-source corroboration wording
+  - repository: CultureBotAI/NaturalProductMech
+    path: docs/HARMONIZATION.md
+    role: Producer-versus-occurrence corroboration documentation
+  rule_id: 'Native checklist: narrow claim-level evidence; Gene clusters; Producer
+    organisms; Evidence standard'
+  native_severity: minor
+  normalization_reason: Non-blocking provenance wording; the underlying occurrence
+    need not be removed.
+- finding_id: F3
+  issue_key: vibriobactin-lou15-producer-strain
+  category: scope
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Producer assertion omits the available Lou15 strain qualifier
+  description: The producer row is species NCBITaxon:666 without strain, while its
+    exact U52150.2 source deposit specifies Lou15 (El Tor). The graph already preserves
+    this source distinction. Carry the strain into the producer assertion without
+    changing taxon identity or SOURCE_ASSERTION grade.
+  target_ids:
+  - CHEBI:9973
+  field_paths:
+  - producer_organisms[0].strain
+  evidence_ids:
+  - owner
+  - proteins
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Complete-raw-row-pinned source strain qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Producer claim generation
+  rule_id: 'Native checklist: narrow claim-level evidence; Gene clusters; Producer
+    organisms; Evidence standard'
+  native_severity: minor
+  normalization_reason: Bounded provenance loss; database producer evidence was not
+    falsely promoted to experimental causality.
+actions:
+- action_id: withdraw-inapplicable-method
+  finding_ids:
+  - F1
+  target_ids:
+  - CHEBI:9973
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Implemented pinned source-method withdrawal
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Locus and producer grade harmonization
+  description: Use the implemented WITHDRAW path for the exact BGC0002494 compound
+    row, with all required raw-context pins and inspected citation. Preserve original
+    source methods separately and regrade the unsupported locus claim; do not delete
+    the source entry or invent a replacement causal method.
+  generator: scripts/seed_from_sources.py
+  acceptance_checks:
+  - Exact-context withdrawal yields CLUSTER_UNSTATED and retains producer SOURCE_ASSERTION.
+  - Original MIBiG methods/citation survive as attributed provenance; source drift
+    fails closed.
+  - Dry-run, guarded canary, strict validation, reproduction and full QC pass without
+    native status promotion.
+- action_id: qualify-corroboration
+  finding_ids:
+  - F2
+  target_ids:
+  - CHEBI:9973
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated cross-source corroboration wording
+  - repository: CultureBotAI/NaturalProductMech
+    path: docs/HARMONIZATION.md
+    role: Producer-versus-occurrence corroboration documentation
+  description: Remove unconditional publication-independence language or establish
+    citation identity using a maintained DOI/PMID mapping. Keep distinct provenance
+    objects.
+  generator: scripts/seed_from_sources.py
+  acceptance_checks:
+  - The aliased DOI/PMID case is not described as independent experiments.
+  - Tests distinguish source multiplicity from publication independence, including
+    unknown aliases.
+  - Reproduction and full QC pass; no occurrence is deleted merely for sharing a citation.
+  - Documentation and report wording must not equate two source databases with independent
+    publications.
+- action_id: qualify-producer-strain
+  finding_ids:
+  - F3
+  target_ids:
+  - CHEBI:9973
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Complete-raw-row-pinned source strain qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Producer claim generation
+  description: Add an attributed Lou15 (El Tor) qualification through mibig_producer_strains.tsv,
+    pinned to the complete BGC0002494:1 source row.
+  generator: scripts/seed_from_sources.py
+  acceptance_checks:
+  - Generated producer carries Lou15 (El Tor); taxon NCBITaxon:666 and SOURCE_ASSERTION
+    remain unchanged.
+  - The complete raw-row digest, source reference and history are preserved; drift
+    and duplicate tests pass.
+  - Guarded canary, reproduction and native QC pass.
+- action_id: complete-primary-review
+  finding_ids: []
+  target_ids:
+  - CHEBI:9973
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Imported chemical, producer and BGC assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Imported exact structure-organism-reference triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: ChEBI identity and definition
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_origins.tsv
+    role: ChEBI occurrence assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/antibioticmech_inchikeys.tsv
+    role: Pinned exact-structure sibling joins
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated source harmonization
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: MIBiG extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_lotus.py
+    role: LOTUS occurrence extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/vibriobactin.yaml
+    role: Curator-owned inline graph; use validated writer, not seeder edits
+  description: With legitimately accessible primary material, finish exact-product
+    and source-scope review; do not retry access-stopped content through alternate
+    routes or import the sibling graph by name.
+  acceptance_checks:
+  - Inspect relevant primary text, chemical figures and experimental context at the
+    exact owner stereochemical resolution.
+  - Save a linked successor observation and retain all unresolved finding heads; do
+    not promote native status solely because checks passed.
+limitations:
+- Partial scientific observation, not completed campaign coverage or native status
+  promotion. The whole owner was read; some source verification remains unavailable.
+- 1997 and 1984 full texts were access-stopped. Earlier PMID:11112537, PMID:11112538
+  and PMID:11160122 method limitations remain. The accessible 1999 paper was text/table/caption
+  inspected, not a pixel-level figure or supplementary-material audit.
+- Fresh MIBiG checks are exact version 3 snapshots, not proof that no newer release
+  exists. Fresh UniProt checks and pinned native EMBL translations establish reference
+  correspondence, not biological initiation or assay-construct identity.
+- Current exact RDKit computation is successful only after valid RDBASE configuration.
+  The initial failed import and earlier campaign chemistry failures remain historical
+  observations; this review does not silently resolve them.
+- All 499 corpus label warnings and 4,649 skipped-no-adapter pairs remain visible.
+  Live Wikidata Q160821 timed out; no whole-ontology or universal identifier verification
+  is claimed.
+- No exact experimental microstate, stereochemical revision, strain equivalence or
+  fungus producer is inferred from shared labels, matching keys or upstream metadata
+  conflicts.
+notes:
+- No scientific owner, component, raw inventory, page or curation event was changed.
+  Only new immutable review bundles are saved.
+- The review resumed after a completed publication/cleanup turn. Original captured
+  inputs were rehashed and found unchanged before adding maintained-input hashes.
+- No applicable iModulonDB organism/dataset exists in the inspected adapter catalogue;
+  this says nothing about the biology.
+- 'Receipt provenance: {"chemistry": {"command": [".venv/bin/python", "/private/tmp/npmech-vibriobactin-review-8vouqXEu/audit_current.py",
+  "chemistry"], "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+  "exit_code": 1, "finished_at": "2026-10-13T10:16:19.050261Z", "log": "/private/tmp/npmech-vibriobactin-review-8vouqXEu/chemistry.log",
+  "log_sha256": "e1cc211476d9c8bba0d7197a523c2e726dcd92b108866cfeef71f2a12725091b",
+  "sha256": "bbe87138aedec8e03963b10181b31425f2a20da2f1da62f5952c8b07b2de1c41", "started_at":
+  "2026-10-13T10:16:18.237373Z"}, "chemistry-configured": {"command": ["env", "RDBASE=/private/tmp/npmech-rdkit-2026.03.5/share/RDKit",
+  ".venv/bin/python", "/private/tmp/npmech-vibriobactin-review-8vouqXEu/audit_current.py",
+  "chemistry"], "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+  "exit_code": 0, "finished_at": "2026-10-13T10:17:17.075957Z", "log": "/private/tmp/npmech-vibriobactin-review-8vouqXEu/chemistry-configured.log",
+  "log_sha256": "824c9b9995b6ba044a33211148b9ad0a77b59597a9669d20907b2ae395e8f22f",
+  "sha256": "e16bdec6831a4c6ca2ce84f78f235416d287ed2fdedff22fc18bacfc75ee0082", "started_at":
+  "2026-10-13T10:17:11.490515Z"}, "labels-enforce": {"command": [".venv/bin/python",
+  "scripts/validate_id_label_correspondence.py", "-c", "conf/id_label_targets.yaml"],
+  "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+  "exit_code": 0, "finished_at": "2026-10-13T10:16:35.730849Z", "log": "/private/tmp/npmech-vibriobactin-review-8vouqXEu/labels-enforce.log",
+  "log_sha256": "556ef5804e095767472c0aa8a542d5bff7e332470383a992e6b260103034414b",
+  "sha256": "e49180fd6a38d4a4c194971d0d12ee5f5da8b3024c31beb5df309086adc84923", "started_at":
+  "2026-10-13T10:14:39.558654Z"}, "qc": {"command": ["env", "UV_CACHE_DIR=/private/tmp/npmech-prodigiosin-review-m1Ai8z/uv-cache",
+  "just", "qc"], "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+  "exit_code": 0, "finished_at": "2026-10-13T10:12:52.714162Z", "log": "/private/tmp/npmech-vibriobactin-review-8vouqXEu/qc.log",
+  "log_sha256": "f08e2b889696ac4cbd844112363a7efe8daa707c97a70bd8bfdc7da92f63308c",
+  "sha256": "f5262dd79016dbadf53711cf4e7b47dd61e9d26a73dcdd45720d93367173d4f7", "started_at":
+  "2026-10-13T10:00:33.505590Z"}, "queue": {"command": [".venv/bin/python", "scripts/curation_worklist.py",
+  "--review-records", "--limit", "0", "--tsv", "/private/tmp/npmech-vibriobactin-review-8vouqXEu/review-queue.tsv"],
+  "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+  "exit_code": 0, "finished_at": "2026-10-13T10:15:23.283345Z", "log": "/private/tmp/npmech-vibriobactin-review-8vouqXEu/queue.log",
+  "log_sha256": "bbb1ab6cde51bba2ab4bea337d258f4c63aee5d7b06038405ee4defe497c3ee9",
+  "sha256": "19b26b3487078fb98ccc0407c49f811133dc41526fc1a9ee5d5b9d50efa49bbb", "started_at":
+  "2026-10-13T10:14:40.653005Z"}}'
+- 'Protein check coordinates: [{"accession": "Q56632", "canonical_match": true, "entry_audit":
+  {"entryVersion": 148, "firstPublicDate": "1998-12-15", "lastAnnotationUpdateDate":
+  "2026-09-02", "lastSequenceUpdateDate": "1996-11-01", "sequenceVersion": 1}, "location":
+  "[830175:830964](+)", "native": "AE003852.1", "protein_id": "AAF93939.1", "residues":
+  262, "start": "ATG", "stop": "TGA", "strain": "N16961", "taxon": 243277}, {"accession":
+  "P0C6D3", "canonical_match": true, "entry_audit": {"entryVersion": 89, "firstPublicDate":
+  "2008-02-26", "lastAnnotationUpdateDate": "2026-06-10", "lastSequenceUpdateDate":
+  "2008-02-26", "sequenceVersion": 1}, "location": "[826196:827078](+)", "native":
+  "AE003852.1", "protein_id": "AAF93936.1", "residues": 293, "start": "ATG", "stop":
+  "TGA", "strain": "N16961", "taxon": 243277}, {"accession": "O07898", "canonical_match":
+  true, "entry_audit": {"entryVersion": 127, "firstPublicDate": "1998-12-15", "lastAnnotationUpdateDate":
+  "2026-09-02", "lastSequenceUpdateDate": "1997-07-01", "sequenceVersion": 1}, "location":
+  "[828820:830008](-)", "native": "AE003852.1", "protein_id": "AAF93938.1", "residues":
+  395, "start": "ATG", "stop": "TAA", "strain": "N16961", "taxon": 243277}, {"accession":
+  "O07899", "canonical_match": true, "entry_audit": {"entryVersion": 134, "firstPublicDate":
+  "1998-12-15", "lastAnnotationUpdateDate": "2026-09-02", "lastSequenceUpdateDate":
+  "1997-07-01", "sequenceVersion": 1}, "location": "[827178:828810](-)", "native":
+  "AE003852.1", "protein_id": "AAF93937.1", "residues": 543, "start": "ATG", "stop":
+  "TGA", "strain": "N16961", "taxon": 243277}, {"accession": "Q9KTV9", "canonical_match":
+  true, "entry_audit": {"entryVersion": 116, "firstPublicDate": "2000-10-01", "lastAnnotationUpdateDate":
+  "2026-01-28", "lastSequenceUpdateDate": "2000-10-01", "sequenceVersion": 1}, "location":
+  "[830975:832292](-)", "native": "AE003852.1", "protein_id": "AAF93940.1", "residues":
+  438, "start": "GTG", "stop": "TGA", "strain": "N16961", "taxon": 243277}, {"accession":
+  "Q9KTV7", "canonical_match": true, "entry_audit": {"entryVersion": 117, "firstPublicDate":
+  "2000-10-01", "lastAnnotationUpdateDate": "2026-01-28", "lastSequenceUpdateDate":
+  "2000-10-01", "sequenceVersion": 1}, "location": "[836437:837223](+)", "native":
+  "AE003852.1", "protein_id": "AAF93945.1", "residues": 261, "start": "TTG", "stop":
+  "TGA", "strain": "N16961", "taxon": 243277}, {"accession": "Q9RCF7", "canonical_match":
+  true, "entry_audit": {"entryVersion": 56, "firstPublicDate": "2000-05-01", "lastAnnotationUpdateDate":
+  "2026-01-28", "lastSequenceUpdateDate": "2000-05-01", "sequenceVersion": 1}, "location":
+  "[5052:6363](-)", "native": "U52150.2", "protein_id": "AAD48879.1", "residues":
+  436, "start": "ATG", "stop": "TGA", "strain": "Lou15 (El Tor)", "taxon": 666}, {"accession":
+  "A5F3F4", "canonical_match": true, "entry_audit": {"entryVersion": 88, "firstPublicDate":
+  "2008-02-26", "lastAnnotationUpdateDate": "2026-06-10", "lastSequenceUpdateDate":
+  "2007-06-12", "sequenceVersion": 1}, "location": "[0:882](+)", "native": "AF287252.1",
+  "protein_id": "AAG00563.1", "residues": 293, "start": "ATG", "stop": "TGA", "strain":
+  "O395", "taxon": 345073}, {"accession": "Q9FDB2", "canonical_match": true, "entry_audit":
+  {"entryVersion": 79, "firstPublicDate": "2001-03-01", "lastAnnotationUpdateDate":
+  "2026-09-02", "lastSequenceUpdateDate": "2001-03-01", "sequenceVersion": 1}, "location":
+  "[0:1632](+)", "native": "AF287253.1", "protein_id": "AAG00564.1", "residues": 543,
+  "start": "ATG", "stop": "TGA", "strain": "O395", "taxon": 666}, {"accession": "Q9FDB1",
+  "canonical_match": true, "entry_audit": {"entryVersion": 91, "firstPublicDate":
+  "2001-03-01", "lastAnnotationUpdateDate": "2026-09-02", "lastSequenceUpdateDate":
+  "2001-03-01", "sequenceVersion": 1}, "location": "[0:1311](+)", "native": "AF287254.1",
+  "protein_id": "AAG00565.1", "residues": 436, "start": "ATG", "stop": "TGA", "strain":
+  "O395", "taxon": 666}, {"accession": "Q9FDB0", "canonical_match": true, "entry_audit":
+  {"entryVersion": 139, "firstPublicDate": "2001-03-01", "lastAnnotationUpdateDate":
+  "2026-09-02", "lastSequenceUpdateDate": "2001-03-01", "sequenceVersion": 1}, "location":
+  "[0:7242](+)", "native": "AF287255.1", "protein_id": "AAG00566.1", "residues": 2413,
+  "start": "ATG", "stop": "TAG", "strain": "O395", "taxon": 666}]'
+- 'Initial draft validation receipt: {"command": [".venv/bin/python", "scripts/record_review.py",
+  "validate", "/private/tmp/npmech-vibriobactin-review-8vouqXEu/20261013T102409Z-vibriobactin.yaml"],
+  "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+  "exit_code": 1, "finished_at": "2026-10-13T10:24:37.212711Z", "log": "/private/tmp/npmech-vibriobactin-review-8vouqXEu/validate-vibriobactin.log",
+  "log_sha256": "9754fbee2c8d2e0dd5f2db7cea93dfda03c23dd6e71a1d9c6d83c082b95130e5",
+  "started_at": "2026-10-13T10:24:35.881962Z"}'
+- 'Intermediate draft validation receipt: {"command": [".venv/bin/python", "scripts/record_review.py",
+  "validate", "/private/tmp/npmech-vibriobactin-review-8vouqXEu/20261013T102604Z-vibriobactin-final.yaml"],
+  "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+  "exit_code": 1, "finished_at": "2026-10-13T10:26:24.201380Z", "log": "/private/tmp/npmech-vibriobactin-review-8vouqXEu/validate-final-vibriobactin.log",
+  "log_sha256": "3ce4bdfe0aa1ed787db5996c34205bdd33502e7a04d08a0da806b6c6b8a77155",
+  "started_at": "2026-10-13T10:26:22.224414Z"}'
+tags:
+- record-review
+- vibriobactin
+- partial
