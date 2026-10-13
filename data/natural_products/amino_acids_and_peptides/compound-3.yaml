@@ -37,6 +37,16 @@ producer_organisms:
   - reference: PMID:31081214
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0002321 entry version 3; citation taken from the entry level
+  - reference: PMID:31081214
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: APC1.2 (CCOS978). Experimental Procedures identify wild-type
+      APC 1.2 (CCOS978) as Metschnikowia aff. pulcherrima; CP034458.1 independently
+      names APC1.2. This is not the W8 mutant or a complemented derivative and does
+      not resolve the proposed compound 3 structure or upgrade locus evidence. See
+      issue #915. Taxon identity and evidence grade are unchanged; this is not a species-wide
+      experiment. MIBiG source row BGC0002321:4; SHA256 80d41d4998165dd6b2d6796304411bc824c7fda7c7f11d20a20ead4f36cc7817.
+      Curator: codex; date: 2026-10-13.'
+  strain: APC1.2 (CCOS978)
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0002321
   entry_version: '3'
@@ -72,6 +82,27 @@ discussions:
   prompt: This record is labelled 'compound 3', which is a label from the cited paper's
     own numbering rather than a compound name. Resolve a name from the literature
     or a structure registry.
+- discussion_id: curator-compound3-proposed-structure
+  kind: KNOWLEDGE_GAP
+  status: OPEN
+  prompt: The recorded compound 3 structure is proposed, not definitively elucidated.
+    What direct structural evidence establishes its connectivity and stereochemistry?
+  posed_by: codex
+  rationale: 'PMID:31081214 Results and Figure 2B propose compound 3 as a di-N-hydroxylated
+    cyclodileucine intermediate or shunt product. High-resolution mass spectrometry
+    and isotope feeding support C12H22N2O4 and two leucine-derived carbon backbones
+    (supplementary Figure S4), not a definitive assignment of all bond positions or
+    stereochemistry. The imported molecular graph is retained as that proposal; stereo_complete:
+    false alone does not express the constitutional uncertainty.'
+  evidence:
+  - reference: PMID:31081214
+    evidence_source: full_text
+    notes: Curator interpretation of DOI:10.1111/mmi.14272; compound-analysis Results,
+      Figure 2B and supplementary Figure S4. This qualification neither establishes
+      a replacement structure nor assigns the whole-cell antifungal observations to
+      purified compound 3.
+  notes: 'Source qualification added for issue #914. Experimental identity remains
+    unresolved.'
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -81,3 +112,14 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T15:52:48Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T15:54:17Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add a cited curator discussion preserving the proposed compound 3 identity
+    and unresolved connectivity/stereochemistry (PMID:31081214; issue #914). Chemistry,
+    producer/locus evidence grades and SEEDED status are unchanged.'
+  llm_assisted: true
