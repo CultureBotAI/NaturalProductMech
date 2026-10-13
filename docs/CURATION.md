@@ -88,6 +88,9 @@ be empty. The row must carry a stable DOI, PMID or HTTPS `reference`, a
 `expected_locus_evidence_methods` to the exact raw values. Missing/duplicate
 targets or any source-context drift fail for inspection, including method
 order changes. An upstream refresh must not silently inherit a stale exclusion.
+Each pinned locus bound must be present, but may be explicitly empty when the
+raw source leaves it unstated. Missing pins, whitespace and nonnumeric nonempty
+bounds are rejected; empty pins still participate in exact source-drift checks.
 
 Withdrawal is applied before lead-record selection. An empty applicable method
 set grades the producer as `SOURCE_ASSERTION` and the cluster link as

@@ -33,8 +33,9 @@ occurrences:
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q25833700 Taxon id NCBITaxon:65497,
     as given by LOTUS, was merged into NCBITaxon:2893586 by NCBI Taxonomy; rewritten
-    at seed time. This taxon is also recorded as a producer, from a different source
-    and citation. The two corroborate each other rather than duplicating.
+    at seed time. This taxon is also recorded as a producer. Production and occurrence
+    are distinct claims; their citations may refer to the same publication. Publication
+    independence has not been established.
 bgc_class:
 - OTHER
 xrefs:
@@ -93,3 +94,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T10:43:52Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

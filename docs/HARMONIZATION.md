@@ -158,13 +158,13 @@ than lax: MIBiG asserts production and cites a report nobody here has read. It
 sits outside `CAUSAL_BASES`, so a consumer wanting demonstrated production
 filters it out.
 
-**A taxon in both fields is corroboration, not redundancy.** 729 records name
-the same organism as a producer and in an occurrence. That is two different
-claims with two independent citations — MIBiG asserting production from a gene
-cluster, and someone else reporting they detected the compound in that organism
-— so holding both is more evidence than holding either. The occurrence says so
-in its notes, and `just report` counts it, because otherwise it reads as a
-failure to deduplicate.
+**A taxon in both fields represents distinct claims, not necessarily independent
+evidence.** Production and occurrence assertions retain their own provenance,
+but their citations can refer to the same publication, including DOI/PMID aliases.
+Taxon overlap alone does not establish corroboration by separate experiments.
+The occurrence notes and `just report` state this limit. The historical JSON
+report key `producers_corroborated_by_an_occurrence` is retained for compatibility
+but counts only records with overlapping producer and occurrence taxa.
 
 `occurrences` requires a citation and a resolvable taxon, and nothing more,
 because it claims less. ChEBI's `compound_origins` rows land here: ChEBI is
@@ -268,7 +268,7 @@ consumer resolving against a current taxonomy gets nothing. `taxon_merged.tsv`,
 built from the same taxdump as `taxon_names.tsv`, maps old to current; the
 seeder rewrites every source-supplied id through it and says so on the claim.
 The source's id stays in the inventory as provenance. 167 ids were rewritten,
-and it raised producer-occurrence corroboration from 721 records to 732 —
+and it raised producer-occurrence taxon overlap from 721 records to 732 —
 claims that always described one organism and could not previously be seen to.
 
 **A cross-reference has to resolve, so its prefix follows identity.** MIBiG's

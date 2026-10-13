@@ -124,8 +124,9 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q25863250 This taxon is
-    also recorded as a producer, from a different source and citation. The two corroborate
-    each other rather than duplicating.
+    also recorded as a producer. Production and occurrence are distinct claims; their
+    citations may refer to the same publication. Publication independence has not
+    been established.
 - taxon_id: NCBITaxon:271065
   taxon_label: Methylomicrobium alcaliphilum
   taxon_source: NCBITaxon
@@ -136,8 +137,9 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q25863249 This taxon is
-    also recorded as a producer, from a different source and citation. The two corroborate
-    each other rather than duplicating.
+    also recorded as a producer. Production and occurrence are distinct claims; their
+    citations may refer to the same publication. Publication independence has not
+    been established.
 - taxon_id: NCBITaxon:271065
   taxon_label: Methylomicrobium alcaliphilum
   taxon_source: NCBITaxon
@@ -148,8 +150,9 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q25863249 This taxon is
-    also recorded as a producer, from a different source and citation. The two corroborate
-    each other rather than duplicating.
+    also recorded as a producer. Production and occurrence are distinct claims; their
+    citations may refer to the same publication. Publication independence has not
+    been established.
 - taxon_id: NCBITaxon:34058
   taxon_label: Methylobacter marinus
   taxon_source: NCBITaxon
@@ -160,8 +163,9 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q62902216 This taxon is
-    also recorded as a producer, from a different source and citation. The two corroborate
-    each other rather than duplicating.
+    also recorded as a producer. Production and occurrence are distinct claims; their
+    citations may refer to the same publication. Publication independence has not
+    been established.
 - taxon_id: NCBITaxon:40223
   taxon_label: Methylophaga thalassica
   taxon_source: NCBITaxon
@@ -172,8 +176,9 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q18344175 This taxon is
-    also recorded as a producer, from a different source and citation. The two corroborate
-    each other rather than duplicating.
+    also recorded as a producer. Production and occurrence are distinct claims; their
+    citations may refer to the same publication. Publication independence has not
+    been established.
 - taxon_id: NCBITaxon:72022
   taxon_label: Methylarcula marina
   taxon_source: NCBITaxon
@@ -184,8 +189,9 @@ occurrences:
     notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q61954810 This taxon is
-    also recorded as a producer, from a different source and citation. The two corroborate
-    each other rather than duplicating.
+    also recorded as a producer. Production and occurrence are distinct claims; their
+    citations may refer to the same publication. Publication independence has not
+    been established.
 bioactivities:
 - assay: 'In vitro CYP3A4 Inhibition Assay from US Patent US9144538: "Cosmetic compositions
     containing substituted azole and methods for alleviating the signs of photoaged
@@ -994,6 +1000,10 @@ curation_history:
     field and all main and feature history; no scientific pin refresh.'
   llm_assisted: true
 - timestamp: '2026-10-13T07:43:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T10:45:35Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.

@@ -38,8 +38,9 @@ occurrences:
       252-274.'
   taxon_id: NCBITaxon:66431
   taxon_source: NCBITaxon
-  notes: cell suspension culture This taxon is also recorded as a producer, from a
-    different source and citation. The two corroborate each other rather than duplicating.
+  notes: cell suspension culture This taxon is also recorded as a producer. Production
+    and occurrence are distinct claims; their citations may refer to the same publication.
+    Publication independence has not been established.
 related_records:
 - corpus: AntibioticMech
   identifier: CHEBI:80024
@@ -576,3 +577,7 @@ curation_history:
     import, purified kinetics, universal substrate-specificity or REVIEWED-status
     promotion.'
   llm_assisted: true
+- timestamp: '2026-10-13T10:43:17Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

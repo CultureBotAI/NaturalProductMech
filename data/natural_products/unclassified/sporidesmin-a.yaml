@@ -47,8 +47,9 @@ occurrences:
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q41793778 Taxon id NCBITaxon:1547544,
     as given by LOTUS, was merged into NCBITaxon:1892770 by NCBI Taxonomy; rewritten
-    at seed time. This taxon is also recorded as a producer, from a different source
-    and citation. The two corroborate each other rather than duplicating.
+    at seed time. This taxon is also recorded as a producer. Production and occurrence
+    are distinct claims; their citations may refer to the same publication. Publication
+    independence has not been established.
 - taxon_id: NCBITaxon:1892770
   taxon_label: Pithomyces chartarum
   taxon_source: NCBITaxon
@@ -60,8 +61,9 @@ occurrences:
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q41793778 Taxon id NCBITaxon:1547544,
     as given by LOTUS, was merged into NCBITaxon:1892770 by NCBI Taxonomy; rewritten
-    at seed time. This taxon is also recorded as a producer, from a different source
-    and citation. The two corroborate each other rather than duplicating.
+    at seed time. This taxon is also recorded as a producer. Production and occurrence
+    are distinct claims; their citations may refer to the same publication. Publication
+    independence has not been established.
 - taxon_id: NCBITaxon:1892770
   taxon_label: Pithomyces chartarum
   taxon_source: NCBITaxon
@@ -73,8 +75,9 @@ occurrences:
       was found in the organism; it does not assert that the organism produces it.
   notes: Wikidata organism http://www.wikidata.org/entity/Q41793778 Taxon id NCBITaxon:1547544,
     as given by LOTUS, was merged into NCBITaxon:1892770 by NCBI Taxonomy; rewritten
-    at seed time. This taxon is also recorded as a producer, from a different source
-    and citation. The two corroborate each other rather than duplicating.
+    at seed time. This taxon is also recorded as a producer. Production and occurrence
+    are distinct claims; their citations may refer to the same publication. Publication
+    independence has not been established.
 - taxon_label: Pithomyces chartarum
   source: CHEBI
   evidence:
@@ -84,9 +87,9 @@ occurrences:
   taxon_id: NCBITaxon:1892770
   taxon_source: NCBITaxon
   notes: Taxon id NCBITaxon:1547544, as given by ChEBI, was merged into NCBITaxon:1892770
-    by NCBI Taxonomy; rewritten at seed time. This taxon is also recorded as a producer,
-    from a different source and citation. The two corroborate each other rather than
-    duplicating.
+    by NCBI Taxonomy; rewritten at seed time. This taxon is also recorded as a producer.
+    Production and occurrence are distinct claims; their citations may refer to the
+    same publication. Publication independence has not been established.
 bgc_class:
 - OTHER
 xrefs:
@@ -144,3 +147,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T10:44:51Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

@@ -105,6 +105,8 @@ def summarize(records: list[dict[str, Any]]) -> dict[str, Any]:
             "correlated": correlated,
             "by_basis": dict(sorted(producer_bases.items())),
         },
+        # Historical JSON key retained for consumers; this counts taxon overlap,
+        # not independent publications or experiments.
         "producers_corroborated_by_an_occurrence": corroborated[0],
         # A record whose origin rests only on a gene cluster whose host NCBI
         # does not name. Counted because otherwise withholding those producer
@@ -166,8 +168,9 @@ def render(summary: dict[str, Any]) -> str:
     for key, count in links["by_basis"].items():
         lines.append(f"  {key:<34} {count:>6}")
     lines.append("")
-    lines.append(f"records where a producer taxon is independently corroborated by a "
-                 f"cited occurrence: {summary['producers_corroborated_by_an_occurrence']}")
+    lines.append(f"records with a producer taxon also reported in a cited occurrence "
+                 f"(publication independence not assessed): "
+                 f"{summary['producers_corroborated_by_an_occurrence']}")
     lines.append(f"records whose only origin evidence is a gene cluster with no named "
                  f"host: {summary['origin_only_from_an_unnamed_host']}")
     lines.append("")

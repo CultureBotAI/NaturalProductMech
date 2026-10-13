@@ -476,6 +476,32 @@ CHEBI_ROW = {
 }
 
 
+@pytest.mark.parametrize("producer_reference,occurrence_doi", [
+    ("DOI:10.1128/JB.181.24.7588-7596.1999", "10.1128/JB.181.24.7588-7596.1999"),
+    ("PMID:10601218", "10.1128/JB.181.24.7588-7596.1999"),
+    ("PMID:1", "10.1000/unknown-alias"),
+])
+@pytest.mark.parametrize("overlap", [True, False])
+def test_occurrence_overlap_never_establishes_publication_independence(
+    producer_reference, occurrence_doi, overlap,
+):
+    source = {**MIBIG_ROW, "primary_reference": producer_reference}
+    occurrence = {
+        "standard_inchi_key": source["standard_inchi_key"],
+        "taxon_id": source["taxon_id"] if overlap else "NCBITaxon:562",
+        "organism_name": source["taxon_label"] if overlap else "Escherichia coli",
+        "organism_wikidata": "Q123", "reference_doi": occurrence_doi,
+    }
+    doc, = seed.build_records({"mibig_compounds": [source], "lotus_occurrences": [occurrence]})
+    observed, = doc["occurrences"]
+    assert observed["evidence"][0]["reference"] == "DOI:" + occurrence_doi
+    assert doc["producer_organisms"][0]["evidence"][0]["reference"] == producer_reference
+    note = observed["notes"]
+    assert note.startswith("Wikidata organism Q123")
+    assert "corroborate" not in note and "different source and citation" not in note
+    assert ("Publication independence has not been established." in note) == overlap
+
+
 def test_producer_strain_only_changes_qualified_producer():
     from naturalproductmech.curate.structure_corrections import row_digest
 

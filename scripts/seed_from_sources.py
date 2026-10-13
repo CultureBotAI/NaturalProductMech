@@ -463,13 +463,18 @@ def load_mibig_locus_evidence_overrides(
             if row["locus_evidence_methods"]:
                 raise ValueError(f"{identifier} WITHDRAW must have empty replacement methods")
             required = ("source_id", "reference", "rationale", "curator", "date") + tuple(
-                "expected_" + field for field in MIBIG_WITHDRAWAL_CONTEXT)
+                "expected_" + field for field in MIBIG_WITHDRAWAL_CONTEXT
+                if field not in {"locus_from", "locus_to"})
             if row.get("source") != "MIBIG" or any(
                 not isinstance(row.get(field), str) or not row[field].strip()
                 for field in required
             ):
                 raise ValueError(
                     f"{identifier} WITHDRAW requires source, citation, rationale and pinned context")
+            for field in ("expected_locus_from", "expected_locus_to"):
+                value = row.get(field)
+                if not isinstance(value, str) or (value and not re.fullmatch(r"[0-9]+", value)):
+                    raise ValueError(f"{identifier} WITHDRAW requires explicit pinned bounds: {field}")
             reference = row["reference"]
             url = urlsplit(reference)
             if not (re.fullmatch(r"(?:DOI:10\.\d{4,9}/\S+|PMID:\d+)", reference) or (
@@ -1148,8 +1153,8 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
         # De-duplicate on (taxon, reference). Two routes produce exact
         # duplicates: a REVIEW_NEEDED record pulling origins from several ChEBI
         # entries that share one, and ChEBI and LOTUS citing the same paper
-        # (#26). The same taxon from two DIFFERENT references is not a
-        # duplicate — it is two independent reports, which is more evidence.
+        # (#26). Distinct reference strings remain separate; DOI/PMID aliases
+        # are not resolved here and do not establish independent publications.
         deduped: list[dict[str, Any]] = []
         seen_occurrence: set[tuple[str, str]] = set()
         for occurrence in occurrences:
@@ -1162,14 +1167,14 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             seen_occurrence.add(signature)
             deduped.append(occurrence)
 
-        # A taxon that is also a producer is CORROBORATION, not redundancy: the
-        # occurrence carries its own independent citation. Said on the record so
-        # a reader does not mistake it for a failure to deduplicate (#27).
+        # Preserve the distinct claims without inferring publication independence
+        # from taxon overlap or different citation identifiers (#891).
         producer_taxa = {p["taxon_id"] for p in producers}
         for occurrence in deduped:
             if occurrence.get("taxon_id") in producer_taxa:
-                note = ("This taxon is also recorded as a producer, from a different source "
-                        "and citation. The two corroborate each other rather than duplicating.")
+                note = ("This taxon is also recorded as a producer. Production and occurrence "
+                        "are distinct claims; their citations may refer to the same publication. "
+                        "Publication independence has not been established.")
                 occurrence["notes"] = (
                     f"{occurrence['notes']} {note}" if occurrence.get("notes") else note
                 )

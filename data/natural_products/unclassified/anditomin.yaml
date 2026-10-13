@@ -35,8 +35,8 @@ occurrences:
   taxon_id: NCBITaxon:1549217
   taxon_source: NCBITaxon
   notes: Species also known as Aspergillus variecolor. This taxon is also recorded
-    as a producer, from a different source and citation. The two corroborate each
-    other rather than duplicating.
+    as a producer. Production and occurrence are distinct claims; their citations
+    may refer to the same publication. Publication independence has not been established.
 bgc_class:
 - TERPENE
 xrefs:
@@ -1191,3 +1191,7 @@ curation_history:
     and compacted duplicated secondary-edge anditomin evidence blocks without changing
     graph claims.
   llm_assisted: true
+- timestamp: '2026-10-13T10:43:28Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

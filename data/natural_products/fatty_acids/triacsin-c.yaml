@@ -34,8 +34,9 @@ occurrences:
   taxon_id: NCBITaxon:1894
   taxon_source: NCBITaxon
   detection_context: '1228'
-  notes: cell suspension culture This taxon is also recorded as a producer, from a
-    different source and citation. The two corroborate each other rather than duplicating.
+  notes: cell suspension culture This taxon is also recorded as a producer. Production
+    and occurrence are distinct claims; their citations may refer to the same publication.
+    Publication independence has not been established.
 bioactivities:
 - assay: 'Confirmation Concentration-Response Assay for lipid storage modulators:
     for probe SAR'
@@ -179,6 +180,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-10-13T07:42:28Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T10:44:21Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
