@@ -1,0 +1,858 @@
+# mycophenolic acid: exact-structure and source-support review (BGC0001360)
+
+- Review: 20261013T044353Z-mycophenolic-acid-2
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-13T04:17:51Z
+- Finished UTC: 2026-10-13T04:43:53.276286Z
+- Reviewer: Codex (self_review)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+A confirmed constitutional identity error survives deterministic validation. The full owner was read and existing claims assessed; unavailable source verification prevents a completed review. One blocker finding.
+
+## Scope And Provenance
+
+One exact record, including the full owner and graph-reference check. This is one observation in an exhaustive 3115-record campaign, not a sample-based corpus verdict.
+
+Selection: Exact path and minted identifier from the ignored-inclusive population inventory; prioritized for same-name/different-constitution risk.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base e66f934111777c4ebfe69475d0520c0cfa074785.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-1e0dcc87ee | data/natural_products/alkaloids/mycophenolic-acid-2.yaml | generated | mycophenolic acid |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| inspect-ready | passed | True | naturalproductmech:mibig-1e0dcc87ee | Canonical target and context hash capture succeeded before assessment. |
+| target-strict | passed | True | naturalproductmech:mibig-1e0dcc87ee | Closed-schema validation passed for this exact owner, including graph-reference resolution. |
+| complete-view | passed | True | naturalproductmech:mibig-1e0dcc87ee | The native read_natural_product reader resolves the complete owner view; both selected records have zero graphs and zero component references. |
+| qc | passed | True | naturalproductmech:mibig-1e0dcc87ee | Full-corpus QC: lint, governed-file sync, documentation, provenance, source queue, tests, strict schema, page freshness, offline reproduction, corpus integrity and report. |
+| labels | passed | True | naturalproductmech:mibig-1e0dcc87ee | Full-corpus configured ontology/label check. Minted identifiers and database namespaces remain adapter-skipped; this is not chemical identity proof. |
+| review-baseline | passed | True | naturalproductmech:mibig-1e0dcc87ee | Baseline shared checker found zero structured reviews, including hidden/ignored review paths. Zero is missing coverage, not a pass. |
+| review-queue | passed | True | naturalproductmech:mibig-1e0dcc87ee | The native exhaustive queue was generated for prioritization; it is not scientific coverage. |
+| ignored-inclusive-identity-search | passed | True | naturalproductmech:mibig-1e0dcc87ee | Ignored-inclusive identifier/label/slug search; no inference from Git-aware search alone. |
+| Name versus exact structure | failed | True | naturalproductmech:mibig-1e0dcc87ee | The named natural product and the stored molecular constitution disagree; see F1. |
+| Live source and identifier verification | unavailable | True | naturalproductmech:mibig-1e0dcc87ee | MIBiG BGC0001360 and DOI 10.1021/cr990097b were inaccessible. HG792019.1 resolved to FM164, but the abbreviated display did not expose locus features. |
+| Structured expression-module applicability | not_applicable | False | naturalproductmech:mibig-1e0dcc87ee | No iModulon, regulator, gene-level expression dataset or protein example is asserted in this target. Local MIBiG source rows were checked; expression modules cannot resolve the chemical identity conflict. |
+| Auxiliary chemical serialization consistency | passed | False | naturalproductmech:mibig-1e0dcc87ee | Cached RDKit 2024.03.5 reproduces the stored InChI and InChIKey; this is not the project-pinned 2026.3.5 extractor and is not a native gate. |
+| inspect | failed | False | naturalproductmech:mibig-1e0dcc87ee | Initial input-capture attempt failed because the inventory had not yet written its target file; no assessment relied on this attempt. The subsequent inspect-ready check succeeded. |
+
+## Scientific And Domain Assessments
+
+### Exact named chemical form
+
+identity: concern. Targets: naturalproductmech:mibig-1e0dcc87ee.
+
+F1: the molecular constitution does not match the label or its cited biological context. Minting avoids a false ChEBI link but does not repair the name/structure conflict.
+
+### SMILES, InChI, key and stereochemical encoding
+
+consistency: supported. Targets: naturalproductmech:mibig-1e0dcc87ee.
+
+The stored serializations agree in the auxiliary calculation, with no undefined tetrahedral centers detected. No formula/charge/mass values are asserted in this YAML. Experimental identity remains refuted by F1.
+
+### Cross-references, parents, congeners and same-name neighbors
+
+grounding: concern. Targets: naturalproductmech:mibig-1e0dcc87ee.
+
+No xrefs, parent or congener claims are asserted. The intended CHEBI:168396 structure already has a separate owner; do not merge distinct structures or overwrite its existing graphs.
+
+### Computed filing versus asserted BGC class and origin
+
+consistency: supported. Targets: naturalproductmech:mibig-1e0dcc87ee.
+
+ALKALOIDS matches the pinned NPClassifier row for the stored input; the source BGC class remains a separate assertion. The filing mechanism is faithful, but NATURAL_PRODUCT membership is scientifically compromised by F1.
+
+### Taxon identifiers, named strain and broad lineage facet
+
+grounding: supported. Targets: naturalproductmech:mibig-1e0dcc87ee.
+
+NCBITaxon:5082 and NCBITaxon:1365484 match the pinned species and FM164 labels, respectively; FUNGAL matches the pinned lineage table. Label validity does not prove production.
+
+### Producer versus locus claim, source version and grade
+
+evidence: unknown. Targets: naturalproductmech:mibig-1e0dcc87ee.
+
+SOURCE_ASSERTION and CLUSTER_UNSTATED correctly preserve the raw version-3 method absence. The bioactivity-level citation is explicitly labelled DATABASE_ASSERTION, not an experiment. Current active status and compound-specific applicability remain unverified.
+
+### Occurrence versus biosynthesis and exact compound support
+
+evidence: concern. Targets: naturalproductmech:mibig-1e0dcc87ee.
+
+The LOTUS occurrence stays separate from production, but its paper does not support occurrence of this brominated structure. The species assertion is not evidence for an FM164 experiment.
+
+### Pathway, all graphs, targets, activities and bioactivity summary
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-1e0dcc87ee.
+
+The complete raw owner contains no pathway, inline graph, graph references, molecular target, bioactivity observation or activity-summary assertion. Optional empty slots are not findings; mechanism expansion must wait for exact identity.
+
+### Datasets, cross-corpus links, clinical status and discussions
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-1e0dcc87ee.
+
+No dataset, related-record link, clinical-status claim or discussion is asserted. Genome metadata belongs to the BGC object and is assessed separately. No bibliography or clinical inference is manufactured.
+
+### Generated ownership, status and audit trail
+
+provenance: supported. Targets: naturalproductmech:mibig-1e0dcc87ee.
+
+Both events are seed-from-sources events and native status remains SEEDED. Reproduction/strict/history coverage in QC establishes structural provenance, not literature review. This report changes neither history nor status.
+
+## Findings
+
+### F1: The structure is not the natural product named by the record
+
+blocker / open / confirmed; issue key: mibig-BGC0001360-compound-1-wrong-constitution.
+
+The stored IKMDAJQFLYGHII-UHFFFAOYSA-N (C12H14Br2N2OS) is a chemically different constitution from the named compound. The committed MIBiG row already contains the mismatch. The LOTUS occurrence additionally attaches the same wrong key to a paper about genuine mycophenolic acid. A generated record can be byte-reproducible while denoting the wrong molecule. Producer, BGC and natural-origin claims must not be transferred across the identity conflict.
+
+## Recommended Actions And Acceptance Checks
+
+### A1
+
+Resolve the upstream compound identity and audit every attached claim. Correct or withhold the bad maintained source assertion through an implemented, tested route; do not hand-edit generated YAML or use reserved decisions.tsv. CHEBI:168396 already has an occupied owner, so the narrow REPLACE_WITH_CHEBI table must continue refusing a collision. Any consolidation needs a separately reviewed ownership/history/component migration and slug retirement.
+
+- Inspected primary/authority evidence establishes one exact compound form and every retained source claim matches it.
+- Regression tests cover this accession and reject name-only merging or transfer of old-key occurrences, assays, graphs or history.
+- Run the documented seed dry run and one-record canary before authorized guarded changes; then strict validation, verify-corpus, verify-reproduction, label checks and full QC pass.
+- Keep the wrong and intended structures distinct until an explicitly audited migration accounts for every affected owner and published slug.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/natural_products/alkaloids/mycophenolic-acid-2.yaml; Entire owner YAML, all fields and both curation events | supports | Exact minted record read in full. No inline graphs or component references. This evidence establishes what is asserted, not whether the science is correct. |
+| source-rows | data/raw/mibig_compounds.tsv; BGC0001360, compound_index=1; joined classification, taxonomy and filing rows | supports | Complete parsed source rows and applicable maintained correction tables were inspected. Chemistry and source grades reproduce the imported snapshot; no correction/override row targets this accession. Local extract: /private/tmp/npmech-all-record-reviews-pU8b8GXS/local-source-rows.json |
+| chemistry | /private/tmp/npmech-all-record-reviews-pU8b8GXS/chemistry-auxiliary.json; data/natural_products/alkaloids/mycophenolic-acid-2.yaml | supports | Auxiliary RDKit 2024.03.5 calculated formula C12H14Br2N2OS, exact stored InChI/Key, and 0 undefined tetrahedral centers. Internal consistency does not authenticate the label. |
+| chebi | https://www.ebi.ac.uk/chebi/CHEBI:168396; Name, definition, formula, SMILES, InChI and InChIKey | refutes | Mycophenolic acid is C17H20O6 with key HPNSFSBZBAHARI-RUDMXATFSA-N. This is constitutionally different from the stored C12H14Br2N2OS, not a stereochemical or protonation variant. |
+| local-search | CultureBotAI/NaturalProductMech@e66f934111777c4ebfe69475d0520c0cfa074785; Full worktree file-content search plus structured source-table selectors | context_only | The same label has another structure owner. Only its locator/key was inspected for collision handling; the other owner is not counted as reviewed. |
+| ownership | docs/CURATION.md; MIBiG structure corrections; locus-evidence overrides; generated versus curator ownership | supports | Fixes belong in implemented maintained inputs and tested source transforms, never generated pages or direct owner YAML edits. decisions.tsv is reserved, not consumed. The narrow structure-correction table rejects occupied destinations. |
+| qc | /private/tmp/npmech-all-record-reviews-pU8b8GXS/qc.log; Complete current-run log | supports | Native deterministic checks passed on the unchanged corpus. The scientific identity defect survives them. |
+| labels | /private/tmp/npmech-all-record-reviews-pU8b8GXS/labels.log; Full configured ontology/label results and warning report | context_only | The minted identity is intentionally not ontology-resolved. Successful configured correspondence checks do not validate its compound name. |
+| access-limits | https://mibig.secondarymetabolites.org/repository/BGC0001360/; Direct official URL checks through web tool | unknown | Direct BGC0001360 and doi.org/10.1021/cr990097b requests returned Internal Error; no source text was inspected there. |
+| occurrence-source | data/raw/lotus_occurrences.tsv; IKMDAJQFLYGHII-UHFFFAOYSA-N, NCBITaxon:5082, DOI:10.1371/JOURNAL.PONE.0147047 | context_only | The imported triple associates the wrong key with P. roqueforti and this DOI; structure Wikidata Q105114740. Its presence is not independent confirmation of the compound identity. |
+| paper | https://doi.org/10.1371/journal.pone.0147047; Introduction; fungal strains; extraction/HPLC methods; Results through gene-silencing context | refutes | The study concerns phthalide/terpenoid mycophenolic acid, tested CECT 2905 (ATCC 10110), and used a pure MPA standard for HPLC. It does not authenticate the brominated record or establish equivalent experiments in FM164. |
+| genome | https://www.ncbi.nlm.nih.gov/nuccore/HG792019.1; Displayed accession and scaffold title; sequence/features abbreviated | partial | HG792019.1 resolves to Penicillium roqueforti FM164 scaffold ProqFM164S05. The displayed page does not verify the recorded interval 1294894..1318068 or its product. |
+
+## Limits And Additional Notes
+
+- Required source-currentness checks are unavailable as detailed above; partial completion is deliberate and no scientific pass is claimed.
+- The project-pinned RDKit 2026.3.5 was unavailable locally/offline. The explicitly versioned 2024.03.5 calculation is auxiliary only, not a replacement native gate.
+- All 3115 records remain in the campaign. The other 3114 records are outside this single-record review; referenced same-name neighbors are not counted as scientifically reviewed.
+- No paid providers, source retries, record corrections, status promotions, GitHub issues or other publication actions were performed. Findings/actions are proposed curation, not completed fixes.
+- The original zero-review baseline and the population hashes are retained in /private/tmp/npmech-all-record-reviews-pU8b8GXS. Existing ad hoc or generated review-queue content is not structured scientific review.
+- All native checks ran against base e66f934111777c4ebfe69475d0520c0cfa074785; external evidence was inspected on 2026-10-13.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261013T044353Z-mycophenolic-acid-2
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'mycophenolic acid: exact-structure and source-support review (BGC0001360)'
+started_at: '2026-10-13T04:17:51Z'
+finished_at: '2026-10-13T04:43:53.276286Z'
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: self_review
+  independence_basis: Same assistant/thread previously curated this repository; no
+    claim of independent review. These two source-owned target records were not changed
+    during this review.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: A confirmed constitutional identity error survives deterministic validation.
+  The full owner was read and existing claims assessed; unavailable source verification
+  prevents a completed review. One blocker finding.
+source:
+  git_revision: e66f934111777c4ebfe69475d0520c0cfa074785
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: 49e2ab03c7e82013e9d68356de2c9965c9f8517a3408a44124076f4ca1b529cd
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 0b2e8b991c926f9a67a3094964b0335dd1cd347fbf548674fa273db8fac3a4b2
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: 5b1edc057cdcc732f61de2964cd175fa3bc2dca929c5d2823142f61313545a7e
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: bf38e4f0c7e4bcbdf184a4e7b8b024752251e8f34c015c0b82cedca98a8a5729
+    role: context
+  - path: data/natural_products/alkaloids/mycophenolic-acid-2.yaml
+    sha256: a9de4957ebce6adb145e3838023650bef784eabfed454ccc8676af0392a509a9
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: 373f049029be3db137e062ff5f872a2400a9d5b423f3e108ea44ebde2f8dcc7d
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: 7b9b9f78f5b14aea9fabb163bbaa9e842920a7e9b07deac8f98c97666e9e23fc
+    role: context
+  - path: docs/CURATION.md
+    sha256: 3b979068592adbb0611de95927ca31eaabb5fb5d791aa09973e3b1e8d5a19011
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: 30c7007e57806c245674ce922e0f8c485b1a8a12a9f9fb95850ba6ee4f8cddc2
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_lotus.py
+    sha256: 8a8c524f60f85d2bb54412ca055a6a45e0d37ec5f4584d8d70be454b8f664290
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 2da30b7ccf4b9543ecbe02eb0c8662e51a82c0745aa45be28afbf8ceb38fc1be
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: data/raw/taxon_groups.tsv
+    sha256: f73f228d57d79a1d85a1441efa6829917b1ffecac08cb7bdd4fc855046255f8f
+    role: context
+scope:
+  description: One exact record, including the full owner and graph-reference check.
+    This is one observation in an exhaustive 3115-record campaign, not a sample-based
+    corpus verdict.
+  selection: Exact path and minted identifier from the ignored-inclusive population
+    inventory; prioritized for same-name/different-constitution risk.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+targets:
+- target_id: naturalproductmech:mibig-1e0dcc87ee
+  path: data/natural_products/alkaloids/mycophenolic-acid-2.yaml
+  label: mycophenolic acid
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Imported MIBiG compound chemistry and cluster assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Imported structure-organism-publication occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: MIBiG extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_lotus.py
+    role: LOTUS extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated record harmonization
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Narrow correction route, excludes occupied destination keys
+checks:
+- check_id: inspect-ready
+  name: inspect-ready
+  status: passed
+  required: true
+  summary: Canonical target and context hash capture succeeded before assessment.
+  target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python3
+    scripts/record_review.py inspect --targets /private/tmp/npmech-all-record-reviews-pU8b8GXS/targets.json
+    --input CLAUDE.md --input docs/record-review-profile.md --input docs/record-reviews.md
+    --input .claude/skills/review-yaml-record/SKILL.md --input .claude/skills/curate-yaml-record/references/review-checklist.md
+    --input docs/CURATION.md --input docs/HARMONIZATION.md --input conf/record_review.yaml
+    --input schema/record_review.yaml --input src/naturalproductmech/schema/naturalproductmech.yaml
+    --input conf/producer_evidence.tsv --input conf/id_label_targets.yaml --input
+    data/raw/MANIFEST.yaml --input data/raw/mibig_compounds.tsv --input data/raw/lotus_occurrences.tsv
+    --input data/raw/chebi_structures.tsv --input data/raw/corpus_taxa.obo --input
+    data/raw/npclassifier.tsv --input data/natural_products/PATHS.tsv --input curation/mibig_structure_corrections.tsv
+    --input curation/mibig_locus_evidence_overrides.tsv --input scripts/extract_mibig.py
+    --input scripts/extract_lotus.py --input scripts/seed_from_sources.py
+  exit_code: 0
+  scope_note: 'Actual command log: /private/tmp/npmech-all-record-reviews-pU8b8GXS/inspect-ready.log;
+    SHA-256 0f8da8280d3a3a1a8cc05517ab5f1fd085d2467daf748b4dc275ea33d264fbcb'
+- check_id: target-strict
+  name: target-strict
+  status: passed
+  required: true
+  summary: Closed-schema validation passed for this exact owner, including graph-reference
+    resolution.
+  target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python3
+    scripts/validate_strict.py data/natural_products/alkaloids/mycophenolic-acid-2.yaml
+    --out /private/tmp/npmech-all-record-reviews-pU8b8GXS/target-strict.tsv
+  exit_code: 0
+  scope_note: 'Actual command log: /private/tmp/npmech-all-record-reviews-pU8b8GXS/target-strict.log;
+    SHA-256 8beb64e9e47a9311bcab77dd9b3f4fc72176c6a93a7593c68f5e7a344ab6f7f5'
+- check_id: complete-view
+  name: complete-view
+  status: passed
+  required: true
+  summary: The native read_natural_product reader resolves the complete owner view;
+    both selected records have zero graphs and zero component references.
+  target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python3
+    /private/tmp/npmech-all-record-reviews-pU8b8GXS/complete_view.py
+  exit_code: 0
+  scope_note: 'Actual command log: /private/tmp/npmech-all-record-reviews-pU8b8GXS/complete-view.log;
+    SHA-256 14911c364922912e663e97731aa3f0b68bfd741bb3a182fbc21caa89eacbd467'
+- check_id: qc
+  name: qc
+  status: passed
+  required: true
+  summary: 'Full-corpus QC: lint, governed-file sync, documentation, provenance, source
+    queue, tests, strict schema, page freshness, offline reproduction, corpus integrity
+    and report.'
+  target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python3
+    scripts/run_qc.py
+  exit_code: 0
+  scope_note: 'Actual command log: /private/tmp/npmech-all-record-reviews-pU8b8GXS/qc.log;
+    SHA-256 0c04323074ee7b0b9bf526e53dcd1c8f4208f74f2053e31a464070abb10df41e'
+- check_id: labels
+  name: labels
+  status: passed
+  required: true
+  summary: Full-corpus configured ontology/label check. Minted identifiers and database
+    namespaces remain adapter-skipped; this is not chemical identity proof.
+  target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python3
+    scripts/validate_id_label_correspondence.py -c conf/id_label_targets.yaml --report
+    /private/tmp/npmech-all-record-reviews-pU8b8GXS/label-drift.tsv
+  exit_code: 0
+  scope_note: 'Actual command log: /private/tmp/npmech-all-record-reviews-pU8b8GXS/labels.log;
+    SHA-256 edd91274291ef54f0e30dcb5fa1049518e6f3ca75ea78ed845a14e51edffa0a6'
+- check_id: review-baseline
+  name: review-baseline
+  status: passed
+  required: true
+  summary: Baseline shared checker found zero structured reviews, including hidden/ignored
+    review paths. Zero is missing coverage, not a pass.
+  target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python3
+    scripts/record_review.py check
+  exit_code: 0
+  scope_note: 'Actual command log: /private/tmp/npmech-all-record-reviews-pU8b8GXS/review-baseline.log;
+    SHA-256 250073413f94ddb0b15b3cb220f6cfae1d9cfebb38402955458f22bf06be5b27'
+- check_id: review-queue
+  name: review-queue
+  status: passed
+  required: true
+  summary: The native exhaustive queue was generated for prioritization; it is not
+    scientific coverage.
+  target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python3
+    scripts/curation_worklist.py --review-records --limit 0 --tsv /private/tmp/npmech-all-record-reviews-pU8b8GXS/review-queue.tsv
+  exit_code: 0
+  scope_note: 'Actual command log: /private/tmp/npmech-all-record-reviews-pU8b8GXS/review-queue.log;
+    SHA-256 ef1687cb23c1715d7c8e9b0000470e57e4a0b6c3d03fe675a61cab8d0adb9dce'
+- check_id: ignored-inclusive-identity-search
+  name: ignored-inclusive-identity-search
+  status: passed
+  required: true
+  summary: Ignored-inclusive identifier/label/slug search; no inference from Git-aware
+    search alone.
+  target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+  command: rg --hidden --no-ignore -l -i 'IKMDAJQFLYGHII|BGC0001360|naturalproductmech:mibig-1e0dcc87ee|mycophenolic.acid'
+    . -g '!**/.git/**' -g '!**/.venv/**' -g '!**/__pycache__/**'
+  exit_code: 0
+  scope_note: 'Actual command log: /private/tmp/npmech-all-record-reviews-pU8b8GXS/ignored-inclusive-identity-search.log;
+    SHA-256 0a9c7979771e5906bbe04d8c29ed0bf1d86f1b325781b86034d5616ad99494c5'
+- check_id: chemical-identity
+  name: Name versus exact structure
+  status: failed
+  required: true
+  summary: The named natural product and the stored molecular constitution disagree;
+    see F1.
+  target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+  evidence_ids:
+  - record
+  - chebi
+- check_id: source-currentness
+  name: Live source and identifier verification
+  status: unavailable
+  required: true
+  summary: MIBiG BGC0001360 and DOI 10.1021/cr990097b were inaccessible. HG792019.1
+    resolved to FM164, but the abbreviated display did not expose locus features.
+  target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+  evidence_ids:
+  - access-limits
+- check_id: imodulondb
+  name: Structured expression-module applicability
+  status: not_applicable
+  required: false
+  summary: No iModulon, regulator, gene-level expression dataset or protein example
+    is asserted in this target. Local MIBiG source rows were checked; expression modules
+    cannot resolve the chemical identity conflict.
+  target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+- check_id: auxiliary-chemistry
+  name: Auxiliary chemical serialization consistency
+  status: passed
+  required: false
+  summary: Cached RDKit 2024.03.5 reproduces the stored InChI and InChIKey; this is
+    not the project-pinned 2026.3.5 extractor and is not a native gate.
+  target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+  exit_code: 0
+  command: env PYTHONPATH=/Users/marcin/.cache/uv/archive-v0/L63k5B2U7AExer7XjnGMw/lib/python3.12/site-packages
+    /Users/marcin/.local/share/uv/python/cpython-3.12.9-macos-x86_64-none/bin/python3.12
+    /private/tmp/npmech-all-record-reviews-pU8b8GXS/chemistry_auxiliary.py
+  evidence_ids:
+  - chemistry
+- check_id: inspect
+  name: inspect
+  status: failed
+  required: false
+  summary: Initial input-capture attempt failed because the inventory had not yet
+    written its target file; no assessment relied on this attempt. The subsequent
+    inspect-ready check succeeded.
+  target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python3
+    scripts/record_review.py inspect --targets /private/tmp/npmech-all-record-reviews-pU8b8GXS/targets.json
+    --input CLAUDE.md --input docs/record-review-profile.md --input docs/record-reviews.md
+    --input .claude/skills/review-yaml-record/SKILL.md --input .claude/skills/curate-yaml-record/references/review-checklist.md
+    --input docs/CURATION.md --input docs/HARMONIZATION.md --input conf/record_review.yaml
+    --input schema/record_review.yaml --input src/naturalproductmech/schema/naturalproductmech.yaml
+    --input conf/producer_evidence.tsv --input conf/id_label_targets.yaml --input
+    data/raw/MANIFEST.yaml --input data/raw/mibig_compounds.tsv --input data/raw/lotus_occurrences.tsv
+    --input data/raw/chebi_structures.tsv --input data/raw/corpus_taxa.obo --input
+    data/raw/npclassifier.tsv --input data/natural_products/PATHS.tsv --input curation/mibig_structure_corrections.tsv
+    --input curation/mibig_locus_evidence_overrides.tsv --input scripts/extract_mibig.py
+    --input scripts/extract_lotus.py --input scripts/seed_from_sources.py
+  exit_code: 1
+  scope_note: 'Actual command log: /private/tmp/npmech-all-record-reviews-pU8b8GXS/inspect.log;
+    SHA-256 9ae1b2c85d3ae5fb9fc760328e3dd4eeb41342794f2f9aa65de3f1908491702c'
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/natural_products/alkaloids/mycophenolic-acid-2.yaml
+  locator: Entire owner YAML, all fields and both curation events
+  accessed_at: '2026-10-13T04:43:53.258226Z'
+  support: supports
+  summary: Exact minted record read in full. No inline graphs or component references.
+    This evidence establishes what is asserted, not whether the science is correct.
+  snapshot_sha256: a9de4957ebce6adb145e3838023650bef784eabfed454ccc8676af0392a509a9
+- evidence_id: source-rows
+  kind: database
+  reference: data/raw/mibig_compounds.tsv
+  locator: BGC0001360, compound_index=1; joined classification, taxonomy and filing
+    rows
+  accessed_at: '2026-10-13T04:43:53.267249Z'
+  support: supports
+  summary: 'Complete parsed source rows and applicable maintained correction tables
+    were inspected. Chemistry and source grades reproduce the imported snapshot; no
+    correction/override row targets this accession. Local extract: /private/tmp/npmech-all-record-reviews-pU8b8GXS/local-source-rows.json'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: chemistry
+  kind: validation
+  reference: /private/tmp/npmech-all-record-reviews-pU8b8GXS/chemistry-auxiliary.json
+  locator: data/natural_products/alkaloids/mycophenolic-acid-2.yaml
+  accessed_at: '2026-10-13T04:43:53.267494Z'
+  support: supports
+  summary: Auxiliary RDKit 2024.03.5 calculated formula C12H14Br2N2OS, exact stored
+    InChI/Key, and 0 undefined tetrahedral centers. Internal consistency does not
+    authenticate the label.
+  snapshot_sha256: ab9e4ee76552879f4b077c00fa2dd29ceda41421a982cad790650f84d1f38614
+- evidence_id: chebi
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:168396
+  locator: Name, definition, formula, SMILES, InChI and InChIKey
+  accessed_at: '2026-10-13T04:43:53.267510Z'
+  support: refutes
+  summary: Mycophenolic acid is C17H20O6 with key HPNSFSBZBAHARI-RUDMXATFSA-N. This
+    is constitutionally different from the stored C12H14Br2N2OS, not a stereochemical
+    or protonation variant.
+- evidence_id: local-search
+  kind: search
+  reference: CultureBotAI/NaturalProductMech@e66f934111777c4ebfe69475d0520c0cfa074785
+  locator: Full worktree file-content search plus structured source-table selectors
+  accessed_at: '2026-10-13T04:43:53.267549Z'
+  support: context_only
+  summary: The same label has another structure owner. Only its locator/key was inspected
+    for collision handling; the other owner is not counted as reviewed.
+  search_scope: 'rg --hidden --no-ignore -l -i ''IKMDAJQFLYGHII|BGC0001360|naturalproductmech:mibig-1e0dcc87ee|mycophenolic.acid''
+    . -g ''!**/.git/**'' -g ''!**/.venv/**'' -g ''!**/__pycache__/**''. Hidden and
+    ignored project content included; only .git internals, .venv dependencies and
+    __pycache__ bytecode excluded. Source TSVs parsed in full for matching keys/accessions.
+    Saved search log: /private/tmp/npmech-all-record-reviews-pU8b8GXS/ignored-inclusive-identity-search.log'
+- evidence_id: ownership
+  kind: record_content
+  reference: docs/CURATION.md
+  locator: MIBiG structure corrections; locus-evidence overrides; generated versus
+    curator ownership
+  accessed_at: '2026-10-13T04:43:53.268825Z'
+  support: supports
+  summary: Fixes belong in implemented maintained inputs and tested source transforms,
+    never generated pages or direct owner YAML edits. decisions.tsv is reserved, not
+    consumed. The narrow structure-correction table rejects occupied destinations.
+  snapshot_sha256: 3b979068592adbb0611de95927ca31eaabb5fb5d791aa09973e3b1e8d5a19011
+- evidence_id: qc
+  kind: validation
+  reference: /private/tmp/npmech-all-record-reviews-pU8b8GXS/qc.log
+  locator: Complete current-run log
+  accessed_at: '2026-10-13T04:43:53.269089Z'
+  support: supports
+  summary: Native deterministic checks passed on the unchanged corpus. The scientific
+    identity defect survives them.
+  snapshot_sha256: 0c04323074ee7b0b9bf526e53dcd1c8f4208f74f2053e31a464070abb10df41e
+- evidence_id: labels
+  kind: validation
+  reference: /private/tmp/npmech-all-record-reviews-pU8b8GXS/labels.log
+  locator: Full configured ontology/label results and warning report
+  accessed_at: '2026-10-13T04:43:53.269956Z'
+  support: context_only
+  summary: The minted identity is intentionally not ontology-resolved. Successful
+    configured correspondence checks do not validate its compound name.
+  snapshot_sha256: edd91274291ef54f0e30dcb5fa1049518e6f3ca75ea78ed845a14e51edffa0a6
+- evidence_id: access-limits
+  kind: search
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001360/
+  locator: Direct official URL checks through web tool
+  accessed_at: '2026-10-13T04:43:53.269974Z'
+  support: unknown
+  summary: Direct BGC0001360 and doi.org/10.1021/cr990097b requests returned Internal
+    Error; no source text was inspected there.
+  search_scope: One direct attempt per named resource on 2026-10-13. No retries or
+    alternate copies. Inherited 162 scientific source stops and aliases were consulted
+    before research; no stopped paper was reopened.
+- evidence_id: occurrence-source
+  kind: database
+  reference: data/raw/lotus_occurrences.tsv
+  locator: IKMDAJQFLYGHII-UHFFFAOYSA-N, NCBITaxon:5082, DOI:10.1371/JOURNAL.PONE.0147047
+  accessed_at: '2026-10-13T04:43:53.276235Z'
+  support: context_only
+  summary: The imported triple associates the wrong key with P. roqueforti and this
+    DOI; structure Wikidata Q105114740. Its presence is not independent confirmation
+    of the compound identity.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: paper
+  kind: primary_source
+  reference: https://doi.org/10.1371/journal.pone.0147047
+  locator: Introduction; fungal strains; extraction/HPLC methods; Results through
+    gene-silencing context
+  accessed_at: '2026-10-13T04:43:53.276253Z'
+  support: refutes
+  summary: The study concerns phthalide/terpenoid mycophenolic acid, tested CECT 2905
+    (ATCC 10110), and used a pure MPA standard for HPLC. It does not authenticate
+    the brominated record or establish equivalent experiments in FM164.
+  quote: CECT 2905 (ATCC 10110)
+- evidence_id: genome
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/HG792019.1
+  locator: Displayed accession and scaffold title; sequence/features abbreviated
+  accessed_at: '2026-10-13T04:43:53.276259Z'
+  support: partial
+  summary: HG792019.1 resolves to Penicillium roqueforti FM164 scaffold ProqFM164S05.
+    The displayed page does not verify the recorded interval 1294894..1318068 or its
+    product.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact named chemical form
+  outcome: concern
+  summary: 'F1: the molecular constitution does not match the label or its cited biological
+    context. Minting avoids a false ChEBI link but does not repair the name/structure
+    conflict.'
+  target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+  evidence_ids:
+  - record
+  - chebi
+  - source-rows
+  - paper
+- assessment_id: structure
+  area: consistency
+  topic: SMILES, InChI, key and stereochemical encoding
+  outcome: supported
+  summary: The stored serializations agree in the auxiliary calculation, with no undefined
+    tetrahedral centers detected. No formula/charge/mass values are asserted in this
+    YAML. Experimental identity remains refuted by F1.
+  target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+  evidence_ids:
+  - record
+  - chemistry
+- assessment_id: equivalence
+  area: grounding
+  topic: Cross-references, parents, congeners and same-name neighbors
+  outcome: concern
+  summary: No xrefs, parent or congener claims are asserted. The intended CHEBI:168396
+    structure already has a separate owner; do not merge distinct structures or overwrite
+    its existing graphs.
+  target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+  evidence_ids:
+  - record
+  - local-search
+  - chebi
+- assessment_id: classification
+  area: consistency
+  topic: Computed filing versus asserted BGC class and origin
+  outcome: supported
+  summary: ALKALOIDS matches the pinned NPClassifier row for the stored input; the
+    source BGC class remains a separate assertion. The filing mechanism is faithful,
+    but NATURAL_PRODUCT membership is scientifically compromised by F1.
+  target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+  evidence_ids:
+  - record
+  - source-rows
+  - qc
+- assessment_id: taxa
+  area: grounding
+  topic: Taxon identifiers, named strain and broad lineage facet
+  outcome: supported
+  summary: NCBITaxon:5082 and NCBITaxon:1365484 match the pinned species and FM164
+    labels, respectively; FUNGAL matches the pinned lineage table. Label validity
+    does not prove production.
+  target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+  evidence_ids:
+  - record
+  - source-rows
+  - labels
+- assessment_id: producer-cluster
+  area: evidence
+  topic: Producer versus locus claim, source version and grade
+  outcome: unknown
+  summary: SOURCE_ASSERTION and CLUSTER_UNSTATED correctly preserve the raw version-3
+    method absence. The bioactivity-level citation is explicitly labelled DATABASE_ASSERTION,
+    not an experiment. Current active status and compound-specific applicability remain
+    unverified.
+  target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+  evidence_ids:
+  - source-rows
+  - record
+  - paper
+  - access-limits
+  dimensions:
+  - name: source_entry_version
+    value: '3'
+    definition: Version retained in the committed MIBiG compound row, not a claim
+      about the current live database
+    evidence_ids:
+    - source-rows
+- assessment_id: occurrence
+  area: evidence
+  topic: Occurrence versus biosynthesis and exact compound support
+  outcome: concern
+  summary: The LOTUS occurrence stays separate from production, but its paper does
+    not support occurrence of this brominated structure. The species assertion is
+    not evidence for an FM164 experiment.
+  target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+  evidence_ids:
+  - record
+  - paper
+- assessment_id: mechanism-activity
+  area: completeness
+  topic: Pathway, all graphs, targets, activities and bioactivity summary
+  outcome: not_applicable
+  summary: The complete raw owner contains no pathway, inline graph, graph references,
+    molecular target, bioactivity observation or activity-summary assertion. Optional
+    empty slots are not findings; mechanism expansion must wait for exact identity.
+  target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+  evidence_ids:
+  - record
+- assessment_id: other-claims
+  area: completeness
+  topic: Datasets, cross-corpus links, clinical status and discussions
+  outcome: not_applicable
+  summary: No dataset, related-record link, clinical-status claim or discussion is
+    asserted. Genome metadata belongs to the BGC object and is assessed separately.
+    No bibliography or clinical inference is manufactured.
+  target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+  evidence_ids:
+  - record
+- assessment_id: history
+  area: provenance
+  topic: Generated ownership, status and audit trail
+  outcome: supported
+  summary: Both events are seed-from-sources events and native status remains SEEDED.
+    Reproduction/strict/history coverage in QC establishes structural provenance,
+    not literature review. This report changes neither history nor status.
+  target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+  evidence_ids:
+  - record
+  - ownership
+  - qc
+findings:
+- finding_id: F1
+  issue_key: mibig-BGC0001360-compound-1-wrong-constitution
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: The structure is not the natural product named by the record
+  description: The stored IKMDAJQFLYGHII-UHFFFAOYSA-N (C12H14Br2N2OS) is a chemically
+    different constitution from the named compound. The committed MIBiG row already
+    contains the mismatch. The LOTUS occurrence additionally attaches the same wrong
+    key to a paper about genuine mycophenolic acid. A generated record can be byte-reproducible
+    while denoting the wrong molecule. Producer, BGC and natural-origin claims must
+    not be transferred across the identity conflict.
+  target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+  field_paths:
+  - label
+  - chemical_structure
+  - biosynthesis_origin
+  - producer_organisms
+  - biosynthetic_gene_clusters
+  - occurrences
+  evidence_ids:
+  - record
+  - source-rows
+  - chemistry
+  - chebi
+  - paper
+  - occurrence-source
+  rule_id: review-checklist:Identity; docs/HARMONIZATION.md:The unit of the corpus
+    is a structure
+  native_severity: blocker
+  normalization_reason: Wrong identity makes the record denote a different molecule,
+    matching the shared blocker definition.
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Imported MIBiG compound chemistry and cluster assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Imported structure-organism-publication occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: MIBiG extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_lotus.py
+    role: LOTUS extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated record harmonization
+actions:
+- action_id: A1
+  description: Resolve the upstream compound identity and audit every attached claim.
+    Correct or withhold the bad maintained source assertion through an implemented,
+    tested route; do not hand-edit generated YAML or use reserved decisions.tsv. CHEBI:168396
+    already has an occupied owner, so the narrow REPLACE_WITH_CHEBI table must continue
+    refusing a collision. Any consolidation needs a separately reviewed ownership/history/component
+    migration and slug retirement.
+  finding_ids:
+  - F1
+  target_ids:
+  - naturalproductmech:mibig-1e0dcc87ee
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Imported MIBiG compound chemistry and cluster assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Imported structure-organism-publication occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: MIBiG extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_lotus.py
+    role: LOTUS extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated record harmonization
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Narrow correction route, excludes occupied destination keys
+  generator: scripts/seed_from_sources.py via the documented guarded curation/migration
+    workflow
+  acceptance_checks:
+  - Inspected primary/authority evidence establishes one exact compound form and every
+    retained source claim matches it.
+  - Regression tests cover this accession and reject name-only merging or transfer
+    of old-key occurrences, assays, graphs or history.
+  - Run the documented seed dry run and one-record canary before authorized guarded
+    changes; then strict validation, verify-corpus, verify-reproduction, label checks
+    and full QC pass.
+  - Keep the wrong and intended structures distinct until an explicitly audited migration
+    accounts for every affected owner and published slug.
+limitations:
+- Required source-currentness checks are unavailable as detailed above; partial completion
+  is deliberate and no scientific pass is claimed.
+- The project-pinned RDKit 2026.3.5 was unavailable locally/offline. The explicitly
+  versioned 2024.03.5 calculation is auxiliary only, not a replacement native gate.
+- All 3115 records remain in the campaign. The other 3114 records are outside this
+  single-record review; referenced same-name neighbors are not counted as scientifically
+  reviewed.
+- No paid providers, source retries, record corrections, status promotions, GitHub
+  issues or other publication actions were performed. Findings/actions are proposed
+  curation, not completed fixes.
+notes:
+- The original zero-review baseline and the population hashes are retained in /private/tmp/npmech-all-record-reviews-pU8b8GXS.
+  Existing ad hoc or generated review-queue content is not structured scientific review.
+- All native checks ran against base e66f934111777c4ebfe69475d0520c0cfa074785; external
+  evidence was inspected on 2026-10-13.
+tags:
+- all-records-campaign
+- identity-conflict
+- source-owned
+- partial-source-access
+```
