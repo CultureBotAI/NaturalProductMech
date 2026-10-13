@@ -21,6 +21,11 @@ ARCHIVES = {
         "published": 3, "partial": 5, "pending": 3110,
         "findings": {"blocker": 3, "major": 2}, "failed_receipts": set(),
     },
+    "20261013-indigoidine": {
+        "published": 2, "partial": 7, "pending": 3108,
+        "findings": {"blocker": 4, "major": 2}, "failed_receipts": set(),
+        "previous_archives": ["20261013-first-two-records", "20261013-2mib-heme"],
+    },
 }
 
 
@@ -73,6 +78,7 @@ def test_archive_bytes_and_paths(archive, manifest, artifacts):
 
 def test_all_report_local_artifacts_are_archived(archive, manifest, artifacts):
     pattern = re.compile(r"/private/tmp/[A-Za-z0-9_./-]+")
+    reference_only = {row["original_path"] for row in manifest.get("reference_only_sources", [])}
     assert len(manifest["reviews"]) == ARCHIVES[archive.name]["published"]
     for saved in manifest["reviews"]:
         path = ROOT / saved["path"]
@@ -81,10 +87,11 @@ def test_all_report_local_artifacts_are_archived(archive, manifest, artifacts):
         body = path.read_text()
         references = {value.rstrip(".") for value in pattern.findall(body)}
         references.discard(manifest["source_workspace"])
-        assert references and references <= artifacts.keys()
+        assert references and references <= artifacts.keys() | reference_only
         review = yaml.safe_load(body)
         assert review["completion"] == "partial"
-        expected = "blocked" if saved["review_id"] == "20261013T054205Z-heme-d1" else "needs_curation"
+        blocked = {"20261013T054205Z-heme-d1", "20261013T064413Z-indigoidine"}
+        expected = "blocked" if saved["review_id"] in blocked else "needs_curation"
         assert review["verdict"] == expected
         assert review["source"]["git_revision"] == manifest["corpus_base"]
         for evidence in review["evidence"]:
@@ -98,9 +105,16 @@ def test_receipts_match_archived_outputs(archive, artifacts):
     failed = set()
     for row in receipts:
         receipt = json.loads(artifact_bytes(archive, row))
-        if "sha256" in receipt:
-            assert receipt["log"] in artifacts
-            assert artifacts[receipt["log"]]["sha256"] == receipt["sha256"]
+        if "stdout" in receipt:
+            # Saver receipts retain captured streams rather than a separate log.
+            output = json.loads(receipt["stdout"])
+            saved = yaml.safe_load(artifact_bytes(archive, artifacts[receipt["command"][-1]]))
+            relative = f"reviews/structured/{saved['review_id']}/review.yaml"
+            assert output["review"].endswith("/" + relative)
+            assert output["markdown"].endswith("/" + relative.removesuffix(".yaml") + ".md")
+            assert yaml.safe_load((ROOT / relative).read_text()) == saved
+        elif receipt.get("log") in artifacts:
+            assert artifacts[receipt["log"]]["sha256"] == receipt.get("sha256", receipt.get("log_sha256"))
         else:
             original_log = row["original_path"].removesuffix(".receipt.json") + ".log"
             log = artifact_bytes(archive, artifacts[original_log])
@@ -139,10 +153,9 @@ def test_campaign_preserves_full_population(archive, manifest):
     assert checkpoint["goal_status"] == "active"
     previous = set()
     if "checkpoint" in manifest:
-        previous_manifest = json.loads(
-            (archive.parent / "20261013-first-two-records/manifest.json").read_text()
-        )
-        previous = {r["review_id"] for r in previous_manifest["reviews"]}
+        for previous_archive in expected_counts.get("previous_archives", ["20261013-first-two-records"]):
+            previous_manifest = json.loads((archive.parent / previous_archive / "manifest.json").read_text())
+            previous.update(r["review_id"] for r in previous_manifest["reviews"])
         for row in checkpoint["reviews"]:
             assert digest(ROOT / row["yaml"]) == row["yaml_sha256"]
             assert digest(ROOT / row["markdown"]) == row["markdown_sha256"]
@@ -213,5 +226,62 @@ def test_cached_sources_match_report_attestations():
     raw = artifacts[inherited["checkpoint"]]
     assert raw["sha256"] == inherited["sha256"]
     stops = json.loads(artifact_bytes(archive, raw))
+    assert len(stops["access_stops_no_alternate_retrieval"]) == inherited["count"] == 162
+    assert stops["access_stop_aliases_no_alternate_retrieval"]
+
+
+def test_indigoidine_sources_and_reference_only_limits():
+    archive = ROOT / "reviews/evidence/20261013-indigoidine"
+    manifest = json.loads((archive / "manifest.json").read_text())
+    artifacts = {row["original_path"]: row for row in manifest["artifacts"]}
+    reference_only = {row["original_path"]: row for row in manifest["reference_only_sources"]}
+    assert not artifacts.keys() & reference_only.keys()
+    assert len(reference_only) == 5
+    assert {Path(path).name for path in reference_only} == {
+        "bitok2017.pdf", "ccm3239-2026-primary.html", "ccm3239-2026-si.pdf",
+        "ccm3239-2026-fig1.png", "PMID28533156.xml",
+    }
+    for row in reference_only.values():
+        assert row["reason"] == "Redistribution rights not established; retain citation and hash only."
+        assert row["source_url"].startswith("https://")
+        assert "path" not in row
+
+    workspace = manifest["source_workspace"]
+    evidence = json.loads(artifact_bytes(archive, artifacts[workspace + "/evidence-audit.json"]))
+    protein = json.loads(artifact_bytes(archive, artifacts[workspace + "/protein-audit.json"]))
+    assert len(evidence["artifacts"]) == 27
+    assert len(protein["cds"]) == 10
+    for row in evidence["artifacts"]:
+        retained = artifacts.get(row["path"], reference_only.get(row["path"]))
+        assert retained is not None
+        assert retained["sha256"] == row["sha256"]
+        assert retained["bytes"] == row["bytes"]
+        assert row["receipt_verified"]
+    for original, expected in protein["source_hashes"].items():
+        assert artifacts[original]["sha256"] == expected
+    assert artifacts[workspace + "/K4MP98.json"]["sha256"] == evidence["sc_indc"]["raw_sha256"]
+
+    saved = next(r for r in manifest["reviews"] if r["review_id"] == "20261013T064413Z-indigoidine")
+    review = yaml.safe_load((ROOT / saved["path"]).read_text())
+    sources = next(e for e in review["evidence"] if e["evidence_id"] == "source-integrity")
+    attestation = sources["summary"].split("Original source URLs and hashes: ", 1)[1]
+    reported, _ = json.JSONDecoder().raw_decode(attestation)
+    assert reported == evidence["artifacts"]
+    assert sources["snapshot_sha256"] == artifacts[workspace + "/evidence-audit.json"]["sha256"]
+    by_id = {e["evidence_id"]: e for e in review["evidence"]}
+    assert by_id["native-sequences"]["snapshot_sha256"] == artifacts[
+        workspace + "/protein-audit.json"
+    ]["sha256"]
+    for evidence_id, filename in [
+        ("bitok2017", "bitok2017.pdf"), ("fri5", "PMID28533156.xml"),
+        ("ccm2026", "ccm3239-2026-primary.html"),
+    ]:
+        row = next(r for p, r in reference_only.items() if Path(p).name == filename)
+        assert by_id[evidence_id]["snapshot_sha256"] == row["sha256"]
+
+    checkpoint = json.loads((archive / manifest["checkpoint"]).read_text())
+    inherited = checkpoint["inherited_scientific_access_stops"]
+    assert artifacts[inherited["checkpoint"]]["sha256"] == inherited["sha256"]
+    stops = json.loads(artifact_bytes(archive, artifacts[inherited["checkpoint"]]))
     assert len(stops["access_stops_no_alternate_retrieval"]) == inherited["count"] == 162
     assert stops["access_stop_aliases_no_alternate_retrieval"]

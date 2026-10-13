@@ -1,0 +1,48 @@
+import csv
+import hashlib
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+
+import pronto
+import yaml
+
+ROOT = Path(__file__).parent
+REPO = Path.cwd()
+sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
+keys = {'ALDIVIWLBSDGGN-ONEGZZNKSA-N', 'ZZTNWZPJOCVMIN-AATRIKPKSA-N'}
+terms = keys | {'indigoidine', 'CHEBI:79296', 'BGC0000375', 'BGC0002295',
+                'naturalproductmech:mibig-8920af415c'}
+out = {'accessed_at': datetime.now(timezone.utc).isoformat(), 'inputs_revalidated': [], 'tables': {}}
+for slug in ('indigoidine-2', 'indigoidine'):
+    inspection = json.loads((ROOT / (slug + '-inspect.log')).read_text())
+    for item in inspection['source']['inputs']:
+        assert sha(REPO / item['path']) == item['sha256'], item
+    out['inputs_revalidated'].append(slug)
+for path in sorted(set((REPO / 'curation').rglob('*.tsv')) | {
+    REPO / ('data/raw/' + name) for name in ['mibig_compounds.tsv', 'chebi_structures.tsv',
+        'chebi_origins.tsv', 'lotus_occurrences.tsv', 'npclassifier.tsv', 'taxon_groups.tsv', 'taxon_merged.tsv']
+} | {REPO / 'data/natural_products/PATHS.tsv'}):
+    with path.open() as stream:
+        rows = list(csv.DictReader(stream, delimiter='\t'))
+    hits = [dict(row_number=i+2, row=r) for i, r in enumerate(rows)
+            if any(t.lower() in str(v).lower() for t in terms for v in r.values())]
+    out['tables'][str(path.relative_to(REPO))] = dict(sha256=sha(path), count=len(rows), hits=hits)
+owners = []
+for path in (REPO / 'data/natural_products').rglob('*.yaml'):
+    d = yaml.safe_load(path.read_text())
+    if d.get('chemical_structure', {}).get('standard_inchi_key') in keys:
+        owners.append(dict(path=str(path.relative_to(REPO)), identifier=d['identifier'],
+                           key=d['chemical_structure']['standard_inchi_key'], sha256=sha(path)))
+out['occupied_keys'] = owners
+taxa = pronto.Ontology(str(REPO / 'data/raw/corpus_taxa.obo'))
+out['taxa'] = []
+for tax in ['NCBITaxon:1912', 'NCBITaxon:1914', 'NCBITaxon:42881', 'NCBITaxon:1886', 'NCBITaxon:58340', 'NCBITaxon:469008']:
+    term = taxa.get(tax)
+    out['taxa'].append(dict(identifier=tax, present=term is not None,
+                            name=term.name if term else None,
+                            synonyms=sorted(s.description for s in term.synonyms) if term else [],
+                            annotations=[str(x) for x in term.annotations] if term else []))
+with (ROOT / 'source-audit.json').open('x') as stream:
+    json.dump(out, stream, indent=2)
+print(json.dumps(out, indent=2))

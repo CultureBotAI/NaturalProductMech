@@ -1,0 +1,40 @@
+import csv
+import hashlib
+import json
+import subprocess
+import sys
+from collections import Counter
+from datetime import datetime, timezone
+from pathlib import Path
+
+import yaml
+
+ROOT=Path(__file__).parent
+with (ROOT/'queue-fresh.tsv').open() as stream:
+    queue=list(csv.DictReader(stream,delimiter='\t'))
+counts=dict(Counter(r['queue'] for r in queue))
+paths=json.loads((ROOT/'drafts.json').read_text())
+validated=[]
+for old in paths:
+    d=yaml.safe_load(Path(old).read_text())
+    for c in d['checks']:
+        if c['check_id']=='queue-fresh':
+            c['summary']=f'Native diagnostic queue regenerated: {len(queue)} rows across {len(counts)} queues; counts {json.dumps(counts)}. '
+            c['summary']+='The record-review fallback has25 rows, not scientific coverage. Full campaign denominator remains3115 owners/242 components.'
+    for a in d['assessments']:
+        a['evidence_ids']=list(dict.fromkeys(a['evidence_ids']))
+    finish=datetime.now(timezone.utc)
+    d['finished_at']=finish.isoformat().replace('+00:00','Z')
+    d['review_id']=finish.strftime('%Y%m%dT%H%M%SZ')+'-'+Path(d['targets'][0]['path']).stem
+    d=json.loads(json.dumps(d))
+    path=ROOT/(d['review_id']+'.yaml')
+    with path.open('x') as stream:
+        yaml.safe_dump(d,stream,sort_keys=False,allow_unicode=False,width=90)
+    result=subprocess.run([sys.executable,'scripts/record_review.py','validate',str(path)],capture_output=True,text=True)
+    receipt=dict(path=str(path),exit_code=result.returncode,stdout=result.stdout,stderr=result.stderr,
+        validated_at=datetime.now(timezone.utc).isoformat(),sha256=hashlib.sha256(path.read_bytes()).hexdigest())
+    print(json.dumps(receipt),flush=True)
+    assert result.returncode==0
+    validated.append(receipt)
+with (ROOT/'validated-drafts.json').open('x') as stream:
+    json.dump(validated,stream,indent=2)

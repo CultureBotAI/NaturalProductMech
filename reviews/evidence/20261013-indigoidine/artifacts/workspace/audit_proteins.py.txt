@@ -1,0 +1,119 @@
+import hashlib
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+
+from Bio import SeqIO
+from Bio.Seq import Seq
+
+ROOT = Path(__file__).parent
+W = Path('/private/tmp/npmech-welo5-20261011-IWXJhh')
+P = Path('/private/tmp/npmech-pptase-cohort-20261011-OtALIz')
+G = Path('/private/tmp/npmech-glna-20261011-Vw5H55')
+J = Path('/private/tmp/npmech-j1074-20261011-OOMBhi')
+H = Path('/private/tmp/npmech-ccm3239-20261011-UOEkBf')
+S = Path('/private/tmp/npmech-stnyp-20261011-sdpswA')
+out = dict(accessed_at=datetime.now(timezone.utc).isoformat(), source_hashes={}, cds=[], uniprot=[])
+
+def read(path):
+    out['source_hashes'][str(path)] = hashlib.sha256(path.read_bytes()).hexdigest()
+    return path.read_text()
+
+uniprots = {}
+for p in [W/'indigoidine-uniprot.json', W/'sc-indb-uniprot.json', P/'A0A1Q2SRM5.json', P/'A0A2K8PVS5.json']:
+    d = json.loads(read(p))
+    for r in d.get('results', [d]):
+        if r.get('primaryAccession') not in ['Q1MWN4', 'K4MZR0', 'A0A1Q2SRM5', 'A0A2K8PVS5']:
+            continue
+        uniprots[r['primaryAccession']] = r
+        out['uniprot'].append({k:r.get(k) for k in ['primaryAccession', 'entryType', 'entryAudit', 'organism', 'proteinDescription', 'genes']} | {
+            'sequence_length':r['sequence']['length'], 'sequence_sha256':hashlib.sha256(r['sequence']['value'].encode()).hexdigest(),
+            'embl': [x for x in r.get('uniProtKBCrossReferences',[]) if x['database']=='EMBL']})
+specs = [
+    (W/'sc-indb-native.gb','AFV27434.1',None,None),
+    (W/'sc-indb-native.gb','AFV27436.1',W/'sc-indb-protein.gp','K4MZR0'),
+    (W/'bpsa-native.gb','BAE93896.1',W/'bpsa-protein.gp','Q1MWN4'),
+    (S/'CP004370.1.gb','AGI92022.1',J/'AGI92022.1.gp',None),
+    (P/'LC209815.gb','BAW81991.1',P/'BAW81991.1.gp','A0A1Q2SRM5'),
+    (H/'FJ479754.1.gb','ACK77757.1',P/'ACK77757.1.gp',None),
+    (P/'KJ396772.2.gb','ACK77757.2',P/'ACK77757.2.gp','A0A2K8PVS5'),
+    (P/'CP024986.1.gb','ATZ29785.1',P/'ATZ29785.1.gp','A0A2K8PVS5'),
+    (G/'glna-cp001509-region.gb','ACT45548.1',G/'ncbi-glna-proteins.gp',None),
+    (G/'glna-am946981-region.gb','CAQ34221.1',G/'ncbi-glna-proteins.gp',None),
+]
+sequences, dnas, genomes = {}, {}, {}
+for path,pid,gp,up in specs:
+    read(path)
+    record = SeqIO.read(path, 'genbank')
+    genomes[record.id] = str(record.seq)
+    features = [f for f in record.features if f.type=='CDS' and f.qualifiers.get('protein_id')==[pid]]
+    assert len(features)==1, (pid,len(features))
+    f = features[0]
+    dna = f.extract(record.seq)
+    translation = str(dna.translate(table=int(f.qualifiers.get('transl_table',['1'])[0]),cds=True))
+    assert translation==f.qualifiers['translation'][0]
+    source = next(x.qualifiers for x in record.features if x.type=='source')
+    row = dict(protein=pid,nucleotide=record.id,location=str(f.location), nt=len(dna), aa=len(translation),
+        start_codon=str(dna[:3]), stop_codon=str(dna[-3:]), table=f.qualifiers.get('transl_table'),
+        codon_start=f.qualifiers.get('codon_start'), source=source, product=f.qualifiers.get('product'),
+        gene=f.qualifiers.get('gene'), locus_tag=f.qualifiers.get('locus_tag'),
+        dna_sha256=hashlib.sha256(str(dna).encode()).hexdigest(),
+        protein_sha256=hashlib.sha256(translation.encode()).hexdigest(), native_translation_matches=True,
+        reference_pmids=[r.pubmed_id for r in record.annotations.get('references',[]) if r.pubmed_id],
+        unusual_qualifiers={k:v for k,v in f.qualifiers.items() if k in ['pseudo','pseudogene','exception','transl_except']})
+    if gp:
+        read(gp)
+        protein = next(x for x in SeqIO.parse(gp,'genbank') if x.id==pid)
+        row['genpept_matches'] = str(protein.seq)==translation
+        row['genpept_coded_by'] = [x.qualifiers.get('coded_by') for x in protein.features if x.type=='CDS']
+        assert row['genpept_matches']
+    if up:
+        row['uniprot'] = up
+        row['uniprot_sequence_matches'] = uniprots[up]['sequence']['value']==translation
+        assert row['uniprot_sequence_matches']
+    sequences[pid], dnas[pid] = translation,str(dna)
+    out['cds'].append(row)
+
+def differences(a,b):
+    assert len(a)==len(b)
+    return [{'position':i+1,'old':x,'new':y} for i,(x,y) in enumerate(zip(a,b)) if x!=y]
+
+out['historical_current_ccm_aa'] = differences(sequences['ACK77757.1'],sequences['ACK77757.2'])
+out['historical_current_ccm_nt'] = differences(dnas['ACK77757.1'],dnas['ACK77757.2'])
+out['fri5_atcc11924_aa_differences'] = differences(sequences['BAE93896.1'],sequences['BAW81991.1'])
+out['native_glna_sequences_identical'] = sequences['ACT45548.1']==sequences['CAQ34221.1']
+out['native_glna_cds_identical'] = dnas['ACT45548.1']==dnas['CAQ34221.1']
+out['inactive_glna_uniprot'] = json.loads(read(G/'uniprot-c6ef31.json'))
+
+def locations(genome,needle):
+    hits=[]
+    for strand,s in [(1,needle),(-1,str(Seq(needle).reverse_complement()))]:
+        start=genome.find(s)
+        while start>=0:
+            hits.append(dict(start=start+1,end=start+len(s),strand=strand))
+            start=genome.find(s,start+1)
+    return hits
+
+out['j1074_primers']={}
+for name,seq in {
+    'spacer_f':'CCAGGCCGACCACCGCGGCC','spacer_r':'GGCCGCGGTGGTCGGCCTGG',
+    'screen_f':'AGGAAGGGACGGGTGAGGAA','screen_r':'TCGACGAGGAACTGGCCG'}.items():
+    out['j1074_primers'][name]=locations(genomes['CP004370.1'],seq)
+out['j1074_bpsa_reporter_suffixes']={}
+for name,seq in {'forward':'AAACATATGACTCTTCAGGAGACCAG','reverse':'AAATTAATTAACTACTCTCCGAGCAGGTACC'}.items():
+    out['j1074_bpsa_reporter_suffixes'][name] = [dict(length=n,matches=locations(genomes['AB240063.1'],seq[-n:]))
+        for n in range(len(seq),14,-1) if locations(genomes['AB240063.1'],seq[-n:])]
+out['ccm_cassette_native_prefixes']={}
+for name,seq in {
+    'BpsAkasDir':'CGGATCAGTGACCCGGCTCCTCCAGAGCCGGTGAACGCCCTGTAGGCTGGAGCTGCTTC',
+    'BpsAkasRev':'CGCTGGTCTCCTGAAGAGTCATTTCCCGCTTCCTTACGTTTACCTCAGTCAGTCATCTCC'}.items():
+    out['ccm_cassette_native_prefixes'][name] = {}
+    for acc in ['KJ396772.2','CP024986.1']:
+        for n in range(len(seq),19,-1):
+            hits=locations(genomes[acc],seq[:n])
+            if hits:
+                out['ccm_cassette_native_prefixes'][name][acc]=dict(length=n,matches=hits)
+                break
+with (ROOT/'protein-audit.json').open('x') as stream:
+    json.dump(out,stream,indent=2)
+print(json.dumps(out,indent=2))

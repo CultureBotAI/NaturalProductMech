@@ -1,0 +1,727 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Indigoidine: BGC0002295 constitutional conflict'
+started_at: '2026-10-13T06:24:54.869685Z'
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: self_review
+  independence_basis: Same assistant/thread previously curated this repository. This is a new
+    claim-level self-review, not an independent reviewer.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+scientific_review: true
+verdict: needs_curation
+summary: 'Confirmed identity blocker: BGC0002295 compound 2 is labelled indigoidine but encodes
+  C10H9N3O3, not canonical indigoidine C10H8N4O4. Primary biosynthesis, xref and pinned chemistry
+  gaps remain; one blocker, no record edits.'
+source:
+  git_revision: 127b18b43ac6c9ac76fd4ad878979ed8ddb0de8f
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: 49e2ab03c7e82013e9d68356de2c9965c9f8517a3408a44124076f4ca1b529cd
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 0b2e8b991c926f9a67a3094964b0335dd1cd347fbf548674fa273db8fac3a4b2
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: 5b1edc057cdcc732f61de2964cd175fa3bc2dca929c5d2823142f61313545a7e
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: bf38e4f0c7e4bcbdf184a4e7b8b024752251e8f34c015c0b82cedca98a8a5729
+    role: context
+  - path: data/natural_products/alkaloids/indigoidine-2.yaml
+    sha256: 9abeb31eb0903167a5dc8f01a16bdb33e92b02f1d6562b1944778f37082f1f8b
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: 373f049029be3db137e062ff5f872a2400a9d5b423f3e108ea44ebde2f8dcc7d
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: 7b9b9f78f5b14aea9fabb163bbaa9e842920a7e9b07deac8f98c97666e9e23fc
+    role: context
+  - path: data/raw/taxon_groups.tsv
+    sha256: f73f228d57d79a1d85a1441efa6829917b1ffecac08cb7bdd4fc855046255f8f
+    role: context
+  - path: data/raw/taxon_merged.tsv
+    sha256: 97b3efa66d4fc1679ab65ae547e78b2f627f37bc8e45ae33f2719008fe3863bb
+    role: context
+  - path: docs/CURATION.md
+    sha256: 3b979068592adbb0611de95927ca31eaabb5fb5d791aa09973e3b1e8d5a19011
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: 30c7007e57806c245674ce922e0f8c485b1a8a12a9f9fb95850ba6ee4f8cddc2
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_lotus.py
+    sha256: 8a8c524f60f85d2bb54412ca055a6a45e0d37ec5f4584d8d70be454b8f664290
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 2da30b7ccf4b9543ecbe02eb0c8662e51a82c0745aa45be28afbf8ceb38fc1be
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-8920af415c
+  label: indigoidine
+  path: data/natural_products/alkaloids/indigoidine-2.yaml
+  kind: generated
+  record_class: NaturalProductRecord
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG chemistry, producer and BGC source rows
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: ChEBI exact identity source
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Imported occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner harmonization
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Narrow implemented chemistry correction path
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Implemented locus-method correction path
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/indigoidine-2.yaml
+    role: Curator-owned pathway, graphs and discussions via guarded writer
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_origins.tsv
+    role: Imported ChEBI occurrence and strain assertions
+scope:
+  description: One complete owner and every referenced component, within the unchanged 3115-owner/242-component
+    campaign. Both indigoidine owners have zero external components; this report is not a sampled
+    corpus verdict.
+  selection: Exact path and identifier from the full campaign frontier; each same-label owner
+    receives its own report.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-8920af415c
+checks:
+- check_id: inspect
+  name: inspect
+  status: passed
+  required: true
+  summary: Canonical input capture before assessment.
+  target_ids:
+  - naturalproductmech:mibig-8920af415c
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    scripts/record_review.py inspect --targets /private/tmp/npmech-indigoidine-reviews-current-bjZrsY/indigoidine-2-targets.json
+    --input .claude/skills/curate-yaml-record/references/review-checklist.md --input .claude/skills/review-yaml-record/SKILL.md
+    --input CLAUDE.md --input conf/id_label_targets.yaml --input conf/producer_evidence.tsv
+    --input conf/record_review.yaml --input curation/mibig_locus_evidence_overrides.tsv --input
+    curation/mibig_structure_corrections.tsv --input data/natural_products/PATHS.tsv --input
+    data/raw/MANIFEST.yaml --input data/raw/chebi_structures.tsv --input data/raw/corpus_taxa.obo
+    --input data/raw/lotus_occurrences.tsv --input data/raw/mibig_compounds.tsv --input data/raw/npclassifier.tsv
+    --input data/raw/taxon_groups.tsv --input data/raw/taxon_merged.tsv --input docs/CURATION.md
+    --input docs/HARMONIZATION.md --input docs/record-review-profile.md --input docs/record-reviews.md
+    --input justfile --input schema/record_review.yaml --input scripts/extract_lotus.py --input
+    scripts/extract_mibig.py --input scripts/seed_from_sources.py --input src/naturalproductmech/graph_components.py
+    --input src/naturalproductmech/schema/naturalproductmech.yaml --input data/raw/chebi_origins.tsv
+    --input scripts/record_review.py
+  exit_code: 0
+  scope_note: Run 2026-10-13T06:24:52.924312Z to 2026-10-13T06:24:54.868777Z; log SHA-256 a69c222b67a0cf689952f39b5be7c3a8ecf5df24c78e3ddc37afcd2d6c2cbbc2.
+- check_id: strict
+  name: strict
+  status: passed
+  required: true
+  summary: Closed-schema validation of this owner succeeded with zero errors; not a scientific
+    pass.
+  target_ids:
+  - naturalproductmech:mibig-8920af415c
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    scripts/validate_strict.py data/natural_products/alkaloids/indigoidine-2.yaml --out /private/tmp/npmech-indigoidine-reviews-current-bjZrsY/indigoidine-2-strict.tsv
+  exit_code: 0
+  scope_note: Run 2026-10-13T06:24:54.881601Z to 2026-10-13T06:24:58.293234Z; log SHA-256 8c254668b0a0f3438266f1d0c97dfda83dbad4561743aedcc540d009cce3e5a4.
+- check_id: provenance-fresh
+  name: provenance-fresh
+  status: passed
+  required: true
+  summary: 'provenance OK: 15 inventories, 0 upstream files, retrieved 2026-10-07'
+  target_ids:
+  - naturalproductmech:mibig-8920af415c
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    scripts/check_provenance.py
+  exit_code: 0
+  scope_note: Run 2026-10-13T06:36:23.684962+00:00 to 2026-10-13T06:36:24.488550+00:00; log
+    SHA-256 edfd9b0adb518e4962a19be934e3364eb2a3d8527de0159322af10d2ddf6a252. Queue is a diagnostic
+    checkpoint, not review coverage.
+- check_id: contract-before
+  name: contract-before
+  status: passed
+  required: true
+  summary: '...............                                                          [100%]
+
+    15 passed in 26.45s'
+  target_ids:
+  - naturalproductmech:mibig-8920af415c
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    -m pytest -q tests/test_record_review_contract.py tests/test_review_evidence_archive.py
+  exit_code: 0
+  scope_note: Run 2026-10-13T06:36:24.489699+00:00 to 2026-10-13T06:36:54.122885+00:00; log
+    SHA-256 bf89b54bbdfd3c41e1d021bcefcd04258b77b51e61882437a5fbff60d9da74c2. Queue is a diagnostic
+    checkpoint, not review coverage.
+- check_id: queue-fresh
+  name: queue-fresh
+  status: passed
+  required: true
+  summary: 'Native diagnostic queue regenerated: 8931 rows across 12 queues; counts {"producer-evidence":
+    2289, "biosynthesis": 1194, "structure-disagreement": 5, "name-disagreement": 68, "unnamed-producer":
+    39, "shared-structure": 208, "needs-a-name": 18, "occurrence-only": 12, "pathway-ambiguous":
+    620, "unresolved-taxa": 3329, "stereo-incomplete": 1124, "record-review": 25}. The record-review
+    fallback has25 rows, not scientific coverage. Full campaign denominator remains3115 owners/242
+    components.'
+  target_ids:
+  - naturalproductmech:mibig-8920af415c
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    scripts/curation_worklist.py --review-records --limit 0 --tsv /private/tmp/npmech-indigoidine-reviews-current-bjZrsY/queue-fresh.tsv
+  exit_code: 0
+  scope_note: Run 2026-10-13T06:36:54.123973+00:00 to 2026-10-13T06:38:00.773454+00:00; log
+    SHA-256 5ed74725262e24448dde1b488c5be6396f574133be81d6ad4def28f573c53624. Queue is a diagnostic
+    checkpoint, not review coverage.
+- check_id: historical-corpus
+  name: historical-corpus
+  status: passed
+  required: true
+  summary: "lockfile integrity OK: 3115 records, each filed where PATHS.tsv pins it\n  lockfile\
+    \ rows: 3115, files on disk: 3115"
+  target_ids:
+  - naturalproductmech:mibig-8920af415c
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    scripts/verify_corpus.py --summary
+  exit_code: 0
+  scope_note: 'Historical run reused, not rerun this turn: {"command": ["/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python",
+    "scripts/verify_corpus.py", "--summary"], "started_at": "2026-10-13T05:33:54.158149Z", "finished_at":
+    "2026-10-13T05:35:23.137082Z", "exit_code": 0, "log_sha256": "f41149d35ddb3ab65a8fe2fdf8bfd6242ff6753e740c3482f9ed0f0bb7122b50",
+    "log": "lockfile integrity OK: 3115 records, each filed where PATHS.tsv pins it\n  lockfile
+    rows: 3115, files on disk: 3115\n"}. All 3115 owners/242 components and captured inputs
+    rehashed unchanged. Label reporting exit zero includes 499 mismatches and 4649 skipped adapters;
+    it is not an all-labels pass.'
+- check_id: historical-reproduction
+  name: historical-reproduction
+  status: passed
+  required: true
+  summary: "molecular targets whose assay organism did not resolve: 5 (1 distinct: Human\u2026\
+    )\nproducer claims withheld \u2014 taxon names no single organism: 42 (NCBITaxon:77133 36,\
+    \ NCBITaxon:12908 3, NCBITaxon:1163772 2, NCBITaxon:155900 1)\ntaxon ids rewritten through\
+    \ taxon_merged.tsv: 161 (ChEBI 8, LOTUS 147, MIBiG 6)\ncorpus reproduction OK: 3115 records\
+    \ are byte-identical to what the seeder builds from data/raw/"
+  target_ids:
+  - naturalproductmech:mibig-8920af415c
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    scripts/check_reproduction.py
+  exit_code: 0
+  scope_note: 'Historical run reused, not rerun this turn: {"command": ["/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python",
+    "scripts/check_reproduction.py"], "started_at": "2026-10-13T05:35:23.137928Z", "finished_at":
+    "2026-10-13T05:37:53.396103Z", "exit_code": 0, "log_sha256": "d76e0bdd701f4e95ea43c705242db68502c2e347cf60baf2321fa70034472fcd",
+    "log": "molecular targets whose assay organism did not resolve: 5 (1 distinct: Human\u2026)\nproducer
+    claims withheld \u2014 taxon names no single organism: 42 (NCBITaxon:77133 36, NCBITaxon:12908
+    3, NCBITaxon:1163772 2, NCBITaxon:155900 1)\ntaxon ids rewritten through taxon_merged.tsv:
+    161 (ChEBI 8, LOTUS 147, MIBiG 6)\ncorpus reproduction OK: 3115 records are byte-identical
+    to what the seeder builds from data/raw/\n"}. All 3115 owners/242 components and captured
+    inputs rehashed unchanged. Label reporting exit zero includes 499 mismatches and 4649 skipped
+    adapters; it is not an all-labels pass.'
+- check_id: historical-labels
+  name: historical-labels
+  status: passed
+  required: true
+  summary: "id\u2194label correspondence summary:\n          OK_CANONICAL: 13434\n         \
+    \   OK_SYNONYM: 646\n          OK_EXCEPTION: 35\n              MISMATCH: 499\n    SKIPPED_NO_ADAPTER:\
+    \ 4649\n\nWrote 499 flagged pairs to /private/tmp/npmech-record-reviews-next-PKCU4Z/labels.tsv"
+  target_ids:
+  - naturalproductmech:mibig-8920af415c
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    scripts/validate_id_label_correspondence.py -c conf/id_label_targets.yaml --report /private/tmp/npmech-record-reviews-next-PKCU4Z/labels.tsv
+  exit_code: 0
+  scope_note: 'Historical run reused, not rerun this turn: {"command": ["/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python",
+    "scripts/validate_id_label_correspondence.py", "-c", "conf/id_label_targets.yaml", "--report",
+    "/private/tmp/npmech-record-reviews-next-PKCU4Z/labels.tsv"], "started_at": "2026-10-13T05:37:54.045148Z",
+    "finished_at": "2026-10-13T05:39:55.736120Z", "exit_code": 0, "log_sha256": "803d0d84664eb9a85ed2e3c0060b95139dbdfaf29150ccb78f95589b37bb531d",
+    "log": "\nid\u2194label correspondence summary:\n          OK_CANONICAL: 13434\n            OK_SYNONYM:
+    646\n          OK_EXCEPTION: 35\n              MISMATCH: 499\n    SKIPPED_NO_ADAPTER: 4649\n\nWrote
+    499 flagged pairs to /private/tmp/npmech-record-reviews-next-PKCU4Z/labels.tsv\n"}. All
+    3115 owners/242 components and captured inputs rehashed unchanged. Label reporting exit
+    zero includes 499 mismatches and 4649 skipped adapters; it is not an all-labels pass.'
+- check_id: full-qc
+  name: full-qc
+  status: skipped
+  required: false
+  summary: No new full QC run for these read-only reports. PR870 QC run38354190005 passed 564
+    tests/4 skips and all native gates; merge commit127b18b4 is this review base. Historical
+    CI is context, not a new scientific or local-QC pass.
+  target_ids:
+  - naturalproductmech:mibig-8920af415c
+- check_id: pinned-chemistry
+  name: pinned-chemistry
+  status: unavailable
+  required: true
+  summary: Repository environment lacks RDKit; pinned 2026.3.5 calculation remains unavailable.
+  target_ids:
+  - naturalproductmech:mibig-8920af415c
+  command: .venv/bin/python -c 'import rdkit; print(rdkit.__version__)'
+  scope_note: Availability probe exited1 with ModuleNotFoundError. No pinned chemical calculation
+    executed.
+- check_id: auxiliary-chemistry
+  name: auxiliary-chemistry
+  status: passed
+  required: false
+  summary: RDKit2024.03.5 independently reproduces both stored chemical serializations and formulae.
+    Not the pinned native gate.
+  target_ids:
+  - naturalproductmech:mibig-8920af415c
+  command: /Users/marcin/.cache/uv/archive-v0/L63k5B2U7AExer7XjnGMw/bin/python /private/tmp/npmech-indigoidine-reviews-current-bjZrsY/audit_chemistry.py
+  exit_code: 0
+  scope_note: Initial temporary helper used an incorrect field name and exited1; corrected to
+    the native smiles field before this successful run. No corpus edits.
+  evidence_ids:
+  - chemistry
+- check_id: required-sources
+  name: required-sources
+  status: unavailable
+  required: true
+  summary: Required primary-source, current BGC and PubChem equivalence checks are incomplete.
+    Access failures do not imply absent experiments.
+  target_ids:
+  - naturalproductmech:mibig-8920af415c
+  evidence_ids:
+  - access-limits
+- check_id: imodulondb
+  name: imodulondb
+  status: not_applicable
+  required: false
+  summary: No expression-module membership or transcriptomic dataset claim is asserted. Structured
+    UniProt/NCBI evidence is the relevant adapter for native protein identity; no iModulon absence
+    inference is made.
+  target_ids:
+  - naturalproductmech:mibig-8920af415c
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/natural_products/alkaloids/indigoidine-2.yaml
+  accessed_at: '2026-10-13T06:42:31.953652Z'
+  support: supports
+  summary: 'Entire YAML read: identity, definitions, source concepts, every evidence item, pathway,
+    graphs, discussions and full audit trail. No causal_graph_refs; 0 inline graphs. Status
+    remains SEEDED.'
+  snapshot_sha256: 9abeb31eb0903167a5dc8f01a16bdb33e92b02f1d6562b1944778f37082f1f8b
+- evidence_id: inventory
+  kind: database
+  reference: data/raw/mibig_compounds.tsv
+  accessed_at: '2026-10-13T06:34:28.405765Z'
+  support: partial
+  summary: 'Exact parsed source rows (including minimycin as compound1 where present): [{"row_number":
+    2788, "row": {"mibig_accession": "BGC0002295", "entry_version": "3", "entry_status": "active",
+    "entry_quality": "questionable", "entry_completeness": "unknown", "compound_name": "minimycin",
+    "compound_index": "1", "smiles": "C1=C(C(=O)NC(=O)O1)[C@H]2[C@@H]([C@@H]([C@H](O2)CO)O)O",
+    "standard_inchi": "InChI=1S/C9H11NO7/c11-1-4-5(12)6(13)7(17-4)3-2-16-9(15)10-8(3)14/h2,4-7,11-13H,1H2,(H,10,14,15)/t4-,5-,6-,7+/m1/s1",
+    "standard_inchi_key": "REFHNSOTFKKRAI-GBNDHIKLSA-N", "stereo_complete": "true", "compound_classes":
+    "", "database_ids": "npatlas:NPA021195", "taxon_id": "NCBITaxon:1912", "taxon_label": "Streptomyces
+    hygroscopicus", "bgc_classes": "NRPS|saccharide", "bgc_subclasses": "Type I", "genome_accession":
+    "MK122964.1", "locus_from": "5879", "locus_to": "15193", "locus_evidence_methods": "Heterologous
+    expression|Knock-out studies", "producer_evidence_basis": "BGC_CHARACTERIZED", "cluster_link_evidence_basis":
+    "CLUSTER_DEMONSTRATED", "primary_reference": "DOI:10.1016/j.isci.2019.11.037", "reference_basis":
+    "COMPOUND_EVIDENCE"}}, {"row_number": 2789, "row": {"mibig_accession": "BGC0002295", "entry_version":
+    "3", "entry_status": "active", "entry_quality": "questionable", "entry_completeness": "unknown",
+    "compound_name": "indigoidine", "compound_index": "2", "smiles": "NC1=C/C(CNC1=O)=C2C(NC(C=C\\2)=O)=O",
+    "standard_inchi": "InChI=1S/C10H9N3O3/c11-7-3-5(4-12-10(7)16)6-1-2-8(14)13-9(6)15/h1-3H,4,11H2,(H,12,16)(H,13,14,15)/b6-5+",
+    "standard_inchi_key": "ZZTNWZPJOCVMIN-AATRIKPKSA-N", "stereo_complete": "true", "compound_classes":
+    "", "database_ids": "pubchem:193349", "taxon_id": "NCBITaxon:1912", "taxon_label": "Streptomyces
+    hygroscopicus", "bgc_classes": "NRPS|saccharide", "bgc_subclasses": "Type I", "genome_accession":
+    "MK122964.1", "locus_from": "5879", "locus_to": "15193", "locus_evidence_methods": "Heterologous
+    expression|Knock-out studies", "producer_evidence_basis": "BGC_CHARACTERIZED", "cluster_link_evidence_basis":
+    "CLUSTER_DEMONSTRATED", "primary_reference": "DOI:10.1016/j.isci.2019.11.037", "reference_basis":
+    "COMPOUND_EVIDENCE"}}]. This establishes the maintained database assertion, not live entry
+    currentness or primary experimental support.'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: chebi
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:79296
+  accessed_at: '2026-10-13T06:25:47Z'
+  support: partial
+  summary: 'Official entry: indigoidine, C10H8N4O4, charge0, ALDIVIWLBSDGGN-ONEGZZNKSA-N; Standard
+    InChI ends /b4-3+. The committed 3-star row agrees. Its occurrence names S.lavendulae taxon1914,
+    ATCC11924 and PMID17237222. Database identity/occurrence assertion only, not reinspection
+    of chemical analyses.'
+  locator: Identity, formula, SMILES, Standard InChI/InChIKey and Species of Metabolite
+- evidence_id: chemistry
+  kind: validation
+  reference: RDKit 2024.03.5; /private/tmp/npmech-indigoidine-reviews-current-bjZrsY/chemistry-audit.json
+  accessed_at: '2026-10-13T06:34:53.649136Z'
+  support: partial
+  summary: 'Fresh auxiliary calculation, not pinned toolkit: {"slug": "indigoidine-2", "input_sha256":
+    "7612197082ee5f6a684dbcd7c2e26d3fbde3fc5b6911ab2233c472b98a0f140b", "smiles_formula": "C10H9N3O3",
+    "inchi_formula": "C10H9N3O3", "charge": 0, "smiles_inchi": "InChI=1S/C10H9N3O3/c11-7-3-5(4-12-10(7)16)6-1-2-8(14)13-9(6)15/h1-3H,4,11H2,(H,12,16)(H,13,14,15)/b6-5+",
+    "smiles_key": "ZZTNWZPJOCVMIN-AATRIKPKSA-N", "inchi_key": "ZZTNWZPJOCVMIN-AATRIKPKSA-N",
+    "recorded_key": "ZZTNWZPJOCVMIN-AATRIKPKSA-N", "serialization_keys_match": true, "tetrahedral_centers":
+    [], "double_bond_stereo": ["STEREONONE", "STEREONONE", "STEREOE", "STEREONONE", "STEREONONE",
+    "STEREONONE"]}'
+  snapshot_sha256: df8bd4577b90886ef50019d87bfbdf5d9c4e755d1453e52b29b2093e42d97d17
+- evidence_id: local-sources
+  kind: database
+  reference: data/raw/chebi_structures.tsv; data/raw/npclassifier.tsv; data/natural_products/PATHS.tsv
+  accessed_at: '2026-10-13T06:34:28.405765Z'
+  support: partial
+  summary: 'ChEBI rows: [{"row_number": 30361, "row": {"chebi_id": "CHEBI:79296", "name": "indigoidine",
+    "definition": "A member of the class of pyridone that is a dimeric blue pigment biosynthesised
+    from L-glutamine.", "stars": "3", "standard_inchi_key": "ALDIVIWLBSDGGN-ONEGZZNKSA-N", "smiles":
+    "NC1=C/C(=C2/C=C(N)C(=O)NC2=O)C(=O)NC1=O"}}]. NPClassifier rows: [{"row_number": 65, "row":
+    {"standard_inchi_key": "ALDIVIWLBSDGGN-ONEGZZNKSA-N", "smiles": "C\\1=C(C(=O)NC(=O)/C1=C/2\\C=C(C(=O)NC2=O)N)N",
+    "pathway_results": "Alkaloids", "superclass_results": "Ornithine alkaloids", "class_results":
+    "", "is_glycoside": "false", "model_version": "npclassifier.gnps2.org@2026-09-07"}}, {"row_number":
+    3115, "row": {"standard_inchi_key": "ZZTNWZPJOCVMIN-AATRIKPKSA-N", "smiles": "NC1=C/C(CNC1=O)=C2C(NC(C=C\\2)=O)=O",
+    "pathway_results": "Alkaloids", "superclass_results": "Tryptophan alkaloids", "class_results":
+    "", "is_glycoside": "false", "model_version": "npclassifier.gnps2.org@2026-09-07"}}]. Owners
+    occupying the two exact keys: [{"path": "data/natural_products/alkaloids/indigoidine-2.yaml",
+    "identifier": "naturalproductmech:mibig-8920af415c", "key": "ZZTNWZPJOCVMIN-AATRIKPKSA-N",
+    "sha256": "9abeb31eb0903167a5dc8f01a16bdb33e92b02f1d6562b1944778f37082f1f8b"}, {"path":
+    "data/natural_products/alkaloids/indigoidine.yaml", "identifier": "CHEBI:79296", "key":
+    "ALDIVIWLBSDGGN-ONEGZZNKSA-N", "sha256": "f981b2620818810d101e76931227fc882184289a5865339571cfbac2bd8bba13"}].
+    The ZZTNWZPJOCVMIN key has no eligible ChEBI row in this complete inventory search.'
+  search_scope: All rows of the named TSV files and every owner YAML via Path.rglob; gitignored
+    files included. Exact keys, label and source IDs searched.
+- evidence_id: taxonomy
+  kind: database
+  reference: data/raw/corpus_taxa.obo
+  accessed_at: '2026-10-13T06:34:28.405765Z'
+  support: partial
+  summary: 'Pinned taxonomy parsed with pronto: [{"identifier": "NCBITaxon:1912", "present":
+    true, "name": "Streptomyces hygroscopicus", "synonyms": ["Actinomyces hygroscopicus", "Streptomyces
+    endus"], "annotations": []}, {"identifier": "NCBITaxon:1914", "present": true, "name": "Streptomyces
+    lavendulae", "synonyms": ["Actinomyces lavendulae"], "annotations": []}, {"identifier":
+    "NCBITaxon:42881", "present": true, "name": "Streptomyces chromofuscus", "synonyms": ["Actinomyces
+    chromofuscus"], "annotations": []}, {"identifier": "NCBITaxon:1886", "present": true, "name":
+    "Streptomyces albidoflavus", "synonyms": ["Actinomyces albidoflavus", "Actinomyces globisporus
+    var. caucasicus", "Cladothrix albido-flava", "Streptomyces albidoflavus (Rossi Doria 1891)
+    Waksman and Henrici 1948 (Approved Lists 1980)", "Streptomyces globisporus subsp. caucasicus"],
+    "annotations": []}, {"identifier": "NCBITaxon:58340", "present": true, "name": "Streptomyces
+    lavendulae subsp. lavendulae", "synonyms": [], "annotations": []}, {"identifier": "NCBITaxon:469008",
+    "present": false, "name": null, "synonyms": [], "annotations": []}]. Species/strain distinctions
+    from native sequence source qualifiers are assessed separately; missing469008 in this bounded
+    OBO is not absence from NCBI.'
+  snapshot_sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+- evidence_id: ownership
+  kind: record_content
+  reference: docs/CURATION.md
+  accessed_at: '2026-10-13T06:42:31.970244Z'
+  support: supports
+  summary: REPLACE_WITH_CHEBI is implemented only for an eligible unoccupied destination, and
+    does not merge owners. ALDIVIWLBSDGGN-ONEGZZNKSA-N is already occupied by CHEBI:79296. No
+    applicable row in either implemented correction table. Locus overrides alter evidence methods,
+    not molecule identity. decisions.tsv is reserved/unimplemented.
+  snapshot_sha256: 3b979068592adbb0611de95927ca31eaabb5fb5d791aa09973e3b1e8d5a19011
+  search_scope: All curation/**/*.tsv parsed with csv, including ignored files; both implemented
+    correction tables have zero indigoidine/BGC0002295/BGC0000375 hits.
+- evidence_id: access-limits
+  kind: search
+  reference: Inherited indigoidine access ledger and this session evidence checks
+  accessed_at: '2026-10-13T06:42:31.970490Z'
+  support: unknown
+  summary: DOI10.1016/j.isci.2019.11.037, MIBiG BGC0002295 and PubChem PUG request for CIDs193349/5492261
+    returned tool access failures during the preceding indigoidine research at05:49:21Z. No
+    alternate paper routes retried. No primary experimental conclusions drawn from those failures.
+  search_scope: Exact named sources only; previously stopped/challenged papers were not retried
+    via alternate routes. The campaign access ledger has162 inherited stops plus aliases, SHA256810ac00abcf3732108d1fecc011918d748813874154203b090bd63a8be55a601.
+assessments:
+- assessment_id: serialization
+  area: consistency
+  topic: Chemical serialization versus biological identity
+  outcome: supported
+  summary: Both this SMILES and InChI independently reproduce ZZTNWZPJOCVMIN-AATRIKPKSA-N and
+    C10H9N3O3, charge0. No tetrahedral stereocentres; one E double bond encoded. This limited
+    consistency result cannot prove that the label or biosynthetic product is correct.
+  target_ids:
+  - naturalproductmech:mibig-8920af415c
+  evidence_ids:
+  - chemistry
+  - owner
+- assessment_id: classification
+  area: consistency
+  topic: Computed classification, asserted cluster class and natural origin
+  outcome: supported
+  summary: The exact-key NPClassifier2026-09-07 output matches ALKALOIDS filing, Tryptophan
+    alkaloids, with is_glycoside false. NRPS and SACCHARIDE are separately retained source BGC
+    classes, not computed chemical truth. NATURAL_PRODUCT records asserted biological origin;
+    it does not assert that every experimental production system is natural rather than engineered.
+  target_ids:
+  - naturalproductmech:mibig-8920af415c
+  evidence_ids:
+  - owner
+  - local-sources
+  - inventory
+  dimensions:
+  - name: filing
+    value: ALKALOIDS
+    definition: Computed filing axis, not asserted biosynthetic chemistry
+    evidence_ids:
+    - local-sources
+  - name: origin
+    value: NATURAL_PRODUCT
+    definition: Source-asserted origin, distinct from experimental host engineering
+    evidence_ids:
+    - inventory
+  - name: taxonomy
+    value: ACTINOBACTERIAL
+    definition: Producer taxon grouping, not a strain identifier
+    evidence_ids:
+    - owner
+    - taxonomy
+- assessment_id: ownership
+  area: ownership
+  topic: Generated and maintained boundaries
+  outcome: supported
+  summary: Future source corrections belong to the maintained inventory/extractor/seeder or
+    an implemented tested correction path. No generated owner/page patch, source correction,
+    history event or status promotion was made.
+  target_ids:
+  - naturalproductmech:mibig-8920af415c
+  evidence_ids:
+  - ownership
+  - owner
+- assessment_id: audit
+  area: provenance
+  topic: Native status and complete history
+  outcome: supported
+  summary: SEEDED is retained. Two seeding events describe database-derived content. A validated
+    review is not scientific status promotion.
+  target_ids:
+  - naturalproductmech:mibig-8920af415c
+  evidence_ids:
+  - owner
+- assessment_id: optional-fields
+  area: completeness
+  topic: Optional activity, equivalence and dataset assertions
+  outcome: not_applicable
+  summary: 'Full owner/resolved view contains no assertions in: bioactivities, bioactivity_summary,
+    molecular_targets, related_records, clinical_status, datasets, parent_compounds, congener_of.
+    Missing optional content is not a defect. No extract activity, clinical status, spectrum
+    or cross-corpus equivalence inferred.'
+  target_ids:
+  - naturalproductmech:mibig-8920af415c
+  evidence_ids:
+  - owner
+- assessment_id: identity
+  area: identity
+  topic: Label and constitutional formula
+  outcome: concern
+  summary: The named indigoidine has C10H9N3O3 and keyZZTNWZPJOCVMIN-AATRIKPKSA-N; canonical
+    indigoidine is C10H8N4O4 and keyALDIVIWLBSDGGN-ONEGZZNKSA-N. The N/O counts differ, excluding
+    a mere stereoisomer, protonation or tautomer explanation. The database-source label is faithfully
+    imported but chemically conflicts with the asserted identity.
+  target_ids:
+  - naturalproductmech:mibig-8920af415c
+  evidence_ids:
+  - owner
+  - inventory
+  - chebi
+  - chemistry
+- assessment_id: grounding-xrefs
+  area: grounding
+  topic: Minted rationale and PubChem193349
+  outcome: unknown
+  summary: MINTED matches absence of an exact-key eligible ChEBI structure. That explains the
+    mint, not the indigoidine label. PubChem193349 was not independently verified; no exact
+    CID correction or equivalence with CHEBI:79296 is asserted.
+  target_ids:
+  - naturalproductmech:mibig-8920af415c
+  evidence_ids:
+  - owner
+  - local-sources
+  - access-limits
+- assessment_id: producer-bgc
+  area: evidence
+  topic: BGC0002295 compound2 and S.hygroscopicus producer grade
+  outcome: unknown
+  summary: Raw row and owner agree on version3 active, S.hygroscopicus tax1912, MK122964.1:5879..15193,
+    Heterologous expression plus Knock-out studies, BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED.
+    The DOI is correctly typed DATABASE_ASSERTION at compound-evidence level. The same entry
+    contains minimycin as compound1. Whether experiments support indigoidine and this exact
+    taxon/structure is unverified; shared entry methods are not automatically transferred between
+    compounds. No provisional grade defect is invented from inability to inspect the paper.
+  target_ids:
+  - naturalproductmech:mibig-8920af415c
+  evidence_ids:
+  - owner
+  - inventory
+  - taxonomy
+  - access-limits
+- assessment_id: no-mechanism
+  area: completeness
+  topic: Occurrences, pathway, graphs and discussions
+  outcome: not_applicable
+  summary: No occurrences, pathway, graphs, graph refs or discussions occur in the complete
+    owner. A missing optional graph is not a required-field defect. Do not copy the canonical
+    owner graphs by label.
+  target_ids:
+  - naturalproductmech:mibig-8920af415c
+  evidence_ids:
+  - owner
+  - local-sources
+findings:
+- finding_id: F1
+  issue_key: mibig-BGC0002295-compound-2-wrong-constitution
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Indigoidine label denotes a constitution with one fewer nitrogen and oxygen
+  description: The maintained row and owner encode C10H9N3O3 rather than canonical indigoidine
+    C10H8N4O4. The serialization is internally consistent, so strict validation and reproduction
+    can pass despite wrong identity. This observation does not identify the intended PubChem
+    entry or prove which experimental claims belong to a corrected owner.
+  target_ids:
+  - naturalproductmech:mibig-8920af415c
+  field_paths:
+  - label
+  - chemical_structure
+  - source_concepts[0]
+  evidence_ids:
+  - owner
+  - inventory
+  - chebi
+  - chemistry
+  - local-sources
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Exact BGC0002295 compound2 assertion
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Upstream structure extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Identity harmonization and generated emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/PATHS.tsv
+    role: Explicit identity/path migration after adjudication
+  rule_id: 'docs/HARMONIZATION.md: one record per individual structure; review-checklist Identity/Structure'
+  native_severity: blocker
+  normalization_reason: Constitutional conflict makes the labelled record denote the wrong molecule.
+actions:
+- action_id: adjudicate-identity
+  description: Inspect authorized primary or authoritative product evidence for BGC0002295 compound2,
+    then correct the maintained extraction/harmonization or undertake a separately tested identity
+    migration. The narrow REPLACE_WITH_CHEBI route is inapplicable because CHEBI:79296 already
+    owns the destination key. Do not merge by name, transfer all BGC claims, patch the generated
+    YAML, or use the unconsumed decisions.tsv.
+  finding_ids:
+  - F1
+  target_ids:
+  - naturalproductmech:mibig-8920af415c
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Exact BGC0002295 compound2 assertion
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Upstream structure extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Identity harmonization and generated emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/PATHS.tsv
+    role: Explicit identity/path migration after adjudication
+  generator: scripts/seed_from_sources.py
+  acceptance_checks:
+  - Primary/authority evidence resolves exact product structure, stereo and every retained xref,
+    with source-row digests.
+  - Re-audit indigoidine versus minimycin locus and producer claims separately; retain only
+    applicable claims.
+  - An explicit collision-aware migration preserves applicable canonical graphs/history, handles
+    PATHS and components, and does not silently overwrite occupied owners.
+  - Pinned chemistry, dry run/canary, guarded writers, strict validation, verify-reproduction,
+    verify-corpus, provenance, render-check and full QC pass.
+- action_id: complete-evidence-review
+  description: Complete the remaining exact-source checks using authorized inspectable material;
+    retain all inherited access stops and save an immutable successor review. This action is
+    proposed evidence work, not completed curation.
+  finding_ids: []
+  target_ids:
+  - naturalproductmech:mibig-8920af415c
+  ownership_note: Read-only evidence follow-up; any source/record mutation requires separate
+    authorization.
+  acceptance_checks:
+  - Verify current versioned BGC, all chemical xrefs and cited primary compound/producer assertions
+    at exact strain and structure scope.
+  - Run the pinned RDKit consistency calculation; auxiliary toolkit agreement is not a substitute.
+limitations:
+- Partial scientific review, not a pass. Required primary/currentness/equivalence and pinned-chemistry
+  checks remain incomplete.
+- Full goal remains3115 owners plus242 components. This report covers one owner; no sampling
+  or reduced success criterion.
+- No record, component, inventory, generated page, history event or scientific status changed.
+  No GitHub mutation or publication in this goal continuation.
+- Self-review by the same assistant/thread; no independent reviewer is claimed.
+- Cached official records establish pinned sequence/source assertions, not full live freshness
+  or experimental construct identity.
+- Raw temporary research artifacts may expire. Essential source identifiers, hashes, exact mappings,
+  findings and check results are embedded in this immutable report; full raw-source archival
+  is not claimed.
+- DOI10.1016/j.isci.2019.11.037, MIBiG BGC0002295 and PubChem PUG request for CIDs193349/5492261
+  returned tool access failures during the preceding indigoidine research at05:49:21Z. No alternate
+  paper routes retried. No primary experimental conclusions drawn from those failures.
+notes:
+- Only the new YAML/Markdown review bundle is written to the repository. Diagnostics and campaign
+  checkpoint are temporary read-only-work outputs.
+- 'Active profile/CLAUDE.md override the older checklist reference to decisions.tsv: it is reserved
+  and unimplemented.'
+- The corpus source hash revalidation and deterministic gates are not scientific review. No
+  unassessed owner is counted as reviewed.
+finished_at: '2026-10-13T06:44:09.934323Z'
+review_id: 20261013T064409Z-indigoidine-2

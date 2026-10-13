@@ -1,0 +1,1033 @@
+{
+  "identifier": "CHEBI:79296",
+  "label": "indigoidine",
+  "chemical_structure": {
+    "smiles": "C\\1=C(C(=O)NC(=O)/C1=C/2\\C=C(C(=O)NC2=O)N)N",
+    "standard_inchi": "InChI=1S/C10H8N4O4/c11-5-1-3(7(15)13-9(5)17)4-2-6(12)10(18)14-8(4)16/h1-2H,11-12H2,(H,13,15,17)(H,14,16,18)/b4-3+",
+    "standard_inchi_key": "ALDIVIWLBSDGGN-ONEGZZNKSA-N",
+    "stereo_complete": true,
+    "structure_source": "MIBIG",
+    "structure_source_id": "mibig:BGC0000375"
+  },
+  "np_pathway": "ALKALOIDS",
+  "biosynthesis_origin": "NATURAL_PRODUCT",
+  "definition": "A member of the class of pyridone that is a dimeric blue pigment biosynthesised from L-glutamine.",
+  "definition_source": "CHEBI:79296",
+  "np_classification": {
+    "tool": "NPClassifier",
+    "tool_version": "npclassifier.gnps2.org@2026-09-07",
+    "pathway_results": [
+      "Alkaloids"
+    ],
+    "superclass_results": [
+      "Ornithine alkaloids"
+    ],
+    "class_results": [],
+    "is_glycoside": false
+  },
+  "occurrence_taxon_groups": [
+    "ACTINOBACTERIAL"
+  ],
+  "occurrences": [
+    {
+      "taxon_label": "Streptomyces lavendulae",
+      "source": "CHEBI",
+      "evidence": [
+        {
+          "reference": "PMID:17237222",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "ChEBI compound origin for CHEBI:79296"
+        }
+      ],
+      "taxon_id": "NCBITaxon:1914",
+      "taxon_source": "NCBITaxon",
+      "detection_context": "ATCC11924"
+    },
+    {
+      "taxon_id": "NCBITaxon:42881",
+      "taxon_label": "Streptomyces chromofuscus",
+      "taxon_source": "NCBITaxon",
+      "source": "LOTUS",
+      "evidence": [
+        {
+          "reference": "DOI:10.1007/S10295-012-1207-9",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "LOTUS structure-organism-reference triple. LOTUS reports that the compound was found in the organism; it does not assert that the organism produces it."
+        }
+      ],
+      "notes": "Wikidata organism http://www.wikidata.org/entity/Q22287099 This taxon is also recorded as a producer, from a different source and citation. The two corroborate each other rather than duplicating."
+    }
+  ],
+  "bgc_class": [
+    "NRPS"
+  ],
+  "xrefs": [
+    "pubchem:5492261"
+  ],
+  "producer_taxon_groups": [
+    "ACTINOBACTERIAL"
+  ],
+  "producer_organisms": [
+    {
+      "taxon_id": "NCBITaxon:42881",
+      "taxon_label": "Streptomyces chromofuscus",
+      "evidence_basis": "SOURCE_ASSERTION",
+      "biosynthetic_gene_cluster": "mibig:BGC0000375",
+      "source": "MIBIG",
+      "source_version": "5",
+      "notes": "Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED; this field grades the taxon claim, which is a different question.",
+      "evidence": [
+        {
+          "reference": "PMID:23053349",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "MIBiG BGC0000375 entry version 5; citation taken from the entry level"
+        }
+      ]
+    }
+  ],
+  "biosynthetic_gene_clusters": [
+    {
+      "accession": "mibig:BGC0000375",
+      "entry_version": "5",
+      "entry_status": "active",
+      "organism_taxon_id": "NCBITaxon:42881",
+      "organism_label": "Streptomyces chromofuscus",
+      "evidence": [
+        {
+          "reference": "PMID:23053349",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "MIBiG BGC0000375 entry version 5; citation taken from the entry level"
+        }
+      ],
+      "genome_accession": "genbank:JX499187.1",
+      "bgc_class": [
+        "NRPS"
+      ],
+      "link_evidence_basis": "CLUSTER_UNSTATED"
+    }
+  ],
+  "source_concepts": [
+    {
+      "source": "MIBIG",
+      "source_id": "BGC0000375",
+      "source_label": "indigoidine",
+      "source_version": "5",
+      "minted_identifier": "naturalproductmech:mibig-af672dddf2"
+    },
+    {
+      "source": "CHEBI",
+      "source_id": "CHEBI:79296",
+      "source_label": "indigoidine",
+      "source_version": "3-star",
+      "minted_identifier": "naturalproductmech:chebi-7822ce3c7c"
+    }
+  ],
+  "grounding_status": "EXACT",
+  "curation_status": "SEEDED",
+  "biosynthetic_pathway": [
+    {
+      "step_number": 1,
+      "enzyme_id": "UniProtKB:K4MP98",
+      "enzyme_label": "Sc-IndC indigoidine synthase",
+      "reaction_id": "RHEA:81499",
+      "substrate": "CHEBI:58359",
+      "substrates": [
+        "CHEBI:58210",
+        "CHEBI:58359",
+        "CHEBI:30616",
+        "CHEBI:15379"
+      ],
+      "product": "CHEBI:79296",
+      "products": [
+        "CHEBI:79296",
+        "CHEBI:57618",
+        "CHEBI:456215",
+        "CHEBI:33019",
+        "CHEBI:15377"
+      ],
+      "notes": "Streptomyces chromofuscus ATCC 49982 Sc-IndC is the exact indigoidine synthase encoded by the MIBiG BGC0000375 indC CDS. The Sc-IndB coexpression effect is represented separately in the Sc-IndC causal graph; it is not assigned this Rhea-grounded synthase reaction or an additional ordered pathway step.",
+      "evidence": [
+        {
+          "reference": "DOI:10.1007/s10295-012-1207-9",
+          "evidence_type": "PRIMARY_EXPERIMENT",
+          "snippet": "Sc-IndC was functionally characterized as an indigoidine synthase through heterologous expression",
+          "notes": "Yu et al. located the silent Streptomyces chromofuscus ATCC 49982 cluster and showed that Sc-IndC produces indigoidine in heterologous Streptomyces coelicolor CH999 and Escherichia coli BAP1 hosts."
+        },
+        {
+          "reference": "https://mibig.secondarymetabolites.org/repository/BGC0000375.5/BGC0000375.gbk",
+          "evidence_type": "DATABASE_ASSERTION",
+          "retrieved_on": "2026-09-30",
+          "notes": "MIBiG BGC0000375.5 places indC at 1630..5763 in the Streptomyces chromofuscus ATCC 49982 JX499187.1 cluster, with protein_id AFV27434.1 and product indigoidine synthase."
+        },
+        {
+          "reference": "https://www.uniprot.org/uniprotkb/K4MP98",
+          "evidence_type": "DATABASE_ASSERTION",
+          "retrieved_on": "2026-09-30",
+          "notes": "UniProtKB:K4MP98 is the unreviewed Streptomyces chromofuscus indC gene product and cross-references EMBL JX499187 protein AFV27434.1."
+        },
+        {
+          "reference": "https://www.rhea-db.org/rhea/81499",
+          "evidence_type": "DATABASE_ASSERTION",
+          "retrieved_on": "2026-09-30",
+          "notes": "RHEA:81499 is the overall indigoidine synthase reaction consuming FMN, L-glutamine, ATP and O2 to form indigoidine, FMNH2, AMP, diphosphate and H2O; RHEA:81500 is its left-to-right direction."
+        }
+      ]
+    }
+  ],
+  "causal_graphs": [
+    {
+      "graph_id": "indigoidine-indc-biosynthesis",
+      "scope": "BIOSYNTHESIS",
+      "description": "Streptomyces chromofuscus ATCC 49982 Sc-IndC converts L-glutamine to the blue pigment indigoidine. Sc-IndB is represented as the native reference for a conditional yield-enhancing coexpression effect with Sc-IndC in E. coli BAP1, not as an assigned catalytic step. Additional GlnA coexpression is represented as host engineering; the reported BL21(DE3) protein sequence remains unresolved.",
+      "nodes": [
+        {
+          "node_id": "l_glutamine",
+          "label": "L-glutamine",
+          "node_type": "PRECURSOR",
+          "identifier": "CHEBI:58359",
+          "grounding_status": "GROUNDED"
+        },
+        {
+          "node_id": "sc_indc",
+          "label": "Sc-IndC",
+          "node_type": "ENZYME",
+          "identifier": "UniProtKB:K4MP98",
+          "grounding_status": "GROUNDED"
+        },
+        {
+          "node_id": "indigoidine",
+          "label": "indigoidine",
+          "node_type": "COMPOUND",
+          "identifier": "CHEBI:79296",
+          "grounding_status": "GROUNDED"
+        },
+        {
+          "node_id": "sc_indb",
+          "label": "Sc-IndB (S. chromofuscus native reference)",
+          "node_type": "PROTEIN",
+          "identifier": "UniProtKB:K4MZR0",
+          "grounding_status": "GROUNDED"
+        },
+        {
+          "node_id": "glna_bl21_reported",
+          "label": "GlnA (BL21(DE3), sequence unresolved)",
+          "node_type": "PROTEIN",
+          "grounding_status": "REVIEW_NEEDED"
+        }
+      ],
+      "edges": [
+        {
+          "subject": "l_glutamine",
+          "predicate": "is converted to indigoidine by",
+          "object": "sc_indc",
+          "notes": "Sc-IndC catalyzes the RHEA:81499 overall conversion from two L-glutamine molecules to indigoidine.",
+          "evidence": [
+            {
+              "reference": "DOI:10.1007/s10295-012-1207-9",
+              "evidence_type": "PRIMARY_EXPERIMENT",
+              "snippet": "Sc-IndC was functionally characterized as an indigoidine synthase through heterologous expression",
+              "notes": "Yu et al. located the silent Streptomyces chromofuscus ATCC 49982 cluster and showed that Sc-IndC produces indigoidine in heterologous Streptomyces coelicolor CH999 and Escherichia coli BAP1 hosts."
+            },
+            {
+              "reference": "https://mibig.secondarymetabolites.org/repository/BGC0000375.5/BGC0000375.gbk",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-09-30",
+              "notes": "MIBiG BGC0000375.5 places indC at 1630..5763 in the Streptomyces chromofuscus ATCC 49982 JX499187.1 cluster, with protein_id AFV27434.1 and product indigoidine synthase."
+            },
+            {
+              "reference": "https://www.uniprot.org/uniprotkb/K4MP98",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-09-30",
+              "notes": "UniProtKB:K4MP98 is the unreviewed Streptomyces chromofuscus indC gene product and cross-references EMBL JX499187 protein AFV27434.1."
+            },
+            {
+              "reference": "https://www.rhea-db.org/rhea/81499",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-09-30",
+              "notes": "RHEA:81499 is the overall indigoidine synthase reaction consuming FMN, L-glutamine, ATP and O2 to form indigoidine, FMNH2, AMP, diphosphate and H2O; RHEA:81500 is its left-to-right direction."
+            }
+          ]
+        },
+        {
+          "subject": "sc_indc",
+          "predicate": "forms",
+          "object": "indigoidine",
+          "notes": "Heterologous expression of Sc-IndC established it as the indigoidine synthase in the Streptomyces chromofuscus ATCC 49982 BGC0000375 cluster.",
+          "evidence": [
+            {
+              "reference": "DOI:10.1007/s10295-012-1207-9",
+              "evidence_type": "PRIMARY_EXPERIMENT",
+              "snippet": "Sc-IndC was functionally characterized as an indigoidine synthase through heterologous expression",
+              "notes": "Yu et al. located the silent Streptomyces chromofuscus ATCC 49982 cluster and showed that Sc-IndC produces indigoidine in heterologous Streptomyces coelicolor CH999 and Escherichia coli BAP1 hosts."
+            },
+            {
+              "reference": "https://mibig.secondarymetabolites.org/repository/BGC0000375.5/BGC0000375.gbk",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-09-30",
+              "notes": "MIBiG BGC0000375.5 places indC at 1630..5763 in the Streptomyces chromofuscus ATCC 49982 JX499187.1 cluster, with protein_id AFV27434.1 and product indigoidine synthase."
+            },
+            {
+              "reference": "https://www.uniprot.org/uniprotkb/K4MP98",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-09-30",
+              "notes": "UniProtKB:K4MP98 is the unreviewed Streptomyces chromofuscus indC gene product and cross-references EMBL JX499187 protein AFV27434.1."
+            },
+            {
+              "reference": "https://www.rhea-db.org/rhea/81499",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-09-30",
+              "notes": "RHEA:81499 is the overall indigoidine synthase reaction consuming FMN, L-glutamine, ATP and O2 to form indigoidine, FMNH2, AMP, diphosphate and H2O; RHEA:81500 is its left-to-right direction."
+            }
+          ]
+        },
+        {
+          "subject": "sc_indb",
+          "predicate": "increases yield of when coexpressed with Sc-IndC",
+          "object": "indigoidine",
+          "notes": "Conditional coexpression effect reported in E. coli BAP1, represented by the exact native Sc-IndB reference. This is not an isolated Sc-IndB catalytic reaction, a demonstrated physical complex, or native essentiality.",
+          "evidence": [
+            {
+              "reference": "DOI:10.1007/s10295-012-1207-9",
+              "evidence_type": "PRIMARY_EXPERIMENT",
+              "retrieved_on": "2026-10-11",
+              "notes": "The primary abstract reports increased indigoidine yield when Sc-IndB and Sc-IndC were coexpressed in E. coli BAP1. No quantitative value is curated here. Full text, methods, figures, tags and exact experimental constructs remain uninspected after the failed DOI access attempt.",
+              "snippet": "The yield of indigoidine was dramatically increased"
+            },
+            {
+              "reference": "https://www.uniprot.org/uniprotkb/K4MZR0/entry",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-10-11",
+              "notes": "Unreviewed entry 34, sequence 1, release 2026_03: indB, S. chromofuscus, 614 residues, EMBL JX499187/AFV27436.1; the reference comment names ATCC 49982. The automated PtkA/tyrosine-kinase name and RHEA:10596 annotation carry ECO:0000256 support, not a measured Sc-IndB kinase reaction. They are not adopted."
+            },
+            {
+              "reference": "https://www.ncbi.nlm.nih.gov/protein/AFV27436.1",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-10-11",
+              "notes": "Native indB/Sc-indB record: S. chromofuscus ATCC 49982, taxon 42881, 614 residues, coded_by JX499187.1:6835..8679. Its putative-phosphatase product label and HAD/Questin-oxidase-like domain annotations do not establish a measured catalytic function and are not reconciled into a reaction claim."
+            },
+            {
+              "reference": "https://www.ncbi.nlm.nih.gov/nuccore/JX499187.1",
+              "evidence_type": "CURATOR_INFERENCE",
+              "retrieved_on": "2026-10-11",
+              "notes": "The complete 1845-nt forward indB CDS, ATG start and TGA stop, independently translates under code 11 to all 614 residues of the deposited translation, AFV27436.1 and K4MZR0. Native-reference identity does not verify expression tags, engineered constructs or historical stock equivalence."
+            },
+            {
+              "reference": "https://mibig.secondarymetabolites.org/repository/BGC0000375.5/index.html",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-10-11",
+              "notes": "BGC0000375.5 links JX499187.1 and indB/AFV27436.1 to indigoidine, C10H8N4O4, the existing CHEBI:79296 owner. Compound correspondence is database-grounded; primary chemical-analysis data were not re-inspected. Entry quality is questionable and completeness unknown; no producer or cluster grade is upgraded."
+            }
+          ]
+        },
+        {
+          "subject": "glna_bl21_reported",
+          "predicate": "increases yield of when coexpressed with Sc-IndC",
+          "object": "indigoidine",
+          "notes": "Reported additional GlnA expression in E. coli BAP1 carrying Sc-IndC, with or without Sc-IndB. This is a host-engineering yield effect, not native cluster membership, an isolated catalytic reaction or direct glutamine-flux measurement. The exact expressed sequence is unresolved; no protein accession is assigned.",
+          "evidence": [
+            {
+              "reference": "DOI:10.1007/s10295-015-1642-5",
+              "evidence_type": "PRIMARY_EXPERIMENT",
+              "retrieved_on": "2026-10-11",
+              "notes": "Inspected methods/results identify BL21(DE3) as the glnA donor and pFC6/pFC7 coexpression in BAP1. The reported insert length is 1284 bp. Figure pixels, supplements and remaining text were not inspected after a failed continuation read; no quantitative titer or exact construct-sequence claim is curated.",
+              "snippet": "overexpression of GlnA in E. coli BAP1 can greatly increase the production of indigoidine."
+            },
+            {
+              "reference": "https://www.ncbi.nlm.nih.gov/protein/ACT45548.1",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-10-11",
+              "notes": "Native BL21(DE3) glnA/ECD_03755 reference: 469 residues, coded_by complement(CP001509.3:3963323..3964732). This is a reference record, not an identification of the protein actually expressed in the paper."
+            },
+            {
+              "reference": "https://www.ncbi.nlm.nih.gov/protein/CAQ34221.1",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-10-11",
+              "notes": "Independent BL21(DE3) glnA/B21_03704 reference: 469 residues, coded_by complement(AM946981.2:3963317..3964726). Its historical UniProt C6EF31 cross-reference is not evidence of current UniProt availability or construct equality."
+            },
+            {
+              "reference": "https://www.ncbi.nlm.nih.gov/nuccore/CP001509.3",
+              "evidence_type": "CURATOR_INFERENCE",
+              "retrieved_on": "2026-10-11",
+              "notes": "Complete 1410-nt reverse CDS, ATG start/TAA stop, code 11: independent translation matches all 469 residues of ACT45548.1 and CAQ34221.1. The reported primer template segments match both native endpoints. This does not reconcile the paper's 1284-bp length or prove an experimental stock/insert."
+            },
+            {
+              "reference": "https://www.ncbi.nlm.nih.gov/nuccore/AM946981.2",
+              "evidence_type": "CURATOR_INFERENCE",
+              "retrieved_on": "2026-10-11",
+              "notes": "The independently deposited complete 1410-nt reverse CDS has identical coding DNA and translation. Agreement between native references does not establish the actual pFC6/pFC7 sequence; the 126-bp length discrepancy remains open."
+            },
+            {
+              "reference": "https://www.uniprot.org/uniprotkb/C6EF31/entry",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-10-11",
+              "notes": "UniProt release 2026_03 returns C6EF31 as Inactive/DELETED, reason Not part of a reference proteome. It is not used as an active protein identifier. No alternative UniProt exemplar is selected from name similarity."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "graph_id": "indigoidine-lavendulae-bpsa-biosynthesis",
+      "scope": "BIOSYNTHESIS",
+      "description": "S. lavendulae ATCC11924 BpsA indigoidine biosynthesis, represented by its exact native reference. Catalytic activity requires the phosphopantetheinylated enzyme. This is an independent organism-specific mechanism, not a downstream step of the existing Sc-IndC pathway.",
+      "nodes": [
+        {
+          "node_id": "l_glutamine",
+          "label": "L-glutamine zwitterion",
+          "node_type": "PRECURSOR",
+          "identifier": "CHEBI:58359",
+          "grounding_status": "GROUNDED"
+        },
+        {
+          "node_id": "bpsa",
+          "label": "BpsA (S. lavendulae native reference)",
+          "node_type": "ENZYME",
+          "identifier": "UniProtKB:Q1MWN4",
+          "grounding_status": "GROUNDED"
+        },
+        {
+          "node_id": "indigoidine",
+          "label": "indigoidine",
+          "node_type": "COMPOUND",
+          "identifier": "CHEBI:79296",
+          "grounding_status": "GROUNDED"
+        }
+      ],
+      "edges": [
+        {
+          "subject": "l_glutamine",
+          "predicate": "is_substrate_for",
+          "object": "bpsa",
+          "notes": "Substrate use by the phosphopantetheinylated enzyme; no activity claim for apo-BpsA.",
+          "evidence": [
+            {
+              "reference": "DOI:10.1074/jbc.M611319200",
+              "evidence_type": "PRIMARY_EXPERIMENT",
+              "retrieved_on": "2026-10-11",
+              "notes": "Primary abstract reports purified recombinant BPSA from S. lavendulae ATCC11924 using L-Gln. Activity required phosphopantetheinylation by a Streptomyces PPTase. Full text, methods, figures, tags and complete experimental constructs were not inspected.",
+              "snippet": "recombinant enzyme prefers L-Gln as a substrate."
+            },
+            {
+              "reference": "https://www.uniprot.org/uniprotkb/Q1MWN4/entry",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-10-11",
+              "notes": "Reviewed entry 88, sequence 1, release 2026_03: bpsA, Streptomyces lavendulae, 1282 residues; FUNCTION and RHEA:81499 annotations cite PMID:17237222. This is the exact native reference, not the S. chromofuscus Sc-IndC protein."
+            },
+            {
+              "reference": "https://www.ncbi.nlm.nih.gov/protein/BAE93896.1",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-10-11",
+              "notes": "Blue-pigment synthetase bpsA; coded_by AB240063.1:686..4534, code 11. NCBI uses subspecies taxon 58340; UniProt uses species taxon 1914. Native records have no strain qualifier; ATCC11924 is attributed by the primary abstract and UniProt reference comment, not inferred from a native strain field."
+            },
+            {
+              "reference": "https://www.ncbi.nlm.nih.gov/nuccore/AB240063.1",
+              "evidence_type": "CURATOR_INFERENCE",
+              "retrieved_on": "2026-10-11",
+              "notes": "The complete 3849-nt forward CDS, ATG start and TGA stop, independently translates to all 1282 residues in the deposited translation, BAE93896.1 and Q1MWN4. Native-reference equality does not verify historical expression tags, mutants or stocks."
+            },
+            {
+              "reference": "https://www.rhea-db.org/rhea/81499",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-10-11",
+              "notes": "Overall reaction connects L-glutamine to CHEBI:79296, key ALDIVIWLBSDGGN-ONEGZZNKSA-N; RHEA:81500 is its forward direction. CHEBI:58359 is Rhea's zwitterionic substrate representation, not a measured assay microspecies. This graph does not assign every intermediate step to BpsA."
+            }
+          ]
+        },
+        {
+          "subject": "bpsa",
+          "predicate": "catalyzes_overall_formation_of",
+          "object": "indigoidine",
+          "notes": "Overall pigment formation in the reported activated-enzyme context. No direct assignment of spontaneous dimerization, reaction intermediates, native essentiality or membership in BGC0000375/BGC0002295 is made.",
+          "evidence": [
+            {
+              "reference": "DOI:10.1074/jbc.M611319200",
+              "evidence_type": "PRIMARY_EXPERIMENT",
+              "retrieved_on": "2026-10-11",
+              "notes": "Primary abstract reports indigoidine formation by phosphopantetheinylated purified BPSA and pigment production in heterologous hosts. This is not a native knockout or producer-grade upgrade."
+            },
+            {
+              "reference": "https://www.uniprot.org/uniprotkb/Q1MWN4/entry",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-10-11",
+              "notes": "Reviewed entry 88, sequence 1, release 2026_03: bpsA, Streptomyces lavendulae, 1282 residues; FUNCTION and RHEA:81499 annotations cite PMID:17237222. This is the exact native reference, not the S. chromofuscus Sc-IndC protein."
+            },
+            {
+              "reference": "https://www.rhea-db.org/rhea/81499",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-10-11",
+              "notes": "Overall reaction connects L-glutamine to CHEBI:79296, key ALDIVIWLBSDGGN-ONEGZZNKSA-N; RHEA:81500 is its forward direction. CHEBI:58359 is Rhea's zwitterionic substrate representation, not a measured assay microspecies. This graph does not assign every intermediate step to BpsA."
+            },
+            {
+              "reference": "https://www.ebi.ac.uk/chebi/CHEBI:79296",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-10-11",
+              "notes": "Current ChEBI structure matches this owner: C10H8N4O4, charge 0, ALDIVIWLBSDGGN-ONEGZZNKSA-N. Compound correspondence is database-grounded; the original structure-analysis data were not re-inspected. The differently structured BGC0002295 record also named indigoidine is not treated as equivalent."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "graph_id": "indigoidine-j1074-pptase-reporter",
+      "scope": "BIOSYNTHESIS",
+      "description": "PPTase deletion/rescue in engineered J1074 carrying a heterologous BpsA indigoidine reporter. AGI92022.1 denotes the native PPTase reference, not a verified engineered allele. The reporter sequence is unresolved; this graph does not extend the canonical BpsA or native IndC mechanism.",
+      "nodes": [
+        {
+          "node_id": "j1074_pptase",
+          "label": "XNR_5716 PPTase (J1074 native reference)",
+          "node_type": "PROTEIN",
+          "identifier": "NCBIProtein:AGI92022.1",
+          "grounding_status": "GROUNDED"
+        },
+        {
+          "node_id": "pptase_deletion",
+          "label": "PPTase deletion in J1074 BpsA reporter",
+          "node_type": "PROCESS",
+          "grounding_status": "UNGROUNDED"
+        },
+        {
+          "node_id": "pptase_rescue",
+          "label": "PPTase reintroduction in deletion reporter",
+          "node_type": "PROCESS",
+          "grounding_status": "UNGROUNDED"
+        },
+        {
+          "node_id": "indigoidine",
+          "label": "indigoidine",
+          "node_type": "COMPOUND",
+          "identifier": "CHEBI:79296",
+          "grounding_status": "GROUNDED"
+        }
+      ],
+      "edges": [
+        {
+          "subject": "j1074_pptase",
+          "predicate": "has its encoding locus targeted by",
+          "object": "pptase_deletion",
+          "notes": "Reference-to-intervention correspondence, not a direct catalytic edge.",
+          "evidence": [
+            {
+              "reference": "DOI:10.1093/femsle/fnx155",
+              "evidence_type": "PRIMARY_EXPERIMENT",
+              "retrieved_on": "2026-10-11",
+              "notes": "Methods identify xnr_5716 as the J1074 Sfp-type PPTase locus deleted using CRISPR/Cas9."
+            },
+            {
+              "reference": "https://www.ncbi.nlm.nih.gov/protein/AGI92022.1",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-10-11",
+              "notes": "Native XNR_5716 reference, J1074, 226 residues; complement(CP004370.1:6439414..6440094). Current NCBI taxon 1886 is S. albidoflavus; the paper uses S. albus. Actual engineered alleles were not sequenced here."
+            },
+            {
+              "reference": "https://www.ncbi.nlm.nih.gov/nuccore/CP004370.1",
+              "evidence_type": "CURATOR_INFERENCE",
+              "retrieved_on": "2026-10-11",
+              "notes": "Complete 681-nt reverse CDS (ATG/TAG, code 11) translates to all 226 residues of AGI92022.1. Both reported CRISPR guide template segments match uniquely inside this locus; screening primers flank it. Reference/guide correspondence is not verification of an experimental stock or rescue insert. A bounded UniProt query for XNR_5716 or EMBL AGI92022 returned no entries; no UniProt exemplar is assigned."
+            }
+          ]
+        },
+        {
+          "subject": "pptase_deletion",
+          "predicate": "abolishes detectable reporter production of",
+          "object": "indigoidine",
+          "notes": "Restricted to the tested engineered reporter context; not universal essentiality or native IndC dependence.",
+          "evidence": [
+            {
+              "reference": "DOI:10.1093/femsle/fnx155",
+              "evidence_type": "PRIMARY_EXPERIMENT",
+              "retrieved_on": "2026-10-11",
+              "notes": "Results and Figure 1C report loss of blue pigment following deletion. The full main text and relevant figure were inspected; supplemental PCR data were not inspected.",
+              "snippet": "no longer produces indigoidine."
+            },
+            {
+              "reference": "https://www.ebi.ac.uk/chebi/CHEBI:79296",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-10-11",
+              "notes": "CHEBI:79296 denotes indigoidine: ALDIVIWLBSDGGN-ONEGZZNKSA-N, C10H8N4O4, charge 0."
+            },
+            {
+              "reference": "https://mibig.secondarymetabolites.org/repository/BGC0000375.5/index.html",
+              "evidence_type": "CURATOR_INFERENCE",
+              "retrieved_on": "2026-10-11",
+              "notes": "Pinned BGC0000375.5 row and owner SMILES/InChI independently parse with RDKit 2026.03.5 to the same Standard InChIKey ALDIVIWLBSDGGN-ONEGZZNKSA-N, formula C10H8N4O4 and charge 0. The different BGC0002295 owner is excluded. This is a curator comparison, not new primary analytical confirmation."
+            },
+            {
+              "reference": "DOI:10.1093/femsle/fnx155",
+              "evidence_type": "CURATOR_INFERENCE",
+              "retrieved_on": "2026-10-11",
+              "notes": "The inspected Figure 1 indigoidine schematic is consistent with this owner structure. This visual interpretation is not new analytical confirmation."
+            }
+          ]
+        },
+        {
+          "subject": "j1074_pptase",
+          "predicate": "is native reference for protein supplied in",
+          "object": "pptase_rescue",
+          "notes": "Reference-to-intervention correspondence; complete rescue-construct sequence remains unverified.",
+          "evidence": [
+            {
+              "reference": "DOI:10.1093/femsle/fnx155",
+              "evidence_type": "PRIMARY_EXPERIMENT",
+              "retrieved_on": "2026-10-11",
+              "notes": "Results describe reintroduction of the deleted PPTase in trans at phiC31 under ermE* control."
+            },
+            {
+              "reference": "https://www.ncbi.nlm.nih.gov/protein/AGI92022.1",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-10-11",
+              "notes": "Native XNR_5716 reference, J1074, 226 residues; complement(CP004370.1:6439414..6440094). Current NCBI taxon 1886 is S. albidoflavus; the paper uses S. albus. Actual engineered alleles were not sequenced here."
+            }
+          ]
+        },
+        {
+          "subject": "pptase_rescue",
+          "predicate": "restores reporter production of",
+          "object": "indigoidine",
+          "notes": "Genetic complementation readout, not purified phosphopantetheinyl-transfer activity, a physical complex, or membership in BGC0000375/BGC0002295.",
+          "evidence": [
+            {
+              "reference": "DOI:10.1093/femsle/fnx155",
+              "evidence_type": "PRIMARY_EXPERIMENT",
+              "retrieved_on": "2026-10-11",
+              "notes": "Native-PPTase rescue is described in Results text. Figure 1C bottom instead illustrates eDNA-clone complementation; it is not an image of this native-PPTase rescue.",
+              "snippet": "Production of indigoidine was restored"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "graph_id": "indigoidine-fri5-lbpa-expression",
+      "scope": "BIOSYNTHESIS",
+      "description": "FRI-5 LbpA heterologous-expression evidence in S. avermitilis SUKA22. The protein node is the exact native reference, not a verified engineered construct. This independent graph does not extend the Sc-IndC, ATCC11924 BpsA or J1074 reporter mechanisms.",
+      "nodes": [
+        {
+          "node_id": "lbpa",
+          "label": "LbpA (S. lavendulae FRI-5 native reference)",
+          "node_type": "ENZYME",
+          "identifier": "UniProtKB:A0A1Q2SRM5",
+          "grounding_status": "GROUNDED"
+        },
+        {
+          "node_id": "lbpa_expression",
+          "label": "Heterologous lbpA expression in SUKA22",
+          "node_type": "PROCESS",
+          "grounding_status": "UNGROUNDED"
+        },
+        {
+          "node_id": "glutamine_feeding",
+          "label": "L-glutamine feeding of SUKA22 expressing lbpA",
+          "node_type": "PROCESS",
+          "grounding_status": "UNGROUNDED"
+        },
+        {
+          "node_id": "indigoidine",
+          "label": "indigoidine",
+          "node_type": "COMPOUND",
+          "identifier": "CHEBI:79296",
+          "grounding_status": "GROUNDED"
+        }
+      ],
+      "edges": [
+        {
+          "subject": "lbpa",
+          "predicate": "is native reference for protein encoded in",
+          "object": "lbpa_expression",
+          "notes": "Reference-to-expression correspondence; not an isolated catalytic reaction or proof of construct identity.",
+          "evidence": [
+            {
+              "reference": "DOI:10.1016/j.jbiosc.2017.04.020",
+              "evidence_type": "PRIMARY_EXPERIMENT",
+              "retrieved_on": "2026-10-11",
+              "notes": "The inspected primary abstract identifies FRI-5 lbpA and heterologous expression in S. avermitilis SUKA22. Main text, methods, figures and supplements remain uninspected."
+            },
+            {
+              "reference": "https://www.ncbi.nlm.nih.gov/protein/BAW81991.1",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-10-11",
+              "notes": "Native lbpA reference from S. lavendulae FRI-5, taxon 1914: 1282 residues, coded_by complement(LC209815.1:7353..11201). The deposit cites PMID:28533156."
+            },
+            {
+              "reference": "https://www.uniprot.org/uniprotkb/A0A1Q2SRM5/entry",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-10-11",
+              "notes": "Unreviewed entry 36, sequence 1: lbpA, S. lavendulae, 1282 residues; EMBL LC209815/BAW81991.1 and a FRI-5 reference comment. Automated cofactor, residue and enzyme-family annotations are not adopted as experiments."
+            },
+            {
+              "reference": "https://www.ncbi.nlm.nih.gov/nuccore/LC209815.1",
+              "evidence_type": "CURATOR_INFERENCE",
+              "retrieved_on": "2026-10-11",
+              "notes": "Complete 3849-nt reverse CDS, ATG start/TGA stop, code 11: independent translation matches all 1282 residues of the deposited translation, BAW81991.1 and A0A1Q2SRM5. This grounds the native reference, not the uninspected experimental insert or tags. The equal-length ATCC11924 BpsA reference BAE93896.1 differs at 22 positions; Q1MWN4 is not substituted for FRI-5 LbpA."
+            }
+          ]
+        },
+        {
+          "subject": "lbpa_expression",
+          "predicate": "enables reported production of",
+          "object": "indigoidine",
+          "notes": "Host-level expression result, not purified-enzyme catalysis, native essentiality, a physical complex or membership in BGC0000375/BGC0002295.",
+          "evidence": [
+            {
+              "reference": "DOI:10.1016/j.jbiosc.2017.04.020",
+              "evidence_type": "PRIMARY_EXPERIMENT",
+              "retrieved_on": "2026-10-11",
+              "notes": "The primary abstract reports pigment production after heterologous lbpA expression. No titer, control comparison or analytical method is curated from the uninspected full text.",
+              "snippet": "led to indigoidine production"
+            },
+            {
+              "reference": "https://www.ebi.ac.uk/chebi/CHEBI:79296",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-10-11",
+              "notes": "CHEBI:79296 denotes indigoidine, C10H8N4O4, charge 0, ALDIVIWLBSDGGN-ONEGZZNKSA-N. Compound correspondence is name/database-grounded; primary chemical-analysis data for the FRI-5 experiment were not inspected. The differently structured BGC0002295 owner is not treated as equivalent."
+            }
+          ]
+        },
+        {
+          "subject": "glutamine_feeding",
+          "predicate": "enhances reported production of",
+          "object": "indigoidine",
+          "notes": "Conditional feeding effect in the lbpA-expressing heterologous host; not direct substrate specificity, isotope incorporation or measured precursor flux.",
+          "evidence": [
+            {
+              "reference": "DOI:10.1016/j.jbiosc.2017.04.020",
+              "evidence_type": "PRIMARY_EXPERIMENT",
+              "retrieved_on": "2026-10-11",
+              "notes": "The primary abstract reports enhanced production with L-glutamine feeding. No concentration, fold change, assay timing or mechanistic intermediate is assigned.",
+              "snippet": "enhanced dramatically by feeding of the indigoidine precursor l-glutamine."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "graph_id": "indigoidine-ccm3239-bpsa-interventions",
+      "scope": "BIOSYNTHESIS",
+      "description": "CCM3239 bpsA deletion and upstream-promoter interventions. Historical and current native protein references differ at residue 385 and are separate nodes, not verified experimental alleles. The readouts support genetic involvement, not isolated catalysis or a mechanism shared with the other indigoidine graphs.",
+      "nodes": [
+        {
+          "node_id": "bpsa_historical",
+          "label": "BpsA (CCM3239 historical reference, Ala385)",
+          "node_type": "ENZYME",
+          "identifier": "NCBIProtein:ACK77757.1",
+          "grounding_status": "GROUNDED"
+        },
+        {
+          "node_id": "bpsa_current",
+          "label": "BpsA (CCM3239 current reference, Thr385)",
+          "node_type": "ENZYME",
+          "identifier": "UniProtKB:A0A2K8PVS5",
+          "grounding_status": "GROUNDED"
+        },
+        {
+          "node_id": "bpsa_deletion",
+          "label": "Reported bpsA deletion in CCM3239",
+          "node_type": "PROCESS",
+          "grounding_status": "UNGROUNDED"
+        },
+        {
+          "node_id": "bpsa_promoter",
+          "label": "AprR-kasOp* insertion upstream of CCM3239 bpsA",
+          "node_type": "PROCESS",
+          "grounding_status": "UNGROUNDED"
+        },
+        {
+          "node_id": "indigoidine",
+          "label": "indigoidine",
+          "node_type": "COMPOUND",
+          "identifier": "CHEBI:79296",
+          "grounding_status": "GROUNDED"
+        }
+      ],
+      "edges": [
+        {
+          "subject": "bpsa_historical",
+          "predicate": "is historical reference for the gene product targeted by",
+          "object": "bpsa_deletion",
+          "notes": "Reference-to-locus correspondence, not proof of the tested parental allele.",
+          "evidence": [
+            {
+              "reference": "DOI:10.1007/s12223-010-0018-5",
+              "evidence_type": "PRIMARY_EXPERIMENT",
+              "retrieved_on": "2026-10-11",
+              "notes": "The public abstract identifies bpsA and its deletion in the strain then named S. aureofaciens CCM3239. Full methods, deletion boundaries and figures are uninspected."
+            },
+            {
+              "reference": "https://www.ncbi.nlm.nih.gov/protein/ACK77757.1",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-10-11",
+              "notes": "Historical 1283-residue reference: sa8, coded_by FJ479754.1:14654..18505; replaced by ACK77757.2. It is not assigned the current UniProt accession."
+            },
+            {
+              "reference": "https://www.ncbi.nlm.nih.gov/nuccore/FJ479754.1",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-10-11",
+              "notes": "CCM3239 historical deposit, taxon 1894, cites PMID:20490753 and was replaced by KJ396772.1 in 2014. Native reference identity does not verify an experimental stock."
+            },
+            {
+              "reference": "https://www.ncbi.nlm.nih.gov/nuccore/FJ479754.1",
+              "evidence_type": "CURATOR_INFERENCE",
+              "retrieved_on": "2026-10-11",
+              "notes": "Complete 3852-nt forward CDS, ATG/TAG, code 11, translates exactly to all 1283 residues of ACK77757.1. Comparison with the current KJ396772.2 bpsA CDS finds changes at coding positions 15, 1152 and 1153; only the last changes a residue, Ala385 (GCC) to Thr385 (ACC). This is reference-version comparison, not an experimentally demonstrated mutation or a UniProt equivalence."
+            }
+          ]
+        },
+        {
+          "subject": "bpsa_deletion",
+          "predicate": "abolishes reported blue-pigment production of",
+          "object": "indigoidine",
+          "notes": "Abstract-level deletion phenotype in the tested strain. No rescue, isolated catalytic step, universal essentiality or BGC membership is asserted.",
+          "evidence": [
+            {
+              "reference": "DOI:10.1007/s12223-010-0018-5",
+              "evidence_type": "PRIMARY_EXPERIMENT",
+              "retrieved_on": "2026-10-11",
+              "notes": "The abstract reports loss of extracellular blue pigment after deletion and attributes the pigment to indigoidine by its properties. Primary chemical analyses and assay conditions are uninspected.",
+              "snippet": "failed to produce the blue pigment."
+            },
+            {
+              "reference": "https://www.ebi.ac.uk/chebi/CHEBI:79296",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-10-11",
+              "notes": "Indigoidine: C10H8N4O4, charge 0, ALDIVIWLBSDGGN-ONEGZZNKSA-N. Compound correspondence for both interventions is name/database-grounded, not new structural verification. The differently structured BGC0002295 owner is excluded."
+            }
+          ]
+        },
+        {
+          "subject": "bpsa_current",
+          "predicate": "has its encoding locus preceded by",
+          "object": "bpsa_promoter",
+          "notes": "Reference-to-intervention correspondence only; the complete engineered bpsA allele and residue 385 genotype are unresolved.",
+          "evidence": [
+            {
+              "reference": "DOI:10.1007/s00253-026-13908-9",
+              "evidence_type": "PRIMARY_EXPERIMENT",
+              "retrieved_on": "2026-10-11",
+              "notes": "Methods, Figure 1, Table S2, Table S3 and Figure S1 identify upstream cassette insertion using pCosSA19 and BpsAkasDir/Rev, with four mutants and Southern controls. The study names KJ396772/CP024986 as pSA3239 references."
+            },
+            {
+              "reference": "https://www.uniprot.org/uniprotkb/A0A2K8PVS5/entry",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-10-11",
+              "notes": "Unreviewed entry 32, sequence 1: 1283 residues; CCM3239, taxon 58340, tycC5/SLAV_40115, CP024986/ATZ29785.1. The automated Tyrocidine synthase 3 name is not adopted as the measured function."
+            },
+            {
+              "reference": "https://www.ncbi.nlm.nih.gov/nuccore/KJ396772.2",
+              "evidence_type": "DATABASE_ASSERTION",
+              "retrieved_on": "2026-10-11",
+              "notes": "bpsA/ACK77757.2 at 93052..96903 on plasmid pSA3239 in S. lavendulae subsp. lavendulae CCM3239. Historical S. aureofaciens naming is retained as source context, not another producer assignment."
+            },
+            {
+              "reference": "https://www.ncbi.nlm.nih.gov/nuccore/CP024986.1",
+              "evidence_type": "CURATOR_INFERENCE",
+              "retrieved_on": "2026-10-11",
+              "notes": "Complete reverse CDS at 144174..148025 is identical to the KJ396772.1/.2 3852-nt bpsA CDS. All code-11 translations equal ACK77757.2, ATZ29785.1 and A0A2K8PVS5. This establishes the current native reference, not the engineered stock or identity with historical ACK77757.1."
+            },
+            {
+              "reference": "DOI:10.1007/s00253-026-13908-9",
+              "evidence_type": "CURATOR_INFERENCE",
+              "retrieved_on": "2026-10-11",
+              "notes": "Both reported cassette primers have unique 40-nt native homology prefixes at the bpsA upstream/start region in all three current deposits. Prefix agreement and Southern blots do not sequence the complete mutant allele. Generic chromosomal wording does not override the pSA3239 locus mapping."
+            }
+          ]
+        },
+        {
+          "subject": "bpsa_promoter",
+          "predicate": "increases the reported pigment readout for",
+          "object": "indigoidine",
+          "notes": "Intervention-level result; neighboring transcriptional effects remain possible. Not proof that BpsA alone accounts for the increase.",
+          "evidence": [
+            {
+              "reference": "DOI:10.1007/s00253-026-13908-9",
+              "evidence_type": "PRIMARY_EXPERIMENT",
+              "retrieved_on": "2026-10-11",
+              "notes": "Results and Figure 1 compare mutants with WT after 22 h in Bennet medium. The DMSO-extract measurement is OD613 per mg wet cells, not a mass concentration or a purified-enzyme rate. No numerical fold change is curated.",
+              "snippet": "dramatic overproduction of indigoidine compared to the wild-type (WT) strain."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "discussions": [
+    {
+      "discussion_id": "curator-indigoidine-glna-construct-identity",
+      "kind": "KNOWLEDGE_GAP",
+      "status": "OPEN",
+      "posed_by": "codex",
+      "posed_date": "2026-10-11",
+      "attaches_to": [
+        "causal_graphs#indigoidine-indc-biosynthesis"
+      ],
+      "prompt": "Which complete GlnA protein sequence was expressed in pFC6/pFC7, and how should the reported 1284-bp fragment be reconciled with the 1410-bp BL21(DE3) references?",
+      "rationale": "The conditional yield result can be represented without declaring an exact protein sequence. Native reference and primer agreement cannot decide whether the reported length is an error or reflects a different construct. Resolve this before assigning an exact accession or transferring sequence-specific properties. The deleted C6EF31 accession is a separate current-availability limitation.",
+      "evidence": [
+        {
+          "reference": "DOI:10.1007/s10295-015-1642-5",
+          "supports": "SUPPORT",
+          "evidence_source": "primary methods/results text",
+          "explanation": "Reports the BL21(DE3) donor, 1284-bp fragment and pFC6/pFC7 cloning; actual insert sequence and figure pixels are unverified."
+        },
+        {
+          "reference": "https://www.ncbi.nlm.nih.gov/protein/ACT45548.1",
+          "supports": "SUPPORT",
+          "evidence_source": "database",
+          "explanation": "469-residue native reference with a 1410-nt CDS."
+        },
+        {
+          "reference": "https://www.ncbi.nlm.nih.gov/protein/CAQ34221.1",
+          "supports": "SUPPORT",
+          "evidence_source": "database",
+          "explanation": "Independent matching native protein reference."
+        },
+        {
+          "reference": "https://www.uniprot.org/uniprotkb/C6EF31/entry",
+          "supports": "SUPPORT",
+          "evidence_source": "database",
+          "explanation": "Historical accession is currently deleted, not an active example."
+        }
+      ]
+    },
+    {
+      "discussion_id": "curator-indigoidine-bpsa-reporter-construct",
+      "kind": "KNOWLEDGE_GAP",
+      "status": "OPEN",
+      "posed_by": "codex",
+      "posed_date": "2026-10-11",
+      "attaches_to": [
+        "causal_graphs#indigoidine-j1074-pptase-reporter"
+      ],
+      "prompt": "What is the complete sequence of the BpsA reporter used in the J1074 PPTase experiment?",
+      "rationale": "The reported reverse primer has no exact 3-prime template suffix of at least 15 nt in AB240063.1, although the forward endpoint matches. This does not prove a nonsynonymous change or a wrong reporter. Do not equate the reporter with BAE93896.1/UniProtKB:Q1MWN4 without resolving the construct.",
+      "evidence": [
+        {
+          "reference": "DOI:10.1093/femsle/fnx155",
+          "supports": "SUPPORT",
+          "evidence_source": "primary methods",
+          "explanation": "Reporter amplified from pCDF-duet::bpsA and cloned into pIJ10257; methods give the two primers but not a full insert sequence."
+        },
+        {
+          "reference": "https://www.ncbi.nlm.nih.gov/nuccore/AB240063.1",
+          "supports": "SUPPORT",
+          "evidence_source": "curator sequence comparison",
+          "explanation": "Native 3849-nt CDS translates to all 1282 residues of BAE93896.1. Exact primer suffix search finds the forward endpoint but not the reverse endpoint; actual reporter sequence equivalence is unresolved."
+        }
+      ]
+    },
+    {
+      "discussion_id": "curator-indigoidine-ccm3239-bpsa-alleles",
+      "kind": "KNOWLEDGE_GAP",
+      "status": "OPEN",
+      "posed_by": "codex",
+      "posed_date": "2026-10-11",
+      "attaches_to": [
+        "causal_graphs#indigoidine-ccm3239-bpsa-interventions"
+      ],
+      "prompt": "Which complete bpsA alleles occur in the parental stocks and engineered strains used for the 2010 deletion and 2026 upstream-promoter experiments?",
+      "rationale": "Historical ACK77757.1 encodes Ala385, whereas ACK77757.2, ATZ29785.1 and UniProtKB:A0A2K8PVS5 encode Thr385. A sequence-record replacement does not identify the tested genotypes. Keep the two native references distinct and do not transfer sequence-specific functional claims until the experimental alleles are resolved.",
+      "evidence": [
+        {
+          "reference": "https://www.ncbi.nlm.nih.gov/nuccore/FJ479754.1",
+          "supports": "SUPPORT",
+          "evidence_source": "curator sequence comparison",
+          "explanation": "Complete historical translation matches ACK77757.1; comparison with KJ396772.2 finds three coding nucleotide differences and one amino-acid difference."
+        },
+        {
+          "reference": "DOI:10.1007/s12223-010-0018-5",
+          "supports": "SUPPORT",
+          "evidence_source": "primary abstract",
+          "explanation": "Deletion phenotype reported; full experimental methods remain uninspected."
+        },
+        {
+          "reference": "DOI:10.1007/s00253-026-13908-9",
+          "supports": "SUPPORT",
+          "evidence_source": "primary methods and selected supplement",
+          "explanation": "Cassette primers and Southern controls locate the intervention; no complete BpsA allele sequence was established in this audit."
+        }
+      ]
+    }
+  ],
+  "curation_history": [
+    {
+      "timestamp": "2026-09-10T05:54:03Z",
+      "curator": "seed_from_sources",
+      "action": "SEEDED_FROM_SOURCES",
+      "changes": "Seeded from the committed inventories in data/raw/."
+    },
+    {
+      "timestamp": "2026-09-25T03:01:26Z",
+      "curator": "seed_from_sources",
+      "action": "SEEDED_FROM_SOURCES",
+      "changes": "Seeded from the committed inventories in data/raw/."
+    },
+    {
+      "timestamp": "2026-09-30T23:14:25Z",
+      "curator": "codex",
+      "action": "RECORD_CURATED",
+      "changes": "Added the Streptomyces chromofuscus ATCC 49982 Sc-IndC biosynthetic pathway step and BIOSYNTHESIS graph for the RHEA:81499 indigoidine synthase reaction, grounded to exact UniProtKB:K4MP98 / GenBank AFV27434.1 with Yu et al., MIBiG, UniProt and Rhea evidence.",
+      "llm_assisted": true
+    },
+    {
+      "timestamp": "2026-10-11T01:04:25Z",
+      "curator": "codex",
+      "action": "RECORD_CURATED",
+      "changes": "Added an independent S. lavendulae BpsA BIOSYNTHESIS graph with two cited edges, exact Q1MWN4/BAE93896.1/AB240063.1 native-reference grounding and required phosphopantetheinylation context. Preserved Sc-IndC graph/pathway and all source fields; full-paper, historical-construct and primary chemical-analysis limits remain explicit.",
+      "llm_assisted": true
+    },
+    {
+      "timestamp": "2026-10-11T01:19:49Z",
+      "curator": "codex",
+      "action": "RECORD_CURATED",
+      "changes": "Corrected the new BpsA graph CHEBI:58359 node to the canonical label L-glutamine zwitterion after the required label gate finding (#794). Preserved the identifier, Rhea microspecies qualification, graph evidence and every pre-existing field and history event.",
+      "llm_assisted": true
+    },
+    {
+      "timestamp": "2026-10-11T01:53:59Z",
+      "curator": "codex",
+      "action": "RECORD_CURATED",
+      "changes": "Added Sc-IndB native reference UniProtKB:K4MZR0 and one cited conditional coexpression-yield edge to the Sc-IndC graph. Updated the pathway scope note; retained the complete BpsA mechanism and all prior evidence, source grades and history. Preserved automated-function disagreement and full-paper/construct limits; no Sc-IndB catalytic step, physical complex or native-essentiality claim added.",
+      "llm_assisted": true
+    },
+    {
+      "timestamp": "2026-10-11T02:31:13Z",
+      "curator": "codex",
+      "action": "RECORD_CURATED",
+      "changes": "Added the reported BL21(DE3) GlnA coexpression-yield effect with primary DOI and a verbatim snippet. Kept the protein REVIEW_NEEDED without an exact accession and added a knowledge-gap discussion for the reported 1284-bp fragment versus 1410-bp native references and deleted UniProt C6EF31. Preserved all prior mechanisms, source fields, grades and history; no catalytic step, construct equivalence or native producer/cluster claim added.",
+      "llm_assisted": true
+    },
+    {
+      "timestamp": "2026-10-11T02:51:36Z",
+      "curator": "codex",
+      "action": "RECORD_CURATED",
+      "changes": "Migrated the GlnA construct-identity discussion to the reserved curator- namespace so the seeder preserves it in full. Corrects the reproduction defect found in PR #796; preserves all scientific claims, evidence and prior history.",
+      "llm_assisted": true
+    },
+    {
+      "timestamp": "2026-10-11T03:51:03Z",
+      "curator": "codex",
+      "action": "RECORD_CURATED",
+      "changes": "Added a separate J1074 PPTase deletion/rescue reporter graph: one native protein reference NCBIProtein:AGI92022.1, two interventions and four cited edges. Verified complete native translation and guide correspondence; retained unresolved engineered alleles and BpsA reporter identity in notes and a curator-owned discussion. Preserved both prior graphs, pathway, source fields, grades and history; no direct catalytic reaction, BGC membership or native IndC requirement asserted.",
+      "llm_assisted": true
+    },
+    {
+      "timestamp": "2026-10-11T03:56:40Z",
+      "curator": "codex",
+      "action": "RECORD_CURATED",
+      "changes": "Separated the new PPTase reporter graph's database structure assertion from curator chemistry comparison and primary-figure interpretation, with individually typed and cited evidence. Fixes issue #798; preserves every experimental claim, limitation, prior field and history event.",
+      "llm_assisted": true
+    },
+    {
+      "timestamp": "2026-10-11T04:36:09Z",
+      "curator": "codex",
+      "action": "RECORD_CURATED",
+      "changes": "Added an independent FRI-5 LbpA heterologous-expression graph with exact native UniProtKB:A0A1Q2SRM5/BAW81991.1/LC209815.1 grounding, three cited edges and abstract-level production/feeding evidence. Preserved all prior mechanisms, source fields, grades and history. Full-paper, construct and primary chemical-analysis limitations remain explicit; no direct catalytic or native-essentiality claim added.",
+      "llm_assisted": true
+    },
+    {
+      "timestamp": "2026-10-11T05:13:45Z",
+      "curator": "codex",
+      "action": "RECORD_CURATED",
+      "changes": "Added a separate CCM3239 BpsA intervention graph with four cited edges, historical NCBIProtein:ACK77757.1 and current UniProtKB:A0A2K8PVS5 native references, and a discussion preserving the unresolved experimental alleles. Verified complete native translations and retained the Ala385/Thr385 discrepancy. Preserved all earlier graphs, pathway, source fields, grades and history. Deletion and upstream-promoter readouts are not asserted as isolated catalysis or new producer/BGC grades.",
+      "llm_assisted": true
+    }
+  ]
+}

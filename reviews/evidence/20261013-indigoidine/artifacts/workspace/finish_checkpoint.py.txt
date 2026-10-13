@@ -1,0 +1,83 @@
+import hashlib
+import json
+import subprocess
+import sys
+from collections import Counter
+from datetime import datetime, timezone
+from pathlib import Path
+
+import yaml
+
+ROOT=Path(__file__).parent
+REPO=Path.cwd()
+BASE='127b18b43ac6c9ac76fd4ad878979ed8ddb0de8f'
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+now=lambda:datetime.now(timezone.utc).isoformat().replace('+00:00','Z')
+results=[]
+for name,args in [
+    ('saved-contract-check',['scripts/record_review.py','check','--base',BASE]),
+    ('saved-contract-tests',['-m','pytest','-q','tests/test_record_review_contract.py','tests/test_review_evidence_archive.py']),
+]:
+    start=now()
+    with (ROOT/(name+'.log')).open('x') as stream:
+        run=subprocess.run([sys.executable]+args,stdout=stream,stderr=subprocess.STDOUT)
+    r=dict(command=[sys.executable]+args,started_at=start,finished_at=now(),exit_code=run.returncode,
+           output=(ROOT/(name+'.log')).read_text(),log_sha256=sha(ROOT/(name+'.log')))
+    with (ROOT/(name+'.receipt.json')).open('x') as stream:
+        json.dump(r,stream,indent=2)
+    print(json.dumps(r),flush=True)
+    assert run.returncode==0
+    results.append(r)
+old_path=REPO/'reviews/evidence/20261013-2mib-heme/artifacts/workspace/review-campaign-checkpoint.json'
+old=json.loads(old_path.read_text())
+records=old['records']
+assert {r['path'] for r in records}=={str(p.relative_to(REPO)) for p in (REPO/'data/natural_products').rglob('*.yaml')}
+components={c['path']:c['sha256'] for r in records for c in r['graph_components']}
+assert set(components)=={str(p.relative_to(REPO)) for p in (REPO/'data/causal_graphs').rglob('*.yaml')}
+for r in records:
+    assert sha(REPO/r['path'])==r['sha256']
+for p,digest in components.items():
+    assert sha(REPO/p)==digest
+for r in old['reviews']:
+    assert sha(REPO/r['yaml'])==r['yaml_sha256']
+    assert sha(REPO/r['markdown'])==r['markdown_sha256']
+reviews=[]
+for p in sorted((REPO/'reviews/structured').rglob('review.yaml')):
+    d=yaml.safe_load(p.read_text())
+    t=d['targets'][0]
+    md=p.with_suffix('.md')
+    reviews.append(dict(review_id=d['review_id'],yaml=str(p.relative_to(REPO)),yaml_sha256=sha(p),
+        markdown=str(md.relative_to(REPO)),markdown_sha256=sha(md),target_id=t['target_id'],path=t['path'],
+        verdict=d['verdict'],completion=d['completion'],scientific_review=d['scientific_review'],
+        findings=[{k:f[k] for k in ['issue_key','severity','certainty','status']} for f in d['findings']]))
+assert len(reviews)==7
+by_path={r['path']:r for r in reviews}
+for r in records:
+    r['review_state']=by_path[r['path']]['completion'] if r['path'] in by_path else 'unassessed'
+pending=[p for p in old['pending_in_priority_order'] if p not in by_path]
+assert len(pending)==3108
+assert set(pending)=={r['path'] for r in records if r['review_state']=='unassessed'}
+checkpoint=dict(objective=old['objective'],goal_status='active',turn_classification='progress',
+    previous_turn_classification='no scientific progress: publication status verified and empty branch cleaned up; revalidated and resumed pending evidence work',
+    recorded_at=now(),base=BASE,branch=subprocess.check_output(['git','branch','--show-current'],text=True).strip(),
+    prior_checkpoint=str(old_path),prior_checkpoint_sha256=sha(old_path),population=len(records),graph_components=len(components),
+    scientific_review_bundles=len(reviews),completed_scientific_reviews=sum(r['completion']=='completed' for r in reviews),
+    partial_reviews=sum(r['completion']=='partial' for r in reviews),unassessed_records=len(pending),
+    findings=dict(Counter(f['severity'] for r in reviews for f in r['findings'])),
+    all_records_and_components_unchanged=True,no_record_mutations=True,no_github_mutations=True,
+    records=records,reviews=reviews,pending_in_priority_order=pending,partial_followups=sorted(by_path),
+    priority_method=old['priority_method'],live_sessions=0,
+    inherited_scientific_access_stops=old['inherited_scientific_access_stops'],
+    access_stop_note='Preserve all inherited stops and aliases, including earlier indigoidine attempts. No stopped paper retried in this continuation.',
+    current_evidence_sources=json.loads((ROOT/'evidence-audit.json').read_text())['artifacts'],
+    current_uniprot=dict(accession='K4MP98',path=str(ROOT/'K4MP98.json'),sha256=sha(ROOT/'K4MP98.json')),
+    verification=results,temporary_workspace=str(ROOT),
+    required_work_remaining='Review3108 unassessed owners and all their graph components claim by claim; complete required evidence in all7 partial reviews. '
+        'Full objective remains3115 owners/242 components. Native deterministic gates are not scientific passes.',
+    do_not_replay=['capture.py','audit_sources.py','audit_chemistry.py','audit_proteins.py','audit_evidence.py',
+        'run_checks.py','author_reviews.py','normalize_and_validate.py','persist_reviews.py','finish_checkpoint.py'],
+    new_bundles=[r['review_id'] for r in reviews if r['path'] in ['data/natural_products/alkaloids/indigoidine.yaml','data/natural_products/alkaloids/indigoidine-2.yaml']])
+with (ROOT/'review-campaign-checkpoint.json').open('x') as stream:
+    json.dump(checkpoint,stream,indent=2)
+print(json.dumps({k:checkpoint[k] for k in ['population','graph_components','scientific_review_bundles','completed_scientific_reviews','partial_reviews','unassessed_records','findings','new_bundles']},indent=2),flush=True)
+print('Next: '+pending[0],flush=True)

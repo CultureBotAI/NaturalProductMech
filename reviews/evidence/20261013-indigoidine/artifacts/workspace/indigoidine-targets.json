@@ -1,0 +1,53 @@
+{
+  "targets": [
+    {
+      "target_id": "CHEBI:79296",
+      "label": "indigoidine",
+      "path": "data/natural_products/alkaloids/indigoidine.yaml",
+      "kind": "generated",
+      "record_class": "NaturalProductRecord",
+      "owner_paths": [
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/mibig_compounds.tsv",
+          "role": "MIBiG chemistry, producer and BGC source rows"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/chebi_structures.tsv",
+          "role": "ChEBI exact identity source"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/lotus_occurrences.tsv",
+          "role": "Imported occurrence triples"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/seed_from_sources.py",
+          "role": "Generated owner harmonization"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_structure_corrections.tsv",
+          "role": "Narrow implemented chemistry correction path"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_locus_evidence_overrides.tsv",
+          "role": "Implemented locus-method correction path"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/natural_products/alkaloids/indigoidine.yaml",
+          "role": "Curator-owned pathway, graphs and discussions via guarded writer"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/chebi_origins.tsv",
+          "role": "Imported ChEBI occurrence and strain assertions"
+        }
+      ]
+    }
+  ]
+}

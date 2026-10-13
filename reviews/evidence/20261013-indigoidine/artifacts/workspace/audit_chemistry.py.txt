@@ -1,0 +1,29 @@
+import hashlib
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+
+from rdkit import Chem, rdBase
+from rdkit.Chem import rdMolDescriptors
+
+ROOT = Path(__file__).parent
+out = {'accessed_at': datetime.now(timezone.utc).isoformat(), 'rdkit': rdBase.rdkitVersion,
+       'pinned_native_check': False, 'records': []}
+for slug in ['indigoidine-2', 'indigoidine']:
+    path = ROOT / (slug + '-resolved.json')
+    doc = json.loads(path.read_text())
+    c = doc['chemical_structure']
+    smiles = Chem.MolFromSmiles(c['smiles'])
+    inchi = Chem.MolFromInchi(c['standard_inchi'])
+    key = c['standard_inchi_key']
+    out['records'].append(dict(slug=slug, input_sha256=hashlib.sha256(path.read_bytes()).hexdigest(),
+        smiles_formula=rdMolDescriptors.CalcMolFormula(smiles),
+        inchi_formula=rdMolDescriptors.CalcMolFormula(inchi), charge=Chem.GetFormalCharge(smiles),
+        smiles_inchi=Chem.MolToInchi(smiles),
+        smiles_key=Chem.MolToInchiKey(smiles), inchi_key=Chem.MolToInchiKey(inchi), recorded_key=key,
+        serialization_keys_match=Chem.MolToInchiKey(smiles)==Chem.MolToInchiKey(inchi)==key,
+        tetrahedral_centers=Chem.FindMolChiralCenters(smiles, includeUnassigned=True),
+        double_bond_stereo=[str(b.GetStereo()) for b in smiles.GetBonds() if b.GetBondType()==Chem.BondType.DOUBLE]))
+with (ROOT / 'chemistry-audit.json').open('x') as stream:
+    json.dump(out, stream, indent=2)
+print(json.dumps(out, indent=2))

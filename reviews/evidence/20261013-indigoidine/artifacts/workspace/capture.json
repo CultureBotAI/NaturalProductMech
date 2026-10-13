@@ -1,0 +1,54 @@
+{
+  "base": "127b18b43ac6c9ac76fd4ad878979ed8ddb0de8f",
+  "captured_at": "2026-10-13T06:25:04.116890Z",
+  "previous_turn": "progress: PR870 merged with evidence archive and tests",
+  "population": 3115,
+  "graph_components": 242,
+  "unchanged_population": true,
+  "prior_reviews_unchanged": true,
+  "previous_inspection_inputs_unchanged": true,
+  "targets": [
+    {
+      "path": "data/natural_products/alkaloids/indigoidine-2.yaml",
+      "identifier": "naturalproductmech:mibig-8920af415c",
+      "started_at": "2026-10-13T06:24:54.869685Z",
+      "graph_components": [],
+      "graphs": []
+    },
+    {
+      "path": "data/natural_products/alkaloids/indigoidine.yaml",
+      "identifier": "CHEBI:79296",
+      "started_at": "2026-10-13T06:25:00.318089Z",
+      "graph_components": [],
+      "graphs": [
+        {
+          "graph_id": "indigoidine-indc-biosynthesis",
+          "nodes": 5,
+          "edges": 4
+        },
+        {
+          "graph_id": "indigoidine-lavendulae-bpsa-biosynthesis",
+          "nodes": 3,
+          "edges": 2
+        },
+        {
+          "graph_id": "indigoidine-j1074-pptase-reporter",
+          "nodes": 4,
+          "edges": 4
+        },
+        {
+          "graph_id": "indigoidine-fri5-lbpa-expression",
+          "nodes": 4,
+          "edges": 3
+        },
+        {
+          "graph_id": "indigoidine-ccm3239-bpsa-interventions",
+          "nodes": 5,
+          "edges": 4
+        }
+      ]
+    }
+  ],
+  "baseline_checkpoint": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/reviews/evidence/20261013-2mib-heme/artifacts/workspace/review-campaign-checkpoint.json",
+  "baseline_sha256": "27d89b6008791f5b8f19a797f94583ae0e5f878c347456d56eb705fb6fc49e87"
+}

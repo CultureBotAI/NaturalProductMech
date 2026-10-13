@@ -1,0 +1,1201 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Indigoidine: CHEBI:79296 identity and five causal graphs'
+started_at: '2026-10-13T06:25:00.318089Z'
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: self_review
+  independence_basis: Same assistant/thread previously curated this repository. This is a new
+    claim-level self-review, not an independent reviewer.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+scientific_review: true
+verdict: blocked
+summary: Complete owner, five inline graphs and all 17 edges assessed; ten native CDS translations
+  and five UniProt mappings checked. No new confirmed defect. Primary-source, construct, xref
+  and pinned chemistry gaps preclude completed scientific review. No record edits.
+source:
+  git_revision: 127b18b43ac6c9ac76fd4ad878979ed8ddb0de8f
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: 49e2ab03c7e82013e9d68356de2c9965c9f8517a3408a44124076f4ca1b529cd
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 0b2e8b991c926f9a67a3094964b0335dd1cd347fbf548674fa273db8fac3a4b2
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: 5b1edc057cdcc732f61de2964cd175fa3bc2dca929c5d2823142f61313545a7e
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: bf38e4f0c7e4bcbdf184a4e7b8b024752251e8f34c015c0b82cedca98a8a5729
+    role: context
+  - path: data/natural_products/alkaloids/indigoidine.yaml
+    sha256: f981b2620818810d101e76931227fc882184289a5865339571cfbac2bd8bba13
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: 373f049029be3db137e062ff5f872a2400a9d5b423f3e108ea44ebde2f8dcc7d
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: 7b9b9f78f5b14aea9fabb163bbaa9e842920a7e9b07deac8f98c97666e9e23fc
+    role: context
+  - path: data/raw/taxon_groups.tsv
+    sha256: f73f228d57d79a1d85a1441efa6829917b1ffecac08cb7bdd4fc855046255f8f
+    role: context
+  - path: data/raw/taxon_merged.tsv
+    sha256: 97b3efa66d4fc1679ab65ae547e78b2f627f37bc8e45ae33f2719008fe3863bb
+    role: context
+  - path: docs/CURATION.md
+    sha256: 3b979068592adbb0611de95927ca31eaabb5fb5d791aa09973e3b1e8d5a19011
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: 30c7007e57806c245674ce922e0f8c485b1a8a12a9f9fb95850ba6ee4f8cddc2
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_lotus.py
+    sha256: 8a8c524f60f85d2bb54412ca055a6a45e0d37ec5f4584d8d70be454b8f664290
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 2da30b7ccf4b9543ecbe02eb0c8662e51a82c0745aa45be28afbf8ceb38fc1be
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: CHEBI:79296
+  label: indigoidine
+  path: data/natural_products/alkaloids/indigoidine.yaml
+  kind: generated
+  record_class: NaturalProductRecord
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG chemistry, producer and BGC source rows
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: ChEBI exact identity source
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Imported occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner harmonization
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Narrow implemented chemistry correction path
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Implemented locus-method correction path
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/indigoidine.yaml
+    role: Curator-owned pathway, graphs and discussions via guarded writer
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_origins.tsv
+    role: Imported ChEBI occurrence and strain assertions
+scope:
+  description: One complete owner and every referenced component, within the unchanged 3115-owner/242-component
+    campaign. Both indigoidine owners have zero external components; this report is not a sampled
+    corpus verdict.
+  selection: Exact path and identifier from the full campaign frontier; each same-label owner
+    receives its own report.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:79296
+checks:
+- check_id: inspect
+  name: inspect
+  status: passed
+  required: true
+  summary: Canonical input capture before assessment.
+  target_ids:
+  - CHEBI:79296
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    scripts/record_review.py inspect --targets /private/tmp/npmech-indigoidine-reviews-current-bjZrsY/indigoidine-targets.json
+    --input .claude/skills/curate-yaml-record/references/review-checklist.md --input .claude/skills/review-yaml-record/SKILL.md
+    --input CLAUDE.md --input conf/id_label_targets.yaml --input conf/producer_evidence.tsv
+    --input conf/record_review.yaml --input curation/mibig_locus_evidence_overrides.tsv --input
+    curation/mibig_structure_corrections.tsv --input data/natural_products/PATHS.tsv --input
+    data/raw/MANIFEST.yaml --input data/raw/chebi_structures.tsv --input data/raw/corpus_taxa.obo
+    --input data/raw/lotus_occurrences.tsv --input data/raw/mibig_compounds.tsv --input data/raw/npclassifier.tsv
+    --input data/raw/taxon_groups.tsv --input data/raw/taxon_merged.tsv --input docs/CURATION.md
+    --input docs/HARMONIZATION.md --input docs/record-review-profile.md --input docs/record-reviews.md
+    --input justfile --input schema/record_review.yaml --input scripts/extract_lotus.py --input
+    scripts/extract_mibig.py --input scripts/seed_from_sources.py --input src/naturalproductmech/graph_components.py
+    --input src/naturalproductmech/schema/naturalproductmech.yaml --input data/raw/chebi_origins.tsv
+    --input scripts/record_review.py
+  exit_code: 0
+  scope_note: Run 2026-10-13T06:24:58.357695Z to 2026-10-13T06:25:00.317117Z; log SHA-256 4c7c1de4d0396b1072714524a0e1e4e22858954b4715a8185b8a6a648641206a.
+- check_id: strict
+  name: strict
+  status: passed
+  required: true
+  summary: Closed-schema validation of this owner succeeded with zero errors; not a scientific
+    pass.
+  target_ids:
+  - CHEBI:79296
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    scripts/validate_strict.py data/natural_products/alkaloids/indigoidine.yaml --out /private/tmp/npmech-indigoidine-reviews-current-bjZrsY/indigoidine-strict.tsv
+  exit_code: 0
+  scope_note: Run 2026-10-13T06:25:00.454508Z to 2026-10-13T06:25:04.115714Z; log SHA-256 3db86609e5d78eb8d458a491b75d6506e9ad90ce827fc8bba20975ae9460ff54.
+- check_id: provenance-fresh
+  name: provenance-fresh
+  status: passed
+  required: true
+  summary: 'provenance OK: 15 inventories, 0 upstream files, retrieved 2026-10-07'
+  target_ids:
+  - CHEBI:79296
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    scripts/check_provenance.py
+  exit_code: 0
+  scope_note: Run 2026-10-13T06:36:23.684962+00:00 to 2026-10-13T06:36:24.488550+00:00; log
+    SHA-256 edfd9b0adb518e4962a19be934e3364eb2a3d8527de0159322af10d2ddf6a252. Queue is a diagnostic
+    checkpoint, not review coverage.
+- check_id: contract-before
+  name: contract-before
+  status: passed
+  required: true
+  summary: '...............                                                          [100%]
+
+    15 passed in 26.45s'
+  target_ids:
+  - CHEBI:79296
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    -m pytest -q tests/test_record_review_contract.py tests/test_review_evidence_archive.py
+  exit_code: 0
+  scope_note: Run 2026-10-13T06:36:24.489699+00:00 to 2026-10-13T06:36:54.122885+00:00; log
+    SHA-256 bf89b54bbdfd3c41e1d021bcefcd04258b77b51e61882437a5fbff60d9da74c2. Queue is a diagnostic
+    checkpoint, not review coverage.
+- check_id: queue-fresh
+  name: queue-fresh
+  status: passed
+  required: true
+  summary: 'Native diagnostic queue regenerated: 8931 rows across 12 queues; counts {"producer-evidence":
+    2289, "biosynthesis": 1194, "structure-disagreement": 5, "name-disagreement": 68, "unnamed-producer":
+    39, "shared-structure": 208, "needs-a-name": 18, "occurrence-only": 12, "pathway-ambiguous":
+    620, "unresolved-taxa": 3329, "stereo-incomplete": 1124, "record-review": 25}. The record-review
+    fallback has25 rows, not scientific coverage. Full campaign denominator remains3115 owners/242
+    components.'
+  target_ids:
+  - CHEBI:79296
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    scripts/curation_worklist.py --review-records --limit 0 --tsv /private/tmp/npmech-indigoidine-reviews-current-bjZrsY/queue-fresh.tsv
+  exit_code: 0
+  scope_note: Run 2026-10-13T06:36:54.123973+00:00 to 2026-10-13T06:38:00.773454+00:00; log
+    SHA-256 5ed74725262e24448dde1b488c5be6396f574133be81d6ad4def28f573c53624. Queue is a diagnostic
+    checkpoint, not review coverage.
+- check_id: historical-corpus
+  name: historical-corpus
+  status: passed
+  required: true
+  summary: "lockfile integrity OK: 3115 records, each filed where PATHS.tsv pins it\n  lockfile\
+    \ rows: 3115, files on disk: 3115"
+  target_ids:
+  - CHEBI:79296
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    scripts/verify_corpus.py --summary
+  exit_code: 0
+  scope_note: 'Historical run reused, not rerun this turn: {"command": ["/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python",
+    "scripts/verify_corpus.py", "--summary"], "started_at": "2026-10-13T05:33:54.158149Z", "finished_at":
+    "2026-10-13T05:35:23.137082Z", "exit_code": 0, "log_sha256": "f41149d35ddb3ab65a8fe2fdf8bfd6242ff6753e740c3482f9ed0f0bb7122b50",
+    "log": "lockfile integrity OK: 3115 records, each filed where PATHS.tsv pins it\n  lockfile
+    rows: 3115, files on disk: 3115\n"}. All 3115 owners/242 components and captured inputs
+    rehashed unchanged. Label reporting exit zero includes 499 mismatches and 4649 skipped adapters;
+    it is not an all-labels pass.'
+- check_id: historical-reproduction
+  name: historical-reproduction
+  status: passed
+  required: true
+  summary: "molecular targets whose assay organism did not resolve: 5 (1 distinct: Human\u2026\
+    )\nproducer claims withheld \u2014 taxon names no single organism: 42 (NCBITaxon:77133 36,\
+    \ NCBITaxon:12908 3, NCBITaxon:1163772 2, NCBITaxon:155900 1)\ntaxon ids rewritten through\
+    \ taxon_merged.tsv: 161 (ChEBI 8, LOTUS 147, MIBiG 6)\ncorpus reproduction OK: 3115 records\
+    \ are byte-identical to what the seeder builds from data/raw/"
+  target_ids:
+  - CHEBI:79296
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    scripts/check_reproduction.py
+  exit_code: 0
+  scope_note: 'Historical run reused, not rerun this turn: {"command": ["/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python",
+    "scripts/check_reproduction.py"], "started_at": "2026-10-13T05:35:23.137928Z", "finished_at":
+    "2026-10-13T05:37:53.396103Z", "exit_code": 0, "log_sha256": "d76e0bdd701f4e95ea43c705242db68502c2e347cf60baf2321fa70034472fcd",
+    "log": "molecular targets whose assay organism did not resolve: 5 (1 distinct: Human\u2026)\nproducer
+    claims withheld \u2014 taxon names no single organism: 42 (NCBITaxon:77133 36, NCBITaxon:12908
+    3, NCBITaxon:1163772 2, NCBITaxon:155900 1)\ntaxon ids rewritten through taxon_merged.tsv:
+    161 (ChEBI 8, LOTUS 147, MIBiG 6)\ncorpus reproduction OK: 3115 records are byte-identical
+    to what the seeder builds from data/raw/\n"}. All 3115 owners/242 components and captured
+    inputs rehashed unchanged. Label reporting exit zero includes 499 mismatches and 4649 skipped
+    adapters; it is not an all-labels pass.'
+- check_id: historical-labels
+  name: historical-labels
+  status: passed
+  required: true
+  summary: "id\u2194label correspondence summary:\n          OK_CANONICAL: 13434\n         \
+    \   OK_SYNONYM: 646\n          OK_EXCEPTION: 35\n              MISMATCH: 499\n    SKIPPED_NO_ADAPTER:\
+    \ 4649\n\nWrote 499 flagged pairs to /private/tmp/npmech-record-reviews-next-PKCU4Z/labels.tsv"
+  target_ids:
+  - CHEBI:79296
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    scripts/validate_id_label_correspondence.py -c conf/id_label_targets.yaml --report /private/tmp/npmech-record-reviews-next-PKCU4Z/labels.tsv
+  exit_code: 0
+  scope_note: 'Historical run reused, not rerun this turn: {"command": ["/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python",
+    "scripts/validate_id_label_correspondence.py", "-c", "conf/id_label_targets.yaml", "--report",
+    "/private/tmp/npmech-record-reviews-next-PKCU4Z/labels.tsv"], "started_at": "2026-10-13T05:37:54.045148Z",
+    "finished_at": "2026-10-13T05:39:55.736120Z", "exit_code": 0, "log_sha256": "803d0d84664eb9a85ed2e3c0060b95139dbdfaf29150ccb78f95589b37bb531d",
+    "log": "\nid\u2194label correspondence summary:\n          OK_CANONICAL: 13434\n            OK_SYNONYM:
+    646\n          OK_EXCEPTION: 35\n              MISMATCH: 499\n    SKIPPED_NO_ADAPTER: 4649\n\nWrote
+    499 flagged pairs to /private/tmp/npmech-record-reviews-next-PKCU4Z/labels.tsv\n"}. All
+    3115 owners/242 components and captured inputs rehashed unchanged. Label reporting exit
+    zero includes 499 mismatches and 4649 skipped adapters; it is not an all-labels pass.'
+- check_id: full-qc
+  name: full-qc
+  status: skipped
+  required: false
+  summary: No new full QC run for these read-only reports. PR870 QC run38354190005 passed 564
+    tests/4 skips and all native gates; merge commit127b18b4 is this review base. Historical
+    CI is context, not a new scientific or local-QC pass.
+  target_ids:
+  - CHEBI:79296
+- check_id: pinned-chemistry
+  name: pinned-chemistry
+  status: unavailable
+  required: true
+  summary: Repository environment lacks RDKit; pinned 2026.3.5 calculation remains unavailable.
+  target_ids:
+  - CHEBI:79296
+  command: .venv/bin/python -c 'import rdkit; print(rdkit.__version__)'
+  scope_note: Availability probe exited1 with ModuleNotFoundError. No pinned chemical calculation
+    executed.
+- check_id: auxiliary-chemistry
+  name: auxiliary-chemistry
+  status: passed
+  required: false
+  summary: RDKit2024.03.5 independently reproduces both stored chemical serializations and formulae.
+    Not the pinned native gate.
+  target_ids:
+  - CHEBI:79296
+  command: /Users/marcin/.cache/uv/archive-v0/L63k5B2U7AExer7XjnGMw/bin/python /private/tmp/npmech-indigoidine-reviews-current-bjZrsY/audit_chemistry.py
+  exit_code: 0
+  scope_note: Initial temporary helper used an incorrect field name and exited1; corrected to
+    the native smiles field before this successful run. No corpus edits.
+  evidence_ids:
+  - chemistry
+- check_id: required-sources
+  name: required-sources
+  status: unavailable
+  required: true
+  summary: Required primary-source, current BGC and PubChem equivalence checks are incomplete.
+    Access failures do not imply absent experiments.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - access-limits
+- check_id: imodulondb
+  name: imodulondb
+  status: not_applicable
+  required: false
+  summary: No expression-module membership or transcriptomic dataset claim is asserted. Structured
+    UniProt/NCBI evidence is the relevant adapter for native protein identity; no iModulon absence
+    inference is made.
+  target_ids:
+  - CHEBI:79296
+- check_id: protein-source-audit
+  name: protein-source-audit
+  status: passed
+  required: false
+  summary: Ten CDS translations, four cached and one fresh UniProt sequence mapping verified;
+    all27 cached source receipts match.
+  target_ids:
+  - CHEBI:79296
+  command: /Users/marcin/.cache/uv/archive-v0/_rI3ZpIXzy86ptcWte4iX/bin/python /private/tmp/npmech-indigoidine-reviews-current-bjZrsY/audit_proteins.py
+  exit_code: 0
+  evidence_ids:
+  - native-sequences
+  - source-integrity
+  - sc-indc
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/natural_products/alkaloids/indigoidine.yaml
+  accessed_at: '2026-10-13T06:42:33.367377Z'
+  support: supports
+  summary: 'Entire YAML read: identity, definitions, source concepts, every evidence item, pathway,
+    graphs, discussions and full audit trail. No causal_graph_refs; 5 inline graphs. Status
+    remains SEEDED.'
+  snapshot_sha256: f981b2620818810d101e76931227fc882184289a5865339571cfbac2bd8bba13
+- evidence_id: inventory
+  kind: database
+  reference: data/raw/mibig_compounds.tsv
+  accessed_at: '2026-10-13T06:34:28.405765Z'
+  support: partial
+  summary: 'Exact parsed source rows (including minimycin as compound1 where present): [{"row_number":
+    503, "row": {"mibig_accession": "BGC0000375", "entry_version": "5", "entry_status": "active",
+    "entry_quality": "questionable", "entry_completeness": "unknown", "compound_name": "indigoidine",
+    "compound_index": "1", "smiles": "C\\1=C(C(=O)NC(=O)/C1=C/2\\C=C(C(=O)NC2=O)N)N", "standard_inchi":
+    "InChI=1S/C10H8N4O4/c11-5-1-3(7(15)13-9(5)17)4-2-6(12)10(18)14-8(4)16/h1-2H,11-12H2,(H,13,15,17)(H,14,16,18)/b4-3+",
+    "standard_inchi_key": "ALDIVIWLBSDGGN-ONEGZZNKSA-N", "stereo_complete": "true", "compound_classes":
+    "", "database_ids": "pubchem:5492261", "taxon_id": "NCBITaxon:42881", "taxon_label": "Streptomyces
+    chromofuscus", "bgc_classes": "NRPS", "bgc_subclasses": "Type I", "genome_accession": "JX499187.1",
+    "locus_from": "", "locus_to": "", "locus_evidence_methods": "", "producer_evidence_basis":
+    "SOURCE_ASSERTION", "cluster_link_evidence_basis": "CLUSTER_UNSTATED", "primary_reference":
+    "PMID:23053349", "reference_basis": "ENTRY"}}]. This establishes the maintained database
+    assertion, not live entry currentness or primary experimental support.'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: chebi
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:79296
+  accessed_at: '2026-10-13T06:25:47Z'
+  support: partial
+  summary: 'Official entry: indigoidine, C10H8N4O4, charge0, ALDIVIWLBSDGGN-ONEGZZNKSA-N; Standard
+    InChI ends /b4-3+. The committed 3-star row agrees. Its occurrence names S.lavendulae taxon1914,
+    ATCC11924 and PMID17237222. Database identity/occurrence assertion only, not reinspection
+    of chemical analyses.'
+  locator: Identity, formula, SMILES, Standard InChI/InChIKey and Species of Metabolite
+- evidence_id: chemistry
+  kind: validation
+  reference: RDKit 2024.03.5; /private/tmp/npmech-indigoidine-reviews-current-bjZrsY/chemistry-audit.json
+  accessed_at: '2026-10-13T06:34:53.649136Z'
+  support: partial
+  summary: 'Fresh auxiliary calculation, not pinned toolkit: {"slug": "indigoidine", "input_sha256":
+    "221f7b732d49e542fa63590b1701a8898f5404bf2adb1e616ffa5e5212bba613", "smiles_formula": "C10H8N4O4",
+    "inchi_formula": "C10H8N4O4", "charge": 0, "smiles_inchi": "InChI=1S/C10H8N4O4/c11-5-1-3(7(15)13-9(5)17)4-2-6(12)10(18)14-8(4)16/h1-2H,11-12H2,(H,13,15,17)(H,14,16,18)/b4-3+",
+    "smiles_key": "ALDIVIWLBSDGGN-ONEGZZNKSA-N", "inchi_key": "ALDIVIWLBSDGGN-ONEGZZNKSA-N",
+    "recorded_key": "ALDIVIWLBSDGGN-ONEGZZNKSA-N", "serialization_keys_match": true, "tetrahedral_centers":
+    [], "double_bond_stereo": ["STEREONONE", "STEREONONE", "STEREONONE", "STEREOE", "STEREONONE",
+    "STEREONONE", "STEREONONE"]}'
+  snapshot_sha256: df8bd4577b90886ef50019d87bfbdf5d9c4e755d1453e52b29b2093e42d97d17
+- evidence_id: local-sources
+  kind: database
+  reference: data/raw/chebi_structures.tsv; data/raw/npclassifier.tsv; data/natural_products/PATHS.tsv
+  accessed_at: '2026-10-13T06:34:28.405765Z'
+  support: partial
+  summary: 'ChEBI rows: [{"row_number": 30361, "row": {"chebi_id": "CHEBI:79296", "name": "indigoidine",
+    "definition": "A member of the class of pyridone that is a dimeric blue pigment biosynthesised
+    from L-glutamine.", "stars": "3", "standard_inchi_key": "ALDIVIWLBSDGGN-ONEGZZNKSA-N", "smiles":
+    "NC1=C/C(=C2/C=C(N)C(=O)NC2=O)C(=O)NC1=O"}}]. NPClassifier rows: [{"row_number": 65, "row":
+    {"standard_inchi_key": "ALDIVIWLBSDGGN-ONEGZZNKSA-N", "smiles": "C\\1=C(C(=O)NC(=O)/C1=C/2\\C=C(C(=O)NC2=O)N)N",
+    "pathway_results": "Alkaloids", "superclass_results": "Ornithine alkaloids", "class_results":
+    "", "is_glycoside": "false", "model_version": "npclassifier.gnps2.org@2026-09-07"}}, {"row_number":
+    3115, "row": {"standard_inchi_key": "ZZTNWZPJOCVMIN-AATRIKPKSA-N", "smiles": "NC1=C/C(CNC1=O)=C2C(NC(C=C\\2)=O)=O",
+    "pathway_results": "Alkaloids", "superclass_results": "Tryptophan alkaloids", "class_results":
+    "", "is_glycoside": "false", "model_version": "npclassifier.gnps2.org@2026-09-07"}}]. Owners
+    occupying the two exact keys: [{"path": "data/natural_products/alkaloids/indigoidine-2.yaml",
+    "identifier": "naturalproductmech:mibig-8920af415c", "key": "ZZTNWZPJOCVMIN-AATRIKPKSA-N",
+    "sha256": "9abeb31eb0903167a5dc8f01a16bdb33e92b02f1d6562b1944778f37082f1f8b"}, {"path":
+    "data/natural_products/alkaloids/indigoidine.yaml", "identifier": "CHEBI:79296", "key":
+    "ALDIVIWLBSDGGN-ONEGZZNKSA-N", "sha256": "f981b2620818810d101e76931227fc882184289a5865339571cfbac2bd8bba13"}].
+    The ZZTNWZPJOCVMIN key has no eligible ChEBI row in this complete inventory search.'
+  search_scope: All rows of the named TSV files and every owner YAML via Path.rglob; gitignored
+    files included. Exact keys, label and source IDs searched.
+- evidence_id: taxonomy
+  kind: database
+  reference: data/raw/corpus_taxa.obo
+  accessed_at: '2026-10-13T06:34:28.405765Z'
+  support: partial
+  summary: 'Pinned taxonomy parsed with pronto: [{"identifier": "NCBITaxon:1912", "present":
+    true, "name": "Streptomyces hygroscopicus", "synonyms": ["Actinomyces hygroscopicus", "Streptomyces
+    endus"], "annotations": []}, {"identifier": "NCBITaxon:1914", "present": true, "name": "Streptomyces
+    lavendulae", "synonyms": ["Actinomyces lavendulae"], "annotations": []}, {"identifier":
+    "NCBITaxon:42881", "present": true, "name": "Streptomyces chromofuscus", "synonyms": ["Actinomyces
+    chromofuscus"], "annotations": []}, {"identifier": "NCBITaxon:1886", "present": true, "name":
+    "Streptomyces albidoflavus", "synonyms": ["Actinomyces albidoflavus", "Actinomyces globisporus
+    var. caucasicus", "Cladothrix albido-flava", "Streptomyces albidoflavus (Rossi Doria 1891)
+    Waksman and Henrici 1948 (Approved Lists 1980)", "Streptomyces globisporus subsp. caucasicus"],
+    "annotations": []}, {"identifier": "NCBITaxon:58340", "present": true, "name": "Streptomyces
+    lavendulae subsp. lavendulae", "synonyms": [], "annotations": []}, {"identifier": "NCBITaxon:469008",
+    "present": false, "name": null, "synonyms": [], "annotations": []}]. Species/strain distinctions
+    from native sequence source qualifiers are assessed separately; missing469008 in this bounded
+    OBO is not absence from NCBI.'
+  snapshot_sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+- evidence_id: ownership
+  kind: record_content
+  reference: docs/CURATION.md
+  accessed_at: '2026-10-13T06:42:33.387269Z'
+  support: supports
+  summary: REPLACE_WITH_CHEBI is implemented only for an eligible unoccupied destination, and
+    does not merge owners. ALDIVIWLBSDGGN-ONEGZZNKSA-N is already occupied by CHEBI:79296. No
+    applicable row in either implemented correction table. Locus overrides alter evidence methods,
+    not molecule identity. decisions.tsv is reserved/unimplemented.
+  snapshot_sha256: 3b979068592adbb0611de95927ca31eaabb5fb5d791aa09973e3b1e8d5a19011
+  search_scope: All curation/**/*.tsv parsed with csv, including ignored files; both implemented
+    correction tables have zero indigoidine/BGC0002295/BGC0000375 hits.
+- evidence_id: access-limits
+  kind: search
+  reference: Inherited indigoidine access ledger and this session evidence checks
+  accessed_at: '2026-10-13T06:42:33.387574Z'
+  support: unknown
+  summary: Inherited full-text stops retained for DOI10.1007/s10295-012-1207-9, 10.1074/jbc.M611319200,
+    10.1007/s10295-015-1642-5, 10.1093/femsle/fnx155, 10.1016/j.jbiosc.2017.04.020 and subscription
+    10.1007/s12223-010-0018-5. The already cached J1074 author PDF predates the publisher stop
+    and was re-read; no alternate retrievals performed. Cached raw FRI-5 abstract re-read. Earlier
+    GlnA/sc-IndB/CCM2010 curator assessments are leads only, not primary text reinspection.
+    Current PubChem5492261 equivalence and exact live MIBiG0000375 page/GBK status remain unverified.
+    Current UniProtK4MP98 was independently accessible.
+  search_scope: Exact named sources only; previously stopped/challenged papers were not retried
+    via alternate routes. The campaign access ledger has162 inherited stops plus aliases, SHA256810ac00abcf3732108d1fecc011918d748813874154203b090bd63a8be55a601.
+- evidence_id: occurrences
+  kind: database
+  reference: data/raw/chebi_origins.tsv; data/raw/lotus_occurrences.tsv
+  accessed_at: '2026-10-13T06:34:28.405765Z'
+  support: partial
+  summary: 'Parsed exact rows: [{"row_number": 10090, "row": {"chebi_id": "CHEBI:79296", "species_text":
+    "Streptomyces lavendulae", "species_accession": "1914", "component_text": "", "strain_text":
+    "ATCC11924", "source_accession": "17237222", "comments": ""}}, {"row_number": 179, "row":
+    {"standard_inchi_key": "ALDIVIWLBSDGGN-ONEGZZNKSA-N", "organism_name": "Streptomyces chromofuscus",
+    "taxon_id": "NCBITaxon:42881", "organism_wikidata": "http://www.wikidata.org/entity/Q22287099",
+    "reference_doi": "10.1007/S10295-012-1207-9", "structure_wikidata": "http://www.wikidata.org/entity/Q11712142"}}].
+    ChEBI strain comment remains in detection_context; neither occurrence was promoted to biosynthetic
+    proof.'
+- evidence_id: rhea
+  kind: authority
+  reference: https://www.rhea-db.org/rhea/81499
+  accessed_at: '2026-10-13T06:25:47Z'
+  support: partial
+  summary: 'Overall reaction: 2FMN+2L-glutamine+2ATP+O2 -> indigoidine+2FMNH2+2AMP+2diphosphate+2H2O.
+    Participant IDs 58210,58359,30616,15379 -> 79296,57618,456215,33019,15377 match the pathway;
+    forward81500, EC4.3.3.9. Its reprinted Takahashi2007 abstract describes phosphopantetheinylated
+    BpsA and L-Gln. This is database/reprinted-abstract context, not a new primary full-text
+    review or proof of identical microscopic chemistry in every synthase.'
+  locator: Reaction, participant identifiers, direction mapping and publication annotation
+- evidence_id: glutamine
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:58359
+  accessed_at: '2026-10-13T06:25:47Z'
+  support: partial
+  summary: Canonical name L-glutamine zwitterion, formulaC5H10N2O3, charge0; UniProt Name is
+    L-glutamine. Thus the first graph short label alone is not a confirmed wrong-identifier
+    finding; the second graph uses the canonical name.
+  locator: Identity and UniProt Name
+- evidence_id: sc-indc
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/K4MP98.json
+  accessed_at: '2026-10-13T06:37:03.504347Z'
+  support: supports
+  summary: Fresh official HTTP200 at2026-10-13T06:35:39Z, release2026_03, entry50/sequence1;
+    indC, tax42881, EMBLJX499187/AFV27434.1. All1377aa equal the complete4134nt JX499187.1:1630..5763
+    code11 translation. Protein SHA256f1b77f5966aaa25e0bd12ba3e2d8b17f31a1ee25faf131e6c903b1eca43bc7d9.
+    Native source is ATCC49982. Sequence identity is not experimental construct equivalence.
+  snapshot_sha256: ea5423e4f91ebf4faad8a46470f129906c376d6f42db61504ee4453181f131fa
+- evidence_id: native-sequences
+  kind: database
+  reference: Official NCBI/UniProt cached records, independently retranslated
+  accessed_at: '2026-10-13T06:34:31.352082Z'
+  support: supports
+  summary: 'Ten exact native CDS entries; zero-based half-open local locations below (GenPept
+    coded_by is one-based; GlnA files are1410nt extracted regions). All complete code11 translations
+    equal annotated proteins; nine available GenPept sequences also match. [{"protein": "AFV27434.1",
+    "nucleotide": "JX499187.1", "location": "[1629:5763](+)", "nt": 4134, "aa": 1377, "start_codon":
+    "ATG", "stop_codon": "TGA", "table": ["11"], "source": {"organism": ["Streptomyces chromofuscus"],
+    "mol_type": ["genomic DNA"], "strain": ["ATCC 49982"], "culture_collection": ["ATCC:49982"],
+    "db_xref": ["taxon:42881"]}, "protein_sha256": "f1b77f5966aaa25e0bd12ba3e2d8b17f31a1ee25faf131e6c903b1eca43bc7d9",
+    "dna_sha256": "986e41773b38711e3e96e9137e2d4c85817fb57a2428578973be1e77390894c9", "genpept_matches":
+    null, "uniprot": null, "uniprot_sequence_matches": null, "genpept_coded_by": null}, {"protein":
+    "AFV27436.1", "nucleotide": "JX499187.1", "location": "[6834:8679](+)", "nt": 1845, "aa":
+    614, "start_codon": "ATG", "stop_codon": "TGA", "table": ["11"], "source": {"organism":
+    ["Streptomyces chromofuscus"], "mol_type": ["genomic DNA"], "strain": ["ATCC 49982"], "culture_collection":
+    ["ATCC:49982"], "db_xref": ["taxon:42881"]}, "protein_sha256": "ba60258fc55b02fbcf37aeec9aea2c0e0df42a17cec426c65694c121a5e0323a",
+    "dna_sha256": "042950fe847b68de06919406cfe13e7be996850eabed951efe7820cbca23c1c2", "genpept_matches":
+    true, "uniprot": "K4MZR0", "uniprot_sequence_matches": true, "genpept_coded_by": [["JX499187.1:6835..8679"]]},
+    {"protein": "BAE93896.1", "nucleotide": "AB240063.1", "location": "[685:4534](+)", "nt":
+    3849, "aa": 1282, "start_codon": "ATG", "stop_codon": "TGA", "table": ["11"], "source":
+    {"organism": ["Streptomyces lavendulae subsp. lavendulae"], "mol_type": ["genomic DNA"],
+    "db_xref": ["taxon:58340"]}, "protein_sha256": "15bb18089a044204b45b7f6a6f05b7d317f19a85a8c8fc99093082e6b56646a0",
+    "dna_sha256": "62bcc777e5cbdcd2d92758075e7836ded00c4c05f2d88f684da64e4ad3b79803", "genpept_matches":
+    true, "uniprot": "Q1MWN4", "uniprot_sequence_matches": true, "genpept_coded_by": [["AB240063.1:686..4534"]]},
+    {"protein": "AGI92022.1", "nucleotide": "CP004370.1", "location": "[6439413:6440094](-)",
+    "nt": 681, "aa": 226, "start_codon": "ATG", "stop_codon": "TAG", "table": ["11"], "source":
+    {"organism": ["Streptomyces albidoflavus"], "mol_type": ["genomic DNA"], "strain": ["J1074"],
+    "db_xref": ["taxon:1886"]}, "protein_sha256": "f394cc71e6aa43db6f01dd931df0e7dd38e423c8509220ae9000431f2b9f61d0",
+    "dna_sha256": "5fd9c3dced08775e02f603be76bf535dca978453f98f45798d6255f5954003fd", "genpept_matches":
+    true, "uniprot": null, "uniprot_sequence_matches": null, "genpept_coded_by": [["complement(CP004370.1:6439414..6440094)"]]},
+    {"protein": "BAW81991.1", "nucleotide": "LC209815.1", "location": "[7352:11201](-)", "nt":
+    3849, "aa": 1282, "start_codon": "ATG", "stop_codon": "TGA", "table": ["11"], "source":
+    {"organism": ["Streptomyces lavendulae"], "mol_type": ["genomic DNA"], "strain": ["FRI-5"],
+    "db_xref": ["taxon:1914"]}, "protein_sha256": "688ed70b5df2c341701c3cd24956fe26347626f96ce3653bedb92f74d24ccf38",
+    "dna_sha256": "3ae5b1d2bfc8630fb28ebdfa9f69a0f6741f70131d5544be9ee42a62699f047c", "genpept_matches":
+    true, "uniprot": "A0A1Q2SRM5", "uniprot_sequence_matches": true, "genpept_coded_by": [["complement(LC209815.1:7353..11201)"]]},
+    {"protein": "ACK77757.1", "nucleotide": "FJ479754.1", "location": "[14653:18505](+)", "nt":
+    3852, "aa": 1283, "start_codon": "ATG", "stop_codon": "TAG", "table": ["11"], "source":
+    {"organism": ["Streptomyces aureofaciens"], "mol_type": ["genomic DNA"], "strain": ["CCM3239"],
+    "db_xref": ["taxon:1894"]}, "protein_sha256": "e219ef9b6e40905482de950a476a39306d601a8e841b95755e7b65b1e8a5cdd7",
+    "dna_sha256": "5bb5b0adbebd248d13d4900d3203b0ad198c51cc45d45e9b716507b04f61f71a", "genpept_matches":
+    true, "uniprot": null, "uniprot_sequence_matches": null, "genpept_coded_by": [["FJ479754.1:14654..18505"]]},
+    {"protein": "ACK77757.2", "nucleotide": "KJ396772.2", "location": "[93051:96903](+)", "nt":
+    3852, "aa": 1283, "start_codon": "ATG", "stop_codon": "TAG", "table": ["11"], "source":
+    {"organism": ["Streptomyces lavendulae subsp. lavendulae"], "mol_type": ["genomic DNA"],
+    "strain": ["CCM3239"], "db_xref": ["taxon:58340"], "plasmid": ["pSA3239"]}, "protein_sha256":
+    "9597081c3aae81653b0a5a209228eb2529b1706c998d559e9f5c4db061130d34", "dna_sha256": "5810abfa862e236e4608abe0c14921895310991861be126220751fba5c0a3b8c",
+    "genpept_matches": true, "uniprot": "A0A2K8PVS5", "uniprot_sequence_matches": true, "genpept_coded_by":
+    [["KJ396772.2:93052..96903"]]}, {"protein": "ATZ29785.1", "nucleotide": "CP024986.1", "location":
+    "[144173:148025](-)", "nt": 3852, "aa": 1283, "start_codon": "ATG", "stop_codon": "TAG",
+    "table": ["11"], "source": {"organism": ["Streptomyces lavendulae subsp. lavendulae"], "mol_type":
+    ["genomic DNA"], "strain": ["CCM 3239"], "culture_collection": ["CCM:3239"], "db_xref":
+    ["taxon:58340"], "plasmid": ["pSA3239"]}, "protein_sha256": "9597081c3aae81653b0a5a209228eb2529b1706c998d559e9f5c4db061130d34",
+    "dna_sha256": "5810abfa862e236e4608abe0c14921895310991861be126220751fba5c0a3b8c", "genpept_matches":
+    true, "uniprot": "A0A2K8PVS5", "uniprot_sequence_matches": true, "genpept_coded_by": [["complement(CP024986.1:144174..148025)"]]},
+    {"protein": "ACT45548.1", "nucleotide": "CP001509.3", "location": "[0:1410](-)", "nt": 1410,
+    "aa": 469, "start_codon": "ATG", "stop_codon": "TAA", "table": ["11"], "source": {"organism":
+    ["Escherichia coli BL21(DE3)"], "mol_type": ["genomic DNA"], "strain": ["BL21(DE3)"], "db_xref":
+    ["taxon:469008"]}, "protein_sha256": "9674a960704dd28f543e173d5e97f02f80f6fb5b18d07031eb2c501e494d6fad",
+    "dna_sha256": "bd2436f166e644a5874014b965c0686a61b2f7604c6c6cf96be14daca5675a73", "genpept_matches":
+    true, "uniprot": null, "uniprot_sequence_matches": null, "genpept_coded_by": [["complement(CP001509.3:3963323..3964732)"]]},
+    {"protein": "CAQ34221.1", "nucleotide": "AM946981.2", "location": "[0:1410](-)", "nt": 1410,
+    "aa": 469, "start_codon": "ATG", "stop_codon": "TAA", "table": ["11"], "source": {"organism":
+    ["Escherichia coli BL21(DE3)"], "mol_type": ["genomic DNA"], "strain": ["BL21(DE3)"], "db_xref":
+    ["taxon:469008"]}, "protein_sha256": "9674a960704dd28f543e173d5e97f02f80f6fb5b18d07031eb2c501e494d6fad",
+    "dna_sha256": "bd2436f166e644a5874014b965c0686a61b2f7604c6c6cf96be14daca5675a73", "genpept_matches":
+    true, "uniprot": null, "uniprot_sequence_matches": null, "genpept_coded_by": [["complement(AM946981.2:3963317..3964726)"]]}].
+    Four cached UniProt mappings match: Q1MWN4 entry88/seq1, K4MZR0 entry34/seq1, A0A1Q2SRM5
+    entry36/seq1, A0A2K8PVS5 entry32/seq1. The fresh fifth mapping is separately recorded. Native
+    sequence identity does not establish assay genotype.'
+  snapshot_sha256: 32da92b06c8c1de61152f9dd85666da6a2ead7019ec0fae2a5fdbef36694fb58
+- evidence_id: source-integrity
+  kind: validation
+  reference: Cached-source receipts and source bytes
+  accessed_at: '2026-10-13T06:37:03.504347Z'
+  support: supports
+  summary: 'All27 cached artifacts match their download-receipt SHA256 and byte counts. Original
+    source URLs and hashes: [{"path": "/private/tmp/npmech-welo5-20261011-IWXJhh/indigoidine-uniprot.json",
+    "sha256": "4d750bf7090ea9ff5350045acebd85e6ff9dad9f50a39bbaf8b8bd5af289d7a4", "bytes": 88688,
+    "receipt_verified": true, "source_url": "https://rest.uniprot.org/uniprotkb/search?query=%28protein_name%3Aindigoidine+OR+gene%3AbpsA%29+AND+reviewed%3Atrue&format=json&size=500"},
+    {"path": "/private/tmp/npmech-welo5-20261011-IWXJhh/sc-indb-uniprot.json", "sha256": "18e34af2f8e3dc534b3d982fec73195579063d5a2c34f816bcccd3650d828185",
+    "bytes": 7597, "receipt_verified": true, "source_url": "https://rest.uniprot.org/uniprotkb/search?query=AFV27436&format=json&size=500"},
+    {"path": "/private/tmp/npmech-pptase-cohort-20261011-OtALIz/A0A1Q2SRM5.json", "sha256":
+    "053e081ddb027e9f8faee9dcac240505633a0952c695f14335b486f4ed278472", "bytes": 10434, "receipt_verified":
+    true, "source_url": "https://rest.uniprot.org/uniprotkb/A0A1Q2SRM5.json"}, {"path": "/private/tmp/npmech-pptase-cohort-20261011-OtALIz/A0A2K8PVS5.json",
+    "sha256": "d8200ff80c18482b692ba24f318f5c25e466f48363ae959639bba8b6fc371d28", "bytes": 11966,
+    "receipt_verified": true, "source_url": "https://rest.uniprot.org/uniprotkb/A0A2K8PVS5.json"},
+    {"path": "/private/tmp/npmech-welo5-20261011-IWXJhh/sc-indb-native.gb", "sha256": "ad2a5e8926965b5817294c026214d4dd5ddf3eed7ed23b34856c7453ce7fd7ba",
+    "bytes": 19235, "receipt_verified": true, "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=JX499187.1&rettype=gbwithparts&retmode=text"},
+    {"path": "/private/tmp/npmech-welo5-20261011-IWXJhh/sc-indb-protein.gp", "sha256": "0a77640642e1c5107c179bab757e1c0fcbb68928a8c9a1af4abee820c5261d18",
+    "bytes": 2805, "receipt_verified": true, "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=AFV27436.1&rettype=gp&retmode=text"},
+    {"path": "/private/tmp/npmech-welo5-20261011-IWXJhh/bpsa-native.gb", "sha256": "986bdac48a21e58bcc008ee44204cc22503956abf7ada7cd1e8f1a90c25c0f1e",
+    "bytes": 13180, "receipt_verified": true, "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=AB240063.1&rettype=gbwithparts&retmode=text"},
+    {"path": "/private/tmp/npmech-welo5-20261011-IWXJhh/bpsa-protein.gp", "sha256": "d402d98ed7cb72be79f41ef14245b72a7d98589295c8a9219090bf25b7aae89d",
+    "bytes": 4264, "receipt_verified": true, "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=BAE93896.1&rettype=gp&retmode=text"},
+    {"path": "/private/tmp/npmech-stnyp-20261011-sdpswA/CP004370.1.gb", "sha256": "0a518ea4acd42733f16409830795637ecd0e605e4578dc95e090f5295eac52ad",
+    "bytes": 14320285, "receipt_verified": true, "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=CP004370.1&rettype=gbwithparts&retmode=text"},
+    {"path": "/private/tmp/npmech-j1074-20261011-OOMBhi/AGI92022.1.gp", "sha256": "fdc595858d5986c14725635165ed07013e1399b042a59ae6ecbf3c964be59900",
+    "bytes": 3891, "receipt_verified": true, "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=AGI92022.1&rettype=gp&retmode=text"},
+    {"path": "/private/tmp/npmech-pptase-cohort-20261011-OtALIz/LC209815.gb", "sha256": "a3082f8f2a4eb67c0ca4a34ed930c8863456e8699b4d0600199f1eb986cdb0e3",
+    "bytes": 62495, "receipt_verified": true, "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=LC209815&rettype=gb&retmode=text"},
+    {"path": "/private/tmp/npmech-pptase-cohort-20261011-OtALIz/BAW81991.1.gp", "sha256": "d508ad3752857113def5ed1bb1722171391272286c693918e3c3656db5c3b67d",
+    "bytes": 4154, "receipt_verified": true, "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=BAW81991.1&rettype=gp&retmode=text"},
+    {"path": "/private/tmp/npmech-ccm3239-20261011-UOEkBf/FJ479754.1.gb", "sha256": "dba6835c64c28cd2bfaed9c0ef3a6e7091c889d9b6683a97cfa012171b6eb3cf",
+    "bytes": 62127, "receipt_verified": true, "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=FJ479754.1&rettype=gbwithparts&retmode=text"},
+    {"path": "/private/tmp/npmech-pptase-cohort-20261011-OtALIz/ACK77757.1.gp", "sha256": "f6ef9fccdd7f64c52b93129106562e026f8c6c00b5dcc52c851f735e2cb93951",
+    "bytes": 3703, "receipt_verified": true, "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=ACK77757.1&rettype=gp&retmode=text"},
+    {"path": "/private/tmp/npmech-pptase-cohort-20261011-OtALIz/KJ396772.2.gb", "sha256": "70c203686ab402b66a033bf4461901a0de9217d213cc4463964b2253086317d8",
+    "bytes": 480339, "receipt_verified": true, "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KJ396772.2&rettype=gb&retmode=text"},
+    {"path": "/private/tmp/npmech-pptase-cohort-20261011-OtALIz/ACK77757.2.gp", "sha256": "b9ac0599f46998767a46d2f30e3cac1f623b342bab837468c83eb0bf875a53df",
+    "bytes": 8863, "receipt_verified": true, "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=ACK77757.2&rettype=gp&retmode=text"},
+    {"path": "/private/tmp/npmech-pptase-cohort-20261011-OtALIz/CP024986.1.gb", "sha256": "db3ac127a7cb8325479670851b579bdb0df9f9d3db87590a2b54420a6ff0a060",
+    "bytes": 534981, "receipt_verified": true, "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=CP024986.1&rettype=gb&retmode=text"},
+    {"path": "/private/tmp/npmech-pptase-cohort-20261011-OtALIz/ATZ29785.1.gp", "sha256": "939fc2affbbd8985e06021b783cc4bfe6eb8248888799e9ec7f896ae09f0a584",
+    "bytes": 4623, "receipt_verified": true, "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=ATZ29785.1&rettype=gp&retmode=text"},
+    {"path": "/private/tmp/npmech-glna-20261011-Vw5H55/glna-cp001509-region.gb", "sha256": "3ed0b6c262983460880867c41793102eefa6d7123316d87a094a51ed133a170c",
+    "bytes": 5731, "receipt_verified": true, "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=CP001509.3&seq_start=3963323&seq_stop=3964732&rettype=gbwithparts&retmode=text"},
+    {"path": "/private/tmp/npmech-glna-20261011-Vw5H55/ncbi-glna-proteins.gp", "sha256": "417f972aacb70464dd530f5c9532faf1cd173721c52fd27393969cebc09afc6b",
+    "bytes": 18275, "receipt_verified": true, "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=447194461,2085555756,1845286868,253979878,242379407&rettype=gp&retmode=text"},
+    {"path": "/private/tmp/npmech-glna-20261011-Vw5H55/glna-am946981-region.gb", "sha256": "39be242b284ab87fa02f6bd94f3429f61fb2172db8cb83df3174ec23291fc988",
+    "bytes": 4891, "receipt_verified": true, "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=AM946981.2&seq_start=3963317&seq_stop=3964726&rettype=gbwithparts&retmode=text"},
+    {"path": "/private/tmp/npmech-glna-20261011-Vw5H55/uniprot-c6ef31.json", "sha256": "46d32e7a8b273fda713f8656f8ff035778ba87150b3f59cc9c423c132501f8ec",
+    "bytes": 252, "receipt_verified": true, "source_url": "https://rest.uniprot.org/uniprotkb/C6EF31.json"},
+    {"path": "/private/tmp/npmech-j1074-20261011-OOMBhi/bitok2017.pdf", "sha256": "d3567a8d82d4a4945b6e92cc53e1b900db37a3a909e9427dec1cb550178c3646",
+    "bytes": 1930214, "receipt_verified": true, "source_url": "https://bradylab.rockefeller.edu/wp-content/uploads/2022/11/33.pdf"},
+    {"path": "/private/tmp/npmech-pptase-cohort-20261011-OtALIz/ccm3239-2026-primary.html",
+    "sha256": "f7ad3083276f368509edc989d2064d95059279cfbbcc4abcefcc3f45200102e1", "bytes": 616946,
+    "receipt_verified": true, "source_url": "https://link.springer.com/article/10.1007/s00253-026-13908-9"},
+    {"path": "/private/tmp/npmech-pptase-cohort-20261011-OtALIz/ccm3239-2026-si.pdf", "sha256":
+    "bd266215ff76950211ae3f75b162bc9802c2d555ba4feff2f86dd8c139731450", "bytes": 7150076, "receipt_verified":
+    true, "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs00253-026-13908-9/MediaObjects/253_2026_13908_MOESM1_ESM.pdf"},
+    {"path": "/private/tmp/npmech-pptase-cohort-20261011-OtALIz/ccm3239-2026-fig1.png", "sha256":
+    "265013c8fc00b13437dfc2bddb1ed336357e0ff2644d216154eb558e24135794", "bytes": 118618, "receipt_verified":
+    true, "source_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs00253-026-13908-9/MediaObjects/253_2026_13908_Fig1_HTML.png"},
+    {"path": "/private/tmp/npmech-pptase-cohort-20261011-OtALIz/PMID28533156.xml", "sha256":
+    "bd2f7d72f52235e0352ae85edf8e07c702c3606d5acc896df603d3458b924c51", "bytes": 9533, "receipt_verified":
+    true, "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=28533156&retmode=xml"}].
+    Fresh PyMuPDF extraction matches cached normalized text for J1074 all8pages and CCM SI pagesS5,S6,S7,S10.
+    The temporary checker first treated SI filenames as zero-based; corrected to the printed
+    one-based numbering before success. Prior curator audit conclusions were not substituted
+    for raw sources.'
+  snapshot_sha256: 6a2c8cde5372b31cee455963fee540f1c32e4fa58de126a75d5ed8e79650bd57
+- evidence_id: bitok2017
+  kind: primary_source
+  reference: DOI:10.1093/femsle/fnx155
+  accessed_at: '2026-10-13T06:42:33.389055Z'
+  support: supports
+  summary: Cached author PDF fully read; Figure1 visually inspected. Methods identify pCDF-duet::bpsA
+    -> pIJ10257 and CRISPR deletion of xnr_5716 in J1074. Results report loss of pigment and
+    restoration by native PPTase reintroduced in trans at phiC31 under ermE*. Figure1C bottom
+    depicts eDNA clone rescue, not that native rescue. Supplement/complete engineered alleles
+    were not available.
+  locator: Methods pp2-3, Figure1 p3, Results p4
+  snapshot_sha256: d3567a8d82d4a4945b6e92cc53e1b900db37a3a909e9427dec1cb550178c3646
+- evidence_id: fri5
+  kind: primary_source
+  reference: PMID:28533156; DOI:10.1016/j.jbiosc.2017.04.020
+  accessed_at: '2026-10-13T06:42:33.400349Z'
+  support: partial
+  summary: Cached raw PubMed XML abstract and identifiers inspected. Reports FRI-5 lbpA expression
+    in S.avermitilis SUKA22 yields indigoidine and L-glutamine feeding enhances production.
+    Supports those conditional observations, not isolated LbpA catalysis or exact construct
+    sequence. Full-text access stop retained.
+  locator: ArticleTitle, AbstractText and ArticleIdList
+  snapshot_sha256: bd2f7d72f52235e0352ae85edf8e07c702c3606d5acc896df603d3458b924c51
+- evidence_id: ccm2026
+  kind: primary_source
+  reference: DOI:10.1007/s00253-026-13908-9
+  accessed_at: '2026-10-13T06:42:33.408554Z'
+  support: partial
+  summary: Cached publisher HTML Methods and relevant Results, Figure1 and SI TableS3/FigureS1
+    inspected; mainFigure1 and SI S7 viewed. pCosSA19 and BpsAkasDir/Rev introduce upstream
+    AprR-kasOp*; four mutants and WT Southern controls support locus intervention. DMSO pigment
+    extracts after22h in Bennet measured as OD613/mg wet cells, not mass concentration or enzyme
+    rate. Authors note possible neighboring transcriptional effects. SI S10 FigureS5 concerns
+    other PKS/regulator insertions, not BpsA allele sequencing. No inference that all87 supplement
+    pages were reviewed.
+  locator: Indigoidine methods/results; Figure1; SI S5-S7 and S10
+  snapshot_sha256: f7ad3083276f368509edc989d2064d95059279cfbbcc4abcefcc3f45200102e1
+- evidence_id: sequence-distinctions
+  kind: validation
+  reference: Independent reference/primer comparisons
+  accessed_at: '2026-10-13T06:34:31.352082Z'
+  support: supports
+  summary: FRI5 LbpA and ATCC11924 BpsA each1282aa but differ at22positions. Historical ACK77757.1
+    and current ACK77757.2 are1283aa with A385T; coding changes15A>G,1152A>G,1153G>A; only1153
+    changes a residue. Two native GlnA references share1410nt/469aa; C6EF31 cached record is
+    Inactive/DELETED. J1074 spacer hits CP004370.1:6439809..6439828 in reciprocal orientations;
+    screening primers flank the locus at6438093..6438112+ and6441140..6441157-. BpsA reporter
+    forward20nt suffix matches AB240063.1:686..705; reverse has no exact suffix>=15nt on either
+    strand of this complete deposit. Both CCM cassette primers have unique40nt homology prefixes
+    in KJ396772.2 and CP024986.1 at the upstream/start region. This run did not independently
+    recheck KJ396772.1 or the reported GlnA primers.
+  snapshot_sha256: 32da92b06c8c1de61152f9dd85666da6a2ead7019ec0fae2a5fdbef36694fb58
+  search_scope: Exact both-strand searches across full named deposited DNA sequences; ignored
+    cached files explicitly read. Not an exhaustive search of other strains/constructs.
+assessments:
+- assessment_id: serialization
+  area: consistency
+  topic: Chemical serialization versus biological identity
+  outcome: supported
+  summary: Both this SMILES and InChI independently reproduce ALDIVIWLBSDGGN-ONEGZZNKSA-N and
+    C10H8N4O4, charge0. No tetrahedral stereocentres; one E double bond encoded. This limited
+    consistency result cannot prove that the label or biosynthetic product is correct.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - chemistry
+  - owner
+- assessment_id: classification
+  area: consistency
+  topic: Computed classification, asserted cluster class and natural origin
+  outcome: supported
+  summary: The exact-key NPClassifier2026-09-07 output matches ALKALOIDS filing, Ornithine alkaloids,
+    with is_glycoside false. NRPS are separately retained source BGC classes, not computed chemical
+    truth. NATURAL_PRODUCT records asserted biological origin; it does not assert that every
+    experimental production system is natural rather than engineered.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+  - local-sources
+  - inventory
+  dimensions:
+  - name: filing
+    value: ALKALOIDS
+    definition: Computed filing axis, not asserted biosynthetic chemistry
+    evidence_ids:
+    - local-sources
+  - name: origin
+    value: NATURAL_PRODUCT
+    definition: Source-asserted origin, distinct from experimental host engineering
+    evidence_ids:
+    - inventory
+  - name: taxonomy
+    value: ACTINOBACTERIAL
+    definition: Producer taxon grouping, not a strain identifier
+    evidence_ids:
+    - owner
+    - taxonomy
+- assessment_id: ownership
+  area: ownership
+  topic: Generated and maintained boundaries
+  outcome: supported
+  summary: Future source corrections belong to the maintained inventory/extractor/seeder or
+    an implemented tested correction path. No generated owner/page patch, source correction,
+    history event or status promotion was made.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - ownership
+  - owner
+- assessment_id: audit
+  area: provenance
+  topic: Native status and complete history
+  outcome: supported
+  summary: SEEDED is retained. The full history records separate protein/graph additions, knowledge
+    gaps and label/discussion repairs with LLM assistance disclosed. A validated review is not
+    scientific status promotion.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+- assessment_id: optional-fields
+  area: completeness
+  topic: Optional activity, equivalence and dataset assertions
+  outcome: not_applicable
+  summary: 'Full owner/resolved view contains no assertions in: bioactivities, bioactivity_summary,
+    molecular_targets, related_records, clinical_status, datasets, parent_compounds, congener_of.
+    Missing optional content is not a defect. No extract activity, clinical status, spectrum
+    or cross-corpus equivalence inferred.'
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+- assessment_id: identity
+  area: identity
+  topic: Exact CHEBI:79296 molecular identity
+  outcome: supported
+  summary: Label, definition, MIBiG structure and exact3-star ChEBI key agree with inspected
+    authority C10H8N4O4/ALDIVIWLBSDGGN-ONEGZZNKSA-N. The other indigoidine-labelled owner has
+    a different constitution and is not a source of transferable claims.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+  - chebi
+  - local-sources
+  - chemistry
+- assessment_id: stereo-xref
+  area: grounding
+  topic: Stereo resolution and PubChem5492261
+  outcome: unknown
+  summary: E geometry is encoded consistently with the database structure; source stereo_complete
+    is not new experimental stereochemical proof. PubChem5492261 has not been independently
+    verified, so full equivalence sign-off remains incomplete.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+  - chemistry
+  - access-limits
+- assessment_id: occurrences
+  area: evidence
+  topic: Two source occurrence assertions
+  outcome: unknown
+  summary: ChEBI occurrence tax1914 retains ATCC11924 and PMID17237222. LOTUS tax42881/Q22287099
+    retains the2012 DOI; case variation in the DOI is not a different article. Pinned rows match,
+    but fresh primary occurrence support and live Wikidata identity were not independently rechecked.
+    No producer upgrade from occurrence.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+  - occurrences
+  - chebi
+  - taxonomy
+  - access-limits
+- assessment_id: producer-bgc
+  area: evidence
+  topic: MIBiG0000375 producer and cluster
+  outcome: unknown
+  summary: Version5 active/NRPS/JX499187.1 and tax42881 agree with the inventory. No locus evidence
+    methods are asserted; SOURCE_ASSERTION/CLUSTER_UNSTATED correctly preserve the imported
+    tier. Native deposit identifies ATCC49982, but the paper and live BGC were not fully reinspected.
+    No upgrade from sequence correspondence.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+  - inventory
+  - native-sequences
+  - access-limits
+- assessment_id: pathway
+  area: graph
+  topic: One overall Sc-IndC pathway step
+  outcome: unknown
+  summary: All nine distinct participants and Rhea81499/81500 direction are database-consistent;
+    K4MP98 precisely matches the native4134nt CDS. Primary Sc-IndC chemistry, microscopic steps
+    and actual construct remain unverified. Sc-IndB/GlnA are not represented as additional ordered
+    catalysts.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+  - rhea
+  - sc-indc
+  - access-limits
+- assessment_id: native-grounding
+  area: grounding
+  topic: Native proteins are not experimental constructs
+  outcome: supported
+  summary: Native mappings and strain qualifiers checked independently; historical and current
+    CCM3239 alleles remain distinct. Automated Sc-IndB PtkA and CCM3239 Tyrocidine synthase3
+    names are not adopted as measured functions. BpsA native deposit tax58340 has no strain
+    qualifier; ATCC11924 is literature/reference attribution, not added sequence-source metadata.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - native-sequences
+  - sequence-distinctions
+  - sc-indc
+  - owner
+- assessment_id: labels
+  area: nomenclature
+  topic: Taxon and glutamine names
+  outcome: supported
+  summary: Pinned taxonomy supports the recorded species/subspecies mappings. Current J1074
+    source is S.albidoflavus tax1886; the paper name S.albus is retained historically. CHEBI58359
+    legitimately has UniProt name L-glutamine, so that short label alone is not a new defect.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - taxonomy
+  - native-sequences
+  - glutamine
+  - owner
+- assessment_id: edge-01
+  area: graph
+  topic: 'indigoidine-indc-biosynthesis.edges[0]: l_glutamine -> sc_indc'
+  outcome: unknown
+  summary: Overall L-glutamine conversion is Rhea-consistent and Sc-IndC native identity is
+    exact; primary chemistry and construct not newly verified.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+  - rhea
+  - sc-indc
+  - access-limits
+  details: 'Recorded predicate: is converted to indigoidine by'
+- assessment_id: edge-02
+  area: graph
+  topic: 'indigoidine-indc-biosynthesis.edges[1]: sc_indc -> indigoidine'
+  outcome: unknown
+  summary: Product direction agrees with native indC annotation and canonical chemistry; heterologous
+    CH999/BAP1 experiment not fully reinspected.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+  - sc-indc
+  - chebi
+  - access-limits
+  details: 'Recorded predicate: forms'
+- assessment_id: edge-03
+  area: graph
+  topic: 'indigoidine-indc-biosynthesis.edges[2]: sc_indb -> indigoidine'
+  outcome: unknown
+  summary: Exact Sc-IndB reference reproduced, but conditional BAP1 yield effect needs primary
+    reinspection. Record explicitly avoids isolated catalysis, kinase function, physical complex
+    and native essentiality.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+  - native-sequences
+  - access-limits
+  details: 'Recorded predicate: increases yield of when coexpressed with Sc-IndC'
+- assessment_id: edge-04
+  area: graph
+  topic: 'indigoidine-indc-biosynthesis.edges[3]: glna_bl21_reported -> indigoidine'
+  outcome: unknown
+  summary: GlnA yield effect remains primary-unverified this review. Native469aa references
+    agree and deleted C6EF31 is not used as active ID; node stays REVIEW_NEEDED, no accession
+    or direct flux claim.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+  - native-sequences
+  - sequence-distinctions
+  - access-limits
+  details: 'Recorded predicate: increases yield of when coexpressed with Sc-IndC'
+- assessment_id: edge-05
+  area: graph
+  topic: 'indigoidine-lavendulae-bpsa-biosynthesis.edges[0]: l_glutamine -> bpsa'
+  outcome: unknown
+  summary: Native Q1MWN4/BAE93896.1 correspondence reproduced; Rhea reprints phosphopantetheinylation-dependent
+    L-Gln abstract. Original full text, construct and chemical data not newly verified.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+  - native-sequences
+  - rhea
+  - access-limits
+  details: 'Recorded predicate: is_substrate_for'
+- assessment_id: edge-06
+  area: graph
+  topic: 'indigoidine-lavendulae-bpsa-biosynthesis.edges[1]: bpsa -> indigoidine'
+  outcome: unknown
+  summary: Overall indigoidine product and phosphopantetheinylation qualification are database/abstract
+    consistent; do not convert into apoenzyme or native knockout proof.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+  - rhea
+  - chebi
+  - access-limits
+  details: 'Recorded predicate: catalyzes_overall_formation_of'
+- assessment_id: edge-07
+  area: graph
+  topic: 'indigoidine-j1074-pptase-reporter.edges[0]: j1074_pptase -> pptase_deletion'
+  outcome: supported
+  summary: AGI92022.1 identifies the native XNR_5716 locus targeted in the paper; native translation
+    and protospacer/screen-primer mapping agree, without proving the final engineered allele.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+  - bitok2017
+  - native-sequences
+  - sequence-distinctions
+  details: 'Recorded predicate: has its encoding locus targeted by'
+- assessment_id: edge-08
+  area: graph
+  topic: 'indigoidine-j1074-pptase-reporter.edges[1]: pptase_deletion -> indigoidine'
+  outcome: supported
+  summary: Paper reports pigment loss after deletion in the engineered BpsA reporter host. No
+    native indigoidine biosynthesis or isolated catalysis is implied.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+  - bitok2017
+  details: 'Recorded predicate: abolishes detectable reporter production of'
+- assessment_id: edge-09
+  area: graph
+  topic: 'indigoidine-j1074-pptase-reporter.edges[2]: j1074_pptase -> pptase_rescue'
+  outcome: supported
+  summary: Paper Results identify native PPTase reintroduction in trans at phiC31/ermE*; native
+    reference correspondence is not a complete rescue-construct sequence.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+  - bitok2017
+  - native-sequences
+  details: 'Recorded predicate: is native reference for protein supplied in'
+- assessment_id: edge-10
+  area: graph
+  topic: 'indigoidine-j1074-pptase-reporter.edges[3]: pptase_rescue -> indigoidine'
+  outcome: supported
+  summary: Results support pigment restoration by native PPTase rescue. Figure1C bottom independently
+    depicts eDNA rescue and is not misused as the native rescue panel.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+  - bitok2017
+  details: 'Recorded predicate: restores reporter production of'
+- assessment_id: edge-11
+  area: graph
+  topic: 'indigoidine-fri5-lbpa-expression.edges[0]: lbpa -> lbpa_expression'
+  outcome: supported
+  summary: FRI-5 native A0A1Q2SRM5/BAW81991.1 matches LC209815.1; primary abstract links lbpA
+    to expression in SUKA22. Reference correspondence only, not sequence-verified expression
+    construct.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+  - fri5
+  - native-sequences
+  details: 'Recorded predicate: is native reference for protein encoded in'
+- assessment_id: edge-12
+  area: graph
+  topic: 'indigoidine-fri5-lbpa-expression.edges[1]: lbpa_expression -> indigoidine'
+  outcome: supported
+  summary: Primary abstract reports pigment after heterologous lbpA expression in SUKA22; full
+    methods and chemical analysis remain uninspected.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+  - fri5
+  details: 'Recorded predicate: enables reported production of'
+- assessment_id: edge-13
+  area: graph
+  topic: 'indigoidine-fri5-lbpa-expression.edges[2]: glutamine_feeding -> indigoidine'
+  outcome: supported
+  summary: Primary abstract supports increased production under L-glutamine feeding, not purified
+    substrate use, isotope incorporation, direct flux or a quantitative yield.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+  - fri5
+  details: 'Recorded predicate: enhances reported production of'
+- assessment_id: edge-14
+  area: graph
+  topic: 'indigoidine-ccm3239-bpsa-interventions.edges[0]: bpsa_historical -> bpsa_deletion'
+  outcome: unknown
+  summary: ACK77757.1/FJ479754.1 mapping and historicalAla385 verified; original2010 deletion
+    abstract/full methods not reinspected. No exact experimental parental allele asserted.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+  - native-sequences
+  - sequence-distinctions
+  - access-limits
+  details: 'Recorded predicate: is historical reference for the gene product targeted by'
+- assessment_id: edge-15
+  area: graph
+  topic: 'indigoidine-ccm3239-bpsa-interventions.edges[1]: bpsa_deletion -> indigoidine'
+  outcome: unknown
+  summary: Reported2010 pigment-loss claim remains at its explicitly limited abstract tier;
+    original chemical characterization, conditions and deletion boundaries not reinspected.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+  - access-limits
+  details: 'Recorded predicate: abolishes reported blue-pigment production of'
+- assessment_id: edge-16
+  area: graph
+  topic: 'indigoidine-ccm3239-bpsa-interventions.edges[2]: bpsa_current -> bpsa_promoter'
+  outcome: supported
+  summary: 2026 methods/figure/SI support upstream cassette intervention. Current reference
+    native sequence and40nt primer homology match; full mutant/residue385 allele unresolved.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+  - ccm2026
+  - native-sequences
+  - sequence-distinctions
+  details: 'Recorded predicate: has its encoding locus preceded by'
+- assessment_id: edge-17
+  area: graph
+  topic: 'indigoidine-ccm3239-bpsa-interventions.edges[3]: bpsa_promoter -> indigoidine'
+  outcome: supported
+  summary: 2026 readout increased after upstream intervention; OD613/mg wet cells at22h, not
+    purified rate or mass concentration. Neighboring transcriptional effects remain possible.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+  - ccm2026
+  details: 'Recorded predicate: increases the reported pigment readout for'
+- assessment_id: discussions
+  area: completeness
+  topic: Three open construct/allele questions
+  outcome: supported
+  summary: All three stable curator discussions attach to the intended graphs. The GlnA1410nt
+    native reference does not resolve the reported1284bp construct; the latter primary statement
+    was not reverified here. The J1074 reverse-primer mismatch is reproduced but does not prove
+    an amino-acid change. CCM3239 Ala385/Thr385 native differences do not identify parental
+    or mutant genotypes. Keeping these questions open is justified.
+  target_ids:
+  - CHEBI:79296
+  evidence_ids:
+  - owner
+  - native-sequences
+  - sequence-distinctions
+  - bitok2017
+  - ccm2026
+  - access-limits
+findings: []
+actions:
+- action_id: complete-evidence-review
+  description: Complete the remaining exact-source checks using authorized inspectable material;
+    retain all inherited access stops and save an immutable successor review. This action is
+    proposed evidence work, not completed curation.
+  finding_ids: []
+  target_ids:
+  - CHEBI:79296
+  ownership_note: Read-only evidence follow-up; any source/record mutation requires separate
+    authorization.
+  acceptance_checks:
+  - Verify current versioned BGC, all chemical xrefs and cited primary compound/producer assertions
+    at exact strain and structure scope.
+  - Run the pinned RDKit consistency calculation; auxiliary toolkit agreement is not a substitute.
+  - Reinspect Sc-IndC/Sc-IndB, BpsA, GlnA and2010CCM primary evidence; check exact constructs,
+    missing SI and chemical-analysis data.
+  - Retain per-edge evidence tiers; resolve the three existing discussions only with complete
+    experimental sequence evidence.
+limitations:
+- Partial scientific review, not a pass. Required primary/currentness/equivalence and pinned-chemistry
+  checks remain incomplete.
+- Full goal remains3115 owners plus242 components. This report covers one owner; no sampling
+  or reduced success criterion.
+- No record, component, inventory, generated page, history event or scientific status changed.
+  No GitHub mutation or publication in this goal continuation.
+- Self-review by the same assistant/thread; no independent reviewer is claimed.
+- Cached official records establish pinned sequence/source assertions, not full live freshness
+  or experimental construct identity.
+- Raw temporary research artifacts may expire. Essential source identifiers, hashes, exact mappings,
+  findings and check results are embedded in this immutable report; full raw-source archival
+  is not claimed.
+- Inherited full-text stops retained for DOI10.1007/s10295-012-1207-9, 10.1074/jbc.M611319200,
+  10.1007/s10295-015-1642-5, 10.1093/femsle/fnx155, 10.1016/j.jbiosc.2017.04.020 and subscription
+  10.1007/s12223-010-0018-5. The already cached J1074 author PDF predates the publisher stop
+  and was re-read; no alternate retrievals performed. Cached raw FRI-5 abstract re-read. Earlier
+  GlnA/sc-IndB/CCM2010 curator assessments are leads only, not primary text reinspection. Current
+  PubChem5492261 equivalence and exact live MIBiG0000375 page/GBK status remain unverified.
+  Current UniProtK4MP98 was independently accessible.
+notes:
+- Only the new YAML/Markdown review bundle is written to the repository. Diagnostics and campaign
+  checkpoint are temporary read-only-work outputs.
+- 'Active profile/CLAUDE.md override the older checklist reference to decisions.tsv: it is reserved
+  and unimplemented.'
+- The corpus source hash revalidation and deterministic gates are not scientific review. No
+  unassessed owner is counted as reviewed.
+finished_at: '2026-10-13T06:44:13.035205Z'
+review_id: 20261013T064413Z-indigoidine

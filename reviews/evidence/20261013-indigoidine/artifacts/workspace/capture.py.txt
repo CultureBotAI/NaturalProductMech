@@ -1,0 +1,85 @@
+import hashlib
+import json
+import subprocess
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+
+import yaml
+from naturalproductmech.graph_components import read_natural_product
+
+ROOT = Path(__file__).parent
+REPO = Path.cwd()
+OLD = Path('/private/tmp/npmech-review-indigoidine-20261013-IAW8jG')
+CHECKPOINT = REPO / 'reviews/evidence/20261013-2mib-heme/artifacts/workspace/review-campaign-checkpoint.json'
+BASE = '127b18b43ac6c9ac76fd4ad878979ed8ddb0de8f'
+
+
+def now():
+    return datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z')
+
+
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def save(name, value):
+    with (ROOT / name).open('x') as stream:
+        json.dump(value, stream, indent=2)
+
+
+def run(name, args):
+    start = now()
+    path = ROOT / (name + '.log')
+    with path.open('x') as stream:
+        result = subprocess.run([sys.executable] + args, stdout=stream, stderr=subprocess.STDOUT)
+    receipt = dict(command=[sys.executable] + args, started_at=start, finished_at=now(),
+                   exit_code=result.returncode, log=str(path), sha256=sha(path))
+    save(name + '.receipt.json', receipt)
+    print(json.dumps(receipt), flush=True)
+    assert result.returncode == 0
+
+
+baseline = json.loads(CHECKPOINT.read_text())
+population = {r['path']: r for r in baseline['records']}
+assert set(population) == {str(p.relative_to(REPO)) for p in (REPO / 'data/natural_products').rglob('*.yaml')}
+components = {c['path']: c['sha256'] for r in population.values() for c in r['graph_components']}
+assert set(components) == {str(p.relative_to(REPO)) for p in (REPO / 'data/causal_graphs').rglob('*.yaml')}
+for row in population.values():
+    assert sha(REPO / row['path']) == row['sha256']
+for path, expected in components.items():
+    assert sha(REPO / path) == expected
+for row in baseline['reviews']:
+    assert sha(REPO / row['yaml']) == row['yaml_sha256']
+    assert sha(REPO / row['markdown']) == row['markdown_sha256']
+assert subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip() == BASE
+
+rows = []
+for slug in ['indigoidine-2', 'indigoidine']:
+    previous = json.loads((OLD / (slug + '-inspect.log')).read_text())
+    for item in previous['source']['inputs']:
+        assert sha(REPO / item['path']) == item['sha256']
+    target = json.loads((OLD / (slug + '-targets.json')).read_text())
+    target['targets'][0]['owner_paths'].append(dict(
+        repository='CultureBotAI/NaturalProductMech', path='data/raw/chebi_origins.tsv',
+        role='Imported ChEBI occurrence and strain assertions'))
+    save(slug + '-targets.json', target)
+    common = [i['path'] for i in previous['source']['inputs'] if i['role'] != 'target']
+    command = ['scripts/record_review.py', 'inspect', '--targets', str(ROOT / (slug + '-targets.json'))]
+    for path in dict.fromkeys(common + ['data/raw/chebi_origins.tsv', 'scripts/record_review.py']):
+        command += ['--input', path]
+    run(slug + '-inspect', command)
+    relative = target['targets'][0]['path']
+    started = now()
+    owner = yaml.safe_load((REPO / relative).read_text())
+    assert not owner.get('causal_graph_refs')
+    resolved = read_natural_product(REPO / relative)
+    save(slug + '-resolved.json', resolved)
+    run(slug + '-strict', ['scripts/validate_strict.py', relative, '--out', str(ROOT / (slug + '-strict.tsv'))])
+    rows.append(dict(path=relative, identifier=owner['identifier'], started_at=started,
+                     graph_components=[], graphs=[dict(graph_id=g['graph_id'], nodes=len(g['nodes']),
+                     edges=len(g['edges'])) for g in resolved.get('causal_graphs', [])]))
+save('capture.json', dict(base=BASE, captured_at=now(), previous_turn='progress: PR870 merged with evidence archive and tests',
+                         population=3115, graph_components=242, unchanged_population=True,
+                         prior_reviews_unchanged=True, previous_inspection_inputs_unchanged=True,
+                         targets=rows, baseline_checkpoint=str(CHECKPOINT), baseline_sha256=sha(CHECKPOINT)))

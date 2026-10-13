@@ -1,0 +1,53 @@
+import hashlib
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+
+import pymupdf
+
+ROOT = Path(__file__).parent
+W = Path('/private/tmp/npmech-welo5-20261011-IWXJhh')
+J = Path('/private/tmp/npmech-j1074-20261011-OOMBhi')
+P = Path('/private/tmp/npmech-pptase-cohort-20261011-OtALIz')
+sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
+out = dict(accessed_at=datetime.now(timezone.utc).isoformat(), artifacts=[], extraction_checks=[])
+protein = json.loads((ROOT/'protein-audit.json').read_text())
+paths = [Path(p) for p in protein['source_hashes']] + [J/'bitok2017.pdf', P/'ccm3239-2026-primary.html',
+    P/'ccm3239-2026-si.pdf', P/'ccm3239-2026-fig1.png', P/'PMID28533156.xml']
+receipts = {}
+for name in ['downloads.json','bpsa-downloads.json','sc-indb-downloads.json']:
+    for r in json.loads((W/name).read_text()):
+        receipts[str(W/r['name'])]=r
+for p in paths:
+    sidecar = p.with_name(p.name+'.receipt.json')
+    r = json.loads(sidecar.read_text()) if sidecar.exists() else receipts.get(str(p))
+    digest = sha(p)
+    if r:
+        assert digest==r['sha256'],p
+        assert p.stat().st_size==r['bytes'],p
+    elif str(p) in protein['source_hashes']:
+        assert digest==protein['source_hashes'][str(p)]
+    out['artifacts'].append(dict(path=str(p),sha256=digest,bytes=p.stat().st_size,
+        receipt_verified=r is not None,source_url=r.get('url') if r else None))
+for pdf,directory,pages,offset in [(J/'bitok2017.pdf',J/'primary-pages',range(8),0),
+                            (P/'ccm3239-2026-si.pdf',P/'ccm-si-pages',[5,6,7,10],-1)]:
+    d=pymupdf.open(pdf)
+    for n in pages:
+        text=d[n+offset].get_text()
+        old=(directory/f'page-{n}.txt').read_text()
+        same=''.join(text.split())==''.join(old.split())
+        assert same,(pdf,n)
+        out['extraction_checks'].append(dict(pdf=str(pdf),page_zero_indexed=n+offset,normalized_text_matches=True))
+k=json.loads((ROOT/'K4MP98.json').read_text())
+seq=k['sequence']['value']
+native=next(r for r in protein['cds'] if r['protein']=='AFV27434.1')
+assert hashlib.sha256(seq.encode()).hexdigest()==native['protein_sha256']
+out['sc_indc']={key:k.get(key) for key in ['primaryAccession','entryType','entryAudit','organism','proteinDescription','genes']}
+out['sc_indc'].update(dict(sequence_length=len(seq),sequence_sha256=native['protein_sha256'],
+    native_translation_matches=True,raw_sha256=sha(ROOT/'K4MP98.json'),
+    raw_headers=(ROOT/'K4MP98.headers').read_text(),
+    embl=[r for r in k.get('uniProtKBCrossReferences',[]) if r['database']=='EMBL']))
+with (ROOT/'evidence-audit.json').open('x') as stream:
+    json.dump(out,stream,indent=2)
+print(json.dumps(dict(artifacts=len(out['artifacts']),receipts_verified=sum(r['receipt_verified'] for r in out['artifacts']),
+    extraction_checks=out['extraction_checks'],sc_indc=out['sc_indc']),indent=2))
