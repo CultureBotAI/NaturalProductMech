@@ -1,0 +1,630 @@
+# Mycophenolic acid: partial record review and assay import defects
+
+- Review: 20261013T073122Z-mycophenolic-acid
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-13T07:21:36.086254Z
+- Finished UTC: 2026-10-13T07:31:22.896087Z
+- Reviewer: Codex (self_review)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Two confirmed major assay-import defects. Complete owner and four components read; primary-source, chemical, native-sequence and currentness checks remain incomplete. This observation precedes remediation.
+
+## Scope And Provenance
+
+One exact owner plus its four components and seven resolved graphs (83 edges). Full campaign denominator remains 3115 owners and 242 components; no sampled success criterion.
+
+Selection: Next pending owner in the exhaustive campaign queue; CHEBI:168396, not the distinct mycophenolic-acid-2 owner.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: git_commit at Git base 988766b35bae770331e9ec46018158654a88b4b7.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CHEBI:168396 | data/natural_products/polyketides/mycophenolic-acid.yaml | generated | mycophenolic acid |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| inspect | passed | True | CHEBI:168396 | Canonical inspection captured exact target, owners, base and input hashes. |
+| strict | passed | True | CHEBI:168396 | Validating 1 files with 15 workers; schema=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/src/naturalproductmech/schema/naturalproductmech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/npmech-mpa-review-current-NPq2SH/strict.tsv<br> |
+| required-sources | skipped | True | CHEBI:168396 | Remaining primary papers, all seven occurrence citations, current versioned BGCs, chemical xrefs, native sequence translations and all 83 edge evidence claims were not completely reverified. |
+| pinned-chemistry | skipped | True | CHEBI:168396 | No pinned RDKit chemistry calculation completed for this observation. |
+| current-labels | skipped | True | CHEBI:168396 | No new complete identifier-label adapter run completed before this observation. |
+| Full QC | skipped | False | CHEBI:168396 | Base PR874 passed full QC (570 tests, 4 skipped). This is historical context, not a new scientific or local-QC pass. |
+
+## Scientific And Domain Assessments
+
+### Exact owner and pinned source identity
+
+identity: supported. Targets: CHEBI:168396.
+
+Owner key HPNSFSBZBAHARI-RUDMXATFSA-N, CHEBI:168396 and source rows agree. This is the neutral E-alkene mycophenolic acid owner, not the separate brominated source conflict. Pinned chemistry and all xref equivalences remain unverified here.
+
+### Taxonomy, origin and computed filing
+
+consistency: supported. Targets: CHEBI:168396.
+
+FUNGAL producer grouping, NATURAL_PRODUCT origin and computed POLYKETIDES filing are separate facets. Four BGC rows retain distinct evidence grades; seven LOTUS occurrences remain occurrences. This supports source fidelity, not every biological assertion.
+
+### 25 retained quantitative BioAssays
+
+quantity: concern. Targets: CHEBI:168396.
+
+Official AID1650 purpose contradicts ANTIVIRAL classification; retained source outcomes and endpoint names are lost. The 318 additional raw rows were not promoted to a complete assay review.
+
+### All seven graphs read; evidence reassessment incomplete
+
+graph: unknown. Targets: CHEBI:168396.
+
+Human/hamster IMPDH, MpaG strain-specific evidence, NRRL864 and IBT23078 core references, Pb864 side-chain reconstitution and MpaH structural references are distinct. Similarity/inference tiers, ionic versus neutral forms, ungrounded 2025 constructs and the 433/398-aa MpaH conflict remain explicit. Reading all 83 edges is not verification of every cited experiment. Native sequence, structural and primary-source checks remain pending.
+
+### Producer, occurrence, BGC and cross-reference primary support
+
+evidence: unknown. Targets: CHEBI:168396.
+
+Inventory concordance does not independently establish current BGC status or the compound/strain scope of each cited experiment. All seven occurrence citations and chemical xrefs still need exact-source adjudication.
+
+### Maintained owners and native status
+
+ownership: supported. Targets: CHEBI:168396.
+
+Assay fixes belong in the seeder, not generated YAML or the reserved decisions.tsv. Graph components, discussions and curator history must survive regeneration. No scientific status promotion is justified.
+
+## Findings
+
+### F1: AID1650 cytotoxicity counterscreen is labelled antiviral
+
+major / open / confirmed; issue key: pubchem-AID1650-cytotoxicity-labelled-antiviral.
+
+The seeder matches anti-viral before cytotoxicity in the assay title. The official protocol measures mock-infected Vero E6 viability; the 4.61 uM value is CC50, not antiviral potency. This finding does not deny antiviral activity supported by other assays or the sibling link.
+
+### F2: Quantitative assay observations lose source outcome and endpoint context
+
+major / open / confirmed; issue key: pubchem-quantitative-outcome-endpoint-loss.
+
+All 25 retained numeric observations omit source outcome: 11 Active, 13 Inconclusive, 1 Inactive. Twenty-four omit measurement_type, losing names such as CC50 and Potency. AID624296 retains 0.3663 uM without its Inactive outcome; seven Inconclusive rows carry CYTOTOXIC. Numeric values alone must not become positive activity support. The extractor retains these fields; the loss is in the seeder. Inconclusive is not intermediate susceptibility, and Potency must not be guessed to mean IC50.
+
+## Recommended Actions And Acceptance Checks
+
+### fix-assay-import
+
+Correct the maintained seeder, add negative-case regressions, run dry run and canary, regenerate through guarded writers and validate the full corpus. Preserve endpoint names and outcomes without guessing equivalent measurements; non-active results cannot back positive summaries.
+
+- AID1650 is not antiviral evidence; its CC50 and Active outcome survive.
+- Inactive, Inconclusive, missing and unrecognized outcomes remain distinguishable from Active; arbitrary endpoint names are retained.
+- No outcome or endpoint change alters values, units, row order/cap, chemical identities, curator graphs or scientific status.
+- Focused regressions, strict validation, reproduction, corpus, provenance, rendering and QC pass.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/natural_products/polyketides/mycophenolic-acid.yaml | partial | Complete 939-line owner and four referenced components were read, including discussions and full history. Resolved graph edge counts are 3, 2, 3, 14, 17, 41 and 3. SEEDED is retained. |
+| local-audit | /private/tmp/npmech-mpa-review-current-NPq2SH/source-audit.json | partial | All 25 retained observations were matched to committed source rows. Exact-key inventories contain four MIBiG rows, one ChEBI structure, seven LOTUS occurrences, one NPClassifier row, 343 BioAssay rows and one sibling link. Structured taxonomy was parsed with pronto; all inherited owner/component hashes and seven saved review pairs were revalidated. |
+| aid1650 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1650/description/JSON; PC_AssayContainer[0].assay.descr: description, protocol, comment and results tid2 | partial | Official JSON, HTTP200, retrieved 2026-10-13T07:24:02Z and reinspected: Vero E6 viability counterscreen, mock virus addition uses medium, endpoint CC50. Active denotes reduced viability. Description and protocol disagree on exposure duration (72 versus 96 hours); no single duration asserted. Full depositor text is not republished because redistribution rights were not established. |
+| seeder | scripts/seed_from_sources.py | partial | ACTIVITY_CLASS_PATTERNS chooses the first title match. Numeric branch retains value/units but only recognized endpoint types; call is assigned ACTIVE only in the nonnumeric branch. Summary uses all written classes without outcome filtering. |
+
+## Limits And Additional Notes
+
+- Partial review, not a scientific pass. No completed scientific record reviews are claimed.
+- Campaign at this observation: eight partial owners, zero complete, 3107 unassessed of 3115; all 242 components remain in the denominator.
+- Inherited source-access stops and aliases remain binding. DOI10.1073/pnas.1821932116 (PMID31209052/PMC6613074) had a direct PMC challenge; DOI10.1002/advs.202508826 (PMID40788096/PMC12591190) SI was unavailable. No alternate retrieval was attempted. Cached main-text reading does not establish SI, construct or figure verification.
+- No newly completed pinned chemistry, whole-label, native sequence, all-xref, current BGC or exhaustive primary-paper validation. Read completeness is distinct from scientific verification.
+- Raw AID1650 source is reference/hash-only; review-generated audit artifacts are archived in reviews/evidence/20261013-mycophenolic. Prior access-stop ledger remains in the indigoidine evidence archive.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Mycophenolic acid: partial record review and assay import defects'
+started_at: '2026-10-13T07:21:36.086254Z'
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: self_review
+  independence_basis: Same assistant/thread that previously curated this repository;
+    a separate adversarial pass, not an independent reviewer.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Two confirmed major assay-import defects. Complete owner and four components
+  read; primary-source, chemical, native-sequence and currentness checks remain incomplete.
+  This observation precedes remediation.
+source:
+  git_revision: 988766b35bae770331e9ec46018158654a88b4b7
+  state: git_commit
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: 49e2ab03c7e82013e9d68356de2c9965c9f8517a3408a44124076f4ca1b529cd
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 0b2e8b991c926f9a67a3094964b0335dd1cd347fbf548674fa273db8fac3a4b2
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: 5b1edc057cdcc732f61de2964cd175fa3bc2dca929c5d2823142f61313545a7e
+    role: context
+  - path: data/causal_graphs/HPNSFSBZBAHARI-RUDMXATFSA-N/mycophenolic-acid-ibt23078-core-biosynthesis-reference.yaml
+    sha256: 8c35c391d79f6907afcdcffa6b61b426d67a2701f08da905ee16629a5984df24
+    role: context
+  - path: data/causal_graphs/HPNSFSBZBAHARI-RUDMXATFSA-N/mycophenolic-acid-mpah-prime-structural-reference.yaml
+    sha256: dff15ee2092c86713a14e3df95c10e207da81d59684bdcdca56e9ed97e297df5
+    role: context
+  - path: data/causal_graphs/HPNSFSBZBAHARI-RUDMXATFSA-N/mycophenolic-acid-nrrl864-core-biosynthesis-reference.yaml
+    sha256: 2ab8f5960aba823b7215fcec7b601f8a4ba799479422454bf136621c54f72cc8
+    role: context
+  - path: data/causal_graphs/HPNSFSBZBAHARI-RUDMXATFSA-N/mycophenolic-acid-pb864-sidechain-reconstitution.yaml
+    sha256: 625ff98626e90a972c9aebb169c31b17a17a6c96712c6fe2dcfdf58ecebd390e
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: bf38e4f0c7e4bcbdf184a4e7b8b024752251e8f34c015c0b82cedca98a8a5729
+    role: context
+  - path: data/natural_products/polyketides/mycophenolic-acid.yaml
+    sha256: 24993418518b692f5582026190d8ea3c7b8fae7d224b13279f97a146d9fad5c9
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: 373f049029be3db137e062ff5f872a2400a9d5b423f3e108ea44ebde2f8dcc7d
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: 7b9b9f78f5b14aea9fabb163bbaa9e842920a7e9b07deac8f98c97666e9e23fc
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: data/raw/taxon_groups.tsv
+    sha256: f73f228d57d79a1d85a1441efa6829917b1ffecac08cb7bdd4fc855046255f8f
+    role: context
+  - path: data/raw/taxon_merged.tsv
+    sha256: 97b3efa66d4fc1679ab65ae547e78b2f627f37bc8e45ae33f2719008fe3863bb
+    role: context
+  - path: docs/CURATION.md
+    sha256: 3b979068592adbb0611de95927ca31eaabb5fb5d791aa09973e3b1e8d5a19011
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: 30c7007e57806c245674ce922e0f8c485b1a8a12a9f9fb95850ba6ee4f8cddc2
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_antibioticmech.py
+    sha256: 701314987037b1b82ef9539af731dcbb6ec2542b304058385014abb4339a3439
+    role: context
+  - path: scripts/extract_bindingdb.py
+    sha256: a075df54c14979acb4f6ee61d1d937ab6abe63b16e9559c0021e85b0ad4e08f5
+    role: context
+  - path: scripts/extract_lotus.py
+    sha256: 8a8c524f60f85d2bb54412ca055a6a45e0d37ec5f4584d8d70be454b8f664290
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/extract_pubchem_bioassay.py
+    sha256: 24f9d794e7cf97c420351cb751f8767f7d81a5f22aed01669b2318d6755e7c00
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 2da30b7ccf4b9543ecbe02eb0c8662e51a82c0745aa45be28afbf8ceb38fc1be
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: CHEBI:168396
+  path: data/natural_products/polyketides/mycophenolic-acid.yaml
+  label: mycophenolic acid
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Imported exact chemical, producer and BGC assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Imported ChEBI identity and definition
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Imported organism-reference triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Imported quantitative assay rows
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_pubchem_bioassay.py
+    role: Structured assay source extraction; classification is owned by the seeder
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/bindingdb_targets.tsv
+    role: Target source inventory
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/antibioticmech_inchikeys.tsv
+    role: Pinned same-structure sibling link
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Harmonization and generated emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/polyketides/mycophenolic-acid.yaml
+    role: Curator-owned inline graphs/discussions/history through guarded writer
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/HPNSFSBZBAHARI-RUDMXATFSA-N/mycophenolic-acid-nrrl864-core-biosynthesis-reference.yaml
+    role: Exact-owner graph component maintained through guarded bundle writer
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/HPNSFSBZBAHARI-RUDMXATFSA-N/mycophenolic-acid-ibt23078-core-biosynthesis-reference.yaml
+    role: Exact-owner graph component maintained through guarded bundle writer
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/HPNSFSBZBAHARI-RUDMXATFSA-N/mycophenolic-acid-pb864-sidechain-reconstitution.yaml
+    role: Exact-owner graph component maintained through guarded bundle writer
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/causal_graphs/HPNSFSBZBAHARI-RUDMXATFSA-N/mycophenolic-acid-mpah-prime-structural-reference.yaml
+    role: Exact-owner graph component maintained through guarded bundle writer
+scope:
+  description: One exact owner plus its four components and seven resolved graphs
+    (83 edges). Full campaign denominator remains 3115 owners and 242 components;
+    no sampled success criterion.
+  selection: Next pending owner in the exhaustive campaign queue; CHEBI:168396, not
+    the distinct mycophenolic-acid-2 owner.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:168396
+checks:
+- check_id: inspect
+  name: inspect
+  status: passed
+  required: true
+  summary: Canonical inspection captured exact target, owners, base and input hashes.
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    scripts/record_review.py inspect --targets /private/tmp/npmech-mpa-review-current-NPq2SH/targets.json
+    --input .claude/skills/curate-yaml-record/references/review-checklist.md --input
+    .claude/skills/review-yaml-record/SKILL.md --input CLAUDE.md --input conf/id_label_targets.yaml
+    --input conf/producer_evidence.tsv --input conf/record_review.yaml --input curation/mibig_locus_evidence_overrides.tsv
+    --input curation/mibig_structure_corrections.tsv --input data/causal_graphs/HPNSFSBZBAHARI-RUDMXATFSA-N/mycophenolic-acid-ibt23078-core-biosynthesis-reference.yaml
+    --input data/causal_graphs/HPNSFSBZBAHARI-RUDMXATFSA-N/mycophenolic-acid-mpah-prime-structural-reference.yaml
+    --input data/causal_graphs/HPNSFSBZBAHARI-RUDMXATFSA-N/mycophenolic-acid-nrrl864-core-biosynthesis-reference.yaml
+    --input data/causal_graphs/HPNSFSBZBAHARI-RUDMXATFSA-N/mycophenolic-acid-pb864-sidechain-reconstitution.yaml
+    --input data/natural_products/PATHS.tsv --input data/raw/MANIFEST.yaml --input
+    data/raw/antibioticmech_inchikeys.tsv --input data/raw/bindingdb_targets.tsv --input
+    data/raw/chebi_origins.tsv --input data/raw/chebi_structures.tsv --input data/raw/corpus_taxa.obo
+    --input data/raw/lotus_occurrences.tsv --input data/raw/mibig_compounds.tsv --input
+    data/raw/npclassifier.tsv --input data/raw/pubchem_bioassay.tsv --input data/raw/taxon_groups.tsv
+    --input data/raw/taxon_merged.tsv --input docs/CURATION.md --input docs/HARMONIZATION.md
+    --input docs/record-review-profile.md --input docs/record-reviews.md --input justfile
+    --input schema/record_review.yaml --input scripts/extract_antibioticmech.py --input
+    scripts/extract_bindingdb.py --input scripts/extract_lotus.py --input scripts/extract_mibig.py
+    --input scripts/extract_pubchem_bioassay.py --input scripts/record_review.py --input
+    scripts/seed_from_sources.py --input src/naturalproductmech/graph_components.py
+    --input src/naturalproductmech/schema/naturalproductmech.yaml
+  exit_code: 0
+  target_ids:
+  - CHEBI:168396
+  evidence_ids:
+  - local-audit
+- check_id: strict
+  name: strict
+  status: passed
+  required: true
+  summary: "Validating 1 files with 15 workers; schema=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/src/naturalproductmech/schema/naturalproductmech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  files with ERROR:\
+    \   0\n  total ERROR rows:   0\n  TSV:                /private/tmp/npmech-mpa-review-current-NPq2SH/strict.tsv\n"
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/bin/python
+    scripts/validate_strict.py data/natural_products/polyketides/mycophenolic-acid.yaml
+    --out /private/tmp/npmech-mpa-review-current-NPq2SH/strict.tsv
+  exit_code: 0
+  target_ids:
+  - CHEBI:168396
+  evidence_ids:
+  - local-audit
+- check_id: required-sources
+  name: required-sources
+  status: skipped
+  required: true
+  summary: Remaining primary papers, all seven occurrence citations, current versioned
+    BGCs, chemical xrefs, native sequence translations and all 83 edge evidence claims
+    were not completely reverified.
+  target_ids:
+  - CHEBI:168396
+- check_id: pinned-chemistry
+  name: pinned-chemistry
+  status: skipped
+  required: true
+  summary: No pinned RDKit chemistry calculation completed for this observation.
+  target_ids:
+  - CHEBI:168396
+- check_id: current-labels
+  name: current-labels
+  status: skipped
+  required: true
+  summary: No new complete identifier-label adapter run completed before this observation.
+  target_ids:
+  - CHEBI:168396
+- check_id: full-qc
+  name: Full QC
+  status: skipped
+  required: false
+  summary: Base PR874 passed full QC (570 tests, 4 skipped). This is historical context,
+    not a new scientific or local-QC pass.
+  target_ids:
+  - CHEBI:168396
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/natural_products/polyketides/mycophenolic-acid.yaml
+  accessed_at: '2026-10-13T07:31:22.893717Z'
+  support: partial
+  summary: Complete 939-line owner and four referenced components were read, including
+    discussions and full history. Resolved graph edge counts are 3, 2, 3, 14, 17,
+    41 and 3. SEEDED is retained.
+  snapshot_sha256: 24993418518b692f5582026190d8ea3c7b8fae7d224b13279f97a146d9fad5c9
+- evidence_id: local-audit
+  kind: validation
+  reference: /private/tmp/npmech-mpa-review-current-NPq2SH/source-audit.json
+  accessed_at: '2026-10-13T07:31:22.894786Z'
+  support: partial
+  summary: All 25 retained observations were matched to committed source rows. Exact-key
+    inventories contain four MIBiG rows, one ChEBI structure, seven LOTUS occurrences,
+    one NPClassifier row, 343 BioAssay rows and one sibling link. Structured taxonomy
+    was parsed with pronto; all inherited owner/component hashes and seven saved review
+    pairs were revalidated.
+  snapshot_sha256: ea2edf0a76b71409ef430a68d409aaa5715875530a26be8fec0dc948cd1b2fe8
+  search_scope: Complete named TSV inventories and Path.rglob owner/curation scans
+    include ignored files; no applicable correction row was found for this exact owner.
+- evidence_id: aid1650
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1650/description/JSON
+  accessed_at: '2026-10-13T07:31:22.895278Z'
+  support: partial
+  summary: 'Official JSON, HTTP200, retrieved 2026-10-13T07:24:02Z and reinspected:
+    Vero E6 viability counterscreen, mock virus addition uses medium, endpoint CC50.
+    Active denotes reduced viability. Description and protocol disagree on exposure
+    duration (72 versus 96 hours); no single duration asserted. Full depositor text
+    is not republished because redistribution rights were not established.'
+  locator: 'PC_AssayContainer[0].assay.descr: description, protocol, comment and results
+    tid2'
+  snapshot_sha256: 81e2fe0c756bedbe0f857a57c8ac6bb8dc226dd977c586547da2d6dfba172988
+- evidence_id: seeder
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  accessed_at: '2026-10-13T07:31:22.896055Z'
+  support: partial
+  summary: ACTIVITY_CLASS_PATTERNS chooses the first title match. Numeric branch retains
+    value/units but only recognized endpoint types; call is assigned ACTIVE only in
+    the nonnumeric branch. Summary uses all written classes without outcome filtering.
+  snapshot_sha256: 2da30b7ccf4b9543ecbe02eb0c8662e51a82c0745aa45be28afbf8ceb38fc1be
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact owner and pinned source identity
+  outcome: supported
+  summary: Owner key HPNSFSBZBAHARI-RUDMXATFSA-N, CHEBI:168396 and source rows agree.
+    This is the neutral E-alkene mycophenolic acid owner, not the separate brominated
+    source conflict. Pinned chemistry and all xref equivalences remain unverified
+    here.
+  target_ids:
+  - CHEBI:168396
+  evidence_ids:
+  - owner
+  - local-audit
+- assessment_id: facets
+  area: consistency
+  topic: Taxonomy, origin and computed filing
+  outcome: supported
+  summary: FUNGAL producer grouping, NATURAL_PRODUCT origin and computed POLYKETIDES
+    filing are separate facets. Four BGC rows retain distinct evidence grades; seven
+    LOTUS occurrences remain occurrences. This supports source fidelity, not every
+    biological assertion.
+  target_ids:
+  - CHEBI:168396
+  evidence_ids:
+  - owner
+  - local-audit
+- assessment_id: activities
+  area: quantity
+  topic: 25 retained quantitative BioAssays
+  outcome: concern
+  summary: Official AID1650 purpose contradicts ANTIVIRAL classification; retained
+    source outcomes and endpoint names are lost. The 318 additional raw rows were
+    not promoted to a complete assay review.
+  target_ids:
+  - CHEBI:168396
+  evidence_ids:
+  - aid1650
+  - local-audit
+  - seeder
+- assessment_id: mechanisms
+  area: graph
+  topic: All seven graphs read; evidence reassessment incomplete
+  outcome: unknown
+  summary: Human/hamster IMPDH, MpaG strain-specific evidence, NRRL864 and IBT23078
+    core references, Pb864 side-chain reconstitution and MpaH structural references
+    are distinct. Similarity/inference tiers, ionic versus neutral forms, ungrounded
+    2025 constructs and the 433/398-aa MpaH conflict remain explicit. Reading all
+    83 edges is not verification of every cited experiment. Native sequence, structural
+    and primary-source checks remain pending.
+  target_ids:
+  - CHEBI:168396
+  evidence_ids:
+  - owner
+- assessment_id: origin
+  area: evidence
+  topic: Producer, occurrence, BGC and cross-reference primary support
+  outcome: unknown
+  summary: Inventory concordance does not independently establish current BGC status
+    or the compound/strain scope of each cited experiment. All seven occurrence citations
+    and chemical xrefs still need exact-source adjudication.
+  target_ids:
+  - CHEBI:168396
+  evidence_ids:
+  - local-audit
+- assessment_id: history
+  area: ownership
+  topic: Maintained owners and native status
+  outcome: supported
+  summary: Assay fixes belong in the seeder, not generated YAML or the reserved decisions.tsv.
+    Graph components, discussions and curator history must survive regeneration. No
+    scientific status promotion is justified.
+  target_ids:
+  - CHEBI:168396
+  evidence_ids:
+  - owner
+  - seeder
+findings:
+- finding_id: F1
+  issue_key: pubchem-AID1650-cytotoxicity-labelled-antiviral
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: AID1650 cytotoxicity counterscreen is labelled antiviral
+  description: The seeder matches anti-viral before cytotoxicity in the assay title.
+    The official protocol measures mock-infected Vero E6 viability; the 4.61 uM value
+    is CC50, not antiviral potency. This finding does not deny antiviral activity
+    supported by other assays or the sibling link.
+  target_ids:
+  - CHEBI:168396
+  field_paths:
+  - bioactivities[0].activity_class
+  evidence_ids:
+  - aid1650
+  - local-audit
+  - seeder
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated assay transformation and activity summary
+  rule_id: 'docs/CURATION.md: narrow evidence, measurement context, backed activity
+    summaries'
+  native_severity: major
+  normalization_reason: Systemic source transformation can misrepresent measured activity
+    while schema and reproduction gates pass.
+- finding_id: F2
+  issue_key: pubchem-quantitative-outcome-endpoint-loss
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Quantitative assay observations lose source outcome and endpoint context
+  description: 'All 25 retained numeric observations omit source outcome: 11 Active,
+    13 Inconclusive, 1 Inactive. Twenty-four omit measurement_type, losing names such
+    as CC50 and Potency. AID624296 retains 0.3663 uM without its Inactive outcome;
+    seven Inconclusive rows carry CYTOTOXIC. Numeric values alone must not become
+    positive activity support. The extractor retains these fields; the loss is in
+    the seeder. Inconclusive is not intermediate susceptibility, and Potency must
+    not be guessed to mean IC50.'
+  target_ids:
+  - CHEBI:168396
+  field_paths:
+  - bioactivities
+  - bioactivity_summary
+  evidence_ids:
+  - local-audit
+  - seeder
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated assay transformation and activity summary
+  rule_id: 'docs/CURATION.md: narrow evidence, measurement context, backed activity
+    summaries'
+  native_severity: major
+  normalization_reason: Systemic source transformation can misrepresent measured activity
+    while schema and reproduction gates pass.
+actions:
+- action_id: fix-assay-import
+  description: Correct the maintained seeder, add negative-case regressions, run dry
+    run and canary, regenerate through guarded writers and validate the full corpus.
+    Preserve endpoint names and outcomes without guessing equivalent measurements;
+    non-active results cannot back positive summaries.
+  finding_ids:
+  - F1
+  - F2
+  target_ids:
+  - CHEBI:168396
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated assay transformation and activity summary
+  generator: scripts/seed_from_sources.py
+  acceptance_checks:
+  - AID1650 is not antiviral evidence; its CC50 and Active outcome survive.
+  - Inactive, Inconclusive, missing and unrecognized outcomes remain distinguishable
+    from Active; arbitrary endpoint names are retained.
+  - No outcome or endpoint change alters values, units, row order/cap, chemical identities,
+    curator graphs or scientific status.
+  - Focused regressions, strict validation, reproduction, corpus, provenance, rendering
+    and QC pass.
+limitations:
+- Partial review, not a scientific pass. No completed scientific record reviews are
+  claimed.
+- 'Campaign at this observation: eight partial owners, zero complete, 3107 unassessed
+  of 3115; all 242 components remain in the denominator.'
+- Inherited source-access stops and aliases remain binding. DOI10.1073/pnas.1821932116
+  (PMID31209052/PMC6613074) had a direct PMC challenge; DOI10.1002/advs.202508826
+  (PMID40788096/PMC12591190) SI was unavailable. No alternate retrieval was attempted.
+  Cached main-text reading does not establish SI, construct or figure verification.
+- No newly completed pinned chemistry, whole-label, native sequence, all-xref, current
+  BGC or exhaustive primary-paper validation. Read completeness is distinct from scientific
+  verification.
+- Raw AID1650 source is reference/hash-only; review-generated audit artifacts are
+  archived in reviews/evidence/20261013-mycophenolic. Prior access-stop ledger remains
+  in the indigoidine evidence archive.
+finished_at: '2026-10-13T07:31:22.896087Z'
+review_id: 20261013T073122Z-mycophenolic-acid
+```

@@ -1,0 +1,78 @@
+{
+  "targets": [
+    {
+      "target_id": "CHEBI:168396",
+      "path": "data/natural_products/polyketides/mycophenolic-acid.yaml",
+      "label": "mycophenolic acid",
+      "record_class": "NaturalProductRecord",
+      "kind": "generated",
+      "owner_paths": [
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/mibig_compounds.tsv",
+          "role": "Imported exact chemical, producer and BGC assertions"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/chebi_structures.tsv",
+          "role": "Imported ChEBI identity and definition"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/lotus_occurrences.tsv",
+          "role": "Imported organism-reference triples"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/pubchem_bioassay.tsv",
+          "role": "Imported quantitative assay rows"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/extract_pubchem_bioassay.py",
+          "role": "Structured assay source extraction; classification is owned by the seeder"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/bindingdb_targets.tsv",
+          "role": "Target source inventory"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/antibioticmech_inchikeys.tsv",
+          "role": "Pinned same-structure sibling link"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/seed_from_sources.py",
+          "role": "Harmonization and generated emission"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/natural_products/polyketides/mycophenolic-acid.yaml",
+          "role": "Curator-owned inline graphs/discussions/history through guarded writer"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/causal_graphs/HPNSFSBZBAHARI-RUDMXATFSA-N/mycophenolic-acid-nrrl864-core-biosynthesis-reference.yaml",
+          "role": "Exact-owner graph component maintained through guarded bundle writer"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/causal_graphs/HPNSFSBZBAHARI-RUDMXATFSA-N/mycophenolic-acid-ibt23078-core-biosynthesis-reference.yaml",
+          "role": "Exact-owner graph component maintained through guarded bundle writer"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/causal_graphs/HPNSFSBZBAHARI-RUDMXATFSA-N/mycophenolic-acid-pb864-sidechain-reconstitution.yaml",
+          "role": "Exact-owner graph component maintained through guarded bundle writer"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/causal_graphs/HPNSFSBZBAHARI-RUDMXATFSA-N/mycophenolic-acid-mpah-prime-structural-reference.yaml",
+          "role": "Exact-owner graph component maintained through guarded bundle writer"
+        }
+      ]
+    }
+  ]
+}
