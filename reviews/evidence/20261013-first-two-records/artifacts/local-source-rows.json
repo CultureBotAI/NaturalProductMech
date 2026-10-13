@@ -1,0 +1,94 @@
+{
+  "accessed_at": "2026-10-13T04:22:58.330319Z",
+  "records": {
+    "data/raw/mibig_compounds.tsv": [
+      {
+        "mibig_accession": "BGC0001360",
+        "entry_version": "3",
+        "entry_status": "active",
+        "entry_quality": "questionable",
+        "entry_completeness": "unknown",
+        "compound_name": "mycophenolic acid",
+        "compound_index": "1",
+        "smiles": "Cc1c(c(n2c(cnc2c1Br)CSCCO)C)Br",
+        "standard_inchi": "InChI=1S/C12H14Br2N2OS/c1-7-10(13)8(2)16-9(6-18-4-3-17)5-15-12(16)11(7)14/h5,17H,3-4,6H2,1-2H3",
+        "standard_inchi_key": "IKMDAJQFLYGHII-UHFFFAOYSA-N",
+        "stereo_complete": "true",
+        "compound_classes": "",
+        "database_ids": "",
+        "taxon_id": "NCBITaxon:1365484",
+        "taxon_label": "Penicillium roqueforti FM164",
+        "bgc_classes": "PKS",
+        "bgc_subclasses": "Unknown",
+        "genome_accession": "HG792019.1",
+        "locus_from": "1294894",
+        "locus_to": "1318068",
+        "locus_evidence_methods": "",
+        "producer_evidence_basis": "SOURCE_ASSERTION",
+        "cluster_link_evidence_basis": "CLUSTER_UNSTATED",
+        "primary_reference": "DOI:10.1021/cr990097b",
+        "reference_basis": "COMPOUND_BIOACTIVITY"
+      }
+    ],
+    "data/raw/lotus_occurrences.tsv": [
+      {
+        "standard_inchi_key": "IKMDAJQFLYGHII-UHFFFAOYSA-N",
+        "organism_name": "Penicillium roqueforti",
+        "taxon_id": "NCBITaxon:5082",
+        "organism_wikidata": "http://www.wikidata.org/entity/Q133247",
+        "reference_doi": "10.1371/JOURNAL.PONE.0147047",
+        "structure_wikidata": "http://www.wikidata.org/entity/Q105114740"
+      }
+    ],
+    "data/raw/chebi_structures.tsv": [
+      {
+        "chebi_id": "CHEBI:168396",
+        "name": "mycophenolic acid",
+        "definition": "A member of the class of 2-benzofurans that is 2-benzofuran-1(3H)-one which is substituted at positions 4, 5, 6, and 7 by methyl, methoxy, (2E)-5-carboxy-3-methylpent-2-en-1-yl, and hydroxy groups, respectively. It is an antibiotic produced by Penicillium brevi-compactum, P. stoloniferum, P. echinulatum and related species. An immunosuppressant, it is widely used (partiularly as its sodium salt and as the 2-(morpholin-4-yl)ethyl ester prodrug, mycophenolate mofetil) to prevent tissue rejection following organ transplants and for the treatment of certain autoimmune diseases.",
+        "stars": "3",
+        "standard_inchi_key": "HPNSFSBZBAHARI-RUDMXATFSA-N",
+        "smiles": "COc1c(C)c2c(c(O)c1C/C=C(\\C)CCC(=O)O)C(=O)OC2"
+      }
+    ],
+    "data/raw/npclassifier.tsv": [
+      {
+        "standard_inchi_key": "HPNSFSBZBAHARI-RUDMXATFSA-N",
+        "smiles": "COC1=C(C\\C=C(/C)CCC(O)=O)C(O)=C2C(=O)OCC2=C1C",
+        "pathway_results": "Polyketides",
+        "superclass_results": "Cyclic polyketides",
+        "class_results": "Phthalide derivatives",
+        "is_glycoside": "false",
+        "model_version": "npclassifier.gnps2.org@2026-09-07"
+      },
+      {
+        "standard_inchi_key": "IKMDAJQFLYGHII-UHFFFAOYSA-N",
+        "smiles": "Cc1c(c(n2c(cnc2c1Br)CSCCO)C)Br",
+        "pathway_results": "Alkaloids",
+        "superclass_results": "",
+        "class_results": "",
+        "is_glycoside": "false",
+        "model_version": "npclassifier.gnps2.org@2026-09-07"
+      }
+    ],
+    "data/natural_products/PATHS.tsv": [
+      {
+        "identifier": "CHEBI:168396",
+        "np_pathway": "POLYKETIDES",
+        "slug": "mycophenolic-acid",
+        "path": "data/natural_products/polyketides/mycophenolic-acid.yaml"
+      },
+      {
+        "identifier": "naturalproductmech:mibig-1e0dcc87ee",
+        "np_pathway": "ALKALOIDS",
+        "slug": "mycophenolic-acid-2",
+        "path": "data/natural_products/alkaloids/mycophenolic-acid-2.yaml"
+      }
+    ],
+    "curation/mibig_structure_corrections.tsv": [],
+    "curation/mibig_locus_evidence_overrides.tsv": []
+  },
+  "taxonomy": [
+    "id: NCBITaxon:5082\nname: Penicillium roqueforti\n",
+    "id: NCBITaxon:1365484\nname: Penicillium roqueforti FM164\n"
+  ]
+}

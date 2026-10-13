@@ -1,0 +1,33 @@
+{
+  "targets": [
+    {
+      "target_id": "naturalproductmech:mibig-0ed362dd75",
+      "path": "data/natural_products/alkaloids/2-methylisoborneol-2.yaml",
+      "label": "2-methylisoborneol",
+      "record_class": "NaturalProductRecord",
+      "kind": "generated",
+      "owner_paths": [
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/mibig_compounds.tsv",
+          "role": "Imported source chemistry and cluster claims"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/extract_mibig.py",
+          "role": "MIBiG source extraction"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/seed_from_sources.py",
+          "role": "Structure-key harmonization and source grading"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_structure_corrections.tsv",
+          "role": "Potential guarded correction route only after structure identity is established"
+        }
+      ]
+    }
+  ]
+}

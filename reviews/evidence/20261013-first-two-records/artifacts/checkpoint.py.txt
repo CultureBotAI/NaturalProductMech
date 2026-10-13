@@ -1,0 +1,91 @@
+from collections import defaultdict, Counter
+from copy import deepcopy
+import json
+import subprocess
+from pathlib import Path
+
+import yaml
+
+from capture import ROOT, REPO, now, save, sha
+
+assert not (ROOT / 'review-campaign-checkpoint.json').exists()
+population = json.loads((ROOT / 'population.json').read_text())
+assert subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=REPO, text=True).strip() == population['base']
+assert not subprocess.check_output(['git', 'diff', '--name-only', population['base']], cwd=REPO, text=True).strip()
+actual = {str(p.relative_to(REPO)) for p in (REPO / 'data/natural_products').rglob('*.yaml')}
+assert actual == {r['path'] for r in population['records']}
+components = {c['path'] for r in population['records'] for c in r['graph_components']}
+assert components == {str(p.relative_to(REPO)) for p in (REPO / 'data/causal_graphs').rglob('*.yaml')}
+for row in population['records']:
+    assert sha(REPO / row['path']) == row['sha256'], row['path']
+    for component in row['graph_components']:
+        assert sha(REPO / component['path']) == component['sha256'], component['path']
+for name in ('qc', 'labels', 'draft-validation-v2', 'save-0', 'save-1', 'saved-check', 'saved-contract-tests'):
+    assert json.loads((ROOT / (name + '.receipt.json')).read_text())['exit_code'] == 0, name
+
+reviews = []
+by_target = {}
+for index in range(2):
+    objects = []
+    for line in (ROOT / ('save-' + str(index) + '.log')).read_text().splitlines():
+        try:
+            value = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if isinstance(value, dict) and 'review' in value:
+            objects.append(value)
+    receipt, = objects
+    path = Path(receipt['review'])
+    if not path.is_absolute():
+        path = REPO / path
+    review = yaml.safe_load(path.read_text())
+    assert review['scientific_review'] and review['completion'] == 'partial'
+    row = dict(review_id=review['review_id'], yaml=str(path), yaml_sha256=sha(path),
+        markdown=str(path.with_name('review.md')), markdown_sha256=sha(path.with_name('review.md')),
+        target_id=review['targets'][0]['target_id'], path=review['targets'][0]['path'],
+        verdict=review['verdict'], completion=review['completion'],
+        findings=[{k: f[k] for k in ('issue_key', 'severity', 'certainty', 'status')} for f in review['findings']])
+    reviews.append(row)
+    by_target[row['path']] = row
+
+records = deepcopy(population['records'])
+groups = defaultdict(list)
+for row in records:
+    groups[row['label'].casefold()].append(row)
+    if row['path'] in by_target:
+        row['review_state'] = 'partial_scientific_review_saved'
+        row['review_bundle'] = by_target[row['path']]['yaml']
+risks = [r['path'] for group in groups.values()
+         if len({r['key'].split('-')[0] for r in group}) > 1 for r in group]
+ordered = list(dict.fromkeys(risks + [r['path'] for r in records]))
+pending = [p for p in ordered if p not in by_target]
+assert len(pending) == 3113 and len(set(pending)) == 3113
+assert set(pending) | set(by_target) == actual
+prior = Path('/private/tmp/npmech-mycophenolic-sidechain-20261012-zirZ3S/protein-frontier-20261012-mycophenolic-sidechain-merged.json')
+assert sha(prior) == '810ac00abcf3732108d1fecc011918d748813874154203b090bd63a8be55a601'
+state = dict(objective='use the record review skill to review all the records in NaturalProductMech',
+    goal_status='active', turn_classification='progress: full population captured and two evidence-backed immutable partial scientific reviews saved',
+    base=population['base'], branch=subprocess.check_output(['git', 'branch', '--show-current'], cwd=REPO, text=True).strip(),
+    recorded_at=now(), population=3115, graph_components=len(components), scientific_review_bundles=2, partial_reviews=2,
+    completed_scientific_reviews=0, unassessed_records=3113, all_records_and_components_unchanged=True,
+    reviews=reviews, findings=dict(Counter(f['severity'] for r in reviews for f in r['findings'])),
+    records=records, pending_in_priority_order=pending,
+    priority_method='Same-label/different-InChIKey-connectivity candidates first, then every other record; candidate status is not a scientific finding. No sampling or scope reduction.',
+    required_work_remaining='Assess every remaining record claim by claim, inspect all referenced graph components, and save validated immutable reviews. Preserve the two source-access-limited partial assessments for follow-up; do not treat deterministic baseline checks as scientific coverage.',
+    inherited_scientific_access_stops=dict(checkpoint=str(prior), sha256=sha(prior), count=162, preserve_aliases=True),
+    new_unavailable_access_attempts=[
+        'https://mibig.secondarymetabolites.org/repository/BGC0001360/',
+        'https://doi.org/10.1021/cr990097b',
+        'https://mibig.secondarymetabolites.org/repository/BGC0000657/',
+        'https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9237955/property/InChIKey,MolecularFormula,IUPACName/JSON',
+        'https://www.ncbi.nlm.nih.gov/nuccore/HQ830028.1'],
+    new_access_attempts_note='Web tool Internal Error on each; no retries or alternate retrievals performed. Do not silently turn these gaps into verified claims.',
+    native_checks=dict(qc='554 passed,3 skipped; full QC passed', labels='499 warnings; configured check exit0',
+        source='See timestamped command receipts and logs in this workspace. Reuse only while relevant source bytes/base remain unchanged.'),
+    live_sessions=[], no_github_mutations=True, no_record_mutations=True,
+    do_not_replay=['inventory capture', 'completed native checks', 'exclusive evidence captures', 'save-0', 'save-1', 'this checkpoint'],
+    artifacts={str(p): sha(p) for p in sorted(ROOT.iterdir()) if p.is_file()})
+save('review-campaign-checkpoint.json', state)
+print(json.dumps({k: state[k] for k in ('goal_status', 'population', 'scientific_review_bundles', 'partial_reviews',
+    'completed_scientific_reviews', 'unassessed_records', 'findings', 'all_records_and_components_unchanged')}
+    | dict(checkpoint=str(ROOT / 'review-campaign-checkpoint.json'), sha256=sha(ROOT / 'review-campaign-checkpoint.json')), indent=2))

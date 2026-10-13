@@ -1,0 +1,20 @@
+import sys
+from capture import ROOT, run
+
+names = ('mycophenolic-acid-2', '2-methylisoborneol-2')
+if sys.argv[1] == 'validate':
+    sys.exit(run('draft-validation-v2', [sys.executable, 'scripts/record_review.py', 'validate',
+        *[str(ROOT / (name + '-review-v2.yaml')) for name in names]]))
+elif sys.argv[1] == 'save':
+    for index, name in enumerate(names):
+        result = run('save-' + str(index), [sys.executable, 'scripts/record_review.py', 'save',
+            '--content', str(ROOT / (name + '-review-v2.yaml'))])
+        if result:
+            sys.exit(result)
+elif sys.argv[1] == 'check':
+    result = run('saved-check', [sys.executable, 'scripts/record_review.py', 'check', '--require-reviews'])
+    if result:
+        sys.exit(result)
+    sys.exit(run('saved-contract-tests', [sys.executable, '-m', 'pytest', '-q', 'tests/test_record_review_contract.py']))
+else:
+    raise ValueError(sys.argv[1])

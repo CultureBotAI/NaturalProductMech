@@ -1,0 +1,28 @@
+import csv
+import json
+import sys
+from capture import ROOT, REPO, now, save, run
+
+KEY = 'MBPWQYMDPQWNIL-RYUDHWBXSA-N'
+result = dict(accessed_at=now(), records={})
+queries = {
+    'data/raw/mibig_compounds.tsv': lambda r: r['mibig_accession'] == 'BGC0000657',
+    'data/raw/npclassifier.tsv': lambda r: r['standard_inchi_key'] == KEY,
+    'data/raw/chebi_structures.tsv': lambda r: r.get('chebi_id') == 'CHEBI:61987',
+    'data/raw/taxon_groups.tsv': lambda r: r.get('taxon_id') in ('NCBITaxon:1002505', 'NCBITaxon:5082', 'NCBITaxon:1365484'),
+    'data/natural_products/PATHS.tsv': lambda r: '2-methylisoborneol' in str(r),
+    'curation/mibig_structure_corrections.tsv': lambda r: 'BGC0000657' in str(r),
+    'curation/mibig_locus_evidence_overrides.tsv': lambda r: 'BGC0000657' in str(r),
+}
+for path, match in queries.items():
+    with (REPO / path).open() as stream:
+        result['records'][path] = [r for r in csv.DictReader(stream, delimiter='\t') if match(r)]
+result['taxonomy'] = [block for block in (REPO / 'data/raw/corpus_taxa.obo').read_text().split('\n[Term]\n')
+                      if '\nid: NCBITaxon:1002505\n' in '\n' + block]
+save('second-local-source-rows.json', result)
+print(json.dumps(result, indent=2), flush=True)
+run('second-ignored-inclusive-search', ['rg', '--hidden', '--no-ignore', '-l', '-i',
+    'MBPWQYMDPQWNIL|BGC0000657|naturalproductmech:mibig-0ed362dd75|2-methylisoborneol', '.',
+    '-g', '!**/.git/**', '-g', '!**/.venv/**', '-g', '!**/__pycache__/**'])
+sys.exit(run('second-strict', [sys.executable, 'scripts/validate_strict.py',
+    'data/natural_products/alkaloids/2-methylisoborneol-2.yaml', '--out', str(ROOT / 'second-strict.tsv')]))

@@ -1,0 +1,214 @@
+import json
+import shlex
+from copy import deepcopy
+from datetime import datetime
+from pathlib import Path
+
+import yaml
+
+from capture import ROOT, REPO, PROJECT, now, sha, save
+
+def load(name):
+    return json.loads((ROOT / name).read_text())
+
+
+def evidence(eid, kind, reference, locator, support, summary, **extra):
+    return dict(evidence_id=eid, kind=kind, reference=reference, locator=locator,
+                accessed_at=now(), support=support, summary=summary, **extra)
+
+
+def assessment(aid, area, topic, outcome, summary, refs, target, **extra):
+    return dict(assessment_id=aid, area=area, topic=topic, outcome=outcome,
+                summary=summary, target_ids=[target], evidence_ids=refs, **extra)
+
+
+def command_check(name, target, summary, required=True):
+    receipt = load(name + '.receipt.json')
+    return dict(check_id=name, name=name, status='passed' if receipt['exit_code'] == 0 else 'failed',
+        required=required, summary=summary, target_ids=[target], command=shlex.join(receipt['command']),
+        exit_code=receipt['exit_code'], scope_note='Actual command log: ' + receipt['log'] + '; SHA-256 ' + receipt['sha256'])
+
+
+def make(which):
+    first = which == 'mycophenolic-acid-2'
+    inspection = load('inspect-ready.log' if first else 'second-inspect.log')
+    target = inspection['targets'][0]
+    tid, path = target['target_id'], target['path']
+    source = deepcopy(inspection['source'])
+    if first:
+        # The second canonical inspection captured this additional shared input before assessment.
+        source['inputs'] += [deepcopy(i) for i in load('second-inspect.log')['source']['inputs']
+                             if i['path'] == 'data/raw/taxon_groups.tsv']
+    owners = target['owner_paths']
+    source_owners = [o for o in owners if o['path'] != 'curation/mibig_structure_corrections.tsv']
+    aux = next(r for r in load('chemistry-auxiliary.json')['rows'] if r['path'] == path)
+    assert aux['inchi_matches'] and aux['key_matches']
+    full = yaml.safe_load((REPO / path).read_text())
+    assert not full.get('causal_graphs') and not full.get('causal_graph_refs')
+    key = full['chemical_structure']['standard_inchi_key']
+    bgc = 'BGC0001360' if first else 'BGC0000657'
+    ontology = 'CHEBI:168396' if first else 'CHEBI:61987'
+    source_rows = 'local-source-rows.json' if first else 'second-local-source-rows.json'
+    search = 'ignored-inclusive-identity-search' if first else 'second-ignored-inclusive-search'
+    checks = [
+        command_check('inspect-ready' if first else 'second-inspect', tid, 'Canonical target and context hash capture succeeded before assessment.'),
+        command_check('target-strict' if first else 'second-strict', tid, 'Closed-schema validation passed for this exact owner, including graph-reference resolution.'),
+        command_check('complete-view', tid, 'The native read_natural_product reader resolves the complete owner view; both selected records have zero graphs and zero component references.'),
+        command_check('qc', tid, 'Full-corpus QC: lint, governed-file sync, documentation, provenance, source queue, tests, strict schema, page freshness, offline reproduction, corpus integrity and report.'),
+        command_check('labels', tid, 'Full-corpus configured ontology/label check. Minted identifiers and database namespaces remain adapter-skipped; this is not chemical identity proof.'),
+        command_check('review-baseline', tid, 'Baseline shared checker found zero structured reviews, including hidden/ignored review paths. Zero is missing coverage, not a pass.'),
+        command_check('review-queue', tid, 'The native exhaustive queue was generated for prioritization; it is not scientific coverage.'),
+        command_check(search, tid, 'Ignored-inclusive identifier/label/slug search; no inference from Git-aware search alone.'),
+        dict(check_id='chemical-identity', name='Name versus exact structure', status='failed', required=True,
+             summary='The named natural product and the stored molecular constitution disagree; see F1.', target_ids=[tid], evidence_ids=['record', 'chebi']),
+        dict(check_id='source-currentness', name='Live source and identifier verification', status='unavailable', required=True,
+             summary=('MIBiG BGC0001360 and DOI 10.1021/cr990097b were inaccessible. HG792019.1 resolved to FM164, but the abbreviated display did not expose locus features.' if first else
+                      'MIBiG BGC0000657, PubChem CID9237955 property lookup, and HQ830028.1 were inaccessible. Their current contents were not inferred from the seeded YAML.'),
+             target_ids=[tid], evidence_ids=['access-limits']),
+        dict(check_id='imodulondb', name='Structured expression-module applicability', status='not_applicable', required=False,
+             summary='No iModulon, regulator, gene-level expression dataset or protein example is asserted in this target. Local MIBiG source rows were checked; expression modules cannot resolve the chemical identity conflict.', target_ids=[tid]),
+        dict(check_id='auxiliary-chemistry', name='Auxiliary chemical serialization consistency', status='passed', required=False,
+             summary='Cached RDKit 2024.03.5 reproduces the stored InChI and InChIKey; this is not the project-pinned 2026.3.5 extractor and is not a native gate.',
+             target_ids=[tid], exit_code=0,
+             command='env PYTHONPATH=/Users/marcin/.cache/uv/archive-v0/L63k5B2U7AExer7XjnGMw/lib/python3.12/site-packages /Users/marcin/.local/share/uv/python/cpython-3.12.9-macos-x86_64-none/bin/python3.12 ' + str(ROOT / 'chemistry_auxiliary.py'),
+             evidence_ids=['chemistry']),
+    ]
+    if first:
+        checks.append(command_check('inspect', tid, 'Initial input-capture attempt failed because the inventory had not yet written its target file; no assessment relied on this attempt. The subsequent inspect-ready check succeeded.', False))
+    for name in ('qc', 'labels'):
+        assert load(name + '.receipt.json')['exit_code'] == 0
+    search_receipt = load(search + '.receipt.json')
+    ev = [
+        evidence('record', 'record_content', path, 'Entire owner YAML, all fields and both curation events', 'supports',
+            'Exact minted record read in full. No inline graphs or component references. This evidence establishes what is asserted, not whether the science is correct.',
+            snapshot_sha256=sha(REPO / path)),
+        evidence('source-rows', 'database', 'data/raw/mibig_compounds.tsv', bgc + ', compound_index=1; joined classification, taxonomy and filing rows', 'supports',
+            'Complete parsed source rows and applicable maintained correction tables were inspected. Chemistry and source grades reproduce the imported snapshot; no correction/override row targets this accession. Local extract: ' + str(ROOT / source_rows),
+            snapshot_sha256=sha(REPO / 'data/raw/mibig_compounds.tsv')),
+        evidence('chemistry', 'validation', str(ROOT / 'chemistry-auxiliary.json'), path, 'supports',
+            f"Auxiliary RDKit 2024.03.5 calculated formula {aux['formula']}, exact stored InChI/Key, and {aux['undefined_tetrahedral_centers']} undefined tetrahedral centers. Internal consistency does not authenticate the label.",
+            snapshot_sha256=sha(ROOT / 'chemistry-auxiliary.json')),
+        evidence('chebi', 'authority', 'https://www.ebi.ac.uk/chebi/' + ontology, 'Name, definition, formula, SMILES, InChI and InChIKey', 'refutes',
+            ('Mycophenolic acid is C17H20O6 with key HPNSFSBZBAHARI-RUDMXATFSA-N. This is constitutionally different from the stored C12H14Br2N2OS, not a stereochemical or protonation variant.' if first else
+             '2-Methylisoborneol is C11H20O, key LFYXNXGVLGKVCJ-FBIMIBRVSA-N for the specified stereoisomer. The stored C15H16BrN3O4S is a different constitution; neither unspecified stereochemistry nor protonation explains it.')),
+        evidence('local-search', 'search', PROJECT + '@' + source['git_revision'], 'Full worktree file-content search plus structured source-table selectors', 'context_only',
+            'The same label has another structure owner. Only its locator/key was inspected for collision handling; the other owner is not counted as reviewed.',
+            search_scope=shlex.join(search_receipt['command']) + '. Hidden and ignored project content included; only .git internals, .venv dependencies and __pycache__ bytecode excluded. Source TSVs parsed in full for matching keys/accessions. Saved search log: ' + search_receipt['log']),
+        evidence('ownership', 'record_content', 'docs/CURATION.md', 'MIBiG structure corrections; locus-evidence overrides; generated versus curator ownership', 'supports',
+            'Fixes belong in implemented maintained inputs and tested source transforms, never generated pages or direct owner YAML edits. decisions.tsv is reserved, not consumed. The narrow structure-correction table rejects occupied destinations.',
+            snapshot_sha256=sha(REPO / 'docs/CURATION.md')),
+        evidence('qc', 'validation', str(ROOT / 'qc.log'), 'Complete current-run log', 'supports',
+            'Native deterministic checks passed on the unchanged corpus. The scientific identity defect survives them.', snapshot_sha256=sha(ROOT / 'qc.log')),
+        evidence('labels', 'validation', str(ROOT / 'labels.log'), 'Full configured ontology/label results and warning report', 'context_only',
+            'The minted identity is intentionally not ontology-resolved. Successful configured correspondence checks do not validate its compound name.', snapshot_sha256=sha(ROOT / 'labels.log')),
+        evidence('access-limits', 'search', 'https://mibig.secondarymetabolites.org/repository/' + bgc + '/', 'Direct official URL checks through web tool', 'unknown',
+            ('Direct BGC0001360 and doi.org/10.1021/cr990097b requests returned Internal Error; no source text was inspected there.' if first else
+             'Direct BGC0000657, PubChem CID9237955 property endpoint and NCBI HQ830028.1 requests returned Internal Error; no source content was inferred.'),
+            search_scope='One direct attempt per named resource on 2026-10-13. No retries or alternate copies. Inherited 162 scientific source stops and aliases were consulted before research; no stopped paper was reopened.'),
+    ]
+    if first:
+        ev.extend([
+            evidence('occurrence-source', 'database', 'data/raw/lotus_occurrences.tsv', 'IKMDAJQFLYGHII-UHFFFAOYSA-N, NCBITaxon:5082, DOI:10.1371/JOURNAL.PONE.0147047', 'context_only',
+                'The imported triple associates the wrong key with P. roqueforti and this DOI; structure Wikidata Q105114740. Its presence is not independent confirmation of the compound identity.', snapshot_sha256=sha(REPO / 'data/raw/lotus_occurrences.tsv')),
+            evidence('paper', 'primary_source', 'https://doi.org/10.1371/journal.pone.0147047', 'Introduction; fungal strains; extraction/HPLC methods; Results through gene-silencing context', 'refutes',
+                'The study concerns phthalide/terpenoid mycophenolic acid, tested CECT 2905 (ATCC 10110), and used a pure MPA standard for HPLC. It does not authenticate the brominated record or establish equivalent experiments in FM164.', quote='CECT 2905 (ATCC 10110)'),
+            evidence('genome', 'database', 'https://www.ncbi.nlm.nih.gov/nuccore/HG792019.1', 'Displayed accession and scaffold title; sequence/features abbreviated', 'partial',
+                'HG792019.1 resolves to Penicillium roqueforti FM164 scaffold ProqFM164S05. The displayed page does not verify the recorded interval 1294894..1318068 or its product.')])
+    else:
+        ev.extend([
+            evidence('pubmed', 'database', 'https://pubmed.ncbi.nlm.nih.gov/21490938/', 'Bibliographic identity and DOI link', 'supports',
+                'PMID21490938 resolves to Wang et al. 2011 and DOI10.1371/journal.pone.0018665.'),
+            evidence('paper', 'primary_source', 'https://doi.org/10.1371/journal.pone.0018665', 'Results: isolation and GC-MS, light response; Discussion; Materials and Methods', 'partial',
+                'The paper identifies ordinary 2-MIB in dqh15 against a standard, assigns HQ830028 to its operon, and measures light-dependent transcripts. It does not present paired product measurements for that expression series; direct gene-function experiments are explicitly absent.',
+                quote='although direct evidences from gene mutations or enzymatic experiments are still lacking.')])
+
+    assessments = [
+        assessment('identity', 'identity', 'Exact named chemical form', 'concern', 'F1: the molecular constitution does not match the label or its cited biological context. Minting avoids a false ChEBI link but does not repair the name/structure conflict.', ['record', 'chebi', 'source-rows', 'paper'], tid),
+        assessment('structure', 'consistency', 'SMILES, InChI, key and stereochemical encoding', 'supported', 'The stored serializations agree in the auxiliary calculation, with no undefined tetrahedral centers detected. No formula/charge/mass values are asserted in this YAML. Experimental identity remains refuted by F1.', ['record', 'chemistry'], tid),
+        assessment('equivalence', 'grounding', 'Cross-references, parents, congeners and same-name neighbors', 'unknown' if not first else 'concern',
+            ('No xrefs, parent or congener claims are asserted. The intended CHEBI:168396 structure already has a separate owner; do not merge distinct structures or overwrite its existing graphs.' if first else
+             'The sole xref pubchem:9237955 could not be resolved. The other same-name owner has an unspecified-stereo key; it is not automatically equivalent to ChEBI\'s stereospecific entry.'), ['record', 'local-search', 'chebi'], tid),
+        assessment('classification', 'consistency', 'Computed filing versus asserted BGC class and origin', 'supported',
+            'ALKALOIDS matches the pinned NPClassifier row for the stored input; the source BGC class remains a separate assertion. The filing mechanism is faithful, but NATURAL_PRODUCT membership is scientifically compromised by F1.', ['record', 'source-rows', 'qc'], tid),
+        assessment('taxa', 'grounding', 'Taxon identifiers, named strain and broad lineage facet', 'supported',
+            ('NCBITaxon:5082 and NCBITaxon:1365484 match the pinned species and FM164 labels, respectively; FUNGAL matches the pinned lineage table. Label validity does not prove production.' if first else
+             'NCBITaxon:1002505 matches Pseudanabaena sp. dqh15 in the pinned taxonomy; CYANOBACTERIAL matches its lineage row. This checks taxon identity, not the claimed chemical product.'), ['record', 'source-rows', 'labels'], tid),
+        assessment('producer-cluster', 'evidence', 'Producer versus locus claim, source version and grade', 'unknown' if first else 'concern',
+            ('SOURCE_ASSERTION and CLUSTER_UNSTATED correctly preserve the raw version-3 method absence. The bioactivity-level citation is explicitly labelled DATABASE_ASSERTION, not an experiment. Current active status and compound-specific applicability remain unverified.' if first else
+             'Version-5 BGC_CORRELATED/CLUSTER_CORRELATED faithfully reproduce the imported method. F2 questions whether the attached evidence supports expression-production correlation; it is not a claim that correlation implies native necessity.'), ['source-rows', 'record', 'paper', 'access-limits'], tid,
+            dimensions=[dict(name='source_entry_version', value='3' if first else '5', definition='Version retained in the committed MIBiG compound row, not a claim about the current live database', evidence_ids=['source-rows'])]),
+        assessment('occurrence', 'evidence', 'Occurrence versus biosynthesis and exact compound support', 'concern' if first else 'not_applicable',
+            ('The LOTUS occurrence stays separate from production, but its paper does not support occurrence of this brominated structure. The species assertion is not evidence for an FM164 experiment.' if first else
+             'No occurrence objects are asserted; no occurrence-to-producer promotion is introduced by this review.'), ['record', 'paper'] if first else ['record'], tid),
+        assessment('mechanism-activity', 'completeness', 'Pathway, all graphs, targets, activities and bioactivity summary', 'not_applicable',
+            'The complete raw owner contains no pathway, inline graph, graph references, molecular target, bioactivity observation or activity-summary assertion. Optional empty slots are not findings; mechanism expansion must wait for exact identity.', ['record'], tid),
+        assessment('other-claims', 'completeness', 'Datasets, cross-corpus links, clinical status and discussions', 'not_applicable',
+            'No dataset, related-record link, clinical-status claim or discussion is asserted. Genome metadata belongs to the BGC object and is assessed separately. No bibliography or clinical inference is manufactured.', ['record'], tid),
+        assessment('history', 'provenance', 'Generated ownership, status and audit trail', 'supported',
+            'Both events are seed-from-sources events and native status remains SEEDED. Reproduction/strict/history coverage in QC establishes structural provenance, not literature review. This report changes neither history nor status.', ['record', 'ownership', 'qc'], tid),
+    ]
+    findings = [dict(finding_id='F1', issue_key='mibig-' + bgc + '-compound-1-wrong-constitution', category='identity',
+        severity='blocker', status='open', certainty='confirmed', title='The structure is not the natural product named by the record',
+        description=(f"The stored {key} ({aux['formula']}) is a chemically different constitution from the named compound. The committed MIBiG row already contains the mismatch. "
+            + ('The LOTUS occurrence additionally attaches the same wrong key to a paper about genuine mycophenolic acid. ' if first else '')
+            + 'A generated record can be byte-reproducible while denoting the wrong molecule. Producer, BGC and natural-origin claims must not be transferred across the identity conflict.'),
+        target_ids=[tid], field_paths=['label', 'chemical_structure', 'biosynthesis_origin', 'producer_organisms', 'biosynthetic_gene_clusters'] + (['occurrences'] if first else ['xrefs']),
+        evidence_ids=['record', 'source-rows', 'chemistry', 'chebi', 'paper'] + (['occurrence-source'] if first else []),
+        rule_id='review-checklist:Identity; docs/HARMONIZATION.md:The unit of the corpus is a structure',
+        native_severity='blocker', normalization_reason='Wrong identity makes the record denote a different molecule, matching the shared blocker definition.', owner_paths=source_owners)]
+    actions = [dict(action_id='A1', description=(
+        'Resolve the upstream compound identity and audit every attached claim. Correct or withhold the bad maintained source assertion through an implemented, tested route; do not hand-edit generated YAML or use reserved decisions.tsv. '
+        + ('CHEBI:168396 already has an occupied owner, so the narrow REPLACE_WITH_CHEBI table must continue refusing a collision. Any consolidation needs a separately reviewed ownership/history/component migration and slug retirement.' if first else
+           'Resolve the intended stereochemical form and PubChem xref independently before selecting a destination. Do not equate the existing unspecified-stereo owner with the stereospecific ChEBI entry by label alone.')),
+        finding_ids=['F1'], target_ids=[tid], owner_paths=owners, generator='scripts/seed_from_sources.py via the documented guarded curation/migration workflow',
+        acceptance_checks=[
+            'Inspected primary/authority evidence establishes one exact compound form and every retained source claim matches it.',
+            'Regression tests cover this accession and reject name-only merging or transfer of old-key occurrences, assays, graphs or history.',
+            'Run the documented seed dry run and one-record canary before authorized guarded changes; then strict validation, verify-corpus, verify-reproduction, label checks and full QC pass.',
+            'Keep the wrong and intended structures distinct until an explicitly audited migration accounts for every affected owner and published slug.'])]
+    if not first:
+        override_owner = dict(repository=PROJECT, path='curation/mibig_locus_evidence_overrides.tsv', role='Implemented source-specific evidence correction with provenance checks')
+        findings.append(dict(finding_id='F2', issue_key='mibig-BGC0000657-expression-production-evidence', category='evidence',
+            severity='major', status='open', certainty='provisional', title='The cited study does not establish the imported expression-production correlation',
+            description='The inspected methods/results measure transcripts under light treatments, not matched product abundance. Thus the cited experiment does not establish the imported correlation method. This concern remains provisional pending the complete live entry and any additional supporting evidence.',
+            target_ids=[tid], field_paths=['producer_organisms[0].evidence_basis', 'biosynthetic_gene_clusters[0].locus_evidence_methods', 'biosynthetic_gene_clusters[0].link_evidence_basis'],
+            evidence_ids=['record', 'source-rows', 'paper'], rule_id='review-checklist:Producer organisms; Gene clusters',
+            native_severity='major', normalization_reason='If confirmed, an unsupported evidence tier affects both producer and locus claims, independently of the wrong chemical identity.',
+            owner_paths=[override_owner] + source_owners))
+        actions.append(dict(action_id='A2', description='Check the complete locus evidence for matched production/transcript data. If unsupported, apply an appropriately pinned evidence-method correction through the implemented override path; preserve the distinction between production, predicted locus assignment, and direct function.',
+            finding_ids=['F2'], target_ids=[tid], owner_paths=[override_owner] + source_owners, depends_on=['A1'], generator='scripts/seed_from_sources.py',
+            acceptance_checks=['Inspect any additional cited source before treating the imported method as supported.',
+                'Test the resulting producer and cluster grades separately; never upgrade homology to native characterization.',
+                'After any separately authorized correction, append proper curation provenance and pass strict validation, reproduction and full QC.']))
+    finished = now()
+    stamp = datetime.fromisoformat(finished.replace('Z', '+00:00')).strftime('%Y%m%dT%H%M%SZ')
+    review = dict(schema_version='1.0.0', review_id=stamp + '-' + which, kind='record', repository=PROJECT,
+        title=target['label'] + ': exact-structure and source-support review (' + bgc + ')',
+        started_at='2026-10-13T04:17:51Z' if first else '2026-10-13T04:25:19Z', finished_at=finished,
+        reviewer=dict(identity='Codex', kind='agent', independence='self_review',
+            independence_basis='Same assistant/thread previously curated this repository; no claim of independent review. These two source-owned target records were not changed during this review.'),
+        skill='.claude/skills/review-yaml-record/SKILL.md', completion='partial', verdict='needs_curation', scientific_review=True,
+        summary=('A confirmed constitutional identity error survives deterministic validation. The full owner was read and existing claims assessed; unavailable source verification prevents a completed review. '
+                 + ('One blocker finding.' if first else 'One blocker and one provisional major evidence-tier finding.')),
+        source=source, scope=dict(description='One exact record, including the full owner and graph-reference check. This is one observation in an exhaustive 3115-record campaign, not a sample-based corpus verdict.',
+            selection='Exact path and minted identifier from the ignored-inclusive population inventory; prioritized for same-name/different-constitution risk.',
+            coverage='full', population_size=1, reviewed_target_ids=[tid]), targets=[target], checks=checks, evidence=ev,
+        assessments=assessments, findings=findings, actions=actions,
+        limitations=[
+            'Required source-currentness checks are unavailable as detailed above; partial completion is deliberate and no scientific pass is claimed.',
+            'The project-pinned RDKit 2026.3.5 was unavailable locally/offline. The explicitly versioned 2024.03.5 calculation is auxiliary only, not a replacement native gate.',
+            'All 3115 records remain in the campaign. The other 3114 records are outside this single-record review; referenced same-name neighbors are not counted as scientifically reviewed.',
+            'No paid providers, source retries, record corrections, status promotions, GitHub issues or other publication actions were performed. Findings/actions are proposed curation, not completed fixes.',
+        ], notes=['The original zero-review baseline and the population hashes are retained in ' + str(ROOT) + '. Existing ad hoc or generated review-queue content is not structured scientific review.',
+                  'All native checks ran against base ' + source['git_revision'] + '; external evidence was inspected on 2026-10-13.'],
+        tags=['all-records-campaign', 'identity-conflict', 'source-owned', 'partial-source-access'])
+    for item in source['inputs']:
+        assert sha(REPO / item['path']) == item['sha256'], item['path']
+    with (ROOT / (which + '-review.yaml')).open('x') as stream:
+        yaml.safe_dump(review, stream, sort_keys=False, allow_unicode=False, width=100)
+    print(json.dumps(dict(draft=str(ROOT / (which + '-review.yaml')), findings=len(findings), completion='partial')), flush=True)
+
+
+if __name__ == '__main__':
+    for which in ('mycophenolic-acid-2', '2-methylisoborneol-2'):
+        make(which)

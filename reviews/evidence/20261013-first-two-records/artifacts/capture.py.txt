@@ -1,0 +1,106 @@
+import csv
+from collections import Counter
+from datetime import datetime, timezone
+import hashlib
+import json
+import os
+from pathlib import Path
+import subprocess
+import sys
+
+import yaml
+
+ROOT = Path(__file__).parent
+REPO = Path('/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech')
+PROJECT = 'CultureBotAI/NaturalProductMech'
+TARGET = 'data/natural_products/alkaloids/mycophenolic-acid-2.yaml'
+START = '2026-10-13T04:17:51Z'
+
+
+def now():
+    return datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z')
+
+
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def save(name, value):
+    with (ROOT / name).open('x') as stream:
+        json.dump(value, stream, indent=2)
+        stream.write('\n')
+
+
+def run(name, args):
+    assert not (ROOT / (name + '.receipt.json')).exists()
+    started = now()
+    with (ROOT / (name + '.log')).open('x') as stream:
+        result = subprocess.run(args, cwd=REPO, text=True, stdout=stream, stderr=subprocess.STDOUT)
+    receipt = dict(command=args, cwd=str(REPO), started_at=started, finished_at=now(),
+                   exit_code=result.returncode, log=str(ROOT / (name + '.log')),
+                   sha256=sha(ROOT / (name + '.log')))
+    save(name + '.receipt.json', receipt)
+    print(json.dumps(receipt), flush=True)
+    return result.returncode
+
+
+def inventory():
+    rows = []
+    for path in sorted((REPO / 'data/natural_products').rglob('*.yaml')):
+        doc = yaml.safe_load(path.read_text())
+        components = []
+        for graph_id in doc.get('causal_graph_refs', []):
+            component = REPO / 'data/causal_graphs' / doc['chemical_structure']['standard_inchi_key'] / (graph_id + '.yaml')
+            components.append(dict(path=str(component.relative_to(REPO)), sha256=sha(component)))
+        rows.append(dict(path=str(path.relative_to(REPO)), identifier=doc['identifier'], label=doc['label'],
+            sha256=sha(path), pathway=doc['np_pathway'], status=doc['curation_status'],
+            key=doc['chemical_structure']['standard_inchi_key'], bytes=path.stat().st_size,
+            graph_components=components, review_state='not_scientifically_reviewed'))
+    value = dict(started_at=START, captured_at=now(), objective='Review all current NaturalProductMech records using the record review skill',
+        base=subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=REPO, text=True).strip(),
+        enumeration='Path.rglob on the full data/natural_products tree, including hidden and gitignored paths; all referenced components hashed',
+        population=len(rows), pathways=dict(Counter(r['pathway'] for r in rows)), records=rows,
+        completed_scientific_reviews=0, not_a_scientific_review=True)
+    save('population.json', value)
+    owners = [dict(repository=PROJECT, path=p, role=r) for p, r in [
+        ('data/raw/mibig_compounds.tsv', 'Imported MIBiG compound chemistry and cluster assertions'),
+        ('data/raw/lotus_occurrences.tsv', 'Imported structure-organism-publication occurrence triples'),
+        ('scripts/extract_mibig.py', 'MIBiG extraction'), ('scripts/extract_lotus.py', 'LOTUS extraction'),
+        ('scripts/seed_from_sources.py', 'Generated record harmonization'),
+        ('curation/mibig_structure_corrections.tsv', 'Narrow correction route, excludes occupied destination keys')]]
+    row = next(r for r in rows if r['path'] == TARGET)
+    save('targets.json', dict(targets=[dict(target_id=row['identifier'], path=TARGET,
+        label=row['label'], record_class='NaturalProductRecord', kind='generated', owner_paths=owners)]))
+    print(json.dumps({k: v for k, v in value.items() if k != 'records'}), flush=True)
+
+
+def inspect():
+    inputs = ['CLAUDE.md', 'docs/record-review-profile.md', 'docs/record-reviews.md',
+        '.claude/skills/review-yaml-record/SKILL.md', '.claude/skills/curate-yaml-record/references/review-checklist.md',
+        'docs/CURATION.md', 'docs/HARMONIZATION.md', 'conf/record_review.yaml', 'schema/record_review.yaml',
+        'src/naturalproductmech/schema/naturalproductmech.yaml', 'conf/producer_evidence.tsv',
+        'conf/id_label_targets.yaml', 'data/raw/MANIFEST.yaml', 'data/raw/mibig_compounds.tsv',
+        'data/raw/lotus_occurrences.tsv', 'data/raw/chebi_structures.tsv', 'data/raw/corpus_taxa.obo',
+        'data/raw/npclassifier.tsv', 'data/natural_products/PATHS.tsv',
+        'curation/mibig_structure_corrections.tsv', 'curation/mibig_locus_evidence_overrides.tsv',
+        'scripts/extract_mibig.py', 'scripts/extract_lotus.py', 'scripts/seed_from_sources.py']
+    args = [sys.executable, 'scripts/record_review.py', 'inspect', '--targets', str(ROOT / 'targets.json')]
+    for path in inputs:
+        assert (REPO / path).is_file(), path
+        args.extend(['--input', path])
+    return run('inspect-ready', args)
+
+
+def baseline():
+    checks = [
+        ('review-baseline', [sys.executable, 'scripts/record_review.py', 'check']),
+        ('review-queue', [sys.executable, 'scripts/curation_worklist.py', '--review-records', '--limit', '0', '--tsv', str(ROOT / 'review-queue.tsv')]),
+        ('target-strict', [sys.executable, 'scripts/validate_strict.py', TARGET, '--out', str(ROOT / 'target-strict.tsv')]),
+        ('qc', [sys.executable, 'scripts/run_qc.py']),
+    ]
+    for name, args in checks:
+        run(name, args)
+
+
+if __name__ == '__main__':
+    sys.exit({'inventory': inventory, 'inspect': inspect, 'baseline': baseline}[sys.argv[1]]())

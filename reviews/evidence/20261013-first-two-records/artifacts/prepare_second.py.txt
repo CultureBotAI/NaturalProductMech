@@ -1,0 +1,19 @@
+import json
+import sys
+from capture import ROOT, REPO, PROJECT, save, run
+
+population = json.loads((ROOT / 'population.json').read_text())
+path = 'data/natural_products/alkaloids/2-methylisoborneol-2.yaml'
+row = next(r for r in population['records'] if r['path'] == path)
+owners = [dict(repository=PROJECT, path=p, role=r) for p, r in [
+    ('data/raw/mibig_compounds.tsv', 'Imported source chemistry and cluster claims'),
+    ('scripts/extract_mibig.py', 'MIBiG source extraction'),
+    ('scripts/seed_from_sources.py', 'Structure-key harmonization and source grading'),
+    ('curation/mibig_structure_corrections.tsv', 'Potential guarded correction route only after structure identity is established')]]
+save('second-targets.json', dict(targets=[dict(target_id=row['identifier'], path=path,
+    label=row['label'], record_class='NaturalProductRecord', kind='generated', owner_paths=owners)]))
+old = json.loads((ROOT / 'inspect-ready.receipt.json').read_text())['command']
+args = old[:]
+args[args.index('--targets') + 1] = str(ROOT / 'second-targets.json')
+args.extend(['--input', 'data/raw/taxon_groups.tsv'])
+sys.exit(run('second-inspect', args))
