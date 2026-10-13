@@ -39,6 +39,7 @@ bioactivities:
   - reference: pubchem.aid:1919625
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1919625, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.009
   units: uM
@@ -49,6 +50,7 @@ bioactivities:
   - reference: pubchem.aid:1919625
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1919625, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.03
   units: uM
@@ -107,3 +109,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:43:10Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

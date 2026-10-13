@@ -106,6 +106,7 @@ bioactivities:
   - reference: pubchem.aid:1919245
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1919245, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.187
   units: uM
@@ -117,6 +118,7 @@ bioactivities:
   - reference: pubchem.aid:1919245
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1919245, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.5
   units: uM
@@ -337,3 +339,7 @@ curation_history:
   changes: Added the evidence-backed AscJ terminal ascofuranone biosynthetic pathway
     step and BIOSYNTHESIS causal graph grounded to UniProtKB:A0A455R5K2.
   llm_assisted: true
+- timestamp: '2026-10-13T07:43:11Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

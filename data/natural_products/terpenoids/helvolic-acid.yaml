@@ -37,7 +37,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1845223
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1845223, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1845223, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 3.273
   units: uM
 - assay: Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive
@@ -45,7 +48,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963823
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 1.2612
   units: uM
 - assay: Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive
@@ -53,7 +59,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963823
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 1.2612
   units: uM
   target_enzyme: UniProtKB:P43405
@@ -143,3 +152,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:43:17Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

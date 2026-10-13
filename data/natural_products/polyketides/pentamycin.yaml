@@ -25,26 +25,33 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1845192
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1845192, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1845192, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 22.3872
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione
     Peroxidase 4 (GPX4)
   evidence:
   - reference: pubchem.aid:1845192
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1845192, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1845192, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 22.3872
   units: uM
   target_enzyme: UniProtKB:P36969
-  activity_class: ENZYME_INHIBITOR
 - assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
     factor 4 (EPAC2)
   evidence:
   - reference: pubchem.aid:1645887
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 1.122
   units: uM
 - assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
@@ -52,7 +59,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645887
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 1.122
   units: uM
   target_enzyme: UniProtKB:Q8WZA2
@@ -61,7 +71,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645886
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645886, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645886, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 3.1623
   units: uM
 - assay: Validation qHTS for antagonist of cAMP-regulated guanine nucleotide exchange
@@ -69,7 +82,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645886
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645886, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645886, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 3.1623
   units: uM
   target_enzyme: UniProtKB:Q8WZA2
@@ -78,9 +94,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:743075
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 743075, deposited by 824; assay type Confirmatory.
-      Target accession AEP43755 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 743075, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency. Target accession AEP43755 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 15.089
   units: uM
 - assay: qHTS assay to identify small molecule antagonists of the androgen receptor
@@ -88,9 +106,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:743035
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 743035, deposited by 824; assay type Confirmatory.
-      Target accession AAI32976 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 743035, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession AAI32976
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.0076
   units: uM
 - assay: qHTS assay to identify small molecule antagonists of the thyroid receptor
@@ -98,16 +118,21 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:743064
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 743064, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 743064, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.266
   units: uM
 - assay: qHTS for Inhibitors of binding or entry into cells for Marburg Virus
   evidence:
   - reference: pubchem.aid:720532
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 720532, deposited by NCGC; assay type Confirmatory.
-      Target accession B45705 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 720532, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency. Target accession B45705 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 15.8489
   units: uM
   activity_class: ENZYME_INHIBITOR
@@ -176,3 +201,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:36:31Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

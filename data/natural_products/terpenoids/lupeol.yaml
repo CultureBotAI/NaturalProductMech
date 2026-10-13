@@ -286,6 +286,7 @@ bioactivities:
   - reference: pubchem.aid:1919462
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1919462, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: KI
   value: 1.5
   units: uM
@@ -295,6 +296,7 @@ bioactivities:
   - reference: pubchem.aid:1919462
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1919462, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: KI
   value: 2.5
   units: uM
@@ -356,3 +358,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:42:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

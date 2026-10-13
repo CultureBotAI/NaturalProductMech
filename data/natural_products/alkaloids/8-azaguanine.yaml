@@ -28,9 +28,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:624296
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_056979 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_056979
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.2909
   units: uM
 - assay: A quantitative high throughput screen for small molecules that induce DNA
@@ -38,9 +40,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:624297
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_056979 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_056979
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 14.581
   units: uM
 - assay: Confirmation and Secondary Assays for Modulators of Hemoglobin Beta Chain
@@ -48,9 +52,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1405
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1405, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_000509 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1405, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency. Target accession NP_000509 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 2.51189
   units: uM
 - assay: 'Counterscreen for activators of the function of SWI/SNF related, matrix
@@ -62,6 +68,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 686995, deposited by The Scripps Research Institute
       Molecular Screening Center; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: EC50
   value: 91.17
   units: uM
@@ -73,6 +80,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 489033, deposited by Burnham Center for Chemical Genomics;
       assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 2.56
   units: uM
@@ -85,10 +93,10 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 489035, deposited by Burnham Center for Chemical Genomics;
       assay type Confirmatory.
+  call: INACTIVE
   measurement_type: IC50
   value: 80.0
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: Dose response counterscreen of uHTS chemical inhibitors of T-cell specific
     antigen receptor-induced NF-kB activation in a HEK-293T cell line using a luminescence
     assay
@@ -97,10 +105,10 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 489041, deposited by Burnham Center for Chemical Genomics;
       assay type Confirmatory.
+  call: INACTIVE
   measurement_type: IC50
   value: 80.0
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: Dose response cytotoxicity of uHTS chemical inhibitors of T-cell specific
     antigen receptor-induced NF-kB activation in a HEK-293T cell line using a luminescence
     assay
@@ -109,16 +117,17 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 489026, deposited by Burnham Center for Chemical Genomics;
       assay type Confirmatory.
+  call: INACTIVE
   measurement_type: IC50
   value: 80.0
   units: uM
-  activity_class: CYTOTOXIC
 - assay: Luminescence Cell-Based Dose Response HTS Screen to Identify Cytotoxic Compounds
     of NIH3T3 cells.
   evidence:
   - reference: pubchem.aid:2010
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2010, deposited by Broad Institute; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: EC50
   value: 10.345
   units: uM
@@ -129,6 +138,7 @@ bioactivities:
   - reference: pubchem.aid:2044
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2044, deposited by Broad Institute; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: EC50
   value: 0.1
   units: uM
@@ -139,6 +149,7 @@ bioactivities:
   - reference: pubchem.aid:2294
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2294, deposited by Broad Institute; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: EC50
   value: 0.153
   units: uM
@@ -152,6 +163,7 @@ bioactivities:
     notes: PubChem BioAssay AID 686991, deposited by The Scripps Research Institute
       Molecular Screening Center; assay type Confirmatory. Target accession EAW58811
       was left ungrounded because PubChem did not provide a UniProtKB accession.
+  call: INACTIVE
   measurement_type: EC50
   value: 91.17
   units: uM
@@ -159,39 +171,44 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:493177
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 493177, deposited by Broad Institute; assay type Confirmatory.
-      Target accession AAH65243 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
-  measurement_type: EC50
+    notes: 'PubChem BioAssay AID 493177, deposited by Broad Institute; assay type
+      Confirmatory. Source endpoint: AC50. Target accession AAH65243 was left ungrounded
+      because PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.875
   units: uM
 - assay: MITF Measured in Cell-Based System Using Plate Reader - 2084-01_Inhibitor_DoseNoFile_CherryPick_Activity_Set3
   evidence:
   - reference: pubchem.aid:493073
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 493073, deposited by Broad Institute; assay type Confirmatory.
-      Target accession AAH65243 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
-  measurement_type: EC50
+    notes: 'PubChem BioAssay AID 493073, deposited by Broad Institute; assay type
+      Confirmatory. Source endpoint: AC50. Target accession AAH65243 was left ungrounded
+      because PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.875
   units: uM
 - assay: MITF Measured in Cell-Based System Using Plate Reader - 2084-01_Inhibitor_DoseNoFile_CherryPick_Activity_Set4
   evidence:
   - reference: pubchem.aid:493102
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 493102, deposited by Broad Institute; assay type Confirmatory.
-      Target accession AAH65243 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
-  measurement_type: EC50
+    notes: 'PubChem BioAssay AID 493102, deposited by Broad Institute; assay type
+      Confirmatory. Source endpoint: AC50. Target accession AAH65243 was left ungrounded
+      because PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.875
   units: uM
 - assay: Nrf2 qHTS screen for inhibitors
   evidence:
   - reference: pubchem.aid:504444
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 504444, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_001138884 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 504444, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_001138884
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 29.0929
   units: uM
 - assay: Total Fluorescence Counterscreen for Inhibitors of the Interaction of Thyroid
@@ -199,18 +216,22 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1479
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1479, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_001121649 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1479, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_001121649
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 79.4328
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
     factor 3 (EPAC1)
   evidence:
   - reference: pubchem.aid:1645883
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 11.2202
   units: uM
 - assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
@@ -218,7 +239,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645883
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 11.2202
   units: uM
   target_enzyme: UniProtKB:O95398
@@ -227,7 +251,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645883
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 125.892
   units: uM
 - assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
@@ -235,7 +262,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645883
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 125.892
   units: uM
   target_enzyme: UniProtKB:O95398
@@ -244,7 +274,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645886
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645886, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645886, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.4467
   units: uM
 - assay: Validation qHTS for antagonist of cAMP-regulated guanine nucleotide exchange
@@ -252,7 +285,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645886
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645886, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645886, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.4467
   units: uM
   target_enzyme: UniProtKB:Q8WZA2
@@ -260,19 +296,23 @@ bioactivities:
   evidence:
   - reference: PMID:35787375
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 651635, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 651635, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.1259
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: Viability Counterscreen for Primary qHTS for Inhibitors of ATXN expression
   evidence:
   - reference: PMID:35787375
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 651635, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 651635, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.1259
   units: uM
   target_enzyme: UniProtKB:Q99700
-  activity_class: ENZYME_INHIBITOR
   notes: 98 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
 bioactivity_summary:
@@ -1044,3 +1084,7 @@ curation_history:
     discrepancy is retained. Both earlier graphs, all other owner fields and history
     are preserved. SEEDED remains, not full-record scientific sign-off.
   llm_assisted: true
+- timestamp: '2026-10-13T07:42:16Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

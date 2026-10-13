@@ -278,11 +278,11 @@ bioactivities:
   - reference: PMID:19663506
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1799854, deposited by BindingDB; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: KI
   value: 3700.0
   units: uM
   target_enzyme: UniProtKB:O94760
-  activity_class: ENZYME_INHIBITOR
 - assay: 'Inhibition Assay from Article 10.1021/bi9007098: "Developing dual and specific
     inhibitors of dimethylarginine dimethylaminohydrolase-1 and nitric oxide synthase:
     toward a targeted polypharmacology to control nitric oxide."'
@@ -290,13 +290,11 @@ bioactivities:
   - reference: PMID:19663506
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1799854, deposited by BindingDB; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: KI
   value: 1000.0
   units: uM
   target_enzyme: UniProtKB:P29476
-  activity_class: ENZYME_INHIBITOR
-bioactivity_summary:
-- ENZYME_INHIBITOR
 bgc_class:
 - OTHER
 xrefs:
@@ -361,3 +359,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:42:52Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

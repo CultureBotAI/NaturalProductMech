@@ -292,11 +292,13 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1479145
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1479145, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1479145, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 3.9811
   units: uM
   target_enzyme: UniProtKB:P59594
-  activity_class: ENZYME_INHIBITOR
 - assay: DSSTox (FDAMDD) FDA Maximum (Recommended) Daily Dose Database
   evidence:
   - reference: pubchem.aid:1195
@@ -311,7 +313,6 @@ related_records:
   source_version: 74f6cc836249
 bioactivity_summary:
 - ANTIBACTERIAL
-- ENZYME_INHIBITOR
 bgc_class:
 - SACCHARIDE
 xrefs:
@@ -496,3 +497,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:42:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

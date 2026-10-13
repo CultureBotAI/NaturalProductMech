@@ -39,7 +39,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1845221
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1845221, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1845221, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 11.6129
   units: uM
 - assay: Primary qHTS to identify anti-liver cancer compounds using libraries of approved
@@ -47,10 +50,12 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202548
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202548, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202548, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 12.5893
   units: uM
-  activity_class: CYTOTOXIC
 - assay: qHTS for Inhibitors of the Aldehyde Dehydrogenase Family (ALDH3A1) Primary
     screen
   evidence:
@@ -60,7 +65,6 @@ bioactivities:
   call: ACTIVE
   activity_class: ENZYME_INHIBITOR
 bioactivity_summary:
-- CYTOTOXIC
 - ENZYME_INHIBITOR
 bgc_class:
 - NRPS
@@ -124,3 +128,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:42:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

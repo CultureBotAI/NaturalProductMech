@@ -179,6 +179,17 @@ never float. Exactly one rule, and it is the same one everywhere:
 
 No value without one of the four, and the record says which.
 
+Imported PubChem observations retain the source outcome even when numeric.
+Only explicit `Active` observations can contribute a positive activity class or
+summary; `Inactive` stays `INACTIVE`. Other outcomes use `NOT_DETERMINED` with
+their exact source label in evidence notes, not `INTERMEDIATE` susceptibility.
+Unmapped endpoints such as `CC50`, `Potency` and `AC50` use `OTHER` and retain
+their original names in evidence notes rather than being guessed to mean IC50
+or EC50. Values, units, source evidence and the observation cap are unchanged.
+Competing specific classes in an assay title leave the class unset. A verified,
+title-pinned AID1650 exception identifies its cytotoxicity counterscreen, not
+antiviral efficacy.
+
 ## What a REVIEWED record means
 
 A record moves from `SEEDED` to `REVIEWED` when a curator has checked all of:

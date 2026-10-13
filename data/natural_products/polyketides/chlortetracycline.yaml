@@ -25,7 +25,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1845221
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1845221, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1845221, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 1.6834
   units: uM
 - assay: 'Primary qHTS for Inhibitors of N-terminal methyltransferase 1 (NTMT1): MTaseGlo
@@ -33,26 +36,33 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645870
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645870, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645870, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 28.1838
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: 'Primary qHTS for Inhibitors of N-terminal methyltransferase 1 (NTMT1): MTaseGlo
     Assay'
   evidence:
   - reference: pubchem.aid:1645870
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645870, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645870, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 28.1838
   units: uM
   target_enzyme: UniProtKB:Q9BV86
-  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for small molecule compounds that upregulate eGFP-tagged delta133p53alpha
     (in N-terminal) cells.
   evidence:
   - reference: pubchem.aid:2060322
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2060322, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2060322, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 23.9341
   units: uM
 - assay: Primary qHTS for small molecule compounds that upregulate eGFP-tagged delta133p53alpha
@@ -60,9 +70,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2060322
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2060322, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_001119587 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 2060322, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency. Target accession NP_001119587 was left ungrounded
+      because PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 23.9341
   units: uM
 - assay: Primary qHTS to identify anti-liver cancer compounds using libraries of approved
@@ -70,15 +82,20 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202548
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202548, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202548, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 15.8489
   units: uM
-  activity_class: CYTOTOXIC
 - assay: Primary redox qHTS assay for identification of artifact compounds.
   evidence:
   - reference: pubchem.aid:1845223
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1845223, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1845223, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 29.9349
   units: uM
 - assay: qHTS for Inhibitors of the Aldehyde Dehydrogenase Family (ALDH1A2) Primary
@@ -86,10 +103,12 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202376
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202376, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202376, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 1.5849
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: High Throughput Screen to Identify Inhibitors of Mycobacterium tuberculosis
     H37Rv
   evidence:
@@ -125,7 +144,6 @@ bioactivities:
   call: ACTIVE
   activity_class: ENZYME_INHIBITOR
 bioactivity_summary:
-- CYTOTOXIC
 - ENZYME_INHIBITOR
 bgc_class:
 - PKS
@@ -183,3 +201,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:36:54Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

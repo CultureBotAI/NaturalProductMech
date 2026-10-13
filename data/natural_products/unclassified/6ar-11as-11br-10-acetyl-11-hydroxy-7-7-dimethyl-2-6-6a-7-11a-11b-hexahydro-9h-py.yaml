@@ -76,6 +76,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977610, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 2O9J_A was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KI
   value: 0.12
   units: uM
@@ -88,6 +89,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977610, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 2OA0_A was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KI
   value: 0.12
   units: uM
@@ -732,3 +734,7 @@ curation_history:
     effects. No source-owned fields, exact reactions, assay constructs or SEEDED status
     upgraded.
   llm_assisted: true
+- timestamp: '2026-10-13T07:43:02Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

@@ -1,0 +1,133 @@
+
+=== qc: lint ===
+why: Fail fast on syntax, import, and style defects before expensive checks.
+All checks passed!
+
+=== qc: vendored-sync ===
+why: Governed files must be byte-identical to claw at the pinned ref.
+OK: 22 governed artifacts match the pinned claw revision
+
+=== qc: documentation ===
+why: README's generated statistics must match the corpus a reader would download.
+README statistics block is current
+
+=== qc: raw-data provenance ===
+why: Every committed inventory must retain its source metadata and integrity hash.
+provenance OK: 15 inventories, 0 upstream files, retrieved 2026-10-07
+
+=== qc: source queue ===
+why: An ADOPTED source must be one the pipeline reads under verified redistribution terms.
+source queue OK: 44 sources — 10 adopted, 14 blocked, 18 candidate, 2 evaluating
+next up: discovery-literature (P1, causal_graphs), mite (P2, biosynthetic_pathway), npdia (P2, biosynthetic_pathway)
+
+=== qc: tests ===
+why: Tests cover harmonization rules and corpus-wide invariants validation cannot see.
+........................................................................ [ 11%]
+........................................................................ [ 23%]
+........................................................................ [ 34%]
+........................................................................ [ 46%]
+........................................................................ [ 57%]
+........................................................................ [ 69%]
+...............................................................sss...... [ 80%]
+........................................................................ [ 92%]
+..................................................                       [100%]
+=============================== warnings summary ===============================
+tests/test_id_label_config.py::test_go_nodes_are_resolved_and_invalid_pairs_fail[canonical-OK_CANONICAL-record_identity]
+  /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/lib/python3.13/site-packages/sssom_schema/datamodel/sssom_schema.py:20: DeprecationWarning: The LinkML dataclass extension patch is deprecated and will be removed in a future release.
+  If you're currently using Python < 3.13, where this patch still applies, you should:
+    • Upgrade your LinkML tooling to version >= 1.9.0 (which no longer needs this patch), OR
+    • Migrate to Pydantic models if you're using LinkML's generated classes at runtime.
+  
+    from linkml_runtime.utils.dataclass_extensions_376 import dataclasses_init_fn_with_kwargs
+
+tests/test_id_label_config.py::test_go_nodes_are_resolved_and_invalid_pairs_fail[canonical-OK_CANONICAL-record_identity]
+  /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/lib/python3.13/site-packages/sssom/util.py:109: Pandas4Warning: The 'mode.copy_on_write' option is deprecated. Copy-on-Write can no longer be disabled (it is always enabled with pandas >= 3.0), and setting the option has no impact. This option will be removed in pandas 4.0.
+    pd.options.mode.copy_on_write = True
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+623 passed, 3 skipped, 2 warnings in 419.71s (0:06:59)
+
+=== qc: schema validation ===
+why: Closed-mode validation checks every record's shape, including unknown fields.
+Validating 3115 files with 15 workers; schema=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/src/naturalproductmech/schema/naturalproductmech.yaml
+
+=== validate-strict summary ===
+  files scanned:      3115
+  files with ERROR:   0
+  total ERROR rows:   0
+  TSV:                reports/instance_validation_failures.tsv
+
+=== qc: generated site ===
+why: pages/ is in step with the corpus. The site is committed, so it goes stale exactly as a record could go stale against data/raw/ (#53).
+pages/ is in step with the corpus
+
+=== qc: corpus reproduction ===
+why: Every record is byte-identical to what the seeder builds from data/raw/. The check verify_corpus.py's docstring promised once the harmonizer existed (#85); curator-owned fields are taken from the file, as the writer takes them.
+molecular targets whose assay organism did not resolve: 5 (1 distinct: Human…)
+producer claims withheld — taxon names no single organism: 42 (NCBITaxon:77133 36, NCBITaxon:12908 3, NCBITaxon:1163772 2, NCBITaxon:155900 1)
+taxon ids rewritten through taxon_merged.tsv: 161 (ChEBI 8, LOTUS 147, MIBiG 6)
+corpus reproduction OK: 3115 records are byte-identical to what the seeder builds from data/raw/
+
+=== qc: lockfile integrity ===
+why: Every record is recorded in PATHS.tsv and filed where its pinned pathway says. Reproduction from data/raw/ is the separate check above.
+lockfile integrity OK: 3115 records, each filed where PATHS.tsv pins it
+
+=== qc: corpus report ===
+why: Exercise the report and finish with the live coverage summary.
+records: 3115
+unique InChIKeys: 3115
+structures with undefined stereocentres: 1124
+
+by pathway (the filing decision, computed):
+  ALKALOIDS                             509
+  AMINO_ACIDS_AND_PEPTIDES              655
+  CARBOHYDRATES                         103
+  FATTY_ACIDS                            82
+  POLYKETIDES                           869
+  SHIKIMATES_AND_PHENYLPROPANOIDS        64
+  TERPENOIDS                            213
+  UNCLASSIFIED                          620
+
+by curation status:
+  SEEDED                               3115
+
+by grounding status:
+  EXACT                                 363
+  MINTED                               2743
+  REVIEW_NEEDED                           9
+
+field coverage (records carrying at least one item):
+  biosynthesis_origin                  3115
+  producer_taxon_groups                3076
+  occurrence_taxon_groups              2342
+  producer_organisms                   3076
+  occurrences                          2342
+  biosynthetic_gene_clusters           3115
+  biosynthetic_pathway                  164
+  bioactivities                         176
+  bioactivity_summary                   308
+  molecular_targets                      15
+  causal_graphs                         279
+  related_records                       210
+  discussions                           344
+
+producer claims: 3407 (808 causal, 162 correlational)
+  BGC_CHARACTERIZED                     808
+  BGC_CORRELATED                        162
+  SOURCE_ASSERTION                     2437
+
+cluster link claims: 3449 (1359 demonstrated)
+  CLUSTER_CORRELATED                    110
+  CLUSTER_DEMONSTRATED                 1359
+  CLUSTER_PREDICTED                       2
+  CLUSTER_UNSTATED                     1978
+
+records where a producer taxon is independently corroborated by a cited occurrence: 732
+records whose only origin evidence is a gene cluster with no named host: 27
+
+These grade two different questions and they come apart. A producer
+claim says this TAXON makes the compound; a cluster link says this
+LOCUS does. Heterologous expression settles the second and leaves the
+first exactly where the isolation report left it.
+
+All NaturalProductMech quality gates passed.

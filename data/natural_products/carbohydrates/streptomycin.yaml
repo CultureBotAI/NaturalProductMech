@@ -288,29 +288,33 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:504847
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 504847, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_001017535 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 504847, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_001017535
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 70.7946
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Aldehyde Dehydrogenase 1 (ALDH1A1)
   evidence:
   - reference: pubchem.aid:1030
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1030, deposited by NCGC; assay type Confirmatory.
-      Target accession AAP35567 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1030, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession AAP35567
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 39.8107
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Histone Lysine Methyltransferase G9a
   evidence:
   - reference: pubchem.aid:504332
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 504332, deposited by NCGC; assay type Confirmatory.
-      Target accession CAQ07474 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 504332, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency. Target accession CAQ07474 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 17.7828
   units: uM
   activity_class: ENZYME_INHIBITOR
@@ -405,3 +409,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:43:04Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

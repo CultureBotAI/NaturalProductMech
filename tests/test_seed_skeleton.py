@@ -916,6 +916,84 @@ def test_an_unclassifiable_assay_yields_no_summary_rather_than_a_guess():
     assert "bioactivity_summary" not in doc
 
 
+def test_counterscreen_classification_does_not_follow_title_match_order():
+    title = ("A Cell Based Secondary Assay To Explore Cytotoxicity of West Nile Virus "
+             "Anti-Viral Hit Compounds")
+    assert seed.classify_activity(title, aid="1650") == "CYTOTOXIC"
+    assert seed.classify_activity(title) is None
+    assert seed.classify_activity(title, aid="999") is None
+    assert seed.classify_activity("Uncharacterized assay", aid="1650") is None
+    assert seed.classify_activity("Cytotoxicity of anti-viral hit compounds") is None
+    assert seed.classify_activity("Antibacterial and antifungal activity") is None
+    assert seed.classify_activity("IC50 of antifungal activity") == "ANTIFUNGAL"
+
+
+@pytest.mark.parametrize("outcome, call", [
+    ("Active", "ACTIVE"), ("Inactive", "INACTIVE"),
+    ("Inconclusive", "NOT_DETERMINED"), ("Unspecified", "NOT_DETERMINED"),
+    ("", "NOT_DETERMINED"), ("Novel outcome", "NOT_DETERMINED"),
+])
+@pytest.mark.parametrize("endpoint, measurement", [
+    ("IC50", "IC50"), ("Ki", "KI"), ("CC50", "OTHER"),
+    ("Potency", "OTHER"), ("AC50", "OTHER"), ("Novel endpoint", "OTHER"),
+])
+def test_numeric_bioassay_preserves_outcome_and_endpoint(outcome, call, endpoint, measurement):
+    row = {
+        "standard_inchi_key": MIBIG_ROW["standard_inchi_key"], "cid": "702", "aid": "1",
+        "assay_name": "NCI-60 growth inhibition", "assay_type": "Confirmatory",
+        "depositor": "DTP/NCI", "activity_outcome": outcome, "activity_name": endpoint,
+        "activity_value_um": "0.3663", "target_accession": "", "reference": "",
+    }
+    doc = seed.build_records({"mibig_compounds": [MIBIG_ROW], "pubchem_bioassay": [row]})[0]
+    observation = doc["bioactivities"][0]
+    assert observation["call"] == call
+    assert observation["measurement_type"] == measurement
+    assert observation["value"] == 0.3663
+    assert observation["units"] == "uM"
+    if measurement == "OTHER":
+        assert f"Source endpoint: {endpoint}." in observation["evidence"][0]["notes"]
+    if call == "NOT_DETERMINED":
+        assert f"Source outcome: {outcome or '(missing)'}." in observation["evidence"][0]["notes"]
+    if call == "ACTIVE":
+        assert observation["activity_class"] == "CYTOTOXIC"
+        assert doc["bioactivity_summary"] == ["CYTOTOXIC"]
+    else:
+        assert "activity_class" not in observation
+        assert "bioactivity_summary" not in doc
+
+
+def test_endpoint_and_outcome_survive_the_observation_cap(monkeypatch):
+    monkeypatch.setattr(seed, "MAX_BIOACTIVITIES_PER_RECORD", 1)
+    row = {
+        "standard_inchi_key": MIBIG_ROW["standard_inchi_key"], "cid": "702", "aid": "1",
+        "assay_name": "qHTS profiling", "assay_type": "Confirmatory", "depositor": "NCGC",
+        "activity_outcome": "Inconclusive", "activity_name": "Potency",
+        "activity_value_um": "2.5", "target_accession": "", "reference": "",
+    }
+    doc = seed.build_records({"mibig_compounds": [MIBIG_ROW], "pubchem_bioassay": [row, row]})[0]
+    observation = doc["bioactivities"][0]
+    assert observation["call"] == "NOT_DETERMINED"
+    assert "Source outcome: Inconclusive." in observation["evidence"][0]["notes"]
+    assert "Source endpoint: Potency." in observation["evidence"][0]["notes"]
+    assert "1 further PubChem assay results" in observation["notes"]
+
+
+@pytest.mark.parametrize("outcome, call", [
+    ("Inactive", "INACTIVE"), ("Inconclusive", "NOT_DETERMINED"), ("", "NOT_DETERMINED"),
+])
+def test_nonnumeric_import_does_not_invent_active(outcome, call):
+    row = {
+        "standard_inchi_key": MIBIG_ROW["standard_inchi_key"], "cid": "702", "aid": "1",
+        "assay_name": "Antiviral screen", "assay_type": "Screening", "depositor": "NCGC",
+        "activity_outcome": outcome, "activity_name": "", "activity_value_um": "",
+        "target_accession": "", "reference": "",
+    }
+    doc = seed.build_records({"mibig_compounds": [MIBIG_ROW], "pubchem_bioassay": [row]})[0]
+    assert doc["bioactivities"][0]["call"] == call
+    assert "value" not in doc["bioactivities"][0]
+    assert "bioactivity_summary" not in doc
+
+
 def test_pubchem_pdb_chain_accessions_are_not_relabelled_as_uniprot():
     """PubChem Target Accession can be a PDB chain, RefSeq, GenPept, or UniProt."""
     row = {

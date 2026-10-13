@@ -290,16 +290,21 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:651633
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 651633, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 651633, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 29.8493
   units: uM
 - assay: qHTS assay to identify aromatase inhibitors
   evidence:
   - reference: pubchem.aid:743083
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 743083, deposited by 824; assay type Confirmatory.
-      Target accession EAW77416 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 743083, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency. Target accession EAW77416 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 33.4915
   units: uM
 - assay: qHTS assay to identify small molecule antagonists of the androgen receptor
@@ -307,9 +312,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:743042
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 743042, deposited by 824; assay type Confirmatory.
-      Target accession AAI32976 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 743042, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession AAI32976
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 8.4127
   units: uM
 - assay: DSSTox (FDAMDD) FDA Maximum (Recommended) Daily Dose Database
@@ -428,3 +435,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:42:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

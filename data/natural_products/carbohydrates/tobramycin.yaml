@@ -157,7 +157,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202236
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202236, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202236, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 7.4219
   units: uM
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
@@ -165,7 +168,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202237
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202237, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202237, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 20.9177
   units: uM
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
@@ -173,7 +179,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202234
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202234, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202234, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 23.47
   units: uM
 - assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
@@ -181,7 +190,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645887
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 0.7943
   units: uM
 - assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
@@ -189,7 +201,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645887
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 0.7943
   units: uM
   target_enzyme: UniProtKB:Q8WZA2
@@ -198,7 +213,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963824
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 18.6429
   units: uM
 - assay: Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug
@@ -206,7 +224,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963824
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 18.6429
   units: uM
   target_enzyme: UniProtKB:P43405
@@ -215,7 +236,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963823
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 2.9547
   units: uM
 - assay: Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive
@@ -223,7 +247,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963823
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 2.9547
   units: uM
   target_enzyme: UniProtKB:P43405
@@ -232,7 +259,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:651633
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 651633, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 651633, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 1.0124
   units: uM
 - assay: A screen for compounds that inhibit the activity of LtaS in Staphylococcus
@@ -403,3 +433,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:42:28Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

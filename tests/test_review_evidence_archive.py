@@ -26,6 +26,13 @@ ARCHIVES = {
         "findings": {"blocker": 4, "major": 2}, "failed_receipts": set(),
         "previous_archives": ["20261013-first-two-records", "20261013-2mib-heme"],
     },
+    "20261013-mycophenolic": {
+        "published": 1, "partial": 8, "pending": 3107,
+        "findings": {"blocker": 4, "major": 4}, "failed_receipts": set(),
+        "previous_archives": [
+            "20261013-first-two-records", "20261013-2mib-heme", "20261013-indigoidine",
+        ],
+    },
 }
 
 
@@ -118,7 +125,8 @@ def test_receipts_match_archived_outputs(archive, artifacts):
         else:
             original_log = row["original_path"].removesuffix(".receipt.json") + ".log"
             log = artifact_bytes(archive, artifacts[original_log])
-            assert log.decode() == receipt.get("output", receipt.get("log"))
+            if "output" in receipt or "log" in receipt:
+                assert log.decode() == receipt.get("output", receipt.get("log"))
             assert hashlib.sha256(log).hexdigest() == receipt["log_sha256"]
         assert receipt["command"] and receipt["started_at"] <= receipt["finished_at"]
         if receipt["exit_code"]:
@@ -149,6 +157,12 @@ def test_campaign_preserves_full_population(archive, manifest):
     assert len(pending) == expected_counts["pending"]
     assert not reviewed.intersection(pending)
     assert reviewed | set(pending) == owners.keys()
+    states = {row["path"]: row["review_state"] for row in checkpoint["records"]}
+    # The first archive used longer state names; its immutable vocabulary stays valid.
+    partial_states = {"partial", "partial_scientific_review_saved"}
+    pending_states = {"unassessed", "not_scientifically_reviewed"}
+    assert {path for path, state in states.items() if state in partial_states} == reviewed
+    assert {path for path, state in states.items() if state in pending_states} == set(pending)
     assert checkpoint["findings"] == expected_counts["findings"]
     assert checkpoint["goal_status"] == "active"
     previous = set()

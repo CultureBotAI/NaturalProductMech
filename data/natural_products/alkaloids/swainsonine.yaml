@@ -285,7 +285,10 @@ bioactivities:
   evidence:
   - reference: PMID:33910017
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1508628, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1508628, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.1
   units: uM
 - assay: 'Confirmatory qHTS for small molecule stabilizers of the endoplasmic reticulum
@@ -293,7 +296,10 @@ bioactivities:
   evidence:
   - reference: PMID:33910017
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1508628, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1508628, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 31.6228
   units: uM
 - assay: Experimentally measured binding affinity data (IC50) for protein-ligand complexes
@@ -304,6 +310,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977608, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 1HWW_A was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.02
   units: uM
@@ -315,6 +322,7 @@ bioactivities:
   - reference: pubchem.aid:1964041
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1964041, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.08
   units: uM
@@ -326,6 +334,7 @@ bioactivities:
   - reference: pubchem.aid:1964041
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1964041, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.04
   units: uM
@@ -337,6 +346,7 @@ bioactivities:
   - reference: PMID:20209559
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1799635, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: KI
   value: 0.003
   units: uM
@@ -347,7 +357,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:504834
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 504834, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 504834, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 9.5283
   units: uM
   activity_class: ENZYME_INHIBITOR
@@ -357,10 +370,12 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:743014
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 743014, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 743014, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 26.6032
   units: uM
-  activity_class: CYTOTOXIC
 - assay: Experimentally measured binding affinity data derived from PDB
   evidence:
   - reference: PMID:11406577
@@ -371,7 +386,6 @@ bioactivities:
   call: ACTIVE
   activity_class: ENZYME_INHIBITOR
 bioactivity_summary:
-- CYTOTOXIC
 - ENZYME_INHIBITOR
 bgc_class:
 - NRPS
@@ -545,3 +559,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:37:04Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

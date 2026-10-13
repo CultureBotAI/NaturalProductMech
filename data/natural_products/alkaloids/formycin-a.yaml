@@ -40,6 +40,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977610, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 1NC3_A was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KI
   value: 10.0
   units: uM
@@ -52,6 +53,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977610, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 1NC3_B was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KI
   value: 10.0
   units: uM
@@ -64,6 +66,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977610, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 2QTT_A was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KI
   value: 48.0
   units: uM
@@ -76,6 +79,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977610, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 2QTT_B was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KI
   value: 48.0
   units: uM
@@ -309,3 +313,7 @@ curation_history:
     and cited DOI:10.1074/jbc.M210836200, DOI:10.2210/pdb1nc3/pdb, DOI:10.1016/j.jmb.2008.01.088,
     and DOI:10.2210/pdb2qtt/pdb.
   llm_assisted: true
+- timestamp: '2026-10-13T07:42:08Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

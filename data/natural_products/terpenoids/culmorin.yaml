@@ -77,40 +77,46 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:885
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 885, deposited by NCGC; assay type Confirmatory. Target
-      accession NP_059488 was left ungrounded because PubChem did not provide a UniProtKB
-      accession.
+    notes: 'PubChem BioAssay AID 885, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency. Target accession NP_059488 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 31.6228
   units: uM
 - assay: qHTS Assay for Inhibitors and Substrates of Cytochrome P450 3A4
   evidence:
   - reference: pubchem.aid:884
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 884, deposited by NCGC; assay type Confirmatory. Target
-      accession NP_059488 was left ungrounded because PubChem did not provide a UniProtKB
-      accession.
+    notes: 'PubChem BioAssay AID 884, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_059488
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 31.6228
   units: uM
 - assay: qHTS Assay for Inhibitors of RecQ-Like Dna Helicase 1 (RECQ1)
   evidence:
   - reference: pubchem.aid:2549
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2549, deposited by NCGC; assay type Confirmatory.
-      Target accession 2WWY_A was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 2549, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession 2WWY_A
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 39.8107
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: qHTS for Inhibitors of Tau Fibril Formation, Fluorescence Polarization
   evidence:
   - reference: pubchem.aid:1468
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1468, deposited by NCGC; assay type Confirmatory.
-      Target accession AAI14949 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1468, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession AAI14949
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 1.4125
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: NCI human tumor cell line growth inhibition assay. Data for the 786-0 Renal
     cell line
   evidence:
@@ -121,7 +127,6 @@ bioactivities:
   activity_class: CYTOTOXIC
 bioactivity_summary:
 - CYTOTOXIC
-- ENZYME_INHIBITOR
 bgc_class:
 - TERPENE
 xrefs:
@@ -187,3 +192,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:43:14Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

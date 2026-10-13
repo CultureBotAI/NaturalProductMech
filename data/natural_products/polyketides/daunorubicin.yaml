@@ -283,7 +283,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963587
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963587, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963587, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 21.3138
   units: uM
 - assay: 5-hydroxytryptamine receptor 2A (HTR2A) small molecule agonists, cell-based
@@ -291,9 +294,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963587
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963587, deposited by 824; assay type Confirmatory.
-      Target accession AAH96839 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1963587, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency. Target accession AAH96839 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 21.3138
   units: uM
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HEK293 cells
@@ -301,61 +306,76 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1224869
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1224869, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1224869, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 26.8325
   units: uM
-  activity_class: CYTOTOXIC
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HEK293 cells
     - 16 hour
   evidence:
   - reference: pubchem.aid:1224888
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1224888, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1224888, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 26.8325
   units: uM
-  activity_class: CYTOTOXIC
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HEK293 cells
     - 8 hour
   evidence:
   - reference: pubchem.aid:1224884
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1224884, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1224884, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 26.8325
   units: uM
-  activity_class: CYTOTOXIC
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HepG2 cells
     - 0 hour
   evidence:
   - reference: pubchem.aid:1224882
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1224882, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1224882, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 26.8325
   units: uM
-  activity_class: CYTOTOXIC
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HepG2 cells
     - 16 hour
   evidence:
   - reference: pubchem.aid:1224876
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1224876, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1224876, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 26.8325
   units: uM
-  activity_class: CYTOTOXIC
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HepG2 cells
     - 24 hour
   evidence:
   - reference: pubchem.aid:1224878
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1224878, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1224878, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 26.8325
   units: uM
-  activity_class: CYTOTOXIC
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HepG2 cells
     - 32 hour
   evidence:
   - reference: pubchem.aid:1224883
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1224883, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1224883, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.0301
   units: uM
   activity_class: CYTOTOXIC
@@ -364,25 +384,32 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1224879
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1224879, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1224879, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.0239
   units: uM
-  activity_class: CYTOTOXIC
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HepG2 cells
     - 8 hour
   evidence:
   - reference: pubchem.aid:1224890
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1224890, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1224890, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 26.8325
   units: uM
-  activity_class: CYTOTOXIC
 - assay: A High-Content qHTS Against Drug Library for the Identification of Small
     Molecules that Inhibit DYT1 Early Onset Primary Dystonia-Associated Cell Pathology
   evidence:
   - reference: pubchem.aid:1645839
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645839, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645839, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 1.5849
   units: uM
 - assay: A High-Content qHTS Against Drug Library for the Identification of Small
@@ -390,7 +417,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645839
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645839, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645839, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 1.5849
   units: uM
   target_enzyme: UniProtKB:O14656
@@ -399,9 +429,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:624297
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_056979 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency. Target accession NP_056979 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 5.3091
   units: uM
 - assay: 'Acetylcholinesterase (AChE) small molecule antagonists: colormetric cell-based
@@ -409,9 +441,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1347395
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1347395, deposited by 824; assay type Confirmatory.
-      Target accession AAA68151 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1347395, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession AAA68151
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 27.5404
   units: uM
 - assay: 'Acetylcholinesterase (AChE) small molecule antagonists: fluorescence cell-based
@@ -419,9 +453,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1347398
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1347398, deposited by 824; assay type Confirmatory.
-      Target accession AAA68151 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1347398, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession AAA68151
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 38.9018
   units: uM
 - assay: 'Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS
@@ -429,7 +465,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2061107
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2061107, deposited by 824; assay type Summary.
+    notes: 'PubChem BioAssay AID 2061107, deposited by 824; assay type Summary. Source
+      outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.35476
   units: uM
 - assay: 'Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS
@@ -437,9 +476,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2061107
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2061107, deposited by 824; assay type Summary. Target
-      accession NP_000015 was left ungrounded because PubChem did not provide a UniProtKB
-      accession.
+    notes: 'PubChem BioAssay AID 2061107, deposited by 824; assay type Summary. Source
+      outcome: Inconclusive. Source endpoint: Potency. Target accession NP_000015
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.35476
   units: uM
 - assay: Adrenergic beta2 receptor (ADRB2) small molecule antagonists, cell-based
@@ -447,7 +488,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963592
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963592, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963592, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 29.8493
   units: uM
 - assay: Adrenergic beta2 receptor (ADRB2) small molecule antagonists, cell-based
@@ -455,9 +499,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963592
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963592, deposited by 824; assay type Confirmatory.
-      Target accession NP_000015 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1963592, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_000015
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 29.8493
   units: uM
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
@@ -465,7 +511,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202236
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202236, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202236, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.1864
   units: uM
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
@@ -473,7 +522,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202237
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202237, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202237, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.0833
   units: uM
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
@@ -481,7 +533,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202234
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202234, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202234, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.1481
   units: uM
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
@@ -489,7 +544,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202233
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202233, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202233, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.059
   units: uM
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
@@ -497,7 +555,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202232
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202232, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202232, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.0934
   units: uM
   notes: 589 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
@@ -790,3 +851,7 @@ curation_history:
     graph semantics, evidence, source fields, grades, status, earlier graphs and all
     prior curation events are unchanged.
   llm_assisted: true
+- timestamp: '2026-10-13T07:43:00Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

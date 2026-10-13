@@ -267,6 +267,7 @@ bioactivities:
     notes: PubChem BioAssay AID 588681, deposited by The Scripps Research Institute
       Molecular Screening Center; assay type Confirmatory. Target accession NP_004960
       was left ungrounded because PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: EC50
   value: 2.526
   units: uM
@@ -278,6 +279,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 588442, deposited by The Scripps Research Institute
       Molecular Screening Center; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: EC50
   value: 2.057
   units: uM
@@ -289,10 +291,10 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 588440, deposited by The Scripps Research Institute
       Molecular Screening Center; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: IC50
   value: 89.251
   units: uM
-  activity_class: CYTOTOXIC
 - assay: 'Counterscreen for inhibitors of the interaction of the Ras and Rab interactor
     1 protein (Rin1) and the c-abl oncogene 1, non-receptor tyrosine kinase (Abl):
     Fluorescence-based biochemical high throughput dose response assay to identify
@@ -303,16 +305,19 @@ bioactivities:
     notes: PubChem BioAssay AID 602182, deposited by The Scripps Research Institute
       Molecular Screening Center; assay type Confirmatory. Target accession CAA58789
       was left ungrounded because PubChem did not provide a UniProtKB accession.
+  call: INACTIVE
   measurement_type: IC50
   value: 67.588
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: 'Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule
     antagonists: luciferase reporter qHTS assay'
   evidence:
   - reference: pubchem.aid:1671197
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1671197, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1671197, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 0.1096
   units: uM
 - assay: 'Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule
@@ -320,9 +325,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1671197
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1671197, deposited by 824; assay type Confirmatory.
-      Target accession AAV41877 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1671197, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency. Target accession AAV41877 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 0.1096
   units: uM
 - assay: 'Cytochrome P450 Family 2 Subfamily D Member 6 (CYP2D6) small molecule antagonists:
@@ -330,7 +337,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1671196
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1671196, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1671196, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 43.6486
   units: uM
 - assay: 'Cytochrome P450 Family 2 Subfamily D Member 6 (CYP2D6) small molecule antagonists:
@@ -338,9 +348,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1671196
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1671196, deposited by 824; assay type Confirmatory.
-      Target accession ANW61984 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1671196, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession ANW61984
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 43.6486
   units: uM
 - assay: 'Cytochrome P450 family 3 subfamily A member 7 (CYP3A7) small molecule antagonists:
@@ -348,7 +360,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963596
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963596, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963596, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 21.8761
   units: uM
 - assay: 'Cytochrome P450 family 3 subfamily A member 7 (CYP3A7) small molecule antagonists:
@@ -356,9 +371,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963596
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963596, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_000756 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1963596, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_000756
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 21.8761
   units: uM
 - assay: Discovery of Small Molecule Probes for H1N1 Influenza NS1A
@@ -368,6 +385,7 @@ bioactivities:
     notes: PubChem BioAssay AID 504329, deposited by Southern Research Specialized
       Biocontainment Screening Center; assay type Confirmatory. Target accession ACP44172
       was left ungrounded because PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.2
   units: uM
@@ -380,6 +398,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 1AVD_A was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KD
   value: 1.0e-09
   units: uM
@@ -392,6 +411,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 1DF8_A was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KD
   value: 0.0002
   units: uM
@@ -404,6 +424,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 1DF8_B was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KD
   value: 0.0002
   units: uM
@@ -416,6 +437,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 1N43_A was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KD
   value: 2.8e-05
   units: uM
@@ -428,6 +450,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 1N43_D was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KD
   value: 2.8e-05
   units: uM
@@ -440,6 +463,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 1N9M_A was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KD
   value: 1.1e-05
   units: uM
@@ -452,6 +476,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 1N9M_D was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KD
   value: 1.1e-05
   units: uM
@@ -464,6 +489,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 1NDJ_A was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KD
   value: 6.9e-07
   units: uM
@@ -476,6 +502,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 1NDJ_D was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KD
   value: 6.9e-07
   units: uM
@@ -488,6 +515,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 1STP_A was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KD
   value: 4.0e-08
   units: uM
@@ -500,6 +528,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 1SWG_D was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KD
   value: 0.0439
   units: uM
@@ -512,6 +541,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 1SWK_A was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KD
   value: 1.0e-06
   units: uM
@@ -524,6 +554,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 1SWK_D was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KD
   value: 1.0e-06
   units: uM
@@ -536,6 +567,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 1SWN_A was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KD
   value: 1.0e-06
   units: uM
@@ -544,7 +576,6 @@ bioactivities:
     not written here.
 bioactivity_summary:
 - ANTIVIRAL
-- CYTOTOXIC
 - ENZYME_INHIBITOR
 bgc_class:
 - OTHER
@@ -708,3 +739,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:43:29Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

@@ -68,7 +68,7 @@ field coverage (records carrying at least one item):
   biosynthetic_gene_clusters           3115
   biosynthetic_pathway                  164
   bioactivities                         176
-  bioactivity_summary                   318
+  bioactivity_summary                   308
   molecular_targets                      15
   causal_graphs                         279
   related_records                       210

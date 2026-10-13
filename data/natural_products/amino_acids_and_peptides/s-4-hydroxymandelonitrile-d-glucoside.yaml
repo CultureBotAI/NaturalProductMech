@@ -301,6 +301,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977610, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 1E55_A was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KI
   value: 76.0
   units: uM
@@ -432,3 +433,7 @@ curation_history:
     target accession to Zea mays UniProtKB:P49235, and cited DOI:10.1073/pnas.97.25.13555
     and DOI:10.2210/pdb1e55/pdb.
   llm_assisted: true
+- timestamp: '2026-10-13T07:42:30Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

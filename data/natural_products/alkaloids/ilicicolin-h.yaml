@@ -43,8 +43,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:624006
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 624006, deposited by Broad Institute; assay type Confirmatory.
-  measurement_type: EC50
+    notes: 'PubChem BioAssay AID 624006, deposited by Broad Institute; assay type
+      Confirmatory. Source endpoint: AC50.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 4.81
   units: uM
   activity_class: ANTIFUNGAL
@@ -53,8 +55,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:623965
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 623965, deposited by Broad Institute; assay type Confirmatory.
-  measurement_type: EC50
+    notes: 'PubChem BioAssay AID 623965, deposited by Broad Institute; assay type
+      Confirmatory. Source endpoint: AC50.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 2.94
   units: uM
   activity_class: ANTIFUNGAL
@@ -63,8 +67,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:624014
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 624014, deposited by Broad Institute; assay type Confirmatory.
-  measurement_type: EC50
+    notes: 'PubChem BioAssay AID 624014, deposited by Broad Institute; assay type
+      Confirmatory. Source endpoint: AC50.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 2.45
   units: uM
   activity_class: ANTIFUNGAL
@@ -73,8 +79,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:623969
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 623969, deposited by Broad Institute; assay type Confirmatory.
-  measurement_type: EC50
+    notes: 'PubChem BioAssay AID 623969, deposited by Broad Institute; assay type
+      Confirmatory. Source endpoint: AC50.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.0335
   units: uM
   activity_class: ANTIFUNGAL
@@ -83,8 +91,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:624012
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 624012, deposited by Broad Institute; assay type Confirmatory.
-  measurement_type: EC50
+    notes: 'PubChem BioAssay AID 624012, deposited by Broad Institute; assay type
+      Confirmatory. Source endpoint: AC50.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.0275
   units: uM
   activity_class: ANTIFUNGAL
@@ -414,3 +424,7 @@ curation_history:
     step and RHEA:64564 / UniProtKB:A0A482N8M8-grounded ilicicolin H BIOSYNTHESIS
     causal graph.
   llm_assisted: true
+- timestamp: '2026-10-13T07:36:45Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

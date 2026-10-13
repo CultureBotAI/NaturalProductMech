@@ -75,6 +75,7 @@ bioactivities:
   - reference: PMID:28323406
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1802841, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.02
   units: uM
@@ -86,6 +87,7 @@ bioactivities:
   - reference: PMID:28323406
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1802841, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.03
   units: uM
@@ -97,33 +99,33 @@ bioactivities:
   - reference: PMID:28323406
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1802841, deposited by BindingDB; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: IC50
   value: 70.0
   units: uM
   target_enzyme: UniProtKB:Q3YUZ7
-  activity_class: ANTIBACTERIAL
 - assay: 'RNAP-Inhibition Assay from Article 10.1021/acschembio.6b01133: "Affinity
     Selection-Mass Spectrometry Identifies a Novel Antibacterial RNA Polymerase Inhibitor."'
   evidence:
   - reference: PMID:28323406
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1802841, deposited by BindingDB; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: IC50
   value: 80.0
   units: uM
   target_enzyme: UniProtKB:Q3YUZ7
-  activity_class: ANTIBACTERIAL
 - assay: 'RNAP-Inhibition Assay from Article 10.1021/acschembio.6b01133: "Affinity
     Selection-Mass Spectrometry Identifies a Novel Antibacterial RNA Polymerase Inhibitor."'
   evidence:
   - reference: PMID:28323406
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1802841, deposited by BindingDB; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: IC50
   value: 100.0
   units: uM
   target_enzyme: UniProtKB:Q3YUZ7
-  activity_class: ANTIBACTERIAL
 - assay: Human OATP1A2 (SLCO family of organic anion transporting polypeptides)
   evidence:
   - reference: PMID:12085361
@@ -247,3 +249,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:37:14Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

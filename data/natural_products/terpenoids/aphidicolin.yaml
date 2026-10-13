@@ -274,6 +274,7 @@ bioactivities:
   - reference: pubchem.aid:1047
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1047, deposited by SRMLSC; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: EC50
   value: 0.839
   units: uM
@@ -284,6 +285,7 @@ bioactivities:
   - reference: pubchem.aid:1045
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1045, deposited by SRMLSC; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: EC50
   value: 1.731
   units: uM
@@ -294,6 +296,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2008, deposited by University of Pittsburgh Molecular
       Library Screening Center; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: EC50
   value: 0.136
   units: uM
@@ -304,6 +307,7 @@ bioactivities:
   - reference: pubchem.aid:1936
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1936, deposited by Broad Institute; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: EC50
   value: 28.62
   units: uM
@@ -314,6 +318,7 @@ bioactivities:
   - reference: pubchem.aid:1933
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1933, deposited by Broad Institute; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: EC50
   value: 38.639
   units: uM
@@ -324,26 +329,30 @@ bioactivities:
   - reference: pubchem.aid:1935
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1935, deposited by Broad Institute; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: EC50
   value: 150.0
   units: uM
-  activity_class: CYTOTOXIC
 - assay: Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic
     to DRD Non-Viral Oncogenic Fibroblast
   evidence:
   - reference: pubchem.aid:1934
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1934, deposited by Broad Institute; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1934, deposited by Broad Institute; assay type Confirmatory.
+      Source outcome: Inconclusive.'
+  call: NOT_DETERMINED
   measurement_type: EC50
   value: 150.0
   units: uM
-  activity_class: CYTOTOXIC
 - assay: P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line,
     qHTS therapeutic library screen
   evidence:
   - reference: PMID:31515284
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1346987, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1346987, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 8.0538
   units: uM
 - assay: 'Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase
@@ -351,26 +360,33 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1671190
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1671190, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1671190, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 141.254
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: 'Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase
     (ALOX12): Round 2'
   evidence:
   - reference: pubchem.aid:1671190
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1671190, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1671190, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 141.254
   units: uM
   target_enzyme: UniProtKB:P18054
-  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for delayed death inhibitors of the malarial parasite plastid,
     48 hour incubation
   evidence:
   - reference: pubchem.aid:504832
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 504832, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 504832, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.5221
   units: uM
   activity_class: ENZYME_INHIBITOR
@@ -379,7 +395,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:504834
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 504834, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 504834, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.5858
   units: uM
   activity_class: ENZYME_INHIBITOR
@@ -388,7 +407,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645877
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 2.8403
   units: uM
   activity_class: ENZYME_INHIBITOR
@@ -397,7 +419,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645877
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 2.8403
   units: uM
   target_enzyme: UniProtKB:O96028
@@ -407,7 +432,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645876
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 3.1868
   units: uM
   activity_class: ENZYME_INHIBITOR
@@ -416,7 +444,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645876
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 3.1868
   units: uM
   target_enzyme: UniProtKB:O96028
@@ -426,7 +457,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645883
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 50.1187
   units: uM
 - assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
@@ -434,7 +468,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645883
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 50.1187
   units: uM
   target_enzyme: UniProtKB:O95398
@@ -443,7 +480,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645887
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 7.9433
   units: uM
 - assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
@@ -451,7 +491,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645887
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 7.9433
   units: uM
   target_enzyme: UniProtKB:Q8WZA2
@@ -460,7 +503,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645882
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645882, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645882, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 10.0
   units: uM
 - assay: Validation qHTS for antagonist of cAMP-regulated guanine nucleotide exchange
@@ -468,7 +514,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645882
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645882, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645882, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 10.0
   units: uM
   target_enzyme: UniProtKB:O95398
@@ -477,7 +526,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645886
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645886, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645886, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 63.0957
   units: uM
 - assay: Validation qHTS for antagonist of cAMP-regulated guanine nucleotide exchange
@@ -485,7 +537,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645886
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645886, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645886, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 63.0957
   units: uM
   target_enzyme: UniProtKB:Q8WZA2
@@ -494,7 +549,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963824
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 1.0139
   units: uM
   notes: 46 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
@@ -570,3 +628,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:42:28Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

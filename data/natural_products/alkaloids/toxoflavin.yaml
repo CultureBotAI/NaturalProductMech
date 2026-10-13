@@ -80,8 +80,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:435019
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 435019, deposited by Southern Research Specialized
-      Biocontainment Screening Center; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 435019, deposited by Southern Research Specialized
+      Biocontainment Screening Center; assay type Confirmatory. Source endpoint: CC50.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 7.979
   units: uM
   activity_class: CYTOTOXIC
@@ -92,6 +94,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 449764, deposited by Southern Research Specialized
       Biocontainment Screening Center; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 2.84
   units: uM
@@ -102,6 +105,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2384, deposited by Southern Research Specialized Biocontainment
       Screening Center; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 2.53
   units: uM
@@ -113,6 +117,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2252, deposited by Southern Research Specialized Biocontainment
       Screening Center; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: EC50
   value: 1.38
   units: uM
@@ -122,9 +127,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:624296
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_056979 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency. Target accession NP_056979 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 18.3564
   units: uM
 - assay: A screen for inhibitors of the PhoP regulon in Salmonella Typhi using a modified
@@ -134,6 +141,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1985, deposited by Southern Research Specialized Biocontainment
       Screening Center; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.741
   units: uM
@@ -145,6 +153,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1850, deposited by Southern Research Specialized Biocontainment
       Screening Center; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 1.29
   units: uM
@@ -154,8 +163,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:463229
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 463229, deposited by Broad Institute; assay type Confirmatory.
-  measurement_type: EC50
+    notes: 'PubChem BioAssay AID 463229, deposited by Broad Institute; assay type
+      Confirmatory. Source endpoint: AC50.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 1.484
   units: uM
 - assay: 'AlphaScreen Assay from US Patent US9284299: "Substituted 1H-indazol-1-ol
@@ -164,6 +175,7 @@ bioactivities:
   - reference: pubchem.aid:1802420
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1802420, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: KI
   value: 3.65
   units: uM
@@ -175,6 +187,7 @@ bioactivities:
   - reference: pubchem.aid:1802420
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1802420, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: KI
   value: 3.65
   units: uM
@@ -186,50 +199,51 @@ bioactivities:
   - reference: pubchem.aid:1802420
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1802420, deposited by BindingDB; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: KI
   value: 19.94
   units: uM
   target_enzyme: UniProtKB:P12830
-  activity_class: ENZYME_INHIBITOR
 - assay: 'AlphaScreen Assay from US Patent US9284299: "Substituted 1H-indazol-1-ol
     analogs as inhibitors of beta catenin/Tcf protein-protein interactions"'
   evidence:
   - reference: pubchem.aid:1802420
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1802420, deposited by BindingDB; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: KI
   value: 66.23
   units: uM
   target_enzyme: UniProtKB:P25054
-  activity_class: ENZYME_INHIBITOR
 - assay: 'AlphaScreen Assay from US Patent US9284299: "Substituted 1H-indazol-1-ol
     analogs as inhibitors of beta catenin/Tcf protein-protein interactions"'
   evidence:
   - reference: pubchem.aid:1802420
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1802420, deposited by BindingDB; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: KI
   value: 19.94
   units: uM
   target_enzyme: UniProtKB:P35222
-  activity_class: ENZYME_INHIBITOR
 - assay: 'AlphaScreen Assay from US Patent US9284299: "Substituted 1H-indazol-1-ol
     analogs as inhibitors of beta catenin/Tcf protein-protein interactions"'
   evidence:
   - reference: pubchem.aid:1802420
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1802420, deposited by BindingDB; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: KI
   value: 66.23
   units: uM
   target_enzyme: UniProtKB:P35222
-  activity_class: ENZYME_INHIBITOR
 - assay: 'AlphaScreen Assay from US Patent US9738628: "Substituted 1H-indazol-1-OL
     analogs as inhibitors of beta catenin/Tcf protein-protein interactions"'
   evidence:
   - reference: pubchem.aid:1797021
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1797021, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: KI
   value: 5.82
   units: uM
@@ -242,6 +256,7 @@ bioactivities:
     notes: PubChem BioAssay AID 820, deposited by PCMD; assay type Confirmatory. Target
       accession AAH95408 was left ungrounded because PubChem did not provide a UniProtKB
       accession.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.0461
   units: uM
@@ -249,9 +264,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:830
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 830, deposited by PCMD; assay type Confirmatory. Target
-      accession AAH95408 was left ungrounded because PubChem did not provide a UniProtKB
-      accession.
+    notes: 'PubChem BioAssay AID 830, deposited by PCMD; assay type Confirmatory.
+      Source outcome: Inconclusive. Target accession AAH95408 was left ungrounded
+      because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
   measurement_type: IC50
   value: 0.04729
   units: uM
@@ -262,6 +278,7 @@ bioactivities:
     notes: PubChem BioAssay AID 825, deposited by PCMD; assay type Confirmatory. Target
       accession NP_001903 was left ungrounded because PubChem did not provide a UniProtKB
       accession.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.22581
   units: uM
@@ -272,6 +289,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1627, deposited by PCMD; assay type Confirmatory.
       Target accession NP_001903 was left ungrounded because PubChem did not provide
       a UniProtKB accession.
+  call: INACTIVE
   measurement_type: IC50
   value: 50.0
   units: uM
@@ -282,6 +300,7 @@ bioactivities:
     notes: PubChem BioAssay AID 831, deposited by PCMD; assay type Confirmatory. Target
       accession NP_004070 was left ungrounded because PubChem did not provide a UniProtKB
       accession.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.176463
   units: uM
@@ -293,6 +312,7 @@ bioactivities:
     notes: PubChem BioAssay AID 754, deposited by Emory University Molecular Libraries
       Screening Center; assay type Confirmatory. Target accession AAD14062 was left
       ungrounded because PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: IC50
   value: 1.875
   units: uM
@@ -304,6 +324,7 @@ bioactivities:
     notes: PubChem BioAssay AID 754, deposited by Emory University Molecular Libraries
       Screening Center; assay type Confirmatory. Target accession NP_005339 was left
       ungrounded because PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: IC50
   value: 1.875
   units: uM
@@ -312,9 +333,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2763
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2763, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_035411 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 2763, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency. Target accession NP_035411 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.4449
   units: uM
   activity_class: ENZYME_INHIBITOR
@@ -323,9 +346,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2762
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2762, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_035411 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 2762, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency. Target accession NP_035411 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.996
   units: uM
   activity_class: ENZYME_INHIBITOR
@@ -334,7 +359,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:888
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 888, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 888, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 1.122
   units: uM
   target_enzyme: UniProtKB:P29466
@@ -455,3 +483,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:42:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

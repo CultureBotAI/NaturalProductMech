@@ -50,6 +50,7 @@ bioactivities:
   - reference: PMID:14552792
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1795945, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.03
   units: uM
@@ -61,6 +62,7 @@ bioactivities:
   - reference: PMID:14552792
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1795945, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.03
   units: uM
@@ -72,6 +74,7 @@ bioactivities:
   - reference: PMID:14552792
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1795945, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.26
   units: uM
@@ -83,6 +86,7 @@ bioactivities:
   - reference: PMID:14552792
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1795945, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.26
   units: uM
@@ -95,6 +99,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977608, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 3F69_A was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: IC50
   value: 1.0
   units: uM
@@ -107,6 +112,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 1R0P_A was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KD
   value: 0.01
   units: uM
@@ -117,6 +123,7 @@ bioactivities:
   - reference: PMID:15657054
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1796959, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.15
   units: uM
@@ -127,6 +134,7 @@ bioactivities:
   - reference: PMID:17266195
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1797180, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.022
   units: uM
@@ -137,6 +145,7 @@ bioactivities:
   - reference: PMID:17266195
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1797180, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.045
   units: uM
@@ -147,6 +156,7 @@ bioactivities:
   - reference: PMID:17266195
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1797180, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.013
   units: uM
@@ -157,6 +167,7 @@ bioactivities:
   - reference: pubchem.aid:2061288
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2061288, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.427
   units: uM
@@ -503,3 +514,7 @@ curation_history:
     DOI:10.1016/s0960-894x(03)00792-3 via exact BindingDB-deposited PubChem BioAssay
     rows for PMID 14552792.
   llm_assisted: true
+- timestamp: '2026-10-13T07:42:10Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

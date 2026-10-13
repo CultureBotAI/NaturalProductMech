@@ -42,6 +42,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other.
+  call: ACTIVE
   measurement_type: KD
   value: 1.2
   units: uM
@@ -52,6 +53,7 @@ bioactivities:
   - reference: PMID:24903735
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1801076, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.14
   units: uM
@@ -62,29 +64,34 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:624248
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 624248, deposited by NCGC; assay type Confirmatory.
-      Target accession AAH15051 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 624248, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency. Target accession AAH15051 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 1.4068
   units: uM
 - assay: 'Inhibitors of the vitamin D receptor (VDR): qHTS'
   evidence:
   - reference: pubchem.aid:504847
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 504847, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_001017535 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 504847, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_001017535
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 79.4328
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Inhibitors of Fructose-1,6-bisphosphate Aldolase from Giardia
     Lamblia
   evidence:
   - reference: pubchem.aid:2451
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2451, deposited by NCGC; assay type Confirmatory.
-      Target accession 2ISV_A was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 2451, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency. Target accession 2ISV_A was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 3.5397
   units: uM
   activity_class: ENZYME_INHIBITOR
@@ -93,16 +100,21 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:602332
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 602332, deposited by NCGC; assay type Confirmatory.
-      Target accession CAQ08732 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 602332, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession CAQ08732
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 35.4813
   units: uM
 - assay: qHTS for Inhibitors of binding or entry into cells for Lassa Virus
   evidence:
   - reference: pubchem.aid:720533
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 720533, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 720533, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 17.7828
   units: uM
   activity_class: ENZYME_INHIBITOR
@@ -110,9 +122,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:720532
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 720532, deposited by NCGC; assay type Confirmatory.
-      Target accession B45705 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 720532, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency. Target accession B45705 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 15.8489
   units: uM
   activity_class: ENZYME_INHIBITOR
@@ -120,21 +134,24 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2551
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2551, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_035411 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 2551, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_035411
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 4.4668
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: 'qHTS screen for small molecules that inhibit ELG1-dependent DNA repair in
     human embryonic kidney (HEK293T) cells expressing luciferase-tagged ELG1: Hit
     Confirmation using MMS Stimulated ELG1'
   evidence:
   - reference: pubchem.aid:624249
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 624249, deposited by NCGC; assay type Confirmatory.
-      Target accession AAH15051 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 624249, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency. Target accession AAH15051 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 1.9872
   units: uM
 - assay: 'qHTS screen for small molecules that inhibit ELG1-dependent DNA repair:
@@ -142,9 +159,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:624250
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 624250, deposited by NCGC; assay type Confirmatory.
-      Target accession AAH15051 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 624250, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession AAH15051
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 17.7111
   units: uM
 - assay: 'qHTS screen for small molecules that inhibit ELG1-dependent DNA repair:
@@ -152,9 +171,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:624251
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 624251, deposited by NCGC; assay type Confirmatory.
-      Target accession AAH15051 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 624251, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency. Target accession AAH15051 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 14.0684
   units: uM
 - assay: 'qHTS screen for small molecules that inhibit ELG1-dependent DNA repair:
@@ -162,9 +183,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:624252
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 624252, deposited by NCGC; assay type Confirmatory.
-      Target accession AAH15051 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 624252, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession AAH15051
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 4.9917
   units: uM
 - assay: 'qHTS Assay for Inhibitors of Fructose-1,6-bisphosphate Aldolase from Giardia
@@ -275,3 +298,7 @@ curation_history:
     and cited DOI:10.1111/cbdd.12371 via the exact BindingDB-deposited PubChem BioAssay
     row for PMID 24903735.
   llm_assisted: true
+- timestamp: '2026-10-13T07:42:47Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

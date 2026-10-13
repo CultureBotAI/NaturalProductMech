@@ -42,6 +42,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977608, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 1AQ7_A was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.9
   units: uM
@@ -157,3 +158,7 @@ curation_history:
     confirmed PDB PRD_000556 matches aeruginosin 98-B, and cited DOI:10.1021/ja972991v
     and DOI:10.2210/pdb1aq7/pdb.
   llm_assisted: true
+- timestamp: '2026-10-13T07:43:23Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

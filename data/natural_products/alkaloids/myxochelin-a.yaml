@@ -60,6 +60,7 @@ bioactivities:
   - reference: PMID:26416255
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1801607, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 1.715
   units: uM
@@ -720,3 +721,7 @@ curation_history:
     and stable sequence evidence URL. No global identifier skip-list change, protein
     identity change or scientific claim upgrade; issue 805 remains open.'
   llm_assisted: true
+- timestamp: '2026-10-13T07:43:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

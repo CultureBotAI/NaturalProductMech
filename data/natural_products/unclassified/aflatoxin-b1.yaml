@@ -103,6 +103,7 @@ bioactivities:
   - reference: PMID:24040835
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1800423, deposited by BindingDB; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: KI
   value: 28.0
   units: uM
@@ -332,3 +333,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:42:35Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
