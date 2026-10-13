@@ -66,6 +66,36 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+discussions:
+- discussion_id: curator-myxochromide-a-hw1-proline
+  kind: CURATION_TODO
+  status: OPEN
+  posed_by: codex
+  prompt: What experimental evidence establishes the assigned proline configuration
+    of the BGC0001422 HW-1 product?
+  rationale: The source-matching C44 graph yields R-proline in a virtual-hydrolysis
+    calculation, while BGC0001422 predicts an S-proline substrate. Prediction does
+    not establish final-product stereochemistry. The independent 2006 L-proline assignment
+    concerns M. xanthus DK1050, not M. fulvus HW-1; the cited 2017 HW-1 full text
+    was unavailable (HTTP403). Retain the assigned center, two undefined alanine centers,
+    incomplete-stereo flag and imported evidence grades until exact-strain evidence
+    is inspected. This qualification is not a stereo correction, experimental identity
+    approval, or permission to merge the C45 owner.
+  evidence:
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001422.4/annotations.json
+    evidence_source: database
+    explanation: Retained source graph and module substrate context; predictions are
+      not experimental residue assignments.
+  - reference: https://www.wiley-vch.de/contents/jc_2002/2006/z503737_s.pdf
+    evidence_source: full_text
+    explanation: 'Independent 2006 supplement, Figures 1-2 and Table 1: A-series structure
+      and L-proline from DK1050. Not an HW-1, DK897, A47 or Mx48 experiment.'
+  - reference: PMID:28128551
+    evidence_source: abstract
+    explanation: Cited 2017 genome-mining study; metadata and abstract do not resolve
+      exact per-strain configurations. Full text was unavailable.
+  - reference: https://github.com/CultureBotAI/NaturalProductMech/issues/925
+    explanation: Open identity adjudication; qualification does not resolve this finding.
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
   curator: seed_from_sources
@@ -75,3 +105,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T18:41:28Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add a cited OPEN myxochromide exact-identity qualification. Preserve chemistry,
+    source assertions, evidence grades and SEEDED status; no identity migration or
+    stereochemical correction.
+  llm_assisted: true

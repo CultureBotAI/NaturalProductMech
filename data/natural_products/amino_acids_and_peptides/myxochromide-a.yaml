@@ -49,6 +49,16 @@ producer_organisms:
   - reference: PMID:28128551
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0001426 entry version 4; citation taken from the entry level
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/KX622596.1
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: DK897. The KX622596.1 GenBank source feature identifies
+      DK897. This qualifies the deposited locus, not exact myxochromide congener production;
+      the chemical identity conflict remains open in issue #924. No taxon or evidence
+      grade changes. See issue #926. Taxon identity and evidence grade are unchanged;
+      this is not a species-wide experiment. MIBiG source row BGC0001426:1; SHA256
+      06dc280056bd2cbaff201e2da61c3a6215c47482780bf93d91a0f38dbf9071e4. Curator: codex;
+      date: 2026-10-13.'
+  strain: DK897
 - taxon_id: NCBITaxon:34
   taxon_label: Myxococcus xanthus
   evidence_basis: SOURCE_ASSERTION
@@ -61,6 +71,16 @@ producer_organisms:
   - reference: PMID:28128551
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0001427 entry version 4; citation taken from the entry level
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/KX622597.1
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: A47. The KX622597.1 GenBank source feature identifies
+      A47. This qualifies the deposited locus, not exact myxochromide congener production;
+      the chemical identity conflict remains open in issue #924. No taxon or evidence
+      grade changes. See issue #926. Taxon identity and evidence grade are unchanged;
+      this is not a species-wide experiment. MIBiG source row BGC0001427:1; SHA256
+      4d6c99aeedb287e6fa4d8f4c349258c47c6a545a35498afbe7f9ec4fba4f7194. Curator: codex;
+      date: 2026-10-13.'
+  strain: A47
 - taxon_id: NCBITaxon:34
   taxon_label: Myxococcus xanthus
   evidence_basis: SOURCE_ASSERTION
@@ -73,6 +93,16 @@ producer_organisms:
   - reference: PMID:28128551
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0001428 entry version 4; citation taken from the entry level
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/KX622598.1
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: Mx48. The KX622598.1 GenBank source feature identifies
+      Mx48. This qualifies the deposited locus, not exact myxochromide congener production;
+      the chemical identity conflict remains open in issue #924. No taxon or evidence
+      grade changes. See issue #926. Taxon identity and evidence grade are unchanged;
+      this is not a species-wide experiment. MIBiG source row BGC0001428:1; SHA256
+      399c5a981f1674e3178e597f0b409504c57c16f089859ef61e130b2ddbae34e6. Curator: codex;
+      date: 2026-10-13.'
+  strain: Mx48
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0001425
   entry_version: '4'
@@ -164,6 +194,50 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0001425, BGC0001426,
     BGC0001427, BGC0001428. Confirm they describe the same compound rather than an
     upstream cross-reference error.'
+- discussion_id: curator-myxochromide-a-core-identity
+  kind: CURATION_TODO
+  status: OPEN
+  posed_by: codex
+  prompt: Does the imported C45 graph represent the experimentally established product
+    of each of BGC0001425-1428?
+  rationale: 'The imported graph has a 21-membered lactone and alpha-carboxamide connectivity,
+    whereas the independent 2006 A3 structure from DK1050, a DK1622 derivative, has
+    a 19-membered glutamine-based core. The side-chain length agrees with A3, so chain
+    variation alone does not explain the ring difference. Calculated R-proline also
+    differs from the source-context L-proline assignment. These comparisons do not
+    establish every 2017 strain-specific product: the cited PMID:28128551 full text
+    was unavailable (HTTP403). Chemistry and all source claims are retained pending
+    exact-strain adjudication, not independently validated for this graph. Do not
+    merge the same-label C44 owner, select replacement stereochemistry, or transfer
+    production, occurrence or mechanism claims without primary evidence and a guarded
+    migration.'
+  evidence:
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001425.4/annotations.json
+    evidence_source: database
+    explanation: Retained source graph and module substrate context; predictions are
+      not experimental residue assignments.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001426.4/annotations.json
+    evidence_source: database
+    explanation: Retained source graph and module substrate context; predictions are
+      not experimental residue assignments.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001427.4/annotations.json
+    evidence_source: database
+    explanation: Retained source graph and module substrate context; predictions are
+      not experimental residue assignments.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001428.4/annotations.json
+    evidence_source: database
+    explanation: Retained source graph and module substrate context; predictions are
+      not experimental residue assignments.
+  - reference: https://www.wiley-vch.de/contents/jc_2002/2006/z503737_s.pdf
+    evidence_source: full_text
+    explanation: 'Independent 2006 supplement, Figures 1-2 and Table 1: A-series structure
+      and L-proline from DK1050. Not an HW-1, DK897, A47 or Mx48 experiment.'
+  - reference: PMID:28128551
+    evidence_source: abstract
+    explanation: Cited 2017 genome-mining study; metadata and abstract do not resolve
+      exact per-strain configurations. Full text was unavailable.
+  - reference: https://github.com/CultureBotAI/NaturalProductMech/issues/924
+    explanation: Open identity adjudication; qualification does not resolve this finding.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -173,3 +247,14 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T18:41:21Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T18:41:27Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add a cited OPEN myxochromide exact-identity qualification. Preserve chemistry,
+    source assertions, evidence grades and SEEDED status; no identity migration or
+    stereochemical correction.
+  llm_assisted: true
