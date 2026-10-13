@@ -328,11 +328,11 @@ bioactivities:
   - reference: PMID:22591317
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1803291, deposited by BindingDB; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: KI
   value: 18300.0
   units: uM
   target_enzyme: UniProtKB:P27169
-  activity_class: ANTIBACTERIAL
 - assay: A screen for compounds that inhibit the activity of LtaS in Staphylococcus
     aureus
   evidence:
@@ -417,3 +417,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:42:34Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

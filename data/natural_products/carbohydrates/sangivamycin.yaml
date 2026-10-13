@@ -55,6 +55,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 3NYN_A was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KD
   value: 1.0
   units: uM
@@ -163,3 +164,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:42:31Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

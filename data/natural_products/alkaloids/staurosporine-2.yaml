@@ -238,8 +238,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:743312
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 743312, deposited by Broad Institute; assay type Confirmatory.
-  measurement_type: EC50
+    notes: 'PubChem BioAssay AID 743312, deposited by Broad Institute; assay type
+      Confirmatory. Source endpoint: AC50.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 26.77
   units: uM
   activity_class: CYTOTOXIC
@@ -247,14 +249,20 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963315
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963315, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963315, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.8802
   units: uM
 - assay: ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen
   evidence:
   - reference: pubchem.aid:1963315
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963315, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963315, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.8802
   units: uM
   target_enzyme: UniProtKB:P00519
@@ -262,14 +270,20 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963316
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963316, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963316, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.6112
   units: uM
 - assay: ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen - plus ATP
   evidence:
   - reference: pubchem.aid:1963316
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963316, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963316, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.6112
   units: uM
   target_enzyme: UniProtKB:P00519
@@ -277,14 +291,20 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963317
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963317, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963317, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 3.0633
   units: uM
 - assay: ABL1 kinase (ABL1-N-HiBiT) enzymatic inhibition screen - Functional assay
   evidence:
   - reference: pubchem.aid:1963317
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963317, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963317, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 3.0633
   units: uM
   target_enzyme: UniProtKB:P00519
@@ -296,6 +316,7 @@ bioactivities:
   - reference: PMID:16413780
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1797336, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.0015
   units: uM
@@ -309,6 +330,7 @@ bioactivities:
   - reference: PMID:16413780
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1797336, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.0065
   units: uM
@@ -322,6 +344,7 @@ bioactivities:
   - reference: PMID:16413780
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1797336, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.01
   units: uM
@@ -332,9 +355,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1731
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1731, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_005219 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1731, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency. Target accession NP_005219 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.3981
   units: uM
   activity_class: ENZYME_INHIBITOR
@@ -343,9 +368,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1727
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1727, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_005219 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1727, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency. Target accession NP_005219 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.3548
   units: uM
   activity_class: ENZYME_INHIBITOR
@@ -354,9 +381,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1729
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1729, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_005219 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1729, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency. Target accession NP_005219 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.0056
   units: uM
   activity_class: ENZYME_INHIBITOR
@@ -365,9 +394,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1726
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1726, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_005219 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1726, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency. Target accession NP_005219 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.0398
   units: uM
   activity_class: ENZYME_INHIBITOR
@@ -376,9 +407,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1732
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1732, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_002746 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1732, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency. Target accession NP_002746 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.1
   units: uM
   activity_class: ENZYME_INHIBITOR
@@ -387,18 +420,22 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1728
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1728, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_002871 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1728, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_002871
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.1778
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
     (r) AML: AML-191 cell line'
   evidence:
   - reference: pubchem.aid:2202236
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202236, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202236, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.0295
   units: uM
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
@@ -406,7 +443,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202237
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202237, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202237, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.0332
   units: uM
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
@@ -414,7 +454,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202234
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202234, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202234, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.0934
   units: uM
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
@@ -422,7 +465,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202233
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202233, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202233, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.0074
   units: uM
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
@@ -430,7 +476,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202232
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202232, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202232, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.0833
   units: uM
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
@@ -438,7 +487,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202231
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202231, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202231, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.1864
   units: uM
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
@@ -446,7 +498,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202235
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202235, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202235, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.0661
   units: uM
 - assay: 'Biochemical Assay from US Patent US20240002365: "PYRIDAZINE AND 1,2,4-TRIAZINE
@@ -455,6 +510,7 @@ bioactivities:
   - reference: pubchem.aid:1920143
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1920143, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.0021
   units: uM
@@ -465,6 +521,7 @@ bioactivities:
   - reference: pubchem.aid:1920143
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1920143, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.0008
   units: uM
@@ -1473,117 +1530,8 @@ causal_graphs:
       evidence_type: PRIMARY_EXPERIMENT
       notes: 'BindingDB row 43, PubChem row 2355, PMID 9383464: active; rat PKC beta
         inhibition assay.'
-- graph_id: staurosporine-aglycone-assays
-  scope: BIOSYNTHESIS
-  description: 'Partial TP-A0274 aglycone evidence: C-His StaP crystallography, separately
-    purified C-His StaP/StaC tandem assays, and staJ-deletion cultures. IDs denote
-    canonical parents, not constructs. No stable complex, direct StaC substrate, radical
-    mechanism or sugar stereochemistry inferred.'
-  nodes:
-  - node_id: stap
-    label: TP-A0274 StaP canonical protein
-    node_type: ENZYME
-    identifier: UniProtKB:Q83WG3
-    grounding_status: GROUNDED
-  - node_id: cpa
-    label: Chromopyrrolic acid
-    node_type: PRECURSOR
-    grounding_status: UNGROUNDED
-  - node_id: stac
-    label: TP-A0274 StaC canonical protein
-    node_type: ENZYME
-    identifier: UniProtKB:A3KBE8
-    grounding_status: GROUNDED
-  - node_id: fad
-    label: Added FAD
-    node_type: COMPOUND
-    grounding_status: UNGROUNDED
-  - node_id: assay
-    label: StaP/StaC tandem reaction
-    node_type: PROCESS
-  - node_id: k252c
-    label: K252c (staurosporine aglycone)
-    node_type: PRECURSOR
-    grounding_status: UNGROUNDED
-  - node_id: staj
-    label: TP-A0274 StaJ wild-type protein
-    node_type: PROTEIN
-    identifier: UniProtKB:Q83WG1
-    grounding_status: GROUNDED
-  - node_id: mutant
-    label: TP-A0274 staJ in-frame deletion strain
-    node_type: ORGANISM
-    grounding_status: UNGROUNDED
-  edges:
-  - subject: stap
-    predicate: binds at its active site
-    object: cpa
-    evidence:
-    - reference: DOI:10.1073/pnas.0702946104
-      evidence_type: PRIMARY_EXPERIMENT
-      snippet: the functional significance of the latter two molecules is unclear
-    - reference: https://www.rcsb.org/structure/2Z3U
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-03'
-    notes: '2Z3U (2.4 A): Q83WG3 (417 aa) plus LEHHHHHH, 425 aa total. Only active-site
-      CPA interpreted; two other sites may be packing artifacts.'
-  - subject: stap
-    predicate: participates in
-    object: assay
-    evidence:
-    - reference: DOI:10.1271/bbb.110474
-      evidence_type: PRIMARY_EXPERIMENT
-    notes: 417-aa canonical parent = AB088119.1/BAC55212.1; preparation as in the
-      2007 StaP study.
-  - subject: stac
-    predicate: contributes to K252c formation in
-    object: assay
-    evidence:
-    - reference: DOI:10.1271/bbb.110474
-      evidence_type: PRIMARY_EXPERIMENT
-    notes: 545-aa canonical parent = AB088119.1/BAF47693.1; both cloning-primer targets
-      match. C-His tag is not part of UniProt.
-  - subject: cpa
-    predicate: is supplied to
-    object: assay
-    evidence:
-    - reference: DOI:10.1271/bbb.110474
-      evidence_type: PRIMARY_EXPERIMENT
-    notes: 'Fig. 4A: 1 uM StaP, 5 uM StaC, 65 uM CPA; 75 mM HEPES pH 8, 30 C, 5 min;
-      spinach ferredoxin/reductase and NADH.'
-  - subject: fad
-    predicate: enhances K252c output in
-    object: assay
-    evidence:
-    - reference: DOI:10.1271/bbb.110474
-      evidence_type: PRIMARY_EXPERIMENT
-      snippet: Exogenous FAD increased K252c production
-    notes: 'Fig. 4A: output rises up to 0.5 uM added FAD, then falls. Tandem response,
-      not a direct FAD-binding measurement.'
-  - subject: assay
-    predicate: produces predominantly
-    object: k252c
-    evidence:
-    - reference: DOI:10.1271/bbb.110474
-      evidence_type: PRIMARY_EXPERIMENT
-    notes: Fig. 4A; HPLC against NMR/LC-MS-verified standards. No stable StaC substrate
-      or elementary mechanism assigned.
-  - subject: mutant
-    predicate: has in-frame deletion in the gene encoding
-    object: staj
-    evidence:
-    - reference: DOI:10.1271/bbb.110474
-      evidence_type: PRIMARY_EXPERIMENT
-    notes: 472-aa parent = AB088119.1/BAC55214.1, not the mutant allele. All four
-      deletion-primer targets match.
-  - subject: mutant
-    predicate: yielded isolated
-    object: k252c
-    evidence:
-    - reference: DOI:10.1271/bbb.110474
-      evidence_type: PRIMARY_EXPERIMENT
-    notes: 'Methods: 5 days, 30 C; 128 mg purified from 4 L by extraction/HPLC, not
-      a fermentation titer. NMR/LC-MS identity, [M+H]+ 312.'
+causal_graph_refs:
+- staurosporine-aglycone-assays
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -1751,3 +1699,15 @@ curation_history:
   changes: Restored explicit single CSF1R construct context after prose compaction;
     measurements unchanged.
   llm_assisted: true
+- timestamp: '2026-10-13T07:39:14Z'
+  curator: Codex
+  action: MIGRATED_GRAPH_COMPONENT
+  changes: Move final staurosporine-aglycone-assays graph to an exact-owner component
+    to retain complete BioAssay context under 64 KiB (issue196, PR879). Preserve all
+    graph objects/order/evidence from 988766b35bae770331e9ec46018158654a88b4b7, prior
+    history, identity and status; no scientific sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-13T07:41:52Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

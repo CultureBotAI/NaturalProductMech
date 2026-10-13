@@ -287,7 +287,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963586
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963586, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963586, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.0033
   units: uM
 - assay: 5-hydroxytryptamine receptor 2A (HTR2A) small molecule antagonists, cell-based
@@ -295,9 +298,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963586
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963586, deposited by 824; assay type Confirmatory.
-      Target accession AAH96839 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1963586, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession AAH96839
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.0033
   units: uM
 - assay: A Cell Based Secondary Assay To Explore Cytotoxicity of Compounds that Inhibit
@@ -305,8 +310,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:435019
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 435019, deposited by Southern Research Specialized
-      Biocontainment Screening Center; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 435019, deposited by Southern Research Specialized
+      Biocontainment Screening Center; assay type Confirmatory. Source endpoint: CC50.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 20.079
   units: uM
   activity_class: CYTOTOXIC
@@ -317,6 +324,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 449764, deposited by Southern Research Specialized
       Biocontainment Screening Center; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 88.95
   units: uM
@@ -325,9 +333,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:624296
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_056979 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency. Target accession NP_056979 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 1.8356
   units: uM
 - assay: A quantitative high throughput screen for small molecules that induce DNA
@@ -335,23 +345,31 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:624297
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_056979 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency. Target accession NP_056979 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 25.929
   units: uM
 - assay: ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen
   evidence:
   - reference: pubchem.aid:1963315
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963315, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963315, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 3.9317
   units: uM
 - assay: ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen
   evidence:
   - reference: pubchem.aid:1963315
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963315, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963315, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 3.9317
   units: uM
   target_enzyme: UniProtKB:P00519
@@ -359,14 +377,20 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963316
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963316, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963316, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 27.3014
   units: uM
 - assay: ABL1 kinase (ABL1-N-HiBiT) SDR gain of signal screen - plus ATP
   evidence:
   - reference: pubchem.aid:1963316
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963316, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963316, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 27.3014
   units: uM
   target_enzyme: UniProtKB:P00519
@@ -374,14 +398,20 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963317
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963317, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963317, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 34.3705
   units: uM
 - assay: ABL1 kinase (ABL1-N-HiBiT) enzymatic inhibition screen - Functional assay
   evidence:
   - reference: pubchem.aid:1963317
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963317, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963317, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 34.3705
   units: uM
   target_enzyme: UniProtKB:P00519
@@ -390,9 +420,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1347398
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1347398, deposited by 824; assay type Confirmatory.
-      Target accession AAA68151 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1347398, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency. Target accession AAA68151 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 15.5351
   units: uM
 - assay: 'Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS
@@ -400,7 +432,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2061107
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2061107, deposited by 824; assay type Summary.
+    notes: 'PubChem BioAssay AID 2061107, deposited by 824; assay type Summary. Source
+      outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 30.6379
   units: uM
 - assay: 'Adrenergic beta2 receptor (ADRB2) small molecule agonists, cell-based qHTS
@@ -408,9 +443,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2061107
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2061107, deposited by 824; assay type Summary. Target
-      accession NP_000015 was left ungrounded because PubChem did not provide a UniProtKB
-      accession.
+    notes: 'PubChem BioAssay AID 2061107, deposited by 824; assay type Summary. Source
+      outcome: Inconclusive. Source endpoint: Potency. Target accession NP_000015
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 30.6379
   units: uM
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
@@ -418,7 +455,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202236
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202236, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202236, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 16.6155
   units: uM
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
@@ -426,7 +466,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202237
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202237, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202237, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 37.1975
   units: uM
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
@@ -434,7 +477,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202234
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202234, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202234, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 37.1975
   units: uM
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
@@ -442,7 +488,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202232
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202232, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202232, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 9.3436
   units: uM
 - assay: 'BET inhibitor-based combinations targeting novel dependencies in MECOM-rearranged
@@ -450,7 +499,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202231
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202231, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202231, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 20.9177
   units: uM
 - assay: Caspase-3/7 induction in CHO-K1 cells by small molecules, qHTS cell viability
@@ -458,7 +510,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1346979
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1346979, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1346979, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 33.5937
   units: uM
 - assay: Caspase-3/7 induction in CHO-K1 cells by small molecules, qHTS cell viability
@@ -466,25 +521,32 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1346979
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1346979, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1346979, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 48.5577
   units: uM
 - assay: Caspase-3/7 induction in HepG2 cells by small molecules, qHTS assay
   evidence:
   - reference: pubchem.aid:1346978
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1346978, deposited by 824; assay type Confirmatory.
-      Target accession AAP35329 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1346978, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency. Target accession AAP35329 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 15.0057
   units: uM
 - assay: Caspase-3/7 induction in HepG2 cells by small molecules, qHTS assay
   evidence:
   - reference: pubchem.aid:1346978
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1346978, deposited by 824; assay type Confirmatory.
-      Target accession CAC88866 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1346978, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency. Target accession CAC88866 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 15.0057
   units: uM
 - assay: Caspase-3/7 induction in HepG2 cells by small molecules, qHTS cell viability
@@ -492,7 +554,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1346981
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1346981, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1346981, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 26.6844
   units: uM
   notes: 554 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
@@ -1010,3 +1075,7 @@ curation_history:
     source grades, targets, activities, plant/fungal occurrences, stereochemistry,
     classifications, SEEDED status and all old history; not full-record sign-off.'
   llm_assisted: true
+- timestamp: '2026-10-13T07:42:52Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

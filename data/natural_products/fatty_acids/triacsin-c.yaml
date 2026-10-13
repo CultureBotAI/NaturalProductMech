@@ -42,7 +42,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:488913
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 488913, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 488913, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.7911
   units: uM
 - assay: 'Confirmation Concentration-Response Assay for lipid storage modulators:
@@ -50,7 +53,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:504432
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 504432, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 504432, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 2.807
   units: uM
 - assay: 'Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase
@@ -58,26 +64,33 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1671190
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1671190, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1671190, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 50.1187
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: 'Primary qHTS assay for inhibitors of human arachidonate 12S-lipoxygenase
     (ALOX12): Round 2'
   evidence:
   - reference: pubchem.aid:1671190
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1671190, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1671190, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 50.1187
   units: uM
   target_enzyme: UniProtKB:P18054
-  activity_class: ENZYME_INHIBITOR
 - assay: 'Secondary Assay for lipid storage modulators: AML12 cell LDSA assay for
     probe SAR'
   evidence:
   - reference: pubchem.aid:504434
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 504434, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 504434, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.4992
   units: uM
 - assay: 'Secondary Assay for lipid storage modulators: Hela cell LDSA assay for probe
@@ -85,7 +98,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:488900
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 488900, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 488900, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.0112
   units: uM
 - assay: 'Secondary Assay for lipid storage modulators: HepG2 cell LDSA assay for
@@ -93,7 +109,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:492960
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 492960, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 492960, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.3965
   units: uM
 related_records:
@@ -104,7 +123,6 @@ related_records:
   source_version: 74f6cc836249
 bioactivity_summary:
 - ANTIPARASITIC
-- ENZYME_INHIBITOR
 bgc_class:
 - OTHER
 xrefs:
@@ -160,3 +178,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:42:28Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

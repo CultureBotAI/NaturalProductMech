@@ -56,6 +56,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 1O5P_A was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KD
   value: 0.0001
   units: uM
@@ -182,3 +183,7 @@ curation_history:
     node to UniProtKB:P0A3R9 via PDB 1O5P chain A, and cited DOI:10.1074/jbc.M411579200
     and DOI:10.2210/pdb1o5p/pdb.
   llm_assisted: true
+- timestamp: '2026-10-13T07:42:50Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

@@ -179,9 +179,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:624297
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_056979 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_056979
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 1.636
   units: uM
 - assay: Confirmatory fluorescence-based thiol-reactive (MSTI) qHTS assay for identification
@@ -189,7 +191,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1845226
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1845226, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1845226, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 0.9698
   units: uM
 - assay: 'Cytochrome P450 Family 3 Subfamily A Member 4 (CYP3A4) small molecule antagonists:
@@ -197,7 +202,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1671201
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1671201, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1671201, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 3.4528
   units: uM
 - assay: 'Cytochrome P450 Family 3 Subfamily A Member 4 (CYP3A4) small molecule antagonists:
@@ -205,25 +213,32 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1671201
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1671201, deposited by 824; assay type Confirmatory.
-      Target accession ABI96208 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1671201, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency. Target accession ABI96208 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 3.4528
   units: uM
 - assay: Dopamine D2 receptor (DRD2) small molecule antagonists, cell-based qHTS assay
   evidence:
   - reference: pubchem.aid:1963595
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963595, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963595, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 52.8704
   units: uM
 - assay: Dopamine D2 receptor (DRD2) small molecule antagonists, cell-based qHTS assay
   evidence:
   - reference: pubchem.aid:1963595
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963595, deposited by 824; assay type Confirmatory.
-      Target accession AAH21195 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1963595, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession AAH21195
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 52.8704
   units: uM
 - assay: Dose response confirmation of small molecule inhibitors of Low Molecular
@@ -235,10 +250,10 @@ bioactivities:
     notes: PubChem BioAssay AID 652005, deposited by Burnham Center for Chemical Genomics;
       assay type Confirmatory. Target accession NP_004291 was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: INACTIVE
   measurement_type: IC50
   value: 80.0
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: Dose response confirmation of small molecule inhibitors of Low Molecular
     Weight Protein Tyrosine Phosphatase, LMPTP, via a fluorescence intensity assay
   evidence:
@@ -246,27 +261,29 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 651700, deposited by Burnham Center for Chemical Genomics;
       assay type Confirmatory.
+  call: INACTIVE
   measurement_type: IC50
   value: 47.1
   units: uM
   target_enzyme: UniProtKB:P24666
-  activity_class: ENZYME_INHIBITOR
 - assay: 'Inhibitors of Secretory Acid Sphingomyelinase (S-ASM): qHTS'
   evidence:
   - reference: pubchem.aid:504937
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 504937, deposited by NCGC; assay type Confirmatory.
-      Target accession AAA58377 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 504937, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession AAA58377
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 70.7946
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: Luminescence Microorganism-Based Dose Confirmation HTS to Identify Compounds
     Cytotoxic to SK(-)GAS Group A Streptococcus
   evidence:
   - reference: pubchem.aid:1900
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1900, deposited by Broad Institute; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: EC50
   value: 0.06
   units: uM
@@ -279,6 +296,7 @@ bioactivities:
     notes: PubChem BioAssay AID 1902, deposited by Broad Institute; assay type Confirmatory.
       Target accession NP_269944 was left ungrounded because PubChem did not provide
       a UniProtKB accession.
+  call: ACTIVE
   measurement_type: EC50
   value: 0.06
   units: uM
@@ -289,6 +307,7 @@ bioactivities:
   - reference: pubchem.aid:1915
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1915, deposited by Broad Institute; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: EC50
   value: 0.06
   units: uM
@@ -300,6 +319,7 @@ bioactivities:
   - reference: PMID:24126916
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1802450, deposited by BindingDB; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: KI
   value: 882.0
   units: uM
@@ -308,27 +328,32 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:504834
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 504834, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 504834, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 9.285
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: 'Surface Plasmon Resonance (SPR) from US Patent US20240118263: "TARGET FOR
     SCREENING ANTI-TUMOR DRUG, USE THEREOF AND SCREENING METHOD THEREFOR"'
   evidence:
   - reference: pubchem.aid:1963645
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1963645, deposited by BindingDB; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: KD
   value: 10.4
   units: uM
   target_enzyme: UniProtKB:Q8IZQ5
-  activity_class: CYTOTOXIC
 - assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
     factor 3 (EPAC1)
   evidence:
   - reference: pubchem.aid:1645883
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 125.892
   units: uM
 - assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
@@ -336,7 +361,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645883
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645883, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 125.892
   units: uM
   target_enzyme: UniProtKB:O95398
@@ -345,7 +373,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645887
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 0.7943
   units: uM
 - assay: Validation qHTS for agonist of cAMP-regulated guanine nucleotide exchange
@@ -353,7 +384,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645887
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645887, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 0.7943
   units: uM
   target_enzyme: UniProtKB:Q8WZA2
@@ -362,7 +396,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963824
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.0006
   units: uM
 - assay: Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug
@@ -370,7 +407,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963824
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.0006
   units: uM
   target_enzyme: UniProtKB:P43405
@@ -378,28 +418,33 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:485294
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 485294, deposited by NCGC; assay type Confirmatory.
-      Target accession 2HDS_A was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 485294, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession 2HDS_A
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 1.9953
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Inhibitors of AmpC Beta-Lactamase (assay without detergent)
   evidence:
   - reference: pubchem.aid:485341
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 485341, deposited by NCGC; assay type Confirmatory.
-      Target accession 2HDS_A was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 485341, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency. Target accession 2HDS_A was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 39.8107
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: qHTS assay for small molecule activators of the heat shock response signaling
     pathway - cell viability counter screen
   evidence:
   - reference: pubchem.aid:743209
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 743209, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 743209, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 16.865
   units: uM
 - assay: qHTS assay for small molecule agonists of the antioxidant response element
@@ -407,7 +452,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:743203
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 743203, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 743203, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 52.8704
   units: uM
   notes: 46 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
@@ -683,3 +731,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:43:05Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

@@ -1,0 +1,122 @@
+record_id: naturalproductmech:mibig-c702c4be08
+standard_inchi_key: HKSZLNNOFSGOKW-UHFFFAOYSA-N
+graph:
+  graph_id: staurosporine-aglycone-assays
+  scope: BIOSYNTHESIS
+  description: 'Partial TP-A0274 aglycone evidence: C-His StaP crystallography, separately
+    purified C-His StaP/StaC tandem assays, and staJ-deletion cultures. IDs denote
+    canonical parents, not constructs. No stable complex, direct StaC substrate, radical
+    mechanism or sugar stereochemistry inferred.'
+  nodes:
+  - node_id: stap
+    label: TP-A0274 StaP canonical protein
+    node_type: ENZYME
+    identifier: UniProtKB:Q83WG3
+    grounding_status: GROUNDED
+  - node_id: cpa
+    label: Chromopyrrolic acid
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: stac
+    label: TP-A0274 StaC canonical protein
+    node_type: ENZYME
+    identifier: UniProtKB:A3KBE8
+    grounding_status: GROUNDED
+  - node_id: fad
+    label: Added FAD
+    node_type: COMPOUND
+    grounding_status: UNGROUNDED
+  - node_id: assay
+    label: StaP/StaC tandem reaction
+    node_type: PROCESS
+  - node_id: k252c
+    label: K252c (staurosporine aglycone)
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: staj
+    label: TP-A0274 StaJ wild-type protein
+    node_type: PROTEIN
+    identifier: UniProtKB:Q83WG1
+    grounding_status: GROUNDED
+  - node_id: mutant
+    label: TP-A0274 staJ in-frame deletion strain
+    node_type: ORGANISM
+    grounding_status: UNGROUNDED
+  edges:
+  - subject: stap
+    predicate: binds at its active site
+    object: cpa
+    evidence:
+    - reference: DOI:10.1073/pnas.0702946104
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: the functional significance of the latter two molecules is unclear
+    - reference: https://www.rcsb.org/structure/2Z3U
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+    notes: '2Z3U (2.4 A): Q83WG3 (417 aa) plus LEHHHHHH, 425 aa total. Only active-site
+      CPA interpreted; two other sites may be packing artifacts.'
+  - subject: stap
+    predicate: participates in
+    object: assay
+    evidence:
+    - reference: DOI:10.1271/bbb.110474
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: 417-aa canonical parent = AB088119.1/BAC55212.1; preparation as in the
+      2007 StaP study.
+  - subject: stac
+    predicate: contributes to K252c formation in
+    object: assay
+    evidence:
+    - reference: DOI:10.1271/bbb.110474
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: 545-aa canonical parent = AB088119.1/BAF47693.1; both cloning-primer targets
+      match. C-His tag is not part of UniProt.
+  - subject: cpa
+    predicate: is supplied to
+    object: assay
+    evidence:
+    - reference: DOI:10.1271/bbb.110474
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: 'Fig. 4A: 1 uM StaP, 5 uM StaC, 65 uM CPA; 75 mM HEPES pH 8, 30 C, 5 min;
+      spinach ferredoxin/reductase and NADH.'
+  - subject: fad
+    predicate: enhances K252c output in
+    object: assay
+    evidence:
+    - reference: DOI:10.1271/bbb.110474
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Exogenous FAD increased K252c production
+    notes: 'Fig. 4A: output rises up to 0.5 uM added FAD, then falls. Tandem response,
+      not a direct FAD-binding measurement.'
+  - subject: assay
+    predicate: produces predominantly
+    object: k252c
+    evidence:
+    - reference: DOI:10.1271/bbb.110474
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: Fig. 4A; HPLC against NMR/LC-MS-verified standards. No stable StaC substrate
+      or elementary mechanism assigned.
+  - subject: mutant
+    predicate: has in-frame deletion in the gene encoding
+    object: staj
+    evidence:
+    - reference: DOI:10.1271/bbb.110474
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: 472-aa parent = AB088119.1/BAC55214.1, not the mutant allele. All four
+      deletion-primer targets match.
+  - subject: mutant
+    predicate: yielded isolated
+    object: k252c
+    evidence:
+    - reference: DOI:10.1271/bbb.110474
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: 'Methods: 5 days, 30 C; 128 mg purified from 4 L by extraction/HPLC, not
+      a fermentation titer. NMR/LC-MS identity, [M+H]+ 312.'
+curation_history:
+- timestamp: '2026-10-13T07:39:14Z'
+  curator: Codex
+  action: MIGRATED_GRAPH_COMPONENT
+  changes: Preserve the final graph byte-semantically from data/natural_products/alkaloids/staurosporine-2.yaml
+    at 988766b35bae770331e9ec46018158654a88b4b7; source record retains prior history.
+    Storage only for issue196 and PR879; no scientific reassessment or identity correction.
+  llm_assisted: true

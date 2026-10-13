@@ -202,6 +202,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 3RE4_A was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KD
   value: 0.04
   units: uM
@@ -386,3 +387,7 @@ curation_history:
     and SIFTS, confirmed PDB TO1 matches toyocamycin, and cited DOI:10.1371/journal.pone.0037371
     and DOI:10.2210/pdb3re4/pdb.
   llm_assisted: true
+- timestamp: '2026-10-13T07:43:27Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

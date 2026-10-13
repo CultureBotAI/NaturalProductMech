@@ -195,11 +195,12 @@ def build_record(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
             duplicate_bioactivities += 1
             continue
         seen_bioactivities.add(key)
-        result = b.get("call") or measurement({
+        measured = measurement({
             "measurement_type": b.get("measurement_type"),
             "measurement_value": b.get("value"),
             "measurement_units": b.get("units"),
         })
+        result = "; ".join(part for part in (measured, b.get("call")) if part)
         bioactivities.append({"assay": b.get("assay", ""), "result": result,
                               "reference": first_reference(b), "source": b,
                               "target": b.get("target_enzyme") or "Not recorded"})

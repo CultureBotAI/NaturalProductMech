@@ -68,7 +68,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202728
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202728, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202728, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 4.8517
   units: uM
 - assay: Constitutive androstane receptor (CAR) small molecule agonists, cell-based
@@ -76,9 +79,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202728
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202728, deposited by NCGC; assay type Confirmatory.
-      Target accession ADZ17385 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 2202728, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession ADZ17385
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 4.8517
   units: uM
 - assay: GF-AFC viability counterscreen for inhibitors of alpha-synuclein gene (SNCA)
@@ -86,16 +91,21 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1671193
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1671193, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1671193, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.0063
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: P-glycoprotein substrates identified in KB-8-5-11 adenocarcinoma cell line,
     qHTS therapeutic library screen
   evidence:
   - reference: PMID:31515284
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1346987, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1346987, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.9677
   units: uM
 - assay: Primary fluorescence-based thiol-reactive (MSTI) qHTS assay for identification
@@ -103,7 +113,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1845221
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1845221, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1845221, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 8.899
   units: uM
 - assay: Primary qHTS for inhibitors of nuclear receptor binding SET domain protein
@@ -111,7 +124,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645877
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.0136
   units: uM
   activity_class: ENZYME_INHIBITOR
@@ -120,7 +136,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645877
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645877, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.0136
   units: uM
   target_enzyme: UniProtKB:O96028
@@ -130,7 +149,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645876
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.0108
   units: uM
   activity_class: ENZYME_INHIBITOR
@@ -139,7 +161,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645876
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645876, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.0108
   units: uM
   target_enzyme: UniProtKB:O96028
@@ -149,7 +174,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202548
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202548, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202548, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.2818
   units: uM
   activity_class: CYTOTOXIC
@@ -158,7 +186,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963824
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.0137
   units: uM
 - assay: Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) drug
@@ -166,7 +197,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963824
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963824, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.0137
   units: uM
   target_enzyme: UniProtKB:P43405
@@ -175,7 +209,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963823
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.0122
   units: uM
 - assay: Viability qHTS for spleen associated tyrosine kinase inhibitor (SYKi) naive
@@ -183,7 +220,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963823
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963823, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.0122
   units: uM
   target_enzyme: UniProtKB:P43405
@@ -372,3 +412,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:36:52Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

@@ -191,6 +191,24 @@ def test_every_measured_value_carries_units(records):
     assert not offenders, f"values without units: {offenders}"
 
 
+def test_imported_bioassays_preserve_outcome_and_measurement_context(records):
+    for record in records:
+        for observation in record.get("bioactivities") or []:
+            evidence = observation.get("evidence") or []
+            if not any(e.get("notes", "").startswith("PubChem BioAssay AID ") for e in evidence):
+                continue
+            assert observation.get("call") in {"ACTIVE", "INACTIVE", "NOT_DETERMINED"}
+            notes = " ".join(e.get("notes", "") for e in evidence)
+            if observation["call"] == "NOT_DETERMINED":
+                assert "Source outcome:" in notes
+            if observation.get("value") is not None:
+                assert observation.get("measurement_type")
+                if observation["measurement_type"] == "OTHER":
+                    assert "Source endpoint:" in notes
+            if observation.get("activity_class"):
+                assert observation["call"] == "ACTIVE"
+
+
 def test_every_causal_edge_is_cited(records):
     offenders = [
         (r["identifier"], g.get("graph_id"), e.get("predicate"))

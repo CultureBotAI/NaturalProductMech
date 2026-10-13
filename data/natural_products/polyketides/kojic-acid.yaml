@@ -181,10 +181,12 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1963990
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1963990, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1963990, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 4.6109
   units: uM
-  activity_class: CYTOTOXIC
 - assay: 'Enzymatic Activity Assay from Article 10.1016/j.bioorg.2015.10.003: "Development
     of hydroxylated naphthylchalcones as polyphenol oxidase inhibitors: Synthesis,
     biochemistry and molecular docking studies."'
@@ -192,6 +194,7 @@ bioactivities:
   - reference: PMID:26496408
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1801486, deposited by BindingDB; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: KI
   value: 12.2
   units: uM
@@ -203,6 +206,7 @@ bioactivities:
   - reference: PMID:20476840
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1802947, deposited by BindingDB; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: IC50
   value: 16.67
   units: uM
@@ -214,6 +218,7 @@ bioactivities:
   - reference: PMID:16206837
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1799678, deposited by BindingDB; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: IC50
   value: 16.67
   units: uM
@@ -224,6 +229,7 @@ bioactivities:
   - reference: pubchem.aid:1803246
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1803246, deposited by BindingDB; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: IC50
   value: 15.0
   units: uM
@@ -234,6 +240,7 @@ bioactivities:
   - reference: pubchem.aid:1794918
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1794918, deposited by BindingDB; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: IC50
   value: 20.0
   units: uM
@@ -243,7 +250,10 @@ bioactivities:
   evidence:
   - reference: PMID:36786055
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1745855, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1745855, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.1995
   units: uM
 - assay: 'Primary qHTS for Inhibitors of N-terminal methyltransferase 1 (NTMT1): MTaseGlo
@@ -251,53 +261,66 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1645870
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645870, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645870, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 0.0447
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: 'Primary qHTS for Inhibitors of N-terminal methyltransferase 1 (NTMT1): MTaseGlo
     Assay'
   evidence:
   - reference: pubchem.aid:1645870
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1645870, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1645870, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 0.0447
   units: uM
   target_enzyme: UniProtKB:Q9BV86
-  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)
   evidence:
   - reference: pubchem.aid:1964107
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1964107, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1964107, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.0101
   units: uM
   target_enzyme: UniProtKB:Q8JUX6
-  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)
   evidence:
   - reference: pubchem.aid:1964107
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1964107, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1964107, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 11.0903
   units: uM
   target_enzyme: UniProtKB:Q8JUX6
-  activity_class: ENZYME_INHIBITOR
 - assay: 'Primary qHTS for small molecule stabilizers of the endoplasmic reticulum
     resident proteome: Secreted ER Calcium Modulated Protein (SERCaMP) assay'
   evidence:
   - reference: PMID:33910017
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1508630, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1508630, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 8.9125
   units: uM
 - assay: S16 Schwann cell PMP22 intronic element firefly luciferase assay
   evidence:
   - reference: pubchem.aid:624032
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 624032, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_058733 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 624032, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency. Target accession NP_058733 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 16.1366
   units: uM
 - assay: 'Spectrophotometric Assay from Article 10.1111/cbdd.12126: "Microwave-assisted
@@ -306,6 +329,7 @@ bioactivities:
   - reference: PMID:23461881
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1800143, deposited by BindingDB; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: IC50
   value: 23.0
   units: uM
@@ -317,6 +341,7 @@ bioactivities:
   - reference: PMID:27669118
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1801979, deposited by BindingDB; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: IC50
   value: 23.6
   units: uM
@@ -327,6 +352,7 @@ bioactivities:
   - reference: PMID:18608767
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1799721, deposited by BindingDB; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: IC50
   value: 12.5
   units: uM
@@ -338,6 +364,7 @@ bioactivities:
   - reference: PMID:25916324
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1801390, deposited by BindingDB; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: IC50
   value: 19.0
   units: uM
@@ -348,18 +375,20 @@ bioactivities:
   - reference: pubchem.aid:1805056
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1805056, deposited by BindingDB; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: IC50
   value: 29.0
   units: uM
   target_enzyme: UniProtKB:Q00024
-  activity_class: ENZYME_INHIBITOR
 - assay: qHTS Assay for Identifying Compounds that block Entry of Ebola Virus, Screen
     2 blue channel
   evidence:
   - reference: pubchem.aid:1117304
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1117304, deposited by NCGC; assay type Confirmatory.
-  measurement_type: EC50
+    notes: 'PubChem BioAssay AID 1117304, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: AC50.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 8.9125
   units: uM
 - assay: qHTS Assay for Identifying Compounds that block Entry of Ebola Virus, Screen
@@ -367,8 +396,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1117298
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1117298, deposited by NCGC; assay type Confirmatory.
-  measurement_type: EC50
+    notes: 'PubChem BioAssay AID 1117298, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: AC50.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 0.7079
   units: uM
 - assay: qHTS Assay for Identifying Compounds that block Entry of Ebola Virus, Screen
@@ -376,8 +407,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1117305
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1117305, deposited by NCGC; assay type Confirmatory.
-  measurement_type: EC50
+    notes: 'PubChem BioAssay AID 1117305, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: AC50.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 8.9125
   units: uM
 - assay: 'qHTS Assay for Identifying Compounds that block Entry of Ebola Virus: Screen
@@ -385,8 +418,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1117314
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1117314, deposited by NCGC; assay type Confirmatory.
-  measurement_type: EC50
+    notes: 'PubChem BioAssay AID 1117314, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Ac50.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 8.91251
   units: uM
 - assay: 'qHTS Assay for Identifying Compounds that block Entry of Ebola Virus: Screen
@@ -394,8 +429,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1117310
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1117310, deposited by NCGC; assay type Confirmatory.
-  measurement_type: EC50
+    notes: 'PubChem BioAssay AID 1117310, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Ac50.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 0.707946
   units: uM
 - assay: 'qHTS Assay for Identifying Compounds that block Entry of Ebola Virus: Screen2,
@@ -403,17 +440,21 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1117312
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1117312, deposited by NCGC; assay type Confirmatory.
-  measurement_type: EC50
+    notes: 'PubChem BioAssay AID 1117312, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Ac50.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 8.91251
   units: uM
 - assay: qHTS Assay for Inhibitors of Human Jumonji Domain Containing 2E (JMJD2E)
   evidence:
   - reference: pubchem.aid:2147
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2147, deposited by NCGC; assay type Confirmatory.
-      Target accession 2W2I_A was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 2147, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency. Target accession 2W2I_A was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 25.1189
   units: uM
   activity_class: ENZYME_INHIBITOR
@@ -530,7 +571,6 @@ molecular_targets:
   taxon_id: NCBITaxon:559292
   taxon_label: Saccharomyces cerevisiae (strain ATCC 204508 / S288c)
 bioactivity_summary:
-- CYTOTOXIC
 - ENZYME_INHIBITOR
 bgc_class:
 - OTHER
@@ -1245,3 +1285,7 @@ curation_history:
     taxonomy, classifications and natural-product origin are unchanged. Record remains
     SEEDED, not full-record sign-off.'
   llm_assisted: true
+- timestamp: '2026-10-13T07:36:39Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

@@ -143,44 +143,55 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1964105
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1964105, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1964105, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.8955
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione
     Peroxidase 4 (GPX4)
   evidence:
   - reference: pubchem.aid:1845192
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1845192, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1845192, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 35.4813
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS Assay for Inhibitors of Recombinant Selenoprotein Glutathione
     Peroxidase 4 (GPX4)
   evidence:
   - reference: pubchem.aid:1845192
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1845192, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1845192, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 35.4813
   units: uM
   target_enzyme: UniProtKB:P36969
-  activity_class: ENZYME_INHIBITOR
 - assay: Primary qHTS for inhibitors of NSP2Pro chikungunya virus (CHIKV)
   evidence:
   - reference: pubchem.aid:1964107
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1964107, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1964107, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 9.8843
   units: uM
   target_enzyme: UniProtKB:Q8JUX6
-  activity_class: ENZYME_INHIBITOR
 - assay: 'Selectivity profile for inhibitors of NSP2Pro chikungunya virus (CHIKV):
     Endogenous NS2/3 peptide Counterscreen'
   evidence:
   - reference: pubchem.aid:1964103
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1964103, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1964103, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 12.981
   units: uM
   target_enzyme: UniProtKB:Q8JUX6
@@ -190,21 +201,25 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1964101
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1964101, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1964101, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 2.5901
   units: uM
   target_enzyme: UniProtKB:Q8JUX6
-  activity_class: ENZYME_INHIBITOR
 - assay: 'Selectivity profile for inhibitors of NSP2Pro chikungunya virus (CHIKV):
     Papain Counterscreen'
   evidence:
   - reference: pubchem.aid:1964104
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1964104, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1964104, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 25.9005
   units: uM
   target_enzyme: UniProtKB:P00784
-  activity_class: ENZYME_INHIBITOR
 - assay: Agonists at Human 5-Hydroxytryptamine receptor 5-HT1F
   evidence:
   - reference: PMID:8380639
@@ -461,3 +476,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:43:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

@@ -92,27 +92,33 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1224875
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1224875, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1224875, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 26.8325
   units: uM
-  activity_class: CYTOTOXIC
 - assay: A CellTox Green Cytotoxicity Assay to monitor cytotoxicity in HEK293 cells
     - 32 hour
   evidence:
   - reference: pubchem.aid:1224881
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1224881, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1224881, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 23.9145
   units: uM
-  activity_class: CYTOTOXIC
 - assay: A quantitative high throughput screen for small molecules that induce DNA
     re-replication in SW480 colon adenocarcinoma cells.
   evidence:
   - reference: pubchem.aid:624297
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_056979 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_056979
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 1.4581
   units: uM
 - assay: 'AChE and BChE Assay from Article 10.1016/j.bioorg.2015.09.008: "Pyridine
@@ -123,6 +129,7 @@ bioactivities:
   - reference: PMID:26451651
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1801485, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.04
   units: uM
@@ -135,6 +142,7 @@ bioactivities:
   - reference: PMID:26451651
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1801485, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.85
   units: uM
@@ -144,9 +152,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1347395
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1347395, deposited by 824; assay type Confirmatory.
-      Target accession AAA68151 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1347395, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency. Target accession AAA68151 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.1589
   units: uM
 - assay: 'Acetylcholinesterase (AChE) small molecule antagonists: colormetric cell-based
@@ -154,9 +164,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1347395
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1347395, deposited by 824; assay type Confirmatory.
-      Target accession AAA68151 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1347395, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency. Target accession AAA68151 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.389
   units: uM
 - assay: 'Acetylcholinesterase (AChE) small molecule antagonists: enzyme-based qHTS
@@ -164,9 +176,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1347397
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1347397, deposited by 824; assay type Confirmatory.
-      Target accession AAA68151 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1347397, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency. Target accession AAA68151 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.1125
   units: uM
 - assay: 'Acetylcholinesterase (AChE) small molecule antagonists: enzyme-based qHTS
@@ -174,9 +188,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1347397
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1347397, deposited by 824; assay type Confirmatory.
-      Target accession AAA68151 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1347397, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency. Target accession AAA68151 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.0871
   units: uM
 - assay: 'Acetylcholinesterase (AChE) small molecule antagonists: enzyme-based qHTS
@@ -184,9 +200,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1347399
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1347399, deposited by 824; assay type Confirmatory.
-      Target accession AAA68151 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1347399, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency. Target accession AAA68151 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 1.0026
   units: uM
 - assay: 'Acetylcholinesterase (AChE) small molecule antagonists: enzyme-based qHTS
@@ -194,9 +212,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1347399
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1347399, deposited by 824; assay type Confirmatory.
-      Target accession AAA68151 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1347399, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency. Target accession AAA68151 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 2.4545
   units: uM
 - assay: 'Acetylcholinesterase (AChE) small molecule antagonists: fluorescence cell-based
@@ -204,9 +224,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1347398
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1347398, deposited by 824; assay type Confirmatory.
-      Target accession AAA68151 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1347398, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency. Target accession AAA68151 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.0564
   units: uM
 - assay: 'Acetylcholinesterase (AChE) small molecule antagonists: fluorescence cell-based
@@ -214,9 +236,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1347398
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1347398, deposited by 824; assay type Confirmatory.
-      Target accession AAA68151 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1347398, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency. Target accession AAA68151 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.0436
   units: uM
 - assay: 'Acetylcholinesterase Assay from Article 10.1016/j.bioorg.2015.11.002: "Novel
@@ -226,6 +250,7 @@ bioactivities:
   - reference: PMID:26595185
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1801527, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.04
   units: uM
@@ -237,6 +262,7 @@ bioactivities:
   - reference: PMID:27441832
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1801938, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.85
   units: uM
@@ -248,6 +274,7 @@ bioactivities:
   - reference: PMID:26595185
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1801528, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.85
   units: uM
@@ -259,6 +286,7 @@ bioactivities:
   - reference: PMID:27441832
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1801939, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.04
   units: uM
@@ -269,6 +297,7 @@ bioactivities:
   - reference: PMID:12166941
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1796572, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.016
   units: uM
@@ -279,6 +308,7 @@ bioactivities:
   - reference: PMID:12166941
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1796572, deposited by BindingDB; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 0.028
   units: uM
@@ -287,16 +317,21 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1964105
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1964105, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1964105, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 14.193
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: 'Cytochrome P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists:
     luciferase reporter qHTS assay'
   evidence:
   - reference: pubchem.aid:1671199
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1671199, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1671199, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 39.9149
   units: uM
 - assay: 'Cytochrome P450 Family 1 Subfamily A Member 2 (CYP1A2) small molecule antagonists:
@@ -304,9 +339,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1671199
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1671199, deposited by 824; assay type Confirmatory.
-      Target accession EAW99313 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1671199, deposited by 824; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession EAW99313
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 39.9149
   units: uM
 - assay: 'Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule
@@ -314,7 +351,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1671197
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1671197, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1671197, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 25.1846
   units: uM
 - assay: 'Cytochrome P450 Family 2 Subfamily C Member 19 (CYP2C19) small molecule
@@ -322,9 +362,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1671197
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1671197, deposited by 824; assay type Confirmatory.
-      Target accession AAV41877 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1671197, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency. Target accession AAV41877 was left ungrounded because
+      PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 25.1846
   units: uM
 - assay: 'Cytochrome P450 Family 2 Subfamily C Member 9 (CYP2C9) small molecule antagonists:
@@ -332,14 +374,14 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1671198
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1671198, deposited by 824; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1671198, deposited by 824; assay type Confirmatory.
+      Source endpoint: Potency.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 70.9799
   units: uM
   notes: 109 further PubChem assay results are in data/raw/pubchem_bioassay.tsv but
     not written here.
-bioactivity_summary:
-- CYTOTOXIC
-- ENZYME_INHIBITOR
 bgc_class:
 - OTHER
 xrefs:
@@ -503,3 +545,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:42:40Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

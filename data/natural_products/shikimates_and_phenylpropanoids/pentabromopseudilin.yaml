@@ -50,6 +50,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 977608, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other.
+  call: ACTIVE
   measurement_type: IC50
   value: 1.4
   units: uM
@@ -316,3 +317,7 @@ curation_history:
   action: CURATED_BIOSYNTHETIC_GRAPH
   changes: Added a UniProtKB:V4HJ73 Bmp7 oxidative heterocoupling step and BIOSYNTHESIS
     causal graph for pentabromopseudilin.
+- timestamp: '2026-10-13T07:42:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

@@ -41,6 +41,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 1KZN_A was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KD
   value: 0.0012
   units: uM
@@ -1085,3 +1086,7 @@ curation_history:
     antimicrobial target or whole-plasmid claim added; retain all27 prior graphs,
     all23 component bytes, source-owned fields, history and SEEDED status.'
   llm_assisted: true
+- timestamp: '2026-10-13T07:36:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

@@ -293,7 +293,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:2202232
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2202232, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 2202232, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.0014
   units: uM
 - assay: 'Inhibitor identification of human QSOX1 enzyme: high-throughput screening
@@ -1244,3 +1247,7 @@ curation_history:
     experiment is added. Preserved all source-owned fields, structure, grades, SEEDED
     status, sibling link, both previous graphs and history. Not full-record sign-off.
   llm_assisted: true
+- timestamp: '2026-10-13T07:42:25Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

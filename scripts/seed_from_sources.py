@@ -95,9 +95,6 @@ BGC_CLASS_MAP = {
     "other": "OTHER",
 }
 
-# PubChem's activity names to the schema's measurement vocabulary. An
-# unmapped name keeps its value and units without claiming a type, rather
-# than being coerced into the nearest one.
 # Assay-name patterns that name an activity class unambiguously. Deliberately
 # narrow: an unset class is honest, a guessed one is "computed presented as
 # asserted" in a new place (#39).
@@ -130,17 +127,32 @@ SIBLING_ACTIVITY_CLASSES = {
 }
 
 
-def classify_activity(assay_name: str) -> str | None:
+def classify_activity(assay_name: str, *, aid: str = "") -> str | None:
     """A BioactivityClassEnum value when the assay name says one plainly."""
+    # AID1650 is mock-infected Vero E6 viability, not antiviral efficacy (#877).
+    # Pin the inspected title so a changed source is not silently reclassified.
+    # https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1650/description/JSON
+    if aid == "1650" and assay_name == (
+        "A Cell Based Secondary Assay To Explore Cytotoxicity of West Nile Virus "
+        "Anti-Viral Hit Compounds"
+    ):
+        return "CYTOTOXIC"
+    classes = set()
     for pattern, label in ACTIVITY_CLASS_PATTERNS:
         if pattern.search(assay_name or ""):
-            return label
-    return None
+            classes.add(label)
+    # Generic inhibition wording is a fallback, not a competing activity.
+    specific = classes - {"ENZYME_INHIBITOR"}
+    if specific:
+        return next(iter(specific)) if len(specific) == 1 else None
+    return "ENZYME_INHIBITOR" if classes else None
 
 
+# Unmapped names (including generic Potency, CC50 and AC50) retain their exact
+# source spelling alongside OTHER, never an assumed IC50/EC50 equivalent.
 MEASUREMENT_TYPES = {
     "IC50": "IC50", "EC50": "EC50", "KI": "KI", "KD": "KD",
-    "MIC": "MIC", "GI50": "GI50", "AC50": "EC50",
+    "MIC": "MIC", "GI50": "GI50", "LD50": "LD50",
 }
 
 # Only cross-references whose prefix this corpus declares are carried through.
@@ -1190,16 +1202,23 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                     ),
                 }],
             }
+            outcome = row["activity_outcome"].strip()
+            observation["call"] = {
+                "active": "ACTIVE", "inactive": "INACTIVE",
+            }.get(outcome.lower(), "NOT_DETERMINED")
+            if observation["call"] == "NOT_DETERMINED":
+                observation["evidence"][0]["notes"] += (
+                    f" Source outcome: {outcome or '(missing)'}."
+                )
             if row["activity_value_um"] and row["activity_name"]:
-                measurement = MEASUREMENT_TYPES.get(row["activity_name"].upper())
-                if measurement:
-                    observation["measurement_type"] = measurement
+                measurement = MEASUREMENT_TYPES.get(row["activity_name"].strip().upper(), "OTHER")
+                observation["measurement_type"] = measurement
+                if measurement == "OTHER":
+                    observation["evidence"][0]["notes"] += (
+                        f" Source endpoint: {row['activity_name']}."
+                    )
                 observation["value"] = float(row["activity_value_um"])
                 observation["units"] = "uM"
-            else:
-                # A single-concentration screening hit is a CALL, never a
-                # potency — docs/CURATION.md is explicit about it.
-                observation["call"] = "ACTIVE"
             target_accession = row["target_accession"].strip()
             if target_accession and UNIPROT_ACCESSION_RE.fullmatch(target_accession):
                 observation["target_enzyme"] = f"UniProtKB:{target_accession}"
@@ -1208,8 +1227,8 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                     f" Target accession {target_accession} was left ungrounded because "
                     "PubChem did not provide a UniProtKB accession."
                 )
-            activity_class = classify_activity(row["assay_name"])
-            if activity_class:
+            activity_class = classify_activity(row["assay_name"], aid=row["aid"])
+            if activity_class and observation["call"] == "ACTIVE":
                 observation["activity_class"] = activity_class
             bioactivities.append(observation)
 
@@ -1229,10 +1248,10 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
 
             # bioactivity_summary is derived and must never float: PLAN.md 3.5
             # accepts a bioactivities item as backing, and there are now
-            # classified items to derive from. Only classes actually present on
-            # a written observation are summarised.
+            # classified items to derive from. Only explicitly active written
+            # observations back positive activity summaries.
             summary_classes.update(b["activity_class"] for b in bioactivities
-                                   if b.get("activity_class"))
+                                   if b.get("activity_class") and b.get("call") == "ACTIVE")
 
         targets: list[dict[str, Any]] = []
         for row in targets_by_key.get(key) or []:

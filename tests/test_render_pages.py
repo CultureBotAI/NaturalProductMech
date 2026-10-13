@@ -24,6 +24,34 @@ sys.modules["render_pages"] = render_pages
 _spec.loader.exec_module(render_pages)
 
 
+@pytest.mark.parametrize("fields, expected", [
+    ({"measurement_type": "IC50", "value": 2.5, "units": "uM", "call": "ACTIVE"},
+     "IC50 2.5 uM; ACTIVE"),
+    ({"measurement_type": "OTHER", "value": 0, "units": "uM", "call": "INACTIVE"},
+     "OTHER 0 uM; INACTIVE"),
+    ({"measurement_type": "OTHER", "value": 0.3663, "units": "uM", "call": "NOT_DETERMINED"},
+     "OTHER 0.3663 uM; NOT_DETERMINED"),
+    ({"call": "ACTIVE"}, "ACTIVE"),
+    ({"measurement_type": "IC50", "value": 2.5, "units": "uM"}, "IC50 2.5 uM"),
+])
+def test_bioactivity_result_preserves_both_measurement_and_call(fields, expected):
+    observation = {
+        "assay": "Synthetic assay", **fields,
+        "evidence": [{"reference": "pubchem.aid:1", "notes": "Source endpoint: Potency."}],
+    }
+    record = render_pages.build_record(REPO_ROOT / "data/natural_products/test.yaml", {
+        "identifier": "CHEBI:1", "np_pathway": "POLYKETIDES",
+        "bioactivities": [observation],
+    })
+    assert record["bioactivities"][0]["result"] == expected
+    assert record["bioactivities"][0]["source"] == observation
+    env = Environment(loader=FileSystemLoader(str(render_pages.TEMPLATES_DIR)),
+                      autoescape=select_autoescape(["html"]))
+    rendered = env.get_template("record.html").render(r=record)
+    assert expected in rendered
+    assert "Source endpoint: Potency." in rendered
+
+
 def test_text_map_never_retags_an_obsolete_identity():
     artifact = {"n": 2, "points": [[1, 2, 0, "old", "a"], [3, 4, 0, "live", "b"]],
                 "corpus_fingerprint": "original"}

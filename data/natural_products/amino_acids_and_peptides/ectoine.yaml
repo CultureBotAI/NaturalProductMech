@@ -194,6 +194,7 @@ bioactivities:
   - reference: pubchem.aid:1801670
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1801670, deposited by BindingDB; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: IC50
   value: 10.0
   units: uM
@@ -204,6 +205,7 @@ bioactivities:
   - reference: pubchem.aid:1801654
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1801654, deposited by BindingDB; assay type Confirmatory.
+  call: INACTIVE
   measurement_type: IC50
   value: 10.0
   units: uM
@@ -991,3 +993,7 @@ curation_history:
     through the current seeder. Preserved every existing producer, activity and graph
     field and all main and feature history; no scientific pin refresh.'
   llm_assisted: true
+- timestamp: '2026-10-13T07:43:19Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

@@ -37,14 +37,13 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:588579
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 588579, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_057302 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 588579, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_057302
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 33.5875
   units: uM
-  activity_class: ENZYME_INHIBITOR
-bioactivity_summary:
-- ENZYME_INHIBITOR
 bgc_class:
 - PKS
 xrefs:
@@ -101,3 +100,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:43:06Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

@@ -45,9 +45,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:624032
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 624032, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_058733 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 624032, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_058733
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 8.0875
   units: uM
 - assay: qHTS Assay for Inhibitors of Bacillus subtilis Sfp phosphopantetheinyl transferase
@@ -55,22 +57,24 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1490
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1490, deposited by NCGC; assay type Confirmatory.
-      Target accession AAG24257 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 1490, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession AAG24257
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 89.1251
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: qHTS for Inhibitors of binding or entry into cells for Marburg Virus
   evidence:
   - reference: pubchem.aid:720532
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 720532, deposited by NCGC; assay type Confirmatory.
-      Target accession B45705 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 720532, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession B45705
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 28.1838
   units: uM
-  activity_class: ENZYME_INHIBITOR
 molecular_targets:
 - target_label: Acetylcholinesterase
   target_type: PROTEIN
@@ -321,8 +325,6 @@ molecular_targets:
   - UniProtKB:P06276
   taxon_id: NCBITaxon:9606
   taxon_label: Homo sapiens
-bioactivity_summary:
-- ENZYME_INHIBITOR
 bgc_class:
 - OTHER
 xrefs:
@@ -454,3 +456,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T07:43:40Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

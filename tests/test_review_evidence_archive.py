@@ -157,6 +157,12 @@ def test_campaign_preserves_full_population(archive, manifest):
     assert len(pending) == expected_counts["pending"]
     assert not reviewed.intersection(pending)
     assert reviewed | set(pending) == owners.keys()
+    states = {row["path"]: row["review_state"] for row in checkpoint["records"]}
+    # The first archive used longer state names; its immutable vocabulary stays valid.
+    partial_states = {"partial", "partial_scientific_review_saved"}
+    pending_states = {"unassessed", "not_scientifically_reviewed"}
+    assert {path for path, state in states.items() if state in partial_states} == reviewed
+    assert {path for path, state in states.items() if state in pending_states} == set(pending)
     assert checkpoint["findings"] == expected_counts["findings"]
     assert checkpoint["goal_status"] == "active"
     previous = set()

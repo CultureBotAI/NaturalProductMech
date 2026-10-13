@@ -186,9 +186,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:624296
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_056979 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 624296, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_056979
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.5174
   units: uM
 - assay: A quantitative high throughput screen for small molecules that induce DNA
@@ -196,9 +198,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:624297
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_056979 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 624297, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_056979
+      was left ungrounded because PubChem did not provide a UniProtKB accession.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 0.6513
   units: uM
 - assay: A549 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader
@@ -206,8 +210,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:743412
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 743412, deposited by Broad Institute; assay type Confirmatory.
-  measurement_type: EC50
+    notes: 'PubChem BioAssay AID 743412, deposited by Broad Institute; assay type
+      Confirmatory. Source endpoint: AC50.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.0912
   units: uM
   activity_class: CYTOTOXIC
@@ -217,8 +223,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:743343
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 743343, deposited by Broad Institute; assay type Confirmatory.
-  measurement_type: EC50
+    notes: 'PubChem BioAssay AID 743343, deposited by Broad Institute; assay type
+      Confirmatory. Source endpoint: AC50.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 2.77
   units: uM
 - assay: Dose response confirmation of uHTS chemical inhibitors of both B-cell and
@@ -229,6 +237,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 489034, deposited by Burnham Center for Chemical Genomics;
       assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 1.01
   units: uM
@@ -241,6 +250,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 489004, deposited by Burnham Center for Chemical Genomics;
       assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 7.83
   units: uM
@@ -253,6 +263,7 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 489020, deposited by Burnham Center for Chemical Genomics;
       assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 7.42
   units: uM
@@ -265,10 +276,10 @@ bioactivities:
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 489019, deposited by Burnham Center for Chemical Genomics;
       assay type Confirmatory.
+  call: INACTIVE
   measurement_type: IC50
   value: 80.0
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: Experimentally measured binding affinity data (Ki) for protein-ligand complexes
     derived from PDB
   evidence:
@@ -277,6 +288,7 @@ bioactivities:
     notes: PubChem BioAssay AID 977610, deposited by Shanghai Institute of Organic
       Chemistry; assay type Other. Target accession 1PR5_A was left ungrounded because
       PubChem did not provide a UniProtKB accession.
+  call: ACTIVE
   measurement_type: KI
   value: 120.0
   units: uM
@@ -287,6 +299,7 @@ bioactivities:
   - reference: pubchem.aid:2631
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 2631, deposited by Broad Institute; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: EC50
   value: 0.104
   units: uM
@@ -296,8 +309,10 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:743446
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 743446, deposited by Broad Institute; assay type Confirmatory.
-  measurement_type: EC50
+    notes: 'PubChem BioAssay AID 743446, deposited by Broad Institute; assay type
+      Confirmatory. Source endpoint: AC50.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 1.6
   units: uM
   activity_class: CYTOTOXIC
@@ -306,10 +321,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:493083
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 493083, deposited by Broad Institute; assay type Confirmatory.
-      Target accession AAH94064 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
-  measurement_type: EC50
+    notes: 'PubChem BioAssay AID 493083, deposited by Broad Institute; assay type
+      Confirmatory. Source endpoint: AC50. Target accession AAH94064 was left ungrounded
+      because PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 10.488
   units: uM
 - assay: HSF-1 induced GFP reporter and Doxycycline induced RFP reporter Measured
@@ -317,10 +333,11 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:493085
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 493085, deposited by Broad Institute; assay type Confirmatory.
-      Target accession AAH94064 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
-  measurement_type: EC50
+    notes: 'PubChem BioAssay AID 493085, deposited by Broad Institute; assay type
+      Confirmatory. Source endpoint: AC50. Target accession AAH94064 was left ungrounded
+      because PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 3.174
   units: uM
 - assay: HTS for Inhibitors of HP1-beta Chromodomain Interactions with Methylated
@@ -328,19 +345,22 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:540317
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 540317, deposited by NCGC; assay type Confirmatory.
-      Target accession NP_001120700 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
+    notes: 'PubChem BioAssay AID 540317, deposited by NCGC; assay type Confirmatory.
+      Source endpoint: Potency. Target accession NP_001120700 was left ungrounded
+      because PubChem did not provide a UniProtKB accession.'
+  call: INACTIVE
+  measurement_type: OTHER
   value: 11.2202
   units: uM
-  activity_class: ENZYME_INHIBITOR
 - assay: HepG2 Cytotoxicity Assay Measured in Cell-Based System Using Plate Reader
     - 7071-02_Antagonist_Dose_CherryPick_Activity
   evidence:
   - reference: pubchem.aid:743416
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 743416, deposited by Broad Institute; assay type Confirmatory.
-  measurement_type: EC50
+    notes: 'PubChem BioAssay AID 743416, deposited by Broad Institute; assay type
+      Confirmatory. Source endpoint: AC50.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 0.25
   units: uM
   activity_class: CYTOTOXIC
@@ -350,6 +370,7 @@ bioactivities:
   - reference: pubchem.aid:1626
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1626, deposited by SRMLSC; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: IC50
   value: 2.438
   units: uM
@@ -358,19 +379,22 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1159524
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1159524, deposited by NCGC; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1159524, deposited by NCGC; assay type Confirmatory.
+      Source outcome: Inconclusive. Source endpoint: Potency.'
+  call: NOT_DETERMINED
+  measurement_type: OTHER
   value: 28.1838
   units: uM
-  activity_class: ANTIVIRAL
 - assay: LGR2:Counterscreen with MC4R Measured in Cell-Based System Using Plate Reader
     - 7011-02_Antagonist_Dose_CherryPick_Activity
   evidence:
   - reference: pubchem.aid:743444
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 743444, deposited by Broad Institute; assay type Confirmatory.
-      Target accession AAC47329 was left ungrounded because PubChem did not provide
-      a UniProtKB accession.
-  measurement_type: EC50
+    notes: 'PubChem BioAssay AID 743444, deposited by Broad Institute; assay type
+      Confirmatory. Source endpoint: AC50. Target accession AAC47329 was left ungrounded
+      because PubChem did not provide a UniProtKB accession.'
+  call: ACTIVE
+  measurement_type: OTHER
   value: 3.98
   units: uM
 - assay: Luminescence Cell-Based Dose Confimation HTS to Identify Inhibitors of Heat
@@ -381,6 +405,7 @@ bioactivities:
     notes: PubChem BioAssay AID 2382, deposited by Broad Institute; assay type Confirmatory.
       Target accession AAH94064 was left ungrounded because PubChem did not provide
       a UniProtKB accession.
+  call: ACTIVE
   measurement_type: EC50
   value: 3.057
   units: uM
@@ -392,6 +417,7 @@ bioactivities:
   - reference: pubchem.aid:1988
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1988, deposited by Broad Institute; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: EC50
   value: 0.1
   units: uM
@@ -401,27 +427,30 @@ bioactivities:
   evidence:
   - reference: pubchem.aid:1936
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1936, deposited by Broad Institute; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1936, deposited by Broad Institute; assay type Confirmatory.
+      Source outcome: Inconclusive.'
+  call: NOT_DETERMINED
   measurement_type: EC50
   value: 5.45
   units: uM
-  activity_class: CYTOTOXIC
 - assay: Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic
     to BJ-TERT RAS-Independent Fibroblast
   evidence:
   - reference: pubchem.aid:1933
     evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1933, deposited by Broad Institute; assay type Confirmatory.
+    notes: 'PubChem BioAssay AID 1933, deposited by Broad Institute; assay type Confirmatory.
+      Source outcome: Inconclusive.'
+  call: NOT_DETERMINED
   measurement_type: EC50
   value: 2.082
   units: uM
-  activity_class: CYTOTOXIC
 - assay: Luminescence Cell-Based Dose Response HTS to Identify Compounds Cytotoxic
     to BJ-TERT-LT-ST RAS-Independent Fibroblast
   evidence:
   - reference: pubchem.aid:1935
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1935, deposited by Broad Institute; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: EC50
   value: 5.044
   units: uM
@@ -432,6 +461,7 @@ bioactivities:
   - reference: pubchem.aid:1934
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1934, deposited by Broad Institute; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: EC50
   value: 4.118
   units: uM
@@ -442,6 +472,7 @@ bioactivities:
   - reference: pubchem.aid:1990
     evidence_type: DATABASE_ASSERTION
     notes: PubChem BioAssay AID 1990, deposited by Broad Institute; assay type Confirmatory.
+  call: ACTIVE
   measurement_type: EC50
   value: 0.1
   units: uM
@@ -456,7 +487,6 @@ related_records:
   source_version: 74f6cc836249
 bioactivity_summary:
 - ANTIFUNGAL
-- ANTIVIRAL
 - CYTOTOXIC
 - ENZYME_INHIBITOR
 bgc_class:
@@ -565,3 +595,7 @@ curation_history:
     via PDBe and SIFTS, confirmed PDB TBN matches tubercidin, and cited DOI:10.1074/jbc.M304622200
     and DOI:10.2210/pdb1pr5/pdb.
   llm_assisted: true
+- timestamp: '2026-10-13T07:37:11Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
