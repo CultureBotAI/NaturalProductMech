@@ -43,18 +43,10 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q6839685 This taxon is also
     recorded as a producer. Production and occurrence are distinct claims; their citations
     may refer to the same publication. Publication independence has not been established.
-bioactivities:
-- assay: DSSTox (FDAMDD) FDA Maximum (Recommended) Daily Dose Database
-  evidence:
-  - reference: pubchem.aid:1195
-    evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1195, deposited by EPA DSSTox; assay type Other.
-  call: ACTIVE
 bgc_class:
 - SACCHARIDE
 xrefs:
 - npatlas:NPA09026
-- pubchem:72396
 producer_taxon_groups:
 - ACTINOBACTERIAL
 producer_organisms:
@@ -70,6 +62,16 @@ producer_organisms:
   - reference: PMID:15376556
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000696 entry version 5; citation taken from the entry level
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AJ628149.4
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: DSM 43036. AJ628149.4 source feature names DSM 43036.
+      This qualifies the deposited locus, not exact gentamicin-congener production.
+      Exact-product assignment remains open in #941. Taxon, chemistry and evidence
+      grades are unchanged. See issue #944. Taxon identity and evidence grade are
+      unchanged; this is not a species-wide experiment. MIBiG source row BGC0000696:1;
+      SHA256 2dfb366df6dedb1474018b61f14f36c7eca4c5f11b1d519686e5be2e097a91ce. Curator:
+      codex; date: 2026-10-13.'
+  strain: DSM 43036
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0000696
   entry_version: '5'
@@ -94,6 +96,83 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+discussions:
+- discussion_id: source-xref-exclusion-BGC0000696-1-pubchem-72396
+  kind: CONTROVERSY
+  status: RESOLVED
+  prompt: Does the imported pubchem:72396 identify this exact structure?
+  resolution_note: 'MIBiG source row BGC0000696:1 asserts pubchem:72396; the raw inventory
+    is unchanged. This xref is withheld from exact equivalence. CID72396 is VEGXETMJINRLTH-BOZYPMBZSA-N
+    (C19H39N5O7), not this BDTQHFBWYNCGHN-CUYCKOLISA-N (C18H36N4O10) owner. Connectivity
+    and formula differ. Preserve the exact NPA09026/NPA009026 match and unchanged
+    owner chemistry; no replacement CID is established. Historical AID1195 is corrected
+    separately in issue #943. Exact-product assignment remains open in #941. See issue
+    #942. Source row SHA256 2dfb366df6dedb1474018b61f14f36c7eca4c5f11b1d519686e5be2e097a91ce.
+    Curator: codex; date: 2026-10-13.'
+  evidence:
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/72396
+    evidence_source: database structure; curator interpretation
+    notes: 'MIBiG source row BGC0000696:1 asserts pubchem:72396; the raw inventory
+      is unchanged. This xref is withheld from exact equivalence. CID72396 is VEGXETMJINRLTH-BOZYPMBZSA-N
+      (C19H39N5O7), not this BDTQHFBWYNCGHN-CUYCKOLISA-N (C18H36N4O10) owner. Connectivity
+      and formula differ. Preserve the exact NPA09026/NPA009026 match and unchanged
+      owner chemistry; no replacement CID is established. Historical AID1195 is corrected
+      separately in issue #943. Exact-product assignment remains open in #941. See
+      issue #942. Source row SHA256 2dfb366df6dedb1474018b61f14f36c7eca4c5f11b1d519686e5be2e097a91ce.
+      Curator: codex; date: 2026-10-13.'
+- discussion_id: source-bioassay-exclusion-72396-1195
+  kind: CONTROVERSY
+  status: RESOLVED
+  prompt: Does imported PubChem AID 1195, CID 72396 support activity of this structure?
+  resolution_note: 'PubChem BioAssay source row BDTQHFBWYNCGHN-CUYCKOLISA-N, CID 72396,
+    AID 1195 is withheld from bioactivities; the raw inventory is unchanged. The inspected
+    AID1195 protocol assigns Active to all substances because a recommended daily
+    dose is reported, not because activity was measured on this molecule. Independently,
+    CID72396 is nonexact for this BDTQ owner (issue #942). Withhold only this historical
+    row; preserve raw provenance and do not infer potency, clinical approval or a
+    replacement assay. Exact-product assignment remains unresolved in #941. See issue
+    #943. Source row SHA256 87af13d4167eb28ec2cdee30c7b0ae12ec9c88226efbd56121139f954a9aecc6.
+    Curator: codex; date: 2026-10-13.'
+  evidence:
+  - reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1195/description/JSON
+    evidence_source: database assay protocol; curator interpretation
+    notes: 'PubChem BioAssay source row BDTQHFBWYNCGHN-CUYCKOLISA-N, CID 72396, AID
+      1195 is withheld from bioactivities; the raw inventory is unchanged. The inspected
+      AID1195 protocol assigns Active to all substances because a recommended daily
+      dose is reported, not because activity was measured on this molecule. Independently,
+      CID72396 is nonexact for this BDTQ owner (issue #942). Withhold only this historical
+      row; preserve raw provenance and do not infer potency, clinical approval or
+      a replacement assay. Exact-product assignment remains unresolved in #941. See
+      issue #943. Source row SHA256 87af13d4167eb28ec2cdee30c7b0ae12ec9c88226efbd56121139f954a9aecc6.
+      Curator: codex; date: 2026-10-13.'
+- discussion_id: curator-gentamicin-exact-product-assignment
+  kind: CURATION_TODO
+  status: OPEN
+  posed_by: codex
+  prompt: Which exact gentamicin congener and stereochemical resolution do these source
+    claims establish?
+  rationale: The BDTQ graph exactly matches NPAtlas NPA009026, but the generic gentamicin
+    name and complex-level citations do not establish its exact natural-product assignment.
+    CID86490 is an A3-connectivity lead with different stereochemical resolution,
+    not a replacement xref. The 1963 discovery and 1975 A3 structure papers remain
+    uninspected after access failures. Retain the original source assertions without
+    promoting evidence grades or scientific status; do not merge with the HFLK owner
+    or transfer C-complex claims.
+  evidence:
+  - reference: https://github.com/CultureBotAI/NaturalProductMech/issues/941
+    explanation: Open exact-product adjudication; this discussion mitigates, not resolves,
+      the finding.
+  - reference: DOI:10.7164/antibiotics.57.436
+    evidence_source: full_text
+    explanation: Study measures the gentamicin C complex and distinguishes biosynthetic
+      intermediates; not direct proof of this exact graph.
+  - reference: https://www.npatlas.org/api/v1/compound/NPA009026?include=classifications
+    evidence_source: database
+    explanation: Inspected official API graph and key match exactly; the source origin
+      citation is not independent structural proof.
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/86490
+    evidence_source: database
+    explanation: BDTQHFBWYNCGHN-UHFFFAOYSA-N is a connectivity-only A3 identity lead.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -107,3 +186,13 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T22:20:10Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T22:20:24Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cited OPEN exact-gentamicin-product qualification for #941; preserve
+    chemistry, original source assertions, grades and SEEDED status.'
+  llm_assisted: true

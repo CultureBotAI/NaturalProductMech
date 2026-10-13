@@ -165,6 +165,29 @@ An exact historical match is retained in the rationale but does not justify an
 unqualified current xref. Withholding equivalence does not decide which source's
 stereochemical assignment is experimentally correct.
 
+## PubChem BioAssay row exclusions
+
+`curation/pubchem_bioassay_exclusions.tsv` withholds one reviewed historical
+assay row, keyed by exact `standard_inchi_key`, `cid` and `aid`. Each decision
+requires the complete parsed row's `expected_source_row_sha256` (computed by
+`row_digest`), a stable DOI/PMID/HTTPS `reference`, `curator`, ISO `date` and
+`rationale`. Missing or ambiguous source rows, duplicate decisions, source
+drift, invalid attribution and decisions without an emitted owner stop seeding.
+
+The raw inventory remains unchanged. A table-owned
+`source-bioassay-exclusion-<cid>-<aid>` discussion retains the source identity,
+digest, citation and rationale; an old YAML answer cannot override it. Only the
+reviewed row is withheld, before observation capping and activity summaries.
+An xref exclusion alone does not remove historical assay rows. Conversely,
+this table does not repair an xref, establish a replacement compound, or screen
+other rows for identity or protocol validity. Source refreshes require renewed
+adjudication if any pinned field changes. Canary, reproduction and full QC apply.
+
+The initial decision concerns gentamicin's nonexact CID72396/AID1195 dose-data
+flag. It is not a general exclusion of assays typed `Other`, nor an audit of
+every AID1195 row. Importer-level identity and protocol validation remain
+separate work.
+
 ## What a re-seed keeps, and what it overwrites
 
 The corpus is generated, so a re-seed rebuilds every record. What it does *not*

@@ -67,12 +67,12 @@ field coverage (records carrying at least one item):
   occurrences                          2342
   biosynthetic_gene_clusters           3115
   biosynthetic_pathway                  164
-  bioactivities                         176
+  bioactivities                         175
   bioactivity_summary                   308
   molecular_targets                      15
   causal_graphs                         279
   related_records                       210
-  discussions                           350
+  discussions                           352
 
 producer claims: 3407 (808 causal, 162 correlational)
   BGC_CHARACTERIZED                     808

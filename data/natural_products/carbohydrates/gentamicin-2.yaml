@@ -36,6 +36,16 @@ producer_organisms:
   - reference: PMID:25641167
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0001603 entry version 3; citation taken from the entry level
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/KY971520.1
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: ATCC 15835. KY971520.1 source feature names ATCC 15835.
+      This qualifies the deposited locus, not exact X2 stereochemistry or experimental
+      product attribution. Exact-product assignment remains open in #941. Taxon, chemistry
+      and evidence grades are unchanged. See issue #944. Taxon identity and evidence
+      grade are unchanged; this is not a species-wide experiment. MIBiG source row
+      BGC0001603:1; SHA256 17d841738524b47141cd211d3ba0d0f9a24cfb0a8b7c71952651d0148ba5958d.
+      Curator: codex; date: 2026-10-13.'
+  strain: ATCC 15835
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0001603
   entry_version: '3'
@@ -60,6 +70,35 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+discussions:
+- discussion_id: curator-gentamicin-exact-product-assignment
+  kind: CURATION_TODO
+  status: OPEN
+  posed_by: codex
+  prompt: Which exact gentamicin congener and stereochemical resolution do these source
+    claims establish?
+  rationale: HFLK connectivity agrees with an X2 precursor candidate, but this source
+    graph leaves all 14 tetrahedral centers unspecified. The generic gentamicin label
+    does not distinguish it from the C complex. Preserve the source label and graph
+    until primary congener and stereochemical adjudication; do not adopt a stereo-resolved
+    CID as exact equivalence.
+  evidence:
+  - reference: https://github.com/CultureBotAI/NaturalProductMech/issues/941
+    explanation: Open exact-product adjudication; this discussion mitigates, not resolves,
+      the finding.
+  - reference: DOI:10.7164/antibiotics.57.436
+    evidence_source: full_text
+    explanation: Study measures the gentamicin C complex and distinguishes biosynthetic
+      intermediates; not direct proof of this exact graph.
+  - reference: PMID:25641167
+    evidence_source: abstract
+    explanation: Only the primary abstract reproduced by EPA HERO was inspected; X2
+      is distinguished from the C complex. Full experimental and stereochemical scope
+      remains unverified.
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/15574862
+    evidence_source: database
+    explanation: HFLKNINDVFJPQT-ZFAMMYHGSA-N is a stereo-resolved registry candidate,
+      not this exact unspecified key.
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
   curator: seed_from_sources
@@ -69,3 +108,13 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T22:20:16Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T22:20:23Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Add cited OPEN exact-gentamicin-product qualification for #941; preserve
+    chemistry, original source assertions, grades and SEEDED status.'
+  llm_assisted: true

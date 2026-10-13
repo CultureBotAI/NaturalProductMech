@@ -62,6 +62,11 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
+from naturalproductmech.curate.bioassay_exclusions import (  # noqa: E402
+    assay_key,
+    bioassay_exclusion_discussion,
+    load_bioassay_exclusions,
+)
 from naturalproductmech.curate.claim_references import (  # noqa: E402
     correct_claim_reference,
     load_claim_references,
@@ -97,6 +102,7 @@ MIBIG_STRUCTURE_CORRECTIONS = CURATION_DIR / "mibig_structure_corrections.tsv"
 MIBIG_PRODUCER_STRAINS = CURATION_DIR / "mibig_producer_strains.tsv"
 MIBIG_XREF_EXCLUSIONS = CURATION_DIR / "mibig_xref_exclusions.tsv"
 MIBIG_CLAIM_REFERENCES = CURATION_DIR / "mibig_claim_references.tsv"
+PUBCHEM_BIOASSAY_EXCLUSIONS = CURATION_DIR / "pubchem_bioassay_exclusions.tsv"
 
 # MIBiG's cluster vocabulary -> the schema enum. Six values in 4.0; `alkaloid`
 # was removed when compound classification was split from cluster
@@ -387,7 +393,8 @@ def carry_curator_owned_fields(payload: dict[str, Any], existing: dict[str, Any]
             continue
         # This adjudication is owned by the pinned curation table, not the YAML.
         if (discussion.get("discussion_id") == "source-structure-correction"
-                or discussion.get("discussion_id", "").startswith("source-xref-exclusion-")):
+                or discussion.get("discussion_id", "").startswith(
+                    ("source-xref-exclusion-", "source-bioassay-exclusion-"))):
             continue
         previous_discussion = answered.get(discussion.get("discussion_id"))
         if not previous_discussion:
@@ -438,6 +445,8 @@ def read_inventories() -> dict[str, list[dict[str, str]]]:
         inventories[MIBIG_XREF_EXCLUSIONS.stem] = read_tsv(MIBIG_XREF_EXCLUSIONS)
     if MIBIG_CLAIM_REFERENCES.exists():
         inventories[MIBIG_CLAIM_REFERENCES.stem] = read_tsv(MIBIG_CLAIM_REFERENCES)
+    if PUBCHEM_BIOASSAY_EXCLUSIONS.exists():
+        inventories[PUBCHEM_BIOASSAY_EXCLUSIONS.stem] = read_tsv(PUBCHEM_BIOASSAY_EXCLUSIONS)
     return inventories
 
 
@@ -769,6 +778,10 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     ChEBI. Grounding those is exactly what the next milestone is for, and
     `just worklist` ranks them.
     """
+    assay_exclusions = load_bioassay_exclusions(
+        inventories.get("pubchem_bioassay") or [],
+        inventories.get("pubchem_bioassay_exclusions") or [])
+    applied_assay_exclusions: set[tuple[str, str, str]] = set()
     raw_mibig_rows = inventories.get("mibig_compounds") or []
     claim_references = load_claim_references(
         raw_mibig_rows, inventories.get("mibig_claim_references") or [])
@@ -792,6 +805,8 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
         if override.get("action") == "WITHDRAW" and source_counts[identifier] != 1:
             raise ValueError(f"{identifier} WITHDRAW requires exactly one matching source row")
     if not mibig_rows:
+        if assay_exclusions:
+            raise ValueError("bioassay exclusions did not reach a record")
         return []
     mibig_rows = [
         apply_mibig_locus_evidence_override(row, mibig_locus_overrides, source_row=raw)
@@ -1251,7 +1266,13 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
 
         summary_classes: set[str] = set()
         bioactivities: list[dict[str, Any]] = []
+        excluded_assays: list[dict[str, str]] = []
         for row in assays_by_key.get(key) or []:
+            row_key = assay_key(row)
+            if row_key in assay_exclusions:
+                excluded_assays.append(assay_exclusions[row_key])
+                applied_assay_exclusions.add(row_key)
+                continue
             observation: dict[str, Any] = {
                 "assay": row["assay_name"] or f"PubChem AID {row['aid']}",
                 "evidence": [{
@@ -1431,6 +1452,7 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
         doc["curation_status"] = "SEEDED"
 
         discussions: list[dict[str, Any]] = [exclusion_discussion(d) for d in excluded_xrefs]
+        discussions.extend(bioassay_exclusion_discussion(d) for d in excluded_assays)
         for row in rows:
             if row.get("structure_correction_note"):
                 discussions.append({
@@ -1600,6 +1622,9 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     if xref_exclusions.keys() - applied_exclusions:
         raise ValueError("xref exclusions did not reach a record: "
                          + ", ".join(sorted(xref_exclusions.keys() - applied_exclusions)))
+    if assay_exclusions.keys() - applied_assay_exclusions:
+        raise ValueError("bioassay exclusions did not reach a record: "
+                         + repr(sorted(assay_exclusions.keys() - applied_assay_exclusions)))
     if producer_strains.keys() - applied_strains:
         raise ValueError("strain qualifications did not reach a producer: "
                          + ", ".join(sorted(producer_strains.keys() - applied_strains)))
