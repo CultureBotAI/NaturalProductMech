@@ -1,4 +1,4 @@
-"""Withhold reviewed PubChem equivalences without changing raw source assertions."""
+"""Withhold reviewed chemical equivalences without changing raw source assertions."""
 
 from __future__ import annotations
 
@@ -13,7 +13,7 @@ def load_xref_exclusions(
     source_rows: list[dict[str, str]],
     decisions: list[dict[str, str]],
 ) -> dict[str, list[dict[str, str]]]:
-    """Pin each decision to one complete MIBiG row and one literal PubChem xref."""
+    """Pin each decision to one complete MIBiG row and one literal supported xref."""
     result: dict[str, list[dict[str, str]]] = {}
     seen = set()
     required = {
@@ -29,8 +29,8 @@ def load_xref_exclusions(
         source_id, xref = item["source_id"], item["xref"]
         if not re.fullmatch(r"BGC\d{7}:[1-9]\d*", source_id):
             raise ValueError("xref exclusion requires an exact MIBiG compound source_id")
-        if not re.fullmatch(r"pubchem:[1-9]\d*", xref):
-            raise ValueError(f"{source_id}: only literal PubChem xref exclusions are supported")
+        if not re.fullmatch(r"(?:pubchem:[1-9]\d*|npatlas:NPA\d{6})", xref):
+            raise ValueError(f"{source_id}: only literal PubChem or NPAtlas xref exclusions are supported")
         if (source_id, xref) in seen:
             raise ValueError(f"{source_id}: duplicate xref exclusion")
         seen.add((source_id, xref))

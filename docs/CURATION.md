@@ -120,12 +120,13 @@ curator attribution. It does not change a BGC's host, infer a strain taxon ID,
 upgrade a grade or imply a species-wide experiment. Regenerate through the
 normal canary and guarded seeder, then verify reproduction and full QC.
 
-## MIBiG PubChem xref exclusions
+## MIBiG chemical xref exclusions
 
-`curation/mibig_xref_exclusions.tsv` withholds a reviewed nonexact PubChem xref
+`curation/mibig_xref_exclusions.tsv` withholds a reviewed nonexact PubChem or NPAtlas xref
 from one MIBiG compound row. Each decision has `source_id` (`BGC:compound_index`),
 `expected_source_row_sha256` (the complete untouched row's `row_digest`), literal
-`xref` (`pubchem:<CID>`), stable `reference`, `curator`, ISO `date` and `rationale`.
+`xref` (`pubchem:<positive CID>` or `npatlas:NPA<six digits>`), stable `reference`,
+`curator`, ISO `date` and `rationale`.
 Missing or duplicate targets/decisions, malformed fields and source drift stop
 seeding. The xref must actually occur in the pinned row. A concurrent structure
 replacement is rejected for separate adjudication. If another row contributing
@@ -137,6 +138,11 @@ The upstream assertion, source digest and curator's reason remain in a table-own
 `source-xref-exclusion-...` discussion, whose adjudication cannot be overwritten
 by an old YAML answer. This narrow action does not establish a replacement xref,
 merge owners or validate any assays. Canary, reproduction and full QC are required.
+
+Historical NPAtlas structures can differ from the current unversioned entry.
+An exact historical match is retained in the rationale but does not justify an
+unqualified current xref. Withholding equivalence does not decide which source's
+stereochemical assignment is experimentally correct.
 
 ## What a re-seed keeps, and what it overwrites
 
