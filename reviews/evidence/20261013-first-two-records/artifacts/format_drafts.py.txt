@@ -1,0 +1,16 @@
+import json
+import yaml
+from capture import ROOT
+
+class ReviewDumper(yaml.SafeDumper):
+    def ignore_aliases(self, data):
+        return True
+
+for name in ('mycophenolic-acid-2', '2-methylisoborneol-2'):
+    before = yaml.safe_load((ROOT / (name + '-review.yaml')).read_text())
+    content = yaml.dump(before, Dumper=ReviewDumper, sort_keys=False, allow_unicode=False, width=100)
+    assert yaml.safe_load(content) == before
+    target = ROOT / (name + '-review-v2.yaml')
+    with target.open('x') as stream:
+        stream.write(content)
+    print(json.dumps(dict(draft=str(target), content_unchanged=True)))

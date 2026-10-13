@@ -1,0 +1,176 @@
+{
+  "status": "inspection_only",
+  "repository": "CultureBotAI/NaturalProductMech",
+  "source": {
+    "git_revision": "e66f934111777c4ebfe69475d0520c0cfa074785",
+    "state": "working_tree",
+    "inputs": [
+      {
+        "path": ".claude/skills/curate-yaml-record/references/review-checklist.md",
+        "sha256": "13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9",
+        "role": "context"
+      },
+      {
+        "path": ".claude/skills/review-yaml-record/SKILL.md",
+        "sha256": "493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae",
+        "role": "context"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha256": "49e2ab03c7e82013e9d68356de2c9965c9f8517a3408a44124076f4ca1b529cd",
+        "role": "context"
+      },
+      {
+        "path": "conf/id_label_targets.yaml",
+        "sha256": "24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6",
+        "role": "context"
+      },
+      {
+        "path": "conf/producer_evidence.tsv",
+        "sha256": "67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131",
+        "role": "context"
+      },
+      {
+        "path": "conf/record_review.yaml",
+        "sha256": "e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8",
+        "role": "context"
+      },
+      {
+        "path": "curation/mibig_locus_evidence_overrides.tsv",
+        "sha256": "0b2e8b991c926f9a67a3094964b0335dd1cd347fbf548674fa273db8fac3a4b2",
+        "role": "context"
+      },
+      {
+        "path": "curation/mibig_structure_corrections.tsv",
+        "sha256": "5b1edc057cdcc732f61de2964cd175fa3bc2dca929c5d2823142f61313545a7e",
+        "role": "context"
+      },
+      {
+        "path": "data/natural_products/PATHS.tsv",
+        "sha256": "bf38e4f0c7e4bcbdf184a4e7b8b024752251e8f34c015c0b82cedca98a8a5729",
+        "role": "context"
+      },
+      {
+        "path": "data/natural_products/alkaloids/mycophenolic-acid-2.yaml",
+        "sha256": "a9de4957ebce6adb145e3838023650bef784eabfed454ccc8676af0392a509a9",
+        "role": "target"
+      },
+      {
+        "path": "data/raw/MANIFEST.yaml",
+        "sha256": "373f049029be3db137e062ff5f872a2400a9d5b423f3e108ea44ebde2f8dcc7d",
+        "role": "context"
+      },
+      {
+        "path": "data/raw/chebi_structures.tsv",
+        "sha256": "62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2",
+        "role": "context"
+      },
+      {
+        "path": "data/raw/corpus_taxa.obo",
+        "sha256": "8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9",
+        "role": "context"
+      },
+      {
+        "path": "data/raw/lotus_occurrences.tsv",
+        "sha256": "ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94",
+        "role": "context"
+      },
+      {
+        "path": "data/raw/mibig_compounds.tsv",
+        "sha256": "e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6",
+        "role": "context"
+      },
+      {
+        "path": "data/raw/npclassifier.tsv",
+        "sha256": "7b9b9f78f5b14aea9fabb163bbaa9e842920a7e9b07deac8f98c97666e9e23fc",
+        "role": "context"
+      },
+      {
+        "path": "docs/CURATION.md",
+        "sha256": "3b979068592adbb0611de95927ca31eaabb5fb5d791aa09973e3b1e8d5a19011",
+        "role": "context"
+      },
+      {
+        "path": "docs/HARMONIZATION.md",
+        "sha256": "30c7007e57806c245674ce922e0f8c485b1a8a12a9f9fb95850ba6ee4f8cddc2",
+        "role": "context"
+      },
+      {
+        "path": "docs/record-review-profile.md",
+        "sha256": "1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a",
+        "role": "context"
+      },
+      {
+        "path": "docs/record-reviews.md",
+        "sha256": "452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b",
+        "role": "context"
+      },
+      {
+        "path": "schema/record_review.yaml",
+        "sha256": "229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb",
+        "role": "context"
+      },
+      {
+        "path": "scripts/extract_lotus.py",
+        "sha256": "8a8c524f60f85d2bb54412ca055a6a45e0d37ec5f4584d8d70be454b8f664290",
+        "role": "context"
+      },
+      {
+        "path": "scripts/extract_mibig.py",
+        "sha256": "e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c",
+        "role": "context"
+      },
+      {
+        "path": "scripts/seed_from_sources.py",
+        "sha256": "2da30b7ccf4b9543ecbe02eb0c8662e51a82c0745aa45be28afbf8ceb38fc1be",
+        "role": "context"
+      },
+      {
+        "path": "src/naturalproductmech/schema/naturalproductmech.yaml",
+        "sha256": "9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d",
+        "role": "context"
+      }
+    ]
+  },
+  "targets": [
+    {
+      "target_id": "naturalproductmech:mibig-1e0dcc87ee",
+      "path": "data/natural_products/alkaloids/mycophenolic-acid-2.yaml",
+      "label": "mycophenolic acid",
+      "record_class": "NaturalProductRecord",
+      "kind": "generated",
+      "owner_paths": [
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/mibig_compounds.tsv",
+          "role": "Imported MIBiG compound chemistry and cluster assertions"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/lotus_occurrences.tsv",
+          "role": "Imported structure-organism-publication occurrence triples"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/extract_mibig.py",
+          "role": "MIBiG extraction"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/extract_lotus.py",
+          "role": "LOTUS extraction"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/seed_from_sources.py",
+          "role": "Generated record harmonization"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_structure_corrections.tsv",
+          "role": "Narrow correction route, excludes occupied destination keys"
+        }
+      ]
+    }
+  ]
+}

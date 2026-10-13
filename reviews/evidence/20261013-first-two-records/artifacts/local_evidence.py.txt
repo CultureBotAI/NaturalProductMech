@@ -1,0 +1,28 @@
+import csv
+import json
+from capture import ROOT, REPO, TARGET, now, save, run
+
+KEY = 'IKMDAJQFLYGHII-UHFFFAOYSA-N'
+GOOD = 'HPNSFSBZBAHARI-RUDMXATFSA-N'
+
+result = {'accessed_at': now(), 'records': {}}
+queries = {
+    'data/raw/mibig_compounds.tsv': lambda r: r['mibig_accession'] == 'BGC0001360',
+    'data/raw/lotus_occurrences.tsv': lambda r: r['standard_inchi_key'] == KEY,
+    'data/raw/chebi_structures.tsv': lambda r: r.get('chebi_id') == 'CHEBI:168396',
+    'data/raw/npclassifier.tsv': lambda r: r['standard_inchi_key'] in (KEY, GOOD),
+    'data/natural_products/PATHS.tsv': lambda r: 'mycophenolic-acid' in str(r),
+    'curation/mibig_structure_corrections.tsv': lambda r: 'BGC0001360' in str(r),
+    'curation/mibig_locus_evidence_overrides.tsv': lambda r: 'BGC0001360' in str(r),
+}
+for path, match in queries.items():
+    with (REPO / path).open() as stream:
+        result['records'][path] = [row for row in csv.DictReader(stream, delimiter='\t') if match(row)]
+obo = (REPO / 'data/raw/corpus_taxa.obo').read_text()
+result['taxonomy'] = [block for block in obo.split('\n[Term]\n')
+                      if any('\nid: NCBITaxon:' + taxon + '\n' in '\n' + block for taxon in ('5082', '1365484'))]
+save('local-source-rows.json', result)
+print(json.dumps(result, indent=2), flush=True)
+run('ignored-inclusive-identity-search', ['rg', '--hidden', '--no-ignore', '-l', '-i',
+    'IKMDAJQFLYGHII|BGC0001360|naturalproductmech:mibig-1e0dcc87ee|mycophenolic.acid', '.',
+    '-g', '!**/.git/**', '-g', '!**/.venv/**', '-g', '!**/__pycache__/**'])

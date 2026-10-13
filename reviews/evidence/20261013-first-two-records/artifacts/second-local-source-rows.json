@@ -1,0 +1,88 @@
+{
+  "accessed_at": "2026-10-13T04:30:32.820894Z",
+  "records": {
+    "data/raw/mibig_compounds.tsv": [
+      {
+        "mibig_accession": "BGC0000657",
+        "entry_version": "5",
+        "entry_status": "active",
+        "entry_quality": "questionable",
+        "entry_completeness": "complete",
+        "compound_name": "2-methylisoborneol",
+        "compound_index": "1",
+        "smiles": "COC(=O)[C@@H]1C[C@@H](CN1CN2C(=S)OC(=N2)C3=CC(=CC=C3)Br)O",
+        "standard_inchi": "InChI=1S/C15H16BrN3O4S/c1-22-14(21)12-6-11(20)7-18(12)8-19-15(24)23-13(17-19)9-3-2-4-10(16)5-9/h2-5,11-12,20H,6-8H2,1H3/t11-,12-/m0/s1",
+        "standard_inchi_key": "MBPWQYMDPQWNIL-RYUDHWBXSA-N",
+        "stereo_complete": "true",
+        "compound_classes": "",
+        "database_ids": "pubchem:9237955",
+        "taxon_id": "NCBITaxon:1002505",
+        "taxon_label": "Pseudanabaena sp. dqh15",
+        "bgc_classes": "terpene",
+        "bgc_subclasses": "Monoterpene",
+        "genome_accession": "HQ830028.1",
+        "locus_from": "",
+        "locus_to": "",
+        "locus_evidence_methods": "Gene expression correlated with compound production",
+        "producer_evidence_basis": "BGC_CORRELATED",
+        "cluster_link_evidence_basis": "CLUSTER_CORRELATED",
+        "primary_reference": "PMID:21490938",
+        "reference_basis": "ENTRY"
+      }
+    ],
+    "data/raw/npclassifier.tsv": [
+      {
+        "standard_inchi_key": "MBPWQYMDPQWNIL-RYUDHWBXSA-N",
+        "smiles": "COC(=O)[C@@H]1C[C@@H](CN1CN2C(=S)OC(=N2)C3=CC(=CC=C3)Br)O",
+        "pathway_results": "Alkaloids",
+        "superclass_results": "",
+        "class_results": "",
+        "is_glycoside": "false",
+        "model_version": "npclassifier.gnps2.org@2026-09-07"
+      }
+    ],
+    "data/raw/chebi_structures.tsv": [
+      {
+        "chebi_id": "CHEBI:61987",
+        "name": "2-methylisoborneol",
+        "definition": "An bornane monoterpenoid comprising isoborneol carrying a 2-methyl substituent (the 1R,2R,4R-diastereomer).",
+        "stars": "3",
+        "standard_inchi_key": "LFYXNXGVLGKVCJ-FBIMIBRVSA-N",
+        "smiles": "CC1(C)[C@@H]2CC[C@@]1(C)[C@](C)(O)C2"
+      }
+    ],
+    "data/raw/taxon_groups.tsv": [
+      {
+        "taxon_id": "NCBITaxon:5082",
+        "taxon_group": "FUNGAL"
+      },
+      {
+        "taxon_id": "NCBITaxon:1002505",
+        "taxon_group": "CYANOBACTERIAL"
+      },
+      {
+        "taxon_id": "NCBITaxon:1365484",
+        "taxon_group": "FUNGAL"
+      }
+    ],
+    "data/natural_products/PATHS.tsv": [
+      {
+        "identifier": "naturalproductmech:mibig-0eb8c93c6f",
+        "np_pathway": "TERPENOIDS",
+        "slug": "2-methylisoborneol",
+        "path": "data/natural_products/terpenoids/2-methylisoborneol.yaml"
+      },
+      {
+        "identifier": "naturalproductmech:mibig-0ed362dd75",
+        "np_pathway": "ALKALOIDS",
+        "slug": "2-methylisoborneol-2",
+        "path": "data/natural_products/alkaloids/2-methylisoborneol-2.yaml"
+      }
+    ],
+    "curation/mibig_structure_corrections.tsv": [],
+    "curation/mibig_locus_evidence_overrides.tsv": []
+  },
+  "taxonomy": [
+    "id: NCBITaxon:1002505\nname: Pseudanabaena sp. dqh15\n"
+  ]
+}

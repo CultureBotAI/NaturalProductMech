@@ -1,0 +1,23 @@
+{
+  "command": [
+    "rg",
+    "--hidden",
+    "--no-ignore",
+    "-l",
+    "-i",
+    "IKMDAJQFLYGHII|BGC0001360|naturalproductmech:mibig-1e0dcc87ee|mycophenolic.acid",
+    ".",
+    "-g",
+    "!**/.git/**",
+    "-g",
+    "!**/.venv/**",
+    "-g",
+    "!**/__pycache__/**"
+  ],
+  "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+  "started_at": "2026-10-13T04:22:58.945826Z",
+  "finished_at": "2026-10-13T04:22:59.222537Z",
+  "exit_code": 0,
+  "log": "/private/tmp/npmech-all-record-reviews-pU8b8GXS/ignored-inclusive-identity-search.log",
+  "sha256": "0a9c7979771e5906bbe04d8c29ed0bf1d86f1b325781b86034d5616ad99494c5"
+}

@@ -1,0 +1,43 @@
+{
+  "targets": [
+    {
+      "target_id": "naturalproductmech:mibig-1e0dcc87ee",
+      "path": "data/natural_products/alkaloids/mycophenolic-acid-2.yaml",
+      "label": "mycophenolic acid",
+      "record_class": "NaturalProductRecord",
+      "kind": "generated",
+      "owner_paths": [
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/mibig_compounds.tsv",
+          "role": "Imported MIBiG compound chemistry and cluster assertions"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/lotus_occurrences.tsv",
+          "role": "Imported structure-organism-publication occurrence triples"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/extract_mibig.py",
+          "role": "MIBiG extraction"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/extract_lotus.py",
+          "role": "LOTUS extraction"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/seed_from_sources.py",
+          "role": "Generated record harmonization"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_structure_corrections.tsv",
+          "role": "Narrow correction route, excludes occupied destination keys"
+        }
+      ]
+    }
+  ]
+}

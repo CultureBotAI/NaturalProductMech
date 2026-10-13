@@ -1,0 +1,31 @@
+from datetime import datetime, timezone
+import json
+from pathlib import Path
+
+import yaml
+from rdkit import Chem, rdBase
+from rdkit.Chem import Descriptors, rdMolDescriptors
+
+ROOT = Path(__file__).parent
+REPO = Path('/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech')
+paths = ['data/natural_products/alkaloids/mycophenolic-acid-2.yaml',
+         'data/natural_products/alkaloids/2-methylisoborneol-2.yaml']
+rows = []
+for path in paths:
+    doc = yaml.safe_load((REPO / path).read_text())
+    structure = doc['chemical_structure']
+    mol = Chem.MolFromSmiles(structure['smiles'])
+    assert mol is not None
+    inchi = Chem.MolToInchi(mol)
+    key = Chem.InchiToInchiKey(inchi)
+    centers = Chem.FindMolChiralCenters(mol, includeUnassigned=True)
+    rows.append(dict(path=path, smiles_parsed=True, inchi_matches=inchi == structure['standard_inchi'],
+        key_matches=key == structure['standard_inchi_key'], calculated_key=key,
+        formula=rdMolDescriptors.CalcMolFormula(mol), mass=Descriptors.MolWt(mol),
+        chiral_centers=centers, undefined_tetrahedral_centers=sum(c[1] == '?' for c in centers)))
+result = dict(accessed_at=datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z'),
+    rdkit_version=rdBase.rdkitVersion, role='Auxiliary structural consistency calculation, not the pinned 2026.3.5 extractor or a native quality gate',
+    rows=rows)
+with (ROOT / 'chemistry-auxiliary.json').open('x') as stream:
+    json.dump(result, stream, indent=2)
+print(json.dumps(result, indent=2))

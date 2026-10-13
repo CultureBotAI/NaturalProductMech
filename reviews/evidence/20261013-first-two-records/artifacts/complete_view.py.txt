@@ -1,0 +1,12 @@
+from naturalproductmech.graph_components import read_natural_product
+from capture import ROOT, REPO, save, now
+
+rows = []
+for path in ('data/natural_products/alkaloids/mycophenolic-acid-2.yaml',
+             'data/natural_products/alkaloids/2-methylisoborneol-2.yaml'):
+    record = read_natural_product(REPO / path)
+    rows.append(dict(path=path, identifier=record['identifier'],
+        graphs=len(record.get('causal_graphs', [])), refs=record.get('causal_graph_refs', [])))
+assert all(r['graphs'] == 0 and not r['refs'] for r in rows)
+save('complete-view.json', dict(accessed_at=now(), records=rows))
+print(rows)

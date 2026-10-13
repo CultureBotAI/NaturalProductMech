@@ -1,0 +1,23 @@
+{
+  "command": [
+    "rg",
+    "--hidden",
+    "--no-ignore",
+    "-l",
+    "-i",
+    "MBPWQYMDPQWNIL|BGC0000657|naturalproductmech:mibig-0ed362dd75|2-methylisoborneol",
+    ".",
+    "-g",
+    "!**/.git/**",
+    "-g",
+    "!**/.venv/**",
+    "-g",
+    "!**/__pycache__/**"
+  ],
+  "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+  "started_at": "2026-10-13T04:30:34.360353Z",
+  "finished_at": "2026-10-13T04:30:34.790681Z",
+  "exit_code": 0,
+  "log": "/private/tmp/npmech-all-record-reviews-pU8b8GXS/second-ignored-inclusive-search.log",
+  "sha256": "eb6a048b66b78eac43b49027b687d431c104aa53330c1b63fe7a2a08766b015e"
+}
