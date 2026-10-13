@@ -1,0 +1,802 @@
+schema_version: 1.0.0
+review_id: 20261013T115040Z-yersiniabactin
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Yersiniabactin: unspecified-stereo identity and native BGC evidence'
+started_at: '2026-10-13T11:33:20.074250Z'
+finished_at: '2026-10-13T11:50:40.150438Z'
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: self_review
+  independence_basis: Same assistant/thread as preceding corpus curation and publication;
+    this is not independent human sign-off.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The incomplete-stereo owner matches NPAtlas and both MIBiG structures, and
+  DC3000 knockout evidence is supported at abstract level. One confirmed major nonexact
+  PubChem xref and one confirmed minor missing Yersinia strain qualifier remain. Full
+  experimental/isolate-form verification is access-limited; partial needs_curation,
+  not scientific sign-off.
+source:
+  git_revision: 8b5a3ebf476c27b21d49a89d7e5684cef41a367d
+  state: git_commit
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: 49e2ab03c7e82013e9d68356de2c9965c9f8517a3408a44124076f4ca1b529cd
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/decisions.tsv
+    sha256: 7214a74975fb2cb65521da18dd14ea1c65665f50060106976dc0db9caf887805
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: a1eb14fec4a7cee0c2fc25c43091e75af24ae62c44c4f7659ed7aedf0e6a0e6c
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: f075713522db63c54eb4054b539cf421b42feb6375a2736e7386e8d7abeeea32
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: 5b1edc057cdcc732f61de2964cd175fa3bc2dca929c5d2823142f61313545a7e
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: bf38e4f0c7e4bcbdf184a4e7b8b024752251e8f34c015c0b82cedca98a8a5729
+    role: context
+  - path: data/natural_products/alkaloids/yersiniabactin-2.yaml
+    sha256: 5788fa8b0f19f7e6ad13fd4e5dcd0a8ba33f59e0b487312dd0129de1f0fb647e
+    role: context
+  - path: data/natural_products/alkaloids/yersiniabactin.yaml
+    sha256: 62d868a1addba9468c051fce7d15f9099456e5b1608693e0af0487b3c6c598c0
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: 373f049029be3db137e062ff5f872a2400a9d5b423f3e108ea44ebde2f8dcc7d
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: 7b9b9f78f5b14aea9fabb163bbaa9e842920a7e9b07deac8f98c97666e9e23fc
+    role: context
+  - path: docs/CURATION.md
+    sha256: e0b1b524d1dfdb16f2c100ab3794f3e69e2740d7352060f04b82d5f7020e76b4
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: pyproject.toml
+    sha256: 02505a46585e870eac7333f31a6773df51465ef13969d4d490fbc0247931d85c
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_lotus.py
+    sha256: 8a8c524f60f85d2bb54412ca055a6a45e0d37ec5f4584d8d70be454b8f664290
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 4daf8b2b5864b55c9d8d50a85572bbd71d6b1d8223e492a8961479c497d026ea
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/history.yaml
+    sha256: b01b06f1b9a37db205c26c31ec0fd910690848507c7e1bfb73b424ac0829c52d
+    role: context
+  - path: src/naturalproductmech/schema/mech_shared.yaml
+    sha256: c2e7054fd32635e380c698282bd886a9105861009b9f0474f02bb1b80865e895
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: uv.lock
+    sha256: c62a5739e3ffeb12cc57b3bf12a31dcf9cdfbf00b417f4ba3a801d51ef9efbe3
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-5395461679
+  path: data/natural_products/alkaloids/yersiniabactin.yaml
+  label: yersiniabactin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Imported chemical, producer and cluster assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Imported structure-organism-reference triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Pinned ChEBI grounding inventory
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_origins.tsv
+    role: Pinned ChEBI occurrence inventory
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/antibioticmech_inchikeys.tsv
+    role: Pinned sibling exact-structure joins
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated harmonization and grading
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: MIBiG extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_lotus.py
+    role: LOTUS extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Implemented pinned structure corrections
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Implemented exact-context method corrections
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Implemented pinned strain qualifications
+scope:
+  description: One exact resolved owner; same-label sibling consulted only as identity
+    context. Full corpus goal remains3115 owners and243 attached components.
+  selection: Next exact path in the verified exhaustive campaign checkpoint; same-label/different-key
+    candidates prioritized, not a sample.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-5395461679
+  exclusions:
+  - target: Other3114 owners
+    reason: Not scientifically assessed by this single-record observation; retained
+      in the campaign checkpoint.
+checks:
+- check_id: strict-1
+  name: strict-1
+  status: failed
+  required: false
+  command: just validate-strict data/natural_products/alkaloids/yersiniabactin.yaml
+    --out /private/tmp/npmech-yersiniabactin-resume-20261013-pwkZfyO5/strict-1.tsv
+  exit_code: 2
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-5395461679
+  summary: Initial just wrapper failed on sandbox-denied uv cache; replaced by the
+    documented script in the existing repository environment.
+  scope_note: Actual command result retained; log SHA256 0da7409391d3a84df4b1b2ddaaf9fae5386d72554f319b6820ecfccff0647044
+- check_id: strict-1-local
+  name: strict-1-local
+  status: passed
+  required: true
+  command: .venv/bin/python scripts/validate_strict.py data/natural_products/alkaloids/yersiniabactin.yaml
+    --out /private/tmp/npmech-yersiniabactin-resume-20261013-pwkZfyO5/strict-1.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-5395461679
+  summary: 'One owner and all referenced components: zero schema errors.'
+  scope_note: Actual command result retained; log SHA256 588b9825d26550ae82ccbe100ed745179e4c999a39e63213c76d8551749c43c4
+- check_id: chemistry
+  name: chemistry
+  status: failed
+  required: false
+  command: env RDBASE=/private/tmp/npmech-rdkit-2026.03.5/share/RDKit /private/tmp/npmech-rdkit-2026.03.5/bin/python
+    /private/tmp/npmech-yersiniabactin-resume-20261013-pwkZfyO5/chemistry.py
+  exit_code: 1
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-5395461679
+  summary: Initial temporary RDKit environment failed on incomplete NumPy before calculating
+    results; failure retained.
+  scope_note: Actual command result retained; log SHA256 9e2f8f60cbb671ef22e14c0a3e61314e3ff0f843ff3e0a732b5abfc92f1b8606
+- check_id: chemistry-local-numpy
+  name: chemistry-local-numpy
+  status: passed
+  required: true
+  command: env RDBASE=/private/tmp/npmech-rdkit-2026.03.5/share/RDKit PYTHONPATH=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/lib/python3.13/site-packages
+    /private/tmp/npmech-rdkit-2026.03.5/bin/python /private/tmp/npmech-yersiniabactin-resume-20261013-pwkZfyO5/chemistry.py
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-5395461679
+  summary: Exact pinned RDKit calculations succeeded using existing repository NumPy
+    via PYTHONPATH; no package or corpus edits.
+  scope_note: Actual command result retained; log SHA256 9d2b12be23b2c9f299775c16e01abaddc87b2ba509a58f004e4c975a6d056b74
+- check_id: labels
+  name: labels
+  status: passed
+  required: true
+  command: .venv/bin/python scripts/validate_id_label_correspondence.py -c conf/id_label_targets.yaml
+    --report /private/tmp/npmech-yersiniabactin-resume-20261013-pwkZfyO5/labels.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-5395461679
+  summary: 'Full-corpus configured gate exited0: 13434 canonical,646 synonym,35 exception,499
+    nonblocking mismatch warnings,4649 no-adapter skips. Minted chemical identifiers
+    are skipped; this is not chemical-identity verification.'
+  scope_note: Actual command result retained; log SHA256 1a95f2dc962338474cd8c5b7596110787f446a0c14bb65cf03451d1d0b011611
+- check_id: qc
+  name: qc
+  status: passed
+  required: true
+  command: just qc
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-5395461679
+  summary: Full documented QC exited0:674 tests passed,3 skipped,2 warnings; strict
+    schema3115 owners with zero errors; lint, vendored synchronization, provenance,
+    site, reproduction and corpus lock passed. Deterministic success is not scientific
+    sign-off.
+  scope_note: Actual command result retained; log SHA256 a2785c0ac9e2e6cd6b989eaab6b597abd74eaecf0190b6e37f36cf6d04297001
+- check_id: review-queue
+  name: review-queue
+  status: passed
+  required: false
+  command: .venv/bin/python scripts/curation_worklist.py --review-records --limit
+    0 --tsv /private/tmp/npmech-yersiniabactin-resume-20261013-pwkZfyO5/review-queue.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-5395461679
+  summary: Exhaustive native queue generated to the private workspace:8930 diagnostic
+    rows. Multiple diagnostics per record are not distinct owners or completed reviews.
+  scope_note: Actual command result retained; log SHA256 03dc0194019c5eff3a736dca9b062f6330000d2ce22c331164d865a6b95a33ba
+- check_id: imodulondb
+  name: Structured source applicability
+  status: not_applicable
+  required: false
+  target_ids:
+  - naturalproductmech:mibig-5395461679
+  summary: These owners store BGC/genome accessions but no gene, locus-tag, protein-example,
+    regulator or expression-module claims. MIBiG and INSDC were used first for structured
+    cross-checks. iModulon membership would not establish chemical identity or production.
+    No coverage-absence claim is made.
+- check_id: primary-fulltext
+  name: Primary experiment and exact isolate-form verification
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-5395461679
+  summary: Primary abstracts were inspected but complete experimental and chemical-form
+    verification is access-limited. No source was retrieved through an alternate route
+    after explicit403 or reCAPTCHA. See limitations.
+- check_id: initial-draft-validation
+  name: Initial review-draft format validation
+  status: failed
+  required: false
+  target_ids:
+  - naturalproductmech:mibig-5395461679
+  command: .venv/bin/python scripts/record_review.py validate /private/tmp/npmech-yersiniabactin-resume-20261013-pwkZfyO5/yersiniabactin-2-review.yaml
+    /private/tmp/npmech-yersiniabactin-resume-20261013-pwkZfyO5/yersiniabactin-review.yaml
+  exit_code: 1
+  expected_exit_code: 0
+  summary: Initial generated drafts contained YAML aliases; the canonical validator
+    rejected that format. The assessed content was reserialized without aliases before
+    canonical validation and saving. No scientific inputs or findings changed.
+  scope_note: Superseded draft-format failure retained; log SHA256 9754fbee2c8d2e0dd5f2db7cea93dfda03c23dd6e71a1d9c6d83c082b95130e5
+- check_id: draft-timestamp-validation
+  name: Draft review ID timestamp validation
+  status: failed
+  required: false
+  target_ids:
+  - naturalproductmech:mibig-5395461679
+  command: .venv/bin/python scripts/record_review.py validate /private/tmp/npmech-yersiniabactin-resume-20261013-pwkZfyO5/yersiniabactin-2-review-final.yaml
+    /private/tmp/npmech-yersiniabactin-resume-20261013-pwkZfyO5/yersiniabactin-review-final.yaml
+  exit_code: 1
+  expected_exit_code: 0
+  summary: Alias-free draft validation exposed a review_id prefix that no longer matched
+    finished_at after the format repair. Both timestamp fields were synchronized before
+    final validation. Scientific evidence access timestamps, input hashes and assessments
+    were retained.
+  scope_note: Superseded draft-format failure retained; log SHA256 3c7e67c4c4c88de1a166d7eeee24a05e6b27068c39c47270c8e0d3517ac53414
+- check_id: draft-scope-validation
+  name: Single-record scope validation
+  status: failed
+  required: false
+  target_ids:
+  - naturalproductmech:mibig-5395461679
+  command: .venv/bin/python scripts/record_review.py validate /private/tmp/npmech-yersiniabactin-resume-20261013-pwkZfyO5/yersiniabactin-2-review-ready.yaml
+    /private/tmp/npmech-yersiniabactin-resume-20261013-pwkZfyO5/yersiniabactin-review-ready.yaml
+  exit_code: 1
+  expected_exit_code: 0
+  summary: The draft incorrectly placed the campaign denominator3115 in a kind:record
+    artifact. Its schema denominator is now1, with the full3115-owner/243-component
+    campaign explicitly retained in scope prose and the checkpoint. No population
+    was removed from the goal.
+  scope_note: Superseded metadata failure retained; log SHA256 0718f3a1cea866e4344af3f5172f09f39b99d830afe6f8a5a6607b2820a0cc97
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/natural_products/alkaloids/yersiniabactin.yaml
+  locator: Entire owner, all history, and read_natural_product resolved view
+  accessed_at: '2026-10-13T11:33:25.524834Z'
+  support: context_only
+  summary: Full owner read; no inline causal graphs or causal_graph_refs. No protein
+    examples, pathway steps, assays, molecular targets, clinical assertions or sibling
+    links are stored. Existing status is SEEDED; no data or history was changed.
+  snapshot_sha256: 62d868a1addba9468c051fce7d15f9099456e5b1608693e0af0487b3c6c598c0
+- evidence_id: inventories
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: BGC0001055:1 line1206; BGC0000467:1 line651; BGC0002570:1 line3267; LOTUS
+    exact-key rows712-715 and3026; NPClassifier rows257 and1111
+  accessed_at: '2026-10-13T11:33:25.524834Z'
+  support: supports
+  summary: Parsed exact-key source rows reproduce the source concepts, database evidence,
+    computed Alkaloids filing and xrefs. Both keys have zero matches in the pinned
+    ChEBI structure/origin and AntibioticMech inventories. This supports minted identity
+    relative to these inventories, not absence from all current databases. Occurrences
+    remain distinct claims from producers; DOI/PMID aliases do not provide independent
+    experiments.
+  search_scope: csv.DictReader read every row in the six explicitly named inventories,
+    including paths independently of gitignore. Complete corpus and component paths
+    were enumerated with Path.rglob. Hidden/ignored-inclusive rg searched curation,
+    data/natural_products and reviews/structured for labels, keys and three accessions.
+    No matching strain/correction decision or earlier review bundle was found in those
+    searched inputs.
+- evidence_id: chemistry
+  kind: validation
+  reference: RDKit:2026.03.5
+  locator: MolFromSmiles; MolToInchi; MolToInchiKey; FindMolChiralCenters(includeUnassigned=True);
+    CalcMolFormula; GetFormalCharge; ExactMolWt; RemoveStereochemistry; TautomerEnumerator.Canonicalize
+  accessed_at: '2026-10-13T11:37:35.103208Z'
+  support: supports
+  snapshot_sha256: ed26c7e5c80f8ff3a59420e619be3b0a373afcdb241d302ae33bfd35d2e36a65
+  summary: Both stored SMILES reproduce their stored InChIs and keys; both calculate
+    C21H27N3O4S3, charge0, exact mass481.116369344 Da. yersiniabactin-2 has CIP assignments
+    at zero-based atom indices1:S,9:S,10:R,15:R and unspecified atom13; yersiniabactin
+    has five unspecified centers. Both stereo_complete:false values are honest. Removing
+    stereo then canonicalizing tautomers yields JHYVWAMMAMCUIR-UHFFFAOYSA-N for both.
+    This is computational context, not experimental form assignment or authority to
+    merge owners. The initial isolated environment failed on missing numpy.__config__;
+    the successful rerun used the existing repository NumPy via PYTHONPATH without
+    modifying packages.
+- evidence_id: pubchem
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5462519/property/InChI,InChIKey,MolecularFormula,CanonicalSMILES,IsomericSMILES/JSON
+  locator: PropertyTable.Properties[0]
+  accessed_at: '2026-10-13T11:34:05.349671Z'
+  support: supports
+  summary: CID5462519 denotes CARQCAHMXWHUIE-NRMQOZBLSA-N, with the same SMILES/InChI
+    as yersiniabactin-2 and formulaC21H27N3O4S3. It does not denote the all-stereocenters-unspecified
+    JHYVWAMMAMCUIR-UHFFFAOYSA-N representation.
+  snapshot_sha256: ee473526166fcf941d6a784605882a5a680168e4e7575cf8d3a3c45b32a9772f
+- evidence_id: taxonomy
+  kind: authority
+  reference: data/raw/corpus_taxa.obo
+  locator: NCBITaxon:562,630,223283; inspected ENA source features; Wikidata Q25419
+    and Q135177 organism pages
+  accessed_at: '2026-10-13T11:48:02.898742Z'
+  support: supports
+  summary: The pinned taxonomy labels resolve to Escherichia coli, Yersinia enterocolitica
+    and Pseudomonas syringae pv. tomato str. DC3000 respectively. ENA verifies the
+    same taxids on the cited sequence deposits. Wikidata labels match their organism
+    notes; the Q135177 page succeeded after an initial transport timeout. OTHER_BACTERIAL
+    is a broad computed facet, not a new experimental claim.
+- evidence_id: governance
+  kind: record_content
+  reference: docs/CURATION.md
+  locator: Producer strain context, locus-evidence overrides, generated ownership,
+    REVIEWED gate; docs/HARMONIZATION.md identity and producer/occurrence sections;
+    conf/producer_evidence.tsv
+  accessed_at: '2026-10-13T11:48:02.898759Z'
+  support: context_only
+  summary: SOURCE_ASSERTION and CLUSTER_UNSTATED honestly preserve ungraded database
+    claims; method absence is not evidence of absent biology. Native knockouts may
+    support both producer and locus. Xrefs assert the same structure. Strain changes
+    use complete-row-pinned curation/mibig_producer_strains.tsv. decisions.tsv is
+    reserved, not a functioning correction path.
+- evidence_id: npatlas
+  kind: database
+  reference: https://www.npatlas.org/api/v1/compound/NPA015861?include=classifications
+  locator: NPA015861 exact chemistry, original isolation metadata, mol_structures[0]
+  accessed_at: '2026-10-13T11:39:39.302237Z'
+  support: supports
+  summary: NPAtlas2024_09 identifies JHYVWAMMAMCUIR-UHFFFAOYSA-N with the same owner
+    SMILES, cites the1995 structure paper and Y.enterocolitica H1852. This validates
+    the NPAtlas xref as a database identity, not a new source of experimental stereochemistry.
+  snapshot_sha256: 33f09c3bd594b02b1846a636b18ecf136c6e53e21dd536544bb5ebda4eecabc6
+- evidence_id: mibig0467
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000467.5/annotations.json
+  locator: version5,status,compounds[0],loci[0],taxonomy,legacy_references
+  accessed_at: '2026-10-13T11:39:33.735692Z'
+  support: supports
+  summary: Active BGC0000467v5 supplies the all-stereo-unspecified phenolic structure,
+    NPAtlas and PubChem xrefs, taxon630, Y12527.1 and PMID9457855. Locus evidence
+    is empty; NRPS is asserted.
+  snapshot_sha256: df2f9bfa5dcc9054373cee4eb81c96a20382f48e8ccb9d23ce51635bf86d0e50
+- evidence_id: mibig2570
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0002570.2/annotations.json
+  locator: version2,status,compounds[0],loci[0],taxonomy,legacy_references
+  accessed_at: '2026-10-13T11:39:36.523839Z'
+  support: supports
+  summary: Active BGC0002570v2 supplies the same unspecified structure, NPAtlas xref,
+    taxon223283, AE016853.1 bounds2868541-2897461 and Knock-out studies. PMID17660289
+    and DOI10.1128/JB.00827-07 alias one publication; NRPS/PKS are asserted.
+  snapshot_sha256: 4732a71a90ab5e1a0eff0ecc348c986ee73a478e644582619e31c6da6d32a7ea
+- evidence_id: pelludat1998
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:(17660289%20OR%209457855%20OR%208245841)%20AND%20SRC:MED&format=json&resultType=core
+  locator: resultList.result[id=9457855].abstractText and DOI
+  accessed_at: '2026-10-13T11:35:01.118815Z'
+  support: partial
+  summary: The abstract identifies Y.enterocolitica O8 WA-314, a13kb irp1/3/4/5 region,
+    and loss of yersiniabactin synthesis on irp1 or irp2 inactivation. This supports
+    an evidence-upgrade candidate beyond the empty imported method. Complete methods/results
+    and exact isolated form were not inspected.
+  snapshot_sha256: 903f5030fc877ebe1ff14a555d74be2792ef0df86cf3dac2e6a50557edee7609
+- evidence_id: jones2007
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:(17660289%20OR%209457855%20OR%208245841)%20AND%20SRC:MED&format=json&resultType=core
+  locator: resultList.result[id=17660289].abstractText and DOI
+  accessed_at: '2026-10-13T11:35:01.118815Z'
+  support: partial
+  summary: The abstract reports DC3000 Ybt synthesis under iron limitation, loss after
+    pchA mutation and rescue by supplied salicylate. This supports the native knockout
+    interpretation. Its negative plant-growth/virulence comparisons prevent turning
+    production into a blanket virulence claim; none is made by this owner.
+  snapshot_sha256: 903f5030fc877ebe1ff14a555d74be2792ef0df86cf3dac2e6a50557edee7609
+- evidence_id: ena0467
+  kind: authority
+  reference: https://www.ebi.ac.uk/ena/browser/api/embl/Y12527.1?download=false
+  locator: ID; reference1; source1..13629; irp1 CDS613..10098
+  accessed_at: '2026-10-13T11:36:04.031868Z'
+  support: supports
+  summary: Y12527.1 identifies taxon630, strainWA-314, sub_strainWA-C, serotype08
+    and PMID9457855. Its13,629bp sequence covers irp1/3/4/5; it is not proof that
+    every biosynthetic function is in this accession.
+  snapshot_sha256: eab2ca95a6ba4547f237264a4478c2f8d3876c2938e072de4946df92f15d8b20
+- evidence_id: ena2570
+  kind: authority
+  reference: https://www.ebi.ac.uk/ena/browser/api/embl/AE016853.1?download=false
+  locator: source1..6397126 and pchA/PSPTO_2595 complement2868541..2869950
+  accessed_at: '2026-10-13T11:36:55.744006Z'
+  support: supports
+  summary: AE016853.1 source taxon223283 is DC3000. The pchA feature lies within the
+    imported BGC bounds and begins at the low-coordinate bound. This verifies sequence/strain
+    context, not a biochemical assay.
+  snapshot_sha256: 5227cf0c94df2a254ac2b8e89fe4834086290f5709877181a12ef145515b40d1
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Internally consistent incomplete-stereo identity
+  outcome: supported
+  summary: The owner reproduces its key and matches both MIBiG structures and NPAtlas.
+    The five unspecified centers are truthfully flagged. The shared-source discussion
+    remains appropriate; this record is not chemically proven distinct from its named
+    sibling by a different first InChIKey block alone.
+  target_ids:
+  - naturalproductmech:mibig-5395461679
+  evidence_ids:
+  - owner
+  - inventories
+  - chemistry
+  - npatlas
+  - mibig0467
+  - mibig2570
+  dimensions:
+  - name: structure
+    value: JHYVWAMMAMCUIR-UHFFFAOYSA-N
+    definition: Exact owner key
+    evidence_ids:
+    - owner
+    - chemistry
+  - name: stereochemistry
+    value: five unspecified stereocenters
+    definition: No stereochemical assignments encoded
+    evidence_ids:
+    - chemistry
+- assessment_id: xref
+  area: grounding
+  topic: PubChem exact equivalence
+  outcome: concern
+  summary: NPAtlas is exact; PubChem5462519 instead carries another tautomer and four
+    specified centers. Computational tautomer normalization only agrees after stereochemistry
+    is removed, so it cannot establish the exact relation asserted by xrefs.
+  target_ids:
+  - naturalproductmech:mibig-5395461679
+  evidence_ids:
+  - owner
+  - pubchem
+  - chemistry
+  - npatlas
+- assessment_id: classification
+  area: provenance
+  topic: Computed filing versus BGC classes
+  outcome: supported
+  summary: The pinned2026-09-07 classifier produces Alkaloids/Serine alkaloids/Thiazole
+    alkaloids; NRPS/PKS are separate source assertions. NPAtlas live classifier output
+    is not the pinned filing authority. No silent reclassification or asserted-origin
+    inference was made.
+  target_ids:
+  - naturalproductmech:mibig-5395461679
+  evidence_ids:
+  - inventories
+  - mibig0467
+  - mibig2570
+  - governance
+- assessment_id: producer
+  area: evidence
+  topic: Native production and cluster grading
+  outcome: supported
+  summary: DC3000 knockout grading is consistent with the primary abstract and pchA
+    sequence context. The Yersinia SOURCE_ASSERTION/CLUSTER_UNSTATED grades faithfully
+    report missing MIBiG methods, not absent biology; the1998 abstract provides a
+    bounded upgrade lead. Full methods and exact molecular-form attribution remain
+    incomplete.
+  target_ids:
+  - naturalproductmech:mibig-5395461679
+  evidence_ids:
+  - mibig2570
+  - jones2007
+  - ena2570
+  - mibig0467
+  - pelludat1998
+  - ena0467
+  dimensions:
+  - name: strains
+    value: DC3000;WA-314/substrainWA-C
+    definition: Source-specific contexts; Yersinia strain omitted from owner
+    evidence_ids:
+    - ena2570
+    - ena0467
+  - name: evidence-tier
+    value: DC3000:BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED;Yersinia:SOURCE_ASSERTION/CLUSTER_UNSTATED
+    definition: Stored grades, not automatic upgrades
+    evidence_ids:
+    - owner
+    - mibig0467
+    - mibig2570
+- assessment_id: occurrence
+  area: evidence
+  topic: Yersinia occurrence and publication alias
+  outcome: unknown
+  summary: The exact-key LOTUS row cites DOI10.1128/JB.180.3.538-546.1998, the same
+    study as producer PMID9457855. Its abstract supports Ybt synthesis, but the experimental
+    isolate-form assignment and detection methods remain unverified without full text.
+  target_ids:
+  - naturalproductmech:mibig-5395461679
+  evidence_ids:
+  - inventories
+  - pelludat1998
+- assessment_id: complete
+  area: completeness
+  topic: Optional mechanism and assay scope
+  outcome: unknown
+  summary: Entire owner and history read, including absence of stored graphs, pathways,
+    proteins, assays and clinical claims. Cited sources provide bounded biosynthesis
+    leads, but no unsupported optional fields were filled and missing optional content
+    was not treated as false. Exact primary chemical-form verification is the remaining
+    sign-off gate.
+  target_ids:
+  - naturalproductmech:mibig-5395461679
+  evidence_ids:
+  - owner
+  - inventories
+  - governance
+- assessment_id: validation
+  area: schema
+  topic: Native deterministic and provenance gates
+  outcome: supported
+  summary: Strict owner validation and complete native QC pass; source byte checks
+    and exact corpus enumeration preserve every owner/component. Label gate has known
+    skips and warning-level mismatches. These checks cannot prove literature support.
+  target_ids:
+  - naturalproductmech:mibig-5395461679
+  evidence_ids:
+  - owner
+  - governance
+  - chemistry
+findings:
+- finding_id: F1
+  issue_key: yersiniabactin-JHYVWAMMAMCUIR-pubchem5462519-equivalence
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: PubChem xref asserts an unsupported exact stereochemical identity
+  description: The record denotes JHYVWAMMAMCUIR-UHFFFAOYSA-N with all five centers
+    unspecified. PubChem5462519 is CARQCAHMXWHUIE-NRMQOZBLSA-N with four specified
+    centers and a different tautomer depiction. Exact equivalence is not established
+    by the common name or by removing stereo during tautomer normalization. This is
+    not a claim that the biological compound names are unrelated, and does not authorize
+    changing chemistry or merging the two owners.
+  target_ids:
+  - naturalproductmech:mibig-5395461679
+  field_paths:
+  - xrefs[pubchem:5462519]
+  evidence_ids:
+  - owner
+  - mibig0467
+  - pubchem
+  - chemistry
+  - npatlas
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: BGC0000467:1 imported xref
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Source-specific extraction and provenance
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Exact-identity xref emission
+  rule_id: review-checklist:Identity; Equivalence; Producer organisms; Occurrences;
+    docs/CURATION.md:Evidence rules
+  native_severity: major
+  normalization_reason: Material unsupported identity/evidence is major; bounded lost
+    strain provenance is minor. Provisional findings require source adjudication before
+    correction.
+- finding_id: F2
+  issue_key: yersiniabactin-BGC0000467-producer-strain
+  category: scope
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Yersinia producer omits WA-314 and WA-C context
+  description: The taxon630 producer has no strain qualifier, while exact accessionY12527.1
+    specifies strainWA-314 and sub_strainWA-C. The1998 abstract names WA-314. Preserve
+    both qualified source fields without substituting the isolation strainH1852 or
+    changing taxonomy and evidence grades.
+  target_ids:
+  - naturalproductmech:mibig-5395461679
+  field_paths:
+  - producer_organisms[1].strain
+  evidence_ids:
+  - owner
+  - ena0467
+  - pelludat1998
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Implemented complete-source-row-pinned strain qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated producer claim
+  rule_id: review-checklist:Identity; Equivalence; Producer organisms; Occurrences;
+    docs/CURATION.md:Evidence rules
+  native_severity: minor
+  normalization_reason: Material unsupported identity/evidence is major; bounded lost
+    strain provenance is minor. Provisional findings require source adjudication before
+    correction.
+actions:
+- action_id: A1
+  description: Adjudicate and withhold or qualify the nonexact PubChem xref through
+    a tested source-row-pinned extractor/seeder correction. There is no generic implemented
+    xref override in the inspected tables; add that consumer if needed. Do not use
+    the ChEBI-only structure replacement or reserved decisions.tsv, and do not merge
+    owners merely to eliminate this finding.
+  finding_ids:
+  - F1
+  target_ids:
+  - naturalproductmech:mibig-5395461679
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: BGC0000467:1 imported xref
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Source-specific extraction and provenance
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Exact-identity xref emission
+  acceptance_checks:
+  - Retain NPAtlas exact xref and both original structure keys.
+  - Preserve upstream PubChem assertion as attributed provenance without asserting
+    unproven equivalence.
+  - Add regression for BGC0000467:1 only; verify sibling5462519 xref remains valid.
+  - Run source provenance, canary, strict validation, reproduction, full QC and renderer
+    checks.
+  generator: scripts/seed_from_sources.py
+- action_id: A2
+  description: Add a full-source-row-pinned WA-314 (sub_strainWA-C) qualifier for
+    BGC0000467:1.
+  finding_ids:
+  - F2
+  target_ids:
+  - naturalproductmech:mibig-5395461679
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Implemented complete-source-row-pinned strain qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated producer claim
+  acceptance_checks:
+  - Verify raw row digest and exact ENA source fields.
+  - Do not substituteH1852 or change the taxon or grades.
+  - Canary, strict validation, reproduction and full QC pass.
+  generator: scripts/seed_from_sources.py
+- action_id: A3
+  description: Using authorized full text, verify the1998 native knockout and compound
+    readout, then consider a REPLACE method decision for BGC0000467. Current conservative
+    grades are not evidence that no experiment exists.
+  finding_ids: []
+  target_ids:
+  - naturalproductmech:mibig-5395461679
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Implemented source-specific method additions
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Separate producer and locus grading
+  acceptance_checks:
+  - Check strain/substrain, irp1 versus irp2 accession coverage and exact product
+    readout.
+  - Only evidence applicable to the represented source locus may alter grading.
+  - Preserve database attribution and add separate curation provenance; full native
+    gates pass.
+  generator: scripts/seed_from_sources.py
+limitations:
+- This record observation assesses the captured main commit8b5a3ebf, whose input bytes
+  still match the working tree. It does not reassess any other owner or claim all3115
+  records reviewed.
+- Full primary experimental and isolate-form verification is incomplete. Chemical
+  normalization, metadata, database assertions and abstract-level descriptions are
+  not substituted for inspected methods/results.
+- All174 inherited access stops were preserved; none was retried. This review records
+  additional source-specific stops. No paid research, contact, GitHub mutation, record
+  edit or native status promotion occurred.
+- PMC2045226 full text returned403 through EuropePMC; PMC106919 returned a reCAPTCHA
+  challenge through PMC after a EuropePMC transport error. No alternate full-text
+  requests followed these access barriers. Both abstracts had already been inspected
+  through EuropePMC metadata.
+- NPAtlas original isolation citation points to the1995 Wiley source that returned403.
+  No all-stereo-unspecified depiction was promoted to a measured absolute configuration.
+  No blanket production, virulence or host-range conclusion was inferred.
+notes:
+- Only immutable review outputs are authorized. Proposed corrective actions have not
+  been executed.
+- Primary summaries above are paraphrases, not quotations. Source access timestamps
+  for retrieved snapshots are preserved from receipts; local/current-page assessments
+  record inspection time.
+- Required full-text access remains unavailable, so completed status and a passing
+  whole-record verdict are deliberately not claimed.
+- The single-record artifact denominator is1. The exhaustive campaign remains3115
+  owners and243 components; partial observations are not scientific completions.
