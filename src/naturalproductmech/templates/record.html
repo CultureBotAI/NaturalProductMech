@@ -45,10 +45,10 @@ same claim.</p>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 {% for p in r.producers %}
 <tr>
-  <td>{{ p.taxon_label }}<br><span class="mono">{{ p.taxon_id }}</span></td>
+  <td>{{ p.taxon_label }}{% if p.strain %}<br>Strain: {{ p.strain }}{% endif %}<br><span class="mono">{{ p.taxon_id }}</span></td>
   <td><span class="tag {{ 'causal' if p.causal else 'weak' }}">{{ p.evidence_basis }}</span></td>
   <td class="mono">{{ p.biosynthetic_gene_cluster or '' }}</td>
-  <td>{% for e in p.evidence %}<span class="mono">{{ e.reference }}</span>{% if not loop.last %}, {% endif %}{% endfor %}</td>
+  <td>{% if p.strain %}<details class="graph-evidence"><summary>{% endif %}{% for reference in p.references %}<span class="mono">{{ reference }}</span>{% if not loop.last %}, {% endif %}{% endfor %}{% if p.strain %}</summary>{{ source_fields(p.evidence) }}</details>{% endif %}</td>
 </tr>
 {% endfor %}
 </table></div>

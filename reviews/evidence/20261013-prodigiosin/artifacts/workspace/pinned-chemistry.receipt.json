@@ -1,0 +1,24 @@
+{
+  "command": [
+    "env",
+    "UV_CACHE_DIR=/private/tmp/npmech-prodigiosin-review-m1Ai8z/uv-cache",
+    "uv",
+    "run",
+    "--isolated",
+    "--no-project",
+    "--with",
+    "rdkit==2026.3.5",
+    "--with",
+    "numpy==2.2.6",
+    "--with",
+    "pyyaml",
+    "python",
+    "-c",
+    "from rdkit import rdBase; print(rdBase.rdkitVersion)"
+  ],
+  "started_at": "2026-10-13T08:36:00.944767Z",
+  "finished_at": "2026-10-13T08:36:01.309665Z",
+  "exit_code": 1,
+  "log": "/private/tmp/npmech-prodigiosin-review-m1Ai8z/pinned-chemistry.log",
+  "log_sha256": "15dff4b81d3f7abb10c89061d96c2e0a8b3ed4e22b91430794d7d7d37f52deae"
+}

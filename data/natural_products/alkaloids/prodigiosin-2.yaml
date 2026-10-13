@@ -183,6 +183,14 @@ producer_organisms:
   - reference: PMID:15528645
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000258 entry version 3; citation taken from the entry level
+  - reference: DOI:10.1099/mic.0.27222-0
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: ATCC 39006. Harris et al. identify the Serratia sp. producer
+      as ATCC 39006 in the abstract. This strain is not silently reassigned to S.
+      marcescens. Taxon identity and evidence grade are unchanged; this is not a species-wide
+      experiment. MIBiG source row BGC0000258:1; SHA256 d2b8987923a920a62edb3396dd645f055e938a3c1354525f573bc9da4ba0d1b0.
+      Curator: codex; date: 2026-10-13.'
+  strain: ATCC 39006
 - taxon_id: NCBITaxon:615
   taxon_label: Serratia marcescens
   evidence_basis: SOURCE_ASSERTION
@@ -195,6 +203,14 @@ producer_organisms:
   - reference: PMID:15528645
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000259 entry version 3; citation taken from the entry level
+  - reference: DOI:10.1099/mic.0.27222-0
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: ATCC 274. Harris et al. identify the S. marcescens producer
+      as ATCC 274 in the abstract; strain context does not upgrade the imported locus
+      evidence. Taxon identity and evidence grade are unchanged; this is not a species-wide
+      experiment. MIBiG source row BGC0000259:1; SHA256 c1b490002649033ac44b016b795154c692eb90214d7c3c59871937443bb8bc0b.
+      Curator: codex; date: 2026-10-13.'
+  strain: ATCC 274
 - taxon_id: NCBITaxon:349521
   taxon_label: Hahella chejuensis KCTC 2396
   evidence_basis: SOURCE_ASSERTION
@@ -283,3 +299,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T09:01:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

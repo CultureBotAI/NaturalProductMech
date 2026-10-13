@@ -101,6 +101,14 @@ producer_organisms:
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0002675 entry version 2; citation taken from the compound evidence
       level
+  - reference: DOI:10.1128/spectrum.01171-21
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: S4059. Wang et al. test pigC deletion in P. rubra S4059
+      and identify its genome as CP045429. The published experiment is strain-specific.
+      Taxon identity and evidence grade are unchanged; this is not a species-wide
+      experiment. MIBiG source row BGC0002675:1; SHA256 d3b55b2c6b091c7c8da99f5634fdb02e208328c4dc1c317750a341bdef639de0.
+      Curator: codex; date: 2026-10-13.'
+  strain: S4059
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0002675
   entry_version: '2'
@@ -142,3 +150,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T09:00:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

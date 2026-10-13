@@ -1,0 +1,246 @@
+import copy
+import hashlib
+import json
+import shlex
+import subprocess
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+
+import yaml
+
+root = Path.cwd()
+work = Path(__file__).parent
+repo = 'CultureBotAI/NaturalProductMech'
+now = lambda: datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z')
+sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
+capture = json.loads((work / 'capture.json').read_text())
+
+
+class ReviewDumper(yaml.SafeDumper):
+    def ignore_aliases(self, data):
+        return True
+
+
+def owned(path, role):
+    return dict(repository=repo, path=path, role=role)
+
+
+def ev(eid, kind, reference, summary, support='partial', locator=None, snapshot=None):
+    item = dict(evidence_id=eid, kind=kind, reference=reference, accessed_at=now(), support=support, summary=summary)
+    if locator:
+        item['locator'] = locator
+    if snapshot:
+        item['snapshot_sha256'] = sha(work / snapshot)
+    return item
+
+
+def receipt_check(label, target, summary, required=True, status=None):
+    receipt = json.loads((work / f'{label}.receipt.json').read_text())
+    return dict(check_id=label, name=label, status=('passed' if receipt['exit_code'] == 0 else 'failed'),
+                required=required, summary=summary, command=shlex.join(receipt['command']),
+                exit_code=receipt['exit_code'], target_ids=[target], evidence_ids=['receipts'])
+
+
+lotus_owners = [owned('data/raw/lotus_occurrences.tsv', 'Exact-key imported occurrence triples'),
+                owned('scripts/extract_lotus.py', 'Frozen occurrence extraction'),
+                owned('scripts/seed_from_sources.py', 'Occurrence harmonization; requires a tested correction consumer')]
+producer_owners = [owned('data/raw/mibig_compounds.tsv', 'Source cluster and taxon context'),
+                   owned('scripts/extract_mibig.py', 'Cluster extraction'),
+                   owned('scripts/seed_from_sources.py', 'Seeded producer representation')]
+
+common_limits = [
+    'Partial scientific observation, not a completed record review, native status promotion, curation event, or evidence that all 3115 owners have been reviewed.',
+    'Pinned RDKit 2026.3.5 cannot run on this x86_64 macOS environment because that release has no compatible wheel. No substitute version was used. Internal chemistry and tautomer/stereochemical equivalence remain unverified.',
+    'Versioned live MIBiG annotations were checked; an unversioned latest-release comparison and independent GenBank sequence validation were not completed. Active status at a versioned endpoint is not a claim that no newer version exists.',
+    'Repository-wide identifier-label validation is not exhaustive identifier verification: 499 warning-level mismatches and 4649 skipped-no-adapter pairs were retained. No full sequence, Wikidata statement, DOI full-text, or taxonomy revision audit is inferred from this gate.',
+    'This observation assesses the captured base without changing its scientific owners, raw inventories, pages or curation history. Separately authorized publication and remediation are not performed by saving this review and require their own dispositions.',
+    'All inherited access stops remain binding. This continuation added challenges for PMID22777253/DOI10.1007/s10482-012-9772-5, PMID28785950/DOI10.1007/s11427-017-9117-x, PMID30306508/DOI10.1007/s11033-018-4324-3, PMC3133208/PMID21515779/DOI10.1128/JB.00017-11, and PMC1572367/PMID11015311/DOI10.1038/sj.bjp.0703614. DOI10.1039/C8GC03728K full text returned 403. DOI10.1038/ja.2009.27 exposed only a subscription preview. No alternate full-text retrieval was attempted after these stops.',
+]
+
+
+def base_review(slug):
+    inspection = json.loads((work / f'{slug}-inspect.json').read_text())
+    target = inspection['targets'][0]
+    tid = target['target_id']
+    for item in inspection['source']['inputs']:
+        assert sha(root / item['path']) == item['sha256']
+    source = copy.deepcopy(inspection['source'])
+    source['state'] = 'git_commit'
+    for item in source['inputs']:
+        committed = subprocess.check_output(['git', 'show', f"{source['git_revision']}:{item['path']}"])
+        assert hashlib.sha256(committed).hexdigest() == item['sha256']
+    checks = [receipt_check(f'{slug}-inspect', tid, 'Canonical target and maintained-input capture before assessment.'),
+              receipt_check(f'strict-{slug}', tid, 'Initial just invocation could not open the default uv cache. Superseded by successful direct native validator.', False, 'unavailable'),
+              receipt_check(f'strict-{slug}-retry', tid, 'Temporary-cache retry could not resolve hatchling without network. Superseded by successful direct native validator.', False, 'unavailable'),
+              receipt_check(f'strict-{slug}-direct', tid, 'Native closed-schema validator: one owner, zero errors; complete-mechanism reader resolved zero graphs.'),
+              receipt_check('qc', tid, 'Initial just qc could not open the default uv cache; superseded by the permitted retry.', False, 'unavailable'),
+              receipt_check('qc-retry', tid, 'Full native quality gate passed: 623 tests passed, 3 skipped; all 3115 owners validate and reproduce. Deterministic validation does not certify the scientific claims.'),
+              receipt_check('corpus', tid, 'Documented complete corpus consistency check; not a sampled substitute.'),
+              receipt_check('queue', tid, 'Fresh exhaustive native review queue, retained in private workspace; no native status edits.'),
+              receipt_check('labels', tid, 'Exit zero with 499 corpus warning mismatches and 4649 skipped-no-adapter pairs; not a universal identifier pass.'),
+              receipt_check('pinned-chemistry', tid, 'Exact pinned RDKit version has no macOS x86_64 wheel; chemical recalculation unavailable.', True, 'unavailable'),
+              dict(check_id='primary-completeness', name='Every nearest primary source and exact chemical form', status='unavailable', required=True,
+                   summary='Access stops and uninspected full texts prevent complete occurrence, strain, and exact chemical-form adjudication.', target_ids=[tid]),
+              dict(check_id='imodulondb', name='Structured expression-module cross-check', status='not_applicable', required=False,
+                   summary='No gene, regulator, protein-example, pathway-step or transcriptomic claim is encoded in this owner. Official MIBiG structured annotations were inspected for the BGC assertions; expression-module membership cannot establish chemical occurrence.', target_ids=[tid])]
+    evidence = [
+        ev('owner', 'record_content', target['path'], 'Entire owner and audit trail read. No inline or referenced graphs; no quantitative assays, molecular targets, clinical claims or datasets. Native SEEDED status retained.', 'partial', 'Complete YAML, including curation_history'),
+        ev('inventory', 'record_content', str(work / 'inventory-audit.json'), 'Structured scan of complete six TSV inventories retains exact row numbers and keys; four live versioned annotations match stored compound SMILES, taxon, genome accession and active status.', snapshot='inventory-audit.json'),
+        ev('receipts', 'validation', str(work), 'Actual inspect, strict, corpus, queue, full-QC, label and chemistry execution receipts preserve commands, UTC timing, exit codes and log hashes. Initial environment failures are retained, not counted as passes.'),
+        ev('capture', 'validation', str(work / 'capture.json'), 'Ignored-inclusive Path.rglob inventory and SHA256 checks confirm all 3115 owners, 243 components and nine prior review observations match the post-merge checkpoint.', snapshot='capture.json'),
+        ev('rubric', 'record_content', '.claude/skills/curate-yaml-record/references/review-checklist.md', 'Exact compound/taxon and claim-level evidence rules, strain scope, generated ownership, and native REVIEWED gates.', 'supports'),
+    ]
+    evidence[0]['snapshot_sha256'] = sha(root / target['path'])
+    evidence[1]['search_scope'] = 'Complete named TSVs parsed with csv.DictReader; ignored files included. Both owner files read completely. Relevant curation paths searched with rg --hidden --no-ignore; no record-only correction is assumed.'
+    return dict(schema_version='1.0.0', kind='record', repository=repo,
+        started_at=capture['started_at'], reviewer=dict(identity='Codex', kind='agent', independence='self_review',
+        independence_basis='Same assistant/thread as prior repository work; direct source-checking pass, not an independent human or agent review.'),
+        skill='.claude/skills/review-yaml-record/SKILL.md', completion='partial', verdict='needs_curation', scientific_review=True,
+        source=source, targets=[target],
+        scope=dict(description='Historical observation of base 95b25be273d45a087df8d1262303713a2a2d8c17: one exactly resolved prodigiosin owner; its same-label sibling is identity context, not interchangeable. Campaign denominator remains 3115 owners and 243 components.',
+                   selection=f'Next pending exact path in the exhaustive campaign checkpoint: {target["path"]}.',
+                   coverage='partial', population_size=1, reviewed_target_ids=[tid]),
+        checks=checks, evidence=evidence, assessments=[], findings=[], actions=[], limitations=list(common_limits))
+
+
+def assessment(review, aid, area, topic, outcome, summary, evidence, details=None):
+    item = dict(assessment_id=aid, area=area, topic=topic, outcome=outcome, summary=summary,
+                target_ids=[review['targets'][0]['target_id']], evidence_ids=evidence)
+    if details:
+        item['details'] = details
+    review['assessments'].append(item)
+
+
+def finding(review, fid, key, severity, title, description, fields, evidence, owners):
+    review['findings'].append(dict(finding_id=fid, issue_key=key, category='evidence' if fid == 'F1' else 'scope',
+        severity=severity, status='open', certainty='confirmed', title=title, description=description,
+        target_ids=[review['targets'][0]['target_id']], field_paths=fields, evidence_ids=evidence, owner_paths=owners,
+        rule_id='Native checklist: exact compound and taxon, narrow evidence, producer strain where supplied',
+        native_severity=severity, normalization_reason=('Wrong claim-to-source attribution changes biological interpretation while deterministic gates pass.' if severity == 'major' else 'Bounded loss of source strain provenance; producer evidence grade is not falsely upgraded.')))
+
+
+def action(review, aid, finding_ids, description, owners, checks):
+    review['actions'].append(dict(action_id=aid, finding_ids=finding_ids,
+        target_ids=[review['targets'][0]['target_id']], description=description, owner_paths=owners,
+        generator='scripts/seed_from_sources.py', acceptance_checks=checks))
+
+
+first = base_review('prodigiosin-2')
+first.update(title='MIBiG-backed prodigiosin: congener attribution and strain provenance review',
+             summary='One major congener-attribution finding and one minor strain-provenance finding. Exact source identity, versioned cluster annotations and computed filing are supported; several occurrence claims and pinned chemistry remain incomplete.')
+first['evidence'].extend([
+    ev('pubchem', 'database', 'https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5351169/property/InChI,InChIKey,MolecularFormula,IsomericSMILES/JSON',
+       'CID5351169 exactly matches owner SMILES, Standard InChI and WKGQSEFBQTWRPT-UUPRNIFOSA-N; formula C20H25N3O. This does not establish tautomer equivalence to CHEBI:82758.', 'supports', snapshot='pubchem-5351169.json'),
+    ev('harris', 'primary_source', 'https://www.microbiologyresearch.org/content/journal/micro/10.1099/mic.0.27222-0',
+       'Abstract identifies S. marcescens ATCC274 and Serratia sp. ATCC39006, cloned and heterologously expressed clusters, and 14 versus 15 ORFs. Full methods and structures were not inspected.', 'partial', 'Abstract; PMID15528645'),
+    ev('kim', 'primary_source', 'https://pubmed.ncbi.nlm.nih.gov/17381736/',
+       'Abstract identifies prodigiosin in KCTC2396 alongside distinct congeners. It supports named-compound occurrence, not exact tautomer/geometry or gene-by-gene causality.', 'partial', 'Abstract; DOI10.1111/j.1365-2672.2006.03172.x'),
+    ev('feitelson', 'primary_source', 'https://www.microbiologyresearch.org/content/journal/micro/10.1099/00221287-131-9-2431',
+       'Publisher abstract identifies undecylprodigiosin in S. coelicolor A3(2), not this exact prodigiosin structure. Homology and mutant work cannot be transferred across congeners.', 'refutes', 'Abstract, opening and concluding paragraphs'),
+    ev('kawasaki', 'primary_source', 'https://www.nature.com/articles/ja200927',
+       'Public abstract identifies prodigiosin R1 and roseophilin in S. griseoviridis 2464-S5. This is not an exact prodigiosin occurrence assertion; full text is subscription-limited.', 'refutes', 'Abstract'),
+    ev('brecht', 'primary_source', 'https://pubmed.ncbi.nlm.nih.gov/543774/',
+       'Abstract mentions prodigiosin in S. olivaceus strain Tu1379, alongside imacidins. Exact chemical-form characterization is not supplied in the inspected abstract.', 'partial', 'Abstract; DOI10.1007/BF00411284'),
+])
+for acc in ('BGC0000258', 'BGC0000259', 'BGC0000260'):
+    first['evidence'].append(ev(acc, 'database', f'https://mibig.secondarymetabolites.org/repository/{acc}.3/annotations.json',
+        'Version3 is active and names prodigiosin, its source SMILES and expected native taxon/genome. Locus evidence list is empty, agreeing with conservative source grades.', 'supports', snapshot=f'{acc}.3.json'))
+assessment(first, 'identity', 'identity', 'Exact owner, chemical cross-reference and sibling boundary', 'supported',
+           'Minted identity agrees exactly with PubChem and three MIBiG structures. The ChEBI-backed sibling has a different Standard InChI and key; no merge, wrong-identity finding or chemical equivalence is inferred from the shared label.', ['owner', 'inventory', 'pubchem'])
+assessment(first, 'classification', 'consistency', 'Computed filing versus asserted biosynthetic class', 'supported',
+           'ALKALOIDS and Proline alkaloids match the pinned NPClassifier row; class_results is empty and stays empty. PKS is the separately asserted cluster class. Taxon-group membership remains source-derived, not proof of a particular occurrence.', ['owner', 'inventory'])
+assessment(first, 'producers', 'evidence', 'All three producer and cluster assertions', 'supported',
+           'SOURCE_ASSERTION and CLUSTER_UNSTATED match all three versioned annotations. Native strain qualifiers should be preserved before stronger causal grading; no grade was changed.', ['BGC0000258', 'BGC0000259', 'BGC0000260', 'harris', 'kim'])
+assessment(first, 'occurrences', 'evidence', 'All fourteen occurrence rows', 'concern',
+           'Three occurrence rows cite papers whose inspected abstracts identify different congeners; eight rows remain source-access limited. Three other rows have bounded named-compound support, not full exact-form verification.', ['owner', 'inventory', 'feitelson', 'kawasaki', 'harris', 'kim', 'brecht'],
+           'Zero-based row dispositions: 0 Hahella/Kim abstract supports named prodigiosin; 1,6 DOI9772-5 challenged; 2,7 DOI4324-3 challenged; 3,8 DOI9117-x challenged; 4,9 Feitelson concerns undecylprodigiosin; 5,10 JB.00017-11 challenged; 11 Kawasaki concerns prodigiosin R1; 12 Brecht abstract supports the named pigment; 13 Harris supports S. marcescens ATCC274. The five-paper duplication across S. albidoflavus and S. coelicolor also needs taxonomic/statement-level investigation; no automatic remapping is justified.')
+assessment(first, 'optional', 'completeness', 'Mechanism and other optional claim surfaces', 'unknown',
+           'No encoded graph, pathway, assay, target, clinical or dataset assertion needs edge-level validation. Published biosynthetic work is a curation lead, not an inferred complete mechanism; absence of an optional field is not a scientific negative.', ['owner', 'harris'])
+finding(first, 'F1', 'prodigiosin-lotus-congener-attribution', 'major', 'Related prodiginine citations are attached to exact prodigiosin occurrences',
+        'LOTUS rows9283/9288 cite an undecylprodigiosin study; row9290 cites prodigiosin R1 in the roseophilin producer. Owner occurrences[4], [9] and [11] instead assert detection of its C20H25N3O prodigiosin structure. This is a claim/source mismatch, not proof those taxa never make prodigiosin. No transfer to another owner is authorized without exact chemical and taxonomic review.',
+        ['occurrences[4]', 'occurrences[9]', 'occurrences[11]'], ['inventory', 'feitelson', 'kawasaki'], lotus_owners)
+finding(first, 'F2', 'prodigiosin-serratia-strain-provenance', 'minor', 'Serratia producer assertions omit available strain qualifiers',
+        'Producer rows0/1 retain broad source taxon labels without ATCC39006/ATCC274 in strain or notes, although their cited abstract names these strains. Preserve the source taxon identifiers while recording strain context; do not silently identify ATCC39006 as S. marcescens.',
+        ['producer_organisms[0]', 'producer_organisms[1]'], ['owner', 'harris'], producer_owners)
+action(first, 'correct-occurrences', ['F1'],
+       'Reassess the three exact LOTUS triples and implement a hash-pinned, provenance-preserving source correction or exclusion through a tested maintained consumer. decisions.tsv is reserved and does not alter seeding. Do not repair generated YAML directly or silently retarget to a congener.', lotus_owners,
+       ['Exact disputed triples no longer claim this structure unless a nearest primary passage supports it.', 'Retain original frozen-source provenance and unaffected occurrences; validate exact compound and taxon before any reassignment.', 'Dry-run/canary, strict validation, reproduction and full QC pass without scientific status promotion.'])
+action(first, 'preserve-strains', ['F2'], 'Add reviewed strain context through maintained producer provenance; keep conservative evidence grades unless exact experiments are separately verified.', producer_owners,
+       ['ATCC39006 and ATCC274 are distinguished in the generated claims.', 'Taxon identifiers are not guessed, original database provenance remains, and reproduction passes.'])
+first['limitations'].append('No primary source assessment is inferred for the eight access-limited occurrence rows. Source-supported summaries are bounded by inspected abstracts, not full studies. Two warning-level label pairs concern NCBITaxon:616 (source Serratia sp. versus canonical Serratia sp. (in: enterobacteria)).')
+
+second = base_review('prodigiosin')
+second.update(title='ChEBI-backed prodigiosin: occurrence taxon scope and producer strain review',
+              summary='One major occurrence-attribution finding and one minor missing-strain finding. ChEBI identity, versioned BGC annotation, native knockout evidence and a Vibrio occurrence are positively supported; exact chemistry and other occurrence sources remain incomplete.')
+second['evidence'].extend([
+    ev('chebi', 'database', 'https://www.ebi.ac.uk/chebi/CHEBI:82758',
+       'Live ChEBI entry matches the owner Standard InChI and SZXDNGVQRDTJSD-VBKFSLOCSA-N, with formula C20H25N3O and charge zero. Its occurrence citation is PMID15853884.', 'supports', 'Identity and Species of Metabolite sections'),
+    ev('BGC0002675', 'database', 'https://mibig.secondarymetabolites.org/repository/BGC0002675.2/annotations.json',
+       'Active version2 matches owner structure, taxon, CP045429.1 interval3210799-3231052, PKS class and Proline-derived compound class. Knock-out studies is the explicit locus method.', 'supports', snapshot='BGC0002675.2.json'),
+    ev('wang', 'primary_source', 'https://journals.asm.org/doi/10.1128/spectrum.01171-21',
+       'Results and methods identify S4059: in-frame pigC deletion abolishes the prodigiosin LC-MS signal. Culture/strain and CP045429 context support the native knockout grade, not species-wide generality. Residual extract activity is not a pure-compound assay.', 'supports', 'Results: BGC verification; Materials and Methods: culture, genome, deletion'),
+    ev('williamson', 'primary_source', 'https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2958.2005.04602.x',
+       'Introduction explicitly rejects marcescens classification for ATCC39006. Results identify prodigiosin in that wild-type strain; Table1 and mutant LC-MS distinguish S. marcescens OF/WF/933 and their intermediates. The two imported rows omit this scope.', 'refutes', 'Introduction; LC-MS of wild-type Serratia39006; Table1'),
+    ev('imamura', 'primary_source', 'https://www.jstage.jst.go.jp/article/antibiotics1968/47/2/47_2_257/_pdf/-char/en',
+       'Page257 reports a red fraction from V. gazogenes ATCC29988 identified as prodigiosin by EI-MS. This directly supports named-compound occurrence despite the magnesidin-focused title. EI-MS alone does not establish the owner tautomer/geometry.', 'supports', 'Page257, lower left column; full five-page extracted text read and relevant page visually inspected', 'Imamura1994.pdf'),
+    ev('access-limits', 'search', 'https://pubs.rsc.org/en/content/articlehtml/2019/gc/c8gc03728k',
+       'Full-text request returned403. Search metadata suggests a silybin/isosilybin study, making the E. coli citation a priority follow-up, but search metadata alone is not a confirmed scientific defect. No alternative retrieval attempted.', 'unknown'),
+])
+assessment(second, 'identity', 'identity', 'Grounding and exact chemical representation', 'supported',
+           'ChEBI and current versioned MIBiG agree with the stored InChI/key and source SMILES respectively. Pinned chemistry remains unavailable; shared label with the other owner does not justify merging distinct stored representations.', ['owner', 'chebi', 'BGC0002675', 'inventory'])
+assessment(second, 'classification', 'consistency', 'Filing, asserted class and cross-corpus activity backing', 'supported',
+           'NPClassifier filing and class match the committed row. PKS and Proline-derived remain separate source assertions. The AntibioticMech pin74f6cc8362498900f2fe2c13d0b6fdb66dd30976 joins this exact key and backs ANTIMICROBIAL_UNSPECIFIED; sibling mechanism was not independently re-reviewed.', ['owner', 'inventory'])
+assessment(second, 'producer', 'evidence', 'Native biosynthesis and cluster evidence', 'supported',
+           'The causal producer and cluster grades are justified at S4059 strain scope. The omission of that qualifier is a bounded provenance defect, not evidence that the knockout grade itself is wrong.', ['wang', 'BGC0002675'])
+assessment(second, 'occurrences', 'evidence', 'All five occurrence assertions', 'concern',
+           'The two Williamson-backed S. marcescens rows need taxon/experimental-context correction. The Vibrio paper positively supports named-compound occurrence; E. coli and Montaner full-text verification remain limited.', ['owner', 'inventory', 'williamson', 'imamura', 'access-limits'],
+           'Zero-based rows: 0 DOI C8GC03728K full text forbidden, title/abstract lead not proof; 1 Montaner PMC access challenge before relevant full-text extraction; 2 LOTUS DOI04602.x and 3 ChEBI PMID15853884 refer to one paper, not independent experiments; 4 Imamura page257 reports isolated pigment. No claims are silently deleted or promoted.')
+assessment(second, 'optional', 'completeness', 'Unencoded mechanism and activity detail', 'unknown',
+           'No graph, pathway, direct target, quantitative assay, clinical or dataset assertion is encoded. Mechanism completion remains future source-backed curation. The sibling corpus owns antimicrobial mechanism; extract results must not be imported as pure-compound measurements.', ['owner', 'inventory'])
+finding(second, 'F1', 'prodigiosin-williamson-occurrence-taxon', 'major', 'Two occurrence imports omit the cited study\'s explicit taxon distinction',
+        'occurrences[2] and [3] assign DOI04602.x/PMID15853884 to S. marcescens. The inspected experiment identifies prodigiosin in ATCC39006, explicitly outside that species, while its named S. marcescens mutants supply intermediates. Background knowledge is not the claimed isolation report. Reassess each imported triple rather than treating the two database assertions as independent experiments.',
+        ['occurrences[2]', 'occurrences[3]'], ['inventory', 'williamson'], lotus_owners + [owned('data/raw/chebi_origins.tsv', 'ChEBI source occurrence row10424')])
+finding(second, 'F2', 'prodigiosin-s4059-strain-provenance', 'minor', 'Characterized producer claim omits strain S4059',
+        'The BGC_CHARACTERIZED producer row gives P. rubra but no strain or strain-specific notes. Its cited study and genome are S4059-specific. Preserve that scope without changing the supported knockout grade or inventing a strain taxon identifier.',
+        ['producer_organisms[0].strain', 'producer_organisms[0].notes'], ['owner', 'wang'], producer_owners)
+action(second, 'correct-occurrence-scope', ['F1'],
+       'Reassess the exact LOTUS and ChEBI source rows and preserve the primary experimental organism/context through a tested source correction or exclusion. Do not globally relabel Serratia or infer equality between the two chemical owners.', lotus_owners + [owned('data/raw/chebi_origins.tsv', 'Imported occurrence context')],
+       ['Both disputed imports retain a verified experimental taxon/context or cease making that unsupported occurrence claim.', 'Unaffected source rows and provenance survive; reserved decisions.tsv is not treated as an implemented fix.', 'Strict validation, reproduction, corpus and full QC pass; scientific status remains unchanged without full sign-off.'])
+action(second, 'preserve-strain', ['F2'], 'Carry source-verified S4059 strain context through maintained producer provenance.', producer_owners,
+       ['Generated producer claim names S4059 without broadening the experiment.', 'Existing causal grade and provenance survive and reproduction passes.'])
+second['limitations'].append('The E. coli DOI is an unresolved citation lead, not a confirmed finding. Visual inspection was limited to the PDF page relevant to the occurrence claim; the rest was text-inspected. Supplementary figures/constructs and every chemical equivalence were not exhaustively checked.')
+next(e for e in second['evidence'] if e['evidence_id'] == 'access-limits')['search_scope'] = 'One exact-DOI metadata search and one official RSC full-text request for C8GC03728K; full text returned 403. No alternate retrieval and no claim of global absence.'
+
+saved = []
+for slug, review in [('prodigiosin-2', first), ('prodigiosin', second)]:
+    if slug == 'prodigiosin-2':
+        existing = root / 'reviews/structured/20261013T085546Z-prodigiosin-2/review.yaml'
+        prior = yaml.safe_load(existing.read_text())
+        assert prior['targets'] == review['targets'] and prior['source'] == review['source']
+        saved.append(dict(review_id=prior['review_id'], path=str(existing.relative_to(root)),
+                          owner=prior['targets'][0]['path'], verdict=prior['verdict'], completion=prior['completion']))
+        continue
+    review['finished_at'] = now()
+    stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+    review['review_id'] = f'{stamp}-{slug}'
+    path = work / f'{review["review_id"]}.yaml'
+    with path.open('x') as f:
+        yaml.dump(review, f, Dumper=ReviewDumper, sort_keys=False, allow_unicode=False, width=96)
+    for command in ([sys.executable, 'scripts/record_review.py', 'validate', str(path)],
+                    [sys.executable, 'scripts/record_review.py', 'save', '--content', str(path)]):
+        started = now()
+        result = subprocess.run(command, text=True, capture_output=True)
+        label = review['review_id'] + '-' + command[2]
+        log = work / (label + '.log')
+        log.write_text(result.stdout + result.stderr)
+        (work / (label + '.receipt.json')).write_text(json.dumps(dict(
+            command=command, started_at=started, finished_at=now(), exit_code=result.returncode,
+            log=str(log), log_sha256=sha(log)), indent=2))
+        print(result.stdout, result.stderr, flush=True)
+        assert result.returncode == 0
+    saved.append(dict(review_id=review['review_id'], path=f'reviews/structured/{review["review_id"]}/review.yaml',
+                      owner=review['targets'][0]['path'], verdict=review['verdict'], completion=review['completion']))
+with (work / 'saved-reviews.json').open('x') as f:
+    json.dump(saved, f, indent=2)
+print(json.dumps(saved, indent=2))

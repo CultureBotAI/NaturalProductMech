@@ -1,0 +1,50 @@
+import csv
+import hashlib
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+
+import yaml
+
+root = Path.cwd()
+work = Path(__file__).parent
+keys = {'WKGQSEFBQTWRPT-UUPRNIFOSA-N', 'SZXDNGVQRDTJSD-VBKFSLOCSA-N'}
+audit = dict(recorded_at=datetime.now(timezone.utc).isoformat(), inventories={})
+for name in ('mibig_compounds.tsv', 'lotus_occurrences.tsv', 'chebi_structures.tsv',
+             'chebi_origins.tsv', 'npclassifier.tsv', 'antibioticmech_inchikeys.tsv'):
+    path = root / 'data/raw' / name
+    with path.open(newline='') as f:
+        rows = [dict(row_number=i, **row) for i, row in enumerate(csv.DictReader(f, delimiter='\t'), 2)
+                if any(k in row.values() for k in keys) or 'CHEBI:82758' in row.values()]
+    audit['inventories'][name] = rows
+audit['pubchem_exact_match'] = {}
+pc = json.loads((work / 'pubchem-5351169.json').read_text())['PropertyTable']['Properties'][0]
+raw_mibig = audit['inventories']['mibig_compounds.tsv']
+for slug in ('prodigiosin-2', 'prodigiosin'):
+    owner = yaml.safe_load((root / f'data/natural_products/alkaloids/{slug}.yaml').read_text())
+    chemistry = owner['chemical_structure']
+    if slug == 'prodigiosin-2':
+        for ours, theirs in [('smiles', 'SMILES'), ('standard_inchi', 'InChI'), ('standard_inchi_key', 'InChIKey')]:
+            assert chemistry[ours] == pc[theirs]
+        audit['pubchem_exact_match'][slug] = True
+    for bgc in owner['biosynthetic_gene_clusters']:
+        accession = bgc['accession'].split(':')[1]
+        version = bgc['entry_version']
+        src = json.loads((work / f'{accession}.{version}.json').read_text())
+        row = next(r for r in raw_mibig if r['mibig_accession'] == accession)
+        assert src['accession'] == accession and str(src['version']) == version
+        assert src['status'] == bgc['entry_status'] == 'active'
+        assert src['compounds'][0]['name'] == row['compound_name'] == owner['label']
+        assert src['compounds'][0]['structure'] == row['smiles'] == chemistry['smiles']
+        assert str(src['taxonomy']['ncbiTaxId']) == bgc['organism_taxon_id'].split(':')[1]
+        assert src['loci'][0]['accession'] == bgc['genome_accession'].split(':')[1]
+audit['mibig_current_annotation_matches'] = 4
+audit['optional_claim_surface'] = {}
+for slug in ('prodigiosin-2', 'prodigiosin'):
+    owner = yaml.safe_load((root / f'data/natural_products/alkaloids/{slug}.yaml').read_text())
+    audit['optional_claim_surface'][slug] = {k: len(owner.get(k, [])) for k in (
+        'producer_organisms', 'biosynthetic_gene_clusters', 'occurrences', 'biosynthetic_pathway',
+        'causal_graphs', 'causal_graph_refs', 'molecular_targets', 'bioactivities', 'clinical_status', 'datasets')}
+with (work / 'inventory-audit.json').open('x') as f:
+    json.dump(audit, f, indent=2)
+print(json.dumps(audit, indent=2))

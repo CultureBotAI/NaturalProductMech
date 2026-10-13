@@ -1,0 +1,133 @@
+{
+  "started_at": "2026-10-13T08:35:07.575418Z",
+  "finished_at": "2026-10-13T08:35:11.292916Z",
+  "base": "95b25be273d45a087df8d1262303713a2a2d8c17",
+  "population": 3115,
+  "graph_components": 243,
+  "prior_checkpoint": "/private/tmp/npmech-mpa-review-current-NPq2SH/post-merge-campaign-checkpoint.json",
+  "prior_checkpoint_sha256": "54c8e52f7f631b102a9a63b86f929c65724d8f477a9a0f288d698374b3b7fa68",
+  "ignored_inclusive_population_hashes_all_unchanged": true,
+  "captures": [
+    {
+      "slug": "prodigiosin-2",
+      "target": {
+        "target_id": "naturalproductmech:mibig-d764a5151a",
+        "path": "data/natural_products/alkaloids/prodigiosin-2.yaml",
+        "label": "prodigiosin",
+        "record_class": "NaturalProductRecord",
+        "kind": "generated",
+        "owner_paths": [
+          {
+            "repository": "CultureBotAI/NaturalProductMech",
+            "path": "data/raw/mibig_compounds.tsv",
+            "role": "Imported exact chemical, producer and BGC assertions"
+          },
+          {
+            "repository": "CultureBotAI/NaturalProductMech",
+            "path": "data/raw/lotus_occurrences.tsv",
+            "role": "Imported organism-reference triples"
+          },
+          {
+            "repository": "CultureBotAI/NaturalProductMech",
+            "path": "data/raw/chebi_structures.tsv",
+            "role": "Imported ChEBI identity and definition"
+          },
+          {
+            "repository": "CultureBotAI/NaturalProductMech",
+            "path": "data/raw/chebi_origins.tsv",
+            "role": "Imported ChEBI occurrence assertions"
+          },
+          {
+            "repository": "CultureBotAI/NaturalProductMech",
+            "path": "data/raw/npclassifier.tsv",
+            "role": "Pinned computed classification"
+          },
+          {
+            "repository": "CultureBotAI/NaturalProductMech",
+            "path": "data/raw/antibioticmech_inchikeys.tsv",
+            "role": "Pinned same-structure sibling inventory"
+          },
+          {
+            "repository": "CultureBotAI/NaturalProductMech",
+            "path": "scripts/seed_from_sources.py",
+            "role": "Harmonization and generated record emission"
+          },
+          {
+            "repository": "CultureBotAI/NaturalProductMech",
+            "path": "scripts/extract_lotus.py",
+            "role": "Occurrence source extraction"
+          },
+          {
+            "repository": "CultureBotAI/NaturalProductMech",
+            "path": "scripts/extract_mibig.py",
+            "role": "Cluster source extraction"
+          }
+        ]
+      },
+      "owner_sha256": "0fbbeacf7759efc05c6cfeae61e6b74f57629831e9e41b621690b18ad3ee7faf",
+      "graphs": 0,
+      "components": []
+    },
+    {
+      "slug": "prodigiosin",
+      "target": {
+        "target_id": "CHEBI:82758",
+        "path": "data/natural_products/alkaloids/prodigiosin.yaml",
+        "label": "prodigiosin",
+        "record_class": "NaturalProductRecord",
+        "kind": "generated",
+        "owner_paths": [
+          {
+            "repository": "CultureBotAI/NaturalProductMech",
+            "path": "data/raw/mibig_compounds.tsv",
+            "role": "Imported exact chemical, producer and BGC assertions"
+          },
+          {
+            "repository": "CultureBotAI/NaturalProductMech",
+            "path": "data/raw/lotus_occurrences.tsv",
+            "role": "Imported organism-reference triples"
+          },
+          {
+            "repository": "CultureBotAI/NaturalProductMech",
+            "path": "data/raw/chebi_structures.tsv",
+            "role": "Imported ChEBI identity and definition"
+          },
+          {
+            "repository": "CultureBotAI/NaturalProductMech",
+            "path": "data/raw/chebi_origins.tsv",
+            "role": "Imported ChEBI occurrence assertions"
+          },
+          {
+            "repository": "CultureBotAI/NaturalProductMech",
+            "path": "data/raw/npclassifier.tsv",
+            "role": "Pinned computed classification"
+          },
+          {
+            "repository": "CultureBotAI/NaturalProductMech",
+            "path": "data/raw/antibioticmech_inchikeys.tsv",
+            "role": "Pinned same-structure sibling inventory"
+          },
+          {
+            "repository": "CultureBotAI/NaturalProductMech",
+            "path": "scripts/seed_from_sources.py",
+            "role": "Harmonization and generated record emission"
+          },
+          {
+            "repository": "CultureBotAI/NaturalProductMech",
+            "path": "scripts/extract_lotus.py",
+            "role": "Occurrence source extraction"
+          },
+          {
+            "repository": "CultureBotAI/NaturalProductMech",
+            "path": "scripts/extract_mibig.py",
+            "role": "Cluster source extraction"
+          }
+        ]
+      },
+      "owner_sha256": "2fad9a2a3e1002218191a7b4c6bf211f7b8e13de4c2413a11f6234c67e991754",
+      "graphs": 0,
+      "components": []
+    }
+  ],
+  "previous_turn_classification": "progress: merged PR879 and addressed five issues with exact-tree and branch-cleanup verification"
+}

@@ -63,6 +63,36 @@ def test_text_map_never_retags_an_obsolete_identity():
     assert render_pages.join_text_map(artifact, {})["n"] == 0
 
 
+@pytest.mark.parametrize("strain", [None, "S4059", '<script>alert("strain")</script>'])
+def test_producer_strain_is_visible_and_evidence_is_retained(strain):
+    producer = {
+        "taxon_id": "NCBITaxon:43658", "taxon_label": "Pseudoalteromonas rubra",
+        "evidence_basis": "BGC_CHARACTERIZED", "biosynthetic_gene_cluster": "mibig:BGC0002675",
+        "evidence": [{"reference": "DOI:10.1/paper", "evidence_type": "DATABASE_ASSERTION"},
+                     {"reference": "DOI:10.1/paper", "evidence_type": "CURATOR_INFERENCE",
+                      "notes": "Exact strain context, not a species-wide experiment."}],
+    }
+    if strain is not None:
+        producer["strain"] = strain
+    original = deepcopy(producer)
+    view = render_pages.build_record(REPO_ROOT / "data/natural_products/test.yaml", {
+        "identifier": "CHEBI:1", "np_pathway": "ALKALOIDS", "producer_organisms": [producer],
+    })
+    assert producer == original
+    assert view["producers"][0]["evidence"] == original["evidence"]
+    assert view["producers"][0]["references"] == ["DOI:10.1/paper"]
+    env = Environment(loader=FileSystemLoader(str(render_pages.TEMPLATES_DIR)),
+                      autoescape=select_autoescape(["html"]))
+    rendered = env.get_template("record.html").render(r=view)
+    assert rendered.count('<span class="mono">DOI:10.1/paper</span>') == 1
+    assert '<script>alert("strain")</script>' not in rendered
+    if strain is None:
+        assert "Strain:" not in rendered
+    else:
+        assert f"Strain: {escape(strain)}" in rendered
+        assert "Exact strain context, not a species-wide experiment." in rendered
+
+
 def test_causal_graph_rendering_preserves_every_edge_reference():
     record = render_pages.build_record(
         REPO_ROOT / "data" / "natural_products" / "carbohydrates" / "tubercidin.yaml",

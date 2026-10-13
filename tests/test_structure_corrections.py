@@ -110,6 +110,7 @@ def test_corrected_seed_joins_only_corrected_key(inputs):
     inventories = seed.read_inventories()
     inventories["mibig_compounds"] = inputs[0]
     inventories.pop("mibig_locus_evidence_overrides")
+    inventories.pop("mibig_producer_strains")
     doc, = seed.build_records(inventories)
     assert doc["identifier"] == "CHEBI:80024"
     assert doc["chemical_structure"]["structure_source"] == "CHEBI"
