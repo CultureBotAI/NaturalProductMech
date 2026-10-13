@@ -30,6 +30,19 @@ Local runtime binaries and ontology caches are not redistributed.
 Stored filenames use portable characters; historical `<commit>:path` locators
 remain unchanged in the manifest. The regression for #946 checks that distinction.
 
+The scoped dispositions captured Git base
+`232d46bacaa6e70ca9f309cb22aae3b1585c4a3c` before the fixes. The non-release tag
+`review-base/gentamicin-20261013` preserves that exact commit across the protected
+squash merge and branch deletion (#947). Full clones and CI fetch the tag;
+restricted checkouts must fetch it before validating these historical reviews:
+
+```bash
+git fetch origin tag review-base/gentamicin-20261013
+```
+
+This preserves authentic provenance; it does not rewrite reviews or change the
+merge policy. Prefer a base already durable on `main` for future observations.
+
 The adversarial pass was performed by the implementing assistant, not an
 independent human reviewer. Checks cover complete-row drift, missing/ambiguous
 sources, duplicate or malformed decisions, unapplied exclusions, unchanged

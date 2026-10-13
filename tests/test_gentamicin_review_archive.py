@@ -3,6 +3,7 @@
 import gzip
 import hashlib
 import json
+import subprocess
 from pathlib import Path, PurePosixPath
 
 import yaml
@@ -49,6 +50,17 @@ def test_gentamicin_archive_and_scoped_dispositions():
             payload = (rows | refs)[original.removesuffix(".receipt.json")]
             assert payload["sha256"] == receipt["sha256"] and payload["bytes"] == receipt["bytes"]
     assert len(manifest["reviews"]) == 4
+    preserved_base = subprocess.check_output(
+        ["git", "rev-parse", "refs/tags/review-base/gentamicin-20261013^{commit}"],
+        cwd=ROOT, text=True).strip()
+    assert preserved_base == "232d46bacaa6e70ca9f309cb22aae3b1585c4a3c"
+    assert manifest["provenance_tag"] == "review-base/gentamicin-20261013"
+    proof = json.loads(blobs[manifest["fresh_provenance"]])
+    assert proof["revision"] == preserved_base
+    assert set(proof["remote_refs"]) == {"refs/heads/main", "refs/tags/" + manifest["provenance_tag"]}
+    assert len(proof["results"]) == 2
+    assert all(r["result"]["status"] == "working_tree_attestation" for r in proof["results"])
+    assert json.loads(blobs[manifest["fresh_provenance_receipt"]])["exit_code"] == 0
     for row in manifest["reviews"]:
         raw = (ROOT / row["path"]).read_bytes()
         assert digest(raw) == row["sha256"]
@@ -63,6 +75,7 @@ def test_gentamicin_archive_and_scoped_dispositions():
                 assert ev["snapshot_sha256"] == snapshot["sha256"]
                 assert (rows | refs)[snapshot["original_path"]]["sha256"] == snapshot["sha256"]
         if "scoped-disposition" in review["review_id"]:
+            assert review["source"]["git_revision"] == preserved_base
             for finding in review["findings"]:
                 assert len(finding["previous_occurrences"]) == 1
                 previous = finding["previous_occurrences"][0]
