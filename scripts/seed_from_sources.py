@@ -73,8 +73,10 @@ from naturalproductmech.curate.claim_references import (  # noqa: E402
 )
 from naturalproductmech.curate.curation_event import record_curation_event  # noqa: E402
 from naturalproductmech.curate.producer_strains import (  # noqa: E402
+    load_producer_isolates,
     load_producer_strains,
     qualify_producer,
+    qualify_producer_isolate,
 )
 from naturalproductmech.curate.structure_corrections import apply_structure_corrections  # noqa: E402
 from naturalproductmech.curate.xref_exclusions import (  # noqa: E402
@@ -100,6 +102,7 @@ CONF_PATH = REPO_ROOT / "conf" / "sources.yaml"
 MIBIG_LOCUS_EVIDENCE_OVERRIDES = CURATION_DIR / "mibig_locus_evidence_overrides.tsv"
 MIBIG_STRUCTURE_CORRECTIONS = CURATION_DIR / "mibig_structure_corrections.tsv"
 MIBIG_PRODUCER_STRAINS = CURATION_DIR / "mibig_producer_strains.tsv"
+MIBIG_PRODUCER_ISOLATES = CURATION_DIR / "mibig_producer_isolates.tsv"
 MIBIG_XREF_EXCLUSIONS = CURATION_DIR / "mibig_xref_exclusions.tsv"
 MIBIG_CLAIM_REFERENCES = CURATION_DIR / "mibig_claim_references.tsv"
 PUBCHEM_BIOASSAY_EXCLUSIONS = CURATION_DIR / "pubchem_bioassay_exclusions.tsv"
@@ -441,6 +444,8 @@ def read_inventories() -> dict[str, list[dict[str, str]]]:
         inventories[MIBIG_STRUCTURE_CORRECTIONS.stem] = read_tsv(MIBIG_STRUCTURE_CORRECTIONS)
     if MIBIG_PRODUCER_STRAINS.exists():
         inventories[MIBIG_PRODUCER_STRAINS.stem] = read_tsv(MIBIG_PRODUCER_STRAINS)
+    if MIBIG_PRODUCER_ISOLATES.exists():
+        inventories[MIBIG_PRODUCER_ISOLATES.stem] = read_tsv(MIBIG_PRODUCER_ISOLATES)
     if MIBIG_XREF_EXCLUSIONS.exists():
         inventories[MIBIG_XREF_EXCLUSIONS.stem] = read_tsv(MIBIG_XREF_EXCLUSIONS)
     if MIBIG_CLAIM_REFERENCES.exists():
@@ -789,6 +794,9 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     producer_strains = load_producer_strains(
         raw_mibig_rows, inventories.get("mibig_producer_strains") or [])
     applied_strains: set[str] = set()
+    producer_isolates = load_producer_isolates(
+        raw_mibig_rows, inventories.get("mibig_producer_isolates") or [])
+    applied_isolates: set[str] = set()
     xref_exclusions = load_xref_exclusions(
         raw_mibig_rows, inventories.get("mibig_xref_exclusions") or [])
     applied_exclusions: set[str] = set()
@@ -1094,6 +1102,13 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                             f"{accession}: strain context needs review after structure correction")
                     qualify_producer(producers[-1], qualification)
                     applied_strains.add(qualification["source_id"])
+                isolate = producer_isolates.get(source_id)
+                if isolate:
+                    if row.get("structure_correction_note"):
+                        raise ValueError(
+                            f"{accession}: isolate context needs review after structure correction")
+                    qualify_producer_isolate(producers[-1], isolate)
+                    applied_isolates.add(source_id)
 
             cluster = mibig_cluster(row, accession, host=host)
             if reference_correction:
@@ -1628,6 +1643,9 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     if producer_strains.keys() - applied_strains:
         raise ValueError("strain qualifications did not reach a producer: "
                          + ", ".join(sorted(producer_strains.keys() - applied_strains)))
+    if producer_isolates.keys() - applied_isolates:
+        raise ValueError("isolate qualifications did not reach a producer: "
+                         + ", ".join(sorted(producer_isolates.keys() - applied_isolates)))
     if claim_references.keys() - applied_references:
         raise ValueError("claim references did not reach a record: "
                          + ", ".join(sorted(claim_references.keys() - applied_references)))

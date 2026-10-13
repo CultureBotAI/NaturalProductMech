@@ -33,11 +33,21 @@ producer_organisms:
   source: MIBIG
   source_version: '5'
   notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
-    this field grades the taxon claim, which is a different question.'
+    this field grades the taxon claim, which is a different question. Deposited isolate:
+    DEEP.'
   evidence:
   - reference: PMID:15556005
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000174 entry version 5; citation taken from the entry level
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ889941.1
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Isolate context: DEEP. Inspected GenBank DQ889941.1 source qualifier isolate=DEEP
+      for taxon 62101 and the bryABCDX region. Preserve literal isolate semantics,
+      not a cultured-strain assertion (#949). Both bryostatin deposits name DEEP.
+      This does not establish exact final-congener identity or independent pathway
+      sufficiency (#950). Taxon identity and evidence grade are unchanged; this is
+      not a species-wide experiment. MIBiG source row BGC0000174:1; SHA256 51795794c88660192b429625ffaa01a10e1974d81a9f8cebc3c30e0a1b25f5e1.
+      Curator: codex; date: 2026-10-13.'
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0000174
   entry_version: '5'
@@ -62,6 +72,35 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+discussions:
+- discussion_id: curator-bryostatin-exact-congener-locus-scope
+  kind: CURATION_TODO
+  status: OPEN
+  prompt: Which experimentally supported final congener corresponds to this exact
+    structure and deposited gene region?
+  rationale: This owner encodes MJQUEDHRCUIRLF-YFQOKXJGSA-N; its generic bryostatin
+    label does not establish an exact congener. BGC0000174 cites DQ889941.1, the bryABCDX
+    region from Candidatus Endobugula sertula isolate DEEP. Both deposited bryostatin
+    regions name DEEP, not distinct producers. The exact PubChem xref agrees with
+    the stored chemical graph, but registry equivalence and gene annotations do not
+    establish which final congener this region yields or independent pathway sufficiency.
+    The cited primary compound structures, figures and supplements were not adjudicated.
+    This is unresolved scope, not a confirmed false source assertion. Preserve both
+    separate owners, source labels, unresolved stereochemistry, exact xrefs and conservative
+    evidence grades pending primary evidence; do not transfer family-level activity
+    or protein mechanisms.
+  evidence:
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000174/
+    evidence_source: database
+    explanation: The versioned source assertion is retained on the producer and locus;
+      not independent experimental verification.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ889941.1
+    evidence_source: database
+    explanation: Inspected exact deposit identifies DEEP isolate, taxon 62101 and
+      bryABCDX; sequence annotation is not final-product proof.
+  - reference: https://github.com/CultureBotAI/NaturalProductMech/issues/950
+    explanation: Tracks the provisional exact-congener assignment finding and required
+      primary-source adjudication. Adding this qualification does not resolve it.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -71,3 +110,13 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T23:18:47Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T23:19:40Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Qualify unresolved exact bryostatin congener/locus scope (#950); preserve
+    structures, xrefs, source assertions and SEEDED status.
+  llm_assisted: true

@@ -120,6 +120,23 @@ curator attribution. It does not change a BGC's host, infer a strain taxon ID,
 upgrade a grade or imply a species-wide experiment. Regenerate through the
 normal canary and guarded seeder, then verify reproduction and full QC.
 
+## MIBiG producer isolate context
+
+`curation/mibig_producer_isolates.tsv` preserves a deposited `isolate` qualifier
+without interpreting it as a cultured strain. Its fields and full-source-row
+pinning match `mibig_producer_strains.tsv`, except `isolate` replaces `strain`.
+The shared loader rejects missing/duplicate rows, unknown fields, invalid
+attribution and source drift. A qualification must reach an emitted producer;
+a simultaneous structure replacement requires separate adjudication.
+
+The seeder appends `Deposited isolate: <value>.` to producer notes and separate
+claim-level `CURATOR_INFERENCE` evidence containing the exact source citation,
+row digest and curator rationale. It never populates `strain`, changes a taxon
+or upgrades an evidence grade. The initial DEEP decisions cite DQ889941.1 and
+DQ889942.1; they do not resolve either bryostatin congener or establish that
+either deposited gene region independently produces the final compound.
+Canary, guarded re-emission, reproduction and full QC are required.
+
 ## MIBiG claim-specific reference corrections
 
 `curation/mibig_claim_references.tsv` corrects citation routing for one exact
