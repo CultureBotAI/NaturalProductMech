@@ -1,0 +1,153 @@
+import hashlib
+import json
+import shlex
+import shutil
+import subprocess
+from copy import deepcopy
+from datetime import datetime, timezone
+from pathlib import Path
+
+import yaml
+
+root = Path.cwd()
+work = Path(__file__).parent
+tree = work / 'review-tree'
+python = str(root / '.venv/bin/python')
+archive = Path('reviews/evidence/20261013-yersiniabactin-remediation')
+archive.mkdir(exist_ok=False)
+capture = json.loads((work / 'successor-capture.json').read_text())
+original_manifest = json.loads((root/'reviews/evidence/20261013-yersiniabactin/manifest.json').read_text())
+
+class NoAliases(yaml.SafeDumper):
+    def ignore_aliases(self, data):
+        return True
+
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+def now():
+    return datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z')
+
+for name in ('qc-final', 'focused', 'scope-audit', 'reseed-hold', 'render', 'docs-stats'):
+    receipt = json.loads((work / (name + '.receipt.json')).read_text())
+    assert receipt['exit_code'] == 0, name
+    assert sha(Path(receipt['log'])) == receipt['log_sha256']
+for path in sorted(work.iterdir()):
+    if path.is_file() and (path.suffix == '.log' or path.name.endswith('.receipt.json')
+                           or path.name == 'scope-audit.json'):
+        shutil.copyfile(path, archive / path.name)
+for name in ('run_check.py', 'audit.py', 'add_hold.py', 'capture_successors.py', 'prepare_successors.py'):
+    shutil.copyfile(work / name, archive / (name + '.txt'))
+for slug in ('yersiniabactin', 'yersiniabactin-2'):
+    shutil.copyfile(root / f'data/natural_products/alkaloids/{slug}.yaml', archive / f'{slug}-owner.yaml')
+shutil.copyfile(work/'remediation-readme.md', archive/'README.md')
+manifest = {'files': [{'path':str(p.relative_to(archive)), 'sha256':sha(p), 'bytes':p.stat().st_size}
+                      for p in sorted(archive.iterdir())]}
+(archive / 'manifest.json').write_text(json.dumps(manifest, indent=2))
+shutil.copytree(archive, tree / archive)
+
+prepared = []
+for selection in capture['targets']:
+    slug, target, previous_path = selection['slug'], selection['target'], selection['previous']
+    old = yaml.safe_load((root / previous_path).read_text())
+    tid = target['target_id']
+    target['owner_paths'] = list({p['path']:p for p in target['owner_paths']}.values())
+    sources = ('AM236324.1.embl',) if slug.endswith('-2') else ('Y12527.1.embl', 'pubchem-5462519.json', 'chemistry.json')
+    archived_sources = ['reviews/evidence/20261013-yersiniabactin/' + r['path']
+                        for r in original_manifest['artifacts'] if Path(r['original_path']).name in sources]
+    original_inspection = json.loads((work / f'{slug}-inspect.json').read_text())
+    for item in original_inspection['source']['inputs']:
+        assert sha(root / item['path']) == item['sha256'], item['path']
+        assert sha(tree / item['path']) == item['sha256'], item['path']
+    extra = sorted({i['path'] for i in original_inspection['source']['inputs']} |
+                   {str(p) for p in archive.iterdir()} | set(archived_sources))
+    command = [python, 'scripts/record_review.py', 'inspect', '--targets', str(work / f'{slug}-targets.json')]
+    for path in extra:
+        command += ['--input', path]
+    result = subprocess.run(command, cwd=tree, capture_output=True, text=True, check=True)
+    source = json.loads(result.stdout)['source']
+    (work / f'{slug}-final-inspect.json').write_text(result.stdout)
+    owner = yaml.safe_load((tree / target['path']).read_text())
+    assert owner['identifier'] == tid and owner['curation_status'] == 'SEEDED'
+    assert not owner.get('causal_graph_refs') and not owner.get('causal_graphs')
+    accessed = now()
+    evidence = []
+    def local(eid, path, kind, summary):
+        evidence.append(dict(evidence_id=eid, kind=kind, reference=path, accessed_at=accessed,
+                             support='supports', snapshot_sha256=sha(root/path), summary=summary))
+    local('previous', previous_path, 'record_content', 'Immutable historical findings and full-text limitations retained; this successor is scoped remediation, not a new whole-record review.')
+    local('owner', target['path'], 'record_content', 'Complete regenerated owner, history and all fields inspected after canonical capture. No graph components are referenced. Chemistry, taxonomy, grades, occurrences and SEEDED status are unchanged.')
+    local('strain-table', 'curation/mibig_producer_strains.tsv', 'record_content', 'Exact untouched source rows are SHA256-pinned; source-specific strain qualifications add separate curator evidence only.')
+    local('xref-table', 'curation/mibig_xref_exclusions.tsv', 'record_content', 'BGC0000467:1 PubChem5462519 exclusion is source-row-pinned; raw assertion and attribution survive in a table-owned discussion. The sibling xref remains.')
+    local('audit', str(archive/'scope-audit.json'), 'validation', 'Ignored-inclusive audit covers 3115 owners and243 components; only the two intended owners change, with an exact allowed-field comparison. Raw inventories and PATHS.tsv are unchanged.')
+    local('validation', str(archive/'qc-final.log'), 'validation', 'Fresh complete native QC after regenerating README statistics; deterministic success is not whole-record scientific sign-off.')
+    for name in sources:
+        row = next(r for r in original_manifest['artifacts'] if Path(r['original_path']).name == name)
+        path = 'reviews/evidence/20261013-yersiniabactin/' + row['path']
+        summary = {
+            'AM236324.1.embl': 'Inspected exact source feature identifies taxon562 and strain A0 34/86; genomic context is not chemical-detection evidence.',
+            'Y12527.1.embl': 'Inspected exact source feature identifies taxon630, strain WA-314 and sub_strain WA-C; no H1852 substitution or evidence upgrade.',
+            'pubchem-5462519.json': 'Retained official PubChem response identifies CARQCAHMXWHUIE-NRMQOZBLSA-N, not JHYVWAMMAMCUIR-UHFFFAOYSA-N. Same-day retrieval was checksum-verified, not newly fetched.',
+            'chemistry.json': 'Pinned RDKit2026.03.5 calculations match both unchanged owners. PubChem is exact only for the partly specified sibling. Stereo-free tautomer agreement does not establish exact stereochemical equivalence.',
+        }[name]
+        local(name, path, 'database' if name != 'chemistry.json' else 'validation', summary)
+    findings = deepcopy(old['findings'])
+    for finding in findings:
+        fid = finding['finding_id']
+        issue = (900 if fid == 'F1' else 902) if slug.endswith('-2') else (899 if fid == 'F1' else 901)
+        finding['previous_occurrences'] = [{'repository':old['repository'], 'review_id':old['review_id'], 'finding_id':fid}]
+        finding['external_issues'] = [f'https://github.com/CultureBotAI/NaturalProductMech/issues/{issue}']
+        finding['evidence_ids'] = ['previous','owner','strain-table','xref-table','audit','validation'] + list(sources)
+        finding['owner_paths'] = deepcopy(target['owner_paths'])
+        if issue == 902:
+            finding['status'] = 'open'
+            finding['description'] += ' The new curator discussion records this limitation without deleting the LOTUS assertion. GitHub #902 remains open.'
+        else:
+            finding['status'] = 'resolved'
+            finding['disposition_reason'] = ('Exact-source-pinned correction is emitted through the guarded seeder; focused regressions and native QC pass. Original source assertion/provenance, both chemical identities and native status remain. This resolves only the named defect, not whole-record scientific completeness.')
+    actions = []
+    if slug.endswith('-2'):
+        actions = [deepcopy(old['actions'][1])]
+    checks = []
+    for name in ('qc', 'docs-stats', 'focused', 'scope-audit', 'reseed-hold', 'render', 'qc-final'):
+        receipt = json.loads((work/(name+'.receipt.json')).read_text())
+        checks.append(dict(check_id=name, name=name, status='passed' if receipt['exit_code']==0 else 'failed',
+                           required=name!='qc', command=shlex.join(receipt['command']), exit_code=receipt['exit_code'],
+                           target_ids=[tid], evidence_ids=['validation'], summary=(
+                               'Initial QC correctly rejected stale generated README discussion statistics; regenerated and superseded by qc-final.' if name=='qc' else
+                               'Actual command result retained with timing and exact log hash in the remediation evidence archive.')))
+    checks += [dict(check_id='initial-focused-fixture', name='Initial focused fixture check', status='failed',
+                    required=False, exit_code=1,
+                    command='.venv/bin/python -m pytest -q tests/test_xref_exclusions.py tests/test_structure_corrections.py tests/test_seed_skeleton.py tests/test_mibig_locus_evidence_overrides.py',
+                    target_ids=[tid], summary='Initial run:338 passed and1 failed because the synthetic replacement fixture marked unrelated rows without replacement-reference metadata. Scoped the fixture to its actual target; final focused run passed342 tests.'),
+               dict(check_id='primary-fulltext', name='Whole-record primary experiment and isolate-form verification',
+                    status='unavailable', required=True, target_ids=[tid],
+                    summary='Inherited primary-source access limitations remain. No restricted source was retried; no whole-record sign-off or native REVIEWED promotion.')]
+    finish = now()
+    review_id = datetime.fromisoformat(finish.replace('Z','+00:00')).strftime('%Y%m%dT%H%M%SZ') + f'-{slug}-remediation'
+    review = dict(schema_version='1.0.0', review_id=review_id, kind='record', repository=old['repository'],
+                  title=f'{slug}: bounded xref and strain dispositions', started_at=capture['started_at'], finished_at=finish,
+                  reviewer=dict(identity='Codex', kind='agent', independence='self_review', independence_basis='Same assistant implemented and adversarially rechecked the changes; not an independent reviewer.'),
+                  skill='.claude/skills/review-yaml-record/SKILL.md', completion='partial',
+                  verdict='needs_curation' if slug.endswith('-2') else 'pass_with_limitations', scientific_review=True,
+                  summary='Resolve supported provenance defects only; preserve access-limited science and the full campaign denominator.',
+                  source=source, targets=[target], scope=dict(description='Scoped successor for one exact owner. Campaign remains3115 owners/243 components,14 partial owners and zero completed scientific reviews.',
+                     selection='Explicit predecessor findings from the yersiniabactin PR; not a population sample.', coverage='partial',population_size=1, reviewed_target_ids=[tid]),
+                  checks=checks, evidence=evidence,
+                  assessments=[dict(assessment_id='remediation', area='evidence', topic='Supported scoped corrections', outcome='supported', target_ids=[tid],
+                       evidence_ids=[e['evidence_id'] for e in evidence], summary='Exact source strain context is now retained. The unspecified owner no longer asserts nonexact PubChem equivalence; the sibling retains its valid xref. Imported scientific claims and identity remain unchanged.'),
+                       dict(assessment_id='remaining', area='completeness', topic='Whole-record scientific completeness', outcome='unknown', target_ids=[tid],evidence_ids=['previous','owner'],
+                            summary='Incomplete primary experimental and isolated-form verification remains. The E.coli occurrence question is not resolved by strain qualification or by adding a discussion.')],
+                  findings=findings, actions=actions,
+                  limitations=['Partial scoped disposition, not a whole-record or whole-corpus pass. All inherited access restrictions remain.',
+                               'Only three supported defects are resolved across these two successors; GitHub #902 stays open. Records remain SEEDED.',
+                               'Inspected in an isolated worktree at durable main8b5a3ebf, populated with byte-identical remediated inputs. Working-tree hashes are attestations, not a claim the remediated bytes existed in the base commit.',
+                               'Original review files and historical campaign checkpoint are immutable; no unassessed owner was removed from the campaign.',
+                               'Fresh full QC covers the implementation and historical archive. Final successor pairs require their own canonical check and final-head CI.'],
+                  related_reviews=[dict(repository=old['repository'], review_id=old['review_id'], relationship='Exact finding dispositions; remaining limitations retained')],
+                  links=['https://github.com/CultureBotAI/NaturalProductMech/pull/898'])
+    draft = work / (review_id+'.yaml')
+    draft.write_text(yaml.dump(review, Dumper=NoAliases, sort_keys=False, allow_unicode=False, width=88))
+    prepared.append(dict(review_id=review_id, draft=str(draft), target=target['path']))
+(work/'prepared-successors.json').write_text(json.dumps(prepared,indent=2))
+print(json.dumps(prepared,indent=2))

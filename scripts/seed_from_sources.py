@@ -68,6 +68,10 @@ from naturalproductmech.curate.producer_strains import (  # noqa: E402
     qualify_producer,
 )
 from naturalproductmech.curate.structure_corrections import apply_structure_corrections  # noqa: E402
+from naturalproductmech.curate.xref_exclusions import (  # noqa: E402
+    exclusion_discussion,
+    load_xref_exclusions,
+)
 from naturalproductmech.grading import (  # noqa: E402
     grade_cluster_link,
     grade_production,
@@ -87,6 +91,7 @@ CONF_PATH = REPO_ROOT / "conf" / "sources.yaml"
 MIBIG_LOCUS_EVIDENCE_OVERRIDES = CURATION_DIR / "mibig_locus_evidence_overrides.tsv"
 MIBIG_STRUCTURE_CORRECTIONS = CURATION_DIR / "mibig_structure_corrections.tsv"
 MIBIG_PRODUCER_STRAINS = CURATION_DIR / "mibig_producer_strains.tsv"
+MIBIG_XREF_EXCLUSIONS = CURATION_DIR / "mibig_xref_exclusions.tsv"
 
 # MIBiG's cluster vocabulary -> the schema enum. Six values in 4.0; `alkaloid`
 # was removed when compound classification was split from cluster
@@ -376,7 +381,8 @@ def carry_curator_owned_fields(payload: dict[str, Any], existing: dict[str, Any]
             payload["discussions"][index] = curator_discussions[discussion["discussion_id"]]
             continue
         # This adjudication is owned by the pinned curation table, not the YAML.
-        if discussion.get("discussion_id") == "source-structure-correction":
+        if (discussion.get("discussion_id") == "source-structure-correction"
+                or discussion.get("discussion_id", "").startswith("source-xref-exclusion-")):
             continue
         previous_discussion = answered.get(discussion.get("discussion_id"))
         if not previous_discussion:
@@ -423,6 +429,8 @@ def read_inventories() -> dict[str, list[dict[str, str]]]:
         inventories[MIBIG_STRUCTURE_CORRECTIONS.stem] = read_tsv(MIBIG_STRUCTURE_CORRECTIONS)
     if MIBIG_PRODUCER_STRAINS.exists():
         inventories[MIBIG_PRODUCER_STRAINS.stem] = read_tsv(MIBIG_PRODUCER_STRAINS)
+    if MIBIG_XREF_EXCLUSIONS.exists():
+        inventories[MIBIG_XREF_EXCLUSIONS.stem] = read_tsv(MIBIG_XREF_EXCLUSIONS)
     return inventories
 
 
@@ -758,6 +766,9 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     producer_strains = load_producer_strains(
         raw_mibig_rows, inventories.get("mibig_producer_strains") or [])
     applied_strains: set[str] = set()
+    xref_exclusions = load_xref_exclusions(
+        raw_mibig_rows, inventories.get("mibig_xref_exclusions") or [])
+    applied_exclusions: set[str] = set()
     mibig_rows = apply_structure_corrections(
         raw_mibig_rows,
         inventories.get("mibig_structure_corrections") or [],
@@ -964,6 +975,7 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
         producers: list[dict[str, Any]] = []
         clusters: list[dict[str, Any]] = []
         source_concepts: list[dict[str, Any]] = []
+        excluded_xrefs: list[dict[str, str]] = []
 
         for row in rows:
             accession = row["mibig_accession"]
@@ -985,7 +997,16 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             for value in row["compound_classes"].split("|"):
                 if value and value not in compound_classes:
                     compound_classes.append(value)
+            source_id = f"{accession}:{row['compound_index']}"
+            exclusions = xref_exclusions.get(source_id, [])
+            if exclusions:
+                if row.get("structure_correction_note"):
+                    raise ValueError(f"{source_id}: xref exclusions need review after structure correction")
+                applied_exclusions.add(source_id)
+                excluded_xrefs.extend(exclusions)
             for value in row["database_ids"].split("|"):
+                if any(value == decision["xref"] for decision in exclusions):
+                    continue
                 if value and DB_ID_RE.match(value):
                     canonical = canonical_xref(value)
                     if canonical not in xrefs:
@@ -1371,6 +1392,8 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
         # the ChEBI id the record is already grounded to and the two spellings
         # hid it (#61).
         xrefs = [x for x in xrefs if x != doc["identifier"]]
+        if any(decision["xref"] in xrefs for decision in excluded_xrefs):
+            raise ValueError("excluded xref reintroduced by another source row; adjudicate all assertions")
         if xrefs:
             doc["xrefs"] = xrefs
         if producers:
@@ -1387,7 +1410,7 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             doc["grounding_notes"] = grounding_notes
         doc["curation_status"] = "SEEDED"
 
-        discussions: list[dict[str, Any]] = []
+        discussions: list[dict[str, Any]] = [exclusion_discussion(d) for d in excluded_xrefs]
         for row in rows:
             if row.get("structure_correction_note"):
                 discussions.append({
@@ -1554,6 +1577,9 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     else:
         print("taxon_merged.tsv: ABSENT — merged ids left as the sources gave them. "
               "Run `just extract-taxonomy` first if this was not intended.", file=sys.stderr)
+    if xref_exclusions.keys() - applied_exclusions:
+        raise ValueError("xref exclusions did not reach a record: "
+                         + ", ".join(sorted(xref_exclusions.keys() - applied_exclusions)))
     if producer_strains.keys() - applied_strains:
         raise ValueError("strain qualifications did not reach a producer: "
                          + ", ".join(sorted(producer_strains.keys() - applied_strains)))
