@@ -1,0 +1,1158 @@
+# Bryostatin exact-owner review: bryostatin-2
+
+- Review: 20261013T230514Z-bryostatin-2
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-13T22:59:23.581490Z
+- Finished UTC: 2026-10-13T23:05:14.511199Z
+- Reviewer: Codex (self_review)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+One provisional major exact-congener/locus scope finding and one confirmed minor missing isolate qualifier. Chemical encoding, exact PubChem identity and conservative source grades are supported.
+
+## Scope And Provenance
+
+One exact owner, every native nested assertion and history, and complete resolved mechanism.
+
+Selection: Next pending exact owner in the3115-record campaign; same-name sibling is separate, not a sample or merged target.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: git_commit at Git base 38d224f1d31a6601ad91490575592a4edb73f556.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-7e373b3a47 | data/natural_products/polyketides/bryostatin-2.yaml | generated | bryostatin |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| bryostatin-2-inspect | passed | True | naturalproductmech:mibig-7e373b3a47 | Canonical inspection and native resolved read preceded assessment. |
+| strict | passed | True | naturalproductmech:mibig-7e373b3a47 | Both exact owners passed closed-schema validation with zero errors. |
+| chemistry-final | passed | True | naturalproductmech:mibig-7e373b3a47 | Pinned RDKit roundtrip, exact PubChem comparison and structured source inspection passed. |
+| labels | passed | True | naturalproductmech:mibig-7e373b3a47 | Full-corpus label gate passed:13434canonical,646synonym,35exceptions;499nonblocking warnings and4649adapter skips remain. |
+| imodulondb | passed | False | naturalproductmech:mibig-7e373b3a47 | Dataset enumeration passed; native producer has no applicable dataset. |
+| local-search | passed | False | naturalproductmech:mibig-7e373b3a47 | Bounded ignored-inclusive text search completed. |
+| queue | passed | False | naturalproductmech:mibig-7e373b3a47 | 8930diagnostic rows across12queues; native3115-owner queue is not scientific completion. |
+| scope | passed | True | naturalproductmech:mibig-7e373b3a47 | All corpus/input/prior-review hashes and exact CI base checked. |
+| ci-status | passed | True | naturalproductmech:mibig-7e373b3a47 | Read-only retrieval confirms full QC success for this exact Git commit. |
+| ci-qc | passed | True | naturalproductmech:mibig-7e373b3a47 | Read-only retrieval of the successful remote QC log, not a local rerun. Scope audit proves its applicability to unchanged inputs. |
+| chemistry | failed | False | naturalproductmech:mibig-7e373b3a47 | First attempt lacked project module path. No scientific conclusion drawn from failed attempt; chemistry-final supersedes execution failure. |
+| chemistry-fixed | failed | False | naturalproductmech:mibig-7e373b3a47 | Cross-runtime native reader import failed on sysconfig; reader had already succeeded in native environment. No scientific conclusion drawn from failed attempt; chemistry-final supersedes execution failure. |
+| chemistry-resolved | failed | False | naturalproductmech:mibig-7e373b3a47 | Isolated drawing runtime lacked numpy configuration; recovered by supplying project dependencies. No scientific conclusion drawn from failed attempt; chemistry-final supersedes execution failure. |
+| Exact congener and locus primary evidence | unavailable | True | naturalproductmech:mibig-7e373b3a47 | Full primary paper PMID:17253852, figures and supplements were not inspected. Source-reference metadata verified through exact GenBank deposit. Access stops and unresolved congener assignment preclude completed review. |
+| Native transcriptomic context | not_applicable | False | naturalproductmech:mibig-7e373b3a47 | Successful structured adapter inventory has no covered Endobugula/DEEP dataset. Do not substitute cloning-host expression data. |
+
+## Scientific And Domain Assessments
+
+### Exact congener versus shared family label
+
+identity: concern. Targets: naturalproductmech:mibig-7e373b3a47.
+
+Distinct structures are both called bryostatin. This owner remains separately resolved by its exact key, not by the shared name. Its exact experimental congener assignment to the named locus is unresolved (F1); a same-label merge or stereochemical completion is unsupported.
+
+### Encoded chemical identity and stereochemistry
+
+consistency: supported. Targets: naturalproductmech:mibig-7e373b3a47.
+
+All11 tetrahedral centers are unassigned; stereo_complete:false is accurate.
+
+### Exact xref and minted-identity rationale
+
+grounding: supported. Targets: naturalproductmech:mibig-7e373b3a47.
+
+The sole PubChem xref agrees in full InChI and key. The pinned ChEBI inventory has no exact key; no parent/congener/equivalent relationship is asserted. Do not substitute a stereo-resolved or merely similarly named structure.
+
+### Computed filing versus asserted class and taxonomic facet
+
+representation: supported. Targets: naturalproductmech:mibig-7e373b3a47.
+
+POLYKETIDES/Macrolides/Bryostatins and glycoside=true reproduce the pinned NPClassifier response. They remain explicitly computed, not an experimentally demonstrated sugar or origin claim. PKS is independently the MIBiG class. OTHER_BACTERIAL is consistent with taxon62101.
+
+### Natural origin and producer scope
+
+scope: concern. Targets: naturalproductmech:mibig-7e373b3a47.
+
+MIBiG supplies the biological-origin assertion, not NPClassifier. SOURCE_ASSERTION is not inflated to characterized production. Exact congener closure is incomplete and the source DEEP isolate qualifier is omitted (F2); host occurrence is not interchangeable with bacterial biosynthesis.
+
+### Versioned BGC and deposited gene-region scope
+
+evidence: concern. Targets: naturalproductmech:mibig-7e373b3a47.
+
+BGC0000205v3 is active and DQ889942.1 resolves to DEEP/taxon62101. Empty method evidence correctly remains CLUSTER_UNSTATED. The deposit contains bryPQRS accessory-region annotations, not the entire modular PKS set. No independent pathway sufficiency or exact final-congener production is established by these database fields.
+
+### Stable reference identity and claim support
+
+provenance: unknown. Targets: naturalproductmech:mibig-7e373b3a47.
+
+PMID:17253852 is listed with its publication title in DQ889942.1 and matches the native selected reference. Full text and compound-specific experimental support remain unverified. The selected2007reference is not the malformed legacy number in the other MIBiG entry.
+
+### Occurrence and pinned sibling joins
+
+evidence: not_applicable. Targets: naturalproductmech:mibig-7e373b3a47.
+
+No occurrence or related_records object is asserted. No exact-key LOTUS or sibling match was found in the inspected pinned tables; this is not an assertion that the literature contains none. The stereo-distinct AntibioticMech bryostatin1 must not be linked as exact identity.
+
+### Pure-compound activity, targets and clinical scope
+
+evidence: not_applicable. Targets: naturalproductmech:mibig-7e373b3a47.
+
+No activity, activity summary, molecular target or clinical-status assertion exists in this owner. Do not import bryostatin-family anticancer/PKC claims or an unreferenced MIBiG cytotoxic label. The MJQU no-assay-data sentinel is not emitted as an activity.
+
+### Resolved mechanism and optional datasets
+
+graph: not_applicable. Targets: naturalproductmech:mibig-7e373b3a47.
+
+No inline graph, component reference, pathway step, protein example or dataset is asserted. Optional absence is not a defect. Deposit proteins are sequence annotations, not automatically experimental examples for these exact products.
+
+### Native state, history and future fixes
+
+ownership: supported. Targets: naturalproductmech:mibig-7e373b3a47.
+
+Two seed events remain intact; SEEDED is honest and unchanged. Save review observations only. Maintained owners and guarded curation writers must handle any later change; the reserved decisions.tsv cannot implement a fix.
+
+## Findings
+
+### F1: Generic bryostatin label leaves the exact congener-to-locus assignment unresolved
+
+major / open / provisional; issue key: bryostatin-2-exact-congener-locus-scope.
+
+The database attaches this exact graph to a generic family label and a deposited gene region. The same label also names a chemically distinct owner; exact PubChem agreement establishes registry equivalence, not which final congener this region yields. The linked PQRS deposit does not contain the sibling ABCDX PKS region; neither deposit alone is proof of complete-pathway sufficiency. Missing primary access is a limitation, not proof that the biological assertion is false. Preserve the source assertion while obtaining exact-congener evidence/qualification.
+
+### F2: Producer omits the deposited DEEP isolate context
+
+minor / open / confirmed; issue key: bryostatin-2-deposited-isolate-context.
+
+DQ889942.1 explicitly records source qualifier isolate=DEEP, while the native producer names only species62101 and has no such qualifier in notes. Both deposits use DEEP; this is provenance loss, not evidence of different producers. Do not silently relabel an isolate as a characterized culture strain.
+
+## Recommended Actions And Acceptance Checks
+
+### A1
+
+Obtain primary product/structure evidence and adjudicate the exact congener and contribution of each gene region. Preserve original generic labels as provenance; add a cited unresolved discussion through the guarded curator path if appropriate. Any generated label/structure change needs maintained inputs and tests. Do not merge owners, infer missing stereo, add connectivity-only xrefs, or upgrade evidence/status.
+
+- Primary compound and stereochemical evidence identifies the supported exact form or explicitly qualifies unresolved scope.
+- Each producer and locus claim is re-audited for that form; ABCDX/PQRS regions are not treated as independently sufficient without experiments.
+- Exact-key PubChem matches remain unless separately disproved; no same-name claim transfer; native strict/reproduction/QC gates pass.
+
+### A2
+
+Preserve isolate DEEP from DQ889942.1 with its literal isolate semantics and a full-row-pinned source qualification. Use notes or a reviewed typed context extension; do not force an unsupported isolate-to-strain reinterpretation into the existing strain table.
+
+- Exact deposited isolate and accession version are retained with provenance.
+- Taxon, chemical structure, database assertion and evidence/status grades remain unchanged.
+- Reviewed maintained consumer and guarded re-emission reproduce the qualifier; source drift is rejected.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| rules | docs/HARMONIZATION.md; Identity, origin and producer-versus-occurrence rules | supports | One record is one structure. Origin, computed filing, producer taxonomy, and separate producer/locus evidence grades must not be collapsed. |
+| ownership | docs/CURATION.md; Implemented corrections and source/curator ownership | supports | Source-owned changes require an implemented maintained decision/transform and guarded re-emission. decisions.tsv is reserved and unconsumed. Existing strain qualifiers are full-row pinned, but isolate versus strain semantics need explicit preservation. |
+| chemistry | /private/tmp/npmech-bryostatin-review-oYPHke/inspection.json; records; rendered structures.png visually inspected | supports | Pinned RDKit 2026.03.5 roundtrips both stored SMILES to their exact Standard InChI and key. MJQU is neutral C47H68O17 with 10 assigned and one unassigned tetrahedral center; NJMZ is neutral C42H64O15 with 11 unassigned centers. Different connectivity and formula rule out a same-name merge. |
+| inventories | data/raw/mibig_compounds.tsv; inspection.json source_rows; the source inputs are hash-pinned | supports | Structured TSV inspection covers both MIBiG rows and matching ChEBI, LOTUS, classifier, assay and pinned sibling rows. Neither exact key grounds to ChEBI. CHEBI:88353 bryostatin 1 and the AntibioticMech join use MJQUEDHRCUIRLF-TVIXENOKSA-N, not the MJQU owner key. CHEBI:139177 bryostatin 2 has different connectivity, LIPGUSBNMQRYNL. |
+| pubchem | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/25235992,6438934/property/InChI,InChIKey,MolecularFormula,IsomericSMILES/JSON; Official property objects; payload /private/tmp/npmech-gentamicin-review-c2YN3q/bry-pubchem.json; original retrieval 2026-10-13T22:08:58.269867Z..2026-10-13T22:08:58.822778Z; accessed_at is local reinspection | supports | CID25235992 exactly matches MJQUEDHRCUIRLF-YFQOKXJGSA-N; CID6438934 exactly matches NJMZVUZEDLKEGZ-XMADZBCLSA-N. Full InChI, not just first key block, agrees in each case. Preserve these xrefs. |
+| names | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/25235992,6438934/synonyms/JSON; Both CID information objects; names are database labels, not structure-elucidation evidence; payload /private/tmp/npmech-gentamicin-review-c2YN3q/bry-synonyms.json; original retrieval 2026-10-13T22:09:11.854755Z..2026-10-13T22:09:12.106493Z; accessed_at is local reinspection | supports | CID25235992 has no returned synonym list. CID6438934 has depositor names describing a substituted bryostatin-1 derivative, including differing branched-acyl wordings. Those labels do not adjudicate experimental congener identity or fill stereochemistry. |
+| taxonomy | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=62101&amp;retmode=xml; TaxId, ScientificName, Rank and Lineage; payload /private/tmp/npmech-gentamicin-review-c2YN3q/bry-taxonomy.xml; original retrieval 2026-10-13T22:08:59.675336Z..2026-10-13T22:09:00.001857Z; accessed_at is local reinspection | supports | NCBITaxon:62101 is species Candidatus Endobugula sertula, within Pseudomonadota/Gammaproteobacteria. OTHER_BACTERIAL is compatible with this placement; taxonomy is not proof of compound production. |
+| sequences | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&amp;id=DQ889941.1,DQ889942.1&amp;rettype=gbwithparts&amp;retmode=xml; Source qualifiers, feature products/protein accessions and references; nucleotide sequence was captured but not experimentally revalidated; payload /private/tmp/npmech-gentamicin-review-c2YN3q/bry-sequences.xml; original retrieval 2026-10-13T22:08:59.009446Z..2026-10-13T22:08:59.508988Z; accessed_at is local reinspection | supports | Both exact deposits identify isolate DEEP and taxon62101. DQ889941.1 contains bryABCDX PKS annotations; DQ889942.1 contains bryPQRS with flanking transposase-like/oxidoreductase genes. These are two deposited regions of the same named isolate, not evidence of two different producers or independent complete pathways. Their references identify PMID15556005 and/or PMID17253852. |
+| imodulondb | /private/tmp/npmech-bryostatin-review-oYPHke/imodulondb.log; Complete returned dataset inventory | supports | Installed kg-microbe-sources adapter successfully enumerated datasets; no Endobugula or Bugula entry is in that returned inventory. Native expression-module cross-check is not applicable. This is not negative production evidence. |
+| metagenome-context | DOI:10.1038/srep34362; https://www.nature.com/articles/srep34362 ; abstract and introduction/results paragraphs corresponding to returned lines74-89; not a claim of full-paper or supplement review | context_only | This independent study separates Endobugula-associated contigs shared between larval and ovicell samples from other bacteria in the host community. The inspected passages support host/symbiont context, not exact product identity or sufficiency of either deposited locus. |
+| access | /private/tmp/npmech-bryostatin-review-oYPHke/web-observations.json; Recorded queries, attempted URLs and limitations; no alternate retrieval after challenges | unknown | Bounded discovery yielded primary-study leads, but the 2001 and 2016 ASM full-text XML endpoints returned500 and their PMC pages challenged. Earlier PMID15556005 CAPTCHA and DOI10.1021/np060361d403 remain access stops. Search snippets were not used as experimental evidence. |
+| scope | /private/tmp/npmech-bryostatin-review-oYPHke/scope-audit.json; audit.py assertions and exact base | supports | All3115 owners,243 graph components and52 prior review pairs remain byte-identical to the checkpoint. Current inspection inputs match the base commit and the passed merge-queue QC head. |
+| ci | https://github.com/CultureBotAI/NaturalProductMech/actions/runs/38479909417; ci-status.log binds head; ci-qc.log is retained with retrieval receipt | supports | Shared full-corpus QC passed on this exact immutable base; its log includes strict validation, history/reference tests, inventory provenance and byte-identical reproduction of all3115 owners. This is reused commit-bound deterministic evidence, not a newly executed local QC or scientific sign-off. |
+| local-search | /private/tmp/npmech-bryostatin-review-oYPHke/local-search.log; Recorded rg command and log | supports | The ignored/hidden-inclusive text search enumerated current owners, maintained source rows and historical diagnostic references. Native resolved reads contain no inline graphs or component references for these two owners. Prior canonical owner coverage was checked against all52 retained observations. |
+| owner | data/natural_products/polyketides/bryostatin-2.yaml; Exact path and identifier; no graph references | supports | Entire raw owner, nested claims and two seed-history events read; native read_natural_product resolved the complete analysis view. |
+| mibig | https://mibig.secondarymetabolites.org/repository/BGC0000205.3/annotations.json; Full exact-version JSON including compounds, loci and references; payload /private/tmp/npmech-gentamicin-review-c2YN3q/BGC0000205.3.json; original retrieval 2026-10-13T22:08:57.536823Z..2026-10-13T22:08:58.101891Z; accessed_at is local reinspection | supports | BGC0000205 version3 is active and matches the imported structure, taxon, PKS class and DQ889942.1. The compound label is generic bryostatin; locus evidence is empty. DATABASE_ASSERTION, SOURCE_ASSERTION and CLUSTER_UNSTATED faithfully preserve the database tier. Quality/reviewer placeholders are not validation. |
+
+## Limits And Additional Notes
+
+- Required primary experimental and stereochemical adjudication remains incomplete;2004/2007cited papers and relevant figures/supplements were not inspected.
+- 2001/2016ASM full-text server errors followed by PMC CAPTCHAs; stopped. The inspected independent Scientific Reports passages provide context only.
+- The full native QC result is reused from the exact immutable base and verified log, not represented as a new local run. Fresh strict, labels, source/chemistry and hash checks were executed.
+- The label gate retains499nonblocking warnings and4649adapter skips across the corpus; it is not primary-source identity verification.
+- Bounded text searches include ignored/hidden files but exclude compressed.gz contents; no global literature-absence claim is made.
+- Only new review bundles are written. No natural-product, component, inventory, page, history, GitHub state or scientific status is changed.
+- Both deposited regions name the same DEEP isolate. Similar labels and a common producer do not establish compound equivalence.
+- No exact PubChem exclusion is proposed. Neither a missing optional graph nor absent activity data is counted as a defect.
+- All input hashes agree with durable merged main at the recorded Git base.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261013T230514Z-bryostatin-2
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Bryostatin exact-owner review: bryostatin-2'
+started_at: '2026-10-13T22:59:23.581490Z'
+finished_at: '2026-10-13T23:05:14.511199Z'
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: self_review
+  independence_basis: Same assistant carrying out the ongoing corpus campaign; not
+    independent human approval.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+native_verdict: SEEDED retained; exact-product REVIEWED gate incomplete
+scientific_review: true
+summary: One provisional major exact-congener/locus scope finding and one confirmed
+  minor missing isolate qualifier. Chemical encoding, exact PubChem identity and conservative
+  source grades are supported.
+source:
+  git_revision: 38d224f1d31a6601ad91490575592a4edb73f556
+  state: git_commit
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: 49e2ab03c7e82013e9d68356de2c9965c9f8517a3408a44124076f4ca1b529cd
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/decisions.tsv
+    sha256: 7214a74975fb2cb65521da18dd14ea1c65665f50060106976dc0db9caf887805
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f3f808ad1e58d79947aa82ecf1272e465cfbef57e5a4cd646731af23bb48ce75
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: a1eb14fec4a7cee0c2fc25c43091e75af24ae62c44c4f7659ed7aedf0e6a0e6c
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: 6f879bb9f2c9be6b6e8de8c013dbaebe09075b7e106790ea303a17006761ea11
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: 5b1edc057cdcc732f61de2964cd175fa3bc2dca929c5d2823142f61313545a7e
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: f61d7ba85ffd21837cd2b625f83c4681c4663e72503466b40eba3f4ab0204bc1
+    role: context
+  - path: curation/pubchem_bioassay_exclusions.tsv
+    sha256: 18b61c1e5a69112c99cea1373791cd1ec571b7084bfd9198ab68fa551f5d531a
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: bf38e4f0c7e4bcbdf184a4e7b8b024752251e8f34c015c0b82cedca98a8a5729
+    role: context
+  - path: data/natural_products/polyketides/bryostatin-2.yaml
+    sha256: 5ef111f37c62ca2f1c5a0820dfffcdf0f996f17999cefebb50964932acfc1e2d
+    role: target
+  - path: data/natural_products/polyketides/bryostatin.yaml
+    sha256: d10d1d38fe8b48916268f148a3d1063f9319b8c7417d4bc0a9dada5e7d8e8250
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: 373f049029be3db137e062ff5f872a2400a9d5b423f3e108ea44ebde2f8dcc7d
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: 7b9b9f78f5b14aea9fabb163bbaa9e842920a7e9b07deac8f98c97666e9e23fc
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 17619dbf804fe07f90811b2cc1e5bd330299853b9677c07b49781ce904d9e28a
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: pyproject.toml
+    sha256: 02505a46585e870eac7333f31a6773df51465ef13969d4d490fbc0247931d85c
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_lotus.py
+    sha256: 8a8c524f60f85d2bb54412ca055a6a45e0d37ec5f4584d8d70be454b8f664290
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/extract_pubchem_bioassay.py
+    sha256: 24f9d794e7cf97c420351cb751f8767f7d81a5f22aed01669b2318d6755e7c00
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/run_qc.py
+    sha256: ff44ed3e40a9b3582eb84e38a81301745ae80d16445756d09a7efb2a480b1abb
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: da98c0acf5b3cb14dd59e5b8ab905cec2364323be0814d297b356cbb257a9428
+    role: context
+  - path: src/naturalproductmech/curate/bioassay_exclusions.py
+    sha256: 4a4176e072ac9759aa8a9e88300d7e2de5aaf4ebf30b5c42fcf4c9c0b6cebbb4
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: 6026ddca19f0989d499b1681f7724fbab23918de8d3957750b49bbfe1a9c0bff
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: a8b8834788b4714cf1cb0d1cc410d5c2f88112a32ad8621c8e043f0a4bc38a9d
+    role: context
+  - path: src/naturalproductmech/curate/xref_exclusions.py
+    sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/history.yaml
+    sha256: b01b06f1b9a37db205c26c31ec0fd910690848507c7e1bfb73b424ac0829c52d
+    role: context
+  - path: src/naturalproductmech/schema/mech_shared.yaml
+    sha256: c2e7054fd32635e380c698282bd886a9105861009b9f0474f02bb1b80865e895
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: uv.lock
+    sha256: c62a5739e3ffeb12cc57b3bf12a31dcf9cdfbf00b417f4ba3a801d51ef9efbe3
+    role: context
+scope:
+  description: One exact owner, every native nested assertion and history, and complete
+    resolved mechanism.
+  selection: Next pending exact owner in the3115-record campaign; same-name sibling
+    is separate, not a sample or merged target.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  exclusions:
+  - target: Other3114owners
+    reason: Outside this one-owner observation, not excluded from the full campaign.
+targets:
+- target_id: naturalproductmech:mibig-7e373b3a47
+  path: data/natural_products/polyketides/bryostatin-2.yaml
+  label: bryostatin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Imported chemical, producer and cluster assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Imported structure-organism-reference triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Pinned ChEBI grounding inventory
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_origins.tsv
+    role: Pinned ChEBI occurrence inventory
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/antibioticmech_inchikeys.tsv
+    role: Pinned sibling exact-structure joins
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated harmonization and grading
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: MIBiG extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_lotus.py
+    role: LOTUS extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Implemented pinned structure corrections
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Implemented exact-context method corrections
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Implemented pinned strain qualifications
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_xref_exclusions.tsv
+    role: Implemented complete-row-pinned PubChem and NPAtlas exclusions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Imported compound-specific assay observations
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_pubchem_bioassay.py
+    role: BioAssay extraction
+checks:
+- check_id: bryostatin-2-inspect
+  name: bryostatin-2-inspect
+  status: passed
+  required: true
+  command: uv run python scripts/record_review.py inspect --targets /private/tmp/npmech-bryostatin-review-oYPHke/bryostatin-2-targets.json
+    --input .claude/skills/curate-yaml-record/references/review-checklist.md --input
+    .claude/skills/review-yaml-record/SKILL.md --input CLAUDE.md --input conf/id_label_targets.yaml
+    --input conf/producer_evidence.tsv --input conf/record_review.yaml --input curation/decisions.tsv
+    --input curation/mibig_claim_references.tsv --input curation/mibig_locus_evidence_overrides.tsv
+    --input curation/mibig_producer_strains.tsv --input curation/mibig_structure_corrections.tsv
+    --input curation/mibig_xref_exclusions.tsv --input curation/pubchem_bioassay_exclusions.tsv
+    --input data/natural_products/PATHS.tsv --input data/natural_products/polyketides/bryostatin-2.yaml
+    --input data/natural_products/polyketides/bryostatin.yaml --input data/raw/MANIFEST.yaml
+    --input data/raw/antibioticmech_inchikeys.tsv --input data/raw/chebi_origins.tsv
+    --input data/raw/chebi_structures.tsv --input data/raw/corpus_taxa.obo --input
+    data/raw/lotus_occurrences.tsv --input data/raw/mibig_compounds.tsv --input data/raw/npclassifier.tsv
+    --input data/raw/pubchem_bioassay.tsv --input docs/CURATION.md --input docs/HARMONIZATION.md
+    --input docs/record-review-profile.md --input docs/record-reviews.md --input justfile
+    --input pyproject.toml --input schema/record_review.yaml --input scripts/extract_lotus.py
+    --input scripts/extract_mibig.py --input scripts/extract_pubchem_bioassay.py --input
+    scripts/record_review.py --input scripts/run_qc.py --input scripts/seed_from_sources.py
+    --input src/naturalproductmech/curate/bioassay_exclusions.py --input src/naturalproductmech/curate/producer_strains.py
+    --input src/naturalproductmech/curate/structure_corrections.py --input src/naturalproductmech/curate/xref_exclusions.py
+    --input src/naturalproductmech/graph_components.py --input src/naturalproductmech/schema/history.yaml
+    --input src/naturalproductmech/schema/mech_shared.yaml --input src/naturalproductmech/schema/naturalproductmech.yaml
+    --input uv.lock
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  summary: Canonical inspection and native resolved read preceded assessment.
+  scope_note: Actual execution 2026-10-13T22:59:25.431288Z..2026-10-13T22:59:27.288515Z;
+    log /private/tmp/npmech-bryostatin-review-oYPHke/bryostatin-2-inspect.json; SHA256
+    45e14e5fa6503bb8ade9eb6d06fe50eb9d50f4d87664009c8b5073234ffec916
+- check_id: strict
+  name: strict
+  status: passed
+  required: true
+  command: just validate-strict data/natural_products/polyketides/bryostatin.yaml
+    data/natural_products/polyketides/bryostatin-2.yaml --out /private/tmp/npmech-bryostatin-review-oYPHke/strict.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  summary: Both exact owners passed closed-schema validation with zero errors.
+  scope_note: Actual execution 2026-10-13T22:59:36.502030Z..2026-10-13T22:59:39.720883Z;
+    log /private/tmp/npmech-bryostatin-review-oYPHke/strict.log; SHA256 747956d80935115085b16d63b0768e8185bf5833f0194a6d1ae7a76cf5853fe9
+- check_id: chemistry-final
+  name: chemistry-final
+  status: passed
+  required: true
+  command: env RDBASE=/private/tmp/npmech-rdkit-2026.03.5/share/RDKit PYTHONPATH=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/lib/python3.13/site-packages
+    /private/tmp/npmech-rdkit-2026.03.5/bin/python /private/tmp/npmech-bryostatin-review-oYPHke/inspect_sources.py
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  summary: Pinned RDKit roundtrip, exact PubChem comparison and structured source
+    inspection passed.
+  scope_note: Actual execution 2026-10-13T23:01:36.687677Z..2026-10-13T23:01:38.296127Z;
+    log /private/tmp/npmech-bryostatin-review-oYPHke/chemistry-final.log; SHA256 b0228d7ca32b58159185385a2d678088c96612d7594bbfdc6db6b8dccfb81aa9
+- check_id: labels
+  name: labels
+  status: passed
+  required: true
+  command: just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  summary: Full-corpus label gate passed:13434canonical,646synonym,35exceptions;499nonblocking
+    warnings and4649adapter skips remain.
+  scope_note: Actual execution 2026-10-13T23:01:14.436066Z..2026-10-13T23:03:07.116885Z;
+    log /private/tmp/npmech-bryostatin-review-oYPHke/labels.log; SHA256 19a4f6cca7894851de23ee2062f52d29b32def53c7b4f59edbc6c45ec4ce9828
+- check_id: imodulondb
+  name: imodulondb
+  status: passed
+  required: false
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/culturebotai-claw/.venv/bin/kg-microbe-sources
+    imodulondb datasets
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  summary: Dataset enumeration passed; native producer has no applicable dataset.
+  scope_note: Actual execution 2026-10-13T23:01:13.675893Z..2026-10-13T23:01:14.291423Z;
+    log /private/tmp/npmech-bryostatin-review-oYPHke/imodulondb.log; SHA256 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+- check_id: local-search
+  name: local-search
+  status: passed
+  required: false
+  command: rg --no-ignore --hidden -n -i -g '!*.gz' 'bryostatin|NJMZVUZEDLKEGZ|MJQUEDHRCUIRLF|BGC0000174|BGC0000205|DQ88994[12]'
+    data curation conf reviews .claude
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  summary: Bounded ignored-inclusive text search completed.
+  scope_note: Actual execution 2026-10-13T23:00:38.710152Z..2026-10-13T23:00:38.800503Z;
+    log /private/tmp/npmech-bryostatin-review-oYPHke/local-search.log; SHA256 569cd980665c7f9dcce4c8dd3aaff404d7f08b26c6b311092e66449019b39437
+- check_id: queue
+  name: queue
+  status: passed
+  required: false
+  command: just review-queue --tsv /private/tmp/npmech-bryostatin-review-oYPHke/review-queue.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  summary: 8930diagnostic rows across12queues; native3115-owner queue is not scientific
+    completion.
+  scope_note: Actual execution 2026-10-13T23:01:43.897202Z..2026-10-13T23:02:29.430945Z;
+    log /private/tmp/npmech-bryostatin-review-oYPHke/queue.log; SHA256 5dda4d778611d4eec21e448fc73b8317ac9dc0062cf33c1faaa3ab798f93d434
+- check_id: scope
+  name: scope
+  status: passed
+  required: true
+  command: python /private/tmp/npmech-bryostatin-review-oYPHke/audit.py
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  summary: All corpus/input/prior-review hashes and exact CI base checked.
+  scope_note: Actual execution 2026-10-13T23:03:28.743948Z..2026-10-13T23:03:33.964559Z;
+    log /private/tmp/npmech-bryostatin-review-oYPHke/scope.log; SHA256 f46f401ef556330a704247a5fd31c7279a9940762808187c41b25f5037b06341
+- check_id: ci-status
+  name: ci-status
+  status: passed
+  required: true
+  command: gh run view 38479909417 --json status,conclusion,headSha,url
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  summary: Read-only retrieval confirms full QC success for this exact Git commit.
+  scope_note: Actual execution 2026-10-13T23:02:37.347222Z..2026-10-13T23:02:38.202676Z;
+    log /private/tmp/npmech-bryostatin-review-oYPHke/ci-status.log; SHA256 52ce604908e3e7180b0c1638c67a68d3ca5a2895abf37ab3d1f6e5c11c097f55
+- check_id: ci-qc
+  name: ci-qc
+  status: passed
+  required: true
+  command: gh run view 38479909417 --log
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  summary: Read-only retrieval of the successful remote QC log, not a local rerun.
+    Scope audit proves its applicability to unchanged inputs.
+  scope_note: Actual execution 2026-10-13T23:02:36.191464Z..2026-10-13T23:02:38.489861Z;
+    log /private/tmp/npmech-bryostatin-review-oYPHke/ci-qc.log; SHA256 c0601f62494852e363968bf4cfac54d2a59018b6fa210964bc732eb648ff6e6d
+- check_id: chemistry
+  name: chemistry
+  status: failed
+  required: false
+  command: env RDBASE=/private/tmp/npmech-rdkit-2026.03.5/share/RDKit PYTHONPATH=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/lib/python3.13/site-packages
+    /private/tmp/npmech-rdkit-2026.03.5/bin/python /private/tmp/npmech-bryostatin-review-oYPHke/inspect_sources.py
+  exit_code: 1
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  summary: First attempt lacked project module path. No scientific conclusion drawn
+    from failed attempt; chemistry-final supersedes execution failure.
+  scope_note: Actual execution 2026-10-13T23:00:25.547796Z..2026-10-13T23:00:26.764037Z;
+    log /private/tmp/npmech-bryostatin-review-oYPHke/chemistry.log; SHA256 b962570a08d046b7f4e685a92fe77a4c35b30b2904a6e682a51ca5295dd54e3f
+- check_id: chemistry-fixed
+  name: chemistry-fixed
+  status: failed
+  required: false
+  command: env RDBASE=/private/tmp/npmech-rdkit-2026.03.5/share/RDKit PYTHONPATH=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/src:/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/lib/python3.13/site-packages
+    /private/tmp/npmech-rdkit-2026.03.5/bin/python /private/tmp/npmech-bryostatin-review-oYPHke/inspect_sources.py
+  exit_code: 1
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  summary: Cross-runtime native reader import failed on sysconfig; reader had already
+    succeeded in native environment. No scientific conclusion drawn from failed attempt;
+    chemistry-final supersedes execution failure.
+  scope_note: Actual execution 2026-10-13T23:00:57.735640Z..2026-10-13T23:00:58.785880Z;
+    log /private/tmp/npmech-bryostatin-review-oYPHke/chemistry-fixed.log; SHA256 131ca01ac3cb34bb7a1d9613bcee2e8df31f4f97cecf23d1c96dd9ae39134db3
+- check_id: chemistry-resolved
+  name: chemistry-resolved
+  status: failed
+  required: false
+  command: env RDBASE=/private/tmp/npmech-rdkit-2026.03.5/share/RDKit /private/tmp/npmech-rdkit-2026.03.5/bin/python
+    /private/tmp/npmech-bryostatin-review-oYPHke/inspect_sources.py
+  exit_code: 1
+  expected_exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  summary: Isolated drawing runtime lacked numpy configuration; recovered by supplying
+    project dependencies. No scientific conclusion drawn from failed attempt; chemistry-final
+    supersedes execution failure.
+  scope_note: Actual execution 2026-10-13T23:01:27.028102Z..2026-10-13T23:01:27.250375Z;
+    log /private/tmp/npmech-bryostatin-review-oYPHke/chemistry-resolved.log; SHA256
+    690c127ab2b57fc3518eb053675f04c3608f832a5a8d075608ec60289a7e78f2
+- check_id: exact-primary-evidence
+  name: Exact congener and locus primary evidence
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  summary: Full primary paper PMID:17253852, figures and supplements were not inspected.
+    Source-reference metadata verified through exact GenBank deposit. Access stops
+    and unresolved congener assignment preclude completed review.
+- check_id: native-transcriptomics
+  name: Native transcriptomic context
+  status: not_applicable
+  required: false
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  summary: Successful structured adapter inventory has no covered Endobugula/DEEP
+    dataset. Do not substitute cloning-host expression data.
+evidence:
+- evidence_id: rules
+  kind: record_content
+  reference: docs/HARMONIZATION.md
+  summary: One record is one structure. Origin, computed filing, producer taxonomy,
+    and separate producer/locus evidence grades must not be collapsed.
+  locator: Identity, origin and producer-versus-occurrence rules
+  accessed_at: '2026-10-13T23:05:09.557586Z'
+  support: supports
+  snapshot_sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+- evidence_id: ownership
+  kind: record_content
+  reference: docs/CURATION.md
+  summary: Source-owned changes require an implemented maintained decision/transform
+    and guarded re-emission. decisions.tsv is reserved and unconsumed. Existing strain
+    qualifiers are full-row pinned, but isolate versus strain semantics need explicit
+    preservation.
+  locator: Implemented corrections and source/curator ownership
+  accessed_at: '2026-10-13T23:05:09.558262Z'
+  support: supports
+  snapshot_sha256: 17619dbf804fe07f90811b2cc1e5bd330299853b9677c07b49781ce904d9e28a
+- evidence_id: chemistry
+  kind: validation
+  reference: /private/tmp/npmech-bryostatin-review-oYPHke/inspection.json
+  summary: Pinned RDKit 2026.03.5 roundtrips both stored SMILES to their exact Standard
+    InChI and key. MJQU is neutral C47H68O17 with 10 assigned and one unassigned tetrahedral
+    center; NJMZ is neutral C42H64O15 with 11 unassigned centers. Different connectivity
+    and formula rule out a same-name merge.
+  locator: records; rendered structures.png visually inspected
+  accessed_at: '2026-10-13T23:05:09.558522Z'
+  support: supports
+  snapshot_sha256: fa55428f5d7aaac49067359704ac1150cf50151b8d2c1d762c511dee321001dd
+- evidence_id: inventories
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  summary: Structured TSV inspection covers both MIBiG rows and matching ChEBI, LOTUS,
+    classifier, assay and pinned sibling rows. Neither exact key grounds to ChEBI.
+    CHEBI:88353 bryostatin 1 and the AntibioticMech join use MJQUEDHRCUIRLF-TVIXENOKSA-N,
+    not the MJQU owner key. CHEBI:139177 bryostatin 2 has different connectivity,
+    LIPGUSBNMQRYNL.
+  locator: inspection.json source_rows; the source inputs are hash-pinned
+  accessed_at: '2026-10-13T23:05:09.558699Z'
+  support: supports
+  snapshot_sha256: fa55428f5d7aaac49067359704ac1150cf50151b8d2c1d762c511dee321001dd
+- evidence_id: pubchem
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/25235992,6438934/property/InChI,InChIKey,MolecularFormula,IsomericSMILES/JSON
+  summary: CID25235992 exactly matches MJQUEDHRCUIRLF-YFQOKXJGSA-N; CID6438934 exactly
+    matches NJMZVUZEDLKEGZ-XMADZBCLSA-N. Full InChI, not just first key block, agrees
+    in each case. Preserve these xrefs.
+  locator: Official property objects; payload /private/tmp/npmech-gentamicin-review-c2YN3q/bry-pubchem.json;
+    original retrieval 2026-10-13T22:08:58.269867Z..2026-10-13T22:08:58.822778Z; accessed_at
+    is local reinspection
+  accessed_at: '2026-10-13T23:05:09.559155Z'
+  support: supports
+  snapshot_sha256: b0e4d6bcb73c485edc5bee1d4ce7cf08518452a9427f02a243d8311a2dc5a9b6
+- evidence_id: names
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/25235992,6438934/synonyms/JSON
+  summary: CID25235992 has no returned synonym list. CID6438934 has depositor names
+    describing a substituted bryostatin-1 derivative, including differing branched-acyl
+    wordings. Those labels do not adjudicate experimental congener identity or fill
+    stereochemistry.
+  locator: Both CID information objects; names are database labels, not structure-elucidation
+    evidence; payload /private/tmp/npmech-gentamicin-review-c2YN3q/bry-synonyms.json;
+    original retrieval 2026-10-13T22:09:11.854755Z..2026-10-13T22:09:12.106493Z; accessed_at
+    is local reinspection
+  accessed_at: '2026-10-13T23:05:09.559504Z'
+  support: supports
+  snapshot_sha256: 383837329491cbdd9c5ed83493ca3129506982637c85394c0b47da99c82db576
+- evidence_id: taxonomy
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=62101&retmode=xml
+  summary: NCBITaxon:62101 is species Candidatus Endobugula sertula, within Pseudomonadota/Gammaproteobacteria.
+    OTHER_BACTERIAL is compatible with this placement; taxonomy is not proof of compound
+    production.
+  locator: TaxId, ScientificName, Rank and Lineage; payload /private/tmp/npmech-gentamicin-review-c2YN3q/bry-taxonomy.xml;
+    original retrieval 2026-10-13T22:08:59.675336Z..2026-10-13T22:09:00.001857Z; accessed_at
+    is local reinspection
+  accessed_at: '2026-10-13T23:05:09.559814Z'
+  support: supports
+  snapshot_sha256: 4c13fdc9f835cb399a94e71880dc5332bf59126dad70c7ed4eb9854a85fa11df
+- evidence_id: sequences
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=DQ889941.1,DQ889942.1&rettype=gbwithparts&retmode=xml
+  summary: Both exact deposits identify isolate DEEP and taxon62101. DQ889941.1 contains
+    bryABCDX PKS annotations; DQ889942.1 contains bryPQRS with flanking transposase-like/oxidoreductase
+    genes. These are two deposited regions of the same named isolate, not evidence
+    of two different producers or independent complete pathways. Their references
+    identify PMID15556005 and/or PMID17253852.
+  locator: Source qualifiers, feature products/protein accessions and references;
+    nucleotide sequence was captured but not experimentally revalidated; payload /private/tmp/npmech-gentamicin-review-c2YN3q/bry-sequences.xml;
+    original retrieval 2026-10-13T22:08:59.009446Z..2026-10-13T22:08:59.508988Z; accessed_at
+    is local reinspection
+  accessed_at: '2026-10-13T23:05:09.560657Z'
+  support: supports
+  snapshot_sha256: faa76bee97d1e6573f3aebe1c30e45fe1cdd4488d9c7e79fc0265d5e2b23a37a
+- evidence_id: imodulondb
+  kind: database
+  reference: /private/tmp/npmech-bryostatin-review-oYPHke/imodulondb.log
+  summary: Installed kg-microbe-sources adapter successfully enumerated datasets;
+    no Endobugula or Bugula entry is in that returned inventory. Native expression-module
+    cross-check is not applicable. This is not negative production evidence.
+  locator: Complete returned dataset inventory
+  accessed_at: '2026-10-13T23:05:09.561216Z'
+  support: supports
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+- evidence_id: metagenome-context
+  kind: primary_source
+  reference: DOI:10.1038/srep34362
+  summary: This independent study separates Endobugula-associated contigs shared between
+    larval and ovicell samples from other bacteria in the host community. The inspected
+    passages support host/symbiont context, not exact product identity or sufficiency
+    of either deposited locus.
+  locator: https://www.nature.com/articles/srep34362 ; abstract and introduction/results
+    paragraphs corresponding to returned lines74-89; not a claim of full-paper or
+    supplement review
+  accessed_at: '2026-10-13T23:05:09.561324Z'
+  support: context_only
+- evidence_id: access
+  kind: search
+  reference: /private/tmp/npmech-bryostatin-review-oYPHke/web-observations.json
+  summary: Bounded discovery yielded primary-study leads, but the 2001 and 2016 ASM
+    full-text XML endpoints returned500 and their PMC pages challenged. Earlier PMID15556005
+    CAPTCHA and DOI10.1021/np060361d403 remain access stops. Search snippets were
+    not used as experimental evidence.
+  locator: Recorded queries, attempted URLs and limitations; no alternate retrieval
+    after challenges
+  accessed_at: '2026-10-13T23:05:09.561353Z'
+  support: unknown
+  snapshot_sha256: 99cad3edc48f47ff69da74be85611a887df73d9bece580535be132e35b3e6048
+  search_scope: Two recorded web queries about bryostatin biosynthesis/Endobugula
+    genomes; inspected source page and recorded access stops only. Search-result extracts
+    are leads, not read primary evidence.
+- evidence_id: scope
+  kind: validation
+  reference: /private/tmp/npmech-bryostatin-review-oYPHke/scope-audit.json
+  summary: All3115 owners,243 graph components and52 prior review pairs remain byte-identical
+    to the checkpoint. Current inspection inputs match the base commit and the passed
+    merge-queue QC head.
+  locator: audit.py assertions and exact base
+  accessed_at: '2026-10-13T23:05:09.561470Z'
+  support: supports
+  snapshot_sha256: f46f401ef556330a704247a5fd31c7279a9940762808187c41b25f5037b06341
+- evidence_id: ci
+  kind: validation
+  reference: https://github.com/CultureBotAI/NaturalProductMech/actions/runs/38479909417
+  summary: Shared full-corpus QC passed on this exact immutable base; its log includes
+    strict validation, history/reference tests, inventory provenance and byte-identical
+    reproduction of all3115 owners. This is reused commit-bound deterministic evidence,
+    not a newly executed local QC or scientific sign-off.
+  locator: ci-status.log binds head; ci-qc.log is retained with retrieval receipt
+  accessed_at: '2026-10-13T23:05:09.561588Z'
+  support: supports
+  snapshot_sha256: c0601f62494852e363968bf4cfac54d2a59018b6fa210964bc732eb648ff6e6d
+- evidence_id: local-search
+  kind: search
+  reference: /private/tmp/npmech-bryostatin-review-oYPHke/local-search.log
+  summary: The ignored/hidden-inclusive text search enumerated current owners, maintained
+    source rows and historical diagnostic references. Native resolved reads contain
+    no inline graphs or component references for these two owners. Prior canonical
+    owner coverage was checked against all52 retained observations.
+  locator: Recorded rg command and log
+  accessed_at: '2026-10-13T23:05:09.561855Z'
+  support: supports
+  snapshot_sha256: 569cd980665c7f9dcce4c8dd3aaff404d7f08b26c6b311092e66449019b39437
+  search_scope: data, curation, conf, reviews and .claude, including hidden/ignored
+    files; bryostatin, both InChIKey connectivity blocks, both BGC accessions and
+    DQ889941/2. Compressed .gz files excluded from text search; no claim of compressed-content
+    exhaustiveness.
+- evidence_id: owner
+  kind: record_content
+  reference: data/natural_products/polyketides/bryostatin-2.yaml
+  summary: Entire raw owner, nested claims and two seed-history events read; native
+    read_natural_product resolved the complete analysis view.
+  locator: Exact path and identifier; no graph references
+  accessed_at: '2026-10-13T23:05:14.488559Z'
+  support: supports
+  snapshot_sha256: 5ef111f37c62ca2f1c5a0820dfffcdf0f996f17999cefebb50964932acfc1e2d
+- evidence_id: mibig
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000205.3/annotations.json
+  summary: BGC0000205 version3 is active and matches the imported structure, taxon,
+    PKS class and DQ889942.1. The compound label is generic bryostatin; locus evidence
+    is empty. DATABASE_ASSERTION, SOURCE_ASSERTION and CLUSTER_UNSTATED faithfully
+    preserve the database tier. Quality/reviewer placeholders are not validation.
+  locator: Full exact-version JSON including compounds, loci and references; payload
+    /private/tmp/npmech-gentamicin-review-c2YN3q/BGC0000205.3.json; original retrieval
+    2026-10-13T22:08:57.536823Z..2026-10-13T22:08:58.101891Z; accessed_at is local
+    reinspection
+  accessed_at: '2026-10-13T23:05:14.489157Z'
+  support: supports
+  snapshot_sha256: fa01be443f54f0af2b2ab283a491499dde51e1d4369579ef62ff54cf396f3250
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact congener versus shared family label
+  outcome: concern
+  summary: Distinct structures are both called bryostatin. This owner remains separately
+    resolved by its exact key, not by the shared name. Its exact experimental congener
+    assignment to the named locus is unresolved (F1); a same-label merge or stereochemical
+    completion is unsupported.
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  evidence_ids:
+  - owner
+  - chemistry
+  - pubchem
+  - names
+  - mibig
+  - sequences
+- assessment_id: structure
+  area: consistency
+  topic: Encoded chemical identity and stereochemistry
+  outcome: supported
+  summary: All11 tetrahedral centers are unassigned; stereo_complete:false is accurate.
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  evidence_ids:
+  - chemistry
+  - inventories
+  - owner
+- assessment_id: grounding
+  area: grounding
+  topic: Exact xref and minted-identity rationale
+  outcome: supported
+  summary: The sole PubChem xref agrees in full InChI and key. The pinned ChEBI inventory
+    has no exact key; no parent/congener/equivalent relationship is asserted. Do not
+    substitute a stereo-resolved or merely similarly named structure.
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  evidence_ids:
+  - owner
+  - pubchem
+  - inventories
+- assessment_id: classification
+  area: representation
+  topic: Computed filing versus asserted class and taxonomic facet
+  outcome: supported
+  summary: POLYKETIDES/Macrolides/Bryostatins and glycoside=true reproduce the pinned
+    NPClassifier response. They remain explicitly computed, not an experimentally
+    demonstrated sugar or origin claim. PKS is independently the MIBiG class. OTHER_BACTERIAL
+    is consistent with taxon62101.
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  evidence_ids:
+  - owner
+  - inventories
+  - mibig
+  - taxonomy
+  - rules
+  dimensions:
+  - name: taxonomy
+    value: NCBITaxon:62101 species; Gammaproteobacteria
+    definition: Producer classification independent of chemical origin
+    evidence_ids:
+    - taxonomy
+  - name: sample_context
+    value: DEEP isolate
+    definition: Literal deposit isolate qualifier, not an invented cultured strain
+      or new taxon
+    evidence_ids:
+    - sequences
+  - name: stereochemical_resolution
+    value: 11unassigned tetrahedral centers
+    definition: Pinned RDKit graph calculation, not experimental stereochemical proof
+    evidence_ids:
+    - chemistry
+  - name: evidence_tier
+    value: SOURCE_ASSERTION / CLUSTER_UNSTATED
+    definition: Separate producer and locus evidence grades
+    evidence_ids:
+    - owner
+    - mibig
+- assessment_id: origin
+  area: scope
+  topic: Natural origin and producer scope
+  outcome: concern
+  summary: MIBiG supplies the biological-origin assertion, not NPClassifier. SOURCE_ASSERTION
+    is not inflated to characterized production. Exact congener closure is incomplete
+    and the source DEEP isolate qualifier is omitted (F2); host occurrence is not
+    interchangeable with bacterial biosynthesis.
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  evidence_ids:
+  - owner
+  - mibig
+  - sequences
+  - metagenome-context
+- assessment_id: cluster
+  area: evidence
+  topic: Versioned BGC and deposited gene-region scope
+  outcome: concern
+  summary: BGC0000205v3 is active and DQ889942.1 resolves to DEEP/taxon62101. Empty
+    method evidence correctly remains CLUSTER_UNSTATED. The deposit contains bryPQRS
+    accessory-region annotations, not the entire modular PKS set. No independent pathway
+    sufficiency or exact final-congener production is established by these database
+    fields.
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  evidence_ids:
+  - owner
+  - mibig
+  - sequences
+- assessment_id: citations
+  area: provenance
+  topic: Stable reference identity and claim support
+  outcome: unknown
+  summary: PMID:17253852 is listed with its publication title in DQ889942.1 and matches
+    the native selected reference. Full text and compound-specific experimental support
+    remain unverified. The selected2007reference is not the malformed legacy number
+    in the other MIBiG entry.
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  evidence_ids:
+  - owner
+  - mibig
+  - sequences
+  - access
+- assessment_id: occurrence
+  area: evidence
+  topic: Occurrence and pinned sibling joins
+  outcome: not_applicable
+  summary: No occurrence or related_records object is asserted. No exact-key LOTUS
+    or sibling match was found in the inspected pinned tables; this is not an assertion
+    that the literature contains none. The stereo-distinct AntibioticMech bryostatin1
+    must not be linked as exact identity.
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  evidence_ids:
+  - owner
+  - inventories
+- assessment_id: activity
+  area: evidence
+  topic: Pure-compound activity, targets and clinical scope
+  outcome: not_applicable
+  summary: No activity, activity summary, molecular target or clinical-status assertion
+    exists in this owner. Do not import bryostatin-family anticancer/PKC claims or
+    an unreferenced MIBiG cytotoxic label. The MJQU no-assay-data sentinel is not
+    emitted as an activity.
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  evidence_ids:
+  - owner
+  - inventories
+  - mibig
+- assessment_id: mechanism
+  area: graph
+  topic: Resolved mechanism and optional datasets
+  outcome: not_applicable
+  summary: No inline graph, component reference, pathway step, protein example or
+    dataset is asserted. Optional absence is not a defect. Deposit proteins are sequence
+    annotations, not automatically experimental examples for these exact products.
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  evidence_ids:
+  - owner
+  - local-search
+  - sequences
+  - imodulondb
+- assessment_id: audit
+  area: ownership
+  topic: Native state, history and future fixes
+  outcome: supported
+  summary: Two seed events remain intact; SEEDED is honest and unchanged. Save review
+    observations only. Maintained owners and guarded curation writers must handle
+    any later change; the reserved decisions.tsv cannot implement a fix.
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  evidence_ids:
+  - owner
+  - scope
+  - ownership
+findings:
+- finding_id: F1
+  issue_key: bryostatin-2-exact-congener-locus-scope
+  category: identity
+  severity: major
+  status: open
+  certainty: provisional
+  title: Generic bryostatin label leaves the exact congener-to-locus assignment unresolved
+  description: The database attaches this exact graph to a generic family label and
+    a deposited gene region. The same label also names a chemically distinct owner;
+    exact PubChem agreement establishes registry equivalence, not which final congener
+    this region yields. The linked PQRS deposit does not contain the sibling ABCDX
+    PKS region; neither deposit alone is proof of complete-pathway sufficiency. Missing
+    primary access is a limitation, not proof that the biological assertion is false.
+    Preserve the source assertion while obtaining exact-congener evidence/qualification.
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  field_paths:
+  - label
+  - chemical_structure
+  - producer_organisms
+  - biosynthetic_gene_clusters
+  evidence_ids:
+  - owner
+  - chemistry
+  - mibig
+  - pubchem
+  - inventories
+  - sequences
+  rule_id: NaturalProductRecord identity and compound-specific BGC checklist
+  native_severity: major
+  normalization_reason: Material unresolved exact-product scope prevents scientific
+    sign-off; not a confirmed wrong-structure blocker.
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Compound label/structure and locus extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated exact-key harmonization
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Pinned source assertion, never silently rewritten
+- finding_id: F2
+  issue_key: bryostatin-2-deposited-isolate-context
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Producer omits the deposited DEEP isolate context
+  description: DQ889942.1 explicitly records source qualifier isolate=DEEP, while
+    the native producer names only species62101 and has no such qualifier in notes.
+    Both deposits use DEEP; this is provenance loss, not evidence of different producers.
+    Do not silently relabel an isolate as a characterized culture strain.
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  field_paths:
+  - producer_organisms[0].notes
+  evidence_ids:
+  - owner
+  - sequences
+  - ownership
+  rule_id: Producer scope and deposited context checklist
+  native_severity: minor
+  normalization_reason: Bounded sample provenance omission; correcting it does not
+    settle exact product identity.
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Existing pinned qualifier path requires explicit isolate-versus-strain adjudication
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Preserve exact source context without grade promotion
+actions:
+- action_id: A1
+  finding_ids:
+  - F1
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Compound label/structure and locus extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated exact-key harmonization
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Pinned source assertion, never silently rewritten
+  description: Obtain primary product/structure evidence and adjudicate the exact
+    congener and contribution of each gene region. Preserve original generic labels
+    as provenance; add a cited unresolved discussion through the guarded curator path
+    if appropriate. Any generated label/structure change needs maintained inputs and
+    tests. Do not merge owners, infer missing stereo, add connectivity-only xrefs,
+    or upgrade evidence/status.
+  acceptance_checks:
+  - Primary compound and stereochemical evidence identifies the supported exact form
+    or explicitly qualifies unresolved scope.
+  - Each producer and locus claim is re-audited for that form; ABCDX/PQRS regions
+    are not treated as independently sufficient without experiments.
+  - Exact-key PubChem matches remain unless separately disproved; no same-name claim
+    transfer; native strict/reproduction/QC gates pass.
+  generator: 'Authorized future curation only: maintained input path, canary, guarded
+    writer/history and reproduction.'
+- action_id: A2
+  finding_ids:
+  - F2
+  target_ids:
+  - naturalproductmech:mibig-7e373b3a47
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Existing pinned qualifier path requires explicit isolate-versus-strain adjudication
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Preserve exact source context without grade promotion
+  description: Preserve isolate DEEP from DQ889942.1 with its literal isolate semantics
+    and a full-row-pinned source qualification. Use notes or a reviewed typed context
+    extension; do not force an unsupported isolate-to-strain reinterpretation into
+    the existing strain table.
+  acceptance_checks:
+  - Exact deposited isolate and accession version are retained with provenance.
+  - Taxon, chemical structure, database assertion and evidence/status grades remain
+    unchanged.
+  - Reviewed maintained consumer and guarded re-emission reproduce the qualifier;
+    source drift is rejected.
+  generator: Implement or explicitly adjudicate an appropriate source-context path
+    before any generated mutation.
+limitations:
+- Required primary experimental and stereochemical adjudication remains incomplete;2004/2007cited
+  papers and relevant figures/supplements were not inspected.
+- 2001/2016ASM full-text server errors followed by PMC CAPTCHAs; stopped. The inspected
+  independent Scientific Reports passages provide context only.
+- The full native QC result is reused from the exact immutable base and verified log,
+  not represented as a new local run. Fresh strict, labels, source/chemistry and hash
+  checks were executed.
+- The label gate retains499nonblocking warnings and4649adapter skips across the corpus;
+  it is not primary-source identity verification.
+- Bounded text searches include ignored/hidden files but exclude compressed.gz contents;
+  no global literature-absence claim is made.
+- Only new review bundles are written. No natural-product, component, inventory, page,
+  history, GitHub state or scientific status is changed.
+notes:
+- Both deposited regions name the same DEEP isolate. Similar labels and a common producer
+  do not establish compound equivalence.
+- No exact PubChem exclusion is proposed. Neither a missing optional graph nor absent
+  activity data is counted as a defect.
+- All input hashes agree with durable merged main at the recorded Git base.
+tags:
+- bryostatin
+- exact-identity
+- record-review-campaign
+```
