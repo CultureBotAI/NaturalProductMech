@@ -1,0 +1,24 @@
+import hashlib
+import json
+import subprocess
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+
+ROOT=Path(__file__).parent
+saved=[]
+for candidate in json.loads((ROOT/'validated-drafts.json').read_text()):
+    path=Path(candidate['path'])
+    assert hashlib.sha256(path.read_bytes()).hexdigest()==candidate['sha256']
+    start=datetime.now(timezone.utc).isoformat()
+    command=[sys.executable,'scripts/record_review.py','save','--content',str(path)]
+    result=subprocess.run(command,capture_output=True,text=True)
+    receipt=dict(command=command,started_at=start,finished_at=datetime.now(timezone.utc).isoformat(),
+        exit_code=result.returncode,stdout=result.stdout,stderr=result.stderr)
+    with (ROOT/(path.stem+'-save.receipt.json')).open('x') as stream:
+        json.dump(receipt,stream,indent=2)
+    print(json.dumps(receipt),flush=True)
+    assert result.returncode==0
+    saved.append(receipt)
+with (ROOT/'saved-reviews.json').open('x') as stream:
+    json.dump(saved,stream,indent=2)

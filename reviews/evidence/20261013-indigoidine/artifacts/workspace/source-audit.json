@@ -1,0 +1,345 @@
+{
+  "accessed_at": "2026-10-13T06:34:28.405765+00:00",
+  "inputs_revalidated": [
+    "indigoidine-2",
+    "indigoidine"
+  ],
+  "tables": {
+    "curation/decisions.tsv": {
+      "sha256": "7214a74975fb2cb65521da18dd14ea1c65665f50060106976dc0db9caf887805",
+      "count": 0,
+      "hits": []
+    },
+    "curation/mibig_locus_evidence_overrides.tsv": {
+      "sha256": "0b2e8b991c926f9a67a3094964b0335dd1cd347fbf548674fa273db8fac3a4b2",
+      "count": 9,
+      "hits": []
+    },
+    "curation/mibig_structure_corrections.tsv": {
+      "sha256": "5b1edc057cdcc732f61de2964cd175fa3bc2dca929c5d2823142f61313545a7e",
+      "count": 1,
+      "hits": []
+    },
+    "curation/record_review_queue.tsv": {
+      "sha256": "00c09ce419d903a04ac50b4b5334902b7701e1c57a4a610130cbe0c648820e65",
+      "count": 8932,
+      "hits": [
+        {
+          "row_number": 1311,
+          "row": {
+            "queue": "producer-evidence",
+            "rank": "1",
+            "identifier": "CHEBI:79296",
+            "label": "indigoidine",
+            "path": "data/natural_products/alkaloids/indigoidine.yaml",
+            "detail": "1 producer claim(s), none causal: SOURCE_ASSERTION"
+          }
+        },
+        {
+          "row_number": 2656,
+          "row": {
+            "queue": "biosynthesis",
+            "rank": "3",
+            "identifier": "naturalproductmech:mibig-8920af415c",
+            "label": "indigoidine",
+            "path": "data/natural_products/alkaloids/indigoidine-2.yaml",
+            "detail": "1 demonstrated cluster link(s), 1 causal producer claim(s), no biosynthetic_pathway"
+          }
+        }
+      ]
+    },
+    "curation/source_queue.tsv": {
+      "sha256": "050c07d90cbe51b3811ed4ff4efde5799f3a302a975858453082ab12e3cca625",
+      "count": 44,
+      "hits": []
+    },
+    "curation/unresolved_taxa.tsv": {
+      "sha256": "86efbda9c09388723a4f24da35e18404032f1549a9088192fbd2020cb846fa43",
+      "count": 3329,
+      "hits": []
+    },
+    "data/natural_products/PATHS.tsv": {
+      "sha256": "bf38e4f0c7e4bcbdf184a4e7b8b024752251e8f34c015c0b82cedca98a8a5729",
+      "count": 3115,
+      "hits": [
+        {
+          "row_number": 311,
+          "row": {
+            "identifier": "CHEBI:79296",
+            "np_pathway": "ALKALOIDS",
+            "slug": "indigoidine",
+            "path": "data/natural_products/alkaloids/indigoidine.yaml"
+          }
+        },
+        {
+          "row_number": 1843,
+          "row": {
+            "identifier": "naturalproductmech:mibig-8920af415c",
+            "np_pathway": "ALKALOIDS",
+            "slug": "indigoidine-2",
+            "path": "data/natural_products/alkaloids/indigoidine-2.yaml"
+          }
+        }
+      ]
+    },
+    "data/raw/chebi_origins.tsv": {
+      "sha256": "fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8",
+      "count": 18159,
+      "hits": [
+        {
+          "row_number": 10090,
+          "row": {
+            "chebi_id": "CHEBI:79296",
+            "species_text": "Streptomyces lavendulae",
+            "species_accession": "1914",
+            "component_text": "",
+            "strain_text": "ATCC11924",
+            "source_accession": "17237222",
+            "comments": ""
+          }
+        }
+      ]
+    },
+    "data/raw/chebi_structures.tsv": {
+      "sha256": "62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2",
+      "count": 45895,
+      "hits": [
+        {
+          "row_number": 30361,
+          "row": {
+            "chebi_id": "CHEBI:79296",
+            "name": "indigoidine",
+            "definition": "A member of the class of pyridone that is a dimeric blue pigment biosynthesised from L-glutamine.",
+            "stars": "3",
+            "standard_inchi_key": "ALDIVIWLBSDGGN-ONEGZZNKSA-N",
+            "smiles": "NC1=C/C(=C2/C=C(N)C(=O)NC2=O)C(=O)NC1=O"
+          }
+        }
+      ]
+    },
+    "data/raw/lotus_occurrences.tsv": {
+      "sha256": "ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94",
+      "count": 10226,
+      "hits": [
+        {
+          "row_number": 179,
+          "row": {
+            "standard_inchi_key": "ALDIVIWLBSDGGN-ONEGZZNKSA-N",
+            "organism_name": "Streptomyces chromofuscus",
+            "taxon_id": "NCBITaxon:42881",
+            "organism_wikidata": "http://www.wikidata.org/entity/Q22287099",
+            "reference_doi": "10.1007/S10295-012-1207-9",
+            "structure_wikidata": "http://www.wikidata.org/entity/Q11712142"
+          }
+        }
+      ]
+    },
+    "data/raw/mibig_compounds.tsv": {
+      "sha256": "e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6",
+      "count": 3449,
+      "hits": [
+        {
+          "row_number": 503,
+          "row": {
+            "mibig_accession": "BGC0000375",
+            "entry_version": "5",
+            "entry_status": "active",
+            "entry_quality": "questionable",
+            "entry_completeness": "unknown",
+            "compound_name": "indigoidine",
+            "compound_index": "1",
+            "smiles": "C\\1=C(C(=O)NC(=O)/C1=C/2\\C=C(C(=O)NC2=O)N)N",
+            "standard_inchi": "InChI=1S/C10H8N4O4/c11-5-1-3(7(15)13-9(5)17)4-2-6(12)10(18)14-8(4)16/h1-2H,11-12H2,(H,13,15,17)(H,14,16,18)/b4-3+",
+            "standard_inchi_key": "ALDIVIWLBSDGGN-ONEGZZNKSA-N",
+            "stereo_complete": "true",
+            "compound_classes": "",
+            "database_ids": "pubchem:5492261",
+            "taxon_id": "NCBITaxon:42881",
+            "taxon_label": "Streptomyces chromofuscus",
+            "bgc_classes": "NRPS",
+            "bgc_subclasses": "Type I",
+            "genome_accession": "JX499187.1",
+            "locus_from": "",
+            "locus_to": "",
+            "locus_evidence_methods": "",
+            "producer_evidence_basis": "SOURCE_ASSERTION",
+            "cluster_link_evidence_basis": "CLUSTER_UNSTATED",
+            "primary_reference": "PMID:23053349",
+            "reference_basis": "ENTRY"
+          }
+        },
+        {
+          "row_number": 2788,
+          "row": {
+            "mibig_accession": "BGC0002295",
+            "entry_version": "3",
+            "entry_status": "active",
+            "entry_quality": "questionable",
+            "entry_completeness": "unknown",
+            "compound_name": "minimycin",
+            "compound_index": "1",
+            "smiles": "C1=C(C(=O)NC(=O)O1)[C@H]2[C@@H]([C@@H]([C@H](O2)CO)O)O",
+            "standard_inchi": "InChI=1S/C9H11NO7/c11-1-4-5(12)6(13)7(17-4)3-2-16-9(15)10-8(3)14/h2,4-7,11-13H,1H2,(H,10,14,15)/t4-,5-,6-,7+/m1/s1",
+            "standard_inchi_key": "REFHNSOTFKKRAI-GBNDHIKLSA-N",
+            "stereo_complete": "true",
+            "compound_classes": "",
+            "database_ids": "npatlas:NPA021195",
+            "taxon_id": "NCBITaxon:1912",
+            "taxon_label": "Streptomyces hygroscopicus",
+            "bgc_classes": "NRPS|saccharide",
+            "bgc_subclasses": "Type I",
+            "genome_accession": "MK122964.1",
+            "locus_from": "5879",
+            "locus_to": "15193",
+            "locus_evidence_methods": "Heterologous expression|Knock-out studies",
+            "producer_evidence_basis": "BGC_CHARACTERIZED",
+            "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED",
+            "primary_reference": "DOI:10.1016/j.isci.2019.11.037",
+            "reference_basis": "COMPOUND_EVIDENCE"
+          }
+        },
+        {
+          "row_number": 2789,
+          "row": {
+            "mibig_accession": "BGC0002295",
+            "entry_version": "3",
+            "entry_status": "active",
+            "entry_quality": "questionable",
+            "entry_completeness": "unknown",
+            "compound_name": "indigoidine",
+            "compound_index": "2",
+            "smiles": "NC1=C/C(CNC1=O)=C2C(NC(C=C\\2)=O)=O",
+            "standard_inchi": "InChI=1S/C10H9N3O3/c11-7-3-5(4-12-10(7)16)6-1-2-8(14)13-9(6)15/h1-3H,4,11H2,(H,12,16)(H,13,14,15)/b6-5+",
+            "standard_inchi_key": "ZZTNWZPJOCVMIN-AATRIKPKSA-N",
+            "stereo_complete": "true",
+            "compound_classes": "",
+            "database_ids": "pubchem:193349",
+            "taxon_id": "NCBITaxon:1912",
+            "taxon_label": "Streptomyces hygroscopicus",
+            "bgc_classes": "NRPS|saccharide",
+            "bgc_subclasses": "Type I",
+            "genome_accession": "MK122964.1",
+            "locus_from": "5879",
+            "locus_to": "15193",
+            "locus_evidence_methods": "Heterologous expression|Knock-out studies",
+            "producer_evidence_basis": "BGC_CHARACTERIZED",
+            "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED",
+            "primary_reference": "DOI:10.1016/j.isci.2019.11.037",
+            "reference_basis": "COMPOUND_EVIDENCE"
+          }
+        }
+      ]
+    },
+    "data/raw/npclassifier.tsv": {
+      "sha256": "7b9b9f78f5b14aea9fabb163bbaa9e842920a7e9b07deac8f98c97666e9e23fc",
+      "count": 3116,
+      "hits": [
+        {
+          "row_number": 65,
+          "row": {
+            "standard_inchi_key": "ALDIVIWLBSDGGN-ONEGZZNKSA-N",
+            "smiles": "C\\1=C(C(=O)NC(=O)/C1=C/2\\C=C(C(=O)NC2=O)N)N",
+            "pathway_results": "Alkaloids",
+            "superclass_results": "Ornithine alkaloids",
+            "class_results": "",
+            "is_glycoside": "false",
+            "model_version": "npclassifier.gnps2.org@2026-09-07"
+          }
+        },
+        {
+          "row_number": 3115,
+          "row": {
+            "standard_inchi_key": "ZZTNWZPJOCVMIN-AATRIKPKSA-N",
+            "smiles": "NC1=C/C(CNC1=O)=C2C(NC(C=C\\2)=O)=O",
+            "pathway_results": "Alkaloids",
+            "superclass_results": "Tryptophan alkaloids",
+            "class_results": "",
+            "is_glycoside": "false",
+            "model_version": "npclassifier.gnps2.org@2026-09-07"
+          }
+        }
+      ]
+    },
+    "data/raw/taxon_groups.tsv": {
+      "sha256": "f73f228d57d79a1d85a1441efa6829917b1ffecac08cb7bdd4fc855046255f8f",
+      "count": 36278,
+      "hits": []
+    },
+    "data/raw/taxon_merged.tsv": {
+      "sha256": "97b3efa66d4fc1679ab65ae547e78b2f627f37bc8e45ae33f2719008fe3863bb",
+      "count": 556,
+      "hits": []
+    }
+  },
+  "occupied_keys": [
+    {
+      "path": "data/natural_products/alkaloids/indigoidine-2.yaml",
+      "identifier": "naturalproductmech:mibig-8920af415c",
+      "key": "ZZTNWZPJOCVMIN-AATRIKPKSA-N",
+      "sha256": "9abeb31eb0903167a5dc8f01a16bdb33e92b02f1d6562b1944778f37082f1f8b"
+    },
+    {
+      "path": "data/natural_products/alkaloids/indigoidine.yaml",
+      "identifier": "CHEBI:79296",
+      "key": "ALDIVIWLBSDGGN-ONEGZZNKSA-N",
+      "sha256": "f981b2620818810d101e76931227fc882184289a5865339571cfbac2bd8bba13"
+    }
+  ],
+  "taxa": [
+    {
+      "identifier": "NCBITaxon:1912",
+      "present": true,
+      "name": "Streptomyces hygroscopicus",
+      "synonyms": [
+        "Actinomyces hygroscopicus",
+        "Streptomyces endus"
+      ],
+      "annotations": []
+    },
+    {
+      "identifier": "NCBITaxon:1914",
+      "present": true,
+      "name": "Streptomyces lavendulae",
+      "synonyms": [
+        "Actinomyces lavendulae"
+      ],
+      "annotations": []
+    },
+    {
+      "identifier": "NCBITaxon:42881",
+      "present": true,
+      "name": "Streptomyces chromofuscus",
+      "synonyms": [
+        "Actinomyces chromofuscus"
+      ],
+      "annotations": []
+    },
+    {
+      "identifier": "NCBITaxon:1886",
+      "present": true,
+      "name": "Streptomyces albidoflavus",
+      "synonyms": [
+        "Actinomyces albidoflavus",
+        "Actinomyces globisporus var. caucasicus",
+        "Cladothrix albido-flava",
+        "Streptomyces albidoflavus (Rossi Doria 1891) Waksman and Henrici 1948 (Approved Lists 1980)",
+        "Streptomyces globisporus subsp. caucasicus"
+      ],
+      "annotations": []
+    },
+    {
+      "identifier": "NCBITaxon:58340",
+      "present": true,
+      "name": "Streptomyces lavendulae subsp. lavendulae",
+      "synonyms": [],
+      "annotations": []
+    },
+    {
+      "identifier": "NCBITaxon:469008",
+      "present": false,
+      "name": null,
+      "synonyms": [],
+      "annotations": []
+    }
+  ]
+}

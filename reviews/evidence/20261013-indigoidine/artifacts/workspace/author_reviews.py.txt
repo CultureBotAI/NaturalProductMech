@@ -1,0 +1,378 @@
+import csv
+import hashlib
+import json
+import shlex
+from datetime import datetime, timezone
+from pathlib import Path
+
+import yaml
+
+ROOT=Path(__file__).parent
+REPO=Path.cwd()
+BASE='127b18b43ac6c9ac76fd4ad878979ed8ddb0de8f'
+REPOSITORY='CultureBotAI/NaturalProductMech'
+ARCHIVE=REPO/'reviews/evidence/20261013-2mib-heme/artifacts/workspace'
+sha=lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
+now=lambda: datetime.now(timezone.utc).isoformat().replace('+00:00','Z')
+utc=lambda t:t.replace('+00:00','Z')
+sources=json.loads((ROOT/'source-audit.json').read_text())
+proteins=json.loads((ROOT/'protein-audit.json').read_text())
+raw=json.loads((ROOT/'evidence-audit.json').read_text())
+chem=json.loads((ROOT/'chemistry-audit.json').read_text())
+capture=json.loads((ROOT/'capture.json').read_text())
+baseline=json.loads((ARCHIVE/'review-campaign-checkpoint.json').read_text())
+assert len(baseline['records'])==3115
+assert {r['path'] for r in baseline['records']}=={str(p.relative_to(REPO)) for p in (REPO/'data/natural_products').rglob('*.yaml')}
+for r in baseline['records']:
+    assert sha(REPO/r['path'])==r['sha256']
+    for c in r['graph_components']:
+        assert sha(REPO/c['path'])==c['sha256']
+for r in baseline['reviews']:
+    assert sha(REPO/r['yaml'])==r['yaml_sha256']
+    assert sha(REPO/r['markdown'])==r['markdown_sha256']
+
+def owner(path,role):
+    return dict(repository=REPOSITORY,path=path,role=role)
+
+def evidence(eid,kind,reference,summary,support='partial',locator=None,path=None,accessed=None,search=None):
+    d=dict(evidence_id=eid,kind=kind,reference=reference,accessed_at=accessed or now(),support=support,summary=summary)
+    if locator:d['locator']=locator
+    if path:d['snapshot_sha256']=sha(Path(path))
+    if search:d['search_scope']=search
+    return d
+
+def rows(name):
+    return sources['tables']['data/raw/'+name]['hits']
+
+drafts=[]
+for slug in ['indigoidine-2','indigoidine']:
+    small=slug.endswith('-2')
+    inspection=json.loads((ROOT/(slug+'-inspect.log')).read_text())
+    target=inspection['targets'][0]
+    tid=target['target_id']
+    path=REPO/target['path']
+    doc=yaml.safe_load(path.read_text())
+    for i in inspection['source']['inputs']:
+        assert sha(REPO/i['path'])==i['sha256']
+    summary=('Confirmed identity blocker: BGC0002295 compound 2 is labelled indigoidine but encodes C10H9N3O3, '
+             'not canonical indigoidine C10H8N4O4. Primary biosynthesis, xref and pinned chemistry gaps remain; '
+             'one blocker, no record edits.' if small else
+             'Complete owner, five inline graphs and all 17 edges assessed; ten native CDS translations and five UniProt '
+             'mappings checked. No new confirmed defect. Primary-source, construct, xref and pinned chemistry gaps '
+             'preclude completed scientific review. No record edits.')
+    report=dict(schema_version='1.0.0',kind='record',repository=REPOSITORY,
+        title=f'Indigoidine: {"BGC0002295 constitutional conflict" if small else "CHEBI:79296 identity and five causal graphs"}',
+        started_at=next(r['started_at'] for r in capture['targets'] if r['identifier']==tid),
+        reviewer=dict(identity='Codex',kind='agent',independence='self_review',
+            independence_basis='Same assistant/thread previously curated this repository. This is a new claim-level self-review, not an independent reviewer.'),
+        skill='.claude/skills/review-yaml-record/SKILL.md',completion='partial',scientific_review=True,
+        verdict='needs_curation' if small else 'blocked',summary=summary,
+        source=inspection['source'],targets=inspection['targets'],
+        scope=dict(description='One complete owner and every referenced component, within the unchanged 3115-owner/242-component campaign. '
+            'Both indigoidine owners have zero external components; this report is not a sampled corpus verdict.',
+            selection='Exact path and identifier from the full campaign frontier; each same-label owner receives its own report.',
+            coverage='full',population_size=1,reviewed_target_ids=[tid]),
+        checks=[],evidence=[],assessments=[],findings=[],actions=[],limitations=[],notes=[])
+    ev=report['evidence']
+    assessments=report['assessments']
+    def assess(aid,area,topic,outcome,text,eids,details=None,dimensions=None):
+        d=dict(assessment_id=aid,area=area,topic=topic,outcome=outcome,summary=text,target_ids=[tid],evidence_ids=eids)
+        if details:d['details']=details
+        if dimensions:d['dimensions']=dimensions
+        assessments.append(d)
+    def check(cid,status,required,summary,command=None,exit_code=None,note=None,eids=None):
+        d=dict(check_id=cid,name=cid,status=status,required=required,summary=summary,target_ids=[tid])
+        if command:d['command']=command
+        if exit_code is not None:d['exit_code']=exit_code
+        if note:d['scope_note']=note
+        if eids:d['evidence_ids']=eids
+        report['checks'].append(d)
+    for name in ['inspect','strict']:
+        r=json.loads((ROOT/(slug+'-'+name+'.receipt.json')).read_text())
+        assert r['exit_code']==0
+        check(name,'passed',True,'Canonical input capture before assessment.' if name=='inspect' else
+              'Closed-schema validation of this owner succeeded with zero errors; not a scientific pass.',
+              shlex.join(r['command']),r['exit_code'],
+              f"Run {r['started_at']} to {r['finished_at']}; log SHA-256 {r['sha256']}.")
+    for name in ['provenance-fresh','contract-before','queue-fresh']:
+        r=json.loads((ROOT/(name+'.receipt.json')).read_text())
+        check(name,'passed',True,(ROOT/(name+'.log')).read_text().strip(),shlex.join(r['command']),r['exit_code'],
+              f"Run {r['started_at']} to {r['finished_at']}; log SHA-256 {r['log_sha256']}. Queue is a diagnostic checkpoint, not review coverage.")
+    for name in ['corpus','reproduction','labels']:
+        r=json.loads((ARCHIVE/(name+'-fresh.receipt.json')).read_text())
+        command=r.get('command')
+        check('historical-'+name,'passed',True,(ARCHIVE/(name+'-fresh.log.txt')).read_text().strip(),
+              shlex.join(command) if isinstance(command,list) else command,r['exit_code'],
+              'Historical run reused, not rerun this turn: '+json.dumps(r)+'. All 3115 owners/242 components and captured inputs rehashed unchanged. '
+              'Label reporting exit zero includes 499 mismatches and 4649 skipped adapters; it is not an all-labels pass.')
+    check('full-qc','skipped',False,'No new full QC run for these read-only reports. PR870 QC run38354190005 passed 564 tests/4 skips '
+          'and all native gates; merge commit127b18b4 is this review base. Historical CI is context, not a new scientific or local-QC pass.')
+    check('pinned-chemistry','unavailable',True,'Repository environment lacks RDKit; pinned 2026.3.5 calculation remains unavailable.',
+          ".venv/bin/python -c 'import rdkit; print(rdkit.__version__)'",note='Availability probe exited1 with ModuleNotFoundError. No pinned chemical calculation executed.')
+    check('auxiliary-chemistry','passed',False,'RDKit2024.03.5 independently reproduces both stored chemical serializations and formulae. Not the pinned native gate.',
+          '/Users/marcin/.cache/uv/archive-v0/L63k5B2U7AExer7XjnGMw/bin/python '+str(ROOT/'audit_chemistry.py'),0,
+          'Initial temporary helper used an incorrect field name and exited1; corrected to the native smiles field before this successful run. No corpus edits.', ['chemistry'])
+    check('required-sources','unavailable',True,'Required primary-source, current BGC and PubChem equivalence checks are incomplete. Access failures do not imply absent experiments.',eids=['access-limits'])
+    check('imodulondb','not_applicable',False,'No expression-module membership or transcriptomic dataset claim is asserted. '
+          'Structured UniProt/NCBI evidence is the relevant adapter for native protein identity; no iModulon absence inference is made.')
+    ev.append(evidence('owner','record_content',target['path'],
+        'Entire YAML read: identity, definitions, source concepts, every evidence item, pathway, graphs, discussions and full audit trail. '
+        f"No causal_graph_refs; {len(doc.get('causal_graphs',[]))} inline graphs. Status remains SEEDED.",'supports',path=path))
+    mibig=[x for x in rows('mibig_compounds.tsv') if x['row']['mibig_accession']==('BGC0002295' if small else 'BGC0000375')]
+    ev.append(evidence('inventory','database','data/raw/mibig_compounds.tsv',
+        'Exact parsed source rows (including minimycin as compound1 where present): '+json.dumps(mibig)+
+        '. This establishes the maintained database assertion, not live entry currentness or primary experimental support.',
+        path=REPO/'data/raw/mibig_compounds.tsv',accessed=utc(sources['accessed_at'])))
+    ev.append(evidence('chebi','authority','https://www.ebi.ac.uk/chebi/CHEBI:79296',
+        'Official entry: indigoidine, C10H8N4O4, charge0, ALDIVIWLBSDGGN-ONEGZZNKSA-N; Standard InChI ends /b4-3+. '
+        'The committed 3-star row agrees. Its occurrence names S.lavendulae taxon1914, ATCC11924 and PMID17237222. '
+        'Database identity/occurrence assertion only, not reinspection of chemical analyses.',
+        locator='Identity, formula, SMILES, Standard InChI/InChIKey and Species of Metabolite',accessed='2026-10-13T06:25:47Z'))
+    cr=next(x for x in chem['records'] if x['slug']==slug)
+    ev.append(evidence('chemistry','validation','RDKit 2024.03.5; '+str(ROOT/'chemistry-audit.json'),
+        'Fresh auxiliary calculation, not pinned toolkit: '+json.dumps(cr),
+        path=ROOT/'chemistry-audit.json',accessed=utc(chem['accessed_at'])))
+    ev.append(evidence('local-sources','database','data/raw/chebi_structures.tsv; data/raw/npclassifier.tsv; data/natural_products/PATHS.tsv',
+        'ChEBI rows: '+json.dumps(rows('chebi_structures.tsv'))+'. NPClassifier rows: '+json.dumps(rows('npclassifier.tsv'))+
+        '. Owners occupying the two exact keys: '+json.dumps(sources['occupied_keys'])+
+        '. The ZZTNWZPJOCVMIN key has no eligible ChEBI row in this complete inventory search.',
+        search='All rows of the named TSV files and every owner YAML via Path.rglob; gitignored files included. Exact keys, label and source IDs searched.',
+        accessed=utc(sources['accessed_at'])))
+    ev.append(evidence('taxonomy','database','data/raw/corpus_taxa.obo',
+        'Pinned taxonomy parsed with pronto: '+json.dumps(sources['taxa'])+
+        '. Species/strain distinctions from native sequence source qualifiers are assessed separately; missing469008 in this bounded OBO is not absence from NCBI.',
+        path=REPO/'data/raw/corpus_taxa.obo',accessed=utc(sources['accessed_at'])))
+    ev.append(evidence('ownership','record_content','docs/CURATION.md',
+        'REPLACE_WITH_CHEBI is implemented only for an eligible unoccupied destination, and does not merge owners. '
+        'ALDIVIWLBSDGGN-ONEGZZNKSA-N is already occupied by CHEBI:79296. No applicable row in either implemented correction table. '
+        'Locus overrides alter evidence methods, not molecule identity. decisions.tsv is reserved/unimplemented.',
+        'supports',path=REPO/'docs/CURATION.md',
+        search='All curation/**/*.tsv parsed with csv, including ignored files; both implemented correction tables have zero indigoidine/BGC0002295/BGC0000375 hits.'))
+    limit=('DOI10.1016/j.isci.2019.11.037, MIBiG BGC0002295 and PubChem PUG request for CIDs193349/5492261 '
+           'returned tool access failures during the preceding indigoidine research at05:49:21Z. No alternate paper routes retried. '
+           'No primary experimental conclusions drawn from those failures.' if small else
+           'Inherited full-text stops retained for DOI10.1007/s10295-012-1207-9, 10.1074/jbc.M611319200, '
+           '10.1007/s10295-015-1642-5, 10.1093/femsle/fnx155, 10.1016/j.jbiosc.2017.04.020 and subscription '
+           '10.1007/s12223-010-0018-5. The already cached J1074 author PDF predates the publisher stop and was re-read; '
+           'no alternate retrievals performed. Cached raw FRI-5 abstract re-read. Earlier GlnA/sc-IndB/CCM2010 curator '
+           'assessments are leads only, not primary text reinspection. Current PubChem5492261 equivalence and exact live '
+           'MIBiG0000375 page/GBK status remain unverified. Current UniProtK4MP98 was independently accessible.')
+    ev.append(evidence('access-limits','search','Inherited indigoidine access ledger and this session evidence checks',limit,
+        'unknown',search='Exact named sources only; previously stopped/challenged papers were not retried via alternate routes. '
+        'The campaign access ledger has162 inherited stops plus aliases, SHA256810ac00abcf3732108d1fecc011918d748813874154203b090bd63a8be55a601.'))
+    assess('serialization','consistency','Chemical serialization versus biological identity','supported',
+        f"Both this SMILES and InChI independently reproduce {cr['recorded_key']} and {cr['smiles_formula']}, charge0. "
+        'No tetrahedral stereocentres; one E double bond encoded. This limited consistency result cannot prove that the label or biosynthetic product is correct.',
+        ['chemistry','owner'])
+    assess('classification','consistency','Computed classification, asserted cluster class and natural origin','supported',
+        'The exact-key NPClassifier2026-09-07 output matches ALKALOIDS filing, '+
+        ('Tryptophan alkaloids' if small else 'Ornithine alkaloids')+
+        ', with is_glycoside false. '+('NRPS and SACCHARIDE' if small else 'NRPS')+
+        ' are separately retained source BGC classes, not computed chemical truth. NATURAL_PRODUCT records asserted biological origin; '
+        'it does not assert that every experimental production system is natural rather than engineered.', ['owner','local-sources','inventory'],
+        dimensions=[dict(name='filing',value='ALKALOIDS',definition='Computed filing axis, not asserted biosynthetic chemistry',evidence_ids=['local-sources']),
+                    dict(name='origin',value='NATURAL_PRODUCT',definition='Source-asserted origin, distinct from experimental host engineering',evidence_ids=['inventory']),
+                    dict(name='taxonomy',value='ACTINOBACTERIAL',definition='Producer taxon grouping, not a strain identifier',evidence_ids=['owner','taxonomy'])])
+    assess('ownership','ownership','Generated and maintained boundaries','supported',
+        'Future source corrections belong to the maintained inventory/extractor/seeder or an implemented tested correction path. '
+        'No generated owner/page patch, source correction, history event or status promotion was made.', ['ownership','owner'])
+    assess('audit','provenance','Native status and complete history','supported',
+        'SEEDED is retained. '+('Two seeding events describe database-derived content.' if small else
+        'The full history records separate protein/graph additions, knowledge gaps and label/discussion repairs with LLM assistance disclosed.')+
+        ' A validated review is not scientific status promotion.', ['owner'])
+    absent=[k for k in ['bioactivities','bioactivity_summary','molecular_targets','related_records','clinical_status','datasets',
+        'parent_compounds','congener_of'] if not doc.get(k)]
+    assess('optional-fields','completeness','Optional activity, equivalence and dataset assertions','not_applicable',
+        'Full owner/resolved view contains no assertions in: '+', '.join(absent)+
+        '. Missing optional content is not a defect. No extract activity, clinical status, spectrum or cross-corpus equivalence inferred.', ['owner'])
+    if small:
+        assess('identity','identity','Label and constitutional formula','concern',
+            'The named indigoidine has C10H9N3O3 and keyZZTNWZPJOCVMIN-AATRIKPKSA-N; canonical indigoidine is C10H8N4O4 '
+            'and keyALDIVIWLBSDGGN-ONEGZZNKSA-N. The N/O counts differ, excluding a mere stereoisomer, protonation or tautomer explanation. '
+            'The database-source label is faithfully imported but chemically conflicts with the asserted identity.', ['owner','inventory','chebi','chemistry'])
+        assess('grounding-xrefs','grounding','Minted rationale and PubChem193349','unknown',
+            'MINTED matches absence of an exact-key eligible ChEBI structure. That explains the mint, not the indigoidine label. '
+            'PubChem193349 was not independently verified; no exact CID correction or equivalence with CHEBI:79296 is asserted.', ['owner','local-sources','access-limits'])
+        assess('producer-bgc','evidence','BGC0002295 compound2 and S.hygroscopicus producer grade','unknown',
+            'Raw row and owner agree on version3 active, S.hygroscopicus tax1912, MK122964.1:5879..15193, '
+            'Heterologous expression plus Knock-out studies, BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED. '
+            'The DOI is correctly typed DATABASE_ASSERTION at compound-evidence level. The same entry contains minimycin as compound1. '
+            'Whether experiments support indigoidine and this exact taxon/structure is unverified; shared entry methods are not automatically transferred between compounds. '
+            'No provisional grade defect is invented from inability to inspect the paper.', ['owner','inventory','taxonomy','access-limits'])
+        assess('no-mechanism','completeness','Occurrences, pathway, graphs and discussions','not_applicable',
+            'No occurrences, pathway, graphs, graph refs or discussions occur in the complete owner. A missing optional graph is not a required-field defect. '
+            'Do not copy the canonical owner graphs by label.', ['owner','local-sources'])
+        owners=[owner('data/raw/mibig_compounds.tsv','Exact BGC0002295 compound2 assertion'),
+            owner('scripts/extract_mibig.py','Upstream structure extraction'),owner('scripts/seed_from_sources.py','Identity harmonization and generated emission'),
+            owner('data/natural_products/PATHS.tsv','Explicit identity/path migration after adjudication')]
+        report['findings']=[dict(finding_id='F1',issue_key='mibig-BGC0002295-compound-2-wrong-constitution',
+            category='identity',severity='blocker',status='open',certainty='confirmed',
+            title='Indigoidine label denotes a constitution with one fewer nitrogen and oxygen',
+            description='The maintained row and owner encode C10H9N3O3 rather than canonical indigoidine C10H8N4O4. '
+                'The serialization is internally consistent, so strict validation and reproduction can pass despite wrong identity. '
+                'This observation does not identify the intended PubChem entry or prove which experimental claims belong to a corrected owner.',
+            target_ids=[tid],field_paths=['label','chemical_structure','source_concepts[0]'],
+            evidence_ids=['owner','inventory','chebi','chemistry','local-sources'],owner_paths=owners,
+            rule_id='docs/HARMONIZATION.md: one record per individual structure; review-checklist Identity/Structure',
+            native_severity='blocker',normalization_reason='Constitutional conflict makes the labelled record denote the wrong molecule.')]
+        report['actions'].append(dict(action_id='adjudicate-identity',description='Inspect authorized primary or authoritative product evidence for BGC0002295 compound2, '
+            'then correct the maintained extraction/harmonization or undertake a separately tested identity migration. '
+            'The narrow REPLACE_WITH_CHEBI route is inapplicable because CHEBI:79296 already owns the destination key. '
+            'Do not merge by name, transfer all BGC claims, patch the generated YAML, or use the unconsumed decisions.tsv.',
+            finding_ids=['F1'],target_ids=[tid],owner_paths=owners,generator='scripts/seed_from_sources.py',acceptance_checks=[
+                'Primary/authority evidence resolves exact product structure, stereo and every retained xref, with source-row digests.',
+                'Re-audit indigoidine versus minimycin locus and producer claims separately; retain only applicable claims.',
+                'An explicit collision-aware migration preserves applicable canonical graphs/history, handles PATHS and components, and does not silently overwrite occupied owners.',
+                'Pinned chemistry, dry run/canary, guarded writers, strict validation, verify-reproduction, verify-corpus, provenance, render-check and full QC pass.']))
+    else:
+        ev.append(evidence('occurrences','database','data/raw/chebi_origins.tsv; data/raw/lotus_occurrences.tsv',
+            'Parsed exact rows: '+json.dumps(rows('chebi_origins.tsv')+rows('lotus_occurrences.tsv'))+
+            '. ChEBI strain comment remains in detection_context; neither occurrence was promoted to biosynthetic proof.',accessed=utc(sources['accessed_at'])))
+        ev.append(evidence('rhea','authority','https://www.rhea-db.org/rhea/81499',
+            'Overall reaction: 2FMN+2L-glutamine+2ATP+O2 -> indigoidine+2FMNH2+2AMP+2diphosphate+2H2O. '
+            'Participant IDs 58210,58359,30616,15379 -> 79296,57618,456215,33019,15377 match the pathway; forward81500, EC4.3.3.9. '
+            'Its reprinted Takahashi2007 abstract describes phosphopantetheinylated BpsA and L-Gln. This is database/reprinted-abstract context, '
+            'not a new primary full-text review or proof of identical microscopic chemistry in every synthase.',
+            accessed='2026-10-13T06:25:47Z',locator='Reaction, participant identifiers, direction mapping and publication annotation'))
+        ev.append(evidence('glutamine','authority','https://www.ebi.ac.uk/chebi/CHEBI:58359',
+            'Canonical name L-glutamine zwitterion, formulaC5H10N2O3, charge0; UniProt Name is L-glutamine. '
+            'Thus the first graph short label alone is not a confirmed wrong-identifier finding; the second graph uses the canonical name.',
+            accessed='2026-10-13T06:25:47Z',locator='Identity and UniProt Name'))
+        sc=raw['sc_indc']
+        ev.append(evidence('sc-indc','database','https://rest.uniprot.org/uniprotkb/K4MP98.json',
+            'Fresh official HTTP200 at2026-10-13T06:35:39Z, release2026_03, entry50/sequence1; indC, tax42881, EMBLJX499187/AFV27434.1. '
+            'All1377aa equal the complete4134nt JX499187.1:1630..5763 code11 translation. Protein SHA256'+sc['sequence_sha256']+
+            '. Native source is ATCC49982. Sequence identity is not experimental construct equivalence.',
+            'supports',path=ROOT/'K4MP98.json',accessed=utc(raw['accessed_at'])))
+        concise=[]
+        for row in proteins['cds']:
+            concise.append({k:row.get(k) for k in ['protein','nucleotide','location','nt','aa','start_codon','stop_codon',
+                'table','source','protein_sha256','dna_sha256','genpept_matches','uniprot','uniprot_sequence_matches','genpept_coded_by']})
+        ev.append(evidence('native-sequences','database','Official NCBI/UniProt cached records, independently retranslated',
+            'Ten exact native CDS entries; zero-based half-open local locations below (GenPept coded_by is one-based; GlnA files are1410nt extracted regions). '
+            'All complete code11 translations equal annotated proteins; nine available GenPept sequences also match. '+json.dumps(concise)+
+            '. Four cached UniProt mappings match: Q1MWN4 entry88/seq1, K4MZR0 entry34/seq1, A0A1Q2SRM5 entry36/seq1, '
+            'A0A2K8PVS5 entry32/seq1. The fresh fifth mapping is separately recorded. Native sequence identity does not establish assay genotype.',
+            'supports',path=ROOT/'protein-audit.json',accessed=utc(proteins['accessed_at'])))
+        ev.append(evidence('source-integrity','validation','Cached-source receipts and source bytes',
+            'All27 cached artifacts match their download-receipt SHA256 and byte counts. Original source URLs and hashes: '+json.dumps(raw['artifacts'])+
+            '. Fresh PyMuPDF extraction matches cached normalized text for J1074 all8pages and CCM SI pagesS5,S6,S7,S10. '
+            'The temporary checker first treated SI filenames as zero-based; corrected to the printed one-based numbering before success. '
+            'Prior curator audit conclusions were not substituted for raw sources.',
+            'supports',path=ROOT/'evidence-audit.json',accessed=utc(raw['accessed_at'])))
+        ev.append(evidence('bitok2017','primary_source','DOI:10.1093/femsle/fnx155',
+            'Cached author PDF fully read; Figure1 visually inspected. Methods identify pCDF-duet::bpsA -> pIJ10257 and CRISPR deletion '
+            'of xnr_5716 in J1074. Results report loss of pigment and restoration by native PPTase reintroduced in trans at phiC31 under ermE*. '
+            'Figure1C bottom depicts eDNA clone rescue, not that native rescue. Supplement/complete engineered alleles were not available.',
+            'supports',locator='Methods pp2-3, Figure1 p3, Results p4',path=Path('/private/tmp/npmech-j1074-20261011-OOMBhi/bitok2017.pdf')))
+        ev.append(evidence('fri5','primary_source','PMID:28533156; DOI:10.1016/j.jbiosc.2017.04.020',
+            'Cached raw PubMed XML abstract and identifiers inspected. Reports FRI-5 lbpA expression in S.avermitilis SUKA22 yields indigoidine '
+            'and L-glutamine feeding enhances production. Supports those conditional observations, not isolated LbpA catalysis or exact construct sequence. '
+            'Full-text access stop retained.',locator='ArticleTitle, AbstractText and ArticleIdList',
+            path=Path('/private/tmp/npmech-pptase-cohort-20261011-OtALIz/PMID28533156.xml')))
+        ev.append(evidence('ccm2026','primary_source','DOI:10.1007/s00253-026-13908-9',
+            'Cached publisher HTML Methods and relevant Results, Figure1 and SI TableS3/FigureS1 inspected; mainFigure1 and SI S7 viewed. '
+            'pCosSA19 and BpsAkasDir/Rev introduce upstream AprR-kasOp*; four mutants and WT Southern controls support locus intervention. '
+            'DMSO pigment extracts after22h in Bennet measured as OD613/mg wet cells, not mass concentration or enzyme rate. '
+            'Authors note possible neighboring transcriptional effects. SI S10 FigureS5 concerns other PKS/regulator insertions, not BpsA allele sequencing. '
+            'No inference that all87 supplement pages were reviewed.',locator='Indigoidine methods/results; Figure1; SI S5-S7 and S10',
+            path=Path('/private/tmp/npmech-pptase-cohort-20261011-OtALIz/ccm3239-2026-primary.html')))
+        ev.append(evidence('sequence-distinctions','validation','Independent reference/primer comparisons',
+            'FRI5 LbpA and ATCC11924 BpsA each1282aa but differ at22positions. Historical ACK77757.1 and current ACK77757.2 '
+            'are1283aa with A385T; coding changes15A>G,1152A>G,1153G>A; only1153 changes a residue. '
+            'Two native GlnA references share1410nt/469aa; C6EF31 cached record is Inactive/DELETED. '
+            'J1074 spacer hits CP004370.1:6439809..6439828 in reciprocal orientations; screening primers flank the locus at6438093..6438112+ '
+            'and6441140..6441157-. BpsA reporter forward20nt suffix matches AB240063.1:686..705; reverse has no exact suffix>=15nt '
+            'on either strand of this complete deposit. Both CCM cassette primers have unique40nt homology prefixes in '
+            'KJ396772.2 and CP024986.1 at the upstream/start region. This run did not independently recheck KJ396772.1 or the reported GlnA primers.',
+            'supports',path=ROOT/'protein-audit.json',accessed=utc(proteins['accessed_at']),
+            search='Exact both-strand searches across full named deposited DNA sequences; ignored cached files explicitly read. Not an exhaustive search of other strains/constructs.'))
+        check('protein-source-audit','passed',False,'Ten CDS translations, four cached and one fresh UniProt sequence mapping verified; all27 cached source receipts match.',
+            '/Users/marcin/.cache/uv/archive-v0/_rI3ZpIXzy86ptcWte4iX/bin/python '+str(ROOT/'audit_proteins.py'),0,eids=['native-sequences','source-integrity','sc-indc'])
+        assess('identity','identity','Exact CHEBI:79296 molecular identity','supported',
+            'Label, definition, MIBiG structure and exact3-star ChEBI key agree with inspected authority C10H8N4O4/ALDIVIWLBSDGGN-ONEGZZNKSA-N. '
+            'The other indigoidine-labelled owner has a different constitution and is not a source of transferable claims.', ['owner','chebi','local-sources','chemistry'])
+        assess('stereo-xref','grounding','Stereo resolution and PubChem5492261','unknown',
+            'E geometry is encoded consistently with the database structure; source stereo_complete is not new experimental stereochemical proof. '
+            'PubChem5492261 has not been independently verified, so full equivalence sign-off remains incomplete.', ['owner','chemistry','access-limits'])
+        assess('occurrences','evidence','Two source occurrence assertions','unknown',
+            'ChEBI occurrence tax1914 retains ATCC11924 and PMID17237222. LOTUS tax42881/Q22287099 retains the2012 DOI; '
+            'case variation in the DOI is not a different article. Pinned rows match, but fresh primary occurrence support and live Wikidata identity '
+            'were not independently rechecked. No producer upgrade from occurrence.', ['owner','occurrences','chebi','taxonomy','access-limits'])
+        assess('producer-bgc','evidence','MIBiG0000375 producer and cluster','unknown',
+            'Version5 active/NRPS/JX499187.1 and tax42881 agree with the inventory. No locus evidence methods are asserted; '
+            'SOURCE_ASSERTION/CLUSTER_UNSTATED correctly preserve the imported tier. Native deposit identifies ATCC49982, '
+            'but the paper and live BGC were not fully reinspected. No upgrade from sequence correspondence.', ['owner','inventory','native-sequences','access-limits'])
+        assess('pathway','graph','One overall Sc-IndC pathway step','unknown',
+            'All nine distinct participants and Rhea81499/81500 direction are database-consistent; K4MP98 precisely matches the native4134nt CDS. '
+            'Primary Sc-IndC chemistry, microscopic steps and actual construct remain unverified. Sc-IndB/GlnA are not represented as additional ordered catalysts.',
+            ['owner','rhea','sc-indc','access-limits'])
+        assess('native-grounding','grounding','Native proteins are not experimental constructs','supported',
+            'Native mappings and strain qualifiers checked independently; historical and current CCM3239 alleles remain distinct. '
+            'Automated Sc-IndB PtkA and CCM3239 Tyrocidine synthase3 names are not adopted as measured functions. '
+            'BpsA native deposit tax58340 has no strain qualifier; ATCC11924 is literature/reference attribution, not added sequence-source metadata.',
+            ['native-sequences','sequence-distinctions','sc-indc','owner'])
+        assess('labels','nomenclature','Taxon and glutamine names','supported',
+            'Pinned taxonomy supports the recorded species/subspecies mappings. Current J1074 source is S.albidoflavus tax1886; '
+            'the paper name S.albus is retained historically. CHEBI58359 legitimately has UniProt name L-glutamine, so that short label alone is not a new defect.',
+            ['taxonomy','native-sequences','glutamine','owner'])
+        edge_notes=[
+            ('unknown','Overall L-glutamine conversion is Rhea-consistent and Sc-IndC native identity is exact; primary chemistry and construct not newly verified.',['rhea','sc-indc','access-limits']),
+            ('unknown','Product direction agrees with native indC annotation and canonical chemistry; heterologous CH999/BAP1 experiment not fully reinspected.',['sc-indc','chebi','access-limits']),
+            ('unknown','Exact Sc-IndB reference reproduced, but conditional BAP1 yield effect needs primary reinspection. Record explicitly avoids isolated catalysis, kinase function, physical complex and native essentiality.',['native-sequences','access-limits']),
+            ('unknown','GlnA yield effect remains primary-unverified this review. Native469aa references agree and deleted C6EF31 is not used as active ID; node stays REVIEW_NEEDED, no accession or direct flux claim.',['native-sequences','sequence-distinctions','access-limits']),
+            ('unknown','Native Q1MWN4/BAE93896.1 correspondence reproduced; Rhea reprints phosphopantetheinylation-dependent L-Gln abstract. Original full text, construct and chemical data not newly verified.',['native-sequences','rhea','access-limits']),
+            ('unknown','Overall indigoidine product and phosphopantetheinylation qualification are database/abstract consistent; do not convert into apoenzyme or native knockout proof.',['rhea','chebi','access-limits']),
+            ('supported','AGI92022.1 identifies the native XNR_5716 locus targeted in the paper; native translation and protospacer/screen-primer mapping agree, without proving the final engineered allele.',['bitok2017','native-sequences','sequence-distinctions']),
+            ('supported','Paper reports pigment loss after deletion in the engineered BpsA reporter host. No native indigoidine biosynthesis or isolated catalysis is implied.',['bitok2017']),
+            ('supported','Paper Results identify native PPTase reintroduction in trans at phiC31/ermE*; native reference correspondence is not a complete rescue-construct sequence.',['bitok2017','native-sequences']),
+            ('supported','Results support pigment restoration by native PPTase rescue. Figure1C bottom independently depicts eDNA rescue and is not misused as the native rescue panel.',['bitok2017']),
+            ('supported','FRI-5 native A0A1Q2SRM5/BAW81991.1 matches LC209815.1; primary abstract links lbpA to expression in SUKA22. Reference correspondence only, not sequence-verified expression construct.',['fri5','native-sequences']),
+            ('supported','Primary abstract reports pigment after heterologous lbpA expression in SUKA22; full methods and chemical analysis remain uninspected.',['fri5']),
+            ('supported','Primary abstract supports increased production under L-glutamine feeding, not purified substrate use, isotope incorporation, direct flux or a quantitative yield.',['fri5']),
+            ('unknown','ACK77757.1/FJ479754.1 mapping and historicalAla385 verified; original2010 deletion abstract/full methods not reinspected. No exact experimental parental allele asserted.',['native-sequences','sequence-distinctions','access-limits']),
+            ('unknown','Reported2010 pigment-loss claim remains at its explicitly limited abstract tier; original chemical characterization, conditions and deletion boundaries not reinspected.',['owner','access-limits']),
+            ('supported','2026 methods/figure/SI support upstream cassette intervention. Current reference native sequence and40nt primer homology match; full mutant/residue385 allele unresolved.',['ccm2026','native-sequences','sequence-distinctions']),
+            ('supported','2026 readout increased after upstream intervention; OD613/mg wet cells at22h, not purified rate or mass concentration. Neighboring transcriptional effects remain possible.',['ccm2026']),
+        ]
+        edges=[(g,i,e) for g in doc['causal_graphs'] for i,e in enumerate(g['edges'])]
+        assert len(edges)==len(edge_notes)==17
+        for n,((g,i,e),(outcome,text,eids)) in enumerate(zip(edges,edge_notes),1):
+            assess(f'edge-{n:02d}','graph',f"{g['graph_id']}.edges[{i}]: {e['subject']} -> {e['object']}",outcome,text,
+                ['owner']+eids,details='Recorded predicate: '+e['predicate'])
+        assess('discussions','completeness','Three open construct/allele questions','supported',
+            'All three stable curator discussions attach to the intended graphs. The GlnA1410nt native reference does not resolve the reported1284bp construct; '
+            'the latter primary statement was not reverified here. The J1074 reverse-primer mismatch is reproduced but does not prove an amino-acid change. '
+            'CCM3239 Ala385/Thr385 native differences do not identify parental or mutant genotypes. Keeping these questions open is justified.',
+            ['owner','native-sequences','sequence-distinctions','bitok2017','ccm2026','access-limits'])
+    report['actions'].append(dict(action_id='complete-evidence-review',description='Complete the remaining exact-source checks using authorized inspectable material; '
+        'retain all inherited access stops and save an immutable successor review. This action is proposed evidence work, not completed curation.',
+        finding_ids=[],target_ids=[tid],ownership_note='Read-only evidence follow-up; any source/record mutation requires separate authorization.',
+        acceptance_checks=['Verify current versioned BGC, all chemical xrefs and cited primary compound/producer assertions at exact strain and structure scope.',
+            'Run the pinned RDKit consistency calculation; auxiliary toolkit agreement is not a substitute.']+
+            ([] if small else ['Reinspect Sc-IndC/Sc-IndB, BpsA, GlnA and2010CCM primary evidence; check exact constructs, missing SI and chemical-analysis data.',
+            'Retain per-edge evidence tiers; resolve the three existing discussions only with complete experimental sequence evidence.'])))
+    report['limitations']=[
+        'Partial scientific review, not a pass. Required primary/currentness/equivalence and pinned-chemistry checks remain incomplete.',
+        'Full goal remains3115 owners plus242 components. This report covers one owner; no sampling or reduced success criterion.',
+        'No record, component, inventory, generated page, history event or scientific status changed. No GitHub mutation or publication in this goal continuation.',
+        'Self-review by the same assistant/thread; no independent reviewer is claimed.',
+        'Cached official records establish pinned sequence/source assertions, not full live freshness or experimental construct identity.',
+        'Raw temporary research artifacts may expire. Essential source identifiers, hashes, exact mappings, findings and check results are embedded in this immutable report; '
+        'full raw-source archival is not claimed.', limit]
+    report['notes']=[
+        'Only the new YAML/Markdown review bundle is written to the repository. Diagnostics and campaign checkpoint are temporary read-only-work outputs.',
+        'Active profile/CLAUDE.md override the older checklist reference to decisions.tsv: it is reserved and unimplemented.',
+        'The corpus source hash revalidation and deterministic gates are not scientific review. No unassessed owner is counted as reviewed.']
+    finish=now()
+    report['finished_at']=finish
+    report['review_id']=datetime.fromisoformat(finish.replace('Z','+00:00')).strftime('%Y%m%dT%H%M%SZ')+'-'+slug
+    # Remove shared object identities before dumping; canonical contract forbids aliases.
+    report=json.loads(json.dumps(report))
+    draft=ROOT/(report['review_id']+'.yaml')
+    with draft.open('x') as stream:
+        yaml.safe_dump(report,stream,sort_keys=False,allow_unicode=False,width=90)
+    drafts.append(str(draft))
+with (ROOT/'drafts.json').open('x') as stream:
+    json.dump(drafts,stream,indent=2)
+print(json.dumps(drafts,indent=2))
