@@ -82,7 +82,6 @@ occurrences:
 bgc_class:
 - OTHER
 xrefs:
-- pubchem:197680
 - npatlas:NPA024673
 producer_taxon_groups:
 - OTHER_BACTERIAL
@@ -99,6 +98,15 @@ producer_organisms:
   - reference: PMID:14617658
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000946 entry version 5; citation taken from the entry level
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB082123.1
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: WP1. AB082123.1 names strain WP1. This is the deposited
+      locus strain, not AQ 3354 from the separate ChEBI occurrence. No taxon or evidence
+      grade changes. See issue #933. Taxon identity and evidence grade are unchanged;
+      this is not a species-wide experiment. MIBiG source row BGC0000946:1; SHA256
+      2a6d88d4055ff04c4496c977d1bc1af425c5f12c860c7c85a591c681734cfe7c. Curator: codex;
+      date: 2026-10-13.'
+  strain: WP1
 - taxon_id: NCBITaxon:1283330
   taxon_label: Azotobacter vinelandii CA
   evidence_basis: SOURCE_ASSERTION
@@ -108,10 +116,23 @@ producer_organisms:
   notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
     this field grades the taxon claim, which is a different question.'
   evidence:
-  - reference: DOI:10.1021/ic9016883
+  - reference: PMID:26452553
     evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0002527 entry version 2; citation taken from the compound bioactivity
-      level
+    notes: MIBiG BGC0002527 entry version 2; claim-specific citation selected through
+      a reviewed producer_reference correction. This remains a database assertion,
+      not independently graded experimental evidence.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002527.2/annotations.json
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Citation routing only. The pinned entry places DOI:10.1021/ic9016883 only
+      under compound bioactivity and PMID:26452553 at entry level. Route the entry
+      reference to the CA producer and CP005094.1 locus; preserve the bioactivity
+      citation in its original source context. The 2016 abstract concerns the Azotobacter
+      chelome, but full-text experimental attribution remains incomplete. No evidence
+      grade is upgraded or exact coordinate experiment asserted. See issue #931. Original
+      imported citation DOI:10.1021/ic9016883 (COMPOUND_BIOACTIVITY) remains in the
+      raw inventory, not as support for this claim. MIBiG source row BGC0002527:1;
+      SHA256 3be82cba240a164478055eac8f68fd1cceac0f615451f6b31133d121b58a73a1. Curator:
+      codex; date: 2026-10-13. Taxon, locus, chemistry and evidence grades are unchanged.'
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0000946
   entry_version: '5'
@@ -132,10 +153,23 @@ biosynthetic_gene_clusters:
   organism_taxon_id: NCBITaxon:1283330
   organism_label: Azotobacter vinelandii CA
   evidence:
-  - reference: DOI:10.1021/ic9016883
+  - reference: PMID:26452553
     evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0002527 entry version 2; citation taken from the compound bioactivity
-      level
+    notes: MIBiG BGC0002527 entry version 2; claim-specific citation selected through
+      a reviewed locus_reference correction. This remains a database assertion, not
+      independently graded experimental evidence.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002527.2/annotations.json
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Citation routing only. The pinned entry places DOI:10.1021/ic9016883 only
+      under compound bioactivity and PMID:26452553 at entry level. Route the entry
+      reference to the CA producer and CP005094.1 locus; preserve the bioactivity
+      citation in its original source context. The 2016 abstract concerns the Azotobacter
+      chelome, but full-text experimental attribution remains incomplete. No evidence
+      grade is upgraded or exact coordinate experiment asserted. See issue #931. Original
+      imported citation DOI:10.1021/ic9016883 (COMPOUND_BIOACTIVITY) remains in the
+      raw inventory, not as support for this claim. MIBiG source row BGC0002527:1;
+      SHA256 3be82cba240a164478055eac8f68fd1cceac0f615451f6b31133d121b58a73a1. Curator:
+      codex; date: 2026-10-13. Taxon, locus, chemistry and evidence grades are unchanged.'
   genome_accession: genbank:CP005094.1
   locus_from: 876779
   locus_to: 886792
@@ -161,12 +195,64 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 discussions:
+- discussion_id: source-xref-exclusion-BGC0000946-1-pubchem-197680
+  kind: CONTROVERSY
+  status: RESOLVED
+  prompt: Does the imported pubchem:197680 identify this exact structure?
+  resolution_note: 'MIBiG source row BGC0000946:1 asserts pubchem:197680; the raw
+    inventory is unchanged. This xref is withheld from exact equivalence. PubChem
+    CID197680 encodes FPHRKFJYHKRDFJ-LWYCVJHGSA-N with four free carboxylic acids
+    and no ester, not this IGQXNKDXMPSELX-BIAKFKOBSA-N citrate-ethanolamine ester.
+    Equal formula and mass do not establish exact equivalence. The same CID remains
+    exact for the separate BGC0000947 graph, whose biological identity is unresolved
+    in #929. Retain NPA024673 without inferring equivalence or exclusion from denied
+    access. No chemistry or organism claim is transferred. See issue #930. Source
+    row SHA256 2a6d88d4055ff04c4496c977d1bc1af425c5f12c860c7c85a591c681734cfe7c. Curator:
+    codex; date: 2026-10-13.'
+  evidence:
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/197680
+    evidence_source: database structure; curator interpretation
+    notes: 'MIBiG source row BGC0000946:1 asserts pubchem:197680; the raw inventory
+      is unchanged. This xref is withheld from exact equivalence. PubChem CID197680
+      encodes FPHRKFJYHKRDFJ-LWYCVJHGSA-N with four free carboxylic acids and no ester,
+      not this IGQXNKDXMPSELX-BIAKFKOBSA-N citrate-ethanolamine ester. Equal formula
+      and mass do not establish exact equivalence. The same CID remains exact for
+      the separate BGC0000947 graph, whose biological identity is unresolved in #929.
+      Retain NPA024673 without inferring equivalence or exclusion from denied access.
+      No chemistry or organism claim is transferred. See issue #930. Source row SHA256
+      2a6d88d4055ff04c4496c977d1bc1af425c5f12c860c7c85a591c681734cfe7c. Curator: codex;
+      date: 2026-10-13.'
 - discussion_id: shared-structure
   kind: CURATION_TODO
   status: OPEN
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000946, BGC0002527.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+- discussion_id: curator-vibrioferrin-indirect-origin
+  kind: CURATION_TODO
+  status: OPEN
+  posed_by: codex
+  prompt: Which primary experiment supports the ChEBI Vibrio alginolyticus occurrence?
+  rationale: ChEBI pairs V. alginolyticus with PMID:22146715. That paper mentions
+    native Vibrio sources as prior literature, but its characterized experimental
+    product comes from E. coli expressing marine sediment clone MG93-1. The donor
+    taxon is not established by sequence homology. The occurrence remains a faithful
+    DATABASE_ASSERTION, not a direct alginolyticus detection experiment in that paper.
+    Retain the upstream pair and trace the native isolation or biosynthesis evidence;
+    do not delete the occurrence from this indirect citation alone, replace its taxon
+    with E. coli, or infer an identified environmental donor.
+  evidence:
+  - reference: PMID:22146715
+    evidence_source: full_text
+    explanation: 2011 metagenomic expression study, Figure 1 and Figure 3/Table 1;
+      native taxa are prior-literature context, not the experimentally identified
+      donor.
+  - reference: https://github.com/CultureBotAI/NaturalProductMech/issues/932
+    explanation: Open scientific adjudication; a visible qualification is not resolution.
+  - reference: https://www.ebi.ac.uk/chebi/84585
+    evidence_source: database
+    explanation: Upstream origin pairing is preserved, not asserted as independent
+      experimental verification.
 curation_history:
 - timestamp: '2026-09-10T05:54:07Z'
   curator: seed_from_sources
@@ -180,3 +266,14 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T19:56:09Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T19:57:07Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add a cited OPEN vibrioferrin qualification. Preserve chemistry, organism
+    assertions, evidence grades and SEEDED status; no identity migration or occurrence
+    reassignment.
+  llm_assisted: true

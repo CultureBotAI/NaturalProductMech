@@ -111,6 +111,18 @@ producer_organisms:
   - reference: PMID:17593352
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000947 entry version 5; citation taken from the entry level
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ201184.2
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: MVPO1. DQ201184.2 spells the strain MVPO1 (letter O);
+      the PMID:17593352 publisher abstract at DOI:10.1007/s00203-007-0261-6 spells
+      it MVP01 (zero). Preserve the deposited literal and the unresolved spelling
+      discrepancy, not a silent normalization or a claim of two different strains.
+      This qualifies the source locus only; exact product identity remains unresolved
+      in #929. No evidence grade changes. See issue #933. Taxon identity and evidence
+      grade are unchanged; this is not a species-wide experiment. MIBiG source row
+      BGC0000947:1; SHA256 c1452d9f35f0197165f3205d6bb9cfa300df22c601e3f524c6df8dbf48bedd3a.
+      Curator: codex; date: 2026-10-13.'
+  strain: MVPO1
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0000947
   entry_version: '5'
@@ -135,6 +147,38 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+discussions:
+- discussion_id: curator-vibrioferrin-constitution
+  kind: CURATION_TODO
+  status: OPEN
+  posed_by: codex
+  prompt: Does the imported BGC0000947 constitution identify the experimentally established
+    vibrioferrin product?
+  rationale: The stored graph has four free carboxylic acids and no ester. The 1994
+    structure-elucidation abstract and the inspected 2011 metagenomic product (Figure
+    1 and Figure 3/Table 1) instead support a citrate-ethanolamine ester. Agreement
+    with PubChem197680 and MIBiG0947 does not resolve the biological assignment. The
+    2011 E. coli expression experiment does not establish the exact alginolyticus
+    product; the 2007 full text requires subscription and was not inspected. Preserve
+    both existing owners and all seven LOTUS assertions pending individual source
+    adjudication. Do not merge into CHEBI:84585, assign replacement stereochemistry
+    or transfer organism claims automatically.
+  evidence:
+  - reference: PMID:22146715
+    evidence_source: full_text
+    explanation: 2011 metagenomic expression study, Figure 1 and Figure 3/Table 1;
+      native taxa are prior-literature context, not the experimentally identified
+      donor.
+  - reference: https://github.com/CultureBotAI/NaturalProductMech/issues/929
+    explanation: Open scientific adjudication; a visible qualification is not resolution.
+  - reference: PMID:7961600
+    evidence_source: abstract
+    explanation: 1994 structural elucidation names the citrate ester; full text was
+      not inspected.
+  - reference: DOI:10.1007/s00203-007-0261-6
+    evidence_source: abstract
+    explanation: 2007 alginolyticus study; subscription preview only. No corrected
+      per-strain structure inferred.
 curation_history:
 - timestamp: '2026-09-10T05:54:05Z'
   curator: seed_from_sources
@@ -148,3 +192,14 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T19:56:35Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T19:57:07Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add a cited OPEN vibrioferrin qualification. Preserve chemistry, organism
+    assertions, evidence grades and SEEDED status; no identity migration or occurrence
+    reassignment.
+  llm_assisted: true

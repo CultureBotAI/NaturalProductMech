@@ -62,6 +62,10 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
+from naturalproductmech.curate.claim_references import (  # noqa: E402
+    correct_claim_reference,
+    load_claim_references,
+)
 from naturalproductmech.curate.curation_event import record_curation_event  # noqa: E402
 from naturalproductmech.curate.producer_strains import (  # noqa: E402
     load_producer_strains,
@@ -92,6 +96,7 @@ MIBIG_LOCUS_EVIDENCE_OVERRIDES = CURATION_DIR / "mibig_locus_evidence_overrides.
 MIBIG_STRUCTURE_CORRECTIONS = CURATION_DIR / "mibig_structure_corrections.tsv"
 MIBIG_PRODUCER_STRAINS = CURATION_DIR / "mibig_producer_strains.tsv"
 MIBIG_XREF_EXCLUSIONS = CURATION_DIR / "mibig_xref_exclusions.tsv"
+MIBIG_CLAIM_REFERENCES = CURATION_DIR / "mibig_claim_references.tsv"
 
 # MIBiG's cluster vocabulary -> the schema enum. Six values in 4.0; `alkaloid`
 # was removed when compound classification was split from cluster
@@ -431,6 +436,8 @@ def read_inventories() -> dict[str, list[dict[str, str]]]:
         inventories[MIBIG_PRODUCER_STRAINS.stem] = read_tsv(MIBIG_PRODUCER_STRAINS)
     if MIBIG_XREF_EXCLUSIONS.exists():
         inventories[MIBIG_XREF_EXCLUSIONS.stem] = read_tsv(MIBIG_XREF_EXCLUSIONS)
+    if MIBIG_CLAIM_REFERENCES.exists():
+        inventories[MIBIG_CLAIM_REFERENCES.stem] = read_tsv(MIBIG_CLAIM_REFERENCES)
     return inventories
 
 
@@ -763,6 +770,9 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     `just worklist` ranks them.
     """
     raw_mibig_rows = inventories.get("mibig_compounds") or []
+    claim_references = load_claim_references(
+        raw_mibig_rows, inventories.get("mibig_claim_references") or [])
+    applied_references: set[str] = set()
     producer_strains = load_producer_strains(
         raw_mibig_rows, inventories.get("mibig_producer_strains") or [])
     applied_strains: set[str] = set()
@@ -1034,6 +1044,10 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                 withheld_producers[host] += 1
                 host = None
 
+            reference_correction = claim_references.get(source_id)
+            if reference_correction and not host:
+                raise ValueError(f"{source_id}: claim references require an emitted producer")
+
             if host:
                 producers.append({
                     "taxon_id": row["taxon_id"],
@@ -1055,6 +1069,9 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                 })
                 rewrite_merged_taxon(
                     producers[-1], "taxon_id", merges, taxon_rewrites, "MIBiG", note=True)
+                if reference_correction:
+                    correct_claim_reference(
+                        producers[-1], row, reference_correction, field="producer_reference")
                 qualification = producer_strains.get(f"{accession}:{row['compound_index']}")
                 if qualification:
                     if row.get("structure_correction_note"):
@@ -1064,6 +1081,9 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                     applied_strains.add(qualification["source_id"])
 
             cluster = mibig_cluster(row, accession, host=host)
+            if reference_correction:
+                correct_claim_reference(cluster, row, reference_correction, field="locus_reference")
+                applied_references.add(source_id)
             rewrite_merged_taxon(cluster, "organism_taxon_id", merges, taxon_rewrites, "MIBiG", note=True)
             if row["genome_accession"]:
                 cluster["genome_accession"] = f"genbank:{row['genome_accession']}"
@@ -1583,6 +1603,9 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     if producer_strains.keys() - applied_strains:
         raise ValueError("strain qualifications did not reach a producer: "
                          + ", ".join(sorted(producer_strains.keys() - applied_strains)))
+    if claim_references.keys() - applied_references:
+        raise ValueError("claim references did not reach a record: "
+                         + ", ".join(sorted(claim_references.keys() - applied_references)))
     return records
 
 

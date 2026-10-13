@@ -35,7 +35,7 @@
 <tr><th>SMILES</th><td class="mono">O=C1CCC(O)(C(O)=O)N1[C@@H](C)C(NCCOC(C[C@](C(O)=O)(O)CC(O)=O)=O)=O</td></tr>
 <tr><th>Stereochemistry</th><td>  <span class="tag weak">undefined stereocentres</span> — the InChIKey does not
   distinguish this compound from its stereoisomers</td></tr>
-<tr><th>Cross-references</th><td class="mono">pubchem:197680, npatlas:NPA024673</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono">npatlas:NPA024673</td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Amino acids and peptides</a> —
@@ -51,16 +51,19 @@ same claim.</p>
 <div class="scroll"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Vibrio parahaemolyticus<br><span class="mono">NCBITaxon:670</span></td>
+  <td>Vibrio parahaemolyticus<br>Strain: WP1<br><span class="mono">NCBITaxon:670</span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
   <td class="mono">mibig:BGC0000946</td>
-  <td><span class="mono">PMID:14617658</span></td>
+  <td><details class="graph-evidence"><summary><span class="mono">PMID:14617658</span>, <span class="mono">https://www.ncbi.nlm.nih.gov/nuccore/AB082123.1</span></summary><ul><li><dl><dt>reference</dt><dd>PMID:14617658</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>MIBiG BGC0000946 entry version 5; citation taken from the entry level</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AB082123.1</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Strain context: WP1. AB082123.1 names strain WP1. This is the deposited locus strain, not AQ 3354 from the separate ChEBI occurrence. No taxon or evidence grade changes. See issue #933. Taxon identity and evidence grade are unchanged; this is not a species-wide experiment. MIBiG source row BGC0000946:1; SHA256 2a6d88d4055ff04c4496c977d1bc1af425c5f12c860c7c85a591c681734cfe7c. Curator: codex; date: 2026-10-13.</dd></dl>
+</li></ul>
+</details></td>
 </tr>
 <tr>
   <td>Azotobacter vinelandii CA<br><span class="mono">NCBITaxon:1283330</span></td>
   <td><span class="tag weak">SOURCE_ASSERTION</span></td>
   <td class="mono">mibig:BGC0002527</td>
-  <td><span class="mono">DOI:10.1021/ic9016883</span></td>
+  <td><span class="mono">PMID:26452553</span>, <span class="mono">https://mibig.secondarymetabolites.org/repository/BGC0002527.2/annotations.json</span></td>
 </tr>
 </table></div>
 
@@ -123,8 +126,9 @@ isolation report left it.</p>
 
 
 
-<h2>Open questions <span class="tag">1</span></h2>
+<h2>Open questions <span class="tag">2</span></h2>
 <div class="note"><p><strong>shared-structure</strong> — This structure is reported by more than one MIBiG entry: BGC0000946, BGC0002527. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
+<div class="note"><p><strong>curator-vibrioferrin-indirect-origin</strong> — Which primary experiment supports the ChEBI Vibrio alginolyticus occurrence?</p></div>
 
 <h2>Provenance</h2>
 <div class="scroll"><table>
