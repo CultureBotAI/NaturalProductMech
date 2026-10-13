@@ -1,0 +1,48 @@
+import copy
+import hashlib
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+
+import yaml
+
+root = Path.cwd()
+work = Path(__file__).parent
+sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
+checkpoint = json.loads((work / 'review-campaign-checkpoint.json').read_text())
+changed = []
+expected = {'prodigiosin.yaml': {'mibig:BGC0002675': 'S4059'},
+            'prodigiosin-2.yaml': {'mibig:BGC0000258': 'ATCC 39006', 'mibig:BGC0000259': 'ATCC 274'}}
+paths = {row['path'] for row in checkpoint['records']}
+assert paths == {str(p.relative_to(root)) for p in (root / 'data/natural_products').rglob('*.yaml')}
+for row in checkpoint['records']:
+    path = root / row['path']
+    if sha(path) != row['sha256']:
+        assert path.name in expected
+        prior = yaml.safe_load((work / (path.stem + '-resolved.json')).read_text())
+        current = yaml.safe_load(path.read_text())
+        stripped = copy.deepcopy(current)
+        for producer in stripped['producer_organisms']:
+            bgc = producer['biosynthetic_gene_cluster']
+            if bgc in expected[path.name]:
+                assert producer.pop('strain') == expected[path.name][bgc]
+                evidence = producer['evidence'].pop()
+                assert evidence['evidence_type'] == 'CURATOR_INFERENCE'
+                assert 'Curator: codex' in evidence['notes']
+        event = stripped['curation_history'].pop()
+        assert event['action'] == 'SEEDED_FROM_SOURCES'
+        assert stripped == prior
+        changed.append(dict(path=row['path'], before_sha256=row['sha256'], after_sha256=sha(path),
+                            changes='Only strain qualifiers, separate curator evidence and one seed history event.'))
+    for component in row['graph_components']:
+        assert sha(root / component['path']) == component['sha256']
+assert len(changed) == 2
+components = {c['path'] for row in checkpoint['records'] for c in row['graph_components']}
+assert components == {str(p.relative_to(root)) for p in (root / 'data/causal_graphs').rglob('*.yaml')}
+result = dict(recorded_at=datetime.now(timezone.utc).isoformat(), base=checkpoint['base'],
+              population=3115, unchanged_owners=3113, unchanged_components=243,
+              ignored_files_included=True, changed=changed,
+              identity_taxa_grades_occurrences_bgcs_status_and_prior_history_unchanged=True)
+with (work / 'remediation-audit.json').open('x') as handle:
+    json.dump(result, handle, indent=2)
+print(json.dumps(result, indent=2))

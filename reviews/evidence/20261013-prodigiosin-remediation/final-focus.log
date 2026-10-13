@@ -1,0 +1,93 @@
+........................................................................ [ 39%]
+........................................................................ [ 79%]
+...................FFF...............                                    [100%]
+=================================== FAILURES ===================================
+________ test_producer_strain_is_visible_and_evidence_is_retained[None] ________
+
+strain = None
+
+    @pytest.mark.parametrize("strain", [None, "S4059", '<script>alert("strain")</script>'])
+    def test_producer_strain_is_visible_and_evidence_is_retained(strain):
+        producer = {
+            "taxon_id": "NCBITaxon:43658", "taxon_label": "Pseudoalteromonas rubra",
+            "evidence_basis": "BGC_CHARACTERIZED", "biosynthetic_gene_cluster": "mibig:BGC0002675",
+            "evidence": [{"reference": "DOI:10.1/paper", "evidence_type": "DATABASE_ASSERTION"},
+                         {"reference": "DOI:10.1/paper", "evidence_type": "CURATOR_INFERENCE",
+                          "notes": "Exact strain context, not a species-wide experiment."}],
+        }
+        if strain is not None:
+            producer["strain"] = strain
+        original = deepcopy(producer)
+        view = render_pages.build_record(REPO_ROOT / "data/natural_products/test.yaml", {
+            "identifier": "CHEBI:1", "np_pathway": "ALKALOIDS", "producer_organisms": [producer],
+        })
+        assert producer == original
+        assert view["producers"][0]["evidence"] == original["evidence"]
+>       assert view["producers"][0]["references"] == ["DOI:10.1/paper"]
+E       AssertionError: assert ['DOI:10.1/pa...I:10.1/paper'] == ['DOI:10.1/paper']
+E         
+E         Left contains one more item: 'DOI:10.1/paper'
+E         Use -v to get more diff
+
+tests/test_render_pages.py:83: AssertionError
+_______ test_producer_strain_is_visible_and_evidence_is_retained[S4059] ________
+
+strain = 'S4059'
+
+    @pytest.mark.parametrize("strain", [None, "S4059", '<script>alert("strain")</script>'])
+    def test_producer_strain_is_visible_and_evidence_is_retained(strain):
+        producer = {
+            "taxon_id": "NCBITaxon:43658", "taxon_label": "Pseudoalteromonas rubra",
+            "evidence_basis": "BGC_CHARACTERIZED", "biosynthetic_gene_cluster": "mibig:BGC0002675",
+            "evidence": [{"reference": "DOI:10.1/paper", "evidence_type": "DATABASE_ASSERTION"},
+                         {"reference": "DOI:10.1/paper", "evidence_type": "CURATOR_INFERENCE",
+                          "notes": "Exact strain context, not a species-wide experiment."}],
+        }
+        if strain is not None:
+            producer["strain"] = strain
+        original = deepcopy(producer)
+        view = render_pages.build_record(REPO_ROOT / "data/natural_products/test.yaml", {
+            "identifier": "CHEBI:1", "np_pathway": "ALKALOIDS", "producer_organisms": [producer],
+        })
+        assert producer == original
+        assert view["producers"][0]["evidence"] == original["evidence"]
+>       assert view["producers"][0]["references"] == ["DOI:10.1/paper"]
+E       AssertionError: assert ['DOI:10.1/pa...I:10.1/paper'] == ['DOI:10.1/paper']
+E         
+E         Left contains one more item: 'DOI:10.1/paper'
+E         Use -v to get more diff
+
+tests/test_render_pages.py:83: AssertionError
+_ test_producer_strain_is_visible_and_evidence_is_retained[<script>alert("strain")</script>] _
+
+strain = '<script>alert("strain")</script>'
+
+    @pytest.mark.parametrize("strain", [None, "S4059", '<script>alert("strain")</script>'])
+    def test_producer_strain_is_visible_and_evidence_is_retained(strain):
+        producer = {
+            "taxon_id": "NCBITaxon:43658", "taxon_label": "Pseudoalteromonas rubra",
+            "evidence_basis": "BGC_CHARACTERIZED", "biosynthetic_gene_cluster": "mibig:BGC0002675",
+            "evidence": [{"reference": "DOI:10.1/paper", "evidence_type": "DATABASE_ASSERTION"},
+                         {"reference": "DOI:10.1/paper", "evidence_type": "CURATOR_INFERENCE",
+                          "notes": "Exact strain context, not a species-wide experiment."}],
+        }
+        if strain is not None:
+            producer["strain"] = strain
+        original = deepcopy(producer)
+        view = render_pages.build_record(REPO_ROOT / "data/natural_products/test.yaml", {
+            "identifier": "CHEBI:1", "np_pathway": "ALKALOIDS", "producer_organisms": [producer],
+        })
+        assert producer == original
+        assert view["producers"][0]["evidence"] == original["evidence"]
+>       assert view["producers"][0]["references"] == ["DOI:10.1/paper"]
+E       AssertionError: assert ['DOI:10.1/pa...I:10.1/paper'] == ['DOI:10.1/paper']
+E         
+E         Left contains one more item: 'DOI:10.1/paper'
+E         Use -v to get more diff
+
+tests/test_render_pages.py:83: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_render_pages.py::test_producer_strain_is_visible_and_evidence_is_retained[None]
+FAILED tests/test_render_pages.py::test_producer_strain_is_visible_and_evidence_is_retained[S4059]
+FAILED tests/test_render_pages.py::test_producer_strain_is_visible_and_evidence_is_retained[<script>alert("strain")</script>]
+3 failed, 178 passed in 6.58s

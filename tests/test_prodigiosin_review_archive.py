@@ -135,3 +135,60 @@ def test_published_review_artifacts_have_durable_mappings():
         references = {p.rstrip(".") for p in re.findall(r"/private/tmp/[A-Za-z0-9_./-]+", body.decode())}
         references -= {manifest["source_workspace"], manifest["source_workspace"] + "/uv-cache"}
         assert references <= artifacts.keys() | reference_only
+
+
+def test_strain_resolution_archive_and_campaign_lineage():
+    archive = ROOT / "reviews/evidence/20261013-prodigiosin-remediation"
+    manifest = json.loads((archive / "manifest.json").read_text())
+    paths = set()
+    for row in manifest["files"]:
+        assert Path(row["path"]).name == row["path"]
+        path = archive / row["path"]
+        assert path.is_file() and not path.is_symlink()
+        assert digest(path.read_bytes()) == row["sha256"]
+        assert path.stat().st_size == row["bytes"]
+        paths.add(path)
+    assert paths == {p for p in archive.iterdir() if p.name != "manifest.json"}
+    for path in archive.glob("*.receipt.json"):
+        receipt = json.loads(path.read_text())
+        assert digest((archive / Path(receipt["log"]).name).read_bytes()) == receipt["log_sha256"]
+        assert receipt["started_at"] <= receipt["finished_at"]
+    checkpoint = json.loads(gzip.decompress((archive / "pre-merge-campaign-checkpoint.json.gz").read_bytes()))
+    assert checkpoint["corpus_state"] == "working_tree"
+    assert checkpoint["scientific_review_bundles"] == len(checkpoint["all_review_observations"]) == 13
+    assert checkpoint["partial_reviews"] == len(checkpoint["reviews"]) == 10
+    assert checkpoint["unassessed_records"] == len(checkpoint["pending_in_priority_order"]) == 3105
+    assert checkpoint["completed_scientific_reviews"] == 0
+    assert checkpoint["findings"] == {"blocker": 4, "major": 4}
+    assert checkpoint["goal_status"] == "active"
+    owners = {r["path"]: r for r in checkpoint["records"]}
+    reviewed = {r["path"] for r in checkpoint["reviews"]}
+    pending = set(checkpoint["pending_in_priority_order"])
+    assert len(owners) == 3115 and reviewed.isdisjoint(pending)
+    assert reviewed | pending == owners.keys()
+    assert {p for p, r in owners.items() if r["review_state"] == "partial"} == reviewed
+    assert {p for p, r in owners.items() if r["review_state"] == "unassessed"} == pending
+    assert len(manifest["reviews"]) == 2
+    for row in manifest["reviews"]:
+        path = ROOT / row["path"]
+        assert digest(path.read_bytes()) == row["sha256"]
+        assert digest((ROOT / row["markdown"]).read_bytes()) == row["markdown_sha256"]
+        review = yaml.safe_load(path.read_text())
+        assert review["completion"] == "partial" and review["verdict"] == "pass_with_limitations"
+        assert review["source"]["git_revision"] == manifest["corpus_base"]
+        assert review["source"]["state"] == "working_tree"
+        finding, = review["findings"]
+        assert finding["finding_id"] == "F2" and finding["status"] == "resolved"
+        previous, = finding["previous_occurrences"]
+        assert previous["finding_id"] == "F2"
+        previous_path = ROOT / "reviews/structured" / previous["review_id"] / "review.yaml"
+        prior = yaml.safe_load(previous_path.read_text())
+        assert prior["findings"][0]["finding_id"] == "F1" and prior["findings"][0]["status"] == "open"
+        assert prior["findings"][1]["issue_key"] == finding["issue_key"]
+        target = review["targets"][0]["path"]
+        snapshot = archive / (Path(target).stem + "-owner.yaml")
+        assert digest(snapshot.read_bytes()) == owners[target]["sha256"]
+        assert yaml.safe_load(snapshot.read_text())["curation_status"] == "SEEDED"
+    open_keys = {f["issue_key"] for f in checkpoint["latest_finding_heads"] if f["status"] == "open"}
+    assert {"prodigiosin-lotus-congener-attribution", "prodigiosin-williamson-occurrence-taxon"} <= open_keys
+    assert not {"prodigiosin-serratia-strain-provenance", "prodigiosin-s4059-strain-provenance"} & open_keys
