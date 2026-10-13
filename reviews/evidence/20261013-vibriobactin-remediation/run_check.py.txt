@@ -1,0 +1,21 @@
+import hashlib
+import json
+import subprocess
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+
+work = Path(__file__).parent
+label, *command = sys.argv[1:]
+def now():
+    return datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z')
+log = work / (label + '.log')
+receipt = dict(command=command, cwd=str(Path.cwd()), started_at=now())
+with log.open('x') as handle:
+    result = subprocess.run(command, stdout=handle, stderr=subprocess.STDOUT)
+receipt.update(finished_at=now(), exit_code=result.returncode, log=str(log),
+               log_sha256=hashlib.sha256(log.read_bytes()).hexdigest())
+with (work / (label + '.receipt.json')).open('x') as handle:
+    json.dump(receipt, handle, indent=2)
+print(log.read_text()[-6000:])
+raise SystemExit(result.returncode)

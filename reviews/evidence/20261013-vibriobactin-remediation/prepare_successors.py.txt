@@ -1,0 +1,198 @@
+import copy
+import gzip
+import hashlib
+import json
+import shlex
+import shutil
+import subprocess
+from datetime import datetime, timezone
+from pathlib import Path
+
+import yaml
+
+ROOT = Path.cwd()
+WORK = Path(__file__).parent
+TREE = WORK / 'review-tree'
+ARCHIVE = Path('reviews/evidence/20261013-vibriobactin-remediation')
+HIST = Path('reviews/evidence/20261013-vibriobactin')
+REPO = 'CultureBotAI/NaturalProductMech'
+PYTHON = ROOT / '.venv/bin/python'
+SCRIPT = ROOT / 'scripts/record_review.py'
+OLD_IDS = ['20261013T102719Z-vibriobactin-2', '20261013T102720Z-vibriobactin']
+LABELS = ['focused-tests', 'archive-tests', 'seed-dry', 'seed-canary', 'seed-apply',
+          'scope-audit', 'render', 'docs-stats', 'labels', 'qc']
+
+def now():
+    return datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z')
+
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+class NoAliases(yaml.SafeDumper):
+    def ignore_aliases(self, data):
+        return True
+
+def copy_relative(relative):
+    destination = TREE / relative
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(ROOT / relative, destination)
+
+archive = ROOT / ARCHIVE
+archive.mkdir(parents=True, exist_ok=True)
+checks = []
+for label in LABELS:
+    receipt = json.loads((WORK / (label + '.receipt.json')).read_text())
+    assert receipt['exit_code'] == 0, (label, receipt)
+    assert sha(Path(receipt['log'])) == receipt['log_sha256']
+    for suffix in ('.log', '.receipt.json'):
+        shutil.copy2(WORK / (label + suffix), archive / (label + suffix))
+    checks.append(dict(check_id=label, name=label, required=True, status='passed',
+                       command=shlex.join(receipt['command']), exit_code=0,
+                       evidence_ids=['checks'], summary='Executed successfully; exact command, UTC timing and output hash retained in the remediation archive.'))
+for name in ('scope-audit.json', 'audit_scope.py', 'run_check.py', 'prepare_successors.py'):
+    shutil.copy2(WORK / name, archive / (name + '.txt' if name.endswith('.py') else name))
+
+maintained = ['scripts/seed_from_sources.py', 'scripts/np_report.py',
+              'curation/mibig_locus_evidence_overrides.tsv', 'curation/mibig_producer_strains.tsv',
+              'docs/CURATION.md', 'docs/HARMONIZATION.md', 'docs/record-review-profile.md',
+              'docs/record-reviews.md', 'schema/record_review.yaml',
+              'src/naturalproductmech/curate/producer_strains.py',
+              'tests/test_mibig_locus_evidence_overrides.py', 'tests/test_seed_skeleton.py',
+              'tests/test_corpus_integrity.py', 'tests/test_np_report.py',
+              'tests/test_vibriobactin_review_archive.py', 'README.md']
+prior_paths = [f'reviews/structured/{identifier}/review.yaml' for identifier in OLD_IDS]
+inputs = set(maintained + prior_paths)
+historical_manifest = json.loads((ROOT / HIST / 'manifest.json').read_text())
+native_row, = [row for row in historical_manifest['artifacts']
+               if row['original_path'].endswith('/AE003852.embl')]
+native_path = HIST / native_row['path']
+inputs.add(str(native_path))
+for identifier in OLD_IDS:
+    for name in ('review.yaml', 'review.md'):
+        copy_relative(Path('reviews/structured') / identifier / name)
+for path in (ROOT / HIST).rglob('*'):
+    if path.is_file():
+        copy_relative(path.relative_to(ROOT))
+for path in archive.iterdir():
+    if path.is_file():
+        inputs.add(str(path.relative_to(ROOT)))
+inputs.add(str(HIST / 'manifest.json'))
+for name in maintained:
+    copy_relative(name)
+for name in inputs:
+    copy_relative(name)
+
+drafts = []
+for old_id in OLD_IDS:
+    start = now()
+    prior_path = Path('reviews/structured') / old_id / 'review.yaml'
+    prior = yaml.safe_load((ROOT / prior_path).read_text())
+    target = prior['targets'][0]
+    target_id = target['target_id']
+    sibling = target_id != 'CHEBI:9973'
+    copy_relative(target['path'])
+    owner = yaml.safe_load((ROOT / target['path']).read_text())
+    assert not owner.get('causal_graph_refs')
+    assert owner['curation_status'] == 'SEEDED'
+    if not sibling:
+        assert len(owner['causal_graphs']) == 1
+        assert owner['producer_organisms'][0]['strain'] == 'Lou15 (El Tor)'
+        assert owner['biosynthetic_gene_clusters'][0]['link_evidence_basis'] == 'CLUSTER_UNSTATED'
+    spec = WORK / (old_id + '-successor-target.json')
+    spec.write_text(json.dumps({'targets': [target]}, indent=2))
+    contextual = inputs | {p['path'] for p in target['owner_paths']}
+    command = [str(PYTHON), str(SCRIPT), '--repo-root', str(TREE), 'inspect', '--targets', str(spec)]
+    for name in sorted(contextual):
+        command += ['--input', name]
+    result = subprocess.run(command, capture_output=True, text=True)
+    (WORK / (old_id + '-successor-inspect.log')).write_text(result.stdout + result.stderr)
+    assert result.returncode == 0, result.stderr
+    capture = json.loads(result.stdout)
+    assert capture['source']['git_revision'] == '9e5163ca9689a98df9af76f1ccb38fe0df72594c'
+    for item in capture['source']['inputs']:
+        assert sha(ROOT / item['path']) == item['sha256']
+    stamp = now()
+    evidence = []
+    def local(eid, path, summary, kind='record_content'):
+        evidence.append(dict(evidence_id=eid, kind=kind, reference=str(path),
+                             accessed_at=stamp, support='supports', snapshot_sha256=sha(ROOT / path),
+                             summary=summary))
+    local('previous', prior_path, 'Immutable predecessor remains unchanged; its unassessed scientific scope is not retired.', 'prior_review')
+    local('owner', Path(target['path']), 'Complete owner read; chemistry, graph content and native status retained. Only the declared remediation scope is assessed.')
+    local('audit', ARCHIVE / 'scope-audit.json', 'Ignored-inclusive all-owner comparison: 3115 owners,243 components;732 corrected owners, with no chemistry, graph, status or population changes.', 'validation')
+    local('checks', ARCHIVE / 'qc.receipt.json', 'Full native QC and companion receipts/logs are durable in this directory.', 'validation')
+    local('archive', HIST / 'manifest.json', 'Checksum mapping retains historical native deposits, public structured sources, failed checks and campaign population.')
+    if sibling:
+        native = gzip.decompress((ROOT / native_path).read_bytes()).decode()
+        assert 'complement(2353407..2360659)' in native and '/locus_tag="VC_2209"' in native
+        evidence.append(dict(evidence_id='native', kind='database',
+                             reference=str(native_path), snapshot_sha256=sha(ROOT / native_path),
+                             locator='New inspection of archived AE003852.embl from https://www.ebi.ac.uk/ena/browser/view/AE003852.1; gene complement(2353407..2360659), locus_tag VC_2209. Not a new external retrieval.',
+                             accessed_at=stamp, support='supports',
+                             summary='Native annotation explicitly records an authentic frameshift in the putative VibF region within BGC0000945. This is a sequence annotation, not an experimental demonstration of production or nonproduction.'))
+        topic = 'Explicit N16961 native-sequence limitation'
+        summary = 'Add the omitted VC_2209 frameshift limitation; retain the source assertion without inferring nonproduction. Whole-record scientific review remains blocked.'
+        assessment = 'The exact archived native feature falls within the recorded BGC interval. N16961 cannot silently inherit the intact O395 VibF reference or Lou15 source scope.'
+        findings = []
+        verdict = 'blocked'
+        limitations = ['AE003852.1 annotates an authentic VC_2209 frameshift within BGC0000945. Its phenotypic consequences and any production claim require strain-specific evidence; no nonproduction conclusion is made.',
+                       'PMID:9371453 remains access-stopped. Exact experimental chemical form and N16961 production are not resolved.']
+    else:
+        original_primary, = [item for item in prior['evidence'] if item['evidence_id'] == 'wyckoff1999']
+        evidence.append(dict(evidence_id='primary', kind='primary_source',
+                             reference='https://journals.asm.org/doi/10.1128/jb.181.24.7588-7596.1999',
+                             locator='Results on heterologous transport complementation; Table 1 and Table 3.',
+                             accessed_at=original_primary['accessed_at'], support='supports',
+                             summary='Inspected transport experiment and strain context support the narrow correction; not a whole-record biosynthesis validation.'))
+        local('strain', Path('curation/mibig_producer_strains.tsv'), 'Complete source-row pin scopes the Lou15 qualification to BGC0002494:1.')
+        local('withdrawal', Path('curation/mibig_locus_evidence_overrides.tsv'), 'Exact raw context, including empty bounds, withdraws the inapplicable method while preserving source provenance.')
+        topic = 'Evidence grade, citation wording and producer strain'
+        summary = 'Resolve the three saved findings through guarded regeneration; retain partial scientific status and all primary-access limitations.'
+        assessment = 'The locus is CLUSTER_UNSTATED; original database evidence and excluded methods survive. Lou15 strain is explicit, while taxon and SOURCE_ASSERTION grade remain. Occurrence notes no longer infer independent publications.'
+        findings = copy.deepcopy(prior['findings'])
+        for finding, number in zip(findings, (890, 891, 892)):
+            finding.update(status='resolved', evidence_ids=['previous', 'owner', 'audit', 'checks', 'archive', 'primary', 'strain', 'withdrawal'],
+                           previous_occurrences=[dict(repository=REPO, review_id=old_id, finding_id=finding['finding_id'])],
+                           external_issues=[f'https://github.com/CultureBotAI/NaturalProductMech/issues/{number}'],
+                           disposition_reason='Maintained-input correction, focused regressions, generated-field audit and full native QC establish this scoped fix. No whole-record scientific sign-off.')
+        verdict = 'pass_with_limitations'
+        limitations = ['The 1997 and 1984 primary texts remain access-stopped; prior protein-method and exact experimental-form limits remain. No full scientific completion is claimed.']
+    local_checks = copy.deepcopy(checks)
+    for check in local_checks:
+        check['target_ids'] = [target_id]
+    if sibling:
+        local_checks.append(dict(check_id='primary-completeness', name='Primary evidence completeness',
+                                 required=True, status='unavailable', target_ids=[target_id],
+                                 evidence_ids=['previous'], summary='Inherited access restriction retained; not retried through another route.'))
+    finish = now()
+    suffix = 'vibriobactin-2-frameshift-limitation' if sibling else 'vibriobactin-findings-resolution'
+    review_id = datetime.fromisoformat(finish.replace('Z', '+00:00')).strftime('%Y%m%dT%H%M%SZ') + '-' + suffix
+    review = dict(schema_version='1.0.0', review_id=review_id, kind='record', repository=REPO,
+                  title=topic + ': vibriobactin', started_at=start, finished_at=finish,
+                  reviewer=dict(identity='Codex', kind='agent', independence='self_review',
+                                independence_basis='Same assistant implements and saves this scoped disposition; separate read-only agent adversarial review is documented on PR894.'),
+                  skill='.claude/skills/review-yaml-record/SKILL.md', completion='partial', verdict=verdict,
+                  scientific_review=True, summary=summary, source=capture['source'], targets=[target],
+                  scope=dict(description='Exact-owner scoped successor only; campaign remains3115 owners,12 partial,0 complete and3103 unassessed.',
+                             selection='Explicit follow-up to ' + old_id, coverage='partial', population_size=1,
+                             reviewed_target_ids=[target_id]),
+                  checks=local_checks, evidence=evidence,
+                  assessments=[dict(assessment_id='scope', area='scope', topic=topic, outcome='supported',
+                                    summary=assessment, target_ids=[target_id], evidence_ids=[e['evidence_id'] for e in evidence]),
+                               dict(assessment_id='completeness', area='completeness', topic='Whole-record scientific completeness',
+                                    outcome='unknown', summary='Uninspected primary material and exact experimental scope remain unresolved.',
+                                    target_ids=[target_id], evidence_ids=['previous'])],
+                  findings=findings, actions=[], limitations=limitations + [
+                      'Inspected a detached worktree at durable main base9e5163ca populated with identical reviewed bytes; working-tree input hashes are an attestation, not a claim those changes existed in the base.',
+                      'Full QC executed in the publication worktree before these immutable successors; canonical validation and final-head CI must cover the newly saved observations.',
+                      'No additional owner is counted as reviewed and no native status is promoted.'],
+                  related_reviews=[dict(repository=REPO, review_id=old_id, relationship='Scoped successor; all earlier unassessed scientific scope remains')],
+                  links=['https://github.com/CultureBotAI/NaturalProductMech/pull/894'] +
+                        (['https://github.com/CultureBotAI/NaturalProductMech/issues/896'] if sibling else []))
+    draft = WORK / (review_id + '.yaml')
+    with draft.open('x') as handle:
+        yaml.dump(review, handle, Dumper=NoAliases, sort_keys=False, allow_unicode=False)
+    drafts.append(str(draft))
+with (WORK / 'successor-drafts.json').open('x') as handle:
+    json.dump(drafts, handle, indent=2)
+print(json.dumps(drafts, indent=2))
