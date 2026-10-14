@@ -96,8 +96,8 @@ biosynthetic_gene_clusters:
   locus_from: 1
   locus_to: 13360
   bgc_class:
-  - RIBOSOMAL
   - OTHER
+  - RIBOSOMAL
   - TERPENE
   locus_evidence_methods:
   - Enzymatic assays
@@ -479,3 +479,7 @@ curation_history:
     steps for muscoride A terminal prenylation, grounded to exact UniProtKB entries
     cross-referenced to the MK806444.1 muscoride cluster.
   llm_assisted: true
+- timestamp: '2026-10-13T23:58:06Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

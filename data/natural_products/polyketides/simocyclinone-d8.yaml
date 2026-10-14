@@ -100,8 +100,6 @@ biosynthetic_gene_clusters:
   genome_accession: genbank:AF322256.1
   bgc_class:
   - PKS
-  - SACCHARIDE
-  - OTHER
   link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
@@ -921,6 +919,10 @@ curation_history:
     fields are unchanged.'
   llm_assisted: true
 - timestamp: '2026-10-13T10:44:41Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T23:58:07Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.

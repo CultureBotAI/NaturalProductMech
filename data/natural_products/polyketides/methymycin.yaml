@@ -324,7 +324,6 @@ biosynthetic_gene_clusters:
     notes: MIBiG BGC0000898 entry version 5; citation taken from the entry level
   genome_accession: genbank:AF079762.1
   bgc_class:
-  - PKS
   - SACCHARIDE
   link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
@@ -464,6 +463,10 @@ curation_history:
     paper.
   llm_assisted: true
 - timestamp: '2026-10-13T10:43:27Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T23:57:24Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.

@@ -458,7 +458,6 @@ biosynthetic_gene_clusters:
   locus_to: 203577
   bgc_class:
   - PKS
-  - TERPENE
   link_evidence_basis: CLUSTER_UNSTATED
 - accession: mibig:BGC0002596
   entry_version: '2'
@@ -474,7 +473,6 @@ biosynthetic_gene_clusters:
   locus_to: 131937
   bgc_class:
   - PKS
-  - TERPENE
   link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
@@ -821,6 +819,10 @@ curation_history:
     discussions, SEEDED status and append-only history; not full-record sign-off.'
   llm_assisted: true
 - timestamp: '2026-10-13T07:36:33Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T23:56:53Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.

@@ -263,8 +263,8 @@ biosynthetic_gene_clusters:
   locus_from: 1
   locus_to: 41852
   bgc_class:
-  - NRPS
   - PKS
+  - NRPS
   locus_evidence_methods:
   - Heterologous expression
   - Enzymatic assays
@@ -425,6 +425,10 @@ curation_history:
     causal graph.
   llm_assisted: true
 - timestamp: '2026-10-13T07:36:45Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T23:56:59Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.

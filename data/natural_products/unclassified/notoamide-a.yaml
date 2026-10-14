@@ -143,8 +143,6 @@ biosynthetic_gene_clusters:
   genome_accession: genbank:JQ708194.1
   bgc_class:
   - NRPS
-  - TERPENE
-  - OTHER
   link_evidence_basis: CLUSTER_UNSTATED
 - accession: mibig:BGC0002254
   entry_version: '3'
@@ -159,9 +157,6 @@ biosynthetic_gene_clusters:
   locus_from: 1
   locus_to: 46989
   bgc_class:
-  - NRPS
-  - TERPENE
-  - OTHER
   - PKS
   link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
@@ -585,3 +580,7 @@ curation_history:
     history; no assay construct, mature processing, assembly, kinetics or producer
     upgrade asserted.
   llm_assisted: true
+- timestamp: '2026-10-13T23:57:36Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

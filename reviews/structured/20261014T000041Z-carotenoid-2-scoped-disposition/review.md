@@ -1,0 +1,623 @@
+# carotenoid-2: classification and identity disposition
+
+- Review: 20261014T000041Z-carotenoid-2-scoped-disposition
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-14T00:00:37.890794Z
+- Finished UTC: 2026-10-14T00:00:41.826199Z
+- Reviewer: Codex (self_review)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+identity blocker explicitly qualified and still open.
+
+## Scope And Provenance
+
+Scoped successor for the exact predecessor target; not additional owner coverage.
+
+Selection: Reassessment after separately authorized fixes.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1131b6f7dbb5550da182effa1b396ab790bc42c6.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-8426508598 | data/natural_products/terpenoids/carotenoid-2.yaml | generated | carotenoid |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Canonical current input inspection | passed | True | naturalproductmech:mibig-8426508598 | Exact current input hashes captured before reassessment. |
+| scope | passed | True | naturalproductmech:mibig-8426508598 | Passed; receipt retains exact command, time and log hash. |
+| focused-final | passed | True | naturalproductmech:mibig-8426508598 | Passed; receipt retains exact command, time and log hash. |
+| strict-final | passed | True | naturalproductmech:mibig-8426508598 | Passed; receipt retains exact command, time and log hash. |
+| Exact primary product and biological-join adjudication | unavailable | True | naturalproductmech:mibig-8426508598 | No further primary-structure adjudication; predecessor limitations remain. Issue952 stays open. |
+
+## Scientific And Domain Assessments
+
+### Claim-local BGC classes
+
+representation: supported. Targets: naturalproductmech:mibig-8426508598.
+
+Per-cluster classes match their own pinned source; record-level union and computed filing are unchanged.
+
+### Exact-product conflict remains open
+
+identity: concern. Targets: naturalproductmech:mibig-8426508598.
+
+Explicit OPEN qualification is not exact-source adjudication. Preserve the identity blocker and conservative native status.
+
+## Findings
+
+### F1: Sixteen carotenoid class concepts collapse onto one unsupported exact structure
+
+blocker / open / confirmed; issue key: carotenoid-generic-class-structure-collapse.
+
+The same C46H90O6 glycoside is attached to sixteen generic entries whose studies concern different products, including C50 decaprenoxanthin and a C30 pathway. Source repetition of CID446841 is not evidence of shared exact identity. Each source concept and occurrence needs separate re-adjudication; no automatic split or replacement graph is established.
+
+Disposition: The cited OPEN curator controversy makes the conflict explicit but does not repair source-product identities or biological joins. Issue952 remains open; no exact structure replacement, merging, evidence upgrade or REVIEWED promotion is asserted.
+
+## Recommended Actions And Acceptance Checks
+
+### A1
+
+Track #952; add an explicit cited unresolved curator discussion, then obtain exact primary structures and implement reviewed source correction/withholding with source pins. Re-audit all affected biological joins. Preserve exact registry xrefs and unresolved stereochemistry; no guessed replacement.
+
+- Each source concept has exact primary compound/experiment support or explicit maintained withholding.
+- LOTUS occurrences are independently re-audited; no old-key claim transfer.
+- Native/engineered and deposit strain context remain explicit; strict/reproduction/QC pass; linked successor review adjudicates the finding.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| current | data/natural_products/terpenoids/carotenoid-2.yaml | supports | Current complete owner and resolved mechanism inspected after classification repair and cited OPEN identity qualification. Chemistry, registry xrefs, producer/locus grades and SEEDED status remain unchanged. |
+| prior | reviews/structured/20261013T235754Z-carotenoid-2/review.yaml | supports | Immutable predecessor; exact primary-product limitations and identity finding remain applicable. |
+| scope | /private/tmp/npmech-carotenoid-review-QbnJL2/scope-audit.json | supports | All3115 owners audited: 38 records have cluster-class changes; one additional owner has only a new identity discussion. All243 graph components and56 predecessor review pairs are unchanged; only per-cluster classes, two new discussions and appended history change. |
+| implementation | scripts/seed_from_sources.py | supports | Each cluster now receives only its own deduplicated mapped classes; the owner union is unchanged. |
+| tests | /private/tmp/npmech-carotenoid-review-QbnJL2/focused-final.log | supports | 156 focused tests pass, including disjoint/hybrid/empty/unmapped/reordered classes, every emitted cluster versus its pinned source and both current OPEN identity qualifications. |
+| primary | PMID:11432736; Full corresponding PubMed title/abstract and article identifiers, not full paper or supplement | refutes | The C. glutamicum abstract identifies C50 decaprenoxanthin and distinguishes functional complementation from the native organism. This is not evidence for the encoded C46 glycoside. |
+| chemistry | /private/tmp/npmech-carotenoid-review-QbnJL2/source-inspection.json; chemistry section; script and execution receipt retained | supports | Pinned RDKit 2026.03.5 reproduces full InChI/key and C46H90O6; nine tetrahedral centers assigned and two unassigned, neutral charge, one nonaromatic C=C. This checks graph encoding, not experimental determination. |
+| registry | https://pubchem.ncbi.nlm.nih.gov/compound/446841; PUG REST properties and synonyms payloads; original fetch receipts in /private/tmp/npmech-carotenoid-review-wTUdYJ | supports | The xref agrees with the full encoded InChI and key. The synonym response supplies no name; registry agreement does not validate class-level biological joins. |
+
+## Limits And Additional Notes
+
+- Scoped disposition only, not completion of primary scientific review or a new owner coverage increment.
+- All predecessor primary-access and occurrence limitations remain; no alternative retrieval after access denial.
+- Working-tree source hashes attest current inspected bytes, not that changes were present in base1131b6f7. That base is already durable on main.
+- Focused, strict and scope checks have passed. Final full QC, reproduction and review-contract gates still follow before merge.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T000041Z-carotenoid-2-scoped-disposition
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'carotenoid-2: classification and identity disposition'
+started_at: '2026-10-14T00:00:37.890794Z'
+finished_at: '2026-10-14T00:00:41.826199Z'
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: self_review
+  independence_basis: Implementing assistant performing a separate adversarial pass,
+    not independent human approval.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: identity blocker explicitly qualified and still open.
+source:
+  git_revision: 1131b6f7dbb5550da182effa1b396ab790bc42c6
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: 49e2ab03c7e82013e9d68356de2c9965c9f8517a3408a44124076f4ca1b529cd
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/decisions.tsv
+    sha256: 7214a74975fb2cb65521da18dd14ea1c65665f50060106976dc0db9caf887805
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f3f808ad1e58d79947aa82ecf1272e465cfbef57e5a4cd646731af23bb48ce75
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: a1eb14fec4a7cee0c2fc25c43091e75af24ae62c44c4f7659ed7aedf0e6a0e6c
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: 6f879bb9f2c9be6b6e8de8c013dbaebe09075b7e106790ea303a17006761ea11
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: 5b1edc057cdcc732f61de2964cd175fa3bc2dca929c5d2823142f61313545a7e
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: f61d7ba85ffd21837cd2b625f83c4681c4663e72503466b40eba3f4ab0204bc1
+    role: context
+  - path: curation/pubchem_bioassay_exclusions.tsv
+    sha256: 18b61c1e5a69112c99cea1373791cd1ec571b7084bfd9198ab68fa551f5d531a
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: bf38e4f0c7e4bcbdf184a4e7b8b024752251e8f34c015c0b82cedca98a8a5729
+    role: context
+  - path: data/natural_products/polyketides/carotenoid.yaml
+    sha256: 8c95ab5d228fd16c0b1943a1cd52da1d09089ed0a5573193d1a9c24a869db3dc
+    role: context
+  - path: data/natural_products/terpenoids/carotenoid-2.yaml
+    sha256: f504758de5d13147d768c298e2357880125e6749cb12e2556fac6a14005afc56
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: 373f049029be3db137e062ff5f872a2400a9d5b423f3e108ea44ebde2f8dcc7d
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: 7b9b9f78f5b14aea9fabb163bbaa9e842920a7e9b07deac8f98c97666e9e23fc
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 3ab166b341e5f3f1eaaee1b2af2485ac575c1a1eab1570bbf1d8d2d3ba76e53e
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: pyproject.toml
+    sha256: 02505a46585e870eac7333f31a6773df51465ef13969d4d490fbc0247931d85c
+    role: context
+  - path: reviews/structured/20261013T235754Z-carotenoid-2/review.yaml
+    sha256: 8e4abc8691d1d707ce94028277eb5e7ae5c671f68d9dd5208d6c2e0e759201c0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_lotus.py
+    sha256: 8a8c524f60f85d2bb54412ca055a6a45e0d37ec5f4584d8d70be454b8f664290
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/extract_pubchem_bioassay.py
+    sha256: 24f9d794e7cf97c420351cb751f8767f7d81a5f22aed01669b2318d6755e7c00
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/run_qc.py
+    sha256: ff44ed3e40a9b3582eb84e38a81301745ae80d16445756d09a7efb2a480b1abb
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: e810fb0f289bc11d6369c8ac00cc3d0ff6ed96888c13048de478f725e62fab3e
+    role: context
+  - path: src/naturalproductmech/curate/bioassay_exclusions.py
+    sha256: 4a4176e072ac9759aa8a9e88300d7e2de5aaf4ebf30b5c42fcf4c9c0b6cebbb4
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: a8b8834788b4714cf1cb0d1cc410d5c2f88112a32ad8621c8e043f0a4bc38a9d
+    role: context
+  - path: src/naturalproductmech/curate/xref_exclusions.py
+    sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/history.yaml
+    sha256: b01b06f1b9a37db205c26c31ec0fd910690848507c7e1bfb73b424ac0829c52d
+    role: context
+  - path: src/naturalproductmech/schema/mech_shared.yaml
+    sha256: c2e7054fd32635e380c698282bd886a9105861009b9f0474f02bb1b80865e895
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: tests/test_carotenoid_curation.py
+    sha256: 492b1cc6a5eeb799bb7dbb60c8fd41bf14e4aa49134516899c336807335e0aaa
+    role: context
+  - path: tests/test_seed_skeleton.py
+    sha256: 72ec216fb0ed365b09f1cfb64fb06c701c50b5d7c2df409d8dbf613d302803bf
+    role: context
+  - path: uv.lock
+    sha256: c62a5739e3ffeb12cc57b3bf12a31dcf9cdfbf00b417f4ba3a801d51ef9efbe3
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-8426508598
+  path: data/natural_products/terpenoids/carotenoid-2.yaml
+  label: carotenoid
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Imported chemical, producer and cluster assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Imported structure-organism-reference triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Pinned ChEBI grounding inventory
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_origins.tsv
+    role: Pinned ChEBI occurrence inventory
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/antibioticmech_inchikeys.tsv
+    role: Pinned sibling exact-structure joins
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated harmonization and grading
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: MIBiG extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_lotus.py
+    role: LOTUS extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Implemented pinned structure corrections
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Implemented exact-context method corrections
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Implemented pinned strain qualifications
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_xref_exclusions.tsv
+    role: Implemented complete-row-pinned PubChem and NPAtlas exclusions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Imported compound-specific assay observations
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_pubchem_bioassay.py
+    role: BioAssay extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_isolates.tsv
+    role: Implemented pinned isolate context
+scope:
+  description: Scoped successor for the exact predecessor target; not additional owner
+    coverage.
+  selection: Reassessment after separately authorized fixes.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-8426508598
+checks:
+- check_id: inspect
+  name: Canonical current input inspection
+  command: uv run python scripts/record_review.py inspect --targets /private/tmp/npmech-carotenoid-review-QbnJL2/carotenoid-2-targets.json
+    --input .claude/skills/curate-yaml-record/references/review-checklist.md --input
+    .claude/skills/review-yaml-record/SKILL.md --input CLAUDE.md --input conf/id_label_targets.yaml
+    --input conf/producer_evidence.tsv --input conf/record_review.yaml --input curation/decisions.tsv
+    --input curation/mibig_claim_references.tsv --input curation/mibig_locus_evidence_overrides.tsv
+    --input curation/mibig_producer_isolates.tsv --input curation/mibig_producer_strains.tsv
+    --input curation/mibig_structure_corrections.tsv --input curation/mibig_xref_exclusions.tsv
+    --input curation/pubchem_bioassay_exclusions.tsv --input data/natural_products/PATHS.tsv
+    --input data/natural_products/polyketides/carotenoid.yaml --input data/natural_products/terpenoids/carotenoid-2.yaml
+    --input data/raw/MANIFEST.yaml --input data/raw/antibioticmech_inchikeys.tsv --input
+    data/raw/chebi_origins.tsv --input data/raw/chebi_structures.tsv --input data/raw/corpus_taxa.obo
+    --input data/raw/lotus_occurrences.tsv --input data/raw/mibig_compounds.tsv --input
+    data/raw/npclassifier.tsv --input data/raw/pubchem_bioassay.tsv --input docs/CURATION.md
+    --input docs/HARMONIZATION.md --input docs/record-review-profile.md --input docs/record-reviews.md
+    --input justfile --input pyproject.toml --input reviews/structured/20261013T235754Z-carotenoid-2/review.yaml
+    --input schema/record_review.yaml --input scripts/extract_lotus.py --input scripts/extract_mibig.py
+    --input scripts/extract_pubchem_bioassay.py --input scripts/record_review.py --input
+    scripts/run_qc.py --input scripts/seed_from_sources.py --input src/naturalproductmech/curate/bioassay_exclusions.py
+    --input src/naturalproductmech/curate/producer_strains.py --input src/naturalproductmech/curate/structure_corrections.py
+    --input src/naturalproductmech/curate/xref_exclusions.py --input src/naturalproductmech/graph_components.py
+    --input src/naturalproductmech/schema/history.yaml --input src/naturalproductmech/schema/mech_shared.yaml
+    --input src/naturalproductmech/schema/naturalproductmech.yaml --input tests/test_carotenoid_curation.py
+    --input tests/test_seed_skeleton.py --input uv.lock
+  exit_code: 0
+  status: passed
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-8426508598
+  summary: Exact current input hashes captured before reassessment.
+- check_id: scope
+  name: scope
+  status: passed
+  required: true
+  command: uv run python /private/tmp/npmech-carotenoid-review-QbnJL2/audit_scope.py
+  exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-8426508598
+  summary: Passed; receipt retains exact command, time and log hash.
+  scope_note: 2026-10-13T23:59:09.984184Z..2026-10-13T23:59:14.166214Z; /private/tmp/npmech-carotenoid-review-QbnJL2/scope.log;
+    SHA256 44ef0a0eaea8ee70ae64467c5f7180a4c078e4042572edb3bca9f8c83f5a1045
+- check_id: focused-final
+  name: focused-final
+  status: passed
+  required: true
+  command: uv run pytest tests/test_seed_skeleton.py tests/test_carotenoid_curation.py
+    -q
+  exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-8426508598
+  summary: Passed; receipt retains exact command, time and log hash.
+  scope_note: 2026-10-13T23:59:11.153509Z..2026-10-13T23:59:15.797041Z; /private/tmp/npmech-carotenoid-review-QbnJL2/focused-final.log;
+    SHA256 18e684b3f167b2560865d965f41faea5fede5a91728009105fd9f2f2798153e0
+- check_id: strict-final
+  name: strict-final
+  status: passed
+  required: true
+  command: just validate-strict data/natural_products/polyketides/carotenoid.yaml
+    data/natural_products/terpenoids/carotenoid-2.yaml --out /private/tmp/npmech-carotenoid-review-QbnJL2/strict-final.tsv
+  exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-8426508598
+  summary: Passed; receipt retains exact command, time and log hash.
+  scope_note: 2026-10-13T23:59:22.495866Z..2026-10-13T23:59:25.758479Z; /private/tmp/npmech-carotenoid-review-QbnJL2/strict-final.log;
+    SHA256 86a2a54b712908b432d1681eacf5a3c3748226dd72838eacc77d6ee1ff0c8d0d
+- check_id: primary
+  name: Exact primary product and biological-join adjudication
+  required: true
+  status: unavailable
+  target_ids:
+  - naturalproductmech:mibig-8426508598
+  summary: No further primary-structure adjudication; predecessor limitations remain.
+    Issue952 stays open.
+evidence:
+- evidence_id: current
+  kind: record_content
+  reference: data/natural_products/terpenoids/carotenoid-2.yaml
+  summary: Current complete owner and resolved mechanism inspected after classification
+    repair and cited OPEN identity qualification. Chemistry, registry xrefs, producer/locus
+    grades and SEEDED status remain unchanged.
+  accessed_at: '2026-10-14T00:00:41.819755Z'
+  support: supports
+  snapshot_sha256: f504758de5d13147d768c298e2357880125e6749cb12e2556fac6a14005afc56
+- evidence_id: prior
+  kind: prior_review
+  reference: reviews/structured/20261013T235754Z-carotenoid-2/review.yaml
+  summary: Immutable predecessor; exact primary-product limitations and identity finding
+    remain applicable.
+  accessed_at: '2026-10-14T00:00:41.820144Z'
+  support: supports
+  snapshot_sha256: 8e4abc8691d1d707ce94028277eb5e7ae5c671f68d9dd5208d6c2e0e759201c0
+- evidence_id: scope
+  kind: validation
+  reference: /private/tmp/npmech-carotenoid-review-QbnJL2/scope-audit.json
+  summary: 'All3115 owners audited: 38 records have cluster-class changes; one additional
+    owner has only a new identity discussion. All243 graph components and56 predecessor
+    review pairs are unchanged; only per-cluster classes, two new discussions and
+    appended history change.'
+  accessed_at: '2026-10-14T00:00:41.820478Z'
+  support: supports
+  snapshot_sha256: 0e864e1c2fadf50d09c6d2aa3d4c72a9019ace64b3af7c69333f18521cc2dbdf
+- evidence_id: implementation
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  summary: Each cluster now receives only its own deduplicated mapped classes; the
+    owner union is unchanged.
+  accessed_at: '2026-10-14T00:00:41.821354Z'
+  support: supports
+  snapshot_sha256: e810fb0f289bc11d6369c8ac00cc3d0ff6ed96888c13048de478f725e62fab3e
+- evidence_id: tests
+  kind: validation
+  reference: /private/tmp/npmech-carotenoid-review-QbnJL2/focused-final.log
+  summary: 156 focused tests pass, including disjoint/hybrid/empty/unmapped/reordered
+    classes, every emitted cluster versus its pinned source and both current OPEN
+    identity qualifications.
+  accessed_at: '2026-10-14T00:00:41.821948Z'
+  support: supports
+  snapshot_sha256: 18e684b3f167b2560865d965f41faea5fede5a91728009105fd9f2f2798153e0
+- evidence_id: primary
+  kind: primary_source
+  reference: PMID:11432736
+  summary: The C. glutamicum abstract identifies C50 decaprenoxanthin and distinguishes
+    functional complementation from the native organism. This is not evidence for
+    the encoded C46 glycoside.
+  locator: Full corresponding PubMed title/abstract and article identifiers, not full
+    paper or supplement
+  accessed_at: '2026-10-13T23:57:54.828442Z'
+  support: refutes
+  snapshot_sha256: 83509aa808bcdf8221f344de6e18b9b5e3de4cc3eeae71373360acf9339f9ed5
+- evidence_id: chemistry
+  kind: validation
+  reference: /private/tmp/npmech-carotenoid-review-QbnJL2/source-inspection.json
+  summary: Pinned RDKit 2026.03.5 reproduces full InChI/key and C46H90O6; nine tetrahedral
+    centers assigned and two unassigned, neutral charge, one nonaromatic C=C. This
+    checks graph encoding, not experimental determination.
+  locator: chemistry section; script and execution receipt retained
+  accessed_at: '2026-10-13T23:57:54.827722Z'
+  support: supports
+  snapshot_sha256: c24fb775db91ba76b5838f42853e0da623735eea2215129135dd43accabee6b0
+- evidence_id: registry
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/compound/446841
+  summary: The xref agrees with the full encoded InChI and key. The synonym response
+    supplies no name; registry agreement does not validate class-level biological
+    joins.
+  locator: PUG REST properties and synonyms payloads; original fetch receipts in /private/tmp/npmech-carotenoid-review-wTUdYJ
+  accessed_at: '2026-10-13T23:57:54.828052Z'
+  support: supports
+  snapshot_sha256: 0fec32ec555e23e6775094907b4de26d17af3f893bbb8a8231bebfa3967c2a7e
+findings:
+- finding_id: F1
+  issue_key: carotenoid-generic-class-structure-collapse
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Sixteen carotenoid class concepts collapse onto one unsupported exact structure
+  description: The same C46H90O6 glycoside is attached to sixteen generic entries
+    whose studies concern different products, including C50 decaprenoxanthin and a
+    C30 pathway. Source repetition of CID446841 is not evidence of shared exact identity.
+    Each source concept and occurrence needs separate re-adjudication; no automatic
+    split or replacement graph is established.
+  target_ids:
+  - naturalproductmech:mibig-8426508598
+  field_paths:
+  - label
+  - chemical_structure
+  - source_concepts
+  - producer_organisms
+  - biosynthetic_gene_clusters
+  - occurrences
+  evidence_ids:
+  - current
+  - prior
+  - scope
+  - tests
+  - implementation
+  - primary
+  - registry
+  rule_id: Individual structure, exact identity and compound-specific origin/BGC gates
+  native_severity: blocker
+  normalization_reason: The owner denotes an exact structure while material labels/biological
+    claims concern different products.
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Maintained source or generation owner; no direct generated patch
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Maintained source or generation owner; no direct generated patch
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained source or generation owner; no direct generated patch
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_lotus.py
+    role: Maintained source or generation owner; no direct generated patch
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained source or generation owner; no direct generated patch
+  previous_occurrences:
+  - repository: CultureBotAI/NaturalProductMech
+    review_id: 20261013T235754Z-carotenoid-2
+    finding_id: F1
+  disposition_reason: The cited OPEN curator controversy makes the conflict explicit
+    but does not repair source-product identities or biological joins. Issue952 remains
+    open; no exact structure replacement, merging, evidence upgrade or REVIEWED promotion
+    is asserted.
+actions:
+- action_id: A1
+  finding_ids:
+  - F1
+  target_ids:
+  - naturalproductmech:mibig-8426508598
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Maintained source or generation owner; no direct generated patch
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Maintained source or generation owner; no direct generated patch
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained source or generation owner; no direct generated patch
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_lotus.py
+    role: Maintained source or generation owner; no direct generated patch
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained source or generation owner; no direct generated patch
+  description: 'Track #952; add an explicit cited unresolved curator discussion, then
+    obtain exact primary structures and implement reviewed source correction/withholding
+    with source pins. Re-audit all affected biological joins. Preserve exact registry
+    xrefs and unresolved stereochemistry; no guessed replacement.'
+  acceptance_checks:
+  - Each source concept has exact primary compound/experiment support or explicit
+    maintained withholding.
+  - LOTUS occurrences are independently re-audited; no old-key claim transfer.
+  - Native/engineered and deposit strain context remain explicit; strict/reproduction/QC
+    pass; linked successor review adjudicates the finding.
+  generator: Maintained correction path plus guarded canary/re-emission; never direct
+    generated patch
+assessments:
+- assessment_id: classification
+  area: representation
+  topic: Claim-local BGC classes
+  outcome: supported
+  target_ids:
+  - naturalproductmech:mibig-8426508598
+  evidence_ids:
+  - current
+  - scope
+  - implementation
+  - tests
+  summary: Per-cluster classes match their own pinned source; record-level union and
+    computed filing are unchanged.
+- assessment_id: identity
+  area: identity
+  topic: Exact-product conflict remains open
+  outcome: concern
+  target_ids:
+  - naturalproductmech:mibig-8426508598
+  evidence_ids:
+  - current
+  - prior
+  - primary
+  - registry
+  - chemistry
+  summary: Explicit OPEN qualification is not exact-source adjudication. Preserve
+    the identity blocker and conservative native status.
+limitations:
+- Scoped disposition only, not completion of primary scientific review or a new owner
+  coverage increment.
+- All predecessor primary-access and occurrence limitations remain; no alternative
+  retrieval after access denial.
+- Working-tree source hashes attest current inspected bytes, not that changes were
+  present in base1131b6f7. That base is already durable on main.
+- Focused, strict and scope checks have passed. Final full QC, reproduction and review-contract
+  gates still follow before merge.
+related_reviews:
+- repository: CultureBotAI/NaturalProductMech
+  review_id: 20261013T235754Z-carotenoid-2
+  relationship: Exact predecessor; scoped finding disposition.
+```

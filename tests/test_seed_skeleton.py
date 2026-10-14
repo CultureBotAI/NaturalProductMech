@@ -476,6 +476,44 @@ CHEBI_ROW = {
 }
 
 
+@pytest.mark.parametrize("reverse", [False, True])
+@pytest.mark.parametrize("second_classes,expected", [
+    ("terpene", ["TERPENE"]),
+    ("NRPS|PKS|NRPS", ["NRPS", "PKS"]),
+    ("", []),
+    ("unmapped-class", []),
+])
+def test_bgc_classes_are_local_to_each_cluster(reverse, second_classes, expected):
+    accessions = ["BGC0000002", "BGC0000001"] if reverse else ["BGC0000001", "BGC0000002"]
+    rows = [
+        {**MIBIG_ROW, "mibig_accession": accessions[0], "bgc_classes": "PKS"},
+        {**MIBIG_ROW, "mibig_accession": accessions[1], "bgc_classes": second_classes},
+    ]
+    doc, = seed.build_records({"mibig_compounds": rows})
+    classes = {cluster["accession"]: cluster.get("bgc_class", [])
+               for cluster in doc["biosynthetic_gene_clusters"]}
+    assert classes == {f"mibig:{accessions[0]}": ["PKS"], f"mibig:{accessions[1]}": expected}
+    assert set(doc["bgc_class"]) == {"PKS", *expected}
+
+
+def test_all_seeded_cluster_classes_match_their_own_pinned_source():
+    inventories = seed.read_inventories()
+    expected = {}
+    for row in inventories["mibig_compounds"]:
+        classes = list(dict.fromkeys(
+            seed.BGC_CLASS_MAP[value.strip()] for value in row["bgc_classes"].split("|")
+            if value.strip() in seed.BGC_CLASS_MAP))
+        accession = "mibig:" + row["mibig_accession"]
+        assert expected.setdefault(accession, classes) == classes
+    for doc in seed.build_records(inventories):
+        union = set()
+        for cluster in doc.get("biosynthetic_gene_clusters", []):
+            classes = cluster.get("bgc_class", [])
+            assert classes == expected[cluster["accession"]], (doc["identifier"], cluster["accession"])
+            union.update(classes)
+        assert set(doc.get("bgc_class", [])) == union
+
+
 @pytest.mark.parametrize("producer_reference,occurrence_doi", [
     ("DOI:10.1128/JB.181.24.7588-7596.1999", "10.1128/JB.181.24.7588-7596.1999"),
     ("PMID:10601218", "10.1128/JB.181.24.7588-7596.1999"),

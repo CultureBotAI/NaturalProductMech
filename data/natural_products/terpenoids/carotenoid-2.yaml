@@ -627,6 +627,35 @@ discussions:
     BGC0000642, BGC0000643, BGC0000644, BGC0000645, BGC0000647, BGC0000648, BGC0000649.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+- discussion_id: curator-carotenoid-generic-class-structure-collapse
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: Which individual products and experimental contexts belong to the sixteen
+    generic carotenoid source concepts?
+  rationale: 'All sixteen MIBiG concepts attach a generic carotenoid label to the
+    same C46H90O6 glycoside (PubChem CID446841). The encoded graph has one nonaromatic
+    carbon-carbon double bond. The cited studies concern distinct products: PMID11432736
+    identifies C50 decaprenoxanthin in Corynebacterium glutamicum, while PMID18820900
+    describes a C30 pathway in Halobacillus halophilus. Matching source registry keys
+    cannot establish all sixteen producer/locus joins or the nine LOTUS occurrences
+    for this exact structure. PMID11200234 also requires explicit engineered-expression
+    context rather than assuming detectable native production. Re-adjudicate each
+    concept and occurrence from exact primary structures and experiments, preserving
+    unresolved stereochemistry. No replacement graph or blanket evidence-grade upgrade
+    is justified here.'
+  evidence:
+  - reference: PMID:11432736
+    explanation: Inspected primary abstract reports C50 decaprenoxanthin and functional
+      complementation.
+  - reference: PMID:18820900
+    explanation: Inspected primary abstract reports a C30 carotenoid pathway, not
+      the stored C46 glycoside.
+  - reference: PMID:11200234
+    explanation: Inspected primary abstract describes activation of cryptic crt genes
+      by increased copy number and regulator expression.
+  - reference: https://github.com/CultureBotAI/NaturalProductMech/issues/952
+    explanation: Tracks unresolved exact-product remediation; this discussion does
+      not resolve the finding.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -640,3 +669,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T23:59:03Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Document confirmed carotenoid identity conflicts and required exact-product
+    adjudication (#952); preserve structures, source assertions and SEEDED status.
+  llm_assisted: true
