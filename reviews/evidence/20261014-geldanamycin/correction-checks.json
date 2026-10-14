@@ -1,0 +1,162 @@
+{
+  "passed": {
+    "strict-final": {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/natural_products/polyketides/geldanamycin-2.yaml",
+        "data/natural_products/polyketides/geldanamycin.yaml",
+        "--out",
+        "/private/tmp/npmech-geldanamycin-review-YbtmRU/strict-final.tsv"
+      ],
+      "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+      "started_at": "2026-10-14T03:09:40.072652Z",
+      "finished_at": "2026-10-14T03:09:43.528644Z",
+      "exit_code": 0,
+      "log": "/private/tmp/npmech-geldanamycin-review-YbtmRU/strict-final.log",
+      "log_sha256": "687a56555db406cd59b06be9328c347bd0df2a772b19856841b94673c83a077a"
+    },
+    "focused-final": {
+      "command": [
+        "uv",
+        "run",
+        "pytest",
+        "tests/test_lotus_exclusions.py",
+        "tests/test_geldanamycin_curation.py",
+        "tests/test_xref_exclusions.py",
+        "tests/test_bioassay_exclusions.py",
+        "tests/test_structure_corrections.py",
+        "-q"
+      ],
+      "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+      "started_at": "2026-10-14T03:10:36.238364Z",
+      "finished_at": "2026-10-14T03:11:03.401109Z",
+      "exit_code": 0,
+      "log": "/private/tmp/npmech-geldanamycin-review-YbtmRU/focused-final.log",
+      "log_sha256": "5263339aa56892afe50ba8a97bd6dce5fb785afbc140b53c1e9b925b0a08e8b2"
+    },
+    "replay-tests": {
+      "command": [
+        "uv",
+        "run",
+        "pytest",
+        "tests/test_geldanamycin_replay.py",
+        "-q"
+      ],
+      "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+      "started_at": "2026-10-14T03:14:49.257517Z",
+      "finished_at": "2026-10-14T03:14:51.806884Z",
+      "exit_code": 0,
+      "log": "/private/tmp/npmech-geldanamycin-review-YbtmRU/replay-tests.log",
+      "log_sha256": "251725e388979478477cbeef1b7dd19538bdb3f1e4c40019fcbf7b3743bde213"
+    },
+    "replay-hardened": {
+      "command": [
+        "env",
+        "RDBASE=/private/tmp/npmech-rdkit-2026.03.5/share/RDKit",
+        "PYTHONPATH=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/lib/python3.13/site-packages",
+        "/private/tmp/npmech-rdkit-2026.03.5/bin/python",
+        "reviews/evidence/20261014-geldanamycin/replay_sources.py",
+        "--output",
+        "/private/tmp/npmech-geldanamycin-review-YbtmRU/replayed-hardened.json"
+      ],
+      "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+      "started_at": "2026-10-14T03:14:50.453346Z",
+      "finished_at": "2026-10-14T03:14:53.586489Z",
+      "exit_code": 0,
+      "log": "/private/tmp/npmech-geldanamycin-review-YbtmRU/replay-hardened.log",
+      "log_sha256": "d9c4fbe68f2fe21a8177bf6f8b9d0dd2e16491bc86f6de798aa4a8069a4adde0"
+    },
+    "labels-final": {
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+      "started_at": "2026-10-14T03:17:33.443614Z",
+      "finished_at": "2026-10-14T03:19:19.573646Z",
+      "exit_code": 0,
+      "log": "/private/tmp/npmech-geldanamycin-review-YbtmRU/labels-final.log",
+      "log_sha256": "3a35478c0f50d04f173e629252d86cf81839ab6d9d291ca88a9631d93d0cca64"
+    },
+    "qc-final": {
+      "command": [
+        "just",
+        "qc"
+      ],
+      "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+      "started_at": "2026-10-14T03:10:49.653453Z",
+      "finished_at": "2026-10-14T03:27:56.289474Z",
+      "exit_code": 0,
+      "log": "/private/tmp/npmech-geldanamycin-review-YbtmRU/qc-final.log",
+      "log_sha256": "0f384f2992c5174855004f4ba69f51e982e25239757fd5663cb415244210c288"
+    },
+    "delta": {
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "/private/tmp/npmech-geldanamycin-review-YbtmRU/audit_delta.py"
+      ],
+      "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+      "started_at": "2026-10-14T03:10:32.280973Z",
+      "finished_at": "2026-10-14T03:10:32.915467Z",
+      "exit_code": 0,
+      "log": "/private/tmp/npmech-geldanamycin-review-YbtmRU/delta.log",
+      "log_sha256": "2c0d1294379b13a00f9a4c5ad28004fe9f3b69122affd78839deb27b3569d68b"
+    }
+  },
+  "earlier_failed_attempts": {
+    "lint": {
+      "command": [
+        "uv",
+        "run",
+        "ruff",
+        "check",
+        "."
+      ],
+      "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+      "started_at": "2026-10-14T03:07:33.693736Z",
+      "finished_at": "2026-10-14T03:07:33.883505Z",
+      "exit_code": 1,
+      "log": "/private/tmp/npmech-geldanamycin-review-YbtmRU/lint.log",
+      "log_sha256": "45f1323850cdd78ba6b1e589bdb04679bc2c139ce1bfcdbfaaf1bb844ecabb85"
+    },
+    "focused": {
+      "command": [
+        "uv",
+        "run",
+        "pytest",
+        "tests/test_lotus_exclusions.py",
+        "tests/test_geldanamycin_curation.py",
+        "tests/test_xref_exclusions.py",
+        "tests/test_bioassay_exclusions.py",
+        "tests/test_structure_corrections.py",
+        "-q"
+      ],
+      "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+      "started_at": "2026-10-14T03:06:57.505483Z",
+      "finished_at": "2026-10-14T03:07:46.609292Z",
+      "exit_code": 1,
+      "log": "/private/tmp/npmech-geldanamycin-review-YbtmRU/focused.log",
+      "log_sha256": "de87c1352d6e6d87f4f48c441e2604cb8874fb568c2c19182cc91d9cc605c2fd"
+    },
+    "qc": {
+      "command": [
+        "just",
+        "qc"
+      ],
+      "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+      "started_at": "2026-10-14T03:09:05.374458Z",
+      "finished_at": "2026-10-14T03:09:50.161796Z",
+      "exit_code": 1,
+      "log": "/private/tmp/npmech-geldanamycin-review-YbtmRU/qc.log",
+      "log_sha256": "d37d262a25c5733586f19babed4d60abb407a46d1ce6f7ccd7d71ca236dd390d"
+    }
+  },
+  "failure_explanations": {
+    "lint": "Unused import in archival capture script; preserved original bytes in .py.txt and removed import from runnable copy.",
+    "focused": "Unrelated single-record fixture needed to drop the new corpus-specific decision table; production guard retained.",
+    "qc": "README statistics writer had not finished before the check took its input snapshot; serial rerun passed."
+  }
+}

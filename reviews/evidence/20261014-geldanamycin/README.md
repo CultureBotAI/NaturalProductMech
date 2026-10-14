@@ -18,6 +18,8 @@ reviews' script hash. The `.py` copy differs only by removing an unused import
 for repository lint. `replay_sources.py` explicitly verifies and executes the
 archival script in a fresh temporary directory, reads the seven source TSVs from
 the exact historical Git base, and checks the entire derived result for equality.
+It also compares both retained owner snapshots with their historical raw YAML
+and rejects external graph refs or any mismatch, independently of the manifest.
 It requires the project's pinned RDKit 2026.03.5 runtime:
 
 ```bash

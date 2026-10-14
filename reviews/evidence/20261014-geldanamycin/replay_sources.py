@@ -9,12 +9,25 @@ import sys
 import tempfile
 from pathlib import Path
 
+import yaml
+
 PACK = Path(__file__).resolve().parent
+
+
+def verify_owner_snapshots(repo, pack, base):
+    for slug in ("geldanamycin-2", "geldanamycin"):
+        path = f"data/natural_products/polyketides/{slug}.yaml"
+        data = subprocess.check_output(["git", "-C", str(repo), "show", f"{base}:{path}"])
+        owner = yaml.safe_load(data)
+        snapshot = json.loads((pack / (slug + "-resolved.json")).read_text())
+        if owner.get("causal_graph_refs") or owner != snapshot:
+            raise ValueError(f"Snapshot does not match exact historical inline owner: {slug}")
 
 
 def replay(repo, output):
     manifest = json.loads((PACK / "manifest.json").read_text())
     expected = json.loads((PACK / "source-inspection.json").read_text())
+    verify_owner_snapshots(repo, PACK, manifest["base"])
     with tempfile.TemporaryDirectory(prefix="geldanamycin-replay-") as work:
         work = Path(work)
         for name, digest in manifest["retained"].items():
