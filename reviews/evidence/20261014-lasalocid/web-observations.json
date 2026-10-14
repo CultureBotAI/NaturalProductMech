@@ -1,0 +1,51 @@
+{
+  "recorded_at": "2026-10-14T04:06:24.142784Z",
+  "timestamp_note": "Recording time after source inspection. The web tool did not return exact request timestamps.",
+  "inspected": [
+    {
+      "reference": "DOI:10.1128/AEM.02915-10",
+      "url": "https://journals.asm.org/doi/10.1128/aem.02915-10",
+      "locator": "Fermentation, extraction, and chemical analysis; Chemical identification of polyether ionophores from strains identified as positive for the polyether epoxidase gene",
+      "summary": "The primary report identifies FXJ1.172 lasalocid A by mass 590 Da, UV maximum 304 nm and MS2 comparison to JCM3373. Culture/extraction methods are specified. No claim that this proves each absolute stereocenter or the complete KT591188 locus."
+    },
+    {
+      "reference": "DOI:10.1271/bbb.80631",
+      "url": "https://www.jstage.jst.go.jp/article/bbb/advpub/0/advpub_80631/_pdf/-char/en",
+      "locator": "Advance-view PDF, methods pages1-2, Figure1/Table1 page3, sequential cyclic ether formation page6; pages2 and3 visually inspected locally",
+      "summary": "ATCC35851/pKSL links to AB449340. Gene-inactivation attempts failed; Lsd19 biochemical evidence is distinguished from predictions. Scheme1 depicts free-acid lasalocid and isolasalocid separately; it is not an experimental sodium-salt stereochemical reassignment."
+    },
+    {
+      "reference": "DOI:10.1039/C29700000071",
+      "url": "https://pubs.rsc.org/en/content/articlelanding/1970/c2/c29700000071",
+      "locator": "Publisher abstract only",
+      "summary": "Abstract says structure and absolute configuration of X-537A were determined, but gives no organism or auditable structure assignment. Original isolation/stereochemistry not certified."
+    }
+  ],
+  "access_stops": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10100954/",
+      "result": "Browser/reCAPTCHA challenge; no alternate full-text retrieval. Indexed search excerpts remained leads, not assessed primary text."
+    },
+    {
+      "url": "https://pubs.acs.org/doi/10.1021/ja8040543",
+      "result": "HTTP403; primary abstract was already inspected through PubMed. No alternate full-text retrieval."
+    },
+    {
+      "url": "https://pubs.rsc.org/en/home/nonjavascriptversion",
+      "result": "HTTP403 after original article landing abstract was inspected. No further RSC retrieval."
+    },
+    {
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/cbic.200800585",
+      "result": "Tool inaccessible; status unspecified. Primary abstract inspected, not full text."
+    },
+    {
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/ejoc.201600297",
+      "result": "Tool inaccessible; status unspecified. Search lead only, not assessed full text."
+    }
+  ],
+  "tooling": [
+    "Web screenshot requests for the accessible2009 PDF timed out; downloaded PDF rendered successfully with existing PyMuPDF and pages2/3 inspected.",
+    "pdftotext not on PATH or at usual Homebrew paths. PyMuPDF unavailable in repo env; used existing /private/tmp/aimech-pdf-read/bin/python without changing dependencies.",
+    "uv chemistry extra has no macOS x86_64 wheel for pinned RDKit2026.03.5; existing exact-version environment used successfully. Failure receipt retained."
+  ]
+}

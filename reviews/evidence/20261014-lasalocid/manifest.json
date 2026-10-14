@@ -1,0 +1,119 @@
+{
+  "base": "64c095104e5352fb88ad3177c47995ccfd4275d5",
+  "owners": {
+    "lasalocid-before.yaml": {
+      "path": "data/natural_products/polyketides/lasalocid.yaml",
+      "git_revision": "64c095104e5352fb88ad3177c47995ccfd4275d5"
+    },
+    "lasalocid-2-before.yaml": {
+      "path": "data/natural_products/polyketides/lasalocid-2.yaml",
+      "git_revision": "64c095104e5352fb88ad3177c47995ccfd4275d5"
+    }
+  },
+  "retrievals": {
+    "BGC0000086.5.json": {
+      "url": "https://mibig.secondarymetabolites.org/repository/BGC0000086.5/annotations.json",
+      "started_at": "2026-10-14T03:59:00.102276Z",
+      "status": 200,
+      "final_url": "https://mibig.secondarymetabolites.org/repository/BGC0000086.5/annotations.json",
+      "content_type": "application/json",
+      "finished_at": "2026-10-14T03:59:01.256394Z",
+      "sha256": "6bfdab1b76d8d2fa7bd75bd846a8283ca6017a09051f588b333682cd4ba144c7",
+      "bytes": 1582
+    },
+    "BGC0000087.5.json": {
+      "url": "https://mibig.secondarymetabolites.org/repository/BGC0000087.5/annotations.json",
+      "started_at": "2026-10-14T03:59:03.385910Z",
+      "status": 200,
+      "final_url": "https://mibig.secondarymetabolites.org/repository/BGC0000087.5/annotations.json",
+      "content_type": "application/json",
+      "finished_at": "2026-10-14T03:59:03.997101Z",
+      "sha256": "14a317e7076931d2f6e37d817b540f5de7bed7801c53a718e816be05cd1c0a99",
+      "bytes": 1939
+    },
+    "BGC0001648.5.json": {
+      "url": "https://mibig.secondarymetabolites.org/repository/BGC0001648.5/annotations.json",
+      "started_at": "2026-10-14T03:59:06.794315Z",
+      "status": 200,
+      "final_url": "https://mibig.secondarymetabolites.org/repository/BGC0001648.5/annotations.json",
+      "content_type": "application/json",
+      "finished_at": "2026-10-14T03:59:07.350787Z",
+      "sha256": "3aab14980429e3cbcd3976a6c82e1a51a1e979d51e8696eeb9a648d12a3f9139",
+      "bytes": 1711
+    },
+    "genbank.xml": {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=AB449340.1,FM173265.1,KT591188.1&rettype=gb&retmode=xml",
+      "started_at": "2026-10-14T03:59:20.165263Z",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=AB449340.1,FM173265.1,KT591188.1&rettype=gb&retmode=xml",
+      "content_type": "text/xml",
+      "finished_at": "2026-10-14T03:59:20.723050Z",
+      "sha256": "b9ed775e6f9f32f06877b051f3d33970ec6071d2956045f567b59e78b32c5b18",
+      "bytes": 615677
+    },
+    "taxonomy.xml": {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=324833,1931,1883&retmode=xml",
+      "started_at": "2026-10-14T03:59:22.857244Z",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=324833,1931,1883&retmode=xml",
+      "content_type": "text/xml; charset=UTF-8",
+      "finished_at": "2026-10-14T03:59:23.179267Z",
+      "sha256": "e1f3b51050ad851dff2350877dd2fadd4ff35537fdf72160e8a0f667aabd144f",
+      "bytes": 8879
+    },
+    "taxonomy-fxj.xml": {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=710705&retmode=xml",
+      "started_at": "2026-10-14T04:02:28.389030Z",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=710705&retmode=xml",
+      "content_type": "text/xml; charset=UTF-8",
+      "finished_at": "2026-10-14T04:02:28.675999Z",
+      "sha256": "111756ce9d75e97aeae1f4b2336780173de341eb9a9dc43a515140cc703ceaac",
+      "bytes": 2386
+    },
+    "chebi-92181.json": {
+      "url": "https://www.ebi.ac.uk/chebi/backend/api/public/compound/92181/",
+      "started_at": "2026-10-14T03:59:09.823809Z",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/chebi/backend/api/public/compound/92181/",
+      "content_type": "application/json",
+      "finished_at": "2026-10-14T03:59:10.755914Z",
+      "sha256": "2ac7af3d70359bd8e7f5bd358161fcef05bc96e212a8139d231fddf414a0a86a",
+      "bytes": 12198
+    },
+    "pubchem-2724110.json": {
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2724110/property/InChI,InChIKey,MolecularFormula,IUPACName/JSON",
+      "started_at": "2026-10-14T03:59:14.927940Z",
+      "status": 200,
+      "final_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2724110/property/InChI,InChIKey,MolecularFormula,IUPACName/JSON",
+      "content_type": "application/json",
+      "finished_at": "2026-10-14T03:59:15.315891Z",
+      "sha256": "a41b25a7ed67deb62673f2bab168e104fe8648e9ae5c92e030f6a3ca92498560",
+      "bytes": 604
+    }
+  },
+  "primary2009": {
+    "url": "https://www.jstage.jst.go.jp/article/bbb/advpub/0/advpub_80631/_pdf/-char/en",
+    "started_at": "2026-10-14T04:00:56.706882Z",
+    "status": 200,
+    "final_url": "https://www.jstage.jst.go.jp/article/bbb/advpub/0/advpub_80631/_pdf/-char/en",
+    "content_type": "application/pdf;charset=UTF-8",
+    "finished_at": "2026-10-14T04:00:58.728023Z",
+    "sha256": "ca760420cc5eb183366c6f9c5a1345238dbe8be5a83aa649f7fe4f7c7d28e8db",
+    "bytes": 336309
+  },
+  "files": {
+    "BGC0000086.5.json": "6bfdab1b76d8d2fa7bd75bd846a8283ca6017a09051f588b333682cd4ba144c7",
+    "BGC0000087.5.json": "14a317e7076931d2f6e37d817b540f5de7bed7801c53a718e816be05cd1c0a99",
+    "BGC0001648.5.json": "3aab14980429e3cbcd3976a6c82e1a51a1e979d51e8696eeb9a648d12a3f9139",
+    "README.md": "c586511ab3a66715fad3c1a2ad44bbe5c4d8f777fe9d7560bf1d923c743c88ef",
+    "chebi-92181.json": "2ac7af3d70359bd8e7f5bd358161fcef05bc96e212a8139d231fddf414a0a86a",
+    "genbank.xml": "b9ed775e6f9f32f06877b051f3d33970ec6071d2956045f567b59e78b32c5b18",
+    "lasalocid-2-before.yaml": "79b95ce009f3cac2cbd631f63e7ed8d5b0ac6c269b5cfeb7fd055407f5e4fb24",
+    "lasalocid-before.yaml": "e7240d0a9c3926f085bd34497dc51bdacb998f809bc5c5f9fca1000e7bc93bd4",
+    "pubchem-2724110.json": "a41b25a7ed67deb62673f2bab168e104fe8648e9ae5c92e030f6a3ca92498560",
+    "taxonomy-fxj.xml": "111756ce9d75e97aeae1f4b2336780173de341eb9a9dc43a515140cc703ceaac",
+    "taxonomy.xml": "e1f3b51050ad851dff2350877dd2fadd4ff35537fdf72160e8a0f667aabd144f",
+    "web-observations.json": "4564c404dd6c053a165b28d6f23408b21ee1f4b16de452fb5631e753256a8e6b"
+  }
+}
