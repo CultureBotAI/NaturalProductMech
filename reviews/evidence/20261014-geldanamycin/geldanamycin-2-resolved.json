@@ -1,0 +1,390 @@
+{
+  "identifier": "naturalproductmech:mibig-905ccbc6f4",
+  "label": "geldanamycin",
+  "chemical_structure": {
+    "smiles": "CO[C@H]1C[C@H](C)CC2=C(OC)C(=O)C=C(NC(=O)\\C(C)=C\\C=C/[C@H](OC)[C@@H](CC(N)=O)\\C(C)=C\\[C@H](C)[C@H]1O)C2=O",
+    "standard_inchi": "InChI=1S/C30H42N2O8/c1-16-11-21-28(36)22(15-23(33)29(21)40-7)32-30(37)17(2)9-8-10-24(38-5)20(14-26(31)34)18(3)13-19(4)27(35)25(12-16)39-6/h8-10,13,15-16,19-20,24-25,27,35H,11-12,14H2,1-7H3,(H2,31,34)(H,32,37)/b10-8-,17-9+,18-13+/t16-,19+,20+,24+,25+,27-/m1/s1",
+    "standard_inchi_key": "QSAMODLUYGNFJU-LEBIDKMGSA-N",
+    "stereo_complete": true,
+    "structure_source": "MIBIG",
+    "structure_source_id": "mibig:BGC0000066"
+  },
+  "np_pathway": "POLYKETIDES",
+  "biosynthesis_origin": "NATURAL_PRODUCT",
+  "np_classification": {
+    "tool": "NPClassifier",
+    "tool_version": "npclassifier.gnps2.org@2026-09-07",
+    "pathway_results": [
+      "Polyketides"
+    ],
+    "superclass_results": [
+      "Macrolides"
+    ],
+    "class_results": [
+      "Ansa macrolides"
+    ],
+    "is_glycoside": false
+  },
+  "occurrence_taxon_groups": [
+    "ACTINOBACTERIAL"
+  ],
+  "occurrences": [
+    {
+      "taxon_id": "NCBITaxon:1912",
+      "taxon_label": "Streptomyces hygroscopicus",
+      "taxon_source": "NCBITaxon",
+      "source": "LOTUS",
+      "evidence": [
+        {
+          "reference": "DOI:10.1016/S0378-1097(02)01148-5",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "LOTUS structure-organism-reference triple. LOTUS reports that the compound was found in the organism; it does not assert that the organism produces it."
+        }
+      ],
+      "notes": "Wikidata organism http://www.wikidata.org/entity/Q3975996 This taxon is also recorded as a producer. Production and occurrence are distinct claims; their citations may refer to the same publication. Publication independence has not been established."
+    }
+  ],
+  "bioactivities": [
+    {
+      "assay": "Experimentally measured binding affinity data (Kd) for protein-ligand complexes derived from PDB",
+      "evidence": [
+        {
+          "reference": "PMID:11931608",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic Chemistry; assay type Other."
+        }
+      ],
+      "call": "ACTIVE",
+      "measurement_type": "KD",
+      "value": 1.2,
+      "units": "uM",
+      "activity_class": "ENZYME_INHIBITOR"
+    },
+    {
+      "assay": "Fluorescence Polarization Assay (FPA) from Article 10.1111/cbdd.12371: \"Discovery of novel 17-phenylethylaminegeldanamycin derivatives as potent Hsp90 inhibitors.\"",
+      "evidence": [
+        {
+          "reference": "PMID:24903735",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "PubChem BioAssay AID 1801076, deposited by BindingDB; assay type Confirmatory."
+        }
+      ],
+      "call": "ACTIVE",
+      "measurement_type": "IC50",
+      "value": 0.14,
+      "units": "uM",
+      "target_enzyme": "UniProtKB:Q58FG1"
+    },
+    {
+      "assay": "HTS assay for small molecules that inhibit ELG1-dependent DNA repair in human embryonic kidney (HEK293T) cells expressing luciferase-tagged ELG1: Hit Confirmation",
+      "evidence": [
+        {
+          "reference": "pubchem.aid:624248",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "PubChem BioAssay AID 624248, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession AAH15051 was left ungrounded because PubChem did not provide a UniProtKB accession."
+        }
+      ],
+      "call": "ACTIVE",
+      "measurement_type": "OTHER",
+      "value": 1.4068,
+      "units": "uM"
+    },
+    {
+      "assay": "Inhibitors of the vitamin D receptor (VDR): qHTS",
+      "evidence": [
+        {
+          "reference": "pubchem.aid:504847",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "PubChem BioAssay AID 504847, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_001017535 was left ungrounded because PubChem did not provide a UniProtKB accession."
+        }
+      ],
+      "call": "NOT_DETERMINED",
+      "measurement_type": "OTHER",
+      "value": 79.4328,
+      "units": "uM"
+    },
+    {
+      "assay": "qHTS Assay for Inhibitors of Fructose-1,6-bisphosphate Aldolase from Giardia Lamblia",
+      "evidence": [
+        {
+          "reference": "pubchem.aid:2451",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "PubChem BioAssay AID 2451, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession 2ISV_A was left ungrounded because PubChem did not provide a UniProtKB accession."
+        }
+      ],
+      "call": "ACTIVE",
+      "measurement_type": "OTHER",
+      "value": 3.5397,
+      "units": "uM",
+      "activity_class": "ENZYME_INHIBITOR"
+    },
+    {
+      "assay": "qHTS for Inducers of the Endoplasmic Reticulum Stress Response (ERSR) in Human Glioma: qHTS",
+      "evidence": [
+        {
+          "reference": "pubchem.aid:602332",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "PubChem BioAssay AID 602332, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession CAQ08732 was left ungrounded because PubChem did not provide a UniProtKB accession."
+        }
+      ],
+      "call": "NOT_DETERMINED",
+      "measurement_type": "OTHER",
+      "value": 35.4813,
+      "units": "uM"
+    },
+    {
+      "assay": "qHTS for Inhibitors of binding or entry into cells for Lassa Virus",
+      "evidence": [
+        {
+          "reference": "pubchem.aid:720533",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "PubChem BioAssay AID 720533, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency."
+        }
+      ],
+      "call": "ACTIVE",
+      "measurement_type": "OTHER",
+      "value": 17.7828,
+      "units": "uM",
+      "activity_class": "ENZYME_INHIBITOR"
+    },
+    {
+      "assay": "qHTS for Inhibitors of binding or entry into cells for Marburg Virus",
+      "evidence": [
+        {
+          "reference": "pubchem.aid:720532",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "PubChem BioAssay AID 720532, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession B45705 was left ungrounded because PubChem did not provide a UniProtKB accession."
+        }
+      ],
+      "call": "ACTIVE",
+      "measurement_type": "OTHER",
+      "value": 15.8489,
+      "units": "uM",
+      "activity_class": "ENZYME_INHIBITOR"
+    },
+    {
+      "assay": "qHTS for inhibitors of ROR gamma transcriptional activity",
+      "evidence": [
+        {
+          "reference": "pubchem.aid:2551",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "PubChem BioAssay AID 2551, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_035411 was left ungrounded because PubChem did not provide a UniProtKB accession."
+        }
+      ],
+      "call": "NOT_DETERMINED",
+      "measurement_type": "OTHER",
+      "value": 4.4668,
+      "units": "uM"
+    },
+    {
+      "assay": "qHTS screen for small molecules that inhibit ELG1-dependent DNA repair in human embryonic kidney (HEK293T) cells expressing luciferase-tagged ELG1: Hit Confirmation using MMS Stimulated ELG1",
+      "evidence": [
+        {
+          "reference": "pubchem.aid:624249",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "PubChem BioAssay AID 624249, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession AAH15051 was left ungrounded because PubChem did not provide a UniProtKB accession."
+        }
+      ],
+      "call": "ACTIVE",
+      "measurement_type": "OTHER",
+      "value": 1.9872,
+      "units": "uM"
+    },
+    {
+      "assay": "qHTS screen for small molecules that inhibit ELG1-dependent DNA repair: Hit Confirmation with 5FU Viability",
+      "evidence": [
+        {
+          "reference": "pubchem.aid:624250",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "PubChem BioAssay AID 624250, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession AAH15051 was left ungrounded because PubChem did not provide a UniProtKB accession."
+        }
+      ],
+      "call": "NOT_DETERMINED",
+      "measurement_type": "OTHER",
+      "value": 17.7111,
+      "units": "uM"
+    },
+    {
+      "assay": "qHTS screen for small molecules that inhibit ELG1-dependent DNA repair: Hit Confirmation with MMS Viability",
+      "evidence": [
+        {
+          "reference": "pubchem.aid:624251",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "PubChem BioAssay AID 624251, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession AAH15051 was left ungrounded because PubChem did not provide a UniProtKB accession."
+        }
+      ],
+      "call": "ACTIVE",
+      "measurement_type": "OTHER",
+      "value": 14.0684,
+      "units": "uM"
+    },
+    {
+      "assay": "qHTS screen for small molecules that inhibit ELG1-dependent DNA repair: Hit Confirmation with Unstimulated Viability Assay",
+      "evidence": [
+        {
+          "reference": "pubchem.aid:624252",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "PubChem BioAssay AID 624252, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession AAH15051 was left ungrounded because PubChem did not provide a UniProtKB accession."
+        }
+      ],
+      "call": "NOT_DETERMINED",
+      "measurement_type": "OTHER",
+      "value": 4.9917,
+      "units": "uM"
+    },
+    {
+      "assay": "qHTS Assay for Inhibitors of Fructose-1,6-bisphosphate Aldolase from Giardia Lamblia: Coupling assay counterscreen",
+      "evidence": [
+        {
+          "reference": "pubchem.aid:2472",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "PubChem BioAssay AID 2472, deposited by NCGC; assay type Screening. Target accession NP_002037 was left ungrounded because PubChem did not provide a UniProtKB accession."
+        }
+      ],
+      "call": "ACTIVE",
+      "activity_class": "ENZYME_INHIBITOR"
+    }
+  ],
+  "bioactivity_summary": [
+    "ENZYME_INHIBITOR"
+  ],
+  "bgc_class": [
+    "PKS"
+  ],
+  "xrefs": [
+    "npatlas:NPA019914",
+    "pubchem:5288382"
+  ],
+  "producer_taxon_groups": [
+    "ACTINOBACTERIAL"
+  ],
+  "producer_organisms": [
+    {
+      "taxon_id": "NCBITaxon:1912",
+      "taxon_label": "Streptomyces hygroscopicus",
+      "evidence_basis": "SOURCE_ASSERTION",
+      "biosynthetic_gene_cluster": "mibig:BGC0000066",
+      "source": "MIBIG",
+      "source_version": "5",
+      "notes": "Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED; this field grades the taxon claim, which is a different question.",
+      "evidence": [
+        {
+          "reference": "PMID:12586396",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "MIBiG BGC0000066 entry version 5; citation taken from the entry level"
+        }
+      ]
+    }
+  ],
+  "biosynthetic_gene_clusters": [
+    {
+      "accession": "mibig:BGC0000066",
+      "entry_version": "5",
+      "entry_status": "active",
+      "organism_taxon_id": "NCBITaxon:1912",
+      "organism_label": "Streptomyces hygroscopicus",
+      "evidence": [
+        {
+          "reference": "PMID:12586396",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "MIBiG BGC0000066 entry version 5; citation taken from the entry level"
+        }
+      ],
+      "genome_accession": "genbank:AY179507.1",
+      "bgc_class": [
+        "PKS"
+      ],
+      "link_evidence_basis": "CLUSTER_UNSTATED"
+    }
+  ],
+  "source_concepts": [
+    {
+      "source": "MIBIG",
+      "source_id": "BGC0000066",
+      "source_label": "geldanamycin",
+      "source_version": "5",
+      "minted_identifier": "naturalproductmech:mibig-905ccbc6f4"
+    }
+  ],
+  "grounding_status": "MINTED",
+  "grounding_notes": "No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.",
+  "curation_status": "SEEDED",
+  "causal_graphs": [
+    {
+      "graph_id": "geldanamycin-hsp90aa4p-inhibition",
+      "scope": "BIOACTIVITY",
+      "description": "Geldanamycin inhibits human putative heat shock protein HSP 90-alpha A4.",
+      "nodes": [
+        {
+          "node_id": "geldanamycin",
+          "label": "geldanamycin",
+          "node_type": "COMPOUND",
+          "identifier": "naturalproductmech:mibig-905ccbc6f4",
+          "grounding_status": "GROUNDED"
+        },
+        {
+          "node_id": "hsp90aa4p",
+          "label": "human putative heat shock protein HSP 90-alpha A4",
+          "node_type": "PROTEIN",
+          "identifier": "UniProtKB:Q58FG1",
+          "grounding_status": "GROUNDED"
+        }
+      ],
+      "edges": [
+        {
+          "subject": "geldanamycin",
+          "predicate": "inhibits",
+          "object": "hsp90aa4p",
+          "notes": "BindingDB-deposited PubChem BioAssay AID 1801076 maps the exact Standard InChIKey QSAMODLUYGNFJU-LEBIDKMGSA-N to an active 0.14 uM IC50 fluorescence polarization measurement against UniProtKB:Q58FG1; Q58FG1 resolves in UniProtKB to the reviewed human HSP90AA4P gene product.",
+          "evidence": [
+            {
+              "reference": "DOI:10.1111/cbdd.12371",
+              "evidence_type": "PRIMARY_EXPERIMENT",
+              "snippet": "Discovery of Novel 17\u2010Phenylethylaminegeldanamycin Derivatives as Potent Hsp90 Inhibitors",
+              "notes": "PubChem BioAssay AID 1801076 was deposited by BindingDB for PMID 24903735 and reports active geldanamycin inhibition of human HSP90AA4P."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "curation_history": [
+    {
+      "timestamp": "2026-09-10T05:54:12Z",
+      "curator": "seed_from_sources",
+      "action": "SEEDED_FROM_SOURCES",
+      "changes": "Seeded from the committed inventories in data/raw/."
+    },
+    {
+      "timestamp": "2026-09-10T06:50:07Z",
+      "curator": "seed_from_sources",
+      "action": "SEEDED_FROM_SOURCES",
+      "changes": "Seeded from the committed inventories in data/raw/."
+    },
+    {
+      "timestamp": "2026-09-25T03:03:12Z",
+      "curator": "seed_from_sources",
+      "action": "SEEDED_FROM_SOURCES",
+      "changes": "Seeded from the committed inventories in data/raw/."
+    },
+    {
+      "timestamp": "2026-09-26T17:25:51Z",
+      "curator": "codex",
+      "action": "RECORD_CURATED",
+      "changes": "Added a BIOACTIVITY causal graph for geldanamycin inhibition of human putative heat shock protein HSP 90-alpha A4, grounded the protein node to UniProtKB:Q58FG1, and cited DOI:10.1111/cbdd.12371 via the exact BindingDB-deposited PubChem BioAssay row for PMID 24903735.",
+      "llm_assisted": true
+    },
+    {
+      "timestamp": "2026-10-13T07:42:47Z",
+      "curator": "seed_from_sources",
+      "action": "SEEDED_FROM_SOURCES",
+      "changes": "Seeded from the committed inventories and curation tables."
+    },
+    {
+      "timestamp": "2026-10-13T10:44:50Z",
+      "curator": "seed_from_sources",
+      "action": "SEEDED_FROM_SOURCES",
+      "changes": "Seeded from the committed inventories and curation tables."
+    }
+  ]
+}

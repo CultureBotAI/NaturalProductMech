@@ -1,0 +1,706 @@
+schema_version: 1.0.0
+review_id: 20261014T030230Z-geldanamycin
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'geldanamycin: exact-owner partial scientific review'
+started_at: '2026-10-14T02:47:58.284379Z'
+finished_at: '2026-10-14T03:02:30.642883Z'
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: self_review
+  independence_basis: Same campaign assistant; not an independent reviewer.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+native_verdict: SEEDED retained; primary closure incomplete
+scientific_review: true
+summary: Claim-level identity, occurrence and graph checks identify bounded corrections
+  while preserving unresolved product assignment.
+source:
+  git_revision: 06fe27d721baac64909b12adc272528735c5a30a
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: 49e2ab03c7e82013e9d68356de2c9965c9f8517a3408a44124076f4ca1b529cd
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/decisions.tsv
+    sha256: 7214a74975fb2cb65521da18dd14ea1c65665f50060106976dc0db9caf887805
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: a0d43a9ba94c7e0044a5e9bc85f829ad5d010264f44c4a3470739eb7511c9740
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7d3e07b98587b27ec843ce73e7c5cf75b74d6fecb4ab8fdc29ca54fa04352a53
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: 6f879bb9f2c9be6b6e8de8c013dbaebe09075b7e106790ea303a17006761ea11
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: 5b1edc057cdcc732f61de2964cd175fa3bc2dca929c5d2823142f61313545a7e
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: f61d7ba85ffd21837cd2b625f83c4681c4663e72503466b40eba3f4ab0204bc1
+    role: context
+  - path: curation/pubchem_bioassay_exclusions.tsv
+    sha256: 18b61c1e5a69112c99cea1373791cd1ec571b7084bfd9198ab68fa551f5d531a
+    role: context
+  - path: data/natural_products/polyketides/geldanamycin-2.yaml
+    sha256: 5a309fc1b0367ad917bb16b3e880a7d8a1afa00f878dec68ffcc75b6abbfa4ba
+    role: context
+  - path: data/natural_products/polyketides/geldanamycin.yaml
+    sha256: edd0aa782a7d3081497742de08c01e9bdb2a4b7dd770daf3e22c8e076631c4c5
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: 373f049029be3db137e062ff5f872a2400a9d5b423f3e108ea44ebde2f8dcc7d
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: 7b9b9f78f5b14aea9fabb163bbaa9e842920a7e9b07deac8f98c97666e9e23fc
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 3ab166b341e5f3f1eaaee1b2af2485ac575c1a1eab1570bbf1d8d2d3ba76e53e
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: pyproject.toml
+    sha256: 02505a46585e870eac7333f31a6773df51465ef13969d4d490fbc0247931d85c
+    role: context
+  - path: reviews/evidence/20261014-geldanamycin/BGC0000066.5.json
+    sha256: 06bed41a79e0733c4e2e5cf80a26770c131529a0c534633ae6fe61c4a6505b87
+    role: context
+  - path: reviews/evidence/20261014-geldanamycin/BGC0000067.5.json
+    sha256: b03339e73e59800c5fb24a73f0ab92c33f15a8c6b90c7b2cc29742e69de7dbe1
+    role: context
+  - path: reviews/evidence/20261014-geldanamycin/BGC0000068.5.json
+    sha256: 968ef4674a1c82f881f4f84d8c6fd6254fbf2343318f9a3d4b444e6df2e92bfb
+    role: context
+  - path: reviews/evidence/20261014-geldanamycin/P07900.json
+    sha256: b57a75575b2e875c6d022026b886eaa49e002b80a6b9cc388c5898a3c7be7824
+    role: context
+  - path: reviews/evidence/20261014-geldanamycin/Q58FG1.json
+    sha256: 6993f8fc1911ad81dc36667f0dd302880bcb136ff9acbea56a300709c1e99a50
+    role: context
+  - path: reviews/evidence/20261014-geldanamycin/antibioticmech-geldanamycin.yaml
+    sha256: 03d1d932a23a6b3ab7edcebf30888f83c39deaba4ef8420eaedbebd7fa9580cd
+    role: context
+  - path: reviews/evidence/20261014-geldanamycin/assay-1801076-5288382.json
+    sha256: 1c08425f834056624c18073db41d24b799441bcbdb1a59848a96aafd0e12a041
+    role: context
+  - path: reviews/evidence/20261014-geldanamycin/assay-1801076.json
+    sha256: 4dd8fb6a74453cf8c8785355f582690dc4cf575ed6b608f7e7adcbb7582621b7
+    role: context
+  - path: reviews/evidence/20261014-geldanamycin/capture.json
+    sha256: 56594093ca913f2883fd58d72219bb1bf3c4bff712451fb9474f785de504533a
+    role: context
+  - path: reviews/evidence/20261014-geldanamycin/chebi-5292.json
+    sha256: 44eb8aec6f9ef9c2bff3c3c3cde418121546de5f58f46aa9250738448a9d4aa3
+    role: context
+  - path: reviews/evidence/20261014-geldanamycin/chemistry.log
+    sha256: 40cbbed69671767b3c6a5e0fca7f63ddfad66e872c659da0f974227a66a637f6
+    role: context
+  - path: reviews/evidence/20261014-geldanamycin/geldanamycin-2-resolved.json
+    sha256: e7540673c2fb33bda62fc3ea2a9a302ad27dedc88b6ebaa5003bd443ee1789af
+    role: context
+  - path: reviews/evidence/20261014-geldanamycin/geldanamycin-resolved.json
+    sha256: dc5e5ea29c0d86dcfb5abe931565c3151269764c029f5b9cf09e877d62b0f124
+    role: context
+  - path: reviews/evidence/20261014-geldanamycin/imodulondb.log
+    sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+    role: context
+  - path: reviews/evidence/20261014-geldanamycin/inspect_sources.py
+    sha256: 2aaf331ccaef5ac009fc6c53afc76e2af48967209d56c16b1762c04408f49b06
+    role: context
+  - path: reviews/evidence/20261014-geldanamycin/labels.log
+    sha256: 19a4f6cca7894851de23ee2062f52d29b32def53c7b4f59edbc6c45ec4ce9828
+    role: context
+  - path: reviews/evidence/20261014-geldanamycin/manifest.json
+    sha256: 22226d9e166f3b768561a9fc1fc37a4ad077b9236560fb69b1d47bddcf7558e8
+    role: context
+  - path: reviews/evidence/20261014-geldanamycin/pdb-1YET-ligand2.json
+    sha256: f42f925247015999b606dd88e3191b7e5cec5d12e0f20593f761f1728c1a4f86
+    role: context
+  - path: reviews/evidence/20261014-geldanamycin/pdb-1YET-polymer1.json
+    sha256: 63191f237c9e0519ea1c1514cf34fda774d1e813a38a5252790dd3a15d4e6414
+    role: context
+  - path: reviews/evidence/20261014-geldanamycin/pdb-1YET.json
+    sha256: 08ce548cf517af02e67a033bdf649b7fa7bbb4aae6745d57b7e08fca749bd200
+    role: context
+  - path: reviews/evidence/20261014-geldanamycin/pdb-GDM.json
+    sha256: 1cb7e963bdb9849879a63cffabae8c680e85e294d244ebf41f5f93f35a9bcf64
+    role: context
+  - path: reviews/evidence/20261014-geldanamycin/pubchem-5288382.json
+    sha256: 196ac9529706b8d32c5e491cfca9b7f01306b91d0ad8b13f8781e925b014f804
+    role: context
+  - path: reviews/evidence/20261014-geldanamycin/source-inspection.json
+    sha256: ab224a97386131d6ee522ea1810a53e51e875d836b105964f7df5551cad51785
+    role: context
+  - path: reviews/evidence/20261014-geldanamycin/strict.log
+    sha256: ee9d3a6a8a14f99736469803ab50a5c0c3cc571af84ccc03f195df8714d9d536
+    role: context
+  - path: reviews/evidence/20261014-geldanamycin/taxonomy.xml
+    sha256: 82e2822b31c051242b64aa7981f16f9e2a343ab997a5018cfa348c4a0965d36c
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_lotus.py
+    sha256: 8a8c524f60f85d2bb54412ca055a6a45e0d37ec5f4584d8d70be454b8f664290
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/extract_pubchem_bioassay.py
+    sha256: 24f9d794e7cf97c420351cb751f8767f7d81a5f22aed01669b2318d6755e7c00
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/run_qc.py
+    sha256: ff44ed3e40a9b3582eb84e38a81301745ae80d16445756d09a7efb2a480b1abb
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: e810fb0f289bc11d6369c8ac00cc3d0ff6ed96888c13048de478f725e62fab3e
+    role: context
+  - path: src/naturalproductmech/curate/bioassay_exclusions.py
+    sha256: 4a4176e072ac9759aa8a9e88300d7e2de5aaf4ebf30b5c42fcf4c9c0b6cebbb4
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: a8b8834788b4714cf1cb0d1cc410d5c2f88112a32ad8621c8e043f0a4bc38a9d
+    role: context
+  - path: src/naturalproductmech/curate/xref_exclusions.py
+    sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/history.yaml
+    sha256: b01b06f1b9a37db205c26c31ec0fd910690848507c7e1bfb73b424ac0829c52d
+    role: context
+  - path: src/naturalproductmech/schema/mech_shared.yaml
+    sha256: c2e7054fd32635e380c698282bd886a9105861009b9f0474f02bb1b80865e895
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: uv.lock
+    sha256: c62a5739e3ffeb12cc57b3bf12a31dcf9cdfbf00b417f4ba3a801d51ef9efbe3
+    role: context
+targets:
+- target_id: CHEBI:5292
+  path: data/natural_products/polyketides/geldanamycin.yaml
+  label: geldanamycin
+  kind: generated
+  record_class: NaturalProductRecord
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Imported chemical, producer and cluster assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Imported structure-organism-reference triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Pinned ChEBI grounding inventory
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_origins.tsv
+    role: Pinned ChEBI occurrence inventory
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/antibioticmech_inchikeys.tsv
+    role: Pinned sibling exact-structure joins
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated harmonization and grading
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: MIBiG extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_lotus.py
+    role: LOTUS extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Implemented pinned structure corrections
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Implemented exact-context method corrections
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Implemented pinned strain qualifications
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_xref_exclusions.tsv
+    role: Implemented complete-row-pinned PubChem and NPAtlas exclusions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Imported compound-specific assay observations
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_pubchem_bioassay.py
+    role: BioAssay extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_isolates.tsv
+    role: Implemented pinned isolate context
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Implemented full-row-pinned claim-specific citation routing
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/polyketides/geldanamycin.yaml
+    role: Curator-owned inline causal graph; future changes require guarded writer
+      and curation event, not a generated-field hand edit
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/pubchem_bioassay_exclusions.tsv
+    role: Pinned historical assay exclusions
+scope:
+  description: Entire exact owner and resolved inline graph plus bounded source checks.
+  selection: Next exact owner in3115-record campaign; same-name sibling assessed separately.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:5292
+checks:
+- check_id: strict
+  name: strict
+  status: passed
+  required: true
+  exit_code: 0
+  command: just validate-strict data/natural_products/polyketides/geldanamycin-2.yaml
+    data/natural_products/polyketides/geldanamycin.yaml --out /private/tmp/npmech-geldanamycin-review-YbtmRU/strict.tsv
+  target_ids:
+  - CHEBI:5292
+  summary: Passed within recorded scope.
+  scope_note: 2026-10-14T02:47:58.936262Z..2026-10-14T02:48:04.238037Z; manifest/check
+    log hash ee9d3a6a8a14f99736469803ab50a5c0c3cc571af84ccc03f195df8714d9d536
+- check_id: labels
+  name: labels
+  status: passed
+  required: true
+  exit_code: 0
+  command: just validate-products
+  target_ids:
+  - CHEBI:5292
+  summary: Exact recorded command passed; label gate has499 nonblocking warnings and4649
+    no-adapter skips.
+  scope_note: 2026-10-14T02:48:01.767478Z..2026-10-14T02:49:52.490456Z; manifest/check
+    log hash 19a4f6cca7894851de23ee2062f52d29b32def53c7b4f59edbc6c45ec4ce9828
+- check_id: chemistry
+  name: chemistry
+  status: passed
+  required: true
+  exit_code: 0
+  command: env RDBASE=/private/tmp/npmech-rdkit-2026.03.5/share/RDKit PYTHONPATH=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/lib/python3.13/site-packages
+    /private/tmp/npmech-rdkit-2026.03.5/bin/python /private/tmp/npmech-geldanamycin-review-YbtmRU/inspect_sources.py
+  target_ids:
+  - CHEBI:5292
+  summary: Passed within recorded scope.
+  scope_note: 2026-10-14T02:58:56.184878Z..2026-10-14T02:58:59.395008Z; manifest/check
+    log hash 40cbbed69671767b3c6a5e0fca7f63ddfad66e872c659da0f974227a66a637f6
+- check_id: closure
+  name: Full primary identity and source-claim closure
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:5292
+  summary: Primary structure/strain/accession and some occurrence claims remain unresolved;
+    no access bypass.
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/natural_products/polyketides/geldanamycin.yaml
+  summary: Entire raw owner and identical resolved read_natural_product view inspected,
+    including inline graph and history. No external graph refs.
+  locator: Exact base 06fe27d721baac64909b12adc272528735c5a30a
+  accessed_at: '2026-10-14T03:02:30.639274Z'
+  support: supports
+- evidence_id: chemistry
+  kind: validation
+  reference: reviews/evidence/20261014-geldanamycin/source-inspection.json
+  summary: Pinned RDKit2026.03.5 round-trips both structures. QS is C30H42N2O8 with
+    carbon-linked acetamide; QTQ is C29H40N2O9 with carbamate. Each has six specified
+    chiral centers. These are not stereochemical variants of the same connectivity.
+  locator: chemistry; graph atom indices are not paper numbering
+  accessed_at: '2026-10-14T03:02:30.639358Z'
+  support: supports
+  snapshot_sha256: ab224a97386131d6ee522ea1810a53e51e875d836b105964f7df5551cad51785
+- evidence_id: inventories
+  kind: record_content
+  reference: reviews/evidence/20261014-geldanamycin/source-inspection.json
+  summary: 'Full exact-key scans: three MIBiG rows, five LOTUS rows, two NPClassifier
+    rows, one ChEBI structure and one sibling row. No ChEBI origin match after joining
+    exact-key ChEBI IDs. All14 assay rows carry QS key with CID5288382.'
+  locator: inventories; exact raw rows and full-row digests
+  accessed_at: '2026-10-14T03:02:30.639587Z'
+  support: supports
+  snapshot_sha256: ab224a97386131d6ee522ea1810a53e51e875d836b105964f7df5551cad51785
+- evidence_id: registries
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/compound/5288382
+  summary: Current PubChem5288382, ChEBI5292 default structure and PDB GDM all encode
+    QTQ, not QS. MIBiG0066v5 retains QS whereas0067/68v5 retain QTQ. This establishes
+    a cross-reference conflict, not primary structural reassignment.
+  locator: Retained complete registry JSON and receipt hashes in manifest
+  accessed_at: '2026-10-14T02:48:43.473770Z'
+  support: supports
+  snapshot_sha256: 196ac9529706b8d32c5e491cfca9b7f01306b91d0ad8b13f8781e925b014f804
+- evidence_id: bgc
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000067.5/
+  summary: Version5 active entries match native chemistry and taxon. Locus methods
+    empty and bounds0..0 are not meaningful coordinates. SOURCE_ASSERTION and CLUSTER_UNSTATED
+    are faithful source tiers. Primary abstracts name NRRL3602, JCM4427 and17997 respectively;
+    exact accession/strain experiment closure remains incomplete.
+  locator: Entire0066/67/68 version5 JSON; PMID12586396/18600054/18214443 abstracts;
+    primary XML receipt in manifest
+  accessed_at: '2026-10-14T03:02:30.639891Z'
+  support: supports
+- evidence_id: assay
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/bioassay/1801076
+  summary: CID5288382-filtered response reports SID242057189, IC50 0.14uM, Q58FG1
+    and ligand BDBM50008059. Protocol says recombinant Hsp90-alpha. It does not establish
+    activity of QS or primary verification of an HSP90AA4P construct.
+  locator: PC_AssaySubmit.data and assay description
+  accessed_at: '2026-10-14T02:56:45.003132Z'
+  support: refutes
+  snapshot_sha256: 1c08425f834056624c18073db41d24b799441bcbdb1a59848a96aafd0e12a041
+- evidence_id: protein
+  kind: database
+  reference: https://www.uniprot.org/uniprotkb/Q58FG1/entry
+  summary: Q58FG1 is reviewed, but protein existence is5:Uncertain and caution says
+    possible pseudogene product. Reviewed status is not independent experimental confirmation.
+    Paper24903735 abstract concerns Hsp90 derivatives without naming this construct.
+  locator: Q58FG1 entry142/sequence1, caution and primary abstract; not proof the
+    protein cannot exist
+  accessed_at: '2026-10-14T02:48:46.490119Z'
+  support: context_only
+  snapshot_sha256: 6993f8fc1911ad81dc36667f0dd302880bcb136ff9acbea56a300709c1e99a50
+- evidence_id: pdb
+  kind: database
+  reference: https://data.rcsb.org/rest/v1/core/polymer_entity/1YET/1
+  summary: PDB1YET GDM ligand exactly matches QTQ. Human polymer1 maps by SIFTS to
+    P07900 positions9-236, not8-235. Its228-residue deposited sequence differs at
+    current P07900 position63 (PDB T versus UniProt S). Do not infer why. Primary
+    abstract9108479 calls the structural domain9-232; that is distinct from the deposited
+    construct mapping.
+  locator: Entity and chemical component JSON; explicit sequence comparison in source-inspection.json
+  accessed_at: '2026-10-14T02:50:31.369739Z'
+  support: supports
+  snapshot_sha256: 63191f237c9e0519ea1c1514cf34fda774d1e813a38a5252790dd3a15d4e6414
+- evidence_id: fungal
+  kind: primary_source
+  reference: DOI:10.1021/np400889x
+  summary: The Humicola extract yields radicicol/pochonin compounds1-7. Geldanamycin
+    is discussed as a structurally unrelated HSP90 inhibitor inactive in the HIV-reactivation
+    assay. Inspected isolation methods and assay context do not report its fungal
+    isolation; the LOTUS occurrence is unsupported by this citation. No universal
+    absence claim is made.
+  locator: PMC3993908 Results and Discussion; Biological Material; Culture Conditions;
+    Extraction and Isolation; Table2. Not supplement or figure-image inspection.
+  accessed_at: '2026-10-14T02:56:08.135937Z'
+  support: refutes
+  snapshot_sha256: 9472fd6261c0280651597c7ce796c69f9e729d4d93a3b144d11fa44d9da15289
+- evidence_id: taxonomy
+  kind: database
+  reference: reviews/evidence/20261014-geldanamycin/taxonomy.xml
+  summary: NCBI1912 is S.hygroscopicus species;285527 is S.hygroscopicus subsp.duamyceticus
+    subspecies;112175 is Humicola fuscoatra species;9606 is Homo sapiens species.
+    Native source-taxonomic facets and computed NPClassifier axes remain distinct.
+  locator: Taxon records and pinned classification rows
+  accessed_at: '2026-10-14T03:02:30.641125Z'
+  support: supports
+  snapshot_sha256: 82e2822b31c051242b64aa7981f16f9e2a343ab997a5018cfa348c4a0965d36c
+- evidence_id: sibling
+  kind: record_content
+  reference: CultureBotAI/AntibioticMech@74f6cc8362498900f2fe2c13d0b6fdb66dd30976
+  summary: Pinned geldanamycin record carries exact QTQ structure and ANTIVIRAL class,
+    supporting the local seeder join/summary provenance. No independent activity-spectrum
+    review or sibling edit.
+  locator: data/antibiotics/antiviral/geldanamycin.yaml
+  accessed_at: '2026-10-14T03:02:30.641343Z'
+  support: supports
+  snapshot_sha256: 03d1d932a23a6b3ab7edcebf30888f83c39deaba4ef8420eaedbebd7fa9580cd
+- evidence_id: occurrence-papers
+  kind: primary_source
+  reference: PMID:3819734
+  summary: The1986 abstract reports extraction, chromatography and authentic-standard
+    identification of geldanamycin from S.hygroscopicus. PMID23656556 focuses on analogues
+    from17997 and a gdmP mutant, with geldanamycin comparison; exact parent occurrence
+    remains unadjudicated. PMID18214443 and the LOTUS DOI are the same publication,
+    not independent evidence.
+  locator: Complete public abstracts and identifier mappings; no full-text structure
+    certification
+  accessed_at: '2026-10-14T03:02:30.641547Z'
+  support: context_only
+  snapshot_sha256: 8517abcb2d66fd92c9da547b640df649243c75bb4969cbaa1b8c997d1fd70386
+- evidence_id: search
+  kind: search
+  reference: local repository and prior campaign checkpoint
+  summary: Ignored/hidden-inclusive curation/conf/.claude search found only legacy
+    queue entries; prior71-bundle checkpoint hash-verified no exact-owner canonical
+    review. GitHub issue131 already identifies the CID mismatch. No claim that evidence
+    is globally absent.
+  locator: rg --no-ignore --hidden; capture.json; issue131
+  accessed_at: '2026-10-14T03:02:30.642095Z'
+  support: context_only
+  search_scope: Exact keys, geldanamycin label, BGC0000066/67/68; explicit local areas
+    plus prior bundle inventory, ignored files included
+- evidence_id: adapter
+  kind: database
+  reference: reviews/evidence/20261014-geldanamycin/imodulondb.log
+  summary: Full28-dataset inventory has no matching S.hygroscopicus or human dataset;
+    other Streptomyces datasets are not substitutes. Not applicable, not negative
+    biological evidence.
+  locator: Structured adapter dataset listing
+  accessed_at: '2026-10-14T03:02:30.642150Z'
+  support: context_only
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+assessments:
+- assessment_id: structure
+  area: consistency
+  topic: Chemical encoding
+  outcome: supported
+  summary: Stored representations agree; primary absolute configuration is not certified.
+  target_ids:
+  - CHEBI:5292
+  evidence_ids:
+  - owner
+  - chemistry
+- assessment_id: identity
+  area: identity
+  topic: Same-name boundary and registry equivalence
+  outcome: supported
+  summary: ChEBI, PubChem, PDB ligand and source0067/68 agree on exact QTQ structure;
+    no owner merge follows.
+  target_ids:
+  - CHEBI:5292
+  evidence_ids:
+  - chemistry
+  - registries
+  - inventories
+- assessment_id: bgc
+  area: scope
+  topic: Native producer and locus assertions
+  outcome: unknown
+  summary: Versioned assertions are preserved at stated grades, but exact strain/locus
+    experimental closure remains incomplete.
+  target_ids:
+  - CHEBI:5292
+  evidence_ids:
+  - bgc
+  - taxonomy
+- assessment_id: classification
+  area: representation
+  topic: Computed and asserted facets
+  outcome: supported
+  summary: POLYKETIDES/Ansa macrolides is computed; PKS is BGC asserted. Taxonomy
+    is an independent axis, not evidence of occurrence.
+  target_ids:
+  - CHEBI:5292
+  evidence_ids:
+  - inventories
+  - taxonomy
+- assessment_id: activity
+  area: evidence
+  topic: Activities and causal graph
+  outcome: concern
+  summary: QTQ binding edge is supported by exact ligand and protein mapping, but
+    its residue-range note needs correction.
+  target_ids:
+  - CHEBI:5292
+  evidence_ids:
+  - owner
+  - assay
+  - protein
+  - pdb
+- assessment_id: occurrence
+  area: scope
+  topic: Structure-organism citation support
+  outcome: concern
+  summary: Fungal occurrence is unsupported; Streptomyces exact parent and analogue
+    contexts remain bounded primary follow-up.
+  target_ids:
+  - CHEBI:5292
+  evidence_ids:
+  - owner
+  - fungal
+  - occurrence-papers
+  - bgc
+- assessment_id: sibling
+  area: provenance
+  topic: Sibling summary
+  outcome: supported
+  summary: Exact pinned sibling backs imported ANTIVIRAL summary; no local measured
+    antiviral spectrum is inferred.
+  target_ids:
+  - CHEBI:5292
+  evidence_ids:
+  - owner
+  - sibling
+findings:
+- finding_id: fungal-occurrence
+  issue_key: geldanamycin-humicola-comparator-occurrence
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Assay comparator is recorded as a fungal occurrence
+  description: The inspected paper reports fungal radicicol/pochonin isolation and
+    uses geldanamycin as an assay comparator. Exclude only the unsupported LOTUS triple
+    and recompute its facet, retaining raw provenance and other taxa.
+  target_ids:
+  - CHEBI:5292
+  field_paths:
+  - occurrences[0]
+  - occurrence_taxon_groups
+  evidence_ids:
+  - owner
+  - fungal
+  - inventories
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Implement source-pinned LOTUS row exclusion; no current consumed exclusion
+      exists
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Preserved raw assertion, not direct-edit target
+  external_issues:
+  - https://github.com/CultureBotAI/NaturalProductMech/issues/966
+  rule_id: docs/CURATION.md:exact-structure-and-claim-scope
+  native_severity: major
+  normalization_reason: Local exact-structure, claim-specific evidence and provenance
+    rules.
+- finding_id: pdb-range
+  issue_key: geldanamycin-pdb1yet-reference-range
+  category: scope
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: HSP90 reference range is stale and unqualified
+  description: Current SIFTS maps the deposited228-residue construct to P07900 positions9-236,
+    not8-235. Record the current T/S discrepancy at reference63 without asserting
+    an engineered mutation or removing the supported binding edge.
+  target_ids:
+  - CHEBI:5292
+  field_paths:
+  - causal_graphs[0].edges[0].notes
+  evidence_ids:
+  - pdb
+  - owner
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/polyketides/geldanamycin.yaml
+    role: Curator inline edge through guarded writer/event
+  external_issues:
+  - https://github.com/CultureBotAI/NaturalProductMech/issues/967
+  rule_id: docs/CURATION.md:exact-structure-and-claim-scope
+  native_severity: minor
+  normalization_reason: Local exact-structure, claim-specific evidence and provenance
+    rules.
+actions:
+- action_id: address-fungal-occurrence
+  description: The inspected paper reports fungal radicicol/pochonin isolation and
+    uses geldanamycin as an assay comparator. Exclude only the unsupported LOTUS triple
+    and recompute its facet, retaining raw provenance and other taxa.
+  finding_ids:
+  - fungal-occurrence
+  target_ids:
+  - CHEBI:5292
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Implement source-pinned LOTUS row exclusion; no current consumed exclusion
+      exists
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Preserved raw assertion, not direct-edit target
+  acceptance_checks:
+  - Inspect exact evidence and preserve unresolved primary scope.
+  - Use maintained inputs/guarded writers, canary, reproduction and QC for any authorized
+    native change.
+  - Retain immutable reviews; use linked successor observations for dispositions.
+- action_id: address-pdb-range
+  description: Current SIFTS maps the deposited228-residue construct to P07900 positions9-236,
+    not8-235. Record the current T/S discrepancy at reference63 without asserting
+    an engineered mutation or removing the supported binding edge.
+  finding_ids:
+  - pdb-range
+  target_ids:
+  - CHEBI:5292
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/polyketides/geldanamycin.yaml
+    role: Curator inline edge through guarded writer/event
+  acceptance_checks:
+  - Inspect exact evidence and preserve unresolved primary scope.
+  - Use maintained inputs/guarded writers, canary, reproduction and QC for any authorized
+    native change.
+  - Retain immutable reviews; use linked successor observations for dispositions.
+limitations:
+- Primary article and abstract XML are not redistributed. Retrieval receipts identify
+  inspected temporary bytes; summaries specify precise sections.
+- NPAtlas API access previously denied elsewhere in campaign; no bypass or new alternate
+  retrieval.
+- ACS np4000679 search result reports access restriction; public PubMed abstract only.
+  No full-paper adjudication.
+- GenBank source qualifiers, remaining Wikidata entities and primary absolute stereochemistry
+  not independently verified in this partial review.
+- PubMed web open24495105 returned429; already completed public API retrievals are
+  independently recorded.
+- No raw-source refresh, owner merge, replacement assay, scientific status promotion
+  or complete primary biosynthetic validation.
+tags:
+- geldanamycin
+- record-review-campaign
+- partial

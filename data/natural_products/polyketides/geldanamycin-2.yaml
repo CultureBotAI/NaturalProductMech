@@ -34,179 +34,10 @@ occurrences:
   notes: Wikidata organism http://www.wikidata.org/entity/Q3975996 This taxon is also
     recorded as a producer. Production and occurrence are distinct claims; their citations
     may refer to the same publication. Publication independence has not been established.
-bioactivities:
-- assay: Experimentally measured binding affinity data (Kd) for protein-ligand complexes
-    derived from PDB
-  evidence:
-  - reference: PMID:11931608
-    evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic
-      Chemistry; assay type Other.
-  call: ACTIVE
-  measurement_type: KD
-  value: 1.2
-  units: uM
-  activity_class: ENZYME_INHIBITOR
-- assay: 'Fluorescence Polarization Assay (FPA) from Article 10.1111/cbdd.12371: "Discovery
-    of novel 17-phenylethylaminegeldanamycin derivatives as potent Hsp90 inhibitors."'
-  evidence:
-  - reference: PMID:24903735
-    evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 1801076, deposited by BindingDB; assay type Confirmatory.
-  call: ACTIVE
-  measurement_type: IC50
-  value: 0.14
-  units: uM
-  target_enzyme: UniProtKB:Q58FG1
-- assay: 'HTS assay for small molecules that inhibit ELG1-dependent DNA repair in
-    human embryonic kidney (HEK293T) cells expressing luciferase-tagged ELG1: Hit
-    Confirmation'
-  evidence:
-  - reference: pubchem.aid:624248
-    evidence_type: DATABASE_ASSERTION
-    notes: 'PubChem BioAssay AID 624248, deposited by NCGC; assay type Confirmatory.
-      Source endpoint: Potency. Target accession AAH15051 was left ungrounded because
-      PubChem did not provide a UniProtKB accession.'
-  call: ACTIVE
-  measurement_type: OTHER
-  value: 1.4068
-  units: uM
-- assay: 'Inhibitors of the vitamin D receptor (VDR): qHTS'
-  evidence:
-  - reference: pubchem.aid:504847
-    evidence_type: DATABASE_ASSERTION
-    notes: 'PubChem BioAssay AID 504847, deposited by NCGC; assay type Confirmatory.
-      Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_001017535
-      was left ungrounded because PubChem did not provide a UniProtKB accession.'
-  call: NOT_DETERMINED
-  measurement_type: OTHER
-  value: 79.4328
-  units: uM
-- assay: qHTS Assay for Inhibitors of Fructose-1,6-bisphosphate Aldolase from Giardia
-    Lamblia
-  evidence:
-  - reference: pubchem.aid:2451
-    evidence_type: DATABASE_ASSERTION
-    notes: 'PubChem BioAssay AID 2451, deposited by NCGC; assay type Confirmatory.
-      Source endpoint: Potency. Target accession 2ISV_A was left ungrounded because
-      PubChem did not provide a UniProtKB accession.'
-  call: ACTIVE
-  measurement_type: OTHER
-  value: 3.5397
-  units: uM
-  activity_class: ENZYME_INHIBITOR
-- assay: 'qHTS for Inducers of the Endoplasmic Reticulum Stress Response (ERSR) in
-    Human Glioma: qHTS'
-  evidence:
-  - reference: pubchem.aid:602332
-    evidence_type: DATABASE_ASSERTION
-    notes: 'PubChem BioAssay AID 602332, deposited by NCGC; assay type Confirmatory.
-      Source outcome: Inconclusive. Source endpoint: Potency. Target accession CAQ08732
-      was left ungrounded because PubChem did not provide a UniProtKB accession.'
-  call: NOT_DETERMINED
-  measurement_type: OTHER
-  value: 35.4813
-  units: uM
-- assay: qHTS for Inhibitors of binding or entry into cells for Lassa Virus
-  evidence:
-  - reference: pubchem.aid:720533
-    evidence_type: DATABASE_ASSERTION
-    notes: 'PubChem BioAssay AID 720533, deposited by NCGC; assay type Confirmatory.
-      Source endpoint: Potency.'
-  call: ACTIVE
-  measurement_type: OTHER
-  value: 17.7828
-  units: uM
-  activity_class: ENZYME_INHIBITOR
-- assay: qHTS for Inhibitors of binding or entry into cells for Marburg Virus
-  evidence:
-  - reference: pubchem.aid:720532
-    evidence_type: DATABASE_ASSERTION
-    notes: 'PubChem BioAssay AID 720532, deposited by NCGC; assay type Confirmatory.
-      Source endpoint: Potency. Target accession B45705 was left ungrounded because
-      PubChem did not provide a UniProtKB accession.'
-  call: ACTIVE
-  measurement_type: OTHER
-  value: 15.8489
-  units: uM
-  activity_class: ENZYME_INHIBITOR
-- assay: qHTS for inhibitors of ROR gamma transcriptional activity
-  evidence:
-  - reference: pubchem.aid:2551
-    evidence_type: DATABASE_ASSERTION
-    notes: 'PubChem BioAssay AID 2551, deposited by NCGC; assay type Confirmatory.
-      Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_035411
-      was left ungrounded because PubChem did not provide a UniProtKB accession.'
-  call: NOT_DETERMINED
-  measurement_type: OTHER
-  value: 4.4668
-  units: uM
-- assay: 'qHTS screen for small molecules that inhibit ELG1-dependent DNA repair in
-    human embryonic kidney (HEK293T) cells expressing luciferase-tagged ELG1: Hit
-    Confirmation using MMS Stimulated ELG1'
-  evidence:
-  - reference: pubchem.aid:624249
-    evidence_type: DATABASE_ASSERTION
-    notes: 'PubChem BioAssay AID 624249, deposited by NCGC; assay type Confirmatory.
-      Source endpoint: Potency. Target accession AAH15051 was left ungrounded because
-      PubChem did not provide a UniProtKB accession.'
-  call: ACTIVE
-  measurement_type: OTHER
-  value: 1.9872
-  units: uM
-- assay: 'qHTS screen for small molecules that inhibit ELG1-dependent DNA repair:
-    Hit Confirmation with 5FU Viability'
-  evidence:
-  - reference: pubchem.aid:624250
-    evidence_type: DATABASE_ASSERTION
-    notes: 'PubChem BioAssay AID 624250, deposited by NCGC; assay type Confirmatory.
-      Source outcome: Inconclusive. Source endpoint: Potency. Target accession AAH15051
-      was left ungrounded because PubChem did not provide a UniProtKB accession.'
-  call: NOT_DETERMINED
-  measurement_type: OTHER
-  value: 17.7111
-  units: uM
-- assay: 'qHTS screen for small molecules that inhibit ELG1-dependent DNA repair:
-    Hit Confirmation with MMS Viability'
-  evidence:
-  - reference: pubchem.aid:624251
-    evidence_type: DATABASE_ASSERTION
-    notes: 'PubChem BioAssay AID 624251, deposited by NCGC; assay type Confirmatory.
-      Source endpoint: Potency. Target accession AAH15051 was left ungrounded because
-      PubChem did not provide a UniProtKB accession.'
-  call: ACTIVE
-  measurement_type: OTHER
-  value: 14.0684
-  units: uM
-- assay: 'qHTS screen for small molecules that inhibit ELG1-dependent DNA repair:
-    Hit Confirmation with Unstimulated Viability Assay'
-  evidence:
-  - reference: pubchem.aid:624252
-    evidence_type: DATABASE_ASSERTION
-    notes: 'PubChem BioAssay AID 624252, deposited by NCGC; assay type Confirmatory.
-      Source outcome: Inconclusive. Source endpoint: Potency. Target accession AAH15051
-      was left ungrounded because PubChem did not provide a UniProtKB accession.'
-  call: NOT_DETERMINED
-  measurement_type: OTHER
-  value: 4.9917
-  units: uM
-- assay: 'qHTS Assay for Inhibitors of Fructose-1,6-bisphosphate Aldolase from Giardia
-    Lamblia: Coupling assay counterscreen'
-  evidence:
-  - reference: pubchem.aid:2472
-    evidence_type: DATABASE_ASSERTION
-    notes: PubChem BioAssay AID 2472, deposited by NCGC; assay type Screening. Target
-      accession NP_002037 was left ungrounded because PubChem did not provide a UniProtKB
-      accession.
-  call: ACTIVE
-  activity_class: ENZYME_INHIBITOR
-bioactivity_summary:
-- ENZYME_INHIBITOR
 bgc_class:
 - PKS
 xrefs:
 - npatlas:NPA019914
-- pubchem:5288382
 producer_taxon_groups:
 - ACTINOBACTERIAL
 producer_organisms:
@@ -246,37 +77,376 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
-causal_graphs:
-- graph_id: geldanamycin-hsp90aa4p-inhibition
-  scope: BIOACTIVITY
-  description: Geldanamycin inhibits human putative heat shock protein HSP 90-alpha
-    A4.
-  nodes:
-  - node_id: geldanamycin
-    label: geldanamycin
-    node_type: COMPOUND
-    identifier: naturalproductmech:mibig-905ccbc6f4
-    grounding_status: GROUNDED
-  - node_id: hsp90aa4p
-    label: human putative heat shock protein HSP 90-alpha A4
-    node_type: PROTEIN
-    identifier: UniProtKB:Q58FG1
-    grounding_status: GROUNDED
-  edges:
-  - subject: geldanamycin
-    predicate: inhibits
-    object: hsp90aa4p
-    notes: BindingDB-deposited PubChem BioAssay AID 1801076 maps the exact Standard
-      InChIKey QSAMODLUYGNFJU-LEBIDKMGSA-N to an active 0.14 uM IC50 fluorescence
-      polarization measurement against UniProtKB:Q58FG1; Q58FG1 resolves in UniProtKB
-      to the reviewed human HSP90AA4P gene product.
-    evidence:
-    - reference: DOI:10.1111/cbdd.12371
-      evidence_type: PRIMARY_EXPERIMENT
-      snippet: Discovery of Novel 17‐Phenylethylaminegeldanamycin Derivatives as Potent
-        Hsp90 Inhibitors
-      notes: PubChem BioAssay AID 1801076 was deposited by BindingDB for PMID 24903735
-        and reports active geldanamycin inhibition of human HSP90AA4P.
+discussions:
+- discussion_id: source-xref-exclusion-BGC0000066-1-pubchem-5288382
+  kind: CONTROVERSY
+  status: RESOLVED
+  prompt: Does the imported pubchem:5288382 identify this exact structure?
+  resolution_note: 'MIBiG source row BGC0000066:1 asserts pubchem:5288382; the raw
+    inventory is unchanged. This xref is withheld from exact equivalence. CID5288382
+    encodes QTQAWLPCGQOSGP-KSRBKZBZSA-N (C29H40N2O9, carbamate), not this QS owner
+    (C30H42N2O8, carbon-linked acetamide). Withhold the nonexact xref under #131;
+    retain raw assertion, chemistry and NPAtlas xref pending #968. Historical assays
+    and curator graph require separate corrections; no owner merge or replacement
+    identity is established. Source row SHA256 35220e2672310e34eba4d4bd0a60dc4f71c4a68e5559f75b6b634cd5cdc188eb.
+    Curator: codex; date: 2026-10-14.'
+  evidence:
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/5288382
+    evidence_source: database structure; curator interpretation
+    notes: 'MIBiG source row BGC0000066:1 asserts pubchem:5288382; the raw inventory
+      is unchanged. This xref is withheld from exact equivalence. CID5288382 encodes
+      QTQAWLPCGQOSGP-KSRBKZBZSA-N (C29H40N2O9, carbamate), not this QS owner (C30H42N2O8,
+      carbon-linked acetamide). Withhold the nonexact xref under #131; retain raw
+      assertion, chemistry and NPAtlas xref pending #968. Historical assays and curator
+      graph require separate corrections; no owner merge or replacement identity is
+      established. Source row SHA256 35220e2672310e34eba4d4bd0a60dc4f71c4a68e5559f75b6b634cd5cdc188eb.
+      Curator: codex; date: 2026-10-14.'
+- discussion_id: source-bioassay-exclusion-5288382-1801076
+  kind: CONTROVERSY
+  status: RESOLVED
+  prompt: Does imported PubChem AID 1801076, CID 5288382 support activity of this
+    structure?
+  resolution_note: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+    AID 1801076 is withheld from bioactivities; the raw inventory is unchanged. The
+    historical row joins this QS structure to CID5288382, whose inspected structure
+    is QTQAWLPCGQOSGP-KSRBKZBZSA-N. Withhold this exact nonmatching assay row under
+    #131, preserving raw data; do not deny the experiment or transfer it to another
+    owner without adjudication. Primary product identity remains open in #968. Source
+    row SHA256 2ae1e64244c777e313f2b3b136100c2aefa934e5e4510db55393120be1d30920. Curator:
+    codex; date: 2026-10-14.'
+  evidence:
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/5288382
+    evidence_source: database assay protocol; curator interpretation
+    notes: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+      AID 1801076 is withheld from bioactivities; the raw inventory is unchanged.
+      The historical row joins this QS structure to CID5288382, whose inspected structure
+      is QTQAWLPCGQOSGP-KSRBKZBZSA-N. Withhold this exact nonmatching assay row under
+      #131, preserving raw data; do not deny the experiment or transfer it to another
+      owner without adjudication. Primary product identity remains open in #968. Source
+      row SHA256 2ae1e64244c777e313f2b3b136100c2aefa934e5e4510db55393120be1d30920.
+      Curator: codex; date: 2026-10-14.'
+- discussion_id: source-bioassay-exclusion-5288382-2451
+  kind: CONTROVERSY
+  status: RESOLVED
+  prompt: Does imported PubChem AID 2451, CID 5288382 support activity of this structure?
+  resolution_note: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+    AID 2451 is withheld from bioactivities; the raw inventory is unchanged. The historical
+    row joins this QS structure to CID5288382, whose inspected structure is QTQAWLPCGQOSGP-KSRBKZBZSA-N.
+    Withhold this exact nonmatching assay row under #131, preserving raw data; do
+    not deny the experiment or transfer it to another owner without adjudication.
+    Primary product identity remains open in #968. Source row SHA256 df1fafd3841999a209ec3e5ada7a494bcb335978c22933bd80fd1a32e14fd2f9.
+    Curator: codex; date: 2026-10-14.'
+  evidence:
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/5288382
+    evidence_source: database assay protocol; curator interpretation
+    notes: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+      AID 2451 is withheld from bioactivities; the raw inventory is unchanged. The
+      historical row joins this QS structure to CID5288382, whose inspected structure
+      is QTQAWLPCGQOSGP-KSRBKZBZSA-N. Withhold this exact nonmatching assay row under
+      #131, preserving raw data; do not deny the experiment or transfer it to another
+      owner without adjudication. Primary product identity remains open in #968. Source
+      row SHA256 df1fafd3841999a209ec3e5ada7a494bcb335978c22933bd80fd1a32e14fd2f9.
+      Curator: codex; date: 2026-10-14.'
+- discussion_id: source-bioassay-exclusion-5288382-2472
+  kind: CONTROVERSY
+  status: RESOLVED
+  prompt: Does imported PubChem AID 2472, CID 5288382 support activity of this structure?
+  resolution_note: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+    AID 2472 is withheld from bioactivities; the raw inventory is unchanged. The historical
+    row joins this QS structure to CID5288382, whose inspected structure is QTQAWLPCGQOSGP-KSRBKZBZSA-N.
+    Withhold this exact nonmatching assay row under #131, preserving raw data; do
+    not deny the experiment or transfer it to another owner without adjudication.
+    Primary product identity remains open in #968. Source row SHA256 88eb1bbe9a4b79b08a52156903b2febb92bf9993a9ef59e50d4a32059b24544e.
+    Curator: codex; date: 2026-10-14.'
+  evidence:
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/5288382
+    evidence_source: database assay protocol; curator interpretation
+    notes: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+      AID 2472 is withheld from bioactivities; the raw inventory is unchanged. The
+      historical row joins this QS structure to CID5288382, whose inspected structure
+      is QTQAWLPCGQOSGP-KSRBKZBZSA-N. Withhold this exact nonmatching assay row under
+      #131, preserving raw data; do not deny the experiment or transfer it to another
+      owner without adjudication. Primary product identity remains open in #968. Source
+      row SHA256 88eb1bbe9a4b79b08a52156903b2febb92bf9993a9ef59e50d4a32059b24544e.
+      Curator: codex; date: 2026-10-14.'
+- discussion_id: source-bioassay-exclusion-5288382-2551
+  kind: CONTROVERSY
+  status: RESOLVED
+  prompt: Does imported PubChem AID 2551, CID 5288382 support activity of this structure?
+  resolution_note: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+    AID 2551 is withheld from bioactivities; the raw inventory is unchanged. The historical
+    row joins this QS structure to CID5288382, whose inspected structure is QTQAWLPCGQOSGP-KSRBKZBZSA-N.
+    Withhold this exact nonmatching assay row under #131, preserving raw data; do
+    not deny the experiment or transfer it to another owner without adjudication.
+    Primary product identity remains open in #968. Source row SHA256 09444fc47ae32c7920edb92d0532487bb0dd2ddfda6f80e3f1694a01991948b8.
+    Curator: codex; date: 2026-10-14.'
+  evidence:
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/5288382
+    evidence_source: database assay protocol; curator interpretation
+    notes: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+      AID 2551 is withheld from bioactivities; the raw inventory is unchanged. The
+      historical row joins this QS structure to CID5288382, whose inspected structure
+      is QTQAWLPCGQOSGP-KSRBKZBZSA-N. Withhold this exact nonmatching assay row under
+      #131, preserving raw data; do not deny the experiment or transfer it to another
+      owner without adjudication. Primary product identity remains open in #968. Source
+      row SHA256 09444fc47ae32c7920edb92d0532487bb0dd2ddfda6f80e3f1694a01991948b8.
+      Curator: codex; date: 2026-10-14.'
+- discussion_id: source-bioassay-exclusion-5288382-504847
+  kind: CONTROVERSY
+  status: RESOLVED
+  prompt: Does imported PubChem AID 504847, CID 5288382 support activity of this structure?
+  resolution_note: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+    AID 504847 is withheld from bioactivities; the raw inventory is unchanged. The
+    historical row joins this QS structure to CID5288382, whose inspected structure
+    is QTQAWLPCGQOSGP-KSRBKZBZSA-N. Withhold this exact nonmatching assay row under
+    #131, preserving raw data; do not deny the experiment or transfer it to another
+    owner without adjudication. Primary product identity remains open in #968. Source
+    row SHA256 ddad4c6da83dc3a321f2650930c36803356f2aae9e8f2dedec639c6a3e7b9050. Curator:
+    codex; date: 2026-10-14.'
+  evidence:
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/5288382
+    evidence_source: database assay protocol; curator interpretation
+    notes: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+      AID 504847 is withheld from bioactivities; the raw inventory is unchanged. The
+      historical row joins this QS structure to CID5288382, whose inspected structure
+      is QTQAWLPCGQOSGP-KSRBKZBZSA-N. Withhold this exact nonmatching assay row under
+      #131, preserving raw data; do not deny the experiment or transfer it to another
+      owner without adjudication. Primary product identity remains open in #968. Source
+      row SHA256 ddad4c6da83dc3a321f2650930c36803356f2aae9e8f2dedec639c6a3e7b9050.
+      Curator: codex; date: 2026-10-14.'
+- discussion_id: source-bioassay-exclusion-5288382-602332
+  kind: CONTROVERSY
+  status: RESOLVED
+  prompt: Does imported PubChem AID 602332, CID 5288382 support activity of this structure?
+  resolution_note: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+    AID 602332 is withheld from bioactivities; the raw inventory is unchanged. The
+    historical row joins this QS structure to CID5288382, whose inspected structure
+    is QTQAWLPCGQOSGP-KSRBKZBZSA-N. Withhold this exact nonmatching assay row under
+    #131, preserving raw data; do not deny the experiment or transfer it to another
+    owner without adjudication. Primary product identity remains open in #968. Source
+    row SHA256 6c76c7e9edca5edcd389b0beca9c23a7608968aeb00ca24067d4692b9b6b756a. Curator:
+    codex; date: 2026-10-14.'
+  evidence:
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/5288382
+    evidence_source: database assay protocol; curator interpretation
+    notes: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+      AID 602332 is withheld from bioactivities; the raw inventory is unchanged. The
+      historical row joins this QS structure to CID5288382, whose inspected structure
+      is QTQAWLPCGQOSGP-KSRBKZBZSA-N. Withhold this exact nonmatching assay row under
+      #131, preserving raw data; do not deny the experiment or transfer it to another
+      owner without adjudication. Primary product identity remains open in #968. Source
+      row SHA256 6c76c7e9edca5edcd389b0beca9c23a7608968aeb00ca24067d4692b9b6b756a.
+      Curator: codex; date: 2026-10-14.'
+- discussion_id: source-bioassay-exclusion-5288382-624248
+  kind: CONTROVERSY
+  status: RESOLVED
+  prompt: Does imported PubChem AID 624248, CID 5288382 support activity of this structure?
+  resolution_note: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+    AID 624248 is withheld from bioactivities; the raw inventory is unchanged. The
+    historical row joins this QS structure to CID5288382, whose inspected structure
+    is QTQAWLPCGQOSGP-KSRBKZBZSA-N. Withhold this exact nonmatching assay row under
+    #131, preserving raw data; do not deny the experiment or transfer it to another
+    owner without adjudication. Primary product identity remains open in #968. Source
+    row SHA256 b6789ed8672cfe7fc6c3fcb6c8f3a52fff142333c6fbe712cea68fe88c8a58e2. Curator:
+    codex; date: 2026-10-14.'
+  evidence:
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/5288382
+    evidence_source: database assay protocol; curator interpretation
+    notes: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+      AID 624248 is withheld from bioactivities; the raw inventory is unchanged. The
+      historical row joins this QS structure to CID5288382, whose inspected structure
+      is QTQAWLPCGQOSGP-KSRBKZBZSA-N. Withhold this exact nonmatching assay row under
+      #131, preserving raw data; do not deny the experiment or transfer it to another
+      owner without adjudication. Primary product identity remains open in #968. Source
+      row SHA256 b6789ed8672cfe7fc6c3fcb6c8f3a52fff142333c6fbe712cea68fe88c8a58e2.
+      Curator: codex; date: 2026-10-14.'
+- discussion_id: source-bioassay-exclusion-5288382-624249
+  kind: CONTROVERSY
+  status: RESOLVED
+  prompt: Does imported PubChem AID 624249, CID 5288382 support activity of this structure?
+  resolution_note: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+    AID 624249 is withheld from bioactivities; the raw inventory is unchanged. The
+    historical row joins this QS structure to CID5288382, whose inspected structure
+    is QTQAWLPCGQOSGP-KSRBKZBZSA-N. Withhold this exact nonmatching assay row under
+    #131, preserving raw data; do not deny the experiment or transfer it to another
+    owner without adjudication. Primary product identity remains open in #968. Source
+    row SHA256 ff4d407172666b7258663677c06d39a3bbdefed9ad32ee0e84039628947af784. Curator:
+    codex; date: 2026-10-14.'
+  evidence:
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/5288382
+    evidence_source: database assay protocol; curator interpretation
+    notes: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+      AID 624249 is withheld from bioactivities; the raw inventory is unchanged. The
+      historical row joins this QS structure to CID5288382, whose inspected structure
+      is QTQAWLPCGQOSGP-KSRBKZBZSA-N. Withhold this exact nonmatching assay row under
+      #131, preserving raw data; do not deny the experiment or transfer it to another
+      owner without adjudication. Primary product identity remains open in #968. Source
+      row SHA256 ff4d407172666b7258663677c06d39a3bbdefed9ad32ee0e84039628947af784.
+      Curator: codex; date: 2026-10-14.'
+- discussion_id: source-bioassay-exclusion-5288382-624250
+  kind: CONTROVERSY
+  status: RESOLVED
+  prompt: Does imported PubChem AID 624250, CID 5288382 support activity of this structure?
+  resolution_note: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+    AID 624250 is withheld from bioactivities; the raw inventory is unchanged. The
+    historical row joins this QS structure to CID5288382, whose inspected structure
+    is QTQAWLPCGQOSGP-KSRBKZBZSA-N. Withhold this exact nonmatching assay row under
+    #131, preserving raw data; do not deny the experiment or transfer it to another
+    owner without adjudication. Primary product identity remains open in #968. Source
+    row SHA256 c509e5b3f10cd42ed568d4c8afb9474245df84f0f6948bdcbddea968394cb309. Curator:
+    codex; date: 2026-10-14.'
+  evidence:
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/5288382
+    evidence_source: database assay protocol; curator interpretation
+    notes: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+      AID 624250 is withheld from bioactivities; the raw inventory is unchanged. The
+      historical row joins this QS structure to CID5288382, whose inspected structure
+      is QTQAWLPCGQOSGP-KSRBKZBZSA-N. Withhold this exact nonmatching assay row under
+      #131, preserving raw data; do not deny the experiment or transfer it to another
+      owner without adjudication. Primary product identity remains open in #968. Source
+      row SHA256 c509e5b3f10cd42ed568d4c8afb9474245df84f0f6948bdcbddea968394cb309.
+      Curator: codex; date: 2026-10-14.'
+- discussion_id: source-bioassay-exclusion-5288382-624251
+  kind: CONTROVERSY
+  status: RESOLVED
+  prompt: Does imported PubChem AID 624251, CID 5288382 support activity of this structure?
+  resolution_note: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+    AID 624251 is withheld from bioactivities; the raw inventory is unchanged. The
+    historical row joins this QS structure to CID5288382, whose inspected structure
+    is QTQAWLPCGQOSGP-KSRBKZBZSA-N. Withhold this exact nonmatching assay row under
+    #131, preserving raw data; do not deny the experiment or transfer it to another
+    owner without adjudication. Primary product identity remains open in #968. Source
+    row SHA256 73a30697c8fba0ce44b97b1f2388b0563597cdef6d157de869bb156214cabd64. Curator:
+    codex; date: 2026-10-14.'
+  evidence:
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/5288382
+    evidence_source: database assay protocol; curator interpretation
+    notes: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+      AID 624251 is withheld from bioactivities; the raw inventory is unchanged. The
+      historical row joins this QS structure to CID5288382, whose inspected structure
+      is QTQAWLPCGQOSGP-KSRBKZBZSA-N. Withhold this exact nonmatching assay row under
+      #131, preserving raw data; do not deny the experiment or transfer it to another
+      owner without adjudication. Primary product identity remains open in #968. Source
+      row SHA256 73a30697c8fba0ce44b97b1f2388b0563597cdef6d157de869bb156214cabd64.
+      Curator: codex; date: 2026-10-14.'
+- discussion_id: source-bioassay-exclusion-5288382-624252
+  kind: CONTROVERSY
+  status: RESOLVED
+  prompt: Does imported PubChem AID 624252, CID 5288382 support activity of this structure?
+  resolution_note: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+    AID 624252 is withheld from bioactivities; the raw inventory is unchanged. The
+    historical row joins this QS structure to CID5288382, whose inspected structure
+    is QTQAWLPCGQOSGP-KSRBKZBZSA-N. Withhold this exact nonmatching assay row under
+    #131, preserving raw data; do not deny the experiment or transfer it to another
+    owner without adjudication. Primary product identity remains open in #968. Source
+    row SHA256 f93cc0c25a551dfb1441f4c8fe16f782c75da613ebc268078f1efb83a31ef1d1. Curator:
+    codex; date: 2026-10-14.'
+  evidence:
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/5288382
+    evidence_source: database assay protocol; curator interpretation
+    notes: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+      AID 624252 is withheld from bioactivities; the raw inventory is unchanged. The
+      historical row joins this QS structure to CID5288382, whose inspected structure
+      is QTQAWLPCGQOSGP-KSRBKZBZSA-N. Withhold this exact nonmatching assay row under
+      #131, preserving raw data; do not deny the experiment or transfer it to another
+      owner without adjudication. Primary product identity remains open in #968. Source
+      row SHA256 f93cc0c25a551dfb1441f4c8fe16f782c75da613ebc268078f1efb83a31ef1d1.
+      Curator: codex; date: 2026-10-14.'
+- discussion_id: source-bioassay-exclusion-5288382-720532
+  kind: CONTROVERSY
+  status: RESOLVED
+  prompt: Does imported PubChem AID 720532, CID 5288382 support activity of this structure?
+  resolution_note: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+    AID 720532 is withheld from bioactivities; the raw inventory is unchanged. The
+    historical row joins this QS structure to CID5288382, whose inspected structure
+    is QTQAWLPCGQOSGP-KSRBKZBZSA-N. Withhold this exact nonmatching assay row under
+    #131, preserving raw data; do not deny the experiment or transfer it to another
+    owner without adjudication. Primary product identity remains open in #968. Source
+    row SHA256 e6aa68d6bc15e9c01fd95398b4e874fc83b4d3b788c490b90bf7948f3fe83dee. Curator:
+    codex; date: 2026-10-14.'
+  evidence:
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/5288382
+    evidence_source: database assay protocol; curator interpretation
+    notes: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+      AID 720532 is withheld from bioactivities; the raw inventory is unchanged. The
+      historical row joins this QS structure to CID5288382, whose inspected structure
+      is QTQAWLPCGQOSGP-KSRBKZBZSA-N. Withhold this exact nonmatching assay row under
+      #131, preserving raw data; do not deny the experiment or transfer it to another
+      owner without adjudication. Primary product identity remains open in #968. Source
+      row SHA256 e6aa68d6bc15e9c01fd95398b4e874fc83b4d3b788c490b90bf7948f3fe83dee.
+      Curator: codex; date: 2026-10-14.'
+- discussion_id: source-bioassay-exclusion-5288382-720533
+  kind: CONTROVERSY
+  status: RESOLVED
+  prompt: Does imported PubChem AID 720533, CID 5288382 support activity of this structure?
+  resolution_note: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+    AID 720533 is withheld from bioactivities; the raw inventory is unchanged. The
+    historical row joins this QS structure to CID5288382, whose inspected structure
+    is QTQAWLPCGQOSGP-KSRBKZBZSA-N. Withhold this exact nonmatching assay row under
+    #131, preserving raw data; do not deny the experiment or transfer it to another
+    owner without adjudication. Primary product identity remains open in #968. Source
+    row SHA256 7b4cba58fb925f4c7dcd7c80a4767805dd824c74ff4fd16d5f4156226b029aec. Curator:
+    codex; date: 2026-10-14.'
+  evidence:
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/5288382
+    evidence_source: database assay protocol; curator interpretation
+    notes: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+      AID 720533 is withheld from bioactivities; the raw inventory is unchanged. The
+      historical row joins this QS structure to CID5288382, whose inspected structure
+      is QTQAWLPCGQOSGP-KSRBKZBZSA-N. Withhold this exact nonmatching assay row under
+      #131, preserving raw data; do not deny the experiment or transfer it to another
+      owner without adjudication. Primary product identity remains open in #968. Source
+      row SHA256 7b4cba58fb925f4c7dcd7c80a4767805dd824c74ff4fd16d5f4156226b029aec.
+      Curator: codex; date: 2026-10-14.'
+- discussion_id: source-bioassay-exclusion-5288382-977611
+  kind: CONTROVERSY
+  status: RESOLVED
+  prompt: Does imported PubChem AID 977611, CID 5288382 support activity of this structure?
+  resolution_note: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+    AID 977611 is withheld from bioactivities; the raw inventory is unchanged. The
+    historical row joins this QS structure to CID5288382, whose inspected structure
+    is QTQAWLPCGQOSGP-KSRBKZBZSA-N. Withhold this exact nonmatching assay row under
+    #131, preserving raw data; do not deny the experiment or transfer it to another
+    owner without adjudication. Primary product identity remains open in #968. Source
+    row SHA256 37d1b3dc869f3d333d6be801f726c3e4cf96006bd6ca6750bb12da013464dd16. Curator:
+    codex; date: 2026-10-14.'
+  evidence:
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/5288382
+    evidence_source: database assay protocol; curator interpretation
+    notes: 'PubChem BioAssay source row QSAMODLUYGNFJU-LEBIDKMGSA-N, CID 5288382,
+      AID 977611 is withheld from bioactivities; the raw inventory is unchanged. The
+      historical row joins this QS structure to CID5288382, whose inspected structure
+      is QTQAWLPCGQOSGP-KSRBKZBZSA-N. Withhold this exact nonmatching assay row under
+      #131, preserving raw data; do not deny the experiment or transfer it to another
+      owner without adjudication. Primary product identity remains open in #968. Source
+      row SHA256 37d1b3dc869f3d333d6be801f726c3e4cf96006bd6ca6750bb12da013464dd16.
+      Curator: codex; date: 2026-10-14.'
+- discussion_id: curator-geldanamycin-product-identity
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: Which primary product structure does BGC0000066 represent, and can its owner
+    be migrated?
+  resolution_note: 'Unresolved in issue #968. MIBiG BGC0000066 version 5 encodes C30H42N2O8
+    with carbon-linked acetamide; ChEBI:5292, PubChem CID5288382 and PDB GDM encode
+    the distinct C29H40N2O9 carbamate. The nonexact CID and its 14 historical assay
+    rows are withheld separately under #131. The dependent HSP90AA4P graph was withdrawn,
+    not transferred to CHEBI:5292. Its original PRIMARY_EXPERIMENT claim relied on
+    a database mapping. Q58FG1 is reviewed but UniProt marks protein existence uncertain
+    and cautions about a possible pseudogene product; the deposited protocol describes
+    recombinant Hsp90-alpha. No primary HSP90AA4P construct is established by this
+    review. Preserve the source chemistry, NPAtlas xref and source-tier organism assertions
+    pending primary adjudication; do not infer an owner merge or universal inactivity.'
+  evidence:
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/5288382
+    notes: Current structure is QTQAWLPCGQOSGP-KSRBKZBZSA-N, not the stored QS key.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000066.5/
+    notes: Versioned source retains the original QS structure.
+  - reference: https://pubchem.ncbi.nlm.nih.gov/bioassay/1801076
+    notes: CID-filtered data report 0.14 uM and Q58FG1; the CID is not exact for this
+      owner.
+  - reference: https://www.uniprot.org/uniprotkb/Q58FG1/entry
+    notes: 'Entry142, sequence1: protein existence5 (uncertain); no claim that protein
+      nonexistence is proven.'
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -306,3 +476,14 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-14T03:05:35Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-14T03:06:42Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Withdrew the HSP90AA4P graph based on nonexact CID5288382 evidence (#131);
+    retained exact-product and primary construct uncertainty in an open discussion
+    (#968). No chemistry, origin, producer grade or scientific status change.
+  llm_assisted: true

@@ -1,0 +1,267 @@
+{
+  "base": "06fe27d721baac64909b12adc272528735c5a30a",
+  "recorded_at": "2026-10-14T03:02:19.876369Z",
+  "retained": {
+    "source-inspection.json": "ab224a97386131d6ee522ea1810a53e51e875d836b105964f7df5551cad51785",
+    "inspect_sources.py": "2aaf331ccaef5ac009fc6c53afc76e2af48967209d56c16b1762c04408f49b06",
+    "capture.json": "56594093ca913f2883fd58d72219bb1bf3c4bff712451fb9474f785de504533a",
+    "pubchem-5288382.json": "196ac9529706b8d32c5e491cfca9b7f01306b91d0ad8b13f8781e925b014f804",
+    "chebi-5292.json": "44eb8aec6f9ef9c2bff3c3c3cde418121546de5f58f46aa9250738448a9d4aa3",
+    "Q58FG1.json": "6993f8fc1911ad81dc36667f0dd302880bcb136ff9acbea56a300709c1e99a50",
+    "P07900.json": "b57a75575b2e875c6d022026b886eaa49e002b80a6b9cc388c5898a3c7be7824",
+    "pdb-1YET.json": "08ce548cf517af02e67a033bdf649b7fa7bbb4aae6745d57b7e08fca749bd200",
+    "pdb-1YET-polymer1.json": "63191f237c9e0519ea1c1514cf34fda774d1e813a38a5252790dd3a15d4e6414",
+    "pdb-1YET-ligand2.json": "f42f925247015999b606dd88e3191b7e5cec5d12e0f20593f761f1728c1a4f86",
+    "pdb-GDM.json": "1cb7e963bdb9849879a63cffabae8c680e85e294d244ebf41f5f93f35a9bcf64",
+    "assay-1801076.json": "4dd8fb6a74453cf8c8785355f582690dc4cf575ed6b608f7e7adcbb7582621b7",
+    "assay-1801076-5288382.json": "1c08425f834056624c18073db41d24b799441bcbdb1a59848a96aafd0e12a041",
+    "BGC0000066.5.json": "06bed41a79e0733c4e2e5cf80a26770c131529a0c534633ae6fe61c4a6505b87",
+    "BGC0000067.5.json": "b03339e73e59800c5fb24a73f0ab92c33f15a8c6b90c7b2cc29742e69de7dbe1",
+    "BGC0000068.5.json": "968ef4674a1c82f881f4f84d8c6fd6254fbf2343318f9a3d4b444e6df2e92bfb",
+    "geldanamycin-resolved.json": "dc5e5ea29c0d86dcfb5abe931565c3151269764c029f5b9cf09e877d62b0f124",
+    "geldanamycin-2-resolved.json": "e7540673c2fb33bda62fc3ea2a9a302ad27dedc88b6ebaa5003bd443ee1789af",
+    "taxonomy.xml": "82e2822b31c051242b64aa7981f16f9e2a343ab997a5018cfa348c4a0965d36c",
+    "strict.log": "ee9d3a6a8a14f99736469803ab50a5c0c3cc571af84ccc03f195df8714d9d536",
+    "labels.log": "19a4f6cca7894851de23ee2062f52d29b32def53c7b4f59edbc6c45ec4ce9828",
+    "chemistry.log": "40cbbed69671767b3c6a5e0fca7f63ddfad66e872c659da0f974227a66a637f6",
+    "imodulondb.log": "1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549",
+    "antibioticmech-geldanamycin.yaml": "03d1d932a23a6b3ab7edcebf30888f83c39deaba4ef8420eaedbebd7fa9580cd"
+  },
+  "retrievals": {
+    "abstracts.xml.receipt.json": {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=12586396,18600054,18214443,11931608,24903735&rettype=abstract&retmode=xml",
+      "started_at": "2026-10-14T02:48:50.986304Z",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=12586396,18600054,18214443,11931608,24903735&rettype=abstract&retmode=xml",
+      "content_type": "text/xml; charset=UTF-8",
+      "finished_at": "2026-10-14T02:48:51.343881Z",
+      "sha256": "f9c1f1e47492e0f96868ffee31f3f185e29fe344b5fe716e39ba802637f646a3",
+      "bytes": 33258
+    },
+    "taxonomy.xml.receipt.json": {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1912,285527,112175,9606&retmode=xml",
+      "started_at": "2026-10-14T02:57:35.125896Z",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1912,285527,112175,9606&retmode=xml",
+      "content_type": "text/xml; charset=UTF-8",
+      "finished_at": "2026-10-14T02:57:35.521303Z",
+      "sha256": "82e2822b31c051242b64aa7981f16f9e2a343ab997a5018cfa348c4a0965d36c",
+      "bytes": 25513
+    },
+    "abstracts-extra.xml.receipt.json": {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=24495105,23656556,3819734,9108479&retmode=xml",
+      "started_at": "2026-10-14T02:57:37.652368Z",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=24495105,23656556,3819734,9108479&retmode=xml",
+      "content_type": "text/xml; charset=UTF-8",
+      "finished_at": "2026-10-14T02:57:38.153008Z",
+      "sha256": "8517abcb2d66fd92c9da547b640df649243c75bb4969cbaa1b8c997d1fd70386",
+      "bytes": 37552
+    },
+    "BGC0000068.5.json.receipt.json": {
+      "url": "https://mibig.secondarymetabolites.org/repository/BGC0000068.5/annotations.json",
+      "started_at": "2026-10-14T02:50:28.121476Z",
+      "status": 200,
+      "final_url": "https://mibig.secondarymetabolites.org/repository/BGC0000068.5/annotations.json",
+      "content_type": "application/json",
+      "finished_at": "2026-10-14T02:50:28.711598Z",
+      "sha256": "968ef4674a1c82f881f4f84d8c6fd6254fbf2343318f9a3d4b444e6df2e92bfb",
+      "bytes": 1722
+    },
+    "pdb-1YET-ligand2.json.receipt.json": {
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/1YET/2",
+      "started_at": "2026-10-14T02:50:33.746758Z",
+      "status": 200,
+      "final_url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/1YET/2",
+      "content_type": "application/json",
+      "finished_at": "2026-10-14T02:50:33.825528Z",
+      "sha256": "f42f925247015999b606dd88e3191b7e5cec5d12e0f20593f761f1728c1a4f86",
+      "bytes": 403
+    },
+    "BGC0000067.5.json.receipt.json": {
+      "url": "https://mibig.secondarymetabolites.org/repository/BGC0000067.5/annotations.json",
+      "started_at": "2026-10-14T02:50:24.036197Z",
+      "status": 200,
+      "final_url": "https://mibig.secondarymetabolites.org/repository/BGC0000067.5/annotations.json",
+      "content_type": "application/json",
+      "finished_at": "2026-10-14T02:50:24.675164Z",
+      "sha256": "b03339e73e59800c5fb24a73f0ab92c33f15a8c6b90c7b2cc29742e69de7dbe1",
+      "bytes": 1744
+    },
+    "pdb-1YET.json.receipt.json": {
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1YET",
+      "started_at": "2026-10-14T02:48:48.462920Z",
+      "status": 200,
+      "final_url": "https://data.rcsb.org/rest/v1/core/entry/1YET",
+      "content_type": "application/json",
+      "finished_at": "2026-10-14T02:48:48.717349Z",
+      "sha256": "08ce548cf517af02e67a033bdf649b7fa7bbb4aae6745d57b7e08fca749bd200",
+      "bytes": 11113
+    },
+    "BGC0000066.5.json.receipt.json": {
+      "url": "https://mibig.secondarymetabolites.org/repository/BGC0000066.5/annotations.json",
+      "started_at": "2026-10-14T02:48:40.190106Z",
+      "status": 200,
+      "final_url": "https://mibig.secondarymetabolites.org/repository/BGC0000066.5/annotations.json",
+      "content_type": "application/json",
+      "finished_at": "2026-10-14T02:48:41.246713Z",
+      "sha256": "06bed41a79e0733c4e2e5cf80a26770c131529a0c534633ae6fe61c4a6505b87",
+      "bytes": 1903
+    },
+    "pubchem-5288382.json.receipt.json": {
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5288382/property/InChI,InChIKey,MolecularFormula,IsomericSMILES/JSON",
+      "started_at": "2026-10-14T02:48:43.106751Z",
+      "status": 200,
+      "final_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5288382/property/InChI,InChIKey,MolecularFormula,IsomericSMILES/JSON",
+      "content_type": "application/json",
+      "finished_at": "2026-10-14T02:48:43.473770Z",
+      "sha256": "196ac9529706b8d32c5e491cfca9b7f01306b91d0ad8b13f8781e925b014f804",
+      "bytes": 594
+    },
+    "P07900.json.receipt.json": {
+      "url": "https://rest.uniprot.org/uniprotkb/P07900.json",
+      "started_at": "2026-10-14T02:56:40.740120Z",
+      "status": 200,
+      "final_url": "https://rest.uniprot.org/uniprotkb/P07900.json",
+      "content_type": "application/json",
+      "finished_at": "2026-10-14T02:56:42.331732Z",
+      "sha256": "b57a75575b2e875c6d022026b886eaa49e002b80a6b9cc388c5898a3c7be7824",
+      "bytes": 274267
+    },
+    "Q58FG1.json.receipt.json": {
+      "url": "https://rest.uniprot.org/uniprotkb/Q58FG1.json",
+      "started_at": "2026-10-14T02:48:45.816992Z",
+      "status": 200,
+      "final_url": "https://rest.uniprot.org/uniprotkb/Q58FG1.json",
+      "content_type": "application/json",
+      "finished_at": "2026-10-14T02:48:46.490119Z",
+      "sha256": "6993f8fc1911ad81dc36667f0dd302880bcb136ff9acbea56a300709c1e99a50",
+      "bytes": 11245
+    },
+    "PMC3993908.xml.receipt.json": {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3993908",
+      "started_at": "2026-10-14T02:56:07.747770Z",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3993908",
+      "content_type": "text/xml; charset=UTF-8",
+      "finished_at": "2026-10-14T02:56:08.135937Z",
+      "sha256": "9472fd6261c0280651597c7ce796c69f9e729d4d93a3b144d11fa44d9da15289",
+      "bytes": 92827
+    },
+    "assay-1801076-5288382.json.receipt.json": {
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1801076/JSON?cid=5288382",
+      "started_at": "2026-10-14T02:56:44.455667Z",
+      "status": 200,
+      "final_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1801076/JSON?cid=5288382",
+      "content_type": "application/json",
+      "finished_at": "2026-10-14T02:56:45.003132Z",
+      "sha256": "1c08425f834056624c18073db41d24b799441bcbdb1a59848a96aafd0e12a041",
+      "bytes": 4406
+    },
+    "chebi-5292.json.receipt.json": {
+      "url": "https://www.ebi.ac.uk/chebi/backend/api/public/compound/5292/",
+      "started_at": "2026-10-14T02:56:37.212004Z",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/chebi/backend/api/public/compound/5292/",
+      "content_type": "application/json",
+      "finished_at": "2026-10-14T02:56:38.779717Z",
+      "sha256": "44eb8aec6f9ef9c2bff3c3c3cde418121546de5f58f46aa9250738448a9d4aa3",
+      "bytes": 14795
+    },
+    "pdb-1YET-polymer1.json.receipt.json": {
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1YET/1",
+      "started_at": "2026-10-14T02:50:31.154585Z",
+      "status": 200,
+      "final_url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1YET/1",
+      "content_type": "application/json",
+      "finished_at": "2026-10-14T02:50:31.369739Z",
+      "sha256": "63191f237c9e0519ea1c1514cf34fda774d1e813a38a5252790dd3a15d4e6414",
+      "bytes": 170876
+    },
+    "pdb-GDM.json.receipt.json": {
+      "url": "https://data.rcsb.org/rest/v1/core/chemcomp/GDM",
+      "started_at": "2026-10-14T02:50:36.913175Z",
+      "status": 200,
+      "final_url": "https://data.rcsb.org/rest/v1/core/chemcomp/GDM",
+      "content_type": "application/json",
+      "finished_at": "2026-10-14T02:50:36.995365Z",
+      "sha256": "1cb7e963bdb9849879a63cffabae8c680e85e294d244ebf41f5f93f35a9bcf64",
+      "bytes": 6630
+    },
+    "assay-1801076.json.receipt.json": {
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1801076/description/JSON",
+      "started_at": "2026-10-14T02:50:39.028010Z",
+      "status": 200,
+      "final_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1801076/description/JSON",
+      "content_type": "application/json",
+      "finished_at": "2026-10-14T02:50:39.360754Z",
+      "sha256": "4dd8fb6a74453cf8c8785355f582690dc4cf575ed6b608f7e7adcbb7582621b7",
+      "bytes": 3787
+    }
+  },
+  "checks": {
+    "strict": {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/natural_products/polyketides/geldanamycin-2.yaml",
+        "data/natural_products/polyketides/geldanamycin.yaml",
+        "--out",
+        "/private/tmp/npmech-geldanamycin-review-YbtmRU/strict.tsv"
+      ],
+      "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+      "started_at": "2026-10-14T02:47:58.936262Z",
+      "finished_at": "2026-10-14T02:48:04.238037Z",
+      "exit_code": 0,
+      "log": "/private/tmp/npmech-geldanamycin-review-YbtmRU/strict.log",
+      "log_sha256": "ee9d3a6a8a14f99736469803ab50a5c0c3cc571af84ccc03f195df8714d9d536"
+    },
+    "labels": {
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+      "started_at": "2026-10-14T02:48:01.767478Z",
+      "finished_at": "2026-10-14T02:49:52.490456Z",
+      "exit_code": 0,
+      "log": "/private/tmp/npmech-geldanamycin-review-YbtmRU/labels.log",
+      "log_sha256": "19a4f6cca7894851de23ee2062f52d29b32def53c7b4f59edbc6c45ec4ce9828"
+    },
+    "chemistry": {
+      "command": [
+        "env",
+        "RDBASE=/private/tmp/npmech-rdkit-2026.03.5/share/RDKit",
+        "PYTHONPATH=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/lib/python3.13/site-packages",
+        "/private/tmp/npmech-rdkit-2026.03.5/bin/python",
+        "/private/tmp/npmech-geldanamycin-review-YbtmRU/inspect_sources.py"
+      ],
+      "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+      "started_at": "2026-10-14T02:58:56.184878Z",
+      "finished_at": "2026-10-14T02:58:59.395008Z",
+      "exit_code": 0,
+      "log": "/private/tmp/npmech-geldanamycin-review-YbtmRU/chemistry.log",
+      "log_sha256": "40cbbed69671767b3c6a5e0fca7f63ddfad66e872c659da0f974227a66a637f6"
+    },
+    "imodulondb": {
+      "command": [
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/culturebotai-claw/.venv/bin/kg-microbe-sources",
+        "imodulondb",
+        "datasets"
+      ],
+      "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+      "started_at": "2026-10-14T02:48:05.182873Z",
+      "finished_at": "2026-10-14T02:48:05.950690Z",
+      "exit_code": 0,
+      "log": "/private/tmp/npmech-geldanamycin-review-YbtmRU/imodulondb.log",
+      "log_sha256": "1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549"
+    }
+  },
+  "limitations": [
+    "Primary article and abstract XML are not redistributed. Retrieval receipts identify inspected temporary bytes; summaries specify precise sections.",
+    "NPAtlas API access previously denied elsewhere in campaign; no bypass or new alternate retrieval.",
+    "ACS np4000679 search result reports access restriction; public PubMed abstract only. No full-paper adjudication.",
+    "GenBank source qualifiers, remaining Wikidata entities and primary absolute stereochemistry not independently verified in this partial review.",
+    "PubMed web open24495105 returned429; already completed public API retrievals are independently recorded."
+  ]
+}

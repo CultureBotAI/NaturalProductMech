@@ -72,6 +72,11 @@ from naturalproductmech.curate.claim_references import (  # noqa: E402
     load_claim_references,
 )
 from naturalproductmech.curate.curation_event import record_curation_event  # noqa: E402
+from naturalproductmech.curate.lotus_exclusions import (  # noqa: E402
+    load_lotus_exclusions,
+    lotus_exclusion_discussion,
+    lotus_key,
+)
 from naturalproductmech.curate.producer_strains import (  # noqa: E402
     load_producer_isolates,
     load_producer_strains,
@@ -106,6 +111,7 @@ MIBIG_PRODUCER_ISOLATES = CURATION_DIR / "mibig_producer_isolates.tsv"
 MIBIG_XREF_EXCLUSIONS = CURATION_DIR / "mibig_xref_exclusions.tsv"
 MIBIG_CLAIM_REFERENCES = CURATION_DIR / "mibig_claim_references.tsv"
 PUBCHEM_BIOASSAY_EXCLUSIONS = CURATION_DIR / "pubchem_bioassay_exclusions.tsv"
+LOTUS_OCCURRENCE_EXCLUSIONS = CURATION_DIR / "lotus_occurrence_exclusions.tsv"
 
 # MIBiG's cluster vocabulary -> the schema enum. Six values in 4.0; `alkaloid`
 # was removed when compound classification was split from cluster
@@ -397,7 +403,8 @@ def carry_curator_owned_fields(payload: dict[str, Any], existing: dict[str, Any]
         # This adjudication is owned by the pinned curation table, not the YAML.
         if (discussion.get("discussion_id") == "source-structure-correction"
                 or discussion.get("discussion_id", "").startswith(
-                    ("source-xref-exclusion-", "source-bioassay-exclusion-"))):
+                    ("source-xref-exclusion-", "source-bioassay-exclusion-",
+                     "source-lotus-exclusion-"))):
             continue
         previous_discussion = answered.get(discussion.get("discussion_id"))
         if not previous_discussion:
@@ -452,6 +459,8 @@ def read_inventories() -> dict[str, list[dict[str, str]]]:
         inventories[MIBIG_CLAIM_REFERENCES.stem] = read_tsv(MIBIG_CLAIM_REFERENCES)
     if PUBCHEM_BIOASSAY_EXCLUSIONS.exists():
         inventories[PUBCHEM_BIOASSAY_EXCLUSIONS.stem] = read_tsv(PUBCHEM_BIOASSAY_EXCLUSIONS)
+    if LOTUS_OCCURRENCE_EXCLUSIONS.exists():
+        inventories[LOTUS_OCCURRENCE_EXCLUSIONS.stem] = read_tsv(LOTUS_OCCURRENCE_EXCLUSIONS)
     return inventories
 
 
@@ -783,6 +792,10 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     ChEBI. Grounding those is exactly what the next milestone is for, and
     `just worklist` ranks them.
     """
+    lotus_exclusions = load_lotus_exclusions(
+        inventories.get("lotus_occurrences") or [],
+        inventories.get("lotus_occurrence_exclusions") or [])
+    applied_lotus_exclusions: set[tuple[str, str, str]] = set()
     assay_exclusions = load_bioassay_exclusions(
         inventories.get("pubchem_bioassay") or [],
         inventories.get("pubchem_bioassay_exclusions") or [])
@@ -813,6 +826,8 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
         if override.get("action") == "WITHDRAW" and source_counts[identifier] != 1:
             raise ValueError(f"{identifier} WITHDRAW requires exactly one matching source row")
     if not mibig_rows:
+        if lotus_exclusions:
+            raise ValueError("LOTUS exclusions did not reach a record")
         if assay_exclusions:
             raise ValueError("bioassay exclusions did not reach a record")
         return []
@@ -1176,7 +1191,13 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                 if context:
                     occurrence["notes"] = context[:400]
                 occurrences.append(occurrence)
+        excluded_lotus = []
         for row in lotus_by_key.get(key) or []:
+            row_key = lotus_key(row)
+            if row_key in lotus_exclusions:
+                excluded_lotus.append(lotus_exclusions[row_key])
+                applied_lotus_exclusions.add(row_key)
+                continue
             occurrence = {
                 "taxon_id": row["taxon_id"],
                 "taxon_label": row["organism_name"],
@@ -1472,6 +1493,7 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
 
         discussions: list[dict[str, Any]] = [exclusion_discussion(d) for d in excluded_xrefs]
         discussions.extend(bioassay_exclusion_discussion(d) for d in excluded_assays)
+        discussions.extend(lotus_exclusion_discussion(d) for d in excluded_lotus)
         for row in rows:
             if row.get("structure_correction_note"):
                 discussions.append({
@@ -1638,6 +1660,9 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
     else:
         print("taxon_merged.tsv: ABSENT — merged ids left as the sources gave them. "
               "Run `just extract-taxonomy` first if this was not intended.", file=sys.stderr)
+    if lotus_exclusions.keys() - applied_lotus_exclusions:
+        raise ValueError("LOTUS exclusions did not reach a record: "
+                         + repr(sorted(lotus_exclusions.keys() - applied_lotus_exclusions)))
     if xref_exclusions.keys() - applied_exclusions:
         raise ValueError("xref exclusions did not reach a record: "
                          + ", ".join(sorted(xref_exclusions.keys() - applied_exclusions)))

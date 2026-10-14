@@ -1,0 +1,209 @@
+{
+  "started_at": "2026-10-14T02:47:58.284379Z",
+  "base": "06fe27d721baac64909b12adc272528735c5a30a",
+  "prior_checkpoint": "/private/tmp/npmech-fogacin-review-TbRFcN/review-campaign-checkpoint-final.json",
+  "prior_checkpoint_sha256": "26e5ec87ffc39b19121f0c4063bc977b198e17d16e9f3b6ed475b17495a42f30",
+  "verified_owners": 3115,
+  "verified_components": 243,
+  "verified_prior_reviews": 71,
+  "targets": [
+    {
+      "target_id": "naturalproductmech:mibig-905ccbc6f4",
+      "path": "data/natural_products/polyketides/geldanamycin-2.yaml",
+      "label": "geldanamycin",
+      "kind": "generated",
+      "record_class": "NaturalProductRecord",
+      "owner_paths": [
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/mibig_compounds.tsv",
+          "role": "Imported chemical, producer and cluster assertions"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/lotus_occurrences.tsv",
+          "role": "Imported structure-organism-reference triples"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/chebi_structures.tsv",
+          "role": "Pinned ChEBI grounding inventory"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/chebi_origins.tsv",
+          "role": "Pinned ChEBI occurrence inventory"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/npclassifier.tsv",
+          "role": "Pinned computed classification"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/antibioticmech_inchikeys.tsv",
+          "role": "Pinned sibling exact-structure joins"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/seed_from_sources.py",
+          "role": "Generated harmonization and grading"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/extract_mibig.py",
+          "role": "MIBiG extraction"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/extract_lotus.py",
+          "role": "LOTUS extraction"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_structure_corrections.tsv",
+          "role": "Implemented pinned structure corrections"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_locus_evidence_overrides.tsv",
+          "role": "Implemented exact-context method corrections"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_producer_strains.tsv",
+          "role": "Implemented pinned strain qualifications"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_xref_exclusions.tsv",
+          "role": "Implemented complete-row-pinned PubChem and NPAtlas exclusions"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/pubchem_bioassay.tsv",
+          "role": "Imported compound-specific assay observations"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/extract_pubchem_bioassay.py",
+          "role": "BioAssay extraction"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_producer_isolates.tsv",
+          "role": "Implemented pinned isolate context"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_claim_references.tsv",
+          "role": "Implemented full-row-pinned claim-specific citation routing"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/natural_products/polyketides/geldanamycin-2.yaml",
+          "role": "Curator-owned inline causal graph; future changes require guarded writer and curation event, not a generated-field hand edit"
+        }
+      ]
+    },
+    {
+      "target_id": "CHEBI:5292",
+      "path": "data/natural_products/polyketides/geldanamycin.yaml",
+      "label": "geldanamycin",
+      "kind": "generated",
+      "record_class": "NaturalProductRecord",
+      "owner_paths": [
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/mibig_compounds.tsv",
+          "role": "Imported chemical, producer and cluster assertions"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/lotus_occurrences.tsv",
+          "role": "Imported structure-organism-reference triples"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/chebi_structures.tsv",
+          "role": "Pinned ChEBI grounding inventory"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/chebi_origins.tsv",
+          "role": "Pinned ChEBI occurrence inventory"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/npclassifier.tsv",
+          "role": "Pinned computed classification"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/antibioticmech_inchikeys.tsv",
+          "role": "Pinned sibling exact-structure joins"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/seed_from_sources.py",
+          "role": "Generated harmonization and grading"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/extract_mibig.py",
+          "role": "MIBiG extraction"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/extract_lotus.py",
+          "role": "LOTUS extraction"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_structure_corrections.tsv",
+          "role": "Implemented pinned structure corrections"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_locus_evidence_overrides.tsv",
+          "role": "Implemented exact-context method corrections"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_producer_strains.tsv",
+          "role": "Implemented pinned strain qualifications"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_xref_exclusions.tsv",
+          "role": "Implemented complete-row-pinned PubChem and NPAtlas exclusions"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/pubchem_bioassay.tsv",
+          "role": "Imported compound-specific assay observations"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/extract_pubchem_bioassay.py",
+          "role": "BioAssay extraction"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_producer_isolates.tsv",
+          "role": "Implemented pinned isolate context"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_claim_references.tsv",
+          "role": "Implemented full-row-pinned claim-specific citation routing"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/natural_products/polyketides/geldanamycin.yaml",
+          "role": "Curator-owned inline causal graph; future changes require guarded writer and curation event, not a generated-field hand edit"
+        }
+      ]
+    }
+  ]
+}

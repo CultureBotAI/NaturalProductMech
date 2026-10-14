@@ -1,0 +1,71 @@
+"""Capture bounded geldanamycin source checks before curation."""
+import csv
+import hashlib
+import json
+import xml.etree.ElementTree as ET
+from pathlib import Path
+
+import yaml
+from rdkit import Chem, rdBase
+from rdkit.Chem import rdMolDescriptors
+
+W = Path(__file__).parent
+assert rdBase.rdkitVersion == '2026.03.5'
+out = {'rdkit': rdBase.rdkitVersion, 'chemistry': {}, 'inventories': {}}
+keys = set()
+for slug in ('geldanamycin-2', 'geldanamycin'):
+    doc = json.loads((W / (slug + '-resolved.json')).read_text())
+    mol = Chem.MolFromSmiles(doc['chemical_structure']['smiles'])
+    key = Chem.MolToInchiKey(mol)
+    assert key == doc['chemical_structure']['standard_inchi_key']
+    assert Chem.MolToInchi(mol) == doc['chemical_structure']['standard_inchi']
+    centers = Chem.FindMolChiralCenters(mol, includeUnassigned=True)
+    assert all(label != '?' for _, label in centers)
+    out['chemistry'][slug] = dict(key=key, formula=rdMolDescriptors.CalcMolFormula(mol),
+        charge=Chem.GetFormalCharge(mol), centers=centers,
+        carbamate=mol.HasSubstructMatch(Chem.MolFromSmarts('[CX4]-O-C(=O)-N')),
+        carbon_linked_acetamide=mol.HasSubstructMatch(Chem.MolFromSmarts('[CX4]-[CH2]-C(=O)-N')))
+    keys.add(key)
+
+def scan(name, column, values):
+    path = Path('data/raw') / (name + '.tsv')
+    with path.open() as handle:
+        reader = csv.DictReader(handle, delimiter='\t')
+        assert column in reader.fieldnames
+        rows = list(reader)
+    matches = [dict(row_number=i+2, row=row,
+                    row_sha256=hashlib.sha256(json.dumps(row,sort_keys=True,separators=(',',':')).encode()).hexdigest())
+               for i,row in enumerate(rows) if row[column] in values]
+    out['inventories'][name] = dict(rows_scanned=len(rows), join_column=column,
+        join_values=sorted(values), matches=matches)
+    return matches
+
+chebi = scan('chebi_structures', 'standard_inchi_key', keys)
+scan('chebi_origins', 'chebi_id', {m['row']['chebi_id'] for m in chebi})
+for name in ('mibig_compounds', 'lotus_occurrences', 'npclassifier',
+             'antibioticmech_inchikeys', 'pubchem_bioassay'):
+    scan(name, 'standard_inchi_key', keys)
+out['taxonomy'] = [dict(id=t.findtext('TaxId'), name=t.findtext('ScientificName'),rank=t.findtext('Rank'))
+                   for t in ET.parse(W/'taxonomy.xml').findall('Taxon')]
+pdb=json.loads((W/'pdb-1YET-polymer1.json').read_text())
+uniprot=json.loads((W/'P07900.json').read_text())
+seq=pdb['entity_poly']['pdbx_seq_one_letter_code_can']
+region,=pdb['rcsb_polymer_entity_align'][0]['aligned_regions']
+start=region['ref_beg_seq_id']
+assert region['length']==len(seq)==228
+ref=uniprot['sequence']['value'][start-1:start-1+len(seq)]
+out['pdb_mapping']=dict(accession='P07900',source='RCSB/SIFTS',reference_start=start,
+    reference_end=start+len(seq)-1,uniprot_entry_audit=uniprot['entryAudit'],
+    sequence_differences=[dict(reference_position=i+start,pdb=a,uniprot=b)
+                          for i,(a,b) in enumerate(zip(seq,ref,strict=True)) if a!=b])
+out['pubchem']=json.loads((W/'pubchem-5288382.json').read_text())['PropertyTable']['Properties'][0]
+out['chebi']=json.loads((W/'chebi-5292.json').read_text())['default_structure']
+out['pdb_ligand']=json.loads((W/'pdb-GDM.json').read_text())['rcsb_chem_comp_descriptor']
+out['assay']=json.loads((W/'assay-1801076-5288382.json').read_text())['PC_AssaySubmit']['data']
+u=json.loads((W/'Q58FG1.json').read_text())
+out['Q58FG1']=dict(entryType=u['entryType'],proteinExistence=u['proteinExistence'],
+    entryAudit=u['entryAudit'],cautions=[c for c in u['comments'] if c['commentType']=='CAUTION'])
+with (W/'source-inspection.json').open('x') as handle:
+    json.dump(out,handle,indent=2)
+print(json.dumps({k:v for k,v in out.items() if k not in ('inventories','assay')},indent=2))
+print({k:len(v['matches']) for k,v in out['inventories'].items()})

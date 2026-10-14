@@ -23,7 +23,7 @@
 <p class="sub"><span class="mono">naturalproductmech:mibig-905ccbc6f4</span>
   <span class="tag">MINTED</span>
   <span class="tag">SEEDED</span>
-<span class="tag">enzyme inhibitor</span></p>
+</p>
 <div class="note"><strong>Grounding review:</strong> No 3-star ChEBI entry shares this structure, so the record keeps a content-hashed identifier.</div><details class="status-legend"><summary>What these status tags mean</summary>
 <p>Curation status describes a workflow state. SEEDED means the record entered through the source-seeding workflow; it does not imply that no later curation occurred. PROPOSED marks an addition awaiting review; REVIEWED records curator sign-off on identity, structure, filing class and producer claims; DEPRECATED retains a superseded or out-of-scope record. These are workflow decisions, not independently verified human review. Agent-assisted contributions may appear in the <a href="https://github.com/CultureBotAI/NaturalProductMech/commits/main/data/natural_products/polyketides/geldanamycin-2.yaml">record history</a>.</p>
 <p>Grounding describes the identifier mapping: EXACT uses an ontology identity asserted by the source; MINTED keeps a local identifier when no defensible ontology identity is available; REVIEW_NEEDED flags an exact structure whose ontology identity needs adjudication. The grounding note retains any unresolved alternatives. These tags do not establish the strength of producer or activity evidence.</p>
@@ -34,7 +34,7 @@
 <tr><th>Standard InChIKey</th><td class="mono">QSAMODLUYGNFJU-LEBIDKMGSA-N</td></tr>
 <tr><th>SMILES</th><td class="mono">CO[C@H]1C[C@H](C)CC2=C(OC)C(=O)C=C(NC(=O)\C(C)=C\C=C/[C@H](OC)[C@@H](CC(N)=O)\C(C)=C\[C@H](C)[C@H]1O)C2=O</td></tr>
 <tr><th>Stereochemistry</th><td>fully defined</td></tr>
-<tr><th>Cross-references</th><td class="mono">npatlas:NPA019914, pubchem:5288382</td></tr></table></div>
+<tr><th>Cross-references</th><td class="mono">npatlas:NPA019914</td></tr></table></div>
 
 <h2>Filing pathway</h2>
 <p><a href="index.html">Polyketides</a> —
@@ -85,86 +85,12 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
-<h2>Causal graph &mdash; bioactivity <span class="tag">2 nodes, 1 edge</span></h2>
-<p class="sub">Geldanamycin inhibits human putative heat shock protein HSP 90-alpha A4.</p><div class="scroll"><table>
-<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
-<tr>
-  <td>geldanamycin</td>
-  <td>inhibits</td>
-  <td>human putative heat shock protein HSP 90-alpha A4</td>
-  <td>BindingDB-deposited PubChem BioAssay AID 1801076 maps the exact Standard InChIKey QSAMODLUYGNFJU-LEBIDKMGSA-N to an active 0.14 uM IC50 fluorescence polarization measurement against UniProtKB:Q58FG1; Q58FG1 resolves in UniProtKB to the reviewed human HSP90AA4P gene product.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1111/cbdd.12371</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1111/cbdd.12371</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Discovery of Novel 17‐Phenylethylaminegeldanamycin Derivatives as Potent Hsp90 Inhibitors</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801076 was deposited by BindingDB for PMID 24903735 and reports active geldanamycin inhibition of human HSP90AA4P.</dd></dl>
-</li></ul>
-</details></td>
-</tr>
-</table></div>
-<p class="sub">Every edge carries its own citation; an uncited edge is refused
-by the corpus tests.</p>
 
 
-<h2>Bioactivities <span class="tag">14</span></h2>
-<p class="sub">Entries preserve source qualifiers, targets and evidence. Repeated assay names or values are not independent replications; inspect source detail for differences.</p>
-<div class="scroll"><table>
-<tr><th>Assay</th><th>Result</th><th>Target enzyme</th><th>Source detail</th></tr>
-<tr><td>Experimentally measured binding affinity data (Kd) for protein-ligand complexes derived from PDB</td><td>KD 1.2 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>PMID:11931608</summary><dl><dt>assay</dt><dd>Experimentally measured binding affinity data (Kd) for protein-ligand complexes derived from PDB</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:11931608</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 977611, deposited by Shanghai Institute of Organic Chemistry; assay type Other.</dd></dl>
-</li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>KD</dd><dt>value</dt><dd>1.2</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
-</details></td></tr>
-<tr><td>Fluorescence Polarization Assay (FPA) from Article 10.1111/cbdd.12371: &#34;Discovery of novel 17-phenylethylaminegeldanamycin derivatives as potent Hsp90 inhibitors.&#34;</td><td>IC50 0.14 uM; ACTIVE</td><td class="mono">UniProtKB:Q58FG1</td><td><details><summary>PMID:24903735</summary><dl><dt>assay</dt><dd>Fluorescence Polarization Assay (FPA) from Article 10.1111/cbdd.12371: &#34;Discovery of novel 17-phenylethylaminegeldanamycin derivatives as potent Hsp90 inhibitors.&#34;</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>PMID:24903735</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 1801076, deposited by BindingDB; assay type Confirmatory.</dd></dl>
-</li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>IC50</dd><dt>value</dt><dd>0.14</dd><dt>units</dt><dd>uM</dd><dt>target enzyme</dt><dd>UniProtKB:Q58FG1</dd></dl>
-</details></td></tr>
-<tr><td>HTS assay for small molecules that inhibit ELG1-dependent DNA repair in human embryonic kidney (HEK293T) cells expressing luciferase-tagged ELG1: Hit Confirmation</td><td>OTHER 1.4068 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624248</summary><dl><dt>assay</dt><dd>HTS assay for small molecules that inhibit ELG1-dependent DNA repair in human embryonic kidney (HEK293T) cells expressing luciferase-tagged ELG1: Hit Confirmation</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624248</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624248, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession AAH15051 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
-</li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>1.4068</dd><dt>units</dt><dd>uM</dd></dl>
-</details></td></tr>
-<tr><td>Inhibitors of the vitamin D receptor (VDR): qHTS</td><td>OTHER 79.4328 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:504847</summary><dl><dt>assay</dt><dd>Inhibitors of the vitamin D receptor (VDR): qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:504847</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 504847, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_001017535 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
-</li></ul>
-</dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>79.4328</dd><dt>units</dt><dd>uM</dd></dl>
-</details></td></tr>
-<tr><td>qHTS Assay for Inhibitors of Fructose-1,6-bisphosphate Aldolase from Giardia Lamblia</td><td>OTHER 3.5397 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2451</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of Fructose-1,6-bisphosphate Aldolase from Giardia Lamblia</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2451</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2451, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession 2ISV_A was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
-</li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>3.5397</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
-</details></td></tr>
-<tr><td>qHTS for Inducers of the Endoplasmic Reticulum Stress Response (ERSR) in Human Glioma: qHTS</td><td>OTHER 35.4813 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:602332</summary><dl><dt>assay</dt><dd>qHTS for Inducers of the Endoplasmic Reticulum Stress Response (ERSR) in Human Glioma: qHTS</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:602332</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 602332, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession CAQ08732 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
-</li></ul>
-</dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>35.4813</dd><dt>units</dt><dd>uM</dd></dl>
-</details></td></tr>
-<tr><td>qHTS for Inhibitors of binding or entry into cells for Lassa Virus</td><td>OTHER 17.7828 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:720533</summary><dl><dt>assay</dt><dd>qHTS for Inhibitors of binding or entry into cells for Lassa Virus</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:720533</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 720533, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency.</dd></dl>
-</li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>17.7828</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
-</details></td></tr>
-<tr><td>qHTS for Inhibitors of binding or entry into cells for Marburg Virus</td><td>OTHER 15.8489 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:720532</summary><dl><dt>assay</dt><dd>qHTS for Inhibitors of binding or entry into cells for Marburg Virus</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:720532</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 720532, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession B45705 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
-</li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>15.8489</dd><dt>units</dt><dd>uM</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
-</details></td></tr>
-<tr><td>qHTS for inhibitors of ROR gamma transcriptional activity</td><td>OTHER 4.4668 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2551</summary><dl><dt>assay</dt><dd>qHTS for inhibitors of ROR gamma transcriptional activity</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2551</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2551, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession NP_035411 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
-</li></ul>
-</dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>4.4668</dd><dt>units</dt><dd>uM</dd></dl>
-</details></td></tr>
-<tr><td>qHTS screen for small molecules that inhibit ELG1-dependent DNA repair in human embryonic kidney (HEK293T) cells expressing luciferase-tagged ELG1: Hit Confirmation using MMS Stimulated ELG1</td><td>OTHER 1.9872 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624249</summary><dl><dt>assay</dt><dd>qHTS screen for small molecules that inhibit ELG1-dependent DNA repair in human embryonic kidney (HEK293T) cells expressing luciferase-tagged ELG1: Hit Confirmation using MMS Stimulated ELG1</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624249</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624249, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession AAH15051 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
-</li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>1.9872</dd><dt>units</dt><dd>uM</dd></dl>
-</details></td></tr>
-<tr><td>qHTS screen for small molecules that inhibit ELG1-dependent DNA repair: Hit Confirmation with 5FU Viability</td><td>OTHER 17.7111 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624250</summary><dl><dt>assay</dt><dd>qHTS screen for small molecules that inhibit ELG1-dependent DNA repair: Hit Confirmation with 5FU Viability</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624250</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624250, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession AAH15051 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
-</li></ul>
-</dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>17.7111</dd><dt>units</dt><dd>uM</dd></dl>
-</details></td></tr>
-<tr><td>qHTS screen for small molecules that inhibit ELG1-dependent DNA repair: Hit Confirmation with MMS Viability</td><td>OTHER 14.0684 uM; ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624251</summary><dl><dt>assay</dt><dd>qHTS screen for small molecules that inhibit ELG1-dependent DNA repair: Hit Confirmation with MMS Viability</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624251</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624251, deposited by NCGC; assay type Confirmatory. Source endpoint: Potency. Target accession AAH15051 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
-</li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>14.0684</dd><dt>units</dt><dd>uM</dd></dl>
-</details></td></tr>
-<tr><td>qHTS screen for small molecules that inhibit ELG1-dependent DNA repair: Hit Confirmation with Unstimulated Viability Assay</td><td>OTHER 4.9917 uM; NOT_DETERMINED</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:624252</summary><dl><dt>assay</dt><dd>qHTS screen for small molecules that inhibit ELG1-dependent DNA repair: Hit Confirmation with Unstimulated Viability Assay</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:624252</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 624252, deposited by NCGC; assay type Confirmatory. Source outcome: Inconclusive. Source endpoint: Potency. Target accession AAH15051 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
-</li></ul>
-</dd><dt>call</dt><dd>NOT_DETERMINED</dd><dt>measurement type</dt><dd>OTHER</dd><dt>value</dt><dd>4.9917</dd><dt>units</dt><dd>uM</dd></dl>
-</details></td></tr>
-<tr><td>qHTS Assay for Inhibitors of Fructose-1,6-bisphosphate Aldolase from Giardia Lamblia: Coupling assay counterscreen</td><td>ACTIVE</td><td class="mono">Not recorded</td><td><details><summary>pubchem.aid:2472</summary><dl><dt>assay</dt><dd>qHTS Assay for Inhibitors of Fructose-1,6-bisphosphate Aldolase from Giardia Lamblia: Coupling assay counterscreen</dd><dt>evidence</dt><dd><ul><li><dl><dt>reference</dt><dd>pubchem.aid:2472</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>PubChem BioAssay AID 2472, deposited by NCGC; assay type Screening. Target accession NP_002037 was left ungrounded because PubChem did not provide a UniProtKB accession.</dd></dl>
-</li></ul>
-</dd><dt>call</dt><dd>ACTIVE</dd><dt>activity class</dt><dd>ENZYME_INHIBITOR</dd></dl>
-</details></td></tr>
-</table></div>
 
 
+<h2>Open questions <span class="tag">1</span></h2>
+<div class="note"><p><strong>curator-geldanamycin-product-identity</strong> — Which primary product structure does BGC0000066 represent, and can its owner be migrated?</p></div>
 
 <h2>Provenance</h2>
 <div class="scroll"><table>

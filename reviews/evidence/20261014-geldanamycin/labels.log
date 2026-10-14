@@ -1,0 +1,12 @@
+uv run python scripts/validate_id_label_correspondence.py -c conf/id_label_targets.yaml
+
+id↔label correspondence summary:
+          OK_CANONICAL: 13434
+            OK_SYNONYM: 646
+          OK_EXCEPTION: 35
+              MISMATCH: 499
+    SKIPPED_NO_ADAPTER: 4649
+
+⚠️  499 non-blocking id↔label warning(s) (plausibility_severity=warn); see the report for detail.
+
+✅ All id↔label pairs correspond.

@@ -1,0 +1,148 @@
+{
+  "PC_AssaySubmit": {
+    "assay": {
+      "descr": {
+        "aid": {
+          "id": 1801076,
+          "version": 3
+        },
+        "aid_source": {
+          "db": {
+            "name": "BindingDB",
+            "source_id": {
+              "str": "BindingDB_6807_1"
+            }
+          }
+        },
+        "name": "Fluorescence Polarization Assay (FPA) from Article 10.1111/cbdd.12371: \"Discovery of novel 17-phenylethylaminegeldanamycin derivatives as potent Hsp90 inhibitors.\"",
+        "description": [
+          "Briefly, reaction mixes (100 µL) containing 20 mM HEPES (pH 7.3), 50 mM KCl, 2 mM DTT, 5 mM MgCl2, 20 mM Na2MoO4, 0.01% Triton X-100 with 0.1 mg/mL BSA, 50 nM of recombinant Hsp90&#945; protein, 5 nM of GA-FITC, and varying concentrations of tested compounds or GA were added in a low-binding black 96-well plates. After incubation for 5 h, plates were read on Omega POLARstar Multi-Mode Microplate Reader with excitation at 485 nm and emission at 520 nm."
+        ],
+        "comment": [
+          "Compounds with any of Ki, IC50, Kd, or EC50 activity value <= 10uM are labeled as \"Active\".",
+          "If multiple measurements are available for a given compound, it is labeled as \"Active\" if any of the measurements meet the criterion. Activity values are checked in the order of Ki, IC50, Kd, and EC50. The first entry that meets the above activity threshold is used to determine \"Standard Type\", \"Standard Relation\", and \"PubChem Standard Value\". Otherwise, the first non-empty entry will be used to set those values."
+        ],
+        "xref": [
+          {
+            "xref": {
+              "dburl": "https://www.bindingdb.org"
+            }
+          },
+          {
+            "xref": {
+              "asurl": "https://www.bindingdb.org/rwd/jsp/dbsearch/assay.jsp?assayid=1&entryid=6807"
+            }
+          },
+          {
+            "xref": {
+              "pmid": 24903735
+            },
+            "comment": "Discovery of novel 17-phenylethylaminegeldanamycin derivatives as potent Hsp90 inhibitors.",
+            "type": 1
+          }
+        ],
+        "results": [
+          {
+            "tid": 1,
+            "name": "Standard Type",
+            "description": [
+              "Standardized activity type (i.e. Ki, IC50, Kd, or EC50)"
+            ],
+            "type": 4
+          },
+          {
+            "tid": 2,
+            "name": "PubChem Standard Value",
+            "description": [
+              "PubChem standardized value transformed from the value of Ki, IC50, Kd, or EC50. The unit is always micromolar."
+            ],
+            "type": 1,
+            "unit": 5,
+            "ac": true
+          },
+          {
+            "tid": 3,
+            "name": "IC50",
+            "type": 1,
+            "unit": 6
+          },
+          {
+            "tid": 4,
+            "name": "Target Accession(s)",
+            "description": [
+              "Protein accession(s) of target"
+            ],
+            "type": 4,
+            "annot": 21
+          },
+          {
+            "tid": 5,
+            "name": "Ligand",
+            "description": [
+              "BindingDB Ligand"
+            ],
+            "type": 4
+          },
+          {
+            "tid": 6,
+            "name": "Target",
+            "description": [
+              "BindingDB Target"
+            ],
+            "type": 4
+          }
+        ],
+        "revision": 1,
+        "activity_outcome_method": 2,
+        "project_category": 7,
+        "assay_group": [
+          "BDB_ENTRY:6807"
+        ]
+      }
+    },
+    "data": [
+      {
+        "sid": 242057189,
+        "outcome": 2,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": "IC50"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 0.14
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 140
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "sval": "Q58FG1"
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "sval": "BDBM50008059"
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "sval": "Putative heat shock protein HSP 90-alpha A4"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
