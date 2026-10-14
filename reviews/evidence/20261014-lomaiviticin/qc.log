@@ -1,0 +1,33 @@
+uv run python scripts/run_qc.py
+
+=== qc: lint ===
+why: Fail fast on syntax, import, and style defects before expensive checks.
+All checks passed!
+
+=== qc: vendored-sync ===
+why: Governed files must be byte-identical to claw at the pinned ref.
+OK: 22 governed artifacts match the pinned claw revision
+
+=== qc: documentation ===
+why: README's generated statistics must match the corpus a reader would download.
+README statistics block is current
+
+=== qc: raw-data provenance ===
+why: Every committed inventory must retain its source metadata and integrity hash.
+provenance OK: 15 inventories, 0 upstream files, retrieved 2026-10-07
+
+=== qc: source queue ===
+why: An ADOPTED source must be one the pipeline reads under verified redistribution terms.
+source queue OK: 44 sources — 10 adopted, 14 blocked, 18 candidate, 2 evaluating
+next up: discovery-literature (P1, causal_graphs), mite (P2, biosynthetic_pathway), npdia (P2, biosynthetic_pathway)
+
+=== qc: tests ===
+why: Tests cover harmonization rules and corpus-wide invariants validation cannot see.
+........................................................................ [  7%]
+.............................................
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! KeyboardInterrupt !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/lib/python3.13/site-packages/yaml/scanner.py:145: KeyboardInterrupt
+(to show a full traceback on KeyboardInterrupt use --full-trace)
+117 passed in 198.15s (0:03:18)
+qc stopped: tests failed with exit code 2
+error: recipe `qc` failed on line 288 with exit code 2

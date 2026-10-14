@@ -1,0 +1,993 @@
+schema_version: 1.0.0
+review_id: 20261014T053813Z-lomaiviticin-c
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'lomaiviticin-c: exact-owner scientific review'
+started_at: '2026-10-14T04:53:28.046624Z'
+finished_at: '2026-10-14T05:38:13.941087Z'
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: self_review
+  independence_basis: Same campaign assistant; not independent peer review.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+native_verdict: SEEDED unchanged; exact-product identity and primary closure unresolved
+scientific_review: true
+summary: Exact chemical identity conflicts with primary C evidence. Experimental locus
+  provenance also crosses distinct S. pacifica strains. Protein examples are correctly
+  identified; deterministic passes are not scientific sign-off.
+source:
+  git_revision: 7d6b4d16acc9a28e2b4c9de4244f205beb0da157
+  state: git_commit
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: 49e2ab03c7e82013e9d68356de2c9965c9f8517a3408a44124076f4ca1b529cd
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: conf/sibling_pins.yaml
+    sha256: 39a1d007ee65ba546567e8a34b7a309f75270b872809e1f783fe1fcee55866f2
+    role: context
+  - path: curation/decisions.tsv
+    sha256: 7214a74975fb2cb65521da18dd14ea1c65665f50060106976dc0db9caf887805
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: b13a7ba285787190e46af0249a9dcda3860f67e503e15c9e44eb259e6e12ad42
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7d3e07b98587b27ec843ce73e7c5cf75b74d6fecb4ab8fdc29ca54fa04352a53
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: ae92ef7b0de9ac393aa9e11ce118559df722b3ed7031a4e0598438df712049d6
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: 5b1edc057cdcc732f61de2964cd175fa3bc2dca929c5d2823142f61313545a7e
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: curation/pubchem_bioassay_exclusions.tsv
+    sha256: 76f9cbb17e62a270afed637b5058a553cfe85c754c6c9ec406635f12dae572fa
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: bf38e4f0c7e4bcbdf184a4e7b8b024752251e8f34c015c0b82cedca98a8a5729
+    role: context
+  - path: data/natural_products/polyketides/lomaiviticin-c-2.yaml
+    sha256: 618f8df26bf285b92bead90ba24ba344aec6449ed5ebc9cdb0039805ecf2d62e
+    role: context
+  - path: data/natural_products/polyketides/lomaiviticin-c.yaml
+    sha256: 35964eafdc7d11f0b26b5261af5e8b959493d1d7a7d389a743125d1e1947c21e
+    role: target
+  - path: data/natural_products/polyketides/lomaiviticin-d-2.yaml
+    sha256: 74fa9d83a14d4a9e5232d3d5b492bdb332267eaf79c6571bf2afc71c4e7500a4
+    role: context
+  - path: data/natural_products/polyketides/lomaiviticin-d.yaml
+    sha256: 817bfa6ab03ced36961a86db0fd33c63f52fa52e05cd050852b94cc52b4c9f5b
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: 373f049029be3db137e062ff5f872a2400a9d5b423f3e108ea44ebde2f8dcc7d
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: 7b9b9f78f5b14aea9fabb163bbaa9e842920a7e9b07deac8f98c97666e9e23fc
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 90420425c90529cc99b474cb38cfedc7209c0e825b851f105f418868575a0a61
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: pyproject.toml
+    sha256: 02505a46585e870eac7333f31a6773df51465ef13969d4d490fbc0247931d85c
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_lotus.py
+    sha256: 8a8c524f60f85d2bb54412ca055a6a45e0d37ec5f4584d8d70be454b8f664290
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/extract_pubchem_bioassay.py
+    sha256: 24f9d794e7cf97c420351cb751f8767f7d81a5f22aed01669b2318d6755e7c00
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/run_qc.py
+    sha256: ff44ed3e40a9b3582eb84e38a81301745ae80d16445756d09a7efb2a480b1abb
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: c7531c2ff57eb55174c1c358c8bdbd507b25f4446d20e163f9b60b1161e48415
+    role: context
+  - path: src/naturalproductmech/curate/bioassay_exclusions.py
+    sha256: 4a4176e072ac9759aa8a9e88300d7e2de5aaf4ebf30b5c42fcf4c9c0b6cebbb4
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: a8b8834788b4714cf1cb0d1cc410d5c2f88112a32ad8621c8e043f0a4bc38a9d
+    role: context
+  - path: src/naturalproductmech/curate/xref_exclusions.py
+    sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/history.yaml
+    sha256: b01b06f1b9a37db205c26c31ec0fd910690848507c7e1bfb73b424ac0829c52d
+    role: context
+  - path: src/naturalproductmech/schema/mech_shared.yaml
+    sha256: c2e7054fd32635e380c698282bd886a9105861009b9f0474f02bb1b80865e895
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: uv.lock
+    sha256: c62a5739e3ffeb12cc57b3bf12a31dcf9cdfbf00b417f4ba3a801d51ef9efbe3
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-5a11cea583
+  path: data/natural_products/polyketides/lomaiviticin-c.yaml
+  label: lomaiviticin C
+  kind: generated
+  record_class: NaturalProductRecord
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Pinned structure and producer/locus assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Source extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Reproducible generated owner emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Guarded exact-structure adjudication with source pins
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Reviewed exact-locus evidence corrections
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Claim-specific reference routing
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Source-pinned producer strain qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/polyketides/lomaiviticin-c.yaml
+    role: Curator-owned pathways and graphs only through guarded writer and curation
+      events
+scope:
+  description: One entire exact owner, its complete inline mechanism and history,
+    pinned inventories, current structured databases and bounded primary-source checks.
+  selection: Next exact pending owner in the3115-record campaign; three other lomaiviticin
+    owners assessed in separate kind:record observations, never as interchangeable
+    identities.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-5a11cea583
+checks:
+- check_id: strict
+  name: strict
+  status: passed
+  required: true
+  command: just validate-strict data/natural_products/polyketides/lomaiviticin-c-2.yaml
+    data/natural_products/polyketides/lomaiviticin-c.yaml data/natural_products/polyketides/lomaiviticin-d-2.yaml
+    data/natural_products/polyketides/lomaiviticin-d.yaml --out /private/tmp/npmech-lomaiviticin-review-89PDr2/strict.tsv
+  exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  summary: All four selected exact owners passed closed-schema validation; this check
+    also validates native history and graph shape.
+  scope_note: 2026-10-14T04:52:51.061249Z..2026-10-14T04:53:00.107607Z; log /private/tmp/npmech-lomaiviticin-review-89PDr2/strict.log;
+    SHA256 fce801bd53af7c2bbe1c6d5e170051566983100a873a652373744911ae7ecd9d
+- check_id: labels
+  name: labels
+  status: passed
+  required: true
+  command: just validate-products
+  exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  summary: Gate exited0 with499 existing nonblocking mismatches and4647 no-adapter
+    skips; not universal identifier verification.
+  scope_note: 2026-10-14T04:59:58.423928Z..2026-10-14T05:03:52.073580Z; log /private/tmp/npmech-lomaiviticin-review-89PDr2/labels.log;
+    SHA256 3a35478c0f50d04f173e629252d86cf81839ab6d9d291ca88a9631d93d0cca64
+- check_id: queue
+  name: queue
+  status: passed
+  required: true
+  command: just review-queue --tsv /private/tmp/npmech-lomaiviticin-review-89PDr2/native-queue.tsv
+  exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  summary: The exhaustive native queue was generated in temporary storage:8929 rows
+    across12 queues. Native review status was not changed.
+  scope_note: 2026-10-14T05:00:01.894314Z..2026-10-14T05:01:42.179543Z; log /private/tmp/npmech-lomaiviticin-review-89PDr2/queue.log;
+    SHA256 d5eed487968404aba5f0d66d0382bd0471fde1d62e447e909f6da7716b5b7a13
+- check_id: chemistry-verified
+  name: chemistry-verified
+  status: passed
+  required: true
+  command: env RDBASE=/private/tmp/npmech-rdkit-2026.03.5/share/RDKit PYTHONPATH=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/lib/python3.13/site-packages
+    /private/tmp/npmech-rdkit-2026.03.5/bin/python /private/tmp/npmech-lomaiviticin-review-89PDr2/inspect_sources.py
+  exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  summary: Pinned RDKit and structured NCBI/MIBiG checks passed after correcting the
+    temporary parser; all3115 owners,243 graph components and79 old bundles remained
+    byte-identical.
+  scope_note: 2026-10-14T05:04:04.527057Z..2026-10-14T05:04:11.345375Z; log /private/tmp/npmech-lomaiviticin-review-89PDr2/chemistry-verified.log;
+    SHA256 65326f4332f1675b8747ff42ff000283cf81bffa653aa679d31c5a338843901a
+- check_id: imodulondb
+  name: imodulondb
+  status: passed
+  required: false
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/culturebotai-claw/.venv/bin/kg-microbe-sources
+    imodulondb datasets
+  exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  summary: Dataset listing succeeded; no applicable Salinispora dataset, not negative
+    evidence.
+  scope_note: 2026-10-14T04:52:54.867434Z..2026-10-14T04:52:56.228724Z; log /private/tmp/npmech-lomaiviticin-review-89PDr2/imodulondb.log;
+    SHA256 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+- check_id: prepare
+  name: prepare
+  status: failed
+  required: false
+  command: uv run python /private/tmp/npmech-lomaiviticin-review-89PDr2/prepare.py
+  exit_code: 1
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  summary: Initial capture helper failed on an incorrect maintained-table filename;
+    no review was saved from this attempt. Corrected capture succeeded.
+  scope_note: 2026-10-14T04:52:47.877723Z..2026-10-14T04:52:58.761606Z; log /private/tmp/npmech-lomaiviticin-review-89PDr2/prepare.log;
+    SHA256 bb8c852622bef343d9c83ffecda32a5de745db4d16a1c640bcad089451d5ad21
+- check_id: prepare-verified
+  name: prepare-verified
+  status: passed
+  required: true
+  command: uv run python /private/tmp/npmech-lomaiviticin-review-89PDr2/prepare.py
+  exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  summary: Canonical inspect captured exact target,input hashes,ownership and base
+    before assessment.
+  scope_note: 2026-10-14T04:53:23.142774Z..2026-10-14T04:53:56.813776Z; log /private/tmp/npmech-lomaiviticin-review-89PDr2/prepare-verified.log;
+    SHA256 7f533a5b8140738af84b5552aa1b6172dc884c3e3eb27d9832cdf44fe0dc758b
+- check_id: chemistry
+  name: chemistry
+  status: failed
+  required: false
+  command: env RDBASE=/private/tmp/npmech-rdkit-2026.03.5/share/RDKit PYTHONPATH=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/lib/python3.13/site-packages
+    /private/tmp/npmech-rdkit-2026.03.5/bin/python /private/tmp/npmech-lomaiviticin-review-89PDr2/inspect_sources.py
+  exit_code: 1
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  summary: First helper attempt failed because DPJ-0019 uses locus_tag rather than
+    gene; corrected and successfully rerun, not a native-data failure.
+  scope_note: 2026-10-14T05:03:14.603806Z..2026-10-14T05:03:24.055051Z; log /private/tmp/npmech-lomaiviticin-review-89PDr2/chemistry.log;
+    SHA256 26683741d6cfcf341ee0190680afd1098313892dba4fc2b1a57ea6dd9b6342c7
+- check_id: qc
+  name: qc
+  status: failed
+  required: false
+  command: just qc
+  exit_code: 2
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  summary: Earlier full QC was intentionally interrupted during the publication-status
+    turn after117 tests passed. Exit2 is retained as interrupted, not counted as a
+    completed pass.
+  scope_note: 2026-10-14T04:52:58.473892Z..2026-10-14T04:58:49.714425Z; log /private/tmp/npmech-lomaiviticin-review-89PDr2/qc.log;
+    SHA256 ebb9615dda01505d62131a7583121eab8e7e3e303cd6aea650a4ef93c71083cc
+- check_id: qc-resumed
+  name: qc-resumed
+  status: passed
+  required: true
+  command: just qc
+  exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  summary: Fresh full QC completed on the unchanged native corpus; the canonical check
+    after saving validates the newly added immutable bundles.
+  scope_note: 2026-10-14T05:01:44.480349Z..2026-10-14T05:37:53.459259Z; log /private/tmp/npmech-lomaiviticin-review-89PDr2/qc-resumed.log;
+    SHA256 9b2c99de7d15134852d41002beb1951858f37adba77458e96975be7875f3e99f
+- check_id: primary-closure
+  name: Primary exact-product closure
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  summary: The2012 ACS full text returned403; the2021 PMC HTML page challenged access.
+    Existing NLM XML obtained before that challenge was used, but revision figure
+    pixels and original isolation spectra were not inspected. No alternate retrieval
+    after denial. Exact replacement identity and full D adjudication remain incomplete.
+- check_id: preview-validate
+  name: preview-validate
+  status: failed
+  required: false
+  command: uv run python scripts/record_review.py validate /private/tmp/npmech-lomaiviticin-review-89PDr2/lomaiviticin-c-2-preview.yaml
+    /private/tmp/npmech-lomaiviticin-review-89PDr2/lomaiviticin-c-preview.yaml /private/tmp/npmech-lomaiviticin-review-89PDr2/lomaiviticin-d-2-preview.yaml
+    /private/tmp/npmech-lomaiviticin-review-89PDr2/lomaiviticin-d-preview.yaml
+  exit_code: 1
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  summary: Initial temporary draft validation rejected YAML aliases from reused authoring
+    objects; nothing was saved.
+  scope_note: 2026-10-14T05:14:33.882924Z..2026-10-14T05:14:37.960139Z; log /private/tmp/npmech-lomaiviticin-review-89PDr2/preview-validate.log;
+    SHA256 9754fbee2c8d2e0dd5f2db7cea93dfda03c23dd6e71a1d9c6d83c082b95130e5
+- check_id: preview-validate-v2
+  name: preview-validate-v2
+  status: passed
+  required: false
+  command: uv run python scripts/record_review.py validate /private/tmp/npmech-lomaiviticin-review-89PDr2/lomaiviticin-c-2-preview-v2.yaml
+    /private/tmp/npmech-lomaiviticin-review-89PDr2/lomaiviticin-c-preview-v2.yaml
+    /private/tmp/npmech-lomaiviticin-review-89PDr2/lomaiviticin-d-2-preview-v2.yaml
+    /private/tmp/npmech-lomaiviticin-review-89PDr2/lomaiviticin-d-preview-v2.yaml
+  exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  summary: Alias-free temporary drafts passed canonical validation. Final content
+    is independently validated again by the saver.
+  scope_note: 2026-10-14T05:16:06.560231Z..2026-10-14T05:16:12.094310Z; log /private/tmp/npmech-lomaiviticin-review-89PDr2/preview-validate-v2.log;
+    SHA256 960483691eb365ff2e34c5b8778aba4216dc37f6c8f2715a049dd803d368e714
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/natural_products/polyketides/lomaiviticin-c.yaml
+  summary: Entire raw YAML and identical read_natural_product view read, including
+    the one inline graph, every edge, pathway evidence and all three history events.
+    No external graph references are declared. Native status remains SEEDED.
+  locator: Complete owner at base 7d6b4d16acc9a28e2b4c9de4244f205beb0da157
+  accessed_at: '2026-10-14T05:38:13.906781Z'
+  support: supports
+  snapshot_sha256: 35964eafdc7d11f0b26b5261af5e8b959493d1d7a7d389a743125d1e1947c21e
+- evidence_id: chemistry
+  kind: validation
+  reference: /private/tmp/npmech-lomaiviticin-review-89PDr2/source-analysis.json
+  summary: Pinned RDKit 2026.03.5 reproduces stored SMILES, Standard InChI and key
+    ZFPVZBQTCYDNIT-GTOFKKLISA-N. Formula C68H82N4O24; exact neutral mass 1338.531899504
+    Da; charge 0; 0 undefined atom stereocenters, consistent with stereo_complete=True.
+    Atom connectivity and local depictions inspected. Internal agreement is not primary
+    identity validation.
+  locator: lomaiviticin-c; explicit six-carbon core-ring paths and source row pin
+    304afb17b8c77fa669e0b4b6b2a9bd2b6168d2977e02256c188d0522137b6529
+  accessed_at: '2026-10-14T05:04:11.345375Z'
+  support: partial
+  snapshot_sha256: 005e78550dac54d34003865d9fc12448c5f502e4817561fd562f40fde02f39fd
+- evidence_id: inventory
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  summary: Complete parsed exact-key scans found one MIBiG row and one pinned NPClassifier
+    row per selected owner. No exact-key rows in the complete ChEBI structure/origin,
+    LOTUS, PubChem BioAssay, BindingDB or sibling inventories. Source structure, active
+    v5 status, classes and original entry-level reference reproduce; no applicable
+    correction row was found in the ignored-inclusive curation search.
+  locator: BGC0000240:2; complete parsed-row SHA256 304afb17b8c77fa669e0b4b6b2a9bd2b6168d2977e02256c188d0522137b6529
+  accessed_at: '2026-10-14T05:38:13.908060Z'
+  support: supports
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: mibig
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000240.5/
+  summary: Active version 5 preserves the exact native compound encoding, producer
+    taxonomy, locus and evidence methods. Both live C and D entries in BGC0000241
+    have two more hydrogens than their same-name BGC0000240 entries. This is source
+    agreement, not independent experimental validation.
+  locator: compounds, loci, taxonomy, biosynthesis classes, relevant gene annotations
+    and legacy_references; retrieval URL https://mibig.secondarymetabolites.org/repository/BGC0000240.5/annotations.json
+  accessed_at: '2026-10-14T04:53:27.960768Z'
+  support: partial
+  snapshot_sha256: db710d993f21f9b74e981d6d44359eb1cad7ea227ae29beed9b905723022166b
+- evidence_id: taxonomy
+  kind: authority
+  reference: NCBITaxon:351187; NCBITaxon:369723
+  summary: NCBI resolves 351187 as S. pacifica at species rank and 369723 as S. tropica
+    CNB-440 at strain rank. Both are in Actinomycetota; species identity does not
+    equate the DPJ-0016 and DPJ-0019 strains.
+  locator: Exact Taxon records, ranks, parents and lineage; retrieval URL https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=351187,369723&retmode=xml
+  accessed_at: '2026-10-14T05:00:21.051503Z'
+  support: supports
+  snapshot_sha256: a39ee9bc1950837ec3e9bc898c1bba866104f0eb70efddb5c7f9a96154997379
+- evidence_id: kersten
+  kind: primary_source
+  reference: DOI:10.1002/cbic.201300147
+  summary: CNB-440 strop2223 deletion and comparative profiling link ST_pks2 to lomaiviticins.
+    C was isolated and examined by NMR, with reported exact mass 1338.5319 Da; D was
+    identified by LC-MSn, not independently isolated for NMR in this study. Experiments
+    do not concern KF731828/DPJ-0016.
+  locator: 'Results: characterization of ST_pks2; Experimental: gene inactivation,
+    comparative profiling and C isolation; PMID23649992; retrieval URL https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3755882&retmode=xml'
+  accessed_at: '2026-10-14T04:59:36.684861Z'
+  support: partial
+  snapshot_sha256: cabac0729e49ee620abdc674a1ce12ebad8d2450b1036b1993241cd02ea8b3de
+- evidence_id: revision
+  kind: primary_source
+  reference: DOI:10.1021/jacs.1c01729
+  summary: MicroED, high-field NMR and calculations revise C core connectivity and
+    secondary glycoside configuration. The text explicitly extends the revision through
+    demonstrated interconversion to A, B and C, not D. Native C encodings retain the
+    old carbonyl-adjacent intercore bridge and adjacent secondary/quaternary ether
+    centers.
+  locator: Full article body, Abstract, Results, Discussion, Conclusion and Figure1
+    caption; PMID33900077. Text retrieved before the later PMC HTML access challenge;
+    figure pixels were not retrieved.; retrieval URL https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=8935351&retmode=xml
+  accessed_at: '2026-10-14T04:54:10.150645Z'
+  support: refutes
+  snapshot_sha256: c6b8d960d29de1a50c6d11e0909d7e8afbc1731034cfa5ecfc65d37e917b8f80
+- evidence_id: isolation-abstract
+  kind: primary_source
+  reference: DOI:10.1021/ja3074984
+  summary: The public abstract reports isolation of C-E and conversion of C to A.
+    It does not expose enough spectra or structural drawings to adjudicate the competing
+    D encodings. Publisher full text returned403; no alternate retrieval attempted
+    afterward.
+  locator: PubmedArticle PMID22963534 abstract and DOI metadata only; retrieval URL
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=24383813,22963534&retmode=xml
+  accessed_at: '2026-10-14T04:59:33.655616Z'
+  support: partial
+  snapshot_sha256: 60fd5fe0c430f6bf1fabef9927ae28f5ac7219854f02d04a838f5aaab5997a3f
+- evidence_id: later-congeners
+  kind: primary_source
+  reference: DOI:10.3390/md23020065
+  summary: The later study experimentally characterizes F-H, not D. Its abstract,
+    introductory C-E/revision discussion and activity discussion were checked for
+    scope; they do not provide an independent structural assignment of either stored
+    D encoding. No F-H activity or producer assertion is transferred to these records.
+  locator: Bounded abstract/introduction/discussion check; PMID39997189; not a full
+    experimental reassessment of F-H; retrieval URL https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=11857394&retmode=xml
+  accessed_at: '2026-10-14T05:11:53.779854Z'
+  support: context_only
+  snapshot_sha256: bc1a41a99039a886a12daf929179d5c1665aa18099eb37fa81ea4c0ff5741ce0
+- evidence_id: janso
+  kind: primary_source
+  reference: DOI:10.1016/j.tet.2014.03.009
+  summary: Methods map KF731828 to DPJ-0016 and KF515737 to DPJ-0019. Results describe
+    the lom58 knockout only in DPJ-0019, report C production in DPJ-0016, and C-E
+    production in DPJ-0019. These strain contexts cannot be collapsed into an experiment
+    on the DPJ-0016 locus.
+  locator: Sections2.1,2.2,4.3-4.5 and conclusion; PMID25045187; tables/figure pixels
+    not reassessed; retrieval URL https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4101813&retmode=xml
+  accessed_at: '2026-10-14T05:01:14.056907Z'
+  support: partial
+  snapshot_sha256: b5848d2905b2dd7c28674d34f0645d5e2b7a9dfd02f40e96c4f24449959cc15d
+- evidence_id: waldman
+  kind: primary_source
+  reference: DOI:10.1021/ol403714g
+  summary: DPJ-0019 Lom62/Lom63 assays demonstrate propionyl-ACP formation and carrier
+    preference. Subsequent starter transfer and complete C/D production remain proposed,
+    not assayed in this experiment. Heterologous protein expression is not heterologous
+    production of either natural product.
+  locator: Complete main text and Figure4 caption; PMID24383813; supplemental spectra
+    not independently reassessed; retrieval URL https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3965344&retmode=xml
+  accessed_at: '2026-10-14T05:00:18.478940Z'
+  support: partial
+  snapshot_sha256: 09c25588395dfab273747c814c9c96c0a0c4ef320dc7291fe7f394bdcc877a54
+- evidence_id: pacifica-loci
+  kind: database
+  reference: genbank:KF731828.1; genbank:KF515737.1
+  summary: KF731828.1 is DPJ-0016,75641bp; KF515737.1 is DPJ-0019,72505bp. The latter
+    contains AHF72798.1 at59562..60536 and AHF72799.1 at complement60555..60878. The
+    DPJ-0016 homologs AHZ61896.1/AHZ61897.1 are not sequence-identical to those DPJ-0019
+    proteins.
+  locator: GBSeq definitions, source qualifiers, publication links and exact CDS translations;
+    retrieval URL https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KF731828.1,KF515737.1&rettype=gb&retmode=xml
+  accessed_at: '2026-10-14T05:00:24.134494Z'
+  support: supports
+  snapshot_sha256: c710aaf17da8a7a18b327615ba2e0e37fa3477ac415aed745564fa9d22e7309c
+- evidence_id: tropica-locus
+  kind: database
+  reference: genbank:CP000667.1
+  summary: Bounded chromosome retrieval verifies the CNB-440 locus and the Strop_2223
+    translation matching ABP54674.1. The genomic-region slice is not a whole-genome
+    review.
+  locator: Original chromosome coordinates2460444..2522674; protein coded_by CP000667.1:2515821..2517092;
+    retrieval URL https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=CP000667.1&rettype=gb&retmode=xml&seq_start=2460444&seq_stop=2522674
+  accessed_at: '2026-10-14T05:01:17.188666Z'
+  support: supports
+  snapshot_sha256: 9281ca86e8f117c01adaf9712813a9b5e5395ef235916b4ea937d22abbe15719
+- evidence_id: proteins
+  kind: database
+  reference: NCBI Protein:ABP54674.1; AHF72798.1; AHF72799.1
+  summary: All three GenPept accessions match their native claimed strain, locus and
+    length (423,324,107aa respectively), and every sequence equals its nucleotide-deposit
+    CDS translation. NCBI sequences ground identities, not experimental function by
+    themselves.
+  locator: Complete accession-version, source, coded_by and protein sequence checks;
+    retrieval URL https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=ABP54674.1,AHF72798.1,AHF72799.1&rettype=gp&retmode=xml
+  accessed_at: '2026-10-14T05:00:27.881023Z'
+  support: supports
+  snapshot_sha256: ef45d13e37db8f4b8ca06fa0f4bdb90ee61c03586f79e02f8f3fb86246a358c2
+- evidence_id: uniprot
+  kind: database
+  reference: UniProtKB:A4X724
+  summary: Unreviewed TrEMBL entry version92, sequence version1, is CNB-440 Strop_2223
+    with the exact423aa ABP54674.1 sequence. Predicted generic enzyme naming does
+    not override the primary knockout experiment.
+  locator: Organism, ordered locus name, EMBL cross-reference, sequence and entryAudit;
+    retrieval URL https://rest.uniprot.org/uniprotkb/A4X724.json
+  accessed_at: '2026-10-14T05:00:31.157453Z'
+  support: supports
+  snapshot_sha256: 74b01ad70105cbb3cb03edd39ce427c6888f408a35771499399b9a1b59ee4542
+- evidence_id: uniprot-search
+  kind: search
+  reference: https://rest.uniprot.org/uniprotkb/search
+  summary: The exact-accession query returned zero results. Spelling suggestions were
+    not treated as hits. Leaving the DPJ-0019 proteins without invented UniProt identifiers
+    is appropriate; this bounded result does not establish global absence.
+  locator: Query AHF72798 OR AHF72799 OR AHZ61896 OR AHZ61897; size100; results=[];
+    retrieval URL https://rest.uniprot.org/uniprotkb/search?query=AHF72798%20OR%20AHF72799%20OR%20AHZ61896%20OR%20AHZ61897&format=json&size=100
+  accessed_at: '2026-10-14T05:01:20.310774Z'
+  support: context_only
+  snapshot_sha256: 150e9996382e2890ca33024aa5a9332e20e41d215fb3d57302594f32c2be5195
+  search_scope: Query AHF72798 OR AHF72799 OR AHZ61896 OR AHZ61897; size100; results=[];
+    only the explicit returned results, not spelling suggestions, were counted.
+- evidence_id: adapter
+  kind: database
+  reference: /private/tmp/npmech-lomaiviticin-review-89PDr2/imodulondb.log
+  summary: All28 iModulonDB datasets inspected; no Salinispora dataset. Other organisms
+    and E.coli protein-expression hosts are not substitutes. Adapter is not applicable,
+    not negative biological evidence.
+  locator: kg-microbe-sources imodulondb datasets
+  accessed_at: '2026-10-14T04:52:56.228724Z'
+  support: context_only
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact structure and same-name boundary
+  outcome: concern
+  summary: The stored mass/formula are compatible with C, but the atom graph places
+    the intercore bridge directly adjacent to each core carbonyl and the secondary
+    and quaternary ether-bearing centers next to each other. This is the original
+    core arrangement explicitly revised by the2021 study. Fully assigned stereo_complete:true
+    describes the encoding, not experimental correctness. No independently verified
+    replacement key has been established here.
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  evidence_ids:
+  - owner
+  - chemistry
+  - mibig
+  - kersten
+  - revision
+  dimensions:
+  - name: inchikey
+    value: ZFPVZBQTCYDNIT-GTOFKKLISA-N
+    definition: Exact native owner identity; no merge inferred
+    evidence_ids:
+    - chemistry
+  - name: stereochemical-resolution
+    value: all atom stereocenters assigned
+    definition: Encoding completeness, not correctness of the experimental assignment
+    evidence_ids:
+    - chemistry
+- assessment_id: representation
+  area: consistency
+  topic: Internal chemistry and source reproduction
+  outcome: supported
+  summary: The pinned chemistry check reproduces all three native identifiers and
+    confirms the stereo-completeness flag. Current MIBiG reproduces the same entry
+    structure. This technical consistency can coexist with the identity findings.
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  evidence_ids:
+  - chemistry
+  - inventory
+  - mibig
+- assessment_id: producer
+  area: scope
+  topic: Producer, strain and evidence tiers
+  outcome: concern
+  summary: BGC0000240 names KF731828.1 (DPJ-0016), but its carried Knock-out studies|Enzymatic
+    assays grades and PMID23649992 do not establish experiments on that locus. Kersten
+    used CNB-440; Janso disrupted DPJ-0019 lom58; Waldman assayed DPJ-0019 proteins
+    from KF515737.1. DPJ-0016 and DPJ-0019 Lom62/Lom63 sequences differ. Preserve
+    species351187 but expose DPJ-0016 locus provenance, qualify/remove inapplicable
+    exact-locus methods, and route references separately. Do not silently replace
+    the locus with DPJ-0019 or treat its already qualified curator graph as the DPJ-0016
+    experiment.
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  evidence_ids:
+  - owner
+  - taxonomy
+  - pacifica-loci
+  - kersten
+  - janso
+  dimensions:
+  - name: taxon-rank
+    value: species351187
+    definition: NCBI rank of the native producer identifier
+    evidence_ids:
+    - taxonomy
+  - name: strain-scope
+    value: DPJ-0016 locus; DPJ-0019 assayed graph proteins
+    definition: Deposited locus versus experimental organism, retained separately
+    evidence_ids:
+    - pacifica-loci
+    - proteins
+  - name: native-evidence-tiers
+    value: BGC_CHARACTERIZED / CLUSTER_DEMONSTRATED
+    definition: Imported organism and locus grades, not two independent experimental
+      confirmations
+    evidence_ids:
+    - owner
+- assessment_id: clusters
+  area: evidence
+  topic: Active entry and compound-specific locus support
+  outcome: concern
+  summary: Version5 is active and names this compound. Its quality flag is not a scientific
+    truth signal. The DPJ-0016 experiment attribution needs correction.
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  evidence_ids:
+  - mibig
+  - kersten
+  - janso
+  - chemistry
+- assessment_id: proteins
+  area: grounding
+  topic: Exact protein sequence examples
+  outcome: supported
+  summary: AHF72798.1 and AHF72799.1 match the deposited DPJ-0019 locus,324/107aa
+    lengths and source annotations. The zero-hit bounded UniProt search supports leaving
+    enzyme_id unfilled; it does not prove no possible UniProt example exists.
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  evidence_ids:
+  - proteins
+  - pacifica-loci
+  - tropica-locus
+  - uniprot
+  - uniprot-search
+- assessment_id: mechanism
+  area: graph
+  topic: Every pathway and graph edge
+  outcome: concern
+  summary: The Lom62 catalysis and Lom63 preference edges are supported by the narrow
+    in-vitro assay. The final contributes-to edge is explicitly proposed in its notes
+    and is not assessed as an unqualified complete synthesis claim. Nevertheless its
+    exact C/D endpoint inherits the identity defect/gap. Keep DPJ-0019 experimental
+    scope, do not map these proteins to the DPJ-0016 locus.
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  evidence_ids:
+  - owner
+  - kersten
+  - waldman
+  - chemistry
+  - proteins
+- assessment_id: classification
+  area: representation
+  topic: Three independent facets
+  outcome: supported
+  summary: POLYKETIDES/Angucyclines/glycoside are versioned NPClassifier results;
+    PKS and SACCHARIDE are imported cluster assertions; ACTINOBACTERIAL is supported
+    by lineage. NATURAL_PRODUCT records the biological origin assertion, not a claim
+    that knockouts or E.coli assay hosts are natural strains. Any eventual structure
+    correction requires rechecking computed filing provenance.
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  evidence_ids:
+  - owner
+  - inventory
+  - taxonomy
+- assessment_id: equivalence
+  area: identity
+  topic: Minted concepts, xrefs and sibling boundaries
+  outcome: supported
+  summary: The exact owner has one MIBiG source concept and no exact chemical xrefs,
+    parent/congener assertions or sibling links. Complete pinned inventories contain
+    no exact-key ChEBI target. Minting follows the input rules but does not solve
+    primary identity; same labels are not permission to merge.
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  evidence_ids:
+  - owner
+  - inventory
+  - chemistry
+- assessment_id: optional-claims
+  area: completeness
+  topic: Occurrence, activity, targets, clinical and dataset fields
+  outcome: not_applicable
+  summary: No occurrences, measurements, bioactivity summary, molecular targets, clinical
+    status or dataset claims are declared. Their absence is not a defect by itself.
+    Database-level bioactivity labels were not imported here, and the extract assay
+    is not reassigned to pure C or D.
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  evidence_ids:
+  - owner
+  - inventory
+  - kersten
+- assessment_id: audit
+  area: ownership
+  topic: Native history and future fix ownership
+  outcome: supported
+  summary: Two seed events and one LLM-assisted graph-curation event are retained
+    unchanged. No native field or status is promoted by this review. Seeded fixes
+    need implemented maintained inputs and guarded regeneration; curator graphs/discussions
+    need their own guarded write and event. The reserved decisions.tsv is not consumed.
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  evidence_ids:
+  - owner
+  - inventory
+findings:
+- finding_id: identity-conflict
+  issue_key: lomaiviticin-c-bgc0000240-identity-conflict
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: C retains the superseded core arrangement
+  description: The stored mass/formula are compatible with C, but the atom graph places
+    the intercore bridge directly adjacent to each core carbonyl and the secondary
+    and quaternary ether-bearing centers next to each other. This is the original
+    core arrangement explicitly revised by the2021 study. Fully assigned stereo_complete:true
+    describes the encoding, not experimental correctness. No independently verified
+    replacement key has been established here.
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  field_paths:
+  - chemical_structure
+  - source_concepts[0]
+  - causal_graphs[0].nodes[3]
+  evidence_ids:
+  - owner
+  - chemistry
+  - mibig
+  - revision
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Upstream exact-structure extraction; preserve raw provenance
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Guarded emission and explicit identity migration
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Only REPLACE_WITH_CHEBI when an eligible unique target has been established
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/PATHS.tsv
+    role: Pinned identity-to-path mapping, never direct filename renaming
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/polyketides/lomaiviticin-c.yaml
+    role: Only curator-owned discussions, pathway and graph claims through guarded
+      writer and an appended event
+  rule_id: CLAUDE.md:a-record-is-a-structure
+  native_severity: blocker
+  normalization_reason: A material connectivity revision changes exact molecular identity,
+    not merely confidence in an unassigned stereocenter.
+- finding_id: locus-scope
+  issue_key: lomaiviticin-c-bgc0000240-locus-scope
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: DPJ-0019 experiments and a CNB-440 citation grade a DPJ-0016 locus
+  description: BGC0000240 names KF731828.1 (DPJ-0016), but its carried Knock-out studies|Enzymatic
+    assays grades and PMID23649992 do not establish experiments on that locus. Kersten
+    used CNB-440; Janso disrupted DPJ-0019 lom58; Waldman assayed DPJ-0019 proteins
+    from KF515737.1. DPJ-0016 and DPJ-0019 Lom62/Lom63 sequences differ. Preserve
+    species351187 but expose DPJ-0016 locus provenance, qualify/remove inapplicable
+    exact-locus methods, and route references separately. Do not silently replace
+    the locus with DPJ-0019 or treat its already qualified curator graph as the DPJ-0016
+    experiment.
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  field_paths:
+  - producer_organisms[0]
+  - biosynthetic_gene_clusters[0]
+  evidence_ids:
+  - owner
+  - mibig
+  - taxonomy
+  - pacifica-loci
+  - kersten
+  - janso
+  - waldman
+  - proteins
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Source-pinned withdrawal of inapplicable exact-locus experiments
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Independently route producer and locus references
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Only compound-supported producer strain qualification; a locus strain alone
+      is insufficient
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Reproduce qualified generated claims without changing raw assertions
+  rule_id: conf/producer_evidence.tsv:exact-native-organism-and-locus
+  native_severity: major
+  normalization_reason: Experimental evidence transferred between distinct strain
+    deposits inflates the exact-locus grade and obscures claim provenance; this is
+    major even though the source vocabulary was imported faithfully.
+actions:
+- action_id: adjudicate-identity
+  finding_ids:
+  - identity-conflict
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  description: Resolve the exact product structure from primary structural evidence;
+    retain an explicit conflict meanwhile. Do not merge same-name owners, infer new
+    stereocenters or manufacture a revised SMILES from prose. The existing correction
+    table accepts only a unique eligible three-star ChEBI target; none is established
+    in the pinned inventory, so a source refresh or separately designed and audited
+    identity-migration path may be needed.
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Upstream exact-structure extraction; preserve raw provenance
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Guarded emission and explicit identity migration
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Only REPLACE_WITH_CHEBI when an eligible unique target has been established
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/PATHS.tsv
+    role: Pinned identity-to-path mapping, never direct filename renaming
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/polyketides/lomaiviticin-c.yaml
+    role: Only curator-owned discussions, pathway and graph claims through guarded
+      writer and an appended event
+  generator: scripts/seed_from_sources.py only after authorized maintained-input and
+    identity-migration changes
+  acceptance_checks:
+  - Independently check the revised structure, exact formula, bond connectivity and
+    absolute stereochemistry against accessible primary figures/spectra; for D do
+    not assume the A-C revision applies.
+  - Use the pinned RDKit to reproduce SMILES, Standard InChI, InChIKey and mass; adjudicate
+    each named source concept and each same-name owner separately.
+  - Inventory occupied destination keys before any migration; preserve history and
+    re-audit every producer/pathway/graph claim against the new exact owner. No automatic
+    merge or copied assay links.
+  - Use validated record/component writers and appended curation events for authorized
+    curator changes; preserve raw provenance and the PATHS filing contract.
+  - Run a canary before seeding, then strict validation, verify-corpus, verify-reproduction
+    and full QC. Do not hand-edit generated pages or use reserved decisions.tsv.
+- action_id: qualify-locus
+  finding_ids:
+  - locus-scope
+  target_ids:
+  - naturalproductmech:mibig-5a11cea583
+  description: At the current exact owner, use source-pinned maintained tables to
+    withdraw inapplicable DPJ-0016 experimental methods and route producer/locus citations
+    separately. Retain DPJ-0016 as locus provenance. A producer strain qualifier requires
+    evidence for this compound, not just a GenBank source qualifier. Treat a future
+    DPJ-0019 cluster addition as a separate, explicitly scoped curation decision.
+    Preserve the already strain-qualified DPJ-0019 graph assay.
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Source-pinned withdrawal of inapplicable exact-locus experiments
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Independently route producer and locus references
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Only compound-supported producer strain qualification; a locus strain alone
+      is insufficient
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Reproduce qualified generated claims without changing raw assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/polyketides/lomaiviticin-c.yaml
+    role: Only curator-owned discussions, pathway and graph claims through guarded
+      writer and an appended event
+  generator: scripts/seed_from_sources.py
+  acceptance_checks:
+  - Pin the complete untouched BGC0000240 compound row and exact version,taxon,KF731828.1,empty
+    bounds,key and original method order.
+  - Verify Janso sections2.1/4.3/4.4 and Waldman organism context; no DPJ-0019 experiment
+    may become direct DPJ-0016 evidence.
+  - Keep raw assertions and separate CURATOR_INFERENCE qualification. Withdrawal must
+    not imply the locus is absent or genetically incapable of production.
+  - Janso directly supports DPJ-0016 C production, subject to the exact-structure
+    adjudication. Keep that producer evidence distinct from the DPJ-0019 knockout.
+  - Ensure source-pinned strain/reference qualifications are not combined blindly
+    with a structure replacement; current table loaders reject concurrent identity
+    corrections for separate adjudication.
+  - Canary both affected owners, inspect narrow diffs, verify all unrelated owners
+    byte-identical, and run reproduction, strict, corpus and full QC.
+limitations:
+- 'Primary structural closure is incomplete: no independent reanalysis of spectra,
+  no modern replacement key and no inspected revision figure pixels. D is not automatically
+  covered by the2021 A-C revision.'
+- The2012 abstract is not treated as full-text proof. After ACS403 and PMC browser
+  challenge, affected-resource retrieval stopped; previously acquired public XML was
+  retained.
+- Searches are bounded to the named papers, exact deposits, exact protein cross-references
+  and pinned inventories. No claim that no other evidence or UniProt mapping exists.
+- The label gate includes499 pre-existing warnings and4647 no-adapter skips. Direct
+  NCBI producer/protein checks supplement but do not erase those gate limitations.
+- Temporary source payloads, receipts, depictions and scripts in /private/tmp/npmech-lomaiviticin-review-89PDr2
+  are not committed evidence snapshots; this review retains stable references, scope
+  and hashes.
+- All3115 native owners,243 components and79 prior observations were preserved. These
+  four partial observations advance coverage but do not complete the full-corpus goal
+  or promote any native status.
+notes:
+- 'Absence searches included ignored/hidden files: rg --no-ignore --hidden in curation,
+  plus canonical bundle discovery; exact-key inventory scans read every parsed row.
+  No applicable source correction was found in that bounded scope.'
+- Old versus revised C connectivity was compared using explicit atom adjacency and
+  the inspected primary text; local RDKit depictions were viewed, not mistaken for
+  primary structure figures.
+- This observation assesses the unchanged historical base before the separately requested
+  publication and curation pass; it does not certify later edits. No paid services
+  were used.
+- Source row SHA256 304afb17b8c77fa669e0b4b6b2a9bd2b6168d2977e02256c188d0522137b6529;
+  source-analysis SHA256 005e78550dac54d34003865d9fc12448c5f502e4817561fd562f40fde02f39fd
+tags:
+- lomaiviticin
+- record-review-campaign
+- partial

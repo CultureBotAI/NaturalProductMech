@@ -1,0 +1,26 @@
+qc	Run the authoritative quality gate	﻿2026-10-14T05:46:22.1984523Z ##[group]Run uv run python scripts/run_qc.py
+qc	Run the authoritative quality gate	2026-10-14T05:46:22.1984936Z ^[[36;1muv run python scripts/run_qc.py^[[0m
+qc	Run the authoritative quality gate	2026-10-14T05:46:22.2047700Z shell: /usr/bin/bash -e {0}
+qc	Run the authoritative quality gate	2026-10-14T05:46:22.2047964Z env:
+qc	Run the authoritative quality gate	2026-10-14T05:46:22.2048251Z   RECORD_REVIEW_BASE: 7d6b4d16acc9a28e2b4c9de4244f205beb0da157
+qc	Run the authoritative quality gate	2026-10-14T05:46:22.2048616Z   UV_PYTHON: 3.13
+qc	Run the authoritative quality gate	2026-10-14T05:46:22.2048967Z   VIRTUAL_ENV: /home/runner/work/NaturalProductMech/NaturalProductMech/.venv
+qc	Run the authoritative quality gate	2026-10-14T05:46:22.2049421Z   UV_CACHE_DIR: /home/runner/work/_temp/setup-uv-cache
+qc	Run the authoritative quality gate	2026-10-14T05:46:22.2049741Z ##[endgroup]
+qc	Run the authoritative quality gate	2026-10-14T05:46:22.2537342Z 
+qc	Run the authoritative quality gate	2026-10-14T05:46:22.2537692Z === qc: lint ===
+qc	Run the authoritative quality gate	2026-10-14T05:46:22.2538588Z why: Fail fast on syntax, import, and style defects before expensive checks.
+qc	Run the authoritative quality gate	2026-10-14T05:46:22.3119227Z E501 Line too long (112 > 110)
+qc	Run the authoritative quality gate	2026-10-14T05:46:22.3119729Z    --> reviews/evidence/20261014-lomaiviticin/inspect_sources.py:149:111
+qc	Run the authoritative quality gate	2026-10-14T05:46:22.3120145Z     |
+qc	Run the authoritative quality gate	2026-10-14T05:46:22.3120399Z 147 |             if keys.intersection(row.values()):
+qc	Run the authoritative quality gate	2026-10-14T05:46:22.3121599Z 148 |                 matches.append({'line': number, 'row': row,
+qc	Run the authoritative quality gate	2026-10-14T05:46:22.3122462Z 149 |                                 'sha256': sha(json.dumps(row, sort_keys=True, separators=(',', ':')).encode())})
+qc	Run the authoritative quality gate	2026-10-14T05:46:22.3123377Z     |                                                                                                               ^^
+qc	Run the authoritative quality gate	2026-10-14T05:46:22.3124040Z 150 |     out['inventory_matches'][name] = matches
+qc	Run the authoritative quality gate	2026-10-14T05:46:22.3124733Z 151 | (W / 'source-analysis.json').write_text(json.dumps(out, indent=2))
+qc	Run the authoritative quality gate	2026-10-14T05:46:22.3125348Z     |
+qc	Run the authoritative quality gate	2026-10-14T05:46:22.3125531Z 
+qc	Run the authoritative quality gate	2026-10-14T05:46:22.3125718Z Found 1 error.
+qc	Run the authoritative quality gate	2026-10-14T05:46:22.3130486Z qc stopped: lint failed with exit code 1
+qc	Run the authoritative quality gate	2026-10-14T05:46:22.3203712Z ##[error]Process completed with exit code 1.

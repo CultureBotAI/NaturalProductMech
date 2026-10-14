@@ -1,0 +1,190 @@
+{
+  "base": "7d6b4d16acc9a28e2b4c9de4244f205beb0da157",
+  "created_at": "2026-10-14T05:38:13.162961+00:00",
+  "files": {
+    "BGC0000240.5.json": "db710d993f21f9b74e981d6d44359eb1cad7ea227ae29beed9b905723022166b",
+    "BGC0000241.5.json": "24f5d5c00008a3b200915b6ad61a2aa0ba656d1d98edbf901f955ed68e9bc131",
+    "taxonomy.xml": "a39ee9bc1950837ec3e9bc898c1bba866104f0eb70efddb5c7f9a96154997379",
+    "pacifica-loci.xml": "c710aaf17da8a7a18b327615ba2e0e37fa3477ac415aed745564fa9d22e7309c",
+    "tropica-locus.xml": "9281ca86e8f117c01adaf9712813a9b5e5395ef235916b4ea937d22abbe15719",
+    "proteins.xml": "ef45d13e37db8f4b8ca06fa0f4bdb90ee61c03586f79e02f8f3fb86246a358c2",
+    "A4X724.json": "74b01ad70105cbb3cb03edd39ce427c6888f408a35771499399b9a1b59ee4542",
+    "uniprot-lom-exact.json": "150e9996382e2890ca33024aa5a9332e20e41d215fb3d57302594f32c2be5195",
+    "source-analysis.json": "005e78550dac54d34003865d9fc12448c5f502e4817561fd562f40fde02f39fd",
+    "inspect_sources.py": "787ae23cc8d8e498cd9eee6bee2aedd47ce34e6bf0e1045882949db73dfb33c2",
+    "capture.json": "526becf08852ce587d536d24df3bb549eefbc3a03aff3f807c9ff8c7ade06140",
+    "imodulondb.log": "1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549",
+    "strict.log": "fce801bd53af7c2bbe1c6d5e170051566983100a873a652373744911ae7ecd9d",
+    "labels.log": "3a35478c0f50d04f173e629252d86cf81839ab6d9d291ca88a9631d93d0cca64",
+    "chemistry-verified.log": "65326f4332f1675b8747ff42ff000283cf81bffa653aa679d31c5a338843901a",
+    "qc-resumed.log": "9b2c99de7d15134852d41002beb1951858f37adba77458e96975be7875f3e99f",
+    "lomaiviticin-c-2-before.yaml": "618f8df26bf285b92bead90ba24ba344aec6449ed5ebc9cdb0039805ecf2d62e",
+    "lomaiviticin-c-before.yaml": "35964eafdc7d11f0b26b5261af5e8b959493d1d7a7d389a743125d1e1947c21e",
+    "lomaiviticin-d-2-before.yaml": "74fa9d83a14d4a9e5232d3d5b492bdb332267eaf79c6571bf2afc71c4e7500a4",
+    "lomaiviticin-d-before.yaml": "817bfa6ab03ced36961a86db0fd33c63f52fa52e05cd050852b94cc52b4c9f5b",
+    "inspect_sources-original.py.txt": "f9a2d01a8d63b36be6321394b24b85b9926a6a2729da254171a50f648368e848",
+    "manifest-before-lint.json": "e42cecd1a26c4b0d902d1d0dc982e4063206c7cd1a61b6f8bb3b68771bd979cf"
+  },
+  "retrievals": {
+    "BGC0000240.5.json": {
+      "url": "https://mibig.secondarymetabolites.org/repository/BGC0000240.5/annotations.json",
+      "started_at": "2026-10-14T04:53:26.822051Z",
+      "status": 200,
+      "final_url": "https://mibig.secondarymetabolites.org/repository/BGC0000240.5/annotations.json",
+      "content_type": "application/json",
+      "finished_at": "2026-10-14T04:53:27.960768Z",
+      "sha256": "db710d993f21f9b74e981d6d44359eb1cad7ea227ae29beed9b905723022166b",
+      "bytes": 12378
+    },
+    "BGC0000241.5.json": {
+      "url": "https://mibig.secondarymetabolites.org/repository/BGC0000241.5/annotations.json",
+      "started_at": "2026-10-14T04:53:30.196009Z",
+      "status": 200,
+      "final_url": "https://mibig.secondarymetabolites.org/repository/BGC0000241.5/annotations.json",
+      "content_type": "application/json",
+      "finished_at": "2026-10-14T04:53:30.779144Z",
+      "sha256": "24f5d5c00008a3b200915b6ad61a2aa0ba656d1d98edbf901f955ed68e9bc131",
+      "bytes": 9465
+    },
+    "taxonomy.xml": {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=351187,369723&retmode=xml",
+      "started_at": "2026-10-14T05:00:20.753183Z",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=351187,369723&retmode=xml",
+      "content_type": "text/xml; charset=UTF-8",
+      "finished_at": "2026-10-14T05:00:21.051503Z",
+      "sha256": "a39ee9bc1950837ec3e9bc898c1bba866104f0eb70efddb5c7f9a96154997379",
+      "bytes": 6333
+    },
+    "pacifica-loci.xml": {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KF731828.1,KF515737.1&rettype=gb&retmode=xml",
+      "started_at": "2026-10-14T05:00:23.532532Z",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KF731828.1,KF515737.1&rettype=gb&retmode=xml",
+      "content_type": "text/xml",
+      "finished_at": "2026-10-14T05:00:24.134494Z",
+      "sha256": "c710aaf17da8a7a18b327615ba2e0e37fa3477ac415aed745564fa9d22e7309c",
+      "bytes": 477642
+    },
+    "tropica-locus.xml": {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=CP000667.1&rettype=gb&retmode=xml&seq_start=2460444&seq_stop=2522674",
+      "started_at": "2026-10-14T05:01:16.475171Z",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=CP000667.1&rettype=gb&retmode=xml&seq_start=2460444&seq_stop=2522674",
+      "content_type": "text/xml",
+      "finished_at": "2026-10-14T05:01:17.188666Z",
+      "sha256": "9281ca86e8f117c01adaf9712813a9b5e5395ef235916b4ea937d22abbe15719",
+      "bytes": 244692
+    },
+    "proteins.xml": {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=ABP54674.1,AHF72798.1,AHF72799.1&rettype=gp&retmode=xml",
+      "started_at": "2026-10-14T05:00:26.512960Z",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=ABP54674.1,AHF72798.1,AHF72799.1&rettype=gp&retmode=xml",
+      "content_type": "text/xml",
+      "finished_at": "2026-10-14T05:00:27.881023Z",
+      "sha256": "ef45d13e37db8f4b8ca06fa0f4bdb90ee61c03586f79e02f8f3fb86246a358c2",
+      "bytes": 22939
+    },
+    "A4X724.json": {
+      "url": "https://rest.uniprot.org/uniprotkb/A4X724.json",
+      "started_at": "2026-10-14T05:00:30.373666Z",
+      "status": 200,
+      "final_url": "https://rest.uniprot.org/uniprotkb/A4X724.json",
+      "content_type": "application/json",
+      "finished_at": "2026-10-14T05:00:31.157453Z",
+      "sha256": "74b01ad70105cbb3cb03edd39ce427c6888f408a35771499399b9a1b59ee4542",
+      "bytes": 8574
+    },
+    "uniprot-lom-exact.json": {
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=AHF72798%20OR%20AHF72799%20OR%20AHZ61896%20OR%20AHZ61897&format=json&size=100",
+      "started_at": "2026-10-14T05:01:19.504054Z",
+      "status": 200,
+      "final_url": "https://rest.uniprot.org/uniprotkb/search?query=AHF72798%20OR%20AHF72799%20OR%20AHZ61896%20OR%20AHZ61897&format=json&size=100",
+      "content_type": "application/json",
+      "finished_at": "2026-10-14T05:01:20.310774Z",
+      "sha256": "150e9996382e2890ca33024aa5a9332e20e41d215fb3d57302594f32c2be5195",
+      "bytes": 358
+    }
+  },
+  "primary_text_receipts": {
+    "kersten-2013.xml": {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3755882&retmode=xml",
+      "started_at": "2026-10-14T04:59:36.001998Z",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3755882&retmode=xml",
+      "content_type": "text/xml; charset=UTF-8",
+      "finished_at": "2026-10-14T04:59:36.684861Z",
+      "sha256": "cabac0729e49ee620abdc674a1ce12ebad8d2450b1036b1993241cd02ea8b3de",
+      "bytes": 122822
+    },
+    "structure-revision.xml": {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=8935351&retmode=xml",
+      "started_at": "2026-10-14T04:54:09.527803Z",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=8935351&retmode=xml",
+      "content_type": "text/xml; charset=UTF-8",
+      "finished_at": "2026-10-14T04:54:10.150645Z",
+      "sha256": "c6b8d960d29de1a50c6d11e0909d7e8afbc1731034cfa5ecfc65d37e917b8f80",
+      "bytes": 84703
+    },
+    "waldman-2014.xml": {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3965344&retmode=xml",
+      "started_at": "2026-10-14T05:00:17.926277Z",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3965344&retmode=xml",
+      "content_type": "text/xml; charset=UTF-8",
+      "finished_at": "2026-10-14T05:00:18.478940Z",
+      "sha256": "09c25588395dfab273747c814c9c96c0a0c4ef320dc7291fe7f394bdcc877a54",
+      "bytes": 44023
+    },
+    "janso-2014.xml": {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4101813&retmode=xml",
+      "started_at": "2026-10-14T05:01:13.451393Z",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4101813&retmode=xml",
+      "content_type": "text/xml; charset=UTF-8",
+      "finished_at": "2026-10-14T05:01:14.056907Z",
+      "sha256": "b5848d2905b2dd7c28674d34f0645d5e2b7a9dfd02f40e96c4f24449959cc15d",
+      "bytes": 115478
+    },
+    "abstracts-2012-2014.xml": {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=24383813,22963534&retmode=xml",
+      "started_at": "2026-10-14T04:59:33.245967Z",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=24383813,22963534&retmode=xml",
+      "content_type": "text/xml; charset=UTF-8",
+      "finished_at": "2026-10-14T04:59:33.655616Z",
+      "sha256": "60fd5fe0c430f6bf1fabef9927ae28f5ac7219854f02d04a838f5aaab5997a3f",
+      "bytes": 17167
+    },
+    "congeners-2025.xml": {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=11857394&retmode=xml",
+      "started_at": "2026-10-14T05:11:53.054142Z",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=11857394&retmode=xml",
+      "content_type": "text/xml; charset=UTF-8",
+      "finished_at": "2026-10-14T05:11:53.779854Z",
+      "sha256": "bc1a41a99039a886a12daf929179d5c1665aa18099eb37fa81ea4c0ff5741ce0",
+      "bytes": 161180
+    }
+  },
+  "owners": {
+    "lomaiviticin-c-2-before.yaml": {
+      "git_revision": "7d6b4d16acc9a28e2b4c9de4244f205beb0da157",
+      "path": "data/natural_products/polyketides/lomaiviticin-c-2.yaml"
+    },
+    "lomaiviticin-c-before.yaml": {
+      "git_revision": "7d6b4d16acc9a28e2b4c9de4244f205beb0da157",
+      "path": "data/natural_products/polyketides/lomaiviticin-c.yaml"
+    },
+    "lomaiviticin-d-2-before.yaml": {
+      "git_revision": "7d6b4d16acc9a28e2b4c9de4244f205beb0da157",
+      "path": "data/natural_products/polyketides/lomaiviticin-d-2.yaml"
+    },
+    "lomaiviticin-d-before.yaml": {
+      "git_revision": "7d6b4d16acc9a28e2b4c9de4244f205beb0da157",
+      "path": "data/natural_products/polyketides/lomaiviticin-d.yaml"
+    }
+  }
+}

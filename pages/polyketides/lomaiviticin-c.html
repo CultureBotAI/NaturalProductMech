@@ -50,10 +50,15 @@ same claim.</p>
 <div class="scroll"><table>
 <tr><th>Taxon</th><th>Basis</th><th>Cluster</th><th>Evidence</th></tr>
 <tr>
-  <td>Salinispora pacifica<br><span class="mono">NCBITaxon:351187</span></td>
-  <td><span class="tag causal">BGC_CHARACTERIZED</span></td>
+  <td>Salinispora pacifica<br>Strain: DPJ-0016<br><span class="mono">NCBITaxon:351187</span></td>
+  <td><span class="tag weak">SOURCE_ASSERTION</span></td>
   <td class="mono">mibig:BGC0000240</td>
-  <td><span class="mono">PMID:23649992</span></td>
+  <td><details class="graph-evidence"><summary><span class="mono">DOI:10.1016/j.tet.2014.03.009</span></summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.tet.2014.03.009</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>MIBiG BGC0000240 entry version 5; claim-specific citation selected through a reviewed producer_reference correction. This remains a database assertion, not independently graded experimental evidence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1016/j.tet.2014.03.009</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Curated exclusion of source locus methods from this taxon/locus claim: Knock-out studies|Enzymatic assays. KF731828.1 is DPJ-0016. Janso disrupts lom58 in DPJ-0019/KF515737.1; Waldman assays DPJ-0019 Lom62/Lom63; PMID:23649992 studies CNB-440. These experiments do not grade the deposited DPJ-0016 locus. Retain its source assertion and separately qualify reported DPJ-0016 C production without claiming the disputed stored encoding is correct. No locus, taxon or chemistry replacement. See #977; identity remains open in #975. Curator: codex; date: 2026-10-14.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1016/j.tet.2014.03.009</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Citation routing only. PMID:23649992 concerns CNB-440, not DPJ-0016. Janso explicitly reports DPJ-0016 C production and maps its locus to KF731828. Route the producer citation to that study and the deposited locus citation to its sequence record; DPJ-0019 knockout and enzyme experiments are separately excluded from this locus grade. Exact C structure remains unresolved in #975; routing does not certify the stored encoding. See #977. Original imported citation PMID:23649992 (ENTRY) remains in the raw inventory, not as support for this claim. MIBiG source row BGC0000240:2; SHA256 304afb17b8c77fa669e0b4b6b2a9bd2b6168d2977e02256c188d0522137b6529. Curator: codex; date: 2026-10-14. Taxon, locus, chemistry and evidence grades are unchanged.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1016/j.tet.2014.03.009</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>Strain context: DPJ-0016. Janso explicitly reports C production in DPJ-0016 (18 mg/L PCAA, 16 mg/L PYE) and maps its locus to KF731828.1. Qualify this C producer only; do not infer DPJ-0016 D production from the deposit. No taxon remapping or evidence upgrade, and the stored exact C structure remains disputed in #975. See #977. Taxon identity and evidence grade are unchanged; this is not a species-wide experiment. MIBiG source row BGC0000240:2; SHA256 304afb17b8c77fa669e0b4b6b2a9bd2b6168d2977e02256c188d0522137b6529. Curator: codex; date: 2026-10-14.</dd></dl>
+</li></ul>
+</details></td>
 </tr>
 </table></div>
 
@@ -66,7 +71,7 @@ same claim.</p>
   <td class="mono">mibig:BGC0000240</td>
   <td>Salinispora pacifica<br><span class="mono">NCBITaxon:351187</span>
 </td>
-  <td><span class="tag causal">CLUSTER_DEMONSTRATED</span></td>
+  <td><span class="tag ">CLUSTER_UNSTATED</span></td>
   <td class="mono">genbank:KF731828.1</td>
 </tr>
 </table></div>
@@ -87,9 +92,9 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td class="mono">DOI:10.1021/ol403714g</td>
 </tr>
 </table></div>
-<p class="sub">Step 1: This curates S. pacifica DPJ-0019 Lom62/AHF72798.1 and Lom63/AHF72799.1 as an assayed acyltransferase/decarboxylase plus ACP pair that can generate the proposed propionyl-ACP starter unit for lomaiviticin biosynthesis. The exact DPJ-0019 GenPept accessions did not resolve in UniProtKB exact-accession or KF515737/lom62/lom63 searches on 2026-09-27, so enzyme_id is left unfilled and NCBI Protein records are cited as official sequence evidence.</p>
+<p class="sub">Step 1: This curates S. pacifica DPJ-0019 Lom62/AHF72798.1 and Lom63/AHF72799.1 as an assayed acyltransferase/decarboxylase plus ACP pair that can generate the proposed propionyl-ACP starter unit for lomaiviticin biosynthesis. The exact DPJ-0019 GenPept accessions did not resolve in UniProtKB exact-accession or KF515737/lom62/lom63 searches on 2026-09-27, so enzyme_id is left unfilled and NCBI Protein records are cited as official sequence evidence. Exact-product identity remains disputed (issue #975). The stored C structure retains a superseded core arrangement; the experimental scaffold/starter evidence does not validate this exact stored encoding.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">4 nodes, 3 edges</span></h2>
-<p class="sub">Partial S. pacifica lomaiviticin C biosynthesis graph for the proposed Lom62/Lom63 propionyl-ACP starter-unit branch.</p><div class="scroll"><table>
+<p class="sub">Partial S. pacifica lomaiviticin C biosynthesis graph for the proposed Lom62/Lom63 propionyl-ACP starter-unit branch. Exact-product identity is unresolved; see the curator identity discussion.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
   <td>Lom62 acyltransferase/decarboxylase</td>
@@ -119,11 +124,12 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>propionyl-ACP starter-unit generation</td>
   <td>contributes to</td>
   <td>lomaiviticin C</td>
-  <td>Waldman and Balskus proposed Lom62/Lom63 propionyl-ACP formation as lomaiviticin starter-unit logic based on the lomaiviticin scaffold and cluster context; the edge is therefore narrower than a complete pathway from this starter unit to lomaiviticin C.</td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ol403714g<br>https://www.ncbi.nlm.nih.gov/protein/AHF72798.1<br>https://www.ncbi.nlm.nih.gov/protein/AHF72799.1<br>https://www.ncbi.nlm.nih.gov/nuccore/KF515737.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ol403714g</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Robust, Lom62-dependent formation</dd><dt>notes</dt><dd>Waldman and Balskus cloned Salinispora pacifica DPJ-0019 lom62, lom60, and lom63, then showed in vitro by HPLC/LC-MS that Lom62 generated the expected propionyl-ACP thioester robustly only with methylmalonyl-CoA and Lom63.</dd></dl>
+  <td>Waldman and Balskus proposed Lom62/Lom63 propionyl-ACP formation as lomaiviticin starter-unit logic based on the lomaiviticin scaffold and cluster context; the edge is therefore narrower than a complete pathway from this starter unit to lomaiviticin C. Exact-product identity remains disputed (issue #975). The stored C structure retains a superseded core arrangement; the experimental scaffold/starter evidence does not validate this exact stored encoding.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ol403714g<br>https://www.ncbi.nlm.nih.gov/protein/AHF72798.1<br>https://www.ncbi.nlm.nih.gov/protein/AHF72799.1<br>https://www.ncbi.nlm.nih.gov/nuccore/KF515737.1<br>DOI:10.1021/jacs.1c01729</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ol403714g</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Robust, Lom62-dependent formation</dd><dt>notes</dt><dd>Waldman and Balskus cloned Salinispora pacifica DPJ-0019 lom62, lom60, and lom63, then showed in vitro by HPLC/LC-MS that Lom62 generated the expected propionyl-ACP thioester robustly only with methylmalonyl-CoA and Lom63.</dd></dl>
 </li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AHF72798.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>snippet</dt><dd>acyl transferase/decarboxylase</dd><dt>notes</dt><dd>NCBI GenPept AHF72798.1 is the 324 aa S. pacifica DPJ-0019 lom62 product on KF515737.1:59562..60536; exact AHF72798.1, AHF72798, lom62, and KF515737 UniProtKB searches did not resolve a S. pacifica accession on 2026-09-27.</dd></dl>
 </li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AHF72799.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>snippet</dt><dd>phosphopantheine-binding protein</dd><dt>notes</dt><dd>NCBI GenPept AHF72799.1 is the 107 aa S. pacifica DPJ-0019 lom63 acyl carrier protein on complement(KF515737.1:60555..60878); exact AHF72799.1, AHF72799, lom63, and KF515737 UniProtKB searches did not resolve a S. pacifica accession on 2026-09-27.</dd></dl>
 </li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/KF515737.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>snippet</dt><dd>lomaiviticin biosynthetic gene cluster</dd><dt>notes</dt><dd>GenBank KF515737.1 is the 72,505 bp S. pacifica DPJ-0019 lomaiviticin biosynthetic gene cluster and carries lom62/AHF72798.1 and lom63/AHF72799.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1021/jacs.1c01729</dd><dt>evidence type</dt><dd>CURATOR_INFERENCE</dd><dt>notes</dt><dd>The inspected 2021 microED/NMR text revises C core connectivity and secondary glycoside configuration. No replacement key is asserted here.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -134,6 +140,8 @@ by the corpus tests.</p>
 
 
 
+<h2>Open questions <span class="tag">1</span></h2>
+<div class="note"><p><strong>curator-lomaiviticin-identity-conflict</strong> — Which exact structure is supported for this source product?</p></div>
 
 <h2>Provenance</h2>
 <div class="scroll"><table>

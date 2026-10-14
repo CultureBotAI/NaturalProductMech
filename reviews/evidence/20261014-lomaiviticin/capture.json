@@ -1,0 +1,207 @@
+{
+  "started_at": "2026-10-14T04:53:28.046624Z",
+  "base": "7d6b4d16acc9a28e2b4c9de4244f205beb0da157",
+  "prior_checkpoint": "/private/tmp/npmech-lasalocid-review-dQoF9p/review-campaign-checkpoint-final.json",
+  "prior_checkpoint_sha256": "b6b92fa63be29f0516b3c18ef4373f9919c5c31fa87d72caa494bf1b44d75da8",
+  "verified_owners": 3115,
+  "verified_components": 243,
+  "verified_prior_reviews": 79,
+  "targets": [
+    {
+      "target_id": "naturalproductmech:mibig-e054ab2411",
+      "path": "data/natural_products/polyketides/lomaiviticin-c-2.yaml",
+      "label": "lomaiviticin C",
+      "kind": "generated",
+      "record_class": "NaturalProductRecord",
+      "owner_paths": [
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/mibig_compounds.tsv",
+          "role": "Pinned structure and producer/locus assertions"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/extract_mibig.py",
+          "role": "Source extraction"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/seed_from_sources.py",
+          "role": "Reproducible generated owner emission"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_structure_corrections.tsv",
+          "role": "Guarded exact-structure adjudication with source pins"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_locus_evidence_overrides.tsv",
+          "role": "Reviewed exact-locus evidence corrections"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_claim_references.tsv",
+          "role": "Claim-specific reference routing"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_producer_strains.tsv",
+          "role": "Source-pinned producer strain qualification"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/natural_products/polyketides/lomaiviticin-c-2.yaml",
+          "role": "Curator-owned pathways and graphs only through guarded writer and curation events"
+        }
+      ]
+    },
+    {
+      "target_id": "naturalproductmech:mibig-5a11cea583",
+      "path": "data/natural_products/polyketides/lomaiviticin-c.yaml",
+      "label": "lomaiviticin C",
+      "kind": "generated",
+      "record_class": "NaturalProductRecord",
+      "owner_paths": [
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/mibig_compounds.tsv",
+          "role": "Pinned structure and producer/locus assertions"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/extract_mibig.py",
+          "role": "Source extraction"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/seed_from_sources.py",
+          "role": "Reproducible generated owner emission"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_structure_corrections.tsv",
+          "role": "Guarded exact-structure adjudication with source pins"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_locus_evidence_overrides.tsv",
+          "role": "Reviewed exact-locus evidence corrections"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_claim_references.tsv",
+          "role": "Claim-specific reference routing"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_producer_strains.tsv",
+          "role": "Source-pinned producer strain qualification"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/natural_products/polyketides/lomaiviticin-c.yaml",
+          "role": "Curator-owned pathways and graphs only through guarded writer and curation events"
+        }
+      ]
+    },
+    {
+      "target_id": "naturalproductmech:mibig-ba6ee9b824",
+      "path": "data/natural_products/polyketides/lomaiviticin-d-2.yaml",
+      "label": "lomaiviticin D",
+      "kind": "generated",
+      "record_class": "NaturalProductRecord",
+      "owner_paths": [
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/mibig_compounds.tsv",
+          "role": "Pinned structure and producer/locus assertions"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/extract_mibig.py",
+          "role": "Source extraction"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/seed_from_sources.py",
+          "role": "Reproducible generated owner emission"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_structure_corrections.tsv",
+          "role": "Guarded exact-structure adjudication with source pins"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_locus_evidence_overrides.tsv",
+          "role": "Reviewed exact-locus evidence corrections"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_claim_references.tsv",
+          "role": "Claim-specific reference routing"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_producer_strains.tsv",
+          "role": "Source-pinned producer strain qualification"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/natural_products/polyketides/lomaiviticin-d-2.yaml",
+          "role": "Curator-owned pathways and graphs only through guarded writer and curation events"
+        }
+      ]
+    },
+    {
+      "target_id": "naturalproductmech:mibig-591a288508",
+      "path": "data/natural_products/polyketides/lomaiviticin-d.yaml",
+      "label": "lomaiviticin D",
+      "kind": "generated",
+      "record_class": "NaturalProductRecord",
+      "owner_paths": [
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/raw/mibig_compounds.tsv",
+          "role": "Pinned structure and producer/locus assertions"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/extract_mibig.py",
+          "role": "Source extraction"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "scripts/seed_from_sources.py",
+          "role": "Reproducible generated owner emission"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_structure_corrections.tsv",
+          "role": "Guarded exact-structure adjudication with source pins"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_locus_evidence_overrides.tsv",
+          "role": "Reviewed exact-locus evidence corrections"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_claim_references.tsv",
+          "role": "Claim-specific reference routing"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "curation/mibig_producer_strains.tsv",
+          "role": "Source-pinned producer strain qualification"
+        },
+        {
+          "repository": "CultureBotAI/NaturalProductMech",
+          "path": "data/natural_products/polyketides/lomaiviticin-d.yaml",
+          "role": "Curator-owned pathways and graphs only through guarded writer and curation events"
+        }
+      ]
+    }
+  ]
+}

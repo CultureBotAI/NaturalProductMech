@@ -27,17 +27,51 @@ producer_taxon_groups:
 producer_organisms:
 - taxon_id: NCBITaxon:351187
   taxon_label: Salinispora pacifica
-  evidence_basis: BGC_CHARACTERIZED
+  evidence_basis: SOURCE_ASSERTION
   biosynthetic_gene_cluster: mibig:BGC0000240
   source: MIBIG
   source_version: '5'
-  notes: 'Locus evidence: Knock-out studies|Enzymatic assays. That evidence grades
-    the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is
-    a different question.'
+  notes: 'Source locus methods excluded as inapplicable: Knock-out studies|Enzymatic
+    assays. No applicable locus methods remain. That evidence grades the LOCUS as
+    CLUSTER_UNSTATED; this field grades the taxon claim, which is a different question.'
   evidence:
-  - reference: PMID:23649992
+  - reference: DOI:10.1016/j.tet.2014.03.009
     evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0000240 entry version 5; citation taken from the entry level
+    notes: MIBiG BGC0000240 entry version 5; claim-specific citation selected through
+      a reviewed producer_reference correction. This remains a database assertion,
+      not independently graded experimental evidence.
+  - reference: DOI:10.1016/j.tet.2014.03.009
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Curated exclusion of source locus methods from this taxon/locus claim:
+      Knock-out studies|Enzymatic assays. KF731828.1 is DPJ-0016. Janso disrupts lom58
+      in DPJ-0019/KF515737.1; Waldman assays DPJ-0019 Lom62/Lom63; PMID:23649992 studies
+      CNB-440. These experiments do not grade the deposited DPJ-0016 locus. Retain
+      its source assertion and separately qualify reported DPJ-0016 C production without
+      claiming the disputed stored encoding is correct. No locus, taxon or chemistry
+      replacement. See #977; identity remains open in #975. Curator: codex; date:
+      2026-10-14.'
+  - reference: DOI:10.1016/j.tet.2014.03.009
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Citation routing only. PMID:23649992 concerns CNB-440, not DPJ-0016. Janso
+      explicitly reports DPJ-0016 C production and maps its locus to KF731828. Route
+      the producer citation to that study and the deposited locus citation to its
+      sequence record; DPJ-0019 knockout and enzyme experiments are separately excluded
+      from this locus grade. Exact C structure remains unresolved in #975; routing
+      does not certify the stored encoding. See #977. Original imported citation PMID:23649992
+      (ENTRY) remains in the raw inventory, not as support for this claim. MIBiG source
+      row BGC0000240:2; SHA256 304afb17b8c77fa669e0b4b6b2a9bd2b6168d2977e02256c188d0522137b6529.
+      Curator: codex; date: 2026-10-14. Taxon, locus, chemistry and evidence grades
+      are unchanged.'
+  - reference: DOI:10.1016/j.tet.2014.03.009
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: DPJ-0016. Janso explicitly reports C production in DPJ-0016
+      (18 mg/L PCAA, 16 mg/L PYE) and maps its locus to KF731828.1. Qualify this C
+      producer only; do not infer DPJ-0016 D production from the deposit. No taxon
+      remapping or evidence upgrade, and the stored exact C structure remains disputed
+      in #975. See #977. Taxon identity and evidence grade are unchanged; this is
+      not a species-wide experiment. MIBiG source row BGC0000240:2; SHA256 304afb17b8c77fa669e0b4b6b2a9bd2b6168d2977e02256c188d0522137b6529.
+      Curator: codex; date: 2026-10-14.'
+  strain: DPJ-0016
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0000240
   entry_version: '5'
@@ -45,17 +79,38 @@ biosynthetic_gene_clusters:
   organism_taxon_id: NCBITaxon:351187
   organism_label: Salinispora pacifica
   evidence:
-  - reference: PMID:23649992
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/KF731828.1
     evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0000240 entry version 5; citation taken from the entry level
+    notes: MIBiG BGC0000240 entry version 5; claim-specific citation selected through
+      a reviewed locus_reference correction. This remains a database assertion, not
+      independently graded experimental evidence.
+  - reference: DOI:10.1016/j.tet.2014.03.009
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Curated exclusion of source locus methods from this taxon/locus claim:
+      Knock-out studies|Enzymatic assays. KF731828.1 is DPJ-0016. Janso disrupts lom58
+      in DPJ-0019/KF515737.1; Waldman assays DPJ-0019 Lom62/Lom63; PMID:23649992 studies
+      CNB-440. These experiments do not grade the deposited DPJ-0016 locus. Retain
+      its source assertion and separately qualify reported DPJ-0016 C production without
+      claiming the disputed stored encoding is correct. No locus, taxon or chemistry
+      replacement. See #977; identity remains open in #975. Curator: codex; date:
+      2026-10-14.'
+  - reference: DOI:10.1016/j.tet.2014.03.009
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Citation routing only. PMID:23649992 concerns CNB-440, not DPJ-0016. Janso
+      explicitly reports DPJ-0016 C production and maps its locus to KF731828. Route
+      the producer citation to that study and the deposited locus citation to its
+      sequence record; DPJ-0019 knockout and enzyme experiments are separately excluded
+      from this locus grade. Exact C structure remains unresolved in #975; routing
+      does not certify the stored encoding. See #977. Original imported citation PMID:23649992
+      (ENTRY) remains in the raw inventory, not as support for this claim. MIBiG source
+      row BGC0000240:2; SHA256 304afb17b8c77fa669e0b4b6b2a9bd2b6168d2977e02256c188d0522137b6529.
+      Curator: codex; date: 2026-10-14. Taxon, locus, chemistry and evidence grades
+      are unchanged.'
   genome_accession: genbank:KF731828.1
   bgc_class:
   - PKS
   - SACCHARIDE
-  locus_evidence_methods:
-  - Knock-out studies
-  - Enzymatic assays
-  link_evidence_basis: CLUSTER_DEMONSTRATED
+  link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0000240
@@ -70,12 +125,14 @@ biosynthetic_pathway:
 - step_number: 1
   enzyme_label: Lom62 acyltransferase/decarboxylase with Lom63 acyl carrier protein
   proposed: true
-  notes: This curates S. pacifica DPJ-0019 Lom62/AHF72798.1 and Lom63/AHF72799.1 as
-    an assayed acyltransferase/decarboxylase plus ACP pair that can generate the proposed
-    propionyl-ACP starter unit for lomaiviticin biosynthesis. The exact DPJ-0019 GenPept
-    accessions did not resolve in UniProtKB exact-accession or KF515737/lom62/lom63
+  notes: 'This curates S. pacifica DPJ-0019 Lom62/AHF72798.1 and Lom63/AHF72799.1
+    as an assayed acyltransferase/decarboxylase plus ACP pair that can generate the
+    proposed propionyl-ACP starter unit for lomaiviticin biosynthesis. The exact DPJ-0019
+    GenPept accessions did not resolve in UniProtKB exact-accession or KF515737/lom62/lom63
     searches on 2026-09-27, so enzyme_id is left unfilled and NCBI Protein records
-    are cited as official sequence evidence.
+    are cited as official sequence evidence. Exact-product identity remains disputed
+    (issue #975). The stored C structure retains a superseded core arrangement; the
+    experimental scaffold/starter evidence does not validate this exact stored encoding.'
   evidence:
   - reference: DOI:10.1021/ol403714g
     evidence_type: PRIMARY_EXPERIMENT
@@ -104,11 +161,16 @@ biosynthetic_pathway:
     snippet: lomaiviticin biosynthetic gene cluster
     notes: GenBank KF515737.1 is the 72,505 bp S. pacifica DPJ-0019 lomaiviticin biosynthetic
       gene cluster and carries lom62/AHF72798.1 and lom63/AHF72799.1.
+  - reference: DOI:10.1021/jacs.1c01729
+    evidence_type: CURATOR_INFERENCE
+    notes: The inspected 2021 microED/NMR text revises C core connectivity and secondary
+      glycoside configuration. No replacement key is asserted here.
 causal_graphs:
 - graph_id: lomaiviticin-c-lom62-biosynthesis
   scope: BIOSYNTHESIS
   description: Partial S. pacifica lomaiviticin C biosynthesis graph for the proposed
-    Lom62/Lom63 propionyl-ACP starter-unit branch.
+    Lom62/Lom63 propionyl-ACP starter-unit branch. Exact-product identity is unresolved;
+    see the curator identity discussion.
   nodes:
   - node_id: lom62
     label: Lom62 acyltransferase/decarboxylase
@@ -198,10 +260,12 @@ causal_graphs:
   - subject: propionyl_acp_generation
     predicate: contributes to
     object: lomaiviticin_c
-    notes: Waldman and Balskus proposed Lom62/Lom63 propionyl-ACP formation as lomaiviticin
+    notes: 'Waldman and Balskus proposed Lom62/Lom63 propionyl-ACP formation as lomaiviticin
       starter-unit logic based on the lomaiviticin scaffold and cluster context; the
       edge is therefore narrower than a complete pathway from this starter unit to
-      lomaiviticin C.
+      lomaiviticin C. Exact-product identity remains disputed (issue #975). The stored
+      C structure retains a superseded core arrangement; the experimental scaffold/starter
+      evidence does not validate this exact stored encoding.'
     evidence:
     - reference: DOI:10.1021/ol403714g
       evidence_type: PRIMARY_EXPERIMENT
@@ -230,6 +294,34 @@ causal_graphs:
       snippet: lomaiviticin biosynthetic gene cluster
       notes: GenBank KF515737.1 is the 72,505 bp S. pacifica DPJ-0019 lomaiviticin
         biosynthetic gene cluster and carries lom62/AHF72798.1 and lom63/AHF72799.1.
+    - reference: DOI:10.1021/jacs.1c01729
+      evidence_type: CURATOR_INFERENCE
+      notes: The inspected 2021 microED/NMR text revises C core connectivity and secondary
+        glycoside configuration. No replacement key is asserted here.
+discussions:
+- discussion_id: curator-lomaiviticin-identity-conflict
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: Which exact structure is supported for this source product?
+  rationale: 'The stored mass/formula are compatible with C, but the atom graph places
+    the intercore bridge directly adjacent to each core carbonyl and the secondary
+    and quaternary ether-bearing centers next to each other. This is the original
+    core arrangement explicitly revised by the2021 study. Fully assigned stereo_complete:true
+    describes the encoding, not experimental correctness. No independently verified
+    replacement key has been established here. Tracked in issue #975.'
+  evidence:
+  - reference: DOI:10.1002/cbic.201300147
+    notes: CNB-440 C was isolated with reported mass 1338.5319 Da; D was identified
+      by LC-MSn. Neither fact independently validates all stored exact-structure assignments.
+  - reference: DOI:10.1021/jacs.1c01729
+    notes: The inspected 2021 microED/NMR text revises C core connectivity and secondary
+      glycoside configuration. No replacement key is asserted here.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000240.5/
+    notes: Current source encoding agrees with its native record, not necessarily
+      primary identity.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000241.5/
+    notes: Current source encoding agrees with its native record, not necessarily
+      primary identity.
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -246,4 +338,16 @@ curation_history:
     step and BIOSYNTHESIS causal graph for lomaiviticin C, citing the in vitro Waldman-Balskus
     Lom62/Lom63 assay and official NCBI GenPept/Nuccore records; left UniProtKB identifiers
     unfilled because the exact GenPept and locus searches did not resolve.
+  llm_assisted: true
+- timestamp: '2026-10-14T05:39:51Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-14T05:40:58Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Expose unresolved lomaiviticin identity conflicts and qualify exact-product
+    pathway/graph support; preserve chemistry, protein identity and SEEDED status.
+    Keep DPJ-0019 assay scope separate from the DPJ-0016 source locus. Representation
+    issue #979 is addressed; scientific issue #975 remains open.'
   llm_assisted: true

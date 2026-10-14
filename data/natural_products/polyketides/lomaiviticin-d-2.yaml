@@ -27,17 +27,41 @@ producer_taxon_groups:
 producer_organisms:
 - taxon_id: NCBITaxon:351187
   taxon_label: Salinispora pacifica
-  evidence_basis: BGC_CHARACTERIZED
+  evidence_basis: SOURCE_ASSERTION
   biosynthetic_gene_cluster: mibig:BGC0000240
   source: MIBIG
   source_version: '5'
-  notes: 'Locus evidence: Knock-out studies|Enzymatic assays. That evidence grades
-    the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is
-    a different question.'
+  notes: 'Source locus methods excluded as inapplicable: Knock-out studies|Enzymatic
+    assays. No applicable locus methods remain. That evidence grades the LOCUS as
+    CLUSTER_UNSTATED; this field grades the taxon claim, which is a different question.'
   evidence:
-  - reference: PMID:23649992
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000240.5/
     evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0000240 entry version 5; citation taken from the entry level
+    notes: MIBiG BGC0000240 entry version 5; claim-specific citation selected through
+      a reviewed producer_reference correction. This remains a database assertion,
+      not independently graded experimental evidence.
+  - reference: DOI:10.1016/j.tet.2014.03.009
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Curated exclusion of source locus methods from this taxon/locus claim:
+      Knock-out studies|Enzymatic assays. KF731828.1 is DPJ-0016, not the DPJ-0019/KF515737.1
+      locus used for lom58 knockout and Lom62/Lom63 assays; PMID:23649992 instead
+      studies CNB-440. Withdraw methods transferred across those strain contexts.
+      The inspected Janso text reports C in DPJ-0016 and C-E in DPJ-0019, not compound-specific
+      DPJ-0016 D production. Retain a qualified source-tier species assertion without
+      inferring a D producer strain or denying all production. See #977; identity
+      remains open in #976. Curator: codex; date: 2026-10-14.'
+  - reference: DOI:10.1016/j.tet.2014.03.009
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Citation routing only. PMID:23649992 concerns CNB-440. Janso maps KF731828
+      to DPJ-0016 but explicitly reports D production in DPJ-0019, not DPJ-0016, in
+      the inspected text. Cite the source database for the retained species-level
+      D assertion and the exact deposit for locus provenance; neither establishes
+      DPJ-0016 D production. Do not replace the locus with KF515737 or invent a producer
+      strain. Exact D identity remains unresolved in #976. See #977. Original imported
+      citation PMID:23649992 (ENTRY) remains in the raw inventory, not as support
+      for this claim. MIBiG source row BGC0000240:3; SHA256 8a0db01f433561b6e12d1a27d7fccb7c607ef47a4428450c7104b68b1b2cf930.
+      Curator: codex; date: 2026-10-14. Taxon, locus, chemistry and evidence grades
+      are unchanged.'
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0000240
   entry_version: '5'
@@ -45,17 +69,38 @@ biosynthetic_gene_clusters:
   organism_taxon_id: NCBITaxon:351187
   organism_label: Salinispora pacifica
   evidence:
-  - reference: PMID:23649992
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/KF731828.1
     evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0000240 entry version 5; citation taken from the entry level
+    notes: MIBiG BGC0000240 entry version 5; claim-specific citation selected through
+      a reviewed locus_reference correction. This remains a database assertion, not
+      independently graded experimental evidence.
+  - reference: DOI:10.1016/j.tet.2014.03.009
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Curated exclusion of source locus methods from this taxon/locus claim:
+      Knock-out studies|Enzymatic assays. KF731828.1 is DPJ-0016, not the DPJ-0019/KF515737.1
+      locus used for lom58 knockout and Lom62/Lom63 assays; PMID:23649992 instead
+      studies CNB-440. Withdraw methods transferred across those strain contexts.
+      The inspected Janso text reports C in DPJ-0016 and C-E in DPJ-0019, not compound-specific
+      DPJ-0016 D production. Retain a qualified source-tier species assertion without
+      inferring a D producer strain or denying all production. See #977; identity
+      remains open in #976. Curator: codex; date: 2026-10-14.'
+  - reference: DOI:10.1016/j.tet.2014.03.009
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Citation routing only. PMID:23649992 concerns CNB-440. Janso maps KF731828
+      to DPJ-0016 but explicitly reports D production in DPJ-0019, not DPJ-0016, in
+      the inspected text. Cite the source database for the retained species-level
+      D assertion and the exact deposit for locus provenance; neither establishes
+      DPJ-0016 D production. Do not replace the locus with KF515737 or invent a producer
+      strain. Exact D identity remains unresolved in #976. See #977. Original imported
+      citation PMID:23649992 (ENTRY) remains in the raw inventory, not as support
+      for this claim. MIBiG source row BGC0000240:3; SHA256 8a0db01f433561b6e12d1a27d7fccb7c607ef47a4428450c7104b68b1b2cf930.
+      Curator: codex; date: 2026-10-14. Taxon, locus, chemistry and evidence grades
+      are unchanged.'
   genome_accession: genbank:KF731828.1
   bgc_class:
   - PKS
   - SACCHARIDE
-  locus_evidence_methods:
-  - Knock-out studies
-  - Enzymatic assays
-  link_evidence_basis: CLUSTER_DEMONSTRATED
+  link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0000240
@@ -70,12 +115,15 @@ biosynthetic_pathway:
 - step_number: 1
   enzyme_label: Lom62 acyltransferase/decarboxylase with Lom63 acyl carrier protein
   proposed: true
-  notes: This curates S. pacifica DPJ-0019 Lom62/AHF72798.1 and Lom63/AHF72799.1 as
-    an assayed acyltransferase/decarboxylase plus ACP pair that can generate the proposed
-    propionyl-ACP starter unit for lomaiviticin biosynthesis. The exact DPJ-0019 GenPept
-    accessions did not resolve in UniProtKB exact-accession or KF515737/lom62/lom63
+  notes: 'This curates S. pacifica DPJ-0019 Lom62/AHF72798.1 and Lom63/AHF72799.1
+    as an assayed acyltransferase/decarboxylase plus ACP pair that can generate the
+    proposed propionyl-ACP starter unit for lomaiviticin biosynthesis. The exact DPJ-0019
+    GenPept accessions did not resolve in UniProtKB exact-accession or KF515737/lom62/lom63
     searches on 2026-09-27, so enzyme_id is left unfilled and NCBI Protein records
-    are cited as official sequence evidence.
+    are cited as official sequence evidence. Exact-product identity remains disputed
+    (issue #976). The two deposited D encodings differ by two hydrogens and connectivity.
+    The experiments do not adjudicate which exact D encoding is correct; the 2021
+    A-C revision is not automatically evidence for revising D.'
   evidence:
   - reference: DOI:10.1021/ol403714g
     evidence_type: PRIMARY_EXPERIMENT
@@ -104,11 +152,16 @@ biosynthetic_pathway:
     snippet: lomaiviticin biosynthetic gene cluster
     notes: GenBank KF515737.1 is the 72,505 bp S. pacifica DPJ-0019 lomaiviticin biosynthetic
       gene cluster and carries lom62/AHF72798.1 and lom63/AHF72799.1.
+  - reference: DOI:10.1021/ja3074984
+    evidence_type: CURATOR_INFERENCE
+    notes: Only the isolation abstract was inspected; full text returned 403. Exact
+      D structure adjudication remains incomplete.
 causal_graphs:
 - graph_id: lomaiviticin-d-lom62-biosynthesis
   scope: BIOSYNTHESIS
   description: Partial S. pacifica lomaiviticin D biosynthesis graph for the proposed
-    Lom62/Lom63 propionyl-ACP starter-unit branch.
+    Lom62/Lom63 propionyl-ACP starter-unit branch. Exact-product identity is unresolved;
+    see the curator identity discussion.
   nodes:
   - node_id: lom62
     label: Lom62 acyltransferase/decarboxylase
@@ -198,10 +251,13 @@ causal_graphs:
   - subject: propionyl_acp_generation
     predicate: contributes to
     object: lomaiviticin_d
-    notes: Waldman and Balskus proposed Lom62/Lom63 propionyl-ACP formation as lomaiviticin
+    notes: 'Waldman and Balskus proposed Lom62/Lom63 propionyl-ACP formation as lomaiviticin
       starter-unit logic based on the lomaiviticin scaffold and cluster context; the
       edge is therefore narrower than a complete pathway from this starter unit to
-      lomaiviticin D.
+      lomaiviticin D. Exact-product identity remains disputed (issue #976). The two
+      deposited D encodings differ by two hydrogens and connectivity. The experiments
+      do not adjudicate which exact D encoding is correct; the 2021 A-C revision is
+      not automatically evidence for revising D.'
     evidence:
     - reference: DOI:10.1021/ol403714g
       evidence_type: PRIMARY_EXPERIMENT
@@ -230,6 +286,50 @@ causal_graphs:
       snippet: lomaiviticin biosynthetic gene cluster
       notes: GenBank KF515737.1 is the 72,505 bp S. pacifica DPJ-0019 lomaiviticin
         biosynthetic gene cluster and carries lom62/AHF72798.1 and lom63/AHF72799.1.
+    - reference: DOI:10.1021/ja3074984
+      evidence_type: CURATOR_INFERENCE
+      notes: Only the isolation abstract was inspected; full text returned 403. Exact
+        D structure adjudication remains incomplete.
+discussions:
+- discussion_id: curator-lomaiviticin-identity-conflict
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: Which exact structure is supported for this source product?
+  rationale: 'This owner encodes C69H84N4O24, while the other D owner encodes C69H86N4O24.
+    Their first InChIKey blocks and bond saturation differ, so they are not just complete/incomplete
+    stereochemical versions of one structure. Inspected papers identify D by name
+    but do not establish this exact deposited encoding at the required resolution.
+    Primary2012 full text/spectra are unavailable, and the2021 A-C revision must not
+    automatically be extended to D. Which D representation needs replacement remains
+    unresolved. Tracked in issue #976.'
+  evidence:
+  - reference: DOI:10.1002/cbic.201300147
+    notes: CNB-440 C was isolated with reported mass 1338.5319 Da; D was identified
+      by LC-MSn. Neither fact independently validates all stored exact-structure assignments.
+  - reference: DOI:10.1021/ja3074984
+    notes: Only the isolation abstract was inspected; full text returned 403. Exact
+      D structure adjudication remains incomplete.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000240.5/
+    notes: Current source encoding agrees with its native record, not necessarily
+      primary identity.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000241.5/
+    notes: Current source encoding agrees with its native record, not necessarily
+      primary identity.
+- discussion_id: curator-lomaiviticin-d-producer-strain
+  kind: KNOWLEDGE_GAP
+  status: OPEN
+  prompt: Does the deposited DPJ-0016 locus support the D producer assertion?
+  rationale: KF731828.1 is DPJ-0016. The inspected Janso study explicitly reports
+    C production in DPJ-0016 and C-E production in DPJ-0019. A locus strain qualifier
+    is not compound-specific production evidence. Retain the source-tier species assertion
+    without assigning DPJ-0016 as a demonstrated D producer; this is not proof of
+    nonproduction. The DPJ-0019 assay graph is separate from this deposited locus.
+  evidence:
+  - reference: DOI:10.1016/j.tet.2014.03.009
+    notes: Sections 2.1, 2.2 and 4.3 distinguish producer experiments and deposited
+      loci.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/KF731828.1
+    notes: The deposit identifies DPJ-0016; it does not prove D production.
 curation_history:
 - timestamp: '2026-09-10T05:54:15Z'
   curator: seed_from_sources
@@ -246,4 +346,16 @@ curation_history:
     step and BIOSYNTHESIS causal graph for lomaiviticin D, citing the in vitro Waldman-Balskus
     Lom62/Lom63 assay and official NCBI GenPept/Nuccore records; left UniProtKB identifiers
     unfilled because the exact GenPept and locus searches did not resolve.
+  llm_assisted: true
+- timestamp: '2026-10-14T05:40:05Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-14T05:40:59Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: 'Expose unresolved lomaiviticin identity conflicts and qualify exact-product
+    pathway/graph support; preserve chemistry, protein identity and SEEDED status.
+    Keep DPJ-0019 assay scope separate from the DPJ-0016 source locus. Representation
+    issue #979 is addressed; scientific issue #976 remains open.'
   llm_assisted: true
