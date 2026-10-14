@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!DOCTYPE GBSet PUBLIC "-//NCBI//NCBI GBSeq/EN" "https://www.ncbi.nlm.nih.gov/dtd/NCBI_GBSeq.dtd">
+<GBSet>
+  <GBSeq>
+
+    <GBSeq_locus>DS027698</GBSeq_locus>
+    <GBSeq_length>5465</GBSeq_length>
+    <GBSeq_strandedness>double</GBSeq_strandedness>
+    <GBSeq_moltype>DNA</GBSeq_moltype>
+    <GBSeq_topology>linear</GBSeq_topology>
+    <GBSeq_division>CON</GBSeq_division>
+    <GBSeq_update-date>14-JUL-2016</GBSeq_update-date>
+    <GBSeq_create-date>14-DEC-2006</GBSeq_create-date>
+    <GBSeq_definition>Neosartorya fischeri NRRL 181 1099437636266 genomic scaffold, whole genome shotgun sequence</GBSeq_definition>
+    <GBSeq_primary-accession>DS027698</GBSeq_primary-accession>
+    <GBSeq_accession-version>DS027698.1</GBSeq_accession-version>
+    <GBSeq_other-seqids>
+      <GBSeqid>gb|DS027698.1|</GBSeqid>
+      <GBSeqid>gnl|WGS:AAKE|1099437636266</GBSeqid>
+      <GBSeqid>gi|119405423</GBSeqid>
+    </GBSeq_other-seqids>
+    <GBSeq_project>PRJNA15672</GBSeq_project>
+    <GBSeq_keywords>
+      <GBKeyword>WGS</GBKeyword>
+    </GBSeq_keywords>
+    <GBSeq_source>Aspergillus fischeri NRRL 181 (Neosartorya fischeri NRRL 181)</GBSeq_source>
+    <GBSeq_organism>Aspergillus fischeri NRRL 181</GBSeq_organism>
+    <GBSeq_taxonomy>Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Eurotiomycetes; Eurotiomycetidae; Eurotiales; Aspergillaceae; Aspergillus; Aspergillus subgen. Fumigati</GBSeq_taxonomy>
+    <GBSeq_references>
+      <GBReference>
+        <GBReference_reference>1</GBReference_reference>
+        <GBReference_position>1..5465</GBReference_position>
+        <GBReference_authors>
+          <GBAuthor>Nierman,W.C.</GBAuthor>
+        </GBReference_authors>
+        <GBReference_title>Direct Submission</GBReference_title>
+        <GBReference_journal>Submitted (26-OCT-2006) The Institute for Genomic Research, 9712 Medical Center Drive, Rockville, MD 20850, USA</GBReference_journal>
+      </GBReference>
+    </GBSeq_references>
+    <GBSeq_feature-table>
+      <GBFeature>
+        <GBFeature_key>source</GBFeature_key>
+        <GBFeature_location>1..5465</GBFeature_location>
+        <GBFeature_intervals>
+          <GBInterval>
+            <GBInterval_from>1</GBInterval_from>
+            <GBInterval_to>5465</GBInterval_to>
+            <GBInterval_accession>DS027698.1</GBInterval_accession>
+          </GBInterval>
+        </GBFeature_intervals>
+        <GBFeature_quals>
+          <GBQualifier>
+            <GBQualifier_name>organism</GBQualifier_name>
+            <GBQualifier_value>Aspergillus fischeri NRRL 181</GBQualifier_value>
+          </GBQualifier>
+          <GBQualifier>
+            <GBQualifier_name>mol_type</GBQualifier_name>
+            <GBQualifier_value>genomic DNA</GBQualifier_value>
+          </GBQualifier>
+          <GBQualifier>
+            <GBQualifier_name>strain</GBQualifier_name>
+            <GBQualifier_value>NRRL 181</GBQualifier_value>
+          </GBQualifier>
+          <GBQualifier>
+            <GBQualifier_name>type_material</GBQualifier_name>
+            <GBQualifier_value>culture from neotype of Aspergillus fischeri</GBQualifier_value>
+          </GBQualifier>
+          <GBQualifier>
+            <GBQualifier_name>db_xref</GBQualifier_name>
+            <GBQualifier_value>taxon:331117</GBQualifier_value>
+          </GBQualifier>
+        </GBFeature_quals>
+      </GBFeature>
+      <GBFeature>
+        <GBFeature_key>gene</GBFeature_key>
+        <GBFeature_location>complement(&lt;1..&gt;1829)</GBFeature_location>
+        <GBFeature_intervals>
+          <GBInterval>
+            <GBInterval_from>1829</GBInterval_from>
+            <GBInterval_to>1</GBInterval_to>
+            <GBInterval_iscomp value="true"/>
+            <GBInterval_accession>DS027698.1</GBInterval_accession>
+          </GBInterval>
+        </GBFeature_intervals>
+        <GBFeature_partial5 value="true"/>
+        <GBFeature_partial3 value="true"/>
+        <GBFeature_quals>
+          <GBQualifier>
+            <GBQualifier_name>locus_tag</GBQualifier_name>
+            <GBQualifier_value>NFIA_055490</GBQualifier_value>
+          </GBQualifier>
+        </GBFeature_quals>
+      </GBFeature>
+      <GBFeature>
+        <GBFeature_key>mRNA</GBFeature_key>
+        <GBFeature_location>complement(join(&lt;1..607,674..796,887..1103,1159..1690,1758..&gt;1829))</GBFeature_location>
+        <GBFeature_intervals>
+          <GBInterval>
+            <GBInterval_from>1829</GBInterval_from>
+            <GBInterval_to>1758</GBInterval_to>
+            <GBInterval_iscomp value="true"/>
+            <GBInterval_accession>DS027698.1</GBInterval_accession>
+          </GBInterval>
+          <GBInterval>
+            <GBInterval_from>1690</GBInterval_from>
+            <GBInterval_to>1159</GBInterval_to>
+            <GBInterval_iscomp value="true"/>
+            <GBInterval_accession>DS027698.1</GBInterval_accession>
+          </GBInterval>
+          <GBInterval>
+            <GBInterval_from>1103</GBInterval_from>
+            <GBInterval_to>887</GBInterval_to>
+            <GBInterval_iscomp value="true"/>
+            <GBInterval_accession>DS027698.1</GBInterval_accession>
+          </GBInterval>
+          <GBInterval>
+            <GBInterval_from>796</GBInterval_from>
+            <GBInterval_to>674</GBInterval_to>
+            <GBInterval_iscomp value="true"/>
+            <GBInterval_accession>DS027698.1</GBInterval_accession>
+          </GBInterval>
+          <GBInterval>
+            <GBInterval_from>607</GBInterval_from>
+            <GBInterval_to>1</GBInterval_to>
+            <GBInterval_iscomp value="true"/>
+            <GBInterval_accession>DS027698.1</GBInterval_accession>
+          </GBInterval>
+        </GBFeature_intervals>
+        <GBFeature_operator>join</GBFeature_operator>
+        <GBFeature_partial5 value="true"/>
+        <GBFeature_partial3 value="true"/>
+        <GBFeature_quals>
+          <GBQualifier>
+            <GBQualifier_name>locus_tag</GBQualifier_name>
+            <GBQualifier_value>NFIA_055490</GBQualifier_value>
+          </GBQualifier>
+          <GBQualifier>
+            <GBQualifier_name>product</GBQualifier_name>
+            <GBQualifier_value>benzoate 4-monooxygenase cytochrome P450</GBQualifier_value>
+          </GBQualifier>
+          <GBQualifier>
+            <GBQualifier_name>note</GBQualifier_name>
+            <GBQualifier_value>transcript NFIA_055490A</GBQualifier_value>
+          </GBQualifier>
+          <GBQualifier>
+            <GBQualifier_name>transcription</GBQualifier_name>
+            <GBQualifier_value>ATGATCATCTATAACTACTTTTTCCACCCCCTGGCACGAGTCCCTGGACCTTGCACTGGAGCGATTTTCCCGTTCTGGTCGATGAGCAGCTTGTACCGCCGGAGGTTGAACCCCGATCTGGCAGAACTACATAAAAAATATGGTCAGATACTCTCCCTTCTCTCGGGCTACGGCGGCCTGCTGATGTGCCCGAGGAATACAGGCCCTATTGTTCGAGTTGGCCCCAATCAACTGTCATTCGCAACCGTCGAAGCTCAGAAGATGATCTACAATGCCAAGCCAACCCATACCGGCTCCGATGAATTATTTGGTAGAGACGGAACCCTTCAGGATGTGCTGCTCTCAATGATACTAGGAGCAGCCAACATCGGTTCACTCTCGAACCGAGCTGAGCATAAGAAGATGCGCAAGCGTCTACAGCCTGGTTTTACGTCCAAGGCGCTTTTCGAACAGGAATCCCTGCTGCGCATGCACATGGACCGCCTCTTGCAGGGACTTGCGCAAGATACGGGTGTGATCGATTTGACTGAATATTTCTCGAGGTTCCTCTGGGACCTCATTGGTGATCTTTCATTCGGAGAACCTCTTGTTCCAGAGAAGCACGGCCGTCGCACAGACACGCTGCGGTCGCTGGTTGGGGTATACCAAGGGTGTTTTCCCATCCTGGAAGCTATCAATTATGCCGTTCCGCAAATCGAAGGAGTTCTCAAGCTGGCTTTGCAGCTGGTACCCCCAGCTACTCTGCGCGCGGTTTTGCCCTCTGCCACATTCAGGGAGTATGACCATCCTGCTATCAATTCTCACACAACACCACTCCAGTGTTGCATTAACCGACAGGATGGCCGATCAGATTTTCTCACGCATATCATGGGCGACAAAAGCAGCAACCCCACAGAACTAGAGTTAAGCTATGACGAATTGCATAGTAACGCGACCGTCCTTATGATCGCCGGCTACAAGACGACCGAGACATCCCTCTCGGCGCTGTTCTACCGACTCCTGTCGACTCCAGGAGTGCTTGAGAAACTCCAAACGGAGCTTTTCAGCAACTTTCAGAGCATTGACGAGATCACGGGGAAGAAACTGCTCTCGCTGCCCTACCTGAACGGGTGTGTCAACGAGTCGCTCCGGCTAACGCCCGCAGTGGCGGGCAAGTTCGCGTCCCGTCGGTCTCCGGGAGCAATCATCGAAGGCTTCTATGTCCCTAGCGGGACGGAAGTGTATACGGAGACGTACACCATGCAGCGGAGTCCCCAGTACTGGCACGCCCCGGACGAGTACCGTCCGGAGCGCTGGTTCGAACGGGGCGAGGGCAGTCCCTATGCCCAGGATGTGCACGAGGCGTTCAAGCCATTTAGCTCGGGCCCTCGAGCATGCCTTGGAAGGGAAATGGCCCTCCAGACTCTCCGGTTGACCGCAGCTTTGCTGGTATACCGCTTTCATTTGAAGATAGTCAACGAGGACCGGTTTGTATGGGAGCAGGATACTGACTCCAGAATGATATACTCTAAATATCACATAAAAGCCATTGTGCAAGAGCGCCTGACTTAG</GBQualifier_value>
+          </GBQualifier>
+        </GBFeature_quals>
+      </GBFeature>
+      <GBFeature>
+        <GBFeature_key>CDS</GBFeature_key>
+        <GBFeature_location>complement(join(1..607,674..796,887..1103,1159..1690,1758..1829))</GBFeature_location>
+        <GBFeature_intervals>
+          <GBInterval>
+            <GBInterval_from>1829</GBInterval_from>
+            <GBInterval_to>1758</GBInterval_to>
+            <GBInterval_iscomp value="true"/>
+            <GBInterval_accession>DS027698.1</GBInterval_accession>
+          </GBInterval>
+          <GBInterval>
+            <GBInterval_from>1690</GBInterval_from>
+            <GBInterval_to>1159</GBInterval_to>
+            <GBInterval_iscomp value="true"/>
+            <GBInterval_accession>DS027698.1</GBInterval_accession>
+          </GBInterval>
+          <GBInterval>
+            <GBInterval_from>1103</GBInterval_from>
+            <GBInterval_to>887</GBInterval_to>
+            <GBInterval_iscomp value="true"/>
+            <GBInterval_accession>DS027698.1</GBInterval_accession>
+          </GBInterval>
+          <GBInterval>
+            <GBInterval_from>796</GBInterval_from>
+            <GBInterval_to>674</GBInterval_to>
+            <GBInterval_iscomp value="true"/>
+            <GBInterval_accession>DS027698.1</GBInterval_accession>
+          </GBInterval>
+          <GBInterval>
+            <GBInterval_from>607</GBInterval_from>
+            <GBInterval_to>1</GBInterval_to>
+            <GBInterval_iscomp value="true"/>
+            <GBInterval_accession>DS027698.1</GBInterval_accession>
+          </GBInterval>
+        </GBFeature_intervals>
+        <GBFeature_operator>join</GBFeature_operator>
+        <GBFeature_quals>
+          <GBQualifier>
+            <GBQualifier_name>locus_tag</GBQualifier_name>
+            <GBQualifier_value>NFIA_055490</GBQualifier_value>
+          </GBQualifier>
+          <GBQualifier>
+            <GBQualifier_name>note</GBQualifier_name>
+            <GBQualifier_value>encoded by transcript NFIA_055490A;&#xa;predicted by EVM</GBQualifier_value>
+          </GBQualifier>
+          <GBQualifier>
+            <GBQualifier_name>codon_start</GBQualifier_name>
+            <GBQualifier_value>1</GBQualifier_value>
+          </GBQualifier>
+          <GBQualifier>
+            <GBQualifier_name>transl_table</GBQualifier_name>
+            <GBQualifier_value>1</GBQualifier_value>
+          </GBQualifier>
+          <GBQualifier>
+            <GBQualifier_name>product</GBQualifier_name>
+            <GBQualifier_value>benzoate 4-monooxygenase cytochrome P450</GBQualifier_value>
+          </GBQualifier>
+          <GBQualifier>
+            <GBQualifier_name>protein_id</GBQualifier_name>
+            <GBQualifier_value>EAW16200.1</GBQualifier_value>
+          </GBQualifier>
+          <GBQualifier>
+            <GBQualifier_name>translation</GBQualifier_name>
+            <GBQualifier_value>MIIYNYFFHPLARVPGPCTGAIFPFWSMSSLYRRRLNPDLAELHKKYGQILSLLSGYGGLLMCPRNTGPIVRVGPNQLSFATVEAQKMIYNAKPTHTGSDELFGRDGTLQDVLLSMILGAANIGSLSNRAEHKKMRKRLQPGFTSKALFEQESLLRMHMDRLLQGLAQDTGVIDLTEYFSRFLWDLIGDLSFGEPLVPEKHGRRTDTLRSLVGVYQGCFPILEAINYAVPQIEGVLKLALQLVPPATLRAVLPSATFREYDHPAINSHTTPLQCCINRQDGRSDFLTHIMGDKSSNPTELELSYDELHSNATVLMIAGYKTTETSLSALFYRLLSTPGVLEKLQTELFSNFQSIDEITGKKLLSLPYLNGCVNESLRLTPAVAGKFASRRSPGAIIEGFYVPSGTEVYTETYTMQRSPQYWHAPDEYRPERWFERGEGSPYAQDVHEAFKPFSSGPRACLGREMALQTLRLTAALLVYRFHLKIVNEDRFVWEQDTDSRMIYSKYHIKAIVQERLT</GBQualifier_value>
+          </GBQualifier>
+        </GBFeature_quals>
+      </GBFeature>
+      <GBFeature>
+        <GBFeature_key>gene</GBFeature_key>
+        <GBFeature_location>&lt;2989..&gt;5465</GBFeature_location>
+        <GBFeature_intervals>
+          <GBInterval>
+            <GBInterval_from>2989</GBInterval_from>
+            <GBInterval_to>5465</GBInterval_to>
+            <GBInterval_accession>DS027698.1</GBInterval_accession>
+          </GBInterval>
+        </GBFeature_intervals>
+        <GBFeature_partial5 value="true"/>
+        <GBFeature_partial3 value="true"/>
+        <GBFeature_quals>
+          <GBQualifier>
+            <GBQualifier_name>locus_tag</GBQualifier_name>
+            <GBQualifier_value>NFIA_055500</GBQualifier_value>
+          </GBQualifier>
+        </GBFeature_quals>
+      </GBFeature>
+      <GBFeature>
+        <GBFeature_key>mRNA</GBFeature_key>
+        <GBFeature_location>join(&lt;2989..3274,3329..3623,3692..4436,4497..&gt;5465)</GBFeature_location>
+        <GBFeature_intervals>
+          <GBInterval>
+            <GBInterval_from>2989</GBInterval_from>
+            <GBInterval_to>3274</GBInterval_to>
+            <GBInterval_accession>DS027698.1</GBInterval_accession>
+          </GBInterval>
+          <GBInterval>
+            <GBInterval_from>3329</GBInterval_from>
+            <GBInterval_to>3623</GBInterval_to>
+            <GBInterval_accession>DS027698.1</GBInterval_accession>
+          </GBInterval>
+          <GBInterval>
+            <GBInterval_from>3692</GBInterval_from>
+            <GBInterval_to>4436</GBInterval_to>
+            <GBInterval_accession>DS027698.1</GBInterval_accession>
+          </GBInterval>
+          <GBInterval>
+            <GBInterval_from>4497</GBInterval_from>
+            <GBInterval_to>5465</GBInterval_to>
+            <GBInterval_accession>DS027698.1</GBInterval_accession>
+          </GBInterval>
+        </GBFeature_intervals>
+        <GBFeature_operator>join</GBFeature_operator>
+        <GBFeature_partial5 value="true"/>
+        <GBFeature_partial3 value="true"/>
+        <GBFeature_quals>
+          <GBQualifier>
+            <GBQualifier_name>locus_tag</GBQualifier_name>
+            <GBQualifier_value>NFIA_055500</GBQualifier_value>
+          </GBQualifier>
+          <GBQualifier>
+            <GBQualifier_name>product</GBQualifier_name>
+            <GBQualifier_value>geranylgeranyl pyrophosphate synthase</GBQualifier_value>
+          </GBQualifier>
+          <GBQualifier>
+            <GBQualifier_name>note</GBQualifier_name>
+            <GBQualifier_value>transcript NFIA_055500A</GBQualifier_value>
+          </GBQualifier>
+          <GBQualifier>
+            <GBQualifier_name>transcription</GBQualifier_name>
+            <GBQualifier_value>ATGGAGGTCTGGGAGCATTCCCGACCTATAGCTGATGACACAATCAAGAAGACGCCATCATTTACCACCTTACCAATCCGTATCAATAAGCAAAACGATGTCGCGGATGCAGCCACCAGGAGAGCTCTTCGGGACTGGGATTATTATCTGCACGATGGCCTGGCGGAGAGAGCACTTATCTCCATCAGTGAGCTCGGGAACCTGGGTGCTTTTGCCTACCCCGAGGTGCCACCAGAGAGGCTGGCGATTGTGACCTACTTGACCGATCTAGGGATTCTGCATGACGATGGGTACGAGGCCATGGATATGGATCAAGCAAGGACAGAACATCGTGAATTCGGTGCCCTCTTTGACCCCCATGAGCAGTTGCCATCACGCCGAGGCACCCGTGCTGCCAAGTTAAAGAAGCTAGTGTCGCAGATCTTACTTGAGGCGATACGTATTGACCGTGATATGGGTATGTACATGTTTGACATGTATAACAAAGGATGGTTGTCCGTTGCAGGAGGGGAGGGCAAGGTGCCTCAGTTTAAATCTGTGGAAGAATACCAAGCCTACAGAAGGGATGATTTCGGCATCAGGGCATTCTGGCCGATGGTGGAGTTTGGCATGGCGATGCGACTGTCGGATGAAGACAAGAAACTGATCGAGCCAGTTATGGAACCCATTGATAAGGCTATCATCTGGACCAACGATTACTGGAGCTTCGATCGGGAGTACCATGAGTCTATAACGAACGGGAGTCGACTCACTAACGTGGTAGAAGTGGTTCGTCAGATTGAGAATAAGTCTATAGATGAGGCAAAAGCCGCGGTTCGCCAGCTACTCGTCAATCTGGAACAGCAATACCTTGAGCGGAAAAGGGCAATTTATGCCCAAAACCCATCAATTCCCTCGCATTTGAGAAAATGGATTGAAGTGGTGGGAATTACCGTGGCTGGTACTCACTTTTGGGCCAGCTGCTCTCCCCGTCACCATGCCTGGCGCAATAACTCAAGAAATGGACTAAAGCCCGCCAACCATGTGGCAGCCCCAACGTTAATTACCCCCAGCAACAACCTCAATTCATCTAAGGGGTCGGAAGAGCAGATGCAAGATTCGGACAATGGCACACGTACCCAAATGTGTCCGGCAAATGACCACGAGGTCATGCAGCTGAATGCGAAATTGTCACTGGGTAAACAGGATGGCGGACATGCCATGCGGGCTGCATTAGCCCTTCTCTCAAGGGCAGCTGAACAGTGTGAGAGCTTATTCGACGGTATGGAGCACGAGAGAGCCAGGCTACTCCAATCTGGTGAGGAAAAGGCGAGGCTTTCCTGGGAAGGTCGCAGCAAAGGGTCCCAGGAGTTAGAGCATTCGTGGTACAAACCCGCAAAAACAGCTCTCCAAGCACCAATTCATTACATCTGTTCCATGCCCTCAAAGGGGGTCCGATCCAGGATGATCGAAGCGTTCAATTACTGGCTTGAGGTGGACGAGACTTCCTTGACCAAAATCCGGCGGCTTGTCGATCTCCTCCATAATGCGTCTCTGATTCTAGACGACATCGAAGACCACTCTCCCAAGCGACGAGGAAGGCCAGCCACACACACTATCTTCGGTCATTCTCAAGCGATTAACAGCGCCAATTTCATGTTTGTCCAGGCCGTTCAAGTCGCCCGCCAGTTCCGCAACCCGAACGCCGTTGATATTCTGCTCGAGGAACTGGAGAACCTTTATCTTGGGCAGAGTTGGGATCTGGACTGGAAATACAAGCTCCGATGCCCGTCACCCTCTGAGTATCTGAATATGGTCGACAACAAAACCGGGGGTCTGTTTCGTCTTCTGCTGAGACTCATGCAGGCCGAAAGGAAAGGTACCACCGAGGTTGATCTGGACGGGCTCACCGTCCTGTTTGGACGGTTCTTCCAGATTCGCGATGATTACATGAACCTCCGCTCCGGCCTATACACCGAGCAGAAAGGATTTTGCGAAGACCTCGATGAGGGCAAGTTTTCTTACCCAATTGTCGTTTGTGTTGCGAACCATGCGGACTTCAGGGACCTCATCGACGGGGTCTTCCGGCAGCGGCCTACCGCGATTACCAGCGGAATGCAGCCGCTGGCCCCCGAGATAAAACGATATGTTGTCGAATACCTCAACACCAGTGGAACATTCCAACACTGTCGGGAATTCTTGATGCAACTGGAAAGCTTGATCGAGAGTGAAATTGACCGAATTGAGAAGGTCACAAACGAGGCAAATCCAATGCTACGACTATTATTGGAGAAGCTGAGTGTGAAGGAGAATTAA</GBQualifier_value>
+          </GBQualifier>
+        </GBFeature_quals>
+      </GBFeature>
+      <GBFeature>
+        <GBFeature_key>CDS</GBFeature_key>
+        <GBFeature_location>join(2989..3274,3329..3623,3692..4436,4497..5465)</GBFeature_location>
+        <GBFeature_intervals>
+          <GBInterval>
+            <GBInterval_from>2989</GBInterval_from>
+            <GBInterval_to>3274</GBInterval_to>
+            <GBInterval_accession>DS027698.1</GBInterval_accession>
+          </GBInterval>
+          <GBInterval>
+            <GBInterval_from>3329</GBInterval_from>
+            <GBInterval_to>3623</GBInterval_to>
+            <GBInterval_accession>DS027698.1</GBInterval_accession>
+          </GBInterval>
+          <GBInterval>
+            <GBInterval_from>3692</GBInterval_from>
+            <GBInterval_to>4436</GBInterval_to>
+            <GBInterval_accession>DS027698.1</GBInterval_accession>
+          </GBInterval>
+          <GBInterval>
+            <GBInterval_from>4497</GBInterval_from>
+            <GBInterval_to>5465</GBInterval_to>
+            <GBInterval_accession>DS027698.1</GBInterval_accession>
+          </GBInterval>
+        </GBFeature_intervals>
+        <GBFeature_operator>join</GBFeature_operator>
+        <GBFeature_quals>
+          <GBQualifier>
+            <GBQualifier_name>locus_tag</GBQualifier_name>
+            <GBQualifier_value>NFIA_055500</GBQualifier_value>
+          </GBQualifier>
+          <GBQualifier>
+            <GBQualifier_name>note</GBQualifier_name>
+            <GBQualifier_value>encoded by transcript NFIA_055500A;&#xa;predicted by EVM</GBQualifier_value>
+          </GBQualifier>
+          <GBQualifier>
+            <GBQualifier_name>codon_start</GBQualifier_name>
+            <GBQualifier_value>1</GBQualifier_value>
+          </GBQualifier>
+          <GBQualifier>
+            <GBQualifier_name>transl_table</GBQualifier_name>
+            <GBQualifier_value>1</GBQualifier_value>
+          </GBQualifier>
+          <GBQualifier>
+            <GBQualifier_name>product</GBQualifier_name>
+            <GBQualifier_value>geranylgeranyl pyrophosphate synthase</GBQualifier_value>
+          </GBQualifier>
+          <GBQualifier>
+            <GBQualifier_name>protein_id</GBQualifier_name>
+            <GBQualifier_value>EAW16201.1</GBQualifier_value>
+          </GBQualifier>
+          <GBQualifier>
+            <GBQualifier_name>translation</GBQualifier_name>
+            <GBQualifier_value>MEVWEHSRPIADDTIKKTPSFTTLPIRINKQNDVADAATRRALRDWDYYLHDGLAERALISISELGNLGAFAYPEVPPERLAIVTYLTDLGILHDDGYEAMDMDQARTEHREFGALFDPHEQLPSRRGTRAAKLKKLVSQILLEAIRIDRDMGMYMFDMYNKGWLSVAGGEGKVPQFKSVEEYQAYRRDDFGIRAFWPMVEFGMAMRLSDEDKKLIEPVMEPIDKAIIWTNDYWSFDREYHESITNGSRLTNVVEVVRQIENKSIDEAKAAVRQLLVNLEQQYLERKRAIYAQNPSIPSHLRKWIEVVGITVAGTHFWASCSPRHHAWRNNSRNGLKPANHVAAPTLITPSNNLNSSKGSEEQMQDSDNGTRTQMCPANDHEVMQLNAKLSLGKQDGGHAMRAALALLSRAAEQCESLFDGMEHERARLLQSGEEKARLSWEGRSKGSQELEHSWYKPAKTALQAPIHYICSMPSKGVRSRMIEAFNYWLEVDETSLTKIRRLVDLLHNASLILDDIEDHSPKRRGRPATHTIFGHSQAINSANFMFVQAVQVARQFRNPNAVDILLEELENLYLGQSWDLDWKYKLRCPSPSEYLNMVDNKTGGLFRLLLRLMQAERKGTTEVDLDGLTVLFGRFFQIRDDYMNLRSGLYTEQKGFCEDLDEGKFSYPIVVCVANHADFRDLIDGVFRQRPTAITSGMQPLAPEIKRYVVEYLNTSGTFQHCREFLMQLESLIESEIDRIEKVTNEANPMLRLLLEKLSVKEN</GBQualifier_value>
+          </GBQualifier>
+        </GBFeature_quals>
+      </GBFeature>
+    </GBSeq_feature-table>
+    <GBSeq_sequence>ctaagtcaggcgctcttgcacaatggcttttatgtgatatttagagtatatcattctggagtcagtatcctgctcccatacaaaccggtcctcgttgactatcttcaaatgaaagcggtataccagcaaagctgcggtcaaccggagagtctggagggccatttcccttccaaggcatgctcgagggcccgagctaaatggcttgaacgcctcgtgcacatcctgggcatagggactgccctcgccccgttcgaaccagcgctccggacggtactcgtccggggcgtgccagtactggggactccgctgcatggtgtacgtctccgtatacacttccgtcccgctagggacatagaagccttcgatgattgctcccggagaccgacgggacgcgaacttgcccgccactgcgggcgttagccggagcgactcgttgacacacccgttcaggtagggcagcgagagcagtttcttccccgtgatctcgtcaatgctctgaaagttgctgaaaagctccgtttggagtttctcaagcactcctggagtcgacaggagtcggtagaacagcgccgagagggatgtctcggtcgtcttgtagccggcgatcctaaacacgatgaatcagccactgtgcccacgctacccatactggcctcaaggggccgctactcacataaggacggtcgcgttactatgcaattcgtcatagcttaactctagttctgtggggttgctgcttttgtcgcccatgatatgcgtgagaaaatctgatcggccatcctgtcggttaatgcaactataaagataccctcagtcagcggcgccttgatatgaaaagattgctccagatcttccaatcatgttgaacttctggagtaggaatcaccactggagtggtgttgtgtgagaattgatagcaggatggtcatactccctgaatgtggcagagggcaaaaccgcgcgcagagtagctgggggtaccagctgcaaagccagcttgagaactccttcgatttgcggaacggcataattgatagcttccaggatgggaaaacacccttggtataccccaaccagcgaccgcagcgtgtctgtgcgacggcctgcttagcaacacacttcatggatgcggagatgaaataaacaaagaggactcaccgtgcttctctggaacaagaggttctccgaatgaaagatcaccaatgaggtcccagaggaacctcgagaaatattcagtcaaatcgatcacacccgtatcttgcgcaagtccctgcaagaggcggtccatgtgcatgcgcagcagggattcctgttcgaaaagcgccttggacgtaaaaccaggctgtagacgcttgcgcatcttcttatgctcagctcggttcgagagtgaaccgatgttggctgctcctagtatcattgagagcagcacatcctgaagggttccgtctctaccaaataattcatcggagccggtatgggttggcttggcattgtagatcatcttctgagcttcgacggttgcgaatgacagttgattggggccaactcgaacaatagggcctgtattcctcgggcacatcagcaggccgccgtagcccgagagaagggagagtatctgaccatattttttatgtagttctgccagatcggggttcaacctccggcggtacaagctgctcatcgaccagaactatgagaatacacagagtcaattccctcagagcacgtaggaccggcagcttttgagttggacttaccgggaaaatcgctccagtgcaaggtccagggactcgtgccagggggtggaaaaagtagttatagatgatcatcgagaccaacagccccgtaccctagcagacagacattgactcgtcattatgagagagtacatcatgagaggttagctcataccagtgaacatcccataatcgcaacttgttcaagactgattccagacatagtcatgaggtgctgtgcgtccataatgttgtcaaaaggatgtgagaggatcttgagagagaagatggatgtgaatgattgacttcacccaaagtattagcatcaaattagtggcctctttctcggcttctaagtgtgattccgtactcctaggctcaatagctagggatgaacaagctagaaacctggtaatgctgcaggcttccggatacgactgcacatgacgtaaagaacttacagctaaggttttacagggcactgtgatggctttaatattaattatagacccttcgtcatgatatcacccctaaggtggatgaatggcgtgttgaacagactcgatataatgggttcaggtttggacgaagtagagttctgtacaacgttgaatagcaacctgactgtaaccttgctttccgcagacggtcagcaaaagtctataaactatggccagttaagttctatttccgtctaggtatatattctcttgtgctttgtttggtctagaatgcatggccctcggcaataccacaacactaggttcgtgatatcccgtatatcctgttgtgattaacctcttccatgctttcagagagagtaaaattggaaaagaacatgtagaagcataaatataaactttctatttttgaaacttaactacactattactacattgatgtgcaacctcgccgcaaacagattttcgagtcatgtataaatggttctagaacatcacgaagggtcagcactgggctgtaggttgtttcgaatctagatgaaaccttcactgcccatctaaaattgaatgtttttttatggatttataggccctggcttttgtaaaaggctcggcagcgccgtggctaacgagagaccccagttagaagcctgtgtaacctgagaaacggcgactcaacagtggctccttgctttactgctgtggttaaatactgctattccaccattaaaccatcttcaaaaattcacgtctctctgtacggaattgcccaatccatggactcttgcacaatggaggtctgggagcattcccgacctatagctgatgacacaatcaagaagacgccatcatttaccaccttaccaatccgtatcaataagcaaaacgatgtcgcggatgcagccaccaggagagctcttcgggactgggattattatctgcacgatggcctggcggagagagcacttatctccatcagtgagctcgggaacctgggtgcttttgcctaccccgaggtgccaccagagaggctggcgattgtgacctacttgaccgatctagggattctgcatgacggttagtaattagaacagcaatcgatggcgtcagaaccagctgaccaggtagtagatgggtacgaggccatggatatggatcaagcaaggacagaacatcgtgaattcggtgccctctttgacccccatgagcagttgccatcacgccgaggcacccgtgctgccaagttaaagaagctagtgtcgcagatcttacttgaggcgatacgtattgaccgtgatatgggtatgtacatgtttgacatgtataacaaaggatggttgtccgttgcaggaggggagggcaaggtgcctcagtttaaatctgtggaagaataccaagcctacagaagggatgatttcggcatcaggtataccctcaccaatgtcaattgcccaacttggaccctccatcagctaacctaatttaatcaatcagggcattctggccgatggtggagtttggcatggcgatgcgactgtcggatgaagacaagaaactgatcgagccagttatggaacccattgataaggctatcatctggaccaacgattactggagcttcgatcgggagtaccatgagtctataacgaacgggagtcgactcactaacgtggtagaagtggttcgtcagattgagaataagtctatagatgaggcaaaagccgcggttcgccagctactcgtcaatctggaacagcaataccttgagcggaaaagggcaatttatgcccaaaacccatcaattccctcgcatttgagaaaatggattgaagtggtgggaattaccgtggctggtactcacttttgggccagctgctctccccgtcaccatgcctggcgcaataactcaagaaatggactaaagcccgccaaccatgtggcagccccaacgttaattacccccagcaacaacctcaattcatctaaggggtcggaagagcagatgcaagattcggacaatggcacacgtacccaaatgtgtccggcaaatgaccacgaggtcatgcagctgaatgcgaaattgtcactgggtaaacaggatggcggacatgccatgcgggctgcattagcccttctctcaagggcagctgaacagtgtgagagcttattcgacggtatggagcacgagagagccaggctactccaatctggtgaggaaaaggcgaggctttcctgggaagtatgctctgccttttacttcttgcacattctagtgagcatttttaataaagtgatatagggtcgcagcaaagggtcccaggagttagagcattcgtggtacaaacccgcaaaaacagctctccaagcaccaattcattacatctgttccatgccctcaaagggggtccgatccaggatgatcgaagcgttcaattactggcttgaggtggacgagacttccttgaccaaaatccggcggcttgtcgatctcctccataatgcgtctctgattctagacgacatcgaagaccactctcccaagcgacgaggaaggccagccacacacactatcttcggtcattctcaagcgattaacagcgccaatttcatgtttgtccaggccgttcaagtcgcccgccagttccgcaacccgaacgccgttgatattctgctcgaggaactggagaacctttatcttgggcagagttgggatctggactggaaatacaagctccgatgcccgtcaccctctgagtatctgaatatggtcgacaacaaaaccgggggtctgtttcgtcttctgctgagactcatgcaggccgaaaggaaaggtaccaccgaggttgatctggacgggctcaccgtcctgtttggacggttcttccagattcgcgatgattacatgaacctccgctccggcctatacaccgagcagaaaggattttgcgaagacctcgatgagggcaagttttcttacccaattgtcgtttgtgttgcgaaccatgcggacttcagggacctcatcgacggggtcttccggcagcggcctaccgcgattaccagcggaatgcagccgctggcccccgagataaaacgatatgttgtcgaatacctcaacaccagtggaacattccaacactgtcgggaattcttgatgcaactggaaagcttgatcgagagtgaaattgaccgaattgagaaggtcacaaacgaggcaaatccaatgctacgactattattggagaagctgagtgtgaaggagaattaa</GBSeq_sequence>
+    <GBSeq_xrefs>
+      <GBXref>
+        <GBXref_dbname>BioProject</GBXref_dbname>
+        <GBXref_id>PRJNA15672</GBXref_id>
+      </GBXref>
+      <GBXref>
+        <GBXref_dbname>BioSample</GBXref_dbname>
+        <GBXref_id>SAMN02953637</GBXref_id>
+      </GBXref>
+    </GBSeq_xrefs>
+  </GBSeq>
+
+</GBSet>
