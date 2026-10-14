@@ -1,0 +1,2318 @@
+{
+  "rdkit": "2026.03.5",
+  "chemistry": {
+    "fogacin": {
+      "formula": "C16H16O6",
+      "charge": 0,
+      "inchi": "InChI=1S/C16H16O6/c1-7-14-8(4-9(22-7)6-13(19)20)5-10-11(17)2-3-12(18)15(10)16(14)21/h2-3,5,7,9,17-18,21H,4,6H2,1H3,(H,19,20)/t7-,9+/m0/s1",
+      "key": "QHMHMPAPKQFGRV-IONNQARKSA-N",
+      "centers": [
+        [
+          3,
+          "R"
+        ],
+        [
+          18,
+          "S"
+        ]
+      ],
+      "mibig_compound_index": 2
+    },
+    "fogacin-2": {
+      "formula": "C16H18O6",
+      "charge": 0,
+      "inchi": "InChI=1S/C16H18O6/c1-7-14-8(4-9(22-7)6-13(19)20)5-10-11(17)2-3-12(18)15(10)16(14)21/h5,7,9,11,17,21H,2-4,6H2,1H3,(H,19,20)/t7-,9+,11?/m0/s1",
+      "key": "WGMNUJNCGZFZPD-GZALTDKGSA-N",
+      "centers": [
+        [
+          1,
+          "S"
+        ],
+        [
+          9,
+          "R"
+        ],
+        [
+          15,
+          "?"
+        ]
+      ],
+      "mibig_compound_index": 1
+    }
+  },
+  "inventories": {
+    "chebi_structures": {
+      "rows_scanned": 45895,
+      "join_column": "standard_inchi_key",
+      "join_values": [
+        "QHMHMPAPKQFGRV-IONNQARKSA-N",
+        "WGMNUJNCGZFZPD-GZALTDKGSA-N"
+      ],
+      "matches": []
+    },
+    "chebi_origins": {
+      "rows_scanned": 18159,
+      "join_column": "chebi_id",
+      "join_values": [],
+      "matches": []
+    },
+    "mibig_compounds": {
+      "rows_scanned": 3449,
+      "join_column": "standard_inchi_key",
+      "join_values": [
+        "QHMHMPAPKQFGRV-IONNQARKSA-N",
+        "WGMNUJNCGZFZPD-GZALTDKGSA-N"
+      ],
+      "matches": [
+        {
+          "row_number": 344,
+          "row": {
+            "mibig_accession": "BGC0000248",
+            "entry_version": "5",
+            "entry_status": "active",
+            "entry_quality": "questionable",
+            "entry_completeness": "complete",
+            "compound_name": "fogacin",
+            "compound_index": "2",
+            "smiles": "OC(C[C@H]1CC2=CC3=C(C(O)=CC=C3O)C(O)=C2[C@H](C)O1)=O",
+            "standard_inchi": "InChI=1S/C16H16O6/c1-7-14-8(4-9(22-7)6-13(19)20)5-10-11(17)2-3-12(18)15(10)16(14)21/h2-3,5,7,9,17-18,21H,4,6H2,1H3,(H,19,20)/t7-,9+/m0/s1",
+            "standard_inchi_key": "QHMHMPAPKQFGRV-IONNQARKSA-N",
+            "stereo_complete": "true",
+            "compound_classes": "",
+            "database_ids": "",
+            "taxon_id": "NCBITaxon:29301",
+            "taxon_label": "Streptomyces arenae DSM 40737",
+            "bgc_classes": "PKS",
+            "bgc_subclasses": "Unknown",
+            "genome_accession": "JAKQYH010000014.1",
+            "locus_from": "94867",
+            "locus_to": "120787",
+            "locus_evidence_methods": "Heterologous expression",
+            "producer_evidence_basis": "SOURCE_ASSERTION",
+            "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED",
+            "primary_reference": "PMID:10206788",
+            "reference_basis": "ENTRY"
+          }
+        },
+        {
+          "row_number": 2317,
+          "row": {
+            "mibig_accession": "BGC0002021",
+            "entry_version": "3",
+            "entry_status": "active",
+            "entry_quality": "questionable",
+            "entry_completeness": "unknown",
+            "compound_name": "fogacin",
+            "compound_index": "1",
+            "smiles": "C[C@H]1C2=C(C3=C(C=C2C[C@@H](O1)CC(=O)O)C(CCC3=O)O)O",
+            "standard_inchi": "InChI=1S/C16H18O6/c1-7-14-8(4-9(22-7)6-13(19)20)5-10-11(17)2-3-12(18)15(10)16(14)21/h5,7,9,11,17,21H,2-4,6H2,1H3,(H,19,20)/t7-,9+,11?/m0/s1",
+            "standard_inchi_key": "WGMNUJNCGZFZPD-GZALTDKGSA-N",
+            "stereo_complete": "false",
+            "compound_classes": "",
+            "database_ids": "pubchem:11493248",
+            "taxon_id": "NCBITaxon:512565",
+            "taxon_label": "Actinoplanes missouriensis 431",
+            "bgc_classes": "PKS",
+            "bgc_subclasses": "Unknown",
+            "genome_accession": "AP012319.1",
+            "locus_from": "5336641",
+            "locus_to": "5376856",
+            "locus_evidence_methods": "",
+            "producer_evidence_basis": "SOURCE_ASSERTION",
+            "cluster_link_evidence_basis": "CLUSTER_UNSTATED",
+            "primary_reference": "PMID:30556239",
+            "reference_basis": "ENTRY"
+          }
+        }
+      ]
+    },
+    "lotus_occurrences": {
+      "rows_scanned": 10226,
+      "join_column": "standard_inchi_key",
+      "join_values": [
+        "QHMHMPAPKQFGRV-IONNQARKSA-N",
+        "WGMNUJNCGZFZPD-GZALTDKGSA-N"
+      ],
+      "matches": [
+        {
+          "row_number": 9262,
+          "row": {
+            "standard_inchi_key": "WGMNUJNCGZFZPD-GZALTDKGSA-N",
+            "organism_name": "Actinoplanes missouriensis",
+            "taxon_id": "NCBITaxon:1866",
+            "organism_wikidata": "http://www.wikidata.org/entity/Q25834569",
+            "reference_doi": "10.1002/CBIC.201800640",
+            "structure_wikidata": "http://www.wikidata.org/entity/Q105304625"
+          }
+        },
+        {
+          "row_number": 9263,
+          "row": {
+            "standard_inchi_key": "WGMNUJNCGZFZPD-GZALTDKGSA-N",
+            "organism_name": "Streptomyces",
+            "taxon_id": "NCBITaxon:1883",
+            "organism_wikidata": "http://www.wikidata.org/entity/Q1144013",
+            "reference_doi": "10.1038/JA.2006.45",
+            "structure_wikidata": "http://www.wikidata.org/entity/Q105304625"
+          }
+        }
+      ]
+    },
+    "npclassifier": {
+      "rows_scanned": 3116,
+      "join_column": "standard_inchi_key",
+      "join_values": [
+        "QHMHMPAPKQFGRV-IONNQARKSA-N",
+        "WGMNUJNCGZFZPD-GZALTDKGSA-N"
+      ],
+      "matches": [
+        {
+          "row_number": 1988,
+          "row": {
+            "standard_inchi_key": "QHMHMPAPKQFGRV-IONNQARKSA-N",
+            "smiles": "OC(C[C@H]1CC2=CC3=C(C(O)=CC=C3O)C(O)=C2[C@H](C)O1)=O",
+            "pathway_results": "Polyketides",
+            "superclass_results": "Naphthalenes",
+            "class_results": "Bisnaphthalenes",
+            "is_glycoside": "false",
+            "model_version": "npclassifier.gnps2.org@2026-09-07"
+          }
+        },
+        {
+          "row_number": 2631,
+          "row": {
+            "standard_inchi_key": "WGMNUJNCGZFZPD-GZALTDKGSA-N",
+            "smiles": "C[C@H]1C2=C(C3=C(C=C2C[C@@H](O1)CC(=O)O)C(CCC3=O)O)O",
+            "pathway_results": "Polyketides",
+            "superclass_results": "Naphthalenes",
+            "class_results": "Naphthoquinones",
+            "is_glycoside": "false",
+            "model_version": "npclassifier.gnps2.org@2026-09-07"
+          }
+        }
+      ]
+    },
+    "antibioticmech_inchikeys": {
+      "rows_scanned": 2920,
+      "join_column": "standard_inchi_key",
+      "join_values": [
+        "QHMHMPAPKQFGRV-IONNQARKSA-N",
+        "WGMNUJNCGZFZPD-GZALTDKGSA-N"
+      ],
+      "matches": []
+    },
+    "pubchem_bioassay": {
+      "rows_scanned": 11458,
+      "join_column": "standard_inchi_key",
+      "join_values": [
+        "QHMHMPAPKQFGRV-IONNQARKSA-N",
+        "WGMNUJNCGZFZPD-GZALTDKGSA-N"
+      ],
+      "matches": [
+        {
+          "row_number": 8548,
+          "row": {
+            "standard_inchi_key": "WGMNUJNCGZFZPD-GZALTDKGSA-N",
+            "cid": "11493248",
+            "aid": "",
+            "assay_name": "(no assay data)",
+            "assay_type": "",
+            "depositor": "",
+            "activity_outcome": "",
+            "activity_name": "",
+            "activity_value_um": "",
+            "target_accession": "",
+            "reference": ""
+          }
+        }
+      ]
+    }
+  },
+  "taxonomy": [
+    {
+      "taxon_id": "1866",
+      "name": "Actinoplanes missouriensis",
+      "rank": "species",
+      "lineage": "cellular organisms; Bacteria; Bacillati; Actinomycetota; Actinomycetes; Micromonosporales; Micromonosporaceae; Actinoplanes"
+    },
+    {
+      "taxon_id": "1883",
+      "name": "Streptomyces",
+      "rank": "genus",
+      "lineage": "cellular organisms; Bacteria; Bacillati; Actinomycetota; Actinomycetes; Kitasatosporales; Streptomycetaceae"
+    },
+    {
+      "taxon_id": "512565",
+      "name": "Actinoplanes missouriensis 431",
+      "rank": "strain",
+      "lineage": "cellular organisms; Bacteria; Bacillati; Actinomycetota; Actinomycetes; Micromonosporales; Micromonosporaceae; Actinoplanes; Actinoplanes missouriensis"
+    },
+    {
+      "taxon_id": "29301",
+      "name": "Streptomyces arenae",
+      "rank": "species",
+      "lineage": "cellular organisms; Bacteria; Bacillati; Actinomycetota; Actinomycetes; Kitasatosporales; Streptomycetaceae; Streptomyces"
+    }
+  ],
+  "sequences": {
+    "AP012319.1-region.xml": [
+      {
+        "accession": "AP012319.1",
+        "definition": "Actinoplanes missouriensis 431 DNA, complete genome",
+        "length": "40216",
+        "features": [
+          {
+            "key": "source",
+            "location": "1..40216",
+            "qualifiers": [
+              [
+                "organism",
+                "Actinoplanes missouriensis 431"
+              ],
+              [
+                "mol_type",
+                "genomic DNA"
+              ],
+              [
+                "strain",
+                "431"
+              ],
+              [
+                "culture_collection",
+                "NBRC:102363"
+              ],
+              [
+                "type_material",
+                "type strain of Actinoplanes missouriensis"
+              ],
+              [
+                "db_xref",
+                "taxon:512565"
+              ],
+              [
+                "note",
+                "strain coidentity: NBRC 102363"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(4..405)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50340"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "hypothetical protein"
+              ],
+              [
+                "protein_id",
+                "BAL90254.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(513..2294)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50350"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative beta-ketoacyl synthase"
+              ],
+              [
+                "protein_id",
+                "BAL90255.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(2296..3072)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50360"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative enoyl-CoA hydratase/isomerase"
+              ],
+              [
+                "protein_id",
+                "BAL90256.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(3069..3809)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50370"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative enoyl-CoA hydratase/isomerase"
+              ],
+              [
+                "protein_id",
+                "BAL90257.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(3806..5029)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50380"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative 3-hydroxy-3-methylglutaryl-CoA synthase"
+              ],
+              [
+                "protein_id",
+                "BAL90258.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(5026..5271)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50390"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative acyl carrier protein"
+              ],
+              [
+                "protein_id",
+                "BAL90259.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(5268..6215)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50400"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "hypothetical protein"
+              ],
+              [
+                "protein_id",
+                "BAL90260.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(6212..6499)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50410"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative acyl carrier protein"
+              ],
+              [
+                "protein_id",
+                "BAL90261.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(6570..7781)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50420"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative beta-ketoacyl synthase beta subunit"
+              ],
+              [
+                "protein_id",
+                "BAL90262.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(7778..9046)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50430"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative beta-ketoacyl synthase alpha subunit"
+              ],
+              [
+                "protein_id",
+                "BAL90263.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(9049..9285)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50440"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative acyl carrier protein"
+              ],
+              [
+                "protein_id",
+                "BAL90264.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(9400..10524)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50450"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative 3-oxoacyl-ACP synthase III"
+              ],
+              [
+                "protein_id",
+                "BAL90265.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "10746..11486",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50460"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative short-chain dehydrogenase"
+              ],
+              [
+                "protein_id",
+                "BAL90266.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "11579..12625",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50470"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative luciferase-like monooxygenase"
+              ],
+              [
+                "protein_id",
+                "BAL90267.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "12745..13260",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50480"
+              ],
+              [
+                "note",
+                "hemerythrin HHE cation binding domain"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "hypothetical protein"
+              ],
+              [
+                "protein_id",
+                "BAL90268.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(13318..14463)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50490"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative oxidoreductase"
+              ],
+              [
+                "protein_id",
+                "BAL90269.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "15016..15867",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50500"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative SARP-family transcriptional activator"
+              ],
+              [
+                "protein_id",
+                "BAL90270.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "15906..16829",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50510"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative polyketide cyclase"
+              ],
+              [
+                "protein_id",
+                "BAL90271.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "16895..17344",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50520"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "hypothetical protein"
+              ],
+              [
+                "protein_id",
+                "BAL90272.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "17602..18513",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50530"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "hypothetical protein"
+              ],
+              [
+                "protein_id",
+                "BAL90273.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "18722..19930",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50540"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative acyltransferase"
+              ],
+              [
+                "protein_id",
+                "BAL90274.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "19927..21126",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50550"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative cytochrome P450"
+              ],
+              [
+                "protein_id",
+                "BAL90275.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(21201..22394)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50560"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "hypothetical protein"
+              ],
+              [
+                "protein_id",
+                "BAL90276.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(22422..23582)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50570"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative carboxylesterase"
+              ],
+              [
+                "protein_id",
+                "BAL90277.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "23817..25175",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50580"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative NDP-deoxyglucose-2,3-dehydratase"
+              ],
+              [
+                "protein_id",
+                "BAL90278.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "25172..26296",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50590"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative aminotransferase"
+              ],
+              [
+                "protein_id",
+                "BAL90279.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "26293..27102",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50600"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative methyltransferase"
+              ],
+              [
+                "protein_id",
+                "BAL90280.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "27099..27692",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50610"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative dTDP-4-dehydrorhamnose 3,5-epimerase"
+              ],
+              [
+                "protein_id",
+                "BAL90281.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "27689..28687",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50620"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative NAD-dependent epimerase/dehydratase"
+              ],
+              [
+                "protein_id",
+                "BAL90282.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(28772..29905)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50630"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "hypothetical protein"
+              ],
+              [
+                "protein_id",
+                "BAL90283.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "30082..31347",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50640"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative beta-ketoacyl synthase alpha subunit"
+              ],
+              [
+                "protein_id",
+                "BAL90284.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "31344..32543",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50650"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative beta-ketoacyl synthase beta subunit"
+              ],
+              [
+                "protein_id",
+                "BAL90285.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "32540..33514",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50660"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative polyketide cyclase/dehydrase"
+              ],
+              [
+                "protein_id",
+                "BAL90286.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "33511..34701",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50670"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative carboxylesterase"
+              ],
+              [
+                "protein_id",
+                "BAL90287.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "34698..35480",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50680"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative short-chain dehydrogenase"
+              ],
+              [
+                "protein_id",
+                "BAL90288.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(35647..37377)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50690"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative ABC transporter ATPase and permease protein"
+              ],
+              [
+                "protein_id",
+                "BAL90289.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "37587..38585",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50700"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative dTDP-glucose-4,6-dehydratase"
+              ],
+              [
+                "protein_id",
+                "BAL90290.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "38638..39528",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50710"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative glucose-1-phosphate thymidylyltransferase"
+              ],
+              [
+                "protein_id",
+                "BAL90291.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(39626..40213)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "AMIS_50720"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "putative NADPH-dependent FMN reductase"
+              ],
+              [
+                "protein_id",
+                "BAL90292.1"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "JAKQYH010000014.1-region.xml": [
+      {
+        "accession": "JAKQYH010000014.1",
+        "definition": "Streptomyces arenae strain DSM 40737 scaffold23.1, whole genome shotgun sequence",
+        "length": "25921",
+        "features": [
+          {
+            "key": "source",
+            "location": "1..25921",
+            "qualifiers": [
+              [
+                "organism",
+                "Streptomyces arenae"
+              ],
+              [
+                "mol_type",
+                "genomic DNA"
+              ],
+              [
+                "submitter_seqid",
+                "scaffold23.1"
+              ],
+              [
+                "strain",
+                "DSM 40737"
+              ],
+              [
+                "culture_collection",
+                "DSM:40737"
+              ],
+              [
+                "db_xref",
+                "taxon:29301"
+              ],
+              [
+                "collection_date",
+                "1958"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "559..681",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08060"
+              ],
+              [
+                "inference",
+                "COORDINATES: protein motif:HMM:NF019350.2"
+              ],
+              [
+                "note",
+                "incomplete; partial in the middle of a contig; missing C-terminus; Derived by automated computational analysis using gene prediction method: Protein Homology."
+              ],
+              [
+                "pseudo",
+                null
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "histidine kinase dimerization/phosphoacceptor domain-containing protein"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(1132..1740)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08065"
+              ],
+              [
+                "inference",
+                "COORDINATES: similar to AA sequence:RefSeq:WP_005478956.1"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: Protein Homology."
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "response regulator transcription factor"
+              ],
+              [
+                "protein_id",
+                "MCG7203797.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "2091..3023",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08070"
+              ],
+              [
+                "inference",
+                "COORDINATES: similar to AA sequence:RefSeq:WP_018106310.1"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: Protein Homology."
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "MBL fold metallo-hydrolase"
+              ],
+              [
+                "protein_id",
+                "MCG7203798.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(2993..3505)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08075"
+              ],
+              [
+                "inference",
+                "COORDINATES: similar to AA sequence:RefSeq:WP_010034356.1"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: Protein Homology."
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "flavin reductase family protein"
+              ],
+              [
+                "protein_id",
+                "MCG7203799.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "3792..5324",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08080"
+              ],
+              [
+                "inference",
+                "COORDINATES: similar to AA sequence:RefSeq:WP_019058637.1"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: Protein Homology."
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "acyl-CoA carboxylase subunit beta"
+              ],
+              [
+                "protein_id",
+                "MCG7203800.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "5504..6313",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08085"
+              ],
+              [
+                "inference",
+                "COORDINATES: similar to AA sequence:RefSeq:WP_020610247.1"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: Protein Homology."
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "AfsR/SARP family transcriptional regulator"
+              ],
+              [
+                "protein_id",
+                "MCG7203801.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(6543..6971)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08090"
+              ],
+              [
+                "inference",
+                "COORDINATES: similar to AA sequence:RefSeq:WP_011030037.1"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: Protein Homology."
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "nuclear transport factor 2 family protein"
+              ],
+              [
+                "protein_id",
+                "MCG7203802.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "7220..8005",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08095"
+              ],
+              [
+                "inference",
+                "COORDINATES: similar to AA sequence:RefSeq:WP_018540018.1"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: Protein Homology."
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "3-oxoacyl-ACP reductase"
+              ],
+              [
+                "protein_id",
+                "MCG7203803.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "8005..8742",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08100"
+              ],
+              [
+                "inference",
+                "COORDINATES: similar to AA sequence:RefSeq:WP_015657283.1"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: Protein Homology."
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "SDR family oxidoreductase"
+              ],
+              [
+                "protein_id",
+                "MCG7203804.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "8802..9836",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08105"
+              ],
+              [
+                "inference",
+                "COORDINATES: similar to AA sequence:RefSeq:WP_018383513.1"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: Protein Homology."
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "LLM class flavin-dependent oxidoreductase"
+              ],
+              [
+                "protein_id",
+                "MCG7203805.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "10040..10843",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08110"
+              ],
+              [
+                "inference",
+                "COORDINATES: protein motif:HMM:NF039984.1"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: Protein Homology."
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "DUF6081 family protein"
+              ],
+              [
+                "protein_id",
+                "MCG7203806.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(10950..12167)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08115"
+              ],
+              [
+                "inference",
+                "COORDINATES: similar to AA sequence:RefSeq:WP_019064484.1"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: Protein Homology."
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "flavin-dependent monooxygenase"
+              ],
+              [
+                "protein_id",
+                "MCG7203807.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(12167..12577)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08120"
+              ],
+              [
+                "inference",
+                "COORDINATES: protein motif:HMM:NF019301.2"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: Protein Homology."
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "DoxX family protein"
+              ],
+              [
+                "protein_id",
+                "MCG7203808.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "12797..13675",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08125"
+              ],
+              [
+                "inference",
+                "COORDINATES: similar to AA sequence:RefSeq:WP_003973899.1"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: Protein Homology."
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "NmrA/HSCARG family protein"
+              ],
+              [
+                "protein_id",
+                "MCG7203809.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "13687..14892",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08130"
+              ],
+              [
+                "inference",
+                "COORDINATES: similar to AA sequence:RefSeq:WP_014140859.1"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: Protein Homology."
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "acyltransferase"
+              ],
+              [
+                "protein_id",
+                "MCG7203810.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(15017..16513)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08135"
+              ],
+              [
+                "inference",
+                "COORDINATES: similar to AA sequence:RefSeq:WP_019070479.1"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: Protein Homology.\nGO_component: GO:0005887 - integral component of plasma membrane [Evidence IEA];\nGO_process: GO:0006855 - xenobiotic transmembrane transport [Evidence IEA];\nGO_process: GO:0009410 - response to xenobiotic stimulus [Evidence IEA]"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "DHA2 family efflux MFS transporter permease subunit"
+              ],
+              [
+                "protein_id",
+                "MCG7203811.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "16624..17418",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08140"
+              ],
+              [
+                "inference",
+                "COORDINATES: protein motif:HMM:NF037675.2"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: Protein Homology.\nGO_function: GO:0003677 - DNA binding [Evidence IEA]"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "TetR family transcriptional regulator"
+              ],
+              [
+                "protein_id",
+                "MCG7203812.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "17415..17846",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08145"
+              ],
+              [
+                "EC_number",
+                "1.-.-.-"
+              ],
+              [
+                "inference",
+                "COORDINATES: similar to AA sequence:RefSeq:WP_019070480.1"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: Protein Homology.\nGO_function: GO:0016491 - oxidoreductase activity [Evidence IEA];\nGO_function: GO:0070967 - coenzyme F420 binding [Evidence IEA];\nGO_process: GO:0008150 - biological_process [Evidence IEA]"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "PPOX class F420-dependent oxidoreductase"
+              ],
+              [
+                "protein_id",
+                "MCG7203813.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(17892..18836)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08150"
+              ],
+              [
+                "EC_number",
+                "1.-.-.-"
+              ],
+              [
+                "inference",
+                "COORDINATES: protein motif:HMM:NF012517.2"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: Protein Homology.\nGO_function: GO:0016491 - oxidoreductase activity [Evidence IEA];\nGO_function: GO:0070967 - coenzyme F420 binding [Evidence IEA];\nGO_process: GO:0008150 - biological_process [Evidence IEA]"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "TIGR03619 family F420-dependent LLM class oxidoreductase"
+              ],
+              [
+                "protein_id",
+                "MCG7203814.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "19088..19951",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08155"
+              ],
+              [
+                "EC_number",
+                "2.1.1.-"
+              ],
+              [
+                "inference",
+                "COORDINATES: protein motif:HMM:TIGR00027.1"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: Protein Homology.\nGO_function: GO:0008168 - methyltransferase activity [Evidence IEA]"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "SAM-dependent methyltransferase"
+              ],
+              [
+                "protein_id",
+                "MCG7203815.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "19955..20515",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08160"
+              ],
+              [
+                "inference",
+                "COORDINATES: ab initio prediction:GeneMarkS-2+"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: GeneMarkS-2+."
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "hypothetical protein"
+              ],
+              [
+                "protein_id",
+                "MCG7203816.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(20673..21620)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08165"
+              ],
+              [
+                "inference",
+                "COORDINATES: similar to AA sequence:RefSeq:WP_010034353.1"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: Protein Homology."
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "aromatase/cyclase"
+              ],
+              [
+                "protein_id",
+                "MCG7203817.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(21617..21877)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08170"
+              ],
+              [
+                "inference",
+                "COORDINATES: similar to AA sequence:RefSeq:WP_009714487.1"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: Protein Homology."
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "acyl carrier protein"
+              ],
+              [
+                "protein_id",
+                "MCG7203818.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(21922..23211)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08175"
+              ],
+              [
+                "inference",
+                "COORDINATES: similar to AA sequence:RefSeq:WP_018841243.1"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: Protein Homology."
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "ketosynthase chain-length factor"
+              ],
+              [
+                "protein_id",
+                "MCG7203819.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(23208..24473)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08180"
+              ],
+              [
+                "inference",
+                "COORDINATES: similar to AA sequence:RefSeq:WP_019070470.1"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: Protein Homology."
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "beta-ketoacyl-[acyl-carrier-protein] synthase family protein"
+              ],
+              [
+                "protein_id",
+                "MCG7203820.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(24585..25529)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08185"
+              ],
+              [
+                "inference",
+                "COORDINATES: similar to AA sequence:RefSeq:WP_009313596.1"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: Protein Homology."
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "M56 family metallopeptidase"
+              ],
+              [
+                "protein_id",
+                "MCG7203821.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(25538..25921)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "MB828_08190"
+              ],
+              [
+                "inference",
+                "COORDINATES: similar to AA sequence:RefSeq:WP_014046889.1"
+              ],
+              [
+                "note",
+                "Derived by automated computational analysis using gene prediction method: Protein Homology."
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "11"
+              ],
+              [
+                "product",
+                "BlaI/MecI/CopY family transcriptional regulator"
+              ],
+              [
+                "protein_id",
+                "MCG7203822.1"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "pubchem": [
+    {
+      "CID": 11493248,
+      "MolecularFormula": "C16H18O6",
+      "SMILES": "C[C@H]1C2=C(C3=C(C=C2C[C@@H](O1)CC(=O)O)C(CCC3=O)O)O",
+      "InChI": "InChI=1S/C16H18O6/c1-7-14-8(4-9(22-7)6-13(19)20)5-10-11(17)2-3-12(18)15(10)16(14)21/h5,7,9,11,17,21H,2-4,6H2,1H3,(H,19,20)/t7-,9+,11?/m0/s1",
+      "InChIKey": "WGMNUJNCGZFZPD-GZALTDKGSA-N"
+    }
+  ],
+  "wikidata": [
+    {
+      "id": "Q25834569",
+      "label": "Actinoplanes missouriensis",
+      "ncbi_taxon_ids": [
+        "1866"
+      ]
+    },
+    {
+      "id": "Q1144013",
+      "label": "Streptomyces",
+      "ncbi_taxon_ids": [
+        "1883"
+      ]
+    }
+  ]
+}
