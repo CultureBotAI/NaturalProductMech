@@ -1,0 +1,99 @@
+{
+  "BGC0002162.3.json": {
+    "url": "https://mibig.secondarymetabolites.org/repository/BGC0002162.3/annotations.json",
+    "started_at": "2026-10-14T01:15:23.434983Z",
+    "status": 200,
+    "content_type": "application/json",
+    "finished_at": "2026-10-14T01:15:24.022886Z",
+    "sha256": "17f8488be3cf75c5a9fae986807e4992baba4a87de667e341511bac23b5e3836",
+    "bytes": 2643
+  },
+  "BGC0002165.3.json": {
+    "url": "https://mibig.secondarymetabolites.org/repository/BGC0002165.3/annotations.json",
+    "started_at": "2026-10-14T01:15:22.262299Z",
+    "status": 200,
+    "content_type": "application/json",
+    "finished_at": "2026-10-14T01:15:23.528529Z",
+    "sha256": "2c8761340f8870ff23f9a0306c3f8057bb10acb720244b48a511976dc4728ce0",
+    "bytes": 2619
+  },
+  "taxonomy.xml": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=321614,331117&retmode=xml",
+    "started_at": "2026-10-14T01:16:13.335587Z",
+    "status": 200,
+    "content_type": "text/xml; charset=UTF-8",
+    "finished_at": "2026-10-14T01:16:13.770164Z",
+    "sha256": "352215cbdbbfd5452d090254cd890ca7f181cb8fa47c0d476ec623140b5a82de",
+    "bytes": 7505
+  },
+  "abstracts.xml": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=31553484,26332841&rettype=abstract&retmode=xml",
+    "started_at": "2026-10-14T01:16:12.823734Z",
+    "status": 200,
+    "content_type": "text/xml; charset=UTF-8",
+    "finished_at": "2026-10-14T01:16:13.160074Z",
+    "sha256": "1ce5b6b634dd008caeb6547d7e0738904406eaf63a8c05d0de93ba583b453058",
+    "bytes": 20682
+  },
+  "CH445335.1-region.xml": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=CH445335.1&seq_start=1238225&seq_stop=1260054&rettype=gbwithparts&retmode=xml",
+    "started_at": "2026-10-14T01:16:45.692609Z",
+    "status": 200,
+    "content_type": "text/xml",
+    "finished_at": "2026-10-14T01:16:46.250975Z",
+    "sha256": "5879298a82abfcc4ccb619a6036a833cec17a50565255354f7e81e07362c9166",
+    "bytes": 86849
+  },
+  "DS027698.1-region.xml": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=DS027698.1&seq_start=2485363&seq_stop=2490827&rettype=gbwithparts&retmode=xml",
+    "started_at": "2026-10-14T01:16:13.942308Z",
+    "status": 200,
+    "content_type": "text/xml",
+    "finished_at": "2026-10-14T01:16:14.357410Z",
+    "sha256": "4af3eaffbe0d6236d308d3cea830a87e19d369a5fc6fd666513eac87a9abcf95",
+    "bytes": 25684
+  },
+  "figshare-search.json": {
+    "url": "https://api.figshare.com/v2/articles?resource_doi=10.1021%2Fjacs.5b08319",
+    "started_at": "2026-10-14T01:16:44.676266Z",
+    "status": 200,
+    "content_type": "application/json",
+    "finished_at": "2026-10-14T01:16:45.508147Z",
+    "sha256": "496efdc3a039b56a591d9b6e69142a43364485e7b9a7dfdbd5adadd57b1647da",
+    "bytes": 1228
+  },
+  "figshare-article.json": {
+    "url": "https://api.figshare.com/v2/articles/2131396",
+    "started_at": "2026-10-14T01:19:13.974653Z",
+    "status": 200,
+    "content_type": "application/json",
+    "finished_at": "2026-10-14T01:19:14.796645Z",
+    "sha256": "bfed4ce16147e226d26c378b03de588329c5a4e93a28441912885cd4cd52276a",
+    "bytes": 7582
+  },
+  "ja5b08319_si_001.pdf": {
+    "url": "https://ndownloader.figshare.com/files/3765199",
+    "started_at": "2026-10-14T01:19:27.616511Z",
+    "status": 200,
+    "content_type": "application/pdf",
+    "finished_at": "2026-10-14T01:19:31.739102Z",
+    "sha256": "a516f771e00606c1437d2846f8f0b040a18ae73ee5c73809967cd619a71dce10",
+    "bytes": 12272202
+  },
+  "access_stops": [
+    {
+      "reference": "DOI:10.1002/chem.201904360",
+      "url": "https://rss.onlinelibrary.wiley.com/doi/am-pdf/10.1002/chem.201904360",
+      "status": 403,
+      "accessed_at": "2026-10-13T15:04:36.250292Z",
+      "basis": "Inherited campaign access stop; no alternate retrieval attempted."
+    },
+    {
+      "reference": "DOI:10.1021/jacs.5b08319",
+      "url": "https://pubs.acs.org/doi/10.1021/jacs.5b08319",
+      "status": 403,
+      "accessed_at": "2026-10-14T01:22:19.397784Z",
+      "basis": "web.run returned403 after the independently public supplement had already been retrieved; no alternate main-text route attempted."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "replay": {
+    "command": [
+      "env",
+      "RDBASE=/private/tmp/npmech-rdkit-2026.03.5/share/RDKit",
+      "PYTHONPATH=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/lib/python3.13/site-packages",
+      "/private/tmp/npmech-rdkit-2026.03.5/bin/python",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/reviews/evidence/20261014-compound5/inspect_sources.py",
+      "--output",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/reviews/evidence/20261014-compound5/source-inspection-corrected.json"
+    ],
+    "cwd": "/private/tmp",
+    "started_at": "2026-10-14T01:25:46.486784Z",
+    "finished_at": "2026-10-14T01:25:50.512749Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-compound5-review-jBHjLO/replay.log",
+    "log_sha256": "d2a9388d5a949b15d1e20aac30aa5cb988a0bad1f48f46d0977c70ac68518f43"
+  },
+  "regression": {
+    "command": [
+      "uv",
+      "run",
+      "pytest",
+      "-q",
+      "tests/test_compound5_review_archive.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T01:26:08.312149Z",
+    "finished_at": "2026-10-14T01:26:08.337628Z",
+    "exit_code": 2,
+    "log": "/private/tmp/npmech-compound5-review-jBHjLO/regression.log",
+    "log_sha256": "b51fba8fc74f9b458a4bbbbe3846cf46757c3ef1baeb95a7d7d0e90fbc09253e"
+  },
+  "lint": {
+    "command": [
+      "uv",
+      "run",
+      "ruff",
+      "check",
+      "."
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T01:26:08.481216Z",
+    "finished_at": "2026-10-14T01:26:08.503006Z",
+    "exit_code": 2,
+    "log": "/private/tmp/npmech-compound5-review-jBHjLO/lint.log",
+    "log_sha256": "b51fba8fc74f9b458a4bbbbe3846cf46757c3ef1baeb95a7d7d0e90fbc09253e"
+  },
+  "regression-final": {
+    "command": [
+      "uv",
+      "run",
+      "pytest",
+      "-q",
+      "tests/test_compound5_review_archive.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T01:26:20.071614Z",
+    "finished_at": "2026-10-14T01:26:22.080214Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-compound5-review-jBHjLO/regression-final.log",
+    "log_sha256": "d271bc4c61476139fa75efa8c67eb55e8dd295b53d6f286ec6f1c70f6a20e581"
+  },
+  "lint-final": {
+    "command": [
+      "uv",
+      "run",
+      "ruff",
+      "check",
+      "."
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T01:26:23.711654Z",
+    "finished_at": "2026-10-14T01:26:23.804432Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-compound5-review-jBHjLO/lint-final.log",
+    "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+  }
+}
