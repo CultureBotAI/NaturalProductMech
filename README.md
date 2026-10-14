@@ -72,18 +72,18 @@ field coverage (records carrying at least one item):
   molecular_targets                      15
   causal_graphs                         278
   related_records                       210
-  discussions                           357
+  discussions                           361
 
-producer claims: 3407 (808 causal, 162 correlational)
-  BGC_CHARACTERIZED                     808
+producer claims: 3407 (806 causal, 162 correlational)
+  BGC_CHARACTERIZED                     806
   BGC_CORRELATED                        162
-  SOURCE_ASSERTION                     2437
+  SOURCE_ASSERTION                     2439
 
-cluster link claims: 3449 (1357 demonstrated)
+cluster link claims: 3449 (1355 demonstrated)
   CLUSTER_CORRELATED                    110
-  CLUSTER_DEMONSTRATED                 1357
+  CLUSTER_DEMONSTRATED                 1355
   CLUSTER_PREDICTED                       2
-  CLUSTER_UNSTATED                     1980
+  CLUSTER_UNSTATED                     1982
 
 records with a producer taxon also reported in a cited occurrence (publication independence not assessed): 732
 records whose only origin evidence is a gene cluster with no named host: 27

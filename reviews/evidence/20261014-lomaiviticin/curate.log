@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/tmp/npmech-lomaiviticin-review-89PDr2/curate.py", line 93, in <module>
+    write_validated_natural_product(doc, path)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/src/naturalproductmech/validation/write_validated.py", line 131, in write_validated_natural_product
+    raise ValidationFailedError(path, errors)
+naturalproductmech.validation.write_validated.ValidationFailedError: validation failed: 4 error(s) for data/natural_products/polyketides/lomaiviticin-c-2.yaml
+  - Additional properties are not allowed ('evidence_type' was unexpected) in /discussions/0/evidence/0
+  - Additional properties are not allowed ('evidence_type' was unexpected) in /discussions/0/evidence/1
+  - Additional properties are not allowed ('evidence_type' was unexpected) in /discussions/0/evidence/2
+  - Additional properties are not allowed ('evidence_type' was unexpected) in /discussions/0/evidence/3

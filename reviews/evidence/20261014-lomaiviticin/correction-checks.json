@@ -1,0 +1,274 @@
+{
+  "qc": {
+    "command": [
+      "just",
+      "qc"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T04:52:58.473892Z",
+    "finished_at": "2026-10-14T04:58:49.714425Z",
+    "exit_code": 2,
+    "log": "/private/tmp/npmech-lomaiviticin-review-89PDr2/qc.log",
+    "log_sha256": "ebb9615dda01505d62131a7583121eab8e7e3e303cd6aea650a4ef93c71083cc",
+    "portable_log": "reviews/evidence/20261014-lomaiviticin/qc.log"
+  },
+  "qc-resumed": {
+    "command": [
+      "just",
+      "qc"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T05:01:44.480349Z",
+    "finished_at": "2026-10-14T05:37:53.459259Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-lomaiviticin-review-89PDr2/qc-resumed.log",
+    "log_sha256": "9b2c99de7d15134852d41002beb1951858f37adba77458e96975be7875f3e99f",
+    "portable_log": "reviews/evidence/20261014-lomaiviticin/qc-resumed.log"
+  },
+  "build": {
+    "command": [
+      "uv",
+      "run",
+      "python",
+      "/private/tmp/npmech-lomaiviticin-review-89PDr2/build_reviews.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T05:38:02.707272Z",
+    "finished_at": "2026-10-14T05:38:24.785597Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-lomaiviticin-review-89PDr2/build.log",
+    "log_sha256": "5483b89bb8db3be38ff021b68b9f5c17f3712d4f42e224a852e04bdbf42097f4",
+    "portable_log": "reviews/evidence/20261014-lomaiviticin/build.log"
+  },
+  "save": {
+    "command": [
+      "uv",
+      "run",
+      "python",
+      "/private/tmp/npmech-lomaiviticin-review-89PDr2/save_reviews.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T05:38:32.473908Z",
+    "finished_at": "2026-10-14T05:40:24.823658Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-lomaiviticin-review-89PDr2/save.log",
+    "log_sha256": "b52923258b1d4c44cb7c7e6b224bb42a96dc3be5378150ce30c00b52da5cce6c",
+    "portable_log": "reviews/evidence/20261014-lomaiviticin/save.log"
+  },
+  "seed-dry": {
+    "command": [
+      "just",
+      "seed"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T05:39:11.415396Z",
+    "finished_at": "2026-10-14T05:39:17.539881Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-lomaiviticin-review-89PDr2/seed-dry.log",
+    "log_sha256": "1e21022b634eb9244ded56fff873c445a64269f52e12c89026316df7d03c8aee",
+    "portable_log": "reviews/evidence/20261014-lomaiviticin/seed-dry.log"
+  },
+  "canary-c": {
+    "command": [
+      "just",
+      "seed-canary",
+      "naturalproductmech:mibig-5a11cea583"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T05:39:47.134491Z",
+    "finished_at": "2026-10-14T05:39:53.021762Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-lomaiviticin-review-89PDr2/canary-c.log",
+    "log_sha256": "13c90ab3dc86eefb95c0884607a7571272a5254e691729c0f98dabf5b2b6cf93",
+    "portable_log": "reviews/evidence/20261014-lomaiviticin/canary-c.log"
+  },
+  "canary-d": {
+    "command": [
+      "just",
+      "seed-canary",
+      "naturalproductmech:mibig-ba6ee9b824"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T05:40:01.253389Z",
+    "finished_at": "2026-10-14T05:40:06.835506Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-lomaiviticin-review-89PDr2/canary-d.log",
+    "log_sha256": "13c90ab3dc86eefb95c0884607a7571272a5254e691729c0f98dabf5b2b6cf93",
+    "portable_log": "reviews/evidence/20261014-lomaiviticin/canary-d.log"
+  },
+  "curate": {
+    "command": [
+      "uv",
+      "run",
+      "python",
+      "/private/tmp/npmech-lomaiviticin-review-89PDr2/curate.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T05:40:32.640276Z",
+    "finished_at": "2026-10-14T05:40:36.254829Z",
+    "exit_code": 1,
+    "log": "/private/tmp/npmech-lomaiviticin-review-89PDr2/curate.log",
+    "log_sha256": "a8a2a826a0918b24f318126349c24f88cef8135f947b90fc74c1797f2169deae",
+    "portable_log": "reviews/evidence/20261014-lomaiviticin/curate.log"
+  },
+  "curate-verified": {
+    "command": [
+      "uv",
+      "run",
+      "python",
+      "/private/tmp/npmech-lomaiviticin-review-89PDr2/curate.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T05:40:54.342178Z",
+    "finished_at": "2026-10-14T05:41:00.509556Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-lomaiviticin-review-89PDr2/curate-verified.log",
+    "log_sha256": "1662f82aff35e9c6af0a02c3a26c1fc6a0f685e97b8f6a4a594840fbe6574886",
+    "portable_log": "reviews/evidence/20261014-lomaiviticin/curate-verified.log"
+  },
+  "focused-final": {
+    "command": [
+      "uv",
+      "run",
+      "pytest",
+      "-q",
+      "tests/test_lomaiviticin_curation.py",
+      "tests/test_mibig_locus_evidence_overrides.py",
+      "tests/test_claim_references.py",
+      "tests/test_producer_strains.py",
+      "tests/test_curator_discussions.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T05:41:10.352719Z",
+    "finished_at": "2026-10-14T05:41:14.134492Z",
+    "exit_code": 4,
+    "log": "/private/tmp/npmech-lomaiviticin-review-89PDr2/focused-final.log",
+    "log_sha256": "fabc01081eb9de9995c1c4af0e528de8fe6e35e7cdeae99bf92eb6e7ed42e24e",
+    "portable_log": "reviews/evidence/20261014-lomaiviticin/focused-final.log"
+  },
+  "focused-verified": {
+    "command": [
+      "uv",
+      "run",
+      "pytest",
+      "-q",
+      "tests/test_lomaiviticin_curation.py",
+      "tests/test_mibig_locus_evidence_overrides.py",
+      "tests/test_claim_references.py",
+      "tests/test_producer_strains.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T05:41:52.426390Z",
+    "finished_at": "2026-10-14T05:42:04.316212Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-lomaiviticin-review-89PDr2/focused-verified.log",
+    "log_sha256": "6cf9a9058b4c5fe3472b768b8bd4e1aaaef2b01dd16a57d794db23b432f93bc1",
+    "portable_log": "reviews/evidence/20261014-lomaiviticin/focused-verified.log"
+  },
+  "strict-final": {
+    "command": [
+      "just",
+      "validate-strict",
+      "data/natural_products/polyketides/lomaiviticin-c-2.yaml",
+      "data/natural_products/polyketides/lomaiviticin-c.yaml",
+      "data/natural_products/polyketides/lomaiviticin-d-2.yaml",
+      "data/natural_products/polyketides/lomaiviticin-d.yaml",
+      "--out",
+      "/private/tmp/npmech-lomaiviticin-review-89PDr2/strict-final.tsv"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T05:41:13.447967Z",
+    "finished_at": "2026-10-14T05:41:21.081102Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-lomaiviticin-review-89PDr2/strict-final.log",
+    "log_sha256": "40566d08c649377556158239052783d5d2b0cd64839e109555272ec088318e2d",
+    "portable_log": "reviews/evidence/20261014-lomaiviticin/strict-final.log"
+  },
+  "delta": {
+    "command": [
+      "uv",
+      "run",
+      "python",
+      "/private/tmp/npmech-lomaiviticin-review-89PDr2/delta.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T05:41:20.879786Z",
+    "finished_at": "2026-10-14T05:41:24.927331Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-lomaiviticin-review-89PDr2/delta.log",
+    "log_sha256": "21586761f0a38086213761e63d35b3af58d627c910f6cee361e70c209d71ac8a",
+    "portable_log": "reviews/evidence/20261014-lomaiviticin/delta.log"
+  },
+  "docs-stats": {
+    "command": [
+      "just",
+      "docs-stats"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T05:41:35.747750Z",
+    "finished_at": "2026-10-14T05:43:56.275724Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-lomaiviticin-review-89PDr2/docs-stats.log",
+    "log_sha256": "d6df4fbeba089d7a874e963ccc436a301e2bbf8f98f621e4ab5d87eb37699160",
+    "portable_log": "reviews/evidence/20261014-lomaiviticin/docs-stats.log"
+  },
+  "render": {
+    "command": [
+      "just",
+      "render"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T05:41:39.276382Z",
+    "finished_at": "2026-10-14T05:44:09.335398Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-lomaiviticin-review-89PDr2/render.log",
+    "log_sha256": "7f0f8d8f3ec1a80390c5de29636299917a89ee89b3ae5c95a102af7c1aba57f4",
+    "portable_log": "reviews/evidence/20261014-lomaiviticin/render.log"
+  },
+  "successor-capture": {
+    "command": [
+      "uv",
+      "run",
+      "python",
+      "/private/tmp/npmech-lomaiviticin-review-89PDr2/successors.py",
+      "--capture"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T05:41:56.158581Z",
+    "finished_at": "2026-10-14T05:42:13.758263Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-lomaiviticin-review-89PDr2/successor-capture.log",
+    "log_sha256": "a53eb4c1cf5406ca27c228429b99c63de5adcbbb4d6d2beb5fc42f343f39c482",
+    "portable_log": "reviews/evidence/20261014-lomaiviticin/successor-capture.log"
+  },
+  "successor-save": {
+    "command": [
+      "uv",
+      "run",
+      "python",
+      "/private/tmp/npmech-lomaiviticin-review-89PDr2/successors.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T05:42:32.519421Z",
+    "finished_at": "2026-10-14T05:42:42.180711Z",
+    "exit_code": 1,
+    "log": "/private/tmp/npmech-lomaiviticin-review-89PDr2/successor-save.log",
+    "log_sha256": "150e5657137936d23829f310939949547c7333f0b7a8108269df416a6a304ca9",
+    "portable_log": "reviews/evidence/20261014-lomaiviticin/successor-save.log"
+  },
+  "successor-save-verified": {
+    "command": [
+      "uv",
+      "run",
+      "python",
+      "/private/tmp/npmech-lomaiviticin-review-89PDr2/successors.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T05:42:55.590469Z",
+    "finished_at": "2026-10-14T05:44:17.158515Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-lomaiviticin-review-89PDr2/successor-save-verified.log",
+    "log_sha256": "6389a5e8017e83290dc1bf4f8a7e22598be3786bb4f9010574823e1c28933c3e",
+    "portable_log": "reviews/evidence/20261014-lomaiviticin/successor-save-verified.log"
+  }
+}
