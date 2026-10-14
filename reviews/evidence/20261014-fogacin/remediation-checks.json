@@ -1,0 +1,206 @@
+{
+  "focused": {
+    "command": [
+      "uv",
+      "run",
+      "pytest",
+      "-q",
+      "tests/test_fogacin_review_archive.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T02:09:02.555175Z",
+    "finished_at": "2026-10-14T02:09:02.577306Z",
+    "exit_code": 2,
+    "log": "/private/tmp/npmech-fogacin-review-TbRFcN/focused.log",
+    "log_sha256": "b51fba8fc74f9b458a4bbbbe3846cf46757c3ef1baeb95a7d7d0e90fbc09253e"
+  },
+  "focused-retry": {
+    "command": [
+      "uv",
+      "run",
+      "pytest",
+      "-q",
+      "tests/test_fogacin_review_archive.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T02:09:16.733682Z",
+    "finished_at": "2026-10-14T02:09:19.220907Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-fogacin-review-TbRFcN/focused-retry.log",
+    "log_sha256": "ce2fae86fbeefc5c9f71c183dce8606a5bac2c308b46ea84825db9f7a143ae5c"
+  },
+  "lint": {
+    "command": [
+      "uv",
+      "run",
+      "ruff",
+      "check",
+      "reviews/evidence/20261014-fogacin/inspect_sources.py",
+      "tests/test_fogacin_review_archive.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T02:09:02.749394Z",
+    "finished_at": "2026-10-14T02:09:02.773393Z",
+    "exit_code": 2,
+    "log": "/private/tmp/npmech-fogacin-review-TbRFcN/lint.log",
+    "log_sha256": "b51fba8fc74f9b458a4bbbbe3846cf46757c3ef1baeb95a7d7d0e90fbc09253e"
+  },
+  "lint-retry": {
+    "command": [
+      "uv",
+      "run",
+      "ruff",
+      "check",
+      "reviews/evidence/20261014-fogacin/inspect_sources.py",
+      "tests/test_fogacin_review_archive.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T02:09:19.371919Z",
+    "finished_at": "2026-10-14T02:09:19.512094Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-fogacin-review-TbRFcN/lint-retry.log",
+    "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+  },
+  "regression": {
+    "command": [
+      "uv",
+      "run",
+      "pytest",
+      "-q",
+      "tests/test_fogacin_locus_scope.py",
+      "tests/test_fogacin_review_archive.py",
+      "tests/test_mibig_locus_evidence_overrides.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T02:12:07.271273Z",
+    "finished_at": "2026-10-14T02:12:11.398261Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-fogacin-review-TbRFcN/regression.log",
+    "log_sha256": "6a8e07742cd5f05bbfc2c2d8eedd21c1e9bf6b008b4e48005df3a5bc370dafdf"
+  },
+  "regression-final": {
+    "command": [
+      "uv",
+      "run",
+      "pytest",
+      "-q",
+      "tests/test_fogacin_locus_scope.py",
+      "tests/test_fogacin_review_archive.py",
+      "tests/test_mibig_locus_evidence_overrides.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T02:14:58.835820Z",
+    "finished_at": "2026-10-14T02:15:02.980515Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-fogacin-review-TbRFcN/regression-final.log",
+    "log_sha256": "52097e7e40c97373f6d33c8d41dff4813cedbc9ae6a66e6c66129d56779b1ebb"
+  },
+  "lint-final": {
+    "command": [
+      "uv",
+      "run",
+      "ruff",
+      "check",
+      "reviews/evidence/20261014-fogacin/inspect_sources.py",
+      "tests/test_fogacin_review_archive.py",
+      "tests/test_fogacin_locus_scope.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T02:13:06.785082Z",
+    "finished_at": "2026-10-14T02:13:06.877129Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-fogacin-review-TbRFcN/lint-final.log",
+    "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+  },
+  "seed-dry": {
+    "command": [
+      "just",
+      "seed"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T02:12:18.187954Z",
+    "finished_at": "2026-10-14T02:12:21.420897Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-fogacin-review-TbRFcN/seed-dry.log",
+    "log_sha256": "1e21022b634eb9244ded56fff873c445a64269f52e12c89026316df7d03c8aee"
+  },
+  "canary": {
+    "command": [
+      "just",
+      "seed-canary",
+      "naturalproductmech:mibig-a4fac30c3f"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T02:13:03.904715Z",
+    "finished_at": "2026-10-14T02:13:07.996366Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-fogacin-review-TbRFcN/canary.log",
+    "log_sha256": "13c90ab3dc86eefb95c0884607a7571272a5254e691729c0f98dabf5b2b6cf93"
+  },
+  "render": {
+    "command": [
+      "just",
+      "render"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T02:13:25.841432Z",
+    "finished_at": "2026-10-14T02:14:27.040961Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-fogacin-review-TbRFcN/render.log",
+    "log_sha256": "0fa955c283693392d54d1f3a948782c946130b110b7d122b54d24752d44583b4"
+  },
+  "docs-stats": {
+    "command": [
+      "just",
+      "docs-stats"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T02:13:41.087564Z",
+    "finished_at": "2026-10-14T02:14:40.453602Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-fogacin-review-TbRFcN/docs-stats.log",
+    "log_sha256": "d6df4fbeba089d7a874e963ccc436a301e2bbf8f98f621e4ab5d87eb37699160"
+  },
+  "strict-final": {
+    "command": [
+      "just",
+      "validate-strict",
+      "data/natural_products/polyketides/fogacin.yaml",
+      "data/natural_products/polyketides/fogacin-2.yaml",
+      "--out",
+      "/private/tmp/npmech-fogacin-review-TbRFcN/strict-final.tsv"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T02:13:44.815190Z",
+    "finished_at": "2026-10-14T02:13:50.865902Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-fogacin-review-TbRFcN/strict-final.log",
+    "log_sha256": "ebb1d51f14d50ce7a8d6224f7dd9ae63cb559484d5964430980d905082581241"
+  },
+  "reproduction": {
+    "command": [
+      "just",
+      "verify-reproduction"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T02:13:48.997714Z",
+    "finished_at": "2026-10-14T02:16:20.153093Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-fogacin-review-TbRFcN/reproduction.log",
+    "log_sha256": "09ea1c9d8fc0b6e788d9641568c46b0addcd7e1fe17bd98439f0232f02607d42"
+  },
+  "portable-replay": {
+    "command": [
+      "/private/tmp/npmech-rdkit-2026.03.5/bin/python",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/reviews/evidence/20261014-fogacin/inspect_sources.py",
+      "--output",
+      "/private/tmp/npmech-fogacin-review-TbRFcN/portable-replay.json"
+    ],
+    "cwd": "/private/tmp",
+    "started_at": "2026-10-14T02:15:00.144057Z",
+    "finished_at": "2026-10-14T02:15:04.238539Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-fogacin-review-TbRFcN/portable-replay.log",
+    "log_sha256": "8d6205343d87c16f1a7bde34b7cf42b7648cec9a8c30875027079102da2fd7c1"
+  }
+}

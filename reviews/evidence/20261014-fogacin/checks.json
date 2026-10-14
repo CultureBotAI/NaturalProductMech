@@ -1,0 +1,81 @@
+{
+  "chemistry": {
+    "command": [
+      "/private/tmp/npmech-rdkit-2026.03.5/bin/python",
+      "reviews/evidence/20261014-fogacin/inspect_sources.py",
+      "--output",
+      "reviews/evidence/20261014-fogacin/source-inspection.json"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T02:06:50.327253Z",
+    "finished_at": "2026-10-14T02:06:53.561596Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-fogacin-review-TbRFcN/chemistry.log",
+    "log_sha256": "8d6205343d87c16f1a7bde34b7cf42b7648cec9a8c30875027079102da2fd7c1"
+  },
+  "strict": {
+    "command": [
+      "just",
+      "validate-strict",
+      "data/natural_products/polyketides/fogacin-2.yaml",
+      "data/natural_products/polyketides/fogacin.yaml",
+      "--out",
+      "/private/tmp/npmech-fogacin-review-TbRFcN/strict.tsv"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T01:59:25.531715Z",
+    "finished_at": "2026-10-14T01:59:28.900257Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-fogacin-review-TbRFcN/strict.log",
+    "log_sha256": "c915369a707b1d14f66296f135f1f7bf69a2dc976fa5959eb59c249b9d3294b7"
+  },
+  "labels": {
+    "command": [
+      "just",
+      "validate-products"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T01:59:28.985837Z",
+    "finished_at": "2026-10-14T02:01:25.253281Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-fogacin-review-TbRFcN/labels.log",
+    "log_sha256": "19a4f6cca7894851de23ee2062f52d29b32def53c7b4f59edbc6c45ec4ce9828"
+  },
+  "local-search": {
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "-l",
+      "-i",
+      "WGMNUJNCGZFZPD|QHMHMPAPKQFGRV|fogacin|BGC0002021|BGC0000248",
+      "curation",
+      "conf",
+      "reviews",
+      ".claude",
+      "data/raw/mibig_compounds.tsv",
+      "data/raw/lotus_occurrences.tsv",
+      "data/raw/chebi_structures.tsv",
+      "data/raw/antibioticmech_inchikeys.tsv"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T02:01:43.623535Z",
+    "finished_at": "2026-10-14T02:01:43.739680Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-fogacin-review-TbRFcN/local-search.log",
+    "log_sha256": "47fdb954f1d8dae2a9b8c25b0112d3c8b3d9af6e09a9ce14290b843aefe05a2b"
+  },
+  "imodulondb": {
+    "command": [
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/culturebotai-claw/.venv/bin/kg-microbe-sources",
+      "imodulondb",
+      "datasets"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T01:58:56.475099Z",
+    "finished_at": "2026-10-14T01:58:57.028180Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-fogacin-review-TbRFcN/imodulondb.log",
+    "log_sha256": "1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549"
+  }
+}

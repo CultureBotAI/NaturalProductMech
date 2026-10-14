@@ -30,13 +30,23 @@ producer_organisms:
   biosynthetic_gene_cluster: mibig:BGC0000248
   source: MIBIG
   source_version: '5'
-  notes: 'Locus evidence: Heterologous expression. That evidence grades the LOCUS
-    as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different
-    question.'
+  notes: 'Source locus methods excluded as inapplicable: Heterologous expression.
+    No applicable locus methods remain. That evidence grades the LOCUS as CLUSTER_UNSTATED;
+    this field grades the taxon claim, which is a different question.'
   evidence:
   - reference: PMID:10206788
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000248 entry version 5; citation taken from the entry level
+  - reference: PMID:37989784
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Curated exclusion of source locus methods from this taxon/locus claim:
+      Heterologous expression. The inspected abstract and public Figure 2B caption
+      associate fogacin with ncnN deletion in S. albus/pSA-naphtho, not demonstration
+      by the intact deposited S. arenae DSM40737 locus. Withdraw this inherited method
+      only for compound 2; preserve the database assertion and mutant experimental
+      context without denying all native production, choosing a replacement structure
+      or changing molecular origin. Primary structure adjudication remains open in
+      issue #963; scoped grade correction addresses #962. Curator: codex; date: 2026-10-14.'
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0000248
   entry_version: '5'
@@ -47,14 +57,22 @@ biosynthetic_gene_clusters:
   - reference: PMID:10206788
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000248 entry version 5; citation taken from the entry level
+  - reference: PMID:37989784
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Curated exclusion of source locus methods from this taxon/locus claim:
+      Heterologous expression. The inspected abstract and public Figure 2B caption
+      associate fogacin with ncnN deletion in S. albus/pSA-naphtho, not demonstration
+      by the intact deposited S. arenae DSM40737 locus. Withdraw this inherited method
+      only for compound 2; preserve the database assertion and mutant experimental
+      context without denying all native production, choosing a replacement structure
+      or changing molecular origin. Primary structure adjudication remains open in
+      issue #963; scoped grade correction addresses #962. Curator: codex; date: 2026-10-14.'
   genome_accession: genbank:JAKQYH010000014.1
   locus_from: 94867
   locus_to: 120787
   bgc_class:
   - PKS
-  locus_evidence_methods:
-  - Heterologous expression
-  link_evidence_basis: CLUSTER_DEMONSTRATED
+  link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0000248
@@ -74,3 +92,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-14T02:13:07Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
