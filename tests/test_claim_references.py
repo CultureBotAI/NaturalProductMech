@@ -19,7 +19,8 @@ spec.loader.exec_module(seed)
 def inputs():
     source, = [r for r in seed.read_tsv(ROOT / "data/raw/mibig_compounds.tsv")
                if r["mibig_accession"] == "BGC0002527"]
-    decision, = seed.read_tsv(seed.MIBIG_CLAIM_REFERENCES)
+    decision, = [r for r in seed.read_tsv(seed.MIBIG_CLAIM_REFERENCES)
+                 if r["source_id"] == "BGC0002527:1"]
     return {"mibig_compounds": [source], "mibig_claim_references": [decision]}
 
 
@@ -130,3 +131,35 @@ def test_other_qualifications_are_not_overwritten(inputs):
     assert claim["evidence"][1] == evidence and len(claim["evidence"]) == 3
     with pytest.raises(ValueError, match="unsupported"):
         correct_claim_reference(claim, source, inputs["mibig_claim_references"][0], field="unreviewed")
+
+
+@pytest.mark.parametrize("accession,reference", [
+    ("BGC0002527", "PMID:26452553"),
+    ("BGC0001542", "PMID:28535078"),
+])
+def test_committed_citation_decisions_are_claim_local(accession, reference):
+    sources = [r for r in seed.read_tsv(ROOT / "data/raw/mibig_compounds.tsv")
+               if r["mibig_accession"] in {accession, "BGC0001541"}]
+    decision, = [r for r in seed.read_tsv(seed.MIBIG_CLAIM_REFERENCES)
+                 if r["source_id"] == f"{accession}:1"]
+    original_sources = deepcopy(sources)
+    before = seed.build_records({"mibig_compounds": sources})
+    after = seed.build_records({"mibig_compounds": sources,
+                               "mibig_claim_references": [decision]})
+    source, = [r for r in sources if r["mibig_accession"] == accession]
+    for old, current in zip(before, after, strict=True):
+        if old["chemical_structure"]["standard_inchi_key"] != source["standard_inchi_key"]:
+            assert current == old
+            continue
+        assert (current["producer_organisms"][0]["evidence"]
+                is not current["biosynthetic_gene_clusters"][0]["evidence"])
+        for field in ("producer_organisms", "biosynthetic_gene_clusters"):
+            evidence = current[field][0]["evidence"]
+            assert evidence[0]["reference"] == reference
+            assert evidence[0]["evidence_type"] == "DATABASE_ASSERTION"
+            assert evidence[-1]["evidence_type"] == "CURATOR_INFERENCE"
+            assert source["primary_reference"] in evidence[-1]["notes"]
+            assert row_digest(source) in evidence[-1]["notes"]
+            current[field][0]["evidence"] = old[field][0]["evidence"]
+        assert current == old
+    assert sources == original_sources

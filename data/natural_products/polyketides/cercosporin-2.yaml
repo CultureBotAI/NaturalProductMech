@@ -49,10 +49,26 @@ producer_organisms:
   notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
     this field grades the taxon claim, which is a different question.'
   evidence:
-  - reference: DOI:10.1016/0048-4059(78)90029-2
+  - reference: PMID:28535078
     evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0001542 entry version 3; citation taken from the compound bioactivity
-      level
+    notes: MIBiG BGC0001542 entry version 3; claim-specific citation selected through
+      a reviewed producer_reference correction. This remains a database assertion,
+      not independently graded experimental evidence.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001542.3/annotations.json
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Citation routing only. The inspected version-3 entry places DOI:10.1016/0048-4059(78)90029-2
+      only under compound bioactivity and PMID:28535078 at entry level; KY656140.1
+      also cites PMID:28535078. Route the entry reference to producer and locus while
+      retaining the original bioactivity context. The inspected primary abstract reports
+      production in a C. zeina transformant complemented with C. zeae-maydis CTB7,
+      not demonstrated production by the unmodified deposited CTB7-pseudogene locus.
+      Full-text and exact-product adjudication remain incomplete; no experimental
+      grade is upgraded. Citation routing fixes #954; identity and claim-level engineering
+      context remain open in #955 and #956. Original imported citation DOI:10.1016/0048-4059(78)90029-2
+      (COMPOUND_BIOACTIVITY) remains in the raw inventory, not as support for this
+      claim. MIBiG source row BGC0001542:1; SHA256 c1f2fc433b90f4bdc2bb295a6d23a3d7a97447d04ba19936aa1cab5b45b610ad.
+      Curator: codex; date: 2026-10-14. Taxon, locus, chemistry and evidence grades
+      are unchanged.'
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0001542
   entry_version: '3'
@@ -60,10 +76,26 @@ biosynthetic_gene_clusters:
   organism_taxon_id: NCBITaxon:348901
   organism_label: Cercospora zeina
   evidence:
-  - reference: DOI:10.1016/0048-4059(78)90029-2
+  - reference: PMID:28535078
     evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0001542 entry version 3; citation taken from the compound bioactivity
-      level
+    notes: MIBiG BGC0001542 entry version 3; claim-specific citation selected through
+      a reviewed locus_reference correction. This remains a database assertion, not
+      independently graded experimental evidence.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0001542.3/annotations.json
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Citation routing only. The inspected version-3 entry places DOI:10.1016/0048-4059(78)90029-2
+      only under compound bioactivity and PMID:28535078 at entry level; KY656140.1
+      also cites PMID:28535078. Route the entry reference to producer and locus while
+      retaining the original bioactivity context. The inspected primary abstract reports
+      production in a C. zeina transformant complemented with C. zeae-maydis CTB7,
+      not demonstrated production by the unmodified deposited CTB7-pseudogene locus.
+      Full-text and exact-product adjudication remain incomplete; no experimental
+      grade is upgraded. Citation routing fixes #954; identity and claim-level engineering
+      context remain open in #955 and #956. Original imported citation DOI:10.1016/0048-4059(78)90029-2
+      (COMPOUND_BIOACTIVITY) remains in the raw inventory, not as support for this
+      claim. MIBiG source row BGC0001542:1; SHA256 c1f2fc433b90f4bdc2bb295a6d23a3d7a97447d04ba19936aa1cab5b45b610ad.
+      Curator: codex; date: 2026-10-14. Taxon, locus, chemistry and evidence grades
+      are unchanged.'
   genome_accession: genbank:KY656140.1
   bgc_class:
   - PKS
@@ -78,6 +110,58 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+discussions:
+- discussion_id: curator-cercosporin-exact-identity
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: Which primary stereochemical and tautomer representation supports this exact
+    cercosporin owner?
+  rationale: Pinned RDKit 2026.03.5 reproduces the stored InChI and key. The encoded
+    side-chain centers are R,R and PubChem CID91617 is an exact graph match. Default
+    RDKit tautomer canonicalization yields the pinned CHEBI:3556 key DGAZLNHJYDOWLG-GHMZBOCLSA-N,
+    but that computational relation does not authorize exact-key grounding, merging
+    or transfer of biological claims. Primary absolute and helical stereochemistry,
+    structural figures and exact-product occurrence support remain incompletely adjudicated.
+    CHEBI:146017 is a dianion, not a neutral replacement. Preserve both exact owners
+    pending source-specific review; do not infer equivalence from a shared label,
+    change stereochemistry automatically, or promote SEEDED status.
+  evidence:
+  - reference: https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:3556
+    explanation: Pinned ChEBI inventory contains neutral R,R cercosporin; graph comparison
+      does not establish experimental identity.
+  - reference: PMID:28535078
+    explanation: Inspected abstract or main-text sections inform experimental context;
+      rendered primary structures and complete stereochemical adjudication remain
+      outstanding.
+  - reference: https://github.com/CultureBotAI/NaturalProductMech/issues/955
+    explanation: Tracks unresolved exact-product adjudication; this OPEN qualification
+      does not resolve identity.
+- discussion_id: curator-cercosporin-zeina-complementation
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: How should the native C. zeina CTB7-pseudogene locus and complemented production
+    experiment be represented separately?
+  rationale: PMID:28535078 reports cercosporin in one C. zeina transformant complemented
+    with full-length C. zeae-maydis CTB7 under nitrogen-limited/light conditions.
+    It reports lack of native in-vitro production in the studied context and only
+    proposes a structural variant during maize infection. KY656140.1 is the partial
+    native CTB region with a CTB7 pseudogene, from deposited isolate CMW25467, not
+    the complemented construct. The LOTUS occurrence cites the same study and requires
+    the same experimental-context audit; occurrence and production remain distinct
+    claims. The publisher full text was inaccessible. This qualification does not
+    prove species-wide absence, upgrade SOURCE_ASSERTION or CLUSTER_UNSTATED, or change
+    the compound-origin class to ENGINEERED. Claim-level context or withholding requires
+    further source-pinned curation.
+  evidence:
+  - reference: PMID:28535078
+    explanation: Inspected primary abstract distinguishes native in-vitro observations
+      from the complemented transformant.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/KY656140.1
+    explanation: Versioned GenBank source and CTB7 pseudogene annotation inspected;
+      isolate CMW25467 is deposited context, not an inferred engineered strain name.
+  - reference: https://github.com/CultureBotAI/NaturalProductMech/issues/956
+    explanation: Claim-level engineering-context repair remains open; this discussion
+      is a mitigation only.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -91,3 +175,13 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-14T00:38:20Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-14T00:38:29Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Add cited OPEN cercosporin identity qualification (#955) and CTB7-complementation
+    context (#956); preserve exact chemistry, source grades and SEEDED status.
+  llm_assisted: true
