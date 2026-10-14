@@ -1,0 +1,716 @@
+{
+  "rdkit": "2026.03.5",
+  "chemistry": {
+    "geldanamycin-2": {
+      "key": "QSAMODLUYGNFJU-LEBIDKMGSA-N",
+      "formula": "C30H42N2O8",
+      "charge": 0,
+      "centers": [
+        [
+          2,
+          "S"
+        ],
+        [
+          4,
+          "R"
+        ],
+        [
+          23,
+          "S"
+        ],
+        [
+          26,
+          "S"
+        ],
+        [
+          34,
+          "S"
+        ],
+        [
+          36,
+          "R"
+        ]
+      ],
+      "carbamate": false,
+      "carbon_linked_acetamide": true
+    },
+    "geldanamycin": {
+      "key": "QTQAWLPCGQOSGP-KSRBKZBZSA-N",
+      "formula": "C29H40N2O9",
+      "charge": 0,
+      "centers": [
+        [
+          1,
+          "R"
+        ],
+        [
+          3,
+          "S"
+        ],
+        [
+          4,
+          "R"
+        ],
+        [
+          5,
+          "S"
+        ],
+        [
+          8,
+          "S"
+        ],
+        [
+          9,
+          "S"
+        ]
+      ],
+      "carbamate": true,
+      "carbon_linked_acetamide": false
+    }
+  },
+  "inventories": {
+    "chebi_structures": {
+      "rows_scanned": 45895,
+      "join_column": "standard_inchi_key",
+      "join_values": [
+        "QSAMODLUYGNFJU-LEBIDKMGSA-N",
+        "QTQAWLPCGQOSGP-KSRBKZBZSA-N"
+      ],
+      "matches": [
+        {
+          "row_number": 1054,
+          "row": {
+            "chebi_id": "CHEBI:5292",
+            "name": "geldanamycin",
+            "definition": "An ansamycin consisting of a 19-membered macrocyle incorporating a benzoquinone ring and a lactam functionality. It shows antimicrobial activity against many Gram-positive and some Gram-negative bacteria.",
+            "stars": "3",
+            "standard_inchi_key": "QTQAWLPCGQOSGP-KSRBKZBZSA-N",
+            "smiles": "COC1=C2C[C@@H](C)C[C@H](OC)[C@H](O)[C@@H](C)/C=C(\\C)[C@H](OC(N)=O)[C@@H](OC)/C=C\\C=C(/C)C(=O)NC(=CC1=O)C2=O"
+          },
+          "row_sha256": "93708e136904df142e13efc74ea4e1659ce743140ebf492c3a560e3916b609c7"
+        }
+      ]
+    },
+    "chebi_origins": {
+      "rows_scanned": 18159,
+      "join_column": "chebi_id",
+      "join_values": [
+        "CHEBI:5292"
+      ],
+      "matches": []
+    },
+    "mibig_compounds": {
+      "rows_scanned": 3449,
+      "join_column": "standard_inchi_key",
+      "join_values": [
+        "QSAMODLUYGNFJU-LEBIDKMGSA-N",
+        "QTQAWLPCGQOSGP-KSRBKZBZSA-N"
+      ],
+      "matches": [
+        {
+          "row_number": 91,
+          "row": {
+            "mibig_accession": "BGC0000066",
+            "entry_version": "5",
+            "entry_status": "active",
+            "entry_quality": "questionable",
+            "entry_completeness": "unknown",
+            "compound_name": "geldanamycin",
+            "compound_index": "1",
+            "smiles": "CO[C@H]1C[C@H](C)CC2=C(OC)C(=O)C=C(NC(=O)\\C(C)=C\\C=C/[C@H](OC)[C@@H](CC(N)=O)\\C(C)=C\\[C@H](C)[C@H]1O)C2=O",
+            "standard_inchi": "InChI=1S/C30H42N2O8/c1-16-11-21-28(36)22(15-23(33)29(21)40-7)32-30(37)17(2)9-8-10-24(38-5)20(14-26(31)34)18(3)13-19(4)27(35)25(12-16)39-6/h8-10,13,15-16,19-20,24-25,27,35H,11-12,14H2,1-7H3,(H2,31,34)(H,32,37)/b10-8-,17-9+,18-13+/t16-,19+,20+,24+,25+,27-/m1/s1",
+            "standard_inchi_key": "QSAMODLUYGNFJU-LEBIDKMGSA-N",
+            "stereo_complete": "true",
+            "compound_classes": "",
+            "database_ids": "npatlas:NPA019914|pubchem:5288382",
+            "taxon_id": "NCBITaxon:1912",
+            "taxon_label": "Streptomyces hygroscopicus",
+            "bgc_classes": "PKS",
+            "bgc_subclasses": "Unknown",
+            "genome_accession": "AY179507.1",
+            "locus_from": "",
+            "locus_to": "",
+            "locus_evidence_methods": "",
+            "producer_evidence_basis": "SOURCE_ASSERTION",
+            "cluster_link_evidence_basis": "CLUSTER_UNSTATED",
+            "primary_reference": "PMID:12586396",
+            "reference_basis": "ENTRY"
+          },
+          "row_sha256": "35220e2672310e34eba4d4bd0a60dc4f71c4a68e5559f75b6b634cd5cdc188eb"
+        },
+        {
+          "row_number": 92,
+          "row": {
+            "mibig_accession": "BGC0000067",
+            "entry_version": "5",
+            "entry_status": "active",
+            "entry_quality": "questionable",
+            "entry_completeness": "unknown",
+            "compound_name": "geldanamycin",
+            "compound_index": "1",
+            "smiles": "C[C@H]1C[C@@H]([C@@H]([C@H](/C=C(/[C@@H]([C@H](/C=C\\C=C(\\C(=O)NC2=CC(=O)C(=C(C1)C2=O)OC)/C)OC)OC(=O)N)\\C)C)O)OC",
+            "standard_inchi": "InChI=1S/C29H40N2O9/c1-15-11-19-25(34)20(14-21(32)27(19)39-7)31-28(35)16(2)9-8-10-22(37-5)26(40-29(30)36)18(4)13-17(3)24(33)23(12-15)38-6/h8-10,13-15,17,22-24,26,33H,11-12H2,1-7H3,(H2,30,36)(H,31,35)/b10-8-,16-9+,18-13+/t15-,17+,22+,23+,24-,26+/m1/s1",
+            "standard_inchi_key": "QTQAWLPCGQOSGP-KSRBKZBZSA-N",
+            "stereo_complete": "true",
+            "compound_classes": "",
+            "database_ids": "pubchem:5288382",
+            "taxon_id": "NCBITaxon:285527",
+            "taxon_label": "Streptomyces hygroscopicus subsp. duamyceticus",
+            "bgc_classes": "PKS",
+            "bgc_subclasses": "Unknown",
+            "genome_accession": "DQ249341.1",
+            "locus_from": "",
+            "locus_to": "",
+            "locus_evidence_methods": "",
+            "producer_evidence_basis": "SOURCE_ASSERTION",
+            "cluster_link_evidence_basis": "CLUSTER_UNSTATED",
+            "primary_reference": "PMID:18600054",
+            "reference_basis": "ENTRY"
+          },
+          "row_sha256": "23b7e5e7e1091d569e594b883aca7c003130e94bf2f5a82ffd7c2f8ef86a8683"
+        },
+        {
+          "row_number": 93,
+          "row": {
+            "mibig_accession": "BGC0000068",
+            "entry_version": "5",
+            "entry_status": "active",
+            "entry_quality": "questionable",
+            "entry_completeness": "unknown",
+            "compound_name": "geldanamycin",
+            "compound_index": "1",
+            "smiles": "C[C@H]1C[C@@H]([C@@H]([C@H](/C=C(/[C@@H]([C@H](/C=C\\C=C(\\C(=O)NC2=CC(=O)C(=C(C1)C2=O)OC)/C)OC)OC(=O)N)\\C)C)O)OC",
+            "standard_inchi": "InChI=1S/C29H40N2O9/c1-15-11-19-25(34)20(14-21(32)27(19)39-7)31-28(35)16(2)9-8-10-22(37-5)26(40-29(30)36)18(4)13-17(3)24(33)23(12-15)38-6/h8-10,13-15,17,22-24,26,33H,11-12H2,1-7H3,(H2,30,36)(H,31,35)/b10-8-,16-9+,18-13+/t15-,17+,22+,23+,24-,26+/m1/s1",
+            "standard_inchi_key": "QTQAWLPCGQOSGP-KSRBKZBZSA-N",
+            "stereo_complete": "true",
+            "compound_classes": "",
+            "database_ids": "pubchem:5288382",
+            "taxon_id": "NCBITaxon:1912",
+            "taxon_label": "Streptomyces hygroscopicus",
+            "bgc_classes": "PKS",
+            "bgc_subclasses": "Unknown",
+            "genome_accession": "DQ914285.1",
+            "locus_from": "",
+            "locus_to": "",
+            "locus_evidence_methods": "",
+            "producer_evidence_basis": "SOURCE_ASSERTION",
+            "cluster_link_evidence_basis": "CLUSTER_UNSTATED",
+            "primary_reference": "PMID:18214443",
+            "reference_basis": "ENTRY"
+          },
+          "row_sha256": "ef4aa9b8f8507cf2b91b4d3dcaeae7a1dad2df48d4ae1c01bf856ae5bae70e3c"
+        }
+      ]
+    },
+    "lotus_occurrences": {
+      "rows_scanned": 10226,
+      "join_column": "standard_inchi_key",
+      "join_values": [
+        "QSAMODLUYGNFJU-LEBIDKMGSA-N",
+        "QTQAWLPCGQOSGP-KSRBKZBZSA-N"
+      ],
+      "matches": [
+        {
+          "row_number": 7394,
+          "row": {
+            "standard_inchi_key": "QSAMODLUYGNFJU-LEBIDKMGSA-N",
+            "organism_name": "Streptomyces hygroscopicus",
+            "taxon_id": "NCBITaxon:1912",
+            "organism_wikidata": "http://www.wikidata.org/entity/Q3975996",
+            "reference_doi": "10.1016/S0378-1097(02)01148-5",
+            "structure_wikidata": "http://www.wikidata.org/entity/Q105226823"
+          },
+          "row_sha256": "2839e600138fd1887f80efab6de4ab0b5d60b2e196e71de40b3bb819c70335c6"
+        },
+        {
+          "row_number": 7409,
+          "row": {
+            "standard_inchi_key": "QTQAWLPCGQOSGP-KSRBKZBZSA-N",
+            "organism_name": "Humicola fuscoatra",
+            "taxon_id": "NCBITaxon:112175",
+            "organism_wikidata": "http://www.wikidata.org/entity/Q10527070",
+            "reference_doi": "10.1021/NP400889X",
+            "structure_wikidata": "http://www.wikidata.org/entity/Q904475"
+          },
+          "row_sha256": "0ec7d4c791d0f6b16a9fdd2b531620e340e238f4025efd85c5ed88ffebc48bf2"
+        },
+        {
+          "row_number": 7410,
+          "row": {
+            "standard_inchi_key": "QTQAWLPCGQOSGP-KSRBKZBZSA-N",
+            "organism_name": "Streptomyces hygroscopicus",
+            "taxon_id": "NCBITaxon:1912",
+            "organism_wikidata": "http://www.wikidata.org/entity/Q3975996",
+            "reference_doi": "10.1007/S00203-007-0346-2",
+            "structure_wikidata": "http://www.wikidata.org/entity/Q904475"
+          },
+          "row_sha256": "c9fed3e2663e9efb8a36816b0ee97759f5b75f1c9311dc772a501260887f51b2"
+        },
+        {
+          "row_number": 7411,
+          "row": {
+            "standard_inchi_key": "QTQAWLPCGQOSGP-KSRBKZBZSA-N",
+            "organism_name": "Streptomyces hygroscopicus",
+            "taxon_id": "NCBITaxon:1912",
+            "organism_wikidata": "http://www.wikidata.org/entity/Q3975996",
+            "reference_doi": "10.1021/NP4000679",
+            "structure_wikidata": "http://www.wikidata.org/entity/Q904475"
+          },
+          "row_sha256": "d54ca3678bd0f4eea251edb36816e185d6e5516afa1eb4d8dbf33680366f1bb2"
+        },
+        {
+          "row_number": 7412,
+          "row": {
+            "standard_inchi_key": "QTQAWLPCGQOSGP-KSRBKZBZSA-N",
+            "organism_name": "Streptomyces hygroscopicus",
+            "taxon_id": "NCBITaxon:1912",
+            "organism_wikidata": "http://www.wikidata.org/entity/Q3975996",
+            "reference_doi": "10.1021/NP50047A016",
+            "structure_wikidata": "http://www.wikidata.org/entity/Q904475"
+          },
+          "row_sha256": "29390179150e7a52f6a140c852eb384b3f403e899a2ea29dd5c37fc05208e512"
+        }
+      ]
+    },
+    "npclassifier": {
+      "rows_scanned": 3116,
+      "join_column": "standard_inchi_key",
+      "join_values": [
+        "QSAMODLUYGNFJU-LEBIDKMGSA-N",
+        "QTQAWLPCGQOSGP-KSRBKZBZSA-N"
+      ],
+      "matches": [
+        {
+          "row_number": 2026,
+          "row": {
+            "standard_inchi_key": "QSAMODLUYGNFJU-LEBIDKMGSA-N",
+            "smiles": "CO[C@H]1C[C@H](C)CC2=C(OC)C(=O)C=C(NC(=O)\\C(C)=C\\C=C/[C@H](OC)[C@@H](CC(N)=O)\\C(C)=C\\[C@H](C)[C@H]1O)C2=O",
+            "pathway_results": "Polyketides",
+            "superclass_results": "Macrolides",
+            "class_results": "Ansa macrolides",
+            "is_glycoside": "false",
+            "model_version": "npclassifier.gnps2.org@2026-09-07"
+          },
+          "row_sha256": "7c59a616385f26f8a325e2403ddc9730800ef479564b3f25e611c60c3f17697e"
+        },
+        {
+          "row_number": 2037,
+          "row": {
+            "standard_inchi_key": "QTQAWLPCGQOSGP-KSRBKZBZSA-N",
+            "smiles": "C[C@H]1C[C@@H]([C@@H]([C@H](/C=C(/[C@@H]([C@H](/C=C\\C=C(\\C(=O)NC2=CC(=O)C(=C(C1)C2=O)OC)/C)OC)OC(=O)N)\\C)C)O)OC",
+            "pathway_results": "Polyketides",
+            "superclass_results": "Macrolides",
+            "class_results": "Ansa macrolides",
+            "is_glycoside": "false",
+            "model_version": "npclassifier.gnps2.org@2026-09-07"
+          },
+          "row_sha256": "f8dfeb38b03df8e306208c093a7ec3040e79b674b3eeb99eca5a926345cd996c"
+        }
+      ]
+    },
+    "antibioticmech_inchikeys": {
+      "rows_scanned": 2920,
+      "join_column": "standard_inchi_key",
+      "join_values": [
+        "QSAMODLUYGNFJU-LEBIDKMGSA-N",
+        "QTQAWLPCGQOSGP-KSRBKZBZSA-N"
+      ],
+      "matches": [
+        {
+          "row_number": 1864,
+          "row": {
+            "standard_inchi_key": "QTQAWLPCGQOSGP-KSRBKZBZSA-N",
+            "identifier": "CHEBI:5292",
+            "label": "geldanamycin",
+            "antimicrobial_class": "ANTIVIRAL",
+            "slug": "geldanamycin",
+            "corpus_commit": "74f6cc8362498900f2fe2c13d0b6fdb66dd30976"
+          },
+          "row_sha256": "e177d39f8f49221bce2f22f5610613605c2ab2ec241e9ba12a549368f2f889ac"
+        }
+      ]
+    },
+    "pubchem_bioassay": {
+      "rows_scanned": 11458,
+      "join_column": "standard_inchi_key",
+      "join_values": [
+        "QSAMODLUYGNFJU-LEBIDKMGSA-N",
+        "QTQAWLPCGQOSGP-KSRBKZBZSA-N"
+      ],
+      "matches": [
+        {
+          "row_number": 5715,
+          "row": {
+            "standard_inchi_key": "QSAMODLUYGNFJU-LEBIDKMGSA-N",
+            "cid": "5288382",
+            "aid": "1801076",
+            "assay_name": "Fluorescence Polarization Assay (FPA) from Article 10.1111/cbdd.12371: \"Discovery of novel 17-phenylethylaminegeldanamycin derivatives as potent Hsp90 inhibitors.\"",
+            "assay_type": "Confirmatory",
+            "depositor": "BindingDB",
+            "activity_outcome": "Active",
+            "activity_name": "IC50",
+            "activity_value_um": "0.14",
+            "target_accession": "Q58FG1",
+            "reference": "PMID:24903735"
+          },
+          "row_sha256": "2ae1e64244c777e313f2b3b136100c2aefa934e5e4510db55393120be1d30920"
+        },
+        {
+          "row_number": 5716,
+          "row": {
+            "standard_inchi_key": "QSAMODLUYGNFJU-LEBIDKMGSA-N",
+            "cid": "5288382",
+            "aid": "2451",
+            "assay_name": "qHTS Assay for Inhibitors of Fructose-1,6-bisphosphate Aldolase from Giardia Lamblia",
+            "assay_type": "Confirmatory",
+            "depositor": "NCGC",
+            "activity_outcome": "Active",
+            "activity_name": "Potency",
+            "activity_value_um": "3.5397",
+            "target_accession": "2ISV_A",
+            "reference": ""
+          },
+          "row_sha256": "df1fafd3841999a209ec3e5ada7a494bcb335978c22933bd80fd1a32e14fd2f9"
+        },
+        {
+          "row_number": 5717,
+          "row": {
+            "standard_inchi_key": "QSAMODLUYGNFJU-LEBIDKMGSA-N",
+            "cid": "5288382",
+            "aid": "2472",
+            "assay_name": "qHTS Assay for Inhibitors of Fructose-1,6-bisphosphate Aldolase from Giardia Lamblia: Coupling assay counterscreen",
+            "assay_type": "Screening",
+            "depositor": "NCGC",
+            "activity_outcome": "Active",
+            "activity_name": "",
+            "activity_value_um": "",
+            "target_accession": "NP_002037",
+            "reference": ""
+          },
+          "row_sha256": "88eb1bbe9a4b79b08a52156903b2febb92bf9993a9ef59e50d4a32059b24544e"
+        },
+        {
+          "row_number": 5718,
+          "row": {
+            "standard_inchi_key": "QSAMODLUYGNFJU-LEBIDKMGSA-N",
+            "cid": "5288382",
+            "aid": "2551",
+            "assay_name": "qHTS for inhibitors of ROR gamma transcriptional activity",
+            "assay_type": "Confirmatory",
+            "depositor": "NCGC",
+            "activity_outcome": "Inconclusive",
+            "activity_name": "Potency",
+            "activity_value_um": "4.4668",
+            "target_accession": "NP_035411",
+            "reference": ""
+          },
+          "row_sha256": "09444fc47ae32c7920edb92d0532487bb0dd2ddfda6f80e3f1694a01991948b8"
+        },
+        {
+          "row_number": 5719,
+          "row": {
+            "standard_inchi_key": "QSAMODLUYGNFJU-LEBIDKMGSA-N",
+            "cid": "5288382",
+            "aid": "504847",
+            "assay_name": "Inhibitors of the vitamin D receptor (VDR): qHTS",
+            "assay_type": "Confirmatory",
+            "depositor": "NCGC",
+            "activity_outcome": "Inconclusive",
+            "activity_name": "Potency",
+            "activity_value_um": "79.4328",
+            "target_accession": "NP_001017535",
+            "reference": ""
+          },
+          "row_sha256": "ddad4c6da83dc3a321f2650930c36803356f2aae9e8f2dedec639c6a3e7b9050"
+        },
+        {
+          "row_number": 5720,
+          "row": {
+            "standard_inchi_key": "QSAMODLUYGNFJU-LEBIDKMGSA-N",
+            "cid": "5288382",
+            "aid": "602332",
+            "assay_name": "qHTS for Inducers of the Endoplasmic Reticulum Stress Response (ERSR) in Human Glioma: qHTS",
+            "assay_type": "Confirmatory",
+            "depositor": "NCGC",
+            "activity_outcome": "Inconclusive",
+            "activity_name": "Potency",
+            "activity_value_um": "35.4813",
+            "target_accession": "CAQ08732",
+            "reference": ""
+          },
+          "row_sha256": "6c76c7e9edca5edcd389b0beca9c23a7608968aeb00ca24067d4692b9b6b756a"
+        },
+        {
+          "row_number": 5721,
+          "row": {
+            "standard_inchi_key": "QSAMODLUYGNFJU-LEBIDKMGSA-N",
+            "cid": "5288382",
+            "aid": "624248",
+            "assay_name": "HTS assay for small molecules that inhibit ELG1-dependent DNA repair in human embryonic kidney (HEK293T) cells expressing luciferase-tagged ELG1: Hit Confirmation",
+            "assay_type": "Confirmatory",
+            "depositor": "NCGC",
+            "activity_outcome": "Active",
+            "activity_name": "Potency",
+            "activity_value_um": "1.4068",
+            "target_accession": "AAH15051",
+            "reference": ""
+          },
+          "row_sha256": "b6789ed8672cfe7fc6c3fcb6c8f3a52fff142333c6fbe712cea68fe88c8a58e2"
+        },
+        {
+          "row_number": 5722,
+          "row": {
+            "standard_inchi_key": "QSAMODLUYGNFJU-LEBIDKMGSA-N",
+            "cid": "5288382",
+            "aid": "624249",
+            "assay_name": "qHTS screen for small molecules that inhibit ELG1-dependent DNA repair in human embryonic kidney (HEK293T) cells expressing luciferase-tagged ELG1: Hit Confirmation using MMS Stimulated ELG1",
+            "assay_type": "Confirmatory",
+            "depositor": "NCGC",
+            "activity_outcome": "Active",
+            "activity_name": "Potency",
+            "activity_value_um": "1.9872",
+            "target_accession": "AAH15051",
+            "reference": ""
+          },
+          "row_sha256": "ff4d407172666b7258663677c06d39a3bbdefed9ad32ee0e84039628947af784"
+        },
+        {
+          "row_number": 5723,
+          "row": {
+            "standard_inchi_key": "QSAMODLUYGNFJU-LEBIDKMGSA-N",
+            "cid": "5288382",
+            "aid": "624250",
+            "assay_name": "qHTS screen for small molecules that inhibit ELG1-dependent DNA repair: Hit Confirmation with 5FU Viability",
+            "assay_type": "Confirmatory",
+            "depositor": "NCGC",
+            "activity_outcome": "Inconclusive",
+            "activity_name": "Potency",
+            "activity_value_um": "17.7111",
+            "target_accession": "AAH15051",
+            "reference": ""
+          },
+          "row_sha256": "c509e5b3f10cd42ed568d4c8afb9474245df84f0f6948bdcbddea968394cb309"
+        },
+        {
+          "row_number": 5724,
+          "row": {
+            "standard_inchi_key": "QSAMODLUYGNFJU-LEBIDKMGSA-N",
+            "cid": "5288382",
+            "aid": "624251",
+            "assay_name": "qHTS screen for small molecules that inhibit ELG1-dependent DNA repair: Hit Confirmation with MMS Viability",
+            "assay_type": "Confirmatory",
+            "depositor": "NCGC",
+            "activity_outcome": "Active",
+            "activity_name": "Potency",
+            "activity_value_um": "14.0684",
+            "target_accession": "AAH15051",
+            "reference": ""
+          },
+          "row_sha256": "73a30697c8fba0ce44b97b1f2388b0563597cdef6d157de869bb156214cabd64"
+        },
+        {
+          "row_number": 5725,
+          "row": {
+            "standard_inchi_key": "QSAMODLUYGNFJU-LEBIDKMGSA-N",
+            "cid": "5288382",
+            "aid": "624252",
+            "assay_name": "qHTS screen for small molecules that inhibit ELG1-dependent DNA repair: Hit Confirmation with Unstimulated Viability Assay",
+            "assay_type": "Confirmatory",
+            "depositor": "NCGC",
+            "activity_outcome": "Inconclusive",
+            "activity_name": "Potency",
+            "activity_value_um": "4.9917",
+            "target_accession": "AAH15051",
+            "reference": ""
+          },
+          "row_sha256": "f93cc0c25a551dfb1441f4c8fe16f782c75da613ebc268078f1efb83a31ef1d1"
+        },
+        {
+          "row_number": 5726,
+          "row": {
+            "standard_inchi_key": "QSAMODLUYGNFJU-LEBIDKMGSA-N",
+            "cid": "5288382",
+            "aid": "720532",
+            "assay_name": "qHTS for Inhibitors of binding or entry into cells for Marburg Virus",
+            "assay_type": "Confirmatory",
+            "depositor": "NCGC",
+            "activity_outcome": "Active",
+            "activity_name": "Potency",
+            "activity_value_um": "15.8489",
+            "target_accession": "B45705",
+            "reference": ""
+          },
+          "row_sha256": "e6aa68d6bc15e9c01fd95398b4e874fc83b4d3b788c490b90bf7948f3fe83dee"
+        },
+        {
+          "row_number": 5727,
+          "row": {
+            "standard_inchi_key": "QSAMODLUYGNFJU-LEBIDKMGSA-N",
+            "cid": "5288382",
+            "aid": "720533",
+            "assay_name": "qHTS for Inhibitors of binding or entry into cells for Lassa Virus",
+            "assay_type": "Confirmatory",
+            "depositor": "NCGC",
+            "activity_outcome": "Active",
+            "activity_name": "Potency",
+            "activity_value_um": "17.7828",
+            "target_accession": "",
+            "reference": ""
+          },
+          "row_sha256": "7b4cba58fb925f4c7dcd7c80a4767805dd824c74ff4fd16d5f4156226b029aec"
+        },
+        {
+          "row_number": 5728,
+          "row": {
+            "standard_inchi_key": "QSAMODLUYGNFJU-LEBIDKMGSA-N",
+            "cid": "5288382",
+            "aid": "977611",
+            "assay_name": "Experimentally measured binding affinity data (Kd) for protein-ligand complexes derived from PDB",
+            "assay_type": "Other",
+            "depositor": "Shanghai Institute of Organic Chemistry",
+            "activity_outcome": "Active",
+            "activity_name": "Kd",
+            "activity_value_um": "1.2",
+            "target_accession": "",
+            "reference": "PMID:11931608"
+          },
+          "row_sha256": "37d1b3dc869f3d333d6be801f726c3e4cf96006bd6ca6750bb12da013464dd16"
+        }
+      ]
+    }
+  },
+  "taxonomy": [
+    {
+      "id": "1912",
+      "name": "Streptomyces hygroscopicus",
+      "rank": "species"
+    },
+    {
+      "id": "285527",
+      "name": "Streptomyces hygroscopicus subsp. duamyceticus",
+      "rank": "subspecies"
+    },
+    {
+      "id": "112175",
+      "name": "Humicola fuscoatra",
+      "rank": "species"
+    },
+    {
+      "id": "9606",
+      "name": "Homo sapiens",
+      "rank": "species"
+    }
+  ],
+  "pdb_mapping": {
+    "accession": "P07900",
+    "source": "RCSB/SIFTS",
+    "reference_start": 9,
+    "reference_end": 236,
+    "uniprot_entry_audit": {
+      "firstPublicDate": "1988-08-01",
+      "lastAnnotationUpdateDate": "2026-09-02",
+      "lastSequenceUpdateDate": "2007-01-23",
+      "entryVersion": 285,
+      "sequenceVersion": 5
+    },
+    "sequence_differences": [
+      {
+        "reference_position": 63,
+        "pdb": "T",
+        "uniprot": "S"
+      }
+    ]
+  },
+  "pubchem": {
+    "CID": 5288382,
+    "MolecularFormula": "C29H40N2O9",
+    "SMILES": "C[C@H]1C[C@@H]([C@@H]([C@H](/C=C(/[C@@H]([C@H](/C=C\\C=C(\\C(=O)NC2=CC(=O)C(=C(C1)C2=O)OC)/C)OC)OC(=O)N)\\C)C)O)OC",
+    "InChI": "InChI=1S/C29H40N2O9/c1-15-11-19-25(34)20(14-21(32)27(19)39-7)31-28(35)16(2)9-8-10-22(37-5)26(40-29(30)36)18(4)13-17(3)24(33)23(12-15)38-6/h8-10,13-15,17,22-24,26,33H,11-12H2,1-7H3,(H2,30,36)(H,31,35)/b10-8-,16-9+,18-13+/t15-,17+,22+,23+,24-,26+/m1/s1",
+    "InChIKey": "QTQAWLPCGQOSGP-KSRBKZBZSA-N"
+  },
+  "chebi": {
+    "id": 2840882,
+    "smiles": "COC1=C2C[C@@H](C)C[C@H](OC)[C@H](O)[C@@H](C)/C=C(\\C)[C@H](OC(N)=O)[C@@H](OC)/C=C\\C=C(/C)C(=O)NC(=CC1=O)C2=O",
+    "standard_inchi": "InChI=1S/C29H40N2O9/c1-15-11-19-25(34)20(14-21(32)27(19)39-7)31-28(35)16(2)9-8-10-22(37-5)26(40-29(30)36)18(4)13-17(3)24(33)23(12-15)38-6/h8-10,13-15,17,22-24,26,33H,11-12H2,1-7H3,(H2,30,36)(H,31,35)/b10-8-,16-9+,18-13+/t15-,17+,22+,23+,24-,26+/m1/s1",
+    "standard_inchi_key": "QTQAWLPCGQOSGP-KSRBKZBZSA-N",
+    "wurcs": null,
+    "is_r_group": false
+  },
+  "pdb_ligand": {
+    "InChI": "InChI=1S/C29H40N2O9/c1-15-11-19-25(34)20(14-21(32)27(19)39-7)31-28(35)16(2)9-8-10-22(37-5)26(40-29(30)36)18(4)13-17(3)24(33)23(12-15)38-6/h8-10,13-15,17,22-24,26,33H,11-12H2,1-7H3,(H2,30,36)(H,31,35)/b10-8-,16-9+,18-13+/t15-,17+,22+,23+,24-,26+/m1/s1",
+    "InChIKey": "QTQAWLPCGQOSGP-KSRBKZBZSA-N",
+    "SMILES": "CC1CC(C(C(C=C(C(C(C=CC=C(C(=O)NC2=CC(=O)C(=C(C1)C2=O)OC)C)OC)OC(=O)N)C)C)O)OC",
+    "SMILES_stereo": "C[C@H]1C[C@@H]([C@@H]([C@H](\\C=C(\\[C@@H]([C@H](\\C=C/C=C(/C(=O)NC2=CC(=O)C(=C(C1)C2=O)OC)\\C)OC)OC(=O)N)/C)C)O)OC",
+    "comp_id": "GDM"
+  },
+  "assay": [
+    {
+      "sid": 242057189,
+      "outcome": 2,
+      "data": [
+        {
+          "tid": 1,
+          "value": {
+            "sval": "IC50"
+          }
+        },
+        {
+          "tid": 2,
+          "value": {
+            "fval": 0.14
+          }
+        },
+        {
+          "tid": 3,
+          "value": {
+            "fval": 140
+          }
+        },
+        {
+          "tid": 4,
+          "value": {
+            "sval": "Q58FG1"
+          }
+        },
+        {
+          "tid": 5,
+          "value": {
+            "sval": "BDBM50008059"
+          }
+        },
+        {
+          "tid": 6,
+          "value": {
+            "sval": "Putative heat shock protein HSP 90-alpha A4"
+          }
+        }
+      ]
+    }
+  ],
+  "Q58FG1": {
+    "entryType": "UniProtKB reviewed (Swiss-Prot)",
+    "proteinExistence": "5: Uncertain",
+    "entryAudit": {
+      "firstPublicDate": "2008-07-01",
+      "lastAnnotationUpdateDate": "2026-09-02",
+      "lastSequenceUpdateDate": "2005-04-26",
+      "entryVersion": 142,
+      "sequenceVersion": 1
+    },
+    "cautions": [
+      {
+        "texts": [
+          {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000305"
+              }
+            ],
+            "value": "Could be the product of a pseudogene"
+          }
+        ],
+        "commentType": "CAUTION"
+      }
+    ]
+  }
+}

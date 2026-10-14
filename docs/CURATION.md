@@ -205,6 +205,25 @@ flag. It is not a general exclusion of assays typed `Other`, nor an audit of
 every AID1195 row. Importer-level identity and protocol validation remain
 separate work.
 
+## LOTUS occurrence exclusions
+
+`curation/lotus_occurrence_exclusions.tsv` withholds one reviewed LOTUS triple,
+keyed by exact `standard_inchi_key`, `taxon_id` and literal `reference_doi`.
+Each row requires the complete parsed source row's `expected_source_row_sha256`
+from `row_digest`, plus a stable `reference`, `curator`, ISO `date` and
+`rationale`. Missing/duplicate targets, unknown fields, invalid attribution,
+source drift and decisions without an emitted owner stop seeding.
+
+Exclusion occurs before occurrence deduplication, capping and taxonomic-facet
+derivation. The original inventory is unchanged; a table-owned
+`source-lotus-exclusion-<source-digest>` discussion preserves the triple and
+adjudication. Old YAML answers cannot overwrite it. Other source assertions,
+taxa, citations, producer grades and chemistry remain unchanged. Withholding
+one unsupported citation is not proof of universal absence from that taxon.
+The first decision removes a geldanamycin assay-comparator association from
+Humicola fuscoatra; it does not remove the paper's actual fungal metabolites.
+Canary, reproduction and full QC remain required.
+
 ## What a re-seed keeps, and what it overwrites
 
 The corpus is generated, so a re-seed rebuilds every record. What it does *not*

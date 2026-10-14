@@ -25,18 +25,7 @@ np_classification:
   is_glycoside: false
 occurrence_taxon_groups:
 - ACTINOBACTERIAL
-- FUNGAL
 occurrences:
-- taxon_id: NCBITaxon:112175
-  taxon_label: Humicola fuscoatra
-  taxon_source: NCBITaxon
-  source: LOTUS
-  evidence:
-  - reference: DOI:10.1021/NP400889X
-    evidence_type: DATABASE_ASSERTION
-    notes: LOTUS structure-organism-reference triple. LOTUS reports that the compound
-      was found in the organism; it does not assert that the organism produces it.
-  notes: Wikidata organism http://www.wikidata.org/entity/Q10527070
 - taxon_id: NCBITaxon:1912
   taxon_label: Streptomyces hygroscopicus
   taxon_source: NCBITaxon
@@ -158,6 +147,29 @@ source_concepts:
 grounding_status: EXACT
 curation_status: SEEDED
 discussions:
+- discussion_id: source-lotus-exclusion-0ec7d4c791d0f6b16a9fdd2b531620e340e238f4025efd85c5ed88ffebc48bf2
+  kind: CONTROVERSY
+  status: RESOLVED
+  prompt: Does DOI:10.1021/NP400889X support occurrence of this structure in NCBITaxon:112175?
+  resolution_note: 'LOTUS source triple QTQAWLPCGQOSGP-KSRBKZBZSA-N, NCBITaxon:112175,
+    DOI:10.1021/NP400889X is withheld from occurrences; the raw inventory is unchanged.
+    PMC3993908 Results and Discussion and Extraction and Isolation identify radicicol
+    and pochonin compounds 1-7 from Humicola fuscoatra UCSC108111A. Geldanamycin is
+    a structurally unrelated HSP90 inhibitor used in the assay comparison, not a reported
+    fungal isolate. Withhold only this unsupported triple; do not infer universal
+    fungal absence or change producer claims. See issue #966. Source row SHA256 0ec7d4c791d0f6b16a9fdd2b531620e340e238f4025efd85c5ed88ffebc48bf2.
+    Curator: codex; date: 2026-10-14.'
+  evidence:
+  - reference: DOI:10.1021/np400889x
+    evidence_source: primary source; curator interpretation
+    notes: 'LOTUS source triple QTQAWLPCGQOSGP-KSRBKZBZSA-N, NCBITaxon:112175, DOI:10.1021/NP400889X
+      is withheld from occurrences; the raw inventory is unchanged. PMC3993908 Results
+      and Discussion and Extraction and Isolation identify radicicol and pochonin
+      compounds 1-7 from Humicola fuscoatra UCSC108111A. Geldanamycin is a structurally
+      unrelated HSP90 inhibitor used in the assay comparison, not a reported fungal
+      isolate. Withhold only this unsupported triple; do not infer universal fungal
+      absence or change producer claims. See issue #966. Source row SHA256 0ec7d4c791d0f6b16a9fdd2b531620e340e238f4025efd85c5ed88ffebc48bf2.
+      Curator: codex; date: 2026-10-14.'
 - discussion_id: shared-structure
   kind: CURATION_TODO
   status: OPEN
@@ -183,8 +195,13 @@ causal_graphs:
   - subject: geldanamycin
     predicate: binds
     object: hsp90_alpha
-    notes: RCSB PDB 1YET contains GDM geldanamycin bound to human HSP90-alpha chain
-      A residues 9-236 and maps the structure to UniProtKB:P07900 residues 8-235.
+    notes: RCSB PDB 1YET contains the GDM ligand with the exact QTQAWLPCGQOSGP-KSRBKZBZSA-N
+      structure. RCSB/SIFTS maps the 228-residue deposited chain A sequence to UniProtKB:P07900
+      positions 9-236 (accessed 2026-10-14). Comparison with the current UniProt sequence
+      shows deposited T versus reference S at position 63; the cause is not adjudicated
+      and this is not an assertion of an engineered mutation. The paper abstract describes
+      the structural domain as residues 9-232, distinct from the deposited construct-to-reference
+      mapping.
     evidence:
     - reference: DOI:10.1016/S0092-8674(00)80203-2
       evidence_type: PRIMARY_EXPERIMENT
@@ -192,6 +209,11 @@ causal_graphs:
         protein chaperone by an antitumor agent.'
       notes: Stebbins et al. solved PDB 1YET with geldanamycin in the human HSP90
         N-terminal geldanamycin-binding domain.
+    - reference: https://data.rcsb.org/rest/v1/core/polymer_entity/1YET/1
+      evidence_type: DATABASE_ASSERTION
+      notes: SIFTS maps entity1 residues1-228 to P07900 starting at9. Current sequence
+        comparison and registry receipts are retained in reviews/evidence/20261014-geldanamycin/;
+        this mapping evidence is separate from the primary binding experiment.
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -212,3 +234,14 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-14T03:05:56Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-14T03:06:43Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Corrected the PDB1YET-to-P07900 residue mapping to9-236 and qualified the
+    current position63 sequence discrepancy (#967), preserving the exact-ligand binding
+    edge and primary experiment citation.
+  llm_assisted: true

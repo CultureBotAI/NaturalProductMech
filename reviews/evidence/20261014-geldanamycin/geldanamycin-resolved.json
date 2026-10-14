@@ -1,0 +1,286 @@
+{
+  "identifier": "CHEBI:5292",
+  "label": "geldanamycin",
+  "chemical_structure": {
+    "smiles": "C[C@H]1C[C@@H]([C@@H]([C@H](/C=C(/[C@@H]([C@H](/C=C\\C=C(\\C(=O)NC2=CC(=O)C(=C(C1)C2=O)OC)/C)OC)OC(=O)N)\\C)C)O)OC",
+    "standard_inchi": "InChI=1S/C29H40N2O9/c1-15-11-19-25(34)20(14-21(32)27(19)39-7)31-28(35)16(2)9-8-10-22(37-5)26(40-29(30)36)18(4)13-17(3)24(33)23(12-15)38-6/h8-10,13-15,17,22-24,26,33H,11-12H2,1-7H3,(H2,30,36)(H,31,35)/b10-8-,16-9+,18-13+/t15-,17+,22+,23+,24-,26+/m1/s1",
+    "standard_inchi_key": "QTQAWLPCGQOSGP-KSRBKZBZSA-N",
+    "stereo_complete": true,
+    "structure_source": "MIBIG",
+    "structure_source_id": "mibig:BGC0000067"
+  },
+  "np_pathway": "POLYKETIDES",
+  "biosynthesis_origin": "NATURAL_PRODUCT",
+  "definition": "An ansamycin consisting of a 19-membered macrocyle incorporating a benzoquinone ring and a lactam functionality. It shows antimicrobial activity against many Gram-positive and some Gram-negative bacteria.",
+  "definition_source": "CHEBI:5292",
+  "np_classification": {
+    "tool": "NPClassifier",
+    "tool_version": "npclassifier.gnps2.org@2026-09-07",
+    "pathway_results": [
+      "Polyketides"
+    ],
+    "superclass_results": [
+      "Macrolides"
+    ],
+    "class_results": [
+      "Ansa macrolides"
+    ],
+    "is_glycoside": false
+  },
+  "occurrence_taxon_groups": [
+    "ACTINOBACTERIAL",
+    "FUNGAL"
+  ],
+  "occurrences": [
+    {
+      "taxon_id": "NCBITaxon:112175",
+      "taxon_label": "Humicola fuscoatra",
+      "taxon_source": "NCBITaxon",
+      "source": "LOTUS",
+      "evidence": [
+        {
+          "reference": "DOI:10.1021/NP400889X",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "LOTUS structure-organism-reference triple. LOTUS reports that the compound was found in the organism; it does not assert that the organism produces it."
+        }
+      ],
+      "notes": "Wikidata organism http://www.wikidata.org/entity/Q10527070"
+    },
+    {
+      "taxon_id": "NCBITaxon:1912",
+      "taxon_label": "Streptomyces hygroscopicus",
+      "taxon_source": "NCBITaxon",
+      "source": "LOTUS",
+      "evidence": [
+        {
+          "reference": "DOI:10.1007/S00203-007-0346-2",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "LOTUS structure-organism-reference triple. LOTUS reports that the compound was found in the organism; it does not assert that the organism produces it."
+        }
+      ],
+      "notes": "Wikidata organism http://www.wikidata.org/entity/Q3975996 This taxon is also recorded as a producer. Production and occurrence are distinct claims; their citations may refer to the same publication. Publication independence has not been established."
+    },
+    {
+      "taxon_id": "NCBITaxon:1912",
+      "taxon_label": "Streptomyces hygroscopicus",
+      "taxon_source": "NCBITaxon",
+      "source": "LOTUS",
+      "evidence": [
+        {
+          "reference": "DOI:10.1021/NP4000679",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "LOTUS structure-organism-reference triple. LOTUS reports that the compound was found in the organism; it does not assert that the organism produces it."
+        }
+      ],
+      "notes": "Wikidata organism http://www.wikidata.org/entity/Q3975996 This taxon is also recorded as a producer. Production and occurrence are distinct claims; their citations may refer to the same publication. Publication independence has not been established."
+    },
+    {
+      "taxon_id": "NCBITaxon:1912",
+      "taxon_label": "Streptomyces hygroscopicus",
+      "taxon_source": "NCBITaxon",
+      "source": "LOTUS",
+      "evidence": [
+        {
+          "reference": "DOI:10.1021/NP50047A016",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "LOTUS structure-organism-reference triple. LOTUS reports that the compound was found in the organism; it does not assert that the organism produces it."
+        }
+      ],
+      "notes": "Wikidata organism http://www.wikidata.org/entity/Q3975996 This taxon is also recorded as a producer. Production and occurrence are distinct claims; their citations may refer to the same publication. Publication independence has not been established."
+    }
+  ],
+  "related_records": [
+    {
+      "corpus": "AntibioticMech",
+      "identifier": "CHEBI:5292",
+      "relation": "SAME_STRUCTURE",
+      "basis": "SAME_INCHIKEY",
+      "source_version": "74f6cc836249"
+    }
+  ],
+  "bioactivity_summary": [
+    "ANTIVIRAL"
+  ],
+  "bgc_class": [
+    "PKS"
+  ],
+  "xrefs": [
+    "pubchem:5288382"
+  ],
+  "producer_taxon_groups": [
+    "ACTINOBACTERIAL"
+  ],
+  "producer_organisms": [
+    {
+      "taxon_id": "NCBITaxon:285527",
+      "taxon_label": "Streptomyces hygroscopicus subsp. duamyceticus",
+      "evidence_basis": "SOURCE_ASSERTION",
+      "biosynthetic_gene_cluster": "mibig:BGC0000067",
+      "source": "MIBIG",
+      "source_version": "5",
+      "notes": "Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED; this field grades the taxon claim, which is a different question.",
+      "evidence": [
+        {
+          "reference": "PMID:18600054",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "MIBiG BGC0000067 entry version 5; citation taken from the entry level"
+        }
+      ]
+    },
+    {
+      "taxon_id": "NCBITaxon:1912",
+      "taxon_label": "Streptomyces hygroscopicus",
+      "evidence_basis": "SOURCE_ASSERTION",
+      "biosynthetic_gene_cluster": "mibig:BGC0000068",
+      "source": "MIBIG",
+      "source_version": "5",
+      "notes": "Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED; this field grades the taxon claim, which is a different question.",
+      "evidence": [
+        {
+          "reference": "PMID:18214443",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "MIBiG BGC0000068 entry version 5; citation taken from the entry level"
+        }
+      ]
+    }
+  ],
+  "biosynthetic_gene_clusters": [
+    {
+      "accession": "mibig:BGC0000067",
+      "entry_version": "5",
+      "entry_status": "active",
+      "organism_taxon_id": "NCBITaxon:285527",
+      "organism_label": "Streptomyces hygroscopicus subsp. duamyceticus",
+      "evidence": [
+        {
+          "reference": "PMID:18600054",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "MIBiG BGC0000067 entry version 5; citation taken from the entry level"
+        }
+      ],
+      "genome_accession": "genbank:DQ249341.1",
+      "bgc_class": [
+        "PKS"
+      ],
+      "link_evidence_basis": "CLUSTER_UNSTATED"
+    },
+    {
+      "accession": "mibig:BGC0000068",
+      "entry_version": "5",
+      "entry_status": "active",
+      "organism_taxon_id": "NCBITaxon:1912",
+      "organism_label": "Streptomyces hygroscopicus",
+      "evidence": [
+        {
+          "reference": "PMID:18214443",
+          "evidence_type": "DATABASE_ASSERTION",
+          "notes": "MIBiG BGC0000068 entry version 5; citation taken from the entry level"
+        }
+      ],
+      "genome_accession": "genbank:DQ914285.1",
+      "bgc_class": [
+        "PKS"
+      ],
+      "link_evidence_basis": "CLUSTER_UNSTATED"
+    }
+  ],
+  "source_concepts": [
+    {
+      "source": "MIBIG",
+      "source_id": "BGC0000067",
+      "source_label": "geldanamycin",
+      "source_version": "5",
+      "minted_identifier": "naturalproductmech:mibig-bf7a590276"
+    },
+    {
+      "source": "MIBIG",
+      "source_id": "BGC0000068",
+      "source_label": "geldanamycin",
+      "source_version": "5",
+      "minted_identifier": "naturalproductmech:mibig-882b6e161d"
+    },
+    {
+      "source": "CHEBI",
+      "source_id": "CHEBI:5292",
+      "source_label": "geldanamycin",
+      "source_version": "3-star",
+      "minted_identifier": "naturalproductmech:chebi-61f85db53f"
+    }
+  ],
+  "grounding_status": "EXACT",
+  "curation_status": "SEEDED",
+  "discussions": [
+    {
+      "discussion_id": "shared-structure",
+      "kind": "CURATION_TODO",
+      "status": "OPEN",
+      "prompt": "This structure is reported by more than one MIBiG entry: BGC0000067, BGC0000068. Confirm they describe the same compound rather than an upstream cross-reference error."
+    }
+  ],
+  "causal_graphs": [
+    {
+      "graph_id": "geldanamycin-hsp90-binding",
+      "scope": "BIOACTIVITY",
+      "description": "Geldanamycin binds the N-terminal ATPase domain of human HSP90-alpha.",
+      "nodes": [
+        {
+          "node_id": "geldanamycin",
+          "label": "geldanamycin",
+          "node_type": "COMPOUND",
+          "identifier": "CHEBI:5292",
+          "grounding_status": "GROUNDED"
+        },
+        {
+          "node_id": "hsp90_alpha",
+          "label": "human heat shock protein HSP 90-alpha",
+          "node_type": "PROTEIN",
+          "identifier": "UniProtKB:P07900",
+          "grounding_status": "GROUNDED"
+        }
+      ],
+      "edges": [
+        {
+          "subject": "geldanamycin",
+          "predicate": "binds",
+          "object": "hsp90_alpha",
+          "notes": "RCSB PDB 1YET contains GDM geldanamycin bound to human HSP90-alpha chain A residues 9-236 and maps the structure to UniProtKB:P07900 residues 8-235.",
+          "evidence": [
+            {
+              "reference": "DOI:10.1016/S0092-8674(00)80203-2",
+              "evidence_type": "PRIMARY_EXPERIMENT",
+              "snippet": "Crystal structure of an Hsp90-geldanamycin complex: targeting of a protein chaperone by an antitumor agent.",
+              "notes": "Stebbins et al. solved PDB 1YET with geldanamycin in the human HSP90 N-terminal geldanamycin-binding domain."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "curation_history": [
+    {
+      "timestamp": "2026-09-10T05:54:12Z",
+      "curator": "seed_from_sources",
+      "action": "SEEDED_FROM_SOURCES",
+      "changes": "Seeded from the committed inventories in data/raw/."
+    },
+    {
+      "timestamp": "2026-09-25T03:03:13Z",
+      "curator": "seed_from_sources",
+      "action": "SEEDED_FROM_SOURCES",
+      "changes": "Seeded from the committed inventories in data/raw/."
+    },
+    {
+      "timestamp": "2026-09-26T07:21:24Z",
+      "curator": "codex",
+      "action": "RECORD_CURATED",
+      "changes": "Added a BIOACTIVITY causal graph for geldanamycin binding to the human HSP90-alpha N-terminal ATPase domain, grounded the protein node to UniProtKB:P07900 through PDB 1YET, and cited DOI:10.1016/S0092-8674(00)80203-2.",
+      "llm_assisted": true
+    },
+    {
+      "timestamp": "2026-10-13T10:44:52Z",
+      "curator": "seed_from_sources",
+      "action": "SEEDED_FROM_SOURCES",
+      "changes": "Seeded from the committed inventories and curation tables."
+    }
+  ]
+}
