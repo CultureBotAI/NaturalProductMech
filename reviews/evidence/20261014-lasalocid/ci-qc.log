@@ -1,0 +1,663 @@
+{
+  "conclusion": "success",
+  "headSha": "b74978c161025dc63f8f959233541aefd321707a",
+  "jobs": [
+    {
+      "completedAt": "2026-10-14T04:29:25Z",
+      "conclusion": "success",
+      "databaseId": 115679551454,
+      "name": "qc",
+      "startedAt": "2026-10-14T04:23:05Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-10-14T04:23:07Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-10-14T04:23:06Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-14T04:23:12Z",
+          "conclusion": "success",
+          "name": "Check out repository",
+          "number": 2,
+          "startedAt": "2026-10-14T04:23:07Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-14T04:23:16Z",
+          "conclusion": "success",
+          "name": "Install uv",
+          "number": 3,
+          "startedAt": "2026-10-14T04:23:12Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-14T04:23:20Z",
+          "conclusion": "success",
+          "name": "Install dependencies",
+          "number": 4,
+          "startedAt": "2026-10-14T04:23:16Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-14T04:23:34Z",
+          "conclusion": "success",
+          "name": "Validate structured review contract",
+          "number": 5,
+          "startedAt": "2026-10-14T04:23:20Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-14T04:29:22Z",
+          "conclusion": "success",
+          "name": "Run the authoritative quality gate",
+          "number": 6,
+          "startedAt": "2026-10-14T04:23:34Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-14T04:29:22Z",
+          "conclusion": "skipped",
+          "name": "Upload validation failures",
+          "number": 7,
+          "startedAt": "2026-10-14T04:29:22Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-14T04:29:22Z",
+          "conclusion": "success",
+          "name": "Post Install uv",
+          "number": 13,
+          "startedAt": "2026-10-14T04:29:22Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-14T04:29:22Z",
+          "conclusion": "success",
+          "name": "Post Check out repository",
+          "number": 14,
+          "startedAt": "2026-10-14T04:29:22Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-14T04:29:22Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 15,
+          "startedAt": "2026-10-14T04:29:22Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/CultureBotAI/NaturalProductMech/actions/runs/38511099497/job/115679551454"
+    }
+  ],
+  "status": "completed",
+  "url": "https://github.com/CultureBotAI/NaturalProductMech/actions/runs/38511099497"
+}
+qc	Set up job	﻿2026-10-14T04:23:06.2934960Z Current runner version: '2.337.0'
+qc	Set up job	2026-10-14T04:23:06.2953242Z ##[group]Runner Image Provisioner
+qc	Set up job	2026-10-14T04:23:06.2953827Z Hosted Compute Agent
+qc	Set up job	2026-10-14T04:23:06.2954191Z Version: 20261002.596
+qc	Set up job	2026-10-14T04:23:06.2954774Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+qc	Set up job	2026-10-14T04:23:06.2955232Z Build Date: 2026-10-02T22:28:27Z
+qc	Set up job	2026-10-14T04:23:06.2955715Z Worker ID: {a86915c6-670e-4193-9a91-3bdbeab55643}
+qc	Set up job	2026-10-14T04:23:06.2956160Z Region: westus3
+qc	Set up job	2026-10-14T04:23:06.2956649Z Cloud: Azure
+qc	Set up job	2026-10-14T04:23:06.2957039Z ##[endgroup]
+qc	Set up job	2026-10-14T04:23:06.2957920Z ##[group]Operating System
+qc	Set up job	2026-10-14T04:23:06.2958352Z Ubuntu
+qc	Set up job	2026-10-14T04:23:06.2958685Z 24.04.5
+qc	Set up job	2026-10-14T04:23:06.2959038Z LTS
+qc	Set up job	2026-10-14T04:23:06.2959429Z ##[endgroup]
+qc	Set up job	2026-10-14T04:23:06.2959774Z ##[group]Runner Image
+qc	Set up job	2026-10-14T04:23:06.2960184Z Image: ubuntu-24.04
+qc	Set up job	2026-10-14T04:23:06.2960551Z Version: 20261004.327.1
+qc	Set up job	2026-10-14T04:23:06.2961403Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+qc	Set up job	2026-10-14T04:23:06.2962514Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+qc	Set up job	2026-10-14T04:23:06.2963121Z ##[endgroup]
+qc	Set up job	2026-10-14T04:23:06.2963807Z ##[group]GITHUB_TOKEN Permissions
+qc	Set up job	2026-10-14T04:23:06.2965099Z Contents: read
+qc	Set up job	2026-10-14T04:23:06.2965467Z Metadata: read
+qc	Set up job	2026-10-14T04:23:06.2965810Z ##[endgroup]
+qc	Set up job	2026-10-14T04:23:06.2967273Z Secret source: Actions
+qc	Set up job	2026-10-14T04:23:06.2967882Z Cache mode: write
+qc	Set up job	2026-10-14T04:23:06.2968366Z Prepare workflow directory
+qc	Set up job	2026-10-14T04:23:06.3294647Z Prepare all required actions
+qc	Set up job	2026-10-14T04:23:06.3328140Z Getting action download info
+qc	Set up job	2026-10-14T04:23:06.6239559Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+qc	Set up job	2026-10-14T04:23:06.6994848Z Download action repository 'astral-sh/setup-uv@v5' (SHA:d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86)
+qc	Set up job	2026-10-14T04:23:07.6293151Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+qc	Set up job	2026-10-14T04:23:07.8224671Z Complete job name: qc
+qc	Check out repository	﻿2026-10-14T04:23:07.8726177Z ##[group]Run actions/checkout@v4
+qc	Check out repository	2026-10-14T04:23:07.8726878Z with:
+qc	Check out repository	2026-10-14T04:23:07.8727169Z   persist-credentials: false
+qc	Check out repository	2026-10-14T04:23:07.8727538Z   fetch-depth: 0
+qc	Check out repository	2026-10-14T04:23:07.8727886Z   repository: CultureBotAI/NaturalProductMech
+qc	Check out repository	2026-10-14T04:23:07.8733085Z   token: ***
+qc	Check out repository	2026-10-14T04:23:07.8733363Z   ssh-strict: true
+qc	Check out repository	2026-10-14T04:23:07.8733650Z   ssh-user: git
+qc	Check out repository	2026-10-14T04:23:07.8733926Z   clean: true
+qc	Check out repository	2026-10-14T04:23:07.8734232Z   sparse-checkout-cone-mode: true
+qc	Check out repository	2026-10-14T04:23:07.8734621Z   fetch-tags: false
+qc	Check out repository	2026-10-14T04:23:07.8734927Z   show-progress: true
+qc	Check out repository	2026-10-14T04:23:07.8735237Z   lfs: false
+qc	Check out repository	2026-10-14T04:23:07.8735515Z   submodules: false
+qc	Check out repository	2026-10-14T04:23:07.8735825Z   set-safe-directory: true
+qc	Check out repository	2026-10-14T04:23:07.8736190Z   allow-unsafe-pr-checkout: false
+qc	Check out repository	2026-10-14T04:23:07.8736717Z env:
+qc	Check out repository	2026-10-14T04:23:07.8737088Z   RECORD_REVIEW_BASE: 64c095104e5352fb88ad3177c47995ccfd4275d5
+qc	Check out repository	2026-10-14T04:23:07.8737625Z ##[endgroup]
+qc	Check out repository	2026-10-14T04:23:07.9441093Z Syncing repository: CultureBotAI/NaturalProductMech
+qc	Check out repository	2026-10-14T04:23:07.9443714Z ##[group]Getting Git version info
+qc	Check out repository	2026-10-14T04:23:07.9444868Z Working directory is '/home/runner/work/NaturalProductMech/NaturalProductMech'
+qc	Check out repository	2026-10-14T04:23:07.9446799Z [command]/usr/bin/git version
+qc	Check out repository	2026-10-14T04:23:07.9510599Z git version 2.55.0
+qc	Check out repository	2026-10-14T04:23:07.9530458Z ##[endgroup]
+qc	Check out repository	2026-10-14T04:23:07.9542742Z Temporarily overriding HOME='/home/runner/work/_temp/7d5a5c0f-b49e-4b8f-902b-cee5b2e82f97' before making global git config changes
+qc	Check out repository	2026-10-14T04:23:07.9545598Z Adding repository directory to the temporary git global config as a safe directory
+qc	Check out repository	2026-10-14T04:23:07.9547913Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/NaturalProductMech/NaturalProductMech
+qc	Check out repository	2026-10-14T04:23:07.9597655Z Deleting the contents of '/home/runner/work/NaturalProductMech/NaturalProductMech'
+qc	Check out repository	2026-10-14T04:23:07.9601059Z ##[group]Initializing the repository
+qc	Check out repository	2026-10-14T04:23:07.9604059Z [command]/usr/bin/git init /home/runner/work/NaturalProductMech/NaturalProductMech
+qc	Check out repository	2026-10-14T04:23:07.9718741Z hint: Using 'master' as the name for the initial branch. This default branch name
+qc	Check out repository	2026-10-14T04:23:07.9722115Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+qc	Check out repository	2026-10-14T04:23:07.9723902Z hint: to use in all of your new repositories, which will suppress this warning,
+qc	Check out repository	2026-10-14T04:23:07.9725299Z hint: call:
+qc	Check out repository	2026-10-14T04:23:07.9725969Z hint:
+qc	Check out repository	2026-10-14T04:23:07.9726937Z hint: 	git config --global init.defaultBranch <name>
+qc	Check out repository	2026-10-14T04:23:07.9727965Z hint:
+qc	Check out repository	2026-10-14T04:23:07.9728769Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+qc	Check out repository	2026-10-14T04:23:07.9729876Z hint: 'development'. The just-created branch can be renamed via this command:
+qc	Check out repository	2026-10-14T04:23:07.9730737Z hint:
+qc	Check out repository	2026-10-14T04:23:07.9731264Z hint: 	git branch -m <name>
+qc	Check out repository	2026-10-14T04:23:07.9732124Z hint:
+qc	Check out repository	2026-10-14T04:23:07.9733232Z hint: Disable this message with "git config set advice.defaultBranchName false"
+qc	Check out repository	2026-10-14T04:23:07.9735511Z Initialized empty Git repository in /home/runner/work/NaturalProductMech/NaturalProductMech/.git/
+qc	Check out repository	2026-10-14T04:23:07.9739031Z [command]/usr/bin/git remote add origin https://github.com/CultureBotAI/NaturalProductMech
+qc	Check out repository	2026-10-14T04:23:07.9778817Z ##[endgroup]
+qc	Check out repository	2026-10-14T04:23:07.9779706Z ##[group]Disabling automatic garbage collection
+qc	Check out repository	2026-10-14T04:23:07.9790180Z [command]/usr/bin/git config --local gc.auto 0
+qc	Check out repository	2026-10-14T04:23:07.9818276Z ##[endgroup]
+qc	Check out repository	2026-10-14T04:23:07.9819232Z ##[group]Setting up auth
+qc	Check out repository	2026-10-14T04:23:07.9825810Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+qc	Check out repository	2026-10-14T04:23:07.9862361Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+qc	Check out repository	2026-10-14T04:23:08.0183306Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+qc	Check out repository	2026-10-14T04:23:08.0215130Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+qc	Check out repository	2026-10-14T04:23:08.0408241Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+qc	Check out repository	2026-10-14T04:23:08.0442104Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+qc	Check out repository	2026-10-14T04:23:08.0633499Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+qc	Check out repository	2026-10-14T04:23:08.0669882Z ##[endgroup]
+qc	Check out repository	2026-10-14T04:23:08.0670701Z ##[group]Fetching the repository
+qc	Check out repository	2026-10-14T04:23:08.0677918Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +0595179f60864f018f82dbdd63164657bd723b1e:refs/remotes/pull/974/merge
+qc	Check out repository	2026-10-14T04:23:11.6921579Z From https://github.com/CultureBotAI/NaturalProductMech
+qc	Check out repository	2026-10-14T04:23:11.6923447Z  * [new branch]          chore/governed-final-59aead-20261007     -> origin/chore/governed-final-59aead-20261007
+qc	Check out repository	2026-10-14T04:23:11.6924398Z  * [new branch]          cross-mech-pathway-links                 -> origin/cross-mech-pathway-links
+qc	Check out repository	2026-10-14T04:23:11.6925193Z  * [new branch]          feat/evidence-assessment                 -> origin/feat/evidence-assessment
+qc	Check out repository	2026-10-14T04:23:11.6925975Z  * [new branch]          feat/fleet-text-map-inputs               -> origin/feat/fleet-text-map-inputs
+qc	Check out repository	2026-10-14T04:23:11.6926830Z  * [new branch]          fix/graph-visualizations                 -> origin/fix/graph-visualizations
+qc	Check out repository	2026-10-14T04:23:11.6927456Z  * [new branch]          main                                     -> origin/main
+qc	Check out repository	2026-10-14T04:23:11.6928248Z  * [new branch]          review/lasalocid-records-20261014        -> origin/review/lasalocid-records-20261014
+qc	Check out repository	2026-10-14T04:23:11.6929393Z  * [new tag]             review-base/bacilysin-xref-20261013      -> review-base/bacilysin-xref-20261013
+qc	Check out repository	2026-10-14T04:23:11.6930207Z  * [new tag]             review-base/bryostatin-20261013          -> review-base/bryostatin-20261013
+qc	Check out repository	2026-10-14T04:23:11.6930965Z  * [new tag]             review-base/compound3-remediation-20261013 -> review-base/compound3-remediation-20261013
+qc	Check out repository	2026-10-14T04:23:11.6931676Z  * [new tag]             review-base/compound5-20261014           -> review-base/compound5-20261014
+qc	Check out repository	2026-10-14T04:23:11.6932583Z  * [new tag]             review-base/ferrichrome-remediation-20261013 -> review-base/ferrichrome-remediation-20261013
+qc	Check out repository	2026-10-14T04:23:11.6933428Z  * [new tag]             review-base/fogacin-20261014             -> review-base/fogacin-20261014
+qc	Check out repository	2026-10-14T04:23:11.6934358Z  * [new tag]             review-base/geldanamycin-20261014        -> review-base/geldanamycin-20261014
+qc	Check out repository	2026-10-14T04:23:11.6935328Z  * [new tag]             review-base/gentamicin-20261013          -> review-base/gentamicin-20261013
+qc	Check out repository	2026-10-14T04:23:11.6936302Z  * [new tag]             review-base/myxochromide-remediation-20261013 -> review-base/myxochromide-remediation-20261013
+qc	Check out repository	2026-10-14T04:23:11.6937650Z  * [new tag]             review-base/vibrioferrin-remediation-20261013 -> review-base/vibrioferrin-remediation-20261013
+qc	Check out repository	2026-10-14T04:23:11.6938480Z  * [new ref]             0595179f60864f018f82dbdd63164657bd723b1e -> pull/974/merge
+qc	Check out repository	2026-10-14T04:23:11.6940589Z ##[endgroup]
+qc	Check out repository	2026-10-14T04:23:11.6941304Z ##[group]Determining the checkout info
+qc	Check out repository	2026-10-14T04:23:11.6942034Z ##[endgroup]
+qc	Check out repository	2026-10-14T04:23:11.6942550Z [command]/usr/bin/git sparse-checkout disable
+qc	Check out repository	2026-10-14T04:23:11.7102028Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+qc	Check out repository	2026-10-14T04:23:11.7131950Z ##[group]Checking out the ref
+qc	Check out repository	2026-10-14T04:23:11.7134729Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/974/merge
+qc	Check out repository	2026-10-14T04:23:12.3075619Z Note: switching to 'refs/remotes/pull/974/merge'.
+qc	Check out repository	2026-10-14T04:23:12.3076194Z 
+qc	Check out repository	2026-10-14T04:23:12.3076669Z You are in 'detached HEAD' state. You can look around, make experimental
+qc	Check out repository	2026-10-14T04:23:12.3077767Z changes and commit them, and you can discard any commits you make in this
+qc	Check out repository	2026-10-14T04:23:12.3078279Z state without impacting any branches by switching back to a branch.
+qc	Check out repository	2026-10-14T04:23:12.3079653Z 
+qc	Check out repository	2026-10-14T04:23:12.3079848Z If you want to create a new branch to retain commits you create, you may
+qc	Check out repository	2026-10-14T04:23:12.3080566Z do so (now or later) by using -c with the switch command. Example:
+qc	Check out repository	2026-10-14T04:23:12.3080821Z 
+qc	Check out repository	2026-10-14T04:23:12.3081010Z   git switch -c <new-branch-name>
+qc	Check out repository	2026-10-14T04:23:12.3081191Z 
+qc	Check out repository	2026-10-14T04:23:12.3142946Z Or undo this operation with:
+qc	Check out repository	2026-10-14T04:23:12.3143275Z 
+qc	Check out repository	2026-10-14T04:23:12.3143369Z   git switch -
+qc	Check out repository	2026-10-14T04:23:12.3143492Z 
+qc	Check out repository	2026-10-14T04:23:12.3143733Z Turn off this advice by setting config variable advice.detachedHead to false
+qc	Check out repository	2026-10-14T04:23:12.3144023Z 
+qc	Check out repository	2026-10-14T04:23:12.3144253Z HEAD is now at 0595179f6 Merge b74978c161025dc63f8f959233541aefd321707a into 64c095104e5352fb88ad3177c47995ccfd4275d5
+qc	Check out repository	2026-10-14T04:23:12.3145760Z ##[endgroup]
+qc	Check out repository	2026-10-14T04:23:12.3179170Z [command]/usr/bin/git log -1 --format=%H
+qc	Check out repository	2026-10-14T04:23:12.3203688Z 0595179f60864f018f82dbdd63164657bd723b1e
+qc	Check out repository	2026-10-14T04:23:12.3210905Z ##[group]Removing auth
+qc	Check out repository	2026-10-14T04:23:12.3214157Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+qc	Check out repository	2026-10-14T04:23:12.3241789Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+qc	Check out repository	2026-10-14T04:23:12.3429290Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+qc	Check out repository	2026-10-14T04:23:12.3453289Z http.https://github.com/.extraheader
+qc	Check out repository	2026-10-14T04:23:12.3458037Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+qc	Check out repository	2026-10-14T04:23:12.3486344Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+qc	Check out repository	2026-10-14T04:23:12.3669304Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+qc	Check out repository	2026-10-14T04:23:12.3695965Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+qc	Check out repository	2026-10-14T04:23:12.3880878Z ##[endgroup]
+qc	Install uv	﻿2026-10-14T04:23:12.4069856Z ##[group]Run astral-sh/setup-uv@v5
+qc	Install uv	2026-10-14T04:23:12.4070039Z with:
+qc	Install uv	2026-10-14T04:23:12.4070161Z   python-version: 3.13
+qc	Install uv	2026-10-14T04:23:12.4070303Z   enable-cache: true
+qc	Install uv	2026-10-14T04:23:12.4071825Z   github-token: ***
+qc	Install uv	2026-10-14T04:23:12.4071989Z   cache-dependency-glob: **/uv.lock
+qc	Install uv	**/requirements*.txt
+qc	Install uv	
+qc	Install uv	2026-10-14T04:23:12.4072181Z   prune-cache: true
+qc	Install uv	2026-10-14T04:23:12.4072314Z   ignore-nothing-to-cache: false
+qc	Install uv	2026-10-14T04:23:12.4072470Z   ignore-empty-workdir: false
+qc	Install uv	2026-10-14T04:23:12.4072623Z env:
+qc	Install uv	2026-10-14T04:23:12.4072776Z   RECORD_REVIEW_BASE: 64c095104e5352fb88ad3177c47995ccfd4275d5
+qc	Install uv	2026-10-14T04:23:12.4072961Z ##[endgroup]
+qc	Install uv	2026-10-14T04:23:12.5205893Z (node:2200) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+qc	Install uv	2026-10-14T04:23:12.5206716Z (Use `node --trace-deprecation ...` to show where the warning was created)
+qc	Install uv	2026-10-14T04:23:12.8576851Z Downloading uv from "https://github.com/astral-sh/uv/releases/download/0.13.0/uv-x86_64-unknown-linux-gnu.tar.gz" ...
+qc	Install uv	2026-10-14T04:23:13.3038039Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/2a5d7726-9145-4a9e-87d9-a3b7cd4e5e5d -f /home/runner/work/_temp/76fe9768-964d-46bb-b49a-23d0fe2ba478
+qc	Install uv	2026-10-14T04:23:13.6660670Z Added /home/runner/.local/bin to the path
+qc	Install uv	2026-10-14T04:23:13.6662608Z Added /opt/hostedtoolcache/uv/0.13.0/x86_64 to the path
+qc	Install uv	2026-10-14T04:23:13.6663818Z Set UV_PYTHON to 3.13
+qc	Install uv	2026-10-14T04:23:13.6664036Z Activating python venv...
+qc	Install uv	2026-10-14T04:23:15.3085803Z Set UV_CACHE_DIR to /home/runner/work/_temp/setup-uv-cache
+qc	Install uv	2026-10-14T04:23:15.3086100Z Successfully installed uv version 0.13.0
+qc	Install uv	2026-10-14T04:23:15.3086344Z Searching files using cache dependency glob: **/uv.lock,**/requirements*.txt
+qc	Install uv	2026-10-14T04:23:15.6648182Z /home/runner/work/NaturalProductMech/NaturalProductMech/uv.lock
+qc	Install uv	2026-10-14T04:23:15.6668020Z Found 1 files to hash.
+qc	Install uv	2026-10-14T04:23:15.6722279Z Trying to restore uv cache from GitHub Actions cache with key: setup-uv-1-x86_64-unknown-linux-gnu-3.13-f046a321e2cc523d1869496761dda2d477b4d94f5e4f659523785be127b9a087
+qc	Install uv	2026-10-14T04:23:15.8650999Z Cache hit for: setup-uv-1-x86_64-unknown-linux-gnu-3.13-f046a321e2cc523d1869496761dda2d477b4d94f5e4f659523785be127b9a087
+qc	Install uv	2026-10-14T04:23:15.8723842Z (node:2200) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+qc	Install uv	2026-10-14T04:23:16.4749515Z Received 480407 of 480407 (100.0%), 1.2 MBs/sec
+qc	Install uv	2026-10-14T04:23:16.4749832Z Cache Size: ~0 MB (480407 B)
+qc	Install uv	2026-10-14T04:23:16.4766642Z [command]/usr/bin/tar -xf /home/runner/work/_temp/58768be3-eb39-404b-9f91-50e1887de61f/cache.tzst -P -C /home/runner/work/NaturalProductMech/NaturalProductMech --use-compress-program unzstd
+qc	Install uv	2026-10-14T04:23:16.4852519Z Cache restored successfully
+qc	Install uv	2026-10-14T04:23:16.4857552Z uv cache restored from GitHub Actions cache with key: setup-uv-1-x86_64-unknown-linux-gnu-3.13-f046a321e2cc523d1869496761dda2d477b4d94f5e4f659523785be127b9a087
+qc	Install dependencies	﻿2026-10-14T04:23:16.4997568Z ##[group]Run uv sync --locked --extra dev
+qc	Install dependencies	2026-10-14T04:23:16.4997911Z ^[[36;1muv sync --locked --extra dev^[[0m
+qc	Install dependencies	2026-10-14T04:23:16.5231367Z shell: /usr/bin/bash -e {0}
+qc	Install dependencies	2026-10-14T04:23:16.5231592Z env:
+qc	Install dependencies	2026-10-14T04:23:16.5231780Z   RECORD_REVIEW_BASE: 64c095104e5352fb88ad3177c47995ccfd4275d5
+qc	Install dependencies	2026-10-14T04:23:16.5231986Z   UV_PYTHON: 3.13
+qc	Install dependencies	2026-10-14T04:23:16.5232188Z   VIRTUAL_ENV: /home/runner/work/NaturalProductMech/NaturalProductMech/.venv
+qc	Install dependencies	2026-10-14T04:23:16.5232640Z   UV_CACHE_DIR: /home/runner/work/_temp/setup-uv-cache
+qc	Install dependencies	2026-10-14T04:23:16.5232819Z ##[endgroup]
+qc	Install dependencies	2026-10-14T04:23:16.6398869Z Resolved 171 packages in 1ms
+qc	Install dependencies	2026-10-14T04:23:16.6589003Z    Building naturalproductmech @ file:///home/runner/work/NaturalProductMech/NaturalProductMech
+qc	Install dependencies	2026-10-14T04:23:16.7093917Z Downloading openai (1.7MiB)
+qc	Install dependencies	2026-10-14T04:23:16.7097266Z Downloading numpy (15.8MiB)
+qc	Install dependencies	2026-10-14T04:23:16.7100211Z Downloading babel (9.7MiB)
+qc	Install dependencies	2026-10-14T04:23:16.7101136Z Downloading pygments (1.2MiB)
+qc	Install dependencies	2026-10-14T04:23:16.7102016Z Downloading networkx (2.0MiB)
+qc	Install dependencies	2026-10-14T04:23:16.7108775Z Downloading setuptools (1.0MiB)
+qc	Install dependencies	2026-10-14T04:23:16.7112156Z Downloading fastobo (2.2MiB)
+qc	Install dependencies	2026-10-14T04:23:16.7112949Z Downloading pandas (10.4MiB)
+qc	Install dependencies	2026-10-14T04:23:16.7114757Z Downloading lxml (5.0MiB)
+qc	Install dependencies	2026-10-14T04:23:16.7116140Z Downloading pip (1.7MiB)
+qc	Install dependencies	2026-10-14T04:23:16.7120587Z Downloading ruff (9.8MiB)
+qc	Install dependencies	2026-10-14T04:23:16.7132788Z Downloading sqlalchemy (3.2MiB)
+qc	Install dependencies	2026-10-14T04:23:16.7348921Z Downloading py-horned-owl (2.2MiB)
+qc	Install dependencies	2026-10-14T04:23:16.7349398Z Downloading pydantic-core (2.0MiB)
+qc	Install dependencies	2026-10-14T04:23:16.7352331Z Downloading sphinx (3.7MiB)
+qc	Install dependencies	2026-10-14T04:23:16.8153489Z    Building antlr4-python3-runtime==4.9.3
+qc	Install dependencies	2026-10-14T04:23:17.0878638Z    Building cfgraph==0.2.1
+qc	Install dependencies	2026-10-14T04:23:17.0888102Z    Building pysolr==3.11.0
+qc	Install dependencies	2026-10-14T04:23:17.0888933Z    Building pytest-logging==2015.11.4
+qc	Install dependencies	2026-10-14T04:23:17.0945407Z    Building ratelimit==2.2.1
+qc	Install dependencies	2026-10-14T04:23:17.3167810Z  Downloaded pydantic-core
+qc	Install dependencies	2026-10-14T04:23:17.4260308Z  Downloaded setuptools
+qc	Install dependencies	2026-10-14T04:23:17.4826442Z  Downloaded py-horned-owl
+qc	Install dependencies	2026-10-14T04:23:17.4848677Z  Downloaded pygments
+qc	Install dependencies	2026-10-14T04:23:17.5057168Z  Downloaded fastobo
+qc	Install dependencies	2026-10-14T04:23:17.5486257Z  Downloaded pip
+qc	Install dependencies	2026-10-14T04:23:17.5523018Z  Downloaded networkx
+qc	Install dependencies	2026-10-14T04:23:17.5941960Z  Downloaded openai
+qc	Install dependencies	2026-10-14T04:23:17.6164645Z  Downloaded sqlalchemy
+qc	Install dependencies	2026-10-14T04:23:17.6957716Z  Downloaded lxml
+qc	Install dependencies	2026-10-14T04:23:17.6987021Z  Downloaded sphinx
+qc	Install dependencies	2026-10-14T04:23:17.7357664Z  Downloaded ruff
+qc	Install dependencies	2026-10-14T04:23:17.7946724Z  Downloaded babel
+qc	Install dependencies	2026-10-14T04:23:17.7968274Z  Downloaded numpy
+qc	Install dependencies	2026-10-14T04:23:17.8238413Z  Downloaded pandas
+qc	Install dependencies	2026-10-14T04:23:19.0347794Z       Built naturalproductmech @ file:///home/runner/work/NaturalProductMech/NaturalProductMech
+qc	Install dependencies	2026-10-14T04:23:19.2037791Z       Built antlr4-python3-runtime==4.9.3
+qc	Install dependencies	2026-10-14T04:23:19.3218768Z       Built cfgraph==0.2.1
+qc	Install dependencies	2026-10-14T04:23:19.3907984Z       Built pytest-logging==2015.11.4
+qc	Install dependencies	2026-10-14T04:23:19.3924480Z       Built ratelimit==2.2.1
+qc	Install dependencies	2026-10-14T04:23:19.4910990Z       Built pysolr==3.11.0
+qc	Install dependencies	2026-10-14T04:23:19.4921101Z Prepared 144 packages in 2.85s
+qc	Install dependencies	2026-10-14T04:23:20.4388551Z Installed 144 packages in 946ms
+qc	Install dependencies	2026-10-14T04:23:20.4388920Z  + airium==0.2.7
+qc	Install dependencies	2026-10-14T04:23:20.4389111Z  + alabaster==1.0.0
+qc	Install dependencies	2026-10-14T04:23:20.4389629Z  + annotated-types==0.8.0
+qc	Install dependencies	2026-10-14T04:23:20.4406906Z  + antlr4-python3-runtime==4.9.3
+qc	Install dependencies	2026-10-14T04:23:20.4407206Z  + anyio==4.15.1
+qc	Install dependencies	2026-10-14T04:23:20.4407344Z  + appdirs==1.4.4
+qc	Install dependencies	2026-10-14T04:23:20.4407481Z  + arrow==1.4.0
+qc	Install dependencies	2026-10-14T04:23:20.4407606Z  + attrs==26.1.0
+qc	Install dependencies	2026-10-14T04:23:20.4407727Z  + babel==2.18.0
+qc	Install dependencies	2026-10-14T04:23:20.4407857Z  + backports-zstd==1.7.0
+qc	Install dependencies	2026-10-14T04:23:20.4408005Z  + cattrs==26.2.0
+qc	Install dependencies	2026-10-14T04:23:20.4408135Z  + certifi==2026.7.22
+qc	Install dependencies	2026-10-14T04:23:20.4408264Z  + cfgraph==0.2.1
+qc	Install dependencies	2026-10-14T04:23:20.4408391Z  + chardet==5.2.0
+qc	Install dependencies	2026-10-14T04:23:20.4408526Z  + charset-normalizer==3.5.1
+qc	Install dependencies	2026-10-14T04:23:20.4408680Z  + class-resolver==0.7.1
+qc	Install dependencies	2026-10-14T04:23:20.4408809Z  + click==8.5.0
+qc	Install dependencies	2026-10-14T04:23:20.4409225Z  + click-default-group==1.2.4
+qc	Install dependencies	2026-10-14T04:23:20.4409377Z  + condense-json==1.1
+qc	Install dependencies	2026-10-14T04:23:20.4409511Z  + curies==0.15.0
+qc	Install dependencies	2026-10-14T04:23:20.4409633Z  + defusedxml==0.7.1
+qc	Install dependencies	2026-10-14T04:23:20.4409762Z  + deprecated==1.3.1
+qc	Install dependencies	2026-10-14T04:23:20.4409893Z  + deprecation==2.1.0
+qc	Install dependencies	2026-10-14T04:23:20.4410024Z  + docutils==0.22.4
+qc	Install dependencies	2026-10-14T04:23:20.4410149Z  + et-xmlfile==2.0.0
+qc	Install dependencies	2026-10-14T04:23:20.4410505Z  + eutils==0.6.1
+qc	Install dependencies	2026-10-14T04:23:20.4410812Z  + fastobo==0.14.1
+qc	Install dependencies	2026-10-14T04:23:20.4411045Z  + fqdn==1.5.1
+qc	Install dependencies	2026-10-14T04:23:20.4411281Z  + graphviz==0.21
+qc	Install dependencies	2026-10-14T04:23:20.4411477Z  + greenlet==3.5.5
+qc	Install dependencies	2026-10-14T04:23:20.4411664Z  + h11==0.16.0
+qc	Install dependencies	2026-10-14T04:23:20.4411845Z  + hbreader==0.9.1
+qc	Install dependencies	2026-10-14T04:23:20.4412041Z  + httpcore2==2.12.0
+qc	Install dependencies	2026-10-14T04:23:20.4412238Z  + httpx2==2.12.0
+qc	Install dependencies	2026-10-14T04:23:20.4412418Z  + idna==3.19
+qc	Install dependencies	2026-10-14T04:23:20.4412602Z  + ijson==3.5.1
+qc	Install dependencies	2026-10-14T04:23:20.4412791Z  + imagesize==2.0.1
+qc	Install dependencies	2026-10-14T04:23:20.4412983Z  + iniconfig==2.3.0
+qc	Install dependencies	2026-10-14T04:23:20.4413173Z  + isodate==0.7.2
+qc	Install dependencies	2026-10-14T04:23:20.4413366Z  + isoduration==20.11.0
+qc	Install dependencies	2026-10-14T04:23:20.4413563Z  + jinja2==3.1.6
+qc	Install dependencies	2026-10-14T04:23:20.4413748Z  + jiter==0.16.0
+qc	Install dependencies	2026-10-14T04:23:20.4413933Z  + json-flattener==0.1.9
+qc	Install dependencies	2026-10-14T04:23:20.4414140Z  + jsonasobj==1.3.1
+qc	Install dependencies	2026-10-14T04:23:20.4414339Z  + jsonasobj2==1.0.4
+qc	Install dependencies	2026-10-14T04:23:20.4414525Z  + jsonlines==4.0.0
+qc	Install dependencies	2026-10-14T04:23:20.4414712Z  + jsonpointer==3.1.1
+qc	Install dependencies	2026-10-14T04:23:20.4414936Z  + jsonschema==4.26.0
+qc	Install dependencies	2026-10-14T04:23:20.4415162Z  + jsonschema-specifications==2025.9.1
+qc	Install dependencies	2026-10-14T04:23:20.4415418Z  + kgcl-rdflib==0.5.0
+qc	Install dependencies	2026-10-14T04:23:20.4415618Z  + kgcl-schema==0.7.0
+qc	Install dependencies	2026-10-14T04:23:20.4415863Z  + lark==1.3.1
+qc	Install dependencies	2026-10-14T04:23:20.4416076Z  + linkml==1.11.1
+qc	Install dependencies	2026-10-14T04:23:20.4416300Z  + linkml-renderer==0.3.1
+qc	Install dependencies	2026-10-14T04:23:20.4416704Z  + linkml-runtime==1.11.1
+qc	Install dependencies	2026-10-14T04:23:20.4417007Z  + llm==0.35
+qc	Install dependencies	2026-10-14T04:23:20.4417221Z  + lxml==6.1.3
+qc	Install dependencies	2026-10-14T04:23:20.4417487Z  + markupsafe==3.0.3
+qc	Install dependencies	2026-10-14T04:23:20.4417704Z  + more-click==0.1.3
+qc	Install dependencies	2026-10-14T04:23:20.4418122Z  + naturalproductmech==0.1.0 (from file:///home/runner/work/NaturalProductMech/NaturalProductMech)
+qc	Install dependencies	2026-10-14T04:23:20.4418544Z  + ndex2==3.12.0
+qc	Install dependencies	2026-10-14T04:23:20.4418732Z  + networkx==3.6.1
+qc	Install dependencies	2026-10-14T04:23:20.4418918Z  + numpy==2.2.6
+qc	Install dependencies	2026-10-14T04:23:20.4419099Z  + oaklib==0.7.4
+qc	Install dependencies	2026-10-14T04:23:20.4419308Z  + ols-client==0.2.1
+qc	Install dependencies	2026-10-14T04:23:20.4419603Z  + ontoportal-client==0.0.9
+qc	Install dependencies	2026-10-14T04:23:20.4419820Z  + openai==3.11.0
+qc	Install dependencies	2026-10-14T04:23:20.4420013Z  + openpyxl==3.1.5
+qc	Install dependencies	2026-10-14T04:23:20.4420204Z  + packaging==26.3
+qc	Install dependencies	2026-10-14T04:23:20.4420388Z  + pandas==3.0.5
+qc	Install dependencies	2026-10-14T04:23:20.4420570Z  + parse==1.22.1
+qc	Install dependencies	2026-10-14T04:23:20.4420752Z  + pip==26.2.1
+qc	Install dependencies	2026-10-14T04:23:20.4420946Z  + platformdirs==4.11.8
+qc	Install dependencies	2026-10-14T04:23:20.4421150Z  + pluggy==1.6.0
+qc	Install dependencies	2026-10-14T04:23:20.4421344Z  + prefixcommons==0.1.12
+qc	Install dependencies	2026-10-14T04:23:20.4421556Z  + prefixmaps==0.2.6
+qc	Install dependencies	2026-10-14T04:23:20.4421751Z  + pronto==2.7.3
+qc	Install dependencies	2026-10-14T04:23:20.4421939Z  + puremagic==2.2.0
+qc	Install dependencies	2026-10-14T04:23:20.4422143Z  + py-horned-owl==1.4.1
+qc	Install dependencies	2026-10-14T04:23:20.4422360Z  + pydantic==2.13.5
+qc	Install dependencies	2026-10-14T04:23:20.4422567Z  + pydantic-core==2.46.5
+qc	Install dependencies	2026-10-14T04:23:20.4422777Z  + pygments==2.21.0
+qc	Install dependencies	2026-10-14T04:23:20.4422967Z  + pyjsg==0.12.4
+qc	Install dependencies	2026-10-14T04:23:20.4423154Z  + pyparsing==3.3.2
+qc	Install dependencies	2026-10-14T04:23:20.4423343Z  + pyshex==0.8.1
+qc	Install dependencies	2026-10-14T04:23:20.4423532Z  + pyshexc==0.9.1
+qc	Install dependencies	2026-10-14T04:23:20.4423723Z  + pysolr==3.11.0
+qc	Install dependencies	2026-10-14T04:23:20.4423932Z  + pystow==0.9.3
+qc	Install dependencies	2026-10-14T04:23:20.4424117Z  + pytest==9.1.1
+qc	Install dependencies	2026-10-14T04:23:20.4424309Z  + pytest-logging==2015.11.4
+qc	Install dependencies	2026-10-14T04:23:20.4424543Z  + python-dateutil==2.9.0.post0
+qc	Install dependencies	2026-10-14T04:23:20.4424774Z  + python-ulid==4.0.1
+qc	Install dependencies	2026-10-14T04:23:20.4424970Z  + pyyaml==6.0.3
+qc	Install dependencies	2026-10-14T04:23:20.4425153Z  + ratelimit==2.2.1
+qc	Install dependencies	2026-10-14T04:23:20.4425335Z  + rdflib==7.6.0
+qc	Install dependencies	2026-10-14T04:23:20.4425518Z  + rdflib-jsonld==0.6.1
+qc	Install dependencies	2026-10-14T04:23:20.4425726Z  + rdflib-shim==1.0.3
+qc	Install dependencies	2026-10-14T04:23:20.4425928Z  + referencing==0.37.0
+qc	Install dependencies	2026-10-14T04:23:20.4426125Z  + regex==2026.9.10
+qc	Install dependencies	2026-10-14T04:23:20.4426744Z  + requests==2.34.2
+qc	Install dependencies	2026-10-14T04:23:20.4426927Z  + requests-cache==1.3.3
+qc	Install dependencies	2026-10-14T04:23:20.4427064Z  + requests-toolbelt==1.0.0
+qc	Install dependencies	2026-10-14T04:23:20.4427208Z  + rfc3339-validator==0.1.4
+qc	Install dependencies	2026-10-14T04:23:20.4427338Z  + rfc3987==1.3.8
+qc	Install dependencies	2026-10-14T04:23:20.4427462Z  + roman-numerals==4.1.0
+qc	Install dependencies	2026-10-14T04:23:20.4427599Z  + rpds-py==2026.6.3
+qc	Install dependencies	2026-10-14T04:23:20.4427840Z  + ruamel-yaml==0.19.1
+qc	Install dependencies	2026-10-14T04:23:20.4427964Z  + ruff==0.16.6
+qc	Install dependencies	2026-10-14T04:23:20.4428078Z  + semsql==0.4.0
+qc	Install dependencies	2026-10-14T04:23:20.4428197Z  + setuptools==81.0.0
+qc	Install dependencies	2026-10-14T04:23:20.4428322Z  + shexjsg==0.9.0
+qc	Install dependencies	2026-10-14T04:23:20.4428434Z  + six==1.17.0
+qc	Install dependencies	2026-10-14T04:23:20.4428547Z  + sniffio==1.3.1
+qc	Install dependencies	2026-10-14T04:23:20.4428670Z  + snowballstemmer==3.1.1
+qc	Install dependencies	2026-10-14T04:23:20.4428804Z  + sparqlslurper==0.5.1
+qc	Install dependencies	2026-10-14T04:23:20.4428933Z  + sparqlwrapper==2.0.0
+qc	Install dependencies	2026-10-14T04:23:20.4429057Z  + sphinx==9.1.0
+qc	Install dependencies	2026-10-14T04:23:20.4429174Z  + sphinx-click==6.2.0
+qc	Install dependencies	2026-10-14T04:23:20.4429318Z  + sphinxcontrib-applehelp==2.0.0
+qc	Install dependencies	2026-10-14T04:23:20.4429488Z  + sphinxcontrib-devhelp==2.0.0
+qc	Install dependencies	2026-10-14T04:23:20.4429645Z  + sphinxcontrib-htmlhelp==2.1.0
+qc	Install dependencies	2026-10-14T04:23:20.4429799Z  + sphinxcontrib-jsmath==1.0.1
+qc	Install dependencies	2026-10-14T04:23:20.4429951Z  + sphinxcontrib-qthelp==2.0.0
+qc	Install dependencies	2026-10-14T04:23:20.4430109Z  + sphinxcontrib-serializinghtml==2.0.0
+qc	Install dependencies	2026-10-14T04:23:20.4430270Z  + sqlalchemy==2.0.52
+qc	Install dependencies	2026-10-14T04:23:20.4430406Z  + sqlalchemy-utils==0.38.3
+qc	Install dependencies	2026-10-14T04:23:20.4430545Z  + sqlite-fts4==1.0.3
+qc	Install dependencies	2026-10-14T04:23:20.4430671Z  + sqlite-utils==4.2.1
+qc	Install dependencies	2026-10-14T04:23:20.4430795Z  + sssom==0.4.17
+qc	Install dependencies	2026-10-14T04:23:20.4430922Z  + sssom-schema==1.0.0
+qc	Install dependencies	2026-10-14T04:23:20.4431044Z  + tabulate==0.10.0
+qc	Install dependencies	2026-10-14T04:23:20.4431164Z  + tenacity==9.1.4
+qc	Install dependencies	2026-10-14T04:23:20.4431278Z  + tqdm==4.70.0
+qc	Install dependencies	2026-10-14T04:23:20.4431394Z  + truststore==0.10.4
+qc	Install dependencies	2026-10-14T04:23:20.4431523Z  + typing-extensions==4.16.0
+qc	Install dependencies	2026-10-14T04:23:20.4431671Z  + typing-inspection==0.4.4
+qc	Install dependencies	2026-10-14T04:23:20.4431805Z  + tzdata==2026.3
+qc	Install dependencies	2026-10-14T04:23:20.4431923Z  + uri-template==1.3.0
+qc	Install dependencies	2026-10-14T04:23:20.4432055Z  + url-normalize==3.0.0
+qc	Install dependencies	2026-10-14T04:23:20.4432183Z  + urllib3==2.7.0
+qc	Install dependencies	2026-10-14T04:23:20.4432300Z  + validators==0.35.0
+qc	Install dependencies	2026-10-14T04:23:20.4432421Z  + watchdog==6.0.0
+qc	Install dependencies	2026-10-14T04:23:20.4432538Z  + webcolors==25.10.0
+qc	Install dependencies	2026-10-14T04:23:20.4432655Z  + wrapt==2.4.0
+qc	Validate structured review contract	﻿2026-10-14T04:23:20.5831958Z ##[group]Run test -n "$RECORD_REVIEW_BASE"
+qc	Validate structured review contract	2026-10-14T04:23:20.5832269Z ^[[36;1mtest -n "$RECORD_REVIEW_BASE"^[[0m
+qc	Validate structured review contract	2026-10-14T04:23:20.5832463Z ^[[36;1mgit cat-file -e "$RECORD_REVIEW_BASE^{commit}"^[[0m
+qc	Validate structured review contract	2026-10-14T04:23:20.5832691Z ^[[36;1muv run pytest -q tests/test_record_review_contract.py^[[0m
+qc	Validate structured review contract	2026-10-14T04:23:20.5888623Z shell: /usr/bin/bash -e {0}
+qc	Validate structured review contract	2026-10-14T04:23:20.5888777Z env:
+qc	Validate structured review contract	2026-10-14T04:23:20.5888937Z   RECORD_REVIEW_BASE: 64c095104e5352fb88ad3177c47995ccfd4275d5
+qc	Validate structured review contract	2026-10-14T04:23:20.5889128Z   UV_PYTHON: 3.13
+qc	Validate structured review contract	2026-10-14T04:23:20.5889329Z   VIRTUAL_ENV: /home/runner/work/NaturalProductMech/NaturalProductMech/.venv
+qc	Validate structured review contract	2026-10-14T04:23:20.5889583Z   UV_CACHE_DIR: /home/runner/work/_temp/setup-uv-cache
+qc	Validate structured review contract	2026-10-14T04:23:20.5889762Z ##[endgroup]
+qc	Validate structured review contract	2026-10-14T04:23:34.3924755Z ....                                                                     [100%]
+qc	Validate structured review contract	2026-10-14T04:23:34.3925174Z 4 passed in 11.38s
+qc	Run the authoritative quality gate	﻿2026-10-14T04:23:34.5992975Z ##[group]Run uv run python scripts/run_qc.py
+qc	Run the authoritative quality gate	2026-10-14T04:23:34.5993202Z ^[[36;1muv run python scripts/run_qc.py^[[0m
+qc	Run the authoritative quality gate	2026-10-14T04:23:34.6047208Z shell: /usr/bin/bash -e {0}
+qc	Run the authoritative quality gate	2026-10-14T04:23:34.6047354Z env:
+qc	Run the authoritative quality gate	2026-10-14T04:23:34.6047509Z   RECORD_REVIEW_BASE: 64c095104e5352fb88ad3177c47995ccfd4275d5
+qc	Run the authoritative quality gate	2026-10-14T04:23:34.6047702Z   UV_PYTHON: 3.13
+qc	Run the authoritative quality gate	2026-10-14T04:23:34.6047895Z   VIRTUAL_ENV: /home/runner/work/NaturalProductMech/NaturalProductMech/.venv
+qc	Run the authoritative quality gate	2026-10-14T04:23:34.6048146Z   UV_CACHE_DIR: /home/runner/work/_temp/setup-uv-cache
+qc	Run the authoritative quality gate	2026-10-14T04:23:34.6048319Z ##[endgroup]
+qc	Run the authoritative quality gate	2026-10-14T04:23:34.6411640Z 
+qc	Run the authoritative quality gate	2026-10-14T04:23:34.6412137Z === qc: lint ===
+qc	Run the authoritative quality gate	2026-10-14T04:23:34.6412530Z why: Fail fast on syntax, import, and style defects before expensive checks.
+qc	Run the authoritative quality gate	2026-10-14T04:23:34.6806224Z All checks passed!
+qc	Run the authoritative quality gate	2026-10-14T04:23:34.6807834Z 
+qc	Run the authoritative quality gate	2026-10-14T04:23:34.6807936Z === qc: vendored-sync ===
+qc	Run the authoritative quality gate	2026-10-14T04:23:34.6808248Z why: Governed files must be byte-identical to claw at the pinned ref.
+qc	Run the authoritative quality gate	2026-10-14T04:23:38.9827520Z OK: 22 governed artifacts match the pinned claw revision
+qc	Run the authoritative quality gate	2026-10-14T04:23:38.9933455Z 
+qc	Run the authoritative quality gate	2026-10-14T04:23:38.9934031Z === qc: documentation ===
+qc	Run the authoritative quality gate	2026-10-14T04:23:38.9934771Z why: README's generated statistics must match the corpus a reader would download.
+qc	Run the authoritative quality gate	2026-10-14T04:23:56.5900112Z README statistics block is current
+qc	Run the authoritative quality gate	2026-10-14T04:23:56.5942873Z 
+qc	Run the authoritative quality gate	2026-10-14T04:23:56.5943169Z === qc: raw-data provenance ===
+qc	Run the authoritative quality gate	2026-10-14T04:23:56.5943445Z why: Every committed inventory must retain its source metadata and integrity hash.
+qc	Run the authoritative quality gate	2026-10-14T04:23:56.8502551Z provenance OK: 15 inventories, 0 upstream files, retrieved 2026-10-07
+qc	Run the authoritative quality gate	2026-10-14T04:23:56.8557571Z 
+qc	Run the authoritative quality gate	2026-10-14T04:23:56.8557728Z === qc: source queue ===
+qc	Run the authoritative quality gate	2026-10-14T04:23:56.8558086Z why: An ADOPTED source must be one the pipeline reads under verified redistribution terms.
+qc	Run the authoritative quality gate	2026-10-14T04:23:56.9079319Z source queue OK: 44 sources — 10 adopted, 14 blocked, 18 candidate, 2 evaluating
+qc	Run the authoritative quality gate	2026-10-14T04:23:56.9079791Z next up: discovery-literature (P1, causal_graphs), mite (P2, biosynthetic_pathway), npdia (P2, biosynthetic_pathway)
+qc	Run the authoritative quality gate	2026-10-14T04:23:56.9121267Z 
+qc	Run the authoritative quality gate	2026-10-14T04:23:56.9121353Z === qc: tests ===
+qc	Run the authoritative quality gate	2026-10-14T04:23:56.9121756Z why: Tests cover harmonization rules and corpus-wide invariants validation cannot see.
+qc	Run the authoritative quality gate	2026-10-14T04:24:01.9045617Z ........................................................................ [  7%]
+qc	Run the authoritative quality gate	2026-10-14T04:24:33.4633055Z ........................................................................ [ 15%]
+qc	Run the authoritative quality gate	2026-10-14T04:24:34.6884772Z ........................................................................ [ 22%]
+qc	Run the authoritative quality gate	2026-10-14T04:25:44.9206271Z ........................................................................ [ 30%]
+qc	Run the authoritative quality gate	2026-10-14T04:25:47.4140591Z ........................................................................ [ 37%]
+qc	Run the authoritative quality gate	2026-10-14T04:25:47.8799586Z ........................................................................ [ 45%]
+qc	Run the authoritative quality gate	2026-10-14T04:25:49.2896853Z ........................................................................ [ 52%]
+qc	Run the authoritative quality gate	2026-10-14T04:26:02.6576871Z .................................................................s...... [ 60%]
+qc	Run the authoritative quality gate	2026-10-14T04:26:03.7901884Z ........................................................................ [ 67%]
+qc	Run the authoritative quality gate	2026-10-14T04:26:03.8550653Z ........................................................................ [ 75%]
+qc	Run the authoritative quality gate	2026-10-14T04:26:08.1062845Z ......................................sss............................... [ 82%]
+qc	Run the authoritative quality gate	2026-10-14T04:26:12.2523904Z ........................................................................ [ 90%]
+qc	Run the authoritative quality gate	2026-10-14T04:26:57.5730223Z ........................................................................ [ 97%]
+qc	Run the authoritative quality gate	2026-10-14T04:26:58.9129007Z .....................                                                    [100%]
+qc	Run the authoritative quality gate	2026-10-14T04:26:58.9129485Z =============================== warnings summary ===============================
+qc	Run the authoritative quality gate	2026-10-14T04:26:58.9130058Z tests/test_id_label_config.py::test_go_nodes_are_resolved_and_invalid_pairs_fail[canonical-OK_CANONICAL-record_identity]
+qc	Run the authoritative quality gate	2026-10-14T04:26:58.9131743Z   /home/runner/work/NaturalProductMech/NaturalProductMech/.venv/lib/python3.13/site-packages/sssom_schema/datamodel/sssom_schema.py:20: DeprecationWarning: The LinkML dataclass extension patch is deprecated and will be removed in a future release.
+qc	Run the authoritative quality gate	2026-10-14T04:26:58.9132755Z   If you're currently using Python < 3.13, where this patch still applies, you should:
+qc	Run the authoritative quality gate	2026-10-14T04:26:58.9133723Z     • Upgrade your LinkML tooling to version >= 1.9.0 (which no longer needs this patch), OR
+qc	Run the authoritative quality gate	2026-10-14T04:26:58.9134278Z     • Migrate to Pydantic models if you're using LinkML's generated classes at runtime.
+qc	Run the authoritative quality gate	2026-10-14T04:26:58.9134618Z   
+qc	Run the authoritative quality gate	2026-10-14T04:26:58.9134937Z     from linkml_runtime.utils.dataclass_extensions_376 import dataclasses_init_fn_with_kwargs
+qc	Run the authoritative quality gate	2026-10-14T04:26:58.9135245Z 
+qc	Run the authoritative quality gate	2026-10-14T04:26:58.9135554Z tests/test_id_label_config.py::test_go_nodes_are_resolved_and_invalid_pairs_fail[canonical-OK_CANONICAL-record_identity]
+qc	Run the authoritative quality gate	2026-10-14T04:26:58.9137003Z   /home/runner/work/NaturalProductMech/NaturalProductMech/.venv/lib/python3.13/site-packages/sssom/util.py:109: Pandas4Warning: The 'mode.copy_on_write' option is deprecated. Copy-on-Write can no longer be disabled (it is always enabled with pandas >= 3.0), and setting the option has no impact. This option will be removed in pandas 4.0.
+qc	Run the authoritative quality gate	2026-10-14T04:26:58.9138728Z     pd.options.mode.copy_on_write = True
+qc	Run the authoritative quality gate	2026-10-14T04:26:58.9138954Z 
+qc	Run the authoritative quality gate	2026-10-14T04:26:58.9139210Z -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+qc	Run the authoritative quality gate	2026-10-14T04:26:58.9140734Z 953 passed, 4 skipped, 2 warnings in 181.04s (0:03:01)
+qc	Run the authoritative quality gate	2026-10-14T04:26:59.9432167Z 
+qc	Run the authoritative quality gate	2026-10-14T04:26:59.9432715Z === qc: schema validation ===
+qc	Run the authoritative quality gate	2026-10-14T04:26:59.9433328Z why: Closed-mode validation checks every record's shape, including unknown fields.
+qc	Run the authoritative quality gate	2026-10-14T04:27:00.4074576Z Validating 3115 files with 3 workers; schema=/home/runner/work/NaturalProductMech/NaturalProductMech/src/naturalproductmech/schema/naturalproductmech.yaml
+qc	Run the authoritative quality gate	2026-10-14T04:27:25.9452219Z 
+qc	Run the authoritative quality gate	2026-10-14T04:27:25.9452783Z === validate-strict summary ===
+qc	Run the authoritative quality gate	2026-10-14T04:27:25.9453086Z   files scanned:      3115
+qc	Run the authoritative quality gate	2026-10-14T04:27:25.9453238Z   files with ERROR:   0
+qc	Run the authoritative quality gate	2026-10-14T04:27:25.9453384Z   total ERROR rows:   0
+qc	Run the authoritative quality gate	2026-10-14T04:27:25.9453546Z   TSV:                reports/instance_validation_failures.tsv
+qc	Run the authoritative quality gate	2026-10-14T04:27:26.1308898Z 
+qc	Run the authoritative quality gate	2026-10-14T04:27:26.1309364Z === qc: generated site ===
+qc	Run the authoritative quality gate	2026-10-14T04:27:26.1309778Z why: pages/ is in step with the corpus. The site is committed, so it goes stale exactly as a record could go stale against data/raw/ (#53).
+qc	Run the authoritative quality gate	2026-10-14T04:27:44.5357501Z pages/ is in step with the corpus
+qc	Run the authoritative quality gate	2026-10-14T04:27:44.7033078Z 
+qc	Run the authoritative quality gate	2026-10-14T04:27:44.7033663Z === qc: corpus reproduction ===
+qc	Run the authoritative quality gate	2026-10-14T04:27:44.7034310Z why: Every record is byte-identical to what the seeder builds from data/raw/. The check verify_corpus.py's docstring promised once the harmonizer existed (#85); curator-owned fields are taken from the file, as the writer takes them.
+qc	Run the authoritative quality gate	2026-10-14T04:28:02.1889472Z molecular targets whose assay organism did not resolve: 5 (1 distinct: Human…)
+qc	Run the authoritative quality gate	2026-10-14T04:28:02.1890126Z producer claims withheld — taxon names no single organism: 42 (NCBITaxon:77133 36, NCBITaxon:12908 3, NCBITaxon:1163772 2, NCBITaxon:155900 1)
+qc	Run the authoritative quality gate	2026-10-14T04:28:02.1890541Z taxon ids rewritten through taxon_merged.tsv: 161 (ChEBI 8, LOTUS 147, MIBiG 6)
+qc	Run the authoritative quality gate	2026-10-14T04:28:36.1576863Z corpus reproduction OK: 3115 records are byte-identical to what the seeder builds from data/raw/
+qc	Run the authoritative quality gate	2026-10-14T04:28:36.2852575Z 
+qc	Run the authoritative quality gate	2026-10-14T04:28:36.2854716Z === qc: lockfile integrity ===
+qc	Run the authoritative quality gate	2026-10-14T04:28:36.2855282Z why: Every record is recorded in PATHS.tsv and filed where its pinned pathway says. Reproduction from data/raw/ is the separate check above.
+qc	Run the authoritative quality gate	2026-10-14T04:29:05.3045700Z lockfile integrity OK: 3115 records, each filed where PATHS.tsv pins it
+qc	Run the authoritative quality gate	2026-10-14T04:29:05.4385058Z 
+qc	Run the authoritative quality gate	2026-10-14T04:29:05.4387286Z === qc: corpus report ===
+qc	Run the authoritative quality gate	2026-10-14T04:29:05.4387668Z why: Exercise the report and finish with the live coverage summary.
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0864165Z records: 3115
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0865006Z unique InChIKeys: 3115
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0865172Z structures with undefined stereocentres: 1124
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0865319Z 
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0865395Z by pathway (the filing decision, computed):
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0865676Z   ALKALOIDS                             509
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0865912Z   AMINO_ACIDS_AND_PEPTIDES              655
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0866142Z   CARBOHYDRATES                         103
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0866371Z   FATTY_ACIDS                            82
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0866786Z   POLYKETIDES                           869
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0867038Z   SHIKIMATES_AND_PHENYLPROPANOIDS        64
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0867284Z   TERPENOIDS                            213
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0867514Z   UNCLASSIFIED                          620
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0867663Z 
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0867743Z by curation status:
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0867933Z   SEEDED                               3115
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0868083Z 
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0868171Z by grounding status:
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0868362Z   EXACT                                 363
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0868585Z   MINTED                               2743
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0868974Z   REVIEW_NEEDED                           9
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0869177Z 
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0869296Z field coverage (records carrying at least one item):
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0869569Z   biosynthesis_origin                  3115
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0869792Z   producer_taxon_groups                3076
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0869952Z   occurrence_taxon_groups              2342
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0870112Z   producer_organisms                   3076
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0870263Z   occurrences                          2342
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0870413Z   biosynthetic_gene_clusters           3115
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0870565Z   biosynthetic_pathway                  164
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0870717Z   bioactivities                         174
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0870866Z   bioactivity_summary                   307
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0871020Z   molecular_targets                      15
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0871169Z   causal_graphs                         278
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0871326Z   related_records                       210
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0871472Z   discussions                           357
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0871567Z 
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0871647Z producer claims: 3407 (808 causal, 162 correlational)
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0871824Z   BGC_CHARACTERIZED                     808
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0872008Z   BGC_CORRELATED                        162
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0872156Z   SOURCE_ASSERTION                     2437
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0872254Z 
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0872316Z cluster link claims: 3449 (1357 demonstrated)
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0872479Z   CLUSTER_CORRELATED                    110
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0872631Z   CLUSTER_DEMONSTRATED                 1357
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0872781Z   CLUSTER_PREDICTED                       2
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0872930Z   CLUSTER_UNSTATED                     1980
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0873032Z 
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0873212Z records with a producer taxon also reported in a cited occurrence (publication independence not assessed): 732
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0873542Z records whose only origin evidence is a gene cluster with no named host: 27
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0873705Z 
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0873804Z These grade two different questions and they come apart. A producer
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0874051Z claim says this TAXON makes the compound; a cluster link says this
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0874295Z LOCUS does. Heterologous expression settles the second and leaves the
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.0874515Z first exactly where the isolation report left it.
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.2303235Z 
+qc	Run the authoritative quality gate	2026-10-14T04:29:22.2303812Z All NaturalProductMech quality gates passed.
+qc	Post Install uv	﻿2026-10-14T04:29:22.2429635Z Post job cleanup.
+qc	Post Install uv	2026-10-14T04:29:22.3188981Z Cache hit occurred on key setup-uv-1-x86_64-unknown-linux-gnu-3.13-f046a321e2cc523d1869496761dda2d477b4d94f5e4f659523785be127b9a087, not saving cache.
+qc	Post Install uv	2026-10-14T04:29:22.3189829Z (node:9566) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+qc	Post Install uv	2026-10-14T04:29:22.3190237Z (Use `node --trace-deprecation ...` to show where the warning was created)
+qc	Post Check out repository	﻿2026-10-14T04:29:22.3307854Z Post job cleanup.
+qc	Post Check out repository	2026-10-14T04:29:22.3847032Z [command]/usr/bin/git version
+qc	Post Check out repository	2026-10-14T04:29:22.3867081Z git version 2.55.0
+qc	Post Check out repository	2026-10-14T04:29:22.3919179Z Temporarily overriding HOME='/home/runner/work/_temp/85c53a35-880a-4586-b655-4b876d758b99' before making global git config changes
+qc	Post Check out repository	2026-10-14T04:29:22.3919842Z Adding repository directory to the temporary git global config as a safe directory
+qc	Post Check out repository	2026-10-14T04:29:22.3922926Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/NaturalProductMech/NaturalProductMech
+qc	Post Check out repository	2026-10-14T04:29:22.3953295Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+qc	Post Check out repository	2026-10-14T04:29:22.3980072Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+qc	Post Check out repository	2026-10-14T04:29:22.4185030Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+qc	Post Check out repository	2026-10-14T04:29:22.4213303Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+qc	Post Check out repository	2026-10-14T04:29:22.4418644Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+qc	Post Check out repository	2026-10-14T04:29:22.4451455Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+qc	Complete job	﻿2026-10-14T04:29:22.4833712Z Cleaning up orphan processes
+qc	Complete job	2026-10-14T04:29:22.5024745Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, astral-sh/setup-uv@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+

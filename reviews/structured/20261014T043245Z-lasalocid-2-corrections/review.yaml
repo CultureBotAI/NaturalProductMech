@@ -1,0 +1,568 @@
+schema_version: 1.0.0
+review_id: 20261014T043245Z-lasalocid-2-corrections
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'lasalocid-2: scoped provenance-correction successor'
+started_at: '2026-10-14T04:32:24.401086Z'
+finished_at: '2026-10-14T04:32:45.634961Z'
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: self_review
+  independence_basis: Implementing assistant performed a separate adversarial pass;
+    not independent peer review.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: pass_with_limitations
+native_verdict: SEEDED retained; representation defects fixed, primary closure incomplete
+scientific_review: true
+summary: Scoped provenance findings resolved; underlying scientific uncertainty remains
+  explicitly represented.
+source:
+  git_revision: b74978c161025dc63f8f959233541aefd321707a
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: 49e2ab03c7e82013e9d68356de2c9965c9f8517a3408a44124076f4ca1b529cd
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: conf/sibling_pins.yaml
+    sha256: 39a1d007ee65ba546567e8a34b7a309f75270b872809e1f783fe1fcee55866f2
+    role: context
+  - path: curation/decisions.tsv
+    sha256: 7214a74975fb2cb65521da18dd14ea1c65665f50060106976dc0db9caf887805
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: b13a7ba285787190e46af0249a9dcda3860f67e503e15c9e44eb259e6e12ad42
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7d3e07b98587b27ec843ce73e7c5cf75b74d6fecb4ab8fdc29ca54fa04352a53
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: ae92ef7b0de9ac393aa9e11ce118559df722b3ed7031a4e0598438df712049d6
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: 5b1edc057cdcc732f61de2964cd175fa3bc2dca929c5d2823142f61313545a7e
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: curation/pubchem_bioassay_exclusions.tsv
+    sha256: 76f9cbb17e62a270afed637b5058a553cfe85c754c6c9ec406635f12dae572fa
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: bf38e4f0c7e4bcbdf184a4e7b8b024752251e8f34c015c0b82cedca98a8a5729
+    role: context
+  - path: data/natural_products/polyketides/lasalocid-2.yaml
+    sha256: 63bae8225deb4e8efcb9d4a926a1f0ec376799cf0c010a891456e7bce1b12284
+    role: target
+  - path: data/natural_products/polyketides/lasalocid.yaml
+    sha256: a863795cbdcc4761e358c4f00a13b2e5856a74d01195a200c24949fca90bb68e
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: 373f049029be3db137e062ff5f872a2400a9d5b423f3e108ea44ebde2f8dcc7d
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: 7b9b9f78f5b14aea9fabb163bbaa9e842920a7e9b07deac8f98c97666e9e23fc
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 90420425c90529cc99b474cb38cfedc7209c0e825b851f105f418868575a0a61
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: pyproject.toml
+    sha256: 02505a46585e870eac7333f31a6773df51465ef13969d4d490fbc0247931d85c
+    role: context
+  - path: reviews/evidence/20261014-lasalocid/BGC0000086.5.json
+    sha256: 6bfdab1b76d8d2fa7bd75bd846a8283ca6017a09051f588b333682cd4ba144c7
+    role: context
+  - path: reviews/evidence/20261014-lasalocid/BGC0000087.5.json
+    sha256: 14a317e7076931d2f6e37d817b540f5de7bed7801c53a718e816be05cd1c0a99
+    role: context
+  - path: reviews/evidence/20261014-lasalocid/BGC0001648.5.json
+    sha256: 3aab14980429e3cbcd3976a6c82e1a51a1e979d51e8696eeb9a648d12a3f9139
+    role: context
+  - path: reviews/evidence/20261014-lasalocid/README.md
+    sha256: c586511ab3a66715fad3c1a2ad44bbe5c4d8f777fe9d7560bf1d923c743c88ef
+    role: context
+  - path: reviews/evidence/20261014-lasalocid/adversarial-review.md
+    sha256: f3939df2862f4ddda2926accab712d9965309db0b1159d6c309ed9345b18bcce
+    role: context
+  - path: reviews/evidence/20261014-lasalocid/chebi-92181.json
+    sha256: 2ac7af3d70359bd8e7f5bd358161fcef05bc96e212a8139d231fddf414a0a86a
+    role: context
+  - path: reviews/evidence/20261014-lasalocid/ci-qc.log
+    sha256: e91c783c579cc607c0b053ff8592d4175f47d60b581da837211a7ec6905c77f0
+    role: context
+  - path: reviews/evidence/20261014-lasalocid/correction-checks.json
+    sha256: b83e281935e11dfbd2482ca5585b9d2b1ec38a9036731e872af1018ca35c4680
+    role: context
+  - path: reviews/evidence/20261014-lasalocid/delta-audit.json
+    sha256: 194b95e0fe9889d4b6679ca117ffce13fc8554bffc541750093197ad5f91998f
+    role: context
+  - path: reviews/evidence/20261014-lasalocid/delta.log
+    sha256: 194b95e0fe9889d4b6679ca117ffce13fc8554bffc541750093197ad5f91998f
+    role: context
+  - path: reviews/evidence/20261014-lasalocid/focused-verified.log
+    sha256: f1b62e0b9e512a0ad3da29426bd3ceef8e4c8d4c122f2c0602eb8e7e46169ba9
+    role: context
+  - path: reviews/evidence/20261014-lasalocid/genbank.xml
+    sha256: b9ed775e6f9f32f06877b051f3d33970ec6071d2956045f567b59e78b32c5b18
+    role: context
+  - path: reviews/evidence/20261014-lasalocid/labels-final.log
+    sha256: 3a35478c0f50d04f173e629252d86cf81839ab6d9d291ca88a9631d93d0cca64
+    role: context
+  - path: reviews/evidence/20261014-lasalocid/lasalocid-2-before.yaml
+    sha256: 79b95ce009f3cac2cbd631f63e7ed8d5b0ac6c269b5cfeb7fd055407f5e4fb24
+    role: context
+  - path: reviews/evidence/20261014-lasalocid/lasalocid-before.yaml
+    sha256: e7240d0a9c3926f085bd34497dc51bdacb998f809bc5c5f9fca1000e7bc93bd4
+    role: context
+  - path: reviews/evidence/20261014-lasalocid/manifest.json
+    sha256: 7bde2b738ea0d8075fc08fff3c802af7aca272d0a185da1fed9fd9e351460e47
+    role: context
+  - path: reviews/evidence/20261014-lasalocid/pubchem-2724110.json
+    sha256: a41b25a7ed67deb62673f2bab168e104fe8648e9ae5c92e030f6a3ca92498560
+    role: context
+  - path: reviews/evidence/20261014-lasalocid/strict-final.log
+    sha256: b8a6d4c7e6d1cebec3f37d41a224a0017e7aee3eef24d4594742a3dbb41580d7
+    role: context
+  - path: reviews/evidence/20261014-lasalocid/taxonomy-fxj.xml
+    sha256: 111756ce9d75e97aeae1f4b2336780173de341eb9a9dc43a515140cc703ceaac
+    role: context
+  - path: reviews/evidence/20261014-lasalocid/taxonomy.xml
+    sha256: e1f3b51050ad851dff2350877dd2fadd4ff35537fdf72160e8a0f667aabd144f
+    role: context
+  - path: reviews/evidence/20261014-lasalocid/web-observations.json
+    sha256: 4564c404dd6c053a165b28d6f23408b21ee1f4b16de452fb5631e753256a8e6b
+    role: context
+  - path: reviews/structured/20261014T041547Z-lasalocid-2/review.md
+    sha256: 98a4135d11cf1ea95cf7f00e5411a3c0f253a6645290425ed6192db68565f871
+    role: context
+  - path: reviews/structured/20261014T041547Z-lasalocid-2/review.yaml
+    sha256: 4f89561af93f98b7198fa1fb3327254b01fdcd717c1d6ef0cdb720cab47bbf5e
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_lotus.py
+    sha256: 8a8c524f60f85d2bb54412ca055a6a45e0d37ec5f4584d8d70be454b8f664290
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/extract_pubchem_bioassay.py
+    sha256: 24f9d794e7cf97c420351cb751f8767f7d81a5f22aed01669b2318d6755e7c00
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/run_qc.py
+    sha256: ff44ed3e40a9b3582eb84e38a81301745ae80d16445756d09a7efb2a480b1abb
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: c7531c2ff57eb55174c1c358c8bdbd507b25f4446d20e163f9b60b1161e48415
+    role: context
+  - path: src/naturalproductmech/curate/bioassay_exclusions.py
+    sha256: 4a4176e072ac9759aa8a9e88300d7e2de5aaf4ebf30b5c42fcf4c9c0b6cebbb4
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: a8b8834788b4714cf1cb0d1cc410d5c2f88112a32ad8621c8e043f0a4bc38a9d
+    role: context
+  - path: src/naturalproductmech/curate/xref_exclusions.py
+    sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/history.yaml
+    sha256: b01b06f1b9a37db205c26c31ec0fd910690848507c7e1bfb73b424ac0829c52d
+    role: context
+  - path: src/naturalproductmech/schema/mech_shared.yaml
+    sha256: c2e7054fd32635e380c698282bd886a9105861009b9f0474f02bb1b80865e895
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: tests/test_lasalocid_curation.py
+    sha256: a5e01dbf91ddc82cd4c1a7d1ba2a9e6673b2ca52209bc4e127f61458ef3d363e
+    role: context
+  - path: uv.lock
+    sha256: c62a5739e3ffeb12cc57b3bf12a31dcf9cdfbf00b417f4ba3a801d51ef9efbe3
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-73ba44dafe
+  path: data/natural_products/polyketides/lasalocid-2.yaml
+  label: lasalocid
+  kind: generated
+  record_class: NaturalProductRecord
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner emission and source harmonization
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: MIBiG extraction and source chemistry
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Pinned raw MIBiG assertions; preserve provenance
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Pinned grounding structures
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_origins.tsv
+    role: Pinned origin assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Pinned occurrence assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed filing decisions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/antibioticmech_inchikeys.tsv
+    role: Pinned exact sibling join
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Reviewed method overrides
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Pinned strain qualifications
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_xref_exclusions.tsv
+    role: Pinned nonexact chemical xref exclusions
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/lotus_occurrence_exclusions.tsv
+    role: Pinned unsupported occurrence exclusions
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Claim-specific source-pinned citation routing
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/polyketides/lasalocid-2.yaml
+    role: Only future curator-prefixed discussions through guarded writer/event; generated
+      fields remain source-owned
+scope:
+  description: Complete corrected exact owner with evidence-backed predecessor dispositions.
+  selection: Successor to 20261014T041547Z-lasalocid-2
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-73ba44dafe
+checks:
+- check_id: strict-final
+  name: strict-final
+  command: just validate-strict data/natural_products/polyketides/lasalocid-2.yaml
+    data/natural_products/polyketides/lasalocid.yaml --out /private/tmp/npmech-lasalocid-review-dQoF9p/strict-final.tsv
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-73ba44dafe
+  evidence_ids:
+  - checks
+  summary: Actual passed receipt retained.
+  scope_note: 2026-10-14T04:19:40.725548Z..2026-10-14T04:19:43.773004Z; log SHA256
+    b8a6d4c7e6d1cebec3f37d41a224a0017e7aee3eef24d4594742a3dbb41580d7
+- check_id: focused-verified
+  name: focused-verified
+  command: uv run pytest tests/test_lasalocid_curation.py tests/test_claim_references.py
+    tests/test_producer_strains.py tests/test_seed_skeleton.py -q
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-73ba44dafe
+  evidence_ids:
+  - checks
+  summary: Actual passed receipt retained.
+  scope_note: 2026-10-14T04:21:10.777698Z..2026-10-14T04:21:16.398839Z; log SHA256
+    f1b62e0b9e512a0ad3da29426bd3ceef8e4c8d4c122f2c0602eb8e7e46169ba9
+- check_id: labels-final
+  name: labels-final
+  command: just validate-products
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-73ba44dafe
+  evidence_ids:
+  - checks
+  summary: Actual passed receipt retained.
+  scope_note: 2026-10-14T04:21:14.410952Z..2026-10-14T04:24:30.970645Z; log SHA256
+    3a35478c0f50d04f173e629252d86cf81839ab6d9d291ca88a9631d93d0cca64
+- check_id: ci-qc
+  name: ci-qc
+  command: python /private/tmp/npmech-lasalocid-review-dQoF9p/verify_ci.py 38511099497
+    b74978c161025dc63f8f959233541aefd321707a
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-73ba44dafe
+  evidence_ids:
+  - checks
+  summary: Actual passed receipt retained.
+  scope_note: 2026-10-14T04:30:54.344986Z..2026-10-14T04:30:58.451973Z; log SHA256
+    e91c783c579cc607c0b053ff8592d4175f47d60b581da837211a7ec6905c77f0
+- check_id: delta
+  name: delta
+  command: uv run python /private/tmp/npmech-lasalocid-review-dQoF9p/audit_delta.py
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - naturalproductmech:mibig-73ba44dafe
+  evidence_ids:
+  - checks
+  summary: Actual passed receipt retained.
+  scope_note: 2026-10-14T04:20:25.319087Z..2026-10-14T04:20:25.951781Z; log SHA256
+    194b95e0fe9889d4b6679ca117ffce13fc8554bffc541750093197ad5f91998f
+- check_id: primary-closure
+  name: Complete primary strain, chemical-form and locus closure
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-73ba44dafe
+  summary: Access and attribution limitations remain. These partial observations do
+    not promote native status.
+evidence:
+- evidence_id: prior
+  kind: prior_review
+  reference: reviews/structured/20261014T041547Z-lasalocid-2/review.yaml
+  locator: Entire immutable initial exact-owner review
+  accessed_at: '2026-10-14T04:32:45.630305Z'
+  support: context_only
+  summary: Retains original scientific findings and access limitations.
+- evidence_id: current
+  kind: record_content
+  reference: data/natural_products/polyketides/lasalocid-2.yaml
+  locator: Complete corrected owner; no inline graphs or external graph refs
+  accessed_at: '2026-10-14T04:32:45.630858Z'
+  snapshot_sha256: 63bae8225deb4e8efcb9d4a926a1f0ec376799cf0c010a891456e7bce1b12284
+  support: supports
+  summary: Chemistry and source-tier grades unchanged; bounded provenance fixes and
+    accurate history event inspected.
+- evidence_id: sources
+  kind: database
+  reference: reviews/evidence/20261014-lasalocid/manifest.json
+  locator: Hash-pinned public responses, GenBank source qualifiers, exact baseline
+    owners
+  accessed_at: '2026-10-14T04:32:45.631190Z'
+  snapshot_sha256: 7bde2b738ea0d8075fc08fff3c802af7aca272d0a185da1fed9fd9e351460e47
+  support: supports
+  summary: AB449340.1 names ATCC 31180, FM173265.1 names NRRL 3382R, KT591188.1 names
+    FXJ1.172. These are source assertions, not scientific adjudication.
+- evidence_id: primary2009
+  kind: primary_source
+  reference: DOI:10.1271/bbb.80631
+  locator: Advance-view methods and AB449340 deposition statement; initial review
+    and evidence README retain scope/receipt
+  accessed_at: '2026-10-14T04:00:58.728023Z'
+  support: refutes
+  summary: Paper attributes AB449340/pKSL to ATCC35851, not FXJ1.172/KT591188; original
+    source conflict remains.
+- evidence_id: primary2011
+  kind: primary_source
+  reference: DOI:10.1128/AEM.02915-10
+  locator: Publisher chemical-identification results; exact web retrieval timestamp
+    unavailable, initial inspection completion time recorded
+  accessed_at: '2026-10-14T04:06:24.142784Z'
+  support: partial
+  summary: FXJ1.172 product identified as lasalocid A by mass/UV/MS2 comparison; not
+    full absolute-configuration or complete-locus proof.
+- evidence_id: checks
+  kind: validation
+  reference: reviews/evidence/20261014-lasalocid/correction-checks.json
+  locator: Actual command receipts and retained passed logs; earlier failed attempts
+    separately retained
+  accessed_at: '2026-10-14T04:32:45.633858Z'
+  snapshot_sha256: b83e281935e11dfbd2482ca5585b9d2b1ec38a9036731e872af1018ca35c4680
+  support: supports
+  summary: Strict, focused regression, label, exact-head GitHub full QC and delta
+    checks passed. The redundant local QC was stopped, not counted as passing.
+- evidence_id: delta
+  kind: validation
+  reference: reviews/evidence/20261014-lasalocid/delta-audit.json
+  locator: All prior owner/review hashes and semantic two-owner delta
+  accessed_at: '2026-10-14T04:32:45.634341Z'
+  snapshot_sha256: 194b95e0fe9889d4b6679ca117ffce13fc8554bffc541750093197ad5f91998f
+  support: supports
+  summary: 3113 unrelated owners,243 components,75 older bundles,raw inventories and
+    PATHS.tsv unchanged.
+assessments:
+- assessment_id: fixes
+  area: provenance
+  topic: Bounded finding dispositions
+  outcome: supported
+  summary: Three exact representation defects are addressed without choosing a disputed
+    strain or upgrading experimental confidence.
+  target_ids:
+  - naturalproductmech:mibig-73ba44dafe
+  evidence_ids:
+  - current
+  - sources
+  - checks
+- assessment_id: identity
+  area: identity
+  topic: Chemical owner boundary
+  outcome: supported
+  summary: Stored chemistry is unchanged; sodium salt and stereospecified free acid
+    remain distinct. This is not primary absolute-configuration certification.
+  target_ids:
+  - naturalproductmech:mibig-73ba44dafe
+  evidence_ids:
+  - prior
+  - current
+  - delta
+- assessment_id: primary
+  area: evidence
+  topic: Remaining primary closure
+  outcome: unknown
+  summary: Source strain conflict, original stereochemical assignment and complete
+    locus attribution remain incomplete. The conflict is represented, not adjudicated.
+  target_ids:
+  - naturalproductmech:mibig-73ba44dafe
+  evidence_ids:
+  - prior
+  - primary2009
+  - primary2011
+- assessment_id: preservation
+  area: ownership
+  topic: Maintained owners and history
+  outcome: supported
+  summary: Corrections use existing pinned tables and the guarded discussion writer.
+    Original history prefix, native SEEDED status and all unrelated records are preserved.
+  target_ids:
+  - naturalproductmech:mibig-73ba44dafe
+  evidence_ids:
+  - current
+  - delta
+  - checks
+findings:
+- finding_id: strain-conflict
+  issue_key: lasalocid-bgc0000086-strain-provenance-conflict
+  category: provenance
+  severity: major
+  status: resolved
+  certainty: confirmed
+  title: AB449340 strain conflict is unrepresented in the native record
+  description: The source deposit names ATCC31180 while the inspected study assigns
+    AB449340 to ATCC35851. The owner has neither strain nor a discussion of this conflict.
+    Preserve both assertions before grade changes; do not silently equate type strain
+    NRRL3382 with NRRL3382R or choose one source. FM173265 separately names NRRL3382R.
+  target_ids:
+  - naturalproductmech:mibig-73ba44dafe
+  field_paths:
+  - producer_organisms
+  - biosynthetic_gene_clusters
+  - discussions
+  evidence_ids:
+  - prior
+  - current
+  - sources
+  - primary2009
+  - primary2011
+  - checks
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/polyketides/lasalocid-2.yaml
+    role: Future curator-prefixed conflict discussion via guarded writer/event
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Only separately adjudicated strain qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: No grade change before strain/form adjudication
+  rule_id: docs/CURATION.md:claim-scope-and-conflict-preservation
+  native_severity: major
+  normalization_reason: Material claim-specific provenance conflict is major; bounded
+    omitted strain qualification without a stronger-grade claim is minor. No identity
+    blocker inferred from honest incomplete stereochemistry.
+  previous_occurrences:
+  - repository: CultureBotAI/NaturalProductMech
+    review_id: 20261014T041547Z-lasalocid-2
+    finding_id: strain-conflict
+  disposition_reason: Missing conflict representation is fixed by a guarded OPEN discussion
+    preserving both assertions. This resolves the representation defect only, not
+    which strain attribution is biologically correct (#971).
+actions: []
+limitations:
+- Both sources of the AB449340 strain attribution remain preserved; biological reconciliation
+  is not established.
+- Exact primary stereochemical and counterion processing, remaining occurrence scope
+  and complete locus evidence are not fully adjudicated.
+- Initial reviews retain inaccessible and abstract-only primary sources; no access
+  bypass or full-paper redistribution.
+- Initial temporary evidence paths remain historical. The publication pack supplies
+  selected portable database snapshots and checked owner bindings, not every original
+  temporary artifact.
+- After the branch commit changed HEAD, the saver rejected the earlier capture. All
+  scientific inputs were rechecked unchanged and freshly inspected at b74978c16, retained
+  by archival tag review-base/lasalocid-20261014.
+- Final successor-bundle validation and GitHub checks run after saving and are publication
+  gates, not invented prior review checks.
+- Full QC passed on GitHub run38511099497 at exact commit b74978c161025dc63f8f959233541aefd321707a.
+  The slower redundant local run was stopped afterward; final PR head must pass separately.
+tags:
+- lasalocid
+- partial
+- scoped-correction

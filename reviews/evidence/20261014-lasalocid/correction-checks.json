@@ -1,0 +1,168 @@
+{
+  "passed": {
+    "strict-final": {
+      "command": [
+        "just",
+        "validate-strict",
+        "data/natural_products/polyketides/lasalocid-2.yaml",
+        "data/natural_products/polyketides/lasalocid.yaml",
+        "--out",
+        "/private/tmp/npmech-lasalocid-review-dQoF9p/strict-final.tsv"
+      ],
+      "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+      "started_at": "2026-10-14T04:19:40.725548Z",
+      "finished_at": "2026-10-14T04:19:43.773004Z",
+      "exit_code": 0,
+      "log": "/private/tmp/npmech-lasalocid-review-dQoF9p/strict-final.log",
+      "log_sha256": "b8a6d4c7e6d1cebec3f37d41a224a0017e7aee3eef24d4594742a3dbb41580d7"
+    },
+    "focused-verified": {
+      "command": [
+        "uv",
+        "run",
+        "pytest",
+        "tests/test_lasalocid_curation.py",
+        "tests/test_claim_references.py",
+        "tests/test_producer_strains.py",
+        "tests/test_seed_skeleton.py",
+        "-q"
+      ],
+      "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+      "started_at": "2026-10-14T04:21:10.777698Z",
+      "finished_at": "2026-10-14T04:21:16.398839Z",
+      "exit_code": 0,
+      "log": "/private/tmp/npmech-lasalocid-review-dQoF9p/focused-verified.log",
+      "log_sha256": "f1b62e0b9e512a0ad3da29426bd3ceef8e4c8d4c122f2c0602eb8e7e46169ba9"
+    },
+    "labels-final": {
+      "command": [
+        "just",
+        "validate-products"
+      ],
+      "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+      "started_at": "2026-10-14T04:21:14.410952Z",
+      "finished_at": "2026-10-14T04:24:30.970645Z",
+      "exit_code": 0,
+      "log": "/private/tmp/npmech-lasalocid-review-dQoF9p/labels-final.log",
+      "log_sha256": "3a35478c0f50d04f173e629252d86cf81839ab6d9d291ca88a9631d93d0cca64"
+    },
+    "ci-qc": {
+      "command": [
+        "python",
+        "/private/tmp/npmech-lasalocid-review-dQoF9p/verify_ci.py",
+        "38511099497",
+        "b74978c161025dc63f8f959233541aefd321707a"
+      ],
+      "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+      "started_at": "2026-10-14T04:30:54.344986Z",
+      "finished_at": "2026-10-14T04:30:58.451973Z",
+      "exit_code": 0,
+      "log": "/private/tmp/npmech-lasalocid-review-dQoF9p/ci-qc.log",
+      "log_sha256": "e91c783c579cc607c0b053ff8592d4175f47d60b581da837211a7ec6905c77f0"
+    },
+    "delta": {
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "/private/tmp/npmech-lasalocid-review-dQoF9p/audit_delta.py"
+      ],
+      "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+      "started_at": "2026-10-14T04:20:25.319087Z",
+      "finished_at": "2026-10-14T04:20:25.951781Z",
+      "exit_code": 0,
+      "log": "/private/tmp/npmech-lasalocid-review-dQoF9p/delta.log",
+      "log_sha256": "194b95e0fe9889d4b6679ca117ffce13fc8554bffc541750093197ad5f91998f"
+    }
+  },
+  "earlier_failed_attempts": {
+    "focused": {
+      "command": [
+        "uv",
+        "run",
+        "pytest",
+        "tests/test_lasalocid_curation.py",
+        "tests/test_claim_references.py",
+        "tests/test_producer_strains.py",
+        "tests/test_curator_owned.py",
+        "-q"
+      ],
+      "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+      "started_at": "2026-10-14T04:19:05.150407Z",
+      "finished_at": "2026-10-14T04:19:06.748761Z",
+      "exit_code": 4,
+      "log": "/private/tmp/npmech-lasalocid-review-dQoF9p/focused.log",
+      "log_sha256": "6fe48564db2ae47b10fcbcb94f109151c1f3e441efdeefe2f27e51c7ff1f570e"
+    },
+    "focused-final": {
+      "command": [
+        "uv",
+        "run",
+        "pytest",
+        "tests/test_lasalocid_curation.py",
+        "tests/test_claim_references.py",
+        "tests/test_producer_strains.py",
+        "tests/test_seed_from_sources.py",
+        "-q"
+      ],
+      "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+      "started_at": "2026-10-14T04:19:36.664291Z",
+      "finished_at": "2026-10-14T04:19:38.197149Z",
+      "exit_code": 4,
+      "log": "/private/tmp/npmech-lasalocid-review-dQoF9p/focused-final.log",
+      "log_sha256": "d553881e7a5f691a5a8c15d2fe35e1766b340e0f0483be241fa6987483220ee1"
+    },
+    "focused-passed": {
+      "command": [
+        "uv",
+        "run",
+        "pytest",
+        "tests/test_lasalocid_curation.py",
+        "tests/test_claim_references.py",
+        "tests/test_producer_strains.py",
+        "tests/test_seed_skeleton.py",
+        "-q"
+      ],
+      "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+      "started_at": "2026-10-14T04:20:19.858926Z",
+      "finished_at": "2026-10-14T04:20:24.931114Z",
+      "exit_code": 1,
+      "log": "/private/tmp/npmech-lasalocid-review-dQoF9p/focused-passed.log",
+      "log_sha256": "04b46cdd7b49ce4b1e1e033c3a604f03936acce1293b78df8753ddef651e5f96"
+    },
+    "lint": {
+      "command": [
+        "uv",
+        "run",
+        "ruff",
+        "check",
+        "tests/test_lasalocid_curation.py"
+      ],
+      "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+      "started_at": "2026-10-14T04:19:43.862508Z",
+      "finished_at": "2026-10-14T04:19:43.995355Z",
+      "exit_code": 1,
+      "log": "/private/tmp/npmech-lasalocid-review-dQoF9p/lint.log",
+      "log_sha256": "81da0035fe969dba4fe431a330f446348997e1d5681f5b269ee46f39d5188324"
+    },
+    "qc-final": {
+      "command": [
+        "just",
+        "qc"
+      ],
+      "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+      "started_at": "2026-10-14T04:20:28.943544Z",
+      "finished_at": "2026-10-14T04:30:50.905169Z",
+      "exit_code": 241,
+      "log": "/private/tmp/npmech-lasalocid-review-dQoF9p/qc-final.log",
+      "log_sha256": "367470da6312ec938fa9555abc35c840e013980a8fed671e78b9b116b08df939"
+    }
+  },
+  "explanations": {
+    "focused": "Incorrect test path; no tests ran.",
+    "focused-final": "Incorrect seeder test path; no tests ran.",
+    "focused-passed": "Test expected normalized strain spacing; corrected to exact raw literals.",
+    "lint": "One test line exceeded line-length limit; corrected.",
+    "qc-final": "Redundant local pytest stopped after exact-head GitHub QC passed; not a local QC pass."
+  }
+}
