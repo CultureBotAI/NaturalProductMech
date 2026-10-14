@@ -1,0 +1,58 @@
+{
+  "retrievals": {
+    "inputs/BGC0002290.2.json": {
+      "url": "https://mibig.secondarymetabolites.org/repository/BGC0002290.2/annotations.json",
+      "started_at": "2026-10-14T06:21:47.999749Z",
+      "status": 200,
+      "final_url": "https://mibig.secondarymetabolites.org/repository/BGC0002290.2/annotations.json",
+      "content_type": "application/json",
+      "finished_at": "2026-10-14T06:21:48.695199Z",
+      "bytes": 2149,
+      "sha256": "21106bc3cc505cffa4a3097570faca7453787ae5829af73fbe8337b72fe0a4a2"
+    },
+    "inputs/MT109335.1.xml": {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=MT109335.1&rettype=gb&retmode=xml",
+      "started_at": "2026-10-14T06:22:10.812096Z",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=MT109335.1&rettype=gb&retmode=xml",
+      "content_type": "text/xml",
+      "finished_at": "2026-10-14T06:22:11.606808Z",
+      "bytes": 112624,
+      "sha256": "be2968d840af92ca8d65fc8b0b1a432d7729c5c27ac6c2c7819986ac00bef1d3"
+    },
+    "inputs/taxonomy.xml": {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1896107,331117&retmode=xml",
+      "started_at": "2026-10-14T06:22:29.638865Z",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1896107,331117&retmode=xml",
+      "content_type": "text/xml; charset=UTF-8",
+      "finished_at": "2026-10-14T06:22:30.133225Z",
+      "bytes": 7198,
+      "sha256": "cfb7e58790784f123698cb131f22da8b6d00c517c50b00844ae45d3f4f53d8d2"
+    }
+  },
+  "original_analysis_sha256": "def36a3db8884b602f2a71d9260eeff4b5447ea8f491ec1a77e5a8fae43cdc85",
+  "redaction": "Only abstracts removed from original analysis. No full articles, SI, abstracts or catalogue HTML redistributed.",
+  "reference_only": {
+    "abstracts.xml": {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=26332841,32364293&retmode=xml",
+      "started_at": "2026-10-14T06:22:44.203441Z",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=26332841,32364293&retmode=xml",
+      "content_type": "text/xml; charset=UTF-8",
+      "finished_at": "2026-10-14T06:22:44.631121Z",
+      "bytes": 22506,
+      "sha256": "787ad110b9a47765710baf68a346985344332b4fbb9eed15870b6f04d864d817"
+    },
+    "jcm1740.html": {
+      "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_keyword?AN=Neosartorya&BN=fischeri&CN=fischeri&DN=",
+      "started_at": "2026-10-14T06:36:42.872745Z",
+      "status": 200,
+      "final_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_keyword?AN=Neosartorya&BN=fischeri&CN=fischeri&DN=",
+      "content_type": "text/html; charset=utf-8",
+      "finished_at": "2026-10-14T06:36:43.812726Z",
+      "bytes": 13844,
+      "sha256": "49a9483bf9cd9685368c5063560ba8344279146503b40b6116518a1682f77814"
+    }
+  }
+}

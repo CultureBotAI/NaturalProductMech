@@ -1,0 +1,410 @@
+{
+  "author-preflight.receipt.json": {
+    "command": [
+      "uv",
+      "run",
+      "python",
+      "-c",
+      "import runpy,sys; sys.argv=['author_reviews.py','--preview']; runpy.run_path('/private/tmp/npmech-numbered-review-rKbZU4/author_reviews.py',run_name='__main__')"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T06:52:27.524241Z",
+    "finished_at": "2026-10-14T06:52:52.899022Z",
+    "exit_code": 1,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/author-preflight.log",
+    "log_sha256": "7a23e0286d646f6d0c7ce8b220c218a7183c86d674491dfa1554b0351aa9a4e3"
+  },
+  "author.receipt.json": {
+    "command": [
+      "uv",
+      "run",
+      "python",
+      "/private/tmp/npmech-numbered-review-rKbZU4/author_reviews.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T07:00:13.597187Z",
+    "finished_at": "2026-10-14T07:00:40.143845Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/author.log",
+    "log_sha256": "3c8961d931a0efbd18d00d7ef265f26d65251a7a9cec464c63d9482b5e406f0d"
+  },
+  "delta.receipt.json": {
+    "command": [
+      "python",
+      "/private/tmp/npmech-numbered-review-rKbZU4/delta.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T06:51:06.707562Z",
+    "finished_at": "2026-10-14T06:51:08.385954Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/delta.log",
+    "log_sha256": "6f0b1f9655efd1b51371c839c6f45770a0b3a6bfa900b2bccf6e327dc1ae154e"
+  },
+  "focused-pre-save-final.receipt.json": {
+    "command": [
+      "uv",
+      "run",
+      "pytest",
+      "-q",
+      "tests/test_numbered_products_review_archive.py",
+      "-k",
+      "not saved_reviews"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T06:58:00.822827Z",
+    "finished_at": "2026-10-14T06:58:03.925868Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/focused-pre-save-final.log",
+    "log_sha256": "8abd6c2f0ae42e8a13f42509b94b1d36af2ce60b1c559547936e4dd2140739a7"
+  },
+  "focused-pre-save.receipt.json": {
+    "command": [
+      "uv",
+      "run",
+      "pytest",
+      "-q",
+      "tests/test_numbered_products_review_archive.py",
+      "-k",
+      "not saved_reviews"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T06:48:50.466749Z",
+    "finished_at": "2026-10-14T06:48:54.068810Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/focused-pre-save.log",
+    "log_sha256": "ef8ada655d17c724b68cf4b25af3cc8defe34f3c9a32e3872081bda910c8f2fa"
+  },
+  "focused.receipt.json": {
+    "command": [
+      "uv",
+      "run",
+      "pytest",
+      "-q",
+      "tests/test_numbered_products_review_archive.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T07:02:48.092561Z",
+    "finished_at": "2026-10-14T07:02:55.558944Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/focused.log",
+    "log_sha256": "8ed9b711ae15ad191776ad44fb945aae5d8710c122dc94b85b1aebac4dd08e89"
+  },
+  "imodulondb.receipt.json": {
+    "command": [
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/culturebotai-claw/.venv/bin/kg-microbe-sources",
+      "imodulondb",
+      "datasets"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T06:22:55.560255Z",
+    "finished_at": "2026-10-14T06:22:57.245757Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/imodulondb.log",
+    "log_sha256": "1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549"
+  },
+  "labels.receipt.json": {
+    "command": [
+      "just",
+      "validate-products"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T06:24:39.112548Z",
+    "finished_at": "2026-10-14T06:28:34.079989Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/labels.log",
+    "log_sha256": "3a35478c0f50d04f173e629252d86cf81839ab6d9d291ca88a9631d93d0cca64"
+  },
+  "lint-final.receipt.json": {
+    "command": [
+      "uv",
+      "run",
+      "ruff",
+      "check",
+      "."
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T06:48:21.901344Z",
+    "finished_at": "2026-10-14T06:48:22.143410Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/lint-final.log",
+    "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+  },
+  "lint-packet.receipt.json": {
+    "command": [
+      "uv",
+      "run",
+      "ruff",
+      "check",
+      "reviews/evidence/20261014-numbered-products/replay.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T06:46:54.353277Z",
+    "finished_at": "2026-10-14T06:46:54.547595Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/lint-packet.log",
+    "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+  },
+  "local-search.receipt.json": {
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "-l",
+      "-g",
+      "!.git/**",
+      "-g",
+      "!.venv/**",
+      "-g",
+      "!pages/**",
+      "-g",
+      "!data/embeddings/**",
+      "BGC0002162|BGC0002290|naturalproductmech:mibig-007406ddf9|naturalproductmech:mibig-dd802af1dd|naturalproductmech:mibig-fd2940acc4|naturalproductmech:mibig-c9721b757b|HHJKLMAAAQXSLU|HNLYCKPDQJMNHD|FAUJQEJMUWYQEX|LMSXLLMHAAGBSJ",
+      "."
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T06:22:30.350473Z",
+    "finished_at": "2026-10-14T06:22:30.594925Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/local-search.log",
+    "log_sha256": "788c1176197944fe3f3e2dceda119c1b022ebd11530886db5ad9ddb0e1343ae4"
+  },
+  "prepare.receipt.json": {
+    "command": [
+      "uv",
+      "run",
+      "python",
+      "/private/tmp/npmech-numbered-review-rKbZU4/prepare.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T06:21:31.560142Z",
+    "finished_at": "2026-10-14T06:21:50.133782Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/prepare.log",
+    "log_sha256": "b57929d1cb4be0400904f9e112e9e4b9b31d603e9ebdac820e1c503e4308e87e"
+  },
+  "preview-v2.receipt.json": {
+    "command": [
+      "uv",
+      "run",
+      "python",
+      "/private/tmp/npmech-numbered-review-rKbZU4/author_reviews.py",
+      "--preview"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T06:37:37.769602Z",
+    "finished_at": "2026-10-14T06:38:09.449965Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/preview-v2.log",
+    "log_sha256": "9295165945e8b48d1e53961480eab43499a0094f781ff35703441af721dd17a4"
+  },
+  "preview-v3.receipt.json": {
+    "command": [
+      "uv",
+      "run",
+      "python",
+      "/private/tmp/npmech-numbered-review-rKbZU4/author_reviews.py",
+      "--preview"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T06:43:24.415033Z",
+    "finished_at": "2026-10-14T06:43:57.172475Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/preview-v3.log",
+    "log_sha256": "4591f0a376a5ae68c030b5978aafcb72340a80530ce57b08c35051e7bbac9986"
+  },
+  "preview-validate-v2.receipt.json": {
+    "command": [
+      "uv",
+      "run",
+      "python",
+      "-c",
+      "import json, subprocess; from pathlib import Path; items=json.loads(Path('/private/tmp/npmech-numbered-review-rKbZU4/preview-index-v2.json').read_text()); [subprocess.run(['uv','run','python','scripts/record_review.py','validate',x['content']],check=True) for x in items]"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T06:38:21.008587Z",
+    "finished_at": "2026-10-14T06:38:26.886250Z",
+    "exit_code": 1,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/preview-validate-v2.log",
+    "log_sha256": "90ac3a0e4733907d260bdf602e3520d54332b3e3f4b13090681f331a23b73b35"
+  },
+  "preview-validate-v3.receipt.json": {
+    "command": [
+      "uv",
+      "run",
+      "python",
+      "-c",
+      "import json, subprocess; from pathlib import Path; items=json.loads(Path('/private/tmp/npmech-numbered-review-rKbZU4/preview-index-v3.json').read_text()); [subprocess.run(['uv','run','python','scripts/record_review.py','validate',x['content']],check=True) for x in items]"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T06:46:18.460383Z",
+    "finished_at": "2026-10-14T06:46:30.225402Z",
+    "exit_code": 1,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/preview-validate-v3.log",
+    "log_sha256": "88e79ee675bea2a95755f44ececae9dfe8d7f072f8354dbd8f687f7df965a7e2"
+  },
+  "preview-validate.receipt.json": {
+    "command": [
+      "uv",
+      "run",
+      "python",
+      "-c",
+      "import json, subprocess; from pathlib import Path; p=Path('/private/tmp/npmech-numbered-review-rKbZU4/preview-index.json'); items=json.loads(p.read_text()); [subprocess.run(['uv','run','python','scripts/record_review.py','validate',x['content']],check=True) for x in items]"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T06:36:07.690843Z",
+    "finished_at": "2026-10-14T06:36:14.315743Z",
+    "exit_code": 1,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/preview-validate.log",
+    "log_sha256": "734e6faaf65066c3f5a6718c9a44f495724328f623579ad60760d41c8bfb2c27"
+  },
+  "preview.receipt.json": {
+    "command": [
+      "uv",
+      "run",
+      "python",
+      "/private/tmp/npmech-numbered-review-rKbZU4/author_reviews.py",
+      "--preview"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T06:34:52.548716Z",
+    "finished_at": "2026-10-14T06:35:25.677464Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/preview.log",
+    "log_sha256": "8d4bec5ed65d15fae3f15a3bc3332720c5b656696d9130bb6218a899e506634a"
+  },
+  "qc.receipt.json": {
+    "command": [
+      "just",
+      "qc"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T06:21:43.538432Z",
+    "finished_at": "2026-10-14T06:58:49.953099Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/qc.log",
+    "log_sha256": "1a1208d0f7253ac83660c1d662961f27fbab0dcedeb6ce347c6b5b2d27d7beb2"
+  },
+  "queue.receipt.json": {
+    "command": [
+      "just",
+      "review-queue",
+      "--tsv",
+      "/private/tmp/npmech-numbered-review-rKbZU4/review-queue.tsv"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T06:26:23.499700Z",
+    "finished_at": "2026-10-14T06:28:03.667439Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/queue.log",
+    "log_sha256": "ca4d0e64fbe0fe991226f9fc89998d4931daccae98e094ffa3cfc196e1429130"
+  },
+  "replay.receipt.json": {
+    "command": [
+      "env",
+      "RDBASE=/private/tmp/npmech-rdkit-2026.03.5/share/RDKit",
+      "PYTHONPATH=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/lib/python3.13/site-packages",
+      "/private/tmp/npmech-rdkit-2026.03.5/bin/python",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/reviews/evidence/20261014-numbered-products/replay.py",
+      "--output",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/reviews/evidence/20261014-numbered-products/replay-result.json"
+    ],
+    "cwd": "/private/tmp",
+    "started_at": "2026-10-14T06:48:05.901705Z",
+    "finished_at": "2026-10-14T06:48:12.480439Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/replay.log",
+    "log_sha256": "735a65d5b0ddc061bede021cf7e205ea7866c65599bba29974364bf753a330d2"
+  },
+  "save.receipt.json": {
+    "command": [
+      "uv",
+      "run",
+      "python",
+      "/private/tmp/npmech-numbered-review-rKbZU4/save_reviews.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T07:01:09.604672Z",
+    "finished_at": "2026-10-14T07:02:32.319093Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/save.log",
+    "log_sha256": "e223685913b7e8f7a61567b546be1ae2bcc03c28f911592c6d35ab6b6672760e"
+  },
+  "sources-chemistry.receipt.json": {
+    "command": [
+      "uv",
+      "run",
+      "--with",
+      "rdkit==2026.3.5",
+      "python",
+      "/private/tmp/npmech-numbered-review-rKbZU4/inspect_sources.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T06:24:52.595986Z",
+    "finished_at": "2026-10-14T06:24:52.911856Z",
+    "exit_code": 1,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/sources-chemistry.log",
+    "log_sha256": "15dff4b81d3f7abb10c89061d96c2e0a8b3ed4e22b91430794d7d7d37f52deae"
+  },
+  "sources-project-path.receipt.json": {
+    "command": [
+      "env",
+      "RDBASE=/private/tmp/npmech-rdkit-2026.03.5/share/RDKit",
+      "PYTHONPATH=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/src:/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/lib/python3.13/site-packages",
+      "/private/tmp/npmech-rdkit-2026.03.5/bin/python",
+      "/private/tmp/npmech-numbered-review-rKbZU4/inspect_sources.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T06:25:43.556886Z",
+    "finished_at": "2026-10-14T06:25:49.020910Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/sources-project-path.log",
+    "log_sha256": "30b8246d511f4d0f1140f5e824d25b3f5963cb82cf7526cbe7ad83c2a1a0bca8"
+  },
+  "sources-verified.receipt.json": {
+    "command": [
+      "env",
+      "RDBASE=/private/tmp/npmech-rdkit-2026.03.5/share/RDKit",
+      "PYTHONPATH=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/.venv/lib/python3.13/site-packages",
+      "/private/tmp/npmech-rdkit-2026.03.5/bin/python",
+      "/private/tmp/npmech-numbered-review-rKbZU4/inspect_sources.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T06:25:02.351230Z",
+    "finished_at": "2026-10-14T06:25:03.633766Z",
+    "exit_code": 1,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/sources-verified.log",
+    "log_sha256": "6cffc4489d8243866ae0c55927946d02d31899bf978f0ebfc9b01c8ae8fc5d22"
+  },
+  "sources.receipt.json": {
+    "command": [
+      "uv",
+      "run",
+      "python",
+      "/private/tmp/npmech-numbered-review-rKbZU4/inspect_sources.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T06:24:36.244600Z",
+    "finished_at": "2026-10-14T06:24:36.572050Z",
+    "exit_code": 1,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/sources.log",
+    "log_sha256": "a9c31b415f0af98c356683c3447166152178c52d3e9d08a4a22491aecb3f6802"
+  },
+  "strict.receipt.json": {
+    "command": [
+      "just",
+      "validate-strict",
+      "data/natural_products/shikimates_and_phenylpropanoids/compound-8.yaml",
+      "data/natural_products/terpenoids/compound-8-2.yaml",
+      "data/natural_products/terpenoids/compound-6-2.yaml",
+      "data/natural_products/terpenoids/compound-6.yaml",
+      "--out",
+      "/private/tmp/npmech-numbered-review-rKbZU4/strict.tsv"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T06:23:43.851068Z",
+    "finished_at": "2026-10-14T06:23:51.445542Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-numbered-review-rKbZU4/strict.log",
+    "log_sha256": "061a743ffc094120c86a777136629177524d9216ef756872e59926204174f70e"
+  }
+}

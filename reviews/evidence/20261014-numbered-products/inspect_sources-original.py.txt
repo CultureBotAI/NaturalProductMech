@@ -1,0 +1,101 @@
+import csv
+import hashlib
+import json
+import xml.etree.ElementTree as ET
+from pathlib import Path
+
+import yaml
+from rdkit import Chem, rdBase
+from rdkit.Chem import rdMolDescriptors
+from naturalproductmech.curate.structure_corrections import row_digest
+
+W = Path(__file__).parent
+P = Path('reviews/evidence/20261014-compound5/inputs')
+capture = json.loads((W / 'capture.json').read_text())
+assert rdBase.rdkitVersion == '2026.03.5'
+
+
+def sha(path):
+    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+
+def rows(path):
+    with Path(path).open() as handle:
+        return list(csv.DictReader(handle, delimiter='\t'))
+
+
+docs = [yaml.safe_load(Path(t['path']).read_text()) for t in capture['targets']]
+keys = {d['chemical_structure']['standard_inchi_key'] for d in docs}
+out = dict(rdkit=rdBase.rdkitVersion, records=[], inventories={})
+chebi = rows('data/raw/chebi_structures.tsv')
+chebi_ids = {r['chebi_id'] for r in chebi if r['standard_inchi_key'] in keys}
+for name in ('chebi_structures', 'chebi_origins', 'mibig_compounds', 'npclassifier',
+             'lotus_occurrences', 'pubchem_bioassay', 'bindingdb_targets',
+             'antibioticmech_inchikeys', 'pathwaymech_products'):
+    path = Path('data/raw') / (name + '.tsv')
+    data = rows(path)
+    field = 'chebi_id' if name == 'chebi_origins' else 'standard_inchi_key'
+    assert all(field in r for r in data), name
+    matches = [r for r in data if r[field] in (chebi_ids if name == 'chebi_origins' else keys)]
+    out['inventories'][name] = dict(path=str(path), sha256=sha(path), rows_scanned=len(data),
+                                    join_field=field, matches=matches)
+for target, doc in zip(capture['targets'], docs, strict=True):
+    structure = doc['chemical_structure']
+    mol = Chem.MolFromSmiles(structure['smiles'])
+    assert mol is not None
+    inchi = Chem.MolToInchi(mol)
+    key = Chem.MolToInchiKey(mol)
+    assert (inchi, key) == (structure['standard_inchi'], structure['standard_inchi_key'])
+    centers = Chem.FindMolChiralCenters(mol, includeUnassigned=True)
+    assert structure['stereo_complete'] == all(c[1] != '?' for c in centers)
+    row = [r for r in out['inventories']['mibig_compounds']['matches'] if r['standard_inchi_key'] == key]
+    assert len(row) == 1
+    row = row[0]
+    bgc = row['mibig_accession']
+    source_path = P / 'BGC0002162.3.json' if bgc == 'BGC0002162' else W / 'BGC0002290.2.json'
+    source = json.loads(source_path.read_text())
+    member = source['compounds'][int(row['compound_index']) - 1]
+    assert member['name'] == doc['label'] and member['structure'] == structure['smiles']
+    assert source['status'] == row['entry_status'] == 'active'
+    assert str(source['version']) == row['entry_version']
+    assert str(source['taxonomy']['ncbiTaxId']) == row['taxon_id'].split(':')[1]
+    locus = source['loci'][0]
+    assert locus['accession'] == row['genome_accession']
+    assert str(locus['location']['from']) == row['locus_from']
+    assert str(locus['location']['to']) == row['locus_to']
+    out['records'].append(dict(path=target['path'], identifier=doc['identifier'], key=key,
+                              formula=rdMolDescriptors.CalcMolFormula(mol),
+                              charge=Chem.GetFormalCharge(mol), exact_mass=rdMolDescriptors.CalcExactMolWt(mol),
+                              atom_count=mol.GetNumAtoms(), carbon_count=sum(a.GetAtomicNum() == 6 for a in mol.GetAtoms()),
+                              centers=centers, ring_sizes=sorted(len(r) for r in Chem.GetSymmSSSR(mol)),
+                              raw_row=row, raw_row_sha256=row_digest(row),
+                              source_path=str(source_path), source_sha256=sha(source_path),
+                              source_compound=member))
+out['taxonomy'] = [dict(taxon_id=t.findtext('TaxId'), name=t.findtext('ScientificName'),
+                        rank=t.findtext('Rank'), lineage=t.findtext('Lineage'),
+                        other_names=[(n.tag, n.text) for n in t.findall('OtherNames/*') if n.text and n.text.strip()])
+                   for t in ET.parse(W / 'taxonomy.xml').findall('Taxon')]
+out['sequences'] = {}
+for path in (W / 'MT109335.1.xml', P / 'DS027698.1-region.xml'):
+    seqs = []
+    for seq in ET.parse(path).findall('GBSeq'):
+        features = []
+        for f in seq.findall('GBSeq_feature-table/GBFeature'):
+            if f.findtext('GBFeature_key') not in ('source', 'CDS'):
+                continue
+            features.append(dict(key=f.findtext('GBFeature_key'), location=f.findtext('GBFeature_location'),
+                                 qualifiers=[(q.findtext('GBQualifier_name'), q.findtext('GBQualifier_value'))
+                                             for q in f.findall('GBFeature_quals/GBQualifier')
+                                             if q.findtext('GBQualifier_name') != 'translation']))
+        seqs.append(dict(accession=seq.findtext('GBSeq_accession-version'), definition=seq.findtext('GBSeq_definition'),
+                         length=seq.findtext('GBSeq_length'), features=features))
+    out['sequences'][str(path)] = seqs
+out['abstracts'] = [dict(pmid=a.findtext('MedlineCitation/PMID'),
+                         title=''.join(a.find('MedlineCitation/Article/ArticleTitle').itertext()),
+                         abstract=[''.join(t.itertext()) for t in a.findall('MedlineCitation/Article/Abstract/AbstractText')],
+                         ids=[(e.attrib.get('IdType'), e.text) for e in a.findall('PubmedData/ArticleIdList/ArticleId')])
+                    for a in ET.parse(W / 'abstracts.xml').findall('PubmedArticle')]
+with (W / 'source-analysis.json').open('x') as handle:
+    json.dump(out, handle, indent=2)
+print(json.dumps({k: v for k, v in out.items() if k != 'inventories'}, indent=2))
+print(json.dumps({k: (v['rows_scanned'], len(v['matches'])) for k, v in out['inventories'].items()}, indent=2))

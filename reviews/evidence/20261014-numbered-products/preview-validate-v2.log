@@ -1,0 +1,10 @@
+topClass is deprecated - use top_class
+error: seed metadata and deterministic validation are not scientific review
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import json, subprocess; from pathlib import Path; items=json.loads(Path('/private/tmp/npmech-numbered-review-rKbZU4/preview-index-v2.json').read_text()); [subprocess.run(['uv','run','python','scripts/record_review.py','validate',x['content']],check=True) for x in items]
+                                                                                                                                                                ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Caskroom/miniforge/base/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['uv', 'run', 'python', 'scripts/record_review.py', 'validate', '/private/tmp/npmech-numbered-review-rKbZU4/20261014T063744Z-compound-8-preview.yaml']' returned non-zero exit status 1.

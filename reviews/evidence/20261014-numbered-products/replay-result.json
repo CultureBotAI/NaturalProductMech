@@ -1,0 +1,297 @@
+{
+  "rdkit": "2026.03.5",
+  "records": [
+    {
+      "path": "data/natural_products/shikimates_and_phenylpropanoids/compound-8.yaml",
+      "key": "HHJKLMAAAQXSLU-UHFFFAOYSA-N",
+      "formula": "C12H14O5",
+      "charge": 0,
+      "exact_mass": 238.084123548,
+      "centers": [
+        [
+          3,
+          "?"
+        ]
+      ],
+      "ring_sizes": [
+        6
+      ],
+      "source_id": "BGC0002290:7"
+    },
+    {
+      "path": "data/natural_products/terpenoids/compound-8-2.yaml",
+      "key": "HNLYCKPDQJMNHD-OQYJSSGXSA-N",
+      "formula": "C25H41+",
+      "charge": 1,
+      "exact_mass": 341.32027773209,
+      "centers": [
+        [
+          5,
+          "?"
+        ],
+        [
+          7,
+          "R"
+        ],
+        [
+          12,
+          "?"
+        ],
+        [
+          14,
+          "R"
+        ],
+        [
+          17,
+          "R"
+        ],
+        [
+          22,
+          "S"
+        ],
+        [
+          24,
+          "?"
+        ]
+      ],
+      "ring_sizes": [
+        5,
+        5,
+        6,
+        8
+      ],
+      "source_id": "BGC0002162:6"
+    },
+    {
+      "path": "data/natural_products/terpenoids/compound-6-2.yaml",
+      "key": "FAUJQEJMUWYQEX-PNWBJGBJSA-N",
+      "formula": "C25H41+",
+      "charge": 1,
+      "exact_mass": 341.32027773209,
+      "centers": [
+        [
+          3,
+          "R"
+        ],
+        [
+          6,
+          "R"
+        ],
+        [
+          8,
+          "S"
+        ]
+      ],
+      "ring_sizes": [
+        5,
+        15
+      ],
+      "source_id": "BGC0002162:3"
+    },
+    {
+      "path": "data/natural_products/terpenoids/compound-6.yaml",
+      "key": "LMSXLLMHAAGBSJ-UHFFFAOYSA-N",
+      "formula": "C12H10O4",
+      "charge": 0,
+      "exact_mass": 218.0579088,
+      "centers": [],
+      "ring_sizes": [
+        6
+      ],
+      "source_id": "BGC0002290:9"
+    }
+  ],
+  "inventories": {
+    "chebi_structures": {
+      "rows_scanned": 45895,
+      "join_field": "standard_inchi_key",
+      "matches": []
+    },
+    "chebi_origins": {
+      "rows_scanned": 18159,
+      "join_field": "chebi_id",
+      "matches": []
+    },
+    "mibig_compounds": {
+      "rows_scanned": 3449,
+      "join_field": "standard_inchi_key",
+      "matches": [
+        {
+          "mibig_accession": "BGC0002162",
+          "entry_version": "3",
+          "entry_status": "active",
+          "entry_quality": "questionable",
+          "entry_completeness": "unknown",
+          "compound_name": "compound 6",
+          "compound_index": "3",
+          "smiles": "CC(C)[C@H]1CC[C@@]2(C)[C@@]1([H])C[CH+]/C(C)=C/CC/C(C)=C/CC/C(C)=C/C2",
+          "standard_inchi": "InChI=1S/C25H41/c1-19(2)23-16-18-25(6)17-15-22(5)12-8-10-20(3)9-7-11-21(4)13-14-24(23)25/h10-11,13,15,19,23-24H,7-9,12,14,16-18H2,1-6H3/q+1/b20-10+,21-11+,22-15+/t23-,24+,25+/m1/s1",
+          "standard_inchi_key": "FAUJQEJMUWYQEX-PNWBJGBJSA-N",
+          "stereo_complete": "true",
+          "compound_classes": "",
+          "database_ids": "",
+          "taxon_id": "NCBITaxon:331117",
+          "taxon_label": "Aspergillus fischeri NRRL 181",
+          "bgc_classes": "terpene",
+          "bgc_subclasses": "Unknown",
+          "genome_accession": "DS027698.1",
+          "locus_from": "2485363",
+          "locus_to": "2490827",
+          "locus_evidence_methods": "Heterologous expression",
+          "producer_evidence_basis": "SOURCE_ASSERTION",
+          "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED",
+          "primary_reference": "DOI:10.1021/jacs.5b08319",
+          "reference_basis": "COMPOUND_EVIDENCE"
+        },
+        {
+          "mibig_accession": "BGC0002162",
+          "entry_version": "3",
+          "entry_status": "active",
+          "entry_quality": "questionable",
+          "entry_completeness": "unknown",
+          "compound_name": "compound 8",
+          "compound_index": "6",
+          "smiles": "C/C1=C2CCC(C)[C@]([H])\\2CC[C+](C)C3C[C@](CC[C@@H]4C(C)C)(C)[C@@]4([H])CC13",
+          "standard_inchi": "InChI=1S/C25H41/c1-15(2)19-11-12-25(6)14-23-17(4)7-9-20-16(3)8-10-21(20)18(5)22(23)13-24(19)25/h15-16,19-20,22-24H,7-14H2,1-6H3/q+1/b21-18-/t16?,19-,20-,22?,23?,24+,25-/m1/s1",
+          "standard_inchi_key": "HNLYCKPDQJMNHD-OQYJSSGXSA-N",
+          "stereo_complete": "false",
+          "compound_classes": "",
+          "database_ids": "",
+          "taxon_id": "NCBITaxon:331117",
+          "taxon_label": "Aspergillus fischeri NRRL 181",
+          "bgc_classes": "terpene",
+          "bgc_subclasses": "Unknown",
+          "genome_accession": "DS027698.1",
+          "locus_from": "2485363",
+          "locus_to": "2490827",
+          "locus_evidence_methods": "Heterologous expression",
+          "producer_evidence_basis": "SOURCE_ASSERTION",
+          "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED",
+          "primary_reference": "DOI:10.1021/jacs.5b08319",
+          "reference_basis": "COMPOUND_EVIDENCE"
+        },
+        {
+          "mibig_accession": "BGC0002290",
+          "entry_version": "2",
+          "entry_status": "active",
+          "entry_quality": "questionable",
+          "entry_completeness": "unknown",
+          "compound_name": "compound 8",
+          "compound_index": "7",
+          "smiles": "CC(C(C(O)C1=C(O)C=CC(C(O)=O)=C1)=O)C",
+          "standard_inchi": "InChI=1S/C12H14O5/c1-6(2)10(14)11(15)8-5-7(12(16)17)3-4-9(8)13/h3-6,11,13,15H,1-2H3,(H,16,17)",
+          "standard_inchi_key": "HHJKLMAAAQXSLU-UHFFFAOYSA-N",
+          "stereo_complete": "false",
+          "compound_classes": "",
+          "database_ids": "",
+          "taxon_id": "NCBITaxon:1896107",
+          "taxon_label": "Biscogniauxia sp.",
+          "bgc_classes": "other",
+          "bgc_subclasses": "other",
+          "genome_accession": "MT109335.1",
+          "locus_from": "1",
+          "locus_to": "37984",
+          "locus_evidence_methods": "Heterologous expression",
+          "producer_evidence_basis": "SOURCE_ASSERTION",
+          "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED",
+          "primary_reference": "PMID:32364293",
+          "reference_basis": "ENTRY"
+        },
+        {
+          "mibig_accession": "BGC0002290",
+          "entry_version": "2",
+          "entry_status": "active",
+          "entry_quality": "questionable",
+          "entry_completeness": "unknown",
+          "compound_name": "compound 6",
+          "compound_index": "9",
+          "smiles": "CC(C#CC1=C(C(O)=CC(C(O)=O)=C1)O)=C",
+          "standard_inchi": "InChI=1S/C12H10O4/c1-7(2)3-4-8-5-9(12(15)16)6-10(13)11(8)14/h5-6,13-14H,1H2,2H3,(H,15,16)",
+          "standard_inchi_key": "LMSXLLMHAAGBSJ-UHFFFAOYSA-N",
+          "stereo_complete": "true",
+          "compound_classes": "",
+          "database_ids": "",
+          "taxon_id": "NCBITaxon:1896107",
+          "taxon_label": "Biscogniauxia sp.",
+          "bgc_classes": "other",
+          "bgc_subclasses": "other",
+          "genome_accession": "MT109335.1",
+          "locus_from": "1",
+          "locus_to": "37984",
+          "locus_evidence_methods": "Heterologous expression",
+          "producer_evidence_basis": "SOURCE_ASSERTION",
+          "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED",
+          "primary_reference": "PMID:32364293",
+          "reference_basis": "ENTRY"
+        }
+      ]
+    },
+    "npclassifier": {
+      "rows_scanned": 3116,
+      "join_field": "standard_inchi_key",
+      "matches": [
+        {
+          "standard_inchi_key": "FAUJQEJMUWYQEX-PNWBJGBJSA-N",
+          "smiles": "CC(C)[C@H]1CC[C@@]2(C)[C@@]1([H])C[CH+]/C(C)=C/CC/C(C)=C/CC/C(C)=C/C2",
+          "pathway_results": "Terpenoids",
+          "superclass_results": "Diterpenoids",
+          "class_results": "Cembrane diterpenoids",
+          "is_glycoside": "false",
+          "model_version": "npclassifier.gnps2.org@2026-09-07"
+        },
+        {
+          "standard_inchi_key": "HHJKLMAAAQXSLU-UHFFFAOYSA-N",
+          "smiles": "CC(C(C(O)C1=C(O)C=CC(C(O)=O)=C1)=O)C",
+          "pathway_results": "Shikimates and Phenylpropanoids",
+          "superclass_results": "Phenolic acids (C6-C1)",
+          "class_results": "Simple phenolic acids",
+          "is_glycoside": "false",
+          "model_version": "npclassifier.gnps2.org@2026-09-07"
+        },
+        {
+          "standard_inchi_key": "HNLYCKPDQJMNHD-OQYJSSGXSA-N",
+          "smiles": "C/C1=C2CCC(C)[C@]([H])\\2CC[C+](C)C3C[C@](CC[C@@H]4C(C)C)(C)[C@@]4([H])CC13",
+          "pathway_results": "Terpenoids",
+          "superclass_results": "Diterpenoids",
+          "class_results": "Fusicoccane diterpenoids",
+          "is_glycoside": "false",
+          "model_version": "npclassifier.gnps2.org@2026-09-07"
+        },
+        {
+          "standard_inchi_key": "LMSXLLMHAAGBSJ-UHFFFAOYSA-N",
+          "smiles": "CC(C#CC1=C(C(O)=CC(C(O)=O)=C1)O)=C",
+          "pathway_results": "Terpenoids",
+          "superclass_results": "Meroterpenoids",
+          "class_results": "Miscellaneous meroterpenoids",
+          "is_glycoside": "false",
+          "model_version": "npclassifier.gnps2.org@2026-09-07"
+        }
+      ]
+    },
+    "lotus_occurrences": {
+      "rows_scanned": 10226,
+      "join_field": "standard_inchi_key",
+      "matches": []
+    },
+    "pubchem_bioassay": {
+      "rows_scanned": 11458,
+      "join_field": "standard_inchi_key",
+      "matches": []
+    },
+    "bindingdb_targets": {
+      "rows_scanned": 123,
+      "join_field": "standard_inchi_key",
+      "matches": []
+    },
+    "antibioticmech_inchikeys": {
+      "rows_scanned": 2920,
+      "join_field": "standard_inchi_key",
+      "matches": []
+    },
+    "pathwaymech_products": {
+      "rows_scanned": 4,
+      "join_field": "standard_inchi_key",
+      "matches": []
+    }
+  }
+}

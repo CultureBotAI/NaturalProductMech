@@ -1,0 +1,956 @@
+{
+  "rdkit": "2026.03.5",
+  "records": [
+    {
+      "path": "data/natural_products/shikimates_and_phenylpropanoids/compound-8.yaml",
+      "identifier": "naturalproductmech:mibig-007406ddf9",
+      "key": "HHJKLMAAAQXSLU-UHFFFAOYSA-N",
+      "formula": "C12H14O5",
+      "charge": 0,
+      "exact_mass": 238.084123548,
+      "atom_count": 17,
+      "carbon_count": 12,
+      "centers": [
+        [
+          3,
+          "?"
+        ]
+      ],
+      "ring_sizes": [
+        6
+      ],
+      "raw_row": {
+        "mibig_accession": "BGC0002290",
+        "entry_version": "2",
+        "entry_status": "active",
+        "entry_quality": "questionable",
+        "entry_completeness": "unknown",
+        "compound_name": "compound 8",
+        "compound_index": "7",
+        "smiles": "CC(C(C(O)C1=C(O)C=CC(C(O)=O)=C1)=O)C",
+        "standard_inchi": "InChI=1S/C12H14O5/c1-6(2)10(14)11(15)8-5-7(12(16)17)3-4-9(8)13/h3-6,11,13,15H,1-2H3,(H,16,17)",
+        "standard_inchi_key": "HHJKLMAAAQXSLU-UHFFFAOYSA-N",
+        "stereo_complete": "false",
+        "compound_classes": "",
+        "database_ids": "",
+        "taxon_id": "NCBITaxon:1896107",
+        "taxon_label": "Biscogniauxia sp.",
+        "bgc_classes": "other",
+        "bgc_subclasses": "other",
+        "genome_accession": "MT109335.1",
+        "locus_from": "1",
+        "locus_to": "37984",
+        "locus_evidence_methods": "Heterologous expression",
+        "producer_evidence_basis": "SOURCE_ASSERTION",
+        "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED",
+        "primary_reference": "PMID:32364293",
+        "reference_basis": "ENTRY"
+      },
+      "raw_row_sha256": "9be37382c03bd65d7af740c6319676f8126daf1a2f7b38c3bdf0bf404ec8d6a7",
+      "source_path": "/private/tmp/npmech-numbered-review-rKbZU4/BGC0002290.2.json",
+      "source_sha256": "21106bc3cc505cffa4a3097570faca7453787ae5829af73fbe8337b72fe0a4a2",
+      "source_compound": {
+        "name": "compound 8",
+        "evidence": [],
+        "structure": "CC(C(C(O)C1=C(O)C=CC(C(O)=O)=C1)=O)C"
+      }
+    },
+    {
+      "path": "data/natural_products/terpenoids/compound-8-2.yaml",
+      "identifier": "naturalproductmech:mibig-dd802af1dd",
+      "key": "HNLYCKPDQJMNHD-OQYJSSGXSA-N",
+      "formula": "C25H41+",
+      "charge": 1,
+      "exact_mass": 341.32027773209,
+      "atom_count": 25,
+      "carbon_count": 25,
+      "centers": [
+        [
+          5,
+          "?"
+        ],
+        [
+          7,
+          "R"
+        ],
+        [
+          12,
+          "?"
+        ],
+        [
+          14,
+          "R"
+        ],
+        [
+          17,
+          "R"
+        ],
+        [
+          22,
+          "S"
+        ],
+        [
+          24,
+          "?"
+        ]
+      ],
+      "ring_sizes": [
+        5,
+        5,
+        6,
+        8
+      ],
+      "raw_row": {
+        "mibig_accession": "BGC0002162",
+        "entry_version": "3",
+        "entry_status": "active",
+        "entry_quality": "questionable",
+        "entry_completeness": "unknown",
+        "compound_name": "compound 8",
+        "compound_index": "6",
+        "smiles": "C/C1=C2CCC(C)[C@]([H])\\2CC[C+](C)C3C[C@](CC[C@@H]4C(C)C)(C)[C@@]4([H])CC13",
+        "standard_inchi": "InChI=1S/C25H41/c1-15(2)19-11-12-25(6)14-23-17(4)7-9-20-16(3)8-10-21(20)18(5)22(23)13-24(19)25/h15-16,19-20,22-24H,7-14H2,1-6H3/q+1/b21-18-/t16?,19-,20-,22?,23?,24+,25-/m1/s1",
+        "standard_inchi_key": "HNLYCKPDQJMNHD-OQYJSSGXSA-N",
+        "stereo_complete": "false",
+        "compound_classes": "",
+        "database_ids": "",
+        "taxon_id": "NCBITaxon:331117",
+        "taxon_label": "Aspergillus fischeri NRRL 181",
+        "bgc_classes": "terpene",
+        "bgc_subclasses": "Unknown",
+        "genome_accession": "DS027698.1",
+        "locus_from": "2485363",
+        "locus_to": "2490827",
+        "locus_evidence_methods": "Heterologous expression",
+        "producer_evidence_basis": "SOURCE_ASSERTION",
+        "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED",
+        "primary_reference": "DOI:10.1021/jacs.5b08319",
+        "reference_basis": "COMPOUND_EVIDENCE"
+      },
+      "raw_row_sha256": "a70e3141d6a9357080a442bc45d35bb1a04f9844ea77cae64b39708c76dc757e",
+      "source_path": "reviews/evidence/20261014-compound5/inputs/BGC0002162.3.json",
+      "source_sha256": "17f8488be3cf75c5a9fae986807e4992baba4a87de667e341511bac23b5e3836",
+      "source_compound": {
+        "name": "compound 8",
+        "evidence": [
+          {
+            "method": "NMR",
+            "references": [
+              "doi:10.1021/jacs.5b08319"
+            ]
+          }
+        ],
+        "structure": "C/C1=C2CCC(C)[C@]([H])\\2CC[C+](C)C3C[C@](CC[C@@H]4C(C)C)(C)[C@@]4([H])CC13"
+      }
+    },
+    {
+      "path": "data/natural_products/terpenoids/compound-6-2.yaml",
+      "identifier": "naturalproductmech:mibig-fd2940acc4",
+      "key": "FAUJQEJMUWYQEX-PNWBJGBJSA-N",
+      "formula": "C25H41+",
+      "charge": 1,
+      "exact_mass": 341.32027773209,
+      "atom_count": 25,
+      "carbon_count": 25,
+      "centers": [
+        [
+          3,
+          "R"
+        ],
+        [
+          6,
+          "R"
+        ],
+        [
+          8,
+          "S"
+        ]
+      ],
+      "ring_sizes": [
+        5,
+        15
+      ],
+      "raw_row": {
+        "mibig_accession": "BGC0002162",
+        "entry_version": "3",
+        "entry_status": "active",
+        "entry_quality": "questionable",
+        "entry_completeness": "unknown",
+        "compound_name": "compound 6",
+        "compound_index": "3",
+        "smiles": "CC(C)[C@H]1CC[C@@]2(C)[C@@]1([H])C[CH+]/C(C)=C/CC/C(C)=C/CC/C(C)=C/C2",
+        "standard_inchi": "InChI=1S/C25H41/c1-19(2)23-16-18-25(6)17-15-22(5)12-8-10-20(3)9-7-11-21(4)13-14-24(23)25/h10-11,13,15,19,23-24H,7-9,12,14,16-18H2,1-6H3/q+1/b20-10+,21-11+,22-15+/t23-,24+,25+/m1/s1",
+        "standard_inchi_key": "FAUJQEJMUWYQEX-PNWBJGBJSA-N",
+        "stereo_complete": "true",
+        "compound_classes": "",
+        "database_ids": "",
+        "taxon_id": "NCBITaxon:331117",
+        "taxon_label": "Aspergillus fischeri NRRL 181",
+        "bgc_classes": "terpene",
+        "bgc_subclasses": "Unknown",
+        "genome_accession": "DS027698.1",
+        "locus_from": "2485363",
+        "locus_to": "2490827",
+        "locus_evidence_methods": "Heterologous expression",
+        "producer_evidence_basis": "SOURCE_ASSERTION",
+        "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED",
+        "primary_reference": "DOI:10.1021/jacs.5b08319",
+        "reference_basis": "COMPOUND_EVIDENCE"
+      },
+      "raw_row_sha256": "36baacd0d1cc26fc65bf1d6d2dba84d27f3cc96b583357ba0f3bbdfa0dc9392f",
+      "source_path": "reviews/evidence/20261014-compound5/inputs/BGC0002162.3.json",
+      "source_sha256": "17f8488be3cf75c5a9fae986807e4992baba4a87de667e341511bac23b5e3836",
+      "source_compound": {
+        "name": "compound 6",
+        "evidence": [
+          {
+            "method": "NMR",
+            "references": [
+              "doi:10.1021/jacs.5b08319"
+            ]
+          }
+        ],
+        "structure": "CC(C)[C@H]1CC[C@@]2(C)[C@@]1([H])C[CH+]/C(C)=C/CC/C(C)=C/CC/C(C)=C/C2"
+      }
+    },
+    {
+      "path": "data/natural_products/terpenoids/compound-6.yaml",
+      "identifier": "naturalproductmech:mibig-c9721b757b",
+      "key": "LMSXLLMHAAGBSJ-UHFFFAOYSA-N",
+      "formula": "C12H10O4",
+      "charge": 0,
+      "exact_mass": 218.0579088,
+      "atom_count": 16,
+      "carbon_count": 12,
+      "centers": [],
+      "ring_sizes": [
+        6
+      ],
+      "raw_row": {
+        "mibig_accession": "BGC0002290",
+        "entry_version": "2",
+        "entry_status": "active",
+        "entry_quality": "questionable",
+        "entry_completeness": "unknown",
+        "compound_name": "compound 6",
+        "compound_index": "9",
+        "smiles": "CC(C#CC1=C(C(O)=CC(C(O)=O)=C1)O)=C",
+        "standard_inchi": "InChI=1S/C12H10O4/c1-7(2)3-4-8-5-9(12(15)16)6-10(13)11(8)14/h5-6,13-14H,1H2,2H3,(H,15,16)",
+        "standard_inchi_key": "LMSXLLMHAAGBSJ-UHFFFAOYSA-N",
+        "stereo_complete": "true",
+        "compound_classes": "",
+        "database_ids": "",
+        "taxon_id": "NCBITaxon:1896107",
+        "taxon_label": "Biscogniauxia sp.",
+        "bgc_classes": "other",
+        "bgc_subclasses": "other",
+        "genome_accession": "MT109335.1",
+        "locus_from": "1",
+        "locus_to": "37984",
+        "locus_evidence_methods": "Heterologous expression",
+        "producer_evidence_basis": "SOURCE_ASSERTION",
+        "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED",
+        "primary_reference": "PMID:32364293",
+        "reference_basis": "ENTRY"
+      },
+      "raw_row_sha256": "0b7bc2f500981ff68126a110d3911b77289bb0ab5d351ea9e80807244e0c1454",
+      "source_path": "/private/tmp/npmech-numbered-review-rKbZU4/BGC0002290.2.json",
+      "source_sha256": "21106bc3cc505cffa4a3097570faca7453787ae5829af73fbe8337b72fe0a4a2",
+      "source_compound": {
+        "name": "compound 6",
+        "evidence": [],
+        "structure": "CC(C#CC1=C(C(O)=CC(C(O)=O)=C1)O)=C"
+      }
+    }
+  ],
+  "inventories": {
+    "chebi_structures": {
+      "path": "data/raw/chebi_structures.tsv",
+      "sha256": "62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2",
+      "rows_scanned": 45895,
+      "join_field": "standard_inchi_key",
+      "matches": []
+    },
+    "chebi_origins": {
+      "path": "data/raw/chebi_origins.tsv",
+      "sha256": "fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8",
+      "rows_scanned": 18159,
+      "join_field": "chebi_id",
+      "matches": []
+    },
+    "mibig_compounds": {
+      "path": "data/raw/mibig_compounds.tsv",
+      "sha256": "e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6",
+      "rows_scanned": 3449,
+      "join_field": "standard_inchi_key",
+      "matches": [
+        {
+          "mibig_accession": "BGC0002162",
+          "entry_version": "3",
+          "entry_status": "active",
+          "entry_quality": "questionable",
+          "entry_completeness": "unknown",
+          "compound_name": "compound 6",
+          "compound_index": "3",
+          "smiles": "CC(C)[C@H]1CC[C@@]2(C)[C@@]1([H])C[CH+]/C(C)=C/CC/C(C)=C/CC/C(C)=C/C2",
+          "standard_inchi": "InChI=1S/C25H41/c1-19(2)23-16-18-25(6)17-15-22(5)12-8-10-20(3)9-7-11-21(4)13-14-24(23)25/h10-11,13,15,19,23-24H,7-9,12,14,16-18H2,1-6H3/q+1/b20-10+,21-11+,22-15+/t23-,24+,25+/m1/s1",
+          "standard_inchi_key": "FAUJQEJMUWYQEX-PNWBJGBJSA-N",
+          "stereo_complete": "true",
+          "compound_classes": "",
+          "database_ids": "",
+          "taxon_id": "NCBITaxon:331117",
+          "taxon_label": "Aspergillus fischeri NRRL 181",
+          "bgc_classes": "terpene",
+          "bgc_subclasses": "Unknown",
+          "genome_accession": "DS027698.1",
+          "locus_from": "2485363",
+          "locus_to": "2490827",
+          "locus_evidence_methods": "Heterologous expression",
+          "producer_evidence_basis": "SOURCE_ASSERTION",
+          "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED",
+          "primary_reference": "DOI:10.1021/jacs.5b08319",
+          "reference_basis": "COMPOUND_EVIDENCE"
+        },
+        {
+          "mibig_accession": "BGC0002162",
+          "entry_version": "3",
+          "entry_status": "active",
+          "entry_quality": "questionable",
+          "entry_completeness": "unknown",
+          "compound_name": "compound 8",
+          "compound_index": "6",
+          "smiles": "C/C1=C2CCC(C)[C@]([H])\\2CC[C+](C)C3C[C@](CC[C@@H]4C(C)C)(C)[C@@]4([H])CC13",
+          "standard_inchi": "InChI=1S/C25H41/c1-15(2)19-11-12-25(6)14-23-17(4)7-9-20-16(3)8-10-21(20)18(5)22(23)13-24(19)25/h15-16,19-20,22-24H,7-14H2,1-6H3/q+1/b21-18-/t16?,19-,20-,22?,23?,24+,25-/m1/s1",
+          "standard_inchi_key": "HNLYCKPDQJMNHD-OQYJSSGXSA-N",
+          "stereo_complete": "false",
+          "compound_classes": "",
+          "database_ids": "",
+          "taxon_id": "NCBITaxon:331117",
+          "taxon_label": "Aspergillus fischeri NRRL 181",
+          "bgc_classes": "terpene",
+          "bgc_subclasses": "Unknown",
+          "genome_accession": "DS027698.1",
+          "locus_from": "2485363",
+          "locus_to": "2490827",
+          "locus_evidence_methods": "Heterologous expression",
+          "producer_evidence_basis": "SOURCE_ASSERTION",
+          "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED",
+          "primary_reference": "DOI:10.1021/jacs.5b08319",
+          "reference_basis": "COMPOUND_EVIDENCE"
+        },
+        {
+          "mibig_accession": "BGC0002290",
+          "entry_version": "2",
+          "entry_status": "active",
+          "entry_quality": "questionable",
+          "entry_completeness": "unknown",
+          "compound_name": "compound 8",
+          "compound_index": "7",
+          "smiles": "CC(C(C(O)C1=C(O)C=CC(C(O)=O)=C1)=O)C",
+          "standard_inchi": "InChI=1S/C12H14O5/c1-6(2)10(14)11(15)8-5-7(12(16)17)3-4-9(8)13/h3-6,11,13,15H,1-2H3,(H,16,17)",
+          "standard_inchi_key": "HHJKLMAAAQXSLU-UHFFFAOYSA-N",
+          "stereo_complete": "false",
+          "compound_classes": "",
+          "database_ids": "",
+          "taxon_id": "NCBITaxon:1896107",
+          "taxon_label": "Biscogniauxia sp.",
+          "bgc_classes": "other",
+          "bgc_subclasses": "other",
+          "genome_accession": "MT109335.1",
+          "locus_from": "1",
+          "locus_to": "37984",
+          "locus_evidence_methods": "Heterologous expression",
+          "producer_evidence_basis": "SOURCE_ASSERTION",
+          "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED",
+          "primary_reference": "PMID:32364293",
+          "reference_basis": "ENTRY"
+        },
+        {
+          "mibig_accession": "BGC0002290",
+          "entry_version": "2",
+          "entry_status": "active",
+          "entry_quality": "questionable",
+          "entry_completeness": "unknown",
+          "compound_name": "compound 6",
+          "compound_index": "9",
+          "smiles": "CC(C#CC1=C(C(O)=CC(C(O)=O)=C1)O)=C",
+          "standard_inchi": "InChI=1S/C12H10O4/c1-7(2)3-4-8-5-9(12(15)16)6-10(13)11(8)14/h5-6,13-14H,1H2,2H3,(H,15,16)",
+          "standard_inchi_key": "LMSXLLMHAAGBSJ-UHFFFAOYSA-N",
+          "stereo_complete": "true",
+          "compound_classes": "",
+          "database_ids": "",
+          "taxon_id": "NCBITaxon:1896107",
+          "taxon_label": "Biscogniauxia sp.",
+          "bgc_classes": "other",
+          "bgc_subclasses": "other",
+          "genome_accession": "MT109335.1",
+          "locus_from": "1",
+          "locus_to": "37984",
+          "locus_evidence_methods": "Heterologous expression",
+          "producer_evidence_basis": "SOURCE_ASSERTION",
+          "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED",
+          "primary_reference": "PMID:32364293",
+          "reference_basis": "ENTRY"
+        }
+      ]
+    },
+    "npclassifier": {
+      "path": "data/raw/npclassifier.tsv",
+      "sha256": "7b9b9f78f5b14aea9fabb163bbaa9e842920a7e9b07deac8f98c97666e9e23fc",
+      "rows_scanned": 3116,
+      "join_field": "standard_inchi_key",
+      "matches": [
+        {
+          "standard_inchi_key": "FAUJQEJMUWYQEX-PNWBJGBJSA-N",
+          "smiles": "CC(C)[C@H]1CC[C@@]2(C)[C@@]1([H])C[CH+]/C(C)=C/CC/C(C)=C/CC/C(C)=C/C2",
+          "pathway_results": "Terpenoids",
+          "superclass_results": "Diterpenoids",
+          "class_results": "Cembrane diterpenoids",
+          "is_glycoside": "false",
+          "model_version": "npclassifier.gnps2.org@2026-09-07"
+        },
+        {
+          "standard_inchi_key": "HHJKLMAAAQXSLU-UHFFFAOYSA-N",
+          "smiles": "CC(C(C(O)C1=C(O)C=CC(C(O)=O)=C1)=O)C",
+          "pathway_results": "Shikimates and Phenylpropanoids",
+          "superclass_results": "Phenolic acids (C6-C1)",
+          "class_results": "Simple phenolic acids",
+          "is_glycoside": "false",
+          "model_version": "npclassifier.gnps2.org@2026-09-07"
+        },
+        {
+          "standard_inchi_key": "HNLYCKPDQJMNHD-OQYJSSGXSA-N",
+          "smiles": "C/C1=C2CCC(C)[C@]([H])\\2CC[C+](C)C3C[C@](CC[C@@H]4C(C)C)(C)[C@@]4([H])CC13",
+          "pathway_results": "Terpenoids",
+          "superclass_results": "Diterpenoids",
+          "class_results": "Fusicoccane diterpenoids",
+          "is_glycoside": "false",
+          "model_version": "npclassifier.gnps2.org@2026-09-07"
+        },
+        {
+          "standard_inchi_key": "LMSXLLMHAAGBSJ-UHFFFAOYSA-N",
+          "smiles": "CC(C#CC1=C(C(O)=CC(C(O)=O)=C1)O)=C",
+          "pathway_results": "Terpenoids",
+          "superclass_results": "Meroterpenoids",
+          "class_results": "Miscellaneous meroterpenoids",
+          "is_glycoside": "false",
+          "model_version": "npclassifier.gnps2.org@2026-09-07"
+        }
+      ]
+    },
+    "lotus_occurrences": {
+      "path": "data/raw/lotus_occurrences.tsv",
+      "sha256": "ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94",
+      "rows_scanned": 10226,
+      "join_field": "standard_inchi_key",
+      "matches": []
+    },
+    "pubchem_bioassay": {
+      "path": "data/raw/pubchem_bioassay.tsv",
+      "sha256": "6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b",
+      "rows_scanned": 11458,
+      "join_field": "standard_inchi_key",
+      "matches": []
+    },
+    "bindingdb_targets": {
+      "path": "data/raw/bindingdb_targets.tsv",
+      "sha256": "3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1",
+      "rows_scanned": 123,
+      "join_field": "standard_inchi_key",
+      "matches": []
+    },
+    "antibioticmech_inchikeys": {
+      "path": "data/raw/antibioticmech_inchikeys.tsv",
+      "sha256": "ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6",
+      "rows_scanned": 2920,
+      "join_field": "standard_inchi_key",
+      "matches": []
+    },
+    "pathwaymech_products": {
+      "path": "data/raw/pathwaymech_products.tsv",
+      "sha256": "28ff699b83648614928f7ea5d8e8f5aee49a34ebbc9b6e9dbfece255383b7e04",
+      "rows_scanned": 4,
+      "join_field": "standard_inchi_key",
+      "matches": []
+    }
+  },
+  "taxonomy": [
+    {
+      "taxon_id": "1896107",
+      "name": "Biscogniauxia sp.",
+      "rank": "species",
+      "lineage": "cellular organisms; Eukaryota; Opisthokonta; Fungi; Dikarya; Ascomycota; saccharomyceta; Pezizomycotina; leotiomyceta; sordariomyceta; Sordariomycetes; Xylariomycetidae; Xylariales; Xylariaceae; Biscogniauxia; unclassified Biscogniauxia",
+      "other_names": []
+    },
+    {
+      "taxon_id": "331117",
+      "name": "Aspergillus fischeri NRRL 181",
+      "rank": "strain",
+      "lineage": "cellular organisms; Eukaryota; Opisthokonta; Fungi; Dikarya; Ascomycota; saccharomyceta; Pezizomycotina; leotiomyceta; Eurotiomycetes; Eurotiomycetidae; Eurotiales; Aspergillaceae; Aspergillus; Aspergillus subgen. Fumigati; Aspergillus fischeri",
+      "other_names": [
+        [
+          "Synonym",
+          "Neosartorya fischeri NRRL 181"
+        ]
+      ]
+    }
+  ],
+  "sequences": {
+    "/private/tmp/npmech-numbered-review-rKbZU4/MT109335.1.xml": [
+      {
+        "accession": "MT109335.1",
+        "definition": "Biscogniauxia sp. strain 71-10-1-1 biscognienyne B biosynthetic gene cluster, complete sequence",
+        "length": "37984",
+        "features": [
+          {
+            "key": "source",
+            "location": "1..37984",
+            "qualifiers": [
+              [
+                "organism",
+                "Biscogniauxia sp."
+              ],
+              [
+                "mol_type",
+                "genomic DNA"
+              ],
+              [
+                "strain",
+                "71-10-1-1"
+              ],
+              [
+                "db_xref",
+                "taxon:1896107"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "join(5129..5182,5240..5335,5390..5943,6009..6609)",
+            "qualifiers": [
+              [
+                "gene",
+                "bisA"
+              ],
+              [
+                "note",
+                "FAD-dependent monooxygenase"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "1"
+              ],
+              [
+                "product",
+                "BisA"
+              ],
+              [
+                "protein_id",
+                "QJQ82455.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "join(8174..9369,9459..9585)",
+            "qualifiers": [
+              [
+                "gene",
+                "bisB"
+              ],
+              [
+                "note",
+                "ABBA-type prenyltransferase"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "1"
+              ],
+              [
+                "product",
+                "BisB"
+              ],
+              [
+                "protein_id",
+                "QJQ82456.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "join(10908..11104,11182..11307,11411..11698,11806..11845)",
+            "qualifiers": [
+              [
+                "gene",
+                "bisC"
+              ],
+              [
+                "note",
+                "cupin domain-containing protein"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "1"
+              ],
+              [
+                "product",
+                "BisC"
+              ],
+              [
+                "protein_id",
+                "QJQ82457.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(join(12693..13005,13067..13872,13947..14087))",
+            "qualifiers": [
+              [
+                "gene",
+                "bisD"
+              ],
+              [
+                "note",
+                "4-hydroxybenzoate decarboxylase"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "1"
+              ],
+              [
+                "product",
+                "BisD"
+              ],
+              [
+                "protein_id",
+                "QJQ82458.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(14830..15735)",
+            "qualifiers": [
+              [
+                "gene",
+                "bisE"
+              ],
+              [
+                "note",
+                "short chain dehydrogenase/reductase"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "1"
+              ],
+              [
+                "product",
+                "BisE"
+              ],
+              [
+                "protein_id",
+                "QJQ82459.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "join(16668..16709,16765..17033,17104..17420,17493..17683)",
+            "qualifiers": [
+              [
+                "gene",
+                "bisF"
+              ],
+              [
+                "note",
+                "short chain dehydrogenase/reductase"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "1"
+              ],
+              [
+                "product",
+                "BisF"
+              ],
+              [
+                "protein_id",
+                "QJQ82460.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(join(18456..18726,18810..19171,19229..19635,19698..19911,19977..20267))",
+            "qualifiers": [
+              [
+                "gene",
+                "bisG"
+              ],
+              [
+                "note",
+                "FAD binding domain-containing protein"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "1"
+              ],
+              [
+                "product",
+                "BisG"
+              ],
+              [
+                "protein_id",
+                "QJQ82461.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "join(21537..21591,21693..22025,22137..22642,22711..23298)",
+            "qualifiers": [
+              [
+                "gene",
+                "bisH"
+              ],
+              [
+                "note",
+                "zinc-finger transcription factor"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "1"
+              ],
+              [
+                "product",
+                "BisH"
+              ],
+              [
+                "protein_id",
+                "QJQ82462.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(join(24446..24589,24688..25878,25938..26162))",
+            "qualifiers": [
+              [
+                "gene",
+                "bisI"
+              ],
+              [
+                "note",
+                "cytochrome P450"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "1"
+              ],
+              [
+                "product",
+                "BisI"
+              ],
+              [
+                "protein_id",
+                "QJQ82463.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "26863..27900",
+            "qualifiers": [
+              [
+                "gene",
+                "bisJ"
+              ],
+              [
+                "note",
+                "UbiA-type prenyltransferase"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "1"
+              ],
+              [
+                "product",
+                "BisJ"
+              ],
+              [
+                "protein_id",
+                "QJQ82464.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "join(29953..30086,30147..30253,30314..32193)",
+            "qualifiers": [
+              [
+                "gene",
+                "bisK"
+              ],
+              [
+                "note",
+                "phenylalanine ammonia-lyase"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "1"
+              ],
+              [
+                "product",
+                "BisK"
+              ],
+              [
+                "protein_id",
+                "QJQ82465.1"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "reviews/evidence/20261014-compound5/inputs/DS027698.1-region.xml": [
+      {
+        "accession": "DS027698.1",
+        "definition": "Neosartorya fischeri NRRL 181 1099437636266 genomic scaffold, whole genome shotgun sequence",
+        "length": "5465",
+        "features": [
+          {
+            "key": "source",
+            "location": "1..5465",
+            "qualifiers": [
+              [
+                "organism",
+                "Aspergillus fischeri NRRL 181"
+              ],
+              [
+                "mol_type",
+                "genomic DNA"
+              ],
+              [
+                "strain",
+                "NRRL 181"
+              ],
+              [
+                "type_material",
+                "culture from neotype of Aspergillus fischeri"
+              ],
+              [
+                "db_xref",
+                "taxon:331117"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "complement(join(1..607,674..796,887..1103,1159..1690,1758..1829))",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "NFIA_055490"
+              ],
+              [
+                "note",
+                "encoded by transcript NFIA_055490A;\npredicted by EVM"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "1"
+              ],
+              [
+                "product",
+                "benzoate 4-monooxygenase cytochrome P450"
+              ],
+              [
+                "protein_id",
+                "EAW16200.1"
+              ]
+            ]
+          },
+          {
+            "key": "CDS",
+            "location": "join(2989..3274,3329..3623,3692..4436,4497..5465)",
+            "qualifiers": [
+              [
+                "locus_tag",
+                "NFIA_055500"
+              ],
+              [
+                "note",
+                "encoded by transcript NFIA_055500A;\npredicted by EVM"
+              ],
+              [
+                "codon_start",
+                "1"
+              ],
+              [
+                "transl_table",
+                "1"
+              ],
+              [
+                "product",
+                "geranylgeranyl pyrophosphate synthase"
+              ],
+              [
+                "protein_id",
+                "EAW16201.1"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

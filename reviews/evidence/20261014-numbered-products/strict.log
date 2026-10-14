@@ -1,0 +1,8 @@
+uv run python scripts/validate_strict.py data/natural_products/shikimates_and_phenylpropanoids/compound-8.yaml data/natural_products/terpenoids/compound-8-2.yaml data/natural_products/terpenoids/compound-6-2.yaml data/natural_products/terpenoids/compound-6.yaml --out /private/tmp/npmech-numbered-review-rKbZU4/strict.tsv
+Validating 4 files with 15 workers; schema=/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech/src/naturalproductmech/schema/naturalproductmech.yaml
+
+=== validate-strict summary ===
+  files scanned:      4
+  files with ERROR:   0
+  total ERROR rows:   0
+  TSV:                /private/tmp/npmech-numbered-review-rKbZU4/strict.tsv
