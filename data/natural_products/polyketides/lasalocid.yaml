@@ -78,9 +78,34 @@ producer_organisms:
   notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
     this field grades the taxon claim, which is a different question.'
   evidence:
-  - reference: PMID:19129623
+  - reference: DOI:10.1128/AEM.02915-10
     evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0001648 entry version 5; citation taken from the entry level
+    notes: MIBiG BGC0001648 entry version 5; claim-specific citation selected through
+      a reviewed producer_reference correction. This remains a database assertion,
+      not independently graded experimental evidence.
+  - reference: DOI:10.1271/bbb.80631
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Citation routing only. The imported PMID:19129623 studies ATCC35851/pKSL/AB449340,
+      not FXJ1.172/KT591188.1. The inspected 2011 producer study identifies FXJ1.172
+      product as lasalocid A by mass, UV and MS2 comparison to JCM3373; it does not
+      independently determine absolute stereochemistry or characterize the entire
+      deposited cluster. Route the locus claim to KT591188.1, a putative partial BGC
+      submission, not to the AB449340 experiment. Preserve source-tier grades and
+      original raw references; no taxon, chemistry or locus-coordinate change. See
+      issue #972. Original imported citation PMID:19129623 (ENTRY) remains in the
+      raw inventory, not as support for this claim. MIBiG source row BGC0001648:1;
+      SHA256 fbb9c924907a87713a15ff6323080124a5dea60a58dead6a941dcf34b7c83b58. Curator:
+      codex; date: 2026-10-14. Taxon, locus, chemistry and evidence grades are unchanged.'
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/KT591188.1
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: FXJ1.172. KT591188.1 names strain FXJ1.172, also identified
+      as a lasalocid A producer in DOI:10.1128/AEM.02915-10. Preserve deposited NCBITaxon:1931;
+      adding this qualifier does not remap to NCBITaxon:710705, certify absolute stereochemistry
+      or upgrade producer/locus evidence grades. See issue #973. Taxon identity and
+      evidence grade are unchanged; this is not a species-wide experiment. MIBiG source
+      row BGC0001648:1; SHA256 fbb9c924907a87713a15ff6323080124a5dea60a58dead6a941dcf34b7c83b58.
+      Curator: codex; date: 2026-10-14.'
+  strain: FXJ1.172
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0001648
   entry_version: '5'
@@ -88,9 +113,24 @@ biosynthetic_gene_clusters:
   organism_taxon_id: NCBITaxon:1931
   organism_label: Streptomyces sp.
   evidence:
-  - reference: PMID:19129623
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/KT591188.1
     evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0001648 entry version 5; citation taken from the entry level
+    notes: MIBiG BGC0001648 entry version 5; claim-specific citation selected through
+      a reviewed locus_reference correction. This remains a database assertion, not
+      independently graded experimental evidence.
+  - reference: DOI:10.1271/bbb.80631
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Citation routing only. The imported PMID:19129623 studies ATCC35851/pKSL/AB449340,
+      not FXJ1.172/KT591188.1. The inspected 2011 producer study identifies FXJ1.172
+      product as lasalocid A by mass, UV and MS2 comparison to JCM3373; it does not
+      independently determine absolute stereochemistry or characterize the entire
+      deposited cluster. Route the locus claim to KT591188.1, a putative partial BGC
+      submission, not to the AB449340 experiment. Preserve source-tier grades and
+      original raw references; no taxon, chemistry or locus-coordinate change. See
+      issue #972. Original imported citation PMID:19129623 (ENTRY) remains in the
+      raw inventory, not as support for this claim. MIBiG source row BGC0001648:1;
+      SHA256 fbb9c924907a87713a15ff6323080124a5dea60a58dead6a941dcf34b7c83b58. Curator:
+      codex; date: 2026-10-14. Taxon, locus, chemistry and evidence grades are unchanged.'
   genome_accession: genbank:KT591188.1
   bgc_class:
   - PKS
@@ -117,3 +157,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-14T04:18:43Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

@@ -101,6 +101,30 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000086, BGC0000087.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+- discussion_id: curator-lasalocid-ab449340-strain-conflict
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: 'Which strain attribution is correct for AB449340.1: the deposited ATCC31180
+    or the primary-paper ATCC35851?'
+  rationale: 'Current GenBank AB449340.1 source qualifiers name ATCC31180. The inspected
+    advance-view paper DOI:10.1271/bbb.80631 (PMID:19129623), methods and deposition
+    statement, instead assigns pKSL/AB449340 to ATCC35851. FM173265.1 separately names
+    NRRL3382R. Do not silently equate these attributions or identify the type strain
+    ATCC31180T/NRRL3382T with ATCC35851/NRRL3382R. The disagreement is unresolved;
+    neither source is declared incorrect. The published Lsd19 biochemical experiment
+    does not settle strain identity, sodium counterion processing or complete stereochemistry
+    of this stored salt. Preserve SOURCE_ASSERTION and CLUSTER_UNSTATED pending claim-specific
+    adjudication. Issue #971 addresses missing conflict representation, not biological
+    resolution.'
+  evidence:
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AB449340.1
+    notes: Source strain ATCC31180; accession version and qualifiers inspected 2026-10-14.
+  - reference: DOI:10.1271/bbb.80631
+    notes: Advance-view methods name ATCC35851 and explicitly deposit AB449340; no
+      silent source reconciliation.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/FM173265.1
+    notes: Separate BGC0000087 sequence has source strain NRRL3382R; not an adjudication
+      of AB449340.
 curation_history:
 - timestamp: '2026-09-10T05:54:12Z'
   curator: seed_from_sources
@@ -110,3 +134,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-14T04:17:55Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Preserved conflicting AB449340 strain attributions in an OPEN evidence-linked
+    discussion (#971); no source adjudication, chemistry, taxon, evidence-grade or
+    scientific-status change.
+  llm_assisted: true
