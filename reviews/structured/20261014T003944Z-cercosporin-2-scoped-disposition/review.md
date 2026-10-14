@@ -1,0 +1,777 @@
+# cercosporin-2: citation and qualification disposition
+
+- Review: 20261014T003944Z-cercosporin-2-scoped-disposition
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-14T00:39:42.029110Z
+- Finished UTC: 2026-10-14T00:39:44.244002Z
+- Reviewer: Codex (self_review)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Citation routing resolved; identity and applicable engineering-context findings remain explicitly open.
+
+## Scope And Provenance
+
+Scoped successor of exactly one owner, not a new owner-coverage increment.
+
+Selection: Reassessment after separately authorized fixes.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 41b0ea200e57390c2b191f2519ff2971d37e55ea.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-acffdd16a2 | data/natural_products/polyketides/cercosporin-2.yaml | generated | cercosporin |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Current canonical inspection | passed | True | naturalproductmech:mibig-acffdd16a2 | Current owner and maintained input hashes captured before reassessment. |
+| scope | passed | True | naturalproductmech:mibig-acffdd16a2 | Passed with actual receipt and log. |
+| focused-final | passed | True | naturalproductmech:mibig-acffdd16a2 | Passed with actual receipt and log. |
+| strict-final | passed | True | naturalproductmech:mibig-acffdd16a2 | Passed with actual receipt and log. |
+| Full exact-product and experimental-context adjudication | unavailable | True | naturalproductmech:mibig-acffdd16a2 | Primary figures/supplements and authorized2017/1957 full texts remain incomplete;955/956 stay open. |
+
+## Scientific And Domain Assessments
+
+### Claim-specific references and unchanged native assertions
+
+evidence: supported. Targets: naturalproductmech:mibig-acffdd16a2.
+
+BGC1542 routing is corrected; BGC1541 source claims remain unchanged. No collateral identity, organism or grade changes.
+
+### Primary structure and experimental context remain incomplete
+
+identity: concern. Targets: naturalproductmech:mibig-acffdd16a2.
+
+OPEN qualification preserves known conflicts; it does not settle stereochemistry, tautomer identity or native versus complemented production.
+
+## Findings
+
+### F1: Cercosporin exact-structure qualification remains unresolved
+
+major / open / confirmed; issue key: cercosporin-1542-tautomer-adjudication.
+
+R,R native graph differs from pinned CHEBI3556 in quinone/proton representation; default RDKit tautomer canonicalization agrees, but exact-key grounding/claim transfer is not established.
+
+Disposition: The cited OPEN qualification makes this conflict explicit but is not primary adjudication or complete claim-level repair.955/956 remain open; no inferred replacement structure, engineered molecule reclassification, experimental-grade upgrade or REVIEWED promotion.
+
+### F2: Compound-bioactivity citation is misrouted to producer and locus
+
+major / resolved / confirmed; issue key: mibig-bgc0001542-claim-reference-routing.
+
+The1978 DOI belongs to compound bioactivity; entry reference PMID28535078 concerns CTB7 and is also cited by KY656140.1.
+
+Disposition: 954 is resolved at claim-routing scope: both citations now use PMID28535078, pinned to the complete raw row. Separate curator evidence preserves the original1978 bioactivity citation. Tests and full-corpus scope audit show no other generated claim changes. This does not resolve engineering context or exact identity.
+
+### F3: Native deposited locus and complemented producer context are not distinguished
+
+major / open / confirmed; issue key: cercosporin-zeina-complementation-scope.
+
+The primary abstract identifies a complemented C.zeina transformant, while native in-vitro production was absent in reported conditions. The deposited native CTB7 is a pseudogene. Neither a species-wide absence nor natural production of this exact product follows.
+
+Disposition: The cited OPEN qualification makes this conflict explicit but is not primary adjudication or complete claim-level repair.955/956 remain open; no inferred replacement structure, engineered molecule reclassification, experimental-grade upgrade or REVIEWED promotion.
+
+## Recommended Actions And Acceptance Checks
+
+### A1
+
+Track955; add cited OPEN qualification, then adjudicate primary structures and each source/occurrence before any source-pinned correction or migration.
+
+- No automatic stereoisomer/tautomer merge or old-key claim transfer.
+- Primary absolute/helical stereochemistry and source-specific claims adjudicated; linked successor review; strict/reproduction/QC.
+
+### A3
+
+Track956; add OPEN qualification now, obtain authorized full primary evidence and implement pinned claim-level context or withholding after exact-product adjudication.
+
+- Distinguish native KY656140.1/CTB7 pseudogene from C.zeae-maydis-CTB7 complemented construct.
+- Audit LOTUS occurrence independently; do not infer molecule origin ENGINEERED or species-wide absence.
+- Qualification alone does not close finding; require successor disposition and native gates.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| current | data/natural_products/polyketides/cercosporin-2.yaml | supports | Complete current raw and resolved owner read after guarded curation. Exact structure, source assertions, evidence grades and SEEDED status remain; cited OPEN identity qualification is present. |
+| prior | reviews/structured/20261014T003703Z-cercosporin-2/review.yaml | supports | Immutable exact predecessor; primary limitations remain applicable. |
+| scope | /private/tmp/npmech-cercosporin-review-vwJpVK/scope-audit.json | supports | All3115 owners checked: only the two cercosporin owners changed. Only citation evidence for BGC1542, three OPEN discussions and appended events changed. All243 components,60 previous review pairs and raw inventories unchanged. |
+| decision | curation/mibig_claim_references.tsv | supports | Complete-row-pinned BGC1542 decision selects entry PMID28535078 for producer/locus. Separate curator evidence retains1978 citation and compound-bioactivity context. No grade or chemistry change. |
+| tests | /private/tmp/npmech-cercosporin-review-vwJpVK/focused-final.log | supports | 182 focused tests pass, including both committed routing decisions, unaffected sibling, source drift and current native qualifications. |
+| primary | PMID:28535078; Full PubMed abstract | refutes | The inspected abstract describes lack of native C.zeina in-vitro cercosporin and one transformant complemented with C.zeae-maydis CTB7 producing cercosporin under nitrogen-limited/light conditions, identified by KOH,TLC and UPLC-QTOFMS. A variant during maize infection is proposed, not observed exact-product evidence. |
+| chemistry | /private/tmp/npmech-cercosporin-review-vwJpVK/source-inspection.json; chemistry and chebi sections; script and execution receipt retained | supports | RDKit2026.03.5 round-trips both neutral C29H26O10 owners. Cercosporin has S,S centers; cercosporin-2 has R,R centers. The latter canonicalizes to pinned CHEBI:3556 under the default tautomer enumerator. Both achiral canonical tautomers agree. ChEBI3556 is R,R; ChEBI146017 is a dianion. This is graph analysis, not experimental absolute/helical stereochemical proof or permission to merge keys. |
+| registry | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/cercosporin/property/InChI,InChIKey,MolecularFormula,IsomericSMILES/JSON; All four properties records inspected | context_only | Name lookup returns CID2674,91617,360901,90471707 with differing stereo resolution/configurations. Only CID91617 exactly matches cercosporin-2. A name hit is not exact equivalence and none is an independently validated biological origin. |
+| mibig | https://mibig.secondarymetabolites.org/repository/BGC0001542.3/annotations.json; Entire exact versioned JSON inspected; questionable source quality is not scientific validation | supports | Active v3 PKS entry matches stored structure, taxon348901 and KY656140.1; no locus methods and zero placeholder bounds. The1978 DOI occurs under compound bioactivity; entry legacy reference is PMID28535078. |
+| sequence | https://www.ncbi.nlm.nih.gov/nuccore/KY656140.1; GenBank source qualifiers, references and CTB feature annotations; taxonomy XML confirms all three native taxon IDs as fungal species | supports | KY656140.1 is a partial CTB cluster and CTB7 pseudogene from deposited isolate CMW25467, citing PMID28535078. It is not the complemented construct. |
+
+## Limits And Additional Notes
+
+- Scoped partial disposition only; primary closure remains incomplete and earlier access stops are retained.
+- Final full QC/reproduction and review-contract gates follow before merge; only the listed current checks are claimed here.
+- Working-tree hashes attest these inspected current bytes, not that they were present in base41b0ea2.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T003944Z-cercosporin-2-scoped-disposition
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'cercosporin-2: citation and qualification disposition'
+started_at: '2026-10-14T00:39:42.029110Z'
+finished_at: '2026-10-14T00:39:44.244002Z'
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: self_review
+  independence_basis: Implementing assistant conducting a separate adversarial pass;
+    not independent human approval.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Citation routing resolved; identity and applicable engineering-context findings
+  remain explicitly open.
+source:
+  git_revision: 41b0ea200e57390c2b191f2519ff2971d37e55ea
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: 49e2ab03c7e82013e9d68356de2c9965c9f8517a3408a44124076f4ca1b529cd
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/decisions.tsv
+    sha256: 7214a74975fb2cb65521da18dd14ea1c65665f50060106976dc0db9caf887805
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: a0d43a9ba94c7e0044a5e9bc85f829ad5d010264f44c4a3470739eb7511c9740
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: a1eb14fec4a7cee0c2fc25c43091e75af24ae62c44c4f7659ed7aedf0e6a0e6c
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: 6f879bb9f2c9be6b6e8de8c013dbaebe09075b7e106790ea303a17006761ea11
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: 5b1edc057cdcc732f61de2964cd175fa3bc2dca929c5d2823142f61313545a7e
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: f61d7ba85ffd21837cd2b625f83c4681c4663e72503466b40eba3f4ab0204bc1
+    role: context
+  - path: curation/pubchem_bioassay_exclusions.tsv
+    sha256: 18b61c1e5a69112c99cea1373791cd1ec571b7084bfd9198ab68fa551f5d531a
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: bf38e4f0c7e4bcbdf184a4e7b8b024752251e8f34c015c0b82cedca98a8a5729
+    role: context
+  - path: data/natural_products/polyketides/cercosporin-2.yaml
+    sha256: 2a5353c1d4121a6c819d23170374083f53d285a3886dd58a2493773b8dbbedee
+    role: target
+  - path: data/natural_products/polyketides/cercosporin.yaml
+    sha256: 2f085bb26e26974e90ea79f5cae3b418e32ed79d99e6c8e692e1ac40dd8676a7
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: 373f049029be3db137e062ff5f872a2400a9d5b423f3e108ea44ebde2f8dcc7d
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: 7b9b9f78f5b14aea9fabb163bbaa9e842920a7e9b07deac8f98c97666e9e23fc
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 3ab166b341e5f3f1eaaee1b2af2485ac575c1a1eab1570bbf1d8d2d3ba76e53e
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: pyproject.toml
+    sha256: 02505a46585e870eac7333f31a6773df51465ef13969d4d490fbc0247931d85c
+    role: context
+  - path: reviews/structured/20261014T003703Z-cercosporin-2/review.yaml
+    sha256: 9829ffed024b2b2c0aee4fa3eb7e2c7efa637b167417a0bfba111d59b5cbba1a
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_lotus.py
+    sha256: 8a8c524f60f85d2bb54412ca055a6a45e0d37ec5f4584d8d70be454b8f664290
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/extract_pubchem_bioassay.py
+    sha256: 24f9d794e7cf97c420351cb751f8767f7d81a5f22aed01669b2318d6755e7c00
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/run_qc.py
+    sha256: ff44ed3e40a9b3582eb84e38a81301745ae80d16445756d09a7efb2a480b1abb
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: e810fb0f289bc11d6369c8ac00cc3d0ff6ed96888c13048de478f725e62fab3e
+    role: context
+  - path: src/naturalproductmech/curate/bioassay_exclusions.py
+    sha256: 4a4176e072ac9759aa8a9e88300d7e2de5aaf4ebf30b5c42fcf4c9c0b6cebbb4
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: a8b8834788b4714cf1cb0d1cc410d5c2f88112a32ad8621c8e043f0a4bc38a9d
+    role: context
+  - path: src/naturalproductmech/curate/xref_exclusions.py
+    sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/history.yaml
+    sha256: b01b06f1b9a37db205c26c31ec0fd910690848507c7e1bfb73b424ac0829c52d
+    role: context
+  - path: src/naturalproductmech/schema/mech_shared.yaml
+    sha256: c2e7054fd32635e380c698282bd886a9105861009b9f0474f02bb1b80865e895
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: tests/test_cercosporin_curation.py
+    sha256: 0f05864fbb97de95d99d818ca8be8c05f5d9df921d1374aa557c06fc062fb7b6
+    role: context
+  - path: tests/test_claim_references.py
+    sha256: aa8499bf3c2dfc0e3f8cc660005a66d56c29c5d1a9a9d2c474e9df7a592946b8
+    role: context
+  - path: uv.lock
+    sha256: c62a5739e3ffeb12cc57b3bf12a31dcf9cdfbf00b417f4ba3a801d51ef9efbe3
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-acffdd16a2
+  path: data/natural_products/polyketides/cercosporin-2.yaml
+  label: cercosporin
+  kind: generated
+  record_class: NaturalProductRecord
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Imported chemical, producer and cluster assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Imported structure-organism-reference triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Pinned ChEBI grounding inventory
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_origins.tsv
+    role: Pinned ChEBI occurrence inventory
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/antibioticmech_inchikeys.tsv
+    role: Pinned sibling exact-structure joins
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated harmonization and grading
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: MIBiG extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_lotus.py
+    role: LOTUS extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Implemented pinned structure corrections
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Implemented exact-context method corrections
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Implemented pinned strain qualifications
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_xref_exclusions.tsv
+    role: Implemented complete-row-pinned PubChem and NPAtlas exclusions
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Imported compound-specific assay observations
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_pubchem_bioassay.py
+    role: BioAssay extraction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_isolates.tsv
+    role: Implemented pinned isolate context
+scope:
+  description: Scoped successor of exactly one owner, not a new owner-coverage increment.
+  selection: Reassessment after separately authorized fixes.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-acffdd16a2
+checks:
+- check_id: inspect
+  name: Current canonical inspection
+  command: uv run python scripts/record_review.py inspect --targets /private/tmp/npmech-cercosporin-review-vwJpVK/cercosporin-2-targets.json
+    --input .claude/skills/curate-yaml-record/references/review-checklist.md --input
+    .claude/skills/review-yaml-record/SKILL.md --input CLAUDE.md --input conf/id_label_targets.yaml
+    --input conf/producer_evidence.tsv --input conf/record_review.yaml --input curation/decisions.tsv
+    --input curation/mibig_claim_references.tsv --input curation/mibig_locus_evidence_overrides.tsv
+    --input curation/mibig_producer_isolates.tsv --input curation/mibig_producer_strains.tsv
+    --input curation/mibig_structure_corrections.tsv --input curation/mibig_xref_exclusions.tsv
+    --input curation/pubchem_bioassay_exclusions.tsv --input data/natural_products/PATHS.tsv
+    --input data/natural_products/polyketides/cercosporin-2.yaml --input data/natural_products/polyketides/cercosporin.yaml
+    --input data/raw/MANIFEST.yaml --input data/raw/antibioticmech_inchikeys.tsv --input
+    data/raw/chebi_origins.tsv --input data/raw/chebi_structures.tsv --input data/raw/corpus_taxa.obo
+    --input data/raw/lotus_occurrences.tsv --input data/raw/mibig_compounds.tsv --input
+    data/raw/npclassifier.tsv --input data/raw/pubchem_bioassay.tsv --input docs/CURATION.md
+    --input docs/HARMONIZATION.md --input docs/record-review-profile.md --input docs/record-reviews.md
+    --input justfile --input pyproject.toml --input reviews/structured/20261014T003703Z-cercosporin-2/review.yaml
+    --input schema/record_review.yaml --input scripts/extract_lotus.py --input scripts/extract_mibig.py
+    --input scripts/extract_pubchem_bioassay.py --input scripts/record_review.py --input
+    scripts/run_qc.py --input scripts/seed_from_sources.py --input src/naturalproductmech/curate/bioassay_exclusions.py
+    --input src/naturalproductmech/curate/claim_references.py --input src/naturalproductmech/curate/producer_strains.py
+    --input src/naturalproductmech/curate/structure_corrections.py --input src/naturalproductmech/curate/xref_exclusions.py
+    --input src/naturalproductmech/graph_components.py --input src/naturalproductmech/schema/history.yaml
+    --input src/naturalproductmech/schema/mech_shared.yaml --input src/naturalproductmech/schema/naturalproductmech.yaml
+    --input tests/test_cercosporin_curation.py --input tests/test_claim_references.py
+    --input uv.lock
+  exit_code: 0
+  status: passed
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-acffdd16a2
+  summary: Current owner and maintained input hashes captured before reassessment.
+- check_id: scope
+  name: scope
+  command: uv run python /private/tmp/npmech-cercosporin-review-vwJpVK/audit_scope.py
+  exit_code: 0
+  status: passed
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-acffdd16a2
+  summary: Passed with actual receipt and log.
+  scope_note: 2026-10-14T00:38:48.032373Z..2026-10-14T00:38:49.835581Z; /private/tmp/npmech-cercosporin-review-vwJpVK/scope.log;
+    SHA256 d94dfbf4440f7baa7def5e5821b5b552570acc59c2fce2387361b819756b6f63
+- check_id: focused-final
+  name: focused-final
+  command: uv run pytest -q tests/test_claim_references.py tests/test_cercosporin_curation.py
+    tests/test_seed_skeleton.py
+  exit_code: 0
+  status: passed
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-acffdd16a2
+  summary: Passed with actual receipt and log.
+  scope_note: 2026-10-14T00:38:49.194874Z..2026-10-14T00:38:54.960206Z; /private/tmp/npmech-cercosporin-review-vwJpVK/focused-final.log;
+    SHA256 9aea20d7dff61fe99710f2f85370cf3740abaee147634efad206f4c2e82ed532
+- check_id: strict-final
+  name: strict-final
+  command: just validate-strict data/natural_products/polyketides/cercosporin.yaml
+    data/natural_products/polyketides/cercosporin-2.yaml --out /private/tmp/npmech-cercosporin-review-vwJpVK/strict-final.tsv
+  exit_code: 0
+  status: passed
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-acffdd16a2
+  summary: Passed with actual receipt and log.
+  scope_note: 2026-10-14T00:38:50.357802Z..2026-10-14T00:38:53.801004Z; /private/tmp/npmech-cercosporin-review-vwJpVK/strict-final.log;
+    SHA256 dffbf8f9e8eb8d1a6b004065268aa0cdd0edd29a5aa70a24f99fe50cb7f38177
+- check_id: primary
+  name: Full exact-product and experimental-context adjudication
+  required: true
+  status: unavailable
+  target_ids:
+  - naturalproductmech:mibig-acffdd16a2
+  summary: Primary figures/supplements and authorized2017/1957 full texts remain incomplete;955/956
+    stay open.
+evidence:
+- evidence_id: current
+  kind: record_content
+  reference: data/natural_products/polyketides/cercosporin-2.yaml
+  summary: Complete current raw and resolved owner read after guarded curation. Exact
+    structure, source assertions, evidence grades and SEEDED status remain; cited
+    OPEN identity qualification is present.
+  accessed_at: '2026-10-14T00:39:44.241558Z'
+  support: supports
+  snapshot_sha256: 2a5353c1d4121a6c819d23170374083f53d285a3886dd58a2493773b8dbbedee
+- evidence_id: prior
+  kind: prior_review
+  reference: reviews/structured/20261014T003703Z-cercosporin-2/review.yaml
+  summary: Immutable exact predecessor; primary limitations remain applicable.
+  accessed_at: '2026-10-14T00:39:44.241805Z'
+  support: supports
+  snapshot_sha256: 9829ffed024b2b2c0aee4fa3eb7e2c7efa637b167417a0bfba111d59b5cbba1a
+- evidence_id: scope
+  kind: validation
+  reference: /private/tmp/npmech-cercosporin-review-vwJpVK/scope-audit.json
+  summary: 'All3115 owners checked: only the two cercosporin owners changed. Only
+    citation evidence for BGC1542, three OPEN discussions and appended events changed.
+    All243 components,60 previous review pairs and raw inventories unchanged.'
+  accessed_at: '2026-10-14T00:39:44.242168Z'
+  support: supports
+  snapshot_sha256: d75e94be3745155909d31ccf3723645d678a8f6ea224640273f844b28b73831d
+- evidence_id: decision
+  kind: record_content
+  reference: curation/mibig_claim_references.tsv
+  summary: Complete-row-pinned BGC1542 decision selects entry PMID28535078 for producer/locus.
+    Separate curator evidence retains1978 citation and compound-bioactivity context.
+    No grade or chemistry change.
+  accessed_at: '2026-10-14T00:39:44.242396Z'
+  support: supports
+  snapshot_sha256: a0d43a9ba94c7e0044a5e9bc85f829ad5d010264f44c4a3470739eb7511c9740
+- evidence_id: tests
+  kind: validation
+  reference: /private/tmp/npmech-cercosporin-review-vwJpVK/focused-final.log
+  summary: 182 focused tests pass, including both committed routing decisions, unaffected
+    sibling, source drift and current native qualifications.
+  accessed_at: '2026-10-14T00:39:44.242608Z'
+  support: supports
+  snapshot_sha256: 9aea20d7dff61fe99710f2f85370cf3740abaee147634efad206f4c2e82ed532
+- evidence_id: primary
+  kind: primary_source
+  reference: PMID:28535078
+  summary: The inspected abstract describes lack of native C.zeina in-vitro cercosporin
+    and one transformant complemented with C.zeae-maydis CTB7 producing cercosporin
+    under nitrogen-limited/light conditions, identified by KOH,TLC and UPLC-QTOFMS.
+    A variant during maize infection is proposed, not observed exact-product evidence.
+  locator: Full PubMed abstract
+  accessed_at: '2026-10-14T00:37:03.530393Z'
+  support: refutes
+  snapshot_sha256: e4cac8770a6d77509f61a33930b5e583055079d5e8627bc729bcee4095b4db69
+- evidence_id: chemistry
+  kind: validation
+  reference: /private/tmp/npmech-cercosporin-review-vwJpVK/source-inspection.json
+  summary: RDKit2026.03.5 round-trips both neutral C29H26O10 owners. Cercosporin has
+    S,S centers; cercosporin-2 has R,R centers. The latter canonicalizes to pinned
+    CHEBI:3556 under the default tautomer enumerator. Both achiral canonical tautomers
+    agree. ChEBI3556 is R,R; ChEBI146017 is a dianion. This is graph analysis, not
+    experimental absolute/helical stereochemical proof or permission to merge keys.
+  locator: chemistry and chebi sections; script and execution receipt retained
+  accessed_at: '2026-10-14T00:37:03.529373Z'
+  support: supports
+  snapshot_sha256: 7d722af792f828f06b8d3ac8c5af733b688ce28ad930b920b665f39d3709ac79
+- evidence_id: registry
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/cercosporin/property/InChI,InChIKey,MolecularFormula,IsomericSMILES/JSON
+  summary: Name lookup returns CID2674,91617,360901,90471707 with differing stereo
+    resolution/configurations. Only CID91617 exactly matches cercosporin-2. A name
+    hit is not exact equivalence and none is an independently validated biological
+    origin.
+  locator: All four properties records inspected
+  accessed_at: '2026-10-14T00:37:03.529660Z'
+  support: context_only
+  snapshot_sha256: e2f80841bb2ad1154ae28e1d5b781d62385d957edb05382a7b93af66ababdd6c
+- evidence_id: mibig
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001542.3/annotations.json
+  summary: Active v3 PKS entry matches stored structure, taxon348901 and KY656140.1;
+    no locus methods and zero placeholder bounds. The1978 DOI occurs under compound
+    bioactivity; entry legacy reference is PMID28535078.
+  locator: Entire exact versioned JSON inspected; questionable source quality is not
+    scientific validation
+  accessed_at: '2026-10-14T00:37:03.529957Z'
+  support: supports
+  snapshot_sha256: edc33d0bd49b7fbb8b8ba32111b235582e355e7d14aefb0fd7a4cc8ef24586da
+- evidence_id: sequence
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/KY656140.1
+  summary: KY656140.1 is a partial CTB cluster and CTB7 pseudogene from deposited
+    isolate CMW25467, citing PMID28535078. It is not the complemented construct.
+  locator: GenBank source qualifiers, references and CTB feature annotations; taxonomy
+    XML confirms all three native taxon IDs as fungal species
+  accessed_at: '2026-10-14T00:37:03.530867Z'
+  support: supports
+  snapshot_sha256: 6dede57a3bbeb81c94c68bcbc83c7c8bec124c93257f3918b84c1f5c01a10313
+findings:
+- finding_id: F1
+  issue_key: cercosporin-1542-tautomer-adjudication
+  category: identity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Cercosporin exact-structure qualification remains unresolved
+  description: R,R native graph differs from pinned CHEBI3556 in quinone/proton representation;
+    default RDKit tautomer canonicalization agrees, but exact-key grounding/claim
+    transfer is not established.
+  target_ids:
+  - naturalproductmech:mibig-acffdd16a2
+  field_paths:
+  - chemical_structure
+  - grounding_notes
+  - occurrences
+  evidence_ids:
+  - current
+  - prior
+  - scope
+  - tests
+  - decision
+  - primary
+  - chemistry
+  - mibig
+  - sequence
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Maintained input or generation owner
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Maintained input or generation owner
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained input or generation owner
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Maintained input or generation owner
+  rule_id: Exact identity and supported stereochemical resolution
+  native_severity: major
+  normalization_reason: Confirmed representation conflict requires qualification;
+    experimental wrong identity is not established, so not a blocker.
+  previous_occurrences:
+  - repository: CultureBotAI/NaturalProductMech
+    review_id: 20261014T003703Z-cercosporin-2
+    finding_id: F1
+  disposition_reason: The cited OPEN qualification makes this conflict explicit but
+    is not primary adjudication or complete claim-level repair.955/956 remain open;
+    no inferred replacement structure, engineered molecule reclassification, experimental-grade
+    upgrade or REVIEWED promotion.
+- finding_id: F2
+  issue_key: mibig-bgc0001542-claim-reference-routing
+  category: evidence
+  severity: major
+  status: resolved
+  certainty: confirmed
+  title: Compound-bioactivity citation is misrouted to producer and locus
+  description: The1978 DOI belongs to compound bioactivity; entry reference PMID28535078
+    concerns CTB7 and is also cited by KY656140.1.
+  target_ids:
+  - naturalproductmech:mibig-acffdd16a2
+  field_paths:
+  - producer_organisms[0].evidence
+  - biosynthetic_gene_clusters[0].evidence
+  evidence_ids:
+  - current
+  - prior
+  - scope
+  - tests
+  - decision
+  - primary
+  - chemistry
+  - mibig
+  - sequence
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Maintained input or generation owner
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Maintained input or generation owner
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained input or generation owner
+  rule_id: Evidence on narrowest supported claim
+  native_severity: major
+  normalization_reason: Material claim-specific citation routing defect.
+  previous_occurrences:
+  - repository: CultureBotAI/NaturalProductMech
+    review_id: 20261014T003703Z-cercosporin-2
+    finding_id: F2
+  disposition_reason: '954 is resolved at claim-routing scope: both citations now
+    use PMID28535078, pinned to the complete raw row. Separate curator evidence preserves
+    the original1978 bioactivity citation. Tests and full-corpus scope audit show
+    no other generated claim changes. This does not resolve engineering context or
+    exact identity.'
+- finding_id: F3
+  issue_key: cercosporin-zeina-complementation-scope
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Native deposited locus and complemented producer context are not distinguished
+  description: The primary abstract identifies a complemented C.zeina transformant,
+    while native in-vitro production was absent in reported conditions. The deposited
+    native CTB7 is a pseudogene. Neither a species-wide absence nor natural production
+    of this exact product follows.
+  target_ids:
+  - naturalproductmech:mibig-acffdd16a2
+  field_paths:
+  - producer_organisms
+  - occurrences
+  - biosynthetic_gene_clusters
+  evidence_ids:
+  - current
+  - prior
+  - scope
+  - tests
+  - decision
+  - primary
+  - chemistry
+  - mibig
+  - sequence
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Maintained input or generation owner
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Maintained input or generation owner
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained input or generation owner
+  rule_id: Native organism versus engineered experiment; occurrence is not production
+  native_severity: major
+  normalization_reason: Missing material experiment scope risks unsupported native
+    production interpretation.
+  previous_occurrences:
+  - repository: CultureBotAI/NaturalProductMech
+    review_id: 20261014T003703Z-cercosporin-2
+    finding_id: F3
+  disposition_reason: The cited OPEN qualification makes this conflict explicit but
+    is not primary adjudication or complete claim-level repair.955/956 remain open;
+    no inferred replacement structure, engineered molecule reclassification, experimental-grade
+    upgrade or REVIEWED promotion.
+actions:
+- action_id: A1
+  finding_ids:
+  - F1
+  target_ids:
+  - naturalproductmech:mibig-acffdd16a2
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Maintained input or generation owner
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Maintained input or generation owner
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained input or generation owner
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Maintained input or generation owner
+  description: Track955; add cited OPEN qualification, then adjudicate primary structures
+    and each source/occurrence before any source-pinned correction or migration.
+  acceptance_checks:
+  - No automatic stereoisomer/tautomer merge or old-key claim transfer.
+  - Primary absolute/helical stereochemistry and source-specific claims adjudicated;
+    linked successor review; strict/reproduction/QC.
+- action_id: A3
+  finding_ids:
+  - F3
+  target_ids:
+  - naturalproductmech:mibig-acffdd16a2
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Maintained input or generation owner
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Maintained input or generation owner
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained input or generation owner
+  description: Track956; add OPEN qualification now, obtain authorized full primary
+    evidence and implement pinned claim-level context or withholding after exact-product
+    adjudication.
+  acceptance_checks:
+  - Distinguish native KY656140.1/CTB7 pseudogene from C.zeae-maydis-CTB7 complemented
+    construct.
+  - Audit LOTUS occurrence independently; do not infer molecule origin ENGINEERED
+    or species-wide absence.
+  - Qualification alone does not close finding; require successor disposition and
+    native gates.
+assessments:
+- assessment_id: routing
+  area: evidence
+  topic: Claim-specific references and unchanged native assertions
+  outcome: supported
+  target_ids:
+  - naturalproductmech:mibig-acffdd16a2
+  evidence_ids:
+  - current
+  - scope
+  - decision
+  - tests
+  - mibig
+  summary: BGC1542 routing is corrected; BGC1541 source claims remain unchanged. No
+    collateral identity, organism or grade changes.
+- assessment_id: identity
+  area: identity
+  topic: Primary structure and experimental context remain incomplete
+  outcome: concern
+  target_ids:
+  - naturalproductmech:mibig-acffdd16a2
+  evidence_ids:
+  - current
+  - prior
+  - primary
+  - chemistry
+  - sequence
+  summary: OPEN qualification preserves known conflicts; it does not settle stereochemistry,
+    tautomer identity or native versus complemented production.
+limitations:
+- Scoped partial disposition only; primary closure remains incomplete and earlier
+  access stops are retained.
+- Final full QC/reproduction and review-contract gates follow before merge; only the
+  listed current checks are claimed here.
+- Working-tree hashes attest these inspected current bytes, not that they were present
+  in base41b0ea2.
+related_reviews:
+- repository: CultureBotAI/NaturalProductMech
+  review_id: 20261014T003703Z-cercosporin-2
+  relationship: Exact predecessor; scoped disposition.
+```
