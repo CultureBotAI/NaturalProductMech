@@ -52,3 +52,14 @@ def test_fogacin_forms_and_negative_assay_sentinel_are_not_conflated():
     assert assay["row"]["assay_name"] == "(no assay data)" and not assay["row"]["aid"]
     assert result["inventories"]["chebi_origins"]["join_column"] == "chebi_id"
     assert result["inventories"]["chebi_origins"]["join_values"] == []
+
+
+def test_caption_observation_is_not_attested_by_abstract_or_challenge_hash():
+    observations = json.loads((PACK / "primary-observations.json").read_text())
+    caption = observations["caption"]
+    abstract = observations["abstract_snapshot"]
+    assert "sha256" not in caption and "snapshot_sha256" not in caption
+    assert "no raw caption payload" in caption["note"]
+    assert "abstracts only" in abstract["locator"]
+    assert observations["later_capture"]["classification"] == "browser_challenge_not_article"
+    assert observations["later_capture"]["sha256"] != abstract["sha256"]
