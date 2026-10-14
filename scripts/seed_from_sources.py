@@ -1023,10 +1023,14 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                 "minted_identifier": source_concept_identifier,
             })
 
+            cluster_classes = []
             for value in row["bgc_classes"].split("|"):
                 mapped = BGC_CLASS_MAP.get(value.strip())
-                if mapped and mapped not in bgc_classes:
-                    bgc_classes.append(mapped)
+                if mapped:
+                    if mapped not in cluster_classes:
+                        cluster_classes.append(mapped)
+                    if mapped not in bgc_classes:
+                        bgc_classes.append(mapped)
             for value in row["compound_classes"].split("|"):
                 if value and value not in compound_classes:
                     compound_classes.append(value)
@@ -1120,8 +1124,8 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             for field, column in (("locus_from", "locus_from"), ("locus_to", "locus_to")):
                 if row[column] and row[column].isdigit() and int(row[column]) > 0:
                     cluster[field] = int(row[column])
-            if bgc_classes:
-                cluster["bgc_class"] = list(bgc_classes)
+            if cluster_classes:
+                cluster["bgc_class"] = cluster_classes
             methods = [m for m in row["locus_evidence_methods"].split("|") if m]
             if methods:
                 cluster["locus_evidence_methods"] = methods

@@ -87,8 +87,8 @@ biosynthetic_gene_clusters:
   locus_from: 29680
   locus_to: 42300
   bgc_class:
-  - NRPS
   - PKS
+  - NRPS
   locus_evidence_methods:
   - Gene expression correlated with compound production
   link_evidence_basis: CLUSTER_CORRELATED
@@ -123,3 +123,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T23:58:22Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

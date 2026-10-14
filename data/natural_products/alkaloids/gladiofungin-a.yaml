@@ -102,8 +102,8 @@ biosynthetic_gene_clusters:
   locus_from: 3449913
   locus_to: 3530217
   bgc_class:
-  - PKS
   - NRPS
+  - PKS
   locus_evidence_methods:
   - Knock-out studies
   - Enzymatic assays
@@ -274,6 +274,10 @@ curation_history:
     did not resolve in UniProtKB.
   llm_assisted: true
 - timestamp: '2026-10-13T10:45:11Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T23:58:25Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.

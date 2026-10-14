@@ -115,7 +115,6 @@ biosynthetic_gene_clusters:
   genome_accession: genbank:HM193369.1
   bgc_class:
   - PKS
-  - SACCHARIDE
   locus_evidence_methods:
   - Heterologous expression
   link_evidence_basis: CLUSTER_DEMONSTRATED
@@ -134,7 +133,6 @@ biosynthetic_gene_clusters:
   locus_to: 37159
   bgc_class:
   - PKS
-  - SACCHARIDE
   link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
@@ -428,3 +426,7 @@ curation_history:
     configuration. Added no proteins or edges; preserved source-owned identity, xrefs,
     claims, grades and previous history.
   llm_assisted: true
+- timestamp: '2026-10-13T23:57:32Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

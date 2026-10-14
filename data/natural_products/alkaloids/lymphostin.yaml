@@ -150,8 +150,8 @@ biosynthetic_gene_clusters:
   locus_from: 3781645
   locus_to: 3805331
   bgc_class:
-  - NRPS
   - PKS
+  - NRPS
   link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
@@ -188,6 +188,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
 - timestamp: '2026-10-13T10:43:27Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T23:57:23Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.

@@ -173,7 +173,6 @@ biosynthetic_gene_clusters:
   locus_to: 18906
   bgc_class:
   - NRPS
-  - PKS
   locus_evidence_methods:
   - Heterologous expression
   link_evidence_basis: CLUSTER_DEMONSTRATED
@@ -191,7 +190,6 @@ biosynthetic_gene_clusters:
   locus_to: 4350875
   bgc_class:
   - NRPS
-  - PKS
   locus_evidence_methods:
   - Enzymatic assays
   link_evidence_basis: CLUSTER_DEMONSTRATED
@@ -722,6 +720,10 @@ curation_history:
     identity change or scientific claim upgrade; issue 805 remains open.'
   llm_assisted: true
 - timestamp: '2026-10-13T07:43:18Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T23:58:37Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.

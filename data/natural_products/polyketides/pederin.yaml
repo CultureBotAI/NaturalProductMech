@@ -270,8 +270,8 @@ biosynthetic_gene_clusters:
     notes: MIBiG BGC0001108 entry version 5; citation taken from the entry level
   genome_accession: genbank:AY328023.1
   bgc_class:
-  - PKS
   - NRPS
+  - PKS
   locus_evidence_methods:
   - Enzymatic assays
   link_evidence_basis: CLUSTER_DEMONSTRATED
@@ -284,8 +284,8 @@ biosynthetic_gene_clusters:
     notes: MIBiG BGC0001109 entry version 4; citation taken from the entry level
   genome_accession: genbank:DD161836.1
   bgc_class:
-  - PKS
   - NRPS
+  - PKS
   link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
@@ -337,3 +337,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-13T23:58:53Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

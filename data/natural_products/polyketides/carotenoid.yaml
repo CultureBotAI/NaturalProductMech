@@ -172,7 +172,6 @@ biosynthetic_gene_clusters:
     notes: MIBiG BGC0000650 entry version 3; citation taken from the entry level
   genome_accession: genbank:DQ286432.1
   bgc_class:
-  - PKS
   - TERPENE
   link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
@@ -197,6 +196,31 @@ discussions:
   prompt: 'This structure is reported by more than one MIBiG entry: BGC0000214, BGC0000650.
     Confirm they describe the same compound rather than an upstream cross-reference
     error.'
+- discussion_id: curator-carotenoid-cosmomycin-identity-conflict
+  kind: CONTROVERSY
+  status: OPEN
+  prompt: How should the cosmomycin B structure be separated from the Algoriphagus
+    carotenoid assertions?
+  rationale: The stored structure matches PubChem CID156935 (cosmomycin B), whereas
+    BGC0000650 version 3 cites PMID16625353, whose abstract concerns flexixanthin
+    in Algoriphagus KK10202C and beta-carotene from heterologous CrtYcd expression.
+    Those experiments do not establish cosmomycin B production or occurrence. The
+    generic carotenoid label and Algoriphagus biological joins therefore conflict
+    with the encoded anthracycline. BGC0000214 and the other LOTUS occurrences require
+    separate exact-congener adjudication. Do not repair this by relabeling alone,
+    transferring claims to a guessed replacement structure, or excluding the exact
+    PubChem xref. NPA013316 is unverified after an access denial. Preserve the source
+    conflict pending a tested maintained correction path.
+  evidence:
+  - reference: PMID:16625353
+    explanation: Inspected primary abstract names flexixanthin and distinguishes native
+      from heterologous products.
+  - reference: https://pubchem.ncbi.nlm.nih.gov/compound/156935
+    explanation: Inspected PUG REST structure and synonyms agree with the stored full
+      InChI and key; registry equivalence is not biological proof.
+  - reference: https://github.com/CultureBotAI/NaturalProductMech/issues/952
+    explanation: Tracks unresolved exact-product remediation; this discussion does
+      not resolve the finding.
 curation_history:
 - timestamp: '2026-09-10T05:54:10Z'
   curator: seed_from_sources
@@ -210,3 +234,13 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T23:54:59Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-13T23:59:03Z'
+  curator: codex
+  action: RECORD_CURATED
+  changes: Document confirmed carotenoid identity conflicts and required exact-product
+    adjudication (#952); preserve structures, source assertions and SEEDED status.
+  llm_assisted: true
