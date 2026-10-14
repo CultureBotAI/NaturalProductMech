@@ -270,5 +270,53 @@
     "log": "/private/tmp/npmech-lomaiviticin-review-89PDr2/successor-save-verified.log",
     "log_sha256": "6389a5e8017e83290dc1bf4f8a7e22598be3786bb4f9010574823e1c28933c3e",
     "portable_log": "reviews/evidence/20261014-lomaiviticin/successor-save-verified.log"
+  },
+  "lint-final": {
+    "command": [
+      "uv",
+      "run",
+      "ruff",
+      "check",
+      "."
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T05:46:53.118095Z",
+    "finished_at": "2026-10-14T05:46:53.486849Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-lomaiviticin-review-89PDr2/lint-final.log",
+    "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+    "portable_log": "reviews/evidence/20261014-lomaiviticin/lint-final.log"
+  },
+  "packet-final": {
+    "command": [
+      "uv",
+      "run",
+      "pytest",
+      "-q",
+      "tests/test_lomaiviticin_curation.py"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T05:46:56.096070Z",
+    "finished_at": "2026-10-14T05:47:04.085798Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-lomaiviticin-review-89PDr2/packet-final.log",
+    "log_sha256": "02f052d25077f115c3c3f44454576214b7f01f4af4e5a08cbafa9a813e6a0970",
+    "portable_log": "reviews/evidence/20261014-lomaiviticin/packet-final.log"
+  },
+  "ci-initial": {
+    "command": [
+      "gh",
+      "run",
+      "view",
+      "38518371572",
+      "--log-failed"
+    ],
+    "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/NaturalProductMech",
+    "started_at": "2026-10-14T05:47:57.709479Z",
+    "finished_at": "2026-10-14T05:48:01.253696Z",
+    "exit_code": 0,
+    "log": "/private/tmp/npmech-lomaiviticin-review-89PDr2/ci-initial.log",
+    "log_sha256": "41bedf46e2152d72734d20035442241ba028e585290ccaa56610ff2d22480915",
+    "portable_log": "reviews/evidence/20261014-lomaiviticin/ci-initial.log"
   }
 }

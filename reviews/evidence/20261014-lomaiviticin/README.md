@@ -13,6 +13,13 @@ helper; its original paths and runtime requirements are retained, not represente
 as a standalone clean-checkout command. Regression tests verify snapshot hashes
 and historical owners independently.
 
+The PR lint pass required one formatting-only line wrap in the archived helper.
+`inspect_sources-original.py.txt` and `manifest-before-lint.json` retain the
+original bytes, including the manifest hash captured in the immutable follow-up
+reviews. The active manifest hashes both archival originals and the formatted
+helper. Chemistry/protein results and scientific inputs were not recomputed or
+changed by this publication correction.
+
 ## Scientific Scope
 
 - C: both stored cores conflict with the 2021 structural revision. The

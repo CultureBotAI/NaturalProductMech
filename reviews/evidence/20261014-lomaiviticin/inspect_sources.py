@@ -146,7 +146,8 @@ for name in ['chebi_structures', 'chebi_origins', 'lotus_occurrences',
         for number, row in enumerate(csv.DictReader(handle, delimiter='\t'), 2):
             if keys.intersection(row.values()):
                 matches.append({'line': number, 'row': row,
-                                'sha256': sha(json.dumps(row, sort_keys=True, separators=(',', ':')).encode())})
+                                'sha256': sha(json.dumps(
+                                    row, sort_keys=True, separators=(',', ':')).encode())})
     out['inventory_matches'][name] = matches
 (W / 'source-analysis.json').write_text(json.dumps(out, indent=2))
 print(json.dumps(out, indent=2))
