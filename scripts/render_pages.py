@@ -307,7 +307,7 @@ def corpus_digest(records: list[tuple[Path, dict[str, Any]]]) -> str:
     for path, doc in records:
         ident = str(doc.get("identifier", ""))
         inchi = str((doc.get("chemical_structure") or {}).get("standard_inchi_key", ""))
-        h.update(f"{path.name}:{ident}:{inchi}\n".encode("utf-8"))
+        h.update(f"{path.name}:{ident}:{inchi}\n".encode())
     return h.hexdigest()[:12]
 
 
@@ -423,7 +423,9 @@ def build(out_dir: Path) -> tuple[int, int]:
     if sequence_map_path.exists():
         seq_map = json.loads(sequence_map_path.read_text(encoding="utf-8"))
         (out_dir / "sequence-map.html").write_text(
-            env.get_template("sequence_map.html").render(root="", seq_map=seq_map, build_provenance=provenance),
+            env.get_template("sequence_map.html").render(
+                root="", seq_map=seq_map, build_provenance=provenance
+            ),
             encoding="utf-8",
         )
         (out_dir / "data").mkdir(exist_ok=True)
@@ -436,7 +438,11 @@ def build(out_dir: Path) -> tuple[int, int]:
         directory = out_dir / pathway["slug"]
         directory.mkdir(parents=True, exist_ok=True)
         (directory / "index.html").write_text(
-            pathway_template.render(root="../", pathway=pathway, build_provenance=provenance), encoding="utf-8")
+            pathway_template.render(
+                root="../", pathway=pathway, build_provenance=provenance
+            ),
+            encoding="utf-8",
+        )
         for record in pathway["records"]:
             (directory / f"{record['slug']}.html").write_text(
                 record_template.render(root="../", r=record, build_provenance=provenance), encoding="utf-8")
