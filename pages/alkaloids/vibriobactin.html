@@ -6,6 +6,7 @@
 <title>vibriobactin — NaturalProductMech</title>
 <meta name="description" content="Individual natural product structures, one record per Standard InChIKey, with producer organisms, cited occurrences and biosynthetic gene clusters kept apart.">
 <link rel="stylesheet" href="../style.css">
+<script src="../theme-toggle.js"></script>
 </head>
 <body>
 <header class="site"><div class="wrap">
@@ -14,11 +15,20 @@
     <a href="../browse.html">Browse</a>
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
+    <a href="../sequence-map.html">Sequence map</a>
+    <a href="../index.html#downloads">Downloads &amp; Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
 <main class="wrap">
+<div class="record-topbar">
+  <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Alkaloids</a> &middot; vibriobactin</p>
+  <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
+    <input type="search" name="q" placeholder="Search compounds…" autocomplete="off">
+    <button type="submit">Search</button>
+  </form>
+</div>
 <h1>vibriobactin</h1>
 <p class="sub"><span class="mono">CHEBI:9973</span>
   <span class="tag">EXACT</span>
@@ -88,6 +98,40 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
+
+<h2>Mechanism &amp; Biosynthesis Overview</h2>
+<div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
+  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for vibriobactin">
+    <defs>
+      <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
+      </marker>
+    </defs>
+    <rect x="14" y="24" width="186" height="98" rx="10" fill="var(--panel)" stroke="var(--rule)"/>
+    <text x="26" y="48" font-size="11" font-weight="700" fill="var(--muted)">PRODUCERS &amp; OCCURRENCE</text>
+    <text x="26" y="70" font-size="12.5" font-weight="600" fill="var(--ink)">1 producer (0 causal)</text>
+    <text x="26" y="92" font-size="11.5" fill="var(--muted)">1 cited occurrence</text>
+    <line x1="200" y1="73" x2="228" y2="73" stroke="var(--link)" stroke-width="1.8" marker-end="url(#np-arrow)"/>
+
+    <rect x="232" y="24" width="186" height="98" rx="10" fill="var(--panel)" stroke="var(--rule)"/>
+    <text x="244" y="48" font-size="11" font-weight="700" fill="var(--muted)">BIOSYNTHETIC LOCUS</text>
+    <text x="244" y="70" font-size="12.5" font-weight="600" fill="var(--ink)">1 gene cluster</text>
+    <text x="244" y="92" font-size="11.5" fill="var(--muted)">0 curated pathway steps</text>
+    <line x1="418" y1="73" x2="446" y2="73" stroke="var(--link)" stroke-width="1.8" marker-end="url(#np-arrow)"/>
+
+    <rect x="450" y="20" width="190" height="106" rx="10" fill="var(--panel)" stroke="var(--link)" stroke-width="1.8"/>
+    <text x="462" y="45" font-size="11" font-weight="700" fill="var(--link)">NATURAL PRODUCT</text>
+    <text x="462" y="68" font-size="12.5" font-weight="700" fill="var(--ink)">vibriobactin</text>
+    <text x="462" y="88" font-size="11" fill="var(--muted)">CHEBI:9973</text>
+    <text x="462" y="108" font-size="11" fill="var(--muted)">Alkaloids</text>
+    <line x1="640" y1="73" x2="668" y2="73" stroke="var(--link)" stroke-width="1.8" marker-end="url(#np-arrow)"/>
+
+    <rect x="672" y="24" width="174" height="98" rx="10" fill="var(--panel)" stroke="var(--rule)"/>
+    <text x="684" y="48" font-size="11" font-weight="700" fill="var(--muted)">TARGETS &amp; BIOACTIVITY</text>
+    <text x="684" y="70" font-size="12.5" font-weight="600" fill="var(--ink)">0 molecular targets</text>
+    <text x="684" y="92" font-size="11.5" fill="var(--muted)">0 bioactivities &middot; 1 graph</text>
+  </svg>
+</div>
 
 <h2>Causal graph &mdash; biosynthesis <span class="tag">12 nodes, 11 edges</span></h2>
 <p class="sub">Eleven selected canonical references across N16961, Lou15 and O395, not a reconstructed single-strain pathway. Canonical reference proteins, not independently inspected assay constructs. These edges describe database-associated or explicitly putative biosynthetic participation, not a direct reaction, ordered pathway, substrate specificity, stoichiometry or physical complex. GROUNDED denotes identifier identity, not experimental validation. Strain references are not interchangeable. This owner is free vibriobactin, CHEBI:9973, Standard InChIKey LLMKLMMXMOTPRU-YOAXHERRSA-N. Owner and local ChEBI cache agree within each representation (SMILES versus SMILES; InChI versus InChI) under RDKit 2026.03.5: C35H39N5O11, net charge zero, no iron. Standard InChI reconstruction changes amide/imidic-acid tautomer encoding; equal keys do not establish microstate identity. The separate BGC0000945-derived record has key SNUNDXZQRUCXRW-KDUQSJINSA-N and incomplete stereo; it is not merged or treated as an exact product equivalent. This supports named-compound correspondence, not an exact assay-product microstate, ferric complex or Rhea reaction. Ontology values were checked in the local cache on 2026-10-10, not freshly downloaded. Primary methods, figures, supplements and constructs were not independently inspected. The PMID:11112537 abstract is not full-methods evidence; its publisher returned 403. PMID:11112538 returned no usable article content and PMID:11160122 presented a browser challenge. No biochemical assay or genetic-result claim is imported from these access-limited sources.</p><div class="scroll"><table>
@@ -227,6 +271,14 @@ by the corpus tests.</p>
 
 
 
+<h2>Explore across X-Mech</h2>
+<div class="cross-mech-links">
+  <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=LLMKLMMXMOTPRU-YOAXHERRSA-N">AntibioticMech (vibriobactin) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=CHEBI%3A9973">MediaIngredientMech (CHEBI:9973) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A666">TaxonMech: Vibrio cholerae (NCBITaxon:666) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0002494">PathwayMech (mibig:BGC0002494) &nearr;</a>
+</div>
+
 
 <h2>Provenance</h2>
 <div class="scroll"><table>
@@ -239,7 +291,7 @@ by the corpus tests.</p>
 committed inventories. Neither is edited by hand.</p>
 </main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus. Every page is derived; edit the
+  <p>Generated from the committed corpus (3115 records · from sources retrieved 2026-10-07 · corpus SHA-256 5f2ec7794040). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

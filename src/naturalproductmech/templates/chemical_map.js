@@ -291,11 +291,16 @@
           option.textContent = name.replaceAll("_", " ");
           classFilter.append(option);
         });
-      rebuildLegend();
+      const params = new URL(window.location.href).searchParams;
+      const initialQ = params.get("q");
+      if (initialQ) search.value = initialQ;
+      const initialPathway = params.get("pathway");
+      if (initialPathway) classFilter.value = initialPathway;
+      const initialColor = params.get("color");
+      if (initialColor) colorMode.value = initialColor;
+      applyFilters();
       resizeCanvas();
-      updateResults();
-      status.textContent = `Showing all ${state.records.length} compounds.`;
-      const requested = new URL(window.location.href).searchParams.get("id");
+      const requested = params.get("id");
       if (requested && state.byId.has(requested)) selectRecord(state.byId.get(requested), false);
     } catch (error) {
       status.textContent = `Chemical map could not be loaded: ${error.message}`;
@@ -303,10 +308,29 @@
     }
   }
 
-  search.addEventListener("input", () => { resultLimit = 20; updateResults(); });
+  function syncUrl() {
+    const url = new URL(window.location.href);
+    if (search.value.trim()) url.searchParams.set("q", search.value.trim());
+    else url.searchParams.delete("q");
+    if (classFilter.value) url.searchParams.set("pathway", classFilter.value);
+    else url.searchParams.delete("pathway");
+    if (colorMode.value && colorMode.value !== "class") url.searchParams.set("color", colorMode.value);
+    else url.searchParams.delete("color");
+    history.replaceState(null, "", url);
+  }
+
+  search.addEventListener("input", () => {
+    resultLimit = 20;
+    syncUrl();
+    updateResults();
+  });
   showMore.addEventListener("click", () => { resultLimit += 20; updateResults(); });
-  classFilter.addEventListener("change", applyFilters);
+  classFilter.addEventListener("change", () => {
+    syncUrl();
+    applyFilters();
+  });
   colorMode.addEventListener("change", () => {
+    syncUrl();
     rebuildLegend();
     draw();
   });
@@ -316,6 +340,9 @@
     colorMode.value = "class";
     const url = new URL(window.location.href);
     url.searchParams.delete("id");
+    url.searchParams.delete("q");
+    url.searchParams.delete("pathway");
+    url.searchParams.delete("color");
     history.replaceState(null, "", url);
     applyFilters();
   });

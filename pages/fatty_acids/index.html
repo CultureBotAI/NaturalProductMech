@@ -6,6 +6,7 @@
 <title>Fatty acids — NaturalProductMech</title>
 <meta name="description" content="Individual natural product structures, one record per Standard InChIKey, with producer organisms, cited occurrences and biosynthetic gene clusters kept apart.">
 <link rel="stylesheet" href="../style.css">
+<script src="../theme-toggle.js"></script>
 </head>
 <body>
 <header class="site"><div class="wrap">
@@ -14,617 +15,1313 @@
     <a href="../browse.html">Browse</a>
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
+    <a href="../sequence-map.html">Sequence map</a>
+    <a href="../index.html#downloads">Downloads &amp; Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
-<main class="wrap">
+<main class="wrap wide">
 <h1>Fatty acids</h1>
 <p class="sub">82 records
 filed under this pathway. </p>
-<div class="scroll"><table>
-<tr><th>Compound</th><th>Identity</th><th>Producers</th><th>Occurrences</th><th>Gene clusters</th></tr>
-<tr>
-  <td><a href="2z-4z-6e-octa-2-4-6-trienoic-acid.html">(2Z,4Z,6E)-octa-2,4,6-trienoic acid</a></td>
-  <td class="mono">naturalproductmech:mibig-75bb629e1b</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td>None cited</td>
-  <td><a href="2z-4z-6e-octa-2-4-6-trienoic-acid.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="1-heptadecene.html">1-heptadecene</a></td>
-  <td class="mono">CHEBI:64502</td>
-  <td><span class="tag weak">4 asserted</span></td>
-  <td><a href="1-heptadecene.html#occurrences">25 cited occurrences</a></td>
-  <td><a href="1-heptadecene.html#gene-clusters">4 gene clusters</a></td>
-</tr>
-<tr>
-  <td><a href="1233b.html">1233B</a></td>
-  <td class="mono">naturalproductmech:mibig-0fa917b9ae</td>
-  <td><span class="tag causal">1 causal</span>
+<div class="page-with-sidebar">
+  <aside class="facet-sidebar" aria-label="Pathway filters">
+    <form id="pathway-filter" class="facet-form">
+      <div class="facet-group">
+        <label class="facet-title" for="pathway-q">Filter compounds in pathway</label>
+        <input id="pathway-q" type="search" name="q" autocomplete="off" placeholder="Name, ChEBI, InChIKey…">
+      </div>
+      <div class="facet-group">
+        <label class="facet-title" for="pathway-claim">Producer evidence</label>
+        <select id="pathway-claim">
+          <option value="">All records</option>
+          <option value="causal">Has causal producer</option>
+          <option value="producer">Has any producer</option>
+        </select>
+      </div>
+      <div class="facet-group">
+        <span class="facet-title">Annotations</span>
+        <label class="facet-check"><input type="checkbox" id="pathway-bgc"> Has gene cluster</label>
+        <label class="facet-check"><input type="checkbox" id="pathway-occ"> Has cited occurrence</label>
+      </div>
+      <div class="facet-group">
+        <label class="facet-title" for="pathway-sort">Sort compounds by</label>
+        <select id="pathway-sort">
+          <option value="label-asc">Compound name (A–Z)</option>
+          <option value="label-desc">Compound name (Z–A)</option>
+          <option value="causal-desc">Causal producers (high–low)</option>
+          <option value="bgc-desc">Gene clusters (high–low)</option>
+          <option value="occ-desc">Cited occurrences (high–low)</option>
+          <option value="id-asc">Identifier (A–Z)</option>
+        </select>
+      </div>
+      <div class="browse-controls">
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </aside>
+  <div class="results-main">
+    <p id="pathway-status" class="sub" role="status" aria-live="polite"></p>
+    <div class="scroll"><table>
+    <tr><th>Compound</th><th>Identity</th><th>Producers</th><th>Occurrences</th><th>Gene clusters</th></tr>
+    <tr class="pathway-row"
+        data-search="(2Z,4Z,6E)-octa-2,4,6-trienoic acid naturalproductmech:mibig-75bb629e1b "
+        data-label="(2z,4z,6e)-octa-2,4,6-trienoic acid"
+        data-id="naturalproductmech:mibig-75bb629e1b"
+        data-causal="0"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="2z-4z-6e-octa-2-4-6-trienoic-acid.html">(2Z,4Z,6E)-octa-2,4,6-trienoic acid</a></td>
+      <td class="mono">naturalproductmech:mibig-75bb629e1b</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td>None cited</td>
+      <td><a href="2z-4z-6e-octa-2-4-6-trienoic-acid.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="1-heptadecene CHEBI:64502 "
+        data-label="1-heptadecene"
+        data-id="CHEBI:64502"
+        data-causal="0"
+        data-producers="4"
+        data-occ="25"
+        data-bgc="4">
+      <td><a href="1-heptadecene.html">1-heptadecene</a></td>
+      <td class="mono">CHEBI:64502</td>
+      <td><span class="tag weak">4 asserted</span></td>
+      <td><a href="1-heptadecene.html#occurrences">25 cited occurrences</a></td>
+      <td><a href="1-heptadecene.html#gene-clusters">4 gene clusters</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="1233B naturalproductmech:mibig-0fa917b9ae "
+        data-label="1233b"
+        data-id="naturalproductmech:mibig-0fa917b9ae"
+        data-causal="1"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="1233b.html">1233B</a></td>
+      <td class="mono">naturalproductmech:mibig-0fa917b9ae</td>
+      <td><span class="tag causal">1 causal</span>
 </td>
-  <td><a href="1233b.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="1233b.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="aepe.html">AEPE</a></td>
-  <td class="mono">naturalproductmech:mibig-bb2d65b83b</td>
-  <td><span class="tag causal">1 causal</span>
+      <td><a href="1233b.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="1233b.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="AEPE naturalproductmech:mibig-bb2d65b83b "
+        data-label="aepe"
+        data-id="naturalproductmech:mibig-bb2d65b83b"
+        data-causal="1"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="aepe.html">AEPE</a></td>
+      <td class="mono">naturalproductmech:mibig-bb2d65b83b</td>
+      <td><span class="tag causal">1 causal</span>
 </td>
-  <td>None cited</td>
-  <td><a href="aepe.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="all-cis-5-8-11-14-17-icosapentaenoic-acid.html">all-cis-5,8,11,14,17-icosapentaenoic acid</a></td>
-  <td class="mono">CHEBI:28364</td>
-  <td><span class="tag weak">4 asserted</span></td>
-  <td><a href="all-cis-5-8-11-14-17-icosapentaenoic-acid.html#occurrences">25 cited occurrences</a></td>
-  <td><a href="all-cis-5-8-11-14-17-icosapentaenoic-acid.html#gene-clusters">4 gene clusters</a></td>
-</tr>
-<tr>
-  <td><a href="allylmalonyl-coa.html">allylmalonyl-CoA</a></td>
-  <td class="mono">naturalproductmech:mibig-d1201f1a6f</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td>None cited</td>
-  <td><a href="allylmalonyl-coa.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="amphibactin-i.html">amphibactin I</a></td>
-  <td class="mono">naturalproductmech:mibig-7f07fb1c16</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td>None cited</td>
-  <td><a href="amphibactin-i.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="baa.html">BAA</a></td>
-  <td class="mono">naturalproductmech:mibig-66eed2d46d</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="baa.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="baa.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="bab.html">BAB</a></td>
-  <td class="mono">naturalproductmech:mibig-e249ec2c87</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="bab.html#occurrences">2 cited occurrences</a></td>
-  <td><a href="bab.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="bisucaberin-b.html">bisucaberin B</a></td>
-  <td class="mono">naturalproductmech:mibig-330d218eb1</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="bisucaberin-b.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="bisucaberin-b.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="bongkrekic-acid.html">bongkrekic acid</a></td>
-  <td class="mono">CHEBI:77742</td>
-  <td><span class="tag causal">1 causal</span>
+      <td>None cited</td>
+      <td><a href="aepe.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="all-cis-5,8,11,14,17-icosapentaenoic acid CHEBI:28364 eicosapentaenoic acid eicoseicosapentaenoic acid"
+        data-label="all-cis-5,8,11,14,17-icosapentaenoic acid"
+        data-id="CHEBI:28364"
+        data-causal="0"
+        data-producers="4"
+        data-occ="25"
+        data-bgc="4">
+      <td><a href="all-cis-5-8-11-14-17-icosapentaenoic-acid.html">all-cis-5,8,11,14,17-icosapentaenoic acid</a></td>
+      <td class="mono">CHEBI:28364</td>
+      <td><span class="tag weak">4 asserted</span></td>
+      <td><a href="all-cis-5-8-11-14-17-icosapentaenoic-acid.html#occurrences">25 cited occurrences</a></td>
+      <td><a href="all-cis-5-8-11-14-17-icosapentaenoic-acid.html#gene-clusters">4 gene clusters</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="allylmalonyl-CoA naturalproductmech:mibig-d1201f1a6f "
+        data-label="allylmalonyl-coa"
+        data-id="naturalproductmech:mibig-d1201f1a6f"
+        data-causal="0"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="allylmalonyl-coa.html">allylmalonyl-CoA</a></td>
+      <td class="mono">naturalproductmech:mibig-d1201f1a6f</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td>None cited</td>
+      <td><a href="allylmalonyl-coa.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="amphibactin I naturalproductmech:mibig-7f07fb1c16 "
+        data-label="amphibactin i"
+        data-id="naturalproductmech:mibig-7f07fb1c16"
+        data-causal="0"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="amphibactin-i.html">amphibactin I</a></td>
+      <td class="mono">naturalproductmech:mibig-7f07fb1c16</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td>None cited</td>
+      <td><a href="amphibactin-i.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="BAA naturalproductmech:mibig-66eed2d46d "
+        data-label="baa"
+        data-id="naturalproductmech:mibig-66eed2d46d"
+        data-causal="0"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="baa.html">BAA</a></td>
+      <td class="mono">naturalproductmech:mibig-66eed2d46d</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="baa.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="baa.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="BAB naturalproductmech:mibig-e249ec2c87 "
+        data-label="bab"
+        data-id="naturalproductmech:mibig-e249ec2c87"
+        data-causal="0"
+        data-producers="1"
+        data-occ="2"
+        data-bgc="1">
+      <td><a href="bab.html">BAB</a></td>
+      <td class="mono">naturalproductmech:mibig-e249ec2c87</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="bab.html#occurrences">2 cited occurrences</a></td>
+      <td><a href="bab.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="bisucaberin B naturalproductmech:mibig-330d218eb1 "
+        data-label="bisucaberin b"
+        data-id="naturalproductmech:mibig-330d218eb1"
+        data-causal="0"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="bisucaberin-b.html">bisucaberin B</a></td>
+      <td class="mono">naturalproductmech:mibig-330d218eb1</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="bisucaberin-b.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="bisucaberin-b.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="bongkrekic acid CHEBI:77742 isobongkrekic acid"
+        data-label="bongkrekic acid"
+        data-id="CHEBI:77742"
+        data-causal="1"
+        data-producers="1"
+        data-occ="4"
+        data-bgc="1">
+      <td><a href="bongkrekic-acid.html">bongkrekic acid</a></td>
+      <td class="mono">CHEBI:77742</td>
+      <td><span class="tag causal">1 causal</span>
 </td>
-  <td><a href="bongkrekic-acid.html#occurrences">4 cited occurrences</a></td>
-  <td><a href="bongkrekic-acid.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="bongkrekic-acid-2.html">bongkrekic acid</a></td>
-  <td class="mono">naturalproductmech:mibig-5240e25646</td>
-  <td><span class="tag causal">1 causal</span>
+      <td><a href="bongkrekic-acid.html#occurrences">4 cited occurrences</a></td>
+      <td><a href="bongkrekic-acid.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="bongkrekic acid naturalproductmech:mibig-5240e25646 "
+        data-label="bongkrekic acid"
+        data-id="naturalproductmech:mibig-5240e25646"
+        data-causal="1"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="bongkrekic-acid-2.html">bongkrekic acid</a></td>
+      <td class="mono">naturalproductmech:mibig-5240e25646</td>
+      <td><span class="tag causal">1 causal</span>
 </td>
-  <td>None cited</td>
-  <td><a href="bongkrekic-acid-2.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="bovienimide-a.html">bovienimide A</a></td>
-  <td class="mono">naturalproductmech:mibig-9717ab5032</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="bovienimide-a.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="bovienimide-a.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="caryoynencin.html">caryoynencin</a></td>
-  <td class="mono">naturalproductmech:mibig-d02aa1e8bc</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="caryoynencin.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="caryoynencin.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="chlorosphaerolactylate-a.html">chlorosphaerolactylate A</a></td>
-  <td class="mono">naturalproductmech:mibig-90dfe4c714</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="chlorosphaerolactylate-a.html#occurrences">2 cited occurrences</a></td>
-  <td><a href="chlorosphaerolactylate-a.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="chlorosphaerolactylate-b.html">chlorosphaerolactylate B</a></td>
-  <td class="mono">naturalproductmech:mibig-fa04b8bf79</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="chlorosphaerolactylate-b.html#occurrences">2 cited occurrences</a></td>
-  <td><a href="chlorosphaerolactylate-b.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="chlorosphaerolactylate-c.html">chlorosphaerolactylate C</a></td>
-  <td class="mono">naturalproductmech:mibig-468d467f6a</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="chlorosphaerolactylate-c.html#occurrences">2 cited occurrences</a></td>
-  <td><a href="chlorosphaerolactylate-c.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="chlorosphaerolactylate-d.html">chlorosphaerolactylate D</a></td>
-  <td class="mono">naturalproductmech:mibig-34f967f24b</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="chlorosphaerolactylate-d.html#occurrences">3 cited occurrences</a></td>
-  <td><a href="chlorosphaerolactylate-d.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="ciml-a.html">CIML A</a></td>
-  <td class="mono">naturalproductmech:mibig-660389b84b</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td>None cited</td>
-  <td><a href="ciml-a.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="ciml-b.html">CIML B</a></td>
-  <td class="mono">naturalproductmech:mibig-ccb570399f</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td>None cited</td>
-  <td><a href="ciml-b.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="cis-7-tetradecenoyl-d-asparagine.html">cis-7-tetradecenoyl-D-asparagine</a></td>
-  <td class="mono">naturalproductmech:mibig-e641364514</td>
-  <td><span class="tag causal">1 causal</span>
+      <td>None cited</td>
+      <td><a href="bongkrekic-acid-2.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="bovienimide A naturalproductmech:mibig-9717ab5032 "
+        data-label="bovienimide a"
+        data-id="naturalproductmech:mibig-9717ab5032"
+        data-causal="0"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="bovienimide-a.html">bovienimide A</a></td>
+      <td class="mono">naturalproductmech:mibig-9717ab5032</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="bovienimide-a.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="bovienimide-a.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="caryoynencin naturalproductmech:mibig-d02aa1e8bc "
+        data-label="caryoynencin"
+        data-id="naturalproductmech:mibig-d02aa1e8bc"
+        data-causal="0"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="caryoynencin.html">caryoynencin</a></td>
+      <td class="mono">naturalproductmech:mibig-d02aa1e8bc</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="caryoynencin.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="caryoynencin.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="chlorosphaerolactylate A naturalproductmech:mibig-90dfe4c714 "
+        data-label="chlorosphaerolactylate a"
+        data-id="naturalproductmech:mibig-90dfe4c714"
+        data-causal="0"
+        data-producers="1"
+        data-occ="2"
+        data-bgc="1">
+      <td><a href="chlorosphaerolactylate-a.html">chlorosphaerolactylate A</a></td>
+      <td class="mono">naturalproductmech:mibig-90dfe4c714</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="chlorosphaerolactylate-a.html#occurrences">2 cited occurrences</a></td>
+      <td><a href="chlorosphaerolactylate-a.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="chlorosphaerolactylate B naturalproductmech:mibig-fa04b8bf79 "
+        data-label="chlorosphaerolactylate b"
+        data-id="naturalproductmech:mibig-fa04b8bf79"
+        data-causal="0"
+        data-producers="1"
+        data-occ="2"
+        data-bgc="1">
+      <td><a href="chlorosphaerolactylate-b.html">chlorosphaerolactylate B</a></td>
+      <td class="mono">naturalproductmech:mibig-fa04b8bf79</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="chlorosphaerolactylate-b.html#occurrences">2 cited occurrences</a></td>
+      <td><a href="chlorosphaerolactylate-b.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="chlorosphaerolactylate C naturalproductmech:mibig-468d467f6a "
+        data-label="chlorosphaerolactylate c"
+        data-id="naturalproductmech:mibig-468d467f6a"
+        data-causal="0"
+        data-producers="1"
+        data-occ="2"
+        data-bgc="1">
+      <td><a href="chlorosphaerolactylate-c.html">chlorosphaerolactylate C</a></td>
+      <td class="mono">naturalproductmech:mibig-468d467f6a</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="chlorosphaerolactylate-c.html#occurrences">2 cited occurrences</a></td>
+      <td><a href="chlorosphaerolactylate-c.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="chlorosphaerolactylate D naturalproductmech:mibig-34f967f24b "
+        data-label="chlorosphaerolactylate d"
+        data-id="naturalproductmech:mibig-34f967f24b"
+        data-causal="0"
+        data-producers="1"
+        data-occ="3"
+        data-bgc="1">
+      <td><a href="chlorosphaerolactylate-d.html">chlorosphaerolactylate D</a></td>
+      <td class="mono">naturalproductmech:mibig-34f967f24b</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="chlorosphaerolactylate-d.html#occurrences">3 cited occurrences</a></td>
+      <td><a href="chlorosphaerolactylate-d.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="CIML A naturalproductmech:mibig-660389b84b "
+        data-label="ciml a"
+        data-id="naturalproductmech:mibig-660389b84b"
+        data-causal="0"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="ciml-a.html">CIML A</a></td>
+      <td class="mono">naturalproductmech:mibig-660389b84b</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td>None cited</td>
+      <td><a href="ciml-a.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="CIML B naturalproductmech:mibig-ccb570399f "
+        data-label="ciml b"
+        data-id="naturalproductmech:mibig-ccb570399f"
+        data-causal="0"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="ciml-b.html">CIML B</a></td>
+      <td class="mono">naturalproductmech:mibig-ccb570399f</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td>None cited</td>
+      <td><a href="ciml-b.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="cis-7-tetradecenoyl-D-asparagine naturalproductmech:mibig-e641364514 "
+        data-label="cis-7-tetradecenoyl-d-asparagine"
+        data-id="naturalproductmech:mibig-e641364514"
+        data-causal="1"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="cis-7-tetradecenoyl-d-asparagine.html">cis-7-tetradecenoyl-D-asparagine</a></td>
+      <td class="mono">naturalproductmech:mibig-e641364514</td>
+      <td><span class="tag causal">1 causal</span>
 </td>
-  <td><a href="cis-7-tetradecenoyl-d-asparagine.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="cis-7-tetradecenoyl-d-asparagine.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="clethramycin.html">clethramycin</a></td>
-  <td class="mono">naturalproductmech:mibig-b67e742d2a</td>
-  <td><span class="tag causal">1 causal</span>
+      <td><a href="cis-7-tetradecenoyl-d-asparagine.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="cis-7-tetradecenoyl-d-asparagine.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="clethramycin naturalproductmech:mibig-b67e742d2a "
+        data-label="clethramycin"
+        data-id="naturalproductmech:mibig-b67e742d2a"
+        data-causal="1"
+        data-producers="1"
+        data-occ="2"
+        data-bgc="1">
+      <td><a href="clethramycin.html">clethramycin</a></td>
+      <td class="mono">naturalproductmech:mibig-b67e742d2a</td>
+      <td><span class="tag causal">1 causal</span>
 </td>
-  <td><a href="clethramycin.html#occurrences">2 cited occurrences</a></td>
-  <td><a href="clethramycin.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="deoxysporothric-acid.html">deoxysporothric acid</a></td>
-  <td class="mono">naturalproductmech:mibig-65d1a3fd2e</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="deoxysporothric-acid.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="deoxysporothric-acid.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="depudecin.html">depudecin</a></td>
-  <td class="mono">CHEBI:64143</td>
-  <td><span class="tag causal">1 causal</span>
+      <td><a href="clethramycin.html#occurrences">2 cited occurrences</a></td>
+      <td><a href="clethramycin.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="deoxysporothric acid naturalproductmech:mibig-65d1a3fd2e "
+        data-label="deoxysporothric acid"
+        data-id="naturalproductmech:mibig-65d1a3fd2e"
+        data-causal="0"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="deoxysporothric-acid.html">deoxysporothric acid</a></td>
+      <td class="mono">naturalproductmech:mibig-65d1a3fd2e</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="deoxysporothric-acid.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="deoxysporothric-acid.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="depudecin CHEBI:64143 "
+        data-label="depudecin"
+        data-id="CHEBI:64143"
+        data-causal="1"
+        data-producers="1"
+        data-occ="3"
+        data-bgc="1">
+      <td><a href="depudecin.html">depudecin</a></td>
+      <td class="mono">CHEBI:64143</td>
+      <td><span class="tag causal">1 causal</span>
 </td>
-  <td><a href="depudecin.html#occurrences">3 cited occurrences</a></td>
-  <td><a href="depudecin.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="desferrioxamine-b.html">desferrioxamine B</a></td>
-  <td class="mono">CHEBI:4356</td>
-  <td><span class="tag causal">1 causal</span>
+      <td><a href="depudecin.html#occurrences">3 cited occurrences</a></td>
+      <td><a href="depudecin.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="desferrioxamine B CHEBI:4356 desferrioxamin B desferrioxamine"
+        data-label="desferrioxamine b"
+        data-id="CHEBI:4356"
+        data-causal="1"
+        data-producers="4"
+        data-occ="25"
+        data-bgc="4">
+      <td><a href="desferrioxamine-b.html">desferrioxamine B</a></td>
+      <td class="mono">CHEBI:4356</td>
+      <td><span class="tag causal">1 causal</span>
 <span class="tag weak">3 asserted</span></td>
-  <td><a href="desferrioxamine-b.html#occurrences">25 cited occurrences</a></td>
-  <td><a href="desferrioxamine-b.html#gene-clusters">4 gene clusters</a></td>
-</tr>
-<tr>
-  <td><a href="desulfoclethramycin.html">desulfoclethramycin</a></td>
-  <td class="mono">naturalproductmech:mibig-0c2b352386</td>
-  <td><span class="tag causal">1 causal</span>
+      <td><a href="desferrioxamine-b.html#occurrences">25 cited occurrences</a></td>
+      <td><a href="desferrioxamine-b.html#gene-clusters">4 gene clusters</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="desulfoclethramycin naturalproductmech:mibig-0c2b352386 "
+        data-label="desulfoclethramycin"
+        data-id="naturalproductmech:mibig-0c2b352386"
+        data-causal="1"
+        data-producers="1"
+        data-occ="2"
+        data-bgc="1">
+      <td><a href="desulfoclethramycin.html">desulfoclethramycin</a></td>
+      <td class="mono">naturalproductmech:mibig-0c2b352386</td>
+      <td><span class="tag causal">1 causal</span>
 </td>
-  <td><a href="desulfoclethramycin.html#occurrences">2 cited occurrences</a></td>
-  <td><a href="desulfoclethramycin.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="dioic-acid-moiety.html">dioic acid moiety</a></td>
-  <td class="mono">naturalproductmech:mibig-0163c915a0</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td>None cited</td>
-  <td><a href="dioic-acid-moiety.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="fabclavine-polyamine.html">fabclavine-polyamine</a></td>
-  <td class="mono">naturalproductmech:mibig-690319db5c</td>
-  <td><span class="tag causal">1 causal</span>
+      <td><a href="desulfoclethramycin.html#occurrences">2 cited occurrences</a></td>
+      <td><a href="desulfoclethramycin.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="dioic acid moiety naturalproductmech:mibig-0163c915a0 "
+        data-label="dioic acid moiety"
+        data-id="naturalproductmech:mibig-0163c915a0"
+        data-causal="0"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="dioic-acid-moiety.html">dioic acid moiety</a></td>
+      <td class="mono">naturalproductmech:mibig-0163c915a0</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td>None cited</td>
+      <td><a href="dioic-acid-moiety.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="fabclavine-polyamine naturalproductmech:mibig-690319db5c "
+        data-label="fabclavine-polyamine"
+        data-id="naturalproductmech:mibig-690319db5c"
+        data-causal="1"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="fabclavine-polyamine.html">fabclavine-polyamine</a></td>
+      <td class="mono">naturalproductmech:mibig-690319db5c</td>
+      <td><span class="tag causal">1 causal</span>
 </td>
-  <td>None cited</td>
-  <td><a href="fabclavine-polyamine.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="falcarindiol.html">falcarindiol</a></td>
-  <td class="mono">naturalproductmech:mibig-69d89b774c</td>
-  <td><span class="tag causal">1 causal</span>
+      <td>None cited</td>
+      <td><a href="fabclavine-polyamine.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="falcarindiol naturalproductmech:mibig-69d89b774c "
+        data-label="falcarindiol"
+        data-id="naturalproductmech:mibig-69d89b774c"
+        data-causal="1"
+        data-producers="1"
+        data-occ="25"
+        data-bgc="1">
+      <td><a href="falcarindiol.html">falcarindiol</a></td>
+      <td class="mono">naturalproductmech:mibig-69d89b774c</td>
+      <td><span class="tag causal">1 causal</span>
 </td>
-  <td><a href="falcarindiol.html#occurrences">25 cited occurrences</a></td>
-  <td><a href="falcarindiol.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="fr901464.html">FR901464</a></td>
-  <td class="mono">CHEBI:65915</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="fr901464.html#occurrences">2 cited occurrences</a></td>
-  <td><a href="fr901464.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="fr901464-2.html">FR901464</a></td>
-  <td class="mono">naturalproductmech:mibig-aaa3f63e83</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td>None cited</td>
-  <td><a href="fr901464-2.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="fuelimicin-b.html">fuelimicin B</a></td>
-  <td class="mono">naturalproductmech:mibig-6ebec5c5b0</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td>None cited</td>
-  <td><a href="fuelimicin-b.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="fuelimicin-c.html">fuelimicin C</a></td>
-  <td class="mono">naturalproductmech:mibig-cb8924d754</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td>None cited</td>
-  <td><a href="fuelimicin-c.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="fuelimycin-a.html">fuelimycin A</a></td>
-  <td class="mono">naturalproductmech:mibig-d9d3017055</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td>None cited</td>
-  <td><a href="fuelimycin-a.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="gpl-21.html">GPL-21</a></td>
-  <td class="mono">CHEBI:59646</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td>None cited</td>
-  <td><a href="gpl-21.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="himeic-acid-a.html">himeic acid A</a></td>
-  <td class="mono">naturalproductmech:mibig-895a33a925</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="himeic-acid-a.html#occurrences">3 cited occurrences</a></td>
-  <td><a href="himeic-acid-a.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="itaconic-acid.html">itaconic acid</a></td>
-  <td class="mono">CHEBI:30838</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="itaconic-acid.html#occurrences">18 cited occurrences</a></td>
-  <td><a href="itaconic-acid.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="legonoxamine-a.html">legonoxamine A</a></td>
-  <td class="mono">naturalproductmech:mibig-6a42d04b13</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="legonoxamine-a.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="legonoxamine-a.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="lipopolysaccharide.html">lipopolysaccharide</a></td>
-  <td class="mono">naturalproductmech:mibig-ad23b710ca</td>
-  <td><span class="tag weak">5 asserted</span></td>
-  <td><a href="lipopolysaccharide.html#occurrences">3 cited occurrences</a></td>
-  <td><a href="lipopolysaccharide.html#gene-clusters">5 gene clusters</a></td>
-</tr>
-<tr>
-  <td><a href="macrolactin-1c.html">macrolactin 1c</a></td>
-  <td class="mono">naturalproductmech:mibig-832a504b45</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td>None cited</td>
-  <td><a href="macrolactin-1c.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="macrolactin-b.html">macrolactin B</a></td>
-  <td class="mono">naturalproductmech:mibig-e48dabeb2c</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td>None cited</td>
-  <td><a href="macrolactin-b.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="mediomycin-a.html">mediomycin A</a></td>
-  <td class="mono">CHEBI:66687</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="mediomycin-a.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="mediomycin-a.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="mediomycin-a-2.html">mediomycin A</a></td>
-  <td class="mono">naturalproductmech:mibig-423ba2e941</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="mediomycin-a-2.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="mediomycin-a-2.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="methyl-2s-4-methyl-2-octanoylamino-pentanoate.html">methyl (2S)-4-methyl-2-(octanoylamino)pentanoate</a></td>
-  <td class="mono">naturalproductmech:mibig-0d69f59d36</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td>None cited</td>
-  <td><a href="methyl-2s-4-methyl-2-octanoylamino-pentanoate.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="myxofacycline-a.html">myxofacycline A</a></td>
-  <td class="mono">naturalproductmech:mibig-82477855f7</td>
-  <td><span class="tag causal">1 causal</span>
+      <td><a href="falcarindiol.html#occurrences">25 cited occurrences</a></td>
+      <td><a href="falcarindiol.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="FR901464 CHEBI:65915 "
+        data-label="fr901464"
+        data-id="CHEBI:65915"
+        data-causal="0"
+        data-producers="1"
+        data-occ="2"
+        data-bgc="1">
+      <td><a href="fr901464.html">FR901464</a></td>
+      <td class="mono">CHEBI:65915</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="fr901464.html#occurrences">2 cited occurrences</a></td>
+      <td><a href="fr901464.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="FR901464 naturalproductmech:mibig-aaa3f63e83 "
+        data-label="fr901464"
+        data-id="naturalproductmech:mibig-aaa3f63e83"
+        data-causal="0"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="fr901464-2.html">FR901464</a></td>
+      <td class="mono">naturalproductmech:mibig-aaa3f63e83</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td>None cited</td>
+      <td><a href="fr901464-2.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="fuelimicin B naturalproductmech:mibig-6ebec5c5b0 "
+        data-label="fuelimicin b"
+        data-id="naturalproductmech:mibig-6ebec5c5b0"
+        data-causal="0"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="fuelimicin-b.html">fuelimicin B</a></td>
+      <td class="mono">naturalproductmech:mibig-6ebec5c5b0</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td>None cited</td>
+      <td><a href="fuelimicin-b.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="fuelimicin C naturalproductmech:mibig-cb8924d754 "
+        data-label="fuelimicin c"
+        data-id="naturalproductmech:mibig-cb8924d754"
+        data-causal="0"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="fuelimicin-c.html">fuelimicin C</a></td>
+      <td class="mono">naturalproductmech:mibig-cb8924d754</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td>None cited</td>
+      <td><a href="fuelimicin-c.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="fuelimycin A naturalproductmech:mibig-d9d3017055 "
+        data-label="fuelimycin a"
+        data-id="naturalproductmech:mibig-d9d3017055"
+        data-causal="0"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="fuelimycin-a.html">fuelimycin A</a></td>
+      <td class="mono">naturalproductmech:mibig-d9d3017055</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td>None cited</td>
+      <td><a href="fuelimycin-a.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="GPL-21 CHEBI:59646 glycopeptidolipid"
+        data-label="gpl-21"
+        data-id="CHEBI:59646"
+        data-causal="0"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="gpl-21.html">GPL-21</a></td>
+      <td class="mono">CHEBI:59646</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td>None cited</td>
+      <td><a href="gpl-21.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="himeic acid A naturalproductmech:mibig-895a33a925 "
+        data-label="himeic acid a"
+        data-id="naturalproductmech:mibig-895a33a925"
+        data-causal="0"
+        data-producers="1"
+        data-occ="3"
+        data-bgc="1">
+      <td><a href="himeic-acid-a.html">himeic acid A</a></td>
+      <td class="mono">naturalproductmech:mibig-895a33a925</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="himeic-acid-a.html#occurrences">3 cited occurrences</a></td>
+      <td><a href="himeic-acid-a.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="itaconic acid CHEBI:30838 "
+        data-label="itaconic acid"
+        data-id="CHEBI:30838"
+        data-causal="0"
+        data-producers="1"
+        data-occ="18"
+        data-bgc="1">
+      <td><a href="itaconic-acid.html">itaconic acid</a></td>
+      <td class="mono">CHEBI:30838</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="itaconic-acid.html#occurrences">18 cited occurrences</a></td>
+      <td><a href="itaconic-acid.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="legonoxamine A naturalproductmech:mibig-6a42d04b13 "
+        data-label="legonoxamine a"
+        data-id="naturalproductmech:mibig-6a42d04b13"
+        data-causal="0"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="legonoxamine-a.html">legonoxamine A</a></td>
+      <td class="mono">naturalproductmech:mibig-6a42d04b13</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="legonoxamine-a.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="legonoxamine-a.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="lipopolysaccharide naturalproductmech:mibig-ad23b710ca "
+        data-label="lipopolysaccharide"
+        data-id="naturalproductmech:mibig-ad23b710ca"
+        data-causal="0"
+        data-producers="5"
+        data-occ="3"
+        data-bgc="5">
+      <td><a href="lipopolysaccharide.html">lipopolysaccharide</a></td>
+      <td class="mono">naturalproductmech:mibig-ad23b710ca</td>
+      <td><span class="tag weak">5 asserted</span></td>
+      <td><a href="lipopolysaccharide.html#occurrences">3 cited occurrences</a></td>
+      <td><a href="lipopolysaccharide.html#gene-clusters">5 gene clusters</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="macrolactin 1c naturalproductmech:mibig-832a504b45 "
+        data-label="macrolactin 1c"
+        data-id="naturalproductmech:mibig-832a504b45"
+        data-causal="0"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="macrolactin-1c.html">macrolactin 1c</a></td>
+      <td class="mono">naturalproductmech:mibig-832a504b45</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td>None cited</td>
+      <td><a href="macrolactin-1c.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="macrolactin B naturalproductmech:mibig-e48dabeb2c "
+        data-label="macrolactin b"
+        data-id="naturalproductmech:mibig-e48dabeb2c"
+        data-causal="0"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="macrolactin-b.html">macrolactin B</a></td>
+      <td class="mono">naturalproductmech:mibig-e48dabeb2c</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td>None cited</td>
+      <td><a href="macrolactin-b.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="mediomycin A CHEBI:66687 "
+        data-label="mediomycin a"
+        data-id="CHEBI:66687"
+        data-causal="0"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="mediomycin-a.html">mediomycin A</a></td>
+      <td class="mono">CHEBI:66687</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="mediomycin-a.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="mediomycin-a.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="mediomycin A naturalproductmech:mibig-423ba2e941 "
+        data-label="mediomycin a"
+        data-id="naturalproductmech:mibig-423ba2e941"
+        data-causal="0"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="mediomycin-a-2.html">mediomycin A</a></td>
+      <td class="mono">naturalproductmech:mibig-423ba2e941</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="mediomycin-a-2.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="mediomycin-a-2.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="methyl (2S)-4-methyl-2-(octanoylamino)pentanoate naturalproductmech:mibig-0d69f59d36 "
+        data-label="methyl (2s)-4-methyl-2-(octanoylamino)pentanoate"
+        data-id="naturalproductmech:mibig-0d69f59d36"
+        data-causal="0"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="methyl-2s-4-methyl-2-octanoylamino-pentanoate.html">methyl (2S)-4-methyl-2-(octanoylamino)pentanoate</a></td>
+      <td class="mono">naturalproductmech:mibig-0d69f59d36</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td>None cited</td>
+      <td><a href="methyl-2s-4-methyl-2-octanoylamino-pentanoate.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="myxofacycline A naturalproductmech:mibig-82477855f7 "
+        data-label="myxofacycline a"
+        data-id="naturalproductmech:mibig-82477855f7"
+        data-causal="1"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="myxofacycline-a.html">myxofacycline A</a></td>
+      <td class="mono">naturalproductmech:mibig-82477855f7</td>
+      <td><span class="tag causal">1 causal</span>
 </td>
-  <td><a href="myxofacycline-a.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="myxofacycline-a.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="myxofacycline-b.html">myxofacycline B</a></td>
-  <td class="mono">naturalproductmech:mibig-fc60b2553b</td>
-  <td><span class="tag causal">1 causal</span>
+      <td><a href="myxofacycline-a.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="myxofacycline-a.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="myxofacycline B naturalproductmech:mibig-fc60b2553b "
+        data-label="myxofacycline b"
+        data-id="naturalproductmech:mibig-fc60b2553b"
+        data-causal="1"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="myxofacycline-b.html">myxofacycline B</a></td>
+      <td class="mono">naturalproductmech:mibig-fc60b2553b</td>
+      <td><span class="tag causal">1 causal</span>
 </td>
-  <td><a href="myxofacycline-b.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="myxofacycline-b.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="myxofacycline-c.html">myxofacycline C</a></td>
-  <td class="mono">naturalproductmech:mibig-81768a4509</td>
-  <td><span class="tag causal">1 causal</span>
+      <td><a href="myxofacycline-b.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="myxofacycline-b.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="myxofacycline C naturalproductmech:mibig-81768a4509 "
+        data-label="myxofacycline c"
+        data-id="naturalproductmech:mibig-81768a4509"
+        data-causal="1"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="myxofacycline-c.html">myxofacycline C</a></td>
+      <td class="mono">naturalproductmech:mibig-81768a4509</td>
+      <td><span class="tag causal">1 causal</span>
 </td>
-  <td><a href="myxofacycline-c.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="myxofacycline-c.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="n-acyl-lysine.html">N-acyl lysine</a></td>
-  <td class="mono">naturalproductmech:mibig-215067038f</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td>None cited</td>
-  <td><a href="n-acyl-lysine.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="n-acyl-ornithine.html">N-acyl ornithine</a></td>
-  <td class="mono">naturalproductmech:mibig-84df2bc4e7</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td>None cited</td>
-  <td><a href="n-acyl-ornithine.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="n-acyl-serinol.html">N-acyl serinol</a></td>
-  <td class="mono">naturalproductmech:mibig-3bbb3fde18</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td>None cited</td>
-  <td><a href="n-acyl-serinol.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="n-myristoyl-d-asparagine.html">N-myristoyl-D-asparagine</a></td>
-  <td class="mono">naturalproductmech:mibig-17fa2a8971</td>
-  <td><span class="tag causal">1 causal</span>
+      <td><a href="myxofacycline-c.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="myxofacycline-c.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="N-acyl lysine naturalproductmech:mibig-215067038f "
+        data-label="n-acyl lysine"
+        data-id="naturalproductmech:mibig-215067038f"
+        data-causal="0"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="n-acyl-lysine.html">N-acyl lysine</a></td>
+      <td class="mono">naturalproductmech:mibig-215067038f</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td>None cited</td>
+      <td><a href="n-acyl-lysine.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="N-acyl ornithine naturalproductmech:mibig-84df2bc4e7 "
+        data-label="n-acyl ornithine"
+        data-id="naturalproductmech:mibig-84df2bc4e7"
+        data-causal="0"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="n-acyl-ornithine.html">N-acyl ornithine</a></td>
+      <td class="mono">naturalproductmech:mibig-84df2bc4e7</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td>None cited</td>
+      <td><a href="n-acyl-ornithine.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="N-acyl serinol naturalproductmech:mibig-3bbb3fde18 "
+        data-label="n-acyl serinol"
+        data-id="naturalproductmech:mibig-3bbb3fde18"
+        data-causal="0"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="n-acyl-serinol.html">N-acyl serinol</a></td>
+      <td class="mono">naturalproductmech:mibig-3bbb3fde18</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td>None cited</td>
+      <td><a href="n-acyl-serinol.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="N-myristoyl-D-asparagine naturalproductmech:mibig-17fa2a8971 "
+        data-label="n-myristoyl-d-asparagine"
+        data-id="naturalproductmech:mibig-17fa2a8971"
+        data-causal="1"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="n-myristoyl-d-asparagine.html">N-myristoyl-D-asparagine</a></td>
+      <td class="mono">naturalproductmech:mibig-17fa2a8971</td>
+      <td><span class="tag causal">1 causal</span>
 </td>
-  <td><a href="n-myristoyl-d-asparagine.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="n-myristoyl-d-asparagine.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="neocarzilin-a.html">neocarzilin A</a></td>
-  <td class="mono">naturalproductmech:mibig-a789b73142</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="neocarzilin-a.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="neocarzilin-a.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="neocarzilin-b.html">neocarzilin B</a></td>
-  <td class="mono">naturalproductmech:mibig-1f00ca2ee8</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="neocarzilin-b.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="neocarzilin-b.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="nonadec-1-ene.html">nonadec-1-ene</a></td>
-  <td class="mono">CHEBI:64503</td>
-  <td><span class="tag causal">1 causal</span>
+      <td><a href="n-myristoyl-d-asparagine.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="n-myristoyl-d-asparagine.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="neocarzilin A naturalproductmech:mibig-a789b73142 "
+        data-label="neocarzilin a"
+        data-id="naturalproductmech:mibig-a789b73142"
+        data-causal="0"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="neocarzilin-a.html">neocarzilin A</a></td>
+      <td class="mono">naturalproductmech:mibig-a789b73142</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="neocarzilin-a.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="neocarzilin-a.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="neocarzilin B naturalproductmech:mibig-1f00ca2ee8 "
+        data-label="neocarzilin b"
+        data-id="naturalproductmech:mibig-1f00ca2ee8"
+        data-causal="0"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="neocarzilin-b.html">neocarzilin B</a></td>
+      <td class="mono">naturalproductmech:mibig-1f00ca2ee8</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="neocarzilin-b.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="neocarzilin-b.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="nonadec-1-ene CHEBI:64503 1-nonadecene"
+        data-label="nonadec-1-ene"
+        data-id="CHEBI:64503"
+        data-causal="1"
+        data-producers="1"
+        data-occ="9"
+        data-bgc="1">
+      <td><a href="nonadec-1-ene.html">nonadec-1-ene</a></td>
+      <td class="mono">CHEBI:64503</td>
+      <td><span class="tag causal">1 causal</span>
 </td>
-  <td><a href="nonadec-1-ene.html#occurrences">9 cited occurrences</a></td>
-  <td><a href="nonadec-1-ene.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="oryzine-a.html">oryzine A</a></td>
-  <td class="mono">naturalproductmech:mibig-8fe31f101d</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td>None cited</td>
-  <td><a href="oryzine-a.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="protegencin.html">protegencin</a></td>
-  <td class="mono">naturalproductmech:mibig-f2b4cdecaa</td>
-  <td><span class="tag causal">1 causal</span>
+      <td><a href="nonadec-1-ene.html#occurrences">9 cited occurrences</a></td>
+      <td><a href="nonadec-1-ene.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="oryzine A naturalproductmech:mibig-8fe31f101d "
+        data-label="oryzine a"
+        data-id="naturalproductmech:mibig-8fe31f101d"
+        data-causal="0"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="oryzine-a.html">oryzine A</a></td>
+      <td class="mono">naturalproductmech:mibig-8fe31f101d</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td>None cited</td>
+      <td><a href="oryzine-a.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="protegencin naturalproductmech:mibig-f2b4cdecaa "
+        data-label="protegencin"
+        data-id="naturalproductmech:mibig-f2b4cdecaa"
+        data-causal="1"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="protegencin.html">protegencin</a></td>
+      <td class="mono">naturalproductmech:mibig-f2b4cdecaa</td>
+      <td><span class="tag causal">1 causal</span>
 </td>
-  <td>None cited</td>
-  <td><a href="protegencin.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="salinipostin-a.html">Salinipostin A</a></td>
-  <td class="mono">naturalproductmech:mibig-adb6bae236</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="salinipostin-a.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="salinipostin-a.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="salinipostin-b.html">Salinipostin B</a></td>
-  <td class="mono">naturalproductmech:mibig-291e1c29b8</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="salinipostin-b.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="salinipostin-b.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="salinipostin-c.html">Salinipostin C</a></td>
-  <td class="mono">naturalproductmech:mibig-0bfdbd3cfa</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="salinipostin-c.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="salinipostin-c.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="salinipostin-d.html">Salinipostin D</a></td>
-  <td class="mono">naturalproductmech:mibig-c80121ae79</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="salinipostin-d.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="salinipostin-d.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="salinipostin-e.html">Salinipostin E</a></td>
-  <td class="mono">naturalproductmech:mibig-02928ccd01</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="salinipostin-e.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="salinipostin-e.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="salinipostin-f.html">Salinipostin F</a></td>
-  <td class="mono">naturalproductmech:mibig-2ca1e49987</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="salinipostin-f.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="salinipostin-f.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="salinipostin-g.html">Salinipostin G</a></td>
-  <td class="mono">naturalproductmech:mibig-c8f2d5a80d</td>
-  <td><span class="tag weak">2 asserted</span></td>
-  <td><a href="salinipostin-g.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="salinipostin-g.html#gene-clusters">2 gene clusters</a></td>
-</tr>
-<tr>
-  <td><a href="salinipostin-h.html">Salinipostin H</a></td>
-  <td class="mono">naturalproductmech:mibig-9e506d78a3</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="salinipostin-h.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="salinipostin-h.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="salinipostin-i.html">Salinipostin I</a></td>
-  <td class="mono">naturalproductmech:mibig-95871863b6</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="salinipostin-i.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="salinipostin-i.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="salinipostin-j.html">Salinipostin J</a></td>
-  <td class="mono">naturalproductmech:mibig-35356a652f</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="salinipostin-j.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="salinipostin-j.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="salinipostin-k.html">Salinipostin K</a></td>
-  <td class="mono">naturalproductmech:mibig-caaa6fb247</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="salinipostin-k.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="salinipostin-k.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="spliceostatin-l.html">spliceostatin L</a></td>
-  <td class="mono">naturalproductmech:mibig-e51d198181</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td>None cited</td>
-  <td><a href="spliceostatin-l.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="sporothric-acid.html">sporothric acid</a></td>
-  <td class="mono">naturalproductmech:mibig-a68485e2ae</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td>None cited</td>
-  <td><a href="sporothric-acid.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="stieleriacine-c.html">stieleriacine C</a></td>
-  <td class="mono">naturalproductmech:mibig-c19e64c3c4</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td>None cited</td>
-  <td><a href="stieleriacine-c.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="tg-1.html">TG-1</a></td>
-  <td class="mono">naturalproductmech:mibig-ff1730935d</td>
-  <td><span class="tag causal">1 causal</span>
+      <td>None cited</td>
+      <td><a href="protegencin.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="Salinipostin A naturalproductmech:mibig-adb6bae236 "
+        data-label="salinipostin a"
+        data-id="naturalproductmech:mibig-adb6bae236"
+        data-causal="0"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="salinipostin-a.html">Salinipostin A</a></td>
+      <td class="mono">naturalproductmech:mibig-adb6bae236</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="salinipostin-a.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="salinipostin-a.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="Salinipostin B naturalproductmech:mibig-291e1c29b8 "
+        data-label="salinipostin b"
+        data-id="naturalproductmech:mibig-291e1c29b8"
+        data-causal="0"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="salinipostin-b.html">Salinipostin B</a></td>
+      <td class="mono">naturalproductmech:mibig-291e1c29b8</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="salinipostin-b.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="salinipostin-b.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="Salinipostin C naturalproductmech:mibig-0bfdbd3cfa "
+        data-label="salinipostin c"
+        data-id="naturalproductmech:mibig-0bfdbd3cfa"
+        data-causal="0"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="salinipostin-c.html">Salinipostin C</a></td>
+      <td class="mono">naturalproductmech:mibig-0bfdbd3cfa</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="salinipostin-c.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="salinipostin-c.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="Salinipostin D naturalproductmech:mibig-c80121ae79 "
+        data-label="salinipostin d"
+        data-id="naturalproductmech:mibig-c80121ae79"
+        data-causal="0"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="salinipostin-d.html">Salinipostin D</a></td>
+      <td class="mono">naturalproductmech:mibig-c80121ae79</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="salinipostin-d.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="salinipostin-d.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="Salinipostin E naturalproductmech:mibig-02928ccd01 "
+        data-label="salinipostin e"
+        data-id="naturalproductmech:mibig-02928ccd01"
+        data-causal="0"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="salinipostin-e.html">Salinipostin E</a></td>
+      <td class="mono">naturalproductmech:mibig-02928ccd01</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="salinipostin-e.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="salinipostin-e.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="Salinipostin F naturalproductmech:mibig-2ca1e49987 "
+        data-label="salinipostin f"
+        data-id="naturalproductmech:mibig-2ca1e49987"
+        data-causal="0"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="salinipostin-f.html">Salinipostin F</a></td>
+      <td class="mono">naturalproductmech:mibig-2ca1e49987</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="salinipostin-f.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="salinipostin-f.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="Salinipostin G naturalproductmech:mibig-c8f2d5a80d salinipostin G"
+        data-label="salinipostin g"
+        data-id="naturalproductmech:mibig-c8f2d5a80d"
+        data-causal="0"
+        data-producers="2"
+        data-occ="1"
+        data-bgc="2">
+      <td><a href="salinipostin-g.html">Salinipostin G</a></td>
+      <td class="mono">naturalproductmech:mibig-c8f2d5a80d</td>
+      <td><span class="tag weak">2 asserted</span></td>
+      <td><a href="salinipostin-g.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="salinipostin-g.html#gene-clusters">2 gene clusters</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="Salinipostin H naturalproductmech:mibig-9e506d78a3 "
+        data-label="salinipostin h"
+        data-id="naturalproductmech:mibig-9e506d78a3"
+        data-causal="0"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="salinipostin-h.html">Salinipostin H</a></td>
+      <td class="mono">naturalproductmech:mibig-9e506d78a3</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="salinipostin-h.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="salinipostin-h.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="Salinipostin I naturalproductmech:mibig-95871863b6 "
+        data-label="salinipostin i"
+        data-id="naturalproductmech:mibig-95871863b6"
+        data-causal="0"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="salinipostin-i.html">Salinipostin I</a></td>
+      <td class="mono">naturalproductmech:mibig-95871863b6</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="salinipostin-i.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="salinipostin-i.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="Salinipostin J naturalproductmech:mibig-35356a652f "
+        data-label="salinipostin j"
+        data-id="naturalproductmech:mibig-35356a652f"
+        data-causal="0"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="salinipostin-j.html">Salinipostin J</a></td>
+      <td class="mono">naturalproductmech:mibig-35356a652f</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="salinipostin-j.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="salinipostin-j.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="Salinipostin K naturalproductmech:mibig-caaa6fb247 "
+        data-label="salinipostin k"
+        data-id="naturalproductmech:mibig-caaa6fb247"
+        data-causal="0"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="salinipostin-k.html">Salinipostin K</a></td>
+      <td class="mono">naturalproductmech:mibig-caaa6fb247</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="salinipostin-k.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="salinipostin-k.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="spliceostatin L naturalproductmech:mibig-e51d198181 "
+        data-label="spliceostatin l"
+        data-id="naturalproductmech:mibig-e51d198181"
+        data-causal="0"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="spliceostatin-l.html">spliceostatin L</a></td>
+      <td class="mono">naturalproductmech:mibig-e51d198181</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td>None cited</td>
+      <td><a href="spliceostatin-l.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="sporothric acid naturalproductmech:mibig-a68485e2ae "
+        data-label="sporothric acid"
+        data-id="naturalproductmech:mibig-a68485e2ae"
+        data-causal="0"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="sporothric-acid.html">sporothric acid</a></td>
+      <td class="mono">naturalproductmech:mibig-a68485e2ae</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td>None cited</td>
+      <td><a href="sporothric-acid.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="stieleriacine C naturalproductmech:mibig-c19e64c3c4 "
+        data-label="stieleriacine c"
+        data-id="naturalproductmech:mibig-c19e64c3c4"
+        data-causal="0"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="stieleriacine-c.html">stieleriacine C</a></td>
+      <td class="mono">naturalproductmech:mibig-c19e64c3c4</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td>None cited</td>
+      <td><a href="stieleriacine-c.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="TG-1 naturalproductmech:mibig-ff1730935d "
+        data-label="tg-1"
+        data-id="naturalproductmech:mibig-ff1730935d"
+        data-causal="1"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="tg-1.html">TG-1</a></td>
+      <td class="mono">naturalproductmech:mibig-ff1730935d</td>
+      <td><span class="tag causal">1 causal</span>
 </td>
-  <td><a href="tg-1.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="tg-1.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="trans-aconitic-acid.html">trans-aconitic acid</a></td>
-  <td class="mono">CHEBI:32806</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="trans-aconitic-acid.html#occurrences">20 cited occurrences</a></td>
-  <td><a href="trans-aconitic-acid.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="triacsin-c.html">triacsin C</a></td>
-  <td class="mono">CHEBI:144441</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="triacsin-c.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="triacsin-c.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="ustilagic-acid.html">ustilagic acid</a></td>
-  <td class="mono">naturalproductmech:mibig-df8e69d398</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="ustilagic-acid.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="ustilagic-acid.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="vepe.html">VEPE</a></td>
-  <td class="mono">naturalproductmech:mibig-a76cb10921</td>
-  <td><span class="tag causal">1 causal</span>
+      <td><a href="tg-1.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="tg-1.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="trans-aconitic acid CHEBI:32806 "
+        data-label="trans-aconitic acid"
+        data-id="CHEBI:32806"
+        data-causal="0"
+        data-producers="1"
+        data-occ="20"
+        data-bgc="1">
+      <td><a href="trans-aconitic-acid.html">trans-aconitic acid</a></td>
+      <td class="mono">CHEBI:32806</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="trans-aconitic-acid.html#occurrences">20 cited occurrences</a></td>
+      <td><a href="trans-aconitic-acid.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="triacsin C CHEBI:144441 "
+        data-label="triacsin c"
+        data-id="CHEBI:144441"
+        data-causal="0"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="triacsin-c.html">triacsin C</a></td>
+      <td class="mono">CHEBI:144441</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="triacsin-c.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="triacsin-c.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="ustilagic acid naturalproductmech:mibig-df8e69d398 "
+        data-label="ustilagic acid"
+        data-id="naturalproductmech:mibig-df8e69d398"
+        data-causal="0"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="ustilagic-acid.html">ustilagic acid</a></td>
+      <td class="mono">naturalproductmech:mibig-df8e69d398</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="ustilagic-acid.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="ustilagic-acid.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="VEPE naturalproductmech:mibig-a76cb10921 "
+        data-label="vepe"
+        data-id="naturalproductmech:mibig-a76cb10921"
+        data-causal="1"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="vepe.html">VEPE</a></td>
+      <td class="mono">naturalproductmech:mibig-a76cb10921</td>
+      <td><span class="tag causal">1 causal</span>
 </td>
-  <td>None cited</td>
-  <td><a href="vepe.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="woodybactin-d.html">woodybactin D</a></td>
-  <td class="mono">naturalproductmech:mibig-8e08b44b31</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="woodybactin-d.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="woodybactin-d.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="zeamine.html">zeamine</a></td>
-  <td class="mono">naturalproductmech:mibig-fbe61393a1</td>
-  <td><span class="tag causal">1 causal</span>
+      <td>None cited</td>
+      <td><a href="vepe.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="woodybactin D naturalproductmech:mibig-8e08b44b31 "
+        data-label="woodybactin d"
+        data-id="naturalproductmech:mibig-8e08b44b31"
+        data-causal="0"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="woodybactin-d.html">woodybactin D</a></td>
+      <td class="mono">naturalproductmech:mibig-8e08b44b31</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="woodybactin-d.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="woodybactin-d.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="zeamine naturalproductmech:mibig-fbe61393a1 "
+        data-label="zeamine"
+        data-id="naturalproductmech:mibig-fbe61393a1"
+        data-causal="1"
+        data-producers="1"
+        data-occ="2"
+        data-bgc="1">
+      <td><a href="zeamine.html">zeamine</a></td>
+      <td class="mono">naturalproductmech:mibig-fbe61393a1</td>
+      <td><span class="tag causal">1 causal</span>
 </td>
-  <td><a href="zeamine.html#occurrences">2 cited occurrences</a></td>
-  <td><a href="zeamine.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="zeamine-i.html">zeamine I</a></td>
-  <td class="mono">naturalproductmech:mibig-b682360898</td>
-  <td><span class="tag causal">1 causal</span>
+      <td><a href="zeamine.html#occurrences">2 cited occurrences</a></td>
+      <td><a href="zeamine.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="zeamine I naturalproductmech:mibig-b682360898 "
+        data-label="zeamine i"
+        data-id="naturalproductmech:mibig-b682360898"
+        data-causal="1"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="zeamine-i.html">zeamine I</a></td>
+      <td class="mono">naturalproductmech:mibig-b682360898</td>
+      <td><span class="tag causal">1 causal</span>
 </td>
-  <td><a href="zeamine-i.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="zeamine-i.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="zeamine-ii.html">zeamine II</a></td>
-  <td class="mono">naturalproductmech:mibig-43e8312129</td>
-  <td><span class="tag causal">1 causal</span>
+      <td><a href="zeamine-i.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="zeamine-i.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="zeamine II naturalproductmech:mibig-43e8312129 "
+        data-label="zeamine ii"
+        data-id="naturalproductmech:mibig-43e8312129"
+        data-causal="1"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="zeamine-ii.html">zeamine II</a></td>
+      <td class="mono">naturalproductmech:mibig-43e8312129</td>
+      <td><span class="tag causal">1 causal</span>
 </td>
-  <td><a href="zeamine-ii.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="zeamine-ii.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="galactosylceramide.html">α-galactosylceramide</a></td>
-  <td class="mono">naturalproductmech:mibig-0a1c9f30af</td>
-  <td><span class="tag causal">1 causal</span>
+      <td><a href="zeamine-ii.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="zeamine-ii.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="α-galactosylceramide naturalproductmech:mibig-0a1c9f30af "
+        data-label="α-galactosylceramide"
+        data-id="naturalproductmech:mibig-0a1c9f30af"
+        data-causal="1"
+        data-producers="1"
+        data-occ="1"
+        data-bgc="1">
+      <td><a href="galactosylceramide.html">α-galactosylceramide</a></td>
+      <td class="mono">naturalproductmech:mibig-0a1c9f30af</td>
+      <td><span class="tag causal">1 causal</span>
 </td>
-  <td><a href="galactosylceramide.html#occurrences">1 cited occurrence</a></td>
-  <td><a href="galactosylceramide.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="diketones.html">β-Diketones</a></td>
-  <td class="mono">naturalproductmech:mibig-c696b121e1</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td>None cited</td>
-  <td><a href="diketones.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-<tr>
-  <td><a href="butyrolactone.html">γ-butyrolactone</a></td>
-  <td class="mono">CHEBI:42639</td>
-  <td><span class="tag weak">1 asserted</span></td>
-  <td><a href="butyrolactone.html#occurrences">18 cited occurrences</a></td>
-  <td><a href="butyrolactone.html#gene-clusters">1 gene cluster</a></td>
-</tr>
-</table></div>
+      <td><a href="galactosylceramide.html#occurrences">1 cited occurrence</a></td>
+      <td><a href="galactosylceramide.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="β-Diketones naturalproductmech:mibig-c696b121e1 "
+        data-label="β-diketones"
+        data-id="naturalproductmech:mibig-c696b121e1"
+        data-causal="0"
+        data-producers="1"
+        data-occ="0"
+        data-bgc="1">
+      <td><a href="diketones.html">β-Diketones</a></td>
+      <td class="mono">naturalproductmech:mibig-c696b121e1</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td>None cited</td>
+      <td><a href="diketones.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    <tr class="pathway-row"
+        data-search="γ-butyrolactone CHEBI:42639 "
+        data-label="γ-butyrolactone"
+        data-id="CHEBI:42639"
+        data-causal="0"
+        data-producers="1"
+        data-occ="18"
+        data-bgc="1">
+      <td><a href="butyrolactone.html">γ-butyrolactone</a></td>
+      <td class="mono">CHEBI:42639</td>
+      <td><span class="tag weak">1 asserted</span></td>
+      <td><a href="butyrolactone.html#occurrences">18 cited occurrences</a></td>
+      <td><a href="butyrolactone.html#gene-clusters">1 gene cluster</a></td>
+    </tr>
+    </table></div>
+  </div>
+</div>
+<script>
+(function () {
+  var form = document.getElementById('pathway-filter');
+  var q = document.getElementById('pathway-q');
+  var claim = document.getElementById('pathway-claim');
+  var bgc = document.getElementById('pathway-bgc');
+  var occ = document.getElementById('pathway-occ');
+  var sortEl = document.getElementById('pathway-sort');
+  var status = document.getElementById('pathway-status');
+  var rows = Array.prototype.slice.call(document.querySelectorAll('tr.pathway-row'));
+  if (!form || !q) return;
+  if (window.location && window.location.search) {
+    var params = new URLSearchParams(window.location.search);
+    var qp = params.get('q');
+    if (qp) q.value = qp;
+    if (claim && params.get('claim')) claim.value = params.get('claim');
+    if (bgc && params.get('bgc') === '1') bgc.checked = true;
+    if (occ && params.get('occ') === '1') occ.checked = true;
+    if (sortEl && params.get('sort')) sortEl.value = params.get('sort');
+  }
+  function update() {
+    var term = q.value.trim().toLowerCase();
+    var c = claim.value;
+    var needBgc = bgc.checked;
+    var needOcc = occ.checked;
+    var sortVal = sortEl ? sortEl.value : 'label-asc';
+    var n = 0;
+    if (window.history && window.history.replaceState) {
+      var u = new URL(window.location.href);
+      if (q.value.trim()) u.searchParams.set('q', q.value.trim());
+      else u.searchParams.delete('q');
+      if (c) u.searchParams.set('claim', c);
+      else u.searchParams.delete('claim');
+      if (needBgc) u.searchParams.set('bgc', '1');
+      else u.searchParams.delete('bgc');
+      if (needOcc) u.searchParams.set('occ', '1');
+      else u.searchParams.delete('occ');
+      if (sortVal && sortVal !== 'label-asc') u.searchParams.set('sort', sortVal);
+      else u.searchParams.delete('sort');
+      window.history.replaceState(null, '', u);
+    }
+    rows.forEach(function (r) {
+      var ok = (r.dataset.search || '').toLowerCase().indexOf(term) !== -1;
+      if (ok && c === 'causal' && +(r.dataset.causal || 0) < 1) ok = false;
+      if (ok && c === 'producer' && +(r.dataset.producers || 0) < 1) ok = false;
+      if (ok && needBgc && +(r.dataset.bgc || 0) < 1) ok = false;
+      if (ok && needOcc && +(r.dataset.occ || 0) < 1) ok = false;
+      r.hidden = !ok;
+      if (ok) n += 1;
+    });
+    if (sortEl && rows.length && rows[0].parentElement) {
+      var tbody = rows[0].parentElement;
+      rows.slice().sort(function (a, b) {
+        var la = a.dataset.label || '';
+        var lb = b.dataset.label || '';
+        if (sortVal === 'label-desc') return lb.localeCompare(la);
+        if (sortVal === 'causal-desc') return (+(b.dataset.causal || 0) - +(a.dataset.causal || 0)) || la.localeCompare(lb);
+        if (sortVal === 'bgc-desc') return (+(b.dataset.bgc || 0) - +(a.dataset.bgc || 0)) || la.localeCompare(lb);
+        if (sortVal === 'occ-desc') return (+(b.dataset.occ || 0) - +(a.dataset.occ || 0)) || la.localeCompare(lb);
+        if (sortVal === 'id-asc') return (a.dataset.id || '').localeCompare(b.dataset.id || '');
+        return la.localeCompare(lb);
+      }).forEach(function (r) { tbody.appendChild(r); });
+    }
+    if (status) status.textContent = 'Showing ' + n + ' of ' + rows.length + ' compounds.';
+  }
+  q.addEventListener('input', update);
+  claim.addEventListener('change', update);
+  bgc.addEventListener('change', update);
+  occ.addEventListener('change', update);
+  if (sortEl) sortEl.addEventListener('change', update);
+  form.addEventListener('submit', function (e) { e.preventDefault(); update(); });
+  form.addEventListener('reset', function (e) {
+    e.preventDefault();
+    q.value = ''; claim.value = ''; bgc.checked = false; occ.checked = false;
+    if (sortEl) sortEl.value = 'label-asc';
+    update();
+  });
+  update();
+})();
+</script>
 </main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus. Every page is derived; edit the
+  <p>Generated from the committed corpus (3115 records · from sources retrieved 2026-10-07 · corpus SHA-256 5f2ec7794040). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

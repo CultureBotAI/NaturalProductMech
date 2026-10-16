@@ -1,24 +1,80 @@
 {% extends "base.html" %}
 {% block title %}Browse — NaturalProductMech{% endblock %}
+{% block wrapclass %} wide{% endblock %}
 {% block content %}
 <h1>Browse</h1>
 <p class="sub">{{ total }} records across {{ pathways|length }} filing pathways.</p>
-<form id="browse-search" hidden>
-  <label for="browse-query">Search compounds by name, identifier, synonym or filing pathway</label>
-  <div class="browse-controls"><input id="browse-query" type="search" autocomplete="off"><button type="reset">Reset</button></div>
-</form>
-<p id="browse-status" role="status" aria-live="polite"></p>
-<p id="browse-empty" hidden>No compounds match. Try another term or reset the search.</p>
-{% for pathway in pathways %}
-<section class="browse-group">
-<h2>{{ pathway.title }} <span class="tag">{{ pathway.count }}</span></h2>
-<ul class="records">
-{% for record in pathway.records %}
-  <li data-search="{{ record.label }} {{ record.search_identifiers|join(' ') }} {{ record.synonyms|join(' ') }} {{ pathway.title }}"><a href="{{ pathway.slug }}/{{ record.slug }}.html">{{ record.label }}</a>{% if record.duplicate_label %} <span class="mono">{{ record.identifier }}</span>{% endif %}</li>
-{% endfor %}
-</ul>
-</section>
-{% endfor %}
+<div class="page-with-sidebar">
+  <aside class="facet-sidebar" aria-label="Browse filters">
+    <form id="browse-search" class="facet-form" hidden>
+      <div class="facet-group">
+        <label class="facet-title" for="browse-query">Search compounds by name, identifier, synonym or filing pathway</label>
+        <input id="browse-query" type="search" name="q" autocomplete="off" placeholder="Name, ChEBI, InChIKey, synonym…">
+      </div>
+      <div class="facet-group">
+        <label class="facet-title" for="facet-pathway">Filing pathway</label>
+        <select id="facet-pathway">
+          <option value="">All filing pathways</option>
+          {% for pathway in pathways %}
+          <option value="{{ pathway.slug }}">{{ pathway.title | default(pathway.slug) }} ({{ pathway.count | default(pathway.records|length) }})</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="facet-group">
+        <label class="facet-title" for="facet-claim">Producer &amp; occurrence evidence</label>
+        <select id="facet-claim">
+          <option value="">All records</option>
+          <option value="causal">Has causal producer</option>
+          <option value="producer">Has any producer</option>
+          <option value="occurrence">Has cited occurrence</option>
+        </select>
+      </div>
+      <div class="facet-group">
+        <span class="facet-title">Curated annotations</span>
+        <label class="facet-check"><input type="checkbox" id="facet-bgc"> Has gene cluster</label>
+        <label class="facet-check"><input type="checkbox" id="facet-target"> Has molecular target</label>
+        <label class="facet-check"><input type="checkbox" id="facet-bioactivity"> Has bioactivity</label>
+      </div>
+      <div class="facet-group">
+        <label class="facet-title" for="facet-sort">Sort compounds by</label>
+        <select id="facet-sort">
+          <option value="label-asc">Compound name (A–Z)</option>
+          <option value="label-desc">Compound name (Z–A)</option>
+          <option value="causal-desc">Causal producers (high–low)</option>
+          <option value="clusters-desc">Gene clusters (high–low)</option>
+          <option value="bioactivity-desc">Bioactivities (high–low)</option>
+          <option value="id-asc">Identifier (A–Z)</option>
+        </select>
+      </div>
+      <div class="browse-controls">
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </aside>
+  <div class="results-main">
+    <p id="browse-status" role="status" aria-live="polite"></p>
+    <p id="browse-empty" hidden>No compounds match. Try another term or reset the search.</p>
+    {% for pathway in pathways %}
+    <section class="browse-group">
+    <h2>{{ pathway.title }} <span class="tag">{{ pathway.count }}</span></h2>
+    <ul class="records">
+    {% for record in pathway.records %}
+      <li data-search="{{ record.label }} {{ record.search_identifiers|join(' ') }} {{ record.synonyms|join(' ') }} {{ pathway.title }}"
+          data-label="{{ record.label | lower }}"
+          data-id="{{ record.identifier }}"
+          data-pathway="{{ pathway.slug }}"
+          data-causal="{{ 1 if record.causal else 0 }}"
+          data-producers="{{ record.producers|length if record.producers is defined else 0 }}"
+          data-occurrences="{{ record.n_occurrences | default(0) }}"
+          data-clusters="{{ record.n_clusters | default(0) }}"
+          data-targets="{{ record.targets|length if record.targets is defined else 0 }}"
+          data-bioactivity="{{ record.bioactivity_total | default(0) }}"><a href="{{ pathway.slug }}/{{ record.slug }}.html">{{ record.label }}</a>{% if record.duplicate_label %} <span class="mono">{{ record.identifier }}</span>{% endif %}</li>
+    {% endfor %}
+    </ul>
+    </section>
+    {% endfor %}
+  </div>
+</div>
 <script>
 (function () {
   'use strict';
@@ -26,25 +82,103 @@
   var query = document.getElementById('browse-query');
   var status = document.getElementById('browse-status');
   var empty = document.getElementById('browse-empty');
+  var fPathway = document.getElementById('facet-pathway');
+  var fClaim = document.getElementById('facet-claim');
+  var fBgc = document.getElementById('facet-bgc');
+  var fTarget = document.getElementById('facet-target');
+  var fBio = document.getElementById('facet-bioactivity');
+  var fSort = document.getElementById('facet-sort');
   var groups = Array.from(document.querySelectorAll('.browse-group'));
   var rows = Array.from(document.querySelectorAll('li[data-search]'));
+  if (typeof window !== 'undefined' && window.location && window.location.search) {
+    var params = new URLSearchParams(window.location.search);
+    var qParam = params.get('q');
+    if (qParam) query.value = qParam;
+    if (fPathway && params.get('pathway')) fPathway.value = params.get('pathway');
+    if (fClaim && params.get('claim')) fClaim.value = params.get('claim');
+    if (fBgc && params.get('bgc') === '1') fBgc.checked = true;
+    if (fTarget && params.get('target') === '1') fTarget.checked = true;
+    if (fBio && params.get('bio') === '1') fBio.checked = true;
+    if (fSort && params.get('sort')) fSort.value = params.get('sort');
+  }
   function filter() {
     var term = query.value.trim().toLowerCase();
+    var pw = fPathway ? fPathway.value : '';
+    var claim = fClaim ? fClaim.value : '';
+    var needBgc = fBgc ? fBgc.checked : false;
+    var needTarget = fTarget ? fTarget.checked : false;
+    var needBio = fBio ? fBio.checked : false;
+    var sortVal = fSort ? fSort.value : 'label-asc';
     var count = 0;
+    if (typeof window !== 'undefined' && window.history && window.history.replaceState && window.location) {
+      var url = new URL(window.location.href);
+      if (query.value.trim()) url.searchParams.set('q', query.value.trim());
+      else url.searchParams.delete('q');
+      if (pw) url.searchParams.set('pathway', pw);
+      else url.searchParams.delete('pathway');
+      if (claim) url.searchParams.set('claim', claim);
+      else url.searchParams.delete('claim');
+      if (needBgc) url.searchParams.set('bgc', '1');
+      else url.searchParams.delete('bgc');
+      if (needTarget) url.searchParams.set('target', '1');
+      else url.searchParams.delete('target');
+      if (needBio) url.searchParams.set('bio', '1');
+      else url.searchParams.delete('bio');
+      if (sortVal && sortVal !== 'label-asc') url.searchParams.set('sort', sortVal);
+      else url.searchParams.delete('sort');
+      window.history.replaceState(null, '', url);
+    }
     rows.forEach(function (row) {
-      row.hidden = !row.dataset.search.toLowerCase().includes(term);
+      var ok = row.dataset.search.toLowerCase().includes(term);
+      if (ok && pw && row.dataset.pathway !== pw) ok = false;
+      if (ok && claim === 'causal' && +(row.dataset.causal || 0) < 1) ok = false;
+      if (ok && claim === 'producer' && +(row.dataset.producers || 0) < 1) ok = false;
+      if (ok && claim === 'occurrence' && +(row.dataset.occurrences || 0) < 1) ok = false;
+      if (ok && needBgc && +(row.dataset.clusters || 0) < 1) ok = false;
+      if (ok && needTarget && +(row.dataset.targets || 0) < 1) ok = false;
+      if (ok && needBio && +(row.dataset.bioactivity || 0) < 1) ok = false;
+      row.hidden = !ok;
       if (!row.hidden) count += 1;
     });
     groups.forEach(function (group) {
-      group.hidden = !Array.from(group.querySelectorAll('li')).some(function (row) { return !row.hidden; });
+      var groupRows = Array.from(group.querySelectorAll('li'));
+      if (fSort && group.querySelector) {
+        var ul = group.querySelector('ul.records');
+        if (ul && ul.appendChild) {
+          groupRows.sort(function (a, b) {
+            var la = a.dataset.label || '';
+            var lb = b.dataset.label || '';
+            if (sortVal === 'label-desc') return lb.localeCompare(la);
+            if (sortVal === 'causal-desc') return (+(b.dataset.causal || 0) - +(a.dataset.causal || 0)) || la.localeCompare(lb);
+            if (sortVal === 'clusters-desc') return (+(b.dataset.clusters || 0) - +(a.dataset.clusters || 0)) || la.localeCompare(lb);
+            if (sortVal === 'bioactivity-desc') return (+(b.dataset.bioactivity || 0) - +(a.dataset.bioactivity || 0)) || la.localeCompare(lb);
+            if (sortVal === 'id-asc') return (a.dataset.id || '').localeCompare(b.dataset.id || '');
+            return la.localeCompare(lb);
+          });
+          groupRows.forEach(function (r) { ul.appendChild(r); });
+        }
+      }
+      group.hidden = !groupRows.some(function (row) { return !row.hidden; });
     });
     status.textContent = count + ' of ' + rows.length + ' compounds match';
     empty.hidden = count !== 0;
   }
   query.addEventListener('input', filter);
+  [fPathway, fClaim, fBgc, fTarget, fBio, fSort].forEach(function (el) {
+    if (el) el.addEventListener('change', filter);
+  });
   form.addEventListener('submit', function (event) { event.preventDefault(); filter(); });
   form.addEventListener('reset', function (event) {
-    event.preventDefault(); query.value = ''; filter(); query.focus();
+    event.preventDefault();
+    query.value = '';
+    if (fPathway) fPathway.value = '';
+    if (fClaim) fClaim.value = '';
+    if (fBgc) fBgc.checked = false;
+    if (fTarget) fTarget.checked = false;
+    if (fBio) fBio.checked = false;
+    if (fSort) fSort.value = 'label-asc';
+    filter();
+    query.focus();
   });
   form.hidden = false;
   filter();

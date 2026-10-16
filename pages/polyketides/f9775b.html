@@ -6,6 +6,7 @@
 <title>F9775B — NaturalProductMech</title>
 <meta name="description" content="Individual natural product structures, one record per Standard InChIKey, with producer organisms, cited occurrences and biosynthetic gene clusters kept apart.">
 <link rel="stylesheet" href="../style.css">
+<script src="../theme-toggle.js"></script>
 </head>
 <body>
 <header class="site"><div class="wrap">
@@ -14,11 +15,20 @@
     <a href="../browse.html">Browse</a>
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
+    <a href="../sequence-map.html">Sequence map</a>
+    <a href="../index.html#downloads">Downloads &amp; Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
 <main class="wrap">
+<div class="record-topbar">
+  <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Polyketides</a> &middot; F9775B</p>
+  <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
+    <input type="search" name="q" placeholder="Search compounds…" autocomplete="off">
+    <button type="submit">Search</button>
+  </form>
+</div>
 <h1>F9775B</h1>
 <p class="sub"><span class="mono">naturalproductmech:mibig-afdd774b74</span>
   <span class="tag">MINTED</span>
@@ -96,6 +106,40 @@ derived from a source. This is what the rest of the record exists to support.</p
 </tr>
 </table></div>
 <p class="sub">Step 1: This curates the Aspergillus nidulans FGSC A4 non-reducing polyketide synthase OrsA from the BGC0000057/AACD01000135.1 route; OrsA condenses acetyl-CoA with three malonyl-CoA units to form o-orsellinate, the branch precursor for F-9775 B biosynthesis.</p><p class="sub">Step 2: This curates the genetically supported OrsB/OrsC branch that diverts the OrsA orsellinic acid product toward F-9775 A and B. The exact isolated substrate, intermediates and individual OrsB and OrsC reactions remain unresolved, so this two-protein step is marked proposed and leaves enzyme_id empty.</p>
+<h2>Mechanism &amp; Biosynthesis Overview</h2>
+<div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
+  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for F9775B">
+    <defs>
+      <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
+      </marker>
+    </defs>
+    <rect x="14" y="24" width="186" height="98" rx="10" fill="var(--panel)" stroke="var(--rule)"/>
+    <text x="26" y="48" font-size="11" font-weight="700" fill="var(--muted)">PRODUCERS &amp; OCCURRENCE</text>
+    <text x="26" y="70" font-size="12.5" font-weight="600" fill="var(--ink)">1 producer (1 causal)</text>
+    <text x="26" y="92" font-size="11.5" fill="var(--muted)">0 cited occurrences</text>
+    <line x1="200" y1="73" x2="228" y2="73" stroke="var(--link)" stroke-width="1.8" marker-end="url(#np-arrow)"/>
+
+    <rect x="232" y="24" width="186" height="98" rx="10" fill="var(--panel)" stroke="var(--rule)"/>
+    <text x="244" y="48" font-size="11" font-weight="700" fill="var(--muted)">BIOSYNTHETIC LOCUS</text>
+    <text x="244" y="70" font-size="12.5" font-weight="600" fill="var(--ink)">1 gene cluster</text>
+    <text x="244" y="92" font-size="11.5" fill="var(--muted)">2 curated pathway steps</text>
+    <line x1="418" y1="73" x2="446" y2="73" stroke="var(--link)" stroke-width="1.8" marker-end="url(#np-arrow)"/>
+
+    <rect x="450" y="20" width="190" height="106" rx="10" fill="var(--panel)" stroke="var(--link)" stroke-width="1.8"/>
+    <text x="462" y="45" font-size="11" font-weight="700" fill="var(--link)">NATURAL PRODUCT</text>
+    <text x="462" y="68" font-size="12.5" font-weight="700" fill="var(--ink)">F9775B</text>
+    <text x="462" y="88" font-size="11" fill="var(--muted)">naturalproductmech:mibig-afdd774b74</text>
+    <text x="462" y="108" font-size="11" fill="var(--muted)">Polyketides</text>
+    <line x1="640" y1="73" x2="668" y2="73" stroke="var(--link)" stroke-width="1.8" marker-end="url(#np-arrow)"/>
+
+    <rect x="672" y="24" width="174" height="98" rx="10" fill="var(--panel)" stroke="var(--rule)"/>
+    <text x="684" y="48" font-size="11" font-weight="700" fill="var(--muted)">TARGETS &amp; BIOACTIVITY</text>
+    <text x="684" y="70" font-size="12.5" font-weight="600" fill="var(--ink)">0 molecular targets</text>
+    <text x="684" y="92" font-size="11.5" fill="var(--muted)">0 bioactivities &middot; 1 graph</text>
+  </svg>
+</div>
+
 <h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 7 edges</span></h2>
 <p class="sub">Partial Aspergillus nidulans F-9775 B biosynthesis graph for OrsA orsellinate formation and the OrsB/OrsC-dependent F-9775 branch.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
@@ -191,6 +235,14 @@ by the corpus tests.</p>
 
 
 
+<h2>Explore across X-Mech</h2>
+<div class="cross-mech-links">
+  <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=ZFYMCYAXXOXUHT-UHFFFAOYSA-N">AntibioticMech (F9775B) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=naturalproductmech%3Amibig-afdd774b74">MediaIngredientMech (naturalproductmech:mibig-afdd774b74) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A227321">TaxonMech: Aspergillus nidulans FGSC A4 (NCBITaxon:227321) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000057">PathwayMech (mibig:BGC0000057) &nearr;</a>
+</div>
+
 
 <h2>Provenance</h2>
 <div class="scroll"><table>
@@ -202,7 +254,7 @@ by the corpus tests.</p>
 committed inventories. Neither is edited by hand.</p>
 </main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus. Every page is derived; edit the
+  <p>Generated from the committed corpus (3115 records · from sources retrieved 2026-10-07 · corpus SHA-256 5f2ec7794040). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>
