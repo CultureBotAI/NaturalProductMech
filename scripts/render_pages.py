@@ -301,11 +301,24 @@ def load_chemical_map(record_ids: set[str]) -> dict[str, Any] | None:
     return artifact
 
 
+def corpus_digest(records: list[tuple[Path, dict[str, Any]]]) -> str:
+    import hashlib
+    h = hashlib.sha256()
+    for path, doc in records:
+        ident = str(doc.get("identifier", ""))
+        inchi = str((doc.get("chemical_structure") or {}).get("standard_inchi_key", ""))
+        h.update(f"{path.name}:{ident}:{inchi}\n".encode("utf-8"))
+    return h.hexdigest()[:12]
+
+
 def build(out_dir: Path) -> tuple[int, int]:
     env = Environment(loader=FileSystemLoader(str(TEMPLATES_DIR)),
                       autoescape=select_autoescape(["html"]),
                       trim_blocks=True, lstrip_blocks=True, keep_trailing_newline=True)
     records = load_records()
+    digest = corpus_digest(records)
+    gen_on = retrieved_on()
+    provenance = f"{len(records)} records · {gen_on} · corpus SHA-256 {digest}"
     by_pathway: dict[str, list[dict[str, Any]]] = {}
     coverage: Counter[str] = Counter()
     producer_claims = causal_claims = occurrence_records = 0
@@ -339,6 +352,8 @@ def build(out_dir: Path) -> tuple[int, int]:
         shutil.rmtree(out_dir)
     out_dir.mkdir(parents=True)
     shutil.copyfile(TEMPLATES_DIR / "style.css", out_dir / "style.css")
+    if (TEMPLATES_DIR / "theme-toggle.js").exists():
+        shutil.copyfile(TEMPLATES_DIR / "theme-toggle.js", out_dir / "theme-toggle.js")
 
     # conf/sources.yaml is a mapping of source key -> config at the top level,
     # alongside a couple of non-source settings. Counting its keys blindly
@@ -353,14 +368,15 @@ def build(out_dir: Path) -> tuple[int, int]:
     (out_dir / "index.html").write_text(env.get_template("index.html").render(
         root="", total=len(records), source_count=source_count, pathways=pathways,
         coverage=[(f, coverage.get(f, 0)) for f in COVERAGE_FIELDS],
-        generated_on=retrieved_on(),
+        generated_on=gen_on,
+        build_provenance=provenance,
         stats={"producer_claims": producer_claims, "causal": causal_claims,
                "occurrence_records": occurrence_records},
     ), encoding="utf-8")
     (out_dir / "browse.html").write_text(env.get_template("browse.html").render(
-        root="", total=len(records), pathways=pathways), encoding="utf-8")
+        root="", total=len(records), pathways=pathways, build_provenance=provenance), encoding="utf-8")
     (out_dir / "404.html").write_text(env.get_template("not_found.html").render(
-        root=SITE_BASE), encoding="utf-8")
+        root=SITE_BASE, build_provenance=provenance), encoding="utf-8")
 
     # The corpus map, when its JSON has been built. Committed and small, so the
     # site renders it whenever it is there and skips it otherwise — a checkout
@@ -375,7 +391,7 @@ def build(out_dir: Path) -> tuple[int, int]:
         corpus_map = join_text_map(corpus_map, href_by_identifier)
         (out_dir / "map.html").write_text(
             env.get_template("map.html").render(
-                root="", map=corpus_map,
+                root="", map=corpus_map, build_provenance=provenance,
                 # Embedded as JSON in a <script> tag, so the two characters
                 # that would end it early are escaped.
                 map_json=json.dumps(corpus_map, separators=(",", ":"))
@@ -392,7 +408,7 @@ def build(out_dir: Path) -> tuple[int, int]:
             env.get_template("chemical_map.html").render(
                 root="", quality=chemical_map["quality"],
                 model_version=chemical_map["model_version"],
-                total=len(records)),
+                total=len(records), build_provenance=provenance),
             encoding="utf-8")
         shutil.copyfile(TEMPLATES_DIR / "chemical_map.js", out_dir / "chemical-map.js")
         (out_dir / "data").mkdir(exist_ok=True)
@@ -403,6 +419,16 @@ def build(out_dir: Path) -> tuple[int, int]:
         shutil.copyfile(CHEMICAL_MAP_ARTIFACT,
                         out_dir / "data" / "chemical-structure-map.json")
 
+    sequence_map_path = REPO_ROOT / "data" / "embeddings" / "sequence_map.json"
+    if sequence_map_path.exists():
+        seq_map = json.loads(sequence_map_path.read_text(encoding="utf-8"))
+        (out_dir / "sequence-map.html").write_text(
+            env.get_template("sequence_map.html").render(root="", seq_map=seq_map, build_provenance=provenance),
+            encoding="utf-8",
+        )
+        (out_dir / "data").mkdir(exist_ok=True)
+        shutil.copyfile(sequence_map_path, out_dir / "data" / "sequence_map.json")
+
     record_template = env.get_template("record.html")
     pathway_template = env.get_template("pathway.html")
     written = 0
@@ -410,10 +436,10 @@ def build(out_dir: Path) -> tuple[int, int]:
         directory = out_dir / pathway["slug"]
         directory.mkdir(parents=True, exist_ok=True)
         (directory / "index.html").write_text(
-            pathway_template.render(root="../", pathway=pathway), encoding="utf-8")
+            pathway_template.render(root="../", pathway=pathway, build_provenance=provenance), encoding="utf-8")
         for record in pathway["records"]:
             (directory / f"{record['slug']}.html").write_text(
-                record_template.render(root="../", r=record), encoding="utf-8")
+                record_template.render(root="../", r=record, build_provenance=provenance), encoding="utf-8")
             written += 1
     return written, len(pathways)
 

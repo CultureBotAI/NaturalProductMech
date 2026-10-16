@@ -10,8 +10,15 @@
   --fg: var(--ink); --line: var(--rule); --accent: var(--link);
   --danger: var(--weak); --tooltip-bg: var(--ink); --tooltip-fg: var(--bg);
 }
+:root[data-theme="dark"] {
+  --cls0: #d889e3; --cls1: #79b8f3; --cls2: #e5b567; --cls3: #7ed4a1;
+  --cls4: #ff9494; --cls5: #b4a6f5; --cls6: #6eced2; --cls7: #aab5bf;
+  --ink: #e6e9ed; --muted: #9aa5b1; --rule: #2b3138; --bg: #14181d; --panel: #1b2027;
+  --causal: #7ed4a1; --causal-bg: #17301f; --weak: #e5b567; --weak-bg: #2e2413;
+  --link: #79b8f3;
+}
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --cls0: #d889e3; --cls1: #79b8f3; --cls2: #e5b567; --cls3: #7ed4a1;
     --cls4: #ff9494; --cls5: #b4a6f5; --cls6: #6eced2; --cls7: #aab5bf;
     --ink: #e6e9ed; --muted: #9aa5b1; --rule: #2b3138; --bg: #14181d; --panel: #1b2027;
@@ -24,9 +31,10 @@ body { margin: 0; background: var(--bg); color: var(--ink);
        font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
 a { color: var(--link); }
 .wrap { max-width: 62rem; margin: 0 auto; padding: 1.5rem 1.25rem 4rem; }
+.wrap.wide { max-width: 88rem; }
 header.site { border-bottom: 1px solid var(--rule); }
 header.site .wrap { padding-bottom: .9rem; display: flex; gap: 1rem;
-                    align-items: baseline; flex-wrap: wrap; }
+                    align-items: baseline; flex-wrap: wrap; max-width: 88rem; }
 header.site a.home { font-weight: 700; text-decoration: none; color: var(--ink); }
 header.site nav { margin-left: auto; display: flex; gap: .9rem; flex-wrap: wrap; }
 h1 { font-size: 1.6rem; margin: 1.2rem 0 .2rem; }
@@ -61,14 +69,121 @@ ul.records li { break-inside: avoid; padding: .12rem 0; }
 @media (max-width: 40rem) { ul.records { columns: 1; } }
 footer.site { border-top: 1px solid var(--rule); color: var(--muted); font-size: .85rem; }
 
-/* --- Structure map (ported from the fleet; see chemical_map.js) --- */
+/* --- Unified Mech search & sticky facet sidebar --- */
+.hero-search {
+  display: flex;
+  gap: .55rem;
+  margin: 1rem 0 1.35rem;
+  max-width: 44rem;
+}
+.hero-search input {
+  flex: 1;
+  min-width: 0;
+  font: inherit;
+  padding: .6rem .8rem;
+  border: 1px solid var(--rule);
+  border-radius: .4rem;
+  background: var(--bg);
+  color: var(--ink);
+}
+.hero-search button,
+.record-search button {
+  font: inherit;
+  font-weight: 600;
+  padding: .55rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: .4rem;
+  background: var(--accent);
+  color: var(--bg);
+  cursor: pointer;
+}
+.record-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: .5rem;
+}
+.record-topbar .sub { margin: 0; }
+.record-search {
+  display: flex;
+  gap: .4rem;
+  margin-left: auto;
+}
+.record-search input {
+  font: inherit;
+  font-size: .9rem;
+  padding: .35rem .6rem;
+  border: 1px solid var(--rule);
+  border-radius: .35rem;
+  background: var(--bg);
+  color: var(--ink);
+  min-width: 14rem;
+}
+.page-with-sidebar {
+  display: grid;
+  grid-template-columns: 16.5rem minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+.facet-sidebar {
+  position: sticky;
+  top: 1rem;
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: .5rem;
+  padding: .9rem;
+  max-height: calc(100vh - 2rem);
+  overflow-y: auto;
+}
+.facet-form {
+  display: flex;
+  flex-direction: column;
+  gap: .85rem;
+}
+.facet-group {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+.facet-title {
+  font-size: .82rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+.facet-sidebar input[type="search"],
+.facet-sidebar select {
+  width: 100%;
+  font: inherit;
+  font-size: .9rem;
+  padding: .42rem .55rem;
+  border: 1px solid var(--rule);
+  border-radius: .35rem;
+  background: var(--bg);
+  color: var(--ink);
+}
+.facet-check {
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+  font-size: .86rem;
+  cursor: pointer;
+}
+.results-main { min-width: 0; }
+@media (max-width: 850px) {
+  .page-with-sidebar { grid-template-columns: 1fr; }
+  .facet-sidebar { position: static; max-height: none; }
+}
+
+/* --- Structure & Sequence maps --- */
 .map-page-wrap { max-width: 92rem; }
 .map-controls {
-  align-items: end;
-  display: grid;
-  gap: .8rem;
-  grid-template-columns: minmax(14rem, 2fr) minmax(12rem, 1fr) minmax(12rem, 1fr) auto;
-  margin: 1.4rem 0 .8rem;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  margin: 0 0 .8rem;
 }
 .map-controls label {
   display: grid;
@@ -84,8 +199,8 @@ footer.site { border-top: 1px solid var(--rule); color: var(--muted); font-size:
   border-radius: .35rem;
   color: var(--fg);
   font: inherit;
-  min-height: 2.65rem;
-  padding: .45rem .55rem;
+  min-height: 2.4rem;
+  padding: .4rem .55rem;
 }
 .map-controls button {
   background: var(--accent);
@@ -95,18 +210,19 @@ footer.site { border-top: 1px solid var(--rule); color: var(--muted); font-size:
 }
 .map-status {
   font-size: .9rem;
-  margin: .6rem 0;
+  margin: .2rem 0 .6rem;
 }
 .map-status.error { color: var(--danger); font-weight: 700; }
 .map-legend {
   display: flex;
   flex-wrap: wrap;
   font-size: .75rem;
-  gap: .35rem .8rem;
-  margin: .45rem 0 .8rem;
+  gap: .35rem .6rem;
+  margin: .35rem 0;
   min-height: 1.4rem;
 }
-.map-legend span { align-items: center; display: inline-flex; gap: .3rem; }
+.map-legend span,
+.map-legend button { align-items: center; display: inline-flex; gap: .3rem; }
 .map-legend i {
   border: 1px solid rgb(0 0 0 / .25);
   border-radius: 50%;
@@ -118,7 +234,8 @@ footer.site { border-top: 1px solid var(--rule); color: var(--muted); font-size:
   min-width: 0;
   position: relative;
 }
-#map-canvas {
+#map-canvas,
+#seq-canvas {
   background: var(--bg);
   border: 1px solid var(--line);
   border-radius: .45rem;
@@ -127,11 +244,6 @@ footer.site { border-top: 1px solid var(--rule); color: var(--muted); font-size:
   width: 100%;
 }
 .map-tooltip {
-  /* The tooltip paints its OWN dark background, so its text cannot be keyed to
-     the page's. `color: var(--bg)` gave white-on-dark in light mode and
-     #211e16-on-#17202a in dark mode — a contrast ratio of 1.01:1, which renders
-     as a visible box with no readable text. Both colours are fixed here because
-     both belong to this component, not to the theme. */
   background: var(--tooltip-bg);
   border-radius: .3rem;
   color: var(--tooltip-fg);
@@ -150,7 +262,7 @@ footer.site { border-top: 1px solid var(--rule); color: var(--muted); font-size:
   overflow: auto;
 }
 .map-details > div {
-  border: 1px solid #d8d0c2;
+  border: 1px solid var(--rule);
   border-radius: .45rem;
   padding: .75rem;
 }
@@ -189,25 +301,24 @@ footer.site { border-top: 1px solid var(--rule); color: var(--muted); font-size:
 .map-method { margin-top: 1.2rem; }
 .map-method summary { cursor: pointer; font-weight: 700; }
 @media (max-width: 850px) {
-  .map-controls { grid-template-columns: 1fr 1fr; }
   .chemical-map-layout { grid-template-columns: 1fr; }
   .map-details { max-height: none; }
-  #map-canvas { height: 520px; }
+  #map-canvas, #seq-canvas { height: 520px; }
 }
-#map-controls { display: flex; flex-wrap: wrap; gap: .4rem; margin: .8rem 0; }
+#map-controls { display: flex; flex-wrap: wrap; gap: .4rem; margin: .4rem 0; }
 #map-controls .legend { cursor: pointer; border: 1px solid transparent; }
 #map-controls .legend::before {
   content: ""; display: inline-block; width: .6rem; height: .6rem;
   border-radius: 50%; background: var(--dot); margin-right: .35rem;
 }
-#map-controls .legend.off { opacity: .4; text-decoration: line-through; }
+#map-controls .legend.off,
+.map-legend .legend.off { opacity: .4; text-decoration: line-through; }
 #corpus-map { max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; }
 figure { margin: 0; }
 
 /* --- Corpus map (text embeddings; see map.html) --- */
 .lede { font-size: 1.05rem; color: var(--ink); margin: .3rem 0 .8rem; }
 .meta { color: var(--muted); font-size: .88rem; margin: .5rem 0; }
-#map-controls { display: flex; flex-wrap: wrap; gap: .4rem; margin: .9rem 0; }
 .pill { font: inherit; font-size: .8rem; padding: .2rem .6rem; border-radius: 1rem;
         border: 1px solid var(--rule); background: var(--panel); color: var(--ink);
         cursor: pointer; }
@@ -222,13 +333,34 @@ figure { margin: 0; }
 
 .browse-controls { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .4rem; }
 .browse-controls input { flex: 1; min-width: 0; }
-.browse-controls input, .browse-controls button { font: inherit; padding: .5rem; color: var(--ink); background: var(--bg); border: 1px solid var(--muted); border-radius: .3rem; }
-.browse-controls button { cursor: pointer; }
+.browse-controls input, .browse-controls button { font: inherit; padding: .45rem .65rem; color: var(--ink); background: var(--bg); border: 1px solid var(--muted); border-radius: .3rem; }
+.browse-controls button { cursor: pointer; width: 100%; }
 .chemical-map-layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 1rem; }
 .map-controls > *, .map-controls input, .map-controls select { min-width: 0; max-width: 100%; }
 @media (max-width: 850px) { .chemical-map-layout { grid-template-columns: 1fr; } }
-@media (max-width: 40rem) { .map-controls { grid-template-columns: minmax(0, 1fr); } }
 
 a.mono { overflow-wrap: anywhere; }
 
 main h1, main p, main li, main dd { overflow-wrap: anywhere; }
+
+.mechanism-graph-wrap {
+  margin: .6rem 0 1.2rem;
+  border: 1px solid var(--rule);
+  border-radius: .5rem;
+  background: var(--bg);
+  padding: .5rem;
+  overflow-x: auto;
+}
+.cross-mech-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin: .5rem 0 1.2rem;
+}
+.cross-mech-links a.tag {
+  text-decoration: none;
+  color: var(--link);
+}
+.cross-mech-links a.tag:hover {
+  border-color: var(--link);
+}

@@ -1,20 +1,148 @@
 {% extends "base.html" %}
 {% block title %}{{ pathway.title }} — NaturalProductMech{% endblock %}
+{% block wrapclass %} wide{% endblock %}
 {% block content %}
 <h1>{{ pathway.title }}</h1>
 <p class="sub">{{ pathway.count }} record{{ '' if pathway.count == 1 else 's' }}
 filed under this pathway. {{ pathway.blurb }}</p>
-<div class="scroll"><table>
-<tr><th>Compound</th><th>Identity</th><th>Producers</th><th>Occurrences</th><th>Gene clusters</th></tr>
-{% for record in pathway.records %}
-<tr>
-  <td><a href="{{ record.slug }}.html">{{ record.label }}</a></td>
-  <td class="mono">{{ record.identifier }}</td>
-  <td>{% if record.causal %}<span class="tag causal">{{ record.causal }} causal</span>
-      {% endif %}{% if record.weak %}<span class="tag weak">{{ record.weak }} asserted</span>{% endif %}</td>
-  <td>{% if record.n_occurrences %}<a href="{{ record.slug }}.html#occurrences">{{ record.n_occurrences }} cited occurrence{{ "s" if record.n_occurrences != 1 else "" }}</a>{% else %}None cited{% endif %}</td>
-  <td>{% if record.n_clusters %}<a href="{{ record.slug }}.html#gene-clusters">{{ record.n_clusters }} gene cluster{{ "s" if record.n_clusters != 1 else "" }}</a>{% else %}None recorded{% endif %}</td>
-</tr>
-{% endfor %}
-</table></div>
+<div class="page-with-sidebar">
+  <aside class="facet-sidebar" aria-label="Pathway filters">
+    <form id="pathway-filter" class="facet-form">
+      <div class="facet-group">
+        <label class="facet-title" for="pathway-q">Filter compounds in pathway</label>
+        <input id="pathway-q" type="search" name="q" autocomplete="off" placeholder="Name, ChEBI, InChIKey…">
+      </div>
+      <div class="facet-group">
+        <label class="facet-title" for="pathway-claim">Producer evidence</label>
+        <select id="pathway-claim">
+          <option value="">All records</option>
+          <option value="causal">Has causal producer</option>
+          <option value="producer">Has any producer</option>
+        </select>
+      </div>
+      <div class="facet-group">
+        <span class="facet-title">Annotations</span>
+        <label class="facet-check"><input type="checkbox" id="pathway-bgc"> Has gene cluster</label>
+        <label class="facet-check"><input type="checkbox" id="pathway-occ"> Has cited occurrence</label>
+      </div>
+      <div class="facet-group">
+        <label class="facet-title" for="pathway-sort">Sort compounds by</label>
+        <select id="pathway-sort">
+          <option value="label-asc">Compound name (A–Z)</option>
+          <option value="label-desc">Compound name (Z–A)</option>
+          <option value="causal-desc">Causal producers (high–low)</option>
+          <option value="bgc-desc">Gene clusters (high–low)</option>
+          <option value="occ-desc">Cited occurrences (high–low)</option>
+          <option value="id-asc">Identifier (A–Z)</option>
+        </select>
+      </div>
+      <div class="browse-controls">
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </aside>
+  <div class="results-main">
+    <p id="pathway-status" class="sub" role="status" aria-live="polite"></p>
+    <div class="scroll"><table>
+    <tr><th>Compound</th><th>Identity</th><th>Producers</th><th>Occurrences</th><th>Gene clusters</th></tr>
+    {% for record in pathway.records %}
+    <tr class="pathway-row"
+        data-search="{{ record.label }} {{ record.identifier }} {{ (record.synonyms or [])|join(' ') }}"
+        data-label="{{ record.label | lower }}"
+        data-id="{{ record.identifier }}"
+        data-causal="{{ record.causal | default(0) }}"
+        data-producers="{{ (record.causal | default(0)) + (record.weak | default(0)) }}"
+        data-occ="{{ record.n_occurrences | default(0) }}"
+        data-bgc="{{ record.n_clusters | default(0) }}">
+      <td><a href="{{ record.slug }}.html">{{ record.label }}</a></td>
+      <td class="mono">{{ record.identifier }}</td>
+      <td>{% if record.causal %}<span class="tag causal">{{ record.causal }} causal</span>
+          {% endif %}{% if record.weak %}<span class="tag weak">{{ record.weak }} asserted</span>{% endif %}</td>
+      <td>{% if record.n_occurrences %}<a href="{{ record.slug }}.html#occurrences">{{ record.n_occurrences }} cited occurrence{{ "s" if record.n_occurrences != 1 else "" }}</a>{% else %}None cited{% endif %}</td>
+      <td>{% if record.n_clusters %}<a href="{{ record.slug }}.html#gene-clusters">{{ record.n_clusters }} gene cluster{{ "s" if record.n_clusters != 1 else "" }}</a>{% else %}None recorded{% endif %}</td>
+    </tr>
+    {% endfor %}
+    </table></div>
+  </div>
+</div>
+<script>
+(function () {
+  var form = document.getElementById('pathway-filter');
+  var q = document.getElementById('pathway-q');
+  var claim = document.getElementById('pathway-claim');
+  var bgc = document.getElementById('pathway-bgc');
+  var occ = document.getElementById('pathway-occ');
+  var sortEl = document.getElementById('pathway-sort');
+  var status = document.getElementById('pathway-status');
+  var rows = Array.prototype.slice.call(document.querySelectorAll('tr.pathway-row'));
+  if (!form || !q) return;
+  if (window.location && window.location.search) {
+    var params = new URLSearchParams(window.location.search);
+    var qp = params.get('q');
+    if (qp) q.value = qp;
+    if (claim && params.get('claim')) claim.value = params.get('claim');
+    if (bgc && params.get('bgc') === '1') bgc.checked = true;
+    if (occ && params.get('occ') === '1') occ.checked = true;
+    if (sortEl && params.get('sort')) sortEl.value = params.get('sort');
+  }
+  function update() {
+    var term = q.value.trim().toLowerCase();
+    var c = claim.value;
+    var needBgc = bgc.checked;
+    var needOcc = occ.checked;
+    var sortVal = sortEl ? sortEl.value : 'label-asc';
+    var n = 0;
+    if (window.history && window.history.replaceState) {
+      var u = new URL(window.location.href);
+      if (q.value.trim()) u.searchParams.set('q', q.value.trim());
+      else u.searchParams.delete('q');
+      if (c) u.searchParams.set('claim', c);
+      else u.searchParams.delete('claim');
+      if (needBgc) u.searchParams.set('bgc', '1');
+      else u.searchParams.delete('bgc');
+      if (needOcc) u.searchParams.set('occ', '1');
+      else u.searchParams.delete('occ');
+      if (sortVal && sortVal !== 'label-asc') u.searchParams.set('sort', sortVal);
+      else u.searchParams.delete('sort');
+      window.history.replaceState(null, '', u);
+    }
+    rows.forEach(function (r) {
+      var ok = (r.dataset.search || '').toLowerCase().indexOf(term) !== -1;
+      if (ok && c === 'causal' && +(r.dataset.causal || 0) < 1) ok = false;
+      if (ok && c === 'producer' && +(r.dataset.producers || 0) < 1) ok = false;
+      if (ok && needBgc && +(r.dataset.bgc || 0) < 1) ok = false;
+      if (ok && needOcc && +(r.dataset.occ || 0) < 1) ok = false;
+      r.hidden = !ok;
+      if (ok) n += 1;
+    });
+    if (sortEl && rows.length && rows[0].parentElement) {
+      var tbody = rows[0].parentElement;
+      rows.slice().sort(function (a, b) {
+        var la = a.dataset.label || '';
+        var lb = b.dataset.label || '';
+        if (sortVal === 'label-desc') return lb.localeCompare(la);
+        if (sortVal === 'causal-desc') return (+(b.dataset.causal || 0) - +(a.dataset.causal || 0)) || la.localeCompare(lb);
+        if (sortVal === 'bgc-desc') return (+(b.dataset.bgc || 0) - +(a.dataset.bgc || 0)) || la.localeCompare(lb);
+        if (sortVal === 'occ-desc') return (+(b.dataset.occ || 0) - +(a.dataset.occ || 0)) || la.localeCompare(lb);
+        if (sortVal === 'id-asc') return (a.dataset.id || '').localeCompare(b.dataset.id || '');
+        return la.localeCompare(lb);
+      }).forEach(function (r) { tbody.appendChild(r); });
+    }
+    if (status) status.textContent = 'Showing ' + n + ' of ' + rows.length + ' compounds.';
+  }
+  q.addEventListener('input', update);
+  claim.addEventListener('change', update);
+  bgc.addEventListener('change', update);
+  occ.addEventListener('change', update);
+  if (sortEl) sortEl.addEventListener('change', update);
+  form.addEventListener('submit', function (e) { e.preventDefault(); update(); });
+  form.addEventListener('reset', function (e) {
+    e.preventDefault();
+    q.value = ''; claim.value = ''; bgc.checked = false; occ.checked = false;
+    if (sortEl) sortEl.value = 'label-asc';
+    update();
+  });
+  update();
+})();
+</script>
 {% endblock %}
