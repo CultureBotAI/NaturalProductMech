@@ -496,18 +496,21 @@ graph:
   - subject: native
     predicate: is_native_reference_for
     object: wt
-    notes: UniProtKB:Q9L9F3 is the deposited native NovO sequence reference for the
-      Sadler NovO-His6 WT assay preparation.
+    notes: UniProtKB:Q9L9F3 is the deposited native sequence reference for Sadler
+      NovO-His6 WT assay preparation (node 'wt'); the experimental preparation node
+      remains ungrounded because recombinant tags, host-specific processing, or undeposited
+      construct sequences are not equated with the native entry.
     evidence:
     - reference: https://www.uniprot.org/uniprotkb/Q9L9F3
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-17'
-      notes: Deposited native sequence reference UniProtKB:Q9L9F3 (Deposited native
-        NovO sequence reference).
+      notes: Reviewed Streptomyces niveus (S. spheroides NCIMB 11891) NovO C8-methyltransferase
+        (Q9L9F3, AAF67508.2, AF170880.4, 230 aa); deposited native sequence reference.
     - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
       evidence_type: PRIMARY_EXPERIMENT
-      notes: UniProtKB:Q9L9F3 is the deposited native NovO sequence reference for
-        the Sadler NovO-His6 WT assay preparation.
+      notes: Primary study reporting Sadler NovO-His6 WT assay preparation (node 'wt');
+        the experimental preparation is anchored to UniProtKB:Q9L9F3 as its native
+        wild-type reference without equating construct and native sequences.
 curation_history:
 - timestamp: '2026-10-04T19:05:52Z'
   curator: codex

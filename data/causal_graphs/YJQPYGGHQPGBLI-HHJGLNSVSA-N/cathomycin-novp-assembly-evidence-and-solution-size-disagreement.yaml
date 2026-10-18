@@ -154,18 +154,21 @@ graph:
   - subject: native
     predicate: is_native_reference_for
     object: wt
-    notes: UniProtKB:Q9L9F2 is the deposited native NovP sequence reference for the
-      Gomez Garcia N-terminally tagged NovP preparation.
+    notes: UniProtKB:Q9L9F2 is the deposited native sequence reference for Gomez Garcia
+      N-terminally tagged NovP preparation (node 'wt'); the experimental preparation
+      node remains ungrounded because recombinant tags, host-specific processing,
+      or undeposited construct sequences are not equated with the native entry.
     evidence:
     - reference: https://www.uniprot.org/uniprotkb/Q9L9F2
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-17'
-      notes: Deposited native sequence reference UniProtKB:Q9L9F2 (Deposited native
-        NovP sequence reference).
+      notes: Reviewed Streptomyces niveus (S. spheroides NCIMB 11891) NovP O-methyltransferase
+        (Q9L9F2, AAF67509.1, AF170880.4, 262 aa); deposited native sequence reference.
     - reference: DOI:10.1016/j.jmb.2009.10.045
       evidence_type: PRIMARY_EXPERIMENT
-      notes: UniProtKB:Q9L9F2 is the deposited native NovP sequence reference for
-        the Gomez Garcia N-terminally tagged NovP preparation.
+      notes: Primary study reporting Gomez Garcia N-terminally tagged NovP preparation
+        (node 'wt'); the experimental preparation is anchored to UniProtKB:Q9L9F2
+        as its native wild-type reference without equating construct and native sequences.
 curation_history:
 - timestamp: '2026-10-04T20:58:20Z'
   curator: codex

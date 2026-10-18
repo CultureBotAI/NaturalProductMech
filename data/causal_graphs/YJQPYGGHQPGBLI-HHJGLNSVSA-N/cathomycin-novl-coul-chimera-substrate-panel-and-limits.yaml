@@ -413,37 +413,40 @@ graph:
   - subject: novl_native
     predicate: is_native_reference_for
     object: nov_parent
-    notes: UniProtKB:Q9L9F6 is the deposited native NovL reference sequence for the
-      pUM07-derived NovL parental comparator; engineered His-tagged and chimeric constructs
-      remain ungrounded.
+    notes: UniProtKB:Q9L9F6 is the deposited native sequence reference for pUM07-derived
+      NovL parental comparator (node 'nov_parent'); the experimental preparation node
+      remains ungrounded because recombinant tags, host-specific processing, or undeposited
+      construct sequences are not equated with the native entry.
     evidence:
     - reference: https://www.uniprot.org/uniprotkb/Q9L9F6
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-17'
-      notes: Deposited native sequence reference UniProtKB:Q9L9F6 (Deposited native
-        NovL sequence reference).
+      notes: Reviewed Streptomyces niveus (S. spheroides NCIMB 11891) NovL novobiocic
+        acid synthetase (Q9L9F6, AAF67505.2, AF170880.4, 527 aa); deposited native
+        sequence reference.
     - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
       evidence_type: PRIMARY_EXPERIMENT
-      notes: UniProtKB:Q9L9F6 is the deposited native NovL reference sequence for
-        the pUM07-derived NovL parental comparator; engineered His-tagged and chimeric
-        constructs remain ungrounded.
+      notes: Primary study reporting pUM07-derived NovL parental comparator (node
+        'nov_parent'); the experimental preparation is anchored to UniProtKB:Q9L9F6
+        as its native wild-type reference without equating construct and native sequences.
   - subject: coul_native
     predicate: is_native_reference_for
     object: cou_parent
-    notes: UniProtKB:Q9F8U8 is the deposited native CouL reference sequence for the
-      pUM05-derived CouL parental comparator; engineered His-tagged and chimeric constructs
-      remain ungrounded.
+    notes: UniProtKB:Q9F8U8 is the deposited native sequence reference for pUM05-derived
+      CouL parental comparator (node 'cou_parent'); the experimental preparation node
+      remains review_needed because recombinant tags, host-specific processing, or
+      undeposited construct sequences are not equated with the native entry.
     evidence:
     - reference: https://www.uniprot.org/uniprotkb/Q9F8U8
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-17'
-      notes: Deposited native sequence reference UniProtKB:Q9F8U8 (Deposited native
-        CouL sequence reference).
+      notes: Unreviewed Streptomyces rishiriensis DSM 40489 CouL acyl-CoA synthetase
+        (Q9F8U8, AAG29785.1, AF235050.1, 530 aa); deposited native sequence reference.
     - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
       evidence_type: PRIMARY_EXPERIMENT
-      notes: UniProtKB:Q9F8U8 is the deposited native CouL reference sequence for
-        the pUM05-derived CouL parental comparator; engineered His-tagged and chimeric
-        constructs remain ungrounded.
+      notes: Primary study reporting pUM05-derived CouL parental comparator (node
+        'cou_parent'); the experimental preparation is anchored to UniProtKB:Q9F8U8
+        as its native wild-type reference without equating construct and native sequences.
 curation_history:
 - timestamp: '2026-10-04T17:07:55Z'
   curator: codex

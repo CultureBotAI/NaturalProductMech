@@ -34,8 +34,8 @@ as `biosynthetic_pathway` steps and curator-owned `molecular_targets.protein_exa
   `UniProtKB:` reference or example node and connect it with an explicit edge.
 - **Never hand-edit YAML files.** Mutate owner records exclusively through
   `naturalproductmech.curate.curation_event.record_curation_event` and
-  `naturalproductmech.io.validated_write.write_validated_natural_product`, and
-  component graphs through `write_validated_graph_bundle`.
+  `naturalproductmech.validation.write_validated.write_validated_natural_product`, and
+  component graphs through `naturalproductmech.graph_components.write_validated_graph_bundle`.
 - **Keep both owners and components under the 64-KiB review limit** (65,536 bytes).
 - **Do not mutate seeder-owned fields** (`occurrences`, `producer_organisms`,
   `biosynthetic_gene_clusters`, `bioactivities`, or `molecular_targets` with
@@ -101,19 +101,26 @@ Use when a node is a `GENE` locus or a native `NCBIProtein:<accession>` whose
 exact strain deposit is unindexed or obsolete in UniProtKB, OR when keeping the
 versioned `NCBIProtein:<accession>` node is required for INSDC provenance, and an
 active `UniProtKB:<accession>` entry exists with an identical sequence (via
-UniParc) or as a verified orthologous reference protein example:
+UniParc) or as a verified orthologous/construct reference protein example:
 - Keep the existing `GENE` or `NCBIProtein:` node intact.
 - Add a companion `PROTEIN` or `ENZYME` node with `identifier: UniProtKB:<accession>`
   and `grounding_status: GROUNDED` (e.g., `node_id: <stem>_uniprot_example`,
   `label: <Name> (<Strain/Organism> UniProtKB example)`).
 - Connect them with a `CausalEdge`:
-  - `predicate: has a sequence-identical UniProtKB example` (when sharing the
-    same UniParc UPI / 100% sequence identity), or
-  - `predicate: has a UniProtKB protein example` (when linking a `GENE` locus or
-    a verified reference strain ortholog with stated sequence identity in `notes`).
-- Attach `DATABASE_ASSERTION` (or `CURATOR_INFERENCE` when sequence comparison is
-  involved) evidence citing `https://rest.uniprot.org/uniprotkb/<accession>.json`
-  and stating the UniParc UPI or alignment identity in `notes`.
+  - `predicate: has a sequence-identical UniProtKB example` **only** when the
+    active `UniProtKB:` entry and the `NCBIProtein:` sequence have the exact
+    same full-length amino-acid sequence and length (verified via shared UniParc
+    `UPI...`). Never use this predicate when a UniProtKB entry is N-terminally
+    truncated or carries PDB cloning extensions relative to the native sequence.
+  - `predicate: has a UniProtKB protein example` when linking a `GENE` locus, a
+    verified reference-strain ortholog, or a PDB-derived UniProtKB entry whose
+    length or terminal residues differ from the native `NCBIProtein:` sequence
+    (state the exact lengths and coordinate relationship in `notes`).
+- Attach `DATABASE_ASSERTION` (and `CURATOR_INFERENCE` when sequence comparison is
+  involved) evidence citing the canonical persistent entry URL
+  `https://www.uniprot.org/uniprotkb/<accession>` (and
+  `https://www.uniprot.org/uniparc/<upi>` when asserting UniParc identity) and
+  stating the exact sequence length, UniParc UPI, or alignment coordinates in `notes`.
 
 ### Pattern C: Native `UniProtKB:` reference node for engineered/mutant/assay preparations
 Use when a graph (often a `causal_graph_refs` component) models recombinant
@@ -123,10 +130,18 @@ fusions, or cell-lysate preparations as `UNGROUNDED` / `REVIEW_NEEDED` nodes:
   constructs are not conflated with wild-type native proteins.
 - Add the canonical wild-type `ENZYME` or `PROTEIN` node grounded to
   `UniProtKB:<accession>` (`grounding_status: GROUNDED`, e.g.,
-  `node_id: <protein>_native_reference`, `label: Native <Protein> reference (<UniProtKB>)`).
-- Add a `CausalEdge` from the native reference node to the wild-type comparator
-  or representative construct node (`predicate: is the native protein reference for`),
-  citing `https://rest.uniprot.org/uniprotkb/<accession>.json` (`DATABASE_ASSERTION`).
+  `node_id: <protein>_native_reference` or `<protein>_native`,
+  `label: Deposited native <Protein> sequence reference`).
+- Add a `CausalEdge` from the native reference node to each wild-type comparator
+  or representative construct node using `predicate: is_native_reference_for` (the
+  snake_case convention in `data/causal_graphs/` components) or
+  `predicate: is the native protein reference for` (in inline prose-predicate graphs).
+- Make each edge's `notes` specific to the target construct (`object`), cite the
+  canonical entry URL `https://www.uniprot.org/uniprotkb/<accession>`
+  (`DATABASE_ASSERTION`) with a concise non-tautological note stating the
+  accession, protein/gene name, organism, and length, and pair it with the
+  primary experimental reference (`PRIMARY_EXPERIMENT`) summarizing the assayed
+  preparation without duplicating the full edge `notes` verbatim.
 
 ### Pattern D: Constituent `UniProtKB:` subunit nodes for `PROTEIN_COMPLEX` nodes
 Use when a `PROTEIN_COMPLEX` node (`ComplexPortal:<id>` or an ungrounded complex

@@ -177,7 +177,7 @@ records the sha256 of every upstream file and every emitted inventory.
 
 ## Skills
 
-`.claude/skills/` carries seven repository-specific workflows:
+`.claude/skills/` carries eight repository-specific workflows:
 
 - **`add-natural-product`** — prove a named compound, MIBiG entry or
   publication lead is one new structure with an asserted biological origin,
@@ -192,6 +192,9 @@ records the sha256 of every upstream file and every emitted inventory.
 - **`curate-yaml-record`** — review and, when explicitly asked, improve one
   record by checking identity, stereochemistry, producer evidence, BGC entries
   and bioactivity claims. Writes only through the validated curation-event path.
+- **`review-yaml-record`** — review one YAML record without editing it,
+  verifying chemical identity, source support, evidence placement, completeness,
+  and the exact changes a curator would need.
 - **`review-yaml-category`** — review a coherent natural-product record
   category or cohort without editing records, deciding membership, lump/split
   boundaries, and systemic follow-up.

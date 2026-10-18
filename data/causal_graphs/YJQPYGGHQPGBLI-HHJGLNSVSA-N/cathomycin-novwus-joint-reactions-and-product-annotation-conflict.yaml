@@ -258,48 +258,57 @@ graph:
   - subject: novw_native
     predicate: is_native_reference_for
     object: w
-    notes: UniProtKB:Q9L9E5 is the deposited native NovW sequence reference for the
-      Thuy 2005 NovW assay preparation.
+    notes: UniProtKB:Q9L9E5 is the deposited native sequence reference for Thuy 2005
+      NovW assay preparation (node 'w'); the experimental preparation node remains
+      ungrounded because recombinant tags, host-specific processing, or undeposited
+      construct sequences are not equated with the native entry.
     evidence:
     - reference: https://www.uniprot.org/uniprotkb/Q9L9E5
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-17'
-      notes: Deposited native sequence reference UniProtKB:Q9L9E5 (Deposited native
-        NovW sequence reference).
+      notes: Reviewed Streptomyces niveus (S. spheroides NCIMB 11891) NovW 3,5-epimerase
+        (Q9L9E5, AAF67516.1, AF170880.4, 208 aa); deposited native sequence reference.
     - reference: DOI:10.1016/j.abb.2005.01.012
       evidence_type: PRIMARY_EXPERIMENT
-      notes: UniProtKB:Q9L9E5 is the deposited native NovW sequence reference for
-        the Thuy 2005 NovW assay preparation.
+      notes: Primary study reporting Thuy 2005 NovW assay preparation (node 'w');
+        the experimental preparation is anchored to UniProtKB:Q9L9E5 as its native
+        wild-type reference without equating construct and native sequences.
   - subject: novu_native
     predicate: is_native_reference_for
     object: u
-    notes: UniProtKB:Q9L9E7 is the deposited native NovU sequence reference for the
-      Thuy 2005 NovU assay preparation.
+    notes: UniProtKB:Q9L9E7 is the deposited native sequence reference for Thuy 2005
+      NovU assay preparation (node 'u'); the experimental preparation node remains
+      ungrounded because recombinant tags, host-specific processing, or undeposited
+      construct sequences are not equated with the native entry.
     evidence:
     - reference: https://www.uniprot.org/uniprotkb/Q9L9E7
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-17'
-      notes: Deposited native sequence reference UniProtKB:Q9L9E7 (Deposited native
-        NovU sequence reference).
+      notes: Reviewed Streptomyces niveus (S. spheroides NCIMB 11891) NovU C-methyltransferase
+        (Q9L9E7, AAF67514.2, AF170880.4, 410 aa); deposited native sequence reference.
     - reference: DOI:10.1016/j.abb.2005.01.012
       evidence_type: PRIMARY_EXPERIMENT
-      notes: UniProtKB:Q9L9E7 is the deposited native NovU sequence reference for
-        the Thuy 2005 NovU assay preparation.
+      notes: Primary study reporting Thuy 2005 NovU assay preparation (node 'u');
+        the experimental preparation is anchored to UniProtKB:Q9L9E7 as its native
+        wild-type reference without equating construct and native sequences.
   - subject: novs_native
     predicate: is_native_reference_for
     object: s
-    notes: UniProtKB:Q9L9E9 is the deposited native NovS sequence reference for the
-      Thuy 2005 NovS assay preparation.
+    notes: UniProtKB:Q9L9E9 is the deposited native sequence reference for Thuy 2005
+      NovS assay preparation (node 's'); the experimental preparation node remains
+      ungrounded because recombinant tags, host-specific processing, or undeposited
+      construct sequences are not equated with the native entry.
     evidence:
     - reference: https://www.uniprot.org/uniprotkb/Q9L9E9
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-17'
-      notes: Deposited native sequence reference UniProtKB:Q9L9E9 (Deposited native
-        NovS sequence reference).
+      notes: Reviewed Streptomyces niveus (S. spheroides NCIMB 11891) NovS 4-ketoreductase
+        (Q9L9E9, AAF67512.1, AF170880.4, 286 aa); deposited native sequence reference.
     - reference: DOI:10.1016/j.abb.2005.01.012
       evidence_type: PRIMARY_EXPERIMENT
-      notes: UniProtKB:Q9L9E9 is the deposited native NovS sequence reference for
-        the Thuy 2005 NovS assay preparation.
+      notes: Primary study reporting Thuy 2005 NovS assay preparation (node 's');
+        the experimental preparation is anchored to UniProtKB:Q9L9E9 as its native
+        wild-type reference without equating construct and native sequences.
   description: 'Primary abstract-level NovW/NovU/NovS reactions, with unresolved product
     nomenclature and pathway order. Review #564. The BGC0000834 owner retains its
     unspecified sugar stereocentre and SEEDED status; precursor evidence does not
