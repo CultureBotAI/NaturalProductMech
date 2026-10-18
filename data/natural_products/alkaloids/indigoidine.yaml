@@ -446,6 +446,11 @@ causal_graphs:
     node_type: COMPOUND
     identifier: CHEBI:79296
     grounding_status: GROUNDED
+  - node_id: j1074_pptase_uniprot_example
+    label: XNR_5716 PPTase (S. wadayamensis DC60_07595 UniProtKB example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0ABR4SFP3
   edges:
   - subject: j1074_pptase
     predicate: has its encoding locus targeted by
@@ -532,6 +537,28 @@ causal_graphs:
         illustrates eDNA-clone complementation; it is not an image of this native-PPTase
         rescue.
       snippet: Production of indigoidine was restored
+  - subject: j1074_pptase
+    predicate: has a sequence-identical UniProtKB example
+    object: j1074_pptase_uniprot_example
+    notes: UniProtKB:A0ABR4SFP3 (Streptomyces wadayamensis DC60_07595) shares 100%
+      amino-acid sequence identity (UPI0001AEDEA9) with Streptomyces albus J1074 XNR_5716
+      PPTase (AGI92022.1).
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0ABR4SFP3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Streptomyces wadayamensis UniProtKB entry (A0ABR4SFP3, DC60_07595)
+        for the UPI0001AEDEA9 4'-phosphopantetheinyl transferase sequence.
+    - reference: https://www.uniprot.org/uniparc/UPI0001AEDEA9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI0001AEDEA9 links CP004370.1 AGI92022.1 (XNR_5716) and active
+        UniProtKB:A0ABR4SFP3 under a single 100%-identical sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGI92022.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: CP004370.1 GenPept AGI92022.1 is the Streptomyces albus J1074 XNR_5716
+        PPTase translation.
 - graph_id: indigoidine-fri5-lbpa-expression
   scope: BIOSYNTHESIS
   description: FRI-5 LbpA heterologous-expression evidence in S. avermitilis SUKA22.
@@ -944,3 +971,9 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-18T03:34:15Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added sequence-identical UniProtKB:A0ABR4SFP3 protein example node (UPI0001AEDEA9)
+    for J1074 XNR_5716 PPTase (AGI92022.1) in indigoidine-j1074-pptase-reporter.
+  llm_assisted: true

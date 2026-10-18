@@ -65,6 +65,26 @@ graph:
     label: Staged-assay assignment and construct limits
     node_type: OTHER
     grounding_status: REVIEW_NEEDED
+  - node_id: novm_native
+    label: Deposited native NovM sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F5
+  - node_id: novp_native
+    label: Deposited native NovP sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F2
+  - node_id: novn_native
+    label: Deposited native NovN sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F4
+  - node_id: novo_native
+    label: Deposited native NovO sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F3
   edges:
   - subject: m
     predicate: was_supplied_in
@@ -229,10 +249,89 @@ graph:
       evidence_type: CURATOR_INFERENCE
       notes: Official supporting information, p.3; all four pages inspected as text
         and visually. Product list versus three stated orders.
+  - subject: novm_native
+    predicate: is_native_reference_for
+    object: m
+    notes: UniProtKB:Q9L9F5 is the deposited native sequence reference for 2005 supplement
+      NovM preparation (node 'm'); the experimental preparation node remains ungrounded
+      because recombinant tags, host-specific processing, or undeposited construct
+      sequences are not equated with the native entry.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Reviewed Streptomyces niveus (S. spheroides NCIMB 11891) NovM glycosyltransferase
+        (Q9L9F5, AAF67506.1, AF170880.4, 379 aa); deposited native sequence reference.
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary study reporting 2005 supplement NovM preparation (node 'm');
+        the experimental preparation is anchored to UniProtKB:Q9L9F5 as its native
+        wild-type reference without equating construct and native sequences.
+  - subject: novp_native
+    predicate: is_native_reference_for
+    object: p
+    notes: UniProtKB:Q9L9F2 is the deposited native sequence reference for 2005 supplement
+      NovP preparation (node 'p'); the experimental preparation node remains ungrounded
+      because recombinant tags, host-specific processing, or undeposited construct
+      sequences are not equated with the native entry.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Reviewed Streptomyces niveus (S. spheroides NCIMB 11891) NovP O-methyltransferase
+        (Q9L9F2, AAF67509.1, AF170880.4, 262 aa); deposited native sequence reference.
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary study reporting 2005 supplement NovP preparation (node 'p');
+        the experimental preparation is anchored to UniProtKB:Q9L9F2 as its native
+        wild-type reference without equating construct and native sequences.
+  - subject: novn_native
+    predicate: is_native_reference_for
+    object: n
+    notes: UniProtKB:Q9L9F4 is the deposited native sequence reference for 2005 supplement
+      NovN preparation (node 'n'); the experimental preparation node remains ungrounded
+      because recombinant tags, host-specific processing, or undeposited construct
+      sequences are not equated with the native entry.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Reviewed Streptomyces niveus (S. spheroides NCIMB 11891) NovN O-carbamoyltransferase
+        (Q9L9F4, AAF67507.2, AF170880.4, 677 aa); deposited native sequence reference.
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary study reporting 2005 supplement NovN preparation (node 'n');
+        the experimental preparation is anchored to UniProtKB:Q9L9F4 as its native
+        wild-type reference without equating construct and native sequences.
+  - subject: novo_native
+    predicate: is_native_reference_for
+    object: o
+    notes: UniProtKB:Q9L9F3 is the deposited native sequence reference for 2005 supplement
+      NovO preparation (node 'o'); the experimental preparation node remains ungrounded
+      because recombinant tags, host-specific processing, or undeposited construct
+      sequences are not equated with the native entry.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Reviewed Streptomyces niveus (S. spheroides NCIMB 11891) NovO C8-methyltransferase
+        (Q9L9F3, AAF67508.2, AF170880.4, 230 aa); deposited native sequence reference.
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary study reporting 2005 supplement NovO preparation (node 'o');
+        the experimental preparation is anchored to UniProtKB:Q9L9F3 as its native
+        wild-type reference without equating construct and native sequences.
 curation_history:
 - timestamp: '2026-10-05T00:15:09Z'
   curator: codex
   action: RECORD_CURATED
   changes: 'Add cathomycin-novm-staged-tailoring-and-product-mass-conflict with source-bounded
     NovM/redox evidence and #563 findings.'
+  llm_assisted: true
+- timestamp: '2026-10-18T03:34:18Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added deposited native sequence reference node(s) (UniProtKB:Q9L9F5, UniProtKB:Q9L9F2,
+    UniProtKB:Q9L9F4, UniProtKB:Q9L9F3) while keeping recombinant/engineered assay
+    preparations ungrounded.
   llm_assisted: true

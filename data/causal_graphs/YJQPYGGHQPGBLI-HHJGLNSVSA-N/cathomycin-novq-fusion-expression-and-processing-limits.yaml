@@ -65,6 +65,11 @@ graph:
     label: Supplementary IPTG and temperature comparisons
     node_type: PROCESS
     grounding_status: UNGROUNDED
+  - node_id: native
+    label: Deposited native NovQ sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F1
   edges:
   - subject: his
     predicate: was_tested_in
@@ -198,10 +203,106 @@ graph:
     - reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs00449-018-2050-9/MediaObjects/449_2018_2050_MOESM1_ESM.doc
       evidence_type: PRIMARY_EXPERIMENT
       notes: Figure S2 panels a/b and caption.
+  - subject: native
+    predicate: is_native_reference_for
+    object: his
+    notes: UniProtKB:Q9L9F1 is the deposited native sequence reference for Ni 2019
+      His6-NovQ preparation (node 'his'); the experimental preparation node remains
+      ungrounded because recombinant tags, host-specific processing, or undeposited
+      construct sequences are not equated with the native entry.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Reviewed Streptomyces niveus (S. spheroides NCIMB 11891) NovQ prenyltransferase
+        (Q9L9F1, AAF67510.2, AF170880.4, 323 aa); deposited native sequence reference.
+    - reference: DOI:10.1007/s00449-018-2050-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary study reporting Ni 2019 His6-NovQ preparation (node 'his'); the
+        experimental preparation is anchored to UniProtKB:Q9L9F1 as its native wild-type
+        reference without equating construct and native sequences.
+  - subject: native
+    predicate: is_native_reference_for
+    object: trx
+    notes: UniProtKB:Q9L9F1 is the deposited native sequence reference for Ni 2019
+      TrxA-NovQ fusion preparation (node 'trx'); the experimental preparation node
+      remains ungrounded because recombinant tags, host-specific processing, or undeposited
+      construct sequences are not equated with the native entry.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Reviewed Streptomyces niveus (S. spheroides NCIMB 11891) NovQ prenyltransferase
+        (Q9L9F1, AAF67510.2, AF170880.4, 323 aa); deposited native sequence reference.
+    - reference: DOI:10.1007/s00449-018-2050-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary study reporting Ni 2019 TrxA-NovQ fusion preparation (node 'trx');
+        the experimental preparation is anchored to UniProtKB:Q9L9F1 as its native
+        wild-type reference without equating construct and native sequences.
+  - subject: native
+    predicate: is_native_reference_for
+    object: gst
+    notes: UniProtKB:Q9L9F1 is the deposited native sequence reference for Ni 2019
+      GST-NovQ fusion preparation (node 'gst'); the experimental preparation node
+      remains ungrounded because recombinant tags, host-specific processing, or undeposited
+      construct sequences are not equated with the native entry.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Reviewed Streptomyces niveus (S. spheroides NCIMB 11891) NovQ prenyltransferase
+        (Q9L9F1, AAF67510.2, AF170880.4, 323 aa); deposited native sequence reference.
+    - reference: DOI:10.1007/s00449-018-2050-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary study reporting Ni 2019 GST-NovQ fusion preparation (node 'gst');
+        the experimental preparation is anchored to UniProtKB:Q9L9F1 as its native
+        wild-type reference without equating construct and native sequences.
+  - subject: native
+    predicate: is_native_reference_for
+    object: mbp
+    notes: UniProtKB:Q9L9F1 is the deposited native sequence reference for Ni 2019
+      MBP-NovQ fusion preparation (node 'mbp'); the experimental preparation node
+      remains ungrounded because recombinant tags, host-specific processing, or undeposited
+      construct sequences are not equated with the native entry.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Reviewed Streptomyces niveus (S. spheroides NCIMB 11891) NovQ prenyltransferase
+        (Q9L9F1, AAF67510.2, AF170880.4, 323 aa); deposited native sequence reference.
+    - reference: DOI:10.1007/s00449-018-2050-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary study reporting Ni 2019 MBP-NovQ fusion preparation (node 'mbp');
+        the experimental preparation is anchored to UniProtKB:Q9L9F1 as its native
+        wild-type reference without equating construct and native sequences.
+  - subject: native
+    predicate: is_native_reference_for
+    object: cleaved
+    notes: UniProtKB:Q9L9F1 is the deposited native sequence reference for Ni 2019
+      TEV-processed MBP-NovQ material (node 'cleaved'); the experimental preparation
+      node remains ungrounded because recombinant tags, host-specific processing,
+      or undeposited construct sequences are not equated with the native entry.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Reviewed Streptomyces niveus (S. spheroides NCIMB 11891) NovQ prenyltransferase
+        (Q9L9F1, AAF67510.2, AF170880.4, 323 aa); deposited native sequence reference.
+    - reference: DOI:10.1007/s00449-018-2050-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary study reporting Ni 2019 TEV-processed MBP-NovQ material (node
+        'cleaved'); the experimental preparation is anchored to UniProtKB:Q9L9F1 as
+        its native wild-type reference without equating construct and native sequences.
 curation_history:
 - timestamp: '2026-10-04T18:21:51Z'
   curator: codex
   action: RECORD_CURATED
   changes: Add cathomycin-novq-fusion-expression-and-processing-limits with native
     identity, source conflicts and bounded engineered-preparation evidence (#554).
+  llm_assisted: true
+- timestamp: '2026-10-18T03:34:17Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added deposited native sequence reference node(s) (UniProtKB:Q9L9F1) while
+    keeping recombinant/engineered assay preparations ungrounded.
   llm_assisted: true

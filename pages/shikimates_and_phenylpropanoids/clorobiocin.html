@@ -885,7 +885,7 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
-<h2>Causal graph &mdash; biosynthesis <span class="tag">24 nodes, 24 edges</span></h2>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">25 nodes, 25 edges</span></h2>
 <p class="sub">CloQ WT and eleven mutant activity comparisons, with separate WT substrate-conditioned kinetic fits and endpoint product checks from Metzger 2010 (review #553). All measurements concern recombinant enzyme assays, not native clorobiocin production or each mutant binding a donor in a crystal. WT/variant preparations remain distinct from native Q8GHB2. PDF pages are twelve above printed pages.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
@@ -1103,6 +1103,16 @@ by the corpus tests.</p>
   <td>Unresolved physiological keto-versus-enol substrate choice</td>
   <td>L-tyrosine and p-coumarate were used as analogues of keto- and enol-like acceptors. Their low but nonzero efficiencies do not identify the physiological 4-HPP tautomer used by CloQ. The source concludes this comparison did not establish a preference. Relative alternative-substrate efficiencies also do not measure intracellular substrate availability or flux.</td>
   <td><details class="graph-evidence"><summary class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</summary><ul><li><dl><dt>reference</dt><dd>https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Analogue rationale and limitations, PDF pp.83-84.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Native CloQ sequence reference</td>
+  <td>is_native_reference_for</td>
+  <td>pET28_CloQ-derived WT comparator</td>
+  <td>UniProtKB:Q8GHB2 is the deposited native sequence reference for pET28_CloQ-derived WT comparator (node &#39;wt&#39;); the experimental preparation node remains ungrounded because recombinant tags, host-specific processing, or undeposited construct sequences are not equated with the native entry.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q8GHB2<br>DOI:10.1016/j.jmb.2010.09.067</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q8GHB2</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>Unreviewed Streptomyces roseochromogenus subsp. oscitans CloQ (Q8GHB2, AAN65239.1, AF329398.1, 324 aa); deposited native sequence reference.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1016/j.jmb.2010.09.067</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Primary study reporting pET28_CloQ-derived WT comparator (node &#39;wt&#39;); the experimental preparation is anchored to UniProtKB:Q8GHB2 as its native wild-type reference without equating construct and native sequences.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
@@ -5109,7 +5119,7 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
-<h2>Causal graph &mdash; biosynthesis <span class="tag">13 nodes, 13 edges</span></h2>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">14 nodes, 14 edges</span></h2>
 <p class="sub">Cognate and noncognate MbtH activation of CloH in vitro, with native references separated from processed/synthetic partners and per-panel normalization. Review #672.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
@@ -5240,6 +5250,17 @@ by the corpus tests.</p>
   <td>The paper lists70-aa Orf1van but the source-named native protein/CDS gives69 aa. No initiator-removal explanation, label swap or synthetic sequence repair is invented.</td>
   <td><details class="graph-evidence"><summary class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/protein/AAL90876.1</summary><ul><li><dl><dt>reference</dt><dd>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Boll 2011 primary dissertation chapter7, PDF pp.92,96; printed pages are five lower. Author-reproduced manuscript and supplement identified by DOI:10.1074/jbc.M111.288092, not independently retrieved final journal text.</dd></dl>
 </li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAL90876.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native69-aa reference.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Orf1van native sequence reference</td>
+  <td>has a sequence-identical UniProtKB example</td>
+  <td>Orf1van (Amycolatopsis orientalis UniProtKB example)</td>
+  <td>UniProtKB:Q8RN06 (Amycolatopsis orientalis Protein mbtH) shares 100% amino-acid sequence identity (69 aa, UPI00000B5FEE) with AF486630.1 AAL90876.1 (Orf1van).</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/Q8RN06<br>https://www.uniprot.org/uniparc/UPI00000B5FEE<br>https://www.ncbi.nlm.nih.gov/protein/AAL90876.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q8RN06</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>Active Amycolatopsis orientalis UniProtKB entry (Q8RN06) for the 69-aa Orf1van MbtH-like protein.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI00000B5FEE</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>UniParc UPI00000B5FEE links AF486630.1 AAL90876.1 (Orf1van) and active UniProtKB:Q8RN06 under a single 100%-identical 69-aa sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAL90876.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>AF486630.1 GenPept AAL90876.1 is the 69-aa Amycolatopsis orientalis Orf1van conceptual translation.</dd></dl>
 </li></ul>
 </details></td>
 </tr>

@@ -160,6 +160,11 @@ graph:
     label: MPA-CoA hydrolysis
     node_type: PROCESS
     grounding_status: UNGROUNDED
+  - node_id: mpah_prime_native
+    label: MpaH' native NRRL864 reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A0B5LB55
   edges:
   - subject: pbacl75
     predicate: catalyzes_in_reported_assay
@@ -515,10 +520,34 @@ graph:
       evidence_type: PRIMARY_EXPERIMENT
       retrieved_on: '2026-10-12'
       notes: Main text, section2.7; Figure2 caption.
+  - subject: mpah_prime_native
+    predicate: is_native_reference_for
+    object: mpah_prime
+    notes: UniProtKB:A0A0B5LB55 is the deposited native sequence reference for MpaH'
+      (2025 assay label) (node 'mpah_prime'); the experimental preparation node remains
+      review_needed because recombinant tags, host-specific processing, or undeposited
+      construct sequences are not equated with the native entry.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0B5LB55
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Unreviewed Penicillium brevicompactum NRRL 864 MpaH' (A0A0B5LB55, KJ863532.1
+        AIA21557.1, 413 aa); deposited native sequence reference.
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary study reporting MpaH' (2025 assay label) (node 'mpah_prime');
+        the experimental preparation is anchored to UniProtKB:A0A0B5LB55 as its native
+        wild-type reference without equating construct and native sequences.
 curation_history:
 - timestamp: '2026-10-12T14:35:34Z'
   curator: Codex
   action: RECORD_CURATED
   changes: Add scoped side-chain protein evidence for CHEBI:168396 on baseline 0884f349d8d00a68b071512b20c2fe4ab424e2de.
     Existing graphs are preserved; not full-record sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-18T03:34:31Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added MpaH' native NRRL864 reference node (UniProtKB:A0A0B5LB55) in mycophenolic-acid-pb864-sidechain-reconstitution
+    matching sibling mycophenolic acid graphs.
   llm_assisted: true

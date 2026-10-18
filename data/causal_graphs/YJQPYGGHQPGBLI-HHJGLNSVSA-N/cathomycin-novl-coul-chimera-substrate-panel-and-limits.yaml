@@ -105,6 +105,16 @@ graph:
     label: Conditional regional-swap activity comparisons
     node_type: PHENOTYPE
     grounding_status: UNGROUNDED
+  - node_id: novl_native
+    label: Deposited native NovL sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F6
+  - node_id: coul_native
+    label: Deposited native CouL sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8U8
   edges:
   - subject: cou_parent
     predicate: has_reported_relative_activity_in
@@ -400,10 +410,53 @@ graph:
       evidence_type: PRIMARY_EXPERIMENT
       notes: Figure 3.31 caption and discussion, PDF pp.94-99.
       snippet: unterhalb der Nachweisgrenze
+  - subject: novl_native
+    predicate: is_native_reference_for
+    object: nov_parent
+    notes: UniProtKB:Q9L9F6 is the deposited native sequence reference for pUM07-derived
+      NovL parental comparator (node 'nov_parent'); the experimental preparation node
+      remains ungrounded because recombinant tags, host-specific processing, or undeposited
+      construct sequences are not equated with the native entry.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Reviewed Streptomyces niveus (S. spheroides NCIMB 11891) NovL novobiocic
+        acid synthetase (Q9L9F6, AAF67505.2, AF170880.4, 527 aa); deposited native
+        sequence reference.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary study reporting pUM07-derived NovL parental comparator (node
+        'nov_parent'); the experimental preparation is anchored to UniProtKB:Q9L9F6
+        as its native wild-type reference without equating construct and native sequences.
+  - subject: coul_native
+    predicate: is_native_reference_for
+    object: cou_parent
+    notes: UniProtKB:Q9F8U8 is the deposited native sequence reference for pUM05-derived
+      CouL parental comparator (node 'cou_parent'); the experimental preparation node
+      remains review_needed because recombinant tags, host-specific processing, or
+      undeposited construct sequences are not equated with the native entry.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8U8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Unreviewed Streptomyces rishiriensis DSM 40489 CouL acyl-CoA synthetase
+        (Q9F8U8, AAG29785.1, AF235050.1, 530 aa); deposited native sequence reference.
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/10900/49469/1/pdf/Diss_Metzger_gesamt.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary study reporting pUM05-derived CouL parental comparator (node
+        'cou_parent'); the experimental preparation is anchored to UniProtKB:Q9F8U8
+        as its native wild-type reference without equating construct and native sequences.
 curation_history:
 - timestamp: '2026-10-04T17:07:55Z'
   curator: codex
   action: RECORD_CURATED
   changes: Add cathomycin-novl-coul-chimera-substrate-panel-and-limits from Metzger
     primary evidence; preserve construct, sequence and endpoint-assay limits (#551).
+  llm_assisted: true
+- timestamp: '2026-10-18T03:34:17Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added deposited native sequence reference node(s) (UniProtKB:Q9L9F6, UniProtKB:Q9F8U8)
+    while keeping recombinant/engineered assay preparations ungrounded.
   llm_assisted: true

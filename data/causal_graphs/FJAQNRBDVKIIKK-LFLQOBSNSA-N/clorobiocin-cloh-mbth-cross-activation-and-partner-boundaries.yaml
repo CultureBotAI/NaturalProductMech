@@ -64,6 +64,11 @@ graph:
     label: pBB34-derived Orf1van preparation
     node_type: PROTEIN
     grounding_status: UNGROUNDED
+  - node_id: orf_uniprot_example
+    label: Orf1van (Amycolatopsis orientalis UniProtKB example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RN06
   edges:
   - subject: cloh
     predicate: is_native_reference_for
@@ -291,6 +296,27 @@ graph:
     - reference: https://www.ncbi.nlm.nih.gov/protein/AAL90876.1
       evidence_type: DATABASE_ASSERTION
       notes: Native69-aa reference.
+  - subject: orf_native
+    predicate: has a sequence-identical UniProtKB example
+    object: orf_uniprot_example
+    notes: UniProtKB:Q8RN06 (Amycolatopsis orientalis Protein mbtH) shares 100% amino-acid
+      sequence identity (69 aa, UPI00000B5FEE) with AF486630.1 AAL90876.1 (Orf1van).
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8RN06
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Amycolatopsis orientalis UniProtKB entry (Q8RN06) for the 69-aa
+        Orf1van MbtH-like protein.
+    - reference: https://www.uniprot.org/uniparc/UPI00000B5FEE
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI00000B5FEE links AF486630.1 AAL90876.1 (Orf1van) and active
+        UniProtKB:Q8RN06 under a single 100%-identical 69-aa sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAL90876.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: AF486630.1 GenPept AAL90876.1 is the 69-aa Amycolatopsis orientalis Orf1van
+        conceptual translation.
 curation_history:
 - timestamp: '2026-10-07T22:17:09Z'
   curator: codex
@@ -303,4 +329,10 @@ curation_history:
     snippets. Address review #672. No PCP-loading, mature-product synthesis, atomic-complex,
     antimicrobial target or whole-plasmid claim added; retain all27 prior graphs,
     all23 component bytes, source-owned fields, history and SEEDED status.'
+  llm_assisted: true
+- timestamp: '2026-10-18T03:34:24Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added sequence-identical Amycolatopsis orientalis UniProtKB:Q8RN06 protein
+    example node (UPI00000B5FEE) for Orf1van (AAL90876.1).
   llm_assisted: true

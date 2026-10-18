@@ -413,6 +413,21 @@ causal_graphs:
     label: CGMCC4.1633 8-azgF deletion
     node_type: PROCESS
     grounding_status: UNGROUNDED
+  - node_id: azgd_uniprot_example
+    label: 8-AzgD (S. pathocidini ACH429_00980 UniProtKB example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A6G9KJ81
+  - node_id: azge_uniprot_example
+    label: 8-AzgE (S. pathocidini ACH429_00985 UniProtKB example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A7G3ZQC3
+  - node_id: azgf_uniprot_example
+    label: 8-AzgF (S. pathocidini ACH429_00990 UniProtKB example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A6G9KIY0
   edges:
   - subject: azgd_deletion
     predicate: deletes_gene_represented_by
@@ -544,6 +559,72 @@ causal_graphs:
         2A; HPLC with UV detection at 245 nm, compared with an authentic 8-azaguanine
         standard.
       snippet: 8-AZG production was completely abolished
+  - subject: azgd_reference
+    predicate: has a sequence-identical UniProtKB example
+    object: azgd_uniprot_example
+    notes: UniProtKB:A0A6G9KJ81 is the active Streptomyces pathocidini (ACH429_00980)
+      entry sharing 100% amino-acid sequence identity (UPI000B1A84C6) with MT543149.1
+      QLM04718.1 (8-AzgD).
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A6G9KJ81
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Streptomyces pathocidini UniProtKB entry (ACH429_00980) for the
+        UPI000B1A84C6 sequence.
+    - reference: https://www.uniprot.org/uniparc/UPI000B1A84C6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI000B1A84C6 links MT543149.1 GenPept QLM04718.1 (8-AzgD) and
+        active UniProtKB:A0A6G9KJ81 under a single 100%-identical sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLM04718.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: MT543149.1 GenPept QLM04718.1 is the deposited Streptomyces pathocidini
+        CGMCC4.1633 8-AzgD translation.
+  - subject: azge_reference
+    predicate: has a sequence-identical UniProtKB example
+    object: azge_uniprot_example
+    notes: UniProtKB:A0A7G3ZQC3 is the active Streptomyces pathocidini (ACH429_00985)
+      entry sharing 100% amino-acid sequence identity (UPI0006E3F696) with MT543149.1
+      QLM04711.1 (8-AzgE).
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A7G3ZQC3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Streptomyces pathocidini UniProtKB entry (ACH429_00985) for the
+        UPI0006E3F696 sequence.
+    - reference: https://www.uniprot.org/uniparc/UPI0006E3F696
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI0006E3F696 links MT543149.1 GenPept QLM04711.1 (8-AzgE) and
+        active UniProtKB:A0A7G3ZQC3 under a single 100%-identical sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLM04711.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: MT543149.1 GenPept QLM04711.1 is the deposited Streptomyces pathocidini
+        CGMCC4.1633 8-AzgE translation.
+  - subject: azgf_reference
+    predicate: has a sequence-identical UniProtKB example
+    object: azgf_uniprot_example
+    notes: UniProtKB:A0A6G9KIY0 is the active Streptomyces pathocidini (ACH429_00990)
+      entry sharing 100% amino-acid sequence identity (UPI00099E5E15) with MT543149.1
+      QLM04712.1 (8-AzgF).
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A6G9KIY0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Streptomyces pathocidini UniProtKB entry (ACH429_00990) for the
+        UPI00099E5E15 sequence.
+    - reference: https://www.uniprot.org/uniparc/UPI00099E5E15
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI00099E5E15 links MT543149.1 GenPept QLM04712.1 (8-AzgF) and
+        active UniProtKB:A0A6G9KIY0 under a single 100%-identical sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLM04712.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: MT543149.1 GenPept QLM04712.1 is the deposited Streptomyces pathocidini
+        CGMCC4.1633 8-AzgF translation.
 - graph_id: 8-azaguanine-cgmcc41633-abg-genetic-evidence
   scope: BIOSYNTHESIS
   description: Bounded native genetic evidence for 8-AzgA/B/G in Streptomyces pathocidini
@@ -588,6 +669,16 @@ causal_graphs:
     label: CGMCC4.1633 8-azgG deletion
     node_type: PROCESS
     grounding_status: UNGROUNDED
+  - node_id: azga_uniprot_example
+    label: 8-AzgA (S. pathocidini ACH429_00965 UniProtKB example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A6G9KI63
+  - node_id: azgg_uniprot_example
+    label: 8-AzgG (S. pathocidini ACH429_00995 UniProtKB example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A7G3ZQC5
   edges:
   - subject: azga_deletion
     predicate: deletes_gene_represented_by
@@ -722,6 +813,50 @@ causal_graphs:
         2A; HPLC/UV at 245 nm. The panel has no quantitative vertical scale or integrated
         yield values. Lower titer is the authors' report, not an independent numerical
         estimate from the plotted traces.
+  - subject: azga_reference
+    predicate: has a sequence-identical UniProtKB example
+    object: azga_uniprot_example
+    notes: UniProtKB:A0A6G9KI63 is the active Streptomyces pathocidini (ACH429_00965)
+      entry sharing 100% amino-acid sequence identity (UPI000A88606E) with MT543149.1
+      QLM04708.1 (8-AzgA).
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A6G9KI63
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Streptomyces pathocidini UniProtKB entry (ACH429_00965) for the
+        UPI000A88606E sequence.
+    - reference: https://www.uniprot.org/uniparc/UPI000A88606E
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI000A88606E links MT543149.1 GenPept QLM04708.1 (8-AzgA) and
+        active UniProtKB:A0A6G9KI63 under a single 100%-identical sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLM04708.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: MT543149.1 GenPept QLM04708.1 is the deposited Streptomyces pathocidini
+        CGMCC4.1633 8-AzgA translation.
+  - subject: azgg_reference
+    predicate: has a sequence-identical UniProtKB example
+    object: azgg_uniprot_example
+    notes: UniProtKB:A0A7G3ZQC5 is the active Streptomyces pathocidini (ACH429_00995)
+      entry sharing 100% amino-acid sequence identity (UPI0006E15438) with MT543149.1
+      QLM04713.1 (8-AzgG).
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A7G3ZQC5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Streptomyces pathocidini UniProtKB entry (ACH429_00995) for the
+        UPI0006E15438 sequence.
+    - reference: https://www.uniprot.org/uniparc/UPI0006E15438
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI0006E15438 links MT543149.1 GenPept QLM04713.1 (8-AzgG) and
+        active UniProtKB:A0A7G3ZQC5 under a single 100%-identical sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLM04713.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: MT543149.1 GenPept QLM04713.1 is the deposited Streptomyces pathocidini
+        CGMCC4.1633 8-AzgG translation.
 - graph_id: 8-azaguanine-cgmcc41633-chijk-genetic-evidence
   scope: BIOSYNTHESIS
   description: Reported native genetic-test outcomes for 8-AzgC/H/I/J/K in Streptomyces
@@ -785,6 +920,16 @@ causal_graphs:
     label: CGMCC4.1633 8-azgK deletion
     node_type: PROCESS
     grounding_status: UNGROUNDED
+  - node_id: azgc_uniprot_example
+    label: 8-AzgC (S. pathocidini ACH429_00975 UniProtKB example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A6G9KI21
+  - node_id: azgh_uniprot_example
+    label: 8-AzgH (S. pathocidini ACH429_01000 UniProtKB example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A7G3ZQC6
   edges:
   - subject: azgc_deletion
     predicate: deletes_gene_represented_by
@@ -1021,6 +1166,50 @@ causal_graphs:
         uses HPLC/UV at 245 nm with authentic 8-azaguanine. No independent peak integration,
         replicate assessment or quantitative phenotype estimate was performed.
       snippet: a small titer increase
+  - subject: azgc_reference
+    predicate: has a sequence-identical UniProtKB example
+    object: azgc_uniprot_example
+    notes: UniProtKB:A0A6G9KI21 is the active Streptomyces pathocidini (ACH429_00975)
+      entry sharing 100% amino-acid sequence identity (UPI0006E1F3FA) with MT543149.1
+      QLM04710.1 (8-AzgC).
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A6G9KI21
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Streptomyces pathocidini UniProtKB entry (ACH429_00975) for the
+        UPI0006E1F3FA sequence.
+    - reference: https://www.uniprot.org/uniparc/UPI0006E1F3FA
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI0006E1F3FA links MT543149.1 GenPept QLM04710.1 (8-AzgC) and
+        active UniProtKB:A0A6G9KI21 under a single 100%-identical sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLM04710.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: MT543149.1 GenPept QLM04710.1 is the deposited Streptomyces pathocidini
+        CGMCC4.1633 8-AzgC translation.
+  - subject: azgh_reference
+    predicate: has a sequence-identical UniProtKB example
+    object: azgh_uniprot_example
+    notes: UniProtKB:A0A7G3ZQC6 is the active Streptomyces pathocidini (ACH429_01000)
+      entry sharing 100% amino-acid sequence identity (UPI000B2DAD11) with MT543149.1
+      QLM04714.1 (8-AzgH).
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A7G3ZQC6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Streptomyces pathocidini UniProtKB entry (ACH429_01000) for the
+        UPI000B2DAD11 sequence.
+    - reference: https://www.uniprot.org/uniparc/UPI000B2DAD11
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI000B2DAD11 links MT543149.1 GenPept QLM04714.1 (8-AzgH) and
+        active UniProtKB:A0A7G3ZQC6 under a single 100%-identical sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLM04714.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: MT543149.1 GenPept QLM04714.1 is the deposited Streptomyces pathocidini
+        CGMCC4.1633 8-AzgH translation.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -1088,3 +1277,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-18T03:34:12Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified sequence-identical Streptomyces pathocidini UniProtKB protein
+    example nodes (A0A6G9KI63, A0A6G9KI21, A0A6G9KJ81, A0A7G3ZQC3, A0A6G9KIY0, A0A7G3ZQC5,
+    A0A7G3ZQC6) for 8-AzgA, 8-AzgC, 8-AzgD, 8-AzgE, 8-AzgF, 8-AzgG, and 8-AzgH via
+    UniParc.
+  llm_assisted: true

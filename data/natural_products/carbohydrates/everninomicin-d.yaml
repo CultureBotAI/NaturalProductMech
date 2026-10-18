@@ -302,6 +302,11 @@ causal_graphs:
     label: UDP-D-xylose formation at 30 min
     node_type: PROCESS
     grounding_status: UNGROUNDED
+  - node_id: evds6_parent
+    label: Native EvdS6 parent
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:QLD23489.2
   edges:
   - subject: h87a
     predicate: reported_decreased
@@ -444,6 +449,102 @@ causal_graphs:
     - reference: https://ars.els-cdn.com/content/image/1-s2.0-S002192582301921X-mmc1.docx
       evidence_type: PRIMARY_EXPERIMENT
       notes: Table S1; primer labels disagree with the sequence-derived residue assignment.
+  - subject: evds6_parent
+    predicate: is the wild-type parent of
+    object: h87a
+    notes: Reported EvdS6 H87A construct is an engineered point variant of Micromonospora
+      carbonacea subsp. aurantiaca EvdS6 (CP058322.1 HXZ27_04045 / QLD23489.2, 329
+      aa); the variant node remains ungrounded while anchored to the native parent.
+    evidence:
+    - reference: DOI:10.1016/j.jbc.2023.104893
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 7A and Table S1 active-site alanine-variant assay for Reported
+        EvdS6 H87A construct relative to wild-type EvdS6.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLD23489.2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: CP058322.1 HXZ27_04045 / QLD23489.2 is the 329-aa native EvdS6 UDP-D-glucuronic
+        acid decarboxylase/reductase parent translation.
+  - subject: evds6_parent
+    predicate: is the wild-type parent of
+    object: t126a
+    notes: Reported EvdS6 T126A construct is an engineered point variant of Micromonospora
+      carbonacea subsp. aurantiaca EvdS6 (CP058322.1 HXZ27_04045 / QLD23489.2, 329
+      aa); the variant node remains ungrounded while anchored to the native parent.
+    evidence:
+    - reference: DOI:10.1016/j.jbc.2023.104893
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 7A and Table S1 active-site alanine-variant assay for Reported
+        EvdS6 T126A construct relative to wild-type EvdS6.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLD23489.2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: CP058322.1 HXZ27_04045 / QLD23489.2 is the 329-aa native EvdS6 UDP-D-glucuronic
+        acid decarboxylase/reductase parent translation.
+  - subject: evds6_parent
+    predicate: is the wild-type parent of
+    object: e128a
+    notes: Reported EvdS6 E128A construct is an engineered point variant of Micromonospora
+      carbonacea subsp. aurantiaca EvdS6 (CP058322.1 HXZ27_04045 / QLD23489.2, 329
+      aa); the variant node remains ungrounded while anchored to the native parent.
+    evidence:
+    - reference: DOI:10.1016/j.jbc.2023.104893
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 7A and Table S1 active-site alanine-variant assay for Reported
+        EvdS6 E128A construct relative to wild-type EvdS6.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLD23489.2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: CP058322.1 HXZ27_04045 / QLD23489.2 is the 329-aa native EvdS6 UDP-D-glucuronic
+        acid decarboxylase/reductase parent translation.
+  - subject: evds6_parent
+    predicate: is the wild-type parent of
+    object: n179a
+    notes: Reported EvdS6 N179A construct is an engineered point variant of Micromonospora
+      carbonacea subsp. aurantiaca EvdS6 (CP058322.1 HXZ27_04045 / QLD23489.2, 329
+      aa); the variant node remains ungrounded while anchored to the native parent.
+    evidence:
+    - reference: DOI:10.1016/j.jbc.2023.104893
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 7A and Table S1 active-site alanine-variant assay for Reported
+        EvdS6 N179A construct relative to wild-type EvdS6.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLD23489.2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: CP058322.1 HXZ27_04045 / QLD23489.2 is the 329-aa native EvdS6 UDP-D-glucuronic
+        acid decarboxylase/reductase parent translation.
+  - subject: evds6_parent
+    predicate: is the wild-type parent of
+    object: r278a
+    notes: Reported EvdS6 R278A construct is an engineered point variant of Micromonospora
+      carbonacea subsp. aurantiaca EvdS6 (CP058322.1 HXZ27_04045 / QLD23489.2, 329
+      aa); the variant node remains review_needed while anchored to the native parent.
+    evidence:
+    - reference: DOI:10.1016/j.jbc.2023.104893
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 7A and Table S1 active-site alanine-variant assay for Reported
+        EvdS6 R278A construct relative to wild-type EvdS6.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLD23489.2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: CP058322.1 HXZ27_04045 / QLD23489.2 is the 329-aa native EvdS6 UDP-D-glucuronic
+        acid decarboxylase/reductase parent translation.
+  - subject: evds6_parent
+    predicate: is the wild-type parent of
+    object: r279a
+    notes: Reported EvdS6 R279A construct is an engineered point variant of Micromonospora
+      carbonacea subsp. aurantiaca EvdS6 (CP058322.1 HXZ27_04045 / QLD23489.2, 329
+      aa); the variant node remains review_needed while anchored to the native parent.
+    evidence:
+    - reference: DOI:10.1016/j.jbc.2023.104893
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 7A and Table S1 active-site alanine-variant assay for Reported
+        EvdS6 R279A construct relative to wild-type EvdS6.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLD23489.2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: CP058322.1 HXZ27_04045 / QLD23489.2 is the 329-aa native EvdS6 UDP-D-glucuronic
+        acid decarboxylase/reductase parent translation.
 - graph_id: everninomicin-d-oxygenase-deletion-readouts
   scope: BIOSYNTHESIS
   description: Native gene-disruption evidence for EvdO1 and EvdMO1 in everninomicin
@@ -473,6 +574,11 @@ causal_graphs:
     label: Detectable everninomicin D in culture extracts
     node_type: PHENOTYPE
     grounding_status: UNGROUNDED
+  - node_id: evdo1_uniprot_example
+    label: EvdO1 (PDB 4XBZ UniProtKB example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A0M3KL03
   edges:
   - subject: delete_evdo1
     predicate: disrupts_encoding_gene_of
@@ -540,6 +646,30 @@ causal_graphs:
     - reference: DOI:10.1073/pnas.1500964112
       evidence_type: PRIMARY_EXPERIMENT
       notes: Targeted gene disruption results and Figure 3A.
+  - subject: evdo1
+    predicate: has a UniProtKB protein example
+    object: evdo1_uniprot_example
+    notes: UniProtKB:A0A0M3KL03 (314 aa, derived from PDB 4XBZ) contains one extra
+      N-terminal cloning methionine followed by the complete 313-aa native EvdO1 sequence
+      (CP058322.1 HXZ27_03990 / QLD23479.1); the shorter UniProtKB:A0A1C5AE48 entry
+      (B105_0086, 305 aa) is N-terminally truncated (native residues 9-313).
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0M3KL03
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Micromonospora carbonacea UniProtKB entry (314 aa, PDB 4XBZ) containing
+        an N-terminal cloning methionine plus the 313-aa native EvdO1 sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/QLD23479.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: CP058322.1 HXZ27_03990 / QLD23479.1 is the 313-aa native Micromonospora
+        carbonacea subsp. aurantiaca EvdO1 translation.
+    - reference: https://www.uniprot.org/uniprotkb/A0A0M3KL03
+      evidence_type: CURATOR_INFERENCE
+      retrieved_on: '2026-10-17'
+      notes: Residues 2-314 of UniProtKB:A0A0M3KL03 match residues 1-313 of native
+        CP058322.1/QLD23479.1 identically, whereas UniProtKB:A0A1C5AE48 (305 aa) starts
+        at native residue 9.
 - graph_id: everninomicin-d-evdo1-evdo2-structural-observations
   scope: BIOSYNTHESIS
   description: Recombinant EvdO1/EvdO2 structural observations from catalytically
@@ -811,3 +941,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-18T07:08:53Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added Micromonospora carbonacea UniProtKB protein example node (UniProtKB:A0A0M3KL03,
+    314-aa PDB 4XBZ construct containing the complete 313-aa native CP058322.1 HXZ27_03990
+    / QLD23479.1 EvdO1 sequence) in everninomicin-d-oxygenase-deletion-readouts and
+    anchored the six EvdS6 alanine variants to native parent NCBIProtein:QLD23489.2
+    (CP058322.1 HXZ27_04045, 329 aa).
+  llm_assisted: true

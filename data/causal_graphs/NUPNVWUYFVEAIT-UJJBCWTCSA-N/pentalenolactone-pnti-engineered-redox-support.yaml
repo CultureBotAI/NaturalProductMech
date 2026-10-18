@@ -1,0 +1,324 @@
+record_id: CHEBI:70816
+standard_inchi_key: NUPNVWUYFVEAIT-UJJBCWTCSA-N
+graph:
+  graph_id: pentalenolactone-pnti-engineered-redox-support
+  scope: BIOSYNTHESIS
+  description: Engineered E. coli BL21(DE3) with PenA/PntI and alternative J1074 redox-gene
+    expression conditions. XNR_5179-containing pairs increased intermediate production;
+    XNR_1673 conditions are represented only as tested conditions. Neither native
+    partnership, physical complex, nor increased final pentalenolactone yield is asserted.
+  nodes:
+  - node_id: pnti
+    label: PntI
+    node_type: ENZYME
+    identifier: UniProtKB:E3VWJ1
+    grounding_status: GROUNDED
+  - node_id: xnr_5179
+    label: XNR_5179 ferredoxin
+    node_type: PROTEIN
+    identifier: NCBIProtein:AGI91495.1
+    grounding_status: GROUNDED
+  - node_id: xnr_4478
+    label: XNR_4478 ferredoxin reductase
+    node_type: ENZYME
+    identifier: NCBIProtein:AGI90801.1
+    grounding_status: GROUNDED
+  - node_id: paired_expression
+    label: Joint expression of XNR_5179 and XNR_4478
+    node_type: PROCESS
+  - node_id: acid_production
+    label: 1-deoxypentalenic acid production in engineered E. coli
+    node_type: PROCESS
+  - node_id: pena
+    label: PenA
+    node_type: ENZYME
+    identifier: UniProtKB:Q55012
+    grounding_status: GROUNDED
+  - node_id: xnr_4772
+    label: XNR_4772 predicted ferredoxin reductase
+    node_type: PROTEIN
+    identifier: NCBIProtein:AGI91094.1
+    grounding_status: GROUNDED
+  - node_id: paired_expression_4772
+    label: Joint expression of XNR_5179 and XNR_4772
+    node_type: PROCESS
+  - node_id: xnr_1673
+    label: XNR_1673 ferredoxin
+    node_type: PROTEIN
+    identifier: NCBIProtein:AGI88059.1
+    grounding_status: GROUNDED
+  - node_id: expression_1673
+    label: XNR_1673 addition to PenA/PntI
+    node_type: PROCESS
+  - node_id: paired_expression_1673_4478
+    label: Joint expression of XNR_1673 and XNR_4478
+    node_type: PROCESS
+  - node_id: paired_expression_1673_4772
+    label: Joint expression of XNR_1673 and XNR_4772
+    node_type: PROCESS
+  - node_id: xnr_4478_uniprot_example
+    label: XNR_4478 ferredoxin reductase (S. albidoflavus FRZ02_28405 UniProtKB example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:D6AZ77
+  - node_id: xnr_1673_uniprot_example
+    label: XNR_1673 ferredoxin (S. albidoflavus FRZ02_12020 UniProtKB example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:D6B5H4
+  - node_id: xnr_4772_uniprot_example
+    label: XNR_4772 predicted ferredoxin reductase (S. wadayamensis DC60_00205 UniProtKB
+      example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0ABR4S4L1
+  edges:
+  - subject: pnti
+    predicate: supports
+    object: acid_production
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 4C, PenA/PntI host.
+    - reference: https://www.uniprot.org/uniprotkb/E3VWJ1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: S. arenae TU469 PntI, 457 aa; exact sequence match to ADO85579.1 from
+        HQ292065.1:14292..15665. This unreviewed entry supplies sequence identity,
+        not the experimental activity assignment from the newer paper.
+  - subject: xnr_5179
+    predicate: is coexpressed in
+    object: paired_expression
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Table S2: J1074 gene in pLJ62.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGI91495.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: XNR_5179 encodes a 100-aa ferredoxin at complement(CP004370.1:5881185..5881487),
+        strain J1074. NCBI names this strain S. albidoflavus (taxon 1886); the paper
+        uses S. albus. Exact-locus and GenPept-cross-reference UniProt queries did
+        not resolve an accession; no homolog was substituted.
+  - subject: xnr_4478
+    predicate: is coexpressed in
+    object: paired_expression
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Table S2: J1074 gene in pLJ62.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGI90801.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: XNR_4478 encodes a 420-aa ferredoxin reductase at complement(CP004370.1:5093104..5094366),
+        strain J1074, currently S. albidoflavus in NCBI and S. albus in the paper.
+        Retained the versioned NCBI Protein accession after exact-locus and GenPept-cross-reference
+        UniProt queries returned no match.
+  - subject: paired_expression
+    predicate: increases
+    object: acid_production
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Figure 5: the pair improved yield relative to PenA/PntI alone; the authors
+        reported no significant change for individual additions.'
+  - subject: pena
+    predicate: supplies pentalenene for
+    object: acid_production
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Figures 4A and 5: the E. coli strains carry UC5319 penA; PenA is not
+        the TU469 PntA used in the Streptomyces experiment.'
+    - reference: https://www.uniprot.org/uniprotkb/Q55012
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: UC5319 PenA, 337 aa; exact sequence match to both original clone AAA19131.1/U05213.1
+        and ADO85594.1/HQ292066.1. The 1994 source names Streptomyces UC5319; the
+        cluster and 2025 paper name S. exfoliatus.
+  - subject: xnr_4772
+    predicate: is coexpressed in
+    object: paired_expression_4772
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Table S2: pLJ52 carries J1074 XNR_4772, transferred via pLJ55 to pLJ64.
+        Figure 5 and Tables S2-S4 use XNR_4772; an earlier main-text occurrence of
+        XNR_4722 is inconsistent.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGI91094.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: 395-aa XNR_4772 at CP004370.1:5424795..5425982, strain J1074. NCBI calls
+        this S. albidoflavus; the paper calls it S. albus. Exact-locus and GenPept-cross-reference
+        UniProt searches did not resolve an accession; no homolog was substituted.
+        NCBI labels it oxidoreductase; the paper selects it as a predicted FDR.
+  - subject: xnr_5179
+    predicate: is coexpressed in
+    object: paired_expression_4772
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Table S2: XNR_5179 from pLJ54 is added to pLJ55 to make pLJ64, jointly
+        expressing the two J1074 redox proteins.'
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGI91495.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: XNR_5179 encodes a 100-aa ferredoxin at complement(CP004370.1:5881185..5881487),
+        strain J1074. NCBI names this strain S. albidoflavus (taxon 1886); the paper
+        uses S. albus. Exact-locus and GenPept-cross-reference UniProt queries did
+        not resolve an accession; no homolog was substituted.
+  - subject: paired_expression_4772
+    predicate: increases
+    object: acid_production
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Figure 5 compares pLJ64 with PenA/PntI-only pLJ9. The paired condition
+        increased acid production; the authors reported no significant change for
+        individual additions. No physical complex or native partnership is demonstrated.
+  - subject: xnr_1673
+    predicate: is expressed in
+    object: expression_1673
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table S2 traces J1074 XNR_1673 from pLJ53 to pLJ56; the host contains
+        pMH1, pFZ81 and PenA/PntI.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGI88059.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: J1074 XNR_1673, 106 aa, complement(CP004370.1:1979389..1979709). NCBI
+        uses S. albidoflavus; the paper uses S. albus. UniProt query (AGI88059 OR
+        gene:XNR_1673) returned no results; the versioned NCBI accession avoids substituting
+        a homolog.
+  - subject: expression_1673
+    predicate: was tested for effects on
+    object: acid_production
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Figure 5, pLJ56 versus pLJ9: the authors reported no significant change
+        for individual additions. This is not evidence of zero effect or intrinsic
+        inactivity.'
+      snippet: no significant change in the yield of 6
+  - subject: xnr_1673
+    predicate: is coexpressed in
+    object: paired_expression_1673_4478
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Table S2: pLJ61 adds XNR_1673 from pLJ53 to pLJ10.'
+  - subject: xnr_4478
+    predicate: is coexpressed in
+    object: paired_expression_1673_4478
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: pLJ10 supplies XNR_4478 to the pLJ61 paired condition.
+  - subject: xnr_1673
+    predicate: is coexpressed in
+    object: paired_expression_1673_4772
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'Table S2: pLJ63 adds XNR_1673 from pLJ53 to pLJ55.'
+  - subject: xnr_4772
+    predicate: is coexpressed in
+    object: paired_expression_1673_4772
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: pLJ55 supplies XNR_4772 to the pLJ63 paired condition.
+  - subject: paired_expression_1673_4478
+    predicate: was tested for effects on
+    object: acid_production
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'pLJ61 versus pLJ9: main text reports unchanged yield, but Figure 5 plots
+        a higher mean. No causal null or statistical significance is inferred from
+        this discrepancy.'
+      snippet: the yield of 6 did not change
+  - subject: paired_expression_1673_4772
+    predicate: was tested for effects on
+    object: acid_production
+    evidence:
+    - reference: DOI:10.1016/j.engmic.2025.100206
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: 'pLJ63 versus pLJ9: main text reports unchanged yield, but Figure 5 plots
+        a higher mean. This edge records testing, not a demonstrated absence of an
+        effect.'
+  - subject: xnr_4478
+    predicate: has a sequence-identical UniProtKB example
+    object: xnr_4478_uniprot_example
+    notes: UniProtKB:D6AZ77 (Streptomyces albidoflavus FRZ02_28405) shares 100% amino-acid
+      sequence identity (UPI0001AEE243) with Streptomyces albus J1074 XNR_4478 (AGI90801.1).
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/D6AZ77
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Streptomyces albidoflavus UniProtKB entry (D6AZ77, FRZ02_28405)
+        for the UPI0001AEE243 ferredoxin-NADP reductase sequence.
+    - reference: https://www.uniprot.org/uniparc/UPI0001AEE243
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI0001AEE243 links CP004370.1 AGI90801.1 (XNR_4478) and active
+        Streptomyces albidoflavus UniProtKB:D6AZ77 under a single 100%-identical sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGI90801.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: CP004370.1 GenPept AGI90801.1 is the Streptomyces albus J1074 XNR_4478
+        ferredoxin reductase translation.
+  - subject: xnr_1673
+    predicate: has a sequence-identical UniProtKB example
+    object: xnr_1673_uniprot_example
+    notes: UniProtKB:D6B5H4 (Streptomyces albidoflavus FRZ02_12020) shares 100% amino-acid
+      sequence identity (UPI0001AEEB06) with Streptomyces albus J1074 XNR_1673 (AGI88059.1).
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/D6B5H4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Streptomyces albidoflavus UniProtKB entry (D6B5H4, FRZ02_12020)
+        for the UPI0001AEEB06 ferredoxin sequence.
+    - reference: https://www.uniprot.org/uniparc/UPI0001AEEB06
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI0001AEEB06 links CP004370.1 AGI88059.1 (XNR_1673) and active
+        Streptomyces albidoflavus UniProtKB:D6B5H4 under a single 100%-identical sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGI88059.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: CP004370.1 GenPept AGI88059.1 is the Streptomyces albus J1074 XNR_1673
+        ferredoxin translation.
+  - subject: xnr_4772
+    predicate: has a sequence-identical UniProtKB example
+    object: xnr_4772_uniprot_example
+    notes: UniProtKB:A0ABR4S4L1 (Streptomyces wadayamensis DC60_00205, S. albidoflavus
+      clade) shares 100% amino-acid sequence identity (UPI0001AECE6D) with Streptomyces
+      albus J1074 XNR_4772 (AGI91094.1).
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0ABR4S4L1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Streptomyces wadayamensis UniProtKB entry (A0ABR4S4L1, DC60_00205)
+        for the UPI0001AECE6D pyridine nucleotide-disulfide oxidoreductase sequence.
+    - reference: https://www.uniprot.org/uniparc/UPI0001AECE6D
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI0001AECE6D links CP004370.1 AGI91094.1 (XNR_4772) and active
+        UniProtKB:A0ABR4S4L1 under a single 100%-identical sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGI91094.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: CP004370.1 GenPept AGI91094.1 is the Streptomyces albus J1074 XNR_4772
+        translation.
+curation_history:
+- timestamp: '2026-10-18T03:34:14Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Extracted pentalenolactone-pnti-engineered-redox-support to an exact-owner
+    causal graph component to keep pentalenolactone.yaml within the 64-KiB artifact
+    limit, and added sequence-identical UniProtKB protein example nodes D6AZ77 (UPI0001AEE243),
+    D6B5H4 (UPI0001AEEB06), and A0ABR4S4L1 (UPI0001AECE6D) for J1074 redox partners
+    XNR_4478, XNR_1673, and XNR_4772.
+  llm_assisted: true

@@ -37,6 +37,16 @@ graph:
     label: FMN supplied in assay
     node_type: COMPOUND
     grounding_status: UNGROUNDED
+  - node_id: prnd_native_example
+    label: PrnD native BL915 sequence example
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P95483
+  - node_id: ssue_ecoli_example
+    label: E. coli K-12 SsuE sequence example
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P80644
   edges:
   - subject: ssue
     predicate: supported_in_assay
@@ -127,6 +137,42 @@ graph:
       evidence_type: PRIMARY_EXPERIMENT
       notes: Main Methods/Results inspected; supplement unread.
       retrieved_on: '2026-10-06'
+  - subject: prnd_native_example
+    predicate: is_native_reference_for
+    object: prnd
+    notes: UniProtKB:P95483 is the deposited native sequence reference for Reconstituted
+      study PrnD (sequence unresolved) (node 'prnd'); the experimental preparation
+      node remains review_needed because recombinant tags, host-specific processing,
+      or undeposited construct sequences are not equated with the native entry.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P95483
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Reviewed Pseudomonas fluorescens BL915 PrnD aminopyrrolnitrin oxygenase
+        (P95483, U74493.1 AAB97507.1, 363 aa); canonical native sequence reference.
+    - reference: DOI:10.1074/jbc.M505334200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary study reporting Reconstituted study PrnD (sequence unresolved)
+        (node 'prnd'); the experimental preparation is anchored to UniProtKB:P95483
+        as its native wild-type reference without equating construct and native sequences.
+  - subject: ssue_ecoli_example
+    predicate: is_native_reference_for
+    object: ssue
+    notes: UniProtKB:P80644 is the deposited native sequence reference for Study SsuE
+      preparation (sequence unresolved) (node 'ssue'); the experimental preparation
+      node remains review_needed because recombinant tags, host-specific processing,
+      or undeposited construct sequences are not equated with the native entry.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P80644
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Reviewed Escherichia coli K-12 SsuE FMN reductase (P80644, b0937, 191
+        aa); canonical E. coli K-12 sequence reference.
+    - reference: DOI:10.1074/jbc.M505334200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Primary study reporting Study SsuE preparation (sequence unresolved)
+        (node 'ssue'); the experimental preparation is anchored to UniProtKB:P80644
+        as its native wild-type reference without equating construct and native sequences.
 curation_history:
 - timestamp: '2026-10-06T18:02:53Z'
   curator: codex
@@ -143,4 +189,11 @@ curation_history:
     No endogenous partner, native-cell flux, binding, antimicrobial mechanism or full-record
     sign-off. All four prior graphs, four pathway steps, source fields/grades, stereochemistry,
     SEEDED status, AntibioticMech link and history preserved.
+  llm_assisted: true
+- timestamp: '2026-10-18T03:34:33Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added canonical UniProtKB sequence example nodes for PrnD (UniProtKB:P95483)
+    and SsuE (UniProtKB:P80644) in pyrrolnitrin-2005-ssue-assisted-oxygenation while
+    keeping the unresolved study preparations review_needed.
   llm_assisted: true
