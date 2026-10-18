@@ -5,6 +5,11 @@
 <p class="sub">{{ total }} natural product structures, one record per Standard
 InChIKey, harmonized from {{ source_count }} adopted sources.</p>
 
+<form class="hero-search" action="browse.html" method="get" role="search" aria-label="Search NaturalProductMech">
+  <input type="search" name="q" placeholder="Search {{ total }} natural products by name, ChEBI/InChIKey, synonym, producer, or pathway…" autocomplete="off">
+  <button type="submit">Search</button>
+</form>
+
 <div class="note">
 <p><strong>A producer is not an occurrence.</strong> This corpus keeps the two
 apart because most sources do not. <em>{{ stats.producer_claims }}</em> producer
@@ -13,6 +18,26 @@ claims say a taxon <em>makes</em> the compound, and only
 organism. <em>{{ stats.occurrence_records }}</em> records carry a cited
 occurrence, which says only that someone found the compound there. Nothing
 promotes one to the other.</p>
+</div>
+
+<h2>Explore maps &amp; browse</h2>
+<div class="grid">
+  <div class="card">
+    <a href="browse.html">Faceted browse</a>
+    <div class="count">Filter {{ total }} compounds by pathway, causal producer, gene cluster, or target</div>
+  </div>
+  <div class="card">
+    <a href="chemical-map.html">Structure map (2D UMAP)</a>
+    <div class="count">Chiral Morgan fingerprint Tanimoto neighborhoods</div>
+  </div>
+  <div class="card">
+    <a href="map.html">Corpus map (text PaCMAP)</a>
+    <div class="count">2D projection of curated mechanism &amp; producer descriptions</div>
+  </div>
+  <div class="card">
+    <a href="sequence-map.html">Sequence map (pLM)</a>
+    <div class="count">2D PaCMAP of ESM-2 embeddings for biosynthetic enzymes &amp; targets</div>
+  </div>
 </div>
 
 <h2>By filing pathway</h2>
@@ -35,5 +60,31 @@ record.</p>
 <tr><td class="mono">{{ name }}</td><td>{{ count }}</td></tr>
 {% endfor %}
 </table></div>
-<p class="sub">Generated {{ generated_on }}.</p>
+
+<h2 id="downloads">Downloads &amp; Schema</h2>
+<p class="sub">Machine-readable data exports, LinkML schema definitions, and embedding coordinate tables.</p>
+<div class="grid">
+  <div class="card">
+    <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/src/naturalproductmech/schema/naturalproductmech.yaml">LinkML Schema (YAML)</a>
+    <div class="count">Formal schema for natural product structures, producer claims, occurrences, BGCs, and causal graphs (<a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/src/naturalproductmech/schema/mech_shared.yaml">mech_shared.yaml</a>, <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/src/naturalproductmech/schema/history.yaml">history.yaml</a>)</div>
+  </div>
+  <div class="card">
+    <a href="https://github.com/CultureBotAI/NaturalProductMech/tree/main/data/natural_products">Curated YAML Corpus ({{ total }} records)</a>
+    <div class="count">One YAML file per Standard InChIKey organized by NPClassifier pathway</div>
+  </div>
+  <div class="card">
+    <a href="data/chemical-structure-map.json">Structure Map Coordinates (JSON)</a>
+    <div class="count">2D chiral Morgan fingerprint UMAP coordinates and k-NN neighborhoods (<a href="data/chemical-search.json">chemical-search.json</a>)</div>
+  </div>
+  <div class="card">
+    <a href="data/sequence_map.json">Protein Sequence Map (JSON)</a>
+    <div class="count">ESM-2 protein language model PaCMAP coordinates for biosynthetic enzymes &amp; molecular targets</div>
+  </div>
+  <div class="card">
+    <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/conf/sources.yaml">Adopted Sources &amp; Manifest</a>
+    <div class="count">Source provenance registry and <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/data/raw/MANIFEST.yaml">data/raw/MANIFEST.yaml</a></div>
+  </div>
+</div>
+
+<p class="sub">Generated {{ generated_on }} ({{ build_provenance | default('deterministic build') }}).</p>
 {% endblock %}

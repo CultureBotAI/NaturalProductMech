@@ -6,6 +6,7 @@
 <title>monensin — NaturalProductMech</title>
 <meta name="description" content="Individual natural product structures, one record per Standard InChIKey, with producer organisms, cited occurrences and biosynthetic gene clusters kept apart.">
 <link rel="stylesheet" href="../style.css">
+<script src="../theme-toggle.js"></script>
 </head>
 <body>
 <header class="site"><div class="wrap">
@@ -14,11 +15,20 @@
     <a href="../browse.html">Browse</a>
     <a href="../chemical-map.html">Structure map</a>
     <a href="../map.html">Corpus map</a>
+    <a href="../sequence-map.html">Sequence map</a>
+    <a href="../index.html#downloads">Downloads &amp; Schema</a>
     <a href="https://github.com/CultureBotAI/NaturalProductMech">Source</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </div></header>
 <main class="wrap">
+<div class="record-topbar">
+  <p class="sub"><a href="../browse.html">Browse</a> &middot; <a href="index.html">Polyketides</a> &middot; monensin</p>
+  <form class="record-search" action="../browse.html" method="get" role="search" aria-label="Search compounds">
+    <input type="search" name="q" placeholder="Search compounds…" autocomplete="off">
+    <button type="submit">Search</button>
+  </form>
+</div>
 <h1>monensin</h1>
 <p class="sub"><span class="mono">naturalproductmech:mibig-7822673a33</span>
   <span class="tag">MINTED</span>
@@ -99,9 +109,53 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
+<h2>Mechanism &amp; Biosynthesis Overview</h2>
+<div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
+  <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for monensin">
+    <defs>
+      <marker id="np-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M 0 1 L 10 5 L 0 9 z" fill="var(--link)"/>
+      </marker>
+    </defs>
+    <rect x="14" y="24" width="186" height="98" rx="10" fill="var(--panel)" stroke="var(--rule)"/>
+    <text x="26" y="48" font-size="11" font-weight="700" fill="var(--muted)">PRODUCERS &amp; OCCURRENCE</text>
+    <text x="26" y="70" font-size="12.5" font-weight="600" fill="var(--ink)">2 producers (0 causal)</text>
+    <text x="26" y="92" font-size="11.5" fill="var(--muted)">1 cited occurrence</text>
+    <line x1="200" y1="73" x2="228" y2="73" stroke="var(--link)" stroke-width="1.8" marker-end="url(#np-arrow)"/>
+
+    <rect x="232" y="24" width="186" height="98" rx="10" fill="var(--panel)" stroke="var(--rule)"/>
+    <text x="244" y="48" font-size="11" font-weight="700" fill="var(--muted)">BIOSYNTHETIC LOCUS</text>
+    <text x="244" y="70" font-size="12.5" font-weight="600" fill="var(--ink)">2 gene clusters</text>
+    <text x="244" y="92" font-size="11.5" fill="var(--muted)">0 curated pathway steps</text>
+    <line x1="418" y1="73" x2="446" y2="73" stroke="var(--link)" stroke-width="1.8" marker-end="url(#np-arrow)"/>
+
+    <rect x="450" y="20" width="190" height="106" rx="10" fill="var(--panel)" stroke="var(--link)" stroke-width="1.8"/>
+    <text x="462" y="45" font-size="11" font-weight="700" fill="var(--link)">NATURAL PRODUCT</text>
+    <text x="462" y="68" font-size="12.5" font-weight="700" fill="var(--ink)">monensin</text>
+    <text x="462" y="88" font-size="11" fill="var(--muted)">naturalproductmech:mibig-7822673a33</text>
+    <text x="462" y="108" font-size="11" fill="var(--muted)">Polyketides</text>
+    <line x1="640" y1="73" x2="668" y2="73" stroke="var(--link)" stroke-width="1.8" marker-end="url(#np-arrow)"/>
+
+    <rect x="672" y="24" width="174" height="98" rx="10" fill="var(--panel)" stroke="var(--rule)"/>
+    <text x="684" y="48" font-size="11" font-weight="700" fill="var(--muted)">TARGETS &amp; BIOACTIVITY</text>
+    <text x="684" y="70" font-size="12.5" font-weight="600" fill="var(--ink)">0 molecular targets</text>
+    <text x="684" y="92" font-size="11.5" fill="var(--muted)">0 bioactivities &middot; 0 graphs</text>
+  </svg>
+</div>
 
 
 
+
+
+<h2>Explore across X-Mech</h2>
+<div class="cross-mech-links">
+  <a class="tag" href="https://culturebotai.github.io/AntibioticMech/pages/browse.html?q=GAOZTHIDHYLHMS-UHFFFAOYSA-N">AntibioticMech (monensin) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/MediaIngredientMech/app/?search=naturalproductmech%3Amibig-7822673a33">MediaIngredientMech (naturalproductmech:mibig-7822673a33) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A1961">TaxonMech: Streptomyces cinnamonensis (NCBITaxon:1961) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/TaxonMech/browse.html?q=NCBITaxon%3A1961">TaxonMech: Streptomyces cinnamonensis (NCBITaxon:1961) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0000100">PathwayMech (mibig:BGC0000100) &nearr;</a>
+  <a class="tag" href="https://culturebotai.github.io/PathwayMech/browse.html?q=mibig%3ABGC0001670">PathwayMech (mibig:BGC0001670) &nearr;</a>
+</div>
 
 <h2>Open questions <span class="tag">1</span></h2>
 <div class="note"><p><strong>shared-structure</strong> — This structure is reported by more than one MIBiG entry: BGC0000100, BGC0001670. Confirm they describe the same compound rather than an upstream cross-reference error.</p></div>
@@ -117,7 +171,7 @@ isolation report left it.</p>
 committed inventories. Neither is edited by hand.</p>
 </main>
 <footer class="site"><div class="wrap">
-  <p>Generated from the committed corpus. Every page is derived; edit the
+  <p>Generated from the committed corpus (3115 records · from sources retrieved 2026-10-07 · corpus SHA-256 5f2ec7794040). Every page is derived; edit the
   record or the extractor, never the page.
   Project-authored records are <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-DATA">CC BY 4.0</a>; code is <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Upstream terms apply; see
   <a href="https://github.com/CultureBotAI/NaturalProductMech/blob/main/ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>

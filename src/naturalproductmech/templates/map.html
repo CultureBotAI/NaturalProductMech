@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block title %}Corpus map — NaturalProductMech{% endblock %}
+{% block wrapclass %} wide{% endblock %}
 {% block content %}
 <h1>Corpus map</h1>
 <p class="lede">{{ map.n }} compounds projected from their record text into two dimensions
@@ -20,28 +21,43 @@ family, activity and producer — not structurally similar. These are text embed
 what the corpus says about a compound; SMILES and InChI are deliberately excluded, because a
 sentence model reads them as noise. A chemical-similarity map is a different artifact.</p>
 
-<div id="map-controls">
-  {% for c in map.classes %}
-  <button class="pill plain legend" data-class="{{ loop.index0 }}"
-          style="--dot: var(--cls{{ loop.index0 }})" aria-pressed="true">{{ c.replace("_", " ")|lower }}</button>
-  {% endfor %}
+<div class="page-with-sidebar">
+  <aside class="facet-sidebar" aria-label="Corpus map filters">
+    <div class="facet-form">
+      <div class="facet-group">
+        <label class="facet-title" for="corpus-map-q">Search compounds</label>
+        <input id="corpus-map-q" type="search" autocomplete="off" placeholder="Compound name or pathway…">
+      </div>
+      <div class="facet-group">
+        <span class="facet-title">Filing pathways (click to toggle)</span>
+        <div id="map-controls">
+          {% for c in map.classes %}
+          <button class="pill plain legend" data-class="{{ loop.index0 }}"
+                  style="--dot: var(--cls{{ loop.index0 }})" aria-pressed="true">{{ c.replace("_", " ")|lower }}</button>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="results-main">
+    <noscript>
+      <p class="meta"><strong>The map needs JavaScript.</strong> Every compound it shows is
+      also reachable without it, from <a href="{{ root }}browse.html">Browse</a> and the
+      per-pathway pages.</p>
+    </noscript>
+    <figure>
+      <canvas id="corpus-map" width="900" height="620" role="img"
+              aria-label="Scatter plot of {{ map.n }} compounds, coloured by filing pathway."></canvas>
+      <figcaption class="meta" id="map-hover">Hover a point for its name; click to open the record.</figcaption>
+    </figure>
+    <p class="meta">The scatter is a <strong>visual aid, and mouse-driven</strong>: its points are
+    canvas pixels, not focusable links, so it is not navigable by keyboard or screen reader.
+    Nothing is only available here — every compound has a record page reachable from
+    <a href="{{ root }}browse.html">Browse</a>, and the per-pathway pages list the same records
+    in text. Said plainly rather than implied, because a scatter that is the sole route to
+    some records would be an accessibility failure rather than a limitation.</p>
+  </div>
 </div>
-<noscript>
-  <p class="meta"><strong>The map needs JavaScript.</strong> Every compound it shows is
-  also reachable without it, from <a href="{{ root }}browse.html">Browse</a> and the
-  per-pathway pages.</p>
-</noscript>
-<figure>
-  <canvas id="corpus-map" width="900" height="620" role="img"
-          aria-label="Scatter plot of {{ map.n }} compounds, coloured by filing pathway."></canvas>
-  <figcaption class="meta" id="map-hover">Hover a point for its name; click to open the record.</figcaption>
-</figure>
-<p class="meta">The scatter is a <strong>visual aid, and mouse-driven</strong>: its points are
-canvas pixels, not focusable links, so it is not navigable by keyboard or screen reader.
-Nothing is only available here — every compound has a record page reachable from
-<a href="{{ root }}browse.html">Browse</a>, and the per-pathway pages list the same records
-in text. Said plainly rather than implied, because a scatter that is the sole route to
-some records would be an accessibility failure rather than a limitation.</p>
 
 <script id="map-data" type="application/json">{{ map_json|safe }}</script>
 <script>
@@ -49,17 +65,54 @@ some records would be an accessibility failure rather than a limitation.</p>
   var data = JSON.parse(document.getElementById("map-data").textContent);
   var cv = document.getElementById("corpus-map"), cx = cv.getContext("2d");
   var hover = document.getElementById("map-hover");
+  var searchEl = document.getElementById("corpus-map-q");
   var on = data.classes.map(function () { return true; });
   var pad = 24, W = cv.width, H = cv.height;
+  if (window.location && window.location.search) {
+    var params = new URLSearchParams(window.location.search);
+    var qp = params.get("q");
+    if (searchEl && qp) searchEl.value = qp;
+    var offParam = params.get("off");
+    if (offParam) {
+      offParam.split(",").forEach(function (idx) {
+        var n = parseInt(idx, 10);
+        if (!isNaN(n) && n >= 0 && n < on.length) {
+          on[n] = false;
+          var btn = document.querySelector('#map-controls .legend[data-class="' + n + '"]');
+          if (btn) {
+            btn.setAttribute("aria-pressed", "false");
+            btn.classList.add("off");
+          }
+        }
+      });
+    }
+  }
+  function matches(p) {
+    if (!on[p[2]]) return false;
+    if (!searchEl || !searchEl.value.trim()) return true;
+    var q = searchEl.value.trim().toLowerCase();
+    var hay = (p[4] + " " + p[3] + " " + data.classes[p[2]]).toLowerCase();
+    return hay.indexOf(q) !== -1;
+  }
   function px(p) { return [pad + p[0] * (W - 2 * pad), pad + (1 - p[1]) * (H - 2 * pad)]; }
   function draw() {
     var css = getComputedStyle(document.documentElement);
     var colors = data.classes.map(function (_, i) {
       return css.getPropertyValue("--cls" + i).trim() || "#888";
     });
+    if (window.history && window.history.replaceState) {
+      var u = new URL(window.location.href);
+      if (searchEl && searchEl.value.trim()) u.searchParams.set("q", searchEl.value.trim());
+      else u.searchParams.delete("q");
+      var offList = [];
+      on.forEach(function (val, idx) { if (!val) offList.push(idx); });
+      if (offList.length) u.searchParams.set("off", offList.join(","));
+      else u.searchParams.delete("off");
+      window.history.replaceState(null, "", u);
+    }
     cx.clearRect(0, 0, W, H);
     data.points.forEach(function (p) {
-      if (!on[p[2]]) return;
+      if (!matches(p)) return;
       var q = px(p);
       cx.fillStyle = colors[p[2]];
       cx.globalAlpha = 0.72;
@@ -70,7 +123,7 @@ some records would be an accessibility failure rather than a limitation.</p>
   function nearest(mx, my) {
     var best = null, bd = 144;
     data.points.forEach(function (p) {
-      if (!on[p[2]]) return;
+      if (!matches(p)) return;
       var q = px(p), d = (q[0] - mx) * (q[0] - mx) + (q[1] - my) * (q[1] - my);
       if (d < bd) { bd = d; best = p; }
     });
@@ -97,6 +150,7 @@ some records would be an accessibility failure rather than a limitation.</p>
       draw();
     });
   });
+  if (searchEl) searchEl.addEventListener("input", draw);
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", draw);
   draw();
 })();
