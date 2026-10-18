@@ -145,6 +145,16 @@ over TrEMBL only after organism and gene agree, and a primary accession over a
 secondary one. Record a `Discussion` rather than hiding a paralog or isoform
 choice that changes the mechanism.
 
+When a causal graph node is a `GENE` locus, an `NCBIProtein:` entry whose exact
+strain deposit is unindexed or inactive in UniProtKB, an engineered/tagged/mutant
+construct (`UNGROUNDED`), or a `PROTEIN_COMPLEX` (`ComplexPortal:<id>`), keep
+that node's identity boundary intact and add a distinct `PROTEIN` or `ENZYME`
+node grounded to a verified active `UniProtKB:<accession>` connected by an
+explicit edge (`has a sequence-identical UniProtKB example`,
+`has a UniProtKB protein example`, `is the native protein reference for`, or
+`is a subunit of`). For corpus-wide review and addition of UniProtKB protein
+examples across causal graphs, see `.claude/skills/add-uniprot-protein-examples/SKILL.md`.
+
 ## Author pathways and graphs
 
 For `biosynthetic_pathway`:

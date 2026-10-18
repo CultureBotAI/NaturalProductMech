@@ -177,7 +177,7 @@ records the sha256 of every upstream file and every emitted inventory.
 
 ## Skills
 
-`.claude/skills/` carries six repository-specific workflows:
+`.claude/skills/` carries seven repository-specific workflows:
 
 - **`add-natural-product`** — prove a named compound, MIBiG entry or
   publication lead is one new structure with an asserted biological origin,
@@ -199,6 +199,10 @@ records the sha256 of every upstream file and every emitted inventory.
   participants in curated `biosynthetic_pathway`, `molecular_targets` and
   `causal_graphs` entries, with exact UniProtKB examples only where the
   evidence supports them.
+- **`add-uniprot-protein-examples`** — review records across the corpus and add
+  verified `UniProtKB:<accession>` protein examples and groundings for `GENE`,
+  `PROTEIN`, `ENZYME` and `PROTEIN_COMPLEX` elements of inline `causal_graphs`
+  and `causal_graph_refs` components.
 
 None of the skills sends messages or mutates GitHub without explicit
 authorization.

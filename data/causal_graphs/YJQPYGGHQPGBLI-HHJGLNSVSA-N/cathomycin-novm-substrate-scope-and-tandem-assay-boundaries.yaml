@@ -69,6 +69,21 @@ graph:
     label: Time-dependent intermediate and product MS readout
     node_type: PHENOTYPE
     grounding_status: UNGROUNDED
+  - node_id: novm_native
+    label: Deposited native NovM sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F5
+  - node_id: novl_native
+    label: Deposited native NovL sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F6
+  - node_id: novp_native
+    label: Deposited native NovP sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F2
   edges:
   - subject: prep
     predicate: has_bounded_negative_result
@@ -217,10 +232,91 @@ graph:
     - reference: DOI:10.1073/pnas.0403526101
       evidence_type: CURATOR_INFERENCE
       notes: Scope of inspected primary abstract.
+  - subject: novm_native
+    predicate: is_native_reference_for
+    object: prep
+    notes: UniProtKB:Q9L9F5 is the deposited native NovM sequence reference for the
+      study NovM assay preparations.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:Q9L9F5 (Deposited native
+        NovM sequence reference).
+    - reference: DOI:10.1021/bi0340088
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q9L9F5 is the deposited native NovM sequence reference for
+        the study NovM assay preparations.
+  - subject: novm_native
+    predicate: is_native_reference_for
+    object: other_prep
+    notes: UniProtKB:Q9L9F5 is the deposited native NovM sequence reference for the
+      study NovM assay preparations.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:Q9L9F5 (Deposited native
+        NovM sequence reference).
+    - reference: DOI:10.1021/bi0340088
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q9L9F5 is the deposited native NovM sequence reference for
+        the study NovM assay preparations.
+  - subject: novm_native
+    predicate: is_native_reference_for
+    object: m
+    notes: UniProtKB:Q9L9F5 is the deposited native NovM sequence reference for the
+      study NovM assay preparations.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:Q9L9F5 (Deposited native
+        NovM sequence reference).
+    - reference: DOI:10.1021/bi0340088
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q9L9F5 is the deposited native NovM sequence reference for
+        the study NovM assay preparations.
+  - subject: novl_native
+    predicate: is_native_reference_for
+    object: l
+    notes: UniProtKB:Q9L9F6 is the deposited native NovL sequence reference for the
+      Pi 2004 NovL assay preparation.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:Q9L9F6 (Deposited native
+        NovL sequence reference).
+    - reference: DOI:10.1021/bi0340088
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q9L9F6 is the deposited native NovL sequence reference for
+        the Pi 2004 NovL assay preparation.
+  - subject: novp_native
+    predicate: is_native_reference_for
+    object: p
+    notes: UniProtKB:Q9L9F2 is the deposited native NovP sequence reference for the
+      Pi 2004 NovP assay preparation.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:Q9L9F2 (Deposited native
+        NovP sequence reference).
+    - reference: DOI:10.1021/bi0340088
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q9L9F2 is the deposited native NovP sequence reference for
+        the Pi 2004 NovP assay preparation.
 curation_history:
 - timestamp: '2026-10-05T00:15:08Z'
   curator: codex
   action: RECORD_CURATED
   changes: 'Add cathomycin-novm-substrate-scope-and-tandem-assay-boundaries with source-bounded
     NovM/redox evidence and #563 findings.'
+  llm_assisted: true
+- timestamp: '2026-10-18T03:34:17Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added deposited native sequence reference node(s) (UniProtKB:Q9L9F5, UniProtKB:Q9L9F6,
+    UniProtKB:Q9L9F2) while keeping recombinant/engineered assay preparations ungrounded.
   llm_assisted: true

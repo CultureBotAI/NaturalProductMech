@@ -222,6 +222,7 @@ biosynthetic_pathway:
     notes: NCBI Protein CAG28678.1 is the 2166 aa AJ698723.2 mchA coding sequence.
       Its historical UniProtKB/TrEMBL Q50JA4 cross-reference now resolves as a deleted
       UniProtKB entry.
+  enzyme_id: NCBIProtein:CAG28678.1
 - step_number: 2
   enzyme_label: MchB nonribosomal peptide synthetase
   proposed: true
@@ -250,6 +251,7 @@ biosynthetic_pathway:
     notes: NCBI Protein CAG29031.1 is the 3057 aa AJ698723.2 mchB coding sequence.
       Its historical UniProtKB/TrEMBL Q50JA3 cross-reference now resolves as a deleted
       UniProtKB entry.
+  enzyme_id: NCBIProtein:CAG29031.1
 - step_number: 3
   enzyme_label: MchC nonribosomal peptide synthetase
   proposed: true
@@ -278,6 +280,7 @@ biosynthetic_pathway:
     notes: NCBI Protein CAG29032.1 is the 4468 aa AJ698723.2 mchC coding sequence.
       Its historical UniProtKB/TrEMBL Q50JA2 cross-reference now resolves as a deleted
       UniProtKB entry.
+  enzyme_id: NCBIProtein:CAG29032.1
 causal_graphs:
 - graph_id: myxochromide-s-mch-biosynthesis
   scope: BIOSYNTHESIS
@@ -287,15 +290,18 @@ causal_graphs:
   - node_id: mcha
     label: MchA polyketide synthase
     node_type: ENZYME
-    grounding_status: UNGROUNDED
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:CAG28678.1
   - node_id: mchb
     label: MchB nonribosomal peptide synthetase
     node_type: ENZYME
-    grounding_status: UNGROUNDED
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:CAG29031.1
   - node_id: mchc
     label: MchC nonribosomal peptide synthetase
     node_type: ENZYME
-    grounding_status: UNGROUNDED
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:CAG29032.1
   - node_id: mch_scaffold_biosynthesis
     label: myxochromide S1 PKS/NRPS scaffold biosynthesis
     node_type: PROCESS
@@ -305,6 +311,16 @@ causal_graphs:
     node_type: COMPOUND
     identifier: naturalproductmech:mibig-c2e4d35396
     grounding_status: GROUNDED
+  - node_id: mchb_uniprot_example
+    label: MchB (Stigmatella aurantiaca DW4/3-1 STAUR_1143 UniProtKB example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:E3FG12
+  - node_id: mchc_uniprot_example
+    label: MchC (Stigmatella aurantiaca DW4/3-1 bacA/STAUR_1144 UniProtKB example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:E3FG13
   edges:
   - subject: mcha
     predicate: contributes to
@@ -407,6 +423,52 @@ causal_graphs:
       notes: MIBiG BGC0001023.5 lists myxochromide S1 as the Stigmatella aurantiaca
         product, reports AJ698723.2 as the locus, and annotates CAG28678.1/mchA, CAG29031.1/mchB,
         and CAG29032.1/mchC as scaffold-biosynthesis genes.
+  - subject: mchb
+    predicate: has a sequence-identical UniProtKB example
+    object: mchb_uniprot_example
+    notes: UniProtKB:E3FG12 (Stigmatella aurantiaca DW4/3-1 STAUR_1143 / mchB) shares
+      100% amino-acid sequence identity (3057 aa, UPI000050C126) with AJ698723.2 CAG29031.1
+      (MchB).
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/E3FG12
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Stigmatella aurantiaca DW4/3-1 UniProtKB entry (E3FG12, STAUR_1143)
+        for the 3057-aa MchB NRPS sequence.
+    - reference: https://www.uniprot.org/uniparc/UPI000050C126
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI000050C126 links AJ698723.2 CAG29031.1 (mchB), deleted Q50JA3,
+        and active Stigmatella aurantiaca DW4/3-1 UniProtKB:E3FG12 under a single
+        100%-identical 3057-aa sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAG29031.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: AJ698723.2 GenPept CAG29031.1 is the 3057-aa Stigmatella aurantiaca MchB
+        coding sequence.
+  - subject: mchc
+    predicate: has a sequence-identical UniProtKB example
+    object: mchc_uniprot_example
+    notes: UniProtKB:E3FG13 (Stigmatella aurantiaca DW4/3-1 bacA / STAUR_1144 / mchC)
+      shares 100% amino-acid sequence identity (4468 aa, UPI000050C1DE) with AJ698723.2
+      CAG29032.1 (MchC).
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/E3FG13
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Stigmatella aurantiaca DW4/3-1 UniProtKB entry (E3FG13) for the
+        4468-aa MchC NRPS sequence.
+    - reference: https://www.uniprot.org/uniparc/UPI000050C1DE
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI000050C1DE links AJ698723.2 CAG29032.1 (mchC), deleted Q50JA2,
+        and active Stigmatella aurantiaca DW4/3-1 UniProtKB:E3FG13 under a single
+        100%-identical 4468-aa sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CAG29032.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: AJ698723.2 GenPept CAG29032.1 is the 4468-aa Stigmatella aurantiaca MchC
+        coding sequence.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -429,3 +491,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-18T03:34:14Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Grounded MchA, MchB, and MchC to NCBIProtein:CAG28678.1, NCBIProtein:CAG29031.1,
+    and NCBIProtein:CAG29032.1 and added 100% sequence-identical Stigmatella aurantiaca
+    DW4/3-1 UniProtKB example nodes E3FG12 (UPI000050C126) and E3FG13 (UPI000050C1DE)
+    for MchB and MchC.
+  llm_assisted: true

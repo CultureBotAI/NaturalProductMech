@@ -37,6 +37,11 @@ graph:
     label: PL CD1 feeding to delta-plaO1 cultures
     node_type: PROCESS
     grounding_status: UNGROUNDED
+  - node_id: plao1_uniprot_example
+    label: PlaO1 (Streptomyces sp. Tu6071 UniProtKB example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q2I752
   edges:
   - subject: mutation
     predicate: inactivates_encoding_gene_of
@@ -136,6 +141,27 @@ graph:
       evidence_type: PRIMARY_EXPERIMENT
       notes: Section 3.4.3.6 and Figure 39, printed pages 63-64; feeding methods section
         5.6.3, printed page 99.
+  - subject: plao1
+    predicate: has a sequence-identical UniProtKB example
+    object: plao1_uniprot_example
+    notes: UniProtKB:Q2I752 is the active Streptomyces sp. Tu6071 plaO1 entry sharing
+      100% amino-acid sequence identity (UPI000068F397) with DQ230532.1 ABB69741.1
+      (PlaO1).
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q2I752
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Streptomyces sp. Tu6071 UniProtKB entry (Q2I752, plaO1) cross-referencing
+        EMBL DQ230532.1 ABB69741.1.
+    - reference: https://www.uniprot.org/uniparc/UPI000068F397
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI000068F397 links DQ230532.1 ABB69741.1 (plaO1) and active
+        UniProtKB:Q2I752 under a single 100%-identical sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/ABB69741.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: DQ230532.1 GenPept ABB69741.1 is the Streptomyces sp. Tu6071 PlaO1 translation.
 curation_history:
 - timestamp: '2026-10-04T02:16:47Z'
   curator: codex
@@ -144,4 +170,10 @@ curation_history:
     from data/natural_products/unclassified/phenalinolactone-a.yaml at aa0e38c4ac899ca5534b4ce02318c019fc44db29.
     Prior claim curation history remains on the owning record; graph content and evidence
     are unchanged.
+  llm_assisted: true
+- timestamp: '2026-10-18T03:34:16Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added verified Streptomyces sp. Tu6071 UniProtKB:Q2I752 enzyme example
+    node (UPI000068F397) for PlaO1 (ABB69741.1) in phenalinolactone-a-plao1-genetics-and-inferred-function.
   llm_assisted: true

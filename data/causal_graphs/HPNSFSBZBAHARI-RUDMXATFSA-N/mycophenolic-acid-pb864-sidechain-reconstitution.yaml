@@ -160,6 +160,11 @@ graph:
     label: MPA-CoA hydrolysis
     node_type: PROCESS
     grounding_status: UNGROUNDED
+  - node_id: mpah_prime_native
+    label: MpaH' native NRRL864 reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A0B5LB55
   edges:
   - subject: pbacl75
     predicate: catalyzes_in_reported_assay
@@ -515,10 +520,31 @@ graph:
       evidence_type: PRIMARY_EXPERIMENT
       retrieved_on: '2026-10-12'
       notes: Main text, section2.7; Figure2 caption.
+  - subject: mpah_prime_native
+    predicate: is_native_reference_for
+    object: mpah_prime
+    notes: UniProtKB:A0A0B5LB55 is the native Penicillium brevicompactum NRRL864 MpaH'
+      reference corresponding to the 2025 Pb864 MpaH' assay node.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A0B5LB55
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:A0A0B5LB55 (MpaH' native
+        NRRL864 reference).
+    - reference: DOI:10.1002/advs.202508826
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:A0A0B5LB55 is the native Penicillium brevicompactum NRRL864
+        MpaH' reference corresponding to the 2025 Pb864 MpaH' assay node.
 curation_history:
 - timestamp: '2026-10-12T14:35:34Z'
   curator: Codex
   action: RECORD_CURATED
   changes: Add scoped side-chain protein evidence for CHEBI:168396 on baseline 0884f349d8d00a68b071512b20c2fe4ab424e2de.
     Existing graphs are preserved; not full-record sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-18T03:34:31Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added MpaH' native NRRL864 reference node (UniProtKB:A0A0B5LB55) in mycophenolic-acid-pb864-sidechain-reconstitution
+    matching sibling mycophenolic acid graphs.
   llm_assisted: true

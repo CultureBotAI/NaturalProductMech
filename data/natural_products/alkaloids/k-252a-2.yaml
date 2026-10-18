@@ -448,6 +448,26 @@ causal_graphs:
     node_type: PROTEIN_COMPLEX
     identifier: ComplexPortal:CPX-2015
     grounding_status: GROUNDED
+  - node_id: cdk4
+    label: human cyclin-dependent kinase 4 (CDK4)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P11802
+  - node_id: ccnd1
+    label: human G1/S-specific cyclin-D1 (CCND1)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P24385
+  - node_id: cdk2
+    label: human cyclin-dependent kinase 2 (CDK2)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P24941
+  - node_id: ccne1
+    label: human G1/S-specific cyclin-E1 (CCNE1)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P24864
   edges:
   - subject: k_252a
     predicate: inhibits
@@ -477,6 +497,70 @@ causal_graphs:
         versus bis-indolylmaleimides'
       notes: PubChem BioAssay AID 1795945 was deposited by BindingDB for PMID 14552792
         and reports active K-252a inhibition of human CDK2/cyclin E1.
+  - subject: cdk4
+    predicate: is a subunit of
+    object: cdk4_cyclin_d1
+    notes: ComplexPortal:CPX-2010 (human CDK4-cyclin D1 complex) lists UniProtKB:P11802
+      (human cyclin-dependent kinase 4 (CDK4)) as a constituent polypeptide subunit.
+    evidence:
+    - reference: https://www.ebi.ac.uk/complexportal/complex/CPX-2010
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: ComplexPortal CPX-2010 defines human CDK4-cyclin D1 complex with subunit
+        UniProtKB:P11802.
+    - reference: https://www.uniprot.org/uniprotkb/P11802
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Reviewed human Swiss-Prot entry UniProtKB:P11802 (human cyclin-dependent
+        kinase 4 (CDK4)).
+  - subject: ccnd1
+    predicate: is a subunit of
+    object: cdk4_cyclin_d1
+    notes: ComplexPortal:CPX-2010 (human CDK4-cyclin D1 complex) lists UniProtKB:P24385
+      (human G1/S-specific cyclin-D1 (CCND1)) as a constituent polypeptide subunit.
+    evidence:
+    - reference: https://www.ebi.ac.uk/complexportal/complex/CPX-2010
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: ComplexPortal CPX-2010 defines human CDK4-cyclin D1 complex with subunit
+        UniProtKB:P24385.
+    - reference: https://www.uniprot.org/uniprotkb/P24385
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Reviewed human Swiss-Prot entry UniProtKB:P24385 (human G1/S-specific
+        cyclin-D1 (CCND1)).
+  - subject: cdk2
+    predicate: is a subunit of
+    object: cdk2_cyclin_e1
+    notes: ComplexPortal:CPX-2015 (human CDK2-cyclin E1 complex) lists UniProtKB:P24941
+      (human cyclin-dependent kinase 2 (CDK2)) as a constituent polypeptide subunit.
+    evidence:
+    - reference: https://www.ebi.ac.uk/complexportal/complex/CPX-2015
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: ComplexPortal CPX-2015 defines human CDK2-cyclin E1 complex with subunit
+        UniProtKB:P24941.
+    - reference: https://www.uniprot.org/uniprotkb/P24941
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Reviewed human Swiss-Prot entry UniProtKB:P24941 (human cyclin-dependent
+        kinase 2 (CDK2)).
+  - subject: ccne1
+    predicate: is a subunit of
+    object: cdk2_cyclin_e1
+    notes: ComplexPortal:CPX-2015 (human CDK2-cyclin E1 complex) lists UniProtKB:P24864
+      (human G1/S-specific cyclin-E1 (CCNE1)) as a constituent polypeptide subunit.
+    evidence:
+    - reference: https://www.ebi.ac.uk/complexportal/complex/CPX-2015
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: ComplexPortal CPX-2015 defines human CDK2-cyclin E1 complex with subunit
+        UniProtKB:P24864.
+    - reference: https://www.uniprot.org/uniprotkb/P24864
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Reviewed human Swiss-Prot entry UniProtKB:P24864 (human G1/S-specific
+        cyclin-E1 (CCNE1)).
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -518,3 +602,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-18T03:34:17Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added constituent human Swiss-Prot subunit PROTEIN nodes CDK4 (UniProtKB:P11802),
+    CCND1 (UniProtKB:P24385), CDK2 (UniProtKB:P24941), and CCNE1 (UniProtKB:P24864)
+    for ComplexPortal:CPX-2010 and ComplexPortal:CPX-2015 in k-252a-cdk-cyclin-inhibition.
+  llm_assisted: true

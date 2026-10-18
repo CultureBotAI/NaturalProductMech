@@ -1,0 +1,132 @@
+record_id: naturalproductmech:mibig-d717cc8774
+standard_inchi_key: KSIZLOPUXFSFNR-XZNJZDOZSA-N
+graph:
+  graph_id: bottromycin-a2-bmb-follower-binding-assays
+  scope: BIOSYNTHESIS
+  description: 'Fluorescence-polarization binding to engineered BmbC-C8S/S43C with
+    a C-terminal His-tag extension and 6-(iodoacetamido)fluorescein label (SI Figure
+    S12). All binding proteins remain MBP-tagged. BmbB/F nodes represent excised RRE
+    domains, not assayed full-length methyltransferases; no methylation or native-substrate
+    affinity is inferred. SI p. S7: 25 nM tracer, serial protein dilution, 50 mM HEPES
+    pH 7.5, 300 mM NaCl, 2.5% glycerol, 0.5 mM TCEP, 30 min at 25 C, three independent
+    titrations.'
+  nodes:
+  - node_id: bmbc
+    label: S. bottropensis BmbC (44 aa)
+    node_type: PROTEIN
+    identifier: NCBIProtein:CCM09443.1
+    grounding_status: GROUNDED
+  - node_id: fluorescent_precursor
+    label: BmbC-C8S/S43C-His fluorescent tracer
+    node_type: PRECURSOR
+    grounding_status: UNGROUNDED
+  - node_id: bmbb_rre
+    label: MBP-BmbB RRE (492-593)
+    node_type: PROTEIN
+    identifier: NCBIProtein:CCM09442.1
+    grounding_status: GROUNDED
+  - node_id: bmbf_rre
+    label: MBP-BmbF RRE (526-670)
+    node_type: PROTEIN
+    identifier: NCBIProtein:CCM09446.1
+    grounding_status: GROUNDED
+  - node_id: bmbd
+    label: MBP-BmbD
+    node_type: ENZYME
+    identifier: UniProtKB:K0P4N8
+    grounding_status: GROUNDED
+  - node_id: bmbe
+    label: MBP-BmbE
+    node_type: ENZYME
+    identifier: UniProtKB:K0NZY4
+    grounding_status: GROUNDED
+  - node_id: bmbc_uniprot_example
+    label: BmbC / BotA (S. bottropensis UniProtKB example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:K0P8E3
+  edges:
+  - subject: bmbc
+    predicate: provides sequence for
+    object: fluorescent_precursor
+    evidence:
+    - reference: DOI:10.1021/jacs.7b09899.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: 'Engineered construct, not a biological conversion: native Met absent;
+      C8S/S43C use 43-aa assay numbering (C9S/S44C in CCM09443.1). His-tag extension
+      and fluorophore are absent from the canonical accession.'
+  - subject: bmbb_rre
+    predicate: binds
+    object: fluorescent_precursor
+    evidence:
+    - reference: DOI:10.1021/jacs.7b09899.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CCM09442.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: Canonical BmbB RRE parent.
+    notes: 'Figure S13C: Kd 876 +/- 67 nM by fluorescence polarization. SI Table S3
+      domain sequence exactly matches residues 492-593 of the 630-aa canonical protein.'
+  - subject: bmbf_rre
+    predicate: binds
+    object: fluorescent_precursor
+    evidence:
+    - reference: DOI:10.1021/jacs.7b09899.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CCM09446.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: Canonical BmbF RRE parent.
+    notes: 'Figure S13D: Kd 597 +/- 25 nM by fluorescence polarization. SI Table S3
+      domain sequence exactly matches residues 526-670 of the 670-aa canonical protein.'
+  - subject: bmbd
+    predicate: shows weak binding to
+    object: fluorescent_precursor
+    evidence:
+    - reference: DOI:10.1021/jacs.7b09899
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: DOI:10.1021/jacs.7b09899.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: Main text estimates Kd >50 uM; Figure S13A labels >=50 uM. This is a lower
+      bound, not an exact 50 uM affinity.
+  - subject: bmbe
+    predicate: shows weak binding to
+    object: fluorescent_precursor
+    evidence:
+    - reference: DOI:10.1021/jacs.7b09899
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: DOI:10.1021/jacs.7b09899.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: Main text estimates Kd >50 uM; Figure S13B labels >=50 uM. This is a lower
+      bound, not a no-binding claim.
+  - subject: bmbc
+    predicate: has a sequence-identical UniProtKB example
+    object: bmbc_uniprot_example
+    notes: UniProtKB:K0P8E3 (Streptomyces bottropensis botA / QBA35_11730) shares
+      100% amino-acid sequence identity (44 aa, UPI0001B7FB89) with Streptomyces bottropensis
+      BmbC (CCM09443.1).
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/K0P8E3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Streptomyces bottropensis UniProtKB entry (K0P8E3) for the 44-aa
+        bottromycin precursor peptide.
+    - reference: https://www.uniprot.org/uniparc/UPI0001B7FB89
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI0001B7FB89 links EMBL CCM09443.1 (bmbC) and active Streptomyces
+        bottropensis UniProtKB:K0P8E3 under a single 100%-identical 44-aa sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CCM09443.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: EMBL/GenPept CCM09443.1 is the 44-aa Streptomyces bottropensis BmbC precursor
+        peptide.
+curation_history:
+- timestamp: '2026-10-18T03:34:13Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Extracted bottromycin-a2-bmb-follower-binding-assays to an exact-owner
+    causal graph component to keep bottromycin-a2-2.yaml within the 64-KiB artifact
+    limit, and added sequence-identical Streptomyces bottropensis UniProtKB:K0P8E3
+    protein example node (UPI0001B7FB89) for BmbC (CCM09443.1).
+  llm_assisted: true

@@ -95,7 +95,7 @@ Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
 
-<h2>Causal graph &mdash; biosynthesis <span class="tag">13 nodes, 12 edges</span></h2>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">15 nodes, 14 edges</span></h2>
 <p class="sub">Partial map of twelve native protein references explicitly annotated for nataxazole biosynthesis in GenBank LN713864.1, not a reconstructed sequence of experimentally demonstrated reactions. NatAM and NatL2 are grounded to exact UniProt/native sequences and checked against independent PDB deposits; the other ten references use verified GenPept identifiers without substituting homologs. All participation edges are database assertions, and NatAC2 remains proposed. The core-cluster association does not establish conversion to the exact final methyl ester: no nataxazole product endpoint, producer upgrade or complete-pathway claim is added. Native regulatory and transport candidates remain outside this core-protein mechanism; the functionless NatX annotation is not promoted.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
@@ -222,10 +222,32 @@ isolation report left it.</p>
 </li></ul>
 </details></td>
 </tr>
+<tr>
+  <td>natS reference protein (Tu 6176)</td>
+  <td>has a sequence-identical UniProtKB example</td>
+  <td>natS (Streptomyces sp. Tu 6176 UniProtKB example)</td>
+  <td>UniProtKB:A0A022MLV4 is the active Streptomyces sp. Tu 6176 natS entry sharing 100% amino-acid sequence identity (UPI000369AEC3) with LN849795.1 CEK42824.1.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0A022MLV4<br>https://www.uniprot.org/uniparc/UPI000369AEC3<br>https://www.ncbi.nlm.nih.gov/protein/CEK42824.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A022MLV4</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>Active Streptomyces sp. Tu 6176 UniProtKB entry (A0A022MLV4, natS) for the UPI000369AEC3 sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI000369AEC3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>UniParc UPI000369AEC3 links LN849795.1 CEK42824.1 (natS) and active UniProtKB:A0A022MLV4 under a single 100%-identical sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/CEK42824.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>LN849795.1 CEK42824.1 is the Streptomyces sp. Tu 6176 natS coding sequence.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>natAC2 reference protein (Tu 6176)</td>
+  <td>has a sequence-identical UniProtKB example</td>
+  <td>natAC2 (S. olivoverticillatus Tu 6074 UniProtKB example)</td>
+  <td>UniProtKB:A0ABV8TEK9 (Streptomyces olivoverticillatus Tu 6074) shares 100% amino-acid sequence identity (UPI0003645395) with Streptomyces sp. Tu 6176 natAC2 (CEK42831.1).</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0ABV8TEK9<br>https://www.uniprot.org/uniparc/UPI0003645395<br>https://www.ncbi.nlm.nih.gov/protein/CEK42831.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0ABV8TEK9</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>Active Streptomyces olivoverticillatus Tu 6074 UniProtKB entry (A0ABV8TEK9) for the UPI0003645395 acyl carrier protein sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI0003645395</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>UniParc UPI0003645395 links LN849795.1 CEK42831.1 (natAC2) and active UniProtKB:A0ABV8TEK9 under a single 100%-identical sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/CEK42831.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>LN849795.1 CEK42831.1 is the Streptomyces sp. Tu 6176 natAC2 coding sequence.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
-<h2>Causal graph &mdash; biosynthesis <span class="tag">9 nodes, 8 edges</span></h2>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">13 nodes, 12 edges</span></h2>
 <p class="sub">Native cluster-associated regulation and proposed transport, separate from the core biosynthesis-protein map. Eight versioned GenPept references are supported by explicit LN713864.1 annotations and exact native DNA/protein sequence checks. All edges are database assertions: NatR1-4 are annotated regulators without an adopted regulatory sign or direct target, and NatT1-4 remain proposed transporters without a demonstrated substrate or direction. The common process groups source-associated roles; it is not a physical complex, ordered reaction sequence or proof that these proteins produce or export the exact final nataxazole methyl ester. No bioactivity target or self-resistance mechanism is asserted. Versioned native identifiers are used without substituting homologs or unaudited UniProt accessions.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
@@ -305,6 +327,50 @@ by the corpus tests.</p>
   <td>No individual essentiality, complete pathway, final-product sufficiency, producer-grade upgrade or physical protein complex is asserted. Transport involvement remains proposed, as in the source. No import or export direction, transported chemical form, flux, ATP dependence in this pathway, or self-resistance phenotype is established here. The deposited &#34;Drug resistance transporter&#34; product name is not a demonstrated nataxazole-resistance result or a compound target. See curator-nataxazole-regulation-and-transport-scope for the unresolved mechanism.</td>
   <td><details class="graph-evidence"><summary class="mono">https://www.ncbi.nlm.nih.gov/nuccore/LN713864.1<br>https://www.ncbi.nlm.nih.gov/protein/CEK42829.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/LN713864.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>Proposed nataxazole transporter</dd><dt>notes</dt><dd>The deposited CDS explicitly carries this function qualifier; the association is not inferred from gene neighborhood alone. This is a database annotation, not a direct functional experiment. LN713864.1 cites PMID:25892546; its full paper and supplements were not inspected.</dd></dl>
 </li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/CEK42829.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-11</dd><dt>snippet</dt><dd>Drug resistance transporter, EmrB/QacA-family transporter</dd><dt>notes</dt><dd>GenPept CEK42829.1, natT4, 515 aa, coded by LN713864.1:35535..37082; native Streptomyces sp. Tu 6176, taxon 1470557. The independent GenPept sequence, native CDS annotation and genetic-code-11 DNA translation agree exactly. Gene, product and function qualifiers also match. The accession identifies the native reference, not an unspecified overexpression plasmid, tagged construct or homolog.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>natR2 reference protein (Tu 6176)</td>
+  <td>has a sequence-identical UniProtKB example</td>
+  <td>natR2 (S. olivoverticillatus Tu 6074 UniProtKB example)</td>
+  <td>UniProtKB:A0ABV8TEJ6 (Streptomyces olivoverticillatus Tu 6074) shares 100% amino-acid sequence identity (UPI0003661C80) with Streptomyces sp. Tu 6176 natR2 (CEK42815.1).</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0ABV8TEJ6<br>https://www.uniprot.org/uniparc/UPI0003661C80<br>https://www.ncbi.nlm.nih.gov/protein/CEK42815.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0ABV8TEJ6</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>Active Streptomyces olivoverticillatus Tu 6074 UniProtKB entry (A0ABV8TEJ6) for the UPI0003661C80 sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI0003661C80</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>UniParc UPI0003661C80 links LN849795.1 CEK42815.1 (natR2) and active UniProtKB:A0ABV8TEJ6 under a single 100%-identical sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/CEK42815.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>LN849795.1 CEK42815.1 is the Streptomyces sp. Tu 6176 natR2 coding sequence.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>natR3 reference protein (Tu 6176)</td>
+  <td>has a sequence-identical UniProtKB example</td>
+  <td>natR3 (S. olivoverticillatus Tu 6074 UniProtKB example)</td>
+  <td>UniProtKB:A0ABV8TFE0 (Streptomyces olivoverticillatus Tu 6074) shares 100% amino-acid sequence identity (UPI00036EBE62) with Streptomyces sp. Tu 6176 natR3 (CEK42828.1).</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0ABV8TFE0<br>https://www.uniprot.org/uniparc/UPI00036EBE62<br>https://www.ncbi.nlm.nih.gov/protein/CEK42828.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0ABV8TFE0</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>Active Streptomyces olivoverticillatus Tu 6074 UniProtKB entry (A0ABV8TFE0) for the UPI00036EBE62 sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI00036EBE62</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>UniParc UPI00036EBE62 links LN849795.1 CEK42828.1 (natR3) and active UniProtKB:A0ABV8TFE0 under a single 100%-identical sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/CEK42828.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>LN849795.1 CEK42828.1 is the Streptomyces sp. Tu 6176 natR3 coding sequence.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>natT1 reference protein (Tu 6176)</td>
+  <td>has a sequence-identical UniProtKB example</td>
+  <td>natT1 (S. olivoverticillatus Tu 6074 UniProtKB example)</td>
+  <td>UniProtKB:A0ABV8TFC5 (Streptomyces olivoverticillatus Tu 6074) shares 100% amino-acid sequence identity (UPI0004478404) with Streptomyces sp. Tu 6176 natT1 (CEK42812.1).</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0ABV8TFC5<br>https://www.uniprot.org/uniparc/UPI0004478404<br>https://www.ncbi.nlm.nih.gov/protein/CEK42812.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0ABV8TFC5</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>Active Streptomyces olivoverticillatus Tu 6074 UniProtKB entry (A0ABV8TFC5) for the UPI0004478404 sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI0004478404</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>UniParc UPI0004478404 links LN849795.1 CEK42812.1 (natT1) and active UniProtKB:A0ABV8TFC5 under a single 100%-identical sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/CEK42812.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>LN849795.1 CEK42812.1 is the Streptomyces sp. Tu 6176 natT1 coding sequence.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>natT4 reference protein (Tu 6176)</td>
+  <td>has a sequence-identical UniProtKB example</td>
+  <td>natT4 (S. olivoverticillatus Tu 6074 UniProtKB example)</td>
+  <td>UniProtKB:A0ABV8TEP5 (Streptomyces olivoverticillatus Tu 6074) shares 100% amino-acid sequence identity (UPI0004505055) with Streptomyces sp. Tu 6176 natT4 (CEK42829.1).</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0ABV8TEP5<br>https://www.uniprot.org/uniparc/UPI0004505055<br>https://www.ncbi.nlm.nih.gov/protein/CEK42829.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0ABV8TEP5</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>Active Streptomyces olivoverticillatus Tu 6074 UniProtKB entry (A0ABV8TEP5) for the UPI0004505055 sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI0004505055</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>UniParc UPI0004505055 links LN849795.1 CEK42829.1 (natT4) and active UniProtKB:A0ABV8TEP5 under a single 100%-identical sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/CEK42829.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>LN849795.1 CEK42829.1 is the Streptomyces sp. Tu 6176 natT4 coding sequence.</dd></dl>
 </li></ul>
 </details></td>
 </tr>

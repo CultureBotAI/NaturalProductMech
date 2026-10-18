@@ -94,6 +94,11 @@ graph:
     label: S6 methyl drawing versus 8-allyl product label
     node_type: OTHER
     grounding_status: REVIEW_NEEDED
+  - node_id: native
+    label: Deposited native CouO sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8T9
   edges:
   - subject: substrate
     predicate: is_acceptor_in
@@ -531,10 +536,31 @@ graph:
     - reference: DOI:10.1371/journal.pone.0171056.s008
       evidence_type: PRIMARY_EXPERIMENT
       notes: S1 File, Figure L, PDF p.12.
+  - subject: native
+    predicate: is_native_reference_for
+    object: wt
+    notes: UniProtKB:Q9F8T9 is the deposited native CouO sequence reference for the
+      Pavkov-Keller CouO-WT protein in cleared lysate.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8T9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:Q9F8T9 (Deposited native
+        CouO sequence reference).
+    - reference: DOI:10.1371/journal.pone.0171056
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q9F8T9 is the deposited native CouO sequence reference for
+        the Pavkov-Keller CouO-WT protein in cleared lysate.
 curation_history:
 - timestamp: '2026-10-04T19:54:53Z'
   curator: codex
   action: RECORD_CURATED
   changes: 'Add coumermycin-a1-couo-lysate-normalization-and-mutant-endpoint-limits
     with bounded primary CouO evidence and review #556 limits.'
+  llm_assisted: true
+- timestamp: '2026-10-18T03:34:28Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added deposited native CouO sequence reference node (UniProtKB:Q9F8T9)
+    in coumermycin-a1-couo-lysate-normalization-and-mutant-endpoint-limits.
   llm_assisted: true

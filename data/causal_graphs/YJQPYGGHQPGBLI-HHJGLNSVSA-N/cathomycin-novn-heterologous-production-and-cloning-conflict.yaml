@@ -54,6 +54,11 @@ graph:
     label: Reported clorobiocin-mutant negative with data not shown
     node_type: PHENOTYPE
     grounding_status: UNGROUNDED
+  - node_id: native
+    label: Deposited native NovN sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F4
   edges:
   - subject: gene
     predicate: was_cloned_into
@@ -176,10 +181,31 @@ graph:
     - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
       evidence_type: PRIMARY_EXPERIMENT
       notes: Xu 2004 primary dissertation; Results/discussion, PDF pp.85,98-102.
+  - subject: native
+    predicate: is_native_reference_for
+    object: protein
+    notes: UniProtKB:Q9L9F4 is the deposited native NovN sequence reference for the
+      pXHN-expressed NovN in the couN3-mutant host.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:Q9L9F4 (Deposited native
+        NovN sequence reference).
+    - reference: https://tobias-lib.uni-tuebingen.de/xmlui/bitstream/handle/10900/48601/pdf/Dissertation-endvision.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q9L9F4 is the deposited native NovN sequence reference for
+        the pXHN-expressed NovN in the couN3-mutant host.
 curation_history:
 - timestamp: '2026-10-04T22:05:23Z'
   curator: codex
   action: RECORD_CURATED
   changes: 'Add cathomycin-novn-heterologous-production-and-cloning-conflict with
     source-checked NovN evidence and review #560 limits.'
+  llm_assisted: true
+- timestamp: '2026-10-18T03:34:17Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added deposited native sequence reference node(s) (UniProtKB:Q9L9F4) while
+    keeping recombinant/engineered assay preparations ungrounded.
   llm_assisted: true

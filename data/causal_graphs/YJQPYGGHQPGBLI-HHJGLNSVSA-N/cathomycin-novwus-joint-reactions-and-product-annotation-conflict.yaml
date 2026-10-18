@@ -64,6 +64,21 @@ graph:
     label: Abstract-level preparation and reaction limits
     node_type: OTHER
     grounding_status: UNGROUNDED
+  - node_id: novw_native
+    label: Deposited native NovW sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9E5
+  - node_id: novu_native
+    label: Deposited native NovU sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9E7
+  - node_id: novs_native
+    label: Deposited native NovS sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9E9
   edges:
   - subject: host
     predicate: expressed
@@ -240,6 +255,51 @@ graph:
     - reference: DOI:10.1016/j.abb.2005.01.012
       evidence_type: CURATOR_INFERENCE
       notes: Boundary of independently inspected abstract.
+  - subject: novw_native
+    predicate: is_native_reference_for
+    object: w
+    notes: UniProtKB:Q9L9E5 is the deposited native NovW sequence reference for the
+      Thuy 2005 NovW assay preparation.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9E5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:Q9L9E5 (Deposited native
+        NovW sequence reference).
+    - reference: DOI:10.1016/j.abb.2005.01.012
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q9L9E5 is the deposited native NovW sequence reference for
+        the Thuy 2005 NovW assay preparation.
+  - subject: novu_native
+    predicate: is_native_reference_for
+    object: u
+    notes: UniProtKB:Q9L9E7 is the deposited native NovU sequence reference for the
+      Thuy 2005 NovU assay preparation.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9E7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:Q9L9E7 (Deposited native
+        NovU sequence reference).
+    - reference: DOI:10.1016/j.abb.2005.01.012
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q9L9E7 is the deposited native NovU sequence reference for
+        the Thuy 2005 NovU assay preparation.
+  - subject: novs_native
+    predicate: is_native_reference_for
+    object: s
+    notes: UniProtKB:Q9L9E9 is the deposited native NovS sequence reference for the
+      Thuy 2005 NovS assay preparation.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9E9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:Q9L9E9 (Deposited native
+        NovS sequence reference).
+    - reference: DOI:10.1016/j.abb.2005.01.012
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q9L9E9 is the deposited native NovS sequence reference for
+        the Thuy 2005 NovS assay preparation.
   description: 'Primary abstract-level NovW/NovU/NovS reactions, with unresolved product
     nomenclature and pathway order. Review #564. The BGC0000834 owner retains its
     unspecified sugar stereocentre and SEEDED status; precursor evidence does not
@@ -250,4 +310,10 @@ curation_history:
   action: RECORD_CURATED
   changes: 'Add cathomycin-novwus-joint-reactions-and-product-annotation-conflict
     with source-bounded NovW/NovU/NovS evidence and #564 findings.'
+  llm_assisted: true
+- timestamp: '2026-10-18T03:34:18Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added deposited native sequence reference node(s) (UniProtKB:Q9L9E5, UniProtKB:Q9L9E7,
+    UniProtKB:Q9L9E9) while keeping recombinant/engineered assay preparations ungrounded.
   llm_assisted: true

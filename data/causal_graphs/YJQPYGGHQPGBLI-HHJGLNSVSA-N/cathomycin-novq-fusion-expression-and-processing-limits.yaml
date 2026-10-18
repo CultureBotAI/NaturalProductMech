@@ -65,6 +65,11 @@ graph:
     label: Supplementary IPTG and temperature comparisons
     node_type: PROCESS
     grounding_status: UNGROUNDED
+  - node_id: native
+    label: Deposited native NovQ sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F1
   edges:
   - subject: his
     predicate: was_tested_in
@@ -198,10 +203,91 @@ graph:
     - reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs00449-018-2050-9/MediaObjects/449_2018_2050_MOESM1_ESM.doc
       evidence_type: PRIMARY_EXPERIMENT
       notes: Figure S2 panels a/b and caption.
+  - subject: native
+    predicate: is_native_reference_for
+    object: his
+    notes: UniProtKB:Q9L9F1 is the deposited native NovQ sequence reference; the study
+      His6, TrxA, GST, MBP, and TEV-processed fusion preparations remain ungrounded.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:Q9L9F1 (Deposited native
+        NovQ sequence reference).
+    - reference: DOI:10.1007/s00449-018-2050-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q9L9F1 is the deposited native NovQ sequence reference; the
+        study His6, TrxA, GST, MBP, and TEV-processed fusion preparations remain ungrounded.
+  - subject: native
+    predicate: is_native_reference_for
+    object: trx
+    notes: UniProtKB:Q9L9F1 is the deposited native NovQ sequence reference; the study
+      His6, TrxA, GST, MBP, and TEV-processed fusion preparations remain ungrounded.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:Q9L9F1 (Deposited native
+        NovQ sequence reference).
+    - reference: DOI:10.1007/s00449-018-2050-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q9L9F1 is the deposited native NovQ sequence reference; the
+        study His6, TrxA, GST, MBP, and TEV-processed fusion preparations remain ungrounded.
+  - subject: native
+    predicate: is_native_reference_for
+    object: gst
+    notes: UniProtKB:Q9L9F1 is the deposited native NovQ sequence reference; the study
+      His6, TrxA, GST, MBP, and TEV-processed fusion preparations remain ungrounded.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:Q9L9F1 (Deposited native
+        NovQ sequence reference).
+    - reference: DOI:10.1007/s00449-018-2050-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q9L9F1 is the deposited native NovQ sequence reference; the
+        study His6, TrxA, GST, MBP, and TEV-processed fusion preparations remain ungrounded.
+  - subject: native
+    predicate: is_native_reference_for
+    object: mbp
+    notes: UniProtKB:Q9L9F1 is the deposited native NovQ sequence reference; the study
+      His6, TrxA, GST, MBP, and TEV-processed fusion preparations remain ungrounded.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:Q9L9F1 (Deposited native
+        NovQ sequence reference).
+    - reference: DOI:10.1007/s00449-018-2050-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q9L9F1 is the deposited native NovQ sequence reference; the
+        study His6, TrxA, GST, MBP, and TEV-processed fusion preparations remain ungrounded.
+  - subject: native
+    predicate: is_native_reference_for
+    object: cleaved
+    notes: UniProtKB:Q9L9F1 is the deposited native NovQ sequence reference; the study
+      His6, TrxA, GST, MBP, and TEV-processed fusion preparations remain ungrounded.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:Q9L9F1 (Deposited native
+        NovQ sequence reference).
+    - reference: DOI:10.1007/s00449-018-2050-9
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q9L9F1 is the deposited native NovQ sequence reference; the
+        study His6, TrxA, GST, MBP, and TEV-processed fusion preparations remain ungrounded.
 curation_history:
 - timestamp: '2026-10-04T18:21:51Z'
   curator: codex
   action: RECORD_CURATED
   changes: Add cathomycin-novq-fusion-expression-and-processing-limits with native
     identity, source conflicts and bounded engineered-preparation evidence (#554).
+  llm_assisted: true
+- timestamp: '2026-10-18T03:34:17Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added deposited native sequence reference node(s) (UniProtKB:Q9L9F1) while
+    keeping recombinant/engineered assay preparations ungrounded.
   llm_assisted: true

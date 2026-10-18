@@ -175,6 +175,16 @@ causal_graphs:
     label: nataxazole-associated core biosynthesis (partial, source-annotated)
     node_type: PROCESS
     grounding_status: UNGROUNDED
+  - node_id: nats_uniprot_example
+    label: natS (Streptomyces sp. Tu 6176 UniProtKB example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A022MLV4
+  - node_id: natac2_uniprot_example
+    label: natAC2 (S. olivoverticillatus Tu 6074 UniProtKB example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0ABV8TEK9
   edges:
   - subject: natp
     predicate: is annotated to participate in
@@ -526,6 +536,47 @@ causal_graphs:
       engineered construct. NatAC2 remains explicitly proposed in the source. See
       curator-nataxazole-reaction-and-product-scope for the final-product and mechanism
       limits.
+  - subject: nats
+    predicate: has a sequence-identical UniProtKB example
+    object: nats_uniprot_example
+    notes: UniProtKB:A0A022MLV4 is the active Streptomyces sp. Tu 6176 natS entry
+      sharing 100% amino-acid sequence identity (UPI000369AEC3) with LN849795.1 CEK42824.1.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A022MLV4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Streptomyces sp. Tu 6176 UniProtKB entry (A0A022MLV4, natS) for
+        the UPI000369AEC3 sequence.
+    - reference: https://www.uniprot.org/uniparc/UPI000369AEC3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI000369AEC3 links LN849795.1 CEK42824.1 (natS) and active UniProtKB:A0A022MLV4
+        under a single 100%-identical sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42824.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: LN849795.1 CEK42824.1 is the Streptomyces sp. Tu 6176 natS coding sequence.
+  - subject: natac2
+    predicate: has a sequence-identical UniProtKB example
+    object: natac2_uniprot_example
+    notes: UniProtKB:A0ABV8TEK9 (Streptomyces olivoverticillatus Tu 6074) shares 100%
+      amino-acid sequence identity (UPI0003645395) with Streptomyces sp. Tu 6176 natAC2
+      (CEK42831.1).
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0ABV8TEK9
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Streptomyces olivoverticillatus Tu 6074 UniProtKB entry (A0ABV8TEK9)
+        for the UPI0003645395 acyl carrier protein sequence.
+    - reference: https://www.uniprot.org/uniparc/UPI0003645395
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI0003645395 links LN849795.1 CEK42831.1 (natAC2) and active
+        UniProtKB:A0ABV8TEK9 under a single 100%-identical sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42831.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: LN849795.1 CEK42831.1 is the Streptomyces sp. Tu 6176 natAC2 coding sequence.
 - graph_id: nataxazole-native-regulation-and-transport
   scope: BIOSYNTHESIS
   description: 'Native cluster-associated regulation and proposed transport, separate
@@ -583,6 +634,26 @@ causal_graphs:
     label: nataxazole-associated biosynthetic system (source-annotated, partial)
     node_type: PROCESS
     grounding_status: UNGROUNDED
+  - node_id: natr2_uniprot_example
+    label: natR2 (S. olivoverticillatus Tu 6074 UniProtKB example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0ABV8TEJ6
+  - node_id: natr3_uniprot_example
+    label: natR3 (S. olivoverticillatus Tu 6074 UniProtKB example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0ABV8TFE0
+  - node_id: natt1_uniprot_example
+    label: natT1 (S. olivoverticillatus Tu 6074 UniProtKB example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0ABV8TFC5
+  - node_id: natt4_uniprot_example
+    label: natT4 (S. olivoverticillatus Tu 6074 UniProtKB example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0ABV8TEP5
   edges:
   - subject: natr1
     predicate: has an annotated regulatory role in
@@ -806,6 +877,90 @@ causal_graphs:
       is established here. The deposited "Drug resistance transporter" product name
       is not a demonstrated nataxazole-resistance result or a compound target. See
       curator-nataxazole-regulation-and-transport-scope for the unresolved mechanism.
+  - subject: natr2
+    predicate: has a sequence-identical UniProtKB example
+    object: natr2_uniprot_example
+    notes: UniProtKB:A0ABV8TEJ6 (Streptomyces olivoverticillatus Tu 6074) shares 100%
+      amino-acid sequence identity (UPI0003661C80) with Streptomyces sp. Tu 6176 natR2
+      (CEK42815.1).
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0ABV8TEJ6
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Streptomyces olivoverticillatus Tu 6074 UniProtKB entry (A0ABV8TEJ6)
+        for the UPI0003661C80 sequence.
+    - reference: https://www.uniprot.org/uniparc/UPI0003661C80
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI0003661C80 links LN849795.1 CEK42815.1 (natR2) and active
+        UniProtKB:A0ABV8TEJ6 under a single 100%-identical sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42815.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: LN849795.1 CEK42815.1 is the Streptomyces sp. Tu 6176 natR2 coding sequence.
+  - subject: natr3
+    predicate: has a sequence-identical UniProtKB example
+    object: natr3_uniprot_example
+    notes: UniProtKB:A0ABV8TFE0 (Streptomyces olivoverticillatus Tu 6074) shares 100%
+      amino-acid sequence identity (UPI00036EBE62) with Streptomyces sp. Tu 6176 natR3
+      (CEK42828.1).
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0ABV8TFE0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Streptomyces olivoverticillatus Tu 6074 UniProtKB entry (A0ABV8TFE0)
+        for the UPI00036EBE62 sequence.
+    - reference: https://www.uniprot.org/uniparc/UPI00036EBE62
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI00036EBE62 links LN849795.1 CEK42828.1 (natR3) and active
+        UniProtKB:A0ABV8TFE0 under a single 100%-identical sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42828.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: LN849795.1 CEK42828.1 is the Streptomyces sp. Tu 6176 natR3 coding sequence.
+  - subject: natt1
+    predicate: has a sequence-identical UniProtKB example
+    object: natt1_uniprot_example
+    notes: UniProtKB:A0ABV8TFC5 (Streptomyces olivoverticillatus Tu 6074) shares 100%
+      amino-acid sequence identity (UPI0004478404) with Streptomyces sp. Tu 6176 natT1
+      (CEK42812.1).
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0ABV8TFC5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Streptomyces olivoverticillatus Tu 6074 UniProtKB entry (A0ABV8TFC5)
+        for the UPI0004478404 sequence.
+    - reference: https://www.uniprot.org/uniparc/UPI0004478404
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI0004478404 links LN849795.1 CEK42812.1 (natT1) and active
+        UniProtKB:A0ABV8TFC5 under a single 100%-identical sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42812.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: LN849795.1 CEK42812.1 is the Streptomyces sp. Tu 6176 natT1 coding sequence.
+  - subject: natt4
+    predicate: has a sequence-identical UniProtKB example
+    object: natt4_uniprot_example
+    notes: UniProtKB:A0ABV8TEP5 (Streptomyces olivoverticillatus Tu 6074) shares 100%
+      amino-acid sequence identity (UPI0004505055) with Streptomyces sp. Tu 6176 natT4
+      (CEK42829.1).
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0ABV8TEP5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Streptomyces olivoverticillatus Tu 6074 UniProtKB entry (A0ABV8TEP5)
+        for the UPI0004505055 sequence.
+    - reference: https://www.uniprot.org/uniparc/UPI0004505055
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI0004505055 links LN849795.1 CEK42829.1 (natT4) and active
+        UniProtKB:A0ABV8TEP5 under a single 100%-identical sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CEK42829.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: LN849795.1 CEK42829.1 is the Streptomyces sp. Tu 6176 natT4 coding sequence.
 discussions:
 - discussion_id: curator-nataxazole-reaction-and-product-scope
   kind: CURATION_TODO
@@ -922,4 +1077,11 @@ curation_history:
   changes: Clarified the new graph description to call the preserved annotation-only
     core graph a biosynthesis-protein map, not a catalytic-protein map. No protein,
     identifier, edge, evidence or existing graph changed.
+  llm_assisted: true
+- timestamp: '2026-10-18T03:34:15Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added sequence-identical UniProtKB protein example nodes for natS (A0A022MLV4),
+    natAC2 (A0ABV8TEK9), natR2 (A0ABV8TEJ6), natR3 (A0ABV8TFE0), natT1 (A0ABV8TFC5),
+    and natT4 (A0ABV8TEP5) via UniParc.
   llm_assisted: true

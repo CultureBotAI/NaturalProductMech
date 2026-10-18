@@ -37,6 +37,16 @@ graph:
     label: FMN supplied in assay
     node_type: COMPOUND
     grounding_status: UNGROUNDED
+  - node_id: prnd_native_example
+    label: PrnD native BL915 sequence example
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P95483
+  - node_id: ssue_ecoli_example
+    label: E. coli K-12 SsuE sequence example
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:P80644
   edges:
   - subject: ssue
     predicate: supported_in_assay
@@ -127,6 +137,40 @@ graph:
       evidence_type: PRIMARY_EXPERIMENT
       notes: Main Methods/Results inspected; supplement unread.
       retrieved_on: '2026-10-06'
+  - subject: prnd_native_example
+    predicate: is_native_reference_for
+    object: prnd
+    notes: UniProtKB:P95483 (Pseudomonas fluorescens BL915 PrnD) is the canonical
+      native PrnD sequence example; the 2005 reconstituted study PrnD preparation
+      remains review_needed because the exact expression construct sequence is not
+      deposited.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P95483
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:P95483 (PrnD native BL915
+        sequence example).
+    - reference: DOI:10.1074/jbc.M505334200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:P95483 (Pseudomonas fluorescens BL915 PrnD) is the canonical
+        native PrnD sequence example; the 2005 reconstituted study PrnD preparation
+        remains review_needed because the exact expression construct sequence is not
+        deposited.
+  - subject: ssue_ecoli_example
+    predicate: is_native_reference_for
+    object: ssue
+    notes: UniProtKB:P80644 (Escherichia coli K-12 SsuE FMN reductase) is the canonical
+      E. coli SsuE sequence example; the 2005 study SsuE preparation remains review_needed.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/P80644
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:P80644 (E. coli K-12 SsuE
+        sequence example).
+    - reference: DOI:10.1074/jbc.M505334200
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:P80644 (Escherichia coli K-12 SsuE FMN reductase) is the canonical
+        E. coli SsuE sequence example; the 2005 study SsuE preparation remains review_needed.
 curation_history:
 - timestamp: '2026-10-06T18:02:53Z'
   curator: codex
@@ -143,4 +187,11 @@ curation_history:
     No endogenous partner, native-cell flux, binding, antimicrobial mechanism or full-record
     sign-off. All four prior graphs, four pathway steps, source fields/grades, stereochemistry,
     SEEDED status, AntibioticMech link and history preserved.
+  llm_assisted: true
+- timestamp: '2026-10-18T03:34:33Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added canonical UniProtKB sequence example nodes for PrnD (UniProtKB:P95483)
+    and SsuE (UniProtKB:P80644) in pyrrolnitrin-2005-ssue-assisted-oxygenation while
+    keeping the unresolved study preparations review_needed.
   llm_assisted: true

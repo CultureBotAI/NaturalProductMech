@@ -337,6 +337,11 @@ causal_graphs:
     label: Source-assigned Z,E-caryoynencin component
     node_type: COMPOUND
     grounding_status: UNGROUNDED
+  - node_id: native_g
+    label: Native CayG sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A075T858
   edges:
   - subject: cayg
     predicate: was_encoded_by_reported_construct_in
@@ -438,6 +443,19 @@ causal_graphs:
       notes: Retained main PDF and Figure2 inspected; detailed SI methods unread.
         Main page3 and visually inspected Figure2B trace c.
       retrieved_on: '2026-10-06'
+  - subject: native_g
+    predicate: is the native sequence reference for
+    object: cayg
+    notes: UniProtKB:A0A075T858 is the native Burkholderia caryophylli CayG reference
+      corresponding to the heterologously expressed cayG component.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A075T858
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active UniProtKB entry A0A075T858 for native CayG.
+    - reference: DOI:10.1021/acschembio.1c00991
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Heterologous expression comparison of cayG with and without cayK.
   description: CayK-associated product-profile change in a P. protegens Pf-5 heterologous
     expression comparison. Genetic constructs, unresolved protein identities and isomer-containing
     products are distinct. No purified CayK catalysis, exact stock identity, direct
@@ -491,4 +509,10 @@ curation_history:
     prior CayG/CayL graph, corrected BSR3 source-only evidence grades and qualification,
     source fields, SEEDED status, stereochemistry and all prior history. No new producer
     claim or full-record sign-off.
+  llm_assisted: true
+- timestamp: '2026-10-18T03:34:17Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added native CayG UniProtKB:A0A075T858 reference node to caryoynencin-2022-cayk-heterologous-comparison
+    matching the sibling CayG/CayL assay graph.
   llm_assisted: true

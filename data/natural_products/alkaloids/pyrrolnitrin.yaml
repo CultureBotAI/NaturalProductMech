@@ -1556,3 +1556,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-18T03:34:33Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added canonical UniProtKB sequence example nodes for PrnD (UniProtKB:P95483)
+    and SsuE (UniProtKB:P80644) in pyrrolnitrin-2005-ssue-assisted-oxygenation while
+    keeping the unresolved study preparations review_needed.
+  llm_assisted: true

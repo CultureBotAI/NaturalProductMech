@@ -130,28 +130,28 @@ derived from a source. This is what the rest of the record exists to support.</p
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
   <td>1</td>
-  <td>MchA polyketide synthase</td>
+  <td>MchA polyketide synthase<br><span class="mono">NCBIProtein:CAG28678.1</span></td>
   <td class="mono"></td>
   <td class="mono">ungrounded &rarr; ungrounded</td>
   <td class="mono">DOI:10.1002/cbic.200400282</td>
 </tr>
 <tr>
   <td>2</td>
-  <td>MchB nonribosomal peptide synthetase</td>
+  <td>MchB nonribosomal peptide synthetase<br><span class="mono">NCBIProtein:CAG29031.1</span></td>
   <td class="mono"></td>
   <td class="mono">ungrounded &rarr; ungrounded</td>
   <td class="mono">DOI:10.1002/cbic.200400282</td>
 </tr>
 <tr>
   <td>3</td>
-  <td>MchC nonribosomal peptide synthetase</td>
+  <td>MchC nonribosomal peptide synthetase<br><span class="mono">NCBIProtein:CAG29032.1</span></td>
   <td class="mono"></td>
   <td class="mono">ungrounded &rarr; ungrounded</td>
   <td class="mono">DOI:10.1002/cbic.200400282</td>
 </tr>
 </table></div>
 <p class="sub">Step 1: MIBiG assigns AJ698723.2 CAG28678.1/mchA to the iterative type I PKS module that contributes the polyketide portion of the myxochromide S1 scaffold. The exact isolated substrate and product are not resolved, and no current exact UniProtKB entry was found for CAG28678.1 or the deleted historical Q50JA4 cross-reference.</p><p class="sub">Step 2: MIBiG assigns AJ698723.2 CAG29031.1/mchB to the NRPS modules that incorporate the threonine and leucine portions inferred for myxochromide S1 scaffold biosynthesis. The exact isolated substrate and product are not resolved, and no current exact UniProtKB entry was found for CAG29031.1 or the deleted historical Q50JA3 cross-reference.</p><p class="sub">Step 3: MIBiG assigns AJ698723.2 CAG29032.1/mchC to the downstream NRPS modules and thioesterase that complete myxochromide S1 scaffold biosynthesis. The exact isolated substrate and product are not resolved, and no current exact UniProtKB entry was found for CAG29032.1 or the deleted historical Q50JA2 cross-reference.</p>
-<h2>Causal graph &mdash; biosynthesis <span class="tag">5 nodes, 4 edges</span></h2>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
 <p class="sub">Partial Stigmatella aurantiaca myxochromide S1 biosynthesis graph for the BGC0001023 MchA-MchB-MchC PKS/NRPS scaffold genes.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
@@ -194,6 +194,28 @@ derived from a source. This is what the rest of the record exists to support.</p
   <td>The edge connects the Mch PKS/NRPS scaffold process to the exact myxochromide S1 structure in this record; the record&#39;s shared-structure discussion about later MIBiG entries is left open.</td>
   <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/cbic.200400282<br>https://mibig.secondarymetabolites.org/repository/BGC0001023.5/index.html</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/cbic.200400282</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Structure and biosynthesis of myxochromides S1-3 in Stigmatella aurantiaca</dd><dt>notes</dt><dd>Wenzel et al. cloned and sequenced the Stigmatella aurantiaca AJ698723.2 locus that encodes MchA, MchB, and MchC and linked the locus to myxochromide S1-3 biosynthesis by gene inactivation.</dd></dl>
 </li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0001023.5/index.html</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>snippet</dt><dd>Scaffold biosynthesis</dd><dt>notes</dt><dd>MIBiG BGC0001023.5 lists myxochromide S1 as the Stigmatella aurantiaca product, reports AJ698723.2 as the locus, and annotates CAG28678.1/mchA, CAG29031.1/mchB, and CAG29032.1/mchC as scaffold-biosynthesis genes.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>MchB nonribosomal peptide synthetase</td>
+  <td>has a sequence-identical UniProtKB example</td>
+  <td>MchB (Stigmatella aurantiaca DW4/3-1 STAUR_1143 UniProtKB example)</td>
+  <td>UniProtKB:E3FG12 (Stigmatella aurantiaca DW4/3-1 STAUR_1143 / mchB) shares 100% amino-acid sequence identity (3057 aa, UPI000050C126) with AJ698723.2 CAG29031.1 (MchB).</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/E3FG12<br>https://www.uniprot.org/uniparc/UPI000050C126<br>https://www.ncbi.nlm.nih.gov/protein/CAG29031.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E3FG12</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>Active Stigmatella aurantiaca DW4/3-1 UniProtKB entry (E3FG12, STAUR_1143) for the 3057-aa MchB NRPS sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI000050C126</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>UniParc UPI000050C126 links AJ698723.2 CAG29031.1 (mchB), deleted Q50JA3, and active Stigmatella aurantiaca DW4/3-1 UniProtKB:E3FG12 under a single 100%-identical 3057-aa sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/CAG29031.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>AJ698723.2 GenPept CAG29031.1 is the 3057-aa Stigmatella aurantiaca MchB coding sequence.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>MchC nonribosomal peptide synthetase</td>
+  <td>has a sequence-identical UniProtKB example</td>
+  <td>MchC (Stigmatella aurantiaca DW4/3-1 bacA/STAUR_1144 UniProtKB example)</td>
+  <td>UniProtKB:E3FG13 (Stigmatella aurantiaca DW4/3-1 bacA / STAUR_1144 / mchC) shares 100% amino-acid sequence identity (4468 aa, UPI000050C1DE) with AJ698723.2 CAG29032.1 (MchC).</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/E3FG13<br>https://www.uniprot.org/uniparc/UPI000050C1DE<br>https://www.ncbi.nlm.nih.gov/protein/CAG29032.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E3FG13</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>Active Stigmatella aurantiaca DW4/3-1 UniProtKB entry (E3FG13) for the 4468-aa MchC NRPS sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI000050C1DE</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>UniParc UPI000050C1DE links AJ698723.2 CAG29032.1 (mchC), deleted Q50JA2, and active Stigmatella aurantiaca DW4/3-1 UniProtKB:E3FG13 under a single 100%-identical 4468-aa sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/CAG29032.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>AJ698723.2 GenPept CAG29032.1 is the 4468-aa Stigmatella aurantiaca MchC coding sequence.</dd></dl>
 </li></ul>
 </details></td>
 </tr>

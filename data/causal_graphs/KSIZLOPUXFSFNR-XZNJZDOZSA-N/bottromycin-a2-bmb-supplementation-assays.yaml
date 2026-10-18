@@ -1,0 +1,76 @@
+record_id: naturalproductmech:mibig-d717cc8774
+standard_inchi_key: KSIZLOPUXFSFNR-XZNJZDOZSA-N
+graph:
+  graph_id: bottromycin-a2-bmb-supplementation-assays
+  scope: BIOSYNTHESIS
+  description: 'BmbG or BmbH individually supplemented MBP-BmbD/K0P4N8 or MBP-BmbE/K0NZY4
+    reactions on Met-deleted BmbC. SI Figure S9: 16-h endpoint MALDI-TOF-MS, no enhanced
+    cyclodehydration. This does not exclude native functions or establish inactivity,
+    inhibition, or a joint G+H test. Figure S3 documents MBP-fused S. bottropensis
+    proteins; G/H are not BC16019 BotH/BotAH.'
+  nodes:
+  - node_id: bmbg
+    label: MBP-BmbG
+    node_type: PROTEIN
+    identifier: NCBIProtein:CCM09447.1
+    grounding_status: GROUNDED
+  - node_id: bmbh
+    label: MBP-BmbH
+    node_type: PROTEIN
+    identifier: NCBIProtein:CCM09448.1
+    grounding_status: GROUNDED
+  - node_id: bmbd_assay
+    label: BmbD 16-h cyclodehydration assay
+    node_type: PROCESS
+  - node_id: bmbe_assay
+    label: BmbE 16-h cyclodehydration assay
+    node_type: PROCESS
+  edges:
+  - subject: bmbg
+    predicate: was reported not to enhance
+    object: bmbd_assay
+    evidence:
+    - reference: DOI:10.1021/jacs.7b09899.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CCM09447.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: 333-aa BmbG; identity from SI Table S1, purified protein in Figure S3.
+    notes: BmbG supplied alone as supplement; comparison is endpoint conversion to
+      the -18 Da species.
+  - subject: bmbh
+    predicate: was reported not to enhance
+    object: bmbd_assay
+    evidence:
+    - reference: DOI:10.1021/jacs.7b09899.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CCM09448.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-03'
+      notes: 415-aa BmbH; identity from SI Table S1, purified protein in Figure S3.
+    notes: BmbH supplied alone as supplement; no claim of statistical equivalence
+      or universal lack of effect.
+  - subject: bmbg
+    predicate: was reported not to enhance
+    object: bmbe_assay
+    evidence:
+    - reference: DOI:10.1021/jacs.7b09899
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Neither addition of BmbH or BmbG resulted in more product formation
+    - reference: DOI:10.1021/jacs.7b09899.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: BmbG individually added to the BmbE reaction.
+  - subject: bmbh
+    predicate: was reported not to enhance
+    object: bmbe_assay
+    evidence:
+    - reference: DOI:10.1021/jacs.7b09899.s001
+      evidence_type: PRIMARY_EXPERIMENT
+    notes: BmbH individually added to the BmbE reaction.
+curation_history:
+- timestamp: '2026-10-18T03:34:13Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Extracted bottromycin-a2-bmb-supplementation-assays to an exact-owner causal
+    graph component to keep bottromycin-a2-2.yaml within the 64-KiB artifact limit.
+  llm_assisted: true

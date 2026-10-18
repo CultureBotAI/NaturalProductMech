@@ -91,6 +91,11 @@ causal_graphs:
     node_type: ENZYME
     grounding_status: GROUNDED
     identifier: NCBIProtein:AWF71596.1
+  - node_id: nascb_uniprot_example
+    label: NascB (S. cacaoi SCA03_22890 UniProtKB example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A4Y3QZ72
   edges:
   - subject: nascb_cds
     predicate: encodes the deposited native reference
@@ -111,6 +116,28 @@ causal_graphs:
         GenPept sequence and UniParc sequence are identical. A0A3G1Q973 is inactive;
         active A0A4Y3QZ72 names S. cacaoi, not this native isolate. Neither is selected.
         UniParc is a sequence archive, not UniProtKB.'
+  - subject: nascb
+    predicate: has a sequence-identical UniProtKB example
+    object: nascb_uniprot_example
+    notes: UniProtKB:A0A4Y3QZ72 (Streptomyces cacaoi SCA03_22890 cytochrome P450)
+      shares 100% amino-acid sequence identity (UPI000A3766A8) with Streptomyces sp.
+      CMB-MQ030 NascB (AWF71596.1).
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A4Y3QZ72
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Streptomyces cacaoi UniProtKB entry (A0A4Y3QZ72, SCA03_22890)
+        for the UPI000A3766A8 cytochrome P450 sequence.
+    - reference: https://www.uniprot.org/uniparc/UPI000A3766A8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI000A3766A8 links MH201515.1 AWF71596.1 (NascB) and active
+        UniProtKB:A0A4Y3QZ72 under a single 100%-identical sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AWF71596.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: MH201515.1 GenPept AWF71596.1 is the Streptomyces sp. CMB-MQ030 NascB
+        cytochrome P450 translation.
 - graph_id: naseseazine-c-nascb-reconstituted-assay
   scope: BIOSYNTHESIS
   description: 'Partial biochemical graph. Purified recombinant NascB was assayed
@@ -137,6 +164,11 @@ causal_graphs:
     node_type: COMPOUND
     grounding_status: GROUNDED
     identifier: naturalproductmech:mibig-91513fb680
+  - node_id: nascb_uniprot_example
+    label: NascB (S. cacaoi SCA03_22890 UniProtKB example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:A0A4Y3QZ72
   edges:
   - subject: nascb
     predicate: is the native protein reference associated with
@@ -177,6 +209,28 @@ causal_graphs:
       evidence_type: CURATOR_INFERENCE
       notes: Paper reports NAS-C as 2S,3R. Pinned RDKit 2026.03.5 assigns those pyrroloindoline
         centers to the owner; MITE connectivity alone does not establish stereochemistry.
+  - subject: nascb
+    predicate: has a sequence-identical UniProtKB example
+    object: nascb_uniprot_example
+    notes: UniProtKB:A0A4Y3QZ72 (Streptomyces cacaoi SCA03_22890 cytochrome P450)
+      shares 100% amino-acid sequence identity (UPI000A3766A8) with Streptomyces sp.
+      CMB-MQ030 NascB (AWF71596.1).
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/A0A4Y3QZ72
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Streptomyces cacaoi UniProtKB entry (A0A4Y3QZ72, SCA03_22890)
+        for the UPI000A3766A8 cytochrome P450 sequence.
+    - reference: https://www.uniprot.org/uniparc/UPI000A3766A8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI000A3766A8 links MH201515.1 AWF71596.1 (NascB) and active
+        UniProtKB:A0A4Y3QZ72 under a single 100%-identical sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AWF71596.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: MH201515.1 GenPept AWF71596.1 is the Streptomyces sp. CMB-MQ030 NascB
+        cytochrome P450 translation.
 curation_history:
 - timestamp: '2026-09-10T05:54:09Z'
   curator: seed_from_sources
@@ -193,4 +247,10 @@ curation_history:
     C. Grounded the native reference to GenPept AWF71596.1; did not substitute an
     inactive or other-organism UniProtKB record. Kept experimental construct verification,
     radical microsteps and native production unasserted; source-owned fields unchanged.
+  llm_assisted: true
+- timestamp: '2026-10-18T03:34:15Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added sequence-identical UniProtKB:A0A4Y3QZ72 enzyme example nodes (UPI000A3766A8)
+    for NascB (AWF71596.1) in both naseseazine C causal graphs.
   llm_assisted: true

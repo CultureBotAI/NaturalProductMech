@@ -58,6 +58,16 @@ graph:
     label: Unresolved NovH partner binding and complex stoichiometry
     node_type: OTHER
     grounding_status: REVIEW_NEEDED
+  - node_id: novh_native
+    label: Deposited native NovH sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9G0
+  - node_id: cloy_native
+    label: Deposited native CloY sequence reference
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8GHC8
   edges:
   - subject: delta
     predicate: was_assayed_by
@@ -214,10 +224,61 @@ graph:
       notes: Boll et al. 2011 (DOI:10.1074/jbc.M111.288092), author-reproduced manuscript
         and supplement, marked publication ahead of print; final journal text not
         independently retrieved. SEC methods and complex/results discussion, PDF pp.95,99-102.
+  - subject: novh_native
+    predicate: is_native_reference_for
+    object: delta
+    notes: UniProtKB:Q9L9G0 is the deposited native NovH sequence reference for the
+      2011 His6-NovH preparations.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9G0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:Q9L9G0 (Deposited native
+        NovH sequence reference).
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q9L9G0 is the deposited native NovH sequence reference for
+        the 2011 His6-NovH preparations.
+  - subject: novh_native
+    predicate: is_native_reference_for
+    object: intact
+    notes: UniProtKB:Q9L9G0 is the deposited native NovH sequence reference for the
+      2011 His6-NovH preparations.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9G0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:Q9L9G0 (Deposited native
+        NovH sequence reference).
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q9L9G0 is the deposited native NovH sequence reference for
+        the 2011 His6-NovH preparations.
+  - subject: cloy_native
+    predicate: is_native_reference_for
+    object: cloy
+    notes: UniProtKB:Q8GHC8 is the deposited native CloY sequence reference for the
+      2011 processed CloY preparation.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8GHC8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:Q8GHC8 (Deposited native
+        CloY sequence reference).
+    - reference: https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&sequence=1
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q8GHC8 is the deposited native CloY sequence reference for
+        the 2011 processed CloY preparation.
 curation_history:
 - timestamp: '2026-10-04T22:55:50Z'
   curator: codex
   action: RECORD_CURATED
   changes: 'Add cathomycin-novhi-novh-kinetics-and-model-limits with source-checked
     NovH/NovI evidence and #561 boundaries.'
+  llm_assisted: true
+- timestamp: '2026-10-18T03:34:17Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added deposited native sequence reference node(s) (UniProtKB:Q9L9G0, UniProtKB:Q8GHC8)
+    while keeping recombinant/engineered assay preparations ungrounded.
   llm_assisted: true

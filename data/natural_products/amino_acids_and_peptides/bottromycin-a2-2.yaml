@@ -1195,6 +1195,11 @@ causal_graphs:
     label: BmbC macrolactamidine intermediate
     node_type: PRECURSOR
     grounding_status: UNGROUNDED
+  - node_id: bmbc_uniprot_example
+    label: BmbC / BotA (S. bottropensis UniProtKB example)
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:K0P8E3
   edges:
   - subject: bmbc
     predicate: provides sequence for
@@ -1268,165 +1273,31 @@ causal_graphs:
       evidence_type: PRIMARY_EXPERIMENT
     notes: Figures S6-S8 distinguish this isobaric -18 Da product from the thiazoline
       product; NMR used trypsin-treated BmbC-N15K.
-- graph_id: bottromycin-a2-bmb-follower-binding-assays
-  scope: BIOSYNTHESIS
-  description: 'Fluorescence-polarization binding to engineered BmbC-C8S/S43C with
-    a C-terminal His-tag extension and 6-(iodoacetamido)fluorescein label (SI Figure
-    S12). All binding proteins remain MBP-tagged. BmbB/F nodes represent excised RRE
-    domains, not assayed full-length methyltransferases; no methylation or native-substrate
-    affinity is inferred. SI p. S7: 25 nM tracer, serial protein dilution, 50 mM HEPES
-    pH 7.5, 300 mM NaCl, 2.5% glycerol, 0.5 mM TCEP, 30 min at 25 C, three independent
-    titrations.'
-  nodes:
-  - node_id: bmbc
-    label: S. bottropensis BmbC (44 aa)
-    node_type: PROTEIN
-    identifier: NCBIProtein:CCM09443.1
-    grounding_status: GROUNDED
-  - node_id: fluorescent_precursor
-    label: BmbC-C8S/S43C-His fluorescent tracer
-    node_type: PRECURSOR
-    grounding_status: UNGROUNDED
-  - node_id: bmbb_rre
-    label: MBP-BmbB RRE (492-593)
-    node_type: PROTEIN
-    identifier: NCBIProtein:CCM09442.1
-    grounding_status: GROUNDED
-  - node_id: bmbf_rre
-    label: MBP-BmbF RRE (526-670)
-    node_type: PROTEIN
-    identifier: NCBIProtein:CCM09446.1
-    grounding_status: GROUNDED
-  - node_id: bmbd
-    label: MBP-BmbD
-    node_type: ENZYME
-    identifier: UniProtKB:K0P4N8
-    grounding_status: GROUNDED
-  - node_id: bmbe
-    label: MBP-BmbE
-    node_type: ENZYME
-    identifier: UniProtKB:K0NZY4
-    grounding_status: GROUNDED
-  edges:
   - subject: bmbc
-    predicate: provides sequence for
-    object: fluorescent_precursor
+    predicate: has a sequence-identical UniProtKB example
+    object: bmbc_uniprot_example
+    notes: UniProtKB:K0P8E3 (Streptomyces bottropensis botA / QBA35_11730) shares
+      100% amino-acid sequence identity (44 aa, UPI0001B7FB89) with Streptomyces bottropensis
+      BmbC (CCM09443.1).
     evidence:
-    - reference: DOI:10.1021/jacs.7b09899.s001
-      evidence_type: PRIMARY_EXPERIMENT
-    notes: 'Engineered construct, not a biological conversion: native Met absent;
-      C8S/S43C use 43-aa assay numbering (C9S/S44C in CCM09443.1). His-tag extension
-      and fluorophore are absent from the canonical accession.'
-  - subject: bmbb_rre
-    predicate: binds
-    object: fluorescent_precursor
-    evidence:
-    - reference: DOI:10.1021/jacs.7b09899.s001
-      evidence_type: PRIMARY_EXPERIMENT
-    - reference: https://www.ncbi.nlm.nih.gov/protein/CCM09442.1
+    - reference: https://www.uniprot.org/uniprotkb/K0P8E3
       evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-03'
-      notes: Canonical BmbB RRE parent.
-    notes: 'Figure S13C: Kd 876 +/- 67 nM by fluorescence polarization. SI Table S3
-      domain sequence exactly matches residues 492-593 of the 630-aa canonical protein.'
-  - subject: bmbf_rre
-    predicate: binds
-    object: fluorescent_precursor
-    evidence:
-    - reference: DOI:10.1021/jacs.7b09899.s001
-      evidence_type: PRIMARY_EXPERIMENT
-    - reference: https://www.ncbi.nlm.nih.gov/protein/CCM09446.1
+      retrieved_on: '2026-10-17'
+      notes: Active Streptomyces bottropensis UniProtKB entry (K0P8E3) for the 44-aa
+        bottromycin precursor peptide.
+    - reference: https://www.uniprot.org/uniparc/UPI0001B7FB89
       evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-03'
-      notes: Canonical BmbF RRE parent.
-    notes: 'Figure S13D: Kd 597 +/- 25 nM by fluorescence polarization. SI Table S3
-      domain sequence exactly matches residues 526-670 of the 670-aa canonical protein.'
-  - subject: bmbd
-    predicate: shows weak binding to
-    object: fluorescent_precursor
-    evidence:
-    - reference: DOI:10.1021/jacs.7b09899
-      evidence_type: PRIMARY_EXPERIMENT
-    - reference: DOI:10.1021/jacs.7b09899.s001
-      evidence_type: PRIMARY_EXPERIMENT
-    notes: Main text estimates Kd >50 uM; Figure S13A labels >=50 uM. This is a lower
-      bound, not an exact 50 uM affinity.
-  - subject: bmbe
-    predicate: shows weak binding to
-    object: fluorescent_precursor
-    evidence:
-    - reference: DOI:10.1021/jacs.7b09899
-      evidence_type: PRIMARY_EXPERIMENT
-    - reference: DOI:10.1021/jacs.7b09899.s001
-      evidence_type: PRIMARY_EXPERIMENT
-    notes: Main text estimates Kd >50 uM; Figure S13B labels >=50 uM. This is a lower
-      bound, not a no-binding claim.
-- graph_id: bottromycin-a2-bmb-supplementation-assays
-  scope: BIOSYNTHESIS
-  description: 'BmbG or BmbH individually supplemented MBP-BmbD/K0P4N8 or MBP-BmbE/K0NZY4
-    reactions on Met-deleted BmbC. SI Figure S9: 16-h endpoint MALDI-TOF-MS, no enhanced
-    cyclodehydration. This does not exclude native functions or establish inactivity,
-    inhibition, or a joint G+H test. Figure S3 documents MBP-fused S. bottropensis
-    proteins; G/H are not BC16019 BotH/BotAH.'
-  nodes:
-  - node_id: bmbg
-    label: MBP-BmbG
-    node_type: PROTEIN
-    identifier: NCBIProtein:CCM09447.1
-    grounding_status: GROUNDED
-  - node_id: bmbh
-    label: MBP-BmbH
-    node_type: PROTEIN
-    identifier: NCBIProtein:CCM09448.1
-    grounding_status: GROUNDED
-  - node_id: bmbd_assay
-    label: BmbD 16-h cyclodehydration assay
-    node_type: PROCESS
-  - node_id: bmbe_assay
-    label: BmbE 16-h cyclodehydration assay
-    node_type: PROCESS
-  edges:
-  - subject: bmbg
-    predicate: was reported not to enhance
-    object: bmbd_assay
-    evidence:
-    - reference: DOI:10.1021/jacs.7b09899.s001
-      evidence_type: PRIMARY_EXPERIMENT
-    - reference: https://www.ncbi.nlm.nih.gov/protein/CCM09447.1
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI0001B7FB89 links EMBL CCM09443.1 (bmbC) and active Streptomyces
+        bottropensis UniProtKB:K0P8E3 under a single 100%-identical 44-aa sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/CCM09443.1
       evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-03'
-      notes: 333-aa BmbG; identity from SI Table S1, purified protein in Figure S3.
-    notes: BmbG supplied alone as supplement; comparison is endpoint conversion to
-      the -18 Da species.
-  - subject: bmbh
-    predicate: was reported not to enhance
-    object: bmbd_assay
-    evidence:
-    - reference: DOI:10.1021/jacs.7b09899.s001
-      evidence_type: PRIMARY_EXPERIMENT
-    - reference: https://www.ncbi.nlm.nih.gov/protein/CCM09448.1
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-03'
-      notes: 415-aa BmbH; identity from SI Table S1, purified protein in Figure S3.
-    notes: BmbH supplied alone as supplement; no claim of statistical equivalence
-      or universal lack of effect.
-  - subject: bmbg
-    predicate: was reported not to enhance
-    object: bmbe_assay
-    evidence:
-    - reference: DOI:10.1021/jacs.7b09899
-      evidence_type: PRIMARY_EXPERIMENT
-      snippet: Neither addition of BmbH or BmbG resulted in more product formation
-    - reference: DOI:10.1021/jacs.7b09899.s001
-      evidence_type: PRIMARY_EXPERIMENT
-    notes: BmbG individually added to the BmbE reaction.
-  - subject: bmbh
-    predicate: was reported not to enhance
-    object: bmbe_assay
-    evidence:
-    - reference: DOI:10.1021/jacs.7b09899.s001
-      evidence_type: PRIMARY_EXPERIMENT
-    notes: BmbH individually added to the BmbE reaction.
+      retrieved_on: '2026-10-17'
+      notes: EMBL/GenPept CCM09443.1 is the 44-aa Streptomyces bottropensis BmbC precursor
+        peptide.
+causal_graph_refs:
+- bottromycin-a2-bmb-follower-binding-assays
+- bottromycin-a2-bmb-supplementation-assays
 curation_history:
 - timestamp: '2026-09-10T05:54:08Z'
   curator: seed_from_sources
@@ -1478,4 +1349,12 @@ curation_history:
     binding and individual BmbG/H supplementation tests. Exact D/E UniProt matches,
     versioned NCBI IDs otherwise; primary DOI/SI and identity URLs. Construct/negative-assay
     limits explicit; old content and SEEDED unchanged.'
+  llm_assisted: true
+- timestamp: '2026-10-18T03:34:13Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added sequence-identical Streptomyces bottropensis UniProtKB:K0P8E3 protein
+    example nodes (UPI0001B7FB89) for BmbC (CCM09443.1) in the Bmb cyclodehydration
+    and follower-binding causal graphs, and extracted bottromycin-a2-bmb-follower-binding-assays
+    and bottromycin-a2-bmb-supplementation-assays to exact-owner causal graph components.
   llm_assisted: true

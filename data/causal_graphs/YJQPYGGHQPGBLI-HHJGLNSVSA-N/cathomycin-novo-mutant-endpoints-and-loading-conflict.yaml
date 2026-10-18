@@ -94,6 +94,11 @@ graph:
     label: Sadler NovO-Y216F assay preparation
     node_type: ENZYME
     grounding_status: UNGROUNDED
+  - node_id: native
+    label: Deposited native NovO sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F3
   edges:
   - subject: construct
     predicate: encodes_engineered_preparation
@@ -488,10 +493,31 @@ graph:
       evidence_type: PRIMARY_EXPERIMENT
       notes: Sadler 2017 accepted manuscript with appended SI; SI Table 2, PDF p.32;
         main Figure 3a, PDF p.3.
+  - subject: native
+    predicate: is_native_reference_for
+    object: wt
+    notes: UniProtKB:Q9L9F3 is the deposited native NovO sequence reference for the
+      Sadler NovO-His6 WT assay preparation.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:Q9L9F3 (Deposited native
+        NovO sequence reference).
+    - reference: https://strathprints.strath.ac.uk/60153/1/Sadler_etal_ACSCB_2017_C_methylation_of_coumarin_scaffolds_by_NovO.pdf
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q9L9F3 is the deposited native NovO sequence reference for
+        the Sadler NovO-His6 WT assay preparation.
 curation_history:
 - timestamp: '2026-10-04T19:05:52Z'
   curator: codex
   action: RECORD_CURATED
   changes: Add cathomycin-novo-mutant-endpoints-and-loading-conflict with bounded
     primary protein evidence and source conflicts (#555).
+  llm_assisted: true
+- timestamp: '2026-10-18T03:34:17Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added deposited native sequence reference node(s) (UniProtKB:Q9L9F3) while
+    keeping recombinant/engineered assay preparations ungrounded.
   llm_assisted: true

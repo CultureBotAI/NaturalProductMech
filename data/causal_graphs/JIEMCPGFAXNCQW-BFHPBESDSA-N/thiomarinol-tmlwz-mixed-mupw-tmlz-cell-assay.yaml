@@ -43,6 +43,11 @@ graph:
     label: Source-assigned desepoxy-pseudomonic acid B
     node_type: COMPOUND
     grounding_status: UNGROUNDED
+  - node_id: mupw_native
+    label: Native MupW sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q8RL46
   edges:
   - subject: cluster
     predicate: encodes_native_reference
@@ -140,6 +145,23 @@ graph:
         routes were challenge-blocked; no detailed construct sequence, preparation
         recipe, quantitative kinetics or figure-level visual audit is claimed.
       retrieved_on: '2026-10-06'
+  - subject: mupw_native
+    predicate: is_native_reference_for
+    object: mupw
+    notes: UniProtKB:Q8RL46 is the native Pseudomonas fluorescens NCIMB 10586 MupW
+      sequence reference for the heterologously coexpressed MupW in the mixed MupW+TmlZ
+      assay.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q8RL46
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:Q8RL46 (Native MupW sequence
+        reference).
+    - reference: DOI:10.1039/C9SC06192D
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q8RL46 is the native Pseudomonas fluorescens NCIMB 10586 MupW
+        sequence reference for the heterologously coexpressed MupW in the mixed MupW+TmlZ
+        assay.
 curation_history:
 - timestamp: '2026-10-06T04:51:34Z'
   curator: codex
@@ -155,4 +177,9 @@ curation_history:
     full-method or visual figure review. Native GenPept references are not complete
     engineered proteins; deleted UniProt examples rejected. Author-agent issue#597
     review, not independent approval.
+  llm_assisted: true
+- timestamp: '2026-10-18T03:34:32Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added native MupW sequence reference node (UniProtKB:Q8RL46) in thiomarinol-tmlwz-mixed-mupw-tmlz-cell-assay.
   llm_assisted: true

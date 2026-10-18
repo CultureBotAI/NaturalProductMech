@@ -226,6 +226,16 @@ causal_graphs:
     node_type: COMPOUND
     identifier: naturalproductmech:mibig-47e25f64fe
     grounding_status: GROUNDED
+  - node_id: pbth_uniprot_example
+    label: PbtH (Planobispora rosea Pro02_44310 WGS UniProtKB example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:U5Q3R1
+  - node_id: pbtg1_uniprot_example
+    label: PbtG1 (Planobispora rosea Pro02_44440 WGS UniProtKB example)
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:U5Q0H1
   edges:
   - subject: pbth
     predicate: participates in
@@ -343,6 +353,53 @@ causal_graphs:
       notes: MIBiG BGC0001155.5 assigns KF366381.2 to Planobispora rosea GE2270 biosynthesis
         and records knockout, enzymatic assay, and heterologous expression support
         for the locus.
+  - subject: pbth
+    predicate: has a sequence-identical UniProtKB example
+    object: pbth_uniprot_example
+    notes: UniProtKB:U5Q3R1 (Planobispora rosea WGS BOOI01000040 locus Pro02_44310)
+      shares 100% amino-acid sequence identity (122 aa, UPI0003BC0C0E) with KF366381.2
+      PbtH (AGY49594.1); modeled as a separate companion example node rather than
+      direct PbtH grounding because U5Q3R1 does not cross-reference KF366381.2.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/U5Q3R1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Planobispora rosea UniProtKB entry (U5Q3R1, Pro02_44310) for the
+        122-aa UPI0003BC0C0E sequence.
+    - reference: https://www.uniprot.org/uniparc/UPI0003BC0C0E
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI0003BC0C0E links KF366381.2 AGY49594.1 (pbtH) and active Planobispora
+        rosea UniProtKB:U5Q3R1 under a single 100%-identical 122-aa sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGY49594.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: KF366381.2 GenPept AGY49594.1 is the 122-aa Planobispora rosea PbtH coding
+        sequence.
+  - subject: pbtg1
+    predicate: has a sequence-identical UniProtKB example
+    object: pbtg1_uniprot_example
+    notes: 'UniProtKB:U5Q0H1 (Planobispora rosea WGS BOOI01000040 locus Pro02_44440)
+      shares 100% amino-acid sequence identity (607 aa, UPI0003BC18A5) with KF366381.2
+      PbtG1 (AGY49581.1); modeled as a separate companion example node rather than
+      direct PbtG1 grounding because U5Q0H1 does not cross-reference KF366381.2 (issue
+      #273).'
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/U5Q0H1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Active Planobispora rosea UniProtKB entry (U5Q0H1, Pro02_44440) for the
+        607-aa UPI0003BC18A5 sequence.
+    - reference: https://www.uniprot.org/uniparc/UPI0003BC18A5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: UniParc UPI0003BC18A5 links KF366381.2 AGY49581.1 (pbtG1) and active
+        Planobispora rosea UniProtKB:U5Q0H1 under a single 100%-identical 607-aa sequence.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AGY49581.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: KF366381.2 GenPept AGY49581.1 is the 607-aa Planobispora rosea PbtG1
+        cyclodehydratase coding sequence.
 curation_history:
 - timestamp: '2026-09-10T05:54:16Z'
   curator: seed_from_sources
@@ -373,3 +430,10 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-18T03:34:14Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: 'Added companion Planobispora rosea WGS UniProtKB example nodes (U5Q3R1
+    via UPI0003BC0C0E for PbtH/AGY49594.1 and U5Q0H1 via UPI0003BC18A5 for PbtG1/AGY49581.1)
+    while keeping pbth and pbtg1 ungrounded per issue #273.'
+  llm_assisted: true

@@ -329,163 +329,6 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
-<h2>Causal graph &mdash; biosynthesis <span class="tag">12 nodes, 16 edges</span></h2>
-<p class="sub">Engineered E. coli BL21(DE3) with PenA/PntI and alternative J1074 redox-gene expression conditions. XNR_5179-containing pairs increased intermediate production; XNR_1673 conditions are represented only as tested conditions. Neither native partnership, physical complex, nor increased final pentalenolactone yield is asserted.</p><div class="scroll"><table>
-<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
-<tr>
-  <td>PntI</td>
-  <td>supports</td>
-  <td>1-deoxypentalenic acid production in engineered E. coli</td>
-  <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.uniprot.org/uniprotkb/E3VWJ1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 4C, PenA/PntI host.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E3VWJ1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>S. arenae TU469 PntI, 457 aa; exact sequence match to ADO85579.1 from HQ292065.1:14292..15665. This unreviewed entry supplies sequence identity, not the experimental activity assignment from the newer paper.</dd></dl>
-</li></ul>
-</details></td>
-</tr>
-<tr>
-  <td>XNR_5179 ferredoxin</td>
-  <td>is coexpressed in</td>
-  <td>Joint expression of XNR_5179 and XNR_4478</td>
-  <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.ncbi.nlm.nih.gov/protein/AGI91495.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2: J1074 gene in pLJ62.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI91495.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>XNR_5179 encodes a 100-aa ferredoxin at complement(CP004370.1:5881185..5881487), strain J1074. NCBI names this strain S. albidoflavus (taxon 1886); the paper uses S. albus. Exact-locus and GenPept-cross-reference UniProt queries did not resolve an accession; no homolog was substituted.</dd></dl>
-</li></ul>
-</details></td>
-</tr>
-<tr>
-  <td>XNR_4478 ferredoxin reductase</td>
-  <td>is coexpressed in</td>
-  <td>Joint expression of XNR_5179 and XNR_4478</td>
-  <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.ncbi.nlm.nih.gov/protein/AGI90801.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2: J1074 gene in pLJ62.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI90801.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>XNR_4478 encodes a 420-aa ferredoxin reductase at complement(CP004370.1:5093104..5094366), strain J1074, currently S. albidoflavus in NCBI and S. albus in the paper. Retained the versioned NCBI Protein accession after exact-locus and GenPept-cross-reference UniProt queries returned no match.</dd></dl>
-</li></ul>
-</details></td>
-</tr>
-<tr>
-  <td>Joint expression of XNR_5179 and XNR_4478</td>
-  <td>increases</td>
-  <td>1-deoxypentalenic acid production in engineered E. coli</td>
-  <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 5: the pair improved yield relative to PenA/PntI alone; the authors reported no significant change for individual additions.</dd></dl>
-</li></ul>
-</details></td>
-</tr>
-<tr>
-  <td>PenA</td>
-  <td>supplies pentalenene for</td>
-  <td>1-deoxypentalenic acid production in engineered E. coli</td>
-  <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.uniprot.org/uniprotkb/Q55012</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figures 4A and 5: the E. coli strains carry UC5319 penA; PenA is not the TU469 PntA used in the Streptomyces experiment.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q55012</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>UC5319 PenA, 337 aa; exact sequence match to both original clone AAA19131.1/U05213.1 and ADO85594.1/HQ292066.1. The 1994 source names Streptomyces UC5319; the cluster and 2025 paper name S. exfoliatus.</dd></dl>
-</li></ul>
-</details></td>
-</tr>
-<tr>
-  <td>XNR_4772 predicted ferredoxin reductase</td>
-  <td>is coexpressed in</td>
-  <td>Joint expression of XNR_5179 and XNR_4772</td>
-  <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.ncbi.nlm.nih.gov/protein/AGI91094.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2: pLJ52 carries J1074 XNR_4772, transferred via pLJ55 to pLJ64. Figure 5 and Tables S2-S4 use XNR_4772; an earlier main-text occurrence of XNR_4722 is inconsistent.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI91094.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>395-aa XNR_4772 at CP004370.1:5424795..5425982, strain J1074. NCBI calls this S. albidoflavus; the paper calls it S. albus. Exact-locus and GenPept-cross-reference UniProt searches did not resolve an accession; no homolog was substituted. NCBI labels it oxidoreductase; the paper selects it as a predicted FDR.</dd></dl>
-</li></ul>
-</details></td>
-</tr>
-<tr>
-  <td>XNR_5179 ferredoxin</td>
-  <td>is coexpressed in</td>
-  <td>Joint expression of XNR_5179 and XNR_4772</td>
-  <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.ncbi.nlm.nih.gov/protein/AGI91495.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2: XNR_5179 from pLJ54 is added to pLJ55 to make pLJ64, jointly expressing the two J1074 redox proteins.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI91495.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>XNR_5179 encodes a 100-aa ferredoxin at complement(CP004370.1:5881185..5881487), strain J1074. NCBI names this strain S. albidoflavus (taxon 1886); the paper uses S. albus. Exact-locus and GenPept-cross-reference UniProt queries did not resolve an accession; no homolog was substituted.</dd></dl>
-</li></ul>
-</details></td>
-</tr>
-<tr>
-  <td>Joint expression of XNR_5179 and XNR_4772</td>
-  <td>increases</td>
-  <td>1-deoxypentalenic acid production in engineered E. coli</td>
-  <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 5 compares pLJ64 with PenA/PntI-only pLJ9. The paired condition increased acid production; the authors reported no significant change for individual additions. No physical complex or native partnership is demonstrated.</dd></dl>
-</li></ul>
-</details></td>
-</tr>
-<tr>
-  <td>XNR_1673 ferredoxin</td>
-  <td>is expressed in</td>
-  <td>XNR_1673 addition to PenA/PntI</td>
-  <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.ncbi.nlm.nih.gov/protein/AGI88059.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2 traces J1074 XNR_1673 from pLJ53 to pLJ56; the host contains pMH1, pFZ81 and PenA/PntI.</dd></dl>
-</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI88059.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>J1074 XNR_1673, 106 aa, complement(CP004370.1:1979389..1979709). NCBI uses S. albidoflavus; the paper uses S. albus. UniProt query (AGI88059 OR gene:XNR_1673) returned no results; the versioned NCBI accession avoids substituting a homolog.</dd></dl>
-</li></ul>
-</details></td>
-</tr>
-<tr>
-  <td>XNR_1673 addition to PenA/PntI</td>
-  <td>was tested for effects on</td>
-  <td>1-deoxypentalenic acid production in engineered E. coli</td>
-  <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 5, pLJ56 versus pLJ9: the authors reported no significant change for individual additions. This is not evidence of zero effect or intrinsic inactivity.</dd><dt>snippet</dt><dd>no significant change in the yield of 6</dd></dl>
-</li></ul>
-</details></td>
-</tr>
-<tr>
-  <td>XNR_1673 ferredoxin</td>
-  <td>is coexpressed in</td>
-  <td>Joint expression of XNR_1673 and XNR_4478</td>
-  <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2: pLJ61 adds XNR_1673 from pLJ53 to pLJ10.</dd></dl>
-</li></ul>
-</details></td>
-</tr>
-<tr>
-  <td>XNR_4478 ferredoxin reductase</td>
-  <td>is coexpressed in</td>
-  <td>Joint expression of XNR_1673 and XNR_4478</td>
-  <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>pLJ10 supplies XNR_4478 to the pLJ61 paired condition.</dd></dl>
-</li></ul>
-</details></td>
-</tr>
-<tr>
-  <td>XNR_1673 ferredoxin</td>
-  <td>is coexpressed in</td>
-  <td>Joint expression of XNR_1673 and XNR_4772</td>
-  <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2: pLJ63 adds XNR_1673 from pLJ53 to pLJ55.</dd></dl>
-</li></ul>
-</details></td>
-</tr>
-<tr>
-  <td>XNR_4772 predicted ferredoxin reductase</td>
-  <td>is coexpressed in</td>
-  <td>Joint expression of XNR_1673 and XNR_4772</td>
-  <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>pLJ55 supplies XNR_4772 to the pLJ63 paired condition.</dd></dl>
-</li></ul>
-</details></td>
-</tr>
-<tr>
-  <td>Joint expression of XNR_1673 and XNR_4478</td>
-  <td>was tested for effects on</td>
-  <td>1-deoxypentalenic acid production in engineered E. coli</td>
-  <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>pLJ61 versus pLJ9: main text reports unchanged yield, but Figure 5 plots a higher mean. No causal null or statistical significance is inferred from this discrepancy.</dd><dt>snippet</dt><dd>the yield of 6 did not change</dd></dl>
-</li></ul>
-</details></td>
-</tr>
-<tr>
-  <td>Joint expression of XNR_1673 and XNR_4772</td>
-  <td>was tested for effects on</td>
-  <td>1-deoxypentalenic acid production in engineered E. coli</td>
-  <td></td>
-  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>pLJ63 versus pLJ9: main text reports unchanged yield, but Figure 5 plots a higher mean. This edge records testing, not a demonstrated absence of an effect.</dd></dl>
-</li></ul>
-</details></td>
-</tr>
-</table></div>
-<p class="sub">Every edge carries its own citation; an uncited edge is refused
-by the corpus tests.</p>
 <h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 5 edges</span></h2>
 <p class="sub">UC5319 PenA cyclization and the native penI deletion phenotype. Purified PenA evidence and genetic PenI evidence are distinct; the deletion does not establish an isolated PenI reaction or exclude indirect effects.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
@@ -674,6 +517,196 @@ by the corpus tests.</p>
   <td>1-deoxypentalenic acid</td>
   <td></td>
   <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/ja0639214</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/ja0639214</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Note 17&#39;s condition-specific result does not erase trace acid reported elsewhere or prove incapacity under other conditions.</dd><dt>snippet</dt><dd>no detectable formation</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">15 nodes, 19 edges</span></h2>
+<p class="sub">Engineered E. coli BL21(DE3) with PenA/PntI and alternative J1074 redox-gene expression conditions. XNR_5179-containing pairs increased intermediate production; XNR_1673 conditions are represented only as tested conditions. Neither native partnership, physical complex, nor increased final pentalenolactone yield is asserted.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>PntI</td>
+  <td>supports</td>
+  <td>1-deoxypentalenic acid production in engineered E. coli</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.uniprot.org/uniprotkb/E3VWJ1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 4C, PenA/PntI host.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/E3VWJ1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>S. arenae TU469 PntI, 457 aa; exact sequence match to ADO85579.1 from HQ292065.1:14292..15665. This unreviewed entry supplies sequence identity, not the experimental activity assignment from the newer paper.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>XNR_5179 ferredoxin</td>
+  <td>is coexpressed in</td>
+  <td>Joint expression of XNR_5179 and XNR_4478</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.ncbi.nlm.nih.gov/protein/AGI91495.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2: J1074 gene in pLJ62.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI91495.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>XNR_5179 encodes a 100-aa ferredoxin at complement(CP004370.1:5881185..5881487), strain J1074. NCBI names this strain S. albidoflavus (taxon 1886); the paper uses S. albus. Exact-locus and GenPept-cross-reference UniProt queries did not resolve an accession; no homolog was substituted.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>XNR_4478 ferredoxin reductase</td>
+  <td>is coexpressed in</td>
+  <td>Joint expression of XNR_5179 and XNR_4478</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.ncbi.nlm.nih.gov/protein/AGI90801.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2: J1074 gene in pLJ62.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI90801.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>XNR_4478 encodes a 420-aa ferredoxin reductase at complement(CP004370.1:5093104..5094366), strain J1074, currently S. albidoflavus in NCBI and S. albus in the paper. Retained the versioned NCBI Protein accession after exact-locus and GenPept-cross-reference UniProt queries returned no match.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Joint expression of XNR_5179 and XNR_4478</td>
+  <td>increases</td>
+  <td>1-deoxypentalenic acid production in engineered E. coli</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 5: the pair improved yield relative to PenA/PntI alone; the authors reported no significant change for individual additions.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>PenA</td>
+  <td>supplies pentalenene for</td>
+  <td>1-deoxypentalenic acid production in engineered E. coli</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.uniprot.org/uniprotkb/Q55012</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figures 4A and 5: the E. coli strains carry UC5319 penA; PenA is not the TU469 PntA used in the Streptomyces experiment.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q55012</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>UC5319 PenA, 337 aa; exact sequence match to both original clone AAA19131.1/U05213.1 and ADO85594.1/HQ292066.1. The 1994 source names Streptomyces UC5319; the cluster and 2025 paper name S. exfoliatus.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>XNR_4772 predicted ferredoxin reductase</td>
+  <td>is coexpressed in</td>
+  <td>Joint expression of XNR_5179 and XNR_4772</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.ncbi.nlm.nih.gov/protein/AGI91094.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2: pLJ52 carries J1074 XNR_4772, transferred via pLJ55 to pLJ64. Figure 5 and Tables S2-S4 use XNR_4772; an earlier main-text occurrence of XNR_4722 is inconsistent.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI91094.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>395-aa XNR_4772 at CP004370.1:5424795..5425982, strain J1074. NCBI calls this S. albidoflavus; the paper calls it S. albus. Exact-locus and GenPept-cross-reference UniProt searches did not resolve an accession; no homolog was substituted. NCBI labels it oxidoreductase; the paper selects it as a predicted FDR.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>XNR_5179 ferredoxin</td>
+  <td>is coexpressed in</td>
+  <td>Joint expression of XNR_5179 and XNR_4772</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.ncbi.nlm.nih.gov/protein/AGI91495.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2: XNR_5179 from pLJ54 is added to pLJ55 to make pLJ64, jointly expressing the two J1074 redox proteins.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI91495.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>XNR_5179 encodes a 100-aa ferredoxin at complement(CP004370.1:5881185..5881487), strain J1074. NCBI names this strain S. albidoflavus (taxon 1886); the paper uses S. albus. Exact-locus and GenPept-cross-reference UniProt queries did not resolve an accession; no homolog was substituted.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Joint expression of XNR_5179 and XNR_4772</td>
+  <td>increases</td>
+  <td>1-deoxypentalenic acid production in engineered E. coli</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 5 compares pLJ64 with PenA/PntI-only pLJ9. The paired condition increased acid production; the authors reported no significant change for individual additions. No physical complex or native partnership is demonstrated.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>XNR_1673 ferredoxin</td>
+  <td>is expressed in</td>
+  <td>XNR_1673 addition to PenA/PntI</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206<br>https://www.ncbi.nlm.nih.gov/protein/AGI88059.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2 traces J1074 XNR_1673 from pLJ53 to pLJ56; the host contains pMH1, pFZ81 and PenA/PntI.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI88059.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-03</dd><dt>notes</dt><dd>J1074 XNR_1673, 106 aa, complement(CP004370.1:1979389..1979709). NCBI uses S. albidoflavus; the paper uses S. albus. UniProt query (AGI88059 OR gene:XNR_1673) returned no results; the versioned NCBI accession avoids substituting a homolog.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>XNR_1673 addition to PenA/PntI</td>
+  <td>was tested for effects on</td>
+  <td>1-deoxypentalenic acid production in engineered E. coli</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Figure 5, pLJ56 versus pLJ9: the authors reported no significant change for individual additions. This is not evidence of zero effect or intrinsic inactivity.</dd><dt>snippet</dt><dd>no significant change in the yield of 6</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>XNR_1673 ferredoxin</td>
+  <td>is coexpressed in</td>
+  <td>Joint expression of XNR_1673 and XNR_4478</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2: pLJ61 adds XNR_1673 from pLJ53 to pLJ10.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>XNR_4478 ferredoxin reductase</td>
+  <td>is coexpressed in</td>
+  <td>Joint expression of XNR_1673 and XNR_4478</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>pLJ10 supplies XNR_4478 to the pLJ61 paired condition.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>XNR_1673 ferredoxin</td>
+  <td>is coexpressed in</td>
+  <td>Joint expression of XNR_1673 and XNR_4772</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Table S2: pLJ63 adds XNR_1673 from pLJ53 to pLJ55.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>XNR_4772 predicted ferredoxin reductase</td>
+  <td>is coexpressed in</td>
+  <td>Joint expression of XNR_1673 and XNR_4772</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>pLJ55 supplies XNR_4772 to the pLJ63 paired condition.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Joint expression of XNR_1673 and XNR_4478</td>
+  <td>was tested for effects on</td>
+  <td>1-deoxypentalenic acid production in engineered E. coli</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>pLJ61 versus pLJ9: main text reports unchanged yield, but Figure 5 plots a higher mean. No causal null or statistical significance is inferred from this discrepancy.</dd><dt>snippet</dt><dd>the yield of 6 did not change</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Joint expression of XNR_1673 and XNR_4772</td>
+  <td>was tested for effects on</td>
+  <td>1-deoxypentalenic acid production in engineered E. coli</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1016/j.engmic.2025.100206</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1016/j.engmic.2025.100206</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>pLJ63 versus pLJ9: main text reports unchanged yield, but Figure 5 plots a higher mean. This edge records testing, not a demonstrated absence of an effect.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>XNR_4478 ferredoxin reductase</td>
+  <td>has a sequence-identical UniProtKB example</td>
+  <td>XNR_4478 ferredoxin reductase (S. albidoflavus FRZ02_28405 UniProtKB example)</td>
+  <td>UniProtKB:D6AZ77 (Streptomyces albidoflavus FRZ02_28405) shares 100% amino-acid sequence identity (UPI0001AEE243) with Streptomyces albus J1074 XNR_4478 (AGI90801.1).</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/D6AZ77<br>https://www.uniprot.org/uniparc/UPI0001AEE243<br>https://www.ncbi.nlm.nih.gov/protein/AGI90801.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/D6AZ77</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>Active Streptomyces albidoflavus UniProtKB entry (D6AZ77, FRZ02_28405) for the UPI0001AEE243 ferredoxin-NADP reductase sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI0001AEE243</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>UniParc UPI0001AEE243 links CP004370.1 AGI90801.1 (XNR_4478) and active Streptomyces albidoflavus UniProtKB:D6AZ77 under a single 100%-identical sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI90801.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>CP004370.1 GenPept AGI90801.1 is the Streptomyces albus J1074 XNR_4478 ferredoxin reductase translation.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>XNR_1673 ferredoxin</td>
+  <td>has a sequence-identical UniProtKB example</td>
+  <td>XNR_1673 ferredoxin (S. albidoflavus FRZ02_12020 UniProtKB example)</td>
+  <td>UniProtKB:D6B5H4 (Streptomyces albidoflavus FRZ02_12020) shares 100% amino-acid sequence identity (UPI0001AEEB06) with Streptomyces albus J1074 XNR_1673 (AGI88059.1).</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/D6B5H4<br>https://www.uniprot.org/uniparc/UPI0001AEEB06<br>https://www.ncbi.nlm.nih.gov/protein/AGI88059.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/D6B5H4</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>Active Streptomyces albidoflavus UniProtKB entry (D6B5H4, FRZ02_12020) for the UPI0001AEEB06 ferredoxin sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI0001AEEB06</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>UniParc UPI0001AEEB06 links CP004370.1 AGI88059.1 (XNR_1673) and active Streptomyces albidoflavus UniProtKB:D6B5H4 under a single 100%-identical sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI88059.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>CP004370.1 GenPept AGI88059.1 is the Streptomyces albus J1074 XNR_1673 ferredoxin translation.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>XNR_4772 predicted ferredoxin reductase</td>
+  <td>has a sequence-identical UniProtKB example</td>
+  <td>XNR_4772 predicted ferredoxin reductase (S. wadayamensis DC60_00205 UniProtKB example)</td>
+  <td>UniProtKB:A0ABR4S4L1 (Streptomyces wadayamensis DC60_00205, S. albidoflavus clade) shares 100% amino-acid sequence identity (UPI0001AECE6D) with Streptomyces albus J1074 XNR_4772 (AGI91094.1).</td>
+  <td><details class="graph-evidence"><summary class="mono">https://www.uniprot.org/uniprotkb/A0ABR4S4L1<br>https://www.uniprot.org/uniparc/UPI0001AECE6D<br>https://www.ncbi.nlm.nih.gov/protein/AGI91094.1</summary><ul><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0ABR4S4L1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>Active Streptomyces wadayamensis UniProtKB entry (A0ABR4S4L1, DC60_00205) for the UPI0001AECE6D pyridine nucleotide-disulfide oxidoreductase sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniparc/UPI0001AECE6D</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>UniParc UPI0001AECE6D links CP004370.1 AGI91094.1 (XNR_4772) and active UniProtKB:A0ABR4S4L1 under a single 100%-identical sequence.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AGI91094.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-17</dd><dt>notes</dt><dd>CP004370.1 GenPept AGI91094.1 is the Streptomyces albus J1074 XNR_4772 translation.</dd></dl>
 </li></ul>
 </details></td>
 </tr>

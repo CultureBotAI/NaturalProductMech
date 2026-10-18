@@ -65,6 +65,26 @@ graph:
     label: Staged-assay assignment and construct limits
     node_type: OTHER
     grounding_status: REVIEW_NEEDED
+  - node_id: novm_native
+    label: Deposited native NovM sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F5
+  - node_id: novp_native
+    label: Deposited native NovP sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F2
+  - node_id: novn_native
+    label: Deposited native NovN sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F4
+  - node_id: novo_native
+    label: Deposited native NovO sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F3
   edges:
   - subject: m
     predicate: was_supplied_in
@@ -229,10 +249,77 @@ graph:
       evidence_type: CURATOR_INFERENCE
       notes: Official supporting information, p.3; all four pages inspected as text
         and visually. Product list versus three stated orders.
+  - subject: novm_native
+    predicate: is_native_reference_for
+    object: m
+    notes: UniProtKB:Q9L9F5 is the deposited native NovM sequence reference for the
+      2005 supplement NovM preparation.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:Q9L9F5 (Deposited native
+        NovM sequence reference).
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q9L9F5 is the deposited native NovM sequence reference for
+        the 2005 supplement NovM preparation.
+  - subject: novp_native
+    predicate: is_native_reference_for
+    object: p
+    notes: UniProtKB:Q9L9F2 is the deposited native NovP sequence reference for the
+      2005 supplement NovP preparation.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:Q9L9F2 (Deposited native
+        NovP sequence reference).
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q9L9F2 is the deposited native NovP sequence reference for
+        the 2005 supplement NovP preparation.
+  - subject: novn_native
+    predicate: is_native_reference_for
+    object: n
+    notes: UniProtKB:Q9L9F4 is the deposited native NovN sequence reference for the
+      2005 supplement NovN preparation.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:Q9L9F4 (Deposited native
+        NovN sequence reference).
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q9L9F4 is the deposited native NovN sequence reference for
+        the 2005 supplement NovN preparation.
+  - subject: novo_native
+    predicate: is_native_reference_for
+    object: o
+    notes: UniProtKB:Q9L9F3 is the deposited native NovO sequence reference for the
+      2005 supplement NovO preparation.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-17'
+      notes: Deposited native sequence reference UniProtKB:Q9L9F3 (Deposited native
+        NovO sequence reference).
+    - reference: DOI:10.1021/bi051599o.s001
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: UniProtKB:Q9L9F3 is the deposited native NovO sequence reference for
+        the 2005 supplement NovO preparation.
 curation_history:
 - timestamp: '2026-10-05T00:15:09Z'
   curator: codex
   action: RECORD_CURATED
   changes: 'Add cathomycin-novm-staged-tailoring-and-product-mass-conflict with source-bounded
     NovM/redox evidence and #563 findings.'
+  llm_assisted: true
+- timestamp: '2026-10-18T03:34:18Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added deposited native sequence reference node(s) (UniProtKB:Q9L9F5, UniProtKB:Q9L9F2,
+    UniProtKB:Q9L9F4, UniProtKB:Q9L9F3) while keeping recombinant/engineered assay
+    preparations ungrounded.
   llm_assisted: true
