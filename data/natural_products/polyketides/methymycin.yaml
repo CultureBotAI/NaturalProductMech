@@ -12,10 +12,6 @@ biosynthesis_origin: NATURAL_PRODUCT
 definition: A twelve-membered macrolide antibiotic that is biosynthesised by Streptomyces
   venezuelae.
 definition_source: CHEBI:29630
-synonyms:
-- value: desosamine
-  synonym_type: RELATED_SYNONYM
-  source: mibig:BGC0000094
 np_classification:
   tool: NPClassifier
   tool_version: npclassifier.gnps2.org@2026-09-07
@@ -268,7 +264,6 @@ bgc_class:
 - SACCHARIDE
 xrefs:
 - npatlas:NPA01238
-- pubchem:5282034
 producer_taxon_groups:
 - ACTINOBACTERIAL
 producer_organisms:
@@ -284,18 +279,6 @@ producer_organisms:
   - reference: PMID:9770448
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000094 entry version 5; citation taken from the entry level
-- taxon_id: NCBITaxon:54571
-  taxon_label: Streptomyces venezuelae
-  evidence_basis: SOURCE_ASSERTION
-  biosynthetic_gene_cluster: mibig:BGC0000898
-  source: MIBIG
-  source_version: '5'
-  notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
-    this field grades the taxon claim, which is a different question.'
-  evidence:
-  - reference: PMID:9770448
-    evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0000898 entry version 5; citation taken from the entry level
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0000094
   entry_version: '5'
@@ -313,30 +296,12 @@ biosynthetic_gene_clusters:
   locus_evidence_methods:
   - Enzymatic assays
   link_evidence_basis: CLUSTER_DEMONSTRATED
-- accession: mibig:BGC0000898
-  entry_version: '5'
-  entry_status: active
-  organism_taxon_id: NCBITaxon:54571
-  organism_label: Streptomyces venezuelae
-  evidence:
-  - reference: PMID:9770448
-    evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0000898 entry version 5; citation taken from the entry level
-  genome_accession: genbank:AF079762.1
-  bgc_class:
-  - SACCHARIDE
-  link_evidence_basis: CLUSTER_UNSTATED
 source_concepts:
 - source: MIBIG
   source_id: BGC0000094
   source_label: methymycin
   source_version: '5'
   minted_identifier: naturalproductmech:mibig-4fba2c0555
-- source: MIBIG
-  source_id: BGC0000898
-  source_label: desosamine
-  source_version: '5'
-  minted_identifier: naturalproductmech:mibig-9787d70812
 - source: CHEBI
   source_id: CHEBI:29630
   source_label: methymycin
@@ -344,19 +309,6 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-3b92b0c7d7
 grounding_status: EXACT
 curation_status: SEEDED
-discussions:
-- discussion_id: name-disagreement
-  kind: CONTROVERSY
-  status: OPEN
-  prompt: ChEBI calls this structure 'methymycin' and MIBiG calls it 'desosamine'.
-    They share a Standard InChIKey, so if the names denote different compounds then
-    one upstream record has the wrong structure. Check which.
-- discussion_id: shared-structure
-  kind: CURATION_TODO
-  status: OPEN
-  prompt: 'This structure is reported by more than one MIBiG entry: BGC0000094, BGC0000898.
-    Confirm they describe the same compound rather than an upstream cross-reference
-    error.'
 biosynthetic_pathway:
 - step_number: 1
   enzyme_id: UniProtKB:O87605
@@ -467,6 +419,10 @@ curation_history:
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
 - timestamp: '2026-10-13T23:57:24Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-19T05:49:54Z'
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.

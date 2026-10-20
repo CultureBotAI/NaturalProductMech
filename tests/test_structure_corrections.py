@@ -29,7 +29,8 @@ def inputs():
                if row["mibig_accession"] == "BGC0000024"]
     target, = [row for row in seed.read_tsv(ROOT / "data/raw/chebi_structures.tsv")
                if row["chebi_id"] == "CHEBI:80024"]
-    correction, = seed.read_tsv(seed.MIBIG_STRUCTURE_CORRECTIONS)
+    correction, = [row for row in seed.read_tsv(seed.MIBIG_STRUCTURE_CORRECTIONS)
+                   if row["source_id"] == "BGC0000024:1"]
     return [source], [correction], [target]
 
 
@@ -106,9 +107,45 @@ def test_chebi_collision_rejected(inputs):
         apply_structure_corrections(*inputs)
 
 
+def test_split_shared_requires_shared_source_with_remaining_owner(inputs):
+    inputs[1][0]["action"] = "SPLIT_SHARED_WITH_CHEBI"
+    with pytest.raises(ValueError, match="remaining owner"):
+        apply_structure_corrections(*inputs)
+
+
+def test_split_shared_structure_creates_desosamine_and_preserves_methymycin():
+    mibig_rows = [row for row in seed.read_tsv(ROOT / "data/raw/mibig_compounds.tsv")
+                  if row["mibig_accession"] in {"BGC0000094", "BGC0000898", "BGC0000899"}]
+    chebi_rows = [row for row in seed.read_tsv(ROOT / "data/raw/chebi_structures.tsv")
+                  if row["chebi_id"] in {"CHEBI:29630", "CHEBI:32540"}]
+    correction, = [row for row in seed.read_tsv(seed.MIBIG_STRUCTURE_CORRECTIONS)
+                   if row["source_id"] == "BGC0000898:1"]
+    corrected = apply_structure_corrections(mibig_rows, [correction], chebi_rows)
+    by_id = {f"{row['mibig_accession']}:{row['compound_index']}": row for row in corrected}
+    assert by_id["BGC0000094:1"]["standard_inchi_key"] == "HUKYPYXOBINMND-HYUJHOPRSA-N"
+    assert "structure_correction_note" not in by_id["BGC0000094:1"]
+    assert by_id["BGC0000898:1"]["standard_inchi_key"] == "VTJCSBJRQLZNHE-CSMHCCOUSA-N"
+    assert by_id["BGC0000898:1"]["structure_source"] == "CHEBI"
+    assert by_id["BGC0000898:1"]["structure_source_id"] == "CHEBI:32540"
+    assert by_id["BGC0000898:1"]["database_ids"] == ""
+    assert "structure_correction_old_key" not in by_id["BGC0000898:1"]
+    built = {
+        doc["identifier"]: doc
+        for doc in seed.build_records({
+            "mibig_compounds": mibig_rows,
+            "chebi_structures": chebi_rows,
+            "mibig_structure_corrections": [correction],
+        })
+    }
+    assert built["naturalproductmech:mibig-bc0da8b0f6"]["_slug"] == "desosamine"
+    assert built["CHEBI:32540"]["_slug"] == "desosamine-2"
+    assert built["CHEBI:29630"]["_slug"] == "methymycin"
+
+
 def test_corrected_seed_joins_only_corrected_key(inputs):
     inventories = seed.read_inventories()
     inventories["mibig_compounds"] = inputs[0]
+    inventories["mibig_structure_corrections"] = inputs[1]
     inventories.pop("mibig_locus_evidence_overrides")
     inventories.pop("mibig_producer_strains")
     inventories.pop("mibig_producer_isolates")

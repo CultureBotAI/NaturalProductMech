@@ -22,7 +22,7 @@ def apply_structure_corrections(
     corrections: list[dict[str, str]],
     chebi_rows: list[dict[str, str]],
 ) -> list[dict[str, str]]:
-    """Replace a uniquely owned structure with a pinned ChEBI default structure.
+    """Replace a uniquely owned structure or split a shared structure onto a pinned ChEBI entry.
 
     No equivalence is asserted between old and new keys. All old xrefs are
     withheld, and other inventories still join only on their own exact keys.
@@ -30,6 +30,7 @@ def apply_structure_corrections(
     """
     result = [dict(row) for row in rows]
     source_keys = Counter(row["standard_inchi_key"] for row in rows)
+    remaining_source_keys = Counter(source_keys)
     seen_sources: set[str] = set()
     seen_targets: set[str] = set()
     for correction in corrections:
@@ -42,7 +43,8 @@ def apply_structure_corrections(
                for field in required):
             raise ValueError("structure correction requires complete pins, chemistry and attribution")
         source_id = correction["source_id"]
-        if correction.get("action") != "REPLACE_WITH_CHEBI":
+        action = correction.get("action")
+        if action not in {"REPLACE_WITH_CHEBI", "SPLIT_SHARED_WITH_CHEBI"}:
             raise ValueError(f"{source_id}: invalid structure correction action")
         if source_id in seen_sources:
             raise ValueError(f"{source_id}: duplicate structure correction")
@@ -80,10 +82,17 @@ def apply_structure_corrections(
                 or not re.fullmatch(r"CHEBI:\d+", target["chebi_id"])
                 or not re.fullmatch(r"[A-Z]{14}-[A-Z]{10}-[A-Z]", new_key)):
             raise ValueError(f"{source_id}: target must be a structured 3-star ChEBI entry")
-        if (not old_key or source_keys[old_key] != 1 or new_key in source_keys
-                or new_key in seen_targets
+        if (not old_key or new_key in source_keys or new_key in seen_targets
                 or sum(row["standard_inchi_key"] == new_key for row in chebi_rows) != 1):
             raise ValueError(f"{source_id}: structure correction requires unambiguous, distinct owners")
+        if action == "REPLACE_WITH_CHEBI":
+            if source_keys[old_key] != 1:
+                raise ValueError(f"{source_id}: structure correction requires unambiguous, distinct owners")
+        elif source_keys[old_key] <= 1 or remaining_source_keys[old_key] <= 1:
+            raise ValueError(
+                f"{source_id}: split structure correction requires a shared source key with a remaining owner"
+            )
+        remaining_source_keys[old_key] -= 1
         seen_targets.add(new_key)
         note = (
             f"Curated structure replacement for MIBiG {source_id}, version "
@@ -105,6 +114,7 @@ def apply_structure_corrections(
             "structure_source_id": target["chebi_id"],
             "structure_correction_note": note,
             "structure_correction_reference": reference,
-            "structure_correction_old_key": old_key,
         })
+        if action == "REPLACE_WITH_CHEBI":
+            result[index]["structure_correction_old_key"] = old_key
     return result
