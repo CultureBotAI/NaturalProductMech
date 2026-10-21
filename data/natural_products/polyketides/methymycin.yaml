@@ -362,9 +362,10 @@ biosynthetic_pathway:
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-10-20'
     notes: Reviewed Swiss-Prot UniProtKB:Q9ZGH7 (426 aa, gene desVII) in Streptomyces
-      venezuelae cross-references EMBL AF079762 protein AAC68677.1 and annotates macrolide
-      glycosyltransferase activity requiring DesVIII (UniProtKB:Q9ZGH8) to convert
-      narbonolide and dTDP-alpha-D-desosamine to narbomycin.
+      venezuelae cross-references EMBL AF079762 protein AAC68677.1, EC 2.4.1.277,
+      and RHEA:31627, annotating macrolide glycosyltransferase activity requiring
+      DesVIII (UniProtKB:Q9ZGH8) to convert 10-deoxymethynolide and dTDP-alpha-D-desosamine
+      to 10-deoxymethymycin (YC-17).
   - reference: https://www.uniprot.org/uniprotkb/Q9ZGH8
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-10-20'
@@ -497,8 +498,8 @@ causal_graphs:
       retrieved_on: '2026-10-20'
       notes: Reviewed Swiss-Prot UniProtKB:Q9ZGH7 (426 aa, gene desVII) in Streptomyces
         venezuelae cross-references EMBL AF079762 protein AAC68677.1 and annotates
-        macrolide glycosyltransferase activity requiring DesVIII (UniProtKB:Q9ZGH8)
-        to convert narbonolide and dTDP-alpha-D-desosamine to narbomycin.
+        obligate heterohexameric complex formation with the auxiliary protein DesVIII
+        (UniProtKB:Q9ZGH8).
     - reference: https://www.uniprot.org/uniprotkb/Q9ZGH8
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-20'
@@ -510,13 +511,6 @@ causal_graphs:
       retrieved_on: '2026-10-20'
       notes: GenBank AF079762.1 (MIBiG BGC0000898) annotates desVIII at CDS 119..1327
         (protein_id AAC68676.1) and desVII at CDS 1475..2755 (protein_id AAC68677.1).
-    - reference: RHEA:31627
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-20'
-      notes: RHEA:31627 grounds EC 2.4.1.277 transfer of the D-desosaminyl group from
-        dTDP-alpha-D-desosamine(1-) (CHEBI:63260) onto 10-deoxymethynolide (CHEBI:29461)
-        to form 10-deoxymethymycin(1+) (CHEBI:63307) and dTDP(3-); this record uses
-        the corresponding neutral ChEBI identifiers CHEBI:27948 and CHEBI:29706.
   - subject: desviii
     predicate: assembles into
     object: desvii_desviii
@@ -562,8 +556,8 @@ causal_graphs:
       retrieved_on: '2026-10-20'
       notes: Reviewed Swiss-Prot UniProtKB:Q9ZGH7 (426 aa, gene desVII) in Streptomyces
         venezuelae cross-references EMBL AF079762 protein AAC68677.1 and annotates
-        macrolide glycosyltransferase activity requiring DesVIII (UniProtKB:Q9ZGH8)
-        to convert narbonolide and dTDP-alpha-D-desosamine to narbomycin.
+        obligate heterohexameric complex formation with the auxiliary protein DesVIII
+        (UniProtKB:Q9ZGH8).
     - reference: https://www.uniprot.org/uniprotkb/Q9ZGH8
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-20'
@@ -575,13 +569,6 @@ causal_graphs:
       retrieved_on: '2026-10-20'
       notes: GenBank AF079762.1 (MIBiG BGC0000898) annotates desVIII at CDS 119..1327
         (protein_id AAC68676.1) and desVII at CDS 1475..2755 (protein_id AAC68677.1).
-    - reference: RHEA:31627
-      evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-20'
-      notes: RHEA:31627 grounds EC 2.4.1.277 transfer of the D-desosaminyl group from
-        dTDP-alpha-D-desosamine(1-) (CHEBI:63260) onto 10-deoxymethynolide (CHEBI:29461)
-        to form 10-deoxymethymycin(1+) (CHEBI:63307) and dTDP(3-); this record uses
-        the corresponding neutral ChEBI identifiers CHEBI:27948 and CHEBI:29706.
   - subject: deoxymethynolide_10
     predicate: is glycosylated by
     object: desvii_desviii
@@ -626,9 +613,10 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-20'
       notes: Reviewed Swiss-Prot UniProtKB:Q9ZGH7 (426 aa, gene desVII) in Streptomyces
-        venezuelae cross-references EMBL AF079762 protein AAC68677.1 and annotates
-        macrolide glycosyltransferase activity requiring DesVIII (UniProtKB:Q9ZGH8)
-        to convert narbonolide and dTDP-alpha-D-desosamine to narbomycin.
+        venezuelae cross-references EMBL AF079762 protein AAC68677.1, EC 2.4.1.277,
+        and RHEA:31627, annotating macrolide glycosyltransferase activity requiring
+        DesVIII (UniProtKB:Q9ZGH8) to convert 10-deoxymethynolide and dTDP-alpha-D-desosamine
+        to 10-deoxymethymycin (YC-17).
     - reference: https://www.uniprot.org/uniprotkb/Q9ZGH8
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-20'
@@ -692,9 +680,10 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-20'
       notes: Reviewed Swiss-Prot UniProtKB:Q9ZGH7 (426 aa, gene desVII) in Streptomyces
-        venezuelae cross-references EMBL AF079762 protein AAC68677.1 and annotates
-        macrolide glycosyltransferase activity requiring DesVIII (UniProtKB:Q9ZGH8)
-        to convert narbonolide and dTDP-alpha-D-desosamine to narbomycin.
+        venezuelae cross-references EMBL AF079762 protein AAC68677.1, EC 2.4.1.277,
+        and RHEA:31627, annotating macrolide glycosyltransferase activity requiring
+        DesVIII (UniProtKB:Q9ZGH8) to convert 10-deoxymethynolide and dTDP-alpha-D-desosamine
+        to 10-deoxymethymycin (YC-17).
     - reference: https://www.uniprot.org/uniprotkb/Q9ZGH8
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-20'
@@ -758,9 +747,10 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-20'
       notes: Reviewed Swiss-Prot UniProtKB:Q9ZGH7 (426 aa, gene desVII) in Streptomyces
-        venezuelae cross-references EMBL AF079762 protein AAC68677.1 and annotates
-        macrolide glycosyltransferase activity requiring DesVIII (UniProtKB:Q9ZGH8)
-        to convert narbonolide and dTDP-alpha-D-desosamine to narbomycin.
+        venezuelae cross-references EMBL AF079762 protein AAC68677.1, EC 2.4.1.277,
+        and RHEA:31627, annotating macrolide glycosyltransferase activity requiring
+        DesVIII (UniProtKB:Q9ZGH8) to convert 10-deoxymethynolide and dTDP-alpha-D-desosamine
+        to 10-deoxymethymycin (YC-17).
     - reference: https://www.uniprot.org/uniprotkb/Q9ZGH8
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-20'
@@ -851,7 +841,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
-- timestamp: '2026-10-21T02:54:35Z'
+- timestamp: '2026-10-21T07:19:29Z'
   curator: claude
   action: RECORD_CURATED
   changes: Extended the Streptomyces venezuelae methymycin biosynthetic_pathway and
