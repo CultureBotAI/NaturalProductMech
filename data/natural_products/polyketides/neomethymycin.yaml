@@ -222,6 +222,80 @@ grounding_status: EXACT
 curation_status: SEEDED
 biosynthetic_pathway:
 - step_number: 1
+  enzyme_id: UniProtKB:Q9ZGH7
+  enzyme_label: DesVII macrolide glycosyltransferase
+  reaction_id: RHEA:31627
+  substrate: CHEBI:29461
+  product: CHEBI:29706
+  notes: DesVII (UniProtKB:Q9ZGH7, AAC68677.1, AF079762.1:1475..2755, EC 2.4.1.277)
+    functions in an obligate (alpha-beta)3 complex with the auxiliary protein DesVIII
+    (UniProtKB:Q9ZGH8, AAC68676.1, AF079762.1:119..1327) to transfer the D-desosamine
+    moiety from dTDP-alpha-D-desosamine (CHEBI:27948) onto the 12-membered macrolactone
+    aglycone 10-deoxymethynolide (CHEBI:29461) to form 10-deoxymethymycin (YC-17,
+    CHEBI:29706). RHEA:31627 represents the same reaction using the charged ChEBI
+    species CHEBI:63260 and CHEBI:63307.
+  evidence:
+  - reference: DOI:10.1021/ja049967j
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: DesVII has already been proven responsible for the coupling of TDP-D-desosamine
+      with both 10-deoxymethynolide and narbonolide in S. venezuelae, and it has was
+      also shown under in vitro conditions to require an additional protein, DesVIII,
+      for full activity
+    notes: Borisova et al. (PMID:15161264) purified Streptomyces venezuelae DesVII
+      and DesVIII and demonstrated in vitro that DesVII requires the auxiliary protein
+      DesVIII to transfer D-desosamine from TDP-D-desosamine onto narbonolide and
+      10-deoxymethynolide.
+  - reference: DOI:10.1021/bi1007657
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Together, DesVII and DesVIII serve as the glycosylation catalyst necessary
+      to construct the bacterial macrolide antibiotics methymycin, neomethymycin,
+      narbomycin, and pikromycin in Streptomyces venezuelae
+    notes: Borisova and Liu (PMID:20695498) characterized the tight (alpha-beta)3
+      heterohexameric Streptomyces venezuelae DesVII/DesVIII complex and showed that
+      coexpression and complex formation with DesVIII are required for robust DesVII
+      macrolide glycosyltransferase activity.
+  - reference: DOI:10.1016/j.gene.2006.08.021
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Our results demonstrated that DesVIII is needed to assist the reaction
+      deployed by the glycosyltransferase DesVII in vivo
+    notes: Hong et al. (PMID:17049185) demonstrated by in vivo bioconversion in Streptomyces
+      lividans that DesVIII is required alongside DesVII to glycosylate narbonolide
+      to narbomycin and 10-deoxymethynolide to YC-17.
+  - reference: DOI:10.1073/pnas.95.21.12111
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Dedicated to the biosynthesis of dTDP-D-desosamine, an essential deoxysugar
+      component in the macrolide antibiotics methymycin, neomethymycin, narbomycin,
+      and pikromycin
+    notes: Xue et al. (PMID:9770448) sequenced the Streptomyces venezuelae ATCC 15439
+      pik/des cluster (AF079762.1 / BGC0000898) and identified desVII and desVIII
+      in the desosamine biosynthesis and transfer locus.
+  - reference: https://www.uniprot.org/uniprotkb/Q9ZGH7
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-20'
+    notes: Reviewed Swiss-Prot UniProtKB:Q9ZGH7 (426 aa, gene desVII) in Streptomyces
+      venezuelae cross-references EMBL AF079762 protein AAC68677.1, EC 2.4.1.277,
+      and RHEA:31627, annotating macrolide glycosyltransferase activity requiring
+      DesVIII (UniProtKB:Q9ZGH8) to convert 10-deoxymethynolide and dTDP-alpha-D-desosamine
+      to 10-deoxymethymycin (YC-17).
+  - reference: https://www.uniprot.org/uniprotkb/Q9ZGH8
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-20'
+    notes: Reviewed Swiss-Prot UniProtKB:Q9ZGH8 (402 aa, gene desVIII) in Streptomyces
+      venezuelae cross-references EMBL AF079762 protein AAC68676.1 and annotates the
+      glycosyltransferase auxiliary protein required for DesVII activity.
+  - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF079762.1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-20'
+    notes: GenBank AF079762.1 (MIBiG BGC0000898) annotates desVIII at CDS 119..1327
+      (protein_id AAC68676.1) and desVII at CDS 1475..2755 (protein_id AAC68677.1).
+  - reference: RHEA:31627
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-20'
+    notes: RHEA:31627 grounds EC 2.4.1.277 transfer of the D-desosaminyl group from
+      dTDP-alpha-D-desosamine(1-) (CHEBI:63260) onto 10-deoxymethynolide (CHEBI:29461)
+      to form 10-deoxymethymycin(1+) (CHEBI:63307) and dTDP(3-); this record uses
+      the corresponding neutral ChEBI identifiers CHEBI:27948 and CHEBI:29706.
+- step_number: 2
   enzyme_id: UniProtKB:O87605
   enzyme_label: PikC cytochrome P450 monooxygenase
   substrate: CHEBI:29706
@@ -247,8 +321,33 @@ causal_graphs:
 - graph_id: neomethymycin-pikc-hydroxylation
   scope: BIOSYNTHESIS
   description: Partial Streptomyces venezuelae neomethymycin biosynthesis graph for
-    PikC-catalyzed YC-17 hydroxylation to neomethymycin.
+    DesVII/DesVIII-catalyzed 10-deoxymethynolide glycosylation to 10-deoxymethymycin
+    (YC-17) followed by PikC-catalyzed hydroxylation to neomethymycin.
   nodes:
+  - node_id: deoxymethynolide_10
+    label: 10-deoxymethynolide
+    node_type: PRECURSOR
+    identifier: CHEBI:29461
+    grounding_status: GROUNDED
+  - node_id: dtdp_alpha_d_desosamine
+    label: dTDP-alpha-D-desosamine
+    node_type: PRECURSOR
+    identifier: CHEBI:27948
+    grounding_status: GROUNDED
+  - node_id: desvii
+    label: DesVII macrolide glycosyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:Q9ZGH7
+    grounding_status: GROUNDED
+  - node_id: desviii
+    label: DesVIII glycosyltransferase auxiliary protein
+    node_type: PROTEIN
+    identifier: UniProtKB:Q9ZGH8
+    grounding_status: GROUNDED
+  - node_id: desvii_desviii
+    label: DesVII/DesVIII glycosyltransferase complex
+    node_type: PROTEIN_COMPLEX
+    grounding_status: UNGROUNDED
   - node_id: yc_17
     label: 10-deoxymethymycin
     node_type: PRECURSOR
@@ -265,6 +364,322 @@ causal_graphs:
     identifier: CHEBI:29656
     grounding_status: GROUNDED
   edges:
+  - subject: desvii
+    predicate: assembles into
+    object: desvii_desviii
+    notes: DesVII (UniProtKB:Q9ZGH7) is the catalytic glycosyltransferase subunit
+      of the Streptomyces venezuelae DesVII/DesVIII (alpha-beta)3 complex.
+    evidence:
+    - reference: DOI:10.1021/ja049967j
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: DesVII has already been proven responsible for the coupling of TDP-D-desosamine
+        with both 10-deoxymethynolide and narbonolide in S. venezuelae, and it has
+        was also shown under in vitro conditions to require an additional protein,
+        DesVIII, for full activity
+      notes: Borisova et al. (PMID:15161264) purified Streptomyces venezuelae DesVII
+        and DesVIII and demonstrated in vitro that DesVII requires the auxiliary protein
+        DesVIII to transfer D-desosamine from TDP-D-desosamine onto narbonolide and
+        10-deoxymethynolide.
+    - reference: DOI:10.1021/bi1007657
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Together, DesVII and DesVIII serve as the glycosylation catalyst necessary
+        to construct the bacterial macrolide antibiotics methymycin, neomethymycin,
+        narbomycin, and pikromycin in Streptomyces venezuelae
+      notes: Borisova and Liu (PMID:20695498) characterized the tight (alpha-beta)3
+        heterohexameric Streptomyces venezuelae DesVII/DesVIII complex and showed
+        that coexpression and complex formation with DesVIII are required for robust
+        DesVII macrolide glycosyltransferase activity.
+    - reference: DOI:10.1016/j.gene.2006.08.021
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Our results demonstrated that DesVIII is needed to assist the reaction
+        deployed by the glycosyltransferase DesVII in vivo
+      notes: Hong et al. (PMID:17049185) demonstrated by in vivo bioconversion in
+        Streptomyces lividans that DesVIII is required alongside DesVII to glycosylate
+        narbonolide to narbomycin and 10-deoxymethynolide to YC-17.
+    - reference: DOI:10.1073/pnas.95.21.12111
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Dedicated to the biosynthesis of dTDP-D-desosamine, an essential deoxysugar
+        component in the macrolide antibiotics methymycin, neomethymycin, narbomycin,
+        and pikromycin
+      notes: Xue et al. (PMID:9770448) sequenced the Streptomyces venezuelae ATCC
+        15439 pik/des cluster (AF079762.1 / BGC0000898) and identified desVII and
+        desVIII in the desosamine biosynthesis and transfer locus.
+    - reference: https://www.uniprot.org/uniprotkb/Q9ZGH7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-20'
+      notes: Reviewed Swiss-Prot UniProtKB:Q9ZGH7 (426 aa, gene desVII) in Streptomyces
+        venezuelae cross-references EMBL AF079762 protein AAC68677.1 and annotates
+        obligate heterohexameric complex formation with the auxiliary protein DesVIII
+        (UniProtKB:Q9ZGH8).
+    - reference: https://www.uniprot.org/uniprotkb/Q9ZGH8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-20'
+      notes: Reviewed Swiss-Prot UniProtKB:Q9ZGH8 (402 aa, gene desVIII) in Streptomyces
+        venezuelae cross-references EMBL AF079762 protein AAC68676.1 and annotates
+        the glycosyltransferase auxiliary protein required for DesVII activity.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF079762.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-20'
+      notes: GenBank AF079762.1 (MIBiG BGC0000898) annotates desVIII at CDS 119..1327
+        (protein_id AAC68676.1) and desVII at CDS 1475..2755 (protein_id AAC68677.1).
+  - subject: desviii
+    predicate: assembles into
+    object: desvii_desviii
+    notes: DesVIII (UniProtKB:Q9ZGH8) is the auxiliary protein subunit required for
+      DesVII activity in the DesVII/DesVIII complex.
+    evidence:
+    - reference: DOI:10.1021/ja049967j
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: DesVII has already been proven responsible for the coupling of TDP-D-desosamine
+        with both 10-deoxymethynolide and narbonolide in S. venezuelae, and it has
+        was also shown under in vitro conditions to require an additional protein,
+        DesVIII, for full activity
+      notes: Borisova et al. (PMID:15161264) purified Streptomyces venezuelae DesVII
+        and DesVIII and demonstrated in vitro that DesVII requires the auxiliary protein
+        DesVIII to transfer D-desosamine from TDP-D-desosamine onto narbonolide and
+        10-deoxymethynolide.
+    - reference: DOI:10.1021/bi1007657
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Together, DesVII and DesVIII serve as the glycosylation catalyst necessary
+        to construct the bacterial macrolide antibiotics methymycin, neomethymycin,
+        narbomycin, and pikromycin in Streptomyces venezuelae
+      notes: Borisova and Liu (PMID:20695498) characterized the tight (alpha-beta)3
+        heterohexameric Streptomyces venezuelae DesVII/DesVIII complex and showed
+        that coexpression and complex formation with DesVIII are required for robust
+        DesVII macrolide glycosyltransferase activity.
+    - reference: DOI:10.1016/j.gene.2006.08.021
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Our results demonstrated that DesVIII is needed to assist the reaction
+        deployed by the glycosyltransferase DesVII in vivo
+      notes: Hong et al. (PMID:17049185) demonstrated by in vivo bioconversion in
+        Streptomyces lividans that DesVIII is required alongside DesVII to glycosylate
+        narbonolide to narbomycin and 10-deoxymethynolide to YC-17.
+    - reference: DOI:10.1073/pnas.95.21.12111
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Dedicated to the biosynthesis of dTDP-D-desosamine, an essential deoxysugar
+        component in the macrolide antibiotics methymycin, neomethymycin, narbomycin,
+        and pikromycin
+      notes: Xue et al. (PMID:9770448) sequenced the Streptomyces venezuelae ATCC
+        15439 pik/des cluster (AF079762.1 / BGC0000898) and identified desVII and
+        desVIII in the desosamine biosynthesis and transfer locus.
+    - reference: https://www.uniprot.org/uniprotkb/Q9ZGH7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-20'
+      notes: Reviewed Swiss-Prot UniProtKB:Q9ZGH7 (426 aa, gene desVII) in Streptomyces
+        venezuelae cross-references EMBL AF079762 protein AAC68677.1 and annotates
+        obligate heterohexameric complex formation with the auxiliary protein DesVIII
+        (UniProtKB:Q9ZGH8).
+    - reference: https://www.uniprot.org/uniprotkb/Q9ZGH8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-20'
+      notes: Reviewed Swiss-Prot UniProtKB:Q9ZGH8 (402 aa, gene desVIII) in Streptomyces
+        venezuelae cross-references EMBL AF079762 protein AAC68676.1 and annotates
+        the glycosyltransferase auxiliary protein required for DesVII activity.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF079762.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-20'
+      notes: GenBank AF079762.1 (MIBiG BGC0000898) annotates desVIII at CDS 119..1327
+        (protein_id AAC68676.1) and desVII at CDS 1475..2755 (protein_id AAC68677.1).
+  - subject: deoxymethynolide_10
+    predicate: is glycosylated by
+    object: desvii_desviii
+    notes: The 12-membered macrolactone aglycone 10-deoxymethynolide (CHEBI:29461)
+      is glycosylated at C-3 by the DesVII/DesVIII complex (RHEA:31627).
+    evidence:
+    - reference: DOI:10.1021/ja049967j
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: DesVII has already been proven responsible for the coupling of TDP-D-desosamine
+        with both 10-deoxymethynolide and narbonolide in S. venezuelae, and it has
+        was also shown under in vitro conditions to require an additional protein,
+        DesVIII, for full activity
+      notes: Borisova et al. (PMID:15161264) purified Streptomyces venezuelae DesVII
+        and DesVIII and demonstrated in vitro that DesVII requires the auxiliary protein
+        DesVIII to transfer D-desosamine from TDP-D-desosamine onto narbonolide and
+        10-deoxymethynolide.
+    - reference: DOI:10.1021/bi1007657
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Together, DesVII and DesVIII serve as the glycosylation catalyst necessary
+        to construct the bacterial macrolide antibiotics methymycin, neomethymycin,
+        narbomycin, and pikromycin in Streptomyces venezuelae
+      notes: Borisova and Liu (PMID:20695498) characterized the tight (alpha-beta)3
+        heterohexameric Streptomyces venezuelae DesVII/DesVIII complex and showed
+        that coexpression and complex formation with DesVIII are required for robust
+        DesVII macrolide glycosyltransferase activity.
+    - reference: DOI:10.1016/j.gene.2006.08.021
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Our results demonstrated that DesVIII is needed to assist the reaction
+        deployed by the glycosyltransferase DesVII in vivo
+      notes: Hong et al. (PMID:17049185) demonstrated by in vivo bioconversion in
+        Streptomyces lividans that DesVIII is required alongside DesVII to glycosylate
+        narbonolide to narbomycin and 10-deoxymethynolide to YC-17.
+    - reference: DOI:10.1073/pnas.95.21.12111
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Dedicated to the biosynthesis of dTDP-D-desosamine, an essential deoxysugar
+        component in the macrolide antibiotics methymycin, neomethymycin, narbomycin,
+        and pikromycin
+      notes: Xue et al. (PMID:9770448) sequenced the Streptomyces venezuelae ATCC
+        15439 pik/des cluster (AF079762.1 / BGC0000898) and identified desVII and
+        desVIII in the desosamine biosynthesis and transfer locus.
+    - reference: https://www.uniprot.org/uniprotkb/Q9ZGH7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-20'
+      notes: Reviewed Swiss-Prot UniProtKB:Q9ZGH7 (426 aa, gene desVII) in Streptomyces
+        venezuelae cross-references EMBL AF079762 protein AAC68677.1, EC 2.4.1.277,
+        and RHEA:31627, annotating macrolide glycosyltransferase activity requiring
+        DesVIII (UniProtKB:Q9ZGH8) to convert 10-deoxymethynolide and dTDP-alpha-D-desosamine
+        to 10-deoxymethymycin (YC-17).
+    - reference: https://www.uniprot.org/uniprotkb/Q9ZGH8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-20'
+      notes: Reviewed Swiss-Prot UniProtKB:Q9ZGH8 (402 aa, gene desVIII) in Streptomyces
+        venezuelae cross-references EMBL AF079762 protein AAC68676.1 and annotates
+        the glycosyltransferase auxiliary protein required for DesVII activity.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF079762.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-20'
+      notes: GenBank AF079762.1 (MIBiG BGC0000898) annotates desVIII at CDS 119..1327
+        (protein_id AAC68676.1) and desVII at CDS 1475..2755 (protein_id AAC68677.1).
+    - reference: RHEA:31627
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-20'
+      notes: RHEA:31627 grounds EC 2.4.1.277 transfer of the D-desosaminyl group from
+        dTDP-alpha-D-desosamine(1-) (CHEBI:63260) onto 10-deoxymethynolide (CHEBI:29461)
+        to form 10-deoxymethymycin(1+) (CHEBI:63307) and dTDP(3-); this record uses
+        the corresponding neutral ChEBI identifiers CHEBI:27948 and CHEBI:29706.
+  - subject: dtdp_alpha_d_desosamine
+    predicate: supplies the desosaminyl moiety to
+    object: desvii_desviii
+    notes: dTDP-alpha-D-desosamine (grounded here to neutral CHEBI:27948 rather than
+      anionic CHEBI:63260) serves as the activated nucleotide-sugar donor for DesVII/DesVIII
+      (RHEA:31627).
+    evidence:
+    - reference: DOI:10.1021/ja049967j
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: DesVII has already been proven responsible for the coupling of TDP-D-desosamine
+        with both 10-deoxymethynolide and narbonolide in S. venezuelae, and it has
+        was also shown under in vitro conditions to require an additional protein,
+        DesVIII, for full activity
+      notes: Borisova et al. (PMID:15161264) purified Streptomyces venezuelae DesVII
+        and DesVIII and demonstrated in vitro that DesVII requires the auxiliary protein
+        DesVIII to transfer D-desosamine from TDP-D-desosamine onto narbonolide and
+        10-deoxymethynolide.
+    - reference: DOI:10.1021/bi1007657
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Together, DesVII and DesVIII serve as the glycosylation catalyst necessary
+        to construct the bacterial macrolide antibiotics methymycin, neomethymycin,
+        narbomycin, and pikromycin in Streptomyces venezuelae
+      notes: Borisova and Liu (PMID:20695498) characterized the tight (alpha-beta)3
+        heterohexameric Streptomyces venezuelae DesVII/DesVIII complex and showed
+        that coexpression and complex formation with DesVIII are required for robust
+        DesVII macrolide glycosyltransferase activity.
+    - reference: DOI:10.1016/j.gene.2006.08.021
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Our results demonstrated that DesVIII is needed to assist the reaction
+        deployed by the glycosyltransferase DesVII in vivo
+      notes: Hong et al. (PMID:17049185) demonstrated by in vivo bioconversion in
+        Streptomyces lividans that DesVIII is required alongside DesVII to glycosylate
+        narbonolide to narbomycin and 10-deoxymethynolide to YC-17.
+    - reference: DOI:10.1073/pnas.95.21.12111
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Dedicated to the biosynthesis of dTDP-D-desosamine, an essential deoxysugar
+        component in the macrolide antibiotics methymycin, neomethymycin, narbomycin,
+        and pikromycin
+      notes: Xue et al. (PMID:9770448) sequenced the Streptomyces venezuelae ATCC
+        15439 pik/des cluster (AF079762.1 / BGC0000898) and identified desVII and
+        desVIII in the desosamine biosynthesis and transfer locus.
+    - reference: https://www.uniprot.org/uniprotkb/Q9ZGH7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-20'
+      notes: Reviewed Swiss-Prot UniProtKB:Q9ZGH7 (426 aa, gene desVII) in Streptomyces
+        venezuelae cross-references EMBL AF079762 protein AAC68677.1, EC 2.4.1.277,
+        and RHEA:31627, annotating macrolide glycosyltransferase activity requiring
+        DesVIII (UniProtKB:Q9ZGH8) to convert 10-deoxymethynolide and dTDP-alpha-D-desosamine
+        to 10-deoxymethymycin (YC-17).
+    - reference: https://www.uniprot.org/uniprotkb/Q9ZGH8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-20'
+      notes: Reviewed Swiss-Prot UniProtKB:Q9ZGH8 (402 aa, gene desVIII) in Streptomyces
+        venezuelae cross-references EMBL AF079762 protein AAC68676.1 and annotates
+        the glycosyltransferase auxiliary protein required for DesVII activity.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF079762.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-20'
+      notes: GenBank AF079762.1 (MIBiG BGC0000898) annotates desVIII at CDS 119..1327
+        (protein_id AAC68676.1) and desVII at CDS 1475..2755 (protein_id AAC68677.1).
+    - reference: RHEA:31627
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-20'
+      notes: RHEA:31627 grounds EC 2.4.1.277 transfer of the D-desosaminyl group from
+        dTDP-alpha-D-desosamine(1-) (CHEBI:63260) onto 10-deoxymethynolide (CHEBI:29461)
+        to form 10-deoxymethymycin(1+) (CHEBI:63307) and dTDP(3-); this record uses
+        the corresponding neutral ChEBI identifiers CHEBI:27948 and CHEBI:29706.
+  - subject: desvii_desviii
+    predicate: forms
+    object: yc_17
+    notes: DesVII/DesVIII-catalyzed desosaminylation of 10-deoxymethynolide forms
+      10-deoxymethymycin (YC-17, grounded here to neutral CHEBI:29706 rather than
+      cationic CHEBI:63307), the substrate of PikC.
+    evidence:
+    - reference: DOI:10.1021/ja049967j
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: DesVII has already been proven responsible for the coupling of TDP-D-desosamine
+        with both 10-deoxymethynolide and narbonolide in S. venezuelae, and it has
+        was also shown under in vitro conditions to require an additional protein,
+        DesVIII, for full activity
+      notes: Borisova et al. (PMID:15161264) purified Streptomyces venezuelae DesVII
+        and DesVIII and demonstrated in vitro that DesVII requires the auxiliary protein
+        DesVIII to transfer D-desosamine from TDP-D-desosamine onto narbonolide and
+        10-deoxymethynolide.
+    - reference: DOI:10.1021/bi1007657
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Together, DesVII and DesVIII serve as the glycosylation catalyst necessary
+        to construct the bacterial macrolide antibiotics methymycin, neomethymycin,
+        narbomycin, and pikromycin in Streptomyces venezuelae
+      notes: Borisova and Liu (PMID:20695498) characterized the tight (alpha-beta)3
+        heterohexameric Streptomyces venezuelae DesVII/DesVIII complex and showed
+        that coexpression and complex formation with DesVIII are required for robust
+        DesVII macrolide glycosyltransferase activity.
+    - reference: DOI:10.1016/j.gene.2006.08.021
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Our results demonstrated that DesVIII is needed to assist the reaction
+        deployed by the glycosyltransferase DesVII in vivo
+      notes: Hong et al. (PMID:17049185) demonstrated by in vivo bioconversion in
+        Streptomyces lividans that DesVIII is required alongside DesVII to glycosylate
+        narbonolide to narbomycin and 10-deoxymethynolide to YC-17.
+    - reference: DOI:10.1073/pnas.95.21.12111
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Dedicated to the biosynthesis of dTDP-D-desosamine, an essential deoxysugar
+        component in the macrolide antibiotics methymycin, neomethymycin, narbomycin,
+        and pikromycin
+      notes: Xue et al. (PMID:9770448) sequenced the Streptomyces venezuelae ATCC
+        15439 pik/des cluster (AF079762.1 / BGC0000898) and identified desVII and
+        desVIII in the desosamine biosynthesis and transfer locus.
+    - reference: https://www.uniprot.org/uniprotkb/Q9ZGH7
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-20'
+      notes: Reviewed Swiss-Prot UniProtKB:Q9ZGH7 (426 aa, gene desVII) in Streptomyces
+        venezuelae cross-references EMBL AF079762 protein AAC68677.1, EC 2.4.1.277,
+        and RHEA:31627, annotating macrolide glycosyltransferase activity requiring
+        DesVIII (UniProtKB:Q9ZGH8) to convert 10-deoxymethynolide and dTDP-alpha-D-desosamine
+        to 10-deoxymethymycin (YC-17).
+    - reference: https://www.uniprot.org/uniprotkb/Q9ZGH8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-20'
+      notes: Reviewed Swiss-Prot UniProtKB:Q9ZGH8 (402 aa, gene desVIII) in Streptomyces
+        venezuelae cross-references EMBL AF079762 protein AAC68676.1 and annotates
+        the glycosyltransferase auxiliary protein required for DesVII activity.
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF079762.1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-20'
+      notes: GenBank AF079762.1 (MIBiG BGC0000898) annotates desVIII at CDS 119..1327
+        (protein_id AAC68676.1) and desVII at CDS 1475..2755 (protein_id AAC68677.1).
+    - reference: RHEA:31627
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-20'
+      notes: RHEA:31627 grounds EC 2.4.1.277 transfer of the D-desosaminyl group from
+        dTDP-alpha-D-desosamine(1-) (CHEBI:63260) onto 10-deoxymethynolide (CHEBI:29461)
+        to form 10-deoxymethymycin(1+) (CHEBI:63307) and dTDP(3-); this record uses
+        the corresponding neutral ChEBI identifiers CHEBI:27948 and CHEBI:29706.
   - subject: yc_17
     predicate: is hydroxylated by
     object: pikc
@@ -322,3 +737,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-21T07:19:30Z'
+  curator: claude
+  action: RECORD_CURATED
+  changes: Extended the Streptomyces venezuelae neomethymycin biosynthetic_pathway
+    and BIOSYNTHESIS causal graph with the upstream RHEA:31627 DesVII/DesVIII (UniProtKB:Q9ZGH7
+    / UniProtKB:Q9ZGH8) glycosylation of 10-deoxymethynolide (CHEBI:29461) and dTDP-alpha-D-desosamine
+    (CHEBI:27948) to 10-deoxymethymycin (CHEBI:29706).
+  llm_assisted: true
