@@ -1,0 +1,1451 @@
+# Carbazomycin B: occurrence attribution and source-specific biosynthesis review
+
+- Review: 20261021T180057Z-carbazomycin-b
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T17:51:49.543567Z
+- Finished UTC: 2026-10-21T18:00:57.158026Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The stored achiral carbazomycin B graph and literal PubChem reference agree with primary depiction and current authority representations. Four imported Streptomyces abikoensis occurrence rows conflict with the original culture attributions and need guarded source-level correction. Positive native isolation and the separately studied NRRL 2401 methyltransferase are retained; unresolved 2019 full-text and stock/locus questions keep the review partial.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 121, batch 013, selected in path order from the fresh-main authoritative validated catalogue and the separately validated targets in earlier batch commits (publication tracked separately). At selection, 174 of 3116 current records had campaign coverage and 2942 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1c2402097718c138b081e00943de8f04de0541cd.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-db21cb366e | data/natural_products/alkaloids/carbazomycin-b.yaml | generated | carbazomycin B |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-db21cb366e | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-db21cb366e | All 3,116 current record files agree with PATHS.tsv and their pinned filing pathways. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-db21cb366e | All 3,116 current records passed the documented byte-reproduction gate against committed inventories and maintained curation inputs. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-db21cb366e | The exhaustive review queue produced 8,928 diagnostic rows across 12 queues; this deterministic output does not establish scientific review. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-db21cb366e | The configured identifier-label gate passed using the existing ontology caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions, 499 warning-only mismatches and 4,744 pairs skipped because their prefixes have no adapter. |
+| Full repository quality gate on the current main baseline | passed | True | naturalproductmech:mibig-db21cb366e | The full documented just qc recipe passed on the unchanged main baseline during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). All configured lint, governance, documentation, provenance, source-queue, schema, rendering, reproduction, filing-integrity and reporting stages completed successfully. |
+| Complete owner and referenced-component scope | passed | True | naturalproductmech:mibig-db21cb366e | The complete owner and all six captured source-row sets were read after successful official intake and agree with the pinned preparation. The external component set is empty. Fresh strict validation is retained separately. |
+| Exact B native origin | passed | True | naturalproductmech:mibig-db21cb366e | Multiple complete original culture/isolation papers support the exact natural compound; source-specific taxon errors do not erase natural origin. |
+| Four exact abikoensis citation assignments | failed | True | naturalproductmech:mibig-db21cb366e | Four fully read original papers assign the native cultures to ehimense/ehimensis, while the corresponding imported rows state the distinct species abikoensis. |
+| Full 2019 citation and exact stock-to-locus applicability | unavailable | True | naturalproductmech:mibig-db21cb366e | The full genome and Angew papers remain unavailable. Two abikoensis 2019 rows and the Angew luteoverticillatus row are unresolved; SZJ61 versus deposited CGMCC15060 is not a proven stock equivalence. |
+| Stored chemical representation and complete source row | passed | True | naturalproductmech:mibig-db21cb366e | Fresh intake derivation agrees with the stored graph; the source selector, full row and prepared snapshot were independently rechecked. |
+| Exact primary chemical structure | passed | True | naturalproductmech:mibig-db21cb366e | The original primary supplemental drawing agrees with the achiral stored constitution and exact product name. |
+| Literal PubChem chemical identity | passed | True | naturalproductmech:mibig-db21cb366e | The literal pubchem:166449 response matches the Standard and fixed-H representations, formula and charge. |
+
+## Scientific And Domain Assessments
+
+### Native status and complete retained audit history
+
+provenance: supported. Targets: naturalproductmech:mibig-db21cb366e.
+
+All retained history events record SEEDED_FROM_SOURCES provenance. The native status remains SEEDED; the review changes neither history nor scientific content.
+
+### Present optional assertions and enrichment scope
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-db21cb366e.
+
+No optional pathway, causal graph, molecular target, activity, application, clinical-status, cross-record relation or discussion is asserted. Potential enrichment is distinct from checking the present producer, occurrence and locus claims.
+
+### Exact-key computed classification provenance
+
+representation: supported. Targets: naturalproductmech:mibig-db21cb366e.
+
+The owner reproduces its exact-key NPClassifier result and version npclassifier.gnps2.org@2026-09-07, including Alkaloids filing, superclass/class labels and glycoside prediction false. Computed labels are not independent evidence for precursor use or natural origin. Any corrected chemical identity must be reclassified against its corrected effective key.
+
+### Literal organism identifier routing
+
+grounding: supported. Targets: naturalproductmech:mibig-db21cb366e.
+
+The literal source identifiers and names resolve consistently. Their experimental occurrence and stock claims remain separately assessed.
+
+### Taxonomic synonym and experimental-stock boundaries
+
+provenance: supported. Targets: naturalproductmech:mibig-db21cb366e.
+
+The inspected NCBI record for 68195 explicitly includes Streptoverticillium ehimense under Streptomyces ehimensis. Taxon 97398 S. abikoensis has different synonyms and type stocks. Identifier resolution does not prove a later reidentification of H1051-MY10 or JB201. Species-level S. luteoverticillatus taxonomy does not bridge SZJ61 to CGMCC15060 or to the separate S. luteosporeus NRRL2401 experiment.
+
+### Native producer and experimental-host transcriptomic applicability
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-db21cb366e.
+
+No exact S. luteoverticillatus SZJ61, CGMCC15060, S. ehimensis source stock or S. luteosporeus NRRL2401 dataset appears in the inspected catalogue. S. albidoflavus and S. coelicolor cannot substitute for those species or stocks.
+
+### Native origin and exact primary compound
+
+evidence: supported. Targets: naturalproductmech:mibig-db21cb366e.
+
+The achiral B constitution is reported in native isolates. Species-specific occurrence support must retain the actual cultures; neither later methyltransferase assays nor activity of sibling congeners broadens them.
+
+### All ten occurrence triples
+
+evidence: concern. Targets: naturalproductmech:mibig-db21cb366e.
+
+The family-level 1990 and ehimensis 2010 rows are supported at their stated resolution. SZJ61 provides positive luteoverticillatus support for the genome citation. Four abikoensis rows conflict with complete primary culture attribution. Both 2019 abikoensis rows and the Angew luteoverticillatus row remain required source questions rather than proven false assertions.
+
+### Exact source locus and two evidence tiers
+
+evidence: unknown. Targets: naturalproductmech:mibig-db21cb366e.
+
+The imported empty-method grade is faithful and is not upgraded. The deposited interval names CGMCC15060 while the primary abstract names SZJ61. This unresolved stock bridge limits primary locus verification, without establishing a coordinate or producer defect. The 2024 NRRL 2401 experiments concern another locus.
+
+### Activity and mechanism boundaries
+
+scope: supported. Targets: naturalproductmech:mibig-db21cb366e.
+
+No activity measurement or protein mechanism is asserted in this owner. The 1990 cell-free B result and 2024 exact methylation are useful primary context; absence of optional additions is not a finding. The 2010 crude/new-congener positives are not B activity.
+
+### Stored representation and source-concept provenance
+
+identity: supported. Targets: naturalproductmech:mibig-db21cb366e.
+
+The complete source row BGC0001896:1 and source-concept hash reproduce this stored representation; this does not establish that the upstream compound label is correct. Formula, charge, Standard and fixed-H distinctions are independently recorded. Primary support and any conflicting exact xref are assessed separately.
+
+### Exact authority eligibility and source representation
+
+provenance: supported. Targets: naturalproductmech:mibig-db21cb366e.
+
+No exact eligible row exists in the committed ChEBI projection for this owner. Current bounded name/key searches do not justify a different congener or a two-star grounding.
+
+### Exact primary constitution and stereochemical scope
+
+identity: supported. Targets: naturalproductmech:mibig-db21cb366e.
+
+The primary drawing and retained authority graphs agree on the exact achiral hydroxy/methoxy dimethylcarbazole. No unspecified tetrahedral or alkene stereochemistry is being filled by inference.
+
+### ChEBI JSON versus official MOL and eligibility
+
+representation: supported. Targets: naturalproductmech:mibig-db21cb366e.
+
+CHEBI:197701 is two-star. Its default JSON SMILES fails kekulization, whereas its official MOL parses and matches the owner. Neither that JSON text nor the distinct methoxymethyl name hit justifies an eligible three-star grounding or a structure replacement.
+
+## Findings
+
+### S121-F-TAXON: Four occurrence citations are assigned to the wrong species
+
+major / open / confirmed; issue key: lotus-carbazomycin-b-ehimensis-abikoensis-citations.
+
+The exact B occurrence rows for S. abikoensis cite four complete papers that instead name native H1051-MY10 as Streptoverticillium ehimense or JB201 as S. ehimensis. Current taxonomy separates 68195 and 97398. The finding is about these citation-to-taxon links, not impossibility of B occurrence in abikoensis or automatic rejection of the two incompletely accessed 2019 citations.
+
+## Recommended Actions And Acceptance Checks
+
+### S121-ACT-TAXON
+
+Add four separately attributed exclusion rows for key OBMFXFPFPDTBHG-UHFFFAOYSA-N and NCBITaxon:97398, using these literal DOI/full-row SHA256 pairs: 10.5012/BKCS.2010.31.11.3457 = b105edf2cd59bef91e4f84b6cdd9f71fd1d22659d739ccf3b243ea8ae9caf906; 10.7164/ANTIBIOTICS.36.552 = 2352ce7e214c9b157652eb0edb102fb1e9674ccdf311e494458dabf6ece71bb2; 10.7164/ANTIBIOTICS.40.157 = ac31ccb7f268e0e07b111a0009330aee474ea6b71081e201bae15c80fae0c4e4; 10.7164/ANTIBIOTICS.43.1623 = 0a25afd4747deeaac42de1bdc94eaffcccfab9ff801d0dcccd6aa25150720961. Preserve raw rows and emit the exclusion discussions. Keep the existing NCBITaxon:68195 2010 occurrence. Do not merge species globally or automatically exclude the two unresolved 2019 triples. If corrected positive occurrences for the three older papers are also desired, first implement a typed, consumed, tested occurrence admission/replacement route in the seeder with original-row and exact primary/taxon/structure guards; the current exclusion table cannot reassign or add them.
+
+- Regeneration withholds exactly the four individually adjudicated triples and retains all other source rows, including the existing ehimensis 2010 row and unresolved 2019 assertions.
+- Changed full source row, absent/duplicate triple, duplicate decision, malformed attribution or a decision reaching no owner fails closed; preserve exact primary references and curator/date in table-owned discussions.
+- Any new positive admission route is explicitly implemented before use and tested with exclusions, duplicate detection, cap, lineage facets and future structure-correction joins; no producer or locus grade upgrade results.
+- Run documented strict, reproduction, corpus and QC gates after separately authorized curation; verify original raw inventory bytes remain unchanged.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| R121-OWNER | data/natural_products/alkaloids/carbazomycin-b.yaml; Complete owner, all present assertions and complete audit history | supports | Root read the complete carbazomycin B owner after official intake. It contains 10 occurrence, 1 producer and 1 locus assertions. Referenced external components are empty. Present optional fields: none. |
+| R121-LOCAL | /private/tmp/npm-review-work/121/local-sources.json; Complete resolved owner and all six captured exact matching source-row sets | context_only | Root read every captured MIBiG, LOTUS, ChEBI structures/origins, CyanoMetDB and NPClassifier row, including empty sets. The owner and captured rows match the prepared source snapshot. Separate PubChem raw observations are assessed by the scientific section. Source fidelity alone does not establish experimental support. |
+| R121-Q1430556 | https://www.wikidata.org/wiki/Q1430556; Literal P225/P685 fields in retained complete multi-entity response | context_only | Literal Q1430556 scientific names and NCBI identifiers match the imported rows. This verifies identifier routing; it does not validate the occurrence citation, production or stock identity. |
+| R121-Q22286766 | https://www.wikidata.org/wiki/Q22286766; Literal P225/P685 fields in retained complete multi-entity response | context_only | Literal Q22286766 scientific names and NCBI identifiers match the imported rows. This verifies identifier routing; it does not validate the occurrence citation, production or stock identity. |
+| R121-Q62851181 | https://www.wikidata.org/wiki/Q62851181; Literal P225/P685 fields in retained complete multi-entity response | context_only | Literal Q62851181 scientific names and NCBI identifiers match the imported rows. This verifies identifier routing; it does not validate the occurrence citation, production or stock identity. |
+| R121-Q62851585 | https://www.wikidata.org/wiki/Q62851585; Literal P225/P685 fields in retained complete multi-entity response | context_only | Literal Q62851585 scientific names and NCBI identifiers match the imported rows. This verifies identifier routing; it does not validate the occurrence citation, production or stock identity. |
+| R121-TAXON-CONTEXT | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;retmode=xml&amp;id=162396,1905,1981977,2062,2502037,27334,292,339670,36816,371126,38033,40623,5149,54571,66425,68195,953739,97398; ScientificName, Rank, ParentTaxId and OtherNames for the exact relevant taxon records | context_only | The inspected NCBI record for 68195 explicitly includes Streptoverticillium ehimense under Streptomyces ehimensis. Taxon 97398 S. abikoensis has different synonyms and type stocks. Identifier resolution does not prove a later reidentification of H1051-MY10 or JB201. Species-level S. luteoverticillatus taxonomy does not bridge SZJ61 to CGMCC15060 or to the separate S. luteosporeus NRRL2401 experiment. |
+| R121-IMODULON | https://imodulondb.org/api/datasets; Complete official 20-organism/28-dataset catalogue | context_only | The retained current catalogue was read and its bytes match the previously inspected catalogue. It establishes membership only, not production or module applicability. |
+| S121-E-OWNER | data/natural_products/alkaloids/carbazomycin-b.yaml; Complete actual owner, resolved view and all matching captured source rows | supports | The complete actual owner and matching raw source sets were read. Imported producer, occurrence and locus claims are distinct; no optional mechanism or activity slot is inferred to be mandatory. |
+| S121-E-RAW | data/raw/mibig_compounds.tsv; BGC0001896:1 version 4; complete parsed source-row SHA256 6878c81438f829ad09d8649ba65e46373248811c7532f487cf25ed6011dc5a1a | supports | The official intake retains the exact current raw row, graph, source taxon, accession, bounds, methods and reference. This digest includes every parsed field, including empty fields. |
+| S121-E-GRADING | conf/producer_evidence.tsv; Complete configured organism-versus-locus evidence vocabulary | supports | Native knockout can support BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED. Heterologous expression and enzymatic assays concern locus function only. Empty methods remain SOURCE_ASSERTION and CLUSTER_UNSTATED; missing optional enrichment does not itself make an imported grade false. |
+| S121-E-1983 | https://www.jstage.jst.go.jp/article/antibiotics1968/36/5/36_5_552/_pdf; Original pp. 552–558, taxonomy, native isolation and isotope incorporation; complete scientific text | supports | The native H1051-MY10 soil isolate is explicitly Streptoverticillium ehimense. Exact B is isolated as the hydroxy/methoxy dimethylcarbazole. This is direct native isolation and feeding evidence, not a sequenced-locus experiment. |
+| S121-E-1987 | https://www.jstage.jst.go.jp/article/antibiotics1968/40/2/40_2_157/_pdf; Original pp. 157–164, fermentation and isolation; complete scientific text | supports | The same H1051-MY10 culture, named Streptoverticillium ehimense, produces known carbazomycin B with other congeners. The exact B coisolation is explicit; activity and chemistry of new C/D are separate. |
+| S121-E-1990-ISOTOPE | https://www.jstage.jst.go.jp/article/antibiotics1968/43/12/43_12_1623/_pdf; Complete original isotope-feeding and isolation methods | supports | Native H1051-MY10 is named Streptoverticillium ehimense and supplies isolated labelled B. Feeding establishes carbon-origin evidence, not a genetic perturbation. |
+| S121-E-2010 | https://koreascience.or.kr/article/JAKO201034136115478.pdf; Complete pp. 3457–3459; Scheme 1 and native culture/isolation, original p. 3458 pixels | supports | Exact B is compound 5 isolated from S. ehimensis JB201, KCTC 18166P. The source does not assign it to S. abikoensis. The already emitted ehimensis occurrence is supported. Positive crude antifungal activity and the 4-mm zone of compound 1 must not be transferred to isolated B, which had no inhibition zone in this test. |
+| S121-E-1990-ACTIVITY | https://www.jstage.jst.go.jp/article/antibiotics1968/43/10/43_10_1347/_pdf; Both original pages, Table 1 and footnote pixels | supports | The source is only tentatively identified as a Streptoverticillium species. B identity is compared with authentic material, and its cell-free RBL-1 5-lipoxygenase IC50 is 1.5 micromolar. A coarser Streptomycetaceae occurrence is compatible with this limited taxonomic resolution; it is not itself a defect. |
+| S121-E-2019-GENOME | https://link.springer.com/article/10.1007/s00284-019-01711-x; Publisher abstract and bibliographic page; main body unavailable | supports | The primary abstract names S. luteoverticillatus SZJ61 and B isolation/structural analysis, a 7,367,863-bp genome and 35 putative secondary-metabolite clusters. These abstract-level positives support native species occurrence but do not establish a knockout or exact-product enzyme experiment for the stored locus. Separately retrieved official supplementary drawings and spectra have their own evidence entries and actual access times. |
+| S121-E-2024 | https://journal.hep.com.cn/engmic/EN/PDF/10.1016/j.engmic.2024.100150; Main scientific narrative and Methods/Results through conclusions; later root selected-read receipt is separately pinned | supports | The later study uses S. luteosporeus NRRL 2401 and PP372565. Native cbzMT disruption/complementation and recombinant His-tagged CbzMT assays support its own B/A endpoints. They cannot be transferred to SZJ61 or CP034587.1. Several upstream reactions remain proposed; published cloning-length and introductory activity-unit discrepancies are not silently resolved. |
+| S121-E-LOCUS | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&amp;id=CP034587.1&amp;rettype=gbwithparts&amp;retmode=text&amp;seq_start=7184701&amp;seq_stop=7193029; CP034587.1; complete header and feature qualifiers, excluding full translation reanalysis | supports | Only the requested 7184701..7193029 interval was downloaded from the 7,367,863-bp chromosome. Source feature names S. luteoverticillatus CGMCC15060, taxon66425, SAMN10601522. Full header and feature qualifiers except translations were read. The 2019 paper uses SZJ61; exact stock equivalence is not newly established here. Several current CDS qualifiers flag pseudogenes/frameshifts, which were not independently evaluated. |
+| S121-E-TAXON | /private/tmp/npm-review-work/shared-next-batch013/root-context/attempt-002/ncbi-taxa.xml; Complete selected Taxon records 68195 and 97398 | supports | Current NCBI places historical Streptoverticillium ehimense under S. ehimensis 68195. S. abikoensis 97398 remains a separate species with its own synonyms/type material. This does not prove a new stock-specific reclassification, but it refutes treating the two imported species names as a routine synonym merge. |
+| S121-E-ROUTING | src/naturalproductmech/curate/lotus_exclusions.py; Complete strict eight-column exclusion consumer and inspected seeder/tests | supports | An exact InChIKey/taxon/literal-DOI selector plus full original-row SHA withholds only that LOTUS assertion and emits a table-owned provenance discussion. There is no destination-taxon or positive-admission field. A positive corrected occurrence needs a newly consumed typed route; generated YAML and reserved decisions.tsv are not effective owners. |
+| S121-E-ACCESS | /private/tmp/npm-review-work/shared-next-batch013/review-support/source-notes.json; Retained attempts 01–06 and bounded 2019 body/SI routes | unknown | The genome paper yielded its abstract and supplements, not the full body. Normal Angew main/SI routes failed; an indexed caption and separate CqsB2 report cannot settle all B occurrence claims. No conclusion of paper-wide absence is made. |
+| S121-E-2019-SI-DRAWING | https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs00284-019-01711-x/MediaObjects/284_2019_1711_MOESM5_ESM.tif; Official supplementary structure figure, original TIFF and retained rendered pixels | supports | The official figure depicts carbazomycin B beside the distinct neocarazostatin A. This is exact-structure support at published drawing scope, not a genetic experiment or stock-equivalence proof. |
+| S121-E-2019-SI-13C | https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs00284-019-01711-x/MediaObjects/284_2019_1711_MOESM3_ESM.pdf; Official supplementary carbon NMR spectrum, original page pixels | supports | The retained official file is the 13C spectrum, inspected at the published-figure scope without raw spectral reassignment. |
+| S121-E-2019-SI-1H | https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs00284-019-01711-x/MediaObjects/284_2019_1711_MOESM4_ESM.pdf; Official supplementary proton NMR spectrum, original page pixels | supports | The retained official file is the 1H spectrum, inspected at the published-figure scope without raw spectral reassignment. |
+| C121-OWNER | data/natural_products/alkaloids/carbazomycin-b.yaml; Complete owner and all local-source rows; no referenced components | supports | The complete owner denotes carbazomycin B under naturalproductmech:mibig-db21cb366e. Its exact source selector is BGC0001896:1, version 4, with complete parsed raw-row SHA256 6878c81438f829ad09d8649ba65e46373248811c7532f487cf25ed6011dc5a1a. The official intake and prepared owner bytes agree. |
+| C121-GRAPH | /private/tmp/npm-review-work/121/chemistry.json; Fresh intake RDKit result and frozen Standard/fixed-H comparison | supports | The stored SMILES recomputes to OBMFXFPFPDTBHG-UHFFFAOYSA-N, formula C15H15NO2, formal charge 0; stored InChI/key agree. These are representation checks, not experimental identity proof. |
+| C121-COMPARISON | /private/tmp/npm-review-work/shared-next-batch013/chemistry-prep/chemical-comparison.json; Record 121; exact source rows and each graph comparison | supports | Exact Standard, fixed-H, formula, charge and stereo comparisons of the retained owner, complete raw rows and current authority responses; primary experimental proof is assessed separately. |
+| C121-LOCAL-SEARCH | /private/tmp/npm-review-work/121/chemistry-search-receipt.json; Exact full key, label, slug and source selector in raw/owner/curation trees | supports | Ignored-inclusive bounded search preserves all matching paths; an absent curation decision does not imply a missing scientific source. |
+| C121-CHEBI-SEARCH-1 | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=OBMFXFPFPDTBHG-UHFFFAOYSA-N&amp;size=100; Literal key search; chebi-key-carbazomycin-b.json | supports | 1 returned name/key results; evaluate exact key and stars, not name similarity. |
+| C121-CHEBI-SEARCH-2 | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=carbazomycin+B&amp;size=100; Literal name search; chebi-name-carbazomycin-b.json | supports | 2 returned name/key results; evaluate exact key and stars, not name similarity. |
+| C121-AUTH-1 | https://mibig.secondarymetabolites.org/repository/BGC0001896.4/annotations.json; compounds[].structure; BGC0001896.4.json | supports | current MIBiG BGC0001896:1: parsed key OBMFXFPFPDTBHG-UHFFFAOYSA-N; exact stored Standard key match=True, fixed-H match=True. This current database representation is not independent primary experimental proof. |
+| C121-AUTH-2 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/OBMFXFPFPDTBHG-UHFFFAOYSA-N/property/MolecularFormula,InChI,InChIKey,CanonicalSMILES,IsomericSMILES,Charge/JSON; PropertyTable.Properties[].SMILES; pubchem-key-carbazomycin-b.json | supports | PubChem 166449: parsed key OBMFXFPFPDTBHG-UHFFFAOYSA-N; exact stored Standard key match=True, fixed-H match=True. This current database representation is not independent primary experimental proof. |
+| C121-AUTH-3 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/carbazomycin%20B/property/MolecularFormula,InChI,InChIKey,CanonicalSMILES,IsomericSMILES,Charge/JSON; PropertyTable.Properties[].SMILES; pubchem-name-carbazomycin-b.json | supports | PubChem 166449: parsed key OBMFXFPFPDTBHG-UHFFFAOYSA-N; exact stored Standard key match=True, fixed-H match=True. This current database representation is not independent primary experimental proof. |
+| C121-AUTH-4 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/166449/property/MolecularFormula,InChI,InChIKey,CanonicalSMILES,IsomericSMILES,Charge/JSON; PropertyTable.Properties[].SMILES; pubchem-166449.json | supports | PubChem 166449: parsed key OBMFXFPFPDTBHG-UHFFFAOYSA-N; exact stored Standard key match=True, fixed-H match=True. This current database representation is not independent primary experimental proof. |
+| C121-AUTH-5 | https://www.ebi.ac.uk/chebi/backend/api/public/compound/197701/; default_structure.smiles; CHEBI197701.json | context_only | ChEBI JSON 197701: parsed key None; exact stored Standard key match=False, fixed-H match=False. This current database representation is not independent primary experimental proof. |
+| C121-AUTH-6 | https://www.ebi.ac.uk/chebi/backend/api/public/molfile/197701/; official molfile endpoint; CHEBI197701-official.mol | supports | ChEBI MOL 197701: parsed key OBMFXFPFPDTBHG-UHFFFAOYSA-N; exact stored Standard key match=True, fixed-H match=True. This current database representation is not independent primary experimental proof. |
+| C121-AUTH-7 | https://www.wikidata.org/wiki/Special:EntityData/Q75053371.json; P233; Q75053371.json | supports | Wikidata Q75053371: parsed key OBMFXFPFPDTBHG-UHFFFAOYSA-N; exact stored Standard key match=True, fixed-H match=True. This current database representation is not independent primary experimental proof. Canonical P233 is not an isomeric stereo assertion; compare P2017 when present. |
+| C121-PRIMARY | DOI:10.1007/s00284-019-01711-x; Official supplementary Figure S5, right-hand carbazomycin B structure; original pixels independently viewed | supports | The right-hand structure is 4-hydroxy-3-methoxy-1,2-dimethylcarbazole, with an NH carbazole and no stereogenic centre. This independently matches the neutral C15H15NO2 owner graph; the left-hand neocarazostatin A is a different compound. This figure check does not claim a complete main-body or spectral reassignment. |
+
+## Limits And Additional Notes
+
+- This is a claim-level review of present assertions and bounded source gaps, not an exhaustive search for every later paper or an obligation to add every optional mechanism.
+- Required full 2019 source and SZJ61-to-CGMCC15060 laboratory-stock verification remain unavailable. The two 2019 abikoensis rows are not adjudicated as false.
+- Source spectra and diagrams were read at published assignment scope without independent spectral reprocessing. The 2024 NRRL 2401 experiments are not transferred to the stored locus.
+- Historical page-count and Figure 3 NOE locator corrections are retained in additive source receipts rather than rewriting frozen preparation notes.
+- Authority matches establish the representations actually returned at their retained access times; they are not independent experimental structure or absolute-hand determinations. Root and science sections separately assess organism, locus, classification and history claims.
+- The chemical review inspected the original supplementary structure pixels. The 2019 main body was unavailable in the retained publisher response; detailed producer, locus and occurrence evidence limits are carried by the independently scoped science section. No spectrum was independently reassigned.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35 explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). Skipped tests are not counted as passing tests. Existing ontology caches were used; no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do not establish biological production, stereochemical specificity, evidence adequacy, or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology results. Reuse establishes unchanged repository inputs; it is not a new remote authority query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all tracked files are hashed. Generated Python bytecode and external tool caches are not claimed to have been independently byte-pinned at the prior execution.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+- The original science packet is preserved; an additive refinement binds each supplementary drawing or spectrum to its own retained retrieval time and snapshot.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T180057Z-carbazomycin-b
+title: 'Carbazomycin B: occurrence attribution and source-specific biosynthesis review'
+started_at: '2026-10-21T17:51:49.543567Z'
+finished_at: '2026-10-21T18:00:57.158026Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The stored achiral carbazomycin B graph and literal PubChem reference agree
+  with primary depiction and current authority representations. Four imported Streptomyces
+  abikoensis occurrence rows conflict with the original culture attributions and need
+  guarded source-level correction. Positive native isolation and the separately studied
+  NRRL 2401 methyltransferase are retained; unresolved 2019 full-text and stock/locus
+  questions keep the review partial.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: curation/pubchem_bioassay_exclusions.tsv
+    sha256: 76f9cbb17e62a270afed637b5058a553cfe85c754c6c9ec406635f12dae572fa
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/carbazomycin-b.yaml
+    sha256: ee2d77b905d7e3158e521dc43ab0e8dc795cad0d6791f1a119b35072c44af4a3
+    role: target
+  - path: data/natural_products/alkaloids/carquinostatin-a.yaml
+    sha256: 363433a8631354f0c1aeecb31592162b13e514a725fa625d825122bf4370b508
+    role: context
+  - path: data/natural_products/alkaloids/carquinostatin-b.yaml
+    sha256: 12699a3ef0bc0b098441f90dd24c3a5323d62d1f8f397d88437984d7d769ee7d
+    role: context
+  - path: data/natural_products/alkaloids/cc-1065.yaml
+    sha256: 18807ddce1f23840d55147cc331acf26c162f174d929473c833712ae1368f3ca
+    role: context
+  - path: data/natural_products/alkaloids/celesticetin.yaml
+    sha256: 350fa68eb60fe724287f9368a7389fb6721b30af53cb69be0a46349530a47a8d
+    role: context
+  - path: data/natural_products/alkaloids/cepaciachelin.yaml
+    sha256: d7f040cf3d0c84a874b4a8a16824b1976a705a981d4689711d749849ec649d8c
+    role: context
+  - path: data/natural_products/alkaloids/chaetoglobosin-a.yaml
+    sha256: ade0d70a3f0c31506cb39562482bf0e09ace40b303ff965e3c6150ff70f5e6c5
+    role: context
+  - path: data/natural_products/alkaloids/chaetoglobosin-c.yaml
+    sha256: 9a1bf49fde80bca26c948c350609bafed6853871a75339aa1301b38aad5fe68a
+    role: context
+  - path: data/natural_products/alkaloids/chaetoglobosin-p.yaml
+    sha256: 0308e9b1b2258370d93d04398111270812a720e2e151bf9fc29a214a7e3cbad1
+    role: context
+  - path: data/natural_products/alkaloids/chloramphenicol.yaml
+    sha256: d1c483e457d58b0306462795af8f027a3ed4dd22d781ed6044b193151a83a793
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/extract_pubchem_bioassay.py
+    sha256: 24f9d794e7cf97c420351cb751f8767f7d81a5f22aed01669b2318d6755e7c00
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/bioassay_exclusions.py
+    sha256: 4a4176e072ac9759aa8a9e88300d7e2de5aaf4ebf30b5c42fcf4c9c0b6cebbb4
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/lotus_exclusions.py
+    sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: tests/test_bioassay_exclusions.py
+    sha256: 099a0b8f6f51ce93406344440b63d99db7203486ed92797d90990005bdb6bbd0
+    role: context
+  - path: tests/test_lotus_exclusions.py
+    sha256: 3e3aa443714202e1bc41f0fb236e6bf69caabd68a16af23b972323f5f846386c
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 121, batch 013, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 174 of 3116 current
+    records had campaign coverage and 2942 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-db21cb366e
+targets:
+- target_id: naturalproductmech:mibig-db21cb366e
+  path: data/natural_products/alkaloids/carbazomycin-b.yaml
+  label: carbazomycin B
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+  command: just validate-strict data/natural_products/alkaloids/carbazomycin-b.yaml
+    --out /private/tmp/npm-review-work/121/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T17:51:51.354568Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch013 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch013. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch013 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch013. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch013 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch013. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch013 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch013. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch013
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,070,649 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch013.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+- check_id: R121-FULL-OWNER
+  name: Complete owner and referenced-component scope
+  status: passed
+  required: true
+  summary: The complete owner and all six captured source-row sets were read after
+    successful official intake and agree with the pinned preparation. The external
+    component set is empty. Fresh strict validation is retained separately.
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+  evidence_ids:
+  - R121-OWNER
+  - R121-LOCAL
+- check_id: S121-C-ORIGIN
+  name: Exact B native origin
+  status: passed
+  required: true
+  summary: Multiple complete original culture/isolation papers support the exact natural
+    compound; source-specific taxon errors do not erase natural origin.
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+  evidence_ids:
+  - S121-E-1983
+  - S121-E-1987
+  - S121-E-2010
+- check_id: S121-C-FOUR-TAXA
+  name: Four exact abikoensis citation assignments
+  status: failed
+  required: true
+  summary: Four fully read original papers assign the native cultures to ehimense/ehimensis,
+    while the corresponding imported rows state the distinct species abikoensis.
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+  evidence_ids:
+  - S121-E-1983
+  - S121-E-1987
+  - S121-E-1990-ISOTOPE
+  - S121-E-2010
+  - S121-E-TAXON
+- check_id: S121-C-2019
+  name: Full 2019 citation and exact stock-to-locus applicability
+  status: unavailable
+  required: true
+  summary: The full genome and Angew papers remain unavailable. Two abikoensis 2019
+    rows and the Angew luteoverticillatus row are unresolved; SZJ61 versus deposited
+    CGMCC15060 is not a proven stock equivalence.
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+  evidence_ids:
+  - S121-E-2019-GENOME
+  - S121-E-LOCUS
+  - S121-E-ACCESS
+- check_id: C121-C-REPRESENTATION
+  name: Stored chemical representation and complete source row
+  status: passed
+  required: true
+  summary: Fresh intake derivation agrees with the stored graph; the source selector,
+    full row and prepared snapshot were independently rechecked.
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+  evidence_ids:
+  - C121-OWNER
+  - C121-GRAPH
+  - C121-COMPARISON
+- check_id: C121-C-PRIMARY
+  name: Exact primary chemical structure
+  status: passed
+  required: true
+  summary: The original primary supplemental drawing agrees with the achiral stored
+    constitution and exact product name.
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+  evidence_ids:
+  - C121-PRIMARY
+  - C121-GRAPH
+  - C121-COMPARISON
+- check_id: C121-C-XREF
+  name: Literal PubChem chemical identity
+  status: passed
+  required: true
+  summary: The literal pubchem:166449 response matches the Standard and fixed-H representations,
+    formula and charge.
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+  evidence_ids:
+  - C121-COMPARISON
+  - C121-AUTH-1
+  - C121-AUTH-2
+  - C121-AUTH-3
+  - C121-AUTH-4
+  - C121-AUTH-5
+  - C121-AUTH-6
+  - C121-AUTH-7
+evidence:
+- evidence_id: R121-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/carbazomycin-b.yaml
+  locator: Complete owner, all present assertions and complete audit history
+  accessed_at: '2026-10-21T17:52:39.707072Z'
+  support: supports
+  summary: 'Root read the complete carbazomycin B owner after official intake. It
+    contains 10 occurrence, 1 producer and 1 locus assertions. Referenced external
+    components are empty. Present optional fields: none.'
+  snapshot_sha256: ee2d77b905d7e3158e521dc43ab0e8dc795cad0d6791f1a119b35072c44af4a3
+- evidence_id: R121-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/121/local-sources.json
+  locator: Complete resolved owner and all six captured exact matching source-row
+    sets
+  accessed_at: '2026-10-21T17:52:39.707072Z'
+  support: context_only
+  summary: Root read every captured MIBiG, LOTUS, ChEBI structures/origins, CyanoMetDB
+    and NPClassifier row, including empty sets. The owner and captured rows match
+    the prepared source snapshot. Separate PubChem raw observations are assessed by
+    the scientific section. Source fidelity alone does not establish experimental
+    support.
+  snapshot_sha256: 97f30a37e421a2f5350c46c1ddcf579c84e5f1d29cb2919145e7865bc26c1e64
+- evidence_id: R121-Q1430556
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q1430556
+  locator: Literal P225/P685 fields in retained complete multi-entity response
+  accessed_at: '2026-10-21T17:25:35.481159Z'
+  support: context_only
+  summary: Literal Q1430556 scientific names and NCBI identifiers match the imported
+    rows. This verifies identifier routing; it does not validate the occurrence citation,
+    production or stock identity.
+  snapshot_sha256: 026cf7dce61f76ea1be554bf995a269a5531a82c3a0c74c5873851c736a1752b
+- evidence_id: R121-Q22286766
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q22286766
+  locator: Literal P225/P685 fields in retained complete multi-entity response
+  accessed_at: '2026-10-21T17:25:35.481159Z'
+  support: context_only
+  summary: Literal Q22286766 scientific names and NCBI identifiers match the imported
+    rows. This verifies identifier routing; it does not validate the occurrence citation,
+    production or stock identity.
+  snapshot_sha256: 026cf7dce61f76ea1be554bf995a269a5531a82c3a0c74c5873851c736a1752b
+- evidence_id: R121-Q62851181
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q62851181
+  locator: Literal P225/P685 fields in retained complete multi-entity response
+  accessed_at: '2026-10-21T17:25:35.481159Z'
+  support: context_only
+  summary: Literal Q62851181 scientific names and NCBI identifiers match the imported
+    rows. This verifies identifier routing; it does not validate the occurrence citation,
+    production or stock identity.
+  snapshot_sha256: 026cf7dce61f76ea1be554bf995a269a5531a82c3a0c74c5873851c736a1752b
+- evidence_id: R121-Q62851585
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q62851585
+  locator: Literal P225/P685 fields in retained complete multi-entity response
+  accessed_at: '2026-10-21T17:25:35.481159Z'
+  support: context_only
+  summary: Literal Q62851585 scientific names and NCBI identifiers match the imported
+    rows. This verifies identifier routing; it does not validate the occurrence citation,
+    production or stock identity.
+  snapshot_sha256: 026cf7dce61f76ea1be554bf995a269a5531a82c3a0c74c5873851c736a1752b
+- evidence_id: R121-TAXON-CONTEXT
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&retmode=xml&id=162396,1905,1981977,2062,2502037,27334,292,339670,36816,371126,38033,40623,5149,54571,66425,68195,953739,97398
+  locator: ScientificName, Rank, ParentTaxId and OtherNames for the exact relevant
+    taxon records
+  accessed_at: '2026-10-21T17:25:35.685538Z'
+  support: context_only
+  summary: The inspected NCBI record for 68195 explicitly includes Streptoverticillium
+    ehimense under Streptomyces ehimensis. Taxon 97398 S. abikoensis has different
+    synonyms and type stocks. Identifier resolution does not prove a later reidentification
+    of H1051-MY10 or JB201. Species-level S. luteoverticillatus taxonomy does not
+    bridge SZJ61 to CGMCC15060 or to the separate S. luteosporeus NRRL2401 experiment.
+  snapshot_sha256: 83ff126040853b0ab6de8dbf4dab0b64eaf4b2aea314a68d6caddfcba16f66dd
+- evidence_id: R121-IMODULON
+  kind: database
+  reference: https://imodulondb.org/api/datasets
+  locator: Complete official 20-organism/28-dataset catalogue
+  accessed_at: '2026-10-21T17:25:35.092545Z'
+  support: context_only
+  summary: The retained current catalogue was read and its bytes match the previously
+    inspected catalogue. It establishes membership only, not production or module
+    applicability.
+  snapshot_sha256: 155607e7023efdead5ebab3919279a0776d5665a7de9e28b67f02f8f521b0693
+- evidence_id: S121-E-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/carbazomycin-b.yaml
+  locator: Complete actual owner, resolved view and all matching captured source rows
+  accessed_at: '2026-10-21T17:55:17.069796Z'
+  support: supports
+  summary: The complete actual owner and matching raw source sets were read. Imported
+    producer, occurrence and locus claims are distinct; no optional mechanism or activity
+    slot is inferred to be mandatory.
+  snapshot_sha256: ee2d77b905d7e3158e521dc43ab0e8dc795cad0d6791f1a119b35072c44af4a3
+- evidence_id: S121-E-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: BGC0001896:1 version 4; complete parsed source-row SHA256 6878c81438f829ad09d8649ba65e46373248811c7532f487cf25ed6011dc5a1a
+  accessed_at: '2026-10-21T17:55:17.069796Z'
+  support: supports
+  summary: The official intake retains the exact current raw row, graph, source taxon,
+    accession, bounds, methods and reference. This digest includes every parsed field,
+    including empty fields.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: S121-E-GRADING
+  kind: record_content
+  reference: conf/producer_evidence.tsv
+  locator: Complete configured organism-versus-locus evidence vocabulary
+  accessed_at: '2026-10-21T17:55:17.069796Z'
+  support: supports
+  summary: Native knockout can support BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED.
+    Heterologous expression and enzymatic assays concern locus function only. Empty
+    methods remain SOURCE_ASSERTION and CLUSTER_UNSTATED; missing optional enrichment
+    does not itself make an imported grade false.
+  snapshot_sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+- evidence_id: S121-E-1983
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/antibiotics1968/36/5/36_5_552/_pdf
+  locator: Original pp. 552–558, taxonomy, native isolation and isotope incorporation;
+    complete scientific text
+  accessed_at: '2026-10-21T17:13:35.305910Z'
+  support: supports
+  summary: The native H1051-MY10 soil isolate is explicitly Streptoverticillium ehimense.
+    Exact B is isolated as the hydroxy/methoxy dimethylcarbazole. This is direct native
+    isolation and feeding evidence, not a sequenced-locus experiment.
+  snapshot_sha256: 92daa0e3808f114b7950a4f3b96748d801ba45cdeaff54fc9197c4eb98766965
+- evidence_id: S121-E-1987
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/antibiotics1968/40/2/40_2_157/_pdf
+  locator: Original pp. 157–164, fermentation and isolation; complete scientific text
+  accessed_at: '2026-10-21T17:13:35.624028Z'
+  support: supports
+  summary: The same H1051-MY10 culture, named Streptoverticillium ehimense, produces
+    known carbazomycin B with other congeners. The exact B coisolation is explicit;
+    activity and chemistry of new C/D are separate.
+  snapshot_sha256: 1842774123dbe1d4556a6772c208064001ce870b3e736938cfc879237cfc43ee
+- evidence_id: S121-E-1990-ISOTOPE
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/antibiotics1968/43/12/43_12_1623/_pdf
+  locator: Complete original isotope-feeding and isolation methods
+  accessed_at: '2026-10-21T17:13:36.581778Z'
+  support: supports
+  summary: Native H1051-MY10 is named Streptoverticillium ehimense and supplies isolated
+    labelled B. Feeding establishes carbon-origin evidence, not a genetic perturbation.
+  snapshot_sha256: be8ca21735b3a18c08535303dc4d0e8970194cd8d785ff2cc978747e9d723a14
+- evidence_id: S121-E-2010
+  kind: primary_source
+  reference: https://koreascience.or.kr/article/JAKO201034136115478.pdf
+  locator: Complete pp. 3457–3459; Scheme 1 and native culture/isolation, original
+    p. 3458 pixels
+  accessed_at: '2026-10-21T17:19:06.565057Z'
+  support: supports
+  summary: Exact B is compound 5 isolated from S. ehimensis JB201, KCTC 18166P. The
+    source does not assign it to S. abikoensis. The already emitted ehimensis occurrence
+    is supported. Positive crude antifungal activity and the 4-mm zone of compound
+    1 must not be transferred to isolated B, which had no inhibition zone in this
+    test.
+  snapshot_sha256: f86204da9e5dc38710111b2388d6c6819e012961d0e4dcdaf22347687c53a3b1
+- evidence_id: S121-E-1990-ACTIVITY
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/antibiotics1968/43/10/43_10_1347/_pdf
+  locator: Both original pages, Table 1 and footnote pixels
+  accessed_at: '2026-10-21T17:13:35.938008Z'
+  support: supports
+  summary: The source is only tentatively identified as a Streptoverticillium species.
+    B identity is compared with authentic material, and its cell-free RBL-1 5-lipoxygenase
+    IC50 is 1.5 micromolar. A coarser Streptomycetaceae occurrence is compatible with
+    this limited taxonomic resolution; it is not itself a defect.
+  snapshot_sha256: 7e05e303abc8ab2b1350488da244ab5cf6fbcc6ca8cd0e7db6f2acf1d1d773f5
+- evidence_id: S121-E-2019-GENOME
+  kind: primary_source
+  reference: https://link.springer.com/article/10.1007/s00284-019-01711-x
+  locator: Publisher abstract and bibliographic page; main body unavailable
+  accessed_at: '2026-10-21T17:13:35.197125Z'
+  support: supports
+  summary: The primary abstract names S. luteoverticillatus SZJ61 and B isolation/structural
+    analysis, a 7,367,863-bp genome and 35 putative secondary-metabolite clusters.
+    These abstract-level positives support native species occurrence but do not establish
+    a knockout or exact-product enzyme experiment for the stored locus. Separately
+    retrieved official supplementary drawings and spectra have their own evidence
+    entries and actual access times.
+  snapshot_sha256: 9e5178c92ba73de21917f9ab55dfa43de66cb3b32f940b74353ed66b33016346
+- evidence_id: S121-E-2024
+  kind: primary_source
+  reference: https://journal.hep.com.cn/engmic/EN/PDF/10.1016/j.engmic.2024.100150
+  locator: Main scientific narrative and Methods/Results through conclusions; later
+    root selected-read receipt is separately pinned
+  accessed_at: '2026-10-21T17:16:06.092601Z'
+  support: supports
+  summary: The later study uses S. luteosporeus NRRL 2401 and PP372565. Native cbzMT
+    disruption/complementation and recombinant His-tagged CbzMT assays support its
+    own B/A endpoints. They cannot be transferred to SZJ61 or CP034587.1. Several
+    upstream reactions remain proposed; published cloning-length and introductory
+    activity-unit discrepancies are not silently resolved.
+  snapshot_sha256: 8a62ca2d059e3a145aaf94adfd0505e9f6a6b15da91ec5701011e432379c64a6
+- evidence_id: S121-E-LOCUS
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=CP034587.1&rettype=gbwithparts&retmode=text&seq_start=7184701&seq_stop=7193029
+  locator: CP034587.1; complete header and feature qualifiers, excluding full translation
+    reanalysis
+  accessed_at: '2026-10-21T17:19:06.793159Z'
+  support: supports
+  summary: Only the requested 7184701..7193029 interval was downloaded from the 7,367,863-bp
+    chromosome. Source feature names S. luteoverticillatus CGMCC15060, taxon66425,
+    SAMN10601522. Full header and feature qualifiers except translations were read.
+    The 2019 paper uses SZJ61; exact stock equivalence is not newly established here.
+    Several current CDS qualifiers flag pseudogenes/frameshifts, which were not independently
+    evaluated.
+  snapshot_sha256: 76aade981145d0395e7bd996ac4b0f1c407a55ffe0f9af28b3d4e8b817c9c672
+- evidence_id: S121-E-TAXON
+  kind: authority
+  reference: /private/tmp/npm-review-work/shared-next-batch013/root-context/attempt-002/ncbi-taxa.xml
+  locator: Complete selected Taxon records 68195 and 97398
+  accessed_at: '2026-10-21T17:25:35.092813Z'
+  support: supports
+  summary: Current NCBI places historical Streptoverticillium ehimense under S. ehimensis
+    68195. S. abikoensis 97398 remains a separate species with its own synonyms/type
+    material. This does not prove a new stock-specific reclassification, but it refutes
+    treating the two imported species names as a routine synonym merge.
+  snapshot_sha256: 83ff126040853b0ab6de8dbf4dab0b64eaf4b2aea314a68d6caddfcba16f66dd
+- evidence_id: S121-E-ROUTING
+  kind: record_content
+  reference: src/naturalproductmech/curate/lotus_exclusions.py
+  locator: Complete strict eight-column exclusion consumer and inspected seeder/tests
+  accessed_at: '2026-10-21T17:55:17.069796Z'
+  support: supports
+  summary: An exact InChIKey/taxon/literal-DOI selector plus full original-row SHA
+    withholds only that LOTUS assertion and emits a table-owned provenance discussion.
+    There is no destination-taxon or positive-admission field. A positive corrected
+    occurrence needs a newly consumed typed route; generated YAML and reserved decisions.tsv
+    are not effective owners.
+  snapshot_sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+- evidence_id: S121-E-ACCESS
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch013/review-support/source-notes.json
+  locator: Retained attempts 01–06 and bounded 2019 body/SI routes
+  accessed_at: '2026-10-21T17:25:02.000353Z'
+  support: unknown
+  summary: The genome paper yielded its abstract and supplements, not the full body.
+    Normal Angew main/SI routes failed; an indexed caption and separate CqsB2 report
+    cannot settle all B occurrence claims. No conclusion of paper-wide absence is
+    made.
+  snapshot_sha256: 79086a50ea3f5844e28a25e6b09a32130a953b990343b5e8875aff5119a58e6c
+  search_scope: Existing source-only inventory and exact DOI publisher, supplement,
+    public author-report and accession routes recorded in attempts 01–06; failed HTTP/DNS
+    bodies retained. No new network search was performed during formal authoring.
+- evidence_id: S121-E-2019-SI-DRAWING
+  kind: primary_source
+  reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs00284-019-01711-x/MediaObjects/284_2019_1711_MOESM5_ESM.tif
+  locator: Official supplementary structure figure, original TIFF and retained rendered
+    pixels
+  accessed_at: '2026-10-21T17:16:08.423080Z'
+  snapshot_sha256: 6d2aea048eaafad8bc7ee78287a2f6576a72f822ba7382c2d652ecdb92cc7aac
+  support: supports
+  summary: The official figure depicts carbazomycin B beside the distinct neocarazostatin
+    A. This is exact-structure support at published drawing scope, not a genetic experiment
+    or stock-equivalence proof.
+- evidence_id: S121-E-2019-SI-13C
+  kind: primary_source
+  reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs00284-019-01711-x/MediaObjects/284_2019_1711_MOESM3_ESM.pdf
+  locator: Official supplementary carbon NMR spectrum, original page pixels
+  accessed_at: '2026-10-21T17:16:08.139455Z'
+  snapshot_sha256: fd172e0624d51dd6825d2072ee7d226690aac5fca8b2a0371cab99118a898ecd
+  support: supports
+  summary: The retained official file is the 13C spectrum, inspected at the published-figure
+    scope without raw spectral reassignment.
+- evidence_id: S121-E-2019-SI-1H
+  kind: primary_source
+  reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs00284-019-01711-x/MediaObjects/284_2019_1711_MOESM4_ESM.pdf
+  locator: Official supplementary proton NMR spectrum, original page pixels
+  accessed_at: '2026-10-21T17:16:08.351632Z'
+  snapshot_sha256: 1b1a29306edc406c3363e7e475b6ccd64f9694fbf7bb27e33e06514e75a582f5
+  support: supports
+  summary: The retained official file is the 1H spectrum, inspected at the published-figure
+    scope without raw spectral reassignment.
+- evidence_id: C121-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/carbazomycin-b.yaml
+  locator: Complete owner and all local-source rows; no referenced components
+  accessed_at: '2026-10-21T17:56:42.103771Z'
+  support: supports
+  summary: The complete owner denotes carbazomycin B under naturalproductmech:mibig-db21cb366e.
+    Its exact source selector is BGC0001896:1, version 4, with complete parsed raw-row
+    SHA256 6878c81438f829ad09d8649ba65e46373248811c7532f487cf25ed6011dc5a1a. The official
+    intake and prepared owner bytes agree.
+  snapshot_sha256: ee2d77b905d7e3158e521dc43ab0e8dc795cad0d6791f1a119b35072c44af4a3
+- evidence_id: C121-GRAPH
+  kind: validation
+  reference: /private/tmp/npm-review-work/121/chemistry.json
+  locator: Fresh intake RDKit result and frozen Standard/fixed-H comparison
+  accessed_at: '2026-10-21T17:51:50.276590Z'
+  support: supports
+  summary: The stored SMILES recomputes to OBMFXFPFPDTBHG-UHFFFAOYSA-N, formula C15H15NO2,
+    formal charge 0; stored InChI/key agree. These are representation checks, not
+    experimental identity proof.
+  snapshot_sha256: 8569c65cfa3cc042e28dc16d015790fc88f4a562b5cf3335391ad57e02487d57
+- evidence_id: C121-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch013/chemistry-prep/chemical-comparison.json
+  locator: Record 121; exact source rows and each graph comparison
+  accessed_at: '2026-10-21T17:23:24.463910Z'
+  support: supports
+  summary: Exact Standard, fixed-H, formula, charge and stereo comparisons of the
+    retained owner, complete raw rows and current authority responses; primary experimental
+    proof is assessed separately.
+  snapshot_sha256: 503b2ba573d5eef465b41aa483433a9b2b92cce169c7270520b63466b4f5539f
+- evidence_id: C121-LOCAL-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/121/chemistry-search-receipt.json
+  locator: Exact full key, label, slug and source selector in raw/owner/curation trees
+  accessed_at: '2026-10-21T17:56:42.181057Z'
+  support: supports
+  summary: Ignored-inclusive bounded search preserves all matching paths; an absent
+    curation decision does not imply a missing scientific source.
+  snapshot_sha256: e08f10d858382c6605205b8b4b8aa40a787eb0578cf4c685ad25db8d78e26967
+  search_scope: rg --no-ignore --hidden; data/natural_products, data/raw and curation;
+    exact full key, current label, slug and BGC:compound_index. No claim beyond these
+    trees.
+- evidence_id: C121-CHEBI-SEARCH-1
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=OBMFXFPFPDTBHG-UHFFFAOYSA-N&size=100
+  locator: Literal key search; chebi-key-carbazomycin-b.json
+  accessed_at: '2026-10-21T17:19:02.517200Z'
+  support: supports
+  summary: 1 returned name/key results; evaluate exact key and stars, not name similarity.
+  snapshot_sha256: b7e8278b2721e0fc83e9455dcdb098b8f2adbe81884e7307a8f0c4acb6bbfbaf
+  search_scope: Official ChEBI es_search bounded key request, size=100, exact URL
+    retained. This is not a universal absence claim.
+- evidence_id: C121-CHEBI-SEARCH-2
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=carbazomycin+B&size=100
+  locator: Literal name search; chebi-name-carbazomycin-b.json
+  accessed_at: '2026-10-21T17:19:02.484596Z'
+  support: supports
+  summary: 2 returned name/key results; evaluate exact key and stars, not name similarity.
+  snapshot_sha256: 359bb843612273f30354981e2e5763945ccd2f2909a5674ec01514438cf02ef5
+  search_scope: Official ChEBI es_search bounded name request, size=100, exact URL
+    retained. This is not a universal absence claim.
+- evidence_id: C121-AUTH-1
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001896.4/annotations.json
+  locator: compounds[].structure; BGC0001896.4.json
+  accessed_at: '2026-10-21T17:19:02.883701Z'
+  support: supports
+  summary: 'current MIBiG BGC0001896:1: parsed key OBMFXFPFPDTBHG-UHFFFAOYSA-N; exact
+    stored Standard key match=True, fixed-H match=True. This current database representation
+    is not independent primary experimental proof.'
+  snapshot_sha256: dd5f21b2a60f8df9ddcf6ccd7dc230c023568c128cad493f8be37ed860cdbac3
+- evidence_id: C121-AUTH-2
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/OBMFXFPFPDTBHG-UHFFFAOYSA-N/property/MolecularFormula,InChI,InChIKey,CanonicalSMILES,IsomericSMILES,Charge/JSON
+  locator: PropertyTable.Properties[].SMILES; pubchem-key-carbazomycin-b.json
+  accessed_at: '2026-10-21T17:19:02.377002Z'
+  support: supports
+  summary: 'PubChem 166449: parsed key OBMFXFPFPDTBHG-UHFFFAOYSA-N; exact stored Standard
+    key match=True, fixed-H match=True. This current database representation is not
+    independent primary experimental proof.'
+  snapshot_sha256: f7610629841376dea86ce9a80bdac145ed73f2209a7114b8906c57688d34d100
+- evidence_id: C121-AUTH-3
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/carbazomycin%20B/property/MolecularFormula,InChI,InChIKey,CanonicalSMILES,IsomericSMILES,Charge/JSON
+  locator: PropertyTable.Properties[].SMILES; pubchem-name-carbazomycin-b.json
+  accessed_at: '2026-10-21T17:19:02.393726Z'
+  support: supports
+  summary: 'PubChem 166449: parsed key OBMFXFPFPDTBHG-UHFFFAOYSA-N; exact stored Standard
+    key match=True, fixed-H match=True. This current database representation is not
+    independent primary experimental proof.'
+  snapshot_sha256: f7610629841376dea86ce9a80bdac145ed73f2209a7114b8906c57688d34d100
+- evidence_id: C121-AUTH-4
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/166449/property/MolecularFormula,InChI,InChIKey,CanonicalSMILES,IsomericSMILES,Charge/JSON
+  locator: PropertyTable.Properties[].SMILES; pubchem-166449.json
+  accessed_at: '2026-10-21T17:19:02.252241Z'
+  support: supports
+  summary: 'PubChem 166449: parsed key OBMFXFPFPDTBHG-UHFFFAOYSA-N; exact stored Standard
+    key match=True, fixed-H match=True. This current database representation is not
+    independent primary experimental proof.'
+  snapshot_sha256: f7610629841376dea86ce9a80bdac145ed73f2209a7114b8906c57688d34d100
+- evidence_id: C121-AUTH-5
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/197701/
+  locator: default_structure.smiles; CHEBI197701.json
+  accessed_at: '2026-10-21T17:20:08.287275Z'
+  support: context_only
+  summary: 'ChEBI JSON 197701: parsed key None; exact stored Standard key match=False,
+    fixed-H match=False. This current database representation is not independent primary
+    experimental proof.'
+  snapshot_sha256: a03cc9c816edf869b5aca67f38f269f5244331417684f3003890ef8f5dbdfd98
+- evidence_id: C121-AUTH-6
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/197701/
+  locator: official molfile endpoint; CHEBI197701-official.mol
+  accessed_at: '2026-10-21T17:20:34.166284Z'
+  support: supports
+  summary: 'ChEBI MOL 197701: parsed key OBMFXFPFPDTBHG-UHFFFAOYSA-N; exact stored
+    Standard key match=True, fixed-H match=True. This current database representation
+    is not independent primary experimental proof.'
+  snapshot_sha256: 35a9b11693adf4ba6bc2046bd94df45352c0ceaab5189492bc8cd06214f43cc6
+- evidence_id: C121-AUTH-7
+  kind: authority
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q75053371.json
+  locator: P233; Q75053371.json
+  accessed_at: '2026-10-21T17:19:02.401184Z'
+  support: supports
+  summary: 'Wikidata Q75053371: parsed key OBMFXFPFPDTBHG-UHFFFAOYSA-N; exact stored
+    Standard key match=True, fixed-H match=True. This current database representation
+    is not independent primary experimental proof. Canonical P233 is not an isomeric
+    stereo assertion; compare P2017 when present.'
+  snapshot_sha256: 7d16584bfa816d19238f9b9de5e807a612a25cf43c9d1cf2854eb2b4501709bb
+- evidence_id: C121-PRIMARY
+  kind: primary_source
+  reference: DOI:10.1007/s00284-019-01711-x
+  locator: Official supplementary Figure S5, right-hand carbazomycin B structure;
+    original pixels independently viewed
+  accessed_at: '2026-10-21T17:16:08.621348Z'
+  support: supports
+  summary: The right-hand structure is 4-hydroxy-3-methoxy-1,2-dimethylcarbazole,
+    with an NH carbazole and no stereogenic centre. This independently matches the
+    neutral C15H15NO2 owner graph; the left-hand neocarazostatin A is a different
+    compound. This figure check does not claim a complete main-body or spectral reassignment.
+  snapshot_sha256: 223bc4e99c4b4c239f6aa805ac82d03e68ceb23eb921a44c9a6086103231ac45
+assessments:
+- assessment_id: R121-HISTORY
+  area: provenance
+  topic: Native status and complete retained audit history
+  outcome: supported
+  summary: All retained history events record SEEDED_FROM_SOURCES provenance. The
+    native status remains SEEDED; the review changes neither history nor scientific
+    content.
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+  evidence_ids:
+  - R121-OWNER
+- assessment_id: R121-OPTIONAL
+  area: completeness
+  topic: Present optional assertions and enrichment scope
+  outcome: not_applicable
+  summary: No optional pathway, causal graph, molecular target, activity, application,
+    clinical-status, cross-record relation or discussion is asserted. Potential enrichment
+    is distinct from checking the present producer, occurrence and locus claims.
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+  evidence_ids:
+  - R121-OWNER
+  - R121-LOCAL
+- assessment_id: R121-FILING
+  area: representation
+  topic: Exact-key computed classification provenance
+  outcome: supported
+  summary: The owner reproduces its exact-key NPClassifier result and version npclassifier.gnps2.org@2026-09-07,
+    including Alkaloids filing, superclass/class labels and glycoside prediction false.
+    Computed labels are not independent evidence for precursor use or natural origin.
+    Any corrected chemical identity must be reclassified against its corrected effective
+    key.
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+  evidence_ids:
+  - R121-OWNER
+  - R121-LOCAL
+- assessment_id: R121-ORGANISM-IDS
+  area: grounding
+  topic: Literal organism identifier routing
+  outcome: supported
+  summary: The literal source identifiers and names resolve consistently. Their experimental
+    occurrence and stock claims remain separately assessed.
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+  evidence_ids:
+  - R121-Q1430556
+  - R121-Q22286766
+  - R121-Q62851181
+  - R121-Q62851585
+- assessment_id: R121-TAXON-SCOPE
+  area: provenance
+  topic: Taxonomic synonym and experimental-stock boundaries
+  outcome: supported
+  summary: The inspected NCBI record for 68195 explicitly includes Streptoverticillium
+    ehimense under Streptomyces ehimensis. Taxon 97398 S. abikoensis has different
+    synonyms and type stocks. Identifier resolution does not prove a later reidentification
+    of H1051-MY10 or JB201. Species-level S. luteoverticillatus taxonomy does not
+    bridge SZJ61 to CGMCC15060 or to the separate S. luteosporeus NRRL2401 experiment.
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+  evidence_ids:
+  - R121-TAXON-CONTEXT
+  - R121-OWNER
+- assessment_id: R121-IMODULON-SCOPE
+  area: completeness
+  topic: Native producer and experimental-host transcriptomic applicability
+  outcome: not_applicable
+  summary: No exact S. luteoverticillatus SZJ61, CGMCC15060, S. ehimensis source stock
+    or S. luteosporeus NRRL2401 dataset appears in the inspected catalogue. S. albidoflavus
+    and S. coelicolor cannot substitute for those species or stocks.
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+  evidence_ids:
+  - R121-OWNER
+  - R121-IMODULON
+- assessment_id: S121-A-ORIGIN
+  area: evidence
+  topic: Native origin and exact primary compound
+  outcome: supported
+  summary: The achiral B constitution is reported in native isolates. Species-specific
+    occurrence support must retain the actual cultures; neither later methyltransferase
+    assays nor activity of sibling congeners broadens them.
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+  evidence_ids:
+  - S121-E-1983
+  - S121-E-2010
+  - S121-E-2024
+  - S121-E-2019-SI-DRAWING
+  - S121-E-2019-SI-13C
+  - S121-E-2019-SI-1H
+  dimensions:
+  - name: native_isolation_context
+    value: H1051-MY10; JB201 / KCTC 18166P; SZJ61
+    definition: The original native stocks are distinct; the 2024 NRRL 2401 work is
+      a separate experimental context.
+    evidence_ids:
+    - S121-E-1983
+    - S121-E-2010
+    - S121-E-2019-GENOME
+    - S121-E-2024
+- assessment_id: S121-A-OCCURRENCES
+  area: evidence
+  topic: All ten occurrence triples
+  outcome: concern
+  summary: The family-level 1990 and ehimensis 2010 rows are supported at their stated
+    resolution. SZJ61 provides positive luteoverticillatus support for the genome
+    citation. Four abikoensis rows conflict with complete primary culture attribution.
+    Both 2019 abikoensis rows and the Angew luteoverticillatus row remain required
+    source questions rather than proven false assertions.
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+  evidence_ids:
+  - S121-E-OWNER
+  - S121-E-1983
+  - S121-E-1987
+  - S121-E-1990-ISOTOPE
+  - S121-E-2010
+  - S121-E-1990-ACTIVITY
+  - S121-E-2019-GENOME
+  - S121-E-TAXON
+  - S121-E-ACCESS
+  - S121-E-2019-SI-DRAWING
+  - S121-E-2019-SI-13C
+  - S121-E-2019-SI-1H
+- assessment_id: S121-A-LOCUS
+  area: evidence
+  topic: Exact source locus and two evidence tiers
+  outcome: unknown
+  summary: The imported empty-method grade is faithful and is not upgraded. The deposited
+    interval names CGMCC15060 while the primary abstract names SZJ61. This unresolved
+    stock bridge limits primary locus verification, without establishing a coordinate
+    or producer defect. The 2024 NRRL 2401 experiments concern another locus.
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+  evidence_ids:
+  - S121-E-RAW
+  - S121-E-LOCUS
+  - S121-E-GRADING
+  - S121-E-2019-GENOME
+  - S121-E-2024
+  dimensions:
+  - name: producer_locus_evidence_tiers
+    value: SOURCE_ASSERTION / CLUSTER_UNSTATED
+    definition: Empty imported methods are a database-source statement, not a claim
+      that all later studies lack experiments.
+    evidence_ids:
+    - S121-E-RAW
+    - S121-E-GRADING
+  - name: source_version_and_interval
+    value: BGC0001896 version 4; CP034587.1:7184701..7193029
+    definition: Current exact accession metadata is distinct from a proven SZJ61 laboratory-stock
+      bridge.
+    evidence_ids:
+    - S121-E-RAW
+    - S121-E-LOCUS
+- assessment_id: S121-A-ACTIVITY
+  area: scope
+  topic: Activity and mechanism boundaries
+  outcome: supported
+  summary: No activity measurement or protein mechanism is asserted in this owner.
+    The 1990 cell-free B result and 2024 exact methylation are useful primary context;
+    absence of optional additions is not a finding. The 2010 crude/new-congener positives
+    are not B activity.
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+  evidence_ids:
+  - S121-E-OWNER
+  - S121-E-1990-ACTIVITY
+  - S121-E-2010
+  - S121-E-2024
+- assessment_id: C121-A-IDENTITY
+  area: identity
+  topic: Stored representation and source-concept provenance
+  outcome: supported
+  summary: The complete source row BGC0001896:1 and source-concept hash reproduce
+    this stored representation; this does not establish that the upstream compound
+    label is correct. Formula, charge, Standard and fixed-H distinctions are independently
+    recorded. Primary support and any conflicting exact xref are assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+  evidence_ids:
+  - C121-OWNER
+  - C121-GRAPH
+  - C121-COMPARISON
+  dimensions:
+  - name: mibig_source_selector
+    value: BGC0001896:1
+    definition: Accession plus compound_index, distinct from the entry-level accession.
+    evidence_ids:
+    - C121-OWNER
+  - name: complete_raw_row_sha256
+    value: 6878c81438f829ad09d8649ba65e46373248811c7532f487cf25ed6011dc5a1a
+    definition: Sorted compact ASCII JSON of every parsed TSV field, including empty
+      values.
+    evidence_ids:
+    - C121-OWNER
+- assessment_id: C121-A-GROUNDING
+  area: provenance
+  topic: Exact authority eligibility and source representation
+  outcome: supported
+  summary: No exact eligible row exists in the committed ChEBI projection for this
+    owner. Current bounded name/key searches do not justify a different congener or
+    a two-star grounding.
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+  evidence_ids:
+  - C121-OWNER
+  - C121-COMPARISON
+  - C121-LOCAL-SEARCH
+  - C121-CHEBI-SEARCH-1
+  - C121-CHEBI-SEARCH-2
+- assessment_id: C121-A-PRIMARY
+  area: identity
+  topic: Exact primary constitution and stereochemical scope
+  outcome: supported
+  summary: The primary drawing and retained authority graphs agree on the exact achiral
+    hydroxy/methoxy dimethylcarbazole. No unspecified tetrahedral or alkene stereochemistry
+    is being filled by inference.
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+  evidence_ids:
+  - C121-PRIMARY
+  - C121-GRAPH
+  - C121-COMPARISON
+- assessment_id: C121-A-AUTHORITY-REP
+  area: representation
+  topic: ChEBI JSON versus official MOL and eligibility
+  outcome: supported
+  summary: CHEBI:197701 is two-star. Its default JSON SMILES fails kekulization, whereas
+    its official MOL parses and matches the owner. Neither that JSON text nor the
+    distinct methoxymethyl name hit justifies an eligible three-star grounding or
+    a structure replacement.
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+  evidence_ids:
+  - C121-COMPARISON
+  - C121-CHEBI-SEARCH-1
+  - C121-CHEBI-SEARCH-2
+  - C121-AUTH-1
+  - C121-AUTH-2
+  - C121-AUTH-3
+  - C121-AUTH-4
+  - C121-AUTH-5
+  - C121-AUTH-6
+  - C121-AUTH-7
+findings:
+- finding_id: S121-F-TAXON
+  issue_key: lotus-carbazomycin-b-ehimensis-abikoensis-citations
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Four occurrence citations are assigned to the wrong species
+  description: The exact B occurrence rows for S. abikoensis cite four complete papers
+    that instead name native H1051-MY10 as Streptoverticillium ehimense or JB201 as
+    S. ehimensis. Current taxonomy separates 68195 and 97398. The finding is about
+    these citation-to-taxon links, not impossibility of B occurrence in abikoensis
+    or automatic rejection of the two incompletely accessed 2019 citations.
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+  field_paths:
+  - occurrences[4]
+  - occurrences[5]
+  - occurrences[6]
+  - occurrences[7]
+  evidence_ids:
+  - S121-E-1983
+  - S121-E-1987
+  - S121-E-1990-ISOTOPE
+  - S121-E-2010
+  - S121-E-TAXON
+  - S121-E-ROUTING
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/lotus_occurrence_exclusions.tsv
+    role: Consumed exact-triple exclusions
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/lotus_exclusions.py
+    role: Whole-row guards and provenance discussion
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Occurrence join, exclusion, deduplication and facets
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Preserved original LOTUS assertions
+actions:
+- action_id: S121-ACT-TAXON
+  finding_ids:
+  - S121-F-TAXON
+  target_ids:
+  - naturalproductmech:mibig-db21cb366e
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/lotus_occurrence_exclusions.tsv
+    role: Consumed exact-triple exclusions
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/lotus_exclusions.py
+    role: Whole-row guards and provenance discussion
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Occurrence join, exclusion, deduplication and facets
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Preserved original LOTUS assertions
+  generator: scripts/seed_from_sources.py
+  description: 'Add four separately attributed exclusion rows for key OBMFXFPFPDTBHG-UHFFFAOYSA-N
+    and NCBITaxon:97398, using these literal DOI/full-row SHA256 pairs: 10.5012/BKCS.2010.31.11.3457
+    = b105edf2cd59bef91e4f84b6cdd9f71fd1d22659d739ccf3b243ea8ae9caf906; 10.7164/ANTIBIOTICS.36.552
+    = 2352ce7e214c9b157652eb0edb102fb1e9674ccdf311e494458dabf6ece71bb2; 10.7164/ANTIBIOTICS.40.157
+    = ac31ccb7f268e0e07b111a0009330aee474ea6b71081e201bae15c80fae0c4e4; 10.7164/ANTIBIOTICS.43.1623
+    = 0a25afd4747deeaac42de1bdc94eaffcccfab9ff801d0dcccd6aa25150720961. Preserve raw
+    rows and emit the exclusion discussions. Keep the existing NCBITaxon:68195 2010
+    occurrence. Do not merge species globally or automatically exclude the two unresolved
+    2019 triples. If corrected positive occurrences for the three older papers are
+    also desired, first implement a typed, consumed, tested occurrence admission/replacement
+    route in the seeder with original-row and exact primary/taxon/structure guards;
+    the current exclusion table cannot reassign or add them.'
+  acceptance_checks:
+  - Regeneration withholds exactly the four individually adjudicated triples and retains
+    all other source rows, including the existing ehimensis 2010 row and unresolved
+    2019 assertions.
+  - Changed full source row, absent/duplicate triple, duplicate decision, malformed
+    attribution or a decision reaching no owner fails closed; preserve exact primary
+    references and curator/date in table-owned discussions.
+  - Any new positive admission route is explicitly implemented before use and tested
+    with exclusions, duplicate detection, cap, lineage facets and future structure-correction
+    joins; no producer or locus grade upgrade results.
+  - Run documented strict, reproduction, corpus and QC gates after separately authorized
+    curation; verify original raw inventory bytes remain unchanged.
+limitations:
+- This is a claim-level review of present assertions and bounded source gaps, not
+  an exhaustive search for every later paper or an obligation to add every optional
+  mechanism.
+- Required full 2019 source and SZJ61-to-CGMCC15060 laboratory-stock verification
+  remain unavailable. The two 2019 abikoensis rows are not adjudicated as false.
+- Source spectra and diagrams were read at published assignment scope without independent
+  spectral reprocessing. The 2024 NRRL 2401 experiments are not transferred to the
+  stored locus.
+- Historical page-count and Figure 3 NOE locator corrections are retained in additive
+  source receipts rather than rewriting frozen preparation notes.
+- Authority matches establish the representations actually returned at their retained
+  access times; they are not independent experimental structure or absolute-hand determinations.
+  Root and science sections separately assess organism, locus, classification and
+  history claims.
+- The chemical review inspected the original supplementary structure pixels. The 2019
+  main body was unavailable in the retained publisher response; detailed producer,
+  locus and occurrence evidence limits are carried by the independently scoped science
+  section. No spectrum was independently reassigned.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+- The original science packet is preserved; an additive refinement binds each supplementary
+  drawing or spectrum to its own retained retrieval time and snapshot.
+tags:
+- path-order-campaign
+- batch-013
+```
