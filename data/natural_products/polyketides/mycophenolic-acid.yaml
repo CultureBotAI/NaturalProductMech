@@ -562,13 +562,15 @@ discussions:
     deposited AJG44385.1/KM595305.1 (398aa)?
   rationale: 'UniProt marks AJG44385.1 as an erroneous gene model (ALT_SEQ). Native
     CDS translation confirms the398-aa deposit, not the corrected433-aa canonical
-    sequence. MpaH'' is not added as a grounded graph protein in this curation. Independent
-    structural sequence mapping remains a lead, not an inspected resolution. Follow-up2026-10-12:
-    independent7DBI entity sequence agrees with all433 canonical residues after SeMet
-    normalization; 7DBL agrees except documentedS139A. This now supports a separate
-    structural-reference graph, but does not repair the398-aa genomic model or authenticate
-    the2025 assay construct. The native-model question remains OPEN; the earlier reference
-    graph remains unchanged.'
+    sequence. The experimental assay node mpah_prime remains REVIEW_NEEDED and is
+    linked to the separate NRRL 864 reference node mpah_prime_native (UniProtKB:A0A0B5LB55)
+    with the AJG44385.1 (398 aa) vs A0A0B5LB55 v2 (433 aa) and IBT 23061 AIA21557.1
+    (413 aa) boundaries documented on the edge without equating construct or splice-model
+    identity. Follow-up2026-10-12: independent7DBI entity sequence agrees with all433
+    canonical residues after SeMet normalization; 7DBL agrees except documentedS139A.
+    This supports a separate structural-reference graph, but does not repair the398-aa
+    genomic model or authenticate the2025 assay construct. The native-model question
+    remains OPEN.'
   evidence:
   - reference: https://www.uniprot.org/uniprotkb/A0A0B5LB55
     evidence_source: Reviewed UniProt sequence caution, inspected2026-10-12

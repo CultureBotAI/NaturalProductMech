@@ -174,12 +174,14 @@ graph:
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-21'
       notes: Unreviewed Streptomyces rishiriensis DSM 40489 CouL acyl-CoA synthetase
-        (Q9F8U8, AAG29784.2, AF235050.4, 529 aa); deposited native sequence reference.
-    - reference: PMID:15554713
-      evidence_type: PRIMARY_EXPERIMENT
+        (Q9F8U8, AAG29784.2, AF235050.4, 529 aa, entry version 59, sequence version
+        2); deposited native sequence reference.
+    - reference: DOI:10.1021/bi048457z
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract only; full paper, methods, figures and supporting material
+        not obtained. Coupled CouL/CouM/NovN/CouP enzymatic assays in Freel Meyers
+        et al. 2004; CouL preparation kept distinct from native UniProtKB:Q9F8U8.
       retrieved_on: '2026-10-06'
-      notes: Coupled CouL/CouM/NovN/CouP enzymatic assays in Freel Meyers et al. 2004;
-        CouL preparation kept distinct from native UniProtKB:Q9F8U8.
   - subject: NovN
     predicate: is_native_sequence_reference_for
     object: NovN_prep
@@ -196,11 +198,12 @@ graph:
       notes: Reviewed Streptomyces niveus NCIMB 9219 (S. spheroides NCIMB 11891) NovN
         O-carbamoyltransferase (Q9L9F4, AAF67507.2, AF170880.4, 677 aa, entry version
         61, sequence version 2); deposited native sequence reference.
-    - reference: PMID:15554713
-      evidence_type: PRIMARY_EXPERIMENT
+    - reference: DOI:10.1021/bi048457z
+      evidence_type: CURATOR_INFERENCE
+      notes: Primary abstract only; full paper, methods, figures and supporting material
+        not obtained. Four-enzyme CouL/CouM/NovN/CouP tandem assay in Freel Meyers
+        et al. 2004; NovN preparation kept distinct from native UniProtKB:Q9L9F4.
       retrieved_on: '2026-10-06'
-      notes: Four-enzyme CouL/CouM/NovN/CouP tandem assay in Freel Meyers et al. 2004;
-        NovN preparation kept distinct from native UniProtKB:Q9L9F4.
   - subject: CouL_prep
     predicate: provides_acceptors
     object: amides
