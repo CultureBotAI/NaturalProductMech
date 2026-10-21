@@ -1,0 +1,2102 @@
+# 8-azaguanine: native locus evidence and assay interpretation
+
+- Review: 20261021T102234Z-8-azaguanine
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T10:08:03.335825Z
+- Finished UTC: 2026-10-21T10:22:34.568855Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact achiral structure, 11 native locus translations, seven protein examples and all 25 stored database results are consistent with their cited records. Native genetic evidence requires a coordinated method/citation/strain correction. Three cellular assay results are mislabeled as enzyme inhibition, ATXN2 project metadata is assigned as a viability-assay enzyme target, and four metadata pairs obscure tested-substance provenance. The unavailable Frontiers supplement leaves the review partial; no scientific owner or source data was changed.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 32, batch 004, selected in path order from the fresh-main authoritative validated catalogue and the separately validated pending-PR targets. At selection, 84 of 3116 current records had campaign coverage and 3032 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1c2402097718c138b081e00943de8f04de0541cd.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CHEBI:63486 | data/natural_products/alkaloids/8-azaguanine.yaml | generated | 8-azaguanine |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | CHEBI:63486 | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | CHEBI:63486 | All 3,116 current record files agree with PATHS.tsv and their pinned filing pathways. |
+| Corpus reproduction | passed | True | CHEBI:63486 | All 3,116 current records passed the documented byte-reproduction gate against committed inventories and maintained curation inputs. |
+| Native deterministic review queue | passed | True | CHEBI:63486 | The exhaustive review queue produced 8,928 diagnostic rows across 12 queues; this deterministic output does not establish scientific review. |
+| Configured ontology identifier-label correspondence | passed | True | CHEBI:63486 | The configured identifier-label gate passed using the existing ontology caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions, 499 warning-only mismatches and 4,744 pairs skipped because their prefixes have no adapter. |
+| Full repository quality gate on the current main baseline | passed | True | CHEBI:63486 | The full documented just qc recipe passed against the new main revision. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). All configured lint, governance, documentation, provenance, source-queue, schema, rendering, reproduction, filing-integrity and reporting stages completed successfully. |
+| Exact chemical identity and equivalence | passed | True | CHEBI:63486 | Owner, official ChEBI MOL and PubChem share the complete Standard key; exact-form identifiers resolve. |
+| Applicable native-producer expression dataset | not_applicable | False | CHEBI:63486 | The inspected complete catalogue has no S. pathocidini dataset. |
+| Primary experimental correspondence for the native deletion graphs | passed | True | CHEBI:63486 | All 22 native intervention/phenotype edges were compared against the complete Frontiers main Methods/Results; Figure2A additionally inspected for the six D/E/F/A/B/G outcomes. No catalytic or universal-necessity overstatement was found in those graph assertions. |
+| Claim-specific locus citation, native method and strain context | failed | True | CHEBI:63486 | The exact MT543149 source experiment is Frontiers PMID33251204, but both imported claims retain the Nature PMID32235841 citation and omit the native Knock-out studies method and CGMCC4.1633 qualifier. The supported locus tier remains CLUSTER_DEMONSTRATED; the native-producer evidence is materially stronger than the emitted SOURCE_ASSERTION. |
+| Original Frontiers mutant and supplementary phenotype verification | unavailable | True | CHEBI:63486 | The exact Frontiers supplement could not be read through the prior bounded official/PMC requests. Supplementary Figure4 for C/H/I/J/K and the PCR/allele evidence remain uninspected. Main-text reports are supported separately; Nature SI is not a substitute. No further retry was made without a new lead. |
+| Exact native CDS and versioned protein verification | passed | True | CHEBI:63486 | All eleven deposited native protein IDs, complete CDSs, strands, lengths, table-11 translations and source taxa agree with the owner. No mismatch was found in this bounded check. |
+| Seven current sequence-identical UniProt examples | passed | True | CHEBI:63486 | All seven asserted UniProtKB/UniParc examples resolve currently and equal the exact native deposited protein sequence. They remain unreviewed entries, without a biochemical-function or experimental-stock inference. |
+| Stored assay calls, endpoints, row counts and deposited structures | passed | True | CHEBI:63486 | All 25 observations, the 123-to-25 cap and 98 omitted-row note, and four full deposited structures match. The exact database outcomes remain authoritative; numerical values do not turn inactive or inconclusive calls into positives. |
+| Assay class and target-role support | failed | True | CHEBI:63486 | Three ENZYME_INHIBITOR labels and the Q99700 target_enzyme placement are not supported by the complete official protocols. Identifier and numeric fidelity do not resolve these semantic errors. |
+
+## Scientific And Domain Assessments
+
+### Neutral exact free base and stable chemical identifiers
+
+identity: supported. Targets: CHEBI:63486.
+
+CHEBI63486, its official connection table, PubChem135403646 and the encoded MIBiG graph converge on the exact Standard identity and neutral achiral formula. Ribosides, phosphates and azaxanthine are separate molecules. No solution tautomer or pH-dependent state is inferred.
+
+### Species authority and collection alias boundaries
+
+identity: supported. Targets: CHEBI:63486.
+
+The source and graph taxon naming is consistent with current NCBI authority. The cited type-material aliases bridge the names without making the two papers or their locus annotations interchangeable.
+
+### Computed filing, source concepts and native status
+
+provenance: supported. Targets: CHEBI:63486.
+
+Filing and classification are tool-qualified and source concepts preserve exact grounding provenance. SEEDED is consistent with limited prior graph curation; adding protein examples did not claim full-record sign-off. Current source-citation and assay findings are assessed separately.
+
+### Exact free-base identity in the primary biosynthetic experiments
+
+identity: supported. Targets: CHEBI:63486.
+
+The primary papers and freshly viewed Frontiers Figure1 concern achiral neutral 8-azaguanine, compound1. Guanine, azaguanosine, azaxanthine and the Frontiers substituted nucleosides remain distinct. The graphs correctly use the free-base anchor without claiming a resolved solution tautomer or protonation state. Current chemical identifiers and RDKit reconciliation are assessed separately by the root reviewer.
+
+### Native biosynthesis and heterologous production are separately demonstrated
+
+evidence: supported. Targets: CHEBI:63486.
+
+Natural origin is directly supported by native CGMCC4.1633 product detection and whole-region/F knockout phenotypes, independently corroborated by native ATCC14510 isotope feeding in the Nature study. J1074 gene-combination production establishes engineered locus activity. Neither artificial non-enzymatic synthesis nor production of nucleoside congeners is used as the natural-origin proof.
+
+### Exact MT543149 producer and locus claim routing and methods
+
+evidence: concern. Targets: CHEBI:63486.
+
+The locus demonstration is scientifically supported, but the imported six-gene Nature citation does not document the exact Frontiers native A–K deletion series associated with MT543149. Native knockout evidence and the CGMCC4.1633 qualifier should be retained at producer/locus level rather than existing only inside the graphs. The two collection numbers are aliases of the same type-strain lineage; this is an experimental-source and accession-scope issue, not a different-species claim. The qualified producer can be BGC_CHARACTERIZED while the locus remains CLUSTER_DEMONSTRATED.
+
+### D/E/F native deletion graph and causal limits
+
+graph: supported. Targets: CHEBI:63486.
+
+All six intervention/outcome edges match the Frontiers Methods, Results and inspected Figure2A: D/E retain trace product, F loses detectable product. PROCESS deletion nodes are separated from native protein reference nodes; none of these outcomes is represented as direct catalysis, absolute zero, numerical yield, physical complex or universal essentiality. The graph preserves nucleoside congeners as separate products. Exact reference sequences are checked independently in the native-protein packet.
+
+### A/B/G native deletion graph and proposed function boundary
+
+graph: supported. Targets: CHEBI:63486.
+
+All six intervention/outcome edges reproduce the native reduced-product reports for A/B/G in Figure2A and the Results. The graph does not promote the G radical-SAM proposal or B transport hypothesis to measured functions. The separate A assay uses N-hydroxyarginine, H2O2 and a nitrite/Griess endpoint; no graph edge wrongly claims complete arginine-to-NO turnover. Nature Ptn experiments are not substituted for these native interventions.
+
+### C/H/I/J/K main-text genetic outcomes and unavailable supplement
+
+graph: supported. Targets: CHEBI:63486.
+
+All ten intervention/outcome edges faithfully retain the explicit main-text reports: C/H/J decrease product, I has no reported effect and K gives a small increase. I is negative-test context rather than positive mechanism, and K is not assigned proven transcriptional repression. The graph itself discloses that Supplementary Figure4 and allele/PCR data were not inspected. This review confirms the main-text correspondence while leaving independent supplementary verification unresolved.
+
+### Cross-paper enzyme, substrate and host boundaries
+
+scope: supported. Targets: CHEBI:63486.
+
+The curated graphs deliberately describe the Frontiers native genetics. A direct PtnC phosphoribohydrolase experiment in the Nature study uses 8-azaguanosine 5-prime-monophosphate, unlike the unphosphorylated Frontiers test substrates. PtnA/8-AzgF ring opening and the triazole-forming enzyme remain unresolved; no missing optional pathway is manufactured into a defect. Published PtnB and 8-AzgE have different annotated starts, so the Nature protein cannot simply replace the native E reference. Shared type-strain aliases and partial sequence agreement do not collapse experimental contexts.
+
+### Curator history versus present scientific sign-off
+
+provenance: supported. Targets: CHEBI:63486.
+
+The history describes sequentially added bounded genetic graphs and later sequence-identical UniProt examples. Historical failed exact-identifier queries remain dated observations; they are not current global absence claims. SEEDED is retained and no full-record REVIEWED claim is made. The later reference examples do not replace the original native reference nodes or claim sequenced mutant alleles.
+
+### Eleven exact deposited reference proteins
+
+grounding: supported. Targets: CHEBI:63486.
+
+The graph identifiers denote the deposited MT543149.1 CGMCC4.1633 proteins and match current versioned GenPept entries in full sequence and coordinates. Alternative initiation is handled explicitly. This supports the native-reference groundings, while the owner correctly distinguishes them from the deletion interventions and mutant alleles.
+
+### Seven active UniProtKB/UniParc sequence examples
+
+grounding: supported. Targets: CHEBI:63486.
+
+The seven A/C/D/E/F/G/H example links preserve exact complete sequence identity, the asserted ACH429 locus tags, and species taxon 1650571. All seven current UniProt entries are unreviewed. The graph predicate asserts sequence identity; neither entry names nor sequence equality are treated as independent catalytic evidence.
+
+### Exact structure and database observation fidelity
+
+evidence: supported. Targets: CHEBI:63486.
+
+All stored database results concern the exact standardized structure; their source calls, endpoints and values are accurately copied. The 98 omissions count raw result rows, not 98 independent assays. The other 98 rows were traced to inventory/current summary but their individual protocols were outside this owner-claim audit.
+
+### Cellular phenotypes versus enzyme inhibition
+
+scope: concern. Targets: CHEBI:63486.
+
+The active NF-kB and T. cruzi phenotypes do not establish enzyme inhibition. Preserve their positive database calls, values and assay-specific interpretation. AID 2010 separately supports NIH3T3 cytotoxicity; its 10.345 uM cellular EC50 is not universal toxicity or proof that the parasite phenotype is exclusively host toxicity.
+
+### Protein identifiers and actual assay roles
+
+grounding: concern. Targets: CHEBI:63486.
+
+The three UniProt entries resolve correctly. EPAC1 and EPAC2 are assay-target context for Inconclusive purified exchange assays. Q99700 is ATXN2 project metadata on a viability counterscreen and should not be represented as an enzyme target for that result. No active direct target mechanism is supported.
+
+### Substance identity and target-metadata duplication
+
+provenance: concern. Targets: CHEBI:63486.
+
+Four paired rows for AIDs 1645883, 1645886 and 651635 repeat the same AID/SID/outcome/endpoint/value with blank versus populated target metadata. AID 1645883 additionally contains two genuinely distinct SIDs with different values. The current extractor drops SID, so these distinctions and the four redundant target-metadata rows are not transparent in the owner and consume four positions in the 25-row cap.
+
+## Findings
+
+### S032-NATIVE-CLAIM-SCOPE: Preserve the MT543149 native-genetics source, method and strain scope
+
+major / open / confirmed; issue key: mibig-bgc0002508-compound1-native-genetic-evidence-scope.
+
+The producer and BGC retain only the Nature PMID32235841 entry citation and Heterologous expression, even though the owner graphs already cite Frontiers PMID33251204 for native CGMCC4.1633 gene deletions. Frontiers explicitly deposits MT543149 and tests native whole-region/F deletion plus J1074 reconstitution. Nature documents the related six-gene Ptn locus under MN707952 and engineered J1074 disruptions. Their strain numbers are type-material aliases, but the study accessions, gene sets, stocks and constructs remain distinct. The missing native method leaves the producer SOURCE_ASSERTION and omits its required strain qualifier; the scientifically supported locus grade remains CLUSTER_DEMONSTRATED.
+
+### BIO032-F1: Three cellular assay results are mislabeled as enzyme inhibition
+
+major / open / confirmed; issue key: chebi-63486-cell-phenotypes-misclassified-enzyme-inhibition.
+
+AID 489033 measures stimulated NF-kB reporter signal in 697 B cells, while AIDs 2044 and 2294 measure T. cruzi replication/infection reporter phenotypes in NIH3T3 coculture. None is a direct enzyme-inhibition experiment. The generic title classifier nevertheless emits ENZYME_INHIBITOR for all three and propagates it into the summary. The exact database positive calls and IC50/EC50 values are valid; their mechanistic activity class is unsupported.
+
+### BIO032-F2: ATXN2 project metadata is represented as an enzyme target
+
+major / open / confirmed; issue key: chebi-63486-atxn2-viability-counter-target-role.
+
+AID 651635 is a viability counterscreen using a live-cell protease fluorescence readout. Its Q99700 metadata refers to the ATXN2 screening project; ataxin-2 is not the enzyme measured by that readout. Copying the accession to target_enzyme overstates the assay role. The NOT_DETERMINED call is accurate and must remain so.
+
+### BIO032-F3: Dropped substance IDs obscure four duplicate metadata pairs
+
+minor / open / confirmed; issue key: chebi-63486-assay-sid-provenance-and-metadata-duplicates.
+
+The 25 observations include four pairs differing only in target metadata for the same AID/SID/result. Because the extractor discards SID, the owner cannot distinguish those pairs from distinct tested samples, including the two separate EPAC1 SIDs with values 11.2202 and 125.892 uM. This also spends four cap positions on redundant metadata rows. The 98-row omission note is numerically correct but must not be read as 98 distinct assays.
+
+## Recommended Actions And Acceptance Checks
+
+### S032-QUALIFY-NATIVE-EVIDENCE
+
+For BGC0002508:1, coordinate a claim-reference row routing producer_reference and locus_reference to PMID:33251204 with source_reference DOI:10.3389/fbioe.2020.603514, a producer-strain row for CGMCC4.1633, and a REPLACE method override for minted identifier naturalproductmech:mibig-c4cff4607d using Heterologous expression&#124;Knock-out studies. Pin both consumed claim and strain rows to complete raw-row SHA256 ccf82236984ef2518f06604e1f5a1715e1395b9184b59ee3cf20ebf5046d05c5. Retain original PMID:32235841 in raw/provenance and explain the shared collection lineage without equating study stocks or PtnB/8-AzgE starts. The current REPLACE loader does not enforce expected_* pins alone; pair it with the consumed claim-reference full-row guard or extend the loader with equivalent fail-closed provenance. No chemical identity correction or raw inventory edit is needed.
+
+- The exact BGC0002508:1 row remains MT543149.1:1–11423, key LPXQRXLUHJKZIE-UHFFFAOYSA-N and taxon1650571. Any raw-row drift, missing row or duplicate decision fails before corrected grades are emitted.
+- Canary output carries strain CGMCC4.1633, Frontiers PMID33251204 on both claims, native Knock-out studies alongside Heterologous expression, producer BGC_CHARACTERIZED and locus CLUSTER_DEMONSTRATED. Preserve the original citation and raw source version as explicit provenance.
+- Exercise claim-reference, strain and REPLACE overlays together; do not treat expected_* fields on REPLACE as an implemented guard. Preserve original exact structure, all inline graphs and history, and type-strain alias context. A structure correction would require separate compatibility review.
+- Do not add universal gene essentiality, a physical enzyme complex, purified GTP-ring-opening activity, a demonstrated B transport substrate, G radical chemistry, K transcriptional repression or an exact mutant-allele sequence assertion. Keep the unavailable Frontiers supplement explicit.
+- Run the normal canary, appropriate composition and stale-source negative tests, target strict validation, reproduction and required repository QC; emit through the validated curation-event workflow rather than editing generated fields directly.
+
+### BIO032-A1
+
+Implement an effective protocol-aware class and target-role correction while preserving valid source results. Pin exact key LPXQRXLUHJKZIE-UHFFFAOYSA-N, CID 135403646 and the complete current rows: AID 489033 target (blank) SHA256 628333fa27310febb9a2888902eabead1f9a021c8125abc172f751b56096d8b3; AID 2044 target (blank) SHA256 980ef846150aa4fcb03f21debecb9bfae2b852232bdbef66cf3b954b73820111; AID 2294 target (blank) SHA256 cd07e8e17c412c8388c97272e70da4230314e2aa583b805b4f69eca5c5915439; AID 651635 target Q99700 SHA256 5f940d94843aaaa3d1ccd38a5609a86bc481228435278cb173e14f6398e5d150. Clear ENZYME_INHIBITOR from AID 489033; assign the bounded ANTIPARASITIC phenotype class to AIDs 2044/2294 only with their T. cruzi coculture context, without asserting a molecular mechanism. Withhold target_enzyme Q99700 from the AID 651635 viability observation while retaining the source project metadata in provenance. Use a new explicitly consumed, source-digest-guarded decision route or guarded source-specific logic; no such class/target override is supplied by the inspected exclusion loader. Do not delete these real assay results to avoid classification errors.
+
+- Each named complete raw row matches its digest before applying a decision; changed source fields fail closed.
+- All 25 current calls, values, units, endpoint labels and database references are retained unless a separately documented deduplication changes representation.
+- ENZYME_INHIBITOR is absent from the three unsupported observations and is not derived into this owner summary without other verified support.
+- AID 489033 is described as a cell NF-kB reporter result; AIDs 2044/2294 retain parasite/host/readout scope, and AID 2010 retains its separate NIH3T3 cytotoxicity result.
+- The Inconclusive AID 651635 row retains NOT_DETERMINED and its ATXN2 project provenance but not target_enzyme; EPAC Inconclusive outcomes are not converted to positives.
+- The existing exclusion API is not misused: AID 651635 has two raw rows and fails its one-row selector requirement.
+- Authorized regeneration and native strict/reproduction checks pass after implementation.
+
+### BIO032-A2
+
+Preserve SID and panel/result identity in the effective PubChem extraction/provenance schema before deduplicating the four current target-metadata pairs. Compare full AID/SID/outcome/endpoint/value/panel tuples and merge compatible target metadata only; retain the distinct EPAC1 SIDs and their different measurements. Pin the eight exact rows and all recovered current SIDs in identity/bioactivity-comparison.json (SHA256 89814dc3d82ffec3963342e3358838f1876b6cf3bc61aa74811329c86eb2546f). Recompute the 25-observation selection and omission count from the corrected representation, documenting any newly included rows and source-manifest changes. Exact current row guards for key LPXQRXLUHJKZIE-UHFFFAOYSA-N and CID 135403646: AID 1645883, SID 124899167, target (blank), full-row SHA256 951f6e371f17a138d0268e21cc643fc5d924c46842341340d4c11a46faf0d056; AID 1645883, SID 124899167, target O95398, full-row SHA256 3a9ce219ec0ec56c559dabf51ac1ab8c20d4187d81ab399320ed51b849278c9e; AID 1645883, SID 441585673, target (blank), full-row SHA256 46cdd275a842d2231903c8487f7582ce1089b853b3322daabf16a9ce99103ce5; AID 1645883, SID 441585673, target O95398, full-row SHA256 1411b8b4da78b16982566bd523c8ab15ecbb5d108708c9cf8eaa29485ff4cb84; AID 1645886, SID 124899167, target (blank), full-row SHA256 953b177d22f6008b0bb9485f0001dbc225562bbe313cb8cfa4069d22d9b1d088; AID 1645886, SID 124899167, target Q8WZA2, full-row SHA256 cc998b9ded4d7cd2dba8b2ab7a2d1c6e766cbd132860b33c9e55c680b6b42760; AID 651635, SID 11112293, target (blank), full-row SHA256 ad71caa20c940f578f97de016973d3626f014395589ffbe006699879374fb38e; AID 651635, SID 11112293, target Q99700, full-row SHA256 5f940d94843aaaa3d1ccd38a5609a86bc481228435278cb173e14f6398e5d150. SID is recovered from the current authoritative summary and is not part of the existing raw-row digest.
+
+- SID 124899167 and SID 441585673 remain distinct EPAC1 samples with 11.2202 and 125.892 uM values respectively.
+- The four target-metadata pairs are not represented as independent replicates or collapsed across distinct sample/result identities.
+- Any cap/count change is explicitly recomputed and its newly emitted rows receive protocol review before activity classes are asserted.
+- Source inventory, manifest and schema changes remain reproducible; raw scientific observations are preserved.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| R032-OWNER | data/natural_products/alkaloids/8-azaguanine.yaml; Complete owner, all three inline graphs and every history event; full resolved input | supports | The owner is neutral free-base 8-azaguanine, with a MIBiG structure, exact ChEBI grounding and PubChem xref. It contains 25 source assay observations, three curated native genetic graphs and sequence-example edges; no external graph component is referenced. Assays, graph edges and protein identities receive their separate detailed audits. |
+| R032-CHEBI | https://www.ebi.ac.uk/chebi/backend/api/public/compound/63486/; Complete current response and relevant exact-entry fields inspected | supports | CHEBI:63486 is a released three-star 8-azaguanine entry with the exact owner Standard key, neutral C4H4N6O and matching definition. Secondary CHEBI40862 is authority metadata, not a second compound. Its empty origin list does not erase the separately evidenced MIBiG/primary biological origin. |
+| R032-CHEBI-MOL | https://www.ebi.ac.uk/chebi/backend/api/public/molfile/63486/; Complete current response and relevant exact-entry fields inspected | supports | The complete official connection table independently parses as neutral achiral C4H4N6O and regenerates LPXQRXLUHJKZIE-UHFFFAOYSA-N. The graph anchor does not specify the experimental solution tautomer or protonation distribution. |
+| R032-PUBCHEM | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/135403646/property/InChI,InChIKey,MolecularFormula,CanonicalSMILES,IsomericSMILES/JSON; Complete current response and relevant exact-entry fields inspected | supports | CID135403646 resolves to the identical owner SMILES, formula and full Standard key. This verifies the asserted chemical xref, not every assay-specific substance; those exact substance graphs are checked separately. |
+| R032-MIBIG | https://mibig.secondarymetabolites.org/repository/BGC0002508.2/annotations.json; Complete current response and relevant exact-entry fields inspected | supports | Version2 BGC0002508 is active, with exact compound8-azaguanine, MT543149.1:1..11423, taxon1650571 and Heterologous expression. It lists only PMID32235841. Source-faithful copying is confirmed; applicability of that citation to the deposited locus and missing native knockout evidence are separate scientific findings. |
+| R032-TAXON | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=1650571&amp;retmode=xml; Complete current response and relevant exact-entry fields inspected | supports | NCBI1650571 retains Streptomyces pathocidini and synonym S. albus subsp. pathocidicus. Its type-material entries include ATCC14510, CGMCC4.1633 and NRRL B-24287. Those collection aliases do not prove identity of historical study stocks, complete mutant alleles or differently annotated deposited loci. |
+| R032-CHEMISTRY | /private/tmp/npm-review-work/032/identity/chemical-comparison.json; Independent owner SMILES and official ChEBI MOL comparison, alongside current PubChem property response | supports | All three sources agree in full Standard identity. Fixed-H representations are retained separately and are not treated as measured solution-state microstructures. |
+| R032-RAW | data/raw/mibig_compounds.tsv; Complete exact-key BGC0002508:1 and corresponding eligible ChEBI and NPClassifier rows | supports | MIBiG2 provides the exact source graph, taxon and locus; CHEBI63486 provides three-star identity and definition. The source concepts remain separately attributable, and no LOTUS or CyanoMetDB occurrence is emitted in this record. |
+| R032-CLASS | data/raw/npclassifier.tsv; Complete exact-key prediction row | context_only | ALKALOIDS, Pseudoalkaloids and pteridine alkaloids reproduce the versioned NPClassifier prediction. They are not assertions that the triazolopyrimidine molecule is chemically a pteridine or that its biosynthesis uses a particular enzyme route. OTHER is separately imported from MIBiG. |
+| R032-SEARCH | /private/tmp/npm-review-work/032/identity/local-search.txt; Ignored-inclusive exact-ID, full-key and slug search | context_only | The complete search includes maintained curation inputs, raw rows, owners, source code and review evidence, including ignored and hidden files. It locates graph/audit provenance and raw assay material. Historical evidence archives are retained as context and are not presumed to be validated target reviews. |
+| R032-IMODULON | https://imodulondb.org/; Complete 28-dataset structured catalogue retained at actual retrieval time | context_only | No S. pathocidini dataset is present. S. albidoflavus and S. coelicolor cannot substitute for native CGMCC4.1633 genetic evidence; recombinant host context does not create an expression-module experiment. |
+| S032-OWNER | /private/tmp/npm-record-reviews-20261021/data/natural_products/alkaloids/8-azaguanine.yaml; Complete 1,287-line owner; all three inline BIOSYNTHESIS graphs, every edge and curation event; resolved view compared in local-sources.json. | context_only | The complete owner contains 32 graph nodes and 29 edges: eleven native deletion interventions, eleven product outcomes and seven sequence-example links. Imported BGC0002508:1 is MT543149.1:1–11423, cited to PMID:32235841, with Heterologous expression, SOURCE_ASSERTION and CLUSTER_DEMONSTRATED. The generated producer has no strain qualification. No referenced graph component is present. |
+| S032-RAW | /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv; Exact BGC0002508:1 row, entry version 2; canonical raw-row SHA256 ccf82236984ef2518f06604e1f5a1715e1395b9184b59ee3cf20ebf5046d05c5 | context_only | The row exactly supplies the owner locus, structure and current grades. It records primary_reference PMID:32235841 at ENTRY scope, Heterologous expression as the only method, taxon 1650571, and the 11,423-nt MT543149.1 region. The source row is preserved as provenance; the row hash is the required guard for coordinated maintained corrections. |
+| S032-FRONTIERS | DOI:10.3389/fbioe.2020.603514; PMID:33251204; PMC7674941; complete main body, Methods and all main figure captions. Genome Sequencing and Analysis; Construction of Gene Inactivation Mutants; Results Sequencing, Genes Disruption and Heterologous Expression; Data Availability. | supports | The paper identifies CGMCC4.1633 as the native producer and MT543149 as its 8-azgA–K deposit. Native deletion of the 11-kb region and individual F deletion remove detectable 8-azaguanine; D/E leave trace product; A/B/C/G/H/J decrease it; I has no reported effect and K a small increase. It describes in-frame double crossovers with six-base scars and HPLC/UV 245-nm comparison against authentic 8-azaguanine. Separately, pSET152 gene combinations in S. albus J1074 generate exact product, including the A–H combination and ABFG. The whole main text was inspected; the supplementary allele evidence and five-gene phenotype panel were unavailable. |
+| S032-FIG1 | https://www.frontiersin.org/files/Articles/603514/xml-images/fbioe-08-603514-g001.webp; Original publisher main Figure 1, panels A/B, visually inspected for this review; local snapshot /private/tmp/npm-review-work/032/frontiers-figure1.webp. | supports | Panel A depicts neutral 8-azaguanine as compound 1, distinct from guanine. Panel B keeps the ATCC14510 six-gene Ptn study separate from the CGMCC4.1633 eleven-gene 8-azg study and maps PtnA–F to 8-AzgF–A. The shared collection lineage does not make the experimental gene sets or protein starts interchangeable. |
+| S032-FIG2 | https://www.frontiersin.org/files/Articles/603514/xml-images/fbioe-08-603514-g002.webp; Original publisher main Figure 2, panels A/B, visually inspected for this review; local snapshot /private/tmp/npm-review-work/032/frontiers-figure2.webp. | supports | Panel A labels wild type i, whole-region deletion ii, A iii, B iv, D v, E vi, F vii, G viii and authentic 8-azaguanine standard viiii. Product 1 is distinct from adenosine 4 and the D-mutant nucleosides 2/3. The native whole-region and F-deletion outcomes support loss of detectable product; D/E trace and A/B/G reduced outcomes are consistent with the explicit Results. There is no quantitative vertical scale, integrated yield or statistical estimate. Panel B shows the nucleoside congeners, which are not merged into the free-base owner. |
+| S032-FIG3 | https://www.frontiersin.org/files/Articles/603514/xml-images/fbioe-08-603514-g003.webp; Original publisher main Figure 3, panels A/B, visually inspected for this review; local snapshot /private/tmp/npm-review-work/032/frontiers-figure3.webp. | supports | Panel A shows J1074 gene-combination cultures, the control and authentic 8-azaguanine: A–H and ABFG yield the marked product peak. Panel B shows nitrite-feeding responses in specific engineered J1074 contexts. These are heterologous experiments, separate from native knockout outcomes; they do not demonstrate a universal minimum gene set or direct transporter/radical chemistry. |
+| S032-NATURE | DOI:10.1038/s41467-020-15420-8; PMID:32235841; PMC7109123; complete Introduction, Results, Discussion, Methods and main figure captions. Results In vivo genetic study; Methods General methods and Heterologous expression and engineering of the ptn cluster. | supports | This is the imported citation. It studies native ATCC14510 and explicitly calls NRRL B-24287 the same strain, but its Ptn knockout/reconstitution experiments are performed on cosmid29H7 or gene constructs in S. albus J1074. The six Ptn genes, their tagged recombinant assays and their host phenotypes must be kept distinct from the Frontiers native CGMCC4.1633 A–K deletion series. Native isotope feeding independently supports natural 8-azaguanine production. PtnC directly converts 8-azaguanosine 5-prime-monophosphate to the free base; purified PtnF is tested with N-hydroxyarginine/H2O2 and a nitrite endpoint. PtnA opening, PtnD function and the in-vivo triazole catalyst remain proposed or unresolved. The source does not supply the Frontiers native A–K knockout methods. |
+| S032-NATURE-SI | https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-020-15420-8/MediaObjects/41467_2020_15420_MOESM1_ESM.pdf; Supplementary Table 1 (PDF page 2), Table 2 and Figures 1–7 captions; extracted source text inspected for accession, native versus engineered context and construct descriptions. | supports | Table 1 names MN707952 or NZ_LIQY01000068.1:7148–11814 as the Ptn locus and lists PtnA206, B111, C167, D236, E408 and F390 aa. The supplement describes Ptn inactivation/reconstitution in the engineered J1074 context. It is not the unavailable Frontiers supplement and cannot verify the CGMCC4.1633 mutant alleles or supplemental Figure 4. |
+| S032-TYPE-ALIASES | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=1650571&amp;retmode=xml; Taxon1650571 scientific name, synonym and type-material OtherNames; local taxonomy.xml. | supports | Streptomyces pathocidini includes the synonym S. albus subsp. pathocidicus and type-material collection numbers CGMCC4.1633, ATCC14510 and NRRL B-24287. This supports shared type-strain lineage. It does not establish identical experimental stocks, exact engineered constructs or identical full protein sequences at differently annotated starts. |
+| S032-FRONTIERS-SI-ACCESS | /private/tmp/npm-review-work/shared-next-batch004/root/access-003.json; Saved original supplement access attempts: access-002.json official Frontiers Table_1.DOCX endpoint; access-003.json PMC bin response; response bodies retained under shared-next-batch004/root. | unknown | The attempted official Frontiers supplement endpoint returned HTTP404 on 2026-10-21T09:29:45.916258Z; the PMC bin route returned HTTP200 at 09:30:29.736646Z but was 21,359 bytes of text/html, not a DOCX supplement. No experimental SI content was inspected. These existing bounded failures were reused without additional retries. |
+| S032-CURATION-SEARCH | /private/tmp/npm-review-work/032/science-curation-search.txt; Exact executed rg command and exit status in science-curation-search.json; stdout was empty with exit1. | context_only | No existing maintained curation decision for this BGC, compound connectivity prefix, compound name or 8-azg gene prefix was found in the scoped curation search. Ignored and hidden files were included; this does not establish absence of scientific literature. |
+| S032-GRADING | /private/tmp/npm-record-reviews-20261021/conf/producer_evidence.tsv; Knock-out studies, Heterologous expression and Enzymatic assays rows; src/naturalproductmech/grading.py read. | context_only | Native Knock-out studies grades organism+cluster as BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED. Heterologous expression alone grades the locus but leaves the native producer SOURCE_ASSERTION. Exact native full-region/F deletion evidence is therefore materially different from the imported method set. |
+| S032-METHOD-LOADER | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; load_mibig_locus_evidence_overrides, apply_mibig_locus_evidence_override and method/claim/strain composition call sites. | context_only | The consumed REPLACE overlay can add the exact Knock-out studies literal alongside Heterologous expression and recomputes both grades. Its expected_* drift fields are enforced only for WITHDRAW; a REPLACE correction requires a paired consumed full-row SHA guard or an explicit loader extension. It cannot rely on unused expected_* fields alone. |
+| S032-CLAIM-LOADER | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/curate/claim_references.py; load_claim_references and correct_claim_reference; docs/CURATION.md claim-reference section. | context_only | A claim-reference decision keyed to BGC0002508:1 pins the complete untouched source row, separately routes producer/locus references, preserves the old raw citation and appends curator rationale. It changes citations only and rejects incompatible structure replacements. |
+| S032-STRAIN-LOADER | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/curate/producer_strains.py; load_producer_strains, _load_qualifications, qualify_producer and _append_evidence. | context_only | A producer-strain decision can add literal CGMCC4.1633 with the complete raw-row SHA and Frontiers citation, preserving taxon and adding scoped provenance. By itself it does not change evidence grades; it must compose with the separate method and citation decisions. |
+| P032-NATIVE-CDS | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&amp;id=MN707952,MT543149,KR476659&amp;rettype=gbwithparts&amp;retmode=text; /private/tmp/npm-review-work/shared-next-batch004/root/azaguanine-a33853-native-sequences.gb; MT543149.1 source and all eleven CDS features, 1..11423 | supports | The official submitted MT543149.1 locus is 11,423 bp from Streptomyces pathocidini CGMCC4.1633, taxon 1650571. All eleven complete CDSs and their translated proteins were inspected and independently translated here, retaining strands, starts and terminal stops. The deposit says PacBio; it does not establish the experimental mutant alleles or historical stock identity. |
+| P032-GENPEPT | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&amp;id=QLM04708.1%2CQLM04709.1%2CQLM04710.1%2CQLM04711.1%2CQLM04712.1%2CQLM04713.1%2CQLM04714.1%2CQLM04715.1%2CQLM04716.1%2CQLM04717.1%2CQLM04718.1&amp;rettype=gp&amp;retmode=text; /private/tmp/npm-review-work/032/proteins/genpept-eleven.gb; QLM04708.1 through QLM04718.1, source/coded_by/sequence fields | supports | All eleven exact versioned GenPept protein records resolve. Their organism, CGMCC4.1633 strain, taxon 1650571, CDS coordinates, translation table 11 and full amino-acid sequences match MT543149.1 and the owner. Protein lengths for A through K are 390, 408, 236, 167, 102, 206, 462, 378, 682, 103 and 277 residues, respectively; D is QLM04718.1, not an accession inferred from alphabetical order. |
+| P032-UP-A0A6G9KJ81 | https://rest.uniprot.org/uniprotkb/A0A6G9KJ81.json; /private/tmp/npm-review-work/032/proteins/uniprot-A0A6G9KJ81.json; primaryAccession, entryType, organism, genes, sequence, extraAttributes.uniParcId | supports | Current A0A6G9KJ81 is an unreviewed TrEMBL entry for Streptomyces pathocidini (taxon 1650571), locus ACH429_00980. Its complete 167-residue sequence exactly equals versioned QLM04718.1, the independently translated native CDS, and UPI000B1A84C6. Protein-existence metadata is 4: Predicted; these database annotations are not independent enzyme assays. |
+| P032-ARC-UPI000B1A84C6 | https://rest.uniprot.org/uniparc/UPI000B1A84C6.json; /private/tmp/npm-review-work/032/proteins/uniparc-UPI000B1A84C6.json; complete sequence and active exact UniProtKB/EMBL protein-version cross-references | supports | Current UPI000B1A84C6 retains active links to UniProtKB A0A6G9KJ81 and EMBL/GenPept QLM04718.1, with exact protein version 1 and taxon 1650571. Full-sequence equality was verified directly, beyond the accession association. The asserted ACH429_00980 example is supported within this sequence-only scope. |
+| P032-UP-A0A7G3ZQC3 | https://rest.uniprot.org/uniprotkb/A0A7G3ZQC3.json; /private/tmp/npm-review-work/032/proteins/uniprot-A0A7G3ZQC3.json; primaryAccession, entryType, organism, genes, sequence, extraAttributes.uniParcId | supports | Current A0A7G3ZQC3 is an unreviewed TrEMBL entry for Streptomyces pathocidini (taxon 1650571), locus ACH429_00985. Its complete 102-residue sequence exactly equals versioned QLM04711.1, the independently translated native CDS, and UPI0006E3F696. Protein-existence metadata is 4: Predicted; these database annotations are not independent enzyme assays. |
+| P032-ARC-UPI0006E3F696 | https://rest.uniprot.org/uniparc/UPI0006E3F696.json; /private/tmp/npm-review-work/032/proteins/uniparc-UPI0006E3F696.json; complete sequence and active exact UniProtKB/EMBL protein-version cross-references | supports | Current UPI0006E3F696 retains active links to UniProtKB A0A7G3ZQC3 and EMBL/GenPept QLM04711.1, with exact protein version 1 and taxon 1650571. Full-sequence equality was verified directly, beyond the accession association. The asserted ACH429_00985 example is supported within this sequence-only scope. |
+| P032-UP-A0A6G9KIY0 | https://rest.uniprot.org/uniprotkb/A0A6G9KIY0.json; /private/tmp/npm-review-work/032/proteins/uniprot-A0A6G9KIY0.json; primaryAccession, entryType, organism, genes, sequence, extraAttributes.uniParcId | supports | Current A0A6G9KIY0 is an unreviewed TrEMBL entry for Streptomyces pathocidini (taxon 1650571), locus ACH429_00990. Its complete 206-residue sequence exactly equals versioned QLM04712.1, the independently translated native CDS, and UPI00099E5E15. Protein-existence metadata is 4: Predicted; these database annotations are not independent enzyme assays. |
+| P032-ARC-UPI00099E5E15 | https://rest.uniprot.org/uniparc/UPI00099E5E15.json; /private/tmp/npm-review-work/032/proteins/uniparc-UPI00099E5E15.json; complete sequence and active exact UniProtKB/EMBL protein-version cross-references | supports | Current UPI00099E5E15 retains active links to UniProtKB A0A6G9KIY0 and EMBL/GenPept QLM04712.1, with exact protein version 1 and taxon 1650571. Full-sequence equality was verified directly, beyond the accession association. The asserted ACH429_00990 example is supported within this sequence-only scope. |
+| P032-UP-A0A6G9KI63 | https://rest.uniprot.org/uniprotkb/A0A6G9KI63.json; /private/tmp/npm-review-work/032/proteins/uniprot-A0A6G9KI63.json; primaryAccession, entryType, organism, genes, sequence, extraAttributes.uniParcId | supports | Current A0A6G9KI63 is an unreviewed TrEMBL entry for Streptomyces pathocidini (taxon 1650571), locus ACH429_00965. Its complete 390-residue sequence exactly equals versioned QLM04708.1, the independently translated native CDS, and UPI000A88606E. Protein-existence metadata is 3: Inferred from homology; these database annotations are not independent enzyme assays. |
+| P032-ARC-UPI000A88606E | https://rest.uniprot.org/uniparc/UPI000A88606E.json; /private/tmp/npm-review-work/032/proteins/uniparc-UPI000A88606E.json; complete sequence and active exact UniProtKB/EMBL protein-version cross-references | supports | Current UPI000A88606E retains active links to UniProtKB A0A6G9KI63 and EMBL/GenPept QLM04708.1, with exact protein version 1 and taxon 1650571. Full-sequence equality was verified directly, beyond the accession association. The asserted ACH429_00965 example is supported within this sequence-only scope. |
+| P032-UP-A0A7G3ZQC5 | https://rest.uniprot.org/uniprotkb/A0A7G3ZQC5.json; /private/tmp/npm-review-work/032/proteins/uniprot-A0A7G3ZQC5.json; primaryAccession, entryType, organism, genes, sequence, extraAttributes.uniParcId | supports | Current A0A7G3ZQC5 is an unreviewed TrEMBL entry for Streptomyces pathocidini (taxon 1650571), locus ACH429_00995. Its complete 462-residue sequence exactly equals versioned QLM04713.1, the independently translated native CDS, and UPI0006E15438. Protein-existence metadata is 4: Predicted; these database annotations are not independent enzyme assays. |
+| P032-ARC-UPI0006E15438 | https://rest.uniprot.org/uniparc/UPI0006E15438.json; /private/tmp/npm-review-work/032/proteins/uniparc-UPI0006E15438.json; complete sequence and active exact UniProtKB/EMBL protein-version cross-references | supports | Current UPI0006E15438 retains active links to UniProtKB A0A7G3ZQC5 and EMBL/GenPept QLM04713.1, with exact protein version 1 and taxon 1650571. Full-sequence equality was verified directly, beyond the accession association. The asserted ACH429_00995 example is supported within this sequence-only scope. |
+| P032-UP-A0A6G9KI21 | https://rest.uniprot.org/uniprotkb/A0A6G9KI21.json; /private/tmp/npm-review-work/032/proteins/uniprot-A0A6G9KI21.json; primaryAccession, entryType, organism, genes, sequence, extraAttributes.uniParcId | supports | Current A0A6G9KI21 is an unreviewed TrEMBL entry for Streptomyces pathocidini (taxon 1650571), locus ACH429_00975. Its complete 236-residue sequence exactly equals versioned QLM04710.1, the independently translated native CDS, and UPI0006E1F3FA. Protein-existence metadata is 3: Inferred from homology; these database annotations are not independent enzyme assays. |
+| P032-ARC-UPI0006E1F3FA | https://rest.uniprot.org/uniparc/UPI0006E1F3FA.json; /private/tmp/npm-review-work/032/proteins/uniparc-UPI0006E1F3FA.json; complete sequence and active exact UniProtKB/EMBL protein-version cross-references | supports | Current UPI0006E1F3FA retains active links to UniProtKB A0A6G9KI21 and EMBL/GenPept QLM04710.1, with exact protein version 1 and taxon 1650571. Full-sequence equality was verified directly, beyond the accession association. The asserted ACH429_00975 example is supported within this sequence-only scope. |
+| P032-UP-A0A7G3ZQC6 | https://rest.uniprot.org/uniprotkb/A0A7G3ZQC6.json; /private/tmp/npm-review-work/032/proteins/uniprot-A0A7G3ZQC6.json; primaryAccession, entryType, organism, genes, sequence, extraAttributes.uniParcId | supports | Current A0A7G3ZQC6 is an unreviewed TrEMBL entry for Streptomyces pathocidini (taxon 1650571), locus ACH429_01000. Its complete 378-residue sequence exactly equals versioned QLM04714.1, the independently translated native CDS, and UPI000B2DAD11. Protein-existence metadata is 4: Predicted; these database annotations are not independent enzyme assays. |
+| P032-ARC-UPI000B2DAD11 | https://rest.uniprot.org/uniparc/UPI000B2DAD11.json; /private/tmp/npm-review-work/032/proteins/uniparc-UPI000B2DAD11.json; complete sequence and active exact UniProtKB/EMBL protein-version cross-references | supports | Current UPI000B2DAD11 retains active links to UniProtKB A0A7G3ZQC6 and EMBL/GenPept QLM04714.1, with exact protein version 1 and taxon 1650571. Full-sequence equality was verified directly, beyond the accession association. The asserted ACH429_01000 example is supported within this sequence-only scope. |
+| P032-EXACT-COMPARISON | .venv/bin/python /private/tmp/npm-review-work/032/check-proteins.py; /private/tmp/npm-review-work/032/proteins/comparison.json | supports | The independent comparison completed with exit 0. All eleven owner CDS coordinates and lengths match the official records; genomic translations equal their submitted CDS and fresh GenPept proteins. A, E and J start with GTG; H and I start with TTG; all use table 11 with initiating methionine and an omitted terminal stop. All seven UniProt/UniParc links have exact full-sequence, taxon, locus-tag and active cross-reference matches. |
+| BIO032-SUMMARY | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/135403646/assaysummary/JSON; /private/tmp/npm-review-work/032/identity/assaysummary.json | supports | All 25 stored observations match current CID 135403646 summary rows, including exact calls, numeric values, endpoint names, source references and target accessions. They represent 20 AIDs and 21 distinct AID/SID result combinations; four additional rows differ only in target metadata. The current selected-AID summary has 29 rows: four extra Inactive rows without a numeric endpoint are filtered by the documented extractor. Inconclusive remains NOT_DETERMINED and Inactive remains INACTIVE. |
+| BIO032-SUBSTANCES | https://pubchem.ncbi.nlm.nih.gov/rest/pug/substance/sid/11112293,124899167,441585673,47193666/JSON; /private/tmp/npm-review-work/032/identity/assay-substances.json | supports | The four deposited substances SID 11112293, 124899167, 441585673 and 47193666 each link to CID 135403646. Independent reconstruction of every raw atom/bond graph gives C4H4N6O and exact full standard InChIKey LPXQRXLUHJKZIE-UHFFFAOYSA-N. Different SIDs remain distinct tested samples, even though the standardized structures match. |
+| BIO032-PROTOCOLS | https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1405,1479,2010,2044,2294,489026,489033,489035,489041,493073,493102,493177,504444,624296,624297,651635,686991,686995,1645883,1645886/description/JSON; PC_AssayContainer entries for the 20 stored AIDs; full description and protocol arrays | supports | All 20 complete official descriptions and protocols were inspected. AID 489033 measures NF-kB reporter luminescence in stimulated human 697 B cells; AIDs 2044 and 2294 measure beta-galactosidase reporter signals from T. cruzi in NIH3T3 coculture. These are cellular phenotypes, not direct enzyme inhibition assays. AID 2010 measures NIH3T3 viability and supports the bounded CYTOTOXIC classification. Other stored results include splicing, MITF/TRPM1 and Nrf2 reporters, DNA-content imaging, transcriptional counterscreens, total-fluorescence interference and purified EPAC/RAP1B nucleotide-exchange assays. |
+| BIO032-ATXN-COUNTER | https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1405,1479,2010,2044,2294,489026,489033,489035,489041,493073,493102,493177,504444,624296,624297,651635,686991,686995,1645883,1645886/description/JSON; AID 651635 name, description, complete protocol and target array | supports | AID 651635 is explicitly the viability counterscreen for an ATXN-expression project. Its protocol uses a live-cell protease fluorescence viability readout, alongside a separately described ATXN2-luciferase reporter measurement. The target array carries Q99700/ATXN2 project metadata, but the stored viability result does not establish an ATXN2 enzyme target or direct compound action. The exact row is Inconclusive, not an asserted active ATXN2 inhibitor. |
+| BIO032-U-O95398 | https://rest.uniprot.org/uniprotkb/O95398.json; /private/tmp/npm-review-work/032/identity/uniprot-O95398.json | supports | Reviewed human RAPGEF3/EPAC1, a Rap guanine-nucleotide exchange factor; it matches the purified EPAC1 assay context of AID 1645883. Neither of the two Inconclusive sample results establishes activation. |
+| BIO032-U-Q8WZA2 | https://rest.uniprot.org/uniprotkb/Q8WZA2.json; /private/tmp/npm-review-work/032/identity/uniprot-Q8WZA2.json | supports | Reviewed human RAPGEF4/EPAC2, a Rap guanine-nucleotide exchange factor; it matches the EPAC2 protocol and target array of AID 1645886. The copied general description contains EPAC1 wording, but the assay title/protocol identify EPAC2. The Inconclusive stored result does not establish antagonism. |
+| BIO032-U-Q99700 | https://rest.uniprot.org/uniprotkb/Q99700.json; /private/tmp/npm-review-work/032/identity/uniprot-Q99700.json | supports | Reviewed human ataxin-2 (ATXN2), a regulator rather than the enzyme measured by the AID 651635 viability assay. Identifier validity and project metadata do not justify placing it in target_enzyme for a viability counterscreen. |
+| BIO032-PMID | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=35787375&amp;retmode=xml; PubmedArticle for PMID 35787375: ArticleTitle, Abstract and own PubmedData/ArticleIdList | supports | PMID 35787375 resolves to the ATXN2 quantitative-screen publication, DOI 10.1016/j.jbc.2022.102228. The accessed bibliographic record and abstract establish project bibliography; the abstract does not independently validate the exact 8-azaguanine result or direct ATXN2 action. Full paper and supplementary hit lists were not inspected for this database-assertion audit. |
+| BIO032-COMPARE | /private/tmp/npm-review-work/032/identity/bioactivity-comparison.json; Independent raw-row sorting, complete numeric/call comparison and four raw molecular graph reconstructions | supports | The exact-key raw inventory has 123 rows; the documented stable numeric-first/title sort selects exactly the 25 owner observations and leaves 98 omitted rows. Every selected current summary, owner call, value, unit, endpoint, reference and target identifier matches. RDKit 2026.03.5 gives the exact full key for all four substances. All 123 inventory rows have a matching current summary row: True. Full source-row digests and recovered current SIDs are retained. |
+| BIO032-EXTRACTION | scripts/extract_pubchem_bioassay.py; COLUMNS and rows_from_summary; exact 123 data/raw/pubchem_bioassay.tsv rows | supports | The extractor retains outcomes, named numeric endpoints, target accession and PubMed reference, but discards SID and panel identity. It permits Active rows without a number and excludes nonactive rows without one. Therefore target-metadata duplicates and distinct sample results can no longer be distinguished by the raw schema alone. |
+| BIO032-SEED | scripts/seed_from_sources.py; ACTIVITY_CLASS_PATTERNS, classify_activity and bioactivity construction/cap sections | supports | The generic inhibition-title fallback assigns ENZYME_INHIBITOR. The antiparasitic pattern does not match the source spelling T.Cruzi, and the cellular NF-kB title also triggers the fallback. Any syntactically valid UniProt accession is copied to target_enzyme without a protocol-role check. Source calls and numeric values are preserved; only active written classes contribute to bioactivity_summary. |
+| BIO032-EXCLUSION-GUARD | src/naturalproductmech/curate/bioassay_exclusions.py; Entire loader and exclusion discussion helper; entire curation/pubchem_bioassay_exclusions.tsv; structure_corrections.row_digest | supports | The existing exclusion mechanism only withholds a complete row; it does not override a class, add assay context, or change a target role. It requires exactly one row for the full InChIKey/CID/AID tuple and checks a canonical full-row SHA256. AID 651635 has two matching rows, so its target-bearing row cannot be selected with the current exclusion key. A new consumed decision route or explicit guarded source-specific mapping is required for the proposed corrections. |
+
+## Limits And Additional Notes
+
+- Chemical authority comparison establishes the neutral Standard-identity anchor. It does not measure tautomer populations, intracellular salts or protonation state.
+- Taxonomy type-material aliases do not establish complete sequence identity of historical stocks or mutant alleles; the detailed protein audit is limited to deposited references and current sequence records.
+- The Frontiers main article and original main Figures1–3 were inspected; its supplement remains unavailable. The C/H/I/J/K reports are verified as main-text statements, without independent supplementary chromatogram/PCR/allele inspection, peak integration or statistical reanalysis.
+- Nature primary main text was read in full, but only the accession/construct portion of its available supplement was re-read for this target. No complete raw-spectrum reinterpretation or new full tagged-construct reconstruction is claimed.
+- The 2020 papers use type-material collection aliases; neither shared taxonomy nor equal deposited reference sequences proves identity of historical stocks or engineered mutant alleles. Protein authority and independent translation checks are supplied separately by the native-check agent.
+- This packet covers scientific identity in the primary experiments, natural origin, BGC/producer methods and all three graph claims. Current chemical authority checks, PubChem assay observations, computed classification and general local-source reconciliation are supplied in the other record-specific packets.
+- Only the temporary review packet and receipts were written. No owner, curation table, saved review, campaign state or repository file was modified, and no native validation or canary was run by this subtask.
+- Sequence identity among the submitted locus, versioned GenPept, UniProtKB and UniParc establishes the represented protein sequence, not the sequence of experimental deletion alleles, culture-stock identity, catalytic activity, or equivalence to every protein named Ptn. No global absence search was performed for B/I/J/K UniProt examples, which the owner does not assert.
+- The 25 owner claims are database assertions. Complete official protocols and current summary rows were read for all 20 stored AIDs; original individual experiments, raw curves and replicate files were not independently reproduced.
+- The full 123-row inventory and current summary were compared, but the 98 omitted rows did not receive individual protocol audits. Their count is a row count, not a count of independent assays.
+- Purified EPAC assay results remain Inconclusive. AID 1645886 contains EPAC1 wording in its general description while its title, target and protocol identify EPAC2; no positive antagonist mechanism is inferred.
+- Inactive fitted values, including 80 and 91.17 uM, are preserved as reported database values. Protocols describe assay maxima and possible censored fits; raw titration/censor flags were not separately fetched, so no exact binding affinity or effective positive concentration is inferred.
+- PMID 35787375 metadata and abstract were read, but its full text and supplementary hit tables were not inspected here. The citation is verified as ATXN2-project bibliography, not independent primary proof of direct action by this compound.
+- Full standard InChIKey agreement establishes deposited structure matching, not purity, concentration accuracy, historical sample identity or an orthogonal mechanism.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35 explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). Skipped tests are not counted as passing tests. Existing ontology caches were used; no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do not establish biological production, stereochemical specificity, evidence adequacy, or literature-level claim support.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Shared baseline gates and target strict validation retain their actual fresh command receipts for this base. Scientific failed or unavailable checks are distinct from bundle validation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T102234Z-8-azaguanine
+title: '8-azaguanine: native locus evidence and assay interpretation'
+started_at: '2026-10-21T10:08:03.335825Z'
+finished_at: '2026-10-21T10:22:34.568855Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The exact achiral structure, 11 native locus translations, seven protein
+  examples and all 25 stored database results are consistent with their cited records.
+  Native genetic evidence requires a coordinated method/citation/strain correction.
+  Three cellular assay results are mislabeled as enzyme inhibition, ATXN2 project
+  metadata is assigned as a viability-assay enzyme target, and four metadata pairs
+  obscure tested-substance provenance. The unavailable Frontiers supplement leaves
+  the review partial; no scientific owner or source data was changed.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: curation/pubchem_bioassay_exclusions.tsv
+    sha256: 76f9cbb17e62a270afed637b5058a553cfe85c754c6c9ec406635f12dae572fa
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/8-azaguanine.yaml
+    sha256: 406b00c60fd3fbef8598fbafc5d109b405835a8d5f3c3637585546724956a3aa
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/extract_pubchem_bioassay.py
+    sha256: 24f9d794e7cf97c420351cb751f8767f7d81a5f22aed01669b2318d6755e7c00
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/bioassay_exclusions.py
+    sha256: 4a4176e072ac9759aa8a9e88300d7e2de5aaf4ebf30b5c42fcf4c9c0b6cebbb4
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 32, batch 004, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated pending-PR targets.
+    At selection, 84 of 3116 current records had campaign coverage and 3032 remained.
+    The population search included ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:63486
+targets:
+- target_id: CHEBI:63486
+  path: data/natural_products/alkaloids/8-azaguanine.yaml
+  label: 8-azaguanine
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/8-azaguanine.yaml
+    role: Curator-owned assertions, inline mechanisms, discussions and audit history
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - CHEBI:63486
+  command: just validate-strict data/natural_products/alkaloids/8-azaguanine.yaml
+    --out /private/tmp/npm-review-work/032/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T10:08:05.528537Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Fresh read-only execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. No earlier
+    baseline result is reused.'
+  target_ids:
+  - CHEBI:63486
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Fresh read-only execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    No earlier baseline result is reused.'
+  target_ids:
+  - CHEBI:63486
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Fresh read-only execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. No earlier
+    baseline result is reused.'
+  target_ids:
+  - CHEBI:63486
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Fresh read-only execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. No
+    earlier baseline result is reused.'
+  target_ids:
+  - CHEBI:63486
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed against the new main revision.
+    Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). All configured
+    lint, governance, documentation, provenance, source-queue, schema, rendering,
+    reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Fresh read-only execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. No earlier baseline
+    result is reused.'
+  target_ids:
+  - CHEBI:63486
+- check_id: R032-C-CHEMISTRY
+  name: Exact chemical identity and equivalence
+  status: passed
+  required: true
+  summary: Owner, official ChEBI MOL and PubChem share the complete Standard key;
+    exact-form identifiers resolve.
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - R032-CHEMISTRY
+  - R032-CHEBI
+  - R032-PUBCHEM
+- check_id: R032-C-IMODULON
+  name: Applicable native-producer expression dataset
+  status: not_applicable
+  required: false
+  summary: The inspected complete catalogue has no S. pathocidini dataset.
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - R032-IMODULON
+- check_id: S032-PRIMARY-GRAPHS
+  name: Primary experimental correspondence for the native deletion graphs
+  status: passed
+  required: true
+  summary: All 22 native intervention/phenotype edges were compared against the complete
+    Frontiers main Methods/Results; Figure2A additionally inspected for the six D/E/F/A/B/G
+    outcomes. No catalytic or universal-necessity overstatement was found in those
+    graph assertions.
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - S032-FRONTIERS
+  - S032-FIG2
+  - S032-OWNER
+- check_id: S032-EXACT-BGC-SCOPE
+  name: Claim-specific locus citation, native method and strain context
+  status: failed
+  required: true
+  summary: The exact MT543149 source experiment is Frontiers PMID33251204, but both
+    imported claims retain the Nature PMID32235841 citation and omit the native Knock-out
+    studies method and CGMCC4.1633 qualifier. The supported locus tier remains CLUSTER_DEMONSTRATED;
+    the native-producer evidence is materially stronger than the emitted SOURCE_ASSERTION.
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - S032-RAW
+  - S032-FRONTIERS
+  - S032-NATURE
+  - S032-NATURE-SI
+  - S032-GRADING
+- check_id: S032-FRONTIERS-SUPPLEMENT
+  name: Original Frontiers mutant and supplementary phenotype verification
+  status: unavailable
+  required: true
+  summary: The exact Frontiers supplement could not be read through the prior bounded
+    official/PMC requests. Supplementary Figure4 for C/H/I/J/K and the PCR/allele
+    evidence remain uninspected. Main-text reports are supported separately; Nature
+    SI is not a substitute. No further retry was made without a new lead.
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - S032-FRONTIERS-SI-ACCESS
+  - S032-FRONTIERS
+- check_id: P032-NATIVE-CHECK
+  name: Exact native CDS and versioned protein verification
+  status: passed
+  required: true
+  summary: All eleven deposited native protein IDs, complete CDSs, strands, lengths,
+    table-11 translations and source taxa agree with the owner. No mismatch was found
+    in this bounded check.
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - P032-NATIVE-CDS
+  - P032-GENPEPT
+  - P032-EXACT-COMPARISON
+  command: .venv/bin/python /private/tmp/npm-review-work/032/check-proteins.py
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Actual comparison interval 2026-10-21T10:10:40.028626Z to 2026-10-21T10:10:40.068793Z;
+    exact results and input hashes retained in /private/tmp/npm-review-work/032/proteins/comparison.json.
+- check_id: P032-UNIPROT-CHECK
+  name: Seven current sequence-identical UniProt examples
+  status: passed
+  required: true
+  summary: All seven asserted UniProtKB/UniParc examples resolve currently and equal
+    the exact native deposited protein sequence. They remain unreviewed entries, without
+    a biochemical-function or experimental-stock inference.
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - P032-UP-A0A6G9KJ81
+  - P032-ARC-UPI000B1A84C6
+  - P032-UP-A0A7G3ZQC3
+  - P032-ARC-UPI0006E3F696
+  - P032-UP-A0A6G9KIY0
+  - P032-ARC-UPI00099E5E15
+  - P032-UP-A0A6G9KI63
+  - P032-ARC-UPI000A88606E
+  - P032-UP-A0A7G3ZQC5
+  - P032-ARC-UPI0006E15438
+  - P032-UP-A0A6G9KI21
+  - P032-ARC-UPI0006E1F3FA
+  - P032-UP-A0A7G3ZQC6
+  - P032-ARC-UPI000B2DAD11
+  - P032-EXACT-COMPARISON
+- check_id: BIO032-FIDELITY
+  name: Stored assay calls, endpoints, row counts and deposited structures
+  status: passed
+  required: true
+  summary: All 25 observations, the 123-to-25 cap and 98 omitted-row note, and four
+    full deposited structures match. The exact database outcomes remain authoritative;
+    numerical values do not turn inactive or inconclusive calls into positives.
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - BIO032-SUMMARY
+  - BIO032-SUBSTANCES
+  - BIO032-COMPARE
+  command: .venv/bin/python /private/tmp/npm-review-work/032/compare-bioactivity.py
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Actual comparison completed 2026-10-21T10:16:46.490164Z
+- check_id: BIO032-SEMANTICS
+  name: Assay class and target-role support
+  status: failed
+  required: true
+  summary: Three ENZYME_INHIBITOR labels and the Q99700 target_enzyme placement are
+    not supported by the complete official protocols. Identifier and numeric fidelity
+    do not resolve these semantic errors.
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - BIO032-PROTOCOLS
+  - BIO032-ATXN-COUNTER
+  - BIO032-U-Q99700
+  - BIO032-SEED
+evidence:
+- evidence_id: R032-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/8-azaguanine.yaml
+  locator: Complete owner, all three inline graphs and every history event; full resolved
+    input
+  accessed_at: '2026-10-21T10:15:16.380129Z'
+  support: supports
+  summary: The owner is neutral free-base 8-azaguanine, with a MIBiG structure, exact
+    ChEBI grounding and PubChem xref. It contains 25 source assay observations, three
+    curated native genetic graphs and sequence-example edges; no external graph component
+    is referenced. Assays, graph edges and protein identities receive their separate
+    detailed audits.
+  snapshot_sha256: 406b00c60fd3fbef8598fbafc5d109b405835a8d5f3c3637585546724956a3aa
+- evidence_id: R032-CHEBI
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/63486/
+  locator: Complete current response and relevant exact-entry fields inspected
+  accessed_at: '2026-10-21T10:09:10.305105Z'
+  support: supports
+  summary: CHEBI:63486 is a released three-star 8-azaguanine entry with the exact
+    owner Standard key, neutral C4H4N6O and matching definition. Secondary CHEBI40862
+    is authority metadata, not a second compound. Its empty origin list does not erase
+    the separately evidenced MIBiG/primary biological origin.
+  snapshot_sha256: ceb3dd8a4b86ae3084ca623a534d8a1908924ebaaefe25736c614c02a8601243
+- evidence_id: R032-CHEBI-MOL
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/63486/
+  locator: Complete current response and relevant exact-entry fields inspected
+  accessed_at: '2026-10-21T10:13:57.661190Z'
+  support: supports
+  summary: The complete official connection table independently parses as neutral
+    achiral C4H4N6O and regenerates LPXQRXLUHJKZIE-UHFFFAOYSA-N. The graph anchor
+    does not specify the experimental solution tautomer or protonation distribution.
+  snapshot_sha256: 1a21ff415662059f097b47afa859686e60c0d644f836063930507cf8a514d5b2
+- evidence_id: R032-PUBCHEM
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/135403646/property/InChI,InChIKey,MolecularFormula,CanonicalSMILES,IsomericSMILES/JSON
+  locator: Complete current response and relevant exact-entry fields inspected
+  accessed_at: '2026-10-21T10:09:10.333357Z'
+  support: supports
+  summary: CID135403646 resolves to the identical owner SMILES, formula and full Standard
+    key. This verifies the asserted chemical xref, not every assay-specific substance;
+    those exact substance graphs are checked separately.
+  snapshot_sha256: a1245cc2eed2eca5c58816923e97abc5abbfdfd5f25c1629ce483a0b45329eca
+- evidence_id: R032-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0002508.2/annotations.json
+  locator: Complete current response and relevant exact-entry fields inspected
+  accessed_at: '2026-10-21T10:09:10.165842Z'
+  support: supports
+  summary: Version2 BGC0002508 is active, with exact compound8-azaguanine, MT543149.1:1..11423,
+    taxon1650571 and Heterologous expression. It lists only PMID32235841. Source-faithful
+    copying is confirmed; applicability of that citation to the deposited locus and
+    missing native knockout evidence are separate scientific findings.
+  snapshot_sha256: f39ffb2b722a4c4c20737250f36855b18babcd14db8b6792628a741a7d91676e
+- evidence_id: R032-TAXON
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1650571&retmode=xml
+  locator: Complete current response and relevant exact-entry fields inspected
+  accessed_at: '2026-10-21T10:09:10.686777Z'
+  support: supports
+  summary: NCBI1650571 retains Streptomyces pathocidini and synonym S. albus subsp.
+    pathocidicus. Its type-material entries include ATCC14510, CGMCC4.1633 and NRRL
+    B-24287. Those collection aliases do not prove identity of historical study stocks,
+    complete mutant alleles or differently annotated deposited loci.
+  snapshot_sha256: 83b250d4ca71d0a61af1faccb6683eda4ffe04684da399eb4f2c94f2b777a200
+- evidence_id: R032-CHEMISTRY
+  kind: validation
+  reference: /private/tmp/npm-review-work/032/identity/chemical-comparison.json
+  locator: Independent owner SMILES and official ChEBI MOL comparison, alongside current
+    PubChem property response
+  accessed_at: '2026-10-21T10:15:17.420278Z'
+  support: supports
+  summary: All three sources agree in full Standard identity. Fixed-H representations
+    are retained separately and are not treated as measured solution-state microstructures.
+  snapshot_sha256: bb1f170c73288d1be33f22af177d2fe6cdb20cfef084f7b8c8659caef12156c3
+- evidence_id: R032-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Complete exact-key BGC0002508:1 and corresponding eligible ChEBI and NPClassifier
+    rows
+  accessed_at: '2026-10-21T10:15:16.380129Z'
+  support: supports
+  summary: MIBiG2 provides the exact source graph, taxon and locus; CHEBI63486 provides
+    three-star identity and definition. The source concepts remain separately attributable,
+    and no LOTUS or CyanoMetDB occurrence is emitted in this record.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: R032-CLASS
+  kind: record_content
+  reference: data/raw/npclassifier.tsv
+  locator: Complete exact-key prediction row
+  accessed_at: '2026-10-21T10:15:16.380129Z'
+  support: context_only
+  summary: ALKALOIDS, Pseudoalkaloids and pteridine alkaloids reproduce the versioned
+    NPClassifier prediction. They are not assertions that the triazolopyrimidine molecule
+    is chemically a pteridine or that its biosynthesis uses a particular enzyme route.
+    OTHER is separately imported from MIBiG.
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: R032-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/032/identity/local-search.txt
+  locator: Ignored-inclusive exact-ID, full-key and slug search
+  accessed_at: '2026-10-21T10:09:35.621636Z'
+  support: context_only
+  summary: The complete search includes maintained curation inputs, raw rows, owners,
+    source code and review evidence, including ignored and hidden files. It locates
+    graph/audit provenance and raw assay material. Historical evidence archives are
+    retained as context and are not presumed to be validated target reviews.
+  snapshot_sha256: 1e801792866b0f500a53a07ff52294a6b4ee64bf306dfd3cd5d50db900a54a08
+  search_scope: rg --no-ignore --hidden -n -i CHEBI:63486|8-azaguanine|LPXQRXLUHJKZIE-UHFFFAOYSA-N
+    curation data/raw data/natural_products reviews src scripts
+- evidence_id: R032-IMODULON
+  kind: database
+  reference: https://imodulondb.org/
+  locator: Complete 28-dataset structured catalogue retained at actual retrieval time
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: No S. pathocidini dataset is present. S. albidoflavus and S. coelicolor
+    cannot substitute for native CGMCC4.1633 genetic evidence; recombinant host context
+    does not create an expression-module experiment.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+- evidence_id: S032-OWNER
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/alkaloids/8-azaguanine.yaml
+  locator: Complete 1,287-line owner; all three inline BIOSYNTHESIS graphs, every
+    edge and curation event; resolved view compared in local-sources.json.
+  accessed_at: '2026-10-21T10:14:01.955290Z'
+  support: context_only
+  summary: 'The complete owner contains 32 graph nodes and 29 edges: eleven native
+    deletion interventions, eleven product outcomes and seven sequence-example links.
+    Imported BGC0002508:1 is MT543149.1:1–11423, cited to PMID:32235841, with Heterologous
+    expression, SOURCE_ASSERTION and CLUSTER_DEMONSTRATED. The generated producer
+    has no strain qualification. No referenced graph component is present.'
+  snapshot_sha256: 406b00c60fd3fbef8598fbafc5d109b405835a8d5f3c3637585546724956a3aa
+- evidence_id: S032-RAW
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: Exact BGC0002508:1 row, entry version 2; canonical raw-row SHA256 ccf82236984ef2518f06604e1f5a1715e1395b9184b59ee3cf20ebf5046d05c5
+  accessed_at: '2026-10-21T10:14:01.955290Z'
+  support: context_only
+  summary: The row exactly supplies the owner locus, structure and current grades.
+    It records primary_reference PMID:32235841 at ENTRY scope, Heterologous expression
+    as the only method, taxon 1650571, and the 11,423-nt MT543149.1 region. The source
+    row is preserved as provenance; the row hash is the required guard for coordinated
+    maintained corrections.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: S032-FRONTIERS
+  kind: primary_source
+  reference: DOI:10.3389/fbioe.2020.603514
+  locator: PMID:33251204; PMC7674941; complete main body, Methods and all main figure
+    captions. Genome Sequencing and Analysis; Construction of Gene Inactivation Mutants;
+    Results Sequencing, Genes Disruption and Heterologous Expression; Data Availability.
+  accessed_at: '2026-10-21T09:25:52.364954Z'
+  support: supports
+  summary: The paper identifies CGMCC4.1633 as the native producer and MT543149 as
+    its 8-azgA–K deposit. Native deletion of the 11-kb region and individual F deletion
+    remove detectable 8-azaguanine; D/E leave trace product; A/B/C/G/H/J decrease
+    it; I has no reported effect and K a small increase. It describes in-frame double
+    crossovers with six-base scars and HPLC/UV 245-nm comparison against authentic
+    8-azaguanine. Separately, pSET152 gene combinations in S. albus J1074 generate
+    exact product, including the A–H combination and ABFG. The whole main text was
+    inspected; the supplementary allele evidence and five-gene phenotype panel were
+    unavailable.
+  snapshot_sha256: f7e9192b8072b42d3dc30b62d8767fd8f85388bad6eee3bcb5f725591dd88e10
+- evidence_id: S032-FIG1
+  kind: primary_source
+  reference: https://www.frontiersin.org/files/Articles/603514/xml-images/fbioe-08-603514-g001.webp
+  locator: Original publisher main Figure 1, panels A/B, visually inspected for this
+    review; local snapshot /private/tmp/npm-review-work/032/frontiers-figure1.webp.
+  accessed_at: '2026-10-21T10:09:29.626701Z'
+  support: supports
+  summary: Panel A depicts neutral 8-azaguanine as compound 1, distinct from guanine.
+    Panel B keeps the ATCC14510 six-gene Ptn study separate from the CGMCC4.1633 eleven-gene
+    8-azg study and maps PtnA–F to 8-AzgF–A. The shared collection lineage does not
+    make the experimental gene sets or protein starts interchangeable.
+  snapshot_sha256: 82582d3ee5138ffc773d05848f0f21987f6b7747b5d0a3ee92a69321d875453e
+- evidence_id: S032-FIG2
+  kind: primary_source
+  reference: https://www.frontiersin.org/files/Articles/603514/xml-images/fbioe-08-603514-g002.webp
+  locator: Original publisher main Figure 2, panels A/B, visually inspected for this
+    review; local snapshot /private/tmp/npm-review-work/032/frontiers-figure2.webp.
+  accessed_at: '2026-10-21T10:09:29.627306Z'
+  support: supports
+  summary: Panel A labels wild type i, whole-region deletion ii, A iii, B iv, D v,
+    E vi, F vii, G viii and authentic 8-azaguanine standard viiii. Product 1 is distinct
+    from adenosine 4 and the D-mutant nucleosides 2/3. The native whole-region and
+    F-deletion outcomes support loss of detectable product; D/E trace and A/B/G reduced
+    outcomes are consistent with the explicit Results. There is no quantitative vertical
+    scale, integrated yield or statistical estimate. Panel B shows the nucleoside
+    congeners, which are not merged into the free-base owner.
+  snapshot_sha256: 43ef2cedb696601d3aab131dbdbda2c637e7ac73ba004a2ca3c0421c4444f29c
+- evidence_id: S032-FIG3
+  kind: primary_source
+  reference: https://www.frontiersin.org/files/Articles/603514/xml-images/fbioe-08-603514-g003.webp
+  locator: Original publisher main Figure 3, panels A/B, visually inspected for this
+    review; local snapshot /private/tmp/npm-review-work/032/frontiers-figure3.webp.
+  accessed_at: '2026-10-21T10:09:29.627548Z'
+  support: supports
+  summary: 'Panel A shows J1074 gene-combination cultures, the control and authentic
+    8-azaguanine: A–H and ABFG yield the marked product peak. Panel B shows nitrite-feeding
+    responses in specific engineered J1074 contexts. These are heterologous experiments,
+    separate from native knockout outcomes; they do not demonstrate a universal minimum
+    gene set or direct transporter/radical chemistry.'
+  snapshot_sha256: e269ae444d91fe5b47a90525dd74b0a0f1256f6418b47587ff2c7bc2cc44d953
+- evidence_id: S032-NATURE
+  kind: primary_source
+  reference: DOI:10.1038/s41467-020-15420-8
+  locator: PMID:32235841; PMC7109123; complete Introduction, Results, Discussion,
+    Methods and main figure captions. Results In vivo genetic study; Methods General
+    methods and Heterologous expression and engineering of the ptn cluster.
+  accessed_at: '2026-10-21T09:29:44.750059Z'
+  support: supports
+  summary: This is the imported citation. It studies native ATCC14510 and explicitly
+    calls NRRL B-24287 the same strain, but its Ptn knockout/reconstitution experiments
+    are performed on cosmid29H7 or gene constructs in S. albus J1074. The six Ptn
+    genes, their tagged recombinant assays and their host phenotypes must be kept
+    distinct from the Frontiers native CGMCC4.1633 A–K deletion series. Native isotope
+    feeding independently supports natural 8-azaguanine production. PtnC directly
+    converts 8-azaguanosine 5-prime-monophosphate to the free base; purified PtnF
+    is tested with N-hydroxyarginine/H2O2 and a nitrite endpoint. PtnA opening, PtnD
+    function and the in-vivo triazole catalyst remain proposed or unresolved. The
+    source does not supply the Frontiers native A–K knockout methods.
+  snapshot_sha256: 7f5437d8e3b827a8c82b340ea2a4ac5b31e967f6ae93a6beb5689cb8e05dcfbe
+- evidence_id: S032-NATURE-SI
+  kind: primary_source
+  reference: https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-020-15420-8/MediaObjects/41467_2020_15420_MOESM1_ESM.pdf
+  locator: Supplementary Table 1 (PDF page 2), Table 2 and Figures 1–7 captions; extracted
+    source text inspected for accession, native versus engineered context and construct
+    descriptions.
+  accessed_at: '2026-10-21T09:32:23.112210Z'
+  support: supports
+  summary: Table 1 names MN707952 or NZ_LIQY01000068.1:7148–11814 as the Ptn locus
+    and lists PtnA206, B111, C167, D236, E408 and F390 aa. The supplement describes
+    Ptn inactivation/reconstitution in the engineered J1074 context. It is not the
+    unavailable Frontiers supplement and cannot verify the CGMCC4.1633 mutant alleles
+    or supplemental Figure 4.
+  snapshot_sha256: 91d92fd7fd64cbe9c45d33a27c7eca9c8b3c83add69775e676a0253979bb735c
+- evidence_id: S032-TYPE-ALIASES
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1650571&retmode=xml
+  locator: Taxon1650571 scientific name, synonym and type-material OtherNames; local
+    taxonomy.xml.
+  accessed_at: '2026-10-21T10:09:10.686777Z'
+  support: supports
+  summary: Streptomyces pathocidini includes the synonym S. albus subsp. pathocidicus
+    and type-material collection numbers CGMCC4.1633, ATCC14510 and NRRL B-24287.
+    This supports shared type-strain lineage. It does not establish identical experimental
+    stocks, exact engineered constructs or identical full protein sequences at differently
+    annotated starts.
+  snapshot_sha256: 83b250d4ca71d0a61af1faccb6683eda4ffe04684da399eb4f2c94f2b777a200
+- evidence_id: S032-FRONTIERS-SI-ACCESS
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch004/root/access-003.json
+  locator: 'Saved original supplement access attempts: access-002.json official Frontiers
+    Table_1.DOCX endpoint; access-003.json PMC bin response; response bodies retained
+    under shared-next-batch004/root.'
+  accessed_at: '2026-10-21T09:30:29.736646Z'
+  support: unknown
+  summary: The attempted official Frontiers supplement endpoint returned HTTP404 on
+    2026-10-21T09:29:45.916258Z; the PMC bin route returned HTTP200 at 09:30:29.736646Z
+    but was 21,359 bytes of text/html, not a DOCX supplement. No experimental SI content
+    was inspected. These existing bounded failures were reused without additional
+    retries.
+  snapshot_sha256: f28ff4661c290ba257ed1e130f8957bda27c0a4f97bc310f3d1b3142ef685c40
+  search_scope: Bounded access to the exact Frontiers and PMC supplement routes recorded
+    in access-002.json and access-003.json. Main XML and figures are available separately.
+    No claim is made that the supplement is globally unavailable.
+- evidence_id: S032-CURATION-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/032/science-curation-search.txt
+  locator: Exact executed rg command and exit status in science-curation-search.json;
+    stdout was empty with exit1.
+  accessed_at: '2026-10-21T10:11:52.153036Z'
+  support: context_only
+  summary: No existing maintained curation decision for this BGC, compound connectivity
+    prefix, compound name or 8-azg gene prefix was found in the scoped curation search.
+    Ignored and hidden files were included; this does not establish absence of scientific
+    literature.
+  snapshot_sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  search_scope: All curation files, including hidden and ignored paths; exact BGC,
+    full connectivity prefix, compound label and gene-prefix terms. This is only an
+    existing-decision search, not a global scientific absence claim.
+- evidence_id: S032-GRADING
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/conf/producer_evidence.tsv
+  locator: Knock-out studies, Heterologous expression and Enzymatic assays rows; src/naturalproductmech/grading.py
+    read.
+  accessed_at: '2026-10-21T10:14:01.955290Z'
+  support: context_only
+  summary: Native Knock-out studies grades organism+cluster as BGC_CHARACTERIZED/CLUSTER_DEMONSTRATED.
+    Heterologous expression alone grades the locus but leaves the native producer
+    SOURCE_ASSERTION. Exact native full-region/F deletion evidence is therefore materially
+    different from the imported method set.
+  snapshot_sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+- evidence_id: S032-METHOD-LOADER
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: load_mibig_locus_evidence_overrides, apply_mibig_locus_evidence_override
+    and method/claim/strain composition call sites.
+  accessed_at: '2026-10-21T10:14:01.955290Z'
+  support: context_only
+  summary: The consumed REPLACE overlay can add the exact Knock-out studies literal
+    alongside Heterologous expression and recomputes both grades. Its expected_* drift
+    fields are enforced only for WITHDRAW; a REPLACE correction requires a paired
+    consumed full-row SHA guard or an explicit loader extension. It cannot rely on
+    unused expected_* fields alone.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: S032-CLAIM-LOADER
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/curate/claim_references.py
+  locator: load_claim_references and correct_claim_reference; docs/CURATION.md claim-reference
+    section.
+  accessed_at: '2026-10-21T10:14:01.955290Z'
+  support: context_only
+  summary: A claim-reference decision keyed to BGC0002508:1 pins the complete untouched
+    source row, separately routes producer/locus references, preserves the old raw
+    citation and appends curator rationale. It changes citations only and rejects
+    incompatible structure replacements.
+  snapshot_sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+- evidence_id: S032-STRAIN-LOADER
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/curate/producer_strains.py
+  locator: load_producer_strains, _load_qualifications, qualify_producer and _append_evidence.
+  accessed_at: '2026-10-21T10:14:01.955290Z'
+  support: context_only
+  summary: A producer-strain decision can add literal CGMCC4.1633 with the complete
+    raw-row SHA and Frontiers citation, preserving taxon and adding scoped provenance.
+    By itself it does not change evidence grades; it must compose with the separate
+    method and citation decisions.
+  snapshot_sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+- evidence_id: P032-NATIVE-CDS
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=MN707952,MT543149,KR476659&rettype=gbwithparts&retmode=text
+  locator: /private/tmp/npm-review-work/shared-next-batch004/root/azaguanine-a33853-native-sequences.gb;
+    MT543149.1 source and all eleven CDS features, 1..11423
+  accessed_at: '2026-10-21T09:36:07.877114Z'
+  support: supports
+  summary: The official submitted MT543149.1 locus is 11,423 bp from Streptomyces
+    pathocidini CGMCC4.1633, taxon 1650571. All eleven complete CDSs and their translated
+    proteins were inspected and independently translated here, retaining strands,
+    starts and terminal stops. The deposit says PacBio; it does not establish the
+    experimental mutant alleles or historical stock identity.
+  snapshot_sha256: 938c82fda6619aa27e10ceeb1f74fedb3cfb825cbda25073d87755a228ee3327
+- evidence_id: P032-GENPEPT
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=QLM04708.1%2CQLM04709.1%2CQLM04710.1%2CQLM04711.1%2CQLM04712.1%2CQLM04713.1%2CQLM04714.1%2CQLM04715.1%2CQLM04716.1%2CQLM04717.1%2CQLM04718.1&rettype=gp&retmode=text
+  locator: /private/tmp/npm-review-work/032/proteins/genpept-eleven.gb; QLM04708.1
+    through QLM04718.1, source/coded_by/sequence fields
+  accessed_at: '2026-10-21T10:09:29.756236Z'
+  support: supports
+  summary: All eleven exact versioned GenPept protein records resolve. Their organism,
+    CGMCC4.1633 strain, taxon 1650571, CDS coordinates, translation table 11 and full
+    amino-acid sequences match MT543149.1 and the owner. Protein lengths for A through
+    K are 390, 408, 236, 167, 102, 206, 462, 378, 682, 103 and 277 residues, respectively;
+    D is QLM04718.1, not an accession inferred from alphabetical order.
+  snapshot_sha256: 25fec3f56fa8d2b304b8b4eebe67538777da29f04c8c83962cc813739665a0b2
+- evidence_id: P032-UP-A0A6G9KJ81
+  kind: authority
+  reference: https://rest.uniprot.org/uniprotkb/A0A6G9KJ81.json
+  locator: /private/tmp/npm-review-work/032/proteins/uniprot-A0A6G9KJ81.json; primaryAccession,
+    entryType, organism, genes, sequence, extraAttributes.uniParcId
+  accessed_at: '2026-10-21T10:09:26.103756Z'
+  support: supports
+  summary: 'Current A0A6G9KJ81 is an unreviewed TrEMBL entry for Streptomyces pathocidini
+    (taxon 1650571), locus ACH429_00980. Its complete 167-residue sequence exactly
+    equals versioned QLM04718.1, the independently translated native CDS, and UPI000B1A84C6.
+    Protein-existence metadata is 4: Predicted; these database annotations are not
+    independent enzyme assays.'
+  snapshot_sha256: 13d6fc0fee5350c9baf4170d8110570480458421eab732ed6561c91e9c8f5a98
+- evidence_id: P032-ARC-UPI000B1A84C6
+  kind: authority
+  reference: https://rest.uniprot.org/uniparc/UPI000B1A84C6.json
+  locator: /private/tmp/npm-review-work/032/proteins/uniparc-UPI000B1A84C6.json; complete
+    sequence and active exact UniProtKB/EMBL protein-version cross-references
+  accessed_at: '2026-10-21T10:09:26.114560Z'
+  support: supports
+  summary: Current UPI000B1A84C6 retains active links to UniProtKB A0A6G9KJ81 and
+    EMBL/GenPept QLM04718.1, with exact protein version 1 and taxon 1650571. Full-sequence
+    equality was verified directly, beyond the accession association. The asserted
+    ACH429_00980 example is supported within this sequence-only scope.
+  snapshot_sha256: 0ab1e1ad7a8582546aa167a1a1b3d5da44b58d30c895c50a2d908aa6e5d2c137
+- evidence_id: P032-UP-A0A7G3ZQC3
+  kind: authority
+  reference: https://rest.uniprot.org/uniprotkb/A0A7G3ZQC3.json
+  locator: /private/tmp/npm-review-work/032/proteins/uniprot-A0A7G3ZQC3.json; primaryAccession,
+    entryType, organism, genes, sequence, extraAttributes.uniParcId
+  accessed_at: '2026-10-21T10:09:26.090298Z'
+  support: supports
+  summary: 'Current A0A7G3ZQC3 is an unreviewed TrEMBL entry for Streptomyces pathocidini
+    (taxon 1650571), locus ACH429_00985. Its complete 102-residue sequence exactly
+    equals versioned QLM04711.1, the independently translated native CDS, and UPI0006E3F696.
+    Protein-existence metadata is 4: Predicted; these database annotations are not
+    independent enzyme assays.'
+  snapshot_sha256: b44fd3e16bdfd7a5481c57bed82f380da44a600608b2ecad9d04b5aaf3558b01
+- evidence_id: P032-ARC-UPI0006E3F696
+  kind: authority
+  reference: https://rest.uniprot.org/uniparc/UPI0006E3F696.json
+  locator: /private/tmp/npm-review-work/032/proteins/uniparc-UPI0006E3F696.json; complete
+    sequence and active exact UniProtKB/EMBL protein-version cross-references
+  accessed_at: '2026-10-21T10:09:26.094909Z'
+  support: supports
+  summary: Current UPI0006E3F696 retains active links to UniProtKB A0A7G3ZQC3 and
+    EMBL/GenPept QLM04711.1, with exact protein version 1 and taxon 1650571. Full-sequence
+    equality was verified directly, beyond the accession association. The asserted
+    ACH429_00985 example is supported within this sequence-only scope.
+  snapshot_sha256: d902cd2aa73ce578334312299b64f3495636c626a4695026ef4da881bd155c85
+- evidence_id: P032-UP-A0A6G9KIY0
+  kind: authority
+  reference: https://rest.uniprot.org/uniprotkb/A0A6G9KIY0.json
+  locator: /private/tmp/npm-review-work/032/proteins/uniprot-A0A6G9KIY0.json; primaryAccession,
+    entryType, organism, genes, sequence, extraAttributes.uniParcId
+  accessed_at: '2026-10-21T10:09:26.718460Z'
+  support: supports
+  summary: 'Current A0A6G9KIY0 is an unreviewed TrEMBL entry for Streptomyces pathocidini
+    (taxon 1650571), locus ACH429_00990. Its complete 206-residue sequence exactly
+    equals versioned QLM04712.1, the independently translated native CDS, and UPI00099E5E15.
+    Protein-existence metadata is 4: Predicted; these database annotations are not
+    independent enzyme assays.'
+  snapshot_sha256: d39cc4a1b7d7af8df54c905eb02db92781b6fa0b3f41dbcef3e1c00fda3cbafd
+- evidence_id: P032-ARC-UPI00099E5E15
+  kind: authority
+  reference: https://rest.uniprot.org/uniparc/UPI00099E5E15.json
+  locator: /private/tmp/npm-review-work/032/proteins/uniparc-UPI00099E5E15.json; complete
+    sequence and active exact UniProtKB/EMBL protein-version cross-references
+  accessed_at: '2026-10-21T10:09:26.702568Z'
+  support: supports
+  summary: Current UPI00099E5E15 retains active links to UniProtKB A0A6G9KIY0 and
+    EMBL/GenPept QLM04712.1, with exact protein version 1 and taxon 1650571. Full-sequence
+    equality was verified directly, beyond the accession association. The asserted
+    ACH429_00990 example is supported within this sequence-only scope.
+  snapshot_sha256: 34e985ba9d5a66c6b5534ab55bd4bdb1fec21632627661a17249d5374fc5dbe0
+- evidence_id: P032-UP-A0A6G9KI63
+  kind: authority
+  reference: https://rest.uniprot.org/uniprotkb/A0A6G9KI63.json
+  locator: /private/tmp/npm-review-work/032/proteins/uniprot-A0A6G9KI63.json; primaryAccession,
+    entryType, organism, genes, sequence, extraAttributes.uniParcId
+  accessed_at: '2026-10-21T10:09:26.726853Z'
+  support: supports
+  summary: 'Current A0A6G9KI63 is an unreviewed TrEMBL entry for Streptomyces pathocidini
+    (taxon 1650571), locus ACH429_00965. Its complete 390-residue sequence exactly
+    equals versioned QLM04708.1, the independently translated native CDS, and UPI000A88606E.
+    Protein-existence metadata is 3: Inferred from homology; these database annotations
+    are not independent enzyme assays.'
+  snapshot_sha256: 70f05943030c74402f1e76e26dd64cc9c044650eb201b5176c0961ff3a96ca15
+- evidence_id: P032-ARC-UPI000A88606E
+  kind: authority
+  reference: https://rest.uniprot.org/uniparc/UPI000A88606E.json
+  locator: /private/tmp/npm-review-work/032/proteins/uniparc-UPI000A88606E.json; complete
+    sequence and active exact UniProtKB/EMBL protein-version cross-references
+  accessed_at: '2026-10-21T10:09:26.731827Z'
+  support: supports
+  summary: Current UPI000A88606E retains active links to UniProtKB A0A6G9KI63 and
+    EMBL/GenPept QLM04708.1, with exact protein version 1 and taxon 1650571. Full-sequence
+    equality was verified directly, beyond the accession association. The asserted
+    ACH429_00965 example is supported within this sequence-only scope.
+  snapshot_sha256: a833e48d6eb6c5b26f0a10c143de82d69970326e2f49bd023392fd63f6226f86
+- evidence_id: P032-UP-A0A7G3ZQC5
+  kind: authority
+  reference: https://rest.uniprot.org/uniprotkb/A0A7G3ZQC5.json
+  locator: /private/tmp/npm-review-work/032/proteins/uniprot-A0A7G3ZQC5.json; primaryAccession,
+    entryType, organism, genes, sequence, extraAttributes.uniParcId
+  accessed_at: '2026-10-21T10:09:27.517373Z'
+  support: supports
+  summary: 'Current A0A7G3ZQC5 is an unreviewed TrEMBL entry for Streptomyces pathocidini
+    (taxon 1650571), locus ACH429_00995. Its complete 462-residue sequence exactly
+    equals versioned QLM04713.1, the independently translated native CDS, and UPI0006E15438.
+    Protein-existence metadata is 4: Predicted; these database annotations are not
+    independent enzyme assays.'
+  snapshot_sha256: 7352bb61edec5eefc018986bcfa87624e1e2b618736acaf5bc11bb3fbb36e6b4
+- evidence_id: P032-ARC-UPI0006E15438
+  kind: authority
+  reference: https://rest.uniprot.org/uniparc/UPI0006E15438.json
+  locator: /private/tmp/npm-review-work/032/proteins/uniparc-UPI0006E15438.json; complete
+    sequence and active exact UniProtKB/EMBL protein-version cross-references
+  accessed_at: '2026-10-21T10:09:27.479693Z'
+  support: supports
+  summary: Current UPI0006E15438 retains active links to UniProtKB A0A7G3ZQC5 and
+    EMBL/GenPept QLM04713.1, with exact protein version 1 and taxon 1650571. Full-sequence
+    equality was verified directly, beyond the accession association. The asserted
+    ACH429_00995 example is supported within this sequence-only scope.
+  snapshot_sha256: 9e7e8c697fbe38c486faf0a9e0663a7f5bf1e3ccea29cfa7a3690e2b93a98d4d
+- evidence_id: P032-UP-A0A6G9KI21
+  kind: authority
+  reference: https://rest.uniprot.org/uniprotkb/A0A6G9KI21.json
+  locator: /private/tmp/npm-review-work/032/proteins/uniprot-A0A6G9KI21.json; primaryAccession,
+    entryType, organism, genes, sequence, extraAttributes.uniParcId
+  accessed_at: '2026-10-21T10:09:27.498299Z'
+  support: supports
+  summary: 'Current A0A6G9KI21 is an unreviewed TrEMBL entry for Streptomyces pathocidini
+    (taxon 1650571), locus ACH429_00975. Its complete 236-residue sequence exactly
+    equals versioned QLM04710.1, the independently translated native CDS, and UPI0006E1F3FA.
+    Protein-existence metadata is 3: Inferred from homology; these database annotations
+    are not independent enzyme assays.'
+  snapshot_sha256: 50b571ff66a9129bc5435937ad278cf3a6eefd4c61418465bf702fc741b02fb5
+- evidence_id: P032-ARC-UPI0006E1F3FA
+  kind: authority
+  reference: https://rest.uniprot.org/uniparc/UPI0006E1F3FA.json
+  locator: /private/tmp/npm-review-work/032/proteins/uniparc-UPI0006E1F3FA.json; complete
+    sequence and active exact UniProtKB/EMBL protein-version cross-references
+  accessed_at: '2026-10-21T10:09:27.481838Z'
+  support: supports
+  summary: Current UPI0006E1F3FA retains active links to UniProtKB A0A6G9KI21 and
+    EMBL/GenPept QLM04710.1, with exact protein version 1 and taxon 1650571. Full-sequence
+    equality was verified directly, beyond the accession association. The asserted
+    ACH429_00975 example is supported within this sequence-only scope.
+  snapshot_sha256: 559ff7787232220b4d19b530d2f3a91e4cccffc664a24581c6adfc8b84ee39fd
+- evidence_id: P032-UP-A0A7G3ZQC6
+  kind: authority
+  reference: https://rest.uniprot.org/uniprotkb/A0A7G3ZQC6.json
+  locator: /private/tmp/npm-review-work/032/proteins/uniprot-A0A7G3ZQC6.json; primaryAccession,
+    entryType, organism, genes, sequence, extraAttributes.uniParcId
+  accessed_at: '2026-10-21T10:09:28.481182Z'
+  support: supports
+  summary: 'Current A0A7G3ZQC6 is an unreviewed TrEMBL entry for Streptomyces pathocidini
+    (taxon 1650571), locus ACH429_01000. Its complete 378-residue sequence exactly
+    equals versioned QLM04714.1, the independently translated native CDS, and UPI000B2DAD11.
+    Protein-existence metadata is 4: Predicted; these database annotations are not
+    independent enzyme assays.'
+  snapshot_sha256: ab766004f971333711bbbfcd363537c9240046d64cfa679d4b6a4ece3052fb68
+- evidence_id: P032-ARC-UPI000B2DAD11
+  kind: authority
+  reference: https://rest.uniprot.org/uniparc/UPI000B2DAD11.json
+  locator: /private/tmp/npm-review-work/032/proteins/uniparc-UPI000B2DAD11.json; complete
+    sequence and active exact UniProtKB/EMBL protein-version cross-references
+  accessed_at: '2026-10-21T10:09:28.481846Z'
+  support: supports
+  summary: Current UPI000B2DAD11 retains active links to UniProtKB A0A7G3ZQC6 and
+    EMBL/GenPept QLM04714.1, with exact protein version 1 and taxon 1650571. Full-sequence
+    equality was verified directly, beyond the accession association. The asserted
+    ACH429_01000 example is supported within this sequence-only scope.
+  snapshot_sha256: c7113e0c94e50fb617567f4a52c559f3fa77c36e6ece18d0a7df947bdce56b7e
+- evidence_id: P032-EXACT-COMPARISON
+  kind: validation
+  reference: .venv/bin/python /private/tmp/npm-review-work/032/check-proteins.py
+  locator: /private/tmp/npm-review-work/032/proteins/comparison.json
+  accessed_at: '2026-10-21T10:10:40.068793Z'
+  support: supports
+  summary: The independent comparison completed with exit 0. All eleven owner CDS
+    coordinates and lengths match the official records; genomic translations equal
+    their submitted CDS and fresh GenPept proteins. A, E and J start with GTG; H and
+    I start with TTG; all use table 11 with initiating methionine and an omitted terminal
+    stop. All seven UniProt/UniParc links have exact full-sequence, taxon, locus-tag
+    and active cross-reference matches.
+  snapshot_sha256: 77234b20d6c0b836161efb9b3b65c33c2a87b035ea40c27906cc5a96f0406051
+- evidence_id: BIO032-SUMMARY
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/135403646/assaysummary/JSON
+  locator: /private/tmp/npm-review-work/032/identity/assaysummary.json
+  accessed_at: '2026-10-21T10:09:10.636338Z'
+  support: supports
+  summary: 'All 25 stored observations match current CID 135403646 summary rows, including
+    exact calls, numeric values, endpoint names, source references and target accessions.
+    They represent 20 AIDs and 21 distinct AID/SID result combinations; four additional
+    rows differ only in target metadata. The current selected-AID summary has 29 rows:
+    four extra Inactive rows without a numeric endpoint are filtered by the documented
+    extractor. Inconclusive remains NOT_DETERMINED and Inactive remains INACTIVE.'
+  snapshot_sha256: 798bb8c4a0428f234d23ae92e0b68e8a45aed6f6022f364c6aae290ae96b50d3
+- evidence_id: BIO032-SUBSTANCES
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/substance/sid/11112293,124899167,441585673,47193666/JSON
+  locator: /private/tmp/npm-review-work/032/identity/assay-substances.json
+  accessed_at: '2026-10-21T10:10:46.839680Z'
+  support: supports
+  summary: The four deposited substances SID 11112293, 124899167, 441585673 and 47193666
+    each link to CID 135403646. Independent reconstruction of every raw atom/bond
+    graph gives C4H4N6O and exact full standard InChIKey LPXQRXLUHJKZIE-UHFFFAOYSA-N.
+    Different SIDs remain distinct tested samples, even though the standardized structures
+    match.
+  snapshot_sha256: 1ed6b8bb76d18e9e5b2757374184cba75b2e23eca1c3c89e56c310f387945257
+- evidence_id: BIO032-PROTOCOLS
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1405,1479,2010,2044,2294,489026,489033,489035,489041,493073,493102,493177,504444,624296,624297,651635,686991,686995,1645883,1645886/description/JSON
+  locator: PC_AssayContainer entries for the 20 stored AIDs; full description and
+    protocol arrays
+  accessed_at: '2026-10-21T10:10:46.838899Z'
+  support: supports
+  summary: All 20 complete official descriptions and protocols were inspected. AID
+    489033 measures NF-kB reporter luminescence in stimulated human 697 B cells; AIDs
+    2044 and 2294 measure beta-galactosidase reporter signals from T. cruzi in NIH3T3
+    coculture. These are cellular phenotypes, not direct enzyme inhibition assays.
+    AID 2010 measures NIH3T3 viability and supports the bounded CYTOTOXIC classification.
+    Other stored results include splicing, MITF/TRPM1 and Nrf2 reporters, DNA-content
+    imaging, transcriptional counterscreens, total-fluorescence interference and purified
+    EPAC/RAP1B nucleotide-exchange assays.
+  snapshot_sha256: 5cd531537650d732858df56680286124814c7cce10d059cf8c9e8f9927b7583c
+- evidence_id: BIO032-ATXN-COUNTER
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1405,1479,2010,2044,2294,489026,489033,489035,489041,493073,493102,493177,504444,624296,624297,651635,686991,686995,1645883,1645886/description/JSON
+  locator: AID 651635 name, description, complete protocol and target array
+  accessed_at: '2026-10-21T10:10:46.838899Z'
+  support: supports
+  summary: AID 651635 is explicitly the viability counterscreen for an ATXN-expression
+    project. Its protocol uses a live-cell protease fluorescence viability readout,
+    alongside a separately described ATXN2-luciferase reporter measurement. The target
+    array carries Q99700/ATXN2 project metadata, but the stored viability result does
+    not establish an ATXN2 enzyme target or direct compound action. The exact row
+    is Inconclusive, not an asserted active ATXN2 inhibitor.
+  snapshot_sha256: 5cd531537650d732858df56680286124814c7cce10d059cf8c9e8f9927b7583c
+- evidence_id: BIO032-U-O95398
+  kind: authority
+  reference: https://rest.uniprot.org/uniprotkb/O95398.json
+  locator: /private/tmp/npm-review-work/032/identity/uniprot-O95398.json
+  accessed_at: '2026-10-21T10:10:47.178879Z'
+  support: supports
+  summary: Reviewed human RAPGEF3/EPAC1, a Rap guanine-nucleotide exchange factor;
+    it matches the purified EPAC1 assay context of AID 1645883. Neither of the two
+    Inconclusive sample results establishes activation.
+  snapshot_sha256: dc307f6c1da712563e8476880fc7cfe97e4d282d80d91dd2affb648f19a128b7
+- evidence_id: BIO032-U-Q8WZA2
+  kind: authority
+  reference: https://rest.uniprot.org/uniprotkb/Q8WZA2.json
+  locator: /private/tmp/npm-review-work/032/identity/uniprot-Q8WZA2.json
+  accessed_at: '2026-10-21T10:10:48.020375Z'
+  support: supports
+  summary: Reviewed human RAPGEF4/EPAC2, a Rap guanine-nucleotide exchange factor;
+    it matches the EPAC2 protocol and target array of AID 1645886. The copied general
+    description contains EPAC1 wording, but the assay title/protocol identify EPAC2.
+    The Inconclusive stored result does not establish antagonism.
+  snapshot_sha256: e70cfa3c4166ec06ba33eae449804db648059fc70acdac549c4ae1f7c3860878
+- evidence_id: BIO032-U-Q99700
+  kind: authority
+  reference: https://rest.uniprot.org/uniprotkb/Q99700.json
+  locator: /private/tmp/npm-review-work/032/identity/uniprot-Q99700.json
+  accessed_at: '2026-10-21T10:10:48.033259Z'
+  support: supports
+  summary: Reviewed human ataxin-2 (ATXN2), a regulator rather than the enzyme measured
+    by the AID 651635 viability assay. Identifier validity and project metadata do
+    not justify placing it in target_enzyme for a viability counterscreen.
+  snapshot_sha256: 92dd340de81fdac296f9ccadae69f7f91fe3337d2c1943962a7ff056e8dab764
+- evidence_id: BIO032-PMID
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=35787375&retmode=xml
+  locator: 'PubmedArticle for PMID 35787375: ArticleTitle, Abstract and own PubmedData/ArticleIdList'
+  accessed_at: '2026-10-21T10:10:46.839538Z'
+  support: supports
+  summary: PMID 35787375 resolves to the ATXN2 quantitative-screen publication, DOI
+    10.1016/j.jbc.2022.102228. The accessed bibliographic record and abstract establish
+    project bibliography; the abstract does not independently validate the exact 8-azaguanine
+    result or direct ATXN2 action. Full paper and supplementary hit lists were not
+    inspected for this database-assertion audit.
+  snapshot_sha256: b457ebaa57ea5266888630901dbd3153274fa0e61eac6bdb0572e6b6c7077cfc
+- evidence_id: BIO032-COMPARE
+  kind: validation
+  reference: /private/tmp/npm-review-work/032/identity/bioactivity-comparison.json
+  locator: Independent raw-row sorting, complete numeric/call comparison and four
+    raw molecular graph reconstructions
+  accessed_at: '2026-10-21T10:16:46.490164Z'
+  support: supports
+  summary: 'The exact-key raw inventory has 123 rows; the documented stable numeric-first/title
+    sort selects exactly the 25 owner observations and leaves 98 omitted rows. Every
+    selected current summary, owner call, value, unit, endpoint, reference and target
+    identifier matches. RDKit 2026.03.5 gives the exact full key for all four substances.
+    All 123 inventory rows have a matching current summary row: True. Full source-row
+    digests and recovered current SIDs are retained.'
+  snapshot_sha256: 89814dc3d82ffec3963342e3358838f1876b6cf3bc61aa74811329c86eb2546f
+- evidence_id: BIO032-EXTRACTION
+  kind: record_content
+  reference: scripts/extract_pubchem_bioassay.py
+  locator: COLUMNS and rows_from_summary; exact 123 data/raw/pubchem_bioassay.tsv
+    rows
+  accessed_at: '2026-10-21T10:18:36.351030Z'
+  support: supports
+  summary: The extractor retains outcomes, named numeric endpoints, target accession
+    and PubMed reference, but discards SID and panel identity. It permits Active rows
+    without a number and excludes nonactive rows without one. Therefore target-metadata
+    duplicates and distinct sample results can no longer be distinguished by the raw
+    schema alone.
+  snapshot_sha256: 24f9d794e7cf97c420351cb751f8767f7d81a5f22aed01669b2318d6755e7c00
+- evidence_id: BIO032-SEED
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: ACTIVITY_CLASS_PATTERNS, classify_activity and bioactivity construction/cap
+    sections
+  accessed_at: '2026-10-21T10:18:36.351030Z'
+  support: supports
+  summary: The generic inhibition-title fallback assigns ENZYME_INHIBITOR. The antiparasitic
+    pattern does not match the source spelling T.Cruzi, and the cellular NF-kB title
+    also triggers the fallback. Any syntactically valid UniProt accession is copied
+    to target_enzyme without a protocol-role check. Source calls and numeric values
+    are preserved; only active written classes contribute to bioactivity_summary.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: BIO032-EXCLUSION-GUARD
+  kind: record_content
+  reference: src/naturalproductmech/curate/bioassay_exclusions.py
+  locator: Entire loader and exclusion discussion helper; entire curation/pubchem_bioassay_exclusions.tsv;
+    structure_corrections.row_digest
+  accessed_at: '2026-10-21T10:18:36.351030Z'
+  support: supports
+  summary: The existing exclusion mechanism only withholds a complete row; it does
+    not override a class, add assay context, or change a target role. It requires
+    exactly one row for the full InChIKey/CID/AID tuple and checks a canonical full-row
+    SHA256. AID 651635 has two matching rows, so its target-bearing row cannot be
+    selected with the current exclusion key. A new consumed decision route or explicit
+    guarded source-specific mapping is required for the proposed corrections.
+  snapshot_sha256: 4a4176e072ac9759aa8a9e88300d7e2de5aaf4ebf30b5c42fcf4c9c0b6cebbb4
+assessments:
+- assessment_id: R032-IDENTITY
+  area: identity
+  topic: Neutral exact free base and stable chemical identifiers
+  outcome: supported
+  summary: CHEBI63486, its official connection table, PubChem135403646 and the encoded
+    MIBiG graph converge on the exact Standard identity and neutral achiral formula.
+    Ribosides, phosphates and azaxanthine are separate molecules. No solution tautomer
+    or pH-dependent state is inferred.
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - R032-CHEBI
+  - R032-CHEBI-MOL
+  - R032-PUBCHEM
+  - R032-CHEMISTRY
+  dimensions:
+  - name: chemical_form
+    value: Neutral free base C4H4N6O; achiral
+    definition: Exact Standard-identity owner; not an experimental solution microspecies
+      assignment.
+    evidence_ids:
+    - R032-CHEMISTRY
+    - R032-CHEBI-MOL
+- assessment_id: R032-TAXON
+  area: identity
+  topic: Species authority and collection alias boundaries
+  outcome: supported
+  summary: The source and graph taxon naming is consistent with current NCBI authority.
+    The cited type-material aliases bridge the names without making the two papers
+    or their locus annotations interchangeable.
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - R032-TAXON
+  - R032-MIBIG
+  dimensions:
+  - name: producer_taxon_rank
+    value: NCBITaxon:1650571; species
+    definition: Authority rank and name for the imported producer; the native genetic
+      graphs explicitly identify CGMCC4.1633.
+    evidence_ids:
+    - R032-TAXON
+    - R032-OWNER
+  - name: source_version
+    value: MIBiG BGC0002508 version2
+    definition: Active database version whose source metadata were independently retrieved.
+    evidence_ids:
+    - R032-MIBIG
+- assessment_id: R032-CLASSIFICATION
+  area: provenance
+  topic: Computed filing, source concepts and native status
+  outcome: supported
+  summary: Filing and classification are tool-qualified and source concepts preserve
+    exact grounding provenance. SEEDED is consistent with limited prior graph curation;
+    adding protein examples did not claim full-record sign-off. Current source-citation
+    and assay findings are assessed separately.
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - R032-CLASS
+  - R032-RAW
+  - R032-OWNER
+- assessment_id: S032-IDENTITY
+  area: identity
+  topic: Exact free-base identity in the primary biosynthetic experiments
+  outcome: supported
+  summary: The primary papers and freshly viewed Frontiers Figure1 concern achiral
+    neutral 8-azaguanine, compound1. Guanine, azaguanosine, azaxanthine and the Frontiers
+    substituted nucleosides remain distinct. The graphs correctly use the free-base
+    anchor without claiming a resolved solution tautomer or protonation state. Current
+    chemical identifiers and RDKit reconciliation are assessed separately by the root
+    reviewer.
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - S032-OWNER
+  - S032-FRONTIERS
+  - S032-FIG1
+  - S032-FIG2
+  - S032-NATURE
+- assessment_id: S032-ORIGIN
+  area: evidence
+  topic: Native biosynthesis and heterologous production are separately demonstrated
+  outcome: supported
+  summary: Natural origin is directly supported by native CGMCC4.1633 product detection
+    and whole-region/F knockout phenotypes, independently corroborated by native ATCC14510
+    isotope feeding in the Nature study. J1074 gene-combination production establishes
+    engineered locus activity. Neither artificial non-enzymatic synthesis nor production
+    of nucleoside congeners is used as the natural-origin proof.
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - S032-FRONTIERS
+  - S032-FIG2
+  - S032-FIG3
+  - S032-NATURE
+- assessment_id: S032-BGC
+  area: evidence
+  topic: Exact MT543149 producer and locus claim routing and methods
+  outcome: concern
+  summary: The locus demonstration is scientifically supported, but the imported six-gene
+    Nature citation does not document the exact Frontiers native A–K deletion series
+    associated with MT543149. Native knockout evidence and the CGMCC4.1633 qualifier
+    should be retained at producer/locus level rather than existing only inside the
+    graphs. The two collection numbers are aliases of the same type-strain lineage;
+    this is an experimental-source and accession-scope issue, not a different-species
+    claim. The qualified producer can be BGC_CHARACTERIZED while the locus remains
+    CLUSTER_DEMONSTRATED.
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - S032-OWNER
+  - S032-RAW
+  - S032-FRONTIERS
+  - S032-FIG2
+  - S032-FIG3
+  - S032-NATURE
+  - S032-NATURE-SI
+  - S032-TYPE-ALIASES
+  - S032-GRADING
+- assessment_id: S032-DEF
+  area: graph
+  topic: D/E/F native deletion graph and causal limits
+  outcome: supported
+  summary: 'All six intervention/outcome edges match the Frontiers Methods, Results
+    and inspected Figure2A: D/E retain trace product, F loses detectable product.
+    PROCESS deletion nodes are separated from native protein reference nodes; none
+    of these outcomes is represented as direct catalysis, absolute zero, numerical
+    yield, physical complex or universal essentiality. The graph preserves nucleoside
+    congeners as separate products. Exact reference sequences are checked independently
+    in the native-protein packet.'
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - S032-OWNER
+  - S032-FRONTIERS
+  - S032-FIG2
+- assessment_id: S032-ABG
+  area: graph
+  topic: A/B/G native deletion graph and proposed function boundary
+  outcome: supported
+  summary: All six intervention/outcome edges reproduce the native reduced-product
+    reports for A/B/G in Figure2A and the Results. The graph does not promote the
+    G radical-SAM proposal or B transport hypothesis to measured functions. The separate
+    A assay uses N-hydroxyarginine, H2O2 and a nitrite/Griess endpoint; no graph edge
+    wrongly claims complete arginine-to-NO turnover. Nature Ptn experiments are not
+    substituted for these native interventions.
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - S032-OWNER
+  - S032-FRONTIERS
+  - S032-FIG2
+  - S032-NATURE
+- assessment_id: S032-CHIJK
+  area: graph
+  topic: C/H/I/J/K main-text genetic outcomes and unavailable supplement
+  outcome: supported
+  summary: 'All ten intervention/outcome edges faithfully retain the explicit main-text
+    reports: C/H/J decrease product, I has no reported effect and K gives a small
+    increase. I is negative-test context rather than positive mechanism, and K is
+    not assigned proven transcriptional repression. The graph itself discloses that
+    Supplementary Figure4 and allele/PCR data were not inspected. This review confirms
+    the main-text correspondence while leaving independent supplementary verification
+    unresolved.'
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - S032-OWNER
+  - S032-FRONTIERS
+  - S032-FRONTIERS-SI-ACCESS
+- assessment_id: S032-MECHANISM-SCOPE
+  area: scope
+  topic: Cross-paper enzyme, substrate and host boundaries
+  outcome: supported
+  summary: The curated graphs deliberately describe the Frontiers native genetics.
+    A direct PtnC phosphoribohydrolase experiment in the Nature study uses 8-azaguanosine
+    5-prime-monophosphate, unlike the unphosphorylated Frontiers test substrates.
+    PtnA/8-AzgF ring opening and the triazole-forming enzyme remain unresolved; no
+    missing optional pathway is manufactured into a defect. Published PtnB and 8-AzgE
+    have different annotated starts, so the Nature protein cannot simply replace the
+    native E reference. Shared type-strain aliases and partial sequence agreement
+    do not collapse experimental contexts.
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - S032-OWNER
+  - S032-FRONTIERS
+  - S032-NATURE
+  - S032-NATURE-SI
+  - S032-TYPE-ALIASES
+- assessment_id: S032-HISTORY
+  area: provenance
+  topic: Curator history versus present scientific sign-off
+  outcome: supported
+  summary: The history describes sequentially added bounded genetic graphs and later
+    sequence-identical UniProt examples. Historical failed exact-identifier queries
+    remain dated observations; they are not current global absence claims. SEEDED
+    is retained and no full-record REVIEWED claim is made. The later reference examples
+    do not replace the original native reference nodes or claim sequenced mutant alleles.
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - S032-OWNER
+- assessment_id: P032-NATIVE-GROUNDING
+  area: grounding
+  topic: Eleven exact deposited reference proteins
+  outcome: supported
+  summary: The graph identifiers denote the deposited MT543149.1 CGMCC4.1633 proteins
+    and match current versioned GenPept entries in full sequence and coordinates.
+    Alternative initiation is handled explicitly. This supports the native-reference
+    groundings, while the owner correctly distinguishes them from the deletion interventions
+    and mutant alleles.
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - P032-NATIVE-CDS
+  - P032-GENPEPT
+  - P032-EXACT-COMPARISON
+- assessment_id: P032-EXAMPLE-GROUNDING
+  area: grounding
+  topic: Seven active UniProtKB/UniParc sequence examples
+  outcome: supported
+  summary: The seven A/C/D/E/F/G/H example links preserve exact complete sequence
+    identity, the asserted ACH429 locus tags, and species taxon 1650571. All seven
+    current UniProt entries are unreviewed. The graph predicate asserts sequence identity;
+    neither entry names nor sequence equality are treated as independent catalytic
+    evidence.
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - P032-UP-A0A6G9KJ81
+  - P032-ARC-UPI000B1A84C6
+  - P032-UP-A0A7G3ZQC3
+  - P032-ARC-UPI0006E3F696
+  - P032-UP-A0A6G9KIY0
+  - P032-ARC-UPI00099E5E15
+  - P032-UP-A0A6G9KI63
+  - P032-ARC-UPI000A88606E
+  - P032-UP-A0A7G3ZQC5
+  - P032-ARC-UPI0006E15438
+  - P032-UP-A0A6G9KI21
+  - P032-ARC-UPI0006E1F3FA
+  - P032-UP-A0A7G3ZQC6
+  - P032-ARC-UPI000B2DAD11
+  - P032-EXACT-COMPARISON
+- assessment_id: BIO032-A-FIDELITY
+  area: evidence
+  topic: Exact structure and database observation fidelity
+  outcome: supported
+  summary: All stored database results concern the exact standardized structure; their
+    source calls, endpoints and values are accurately copied. The 98 omissions count
+    raw result rows, not 98 independent assays. The other 98 rows were traced to inventory/current
+    summary but their individual protocols were outside this owner-claim audit.
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - BIO032-SUMMARY
+  - BIO032-COMPARE
+  - BIO032-SUBSTANCES
+- assessment_id: BIO032-A-CLASS
+  area: scope
+  topic: Cellular phenotypes versus enzyme inhibition
+  outcome: concern
+  summary: The active NF-kB and T. cruzi phenotypes do not establish enzyme inhibition.
+    Preserve their positive database calls, values and assay-specific interpretation.
+    AID 2010 separately supports NIH3T3 cytotoxicity; its 10.345 uM cellular EC50
+    is not universal toxicity or proof that the parasite phenotype is exclusively
+    host toxicity.
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - BIO032-PROTOCOLS
+  - BIO032-SEED
+- assessment_id: BIO032-A-TARGET
+  area: grounding
+  topic: Protein identifiers and actual assay roles
+  outcome: concern
+  summary: The three UniProt entries resolve correctly. EPAC1 and EPAC2 are assay-target
+    context for Inconclusive purified exchange assays. Q99700 is ATXN2 project metadata
+    on a viability counterscreen and should not be represented as an enzyme target
+    for that result. No active direct target mechanism is supported.
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - BIO032-U-O95398
+  - BIO032-U-Q8WZA2
+  - BIO032-U-Q99700
+  - BIO032-ATXN-COUNTER
+- assessment_id: BIO032-A-DUPLICATES
+  area: provenance
+  topic: Substance identity and target-metadata duplication
+  outcome: concern
+  summary: Four paired rows for AIDs 1645883, 1645886 and 651635 repeat the same AID/SID/outcome/endpoint/value
+    with blank versus populated target metadata. AID 1645883 additionally contains
+    two genuinely distinct SIDs with different values. The current extractor drops
+    SID, so these distinctions and the four redundant target-metadata rows are not
+    transparent in the owner and consume four positions in the 25-row cap.
+  target_ids:
+  - CHEBI:63486
+  evidence_ids:
+  - BIO032-SUMMARY
+  - BIO032-EXTRACTION
+  - BIO032-COMPARE
+findings:
+- finding_id: S032-NATIVE-CLAIM-SCOPE
+  issue_key: mibig-bgc0002508-compound1-native-genetic-evidence-scope
+  category: evidence
+  severity: major
+  native_severity: major
+  normalization_reason: The defect loses demonstrated native production evidence and
+    routes the exact accession through a different study; it requires coordinated
+    claim-level provenance and method correction, rather than an optional detail.
+  status: open
+  certainty: confirmed
+  title: Preserve the MT543149 native-genetics source, method and strain scope
+  description: The producer and BGC retain only the Nature PMID32235841 entry citation
+    and Heterologous expression, even though the owner graphs already cite Frontiers
+    PMID33251204 for native CGMCC4.1633 gene deletions. Frontiers explicitly deposits
+    MT543149 and tests native whole-region/F deletion plus J1074 reconstitution. Nature
+    documents the related six-gene Ptn locus under MN707952 and engineered J1074 disruptions.
+    Their strain numbers are type-material aliases, but the study accessions, gene
+    sets, stocks and constructs remain distinct. The missing native method leaves
+    the producer SOURCE_ASSERTION and omits its required strain qualifier; the scientifically
+    supported locus grade remains CLUSTER_DEMONSTRATED.
+  target_ids:
+  - CHEBI:63486
+  field_paths:
+  - producer_organisms[0].evidence
+  - producer_organisms[0].evidence_basis
+  - producer_organisms[0].strain
+  - biosynthetic_gene_clusters[0].evidence
+  - biosynthetic_gene_clusters[0].locus_evidence_methods
+  evidence_ids:
+  - S032-OWNER
+  - S032-RAW
+  - S032-FRONTIERS
+  - S032-FIG2
+  - S032-FIG3
+  - S032-NATURE
+  - S032-NATURE-SI
+  - S032-TYPE-ALIASES
+  - S032-GRADING
+  - S032-CLAIM-LOADER
+  - S032-METHOD-LOADER
+  - S032-STRAIN-LOADER
+  - S032-CURATION-SEARCH
+  rule_id: 'review-checklist: claim-specific primary evidence, source strain and actual
+    native locus methods; conf/producer_evidence.tsv'
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Exact MT543149 claim routing and complete raw-row guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Reviewed native knockout method for BGC0002508:1
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: CGMCC4.1633 experimental strain qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Compose and regenerate the three maintained corrections
+- finding_id: BIO032-F1
+  issue_key: chebi-63486-cell-phenotypes-misclassified-enzyme-inhibition
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Three cellular assay results are mislabeled as enzyme inhibition
+  description: AID 489033 measures stimulated NF-kB reporter signal in 697 B cells,
+    while AIDs 2044 and 2294 measure T. cruzi replication/infection reporter phenotypes
+    in NIH3T3 coculture. None is a direct enzyme-inhibition experiment. The generic
+    title classifier nevertheless emits ENZYME_INHIBITOR for all three and propagates
+    it into the summary. The exact database positive calls and IC50/EC50 values are
+    valid; their mechanistic activity class is unsupported.
+  target_ids:
+  - CHEBI:63486
+  field_paths:
+  - bioactivities[4].activity_class
+  - bioactivities[9].activity_class
+  - bioactivities[10].activity_class
+  - bioactivity_summary
+  evidence_ids:
+  - BIO032-PROTOCOLS
+  - BIO032-SEED
+  - BIO032-COMPARE
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_pubchem_bioassay.py
+    role: Effective PubChem row extraction and SID/assay-context preservation
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Immutable source rows requiring full-row pins before curation
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Effective bioactivity class, target-role and capped observation generation
+  ownership_note: The generated owner reflects extraction and seeding behavior. Correct
+    the effective source-to-owner path with explicit guards; do not hand-edit this
+    generated record.
+- finding_id: BIO032-F2
+  issue_key: chebi-63486-atxn2-viability-counter-target-role
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: ATXN2 project metadata is represented as an enzyme target
+  description: AID 651635 is a viability counterscreen using a live-cell protease
+    fluorescence readout. Its Q99700 metadata refers to the ATXN2 screening project;
+    ataxin-2 is not the enzyme measured by that readout. Copying the accession to
+    target_enzyme overstates the assay role. The NOT_DETERMINED call is accurate and
+    must remain so.
+  target_ids:
+  - CHEBI:63486
+  field_paths:
+  - bioactivities[24].target_enzyme
+  evidence_ids:
+  - BIO032-ATXN-COUNTER
+  - BIO032-U-Q99700
+  - BIO032-SEED
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_pubchem_bioassay.py
+    role: Effective PubChem row extraction and SID/assay-context preservation
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Immutable source rows requiring full-row pins before curation
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Effective bioactivity class, target-role and capped observation generation
+  ownership_note: The generated owner reflects extraction and seeding behavior. Correct
+    the effective source-to-owner path with explicit guards; do not hand-edit this
+    generated record.
+- finding_id: BIO032-F3
+  issue_key: chebi-63486-assay-sid-provenance-and-metadata-duplicates
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Dropped substance IDs obscure four duplicate metadata pairs
+  description: The 25 observations include four pairs differing only in target metadata
+    for the same AID/SID/result. Because the extractor discards SID, the owner cannot
+    distinguish those pairs from distinct tested samples, including the two separate
+    EPAC1 SIDs with values 11.2202 and 125.892 uM. This also spends four cap positions
+    on redundant metadata rows. The 98-row omission note is numerically correct but
+    must not be read as 98 distinct assays.
+  target_ids:
+  - CHEBI:63486
+  field_paths:
+  - bioactivities[17]
+  - bioactivities[18]
+  - bioactivities[19]
+  - bioactivities[20]
+  - bioactivities[21]
+  - bioactivities[22]
+  - bioactivities[23]
+  - bioactivities[24]
+  evidence_ids:
+  - BIO032-SUMMARY
+  - BIO032-EXTRACTION
+  - BIO032-COMPARE
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_pubchem_bioassay.py
+    role: Effective PubChem row extraction and SID/assay-context preservation
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Immutable source rows requiring full-row pins before curation
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Effective bioactivity class, target-role and capped observation generation
+  ownership_note: The generated owner reflects extraction and seeding behavior. Correct
+    the effective source-to-owner path with explicit guards; do not hand-edit this
+    generated record.
+actions:
+- action_id: S032-QUALIFY-NATIVE-EVIDENCE
+  finding_ids:
+  - S032-NATIVE-CLAIM-SCOPE
+  target_ids:
+  - CHEBI:63486
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Exact MT543149 claim routing and complete raw-row guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Reviewed native knockout method for BGC0002508:1
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: CGMCC4.1633 experimental strain qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Compose and regenerate the three maintained corrections
+  generator: scripts/seed_from_sources.py
+  description: For BGC0002508:1, coordinate a claim-reference row routing producer_reference
+    and locus_reference to PMID:33251204 with source_reference DOI:10.3389/fbioe.2020.603514,
+    a producer-strain row for CGMCC4.1633, and a REPLACE method override for minted
+    identifier naturalproductmech:mibig-c4cff4607d using Heterologous expression|Knock-out
+    studies. Pin both consumed claim and strain rows to complete raw-row SHA256 ccf82236984ef2518f06604e1f5a1715e1395b9184b59ee3cf20ebf5046d05c5.
+    Retain original PMID:32235841 in raw/provenance and explain the shared collection
+    lineage without equating study stocks or PtnB/8-AzgE starts. The current REPLACE
+    loader does not enforce expected_* pins alone; pair it with the consumed claim-reference
+    full-row guard or extend the loader with equivalent fail-closed provenance. No
+    chemical identity correction or raw inventory edit is needed.
+  acceptance_checks:
+  - The exact BGC0002508:1 row remains MT543149.1:1–11423, key LPXQRXLUHJKZIE-UHFFFAOYSA-N
+    and taxon1650571. Any raw-row drift, missing row or duplicate decision fails before
+    corrected grades are emitted.
+  - Canary output carries strain CGMCC4.1633, Frontiers PMID33251204 on both claims,
+    native Knock-out studies alongside Heterologous expression, producer BGC_CHARACTERIZED
+    and locus CLUSTER_DEMONSTRATED. Preserve the original citation and raw source
+    version as explicit provenance.
+  - Exercise claim-reference, strain and REPLACE overlays together; do not treat expected_*
+    fields on REPLACE as an implemented guard. Preserve original exact structure,
+    all inline graphs and history, and type-strain alias context. A structure correction
+    would require separate compatibility review.
+  - Do not add universal gene essentiality, a physical enzyme complex, purified GTP-ring-opening
+    activity, a demonstrated B transport substrate, G radical chemistry, K transcriptional
+    repression or an exact mutant-allele sequence assertion. Keep the unavailable
+    Frontiers supplement explicit.
+  - Run the normal canary, appropriate composition and stale-source negative tests,
+    target strict validation, reproduction and required repository QC; emit through
+    the validated curation-event workflow rather than editing generated fields directly.
+- action_id: BIO032-A1
+  description: 'Implement an effective protocol-aware class and target-role correction
+    while preserving valid source results. Pin exact key LPXQRXLUHJKZIE-UHFFFAOYSA-N,
+    CID 135403646 and the complete current rows: AID 489033 target (blank) SHA256
+    628333fa27310febb9a2888902eabead1f9a021c8125abc172f751b56096d8b3; AID 2044 target
+    (blank) SHA256 980ef846150aa4fcb03f21debecb9bfae2b852232bdbef66cf3b954b73820111;
+    AID 2294 target (blank) SHA256 cd07e8e17c412c8388c97272e70da4230314e2aa583b805b4f69eca5c5915439;
+    AID 651635 target Q99700 SHA256 5f940d94843aaaa3d1ccd38a5609a86bc481228435278cb173e14f6398e5d150.
+    Clear ENZYME_INHIBITOR from AID 489033; assign the bounded ANTIPARASITIC phenotype
+    class to AIDs 2044/2294 only with their T. cruzi coculture context, without asserting
+    a molecular mechanism. Withhold target_enzyme Q99700 from the AID 651635 viability
+    observation while retaining the source project metadata in provenance. Use a new
+    explicitly consumed, source-digest-guarded decision route or guarded source-specific
+    logic; no such class/target override is supplied by the inspected exclusion loader.
+    Do not delete these real assay results to avoid classification errors.'
+  finding_ids:
+  - BIO032-F1
+  - BIO032-F2
+  target_ids:
+  - CHEBI:63486
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_pubchem_bioassay.py
+    role: Effective PubChem row extraction and SID/assay-context preservation
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Immutable source rows requiring full-row pins before curation
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Effective bioactivity class, target-role and capped observation generation
+  generator: scripts/seed_from_sources.py
+  acceptance_checks:
+  - Each named complete raw row matches its digest before applying a decision; changed
+    source fields fail closed.
+  - All 25 current calls, values, units, endpoint labels and database references are
+    retained unless a separately documented deduplication changes representation.
+  - ENZYME_INHIBITOR is absent from the three unsupported observations and is not
+    derived into this owner summary without other verified support.
+  - AID 489033 is described as a cell NF-kB reporter result; AIDs 2044/2294 retain
+    parasite/host/readout scope, and AID 2010 retains its separate NIH3T3 cytotoxicity
+    result.
+  - The Inconclusive AID 651635 row retains NOT_DETERMINED and its ATXN2 project provenance
+    but not target_enzyme; EPAC Inconclusive outcomes are not converted to positives.
+  - 'The existing exclusion API is not misused: AID 651635 has two raw rows and fails
+    its one-row selector requirement.'
+  - Authorized regeneration and native strict/reproduction checks pass after implementation.
+- action_id: BIO032-A2
+  description: 'Preserve SID and panel/result identity in the effective PubChem extraction/provenance
+    schema before deduplicating the four current target-metadata pairs. Compare full
+    AID/SID/outcome/endpoint/value/panel tuples and merge compatible target metadata
+    only; retain the distinct EPAC1 SIDs and their different measurements. Pin the
+    eight exact rows and all recovered current SIDs in identity/bioactivity-comparison.json
+    (SHA256 89814dc3d82ffec3963342e3358838f1876b6cf3bc61aa74811329c86eb2546f). Recompute
+    the 25-observation selection and omission count from the corrected representation,
+    documenting any newly included rows and source-manifest changes. Exact current
+    row guards for key LPXQRXLUHJKZIE-UHFFFAOYSA-N and CID 135403646: AID 1645883,
+    SID 124899167, target (blank), full-row SHA256 951f6e371f17a138d0268e21cc643fc5d924c46842341340d4c11a46faf0d056;
+    AID 1645883, SID 124899167, target O95398, full-row SHA256 3a9ce219ec0ec56c559dabf51ac1ab8c20d4187d81ab399320ed51b849278c9e;
+    AID 1645883, SID 441585673, target (blank), full-row SHA256 46cdd275a842d2231903c8487f7582ce1089b853b3322daabf16a9ce99103ce5;
+    AID 1645883, SID 441585673, target O95398, full-row SHA256 1411b8b4da78b16982566bd523c8ab15ecbb5d108708c9cf8eaa29485ff4cb84;
+    AID 1645886, SID 124899167, target (blank), full-row SHA256 953b177d22f6008b0bb9485f0001dbc225562bbe313cb8cfa4069d22d9b1d088;
+    AID 1645886, SID 124899167, target Q8WZA2, full-row SHA256 cc998b9ded4d7cd2dba8b2ab7a2d1c6e766cbd132860b33c9e55c680b6b42760;
+    AID 651635, SID 11112293, target (blank), full-row SHA256 ad71caa20c940f578f97de016973d3626f014395589ffbe006699879374fb38e;
+    AID 651635, SID 11112293, target Q99700, full-row SHA256 5f940d94843aaaa3d1ccd38a5609a86bc481228435278cb173e14f6398e5d150.
+    SID is recovered from the current authoritative summary and is not part of the
+    existing raw-row digest.'
+  finding_ids:
+  - BIO032-F3
+  target_ids:
+  - CHEBI:63486
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_pubchem_bioassay.py
+    role: Effective PubChem row extraction and SID/assay-context preservation
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Immutable source rows requiring full-row pins before curation
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Effective bioactivity class, target-role and capped observation generation
+  generator: scripts/seed_from_sources.py
+  acceptance_checks:
+  - SID 124899167 and SID 441585673 remain distinct EPAC1 samples with 11.2202 and
+    125.892 uM values respectively.
+  - The four target-metadata pairs are not represented as independent replicates or
+    collapsed across distinct sample/result identities.
+  - Any cap/count change is explicitly recomputed and its newly emitted rows receive
+    protocol review before activity classes are asserted.
+  - Source inventory, manifest and schema changes remain reproducible; raw scientific
+    observations are preserved.
+limitations:
+- Chemical authority comparison establishes the neutral Standard-identity anchor.
+  It does not measure tautomer populations, intracellular salts or protonation state.
+- Taxonomy type-material aliases do not establish complete sequence identity of historical
+  stocks or mutant alleles; the detailed protein audit is limited to deposited references
+  and current sequence records.
+- The Frontiers main article and original main Figures1–3 were inspected; its supplement
+  remains unavailable. The C/H/I/J/K reports are verified as main-text statements,
+  without independent supplementary chromatogram/PCR/allele inspection, peak integration
+  or statistical reanalysis.
+- Nature primary main text was read in full, but only the accession/construct portion
+  of its available supplement was re-read for this target. No complete raw-spectrum
+  reinterpretation or new full tagged-construct reconstruction is claimed.
+- The 2020 papers use type-material collection aliases; neither shared taxonomy nor
+  equal deposited reference sequences proves identity of historical stocks or engineered
+  mutant alleles. Protein authority and independent translation checks are supplied
+  separately by the native-check agent.
+- This packet covers scientific identity in the primary experiments, natural origin,
+  BGC/producer methods and all three graph claims. Current chemical authority checks,
+  PubChem assay observations, computed classification and general local-source reconciliation
+  are supplied in the other record-specific packets.
+- Only the temporary review packet and receipts were written. No owner, curation table,
+  saved review, campaign state or repository file was modified, and no native validation
+  or canary was run by this subtask.
+- Sequence identity among the submitted locus, versioned GenPept, UniProtKB and UniParc
+  establishes the represented protein sequence, not the sequence of experimental deletion
+  alleles, culture-stock identity, catalytic activity, or equivalence to every protein
+  named Ptn. No global absence search was performed for B/I/J/K UniProt examples,
+  which the owner does not assert.
+- The 25 owner claims are database assertions. Complete official protocols and current
+  summary rows were read for all 20 stored AIDs; original individual experiments,
+  raw curves and replicate files were not independently reproduced.
+- The full 123-row inventory and current summary were compared, but the 98 omitted
+  rows did not receive individual protocol audits. Their count is a row count, not
+  a count of independent assays.
+- Purified EPAC assay results remain Inconclusive. AID 1645886 contains EPAC1 wording
+  in its general description while its title, target and protocol identify EPAC2;
+  no positive antagonist mechanism is inferred.
+- Inactive fitted values, including 80 and 91.17 uM, are preserved as reported database
+  values. Protocols describe assay maxima and possible censored fits; raw titration/censor
+  flags were not separately fetched, so no exact binding affinity or effective positive
+  concentration is inferred.
+- PMID 35787375 metadata and abstract were read, but its full text and supplementary
+  hit tables were not inspected here. The citation is verified as ATXN2-project bibliography,
+  not independent primary proof of direct action by this compound.
+- Full standard InChIKey agreement establishes deposited structure matching, not purity,
+  concentration accuracy, historical sample identity or an orthogonal mechanism.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Shared baseline gates and target strict validation retain their actual fresh command
+  receipts for this base. Scientific failed or unavailable checks are distinct from
+  bundle validation.
+tags:
+- path-order-campaign
+- batch-004
+```
