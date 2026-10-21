@@ -1,0 +1,1636 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T112720Z-altemicidin
+title: 'Altemicidin: restore demonstrated locus methods and native strain context'
+started_at: '2026-10-21T11:18:14.977322Z'
+finished_at: '2026-10-21T11:27:20.869613Z'
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: Primary studies support the exact parent, both historical occurrences and
+  the endpoints of four deliberately qualified annotation graphs. Thirteen native
+  protein references and all quoted annotations match. The generated locus omits demonstrated
+  heterologous-expression and enzyme-assay methods, and the producer omits NCIMB40513.
+  One major and one minor finding have guarded maintained repair routes; native, heterologous
+  and engineered-construct scopes remain distinct.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/altemicidin.yaml
+    sha256: 6dcfe5613855219175de58056b63b1e9444a7124ad8dba52b2bc7370e4fb2a03
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 50, batch 005, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated pending-PR targets.
+    At selection, 94 of 3116 current records had campaign coverage and 3022 remained.
+    The population search included ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+targets:
+- target_id: naturalproductmech:mibig-a58ee03ee4
+  path: data/natural_products/alkaloids/altemicidin.yaml
+  label: altemicidin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/altemicidin.yaml
+    role: Curator-owned assertions, inline mechanisms, discussions and audit history
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  command: just validate-strict data/natural_products/alkaloids/altemicidin.yaml --out
+    /private/tmp/npm-review-work/050/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T11:18:22.476146Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch005 only after fresh fetch/base/tree equality and all 9,182 tracked file
+    bytes and modes were verified against the original batch004 baseline (208,070,649
+    bytes). This gate was not rerun for batch005; original times, scope, warnings,
+    exceptions and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch005 only after fresh fetch/base/tree equality and all 9,182 tracked
+    file bytes and modes were verified against the original batch004 baseline (208,070,649
+    bytes). This gate was not rerun for batch005; original times, scope, warnings,
+    exceptions and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch005 only after fresh fetch/base/tree equality and all 9,182 tracked file
+    bytes and modes were verified against the original batch004 baseline (208,070,649
+    bytes). This gate was not rerun for batch005; original times, scope, warnings,
+    exceptions and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch005 only after fresh fetch/base/tree equality and all 9,182 tracked file
+    bytes and modes were verified against the original batch004 baseline (208,070,649
+    bytes). This gate was not rerun for batch005; original times, scope, warnings,
+    exceptions and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch005
+    only after fresh fetch/base/tree equality and all 9,182 tracked file bytes and
+    modes were verified against the original batch004 baseline (208,070,649 bytes).
+    This gate was not rerun for batch005; original times, scope, warnings, exceptions
+    and skips are preserved.'
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+- check_id: S050-C-ORIGINAL
+  name: Original native occurrence and parent stereochemical evidence
+  status: passed
+  required: true
+  summary: Both full 1989 papers and selected original pixels support the SA-1758
+    occurrence and derivative-based absolute assignment. No strain identity with NCIMB40513
+    is inferred.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - S050-1989-ISOLATION
+  - S050-1989-STRUCTURE
+  - S050-ROTATION-LIMIT
+- check_id: S050-C-METHODS
+  name: Exact-product locus methods represented
+  status: failed
+  required: true
+  summary: The cited full 2019 study directly demonstrates heterologous altemicidin
+    and final enzymatic recoupling, while imported methods remain empty and locus
+    CLUSTER_UNSTATED.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - S050-OWNER
+  - S050-RAW
+  - S050-2019-HETERO
+  - S050-2019-COUPLING
+  - S050-2019-GENETIC
+  - S050-CONSUMERS
+- check_id: S050-C-GRAPH-SCOPE
+  name: Primary endpoint compatibility of the four qualified graphs
+  status: passed
+  required: true
+  summary: 2019/2021/2024 sources support the annotated endpoint boundaries. Numbering,
+    carrier states, proposed 11, unresolved H/N/O roles and engineered fusion context
+    are distinguished. Exact current UniProt and native translation checks are provided
+    separately.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - S050-OWNER
+  - S050-2019-SULFAMOYL
+  - S050-2021-PQ
+  - S050-2021-I
+  - S050-2021-HNO-FE
+  - S050-2024-CARRIER
+  - S050-2024-SI
+- check_id: S050-C-2021-PROTOCOL
+  name: Full 2021 main/Extended Data protocol expansion
+  status: unavailable
+  required: false
+  summary: The full main text remains unavailable, but the official SI directly supports
+    current qualified endpoint claims. Exact protocol/construct reconstruction would
+    be needed for a later primary-experiment upgrade; it is not asserted by the existing
+    annotation graphs.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - S050-2021-ACCESS
+  - S050-2021-PQ
+  - S050-2021-HNO-FE
+- check_id: P050-C-SEQUENCES
+  name: Complete native CDS, deposited protein and UniProt consistency
+  status: passed
+  required: true
+  summary: All 18 current deposited CDS translations agree, and all 13 selected SbzE–Q
+    references independently match current UniProt sequences, stable IDs, lengths
+    and owner coordinates. The selected proteins contain no ambiguous residues; this
+    is a reference-sequence check, not experimental-stock resequencing.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - P050-GENBANK
+  - P050-AUDIT
+  - P050-P0DY34
+  - P050-P0DY35
+  - P050-P0DY36
+  - P050-P0DY37
+  - P050-P0DY45
+  - P050-P0DY46
+  - P050-P0DY47
+  - P050-P0DY48
+  - P050-P0DY49
+  - P050-P0DY50
+  - P050-P0DY51
+  - P050-P0DY52
+  - P050-P0DY53
+  command: .venv/bin/python /private/tmp/npm-review-work/050/protein-reaction-audit.py
+  exit_code: 0
+  scope_note: Executed in /private/tmp/npm-record-reviews-20261021 from 2026-10-21T11:23:43.460543Z
+    to 2026-10-21T11:23:43.489559Z; log /private/tmp/npm-review-work/050/protein-reaction-audit.log.
+- check_id: P050-C-ANNOTATIONS
+  name: All graph annotations, snippets and scope boundaries
+  status: passed
+  required: true
+  summary: All 13 quoted snippets are present in the current reviewed entries at version
+    3/sequence version 1. The four graph descriptions and 23 predicates preserve database
+    annotation, carrier state, probable handoff, unresolved H/N/O chemistry, omitted
+    cofactors/byproducts and native-versus-engineered construct limits. No additional
+    exact Rhea or chemical grounding is silently inferred.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - P050-OWNER
+  - P050-AUDIT
+  - P050-2024-CONSTRUCT-SCOPE
+- check_id: R050-C-ID
+  name: Exact graph and current parent identifiers
+  status: passed
+  required: true
+  summary: Five independently parsed parent graphs and the full PubChem key agree.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - R050-CHEM
+  - R050-PUBCHEM
+  - R050-CHEBI
+- check_id: R050-C-IMODULON
+  name: Applicable native expression dataset
+  status: not_applicable
+  required: false
+  summary: No matching organism/strain dataset in the complete retained catalogue.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - R050-IMODULON
+evidence:
+- evidence_id: S050-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/altemicidin.yaml
+  locator: Complete owner, all four inline graphs, two occurrences, discussion and
+    history
+  accessed_at: '2026-10-21T11:25:09.795677Z'
+  support: supports
+  summary: The owner asserts SOURCE_ASSERTION for generic Streptomyces sp. and CLUSTER_UNSTATED
+    for BGC0001925, citing PMID:30643149. Thirteen native protein references appear
+    in four explicitly database-annotated partial graphs. Intermediate nodes remain
+    ungrounded, cofactor/byproduct nodes are intentionally omitted, and no stable
+    complex, native carrier redundancy, complete pathway reconstitution or individual
+    H/N/O chemistry is asserted.
+  snapshot_sha256: 6dcfe5613855219175de58056b63b1e9444a7124ad8dba52b2bc7370e4fb2a03
+- evidence_id: S050-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Exact BGC0001925:1 version 4 row independently compared with the local
+    source projection
+  accessed_at: '2026-10-21T11:25:09.795677Z'
+  support: supports
+  summary: The active, questionable-quality, unknown-completeness row has empty methods/bounds,
+    taxon NCBITaxon:1931, LC420052.1, exact VZRFZUPFQKSXPV-VPFIQFBESA-N chemistry
+    and ENTRY reference PMID:30643149. Canonical complete-row SHA256 3976156f4414003237f39d5952f5d1c492d33ebb35ae1e0109bc163aec977088.
+    Two exact LOTUS rows cite the distinct paired 1989 papers for S. sioyaensis; their
+    full-row pins are recorded separately. No missing source-projection match was
+    inferred from a filtered search.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: S050-1989-ISOLATION
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/antibiotics1968/42/11/42_11_1556/_pdf
+  locator: Complete six-page original paper, printed 1556–1561; original printed 1559
+    pixels
+  accessed_at: '2026-10-21T10:38:13.614397Z'
+  support: supports
+  summary: The authors isolated SA-1758 from sea mud at Gamo, Japan and assigned it
+    to S. sioyaensis using morphology and physiological comparisons. Native culture
+    yielded altemicidin, with 232 mg isolated from 10 L and molecular formula C13H20N4O7S
+    supported by MS/NMR. This directly supports the first LOTUS occurrence and natural
+    origin. It does not identify NCIMB 40513 as the same strain.
+  snapshot_sha256: 7c2a1b7243d2f67154308b10cc9755d0061d951846a035e24f94ce5d5fe37b45
+- evidence_id: S050-1989-STRUCTURE
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/antibiotics1968/42/11/42_11_1562/_pdf
+  locator: Complete five-page original paper, printed 1562–1566; original Figure 1
+    and printed 1565 configuration/derivative procedure pixels
+  accessed_at: '2026-10-21T10:38:13.614904Z'
+  support: supports
+  summary: The second paper explicitly identifies the same S. sioyaensis SA-1758 culture
+    product and concludes (1R,2S,3aR,7aS)-altemicidin. Parent/ester spectroscopy and
+    X-ray analysis of the methyl-ester 9-N-xanthenyl derivative establish the assignment;
+    188 of 199 discriminating Friedel pairs support the reported hand. The crystal
+    was a derivative acetone solvate, not the unchanged parent. This supports the
+    second occurrence citation and exact named parent identity without treating a
+    derivative as a natural product.
+  snapshot_sha256: fe9da01ac5fb6ba9f149df7fbbd23683c9924f018ba5c0b58a446417183880f8
+- evidence_id: S050-1989-ACTIVITY
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/antibiotics1968/42/11/42_11_1556/_pdf
+  locator: Biological Procedures and Results, printed 1557 and 1559–1560
+  accessed_at: '2026-10-21T10:38:13.614397Z'
+  support: supports
+  summary: The paper reports brine-shrimp lethality, a mite pot-prevention assay,
+    tumor-cell growth inhibition and restricted antimicrobial activity. None establishes
+    a molecular protein target. Those assays are outside the owner’s current assertions
+    and do not compel optional additions or transfer the downstream SB-203207/208
+    IleRS target to altemicidin.
+  snapshot_sha256: 7c2a1b7243d2f67154308b10cc9755d0061d951846a035e24f94ce5d5fe37b45
+- evidence_id: S050-2019-HETERO
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6331615/fullTextXML
+  locator: Full main Introduction/Results/Discussion/Methods; Heterologous expression
+    and Isolation subsections, original Figure 2 independently viewed
+  accessed_at: '2026-10-21T10:37:37.164659Z'
+  support: supports
+  summary: DNA from Streptomyces sp. NCIMB 40513 supplied the 18-gene sbz region.
+    The sbzD–R operon was introduced into S. lividans TK21 under an ermE promoter;
+    the engineered culture produced altemicidin 1 absent from the host control. Ten
+    milligrams were isolated from 1 L and identified by NMR/HRMS comparison. Additional
+    sbzA–C expression produced decorated congeners. This demonstrates exact-product
+    locus sufficiency in TK21, not a native NCIMB production or knockout assay.
+  snapshot_sha256: e31094779a45954b8b4aab3a6f37f1a7eb4dc46cdf82a46a5147e3c723a89cf0
+- evidence_id: S050-2019-COUPLING
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6331615/fullTextXML
+  locator: Results aminoacyl transfer, original Figure 3c/d pixels, Methods SbzL/SbzI/SbzG-K
+    assay and hydrolysis of 1
+  accessed_at: '2026-10-21T10:37:37.164659Z'
+  support: supports
+  summary: Purified SbzL loads 2-sulfamoylacetate onto G or K carrier, and SbzI transfers
+    it to the acid-hydrolysis-derived core 6, yielding altemicidin 1 compared with
+    an authentic standard. The overnight 30 °C assay contains ATP, MgCl2, SbzL, SbzI
+    and G/K; carrier-free CoA and enzyme-omission comparisons are shown. This is an
+    exact-product enzymatic assay of final recoupling, not de novo core assembly.
+    The Methods paragraph reverses 5/6 labels relative to Results/Figure 3; chemical
+    identities take precedence over an unqualified number match.
+  snapshot_sha256: e31094779a45954b8b4aab3a6f37f1a7eb4dc46cdf82a46a5147e3c723a89cf0
+- evidence_id: S050-2019-GENETIC
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6331615/fullTextXML
+  locator: Gene-deletion Methods, Results sulfonamide biogenesis, full official SI
+    Figure 15 captions and original pages 10–11 pixels
+  accessed_at: '2026-10-21T10:37:37.164659Z'
+  support: supports
+  summary: Deletion experiments split cloned sbz1 around F, H, J, M, N, O, P or Q
+    and transformed the resulting constructs into TK21. All lost altemicidin production;
+    feeding sulfonamide precursor chemically restored the J/M deficient expression
+    strains. These are heterologous construct deletions and chemical rescue, not native
+    NCIMB knockouts or genetic complementation. The maintained native Knock-out studies
+    grade is therefore inapplicable.
+  snapshot_sha256: e31094779a45954b8b4aab3a6f37f1a7eb4dc46cdf82a46a5147e3c723a89cf0
+- evidence_id: S050-2019-SULFAMOYL
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6331615/fullTextXML
+  locator: Results SbzM/J, Figures 4–5 captions; isotope feeding, derivatization,
+    NMR and enzyme Methods
+  accessed_at: '2026-10-21T10:37:37.164659Z'
+  support: supports
+  summary: SbzM/J convert cysteine into 2-sulfamoylacetate. SbzM-derived aldehyde
+    is characterized through derivatization and hydrated-product NMR/HRMS; mechanistic
+    intermediates and electron transfers remain proposed. Isotope feeding is into
+    TK21/sbz1. The graph’s annotated net M/J reactions are compatible with these endpoints,
+    while native metal occupancy, microscopic chemistry and complete-altemicidin synthesis
+    by M/J are not established.
+  snapshot_sha256: e31094779a45954b8b4aab3a6f37f1a7eb4dc46cdf82a46a5147e3c723a89cf0
+- evidence_id: S050-2019-SI
+  kind: primary_source
+  reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-018-08093-x/MediaObjects/41467_2018_8093_MOESM1_ESM.pdf
+  locator: All 29 pages text/captions/tables; original pages 10–11 and main Figure
+    3 via repository archive
+  accessed_at: '2026-10-21T10:37:37.163923Z'
+  support: supports
+  summary: SI Figure 13 measures G and K loading as holo-carrier mass changes, and
+    Figure 15 labels engineered TK21 deletion/feeding comparisons. Table 1 distinguishes
+    encoded genes from closest protein homologues and proposed functions. Neither
+    a listed foreign homologue nor a carrier-loading assay proves native interchangeability
+    or an obligatory persistent complex.
+  snapshot_sha256: 754225c78c90fbe9cd1d388508b1f126d1c3990f723036ae7de033d8df4137bb
+- evidence_id: S050-ROTATION-LIMIT
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/antibiotics1968/42/11/42_11_1556/_pdf
+  locator: Original printed 1559 rotation compared with 2019 main Isolation data
+  accessed_at: '2026-10-21T10:38:13.614397Z'
+  support: supports
+  summary: The original printed rotation is −7.6 degrees (27 °C, c 1.0, water); OCR
+    reads it incorrectly. The 2019 isolate is reported as +7.5 (30 °C, c 0.1, water).
+    Preserve this source discrepancy and conditions. Matching depicted identity, spectroscopy
+    and reported authentic comparisons support the named product; the sign difference
+    alone neither proves an enantiomer swap nor authorizes a silent correction.
+  snapshot_sha256: 7c2a1b7243d2f67154308b10cc9755d0061d951846a035e24f94ce5d5fe37b45
+- evidence_id: S050-2021-PQ
+  kind: primary_source
+  reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-021-04214-7/MediaObjects/41586_2021_4214_MOESM1_ESM.pdf
+  locator: Official SI S5–S15 and S53–S55; original S11/S14/S15 panels independently
+    viewed
+  accessed_at: '2026-10-21T10:37:37.162950Z'
+  support: supports
+  summary: SbzP uses SAM and beta-NAD to form dinucleotide 7, and SbzQ converts 7
+    to hydroxylated 8. NMR assignments retain ADP-ribose. Controls distinguish beta-NMN,
+    beta-NADP impurity and mononucleoside substrates. These support the qualified
+    early-scaffold graph; NAD is a building block here, not merely a redox cofactor.
+    No exact 2021 assay concentration or full tagged-construct identity is supplied
+    by this audit.
+  snapshot_sha256: da0a06cd5d441509074ce304e97abd8ec994b184b09c1d96d120e5e17dcbdba8
+- evidence_id: S050-2021-I
+  kind: primary_source
+  reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-021-04214-7/MediaObjects/41586_2021_4214_MOESM1_ESM.pdf
+  locator: Official SI S15 Figure 11, original structures and chromatograms viewed
+  accessed_at: '2026-10-21T10:37:37.162950Z'
+  support: supports
+  summary: SbzI/G/L converts hydroxylated dinucleotide 8 into 9; 7 and mononucleoside
+    4 are not equivalent acceptors in that panel. UniProt intermediate 1/2/3 corresponds
+    chemically to this study’s 7/8/9. The 2019 final recoupling instead uses a hydrolyzed
+    late core. Thus the early graph correctly avoids an SbzI-to-final-altemicidin
+    edge.
+  snapshot_sha256: da0a06cd5d441509074ce304e97abd8ec994b184b09c1d96d120e5e17dcbdba8
+- evidence_id: S050-2021-HNO-FE
+  kind: primary_source
+  reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-021-04214-7/MediaObjects/41586_2021_4214_MOESM1_ESM.pdf
+  locator: Official SI Note 3 and Figures 12–16, S16–S19; Table 9/Figure 46 S58; all
+    corresponding original pixels viewed
+  accessed_at: '2026-10-21T10:37:37.162950Z'
+  support: supports
+  summary: Combined H/N/O acting on 9 yields a peak assigned to proposed 11 and ribose-5-phosphate.
+    The authors explicitly could not establish unstable 11 by NMR and did not resolve
+    separate H/N/O roles. The F+FGD+11 assay yields NMR-characterized demethylaltemicidin
+    12; E+12 yields authentic altemicidin 1 versus negative control. These support
+    the existing bounded late/participation graphs, without inventing a full intermediate
+    structure, individual enzyme role or permanent H/N/O complex.
+  snapshot_sha256: da0a06cd5d441509074ce304e97abd8ec994b184b09c1d96d120e5e17dcbdba8
+- evidence_id: S050-2021-CONTEXT
+  kind: primary_source
+  reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-021-04214-7/MediaObjects/41586_2021_4214_MOESM1_ESM.pdf
+  locator: Official SI Note 1 S7, Note 2 S12–S13 and Table 3 S48
+  accessed_at: '2026-10-21T10:37:37.162950Z'
+  support: supports
+  summary: The experiments use the previously constructed S. lividans/sbz1 host and
+    recombinant expression vectors. Compound 10 converts during purification into
+    S10, deliberately reproduced at pH4; that product is not newly inferred as a native
+    metabolite. The owner asserts neither S10 nor its production, and homologue/PsePQ
+    mechanistic experiments do not establish new producer taxa.
+  snapshot_sha256: da0a06cd5d441509074ce304e97abd8ec994b184b09c1d96d120e5e17dcbdba8
+- evidence_id: S050-2021-ACCESS
+  kind: search
+  reference: https://www.nature.com/articles/s41586-021-04214-7.pdf
+  locator: Retained official main-PDF request returned HTML subscription preview;
+    full official SI independently available
+  accessed_at: '2026-10-21T10:38:14.161125Z'
+  support: context_only
+  summary: The full 2021 main Methods/Extended Data remain unavailable in the retained
+    access record. Official SI directly supplies the endpoint evidence used here.
+    No claim of complete primary protocol or assay-construct reconstruction is made,
+    and no renewed failed route was needed.
+  snapshot_sha256: 4cf34ce8985c28f015be02f79ffe4cc0fa4b3742c399f2c160968522668f0352
+  search_scope: Existing public official article/PDF requests and successfully fetched
+    official SI; no paywall bypass, paid source or inference of literature absence.
+- evidence_id: S050-2024-CARRIER
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11685415/fullTextXML
+  locator: Complete original Introduction/Results/Discussion/Methods and captions;
+    DOI:10.1038/s41467-024-55265-z
+  accessed_at: '2026-10-21T11:20:20.627396Z'
+  support: supports
+  summary: The study examines dinucleotide substrate 1→2, not final altemicidin. Structural
+    work uses a G-GGGGS-I fusion; crystallization and cross-linking do not establish
+    a native stable complex. Methods names SA-1758 as DNA donor while Introduction
+    discusses NCIMB40513. The discrepancy is retained; no exact-strain equivalence
+    is inferred. Substrate docking/proton-transfer proposals remain models, separate
+    from measured carrier interaction and mutagenesis.
+  snapshot_sha256: e34672cd62bc352d076b2ef69509758636cd02bd37fee6feca34c5fdb23ffd41
+- evidence_id: S050-2024-SI
+  kind: primary_source
+  reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-024-55265-z/MediaObjects/41467_2024_55265_MOESM1_ESM.pdf
+  locator: SI Tables 1/3; Figures 5/6/23 captions; original Figure 6 on printed12
+    viewed
+  accessed_at: '2026-10-21T11:20:20.628134Z'
+  support: supports
+  summary: The G-GGGGS-I fusion has higher assay activity than separately supplied
+    proteins. Crystal statistics concern engineered SbzGI (8ZT4) and SbzI (8ZT3);
+    the SbzK comparison is modeled. ITC uses recombinant proteins and weak affinity.
+    These data support carrier recognition but do not remove the owner’s native-versus-construct
+    caveat.
+  snapshot_sha256: f962e5c1439f1c4a714bde6de4eac75397fdcec67820a345376d3641bc86a312
+- evidence_id: S050-CONSUMERS
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: load/apply_mibig_locus_evidence_overrides; complete grading.py, claim_references.py
+    and producer_strains.py; conf/producer_evidence.tsv
+  accessed_at: '2026-10-21T11:25:09.795677Z'
+  support: supports
+  summary: Heterologous expression and Enzymatic assays demonstrate the locus while
+    leaving the native producer SOURCE_ASSERTION. Native Knock-out studies would wrongly
+    upgrade that producer. REPLACE expected_* fields are not enforced; pair the method
+    correction with a full-row-SHA claim-reference decision retaining the citation,
+    or implement an equivalent guard. The strain loader already requires an exact
+    complete raw-row SHA.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: S050-OVERLAY-SEARCH
+  kind: search
+  reference: curation/
+  locator: Ignored-inclusive exact target/BGC/key search in maintained corrections
+    and consumers
+  accessed_at: '2026-10-21T11:22:38.773945Z'
+  support: context_only
+  summary: No target-specific correction matched in the bounded curation/configuration/curate
+    scope. This is not a search for absence across all source literature or all review
+    files.
+  snapshot_sha256: 168c66b763d95687194cb00d111f7abd189c8344774bb4f42b7954cba74481b0
+  search_scope: Exact identifiers in maintained corrections, configuration and curate
+    consumers, including ignored and hidden files.; command rg --no-ignore --hidden
+    -n BGC0001925|mibig-a58ee03ee4|VZRFZUPFQKSXPV-VPFIQFBESA-N curation conf src/naturalproductmech/curate
+    returned exit1, empty stdout/stderr.
+- evidence_id: P050-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/altemicidin.yaml
+  locator: Complete 710-line owner, all four inline graphs and open discussion
+  accessed_at: '2026-10-21T11:25:03.416812Z'
+  support: supports
+  summary: Four partial database-annotated biosynthesis graphs contain 27 node instances
+    and 23 edges, with 13 unique SbzE–Q protein identifiers. Carrier proteins are
+    distinguished from enzymes; H/N/O participation is not assigned an individual
+    reaction or stable complex. Native-reference and experimental-construct boundaries
+    are explicit throughout.
+  snapshot_sha256: 6dcfe5613855219175de58056b63b1e9444a7124ad8dba52b2bc7370e4fb2a03
+- evidence_id: P050-GENBANK
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=LC420052.1&rettype=gb&retmode=text
+  locator: /private/tmp/npm-review-work/050/identity/genbank.gb
+  accessed_at: '2026-10-21T11:18:37.406596Z'
+  support: supports
+  summary: Current LC420052.1 is the 20,488 bp complete SB-203208 cluster deposited
+    from Streptomyces sp. NCIMB 40513, taxon 1931. All 18 CDS locations, table-11
+    translations and submitted protein IDs were parsed and independently translated.
+    The selected SbzE–Q references are all complete reverse-strand CDSs without ambiguous
+    amino acids; SbzA has two ambiguous residues and is not a selected graph reference.
+  snapshot_sha256: 9821ab6d7d0498e79cfd48137169279b7a840532239df5610be0fc8b10c7d474
+- evidence_id: P050-P0DY34
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/P0DY34.json
+  locator: /private/tmp/npm-review-work/050/identity/uniprot-P0DY34.json
+  accessed_at: '2026-10-21T11:18:37.768467Z'
+  support: supports
+  summary: 'Current reviewed UniProt P0DY34, sbzE, version 3/sequence version 1: 260
+    aa, EMBL LC420052 protein BBG06554.1, native CDS complement(6905..7687). Complete
+    sequence matches the CDS and deposited translation, and the owner coordinate/length
+    claim matches. Protein existence is 1: Evidence at protein level. Function, reaction,
+    cofactor, subunit and reference annotations were inspected at their stated evidential
+    scope.'
+  snapshot_sha256: 519f33b89ffd6781d2e849831674b98554e988c83cecdf8a82b31963af56a9d2
+- evidence_id: P050-P0DY35
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/P0DY35.json
+  locator: /private/tmp/npm-review-work/050/identity/uniprot-P0DY35.json
+  accessed_at: '2026-10-21T11:18:37.846880Z'
+  support: supports
+  summary: 'Current reviewed UniProt P0DY35, sbzF, version 3/sequence version 1: 320
+    aa, EMBL LC420052 protein BBG06555.1, native CDS complement(7743..8705). Complete
+    sequence matches the CDS and deposited translation, and the owner coordinate/length
+    claim matches. Protein existence is 1: Evidence at protein level. Function, reaction,
+    cofactor, subunit and reference annotations were inspected at their stated evidential
+    scope.'
+  snapshot_sha256: b834d9d64d44bf7cbdd514c485e5da1ef4236e82921ad9dd1742bd605fe84ef5
+- evidence_id: P050-P0DY36
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/P0DY36.json
+  locator: /private/tmp/npm-review-work/050/identity/uniprot-P0DY36.json
+  accessed_at: '2026-10-21T11:18:37.981872Z'
+  support: supports
+  summary: 'Current reviewed UniProt P0DY36, sbzG, version 3/sequence version 1: 85
+    aa, EMBL LC420052 protein BBG06556.1, native CDS complement(8750..9007). Complete
+    sequence matches the CDS and deposited translation, and the owner coordinate/length
+    claim matches. Protein existence is 1: Evidence at protein level. Function, reaction,
+    cofactor, subunit and reference annotations were inspected at their stated evidential
+    scope.'
+  snapshot_sha256: d18c9cd85a76561e63a7bbb500350763103e0275eac1d738a67f2703c63e9c3a
+- evidence_id: P050-P0DY37
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/P0DY37.json
+  locator: /private/tmp/npm-review-work/050/identity/uniprot-P0DY37.json
+  accessed_at: '2026-10-21T11:18:38.164166Z'
+  support: supports
+  summary: 'Current reviewed UniProt P0DY37, sbzH, version 3/sequence version 1: 334
+    aa, EMBL LC420052 protein BBG06557.1, native CDS complement(9057..10061). Complete
+    sequence matches the CDS and deposited translation, and the owner coordinate/length
+    claim matches. Protein existence is 3: Inferred from homology. Function, reaction,
+    cofactor, subunit and reference annotations were inspected at their stated evidential
+    scope.'
+  snapshot_sha256: 75db25ea3629f650062b079b6b59af236bb93c10470adc232427a11f0c594b10
+- evidence_id: P050-P0DY45
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/P0DY45.json
+  locator: /private/tmp/npm-review-work/050/identity/uniprot-P0DY45.json
+  accessed_at: '2026-10-21T11:18:38.364796Z'
+  support: supports
+  summary: 'Current reviewed UniProt P0DY45, sbzI, version 3/sequence version 1: 188
+    aa, EMBL LC420052 protein BBG06558.1, native CDS complement(10061..10627). Complete
+    sequence matches the CDS and deposited translation, and the owner coordinate/length
+    claim matches. Protein existence is 1: Evidence at protein level. Function, reaction,
+    cofactor, subunit and reference annotations were inspected at their stated evidential
+    scope.'
+  snapshot_sha256: 63002c4c54fdb50629a11663fd8ef76f4dc92fbb66e01f9cf58c965045fe2d19
+- evidence_id: P050-P0DY46
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/P0DY46.json
+  locator: /private/tmp/npm-review-work/050/identity/uniprot-P0DY46.json
+  accessed_at: '2026-10-21T11:18:38.468628Z'
+  support: supports
+  summary: 'Current reviewed UniProt P0DY46, sbzJ, version 3/sequence version 1: 464
+    aa, EMBL LC420052 protein BBG06559.1, native CDS complement(10630..12024). Complete
+    sequence matches the CDS and deposited translation, and the owner coordinate/length
+    claim matches. Protein existence is 1: Evidence at protein level. Function, reaction,
+    cofactor, subunit and reference annotations were inspected at their stated evidential
+    scope.'
+  snapshot_sha256: d95e89c2b5e6856196937d3e5864596939f1dc0672555b03d94eecb34c13ebea
+- evidence_id: P050-P0DY47
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/P0DY47.json
+  locator: /private/tmp/npm-review-work/050/identity/uniprot-P0DY47.json
+  accessed_at: '2026-10-21T11:18:38.641654Z'
+  support: supports
+  summary: 'Current reviewed UniProt P0DY47, sbzK, version 3/sequence version 1: 93
+    aa, EMBL LC420052 protein BBG06560.1, native CDS complement(12039..12320). Complete
+    sequence matches the CDS and deposited translation, and the owner coordinate/length
+    claim matches. Protein existence is 3: Inferred from homology. Function, reaction,
+    cofactor, subunit and reference annotations were inspected at their stated evidential
+    scope.'
+  snapshot_sha256: 37ceeef3e3a67511c2d45a61412fbbc816796ee6e091c9c490232e3cf1ceff3b
+- evidence_id: P050-P0DY48
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/P0DY48.json
+  locator: /private/tmp/npm-review-work/050/identity/uniprot-P0DY48.json
+  accessed_at: '2026-10-21T11:18:38.774176Z'
+  support: supports
+  summary: 'Current reviewed UniProt P0DY48, sbzL, version 3/sequence version 1: 559
+    aa, EMBL LC420052 protein BBG06561.1, native CDS complement(12317..13996). Complete
+    sequence matches the CDS and deposited translation, and the owner coordinate/length
+    claim matches. Protein existence is 1: Evidence at protein level. Function, reaction,
+    cofactor, subunit and reference annotations were inspected at their stated evidential
+    scope.'
+  snapshot_sha256: 56a2bcdb7ebdbb9e77094c3f594c94954d537d81a0368162b33975a28cc43271
+- evidence_id: P050-P0DY49
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/P0DY49.json
+  locator: /private/tmp/npm-review-work/050/identity/uniprot-P0DY49.json
+  accessed_at: '2026-10-21T11:18:39.253252Z'
+  support: supports
+  summary: 'Current reviewed UniProt P0DY49, sbzM, version 3/sequence version 1: 228
+    aa, EMBL LC420052 protein BBG06562.1, native CDS complement(14000..14686). Complete
+    sequence matches the CDS and deposited translation, and the owner coordinate/length
+    claim matches. Protein existence is 1: Evidence at protein level. Function, reaction,
+    cofactor, subunit and reference annotations were inspected at their stated evidential
+    scope.'
+  snapshot_sha256: 15465437bdfa5e728cf3c105fcfd1cd4afb9e7ae53790b51e5e0f95123c4e4f4
+- evidence_id: P050-P0DY50
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/P0DY50.json
+  locator: /private/tmp/npm-review-work/050/identity/uniprot-P0DY50.json
+  accessed_at: '2026-10-21T11:18:39.309529Z'
+  support: supports
+  summary: 'Current reviewed UniProt P0DY50, sbzN, version 3/sequence version 1: 385
+    aa, EMBL LC420052 protein BBG06563.1, native CDS complement(14704..15861). Complete
+    sequence matches the CDS and deposited translation, and the owner coordinate/length
+    claim matches. Protein existence is 4: Predicted. Function, reaction, cofactor,
+    subunit and reference annotations were inspected at their stated evidential scope.'
+  snapshot_sha256: 0fc9f99a7641b7fb4573128e6528f1c9c99fd1bdcb03d414303a3861c0ab40e7
+- evidence_id: P050-P0DY51
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/P0DY51.json
+  locator: /private/tmp/npm-review-work/050/identity/uniprot-P0DY51.json
+  accessed_at: '2026-10-21T11:18:39.388650Z'
+  support: supports
+  summary: 'Current reviewed UniProt P0DY51, sbzO, version 3/sequence version 1: 268
+    aa, EMBL LC420052 protein BBG06564.1, native CDS complement(15858..16664). Complete
+    sequence matches the CDS and deposited translation, and the owner coordinate/length
+    claim matches. Protein existence is 3: Inferred from homology. Function, reaction,
+    cofactor, subunit and reference annotations were inspected at their stated evidential
+    scope.'
+  snapshot_sha256: 867dd0fba74dbf56c01f131917158cb8bdd81fc7194ca8a15d0e14604eef2570
+- evidence_id: P050-P0DY52
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/P0DY52.json
+  locator: /private/tmp/npm-review-work/050/identity/uniprot-P0DY52.json
+  accessed_at: '2026-10-21T11:18:39.411051Z'
+  support: supports
+  summary: 'Current reviewed UniProt P0DY52, sbzP, version 3/sequence version 1: 523
+    aa, EMBL LC420052 protein BBG06565.1, native CDS complement(16668..18239). Complete
+    sequence matches the CDS and deposited translation, and the owner coordinate/length
+    claim matches. Protein existence is 1: Evidence at protein level. Function, reaction,
+    cofactor, subunit and reference annotations were inspected at their stated evidential
+    scope.'
+  snapshot_sha256: c9fb1eae814cc32c5c65bdb2348ab6d03a39a54437df4d4c8c8bef6a3c50670c
+- evidence_id: P050-P0DY53
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/P0DY53.json
+  locator: /private/tmp/npm-review-work/050/identity/uniprot-P0DY53.json
+  accessed_at: '2026-10-21T11:18:40.319510Z'
+  support: supports
+  summary: 'Current reviewed UniProt P0DY53, sbzQ, version 3/sequence version 1: 304
+    aa, EMBL LC420052 protein BBG06566.1, native CDS complement(18324..19238). Complete
+    sequence matches the CDS and deposited translation, and the owner coordinate/length
+    claim matches. Protein existence is 1: Evidence at protein level. Function, reaction,
+    cofactor, subunit and reference annotations were inspected at their stated evidential
+    scope.'
+  snapshot_sha256: 293fea23ddfabed40fc8bd61f9b806a74a991e4717c36536f6639024030290bf
+- evidence_id: P050-AUDIT
+  kind: validation
+  reference: /private/tmp/npm-review-work/050/protein-reaction-audit.py
+  locator: /private/tmp/npm-review-work/050/protein-reaction-audit.json
+  accessed_at: '2026-10-21T11:23:43.489559Z'
+  support: supports
+  summary: Actual independent audit exited 0. All 35 original input pins, all 18 deposited
+    CDS translations, 13 selected complete sequence/ID/coordinate mappings and all
+    13 quoted UniProt snippets matched. The output retains individual sequence hashes,
+    starts/stops, ambiguous positions, current entry/protein-existence status and
+    complete function/reaction annotation crosswalks.
+  snapshot_sha256: 55c2f6930f73859eba7710bcd787e608b008dc5ac76731b45c00bcbf654bdddf
+- evidence_id: P050-2024-CONSTRUCT-SCOPE
+  kind: primary_source
+  reference: DOI:10.1038/s41467-024-55265-z
+  locator: /private/tmp/npm-review-work/050/science/2024-primary.xml; selected introduction,
+    cloning, molecular-dynamics and enzyme-assay paragraphs (3, 54, 68, 81 in sectionwise
+    extraction)
+  accessed_at: '2026-10-21T11:20:20.627396Z'
+  support: supports
+  summary: Selected original paragraphs were read, not a duplicate full-paper audit.
+    The introduction cites the NCIMB 40513 cluster, while the cloning Methods name
+    S. sioyaensis SA-1758 gDNA, N-terminal His6 constructs and a GGGGS-linked SbzG–SbzI
+    fusion. The MD procedure uses residues 1–84/1–178 with linker removed and capped
+    termini; activity assays use modified fused proteins. These are construct-specific
+    statements and do not establish identity with unmodified NCIMB references or a
+    native stable complex.
+  snapshot_sha256: e34672cd62bc352d076b2ef69509758636cd02bd37fee6feca34c5fdb23ffd41
+- evidence_id: R050-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/altemicidin.yaml
+  locator: Entire owner, four inline graphs, open scientific discussion and all three
+    history events
+  accessed_at: '2026-10-21T11:24:13.139973Z'
+  support: supports
+  summary: The exact neutral altemicidin owner has four assigned centres, two historical
+    species occurrences, a generic Streptomyces producer/locus and thirteen reference
+    protein examples in four deliberately partial database-annotated graphs. Its discussion
+    explicitly preserves prior access and construct limits. No quantitative activity
+    or molecular target is asserted.
+  snapshot_sha256: 6dcfe5613855219175de58056b63b1e9444a7124ad8dba52b2bc7370e4fb2a03
+- evidence_id: R050-CHEM
+  kind: validation
+  reference: /private/tmp/npm-review-work/050/identity/chemical-comparison.json
+  locator: Five independently parsed full graphs
+  accessed_at: '2026-10-21T11:24:14.740483Z'
+  support: supports
+  summary: Owner, current MIBiG, PubChem CID11036174, ChEBI JSON and official MOL
+    agree on full key VZRFZUPFQKSXPV-VPFIQFBESA-N, fixed-H identity, neutral C13H20N4O7S
+    and four assigned centres. The graph denotes neutral parent; it does not claim
+    that this is the only solution protonation state.
+  snapshot_sha256: 78f06ec1db0fb2bc831e98b560ae7812f8ee0bdd33dd968962acfaca032afb54
+- evidence_id: R050-PUBCHEM
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/11036174/property/InChI,InChIKey,IsomericSMILES,MolecularFormula/JSON
+  locator: Complete relevant chemical identity, source metadata and taxon fields
+  accessed_at: '2026-10-21T11:18:38.164064Z'
+  support: supports
+  summary: CID11036174 resolves exactly with the same stereochemical SMILES, full
+    Standard InChI/key and formula.
+  snapshot_sha256: 66b62453d0e02555c0ad3e8301f9ccfc2adf1e4d7c7b3d2870466d9665cab29d
+- evidence_id: R050-CHEBI
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/227005/
+  locator: Complete relevant chemical identity, source metadata and taxon fields
+  accessed_at: '2026-10-21T11:20:39.187133Z'
+  support: supports
+  summary: Released CHEBI227005 is two-star and matches the neutral parent; CHEBI232089
+    is explicitly its conjugate-base relation, not an interchangeable exact neutral
+    grounding. The source-origin assertion is genus-level Streptomyces1883 and PMID2584138.
+    Current graph agreement does not itself re-prove the original absolute assignment.
+  snapshot_sha256: 2a27deff4f5773afab7951bf8a2373791bb3c968dc4a9f70ae25e59e53310087
+- evidence_id: R050-MOL
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/227005/
+  locator: Complete official MOL parsed independently
+  accessed_at: '2026-10-21T11:20:39.765993Z'
+  support: supports
+  summary: The official MOL independently retains all four centres and the same neutral
+    fixed-H form.
+  snapshot_sha256: 50e5bb19d9dc5f7b431756e2d51b252f8b54a54805f488b84269e47c5eeb7685
+- evidence_id: R050-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001925.4/annotations.json
+  locator: Complete relevant chemical identity, source metadata and taxon fields
+  accessed_at: '2026-10-21T11:18:37.733738Z'
+  support: supports
+  summary: Active BGC0001925 version4 compound1 is exact altemicidin; compounds2/3
+    are distinct SB-203207/SB-203208 entries without supplied structures. The source
+    has Streptomyces sp.1931, LC420052.1, empty bounds/methods and PMID30643149. Quality
+    questionable/completeness unknown are source flags. Current genes annotate sixteen
+    entries, including szbE/szbF spelling; the direct sequence/protein crosswalk is
+    independently audited.
+  snapshot_sha256: e48e5d625bcdacaa6a7dc3a7e9e00f307cbc1908e93ae73ebabd7251a4a5a7ad
+- evidence_id: R050-TAXON-1931
+  kind: authority
+  reference: https://rest.uniprot.org/taxonomy/1931.json
+  locator: Complete taxonomy record, lineage, other names and listed strains
+  accessed_at: '2026-10-21T11:20:39.768237Z'
+  support: supports
+  summary: Current UniProt taxonomy resolves NCBI1931 to the generic Streptomyces
+    sp. node beneath unclassified Streptomyces. Its stored species rank does not identify
+    a named species or establish NCIMB40513 equivalence to S. sioyaensis/SA1758. The
+    native strain is supplied by locus/primary provenance, not this generic taxon
+    label.
+  snapshot_sha256: ab3fe994a5ede1c58b1d13850ed57d59d417401a750ebd0e837bcbec97b56e56
+- evidence_id: R050-TAXON-67364
+  kind: authority
+  reference: https://rest.uniprot.org/taxonomy/67364.json
+  locator: Complete taxonomy record and names/lineage
+  accessed_at: '2026-10-21T11:20:39.783874Z'
+  support: supports
+  summary: Current UniProt taxonomy resolves NCBI67364 to species Streptomyces sioyaensis
+    beneath genus1883, with historical spelling/type-material names. It is distinct
+    from the generic1931 concept. This resolves the original occurrence label without
+    merging source stocks.
+  snapshot_sha256: 7db632fee4f41fcaa6ab85507bed87fa7353c0b23ae842bef2ee0b3dd62e695e
+- evidence_id: R050-TAXON-ACCESS
+  kind: search
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1931,67364&retmode=xml
+  locator: Retained NCBI efetch429response
+  accessed_at: '2026-10-21T11:18:37.679315Z'
+  support: context_only
+  summary: The initial NCBI taxonomy request was rate-limited. Current UniProt taxonomy
+    records were then inspected as a separate public authority route; the failed XML
+    is not treated as biological data.
+  snapshot_sha256: 01ec4cdfa0073304c3db8986e458b8be2ba034ee6b4bdb07218fd6f2e2a7fa8c
+  search_scope: One exact two-ID NCBI request followed by successful independent UniProt
+    taxonomy endpoints; no inference of missing taxa.
+- evidence_id: R050-WIKI
+  kind: database
+  reference: https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q26292650&props=labels%7Cclaims&languages=en&format=json
+  locator: Complete relevant chemical identity, source metadata and taxon fields
+  accessed_at: '2026-10-21T11:18:37.846607Z'
+  support: supports
+  summary: Q26292650 explicitly maps S. sioyaensis to NCBI67364. It does not supply
+    a chemical graph or bridge NCIMB40513 to SA1758.
+  snapshot_sha256: 6ec1ea9f186e508b896bd7843a019179eb0460db36a73858d6cb1dca1d02ccb5
+- evidence_id: R050-RAW
+  kind: record_content
+  reference: data/raw/chebi_structures.tsv
+  locator: Complete exact-key eligible inventory and parsed local source projection
+  accessed_at: '2026-10-21T11:24:13.139973Z'
+  support: supports
+  summary: No exact eligible three-star ChEBI row occurs in the complete pinned inventory.
+    The minted identifier therefore remains appropriate. The old NPClassifier row
+    is explicitly versioned Alkaloids/Peptide alkaloids/Simple amide alkaloids and
+    non-glycoside; this prediction is not evidence for an individual pathway enzyme.
+  snapshot_sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+- evidence_id: R050-IMODULON
+  kind: database
+  reference: https://imodulondb.org/
+  locator: Complete retained28-dataset catalogue
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: No matching NCIMB40513 or SA1758 organism/strain dataset occurs in the
+    complete retained catalogue. An unrelated bacterial dataset cannot supply a native
+    expression claim.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+- evidence_id: W050-LOTUS-CONCEPT
+  kind: database
+  reference: https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q76416503&props=labels%7Cclaims&languages=en&format=json
+  locator: Q76416503 labels and P2017/P234/P235/P233
+  accessed_at: '2026-10-21T11:26:42.705706Z'
+  support: supports
+  summary: The exact chemical entity in both raw LOTUS triples resolves to altemicidin
+    with full owner key VZRFZUPFQKSXPV-VPFIQFBESA-N. Its P2017 graph retains all four
+    centres; P233 is stereounspecified and is not used as the exact representation.
+  snapshot_sha256: c26b1dbfb2afde1a358c37c35158f6a4758131b714ea7f77e34dc6558da1af85
+- evidence_id: W050-COMPARE
+  kind: validation
+  reference: /private/tmp/npm-review-work/050/identity/lotus-chemical-concept-comparison.json
+  locator: Independent graph comparison to the previously checked neutral owner
+  accessed_at: '2026-10-21T11:27:20.861840Z'
+  support: supports
+  summary: The actual parsed P2017 graph matches both owner Standard and fixed-H identity.
+    This is a sixth independent stored representation beyond the five in the parent
+    authority comparison.
+  snapshot_sha256: 3ffbe63435adebc3511b2ba19ed32357c4ef0b4e4436c594eb1c169bdb44be3f
+assessments:
+- assessment_id: S050-A-IDENTITY
+  area: identity
+  topic: Exact parent and natural-origin scope
+  outcome: supported
+  summary: The original papers support the named neutral altemicidin parent with four
+    defined centres and a derivative-based absolute assignment. The engineered culture’s
+    same-product claim is supported by NMR/HRMS and authentic comparisons, with the
+    rotation discrepancy retained. Chemical identifier/graph calculations are supplied
+    in the separate identifier packet.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - S050-1989-ISOLATION
+  - S050-1989-STRUCTURE
+  - S050-2019-HETERO
+  - S050-ROTATION-LIMIT
+- assessment_id: S050-A-OCCURRENCES
+  area: evidence
+  topic: Paired 1989 LOTUS citations
+  outcome: supported
+  summary: 'Both distinct papers describe the same S. sioyaensis SA-1758 material:
+    the first isolates it and the second establishes structure. Both stored species
+    occurrences are supported, although they are not independent biological discoveries.
+    No taxon swap to the cloned-locus donor is justified.'
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - S050-OWNER
+  - S050-1989-ISOLATION
+  - S050-1989-STRUCTURE
+- assessment_id: S050-A-LOCUS
+  area: evidence
+  topic: Demonstrated locus versus source-asserted native production
+  outcome: concern
+  summary: 'The locus should carry Heterologous expression and Enzymatic assays with
+    CLUSTER_DEMONSTRATED. Leave the native producer SOURCE_ASSERTION: the 2019 production,
+    genetic deletions and isotope feeding occurred in TK21 constructs, while the direct
+    final recoupling used purified enzymes. The paper describes the donor lineage
+    but does not turn these into native knockout evidence.'
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - S050-RAW
+  - S050-2019-HETERO
+  - S050-2019-COUPLING
+  - S050-2019-GENETIC
+  - S050-CONSUMERS
+- assessment_id: S050-A-STRAIN
+  area: scope
+  topic: NCIMB40513 qualification and distinct SA-1758 lineage
+  outcome: concern
+  summary: The owner’s curated graph labels already identify NCIMB40513, but its structured
+    producer omits the available strain. Attach that literal qualifier with a guarded
+    maintained decision; retain generic Streptomyces taxon and SOURCE_ASSERTION. Historical
+    SA-1758, TK21 expression host and 2024 donor wording are distinct contexts.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - S050-OWNER
+  - S050-2019-HETERO
+  - S050-2019-GENETIC
+  - S050-2024-CARRIER
+  - S050-CONSUMERS
+- assessment_id: S050-A-GRAPH-EARLY
+  area: evidence
+  topic: P/Q and M/J/L/G/K/I annotated graph boundaries
+  outcome: supported
+  summary: The qualified substrate/product predicates are compatible with primary
+    endpoints. Dinucleotide early intermediates are not confused with the late hydrolysis
+    core used in 2019. G and K loading is shown in vitro; neither proves native redundancy.
+    Omitting the probable K-to-I edge is conservative within adopted UniProt scope
+    and is not a completeness defect.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - S050-OWNER
+  - S050-2019-COUPLING
+  - S050-2019-SULFAMOYL
+  - S050-2019-SI
+  - S050-2021-PQ
+  - S050-2021-I
+- assessment_id: S050-A-GRAPH-LATE
+  area: evidence
+  topic: F/E and unassigned H/N/O participation
+  outcome: supported
+  summary: The SI provides late conversion endpoints and NMR-characterized demethyl
+    compound12, while 11 is explicitly a proposed unstable structure without NMR.
+    The separate H/N/O participation graph correctly avoids a fixed catalytic sequence/complex
+    and does not fill the missing connection. No new balanced protonation-specific
+    equation or exact F420 chain length is inferred.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - S050-OWNER
+  - S050-2021-HNO-FE
+  - S050-2021-CONTEXT
+- assessment_id: S050-A-FOLLOWUP
+  area: completeness
+  topic: Historical access discussion and new source availability
+  outcome: supported
+  summary: The 2026-10-11 failed access notes remain accurate historical receipts.
+    This review obtains 2019 full primary/SI, 2021 official SI and 2024 full primary/SI,
+    so a later curator can append a dated follow-up documenting resolved access and
+    continuing limits. These new reads do not retroactively convert stored DATABASE_ASSERTION
+    edges to primary experiments or settle the 2024 donor discrepancy.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - S050-OWNER
+  - S050-2019-HETERO
+  - S050-2021-ACCESS
+  - S050-2024-CARRIER
+  - S050-2024-SI
+- assessment_id: S050-A-OPTIONAL
+  area: completeness
+  topic: No automatic optional expansion
+  outcome: supported
+  summary: No missing optional bioactivity/target, more intermediates or detailed
+    mechanistic pathway is reported as a defect. The original activity assays and
+    later congener decorations do not require target inference. NPClassifier labels
+    are computational and do not establish the old monoterpene biosynthetic hypothesis.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - S050-OWNER
+  - S050-1989-ACTIVITY
+  - S050-2019-SULFAMOYL
+  - S050-2021-PQ
+- assessment_id: P050-A-SEQUENCES
+  area: grounding
+  topic: Thirteen exact native protein references
+  outcome: supported
+  summary: The SbzE–Q native references all map to current LC420052.1/NCIMB 40513.
+    Every selected protein is a complete, ambiguity-free CDS and has matching EMBL
+    protein ID and full UniProt sequence; coordinates and lengths in the owner match
+    independently. This supports molecular grounding, without assigning the exact
+    sequence of a tagged, truncated, fused, mutated or differently sourced experimental
+    construct.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - P050-GENBANK
+  - P050-AUDIT
+  dimensions:
+  - name: sequence_scope
+    value: 13 exact current native references
+    definition: Complete CDS-aware translations with independent submitted-translation/UniProt
+      comparisons; laboratory-stock and engineered-construct equivalence excluded.
+    evidence_ids:
+    - P050-GENBANK
+    - P050-AUDIT
+- assessment_id: P050-A-STATUS
+  area: evidence
+  topic: Reviewed status versus protein existence
+  outcome: supported
+  summary: 'All 13 entries are reviewed Swiss-Prot version 3/sequence version 1. Reviewed
+    status is not equivalent to direct protein evidence: SbzH/K/O have existence level
+    3 (homology), SbzN level 4 (predicted), and the remaining nine level 1. The owner
+    correctly uses native reference and database-annotation wording rather than claiming
+    every protein was independently observed in the native organism.'
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - P050-AUDIT
+  - P050-P0DY37
+  - P050-P0DY47
+  - P050-P0DY50
+  - P050-P0DY51
+- assessment_id: P050-A-EARLY
+  area: graph
+  topic: SbzP/Q early scaffold annotations and cofactors
+  outcome: supported
+  summary: SbzP uses NAD as a chemical substrate with SAM, not merely a redox cofactor.
+    Current UniProt annotates PLP as its cofactor and methylthioadenosine/protons
+    as byproducts. SbzQ hydroxylation uses oxygen and 2-oxoglutarate and yields succinate/CO2.
+    The graph explicitly omits cofactors/byproducts and is not a balanced reaction;
+    its intermediate numbering follows UniProt. No new exact intermediate structure
+    or molecular formula is asserted.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - P050-OWNER
+  - P050-P0DY52
+  - P050-P0DY53
+- assessment_id: P050-A-SULFAMOYL
+  area: graph
+  topic: SbzM/J/L sulfamoyl precursor and carrier loading
+  outcome: supported
+  summary: SbzM annotation describes net L-cysteine oxidation/decarboxylation/rearrangement
+    to sulfamoyl aldehyde; the owner does not newly establish every transient step
+    or select one metal from the current Fe/Ni annotation. SbzJ oxidizes the aldehyde
+    with NAD and water. SbzL performs ATP-dependent acyl loading of holo carriers,
+    with AMP/diphosphate byproducts. The owner appropriately distinguishes the unmodified
+    native G/K sequences from their Ppant-bearing and acylated states.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - P050-OWNER
+  - P050-P0DY49
+  - P050-P0DY46
+  - P050-P0DY48
+  - P050-P0DY36
+  - P050-P0DY47
+- assessment_id: P050-A-HANDOFF
+  area: graph
+  topic: SbzG/K donor use, SbzI and complex scope
+  outcome: supported
+  summary: Current annotations support SbzL loading onto both G and K in vitro. SbzI
+    accepts G, while its K donor use is worded as probable. The graph includes the
+    G-to-I handoff and explicitly omits the probable K-to-I edge. SbzI is linked to
+    the annotation-defined intermediate 2-to-3 transfer, not directly to final altemicidin
+    in that early scheme. Weak carrier–enzyme interaction and a fusion crystal construct
+    are not promoted to a naturally stable complex or native carrier interchangeability.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - P050-OWNER
+  - P050-P0DY36
+  - P050-P0DY45
+  - P050-P0DY47
+  - P050-P0DY48
+  - P050-2024-CONSTRUCT-SCOPE
+- assessment_id: P050-A-LATE
+  area: graph
+  topic: Late F420 reduction and methylation
+  outcome: supported
+  summary: SbzF annotates reduction of didehydrodemethylaltemicidin with reduced coenzyme
+    F420 carrying a variable gamma-glutamate chain. SbzE methylates demethylaltemicidin
+    with SAM to the altemicidin scaffold. The owner deliberately avoids a fixed F420
+    chain length, balanced protonation-specific reaction, or unsupported connection
+    from intermediate 3 to the late substrate. It does not substitute later SB-203207/208
+    congener decoration for altemicidin formation.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - P050-OWNER
+  - P050-P0DY35
+  - P050-P0DY34
+- assessment_id: P050-A-HNO
+  area: graph
+  topic: SbzH/N/O participation and omitted genomic neighbors
+  outcome: supported
+  summary: Current H/N/O entries annotate participation in altemicidin biosynthesis
+    but do not independently specify their individual reactions here. The graph uses
+    protein/process nodes and asserts neither fixed order nor a complex. The audit
+    also confirms two ambiguous residues in excluded SbzA (positions 882 and 927);
+    genomic SbzD/R and downstream-congener A/B/C are not assigned new altemicidin
+    roles merely from neighborhood.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - P050-OWNER
+  - P050-P0DY37
+  - P050-P0DY50
+  - P050-P0DY51
+  - P050-GENBANK
+  - P050-AUDIT
+- assessment_id: P050-A-CONSTRUCTS
+  area: provenance
+  topic: Published stock names and engineered constructs
+  outcome: supported
+  summary: 'The owner explicitly disclaims construct equivalence. That distinction
+    is necessary: selected 2024 Methods name SA-1758, whereas the introduction discusses
+    the previously identified NCIMB 40513 cluster. His6 tags, the GGGGS fusion, residue-limited/capped
+    MD models and fused-protein activity assays remain experimental constructs. The
+    current native sequence crosswalk does not resolve this published source-strain
+    boundary or equate taxon 1931 with S. sioyaensis.'
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - P050-OWNER
+  - P050-GENBANK
+  - P050-2024-CONSTRUCT-SCOPE
+- assessment_id: R050-A-ID
+  area: identity
+  topic: Exact neutral chemical representation
+  outcome: supported
+  summary: Five full graphs agree on constitution, four assigned centres, standard
+    key and fixed-H identity. Original experimental stereochemical support and the
+    historical optical-rotation discrepancy are assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - R050-CHEM
+  - R050-PUBCHEM
+  - R050-CHEBI
+  - R050-MOL
+- assessment_id: R050-A-GROUND
+  area: grounding
+  topic: Parent xref and minted identifier
+  outcome: supported
+  summary: PubChem resolves exactly. Current ChEBI is two-star, and its conjugate
+    base is a separate chemical form. No eligible exact three-star inventory entry
+    supports grounding promotion.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - R050-PUBCHEM
+  - R050-CHEBI
+  - R050-RAW
+- assessment_id: R050-A-TAX
+  area: scope
+  topic: Generic source taxon and historical occurrence species
+  outcome: supported
+  summary: Both concepts resolve, but genus membership and a generic species-rank
+    node do not equate the two experimental stocks. Primary/locus evidence must qualify
+    NCIMB40513 without silently replacing its deposited taxon.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - R050-TAXON-1931
+  - R050-TAXON-67364
+  - R050-WIKI
+  - R050-MIBIG
+- assessment_id: R050-A-HISTORY
+  area: provenance
+  topic: Partial annotation graph, discussion and audit trail
+  outcome: supported
+  summary: The owner already distinguishes annotation from primary experiment and
+    native reference from experimental construct. Newly recovered papers can be added
+    as dated evidence without rewriting the earlier access observations as though
+    they never occurred. All three native history events and SEEDED status remain
+    unchanged.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - R050-OWNER
+- assessment_id: R050-A-CLASS
+  area: consistency
+  topic: Versioned computational classification
+  outcome: supported
+  summary: The predicted alkaloid/amide labels and MIBiG OTHER class are source-attributed
+    classifications; they do not contradict the explicitly qualified proposed mechanism
+    merely because their descriptive granularity differs.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - R050-RAW
+  - R050-MIBIG
+  - R050-OWNER
+- assessment_id: W050-A-CONCEPT
+  area: grounding
+  topic: Exact LOTUS chemical source concept
+  outcome: supported
+  summary: Both occurrence source triples identify the same complete chemical graph,
+    independently of their organism concepts and publication interpretation.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  evidence_ids:
+  - W050-LOTUS-CONCEPT
+  - W050-COMPARE
+findings:
+- finding_id: S050-F-METHODS
+  issue_key: mibig-bgc0001925-compound1-missing-heterologous-enzymatic-methods
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Represent the demonstrated altemicidin locus methods
+  description: The cited 2019 original study directly identifies altemicidin from
+    TK21 carrying cloned sbzD–R and from purified-enzyme final coupling, yet the imported
+    blank method field leaves its locus CLUSTER_UNSTATED. The generator reproduces
+    that source gap faithfully. Add only the supported non-native methods; the native
+    producer remains SOURCE_ASSERTION. The heterologous deletion experiment must not
+    be mapped to the native Knock-out studies grade.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  field_paths:
+  - biosynthetic_gene_clusters[0].link_evidence_basis
+  - biosynthetic_gene_clusters[0].locus_evidence_methods
+  - producer_organisms[0].notes
+  evidence_ids:
+  - S050-RAW
+  - S050-2019-HETERO
+  - S050-2019-COUPLING
+  - S050-2019-GENETIC
+  - S050-CONSUMERS
+  - S050-OVERLAY-SEARCH
+  rule_id: 'review-checklist: claim-specific exact-product locus methods'
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Consumed locus method correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Paired complete raw-row SHA guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Existing guarded citation consumer
+  - repository: CultureBotAI/NaturalProductMech
+    path: conf/producer_evidence.tsv
+    role: Locus-versus-native grade semantics
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Deterministic regeneration
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/altemicidin.yaml
+    role: Curator-owned dated discussion follow-up only
+- finding_id: S050-F-STRAIN
+  issue_key: mibig-bgc0001925-compound1-missing-ncimb40513-strain
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Retain the native donor strain on the structured producer
+  description: The source paper specifies Streptomyces sp. NCIMB40513 and the curated
+    graphs already name it, but the generated producer contains only generic Streptomyces
+    sp. A guarded strain qualifier preserves the documented source context without
+    changing the taxon or claiming native genetic demonstration.
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  field_paths:
+  - producer_organisms[0].strain
+  evidence_ids:
+  - S050-OWNER
+  - S050-RAW
+  - S050-2019-HETERO
+  - S050-CONSUMERS
+  rule_id: 'review-checklist: organism and strain evidence scope'
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Consumed source-pinned native donor strain qualifier
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Complete raw-row drift guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Deterministic strain emission
+actions:
+- action_id: S050-ACTION-METHODS
+  description: Add a REPLACE method override for naturalproductmech:mibig-a58ee03ee4,
+    BGC0001925:1, containing Heterologous expression|Enzymatic assays. Pair it with
+    a curation/mibig_claim_references.tsv decision retaining PMID:30643149 in producer_reference,
+    locus_reference and source_reference and pinning expected_source_row_sha256 3976156f4414003237f39d5952f5d1c492d33ebb35ae1e0109bc163aec977088,
+    or implement an equivalent tested REPLACE guard. Expected_* values alone are not
+    enforced for REPLACE. Cite the exact TK21 and final-recoupling evidence, and append
+    a dated curator discussion follow-up documenting newly inspected primary sources
+    while preserving historical access receipts and annotation evidence types.
+  finding_ids:
+  - S050-F-METHODS
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Consumed locus method correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Paired complete raw-row SHA guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Existing guarded citation consumer
+  - repository: CultureBotAI/NaturalProductMech
+    path: conf/producer_evidence.tsv
+    role: Locus-versus-native grade semantics
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Deterministic regeneration
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/altemicidin.yaml
+    role: Curator-owned dated discussion follow-up only
+  generator: scripts/seed_from_sources.py
+  acceptance_checks:
+  - The method decision rejects any complete raw BGC0001925:1 drift, including version4,
+    taxon1931, LC420052.1, blank bounds/methods, exact full key and PMID30643149/ENTRY
+    reference context.
+  - The locus becomes CLUSTER_DEMONSTRATED; the native producer stays SOURCE_ASSERTION.
+    Do not add native Knock-out studies, genetic complementation or native isotope-feeding
+    grades from TK21 experiments.
+  - Preserve exact structure, owner identifier, two 1989 occurrence citations, source
+    concept, native sequence references and current database-annotated graph predicates.
+    Do not merge NCIMB40513, SA-1758 or TK21.
+  - A dated discussion addendum records 2019/2024 full access and 2021 SI access,
+    the unavailable 2021 main/Extended Data, source numbering and donor discrepancies,
+    and continuing H/N/O/construct limitations. Do not retroactively replace old retrieval
+    receipts or automatically upgrade graph evidence.
+  - Test the paired-overlay composition and source drift failure, inspect the exact
+    target diff and run later authorized strict, seed-reproduction and repository
+    QC checks.
+- action_id: S050-ACTION-STRAIN
+  description: Add a curation/mibig_producer_strains.tsv row for BGC0001925:1, strain
+    NCIMB 40513, reference PMID:30643149, curator/date/rationale, and expected_source_row_sha256
+    3976156f4414003237f39d5952f5d1c492d33ebb35ae1e0109bc163aec977088. The implemented
+    consumer already guards the whole raw row and preserves taxon/grade; compose this
+    with the independently guarded method correction.
+  finding_ids:
+  - S050-F-STRAIN
+  target_ids:
+  - naturalproductmech:mibig-a58ee03ee4
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Consumed source-pinned native donor strain qualifier
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Complete raw-row drift guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Deterministic strain emission
+  generator: scripts/seed_from_sources.py
+  acceptance_checks:
+  - Reject stale or ambiguous full-row context and verify the exact source ID/version/taxon/genome/full
+    key/reference before emission.
+  - Emit only the documented strain qualifier on the producer. Keep NCBITaxon:1931,
+    SOURCE_ASSERTION and blank deposited bounds; do not substitute SA-1758 or TK21.
+  - Verify combined method/strain overlay behavior and an isolated target diff without
+    generated hand edits or source inventory rewriting.
+limitations:
+- The full 2021 main article and Extended Data were not obtained. Its official SI
+  directly supports the existing bounded endpoint assertions; this packet does not
+  reconstruct complete experimental protocols or tag sequences. The unavailable protocol-expansion
+  check is non-required because no such claim is asserted by the owner.
+- The 2024 Methods names SA-1758 for SbzG/I cloning while its Introduction discusses
+  NCIMB40513. This unresolved source provenance discrepancy is preserved and prevents
+  equating those assay constructs to the native owner references solely from this
+  article.
+- The original 1989 −7.6 versus 2019 +7.5 optical-rotation reports differ in conditions
+  and sign. Neither a new enantiomer nor a silent typographic correction is inferred.
+  The original parent absolute assignment uses a chemically derived crystal.
+- The 2019 Methods reverses substrate labels 5/6 in the final-coupling paragraph.
+  The 2021 SI also has a Figure14 mutant/metabolite label discrepancy, and its unstable11
+  lacks NMR. Compound numbers are scoped to each publication, not globally joined.
+- Original source text, selected chromatograms, structures and derivative/X-ray account
+  were inspected; raw spectra, crystallographic intensities, molecular-dynamics trajectories
+  and complete fusion sequences were not independently reprocessed. Native 13-protein
+  identity/current annotations and current chemical/taxonomic authorities are assessed
+  separately.
+- No historical laboratory-stock sequence or complete tagged/fused/mutant experimental-construct
+  reconstruction was established. Current native protein identity is intentionally
+  narrower.
+- 'Independent new GenPept downloads were unnecessary: the current complete nucleotide
+  record provides each stable protein ID and deposited translation, and the full UniProt
+  sequence supplies the second sequence comparison. Historical statements that GenPept
+  was separately fetched are not relabeled as new downloads.'
+- Reaction equations and cofactor/chemical cross-references were inspected as current
+  UniProt annotations. No independent direct Rhea endpoint or new exact chemical-structure
+  grounding was performed in this protein packet.
+- Only the stated 2024 source paragraphs were read independently here; the separate
+  scientific packet owns the complete 2019/2021/2024 primary-paper assessment. Historical
+  access-failure discussion can retain its original date and be supplemented by the
+  newly accessed science without recasting annotation evidence as primary experiments.
+- Neutral-parent representation and conjugate-base relationships do not determine
+  solution protonation or binding species.
+- Current taxonomy provides concept resolution, not a genetic or stock equivalence
+  between NCIMB40513 and SA1758.
+- Current authority agreement is distinct from original absolute-configuration proof;
+  no conclusion is drawn here from the difference in historical optical rotations.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-005
