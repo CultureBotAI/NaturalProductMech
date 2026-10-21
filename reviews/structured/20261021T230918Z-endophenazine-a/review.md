@@ -1,0 +1,1728 @@
+# Scientific review of endophenazine A
+
+- Review: 20261021T230918Z-endophenazine-a
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T23:04:16.674259Z
+- Finished UTC: 2026-10-21T23:09:18.525870Z
+- Reviewer: Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Native endophenazine A isolation and its retained chemical graph are supported. The knockout experiments occur in introduced loci in Streptomyces coelicolor and do not justify the strongest native producer grade. Preserve the positive heterologous and purified PpzP evidence, including the distinction between its reduced product and subsequent chemical oxidation.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 199, batch 020, selected in path order from the fresh-main authoritative validated catalogue and the separately validated targets in earlier batch commits (publication tracked separately). At selection, 244 of 3116 current records had campaign coverage and 2872 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-383a92387c | data/natural_products/alkaloids/endophenazine-a.yaml | generated | endophenazine A |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-383a92387c | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-383a92387c | All 3116 corpus records are filed exactly where PATHS.tsv pins them. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-383a92387c | All 3116 records reproduce byte-for-byte from data/raw/. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-383a92387c | The canonical review-queue command completed with actual exit0 on the fresh main base; exact output, warnings and skips remain in the pinned transcript. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-383a92387c | Configured identifier-label validation exited zero: 13449 canonical matches, 646 synonym matches and 35 configured exceptions; 499 non-blocking warnings and 4750 no-adapter skips remain. |
+| Full repository quality gate on the fresh main baseline | passed | True | naturalproductmech:mibig-383a92387c | Full fresh-base quality command completed successfully:999 tests passed,4 skipped,2 warnings;3116 records passed closed schema validation and corpus reproduction, and generated pages were current. |
+| Complete owner and captured-source scope | passed | True | naturalproductmech:mibig-383a92387c | Successful official intake and a fresh root full-owner/read receipt precede this authoring. All six officially captured sets and the separately mechanically parsed seventh PubChem set match. The seven raw sets were read by root at the declared scope. Target193 has seven emitted assays; their scientific interpretation and sole AID504832 classifier finding belong to the separate science section. Target192 has one no-assay sentinel and emits no assay. Inline graphs/pathways occur only at194 and199; no external graph component or molecular-target assertion is present. |
+| Native necessity applicability of the emitted producer grade | failed | True | naturalproductmech:mibig-383a92387c | The strongest native producer grade is derived from a method whose inspected knockout experiments occur in engineered S. coelicolor hosts. Retain positive natural isolation and demonstrated cloned-locus evidence. |
+| Existing reaction/sequence scope | passed | True | naturalproductmech:mibig-383a92387c | All existing reaction edges and the native protein example are supported with the explicit reduced-product, chemical-workup and tagged-construct boundaries. |
+| Original 2009 pixels and complete 2007 occurrence body | unavailable | False | naturalproductmech:mibig-383a92387c | The complete author-deposited2009 scientific transcription is inspected, but original figure pixels/PDF were not retained. The2007 occurrence is supported at original-abstract resolution. Neither limit is treated as a new negative experiment. |
+| Stored chemical representation and complete source row | passed | True | naturalproductmech:mibig-383a92387c | Fresh intake derivation agrees with the stored graph; the source selector, full row and prepared snapshot were independently rechecked. |
+| Exact original neutral final-product structure | passed | True | naturalproductmech:mibig-383a92387c | Independent original2002 compound2 constitution matches both Standard and fixed-H retained forms and literal PubChem/NPAtlas. CHEBI78312/78313 are valid distinct reduced anionic substrate/product nodes, not erroneous synonyms for the neutral oxidized endophenazine A endpoint. The owner already qualifies post-assay chemical oxidation. |
+
+## Scientific And Domain Assessments
+
+### Native status and complete audit history
+
+provenance: supported. Targets: naturalproductmech:mibig-383a92387c.
+
+All 4 retained events were read, with exact action sequence ['SEEDED_FROM_SOURCES', 'SEEDED_FROM_SOURCES', 'RECORD_CURATED', 'SEEDED_FROM_SOURCES']. Targets194/199 retain explicit mechanism-curation history alongside seeding; native status remains SEEDED. History records are not scientific-review passes or proof of the mechanism assertions.
+
+### Complete optional-assertion inventory
+
+completeness: supported. Targets: naturalproductmech:mibig-383a92387c.
+
+Present optional fields: biosynthetic_pathway, causal_graphs. Target191 definition/discussion, target193 seven assays/summary, and targets194/199 inline pathways/graphs are explicitly present and receive separate scientific assessment. No optional absence is a scientific defect by itself. This root inventory does not duplicate the193 classifier finding or certify the mechanism claims.
+
+### Exact-key computed classification provenance
+
+representation: supported. Targets: naturalproductmech:mibig-383a92387c.
+
+The exact-key NPClassifier projection and version npclassifier.gnps2.org@2026-09-07 reproduce the owner filing, superclass/class labels and glycoside value false. Computed labels are not independent precursor, mechanism or natural-origin evidence. Any accepted new identity requires reclassification for its effective key.
+
+### Literal organism identifier routing
+
+grounding: supported. Targets: naturalproductmech:mibig-383a92387c.
+
+All literal P225 names match; available P685 values match the raw source IDs. Q913896 explicitly lacks P685, so its NCBI synonym bridge is assessed independently. Current synonym routing does not establish chemical occurrence or experimental-unit support.
+
+### Taxonomic names versus experimental stocks
+
+provenance: supported. Targets: naturalproductmech:mibig-383a92387c.
+
+Literal NCBI1900 resolves to1961 Streptomyces virginiae, whose OtherNames include S. cinnamonensis. The record retains original source wording and merged-id provenance. NCBI1892 S. anulatus is a separate species; taxonomic routing does not equate experimental stocks or native and introduced-locus genetics.
+
+### Producer transcriptomic applicability
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-383a92387c.
+
+No exact native producer is represented in the full catalogue. Related organisms and experimental hosts do not establish the required construct/condition match. No gene/module inference or compound-production absence is asserted.
+
+### Native culture isolation versus arthropod association
+
+evidence: supported. Targets: naturalproductmech:mibig-383a92387c.
+
+Original2002 isolation supports exact A from S. anulatus 9663 and other named cultures, with 9663 separated from the low-aeration 9843 endophenazine D result. Arthropod isolation does not prove in-animal biosynthesis. All three S. anulatus occurrence citations are compatible; the original 2007 abstract separately reports A in S. cinnamonensis DSM 1042, without supplying a full-body isotope/protocol audit.
+
+### Heterologous knockout scope and native producer grade
+
+evidence: concern. Targets: naturalproductmech:mibig-383a92387c.
+
+Both 2009 ppzP inactivation and 2012 cluster deletions were performed on introduced loci in S. coelicolor. They support the cloned locus. Purified tagged PpzP and whole-cluster heterologous production remain positive. The imported Knock-out studies term nevertheless generates native BGC_CHARACTERIZED under the actual grading contract; this scope is not supported by those heterologous deletions.
+
+### All four nodes and three reaction edges
+
+graph: supported. Targets: naturalproductmech:mibig-383a92387c.
+
+The graph and pathway correctly distinguish chemically reduced 5,10-dihydrophenazine-1-carboxylate, PpzP, the reduced 9-dimethylallyl product, and oxidized A. DMAPP-dependent purified PpzP assays use reduced substrate; sodium persulfate is added before authentic-standard LCMS product assignment. The final oxidation is not an assigned enzyme step. RHEA:41580 covers prenylation only; oxidized PCA and GPP controls are not positive substrate equivalents.
+
+### Native PpzP versus the experimental tagged construct
+
+identity: supported. Targets: naturalproductmech:mibig-383a92387c.
+
+Current reviewed UniProt C4PWA1 and deposited CAX48655.1 exactly equal the independently translated 299 aa native ppzP CDS 1..900 in FN178498.1. The primary experiment uses N-terminal His8 pHis8-OS01 in E. coli BL21(DE3)pLysS. Native sequence equality does not claim that the full tagged expression construct is identical to the native chain.
+
+### Stored representation and source-concept provenance
+
+identity: supported. Targets: naturalproductmech:mibig-383a92387c.
+
+The complete source row BGC0001080:1 and source-concept hash reproduce this stored representation; this does not establish that the upstream compound label is correct. Formula, charge, Standard and fixed-H distinctions are independently recorded. Primary support and any conflicting exact xref are assessed separately.
+
+### Exact authority eligibility and source representation
+
+provenance: supported. Targets: naturalproductmech:mibig-383a92387c.
+
+No exact eligible row exists in the committed ChEBI projection for this owner. Current bounded name/key searches do not justify a different congener or a two-star grounding.
+
+### Exact literal chemical identifiers
+
+representation: supported. Targets: naturalproductmech:mibig-383a92387c.
+
+Literal source identifiers were compared exactly: [{"fixed_h_equal": true, "literal": "pubchem:10039975", "standard_equal": true}, {"fixed_h_equal": true, "literal": "npatlas:NPA015622", "returned_identifier": "NPA015622", "standard_equal": true}]. Standard/fixed-H details are representation-level observations, not independent experimental assignments.
+
+### Exact eligible ChEBI policy and serialization
+
+grounding: supported. Targets: naturalproductmech:mibig-383a92387c.
+
+Current exact candidates: [{"default_smiles_valid": true, "id": 218214, "mol_vs_retained": {"fixed_h_equal": true, "standard_equal": true}, "name": "Endophenazine A", "stars": 2}]. Only191 has a matching three-star entity. Named two-star alternatives are ineligible under the current projection; adjacent three-star chanoclavine is not elymoclavine. For197 the literal default JSON SMILES is invalid while MOL/InChI match; for200 default JSON SMILES, stated InChI and official MOL all preserve the same E constraint. Never copy an invalid or less-specific default string merely because another format agrees.
+
+### Reduced anions versus neutral oxidized endophenazine A
+
+representation: supported. Targets: naturalproductmech:mibig-383a92387c.
+
+Official three-star CHEBI78312 and78313 MOLs identify distinct reduced anionic substrate/product graphs. They are not supposed to have the neutral oxidized owner key. The owner already states chemical oxidation before final authentic-standard readout; protein/construct and enzyme endpoint evidence are separately evaluated in science.
+
+### Primary identity and chemical precision
+
+scope: supported. Targets: naturalproductmech:mibig-383a92387c.
+
+Independent original2002 compound2 constitution matches both Standard and fixed-H retained forms and literal PubChem/NPAtlas. CHEBI78312/78313 are valid distinct reduced anionic substrate/product nodes, not erroneous synonyms for the neutral oxidized endophenazine A endpoint. The owner already qualifies post-assay chemical oxidation.
+
+## Findings
+
+### S199-F-METHOD: Introduced-cluster knockouts overgrade the native endophenazine A producer
+
+major / open / confirmed; issue key: mibig-bgc0001080-compound1-heterologous-knockout-scope.
+
+The actual primary genetic manipulations establish introduced-cluster function in heterologous S. coelicolor, whereas the native S. anulatus 9663 origin rests on culture isolation. The record emits BGC_CHARACTERIZED because the imported knockout term is interpreted as native necessity. The positive purified enzyme and heterologous locus evidence should remain.
+
+## Recommended Actions And Acceptance Checks
+
+### S199-ACT-METHOD
+
+Use existing REPLACE for minted_identifier=naturalproductmech:mibig-383a92387c, source=MIBIG, source_id=BGC0001080, source_label=endophenazine A, locus_evidence_methods=Enzymatic assays&#124;Heterologous expression. Pair the legitimate claim-reference row source_id=BGC0001080:1, expected_source_row_sha256=90148db5161800fc94fc2a894f8c2b1bd3fdf798b73d853ff5fdc09c0afc149f with producer_reference=DOI:10.7164/antibiotics.55.794, locus_reference=DOI:10.1074/jbc.M901312200, source_reference=DOI:10.1074/jbc.M901312200 and nonempty curator/date/rationale. Its consumed complete-row digest guards the joint correction; REPLACE alone does not enforce such a digest. The rationale must preserve the later 2012 introduced-host context and explain the producer/locus distinction. This retains CLUSTER_DEMONSTRATED while making native producer SOURCE_ASSERTION. An optional separately grounded strain 9663 row can expose the native stock. Do not remove positive enzyme or heterologous evidence, describe a native knockout, change the taxon/chemical graph or invent a final oxidase. Claim-reference correction rejects a structure-correction marker; coordinate any simultaneous identity repair through a tested compatible route. Producer-only strain context is not falsely claimed to populate BGC notes.
+
+- Exact BGC0001080:1 version 5 and full original-rowSHA guard both consumed decisions before emission.
+- Native producer becomes SOURCE_ASSERTION while locus stays CLUSTER_DEMONSTRATED with the two supported method terms.
+- Producer isolation and locus enzymology have exact claim-local primary citations and explicit introduced-host context.
+- The existing four-node/three-edge reduced-product graph and native protein example are retained; no construct or chemical oxidation overclaim is introduced.
+- Raw source bytes, other congeners, taxa, occurrence citations and identity remain unchanged; canary/reproduction/full gates verify the generated correction.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| R199-OWNER | data/natural_products/alkaloids/endophenazine-a.yaml; Complete post-intake owner, optional assertions and all history events | supports | Root read the complete owner after successful official intake: 4 occurrence, 1 producer and 1 locus assertions. No referenced external component is present. Optional fields: biosynthetic_pathway, causal_graphs. |
+| R199-LOCAL | /private/tmp/npm-review-work/199/local-sources.json; Complete resolved owner and all six officially captured raw row sets | context_only | All six captured MIBiG, LOTUS, ChEBI structures/origins, CyanoMetDB and NPClassifier sets match the frozen preparation, including empty sets. The separate seventh PubChem inventory comparison is distinguished below. Source fidelity does not itself establish experimental support. |
+| R199-PUBCHEM-PREP | data/raw/pubchem_bioassay.tsv; Exact-key rows compared with the separate provisional seventh source set | context_only | The separate committed PubChem raw set contains 0 matching rows and reproduces the frozen preparation. The exact set is empty for eight targets, contains one no-assay sentinel for192, and contains seven observations for193 (six AIDs, including two distinct-SID504749 observations). This is not part of the official six-set intake and does not establish absence of bioactivity from the literature. |
+| R199-Q22286915 | https://www.wikidata.org/wiki/Q22286915; Exact retained25-entity projection: labels and complete P225/P685/P31 claim objects only; unrelated upstream claims not retained | context_only | Literal source P225/P685 values agree with the retained projection. Synonym routing is separate from experimental occurrence, chemical identity and stock applicability. |
+| R199-Q22287108 | https://www.wikidata.org/wiki/Q22287108; Exact retained25-entity projection: labels and complete P225/P685/P31 claim objects only; unrelated upstream claims not retained | context_only | Literal source P225/P685 values agree with the retained projection. Synonym routing is separate from experimental occurrence, chemical identity and stock applicability. |
+| R199-TAXON-CONTEXT | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;retmode=xml&amp;id=294,1883,1892,1900,1961,2063,4121,4577,5110,5111,5113,5599,40602,43178,45231,51584,55404,58346,89647,89650,89664,112277,139766,231710,380021,398502,684832,690845,995841,1038928,1485014,2490667,2607118; Exact relevant TaxId, ScientificName, Rank, ParentTaxId and OtherNames fields | context_only | Literal NCBI1900 resolves to1961 Streptomyces virginiae, whose OtherNames include S. cinnamonensis. The record retains original source wording and merged-id provenance. NCBI1892 S. anulatus is a separate species; taxonomic routing does not equate experimental stocks or native and introduced-locus genetics. |
+| R199-IMODULON | https://imodulondb.org/api/datasets; Complete 20-organism, 28-dataset official catalogue | context_only | The complete retained20-organism28-dataset catalogue establishes membership only. None of the exact imported native producers in these ten targets is represented. S.coelicolor and E.coli experimental hosts do not establish introduced-cluster or native-stock module applicability. The structured command was unavailable in the bounded inspected environment; the retained official API is the fallback. |
+| S199-E-LOCAL | /private/tmp/npm-review-work/199/local-sources.json; All present owner claims and all seven matching raw sets | context_only | Complete actual owner and six captured source sets; the seventh PubChem set is independently reconciled against the complete raw TSV. |
+| S199-E-RAW | data/raw/mibig_compounds.tsv; {"bgc_classes": "other", "bgc_subclasses": "phenazine", "cluster_link_evidence_basis": "CLUSTER_DEMONSTRATED", "compound_classes": "", "compound_index": "1", "compound_name": "endophenazine A", "database_ids": "npatlas:NPA015622&#124;pubchem:10039975", "entry_completeness": "complete", "entry_quality": "questionable", "entry_status": "active", "entry_version": "5", "genome_accession": "FN178498.1", "locus_evidence_methods": "Knock-out studies&#124;Enzymatic assays&#124;Heterologous expression", "locus_from": "", "locus_to": "", "mibig_accession": "BGC0001080", "primary_reference": "PMID:22509222", "producer_evidence_basis": "BGC_CHARACTERIZED", "reference_basis": "ENTRY", "smiles": "CC(C)=CCC1=CC=CC2=NC3=CC=CC(C(O)=O)=C3N=C12", "standard_inchi": "InChI=1S/C18H16N2O2/c1-11(2)9-10-12-5-3-7-14-16(12)20-17-13(18(21)22)6-4-8-15(17)19-14/h3-9H,10H2,1-2H3,(H,21,22)", "standard_inchi_key": "WLQXISHGKXGNFV-UHFFFAOYSA-N", "stereo_complete": "true", "taxon_id": "NCBITaxon:1892", "taxon_label": "Streptomyces anulatus"} | context_only | Immutable original source row source_id=BGC0001080:1, expected_source_row_sha256=90148db5161800fc94fc2a894f8c2b1bd3fdf798b73d853ff5fdc09c0afc149f. |
+| S199-E-SOURCE-SCOPE | /private/tmp/npm-review-work/shared-next-batch020/review-support/source-notes.json; All four source scopes | context_only | Frozen primary source content, exact read scopes, original access receipts and remaining gaps; not a new retrieval or broader primary read. |
+| S199-E-ACCESS | /private/tmp/npm-review-work/shared-next-batch020/review-support/input-manifest.json; All immutable source pins | context_only | Flat frozen source/consumer input pins; unsuccessful routes and capacity stops do not imply absence of scientific evidence. |
+| S199-E-CONSUMERS | scripts/seed_from_sources.py; Method loader and source-row preserving overlay emission | context_only | Existing method REPLACE changes grades but does not enforce a complete-row digest or expected-context fields. WITHDRAW has seven expected fields. Legitimate citation/strain overlays enforce a complete original-row digest. |
+| S199-E-CLAIM-ROUTE | src/naturalproductmech/curate/claim_references.py; Complete actual consumer | context_only | Exact claim-reference routing preserves database assertion type and appends curator rationale. It does not itself change evidence grades or taxa, and rejects a structure-correction marker. |
+| S199-E-STRAIN-ROUTE | src/naturalproductmech/curate/producer_strains.py; Complete actual consumer | context_only | A legitimate strain row enforces the complete source digest and adds producer-only context; it does not update BGC notes or prove species-wide experiments. |
+| S199-E-GRADING | conf/producer_evidence.tsv; Complete two-claim grading contract | context_only | Native knockout necessity grades producer and locus; heterologous expression and enzymatic assays grade the locus only. Empty methods faithfully mean SOURCE_ASSERTION and CLUSTER_UNSTATED. |
+| S199-E-ENDO02-I | DOI:10.7164/antibiotics.55.794; Complete seven-page scientific text, taxonomy, cultivation, isolation, results and table/caption text.; retained /private/tmp/npm-review-work/shared-next-batch020/review-support/public-003/endophen2002-I.pdf | partial | Complete seven-page scientific text, taxonomy, cultivation, isolation, results and table/caption text. Limit: Original assay-table pixels were not independently inspected; no new quantitative activity claim is proposed. Access timing: Actual original HTTP finished_at |
+| S199-E-ENDO02-II | DOI:10.7164/antibiotics.55.801; Complete six-page original scientific text; Figure 1 compound 2 original pixels viewed.; retained /private/tmp/npm-review-work/shared-next-batch020/review-support/public-003/endophen2002-II.pdf | partial | Complete six-page original scientific text; Figure 1 compound 2 original pixels viewed. Limit: No independent NMR data reprocessing. Access timing: Actual original HTTP finished_at |
+| S199-E-PPZ09 | DOI:10.1074/jbc.M901312200; Opened author-deposited full-manuscript transcription: complete scientific body, Methods, Results, Discussion, Table 1 and figure captions across retained ranges.; retained /private/tmp/npm-review-work/shared-next-batch020/science-authoring/ppz09-complete-retained-captures.json | partial | Opened author-deposited full-manuscript transcription: complete scientific body, Methods, Results, Discussion, Table 1 and figure captions across retained ranges. Limit: Original 2009 figure pixels and an independently archived PDF are unavailable; references tail was not required for the assay-scope read. Retained publisher/PMC/EuropePMC failures are not absence evidence. Access timing: Current local source-note consolidation/reinspection; original remote web access was not separately clocked and is not backdated. This derived wrapper was locally reinspected at 2026-10-21T22:00:58.269656Z; original remote access remains unclocked. This timestamp is not an HTTP retrieval. |
+| S199-E-PPZ12 | DOI:10.3762/bjoc.8.57; Complete original open main scientific body, Methods, tables and captions; retained /private/tmp/npm-review-work/shared-next-batch020/review-support/public-001/ppz2012-main.html | partial | The complete original 2012 main supports introduced-cluster genetics in S. coelicolor, not native 9663 knockout. Total Table 3 prenylated endophenazines are not an A-only yield. Official SI is separately bound. |
+| S199-E-ENDO07-OCC | DOI:10.1021/jo0703404; Opened original PubMed abstract positively reports S. cinnamonensis DSM 1042 and endophenazine A, with isotope feeding.; retained /private/tmp/npm-review-work/shared-next-batch020/review-support/web-memory-archive/source020web033.json | partial | Opened original PubMed abstract positively reports S. cinnamonensis DSM 1042 and endophenazine A, with isotope feeding. Limit: Complete original main remains unavailable; do not infer a full purified-enzyme assay or precise native locus from the abstract. Access timing: Current local source-note consolidation/reinspection; original remote web access was not separately clocked and is not backdated. |
+| S199-E-PPZ-NATIVE | GenBank:FN178498.1; GenBank source/header and complete ppzP CDS 1..900, protein_id CAX48655.1 and translation; retained /private/tmp/npm-review-work/shared-next-batch020/review-support/public-003/FN178498.1.gb | partial | The original FN178498.1 source identifies S. anulatus 9663 and ppzP CDS 1..900 with deposited 299 aa CAX48655.1 translation. This entry binds the GenBank record only; current UniProt and independent equality are separately evidenced. Native annotation does not reconstruct the complete historical His8 expression construct. |
+| S199-E-RHEA | RHEA:41580; Complete current exact reaction row and all four ChEBI participant identifiers.; retained /private/tmp/npm-review-work/shared-next-batch020/review-support/public-004/RHEA41580-exact.tsv | partial | Complete current exact reaction row and all four ChEBI participant identifiers. Limit: The first accession-style query returned only a header; the corrected exact query is positive. Oxidation is not included in RHEA41580. Access timing: Actual original HTTP finished_at |
+| S199-E-PPZ-UNIPROT | UniProtKB:C4PWA1; Complete current reviewed UniProt JSON, organism and 299 aa sequence; retained /private/tmp/npm-review-work/shared-next-batch020/review-support/public-003/uniprot-C4PWA1.json | supports | Current reviewed C4PWA1 identifies PpzP from S. anulatus 9663 and retains the 299 aa native sequence. This is current native annotation, not the full historical tagged construct. |
+| S199-E-PPZ-SEQUENCE-COMPARISON | Local FN178498.1 / CAX48655.1 / C4PWA1 sequence comparison; Complete raw DNA, deposited translation, current UniProt sequence, hashes and comparison method; retained /private/tmp/npm-review-work/shared-next-batch020/review-support/ppzp-native-sequence-comparison.json | supports | Independent standard-code translation of positive-strand native CDS 1..900, removing the terminal stop, exactly equals deposited CAX48655.1 and current C4PWA1 (299 aa). The computation time is local, not remote retrieval. The full His8 vector-derived junction/construct was not reconstructed. |
+| S199-E-PPZ12-SI | DOI:10.3762/bjoc.8.57; Complete eight-page official SI text; original physical page 2 chromatograms inspected; retained /private/tmp/npm-review-work/shared-next-batch020/review-support/public-001/ppz2012-si.pdf | supports | The official SI supplies the inspected supporting methods and chromatograms in the stated heterologous S. coelicolor context. The complete SI and main are distinct snapshots; no native genetic manipulation is inferred. |
+| C199-OWNER | data/natural_products/alkaloids/endophenazine-a.yaml; Complete owner and all seven matching source-row sets; no referenced components | supports | The complete owner denotes endophenazine A under naturalproductmech:mibig-383a92387c. All source selectors, versions and complete row digests are retained in COMPARISON: [{"row_sha256": "90148db5161800fc94fc2a894f8c2b1bd3fdf798b73d853ff5fdc09c0afc149f", "selector": "BGC0001080:1", "version": "5"}]. The official intake and prepared owner bytes agree. |
+| C199-GRAPH | /private/tmp/npm-review-work/199/chemistry.json; Fresh intake RDKit result and frozen Standard/fixed-H comparison | supports | The stored SMILES recomputes to WLQXISHGKXGNFV-UHFFFAOYSA-N, formula C18H16N2O2, formal charge 0; stored InChI/key agree. These are representation checks, not experimental identity proof. |
+| C199-COMPARISON | /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/retained-graph-comparison.json; Record 199; exact source rows and each graph comparison | supports | Exact Standard, fixed-H, formula, charge and stereo comparisons of the retained owner and complete raw rows; current authority responses and primary proof are separate evidence. |
+| C199-LOCAL-SEARCH | /private/tmp/npm-review-work/199/chemistry-search-receipt.json; Exact full key, label, slug and source selector in raw/owner/curation trees | supports | Ignored-inclusive bounded search preserves all matching paths; an absent curation decision does not imply a missing scientific source. |
+| C199-AUTHORITY-COMPARISON | /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/authority-phase-001-comparison.json; Complete literal Standard/fixed-H, formula, charge and stereo comparison; exact source payload pins retained | supports | Current authority graphs and source-specific serialization differences are independently compared. Database agreement is not primary natural-hand proof. |
+| C199-AUTHORITY-DETAIL | /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/authority-phases002-004-comparison.json; Complete literal Standard/fixed-H, formula, charge and stereo comparison; exact source payload pins retained | supports | Current authority graphs and source-specific serialization differences are independently compared. Database agreement is not primary natural-hand proof. |
+| C199-AUTH-1 | https://mibig.secondarymetabolites.org/repository/BGC0001080.5/annotations.json; Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/public-reads/BGC0001080.5.json | supports | Exact returned namespace/version and representation; scientific constraints remain in separate primary evidence. |
+| C199-AUTH-2 | https://www.ebi.ac.uk/chebi/backend/api/public/compound/78312/; Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/public-reads/CHEBI78312.json | supports | Exact returned namespace/version and representation; scientific constraints remain in separate primary evidence. |
+| C199-AUTH-3 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10039975/SDF?record_type=2d; Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/public-reads/pubchem-10039975.sdf | supports | Exact returned namespace/version and representation; scientific constraints remain in separate primary evidence. |
+| C199-AUTH-4 | https://www.ebi.ac.uk/chebi/backend/api/public/compound/78313/; Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase002-public/CHEBI78313.json | supports | Exact returned namespace/version and representation; scientific constraints remain in separate primary evidence. |
+| C199-AUTH-5 | https://www.ebi.ac.uk/chebi/backend/api/public/molfile/78313/; Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase002-public/CHEBI78313.mol | supports | Exact returned namespace/version and representation; scientific constraints remain in separate primary evidence. |
+| C199-AUTH-6 | https://www.npatlas.org/api/v1/compound/NPA015622; Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase002-public/NPA015622.json | supports | Exact returned namespace/version and representation; scientific constraints remain in separate primary evidence. |
+| C199-AUTH-7 | https://www.ebi.ac.uk/chebi/backend/api/public/compound/218214/; Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase003-public/CHEBI218214.json | supports | Exact returned namespace/version and representation; scientific constraints remain in separate primary evidence. |
+| C199-AUTH-8 | https://www.ebi.ac.uk/chebi/backend/api/public/molfile/218214/; Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase003-public/CHEBI218214.mol | supports | Exact returned namespace/version and representation; scientific constraints remain in separate primary evidence. |
+| C199-AUTH-9 | https://www.ebi.ac.uk/chebi/backend/api/public/molfile/78312/; Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase004-public/CHEBI78312.mol | supports | Exact returned namespace/version and representation; scientific constraints remain in separate primary evidence. |
+| C199-AUTH-10 | https://www.wikidata.org/wiki/Special:EntityData/Q77566253.json; Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase004-public/Q77566253.json | supports | Exact returned namespace/version and representation; scientific constraints remain in separate primary evidence. |
+| C199-CHEBI-SEARCH-1 | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=WLQXISHGKXGNFV-UHFFFAOYSA-N&amp;size=100; Complete bounded exact key/name response; /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase002-public/chebi-key-199.json | supports | HTTP200; original response retained. Exact candidate star/graph eligibility is assessed separately; no universal absence inference. |
+| C199-CHEBI-SEARCH-2 | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=endophenazine&amp;size=100; Complete bounded exact key/name response; /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase004-public/chebi-name-199.json | supports | HTTP200; original response retained. Exact candidate star/graph eligibility is assessed separately; no universal absence inference. |
+| C199-CONSUMERS | src/naturalproductmech/curate/structure_corrections.py; Complete structure correction consumer | supports | Existing replacement/split needs one exact source selector/full row and a unique eligible committed three-star target/full row. It copies target SMILES and withholds old xrefs; arbitrary primary SMILES/label overrides are not implemented. |
+| C199-XREF-CONSUMER | src/naturalproductmech/curate/xref_exclusions.py; Complete current consumed route; actual code snapshot | supports | Exact PubChem/NPAtlas literal exclusion requires an asserted source xref, unique exact compound selector and complete original-row digest. It is not a positive-xref admission or graph replacement route. |
+| C199-CLAIM-CONSUMER | src/naturalproductmech/curate/claim_references.py; Complete current consumed route; actual code snapshot | supports | Claim-reference routing enforces the complete original-row digest and rejects structure_correction_note; joint identity repair needs reviewed tested composition. |
+| C199-STRAIN-CONSUMER | src/naturalproductmech/curate/producer_strains.py; Complete current consumed route; actual code snapshot | supports | Producer qualifiers enforce the complete original-row digest and supply source-specific producer context; they do not themselves rewrite the BGC claim. |
+| C199-SEED-CONSUMER | scripts/seed_from_sources.py; Complete current consumed route; actual code snapshot | supports | Source normalization and exact-key joins apply the maintained correction consumers; producer qualification after structure correction is rejected and requires a reviewed composition change rather than silent stacking. |
+| C199-PRIMARY-2002 | DOI:10.7164/antibiotics.55.801; Original page802 Figure1 compound2; derived page from retained original PDF; actual original-access receipt separately pinned; retained snapshot /private/tmp/npm-review-work/shared-next-batch020/review-support/derived-002/endophen2002-II-page2.png | supports | The original neutral aromatic phenazine has1-carboxylic acid and9-normal-prenyl substituents, with a terminal equal-methyl alkene. The depicted product is distinct from reduced anionic PpzP substrate/product nodes. |
+| C199-PRIMARY-MAP | /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/endophenazine-primary-comparison.json; Complete independent diagnostic comparison and numbered source model; retained snapshot /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/endophenazine-primary-comparison.json | supports | Independent numbered whole phenazine graphs from original2002 Figure1 compound2 and2014 SI FigureS1 compound3 match the stored neutral final structures. Exact E priority branches for200 are1prime versus oxygenated5prime; no tetrahedral centre exists. |
+
+## Limits And Additional Notes
+
+- The root section inventories present claims and source routing; chemical identities, source-specific experiments, definition claims and optional-content assertions require their separately scoped scientific assessments.
+- Original 2009 figure pixels and PDF not independently retained; complete opened author-manuscript scientific transcription supports the stated methods.
+- 2007 occurrence full main remains unread, so feeding details beyond its abstract are not independently verified.
+- No exact tagged-construct equivalence or untested native last-step enzyme is inferred.
+- Original source access times and read scopes are preserved; formal authoring is not a new retrieval.
+- Independent chemistry owns exact graph/xref findings. Optional absent pathways, proteins or assays do not independently require a finding.
+- All seven source sets are reconciled; these four candidates have no emitted PubChem assay rows.
+- Actions describe future maintained-input curation, not changes already performed; no generated owner, source inventory, campaign or scientific status is mutated.
+- Authority matches establish the representations actually returned at their retained access times; they are not independent experimental structure or absolute-hand determinations. Root and science sections separately assess organism, locus, classification and history claims.
+- Authority equality is not independent experimental proof. No new spectral reassignment or biological mechanism follows from the chemical comparison.
+- The reproduction report retains 42 withheld ambiguous producer claims, 161 merged-taxon rewrites and five unresolved assay-organism targets.
+- 499 identifier-label plausibility warnings are non-blocking; 4750 pairs have no configured adapter and were skipped.
+- Four tests were skipped and two dependency deprecation warnings remain. Passing configured QC is not independent scientific verification.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions and no-adapter pairs; a successful command does not convert these into verified scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population was checked; external caches and generated bytecode are not asserted to be independently byte-pinned.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+- Scientific conclusions integrate the chemical, biological and provenance assessments; source access and unresolved scopes remain explicit.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T230918Z-endophenazine-a
+title: Scientific review of endophenazine A
+started_at: '2026-10-21T23:04:16.674259Z'
+finished_at: '2026-10-21T23:09:18.525870Z'
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: Native endophenazine A isolation and its retained chemical graph are supported.
+  The knockout experiments occur in introduced loci in Streptomyces coelicolor and
+  do not justify the strongest native producer grade. Preserve the positive heterologous
+  and purified PpzP evidence, including the distinction between its reduced product
+  and subsequent chemical oxidation.
+source:
+  git_revision: f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/dimboa.yaml
+    sha256: 36b9de8038c33f5f5c751b86bffa0d1e46b03e53af2fa3ed4bddfbab090cdaf8
+    role: context
+  - path: data/natural_products/alkaloids/dimethylcoprogen.yaml
+    sha256: 4dd0081fe3c3b7aef1ccdbf275cf53f659c4b932fac4bf97d7172cbcdb68ad67
+    role: context
+  - path: data/natural_products/alkaloids/distamycin.yaml
+    sha256: 0d53884114eaab8098d1dc2357a59cd3e45764d350878fd71eee02f966fa0fd5
+    role: context
+  - path: data/natural_products/alkaloids/dixiamycin-a.yaml
+    sha256: b359c9408a4bbb8dae9c9ab4516de48d6c2aaa00ce361c38aaa59e199b8edb3e
+    role: context
+  - path: data/natural_products/alkaloids/dorrigocin-a.yaml
+    sha256: e45b9ecc4a2ed27218fcfbb80cab1057622fc2ae0542954542f5eeba8a7b54d0
+    role: context
+  - path: data/natural_products/alkaloids/dorrigocin-b.yaml
+    sha256: d4b5272ae2cce093e2b091c9105fdcf5bccd685b48d111429164bd38e001556d
+    role: context
+  - path: data/natural_products/alkaloids/elymoclavine.yaml
+    sha256: e2011f8a88a29742375412dc54734a888790746f262ef04006fec7a6a343e31c
+    role: context
+  - path: data/natural_products/alkaloids/enantio-pyochelin.yaml
+    sha256: 7f71f0312b2f0d8b6072e978f1d7c22dd87897bc0482ebdce69ffa12b023887c
+    role: context
+  - path: data/natural_products/alkaloids/endophenazine-a.yaml
+    sha256: 18820266792db2e14e4c1e435fae5aedfa593ff68db0c45a0adc9589be1c9261
+    role: target
+  - path: data/natural_products/alkaloids/endophenazine-a1.yaml
+    sha256: 8a9071a488b2a072dd188c239a94e225288c1ba0a7457c54cef61358381df977
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/extract_pubchem_bioassay.py
+    sha256: 24f9d794e7cf97c420351cb751f8767f7d81a5f22aed01669b2318d6755e7c00
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/bioassay_exclusions.py
+    sha256: 4a4176e072ac9759aa8a9e88300d7e2de5aaf4ebf30b5c42fcf4c9c0b6cebbb4
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/lotus_exclusions.py
+    sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/curate/xref_exclusions.py
+    sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: tests/test_claim_references.py
+    sha256: 11b2fc60dbe32154df63fb2e8c784c7c8ba6585581c09bba2eebe2c5192d4c06
+    role: context
+  - path: tests/test_lotus_exclusions.py
+    sha256: 3e3aa443714202e1bc41f0fb236e6bf69caabd68a16af23b972323f5f846386c
+    role: context
+  - path: tests/test_mibig_locus_evidence_overrides.py
+    sha256: 9177b5bd24f6e47cc4743857179217d9e0d4add9560b2ce3faefaebe53ba09a0
+    role: context
+  - path: tests/test_producer_strains.py
+    sha256: 17002ef1640464777f1925d12d842ed83c9098aad6de724ae0ea236ecccc4ff3
+    role: context
+  - path: tests/test_seed_skeleton.py
+    sha256: 72ec216fb0ed365b09f1cfb64fb06c701c50b5d7c2df409d8dbf613d302803bf
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 199, batch 020, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 244 of 3116 current
+    records had campaign coverage and 2872 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-383a92387c
+targets:
+- target_id: naturalproductmech:mibig-383a92387c
+  path: data/natural_products/alkaloids/endophenazine-a.yaml
+  label: endophenazine A
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/endophenazine-a.yaml
+    role: Curator-owned assertions, inline mechanisms, discussions and audit history
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+  command: just validate-strict data/natural_products/alkaloids/endophenazine-a.yaml
+    --out /private/tmp/npm-review-work/199/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T23:04:18.472877Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3116 corpus records are filed exactly where PATHS.tsv pins them.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-018-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-018 execution on f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T21:43:11.095314Z;
+    finished 2026-10-21T21:43:43.016017Z. Exact original receipt: /private/tmp/npm-native-checks/batch-018/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-018/verify-corpus.log. Reused
+    for batch020 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,105,749 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch020. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-for-byte from data/raw/.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-018-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-018 execution on f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T21:43:11.049802Z;
+    finished 2026-10-21T21:44:10.266611Z. Exact original receipt: /private/tmp/npm-native-checks/batch-018/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-018/verify-reproduction.log.
+    Reused for batch020 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,105,749 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch020. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The canonical review-queue command completed with actual exit0 on the fresh
+    main base; exact output, warnings and skips remain in the pinned transcript.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-018-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-018.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-018 execution on f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T21:43:11.094986Z;
+    finished 2026-10-21T21:43:27.046585Z. Exact original receipt: /private/tmp/npm-native-checks/batch-018/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-018/review-queue.log. Reused
+    for batch020 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,105,749 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch020. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'Configured identifier-label validation exited zero: 13449 canonical matches,
+    646 synonym matches and 35 configured exceptions; 499 non-blocking warnings and
+    4750 no-adapter skips remain.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-018-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-018 execution on f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T21:43:11.095805Z;
+    finished 2026-10-21T21:44:09.649497Z. Exact original receipt: /private/tmp/npm-native-checks/batch-018/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-018/validate-products.log. Reused
+    for batch020 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,105,749 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch020. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Full fresh-base quality command completed successfully:999 tests passed,4
+    skipped,2 warnings;3116 records passed closed schema validation and corpus reproduction,
+    and generated pages were current.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-018-baseline-qc-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-018 execution on f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T21:43:11.050051Z;
+    finished 2026-10-21T21:48:43.599885Z. Exact original receipt: /private/tmp/npm-native-checks/batch-018/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-018/qc.log. Reused for batch020
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,105,749 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch020.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+- check_id: R199-FULL-OWNER
+  name: Complete owner and captured-source scope
+  status: passed
+  required: true
+  summary: Successful official intake and a fresh root full-owner/read receipt precede
+    this authoring. All six officially captured sets and the separately mechanically
+    parsed seventh PubChem set match. The seven raw sets were read by root at the
+    declared scope. Target193 has seven emitted assays; their scientific interpretation
+    and sole AID504832 classifier finding belong to the separate science section.
+    Target192 has one no-assay sentinel and emits no assay. Inline graphs/pathways
+    occur only at194 and199; no external graph component or molecular-target assertion
+    is present.
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+  evidence_ids:
+  - R199-OWNER
+  - R199-LOCAL
+  - R199-PUBCHEM-PREP
+- check_id: S199-C-NATIVE-GRADE
+  name: Native necessity applicability of the emitted producer grade
+  status: failed
+  required: true
+  summary: The strongest native producer grade is derived from a method whose inspected
+    knockout experiments occur in engineered S. coelicolor hosts. Retain positive
+    natural isolation and demonstrated cloned-locus evidence.
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+  evidence_ids:
+  - S199-E-LOCAL
+  - S199-E-PPZ09
+  - S199-E-PPZ12
+  - S199-E-PPZ12-SI
+  - S199-E-GRADING
+- check_id: S199-C-GRAPH-PROTEIN
+  name: Existing reaction/sequence scope
+  status: passed
+  required: true
+  summary: All existing reaction edges and the native protein example are supported
+    with the explicit reduced-product, chemical-workup and tagged-construct boundaries.
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+  evidence_ids:
+  - S199-E-PPZ09
+  - S199-E-RHEA
+  - S199-E-PPZ-NATIVE
+  - S199-E-PPZ-UNIPROT
+  - S199-E-PPZ-SEQUENCE-COMPARISON
+  - S199-E-LOCAL
+- check_id: S199-C-OPTIONAL-SOURCE-DETAILS
+  name: Original 2009 pixels and complete 2007 occurrence body
+  status: unavailable
+  required: false
+  summary: The complete author-deposited2009 scientific transcription is inspected,
+    but original figure pixels/PDF were not retained. The2007 occurrence is supported
+    at original-abstract resolution. Neither limit is treated as a new negative experiment.
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+  evidence_ids:
+  - S199-E-PPZ09
+  - S199-E-ENDO07-OCC
+  - S199-E-ACCESS
+- check_id: C199-C-REPRESENTATION
+  name: Stored chemical representation and complete source row
+  status: passed
+  required: true
+  summary: Fresh intake derivation agrees with the stored graph; the source selector,
+    full row and prepared snapshot were independently rechecked.
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+  evidence_ids:
+  - C199-OWNER
+  - C199-GRAPH
+  - C199-COMPARISON
+- check_id: C199-C-PRIMARY
+  name: Exact original neutral final-product structure
+  status: passed
+  required: true
+  summary: Independent original2002 compound2 constitution matches both Standard and
+    fixed-H retained forms and literal PubChem/NPAtlas. CHEBI78312/78313 are valid
+    distinct reduced anionic substrate/product nodes, not erroneous synonyms for the
+    neutral oxidized endophenazine A endpoint. The owner already qualifies post-assay
+    chemical oxidation.
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+  evidence_ids:
+  - C199-PRIMARY-2002
+  - C199-PRIMARY-MAP
+  - C199-OWNER
+  - C199-COMPARISON
+  - C199-AUTHORITY-COMPARISON
+  - C199-AUTHORITY-DETAIL
+evidence:
+- evidence_id: R199-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/endophenazine-a.yaml
+  locator: Complete post-intake owner, optional assertions and all history events
+  accessed_at: '2026-10-21T23:05:00.360018Z'
+  support: supports
+  summary: 'Root read the complete owner after successful official intake: 4 occurrence,
+    1 producer and 1 locus assertions. No referenced external component is present.
+    Optional fields: biosynthetic_pathway, causal_graphs.'
+  snapshot_sha256: 18820266792db2e14e4c1e435fae5aedfa593ff68db0c45a0adc9589be1c9261
+- evidence_id: R199-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/199/local-sources.json
+  locator: Complete resolved owner and all six officially captured raw row sets
+  accessed_at: '2026-10-21T23:05:00.360018Z'
+  support: context_only
+  summary: All six captured MIBiG, LOTUS, ChEBI structures/origins, CyanoMetDB and
+    NPClassifier sets match the frozen preparation, including empty sets. The separate
+    seventh PubChem inventory comparison is distinguished below. Source fidelity does
+    not itself establish experimental support.
+  snapshot_sha256: 0f5474e16d20140469fb7ad8ccfd2a24bb2b94da370e1f305990a848a8fa8cdb
+- evidence_id: R199-PUBCHEM-PREP
+  kind: record_content
+  reference: data/raw/pubchem_bioassay.tsv
+  locator: Exact-key rows compared with the separate provisional seventh source set
+  accessed_at: '2026-10-21T23:08:44.404828Z'
+  support: context_only
+  summary: The separate committed PubChem raw set contains 0 matching rows and reproduces
+    the frozen preparation. The exact set is empty for eight targets, contains one
+    no-assay sentinel for192, and contains seven observations for193 (six AIDs, including
+    two distinct-SID504749 observations). This is not part of the official six-set
+    intake and does not establish absence of bioactivity from the literature.
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: R199-Q22286915
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q22286915
+  locator: 'Exact retained25-entity projection: labels and complete P225/P685/P31
+    claim objects only; unrelated upstream claims not retained'
+  accessed_at: '2026-10-21T21:26:17.013486Z'
+  support: context_only
+  summary: Literal source P225/P685 values agree with the retained projection. Synonym
+    routing is separate from experimental occurrence, chemical identity and stock
+    applicability.
+  snapshot_sha256: bc9eace3192cec1ad7e5d2c57e7e33425245fa056fd9caf88baab4a06c8626ba
+- evidence_id: R199-Q22287108
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q22287108
+  locator: 'Exact retained25-entity projection: labels and complete P225/P685/P31
+    claim objects only; unrelated upstream claims not retained'
+  accessed_at: '2026-10-21T21:26:17.013486Z'
+  support: context_only
+  summary: Literal source P225/P685 values agree with the retained projection. Synonym
+    routing is separate from experimental occurrence, chemical identity and stock
+    applicability.
+  snapshot_sha256: bc9eace3192cec1ad7e5d2c57e7e33425245fa056fd9caf88baab4a06c8626ba
+- evidence_id: R199-TAXON-CONTEXT
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&retmode=xml&id=294,1883,1892,1900,1961,2063,4121,4577,5110,5111,5113,5599,40602,43178,45231,51584,55404,58346,89647,89650,89664,112277,139766,231710,380021,398502,684832,690845,995841,1038928,1485014,2490667,2607118
+  locator: Exact relevant TaxId, ScientificName, Rank, ParentTaxId and OtherNames
+    fields
+  accessed_at: '2026-10-21T21:25:46.355451Z'
+  support: context_only
+  summary: Literal NCBI1900 resolves to1961 Streptomyces virginiae, whose OtherNames
+    include S. cinnamonensis. The record retains original source wording and merged-id
+    provenance. NCBI1892 S. anulatus is a separate species; taxonomic routing does
+    not equate experimental stocks or native and introduced-locus genetics.
+  snapshot_sha256: 75216bcb5c7ca10eb6272b73d1d46518c027637079aae921d695047a0594ada3
+- evidence_id: R199-IMODULON
+  kind: database
+  reference: https://imodulondb.org/api/datasets
+  locator: Complete 20-organism, 28-dataset official catalogue
+  accessed_at: '2026-10-21T20:59:34.301902Z'
+  support: context_only
+  summary: The complete retained20-organism28-dataset catalogue establishes membership
+    only. None of the exact imported native producers in these ten targets is represented.
+    S.coelicolor and E.coli experimental hosts do not establish introduced-cluster
+    or native-stock module applicability. The structured command was unavailable in
+    the bounded inspected environment; the retained official API is the fallback.
+  snapshot_sha256: 155607e7023efdead5ebab3919279a0776d5665a7de9e28b67f02f8f521b0693
+- evidence_id: S199-E-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/199/local-sources.json
+  locator: All present owner claims and all seven matching raw sets
+  accessed_at: '2026-10-21T23:05:00.360018Z'
+  support: context_only
+  summary: Complete actual owner and six captured source sets; the seventh PubChem
+    set is independently reconciled against the complete raw TSV.
+  snapshot_sha256: 0f5474e16d20140469fb7ad8ccfd2a24bb2b94da370e1f305990a848a8fa8cdb
+- evidence_id: S199-E-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: '{"bgc_classes": "other", "bgc_subclasses": "phenazine", "cluster_link_evidence_basis":
+    "CLUSTER_DEMONSTRATED", "compound_classes": "", "compound_index": "1", "compound_name":
+    "endophenazine A", "database_ids": "npatlas:NPA015622|pubchem:10039975", "entry_completeness":
+    "complete", "entry_quality": "questionable", "entry_status": "active", "entry_version":
+    "5", "genome_accession": "FN178498.1", "locus_evidence_methods": "Knock-out studies|Enzymatic
+    assays|Heterologous expression", "locus_from": "", "locus_to": "", "mibig_accession":
+    "BGC0001080", "primary_reference": "PMID:22509222", "producer_evidence_basis":
+    "BGC_CHARACTERIZED", "reference_basis": "ENTRY", "smiles": "CC(C)=CCC1=CC=CC2=NC3=CC=CC(C(O)=O)=C3N=C12",
+    "standard_inchi": "InChI=1S/C18H16N2O2/c1-11(2)9-10-12-5-3-7-14-16(12)20-17-13(18(21)22)6-4-8-15(17)19-14/h3-9H,10H2,1-2H3,(H,21,22)",
+    "standard_inchi_key": "WLQXISHGKXGNFV-UHFFFAOYSA-N", "stereo_complete": "true",
+    "taxon_id": "NCBITaxon:1892", "taxon_label": "Streptomyces anulatus"}'
+  accessed_at: '2026-10-21T23:05:00.360018Z'
+  support: context_only
+  summary: Immutable original source row source_id=BGC0001080:1, expected_source_row_sha256=90148db5161800fc94fc2a894f8c2b1bd3fdf798b73d853ff5fdc09c0afc149f.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: S199-E-SOURCE-SCOPE
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch020/review-support/source-notes.json
+  locator: All four source scopes
+  accessed_at: '2026-10-21T22:00:58.269656Z'
+  support: context_only
+  summary: Frozen primary source content, exact read scopes, original access receipts
+    and remaining gaps; not a new retrieval or broader primary read.
+  snapshot_sha256: 7ef14cb67e3d850e98d60f7a1d568c5f79fd46070f9f8eee6be8882a12a7534c
+- evidence_id: S199-E-ACCESS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch020/review-support/input-manifest.json
+  locator: All immutable source pins
+  accessed_at: '2026-10-21T22:00:58.269656Z'
+  support: context_only
+  summary: Flat frozen source/consumer input pins; unsuccessful routes and capacity
+    stops do not imply absence of scientific evidence.
+  snapshot_sha256: 67770a4cc19f24a95634e738e6289b646e85acec4df6cf67da6f7d302a65aa2e
+- evidence_id: S199-E-CONSUMERS
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: Method loader and source-row preserving overlay emission
+  accessed_at: '2026-10-21T23:05:00.360018Z'
+  support: context_only
+  summary: Existing method REPLACE changes grades but does not enforce a complete-row
+    digest or expected-context fields. WITHDRAW has seven expected fields. Legitimate
+    citation/strain overlays enforce a complete original-row digest.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: S199-E-CLAIM-ROUTE
+  kind: record_content
+  reference: src/naturalproductmech/curate/claim_references.py
+  locator: Complete actual consumer
+  accessed_at: '2026-10-21T23:05:00.360018Z'
+  support: context_only
+  summary: Exact claim-reference routing preserves database assertion type and appends
+    curator rationale. It does not itself change evidence grades or taxa, and rejects
+    a structure-correction marker.
+  snapshot_sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+- evidence_id: S199-E-STRAIN-ROUTE
+  kind: record_content
+  reference: src/naturalproductmech/curate/producer_strains.py
+  locator: Complete actual consumer
+  accessed_at: '2026-10-21T23:05:00.360018Z'
+  support: context_only
+  summary: A legitimate strain row enforces the complete source digest and adds producer-only
+    context; it does not update BGC notes or prove species-wide experiments.
+  snapshot_sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+- evidence_id: S199-E-GRADING
+  kind: record_content
+  reference: conf/producer_evidence.tsv
+  locator: Complete two-claim grading contract
+  accessed_at: '2026-10-21T23:05:00.360018Z'
+  support: context_only
+  summary: Native knockout necessity grades producer and locus; heterologous expression
+    and enzymatic assays grade the locus only. Empty methods faithfully mean SOURCE_ASSERTION
+    and CLUSTER_UNSTATED.
+  snapshot_sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+- evidence_id: S199-E-ENDO02-I
+  kind: primary_source
+  reference: DOI:10.7164/antibiotics.55.794
+  locator: Complete seven-page scientific text, taxonomy, cultivation, isolation,
+    results and table/caption text.; retained /private/tmp/npm-review-work/shared-next-batch020/review-support/public-003/endophen2002-I.pdf
+  accessed_at: '2026-10-21T21:40:46.544434Z'
+  support: partial
+  summary: 'Complete seven-page scientific text, taxonomy, cultivation, isolation,
+    results and table/caption text. Limit: Original assay-table pixels were not independently
+    inspected; no new quantitative activity claim is proposed. Access timing: Actual
+    original HTTP finished_at'
+  snapshot_sha256: 40b343c4c24fc160e783b2a9e35d8d7546fc546f289294953742da4d371e72d4
+- evidence_id: S199-E-ENDO02-II
+  kind: primary_source
+  reference: DOI:10.7164/antibiotics.55.801
+  locator: Complete six-page original scientific text; Figure 1 compound 2 original
+    pixels viewed.; retained /private/tmp/npm-review-work/shared-next-batch020/review-support/public-003/endophen2002-II.pdf
+  accessed_at: '2026-10-21T21:40:45.306503Z'
+  support: partial
+  summary: 'Complete six-page original scientific text; Figure 1 compound 2 original
+    pixels viewed. Limit: No independent NMR data reprocessing. Access timing: Actual
+    original HTTP finished_at'
+  snapshot_sha256: 17bcb4682e1129d5973fd97ecbd5721e6f6aa3224334045897504e5c4b815d54
+- evidence_id: S199-E-PPZ09
+  kind: primary_source
+  reference: DOI:10.1074/jbc.M901312200
+  locator: 'Opened author-deposited full-manuscript transcription: complete scientific
+    body, Methods, Results, Discussion, Table 1 and figure captions across retained
+    ranges.; retained /private/tmp/npm-review-work/shared-next-batch020/science-authoring/ppz09-complete-retained-captures.json'
+  accessed_at: '2026-10-21T22:00:58.269656Z'
+  support: partial
+  summary: 'Opened author-deposited full-manuscript transcription: complete scientific
+    body, Methods, Results, Discussion, Table 1 and figure captions across retained
+    ranges. Limit: Original 2009 figure pixels and an independently archived PDF are
+    unavailable; references tail was not required for the assay-scope read. Retained
+    publisher/PMC/EuropePMC failures are not absence evidence. Access timing: Current
+    local source-note consolidation/reinspection; original remote web access was not
+    separately clocked and is not backdated. This derived wrapper was locally reinspected
+    at 2026-10-21T22:00:58.269656Z; original remote access remains unclocked. This
+    timestamp is not an HTTP retrieval.'
+  snapshot_sha256: 678844c97bece70e9fa1df4131cd79afddd5fdbab8369eea2ae31503a960e29d
+- evidence_id: S199-E-PPZ12
+  kind: primary_source
+  reference: DOI:10.3762/bjoc.8.57
+  locator: Complete original open main scientific body, Methods, tables and captions;
+    retained /private/tmp/npm-review-work/shared-next-batch020/review-support/public-001/ppz2012-main.html
+  accessed_at: '2026-10-21T21:31:59.856801Z'
+  support: partial
+  summary: The complete original 2012 main supports introduced-cluster genetics in
+    S. coelicolor, not native 9663 knockout. Total Table 3 prenylated endophenazines
+    are not an A-only yield. Official SI is separately bound.
+  snapshot_sha256: ce977353657f8529bd16acec89830d597c3c28f13cf033e5c03daca68f2bbe7a
+- evidence_id: S199-E-ENDO07-OCC
+  kind: primary_source
+  reference: DOI:10.1021/jo0703404
+  locator: Opened original PubMed abstract positively reports S. cinnamonensis DSM
+    1042 and endophenazine A, with isotope feeding.; retained /private/tmp/npm-review-work/shared-next-batch020/review-support/web-memory-archive/source020web033.json
+  accessed_at: '2026-10-21T21:54:15.719826Z'
+  support: partial
+  summary: 'Opened original PubMed abstract positively reports S. cinnamonensis DSM
+    1042 and endophenazine A, with isotope feeding. Limit: Complete original main
+    remains unavailable; do not infer a full purified-enzyme assay or precise native
+    locus from the abstract. Access timing: Current local source-note consolidation/reinspection;
+    original remote web access was not separately clocked and is not backdated.'
+  snapshot_sha256: 0a1f6e21d54ee68198fd2021f8d49a68c62405818ab2a5f9d2aaea42be772ed1
+- evidence_id: S199-E-PPZ-NATIVE
+  kind: authority
+  reference: GenBank:FN178498.1
+  locator: GenBank source/header and complete ppzP CDS 1..900, protein_id CAX48655.1
+    and translation; retained /private/tmp/npm-review-work/shared-next-batch020/review-support/public-003/FN178498.1.gb
+  accessed_at: '2026-10-21T21:40:46.823313Z'
+  support: partial
+  summary: The original FN178498.1 source identifies S. anulatus 9663 and ppzP CDS
+    1..900 with deposited 299 aa CAX48655.1 translation. This entry binds the GenBank
+    record only; current UniProt and independent equality are separately evidenced.
+    Native annotation does not reconstruct the complete historical His8 expression
+    construct.
+  snapshot_sha256: deb69d3462720e27b9cd8e17647a2cf5e2ad7c175c4f900779febbd6c54b325c
+- evidence_id: S199-E-RHEA
+  kind: authority
+  reference: RHEA:41580
+  locator: Complete current exact reaction row and all four ChEBI participant identifiers.;
+    retained /private/tmp/npm-review-work/shared-next-batch020/review-support/public-004/RHEA41580-exact.tsv
+  accessed_at: '2026-10-21T21:42:16.984228Z'
+  support: partial
+  summary: 'Complete current exact reaction row and all four ChEBI participant identifiers.
+    Limit: The first accession-style query returned only a header; the corrected exact
+    query is positive. Oxidation is not included in RHEA41580. Access timing: Actual
+    original HTTP finished_at'
+  snapshot_sha256: 7be48aa03f1c405bac557b4549763bda981dcc0bc130b00fcf5025219cc4bdf2
+- evidence_id: S199-E-PPZ-UNIPROT
+  kind: authority
+  reference: UniProtKB:C4PWA1
+  locator: Complete current reviewed UniProt JSON, organism and 299 aa sequence; retained
+    /private/tmp/npm-review-work/shared-next-batch020/review-support/public-003/uniprot-C4PWA1.json
+  accessed_at: '2026-10-21T21:40:47.515706Z'
+  support: supports
+  summary: Current reviewed C4PWA1 identifies PpzP from S. anulatus 9663 and retains
+    the 299 aa native sequence. This is current native annotation, not the full historical
+    tagged construct.
+  snapshot_sha256: 4314b6efd45d36e4fa0065a881a9d1a8df27e6103b4d4381cd4ae9b4dbfc4c1e
+- evidence_id: S199-E-PPZ-SEQUENCE-COMPARISON
+  kind: validation
+  reference: Local FN178498.1 / CAX48655.1 / C4PWA1 sequence comparison
+  locator: Complete raw DNA, deposited translation, current UniProt sequence, hashes
+    and comparison method; retained /private/tmp/npm-review-work/shared-next-batch020/review-support/ppzp-native-sequence-comparison.json
+  accessed_at: '2026-10-21T21:47:54.669613Z'
+  support: supports
+  summary: Independent standard-code translation of positive-strand native CDS 1..900,
+    removing the terminal stop, exactly equals deposited CAX48655.1 and current C4PWA1
+    (299 aa). The computation time is local, not remote retrieval. The full His8 vector-derived
+    junction/construct was not reconstructed.
+  snapshot_sha256: 111507961c596055f03b1c622d4e3bd3b9a217a22a496047df274ad48b3e0481
+- evidence_id: S199-E-PPZ12-SI
+  kind: primary_source
+  reference: DOI:10.3762/bjoc.8.57
+  locator: Complete eight-page official SI text; original physical page 2 chromatograms
+    inspected; retained /private/tmp/npm-review-work/shared-next-batch020/review-support/public-001/ppz2012-si.pdf
+  accessed_at: '2026-10-21T21:31:59.528249Z'
+  support: supports
+  summary: The official SI supplies the inspected supporting methods and chromatograms
+    in the stated heterologous S. coelicolor context. The complete SI and main are
+    distinct snapshots; no native genetic manipulation is inferred.
+  snapshot_sha256: b304515e2205d2263684bded961246278c5425482b6dce1015fafb78db4060a6
+- evidence_id: C199-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/endophenazine-a.yaml
+  locator: Complete owner and all seven matching source-row sets; no referenced components
+  accessed_at: '2026-10-21T23:05:57.817949Z'
+  support: supports
+  summary: 'The complete owner denotes endophenazine A under naturalproductmech:mibig-383a92387c.
+    All source selectors, versions and complete row digests are retained in COMPARISON:
+    [{"row_sha256": "90148db5161800fc94fc2a894f8c2b1bd3fdf798b73d853ff5fdc09c0afc149f",
+    "selector": "BGC0001080:1", "version": "5"}]. The official intake and prepared
+    owner bytes agree.'
+  snapshot_sha256: 18820266792db2e14e4c1e435fae5aedfa593ff68db0c45a0adc9589be1c9261
+- evidence_id: C199-GRAPH
+  kind: validation
+  reference: /private/tmp/npm-review-work/199/chemistry.json
+  locator: Fresh intake RDKit result and frozen Standard/fixed-H comparison
+  accessed_at: '2026-10-21T23:04:17.463821Z'
+  support: supports
+  summary: The stored SMILES recomputes to WLQXISHGKXGNFV-UHFFFAOYSA-N, formula C18H16N2O2,
+    formal charge 0; stored InChI/key agree. These are representation checks, not
+    experimental identity proof.
+  snapshot_sha256: de0d59d3973dda150dd247b4cd6cc3d7bf60d81dd1045645713e92c0d7a71a78
+- evidence_id: C199-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/retained-graph-comparison.json
+  locator: Record 199; exact source rows and each graph comparison
+  accessed_at: '2026-10-21T21:32:34.340857Z'
+  support: supports
+  summary: Exact Standard, fixed-H, formula, charge and stereo comparisons of the
+    retained owner and complete raw rows; current authority responses and primary
+    proof are separate evidence.
+  snapshot_sha256: aebefd479b082320c3625c63bef6273c010a858957b4802a319fec6a9996f402
+- evidence_id: C199-LOCAL-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/199/chemistry-search-receipt.json
+  locator: Exact full key, label, slug and source selector in raw/owner/curation trees
+  accessed_at: '2026-10-21T23:05:57.998472Z'
+  support: supports
+  summary: Ignored-inclusive bounded search preserves all matching paths; an absent
+    curation decision does not imply a missing scientific source.
+  snapshot_sha256: 714c09d556515ab4a59ce737d55f76a252f92981a9e3dff54ae34724a6c0b80f
+  search_scope: rg --no-ignore --hidden; data/natural_products, data/raw and curation;
+    exact full key, current label, slug and BGC:compound_index. No claim beyond these
+    trees.
+- evidence_id: C199-AUTHORITY-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/authority-phase-001-comparison.json
+  locator: Complete literal Standard/fixed-H, formula, charge and stereo comparison;
+    exact source payload pins retained
+  accessed_at: '2026-10-21T21:34:40.540097Z'
+  support: supports
+  summary: Current authority graphs and source-specific serialization differences
+    are independently compared. Database agreement is not primary natural-hand proof.
+  snapshot_sha256: 4005c45d667d4eabb4ad8fc7220de1e86023285837df968a50f767fd563b89f0
+- evidence_id: C199-AUTHORITY-DETAIL
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/authority-phases002-004-comparison.json
+  locator: Complete literal Standard/fixed-H, formula, charge and stereo comparison;
+    exact source payload pins retained
+  accessed_at: '2026-10-21T21:46:08.569298Z'
+  support: supports
+  summary: Current authority graphs and source-specific serialization differences
+    are independently compared. Database agreement is not primary natural-hand proof.
+  snapshot_sha256: 53f2ee01083c325737e4d2bbb174245bb7a064c3adbd29200ba867349e94e402
+- evidence_id: C199-AUTH-1
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001080.5/annotations.json
+  locator: Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/public-reads/BGC0001080.5.json
+  accessed_at: '2026-10-21T21:33:32.314728Z'
+  support: supports
+  summary: Exact returned namespace/version and representation; scientific constraints
+    remain in separate primary evidence.
+  snapshot_sha256: 21a6d26dc959eb1f4f97d2416a0b7e8f50b4c0438d09e3be5ef7f2ca12c401e1
+- evidence_id: C199-AUTH-2
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/78312/
+  locator: Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/public-reads/CHEBI78312.json
+  accessed_at: '2026-10-21T21:33:34.371486Z'
+  support: supports
+  summary: Exact returned namespace/version and representation; scientific constraints
+    remain in separate primary evidence.
+  snapshot_sha256: 9120a71c91dd0fc04ade52944b0af833fba76b2f99f5ae0bf894e449012a86f3
+- evidence_id: C199-AUTH-3
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10039975/SDF?record_type=2d
+  locator: Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/public-reads/pubchem-10039975.sdf
+  accessed_at: '2026-10-21T21:33:33.731823Z'
+  support: supports
+  summary: Exact returned namespace/version and representation; scientific constraints
+    remain in separate primary evidence.
+  snapshot_sha256: 67e90911c00a96065afb7f8c4c6796eae4aab19ad464514ec64bbf738c61bf32
+- evidence_id: C199-AUTH-4
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/78313/
+  locator: Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase002-public/CHEBI78313.json
+  accessed_at: '2026-10-21T21:35:25.134145Z'
+  support: supports
+  summary: Exact returned namespace/version and representation; scientific constraints
+    remain in separate primary evidence.
+  snapshot_sha256: cc4e6daaef276f98933d29b03d61bf4ac645eb6d3fbe42fc247acc24aeb3703f
+- evidence_id: C199-AUTH-5
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/78313/
+  locator: Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase002-public/CHEBI78313.mol
+  accessed_at: '2026-10-21T21:35:25.119618Z'
+  support: supports
+  summary: Exact returned namespace/version and representation; scientific constraints
+    remain in separate primary evidence.
+  snapshot_sha256: 056c5d5bbd602665d11ddd6bf1a387125bfba365be56a827fde932e5384d0ca1
+- evidence_id: C199-AUTH-6
+  kind: authority
+  reference: https://www.npatlas.org/api/v1/compound/NPA015622
+  locator: Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase002-public/NPA015622.json
+  accessed_at: '2026-10-21T21:35:24.510756Z'
+  support: supports
+  summary: Exact returned namespace/version and representation; scientific constraints
+    remain in separate primary evidence.
+  snapshot_sha256: 442f49f397c48a4f6089369494eb4c31303d084958e83fd89d0427b6272cf8f0
+- evidence_id: C199-AUTH-7
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/218214/
+  locator: Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase003-public/CHEBI218214.json
+  accessed_at: '2026-10-21T21:38:30.139879Z'
+  support: supports
+  summary: Exact returned namespace/version and representation; scientific constraints
+    remain in separate primary evidence.
+  snapshot_sha256: 93306828005e29b72e165b709d37c180064331864caccad5692f75ddf6613fc4
+- evidence_id: C199-AUTH-8
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/218214/
+  locator: Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase003-public/CHEBI218214.mol
+  accessed_at: '2026-10-21T21:38:30.134341Z'
+  support: supports
+  summary: Exact returned namespace/version and representation; scientific constraints
+    remain in separate primary evidence.
+  snapshot_sha256: f29b911f574df191badcad6b42425c8ad24e6e5cf94f1f6c6db52aff02346e4e
+- evidence_id: C199-AUTH-9
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/78312/
+  locator: Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase004-public/CHEBI78312.mol
+  accessed_at: '2026-10-21T21:39:10.121614Z'
+  support: supports
+  summary: Exact returned namespace/version and representation; scientific constraints
+    remain in separate primary evidence.
+  snapshot_sha256: 918ea9e61fbeb0eb89c923eafc1474f9bc8e353aa24526c48428b4ca29a28870
+- evidence_id: C199-AUTH-10
+  kind: authority
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q77566253.json
+  locator: Complete retained response /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase004-public/Q77566253.json
+  accessed_at: '2026-10-21T21:39:10.334224Z'
+  support: supports
+  summary: Exact returned namespace/version and representation; scientific constraints
+    remain in separate primary evidence.
+  snapshot_sha256: 32f42ca8c19f595024674dc122da529fb8fa7a815d03c5207e482dc14bfef48c
+- evidence_id: C199-CHEBI-SEARCH-1
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=WLQXISHGKXGNFV-UHFFFAOYSA-N&size=100
+  locator: Complete bounded exact key/name response; /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase002-public/chebi-key-199.json
+  accessed_at: '2026-10-21T21:35:23.809426Z'
+  support: supports
+  summary: HTTP200; original response retained. Exact candidate star/graph eligibility
+    is assessed separately; no universal absence inference.
+  snapshot_sha256: 300b8da0622518bcbbae83030110a831ce0dc1193b2b31a83c6b114d5acdbc54
+  search_scope: Official ChEBI exact literal key/name request, size100; complete returned
+    payload and actual status. No global no-hit claim.
+- evidence_id: C199-CHEBI-SEARCH-2
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=endophenazine&size=100
+  locator: Complete bounded exact key/name response; /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/phase004-public/chebi-name-199.json
+  accessed_at: '2026-10-21T21:39:08.908399Z'
+  support: supports
+  summary: HTTP200; original response retained. Exact candidate star/graph eligibility
+    is assessed separately; no universal absence inference.
+  snapshot_sha256: 25db3cae0b08200aa1fa678180dd35c4784e7f74c5628b9e142fe393f9a2c40c
+  search_scope: Official ChEBI exact literal key/name request, size100; complete returned
+    payload and actual status. No global no-hit claim.
+- evidence_id: C199-CONSUMERS
+  kind: record_content
+  reference: src/naturalproductmech/curate/structure_corrections.py
+  locator: Complete structure correction consumer
+  accessed_at: '2026-10-21T23:05:57.817949Z'
+  support: supports
+  summary: Existing replacement/split needs one exact source selector/full row and
+    a unique eligible committed three-star target/full row. It copies target SMILES
+    and withholds old xrefs; arbitrary primary SMILES/label overrides are not implemented.
+  snapshot_sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+- evidence_id: C199-XREF-CONSUMER
+  kind: record_content
+  reference: src/naturalproductmech/curate/xref_exclusions.py
+  locator: Complete current consumed route; actual code snapshot
+  accessed_at: '2026-10-21T23:05:57.817949Z'
+  support: supports
+  summary: Exact PubChem/NPAtlas literal exclusion requires an asserted source xref,
+    unique exact compound selector and complete original-row digest. It is not a positive-xref
+    admission or graph replacement route.
+  snapshot_sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+- evidence_id: C199-CLAIM-CONSUMER
+  kind: record_content
+  reference: src/naturalproductmech/curate/claim_references.py
+  locator: Complete current consumed route; actual code snapshot
+  accessed_at: '2026-10-21T23:05:57.817949Z'
+  support: supports
+  summary: Claim-reference routing enforces the complete original-row digest and rejects
+    structure_correction_note; joint identity repair needs reviewed tested composition.
+  snapshot_sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+- evidence_id: C199-STRAIN-CONSUMER
+  kind: record_content
+  reference: src/naturalproductmech/curate/producer_strains.py
+  locator: Complete current consumed route; actual code snapshot
+  accessed_at: '2026-10-21T23:05:57.817949Z'
+  support: supports
+  summary: Producer qualifiers enforce the complete original-row digest and supply
+    source-specific producer context; they do not themselves rewrite the BGC claim.
+  snapshot_sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+- evidence_id: C199-SEED-CONSUMER
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: Complete current consumed route; actual code snapshot
+  accessed_at: '2026-10-21T23:05:57.817949Z'
+  support: supports
+  summary: Source normalization and exact-key joins apply the maintained correction
+    consumers; producer qualification after structure correction is rejected and requires
+    a reviewed composition change rather than silent stacking.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: C199-PRIMARY-2002
+  kind: primary_source
+  reference: DOI:10.7164/antibiotics.55.801
+  locator: Original page802 Figure1 compound2; derived page from retained original
+    PDF; actual original-access receipt separately pinned; retained snapshot /private/tmp/npm-review-work/shared-next-batch020/review-support/derived-002/endophen2002-II-page2.png
+  accessed_at: '2026-10-21T21:40:45.306503Z'
+  support: supports
+  summary: The original neutral aromatic phenazine has1-carboxylic acid and9-normal-prenyl
+    substituents, with a terminal equal-methyl alkene. The depicted product is distinct
+    from reduced anionic PpzP substrate/product nodes.
+  snapshot_sha256: 691f11ebdcda6a7b87cd8e90de23df4482ac2f187761989d611e75c9b7cf596e
+- evidence_id: C199-PRIMARY-MAP
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/endophenazine-primary-comparison.json
+  locator: Complete independent diagnostic comparison and numbered source model; retained
+    snapshot /private/tmp/npm-review-work/shared-next-batch020/chemistry-prep/endophenazine-primary-comparison.json
+  accessed_at: '2026-10-21T21:50:21.468765Z'
+  support: supports
+  summary: Independent numbered whole phenazine graphs from original2002 Figure1 compound2
+    and2014 SI FigureS1 compound3 match the stored neutral final structures. Exact
+    E priority branches for200 are1prime versus oxygenated5prime; no tetrahedral centre
+    exists.
+  snapshot_sha256: 263f6300a70e50442ed8a79fa1831aba1ac9ea33fbf0bee89703342663ff87ae
+assessments:
+- assessment_id: R199-HISTORY
+  area: provenance
+  topic: Native status and complete audit history
+  outcome: supported
+  summary: All 4 retained events were read, with exact action sequence ['SEEDED_FROM_SOURCES',
+    'SEEDED_FROM_SOURCES', 'RECORD_CURATED', 'SEEDED_FROM_SOURCES']. Targets194/199
+    retain explicit mechanism-curation history alongside seeding; native status remains
+    SEEDED. History records are not scientific-review passes or proof of the mechanism
+    assertions.
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+  evidence_ids:
+  - R199-OWNER
+- assessment_id: R199-OPTIONAL
+  area: completeness
+  topic: Complete optional-assertion inventory
+  outcome: supported
+  summary: 'Present optional fields: biosynthetic_pathway, causal_graphs. Target191
+    definition/discussion, target193 seven assays/summary, and targets194/199 inline
+    pathways/graphs are explicitly present and receive separate scientific assessment.
+    No optional absence is a scientific defect by itself. This root inventory does
+    not duplicate the193 classifier finding or certify the mechanism claims.'
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+  evidence_ids:
+  - R199-OWNER
+  - R199-LOCAL
+  - R199-PUBCHEM-PREP
+- assessment_id: R199-FILING
+  area: representation
+  topic: Exact-key computed classification provenance
+  outcome: supported
+  summary: The exact-key NPClassifier projection and version npclassifier.gnps2.org@2026-09-07
+    reproduce the owner filing, superclass/class labels and glycoside value false.
+    Computed labels are not independent precursor, mechanism or natural-origin evidence.
+    Any accepted new identity requires reclassification for its effective key.
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+  evidence_ids:
+  - R199-OWNER
+  - R199-LOCAL
+- assessment_id: R199-ORGANISM-IDS
+  area: grounding
+  topic: Literal organism identifier routing
+  outcome: supported
+  summary: All literal P225 names match; available P685 values match the raw source
+    IDs. Q913896 explicitly lacks P685, so its NCBI synonym bridge is assessed independently.
+    Current synonym routing does not establish chemical occurrence or experimental-unit
+    support.
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+  evidence_ids:
+  - R199-Q22286915
+  - R199-Q22287108
+  - R199-OWNER
+- assessment_id: R199-TAXON-SCOPE
+  area: provenance
+  topic: Taxonomic names versus experimental stocks
+  outcome: supported
+  summary: Literal NCBI1900 resolves to1961 Streptomyces virginiae, whose OtherNames
+    include S. cinnamonensis. The record retains original source wording and merged-id
+    provenance. NCBI1892 S. anulatus is a separate species; taxonomic routing does
+    not equate experimental stocks or native and introduced-locus genetics.
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+  evidence_ids:
+  - R199-TAXON-CONTEXT
+  - R199-OWNER
+- assessment_id: R199-IMODULON-SCOPE
+  area: completeness
+  topic: Producer transcriptomic applicability
+  outcome: not_applicable
+  summary: No exact native producer is represented in the full catalogue. Related
+    organisms and experimental hosts do not establish the required construct/condition
+    match. No gene/module inference or compound-production absence is asserted.
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+  evidence_ids:
+  - R199-OWNER
+  - R199-IMODULON
+- assessment_id: S199-A-ORIGIN-OCC
+  area: evidence
+  topic: Native culture isolation versus arthropod association
+  outcome: supported
+  summary: Original2002 isolation supports exact A from S. anulatus 9663 and other
+    named cultures, with 9663 separated from the low-aeration 9843 endophenazine D
+    result. Arthropod isolation does not prove in-animal biosynthesis. All three S.
+    anulatus occurrence citations are compatible; the original 2007 abstract separately
+    reports A in S. cinnamonensis DSM 1042, without supplying a full-body isotope/protocol
+    audit.
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+  evidence_ids:
+  - S199-E-LOCAL
+  - S199-E-ENDO02-I
+  - S199-E-ENDO02-II
+  - S199-E-PPZ12
+  - S199-E-PPZ12-SI
+  - S199-E-ENDO07-OCC
+  dimensions:
+  - name: native_gene_and_compound_source
+    value: S. anulatus 9663
+    definition: Native culture isolation and cluster source.
+    evidence_ids:
+    - S199-E-ENDO02-I
+    - S199-E-PPZ09
+  - name: genetic_test_hosts
+    value: S. coelicolor M512 and later derivatives
+    definition: Introduced cosmids and deletions; not native 9663 knockout.
+    evidence_ids:
+    - S199-E-PPZ09
+    - S199-E-PPZ12
+    - S199-E-PPZ12-SI
+- assessment_id: S199-A-METHOD
+  area: evidence
+  topic: Heterologous knockout scope and native producer grade
+  outcome: concern
+  summary: Both 2009 ppzP inactivation and 2012 cluster deletions were performed on
+    introduced loci in S. coelicolor. They support the cloned locus. Purified tagged
+    PpzP and whole-cluster heterologous production remain positive. The imported Knock-out
+    studies term nevertheless generates native BGC_CHARACTERIZED under the actual
+    grading contract; this scope is not supported by those heterologous deletions.
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+  evidence_ids:
+  - S199-E-LOCAL
+  - S199-E-PPZ09
+  - S199-E-PPZ12
+  - S199-E-PPZ12-SI
+  - S199-E-GRADING
+- assessment_id: S199-A-GRAPH
+  area: graph
+  topic: All four nodes and three reaction edges
+  outcome: supported
+  summary: The graph and pathway correctly distinguish chemically reduced 5,10-dihydrophenazine-1-carboxylate,
+    PpzP, the reduced 9-dimethylallyl product, and oxidized A. DMAPP-dependent purified
+    PpzP assays use reduced substrate; sodium persulfate is added before authentic-standard
+    LCMS product assignment. The final oxidation is not an assigned enzyme step. RHEA:41580
+    covers prenylation only; oxidized PCA and GPP controls are not positive substrate
+    equivalents.
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+  evidence_ids:
+  - S199-E-LOCAL
+  - S199-E-PPZ09
+  - S199-E-RHEA
+  - S199-E-PPZ-NATIVE
+  - S199-E-PPZ-UNIPROT
+  - S199-E-PPZ-SEQUENCE-COMPARISON
+  dimensions:
+  - name: enzymatic_endpoint
+    value: Reduced prenylated phenazine
+    definition: Assayed through the oxidized LCMS endpoint after persulfate treatment.
+    evidence_ids:
+    - S199-E-PPZ09
+    - S199-E-RHEA
+  - name: graph_coverage
+    value: 4 nodes;3 edges
+    definition: Every existing node and edge assessed; no optional pathway expansion.
+    evidence_ids:
+    - S199-E-LOCAL
+    - S199-E-PPZ09
+- assessment_id: S199-A-PROTEIN
+  area: identity
+  topic: Native PpzP versus the experimental tagged construct
+  outcome: supported
+  summary: Current reviewed UniProt C4PWA1 and deposited CAX48655.1 exactly equal
+    the independently translated 299 aa native ppzP CDS 1..900 in FN178498.1. The
+    primary experiment uses N-terminal His8 pHis8-OS01 in E. coli BL21(DE3)pLysS.
+    Native sequence equality does not claim that the full tagged expression construct
+    is identical to the native chain.
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+  evidence_ids:
+  - S199-E-PPZ-NATIVE
+  - S199-E-PPZ-UNIPROT
+  - S199-E-PPZ-SEQUENCE-COMPARISON
+  - S199-E-PPZ09
+  dimensions:
+  - name: native_sequence
+    value: 299aa; three-way exact equality
+    definition: DNA translation, submitted protein and current reviewed protein.
+    evidence_ids:
+    - S199-E-PPZ-NATIVE
+    - S199-E-PPZ-UNIPROT
+    - S199-E-PPZ-SEQUENCE-COMPARISON
+  - name: experimental_construct
+    value: N-terminal His8 PpzP
+    definition: Full vector/tag junction sequence not reconstructed.
+    evidence_ids:
+    - S199-E-PPZ09
+- assessment_id: C199-A-IDENTITY
+  area: identity
+  topic: Stored representation and source-concept provenance
+  outcome: supported
+  summary: The complete source row BGC0001080:1 and source-concept hash reproduce
+    this stored representation; this does not establish that the upstream compound
+    label is correct. Formula, charge, Standard and fixed-H distinctions are independently
+    recorded. Primary support and any conflicting exact xref are assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+  evidence_ids:
+  - C199-OWNER
+  - C199-GRAPH
+  - C199-COMPARISON
+  dimensions:
+  - name: mibig_source_selector
+    value: BGC0001080:1
+    definition: Accession plus compound_index, distinct from the entry-level accession.
+    evidence_ids:
+    - C199-OWNER
+  - name: complete_raw_row_sha256
+    value: 90148db5161800fc94fc2a894f8c2b1bd3fdf798b73d853ff5fdc09c0afc149f
+    definition: Sorted compact ASCII JSON of every parsed TSV field, including empty
+      values.
+    evidence_ids:
+    - C199-OWNER
+- assessment_id: C199-A-GROUNDING
+  area: provenance
+  topic: Exact authority eligibility and source representation
+  outcome: supported
+  summary: No exact eligible row exists in the committed ChEBI projection for this
+    owner. Current bounded name/key searches do not justify a different congener or
+    a two-star grounding.
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+  evidence_ids:
+  - C199-OWNER
+  - C199-COMPARISON
+  - C199-AUTHORITY-COMPARISON
+  - C199-LOCAL-SEARCH
+  - C199-CHEBI-SEARCH-1
+  - C199-CHEBI-SEARCH-2
+- assessment_id: C199-A-XREF
+  area: representation
+  topic: Exact literal chemical identifiers
+  outcome: supported
+  summary: 'Literal source identifiers were compared exactly: [{"fixed_h_equal": true,
+    "literal": "pubchem:10039975", "standard_equal": true}, {"fixed_h_equal": true,
+    "literal": "npatlas:NPA015622", "returned_identifier": "NPA015622", "standard_equal":
+    true}]. Standard/fixed-H details are representation-level observations, not independent
+    experimental assignments.'
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+  evidence_ids:
+  - C199-PRIMARY-2002
+  - C199-PRIMARY-MAP
+  - C199-OWNER
+  - C199-COMPARISON
+  - C199-AUTHORITY-COMPARISON
+  - C199-AUTHORITY-DETAIL
+  - C199-AUTH-1
+  - C199-AUTH-2
+  - C199-AUTH-3
+  - C199-AUTH-4
+  - C199-AUTH-5
+  - C199-AUTH-6
+  - C199-AUTH-7
+  - C199-AUTH-8
+  - C199-AUTH-9
+  - C199-AUTH-10
+- assessment_id: C199-A-ELIGIBILITY
+  area: grounding
+  topic: Exact eligible ChEBI policy and serialization
+  outcome: supported
+  summary: 'Current exact candidates: [{"default_smiles_valid": true, "id": 218214,
+    "mol_vs_retained": {"fixed_h_equal": true, "standard_equal": true}, "name": "Endophenazine
+    A", "stars": 2}]. Only191 has a matching three-star entity. Named two-star alternatives
+    are ineligible under the current projection; adjacent three-star chanoclavine
+    is not elymoclavine. For197 the literal default JSON SMILES is invalid while MOL/InChI
+    match; for200 default JSON SMILES, stated InChI and official MOL all preserve
+    the same E constraint. Never copy an invalid or less-specific default string merely
+    because another format agrees.'
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+  evidence_ids:
+  - C199-PRIMARY-2002
+  - C199-PRIMARY-MAP
+  - C199-OWNER
+  - C199-COMPARISON
+  - C199-AUTHORITY-COMPARISON
+  - C199-AUTHORITY-DETAIL
+  - C199-AUTH-1
+  - C199-AUTH-2
+  - C199-AUTH-3
+  - C199-AUTH-4
+  - C199-AUTH-5
+  - C199-AUTH-6
+  - C199-AUTH-7
+  - C199-AUTH-8
+  - C199-AUTH-9
+  - C199-AUTH-10
+  - C199-CHEBI-SEARCH-1
+  - C199-CHEBI-SEARCH-2
+- assessment_id: C199-A-REACTION-NODES
+  area: representation
+  topic: Reduced anions versus neutral oxidized endophenazine A
+  outcome: supported
+  summary: Official three-star CHEBI78312 and78313 MOLs identify distinct reduced
+    anionic substrate/product graphs. They are not supposed to have the neutral oxidized
+    owner key. The owner already states chemical oxidation before final authentic-standard
+    readout; protein/construct and enzyme endpoint evidence are separately evaluated
+    in science.
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+  evidence_ids:
+  - C199-PRIMARY-2002
+  - C199-PRIMARY-MAP
+  - C199-OWNER
+  - C199-COMPARISON
+  - C199-AUTHORITY-COMPARISON
+  - C199-AUTHORITY-DETAIL
+  - C199-AUTH-1
+  - C199-AUTH-2
+  - C199-AUTH-3
+  - C199-AUTH-4
+  - C199-AUTH-5
+  - C199-AUTH-6
+  - C199-AUTH-7
+  - C199-AUTH-8
+  - C199-AUTH-9
+  - C199-AUTH-10
+- assessment_id: C199-A-PRIMARY-SCOPE
+  area: scope
+  topic: Primary identity and chemical precision
+  outcome: supported
+  summary: Independent original2002 compound2 constitution matches both Standard and
+    fixed-H retained forms and literal PubChem/NPAtlas. CHEBI78312/78313 are valid
+    distinct reduced anionic substrate/product nodes, not erroneous synonyms for the
+    neutral oxidized endophenazine A endpoint. The owner already qualifies post-assay
+    chemical oxidation.
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+  evidence_ids:
+  - C199-PRIMARY-2002
+  - C199-PRIMARY-MAP
+  - C199-OWNER
+  - C199-COMPARISON
+  - C199-AUTHORITY-COMPARISON
+  - C199-AUTHORITY-DETAIL
+findings:
+- finding_id: S199-F-METHOD
+  issue_key: mibig-bgc0001080-compound1-heterologous-knockout-scope
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Introduced-cluster knockouts overgrade the native endophenazine A producer
+  description: The actual primary genetic manipulations establish introduced-cluster
+    function in heterologous S. coelicolor, whereas the native S. anulatus 9663 origin
+    rests on culture isolation. The record emits BGC_CHARACTERIZED because the imported
+    knockout term is interpreted as native necessity. The positive purified enzyme
+    and heterologous locus evidence should remain.
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+  field_paths:
+  - producer_organisms[0].evidence_basis
+  - producer_organisms[0].notes
+  - biosynthetic_gene_clusters[0].locus_evidence_methods
+  - biosynthetic_gene_clusters[0].evidence
+  evidence_ids:
+  - S199-E-RAW
+  - S199-E-ENDO02-I
+  - S199-E-PPZ09
+  - S199-E-PPZ12
+  - S199-E-PPZ12-SI
+  - S199-E-GRADING
+  - S199-E-CONSUMERS
+  - S199-E-CLAIM-ROUTE
+  - S199-E-STRAIN-ROUTE
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Existing REPLACE method correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Legitimate claim-local routing and enforced original-row guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Full-row guarded reference consumer
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Optional independently supported 9663 qualifier
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Producer-only context limits
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Existing method/grade emission and source-preserving composition
+  - repository: CultureBotAI/NaturalProductMech
+    path: conf/producer_evidence.tsv
+    role: Native versus cloned-locus grading
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Immutable original compound row
+actions:
+- action_id: S199-ACT-METHOD
+  finding_ids:
+  - S199-F-METHOD
+  target_ids:
+  - naturalproductmech:mibig-383a92387c
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Existing REPLACE method correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Legitimate claim-local routing and enforced original-row guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Full-row guarded reference consumer
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Optional independently supported 9663 qualifier
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Producer-only context limits
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Existing method/grade emission and source-preserving composition
+  - repository: CultureBotAI/NaturalProductMech
+    path: conf/producer_evidence.tsv
+    role: Native versus cloned-locus grading
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Immutable original compound row
+  description: Use existing REPLACE for minted_identifier=naturalproductmech:mibig-383a92387c,
+    source=MIBIG, source_id=BGC0001080, source_label=endophenazine A, locus_evidence_methods=Enzymatic
+    assays|Heterologous expression. Pair the legitimate claim-reference row source_id=BGC0001080:1,
+    expected_source_row_sha256=90148db5161800fc94fc2a894f8c2b1bd3fdf798b73d853ff5fdc09c0afc149f
+    with producer_reference=DOI:10.7164/antibiotics.55.794, locus_reference=DOI:10.1074/jbc.M901312200,
+    source_reference=DOI:10.1074/jbc.M901312200 and nonempty curator/date/rationale.
+    Its consumed complete-row digest guards the joint correction; REPLACE alone does
+    not enforce such a digest. The rationale must preserve the later 2012 introduced-host
+    context and explain the producer/locus distinction. This retains CLUSTER_DEMONSTRATED
+    while making native producer SOURCE_ASSERTION. An optional separately grounded
+    strain 9663 row can expose the native stock. Do not remove positive enzyme or
+    heterologous evidence, describe a native knockout, change the taxon/chemical graph
+    or invent a final oxidase. Claim-reference correction rejects a structure-correction
+    marker; coordinate any simultaneous identity repair through a tested compatible
+    route. Producer-only strain context is not falsely claimed to populate BGC notes.
+  acceptance_checks:
+  - Exact BGC0001080:1 version 5 and full original-rowSHA guard both consumed decisions
+    before emission.
+  - Native producer becomes SOURCE_ASSERTION while locus stays CLUSTER_DEMONSTRATED
+    with the two supported method terms.
+  - Producer isolation and locus enzymology have exact claim-local primary citations
+    and explicit introduced-host context.
+  - The existing four-node/three-edge reduced-product graph and native protein example
+    are retained; no construct or chemical oxidation overclaim is introduced.
+  - Raw source bytes, other congeners, taxa, occurrence citations and identity remain
+    unchanged; canary/reproduction/full gates verify the generated correction.
+limitations:
+- The root section inventories present claims and source routing; chemical identities,
+  source-specific experiments, definition claims and optional-content assertions require
+  their separately scoped scientific assessments.
+- Original 2009 figure pixels and PDF not independently retained; complete opened
+  author-manuscript scientific transcription supports the stated methods.
+- 2007 occurrence full main remains unread, so feeding details beyond its abstract
+  are not independently verified.
+- No exact tagged-construct equivalence or untested native last-step enzyme is inferred.
+- Original source access times and read scopes are preserved; formal authoring is
+  not a new retrieval.
+- Independent chemistry owns exact graph/xref findings. Optional absent pathways,
+  proteins or assays do not independently require a finding.
+- All seven source sets are reconciled; these four candidates have no emitted PubChem
+  assay rows.
+- Actions describe future maintained-input curation, not changes already performed;
+  no generated owner, source inventory, campaign or scientific status is mutated.
+- Authority matches establish the representations actually returned at their retained
+  access times; they are not independent experimental structure or absolute-hand determinations.
+  Root and science sections separately assess organism, locus, classification and
+  history claims.
+- Authority equality is not independent experimental proof. No new spectral reassignment
+  or biological mechanism follows from the chemical comparison.
+- The reproduction report retains 42 withheld ambiguous producer claims, 161 merged-taxon
+  rewrites and five unresolved assay-organism targets.
+- 499 identifier-label plausibility warnings are non-blocking; 4750 pairs have no
+  configured adapter and were skipped.
+- Four tests were skipped and two dependency deprecation warnings remain. Passing
+  configured QC is not independent scientific verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+- Scientific conclusions integrate the chemical, biological and provenance assessments;
+  source access and unresolved scopes remain explicit.
+tags:
+- path-order-campaign
+- batch-020
+```
