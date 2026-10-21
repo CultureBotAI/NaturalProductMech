@@ -1,0 +1,1059 @@
+# Z-isocyanovinyl indole: exact heterologous formation and equivalent names
+
+- Review: 20261021T080941Z-3-z-2-isocyanovinyl-indole
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T08:00:57.259641Z
+- Finished UTC: 2026-10-21T08:09:41.463703Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Exact Z identity, three-star grounding, primary bacterial isolation and antibacterial activity are supported. The cited welI1–3 recombinant-cell experiment supports the locus grade. One minor finding resolves an answerable naming discussion. The separate imported enzymatic-assay method remains unverified without the supplement.
+
+## Scope And Provenance
+
+One complete owner with all source concepts, definition, activity summary, pinned sibling relation, native producer/locus claims, classification, discussion and history.
+
+Selection: Seventeenth initially unreviewed path, seventh in batch 002 from fresh origin/main. Starts and saves follow path order. The fresh-main authoritative list has 91 valid bundles covering 54 of 3,116 records; ten reviews in pending PR 1000 are additional campaign coverage. Ignored files were included. This bundle has one target.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 10ed28fcdadb3d955c30732ff05b5d0e4adbee3b.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CHEBI:140434 | data/natural_products/alkaloids/3-z-2-isocyanovinyl-indole.yaml | generated | 3-[(Z)-2-isocyanovinyl]indole |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | CHEBI:140434 | Entire target has zero ERROR rows. |
+| Corpus path and filing integrity | passed | True | CHEBI:140434 | All 3,116 record files agree with 3,116 PATHS.tsv rows and their pinned filing pathways. |
+| Corpus reproduction | passed | True | CHEBI:140434 | All 3,116 records are byte-identical to the seeder output from committed inventories and maintained curation inputs. |
+| Native deterministic review queue | passed | True | CHEBI:140434 | The documented exhaustive queue command produced 8,928 diagnostic rows in 12 queues; deterministic queue output does not establish scientific review. |
+| Configured ontology identifier-label correspondence | passed | True | CHEBI:140434 | Full configured gate passed using existing CHEBI and GO caches plus the committed taxonomy adapter: 13,434 canonical matches, 646 synonym matches, 35 documented exceptions, 499 warning-only mismatches and 4,722 pairs skipped because their prefixes have no adapter. |
+| Full repository quality gate after environment repair | passed | True | CHEBI:140434 | The full documented just qc recipe passed after installing the pinned linter, allowing the read-only governance fetch, and restoring the required provenance tag. Tests: 999 passed, 4 skipped, 2 warnings. Closed-schema validation: 3,116 records and zero errors. Documentation, provenance, source queue, governed artifacts, generated pages, reproduction, filing integrity and corpus reporting all passed. |
+| Exact identity and Z stereochemistry | passed | True | CHEBI:140434 | The owner, default ChEBI MOL and full InChI, PubChem graph and pinned sibling full InChI/key agree. Three-star grounding is current. |
+| Primary isolation and antibacterial support | passed | True | CHEBI:140434 | The original 1976 paper and its structure drawing support bacterial isolation, the favored exact isocyanide assignment and antibacterial activity. Assay thresholds are not mislabeled MIC. |
+| Exact-product heterologous formation | passed | True | CHEBI:140434 | The cited 2014 primary identifies exact Z product 10 from pBAD welI1–3 recombinant E. coli against a synthetic standard. Locus grade and native producer grade stay distinct. |
+| Separate exact-product enzymatic-assay method | unavailable | True | CHEBI:140434 | The source also imports Enzymatic assays. Accessible detailed main text resolves recombinant-cell formation; a separate isolated-enzyme protocol and controls remain unverified because the SI was not obtained. The independently supported heterologous grade does not depend on this unresolved method. |
+| Pinned sibling relation | passed | True | CHEBI:140434 | The complete exact sibling record and current inventory row agree on key, class and source revision. |
+| Native expression-source applicability | not_applicable | False | CHEBI:140434 | The complete returned catalogue has no matching native cyanobacterial dataset or established historical isolate match. |
+
+## Scientific And Domain Assessments
+
+### Fully specified Z isocyanide identity
+
+identity: supported. Targets: CHEBI:140434.
+
+Complete graph agreement supports the represented connectivity and Z geometry. Charge-separated isocyanide valence is intentional. Current ChEBI three-star eligibility supports EXACT grounding. The unspecified parent CHEBI:144370 has a different stereo key and is not substituted.
+
+### Pseudomonas definition and natural origin
+
+evidence: supported. Targets: CHEBI:140434.
+
+The original 1976 isolation paper supports the sourced definition and NATURAL_PRODUCT designation. The authors favored structure I from spectroscopy, retaining the historical caution. Later authority and exact synthetic-standard BGC evidence provide the represented identity context. Pseudomonas NCIB 11237 is not relabeled P.aeruginosa or conflated with UTEX B1830.
+
+### Antibacterial summary
+
+evidence: supported. Targets: CHEBI:140434.
+
+The summary is faithful to the pinned sibling class and independently supported by the original bioactivity-guided isolation and cup-plate results. No potency model, MIC, molecular target or clinical efficacy is asserted.
+
+### Pinned same-structure sibling
+
+consistency: supported. Targets: CHEBI:140434.
+
+The exact sibling record at the full matching revision agrees on full InChI/key and class. This verifies the asserted key-based link; neither its raw aromatic SMILES export nor its inherited BGC annotation is treated as an independent primary experiment.
+
+### Vinyl and ethenyl name equivalence
+
+identity: concern. Targets: CHEBI:140434.
+
+The stored names are equivalent Z indolyl isocyanide descriptions, directly corroborated by ChEBI IUPAC nomenclature, full graphs and primary structure. The open name-disagreement discussion is now answerable; neither upstream name requires a scientific correction.
+
+### Computed scaffold class and source-derived locus classes
+
+consistency: supported. Targets: CHEBI:140434.
+
+The exact classifier row and indole scaffold support ALKALOIDS and its computed hierarchy. TERPENE/OTHER belongs to the full downstream MIBiG pathway classification; it does not claim the C11 precursor itself has a terpene moiety.
+
+### Seeded source concepts and history
+
+provenance: supported. Targets: CHEBI:140434.
+
+The source rows, exact authority grounding, versioned sibling join and two seed events are coherent. SEEDED does not claim scientific curation. No owner/source or audit-history edits were made.
+
+### Optional mechanisms and expression context
+
+completeness: not_applicable. Targets: CHEBI:140434.
+
+The complete owner has no mechanism graph, pathway, protein, molecular target or clinical assertion requiring validation. Their absence is not a defect. No native-strain iModulonDB dataset was established by the complete returned catalogue.
+
+### Correct exact-compound source and biosynthesis citation
+
+evidence: supported. Targets: CHEBI:140434.
+
+The record cites the actual cluster/precursor study. Its compound-level citation happens to be the correct biosynthesis reference for this exact precursor. No family-wide citation-routing finding is transferred from the other BGC0000668 records.
+
+### Exact Z precursor formation by the recorded locus
+
+evidence: supported. Targets: CHEBI:140434.
+
+The pBAD welI1–3 E. coli experiment identifies the exact Z product against a synthetic standard and directly supports CLUSTER_DEMONSTRATED. This is collective operon sufficiency in that heterologous host; it does not prove each gene individually necessary or the entire BGC independently sufficient.
+
+### Native source assertion remains distinct from recombinant-cell formation
+
+evidence: supported. Targets: CHEBI:140434.
+
+UTEX B1830 is correctly linked to KF811479.1 and the genes used in the cited study. Native producer SOURCE_ASSERTION remains appropriate: recombinant E. coli production does not establish native quantitative production, gene necessity or axenic cyanobacterial origin.
+
+### Historical construct and separate purified-enzyme assay detail
+
+evidence: unknown. Targets: CHEBI:140434.
+
+The main text resolves the operon, promoter, heterologous host and exact Z product. Unavailable SI prevents verification of plasmid backbone, complete insert/primer sequence, tags, expression conditions, extra controls and a separate purified-enzyme protocol. No protein example or detailed construct assertion exists in the owner. This limitation does not negate the independently documented heterologous demonstration.
+
+### Source cluster class and absent numerical bounds
+
+consistency: supported. Targets: CHEBI:140434.
+
+TERPENE/OTHER preserve the versioned broader cluster assignment while NPClassifier separately files this target as a simple indole alkaloid. Omitted numerical bounds correctly avoid representing MIBiG 0/0 placeholders as biological coordinates.
+
+## Findings
+
+### R-NAME-THREAD: Equivalent names leave an answerable identity discussion open
+
+minor / open / confirmed; issue key: chebi140434-equivalent-names-unresolved.
+
+The existing question asks whether isocyanovinyl and isocyanoethenyl denote different structures. Current ChEBI explicitly supplies both name forms for the same exact Z graph, independently consistent with the primary drawing. Record an evidence-backed resolution of the question; no label or structural correction is needed.
+
+## Recommended Actions And Acceptance Checks
+
+### R-RESOLVE-NAMES
+
+Resolve only the existing name-disagreement discussion through its curator-owned status, actual resolved_date, resolution_note and exact evidence. Explain vinyl/ethenyl equivalence and Z geometry. Preserve source labels and generated prompt; use the existing discussion-answer preservation contract.
+
+- The resolution cites the exact ChEBI name/structure record and original 1976 drawing, retains Z specificity, and does not conflate nitrile with isocyanide.
+- After the documented targeted curation/reseed workflow, the answer persists and unrelated fields remain unchanged.
+- Run target strict validation, reproduction verification and repository QC required by the curation workflow.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| R-OWNER | data/natural_products/alkaloids/3-z-2-isocyanovinyl-indole.yaml; Entire owner, all nested source claims, discussion and both seed-history events | supports | The owner is one fully specified Z indolyl vinyl isocyanide, exact CHEBI:140434, source BGC0000668 compound 12. It has one source-asserted cyanobacterial producer and demonstrated locus, a ChEBI definition describing Pseudomonas isolation, one antibacterial summary and a pinned AntibioticMech same-structure link. No occurrence list, causal graph, pathway, molecular target, protein example or clinical claim is present. |
+| R-CHEMISTRY | /private/tmp/npm-review-work/017/identity-comparison.json; Five complete graph comparisons with RDKit; explicit nonaromatic alkene stereo | supports | Owner, official ChEBI default MOL, ChEBI InChI, PubChem graph and pinned sibling InChI yield the identical complete key JQMYMZZLIOIXEO-SREVYHEPSA-N and formula C11H8N2. The alkene is Z, formal net charge is zero and there are no tetrahedral stereocentres. The charge-separated isocyanide is not a nitrile; stereo_complete:true is appropriate. |
+| R-CHEBI | https://www.ebi.ac.uk/chebi/backend/api/public/compound/140434/; Complete released three-star entry, definition, IUPAC/UniProt names, synonyms, default structure, role and citation fields | supports | CHEBI:140434 is three stars with the owner full InChI/key and definition. It lists the isocyanoethenyl name as IUPAC/UniProt nomenclature and isocyanovinyl in the preferred name, plus B-371 synonyms. It has antibacterial-agent and bacterial-metabolite roles; PMID 993124 is among its citations. The exported aromatic SMILES lacks the pyrrolic H form, so graph confirmation uses its default MOL and full InChI, not that export. |
+| R-CHEBI-MOL | https://www.ebi.ac.uk/chebi/backend/api/public/molfile/140434/; Complete official default molfile, parsed independently | supports | The default MOL exactly encodes the owner Z indolyl isocyanide and neutral overall charge. It resolves the identity despite the malformed aromatic SMILES export. |
+| R-PUBCHEM | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/JQMYMZZLIOIXEO-SREVYHEPSA-N/property/InChI,InChIKey,MolecularFormula,IsomericSMILES/JSON; Full-key property result CID 101306927 | supports | The exact full-key lookup returns the same C11H8N2 structure and Z geometry. It is an identity cross-check, not independent biological evidence. |
+| R-1976 | https://www.jstage.jst.go.jp/article/antibiotics1968/29/8/29_8_850/_pdf/-char/en; Entire three-page original letter pp 850–852; p 851 structure I, Figure 2 and Table 1 visually inspected in this review | supports | Evans, Napier and Yates isolate B371 from culture broth of unidentified Pseudomonas NCIB 11237. Purification follows antibacterial activity. Reported mass 168.0683 agrees with C11H8N2; NMR coupling 9Hz supports cis geometry, and IR 2138cm-1 favors the isocyanide over the alternative nitrile. The original drawing explicitly distinguishes structure I N-linked isocyanide from II C-linked nitrile and favors I with cautious wording. Table 1 reports agar cup-plate inhibition thresholds, including 8 micrograms/mL against S. aureus Oxford H VI and 2 against Flavobacterium C1980; these are not MIC measurements. This primary supports bacterial origin and antibacterial activity without assigning a species name to the isolate. |
+| R-SIBLING | https://raw.githubusercontent.com/CultureBotAI/AntibioticMech/74f6cc8362498900f2fe2c13d0b6fdb66dd30976/data/antibiotics/antibacterial/3-z-2-isocyanovinyl-indole.yaml; Entire pinned sibling YAML at full commit 74f6cc8362498900f2fe2c13d0b6fdb66dd30976 | supports | The sibling is CHEBI:140434 with identical full InChI/key, same definition and ANTIBACTERIAL classification. Its key and InChI substantiate the declared SAME_STRUCTURE/SAME_INCHIKEY relation. Its inherited BGC assertion is a separate database claim, not independent primary production proof. Its malformed ChEBI SMILES does not alter the key-based basis actually asserted by this link. |
+| R-SIBLING-INVENTORY | data/raw/antibioticmech_inchikeys.tsv; Exact full-key row 1023, all six columns | supports | The pinned export has CHEBI:140434, identical complete key, ANTIBACTERIAL class, matching slug and full source commit. The owner summary and short source-version prefix faithfully reflect it. |
+| R-LOCAL-SOURCES | /private/tmp/npm-review-work/017/local-sources.json; Complete resolved owner and all exact-key rows from six full TSV parsers | supports | MIBiG compound 12 and three-star ChEBI rows agree on full key and equivalent Z names. The computed classifier row is Alkaloids / Tryptophan alkaloids / Simple indole alkaloids, glycoside false. No exact-key LOTUS, CyanoMetDB or ChEBI structured-origin row occurs in the full inspected inventories; the Pseudomonas information remains in the sourced definition. This bounded inventory result includes ignored source files. |
+| R-DISCUSSION-PRESERVATION | scripts/seed_from_sources.py; CURATOR_OWNED_DISCUSSION_FIELDS lines325ff; preserve-curation lines395–414; name-disagreement generation lines1530–1558 | supports | The seeder raises the name comparison but preserves curator-owned status, resolved_date, resolution_note and supporting evidence by discussion_id. A curator can resolve this exact existing thread with an evidence-backed answer that survives reseeding, without modifying upstream compound names. |
+| R-IMODULON | /private/tmp/npm-review-work/010/imodulon-datasets.txt; Complete 28-row catalogue and original command receipt010/imodulon-context-receipts.json | context_only | The returned catalogue has no Hapalosiphon dataset. Its Pseudomonas datasets concern named species/strains that are not a demonstrated match to NCIB 11237. E. coli expression-host data would not establish regulation of the native cyanobacterial cluster. No strain-matched expression query is applicable here. |
+| bgc017-owner-source | data/natural_products/alkaloids/3-z-2-isocyanovinyl-indole.yaml; data/raw/mibig_compounds.tsv; Full owner read08:06:22Z and exact row BGC0000668:12; local-sources.json | supports | This target is exact Z precursor JQMYMZZLIOIXEO-SREVYHEPSA-N, not a later hapalindole or welwitindolinone congener. The raw compound 12 row cites DOI 10.1002/cbic.201300794 from compound-level mass-spectrometry evidence. The owner retains separate SOURCE_ASSERTION producer and CLUSTER_DEMONSTRATED locus claims, with no inline protein or mechanistic graph. Canonical full source-row SHA256 is 83b549d1816290437610d1a6ac4d4d471951eeeefcc86c4c61c31c9824b05c12. |
+| bgc017-mibig | https://mibig.secondarymetabolites.org/repository/BGC0000668.5/annotations.json; Complete current016/bgc668-v5.json re-compared specifically at compounds[11], loci, taxonomy and classes; original retrieval retained | supports | Version 5 compound 12 has exactly the stored stereochemical SMILES and C11H8N2, with mass-spectrometry reference DOI 10.1002/cbic.201300794. The source gives KF811479.1, UTEX B1830 taxon 1433842, enzymatic and heterologous methods, and unspecified 0/0 boundaries. TERPENE/OTHER describe the broader BGC; they do not classify this simple indole precursor itself as a terpene. |
+| bgc017-primary2014 | https://pmc.ncbi.nlm.nih.gov/articles/PMC4382313/; DOI 10.1002/cbic.201300794 / PMID:24677572; full004/wel2014-primary.xml, especially P5–P6, P9–P11 and Figure 3 caption; original retrieval retained | supports | The authors cloned welI1–3 as one operon under pBAD and expressed it in E. coli. The observed product 10 matched the synthetic Z standard by HPLC, with no E isomer observed. Figure 3 explicitly labels this in vivo characterization. This is exact-target heterologous formation by genes from the recorded cluster. The native source culture was xenic; this experiment is not an axenic native-production or knockout demonstration. |
+| bgc017-genomic-bridge | https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=KF811479.1&amp;db=nuccore&amp;report=genbank&amp;retmode=text; 016/bgc-kf811479.gb source feature, PMID reference and WelI1/WelI2/WelI3 CDSs; original retrieval reused | supports | KF811479.1 is a 36570-bp partial indolinone cluster from UTEX B1830, taxon 1433842, linked to the cited 2014 study. WelI1 is AHI58841.1 at complement(32131..33102), WelI2 is AHI58840.1 at complement(30728..31723), and WelI3 is AHI58839.1 at complement(29910..30731). These ground the gene names and native locus; they do not establish the complete historical plasmid sequence, tags or individual gene necessity. |
+| bgc017-experiment-granularity | https://pmc.ncbi.nlm.nih.gov/articles/PMC4382313/; P6 exact operon experiment and P10 general in-vitro wording, plus Figure 3B caption | partial | The detailed exact-product result is recombinant-cell production from the three-gene operon. The concluding paragraph uses broader in-vitro characterization wording for WelI1–3/WelP2, but the accessible body does not provide an isolated WelI enzyme assay protocol for this compound. The heterologous result independently supports the strong locus grade; separate purified-enzyme conditions remain unverified without the SI. |
+| bgc017-si-access | https://chemistry-europe.onlinelibrary.wiley.com/doi/10.1002/cbic.201300794; Publisher Supporting Information link cbic_201300794_sm_miscellaneous_information.pdf;017/bgc-si-access.json and explicit public linked-download attempt | unknown | The official publisher page identifies the 4-MB supplement, but its linked download returned HTTP 403. The NCBI media path returned HTTP 404. EuropePMC supplementaryFiles returned HTTP 200 containing a typed non-open-access error XML, not a ZIP or supplement. No SI content was obtained or inspected in this attempt. |
+| bgc017-grading-rule | docs/HARMONIZATION.md; Producer/locus method table in unchanged docs/HARMONIZATION.md; original015 rule-file access retained and explicitly applied to this exact heterologous result | supports | Heterologous expression maps to CLUSTER_DEMONSTRATED for the locus and SOURCE_ASSERTION for the native producer. The exact Z operon result justifies retaining these distinct grades. The gene set is a tested subset of the deposited BGC, not a claim that the entire 36570-bp sequence was expressed. |
+
+## Limits And Additional Notes
+
+- The 1976 authors favor the isocyanide assignment on spectroscopic grounds; this review preserves their caution and does not reinterpret the raw NMR spectrum. Its inhibition thresholds are not reported as MICs.
+- Only owner assertions and immediately relevant evidence are reviewed. No mechanistic target or species-level identity is inferred for the unidentified historical Pseudomonas isolate.
+- The exact pinned sibling is used to verify the key-based relation and source class, not as independent scientific evidence. The malformed aromatic SMILES export is an external source/sibling limitation; this owner uses a coherent MIBiG graph.
+- The optional expression-source assessment is bounded to the complete returned catalogue; failure to match a native strain does not imply absent gene expression.
+- The 2014 main body and captions were inspected in full, with the original 06:53:50Z access retained. The 017 supplement attempt remained unavailable, so no SI condition, primer, tag or construct sequence is asserted as read.
+- The demonstrated experiment is production of the exact Z compound by a welI1–3 operon in E. coli. Native cyanobacterial necessity, axenic production, individual gene necessity and whole-BGC reconstitution are not inferred.
+- A separate purified-enzyme assay for this exact precursor is not independently resolved by the accessible detailed body. The generic Enzymatic assays source method is preserved as imported vocabulary, while exact heterologous evidence suffices for the locus grade.
+- The source gene/accession mapping is annotation and strain provenance, not independent validation of historical construct sequences. No graph or native-protein example requires a separate sequence-equivalence audit here.
+- The configured full identifier-label gate accepts 499 warning-level taxon-label mismatches, 35 explicit exceptions and 4,722 no-adapter pairs across the corpus; its exit 0 is not independent verification of every identifier or of this record's scientific claims.
+- The quality suite skips the optional sibling AntibioticMech checkout comparison because the isolated clone has no sibling checkout, and skips three command-frontmatter cases because their parameter sets are empty. Pinned-hash and network governance checks still ran.
+- Shared native gates assess deterministic corpus consistency and configured invariants. They do not establish biological production, stereochemical specificity, evidence adequacy or literature-level claim support.
+- No owner, source inventory, native curation status or history was edited. Save records this review observation, not a correction.
+- Baseline deterministic gates retain actual command receipts from the identical tracked base; target strict validation ran afresh.
+- The confirmed heterologous result is specific to this Z precursor. It is not transferred to other downstream products in BGC0000668.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T080941Z-3-z-2-isocyanovinyl-indole
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Z-isocyanovinyl indole: exact heterologous formation and equivalent names'
+started_at: '2026-10-21T08:00:57.259641Z'
+finished_at: '2026-10-21T08:09:41.463703Z'
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Exact Z identity, three-star grounding, primary bacterial isolation and antibacterial
+  activity are supported. The cited welI1–3 recombinant-cell experiment supports the
+  locus grade. One minor finding resolves an answerable naming discussion. The separate
+  imported enzymatic-assay method remains unverified without the supplement.
+source:
+  git_revision: 10ed28fcdadb3d955c30732ff05b5d0e4adbee3b
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/3-z-2-isocyanovinyl-indole.yaml
+    sha256: 0ef0ff10552f1846d9f97a0ec00040bfca897ac3257c049d90d394038e94f2ce
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete owner with all source concepts, definition, activity summary,
+    pinned sibling relation, native producer/locus claims, classification, discussion
+    and history.
+  selection: Seventeenth initially unreviewed path, seventh in batch 002 from fresh
+    origin/main. Starts and saves follow path order. The fresh-main authoritative
+    list has 91 valid bundles covering 54 of 3,116 records; ten reviews in pending
+    PR 1000 are additional campaign coverage. Ignored files were included. This bundle
+    has one target.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:140434
+targets:
+- target_id: CHEBI:140434
+  path: data/natural_products/alkaloids/3-z-2-isocyanovinyl-indole.yaml
+  label: 3-[(Z)-2-isocyanovinyl]indole
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/3-z-2-isocyanovinyl-indole.yaml
+    role: Curator-owned assertions, inline mechanisms, discussions and audit history
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Three-star authority identity and sourced definition
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/antibioticmech_inchikeys.tsv
+    role: Pinned sibling corpus identity and activity summary
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: Entire target has zero ERROR rows.
+  target_ids:
+  - CHEBI:140434
+  command: just validate-strict data/natural_products/alkaloids/3-z-2-isocyanovinyl-indole.yaml
+    --out /private/tmp/npm-review-work/017/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T08:01:00.347816Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 record files agree with 3,116 PATHS.tsv rows and their pinned
+    filing pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-corpus
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016808+00:00; finished 2026-10-21T06:37:52.997020+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/verify-corpus.log. Reused
+    for batch 002 because the tracked source tree and HEAD remain the exact same base
+    commit; this command was not rerun for batch 002. The review author must assign
+    the exact target_ids.'
+  target_ids:
+  - CHEBI:140434
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 records are byte-identical to the seeder output from committed
+    inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-reproduction
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016703+00:00; finished 2026-10-21T06:38:35.570687+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/verify-reproduction.log.
+    Reused for batch 002 because the tracked source tree and HEAD remain the exact
+    same base commit; this command was not rerun for batch 002. The review author
+    must assign the exact target_ids.'
+  target_ids:
+  - CHEBI:140434
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The documented exhaustive queue command produced 8,928 diagnostic rows
+    in 12 queues; deterministic queue output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just review-queue
+    --tsv /private/tmp/npm-review-queue-initial.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016598+00:00; finished 2026-10-21T06:37:11.018366+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/review-queue.log. Reused
+    for batch 002 because the tracked source tree and HEAD remain the exact same base
+    commit; this command was not rerun for batch 002. The review author must assign
+    the exact target_ids.'
+  target_ids:
+  - CHEBI:140434
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'Full configured gate passed using existing CHEBI and GO caches plus the
+    committed taxonomy adapter: 13,434 canonical matches, 646 synonym matches, 35
+    documented exceptions, 499 warning-only mismatches and 4,722 pairs skipped because
+    their prefixes have no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:56.498212+00:00; finished 2026-10-21T06:38:54.776253+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/validate-products.log.
+    Reused for batch 002 because the tracked source tree and HEAD remain the exact
+    same base commit; this command was not rerun for batch 002. The review author
+    must assign the exact target_ids.'
+  target_ids:
+  - CHEBI:140434
+- check_id: shared-qc
+  name: Full repository quality gate after environment repair
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed after installing the pinned
+    linter, allowing the read-only governance fetch, and restoring the required provenance
+    tag. Tests: 999 passed, 4 skipped, 2 warnings. Closed-schema validation: 3,116
+    records and zero errors. Documentation, provenance, source queue, governed artifacts,
+    generated pages, reproduction, filing integrity and corpus reporting all passed.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:46:02.058886+00:00; finished 2026-10-21T06:54:53.950582+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/qc-attempt4.log. Reused
+    for batch 002 because the tracked source tree and HEAD remain the exact same base
+    commit; this command was not rerun for batch 002. The review author must assign
+    the exact target_ids.'
+  target_ids:
+  - CHEBI:140434
+- check_id: C-IDENTITY
+  name: Exact identity and Z stereochemistry
+  status: passed
+  required: true
+  summary: The owner, default ChEBI MOL and full InChI, PubChem graph and pinned sibling
+    full InChI/key agree. Three-star grounding is current.
+  target_ids:
+  - CHEBI:140434
+  evidence_ids:
+  - R-CHEMISTRY
+  - R-CHEBI
+  - R-CHEBI-MOL
+- check_id: C-ORIGIN-ACTIVITY
+  name: Primary isolation and antibacterial support
+  status: passed
+  required: true
+  summary: The original 1976 paper and its structure drawing support bacterial isolation,
+    the favored exact isocyanide assignment and antibacterial activity. Assay thresholds
+    are not mislabeled MIC.
+  target_ids:
+  - CHEBI:140434
+  evidence_ids:
+  - R-1976
+- check_id: C-BGC-EXACT
+  name: Exact-product heterologous formation
+  status: passed
+  required: true
+  summary: The cited 2014 primary identifies exact Z product 10 from pBAD welI1–3
+    recombinant E. coli against a synthetic standard. Locus grade and native producer
+    grade stay distinct.
+  target_ids:
+  - CHEBI:140434
+  evidence_ids:
+  - bgc017-primary2014
+  - bgc017-genomic-bridge
+- check_id: C-ENZYMATIC-SCOPE
+  name: Separate exact-product enzymatic-assay method
+  status: unavailable
+  required: true
+  summary: The source also imports Enzymatic assays. Accessible detailed main text
+    resolves recombinant-cell formation; a separate isolated-enzyme protocol and controls
+    remain unverified because the SI was not obtained. The independently supported
+    heterologous grade does not depend on this unresolved method.
+  target_ids:
+  - CHEBI:140434
+  evidence_ids:
+  - bgc017-experiment-granularity
+  - bgc017-si-access
+- check_id: C-SIBLING
+  name: Pinned sibling relation
+  status: passed
+  required: true
+  summary: The complete exact sibling record and current inventory row agree on key,
+    class and source revision.
+  target_ids:
+  - CHEBI:140434
+  evidence_ids:
+  - R-SIBLING
+  - R-SIBLING-INVENTORY
+- check_id: C-IMODULON
+  name: Native expression-source applicability
+  status: not_applicable
+  required: false
+  summary: The complete returned catalogue has no matching native cyanobacterial dataset
+    or established historical isolate match.
+  target_ids:
+  - CHEBI:140434
+  evidence_ids:
+  - R-IMODULON
+evidence:
+- evidence_id: R-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/3-z-2-isocyanovinyl-indole.yaml
+  locator: Entire owner, all nested source claims, discussion and both seed-history
+    events
+  accessed_at: '2026-10-21T08:08:34.712632Z'
+  support: supports
+  summary: The owner is one fully specified Z indolyl vinyl isocyanide, exact CHEBI:140434,
+    source BGC0000668 compound 12. It has one source-asserted cyanobacterial producer
+    and demonstrated locus, a ChEBI definition describing Pseudomonas isolation, one
+    antibacterial summary and a pinned AntibioticMech same-structure link. No occurrence
+    list, causal graph, pathway, molecular target, protein example or clinical claim
+    is present.
+  snapshot_sha256: 0ef0ff10552f1846d9f97a0ec00040bfca897ac3257c049d90d394038e94f2ce
+- evidence_id: R-CHEMISTRY
+  kind: validation
+  reference: /private/tmp/npm-review-work/017/identity-comparison.json
+  locator: Five complete graph comparisons with RDKit; explicit nonaromatic alkene
+    stereo
+  accessed_at: '2026-10-21T08:08:34.712632Z'
+  support: supports
+  summary: Owner, official ChEBI default MOL, ChEBI InChI, PubChem graph and pinned
+    sibling InChI yield the identical complete key JQMYMZZLIOIXEO-SREVYHEPSA-N and
+    formula C11H8N2. The alkene is Z, formal net charge is zero and there are no tetrahedral
+    stereocentres. The charge-separated isocyanide is not a nitrile; stereo_complete:true
+    is appropriate.
+  snapshot_sha256: dff764a3da337590c5f6194a77248750012f49fb174133d34ab3a1f271ea29d5
+- evidence_id: R-CHEBI
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/140434/
+  locator: Complete released three-star entry, definition, IUPAC/UniProt names, synonyms,
+    default structure, role and citation fields
+  accessed_at: '2026-10-21T08:05:08.453460Z'
+  support: supports
+  summary: CHEBI:140434 is three stars with the owner full InChI/key and definition.
+    It lists the isocyanoethenyl name as IUPAC/UniProt nomenclature and isocyanovinyl
+    in the preferred name, plus B-371 synonyms. It has antibacterial-agent and bacterial-metabolite
+    roles; PMID 993124 is among its citations. The exported aromatic SMILES lacks
+    the pyrrolic H form, so graph confirmation uses its default MOL and full InChI,
+    not that export.
+  snapshot_sha256: 53727de4c7631c1f7e07e2c8884029d474553f0f4923debc530814e945c451f4
+- evidence_id: R-CHEBI-MOL
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/140434/
+  locator: Complete official default molfile, parsed independently
+  accessed_at: '2026-10-21T08:05:08.453979Z'
+  support: supports
+  summary: The default MOL exactly encodes the owner Z indolyl isocyanide and neutral
+    overall charge. It resolves the identity despite the malformed aromatic SMILES
+    export.
+  snapshot_sha256: 583e7a876d11695ed6b8fc617a9559319c8037af9e011e53fc67af7997000aa7
+- evidence_id: R-PUBCHEM
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/JQMYMZZLIOIXEO-SREVYHEPSA-N/property/InChI,InChIKey,MolecularFormula,IsomericSMILES/JSON
+  locator: Full-key property result CID 101306927
+  accessed_at: '2026-10-21T08:05:08.454133Z'
+  support: supports
+  summary: The exact full-key lookup returns the same C11H8N2 structure and Z geometry.
+    It is an identity cross-check, not independent biological evidence.
+  snapshot_sha256: 7998c4c136e1fe58ea8669c7588177fbe9b7077fa2630b79e49a1a7fdadb06a3
+- evidence_id: R-1976
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/antibiotics1968/29/8/29_8_850/_pdf/-char/en
+  locator: Entire three-page original letter pp 850–852; p 851 structure I, Figure
+    2 and Table 1 visually inspected in this review
+  accessed_at: '2026-10-21T08:05:08.949883Z'
+  support: supports
+  summary: Evans, Napier and Yates isolate B371 from culture broth of unidentified
+    Pseudomonas NCIB 11237. Purification follows antibacterial activity. Reported
+    mass 168.0683 agrees with C11H8N2; NMR coupling 9Hz supports cis geometry, and
+    IR 2138cm-1 favors the isocyanide over the alternative nitrile. The original drawing
+    explicitly distinguishes structure I N-linked isocyanide from II C-linked nitrile
+    and favors I with cautious wording. Table 1 reports agar cup-plate inhibition
+    thresholds, including 8 micrograms/mL against S. aureus Oxford H VI and 2 against
+    Flavobacterium C1980; these are not MIC measurements. This primary supports bacterial
+    origin and antibacterial activity without assigning a species name to the isolate.
+  snapshot_sha256: cf365f8032a11e0d8491fd97eb2242cf842c2da8340ee863f0ee834fa6892e05
+- evidence_id: R-SIBLING
+  kind: record_content
+  reference: https://raw.githubusercontent.com/CultureBotAI/AntibioticMech/74f6cc8362498900f2fe2c13d0b6fdb66dd30976/data/antibiotics/antibacterial/3-z-2-isocyanovinyl-indole.yaml
+  locator: Entire pinned sibling YAML at full commit 74f6cc8362498900f2fe2c13d0b6fdb66dd30976
+  accessed_at: '2026-10-21T08:05:09.355046Z'
+  support: supports
+  summary: The sibling is CHEBI:140434 with identical full InChI/key, same definition
+    and ANTIBACTERIAL classification. Its key and InChI substantiate the declared
+    SAME_STRUCTURE/SAME_INCHIKEY relation. Its inherited BGC assertion is a separate
+    database claim, not independent primary production proof. Its malformed ChEBI
+    SMILES does not alter the key-based basis actually asserted by this link.
+  snapshot_sha256: 77842cb1f39e34f0cdf2e0f36c40d4dfb140c3fed3dea569bc0ecf24c1165b39
+- evidence_id: R-SIBLING-INVENTORY
+  kind: record_content
+  reference: data/raw/antibioticmech_inchikeys.tsv
+  locator: Exact full-key row 1023, all six columns
+  accessed_at: '2026-10-21T08:08:34.712632Z'
+  support: supports
+  summary: The pinned export has CHEBI:140434, identical complete key, ANTIBACTERIAL
+    class, matching slug and full source commit. The owner summary and short source-version
+    prefix faithfully reflect it.
+  snapshot_sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+- evidence_id: R-LOCAL-SOURCES
+  kind: record_content
+  reference: /private/tmp/npm-review-work/017/local-sources.json
+  locator: Complete resolved owner and all exact-key rows from six full TSV parsers
+  accessed_at: '2026-10-21T08:08:34.712632Z'
+  support: supports
+  summary: MIBiG compound 12 and three-star ChEBI rows agree on full key and equivalent
+    Z names. The computed classifier row is Alkaloids / Tryptophan alkaloids / Simple
+    indole alkaloids, glycoside false. No exact-key LOTUS, CyanoMetDB or ChEBI structured-origin
+    row occurs in the full inspected inventories; the Pseudomonas information remains
+    in the sourced definition. This bounded inventory result includes ignored source
+    files.
+  snapshot_sha256: df73280bfac6c331b4e20838ebf8ea8c233054567571026f6e4110b8e370cd36
+- evidence_id: R-DISCUSSION-PRESERVATION
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: CURATOR_OWNED_DISCUSSION_FIELDS lines325ff; preserve-curation lines395–414;
+    name-disagreement generation lines1530–1558
+  accessed_at: '2026-10-21T08:08:34.712632Z'
+  support: supports
+  summary: The seeder raises the name comparison but preserves curator-owned status,
+    resolved_date, resolution_note and supporting evidence by discussion_id. A curator
+    can resolve this exact existing thread with an evidence-backed answer that survives
+    reseeding, without modifying upstream compound names.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: R-IMODULON
+  kind: search
+  reference: /private/tmp/npm-review-work/010/imodulon-datasets.txt
+  locator: Complete 28-row catalogue and original command receipt010/imodulon-context-receipts.json
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: The returned catalogue has no Hapalosiphon dataset. Its Pseudomonas datasets
+    concern named species/strains that are not a demonstrated match to NCIB 11237.
+    E. coli expression-host data would not establish regulation of the native cyanobacterial
+    cluster. No strain-matched expression query is applicable here.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+  search_scope: All28 returned catalogue rows; exact native taxon and historical unidentified
+    isolate compared. No biological absence inferred and no new network call claimed.
+- evidence_id: bgc017-owner-source
+  kind: record_content
+  reference: data/natural_products/alkaloids/3-z-2-isocyanovinyl-indole.yaml; data/raw/mibig_compounds.tsv
+  locator: Full owner read08:06:22Z and exact row BGC0000668:12; local-sources.json
+  accessed_at: '2026-10-21T08:06:22Z'
+  support: supports
+  summary: This target is exact Z precursor JQMYMZZLIOIXEO-SREVYHEPSA-N, not a later
+    hapalindole or welwitindolinone congener. The raw compound 12 row cites DOI 10.1002/cbic.201300794
+    from compound-level mass-spectrometry evidence. The owner retains separate SOURCE_ASSERTION
+    producer and CLUSTER_DEMONSTRATED locus claims, with no inline protein or mechanistic
+    graph. Canonical full source-row SHA256 is 83b549d1816290437610d1a6ac4d4d471951eeeefcc86c4c61c31c9824b05c12.
+- evidence_id: bgc017-mibig
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000668.5/annotations.json
+  locator: Complete current016/bgc668-v5.json re-compared specifically at compounds[11],
+    loci, taxonomy and classes; original retrieval retained
+  accessed_at: '2026-10-21T08:03:41.799030Z'
+  support: supports
+  summary: Version 5 compound 12 has exactly the stored stereochemical SMILES and
+    C11H8N2, with mass-spectrometry reference DOI 10.1002/cbic.201300794. The source
+    gives KF811479.1, UTEX B1830 taxon 1433842, enzymatic and heterologous methods,
+    and unspecified 0/0 boundaries. TERPENE/OTHER describe the broader BGC; they do
+    not classify this simple indole precursor itself as a terpene.
+  snapshot_sha256: cebbf3a80dd3eb5699df94e3ac7d461c046e4dd91b75d258e7fb85518edfdb54
+- evidence_id: bgc017-primary2014
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC4382313/
+  locator: DOI 10.1002/cbic.201300794 / PMID:24677572; full004/wel2014-primary.xml,
+    especially P5–P6, P9–P11 and Figure 3 caption; original retrieval retained
+  accessed_at: '2026-10-21T06:53:50Z'
+  support: supports
+  summary: The authors cloned welI1–3 as one operon under pBAD and expressed it in
+    E. coli. The observed product 10 matched the synthetic Z standard by HPLC, with
+    no E isomer observed. Figure 3 explicitly labels this in vivo characterization.
+    This is exact-target heterologous formation by genes from the recorded cluster.
+    The native source culture was xenic; this experiment is not an axenic native-production
+    or knockout demonstration.
+  snapshot_sha256: 2535abb9ec5c9d4f7d4a8e030b0c71821d2f23b1b6a9f9eee55ca88f1e3a8678
+- evidence_id: bgc017-genomic-bridge
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=KF811479.1&db=nuccore&report=genbank&retmode=text
+  locator: 016/bgc-kf811479.gb source feature, PMID reference and WelI1/WelI2/WelI3
+    CDSs; original retrieval reused
+  accessed_at: '2026-10-21T08:03:41.799482Z'
+  support: supports
+  summary: KF811479.1 is a 36570-bp partial indolinone cluster from UTEX B1830, taxon
+    1433842, linked to the cited 2014 study. WelI1 is AHI58841.1 at complement(32131..33102),
+    WelI2 is AHI58840.1 at complement(30728..31723), and WelI3 is AHI58839.1 at complement(29910..30731).
+    These ground the gene names and native locus; they do not establish the complete
+    historical plasmid sequence, tags or individual gene necessity.
+  snapshot_sha256: 1f965890a89cf00a42751d6ff0f62e8997ec4debf87d7ac353a907195563ee1f
+- evidence_id: bgc017-experiment-granularity
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC4382313/
+  locator: P6 exact operon experiment and P10 general in-vitro wording, plus Figure
+    3B caption
+  accessed_at: '2026-10-21T06:53:50Z'
+  support: partial
+  summary: The detailed exact-product result is recombinant-cell production from the
+    three-gene operon. The concluding paragraph uses broader in-vitro characterization
+    wording for WelI1–3/WelP2, but the accessible body does not provide an isolated
+    WelI enzyme assay protocol for this compound. The heterologous result independently
+    supports the strong locus grade; separate purified-enzyme conditions remain unverified
+    without the SI.
+- evidence_id: bgc017-si-access
+  kind: search
+  reference: https://chemistry-europe.onlinelibrary.wiley.com/doi/10.1002/cbic.201300794
+  locator: Publisher Supporting Information link cbic_201300794_sm_miscellaneous_information.pdf;017/bgc-si-access.json
+    and explicit public linked-download attempt
+  accessed_at: '2026-10-21T08:06:28Z'
+  support: unknown
+  summary: The official publisher page identifies the 4-MB supplement, but its linked
+    download returned HTTP 403. The NCBI media path returned HTTP 404. EuropePMC supplementaryFiles
+    returned HTTP 200 containing a typed non-open-access error XML, not a ZIP or supplement.
+    No SI content was obtained or inspected in this attempt.
+  search_scope: Exact supplement filename and public publisher linked-download route;
+    NCBI media href from official primary XML; EuropePMC supplementaryFiles endpoint.
+    Free read-only routes only, no credentials or paid retrieval. Previous failures
+    were not treated as evidence of missing experiments.
+- evidence_id: bgc017-grading-rule
+  kind: record_content
+  reference: docs/HARMONIZATION.md
+  locator: Producer/locus method table in unchanged docs/HARMONIZATION.md; original015
+    rule-file access retained and explicitly applied to this exact heterologous result
+  accessed_at: '2026-10-21T08:02:16.663745Z'
+  support: supports
+  summary: Heterologous expression maps to CLUSTER_DEMONSTRATED for the locus and
+    SOURCE_ASSERTION for the native producer. The exact Z operon result justifies
+    retaining these distinct grades. The gene set is a tested subset of the deposited
+    BGC, not a claim that the entire 36570-bp sequence was expressed.
+  snapshot_sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+assessments:
+- assessment_id: R-IDENTITY
+  area: identity
+  topic: Fully specified Z isocyanide identity
+  outcome: supported
+  summary: Complete graph agreement supports the represented connectivity and Z geometry.
+    Charge-separated isocyanide valence is intentional. Current ChEBI three-star eligibility
+    supports EXACT grounding. The unspecified parent CHEBI:144370 has a different
+    stereo key and is not substituted.
+  target_ids:
+  - CHEBI:140434
+  evidence_ids:
+  - R-OWNER
+  - R-CHEMISTRY
+  - R-CHEBI
+  - R-CHEBI-MOL
+  - R-PUBCHEM
+- assessment_id: R-DEFINITION-ORIGIN
+  area: evidence
+  topic: Pseudomonas definition and natural origin
+  outcome: supported
+  summary: The original 1976 isolation paper supports the sourced definition and NATURAL_PRODUCT
+    designation. The authors favored structure I from spectroscopy, retaining the
+    historical caution. Later authority and exact synthetic-standard BGC evidence
+    provide the represented identity context. Pseudomonas NCIB 11237 is not relabeled
+    P.aeruginosa or conflated with UTEX B1830.
+  target_ids:
+  - CHEBI:140434
+  evidence_ids:
+  - R-1976
+  - R-CHEBI
+  - R-OWNER
+- assessment_id: R-ACTIVITY
+  area: evidence
+  topic: Antibacterial summary
+  outcome: supported
+  summary: The summary is faithful to the pinned sibling class and independently supported
+    by the original bioactivity-guided isolation and cup-plate results. No potency
+    model, MIC, molecular target or clinical efficacy is asserted.
+  target_ids:
+  - CHEBI:140434
+  evidence_ids:
+  - R-SIBLING-INVENTORY
+  - R-SIBLING
+  - R-1976
+- assessment_id: R-SIBLING-LINK
+  area: consistency
+  topic: Pinned same-structure sibling
+  outcome: supported
+  summary: The exact sibling record at the full matching revision agrees on full InChI/key
+    and class. This verifies the asserted key-based link; neither its raw aromatic
+    SMILES export nor its inherited BGC annotation is treated as an independent primary
+    experiment.
+  target_ids:
+  - CHEBI:140434
+  evidence_ids:
+  - R-SIBLING
+  - R-SIBLING-INVENTORY
+  - R-CHEMISTRY
+- assessment_id: R-NAMES
+  area: identity
+  topic: Vinyl and ethenyl name equivalence
+  outcome: concern
+  summary: The stored names are equivalent Z indolyl isocyanide descriptions, directly
+    corroborated by ChEBI IUPAC nomenclature, full graphs and primary structure. The
+    open name-disagreement discussion is now answerable; neither upstream name requires
+    a scientific correction.
+  target_ids:
+  - CHEBI:140434
+  evidence_ids:
+  - R-CHEBI
+  - R-CHEMISTRY
+  - R-1976
+  - R-DISCUSSION-PRESERVATION
+- assessment_id: R-CLASSIFICATION
+  area: consistency
+  topic: Computed scaffold class and source-derived locus classes
+  outcome: supported
+  summary: The exact classifier row and indole scaffold support ALKALOIDS and its
+    computed hierarchy. TERPENE/OTHER belongs to the full downstream MIBiG pathway
+    classification; it does not claim the C11 precursor itself has a terpene moiety.
+  target_ids:
+  - CHEBI:140434
+  evidence_ids:
+  - R-LOCAL-SOURCES
+  - R-OWNER
+  - R-CHEMISTRY
+- assessment_id: R-PROVENANCE
+  area: provenance
+  topic: Seeded source concepts and history
+  outcome: supported
+  summary: The source rows, exact authority grounding, versioned sibling join and
+    two seed events are coherent. SEEDED does not claim scientific curation. No owner/source
+    or audit-history edits were made.
+  target_ids:
+  - CHEBI:140434
+  evidence_ids:
+  - R-LOCAL-SOURCES
+  - R-SIBLING-INVENTORY
+  - R-OWNER
+- assessment_id: R-OPTIONAL
+  area: completeness
+  topic: Optional mechanisms and expression context
+  outcome: not_applicable
+  summary: The complete owner has no mechanism graph, pathway, protein, molecular
+    target or clinical assertion requiring validation. Their absence is not a defect.
+    No native-strain iModulonDB dataset was established by the complete returned catalogue.
+  target_ids:
+  - CHEBI:140434
+  evidence_ids:
+  - R-OWNER
+  - R-IMODULON
+- assessment_id: bgc017-source-and-citation
+  area: evidence
+  topic: Correct exact-compound source and biosynthesis citation
+  outcome: supported
+  summary: The record cites the actual cluster/precursor study. Its compound-level
+    citation happens to be the correct biosynthesis reference for this exact precursor.
+    No family-wide citation-routing finding is transferred from the other BGC0000668
+    records.
+  target_ids:
+  - CHEBI:140434
+  evidence_ids:
+  - bgc017-owner-source
+  - bgc017-mibig
+  - bgc017-primary2014
+- assessment_id: bgc017-exact-formation
+  area: evidence
+  topic: Exact Z precursor formation by the recorded locus
+  outcome: supported
+  summary: The pBAD welI1–3 E. coli experiment identifies the exact Z product against
+    a synthetic standard and directly supports CLUSTER_DEMONSTRATED. This is collective
+    operon sufficiency in that heterologous host; it does not prove each gene individually
+    necessary or the entire BGC independently sufficient.
+  target_ids:
+  - CHEBI:140434
+  evidence_ids:
+  - bgc017-primary2014
+  - bgc017-genomic-bridge
+  - bgc017-grading-rule
+- assessment_id: bgc017-producer-boundary
+  area: evidence
+  topic: Native source assertion remains distinct from recombinant-cell formation
+  outcome: supported
+  summary: 'UTEX B1830 is correctly linked to KF811479.1 and the genes used in the
+    cited study. Native producer SOURCE_ASSERTION remains appropriate: recombinant
+    E. coli production does not establish native quantitative production, gene necessity
+    or axenic cyanobacterial origin.'
+  target_ids:
+  - CHEBI:140434
+  evidence_ids:
+  - bgc017-genomic-bridge
+  - bgc017-primary2014
+  - bgc017-grading-rule
+- assessment_id: bgc017-construct-detail
+  area: evidence
+  topic: Historical construct and separate purified-enzyme assay detail
+  outcome: unknown
+  summary: The main text resolves the operon, promoter, heterologous host and exact
+    Z product. Unavailable SI prevents verification of plasmid backbone, complete
+    insert/primer sequence, tags, expression conditions, extra controls and a separate
+    purified-enzyme protocol. No protein example or detailed construct assertion exists
+    in the owner. This limitation does not negate the independently documented heterologous
+    demonstration.
+  target_ids:
+  - CHEBI:140434
+  evidence_ids:
+  - bgc017-primary2014
+  - bgc017-experiment-granularity
+  - bgc017-si-access
+  - bgc017-owner-source
+- assessment_id: bgc017-class-and-coordinates
+  area: consistency
+  topic: Source cluster class and absent numerical bounds
+  outcome: supported
+  summary: TERPENE/OTHER preserve the versioned broader cluster assignment while NPClassifier
+    separately files this target as a simple indole alkaloid. Omitted numerical bounds
+    correctly avoid representing MIBiG 0/0 placeholders as biological coordinates.
+  target_ids:
+  - CHEBI:140434
+  evidence_ids:
+  - bgc017-mibig
+  - bgc017-owner-source
+findings:
+- finding_id: R-NAME-THREAD
+  issue_key: chebi140434-equivalent-names-unresolved
+  category: completeness
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Equivalent names leave an answerable identity discussion open
+  description: The existing question asks whether isocyanovinyl and isocyanoethenyl
+    denote different structures. Current ChEBI explicitly supplies both name forms
+    for the same exact Z graph, independently consistent with the primary drawing.
+    Record an evidence-backed resolution of the question; no label or structural correction
+    is needed.
+  target_ids:
+  - CHEBI:140434
+  field_paths:
+  - discussions[0]
+  evidence_ids:
+  - R-OWNER
+  - R-CHEBI
+  - R-CHEMISTRY
+  - R-1976
+  - R-DISCUSSION-PRESERVATION
+  rule_id: 'review-yaml-record: adjudicate open discussions; docs/CURATION.md: concrete
+    resolvable questions'
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/3-z-2-isocyanovinyl-indole.yaml
+    role: Curator-owned resolution fields of existing name-disagreement discussion
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Implemented preservation of curator discussion answers
+actions:
+- action_id: R-RESOLVE-NAMES
+  description: Resolve only the existing name-disagreement discussion through its
+    curator-owned status, actual resolved_date, resolution_note and exact evidence.
+    Explain vinyl/ethenyl equivalence and Z geometry. Preserve source labels and generated
+    prompt; use the existing discussion-answer preservation contract.
+  finding_ids:
+  - R-NAME-THREAD
+  target_ids:
+  - CHEBI:140434
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/3-z-2-isocyanovinyl-indole.yaml
+    role: Curator-owned resolution fields of existing name-disagreement discussion
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Implemented preservation of curator discussion answers
+  generator: scripts/seed_from_sources.py preserve-curation by discussion_id
+  acceptance_checks:
+  - The resolution cites the exact ChEBI name/structure record and original 1976 drawing,
+    retains Z specificity, and does not conflate nitrile with isocyanide.
+  - After the documented targeted curation/reseed workflow, the answer persists and
+    unrelated fields remain unchanged.
+  - Run target strict validation, reproduction verification and repository QC required
+    by the curation workflow.
+limitations:
+- The 1976 authors favor the isocyanide assignment on spectroscopic grounds; this
+  review preserves their caution and does not reinterpret the raw NMR spectrum. Its
+  inhibition thresholds are not reported as MICs.
+- Only owner assertions and immediately relevant evidence are reviewed. No mechanistic
+  target or species-level identity is inferred for the unidentified historical Pseudomonas
+  isolate.
+- The exact pinned sibling is used to verify the key-based relation and source class,
+  not as independent scientific evidence. The malformed aromatic SMILES export is
+  an external source/sibling limitation; this owner uses a coherent MIBiG graph.
+- The optional expression-source assessment is bounded to the complete returned catalogue;
+  failure to match a native strain does not imply absent gene expression.
+- The 2014 main body and captions were inspected in full, with the original 06:53:50Z
+  access retained. The 017 supplement attempt remained unavailable, so no SI condition,
+  primer, tag or construct sequence is asserted as read.
+- The demonstrated experiment is production of the exact Z compound by a welI1–3 operon
+  in E. coli. Native cyanobacterial necessity, axenic production, individual gene
+  necessity and whole-BGC reconstitution are not inferred.
+- A separate purified-enzyme assay for this exact precursor is not independently resolved
+  by the accessible detailed body. The generic Enzymatic assays source method is preserved
+  as imported vocabulary, while exact heterologous evidence suffices for the locus
+  grade.
+- The source gene/accession mapping is annotation and strain provenance, not independent
+  validation of historical construct sequences. No graph or native-protein example
+  requires a separate sequence-equivalence audit here.
+- The configured full identifier-label gate accepts 499 warning-level taxon-label
+  mismatches, 35 explicit exceptions and 4,722 no-adapter pairs across the corpus;
+  its exit 0 is not independent verification of every identifier or of this record's
+  scientific claims.
+- The quality suite skips the optional sibling AntibioticMech checkout comparison
+  because the isolated clone has no sibling checkout, and skips three command-frontmatter
+  cases because their parameter sets are empty. Pinned-hash and network governance
+  checks still ran.
+- Shared native gates assess deterministic corpus consistency and configured invariants.
+  They do not establish biological production, stereochemical specificity, evidence
+  adequacy or literature-level claim support.
+notes:
+- No owner, source inventory, native curation status or history was edited. Save records
+  this review observation, not a correction.
+- Baseline deterministic gates retain actual command receipts from the identical tracked
+  base; target strict validation ran afresh.
+- The confirmed heterologous result is specific to this Z precursor. It is not transferred
+  to other downstream products in BGC0000668.
+tags:
+- path-order-campaign
+- batch-002
+- z-isocyanovinyl-indole
+- biosynthesis
+- name-equivalence
+```
