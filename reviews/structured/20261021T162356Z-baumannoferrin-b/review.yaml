@@ -1,0 +1,1033 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T162356Z-baumannoferrin-b
+title: 'Baumannoferrin B: constitutional cross-reference conflict and primary-source
+  limits'
+started_at: '2026-10-21T16:18:09.854803Z'
+finished_at: '2026-10-21T16:23:56.725794Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The complete baumannoferrin B owner and source lineage are internally consistent,
+  and the primary abstract positively reports the named compound from native A. baumannii
+  AYE. Its literal NPAtlas NPA001975 cross-reference encodes C27H44N4O12, whereas
+  the owner encodes C28H46N4O13; the connectivity difference is a confirmed major
+  exact-equivalence defect. The existing guarded xref-exclusion consumer can withhold
+  that assertion while preserving the raw source and current owner. Original structure
+  drawings, formula and detailed methods remain unavailable, so the authentic constitution
+  is unresolved and this review is partial. Empty-method producer and locus grades
+  remain source-faithful.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/azotochelin.yaml
+    sha256: 2c94f0a8b69019347ad2716e64f2210e9534120e07cdc7ab22add9bdfc9e1188
+    role: context
+  - path: data/natural_products/alkaloids/baumannoferrin-a.yaml
+    sha256: 46c18e6a5634a21e2d5599b58d1ccebecdd2959402b896922c9251e15d273be7
+    role: context
+  - path: data/natural_products/alkaloids/baumannoferrin-b.yaml
+    sha256: d28496fdec5d754e93e84b41c52dbc1fc488c054bb72912c36633bf3b9658c18
+    role: target
+  - path: data/natural_products/alkaloids/be-54017.yaml
+    sha256: 7fb1bccf5e2a642068ae27da180dda5ee07f91724050bcfd0255f60ef05ef1fc
+    role: context
+  - path: data/natural_products/alkaloids/bengamide.yaml
+    sha256: 7f1fb360af0e81e0d0e1c1bb141d2c39c804dba5d77a298067eb352069776ef9
+    role: context
+  - path: data/natural_products/alkaloids/berninamycin-j.yaml
+    sha256: 7bfe46261a0257a5d3525a38ccb60fc3f453c27d1eb25d003b6a4919173101db
+    role: context
+  - path: data/natural_products/alkaloids/berninamycin-k.yaml
+    sha256: 97f2f1dae73309e2cb46682286e42f9c5072a4dcb0ccfb5715fa07b233f1561a
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/extract_npclassifier.py
+    sha256: 408b25dd9fe570c9a5eb8f4d5f660608d3eb4a9b3c588e9cda15c6ea504e3259
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/curate/xref_exclusions.py
+    sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: tests/test_claim_references.py
+    sha256: 11b2fc60dbe32154df63fb2e8c784c7c8ba6585581c09bba2eebe2c5192d4c06
+    role: context
+  - path: tests/test_mibig_locus_evidence_overrides.py
+    sha256: 9177b5bd24f6e47cc4743857179217d9e0d4add9560b2ce3faefaebe53ba09a0
+    role: context
+  - path: tests/test_producer_isolates.py
+    sha256: 8f96b00fbb66564f2d5e5c2108c991135eec8731b10d9f2d9f2f73830080ccd9
+    role: context
+  - path: tests/test_producer_strains.py
+    sha256: 17002ef1640464777f1925d12d842ed83c9098aad6de724ae0ea236ecccc4ff3
+    role: context
+  - path: tests/test_structure_corrections.py
+    sha256: f0b91c7ed2ffeddb844e6927e4891c1fa3cfd1d11eb70f1c3eda6bf80ae05303
+    role: context
+  - path: tests/test_xref_exclusions.py
+    sha256: 3f26bef1b535e782a8ef33b3133f7a9172b03cfb5188cddc3c8a2ff55899dc48
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 103, batch 011, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 154 of 3116 current
+    records had campaign coverage and 2962 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+targets:
+- target_id: naturalproductmech:mibig-b00fad5faa
+  path: data/natural_products/alkaloids/baumannoferrin-b.yaml
+  label: baumannoferrin B
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+  command: just validate-strict data/natural_products/alkaloids/baumannoferrin-b.yaml
+    --out /private/tmp/npm-review-work/103/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T16:18:11.703611Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch011 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch011. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch011 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch011. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch011 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch011. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch011 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch011. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch011
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,070,649 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch011.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+- check_id: R103-FULL-OWNER
+  name: Complete owner and referenced-component scope
+  status: passed
+  required: true
+  summary: Full owner, exact matching intake source rows and the empty referenced-component
+    set were read and checked against the actual intake. Fresh target strict validation
+    is retained separately.
+  target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+  evidence_ids:
+  - R103-OWNER
+  - R103-LOCAL
+- check_id: S103-C-NAMED
+  name: Named native compound and source-strain applicability
+  status: passed
+  required: true
+  summary: The primary abstract positively names B from native AYE; the deposited
+    interval matches that strain and the exact owner coordinates.
+  target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+  evidence_ids:
+  - S103-E-2015
+  - S103-E-LOCUS
+- check_id: S103-C-EXACT
+  name: Full original structure and experiment-level applicability
+  status: unavailable
+  required: true
+  summary: The C28H46N4O13 owner graph cannot be definitively selected over the separately
+    reviewed constitutional authority alternative from an abstract listing building
+    units. Full primary methods also remain unavailable, so no stronger experimental
+    method is adopted.
+  target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+  evidence_ids:
+  - S103-E-2015
+  - S103-E-ACCESS
+- check_id: C103-INTERNAL
+  name: Internal graph and source-concept consistency
+  status: passed
+  required: true
+  summary: SMILES independently reproduces the stored Standard InChI/key, formula,
+    charge and assigned/undefined tetrahedral centres; exact raw selector hashes and
+    source-concept IDs match.
+  target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+  evidence_ids:
+  - C103-OWNER
+  - C103-RAW
+  - C103-COMPARISON
+  - C103-CONTRACT
+  - C103-FLAG
+- check_id: C103-XREF
+  name: Literal NPAtlas exact-equivalence assertion
+  status: failed
+  required: true
+  summary: npatlas:NPA001975 resolves to UKCQMIFZQBMVKR-UHFFFAOYSA-N (C27H44N4O12),
+    not YHZUHQIORUMYTL-UHFFFAOYSA-N (C28H46N4O13). The formulas differ by CH2O and
+    stereo-erased connectivity differs; this is not a protonation, tautomer or missing-hand-only
+    difference.
+  target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+  evidence_ids:
+  - C103-COMPARISON
+  - C103-AUTH0
+  - C103-AUTH1
+  - C103-AUTH2
+  - C103-AUTH3
+  - C103-AUTH4
+- check_id: C103-PRIMARY-IDENTITY
+  name: Original molecular formula, drawing and stereochemical adjudication
+  status: unavailable
+  required: true
+  summary: Original main/SI failed bounded access. The abstract is insufficient to
+    choose the C28 or C27 constitution or fill undefined centres.
+  target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+  evidence_ids:
+  - C103-PRIMARY-ABSTRACT
+  - C103-MAIN-ACCESS
+  - C103-SI-ACCESS
+evidence:
+- evidence_id: R103-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/baumannoferrin-b.yaml
+  locator: Complete owner, all assertions, inline graph, discussions and history
+  accessed_at: '2026-10-21T16:19:22.240896Z'
+  support: supports
+  summary: 'Root read the entire baumannoferrin B owner following its official intake
+    and rechecked the source-preparation bytes against this base. It has 0 occurrence,
+    1 producer and 1 cluster assertions. The referenced component set is empty. Present
+    optional fields: none.'
+  snapshot_sha256: d28496fdec5d754e93e84b41c52dbc1fc488c054bb72912c36633bf3b9658c18
+- evidence_id: R103-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/103/local-sources.json
+  locator: Complete resolved owner and all exact matching local source rows
+  accessed_at: '2026-10-21T16:19:22.240896Z'
+  support: context_only
+  summary: Root read the complete resolved owner and every matching MIBiG, LOTUS,
+    ChEBI, CyanoMetDB and NPClassifier row captured by intake. This is a source-fidelity
+    assessment, separate from independent experimental support.
+  snapshot_sha256: 227df9aebbd4829b85c1c26a19e4c7d047fdb9079c3f9abd4ea9faa15350fa57
+- evidence_id: R103-IMODULON
+  kind: database
+  reference: https://imodulondb.org/api/datasets
+  locator: Complete official 20-organism/28-dataset catalogue
+  accessed_at: '2026-10-21T15:57:37.699699Z'
+  support: context_only
+  summary: The complete API catalogue retrieved at this timestamp matches the retained
+    catalogue bytes. This evidence concerns catalogue membership only. The earlier
+    adapter catalogue retains its original 2026-10-21T07:21:15.957321Z completion
+    time in the separately pinned source packet.
+  snapshot_sha256: 155607e7023efdead5ebab3919279a0776d5665a7de9e28b67f02f8f521b0693
+- evidence_id: R103-IMODULON-CONTEXT
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch011/imodulon-context/source-notes.json
+  locator: 'Prepared source packet: candidate_context, actual_accesses, metadata and
+    the fully verified 53-input manifest'
+  accessed_at: '2026-10-21T16:00:03.119199Z'
+  support: context_only
+  summary: The packet records the three official /meta responses and six scoped adapter
+    queries with their individual original 2026-10-21T15:57–15:58Z access times. Its
+    preparation/read-completion timestamp is used here, not presented as a new API
+    retrieval. Exact species, stock, gene-search and component limits remain explicit;
+    no chemical identity, production, native stock equivalence or module membership
+    is inferred.
+  snapshot_sha256: bb8dbcfd2ba18338393c3ed0da030ee8f19a9f4c73c2a8e32791240299d50d3d
+- evidence_id: S103-E-LOCAL
+  kind: record_content
+  reference: data/natural_products/alkaloids/baumannoferrin-b.yaml
+  locator: Complete actual owner, resolved owner and every matching parsed source
+    row
+  accessed_at: '2026-10-21T16:23:12.812237Z'
+  support: supports
+  summary: The complete official intake owner and source rows were read; target structure,
+    source selectors, occurrence citations, methods and provenance were compared with
+    the retained primary evidence.
+  snapshot_sha256: d28496fdec5d754e93e84b41c52dbc1fc488c054bb72912c36633bf3b9658c18
+- evidence_id: S103-E-2015
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=26235845,21542592,26514647&retmode=xml
+  locator: PMID26235845 exact publication metadata and complete primary abstract only
+  accessed_at: '2026-10-21T15:37:18.651584Z'
+  support: supports
+  summary: The complete original PMID26235845 abstract explicitly reports isolation
+    of baumannoferrin B, alongside the other congener, from iron-restricted native
+    A. baumannii AYE culture supernatants. The two named hydroxamates differ by one
+    double bond. It lists constituent building units and a 12-gene cluster identified
+    by sequence similarity, but exposes no complete formula, drawing, specific mutant
+    design or exact purified-enzyme endpoint.
+  snapshot_sha256: f2973f24b00ee940ee5274dffe44e33c03c0c3bca9d2d8c3a77395c64ecb60c3
+- evidence_id: S103-E-LOCUS
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/CU459141.1
+  locator: Complete bounded 2048827..2064050 source/header and all gene/CDS qualifiers
+  accessed_at: '2026-10-21T15:49:47.215188Z'
+  support: supports
+  summary: The 15,224 bp source interval explicitly names strain AYE, taxon509173
+    and the same chromosome. Eleven current CDS annotations comprise ABAYE1997 and
+    ABAYE1999–2008. This verifies the literal accession/frame and native stock label.
+    The abstract describes 12 genes; without its full figure the differing annotation
+    count is not a proven interval defect or gene-loss experiment.
+  snapshot_sha256: 07228b0e63794440f49f8e1de39208ee53999f6932da3e935b131a07db1e7d38
+- evidence_id: S103-E-ACCESS
+  kind: search
+  reference: https://doi.org/10.1002/cbic.201500147
+  locator: Bounded official main/SI, OpenAlex locations and author/institutional discovery
+    routes retained with individual HTTP receipts
+  accessed_at: '2026-10-21T15:45:58.378262Z'
+  support: context_only
+  summary: The original main and exact legacy supplement returned 403 HTML; bounded
+    alternative static-host paths returned404. The accessible original abstract is
+    positive, but the full drawing, formula and experimental details remain unavailable.
+    No claim is made that no public copy exists.
+  snapshot_sha256: e84d7fea719e60a2d753b8e1245d0b9d6c7136d174d8bdbdfdd70c1d6afc25b2
+  search_scope: Exact DOI10.1002/cbic.201500147 and PMID26235845; original publisher/main
+    and legacy supplement URLs, two bounded static alternatives, listed OpenAlex locations
+    and focused author/institutional leads. No broad exhaustive absence claim or repeat
+    of failed routes during formal review.
+- evidence_id: C103-OWNER
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/alkaloids/baumannoferrin-b.yaml
+  locator: Entire owner, literal chemical identifiers, discussion and history
+  accessed_at: '2026-10-21T16:22:54.806443Z'
+  support: supports
+  summary: Entire owner and resolved intake agree. The neutral graph is YHZUHQIORUMYTL-UHFFFAOYSA-N,
+    C28H46N4O13, charge 0, tetrahedral centres [(17, '?'), (27, '?'), (32, '?')].
+    No molecular definition is asserted. Biological claims remain separately assessed.
+  snapshot_sha256: d28496fdec5d754e93e84b41c52dbc1fc488c054bb72912c36633bf3b9658c18
+- evidence_id: C103-RAW
+  kind: record_content
+  reference: /private/tmp/npm-review-work/103/local-sources.json
+  locator: Complete matching raw rows and source concepts
+  accessed_at: '2026-10-21T16:22:54.806443Z'
+  support: supports
+  summary: Read all 1 exact MIBiG rows, 0 LOTUS rows, 0 eligible ChEBI rows and the
+    classifier row. Recomputed every accession:compound_index minted identifier and
+    complete parsed row digest; prepared source bytes match the official intake.
+  snapshot_sha256: 227df9aebbd4829b85c1c26a19e4c7d047fdb9079c3f9abd4ea9faa15350fa57
+- evidence_id: C103-CONTRACT
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: mint_identifier; exact-key grouping/grounding, label choice and xref projection
+  accessed_at: '2026-10-21T16:22:54.806443Z'
+  support: supports
+  summary: Source concepts hash MIBIG and accession:compound_index, not the chemical
+    graph or name. The current eligible exact-key ChEBI projection is empty, so the
+    owner remains MINTED. Xrefs assert exact equivalence; source labels and model
+    classification do not prove identity.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: C103-ELIGIBILITY
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_chebi.py
+  locator: MIN_STARS=3, checked/OK status and default structure projection
+  accessed_at: '2026-10-21T16:22:54.806443Z'
+  support: supports
+  summary: Current two-star entries are not eligible exact grounding. Bounded exact/name
+    API searches do not establish global absence of another authority entry.
+  snapshot_sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+- evidence_id: C103-FLAG
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: stereo_complete computation using FindMolChiralCenters
+  accessed_at: '2026-10-21T16:22:54.806443Z'
+  support: supports
+  summary: stereo_complete tests assigned tetrahedral centres only. It does not independently
+    establish experimental absolute configuration or complete alkene geometry.
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+- evidence_id: C103-AUTH0
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0002471.3/annotations.json
+  locator: compounds[1].structure; current BGC0002471.3
+  accessed_at: '2026-10-21T15:35:28.901153Z'
+  support: supports
+  summary: 'Parsed original representation: YHZUHQIORUMYTL-UHFFFAOYSA-N, C28H46N4O13,
+    charge 0. Standard plus fixed-H identity matches this owner. Original source metadata:
+    {"reported_name": "baumannoferrin B", "reported_formula": "C28H46N4O13", "reported_mass":
+    646.3061}'
+  snapshot_sha256: 35f0d66d0f213a58e0d6c555f51fbc624c1ecac3c6aa841980b60c72f257e7ae
+- evidence_id: C103-AUTH1
+  kind: database
+  reference: https://www.npatlas.org/api/v1/compound/NPA001975
+  locator: smiles; NPAtlas literal NPA001975
+  accessed_at: '2026-10-21T15:35:30.226177Z'
+  support: supports
+  summary: 'Parsed original representation: UKCQMIFZQBMVKR-UHFFFAOYSA-N, C27H44N4O12,
+    charge 0. Standard plus fixed-H identity does not match this owner. Original source
+    metadata: {"returned_id": "NPA001975", "reported_name": "Baumannoferrin B", "reported_key":
+    "UKCQMIFZQBMVKR-UHFFFAOYSA-N", "reported_formula": "C27H44N4O12", "reported_origin":
+    {"id": 1376, "type": "Bacterium", "genus": "Acinetobacter", "species": "baumannii",
+    "taxon": {"id": 82, "name": "Acinetobacter", "rank": "genus", "taxon_db": "lpsn",
+    "external_id": "515021", "ncbi_id": 469, "ancestors": [{"id": 1, "name": "Bacteria",
+    "rank": "domain", "taxon_db": "lpsn", "external_id": "0", "ncbi_id": 2}, {"id":
+    2, "name": "Proteobacteria", "rank": "phylum", "taxon_db": "lpsn", "external_id":
+    "0", "ncbi_id": 1224}, {"id": 79, "name": "Gammaproteobacteria", "rank": "class",
+    "taxon_db": "lpsn", "external_id": "0", "ncbi_id": 1236}, {"id": 80, "name": "Pseudomonadales",
+    "rank": "order", "taxon_db": "lpsn", "external_id": "0", "ncbi_id": 72274}, {"id":
+    81, "name": "Moraxellaceae", "rank": "family", "taxon_db": "lpsn", "external_id":
+    "0", "ncbi_id": 468}]}}}'
+  snapshot_sha256: 5d8ec44257dc10efaa8fa747075695c86916318b417c72509d061b885b459c93
+- evidence_id: C103-AUTH2
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/YHZUHQIORUMYTL-UHFFFAOYSA-N/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON
+  locator: PropertyTable.Properties[].SMILES; PubChem exact-key 134820004
+  accessed_at: '2026-10-21T15:35:29.398162Z'
+  support: supports
+  summary: 'Parsed original representation: YHZUHQIORUMYTL-UHFFFAOYSA-N, C28H46N4O13,
+    charge 0. Standard plus fixed-H identity matches this owner. Original source metadata:
+    {"reported_key": "YHZUHQIORUMYTL-UHFFFAOYSA-N", "reported_formula": "C28H46N4O13"}'
+  snapshot_sha256: 5919a3b6c7a72144e35a4840dd771b76a401c85683111d5f050740c9cdb93ced
+- evidence_id: C103-AUTH3
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/199243/
+  locator: default_structure.smiles; ChEBI JSON 199243
+  accessed_at: '2026-10-21T15:36:20.226257Z'
+  support: supports
+  summary: 'Parsed original representation: UKCQMIFZQBMVKR-UHFFFAOYSA-N, C27H44N4O12,
+    charge 0. Standard plus fixed-H identity does not match this owner. Current entry
+    is two-star and not eligible grounding. Original source metadata: {"reported_name":
+    "Baumannoferrin B", "stars": 2, "reported_key": "UKCQMIFZQBMVKR-UHFFFAOYSA-N",
+    "reported_formula": "C27H44N4O12"}'
+  snapshot_sha256: 91340470c6967e3b11bf6a6d86ba1d5106fcc3fffcce7fb41df5185a1fa4d56f
+- evidence_id: C103-AUTH4
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/199243/
+  locator: official MOL; ChEBI MOL 199243
+  accessed_at: '2026-10-21T15:36:20.231724Z'
+  support: supports
+  summary: 'Parsed original representation: UKCQMIFZQBMVKR-UHFFFAOYSA-N, C27H44N4O12,
+    charge 0. Standard plus fixed-H identity does not match this owner. Current entry
+    is two-star and not eligible grounding. '
+  snapshot_sha256: e93e3ac9db329afe63ba42677bfd48a267774514dd94270490a36dc214ef9697
+- evidence_id: C103-SEARCH-key
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=YHZUHQIORUMYTL-UHFFFAOYSA-N&size=100
+  locator: Bounded exact key query, retained response/error
+  accessed_at: '2026-10-21T15:35:30.978290Z'
+  support: context_only
+  summary: Inspected the full retained exact query response. API errors and two-star
+    hits are preserved; no global authority absence or eligible rescue is inferred.
+  snapshot_sha256: 15221dfde0e6c1bf9e6c706a744d5f6ef5b9eec3e9c60a23f92fc5897a5a01d1
+  search_scope: Official ChEBI public es_search term=YHZUHQIORUMYTL-UHFFFAOYSA-N,
+    size=100; no broader corpus-wide claim.
+- evidence_id: C103-SEARCH-name
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=baumannoferrin+B&size=100
+  locator: Bounded exact name query, retained response/error
+  accessed_at: '2026-10-21T15:35:29.537889Z'
+  support: context_only
+  summary: Inspected the full retained exact query response. API errors and two-star
+    hits are preserved; no global authority absence or eligible rescue is inferred.
+  snapshot_sha256: 37553023141a007681e48d65e2752ba3401cec71a225aee6b32a4508aff90413
+  search_scope: Official ChEBI public es_search term=baumannoferrin B, size=100; no
+    broader corpus-wide claim.
+- evidence_id: C103-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/103/chemistry-owner-comparison.json
+  locator: Post-intake original-source reparsing, full/fixed-H graph comparisons and
+    complete raw-row digests
+  accessed_at: '2026-10-21T16:22:55.427231Z'
+  support: supports
+  summary: Reparsed all original accessible chemical representations and current owner;
+    source concepts and exact source row hashes reproduce. This mechanical comparison
+    does not replace primary experimental stereochemical evidence.
+  snapshot_sha256: 0aaf7fd59a966acb114fdd68b9dd8828823df512b41e1ac4011e8ff03b3db7d4
+- evidence_id: C103-REPAIR
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/curate/xref_exclusions.py
+  locator: Full loader and exclusion_discussion contract
+  accessed_at: '2026-10-21T16:22:54.806443Z'
+  support: supports
+  summary: The existing consumed xref-exclusion table pins one exact source selector
+    and complete untouched row SHA256, requires the literal xref plus attribution,
+    rejects changed/duplicate rows and preserves the raw assertion in a separate resolved
+    discussion. The seeder rejects simultaneous structure-corrected rows for separate
+    review.
+  snapshot_sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+- evidence_id: C103-REPAIR-TABLE
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/curation/mibig_xref_exclusions.tsv
+  locator: Complete current table, checked with ignored-inclusive key/slug/id search
+  accessed_at: '2026-10-21T16:22:54.806443Z'
+  support: supports
+  summary: The current table was inspected; the proposed decision below is not yet
+    present. No unconsumed placeholder or raw-row edit is recommended.
+  snapshot_sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+- evidence_id: C103-PRIMARY-ABSTRACT
+  kind: primary_source
+  reference: https://pubmed.ncbi.nlm.nih.gov/26235845/
+  locator: PMID26235845 complete abstract and metadata only
+  accessed_at: '2026-10-21T15:37:18.651584Z'
+  support: supports
+  summary: The original abstract names baumannoferrin A/B, reports structural analyses,
+    and lists citrate among their building units. It does not expose the original
+    full molecular formula, structural drawing or stereochemical protocol needed to
+    resolve these two complete graph representations.
+  snapshot_sha256: f2973f24b00ee940ee5274dffe44e33c03c0c3bca9d2d8c3a77395c64ecb60c3
+- evidence_id: C103-MAIN-ACCESS
+  kind: authority
+  reference: /private/tmp/npm-review-work/shared-next-batch011/review-support/baumannoferrin2015-main.html
+  locator: Original primary full-body/SI route; retained HTTP403 HTML
+  accessed_at: '2026-10-21T15:37:18.393429Z'
+  support: unknown
+  summary: The actual source response is an access failure, not the article or SI.
+    No original formula/drawing was inspected from this artifact.
+  snapshot_sha256: 40d7f985d45472554d83f2a2df0f48a660d52248b39950513d7f08e3dfb5c7c2
+- evidence_id: C103-SI-ACCESS
+  kind: authority
+  reference: /private/tmp/npm-review-work/shared-next-batch011/review-support/baumannoferrin2015-si.pdf
+  locator: Original primary full-body/SI route; retained HTTP403 HTML
+  accessed_at: '2026-10-21T15:37:18.353978Z'
+  support: unknown
+  summary: The actual source response is an access failure, not the article or SI.
+    No original formula/drawing was inspected from this artifact.
+  snapshot_sha256: 441bd825d3ed4d3f0743cbc839ac94a6f582f68530283da184d01ddc29b4bfd2
+assessments:
+- assessment_id: R103-HISTORY
+  area: provenance
+  topic: Native status and retained audit history
+  outcome: supported
+  summary: All retained events are dated SEEDED_FROM_SOURCES provenance. The owner
+    remains SEEDED. No native scientific status or history changes result from this
+    review.
+  target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+  evidence_ids:
+  - R103-OWNER
+- assessment_id: R103-OPTIONAL
+  area: completeness
+  topic: Present optional assertions and enrichment limits
+  outcome: not_applicable
+  summary: The complete owner has no optional pathway, mechanism graph, molecular
+    target, bioactivity, application, clinical status, cross-corpus relation or discussion.
+    Optional enrichment is separate from correction of current claims.
+  target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+  evidence_ids:
+  - R103-OWNER
+  - R103-LOCAL
+- assessment_id: R103-FILING
+  area: representation
+  topic: Computed filing and exact-key classification provenance
+  outcome: supported
+  summary: The current owner reproduces its exact-key NPClassifier result, including
+    npclassifier.gnps2.org@2026-09-07, Alkaloids filing and all returned superclass/class
+    labels. It preserves the false glycoside prediction. These predictions do not
+    independently prove precursor use, natural origin or absolute stereochemistry.
+    Any future identity correction requires classification against the corrected effective
+    key.
+  target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+  evidence_ids:
+  - R103-OWNER
+  - R103-LOCAL
+- assessment_id: R103-IMODULON-SCOPE
+  area: completeness
+  topic: Producer and experimental-host transcriptomic applicability
+  outcome: supported
+  summary: Relevant at species and explicit AYE strain-context level. Current metadata
+    lists AB0057, AB5075 and AYE among 139 samples/53 conditions. The inspected native
+    CU459141.1 window names AYE and ABAYE loci, including ABAYE2001. Generic siderophore
+    hits use the ABUW namespace. No exact ABAYE-to-ABUW orthology/sequence bridge,
+    target-specific component membership, production correlation or baumannoferrin
+    A/B identity was established. AYE coverage must not be dismissed merely because
+    the exact locus/product searches miss.
+  target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+  evidence_ids:
+  - R103-OWNER
+  - R103-IMODULON
+  - R103-IMODULON-CONTEXT
+- assessment_id: S103-A-ORIGIN
+  area: evidence
+  topic: Named native origin versus exact structural uncertainty
+  outcome: supported
+  summary: Biological production of the named baumannoferrin B is affirmatively reported
+    from AYE supernatants. This supports the stated natural-product source at the
+    named-product level; it does not settle the separate constitutional xref conflict
+    or every stereocentre of the current graph.
+  target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+  evidence_ids:
+  - S103-E-2015
+  - S103-E-LOCAL
+- assessment_id: S103-A-TIERS
+  area: evidence
+  topic: Native producer and uncharacterized locus tiers
+  outcome: supported
+  summary: The imported SOURCE_ASSERTION and CLUSTER_UNSTATED accurately preserve
+    the empty source-method field. The abstract reports genomic homology and iron-restricted
+    culture isolation; neither gene-specific native necessity, heterologous sufficiency
+    nor a purified final-product enzyme assay can be verified from it. No grade upgrade
+    or withdrawal is justified from that access boundary.
+  target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+  evidence_ids:
+  - S103-E-2015
+  - S103-E-LOCUS
+  - S103-E-LOCAL
+  dimensions:
+  - name: native_experimental_strain
+    value: Acinetobacter baumannii AYE
+    definition: Explicit native supernatant source; the owner already retains AYE
+      in its taxon label.
+    evidence_ids:
+    - S103-E-2015
+    - S103-E-LOCUS
+  - name: producer_locus_evidence_tiers
+    value: SOURCE_ASSERTION / CLUSTER_UNSTATED
+    definition: Source-faithful empty methods; no functional proof inferred from sequence
+      similarity.
+    evidence_ids:
+    - S103-E-2015
+    - S103-E-LOCAL
+  - name: heterologous_or_in_vitro_endpoint
+    value: Not established from the accessed primary abstract
+    definition: The full experimental record is unavailable; this is not a claim that
+      the original study contains no such experiment.
+    evidence_ids:
+    - S103-E-2015
+    - S103-E-ACCESS
+- assessment_id: S103-A-EXACT
+  area: identity
+  topic: Primary adjudication of constitution and congener boundary
+  outcome: unknown
+  summary: The primary names both A and B and a double-bond distinction, consistent
+    with the records being separate congeners. Its accessible abstract does not identify
+    a complete molecular formula or original atom connectivity; the B graph and its
+    exact xref therefore require the independent chemistry finding and primary-source
+    limitation. No result from the other congener is treated as stereochemical proof.
+  target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+  evidence_ids:
+  - S103-E-2015
+  - S103-E-LOCAL
+  - S103-E-ACCESS
+- assessment_id: S103-A-SPARSE
+  area: completeness
+  topic: Optional activity, occurrence and gene content
+  outcome: not_applicable
+  summary: The complete owner has no extra occurrence, molecular-target, activity
+    or inline gene graph claims. Their absence is not itself a defect. Hydroxamate/siderophore
+    family terminology in the abstract is not a new measured virulence or individual-enzyme
+    assertion.
+  target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+  evidence_ids:
+  - S103-E-LOCAL
+  - S103-E-2015
+- assessment_id: C103-IDENTITY
+  area: identity
+  topic: Current source graph and unresolved natural-product constitution
+  outcome: unknown
+  summary: Current MIBiG and exact-key PubChem agree with the owner C28H46N4O13; literal
+    NPAtlas and two-star ChEBI instead encode C27H44N4O12. Three tetrahedral centres
+    are unspecified in the owner. The original formula/drawing is unavailable, so
+    the correct natural-product graph is not selected by authority agreement. A retains
+    its source E acyl-chain depiction; B is saturated.
+  target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+  evidence_ids:
+  - C103-OWNER
+  - C103-COMPARISON
+  - C103-AUTH0
+  - C103-AUTH1
+  - C103-AUTH2
+  - C103-AUTH3
+  - C103-AUTH4
+- assessment_id: C103-XREF
+  area: grounding
+  topic: Nonexact asserted NPAtlas identifier
+  outcome: concern
+  summary: The literal npatlas:NPA001975 does not identify this exact owner and should
+    be withheld by the existing reviewed exclusion path. This narrow action leaves
+    the owner graph and source concept intact pending original-source adjudication.
+  target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+  evidence_ids:
+  - C103-COMPARISON
+  - C103-REPAIR
+  - C103-AUTH0
+  - C103-AUTH1
+  - C103-AUTH2
+  - C103-AUTH3
+  - C103-AUTH4
+- assessment_id: C103-GROUNDING
+  area: grounding
+  topic: No eligible replacement grounding
+  outcome: supported
+  summary: The current name hit is two-star and has the conflicting constitution.
+    The committed eligible exact-key projection is empty. Neither current REPLACE_WITH_CHEBI
+    nor automatic adoption of that alternative is justified.
+  target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+  evidence_ids:
+  - C103-RAW
+  - C103-ELIGIBILITY
+  - C103-SEARCH-key
+  - C103-SEARCH-name
+  - C103-AUTH0
+  - C103-AUTH1
+  - C103-AUTH2
+  - C103-AUTH3
+  - C103-AUTH4
+findings:
+- finding_id: C103-F-XREF
+  issue_key: mibig-bgc0002471-baumannoferrin-npatlas-constitutional-xref-conflict
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Withhold the constitutionally nonexact NPAtlas xref
+  description: The owner asserts npatlas:NPA001975 as exact equivalence, but its current
+    official structure is UKCQMIFZQBMVKR-UHFFFAOYSA-N, C27H44N4O12, whereas the owner
+    is YHZUHQIORUMYTL-UHFFFAOYSA-N, C28H46N4O13. One CH2O and heavy-atom connectivity
+    differ. This confirms a nonexact cross-reference without proving which source
+    graph is the authentic natural product.
+  normalization_reason: Major wrong external grounding; the owner itself is not declared
+    a confirmed wrong natural-product identity while primary structure evidence remains
+    unavailable.
+  target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+  field_paths:
+  - xrefs
+  evidence_ids:
+  - C103-OWNER
+  - C103-RAW
+  - C103-COMPARISON
+  - C103-REPAIR
+  - C103-REPAIR-TABLE
+  - C103-AUTH0
+  - C103-AUTH1
+  - C103-AUTH2
+  - C103-AUTH3
+  - C103-AUTH4
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_xref_exclusions.tsv
+    role: Add a source-pinned exclusion of the demonstrated nonexact literal xref
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/xref_exclusions.py
+    role: Use the existing validated consumer and preserved-source discussion contract
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Project the exclusion without changing identity or transferring claims
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retain the original asserted row unchanged
+actions:
+- action_id: C103-A-XREF
+  finding_ids:
+  - C103-F-XREF
+  target_ids:
+  - naturalproductmech:mibig-b00fad5faa
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_xref_exclusions.tsv
+    role: Add a source-pinned exclusion of the demonstrated nonexact literal xref
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/xref_exclusions.py
+    role: Use the existing validated consumer and preserved-source discussion contract
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Project the exclusion without changing identity or transferring claims
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retain the original asserted row unchanged
+  description: Use the implemented curation/mibig_xref_exclusions.tsv contract for
+    source_id=BGC0002471:2, expected_source_row_sha256=256d9ca248d2297ea1368679247b0f97b2752f45633ab241b102c9c3c31c236b,
+    xref=npatlas:NPA001975, reference=https://www.npatlas.org/api/v1/compound/NPA001975,
+    with curator, ISO date and rationale explicitly preserving old key YHZUHQIORUMYTL-UHFFFAOYSA-N,
+    old formula C28H46N4O13 and the observed alternative UKCQMIFZQBMVKR-UHFFFAOYSA-N
+    (C27H44N4O12). This complete-row pin includes version 3, exact original SMILES,
+    database_ids, taxon, locus, methods and empty fields; do not substitute a hand-picked-field
+    hash. Preserve raw inventories, owner chemistry, source concept and all unrelated
+    claims. Retain both source representations and the primary access limit in the
+    exclusion discussion. Resolve the original 2015 formula/drawing before any later
+    graph change; no replacement structure is chosen here. If a future independently
+    supported structure correction is proposed, explicitly adjudicate its currently
+    rejected composition with xref exclusions and any separate biological corrections,
+    collision/grounding/classification and old-key claim joins. Do not hand-edit generated
+    YAML or use reserved decisions.tsv.
+  generator: Existing xref-exclusion consumer plus guarded seeder regeneration.
+  acceptance_checks:
+  - Exactly one unchanged complete raw row and literal xref match; changed row, duplicate
+    decision or missing xref fails closed.
+  - Only the indicated exact-equivalence xref is withheld; source provenance and exclusion
+    discussion persist, owner graph/key and unrelated assertions stay unchanged.
+  - No authority-majority structure replacement, two-star grounding, automatic stereochemical
+    filling or transfer of old-key occurrence/assay claims.
+  - After separately authorized curation, targeted regression, canary, strict target,
+    provenance, corpus, reproduction and full QC checks pass; none are run by this
+    review.
+limitations:
+- This review evaluates present assertions and bounded source gaps; it does not claim
+  exhaustive discovery of every later publication or require all optional mechanisms
+  for coverage.
+- The full original 2015 body and Supporting Information remain unavailable after
+  the retained bounded routes. The abstract is not represented as a full methods or
+  spectral read.
+- Current locus annotations support the accession/stock bridge only. Neither the 12-versus-11
+  annotation count nor the constituent citrate name settles the graph or experimental
+  mechanism.
+- Chemistry/xref findings are supplied by the independent chemistry packet; this science
+  packet does not duplicate them or choose a replacement structure.
+- Original primary formula, drawing and stereochemical methods are unavailable after
+  bounded source retrieval. The confirmed xref mismatch is independently actionable;
+  the correct natural-product constitution remains unresolved.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-011
