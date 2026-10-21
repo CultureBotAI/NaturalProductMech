@@ -546,9 +546,9 @@ graph:
     evidence:
     - reference: https://www.uniprot.org/uniprotkb/Q9F8T9
       evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-17'
-      notes: Unreviewed Streptomyces rishiriensis DSM 40489 CouO (Q9F8T9, AAG29794.1,
-        AF235050.1, 231 aa); deposited native sequence reference.
+      retrieved_on: '2026-10-21'
+      notes: Unreviewed Streptomyces rishiriensis DSM 40489 CouO (Q9F8T9, AAG29793.1,
+        AF235050.4, 230 aa); deposited native sequence reference.
     - reference: DOI:10.1371/journal.pone.0171056
       evidence_type: PRIMARY_EXPERIMENT
       notes: Primary study reporting Pavkov-Keller CouO-WT protein in cleared lysate
@@ -566,4 +566,10 @@ curation_history:
   action: ADDED_UNIPROT_PROTEIN_EXAMPLES
   changes: Added deposited native CouO sequence reference node (UniProtKB:Q9F8T9)
     in coumermycin-a1-couo-lysate-normalization-and-mutant-endpoint-limits.
+  llm_assisted: true
+- timestamp: '2026-10-21T19:26:00Z'
+  curator: antigravity
+  action: CURATION_FIXED
+  changes: Corrected UniProtKB:Q9F8T9 DATABASE_ASSERTION note metadata to match deposited
+    AF235050.4 / AAG29793.1 (230 aa).
   llm_assisted: true

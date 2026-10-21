@@ -44,6 +44,16 @@ graph:
     label: Assayed SimX / SimEx1 protein, allele unresolved
     node_type: PROTEIN
     grounding_status: REVIEW_NEEDED
+  - node_id: simx_a
+    label: Deposited native SimX / SimEx with Ala126
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9AMH8
+  - node_id: simx_g
+    label: Deposited native SimX / Sim17 with Gly126
+    node_type: PROTEIN
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q93FA2
   - node_id: intact
     label: M1152ex1 carrying intact PAC-12I
     node_type: ORGANISM
@@ -169,6 +179,58 @@ graph:
     - reference: DOI:10.1016/j.jmb.2015.03.019
       evidence_type: PRIMARY_EXPERIMENT
       notes: Heterologous-host optimization, pIJ10480.
+  - subject: simx
+    predicate: has_candidate_native_sequence
+    object: simx_a
+    notes: This 534-aa deposited SimX (AF324838.2:58180..59784(+), AAK06799.1, UniProtKB:Q9AMH8)
+      has Ala at residue 126. Both deposited Streptomyces antibioticus Tu 6040 SimX
+      sequences fit the expression primers, but neither DOI:10.1016/j.jmb.2015.03.019
+      nor the thesis deposits the integrated pIJ10480 allele sequence in M1152ex1.
+      Canonical nodes denote the individual deposited candidate sequences without
+      collapsing the assayed SimX node onto one accession.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: M1152ex1 host construction using integrative simX (simEx1); allele not
+        resequenced.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 2.3 and Section 3.3 M1152ex1 construction from pIJ10480.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAK06799.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native S. antibioticus simEx, AAK06799.1, AF324838.2:58180..59784(+),
+        534 aa.
+    - reference: https://www.uniprot.org/uniprotkb/Q9AMH8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-21'
+      notes: Active unreviewed UniProtKB:Q9AMH8, taxon 1890, entry version 87, sequence
+        version 1, 534 aa; EMBL AAK06799.1 cross-reference.
+  - subject: simx
+    predicate: has_candidate_native_sequence
+    object: simx_g
+    notes: This 534-aa deposited SimX (AF322256.1:13386..14990(+), AAL15595.1, UniProtKB:Q93FA2)
+      has Gly at residue 126. Both deposited Streptomyces antibioticus Tu 6040 SimX
+      sequences fit the expression primers, but neither DOI:10.1016/j.jmb.2015.03.019
+      nor the thesis deposits the integrated pIJ10480 allele sequence in M1152ex1.
+      Canonical nodes denote the individual deposited candidate sequences without
+      collapsing the assayed SimX node onto one accession.
+    evidence:
+    - reference: DOI:10.1016/j.jmb.2015.03.019
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: M1152ex1 host construction using integrative simX (simEx1); allele not
+        resequenced.
+    - reference: https://ueaeprints.uea.ac.uk/id/eprint/61276/
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: Table 2.3 and Section 3.3 M1152ex1 construction from pIJ10480.
+    - reference: https://www.ncbi.nlm.nih.gov/protein/AAL15595.1
+      evidence_type: DATABASE_ASSERTION
+      notes: Native S. antibioticus sim17, AAL15595.1, AF322256.1:13386..14990(+),
+        534 aa.
+    - reference: https://www.uniprot.org/uniprotkb/Q93FA2
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-21'
+      notes: Active unreviewed UniProtKB:Q93FA2, taxon 1890, entry version 84, sequence
+        version 1, 534 aa; EMBL AAL15595.1 cross-reference.
   - subject: host
     predicate: has_reported_resistance_relative_to
     object: m1152
@@ -395,4 +457,11 @@ curation_history:
     DOI:10.1016/j.jmb.2015.03.019 and author thesis https://ueaeprints.uea.ac.uk/id/eprint/61276/.
     Exact native sequence and literal primer audit; review #538 limitations retained.
     Main article and relevant thesis sections inspected, journal supplement not obtained.'
+  llm_assisted: true
+- timestamp: '2026-10-21T19:26:00Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added deposited candidate native SimX sequence reference nodes (UniProtKB:Q9AMH8
+    Ala126 and UniProtKB:Q93FA2 Gly126) linked via has_candidate_native_sequence from
+    simx while keeping the unresolved M1152ex1 allele ungrounded.
   llm_assisted: true

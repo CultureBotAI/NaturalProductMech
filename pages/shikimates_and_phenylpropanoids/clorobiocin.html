@@ -4969,7 +4969,7 @@ by the corpus tests.</p>
 </table></div>
 <p class="sub">Every edge carries its own citation; an uncited edge is refused
 by the corpus tests.</p>
-<h2>Causal graph &mdash; biosynthesis <span class="tag">14 nodes, 15 edges</span></h2>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">15 nodes, 18 edges</span></h2>
 <p class="sub">CloH/CloY association and proposed stoichiometry, distinct coexpression and L383M activity tradeoffs, and computational limits. Review #672.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
 <tr>
@@ -5026,6 +5026,37 @@ by the corpus tests.</p>
 </li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAN65224.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Independent GenPept sequence equals the complete deposited CDS translation and Q8GHC7.</dd></dl>
 </li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>notes</dt><dd>Native CDS13390..15192(+),1803nt including stop. Table11 CDS-aware translation interprets TTG initiation as methionine; native internal residue383 is leucine.</dd></dl>
 </li><li><dl><dt>reference</dt><dd>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Boll 2011 primary dissertation chapter7, PDF pp.92-94,100; printed pages are five lower. Author-reproduced manuscript and supplement identified by DOI:10.1074/jbc.M111.288092, not independently retrieved final journal text.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Native CloY sequence reference</td>
+  <td>is_native_reference_for_coexpression_in</td>
+  <td>pBB35 coexpressed N-His6-CloH and untagged CloY preparation</td>
+  <td>AF329398.1 annotates cloY at 12920..13135(+) as 71-aa MbtH-like protein AAN65223.1 / UniProtKB:Q8GHC8. In pETDuet-1-cloH-cloY, cloY is coexpressed as an untagged partner alongside His6-CloH (whereas solitary pET37b-CloY encodes a C-terminal His8 tag). The native CloY reference node is linked to the coexpression construct and recombinant complex without equating the recombinant preparation with the native protein.</td>
+  <td><details class="graph-evidence"><summary class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1<br>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1<br>https://www.uniprot.org/uniprotkb/Q8GHC8</summary><ul><li><dl><dt>reference</dt><dd>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Boll 2011 primary dissertation chapter 7, PDF pp.92-94,100 (author-reproduced manuscript identified by DOI:10.1074/jbc.M111.288092 / PMID:21329365; final journal text not independently retrieved). Cloning and coexpression of cloH and cloY in pETDUET1 (pBB35).</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/nuccore/AF329398.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-21</dd><dt>notes</dt><dd>cloY 12920..13135(+), AAN65223.1, 71 aa.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q8GHC8</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-21</dd><dt>notes</dt><dd>Active unreviewed Streptomyces roseochromogenes subsp. oscitans DS 12.976 CloY (UniProtKB:Q8GHC8, taxon 149682, entry version 34, sequence version 1, 71 aa, AAN65223.1).</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Native CloH sequence reference</td>
+  <td>is_native_subunit_reference_for</td>
+  <td>Source-supported recombinant CloH/CloY association</td>
+  <td>UniProtKB:Q8GHC7 (AAN65224.1, AF329398.1:13390..15192(+), 600 aa) is the deposited native sequence reference for the CloH subunit of the recombinant His6-CloH/CloY complex copurified from pETDUET1-cloH-cloY (pBB35).</td>
+  <td><details class="graph-evidence"><summary class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1<br>https://www.uniprot.org/uniprotkb/Q8GHC7</summary><ul><li><dl><dt>reference</dt><dd>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Boll 2011 primary dissertation chapter 7, PDF pp.92-96 (author-reproduced manuscript identified by DOI:10.1074/jbc.M111.288092 / PMID:21329365; final journal text not independently retrieved). Copurification and size-exclusion analysis of recombinant CloH/CloY.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q8GHC7</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-21</dd><dt>notes</dt><dd>Active unreviewed Streptomyces roseochromogenes subsp. oscitans DS 12.976 CloH (UniProtKB:Q8GHC7, AAN65224.1, AF329398.1:13390..15192(+), 600 aa); deposited native subunit sequence reference.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>Native CloY sequence reference</td>
+  <td>is_native_subunit_reference_for</td>
+  <td>Source-supported recombinant CloH/CloY association</td>
+  <td>UniProtKB:Q8GHC8 (AAN65223.1, AF329398.1:12920..13135(+), 71 aa) is the deposited native sequence reference for the CloY MbtH-like subunit of the recombinant His6-CloH/CloY complex copurified from pETDUET1-cloH-cloY (pBB35).</td>
+  <td><details class="graph-evidence"><summary class="mono">https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1<br>https://www.uniprot.org/uniprotkb/Q8GHC8</summary><ul><li><dl><dt>reference</dt><dd>https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/49604/pdf/Boll_2011_online.pdf?isAllowed=y&amp;sequence=1</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>Boll 2011 primary dissertation chapter 7, PDF pp.92-96 (author-reproduced manuscript identified by DOI:10.1074/jbc.M111.288092 / PMID:21329365; final journal text not independently retrieved). Copurification and size-exclusion analysis of recombinant CloH/CloY.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q8GHC8</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-21</dd><dt>notes</dt><dd>Active unreviewed Streptomyces roseochromogenes subsp. oscitans DS 12.976 CloY (UniProtKB:Q8GHC8, AAN65223.1, AF329398.1:12920..13135(+), 71 aa); deposited native subunit sequence reference.</dd></dl>
 </li></ul>
 </details></td>
 </tr>
