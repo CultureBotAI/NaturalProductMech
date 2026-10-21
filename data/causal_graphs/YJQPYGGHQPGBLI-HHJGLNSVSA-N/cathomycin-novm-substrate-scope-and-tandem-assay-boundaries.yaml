@@ -296,9 +296,9 @@ graph:
     evidence:
     - reference: https://www.uniprot.org/uniprotkb/Q9L9F6
       evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-17'
+      retrieved_on: '2026-10-21'
       notes: Reviewed Streptomyces niveus (S. spheroides NCIMB 11891) NovL novobiocic
-        acid synthetase (Q9L9F6, AAF67505.2, AF170880.4, 527 aa); deposited native
+        acid synthetase (Q9L9F6, AAF67505.1, AF170880.4, 527 aa); deposited native
         sequence reference.
     - reference: DOI:10.1021/bi0340088
       evidence_type: PRIMARY_EXPERIMENT
@@ -335,4 +335,10 @@ curation_history:
   action: ADDED_UNIPROT_PROTEIN_EXAMPLES
   changes: Added deposited native sequence reference node(s) (UniProtKB:Q9L9F5, UniProtKB:Q9L9F6,
     UniProtKB:Q9L9F2) while keeping recombinant/engineered assay preparations ungrounded.
+  llm_assisted: true
+- timestamp: '2026-10-21T19:26:00Z'
+  curator: antigravity
+  action: CURATION_FIXED
+  changes: Corrected UniProtKB:Q9L9F6 DATABASE_ASSERTION protein cross-reference version
+    from AAF67505.2 to AAF67505.1.
   llm_assisted: true

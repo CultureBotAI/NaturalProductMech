@@ -3,11 +3,11 @@ standard_inchi_key: WTIJXIZOODAMJT-DHFGXMAYSA-N
 graph:
   graph_id: coumermycin-a1-coump-native-references-and-bounded-tandem-reactions
   scope: BIOSYNTHESIS
-  description: 'Two native protein references accompany abstract-supported precursor
-    tailoring. The reported tandem reactions do not establish a physical complex or
-    complete native-A1 synthesis. Preparations and precursor/engineered products remain
-    separately ungrounded; assay conditions were not obtained. Author-agent review
-    #587; partial curation, not full-record sign-off.'
+  description: 'Four native protein references (CouM, CouP, CouL, and NovN) accompany
+    abstract-supported precursor tailoring. The reported tandem reactions do not establish
+    a physical complex or complete native-A1 synthesis. Preparations and precursor/engineered
+    products remain separately ungrounded; assay conditions were not obtained. Author-agent
+    review #587; partial curation, not full-record sign-off.'
   nodes:
   - node_id: cluster
     label: Deposited coumermycin biosynthetic cluster
@@ -24,6 +24,16 @@ graph:
     node_type: ENZYME
     grounding_status: GROUNDED
     identifier: UniProtKB:Q9F8T8
+  - node_id: CouL
+    label: Native CouL sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9F8U8
+  - node_id: NovN
+    label: Native NovN sequence reference
+    node_type: ENZYME
+    grounding_status: GROUNDED
+    identifier: UniProtKB:Q9L9F4
   - node_id: CouL_prep
     label: Study CouL preparation
     node_type: ENZYME
@@ -118,6 +128,25 @@ graph:
       notes: Exact eight-way CDS/protein comparisons across two loci and four deposit
         versions.
       retrieved_on: '2026-10-06'
+  - subject: cluster
+    predicate: encodes_native_reference
+    object: CouL
+    notes: Current AF235050.4 annotates couL at 10634..12223(+) as AAG29784.2 / UniProtKB:Q9F8U8
+      (529 aa, sequence version 2, taxon 68264 Streptomyces rishiriensis DSM 40489).
+      Historical AF235050.1-.3 / AAG29784.1 differed at residues 384-385 (RA versus
+      current EG). This node is the deposited native reference only; the study CouL
+      preparation (CouL_prep) is kept distinct.
+    evidence:
+    - reference: https://www.ncbi.nlm.nih.gov/nuccore/AF235050.4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-21'
+      notes: couL 10634..12223(+), AAG29784.2, 529 aa.
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8U8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-21'
+      notes: Unreviewed Streptomyces rishiriensis DSM 40489 CouL acyl-CoA synthetase
+        (Q9F8U8, AAG29784.2, AF235050.4, 529 aa, entry version 59, sequence version
+        2); deposited native sequence reference.
   - subject: CouP
     predicate: is_native_sequence_reference_for
     object: CouP_prep
@@ -131,6 +160,47 @@ graph:
       notes: Primary abstract only; full paper, methods, figures and supporting material
         not obtained.
       retrieved_on: '2026-10-06'
+  - subject: CouL
+    predicate: is_native_sequence_reference_for
+    object: CouL_prep
+    notes: Freel Meyers et al. 2004 include CouL in coupled reactions to form coumermic
+      acid from 3-methyl-2-pyrrolecarboxylic acid and the aminocoumarin ring. UniProtKB:Q9F8U8
+      is the deposited native sequence reference for CouL; CouL_prep remains ungrounded
+      because the recombinant preparation construct and historical AF235050.1-.3 versus
+      AF235050.4 sequence revision at residues 384-385 are not collapsed onto the
+      native entry.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9F8U8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-21'
+      notes: Unreviewed Streptomyces rishiriensis DSM 40489 CouL acyl-CoA synthetase
+        (Q9F8U8, AAG29784.2, AF235050.4, 529 aa); deposited native sequence reference.
+    - reference: PMID:15554713
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-06'
+      notes: Coupled CouL/CouM/NovN/CouP enzymatic assays in Freel Meyers et al. 2004;
+        CouL preparation kept distinct from native UniProtKB:Q9F8U8.
+  - subject: NovN
+    predicate: is_native_sequence_reference_for
+    object: NovN_prep
+    notes: Freel Meyers et al. 2004 add heterologous NovN carbamoyltransferase from
+      the novobiocin cluster (BGC0000834, AF170880.4 novN, AAF67507.2) in the four-enzyme
+      tandem reaction. UniProtKB:Q9L9F4 is the deposited native sequence reference
+      for NovN (not encoded by the coumermycin cluster BGC0000833); NovN_prep remains
+      ungrounded because recombinant expression construct details are not collapsed
+      onto the native entry.
+    evidence:
+    - reference: https://www.uniprot.org/uniprotkb/Q9L9F4
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-21'
+      notes: Reviewed Streptomyces niveus NCIMB 9219 (S. spheroides NCIMB 11891) NovN
+        O-carbamoyltransferase (Q9L9F4, AAF67507.2, AF170880.4, 677 aa, entry version
+        61, sequence version 2); deposited native sequence reference.
+    - reference: PMID:15554713
+      evidence_type: PRIMARY_EXPERIMENT
+      retrieved_on: '2026-10-06'
+      notes: Four-enzyme CouL/CouM/NovN/CouP tandem assay in Freel Meyers et al. 2004;
+        NovN preparation kept distinct from native UniProtKB:Q9L9F4.
   - subject: CouL_prep
     predicate: provides_acceptors
     object: amides
@@ -224,4 +294,11 @@ curation_history:
   changes: Add coumermycin-a1-coump-native-references-and-bounded-tandem-reactions;
     preserve native/preparation identity, abstract-only evidence and engineered-product
     limits (#587).
+  llm_assisted: true
+- timestamp: '2026-10-21T19:26:00Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Added deposited native CouL (UniProtKB:Q9F8U8) and NovN (UniProtKB:Q9L9F4)
+    sequence reference nodes linked to CouL_prep and NovN_prep while keeping experimental
+    preparations ungrounded.
   llm_assisted: true

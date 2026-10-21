@@ -530,9 +530,10 @@ graph:
     evidence:
     - reference: https://www.uniprot.org/uniprotkb/A0A0B5LB55
       evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-17'
-      notes: Unreviewed Penicillium brevicompactum NRRL 864 MpaH' (A0A0B5LB55, KJ863532.1
-        AIA21557.1, 413 aa); deposited native sequence reference.
+      retrieved_on: '2026-10-21'
+      notes: Reviewed Penicillium brevicompactum NRRL 864 MpaH' (A0A0B5LB55, KM595305.1
+        AJG44385.1 cross-reference, sequence version 2, 433 aa); deposited native
+        sequence reference.
     - reference: DOI:10.1002/advs.202508826
       evidence_type: PRIMARY_EXPERIMENT
       notes: Primary study reporting MpaH' (2025 assay label) (node 'mpah_prime');
@@ -550,4 +551,11 @@ curation_history:
   action: ADDED_UNIPROT_PROTEIN_EXAMPLES
   changes: Added MpaH' native NRRL864 reference node (UniProtKB:A0A0B5LB55) in mycophenolic-acid-pb864-sidechain-reconstitution
     matching sibling mycophenolic acid graphs.
+  llm_assisted: true
+- timestamp: '2026-10-21T19:26:00Z'
+  curator: antigravity
+  action: CURATION_FIXED
+  changes: Corrected UniProtKB:A0A0B5LB55 DATABASE_ASSERTION note metadata to match
+    reviewed sequence version 2 (KM595305.1 / AJG44385.1, 433 aa) while preserving
+    the KJ863532.1 / AIA21557.1 (413 aa) boundary in edge notes.
   llm_assisted: true

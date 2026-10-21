@@ -155,9 +155,9 @@ graph:
     evidence:
     - reference: https://www.uniprot.org/uniprotkb/Q8RL46
       evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-17'
-      notes: Unreviewed Pseudomonas fluorescens NCIMB 10586 MupW (Q8RL46, AAM12937.1,
-        AF318063.1, 470 aa); deposited native sequence reference.
+      retrieved_on: '2026-10-21'
+      notes: Unreviewed Pseudomonas fluorescens NCIMB 10586 MupW (Q8RL46, AAM12939.1,
+        AF318063.2, 463 aa); deposited native sequence reference.
     - reference: DOI:10.1039/C9SC06192D
       evidence_type: PRIMARY_EXPERIMENT
       notes: Primary study reporting Study coexpressed MupW (node 'mupw'); the experimental
@@ -183,4 +183,10 @@ curation_history:
   curator: antigravity
   action: ADDED_UNIPROT_PROTEIN_EXAMPLES
   changes: Added native MupW sequence reference node (UniProtKB:Q8RL46) in thiomarinol-tmlwz-mixed-mupw-tmlz-cell-assay.
+  llm_assisted: true
+- timestamp: '2026-10-21T19:26:00Z'
+  curator: antigravity
+  action: CURATION_FIXED
+  changes: Corrected UniProtKB:Q8RL46 DATABASE_ASSERTION note metadata to match deposited
+    MupW (AAM12939.1, AF318063.2, 463 aa).
   llm_assisted: true

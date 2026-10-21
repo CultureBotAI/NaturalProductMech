@@ -265,9 +265,9 @@ graph:
     evidence:
     - reference: https://www.uniprot.org/uniprotkb/Q9L9E5
       evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-17'
+      retrieved_on: '2026-10-21'
       notes: Reviewed Streptomyces niveus (S. spheroides NCIMB 11891) NovW 3,5-epimerase
-        (Q9L9E5, AAF67516.1, AF170880.4, 208 aa); deposited native sequence reference.
+        (Q9L9E5, AAF67516.1, AF170880.4, 207 aa); deposited native sequence reference.
     - reference: DOI:10.1016/j.abb.2005.01.012
       evidence_type: PRIMARY_EXPERIMENT
       notes: Primary study reporting Thuy 2005 NovW assay preparation (node 'w');
@@ -283,9 +283,9 @@ graph:
     evidence:
     - reference: https://www.uniprot.org/uniprotkb/Q9L9E7
       evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-17'
+      retrieved_on: '2026-10-21'
       notes: Reviewed Streptomyces niveus (S. spheroides NCIMB 11891) NovU C-methyltransferase
-        (Q9L9E7, AAF67514.2, AF170880.4, 410 aa); deposited native sequence reference.
+        (Q9L9E7, AAF67514.2, AF170880.4, 420 aa); deposited native sequence reference.
     - reference: DOI:10.1016/j.abb.2005.01.012
       evidence_type: PRIMARY_EXPERIMENT
       notes: Primary study reporting Thuy 2005 NovU assay preparation (node 'u');
@@ -301,9 +301,9 @@ graph:
     evidence:
     - reference: https://www.uniprot.org/uniprotkb/Q9L9E9
       evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-17'
+      retrieved_on: '2026-10-21'
       notes: Reviewed Streptomyces niveus (S. spheroides NCIMB 11891) NovS 4-ketoreductase
-        (Q9L9E9, AAF67512.1, AF170880.4, 286 aa); deposited native sequence reference.
+        (Q9L9E9, AAF67512.1, AF170880.4, 288 aa); deposited native sequence reference.
     - reference: DOI:10.1016/j.abb.2005.01.012
       evidence_type: PRIMARY_EXPERIMENT
       notes: Primary study reporting Thuy 2005 NovS assay preparation (node 's');
@@ -325,4 +325,10 @@ curation_history:
   action: ADDED_UNIPROT_PROTEIN_EXAMPLES
   changes: Added deposited native sequence reference node(s) (UniProtKB:Q9L9E5, UniProtKB:Q9L9E7,
     UniProtKB:Q9L9E9) while keeping recombinant/engineered assay preparations ungrounded.
+  llm_assisted: true
+- timestamp: '2026-10-21T19:26:00Z'
+  curator: antigravity
+  action: CURATION_FIXED
+  changes: Corrected DATABASE_ASSERTION sequence lengths for UniProtKB:Q9L9E5 (207
+    aa), UniProtKB:Q9L9E7 (420 aa), and UniProtKB:Q9L9E9 (288 aa).
   llm_assisted: true

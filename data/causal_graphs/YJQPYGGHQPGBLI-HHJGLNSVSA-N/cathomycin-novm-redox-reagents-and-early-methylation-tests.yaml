@@ -432,9 +432,9 @@ graph:
     evidence:
     - reference: https://www.uniprot.org/uniprotkb/Q9F8T9
       evidence_type: DATABASE_ASSERTION
-      retrieved_on: '2026-10-17'
-      notes: Unreviewed Streptomyces rishiriensis DSM 40489 CouO (Q9F8T9, AAG29794.1,
-        AF235050.1, 231 aa); deposited native sequence reference.
+      retrieved_on: '2026-10-21'
+      notes: Unreviewed Streptomyces rishiriensis DSM 40489 CouO (Q9F8T9, AAG29793.1,
+        AF235050.4, 230 aa); deposited native sequence reference.
     - reference: DOI:10.1021/bi051599o.s001
       evidence_type: PRIMARY_EXPERIMENT
       notes: Primary study reporting 2005 supplement CouO assay preparation (node
@@ -453,4 +453,10 @@ curation_history:
   changes: Added deposited native sequence reference node(s) (UniProtKB:Q9L9G0, UniProtKB:Q9L9F9,
     UniProtKB:Q9L9F3, UniProtKB:Q9F8T9) while keeping recombinant/engineered assay
     preparations ungrounded.
+  llm_assisted: true
+- timestamp: '2026-10-21T19:26:00Z'
+  curator: antigravity
+  action: CURATION_FIXED
+  changes: Corrected UniProtKB:Q9F8T9 DATABASE_ASSERTION note metadata to match deposited
+    AF235050.4 / AAG29793.1 (230 aa).
   llm_assisted: true
