@@ -1625,14 +1625,21 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
             doc["discussions"] = discussions
 
         doc["_slug"] = slugify(label, identifier)
-        if structure_corrected:
+        if lead.get("structure_correction_old_key"):
             doc["_previous_standard_inchi_key"] = lead["structure_correction_old_key"]
+        elif structure_corrected:
+            doc["_split_structure_correction"] = True
         records.append(doc)
 
     # Slugs are published URLs and must be unique. A clash is resolved
     # deterministically rather than by whichever record was built first.
+    # Records split out of a shared-structure collision sort after existing
+    # records so they do not displace an already-published base slug.
     seen: Counter[str] = Counter()
-    for doc in sorted(records, key=lambda d: d["identifier"]):
+    for doc in sorted(
+        records,
+        key=lambda d: (bool(d.get("_split_structure_correction")), d["identifier"]),
+    ):
         base = doc["_slug"]
         seen[base] += 1
         if seen[base] > 1:

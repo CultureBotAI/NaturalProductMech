@@ -37,14 +37,14 @@ see [curation](docs/CURATION.md#complete-mechanism-reads) for the data contract.
 <!-- BEGIN GENERATED CORPUS STATS -->
 
 ```
-records: 3115
-unique InChIKeys: 3115
+records: 3116
+unique InChIKeys: 3116
 structures with undefined stereocentres: 1124
 
 by pathway (the filing decision, computed):
   ALKALOIDS                             509
   AMINO_ACIDS_AND_PEPTIDES              655
-  CARBOHYDRATES                         103
+  CARBOHYDRATES                         104
   FATTY_ACIDS                            82
   POLYKETIDES                           869
   SHIKIMATES_AND_PHENYLPROPANOIDS        64
@@ -52,20 +52,20 @@ by pathway (the filing decision, computed):
   UNCLASSIFIED                          620
 
 by curation status:
-  SEEDED                               3115
+  SEEDED                               3116
 
 by grounding status:
-  EXACT                                 363
+  EXACT                                 364
   MINTED                               2743
   REVIEW_NEEDED                           9
 
 field coverage (records carrying at least one item):
-  biosynthesis_origin                  3115
-  producer_taxon_groups                3076
+  biosynthesis_origin                  3116
+  producer_taxon_groups                3077
   occurrence_taxon_groups              2342
-  producer_organisms                   3076
+  producer_organisms                   3077
   occurrences                          2342
-  biosynthetic_gene_clusters           3115
+  biosynthetic_gene_clusters           3116
   biosynthetic_pathway                  164
   bioactivities                         174
   bioactivity_summary                   307
