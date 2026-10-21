@@ -1,0 +1,1613 @@
+# Anisomycin: demonstrated biosynthesis, taxon label and definition qualification
+
+- Review: 20261021T130703Z-anisomycin
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T12:40:41.473115Z
+- Finished UTC: 2026-10-21T13:07:03.215182Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Exact anisomycin identity, eligible ChEBI grounding and the pinned same-structure AntibioticMech link are supported. The cited biosynthesis paper demonstrates native deletion/rescue, heterologous production and final-product AniK chemistry, omitted from the imported method list. Preserve ACCC40033 and construct context when restoring those methods. Correct the retained beijingensis subspecies occurrence label and qualify the imported ribosome/DNA wording through a cited curator discussion. The 1954 original body and 2017 supplement remain required gaps.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 69, batch 007, selected in path order from the fresh-main authoritative validated catalogue and the separately validated pending-PR targets. At selection, 114 of 3116 current records had campaign coverage and 3002 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1c2402097718c138b081e00943de8f04de0541cd.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CHEBI:338412 | data/natural_products/alkaloids/anisomycin.yaml | generated | (−)-anisomycin |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | CHEBI:338412 | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | CHEBI:338412 | All 3,116 current record files agree with PATHS.tsv and their pinned filing pathways. |
+| Corpus reproduction | passed | True | CHEBI:338412 | All 3,116 current records passed the documented byte-reproduction gate against committed inventories and maintained curation inputs. |
+| Native deterministic review queue | passed | True | CHEBI:338412 | The exhaustive review queue produced 8,928 diagnostic rows across 12 queues; this deterministic output does not establish scientific review. |
+| Configured ontology identifier-label correspondence | passed | True | CHEBI:338412 | The configured identifier-label gate passed using the existing ontology caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions, 499 warning-only mismatches and 4,744 pairs skipped because their prefixes have no adapter. |
+| Full repository quality gate on the current main baseline | passed | True | CHEBI:338412 | The full documented just qc recipe passed on the unchanged main baseline during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). All configured lint, governance, documentation, provenance, source-queue, schema, rendering, reproduction, filing-integrity and reporting stages completed successfully. |
+| Complete owner and component scope | passed | True | CHEBI:338412 | The complete owner and all present fields were read. The parsed component-reference set is empty, so no referenced component was omitted. All existing inspection input hashes still match. |
+| Exact-product method and native strain representation | failed | True | CHEBI:338412 | The source imports no method although its cited full main directly reports native loss/rescue, heterologous exact-product formation and purified AniK final-product formation. The omission undergrades both producer and locus. |
+| Required historical occurrence and supplementary context | unavailable | True | CHEBI:338412 | The1954 original body and2017 SI remain unavailable through the bounded routes; these required checks leave the review partial. |
+| Complete chemical identity and pinned sibling match | passed | True | CHEBI:338412 | Owner, current ChEBI default/MOL, NPAtlas, PubChem and exact pinned sibling agree on full Standard/fixed-H graph and three assigned centres. |
+| Occurrence identifier/name consistency | failed | True | CHEBI:338412 | The 2019 occurrence emits the parent species label for a subspecies ID; exact label correction is required. |
+| Primary definition mechanism and DNA-effect qualification | passed | True | CHEBI:338412 | Original structural figures and methods establish ribosomal binding; the recovered 1967 primary transcription supports the DNA phenotype and explicitly proposed indirect interpretation. The broad definition is not disproven, but its disjunction and causal compression warrant a bounded clarification. No new whole-record validation was run. |
+
+## Scientific And Domain Assessments
+
+### Native status and retained seed history
+
+provenance: supported. Targets: CHEBI:338412.
+
+The 2 dated seed events and SEEDED status describe generated provenance. This review does not relabel the owner REVIEWED or treat seed history as scientific approval. Both retained events are source seeding events.
+
+### Optional mechanism and application content
+
+completeness: not_applicable. Targets: CHEBI:338412.
+
+The owner has no structured pathway steps, causal edges, organism-specific proteins, molecular-target items, bioactivity rows or synthetic-biology applications. Their absence alone is not a defect. Anisomycin separately carries a source definition, ANTIVIRAL summary and sibling-corpus link; those existing assertions are explicitly assessed in the scientific and identifier sections. No activity is inferred from the absence of structured observations.
+
+### Structured transcriptomic context
+
+completeness: not_applicable. Targets: CHEBI:338412.
+
+No exact named native producer and strain is covered by the inspected iModulonDB dataset catalogue. E. coli used as a recombinant expression host in source experiments does not supply native-producer expression context; genus-only occurrences cannot identify a covered species or strain. No applicable module query follows from these records. This bounded coverage limit is not negative evidence about production or function.
+
+### All three occurrence citations and biological origin
+
+evidence: unknown. Targets: CHEBI:338412.
+
+The1993 SA3097 genus occurrence and2019 native beijingensis culture are supported by original studies. The1954 occurrence is historically consistent but incompletely checked. Species labels do not erase isolate scope, and recombinant TK24 production is distinct from natural-origin evidence.
+
+### Native genetics, heterologous production and exact-product enzymology
+
+evidence: concern. Targets: CHEBI:338412.
+
+The cited2017 primary provides three distinct positive evidence types for anisomycin. Restore their product-specific method annotations and native experimental strain context rather than retaining an empty entry-level method list. The main-body observations support the change even though detailed SI checks remain incomplete.
+
+### Optional biosynthetic detail and mechanism boundaries
+
+completeness: supported. Targets: CHEBI:338412.
+
+The owner does not assert a detailed pathway or individual enzyme model. No missing optional graph finding is warranted. Any enrichment must distinguish eight essential genes from the nine-gene functional ensemble including AniG, preserve cosmid/native boundaries, and identify AniP chemistry as proposed rather than purified-enzyme proof.
+
+### Predicted filing and asserted source classes
+
+provenance: supported. Targets: CHEBI:338412.
+
+The exact-key NPClassifier output and model version support the alkaloid filing as a prediction. MIBiG biosynthetic classes and any eligible source classes remain separately attributed; no prediction is promoted into an experimental biosynthetic claim.
+
+### Complete stereochemistry, exact ChEBI and NPAtlas identity
+
+identity: supported. Targets: CHEBI:338412.
+
+All independent current representations agree on neutral C14H19NO4 and the complete (2R,3S,4S) stereoisomer. CHEBI338412 is a valid unique three-star exact grounding; NPA017379 and chemical WikidataQ378498 agree. This does not by itself validate every wording claim in the source definition.
+
+### Pinned same-structure sibling and derived antiviral summary
+
+provenance: supported. Targets: CHEBI:338412.
+
+The exact pinned sibling graph and inventory join are independently verified. ANTIVIRAL is backed by the sibling record carrying mechanism under PLAN3.5, with its database-derived and host-shared-target limitations retained. It is not a human efficacy, selectivity, clinical-use or direct antiviral-assay claim.
+
+### Occurrence subspecies label versus source species name
+
+grounding: concern. Targets: CHEBI:338412.
+
+Occurrence[2] uses the correct resolvable subspecies ID2719566 but a species-only label corresponding to parent516360. Current NCBI rank/name and the primary2019 culture context supplied separately support preserving the subspecies identity and correcting the label, not remapping it to the parent species.
+
+### Direct target versus downstream DNA-synthesis phenotype
+
+evidence: concern. Targets: CHEBI:338412.
+
+The 60S peptidyl-transferase centre is part of the 80S ribosome, so these are not two alternative targets. Protein-synthesis inhibition has direct structural and functional support. Partial DNA-synthesis inhibition is an observed HeLa phenotype; its indirect causality was proposed rather than experimentally resolved. Retain the phenotype while distinguishing it from a direct DNA-target assertion. The existing definition is source-faithful but compressed.
+
+## Findings
+
+### S069-F-METHOD: Empty methods undergrade demonstrated anisomycin production and biosynthesis
+
+major / open / confirmed; issue key: mibig-bgc0001510-anisomycin-missing-demonstrated-methods.
+
+The owner retains SOURCE_ASSERTION and CLUSTER_UNSTATED despite its cited primary reporting native region deletion/rescue, heterologous anisomycin production and a purified AniK reaction forming exact anisomycin. These endpoints concern the exact compound and source locus. Retain the native strain and construct distinctions when restoring the methods; the supplementary access gap does not negate explicit main-body observations.
+
+### C069-F-SUBSPECIES-LABEL: The beijingensis occurrence has a species-only label under a subspecies ID
+
+minor / open / confirmed; issue key: anisomycin-subspecies-label.
+
+LOTUS occurrence[2] pairs NCBITaxon2719566 with Streptomyces hygrospinosus. Current NCBI2719566 is Streptomyces hygrospinosus subsp. beijingensis, parent516360, and recognizes var. beijingensis as a synonym. The upstream Q104990388 repeats the wrong species-level name/P685 combination. The valid occurrence should not be deleted or silently widened to516360.
+
+### S069-DEF-F-QUALIFICATION: The imported definition compresses the ribosomal target and DNA-effect interpretation
+
+minor / open / confirmed; issue key: anisomycin-definition-ribosome-dna-qualification.
+
+The wording presents peptidyl transferase and the 80S ribosome as alternatives and does not distinguish the directly supported translation target from an observed DNA-synthesis phenotype with proposed indirect causality. The source definition is faithfully copied and the DNA phenotype is supported, so this is a non-blocking qualification rather than a false target or unsupported activity finding.
+
+## Recommended Actions And Acceptance Checks
+
+### S069-ACT-METHOD
+
+Add a consumed REPLACE for the MIBiG source concept with minted_identifier=naturalproductmech:mibig-29e376dc5d (BGC0001510:1), source=MIBIG, source_id=BGC0001510, exact source_label=anisomycin, locus_evidence_methods=Knock-out studies&#124;Heterologous expression&#124;Enzymatic assays. Because REPLACE does not enforce expected_* fields, pair it with a consumed BGC0001510:1 claim-reference row guarded by complete raw-row SHA 477d03df25419cf00af8ab2d06fd2e27c92db7e7d4983e6362472c9ee572dfaa, retaining producer_reference=locus_reference=PMID:28373542 and source_reference=DOI:10.1073/pnas.1701361114 with dated curator/rationale. Add the separately consumed strain row with the same source ID/SHA, strain=ACCC40033 and reference=PMID:28373542; document the independently inspected2019 Table1 and accession metadata bridge in the rationale. Preserve native parent, ZXQ01, mutant cosmids, TK24 and protein-expression E. coli roles. Keep blank raw locus bounds; do not substitute the28.67-kb cosmid overlap or whole14,535-bp accession length for experimentally delimited coordinates. No structural correction is needed for this action. If later combined with one, implement and test the existing citation/strain rejection contract explicitly.
+
+- Reject stale or duplicate BGC0001510:1 rows using original SHA 477d03df25419cf00af8ab2d06fd2e27c92db7e7d4983e6362472c9ee572dfaa; test actual REPLACE-plus-full-row-guard composition. Verify the loader lookup uses the MIBiG source-concept identifier and that the correction reaches the existing CHEBI:338412 owner.
+- Emit exactly the three supported methods with BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED; retain raw entry version5, taxon516360, KY014292.1, stable CHEBI identifier and chemistry.
+- Retain anisomycin1 as the final assay product and distinguish4a substrate, intermediate reactions, native deletion/rescue and cosmid experiments; do not assert AniP purified activity or aniG necessity.
+- Keep both occurrence provenance and the separate current taxonomy-label repair; do not transfer heterologous hosts into natural producers.
+- Run focused correction-consumer tests, target canary, strict validation and required reproduction/corpus/QC gates after curation; none of those future mutation checks was run in this review.
+
+### C069-A-SUBSPECIES-LABEL
+
+Add a consumed, explicitly documented LOTUS taxon-label adjudication hook (new functionality, not an existing label override) pinned to full key YKJYKKNCCRKFSL-RDBSUJKOSA-N, taxonNCBITaxon:2719566, DOI10.1016/J.SYNBIO.2018.12.004, Q104990388, old organism_name Streptomyces hygrospinosus and full row SHA 103a2535e6cbd50a9f4707a8a98da0b85b03282df3f03bb3ffc9916f87bc8e29. Emit the current subspecies label Streptomyces hygrospinosus subsp. beijingensis while retaining the upstream species-only text/QID and authority interpretation as provenance. Preserve the taxon ID, occurrence source/citation, exact chemical identity and separate producer516360; do not use an exclusion action to remove this supported occurrence. Rebuild from unchanged raw input and ensure no other key/DOI/taxon row is relabelled by an overbroad global replacement.
+
+- Exact three-field source selector plus full row SHA rejects drift and leaves unrelated rows untouched.
+- The retained occurrence ID2719566 and emitted subspecies label agree; producer516360 is unchanged and no culture-wide production claim is inferred.
+- Raw LOTUS/Wikidata text remains auditable and reproducible extraction/seeding/id-label checks pass.
+
+### S069-DEF-ACT-QUALIFICATION
+
+Add a unique curator-anisomycin-definition discussion through the guarded validated curation writer for CHEBI:338412 and unchanged key YKJYKKNCCRKFSL-RDBSUJKOSA-N, pinning the inspected owner bytes and ChEBI inventory row d8e0993d5e25ba2cb40af42878d7f0d1c311391af9740acb7f994deb2b99f176. Use an explicit prompt about interpreting the source definition, a resolved evidence-backed answer, and the two primary references. Explain that anisomycin binds the A-site of the peptidyl-transferase centre in the 60S subunit of the 80S ribosome; reduced DNA synthesis was observed in HeLa cells and was proposed to be secondary to translation inhibition. Preserve definition and definition_source as imported rather than silently rewriting them. No new molecular-target item or phenotype is required. A future upstream definition change must flow through the normal source refresh; this action does not contact upstream or invent a definition-override table.
+
+- Require the same complete owner identity and unchanged pinned source row before writing; reject source drift and duplicate curator discussion IDs.
+- Keep imported definition and definition_source byte-equivalent in value; attach DOI:10.1038/nature13737 and PMID:6027796 evidence to the curator qualification.
+- The qualification must not claim a direct DNA enzyme, proven secondary causality, anisomycin rapid-kinetic results from the 2014 CHX/LTM assays, or two independent ribosomal targets.
+- Confirm the unique curator-prefixed discussion survives same-key reseeding and is not carried across a structure change; run the documented guarded-write, strict-validation and reproduction checks after actual curation. These checks are proposed, not executed here.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| R069-OWNER | data/natural_products/alkaloids/anisomycin.yaml; Complete owner YAML, including every history entry, source claim and discussion | supports | Root read the complete (−)-anisomycin owner after its individual intake. It has 1 MIBiG source concepts, 3 occurrence entries, 1 producers and 1 loci. There are no inline or referenced mechanism graphs, pathway steps, molecular targets, bioactivity rows or synthetic-biology applications in this owner. The complete parsed owner was inspected; ignored-file filters were not used to infer field absence. |
+| R069-LOCAL-SOURCES | /private/tmp/npm-review-work/069/local-sources.json; Complete target-specific MIBiG, LOTUS, CyanoMetDB, ChEBI and NPClassifier slices | context_only | Root read every matching local source row and compared it with the complete emitted owner. The separate scientific and identifier assessments decide claim support; deterministic reproduction does not establish primary evidence. |
+| R069-IMODULON-DATASETS | /private/tmp/npm-review-work/010/imodulon-datasets.txt; Complete 28-row dataset catalogue; actual command receipt in 010/imodulon-context-receipts.json | context_only | The successful structured-adapter catalogue retrieved at 07:21:15 UTC was fully re-read. Its 28 datasets contain no Fischerella, Azotobacter, Kamptonema/Oscillatoria, Vibrio anguillarum or V. campbellii, Streptomyces uncialis, S. hygrospinosus or S. venezuelae dataset. The Streptomyces entries are S. albidoflavus and S. coelicolor; the Vibrio entries are V. natriegens. A genus-level occurrence does not justify substituting a different species. This same-session catalogue retains its original retrieval time; a fresh request is not claimed. |
+| S069-OWNER | data/natural_products/alkaloids/anisomycin.yaml; Complete owner and all exact-key local source rows | supports | The exact owner has CHEBI:338412 and full key YKJYKKNCCRKFSL-RDBSUJKOSA-N. BGC0001510:1 version5 has empty method and bounds, species516360, KY014292.1, SOURCE_ASSERTION/CLUSTER_UNSTATED and PMID28373542. Canonical full untouched raw-row SHA256 477d03df25419cf00af8ab2d06fd2e27c92db7e7d4983e6362472c9ee572dfaa. Three LOTUS occurrences cite 1954, 1993 and 2019 papers. Existing definition and sibling-derived activity summary are assessed separately. |
+| S069-MAIN | https://pmc.ncbi.nlm.nih.gov/articles/PMC5402462/; Complete scientific main text, tables, captions and references; DOI10.1073/pnas.1701361114 PMID28373542 | supports | Native S. hygrospinosus var. beijingensis loses anisomycin after the large region corresponding to cosmid26D9 is deleted (ZXQ01), and complementation with26D9 restores it. Four cosmids produce exact anisomycin1 in S. lividans TK24 by HPLC-MS. Individual ORF deletions were made on cosmids and tested in TK24 and ZXQ01; they must not be described as 25 independent native chromosomal knockouts. Eight genes are essential in the tested context; aniG deletion has no production phenotype. |
+| S069-ENZYME | https://pmc.ncbi.nlm.nih.gov/articles/PMC5402462/; AniK Results and Figure2 caption; broader AniN/AniQ/AniO/AniP sections | supports | Purified recombinant AniK from E. coli BL21(DE3), with SAM, converts desmethyl-anisomycin4a into exact anisomycin1, compared with authentic product and boiled-enzyme control; 3a instead forms deacetylanisomycin5. This is direct final-product enzymology. AniN2→3 and AniO7→8 concern intermediates. AniP could not be tested in vitro because of poor solubility; glycerol labeling and pathway inference do not establish purified AniP catalysis. |
+| S069-FIG1 | https://cdn.ncbi.nlm.nih.gov/pmc/blobs/fc60/5402462/ca8eceb4bfde/pnas.1701361114fig01.jpg; Original Figure1 pixels, native/cosmid pathway context and chromatogram labels | supports | Original figure supports the assignment of1, intermediate labels and mutant comparisons. Its chemical drawing and full main establish exact-compound scope; no independent raw spectral reassignment or final-product chiral assay is claimed. |
+| S069-2019 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&amp;id=6321866&amp;retmode=xml; Complete original scientific body, strain/plasmid tables, Methods, Results and Discussion; DOI10.1016/j.synbio.2018.12.004 PMID30656223 | supports | Table1 identifies native ACCC40033 and the aniF deficient strain from the 2017 study. Table2 explicitly names ZXQ09 for complementation constructs. WT, mutant and complemented-culture HPLC/LC-MS profiles support anisomycin occurrence. AniF overexpression raises measured output to about1.2 times WT; it is not a120% increase. RT-qPCR, EMSA and footprinting support transcriptional control, not a biosynthetic enzyme reaction. The study does not convert the earlier cosmid-mutant experiments into new independent native chromosomal deletions. |
+| S069-1993 | https://www.jstage.jst.go.jp/article/antibiotics1968/46/8/46_8_1300/_pdf; Complete three-page original paper, culture/isolation and structure-identification text; DOI10.7164/antibiotics.46.1300 | supports | Marine-soil Streptomyces sp. SA3097 culture yields separately isolated anisomycin C1 alongside distinguishable congeners. Identity was compared by spectral and specific-rotation methods. This directly supports the genus-level LOTUS occurrence; the congeners and their cell-line results are not automatically assigned to anisomycin. |
+| S069-1954-GAP | https://pubs.acs.org/doi/10.1021/ja01644a076; Exact original DOI/publication lead and one official PDF attempt | partial | The 1954 original publication is identified, but the official PDF returned403. Later primary papers describe the historical isolation; that historical statement is not a substitute for direct inspection of the1954 experiments. The stored genus occurrence remains incompletely checked. |
+| S069-SI-GAP | https://www.pnas.org/doi/suppl/10.1073/pnas.1701361114/suppl_file/pnas.1701361114.sapp.pdf; Recorded official supplement access routes, including content-type verification | partial | The PMC object named.pdf is HTML challenge content, the publisher supplement returned403, and Europe PMC supplementaryFiles returned non-package XML. The2017 SI therefore was not read. The positive main-body endpoints remain usable, but detailed constructs, strain tables, assay conditions and supplementary spectra are not independently verified. |
+| S069-TAX | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=2719566,516360,1883&amp;retmode=xml; Complete returned taxonomy records2719566,516360,1883 | supports | Current taxon2719566 is S. hygrospinosus subsp. beijingensis under species516360, with historical var. beijingensis synonym. The2019 occurrence context is supported, but the emitted label for2719566 is handled by the independent identifier finding. This taxonomy record is not proof of a particular laboratory stock. |
+| S069-METHOD | scripts/seed_from_sources.py; Actually inspected consumer contract and emitted evidence behavior | supports | REPLACE admits recognized methods and controls emitted producer/locus grades but does not enforce its expected_* context columns. Pair the method decision with an actually consumed full-row-SHA citation/strain guard or implement equivalent tested guards. |
+| S069-REFERENCE | src/naturalproductmech/curate/claim_references.py; Actually inspected consumer contract and emitted evidence behavior | supports | The complete raw source row is guarded by source_id and expected_source_row_sha256. A retained PMID may carry a distinct dated adjudication rationale; citation routing alone does not change method grades. The emitter rejects structure-corrected rows. |
+| S069-STRAIN | src/naturalproductmech/curate/producer_strains.py; Actually inspected consumer contract and emitted evidence behavior | supports | The exact accession:compound-index and full raw-row digest guard the consumed strain qualifier. Preserve species taxon and deposited accession while distinguishing native ACCC40033, ZXQ01 deletion, complemented derivatives, S. lividans whole-cluster host and E. coli protein-expression host. |
+| C069-OWNER | data/natural_products/alkaloids/anisomycin.yaml; Complete owner and resolved source projection | supports | The owner identifies (−)-anisomycin with full key YKJYKKNCCRKFSL-RDBSUJKOSA-N; exact source rows, xrefs, source concepts and classification were read. |
+| C069-RAW | data/raw/mibig_compounds.tsv; Complete relevant raw rows and local exact-key inventories | supports | Exact source row SHA-256 values: BGC0001510:1 = 477d03df25419cf00af8ab2d06fd2e27c92db7e7d4983e6362472c9ee572dfaa. Digests cover every column using canonical sorted JSON. Complete exact-key eligible ChEBI projection has 1 row(s). |
+| C069-CLASS | data/raw/npclassifier.tsv; Exact-key classification row and owner attribution | context_only | The filing and NPClassifier superclass/class outputs are attributed to the pinned model version. MIBiG biosynthetic classes remain a separate source axis; current authority ontology relations are not silently promoted into asserted corpus classes. |
+| C069-SEARCH | /private/tmp/npm-review-work/069/chemistry-local-search.txt; Complete matching path list | supports | Ignored-inclusive search checks the exact full key, current slug and target ID across current owners, curation, configuration and source code. Exact raw inventory rows were separately parsed. This bounded search does not claim universal absence. |
+| C069-WD-Q1144013 | https://www.wikidata.org/wiki/Special:EntityData/Q1144013.json; Complete exact identity, identifier, provenance and relevant source fields | supports | Current LOTUS-linked Wikidata entity: {"qid": "Q1144013", "label": "Streptomyces", "P235": [], "P234": [], "P2017": [], "P685": ["1883"], "P225": ["Streptomyces"]}. Chemical and organism namespaces are kept distinct; this resolution is not primary occurrence evidence. |
+| C069-WD-Q378498 | https://www.wikidata.org/wiki/Special:EntityData/Q378498.json; Complete exact identity, identifier, provenance and relevant source fields | supports | Current LOTUS-linked Wikidata entity: {"qid": "Q378498", "label": "anisomycin", "P235": ["YKJYKKNCCRKFSL-RDBSUJKOSA-N"], "P234": ["InChI=1S/C14H19NO4/c1-9(16)19-14-12(15-8-13(14)17)7-10-3-5-11(18-2)6-4-10/h3-6,12-15,17H,7-8H2,1-2H3/t12-,13+,14+/m1/s1"], "P2017": ["CC(=O)O[C@@H]1[C@H](CN[C@@H]1CC2=CC=C(C=C2)OC)O"], "P685": [], "P225": []}. Chemical and organism namespaces are kept distinct; this resolution is not primary occurrence evidence. |
+| C069-WD-Q104990388 | https://www.wikidata.org/wiki/Special:EntityData/Q104990388.json; Complete exact identity, identifier, provenance and relevant source fields | supports | Current LOTUS-linked Wikidata entity: {"qid": "Q104990388", "label": "Streptomyces hygrospinosus", "P235": [], "P234": [], "P2017": [], "P685": ["2719566"], "P225": ["Streptomyces hygrospinosus"]}. Chemical and organism namespaces are kept distinct; this resolution is not primary occurrence evidence. |
+| C069-MIBIG | https://mibig.secondarymetabolites.org/repository/BGC0001510.5/annotations.json; Complete relevant source identity, structure, references and namespace fields | supports | Current BGC0001510 version5 is active, quality questionable, completeness unknown. The exact compound, source taxon and versioned locus metadata were inspected. Source quality is metadata, not experimental proof. |
+| C069-TAX | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=272129,882102,516360,54571&amp;retmode=xml; Complete relevant Taxon name, rank, aliases, parent and lineage | supports | NCBI516360 identifies Streptomyces hygrospinosus at species rank. It is distinct from subspecies2719566; genotype/stock identity is not inferred from the species node. |
+| C069-GENBANK | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&amp;id=KY014292.1&amp;rettype=gbwithparts&amp;retmode=text; All header/reference text and complete source feature; no CDS translation/function comparison | supports | KY014292.1 is a 14,535 bp deposited anisomycin cluster from S. hygrospinosus strainACCC40033. This bounds the exact source accession and culture name; it is not a new sequence or protein validation. |
+| C069-OCC-TAX | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=109265,1126,1158,1163,1176,312885,1883,2719566,55601,662&amp;retmode=xml; Complete relevant Taxon records in the retained multi-ID response | supports | All relevant occurrence taxon IDs were read with current names, ranks and aliases. Genus, species, subspecies and deposited-strain IDs are kept distinct; current resolution is not primary occurrence evidence. |
+| C069-CALC | /private/tmp/npm-review-work/069/chemistry-authority-comparison.json; Fresh owner and official molecular representation calculations | supports | All raw outcomes, including any parse failure, are retained. Full Standard and fixed-H keys, formula, charge and assigned/undefined centres are compared without silently modifying submitted representations. |
+| C069-NPA | https://www.npatlas.org/api/v1/compound/NPA017379; Complete relevant source identity, structure, references and namespace fields | supports | NPA017379 resolves to exact anisomycin, neutral C14H19NO4 and full key YKJYKKNCCRKFSL-RDBSUJKOSA-N. Its complete identity and structure history were checked. |
+| C069-PC | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/YKJYKKNCCRKFSL-RDBSUJKOSA-N/property/InChI,InChIKey,IsomericSMILES,MolecularFormula/JSON; Complete relevant source identity, structure, references and namespace fields | supports | The exact-key query resolves PubChem Compound CID253602. Complete stereochemistry agrees with the owner; no Substance SID or broader family is substituted. |
+| C069-CHEBI | https://www.ebi.ac.uk/chebi/backend/api/public/compound/338412/; Complete relevant source identity, structure, references and namespace fields | supports | Current CHEBI338412 is three-star (−)-anisomycin. Default SMILES and official MOL are valid and agree with the owner at all three stereocentres, Standard and fixed-H resolution. The pinned eligible inventory row therefore supports exact CHEBI grounding. Its source definition/role assertions remain database assertions, with mechanism accuracy assessed separately. |
+| C069-CHEBI-MOL | https://www.ebi.ac.uk/chebi/backend/api/public/molfile/338412/; Complete relevant source identity, structure, references and namespace fields | supports | Complete official MOL independently confirms the exact owner stereochemistry and neutral form. |
+| C069-ELIGIBLE | data/raw/chebi_structures.tsv; Complete exact eligible row; independent source-concept mint | supports | CHEBI338412 is the unique exact three-star row for the full owner key. Canonical full row SHA d8e0993d5e25ba2cb40af42878d7f0d1c311391af9740acb7f994deb2b99f176; CHEBI source concept mint naturalproductmech:chebi-9e6567caa5. Source-concept mint is distinct from the exact chemical identifier. |
+| C069-SIBLING | https://raw.githubusercontent.com/CultureBotAI/AntibioticMech/74f6cc8362498900f2fe2c13d0b6fdb66dd30976/data/antibiotics/antiviral/anisomycin.yaml; Entire pinned sibling YAML at commit74f6cc8362498900f2fe2c13d0b6fdb66dd30976 | supports | The full exact pinned AntibioticMech record has CHEBI338412, identical Standard/fixed-H chemical graph and ANTIVIRAL class. Its MULTIPLE mechanism derives from ChEBI protein/DNA-synthesis roles, explicitly HOST_SHARED_TARGET, not a selectivity claim or completed mechanistic review. This supplies the sibling mechanism backing accepted by PLAN3.5 without copying targets or assays. |
+| C069-SIBLING-JOIN | data/raw/antibioticmech_inchikeys.tsv; Exact-key inventory row, configured full commit, extractor and seeder mapping | supports | The unique row maps full key YKJYKKNCCRKFSL-RDBSUJKOSA-N to CHEBI338412 and ANTIVIRAL at pinned commit74f6cc8362498900f2fe2c13d0b6fdb66dd30976; row SHA efa144827d33bfbe4364ff38c67ba9a292d5c374e20142e95031698384c7973e. The inspected extractor reads pinned tree bytes, and seeder emits SAME_STRUCTURE/SAME_INCHIKEY, twelve-character source version and maps ANTIVIRAL to bioactivity_summary. Current ChEBI role membership is not the immediate source of this summary. |
+| C069-TAXON-GUARD | /private/tmp/npm-review-work/069/chemistry-taxon-guard.json; Exact LOTUS triple/row hash and ignored-inclusive current maintained source search | supports | The 2019 occurrence uses taxon2719566 with species-only label. Its upstream Wikidata Q104990388 currently repeats that same species name while pointing P685 to2719566, so the conflict is real upstream metadata, not a missing identifier. Current NCBI names2719566 as subspecies beijingensis under516360. The exact source row, DOI and SHA are retained; no existing targeted maintained repair appeared in the ignored-inclusive code/config/curation search. |
+| S069-DEF-E-LOCAL | data/natural_products/alkaloids/anisomycin.yaml; Complete owner and exact CHEBI:338412 inventory row; definition and definition_source | supports | The generated definition reproduces the ChEBI wording about protein and DNA synthesis and peptidyl transferase or the 80S ribosome system. The exact ChEBI inventory row has SHA256 d8e0993d5e25ba2cb40af42878d7f0d1c311391af9740acb7f994deb2b99f176; its structure key is YKJYKKNCCRKFSL-RDBSUJKOSA-N. This supplement assesses mechanism wording only, not producer or antiviral assertions. |
+| S069-DEF-E-2014 | https://pure.mpg.de/rest/items/item_2060828/component/file_2060829/content; DOI:10.1038/nature13737; PTC Results pp519-520, original Figure 4 on physical p4, Figure 6 and Conclusions p521, Methods physical p7, Extended Data Figure 8 physical p15 and Table 1 p16; figure/table pixels viewed | supports | The yeast 80S crystal complex directly places anisomycin at the 60S peptidyl-transferase-centre A-site (PDB 4U3M). Extended Figure 8 shows local 25S-rRNA rearrangement; superposition supports interference with aminoacyl-tRNA positioning. Commercial anisomycin was soaked into ribosome crystals. The rapid kinetics concern cycloheximide/lactimidomycin and must not be assigned to anisomycin. Table 1 links anisomycin translation/function evidence to Grollman 1967. This structural study does not establish a direct DNA-synthesis target. |
+| S069-DEF-E-1967 | https://www.researchgate.net/publication/232293346_Inhibitors_of_Protein_Biosynthesis; Original paper transcription, DOI:10.1016/S0021-9258(18)95953-3, JBC242:3226-3233; Summary, Methods, Figures 1-6 captions, Results and complete Discussion through Acknowledgments; retained web response ranges, not an independently downloaded PDF | supports | HeLa radiolabel-incorporation experiments show partial DNA-synthesis inhibition alongside stronger protein-synthesis inhibition. The Discussion proposes that the DNA effect probably follows the primary protein-synthesis effect, while not excluding direct action in both processes. Cell-free transfer assays localize protein inhibition after aminoacyl-tRNA formation; this study itself cannot distinguish ribosome binding from inhibition of a transfer enzyme. The 2014 structure supplies the direct binding evidence. Numeric OCR table entries and graph pixels were not independently verified. |
+| S069-DEF-E-OWNERSHIP | scripts/seed_from_sources.py; Definition emission lines1003-1005; carry_curator_owned_fields lines344-421; docs/CURATION.md ownership and discussion rules | supports | The seeder copies the sole eligible ChEBI definition and source. Definition is not a carried curator field. The implemented same-InChIKey carry-forward does retain a complete unique curator-prefixed discussion, including evidence and resolution. A supported local qualification can therefore use that existing route without inventing a definition override or relabelling source prose. An ignored-inclusive search of curation, conf, data, scripts, src and reviews found no existing curator-anisomycin-definition thread or identical issue key. |
+
+## Limits And Additional Notes
+
+- This review audits the present assertions and the concrete source questions they raise; it does not claim exhaustive discovery of every later activity or biosynthetic study. Optional enrichment remains distinct from correcting an unsupported current assertion.
+- The2017 main text was read completely, including tables and relevant figures, but its SI could not be obtained. Detailed assay concentrations, complete tagged construct sequences and supplementary strain/structural tables are not independently verified.
+- The complete1954 occurrence paper was unavailable. Positive1993 and2019 culture evidence is independently supported and is not presented as a substitute for that historical source.
+- No independent raw NMR reassignment or laboratory experiment was performed. Existing definition mechanism and sibling-derived activity backing are handled in separate evidence sections.
+- The exact pinned sibling provides source-backed mechanism content under the repository rule but remains SEEDED and explicitly not a curator mechanistic review. No antiviral potency or selectivity is inferred.
+- Current exact chemical grounding does not establish the biological assertions in the imported ChEBI definition; that separate primary-evidence audit is not replaced by an identifier match.
+- The 1967 original scientific narrative was inspected through a public full-text transcription; the direct PDF link failed and the publisher route was already blocked. OCR symbols and table alignment were not independently checked against original PDF pixels, so no quantitative potency is asserted here.
+- The 2014 read scope was the anisomycin-relevant Results, figures, Conclusions and Methods listed in evidence, not an independent refinement of coordinates or complete reproduction of crystallography. The inferred relationship between DNA and protein synthesis remains qualified.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35 explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). Skipped tests are not counted as passing tests. Existing ontology caches were used; no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do not establish biological production, stereochemical specificity, evidence adequacy, or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology results. Reuse establishes unchanged repository inputs; it is not a new remote authority query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all tracked files are hashed. Generated Python bytecode and external tool caches are not claimed to have been independently byte-pinned at the prior execution.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T130703Z-anisomycin
+title: 'Anisomycin: demonstrated biosynthesis, taxon label and definition qualification'
+started_at: '2026-10-21T12:40:41.473115Z'
+finished_at: '2026-10-21T13:07:03.215182Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Exact anisomycin identity, eligible ChEBI grounding and the pinned same-structure
+  AntibioticMech link are supported. The cited biosynthesis paper demonstrates native
+  deletion/rescue, heterologous production and final-product AniK chemistry, omitted
+  from the imported method list. Preserve ACCC40033 and construct context when restoring
+  those methods. Correct the retained beijingensis subspecies occurrence label and
+  qualify the imported ribosome/DNA wording through a cited curator discussion. The
+  1954 original body and 2017 supplement remain required gaps.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: PLAN.md
+    sha256: 5360993626369fec5462d45f3cfc68cb1653690ad72de10de6cad32d870e6035
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: conf/sibling_pins.yaml
+    sha256: 39a1d007ee65ba546567e8a34b7a309f75270b872809e1f783fe1fcee55866f2
+    role: context
+  - path: conf/sources.yaml
+    sha256: d5e8ab63eeebb376589a0c9bf6f7eb92f45913b84243de20d820442ec88d5a98
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/anisomycin.yaml
+    sha256: 2d62fe93f77373157795494ed9de022242b18d3f4f50bdff0ef751b6d898c289
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: data/raw/taxon_merged.tsv
+    sha256: 97b3efa66d4fc1679ab65ae547e78b2f627f37bc8e45ae33f2719008fe3863bb
+    role: context
+  - path: data/raw/taxon_names.tsv
+    sha256: 9058b9a99260eb483ea21ce7cc9713fd336177031d883f0b5fb50325c7b2c371
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_antibioticmech.py
+    sha256: 701314987037b1b82ef9539af731dcbb6ec2542b304058385014abb4339a3439
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_lotus.py
+    sha256: 8a8c524f60f85d2bb54412ca055a6a45e0d37ec5f4584d8d70be454b8f664290
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: src/naturalproductmech/taxonomy.py
+    sha256: 6b0e780ac79ddd4de1d9ef459749d6c7432df123cb4c1d849c5feae0eab3e5ce
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 69, batch 007, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated pending-PR targets.
+    At selection, 114 of 3116 current records had campaign coverage and 3002 remained.
+    The population search included ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:338412
+targets:
+- target_id: CHEBI:338412
+  path: data/natural_products/alkaloids/anisomycin.yaml
+  label: (−)-anisomycin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - CHEBI:338412
+  command: just validate-strict data/natural_products/alkaloids/anisomycin.yaml --out
+    /private/tmp/npm-review-work/069/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T12:40:44.399432Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch007 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch007. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:338412
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch007 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch007. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:338412
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch007 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch007. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:338412
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch007 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch007. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - CHEBI:338412
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch007
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,070,649 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch007.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - CHEBI:338412
+- check_id: R069-FULL-OWNER
+  name: Complete owner and component scope
+  status: passed
+  required: true
+  summary: The complete owner and all present fields were read. The parsed component-reference
+    set is empty, so no referenced component was omitted. All existing inspection
+    input hashes still match.
+  target_ids:
+  - CHEBI:338412
+  evidence_ids:
+  - R069-OWNER
+  - R069-LOCAL-SOURCES
+- check_id: S069-C-METHOD
+  name: Exact-product method and native strain representation
+  status: failed
+  required: true
+  summary: The source imports no method although its cited full main directly reports
+    native loss/rescue, heterologous exact-product formation and purified AniK final-product
+    formation. The omission undergrades both producer and locus.
+  target_ids:
+  - CHEBI:338412
+  evidence_ids:
+  - S069-OWNER
+  - S069-MAIN
+  - S069-ENZYME
+  - S069-METHOD
+- check_id: S069-C-SOURCES
+  name: Required historical occurrence and supplementary context
+  status: unavailable
+  required: true
+  summary: The1954 original body and2017 SI remain unavailable through the bounded
+    routes; these required checks leave the review partial.
+  target_ids:
+  - CHEBI:338412
+  evidence_ids:
+  - S069-1954-GAP
+  - S069-SI-GAP
+- check_id: C069-CHEM-CHECK
+  name: Complete chemical identity and pinned sibling match
+  status: passed
+  required: true
+  summary: Owner, current ChEBI default/MOL, NPAtlas, PubChem and exact pinned sibling
+    agree on full Standard/fixed-H graph and three assigned centres.
+  target_ids:
+  - CHEBI:338412
+  evidence_ids:
+  - C069-CALC
+  - C069-ELIGIBLE
+  - C069-NPA
+  - C069-CHEBI-MOL
+  - C069-SIBLING
+- check_id: C069-TAXON-CHECK
+  name: Occurrence identifier/name consistency
+  status: failed
+  required: true
+  summary: The 2019 occurrence emits the parent species label for a subspecies ID;
+    exact label correction is required.
+  target_ids:
+  - CHEBI:338412
+  evidence_ids:
+  - C069-OCC-TAX
+  - C069-TAXON-GUARD
+  - C069-OWNER
+- check_id: S069-DEF-C-MECHANISM
+  name: Primary definition mechanism and DNA-effect qualification
+  status: passed
+  required: true
+  summary: Original structural figures and methods establish ribosomal binding; the
+    recovered 1967 primary transcription supports the DNA phenotype and explicitly
+    proposed indirect interpretation. The broad definition is not disproven, but its
+    disjunction and causal compression warrant a bounded clarification. No new whole-record
+    validation was run.
+  target_ids:
+  - CHEBI:338412
+  evidence_ids:
+  - S069-DEF-E-2014
+  - S069-DEF-E-1967
+evidence:
+- evidence_id: R069-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/anisomycin.yaml
+  locator: Complete owner YAML, including every history entry, source claim and discussion
+  accessed_at: '2026-10-21T12:44:40.173738Z'
+  support: supports
+  summary: Root read the complete (−)-anisomycin owner after its individual intake.
+    It has 1 MIBiG source concepts, 3 occurrence entries, 1 producers and 1 loci.
+    There are no inline or referenced mechanism graphs, pathway steps, molecular targets,
+    bioactivity rows or synthetic-biology applications in this owner. The complete
+    parsed owner was inspected; ignored-file filters were not used to infer field
+    absence.
+  snapshot_sha256: 2d62fe93f77373157795494ed9de022242b18d3f4f50bdff0ef751b6d898c289
+- evidence_id: R069-LOCAL-SOURCES
+  kind: record_content
+  reference: /private/tmp/npm-review-work/069/local-sources.json
+  locator: Complete target-specific MIBiG, LOTUS, CyanoMetDB, ChEBI and NPClassifier
+    slices
+  accessed_at: '2026-10-21T12:44:40.173738Z'
+  support: context_only
+  summary: Root read every matching local source row and compared it with the complete
+    emitted owner. The separate scientific and identifier assessments decide claim
+    support; deterministic reproduction does not establish primary evidence.
+  snapshot_sha256: 70394764f9ea505685fb03fd244134548dfe4d776eacbb1640a8dd4eadbc492c
+- evidence_id: R069-IMODULON-DATASETS
+  kind: database
+  reference: /private/tmp/npm-review-work/010/imodulon-datasets.txt
+  locator: Complete 28-row dataset catalogue; actual command receipt in 010/imodulon-context-receipts.json
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: The successful structured-adapter catalogue retrieved at 07:21:15 UTC was
+    fully re-read. Its 28 datasets contain no Fischerella, Azotobacter, Kamptonema/Oscillatoria,
+    Vibrio anguillarum or V. campbellii, Streptomyces uncialis, S. hygrospinosus or
+    S. venezuelae dataset. The Streptomyces entries are S. albidoflavus and S. coelicolor;
+    the Vibrio entries are V. natriegens. A genus-level occurrence does not justify
+    substituting a different species. This same-session catalogue retains its original
+    retrieval time; a fresh request is not claimed.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+- evidence_id: S069-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/anisomycin.yaml
+  locator: Complete owner and all exact-key local source rows
+  accessed_at: '2026-10-21T12:56:11.859843Z'
+  support: supports
+  summary: The exact owner has CHEBI:338412 and full key YKJYKKNCCRKFSL-RDBSUJKOSA-N.
+    BGC0001510:1 version5 has empty method and bounds, species516360, KY014292.1,
+    SOURCE_ASSERTION/CLUSTER_UNSTATED and PMID28373542. Canonical full untouched raw-row
+    SHA256 477d03df25419cf00af8ab2d06fd2e27c92db7e7d4983e6362472c9ee572dfaa. Three
+    LOTUS occurrences cite 1954, 1993 and 2019 papers. Existing definition and sibling-derived
+    activity summary are assessed separately.
+  snapshot_sha256: 2d62fe93f77373157795494ed9de022242b18d3f4f50bdff0ef751b6d898c289
+- evidence_id: S069-MAIN
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC5402462/
+  locator: Complete scientific main text, tables, captions and references; DOI10.1073/pnas.1701361114
+    PMID28373542
+  accessed_at: '2026-10-21T12:13:40.791223Z'
+  support: supports
+  summary: Native S. hygrospinosus var. beijingensis loses anisomycin after the large
+    region corresponding to cosmid26D9 is deleted (ZXQ01), and complementation with26D9
+    restores it. Four cosmids produce exact anisomycin1 in S. lividans TK24 by HPLC-MS.
+    Individual ORF deletions were made on cosmids and tested in TK24 and ZXQ01; they
+    must not be described as 25 independent native chromosomal knockouts. Eight genes
+    are essential in the tested context; aniG deletion has no production phenotype.
+  snapshot_sha256: 991ecaf1df1f5e9429e41c4a9a32ef1758c6b9d4becdf154804d6658ea1b815e
+- evidence_id: S069-ENZYME
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC5402462/
+  locator: AniK Results and Figure2 caption; broader AniN/AniQ/AniO/AniP sections
+  accessed_at: '2026-10-21T12:13:40.791223Z'
+  support: supports
+  summary: Purified recombinant AniK from E. coli BL21(DE3), with SAM, converts desmethyl-anisomycin4a
+    into exact anisomycin1, compared with authentic product and boiled-enzyme control;
+    3a instead forms deacetylanisomycin5. This is direct final-product enzymology.
+    AniN2→3 and AniO7→8 concern intermediates. AniP could not be tested in vitro because
+    of poor solubility; glycerol labeling and pathway inference do not establish purified
+    AniP catalysis.
+  snapshot_sha256: 991ecaf1df1f5e9429e41c4a9a32ef1758c6b9d4becdf154804d6658ea1b815e
+- evidence_id: S069-FIG1
+  kind: primary_source
+  reference: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/fc60/5402462/ca8eceb4bfde/pnas.1701361114fig01.jpg
+  locator: Original Figure1 pixels, native/cosmid pathway context and chromatogram
+    labels
+  accessed_at: '2026-10-21T12:14:24.165748Z'
+  support: supports
+  summary: Original figure supports the assignment of1, intermediate labels and mutant
+    comparisons. Its chemical drawing and full main establish exact-compound scope;
+    no independent raw spectral reassignment or final-product chiral assay is claimed.
+  snapshot_sha256: 884a4b7c402fa218222708cd7f85f519369cca8183511c3bb965b495cd5b28e7
+- evidence_id: S069-2019
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=6321866&retmode=xml
+  locator: Complete original scientific body, strain/plasmid tables, Methods, Results
+    and Discussion; DOI10.1016/j.synbio.2018.12.004 PMID30656223
+  accessed_at: '2026-10-21T12:47:57.893140Z'
+  support: supports
+  summary: Table1 identifies native ACCC40033 and the aniF deficient strain from the
+    2017 study. Table2 explicitly names ZXQ09 for complementation constructs. WT,
+    mutant and complemented-culture HPLC/LC-MS profiles support anisomycin occurrence.
+    AniF overexpression raises measured output to about1.2 times WT; it is not a120%
+    increase. RT-qPCR, EMSA and footprinting support transcriptional control, not
+    a biosynthetic enzyme reaction. The study does not convert the earlier cosmid-mutant
+    experiments into new independent native chromosomal deletions.
+  snapshot_sha256: 19c99083664133fa99389d79e2bfe8feca9fefce1674e93c4203f2818aab68af
+- evidence_id: S069-1993
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/antibiotics1968/46/8/46_8_1300/_pdf
+  locator: Complete three-page original paper, culture/isolation and structure-identification
+    text; DOI10.7164/antibiotics.46.1300
+  accessed_at: '2026-10-21T12:47:57.892788Z'
+  support: supports
+  summary: Marine-soil Streptomyces sp. SA3097 culture yields separately isolated
+    anisomycin C1 alongside distinguishable congeners. Identity was compared by spectral
+    and specific-rotation methods. This directly supports the genus-level LOTUS occurrence;
+    the congeners and their cell-line results are not automatically assigned to anisomycin.
+  snapshot_sha256: 085607e57edd3d4c01b03f41dbda24062eff64d204f4ebdf5f661795cb2af637
+- evidence_id: S069-1954-GAP
+  kind: search
+  reference: https://pubs.acs.org/doi/10.1021/ja01644a076
+  locator: Exact original DOI/publication lead and one official PDF attempt
+  accessed_at: '2026-10-21T12:47:58.208264Z'
+  support: partial
+  summary: The 1954 original publication is identified, but the official PDF returned403.
+    Later primary papers describe the historical isolation; that historical statement
+    is not a substitute for direct inspection of the1954 experiments. The stored genus
+    occurrence remains incompletely checked.
+  snapshot_sha256: 6483b59d44c18ca2b57ce18e6e3d32ec50710d066313441f2411717e87233f73
+  search_scope: Exact1954 DOI lookup and official original-PDF request; no exhaustive
+    public-copy absence claim.
+- evidence_id: S069-SI-GAP
+  kind: search
+  reference: https://www.pnas.org/doi/suppl/10.1073/pnas.1701361114/suppl_file/pnas.1701361114.sapp.pdf
+  locator: Recorded official supplement access routes, including content-type verification
+  accessed_at: '2026-10-21T12:15:15.672351Z'
+  support: partial
+  summary: The PMC object named.pdf is HTML challenge content, the publisher supplement
+    returned403, and Europe PMC supplementaryFiles returned non-package XML. The2017
+    SI therefore was not read. The positive main-body endpoints remain usable, but
+    detailed constructs, strain tables, assay conditions and supplementary spectra
+    are not independently verified.
+  snapshot_sha256: cccc34d6263f7b38760a55933238e1dffc891169a54819911538b2a8b75941ff
+  search_scope: PMC official attachment, publisher supplement and Europe PMC supplementary
+    endpoint; failed responses retained without claiming inaccessible content.
+- evidence_id: S069-TAX
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=2719566,516360,1883&retmode=xml
+  locator: Complete returned taxonomy records2719566,516360,1883
+  accessed_at: '2026-10-21T12:47:57.893277Z'
+  support: supports
+  summary: Current taxon2719566 is S. hygrospinosus subsp. beijingensis under species516360,
+    with historical var. beijingensis synonym. The2019 occurrence context is supported,
+    but the emitted label for2719566 is handled by the independent identifier finding.
+    This taxonomy record is not proof of a particular laboratory stock.
+  snapshot_sha256: 869a99db420a06096ea1e60691a93046b7d38a55f83f47dd18b68601ea6d5093
+- evidence_id: S069-METHOD
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: Actually inspected consumer contract and emitted evidence behavior
+  accessed_at: '2026-10-21T12:56:11.859843Z'
+  support: supports
+  summary: REPLACE admits recognized methods and controls emitted producer/locus grades
+    but does not enforce its expected_* context columns. Pair the method decision
+    with an actually consumed full-row-SHA citation/strain guard or implement equivalent
+    tested guards.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: S069-REFERENCE
+  kind: record_content
+  reference: src/naturalproductmech/curate/claim_references.py
+  locator: Actually inspected consumer contract and emitted evidence behavior
+  accessed_at: '2026-10-21T12:56:11.859843Z'
+  support: supports
+  summary: The complete raw source row is guarded by source_id and expected_source_row_sha256.
+    A retained PMID may carry a distinct dated adjudication rationale; citation routing
+    alone does not change method grades. The emitter rejects structure-corrected rows.
+  snapshot_sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+- evidence_id: S069-STRAIN
+  kind: record_content
+  reference: src/naturalproductmech/curate/producer_strains.py
+  locator: Actually inspected consumer contract and emitted evidence behavior
+  accessed_at: '2026-10-21T12:56:11.859843Z'
+  support: supports
+  summary: The exact accession:compound-index and full raw-row digest guard the consumed
+    strain qualifier. Preserve species taxon and deposited accession while distinguishing
+    native ACCC40033, ZXQ01 deletion, complemented derivatives, S. lividans whole-cluster
+    host and E. coli protein-expression host.
+  snapshot_sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+- evidence_id: C069-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/anisomycin.yaml
+  locator: Complete owner and resolved source projection
+  accessed_at: '2026-10-21T12:57:34.952225Z'
+  support: supports
+  summary: The owner identifies (−)-anisomycin with full key YKJYKKNCCRKFSL-RDBSUJKOSA-N;
+    exact source rows, xrefs, source concepts and classification were read.
+  snapshot_sha256: 2d62fe93f77373157795494ed9de022242b18d3f4f50bdff0ef751b6d898c289
+- evidence_id: C069-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Complete relevant raw rows and local exact-key inventories
+  accessed_at: '2026-10-21T12:57:34.952225Z'
+  support: supports
+  summary: 'Exact source row SHA-256 values: BGC0001510:1 = 477d03df25419cf00af8ab2d06fd2e27c92db7e7d4983e6362472c9ee572dfaa.
+    Digests cover every column using canonical sorted JSON. Complete exact-key eligible
+    ChEBI projection has 1 row(s).'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: C069-CLASS
+  kind: record_content
+  reference: data/raw/npclassifier.tsv
+  locator: Exact-key classification row and owner attribution
+  accessed_at: '2026-10-21T12:57:34.952225Z'
+  support: context_only
+  summary: The filing and NPClassifier superclass/class outputs are attributed to
+    the pinned model version. MIBiG biosynthetic classes remain a separate source
+    axis; current authority ontology relations are not silently promoted into asserted
+    corpus classes.
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: C069-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/069/chemistry-local-search.txt
+  locator: Complete matching path list
+  accessed_at: '2026-10-21T12:57:35.031248Z'
+  support: supports
+  summary: Ignored-inclusive search checks the exact full key, current slug and target
+    ID across current owners, curation, configuration and source code. Exact raw inventory
+    rows were separately parsed. This bounded search does not claim universal absence.
+  snapshot_sha256: 84d7877911952df580bc07d399cda062cffb9479fd478f57cd3f51ce4753f143
+  search_scope: rg --no-ignore --hidden -l -F -e YKJYKKNCCRKFSL-RDBSUJKOSA-N -e anisomycin
+    -e CHEBI:338412 data/natural_products curation conf src scripts
+- evidence_id: C069-WD-Q1144013
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q1144013.json
+  locator: Complete exact identity, identifier, provenance and relevant source fields
+  accessed_at: '2026-10-21T12:44:56.120130Z'
+  support: supports
+  summary: 'Current LOTUS-linked Wikidata entity: {"qid": "Q1144013", "label": "Streptomyces",
+    "P235": [], "P234": [], "P2017": [], "P685": ["1883"], "P225": ["Streptomyces"]}.
+    Chemical and organism namespaces are kept distinct; this resolution is not primary
+    occurrence evidence.'
+  snapshot_sha256: a17f3d23992752d0d727900478ea5df9bcf9814a57400b127d4e57fa42e4aa79
+- evidence_id: C069-WD-Q378498
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q378498.json
+  locator: Complete exact identity, identifier, provenance and relevant source fields
+  accessed_at: '2026-10-21T12:44:56.305323Z'
+  support: supports
+  summary: 'Current LOTUS-linked Wikidata entity: {"qid": "Q378498", "label": "anisomycin",
+    "P235": ["YKJYKKNCCRKFSL-RDBSUJKOSA-N"], "P234": ["InChI=1S/C14H19NO4/c1-9(16)19-14-12(15-8-13(14)17)7-10-3-5-11(18-2)6-4-10/h3-6,12-15,17H,7-8H2,1-2H3/t12-,13+,14+/m1/s1"],
+    "P2017": ["CC(=O)O[C@@H]1[C@H](CN[C@@H]1CC2=CC=C(C=C2)OC)O"], "P685": [], "P225":
+    []}. Chemical and organism namespaces are kept distinct; this resolution is not
+    primary occurrence evidence.'
+  snapshot_sha256: 4984362e47947a661352d5230897fb28cd683d89be74afab5f56b04a04b8ab97
+- evidence_id: C069-WD-Q104990388
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q104990388.json
+  locator: Complete exact identity, identifier, provenance and relevant source fields
+  accessed_at: '2026-10-21T12:44:55.704747Z'
+  support: supports
+  summary: 'Current LOTUS-linked Wikidata entity: {"qid": "Q104990388", "label": "Streptomyces
+    hygrospinosus", "P235": [], "P234": [], "P2017": [], "P685": ["2719566"], "P225":
+    ["Streptomyces hygrospinosus"]}. Chemical and organism namespaces are kept distinct;
+    this resolution is not primary occurrence evidence.'
+  snapshot_sha256: f377674424ebff9de0d7410fed9c659c60290536f2a7557759cdf154597eec53
+- evidence_id: C069-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001510.5/annotations.json
+  locator: Complete relevant source identity, structure, references and namespace
+    fields
+  accessed_at: '2026-10-21T12:27:33.281839Z'
+  support: supports
+  summary: Current BGC0001510 version5 is active, quality questionable, completeness
+    unknown. The exact compound, source taxon and versioned locus metadata were inspected.
+    Source quality is metadata, not experimental proof.
+  snapshot_sha256: 62372e3628c25c39ac16e37ea4bffe2b50cce9f66dd2c08d24d25e6dcbae4ccc
+- evidence_id: C069-TAX
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=272129,882102,516360,54571&retmode=xml
+  locator: Complete relevant Taxon name, rank, aliases, parent and lineage
+  accessed_at: '2026-10-21T12:30:24.201644Z'
+  support: supports
+  summary: NCBI516360 identifies Streptomyces hygrospinosus at species rank. It is
+    distinct from subspecies2719566; genotype/stock identity is not inferred from
+    the species node.
+  snapshot_sha256: b1671a47db75e7debf89937a9762372ab28502f82c30a2457baa5c59e6ed7ed3
+- evidence_id: C069-GENBANK
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KY014292.1&rettype=gbwithparts&retmode=text
+  locator: All header/reference text and complete source feature; no CDS translation/function
+    comparison
+  accessed_at: '2026-10-21T12:30:52.943395Z'
+  support: supports
+  summary: KY014292.1 is a 14,535 bp deposited anisomycin cluster from S. hygrospinosus
+    strainACCC40033. This bounds the exact source accession and culture name; it is
+    not a new sequence or protein validation.
+  snapshot_sha256: bb7426e6d882ed5912983e809dd2250abe2500708092a0324185dae5dc1e2558
+- evidence_id: C069-OCC-TAX
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=109265,1126,1158,1163,1176,312885,1883,2719566,55601,662&retmode=xml
+  locator: Complete relevant Taxon records in the retained multi-ID response
+  accessed_at: '2026-10-21T12:44:56.707243Z'
+  support: supports
+  summary: All relevant occurrence taxon IDs were read with current names, ranks and
+    aliases. Genus, species, subspecies and deposited-strain IDs are kept distinct;
+    current resolution is not primary occurrence evidence.
+  snapshot_sha256: 329169c04063c5d656512e9e7846883ccbf335e1c5026edd3764aeaee99410cf
+- evidence_id: C069-CALC
+  kind: validation
+  reference: /private/tmp/npm-review-work/069/chemistry-authority-comparison.json
+  locator: Fresh owner and official molecular representation calculations
+  accessed_at: '2026-10-21T12:57:35.037060Z'
+  support: supports
+  summary: All raw outcomes, including any parse failure, are retained. Full Standard
+    and fixed-H keys, formula, charge and assigned/undefined centres are compared
+    without silently modifying submitted representations.
+  snapshot_sha256: 51f60da9366b31fa1eeb635e66acc22067f800182c00350dd3027c0037f1fdfc
+- evidence_id: C069-NPA
+  kind: database
+  reference: https://www.npatlas.org/api/v1/compound/NPA017379
+  locator: Complete relevant source identity, structure, references and namespace
+    fields
+  accessed_at: '2026-10-21T12:27:35.900787Z'
+  support: supports
+  summary: NPA017379 resolves to exact anisomycin, neutral C14H19NO4 and full key
+    YKJYKKNCCRKFSL-RDBSUJKOSA-N. Its complete identity and structure history were
+    checked.
+  snapshot_sha256: 59d9dc7fde956cd5c098703bce3e4e023a7359237cc6a170bc04c2ceb05ac1e7
+- evidence_id: C069-PC
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/YKJYKKNCCRKFSL-RDBSUJKOSA-N/property/InChI,InChIKey,IsomericSMILES,MolecularFormula/JSON
+  locator: Complete relevant source identity, structure, references and namespace
+    fields
+  accessed_at: '2026-10-21T12:27:33.998341Z'
+  support: supports
+  summary: The exact-key query resolves PubChem Compound CID253602. Complete stereochemistry
+    agrees with the owner; no Substance SID or broader family is substituted.
+  snapshot_sha256: 97dac58af31a993cfbc7a20c2d52f74281c22cb1602791f6fd1fc7f53a7a97d4
+- evidence_id: C069-CHEBI
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/338412/
+  locator: Complete relevant source identity, structure, references and namespace
+    fields
+  accessed_at: '2026-10-21T12:29:23.052859Z'
+  support: supports
+  summary: Current CHEBI338412 is three-star (−)-anisomycin. Default SMILES and official
+    MOL are valid and agree with the owner at all three stereocentres, Standard and
+    fixed-H resolution. The pinned eligible inventory row therefore supports exact
+    CHEBI grounding. Its source definition/role assertions remain database assertions,
+    with mechanism accuracy assessed separately.
+  snapshot_sha256: 92d98bd042b0504f3e043745a6cc46e1089e629d9260033af8289a983dcf6803
+- evidence_id: C069-CHEBI-MOL
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/338412/
+  locator: Complete relevant source identity, structure, references and namespace
+    fields
+  accessed_at: '2026-10-21T12:29:23.053259Z'
+  support: supports
+  summary: Complete official MOL independently confirms the exact owner stereochemistry
+    and neutral form.
+  snapshot_sha256: 6f5d94582a4a4c29d162b2600b4619067f5a494ad9443e500776c0701dbbd122
+- evidence_id: C069-ELIGIBLE
+  kind: record_content
+  reference: data/raw/chebi_structures.tsv
+  locator: Complete exact eligible row; independent source-concept mint
+  accessed_at: '2026-10-21T12:57:34.952225Z'
+  support: supports
+  summary: CHEBI338412 is the unique exact three-star row for the full owner key.
+    Canonical full row SHA d8e0993d5e25ba2cb40af42878d7f0d1c311391af9740acb7f994deb2b99f176;
+    CHEBI source concept mint naturalproductmech:chebi-9e6567caa5. Source-concept
+    mint is distinct from the exact chemical identifier.
+  snapshot_sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+- evidence_id: C069-SIBLING
+  kind: record_content
+  reference: https://raw.githubusercontent.com/CultureBotAI/AntibioticMech/74f6cc8362498900f2fe2c13d0b6fdb66dd30976/data/antibiotics/antiviral/anisomycin.yaml
+  locator: Entire pinned sibling YAML at commit74f6cc8362498900f2fe2c13d0b6fdb66dd30976
+  accessed_at: '2026-10-21T12:53:50.099096Z'
+  support: supports
+  summary: The full exact pinned AntibioticMech record has CHEBI338412, identical
+    Standard/fixed-H chemical graph and ANTIVIRAL class. Its MULTIPLE mechanism derives
+    from ChEBI protein/DNA-synthesis roles, explicitly HOST_SHARED_TARGET, not a selectivity
+    claim or completed mechanistic review. This supplies the sibling mechanism backing
+    accepted by PLAN3.5 without copying targets or assays.
+  snapshot_sha256: 7ff104a73d11aa0b316dea511488b713ea447170b5ee397a03485e0d2a9c6e14
+- evidence_id: C069-SIBLING-JOIN
+  kind: record_content
+  reference: data/raw/antibioticmech_inchikeys.tsv
+  locator: Exact-key inventory row, configured full commit, extractor and seeder mapping
+  accessed_at: '2026-10-21T12:57:34.952225Z'
+  support: supports
+  summary: The unique row maps full key YKJYKKNCCRKFSL-RDBSUJKOSA-N to CHEBI338412
+    and ANTIVIRAL at pinned commit74f6cc8362498900f2fe2c13d0b6fdb66dd30976; row SHA
+    efa144827d33bfbe4364ff38c67ba9a292d5c374e20142e95031698384c7973e. The inspected
+    extractor reads pinned tree bytes, and seeder emits SAME_STRUCTURE/SAME_INCHIKEY,
+    twelve-character source version and maps ANTIVIRAL to bioactivity_summary. Current
+    ChEBI role membership is not the immediate source of this summary.
+  snapshot_sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+- evidence_id: C069-TAXON-GUARD
+  kind: validation
+  reference: /private/tmp/npm-review-work/069/chemistry-taxon-guard.json
+  locator: Exact LOTUS triple/row hash and ignored-inclusive current maintained source
+    search
+  accessed_at: '2026-10-21T12:57:35.921201Z'
+  support: supports
+  summary: The 2019 occurrence uses taxon2719566 with species-only label. Its upstream
+    Wikidata Q104990388 currently repeats that same species name while pointing P685
+    to2719566, so the conflict is real upstream metadata, not a missing identifier.
+    Current NCBI names2719566 as subspecies beijingensis under516360. The exact source
+    row, DOI and SHA are retained; no existing targeted maintained repair appeared
+    in the ignored-inclusive code/config/curation search.
+  snapshot_sha256: 2cf3581fef1fa7a402e3ae1e16244c8216fbdd80b95bee639e3716bdc6955e57
+- evidence_id: S069-DEF-E-LOCAL
+  kind: record_content
+  reference: data/natural_products/alkaloids/anisomycin.yaml
+  locator: Complete owner and exact CHEBI:338412 inventory row; definition and definition_source
+  accessed_at: '2026-10-21T12:58:40.296681Z'
+  support: supports
+  summary: The generated definition reproduces the ChEBI wording about protein and
+    DNA synthesis and peptidyl transferase or the 80S ribosome system. The exact ChEBI
+    inventory row has SHA256 d8e0993d5e25ba2cb40af42878d7f0d1c311391af9740acb7f994deb2b99f176;
+    its structure key is YKJYKKNCCRKFSL-RDBSUJKOSA-N. This supplement assesses mechanism
+    wording only, not producer or antiviral assertions.
+  snapshot_sha256: 2d62fe93f77373157795494ed9de022242b18d3f4f50bdff0ef751b6d898c289
+- evidence_id: S069-DEF-E-2014
+  kind: primary_source
+  reference: https://pure.mpg.de/rest/items/item_2060828/component/file_2060829/content
+  locator: DOI:10.1038/nature13737; PTC Results pp519-520, original Figure 4 on physical
+    p4, Figure 6 and Conclusions p521, Methods physical p7, Extended Data Figure 8
+    physical p15 and Table 1 p16; figure/table pixels viewed
+  accessed_at: '2026-10-21T12:52:48.714586Z'
+  support: supports
+  summary: The yeast 80S crystal complex directly places anisomycin at the 60S peptidyl-transferase-centre
+    A-site (PDB 4U3M). Extended Figure 8 shows local 25S-rRNA rearrangement; superposition
+    supports interference with aminoacyl-tRNA positioning. Commercial anisomycin was
+    soaked into ribosome crystals. The rapid kinetics concern cycloheximide/lactimidomycin
+    and must not be assigned to anisomycin. Table 1 links anisomycin translation/function
+    evidence to Grollman 1967. This structural study does not establish a direct DNA-synthesis
+    target.
+  snapshot_sha256: 096d755daa0b64fef512550d50971b7865a633562f4a1cbd0c39a3f9720371e9
+- evidence_id: S069-DEF-E-1967
+  kind: primary_source
+  reference: https://www.researchgate.net/publication/232293346_Inhibitors_of_Protein_Biosynthesis
+  locator: Original paper transcription, DOI:10.1016/S0021-9258(18)95953-3, JBC242:3226-3233;
+    Summary, Methods, Figures 1-6 captions, Results and complete Discussion through
+    Acknowledgments; retained web response ranges, not an independently downloaded
+    PDF
+  accessed_at: '2026-10-21T12:57:21Z'
+  support: supports
+  summary: HeLa radiolabel-incorporation experiments show partial DNA-synthesis inhibition
+    alongside stronger protein-synthesis inhibition. The Discussion proposes that
+    the DNA effect probably follows the primary protein-synthesis effect, while not
+    excluding direct action in both processes. Cell-free transfer assays localize
+    protein inhibition after aminoacyl-tRNA formation; this study itself cannot distinguish
+    ribosome binding from inhibition of a transfer enzyme. The 2014 structure supplies
+    the direct binding evidence. Numeric OCR table entries and graph pixels were not
+    independently verified.
+  snapshot_sha256: 25be40ad85c7c8477ba753bf93b6aa336bcfdf789b0260765a4aea2662946e49
+- evidence_id: S069-DEF-E-OWNERSHIP
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: Definition emission lines1003-1005; carry_curator_owned_fields lines344-421;
+    docs/CURATION.md ownership and discussion rules
+  accessed_at: '2026-10-21T12:58:40.296681Z'
+  support: supports
+  summary: The seeder copies the sole eligible ChEBI definition and source. Definition
+    is not a carried curator field. The implemented same-InChIKey carry-forward does
+    retain a complete unique curator-prefixed discussion, including evidence and resolution.
+    A supported local qualification can therefore use that existing route without
+    inventing a definition override or relabelling source prose. An ignored-inclusive
+    search of curation, conf, data, scripts, src and reviews found no existing curator-anisomycin-definition
+    thread or identical issue key.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+assessments:
+- assessment_id: R069-HISTORY
+  area: provenance
+  topic: Native status and retained seed history
+  outcome: supported
+  summary: The 2 dated seed events and SEEDED status describe generated provenance.
+    This review does not relabel the owner REVIEWED or treat seed history as scientific
+    approval. Both retained events are source seeding events.
+  target_ids:
+  - CHEBI:338412
+  evidence_ids:
+  - R069-OWNER
+- assessment_id: R069-OPTIONAL
+  area: completeness
+  topic: Optional mechanism and application content
+  outcome: not_applicable
+  summary: The owner has no structured pathway steps, causal edges, organism-specific
+    proteins, molecular-target items, bioactivity rows or synthetic-biology applications.
+    Their absence alone is not a defect. Anisomycin separately carries a source definition,
+    ANTIVIRAL summary and sibling-corpus link; those existing assertions are explicitly
+    assessed in the scientific and identifier sections. No activity is inferred from
+    the absence of structured observations.
+  target_ids:
+  - CHEBI:338412
+  evidence_ids:
+  - R069-OWNER
+  - R069-LOCAL-SOURCES
+- assessment_id: R069-IMODULON
+  area: completeness
+  topic: Structured transcriptomic context
+  outcome: not_applicable
+  summary: No exact named native producer and strain is covered by the inspected iModulonDB
+    dataset catalogue. E. coli used as a recombinant expression host in source experiments
+    does not supply native-producer expression context; genus-only occurrences cannot
+    identify a covered species or strain. No applicable module query follows from
+    these records. This bounded coverage limit is not negative evidence about production
+    or function.
+  target_ids:
+  - CHEBI:338412
+  evidence_ids:
+  - R069-OWNER
+  - R069-IMODULON-DATASETS
+- assessment_id: S069-A-OCCURRENCE
+  area: evidence
+  topic: All three occurrence citations and biological origin
+  outcome: unknown
+  summary: The1993 SA3097 genus occurrence and2019 native beijingensis culture are
+    supported by original studies. The1954 occurrence is historically consistent but
+    incompletely checked. Species labels do not erase isolate scope, and recombinant
+    TK24 production is distinct from natural-origin evidence.
+  target_ids:
+  - CHEBI:338412
+  evidence_ids:
+  - S069-1993
+  - S069-2019
+  - S069-1954-GAP
+  - S069-TAX
+- assessment_id: S069-A-METHOD
+  area: evidence
+  topic: Native genetics, heterologous production and exact-product enzymology
+  outcome: concern
+  summary: The cited2017 primary provides three distinct positive evidence types for
+    anisomycin. Restore their product-specific method annotations and native experimental
+    strain context rather than retaining an empty entry-level method list. The main-body
+    observations support the change even though detailed SI checks remain incomplete.
+  target_ids:
+  - CHEBI:338412
+  evidence_ids:
+  - S069-OWNER
+  - S069-MAIN
+  - S069-ENZYME
+  - S069-2019
+  - S069-SI-GAP
+  dimensions:
+  - name: native_genetic_context
+    value: ACCC40033; large-fragment ZXQ01 deletion and26D9 rescue
+    definition: Separate native chromosomal removal from individual mutant cosmids
+      reintroduced into ZXQ01.
+    evidence_ids:
+    - S069-MAIN
+    - S069-2019
+  - name: heterologous_context
+    value: S. lividans TK24 carrying26D9,5E10,25G11 or18C6
+    definition: Whole-cluster production with exact anisomycin HPLC-MS endpoint; distinct
+      from recombinant protein expression.
+    evidence_ids:
+    - S069-MAIN
+  - name: direct_enzymology
+    value: AniK + SAM converts4a to anisomycin1
+    definition: Final-product reaction; precursor reactions and insoluble untested
+      AniP are not substituted.
+    evidence_ids:
+    - S069-ENZYME
+  - name: recommended_evidence_tiers
+    value: BGC_CHARACTERIZED / CLUSTER_DEMONSTRATED
+    definition: Native knockout supports the characterized producer and demonstrated
+      locus; heterologous production and the exact-product enzyme assay independently
+      support only the locus.
+    evidence_ids:
+    - S069-MAIN
+    - S069-ENZYME
+    - S069-METHOD
+- assessment_id: S069-A-OPTIONAL
+  area: completeness
+  topic: Optional biosynthetic detail and mechanism boundaries
+  outcome: supported
+  summary: The owner does not assert a detailed pathway or individual enzyme model.
+    No missing optional graph finding is warranted. Any enrichment must distinguish
+    eight essential genes from the nine-gene functional ensemble including AniG, preserve
+    cosmid/native boundaries, and identify AniP chemistry as proposed rather than
+    purified-enzyme proof.
+  target_ids:
+  - CHEBI:338412
+  evidence_ids:
+  - S069-OWNER
+  - S069-MAIN
+  - S069-ENZYME
+- assessment_id: C069-CLASSIFICATION
+  area: provenance
+  topic: Predicted filing and asserted source classes
+  outcome: supported
+  summary: The exact-key NPClassifier output and model version support the alkaloid
+    filing as a prediction. MIBiG biosynthetic classes and any eligible source classes
+    remain separately attributed; no prediction is promoted into an experimental biosynthetic
+    claim.
+  target_ids:
+  - CHEBI:338412
+  evidence_ids:
+  - C069-CLASS
+  - C069-RAW
+  - C069-OWNER
+  - C069-MIBIG
+- assessment_id: C069-IDENTITY
+  area: identity
+  topic: Complete stereochemistry, exact ChEBI and NPAtlas identity
+  outcome: supported
+  summary: All independent current representations agree on neutral C14H19NO4 and
+    the complete (2R,3S,4S) stereoisomer. CHEBI338412 is a valid unique three-star
+    exact grounding; NPA017379 and chemical WikidataQ378498 agree. This does not by
+    itself validate every wording claim in the source definition.
+  target_ids:
+  - CHEBI:338412
+  evidence_ids:
+  - C069-CALC
+  - C069-NPA
+  - C069-PC
+  - C069-CHEBI
+  - C069-CHEBI-MOL
+  - C069-ELIGIBLE
+  - C069-WD-Q378498
+- assessment_id: C069-ACTIVITY-LINK
+  area: provenance
+  topic: Pinned same-structure sibling and derived antiviral summary
+  outcome: supported
+  summary: The exact pinned sibling graph and inventory join are independently verified.
+    ANTIVIRAL is backed by the sibling record carrying mechanism under PLAN3.5, with
+    its database-derived and host-shared-target limitations retained. It is not a
+    human efficacy, selectivity, clinical-use or direct antiviral-assay claim.
+  target_ids:
+  - CHEBI:338412
+  evidence_ids:
+  - C069-SIBLING
+  - C069-SIBLING-JOIN
+  - C069-CALC
+  - C069-OWNER
+- assessment_id: C069-TAXON
+  area: grounding
+  topic: Occurrence subspecies label versus source species name
+  outcome: concern
+  summary: Occurrence[2] uses the correct resolvable subspecies ID2719566 but a species-only
+    label corresponding to parent516360. Current NCBI rank/name and the primary2019
+    culture context supplied separately support preserving the subspecies identity
+    and correcting the label, not remapping it to the parent species.
+  target_ids:
+  - CHEBI:338412
+  evidence_ids:
+  - C069-OCC-TAX
+  - C069-WD-Q104990388
+  - C069-TAXON-GUARD
+  - C069-OWNER
+- assessment_id: S069-DEF-A-SCOPE
+  area: evidence
+  topic: Direct target versus downstream DNA-synthesis phenotype
+  outcome: concern
+  summary: The 60S peptidyl-transferase centre is part of the 80S ribosome, so these
+    are not two alternative targets. Protein-synthesis inhibition has direct structural
+    and functional support. Partial DNA-synthesis inhibition is an observed HeLa phenotype;
+    its indirect causality was proposed rather than experimentally resolved. Retain
+    the phenotype while distinguishing it from a direct DNA-target assertion. The
+    existing definition is source-faithful but compressed.
+  target_ids:
+  - CHEBI:338412
+  evidence_ids:
+  - S069-DEF-E-LOCAL
+  - S069-DEF-E-2014
+  - S069-DEF-E-1967
+  dimensions:
+  - name: direct_mechanism
+    value: Yeast 80S ribosome, 60S PTC A-site; crystal binding plus functional translation
+      inhibition
+    definition: Direct target evidence is distinct from a cellular downstream phenotype
+    evidence_ids:
+    - S069-DEF-E-2014
+    - S069-DEF-E-1967
+  - name: dna_effect
+    value: Partial inhibition of DNA synthesis in HeLa cells; likely secondary relationship
+      proposed in 1967
+    definition: Observed phenotype does not establish a direct DNA enzyme target or
+      prove the causal intermediate
+    evidence_ids:
+    - S069-DEF-E-1967
+findings:
+- finding_id: S069-F-METHOD
+  issue_key: mibig-bgc0001510-anisomycin-missing-demonstrated-methods
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Empty methods undergrade demonstrated anisomycin production and biosynthesis
+  description: The owner retains SOURCE_ASSERTION and CLUSTER_UNSTATED despite its
+    cited primary reporting native region deletion/rescue, heterologous anisomycin
+    production and a purified AniK reaction forming exact anisomycin. These endpoints
+    concern the exact compound and source locus. Retain the native strain and construct
+    distinctions when restoring the methods; the supplementary access gap does not
+    negate explicit main-body observations.
+  target_ids:
+  - CHEBI:338412
+  field_paths:
+  - producer_organisms[0].evidence_basis
+  - producer_organisms[0].strain
+  - biosynthetic_gene_clusters[0].locus_evidence_methods
+  - biosynthetic_gene_clusters[0].link_evidence_basis
+  evidence_ids:
+  - S069-OWNER
+  - S069-MAIN
+  - S069-ENZYME
+  - S069-2019
+  - S069-METHOD
+  - S069-REFERENCE
+  - S069-STRAIN
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Consumed exact-product method correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Complete original-row guard and attributed adjudication
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Supported native experimental strain qualifier
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Compose maintained inputs and regenerate source-owned fields
+  rule_id: 'review-yaml-record: exact product, native strain and experimental method'
+- finding_id: C069-F-SUBSPECIES-LABEL
+  issue_key: anisomycin-subspecies-label
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: The beijingensis occurrence has a species-only label under a subspecies ID
+  description: LOTUS occurrence[2] pairs NCBITaxon2719566 with Streptomyces hygrospinosus.
+    Current NCBI2719566 is Streptomyces hygrospinosus subsp. beijingensis, parent516360,
+    and recognizes var. beijingensis as a synonym. The upstream Q104990388 repeats
+    the wrong species-level name/P685 combination. The valid occurrence should not
+    be deleted or silently widened to516360.
+  target_ids:
+  - CHEBI:338412
+  field_paths:
+  - occurrences[2].taxon_id
+  - occurrences[2].taxon_label
+  - occurrences[2].notes
+  evidence_ids:
+  - C069-OWNER
+  - C069-OCC-TAX
+  - C069-WD-Q104990388
+  - C069-TAXON-GUARD
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_lotus.py
+    role: Existing QID-to-ID assignment can preserve an inconsistent source name;
+      add explicit ID/name reconciliation without destroying raw provenance
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Consume a pinned label adjudication before emitting LOTUS occurrence taxon_label
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/taxonomy.py
+    role: Preserve exact name/rank semantics; no genus/species fallback
+  - repository: CultureBotAI/NaturalProductMech
+    path: docs/CURATION.md
+    role: Document a new consumed occurrence-label correction contract; exclusion
+      table cannot rename a retained occurrence
+  rule_id: review-yaml-record:exact-identity-and-representation
+  native_severity: minor
+  normalization_reason: The defect concerns representation or nomenclature; it does
+    not establish a different heavy-atom constitution.
+- finding_id: S069-DEF-F-QUALIFICATION
+  issue_key: anisomycin-definition-ribosome-dna-qualification
+  category: representation
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: The imported definition compresses the ribosomal target and DNA-effect interpretation
+  description: The wording presents peptidyl transferase and the 80S ribosome as alternatives
+    and does not distinguish the directly supported translation target from an observed
+    DNA-synthesis phenotype with proposed indirect causality. The source definition
+    is faithfully copied and the DNA phenotype is supported, so this is a non-blocking
+    qualification rather than a false target or unsupported activity finding.
+  target_ids:
+  - CHEBI:338412
+  field_paths:
+  - definition
+  - definition_source
+  evidence_ids:
+  - S069-DEF-E-LOCAL
+  - S069-DEF-E-2014
+  - S069-DEF-E-1967
+  - S069-DEF-E-OWNERSHIP
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/anisomycin.yaml
+    role: curator-owned discussion only; generated definition remains source-owned
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: existing same-key discussion carry-forward and ChEBI definition emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: docs/CURATION.md
+    role: implemented curator-discussion ownership contract
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: unchanged imported definition provenance
+  rule_id: 'review-yaml-record: preserve direct evidence and causal scope'
+  native_severity: 'minor: weak or compressed mechanism wording'
+  normalization_reason: Both the protein-synthesis mechanism and DNA phenotype are
+    supported; only target nesting and certainty of the causal interpretation need
+    clarification.
+actions:
+- action_id: S069-ACT-METHOD
+  finding_ids:
+  - S069-F-METHOD
+  target_ids:
+  - CHEBI:338412
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Consumed exact-product method correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Complete original-row guard and attributed adjudication
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Supported native experimental strain qualifier
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Compose maintained inputs and regenerate source-owned fields
+  generator: scripts/seed_from_sources.py
+  description: Add a consumed REPLACE for the MIBiG source concept with minted_identifier=naturalproductmech:mibig-29e376dc5d
+    (BGC0001510:1), source=MIBIG, source_id=BGC0001510, exact source_label=anisomycin,
+    locus_evidence_methods=Knock-out studies|Heterologous expression|Enzymatic assays.
+    Because REPLACE does not enforce expected_* fields, pair it with a consumed BGC0001510:1
+    claim-reference row guarded by complete raw-row SHA 477d03df25419cf00af8ab2d06fd2e27c92db7e7d4983e6362472c9ee572dfaa,
+    retaining producer_reference=locus_reference=PMID:28373542 and source_reference=DOI:10.1073/pnas.1701361114
+    with dated curator/rationale. Add the separately consumed strain row with the
+    same source ID/SHA, strain=ACCC40033 and reference=PMID:28373542; document the
+    independently inspected2019 Table1 and accession metadata bridge in the rationale.
+    Preserve native parent, ZXQ01, mutant cosmids, TK24 and protein-expression E.
+    coli roles. Keep blank raw locus bounds; do not substitute the28.67-kb cosmid
+    overlap or whole14,535-bp accession length for experimentally delimited coordinates.
+    No structural correction is needed for this action. If later combined with one,
+    implement and test the existing citation/strain rejection contract explicitly.
+  acceptance_checks:
+  - Reject stale or duplicate BGC0001510:1 rows using original SHA 477d03df25419cf00af8ab2d06fd2e27c92db7e7d4983e6362472c9ee572dfaa;
+    test actual REPLACE-plus-full-row-guard composition. Verify the loader lookup
+    uses the MIBiG source-concept identifier and that the correction reaches the existing
+    CHEBI:338412 owner.
+  - Emit exactly the three supported methods with BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED;
+    retain raw entry version5, taxon516360, KY014292.1, stable CHEBI identifier and
+    chemistry.
+  - Retain anisomycin1 as the final assay product and distinguish4a substrate, intermediate
+    reactions, native deletion/rescue and cosmid experiments; do not assert AniP purified
+    activity or aniG necessity.
+  - Keep both occurrence provenance and the separate current taxonomy-label repair;
+    do not transfer heterologous hosts into natural producers.
+  - Run focused correction-consumer tests, target canary, strict validation and required
+    reproduction/corpus/QC gates after curation; none of those future mutation checks
+    was run in this review.
+- action_id: C069-A-SUBSPECIES-LABEL
+  finding_ids:
+  - C069-F-SUBSPECIES-LABEL
+  target_ids:
+  - CHEBI:338412
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_lotus.py
+    role: Existing QID-to-ID assignment can preserve an inconsistent source name;
+      add explicit ID/name reconciliation without destroying raw provenance
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Consume a pinned label adjudication before emitting LOTUS occurrence taxon_label
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/taxonomy.py
+    role: Preserve exact name/rank semantics; no genus/species fallback
+  - repository: CultureBotAI/NaturalProductMech
+    path: docs/CURATION.md
+    role: Document a new consumed occurrence-label correction contract; exclusion
+      table cannot rename a retained occurrence
+  description: Add a consumed, explicitly documented LOTUS taxon-label adjudication
+    hook (new functionality, not an existing label override) pinned to full key YKJYKKNCCRKFSL-RDBSUJKOSA-N,
+    taxonNCBITaxon:2719566, DOI10.1016/J.SYNBIO.2018.12.004, Q104990388, old organism_name
+    Streptomyces hygrospinosus and full row SHA 103a2535e6cbd50a9f4707a8a98da0b85b03282df3f03bb3ffc9916f87bc8e29.
+    Emit the current subspecies label Streptomyces hygrospinosus subsp. beijingensis
+    while retaining the upstream species-only text/QID and authority interpretation
+    as provenance. Preserve the taxon ID, occurrence source/citation, exact chemical
+    identity and separate producer516360; do not use an exclusion action to remove
+    this supported occurrence. Rebuild from unchanged raw input and ensure no other
+    key/DOI/taxon row is relabelled by an overbroad global replacement.
+  generator: Implement the maintained source decision and regenerate with the documented
+    seeder workflow; do not patch a generated YAML or raw source snapshot.
+  acceptance_checks:
+  - Exact three-field source selector plus full row SHA rejects drift and leaves unrelated
+    rows untouched.
+  - The retained occurrence ID2719566 and emitted subspecies label agree; producer516360
+    is unchanged and no culture-wide production claim is inferred.
+  - Raw LOTUS/Wikidata text remains auditable and reproducible extraction/seeding/id-label
+    checks pass.
+- action_id: S069-DEF-ACT-QUALIFICATION
+  finding_ids:
+  - S069-DEF-F-QUALIFICATION
+  target_ids:
+  - CHEBI:338412
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/anisomycin.yaml
+    role: curator-owned discussion only; generated definition remains source-owned
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: existing same-key discussion carry-forward and ChEBI definition emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: docs/CURATION.md
+    role: implemented curator-discussion ownership contract
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: unchanged imported definition provenance
+  generator: Existing validated curator write and scripts/seed_from_sources.py discussion
+    carry-forward
+  description: Add a unique curator-anisomycin-definition discussion through the guarded
+    validated curation writer for CHEBI:338412 and unchanged key YKJYKKNCCRKFSL-RDBSUJKOSA-N,
+    pinning the inspected owner bytes and ChEBI inventory row d8e0993d5e25ba2cb40af42878d7f0d1c311391af9740acb7f994deb2b99f176.
+    Use an explicit prompt about interpreting the source definition, a resolved evidence-backed
+    answer, and the two primary references. Explain that anisomycin binds the A-site
+    of the peptidyl-transferase centre in the 60S subunit of the 80S ribosome; reduced
+    DNA synthesis was observed in HeLa cells and was proposed to be secondary to translation
+    inhibition. Preserve definition and definition_source as imported rather than
+    silently rewriting them. No new molecular-target item or phenotype is required.
+    A future upstream definition change must flow through the normal source refresh;
+    this action does not contact upstream or invent a definition-override table.
+  acceptance_checks:
+  - Require the same complete owner identity and unchanged pinned source row before
+    writing; reject source drift and duplicate curator discussion IDs.
+  - Keep imported definition and definition_source byte-equivalent in value; attach
+    DOI:10.1038/nature13737 and PMID:6027796 evidence to the curator qualification.
+  - The qualification must not claim a direct DNA enzyme, proven secondary causality,
+    anisomycin rapid-kinetic results from the 2014 CHX/LTM assays, or two independent
+    ribosomal targets.
+  - Confirm the unique curator-prefixed discussion survives same-key reseeding and
+    is not carried across a structure change; run the documented guarded-write, strict-validation
+    and reproduction checks after actual curation. These checks are proposed, not
+    executed here.
+limitations:
+- This review audits the present assertions and the concrete source questions they
+  raise; it does not claim exhaustive discovery of every later activity or biosynthetic
+  study. Optional enrichment remains distinct from correcting an unsupported current
+  assertion.
+- The2017 main text was read completely, including tables and relevant figures, but
+  its SI could not be obtained. Detailed assay concentrations, complete tagged construct
+  sequences and supplementary strain/structural tables are not independently verified.
+- The complete1954 occurrence paper was unavailable. Positive1993 and2019 culture
+  evidence is independently supported and is not presented as a substitute for that
+  historical source.
+- No independent raw NMR reassignment or laboratory experiment was performed. Existing
+  definition mechanism and sibling-derived activity backing are handled in separate
+  evidence sections.
+- The exact pinned sibling provides source-backed mechanism content under the repository
+  rule but remains SEEDED and explicitly not a curator mechanistic review. No antiviral
+  potency or selectivity is inferred.
+- Current exact chemical grounding does not establish the biological assertions in
+  the imported ChEBI definition; that separate primary-evidence audit is not replaced
+  by an identifier match.
+- The 1967 original scientific narrative was inspected through a public full-text
+  transcription; the direct PDF link failed and the publisher route was already blocked.
+  OCR symbols and table alignment were not independently checked against original
+  PDF pixels, so no quantitative potency is asserted here.
+- The 2014 read scope was the anisomycin-relevant Results, figures, Conclusions and
+  Methods listed in evidence, not an independent refinement of coordinates or complete
+  reproduction of crystallography. The inferred relationship between DNA and protein
+  synthesis remains qualified.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-007
+```
