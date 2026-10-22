@@ -98,10 +98,117 @@ EMIT_OPTS = {
     "allow_unicode": True,
 }
 
+_CAUSAL_GRAPH_DOC_KEY_ORDER: tuple[str, ...] = (
+    "record_id",
+    "standard_inchi_key",
+    "graph",
+)
+
+
+def _is_curator_discussion_id(value: Any) -> bool:
+    return (
+        isinstance(value, str)
+        and value.startswith("curator-")
+        and value != "curator-"
+    )
+
+
+def canonicalize_top_level_keys(doc: dict[str, Any]) -> dict[str, Any]:
+    """Return a shallow mapping with top-level keys in canonical emission order.
+
+    Matches the exact top-level slot ordering emitted by
+    ``scripts/seed_from_sources.py`` (and enforced by
+    ``scripts/check_reproduction.py``) so curator scripts that insert
+    ``biosynthetic_pathway``, ``causal_graphs``, ``causal_graph_refs``,
+    ``discussions``, ``molecular_targets``, or ``curation_history`` in arbitrary
+    dict insertion order still serialize byte-identically to a fresh re-seed:
+
+    - Imported ``molecular_targets`` (at least one entry with
+      ``source != 'CURATOR'``) sit after ``bioactivities``; curator-only
+      ``molecular_targets`` sit in the carried curator block after
+      ``curation_status`` (and after source-generated ``discussions`` when
+      present).
+    - ``discussions`` containing at least one source-generated thread sit
+      immediately after ``curation_status`` (before carried curator sections);
+      curator-only ``discussions`` (all ``discussion_id`` values starting with
+      ``curator-``) sit after ``causal_graph_refs``.
+    - ``curation_history`` is always emitted last.
+    - Component ``CausalGraphDocument`` payloads emit ``record_id``,
+      ``standard_inchi_key``, ``graph``, and ``curation_history`` last.
+    """
+    if "record_id" in doc and "graph" in doc:
+        ordered: dict[str, Any] = {}
+        for key in _CAUSAL_GRAPH_DOC_KEY_ORDER:
+            if key in doc:
+                ordered[key] = doc[key]
+        for key, value in doc.items():
+            if key not in ordered and key != "curation_history":
+                ordered[key] = value
+        if "curation_history" in doc:
+            ordered["curation_history"] = doc["curation_history"]
+        return ordered
+
+    targets = doc.get("molecular_targets")
+    has_imported_targets = isinstance(targets, list) and any(
+        isinstance(item, dict) and item.get("source") != "CURATOR"
+        for item in targets
+    )
+    discussions = doc.get("discussions")
+    has_source_discussions = isinstance(discussions, list) and any(
+        isinstance(item, dict) and not _is_curator_discussion_id(item.get("discussion_id"))
+        for item in discussions
+    )
+
+    record_key_order: tuple[str, ...] = (
+        "identifier",
+        "label",
+        "chemical_structure",
+        "np_pathway",
+        "biosynthesis_origin",
+        "definition",
+        "definition_source",
+        "synonyms",
+        "np_classification",
+        "occurrence_taxon_groups",
+        "occurrences",
+        "bioactivities",
+        *(("molecular_targets",) if has_imported_targets else ()),
+        "related_records",
+        "bioactivity_summary",
+        "bgc_class",
+        "compound_classes",
+        "xrefs",
+        "producer_taxon_groups",
+        "producer_organisms",
+        "biosynthetic_gene_clusters",
+        "source_concepts",
+        "grounding_status",
+        "grounding_notes",
+        "curation_status",
+        *(("discussions",) if has_source_discussions else ()),
+        *( () if has_imported_targets else ("molecular_targets",)),
+        "biosynthetic_pathway",
+        "causal_graphs",
+        "causal_graph_refs",
+        *( () if has_source_discussions else ("discussions",)),
+    )
+
+    ordered = {}
+    for key in record_key_order:
+        if key in doc:
+            ordered[key] = doc[key]
+    for key, value in doc.items():
+        if key not in ordered and key != "curation_history":
+            ordered[key] = value
+    if "curation_history" in doc:
+        ordered["curation_history"] = doc["curation_history"]
+    return ordered
+
 
 def emit_natural_product_yaml(doc: dict[str, Any], yaml_kwargs: dict[str, Any] | None = None) -> str:
     """Serialise ``doc`` exactly as :func:`write_validated_natural_product` writes it."""
-    return yaml.safe_dump(doc, **{**EMIT_OPTS, **(yaml_kwargs or {})})
+    canonical_doc = canonicalize_top_level_keys(doc)
+    return yaml.safe_dump(canonical_doc, **{**EMIT_OPTS, **(yaml_kwargs or {})})
 
 
 def write_validated_natural_product(

@@ -36,9 +36,11 @@ schema_version: '1.0.0'
 tasks:
 - task_id: naturalproductmech-infra-0001
   summary: Canonicalize curator-owned top-level key ordering in write_validated_natural_product and evaluate multi-component enzyme support in PathwayStep
-  status: note
+  status: resolved
   issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/999
-  disposition: Recorded during cycle 1 stage 2 (causal_graphs) for stage 6 triage
+  disposition: >-
+    Resolved in cycle 1 stage 6 (#999): added canonicalize_top_level_keys in write_validated.py with unit tests and
+    documented the single-catalytic-subunit PathwayStep + PROTEIN_COMPLEX causal_graphs convention in docs/CURATION.md.
 ```
 <!-- mech-infra-tasks:end -->
 
@@ -47,11 +49,16 @@ tasks:
 ### `naturalproductmech-infra-0001` — Canonicalize curator-owned top-level key ordering in `write_validated_natural_product` and evaluate multi-component enzyme support in `PathwayStep`
 
 - **Origin**: `mech-goal-sequence-20261019`, cycle `1`, stage `2` (`causal_graphs`, `goal-2193`)
-- **Status**: `note` (pending Stage 6 implementation triage; tracked in https://github.com/CultureBotAI/NaturalProductMech/issues/999)
+- **Status**: `resolved` (implemented and verified in cycle `1`, stage `6`; tracked in https://github.com/CultureBotAI/NaturalProductMech/issues/999)
 - **Priority**: P2
 - **Dependencies**: None
 - **Evidence paths**:
-  - `src/naturalproductmech/validation/write_validated.py` (`write_validated_natural_product`)
+  - `src/naturalproductmech/validation/write_validated.py` (`canonicalize_top_level_keys`, `emit_natural_product_yaml`, `write_validated_natural_product`)
+  - `tests/test_write_validated.py`
+  - `docs/CURATION.md`
+  - `reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/infra_snapshot.md`
+  - `reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/implementation_plan.md`
+  - `reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/validation.md`
   - `scripts/seed_from_sources.py` (`carry_existing_curator_owned_fields`, `CURATOR_OWNED_CARRIED_FIELDS`)
   - `scripts/check_reproduction.py`
   - `src/naturalproductmech/schema/naturalproductmech.yaml` (`NaturalProductRecord`, `PathwayStep`)
@@ -66,4 +73,7 @@ tasks:
 - **Desired outcome**:
   1. Update `write_validated_natural_product` in `src/naturalproductmech/validation/write_validated.py` (with unit tests) to canonicalize top-level `NaturalProductRecord` slot ordering to match `seed_from_sources.py` and clone shared nested structures before `yaml.safe_dump` so YAML anchors (`&id001` / `*id001`) are never emitted.
   2. Evaluate at Stage 6 whether `PathwayStep` should remain single-enzyme-grounded (deferring multi-subunit assembly to `causal_graphs`) or add an optional multivalued `auxiliary_proteins` / `coenzymes` slot.
+- **Resolution & Disposition**:
+  1. Implemented `canonicalize_top_level_keys(doc)` in `src/naturalproductmech/validation/write_validated.py` and wired it into `emit_natural_product_yaml` / `write_validated_natural_product`. It enforces exact top-level key parity with `scripts/seed_from_sources.py` across all 3,116 `NaturalProductRecord` files and component `CausalGraphDocument` files while preserving existing value object references (satisfying `tests/test_seed_skeleton.py::test_reseed_preserves_evidence_aliases_across_curator_sections`). Added 4 unit tests in `tests/test_write_validated.py`.
+  2. Evaluated `PathwayStep` multi-component enzyme modeling: retained single-valued `PathwayStep.enzyme_id` / `enzyme_label` for the catalytic subunit and documented the canonical `PathwayStep` + `causal_graphs` (`PROTEIN_COMPLEX` with subunit edges) pattern in `docs/CURATION.md`.
 

@@ -441,6 +441,23 @@ record_curation_event(
 write_validated_natural_product(doc, path)
 ```
 
+`write_validated_natural_product` (via `canonicalize_top_level_keys`)
+automatically orders top-level record and component keys to match
+`scripts/seed_from_sources.py` and `scripts/check_reproduction.py` — placing
+source-generated `discussions` before carried curator sections
+(`biosynthetic_pathway`, `causal_graphs`, `causal_graph_refs`), curator-only
+`discussions` (`discussion_id: curator-<local-id>`) after `causal_graph_refs`,
+and `curation_history` last.
+
+For obligate two-component or multi-subunit enzymatic steps that lack a
+ComplexPortal entry (for example, the *Streptomyces venezuelae* `DesVII`/`DesVIII`
+macrolide glycosyltransferase system, `UniProtKB:Q9ZGH7` + `UniProtKB:Q9ZGH8`),
+ground `PathwayStep.enzyme_id` and `enzyme_label` to the primary catalytic
+subunit (`UniProtKB:Q9ZGH7` / `DesVII`), name the auxiliary subunit in
+`PathwayStep.notes`, and represent both subunits and their assembly explicitly in
+`causal_graphs` (`ENZYME` / `PROTEIN` nodes with `PART_OF` / `BINDS` edges into a
+`PROTEIN_COMPLEX` node).
+
 If no substantive field changed, do not write and do not append an event.
 
 ## Opening a Discussion
