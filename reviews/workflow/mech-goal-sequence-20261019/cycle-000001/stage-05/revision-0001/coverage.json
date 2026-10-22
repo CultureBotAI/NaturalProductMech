@@ -1,0 +1,49 @@
+{
+  "run_id": "mech-goal-sequence-20261019",
+  "cycle": 1,
+  "stage": 5,
+  "goal_id": "resolve_review_findings",
+  "revision": 1,
+  "consumed_reviews": [
+    "reviews/structured/20261022T012300Z-pik-des-macrolide-deoxysugar-cohort/review.yaml",
+    "reviews/structured/20261022T012305Z-desosamine-2-record-review/review.yaml",
+    "reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-04/revision-0001/evidence.yaml"
+  ],
+  "fresh_reviews": [
+    "reviews/structured/20261022T034800Z-pik-des-stage5-remediation-review/review.yaml"
+  ],
+  "finding_groups": {
+    "total": 3,
+    "resolved": 2,
+    "deferred": 1,
+    "unresolved_blockers": 0
+  },
+  "github_issues": [
+    {
+      "group_id": "G-PIK-DES-001",
+      "number": 1010,
+      "url": "https://github.com/CultureBotAI/NaturalProductMech/issues/1010",
+      "status": "resolved"
+    },
+    {
+      "group_id": "G-PIK-DES-002",
+      "number": 1011,
+      "url": "https://github.com/CultureBotAI/NaturalProductMech/issues/1011",
+      "status": "resolved"
+    },
+    {
+      "group_id": "G-PIK-DES-003",
+      "number": 1012,
+      "url": "https://github.com/CultureBotAI/NaturalProductMech/issues/1012",
+      "status": "deferred"
+    }
+  ],
+  "remediated_targets": [
+    "CHEBI:32540",
+    "naturalproductmech:mibig-bc0da8b0f6",
+    "CHEBI:29630",
+    "CHEBI:29665",
+    "CHEBI:29656",
+    "CHEBI:29649"
+  ]
+}
