@@ -11,11 +11,11 @@
 
 ## Summary
 
-Full 6-record category review of the Streptomyces venezuelae ATCC 15439 pik/des macrolide-deoxysugar cohort (BGC0000094, BGC0000898) and the homologous Streptomyces narbonensis desosamine cluster (BGC0000899), anchored to a full-corpus deterministic checkpoint of all 3,116 natural product owners and 86 causal graph components. Confirms clean SPLIT_SHARED_WITH_CHEBI separation of D-desosamine (CHEBI:32540, desosamine-2.yaml) from methymycin (CHEBI:29630, methymycin.yaml), while identifying three open findings for Stage 5 grouped remediation: (1) missing ATCC 15439 strain qualification across the five S. venezuelae records (F-PIK-DES-001), (2) cross-species PMID:9770448 citation transfer onto S. narbonensis BGC0000899:1 in desosamine.yaml (F-PIK-DES-002), and (3) upstream tautomeric/stereochemical and GenBank deposit-split boundaries between BGC0000899, BGC0000898, and BGC0000094 (F-PIK-DES-003).
+Full 6-record category review of the Streptomyces venezuelae ATCC 15439 pik/des macrolide-deoxysugar cohort (BGC0000094, BGC0000898) and the homologous Streptomyces narbonensis desosamine cluster (BGC0000899), anchored to a full-corpus deterministic checkpoint of all 3,116 natural product owners and 246 standalone causal graph components (3,362 total YAML records). Confirms clean SPLIT_SHARED_WITH_CHEBI separation of D-desosamine (CHEBI:32540, desosamine-2.yaml) from methymycin (CHEBI:29630, methymycin.yaml), while identifying three open findings for Stage 5 grouped remediation: (1) missing ATCC 15439 strain qualification across the five S. venezuelae compound rows BGC0000094:1 and BGC0000898:1..4 (F-PIK-DES-001), (2) cross-species Xue et al. 1998 (PMID:9770448 / DOI:10.1073/PNAS.95.21.12111) citation transfer onto S. narbonensis BGC0000899:1 and LOTUS occurrences[0] in desosamine.yaml (F-PIK-DES-002), and (3) upstream tautomeric/stereochemical and GenBank deposit-split boundaries between BGC0000899, BGC0000898, and BGC0000094 across all 6 cohort records (F-PIK-DES-003).
 
 ## Scope And Provenance
 
-Coherent 6-record biosynthetic and chemical-identity cohort covering all NaturalProductMech records seeded from MIBiG BGC0000094, BGC0000898, and BGC0000899, evaluated alongside frozen full-corpus inventory checks (3,116 owner YAML records and 86 causal graph components).
+Coherent 6-record biosynthetic and chemical-identity cohort covering all NaturalProductMech records seeded from MIBiG BGC0000094, BGC0000898, and BGC0000899, evaluated alongside frozen full-corpus inventory checks (3,116 owner YAML records and 246 standalone causal graph components; 3,362 total YAML records).
 
 Selection: All records derived from the S. venezuelae pik/des gene clusters (BGC0000094:1, BGC0000898:1..4) and the homologous S. narbonensis des cluster (BGC0000899:1), selected to audit the Cycle 1 Stage 1 SPLIT_SHARED_WITH_CHEBI structure split and its cohort-wide producer, locus, and citation consistency.
 Coverage: full; 6 reviewed / 6 in the declared population.
@@ -39,8 +39,9 @@ Working-tree hashes do not imply those bytes were committed.
 | Strict schema and semantic validation (cohort) | passed | True | CHEBI:32540, naturalproductmech:mibig-bc0da8b0f6, CHEBI:29630, CHEBI:29665, CHEBI:29656, CHEBI:29649 | All 6 cohort YAML files passed strict LinkML validation with 0 ERROR rows. |
 | Full-corpus lockfile and filing verification | passed | True | CHEBI:32540, naturalproductmech:mibig-bc0da8b0f6, CHEBI:29630, CHEBI:29665, CHEBI:29656, CHEBI:29649 | Verified lockfile integrity across all 3,116 natural product owner records against data/natural_products/PATHS.tsv. |
 | Full-corpus ontology ID-label correspondence | passed | True | CHEBI:32540, naturalproductmech:mibig-bc0da8b0f6, CHEBI:29630, CHEBI:29665, CHEBI:29656, CHEBI:29649 | Full-corpus ID-label check passed (13,449 canonical, 646 synonym, 35 exception, 0 ID_NOT_FOUND); all ChEBI and NCBITaxon terms on the 6 cohort records resolve canonically. |
-| Exhaustive corpus review-queue checkpoint | passed | True | CHEBI:32540, naturalproductmech:mibig-bc0da8b0f6, CHEBI:29630, CHEBI:29665, CHEBI:29656, CHEBI:29649 | Computed exhaustive review-records queue across all 3,116 corpus owners (8,928 rows across 11 queues); all 6 cohort records appear in producer-evidence (1 SOURCE_ASSERTION producer each) and desosamine.yaml additionally appears in stereo-incomplete. |
+| Exhaustive corpus review-queue checkpoint | passed | True | CHEBI:32540, naturalproductmech:mibig-bc0da8b0f6, CHEBI:29630, CHEBI:29665, CHEBI:29656, CHEBI:29649 | Computed exhaustive review-records queue across all 3,116 corpus owners (8,905 worklist items across 11 queues, 8,928 output lines with --limit 5: producer-evidence 2,292; biosynthesis 1,192; structure-disagreement 5; name-disagreement 67; unnamed-producer 39; shared-structure 207; needs-a-name 18; occurrence-only 12; pathway-ambiguous 620; unresolved-taxa 3,329; stereo-incomplete 1,124); all 6 cohort records appear in producer-evidence (1 SOURCE_ASSERTION producer each) and desosamine.yaml additionally appears in stereo-incomplete. |
 | Repository-wide identifier and BGC cross-reference search | passed | True | CHEBI:32540, naturalproductmech:mibig-bc0da8b0f6, CHEBI:29630, CHEBI:29665, CHEBI:29656, CHEBI:29649 | Verified all repository references to BGC0000094, BGC0000898, BGC0000899, and cohort identifiers across raw inventories, curation tables, records, and tests. |
+| Full-corpus standalone causal graph component validation | passed | True | CHEBI:32540, naturalproductmech:mibig-bc0da8b0f6, CHEBI:29630, CHEBI:29665, CHEBI:29656, CHEBI:29649 | Validated all 246 standalone causal graph component YAML files under data/causal_graphs/ (40 passed, 0 failed). |
 
 ## Scientific And Domain Assessments
 
@@ -56,15 +57,15 @@ completeness: concern. Targets: CHEBI:32540, CHEBI:29630, CHEBI:29665, CHEBI:296
 
 All five Streptomyces venezuelae records (desosamine-2.yaml, methymycin.yaml, pikromycin.yaml, neomethymycin.yaml, narbomycin.yaml) cite PMID:9770448 (DOI:10.1073/pnas.95.21.12111) and GenBank AF079138.1 / AF079762.1, which explicitly name strain ATCC 15439, but producer_organisms[0].strain is currently omitted because BGC0000094:1 and BGC0000898:1..4 are absent from curation/mibig_producer_strains.tsv.
 
-### Cross-species entry citation PMID:9770448 on S. narbonensis BGC0000899:1 (desosamine.yaml)
+### Cross-species Xue et al. 1998 citation (PMID:9770448 / DOI:10.1073/PNAS.95.21.12111) on S. narbonensis BGC0000899:1 and LOTUS occurrence (desosamine.yaml)
 
 provenance: concern. Targets: naturalproductmech:mibig-bc0da8b0f6.
 
-desosamine.yaml (naturalproductmech:mibig-bc0da8b0f6, BGC0000899:1) asserts producer Streptomyces narbonensis (NCBITaxon:67333) and locus AF521878.1 using MIBiG entry citation PMID:9770448, which exclusively studies Streptomyces venezuelae ATCC 15439. Producer and locus citations on BGC0000899:1 should be routed to the MIBiG 4.0 repository entry and GenBank AF521878.1 via curation/mibig_claim_references.tsv.
+desosamine.yaml (naturalproductmech:mibig-bc0da8b0f6) asserts producer Streptomyces narbonensis (NCBITaxon:67333) and locus genbank:AF521878.1 via MIBiG BGC0000899:1 entry citation PMID:9770448, and simultaneously asserts a LOTUS occurrence for NCBITaxon:67333 citing DOI:10.1073/PNAS.95.21.12111 (the DOI of PMID:9770448). Because Xue et al. (1998) exclusively study Streptomyces venezuelae ATCC 15439, BGC0000899:1 claim references should be routed to BGC0000899.4 and GenBank AF521878.1 via curation/mibig_claim_references.tsv, and the mis-referenced LOTUS row should be excluded via curation/lotus_occurrence_exclusions.tsv.
 
 ### Tautomeric/stereochemical separation of desosamine.yaml vs desosamine-2.yaml and BGC0000898 deposit split
 
-representation: concern. Targets: CHEBI:32540, naturalproductmech:mibig-bc0da8b0f6, CHEBI:29665, CHEBI:29656, CHEBI:29649.
+representation: concern. Targets: CHEBI:32540, naturalproductmech:mibig-bc0da8b0f6, CHEBI:29630, CHEBI:29665, CHEBI:29656, CHEBI:29649.
 
 desosamine.yaml (ZOYWWAGVGBSJDL-UHFFFAOYSA-N, flat cyclic hexopyranose, stereo_complete=false) and desosamine-2.yaml (VTJCSBJRQLZNHE-CSMHCCOUSA-N, 3-star ChEBI open-chain D-desosamine aldehyde, stereo_complete=true) remain separate records because ChEBI lacks a 3-star stereochemically complete cyclic D-desosamine entry and MIBiG BGC0000899:1 lacks stereochemical assignment. Additionally, MIBiG splits the S. venezuelae ATCC 15439 locus across BGC0000094 (AF079138.1, CLUSTER_DEMONSTRATED) and BGC0000898 (AF079762.1, CLUSTER_UNSTATED without coordinates).
 
@@ -80,13 +81,13 @@ Both desosamine records file under CARBOHYDRATES and all four macrolides file un
 
 major / open / confirmed; issue key: pik-des-atcc15439-producer-strain-missing.
 
-The five Streptomyces venezuelae (NCBITaxon:54571) records seeded from MIBiG BGC0000094:1 (methymycin.yaml) and BGC0000898:1..4 (desosamine-2.yaml, pikromycin.yaml, neomethymycin.yaml, narbomycin.yaml) omit producer_organisms[0].strain even though their primary reference Xue et al., PNAS 1998 (PMID:9770448, DOI:10.1073/pnas.95.21.12111) and GenBank deposits AF079138.1 and AF079762.1 explicitly identify the producer strain as Streptomyces venezuelae ATCC 15439. Add source-pinned ATCC 15439 qualifications for BGC0000094:1 and BGC0000898:1..4 in curation/mibig_producer_strains.tsv.
+The five Streptomyces venezuelae (NCBITaxon:54571) records seeded from MIBiG compound rows BGC0000094:1 (methymycin.yaml, sha256 4a66615916a0118fa9dcf7c56119cd2b9791512ce06b442c397ecb0f278675c5), BGC0000898:1 (desosamine-2.yaml, sha256 1c3876fb6e15ecdbd0e4724f6af87e536ae9e4acdba5b97d7cf5381641555eae), BGC0000898:2 (pikromycin.yaml, sha256 224e597f0ea6fd4934bbbe480086fca606e478396c63e45cc1792ae879613923), BGC0000898:3 (neomethymycin.yaml, sha256 002165ca03d959d4ac1717fb17b12a597d30e31490cf647b99a3385aa5b95ead), and BGC0000898:4 (narbomycin.yaml, sha256 1817fca43f98660561bd8629c91a1248ce3ac06336dbadbec56b138cb5888578) omit producer_organisms[0].strain even though their primary reference Xue et al., PNAS 1998 (PMID:9770448, DOI:10.1073/pnas.95.21.12111) and GenBank deposits AF079138.1 and AF079762.1 explicitly identify the producer strain as Streptomyces venezuelae ATCC 15439. Add source-pinned ATCC 15439 qualifications for source_id keys BGC0000094:1, BGC0000898:1, BGC0000898:2, BGC0000898:3, and BGC0000898:4 in curation/mibig_producer_strains.tsv.
 
-### F-PIK-DES-002: Cross-species PMID:9770448 citation attached to S. narbonensis BGC0000899:1 in desosamine.yaml
+### F-PIK-DES-002: Cross-species Xue et al. 1998 citation (PMID:9770448 / DOI:10.1073/PNAS.95.21.12111) attached to S. narbonensis BGC0000899:1 and LOTUS occurrence in desosamine.yaml
 
 major / open / confirmed; issue key: bgc0000899-narbonensis-cross-species-pmid9770448-citation.
 
-data/natural_products/carbohydrates/desosamine.yaml (naturalproductmech:mibig-bc0da8b0f6, seeded from MIBiG BGC0000899:1) cites PMID:9770448 (Xue et al., PNAS 1998; DOI:10.1073/pnas.95.21.12111) as support for its Streptomyces narbonensis (NCBITaxon:67333) producer assertion and GenBank AF521878.1 locus. However, PMID:9770448 exclusively characterizes Streptomyces venezuelae ATCC 15439 (AF079138.1 / AF079762.1) and does not report S. narbonensis AF521878.1. Route BGC0000899:1 producer_reference to https://mibig.secondarymetabolites.org/repository/BGC0000899.4/ and locus_reference to https://www.ncbi.nlm.nih.gov/nuccore/AF521878.1 in curation/mibig_claim_references.tsv.
+data/natural_products/carbohydrates/desosamine.yaml (naturalproductmech:mibig-bc0da8b0f6) carries cross-species citations to Xue et al., PNAS 1998 (PMID:9770448 / DOI:10.1073/PNAS.95.21.12111) on three claims for Streptomyces narbonensis (NCBITaxon:67333): (1) producer_organisms[0].evidence[0].reference and (2) biosynthetic_gene_clusters[0].evidence[0].reference (seeded from MIBiG BGC0000899:1, sha256 82550891ca9f5a9b94c137f6a72ae676b7e02f65eb8044803852b6dba7113922, with notes "MIBiG BGC0000899 entry version 4; citation taken from the entry level" on genome_accession genbank:AF521878.1), and (3) occurrences[0].evidence[0].reference (seeded from LOTUS row ZOYWWAGVGBSJDL-UHFFFAOYSA-N &#124; NCBITaxon:67333 &#124; 10.1073/PNAS.95.21.12111, expected_source_row_sha256 c05b5dfc535431dcdf6070557c3cf941cc6faeed67f285376f144e1e44dd895e). Because Xue et al. (1998) exclusively characterize Streptomyces venezuelae ATCC 15439 (AF079138.1 / AF079762.1) and never report S. narbonensis or AF521878.1 (deposited in 2002), Stage 5 must both route BGC0000899:1 in curation/mibig_claim_references.tsv and exclude the mis-referenced LOTUS row in curation/lotus_occurrence_exclusions.tsv.
 
 ### F-PIK-DES-003: Upstream tautomeric/stereochemical separation of desosamine records and BGC0000898/BGC0000094 deposit split
 
@@ -98,7 +99,7 @@ Two upstream source-representation boundaries affect this cohort: (1) desosamine
 
 ### qualify-atcc15439-producer-strain
 
-Add source-pinned ATCC 15439 strain qualification rows for BGC0000094:1 and BGC0000898:1..4 (citing DOI:10.1073/pnas.95.21.12111) to curation/mibig_producer_strains.tsv and re-seed the five S. venezuelae records via scripts/seed_from_sources.py.
+Add source-pinned ATCC 15439 strain qualification rows for compound-row keys BGC0000094:1 (4a66615916a0118fa9dcf7c56119cd2b9791512ce06b442c397ecb0f278675c5), BGC0000898:1 (1c3876fb6e15ecdbd0e4724f6af87e536ae9e4acdba5b97d7cf5381641555eae), BGC0000898:2 (224e597f0ea6fd4934bbbe480086fca606e478396c63e45cc1792ae879613923), BGC0000898:3 (002165ca03d959d4ac1717fb17b12a597d30e31490cf647b99a3385aa5b95ead), and BGC0000898:4 (1817fca43f98660561bd8629c91a1248ce3ac06336dbadbec56b138cb5888578) citing DOI:10.1073/pnas.95.21.12111 to curation/mibig_producer_strains.tsv and re-seed the five S. venezuelae records via scripts/seed_from_sources.py.
 
 - Verify exact_source_row_sha256 pins for BGC0000094:1 and BGC0000898:1..4 in curation/mibig_producer_strains.tsv.
 - Run scripts/seed_from_sources.py and confirm producer_organisms[0].strain == ATCC 15439 on methymycin.yaml, desosamine-2.yaml, pikromycin.yaml, neomethymycin.yaml, and narbomycin.yaml.
@@ -106,10 +107,11 @@ Add source-pinned ATCC 15439 strain qualification rows for BGC0000094:1 and BGC0
 
 ### route-bgc0000899-claim-references
 
-Add a source-pinned claim-reference override for BGC0000899:1 in curation/mibig_claim_references.tsv routing producer_reference to https://mibig.secondarymetabolites.org/repository/BGC0000899.4/ and locus_reference/source_reference to https://www.ncbi.nlm.nih.gov/nuccore/AF521878.1, then re-seed desosamine.yaml.
+Add a source-pinned claim-reference override for source_id BGC0000899:1 (expected_source_row_sha256 82550891ca9f5a9b94c137f6a72ae676b7e02f65eb8044803852b6dba7113922) in curation/mibig_claim_references.tsv routing producer_reference to https://mibig.secondarymetabolites.org/repository/BGC0000899.4/ and locus_reference/source_reference to https://www.ncbi.nlm.nih.gov/nuccore/AF521878.1, add a source-pinned LOTUS occurrence exclusion row (ZOYWWAGVGBSJDL-UHFFFAOYSA-N, NCBITaxon:67333, 10.1073/PNAS.95.21.12111, expected_source_row_sha256 c05b5dfc535431dcdf6070557c3cf941cc6faeed67f285376f144e1e44dd895e) in curation/lotus_occurrence_exclusions.tsv, and re-seed desosamine.yaml.
 
 - Verify expected_source_row_sha256 82550891ca9f5a9b94c137f6a72ae676b7e02f65eb8044803852b6dba7113922 for BGC0000899:1 in curation/mibig_claim_references.tsv.
-- Re-seed desosamine.yaml via scripts/seed_from_sources.py and confirm producer and locus claims cite BGC0000899.4 and AF521878.1 with CURATOR_INFERENCE routing provenance.
+- Verify expected_source_row_sha256 c05b5dfc535431dcdf6070557c3cf941cc6faeed67f285376f144e1e44dd895e for (ZOYWWAGVGBSJDL-UHFFFAOYSA-N, NCBITaxon:67333, 10.1073/PNAS.95.21.12111) in curation/lotus_occurrence_exclusions.tsv.
+- Re-seed desosamine.yaml via scripts/seed_from_sources.py and confirm producer and locus claims cite BGC0000899.4 and AF521878.1 with CURATOR_INFERENCE routing provenance and that the cross-species LOTUS occurrence is excluded.
 - Verify scripts/validate_strict.py and scripts/verify_corpus.py pass with zero errors.
 
 ### preserve-desosamine-tautomer-and-deposit-separation
@@ -133,12 +135,13 @@ Retain separate records for CHEBI:32540 (desosamine-2.yaml, open-chain D-desosam
 | structure-corrections | curation/mibig_structure_corrections.tsv; BGC0000898:1 -&gt; CHEBI:32540 (SPLIT_SHARED_WITH_CHEBI) | supports | SPLIT_SHARED_WITH_CHEBI cleanly routes BGC0000898:1 (desosamine) away from the erroneous methymycin SMILES onto CHEBI:32540 and strips the upstream methymycin xrefs pubchem:5282034&#124;npatlas:NPA01238. |
 | pnas-1998 | DOI:10.1073/pnas.95.21.12111; Xue et al., Proc. Natl. Acad. Sci. U.S.A. 1998;95(21):12111-12116 (PMID:9770448); title, abstract, and GenBank AF079138.1 / AF079762.1 strain attribution | supports | Xue et al. (1998) explicitly characterize the pikromycin/methymycin/narbomycin/neomethymycin PKS (pikAI-pikAV), desosamine biosynthesis (desI-desVIII), and P450 hydroxylase (pikC) gene cluster in Streptomyces venezuelae ATCC 15439, and do not study Streptomyces narbonensis AF521878.1. |
 | genbank-af521878 | https://www.ncbi.nlm.nih.gov/nuccore/AF521878.1; GenBank AF521878.1 and MIBiG BGC0000899.4 entry metadata for Streptomyces narbonensis desosamine biosynthetic gene cluster | partial | AF521878.1 is a partial desosamine BGC sequence deposit from Streptomyces narbonensis (NCBITaxon:67333); MIBiG BGC0000899.4 attaches PMID:9770448 (which studies S. venezuelae ATCC 15439) at the entry level. |
-| corpus-worklist | scripts/curation_worklist.py; Full-corpus checkpoint: 3,116 natural product owners and 86 causal graph components at f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf | supports | Deterministic worklist and lockfile checks confirm 3,116 valid owner records and 86 linked causal graph components, with all 6 pik/des cohort members in SEEDED status and queued under producer-evidence. |
+| corpus-worklist | scripts/curation_worklist.py; Full-corpus checkpoint: 3,116 natural product owners (273 with inline causal_graphs, 27 with causal_graph_refs) and 246 standalone causal graph components (3,362 total YAML records) at f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf | supports | Deterministic worklist, lockfile, and graph-component checks confirm 3,116 valid owner records and 246 standalone causal graph components (8,905 worklist items across 11 queues), with all 6 pik/des cohort members in SEEDED status and queued under producer-evidence. |
+| lotus-inventory | data/raw/lotus_occurrences.tsv; ZOYWWAGVGBSJDL-UHFFFAOYSA-N &#124; NCBITaxon:67333 &#124; 10.1073/PNAS.95.21.12111 (expected_source_row_sha256 c05b5dfc535431dcdf6070557c3cf941cc6faeed67f285376f144e1e44dd895e) | partial | LOTUS exports an occurrence row linking ZOYWWAGVGBSJDL-UHFFFAOYSA-N to NCBITaxon:67333 (Streptomyces narbonensis) via DOI 10.1073/PNAS.95.21.12111 (Xue et al., 1998, PMID:9770448), propagating the same cross-species S. venezuelae ATCC 15439 reference onto occurrences[0] in desosamine.yaml. |
 
 ## Limits And Additional Notes
 
 - Stage 4 is strictly read-only with respect to scientific YAML records and curation TSVs; all proposed curation edits are preserved as open findings for Stage 5 grouped remediation.
-- Full-corpus deterministic checks (verify_corpus.py, validate_id_label_correspondence.py, curation_worklist.py --review-records) audited all 3,116 owners and 86 components, while claim-by-claim primary literature verification in this bundle was scoped to the 6-record pik/des cohort.
+- Full-corpus deterministic checks (verify_corpus.py, validate_id_label_correspondence.py, curation_worklist.py --review-records, pytest tests/test_graph_components.py) audited all 3,116 owners and 246 standalone causal graph components (3,362 total YAML records), while claim-by-claim primary literature verification in this bundle was scoped to the 6-record pik/des cohort.
 - GenBank AF521878.1 (BGC0000899) is a direct sequence submission without a dedicated primary experimental publication in the committed inventory.
 
 ## Complete Structured Record
@@ -163,19 +166,22 @@ skill: .claude/skills/review-yaml-category/SKILL.md
 completion: completed
 verdict: needs_curation
 native_verdict: SEEDED retained across all 6 cohort records; producer strain ATCC
-  15439 and BGC0000899 citation-routing updates queued for Stage 5
+  15439, BGC0000899:1 claim-reference routing, and LOTUS cross-species occurrence
+  exclusion queued for Stage 5
 scientific_review: true
 summary: 'Full 6-record category review of the Streptomyces venezuelae ATCC 15439
   pik/des macrolide-deoxysugar cohort (BGC0000094, BGC0000898) and the homologous
   Streptomyces narbonensis desosamine cluster (BGC0000899), anchored to a full-corpus
-  deterministic checkpoint of all 3,116 natural product owners and 86 causal graph
-  components. Confirms clean SPLIT_SHARED_WITH_CHEBI separation of D-desosamine (CHEBI:32540,
-  desosamine-2.yaml) from methymycin (CHEBI:29630, methymycin.yaml), while identifying
-  three open findings for Stage 5 grouped remediation: (1) missing ATCC 15439 strain
-  qualification across the five S. venezuelae records (F-PIK-DES-001), (2) cross-species
-  PMID:9770448 citation transfer onto S. narbonensis BGC0000899:1 in desosamine.yaml
-  (F-PIK-DES-002), and (3) upstream tautomeric/stereochemical and GenBank deposit-split
-  boundaries between BGC0000899, BGC0000898, and BGC0000094 (F-PIK-DES-003).'
+  deterministic checkpoint of all 3,116 natural product owners and 246 standalone
+  causal graph components (3,362 total YAML records). Confirms clean SPLIT_SHARED_WITH_CHEBI
+  separation of D-desosamine (CHEBI:32540, desosamine-2.yaml) from methymycin (CHEBI:29630,
+  methymycin.yaml), while identifying three open findings for Stage 5 grouped remediation:
+  (1) missing ATCC 15439 strain qualification across the five S. venezuelae compound
+  rows BGC0000094:1 and BGC0000898:1..4 (F-PIK-DES-001), (2) cross-species Xue et
+  al. 1998 (PMID:9770448 / DOI:10.1073/PNAS.95.21.12111) citation transfer onto S.
+  narbonensis BGC0000899:1 and LOTUS occurrences[0] in desosamine.yaml (F-PIK-DES-002),
+  and (3) upstream tautomeric/stereochemical and GenBank deposit-split boundaries
+  between BGC0000899, BGC0000898, and BGC0000094 across all 6 cohort records (F-PIK-DES-003).'
 source:
   git_revision: f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
   state: git_commit
@@ -403,6 +409,12 @@ targets:
   - repository: CultureBotAI/NaturalProductMech
     path: data/natural_products/carbohydrates/desosamine.yaml
     role: Generated natural product owner record
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Pinned LOTUS taxon-structure-reference occurrence assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/lotus_occurrence_exclusions.tsv
+    role: Source-pinned LOTUS occurrence exclusion table
 - target_id: CHEBI:29630
   path: data/natural_products/polyketides/methymycin.yaml
   label: methymycin
@@ -527,7 +539,7 @@ scope:
   description: Coherent 6-record biosynthetic and chemical-identity cohort covering
     all NaturalProductMech records seeded from MIBiG BGC0000094, BGC0000898, and BGC0000899,
     evaluated alongside frozen full-corpus inventory checks (3,116 owner YAML records
-    and 86 causal graph components).
+    and 246 standalone causal graph components; 3,362 total YAML records).
   selection: All records derived from the S. venezuelae pik/des gene clusters (BGC0000094:1,
     BGC0000898:1..4) and the homologous S. narbonensis des cluster (BGC0000899:1),
     selected to audit the Cycle 1 Stage 1 SPLIT_SHARED_WITH_CHEBI structure split
@@ -542,11 +554,12 @@ scope:
   - CHEBI:29656
   - CHEBI:29649
   exclusions:
-  - target: Remaining 3,110 natural product owner records and 86 causal graph components
-      in the frozen 3,202-file corpus inventory
+  - target: Remaining 3,110 natural product owner records and 246 standalone causal
+      graph components in the frozen 3,362-file corpus inventory
     reason: Audited at the corpus-checkpoint level via verify_corpus.py, validate_id_label_correspondence.py,
-      and curation_worklist.py --review-records; excluded from this 6-record pik/des
-      category cohort denominator to preserve per-target scientific review depth.
+      curation_worklist.py --review-records, and pytest tests/test_graph_components.py;
+      excluded from this 6-record pik/des category cohort denominator to preserve
+      per-target scientific review depth.
 checks:
 - check_id: inspect-cohort
   name: Native source inspection (cohort)
@@ -649,10 +662,13 @@ checks:
   - CHEBI:29649
   evidence_ids:
   - corpus-worklist
-  summary: Computed exhaustive review-records queue across all 3,116 corpus owners
-    (8,928 rows across 11 queues); all 6 cohort records appear in producer-evidence
-    (1 SOURCE_ASSERTION producer each) and desosamine.yaml additionally appears in
-    stereo-incomplete.
+  summary: 'Computed exhaustive review-records queue across all 3,116 corpus owners
+    (8,905 worklist items across 11 queues, 8,928 output lines with --limit 5: producer-evidence
+    2,292; biosynthesis 1,192; structure-disagreement 5; name-disagreement 67; unnamed-producer
+    39; shared-structure 207; needs-a-name 18; occurrence-only 12; pathway-ambiguous
+    620; unresolved-taxa 3,329; stereo-incomplete 1,124); all 6 cohort records appear
+    in producer-evidence (1 SOURCE_ASSERTION producer each) and desosamine.yaml additionally
+    appears in stereo-incomplete.'
   scope_note: 2026-10-22T01:15:57.039000Z..2026-10-22T01:16:45.056753Z; output SHA256
     21ceb24b744ee53c05d07dc655d00221db28f301469a9ded2cf9c3947a13da95
 - check_id: local-search
@@ -676,6 +692,26 @@ checks:
     and cohort identifiers across raw inventories, curation tables, records, and tests.
   scope_note: 2026-10-22T01:21:20.376870Z..2026-10-22T01:21:24.691383Z; output SHA256
     18f7171fac0c9a66d492f459da59ed6abab6ea14eedfca2faaad1d7832d77cb4
+- check_id: test-graph-components
+  name: Full-corpus standalone causal graph component validation
+  status: passed
+  required: true
+  command: .venv/bin/python -m pytest -q tests/test_graph_components.py
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - CHEBI:32540
+  - naturalproductmech:mibig-bc0da8b0f6
+  - CHEBI:29630
+  - CHEBI:29665
+  - CHEBI:29656
+  - CHEBI:29649
+  evidence_ids:
+  - corpus-worklist
+  summary: Validated all 246 standalone causal graph component YAML files under data/causal_graphs/
+    (40 passed, 0 failed).
+  scope_note: 2026-10-22T01:58:42.242233Z..2026-10-22T01:59:44.949915Z; output SHA256
+    1addc70b9c898aa0b26f903283dd652e3403a6e0f111121e094a1d46a7c31656
 evidence:
 - evidence_id: cohort-owners
   kind: record_content
@@ -749,14 +785,28 @@ evidence:
 - evidence_id: corpus-worklist
   kind: validation
   reference: scripts/curation_worklist.py
-  locator: 'Full-corpus checkpoint: 3,116 natural product owners and 86 causal graph
-    components at f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf'
+  locator: 'Full-corpus checkpoint: 3,116 natural product owners (273 with inline
+    causal_graphs, 27 with causal_graph_refs) and 246 standalone causal graph components
+    (3,362 total YAML records) at f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf'
   accessed_at: '2026-10-22T01:16:45.056753Z'
   support: supports
   snapshot_sha256: 913508ca8df2eb5c037cd9e4769b14b027869ab78c7306f33b59e1c7e383a1c3
-  summary: Deterministic worklist and lockfile checks confirm 3,116 valid owner records
-    and 86 linked causal graph components, with all 6 pik/des cohort members in SEEDED
-    status and queued under producer-evidence.
+  summary: Deterministic worklist, lockfile, and graph-component checks confirm 3,116
+    valid owner records and 246 standalone causal graph components (8,905 worklist
+    items across 11 queues), with all 6 pik/des cohort members in SEEDED status and
+    queued under producer-evidence.
+- evidence_id: lotus-inventory
+  kind: database
+  reference: data/raw/lotus_occurrences.tsv
+  locator: ZOYWWAGVGBSJDL-UHFFFAOYSA-N | NCBITaxon:67333 | 10.1073/PNAS.95.21.12111
+    (expected_source_row_sha256 c05b5dfc535431dcdf6070557c3cf941cc6faeed67f285376f144e1e44dd895e)
+  accessed_at: '2026-10-22T01:13:23.000000Z'
+  support: partial
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+  summary: LOTUS exports an occurrence row linking ZOYWWAGVGBSJDL-UHFFFAOYSA-N to
+    NCBITaxon:67333 (Streptomyces narbonensis) via DOI 10.1073/PNAS.95.21.12111 (Xue
+    et al., 1998, PMID:9770448), propagating the same cross-species S. venezuelae
+    ATCC 15439 reference onto occurrences[0] in desosamine.yaml.
 assessments:
 - assessment_id: cohort-identity
   area: identity
@@ -803,14 +853,17 @@ assessments:
   - pnas-1998
 - assessment_id: narbonensis-citation-routing
   area: provenance
-  topic: Cross-species entry citation PMID:9770448 on S. narbonensis BGC0000899:1
-    (desosamine.yaml)
+  topic: Cross-species Xue et al. 1998 citation (PMID:9770448 / DOI:10.1073/PNAS.95.21.12111)
+    on S. narbonensis BGC0000899:1 and LOTUS occurrence (desosamine.yaml)
   outcome: concern
-  summary: desosamine.yaml (naturalproductmech:mibig-bc0da8b0f6, BGC0000899:1) asserts
-    producer Streptomyces narbonensis (NCBITaxon:67333) and locus AF521878.1 using
-    MIBiG entry citation PMID:9770448, which exclusively studies Streptomyces venezuelae
-    ATCC 15439. Producer and locus citations on BGC0000899:1 should be routed to the
-    MIBiG 4.0 repository entry and GenBank AF521878.1 via curation/mibig_claim_references.tsv.
+  summary: desosamine.yaml (naturalproductmech:mibig-bc0da8b0f6) asserts producer
+    Streptomyces narbonensis (NCBITaxon:67333) and locus genbank:AF521878.1 via MIBiG
+    BGC0000899:1 entry citation PMID:9770448, and simultaneously asserts a LOTUS occurrence
+    for NCBITaxon:67333 citing DOI:10.1073/PNAS.95.21.12111 (the DOI of PMID:9770448).
+    Because Xue et al. (1998) exclusively study Streptomyces venezuelae ATCC 15439,
+    BGC0000899:1 claim references should be routed to BGC0000899.4 and GenBank AF521878.1
+    via curation/mibig_claim_references.tsv, and the mis-referenced LOTUS row should
+    be excluded via curation/lotus_occurrence_exclusions.tsv.
   target_ids:
   - naturalproductmech:mibig-bc0da8b0f6
   evidence_ids:
@@ -818,6 +871,7 @@ assessments:
   - mibig-inventory
   - pnas-1998
   - genbank-af521878
+  - lotus-inventory
 - assessment_id: desosamine-tautomer-stereo-split
   area: representation
   topic: Tautomeric/stereochemical separation of desosamine.yaml vs desosamine-2.yaml
@@ -833,6 +887,7 @@ assessments:
   target_ids:
   - CHEBI:32540
   - naturalproductmech:mibig-bc0da8b0f6
+  - CHEBI:29630
   - CHEBI:29665
   - CHEBI:29656
   - CHEBI:29649
@@ -869,12 +924,16 @@ findings:
   title: Missing ATCC 15439 producer strain qualification on five S. venezuelae pik/des
     records
   description: The five Streptomyces venezuelae (NCBITaxon:54571) records seeded from
-    MIBiG BGC0000094:1 (methymycin.yaml) and BGC0000898:1..4 (desosamine-2.yaml, pikromycin.yaml,
-    neomethymycin.yaml, narbomycin.yaml) omit producer_organisms[0].strain even though
-    their primary reference Xue et al., PNAS 1998 (PMID:9770448, DOI:10.1073/pnas.95.21.12111)
-    and GenBank deposits AF079138.1 and AF079762.1 explicitly identify the producer
-    strain as Streptomyces venezuelae ATCC 15439. Add source-pinned ATCC 15439 qualifications
-    for BGC0000094:1 and BGC0000898:1..4 in curation/mibig_producer_strains.tsv.
+    MIBiG compound rows BGC0000094:1 (methymycin.yaml, sha256 4a66615916a0118fa9dcf7c56119cd2b9791512ce06b442c397ecb0f278675c5),
+    BGC0000898:1 (desosamine-2.yaml, sha256 1c3876fb6e15ecdbd0e4724f6af87e536ae9e4acdba5b97d7cf5381641555eae),
+    BGC0000898:2 (pikromycin.yaml, sha256 224e597f0ea6fd4934bbbe480086fca606e478396c63e45cc1792ae879613923),
+    BGC0000898:3 (neomethymycin.yaml, sha256 002165ca03d959d4ac1717fb17b12a597d30e31490cf647b99a3385aa5b95ead),
+    and BGC0000898:4 (narbomycin.yaml, sha256 1817fca43f98660561bd8629c91a1248ce3ac06336dbadbec56b138cb5888578)
+    omit producer_organisms[0].strain even though their primary reference Xue et al.,
+    PNAS 1998 (PMID:9770448, DOI:10.1073/pnas.95.21.12111) and GenBank deposits AF079138.1
+    and AF079762.1 explicitly identify the producer strain as Streptomyces venezuelae
+    ATCC 15439. Add source-pinned ATCC 15439 qualifications for source_id keys BGC0000094:1,
+    BGC0000898:1, BGC0000898:2, BGC0000898:3, and BGC0000898:4 in curation/mibig_producer_strains.tsv.
   target_ids:
   - CHEBI:32540
   - CHEBI:29630
@@ -920,25 +979,33 @@ findings:
   severity: major
   status: open
   certainty: confirmed
-  title: Cross-species PMID:9770448 citation attached to S. narbonensis BGC0000899:1
-    in desosamine.yaml
-  description: data/natural_products/carbohydrates/desosamine.yaml (naturalproductmech:mibig-bc0da8b0f6,
-    seeded from MIBiG BGC0000899:1) cites PMID:9770448 (Xue et al., PNAS 1998; DOI:10.1073/pnas.95.21.12111)
-    as support for its Streptomyces narbonensis (NCBITaxon:67333) producer assertion
-    and GenBank AF521878.1 locus. However, PMID:9770448 exclusively characterizes
-    Streptomyces venezuelae ATCC 15439 (AF079138.1 / AF079762.1) and does not report
-    S. narbonensis AF521878.1. Route BGC0000899:1 producer_reference to https://mibig.secondarymetabolites.org/repository/BGC0000899.4/
-    and locus_reference to https://www.ncbi.nlm.nih.gov/nuccore/AF521878.1 in curation/mibig_claim_references.tsv.
+  title: Cross-species Xue et al. 1998 citation (PMID:9770448 / DOI:10.1073/PNAS.95.21.12111)
+    attached to S. narbonensis BGC0000899:1 and LOTUS occurrence in desosamine.yaml
+  description: 'data/natural_products/carbohydrates/desosamine.yaml (naturalproductmech:mibig-bc0da8b0f6)
+    carries cross-species citations to Xue et al., PNAS 1998 (PMID:9770448 / DOI:10.1073/PNAS.95.21.12111)
+    on three claims for Streptomyces narbonensis (NCBITaxon:67333): (1) producer_organisms[0].evidence[0].reference
+    and (2) biosynthetic_gene_clusters[0].evidence[0].reference (seeded from MIBiG
+    BGC0000899:1, sha256 82550891ca9f5a9b94c137f6a72ae676b7e02f65eb8044803852b6dba7113922,
+    with notes "MIBiG BGC0000899 entry version 4; citation taken from the entry level"
+    on genome_accession genbank:AF521878.1), and (3) occurrences[0].evidence[0].reference
+    (seeded from LOTUS row ZOYWWAGVGBSJDL-UHFFFAOYSA-N | NCBITaxon:67333 | 10.1073/PNAS.95.21.12111,
+    expected_source_row_sha256 c05b5dfc535431dcdf6070557c3cf941cc6faeed67f285376f144e1e44dd895e).
+    Because Xue et al. (1998) exclusively characterize Streptomyces venezuelae ATCC
+    15439 (AF079138.1 / AF079762.1) and never report S. narbonensis or AF521878.1
+    (deposited in 2002), Stage 5 must both route BGC0000899:1 in curation/mibig_claim_references.tsv
+    and exclude the mis-referenced LOTUS row in curation/lotus_occurrence_exclusions.tsv.'
   target_ids:
   - naturalproductmech:mibig-bc0da8b0f6
   field_paths:
-  - producer_organisms[0].evidence
-  - biosynthetic_gene_clusters[0].evidence
+  - producer_organisms[0].evidence[0].reference
+  - biosynthetic_gene_clusters[0].evidence[0].reference
+  - occurrences[0].evidence[0].reference
   evidence_ids:
   - cohort-owners
   - mibig-inventory
   - pnas-1998
   - genbank-af521878
+  - lotus-inventory
   owner_paths:
   - repository: CultureBotAI/NaturalProductMech
     path: data/raw/mibig_compounds.tsv
@@ -961,6 +1028,12 @@ findings:
   - repository: CultureBotAI/NaturalProductMech
     path: data/natural_products/PATHS.tsv
     role: Locked identifier-to-path filing table
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Pinned LOTUS taxon-structure-reference occurrence assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/lotus_occurrence_exclusions.tsv
+    role: Source-pinned LOTUS occurrence exclusion table
   rule_id: review-checklist:claim-specific-citation-routing
   native_severity: major
   normalization_reason: Cross-species primary reference misattribution between S.
@@ -989,11 +1062,13 @@ findings:
   target_ids:
   - CHEBI:32540
   - naturalproductmech:mibig-bc0da8b0f6
+  - CHEBI:29630
   - CHEBI:29665
   - CHEBI:29656
   - CHEBI:29649
   field_paths:
-  - chemical_structure
+  - chemical_structure.standard_inchi_key
+  - chemical_structure.smiles
   - biosynthetic_gene_clusters[0].link_evidence_basis
   - biosynthetic_gene_clusters[0].locus_evidence_methods
   evidence_ids:
@@ -1030,9 +1105,14 @@ findings:
     documented as a source-limited boundary rather than an immediate data error.
 actions:
 - action_id: qualify-atcc15439-producer-strain
-  description: Add source-pinned ATCC 15439 strain qualification rows for BGC0000094:1
-    and BGC0000898:1..4 (citing DOI:10.1073/pnas.95.21.12111) to curation/mibig_producer_strains.tsv
-    and re-seed the five S. venezuelae records via scripts/seed_from_sources.py.
+  description: Add source-pinned ATCC 15439 strain qualification rows for compound-row
+    keys BGC0000094:1 (4a66615916a0118fa9dcf7c56119cd2b9791512ce06b442c397ecb0f278675c5),
+    BGC0000898:1 (1c3876fb6e15ecdbd0e4724f6af87e536ae9e4acdba5b97d7cf5381641555eae),
+    BGC0000898:2 (224e597f0ea6fd4934bbbe480086fca606e478396c63e45cc1792ae879613923),
+    BGC0000898:3 (002165ca03d959d4ac1717fb17b12a597d30e31490cf647b99a3385aa5b95ead),
+    and BGC0000898:4 (1817fca43f98660561bd8629c91a1248ce3ac06336dbadbec56b138cb5888578)
+    citing DOI:10.1073/pnas.95.21.12111 to curation/mibig_producer_strains.tsv and
+    re-seed the five S. venezuelae records via scripts/seed_from_sources.py.
   finding_ids:
   - F-PIK-DES-001
   target_ids:
@@ -1071,10 +1151,13 @@ actions:
     and narbomycin.yaml.
   - Verify zero regressions across scripts/validate_strict.py and scripts/verify_corpus.py.
 - action_id: route-bgc0000899-claim-references
-  description: Add a source-pinned claim-reference override for BGC0000899:1 in curation/mibig_claim_references.tsv
-    routing producer_reference to https://mibig.secondarymetabolites.org/repository/BGC0000899.4/
+  description: Add a source-pinned claim-reference override for source_id BGC0000899:1
+    (expected_source_row_sha256 82550891ca9f5a9b94c137f6a72ae676b7e02f65eb8044803852b6dba7113922)
+    in curation/mibig_claim_references.tsv routing producer_reference to https://mibig.secondarymetabolites.org/repository/BGC0000899.4/
     and locus_reference/source_reference to https://www.ncbi.nlm.nih.gov/nuccore/AF521878.1,
-    then re-seed desosamine.yaml.
+    add a source-pinned LOTUS occurrence exclusion row (ZOYWWAGVGBSJDL-UHFFFAOYSA-N,
+    NCBITaxon:67333, 10.1073/PNAS.95.21.12111, expected_source_row_sha256 c05b5dfc535431dcdf6070557c3cf941cc6faeed67f285376f144e1e44dd895e)
+    in curation/lotus_occurrence_exclusions.tsv, and re-seed desosamine.yaml.
   finding_ids:
   - F-PIK-DES-002
   target_ids:
@@ -1101,13 +1184,22 @@ actions:
   - repository: CultureBotAI/NaturalProductMech
     path: data/natural_products/PATHS.tsv
     role: Locked identifier-to-path filing table
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Pinned LOTUS taxon-structure-reference occurrence assertions
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/lotus_occurrence_exclusions.tsv
+    role: Source-pinned LOTUS occurrence exclusion table
   generator: scripts/seed_from_sources.py
   acceptance_checks:
   - Verify expected_source_row_sha256 82550891ca9f5a9b94c137f6a72ae676b7e02f65eb8044803852b6dba7113922
     for BGC0000899:1 in curation/mibig_claim_references.tsv.
+  - Verify expected_source_row_sha256 c05b5dfc535431dcdf6070557c3cf941cc6faeed67f285376f144e1e44dd895e
+    for (ZOYWWAGVGBSJDL-UHFFFAOYSA-N, NCBITaxon:67333, 10.1073/PNAS.95.21.12111) in
+    curation/lotus_occurrence_exclusions.tsv.
   - Re-seed desosamine.yaml via scripts/seed_from_sources.py and confirm producer
     and locus claims cite BGC0000899.4 and AF521878.1 with CURATOR_INFERENCE routing
-    provenance.
+    provenance and that the cross-species LOTUS occurrence is excluded.
   - Verify scripts/validate_strict.py and scripts/verify_corpus.py pass with zero
     errors.
 - action_id: preserve-desosamine-tautomer-and-deposit-separation
@@ -1121,6 +1213,7 @@ actions:
   target_ids:
   - CHEBI:32540
   - naturalproductmech:mibig-bc0da8b0f6
+  - CHEBI:29630
   - CHEBI:29665
   - CHEBI:29656
   - CHEBI:29649
@@ -1177,7 +1270,8 @@ limitations:
   TSVs; all proposed curation edits are preserved as open findings for Stage 5 grouped
   remediation.
 - Full-corpus deterministic checks (verify_corpus.py, validate_id_label_correspondence.py,
-  curation_worklist.py --review-records) audited all 3,116 owners and 86 components,
+  curation_worklist.py --review-records, pytest tests/test_graph_components.py) audited
+  all 3,116 owners and 246 standalone causal graph components (3,362 total YAML records),
   while claim-by-claim primary literature verification in this bundle was scoped to
   the 6-record pik/des cohort.
 - GenBank AF521878.1 (BGC0000899) is a direct sequence submission without a dedicated

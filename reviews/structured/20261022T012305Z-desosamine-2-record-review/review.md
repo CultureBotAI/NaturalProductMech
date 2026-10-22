@@ -340,7 +340,8 @@ scope:
   reviewed_target_ids:
   - CHEBI:32540
   exclusions:
-  - target: Remaining 3,115 natural product owner records and 86 causal graph components
+  - target: Remaining 3,115 natural product owner records and 246 standalone causal
+      graph components in the frozen 3,362-file corpus inventory
     reason: Single-record review denominator is strictly 1; sibling pik/des cohort
       records are covered in 20261022T012300Z-pik-des-macrolide-deoxysugar-cohort.
 checks:
@@ -553,8 +554,10 @@ findings:
   target_ids:
   - CHEBI:32540
   field_paths:
-  - chemical_structure
+  - chemical_structure.standard_inchi_key
+  - chemical_structure.smiles
   - biosynthetic_gene_clusters[0].link_evidence_basis
+  - biosynthetic_gene_clusters[0].locus_evidence_methods
   evidence_ids:
   - owner-yaml
   - chebi-32540

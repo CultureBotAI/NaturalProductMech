@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.0.0",
   "run_id": "mech-goal-sequence-20261019",
   "cycle": 1,
   "stage_order": 4,
@@ -10,9 +10,12 @@
     "paths_tsv": "data/natural_products/PATHS.tsv",
     "paths_tsv_sha256": "2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3",
     "owner_records_total": 3116,
-    "causal_graph_components_total": 86,
-    "eligible_records_total": 3202,
-    "reviewed_records_total": 3202,
+    "owner_records_with_inline_causal_graphs": 273,
+    "owner_records_with_causal_graph_refs": 27,
+    "causal_graph_components_total": 246,
+    "causal_graph_components_manifest_sha256": "92ee6b2458a6b9324837fda9f6efb5ed7c968710d0858ab416e34ae745b19bfc",
+    "eligible_records_total": 3362,
+    "reviewed_records_total": 3362,
     "review_status_breakdown": {
       "REVIEWED": 252,
       "SEEDED": 2864
@@ -32,9 +35,29 @@
         "label_mismatch": 0,
         "output_sha256": "c859dad0c7a6023dd517b77fdcb98bb923c85cef6d72bd3ccf600babbb9bc41e"
       },
+      "test_graph_components": {
+        "standalone_components_total": 246,
+        "tests_passed": 40,
+        "tests_failed": 0,
+        "output_sha256": "1addc70b9c898aa0b26f903283dd652e3403a6e0f111121e094a1d46a7c31656"
+      },
       "curation_worklist_review_records": {
-        "total_worklist_items": 8928,
+        "total_worklist_items": 8905,
+        "total_output_lines": 8928,
         "queues_audited": 11,
+        "queues": {
+          "producer-evidence": 2292,
+          "biosynthesis": 1192,
+          "structure-disagreement": 5,
+          "name-disagreement": 67,
+          "unnamed-producer": 39,
+          "shared-structure": 207,
+          "needs-a-name": 18,
+          "occurrence-only": 12,
+          "pathway-ambiguous": 620,
+          "unresolved-taxa": 3329,
+          "stereo-incomplete": 1124
+        },
         "output_sha256": "21ceb24b744ee53c05d07dc655d00221db28f301469a9ded2cf9c3947a13da95"
       }
     }
@@ -45,9 +68,9 @@
       "kind": "category",
       "skill_name": "review-yaml-category",
       "yaml_path": "reviews/structured/20261022T012300Z-pik-des-macrolide-deoxysugar-cohort/review.yaml",
-      "yaml_sha256": "be7836c96dd7ab8591a677e23758c96e417e0b3576e69f087a4a670414a44036",
+      "yaml_sha256": "562f6c3e0ee24be113958d0651be6efadb28340f20c01f384b58b910a7351ccf",
       "markdown_path": "reviews/structured/20261022T012300Z-pik-des-macrolide-deoxysugar-cohort/review.md",
-      "markdown_sha256": "b9a1911537ce4b63715b2406cf1c0051ae821eb513d76f8b1231ed5607dbb135",
+      "markdown_sha256": "1aa8d7bec9cabbb8272d3fdb819cf6c33a13dd380539d83580f0d172b7e9a5a1",
       "target_records_count": 6,
       "targets": [
         {
@@ -56,7 +79,11 @@
           "record_sha256": "054f874a6fb55098958357acfab7ecc78bcb597cfb04cf5437e9d74d29702c4d",
           "mibig_row": "BGC0000899:1",
           "mibig_row_sha256": "82550891ca9f5a9b94c137f6a72ae676b7e02f65eb8044803852b6dba7113922",
-          "verdict": "FAIL"
+          "lotus_row": "ZOYWWAGVGBSJDL-UHFFFAOYSA-N|NCBITaxon:67333|10.1073/PNAS.95.21.12111",
+          "lotus_row_sha256": "c05b5dfc535431dcdf6070557c3cf941cc6faeed67f285376f144e1e44dd895e",
+          "verdict": "needs_curation",
+          "highest_finding_severity": "major",
+          "native_verdict": "SEEDED retained; cross-species BGC0000899:1 and LOTUS citations require routing/exclusion before REVIEWED"
         },
         {
           "record_path": "data/natural_products/carbohydrates/desosamine-2.yaml",
@@ -64,7 +91,9 @@
           "record_sha256": "e9aa2c5f8c764bac920477fda25577f8352012d088382090ec452c9d747c2f26",
           "mibig_row": "BGC0000898:1",
           "mibig_row_sha256": "1c3876fb6e15ecdbd0e4724f6af87e536ae9e4acdba5b97d7cf5381641555eae",
-          "verdict": "NEEDS_CURATION"
+          "verdict": "needs_curation",
+          "highest_finding_severity": "major",
+          "native_verdict": "SEEDED retained; ATCC 15439 producer strain qualification queued for Stage 5"
         },
         {
           "record_path": "data/natural_products/polyketides/methymycin.yaml",
@@ -72,7 +101,9 @@
           "record_sha256": "7c19ea9d7cedee074008cf7bed76bdf2f76abf41d8a659507778b26948b416ee",
           "mibig_row": "BGC0000094:1",
           "mibig_row_sha256": "4a66615916a0118fa9dcf7c56119cd2b9791512ce06b442c397ecb0f278675c5",
-          "verdict": "NEEDS_CURATION"
+          "verdict": "needs_curation",
+          "highest_finding_severity": "major",
+          "native_verdict": "SEEDED retained; ATCC 15439 producer strain qualification queued for Stage 5"
         },
         {
           "record_path": "data/natural_products/polyketides/pikromycin.yaml",
@@ -80,7 +111,9 @@
           "record_sha256": "f64b4aaadd9a388a8dc4066f2fe15f052ad6a82bf4fc84884907db82d6d940b1",
           "mibig_row": "BGC0000898:2",
           "mibig_row_sha256": "224e597f0ea6fd4934bbbe480086fca606e478396c63e45cc1792ae879613923",
-          "verdict": "NEEDS_CURATION"
+          "verdict": "needs_curation",
+          "highest_finding_severity": "major",
+          "native_verdict": "SEEDED retained; ATCC 15439 producer strain qualification queued for Stage 5"
         },
         {
           "record_path": "data/natural_products/polyketides/neomethymycin.yaml",
@@ -88,7 +121,9 @@
           "record_sha256": "fc676329e89ea3bbd693300d380a8c11a231e476c51628f50bd9bb8b382ea1ef",
           "mibig_row": "BGC0000898:3",
           "mibig_row_sha256": "002165ca03d959d4ac1717fb17b12a597d30e31490cf647b99a3385aa5b95ead",
-          "verdict": "NEEDS_CURATION"
+          "verdict": "needs_curation",
+          "highest_finding_severity": "major",
+          "native_verdict": "SEEDED retained; ATCC 15439 producer strain qualification queued for Stage 5"
         },
         {
           "record_path": "data/natural_products/polyketides/narbomycin.yaml",
@@ -96,7 +131,9 @@
           "record_sha256": "b112dcc3d151dca470cae5bf9f4528892052edae5707ccc2e3c5a88d224f84de",
           "mibig_row": "BGC0000898:4",
           "mibig_row_sha256": "1817fca43f98660561bd8629c91a1248ce3ac06336dbadbec56b138cb5888578",
-          "verdict": "NEEDS_CURATION"
+          "verdict": "needs_curation",
+          "highest_finding_severity": "major",
+          "native_verdict": "SEEDED retained; ATCC 15439 producer strain qualification queued for Stage 5"
         }
       ]
     },
@@ -105,9 +142,9 @@
       "kind": "record",
       "skill_name": "review-yaml-record",
       "yaml_path": "reviews/structured/20261022T012305Z-desosamine-2-record-review/review.yaml",
-      "yaml_sha256": "86943df0f80cd043fefeb5a861d2932c14cefe00c5bca8e33dfd3326ead2c8b3",
+      "yaml_sha256": "612c74e4718d57a0502d30c78a98d2d0e620efa533f8a956dfde62279e695a08",
       "markdown_path": "reviews/structured/20261022T012305Z-desosamine-2-record-review/review.md",
-      "markdown_sha256": "101d42e0bb280bce645393c0643899d41cf8fd4f20b4c285cf273bfdddbc97fe",
+      "markdown_sha256": "9232a1773c3ce38363202e86fa3ca645cd91fea7b9886ad22edfa50dc591d386",
       "target_records_count": 1,
       "targets": [
         {
@@ -116,7 +153,9 @@
           "record_sha256": "e9aa2c5f8c764bac920477fda25577f8352012d088382090ec452c9d747c2f26",
           "mibig_row": "BGC0000898:1",
           "mibig_row_sha256": "1c3876fb6e15ecdbd0e4724f6af87e536ae9e4acdba5b97d7cf5381641555eae",
-          "verdict": "NEEDS_CURATION"
+          "verdict": "needs_curation",
+          "highest_finding_severity": "major",
+          "native_verdict": "SEEDED retained; SPLIT_SHARED_WITH_CHEBI grounding verified; ATCC 15439 producer strain qualification queued for Stage 5"
         }
       ]
     }
