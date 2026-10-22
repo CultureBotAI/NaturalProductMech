@@ -24,7 +24,10 @@ def inputs():
                             if r["mibig_accession"] in ("BGC0000066", "BGC0000067")],
         "lotus_occurrences": [r for r in seed.read_tsv(ROOT / "data/raw/lotus_occurrences.tsv")
                               if r["standard_inchi_key"] == KEY],
-        "lotus_occurrence_exclusions": seed.read_tsv(ROOT / "curation/lotus_occurrence_exclusions.tsv"),
+        "lotus_occurrence_exclusions": [
+            r for r in seed.read_tsv(ROOT / "curation/lotus_occurrence_exclusions.tsv")
+            if r["standard_inchi_key"] == KEY
+        ],
         "taxon_groups": seed.read_tsv(ROOT / "data/raw/taxon_groups.tsv"),
     }
 
@@ -131,3 +134,29 @@ def test_loader_does_not_mutate_sources_or_decisions(inputs):
     assert list(loaded) == [lotus_key(inputs["lotus_occurrences"][0])]
     next(iter(loaded.values()))["rationale"] = "different"
     assert inputs == before
+
+
+def test_committed_desosamine_narbonensis_exclusion_removes_sole_occurrence():
+    des_key = "ZOYWWAGVGBSJDL-UHFFFAOYSA-N"
+    subset = {
+        "mibig_compounds": [r for r in seed.read_tsv(ROOT / "data/raw/mibig_compounds.tsv")
+                            if r["mibig_accession"] == "BGC0000899"],
+        "lotus_occurrences": [r for r in seed.read_tsv(ROOT / "data/raw/lotus_occurrences.tsv")
+                              if r["standard_inchi_key"] == des_key],
+        "lotus_occurrence_exclusions": [
+            r for r in seed.read_tsv(ROOT / "curation/lotus_occurrence_exclusions.tsv")
+            if r["standard_inchi_key"] == des_key
+        ],
+        "taxon_groups": seed.read_tsv(ROOT / "data/raw/taxon_groups.tsv"),
+    }
+    before, = seed.build_records({k: v for k, v in subset.items() if k != "lotus_occurrence_exclusions"})
+    after, = seed.build_records(subset)
+    assert before["occurrence_taxon_groups"] == ["ACTINOBACTERIAL"]
+    assert len(before["occurrences"]) == 1
+    assert "occurrences" not in after and "occurrence_taxon_groups" not in after
+    discussion, = after["discussions"]
+    digest = row_digest(subset["lotus_occurrences"][0])
+    assert discussion["discussion_id"] == f"source-lotus-exclusion-{digest}"
+    assert discussion["status"] == "RESOLVED"
+    assert digest in discussion["resolution_note"]
+

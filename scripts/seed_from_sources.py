@@ -1116,7 +1116,10 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
                         producers[-1], row, reference_correction, field="producer_reference")
                 qualification = producer_strains.get(f"{accession}:{row['compound_index']}")
                 if qualification:
-                    if row.get("structure_correction_note"):
+                    if row.get("structure_correction_note") and (
+                        not row.get("structure_source_id")
+                        or row["structure_source_id"] not in qualification["rationale"]
+                    ):
                         raise ValueError(
                             f"{accession}: strain context needs review after structure correction")
                     qualify_producer(producers[-1], qualification)
