@@ -41,6 +41,14 @@ tasks:
   disposition: >-
     Resolved in cycle 1 stage 6 (#999): added canonicalize_top_level_keys in write_validated.py with unit tests and
     documented the single-catalytic-subunit PathwayStep + PROTEIN_COMPLEX causal_graphs convention in docs/CURATION.md.
+- task_id: naturalproductmech-infra-0002
+  summary: Support atomic multi-row REPLACE_SHARED_WITH_CHEBI structure replacement in structure_corrections.py
+  status: open
+  issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/1015
+  disposition: >-
+    Open for Cycle 2 Stage 6 (#1015): add group-validated REPLACE_SHARED_WITH_CHEBI action in
+    src/naturalproductmech/curate/structure_corrections.py so multi-row shared salt or stereo-incomplete MIBiG
+    groups denoting the same compound can be replaced atomically without splitting or stranding rows.
 ```
 <!-- mech-infra-tasks:end -->
 
@@ -76,4 +84,28 @@ tasks:
 - **Resolution & Disposition**:
   1. Implemented `canonicalize_top_level_keys(doc)` in `src/naturalproductmech/validation/write_validated.py` and wired it into `emit_natural_product_yaml` / `write_validated_natural_product`. It enforces exact top-level key parity with `scripts/seed_from_sources.py` across all 3,116 `NaturalProductRecord` files and component `CausalGraphDocument` files while preserving existing value object references (satisfying `tests/test_seed_skeleton.py::test_reseed_preserves_evidence_aliases_across_curator_sections`). Added 4 unit tests in `tests/test_write_validated.py`.
   2. Evaluated `PathwayStep` multi-component enzyme modeling: retained single-valued `PathwayStep.enzyme_id` / `enzyme_label` for the catalytic subunit and documented the canonical `PathwayStep` + `causal_graphs` (`PROTEIN_COMPLEX` with subunit edges) pattern in `docs/CURATION.md`.
+
+### `naturalproductmech-infra-0002` — Support atomic multi-row `REPLACE_SHARED_WITH_CHEBI` structure replacement in `structure_corrections.py`
+
+- **Origin**: `mech-goal-sequence-20261019`, cycle `2`, stage `1` (`add_records`, `goal-5690`)
+- **Status**: `open` (tracked in https://github.com/CultureBotAI/NaturalProductMech/issues/1015)
+- **Priority**: P2
+- **Dependencies**: None
+- **Evidence paths**:
+  - `src/naturalproductmech/curate/structure_corrections.py` (`ALLOWED_ACTIONS`, `apply_structure_corrections`)
+  - `curation/mibig_structure_corrections.tsv`
+  - `tests/test_structure_corrections.py`
+  - `docs/CURATION.md`
+  - `data/raw/mibig_compounds.tsv` (`BGC0000404:1`, `BGC0000405:3`, `BGC0002095:2`, `BGC0002134:1`, `BGC0000076:1`, `BGC0000077:1`, `BGC0000955:1`, `BGC0001415:1`)
+  - `data/raw/chebi_structures.tsv` (`CHEBI:18208`, `CHEBI:51765`, `CHEBI:6426`, `CHEBI:83275`, `CHEBI:157683`)
+  - `data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml`
+  - `data/natural_products/amino_acids_and_peptides/leupeptin-a.yaml`
+- **Observation**:
+  1. During the Cycle 2 Stage 1 bounded-frontier audit of all 230 shared-InChIKey groups in `data/raw/mibig_compounds.tsv` against 3-star ChEBI structures in `data/raw/chebi_structures.tsv`, we found that `src/naturalproductmech/curate/structure_corrections.py` supports only two actions:
+     - `REPLACE_WITH_CHEBI`, which requires `len(by_inchi_key[old_key]) == 1` (single-row upstream InChIKey), and
+     - `SPLIT_SHARED_WITH_CHEBI`, which requires `len(by_inchi_key[old_key]) >= 2` and removes one row at a time from `by_inchi_key[old_key]`, requiring at least one row to remain on the upstream InChIKey.
+  2. When multiple MIBiG rows share the same upstream salt, stereo-incomplete, or wrong-connectivity InChIKey for the **same** natural product and a 3-star ChEBI structure exists — such as `BGC0000404:1` (`penicillin`) + `BGC0000405:3` (`benzylpenicillin`) sharing the sodium salt `FCPVYOBCFFNJFS-LQDWTQKMSA-M` (`CHEBI:51765`) instead of the neutral parent `CHEBI:18208`, or `BGC0002095:2` (`leupeptin Ac`) + `BGC0002134:1` (`leupeptin A`) sharing stereo-incomplete `GDBQQVLCIARPGH-BSOSBYQFSA-N` instead of 3-star `CHEBI:6426` — splitting only one row via `SPLIT_SHARED_WITH_CHEBI` would violate the non-duplication rule by creating duplicate records for a single compound, whereas applying `REPLACE_WITH_CHEBI` or `SPLIT_SHARED_WITH_CHEBI` across all rows in the group raises `StructureCorrectionError`.
+- **Desired outcome**:
+  1. Add a group-validated `REPLACE_SHARED_WITH_CHEBI` action in `src/naturalproductmech/curate/structure_corrections.py` (with unit tests in `tests/test_structure_corrections.py` and documentation in `docs/CURATION.md`) that verifies all `mibig_compounds.tsv` rows sharing the upstream `standard_inchi_key` are declared in `curation/mibig_structure_corrections.tsv` with the same `target_chebi_id` and replaces the entire shared group atomically without splitting or stranding a row.
+
 
