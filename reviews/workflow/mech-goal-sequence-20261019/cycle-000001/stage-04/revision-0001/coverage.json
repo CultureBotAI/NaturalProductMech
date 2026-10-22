@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "run_id": "mech-goal-sequence-20261019",
+  "cycle": 1,
+  "stage_order": 4,
+  "stage_id": "record_review",
+  "revision": 1,
+  "git_commit": "f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf",
+  "frozen_inventory": {
+    "paths_tsv": "data/natural_products/PATHS.tsv",
+    "paths_tsv_sha256": "2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3",
+    "owner_records_total": 3116,
+    "causal_graph_components_total": 86,
+    "eligible_records_total": 3202,
+    "reviewed_records_total": 3202,
+    "review_status_breakdown": {
+      "REVIEWED": 252,
+      "SEEDED": 2864
+    },
+    "corpus_gates": {
+      "verify_corpus": {
+        "records_verified": 3116,
+        "errors": 0,
+        "warnings": 0,
+        "output_sha256": "c9bcf7add9c5022125581df2e6b486735cd23803e49b73a4a2d6a60b62eebc5e"
+      },
+      "validate_id_label_correspondence": {
+        "canonical_matches": 13449,
+        "synonym_matches": 646,
+        "documented_exceptions": 35,
+        "id_not_found": 0,
+        "label_mismatch": 0,
+        "output_sha256": "c859dad0c7a6023dd517b77fdcb98bb923c85cef6d72bd3ccf600babbb9bc41e"
+      },
+      "curation_worklist_review_records": {
+        "total_worklist_items": 8928,
+        "queues_audited": 11,
+        "output_sha256": "21ceb24b744ee53c05d07dc655d00221db28f301469a9ded2cf9c3947a13da95"
+      }
+    }
+  },
+  "deep_review_bundles": [
+    {
+      "review_id": "20261022T012300Z-pik-des-macrolide-deoxysugar-cohort",
+      "kind": "category",
+      "skill_name": "review-yaml-category",
+      "yaml_path": "reviews/structured/20261022T012300Z-pik-des-macrolide-deoxysugar-cohort/review.yaml",
+      "yaml_sha256": "be7836c96dd7ab8591a677e23758c96e417e0b3576e69f087a4a670414a44036",
+      "markdown_path": "reviews/structured/20261022T012300Z-pik-des-macrolide-deoxysugar-cohort/review.md",
+      "markdown_sha256": "b9a1911537ce4b63715b2406cf1c0051ae821eb513d76f8b1231ed5607dbb135",
+      "target_records_count": 6,
+      "targets": [
+        {
+          "record_path": "data/natural_products/carbohydrates/desosamine.yaml",
+          "record_id": "naturalproductmech:mibig-bc0da8b0f6",
+          "record_sha256": "054f874a6fb55098958357acfab7ecc78bcb597cfb04cf5437e9d74d29702c4d",
+          "mibig_row": "BGC0000899:1",
+          "mibig_row_sha256": "82550891ca9f5a9b94c137f6a72ae676b7e02f65eb8044803852b6dba7113922",
+          "verdict": "FAIL"
+        },
+        {
+          "record_path": "data/natural_products/carbohydrates/desosamine-2.yaml",
+          "record_id": "CHEBI:32540",
+          "record_sha256": "e9aa2c5f8c764bac920477fda25577f8352012d088382090ec452c9d747c2f26",
+          "mibig_row": "BGC0000898:1",
+          "mibig_row_sha256": "1c3876fb6e15ecdbd0e4724f6af87e536ae9e4acdba5b97d7cf5381641555eae",
+          "verdict": "NEEDS_CURATION"
+        },
+        {
+          "record_path": "data/natural_products/polyketides/methymycin.yaml",
+          "record_id": "CHEBI:29630",
+          "record_sha256": "7c19ea9d7cedee074008cf7bed76bdf2f76abf41d8a659507778b26948b416ee",
+          "mibig_row": "BGC0000094:1",
+          "mibig_row_sha256": "4a66615916a0118fa9dcf7c56119cd2b9791512ce06b442c397ecb0f278675c5",
+          "verdict": "NEEDS_CURATION"
+        },
+        {
+          "record_path": "data/natural_products/polyketides/pikromycin.yaml",
+          "record_id": "CHEBI:29665",
+          "record_sha256": "f64b4aaadd9a388a8dc4066f2fe15f052ad6a82bf4fc84884907db82d6d940b1",
+          "mibig_row": "BGC0000898:2",
+          "mibig_row_sha256": "224e597f0ea6fd4934bbbe480086fca606e478396c63e45cc1792ae879613923",
+          "verdict": "NEEDS_CURATION"
+        },
+        {
+          "record_path": "data/natural_products/polyketides/neomethymycin.yaml",
+          "record_id": "CHEBI:29656",
+          "record_sha256": "fc676329e89ea3bbd693300d380a8c11a231e476c51628f50bd9bb8b382ea1ef",
+          "mibig_row": "BGC0000898:3",
+          "mibig_row_sha256": "002165ca03d959d4ac1717fb17b12a597d30e31490cf647b99a3385aa5b95ead",
+          "verdict": "NEEDS_CURATION"
+        },
+        {
+          "record_path": "data/natural_products/polyketides/narbomycin.yaml",
+          "record_id": "CHEBI:29649",
+          "record_sha256": "b112dcc3d151dca470cae5bf9f4528892052edae5707ccc2e3c5a88d224f84de",
+          "mibig_row": "BGC0000898:4",
+          "mibig_row_sha256": "1817fca43f98660561bd8629c91a1248ce3ac06336dbadbec56b138cb5888578",
+          "verdict": "NEEDS_CURATION"
+        }
+      ]
+    },
+    {
+      "review_id": "20261022T012305Z-desosamine-2-record-review",
+      "kind": "record",
+      "skill_name": "review-yaml-record",
+      "yaml_path": "reviews/structured/20261022T012305Z-desosamine-2-record-review/review.yaml",
+      "yaml_sha256": "86943df0f80cd043fefeb5a861d2932c14cefe00c5bca8e33dfd3326ead2c8b3",
+      "markdown_path": "reviews/structured/20261022T012305Z-desosamine-2-record-review/review.md",
+      "markdown_sha256": "101d42e0bb280bce645393c0643899d41cf8fd4f20b4c285cf273bfdddbc97fe",
+      "target_records_count": 1,
+      "targets": [
+        {
+          "record_path": "data/natural_products/carbohydrates/desosamine-2.yaml",
+          "record_id": "CHEBI:32540",
+          "record_sha256": "e9aa2c5f8c764bac920477fda25577f8352012d088382090ec452c9d747c2f26",
+          "mibig_row": "BGC0000898:1",
+          "mibig_row_sha256": "1c3876fb6e15ecdbd0e4724f6af87e536ae9e4acdba5b97d7cf5381641555eae",
+          "verdict": "NEEDS_CURATION"
+        }
+      ]
+    }
+  ],
+  "open_findings_summary": {
+    "total_open_findings": 3,
+    "carry_forward_ids": [
+      "F-PIK-DES-001",
+      "F-PIK-DES-002",
+      "F-PIK-DES-003"
+    ]
+  }
+}

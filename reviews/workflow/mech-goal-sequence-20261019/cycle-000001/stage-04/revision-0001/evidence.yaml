@@ -1,0 +1,66 @@
+schema_version: 1.0.0
+repository_key: naturalproductmech
+github_repository: CultureBotAI/NaturalProductMech
+run_id: mech-goal-sequence-20261019
+cycle: 1
+stage: 4
+revision: 1
+outcome: completed
+summary: >-
+  Completed Stage 4 (record_review) for run mech-goal-sequence-20261019, cycle 1 at frozen baseline
+  f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf across all 3,202 eligible records (3,116 natural product owner YAML records
+  and 86 linked causal graph components). Persisted two validated native structured review bundles
+  (20261022T012300Z-pik-des-macrolide-deoxysugar-cohort [be7836c96dd7ab8591a677e23758c96e417e0b3576e69f087a4a670414a44036]
+  and 20261022T012305Z-desosamine-2-record-review [86943df0f80cd043fefeb5a861d2932c14cefe00c5bca8e33dfd3326ead2c8b3])
+  plus the hash-bound parent workflow review report, machine-readable findings, and coverage ledger, preserving three
+  open findings (F-PIK-DES-001, F-PIK-DES-002, F-PIK-DES-003) for Stage 5 grouped remediation.
+source_revision: f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+scope_frozen_at: '2026-10-22T01:12:00Z'
+artifacts:
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-04/revision-0001/review_report.md
+    sha256: 71b964005f5caad7200d119756fa95dddbb0a7aefd75fa3fb9ecd35616f67038
+    kind: review_report
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-04/revision-0001/review_findings.yaml
+    sha256: 6561977608d31fe8232c107d46f8863ee36649fda193d8ba377fb3e06ffa6eb2
+    kind: review_findings
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-04/revision-0001/coverage.json
+    sha256: a608592795a9b85859aa66599c61dc3d5c245001f56c6bbda2ba2fee87d3f241
+    kind: supporting
+findings:
+  - finding_id: F-PIK-DES-001
+    status: open
+    summary: >-
+      Missing ATCC 15439 producer strain qualification on five Streptomyces venezuelae (NCBITaxon:54571) records
+      (desosamine-2.yaml, methymycin.yaml, pikromycin.yaml, neomethymycin.yaml, narbomycin.yaml) seeded from BGC0000094:1
+      (AF079138.1) and BGC0000898:1..4 (AF079762.1), directly supported by Xue et al., PNAS 1998 (PMID:9770448,
+      DOI:10.1073/pnas.95.21.12111).
+    disposition: >-
+      Preserve as open for Stage 5 (resolve_review_findings) remediation via curation/mibig_producer_strains.tsv and
+      scripts/seed_from_sources.py.
+  - finding_id: F-PIK-DES-002
+    status: open
+    summary: >-
+      Cross-species PMID:9770448 citation attached to Streptomyces narbonensis (NCBITaxon:67333) and GenBank AF521878.1
+      (BGC0000899:1) in data/natural_products/carbohydrates/desosamine.yaml; PMID:9770448 characterizes only Streptomyces
+      venezuelae ATCC 15439 (AF079138.1 / AF079762.1).
+    disposition: >-
+      Preserve as open for Stage 5 (resolve_review_findings) remediation via curation/mibig_claim_references.tsv routing
+      producer_reference to https://mibig.secondarymetabolites.org/repository/BGC0000899.4/ and locus_reference to
+      https://www.ncbi.nlm.nih.gov/nuccore/AF521878.1.
+  - finding_id: F-PIK-DES-003
+    status: open
+    summary: >-
+      Upstream tautomeric/stereochemical separation between desosamine.yaml (ZOYWWAGVGBSJDL-UHFFFAOYSA-N, stereo-incomplete
+      cyclic hexopyranose on BGC0000899:1) and desosamine-2.yaml (CHEBI:32540, VTJCSBJRQLZNHE-CSMHCCOUSA-N, 3-star ChEBI
+      open-chain D-desosamine aldehyde on BGC0000898:1), plus MIBiG 4.0 deposit split of the S. venezuelae ATCC 15439
+      pik/des cluster across BGC0000094 (AF079138.1) and BGC0000898 (AF079762.1, CLUSTER_UNSTATED).
+    disposition: >-
+      Preserve as open for Stage 5 (resolve_review_findings) boundary disposition; retain separate identity groups until
+      ChEBI or MIBiG provides a 3-star stereochemically defined cyclic D-desosaminopyranose entry or unifies tautomer
+      identity and cluster deposits.
+groups: []
+carry_forward_ids:
+  - F-PIK-DES-001
+  - F-PIK-DES-002
+  - F-PIK-DES-003
+infra_tasks: []

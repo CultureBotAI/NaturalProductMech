@@ -1,0 +1,139 @@
+schema_version: '1.0'
+run_id: mech-goal-sequence-20261019
+cycle: 1
+stage_order: 4
+stage_id: record_review
+revision: 1
+git_commit: f7f524c4ef03b54f78f24ad4cb5ac7db2dc066bf
+native_review_ids:
+  - 20261022T012300Z-pik-des-macrolide-deoxysugar-cohort
+  - 20261022T012305Z-desosamine-2-record-review
+native_review_bundles:
+  - review_id: 20261022T012300Z-pik-des-macrolide-deoxysugar-cohort
+    yaml_path: reviews/structured/20261022T012300Z-pik-des-macrolide-deoxysugar-cohort/review.yaml
+    yaml_sha256: be7836c96dd7ab8591a677e23758c96e417e0b3576e69f087a4a670414a44036
+    markdown_path: reviews/structured/20261022T012300Z-pik-des-macrolide-deoxysugar-cohort/review.md
+    markdown_sha256: b9a1911537ce4b63715b2406cf1c0051ae821eb513d76f8b1231ed5607dbb135
+  - review_id: 20261022T012305Z-desosamine-2-record-review
+    yaml_path: reviews/structured/20261022T012305Z-desosamine-2-record-review/review.yaml
+    yaml_sha256: 86943df0f80cd043fefeb5a861d2932c14cefe00c5bca8e33dfd3326ead2c8b3
+    markdown_path: reviews/structured/20261022T012305Z-desosamine-2-record-review/review.md
+    markdown_sha256: 101d42e0bb280bce645393c0643899d41cf8fd4f20b4c285cf273bfdddbc97fe
+findings:
+  - id: F-PIK-DES-001
+    title: Missing ATCC 15439 producer strain qualification on five Streptomyces venezuelae pik/des records (BGC0000094 and BGC0000898)
+    severity: high
+    category: completeness
+    status: open
+    records:
+      - data/natural_products/carbohydrates/desosamine-2.yaml
+      - data/natural_products/polyketides/methymycin.yaml
+      - data/natural_products/polyketides/pikromycin.yaml
+      - data/natural_products/polyketides/neomethymycin.yaml
+      - data/natural_products/polyketides/narbomycin.yaml
+    field_paths:
+      - 'producers[0].strain'
+      - 'biosynthetic_loci[0].strain'
+    source_rows:
+      - source: mibig_4.0
+        row_id: 'BGC0000094:1'
+        row_sha256: 4a66615916a0118fa9dcf7c56119cd2b9791512ce06b442c397ecb0f278675c5
+      - source: mibig_4.0
+        row_id: 'BGC0000898:1'
+        row_sha256: 1c3876fb6e15ecdbd0e4724f6af87e536ae9e4acdba5b97d7cf5381641555eae
+      - source: mibig_4.0
+        row_id: 'BGC0000898:2'
+        row_sha256: 224e597f0ea6fd4934bbbe480086fca606e478396c63e45cc1792ae879613923
+      - source: mibig_4.0
+        row_id: 'BGC0000898:3'
+        row_sha256: 002165ca03d959d4ac1717fb17b12a597d30e31490cf647b99a3385aa5b95ead
+      - source: mibig_4.0
+        row_id: 'BGC0000898:4'
+        row_sha256: 1817fca43f98660561bd8629c91a1248ce3ac06336dbadbec56b138cb5888578
+    evidence_refs:
+      - PMID:9770448
+      - DOI:10.1073/pnas.95.21.12111
+      - https://www.ncbi.nlm.nih.gov/nuccore/AF079138.1
+      - https://www.ncbi.nlm.nih.gov/nuccore/AF079762.1
+    description: >-
+      All five Streptomyces venezuelae (NCBITaxon:54571) records seeded from BGC0000094:1 (AF079138.1) and BGC0000898:1..4
+      (AF079762.1) omit producers[0].strain and biosynthetic_loci[0].strain because MIBiG 4.0 reports species-level
+      organism_name='Streptomyces venezuelae'. Both GenBank deposits (AF079138.1 and AF079762.1) and Xue et al. (PNAS 1998,
+      PMID:9770448) explicitly identify the sequenced producer strain as Streptomyces venezuelae ATCC 15439.
+    proposed_remediation: >-
+      Add BGC0000094 and BGC0000898 rows to curation/mibig_producer_strains.tsv with organism_taxon_id=NCBITaxon:54571,
+      strain='ATCC 15439', and reference=PMID:9770448, then re-seed in Stage 5 (resolve_review_findings) so all five
+      Streptomyces venezuelae records carry strain='ATCC 15439' on producers[0] and biosynthetic_loci[0].
+  - id: F-PIK-DES-002
+    title: Cross-species PMID:9770448 citation attached to Streptomyces narbonensis and AF521878.1 on BGC0000899 (desosamine.yaml)
+    severity: medium
+    category: provenance
+    status: open
+    records:
+      - data/natural_products/carbohydrates/desosamine.yaml
+    field_paths:
+      - 'producers[0].evidence[0].reference'
+      - 'biosynthetic_loci[0].evidence[0].reference'
+    source_rows:
+      - source: mibig_4.0
+        row_id: 'BGC0000899:1'
+        row_sha256: 82550891ca9f5a9b94c137f6a72ae676b7e02f65eb8044803852b6dba7113922
+    evidence_refs:
+      - PMID:9770448
+      - https://mibig.secondarymetabolites.org/repository/BGC0000899.4/
+      - https://www.ncbi.nlm.nih.gov/nuccore/AF521878.1
+    description: >-
+      In data/natural_products/carbohydrates/desosamine.yaml (naturalproductmech:mibig-bc0da8b0f6, seeded from BGC0000899:1),
+      producers[0].evidence[0].reference and biosynthetic_loci[0].evidence[0].reference cite PMID:9770448 (Xue et al., PNAS 1998)
+      with supporting_text claiming that MIBiG BGC0000899 (version 4.0) links Desosamine to producer taxon Streptomyces narbonensis
+      and locus AF521878.1 (1..12895) via PMID:9770448. However, PMID:9770448 characterizes only Streptomyces venezuelae ATCC 15439
+      (AF079138.1 / AF079762.1) and never sequences Streptomyces narbonensis or GenBank AF521878.1 (deposited in 2002, 4 years after
+      PMID:9770448).
+    proposed_remediation: >-
+      Add BGC0000899 to curation/mibig_claim_references.tsv routing producer_reference to
+      https://mibig.secondarymetabolites.org/repository/BGC0000899.4/ and locus_reference to
+      https://www.ncbi.nlm.nih.gov/nuccore/AF521878.1 with rationale explaining that PMID:9770448 is a cross-species
+      Streptomyces venezuelae reference, then re-seed in Stage 5 (resolve_review_findings).
+  - id: F-PIK-DES-003
+    title: Upstream stereo-incomplete cyclic tautomer on BGC0000899:1 (desosamine.yaml) and unmerged BGC0000094/BGC0000898 cluster split
+    severity: low
+    category: representation
+    status: open
+    records:
+      - data/natural_products/carbohydrates/desosamine.yaml
+      - data/natural_products/carbohydrates/desosamine-2.yaml
+      - data/natural_products/polyketides/methymycin.yaml
+      - data/natural_products/polyketides/pikromycin.yaml
+      - data/natural_products/polyketides/neomethymycin.yaml
+      - data/natural_products/polyketides/narbomycin.yaml
+    field_paths:
+      - inchikey
+      - smiles
+      - 'biosynthetic_loci[0].completeness'
+    source_rows:
+      - source: mibig_4.0
+        row_id: 'BGC0000899:1'
+        row_sha256: 82550891ca9f5a9b94c137f6a72ae676b7e02f65eb8044803852b6dba7113922
+      - source: mibig_4.0
+        row_id: 'BGC0000898:1'
+        row_sha256: 1c3876fb6e15ecdbd0e4724f6af87e536ae9e4acdba5b97d7cf5381641555eae
+      - source: mibig_4.0
+        row_id: 'BGC0000094:1'
+        row_sha256: 4a66615916a0118fa9dcf7c56119cd2b9791512ce06b442c397ecb0f278675c5
+    evidence_refs:
+      - PMID:9770448
+      - https://mibig.secondarymetabolites.org/repository/BGC0000094.4/
+      - https://mibig.secondarymetabolites.org/repository/BGC0000898.4/
+      - https://mibig.secondarymetabolites.org/repository/BGC0000899.4/
+    description: >-
+      1) BGC0000899:1 supplies a flat cyclic hexopyranose SMILES without stereocenters (CC1CC(C(C(O1)O)O)N(C)C,
+      ZOYWWAGVGBSJDL-UHFFFAOYSA-N), whereas ChEBI's 3-star D-desosamine entry (CHEBI:32540, VTJCSBJRQLZNHE-CSMHCCOUSA-N,
+      used by BGC0000898:1 -> desosamine-2.yaml) encodes the stereochemically defined open-chain aldehyde tautomer
+      (2R,3S,5R)-3-(dimethylamino)-2,5-dihydroxyhexanal. Because standard InChIKey separates cyclic hemiacetal and open-chain
+      aldehyde tautomers and ChEBI lacks a 3-star cyclic beta/alpha-D-desosaminopyranose entry, desosamine.yaml and
+      desosamine-2.yaml remain distinct identity groups. 2) MIBiG 4.0 splits the Streptomyces venezuelae ATCC 15439 pik/des
+      cluster across BGC0000094 (AF079138.1, 1..60403) and BGC0000898 (AF079762.1, no coordinates, CLUSTER_UNSTATED).
+    proposed_remediation: >-
+      Preserve the two distinct identity groups until ChEBI or MIBiG provides a 3-star stereochemically defined cyclic
+      D-desosamine entry or unifies tautomer identity, and track the BGC0000094/BGC0000898 deposit split as a documented
+      source-level limitation in Stage 5.
