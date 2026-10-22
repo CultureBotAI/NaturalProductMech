@@ -1,0 +1,44 @@
+schema_version: 1.0.0
+repository_key: naturalproductmech
+github_repository: CultureBotAI/NaturalProductMech
+run_id: mech-goal-sequence-20261019
+cycle: 1
+stage: 6
+revision: 1
+outcome: completed
+summary: >-
+  Froze INFRA_TASKS.md at 2026-10-22T04:52:54Z (SHA-256 72912d45e04c287bdd1dd1324b4a047fcb8950b60de781f8b16197ce79552a40),
+  created a dependency-aware implementation plan for naturalproductmech-infra-0001 (#999), implemented
+  canonicalize_top_level_keys in src/naturalproductmech/validation/write_validated.py with unit tests in
+  tests/test_write_validated.py, documented the PathwayStep catalytic-subunit + causal_graphs PROTEIN_COMPLEX
+  convention in docs/CURATION.md, and verified byte-identical emission across all 3,116 records and 246 graph
+  components.
+source_revision: 0c3046c72a70a53898c94e403bf4daa7f1e25f1a
+scope_frozen_at: '2026-10-22T04:52:54Z'
+artifacts:
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/infra_snapshot.md
+    sha256: 72912d45e04c287bdd1dd1324b4a047fcb8950b60de781f8b16197ce79552a40
+    kind: infra_snapshot
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/implementation_plan.md
+    sha256: baa241042ae1229c6b293da1bc6301ab8f897d8dcd5e20b432957920fe2aaf28
+    kind: implementation_plan
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/validation.md
+    sha256: 9bf6fbc33cf2a8c9055aa52f720acd24364e78e0bba8851a2db0f10b03d0055c
+    kind: validation
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/coverage.json
+    sha256: 4f3248606f0ccae157f0b3b0b04cefefae9df3d9a7eb01060f05ef5e7ed54ef7
+    kind: supporting
+findings: []
+groups: []
+infra_tasks:
+  - task_id: naturalproductmech-infra-0001
+    summary: Canonicalize curator-owned top-level key ordering in write_validated_natural_product and evaluate multi-component enzyme support in PathwayStep
+    status: resolved
+    issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/999
+    resolution_evidence:
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/implementation_plan.md
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/validation.md
+    disposition: >-
+      Resolved in cycle 1 stage 6 (#999): added canonicalize_top_level_keys in write_validated.py with unit tests and
+      documented the single-catalytic-subunit PathwayStep + PROTEIN_COMPLEX causal_graphs convention in docs/CURATION.md.
+carry_forward_ids: []
