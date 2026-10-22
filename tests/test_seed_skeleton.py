@@ -577,6 +577,25 @@ def test_producer_strain_does_not_cross_structure_correction(monkeypatch):
                             "mibig_producer_strains": [qualification]})
 
 
+def test_producer_strain_allows_reviewed_structure_correction_target(monkeypatch):
+    from naturalproductmech.curate.structure_corrections import row_digest
+
+    qualification = {
+        "source_id": "BGC0000055:1", "expected_source_row_sha256": row_digest(MIBIG_ROW),
+        "strain": "reviewed strain", "reference": "PMID:1", "curator": "codex",
+        "date": "2026-10-13",
+        "rationale": "Reviewed producer strain for replacement structure CHEBI:42355.",
+    }
+    monkeypatch.setattr(seed, "apply_structure_corrections", lambda rows, *_: [
+        {**row, "structure_source_id": "CHEBI:42355",
+         "structure_correction_note": "Reassigned structure",
+         "structure_correction_reference": "PMID:1"} for row in rows
+    ])
+    records = seed.build_records({"mibig_compounds": [MIBIG_ROW],
+                                  "mibig_producer_strains": [qualification]})
+    assert records[0]["producer_organisms"][0]["strain"] == "reviewed strain"
+
+
 def test_strain_qualification_cannot_disappear_on_an_unemitted_row():
     from naturalproductmech.curate.structure_corrections import row_digest
 

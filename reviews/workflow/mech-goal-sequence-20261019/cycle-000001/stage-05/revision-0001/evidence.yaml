@@ -1,0 +1,125 @@
+schema_version: 1.0.0
+repository_key: naturalproductmech
+github_repository: CultureBotAI/NaturalProductMech
+run_id: mech-goal-sequence-20261019
+cycle: 1
+stage: 5
+revision: 1
+outcome: completed
+summary: >-
+  Consumed Stage 4 cohort and record review outputs for the 6-record pik/des cohort, grouped all
+  findings into 3 root-cause groups, deduplicated against open GitHub issues, created issues #1010, #1011,
+  and #1012, resolved G-PIK-DES-001 (#1010) and G-PIK-DES-002 (#1011) via source-pinned curation tables
+  and deterministic re-seeding, deferred G-PIK-DES-003 (#1012) as an upstream representation boundary,
+  and saved fresh post-remediation review 20261022T034800Z-pik-des-stage5-remediation-review.
+source_revision: 71a28cf520dc96a7107b00d87703ba1e59acc02c
+scope_frozen_at: '2026-10-22T03:00:00Z'
+previous_evidence:
+  path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-04/revision-0001/evidence.yaml
+  sha256: 5ff5e95614064cc07c266935d62e2afab68ebb4551623a97d687c3d149b203fa
+artifacts:
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/issue_map.md
+    sha256: 292ebcfb9c5c6ae50deed5d678f0aa49286f249284f7161fe01b8f33d9ceeb9f
+    kind: issue_map
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/validation.md
+    sha256: 6e2e63a6a12d9a39f705fb41069e3861f5fb392a9ab7ac276bfada6723ea2b45
+    kind: validation
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/coverage.json
+    sha256: 3122bc8ea1283ef7650f36ab9309cb6863c095be19e141111e2a49490f8c9caf
+    kind: supporting
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/review_findings.yaml
+    sha256: 0c6d5a689c8774082ede6ac5eebaa950f8aa9cd0ddd557206f3976149c271359
+    kind: review_findings
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/review_report.md
+    sha256: 40526e59f2736af9511f651a411c9937009ae84d3fa865000119f8e652beca3a
+    kind: review_report
+findings:
+  - finding_id: F-PIK-DES-001
+    status: resolved
+    summary: >-
+      Missing ATCC 15439 producer strain qualification on five Streptomyces venezuelae (NCBITaxon:54571) records
+      (desosamine-2.yaml, methymycin.yaml, pikromycin.yaml, neomethymycin.yaml, narbomycin.yaml) seeded from compound rows
+      BGC0000094:1 (AF079138.1) and BGC0000898:1..4 (AF079762.1), directly supported by Xue et al., PNAS 1998
+      (PMID:9770448, DOI:10.1073/pnas.95.21.12111).
+    carried_from: F-PIK-DES-001
+    group_id: G-PIK-DES-001
+    issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/1010
+    disposition: >-
+      Resolved in Stage 5 (#1010) by adding source-pinned ATCC 15439 strain qualifications for BGC0000094:1 and
+      BGC0000898:1..4 to curation/mibig_producer_strains.tsv, updating scripts/seed_from_sources.py to allow reviewed
+      structure-corrected rows naming structure_source_id in rationale, and re-seeding all five S. venezuelae cohort records.
+  - finding_id: F-PIK-DES-002
+    status: resolved
+    summary: >-
+      Cross-species Xue et al. 1998 citation (PMID:9770448 / DOI:10.1073/PNAS.95.21.12111) attached to Streptomyces
+      narbonensis (NCBITaxon:67333) and GenBank AF521878.1 (BGC0000899:1) on producer_organisms[0].evidence[0].reference
+      and biosynthetic_gene_clusters[0].evidence[0].reference, and to the LOTUS occurrence on
+      occurrences[0].evidence[0].reference in data/natural_products/carbohydrates/desosamine.yaml; Xue et al. (1998)
+      characterize only Streptomyces venezuelae ATCC 15439 (AF079138.1 / AF079762.1).
+    carried_from: F-PIK-DES-002
+    group_id: G-PIK-DES-002
+    issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/1011
+    disposition: >-
+      Resolved in Stage 5 (#1011) by routing BGC0000899:1 producer and locus claims in curation/mibig_claim_references.tsv
+      to BGC0000899.4 and GenBank AF521878.1, excluding the mis-referenced LOTUS occurrence in
+      curation/lotus_occurrence_exclusions.tsv, and re-seeding desosamine.yaml.
+  - finding_id: F-PIK-DES-003
+    status: deferred
+    summary: >-
+      Upstream tautomeric/stereochemical separation between desosamine.yaml (ZOYWWAGVGBSJDL-UHFFFAOYSA-N, stereo-incomplete
+      cyclic hexopyranose on BGC0000899:1) and desosamine-2.yaml (CHEBI:32540, VTJCSBJRQLZNHE-CSMHCCOUSA-N, 3-star ChEBI
+      open-chain D-desosamine aldehyde on BGC0000898:1), plus MIBiG 4.0 deposit split of the S. venezuelae ATCC 15439
+      pik/des cluster across BGC0000094 (AF079138.1) and BGC0000898 (AF079762.1, CLUSTER_UNSTATED).
+    carried_from: F-PIK-DES-003
+    group_id: G-PIK-DES-003
+    issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/1012
+    disposition: >-
+      Deferred in Stage 5 (#1012) because 3-star ChEBI lacks a stereochemically complete cyclic D-desosamine entry and
+      MIBiG BGC0000898 (AF079762.1) exports blank locus coordinates; merging distinct InChIKeys or transferring AF079138.1
+      locus grades without sequence-coordinate equivalence would violate corpus curation rules.
+groups:
+  - group_id: G-PIK-DES-001
+    finding_ids:
+      - F-PIK-DES-001
+    issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/1010
+    status: resolved
+    summary: Preserve ATCC 15439 producer strain context on S. venezuelae pik/des BGC0000094 and BGC0000898 claims
+    resolution_evidence:
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/issue_map.md
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/validation.md
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/review_findings.yaml
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/review_report.md
+    disposition: >-
+      Resolved via source-pinned ATCC 15439 producer strain rows for BGC0000094:1 and BGC0000898:1..4 and
+      structure_source_id-aware strain lookup in scripts/seed_from_sources.py.
+  - group_id: G-PIK-DES-002
+    finding_ids:
+      - F-PIK-DES-002
+    issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/1011
+    status: resolved
+    summary: Remediate cross-species PMID:9770448 / DOI:10.1073/pnas.95.21.12111 citation on S. narbonensis BGC0000899 and LOTUS occurrence in desosamine.yaml
+    resolution_evidence:
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/issue_map.md
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/validation.md
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/review_findings.yaml
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/review_report.md
+    disposition: >-
+      Resolved by routing BGC0000899:1 producer and locus claims in curation/mibig_claim_references.tsv and excluding the
+      cross-species LOTUS occurrence in curation/lotus_occurrence_exclusions.tsv.
+  - group_id: G-PIK-DES-003
+    finding_ids:
+      - F-PIK-DES-003
+    issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/1012
+    status: deferred
+    summary: Adjudicate D-desosamine cyclic/open-chain tautomer split and MIBiG BGC0000094/BGC0000898 deposit partition
+    resolution_evidence:
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/issue_map.md
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/validation.md
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/review_findings.yaml
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/review_report.md
+    disposition: >-
+      Deferred in open GitHub issue #1012 until a 3-star stereochemically complete cyclic D-desosamine ChEBI entry and
+      deposit-level AF079762.1/AF079138.1 sequence alignment are available.
+carry_forward_ids:
+  - F-PIK-DES-003
+infra_tasks: []

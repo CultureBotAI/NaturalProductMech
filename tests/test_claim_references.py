@@ -133,11 +133,16 @@ def test_other_qualifications_are_not_overwritten(inputs):
         correct_claim_reference(claim, source, inputs["mibig_claim_references"][0], field="unreviewed")
 
 
-@pytest.mark.parametrize("accession,reference", [
-    ("BGC0002527", "PMID:26452553"),
-    ("BGC0001542", "PMID:28535078"),
+@pytest.mark.parametrize("accession,producer_ref,locus_ref", [
+    ("BGC0002527", "PMID:26452553", "PMID:26452553"),
+    ("BGC0001542", "PMID:28535078", "PMID:28535078"),
+    (
+        "BGC0000899",
+        "https://mibig.secondarymetabolites.org/repository/BGC0000899.4/",
+        "https://www.ncbi.nlm.nih.gov/nuccore/AF521878.1",
+    ),
 ])
-def test_committed_citation_decisions_are_claim_local(accession, reference):
+def test_committed_citation_decisions_are_claim_local(accession, producer_ref, locus_ref):
     sources = [r for r in seed.read_tsv(ROOT / "data/raw/mibig_compounds.tsv")
                if r["mibig_accession"] in {accession, "BGC0001541"}]
     decision, = [r for r in seed.read_tsv(seed.MIBIG_CLAIM_REFERENCES)
@@ -153,9 +158,12 @@ def test_committed_citation_decisions_are_claim_local(accession, reference):
             continue
         assert (current["producer_organisms"][0]["evidence"]
                 is not current["biosynthetic_gene_clusters"][0]["evidence"])
-        for field in ("producer_organisms", "biosynthetic_gene_clusters"):
+        for field, expected_ref in (
+            ("producer_organisms", producer_ref),
+            ("biosynthetic_gene_clusters", locus_ref),
+        ):
             evidence = current[field][0]["evidence"]
-            assert evidence[0]["reference"] == reference
+            assert evidence[0]["reference"] == expected_ref
             assert evidence[0]["evidence_type"] == "DATABASE_ASSERTION"
             assert evidence[-1]["evidence_type"] == "CURATOR_INFERENCE"
             assert source["primary_reference"] in evidence[-1]["notes"]

@@ -70,6 +70,17 @@ producer_organisms:
   - reference: PMID:9770448
     evidence_type: DATABASE_ASSERTION
     notes: MIBiG BGC0000898 entry version 5; citation taken from the entry level
+  - reference: DOI:10.1073/pnas.95.21.12111
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: ATCC 15439. Xue et al. 1998 (PMID:9770448, DOI:10.1073/pnas.95.21.12111)
+      and GenBank AF079762.1 explicitly identify Streptomyces venezuelae ATCC 15439
+      as the sequenced pikromycin/desosamine producer strain for BGC0000898:2. Preserve
+      NCBITaxon:54571 and existing SOURCE_ASSERTION/CLUSTER_UNSTATED grades; deposit-partition
+      boundary with BGC0000094 remains tracked in #1012. See issue #1010. Taxon identity
+      and evidence grade are unchanged; this is not a species-wide experiment. MIBiG
+      source row BGC0000898:2; SHA256 224e597f0ea6fd4934bbbe480086fca606e478396c63e45cc1792ae879613923.
+      Curator: antigravity; date: 2026-10-22.'
+  strain: ATCC 15439
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0000898
   entry_version: '5'
@@ -606,3 +617,7 @@ curation_history:
     UniProtKB:Q9ZGH8) glycosylation of narbonolide (CHEBI:29650) and dTDP-alpha-D-desosamine
     (CHEBI:27948) to narbomycin (CHEBI:29649).
   llm_assisted: true
+- timestamp: '2026-10-22T03:20:08Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

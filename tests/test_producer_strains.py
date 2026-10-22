@@ -80,14 +80,19 @@ def test_cannot_qualify_an_unnamed_producer(source, qualification):
         load_producer_strains([source], [qualification])
 
 
-@pytest.mark.parametrize("slug,expected", [
-    ("prodigiosin", [("mibig:BGC0002675", "S4059", "BGC_CHARACTERIZED")]),
-    ("prodigiosin-2", [("mibig:BGC0000258", "ATCC 39006", "SOURCE_ASSERTION"),
-                       ("mibig:BGC0000259", "ATCC 274", "SOURCE_ASSERTION")]),
+@pytest.mark.parametrize("relpath,expected,curator_token", [
+    ("alkaloids/prodigiosin", [("mibig:BGC0002675", "S4059", "BGC_CHARACTERIZED")], "codex"),
+    ("alkaloids/prodigiosin-2", [("mibig:BGC0000258", "ATCC 39006", "SOURCE_ASSERTION"),
+                                 ("mibig:BGC0000259", "ATCC 274", "SOURCE_ASSERTION")], "codex"),
+    ("carbohydrates/desosamine-2", [("mibig:BGC0000898", "ATCC 15439", "SOURCE_ASSERTION")], "antigravity"),
+    ("polyketides/methymycin", [("mibig:BGC0000094", "ATCC 15439", "SOURCE_ASSERTION")], "antigravity"),
+    ("polyketides/neomethymycin", [("mibig:BGC0000898", "ATCC 15439", "SOURCE_ASSERTION")], "antigravity"),
+    ("polyketides/narbomycin", [("mibig:BGC0000898", "ATCC 15439", "SOURCE_ASSERTION")], "antigravity"),
+    ("polyketides/pikromycin", [("mibig:BGC0000898", "ATCC 15439", "SOURCE_ASSERTION")], "antigravity"),
 ])
-def test_curated_strain_context_keeps_database_assertions(slug, expected):
+def test_curated_strain_context_keeps_database_assertions(relpath, expected, curator_token):
     root = Path(__file__).resolve().parents[1]
-    record = yaml.safe_load((root / f"data/natural_products/alkaloids/{slug}.yaml").read_text())
+    record = yaml.safe_load((root / f"data/natural_products/{relpath}.yaml").read_text())
     producers = {p["biosynthetic_gene_cluster"]: p for p in record["producer_organisms"]}
     for bgc, strain, grade in expected:
         producer = producers[bgc]
@@ -96,5 +101,5 @@ def test_curated_strain_context_keeps_database_assertions(slug, expected):
         assert producer["source"] == "MIBIG"
         assert producer["evidence"][0]["evidence_type"] == "DATABASE_ASSERTION"
         assert producer["evidence"][-1]["evidence_type"] == "CURATOR_INFERENCE"
-        assert "codex" in producer["evidence"][-1]["notes"]
+        assert curator_token in producer["evidence"][-1]["notes"]
     assert record["curation_status"] == "SEEDED"

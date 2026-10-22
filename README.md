@@ -62,9 +62,9 @@ by grounding status:
 field coverage (records carrying at least one item):
   biosynthesis_origin                  3116
   producer_taxon_groups                3077
-  occurrence_taxon_groups              2342
+  occurrence_taxon_groups              2341
   producer_organisms                   3077
-  occurrences                          2342
+  occurrences                          2341
   biosynthetic_gene_clusters           3116
   biosynthetic_pathway                  166
   bioactivities                         174
@@ -72,7 +72,7 @@ field coverage (records carrying at least one item):
   molecular_targets                      15
   causal_graphs                         280
   related_records                       210
-  discussions                           361
+  discussions                           362
 
 producer claims: 3407 (806 causal, 162 correlational)
   BGC_CHARACTERIZED                     806
@@ -85,7 +85,7 @@ cluster link claims: 3449 (1355 demonstrated)
   CLUSTER_PREDICTED                       2
   CLUSTER_UNSTATED                     1982
 
-records with a producer taxon also reported in a cited occurrence (publication independence not assessed): 732
+records with a producer taxon also reported in a cited occurrence (publication independence not assessed): 731
 records whose only origin evidence is a gene cluster with no named host: 27
 
 These grade two different questions and they come apart. A producer

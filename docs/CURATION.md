@@ -114,7 +114,8 @@ untouched source row with `expected_source_row_sha256`, computed with
 `strain`, a stable DOI/PMID/HTTPS `reference`, `curator`, ISO `date` and `rationale`.
 Missing or duplicate source rows, unknown fields, invalid attribution and any
 source drift stop seeding. A simultaneous structure replacement needs separate
-adjudication and is rejected for a qualified producer.
+adjudication and is rejected for a qualified producer unless `rationale`
+explicitly names the replacement target `structure_source_id` (`CHEBI:...`).
 
 The original database assertion, taxon identifier and evidence grade remain.
 The qualification sets only `producer_organisms[].strain` and appends separate

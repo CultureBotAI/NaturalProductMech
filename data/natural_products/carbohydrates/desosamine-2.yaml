@@ -51,6 +51,17 @@ producer_organisms:
       old key. Source row SHA256 1c3876fb6e15ecdbd0e4724f6af87e536ae9e4acdba5b97d7cf5381641555eae;
       target row SHA256 00c1f34e6e734f1eebb250dc0f09eebbc4e91d08cf291bb678b67e7a38698d62.
       Curator: claude; date: 2026-10-18.'
+  - reference: DOI:10.1073/pnas.95.21.12111
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: ATCC 15439. Xue et al. 1998 (PMID:9770448, DOI:10.1073/pnas.95.21.12111)
+      and GenBank AF079762.1 explicitly identify Streptomyces venezuelae ATCC 15439
+      as the sequenced desosamine (des) subcluster host for BGC0000898:1 (split onto
+      replacement structure CHEBI:32540). Preserve NCBITaxon:54571 and existing SOURCE_ASSERTION/CLUSTER_UNSTATED
+      grades; tautomeric and deposit-partition boundaries remain tracked in #1012.
+      See issue #1010. Taxon identity and evidence grade are unchanged; this is not
+      a species-wide experiment. MIBiG source row BGC0000898:1; SHA256 1c3876fb6e15ecdbd0e4724f6af87e536ae9e4acdba5b97d7cf5381641555eae.
+      Curator: antigravity; date: 2026-10-22.'
+  strain: ATCC 15439
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0000898
   entry_version: '5'
@@ -775,3 +786,7 @@ curation_history:
     to the activated donor dTDP-alpha-D-desosamine (CHEBI:27948), grounded to UniProtKB:Q9ZGH3,
     UniProtKB:Q9ZGH0, UniProtKB:Q9ZGH1, UniProtKB:Q9ZGH4, and UniProtKB:Q9ZGH6.
   llm_assisted: true
+- timestamp: '2026-10-22T03:20:08Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
