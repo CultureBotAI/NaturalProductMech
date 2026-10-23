@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "mech-goal-sequence-20261019",
+  "cycle": 2,
+  "stage_order": 4,
+  "stage_id": "record_review",
+  "revision": 1,
+  "git_commit": "508e90d99e8e8cb7627eb8c885d535be25873c7f",
+  "frozen_inventory": {
+    "paths_tsv": "data/natural_products/PATHS.tsv",
+    "paths_tsv_sha256": "2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3",
+    "owner_records_total": 3116,
+    "owner_records_with_inline_causal_graphs": 282,
+    "owner_records_with_causal_graph_refs": 27,
+    "causal_graph_components_total": 246,
+    "causal_graph_components_manifest_sha256": "f0db8ac7f96b28947fb53eee86c7e2b4148319cba1742a1a6a75686613972fe7",
+    "eligible_records_total": 3362,
+    "reviewed_records_total": 3362,
+    "curation_status_breakdown": {
+      "SEEDED": 3116
+    },
+    "records_with_reviewed_curation_history_action": 11,
+    "corpus_gates": {
+      "verify_corpus": {
+        "records_verified": 3116,
+        "errors": 0,
+        "output_sha256": "c9bcf7add9c5022125581df2e6b486735cd23803e49b73a4a2d6a60b62eebc5e"
+      },
+      "validate_id_label_correspondence": {
+        "canonical_matches": 13465,
+        "synonym_matches": 655,
+        "documented_exceptions": 35,
+        "id_not_found": 0,
+        "label_mismatch_warn_taxon_labels": 499,
+        "skipped_no_adapter": 4790,
+        "output_sha256": "c8bb404d2189463dd173a7ddea6b48893bdba5af63321842dac90984211f41c3",
+        "report_tsv_sha256": "fe66438001b7bdb1b56a18c44a7aa432b5913b9e9c372662bf976cd91c864b0c"
+      },
+      "test_graph_components": {
+        "standalone_components_total": 246,
+        "tests_passed": 40,
+        "tests_failed": 0,
+        "output_sha256": "b5a96643be6dd236e181473fa1bbb15fbe22452a95447e99ddc4b6b0a949d7a2"
+      },
+      "curation_worklist_review_records": {
+        "total_worklist_items": 8924,
+        "queues_audited": 12,
+        "queues": {
+          "producer-evidence": 2292,
+          "biosynthesis": 1184,
+          "structure-disagreement": 5,
+          "name-disagreement": 67,
+          "unnamed-producer": 39,
+          "shared-structure": 207,
+          "needs-a-name": 18,
+          "occurrence-only": 12,
+          "pathway-ambiguous": 620,
+          "unresolved-taxa": 3329,
+          "stereo-incomplete": 1124,
+          "record-review": 27
+        },
+        "output_sha256": "7edbdc274466a876b3ef923cd3fa7c5a711f1f6aa3119d96c43ef85c7c768c31"
+      }
+    }
+  },
+  "deep_review_bundles": [
+    {
+      "review_id": "20261023T115930Z-penicillium-chrysogenum-penicillin-cohort",
+      "kind": "category",
+      "skill_name": "review-yaml-category",
+      "yaml_path": "reviews/structured/20261023T115930Z-penicillium-chrysogenum-penicillin-cohort/review.yaml",
+      "yaml_sha256": "9eba2af62ddda72739387be4483a87a7fb075673542e01df9e97047fed10f0c9",
+      "markdown_path": "reviews/structured/20261023T115930Z-penicillium-chrysogenum-penicillin-cohort/review.md",
+      "markdown_sha256": "69916cb1ffff290fbb269a6c5f345472c0f4b71d637b9d9f0e491a1295305616",
+      "target_records_count": 3,
+      "targets": [
+        {
+          "record_path": "data/natural_products/amino_acids_and_peptides/n-5s-5-ammonio-5-carboxylatopentanoyl-l-cysteinyl-d-valinate.yaml",
+          "record_id": "CHEBI:58572",
+          "record_sha256": "369d888b75ac4cbe1c1c95a8fb6a7e15c27cb97d27d69875a1e1b83599e3bbd5",
+          "mibig_row": "BGC0000405:1",
+          "mibig_row_sha256": "50cbd967cf8076f7cbfa5a77bbb9b2910e1e37593d10edea50ad6c3a83316de1",
+          "verdict": "needs_curation",
+          "highest_finding_severity": "major",
+          "native_verdict": "SEEDED retained; two-step PcbAB (UniProtKB:A6N339, RHEA:23196) and IpnA (UniProtKB:B6HLU0, RHEA:22428) pathway and causal graph verified; Wisconsin 54-1255 strain qualification and DOI:10.1016/j.fgb.2007.03.008 reference routing queued for Stage 5"
+        },
+        {
+          "record_path": "data/natural_products/amino_acids_and_peptides/isopenicillin-n.yaml",
+          "record_id": "CHEBI:18165",
+          "record_sha256": "02dfa271ed3ca87f0cdcaea0b0e701ec1fab935d3a5f559d6955565193bbdf75",
+          "mibig_row": "BGC0000405:2",
+          "mibig_row_sha256": "ae975df0e01f81b73c2e119b776207ca3e0f061375585a06ceef3f099dbbe860",
+          "verdict": "needs_curation",
+          "highest_finding_severity": "major",
+          "native_verdict": "SEEDED retained; two-step PcbAB (UniProtKB:A6N339, RHEA:23196) and IpnA (UniProtKB:B6HLU0, RHEA:22428) pathway and causal graph verified; Wisconsin 54-1255 strain qualification and DOI:10.1016/j.fgb.2007.03.008 reference routing queued for Stage 5"
+        },
+        {
+          "record_path": "data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml",
+          "record_id": "CHEBI:51765",
+          "record_sha256": "201779de13d90f23e3ec700c3bd7dbaa46cacd9a0f74d87638b35eb5e51a5bf2",
+          "mibig_rows": [
+            "BGC0000404:1",
+            "BGC0000405:3"
+          ],
+          "mibig_row_sha256s": [
+            "9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19",
+            "847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42"
+          ],
+          "verdict": "needs_curation",
+          "highest_finding_severity": "major",
+          "native_verdict": "SEEDED retained; sodium-salt PenDE pathway boundary (#1015) documented; AS-P-78 / Wisconsin 54-1255 strain qualifications and Fierro 2006 / van den Berg 2007 reference routing queued for Stage 5"
+        }
+      ]
+    },
+    {
+      "review_id": "20261023T115935Z-benzylpenicillin-sodium-record-review",
+      "kind": "record",
+      "skill_name": "review-yaml-record",
+      "yaml_path": "reviews/structured/20261023T115935Z-benzylpenicillin-sodium-record-review/review.yaml",
+      "yaml_sha256": "561aaed5b6954f981f3ad0a4f8de22a8449ffbc99611eeb1baa61cd132da0d61",
+      "markdown_path": "reviews/structured/20261023T115935Z-benzylpenicillin-sodium-record-review/review.md",
+      "markdown_sha256": "bbfa02b3f2413aa614f41df9777173399edf97dfb88a82aa87c298fa1e20c461",
+      "target_records_count": 1,
+      "targets": [
+        {
+          "record_path": "data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml",
+          "record_id": "CHEBI:51765",
+          "record_sha256": "201779de13d90f23e3ec700c3bd7dbaa46cacd9a0f74d87638b35eb5e51a5bf2",
+          "mibig_rows": [
+            "BGC0000404:1",
+            "BGC0000405:3"
+          ],
+          "mibig_row_sha256s": [
+            "9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19",
+            "847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42"
+          ],
+          "verdict": "needs_curation",
+          "highest_finding_severity": "major",
+          "native_verdict": "SEEDED retained; sodium-salt PenDE pathway boundary (#1015) documented; AS-P-78 / Wisconsin 54-1255 strain qualifications and Fierro 2006 / van den Berg 2007 reference routing queued for Stage 5"
+        }
+      ]
+    }
+  ],
+  "open_findings_summary": {
+    "total_open_findings": 3,
+    "total_deferred_carried_forward_findings": 1,
+    "carry_forward_ids": [
+      "F-PEN-001",
+      "F-PEN-002",
+      "F-PEN-003",
+      "F-PIK-DES-003"
+    ]
+  }
+}
