@@ -199,8 +199,11 @@ biosynthetic_pathway:
   proposed: true
   notes: MIBiG assigns AJ698723.2 CAG28678.1/mchA to the iterative type I PKS module
     that contributes the polyketide portion of the myxochromide S1 scaffold. The exact
-    isolated substrate and product are not resolved, and no current exact UniProtKB
-    entry was found for CAG28678.1 or the deleted historical Q50JA4 cross-reference.
+    isolated substrate and product are not resolved, and UniParc UPI000050C125 (2166
+    aa, shared by AJ698723.2 CAG28678.1 and BGC0001429 KX622599.1 APZ78820.1) maps
+    only to deleted UniProtKB/TrEMBL entries Q50JA4 and A0A1P8VQB4 (whereas active
+    Stigmatella aurantiaca DW4/3-1 STAUR_1142 / UniProtKB:E3FG11 is a 2157-aa alternative
+    start-site translation, UPI0001E74347).
   evidence:
   - reference: DOI:10.1002/cbic.200400282
     evidence_type: PRIMARY_EXPERIMENT
@@ -219,17 +222,25 @@ biosynthetic_pathway:
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-09-27'
     snippet: polyketide synthase
-    notes: NCBI Protein CAG28678.1 is the 2166 aa AJ698723.2 mchA coding sequence.
-      Its historical UniProtKB/TrEMBL Q50JA4 cross-reference now resolves as a deleted
-      UniProtKB entry.
+    notes: NCBI Protein CAG28678.1 is the 2166 aa AJ698723.2 mchA coding sequence
+      (UPI000050C125); its UniProtKB/TrEMBL cross-references Q50JA4 and A0A1P8VQB4
+      are both deleted.
+  - reference: https://www.uniprot.org/uniparc/UPI000050C125
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-23'
+    notes: UniParc UPI000050C125 links AJ698723.2 CAG28678.1 (mchA) and BGC0001429
+      KX622599.1 APZ78820.1 (2166 aa) only to deleted UniProtKB/TrEMBL entries Q50JA4
+      and A0A1P8VQB4.
   enzyme_id: NCBIProtein:CAG28678.1
 - step_number: 2
   enzyme_label: MchB nonribosomal peptide synthetase
   proposed: true
   notes: MIBiG assigns AJ698723.2 CAG29031.1/mchB to the NRPS modules that incorporate
     the threonine and leucine portions inferred for myxochromide S1 scaffold biosynthesis.
-    The exact isolated substrate and product are not resolved, and no current exact
-    UniProtKB entry was found for CAG29031.1 or the deleted historical Q50JA3 cross-reference.
+    The exact isolated substrate and product are not resolved; while the direct AJ698723.2
+    UniProtKB/TrEMBL cross-reference Q50JA3 is deleted, active Stigmatella aurantiaca
+    DW4/3-1 UniProtKB:E3FG12 (STAUR_1143) shares 100% amino-acid sequence identity
+    (3057 aa, UPI000050C126) with CAG29031.1 and BGC0001429 APZ78821.1.
   evidence:
   - reference: DOI:10.1002/cbic.200400282
     evidence_type: PRIMARY_EXPERIMENT
@@ -249,16 +260,30 @@ biosynthetic_pathway:
     retrieved_on: '2026-09-27'
     snippet: nonribosomal peptide synthetase (modules 1 and 2)
     notes: NCBI Protein CAG29031.1 is the 3057 aa AJ698723.2 mchB coding sequence.
-      Its historical UniProtKB/TrEMBL Q50JA3 cross-reference now resolves as a deleted
-      UniProtKB entry.
+      Its historical AJ698723.2 UniProtKB/TrEMBL Q50JA3 cross-reference is deleted,
+      while active Stigmatella aurantiaca DW4/3-1 UniProtKB:E3FG12 (STAUR_1143) shares
+      the identical 3057-aa sequence (UPI000050C126).
+  - reference: https://www.uniprot.org/uniprotkb/E3FG12
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-23'
+    notes: Active Stigmatella aurantiaca DW4/3-1 UniProtKB entry (E3FG12, STAUR_1143)
+      for the 3057-aa MchB NRPS sequence.
+  - reference: https://www.uniprot.org/uniparc/UPI000050C126
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-23'
+    notes: UniParc UPI000050C126 links AJ698723.2 CAG29031.1 (mchB), BGC0001429 APZ78821.1,
+      deleted Q50JA3, and active Stigmatella aurantiaca DW4/3-1 UniProtKB:E3FG12 under
+      a single 100%-identical 3057-aa sequence.
   enzyme_id: NCBIProtein:CAG29031.1
 - step_number: 3
   enzyme_label: MchC nonribosomal peptide synthetase
   proposed: true
   notes: MIBiG assigns AJ698723.2 CAG29032.1/mchC to the downstream NRPS modules and
     thioesterase that complete myxochromide S1 scaffold biosynthesis. The exact isolated
-    substrate and product are not resolved, and no current exact UniProtKB entry was
-    found for CAG29032.1 or the deleted historical Q50JA2 cross-reference.
+    substrate and product are not resolved; while the direct AJ698723.2 UniProtKB/TrEMBL
+    cross-reference Q50JA2 is deleted, active Stigmatella aurantiaca DW4/3-1 UniProtKB:E3FG13
+    (bacA / STAUR_1144) shares 100% amino-acid sequence identity (4468 aa, UPI000050C1DE)
+    with CAG29032.1 and BGC0001429 APZ78822.1.
   evidence:
   - reference: DOI:10.1002/cbic.200400282
     evidence_type: PRIMARY_EXPERIMENT
@@ -278,8 +303,20 @@ biosynthetic_pathway:
     retrieved_on: '2026-09-27'
     snippet: nonribosomal peptide synthetase (modules 3 to 6)
     notes: NCBI Protein CAG29032.1 is the 4468 aa AJ698723.2 mchC coding sequence.
-      Its historical UniProtKB/TrEMBL Q50JA2 cross-reference now resolves as a deleted
-      UniProtKB entry.
+      Its historical AJ698723.2 UniProtKB/TrEMBL Q50JA2 cross-reference is deleted,
+      while active Stigmatella aurantiaca DW4/3-1 UniProtKB:E3FG13 (bacA / STAUR_1144)
+      shares the identical 4468-aa sequence (UPI000050C1DE).
+  - reference: https://www.uniprot.org/uniprotkb/E3FG13
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-23'
+    notes: Active Stigmatella aurantiaca DW4/3-1 UniProtKB entry (E3FG13, bacA / STAUR_1144)
+      for the 4468-aa MchC NRPS sequence.
+  - reference: https://www.uniprot.org/uniparc/UPI000050C1DE
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-23'
+    notes: UniParc UPI000050C1DE links AJ698723.2 CAG29032.1 (mchC), BGC0001429 APZ78822.1,
+      deleted Q50JA2, and active Stigmatella aurantiaca DW4/3-1 UniProtKB:E3FG13 under
+      a single 100%-identical 4468-aa sequence.
   enzyme_id: NCBIProtein:CAG29032.1
 causal_graphs:
 - graph_id: myxochromide-s-mch-biosynthesis
@@ -346,9 +383,9 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
       snippet: polyketide synthase
-      notes: NCBI Protein CAG28678.1 is the 2166 aa AJ698723.2 mchA coding sequence.
-        Its historical UniProtKB/TrEMBL Q50JA4 cross-reference now resolves as a deleted
-        UniProtKB entry.
+      notes: NCBI Protein CAG28678.1 is the 2166 aa AJ698723.2 mchA coding sequence
+        (UPI000050C125); its UniProtKB/TrEMBL cross-references Q50JA4 and A0A1P8VQB4
+        are both deleted.
   - subject: mchb
     predicate: contributes to
     object: mch_scaffold_biosynthesis
@@ -374,8 +411,9 @@ causal_graphs:
       retrieved_on: '2026-09-27'
       snippet: nonribosomal peptide synthetase (modules 1 and 2)
       notes: NCBI Protein CAG29031.1 is the 3057 aa AJ698723.2 mchB coding sequence.
-        Its historical UniProtKB/TrEMBL Q50JA3 cross-reference now resolves as a deleted
-        UniProtKB entry.
+        Its historical AJ698723.2 UniProtKB/TrEMBL Q50JA3 cross-reference is deleted,
+        while active Stigmatella aurantiaca DW4/3-1 UniProtKB:E3FG12 (STAUR_1143)
+        shares the identical 3057-aa sequence (UPI000050C126).
   - subject: mchc
     predicate: contributes to
     object: mch_scaffold_biosynthesis
@@ -401,8 +439,9 @@ causal_graphs:
       retrieved_on: '2026-09-27'
       snippet: nonribosomal peptide synthetase (modules 3 to 6)
       notes: NCBI Protein CAG29032.1 is the 4468 aa AJ698723.2 mchC coding sequence.
-        Its historical UniProtKB/TrEMBL Q50JA2 cross-reference now resolves as a deleted
-        UniProtKB entry.
+        Its historical AJ698723.2 UniProtKB/TrEMBL Q50JA2 cross-reference is deleted,
+        while active Stigmatella aurantiaca DW4/3-1 UniProtKB:E3FG13 (bacA / STAUR_1144)
+        shares the identical 4468-aa sequence (UPI000050C1DE).
   - subject: mch_scaffold_biosynthesis
     predicate: assembles
     object: myxochromide_s1
@@ -498,4 +537,14 @@ curation_history:
     and NCBIProtein:CAG29032.1 and added 100% sequence-identical Stigmatella aurantiaca
     DW4/3-1 UniProtKB example nodes E3FG12 (UPI000050C126) and E3FG13 (UPI000050C1DE)
     for MchB and MchC.
+  llm_assisted: true
+- timestamp: '2026-10-23T10:49:08Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Aligned MchA (CAG28678.1, UPI000050C125), MchB (CAG29031.1, UPI000050C126),
+    and MchC (CAG29032.1, UPI000050C1DE) biosynthetic_pathway steps and causal_graphs
+    edge notes with the 100% sequence-identical active Stigmatella aurantiaca DW4/3-1
+    UniProtKB examples E3FG12 (MchB) and E3FG13 (MchC) and documented why MchA (2166
+    aa UPI000050C125 vs 2157 aa STAUR_1142 E3FG11 UPI0001E74347) has no exact active
+    UniProtKB entry.
   llm_assisted: true
