@@ -101,11 +101,11 @@ biosynthetic_pathway:
 - step_number: 1
   enzyme_label: LnyI ACP S-malonyltransferase
   proposed: true
-  notes: This curates Streptomyces sp. Mg1 lnyI/AKL64828.1 as a required acyltransferase
-    for the proposed aminoalkyl starter-unit branch of BGC0002072 linearmycin A biosynthesis.
-    The exact AKL64828.1 GenPept accession did not resolve in UniProtKB exact accession,
-    locus-tag, or lnyI searches on 2026-09-27, so enzyme_id is left unfilled and the
-    public GenPept sequence is cited as official NCBI grounding evidence.
+  notes: LnyI catalyzes transfer of a malonyl starter unit from malonyl-CoA to the
+    holo-LnyPloading acyl carrier protein domain to form malonyl-S-LnyPloading for
+    linearmycin A polyketide assembly; enzyme_id is grounded to the native GenPept
+    accession NCBIProtein:AKL64828.1 because UniParc UPI00017E925A maps only to retired/obsolete
+    UniProtKB/TrEMBL entry B4VDY5.1 with no active UniProtKB accession.
   evidence:
   - reference: DOI:10.1016/j.chembiol.2017.08.008
     evidence_type: PRIMARY_EXPERIMENT
@@ -124,9 +124,17 @@ biosynthetic_pathway:
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-09-27'
     snippet: ACP S-malonyltransferase
-    notes: NCBI GenPept AKL64828.1 is the 345 aa lnyI/M444_04805 protein from Streptomyces
-      sp. Mg1 and is encoded by CP011664.1:1076160..1077197. Exact AKL64828.1, M444_04805,
-      and lnyI UniProtKB searches did not resolve an exact Mg1 accession on 2026-09-27.
+    notes: NCBI Protein AKL64828.1 is the 345-aa Streptomyces sp. Mg1 ACP S-malonyltransferase
+      LnyI encoded by locus tag M444_04805 on GenBank CP011664.1 (1035948..1036985)
+      and grounds the LnyI step and enzyme node as NCBIProtein:AKL64828.1.
+  - reference: https://www.uniprot.org/uniparc/UPI00017E925A
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-23'
+    snippet: AKL64828.1
+    notes: UniParc UPI00017E925A archives the exact 345-aa Streptomyces sp. Mg1 LnyI
+      sequence (EMBL CP011664.1 protein AKL64828.1, locus tag M444_04805) and records
+      that UniProtKB/TrEMBL entry B4VDY5.1 is inactive/obsolete, confirming no active
+      UniProtKB accession resolves for AKL64828.1.
   - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP011664.1
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-09-27'
@@ -134,6 +142,7 @@ biosynthetic_pathway:
     notes: GenBank CP011664.1 is the complete Streptomyces sp. Mg1 genome used by
       BGC0002072; within that genome, lnyI/M444_04805 occupies 1076160..1077197 and
       encodes AKL64828.1.
+  enzyme_id: NCBIProtein:AKL64828.1
 causal_graphs:
 - graph_id: linearmycin-a-lnyi-biosynthesis
   scope: BIOSYNTHESIS
@@ -143,7 +152,8 @@ causal_graphs:
   - node_id: lnyi_acyltransferase
     label: LnyI ACP S-malonyltransferase
     node_type: ENZYME
-    grounding_status: UNGROUNDED
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:AKL64828.1
   - node_id: aminoalkyl_starter_unit_biosynthesis
     label: aminoalkyl starter-unit biosynthesis
     node_type: PROCESS
@@ -157,10 +167,10 @@ causal_graphs:
   - subject: lnyi_acyltransferase
     predicate: is required for
     object: aminoalkyl_starter_unit_biosynthesis
-    notes: The primary paper showed that lnyI deletion abolished linearmycin production
-      and that lnyI complementation restored production; it further placed LnyI among
-      predicted arginine-derived aminoalkyl starter-unit biosynthesis enzymes. This
-      edge does not assert an assayed acyl-transfer substrate.
+    notes: LnyI malonylates the holo-LnyPloading ACP domain without requiring ATP
+      and initiates linearmycin polyketide assembly; the LnyI enzyme node is grounded
+      to the native GenPept accession NCBIProtein:AKL64828.1 because UniParc UPI00017E925A
+      maps only to retired/obsolete UniProtKB/TrEMBL entry B4VDY5.1.
     evidence:
     - reference: DOI:10.1016/j.chembiol.2017.08.008
       evidence_type: PRIMARY_EXPERIMENT
@@ -179,9 +189,17 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
       snippet: ACP S-malonyltransferase
-      notes: NCBI GenPept AKL64828.1 is the 345 aa lnyI/M444_04805 protein from Streptomyces
-        sp. Mg1 and is encoded by CP011664.1:1076160..1077197. Exact AKL64828.1, M444_04805,
-        and lnyI UniProtKB searches did not resolve an exact Mg1 accession on 2026-09-27.
+      notes: NCBI Protein AKL64828.1 is the 345-aa Streptomyces sp. Mg1 ACP S-malonyltransferase
+        LnyI encoded by locus tag M444_04805 on GenBank CP011664.1 (1035948..1036985)
+        and grounds the LnyI step and enzyme node as NCBIProtein:AKL64828.1.
+    - reference: https://www.uniprot.org/uniparc/UPI00017E925A
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: AKL64828.1
+      notes: UniParc UPI00017E925A archives the exact 345-aa Streptomyces sp. Mg1
+        LnyI sequence (EMBL CP011664.1 protein AKL64828.1, locus tag M444_04805) and
+        records that UniProtKB/TrEMBL entry B4VDY5.1 is inactive/obsolete, confirming
+        no active UniProtKB accession resolves for AKL64828.1.
     - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP011664.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
@@ -213,9 +231,17 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
       snippet: ACP S-malonyltransferase
-      notes: NCBI GenPept AKL64828.1 is the 345 aa lnyI/M444_04805 protein from Streptomyces
-        sp. Mg1 and is encoded by CP011664.1:1076160..1077197. Exact AKL64828.1, M444_04805,
-        and lnyI UniProtKB searches did not resolve an exact Mg1 accession on 2026-09-27.
+      notes: NCBI Protein AKL64828.1 is the 345-aa Streptomyces sp. Mg1 ACP S-malonyltransferase
+        LnyI encoded by locus tag M444_04805 on GenBank CP011664.1 (1035948..1036985)
+        and grounds the LnyI step and enzyme node as NCBIProtein:AKL64828.1.
+    - reference: https://www.uniprot.org/uniparc/UPI00017E925A
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: AKL64828.1
+      notes: UniParc UPI00017E925A archives the exact 345-aa Streptomyces sp. Mg1
+        LnyI sequence (EMBL CP011664.1 protein AKL64828.1, locus tag M444_04805) and
+        records that UniProtKB/TrEMBL entry B4VDY5.1 is inactive/obsolete, confirming
+        no active UniProtKB accession resolves for AKL64828.1.
     - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP011664.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
@@ -243,4 +269,13 @@ curation_history:
     pathway entry and a partial BIOSYNTHESIS causal graph; cited DOI:10.1016/j.chembiol.2017.08.008,
     MIBiG BGC0002072, and NCBI AKL64828.1/CP011664.1 grounding evidence while leaving
     enzyme_id empty because the exact GenPept accession did not resolve in UniProtKB.
+  llm_assisted: true
+- timestamp: '2026-10-23T22:04:52Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Grounded the Streptomyces sp. Mg1 LnyI ACP S-malonyltransferase biosynthetic
+    pathway step and BIOSYNTHESIS causal graph ENZYME node (lnyi_acyltransferase)
+    in linearmycin A to the native GenPept accession NCBIProtein:AKL64828.1, and added
+    UniParc UPI00017E925A evidence documenting that the corresponding UniProtKB/TrEMBL
+    entry B4VDY5.1 is retired/obsolete.
   llm_assisted: true

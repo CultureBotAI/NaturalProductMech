@@ -116,10 +116,11 @@ biosynthetic_pathway:
   enzyme_label: AzpE
   reaction_id: RHEA:69008
   proposed: true
-  notes: AzpE is annotated as the Streptacidiphilus griseoplanus JCM 4300 BGC0002458
-    aspartate monooxygenase. The exact BCN13467.1 protein does not currently resolve
-    as a UniProtKB entry, so this partial alazopeptin nitrite-supply step grounds
-    the reaction class by EC and Rhea and leaves the producer protein ungrounded.
+  notes: AzpE N-hydroxylates L-ornithine to N5-hydroxy-L-ornithine before AzpD forms
+    the diazo-bearing 6-diazo-5-oxo-L-norleucine unit of alazopeptin; the pathway
+    step keeps enzyme_id EC:1.14.13.248 while the AzpE causal-graph enzyme node is
+    grounded to the native GenPept accession NCBIProtein:BCN13467.1 (GenBank LC593326.1
+    proteins BCN13467.1 and BCN13466.1 are not indexed in UniProtKB or UniParc).
   evidence:
   - reference: DOI:10.1002/anie.202100462
     evidence_type: PRIMARY_EXPERIMENT
@@ -136,8 +137,11 @@ biosynthetic_pathway:
     evidence_type: DATABASE_ASSERTION
     snippet: aspartate monooxygenase
     retrieved_on: '2026-09-28'
-    notes: NCBI GenPept BCN13467.1 is the LC593326.1 azpE coding sequence; exact UniProtKB
-      searches for BCN13467 returned no matching entry.
+    notes: NCBI Protein BCN13467.1 is the 653-aa Streptomyces acidiscabies AzpE N-hydroxylase
+      encoded on GenBank LC593326.1 (complement 4613..6574) and grounds the AzpE enzyme
+      node as NCBIProtein:BCN13467.1; exact UniProtKB and UniParc queries for BCN13467.1
+      and LC593326 verified on 2026-10-23 that this protein is not indexed in UniProtKB
+      or UniParc.
   - reference: RHEA:69008
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-09-28'
@@ -155,10 +159,11 @@ biosynthetic_pathway:
   enzyme_label: AzpD
   reaction_id: RHEA:69044
   proposed: true
-  notes: AzpD is annotated as the Streptacidiphilus griseoplanus JCM 4300 BGC0002458
-    nitrosuccinate lyase. The exact BCN13466.1 protein does not currently resolve
-    as a UniProtKB entry, so this partial alazopeptin nitrite-supply step grounds
-    the reaction class by EC and Rhea and leaves the producer protein ungrounded.
+  notes: AzpD converts N5-(hydroxyamino)-L-ornithine into the 6-diazo-5-oxo-L-norleucine
+    building block that is incorporated twice into alazopeptin; the pathway step keeps
+    enzyme_id EC:4.3.99.5 while the AzpD causal-graph enzyme node is grounded to the
+    native GenPept accession NCBIProtein:BCN13466.1 (GenBank LC593326.1 proteins BCN13467.1
+    and BCN13466.1 are not indexed in UniProtKB or UniParc).
   evidence:
   - reference: DOI:10.1002/anie.202100462
     evidence_type: PRIMARY_EXPERIMENT
@@ -175,8 +180,11 @@ biosynthetic_pathway:
     evidence_type: DATABASE_ASSERTION
     snippet: nitrosuccinate lyase
     retrieved_on: '2026-09-28'
-    notes: NCBI GenPept BCN13466.1 is the LC593326.1 azpD coding sequence; exact UniProtKB
-      searches for BCN13466 returned no matching entry.
+    notes: NCBI Protein BCN13466.1 is the 478-aa Streptomyces acidiscabies AzpD hydrazine-forming
+      / DON-forming enzyme encoded on GenBank LC593326.1 (complement 3180..4616) and
+      grounds the AzpD enzyme node as NCBIProtein:BCN13466.1; exact UniProtKB and
+      UniParc queries for BCN13466.1 and LC593326 verified on 2026-10-23 that this
+      protein is not indexed in UniProtKB or UniParc.
   - reference: RHEA:69044
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-09-28'
@@ -205,7 +213,8 @@ causal_graphs:
   - node_id: azpe
     label: AzpE
     node_type: ENZYME
-    grounding_status: UNGROUNDED
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:BCN13467.1
   - node_id: nitrosuccinate
     label: 2-nitrobutanedioate
     node_type: PRECURSOR
@@ -214,7 +223,8 @@ causal_graphs:
   - node_id: azpd
     label: AzpD
     node_type: ENZYME
-    grounding_status: UNGROUNDED
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:BCN13466.1
   - node_id: nitrite
     label: nitrite
     node_type: PRECURSOR
@@ -237,8 +247,11 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       snippet: aspartate monooxygenase
       retrieved_on: '2026-09-28'
-      notes: NCBI GenPept BCN13467.1 is the LC593326.1 azpE coding sequence; exact
-        UniProtKB searches for BCN13467 returned no matching entry.
+      notes: NCBI Protein BCN13467.1 is the 653-aa Streptomyces acidiscabies AzpE
+        N-hydroxylase encoded on GenBank LC593326.1 (complement 4613..6574) and grounds
+        the AzpE enzyme node as NCBIProtein:BCN13467.1; exact UniProtKB and UniParc
+        queries for BCN13467.1 and LC593326 verified on 2026-10-23 that this protein
+        is not indexed in UniProtKB or UniParc.
     - reference: RHEA:69008
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-28'
@@ -260,8 +273,11 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       snippet: aspartate monooxygenase
       retrieved_on: '2026-09-28'
-      notes: NCBI GenPept BCN13467.1 is the LC593326.1 azpE coding sequence; exact
-        UniProtKB searches for BCN13467 returned no matching entry.
+      notes: NCBI Protein BCN13467.1 is the 653-aa Streptomyces acidiscabies AzpE
+        N-hydroxylase encoded on GenBank LC593326.1 (complement 4613..6574) and grounds
+        the AzpE enzyme node as NCBIProtein:BCN13467.1; exact UniProtKB and UniParc
+        queries for BCN13467.1 and LC593326 verified on 2026-10-23 that this protein
+        is not indexed in UniProtKB or UniParc.
     - reference: RHEA:69008
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-28'
@@ -283,8 +299,11 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       snippet: nitrosuccinate lyase
       retrieved_on: '2026-09-28'
-      notes: NCBI GenPept BCN13466.1 is the LC593326.1 azpD coding sequence; exact
-        UniProtKB searches for BCN13466 returned no matching entry.
+      notes: NCBI Protein BCN13466.1 is the 478-aa Streptomyces acidiscabies AzpD
+        hydrazine-forming / DON-forming enzyme encoded on GenBank LC593326.1 (complement
+        3180..4616) and grounds the AzpD enzyme node as NCBIProtein:BCN13466.1; exact
+        UniProtKB and UniParc queries for BCN13466.1 and LC593326 verified on 2026-10-23
+        that this protein is not indexed in UniProtKB or UniParc.
     - reference: RHEA:69044
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-28'
@@ -306,8 +325,11 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       snippet: nitrosuccinate lyase
       retrieved_on: '2026-09-28'
-      notes: NCBI GenPept BCN13466.1 is the LC593326.1 azpD coding sequence; exact
-        UniProtKB searches for BCN13466 returned no matching entry.
+      notes: NCBI Protein BCN13466.1 is the 478-aa Streptomyces acidiscabies AzpD
+        hydrazine-forming / DON-forming enzyme encoded on GenBank LC593326.1 (complement
+        3180..4616) and grounds the AzpD enzyme node as NCBIProtein:BCN13466.1; exact
+        UniProtKB and UniParc queries for BCN13466.1 and LC593326 verified on 2026-10-23
+        that this protein is not indexed in UniProtKB or UniParc.
     - reference: RHEA:69044
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-28'
@@ -338,4 +360,13 @@ curation_history:
   changes: 'Replaced PR #274''s direct Rhea evidence URLs with RHEA CURIE references
     after adversarial review issue #275 found that the official direct Rhea page URLs
     returned HTTP 403 to automated re-fetching.'
+  llm_assisted: true
+- timestamp: '2026-10-23T22:04:52Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Grounded the Streptomyces acidiscabies AzpE and AzpD BIOSYNTHESIS causal
+    graph ENZYME nodes (azpe, azpd) to their native GenPept accessions NCBIProtein:BCN13467.1
+    and NCBIProtein:BCN13466.1 while preserving EC:1.14.13.248 and EC:4.3.99.5 on
+    the biosynthetic_pathway steps, and documented that LC593326.1 proteins BCN13467.1
+    and BCN13466.1 are not indexed in UniProtKB or UniParc.
   llm_assisted: true

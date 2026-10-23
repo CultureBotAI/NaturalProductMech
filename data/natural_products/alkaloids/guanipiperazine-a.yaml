@@ -110,9 +110,18 @@ biosynthetic_pathway:
   - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98525.1
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-10-01'
-    notes: NCBI GenPept QUF98525.1 is the Streptomyces chrestomyceticus NA04264 MW051641.1
-      non-ribosomal peptide synthetase sequence assigned here to GupB; no UniProtKB
-      entry resolved for this accession or for MW051641.1.
+    notes: NCBI Protein QUF98525.1 is the 1,074-aa Streptomyces sp. GupB NRPS-like
+      enzyme encoded by gupB (1474..4698) on GenBank MW051641.1 and grounds the GupB
+      step and enzyme node as NCBIProtein:QUF98525.1.
+  - reference: https://www.uniprot.org/uniparc/UPI001BEE5CB3
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-23'
+    snippet: QUF98525.1
+    notes: UniParc UPI001BEE5CB3 archives the exact 1,074-aa Streptomyces sp. GupB
+      sequence (EMBL MW051641.1 protein QUF98525.1) with an active EMBL cross-reference
+      only and no UniProtKB cross-reference, confirming no UniProtKB accession resolves
+      for QUF98525.1.
+  enzyme_id: NCBIProtein:QUF98525.1
 - step_number: 2
   enzyme_label: GupA F420H2-dependent reductase
   notes: GupA reduces proposed imine intermediate 5 to piperazine intermediate 4.
@@ -135,9 +144,18 @@ biosynthetic_pathway:
   - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98524.1
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-10-01'
-    notes: NCBI GenPept QUF98524.1 is the Streptomyces chrestomyceticus NA04264 MW051641.1
-      F420H2-dependent reductase sequence assigned here to GupA; no UniProtKB entry
-      resolved for this accession or for MW051641.1.
+    notes: NCBI Protein QUF98524.1 is the 162-aa Streptomyces sp. GupA NTF2-like ketoreductase
+      encoded by gupA (951..1439) on GenBank MW051641.1 and grounds the GupA step
+      and enzyme node as NCBIProtein:QUF98524.1.
+  - reference: https://www.uniprot.org/uniparc/UPI0019D1AFCC
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-23'
+    snippet: QUF98524.1
+    notes: UniParc UPI0019D1AFCC archives the exact 162-aa Streptomyces sp. GupA sequence
+      (EMBL MW051641.1 protein QUF98524.1) with an active EMBL cross-reference only
+      and no UniProtKB cross-reference, confirming no UniProtKB accession resolves
+      for QUF98524.1.
+  enzyme_id: NCBIProtein:QUF98524.1
 - step_number: 3
   enzyme_label: GupC cytochrome P450
   notes: GupC oxidizes piperazine intermediate 4 to strained piperazine intermediate
@@ -160,9 +178,18 @@ biosynthetic_pathway:
   - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98526.1
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-10-01'
-    notes: NCBI GenPept QUF98526.1 is the Streptomyces chrestomyceticus NA04264 MW051641.1
-      cytochrome P450 sequence assigned here to GupC; no UniProtKB entry resolved
-      for this accession or for MW051641.1.
+    notes: NCBI Protein QUF98526.1 is the 417-aa Streptomyces sp. GupC cytochrome
+      P450 monooxygenase encoded by gupC (4695..5948) on GenBank MW051641.1 and grounds
+      the GupC step and enzyme node as NCBIProtein:QUF98526.1.
+  - reference: https://www.uniprot.org/uniparc/UPI001BEEC1A1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-23'
+    snippet: QUF98526.1
+    notes: UniParc UPI001BEEC1A1 archives the exact 417-aa Streptomyces sp. GupC sequence
+      (EMBL MW051641.1 protein QUF98526.1) with an active EMBL cross-reference only
+      and no UniProtKB cross-reference, confirming no UniProtKB accession resolves
+      for QUF98526.1.
+  enzyme_id: NCBIProtein:QUF98526.1
 - step_number: 4
   enzyme_label: GupD cytochrome P450 guaninyl transferase
   substrates:
@@ -189,9 +216,18 @@ biosynthetic_pathway:
   - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98527.1
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-10-01'
-    notes: NCBI GenPept QUF98527.1 is the Streptomyces chrestomyceticus NA04264 MW051641.1
-      cytochrome P450 sequence assigned here to GupD; no UniProtKB entry resolved
-      for this accession or for MW051641.1.
+    notes: NCBI Protein QUF98527.1 is the 409-aa Streptomyces sp. GupD prenyltransferase
+      encoded by gupD (5996..7225) on GenBank MW051641.1 and grounds the GupD step
+      and enzyme node as NCBIProtein:QUF98527.1.
+  - reference: https://www.uniprot.org/uniparc/UPI001BEFDD7C
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-23'
+    snippet: QUF98527.1
+    notes: UniParc UPI001BEFDD7C archives the exact 409-aa Streptomyces sp. GupD sequence
+      (EMBL MW051641.1 protein QUF98527.1) with an active EMBL cross-reference only
+      and no UniProtKB cross-reference, confirming no UniProtKB accession resolves
+      for QUF98527.1.
+  enzyme_id: NCBIProtein:QUF98527.1
 causal_graphs:
 - graph_id: guanipiperazine-a-gup-biosynthesis
   scope: BIOSYNTHESIS
@@ -206,7 +242,8 @@ causal_graphs:
   - node_id: gupb
     label: GupB
     node_type: ENZYME
-    grounding_status: UNGROUNDED
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:QUF98525.1
   - node_id: imine_intermediate_5
     label: proposed imine intermediate 5
     node_type: COMPOUND
@@ -214,7 +251,8 @@ causal_graphs:
   - node_id: gupa
     label: GupA
     node_type: ENZYME
-    grounding_status: UNGROUNDED
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:QUF98524.1
   - node_id: piperazine_intermediate_4
     label: piperazine intermediate 4
     node_type: COMPOUND
@@ -222,7 +260,8 @@ causal_graphs:
   - node_id: gupc
     label: GupC
     node_type: ENZYME
-    grounding_status: UNGROUNDED
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:QUF98526.1
   - node_id: strained_piperazine_6
     label: strained piperazine intermediate 6
     node_type: COMPOUND
@@ -235,7 +274,8 @@ causal_graphs:
   - node_id: gupd
     label: GupD
     node_type: ENZYME
-    grounding_status: UNGROUNDED
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:QUF98527.1
   - node_id: guanipiperazine_a
     label: guanipiperazine A
     node_type: COMPOUND
@@ -263,9 +303,17 @@ causal_graphs:
     - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98525.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-01'
-      notes: NCBI GenPept QUF98525.1 is the Streptomyces chrestomyceticus NA04264
-        MW051641.1 non-ribosomal peptide synthetase sequence assigned here to GupB;
-        no UniProtKB entry resolved for this accession or for MW051641.1.
+      notes: NCBI Protein QUF98525.1 is the 1,074-aa Streptomyces sp. GupB NRPS-like
+        enzyme encoded by gupB (1474..4698) on GenBank MW051641.1 and grounds the
+        GupB step and enzyme node as NCBIProtein:QUF98525.1.
+    - reference: https://www.uniprot.org/uniparc/UPI001BEE5CB3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: QUF98525.1
+      notes: UniParc UPI001BEE5CB3 archives the exact 1,074-aa Streptomyces sp. GupB
+        sequence (EMBL MW051641.1 protein QUF98525.1) with an active EMBL cross-reference
+        only and no UniProtKB cross-reference, confirming no UniProtKB accession resolves
+        for QUF98525.1.
   - subject: gupb
     predicate: forms
     object: imine_intermediate_5
@@ -287,9 +335,17 @@ causal_graphs:
     - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98525.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-01'
-      notes: NCBI GenPept QUF98525.1 is the Streptomyces chrestomyceticus NA04264
-        MW051641.1 non-ribosomal peptide synthetase sequence assigned here to GupB;
-        no UniProtKB entry resolved for this accession or for MW051641.1.
+      notes: NCBI Protein QUF98525.1 is the 1,074-aa Streptomyces sp. GupB NRPS-like
+        enzyme encoded by gupB (1474..4698) on GenBank MW051641.1 and grounds the
+        GupB step and enzyme node as NCBIProtein:QUF98525.1.
+    - reference: https://www.uniprot.org/uniparc/UPI001BEE5CB3
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: QUF98525.1
+      notes: UniParc UPI001BEE5CB3 archives the exact 1,074-aa Streptomyces sp. GupB
+        sequence (EMBL MW051641.1 protein QUF98525.1) with an active EMBL cross-reference
+        only and no UniProtKB cross-reference, confirming no UniProtKB accession resolves
+        for QUF98525.1.
   - subject: imine_intermediate_5
     predicate: is reduced by
     object: gupa
@@ -308,9 +364,17 @@ causal_graphs:
     - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98524.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-01'
-      notes: NCBI GenPept QUF98524.1 is the Streptomyces chrestomyceticus NA04264
-        MW051641.1 F420H2-dependent reductase sequence assigned here to GupA; no UniProtKB
-        entry resolved for this accession or for MW051641.1.
+      notes: NCBI Protein QUF98524.1 is the 162-aa Streptomyces sp. GupA NTF2-like
+        ketoreductase encoded by gupA (951..1439) on GenBank MW051641.1 and grounds
+        the GupA step and enzyme node as NCBIProtein:QUF98524.1.
+    - reference: https://www.uniprot.org/uniparc/UPI0019D1AFCC
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: QUF98524.1
+      notes: UniParc UPI0019D1AFCC archives the exact 162-aa Streptomyces sp. GupA
+        sequence (EMBL MW051641.1 protein QUF98524.1) with an active EMBL cross-reference
+        only and no UniProtKB cross-reference, confirming no UniProtKB accession resolves
+        for QUF98524.1.
   - subject: gupa
     predicate: forms
     object: piperazine_intermediate_4
@@ -332,9 +396,17 @@ causal_graphs:
     - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98524.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-01'
-      notes: NCBI GenPept QUF98524.1 is the Streptomyces chrestomyceticus NA04264
-        MW051641.1 F420H2-dependent reductase sequence assigned here to GupA; no UniProtKB
-        entry resolved for this accession or for MW051641.1.
+      notes: NCBI Protein QUF98524.1 is the 162-aa Streptomyces sp. GupA NTF2-like
+        ketoreductase encoded by gupA (951..1439) on GenBank MW051641.1 and grounds
+        the GupA step and enzyme node as NCBIProtein:QUF98524.1.
+    - reference: https://www.uniprot.org/uniparc/UPI0019D1AFCC
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: QUF98524.1
+      notes: UniParc UPI0019D1AFCC archives the exact 162-aa Streptomyces sp. GupA
+        sequence (EMBL MW051641.1 protein QUF98524.1) with an active EMBL cross-reference
+        only and no UniProtKB cross-reference, confirming no UniProtKB accession resolves
+        for QUF98524.1.
   - subject: piperazine_intermediate_4
     predicate: is oxidized by
     object: gupc
@@ -353,9 +425,17 @@ causal_graphs:
     - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98526.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-01'
-      notes: NCBI GenPept QUF98526.1 is the Streptomyces chrestomyceticus NA04264
-        MW051641.1 cytochrome P450 sequence assigned here to GupC; no UniProtKB entry
-        resolved for this accession or for MW051641.1.
+      notes: NCBI Protein QUF98526.1 is the 417-aa Streptomyces sp. GupC cytochrome
+        P450 monooxygenase encoded by gupC (4695..5948) on GenBank MW051641.1 and
+        grounds the GupC step and enzyme node as NCBIProtein:QUF98526.1.
+    - reference: https://www.uniprot.org/uniparc/UPI001BEEC1A1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: QUF98526.1
+      notes: UniParc UPI001BEEC1A1 archives the exact 417-aa Streptomyces sp. GupC
+        sequence (EMBL MW051641.1 protein QUF98526.1) with an active EMBL cross-reference
+        only and no UniProtKB cross-reference, confirming no UniProtKB accession resolves
+        for QUF98526.1.
   - subject: gupc
     predicate: forms
     object: strained_piperazine_6
@@ -376,9 +456,17 @@ causal_graphs:
     - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98526.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-01'
-      notes: NCBI GenPept QUF98526.1 is the Streptomyces chrestomyceticus NA04264
-        MW051641.1 cytochrome P450 sequence assigned here to GupC; no UniProtKB entry
-        resolved for this accession or for MW051641.1.
+      notes: NCBI Protein QUF98526.1 is the 417-aa Streptomyces sp. GupC cytochrome
+        P450 monooxygenase encoded by gupC (4695..5948) on GenBank MW051641.1 and
+        grounds the GupC step and enzyme node as NCBIProtein:QUF98526.1.
+    - reference: https://www.uniprot.org/uniparc/UPI001BEEC1A1
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: QUF98526.1
+      notes: UniParc UPI001BEEC1A1 archives the exact 417-aa Streptomyces sp. GupC
+        sequence (EMBL MW051641.1 protein QUF98526.1) with an active EMBL cross-reference
+        only and no UniProtKB cross-reference, confirming no UniProtKB accession resolves
+        for QUF98526.1.
   - subject: strained_piperazine_6
     predicate: is guaninylated by
     object: gupd
@@ -397,9 +485,17 @@ causal_graphs:
     - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98527.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-01'
-      notes: NCBI GenPept QUF98527.1 is the Streptomyces chrestomyceticus NA04264
-        MW051641.1 cytochrome P450 sequence assigned here to GupD; no UniProtKB entry
-        resolved for this accession or for MW051641.1.
+      notes: NCBI Protein QUF98527.1 is the 409-aa Streptomyces sp. GupD prenyltransferase
+        encoded by gupD (5996..7225) on GenBank MW051641.1 and grounds the GupD step
+        and enzyme node as NCBIProtein:QUF98527.1.
+    - reference: https://www.uniprot.org/uniparc/UPI001BEFDD7C
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: QUF98527.1
+      notes: UniParc UPI001BEFDD7C archives the exact 409-aa Streptomyces sp. GupD
+        sequence (EMBL MW051641.1 protein QUF98527.1) with an active EMBL cross-reference
+        only and no UniProtKB cross-reference, confirming no UniProtKB accession resolves
+        for QUF98527.1.
   - subject: gtp
     predicate: is used by
     object: gupd
@@ -419,9 +515,17 @@ causal_graphs:
     - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98527.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-01'
-      notes: NCBI GenPept QUF98527.1 is the Streptomyces chrestomyceticus NA04264
-        MW051641.1 cytochrome P450 sequence assigned here to GupD; no UniProtKB entry
-        resolved for this accession or for MW051641.1.
+      notes: NCBI Protein QUF98527.1 is the 409-aa Streptomyces sp. GupD prenyltransferase
+        encoded by gupD (5996..7225) on GenBank MW051641.1 and grounds the GupD step
+        and enzyme node as NCBIProtein:QUF98527.1.
+    - reference: https://www.uniprot.org/uniparc/UPI001BEFDD7C
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: QUF98527.1
+      notes: UniParc UPI001BEFDD7C archives the exact 409-aa Streptomyces sp. GupD
+        sequence (EMBL MW051641.1 protein QUF98527.1) with an active EMBL cross-reference
+        only and no UniProtKB cross-reference, confirming no UniProtKB accession resolves
+        for QUF98527.1.
   - subject: gupd
     predicate: forms
     object: guanipiperazine_a
@@ -442,9 +546,17 @@ causal_graphs:
     - reference: https://www.ncbi.nlm.nih.gov/protein/QUF98527.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-01'
-      notes: NCBI GenPept QUF98527.1 is the Streptomyces chrestomyceticus NA04264
-        MW051641.1 cytochrome P450 sequence assigned here to GupD; no UniProtKB entry
-        resolved for this accession or for MW051641.1.
+      notes: NCBI Protein QUF98527.1 is the 409-aa Streptomyces sp. GupD prenyltransferase
+        encoded by gupD (5996..7225) on GenBank MW051641.1 and grounds the GupD step
+        and enzyme node as NCBIProtein:QUF98527.1.
+    - reference: https://www.uniprot.org/uniparc/UPI001BEFDD7C
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: QUF98527.1
+      notes: UniParc UPI001BEFDD7C archives the exact 409-aa Streptomyces sp. GupD
+        sequence (EMBL MW051641.1 protein QUF98527.1) with an active EMBL cross-reference
+        only and no UniProtKB cross-reference, confirming no UniProtKB accession resolves
+        for QUF98527.1.
 curation_history:
 - timestamp: '2026-09-10T05:54:11Z'
   curator: seed_from_sources
@@ -465,3 +577,13 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-23T22:04:51Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: Grounded the Streptomyces sp. GupB, GupA, GupC, and GupD biosynthetic pathway
+    steps and BIOSYNTHESIS causal graph ENZYME nodes (gupb, gupa, gupc, gupd) in guanipiperazine
+    A to their native GenPept accessions NCBIProtein:QUF98525.1, NCBIProtein:QUF98524.1,
+    NCBIProtein:QUF98526.1, and NCBIProtein:QUF98527.1, and added UniParc UPI001BEE5CB3,
+    UPI0019D1AFCC, UPI001BEEC1A1, and UPI001BEFDD7C evidence documenting that MW051641.1
+    proteins have EMBL archive cross-references only and no UniProtKB entries.
+  llm_assisted: true
