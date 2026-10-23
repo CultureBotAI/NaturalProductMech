@@ -119,7 +119,9 @@ biosynthetic_pathway:
   notes: AzpE is annotated as the Streptacidiphilus griseoplanus JCM 4300 BGC0002458
     aspartate monooxygenase. The exact BCN13467.1 protein does not currently resolve
     as a UniProtKB entry, so this partial alazopeptin nitrite-supply step grounds
-    the reaction class by EC and Rhea and leaves the producer protein ungrounded.
+    the reaction class by EC and Rhea while grounding the AzpE causal-graph enzyme
+    node to the native GenPept accession NCBIProtein:BCN13467.1 (not indexed in UniProtKB
+    or UniParc).
   evidence:
   - reference: DOI:10.1002/anie.202100462
     evidence_type: PRIMARY_EXPERIMENT
@@ -137,7 +139,9 @@ biosynthetic_pathway:
     snippet: aspartate monooxygenase
     retrieved_on: '2026-09-28'
     notes: NCBI GenPept BCN13467.1 is the LC593326.1 azpE coding sequence; exact UniProtKB
-      searches for BCN13467 returned no matching entry.
+      searches for BCN13467 returned no matching entry; exact UniParc queries for
+      BCN13467.1 and LC593326 on 2026-10-23 also returned no indexed entry, grounding
+      the AzpE enzyme node as NCBIProtein:BCN13467.1.
   - reference: RHEA:69008
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-09-28'
@@ -158,7 +162,9 @@ biosynthetic_pathway:
   notes: AzpD is annotated as the Streptacidiphilus griseoplanus JCM 4300 BGC0002458
     nitrosuccinate lyase. The exact BCN13466.1 protein does not currently resolve
     as a UniProtKB entry, so this partial alazopeptin nitrite-supply step grounds
-    the reaction class by EC and Rhea and leaves the producer protein ungrounded.
+    the reaction class by EC and Rhea while grounding the AzpD causal-graph enzyme
+    node to the native GenPept accession NCBIProtein:BCN13466.1 (not indexed in UniProtKB
+    or UniParc).
   evidence:
   - reference: DOI:10.1002/anie.202100462
     evidence_type: PRIMARY_EXPERIMENT
@@ -176,7 +182,9 @@ biosynthetic_pathway:
     snippet: nitrosuccinate lyase
     retrieved_on: '2026-09-28'
     notes: NCBI GenPept BCN13466.1 is the LC593326.1 azpD coding sequence; exact UniProtKB
-      searches for BCN13466 returned no matching entry.
+      searches for BCN13466 returned no matching entry; exact UniParc queries for
+      BCN13466.1 and LC593326 on 2026-10-23 also returned no indexed entry, grounding
+      the AzpD enzyme node as NCBIProtein:BCN13466.1.
   - reference: RHEA:69044
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-09-28'
@@ -205,7 +213,8 @@ causal_graphs:
   - node_id: azpe
     label: AzpE
     node_type: ENZYME
-    grounding_status: UNGROUNDED
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:BCN13467.1
   - node_id: nitrosuccinate
     label: 2-nitrobutanedioate
     node_type: PRECURSOR
@@ -214,7 +223,8 @@ causal_graphs:
   - node_id: azpd
     label: AzpD
     node_type: ENZYME
-    grounding_status: UNGROUNDED
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:BCN13466.1
   - node_id: nitrite
     label: nitrite
     node_type: PRECURSOR
@@ -238,7 +248,9 @@ causal_graphs:
       snippet: aspartate monooxygenase
       retrieved_on: '2026-09-28'
       notes: NCBI GenPept BCN13467.1 is the LC593326.1 azpE coding sequence; exact
-        UniProtKB searches for BCN13467 returned no matching entry.
+        UniProtKB searches for BCN13467 returned no matching entry; exact UniParc
+        queries for BCN13467.1 and LC593326 on 2026-10-23 also returned no indexed
+        entry, grounding the AzpE enzyme node as NCBIProtein:BCN13467.1.
     - reference: RHEA:69008
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-28'
@@ -261,7 +273,9 @@ causal_graphs:
       snippet: aspartate monooxygenase
       retrieved_on: '2026-09-28'
       notes: NCBI GenPept BCN13467.1 is the LC593326.1 azpE coding sequence; exact
-        UniProtKB searches for BCN13467 returned no matching entry.
+        UniProtKB searches for BCN13467 returned no matching entry; exact UniParc
+        queries for BCN13467.1 and LC593326 on 2026-10-23 also returned no indexed
+        entry, grounding the AzpE enzyme node as NCBIProtein:BCN13467.1.
     - reference: RHEA:69008
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-28'
@@ -284,7 +298,9 @@ causal_graphs:
       snippet: nitrosuccinate lyase
       retrieved_on: '2026-09-28'
       notes: NCBI GenPept BCN13466.1 is the LC593326.1 azpD coding sequence; exact
-        UniProtKB searches for BCN13466 returned no matching entry.
+        UniProtKB searches for BCN13466 returned no matching entry; exact UniParc
+        queries for BCN13466.1 and LC593326 on 2026-10-23 also returned no indexed
+        entry, grounding the AzpD enzyme node as NCBIProtein:BCN13466.1.
     - reference: RHEA:69044
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-28'
@@ -307,7 +323,9 @@ causal_graphs:
       snippet: nitrosuccinate lyase
       retrieved_on: '2026-09-28'
       notes: NCBI GenPept BCN13466.1 is the LC593326.1 azpD coding sequence; exact
-        UniProtKB searches for BCN13466 returned no matching entry.
+        UniProtKB searches for BCN13466 returned no matching entry; exact UniParc
+        queries for BCN13466.1 and LC593326 on 2026-10-23 also returned no indexed
+        entry, grounding the AzpD enzyme node as NCBIProtein:BCN13466.1.
     - reference: RHEA:69044
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-28'
@@ -338,4 +356,14 @@ curation_history:
   changes: 'Replaced PR #274''s direct Rhea evidence URLs with RHEA CURIE references
     after adversarial review issue #275 found that the official direct Rhea page URLs
     returned HTTP 403 to automated re-fetching.'
+  llm_assisted: true
+- timestamp: '2026-10-23T22:53:34Z'
+  curator: antigravity
+  action: RECORD_CURATED
+  changes: Grounded the Streptacidiphilus griseoplanus JCM 4300 (BGC0002458) AzpE
+    and AzpD BIOSYNTHESIS causal graph ENZYME nodes (azpe, azpd) to their native GenPept
+    accessions NCBIProtein:BCN13467.1 and NCBIProtein:BCN13466.1 while preserving
+    EC:1.14.13.248 and EC:4.3.99.5 on the biosynthetic_pathway steps, and documented
+    that LC593326.1 proteins BCN13467.1 and BCN13466.1 are not indexed in UniProtKB
+    or UniParc.
   llm_assisted: true

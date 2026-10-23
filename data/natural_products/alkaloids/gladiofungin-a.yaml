@@ -138,8 +138,9 @@ biosynthetic_pathway:
     gladioli Lv-StA LvStA_05069/KAF1058474.1 trans-AT PKS as a required contributor
     to noncanonical chain release and butenolide formation in BGC0002083 gladiofungin
     A biosynthesis. The exact KAF1058474.1 GenPept accession did not resolve in UniProtKB
-    accession search on 2026-09-27, so enzyme_id is left unfilled and the public GenPept
-    sequence is cited as official NCBI grounding evidence.
+    accession search on 2026-09-27, so enzyme_id is grounded to the native GenPept
+    accession NCBIProtein:KAF1058474.1 (UniParc UPI00139C1DD8 maps only to retired/obsolete
+    UniProtKB/TrEMBL entry A0A833UU34.1).
   evidence:
   - reference: DOI:10.1002/anie.202005711
     evidence_type: PRIMARY_EXPERIMENT
@@ -161,12 +162,21 @@ biosynthetic_pathway:
     notes: NCBI GenPept KAF1058474.1 is the 10,181 aa LvStA_05069 CDS on complement(WITE01000004.1:1156002..1186547)
       from Burkholderia gladioli Lv-StA. The exact KAF1058474.1 GenPept accession
       did not resolve in UniProtKB accession search on 2026-09-27.
+  - reference: https://www.uniprot.org/uniparc/UPI00139C1DD8
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-23'
+    snippet: KAF1058474.1
+    notes: UniParc UPI00139C1DD8 archives the exact 10,181 aa Burkholderia gladioli
+      Lv-StA LvStA_05069 sequence (EMBL complement(WITE01000004.1:1156002..1186547),
+      protein KAF1058474.1) and records that UniProtKB/TrEMBL entry A0A833UU34.1 is
+      inactive/obsolete, confirming no active UniProtKB accession resolves for KAF1058474.1.
   - reference: https://www.ncbi.nlm.nih.gov/nuccore/WITE01000004.1
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-09-27'
     snippet: Burkholderia gladioli strain Lv-StA LvStA_4
     notes: GenBank WITE01000004.1 contains the BGC0002083 region used by MIBiG; within
       that contig, LvStA_05069 encodes protein KAF1058474.1.
+  enzyme_id: NCBIProtein:KAF1058474.1
 causal_graphs:
 - graph_id: gladiofungin-a-lvsta05069-afsa-biosynthesis
   scope: BIOSYNTHESIS
@@ -177,7 +187,8 @@ causal_graphs:
   - node_id: lvsta05069_afsa
     label: LvStA_05069 AfsA-like offloading domain
     node_type: ENZYME
-    grounding_status: UNGROUNDED
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:KAF1058474.1
   - node_id: butenolide_chain_release
     label: butenolide-forming polyketide chain release
     node_type: PROCESS
@@ -216,6 +227,15 @@ causal_graphs:
       notes: NCBI GenPept KAF1058474.1 is the 10,181 aa LvStA_05069 CDS on complement(WITE01000004.1:1156002..1186547)
         from Burkholderia gladioli Lv-StA. The exact KAF1058474.1 GenPept accession
         did not resolve in UniProtKB accession search on 2026-09-27.
+    - reference: https://www.uniprot.org/uniparc/UPI00139C1DD8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: KAF1058474.1
+      notes: UniParc UPI00139C1DD8 archives the exact 10,181 aa Burkholderia gladioli
+        Lv-StA LvStA_05069 sequence (EMBL complement(WITE01000004.1:1156002..1186547),
+        protein KAF1058474.1) and records that UniProtKB/TrEMBL entry A0A833UU34.1
+        is inactive/obsolete, confirming no active UniProtKB accession resolves for
+        KAF1058474.1.
     - reference: https://www.ncbi.nlm.nih.gov/nuccore/WITE01000004.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
@@ -249,6 +269,15 @@ causal_graphs:
       notes: NCBI GenPept KAF1058474.1 is the 10,181 aa LvStA_05069 CDS on complement(WITE01000004.1:1156002..1186547)
         from Burkholderia gladioli Lv-StA. The exact KAF1058474.1 GenPept accession
         did not resolve in UniProtKB accession search on 2026-09-27.
+    - reference: https://www.uniprot.org/uniparc/UPI00139C1DD8
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: KAF1058474.1
+      notes: UniParc UPI00139C1DD8 archives the exact 10,181 aa Burkholderia gladioli
+        Lv-StA LvStA_05069 sequence (EMBL complement(WITE01000004.1:1156002..1186547),
+        protein KAF1058474.1) and records that UniProtKB/TrEMBL entry A0A833UU34.1
+        is inactive/obsolete, confirming no active UniProtKB accession resolves for
+        KAF1058474.1.
     - reference: https://www.ncbi.nlm.nih.gov/nuccore/WITE01000004.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
@@ -281,3 +310,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-23T22:53:33Z'
+  curator: antigravity
+  action: RECORD_CURATED
+  changes: Grounded the Burkholderia gladioli Lv-StA LvStA_05069 AfsA-like offloading
+    domain (BGC0002083) biosynthetic pathway step and BIOSYNTHESIS causal graph ENZYME
+    node (lvsta05069_afsa) in gladiofungin A to the native GenPept accession NCBIProtein:KAF1058474.1,
+    and added UniParc UPI00139C1DD8 evidence documenting that the corresponding UniProtKB/TrEMBL
+    entry A0A833UU34.1 is retired/obsolete.
+  llm_assisted: true

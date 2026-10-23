@@ -131,8 +131,9 @@ biosynthetic_pathway:
   notes: This curates Streptomyces sp. Mg1 lnyI/AKL64828.1 as a required acyltransferase
     for the proposed aminoalkyl starter-unit branch of BGC0002072 linearmycin C biosynthesis.
     The exact AKL64828.1 GenPept accession did not resolve in UniProtKB exact accession,
-    locus-tag, or lnyI searches on 2026-09-27, so enzyme_id is left unfilled and the
-    public GenPept sequence is cited as official NCBI grounding evidence.
+    locus-tag, or lnyI searches on 2026-09-27, so enzyme_id is grounded to the native
+    GenPept accession NCBIProtein:AKL64828.1 (UniParc UPI00017E925A maps only to retired/obsolete
+    UniProtKB/TrEMBL entry B4VDY5.1).
   evidence:
   - reference: DOI:10.1016/j.chembiol.2017.08.008
     evidence_type: PRIMARY_EXPERIMENT
@@ -154,6 +155,14 @@ biosynthetic_pathway:
     notes: NCBI GenPept AKL64828.1 is the 345 aa lnyI/M444_04805 protein from Streptomyces
       sp. Mg1 and is encoded by CP011664.1:1076160..1077197. Exact AKL64828.1, M444_04805,
       and lnyI UniProtKB searches did not resolve an exact Mg1 accession on 2026-09-27.
+  - reference: https://www.uniprot.org/uniparc/UPI00017E925A
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-23'
+    snippet: AKL64828.1
+    notes: UniParc UPI00017E925A archives the exact 345 aa Streptomyces sp. Mg1 lnyI/M444_04805
+      sequence (EMBL CP011664.1:1076160..1077197, protein AKL64828.1) and records
+      that UniProtKB/TrEMBL entry B4VDY5.1 is inactive/obsolete, confirming no active
+      UniProtKB accession resolves for AKL64828.1.
   - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP011664.1
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-09-27'
@@ -161,6 +170,7 @@ biosynthetic_pathway:
     notes: GenBank CP011664.1 is the complete Streptomyces sp. Mg1 genome used by
       BGC0002072; within that genome, lnyI/M444_04805 occupies 1076160..1077197 and
       encodes AKL64828.1.
+  enzyme_id: NCBIProtein:AKL64828.1
 causal_graphs:
 - graph_id: linearmycin-c-lnyi-biosynthesis
   scope: BIOSYNTHESIS
@@ -170,7 +180,8 @@ causal_graphs:
   - node_id: lnyi_acyltransferase
     label: LnyI ACP S-malonyltransferase
     node_type: ENZYME
-    grounding_status: UNGROUNDED
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:AKL64828.1
   - node_id: aminoalkyl_starter_unit_biosynthesis
     label: aminoalkyl starter-unit biosynthesis
     node_type: PROCESS
@@ -209,6 +220,14 @@ causal_graphs:
       notes: NCBI GenPept AKL64828.1 is the 345 aa lnyI/M444_04805 protein from Streptomyces
         sp. Mg1 and is encoded by CP011664.1:1076160..1077197. Exact AKL64828.1, M444_04805,
         and lnyI UniProtKB searches did not resolve an exact Mg1 accession on 2026-09-27.
+    - reference: https://www.uniprot.org/uniparc/UPI00017E925A
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: AKL64828.1
+      notes: UniParc UPI00017E925A archives the exact 345 aa Streptomyces sp. Mg1
+        lnyI/M444_04805 sequence (EMBL CP011664.1:1076160..1077197, protein AKL64828.1)
+        and records that UniProtKB/TrEMBL entry B4VDY5.1 is inactive/obsolete, confirming
+        no active UniProtKB accession resolves for AKL64828.1.
     - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP011664.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
@@ -244,6 +263,14 @@ causal_graphs:
       notes: NCBI GenPept AKL64828.1 is the 345 aa lnyI/M444_04805 protein from Streptomyces
         sp. Mg1 and is encoded by CP011664.1:1076160..1077197. Exact AKL64828.1, M444_04805,
         and lnyI UniProtKB searches did not resolve an exact Mg1 accession on 2026-09-27.
+    - reference: https://www.uniprot.org/uniparc/UPI00017E925A
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: AKL64828.1
+      notes: UniParc UPI00017E925A archives the exact 345 aa Streptomyces sp. Mg1
+        lnyI/M444_04805 sequence (EMBL CP011664.1:1076160..1077197, protein AKL64828.1)
+        and records that UniProtKB/TrEMBL entry B4VDY5.1 is inactive/obsolete, confirming
+        no active UniProtKB accession resolves for AKL64828.1.
     - reference: https://www.ncbi.nlm.nih.gov/nuccore/CP011664.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
@@ -272,3 +299,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-23T22:53:34Z'
+  curator: antigravity
+  action: RECORD_CURATED
+  changes: Grounded the Streptomyces sp. Mg1 lnyI/AKL64828.1 acyltransferase (BGC0002072)
+    biosynthetic pathway step and BIOSYNTHESIS causal graph ENZYME node (lnyi_acyltransferase)
+    in linearmycin C to the native GenPept accession NCBIProtein:AKL64828.1, and added
+    UniParc UPI00017E925A evidence documenting that the corresponding UniProtKB/TrEMBL
+    entry B4VDY5.1 is retired/obsolete.
+  llm_assisted: true

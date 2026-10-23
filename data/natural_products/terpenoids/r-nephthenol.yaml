@@ -152,8 +152,9 @@ biosynthetic_pathway:
   notes: SteTC1 cyclizes (2E,6E,10E)-geranylgeranyl diphosphate to (R)-nephthenol.
     The assayed Stereum hirsutum FP-91666 SS1 protein is tracked by GenPept EIM84824.1,
     provisional RefSeq XP_007305993.1, locus tag STEHIDRAFT_122776, and JGI model
-    Stehi1_122776; no exact UniProtKB entry was available for these accessions or
-    the SteTC1 alias at curation time.
+    Stehi1_122776; enzyme_id is grounded to the native GenPept accession NCBIProtein:EIM84824.1
+    because UniParc UPI0004449431 archives the exact 316-aa sequence (RefSeq XP_007305993.1
+    / STEHIDRAFT_122776) without any UniProtKB entry.
   evidence:
   - reference: DOI:10.1016/j.fgb.2019.03.007
     evidence_type: PRIMARY_EXPERIMENT
@@ -175,8 +176,17 @@ biosynthetic_pathway:
     notes: NCBI resolves Stereum hirsutum XP_007305993.1 to locus tag STEHIDRAFT_122776
       and JGI model Stehi1_122776, and describes it as a provisional RefSeq identical
       to GenPept EIM84824.1.
+  - reference: https://www.uniprot.org/uniparc/UPI0004449431
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-23'
+    snippet: XP_007305993.1
+    notes: UniParc UPI0004449431 archives the exact 316-aa Stereum hirsutum FP-91666
+      SS1 STEHIDRAFT_122776 protein sequence (RefSeq XP_007305993.1, identical to
+      GenPept EIM84824.1 on JH687388.1) with a RefSeq cross-reference only and no
+      UniProtKB entry.
   substrate: CHEBI:58756
   product: CHEBI:82799
+  enzyme_id: NCBIProtein:EIM84824.1
 causal_graphs:
 - graph_id: r-nephthenol-stetc1-biosynthesis
   scope: BIOSYNTHESIS
@@ -191,7 +201,8 @@ causal_graphs:
   - node_id: stetc1
     label: SteTC1
     node_type: ENZYME
-    grounding_status: UNGROUNDED
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:EIM84824.1
   - node_id: r_nephthenol
     label: (R)-nephthenol
     node_type: COMPOUND
@@ -222,6 +233,14 @@ causal_graphs:
       notes: NCBI resolves Stereum hirsutum XP_007305993.1 to locus tag STEHIDRAFT_122776
         and JGI model Stehi1_122776, and describes it as a provisional RefSeq identical
         to GenPept EIM84824.1.
+    - reference: https://www.uniprot.org/uniparc/UPI0004449431
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: XP_007305993.1
+      notes: UniParc UPI0004449431 archives the exact 316-aa Stereum hirsutum FP-91666
+        SS1 STEHIDRAFT_122776 protein sequence (RefSeq XP_007305993.1, identical to
+        GenPept EIM84824.1 on JH687388.1) with a RefSeq cross-reference only and no
+        UniProtKB entry.
   - subject: stetc1
     predicate: forms
     object: r_nephthenol
@@ -246,6 +265,14 @@ causal_graphs:
       notes: NCBI resolves Stereum hirsutum XP_007305993.1 to locus tag STEHIDRAFT_122776
         and JGI model Stehi1_122776, and describes it as a provisional RefSeq identical
         to GenPept EIM84824.1.
+    - reference: https://www.uniprot.org/uniparc/UPI0004449431
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: XP_007305993.1
+      notes: UniParc UPI0004449431 archives the exact 316-aa Stereum hirsutum FP-91666
+        SS1 STEHIDRAFT_122776 protein sequence (RefSeq XP_007305993.1, identical to
+        GenPept EIM84824.1 on JH687388.1) with a RefSeq cross-reference only and no
+        UniProtKB entry.
 curation_history:
 - timestamp: '2026-09-10T05:54:17Z'
   curator: seed_from_sources
@@ -262,4 +289,13 @@ curation_history:
     biosynthesis; represented Stereum hirsutum SteTC1 as an ungrounded enzyme node
     because the GenPept, RefSeq, JGI, and locus identifiers do not resolve to an exact
     UniProtKB entry; and cited the experimentally characterized RHEA:42992 reaction.
+  llm_assisted: true
+- timestamp: '2026-10-23T22:53:35Z'
+  curator: antigravity
+  action: RECORD_CURATED
+  changes: Grounded the Stereum hirsutum FP-91666 SS1 SteTC1 biosynthetic pathway
+    step and BIOSYNTHESIS causal graph ENZYME node (stetc1) to the native GenPept
+    accession NCBIProtein:EIM84824.1, and added UniParc UPI0004449431 evidence documenting
+    that the 316-aa STEHIDRAFT_122776 sequence has a RefSeq cross-reference only and
+    no UniProtKB entry.
   llm_assisted: true

@@ -145,8 +145,10 @@ biosynthetic_pathway:
   - CHEBI:59789
   notes: SodC methylates and cyclizes (2E,6E)-farnesyl diphosphate to pre-sodorifen
     diphosphate. The exact intermediate is left out of the structured product field
-    because no exact stable chemical CURIE was selected. SodC is left without enzyme_id
-    because no UniProtKB accession resolved for exact GenPept accession AGO55050.1.
+    because no exact stable chemical CURIE was selected. SodC enzyme_id is grounded
+    to the native GenPept accession NCBIProtein:AGO55050.1 (UniParc UPI0001BED050
+    maps only to retired/obsolete UniProtKB/TrEMBL entries A0A318P5Q0.1, D1RQI8.1,
+    and S0AH05.1).
   evidence:
   - reference: DOI:10.1021/jacs.8b08510
     evidence_type: PRIMARY_EXPERIMENT
@@ -164,13 +166,23 @@ biosynthetic_pathway:
     retrieved_on: '2026-10-01'
     notes: NCBI GenPept AGO55050.1 is the Serratia plymuthica 4Rx13 SOD_c20760 sequence
       assigned here to SodC; no UniProtKB entry resolved for this accession or locus.
+  - reference: https://www.uniprot.org/uniparc/UPI0001BED050
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-23'
+    snippet: AGO55050.1
+    notes: UniParc UPI0001BED050 archives the exact 325-aa Serratia plymuthica 4Rx13
+      SodC sequence (EMBL CP006250.1 protein AGO55050.1, locus tag SOD_c20760) and
+      records that UniProtKB/TrEMBL entries A0A318P5Q0.1, D1RQI8.1, and S0AH05.1 are
+      inactive/obsolete, confirming no active UniProtKB accession resolves for AGO55050.1.
+  enzyme_id: NCBIProtein:AGO55050.1
 - step_number: 2
   enzyme_label: SodD terpene cyclase
   product: naturalproductmech:mibig-0ea28266f1
   notes: SodD consumes pre-sodorifen diphosphate to form sodorifen. The intermediate
     is left out of the structured substrate field because no exact stable chemical
-    CURIE was selected. SodD is left without enzyme_id because no UniProtKB accession
-    resolved for exact GenPept accession AGO55049.1.
+    CURIE was selected. SodD enzyme_id is grounded to the native GenPept accession
+    NCBIProtein:AGO55049.1 (UniParc UPI0001BED04F maps only to retired/obsolete UniProtKB/TrEMBL
+    entries S0AGG1.1, A0A318P116.1, and D1RQI7.1).
   evidence:
   - reference: DOI:10.1021/jacs.8b08510
     evidence_type: PRIMARY_EXPERIMENT
@@ -193,6 +205,15 @@ biosynthetic_pathway:
     retrieved_on: '2026-10-01'
     notes: NCBI GenPept AGO55049.1 is the Serratia plymuthica 4Rx13 SOD_c20750 sequence
       assigned here to SodD; no UniProtKB entry resolved for this accession or locus.
+  - reference: https://www.uniprot.org/uniparc/UPI0001BED04F
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-23'
+    snippet: AGO55049.1
+    notes: UniParc UPI0001BED04F archives the exact 384-aa Serratia plymuthica 4Rx13
+      SodD sequence (EMBL CP006250.1 protein AGO55049.1, locus tag SOD_c20750) and
+      records that UniProtKB/TrEMBL entries S0AGG1.1, A0A318P116.1, and D1RQI7.1 are
+      inactive/obsolete, confirming no active UniProtKB accession resolves for AGO55049.1.
+  enzyme_id: NCBIProtein:AGO55049.1
 causal_graphs:
 - graph_id: sodorifen-sodcd-biosynthesis
   scope: BIOSYNTHESIS
@@ -212,7 +233,8 @@ causal_graphs:
   - node_id: sodc
     label: SodC
     node_type: ENZYME
-    grounding_status: UNGROUNDED
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:AGO55050.1
   - node_id: pre_sodorifen_diphosphate
     label: pre-sodorifen diphosphate
     node_type: COMPOUND
@@ -220,7 +242,8 @@ causal_graphs:
   - node_id: sodd
     label: SodD
     node_type: ENZYME
-    grounding_status: UNGROUNDED
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:AGO55049.1
   - node_id: sodorifen
     label: sodorifen
     node_type: COMPOUND
@@ -247,6 +270,15 @@ causal_graphs:
       retrieved_on: '2026-10-01'
       notes: NCBI GenPept AGO55050.1 is the Serratia plymuthica 4Rx13 SOD_c20760 sequence
         assigned here to SodC; no UniProtKB entry resolved for this accession or locus.
+    - reference: https://www.uniprot.org/uniparc/UPI0001BED050
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: AGO55050.1
+      notes: UniParc UPI0001BED050 archives the exact 325-aa Serratia plymuthica 4Rx13
+        SodC sequence (EMBL CP006250.1 protein AGO55050.1, locus tag SOD_c20760) and
+        records that UniProtKB/TrEMBL entries A0A318P5Q0.1, D1RQI8.1, and S0AH05.1
+        are inactive/obsolete, confirming no active UniProtKB accession resolves for
+        AGO55050.1.
   - subject: s_adenosyl_l_methionine
     predicate: is used by
     object: sodc
@@ -267,6 +299,15 @@ causal_graphs:
       retrieved_on: '2026-10-01'
       notes: NCBI GenPept AGO55050.1 is the Serratia plymuthica 4Rx13 SOD_c20760 sequence
         assigned here to SodC; no UniProtKB entry resolved for this accession or locus.
+    - reference: https://www.uniprot.org/uniparc/UPI0001BED050
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: AGO55050.1
+      notes: UniParc UPI0001BED050 archives the exact 325-aa Serratia plymuthica 4Rx13
+        SodC sequence (EMBL CP006250.1 protein AGO55050.1, locus tag SOD_c20760) and
+        records that UniProtKB/TrEMBL entries A0A318P5Q0.1, D1RQI8.1, and S0AH05.1
+        are inactive/obsolete, confirming no active UniProtKB accession resolves for
+        AGO55050.1.
   - subject: sodc
     predicate: forms
     object: pre_sodorifen_diphosphate
@@ -287,6 +328,15 @@ causal_graphs:
       retrieved_on: '2026-10-01'
       notes: NCBI GenPept AGO55050.1 is the Serratia plymuthica 4Rx13 SOD_c20760 sequence
         assigned here to SodC; no UniProtKB entry resolved for this accession or locus.
+    - reference: https://www.uniprot.org/uniparc/UPI0001BED050
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: AGO55050.1
+      notes: UniParc UPI0001BED050 archives the exact 325-aa Serratia plymuthica 4Rx13
+        SodC sequence (EMBL CP006250.1 protein AGO55050.1, locus tag SOD_c20760) and
+        records that UniProtKB/TrEMBL entries A0A318P5Q0.1, D1RQI8.1, and S0AH05.1
+        are inactive/obsolete, confirming no active UniProtKB accession resolves for
+        AGO55050.1.
   - subject: pre_sodorifen_diphosphate
     predicate: is cyclized by
     object: sodd
@@ -312,6 +362,15 @@ causal_graphs:
       retrieved_on: '2026-10-01'
       notes: NCBI GenPept AGO55049.1 is the Serratia plymuthica 4Rx13 SOD_c20750 sequence
         assigned here to SodD; no UniProtKB entry resolved for this accession or locus.
+    - reference: https://www.uniprot.org/uniparc/UPI0001BED04F
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: AGO55049.1
+      notes: UniParc UPI0001BED04F archives the exact 384-aa Serratia plymuthica 4Rx13
+        SodD sequence (EMBL CP006250.1 protein AGO55049.1, locus tag SOD_c20750) and
+        records that UniProtKB/TrEMBL entries S0AGG1.1, A0A318P116.1, and D1RQI7.1
+        are inactive/obsolete, confirming no active UniProtKB accession resolves for
+        AGO55049.1.
   - subject: sodd
     predicate: forms
     object: sodorifen
@@ -337,6 +396,15 @@ causal_graphs:
       retrieved_on: '2026-10-01'
       notes: NCBI GenPept AGO55049.1 is the Serratia plymuthica 4Rx13 SOD_c20750 sequence
         assigned here to SodD; no UniProtKB entry resolved for this accession or locus.
+    - reference: https://www.uniprot.org/uniparc/UPI0001BED04F
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: AGO55049.1
+      notes: UniParc UPI0001BED04F archives the exact 384-aa Serratia plymuthica 4Rx13
+        SodD sequence (EMBL CP006250.1 protein AGO55049.1, locus tag SOD_c20750) and
+        records that UniProtKB/TrEMBL entries S0AGG1.1, A0A318P116.1, and D1RQI7.1
+        are inactive/obsolete, confirming no active UniProtKB accession resolves for
+        AGO55049.1.
 curation_history:
 - timestamp: '2026-09-10T05:54:06Z'
   curator: seed_from_sources
@@ -360,3 +428,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-23T22:53:35Z'
+  curator: antigravity
+  action: RECORD_CURATED
+  changes: Grounded the Serratia plymuthica 4Rx13 SodC and SodD biosynthetic pathway
+    steps and BIOSYNTHESIS causal graph ENZYME nodes (sodc, sodd) to their native
+    GenPept accessions NCBIProtein:AGO55050.1 and NCBIProtein:AGO55049.1, and added
+    UniParc UPI0001BED050 and UPI0001BED04F evidence documenting that the corresponding
+    UniProtKB/TrEMBL entries are retired/obsolete.
+  llm_assisted: true

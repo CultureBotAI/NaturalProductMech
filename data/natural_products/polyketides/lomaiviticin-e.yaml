@@ -247,11 +247,13 @@ causal_graphs:
   - node_id: lom62
     label: Lom62 acyltransferase/decarboxylase
     node_type: ENZYME
-    grounding_status: UNGROUNDED
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:AHF72798.1
   - node_id: lom63
     label: Lom63 acyl carrier protein
     node_type: PROTEIN
-    grounding_status: UNGROUNDED
+    grounding_status: GROUNDED
+    identifier: NCBIProtein:AHF72799.1
   - node_id: propionyl_acp_generation
     label: propionyl-ACP starter-unit generation
     node_type: PROCESS
@@ -282,6 +284,14 @@ causal_graphs:
       notes: NCBI GenPept AHF72798.1 is the 324 aa S. pacifica DPJ-0019 lom62 product
         on KF515737.1:59562..60536; exact AHF72798.1, AHF72798, lom62, and KF515737
         UniProtKB searches did not resolve a S. pacifica accession on 2026-09-27.
+    - reference: https://www.uniprot.org/uniparc/UPI00035CE3B5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: AHF72798.1
+      notes: UniParc UPI00035CE3B5 archives the exact 324 aa S. pacifica DPJ-0019
+        Lom62 sequence (EMBL KF515737.1:59562..60536, protein AHF72798.1) and records
+        that UniProtKB/TrEMBL entry W0HGI2.1 is inactive/obsolete, confirming no active
+        UniProtKB accession resolves for AHF72798.1.
     - reference: https://www.ncbi.nlm.nih.gov/protein/AHF72799.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
@@ -290,6 +300,14 @@ causal_graphs:
         carrier protein on complement(KF515737.1:60555..60878); exact AHF72799.1,
         AHF72799, lom63, and KF515737 UniProtKB searches did not resolve a S. pacifica
         accession on 2026-09-27.
+    - reference: https://www.uniprot.org/uniparc/UPI00037FF3C5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: AHF72799.1
+      notes: UniParc UPI00037FF3C5 archives the exact 107 aa S. pacifica DPJ-0019
+        Lom63 sequence (EMBL complement(KF515737.1:60555..60878), protein AHF72799.1)
+        and records that UniProtKB/TrEMBL entry W0HKR9.1 is inactive/obsolete, confirming
+        no active UniProtKB accession resolves for AHF72799.1.
     - reference: https://www.ncbi.nlm.nih.gov/nuccore/KF515737.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
@@ -315,6 +333,14 @@ causal_graphs:
       notes: NCBI GenPept AHF72798.1 is the 324 aa S. pacifica DPJ-0019 lom62 product
         on KF515737.1:59562..60536; exact AHF72798.1, AHF72798, lom62, and KF515737
         UniProtKB searches did not resolve a S. pacifica accession on 2026-09-27.
+    - reference: https://www.uniprot.org/uniparc/UPI00035CE3B5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: AHF72798.1
+      notes: UniParc UPI00035CE3B5 archives the exact 324 aa S. pacifica DPJ-0019
+        Lom62 sequence (EMBL KF515737.1:59562..60536, protein AHF72798.1) and records
+        that UniProtKB/TrEMBL entry W0HGI2.1 is inactive/obsolete, confirming no active
+        UniProtKB accession resolves for AHF72798.1.
     - reference: https://www.ncbi.nlm.nih.gov/protein/AHF72799.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
@@ -323,6 +349,14 @@ causal_graphs:
         carrier protein on complement(KF515737.1:60555..60878); exact AHF72799.1,
         AHF72799, lom63, and KF515737 UniProtKB searches did not resolve a S. pacifica
         accession on 2026-09-27.
+    - reference: https://www.uniprot.org/uniparc/UPI00037FF3C5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: AHF72799.1
+      notes: UniParc UPI00037FF3C5 archives the exact 107 aa S. pacifica DPJ-0019
+        Lom63 sequence (EMBL complement(KF515737.1:60555..60878), protein AHF72799.1)
+        and records that UniProtKB/TrEMBL entry W0HKR9.1 is inactive/obsolete, confirming
+        no active UniProtKB accession resolves for AHF72799.1.
     - reference: https://www.ncbi.nlm.nih.gov/nuccore/KF515737.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
@@ -350,6 +384,14 @@ causal_graphs:
       notes: NCBI GenPept AHF72798.1 is the 324 aa S. pacifica DPJ-0019 lom62 product
         on KF515737.1:59562..60536; exact AHF72798.1, AHF72798, lom62, and KF515737
         UniProtKB searches did not resolve a S. pacifica accession on 2026-09-27.
+    - reference: https://www.uniprot.org/uniparc/UPI00035CE3B5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: AHF72798.1
+      notes: UniParc UPI00035CE3B5 archives the exact 324 aa S. pacifica DPJ-0019
+        Lom62 sequence (EMBL KF515737.1:59562..60536, protein AHF72798.1) and records
+        that UniProtKB/TrEMBL entry W0HGI2.1 is inactive/obsolete, confirming no active
+        UniProtKB accession resolves for AHF72798.1.
     - reference: https://www.ncbi.nlm.nih.gov/protein/AHF72799.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
@@ -358,6 +400,14 @@ causal_graphs:
         carrier protein on complement(KF515737.1:60555..60878); exact AHF72799.1,
         AHF72799, lom63, and KF515737 UniProtKB searches did not resolve a S. pacifica
         accession on 2026-09-27.
+    - reference: https://www.uniprot.org/uniparc/UPI00037FF3C5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      snippet: AHF72799.1
+      notes: UniParc UPI00037FF3C5 archives the exact 107 aa S. pacifica DPJ-0019
+        Lom63 sequence (EMBL complement(KF515737.1:60555..60878), protein AHF72799.1)
+        and records that UniProtKB/TrEMBL entry W0HKR9.1 is inactive/obsolete, confirming
+        no active UniProtKB accession resolves for AHF72799.1.
     - reference: https://www.ncbi.nlm.nih.gov/nuccore/KF515737.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
@@ -393,3 +443,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
+- timestamp: '2026-10-23T22:53:34Z'
+  curator: antigravity
+  action: RECORD_CURATED
+  changes: Grounded the Salinispora pacifica DPJ-0019 Lom62 ENZYME node (lom62) and
+    Lom63 PROTEIN node (lom63) in lomaiviticin E to their native GenPept accessions
+    NCBIProtein:AHF72798.1 and NCBIProtein:AHF72799.1, and added UniParc UPI00035CE3B5
+    and UPI00037FF3C5 evidence documenting that the corresponding UniProtKB/TrEMBL
+    entries W0HGI2.1 and W0HKR9.1 are retired/obsolete.
+  llm_assisted: true
