@@ -137,8 +137,10 @@ biosynthetic_pathway:
   proposed: true
   notes: PbtH is recorded as the GE2270 maturation protein required for C-terminal
     amide formation. The exact substrate and product of the PbtH-associated step remain
-    ungrounded, and no exact UniProtKB accession resolved for the AGY49594.1 Planobispora
-    rosea protein.
+    ungrounded, and no UniProtKB accession tied directly to the KF366381.2 AGY49594.1
+    Planobispora rosea pbtH coding sequence resolved; active Planobispora rosea WGS
+    UniProtKB:U5Q3R1 (BOOI01000040 locus Pro02_44310) shares 100% amino-acid sequence
+    identity (122 aa, UPI0003BC0C0E) and is recorded as a companion UniProtKB example.
   evidence:
   - reference: DOI:10.1016/j.chembiol.2013.07.005
     evidence_type: PRIMARY_EXPERIMENT
@@ -156,22 +158,36 @@ biosynthetic_pathway:
   - reference: https://www.ncbi.nlm.nih.gov/protein/AGY49594.1
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-09-27'
-    notes: NCBI GenPept AGY49594.1 is the KF366381.2 pbtH coding sequence. Exact UniProtKB
-      searches for AGY49594 and pbtH Planobispora rosea returned no Planobispora PbtH
-      entry, so this protein is left without an organism-specific UniProtKB identifier.
+    notes: NCBI GenPept AGY49594.1 is the KF366381.2 pbtH coding sequence. UniProtKB:U5Q3R1
+      has the same 122 aa sequence (UPI0003BC0C0E) under EMBL BOOI01000040 and locus
+      Pro02_44310, but is not used as direct GE2270 PbtH grounding because it does
+      not cross-reference KF366381.2 or pbtH.
   - reference: https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-09-27'
     notes: MIBiG BGC0001155.5 assigns KF366381.2 to Planobispora rosea GE2270 biosynthesis
       and records knockout, enzymatic assay, and heterologous expression support for
       the locus.
+  - reference: https://www.uniprot.org/uniprotkb/U5Q3R1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-23'
+    notes: Active Planobispora rosea UniProtKB entry (U5Q3R1, Pro02_44310) for the
+      122-aa UPI0003BC0C0E sequence.
+  - reference: https://www.uniprot.org/uniparc/UPI0003BC0C0E
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-23'
+    notes: UniParc UPI0003BC0C0E links KF366381.2 AGY49594.1 (pbtH) and active Planobispora
+      rosea UniProtKB:U5Q3R1 under a single 100%-identical 122-aa sequence.
 - step_number: 2
   enzyme_label: PbtG1
   proposed: true
   notes: PbtG1 is recorded as the GE2270 maturation cyclodehydratase required for
     C-terminal oxazoline formation. The exact substrate and product of the PbtG1-associated
-    step remain ungrounded, and no UniProtKB accession tied to the AGY49581.1 Planobispora
-    rosea pbtG1 coding sequence resolved.
+    step remain ungrounded, and no UniProtKB accession tied directly to the KF366381.2
+    AGY49581.1 Planobispora rosea pbtG1 coding sequence resolved; active Planobispora
+    rosea WGS UniProtKB:U5Q0H1 (BOOI01000040 locus Pro02_44440) shares 100% amino-acid
+    sequence identity (607 aa, UPI0003BC18A5) and is recorded as a companion UniProtKB
+    example.
   evidence:
   - reference: DOI:10.1016/j.chembiol.2013.07.005
     evidence_type: PRIMARY_EXPERIMENT
@@ -199,6 +215,16 @@ biosynthetic_pathway:
     notes: MIBiG BGC0001155.5 assigns KF366381.2 to Planobispora rosea GE2270 biosynthesis
       and records knockout, enzymatic assay, and heterologous expression support for
       the locus.
+  - reference: https://www.uniprot.org/uniprotkb/U5Q0H1
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-23'
+    notes: Active Planobispora rosea UniProtKB entry (U5Q0H1, Pro02_44440) for the
+      607-aa UPI0003BC18A5 sequence.
+  - reference: https://www.uniprot.org/uniparc/UPI0003BC18A5
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-23'
+    notes: UniParc UPI0003BC18A5 links KF366381.2 AGY49581.1 (pbtG1) and active Planobispora
+      rosea UniProtKB:U5Q0H1 under a single 100%-identical 607-aa sequence.
 causal_graphs:
 - graph_id: ge2270-pbt-c-terminal-maturation
   scope: BIOSYNTHESIS
@@ -255,10 +281,10 @@ causal_graphs:
     - reference: https://www.ncbi.nlm.nih.gov/protein/AGY49594.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
-      notes: NCBI GenPept AGY49594.1 is the KF366381.2 pbtH coding sequence. Exact
-        UniProtKB searches for AGY49594 and pbtH Planobispora rosea returned no Planobispora
-        PbtH entry, so this protein is left without an organism-specific UniProtKB
-        identifier.
+      notes: NCBI GenPept AGY49594.1 is the KF366381.2 pbtH coding sequence. UniProtKB:U5Q3R1
+        has the same 122 aa sequence (UPI0003BC0C0E) under EMBL BOOI01000040 and locus
+        Pro02_44310, but is not used as direct GE2270 PbtH grounding because it does
+        not cross-reference KF366381.2 or pbtH.
     - reference: https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
@@ -313,10 +339,10 @@ causal_graphs:
     - reference: https://www.ncbi.nlm.nih.gov/protein/AGY49594.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
-      notes: NCBI GenPept AGY49594.1 is the KF366381.2 pbtH coding sequence. Exact
-        UniProtKB searches for AGY49594 and pbtH Planobispora rosea returned no Planobispora
-        PbtH entry, so this protein is left without an organism-specific UniProtKB
-        identifier.
+      notes: NCBI GenPept AGY49594.1 is the KF366381.2 pbtH coding sequence. UniProtKB:U5Q3R1
+        has the same 122 aa sequence (UPI0003BC0C0E) under EMBL BOOI01000040 and locus
+        Pro02_44310, but is not used as direct GE2270 PbtH grounding because it does
+        not cross-reference KF366381.2 or pbtH.
     - reference: https://mibig.secondarymetabolites.org/repository/BGC0001155.5/index.html
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
@@ -436,4 +462,12 @@ curation_history:
   changes: 'Added companion Planobispora rosea WGS UniProtKB example nodes (U5Q3R1
     via UPI0003BC0C0E for PbtH/AGY49594.1 and U5Q0H1 via UPI0003BC18A5 for PbtG1/AGY49581.1)
     while keeping pbth and pbtg1 ungrounded per issue #273.'
+  llm_assisted: true
+- timestamp: '2026-10-23T10:49:07Z'
+  curator: antigravity
+  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  changes: 'Aligned PbtH (AGY49594.1) and PbtG1 (AGY49581.1) biosynthetic_pathway
+    steps and causal_graphs edge notes with companion 100% sequence-identical Planobispora
+    rosea WGS UniProtKB examples U5Q3R1 (UPI0003BC0C0E) and U5Q0H1 (UPI0003BC18A5)
+    while preserving ungrounded KF366381.2 locus boundary per issue #273.'
   llm_assisted: true
