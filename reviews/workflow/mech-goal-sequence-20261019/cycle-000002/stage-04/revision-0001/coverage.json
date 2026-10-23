@@ -69,9 +69,9 @@
       "kind": "category",
       "skill_name": "review-yaml-category",
       "yaml_path": "reviews/structured/20261023T115930Z-penicillium-chrysogenum-penicillin-cohort/review.yaml",
-      "yaml_sha256": "e71e4a476abae109905bc88f6f0cba6e88fdef9eef157d8008ac66a31a457906",
+      "yaml_sha256": "9eba2af62ddda72739387be4483a87a7fb075673542e01df9e97047fed10f0c9",
       "markdown_path": "reviews/structured/20261023T115930Z-penicillium-chrysogenum-penicillin-cohort/review.md",
-      "markdown_sha256": "b01b1982d5c0bc8fef5d4eedad49ff26f6f8124e682228baf776cd42c4cb5cd3",
+      "markdown_sha256": "69916cb1ffff290fbb269a6c5f345472c0f4b71d637b9d9f0e491a1295305616",
       "target_records_count": 3,
       "targets": [
         {
@@ -82,7 +82,7 @@
           "mibig_row_sha256": "50cbd967cf8076f7cbfa5a77bbb9b2910e1e37593d10edea50ad6c3a83316de1",
           "verdict": "needs_curation",
           "highest_finding_severity": "major",
-          "native_verdict": "SEEDED retained; PcbAB pathway step and causal graph verified; Wisconsin 54-1255 strain qualification and DOI:10.1016/j.fgb.2007.03.008 reference routing queued for Stage 5"
+          "native_verdict": "SEEDED retained; two-step PcbAB (UniProtKB:A6N339, RHEA:23196) and IpnA (UniProtKB:B6HLU0, RHEA:22428) pathway and causal graph verified; Wisconsin 54-1255 strain qualification and DOI:10.1016/j.fgb.2007.03.008 reference routing queued for Stage 5"
         },
         {
           "record_path": "data/natural_products/amino_acids_and_peptides/isopenicillin-n.yaml",
@@ -92,7 +92,7 @@
           "mibig_row_sha256": "ae975df0e01f81b73c2e119b776207ca3e0f061375585a06ceef3f099dbbe860",
           "verdict": "needs_curation",
           "highest_finding_severity": "major",
-          "native_verdict": "SEEDED retained; PcbC (RHEA:19809) pathway step and causal graph verified; Wisconsin 54-1255 strain qualification and DOI:10.1016/j.fgb.2007.03.008 reference routing queued for Stage 5"
+          "native_verdict": "SEEDED retained; two-step PcbAB (UniProtKB:A6N339, RHEA:23196) and IpnA (UniProtKB:B6HLU0, RHEA:22428) pathway and causal graph verified; Wisconsin 54-1255 strain qualification and DOI:10.1016/j.fgb.2007.03.008 reference routing queued for Stage 5"
         },
         {
           "record_path": "data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml",
@@ -108,7 +108,7 @@
           ],
           "verdict": "needs_curation",
           "highest_finding_severity": "major",
-          "native_verdict": "SEEDED retained; PenDE causal graph verified; AS-P-78 / Wisconsin 54-1255 strain qualifications and Fierro 2006 / van den Berg 2007 reference routing queued for Stage 5"
+          "native_verdict": "SEEDED retained; sodium-salt PenDE pathway boundary (#1015) documented; AS-P-78 / Wisconsin 54-1255 strain qualifications and Fierro 2006 / van den Berg 2007 reference routing queued for Stage 5"
         }
       ]
     },
@@ -117,9 +117,9 @@
       "kind": "record",
       "skill_name": "review-yaml-record",
       "yaml_path": "reviews/structured/20261023T115935Z-benzylpenicillin-sodium-record-review/review.yaml",
-      "yaml_sha256": "ff55de36d206b4a1ef9ac412439a3c910705373b240e803631635fbe361ee8fa",
+      "yaml_sha256": "561aaed5b6954f981f3ad0a4f8de22a8449ffbc99611eeb1baa61cd132da0d61",
       "markdown_path": "reviews/structured/20261023T115935Z-benzylpenicillin-sodium-record-review/review.md",
-      "markdown_sha256": "d0242044cc837ee8c9622a582b24b861e367322a309faccd73820a88076fdd0f",
+      "markdown_sha256": "bbfa02b3f2413aa614f41df9777173399edf97dfb88a82aa87c298fa1e20c461",
       "target_records_count": 1,
       "targets": [
         {
@@ -136,7 +136,7 @@
           ],
           "verdict": "needs_curation",
           "highest_finding_severity": "major",
-          "native_verdict": "SEEDED retained; PenDE causal graph and UniProtKB:P15802 grounding verified; AS-P-78 / Wisconsin 54-1255 strain qualifications and Fierro 2006 / van den Berg 2007 reference routing queued for Stage 5"
+          "native_verdict": "SEEDED retained; sodium-salt PenDE pathway boundary (#1015) documented; AS-P-78 / Wisconsin 54-1255 strain qualifications and Fierro 2006 / van den Berg 2007 reference routing queued for Stage 5"
         }
       ]
     }

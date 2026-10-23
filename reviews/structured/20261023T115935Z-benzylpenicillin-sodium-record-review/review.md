@@ -11,11 +11,11 @@
 
 ## Summary
 
-Complete single-record scientific review of data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml (CHEBI:51765, benzylpenicillin sodium), seeded from MIBiG BGC0000404:1 (DQ192518.1) and BGC0000405:3 (EF601124.1) and cross-referenced to AntibioticMech:ABM_000072. Confirms exact 3-star ChEBI grounding (FCPVYOBCFFNJFS-LQDWTQKMSA-M) and AMINO_ACIDS_AND_PEPTIDES filing, while identifying three open findings for Stage 5: (1) missing strain qualifications AS-P-78 (BGC0000404:1, Fierro et al. 2006 DOI:10.1016/j.fgb.2006.03.001) and Wisconsin 54-1255 (BGC0000405:3, van den Berg et al. 2007 DOI:10.1016/j.fgb.2007.03.008), which currently collapse two distinct Penicillium chrysogenum strains into one unqualified producer_organisms[0] entry (F-BPEN-001), (2) anachronistic entry-level citations attaching Chain et al. 1940 (DOI:10.1016/s0140-6736(00)87452-8) to the 2005/2006 DQ192518.1 locus and Smith et al. 1990 (PMID:1368505) to the 2007 EF601124.1 locus (F-BPEN-002), and (3) upstream MIBiG sodium-salt SMILES encoding that blocks PenDE (UniProtKB:P15802, RHEA:19809) biosynthetic_pathway curation under open issue #1015 (F-BPEN-003).
+Complete single-record scientific review of data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml (CHEBI:51765, benzylpenicillin sodium), seeded from MIBiG BGC0000404:1 (DQ192518.1) and BGC0000405:3 (EF601124.1) and cross-referenced to pubchem:23668834. Confirms exact 3-star ChEBI grounding (FCPVYOBCFFNJFS-LQDWTQKMSA-M) and AMINO_ACIDS_AND_PEPTIDES filing, while identifying three open findings for Stage 5: (1) missing strain qualifications AS-P-78 on producer_organisms[0] (BGC0000404:1, Fierro et al. 2006 DOI:10.1016/j.fgb.2006.03.001) and Wisconsin 54-1255 on producer_organisms[1] (BGC0000405:3, van den Berg et al. 2007 DOI:10.1016/j.fgb.2007.03.008), which currently leave the two separate Penicillium chrysogenum (NCBITaxon:5076) producer entries unqualified by strain (F-BPEN-001), (2) anachronistic entry-level citations attaching Chain et al. 1940 (DOI:10.1016/s0140-6736(00)87452-8) to the 2005/2006 DQ192518.1 producer/locus claims and Smith et al. 1990 (PMID:1368505) to the 2007 EF601124.1 producer/locus claims (F-BPEN-002), and (3) upstream MIBiG sodium-salt SMILES encoding that blocks PenDE (UniProtKB:P15802, RHEA:19809) biosynthetic_pathway curation under open issue #1015 (F-BPEN-003).
 
 ## Scope And Provenance
 
-Complete single-record scientific review of CHEBI:51765 (data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml) across chemical identity, AntibioticMech cross-reference, NPClassifier classification, producer organisms, biosynthetic gene clusters (BGC0000404 and BGC0000405), discussions, and curation history.
+Complete single-record scientific review of CHEBI:51765 (data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml) across chemical identity, PubChem cross-reference (pubchem:23668834), NPClassifier classification, producer organisms, biosynthetic gene clusters (BGC0000404 and BGC0000405), discussions, and curation history.
 
 Selection: Terminal penicillin G record of the Penicillium chrysogenum BGC0000404/BGC0000405 cohort, selected to audit its dual-cluster producer/locus provenance and the sodium-salt validator boundary (#1015).
 Coverage: full; 1 reviewed / 1 in the declared population.
@@ -37,17 +37,17 @@ Working-tree hashes do not imply those bytes were committed.
 
 ## Scientific And Domain Assessments
 
-### Exact ChEBI grounding, AntibioticMech cross-reference, and AMINO_ACIDS_AND_PEPTIDES filing
+### Exact ChEBI grounding, PubChem cross-reference, and AMINO_ACIDS_AND_PEPTIDES filing
 
 identity: supported. Targets: CHEBI:51765.
 
-CHEBI:51765 accurately grounds the committed sodium-salt structure (FCPVYOBCFFNJFS-LQDWTQKMSA-M), links to AntibioticMech:ABM_000072 and pubchem:23668834, and files at its locked PATHS.tsv path.
+CHEBI:51765 accurately grounds the committed sodium-salt structure (FCPVYOBCFFNJFS-LQDWTQKMSA-M), links to pubchem:23668834, and files at its locked PATHS.tsv path.
 
 ### Missing AS-P-78 and Wisconsin 54-1255 strain qualifiers on NCBITaxon:5076 producer claims
 
 completeness: concern. Targets: CHEBI:51765.
 
-Because BGC0000404:1 and BGC0000405:3 are not yet in curation/mibig_producer_strains.tsv, both producer claims collapse into a single unqualified NCBITaxon:5076 entry instead of distinguishing strain AS-P-78 (BGC0000404:1) and strain Wisconsin 54-1255 (BGC0000405:3).
+Because BGC0000404:1 and BGC0000405:3 are not yet in curation/mibig_producer_strains.tsv, producer_organisms[0] (mibig:BGC0000404) and producer_organisms[1] (mibig:BGC0000405) remain two separate unqualified NCBITaxon:5076 entries instead of distinguishing strain AS-P-78 (BGC0000404:1) and strain Wisconsin 54-1255 (BGC0000405:3).
 
 ### Anachronistic Chain et al. 1940 and Smith et al. 1990 citations on DQ192518.1 and EF601124.1 claims
 
@@ -67,13 +67,13 @@ Upstream MIBiG sodium-salt SMILES causes CHEBI:51765 grounding rather than neutr
 
 major / open / confirmed; issue key: penicillium-chrysogenum-bgc0000404-bgc0000405-producer-strains-missing.
 
-producer_organisms[0] on benzylpenicillin-sodium.yaml collapses BGC0000404:1 (DQ192518.1) and BGC0000405:3 (EF601124.1) into one unqualified NCBITaxon:5076 entry. Add BGC0000404:1 (strain AS-P-78, DOI:10.1016/j.fgb.2006.03.001) and BGC0000405:3 (strain Wisconsin 54-1255, DOI:10.1016/j.fgb.2007.03.008) to curation/mibig_producer_strains.tsv.
+producer_organisms[0] (mibig:BGC0000404, DQ192518.1) and producer_organisms[1] (mibig:BGC0000405, EF601124.1) on benzylpenicillin-sodium.yaml omit producer_organisms[*].strain, leaving two separate unqualified NCBITaxon:5076 entries. Add BGC0000404:1 (strain AS-P-78, DOI:10.1016/j.fgb.2006.03.001) and BGC0000405:3 (strain Wisconsin 54-1255, DOI:10.1016/j.fgb.2007.03.008) to curation/mibig_producer_strains.tsv.
 
 ### F-BPEN-002: Anachronistic entry-level citations on BGC0000404:1 (DQ192518.1) and BGC0000405:3 (EF601124.1) in benzylpenicillin-sodium.yaml
 
 major / open / confirmed; issue key: bgc0000404-bgc0000405-anachronistic-claim-reference-routing.
 
-producer_organisms[0].evidence[0..1] and biosynthetic_gene_clusters[0..1].evidence[0] on benzylpenicillin-sodium.yaml cite Chain et al. 1940 (DOI:10.1016/s0140-6736(00)87452-8) for DQ192518.1 and Smith et al. 1990 (PMID:1368505) for EF601124.1. Route BGC0000404:1 and BGC0000405:3 in curation/mibig_claim_references.tsv to Fierro et al. 2006 / DQ192518.1 and van den Berg et al. 2007 / EF601124.1 while preserving the upstream source references.
+producer_organisms[0].evidence[0].reference and biosynthetic_gene_clusters[0].evidence[0].reference cite Chain et al. 1940 (DOI:10.1016/s0140-6736(00)87452-8) for DQ192518.1 (BGC0000404:1), and producer_organisms[1].evidence[0].reference and biosynthetic_gene_clusters[1].evidence[0].reference cite Smith et al. 1990 (PMID:1368505, Bio/Technology 1990;8(1):39-41, DOI:10.1038/nbt0190-39) for EF601124.1 (BGC0000405:3). Route BGC0000404:1 and BGC0000405:3 in curation/mibig_claim_references.tsv to producer_reference=DOI:10.1016/j.fgb.2006.03.001, locus_reference=DOI:10.1016/j.fgb.2006.03.001 (for BGC0000404:1) and producer_reference=DOI:10.1016/j.fgb.2007.03.008, locus_reference=DOI:10.1016/j.fgb.2007.03.008 (for BGC0000405:3) while preserving the upstream source_reference values.
 
 ### F-BPEN-003: Sodium-salt encoding on CHEBI:51765 blocks terminal PenDE (RHEA:19809) biosynthetic_pathway step (#1015)
 
@@ -85,16 +85,16 @@ CHEBI:51765 encodes benzylpenicillin sodium (FCPVYOBCFFNJFS-LQDWTQKMSA-M) from M
 
 ### qualify-bpen-strains
 
-Add BGC0000404:1 (AS-P-78, DOI:10.1016/j.fgb.2006.03.001) and BGC0000405:3 (Wisconsin 54-1255, DOI:10.1016/j.fgb.2007.03.008) to curation/mibig_producer_strains.tsv and re-seed benzylpenicillin-sodium.yaml.
+Add source_id=BGC0000404:1 (expected_source_row_sha256 9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19, strain AS-P-78, reference DOI:10.1016/j.fgb.2006.03.001) and source_id=BGC0000405:3 (expected_source_row_sha256 847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42, strain Wisconsin 54-1255, reference DOI:10.1016/j.fgb.2007.03.008) to curation/mibig_producer_strains.tsv and re-seed benzylpenicillin-sodium.yaml.
 
-- Confirm producer_organisms on benzylpenicillin-sodium.yaml resolves into strain AS-P-78 and strain Wisconsin 54-1255 after running scripts/seed_from_sources.py.
+- Confirm producer_organisms[0] (mibig:BGC0000404) carries strain AS-P-78 and producer_organisms[1] (mibig:BGC0000405) carries strain Wisconsin 54-1255 on benzylpenicillin-sodium.yaml after running scripts/seed_from_sources.py.
 - Confirm strict validation and verify_corpus pass with 0 errors.
 
 ### route-bpen-claim-references
 
-Add BGC0000404:1 and BGC0000405:3 to curation/mibig_claim_references.tsv routing producer_reference to DOI:10.1016/j.fgb.2006.03.001 and DOI:10.1016/j.fgb.2007.03.008 and locus_reference to https://www.ebi.ac.uk/ena/browser/view/DQ192518.1 and https://www.ebi.ac.uk/ena/browser/view/EF601124.1 while preserving source_reference, then re-seed benzylpenicillin-sodium.yaml.
+Add source_id=BGC0000404:1 (producer_reference=DOI:10.1016/j.fgb.2006.03.001, locus_reference=DOI:10.1016/j.fgb.2006.03.001, source_reference=DOI:10.1016/s0140-6736(00)87452-8) and source_id=BGC0000405:3 (producer_reference=DOI:10.1016/j.fgb.2007.03.008, locus_reference=DOI:10.1016/j.fgb.2007.03.008, source_reference=PMID:1368505) to curation/mibig_claim_references.tsv, then re-seed benzylpenicillin-sodium.yaml.
 
-- Confirm producer and locus claims on benzylpenicillin-sodium.yaml cite Fierro et al. 2006 / DQ192518.1 and van den Berg et al. 2007 / EF601124.1 with CURATOR_INFERENCE routing provenance.
+- Confirm producer and locus claims on benzylpenicillin-sodium.yaml cite Fierro et al. 2006 (DOI:10.1016/j.fgb.2006.03.001) and van den Berg et al. 2007 (DOI:10.1016/j.fgb.2007.03.008) with CURATOR_INFERENCE routing provenance while preserving Chain et al. 1940 (DOI:10.1016/s0140-6736(00)87452-8) and Smith et al. 1990 (PMID:1368505) as source_reference.
 - Confirm strict validation and verify_corpus pass with 0 errors.
 
 ### retain-chebi-51765-salt-boundary
@@ -110,9 +110,9 @@ Retain CHEBI:51765 identity and OPEN discussions on benzylpenicillin-sodium.yaml
 
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
-| owner-yaml | data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml; Full YAML record at 508e90d99e8e8cb7627eb8c885d535be25873c7f | supports | Identifier CHEBI:51765, grounding_status EXACT, curation_status SEEDED, Standard InChIKey FCPVYOBCFFNJFS-LQDWTQKMSA-M, cross-references AntibioticMech:ABM_000072 and pubchem:23668834, one unqualified NCBITaxon:5076 producer claim with two evidence items, two BGCs (mibig:BGC0000404 DQ192518.1 and mibig:BGC0000405 EF601124.1), and two OPEN discussions (name-disagreement and shared-structure). |
+| owner-yaml | data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml; Full YAML record at 508e90d99e8e8cb7627eb8c885d535be25873c7f | supports | Identifier CHEBI:51765, grounding_status EXACT, curation_status SEEDED, Standard InChIKey FCPVYOBCFFNJFS-LQDWTQKMSA-M, cross-reference xrefs=[pubchem:23668834] (no AntibioticMech related_records entry because AntibioticMech indexes neutral/anionic penicillin G rather than the sodium salt), two separate unqualified NCBITaxon:5076 producer_organisms entries (producer_organisms[0] linked to mibig:BGC0000404 and producer_organisms[1] linked to mibig:BGC0000405), two BGCs (mibig:BGC0000404 genbank:DQ192518.1 and mibig:BGC0000405 genbank:EF601124.1), and two OPEN discussions (name-disagreement and shared-structure). |
 | chebi-51765 | data/raw/chebi_structures.tsv; CHEBI:51765 row (sha256 0eec0515d861443a7c6e4eaa372db4618b6ad6a8fa7d00f23f2605806c5cc7d0), CHEBI:18208 row (sha256 3a01dd984ebebd9179def226a372014e96b2d318adc4f42ffc7340d9bffbcf71), CHEBI:51354 row (sha256 44eeba25b3eecd8f4b84007094a4a2ca92eb78310d1375883613988624172684) | supports | 3-star ChEBI entry CHEBI:51765 (benzylpenicillin sodium) defines the sodium carboxylate salt FCPVYOBCFFNJFS-LQDWTQKMSA-M, distinct from neutral benzylpenicillin (CHEBI:18208, JGSARLDLIJGVTE-MBNYWOFBSA-N) and benzylpenicillin(1-) (CHEBI:51354, JGSARLDLIJGVTE-MBNYWOFBSA-M). |
-| mibig-bgc0000404-405 | data/raw/mibig_compounds.tsv; BGC0000404:1 row (sha256 9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19) and BGC0000405:3 row (sha256 847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42) | partial | Raw rows BGC0000404:1 (DQ192518.1:17440..28759, doi:10.1016/s0140-6736(00)87452-8) and BGC0000405:3 (EF601124.1:22186..33473, pubmed:1368505) both report compound_name=benzylpenicillin with the sodium-salt SMILES FCPVYOBCFFNJFS-LQDWTQKMSA-M and species-level taxon NCBITaxon:5076. |
+| mibig-bgc0000404-405 | data/raw/mibig_compounds.tsv; BGC0000404:1 row (sha256 9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19) and BGC0000405:3 row (sha256 847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42) | partial | Raw rows BGC0000404:1 (DQ192518.1:17440..28759, compound_name=penicillin, doi:10.1016/s0140-6736(00)87452-8) and BGC0000405:3 (EF601124.1:22186..33473, compound_name=benzylpenicillin, pubmed:1368505) both supply the sodium-salt SMILES FCPVYOBCFFNJFS-LQDWTQKMSA-M and species-level taxon NCBITaxon:5076. |
 | dq192518-ef601124-literature | DOI:10.1016/j.fgb.2006.03.001; Fierro et al., Fungal Genet. Biol. 2006;43(9):618-629 (PMID:16713314, DQ192518.1 strain AS-P-78) and van den Berg et al., Fungal Genet. Biol. 2007;44(9):830-844 (DOI:10.1016/j.fgb.2007.03.008, PMID:17548217, EF601124.1 strain Wisconsin 54-1255) | supports | Primary sequence publications establish that DQ192518.1 (BGC0000404) was sequenced from Penicillium chrysogenum industrial strain AS-P-78 and EF601124.1 (BGC0000405) was sequenced from Penicillium chrysogenum laboratory reference strain Wisconsin 54-1255. |
 
 ## Limits And Additional Notes
@@ -147,18 +147,18 @@ native_verdict: SEEDED retained; AS-P-78 and Wisconsin 54-1255 producer strain q
 scientific_review: true
 summary: 'Complete single-record scientific review of data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml
   (CHEBI:51765, benzylpenicillin sodium), seeded from MIBiG BGC0000404:1 (DQ192518.1)
-  and BGC0000405:3 (EF601124.1) and cross-referenced to AntibioticMech:ABM_000072.
-  Confirms exact 3-star ChEBI grounding (FCPVYOBCFFNJFS-LQDWTQKMSA-M) and AMINO_ACIDS_AND_PEPTIDES
+  and BGC0000405:3 (EF601124.1) and cross-referenced to pubchem:23668834. Confirms
+  exact 3-star ChEBI grounding (FCPVYOBCFFNJFS-LQDWTQKMSA-M) and AMINO_ACIDS_AND_PEPTIDES
   filing, while identifying three open findings for Stage 5: (1) missing strain qualifications
-  AS-P-78 (BGC0000404:1, Fierro et al. 2006 DOI:10.1016/j.fgb.2006.03.001) and Wisconsin
-  54-1255 (BGC0000405:3, van den Berg et al. 2007 DOI:10.1016/j.fgb.2007.03.008),
-  which currently collapse two distinct Penicillium chrysogenum strains into one unqualified
-  producer_organisms[0] entry (F-BPEN-001), (2) anachronistic entry-level citations
-  attaching Chain et al. 1940 (DOI:10.1016/s0140-6736(00)87452-8) to the 2005/2006
-  DQ192518.1 locus and Smith et al. 1990 (PMID:1368505) to the 2007 EF601124.1 locus
-  (F-BPEN-002), and (3) upstream MIBiG sodium-salt SMILES encoding that blocks PenDE
-  (UniProtKB:P15802, RHEA:19809) biosynthetic_pathway curation under open issue #1015
-  (F-BPEN-003).'
+  AS-P-78 on producer_organisms[0] (BGC0000404:1, Fierro et al. 2006 DOI:10.1016/j.fgb.2006.03.001)
+  and Wisconsin 54-1255 on producer_organisms[1] (BGC0000405:3, van den Berg et al.
+  2007 DOI:10.1016/j.fgb.2007.03.008), which currently leave the two separate Penicillium
+  chrysogenum (NCBITaxon:5076) producer entries unqualified by strain (F-BPEN-001),
+  (2) anachronistic entry-level citations attaching Chain et al. 1940 (DOI:10.1016/s0140-6736(00)87452-8)
+  to the 2005/2006 DQ192518.1 producer/locus claims and Smith et al. 1990 (PMID:1368505)
+  to the 2007 EF601124.1 producer/locus claims (F-BPEN-002), and (3) upstream MIBiG
+  sodium-salt SMILES encoding that blocks PenDE (UniProtKB:P15802, RHEA:19809) biosynthetic_pathway
+  curation under open issue #1015 (F-BPEN-003).'
 source:
   git_revision: 508e90d99e8e8cb7627eb8c885d535be25873c7f
   state: git_commit
@@ -345,16 +345,13 @@ targets:
     path: data/natural_products/PATHS.tsv
     role: Locked identifier-to-path filing table
   - repository: CultureBotAI/NaturalProductMech
-    path: data/raw/antibioticmech_inchikeys.tsv
-    role: Pinned AntibioticMech cross-reference table
-  - repository: CultureBotAI/NaturalProductMech
     path: data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml
     role: Generated natural product owner record
 scope:
   description: Complete single-record scientific review of CHEBI:51765 (data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml)
-    across chemical identity, AntibioticMech cross-reference, NPClassifier classification,
-    producer organisms, biosynthetic gene clusters (BGC0000404 and BGC0000405), discussions,
-    and curation history.
+    across chemical identity, PubChem cross-reference (pubchem:23668834), NPClassifier
+    classification, producer organisms, biosynthetic gene clusters (BGC0000404 and
+    BGC0000405), discussions, and curation history.
   selection: Terminal penicillin G record of the Penicillium chrysogenum BGC0000404/BGC0000405
     cohort, selected to audit its dual-cluster producer/locus provenance and the sodium-salt
     validator boundary (#1015).
@@ -437,10 +434,13 @@ evidence:
   support: supports
   snapshot_sha256: 201779de13d90f23e3ec700c3bd7dbaa46cacd9a0f74d87638b35eb5e51a5bf2
   summary: Identifier CHEBI:51765, grounding_status EXACT, curation_status SEEDED,
-    Standard InChIKey FCPVYOBCFFNJFS-LQDWTQKMSA-M, cross-references AntibioticMech:ABM_000072
-    and pubchem:23668834, one unqualified NCBITaxon:5076 producer claim with two evidence
-    items, two BGCs (mibig:BGC0000404 DQ192518.1 and mibig:BGC0000405 EF601124.1),
-    and two OPEN discussions (name-disagreement and shared-structure).
+    Standard InChIKey FCPVYOBCFFNJFS-LQDWTQKMSA-M, cross-reference xrefs=[pubchem:23668834]
+    (no AntibioticMech related_records entry because AntibioticMech indexes neutral/anionic
+    penicillin G rather than the sodium salt), two separate unqualified NCBITaxon:5076
+    producer_organisms entries (producer_organisms[0] linked to mibig:BGC0000404 and
+    producer_organisms[1] linked to mibig:BGC0000405), two BGCs (mibig:BGC0000404
+    genbank:DQ192518.1 and mibig:BGC0000405 genbank:EF601124.1), and two OPEN discussions
+    (name-disagreement and shared-structure).
 - evidence_id: chebi-51765
   kind: database
   reference: data/raw/chebi_structures.tsv
@@ -462,10 +462,10 @@ evidence:
   accessed_at: '2026-10-23T11:50:41.000000Z'
   support: partial
   snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
-  summary: Raw rows BGC0000404:1 (DQ192518.1:17440..28759, doi:10.1016/s0140-6736(00)87452-8)
-    and BGC0000405:3 (EF601124.1:22186..33473, pubmed:1368505) both report compound_name=benzylpenicillin
-    with the sodium-salt SMILES FCPVYOBCFFNJFS-LQDWTQKMSA-M and species-level taxon
-    NCBITaxon:5076.
+  summary: Raw rows BGC0000404:1 (DQ192518.1:17440..28759, compound_name=penicillin,
+    doi:10.1016/s0140-6736(00)87452-8) and BGC0000405:3 (EF601124.1:22186..33473,
+    compound_name=benzylpenicillin, pubmed:1368505) both supply the sodium-salt SMILES
+    FCPVYOBCFFNJFS-LQDWTQKMSA-M and species-level taxon NCBITaxon:5076.
 - evidence_id: dq192518-ef601124-literature
   kind: primary_source
   reference: DOI:10.1016/j.fgb.2006.03.001
@@ -481,12 +481,11 @@ evidence:
 assessments:
 - assessment_id: identity-and-xrefs
   area: identity
-  topic: Exact ChEBI grounding, AntibioticMech cross-reference, and AMINO_ACIDS_AND_PEPTIDES
+  topic: Exact ChEBI grounding, PubChem cross-reference, and AMINO_ACIDS_AND_PEPTIDES
     filing
   outcome: supported
   summary: CHEBI:51765 accurately grounds the committed sodium-salt structure (FCPVYOBCFFNJFS-LQDWTQKMSA-M),
-    links to AntibioticMech:ABM_000072 and pubchem:23668834, and files at its locked
-    PATHS.tsv path.
+    links to pubchem:23668834, and files at its locked PATHS.tsv path.
   target_ids:
   - CHEBI:51765
   evidence_ids:
@@ -499,8 +498,9 @@ assessments:
     producer claims
   outcome: concern
   summary: Because BGC0000404:1 and BGC0000405:3 are not yet in curation/mibig_producer_strains.tsv,
-    both producer claims collapse into a single unqualified NCBITaxon:5076 entry instead
-    of distinguishing strain AS-P-78 (BGC0000404:1) and strain Wisconsin 54-1255 (BGC0000405:3).
+    producer_organisms[0] (mibig:BGC0000404) and producer_organisms[1] (mibig:BGC0000405)
+    remain two separate unqualified NCBITaxon:5076 entries instead of distinguishing
+    strain AS-P-78 (BGC0000404:1) and strain Wisconsin 54-1255 (BGC0000405:3).
   target_ids:
   - CHEBI:51765
   evidence_ids:
@@ -545,15 +545,18 @@ findings:
   certainty: confirmed
   title: Missing AS-P-78 (BGC0000404:1) and Wisconsin 54-1255 (BGC0000405:3) producer
     strain qualifications on CHEBI:51765
-  description: producer_organisms[0] on benzylpenicillin-sodium.yaml collapses BGC0000404:1
-    (DQ192518.1) and BGC0000405:3 (EF601124.1) into one unqualified NCBITaxon:5076
-    entry. Add BGC0000404:1 (strain AS-P-78, DOI:10.1016/j.fgb.2006.03.001) and BGC0000405:3
-    (strain Wisconsin 54-1255, DOI:10.1016/j.fgb.2007.03.008) to curation/mibig_producer_strains.tsv.
+  description: producer_organisms[0] (mibig:BGC0000404, DQ192518.1) and producer_organisms[1]
+    (mibig:BGC0000405, EF601124.1) on benzylpenicillin-sodium.yaml omit producer_organisms[*].strain,
+    leaving two separate unqualified NCBITaxon:5076 entries. Add BGC0000404:1 (strain
+    AS-P-78, DOI:10.1016/j.fgb.2006.03.001) and BGC0000405:3 (strain Wisconsin 54-1255,
+    DOI:10.1016/j.fgb.2007.03.008) to curation/mibig_producer_strains.tsv.
   target_ids:
   - CHEBI:51765
   field_paths:
   - producer_organisms[0].strain
   - producer_organisms[0].evidence
+  - producer_organisms[1].strain
+  - producer_organisms[1].evidence
   evidence_ids:
   - owner-yaml
   - mibig-bgc0000404-405
@@ -593,17 +596,19 @@ findings:
   certainty: confirmed
   title: Anachronistic entry-level citations on BGC0000404:1 (DQ192518.1) and BGC0000405:3
     (EF601124.1) in benzylpenicillin-sodium.yaml
-  description: producer_organisms[0].evidence[0..1] and biosynthetic_gene_clusters[0..1].evidence[0]
-    on benzylpenicillin-sodium.yaml cite Chain et al. 1940 (DOI:10.1016/s0140-6736(00)87452-8)
-    for DQ192518.1 and Smith et al. 1990 (PMID:1368505) for EF601124.1. Route BGC0000404:1
-    and BGC0000405:3 in curation/mibig_claim_references.tsv to Fierro et al. 2006
-    / DQ192518.1 and van den Berg et al. 2007 / EF601124.1 while preserving the upstream
-    source references.
+  description: producer_organisms[0].evidence[0].reference and biosynthetic_gene_clusters[0].evidence[0].reference
+    cite Chain et al. 1940 (DOI:10.1016/s0140-6736(00)87452-8) for DQ192518.1 (BGC0000404:1),
+    and producer_organisms[1].evidence[0].reference and biosynthetic_gene_clusters[1].evidence[0].reference
+    cite Smith et al. 1990 (PMID:1368505, Bio/Technology 1990;8(1):39-41, DOI:10.1038/nbt0190-39)
+    for EF601124.1 (BGC0000405:3). Route BGC0000404:1 and BGC0000405:3 in curation/mibig_claim_references.tsv
+    to producer_reference=DOI:10.1016/j.fgb.2006.03.001, locus_reference=DOI:10.1016/j.fgb.2006.03.001
+    (for BGC0000404:1) and producer_reference=DOI:10.1016/j.fgb.2007.03.008, locus_reference=DOI:10.1016/j.fgb.2007.03.008
+    (for BGC0000405:3) while preserving the upstream source_reference values.
   target_ids:
   - CHEBI:51765
   field_paths:
   - producer_organisms[0].evidence[0].reference
-  - producer_organisms[0].evidence[1].reference
+  - producer_organisms[1].evidence[0].reference
   - biosynthetic_gene_clusters[0].evidence[0].reference
   - biosynthetic_gene_clusters[1].evidence[0].reference
   evidence_ids:
@@ -652,6 +657,7 @@ findings:
   - CHEBI:51765
   field_paths:
   - identifier
+  - label
   - chemical_structure.standard_inchi_key
   - chemical_structure.smiles
   - discussions
@@ -687,8 +693,10 @@ findings:
     validator invariant tracked in #1015.'
 actions:
 - action_id: qualify-bpen-strains
-  description: Add BGC0000404:1 (AS-P-78, DOI:10.1016/j.fgb.2006.03.001) and BGC0000405:3
-    (Wisconsin 54-1255, DOI:10.1016/j.fgb.2007.03.008) to curation/mibig_producer_strains.tsv
+  description: Add source_id=BGC0000404:1 (expected_source_row_sha256 9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19,
+    strain AS-P-78, reference DOI:10.1016/j.fgb.2006.03.001) and source_id=BGC0000405:3
+    (expected_source_row_sha256 847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42,
+    strain Wisconsin 54-1255, reference DOI:10.1016/j.fgb.2007.03.008) to curation/mibig_producer_strains.tsv
     and re-seed benzylpenicillin-sodium.yaml.
   finding_ids:
   - F-BPEN-001
@@ -718,14 +726,16 @@ actions:
     role: Locked identifier-to-path filing table
   generator: scripts/seed_from_sources.py
   acceptance_checks:
-  - Confirm producer_organisms on benzylpenicillin-sodium.yaml resolves into strain
-    AS-P-78 and strain Wisconsin 54-1255 after running scripts/seed_from_sources.py.
+  - Confirm producer_organisms[0] (mibig:BGC0000404) carries strain AS-P-78 and producer_organisms[1]
+    (mibig:BGC0000405) carries strain Wisconsin 54-1255 on benzylpenicillin-sodium.yaml
+    after running scripts/seed_from_sources.py.
   - Confirm strict validation and verify_corpus pass with 0 errors.
 - action_id: route-bpen-claim-references
-  description: Add BGC0000404:1 and BGC0000405:3 to curation/mibig_claim_references.tsv
-    routing producer_reference to DOI:10.1016/j.fgb.2006.03.001 and DOI:10.1016/j.fgb.2007.03.008
-    and locus_reference to https://www.ebi.ac.uk/ena/browser/view/DQ192518.1 and https://www.ebi.ac.uk/ena/browser/view/EF601124.1
-    while preserving source_reference, then re-seed benzylpenicillin-sodium.yaml.
+  description: Add source_id=BGC0000404:1 (producer_reference=DOI:10.1016/j.fgb.2006.03.001,
+    locus_reference=DOI:10.1016/j.fgb.2006.03.001, source_reference=DOI:10.1016/s0140-6736(00)87452-8)
+    and source_id=BGC0000405:3 (producer_reference=DOI:10.1016/j.fgb.2007.03.008,
+    locus_reference=DOI:10.1016/j.fgb.2007.03.008, source_reference=PMID:1368505)
+    to curation/mibig_claim_references.tsv, then re-seed benzylpenicillin-sodium.yaml.
   finding_ids:
   - F-BPEN-002
   target_ids:
@@ -755,8 +765,9 @@ actions:
   generator: scripts/seed_from_sources.py
   acceptance_checks:
   - Confirm producer and locus claims on benzylpenicillin-sodium.yaml cite Fierro
-    et al. 2006 / DQ192518.1 and van den Berg et al. 2007 / EF601124.1 with CURATOR_INFERENCE
-    routing provenance.
+    et al. 2006 (DOI:10.1016/j.fgb.2006.03.001) and van den Berg et al. 2007 (DOI:10.1016/j.fgb.2007.03.008)
+    with CURATOR_INFERENCE routing provenance while preserving Chain et al. 1940 (DOI:10.1016/s0140-6736(00)87452-8)
+    and Smith et al. 1990 (PMID:1368505) as source_reference.
   - Confirm strict validation and verify_corpus pass with 0 errors.
 - action_id: retain-chebi-51765-salt-boundary
   description: 'Retain CHEBI:51765 identity and OPEN discussions on benzylpenicillin-sodium.yaml

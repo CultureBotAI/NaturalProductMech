@@ -11,8 +11,8 @@ This report records the Stage 4 (`record_review`) audit for run `mech-goal-seque
   - `.venv/bin/python -m pytest -q tests/test_graph_components.py` (`246` standalone causal graph component YAML files validated, `40` passed, `0` failed; output SHA256 `b5a96643be6dd236e181473fa1bbb15fbe22452a95447e99ddc4b6b0a949d7a2`), and
   - `.venv/bin/python scripts/curation_worklist.py --review-records --limit 5` (`8,924` worklist items across `12` queues; output SHA256 `7edbdc274466a876b3ef923cd3fa7c5a711f1f6aa3119d96c43ef85c7c768c31`: `producer-evidence=2,292`, `biosynthesis=1,184`, `structure-disagreement=5`, `name-disagreement=67`, `unnamed-producer=39`, `shared-structure=207`, `needs-a-name=18`, `occurrence-only=12`, `pathway-ambiguous=620`, `unresolved-taxa=3,329`, `stereo-incomplete=1,124`, `record-review=27`).
 - **Native Persistence Bundles Saved**:
-  1. **Cohort Review (`review-yaml-category`)**: `reviews/structured/20261023T115930Z-penicillium-chrysogenum-penicillin-cohort/review.yaml` (`e71e4a476abae109905bc88f6f0cba6e88fdef9eef157d8008ac66a31a457906`) and `review.md` (`b01b1982d5c0bc8fef5d4eedad49ff26f6f8124e682228baf776cd42c4cb5cd3`) — covers the 3-record *Penicillium chrysogenum* (`NCBITaxon:5076`) penicillin biosynthetic cohort (`BGC0000404`, `BGC0000405`) whose pathway steps (`PcbAB` / `PcbC`) and causal graphs were curated and UniProt-grounded in Cycle 2 Stages 2 and 3.
-  2. **Single-Record Review (`review-yaml-record`)**: `reviews/structured/20261023T115935Z-benzylpenicillin-sodium-record-review/review.yaml` (`ff55de36d206b4a1ef9ac412439a3c910705373b240e803631635fbe361ee8fa`) and `review.md` (`d0242044cc837ee8c9622a582b24b861e367322a309faccd73820a88076fdd0f`) — deep single-record audit of `data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml` (`CHEBI:51765`).
+  1. **Cohort Review (`review-yaml-category`)**: `reviews/structured/20261023T115930Z-penicillium-chrysogenum-penicillin-cohort/review.yaml` (`9eba2af62ddda72739387be4483a87a7fb075673542e01df9e97047fed10f0c9`) and `review.md` (`69916cb1ffff290fbb269a6c5f345472c0f4b71d637b9d9f0e491a1295305616`) — covers the 3-record *Penicillium chrysogenum* (`NCBITaxon:5076`) penicillin biosynthetic cohort (`BGC0000404`, `BGC0000405`) whose pathway steps (`PcbAB` [`UniProtKB:A6N339`, `RHEA:23196`] / `IpnA` [`UniProtKB:B6HLU0`, `RHEA:22428`]) and causal graphs were curated and UniProt-grounded in Cycle 2 Stages 2 and 3.
+  2. **Single-Record Review (`review-yaml-record`)**: `reviews/structured/20261023T115935Z-benzylpenicillin-sodium-record-review/review.yaml` (`561aaed5b6954f981f3ad0a4f8de22a8449ffbc99611eeb1baa61cd132da0d61`) and `review.md` (`bbfa02b3f2413aa614f41df9777173399edf97dfb88a82aa87c298fa1e20c461`) — deep single-record audit of `data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml` (`CHEBI:51765`).
 - **Open & Carried-Forward Scientific Findings Preserved for Stage 5 (`resolve_review_findings`)**: `3` new open findings (`F-PEN-001`, `F-PEN-002`, `F-PEN-003`) plus `1` carried-forward deferred finding (`F-PIK-DES-003` from Cycle 1 Stage 5 `#1012`) are preserved with exact remediation or boundary dispositions for Stage 5. No scientific record (`data/natural_products/`, `data/causal_graphs/`, `curation/*.tsv`) was mutated in Stage 4.
 
 ## 2. Frozen Inventory & Cohort Membership
@@ -29,33 +29,33 @@ This report records the Stage 4 (`record_review`) audit for run `mech-goal-seque
 - **Severity**: `high` (workflow) / `major` (native `record_review.yaml`)
 - **Category**: `completeness` (`PRODUCER_OR_OCCURRENCE`)
 - **Status**: `open`
-- **Field Paths**: `producer_organisms[0].strain`, `producer_organisms[0].evidence`
+- **Field Paths**: `producer_organisms[0].strain`, `producer_organisms[0].evidence`, `producer_organisms[1].strain`, `producer_organisms[1].evidence`
 - **Affected Records & Source Rows**:
   - `data/natural_products/amino_acids_and_peptides/n-5s-5-ammonio-5-carboxylatopentanoyl-l-cysteinyl-d-valinate.yaml` (`BGC0000405:1`, `expected_source_row_sha256: 50cbd967cf8076f7cbfa5a77bbb9b2910e1e37593d10edea50ad6c3a83316de1`)
   - `data/natural_products/amino_acids_and_peptides/isopenicillin-n.yaml` (`BGC0000405:2`, `expected_source_row_sha256: ae975df0e01f81b73c2e119b776207ca3e0f061375585a06ceef3f099dbbe860`)
-  - `data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml` (`BGC0000404:1` [`9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19`] and `BGC0000405:3` [`847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42`])
-- **Evidence**: Fierro et al., *Fungal Genet. Biol.* 43(9):618-629 (2006), `PMID:16713314`, `DOI:10.1016/j.fgb.2006.03.001` (GenBank `DQ192518.1`, strain `AS-P-78`); van den Berg et al., *Fungal Genet. Biol.* 44(9):830-843 (2007), `PMID:17499530`, `DOI:10.1016/j.fgb.2007.03.008` (GenBank `EF601124.1`, strain `Wisconsin 54-1255`).
+  - `data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml` (`BGC0000404:1` [`9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19`] on `producer_organisms[0]` and `BGC0000405:3` [`847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42`] on `producer_organisms[1]`)
+- **Evidence**: Fierro et al., *Fungal Genet. Biol.* 43(9):618-629 (2006), `PMID:16713314`, `DOI:10.1016/j.fgb.2006.03.001` (GenBank `DQ192518.1`, strain `AS-P-78`); van den Berg et al., *Fungal Genet. Biol.* 44(9):830-844 (2007), `PMID:17548217`, `DOI:10.1016/j.fgb.2007.03.008` (GenBank `EF601124.1`, strain `Wisconsin 54-1255`).
 - **Stage 5 Remediation**: Add four source-pinned rows (`BGC0000404:1`, `BGC0000405:1`, `BGC0000405:2`, `BGC0000405:3`) to `curation/mibig_producer_strains.tsv` and re-run `.venv/bin/python scripts/seed_from_sources.py`.
 
 ### `F-PEN-002` — Anachronistic entry-level citations on `BGC0000404:1` (`DOI:10.1016/s0140-6736(00)87452-8`, Chain et al. 1940 on `DQ192518.1`) and `BGC0000405:1..3` (`PMID:1368505`, Smith et al. 1990 on `EF601124.1`)
 - **Severity**: `medium` (workflow) / `major` (native `record_review.yaml`)
 - **Category**: `provenance` (`EVIDENCE_MISMATCH`)
 - **Status**: `open`
-- **Field Paths**: `producer_organisms[0].evidence`, `biosynthetic_gene_clusters[0].evidence`, `biosynthetic_gene_clusters[1].evidence`
+- **Field Paths**: `producer_organisms[0].evidence[0].reference`, `producer_organisms[1].evidence[0].reference`, `biosynthetic_gene_clusters[0].evidence[0].reference`, `biosynthetic_gene_clusters[1].evidence[0].reference`
 - **Affected Records & Source Rows**:
   - `data/natural_products/amino_acids_and_peptides/n-5s-5-ammonio-5-carboxylatopentanoyl-l-cysteinyl-d-valinate.yaml` (`BGC0000405:1`, `50cbd967cf8076f7cbfa5a77bbb9b2910e1e37593d10edea50ad6c3a83316de1`)
   - `data/natural_products/amino_acids_and_peptides/isopenicillin-n.yaml` (`BGC0000405:2`, `ae975df0e01f81b73c2e119b776207ca3e0f061375585a06ceef3f099dbbe860`)
   - `data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml` (`BGC0000404:1`, `9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19`; `BGC0000405:3`, `847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42`)
-- **Evidence**: `DOI:10.1016/s0140-6736(00)87452-8` (Chain et al., *Lancet* 1940) predates GenBank `DQ192518.1` (`BGC0000404:1`) by 65 years; `PMID:1368505` (Smith et al., *EMBO J.* 1990) predates GenBank `EF601124.1` (`BGC0000405:1..3`) by 17 years.
-- **Stage 5 Remediation**: Add `BGC0000404:1` (`DOI:10.1016/j.fgb.2006.03.001`) and `BGC0000405:1..3` (`DOI:10.1016/j.fgb.2007.03.008`) to `curation/mibig_claim_references.tsv` and re-run `.venv/bin/python scripts/seed_from_sources.py`.
+- **Evidence**: `DOI:10.1016/s0140-6736(00)87452-8` (Chain et al., *Lancet* 1940) predates GenBank `DQ192518.1` (`BGC0000404:1`, MIBiG coordinates `17440..28759`, `entry_version 4`) by 65 years; `PMID:1368505` (Smith et al., *Bio/Technology* 1990;8(1):39-41, `DOI:10.1038/nbt0190-39`) predates GenBank `EF601124.1` (`BGC0000405:1..3`, MIBiG coordinates `22186..33473`, `entry_version 5`) by 17 years.
+- **Stage 5 Remediation**: Add `BGC0000404:1` (`producer_reference=DOI:10.1016/j.fgb.2006.03.001`, `locus_reference=DOI:10.1016/j.fgb.2006.03.001`, `source_reference=DOI:10.1016/s0140-6736(00)87452-8`) and `BGC0000405:1..3` (`producer_reference=DOI:10.1016/j.fgb.2007.03.008`, `locus_reference=DOI:10.1016/j.fgb.2007.03.008`, `source_reference=PMID:1368505`) to `curation/mibig_claim_references.tsv` and re-run `.venv/bin/python scripts/seed_from_sources.py`.
 
 ### `F-PEN-003` — Upstream MIBiG salt and protonation-state encoding on `CHEBI:51765` (`benzylpenicillin sodium` vs biological `CHEBI:51354`) and `CHEBI:58572` (monoanion vs neutral ACV `CHEBI:28496`)
 - **Severity**: `low` (workflow) / `minor` (native `record_review.yaml`)
 - **Category**: `representation` (`LUMP_AND_SPLIT`)
 - **Status**: `open`
-- **Field Paths**: `id`, `name`, `chemical_structure.standard_inchi_key`, `chemical_structure.smiles`, `biosynthetic_pathway`
+- **Field Paths**: `identifier`, `label`, `chemical_structure.standard_inchi_key`, `chemical_structure.smiles`, `discussions`
 - **Affected Records**: `data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml` (`CHEBI:51765`) and `data/natural_products/amino_acids_and_peptides/n-5s-5-ammonio-5-carboxylatopentanoyl-l-cysteinyl-d-valinate.yaml` (`CHEBI:58572`).
-- **Stage 5 Disposition**: Source-limited representation boundary (`DEFER` in Stage 5 linked to `#1015`) unless a pharmaceutical counterion-stripping policy is adopted in `curation/structure_corrections.tsv`.
+- **Stage 5 Disposition**: Source-limited representation boundary (`DEFER` in Stage 5 linked to `#1015`) unless a pharmaceutical counterion-stripping policy is adopted in `curation/mibig_structure_corrections.tsv`.
 
 ### `F-PIK-DES-003` (Carried Forward from Cycle 1 Stage 5 `#1012`) — Upstream stereo-incomplete cyclic tautomer on `BGC0000899:1` (`desosamine.yaml`) and unmerged `BGC0000094`/`BGC0000898` cluster split
 - **Status**: `deferred` (`carried_from: F-PIK-DES-003`, `issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/1012`)

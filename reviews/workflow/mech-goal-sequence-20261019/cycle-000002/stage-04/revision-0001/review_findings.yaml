@@ -11,14 +11,14 @@ native_review_ids:
 native_review_bundles:
   - review_id: 20261023T115930Z-penicillium-chrysogenum-penicillin-cohort
     yaml_path: reviews/structured/20261023T115930Z-penicillium-chrysogenum-penicillin-cohort/review.yaml
-    yaml_sha256: e71e4a476abae109905bc88f6f0cba6e88fdef9eef157d8008ac66a31a457906
+    yaml_sha256: 9eba2af62ddda72739387be4483a87a7fb075673542e01df9e97047fed10f0c9
     markdown_path: reviews/structured/20261023T115930Z-penicillium-chrysogenum-penicillin-cohort/review.md
-    markdown_sha256: b01b1982d5c0bc8fef5d4eedad49ff26f6f8124e682228baf776cd42c4cb5cd3
+    markdown_sha256: 69916cb1ffff290fbb269a6c5f345472c0f4b71d637b9d9f0e491a1295305616
   - review_id: 20261023T115935Z-benzylpenicillin-sodium-record-review
     yaml_path: reviews/structured/20261023T115935Z-benzylpenicillin-sodium-record-review/review.yaml
-    yaml_sha256: ff55de36d206b4a1ef9ac412439a3c910705373b240e803631635fbe361ee8fa
+    yaml_sha256: 561aaed5b6954f981f3ad0a4f8de22a8449ffbc99611eeb1baa61cd132da0d61
     markdown_path: reviews/structured/20261023T115935Z-benzylpenicillin-sodium-record-review/review.md
-    markdown_sha256: d0242044cc837ee8c9622a582b24b861e367322a309faccd73820a88076fdd0f
+    markdown_sha256: bbfa02b3f2413aa614f41df9777173399edf97dfb88a82aa87c298fa1e20c461
 findings:
   - id: F-PEN-001
     title: Missing AS-P-78 (BGC0000404:1) and Wisconsin 54-1255 (BGC0000405:1..3) producer strain qualifications on Penicillium chrysogenum (NCBITaxon:5076) records
@@ -33,6 +33,8 @@ findings:
     field_paths:
       - 'producer_organisms[0].strain'
       - 'producer_organisms[0].evidence'
+      - 'producer_organisms[1].strain'
+      - 'producer_organisms[1].evidence'
     source_rows:
       - source: mibig_4.0
         row_id: 'BGC0000404:1'
@@ -49,18 +51,19 @@ findings:
     evidence_refs:
       - PMID:16713314
       - DOI:10.1016/j.fgb.2006.03.001
-      - PMID:17499530
+      - PMID:17548217
       - DOI:10.1016/j.fgb.2007.03.008
       - https://www.ncbi.nlm.nih.gov/nuccore/DQ192518.1
       - https://www.ncbi.nlm.nih.gov/nuccore/EF601124.1
     description: >-
       All three Penicillium chrysogenum (NCBITaxon:5076) records seeded from BGC0000404:1 (DQ192518.1) and BGC0000405:1..3
-      (EF601124.1) omit producer_organisms[0].strain because MIBiG 4.0 reports species-level organism_name='Penicillium
-      chrysogenum'. GenBank DQ192518.1 and Fierro et al. (Fungal Genet. Biol. 2006, PMID:16713314,
-      DOI:10.1016/j.fgb.2006.03.001) identify the BGC0000404 sequenced producer strain as Penicillium chrysogenum AS-P-78,
-      while GenBank EF601124.1 and van den Berg et al. (Fungal Genet. Biol. 2007, PMID:17499530,
-      DOI:10.1016/j.fgb.2007.03.008) identify the BGC0000405 sequenced producer strain as Penicillium chrysogenum Wisconsin
-      54-1255.
+      (EF601124.1) omit producer_organisms[*].strain (producer_organisms[0] on n-5s-5-ammonio-5-carboxylatopentanoyl-l-cysteinyl-d-valinate.yaml
+      and isopenicillin-n.yaml, and both producer_organisms[0] and producer_organisms[1] on benzylpenicillin-sodium.yaml)
+      because MIBiG 4.0 reports species-level organism_name='Penicillium chrysogenum'. GenBank DQ192518.1 and Fierro et al.
+      (Fungal Genet. Biol. 2006;43(9):618-629, PMID:16713314, DOI:10.1016/j.fgb.2006.03.001) identify the BGC0000404 sequenced
+      producer strain as Penicillium chrysogenum AS-P-78, while GenBank EF601124.1 and van den Berg et al.
+      (Fungal Genet. Biol. 2007;44(9):830-844, PMID:17548217, DOI:10.1016/j.fgb.2007.03.008) identify the BGC0000405 sequenced
+      producer strain as Penicillium chrysogenum Wisconsin 54-1255.
     proposed_remediation: >-
       Add four compound-row entries to curation/mibig_producer_strains.tsv with source_id keys BGC0000404:1
       (expected_source_row_sha256 9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19, strain='AS-P-78',
@@ -82,9 +85,10 @@ findings:
       - data/natural_products/amino_acids_and_peptides/isopenicillin-n.yaml
       - data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml
     field_paths:
-      - 'producer_organisms[0].evidence'
-      - 'biosynthetic_gene_clusters[0].evidence'
-      - 'biosynthetic_gene_clusters[1].evidence'
+      - 'producer_organisms[0].evidence[0].reference'
+      - 'producer_organisms[1].evidence[0].reference'
+      - 'biosynthetic_gene_clusters[0].evidence[0].reference'
+      - 'biosynthetic_gene_clusters[1].evidence[0].reference'
     source_rows:
       - source: mibig_4.0
         row_id: 'BGC0000404:1'
@@ -102,25 +106,26 @@ findings:
       - DOI:10.1016/j.fgb.2006.03.001
       - PMID:16713314
       - DOI:10.1016/j.fgb.2007.03.008
-      - PMID:17499530
+      - PMID:17548217
       - DOI:10.1016/s0140-6736(00)87452-8
       - PMID:1368505
     description: >-
       MIBiG 4.0 attaches entry-level historical citations that predate the sequenced genomic loci on both Penicillium
-      chrysogenum BGC entries: (1) BGC0000404:1 (genbank:DQ192518.1:26249..43059, sequenced from P. chrysogenum AS-P-78 in
-      2005/2006 by Fierro et al., DOI:10.1016/j.fgb.2006.03.001) carries DOI:10.1016/s0140-6736(00)87452-8 (Chain et al.,
-      Lancet 1940), which predates DNA sequencing by 65 years; and (2) BGC0000405:1..3 (genbank:EF601124.1:17440..33920,
-      sequenced from P. chrysogenum Wisconsin 54-1255 in 2007 by van den Berg et al., DOI:10.1016/j.fgb.2007.03.008)
-      carries PMID:1368505 (Smith et al., EMBO J. 1990), which predates EF601124.1 by 17 years.
+      chrysogenum BGC entries: (1) BGC0000404:1 (genbank:DQ192518.1, MIBiG coordinates 17440..28759, entry_version 4, sequenced
+      from P. chrysogenum AS-P-78 in 2005/2006 by Fierro et al., DOI:10.1016/j.fgb.2006.03.001) carries
+      DOI:10.1016/s0140-6736(00)87452-8 (Chain et al., Lancet 1940), which predates DNA sequencing by 65 years; and (2)
+      BGC0000405:1..3 (genbank:EF601124.1, MIBiG coordinates 22186..33473, entry_version 5, sequenced from P. chrysogenum
+      Wisconsin 54-1255 in 2007 by van den Berg et al., DOI:10.1016/j.fgb.2007.03.008) carries PMID:1368505 (Smith et al.,
+      Bio/Technology 1990;8(1):39-41, DOI:10.1038/nbt0190-39), which predates EF601124.1 by 17 years.
     proposed_remediation: >-
       Add source_id=BGC0000404:1 (expected_source_row_sha256
       9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19, producer_reference=DOI:10.1016/j.fgb.2006.03.001,
-      locus_reference=DOI:10.1016/j.fgb.2006.03.001, source_reference=DOI:10.1016/j.fgb.2006.03.001) and
+      locus_reference=DOI:10.1016/j.fgb.2006.03.001, source_reference=DOI:10.1016/s0140-6736(00)87452-8) and
       source_id=BGC0000405:1..3 (expected_source_row_sha256
       50cbd967cf8076f7cbfa5a77bbb9b2910e1e37593d10edea50ad6c3a83316de1,
       ae975df0e01f81b73c2e119b776207ca3e0f061375585a06ceef3f099dbbe860,
       847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42, producer_reference=DOI:10.1016/j.fgb.2007.03.008,
-      locus_reference=DOI:10.1016/j.fgb.2007.03.008, source_reference=DOI:10.1016/j.fgb.2007.03.008) to
+      locus_reference=DOI:10.1016/j.fgb.2007.03.008, source_reference=PMID:1368505) to
       curation/mibig_claim_references.tsv, then re-seed in Stage 5 (resolve_review_findings).
   - id: F-PEN-003
     title: Upstream MIBiG salt and protonation-state encoding on CHEBI:51765 (benzylpenicillin sodium vs biological CHEBI:51354) and CHEBI:58572 (monoanion vs neutral ACV CHEBI:28496)
@@ -132,11 +137,11 @@ findings:
       - data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml
       - data/natural_products/amino_acids_and_peptides/n-5s-5-ammonio-5-carboxylatopentanoyl-l-cysteinyl-d-valinate.yaml
     field_paths:
-      - id
-      - name
+      - identifier
+      - label
       - 'chemical_structure.standard_inchi_key'
       - 'chemical_structure.smiles'
-      - biosynthetic_pathway
+      - discussions
     source_rows:
       - source: mibig_4.0
         row_id: 'BGC0000404:1'
@@ -153,16 +158,18 @@ findings:
       - https://github.com/CultureBotAI/NaturalProductMech/issues/1015
     description: >-
       1) BGC0000404:1 and BGC0000405:3 encode penicillin G as the pharmaceutical sodium salt (CHEBI:51765,
-      LVRFTAZAXQPQHI-MBNYWOFBSA-M, [H][C@]12SC(C)(C)[C@@H](N1C(=O)[C@H]2NC(=O)Cc1ccccc1)C([O-])=O.[Na+]) rather than biological benzylpenicillin(1-)
-      (CHEBI:51354) or neutral benzylpenicillin (CHEBI:17334). Because strict validation requires exact product identity match
-      on biosynthetic_pathway steps and RHEA:19809 produces CHEBI:51354 + CHEBI:57287, biosynthetic_pathway cannot be populated
-      on benzylpenicillin-sodium.yaml without inventing a sodium-salt Rhea reaction (tracked in #1015). 2) BGC0000405:1 encodes
-      ACV as the monoanion zwitterion (CHEBI:58572, [O-]C(=O)[C@@H](NC(=O)[C@@H](CS)NC(=O)CCC[C@H]([NH3+])C([O-])=O)C(C)C)
-      rather than neutral L-delta-(alpha-aminoadipoyl)-L-cysteinyl-D-valine (CHEBI:28496), whereas RHEA:19809 uses the dianion
-      CHEBI:58573.
+      FCPVYOBCFFNJFS-LQDWTQKMSA-M, CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)CC3=CC=CC=C3)C(=O)[O-])C.[Na+]) rather than
+      biological benzylpenicillin(1-) (CHEBI:51354) or neutral benzylpenicillin (CHEBI:18208). Because strict validation
+      requires exact product identity match on biosynthetic_pathway steps and RHEA:19809 produces CHEBI:51354 + CHEBI:57287,
+      biosynthetic_pathway cannot be populated on benzylpenicillin-sodium.yaml without inventing a sodium-salt Rhea reaction
+      (tracked in #1015). 2) BGC0000405:1 encodes ACV as the monoanion zwitterion (CHEBI:58572,
+      VVSBGFGOUYWUOF-HIFRSBDPSA-M, CC(C)[C@@H](NC(=O)[C@H](CS)NC(=O)CCC[C@H]([NH3+])C([O-])=O)C([O-])=O) under the neutral
+      label 'δ-(L-α-aminoadipyl)-L-cysteine-D-valine' rather than neutral CHEBI:28496; RHEA:23196 and RHEA:22428 use
+      CHEBI:58572 directly, while the neutral MIBiG label vs monoanionic ChEBI label leaves an OPEN name-disagreement
+      discussion.
     proposed_remediation: >-
       Preserve as an explicit source-limited representation boundary in Stage 5 (linked to #1015) unless a corpus-wide
-      counterion-stripping policy is adopted in curation/structure_corrections.tsv.
+      counterion-stripping policy is adopted in curation/mibig_structure_corrections.tsv.
   - id: F-PIK-DES-003
     carried_from: F-PIK-DES-003
     issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/1012

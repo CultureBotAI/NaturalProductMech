@@ -11,13 +11,13 @@
 
 ## Summary
 
-Full 3-record category review of the Penicillium chrysogenum penicillin biosynthetic cohort seeded from MIBiG BGC0000404 (DQ192518.1) and BGC0000405 (EF601124.1): N-[(5S)-5-ammonio-5-carboxylatopentanoyl]-L-cysteinyl-D-valinate (CHEBI:58572, n-5s-5-ammonio-5-carboxylatopentanoyl-l-cysteinyl-d-valinate.yaml), isopenicillin N (CHEBI:18165, isopenicillin-n.yaml), and benzylpenicillin sodium (CHEBI:51765, benzylpenicillin-sodium.yaml), anchored to a full-corpus deterministic checkpoint of all 3,116 natural product owners (282 with inline causal_graphs and 27 with causal_graph_refs) and 246 standalone causal graph components (3,362 total YAML records). Confirms verified Cycle 2 Stage 2/3 ACVS (P26046) and IPNS (P08703) biosynthetic steps and UniProtKB protein groundings on CHEBI:58572 and CHEBI:18165, while identifying three open findings for Stage 5 grouped remediation: (1) missing producer strain qualifications AS-P-78 on BGC0000404:1 (DQ192518.1, Fierro et al. 2006 DOI:10.1016/j.fgb.2006.03.001) and Wisconsin 54-1255 on BGC0000405:1..3 (EF601124.1, van den Berg et al. 2007 DOI:10.1016/j.fgb.2007.03.008) (F-PEN-001), (2) misrouted claim-level citations attaching Chain et al. 1940 (DOI:10.1016/s0140-6736(00)87452-8) to the 2005/2006 DQ192518.1 locus/producer claims on BGC0000404:1 and Smith et al. 1990 (PMID:1368505) to the 2007 EF601124.1 locus/producer claims on BGC0000405:1..3 (F-PEN-002), and (3) upstream MIBiG salt and protonation-state encoding boundaries on CHEBI:51765 (sodium salt FCPVYOBCFFNJFS-LQDWTQKMSA-M vs neutral benzylpenicillin CHEBI:18208 / CHEBI:17334, blocking PenDE RHEA:19809 pathway curation tracked in #1015) and CHEBI:58572 (monoanion vs neutral ACV CHEBI:28496) (F-PEN-003).
+Full 3-record category review of the Penicillium chrysogenum penicillin biosynthetic cohort seeded from MIBiG BGC0000404 (DQ192518.1) and BGC0000405 (EF601124.1): N-[(5S)-5-ammonio-5-carboxylatopentanoyl]-L-cysteinyl-D-valinate (CHEBI:58572, n-5s-5-ammonio-5-carboxylatopentanoyl-l-cysteinyl-d-valinate.yaml), isopenicillin N (CHEBI:18165, isopenicillin-n.yaml), and benzylpenicillin sodium (CHEBI:51765, benzylpenicillin-sodium.yaml), anchored to a full-corpus deterministic checkpoint of all 3,116 natural product owners (282 with inline causal_graphs and 27 with causal_graph_refs) and 246 standalone causal graph components (3,362 total YAML records). Confirms verified two-step PcbAB ACV synthetase (UniProtKB:A6N339, RHEA:23196) and IpnA isopenicillin N synthase (UniProtKB:B6HLU0, RHEA:22428) biosynthetic pathways and BIOSYNTHESIS causal graphs on CHEBI:58572 and CHEBI:18165, while identifying three open findings for Stage 5 grouped remediation: (1) missing producer strain qualifications AS-P-78 on BGC0000404:1 (DQ192518.1, Fierro et al. 2006 DOI:10.1016/j.fgb.2006.03.001) and Wisconsin 54-1255 on BGC0000405:1..3 (EF601124.1, van den Berg et al. 2007 DOI:10.1016/j.fgb.2007.03.008) (F-PEN-001), (2) misrouted claim-level citations attaching Chain et al. 1940 (DOI:10.1016/s0140-6736(00)87452-8) to the 2005/2006 DQ192518.1 locus/producer claims on BGC0000404:1 and Smith et al. 1990 (PMID:1368505) to the 2007 EF601124.1 locus/producer claims on BGC0000405:1..3 (F-PEN-002), and (3) upstream MIBiG salt and protonation-state encoding boundaries on CHEBI:51765 (sodium salt FCPVYOBCFFNJFS-LQDWTQKMSA-M vs neutral benzylpenicillin CHEBI:18208 / CHEBI:17334 and monoanionic CHEBI:51354, blocking PenDE RHEA:19809 pathway curation tracked in #1015) and CHEBI:58572 (monoanion vs neutral ACV CHEBI:28496) (F-PEN-003).
 
 ## Scope And Provenance
 
 Coherent 3-record biosynthetic and chemical-identity cohort covering all NaturalProductMech records seeded from the Penicillium chrysogenum penicillin biosynthetic gene clusters MIBiG BGC0000404 (DQ192518.1) and BGC0000405 (EF601124.1), evaluated alongside frozen full-corpus inventory checks (3,116 owner YAML records and 246 standalone causal graph components; 3,362 total YAML records).
 
-Selection: All records derived from the Penicillium chrysogenum penicillin biosynthetic gene cluster deposits BGC0000404:1 and BGC0000405:1..3, selected to audit the newly curated Cycle 2 Stage 2/3 ACVS (P26046) and IPNS (P08703) biosynthetic steps, the blocked PenDE step on benzylpenicillin-sodium.yaml (#1015), and cohort-wide producer strain and claim-reference provenance.
+Selection: All records derived from the Penicillium chrysogenum penicillin biosynthetic gene cluster deposits BGC0000404:1 and BGC0000405:1..3, selected to audit the two-step PcbAB (UniProtKB:A6N339, RHEA:23196) and IpnA (UniProtKB:B6HLU0, RHEA:22428) biosynthetic pathways and causal graphs on CHEBI:58572 and CHEBI:18165, the blocked PenDE step on benzylpenicillin-sodium.yaml (#1015), and cohort-wide producer strain and claim-reference provenance.
 Coverage: full; 3 reviewed / 3 in the declared population.
 Source: git_commit at Git base 508e90d99e8e8cb7627eb8c885d535be25873c7f.
 Working-tree hashes do not imply those bytes were committed.
@@ -42,11 +42,11 @@ Working-tree hashes do not imply those bytes were committed.
 
 ## Scientific And Domain Assessments
 
-### Chemical structure grounding and Cycle 2 Stage 2/3 ACVS/IPNS biosynthetic pathway verification
+### Chemical structure grounding and PcbAB/IpnA biosynthetic pathway verification
 
 identity: supported. Targets: CHEBI:58572, CHEBI:18165, CHEBI:51765.
 
-All three cohort records ground to distinct 3-star ChEBI entries (CHEBI:58572, CHEBI:18165, CHEBI:51765) and file under AMINO_ACIDS_AND_PEPTIDES in exact agreement with data/natural_products/PATHS.tsv. The Cycle 2 Stage 2/3 biosynthetic_pathway steps on CHEBI:58572 (ACVS / pcbAB, UniProtKB:P26046, RHEA:23620, PMID:2125231 / PMID:1849983) and CHEBI:18165 (ACVS P26046 -&gt; IPNS / pcbC, UniProtKB:P08703, RHEA:16689, PMID:3001640) are accurately grounded to Penicillium chrysogenum (NCBITaxon:5076) and pass strict LinkML and ontology ID-label validation.
+All three cohort records ground to distinct 3-star ChEBI entries (CHEBI:58572, CHEBI:18165, CHEBI:51765) and file under AMINO_ACIDS_AND_PEPTIDES in exact agreement with data/natural_products/PATHS.tsv. Both CHEBI:58572 (n-5s-5-ammonio-5-carboxylatopentanoyl-l-cysteinyl-d-valinate.yaml) and CHEBI:18165 (isopenicillin-n.yaml) carry a verified two-step biosynthetic_pathway and BIOSYNTHESIS causal graph (acv-pcbab-ipna-biosynthesis and isopenicillin-n-pcbab-ipna-biosynthesis): Step 1 PcbAB ACV synthetase (UniProtKB:A6N339, RHEA:23196, citing DOI:10.1042/bj3270185, DOI:10.1038/nbt0190-39, DOI:10.1016/j.fgb.2007.03.008) forming ACV (CHEBI:58572), followed by Step 2 Isopenicillin N synthase / IpnA (UniProtKB:B6HLU0, RHEA:22428, citing DOI:10.1016/j.fgb.2007.03.008 and DOI:10.1038/nbt0190-39) oxidatively cyclizing ACV to isopenicillin N (CHEBI:18165; RHEA participant CHEBI:58399), passing strict LinkML and ontology ID-label validation.
 
 ### Missing AS-P-78 (BGC0000404:1) and Wisconsin 54-1255 (BGC0000405:1..3) producer strain qualifications
 
@@ -72,36 +72,36 @@ MIBiG BGC0000404:1 and BGC0000405:3 supply the sodium carboxylate salt SMILES fo
 
 major / open / confirmed; issue key: penicillium-chrysogenum-bgc0000404-bgc0000405-producer-strains-missing.
 
-All four Penicillium chrysogenum (NCBITaxon:5076) producer_organisms claims seeded from BGC0000404:1 (sha256 9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19 on benzylpenicillin-sodium.yaml) and BGC0000405:1..3 (sha256s 50cbd967cf8076f7cbfa5a77bbb9b2910e1e37593d10edea50ad6c3a83316de1 on n-5s-5-ammonio-5-carboxylatopentanoyl-l-cysteinyl-d-valinate.yaml, ae975df0e01f81b73c2e119b776207ca3e0f061375585a06ceef3f099dbbe860 on isopenicillin-n.yaml, and 847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42 on benzylpenicillin-sodium.yaml) omit producer_organisms[*].strain. INSDC DQ192518.1 and Fierro et al. (2006, DOI:10.1016/j.fgb.2006.03.001, PMID:16713314) explicitly identify strain AS-P-78 for BGC0000404:1, and INSDC EF601124.1 and van den Berg et al. (2007, DOI:10.1016/j.fgb.2007.03.008, PMID:17548217) explicitly identify strain Wisconsin 54-1255 for BGC0000405:1..3. Notice that on benzylpenicillin-sodium.yaml, qualifying BGC0000404:1 as AS-P-78 and BGC0000405:3 as Wisconsin 54-1255 also resolves the two distinct sequenced industrial/laboratory strains instead of collapsing both clusters onto one unqualified NCBITaxon:5076 producer entry.
+All four Penicillium chrysogenum (NCBITaxon:5076) producer_organisms claims seeded from BGC0000404:1 (sha256 9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19 on benzylpenicillin-sodium.yaml) and BGC0000405:1..3 (sha256s 50cbd967cf8076f7cbfa5a77bbb9b2910e1e37593d10edea50ad6c3a83316de1 on n-5s-5-ammonio-5-carboxylatopentanoyl-l-cysteinyl-d-valinate.yaml, ae975df0e01f81b73c2e119b776207ca3e0f061375585a06ceef3f099dbbe860 on isopenicillin-n.yaml, and 847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42 on benzylpenicillin-sodium.yaml) omit producer_organisms[*].strain. INSDC DQ192518.1 and Fierro et al. (2006, DOI:10.1016/j.fgb.2006.03.001, PMID:16713314) explicitly identify strain AS-P-78 for BGC0000404:1, and INSDC EF601124.1 and van den Berg et al. (2007, DOI:10.1016/j.fgb.2007.03.008, PMID:17548217) explicitly identify strain Wisconsin 54-1255 for BGC0000405:1..3. On benzylpenicillin-sodium.yaml, qualifying producer_organisms[0] (BGC0000404:1) as AS-P-78 and producer_organisms[1] (BGC0000405:3) as Wisconsin 54-1255 distinguishes the two separate NCBITaxon:5076 producer entries by their sequenced industrial/laboratory strains.
 
 ### F-PEN-002: Misrouted entry-level citations on BGC0000404:1 (Chain et al. 1940 on DQ192518.1) and BGC0000405:1..3 (Smith et al. 1990 on EF601124.1)
 
 major / open / confirmed; issue key: bgc0000404-bgc0000405-anachronistic-claim-reference-routing.
 
-1) On benzylpenicillin-sodium.yaml (CHEBI:51765), BGC0000404:1 attaches DOI:10.1016/s0140-6736(00)87452-8 (Chain et al., 1940, Lancet, reference_basis: COMPOUND_BIOACTIVITY) to producer_organisms[0].evidence[0].reference and biosynthetic_gene_clusters[0].evidence[0].reference (genbank:DQ192518.1, 17440..28759), even though Chain et al. (1940) pre-date the 2005/2006 DQ192518.1 sequence deposit from Penicillium chrysogenum AS-P-78 (Fierro et al., 2006, DOI:10.1016/j.fgb.2006.03.001, PMID:16713314) by 65 years. 2) Across all three BGC0000405 records (CHEBI:58572, CHEBI:18165, CHEBI:51765), BGC0000405:1..3 attach PMID:1368505 (Smith et al., 1990, Biotechnology 8:39-41, DOI:10.1038/nbt0190-39) to producer_organisms and biosynthetic_gene_clusters (genbank:EF601124.1, 22186..33473), even though Smith et al. (1990) pre-date the 2007 EF601124.1 sequence deposit from Penicillium chrysogenum Wisconsin 54-1255 (van den Berg et al., 2007, DOI:10.1016/j.fgb.2007.03.008, PMID:17548217) by 17 years.
+1) On benzylpenicillin-sodium.yaml (CHEBI:51765), BGC0000404:1 attaches DOI:10.1016/s0140-6736(00)87452-8 (Chain et al., 1940, Lancet, reference_basis: COMPOUND_BIOACTIVITY) to producer_organisms[0].evidence[0].reference and biosynthetic_gene_clusters[0].evidence[0].reference (genbank:DQ192518.1, MIBiG coordinates 17440..28759, entry_version 4), even though Chain et al. (1940) pre-date the 2005/2006 DQ192518.1 sequence deposit from Penicillium chrysogenum AS-P-78 (Fierro et al., 2006, DOI:10.1016/j.fgb.2006.03.001, PMID:16713314) by 65 years. 2) Across all three BGC0000405 records (CHEBI:58572, CHEBI:18165, CHEBI:51765), BGC0000405:1..3 attach PMID:1368505 (Smith et al., 1990, Bio/Technology 8(1):39-41, DOI:10.1038/nbt0190-39) to producer_organisms[0].evidence[0].reference (or producer_organisms[1].evidence[0].reference on benzylpenicillin-sodium.yaml) and biosynthetic_gene_clusters[0].evidence[0].reference (or biosynthetic_gene_clusters[1].evidence[0].reference on benzylpenicillin-sodium.yaml; genbank:EF601124.1, MIBiG coordinates 22186..33473, entry_version 5), even though Smith et al. (1990) pre-date the 2007 EF601124.1 sequence deposit from Penicillium chrysogenum Wisconsin 54-1255 (van den Berg et al., 2007, DOI:10.1016/j.fgb.2007.03.008, PMID:17548217) by 17 years.
 
 ### F-PEN-003: Upstream MIBiG salt and protonation-state encoding on benzylpenicillin sodium (CHEBI:51765) and monoanionic ACV (CHEBI:58572)
 
 minor / open / confirmed; issue key: penicillin-cohort-salt-and-protonation-state-boundary.
 
-1) MIBiG BGC0000404:1 and BGC0000405:3 supply the sodium salt SMILES [H][C@]12SC(C)(C)[C@@H](N1C(=O)[C@H]2NC(=O)Cc1ccccc1)C(=O)[O-].[Na+] (Standard InChIKey FCPVYOBCFFNJFS-LQDWTQKMSA-M, grounding to 3-star CHEBI:51765 benzylpenicillin sodium) for compound_name='benzylpenicillin'. Because the biological product of isopenicillin N acyltransferase (PenDE / UniProtKB:P15802, RHEA:19809) is benzylpenicillin(1-) (CHEBI:51354, JGSARLDLIJGVTE-MBNYWOFBSA-M) / neutral benzylpenicillin (CHEBI:18208 / CHEBI:17334, JGSARLDLIJGVTE-MBNYWOFBSA-N) and validate_strict.py enforces terminal biosynthetic_pathway product grounding against record.identifier (CHEBI:51765), PenDE pathway curation on benzylpenicillin-sodium.yaml remains blocked by open issue #1015, and OPEN name-disagreement and shared-structure discussions remain on the record. 2) MIBiG BGC0000405:1 supplies monoanionic ACV (CHEBI:58572, BYEIJZFKOAXBBV-ATZCPNFKSA-M) under the neutral label 'N-(5-amino-5-carboxypentanoyl)-L-cysteinyl-D-valine' (neutral CHEBI:28496, BYEIJZFKOAXBBV-ATZCPNFKSA-N), leaving an OPEN name-disagreement discussion on n-5s-5-ammonio-5-carboxylatopentanoyl-l-cysteinyl-d-valinate.yaml.
+1) MIBiG BGC0000404:1 (compound_name='penicillin') and BGC0000405:3 (compound_name='benzylpenicillin') supply the sodium salt SMILES CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)CC3=CC=CC=C3)C(=O)[O-])C.[Na+] (Standard InChIKey FCPVYOBCFFNJFS-LQDWTQKMSA-M, grounding to 3-star CHEBI:51765 benzylpenicillin sodium). Because the biological product of isopenicillin N acyltransferase (PenDE / UniProtKB:P15802, RHEA:19809) is benzylpenicillin(1-) (CHEBI:51354, JGSARLDLIJGVTE-MBNYWOFBSA-M) / neutral benzylpenicillin (CHEBI:18208 / CHEBI:17334, JGSARLDLIJGVTE-MBNYWOFBSA-N) and validate_strict.py enforces terminal biosynthetic_pathway product grounding against record.identifier (CHEBI:51765), PenDE pathway curation on benzylpenicillin-sodium.yaml remains blocked by open issue #1015, and OPEN name-disagreement and shared-structure discussions remain on the record. 2) MIBiG BGC0000405:1 supplies monoanionic ACV (CHEBI:58572, BYEIJZFKOAXBBV-ATZCPNFKSA-M, CC(C)[C@@H](NC(=O)[C@H](CS)NC(=O)CCC[C@H]([NH3+])C([O-])=O)C([O-])=O) under the neutral label 'δ-(L-α-aminoadipyl)-L-cysteine-D-valine' (neutral CHEBI:28496, BYEIJZFKOAXBBV-ATZCPNFKSA-N), leaving an OPEN name-disagreement discussion on n-5s-5-ammonio-5-carboxylatopentanoyl-l-cysteinyl-d-valinate.yaml.
 
 ## Recommended Actions And Acceptance Checks
 
 ### qualify-chrysogenum-producer-strains
 
-Add source-pinned producer strain rows to curation/mibig_producer_strains.tsv for BGC0000404:1 (expected_source_row_sha256 9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19, taxon_id NCBITaxon:5076, strain AS-P-78, reference DOI:10.1016/j.fgb.2006.03.001) and BGC0000405:1..3 (expected_source_row_sha256s 50cbd967cf8076f7cbfa5a77bbb9b2910e1e37593d10edea50ad6c3a83316de1, ae975df0e01f81b73c2e119b776207ca3e0f061375585a06ceef3f099dbbe860, and 847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42, taxon_id NCBITaxon:5076, strain Wisconsin 54-1255, reference DOI:10.1016/j.fgb.2007.03.008), then re-seed via scripts/seed_from_sources.py.
+Add source-pinned producer strain rows to curation/mibig_producer_strains.tsv (columns source_id, expected_source_row_sha256, strain, reference, curator, date, rationale) for source_id=BGC0000404:1 (expected_source_row_sha256 9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19, strain AS-P-78, reference DOI:10.1016/j.fgb.2006.03.001) and source_id=BGC0000405:1..3 (expected_source_row_sha256s 50cbd967cf8076f7cbfa5a77bbb9b2910e1e37593d10edea50ad6c3a83316de1, ae975df0e01f81b73c2e119b776207ca3e0f061375585a06ceef3f099dbbe860, and 847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42, strain Wisconsin 54-1255, reference DOI:10.1016/j.fgb.2007.03.008), then re-seed via scripts/seed_from_sources.py.
 
-- Verify exact_source_row_sha256 pins for BGC0000404:1 and BGC0000405:1..3 in curation/mibig_producer_strains.tsv.
-- Run scripts/seed_from_sources.py and confirm Wisconsin 54-1255 on CHEBI:58572 and CHEBI:18165, and both AS-P-78 and Wisconsin 54-1255 on CHEBI:51765.
+- Verify expected_source_row_sha256 pins for BGC0000404:1 and BGC0000405:1..3 in curation/mibig_producer_strains.tsv.
+- Run scripts/seed_from_sources.py and confirm Wisconsin 54-1255 on CHEBI:58572 and CHEBI:18165, and both AS-P-78 (producer_organisms[0]) and Wisconsin 54-1255 (producer_organisms[1]) on CHEBI:51765.
 - Verify zero regressions across scripts/validate_strict.py and scripts/verify_corpus.py.
 
 ### route-bgc0000404-bgc0000405-claim-references
 
-Add source-pinned claim-reference overrides to curation/mibig_claim_references.tsv for BGC0000404:1 (expected_source_row_sha256 9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19, routing producer_reference to DOI:10.1016/j.fgb.2006.03.001, locus_reference to https://www.ebi.ac.uk/ena/browser/view/DQ192518.1, and preserving source_reference DOI:10.1016/s0140-6736(00)87452-8) and BGC0000405:1..3 (expected_source_row_sha256s 50cbd967cf8076f7cbfa5a77bbb9b2910e1e37593d10edea50ad6c3a83316de1, ae975df0e01f81b73c2e119b776207ca3e0f061375585a06ceef3f099dbbe860, and 847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42, routing producer_reference to DOI:10.1016/j.fgb.2007.03.008, locus_reference to https://www.ebi.ac.uk/ena/browser/view/EF601124.1, and preserving source_reference PMID:1368505), then re-seed via scripts/seed_from_sources.py.
+Add source-pinned claim-reference overrides to curation/mibig_claim_references.tsv for source_id=BGC0000404:1 (expected_source_row_sha256 9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19, routing producer_reference to DOI:10.1016/j.fgb.2006.03.001, locus_reference to DOI:10.1016/j.fgb.2006.03.001, and preserving source_reference DOI:10.1016/s0140-6736(00)87452-8) and source_id=BGC0000405:1..3 (expected_source_row_sha256s 50cbd967cf8076f7cbfa5a77bbb9b2910e1e37593d10edea50ad6c3a83316de1, ae975df0e01f81b73c2e119b776207ca3e0f061375585a06ceef3f099dbbe860, and 847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42, routing producer_reference to DOI:10.1016/j.fgb.2007.03.008, locus_reference to DOI:10.1016/j.fgb.2007.03.008, and preserving source_reference PMID:1368505), then re-seed via scripts/seed_from_sources.py.
 
 - Verify expected_source_row_sha256 pins for BGC0000404:1 and BGC0000405:1..3 in curation/mibig_claim_references.tsv.
-- Re-seed the 3 cohort records via scripts/seed_from_sources.py and confirm producer and locus claims cite Fierro et al. 2006 / DQ192518.1 and van den Berg et al. 2007 / EF601124.1 with CURATOR_INFERENCE routing provenance while preserving Chain et al. 1940 and Smith et al. 1990 as additional evidence.
+- Re-seed the 3 cohort records via scripts/seed_from_sources.py and confirm producer and locus claims cite Fierro et al. 2006 (DOI:10.1016/j.fgb.2006.03.001) and van den Berg et al. 2007 (DOI:10.1016/j.fgb.2007.03.008) with CURATOR_INFERENCE routing provenance while preserving Chain et al. 1940 (DOI:10.1016/s0140-6736(00)87452-8) and Smith et al. 1990 (PMID:1368505) as source_reference.
 - Verify scripts/validate_strict.py and scripts/verify_corpus.py pass with zero errors.
 
 ### preserve-salt-and-protonation-state-boundaries
@@ -113,7 +113,7 @@ Retain exact ChEBI 3-star structure identities (CHEBI:58572, CHEBI:18165, CHEBI:
 
 ## Category Boundaries
 
-- retain: CHEBI:58572, CHEBI:18165, CHEBI:51765. All three cohort records represent distinct, sequential chemical entities in the Penicillium chrysogenum penicillin biosynthetic pathway with distinct 3-star ChEBI groundings and Standard InChIKeys: linear tripeptide intermediate L-delta-(alpha-aminoadipoyl)-L-cysteinyl-D-valine monoanion (CHEBI:58572, BYEIJZFKOAXBBV-ATZCPNFKSA-M), bicyclic beta-lactam intermediate isopenicillin N (CHEBI:18165, LFKDJXLFVZGSFA-PFFMAATASA-N), and phenylacetylated penicillin G sodium salt (CHEBI:51765, FCPVYOBCFFNJFS-LQDWTQKMSA-M).
+- retain: CHEBI:58572, CHEBI:18165, CHEBI:51765. All three cohort records represent distinct, sequential chemical entities in the Penicillium chrysogenum penicillin biosynthetic pathway with distinct 3-star ChEBI groundings and Standard InChIKeys: linear tripeptide intermediate L-delta-(alpha-aminoadipoyl)-L-cysteinyl-D-valine monoanion (CHEBI:58572, BYEIJZFKOAXBBV-ATZCPNFKSA-M), bicyclic beta-lactam intermediate isopenicillin N (CHEBI:18165, MIFYHUACUWQUKT-GTQWGBSQSA-N), and phenylacetylated penicillin G sodium salt (CHEBI:51765, FCPVYOBCFFNJFS-LQDWTQKMSA-M).
 
 ## Evidence
 
@@ -121,10 +121,10 @@ Retain exact ChEBI 3-star structure identities (CHEBI:58572, CHEBI:18165, CHEBI:
 | --- | --- | --- | --- |
 | cohort-owners | data/natural_products/PATHS.tsv; n-5s-5-ammonio-5-carboxylatopentanoyl-l-cysteinyl-d-valinate.yaml (sha256 369d888b75ac4cbe1c1c95a8fb6a7e15c27cb97d27d69875a1e1b83599e3bbd5), isopenicillin-n.yaml (sha256 02dfa271ed3ca87f0cdcaea0b0e701ec1fab935d3a5f559d6955565193bbdf75), benzylpenicillin-sodium.yaml (sha256 201779de13d90f23e3ec700c3bd7dbaa46cacd9a0f74d87638b35eb5e51a5bf2) at 508e90d99e8e8cb7627eb8c885d535be25873c7f | supports | All 3 cohort YAML files are present at their locked PATHS.tsv locations under AMINO_ACIDS_AND_PEPTIDES with distinct 3-star ChEBI identifiers, valid LinkML structure, and SEEDED curation status. |
 | mibig-inventory | data/raw/mibig_compounds.tsv; BGC0000404:1 (sha256 9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19), BGC0000405:1 (sha256 50cbd967cf8076f7cbfa5a77bbb9b2910e1e37593d10edea50ad6c3a83316de1), BGC0000405:2 (sha256 ae975df0e01f81b73c2e119b776207ca3e0f061375585a06ceef3f099dbbe860), BGC0000405:3 (sha256 847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42) | partial | MIBiG 4.0 exports species-level NCBITaxon:5076 (Penicillium chrysogenum) across BGC0000404:1 (DQ192518.1:17440..28759, entry citation doi:10.1016/s0140-6736(00)87452-8) and BGC0000405:1..3 (EF601124.1:22186..33473, entry citation pubmed:1368505), encoding monoanionic ACV (CHEBI:58572) on BGC0000405:1 and benzylpenicillin sodium (CHEBI:51765) on BGC0000404:1 and BGC0000405:3. |
-| chebi-structures | data/raw/chebi_structures.tsv; CHEBI:58572 (sha256 6c786965d739422251e36fdab5d46757c87789d4961c22245f89dd586c09fc15), CHEBI:28496 (sha256 11a3d4328707a9971ba51c36d884ff379d96d74019363828f5899ffc2366c97d), CHEBI:18165 (sha256 587eda2b75e08388e80fd2ffd0f738f11392cbc3275beb64f33901e6a79036c7), CHEBI:58399 (sha256 c92bb361e5670a7925d5ff560dffc4022a1f2a923f7a4cd012152e051e92a686), CHEBI:51765 (sha256 0eec0515d861443a7c6e4eaa372db4618b6ad6a8fa7d00f23f2605806c5cc7d0), CHEBI:18208 (sha256 3a01dd984ebebd9179def226a372014e96b2d318adc4f42ffc7340d9bffbcf71), CHEBI:51354 (sha256 44eeba25b3eecd8f4b84007094a4a2ca92eb78310d1375883613988624172684) | supports | ChEBI 3-star structures confirm exact InChIKey matches for CHEBI:58572 (BYEIJZFKOAXBBV-ATZCPNFKSA-M, monoanionic ACV vs neutral CHEBI:28496 BYEIJZFKOAXBBV-ATZCPNFKSA-N), CHEBI:18165 (LFKDJXLFVZGSFA-PFFMAATASA-N, neutral isopenicillin N vs monoanionic CHEBI:58399 LFKDJXLFVZGSFA-PFFMAATASA-M), and CHEBI:51765 (FCPVYOBCFFNJFS-LQDWTQKMSA-M, benzylpenicillin sodium vs neutral CHEBI:18208 JGSARLDLIJGVTE-MBNYWOFBSA-N and monoanionic CHEBI:51354 JGSARLDLIJGVTE-MBNYWOFBSA-M). |
+| chebi-structures | data/raw/chebi_structures.tsv; CHEBI:58572 (sha256 6c786965d739422251e36fdab5d46757c87789d4961c22245f89dd586c09fc15), CHEBI:28496 (sha256 11a3d4328707a9971ba51c36d884ff379d96d74019363828f5899ffc2366c97d), CHEBI:18165 (sha256 587eda2b75e08388e80fd2ffd0f738f11392cbc3275beb64f33901e6a79036c7), CHEBI:58399 (sha256 c92bb361e5670a7925d5ff560dffc4022a1f2a923f7a4cd012152e051e92a686), CHEBI:51765 (sha256 0eec0515d861443a7c6e4eaa372db4618b6ad6a8fa7d00f23f2605806c5cc7d0), CHEBI:18208 (sha256 3a01dd984ebebd9179def226a372014e96b2d318adc4f42ffc7340d9bffbcf71), CHEBI:51354 (sha256 44eeba25b3eecd8f4b84007094a4a2ca92eb78310d1375883613988624172684) | supports | ChEBI 3-star structures confirm exact InChIKey matches for CHEBI:58572 (BYEIJZFKOAXBBV-ATZCPNFKSA-M, monoanionic ACV vs neutral CHEBI:28496 BYEIJZFKOAXBBV-ATZCPNFKSA-N), CHEBI:18165 (MIFYHUACUWQUKT-GTQWGBSQSA-N, neutral isopenicillin N vs monoanionic CHEBI:58399 MIFYHUACUWQUKT-GTQWGBSQSA-M), and CHEBI:51765 (FCPVYOBCFFNJFS-LQDWTQKMSA-M, benzylpenicillin sodium vs neutral CHEBI:18208 JGSARLDLIJGVTE-MBNYWOFBSA-N and monoanionic CHEBI:51354 JGSARLDLIJGVTE-MBNYWOFBSA-M). |
 | ena-dq192518-fgb2006 | DOI:10.1016/j.fgb.2006.03.001; Fierro et al., Fungal Genet. Biol. 2006;43(9):618-629 (PMID:16713314) and INSDC DQ192518.1 source feature (1..56820) | supports | INSDC DQ192518.1 and its primary publication Fierro et al. (2006, PMID:16713314, DOI:10.1016/j.fgb.2006.03.001) characterize the 56.8 kb amplified penicillin cluster region (pcbAB-pcbC-penDE at 17440..28759) in Penicillium chrysogenum industrial strain AS-P-78, whereas MIBiG BGC0000404.4 attaches only Chain et al. (1940, Lancet, DOI:10.1016/s0140-6736(00)87452-8, COMPOUND_BIOACTIVITY). |
-| ena-ef601124-fgb2007 | DOI:10.1016/j.fgb.2007.03.008; van den Berg et al., Fungal Genet. Biol. 2007;44(9):830-844 (PMID:17548217) and INSDC EF601124.1 source feature (1..59497) | supports | INSDC EF601124.1 and its primary publication van den Berg et al. (2007, PMID:17548217, DOI:10.1016/j.fgb.2007.03.008) characterize the 59.5 kb penicillin biosynthetic gene cluster region (pcbAB-pcbC-penDE at 22186..33473) in Penicillium chrysogenum strain Wisconsin 54-1255, whereas MIBiG BGC0000405.4 attaches Smith et al. (1990, Biotechnology 8:39-41, PMID:1368505, DOI:10.1038/nbt0190-39). |
-| smith-1990-pmid1368505 | PMID:1368505; Smith et al., Biotechnology (N Y). 1990;8(1):39-41 (DOI:10.1038/nbt0190-39) | supports | Smith et al. (1990) demonstrate heterologous expression of a Penicillium chrysogenum cosmid clone containing the penicillin biosynthetic gene cluster in Neurospora crassa and Aspergillus niger (supporting HETEROLOGOUS_EXPRESSION on the pathway), published 17 years prior to the 2007 EF601124.1 sequence submission from strain Wisconsin 54-1255. |
+| ena-ef601124-fgb2007 | DOI:10.1016/j.fgb.2007.03.008; van den Berg et al., Fungal Genet. Biol. 2007;44(9):830-844 (PMID:17548217) and INSDC EF601124.1 source feature (1..59497) | supports | INSDC EF601124.1 and its primary publication van den Berg et al. (2007, PMID:17548217, DOI:10.1016/j.fgb.2007.03.008) characterize the 59.5 kb penicillin biosynthetic gene cluster region (pcbAB-pcbC-penDE at 22186..33473) in Penicillium chrysogenum strain Wisconsin 54-1255, whereas MIBiG BGC0000405.5 attaches Smith et al. (1990, Bio/Technology 8(1):39-41, PMID:1368505, DOI:10.1038/nbt0190-39). |
+| smith-1990-pmid1368505 | PMID:1368505; Smith et al., Bio/Technology (N Y). 1990;8(1):39-41 (DOI:10.1038/nbt0190-39) | supports | Smith et al. (1990) demonstrate heterologous expression of a Penicillium chrysogenum cosmid clone containing the penicillin biosynthetic gene cluster in Neurospora crassa and Aspergillus niger (supporting HETEROLOGOUS_EXPRESSION on the pathway), published 17 years prior to the 2007 EF601124.1 sequence submission from strain Wisconsin 54-1255. |
 | corpus-worklist | scripts/curation_worklist.py; Full-corpus checkpoint: 3,116 natural product owners (282 with inline causal_graphs, 27 with causal_graph_refs) and 246 standalone causal graph components (3,362 total YAML records) at 508e90d99e8e8cb7627eb8c885d535be25873c7f | supports | Deterministic worklist, lockfile, and graph-component checks confirm 3,116 valid owner records and 246 standalone causal graph components (8,924 worklist items across 12 queues), with all 3 penicillin cohort members in SEEDED status. |
 
 ## Limits And Additional Notes
@@ -166,19 +166,20 @@ summary: 'Full 3-record category review of the Penicillium chrysogenum penicilli
   (CHEBI:51765, benzylpenicillin-sodium.yaml), anchored to a full-corpus deterministic
   checkpoint of all 3,116 natural product owners (282 with inline causal_graphs and
   27 with causal_graph_refs) and 246 standalone causal graph components (3,362 total
-  YAML records). Confirms verified Cycle 2 Stage 2/3 ACVS (P26046) and IPNS (P08703)
-  biosynthetic steps and UniProtKB protein groundings on CHEBI:58572 and CHEBI:18165,
-  while identifying three open findings for Stage 5 grouped remediation: (1) missing
-  producer strain qualifications AS-P-78 on BGC0000404:1 (DQ192518.1, Fierro et al.
-  2006 DOI:10.1016/j.fgb.2006.03.001) and Wisconsin 54-1255 on BGC0000405:1..3 (EF601124.1,
-  van den Berg et al. 2007 DOI:10.1016/j.fgb.2007.03.008) (F-PEN-001), (2) misrouted
-  claim-level citations attaching Chain et al. 1940 (DOI:10.1016/s0140-6736(00)87452-8)
+  YAML records). Confirms verified two-step PcbAB ACV synthetase (UniProtKB:A6N339,
+  RHEA:23196) and IpnA isopenicillin N synthase (UniProtKB:B6HLU0, RHEA:22428) biosynthetic
+  pathways and BIOSYNTHESIS causal graphs on CHEBI:58572 and CHEBI:18165, while identifying
+  three open findings for Stage 5 grouped remediation: (1) missing producer strain
+  qualifications AS-P-78 on BGC0000404:1 (DQ192518.1, Fierro et al. 2006 DOI:10.1016/j.fgb.2006.03.001)
+  and Wisconsin 54-1255 on BGC0000405:1..3 (EF601124.1, van den Berg et al. 2007 DOI:10.1016/j.fgb.2007.03.008)
+  (F-PEN-001), (2) misrouted claim-level citations attaching Chain et al. 1940 (DOI:10.1016/s0140-6736(00)87452-8)
   to the 2005/2006 DQ192518.1 locus/producer claims on BGC0000404:1 and Smith et al.
   1990 (PMID:1368505) to the 2007 EF601124.1 locus/producer claims on BGC0000405:1..3
   (F-PEN-002), and (3) upstream MIBiG salt and protonation-state encoding boundaries
   on CHEBI:51765 (sodium salt FCPVYOBCFFNJFS-LQDWTQKMSA-M vs neutral benzylpenicillin
-  CHEBI:18208 / CHEBI:17334, blocking PenDE RHEA:19809 pathway curation tracked in
-  #1015) and CHEBI:58572 (monoanion vs neutral ACV CHEBI:28496) (F-PEN-003).'
+  CHEBI:18208 / CHEBI:17334 and monoanionic CHEBI:51354, blocking PenDE RHEA:19809
+  pathway curation tracked in #1015) and CHEBI:58572 (monoanion vs neutral ACV CHEBI:28496)
+  (F-PEN-003).'
 source:
   git_revision: 508e90d99e8e8cb7627eb8c885d535be25873c7f
   state: git_commit
@@ -395,6 +396,9 @@ targets:
     path: data/natural_products/PATHS.tsv
     role: Locked identifier-to-path filing table
   - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/antibioticmech_inchikeys.tsv
+    role: Pinned AntibioticMech cross-reference table
+  - repository: CultureBotAI/NaturalProductMech
     path: data/natural_products/amino_acids_and_peptides/isopenicillin-n.yaml
     role: Generated natural product owner record
 - target_id: CHEBI:51765
@@ -425,9 +429,6 @@ targets:
     path: data/natural_products/PATHS.tsv
     role: Locked identifier-to-path filing table
   - repository: CultureBotAI/NaturalProductMech
-    path: data/raw/antibioticmech_inchikeys.tsv
-    role: Pinned AntibioticMech cross-reference table
-  - repository: CultureBotAI/NaturalProductMech
     path: data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml
     role: Generated natural product owner record
 scope:
@@ -438,9 +439,10 @@ scope:
     and 246 standalone causal graph components; 3,362 total YAML records).
   selection: All records derived from the Penicillium chrysogenum penicillin biosynthetic
     gene cluster deposits BGC0000404:1 and BGC0000405:1..3, selected to audit the
-    newly curated Cycle 2 Stage 2/3 ACVS (P26046) and IPNS (P08703) biosynthetic steps,
-    the blocked PenDE step on benzylpenicillin-sodium.yaml (#1015), and cohort-wide
-    producer strain and claim-reference provenance.
+    two-step PcbAB (UniProtKB:A6N339, RHEA:23196) and IpnA (UniProtKB:B6HLU0, RHEA:22428)
+    biosynthetic pathways and causal graphs on CHEBI:58572 and CHEBI:18165, the blocked
+    PenDE step on benzylpenicillin-sodium.yaml (#1015), and cohort-wide producer strain
+    and claim-reference provenance.
   coverage: full
   population_size: 3
   reviewed_target_ids:
@@ -626,8 +628,8 @@ evidence:
   snapshot_sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
   summary: ChEBI 3-star structures confirm exact InChIKey matches for CHEBI:58572
     (BYEIJZFKOAXBBV-ATZCPNFKSA-M, monoanionic ACV vs neutral CHEBI:28496 BYEIJZFKOAXBBV-ATZCPNFKSA-N),
-    CHEBI:18165 (LFKDJXLFVZGSFA-PFFMAATASA-N, neutral isopenicillin N vs monoanionic
-    CHEBI:58399 LFKDJXLFVZGSFA-PFFMAATASA-M), and CHEBI:51765 (FCPVYOBCFFNJFS-LQDWTQKMSA-M,
+    CHEBI:18165 (MIFYHUACUWQUKT-GTQWGBSQSA-N, neutral isopenicillin N vs monoanionic
+    CHEBI:58399 MIFYHUACUWQUKT-GTQWGBSQSA-M), and CHEBI:51765 (FCPVYOBCFFNJFS-LQDWTQKMSA-M,
     benzylpenicillin sodium vs neutral CHEBI:18208 JGSARLDLIJGVTE-MBNYWOFBSA-N and
     monoanionic CHEBI:51354 JGSARLDLIJGVTE-MBNYWOFBSA-M).
 - evidence_id: ena-dq192518-fgb2006
@@ -652,12 +654,12 @@ evidence:
   summary: INSDC EF601124.1 and its primary publication van den Berg et al. (2007,
     PMID:17548217, DOI:10.1016/j.fgb.2007.03.008) characterize the 59.5 kb penicillin
     biosynthetic gene cluster region (pcbAB-pcbC-penDE at 22186..33473) in Penicillium
-    chrysogenum strain Wisconsin 54-1255, whereas MIBiG BGC0000405.4 attaches Smith
-    et al. (1990, Biotechnology 8:39-41, PMID:1368505, DOI:10.1038/nbt0190-39).
+    chrysogenum strain Wisconsin 54-1255, whereas MIBiG BGC0000405.5 attaches Smith
+    et al. (1990, Bio/Technology 8(1):39-41, PMID:1368505, DOI:10.1038/nbt0190-39).
 - evidence_id: smith-1990-pmid1368505
   kind: primary_source
   reference: PMID:1368505
-  locator: Smith et al., Biotechnology (N Y). 1990;8(1):39-41 (DOI:10.1038/nbt0190-39)
+  locator: Smith et al., Bio/Technology (N Y). 1990;8(1):39-41 (DOI:10.1038/nbt0190-39)
   accessed_at: '2026-10-23T11:52:48.000000Z'
   support: supports
   summary: Smith et al. (1990) demonstrate heterologous expression of a Penicillium
@@ -680,16 +682,19 @@ evidence:
 assessments:
 - assessment_id: cohort-identity-and-biosynthesis
   area: identity
-  topic: Chemical structure grounding and Cycle 2 Stage 2/3 ACVS/IPNS biosynthetic
-    pathway verification
+  topic: Chemical structure grounding and PcbAB/IpnA biosynthetic pathway verification
   outcome: supported
-  summary: All three cohort records ground to distinct 3-star ChEBI entries (CHEBI:58572,
+  summary: 'All three cohort records ground to distinct 3-star ChEBI entries (CHEBI:58572,
     CHEBI:18165, CHEBI:51765) and file under AMINO_ACIDS_AND_PEPTIDES in exact agreement
-    with data/natural_products/PATHS.tsv. The Cycle 2 Stage 2/3 biosynthetic_pathway
-    steps on CHEBI:58572 (ACVS / pcbAB, UniProtKB:P26046, RHEA:23620, PMID:2125231
-    / PMID:1849983) and CHEBI:18165 (ACVS P26046 -> IPNS / pcbC, UniProtKB:P08703,
-    RHEA:16689, PMID:3001640) are accurately grounded to Penicillium chrysogenum (NCBITaxon:5076)
-    and pass strict LinkML and ontology ID-label validation.
+    with data/natural_products/PATHS.tsv. Both CHEBI:58572 (n-5s-5-ammonio-5-carboxylatopentanoyl-l-cysteinyl-d-valinate.yaml)
+    and CHEBI:18165 (isopenicillin-n.yaml) carry a verified two-step biosynthetic_pathway
+    and BIOSYNTHESIS causal graph (acv-pcbab-ipna-biosynthesis and isopenicillin-n-pcbab-ipna-biosynthesis):
+    Step 1 PcbAB ACV synthetase (UniProtKB:A6N339, RHEA:23196, citing DOI:10.1042/bj3270185,
+    DOI:10.1038/nbt0190-39, DOI:10.1016/j.fgb.2007.03.008) forming ACV (CHEBI:58572),
+    followed by Step 2 Isopenicillin N synthase / IpnA (UniProtKB:B6HLU0, RHEA:22428,
+    citing DOI:10.1016/j.fgb.2007.03.008 and DOI:10.1038/nbt0190-39) oxidatively cyclizing
+    ACV to isopenicillin N (CHEBI:18165; RHEA participant CHEBI:58399), passing strict
+    LinkML and ontology ID-label validation.'
   target_ids:
   - CHEBI:58572
   - CHEBI:18165
@@ -783,10 +788,10 @@ findings:
     and Fierro et al. (2006, DOI:10.1016/j.fgb.2006.03.001, PMID:16713314) explicitly
     identify strain AS-P-78 for BGC0000404:1, and INSDC EF601124.1 and van den Berg
     et al. (2007, DOI:10.1016/j.fgb.2007.03.008, PMID:17548217) explicitly identify
-    strain Wisconsin 54-1255 for BGC0000405:1..3. Notice that on benzylpenicillin-sodium.yaml,
-    qualifying BGC0000404:1 as AS-P-78 and BGC0000405:3 as Wisconsin 54-1255 also
-    resolves the two distinct sequenced industrial/laboratory strains instead of collapsing
-    both clusters onto one unqualified NCBITaxon:5076 producer entry.
+    strain Wisconsin 54-1255 for BGC0000405:1..3. On benzylpenicillin-sodium.yaml,
+    qualifying producer_organisms[0] (BGC0000404:1) as AS-P-78 and producer_organisms[1]
+    (BGC0000405:3) as Wisconsin 54-1255 distinguishes the two separate NCBITaxon:5076
+    producer entries by their sequenced industrial/laboratory strains.
   target_ids:
   - CHEBI:58572
   - CHEBI:18165
@@ -794,6 +799,8 @@ findings:
   field_paths:
   - producer_organisms[0].strain
   - producer_organisms[0].evidence
+  - producer_organisms[1].strain
+  - producer_organisms[1].evidence
   evidence_ids:
   - cohort-owners
   - mibig-inventory
@@ -837,21 +844,25 @@ findings:
   description: '1) On benzylpenicillin-sodium.yaml (CHEBI:51765), BGC0000404:1 attaches
     DOI:10.1016/s0140-6736(00)87452-8 (Chain et al., 1940, Lancet, reference_basis:
     COMPOUND_BIOACTIVITY) to producer_organisms[0].evidence[0].reference and biosynthetic_gene_clusters[0].evidence[0].reference
-    (genbank:DQ192518.1, 17440..28759), even though Chain et al. (1940) pre-date the
-    2005/2006 DQ192518.1 sequence deposit from Penicillium chrysogenum AS-P-78 (Fierro
-    et al., 2006, DOI:10.1016/j.fgb.2006.03.001, PMID:16713314) by 65 years. 2) Across
-    all three BGC0000405 records (CHEBI:58572, CHEBI:18165, CHEBI:51765), BGC0000405:1..3
-    attach PMID:1368505 (Smith et al., 1990, Biotechnology 8:39-41, DOI:10.1038/nbt0190-39)
-    to producer_organisms and biosynthetic_gene_clusters (genbank:EF601124.1, 22186..33473),
-    even though Smith et al. (1990) pre-date the 2007 EF601124.1 sequence deposit
-    from Penicillium chrysogenum Wisconsin 54-1255 (van den Berg et al., 2007, DOI:10.1016/j.fgb.2007.03.008,
-    PMID:17548217) by 17 years.'
+    (genbank:DQ192518.1, MIBiG coordinates 17440..28759, entry_version 4), even though
+    Chain et al. (1940) pre-date the 2005/2006 DQ192518.1 sequence deposit from Penicillium
+    chrysogenum AS-P-78 (Fierro et al., 2006, DOI:10.1016/j.fgb.2006.03.001, PMID:16713314)
+    by 65 years. 2) Across all three BGC0000405 records (CHEBI:58572, CHEBI:18165,
+    CHEBI:51765), BGC0000405:1..3 attach PMID:1368505 (Smith et al., 1990, Bio/Technology
+    8(1):39-41, DOI:10.1038/nbt0190-39) to producer_organisms[0].evidence[0].reference
+    (or producer_organisms[1].evidence[0].reference on benzylpenicillin-sodium.yaml)
+    and biosynthetic_gene_clusters[0].evidence[0].reference (or biosynthetic_gene_clusters[1].evidence[0].reference
+    on benzylpenicillin-sodium.yaml; genbank:EF601124.1, MIBiG coordinates 22186..33473,
+    entry_version 5), even though Smith et al. (1990) pre-date the 2007 EF601124.1
+    sequence deposit from Penicillium chrysogenum Wisconsin 54-1255 (van den Berg
+    et al., 2007, DOI:10.1016/j.fgb.2007.03.008, PMID:17548217) by 17 years.'
   target_ids:
   - CHEBI:58572
   - CHEBI:18165
   - CHEBI:51765
   field_paths:
   - producer_organisms[0].evidence[0].reference
+  - producer_organisms[1].evidence[0].reference
   - biosynthetic_gene_clusters[0].evidence[0].reference
   - biosynthetic_gene_clusters[1].evidence[0].reference
   evidence_ids:
@@ -895,26 +906,27 @@ findings:
   certainty: confirmed
   title: Upstream MIBiG salt and protonation-state encoding on benzylpenicillin sodium
     (CHEBI:51765) and monoanionic ACV (CHEBI:58572)
-  description: '1) MIBiG BGC0000404:1 and BGC0000405:3 supply the sodium salt SMILES
-    [H][C@]12SC(C)(C)[C@@H](N1C(=O)[C@H]2NC(=O)Cc1ccccc1)C(=O)[O-].[Na+] (Standard
-    InChIKey FCPVYOBCFFNJFS-LQDWTQKMSA-M, grounding to 3-star CHEBI:51765 benzylpenicillin
-    sodium) for compound_name=''benzylpenicillin''. Because the biological product
-    of isopenicillin N acyltransferase (PenDE / UniProtKB:P15802, RHEA:19809) is benzylpenicillin(1-)
-    (CHEBI:51354, JGSARLDLIJGVTE-MBNYWOFBSA-M) / neutral benzylpenicillin (CHEBI:18208
-    / CHEBI:17334, JGSARLDLIJGVTE-MBNYWOFBSA-N) and validate_strict.py enforces terminal
-    biosynthetic_pathway product grounding against record.identifier (CHEBI:51765),
-    PenDE pathway curation on benzylpenicillin-sodium.yaml remains blocked by open
-    issue #1015, and OPEN name-disagreement and shared-structure discussions remain
-    on the record. 2) MIBiG BGC0000405:1 supplies monoanionic ACV (CHEBI:58572, BYEIJZFKOAXBBV-ATZCPNFKSA-M)
-    under the neutral label ''N-(5-amino-5-carboxypentanoyl)-L-cysteinyl-D-valine''
-    (neutral CHEBI:28496, BYEIJZFKOAXBBV-ATZCPNFKSA-N), leaving an OPEN name-disagreement
-    discussion on n-5s-5-ammonio-5-carboxylatopentanoyl-l-cysteinyl-d-valinate.yaml.'
+  description: '1) MIBiG BGC0000404:1 (compound_name=''penicillin'') and BGC0000405:3
+    (compound_name=''benzylpenicillin'') supply the sodium salt SMILES CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)CC3=CC=CC=C3)C(=O)[O-])C.[Na+]
+    (Standard InChIKey FCPVYOBCFFNJFS-LQDWTQKMSA-M, grounding to 3-star CHEBI:51765
+    benzylpenicillin sodium). Because the biological product of isopenicillin N acyltransferase
+    (PenDE / UniProtKB:P15802, RHEA:19809) is benzylpenicillin(1-) (CHEBI:51354, JGSARLDLIJGVTE-MBNYWOFBSA-M)
+    / neutral benzylpenicillin (CHEBI:18208 / CHEBI:17334, JGSARLDLIJGVTE-MBNYWOFBSA-N)
+    and validate_strict.py enforces terminal biosynthetic_pathway product grounding
+    against record.identifier (CHEBI:51765), PenDE pathway curation on benzylpenicillin-sodium.yaml
+    remains blocked by open issue #1015, and OPEN name-disagreement and shared-structure
+    discussions remain on the record. 2) MIBiG BGC0000405:1 supplies monoanionic ACV
+    (CHEBI:58572, BYEIJZFKOAXBBV-ATZCPNFKSA-M, CC(C)[C@@H](NC(=O)[C@H](CS)NC(=O)CCC[C@H]([NH3+])C([O-])=O)C([O-])=O)
+    under the neutral label ''δ-(L-α-aminoadipyl)-L-cysteine-D-valine'' (neutral CHEBI:28496,
+    BYEIJZFKOAXBBV-ATZCPNFKSA-N), leaving an OPEN name-disagreement discussion on
+    n-5s-5-ammonio-5-carboxylatopentanoyl-l-cysteinyl-d-valinate.yaml.'
   target_ids:
   - CHEBI:58572
   - CHEBI:18165
   - CHEBI:51765
   field_paths:
   - identifier
+  - label
   - chemical_structure.standard_inchi_key
   - chemical_structure.smiles
   - discussions
@@ -952,12 +964,13 @@ findings:
 actions:
 - action_id: qualify-chrysogenum-producer-strains
   description: Add source-pinned producer strain rows to curation/mibig_producer_strains.tsv
-    for BGC0000404:1 (expected_source_row_sha256 9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19,
-    taxon_id NCBITaxon:5076, strain AS-P-78, reference DOI:10.1016/j.fgb.2006.03.001)
-    and BGC0000405:1..3 (expected_source_row_sha256s 50cbd967cf8076f7cbfa5a77bbb9b2910e1e37593d10edea50ad6c3a83316de1,
+    (columns source_id, expected_source_row_sha256, strain, reference, curator, date,
+    rationale) for source_id=BGC0000404:1 (expected_source_row_sha256 9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19,
+    strain AS-P-78, reference DOI:10.1016/j.fgb.2006.03.001) and source_id=BGC0000405:1..3
+    (expected_source_row_sha256s 50cbd967cf8076f7cbfa5a77bbb9b2910e1e37593d10edea50ad6c3a83316de1,
     ae975df0e01f81b73c2e119b776207ca3e0f061375585a06ceef3f099dbbe860, and 847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42,
-    taxon_id NCBITaxon:5076, strain Wisconsin 54-1255, reference DOI:10.1016/j.fgb.2007.03.008),
-    then re-seed via scripts/seed_from_sources.py.
+    strain Wisconsin 54-1255, reference DOI:10.1016/j.fgb.2007.03.008), then re-seed
+    via scripts/seed_from_sources.py.
   finding_ids:
   - F-PEN-001
   target_ids:
@@ -988,20 +1001,22 @@ actions:
     role: Locked identifier-to-path filing table
   generator: scripts/seed_from_sources.py
   acceptance_checks:
-  - Verify exact_source_row_sha256 pins for BGC0000404:1 and BGC0000405:1..3 in curation/mibig_producer_strains.tsv.
+  - Verify expected_source_row_sha256 pins for BGC0000404:1 and BGC0000405:1..3 in
+    curation/mibig_producer_strains.tsv.
   - Run scripts/seed_from_sources.py and confirm Wisconsin 54-1255 on CHEBI:58572
-    and CHEBI:18165, and both AS-P-78 and Wisconsin 54-1255 on CHEBI:51765.
+    and CHEBI:18165, and both AS-P-78 (producer_organisms[0]) and Wisconsin 54-1255
+    (producer_organisms[1]) on CHEBI:51765.
   - Verify zero regressions across scripts/validate_strict.py and scripts/verify_corpus.py.
 - action_id: route-bgc0000404-bgc0000405-claim-references
   description: Add source-pinned claim-reference overrides to curation/mibig_claim_references.tsv
-    for BGC0000404:1 (expected_source_row_sha256 9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19,
+    for source_id=BGC0000404:1 (expected_source_row_sha256 9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19,
     routing producer_reference to DOI:10.1016/j.fgb.2006.03.001, locus_reference to
-    https://www.ebi.ac.uk/ena/browser/view/DQ192518.1, and preserving source_reference
-    DOI:10.1016/s0140-6736(00)87452-8) and BGC0000405:1..3 (expected_source_row_sha256s
-    50cbd967cf8076f7cbfa5a77bbb9b2910e1e37593d10edea50ad6c3a83316de1, ae975df0e01f81b73c2e119b776207ca3e0f061375585a06ceef3f099dbbe860,
-    and 847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42, routing
-    producer_reference to DOI:10.1016/j.fgb.2007.03.008, locus_reference to https://www.ebi.ac.uk/ena/browser/view/EF601124.1,
-    and preserving source_reference PMID:1368505), then re-seed via scripts/seed_from_sources.py.
+    DOI:10.1016/j.fgb.2006.03.001, and preserving source_reference DOI:10.1016/s0140-6736(00)87452-8)
+    and source_id=BGC0000405:1..3 (expected_source_row_sha256s 50cbd967cf8076f7cbfa5a77bbb9b2910e1e37593d10edea50ad6c3a83316de1,
+    ae975df0e01f81b73c2e119b776207ca3e0f061375585a06ceef3f099dbbe860, and 847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42,
+    routing producer_reference to DOI:10.1016/j.fgb.2007.03.008, locus_reference to
+    DOI:10.1016/j.fgb.2007.03.008, and preserving source_reference PMID:1368505),
+    then re-seed via scripts/seed_from_sources.py.
   finding_ids:
   - F-PEN-002
   target_ids:
@@ -1035,9 +1050,10 @@ actions:
   - Verify expected_source_row_sha256 pins for BGC0000404:1 and BGC0000405:1..3 in
     curation/mibig_claim_references.tsv.
   - Re-seed the 3 cohort records via scripts/seed_from_sources.py and confirm producer
-    and locus claims cite Fierro et al. 2006 / DQ192518.1 and van den Berg et al.
-    2007 / EF601124.1 with CURATOR_INFERENCE routing provenance while preserving Chain
-    et al. 1940 and Smith et al. 1990 as additional evidence.
+    and locus claims cite Fierro et al. 2006 (DOI:10.1016/j.fgb.2006.03.001) and van
+    den Berg et al. 2007 (DOI:10.1016/j.fgb.2007.03.008) with CURATOR_INFERENCE routing
+    provenance while preserving Chain et al. 1940 (DOI:10.1016/s0140-6736(00)87452-8)
+    and Smith et al. 1990 (PMID:1368505) as source_reference.
   - Verify scripts/validate_strict.py and scripts/verify_corpus.py pass with zero
     errors.
 - action_id: preserve-salt-and-protonation-state-boundaries
@@ -1088,7 +1104,7 @@ boundary_decisions:
     in the Penicillium chrysogenum penicillin biosynthetic pathway with distinct 3-star
     ChEBI groundings and Standard InChIKeys: linear tripeptide intermediate L-delta-(alpha-aminoadipoyl)-L-cysteinyl-D-valine
     monoanion (CHEBI:58572, BYEIJZFKOAXBBV-ATZCPNFKSA-M), bicyclic beta-lactam intermediate
-    isopenicillin N (CHEBI:18165, LFKDJXLFVZGSFA-PFFMAATASA-N), and phenylacetylated
+    isopenicillin N (CHEBI:18165, MIFYHUACUWQUKT-GTQWGBSQSA-N), and phenylacetylated
     penicillin G sodium salt (CHEBI:51765, FCPVYOBCFFNJFS-LQDWTQKMSA-M).'
   evidence_ids:
   - cohort-owners
