@@ -143,8 +143,9 @@ biosynthetic_pathway:
   reaction_id: RHEA:22428
   notes: Penicillium rubens/Penicillium chrysogenum Wisconsin 54-1255 IpnA/PcbC oxidatively
     cyclizes ACV to isopenicillin N. RHEA:22428 also consumes O2 and releases water;
-    its product participant is CHEBI:58399 isopenicillin N(1-), while this record
-    is grounded to neutral CHEBI:18165 with the same stereochemistry.
+    its product participant is CHEBI:58399 isopenicillin N(1-), while the sibling
+    isopenicillin N record is grounded to neutral CHEBI:18165 with the same stereochemistry
+    (and this ACV record is grounded to CHEBI:58572).
   evidence:
   - reference: DOI:10.1016/j.fgb.2007.03.008
     evidence_type: PRIMARY_EXPERIMENT

@@ -91,9 +91,8 @@ biosynthetic_pathway:
   substrate: CHEBI:57907
   product: CHEBI:138046
   notes: NfSS cyclizes (2E,6E,10E,14E)-geranylfarnesyl diphosphate to the tetracyclic
-    sesterterpene alcohol sesterfisherol. This single step records the sesterfisherol-forming
-    RHEA:54068 reaction and leaves the downstream A1DN29/NfP450 oxidation to sesterfisheric
-    acid unexpanded.
+    sesterterpene alcohol sesterfisherol in the first step (RHEA:54068) prior to downstream
+    NfP450 (UniProtKB:A1DN29) oxidation to sesterfisheric acid.
   evidence:
   - reference: DOI:10.1021/jacs.5b08319
     evidence_type: PRIMARY_EXPERIMENT
@@ -133,26 +132,26 @@ biosynthetic_pathway:
       P450 (NfP450) from Neosartorya fischeri were identified and shown to guide the
       synthesis of sesterfisherol (1) and sesterfisheric acid (2), respectively.
     notes: Ye et al. (2015) co-expressed Neosartorya fischeri (Aspergillus fischeri
-      NRRL 181) NfSS (NFIA_055480) and the adjacent cytochrome P450 monooxygenase
+      NRRL 181) NfSS (NFIA_055500) and the adjacent cytochrome P450 monooxygenase
       NfP450 (NFIA_055490) in Aspergillus oryzae NSAR1 and demonstrated that NfP450
       oxidizes sesterfisherol (1) to sesterfisheric acid (2).
   - reference: https://mibig.secondarymetabolites.org/repository/BGC0002162.3/BGC0002162.gbk
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-10-23'
-    notes: MIBiG BGC0002162.3 spans Aspergillus fischeri NRRL 181 DS027698.1 166341..174122,
-      encoding NFIA_055480 (EAW16199.1, UniProtKB:A1DN30, NfSS) and NFIA_055490 (EAW16200.1,
+    notes: MIBiG BGC0002162.3 spans Aspergillus fischeri NRRL 181 DS027698.1 2485363..2490827,
+      encoding NFIA_055500 (EAW16201.1, UniProtKB:A1DN30, NfSS) and NFIA_055490 (EAW16200.1,
       UniProtKB:A1DN29, NfP450) for sesterfisherol and sesterfisheric acid biosynthesis.
   - reference: https://www.uniprot.org/uniprotkb/A1DN29
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-10-23'
     notes: UniProtKB:A1DN29 is the Aspergillus fischeri NRRL 181 NFIA_055490 (EAW16200.1)
-      cytochrome P450 monooxygenase encoded adjacent to NfSS (NFIA_055480, UniProtKB:A1DN30)
-      in BGC0002162.
+      cytochrome P450 monooxygenase encoded adjacent to NfSS (NFIA_055500, EAW16201.1,
+      UniProtKB:A1DN30) in BGC0002162.
 causal_graphs:
 - graph_id: sesterfisheric-acid-nfss-nfp450-biosynthesis
   scope: BIOSYNTHESIS
   description: 'Aspergillus fischeri NRRL 181 BGC0002162 sesterterpenoid pathway:
-    bifunctional sesterfisherol synthase NfSS (NFIA_055480) converts (2E,6E,10E,14E)-geranylfarnesyl
+    bifunctional sesterfisherol synthase NfSS (NFIA_055500) converts (2E,6E,10E,14E)-geranylfarnesyl
     diphosphate to sesterfisherol, and adjacent cytochrome P450 monooxygenase NfP450
     (NFIA_055490) oxidizes sesterfisherol to sesterfisheric acid.'
   nodes:
@@ -255,22 +254,22 @@ causal_graphs:
         to guide the synthesis of sesterfisherol (1) and sesterfisheric acid (2),
         respectively.
       notes: Ye et al. (2015) co-expressed Neosartorya fischeri (Aspergillus fischeri
-        NRRL 181) NfSS (NFIA_055480) and the adjacent cytochrome P450 monooxygenase
+        NRRL 181) NfSS (NFIA_055500) and the adjacent cytochrome P450 monooxygenase
         NfP450 (NFIA_055490) in Aspergillus oryzae NSAR1 and demonstrated that NfP450
         oxidizes sesterfisherol (1) to sesterfisheric acid (2).
     - reference: https://mibig.secondarymetabolites.org/repository/BGC0002162.3/BGC0002162.gbk
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-23'
-      notes: MIBiG BGC0002162.3 spans Aspergillus fischeri NRRL 181 DS027698.1 166341..174122,
-        encoding NFIA_055480 (EAW16199.1, UniProtKB:A1DN30, NfSS) and NFIA_055490
+      notes: MIBiG BGC0002162.3 spans Aspergillus fischeri NRRL 181 DS027698.1 2485363..2490827,
+        encoding NFIA_055500 (EAW16201.1, UniProtKB:A1DN30, NfSS) and NFIA_055490
         (EAW16200.1, UniProtKB:A1DN29, NfP450) for sesterfisherol and sesterfisheric
         acid biosynthesis.
     - reference: https://www.uniprot.org/uniprotkb/A1DN29
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-23'
       notes: UniProtKB:A1DN29 is the Aspergillus fischeri NRRL 181 NFIA_055490 (EAW16200.1)
-        cytochrome P450 monooxygenase encoded adjacent to NfSS (NFIA_055480, UniProtKB:A1DN30)
-        in BGC0002162.
+        cytochrome P450 monooxygenase encoded adjacent to NfSS (NFIA_055500, EAW16201.1,
+        UniProtKB:A1DN30) in BGC0002162.
   - subject: nfp450
     predicate: forms
     object: sesterfisheric_acid
@@ -284,22 +283,22 @@ causal_graphs:
         to guide the synthesis of sesterfisherol (1) and sesterfisheric acid (2),
         respectively.
       notes: Ye et al. (2015) co-expressed Neosartorya fischeri (Aspergillus fischeri
-        NRRL 181) NfSS (NFIA_055480) and the adjacent cytochrome P450 monooxygenase
+        NRRL 181) NfSS (NFIA_055500) and the adjacent cytochrome P450 monooxygenase
         NfP450 (NFIA_055490) in Aspergillus oryzae NSAR1 and demonstrated that NfP450
         oxidizes sesterfisherol (1) to sesterfisheric acid (2).
     - reference: https://mibig.secondarymetabolites.org/repository/BGC0002162.3/BGC0002162.gbk
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-23'
-      notes: MIBiG BGC0002162.3 spans Aspergillus fischeri NRRL 181 DS027698.1 166341..174122,
-        encoding NFIA_055480 (EAW16199.1, UniProtKB:A1DN30, NfSS) and NFIA_055490
+      notes: MIBiG BGC0002162.3 spans Aspergillus fischeri NRRL 181 DS027698.1 2485363..2490827,
+        encoding NFIA_055500 (EAW16201.1, UniProtKB:A1DN30, NfSS) and NFIA_055490
         (EAW16200.1, UniProtKB:A1DN29, NfP450) for sesterfisherol and sesterfisheric
         acid biosynthesis.
     - reference: https://www.uniprot.org/uniprotkb/A1DN29
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-23'
       notes: UniProtKB:A1DN29 is the Aspergillus fischeri NRRL 181 NFIA_055490 (EAW16200.1)
-        cytochrome P450 monooxygenase encoded adjacent to NfSS (NFIA_055480, UniProtKB:A1DN30)
-        in BGC0002162.
+        cytochrome P450 monooxygenase encoded adjacent to NfSS (NFIA_055500, EAW16201.1,
+        UniProtKB:A1DN30) in BGC0002162.
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
   curator: seed_from_sources

@@ -192,7 +192,10 @@ biosynthetic_pathway:
   product: CHEBI:145070
   notes: SthD hydroxylates betaenone C at C-15 to afford compound 7 / stemphyloxin
     I; this single curated tailoring step leaves upstream assembly from dehydroprobetaenone
-    I to betaenone C unexpanded.
+    I to betaenone C unexpanded. RHEA:62712 uses the stereodefined participants CHEBI:145053
+    (betaenone C) and CHEBI:145070 (stemphyloxin I), whereas this NaturalProductRecord
+    keeps naturalproductmech:mibig-6a66cb2f42 because the MIBiG BGC0002165 betaenone
+    C structure has incomplete stereochemistry.
   evidence:
   - reference: DOI:10.1002/chem.201904360
     evidence_type: PRIMARY_EXPERIMENT
@@ -221,8 +224,8 @@ causal_graphs:
 - graph_id: betaenone-c-sthd-biosynthesis
   scope: BIOSYNTHESIS
   description: Parastagonospora nodorum SN15 BGC0002165 cytochrome P450 monooxygenase
-    SthD (SNOG_00480) converts betaenone C into stemphyloxin I via C-6 hydroxylation
-    and C-5/C-12 ketalization.
+    SthD (SNOG_07863) catalyzes C-15 hydroxylation of betaenone C to form stemphyloxin
+    I.
   nodes:
   - node_id: betaenone_c
     label: betaenone C
@@ -312,6 +315,7 @@ curation_history:
   action: RECORD_CURATED
   changes: Added Parastagonospora nodorum SN15 BGC0002165 BIOSYNTHESIS pathway and
     causal graph to betaenone C (naturalproductmech:mibig-6a66cb2f42) recording its
-    downstream oxidation by SthD cytochrome P450 monooxygenase (UniProtKB:Q0UK51,
-    RHEA:62712) from CHEBI:145053 betaenone C to CHEBI:145070 stemphyloxin I.
+    downstream C-15 hydroxylation by SthD cytochrome P450 monooxygenase (UniProtKB:Q0UK51,
+    SNOG_07863, RHEA:62712) from CHEBI:145053 betaenone C to CHEBI:145070 stemphyloxin
+    I.
   llm_assisted: true

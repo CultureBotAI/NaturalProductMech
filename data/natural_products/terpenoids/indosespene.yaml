@@ -90,9 +90,11 @@ biosynthetic_pathway:
 - step_number: 1
   enzyme_id: UniProtKB:I3VFB9
   enzyme_label: XiaI
-  notes: This deliberately curates only the Streptomyces sp. SCSIO 02999 XiaI oxidative
-    cyclization of indosespene to xiamycin A; upstream formation of indosespene and
-    parallel oxiamycin tailoring remain uncurated.
+  notes: This curates the biochemically characterized Streptomyces sp. SCSIO 02999
+    XiaI (UniProtKB:I3VFB9, mibig:BGC0000666) oxidative cyclization of indosespene
+    to xiamycin A as the characterized homolog for the xim/xia pathway (this indosespene
+    record is seeded from the homologous Streptomyces sp. HKI0576 xim cluster mibig:BGC0000665);
+    upstream formation of indosespene and parallel oxiamycin tailoring remain uncurated.
   evidence:
   - reference: DOI:10.1021/ja303004g
     evidence_type: PRIMARY_EXPERIMENT
@@ -116,8 +118,10 @@ biosynthetic_pathway:
 causal_graphs:
 - graph_id: indosespene-xiai-biosynthesis
   scope: BIOSYNTHESIS
-  description: Streptomyces sp. SCSIO 02999 BGC0000665 flavin-dependent monooxygenase
-    XiaI converts the indolosesquiterpene intermediate indosespene into xiamycin A.
+  description: Partial xiamycin A biosynthesis graph on indosespene (seeded with the
+    Streptomyces sp. HKI0576 mibig:BGC0000665 xim cluster) recording the biochemically
+    characterized homologous Streptomyces sp. SCSIO 02999 (mibig:BGC0000666) flavin-dependent
+    monooxygenase XiaI oxidative cyclization of indosespene into xiamycin A.
   nodes:
   - node_id: indosespene
     label: indosespene
@@ -191,7 +195,9 @@ curation_history:
 - timestamp: '2026-10-23T08:00:00Z'
   curator: antigravity
   action: RECORD_CURATED
-  changes: Added Streptomyces sp. SCSIO 02999 BGC0000665 BIOSYNTHESIS pathway and
-    causal graph to indosespene (naturalproductmech:mibig-cb4ddd98d8) recording its
-    downstream oxidative cyclization by XiaI (UniProtKB:I3VFB9) to xiamycin A (naturalproductmech:mibig-9f978c0043).
+  changes: Added BIOSYNTHESIS pathway and causal graph to indosespene (naturalproductmech:mibig-cb4ddd98d8,
+    mibig:BGC0000665 in Streptomyces sp. HKI0576) recording its downstream oxidative
+    cyclization to xiamycin A (naturalproductmech:mibig-9f978c0043) catalyzed by the
+    biochemically characterized homologous flavin-dependent monooxygenase XiaI (UniProtKB:I3VFB9,
+    mibig:BGC0000666 in Streptomyces sp. SCSIO 02999).
   llm_assisted: true
