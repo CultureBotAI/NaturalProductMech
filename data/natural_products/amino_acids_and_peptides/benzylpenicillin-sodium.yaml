@@ -42,10 +42,36 @@ producer_organisms:
   notes: 'Locus evidence: none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED;
     this field grades the taxon claim, which is a different question.'
   evidence:
-  - reference: DOI:10.1016/s0140-6736(00)87452-8
+  - reference: DOI:10.1016/j.fgb.2006.03.001
     evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0000404 entry version 4; citation taken from the compound bioactivity
-      level
+    notes: MIBiG BGC0000404 entry version 4; claim-specific citation selected through
+      a reviewed producer_reference correction. This remains a database assertion,
+      not independently graded experimental evidence.
+  - reference: DOI:10.1016/s0140-6736(00)87452-8
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Citation routing only. The imported compound-bioactivity reference DOI:10.1016/s0140-6736(00)87452-8
+      (Chain et al., Lancet 1940;236(6104):226-228) is a 1940 clinical mouse-protection
+      study that predates DNA sequencing and does not characterize Penicillium chrysogenum
+      AS-P-78 or GenBank DQ192518.1 (coordinates 17440..28759). Route the BGC0000404:1
+      producer and locus claims to Fierro et al. 2006 (PMID:16713314, DOI:10.1016/j.fgb.2006.03.001),
+      which sequenced and characterized the DQ192518.1 penicillin region in P. chrysogenum
+      AS-P-78, without upgrading SOURCE_ASSERTION or CLUSTER_UNSTATED grades or altering
+      taxon or structure identity. See issue #1023. Original imported citation DOI:10.1016/s0140-6736(00)87452-8
+      (COMPOUND_BIOACTIVITY) remains in the raw inventory, not as support for this
+      claim. MIBiG source row BGC0000404:1; SHA256 9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19.
+      Curator: antigravity; date: 2026-10-23. Taxon, locus, chemistry and evidence
+      grades are unchanged.'
+  - reference: DOI:10.1016/j.fgb.2006.03.001
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: AS-P-78. Fierro et al. 2006 (PMID:16713314, DOI:10.1016/j.fgb.2006.03.001)
+      and GenBank DQ192518.1 explicitly identify Penicillium chrysogenum strain AS-P-78
+      as the sequenced and amplified 106.5 kb penicillin region host for BGC0000404:1.
+      Preserve NCBITaxon:5076 and existing SOURCE_ASSERTION/CLUSTER_UNSTATED grades;
+      sodium-salt structure representation remains tracked in #1015. See issue #1022.
+      Taxon identity and evidence grade are unchanged; this is not a species-wide
+      experiment. MIBiG source row BGC0000404:1; SHA256 9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19.
+      Curator: antigravity; date: 2026-10-23.'
+  strain: AS-P-78
 - taxon_id: NCBITaxon:5076
   taxon_label: Penicillium chrysogenum
   evidence_basis: SOURCE_ASSERTION
@@ -55,9 +81,38 @@ producer_organisms:
   notes: 'Locus evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
     this field grades the taxon claim, which is a different question.'
   evidence:
-  - reference: PMID:1368505
+  - reference: DOI:10.1016/j.fgb.2007.03.008
     evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0000405 entry version 5; citation taken from the entry level
+    notes: MIBiG BGC0000405 entry version 5; claim-specific citation selected through
+      a reviewed producer_reference correction. This remains a database assertion,
+      not independently graded experimental evidence.
+  - reference: PMID:1368505
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Citation routing only. The imported entry-level reference PMID:1368505
+      (Smith et al., Bio/Technology 1990;8(1):39-41, DOI:10.1038/nbt0190-39) reports
+      1990 heterologous cosmid pDJB3-G1 expression in Neurospora crassa and Aspergillus
+      niger and predates GenBank EF601124.1 (coordinates 22186..33473) by 17 years.
+      Route the BGC0000405:3 (benzylpenicillin) producer and locus claims to van den
+      Berg et al. 2007 (PMID:17548217, DOI:10.1016/j.fgb.2007.03.008), which sequenced
+      and functionally characterized the 56.8 kb EF601124.1 penicillin cluster in
+      P. chrysogenum Wisconsin 54-1255, without altering taxon, structure identity,
+      or evidence grades. See issue #1023. Original imported citation PMID:1368505
+      (ENTRY) remains in the raw inventory, not as support for this claim. MIBiG source
+      row BGC0000405:3; SHA256 847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42.
+      Curator: antigravity; date: 2026-10-23. Taxon, locus, chemistry and evidence
+      grades are unchanged.'
+  - reference: DOI:10.1016/j.fgb.2007.03.008
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: Wisconsin 54-1255. Van den Berg et al. 2007 (PMID:17548217,
+      DOI:10.1016/j.fgb.2007.03.008) and GenBank EF601124.1 explicitly identify Penicillium
+      chrysogenum strain Wisconsin 54-1255 as the sequenced and functionally characterized
+      56.8 kb penicillin cluster host for BGC0000405:3 (benzylpenicillin). Preserve
+      NCBITaxon:5076 and existing SOURCE_ASSERTION/CLUSTER_DEMONSTRATED grades; sodium-salt
+      structure representation remains tracked in #1015. See issue #1022. Taxon identity
+      and evidence grade are unchanged; this is not a species-wide experiment. MIBiG
+      source row BGC0000405:3; SHA256 847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42.
+      Curator: antigravity; date: 2026-10-23.'
+  strain: Wisconsin 54-1255
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0000404
   entry_version: '4'
@@ -65,10 +120,25 @@ biosynthetic_gene_clusters:
   organism_taxon_id: NCBITaxon:5076
   organism_label: Penicillium chrysogenum
   evidence:
-  - reference: DOI:10.1016/s0140-6736(00)87452-8
+  - reference: DOI:10.1016/j.fgb.2006.03.001
     evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0000404 entry version 4; citation taken from the compound bioactivity
-      level
+    notes: MIBiG BGC0000404 entry version 4; claim-specific citation selected through
+      a reviewed locus_reference correction. This remains a database assertion, not
+      independently graded experimental evidence.
+  - reference: DOI:10.1016/s0140-6736(00)87452-8
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Citation routing only. The imported compound-bioactivity reference DOI:10.1016/s0140-6736(00)87452-8
+      (Chain et al., Lancet 1940;236(6104):226-228) is a 1940 clinical mouse-protection
+      study that predates DNA sequencing and does not characterize Penicillium chrysogenum
+      AS-P-78 or GenBank DQ192518.1 (coordinates 17440..28759). Route the BGC0000404:1
+      producer and locus claims to Fierro et al. 2006 (PMID:16713314, DOI:10.1016/j.fgb.2006.03.001),
+      which sequenced and characterized the DQ192518.1 penicillin region in P. chrysogenum
+      AS-P-78, without upgrading SOURCE_ASSERTION or CLUSTER_UNSTATED grades or altering
+      taxon or structure identity. See issue #1023. Original imported citation DOI:10.1016/s0140-6736(00)87452-8
+      (COMPOUND_BIOACTIVITY) remains in the raw inventory, not as support for this
+      claim. MIBiG source row BGC0000404:1; SHA256 9460d29fcad2b7ecb913298bc80838656966e219ec0654094d28b71942eaeb19.
+      Curator: antigravity; date: 2026-10-23. Taxon, locus, chemistry and evidence
+      grades are unchanged.'
   genome_accession: genbank:DQ192518.1
   bgc_class:
   - NRPS
@@ -79,9 +149,26 @@ biosynthetic_gene_clusters:
   organism_taxon_id: NCBITaxon:5076
   organism_label: Penicillium chrysogenum
   evidence:
-  - reference: PMID:1368505
+  - reference: DOI:10.1016/j.fgb.2007.03.008
     evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0000405 entry version 5; citation taken from the entry level
+    notes: MIBiG BGC0000405 entry version 5; claim-specific citation selected through
+      a reviewed locus_reference correction. This remains a database assertion, not
+      independently graded experimental evidence.
+  - reference: PMID:1368505
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Citation routing only. The imported entry-level reference PMID:1368505
+      (Smith et al., Bio/Technology 1990;8(1):39-41, DOI:10.1038/nbt0190-39) reports
+      1990 heterologous cosmid pDJB3-G1 expression in Neurospora crassa and Aspergillus
+      niger and predates GenBank EF601124.1 (coordinates 22186..33473) by 17 years.
+      Route the BGC0000405:3 (benzylpenicillin) producer and locus claims to van den
+      Berg et al. 2007 (PMID:17548217, DOI:10.1016/j.fgb.2007.03.008), which sequenced
+      and functionally characterized the 56.8 kb EF601124.1 penicillin cluster in
+      P. chrysogenum Wisconsin 54-1255, without altering taxon, structure identity,
+      or evidence grades. See issue #1023. Original imported citation PMID:1368505
+      (ENTRY) remains in the raw inventory, not as support for this claim. MIBiG source
+      row BGC0000405:3; SHA256 847cf368dc26e162604ac12681781efc5814bcc31c4e19e94b09578562a1dd42.
+      Curator: antigravity; date: 2026-10-23. Taxon, locus, chemistry and evidence
+      grades are unchanged.'
   genome_accession: genbank:EF601124.1
   bgc_class:
   - NRPS
@@ -128,3 +215,7 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-23T14:35:37Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.

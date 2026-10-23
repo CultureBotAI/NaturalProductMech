@@ -141,6 +141,11 @@ def test_other_qualifications_are_not_overwritten(inputs):
         "https://mibig.secondarymetabolites.org/repository/BGC0000899.4/",
         "https://www.ncbi.nlm.nih.gov/nuccore/AF521878.1",
     ),
+    (
+        "BGC0000404",
+        "DOI:10.1016/j.fgb.2006.03.001",
+        "DOI:10.1016/j.fgb.2006.03.001",
+    ),
 ])
 def test_committed_citation_decisions_are_claim_local(accession, producer_ref, locus_ref):
     sources = [r for r in seed.read_tsv(ROOT / "data/raw/mibig_compounds.tsv")
@@ -171,3 +176,29 @@ def test_committed_citation_decisions_are_claim_local(accession, producer_ref, l
             current[field][0]["evidence"] = old[field][0]["evidence"]
         assert current == old
     assert sources == original_sources
+
+
+@pytest.mark.parametrize("source_id,expected_ref,source_ref", [
+    ("BGC0000404:1", "DOI:10.1016/j.fgb.2006.03.001", "DOI:10.1016/s0140-6736(00)87452-8"),
+    ("BGC0000405:1", "DOI:10.1016/j.fgb.2007.03.008", "PMID:1368505"),
+    ("BGC0000405:2", "DOI:10.1016/j.fgb.2007.03.008", "PMID:1368505"),
+    ("BGC0000405:3", "DOI:10.1016/j.fgb.2007.03.008", "PMID:1368505"),
+])
+def test_penicillium_chrysogenum_claim_references(source_id, expected_ref, source_ref):
+    accession, compound_index = source_id.split(":")
+    source, = [
+        r for r in seed.read_tsv(ROOT / "data/raw/mibig_compounds.tsv")
+        if r["mibig_accession"] == accession and r["compound_index"] == compound_index
+    ]
+    decision, = [
+        r for r in seed.read_tsv(seed.MIBIG_CLAIM_REFERENCES)
+        if r["source_id"] == source_id
+    ]
+    doc, = seed.build_records({"mibig_compounds": [source], "mibig_claim_references": [decision]})
+    for field in ("producer_organisms", "biosynthetic_gene_clusters"):
+        evidence = doc[field][0]["evidence"]
+        assert evidence[0]["reference"] == expected_ref
+        assert evidence[0]["evidence_type"] == "DATABASE_ASSERTION"
+        assert evidence[-1]["reference"] == source_ref
+        assert evidence[-1]["evidence_type"] == "CURATOR_INFERENCE"
+        assert row_digest(source) in evidence[-1]["notes"]

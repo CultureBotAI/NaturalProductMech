@@ -89,6 +89,24 @@ def test_cannot_qualify_an_unnamed_producer(source, qualification):
     ("polyketides/neomethymycin", [("mibig:BGC0000898", "ATCC 15439", "SOURCE_ASSERTION")], "antigravity"),
     ("polyketides/narbomycin", [("mibig:BGC0000898", "ATCC 15439", "SOURCE_ASSERTION")], "antigravity"),
     ("polyketides/pikromycin", [("mibig:BGC0000898", "ATCC 15439", "SOURCE_ASSERTION")], "antigravity"),
+    (
+        "amino_acids_and_peptides/n-5s-5-ammonio-5-carboxylatopentanoyl-l-cysteinyl-d-valinate",
+        [("mibig:BGC0000405", "Wisconsin 54-1255", "SOURCE_ASSERTION")],
+        "antigravity",
+    ),
+    (
+        "amino_acids_and_peptides/isopenicillin-n",
+        [("mibig:BGC0000405", "Wisconsin 54-1255", "SOURCE_ASSERTION")],
+        "antigravity",
+    ),
+    (
+        "amino_acids_and_peptides/benzylpenicillin-sodium",
+        [
+            ("mibig:BGC0000404", "AS-P-78", "SOURCE_ASSERTION"),
+            ("mibig:BGC0000405", "Wisconsin 54-1255", "SOURCE_ASSERTION"),
+        ],
+        "antigravity",
+    ),
 ])
 def test_curated_strain_context_keeps_database_assertions(relpath, expected, curator_token):
     root = Path(__file__).resolve().parents[1]

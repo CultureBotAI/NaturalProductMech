@@ -1,0 +1,156 @@
+schema_version: 1.0.0
+repository_key: naturalproductmech
+github_repository: CultureBotAI/NaturalProductMech
+run_id: mech-goal-sequence-20261019
+cycle: 2
+stage: 5
+revision: 1
+outcome: completed
+summary: >-
+  Consumed Cycle 2 Stage 4 cohort and record review outputs for the 3-record Penicillium chrysogenum penicillin cohort
+  (CHEBI:58572, CHEBI:18165, CHEBI:51765) plus carried-forward finding F-PIK-DES-003, grouped all findings into 4
+  root-cause groups, deduplicated against open GitHub issues, created issues #1022 and #1023 and reused open issues #1015
+  and #1012, resolved G-PEN-001 (#1022) and G-PEN-002 (#1023) via source-pinned rows in curation/mibig_producer_strains.tsv
+  and curation/mibig_claim_references.tsv and deterministic re-seeding, deferred G-PEN-003 (#1015) and G-PIK-DES-003 (#1012)
+  as upstream representation boundaries, and saved fresh post-remediation review
+  20261023T144300Z-penicillium-chrysogenum-stage5-remediation-review.
+source_revision: 0b02eb3e60e3947bb91bc7c09ddf0dedbc19d928
+scope_frozen_at: '2026-10-23T14:30:00Z'
+previous_evidence:
+  path: reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-04/revision-0001/evidence.yaml
+  sha256: 5d5cca19b7d71a2699c63b8ac23d7122eac3340568b22b24d875e4cf3bb38334
+artifacts:
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/issue_map.md
+    sha256: a4747bcd44fc7073f1d19f32dbb0edfb7a3d517c482ff4ce1b936c6ab03b4609
+    kind: issue_map
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/validation.md
+    sha256: b9b5ef47be468954be20d2288c05dd1c0b96e503184a1cb3bb4ff23d34d474ef
+    kind: validation
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/coverage.json
+    sha256: 7e7d94f457b513c15c01e3031f4757e049dfd42e33f75b05c6af7a5279df8952
+    kind: supporting
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/review_findings.yaml
+    sha256: 8ba37c0fc47954259b77251a98a281d99de7b5738ea879b7d2b7ab4b4ba8f148
+    kind: review_findings
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/review_report.md
+    sha256: 49e68c8c9cf63a6ca75c28e4ca6389b5563ce80a25c623ad80cef801b2643506
+    kind: review_report
+findings:
+  - finding_id: F-PEN-001
+    status: resolved
+    summary: >-
+      Missing AS-P-78 (BGC0000404:1, DQ192518.1) and Wisconsin 54-1255 (BGC0000405:1..3, EF601124.1) producer strain
+      qualifications on three Penicillium chrysogenum (NCBITaxon:5076) records
+      (n-5s-5-ammonio-5-carboxylatopentanoyl-l-cysteinyl-d-valinate.yaml, isopenicillin-n.yaml, benzylpenicillin-sodium.yaml),
+      directly supported by Fierro et al. 2006 (PMID:16713314, DOI:10.1016/j.fgb.2006.03.001) and van den Berg et al. 2007
+      (PMID:17548217, DOI:10.1016/j.fgb.2007.03.008).
+    carried_from: F-PEN-001
+    group_id: G-PEN-001
+    issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/1022
+    disposition: >-
+      Resolved in Stage 5 (#1022) by adding 4 source-pinned rows for BGC0000404:1 (AS-P-78, DOI:10.1016/j.fgb.2006.03.001)
+      and BGC0000405:1..3 (Wisconsin 54-1255, DOI:10.1016/j.fgb.2007.03.008) to curation/mibig_producer_strains.tsv and
+      re-seeding CHEBI:58572, CHEBI:18165, and CHEBI:51765.
+  - finding_id: F-PEN-002
+    status: resolved
+    summary: >-
+      Anachronistic entry-level citations attached to Penicillium chrysogenum BGC claims: DOI:10.1016/s0140-6736(00)87452-8
+      (Chain et al., Lancet 1940) on BGC0000404:1 (genbank:DQ192518.1, MIBiG coordinates 17440..28759, entry_version 4,
+      sequenced in 2005/2006 by Fierro et al., DOI:10.1016/j.fgb.2006.03.001) and PMID:1368505 (Smith et al.,
+      Bio/Technology 1990;8(1):39-41, DOI:10.1038/nbt0190-39) on BGC0000405:1..3 (genbank:EF601124.1, MIBiG coordinates
+      22186..33473, entry_version 5, sequenced in 2007 by van den Berg et al., DOI:10.1016/j.fgb.2007.03.008).
+    carried_from: F-PEN-002
+    group_id: G-PEN-002
+    issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/1023
+    disposition: >-
+      Resolved in Stage 5 (#1023) by adding 4 source-pinned rows for BGC0000404:1 (routing producer_reference and
+      locus_reference from DOI:10.1016/s0140-6736(00)87452-8 to DOI:10.1016/j.fgb.2006.03.001) and BGC0000405:1..3
+      (routing producer_reference and locus_reference from PMID:1368505 to DOI:10.1016/j.fgb.2007.03.008) to
+      curation/mibig_claim_references.tsv and re-seeding CHEBI:58572, CHEBI:18165, and CHEBI:51765.
+  - finding_id: F-PEN-003
+    status: deferred
+    summary: >-
+      Upstream MIBiG salt and protonation-state encoding on CHEBI:51765 (benzylpenicillin sodium on BGC0000404:1 and
+      BGC0000405:3 vs biological benzylpenicillin(1-) CHEBI:51354, blocking PenDE / RHEA:19809 biosynthetic_pathway curation
+      under #1015) and CHEBI:58572 (monoanion zwitterion on BGC0000405:1 vs neutral ACV CHEBI:28496).
+    carried_from: F-PEN-003
+    group_id: G-PEN-003
+    issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/1015
+    disposition: >-
+      Deferred in Stage 5 (#1015) because MIBiG BGC0000404:1 and BGC0000405:3 supply the sodium salt SMILES (CHEBI:51765)
+      and BGC0000405:1 supplies monoanionic ACV (CHEBI:58572), and atomic multi-row REPLACE_SHARED_WITH_CHEBI or
+      counterion-stripped terminal-product matching is tracked in open issue #1015.
+  - finding_id: F-PIK-DES-003
+    status: deferred
+    summary: >-
+      Upstream tautomeric/stereochemical separation between desosamine.yaml (ZOYWWAGVGBSJDL-UHFFFAOYSA-N, stereo-incomplete
+      cyclic hexopyranose on BGC0000899:1) and desosamine-2.yaml (CHEBI:32540, VTJCSBJRQLZNHE-CSMHCCOUSA-N, 3-star ChEBI
+      open-chain D-desosamine aldehyde on BGC0000898:1), plus MIBiG 4.0 deposit split of the S. venezuelae ATCC 15439
+      pik/des cluster across BGC0000094 (AF079138.1) and BGC0000898 (AF079762.1, CLUSTER_UNSTATED).
+    carried_from: F-PIK-DES-003
+    group_id: G-PIK-DES-003
+    issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/1012
+    disposition: >-
+      Deferred in Stage 5 (#1012) until a 3-star stereochemically complete cyclic D-desosamine ChEBI entry and
+      deposit-level AF079762.1/AF079138.1 sequence alignment are available.
+groups:
+  - group_id: G-PEN-001
+    finding_ids:
+      - F-PEN-001
+    issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/1022
+    status: resolved
+    summary: Preserve AS-P-78 and Wisconsin 54-1255 producer strain context on Penicillium chrysogenum BGC0000404 and BGC0000405 claims
+    resolution_evidence:
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/issue_map.md
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/validation.md
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/review_findings.yaml
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/review_report.md
+    disposition: >-
+      Resolved via 4 source-pinned producer strain rows in curation/mibig_producer_strains.tsv and deterministic re-seeding
+      of CHEBI:58572, CHEBI:18165, and CHEBI:51765.
+  - group_id: G-PEN-002
+    finding_ids:
+      - F-PEN-002
+    issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/1023
+    status: resolved
+    summary: Remediate anachronistic entry-level citations on Penicillium chrysogenum BGC0000404 and BGC0000405 producer and locus claims
+    resolution_evidence:
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/issue_map.md
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/validation.md
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/review_findings.yaml
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/review_report.md
+    disposition: >-
+      Resolved via 4 source-pinned claim-reference routing rows in curation/mibig_claim_references.tsv and deterministic
+      re-seeding of CHEBI:58572, CHEBI:18165, and CHEBI:51765.
+  - group_id: G-PEN-003
+    finding_ids:
+      - F-PEN-003
+    issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/1015
+    status: deferred
+    summary: Upstream MIBiG salt and protonation-state encoding on benzylpenicillin sodium (CHEBI:51765) and monoanionic ACV (CHEBI:58572)
+    resolution_evidence:
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/issue_map.md
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/validation.md
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/review_findings.yaml
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/review_report.md
+    disposition: >-
+      Deferred in open GitHub issue #1015 until atomic multi-row REPLACE_SHARED_WITH_CHEBI or counterion-stripped
+      terminal-product validation is implemented.
+  - group_id: G-PIK-DES-003
+    finding_ids:
+      - F-PIK-DES-003
+    issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/1012
+    status: deferred
+    summary: Adjudicate D-desosamine cyclic/open-chain tautomer split and MIBiG BGC0000094/BGC0000898 deposit partition
+    resolution_evidence:
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/issue_map.md
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/validation.md
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/review_findings.yaml
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/review_report.md
+    disposition: >-
+      Deferred in open GitHub issue #1012 until a 3-star stereochemically complete cyclic D-desosamine ChEBI entry and
+      deposit-level AF079762.1/AF079138.1 sequence alignment are available.
+carry_forward_ids:
+  - F-PEN-003
+  - F-PIK-DES-003
+infra_tasks: []
