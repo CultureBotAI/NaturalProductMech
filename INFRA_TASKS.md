@@ -43,12 +43,12 @@ tasks:
     documented the single-catalytic-subunit PathwayStep + PROTEIN_COMPLEX causal_graphs convention in docs/CURATION.md.
 - task_id: naturalproductmech-infra-0002
   summary: Support atomic multi-row REPLACE_SHARED_WITH_CHEBI structure replacement in structure_corrections.py
-  status: open
+  status: resolved
   issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/1015
   disposition: >-
-    Open for Cycle 2 Stage 6 (#1015): add group-validated REPLACE_SHARED_WITH_CHEBI action in
-    src/naturalproductmech/curate/structure_corrections.py so multi-row shared salt or stereo-incomplete MIBiG
-    groups denoting the same compound can be replaced atomically without splitting or stranding rows.
+    Resolved in cycle 2 stage 6 (#1015): added REPLACE_SHARED_WITH_CHEBI in src/naturalproductmech/curate/structure_corrections.py
+    and consolidated multi-row structure-correction discussions in scripts/seed_from_sources.py, with 5 unit tests in
+    tests/test_structure_corrections.py and documentation in docs/CURATION.md.
 ```
 <!-- mech-infra-tasks:end -->
 
@@ -88,14 +88,18 @@ tasks:
 ### `naturalproductmech-infra-0002` — Support atomic multi-row `REPLACE_SHARED_WITH_CHEBI` structure replacement in `structure_corrections.py`
 
 - **Origin**: `mech-goal-sequence-20261019`, cycle `2`, stage `1` (`add_records`, `goal-5690`)
-- **Status**: `open` (tracked in https://github.com/CultureBotAI/NaturalProductMech/issues/1015)
+- **Status**: `resolved` (implemented and verified in cycle `2`, stage `6`; tracked in https://github.com/CultureBotAI/NaturalProductMech/issues/1015)
 - **Priority**: P2
 - **Dependencies**: None
 - **Evidence paths**:
   - `src/naturalproductmech/curate/structure_corrections.py` (`ALLOWED_ACTIONS`, `apply_structure_corrections`)
+  - `scripts/seed_from_sources.py` (`build_records`)
   - `curation/mibig_structure_corrections.tsv`
   - `tests/test_structure_corrections.py`
   - `docs/CURATION.md`
+  - `reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-06/revision-0001/infra_snapshot.md`
+  - `reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-06/revision-0001/implementation_plan.md`
+  - `reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-06/revision-0001/validation.md`
   - `data/raw/mibig_compounds.tsv` (`BGC0000404:1`, `BGC0000405:3`, `BGC0002095:2`, `BGC0002134:1`, `BGC0000076:1`, `BGC0000077:1`, `BGC0000955:1`, `BGC0001415:1`)
   - `data/raw/chebi_structures.tsv` (`CHEBI:18208`, `CHEBI:51765`, `CHEBI:6426`, `CHEBI:83275`, `CHEBI:157683`)
   - `data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml`
@@ -110,5 +114,7 @@ tasks:
   3. During Cycle 2 Stage 2 (`causal_graphs`), this structure-correction blocker also prevents curating the terminal `mibig:BGC0000405` *Penicillium chrysogenum* / *Penicillium rubens* Wisconsin 54-1255 acyl-CoA:isopenicillin N acyltransferase step (`PenDE` / `AatA`, `UniProtKB:P15802`, `RHEA:19249`, `CHEBI:18165` `isopenicillin N` -> `CHEBI:18208` `benzylpenicillin` / `CHEBI:58435` `benzylpenicillin(1-)`) onto `data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml` (`CHEBI:51765`), because the record is still grounded to the sodium salt `CHEBI:51765` rather than the neutral parent `CHEBI:18208`. Once `REPLACE_SHARED_WITH_CHEBI` (#1015) replaces `BGC0000404:1` + `BGC0000405:3` with `CHEBI:18208`, the 3-step `PcbAB -> IpnA -> PenDE` `BIOSYNTHESIS` pathway and causal graph can be completed on the neutral `benzylpenicillin` record.
 - **Desired outcome**:
   1. Add a group-validated `REPLACE_SHARED_WITH_CHEBI` action in `src/naturalproductmech/curate/structure_corrections.py` (with unit tests in `tests/test_structure_corrections.py` and documentation in `docs/CURATION.md`) that verifies all `mibig_compounds.tsv` rows sharing the upstream `standard_inchi_key` are declared in `curation/mibig_structure_corrections.tsv` with the same `target_chebi_id` and replaces the entire shared group atomically without splitting or stranding a row.
-
-
+- **Resolution & Disposition**:
+  1. Added `REPLACE_SHARED_WITH_CHEBI` to `ALLOWED_ACTIONS` and `apply_structure_corrections` in `src/naturalproductmech/curate/structure_corrections.py`, enforcing shared-key multiplicity (`source_keys[old_key] >= 2`), complete group coverage (`count == source_keys[old_key]` and `remaining_source_keys[old_key] == 0`), action homogeneity per `old_key`, identical target ChEBI and derived chemistry across all rows in the group, and target-key collision rejection across distinct source keys, while recording `structure_correction_old_key = old_key` on each replaced row.
+  2. Updated `scripts/seed_from_sources.py` so multi-row structure replacements emit a single consolidated `source-structure-correction` discussion preserving every row's `structure_correction_note` and evidence item without duplicate `discussion_id` entries.
+  3. Added 5 unit tests in `tests/test_structure_corrections.py` and documented `REPLACE_SHARED_WITH_CHEBI` in `docs/CURATION.md`.
