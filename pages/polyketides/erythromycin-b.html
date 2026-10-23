@@ -99,7 +99,27 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>10</td>
+  <td>EryF 6-deoxyerythronolide B hydroxylase<br><span class="mono">UniProtKB:Q00441</span></td>
+  <td class="mono">RHEA:40299</td>
+  <td class="mono">CHEBI:16089 &rarr; CHEBI:27977</td>
+  <td class="mono">DOI:10.1128/jb.174.3.725-735.1992</td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>EryG erythromycin 3&#39;&#39;-O-methyltransferase<br><span class="mono">UniProtKB:A4F7P5</span></td>
+  <td class="mono">RHEA:32651</td>
+  <td class="mono">CHEBI:63677 &rarr; CHEBI:64279</td>
+  <td class="mono">DOI:10.1128/jb.172.5.2541-2546.1990</td>
+</tr>
+</table></div>
+<p class="sub">Step 10: Partial tailoring view: EryF hydroxylates 6-deoxyerythronolide B to erythronolide B; uncurated glycosylation and deoxysugar steps between erythronolide B and erythromycin D are intentionally omitted.</p><p class="sub">Step 20: Saccharopolyspora erythraea NRRL 2338 SACE_0728 EryG O-methylates the 3&#39;&#39;-hydroxyl of the mycarose moiety of erythromycin D to form erythromycin B. RHEA:32651 uses protonated CHEBI:63677 erythromycin D(1+) and CHEBI:64279 erythromycin B(1+) as reaction participants corresponding to neutral records CHEBI:28331 and CHEBI:28196.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
   <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for erythromycin B">
@@ -117,7 +137,7 @@ isolation report left it.</p>
     <rect x="232" y="24" width="186" height="98" rx="10" fill="var(--panel)" stroke="var(--rule)"/>
     <text x="244" y="48" font-size="11" font-weight="700" fill="var(--muted)">BIOSYNTHETIC LOCUS</text>
     <text x="244" y="70" font-size="12.5" font-weight="600" fill="var(--ink)">1 gene cluster</text>
-    <text x="244" y="92" font-size="11.5" fill="var(--muted)">0 curated pathway steps</text>
+    <text x="244" y="92" font-size="11.5" fill="var(--muted)">2 curated pathway steps</text>
     <line x1="418" y1="73" x2="446" y2="73" stroke="var(--link)" stroke-width="1.8" marker-end="url(#np-arrow)"/>
 
     <rect x="450" y="20" width="190" height="106" rx="10" fill="var(--panel)" stroke="var(--link)" stroke-width="1.8"/>
@@ -130,10 +150,60 @@ isolation report left it.</p>
     <rect x="672" y="24" width="174" height="98" rx="10" fill="var(--panel)" stroke="var(--rule)"/>
     <text x="684" y="48" font-size="11" font-weight="700" fill="var(--muted)">TARGETS &amp; BIOACTIVITY</text>
     <text x="684" y="70" font-size="12.5" font-weight="600" fill="var(--ink)">0 molecular targets</text>
-    <text x="684" y="92" font-size="11.5" fill="var(--muted)">0 bioactivities &middot; 0 graphs</text>
+    <text x="684" y="92" font-size="11.5" fill="var(--muted)">0 bioactivities &middot; 1 graph</text>
   </svg>
 </div>
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">6 nodes, 4 edges</span></h2>
+<p class="sub">Partial Saccharopolyspora erythraea NRRL 2338 BGC0000055 macrolide tailoring graph leading to erythromycin B (intermediate glycosylation steps between erythronolide B and erythromycin D intentionally omitted): upstream EryF 6-deoxyerythronolide B C-6 hydroxylation and EryG 3&#39;&#39;-O-methylation of erythromycin D to erythromycin B.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>6-deoxyerythronolide B</td>
+  <td>is hydroxylated by</td>
+  <td>EryF 6-deoxyerythronolide B hydroxylase</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/jb.174.3.725-735.1992</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/jb.174.3.725-735.1992</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>EryF catalyzes RHEA:40299.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>EryF 6-deoxyerythronolide B hydroxylase</td>
+  <td>forms</td>
+  <td>erythronolide B</td>
+  <td>The full DEBS-to-glycosylated-macrolide route between erythronolide B and erythromycin D remains uncurated in this partial graph.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/jb.174.3.725-735.1992</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/jb.174.3.725-735.1992</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>EryF catalyzes RHEA:40299.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>erythromycin D</td>
+  <td>is O-methylated by</td>
+  <td>EryG erythromycin 3&#39;&#39;-O-methyltransferase</td>
+  <td>RHEA:32651 consumes S-adenosyl-L-methionine and erythromycin D(1+) along the EryG branch to erythromycin B.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/jb.172.5.2541-2546.1990<br>DOI:10.1021/bi00006a006<br>https://mibig.secondarymetabolites.org/repository/BGC0000055.5/BGC0000055.gbk<br>https://www.uniprot.org/uniprotkb/A4F7P5<br>https://www.rhea-db.org/rhea/32651</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/jb.172.5.2541-2546.1990</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>eryG codes for the structural gene of this enzyme</dd><dt>notes</dt><dd>Paulus et al. sequenced the Saccharopolyspora erythraea eryG region and showed in Escherichia coli that eryG encodes S-adenosylmethionine:erythromycin C/D O-methyltransferase converting erythromycin D to erythromycin B and erythromycin C to erythromycin A.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1021/bi00006a006</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>preference of the enzyme for ErD over the alternative C-12 hydroxylase substrate ErB</dd><dt>notes</dt><dd>Lambalot et al. characterized the branched late erythromycin pathway in Saccharopolyspora erythraea where erythromycin D is either C-12 hydroxylated by EryK to erythromycin C or 3&#39;&#39;-O-methylated by EryG to erythromycin B.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000055.5/BGC0000055.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0000055.5 lists the Saccharopolyspora erythraea NRRL 2338 SACE_0730 eryF, SACE_0728 eryG, and SACE_0713 eryK tailoring genes for erythromycins A, B, C, and D.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A4F7P5</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Reviewed UniProtKB:A4F7P5 is the Saccharopolyspora erythraea NRRL 2338 SACE_0728 eryG O-methyltransferase and annotates EC:2.1.1.254 with RHEA:32647 (erythromycin C to A) and RHEA:32651 (erythromycin D to B).</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.rhea-db.org/rhea/32651</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>RHEA:32651 is the EC:2.1.1.254 reaction S-adenosyl-L-methionine + erythromycin D(1+) = S-adenosyl-L-homocysteine + erythromycin B(1+) + H+.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>EryG erythromycin 3&#39;&#39;-O-methyltransferase</td>
+  <td>forms</td>
+  <td>erythromycin B(1+)</td>
+  <td>RHEA:32651 produces CHEBI:64279 erythromycin B(1+), the protonated conjugate acid of sibling record CHEBI:28196 erythromycin B.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/jb.172.5.2541-2546.1990<br>DOI:10.1021/bi00006a006<br>https://mibig.secondarymetabolites.org/repository/BGC0000055.5/BGC0000055.gbk<br>https://www.uniprot.org/uniprotkb/A4F7P5<br>https://www.rhea-db.org/rhea/32651</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/jb.172.5.2541-2546.1990</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>eryG codes for the structural gene of this enzyme</dd><dt>notes</dt><dd>Paulus et al. sequenced the Saccharopolyspora erythraea eryG region and showed in Escherichia coli that eryG encodes S-adenosylmethionine:erythromycin C/D O-methyltransferase converting erythromycin D to erythromycin B and erythromycin C to erythromycin A.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1021/bi00006a006</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>preference of the enzyme for ErD over the alternative C-12 hydroxylase substrate ErB</dd><dt>notes</dt><dd>Lambalot et al. characterized the branched late erythromycin pathway in Saccharopolyspora erythraea where erythromycin D is either C-12 hydroxylated by EryK to erythromycin C or 3&#39;&#39;-O-methylated by EryG to erythromycin B.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000055.5/BGC0000055.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>MIBiG BGC0000055.5 lists the Saccharopolyspora erythraea NRRL 2338 SACE_0730 eryF, SACE_0728 eryG, and SACE_0713 eryK tailoring genes for erythromycins A, B, C, and D.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A4F7P5</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>Reviewed UniProtKB:A4F7P5 is the Saccharopolyspora erythraea NRRL 2338 SACE_0728 eryG O-methyltransferase and annotates EC:2.1.1.254 with RHEA:32647 (erythromycin C to A) and RHEA:32651 (erythromycin D to B).</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.rhea-db.org/rhea/32651</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-10-01</dd><dt>notes</dt><dd>RHEA:32651 is the EC:2.1.1.254 reaction S-adenosyl-L-methionine + erythromycin D(1+) = S-adenosyl-L-homocysteine + erythromycin B(1+) + H+.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

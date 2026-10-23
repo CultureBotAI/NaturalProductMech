@@ -84,6 +84,233 @@ source_concepts:
   minted_identifier: naturalproductmech:chebi-feeb1f3b29
 grounding_status: EXACT
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 10
+  enzyme_id: UniProtKB:Q00441
+  enzyme_label: EryF 6-deoxyerythronolide B hydroxylase
+  reaction_id: RHEA:40299
+  substrate: CHEBI:16089
+  product: CHEBI:27977
+  notes: 'Partial tailoring view: EryF hydroxylates 6-deoxyerythronolide B to erythronolide
+    B; uncurated glycosylation and deoxysugar steps between erythronolide B and erythromycin
+    D are intentionally omitted.'
+  evidence:
+  - reference: DOI:10.1128/jb.174.3.725-735.1992
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: EryF hydroxylated a substrate with a turnover number of 53 min-1
+    notes: UniProtKB:Q00441 resolves to eryF/SACE_0730 from Saccharopolyspora erythraea
+      NRRL 2338 and links this reaction to RHEA:40299.
+- step_number: 20
+  enzyme_id: UniProtKB:P48635
+  enzyme_label: EryK erythromycin C-12 hydroxylase
+  reaction_id: RHEA:32631
+  substrate: CHEBI:63677
+  product: CHEBI:64258
+  notes: EryK hydroxylates erythromycin D to erythromycin C. The erythromycin B branch
+    is excluded here because EryK does not accept erythromycin B efficiently.
+  evidence:
+  - reference: DOI:10.1021/bi00006a006
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: preference of the enzyme for ErD over the alternative C-12 hydroxylase
+      substrate ErB
+    notes: UniProtKB:P48635 resolves to eryK/SACE_0713 from Saccharopolyspora erythraea
+      NRRL 2338 and links this reaction to RHEA:32631.
+- step_number: 30
+  enzyme_id: UniProtKB:A4F7P5
+  enzyme_label: EryG erythromycin 3''-O-methyltransferase
+  reaction_id: RHEA:32651
+  substrate: CHEBI:63677
+  product: CHEBI:64279
+  notes: Saccharopolyspora erythraea NRRL 2338 SACE_0728 EryG O-methylates the 3''-hydroxyl
+    of the mycarose moiety of erythromycin D to form erythromycin B. RHEA:32651 uses
+    protonated CHEBI:63677 erythromycin D(1+) and CHEBI:64279 erythromycin B(1+) as
+    reaction participants corresponding to neutral records CHEBI:28331 and CHEBI:28196.
+  evidence:
+  - reference: DOI:10.1128/jb.172.5.2541-2546.1990
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: eryG codes for the structural gene of this enzyme
+    notes: Paulus et al. sequenced the Saccharopolyspora erythraea eryG region and
+      showed in Escherichia coli that eryG encodes S-adenosylmethionine:erythromycin
+      C/D O-methyltransferase converting erythromycin D to erythromycin B and erythromycin
+      C to erythromycin A.
+  - reference: DOI:10.1021/bi00006a006
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: preference of the enzyme for ErD over the alternative C-12 hydroxylase
+      substrate ErB
+    notes: Lambalot et al. characterized the branched late erythromycin pathway in
+      Saccharopolyspora erythraea where erythromycin D is either C-12 hydroxylated
+      by EryK to erythromycin C or 3''-O-methylated by EryG to erythromycin B.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000055.5/BGC0000055.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: MIBiG BGC0000055.5 lists the Saccharopolyspora erythraea NRRL 2338 SACE_0730
+      eryF, SACE_0728 eryG, and SACE_0713 eryK tailoring genes for erythromycins A,
+      B, C, and D.
+  - reference: https://www.uniprot.org/uniprotkb/A4F7P5
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: Reviewed UniProtKB:A4F7P5 is the Saccharopolyspora erythraea NRRL 2338
+      SACE_0728 eryG O-methyltransferase and annotates EC:2.1.1.254 with RHEA:32647
+      (erythromycin C to A) and RHEA:32651 (erythromycin D to B).
+  - reference: https://www.rhea-db.org/rhea/32651
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-01'
+    notes: RHEA:32651 is the EC:2.1.1.254 reaction S-adenosyl-L-methionine + erythromycin
+      D(1+) = S-adenosyl-L-homocysteine + erythromycin B(1+) + H+.
+causal_graphs:
+- graph_id: erythromycin-d-eryf-eryk-eryg-biosynthesis
+  scope: BIOSYNTHESIS
+  description: 'Partial Saccharopolyspora erythraea NRRL 2338 BGC0000055 macrolide
+    tailoring graph around erythromycin D (intermediate glycosylation steps between
+    erythronolide B and erythromycin D intentionally omitted): upstream EryF 6-deoxyerythronolide
+    B C-6 hydroxylation and branching downstream conversion of erythromycin D by EryK
+    (to erythromycin C) and EryG (to erythromycin B).'
+  nodes:
+  - node_id: six_deoxyerythronolide_b
+    label: 6-deoxyerythronolide B
+    node_type: PRECURSOR
+    identifier: CHEBI:16089
+    grounding_status: GROUNDED
+  - node_id: eryf
+    label: EryF 6-deoxyerythronolide B hydroxylase
+    node_type: ENZYME
+    identifier: UniProtKB:Q00441
+    grounding_status: GROUNDED
+  - node_id: erythronolide_b
+    label: erythronolide B
+    node_type: COMPOUND
+    identifier: CHEBI:27977
+    grounding_status: GROUNDED
+  - node_id: erythromycin_d
+    label: erythromycin D
+    node_type: COMPOUND
+    identifier: CHEBI:63677
+    grounding_status: GROUNDED
+  - node_id: eryk
+    label: EryK erythromycin C-12 hydroxylase
+    node_type: ENZYME
+    identifier: UniProtKB:P48635
+    grounding_status: GROUNDED
+  - node_id: erythromycin_c
+    label: erythromycin C
+    node_type: COMPOUND
+    identifier: CHEBI:64258
+    grounding_status: GROUNDED
+  - node_id: eryg
+    label: EryG erythromycin 3''-O-methyltransferase
+    node_type: ENZYME
+    identifier: UniProtKB:A4F7P5
+    grounding_status: GROUNDED
+  - node_id: erythromycin_b
+    label: erythromycin B(1+)
+    node_type: COMPOUND
+    identifier: CHEBI:64279
+    grounding_status: GROUNDED
+  edges:
+  - subject: six_deoxyerythronolide_b
+    predicate: is hydroxylated by
+    object: eryf
+    evidence:
+    - reference: DOI:10.1128/jb.174.3.725-735.1992
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: EryF catalyzes RHEA:40299.
+  - subject: eryf
+    predicate: forms
+    object: erythronolide_b
+    notes: The full DEBS-to-glycosylated-macrolide route between erythronolide B and
+      erythromycin D remains uncurated in this partial graph.
+    evidence:
+    - reference: DOI:10.1128/jb.174.3.725-735.1992
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: EryF catalyzes RHEA:40299.
+  - subject: erythromycin_d
+    predicate: is hydroxylated by
+    object: eryk
+    evidence:
+    - reference: DOI:10.1021/bi00006a006
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: EryK catalyzes RHEA:32631.
+  - subject: eryk
+    predicate: forms
+    object: erythromycin_c
+    evidence:
+    - reference: DOI:10.1021/bi00006a006
+      evidence_type: PRIMARY_EXPERIMENT
+      notes: EryK catalyzes RHEA:32631.
+  - subject: erythromycin_d
+    predicate: is O-methylated by
+    object: eryg
+    notes: RHEA:32651 consumes S-adenosyl-L-methionine and erythromycin D(1+) along
+      the EryG branch to erythromycin B.
+    evidence:
+    - reference: DOI:10.1128/jb.172.5.2541-2546.1990
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: eryG codes for the structural gene of this enzyme
+      notes: Paulus et al. sequenced the Saccharopolyspora erythraea eryG region and
+        showed in Escherichia coli that eryG encodes S-adenosylmethionine:erythromycin
+        C/D O-methyltransferase converting erythromycin D to erythromycin B and erythromycin
+        C to erythromycin A.
+    - reference: DOI:10.1021/bi00006a006
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: preference of the enzyme for ErD over the alternative C-12 hydroxylase
+        substrate ErB
+      notes: Lambalot et al. characterized the branched late erythromycin pathway
+        in Saccharopolyspora erythraea where erythromycin D is either C-12 hydroxylated
+        by EryK to erythromycin C or 3''-O-methylated by EryG to erythromycin B.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000055.5/BGC0000055.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000055.5 lists the Saccharopolyspora erythraea NRRL 2338 SACE_0730
+        eryF, SACE_0728 eryG, and SACE_0713 eryK tailoring genes for erythromycins
+        A, B, C, and D.
+    - reference: https://www.uniprot.org/uniprotkb/A4F7P5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A4F7P5 is the Saccharopolyspora erythraea NRRL 2338
+        SACE_0728 eryG O-methyltransferase and annotates EC:2.1.1.254 with RHEA:32647
+        (erythromycin C to A) and RHEA:32651 (erythromycin D to B).
+    - reference: https://www.rhea-db.org/rhea/32651
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: RHEA:32651 is the EC:2.1.1.254 reaction S-adenosyl-L-methionine + erythromycin
+        D(1+) = S-adenosyl-L-homocysteine + erythromycin B(1+) + H+.
+  - subject: eryg
+    predicate: forms
+    object: erythromycin_b
+    notes: RHEA:32651 produces CHEBI:64279 erythromycin B(1+), the protonated conjugate
+      acid of sibling record CHEBI:28196 erythromycin B.
+    evidence:
+    - reference: DOI:10.1128/jb.172.5.2541-2546.1990
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: eryG codes for the structural gene of this enzyme
+      notes: Paulus et al. sequenced the Saccharopolyspora erythraea eryG region and
+        showed in Escherichia coli that eryG encodes S-adenosylmethionine:erythromycin
+        C/D O-methyltransferase converting erythromycin D to erythromycin B and erythromycin
+        C to erythromycin A.
+    - reference: DOI:10.1021/bi00006a006
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: preference of the enzyme for ErD over the alternative C-12 hydroxylase
+        substrate ErB
+      notes: Lambalot et al. characterized the branched late erythromycin pathway
+        in Saccharopolyspora erythraea where erythromycin D is either C-12 hydroxylated
+        by EryK to erythromycin C or 3''-O-methylated by EryG to erythromycin B.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000055.5/BGC0000055.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: MIBiG BGC0000055.5 lists the Saccharopolyspora erythraea NRRL 2338 SACE_0730
+        eryF, SACE_0728 eryG, and SACE_0713 eryK tailoring genes for erythromycins
+        A, B, C, and D.
+    - reference: https://www.uniprot.org/uniprotkb/A4F7P5
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: Reviewed UniProtKB:A4F7P5 is the Saccharopolyspora erythraea NRRL 2338
+        SACE_0728 eryG O-methyltransferase and annotates EC:2.1.1.254 with RHEA:32647
+        (erythromycin C to A) and RHEA:32651 (erythromycin D to B).
+    - reference: https://www.rhea-db.org/rhea/32651
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-01'
+      notes: RHEA:32651 is the EC:2.1.1.254 reaction S-adenosyl-L-methionine + erythromycin
+        D(1+) = S-adenosyl-L-homocysteine + erythromycin B(1+) + H+.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -93,3 +320,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-23T08:00:00Z'
+  curator: antigravity
+  action: RECORD_CURATED
+  changes: Added Saccharopolyspora erythraea NRRL 2338 BGC0000055 BIOSYNTHESIS pathway
+    and causal graph to erythromycin D (CHEBI:28331) covering upstream EryF 6-deoxyerythronolide
+    B hydroxylase (UniProtKB:Q00441, RHEA:40299) and downstream branching consumption
+    of erythromycin D by EryK C-12 hydroxylase (UniProtKB:P48635, RHEA:32631) and
+    EryG 3''-O-methyltransferase (UniProtKB:A4F7P5, RHEA:32651).
+  llm_assisted: true

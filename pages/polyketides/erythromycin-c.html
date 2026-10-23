@@ -90,14 +90,28 @@ derived from a source. This is what the rest of the record exists to support.</p
 <div class="scroll"><table>
 <tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
 <tr>
-  <td>1</td>
+  <td>10</td>
+  <td>EryF 6-deoxyerythronolide B hydroxylase<br><span class="mono">UniProtKB:Q00441</span></td>
+  <td class="mono">RHEA:40299</td>
+  <td class="mono">CHEBI:16089 &rarr; CHEBI:27977</td>
+  <td class="mono">DOI:10.1128/jb.174.3.725-735.1992</td>
+</tr>
+<tr>
+  <td>20</td>
   <td>EryK erythromycin C-12 hydroxylase<br><span class="mono">UniProtKB:P48635</span></td>
   <td class="mono">RHEA:32631</td>
   <td class="mono">CHEBI:63677 &rarr; CHEBI:64258</td>
   <td class="mono">DOI:10.1021/bi00006a006</td>
 </tr>
+<tr>
+  <td>30</td>
+  <td>EryG erythromycin 3&#39;&#39;-O-methyltransferase<br><span class="mono">UniProtKB:A4F7P5</span></td>
+  <td class="mono">RHEA:32647</td>
+  <td class="mono">CHEBI:64258 &rarr; CHEBI:64268</td>
+  <td class="mono">DOI:10.1128/jb.172.5.2541-2546.1990</td>
+</tr>
 </table></div>
-<p class="sub">Step 1: EryK hydroxylates erythromycin D to erythromycin C(1+) in RHEA:32631; this NaturalProductRecord remains grounded to neutral erythromycin C, CHEBI:64273.</p>
+<p class="sub">Step 10: Partial tailoring view: EryF hydroxylates 6-deoxyerythronolide B to erythronolide B; uncurated glycosylation and deoxysugar steps between erythronolide B and erythromycin D are intentionally omitted.</p><p class="sub">Step 20: EryK hydroxylates erythromycin D to erythromycin C. The erythromycin B branch is excluded here because EryK does not accept erythromycin B efficiently.</p><p class="sub">Step 30: EryG methylates erythromycin C(1+) at the mycarosyl 3-O position to produce erythromycin A(1+) in RHEA:32647; this NaturalProductRecord remains grounded to neutral erythromycin C, CHEBI:64273 (and the sibling erythromycin A record to neutral CHEBI:42355).</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
   <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for erythromycin C">
@@ -115,7 +129,7 @@ derived from a source. This is what the rest of the record exists to support.</p
     <rect x="232" y="24" width="186" height="98" rx="10" fill="var(--panel)" stroke="var(--rule)"/>
     <text x="244" y="48" font-size="11" font-weight="700" fill="var(--muted)">BIOSYNTHETIC LOCUS</text>
     <text x="244" y="70" font-size="12.5" font-weight="600" fill="var(--ink)">1 gene cluster</text>
-    <text x="244" y="92" font-size="11.5" fill="var(--muted)">1 curated pathway step</text>
+    <text x="244" y="92" font-size="11.5" fill="var(--muted)">3 curated pathway steps</text>
     <line x1="418" y1="73" x2="446" y2="73" stroke="var(--link)" stroke-width="1.8" marker-end="url(#np-arrow)"/>
 
     <rect x="450" y="20" width="190" height="106" rx="10" fill="var(--panel)" stroke="var(--link)" stroke-width="1.8"/>
@@ -132,9 +146,27 @@ derived from a source. This is what the rest of the record exists to support.</p
   </svg>
 </div>
 
-<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
-<p class="sub">Partial Saccharopolyspora erythraea NRRL 2338 erythromycin C biosynthesis graph for EryK-catalyzed C-12 hydroxylation of erythromycin D.</p><div class="scroll"><table>
+<h2>Causal graph &mdash; biosynthesis <span class="tag">8 nodes, 6 edges</span></h2>
+<p class="sub">Partial Saccharopolyspora erythraea NRRL 2338 BGC0000055 macrolide tailoring graph (intermediate glycosylation steps between erythronolide B and erythromycin D intentionally omitted): EryF 6-deoxyerythronolide B C-6 hydroxylation, EryK C-12 hydroxylation of erythromycin D to erythromycin C, and downstream EryG 3&#39;&#39;-O-methylation of erythromycin C to erythromycin A.</p><div class="scroll"><table>
 <tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>6-deoxyerythronolide B</td>
+  <td>is hydroxylated by</td>
+  <td>EryF</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/jb.174.3.725-735.1992</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/jb.174.3.725-735.1992</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>EryF catalyzes RHEA:40299.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>EryF</td>
+  <td>forms</td>
+  <td>erythronolide B</td>
+  <td>The full DEBS-to-glycosylated-macrolide route between erythronolide B and erythromycin D remains uncurated in this partial graph.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/jb.174.3.725-735.1992</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/jb.174.3.725-735.1992</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>EryF catalyzes RHEA:40299.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
 <tr>
   <td>erythromycin D</td>
   <td>is hydroxylated by</td>
@@ -147,9 +179,27 @@ derived from a source. This is what the rest of the record exists to support.</p
 <tr>
   <td>EryK</td>
   <td>forms</td>
-  <td>erythromycin C(1+)</td>
-  <td>EryK forms erythromycin C(1+) in RHEA:32631; this record is grounded to neutral erythromycin C.</td>
+  <td>erythromycin C</td>
+  <td></td>
   <td><details class="graph-evidence"><summary class="mono">DOI:10.1021/bi00006a006</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1021/bi00006a006</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>EryK catalyzes RHEA:32631.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>erythromycin C</td>
+  <td>is O-methylated by</td>
+  <td>EryG</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/jb.172.5.2541-2546.1990</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/jb.172.5.2541-2546.1990</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>EryG catalyzes RHEA:32647.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>EryG</td>
+  <td>forms</td>
+  <td>erythromycin A(1+)</td>
+  <td></td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1128/jb.172.5.2541-2546.1990</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1128/jb.172.5.2541-2546.1990</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>notes</dt><dd>EryG catalyzes RHEA:32647, whose ChEBI participants are the pH 7.3 erythromycin cations.</dd></dl>
 </li></ul>
 </details></td>
 </tr>

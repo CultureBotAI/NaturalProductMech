@@ -83,6 +83,222 @@ grounding_status: MINTED
 grounding_notes: No 3-star ChEBI entry shares this structure, so the record keeps
   a content-hashed identifier.
 curation_status: SEEDED
+biosynthetic_pathway:
+- step_number: 1
+  enzyme_id: UniProtKB:A1DN30
+  enzyme_label: NfSS sesterfisherol synthase
+  reaction_id: RHEA:54068
+  substrate: CHEBI:57907
+  product: CHEBI:138046
+  notes: NfSS cyclizes (2E,6E,10E,14E)-geranylfarnesyl diphosphate to the tetracyclic
+    sesterterpene alcohol sesterfisherol in the first step (RHEA:54068) prior to downstream
+    NfP450 (UniProtKB:A1DN29) oxidation to sesterfisheric acid.
+  evidence:
+  - reference: DOI:10.1021/jacs.5b08319
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: identified the sesterfisherol synthase gene (NfSS) from Neosartorya fischeri
+    notes: Ye et al. used Aspergillus oryzae heterologous expression to functionally
+      characterize NfSS and assigned its terpene cyclase product as the 5-6-8-5 tetracyclic
+      C25 alcohol sesterfisherol.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002162.3/BGC0002162.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG BGC0002162.3 maps the Aspergillus fischeri NRRL 181 / Neosartorya
+      fischeri DS027698 sesterfisherol cluster CDS NFIA_055500 to GenPept EAW16201.1.
+  - reference: https://www.uniprot.org/uniprotkb/A1DN30
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:A1DN30 is the 764 aa Aspergillus fischeri NRRL 181 NfSS/NFIA_055500
+      sesterfisherol synthase, cross-references EMBL DS027698 protein EAW16201.1,
+      and cites DOI:10.1021/jacs.5b08319.
+  - reference: https://www.rhea-db.org/rhea/54068
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: RHEA:54068 is the (2E,6E,10E,14E)-geranylfarnesyl diphosphate plus water
+      to sesterfisherol plus diphosphate reaction; Rhea maps the master reaction to
+      UniProtKB:A1DN30 in Swiss-Prot.
+- step_number: 2
+  enzyme_id: UniProtKB:A1DN29
+  enzyme_label: NfP450 cytochrome P450 monooxygenase
+  substrate: CHEBI:138046
+  product: naturalproductmech:mibig-90c066a9a2
+  notes: Aspergillus fischeri (Neosartorya fischeri) NRRL 181 cytochrome P450 monooxygenase
+    NfP450 (NFIA_055490 / EAW16200.1) oxidizes sesterfisherol (CHEBI:138046) to sesterfisheric
+    acid (naturalproductmech:mibig-90c066a9a2).
+  evidence:
+  - reference: DOI:10.1021/jacs.5b08319
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: Finally, the cryptic sesterterpene synthase (NfSS) and an adjacent cytochrome
+      P450 (NfP450) from Neosartorya fischeri were identified and shown to guide the
+      synthesis of sesterfisherol (1) and sesterfisheric acid (2), respectively.
+    notes: Ye et al. (2015) co-expressed Neosartorya fischeri (Aspergillus fischeri
+      NRRL 181) NfSS (NFIA_055500) and the adjacent cytochrome P450 monooxygenase
+      NfP450 (NFIA_055490) in Aspergillus oryzae NSAR1 and demonstrated that NfP450
+      oxidizes sesterfisherol (1) to sesterfisheric acid (2).
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0002162.3/BGC0002162.gbk
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-23'
+    notes: MIBiG BGC0002162.3 spans Aspergillus fischeri NRRL 181 DS027698.1 2485363..2490827,
+      encoding NFIA_055500 (EAW16201.1, UniProtKB:A1DN30, NfSS) and NFIA_055490 (EAW16200.1,
+      UniProtKB:A1DN29, NfP450) for sesterfisherol and sesterfisheric acid biosynthesis.
+  - reference: https://www.uniprot.org/uniprotkb/A1DN29
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-10-23'
+    notes: UniProtKB:A1DN29 is the Aspergillus fischeri NRRL 181 NFIA_055490 (EAW16200.1)
+      cytochrome P450 monooxygenase encoded adjacent to NfSS (NFIA_055500, EAW16201.1,
+      UniProtKB:A1DN30) in BGC0002162.
+causal_graphs:
+- graph_id: sesterfisheric-acid-nfss-nfp450-biosynthesis
+  scope: BIOSYNTHESIS
+  description: 'Aspergillus fischeri NRRL 181 BGC0002162 sesterterpenoid pathway:
+    bifunctional sesterfisherol synthase NfSS (NFIA_055500) converts (2E,6E,10E,14E)-geranylfarnesyl
+    diphosphate to sesterfisherol, and adjacent cytochrome P450 monooxygenase NfP450
+    (NFIA_055490) oxidizes sesterfisherol to sesterfisheric acid.'
+  nodes:
+  - node_id: geranylfarnesyl_diphosphate
+    label: (2E,6E,10E,14E)-geranylfarnesyl diphosphate
+    node_type: PRECURSOR
+    identifier: CHEBI:57907
+    grounding_status: GROUNDED
+  - node_id: nfss
+    label: NfSS
+    node_type: ENZYME
+    identifier: UniProtKB:A1DN30
+    grounding_status: GROUNDED
+  - node_id: sesterfisherol
+    label: sesterfisherol
+    node_type: COMPOUND
+    identifier: CHEBI:138046
+    grounding_status: GROUNDED
+  - node_id: nfp450
+    label: NfP450 cytochrome P450 monooxygenase
+    node_type: ENZYME
+    identifier: UniProtKB:A1DN29
+    grounding_status: GROUNDED
+  - node_id: sesterfisheric_acid
+    label: sesterfisheric acid
+    node_type: COMPOUND
+    identifier: naturalproductmech:mibig-90c066a9a2
+    grounding_status: GROUNDED
+  edges:
+  - subject: geranylfarnesyl_diphosphate
+    predicate: is cyclized by
+    object: nfss
+    notes: NfSS is the bifunctional terpene synthase whose cyclase domain converts
+      geranylfarnesyl diphosphate to the 5-6-8-5 tetracyclic sesterfisherol scaffold.
+    evidence:
+    - reference: DOI:10.1021/jacs.5b08319
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: identified the sesterfisherol synthase gene (NfSS) from Neosartorya
+        fischeri
+      notes: Ye et al. used Aspergillus oryzae heterologous expression to functionally
+        characterize NfSS and assigned its terpene cyclase product as the 5-6-8-5
+        tetracyclic C25 alcohol sesterfisherol.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002162.3/BGC0002162.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0002162.3 maps the Aspergillus fischeri NRRL 181 / Neosartorya
+        fischeri DS027698 sesterfisherol cluster CDS NFIA_055500 to GenPept EAW16201.1.
+    - reference: https://www.uniprot.org/uniprotkb/A1DN30
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:A1DN30 is the 764 aa Aspergillus fischeri NRRL 181
+        NfSS/NFIA_055500 sesterfisherol synthase, cross-references EMBL DS027698 protein
+        EAW16201.1, and cites DOI:10.1021/jacs.5b08319.
+    - reference: https://www.rhea-db.org/rhea/54068
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:54068 is the (2E,6E,10E,14E)-geranylfarnesyl diphosphate plus water
+        to sesterfisherol plus diphosphate reaction; Rhea maps the master reaction
+        to UniProtKB:A1DN30 in Swiss-Prot.
+  - subject: nfss
+    predicate: forms
+    object: sesterfisherol
+    notes: Heterologous NfSS expression assigned the Aspergillus fischeri / Neosartorya
+      fischeri enzyme as the sesterfisherol synthase.
+    evidence:
+    - reference: DOI:10.1021/jacs.5b08319
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: identified the sesterfisherol synthase gene (NfSS) from Neosartorya
+        fischeri
+      notes: Ye et al. used Aspergillus oryzae heterologous expression to functionally
+        characterize NfSS and assigned its terpene cyclase product as the 5-6-8-5
+        tetracyclic C25 alcohol sesterfisherol.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002162.3/BGC0002162.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG BGC0002162.3 maps the Aspergillus fischeri NRRL 181 / Neosartorya
+        fischeri DS027698 sesterfisherol cluster CDS NFIA_055500 to GenPept EAW16201.1.
+    - reference: https://www.uniprot.org/uniprotkb/A1DN30
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:A1DN30 is the 764 aa Aspergillus fischeri NRRL 181
+        NfSS/NFIA_055500 sesterfisherol synthase, cross-references EMBL DS027698 protein
+        EAW16201.1, and cites DOI:10.1021/jacs.5b08319.
+    - reference: https://www.rhea-db.org/rhea/54068
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:54068 is the (2E,6E,10E,14E)-geranylfarnesyl diphosphate plus water
+        to sesterfisherol plus diphosphate reaction; Rhea maps the master reaction
+        to UniProtKB:A1DN30 in Swiss-Prot.
+  - subject: sesterfisherol
+    predicate: is oxidized by
+    object: nfp450
+    notes: NfP450 oxidizes sesterfisherol in the second step of sesterfisheric acid
+      biosynthesis.
+    evidence:
+    - reference: DOI:10.1021/jacs.5b08319
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Finally, the cryptic sesterterpene synthase (NfSS) and an adjacent
+        cytochrome P450 (NfP450) from Neosartorya fischeri were identified and shown
+        to guide the synthesis of sesterfisherol (1) and sesterfisheric acid (2),
+        respectively.
+      notes: Ye et al. (2015) co-expressed Neosartorya fischeri (Aspergillus fischeri
+        NRRL 181) NfSS (NFIA_055500) and the adjacent cytochrome P450 monooxygenase
+        NfP450 (NFIA_055490) in Aspergillus oryzae NSAR1 and demonstrated that NfP450
+        oxidizes sesterfisherol (1) to sesterfisheric acid (2).
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002162.3/BGC0002162.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      notes: MIBiG BGC0002162.3 spans Aspergillus fischeri NRRL 181 DS027698.1 2485363..2490827,
+        encoding NFIA_055500 (EAW16201.1, UniProtKB:A1DN30, NfSS) and NFIA_055490
+        (EAW16200.1, UniProtKB:A1DN29, NfP450) for sesterfisherol and sesterfisheric
+        acid biosynthesis.
+    - reference: https://www.uniprot.org/uniprotkb/A1DN29
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      notes: UniProtKB:A1DN29 is the Aspergillus fischeri NRRL 181 NFIA_055490 (EAW16200.1)
+        cytochrome P450 monooxygenase encoded adjacent to NfSS (NFIA_055500, EAW16201.1,
+        UniProtKB:A1DN30) in BGC0002162.
+  - subject: nfp450
+    predicate: forms
+    object: sesterfisheric_acid
+    notes: Heterologous co-expression of NfSS and NfP450 in Aspergillus oryzae NSAR1
+      yields sesterfisheric acid.
+    evidence:
+    - reference: DOI:10.1021/jacs.5b08319
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: Finally, the cryptic sesterterpene synthase (NfSS) and an adjacent
+        cytochrome P450 (NfP450) from Neosartorya fischeri were identified and shown
+        to guide the synthesis of sesterfisherol (1) and sesterfisheric acid (2),
+        respectively.
+      notes: Ye et al. (2015) co-expressed Neosartorya fischeri (Aspergillus fischeri
+        NRRL 181) NfSS (NFIA_055500) and the adjacent cytochrome P450 monooxygenase
+        NfP450 (NFIA_055490) in Aspergillus oryzae NSAR1 and demonstrated that NfP450
+        oxidizes sesterfisherol (1) to sesterfisheric acid (2).
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0002162.3/BGC0002162.gbk
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      notes: MIBiG BGC0002162.3 spans Aspergillus fischeri NRRL 181 DS027698.1 2485363..2490827,
+        encoding NFIA_055500 (EAW16201.1, UniProtKB:A1DN30, NfSS) and NFIA_055490
+        (EAW16200.1, UniProtKB:A1DN29, NfP450) for sesterfisherol and sesterfisheric
+        acid biosynthesis.
+    - reference: https://www.uniprot.org/uniprotkb/A1DN29
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-10-23'
+      notes: UniProtKB:A1DN29 is the Aspergillus fischeri NRRL 181 NFIA_055490 (EAW16200.1)
+        cytochrome P450 monooxygenase encoded adjacent to NfSS (NFIA_055500, EAW16201.1,
+        UniProtKB:A1DN30) in BGC0002162.
 curation_history:
 - timestamp: '2026-09-10T05:54:13Z'
   curator: seed_from_sources
@@ -92,3 +308,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories in data/raw/.
+- timestamp: '2026-10-23T08:00:00Z'
+  curator: antigravity
+  action: RECORD_CURATED
+  changes: Added 2-step Aspergillus fischeri NRRL 181 BGC0002162 BIOSYNTHESIS pathway
+    and causal graph to sesterfisheric acid (naturalproductmech:mibig-90c066a9a2)
+    linking NfSS sesterfisherol synthase (UniProtKB:A1DN30, RHEA:54068) and NfP450
+    cytochrome P450 monooxygenase (UniProtKB:A1DN29, NFIA_055490) with primary experimental
+    evidence from DOI:10.1021/jacs.5b08319.
+  llm_assisted: true
