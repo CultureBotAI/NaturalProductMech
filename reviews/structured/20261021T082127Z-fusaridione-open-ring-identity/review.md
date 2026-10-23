@@ -1,0 +1,1437 @@
+# Fusaridione open-ring record: cyclic name, opposite amino stereochemistry and superseded citation
+
+- Review: 20261021T082127Z-fusaridione-open-ring-identity
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T08:05:34.335970Z
+- Finished UTC: 2026-10-21T08:21:27.303651Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Two confirmed identity blockers distinguish the cyclic label from the acyclic graph and the encoded R amino centre from the primary S drawing. A major finding identifies the superseded 2005 producer/locus citation. Exact native occurrence versus spontaneous or workup formation remains unresolved without the full 2013 main text. Deterministic checks pass, but they do not resolve these scientific defects.
+
+## Scope And Provenance
+
+One complete generated owner: identity, structure, grounding, source concept, occurrence, producer, BGC, taxonomy, filing, optional assertions and audit history. The separate cyclic Fusaridione A record is context only.
+
+Selection: Eighteenth initially unreviewed path and eighth in batch 002 from fresh origin/main. The fresh-main authoritative list has 91 valid bundles covering 54 of 3,116 records; ten reviews in pending PR 1000 are additional campaign coverage. Ignored files were included. This review has exactly one target.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 10ed28fcdadb3d955c30732ff05b5d0e4adbee3b.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-b1027ab43e | data/natural_products/alkaloids/3r-5s-5-4-hydroxybenzyl-3-methyl-3-2e-4e-6e-8e-10e-4-8-10-trimethyldodeca-2-4-6-.yaml | generated | (3R,5S)-5-(4-hydroxybenzyl)-3-methyl-3-((2E,4E,6E,8E,10E)-4,8,10-trimethyldodeca-2,4,6,8,10-pentaenoyl)pyrrolidine-2,4-dione |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-b1027ab43e | The entire target has zero ERROR rows. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-b1027ab43e | All 3,116 record files agree with 3,116 PATHS.tsv rows and their pinned filing pathways. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-b1027ab43e | All 3,116 records are byte-identical to the seeder output from committed inventories and maintained curation inputs. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-b1027ab43e | The documented exhaustive queue command produced 8,928 diagnostic rows in 12 queues; deterministic queue output does not establish scientific review. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-b1027ab43e | Full configured gate passed using existing CHEBI and GO caches plus the committed taxonomy adapter: 13,434 canonical matches, 646 synonym matches, 35 documented exceptions, 499 warning-only mismatches and 4,722 pairs skipped because their prefixes have no adapter. |
+| Full repository quality gate after environment repair | passed | True | naturalproductmech:mibig-b1027ab43e | The full documented just qc recipe passed after installing the pinned linter, allowing the read-only governance fetch, and restoring the required provenance tag. Tests: 999 passed, 4 skipped, 2 warnings. Closed-schema validation: 3,116 records and zero errors. Documentation, provenance, source queue, governed artifacts, generated pages, reproduction, filing integrity and corpus reporting all passed. |
+| Internal full structure and stereo representation | passed | True | naturalproductmech:mibig-b1027ab43e | SMILES and InChI reproduce the stored full key; stereo_complete:false matches one undefined centre. Internal serialization agreement does not validate the label. |
+| Chemical label versus molecular graph identity | failed | True | naturalproductmech:mibig-b1027ab43e | The stated cyclic (3R,5S) pyrrolidinedione name does not describe the acyclic amide/carboxylic acid graph; molecular formula and assigned amino stereocentre also differ from the named cyclic comparator. |
+| Exact stereochemistry versus primary compound 5 drawing | failed | True | naturalproductmech:mibig-b1027ab43e | The owner encodes R at the amino-acid centre, whereas the original 2013 SI compound 5 drawing encodes S. The full structures are distinct. |
+| Current claim-specific locus and producer references | failed | True | naturalproductmech:mibig-b1027ab43e | The imported claims retain only the superseded 2005 product assignment and omit the 2013 reassignment and its strain context. |
+| Exact open-ring formation, handling and occurrence context | unavailable | True | naturalproductmech:mibig-b1027ab43e | The original SI resolves the structure drawing but not whether compound 5 was present in native culture, arose during workup or was separately converted. The complete 2013 main body was not obtained through bounded free access. Abstract and SI do not justify a native-origin or locus-grade upgrade. |
+| Current ChEBI eligibility for the encoded graph | passed | True | naturalproductmech:mibig-b1027ab43e | The live exact-full-key query returns a two-star entry with the same source conflict; neither inspected ChEBI candidate is an eligible three-star replacement. Minted status is consistent with the inspected authority results but does not resolve identity. |
+| Native expression-source applicability | not_applicable | False | naturalproductmech:mibig-b1027ab43e | The fully read owner contains no named protein, gene, regulator, pathway step or transcriptomic claim requiring a gene-level expression-source cross-check. |
+
+## Scientific And Domain Assessments
+
+### Cyclic name versus acyclic stored graph
+
+identity: concern. Targets: naturalproductmech:mibig-b1027ab43e.
+
+The label and source_label describe the cyclic parent; the graph has no nitrogen-containing ring and is 18.01056 Da heavier by H2O. The acyclic graph additionally specifies the amino centre R while the cyclic comparator specifies 5S. The owner is not equivalent to the cyclic Fusaridione A record or to the S-configured open-ring candidate.
+
+### Two-star exact source entry and distinct cyclic candidate
+
+grounding: supported. Targets: naturalproductmech:mibig-b1027ab43e.
+
+Current CHEBI:221940 matches the owner full key but is two-star and carries the same name/graph mismatch. CHEBI:221932 is the distinct cyclic parent, also two-star. Neither supplies an eligible three-star replacement. Minted status does not cure the scientific identity issue.
+
+### Natural open-ring product and exact amino stereochemistry
+
+identity: concern. Targets: naturalproductmech:mibig-b1027ab43e.
+
+The primary SI explicitly draws acyclic compound 5 with S amino stereochemistry. Transcribing that configuration on the inspected acyclic graph gives QYOOOQHFZSDPSQ-BDJYZKQXSA-N, not the owner R key QYOOOQHFZSDPSQ-WNZXBQPCSA-N. The unspecified chain centre is left unspecified in the drawing. This establishes a mismatch with the published identity; isolation versus degradation circumstances remain a separate primary-methods question.
+
+### Superseded locus citation and current biological context
+
+evidence: concern. Targets: naturalproductmech:mibig-b1027ab43e.
+
+The sole producer/locus citation is the 2005 equisetin assignment that the 2013 paper explicitly corrects. Both references exist upstream, so selection loses material context. Route the reassignment by claim and preserve ATCC 74349 scope after identity reconciliation, without upgrading method grades.
+
+### Accession, version, classes and imported grade
+
+grounding: supported. Targets: naturalproductmech:mibig-b1027ab43e.
+
+BGC0000992v4 is active and resolves to AY700570.3 with PKS/NRPS classes. CLUSTER_UNSTATED accurately reflects absent source methods. Published work on cyclic fusaridione A does not automatically validate a demonstrated grade for the incorrect current acyclic R graph.
+
+### Species source assertion and strain-level applicability
+
+evidence: concern. Targets: naturalproductmech:mibig-b1027ab43e.
+
+SOURCE_ASSERTION correctly distinguishes the database producer assertion from experimental proof. The actual source culture is ATCC 74349, and the current citation conceals its corrected product assignment. Exact-product attribution remains dependent on resolving the cyclic name and R/S graph conflicts; native occurrence or direct production of open-ring compound 5 is not established by the abstract alone.
+
+### LOTUS 2013 exact structure-organism-reference triple
+
+evidence: concern. Targets: naturalproductmech:mibig-b1027ab43e.
+
+The DOI concerns the appropriate organism and the paper characterizes an open-ring product, but its drawn amino stereochemistry is S while the exact imported triple carries R. The claim therefore cannot be certified for the current graph. Identity correction must independently rejoin or adjudicate occurrence evidence; it must not carry this old-key row across automatically.
+
+### Direct biosynthesis versus spontaneous product formation
+
+evidence: unknown. Targets: naturalproductmech:mibig-b1027ab43e.
+
+The primary abstract explicitly describes spontaneous reverse-Dieckmann behavior. SI distinguishes products 4 and 5, but the unavailable main body contains the needed formation, handling and isolation context. Whether5 was detected natively, generated during workup, or characterized after separate conversion remains unresolved here; neither a natural-product upgrade nor an artifact-only conclusion is justified.
+
+### Taxon and provenance identifiers
+
+grounding: supported. Targets: naturalproductmech:mibig-b1027ab43e.
+
+NCBI 42747 and Wikidata Q103806210 identify the same fungal species. The deposited ATCC 74349 context is explicit, and species-level occurrence remains distinct from strain-specific experimentation.
+
+### Computed filing versus BGC assertions
+
+scope: supported. Targets: naturalproductmech:mibig-b1027ab43e.
+
+The pinned NPClassifier result for the current graph is Alkaloids/Peptide alkaloids/Simple amide alkaloids, not a glycoside, with the stated model version. ALKALOIDS filing and source PKS/NRPS classes use separate axes. A corrected graph requires reassessment rather than assuming unchanged classification.
+
+### Optional graph, pathway, activity and clinical assertions
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-b1027ab43e.
+
+No such assertions are present in the fully read owner. Their absence alone is not a finding. There is no owner-named protein/gene or transcriptomic claim requiring iModulonDB or protein examples.
+
+### SEEDED status and source concept
+
+provenance: supported. Targets: naturalproductmech:mibig-b1027ab43e.
+
+The source concept and three seed events describe inventory/curation-table regeneration, not scientific approval. SEEDED should remain while identity and formation context are unresolved. No history or status edit is authorized by this review.
+
+## Findings
+
+### ID018-F1: Cyclic Fusaridione A name is attached to a different acyclic molecular graph
+
+blocker / open / confirmed; issue key: mibig-b1027ab43e-cyclic-label-acyclic-structure.
+
+The owner names a (3R,5S) pyrrolidine-2,4-dione, but the stored structure has only the benzene ring, an acyclic amide and neutral carboxylic acid, formula C27H33NO5, amino centre R and an undefined chain centre. Official MIBiG BGC0000992 v4 compound 2 and two-star CHEBI:221940 reproduce this conflict. The correctly named cyclic comparator has formula C27H31NO4, a five-membered N-ring, 3R/5S centres and a separate existing owner. The current name/graph identity is therefore chemically contradictory regardless of whether the primary ultimately supports a separate ring-opened product.
+
+### ID018-F2: Stored amino stereocentre opposes the original compound 5 drawing
+
+blocker / open / confirmed; issue key: mibig-b1027ab43e-open-ring-amino-stereo-mismatch.
+
+The owner assigns R to the amino-acid centre in its acyclic structure. Original 2013 SI Table S8 explicitly depicts compound 5 with S geometry at that centre. The published depiction corresponds to QYOOOQHFZSDPSQ-BDJYZKQXSA-N, while the owner and its source database row encode QYOOOQHFZSDPSQ-WNZXBQPCSA-N. Matching connectivity, formula and incomplete stereo flags do not make these structures identical. This is separate from the incorrect cyclic name.
+
+### S018-F-CITATION: Producer and locus retain the superseded 2005 equisetin assignment
+
+major / open / confirmed; issue key: mibig-bgc0000992-compound2-superseded-reference.
+
+Both claims cite only PMID 15724180. The source entry also lists PMID 23614392, whose authors explicitly revise that product assignment to fusaridione A in ATCC 74349. The importer preserves the obsolete first citation while omitting the correction and strain context. This is a confirmed reference-routing defect; the unavailable main body still prevents adjudicating exact open-ring compound 5 formation conditions. Do not turn the corrected family/locus association into proof for the current wrong R stereoisomer.
+
+## Recommended Actions And Acceptance Checks
+
+### ID018-A1
+
+Reconcile BGC0000992:2 with primary SI compound 5 using an acyclic name and its S amino configuration, leaving the methyl-bearing chain centre unspecified. The corresponding inspected candidate is QYOOOQHFZSDPSQ-BDJYZKQXSA-N. Preserve the distinct cyclic Fusaridione A owner. The maintained identity owner is curation/mibig_structure_corrections.tsv, implemented by src/naturalproductmech/curate/structure_corrections.py. Its current actions accept only eligible structured three-star ChEBI targets; the inspected CHEBI:221940 and CHEBI:221932 are both two-star and ineligible, and an eligible entry for the primary S open-ring candidate has not been established. If no eligible target is verified, implement guarded manual primary-source name/structure support in that table and loader, with full original row pin, explicit old/new structures, attribution and source reference; do not use inactive decisions.tsv or hand-edit raw inventories. Pin the unchanged original BGC0000992:2 row SHA 2dc764081ef9a1cf6c91b96652e7b074e9a3ecde96a85578ee8d0b6531a080a9. Independently adjudicate origin and each occurrence/producer/locus claim before retaining it for the new graph. Preserve the old LOTUS triple QYOOOQHFZSDPSQ-WNZXBQPCSA-N / NCBITaxon:42747 / 10.1021/CB400159F and its row SHA 12653e80a1a0bcba2fef305bf058581b748d947c4f23092090632054f4d600ef as provenance. Any exclusion belongs in the implemented LOTUS exclusion route, but its old-key provenance must remain represented even if identity migration removes the old record. If the source concept instead intends cyclic compound 4, explicitly reconcile it with compound_index 1 and the existing cyclic owner rather than create a duplicate. Current citation, strain/isolate and xref guards reject structure-corrected rows; merely refreshing their source pins is insufficient. Implement compatible guarded composition or an explicitly tested staged migration before combining these changes.
+
+- The accepted label, SMILES, Standard InChI, full InChIKey, formula and stereo_complete value describe one species at the published stereochemical resolution. Primary compound 5 maps to S at the amino centre and leaves the chain centre unassigned unless inspected stronger evidence supersedes it.
+- A manual primary-source correction, if needed, is explicitly implemented in the maintained structure-correction table/loader. Tests reject stale source pins, invalid chemistry, unreviewed target collisions and accidental use of ineligible two-star ChEBI entries; they verify corrected label emission as well as the graph.
+- The existing cyclic Fusaridione A owner is retained as a distinct chemical structure unless an explicit source-concept migration is adjudicated. Minted identifiers derive from source accession and compound index; identifier, PATHS.tsv and history handling are tested rather than inferred from a changed structure hash.
+- Raw MIBiG and LOTUS source bytes remain unchanged by the correction. Old-key occurrence provenance is retained, and no occurrence, xref, activity or classification is transferred to the new full key by shared connectivity or name.
+- Meaningful integration tests cover structure correction combined with claim-reference, strain/isolate, xref and LOTUS exclusion overlays: correct raw pins, deliberate stale-pin failures, intended emitted claims, no unconsumed-overlay errors, preserved old-key provenance and no accidental equivalence of R/S or cyclic/open-ring structures.
+- Primary main-text formation and handling context is inspected before declaring the corrected product directly biosynthesized, native or solely a workup artifact. Until then uncertainty remains explicit and SOURCE_ASSERTION/CLUSTER_UNSTATED are not upgraded.
+- After authorized implementation, target seed canary, strict validation, verify-reproduction, verify-corpus and required QC pass; unchanged records remain byte-identical.
+
+### S018-A-CITATION
+
+Resolve the identity blockers and implement compatible correction composition first. Use curation/mibig_claim_references.tsv and curation/mibig_producer_strains.tsv with their full original-row pins to distinguish the 2013 reassignment (PMID:23614392) from the versioned MIBiG native source assertion and preserve ATCC 74349 context without upgrading grades. Retain the superseded PMID:15724180 in raw historical provenance. The original BGC0000992:2 row SHA is 2dc764081ef9a1cf6c91b96652e7b074e9a3ecde96a85578ee8d0b6531a080a9. correct_claim_reference and the seeder strain/isolate/xref guards reject structure_correction_note; changing pins alone cannot authorize composition. Extend the guarded loaders/seeder or perform an explicitly tested staged source migration that re-adjudicates each claim for the new graph and preserves raw and old-key LOTUS provenance. Obtain precise primary formation/handling context before asserting that compound 5 is directly biosynthesized or upgrading CLUSTER_UNSTATED.
+
+- The emitted locus claim records the 2013 reassignment and never uses the 2005 equisetin result as sole support for the revised exact product.
+- ATCC 74349 is explicitly qualified as the deposited experimental culture without inventing a strain taxon or species-wide experiment.
+- Every retained occurrence/producer claim uses the adjudicated graph; ring opening and R/S identity are not treated as aliases.
+- Integration tests explicitly cover the combined structure, citation, strain/isolate, xref and LOTUS exclusion corrections, including stale pins, guarded rejection of unreviewed combinations and preservation of old-key provenance. Refreshing expected row hashes alone must not bypass semantic guards.
+- The formation/workup boundary is documented from inspected primary methods before any evidence-grade or natural-origin promotion; remaining uncertainty stays explicit.
+- Target seed canary, strict validation, reproduction verification, corpus verification and required QC pass.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| ID018-OWNER | data/natural_products/alkaloids/3r-5s-5-4-hydroxybenzyl-3-methyl-3-2e-4e-6e-8e-10e-4-8-10-trimethyldodeca-2-4-6-.yaml; Entire owner, including chemical_structure, label, source_concepts and all history | supports | The owner labels a (3R,5S) pyrrolidine-2,4-dione but stores an acyclic amide/carboxylic acid graph. It is MIBiG BGC0000992 compound_index 2. |
+| ID018-CHEMISTRY | /private/tmp/npm-review-work/018/identity/structure-comparison.json; RDKit 2026.03.5: ring topology, formula, full InChIKey, CIP centres and alkene stereochemistry | supports | Owner SMILES and InChI are internally consistent: C27H33NO5, key QYOOOQHFZSDPSQ-WNZXBQPCSA-N, only a six-carbon aromatic ring, non-ring amide N, one neutral carboxylic acid, amino centre R, one unassigned chain centre, five E alkenes. The cyclic comparator is C27H31NO4 with a five-membered N-ring and 3R/5S centres. |
+| ID018-MIBIG | https://mibig.secondarymetabolites.org/repository/BGC0000992.4/annotations.json; compounds[0] and compounds[1], version 4; quality questionable | supports | The live source contains distinct cyclic fusaridione A and acyclic compound 2. Compound2 repeats the owner name/graph conflict. This establishes upstream provenance, not independent scientific support for its identity. |
+| ID018-NPATLAS | https://www.npatlas.org/api/v1/compound/NPA024821?include=classifications; Fusaridione A current_structure | supports | NPAtlas assigns Fusaridione A the cyclic C27H31NO4 structure, VXYKTSLHEMJALI-ABULEIRLSA-N, with 3R/5S centres. It is a different complete graph from this owner, not an exact external identity for it. |
+| ID018-CHEBI-EXACT | https://www.ebi.ac.uk/chebi/backend/api/public/compound/221940/; CHEBI:221940 default_structure and stars | supports | The current exact-full-key entry is two-star, created by MetaboLights, and repeats both the acyclic graph and cyclic name. Database agreement reproduces the mismatch; it does not resolve it or make this an eligible three-star grounding. |
+| ID018-CHEBI-CYCLIC | https://www.ebi.ac.uk/chebi/backend/api/public/compound/221932/; CHEBI:221932 default_structure and stars | supports | The separate Fusaridione A entry is also two-star, MetaboLights and matches the cyclic NPAtlas full key. Both downloaded molfiles were parsed to verify these different graphs. |
+| ID018-CHEBI-SEARCH | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=QYOOOQHFZSDPSQ-WNZXBQPCSA-N&amp;size=100; Live exact full-key query total 1/one page | supports | The current exact query returns only CHEBI:221940, a two-star entry. This result is scoped to the inspected query. |
+| ID018-CYCLIC-OWNER | data/natural_products/alkaloids/fusaridione-a.yaml; Entire contextual record read; not counted as an additional completed record review | supports | A separate current record naturalproductmech:mibig-7d310d5766 already represents cyclic Fusaridione A, VXYKTSLHEMJALI-ABULEIRLSA-N, from compound_index 1 of the same source entry. Replacing this owner with the cyclic graph requires explicit duplicate/source-concept reconciliation. |
+| ID018-RAW-SOURCE | data/raw/mibig_compounds.tsv; BGC0000992 compound_index 1 and 2; ignored files included in scoped duplicate/key search | supports | The two distinct source rows reproduce the two current structures. Full-key searches included ignored/hidden files within data/natural_products, source inventories and curation. |
+| ID018-PRIMARY-SI | DOI:10.1021/cb400159f; Official Supporting Information cb400159f_si_001.pdf; Table S8 printed S10, compound 5 drawing; Figure S24 printed S33. Download https://ndownloader.figshare.com/files/4034110; local visual artifacts support2013-si-page10.png and support2013-si-page33.png. | refutes | Independent visual inspection of primary compound 5 shows the amino N bond as a solid wedge toward the viewer at lower left, carboxyl at lower right and benzyl above. CIP priorities N &gt; COOH &gt; CH2aryl &gt; H map this drawing to S, whereas the owner encodes R. Compound 5 is acyclic with an unmarked methyl-bearing chain centre. Figure S24 gives C27H33NO5 and observed [M+H]+ 452.24335. |
+| S018-OWNER | data/natural_products/alkaloids/3r-5s-5-4-hydroxybenzyl-3-methyl-3-2e-4e-6e-8e-10e-4-8-10-trimethyldodeca-2-4-6-.yaml; Entire owner, complete resolved view and exact raw rows reread with this receipt timestamp | supports | The generated owner has an acyclic R-amino graph under a cyclic (3R,5S) label, one LOTUS occurrence, a species-level MIBiG SOURCE_ASSERTION producer and CLUSTER_UNSTATED locus. All identity-dependent biological claims require chemical reconciliation. The record has no chemical xrefs, inline/referenced graphs, pathway steps, activity measurements, targets, datasets, clinical assertions or related-record links. |
+| S018-RAW | data/raw/mibig_compounds.tsv; data/raw/lotus_occurrences.tsv; data/raw/npclassifier.tsv; Exact BGC0000992:2 and full-key rows in MIBiG, LOTUS and NPClassifier inventories; canonical parsed-row digests are stated below and complete inventory hashes are pinned in source.inputs. | supports | The exact MIBiG source row carries current QYOOOQHFZSDPSQ-WNZXBQPCSA-N and first entry reference PMID 15724180. LOTUS has one same-key/taxon 42747 triple citing DOI 10.1021/CB400159F. Canonical source-row SHAs are 2dc764081ef9a1cf6c91b96652e7b074e9a3ecde96a85578ee8d0b6531a080a9 for MIBiG and 12653e80a1a0bcba2fef305bf058581b748d947c4f23092090632054f4d600ef for LOTUS. |
+| S018-MIBIG | https://mibig.secondarymetabolites.org/repository/BGC0000992.4/annotations.json; Full BGC0000992v4 entry, compounds[0:2], legacy_references, loci, taxonomy and changelog | supports | MIBiG separately lists cyclic fusaridione A and the present second compound with an acyclic structure but cyclic name. Entry-wide references are PMID 15724180 and PMID 23614392; the source provides no locus methods, so CLUSTER_UNSTATED faithfully reflects import. Active status, species 42747, AY700570.3 and PKS/NRPS classes agree with the record; questionable quality and unknown completeness do not themselves decide scientific validity. |
+| S018-GENBANK | https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=AY700570.3&amp;db=nuccore&amp;report=genbank&amp;retmode=text; AY700570.3 LOCUS/DEFINITION, source feature, misc_feature 668..59922, references 1–2 | supports | The 60,504-bp deposit explicitly names the fusaridione A gene cluster from Fusarium heterosporum strain ATCC 74349, taxon 42747. It carries both the 2005 and 2013 references and annotations for fsd genes. MIBiG 0/0 bounds are unspecified, so omitting owner coordinates is faithful; the GenBank feature is not silently substituted as curated locus bounds. The deposit identifies strain context, not direct production of the owner’s disputed exact stereoisomer. |
+| S018-PUBMED | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=23614392,15724180&amp;retmode=xml; Complete PubMed abstracts PMID 15724180 DOI 10.1039/b413523g and PMID 23614392 DOI 10.1021/cb400159f | refutes | The 2005 abstract assigns the locus to equisetin. The 2013 authors explicitly revise that assignment: EqiS makes fusaridione A and a separate eqx cluster makes equisetin. Their abstract reports genetic mutation, biochemical analysis and recombinant expression in ATCC 74349 and spontaneous reverse-Dieckmann reactions of fusaridione A. These facts establish supersession and product boundaries, not the uninspected exact isolation conditions for open-ring compound 5. |
+| S018-SI-PROVENANCE | https://api.figshare.com/v2/articles/2394421; Official article 2394421 DOI 10.1021/cb400159f.s001, resource DOI, author list and files[0] | supports | The official Figshare API links this supporting document to the 2013 primary paper; file 4034110 is cb400159f_si_001.pdf, 4,804,424 bytes. Both API metadata and the actual downloaded title page match the authors, title and DOI context. |
+| S018-SI-STRUCTURES | https://ndownloader.figshare.com/files/4034110; Supporting Information printed S10 Table S8 and S33 Figure S24; actual images inspected at 2026-10-21T08:10:45Z, complete supplement text read. | refutes | Table S8 draws cyclic compound 4 separately from open-ring compound 5; the latter has an S amino centre and an unspecified methyl-bearing chain centre. Figure S24 gives compound 5 C27H33NO5, observed [M+H]+ 452.24335 and calculated 452.24315. This primary structure contradicts the owner R amino centre; the identity packet supplies the independent CIP mapping. Spectra were inspected for explicit labels and reported values, not reinterpreted de novo. |
+| S018-SI-EXPERIMENTS | https://ndownloader.figshare.com/files/4034110; Printed S2–S3 vector methods, S6 Tables S2–S4, S11 Figure S1, S12–S14 Figures S2–S4 | partial | The supplement describes fsdS knockout and fungal-expression constructs. Figure S1 shows equisetin in both fsdS knockouts, corroborating reassignment. FsdS domain pyrophosphate assays address substrate activation; Figure S4 compares the fsdS/C overexpression colony with wild type. These data do not by themselves assign native direct biosynthesis or artifact status to exact open-ring compound 5. |
+| S018-TAXONOMY | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=42747&amp;retmode=xml; NCBI 42747 scientific name, rank and lineage | supports | NCBI 42747 is Fusarium heterosporum in the fungal lineage, consistent with the owner species and FUNGAL groups. Its GenBank strain is ATCC 74349; no separate strain taxon is invented. |
+| S018-WIKIDATA | https://www.wikidata.org/wiki/Special:EntityData/Q103806210.json; Q103806210 English label, P225 and P685 | supports | The occurrence provenance URI resolves to Fusarium heterosporum and NCBI 42747, matching its species-level taxon. It does not establish exact-compound detection or a species-wide biosynthetic experiment. |
+| S018-MAIN-ACCESS | https://api.openalex.org/works/https://doi.org/10.1021/cb400159f; Official work-location lookup DOI 10.1021/cb400159f | unknown | The work lookup lists only the closed publisher page and PubMed, with no open full-body location. Direct ACS body access was HTTP 403 and direct SI route returned HTTP 202 with an empty body; the separate official Figshare API successfully yielded SI. The 2005RSC body remained HTTP 403. No missing full-body claim is filled from reviews or search snippets. |
+| S018-OWNERSHIP | scripts/extract_mibig.py; src/naturalproductmech/curate/claim_references.py; src/naturalproductmech/curate/producer_strains.py; scripts/seed_from_sources.py; primary_reference(), full claim-reference and strain qualification loaders; target-specific curation search | supports | The extractor selects the first entry-level reference, dropping the 2013 reassignment from emitted claims. Existing citation and strain corrections pin the full raw source-row SHA. Claim-reference application explicitly rejects structure-corrected rows, so future structure and citation changes require staged re-adjudication or a tested compatible loader extension; they cannot be assumed to compose automatically. |
+| S018-CORRECTION-COMPOSITION | src/naturalproductmech/curate/structure_corrections.py; src/naturalproductmech/curate/producer_strains.py; src/naturalproductmech/curate/lotus_exclusions.py; src/naturalproductmech/curate/claim_references.py; scripts/seed_from_sources.py; Entire three newly added loader modules; correct_claim_reference(); build_records() correction setup, xref/strain/isolate guards and final applied-overlay checks | supports | The structure loader permits only REPLACE_WITH_CHEBI or SPLIT_SHARED_WITH_CHEBI, requires a unique structured three-star ChEBI target and complete raw source/target row pins, and does not implement a manual primary-source name/structure action. It clears old xrefs and joins other inventories only on the corrected full key. Claim-reference application and seeder xref, strain and isolate qualification explicitly reject structure-corrected rows. LOTUS exclusions pin exact old-key triples and the seeder rejects exclusions that reach no emitted record. Merely refreshing pins cannot make these overlays compose. A future combined correction needs explicit guarded semantics and tests that preserve raw assertions and old-key mapping provenance. |
+
+## Limits And Additional Notes
+
+- The complete 2013 main body and 2005 body were not obtained through bounded free access. The original 2013 SI was retrieved from the official Figshare service and fully text-read, with visual inspection of Table S8 and Figure S24.
+- The S amino configuration is an explicit interpretation of the published wedge drawing, independently mapped to the molecular graph. No independent reconstruction of the authors' absolute-configuration experiment or de novo NMR interpretation is claimed.
+- The inspected SI does not settle whether compound 5 was present in native culture, generated during workup or characterized after separate conversion. Spontaneous reverse-Dieckmann chemistry in the abstract is a material uncertainty, not proof of an artifact-only or direct biosynthetic origin.
+- SOURCE_ASSERTION and CLUSTER_UNSTATED are not upgraded from general knockout/recombinant descriptions. No equisetin result is transferred to a distinct fusaridione product or stereoisomer.
+- No eligible three-star ChEBI entry for the primary S open-ring candidate has been established in this review; this is not an exhaustive claim that none exists. The currently inspected two-star entries are ineligible for the implemented correction actions.
+- The configured full identifier-label gate accepts 499 warning-level taxon-label mismatches, 35 explicit exceptions and 4,722 no-adapter pairs across the corpus; its exit 0 is not independent verification of every identifier or of this record's scientific claims.
+- The quality suite skips the optional sibling AntibioticMech checkout comparison because the isolated clone has no sibling checkout, and skips three command-frontmatter cases because their parameter sets are empty. Pinned-hash and network governance checks still ran.
+- Shared native gates assess deterministic corpus consistency and configured invariants. They do not establish biological production, stereochemical specificity, evidence adequacy or literature-level claim support.
+- No owner, inventory, curation table, native status, history or saved review was edited. This temporary draft proposes future corrections only.
+- Original inspection hashes were asserted before adding the actually inspected structure, strain and LOTUS loaders and cyclic comparator as context. The cyclic record is not an additional reviewed target.
+- Baseline deterministic checks retain their actual commands and receipts from the identical tracked source base. Target strict validation ran afresh. No new execution of shared baseline gates is claimed.
+- The native checklist mentions decisions.tsv in its generic owner guidance, but CLAUDE.md and the current profile state that it is reserved and unconsumed. Actions use implemented maintained owners and explicitly identify the required loader extension.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T082127Z-fusaridione-open-ring-identity
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Fusaridione open-ring record: cyclic name, opposite amino stereochemistry
+  and superseded citation'
+started_at: '2026-10-21T08:05:34.335970Z'
+finished_at: '2026-10-21T08:21:27.303651Z'
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Two confirmed identity blockers distinguish the cyclic label from the acyclic
+  graph and the encoded R amino centre from the primary S drawing. A major finding
+  identifies the superseded 2005 producer/locus citation. Exact native occurrence
+  versus spontaneous or workup formation remains unresolved without the full 2013
+  main text. Deterministic checks pass, but they do not resolve these scientific defects.
+source:
+  git_revision: 10ed28fcdadb3d955c30732ff05b5d0e4adbee3b
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/3r-5s-5-4-hydroxybenzyl-3-methyl-3-2e-4e-6e-8e-10e-4-8-10-trimethyldodeca-2-4-6-.yaml
+    sha256: 26b7f35d118a1b7bb6e19d5b1050907ca74c02ae1837890f8c38bf62eb90469f
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/lotus_exclusions.py
+    sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+    role: context
+  - path: data/natural_products/alkaloids/fusaridione-a.yaml
+    sha256: c9739e915f6e22d331a6d25810a333f368adbd56aae03ee698e8fb3db175f690
+    role: context
+scope:
+  description: 'One complete generated owner: identity, structure, grounding, source
+    concept, occurrence, producer, BGC, taxonomy, filing, optional assertions and
+    audit history. The separate cyclic Fusaridione A record is context only.'
+  selection: Eighteenth initially unreviewed path and eighth in batch 002 from fresh
+    origin/main. The fresh-main authoritative list has 91 valid bundles covering 54
+    of 3,116 records; ten reviews in pending PR 1000 are additional campaign coverage.
+    Ignored files were included. This review has exactly one target.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+targets:
+- target_id: naturalproductmech:mibig-b1027ab43e
+  path: data/natural_products/alkaloids/3r-5s-5-4-hydroxybenzyl-3-methyl-3-2e-4e-6e-8e-10e-4-8-10-trimethyldodeca-2-4-6-.yaml
+  label: (3R,5S)-5-(4-hydroxybenzyl)-3-methyl-3-((2E,4E,6E,8E,10E)-4,8,10-trimethyldodeca-2,4,6,8,10-pentaenoyl)pyrrolidine-2,4-dione
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The entire target has zero ERROR rows.
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+  command: just validate-strict data/natural_products/alkaloids/3r-5s-5-4-hydroxybenzyl-3-methyl-3-2e-4e-6e-8e-10e-4-8-10-trimethyldodeca-2-4-6-.yaml
+    --out /private/tmp/npm-review-work/018/strict.tsv
+  exit_code: 0
+  scope_note: Actual target command finished 2026-10-21T08:05:45.723543Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 record files agree with 3,116 PATHS.tsv rows and their pinned
+    filing pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-corpus
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016808Z; finished 2026-10-21T06:37:52.997020Z. Exact
+    session transcript: /private/tmp/npm-native-checks/verify-corpus.log. Reused for
+    batch 002 because the tracked source tree and HEAD remain the exact same base
+    commit; this command was not rerun for batch 002. The review author must assign
+    the exact target_ids.'
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 records are byte-identical to the seeder output from committed
+    inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-reproduction
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016703Z; finished 2026-10-21T06:38:35.570687Z. Exact
+    session transcript: /private/tmp/npm-native-checks/verify-reproduction.log. Reused
+    for batch 002 because the tracked source tree and HEAD remain the exact same base
+    commit; this command was not rerun for batch 002. The review author must assign
+    the exact target_ids.'
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The documented exhaustive queue command produced 8,928 diagnostic rows
+    in 12 queues; deterministic queue output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just review-queue
+    --tsv /private/tmp/npm-review-queue-initial.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016598Z; finished 2026-10-21T06:37:11.018366Z. Exact
+    session transcript: /private/tmp/npm-native-checks/review-queue.log. Reused for
+    batch 002 because the tracked source tree and HEAD remain the exact same base
+    commit; this command was not rerun for batch 002. The review author must assign
+    the exact target_ids.'
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'Full configured gate passed using existing CHEBI and GO caches plus the
+    committed taxonomy adapter: 13,434 canonical matches, 646 synonym matches, 35
+    documented exceptions, 499 warning-only mismatches and 4,722 pairs skipped because
+    their prefixes have no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:56.498212Z; finished 2026-10-21T06:38:54.776253Z. Exact
+    session transcript: /private/tmp/npm-native-checks/validate-products.log. Reused
+    for batch 002 because the tracked source tree and HEAD remain the exact same base
+    commit; this command was not rerun for batch 002. The review author must assign
+    the exact target_ids.'
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+- check_id: shared-qc
+  name: Full repository quality gate after environment repair
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed after installing the pinned
+    linter, allowing the read-only governance fetch, and restoring the required provenance
+    tag. Tests: 999 passed, 4 skipped, 2 warnings. Closed-schema validation: 3,116
+    records and zero errors. Documentation, provenance, source queue, governed artifacts,
+    generated pages, reproduction, filing integrity and corpus reporting all passed.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:46:02.058886Z; finished 2026-10-21T06:54:53.950582Z. Exact
+    session transcript: /private/tmp/npm-native-checks/qc-attempt4.log. Reused for
+    batch 002 because the tracked source tree and HEAD remain the exact same base
+    commit; this command was not rerun for batch 002. The review author must assign
+    the exact target_ids.'
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+- check_id: ID018-INTERNAL-GRAPH
+  name: Internal full structure and stereo representation
+  status: passed
+  required: true
+  summary: SMILES and InChI reproduce the stored full key; stereo_complete:false matches
+    one undefined centre. Internal serialization agreement does not validate the label.
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+  command: .venv/bin/python /private/tmp/npm-review-work/018/compare_identity.py
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - ID018-CHEMISTRY
+- check_id: ID018-LABEL-GRAPH
+  name: Chemical label versus molecular graph identity
+  status: failed
+  required: true
+  summary: The stated cyclic (3R,5S) pyrrolidinedione name does not describe the acyclic
+    amide/carboxylic acid graph; molecular formula and assigned amino stereocentre
+    also differ from the named cyclic comparator.
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+  evidence_ids:
+  - ID018-OWNER
+  - ID018-CHEMISTRY
+  - ID018-NPATLAS
+  - ID018-CYCLIC-OWNER
+  scope_note: Confirmed chemical identity conflict, not an unavailable-source result.
+- check_id: ID018-PRIMARY-STEREO
+  name: Exact stereochemistry versus primary compound 5 drawing
+  status: failed
+  required: true
+  summary: The owner encodes R at the amino-acid centre, whereas the original 2013
+    SI compound 5 drawing encodes S. The full structures are distinct.
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+  evidence_ids:
+  - ID018-CHEMISTRY
+  - ID018-PRIMARY-SI
+  scope_note: Original SI pixels independently inspected. CIP interpretation checked
+    against explicit candidate structures; no biological stereoretention assumption
+    is used.
+- check_id: C-CITATION
+  name: Current claim-specific locus and producer references
+  status: failed
+  required: true
+  summary: The imported claims retain only the superseded 2005 product assignment
+    and omit the 2013 reassignment and its strain context.
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+  evidence_ids:
+  - S018-PUBMED
+  - S018-MIBIG
+  - S018-GENBANK
+  - S018-OWNERSHIP
+- check_id: C-ORIGIN-CONTEXT
+  name: Exact open-ring formation, handling and occurrence context
+  status: unavailable
+  required: true
+  summary: The original SI resolves the structure drawing but not whether compound
+    5 was present in native culture, arose during workup or was separately converted.
+    The complete 2013 main body was not obtained through bounded free access. Abstract
+    and SI do not justify a native-origin or locus-grade upgrade.
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+  evidence_ids:
+  - S018-PUBMED
+  - S018-SI-STRUCTURES
+  - S018-SI-EXPERIMENTS
+  - S018-MAIN-ACCESS
+- check_id: C-GROUNDING
+  name: Current ChEBI eligibility for the encoded graph
+  status: passed
+  required: true
+  summary: The live exact-full-key query returns a two-star entry with the same source
+    conflict; neither inspected ChEBI candidate is an eligible three-star replacement.
+    Minted status is consistent with the inspected authority results but does not
+    resolve identity.
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+  evidence_ids:
+  - ID018-CHEBI-EXACT
+  - ID018-CHEBI-CYCLIC
+  - ID018-CHEBI-SEARCH
+- check_id: C-IMODULON
+  name: Native expression-source applicability
+  status: not_applicable
+  required: false
+  summary: The fully read owner contains no named protein, gene, regulator, pathway
+    step or transcriptomic claim requiring a gene-level expression-source cross-check.
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+  evidence_ids:
+  - S018-OWNER
+evidence:
+- evidence_id: ID018-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/3r-5s-5-4-hydroxybenzyl-3-methyl-3-2e-4e-6e-8e-10e-4-8-10-trimethyldodeca-2-4-6-.yaml
+  locator: Entire owner, including chemical_structure, label, source_concepts and
+    all history
+  accessed_at: '2026-10-21T08:10:49.957366Z'
+  support: supports
+  summary: The owner labels a (3R,5S) pyrrolidine-2,4-dione but stores an acyclic
+    amide/carboxylic acid graph. It is MIBiG BGC0000992 compound_index 2.
+  snapshot_sha256: 26b7f35d118a1b7bb6e19d5b1050907ca74c02ae1837890f8c38bf62eb90469f
+- evidence_id: ID018-CHEMISTRY
+  kind: validation
+  reference: /private/tmp/npm-review-work/018/identity/structure-comparison.json
+  locator: 'RDKit 2026.03.5: ring topology, formula, full InChIKey, CIP centres and
+    alkene stereochemistry'
+  accessed_at: '2026-10-21T08:08:14.910225Z'
+  support: supports
+  summary: 'Owner SMILES and InChI are internally consistent: C27H33NO5, key QYOOOQHFZSDPSQ-WNZXBQPCSA-N,
+    only a six-carbon aromatic ring, non-ring amide N, one neutral carboxylic acid,
+    amino centre R, one unassigned chain centre, five E alkenes. The cyclic comparator
+    is C27H31NO4 with a five-membered N-ring and 3R/5S centres.'
+  snapshot_sha256: 6725ff0a811de05fc661ee9566e3051dcc70d21287dec67dcfffaee16f86ac5b
+- evidence_id: ID018-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000992.4/annotations.json
+  locator: compounds[0] and compounds[1], version 4; quality questionable
+  accessed_at: '2026-10-21T08:06:52.040356Z'
+  support: supports
+  summary: The live source contains distinct cyclic fusaridione A and acyclic compound
+    2. Compound2 repeats the owner name/graph conflict. This establishes upstream
+    provenance, not independent scientific support for its identity.
+  snapshot_sha256: 1d2031f1be8e22c119e937c8720080c9eb8777ec00b7229efcdb330f2d023277
+- evidence_id: ID018-NPATLAS
+  kind: database
+  reference: https://www.npatlas.org/api/v1/compound/NPA024821?include=classifications
+  locator: Fusaridione A current_structure
+  accessed_at: '2026-10-21T08:06:51.577884Z'
+  support: supports
+  summary: NPAtlas assigns Fusaridione A the cyclic C27H31NO4 structure, VXYKTSLHEMJALI-ABULEIRLSA-N,
+    with 3R/5S centres. It is a different complete graph from this owner, not an exact
+    external identity for it.
+  snapshot_sha256: 68fee4a3369b3d7eb153ced7f8b9412167e21404e6aa525d17d1785255e5111f
+- evidence_id: ID018-CHEBI-EXACT
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/221940/
+  locator: CHEBI:221940 default_structure and stars
+  accessed_at: '2026-10-21T08:07:36.009802Z'
+  support: supports
+  summary: The current exact-full-key entry is two-star, created by MetaboLights,
+    and repeats both the acyclic graph and cyclic name. Database agreement reproduces
+    the mismatch; it does not resolve it or make this an eligible three-star grounding.
+  snapshot_sha256: fc02f90342e8a9c561837619593cbae64a5c7796ce0f197eaf414d11c1e8deaf
+- evidence_id: ID018-CHEBI-CYCLIC
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/221932/
+  locator: CHEBI:221932 default_structure and stars
+  accessed_at: '2026-10-21T08:07:36.190251Z'
+  support: supports
+  summary: The separate Fusaridione A entry is also two-star, MetaboLights and matches
+    the cyclic NPAtlas full key. Both downloaded molfiles were parsed to verify these
+    different graphs.
+  snapshot_sha256: d002e655f6efe3cb5a0c81f3ed633dbd0db4bb9e373a4da5a5cbd912b309027f
+- evidence_id: ID018-CHEBI-SEARCH
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=QYOOOQHFZSDPSQ-WNZXBQPCSA-N&size=100
+  locator: Live exact full-key query total 1/one page
+  accessed_at: '2026-10-21T08:06:52.193386Z'
+  support: supports
+  summary: The current exact query returns only CHEBI:221940, a two-star entry. This
+    result is scoped to the inspected query.
+  snapshot_sha256: 753675c28df4552261666e47de0c63938c48ffaf9b4ea5af796fec6fdf25010a
+  search_scope: Official current ChEBI exact complete InChIKey query; size 100; one
+    result, one page. No truncation in returned response.
+- evidence_id: ID018-CYCLIC-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/fusaridione-a.yaml
+  locator: Entire contextual record read; not counted as an additional completed record
+    review
+  accessed_at: '2026-10-21T08:10:49.957366Z'
+  support: supports
+  summary: A separate current record naturalproductmech:mibig-7d310d5766 already represents
+    cyclic Fusaridione A, VXYKTSLHEMJALI-ABULEIRLSA-N, from compound_index 1 of the
+    same source entry. Replacing this owner with the cyclic graph requires explicit
+    duplicate/source-concept reconciliation.
+  snapshot_sha256: c9739e915f6e22d331a6d25810a333f368adbd56aae03ee698e8fb3db175f690
+- evidence_id: ID018-RAW-SOURCE
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: BGC0000992 compound_index 1 and 2; ignored files included in scoped duplicate/key
+    search
+  accessed_at: '2026-10-21T08:10:49.957366Z'
+  support: supports
+  summary: The two distinct source rows reproduce the two current structures. Full-key
+    searches included ignored/hidden files within data/natural_products, source inventories
+    and curation.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: ID018-PRIMARY-SI
+  kind: primary_source
+  reference: DOI:10.1021/cb400159f
+  locator: Official Supporting Information cb400159f_si_001.pdf; Table S8 printed
+    S10, compound 5 drawing; Figure S24 printed S33. Download https://ndownloader.figshare.com/files/4034110;
+    local visual artifacts support2013-si-page10.png and support2013-si-page33.png.
+  accessed_at: '2026-10-21T08:11:13Z'
+  support: refutes
+  summary: Independent visual inspection of primary compound 5 shows the amino N bond
+    as a solid wedge toward the viewer at lower left, carboxyl at lower right and
+    benzyl above. CIP priorities N > COOH > CH2aryl > H map this drawing to S, whereas
+    the owner encodes R. Compound 5 is acyclic with an unmarked methyl-bearing chain
+    centre. Figure S24 gives C27H33NO5 and observed [M+H]+ 452.24335.
+  snapshot_sha256: de6ba88749170de4f7d07df0ed83f7e75e0253d261e66552018d6f21ed324b1f
+- evidence_id: S018-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/3r-5s-5-4-hydroxybenzyl-3-methyl-3-2e-4e-6e-8e-10e-4-8-10-trimethyldodeca-2-4-6-.yaml
+  locator: Entire owner, complete resolved view and exact raw rows reread with this
+    receipt timestamp
+  accessed_at: '2026-10-21T08:13:55.480677Z'
+  support: supports
+  summary: The generated owner has an acyclic R-amino graph under a cyclic (3R,5S)
+    label, one LOTUS occurrence, a species-level MIBiG SOURCE_ASSERTION producer and
+    CLUSTER_UNSTATED locus. All identity-dependent biological claims require chemical
+    reconciliation. The record has no chemical xrefs, inline/referenced graphs, pathway
+    steps, activity measurements, targets, datasets, clinical assertions or related-record
+    links.
+  snapshot_sha256: 26b7f35d118a1b7bb6e19d5b1050907ca74c02ae1837890f8c38bf62eb90469f
+- evidence_id: S018-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv; data/raw/lotus_occurrences.tsv; data/raw/npclassifier.tsv
+  locator: Exact BGC0000992:2 and full-key rows in MIBiG, LOTUS and NPClassifier inventories;
+    canonical parsed-row digests are stated below and complete inventory hashes are
+    pinned in source.inputs.
+  accessed_at: '2026-10-21T08:13:55.480677Z'
+  support: supports
+  summary: The exact MIBiG source row carries current QYOOOQHFZSDPSQ-WNZXBQPCSA-N
+    and first entry reference PMID 15724180. LOTUS has one same-key/taxon 42747 triple
+    citing DOI 10.1021/CB400159F. Canonical source-row SHAs are 2dc764081ef9a1cf6c91b96652e7b074e9a3ecde96a85578ee8d0b6531a080a9
+    for MIBiG and 12653e80a1a0bcba2fef305bf058581b748d947c4f23092090632054f4d600ef
+    for LOTUS.
+- evidence_id: S018-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000992.4/annotations.json
+  locator: Full BGC0000992v4 entry, compounds[0:2], legacy_references, loci, taxonomy
+    and changelog
+  accessed_at: '2026-10-21T08:06:36.525510Z'
+  support: supports
+  summary: MIBiG separately lists cyclic fusaridione A and the present second compound
+    with an acyclic structure but cyclic name. Entry-wide references are PMID 15724180
+    and PMID 23614392; the source provides no locus methods, so CLUSTER_UNSTATED faithfully
+    reflects import. Active status, species 42747, AY700570.3 and PKS/NRPS classes
+    agree with the record; questionable quality and unknown completeness do not themselves
+    decide scientific validity.
+  snapshot_sha256: 1d2031f1be8e22c119e937c8720080c9eb8777ec00b7229efcdb330f2d023277
+- evidence_id: S018-GENBANK
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=AY700570.3&db=nuccore&report=genbank&retmode=text
+  locator: AY700570.3 LOCUS/DEFINITION, source feature, misc_feature 668..59922, references
+    1–2
+  accessed_at: '2026-10-21T08:06:36.769162Z'
+  support: supports
+  summary: The 60,504-bp deposit explicitly names the fusaridione A gene cluster from
+    Fusarium heterosporum strain ATCC 74349, taxon 42747. It carries both the 2005
+    and 2013 references and annotations for fsd genes. MIBiG 0/0 bounds are unspecified,
+    so omitting owner coordinates is faithful; the GenBank feature is not silently
+    substituted as curated locus bounds. The deposit identifies strain context, not
+    direct production of the owner’s disputed exact stereoisomer.
+  snapshot_sha256: ed4930304fd659d60858fb3991c1805899c771722a94f196aa884e785a4066bd
+- evidence_id: S018-PUBMED
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=23614392,15724180&retmode=xml
+  locator: Complete PubMed abstracts PMID 15724180 DOI 10.1039/b413523g and PMID 23614392
+    DOI 10.1021/cb400159f
+  accessed_at: '2026-10-21T08:06:36.387295Z'
+  support: refutes
+  summary: 'The 2005 abstract assigns the locus to equisetin. The 2013 authors explicitly
+    revise that assignment: EqiS makes fusaridione A and a separate eqx cluster makes
+    equisetin. Their abstract reports genetic mutation, biochemical analysis and recombinant
+    expression in ATCC 74349 and spontaneous reverse-Dieckmann reactions of fusaridione
+    A. These facts establish supersession and product boundaries, not the uninspected
+    exact isolation conditions for open-ring compound 5.'
+  snapshot_sha256: d2366dec52d715d1f5555d340cb30ccfdf711ed5b0a7cd117cbaf2c678e80996
+- evidence_id: S018-SI-PROVENANCE
+  kind: authority
+  reference: https://api.figshare.com/v2/articles/2394421
+  locator: Official article 2394421 DOI 10.1021/cb400159f.s001, resource DOI, author
+    list and files[0]
+  accessed_at: '2026-10-21T08:10:25.996101Z'
+  support: supports
+  summary: The official Figshare API links this supporting document to the 2013 primary
+    paper; file 4034110 is cb400159f_si_001.pdf, 4,804,424 bytes. Both API metadata
+    and the actual downloaded title page match the authors, title and DOI context.
+  snapshot_sha256: 0b5ac2777b6afa24ded9da2132710455bdb53bae15bc7c5f2de13778c18eb7c3
+- evidence_id: S018-SI-STRUCTURES
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/4034110
+  locator: Supporting Information printed S10 Table S8 and S33 Figure S24; actual
+    images inspected at 2026-10-21T08:10:45Z, complete supplement text read.
+  accessed_at: '2026-10-21T08:10:26.742174Z'
+  support: refutes
+  summary: Table S8 draws cyclic compound 4 separately from open-ring compound 5;
+    the latter has an S amino centre and an unspecified methyl-bearing chain centre.
+    Figure S24 gives compound 5 C27H33NO5, observed [M+H]+ 452.24335 and calculated
+    452.24315. This primary structure contradicts the owner R amino centre; the identity
+    packet supplies the independent CIP mapping. Spectra were inspected for explicit
+    labels and reported values, not reinterpreted de novo.
+  snapshot_sha256: de6ba88749170de4f7d07df0ed83f7e75e0253d261e66552018d6f21ed324b1f
+- evidence_id: S018-SI-EXPERIMENTS
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/4034110
+  locator: Printed S2–S3 vector methods, S6 Tables S2–S4, S11 Figure S1, S12–S14 Figures
+    S2–S4
+  accessed_at: '2026-10-21T08:10:26.742174Z'
+  support: partial
+  summary: The supplement describes fsdS knockout and fungal-expression constructs.
+    Figure S1 shows equisetin in both fsdS knockouts, corroborating reassignment.
+    FsdS domain pyrophosphate assays address substrate activation; Figure S4 compares
+    the fsdS/C overexpression colony with wild type. These data do not by themselves
+    assign native direct biosynthesis or artifact status to exact open-ring compound
+    5.
+  snapshot_sha256: de6ba88749170de4f7d07df0ed83f7e75e0253d261e66552018d6f21ed324b1f
+- evidence_id: S018-TAXONOMY
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=42747&retmode=xml
+  locator: NCBI 42747 scientific name, rank and lineage
+  accessed_at: '2026-10-21T08:06:36.992257Z'
+  support: supports
+  summary: NCBI 42747 is Fusarium heterosporum in the fungal lineage, consistent with
+    the owner species and FUNGAL groups. Its GenBank strain is ATCC 74349; no separate
+    strain taxon is invented.
+  snapshot_sha256: a8e8247e026d74a742791b22dadec2087956a630d10060eec33ffafca810e9d7
+- evidence_id: S018-WIKIDATA
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q103806210.json
+  locator: Q103806210 English label, P225 and P685
+  accessed_at: '2026-10-21T08:11:55.721878Z'
+  support: supports
+  summary: The occurrence provenance URI resolves to Fusarium heterosporum and NCBI
+    42747, matching its species-level taxon. It does not establish exact-compound
+    detection or a species-wide biosynthetic experiment.
+  snapshot_sha256: d14fb9af419a0257468c26a6c1970ee6d9e355168a696a1e0af513ca31571a59
+- evidence_id: S018-MAIN-ACCESS
+  kind: search
+  reference: https://api.openalex.org/works/https://doi.org/10.1021/cb400159f
+  locator: Official work-location lookup DOI 10.1021/cb400159f
+  accessed_at: '2026-10-21T08:10:10.641639Z'
+  support: unknown
+  summary: The work lookup lists only the closed publisher page and PubMed, with no
+    open full-body location. Direct ACS body access was HTTP 403 and direct SI route
+    returned HTTP 202 with an empty body; the separate official Figshare API successfully
+    yielded SI. The 2005RSC body remained HTTP 403. No missing full-body claim is
+    filled from reviews or search snippets.
+  snapshot_sha256: 068e8dcdd0543a8938f5b84bf8a3eda40e62e0e213a58184d4f38eb8895c0914
+  search_scope: Bounded DOI and exact-title searches, author/Utah and free-PDF leads;
+    official publisher, Crossref, OpenAlex and Figshare resource DOI lookup. Search
+    hits were used only for access discovery. The complete 2013 body was not obtained;
+    the actual 2013 SI was obtained and inspected.
+- evidence_id: S018-OWNERSHIP
+  kind: record_content
+  reference: scripts/extract_mibig.py; src/naturalproductmech/curate/claim_references.py;
+    src/naturalproductmech/curate/producer_strains.py; scripts/seed_from_sources.py
+  locator: primary_reference(), full claim-reference and strain qualification loaders;
+    target-specific curation search
+  accessed_at: '2026-10-21T08:13:38.955286Z'
+  support: supports
+  summary: The extractor selects the first entry-level reference, dropping the 2013
+    reassignment from emitted claims. Existing citation and strain corrections pin
+    the full raw source-row SHA. Claim-reference application explicitly rejects structure-corrected
+    rows, so future structure and citation changes require staged re-adjudication
+    or a tested compatible loader extension; they cannot be assumed to compose automatically.
+  search_scope: rg --no-ignore --hidden searched curation, relevant curate modules,
+    scripts and docs for target identifier, BGC0000992:2 and current connectivity
+    key; ignored files included, no target-specific maintained correction was found.
+    No inactive decisions.tsv action is proposed.
+- evidence_id: S018-CORRECTION-COMPOSITION
+  kind: record_content
+  reference: src/naturalproductmech/curate/structure_corrections.py; src/naturalproductmech/curate/producer_strains.py;
+    src/naturalproductmech/curate/lotus_exclusions.py; src/naturalproductmech/curate/claim_references.py;
+    scripts/seed_from_sources.py
+  locator: Entire three newly added loader modules; correct_claim_reference(); build_records()
+    correction setup, xref/strain/isolate guards and final applied-overlay checks
+  accessed_at: '2026-10-21T08:21:27.303651Z'
+  support: supports
+  summary: The structure loader permits only REPLACE_WITH_CHEBI or SPLIT_SHARED_WITH_CHEBI,
+    requires a unique structured three-star ChEBI target and complete raw source/target
+    row pins, and does not implement a manual primary-source name/structure action.
+    It clears old xrefs and joins other inventories only on the corrected full key.
+    Claim-reference application and seeder xref, strain and isolate qualification
+    explicitly reject structure-corrected rows. LOTUS exclusions pin exact old-key
+    triples and the seeder rejects exclusions that reach no emitted record. Merely
+    refreshing pins cannot make these overlays compose. A future combined correction
+    needs explicit guarded semantics and tests that preserve raw assertions and old-key
+    mapping provenance.
+assessments:
+- assessment_id: ID018-LABEL-IDENTITY
+  area: identity
+  topic: Cyclic name versus acyclic stored graph
+  outcome: concern
+  summary: The label and source_label describe the cyclic parent; the graph has no
+    nitrogen-containing ring and is 18.01056 Da heavier by H2O. The acyclic graph
+    additionally specifies the amino centre R while the cyclic comparator specifies
+    5S. The owner is not equivalent to the cyclic Fusaridione A record or to the S-configured
+    open-ring candidate.
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+  evidence_ids:
+  - ID018-OWNER
+  - ID018-CHEMISTRY
+  - ID018-MIBIG
+  - ID018-NPATLAS
+  - ID018-CYCLIC-OWNER
+- assessment_id: ID018-GROUNDING
+  area: grounding
+  topic: Two-star exact source entry and distinct cyclic candidate
+  outcome: supported
+  summary: Current CHEBI:221940 matches the owner full key but is two-star and carries
+    the same name/graph mismatch. CHEBI:221932 is the distinct cyclic parent, also
+    two-star. Neither supplies an eligible three-star replacement. Minted status does
+    not cure the scientific identity issue.
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+  evidence_ids:
+  - ID018-CHEBI-EXACT
+  - ID018-CHEBI-CYCLIC
+  - ID018-CHEBI-SEARCH
+- assessment_id: ID018-OPEN-RING-ASSIGNMENT
+  area: identity
+  topic: Natural open-ring product and exact amino stereochemistry
+  outcome: concern
+  summary: The primary SI explicitly draws acyclic compound 5 with S amino stereochemistry.
+    Transcribing that configuration on the inspected acyclic graph gives QYOOOQHFZSDPSQ-BDJYZKQXSA-N,
+    not the owner R key QYOOOQHFZSDPSQ-WNZXBQPCSA-N. The unspecified chain centre
+    is left unspecified in the drawing. This establishes a mismatch with the published
+    identity; isolation versus degradation circumstances remain a separate primary-methods
+    question.
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+  evidence_ids:
+  - ID018-CHEMISTRY
+  - ID018-PRIMARY-SI
+- assessment_id: S018-CITATIONS
+  area: evidence
+  topic: Superseded locus citation and current biological context
+  outcome: concern
+  summary: The sole producer/locus citation is the 2005 equisetin assignment that
+    the 2013 paper explicitly corrects. Both references exist upstream, so selection
+    loses material context. Route the reassignment by claim and preserve ATCC 74349
+    scope after identity reconciliation, without upgrading method grades.
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+  evidence_ids:
+  - S018-PUBMED
+  - S018-MIBIG
+  - S018-GENBANK
+  - S018-OWNERSHIP
+- assessment_id: S018-LOCUS
+  area: grounding
+  topic: Accession, version, classes and imported grade
+  outcome: supported
+  summary: BGC0000992v4 is active and resolves to AY700570.3 with PKS/NRPS classes.
+    CLUSTER_UNSTATED accurately reflects absent source methods. Published work on
+    cyclic fusaridione A does not automatically validate a demonstrated grade for
+    the incorrect current acyclic R graph.
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+  evidence_ids:
+  - S018-MIBIG
+  - S018-GENBANK
+  - S018-PUBMED
+- assessment_id: S018-PRODUCER
+  area: evidence
+  topic: Species source assertion and strain-level applicability
+  outcome: concern
+  summary: SOURCE_ASSERTION correctly distinguishes the database producer assertion
+    from experimental proof. The actual source culture is ATCC 74349, and the current
+    citation conceals its corrected product assignment. Exact-product attribution
+    remains dependent on resolving the cyclic name and R/S graph conflicts; native
+    occurrence or direct production of open-ring compound 5 is not established by
+    the abstract alone.
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+  evidence_ids:
+  - S018-MIBIG
+  - S018-GENBANK
+  - S018-PUBMED
+  - S018-SI-STRUCTURES
+- assessment_id: S018-OCCURRENCE
+  area: evidence
+  topic: LOTUS 2013 exact structure-organism-reference triple
+  outcome: concern
+  summary: The DOI concerns the appropriate organism and the paper characterizes an
+    open-ring product, but its drawn amino stereochemistry is S while the exact imported
+    triple carries R. The claim therefore cannot be certified for the current graph.
+    Identity correction must independently rejoin or adjudicate occurrence evidence;
+    it must not carry this old-key row across automatically.
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+  evidence_ids:
+  - S018-RAW
+  - S018-PUBMED
+  - S018-SI-STRUCTURES
+- assessment_id: S018-ARTIFACT
+  area: evidence
+  topic: Direct biosynthesis versus spontaneous product formation
+  outcome: unknown
+  summary: The primary abstract explicitly describes spontaneous reverse-Dieckmann
+    behavior. SI distinguishes products 4 and 5, but the unavailable main body contains
+    the needed formation, handling and isolation context. Whether5 was detected natively,
+    generated during workup, or characterized after separate conversion remains unresolved
+    here; neither a natural-product upgrade nor an artifact-only conclusion is justified.
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+  evidence_ids:
+  - S018-PUBMED
+  - S018-SI-STRUCTURES
+  - S018-SI-EXPERIMENTS
+  - S018-MAIN-ACCESS
+- assessment_id: S018-TAXA
+  area: grounding
+  topic: Taxon and provenance identifiers
+  outcome: supported
+  summary: NCBI 42747 and Wikidata Q103806210 identify the same fungal species. The
+    deposited ATCC 74349 context is explicit, and species-level occurrence remains
+    distinct from strain-specific experimentation.
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+  evidence_ids:
+  - S018-TAXONOMY
+  - S018-WIKIDATA
+  - S018-GENBANK
+- assessment_id: S018-CLASSIFICATION
+  area: scope
+  topic: Computed filing versus BGC assertions
+  outcome: supported
+  summary: The pinned NPClassifier result for the current graph is Alkaloids/Peptide
+    alkaloids/Simple amide alkaloids, not a glycoside, with the stated model version.
+    ALKALOIDS filing and source PKS/NRPS classes use separate axes. A corrected graph
+    requires reassessment rather than assuming unchanged classification.
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+  evidence_ids:
+  - S018-OWNER
+  - S018-RAW
+  - S018-MIBIG
+- assessment_id: S018-OPTIONALS
+  area: completeness
+  topic: Optional graph, pathway, activity and clinical assertions
+  outcome: not_applicable
+  summary: No such assertions are present in the fully read owner. Their absence alone
+    is not a finding. There is no owner-named protein/gene or transcriptomic claim
+    requiring iModulonDB or protein examples.
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+  evidence_ids:
+  - S018-OWNER
+- assessment_id: S018-HISTORY
+  area: provenance
+  topic: SEEDED status and source concept
+  outcome: supported
+  summary: The source concept and three seed events describe inventory/curation-table
+    regeneration, not scientific approval. SEEDED should remain while identity and
+    formation context are unresolved. No history or status edit is authorized by this
+    review.
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+  evidence_ids:
+  - S018-OWNER
+  - S018-RAW
+findings:
+- finding_id: ID018-F1
+  issue_key: mibig-b1027ab43e-cyclic-label-acyclic-structure
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Cyclic Fusaridione A name is attached to a different acyclic molecular graph
+  description: The owner names a (3R,5S) pyrrolidine-2,4-dione, but the stored structure
+    has only the benzene ring, an acyclic amide and neutral carboxylic acid, formula
+    C27H33NO5, amino centre R and an undefined chain centre. Official MIBiG BGC0000992
+    v4 compound 2 and two-star CHEBI:221940 reproduce this conflict. The correctly
+    named cyclic comparator has formula C27H31NO4, a five-membered N-ring, 3R/5S centres
+    and a separate existing owner. The current name/graph identity is therefore chemically
+    contradictory regardless of whether the primary ultimately supports a separate
+    ring-opened product.
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+  field_paths:
+  - label
+  - chemical_structure
+  - source_concepts[0].source_label
+  evidence_ids:
+  - ID018-OWNER
+  - ID018-CHEMISTRY
+  - ID018-MIBIG
+  - ID018-NPATLAS
+  - ID018-CYCLIC-OWNER
+  - S018-CORRECTION-COMPOSITION
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Maintained source-pinned identity corrections; current action vocabulary
+      requires an eligible three-star ChEBI target
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/structure_corrections.py
+    role: Guarded manual name and structure support would require an explicit loader
+      extension if no eligible ChEBI target is established
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Apply corrected source identity, preserve history, resolve paths and join
+      other inventories only by the adjudicated full key
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/lotus_occurrence_exclusions.tsv
+    role: Preserve an adjudicated exclusion for the exact old-key occurrence without
+      silently transferring it to a different graph
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/lotus_exclusions.py
+    role: Exact-triple pinning and preservation of exclusion provenance during any
+      identity migration
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Preserved upstream BGC0000992:2 source assertion, not a hand-edited correction
+      destination
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Preserved old-key structure-organism-reference provenance
+  ownership_note: Use a source-pinned maintained correction and any necessary tested
+    loader extension; preserve raw inventories. The reserved decisions.tsv file is
+    not consumed. No correction is made by this review.
+  native_severity: 'blocker: wrong chemical identity under the native review workflow
+    and identity/structure checklist'
+  rule_id: .claude/skills/review-yaml-record/SKILL.md Workflow 6; review-checklist.md
+    Identity, Structure and Equivalence
+  normalization_reason: The cyclic label and acyclic graph denote different chemical
+    species, so this is a wrong-identity blocker rather than a wording defect.
+- finding_id: ID018-F2
+  issue_key: mibig-b1027ab43e-open-ring-amino-stereo-mismatch
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Stored amino stereocentre opposes the original compound 5 drawing
+  description: The owner assigns R to the amino-acid centre in its acyclic structure.
+    Original 2013 SI Table S8 explicitly depicts compound 5 with S geometry at that
+    centre. The published depiction corresponds to QYOOOQHFZSDPSQ-BDJYZKQXSA-N, while
+    the owner and its source database row encode QYOOOQHFZSDPSQ-WNZXBQPCSA-N. Matching
+    connectivity, formula and incomplete stereo flags do not make these structures
+    identical. This is separate from the incorrect cyclic name.
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+  field_paths:
+  - chemical_structure.smiles
+  - chemical_structure.standard_inchi
+  - chemical_structure.standard_inchi_key
+  - occurrences[0].evidence[0]
+  evidence_ids:
+  - ID018-CHEMISTRY
+  - ID018-PRIMARY-SI
+  - ID018-MIBIG
+  - S018-CORRECTION-COMPOSITION
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Maintained source-pinned identity corrections; current action vocabulary
+      requires an eligible three-star ChEBI target
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/structure_corrections.py
+    role: Guarded manual name and structure support would require an explicit loader
+      extension if no eligible ChEBI target is established
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Apply corrected source identity, preserve history, resolve paths and join
+      other inventories only by the adjudicated full key
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/lotus_occurrence_exclusions.tsv
+    role: Preserve an adjudicated exclusion for the exact old-key occurrence without
+      silently transferring it to a different graph
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/lotus_exclusions.py
+    role: Exact-triple pinning and preservation of exclusion provenance during any
+      identity migration
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Preserved upstream BGC0000992:2 source assertion, not a hand-edited correction
+      destination
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Preserved old-key structure-organism-reference provenance
+  ownership_note: Use a source-pinned maintained correction and any necessary tested
+    loader extension; preserve raw inventories. The reserved decisions.tsv file is
+    not consumed. No correction is made by this review.
+  native_severity: 'blocker: wrong chemical identity under the native review workflow
+    and identity/structure checklist'
+  rule_id: .claude/skills/review-yaml-record/SKILL.md Workflow 6; review-checklist.md
+    Identity, Structure and Equivalence
+  normalization_reason: The encoded R amino centre is opposite to the primary compound
+    5 drawing. This is a distinct stereoisomer identity blocker, retained separately
+    from the cyclic-name conflict.
+- finding_id: S018-F-CITATION
+  issue_key: mibig-bgc0000992-compound2-superseded-reference
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Producer and locus retain the superseded 2005 equisetin assignment
+  description: Both claims cite only PMID 15724180. The source entry also lists PMID
+    23614392, whose authors explicitly revise that product assignment to fusaridione
+    A in ATCC 74349. The importer preserves the obsolete first citation while omitting
+    the correction and strain context. This is a confirmed reference-routing defect;
+    the unavailable main body still prevents adjudicating exact open-ring compound
+    5 formation conditions. Do not turn the corrected family/locus association into
+    proof for the current wrong R stereoisomer.
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+  field_paths:
+  - producer_organisms[0].evidence
+  - producer_organisms[0].strain
+  - biosynthetic_gene_clusters[0].evidence
+  evidence_ids:
+  - S018-PUBMED
+  - S018-MIBIG
+  - S018-GENBANK
+  - S018-OWNERSHIP
+  - S018-SI-STRUCTURES
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: source-pinned producer and locus reference routing
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: ATCC 74349 context for the exact source assertion after identity review
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: guarded citation loader and composition constraints
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: first-entry-reference selection
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: generated assertion and qualification emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: preserved BGC0000992:2 raw provenance
+  rule_id: 'review-yaml-record Evidence Rules: preserve source conflicts and exact
+    compound/strain claim scope'
+  native_severity: 'major: emitted claim omits the primary reassignment and retains
+    a superseded product citation'
+  normalization_reason: One underlying citation/context defect; no separate finding
+    for an optional blank strain slot and no unsupported evidence-grade upgrade.
+actions:
+- action_id: ID018-A1
+  description: Reconcile BGC0000992:2 with primary SI compound 5 using an acyclic
+    name and its S amino configuration, leaving the methyl-bearing chain centre unspecified.
+    The corresponding inspected candidate is QYOOOQHFZSDPSQ-BDJYZKQXSA-N. Preserve
+    the distinct cyclic Fusaridione A owner. The maintained identity owner is curation/mibig_structure_corrections.tsv,
+    implemented by src/naturalproductmech/curate/structure_corrections.py. Its current
+    actions accept only eligible structured three-star ChEBI targets; the inspected
+    CHEBI:221940 and CHEBI:221932 are both two-star and ineligible, and an eligible
+    entry for the primary S open-ring candidate has not been established. If no eligible
+    target is verified, implement guarded manual primary-source name/structure support
+    in that table and loader, with full original row pin, explicit old/new structures,
+    attribution and source reference; do not use inactive decisions.tsv or hand-edit
+    raw inventories. Pin the unchanged original BGC0000992:2 row SHA 2dc764081ef9a1cf6c91b96652e7b074e9a3ecde96a85578ee8d0b6531a080a9.
+    Independently adjudicate origin and each occurrence/producer/locus claim before
+    retaining it for the new graph. Preserve the old LOTUS triple QYOOOQHFZSDPSQ-WNZXBQPCSA-N
+    / NCBITaxon:42747 / 10.1021/CB400159F and its row SHA 12653e80a1a0bcba2fef305bf058581b748d947c4f23092090632054f4d600ef
+    as provenance. Any exclusion belongs in the implemented LOTUS exclusion route,
+    but its old-key provenance must remain represented even if identity migration
+    removes the old record. If the source concept instead intends cyclic compound
+    4, explicitly reconcile it with compound_index 1 and the existing cyclic owner
+    rather than create a duplicate. Current citation, strain/isolate and xref guards
+    reject structure-corrected rows; merely refreshing their source pins is insufficient.
+    Implement compatible guarded composition or an explicitly tested staged migration
+    before combining these changes.
+  finding_ids:
+  - ID018-F1
+  - ID018-F2
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: Maintained source-pinned identity corrections; current action vocabulary
+      requires an eligible three-star ChEBI target
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/structure_corrections.py
+    role: Guarded manual name and structure support would require an explicit loader
+      extension if no eligible ChEBI target is established
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Apply corrected source identity, preserve history, resolve paths and join
+      other inventories only by the adjudicated full key
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/lotus_occurrence_exclusions.tsv
+    role: Preserve an adjudicated exclusion for the exact old-key occurrence without
+      silently transferring it to a different graph
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/lotus_exclusions.py
+    role: Exact-triple pinning and preservation of exclusion provenance during any
+      identity migration
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Preserved upstream BGC0000992:2 source assertion, not a hand-edited correction
+      destination
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Preserved old-key structure-organism-reference provenance
+  ownership_note: Minted identifier derives from MIBIG plus accession:compound_index,
+    so source-concept identity and history must be handled explicitly; the identifier
+    is not a structure hash. No source-level correction is applied in this review.
+  acceptance_checks:
+  - The accepted label, SMILES, Standard InChI, full InChIKey, formula and stereo_complete
+    value describe one species at the published stereochemical resolution. Primary
+    compound 5 maps to S at the amino centre and leaves the chain centre unassigned
+    unless inspected stronger evidence supersedes it.
+  - A manual primary-source correction, if needed, is explicitly implemented in the
+    maintained structure-correction table/loader. Tests reject stale source pins,
+    invalid chemistry, unreviewed target collisions and accidental use of ineligible
+    two-star ChEBI entries; they verify corrected label emission as well as the graph.
+  - The existing cyclic Fusaridione A owner is retained as a distinct chemical structure
+    unless an explicit source-concept migration is adjudicated. Minted identifiers
+    derive from source accession and compound index; identifier, PATHS.tsv and history
+    handling are tested rather than inferred from a changed structure hash.
+  - Raw MIBiG and LOTUS source bytes remain unchanged by the correction. Old-key occurrence
+    provenance is retained, and no occurrence, xref, activity or classification is
+    transferred to the new full key by shared connectivity or name.
+  - 'Meaningful integration tests cover structure correction combined with claim-reference,
+    strain/isolate, xref and LOTUS exclusion overlays: correct raw pins, deliberate
+    stale-pin failures, intended emitted claims, no unconsumed-overlay errors, preserved
+    old-key provenance and no accidental equivalence of R/S or cyclic/open-ring structures.'
+  - Primary main-text formation and handling context is inspected before declaring
+    the corrected product directly biosynthesized, native or solely a workup artifact.
+    Until then uncertainty remains explicit and SOURCE_ASSERTION/CLUSTER_UNSTATED
+    are not upgraded.
+  - After authorized implementation, target seed canary, strict validation, verify-reproduction,
+    verify-corpus and required QC pass; unchanged records remain byte-identical.
+  generator: scripts/seed_from_sources.py after the guarded identity and overlay-composition
+    implementation
+- action_id: S018-A-CITATION
+  description: Resolve the identity blockers and implement compatible correction composition
+    first. Use curation/mibig_claim_references.tsv and curation/mibig_producer_strains.tsv
+    with their full original-row pins to distinguish the 2013 reassignment (PMID:23614392)
+    from the versioned MIBiG native source assertion and preserve ATCC 74349 context
+    without upgrading grades. Retain the superseded PMID:15724180 in raw historical
+    provenance. The original BGC0000992:2 row SHA is 2dc764081ef9a1cf6c91b96652e7b074e9a3ecde96a85578ee8d0b6531a080a9.
+    correct_claim_reference and the seeder strain/isolate/xref guards reject structure_correction_note;
+    changing pins alone cannot authorize composition. Extend the guarded loaders/seeder
+    or perform an explicitly tested staged source migration that re-adjudicates each
+    claim for the new graph and preserves raw and old-key LOTUS provenance. Obtain
+    precise primary formation/handling context before asserting that compound 5 is
+    directly biosynthesized or upgrading CLUSTER_UNSTATED.
+  finding_ids:
+  - S018-F-CITATION
+  target_ids:
+  - naturalproductmech:mibig-b1027ab43e
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: source-pinned producer and locus reference routing
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: ATCC 74349 context for the exact source assertion after identity review
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: guarded citation loader and composition constraints
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: first-entry-reference selection
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: generated assertion and qualification emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: preserved BGC0000992:2 raw provenance
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Source-pinned strain qualification and explicit composition handling
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/structure_corrections.py
+    role: Guarded identity/claim compatibility implementation
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/lotus_exclusions.py
+    role: Preserve exact old-key exclusion provenance when claims are re-adjudicated
+  generator: scripts/seed_from_sources.py after compatible guarded identity and claim-level
+    correction inputs
+  acceptance_checks:
+  - The emitted locus claim records the 2013 reassignment and never uses the 2005
+    equisetin result as sole support for the revised exact product.
+  - ATCC 74349 is explicitly qualified as the deposited experimental culture without
+    inventing a strain taxon or species-wide experiment.
+  - Every retained occurrence/producer claim uses the adjudicated graph; ring opening
+    and R/S identity are not treated as aliases.
+  - Integration tests explicitly cover the combined structure, citation, strain/isolate,
+    xref and LOTUS exclusion corrections, including stale pins, guarded rejection
+    of unreviewed combinations and preservation of old-key provenance. Refreshing
+    expected row hashes alone must not bypass semantic guards.
+  - The formation/workup boundary is documented from inspected primary methods before
+    any evidence-grade or natural-origin promotion; remaining uncertainty stays explicit.
+  - Target seed canary, strict validation, reproduction verification, corpus verification
+    and required QC pass.
+limitations:
+- The complete 2013 main body and 2005 body were not obtained through bounded free
+  access. The original 2013 SI was retrieved from the official Figshare service and
+  fully text-read, with visual inspection of Table S8 and Figure S24.
+- The S amino configuration is an explicit interpretation of the published wedge drawing,
+  independently mapped to the molecular graph. No independent reconstruction of the
+  authors' absolute-configuration experiment or de novo NMR interpretation is claimed.
+- The inspected SI does not settle whether compound 5 was present in native culture,
+  generated during workup or characterized after separate conversion. Spontaneous
+  reverse-Dieckmann chemistry in the abstract is a material uncertainty, not proof
+  of an artifact-only or direct biosynthetic origin.
+- SOURCE_ASSERTION and CLUSTER_UNSTATED are not upgraded from general knockout/recombinant
+  descriptions. No equisetin result is transferred to a distinct fusaridione product
+  or stereoisomer.
+- No eligible three-star ChEBI entry for the primary S open-ring candidate has been
+  established in this review; this is not an exhaustive claim that none exists. The
+  currently inspected two-star entries are ineligible for the implemented correction
+  actions.
+- The configured full identifier-label gate accepts 499 warning-level taxon-label
+  mismatches, 35 explicit exceptions and 4,722 no-adapter pairs across the corpus;
+  its exit 0 is not independent verification of every identifier or of this record's
+  scientific claims.
+- The quality suite skips the optional sibling AntibioticMech checkout comparison
+  because the isolated clone has no sibling checkout, and skips three command-frontmatter
+  cases because their parameter sets are empty. Pinned-hash and network governance
+  checks still ran.
+- Shared native gates assess deterministic corpus consistency and configured invariants.
+  They do not establish biological production, stereochemical specificity, evidence
+  adequacy or literature-level claim support.
+notes:
+- No owner, inventory, curation table, native status, history or saved review was
+  edited. This temporary draft proposes future corrections only.
+- Original inspection hashes were asserted before adding the actually inspected structure,
+  strain and LOTUS loaders and cyclic comparator as context. The cyclic record is
+  not an additional reviewed target.
+- Baseline deterministic checks retain their actual commands and receipts from the
+  identical tracked source base. Target strict validation ran afresh. No new execution
+  of shared baseline gates is claimed.
+- The native checklist mentions decisions.tsv in its generic owner guidance, but CLAUDE.md
+  and the current profile state that it is reserved and unconsumed. Actions use implemented
+  maintained owners and explicitly identify the required loader extension.
+tags:
+- path-order-campaign
+- batch-002
+- fusaridione
+- identity-conflict
+- stereochemistry
+- citation-routing
+```
