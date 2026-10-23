@@ -104,7 +104,20 @@ not a claim that the organism makes it, and nothing here promotes one to the oth
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>AneA aculene D dioxygenase<br><span class="mono">UniProtKB:A0A1L9WUX8</span></td>
+  <td class="mono">RHEA:65112</td>
+  <td class="mono">CHEBI:155910 + CHEBI:16810 + CHEBI:15379 &rarr; CHEBI:155912 + CHEBI:30031 + CHEBI:16526 + CHEBI:15377</td>
+  <td class="mono">DOI:10.1002/anie.201910200</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: AneA introduces the 5,6-alkene into aculene D to form aculene C; RHEA:65112 grounds the full 2-oxoglutarate- and O2-dependent dioxygenase reaction.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
   <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for aculene D">
@@ -122,7 +135,7 @@ isolation report left it.</p>
     <rect x="232" y="24" width="186" height="98" rx="10" fill="var(--panel)" stroke="var(--rule)"/>
     <text x="244" y="48" font-size="11" font-weight="700" fill="var(--muted)">BIOSYNTHETIC LOCUS</text>
     <text x="244" y="70" font-size="12.5" font-weight="600" fill="var(--ink)">1 gene cluster</text>
-    <text x="244" y="92" font-size="11.5" fill="var(--muted)">0 curated pathway steps</text>
+    <text x="244" y="92" font-size="11.5" fill="var(--muted)">1 curated pathway step</text>
     <line x1="418" y1="73" x2="446" y2="73" stroke="var(--link)" stroke-width="1.8" marker-end="url(#np-arrow)"/>
 
     <rect x="450" y="20" width="190" height="106" rx="10" fill="var(--panel)" stroke="var(--link)" stroke-width="1.8"/>
@@ -135,10 +148,42 @@ isolation report left it.</p>
     <rect x="672" y="24" width="174" height="98" rx="10" fill="var(--panel)" stroke="var(--rule)"/>
     <text x="684" y="48" font-size="11" font-weight="700" fill="var(--muted)">TARGETS &amp; BIOACTIVITY</text>
     <text x="684" y="70" font-size="12.5" font-weight="600" fill="var(--ink)">0 molecular targets</text>
-    <text x="684" y="92" font-size="11.5" fill="var(--muted)">0 bioactivities &middot; 0 graphs</text>
+    <text x="684" y="92" font-size="11.5" fill="var(--muted)">0 bioactivities &middot; 1 graph</text>
   </svg>
 </div>
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">3 nodes, 2 edges</span></h2>
+<p class="sub">Aspergillus aculeatus ATCC 16872 BGC0002225 2-oxoglutarate-dependent dioxygenase AneA hydroxylates aculene D at C-11 to form aculene C.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>aculene D</td>
+  <td>is desaturated by</td>
+  <td>AneA aculene D dioxygenase</td>
+  <td>AneA desaturates aculene D between C5 and C6.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/anie.201910200<br>DOI:10.1039/D1NP00074H<br>https://mibig.secondarymetabolites.org/repository/BGC0002225.3/BGC0002225.gbk<br>https://www.uniprot.org/uniprotkb/A0A1L9WUX8<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/anie.201910200</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>characterized the biosynthetic pathway based on gene inactivation, feeding experiments, and heterologous reconstitution</dd><dt>notes</dt><dd>Lee et al. identified the Aspergillus aculeatus aculene biosynthetic gene cluster, inactivated aneA, and used Saccharomyces cerevisiae and Aspergillus oryzae heterologous reconstitution to connect AneA to 5,6-desaturation of aculene D into aculene C.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1039/D1NP00074H</dd><dt>evidence type</dt><dd>REVIEW</dd><dt>snippet</dt><dd>the unsaturation is catalyzed by AneA</dd><dt>notes</dt><dd>Wang et al. summarize Lee et al.&#39;s aneA deletion phenotype and place AneA after A. oryzae reconstitution of AneC/F/D/G to aculene D in the published aculene A-C pathway.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0002225.3/BGC0002225.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>MIBiG BGC0002225.3 maps the A. aculeatus ATCC 16872 KV878977 aculene region to CDS OJJ99912.1 at locus ASPACDRAFT_119783.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A1L9WUX8</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>The dioxygenase aneA converts aculene D into aculene C</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:A0A1L9WUX8 is the 298 aa A. aculeatus ATCC 16872 Dioxygenase aneA, cross-references KV878977 protein OJJ99912.1, and annotates RHEA:65112 from PMID:31618514.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>The Rhea Swiss-Prot mapping links UniProtKB:A0A1L9WUX8 to RHEA:65112, the aculene D 2-oxoglutarate-dependent desaturation reaction.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>AneA aculene D dioxygenase</td>
+  <td>forms</td>
+  <td>aculene C</td>
+  <td>The AneA dioxygenase reaction yields aculene C from aculene D.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1002/anie.201910200<br>DOI:10.1039/D1NP00074H<br>https://mibig.secondarymetabolites.org/repository/BGC0002225.3/BGC0002225.gbk<br>https://www.uniprot.org/uniprotkb/A0A1L9WUX8<br>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1002/anie.201910200</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>characterized the biosynthetic pathway based on gene inactivation, feeding experiments, and heterologous reconstitution</dd><dt>notes</dt><dd>Lee et al. identified the Aspergillus aculeatus aculene biosynthetic gene cluster, inactivated aneA, and used Saccharomyces cerevisiae and Aspergillus oryzae heterologous reconstitution to connect AneA to 5,6-desaturation of aculene D into aculene C.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>DOI:10.1039/D1NP00074H</dd><dt>evidence type</dt><dd>REVIEW</dd><dt>snippet</dt><dd>the unsaturation is catalyzed by AneA</dd><dt>notes</dt><dd>Wang et al. summarize Lee et al.&#39;s aneA deletion phenotype and place AneA after A. oryzae reconstitution of AneC/F/D/G to aculene D in the published aculene A-C pathway.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0002225.3/BGC0002225.gbk</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>MIBiG BGC0002225.3 maps the A. aculeatus ATCC 16872 KV878977 aculene region to CDS OJJ99912.1 at locus ASPACDRAFT_119783.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/A0A1L9WUX8</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>snippet</dt><dd>The dioxygenase aneA converts aculene D into aculene C</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>Reviewed UniProtKB:A0A1L9WUX8 is the 298 aa A. aculeatus ATCC 16872 Dioxygenase aneA, cross-references KV878977 protein OJJ99912.1, and annotates RHEA:65112 from PMID:31618514.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://ftp.expasy.org/databases/rhea/tsv/rhea2uniprot_sprot.tsv</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-30</dd><dt>notes</dt><dd>The Rhea Swiss-Prot mapping links UniProtKB:A0A1L9WUX8 to RHEA:65112, the aculene D 2-oxoglutarate-dependent desaturation reaction.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 

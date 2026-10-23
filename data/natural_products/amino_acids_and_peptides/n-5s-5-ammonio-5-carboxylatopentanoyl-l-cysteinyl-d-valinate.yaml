@@ -137,11 +137,55 @@ biosynthetic_pathway:
     retrieved_on: '2026-10-01'
     notes: RHEA:23196 is the ATP-dependent condensation of L-2-aminoadipate, L-cysteine,
       and L-valine to ACV, AMP, diphosphate, and H(+).
+- step_number: 2
+  enzyme_id: UniProtKB:B6HLU0
+  enzyme_label: Isopenicillin N synthase
+  reaction_id: RHEA:22428
+  notes: Penicillium rubens/Penicillium chrysogenum Wisconsin 54-1255 IpnA/PcbC oxidatively
+    cyclizes ACV to isopenicillin N. RHEA:22428 also consumes O2 and releases water;
+    its product participant is CHEBI:58399 isopenicillin N(1-), while this record
+    is grounded to neutral CHEBI:18165 with the same stereochemistry.
+  evidence:
+  - reference: DOI:10.1016/j.fgb.2007.03.008
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: genes encoding the three penicillin biosynthetic enzymes alone are sufficient
+      to restore full beta-lactam synthesis
+    notes: Van den Berg et al. functionally characterized the Penicillium chrysogenum
+      Wisconsin54-1255 EF601124 penicillin cluster and showed that pcbAB, pcbC, and
+      penDE were sufficient for full beta-lactam synthesis in a mutant lacking the
+      complete region.
+  - reference: DOI:10.1038/nbt0190-39
+    evidence_type: PRIMARY_EXPERIMENT
+    snippet: possessed delta-(L-alpha-amino-adipyl)-L-cysteinyl-D-valine synthetase
+      (ACVS), isopenicillin N synthetase (IPNS)
+    notes: Smith et al. heterologously expressed a Penicillium chrysogenum cosmid
+      carrying the penicillin biosynthetic gene cluster and detected IPNS enzyme activity
+      in transformed fungal hosts.
+  - reference: https://mibig.secondarymetabolites.org/repository/BGC0000405.5/
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: MIBiG entry version 5 links BGC0000405 to the Penicillium chrysogenum EF601124.1
+      NRPS cluster for ACV, isopenicillin N, and benzylpenicillin.
+  - reference: RHEA:22428
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: RHEA:22428 annotates EC:1.21.3.1 as N-[(5S)-5-amino-5-carboxypentanoyl]-L-cysteinyl-D-valine
+      plus O2 forming isopenicillin N and water.
+  - reference: https://www.uniprot.org/uniprotkb/B6HLU0
+    evidence_type: DATABASE_ASSERTION
+    retrieved_on: '2026-09-30'
+    notes: Reviewed UniProtKB:B6HLU0 is Penicillium rubens strain ATCC 28089 / DSM
+      1075 / NRRL 1951 / Wisconsin 54-1255 IpnA, an isopenicillin N synthase annotated
+      with RHEA:22428.
+  substrate: CHEBI:58572
+  product: CHEBI:18165
 causal_graphs:
-- graph_id: acv-pcbab-biosynthesis
+- graph_id: acv-pcbab-ipna-biosynthesis
   scope: BIOSYNTHESIS
-  description: Penicillium chrysogenum PcbAB-catalyzed nonribosomal condensation of
-    L-2-aminoadipate, L-cysteine, and L-valine to ACV in penicillin biosynthesis.
+  description: 'Penicillium rubens / Penicillium chrysogenum Wisconsin 54-1255 BGC0000405
+    formation and downstream cyclization of ACV: PcbAB-catalyzed condensation of L-2-aminoadipate,
+    L-cysteine, and L-valine to ACV and downstream IpnA-catalyzed oxidative cyclization
+    of ACV to isopenicillin N.'
   nodes:
   - node_id: l_2_aminoadipate
     label: L-2-aminoadipate
@@ -167,6 +211,16 @@ causal_graphs:
     label: N-[(5S)-5-ammonio-5-carboxylatopentanoyl]-L-cysteinyl-D-valinate
     node_type: COMPOUND
     identifier: CHEBI:58572
+    grounding_status: GROUNDED
+  - node_id: ipna
+    label: IpnA
+    node_type: ENZYME
+    identifier: UniProtKB:B6HLU0
+    grounding_status: GROUNDED
+  - node_id: isopenicillin_n
+    label: isopenicillin N
+    node_type: COMPOUND
+    identifier: CHEBI:18165
     grounding_status: GROUNDED
   edges:
   - subject: l_2_aminoadipate
@@ -341,6 +395,81 @@ causal_graphs:
       retrieved_on: '2026-10-01'
       notes: RHEA:23196 is the ATP-dependent condensation of L-2-aminoadipate, L-cysteine,
         and L-valine to ACV, AMP, diphosphate, and H(+).
+  - subject: acv
+    predicate: is oxidatively cyclized by
+    object: ipna
+    notes: RHEA:22428 represents the O2-dependent EC:1.21.3.1 reaction that consumes
+      ACV and releases water.
+    evidence:
+    - reference: DOI:10.1016/j.fgb.2007.03.008
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: genes encoding the three penicillin biosynthetic enzymes alone are
+        sufficient to restore full beta-lactam synthesis
+      notes: Van den Berg et al. functionally characterized the Penicillium chrysogenum
+        Wisconsin54-1255 EF601124 penicillin cluster and showed that pcbAB, pcbC,
+        and penDE were sufficient for full beta-lactam synthesis in a mutant lacking
+        the complete region.
+    - reference: DOI:10.1038/nbt0190-39
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: possessed delta-(L-alpha-amino-adipyl)-L-cysteinyl-D-valine synthetase
+        (ACVS), isopenicillin N synthetase (IPNS)
+      notes: Smith et al. heterologously expressed a Penicillium chrysogenum cosmid
+        carrying the penicillin biosynthetic gene cluster and detected IPNS enzyme
+        activity in transformed fungal hosts.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000405.5/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG entry version 5 links BGC0000405 to the Penicillium chrysogenum
+        EF601124.1 NRPS cluster for ACV, isopenicillin N, and benzylpenicillin.
+    - reference: RHEA:22428
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:22428 annotates EC:1.21.3.1 as N-[(5S)-5-amino-5-carboxypentanoyl]-L-cysteinyl-D-valine
+        plus O2 forming isopenicillin N and water.
+    - reference: https://www.uniprot.org/uniprotkb/B6HLU0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:B6HLU0 is Penicillium rubens strain ATCC 28089 / DSM
+        1075 / NRRL 1951 / Wisconsin 54-1255 IpnA, an isopenicillin N synthase annotated
+        with RHEA:22428.
+  - subject: ipna
+    predicate: forms
+    object: isopenicillin_n
+    notes: RHEA uses the isopenicillin N conjugate base CHEBI:58399 as the product
+      participant; this graph points at neutral CHEBI:18165, the exact structure recorded
+      for BGC0000405 compound 2.
+    evidence:
+    - reference: DOI:10.1016/j.fgb.2007.03.008
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: genes encoding the three penicillin biosynthetic enzymes alone are
+        sufficient to restore full beta-lactam synthesis
+      notes: Van den Berg et al. functionally characterized the Penicillium chrysogenum
+        Wisconsin54-1255 EF601124 penicillin cluster and showed that pcbAB, pcbC,
+        and penDE were sufficient for full beta-lactam synthesis in a mutant lacking
+        the complete region.
+    - reference: DOI:10.1038/nbt0190-39
+      evidence_type: PRIMARY_EXPERIMENT
+      snippet: possessed delta-(L-alpha-amino-adipyl)-L-cysteinyl-D-valine synthetase
+        (ACVS), isopenicillin N synthetase (IPNS)
+      notes: Smith et al. heterologously expressed a Penicillium chrysogenum cosmid
+        carrying the penicillin biosynthetic gene cluster and detected IPNS enzyme
+        activity in transformed fungal hosts.
+    - reference: https://mibig.secondarymetabolites.org/repository/BGC0000405.5/
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: MIBiG entry version 5 links BGC0000405 to the Penicillium chrysogenum
+        EF601124.1 NRPS cluster for ACV, isopenicillin N, and benzylpenicillin.
+    - reference: RHEA:22428
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: RHEA:22428 annotates EC:1.21.3.1 as N-[(5S)-5-amino-5-carboxypentanoyl]-L-cysteinyl-D-valine
+        plus O2 forming isopenicillin N and water.
+    - reference: https://www.uniprot.org/uniprotkb/B6HLU0
+      evidence_type: DATABASE_ASSERTION
+      retrieved_on: '2026-09-30'
+      notes: Reviewed UniProtKB:B6HLU0 is Penicillium rubens strain ATCC 28089 / DSM
+        1075 / NRRL 1951 / Wisconsin 54-1255 IpnA, an isopenicillin N synthase annotated
+        with RHEA:22428.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
   curator: seed_from_sources
@@ -356,4 +485,11 @@ curation_history:
   changes: Added a RHEA-grounded PcbAB biosynthetic pathway step and causal graph
     for condensing L-2-aminoadipate, L-cysteine, and L-valine to ACV; grounded the
     BGC0000405 pcbAB CDS to exact UniProtKB:A6N339.
+  llm_assisted: true
+- timestamp: '2026-10-23T08:00:00Z'
+  curator: antigravity
+  action: RECORD_CURATED
+  changes: Expanded Penicillium chrysogenum BGC0000405 BIOSYNTHESIS pathway and causal
+    graph on ACV (CHEBI:58572) to include downstream IpnA isopenicillin N synthase
+    (UniProtKB:B6HLU0, RHEA:22428) converting ACV to isopenicillin N (CHEBI:18165).
   llm_assisted: true
