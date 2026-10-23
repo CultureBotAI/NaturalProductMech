@@ -84,7 +84,20 @@ same claim.</p>
 Heterologous expression settles the first and leaves the second where the
 isolation report left it.</p>
 
-
+<h2>Biosynthesis <span class="tag causal">curated</span></h2>
+<p class="sub">Written by a curator with claim-level evidence on each step; not
+derived from a source. This is what the rest of the record exists to support.</p>
+<div class="scroll"><table>
+<tr><th>Step</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>
+<tr>
+  <td>1</td>
+  <td>RppA<br><span class="mono">UniProtKB:Q8KQM3</span></td>
+  <td class="mono"></td>
+  <td class="mono">ungrounded &rarr; CHEBI:18365</td>
+  <td class="mono">DOI:10.1046/j.1365-2958.2002.02975.x</td>
+</tr>
+</table></div>
+<p class="sub">Step 1: This curates the Saccharopolyspora erythraea BGC0000285/AY078067.1 RppA type III PKS as the knockout-supported scaffold enzyme in the red-brown pigment locus upstream of flaviolin and 3,3&#39;-diflaviolin. The record does not assert direct biochemical characterization of purified S. erythraea RppA or a single-enzyme reaction from RppA to 3,3&#39;-diflaviolin.</p>
 <h2>Mechanism &amp; Biosynthesis Overview</h2>
 <div class="mechanism-graph-wrap" role="region" aria-label="Causal biosynthesis and activity summary">
   <svg viewBox="0 0 860 150" width="100%" height="auto" role="img" aria-label="Biosynthetic and bioactivity flow for 3,3&#39;-diflaviolin">
@@ -102,7 +115,7 @@ isolation report left it.</p>
     <rect x="232" y="24" width="186" height="98" rx="10" fill="var(--panel)" stroke="var(--rule)"/>
     <text x="244" y="48" font-size="11" font-weight="700" fill="var(--muted)">BIOSYNTHETIC LOCUS</text>
     <text x="244" y="70" font-size="12.5" font-weight="600" fill="var(--ink)">1 gene cluster</text>
-    <text x="244" y="92" font-size="11.5" fill="var(--muted)">0 curated pathway steps</text>
+    <text x="244" y="92" font-size="11.5" fill="var(--muted)">1 curated pathway step</text>
     <line x1="418" y1="73" x2="446" y2="73" stroke="var(--link)" stroke-width="1.8" marker-end="url(#np-arrow)"/>
 
     <rect x="450" y="20" width="190" height="106" rx="10" fill="var(--panel)" stroke="var(--link)" stroke-width="1.8"/>
@@ -115,10 +128,79 @@ isolation report left it.</p>
     <rect x="672" y="24" width="174" height="98" rx="10" fill="var(--panel)" stroke="var(--rule)"/>
     <text x="684" y="48" font-size="11" font-weight="700" fill="var(--muted)">TARGETS &amp; BIOACTIVITY</text>
     <text x="684" y="70" font-size="12.5" font-weight="600" fill="var(--ink)">0 molecular targets</text>
-    <text x="684" y="92" font-size="11.5" fill="var(--muted)">0 bioactivities &middot; 0 graphs</text>
+    <text x="684" y="92" font-size="11.5" fill="var(--muted)">0 bioactivities &middot; 1 graph</text>
   </svg>
 </div>
 
+<h2>Causal graph &mdash; biosynthesis <span class="tag">7 nodes, 6 edges</span></h2>
+<p class="sub">Partial Saccharopolyspora erythraea RppA type III PKS graph for formation of 1,3,6,8-tetrahydroxynaphthalene and flaviolin upstream of 3,3&#39;-diflaviolin.</p><div class="scroll"><table>
+<tr><th>Subject</th><th>Predicate</th><th>Object</th><th>Notes</th><th>Evidence</th></tr>
+<tr>
+  <td>malonyl-CoA(5-)</td>
+  <td>is condensed by</td>
+  <td>RppA</td>
+  <td>The S. erythraea RppA edge is proposed from the cloned rppA sequence, knockout of the pigment locus, and homology to biochemically characterized bacterial THN synthases.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1046/j.1365-2958.2002.02975.x<br>https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html<br>https://www.uniprot.org/uniprotkb/Q8KQM3<br>https://www.ncbi.nlm.nih.gov/protein/AAL78053.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1046/j.1365-2958.2002.02975.x</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>disrupt the red-brown pigment-producing (rpp) locus in S. erythraea, generating a mutant that displayed an albino phenotype</dd><dt>notes</dt><dd>Cortes et al. used rpp-locus disruption and vector recapture in Saccharopolyspora erythraea to connect the cloned chalcone-synthase-like rppA locus to diffusible red-brown flaviolin-derived pigment biosynthesis; the RppA-to-THN product assignment is proposed from type III PKS homology rather than an assay of purified S. erythraea RppA.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>MIBiG BGC0000285.5 names flaviolin among products of the Saccharopolyspora erythraea AY078067.1 red-brown-pigment locus and annotates AAL78053.1/rppA as a knockout-supported Type III PKS scaffold-biosynthesis gene.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q8KQM3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>Unreviewed UniProtKB:Q8KQM3 is the 367 aa Saccharopolyspora erythraea RppA/rppA protein and cross-references EMBL AY078067 protein AAL78053.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAL78053.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept AAL78053.1 is the AY078067.1 rppA CDS from the Saccharopolyspora erythraea red-brown-pigment locus and is sequence-identical to UniProtKB:Q8KQM3.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>RppA</td>
+  <td>catalyzes proposed formation of</td>
+  <td>1,3,6,8-tetrahydroxynaphthalene</td>
+  <td>The edge stops at the proposed THN synthase product rather than assigning RppA to exact flaviolin, flaviolin rhamnoside, or 3,3&#39;-diflaviolin formation.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1046/j.1365-2958.2002.02975.x<br>https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html<br>https://www.uniprot.org/uniprotkb/Q8KQM3<br>https://www.ncbi.nlm.nih.gov/protein/AAL78053.1</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1046/j.1365-2958.2002.02975.x</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>disrupt the red-brown pigment-producing (rpp) locus in S. erythraea, generating a mutant that displayed an albino phenotype</dd><dt>notes</dt><dd>Cortes et al. used rpp-locus disruption and vector recapture in Saccharopolyspora erythraea to connect the cloned chalcone-synthase-like rppA locus to diffusible red-brown flaviolin-derived pigment biosynthesis; the RppA-to-THN product assignment is proposed from type III PKS homology rather than an assay of purified S. erythraea RppA.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>MIBiG BGC0000285.5 names flaviolin among products of the Saccharopolyspora erythraea AY078067.1 red-brown-pigment locus and annotates AAL78053.1/rppA as a knockout-supported Type III PKS scaffold-biosynthesis gene.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.uniprot.org/uniprotkb/Q8KQM3</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>Unreviewed UniProtKB:Q8KQM3 is the 367 aa Saccharopolyspora erythraea RppA/rppA protein and cross-references EMBL AY078067 protein AAL78053.1.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://www.ncbi.nlm.nih.gov/protein/AAL78053.1</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>NCBI GenPept AAL78053.1 is the AY078067.1 rppA CDS from the Saccharopolyspora erythraea red-brown-pigment locus and is sequence-identical to UniProtKB:Q8KQM3.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>1,3,6,8-tetrahydroxynaphthalene</td>
+  <td>spontaneously oxidizes through</td>
+  <td>THN oxidation</td>
+  <td>The non-enzymatic process captures THN oxidation without assigning an exact downstream tailoring enzyme in either cluster.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1046/j.1365-2958.2002.02975.x</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1046/j.1365-2958.2002.02975.x</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Flaviolin is a spontaneous oxidation product of 1,3,6,8-tetrahydroxynaphthalene</dd><dt>notes</dt><dd>Cortes et al. place flaviolin downstream of the THN synthase product; the BGC0000285 cluster also encodes RppB and ORF3 oxidases, but those tailoring enzymes are not assigned here to the exact flaviolin branch.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>THN oxidation</td>
+  <td>forms</td>
+  <td>flaviolin</td>
+  <td>The exact flaviolin intermediate is supported by the spontaneous-oxidation statement and by the BGC0000285 MIBiG product assertion.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1046/j.1365-2958.2002.02975.x<br>https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1046/j.1365-2958.2002.02975.x</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>Flaviolin is a spontaneous oxidation product of 1,3,6,8-tetrahydroxynaphthalene</dd><dt>notes</dt><dd>Cortes et al. place flaviolin downstream of the THN synthase product; the BGC0000285 cluster also encodes RppB and ORF3 oxidases, but those tailoring enzymes are not assigned here to the exact flaviolin branch.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>MIBiG BGC0000285.5 names flaviolin among products of the Saccharopolyspora erythraea AY078067.1 red-brown-pigment locus and annotates AAL78053.1/rppA as a knockout-supported Type III PKS scaffold-biosynthesis gene.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>flaviolin</td>
+  <td>dimerizes through</td>
+  <td>flaviolin dimerization</td>
+  <td>Cortes et al. detected 3,3&#39;-diflaviolin alongside flaviolin as a pigment product of the Saccharopolyspora erythraea rpp locus; the exact dimerization tailoring enzyme in BGC0000285 is left unexpanded.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1046/j.1365-2958.2002.02975.x<br>https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1046/j.1365-2958.2002.02975.x</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>The products detected were flaviolin (red pigment), a dimer of flaviolin (3,3&#39;-diflaviolin), and the 2-O- and 5-O-rhamnosides of flaviolin</dd><dt>notes</dt><dd>Cortes et al. detected 3,3&#39;-diflaviolin alongside flaviolin as a pigment product of the Saccharopolyspora erythraea rpp locus; the exact dimerization tailoring enzyme in BGC0000285 is left unexpanded.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>MIBiG BGC0000285.5 names 3,3&#39;-diflaviolin and flaviolin among products of the Saccharopolyspora erythraea AY078067.1 red-brown-pigment locus.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+<tr>
+  <td>flaviolin dimerization</td>
+  <td>forms</td>
+  <td>3,3&#39;-diflaviolin</td>
+  <td>Cortes et al. detected 3,3&#39;-diflaviolin alongside flaviolin as a pigment product of the Saccharopolyspora erythraea rpp locus; the exact dimerization tailoring enzyme in BGC0000285 is left unexpanded.</td>
+  <td><details class="graph-evidence"><summary class="mono">DOI:10.1046/j.1365-2958.2002.02975.x<br>https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html</summary><ul><li><dl><dt>reference</dt><dd>DOI:10.1046/j.1365-2958.2002.02975.x</dd><dt>evidence type</dt><dd>PRIMARY_EXPERIMENT</dd><dt>snippet</dt><dd>The products detected were flaviolin (red pigment), a dimer of flaviolin (3,3&#39;-diflaviolin), and the 2-O- and 5-O-rhamnosides of flaviolin</dd><dt>notes</dt><dd>Cortes et al. detected 3,3&#39;-diflaviolin alongside flaviolin as a pigment product of the Saccharopolyspora erythraea rpp locus; the exact dimerization tailoring enzyme in BGC0000285 is left unexpanded.</dd></dl>
+</li><li><dl><dt>reference</dt><dd>https://mibig.secondarymetabolites.org/repository/BGC0000285.5/index.html</dd><dt>evidence type</dt><dd>DATABASE_ASSERTION</dd><dt>retrieved on</dt><dd>2026-09-27</dd><dt>notes</dt><dd>MIBiG BGC0000285.5 names 3,3&#39;-diflaviolin and flaviolin among products of the Saccharopolyspora erythraea AY078067.1 red-brown-pigment locus.</dd></dl>
+</li></ul>
+</details></td>
+</tr>
+</table></div>
+<p class="sub">Every edge carries its own citation; an uncited edge is refused
+by the corpus tests.</p>
 
 
 
