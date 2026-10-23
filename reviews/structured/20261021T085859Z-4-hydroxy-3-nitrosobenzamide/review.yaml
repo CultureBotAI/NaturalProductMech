@@ -1,0 +1,916 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T085859Z-4-hydroxy-3-nitrosobenzamide
+title: '4-hydroxy-3-nitrosobenzamide: exact free ligand and demonstrated locus methods'
+started_at: '2026-10-21T08:51:57.265065Z'
+finished_at: '2026-10-21T08:58:59.330176Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Exact chemical identity, native free-ligand detection, current cross-references
+  and source provenance are supported. One major finding identifies omitted heterologous-expression
+  and enzyme methods in the locus grade. Native producer scope remains distinct; the
+  original 1995 paper and complete 2010 main body were unavailable.
+source:
+  git_revision: 10ed28fcdadb3d955c30732ff05b5d0e4adbee3b
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/4-hydroxy-3-nitrosobenzamide.yaml
+    sha256: b50cb770a2057f37aa59ae9f03f3fc66e207830d709eec285adae17755c4b98b
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 21, batch 003, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated pending-PR targets.
+    At selection, 74 of 3116 current records had campaign coverage and 3042 remained.
+    The population search included ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+targets:
+- target_id: naturalproductmech:mibig-5b76aaeeb1
+  path: data/natural_products/alkaloids/4-hydroxy-3-nitrosobenzamide.yaml
+  label: 4-hydroxy-3-nitrosobenzamide
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+  command: just validate-strict data/natural_products/alkaloids/4-hydroxy-3-nitrosobenzamide.yaml
+    --out /private/tmp/npm-review-work/021/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T08:52:00.468042Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 record files agree with 3,116 PATHS.tsv rows and their pinned
+    filing pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-corpus
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016808+00:00; finished 2026-10-21T06:37:52.997020+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/verify-corpus.log. Reused
+    for batch 003 after verifying exact HEAD/base/tree equality and all tracked worktree
+    bytes against the original baseline. This command was not rerun for batch 003;
+    original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 records are byte-identical to the seeder output from committed
+    inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-reproduction
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016703+00:00; finished 2026-10-21T06:38:35.570687+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/verify-reproduction.log.
+    Reused for batch 003 after verifying exact HEAD/base/tree equality and all tracked
+    worktree bytes against the original baseline. This command was not rerun for batch
+    003; original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The documented exhaustive queue command produced 8,928 diagnostic rows
+    in 12 queues; deterministic queue output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just review-queue
+    --tsv /private/tmp/npm-review-queue-initial.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016598+00:00; finished 2026-10-21T06:37:11.018366+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/review-queue.log. Reused
+    for batch 003 after verifying exact HEAD/base/tree equality and all tracked worktree
+    bytes against the original baseline. This command was not rerun for batch 003;
+    original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'Full configured gate passed using existing CHEBI and GO caches plus the
+    committed taxonomy adapter: 13,434 canonical matches, 646 synonym matches, 35
+    documented exceptions, 499 warning-only mismatches and 4,722 pairs skipped because
+    their prefixes have no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:56.498212+00:00; finished 2026-10-21T06:38:54.776253+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/validate-products.log.
+    Reused for batch 003 after verifying exact HEAD/base/tree equality and all tracked
+    worktree bytes against the original baseline. This command was not rerun for batch
+    003; original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+- check_id: shared-qc
+  name: Full repository quality gate after environment repair
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed after installing the pinned
+    linter, allowing the read-only governance fetch, and restoring the required provenance
+    tag. Tests: 999 passed, 4 skipped, 2 warnings. Closed-schema validation: 3,116
+    records and zero errors. Documentation, provenance, source queue, governed artifacts,
+    generated pages, reproduction, filing integrity and corpus reporting all passed.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:46:02.058886+00:00; finished 2026-10-21T06:54:53.950582+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/qc-attempt4.log. Reused
+    for batch 003 after verifying exact HEAD/base/tree equality and all tracked worktree
+    bytes against the original baseline. This command was not rerun for batch 003;
+    original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+- check_id: R021-C-ORIGIN
+  name: Exact free-compound origin
+  status: passed
+  required: true
+  summary: The inspected primary SI explicitly reports native supernatant detection,
+    with the free ligand distinguished from its iron chelate.
+  target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+  evidence_ids:
+  - R021-SI-IDENTITY
+- check_id: R021-C-METHODS
+  name: Exact-compound locus grading
+  status: failed
+  required: true
+  summary: Supported heterologous expression and enzyme methods are missing from the
+    source-derived locus grade.
+  target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+  evidence_ids:
+  - R021-RAW
+  - R021-FIG2
+  - R021-SI-METHODS
+  - R021-GRADING
+- check_id: R021-C-MAIN
+  name: Complete 2010 main-article text
+  status: unavailable
+  required: true
+  summary: Official SI and original Figure 2 were inspected, but the complete main
+    body was unavailable through the bounded free routes. The absence of a native
+    knockout in the inspected material is not a claim about unread text.
+  target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+  evidence_ids:
+  - R021-SI-METHODS
+  - R021-FIG2
+- check_id: ID021-C-EXACT
+  name: Exact chemical cross-references and current ChEBI eligibility
+  status: passed
+  required: true
+  summary: PubChem 443631, NPAtlas NPA016795 and CHEBI 29487 match the full owner
+    structure; the only exact ChEBI search result is two-star, consistent with retaining
+    the minted identifier.
+  target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+  evidence_ids:
+  - ID021-PUBCHEM
+  - ID021-NPATLAS
+  - ID021-CHEBI
+  - ID021-CHEBI-MOL
+  - ID021-CHEBI-SEARCH
+  - ID021-COMPARISON
+  command: .venv/bin/python /private/tmp/npm-review-work/021/check-identifiers.py
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: ID021-C-PROVENANCE
+  name: Taxon, locus and publication identifier consistency
+  status: passed
+  required: true
+  summary: NCBI taxonomy, GenBank AB530136.1, MIBiGv3 and PMID 20676084/DOI 10.1038/nchembio.418
+    identify the same species and nitrosobenzamide pathway context. The 1995 DOI is
+    bibliographically correct. No producer strain is invented.
+  target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+  evidence_ids:
+  - ID021-TAXON
+  - ID021-GENBANK
+  - ID021-PUBMED
+  - ID021-CROSSREF1995
+  - ID021-MIBIG
+- check_id: ID021-C-1995-CONTENT
+  name: Citation-specific1995 primary isolation content
+  status: unavailable
+  required: true
+  summary: Publisher XML supplies bibliographic coredata only. Exact original isolation
+    methods and free-ligand versus chelate handling remain unread for this citation;
+    the separately available2010 primary supports native free-ligand occurrence.
+  target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+  evidence_ids:
+  - ID021-1995-ACCESS
+  - ID021-CROSSREF1995
+- check_id: ID021-C-IMODULON
+  name: Exact-producer iModulon catalogue applicability
+  status: not_applicable
+  required: false
+  summary: None of the 28 inspected catalogue datasets is S. murayamaensis; no other
+    species is used to support regulation or biosynthesis in this owner.
+  target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+  evidence_ids:
+  - ID021-IMODULON
+evidence:
+- evidence_id: R021-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/4-hydroxy-3-nitrosobenzamide.yaml
+  locator: Complete owner and resolved mechanism, including source concept and all
+    three history events
+  accessed_at: '2026-10-21T08:55:09.812305Z'
+  support: supports
+  summary: One neutral achiral nitroso benzamide is asserted, with one LOTUS occurrence,
+    one MIBiG producer/locus and two chemical xrefs. The resolved owner has no pathway,
+    causal graph, graph reference, assay, target, discussion, clinical claim or sibling
+    link.
+  snapshot_sha256: b50cb770a2057f37aa59ae9f03f3fc66e207830d709eec285adae17755c4b98b
+- evidence_id: R021-CHEMISTRY
+  kind: validation
+  reference: /private/tmp/npm-review-work/021/chemistry.json
+  locator: Independent RDKit 2026.03.5 reconstruction of the complete owner SMILES
+  accessed_at: '2026-10-21T08:51:58.549422Z'
+  support: supports
+  summary: SMILES regenerates the full stored InChI and GUWUNALKOAAXJC-UHFFFAOYSA-N.
+    Formula C7H6N2O3, formal charge zero, exact mass 166.037842052 and no stereocentres
+    support stereo_complete:true. The graph is the free nitroso amide, not the nitroso
+    acid or iron complex.
+  snapshot_sha256: 6c602974185c4c2bd3d9ccbff34f0432da7f208a1ad66ae873337db063cfcdd7
+- evidence_id: R021-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Complete BGC0000885:1 version-3 raw row and corresponding emitted producer/locus
+  accessed_at: '2026-10-21T08:55:09.812305Z'
+  support: supports
+  summary: The raw row stores the exact key, AB530136.1, Streptomyces murayamaensis
+    taxon 224537, PMID:20676084, no locus methods and empty bounds. Both low grades
+    faithfully reproduce that row. Its canonical full-row SHA256 is 4bb96f395e1f6c366a49a9270be43acba4e58a216f2991b1d9238a0fc6b68ddb.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: R021-SI-IDENTITY
+  kind: primary_source
+  reference: https://static-content.springer.com/esm/art%3A10.1038%2Fnchembio.418/MediaObjects/41589_2010_BFnchembio418_MOESM147_ESM.pdf
+  locator: DOI:10.1038/nchembio.418 official SI, complete 26 pages; identity-specific
+    pp2–3,15–16 and Table S1 footnote b p23; relevant figure pixels inspected
+  accessed_at: '2026-10-21T08:34:41.870699Z'
+  support: supports
+  summary: The original drawing identifies the free amide as compound 7 and distinguishes
+    acid 8 and ferrous chelate 15. Methods compare reaction products with authentic
+    material. Table S1 explicitly reports free amide in native S. murayamaensis supernatant
+    and distinguishes mycelial iron chelate. This directly supports the exact free-compound
+    biological origin.
+  snapshot_sha256: 772aa40c3a2fafda857ed1dbef275499fdd84463d4363c279e731f093b5eb318
+- evidence_id: R021-SI-METHODS
+  kind: primary_source
+  reference: https://static-content.springer.com/esm/art%3A10.1038%2Fnchembio.418/MediaObjects/41589_2010_BFnchembio418_MOESM147_ESM.pdf
+  locator: 'Same complete SI, pp3–15: cloning, recombinant host, protein preparation
+    and assays; Figures S6/S7 and Tables S1–S3'
+  accessed_at: '2026-10-21T08:34:41.870699Z'
+  support: supports
+  summary: Native DNA yielded nspIHEFN constructs expressed in S. lividans TK21, with
+    retention and mass matched to standards. NspF expressed in E. coli BL21(DE3),
+    purified and tag-removed, converts aminoamide to the exact nitrosoamide in vitro.
+    NspN assays instead establish upstream acid-to-aminoamide conversion. H39N/H222N
+    are recombinant enzyme variants, not native knockouts.
+  snapshot_sha256: 772aa40c3a2fafda857ed1dbef275499fdd84463d4363c279e731f093b5eb318
+- evidence_id: R021-FIG2
+  kind: primary_source
+  reference: https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnchembio.418/MediaObjects/41589_2010_Article_BFnchembio418_Fig2_HTML.jpg
+  locator: Original full-resolution Figure 2a–c, visually inspected together with
+    SI host/protocol and structure key
+  accessed_at: '2026-10-21T08:41:41.056736Z'
+  support: supports
+  summary: The nspIHEFN recombinant trace contains exact product 7; the empty-vector
+    and precursor-only nspIH traces distinguish this result. Purified rNspF with aminoamide
+    gives 7, while acid and aminophenol substrates give other products. The figure
+    supports exact-product heterologous expression and enzymatic assays.
+  snapshot_sha256: 3d8423d4d1aa5467cc8c5ed31892d81db2e0b254793e0629ba19905a32f68ae9
+- evidence_id: R021-GRADING
+  kind: record_content
+  reference: conf/producer_evidence.tsv
+  locator: Complete method table and separate organism-versus-locus grading rules
+  accessed_at: '2026-10-21T08:55:09.812305Z'
+  support: supports
+  summary: Heterologous expression and Enzymatic assays establish CLUSTER_DEMONSTRATED
+    for the source locus but do not establish native BGC_CHARACTERIZED. The native
+    producer can retain SOURCE_ASSERTION while its occurrence is supported by the
+    primary SI.
+  snapshot_sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+- evidence_id: R021-GUARD
+  kind: record_content
+  reference: src/naturalproductmech/curate/claim_references.py
+  locator: Complete loader and application; reconciled with scripts/seed_from_sources.py
+    method REPLACE behavior
+  accessed_at: '2026-10-21T08:55:09.812305Z'
+  support: context_only
+  summary: The claim-reference loader enforces a full raw-row digest. Method REPLACE
+    ignores expected_* pins, unlike WITHDRAW. Pairing this unchanged-structure method
+    correction with a source-pinned citation decision can enforce exact-row freshness;
+    a tested method-loader extension is an alternative.
+  snapshot_sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+- evidence_id: R021-CLASSIFICATION
+  kind: record_content
+  reference: data/raw/npclassifier.tsv
+  locator: Complete exact-key row and emitted model version
+  accessed_at: '2026-10-21T08:55:09.812305Z'
+  support: context_only
+  summary: ALKALOIDS filing, Peptide alkaloids superclass and Simple amide alkaloids
+    class match the pinned model. They remain computational predictions; the evidence
+    for biological origin is separate. OTHER is the MIBiG assertion.
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: ID021-PUBCHEM
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/443631/property/InChI,InChIKey,MolecularFormula,IsomericSMILES/JSON
+  locator: /private/tmp/npm-review-work/021/identifiers/pubchem.json
+  accessed_at: '2026-10-21T08:53:25.077027Z'
+  support: supports
+  summary: CID 443631 stores the exact neutral C7H6N2O3 free ligand, full key GUWUNALKOAAXJC-UHFFFAOYSA-N.
+    Its SMILES independently regenerates the owner key.
+  snapshot_sha256: 28023186b439733889958853f2e39e0916310f4e01143ce9b48ee4cacb628b5b
+- evidence_id: ID021-NPATLAS
+  kind: database
+  reference: https://www.npatlas.org/api/v1/compound/NPA016795?include=classifications
+  locator: /private/tmp/npm-review-work/021/identifiers/npatlas.json
+  accessed_at: '2026-10-21T08:53:24.946014Z'
+  support: supports
+  summary: NPA016795 resolves literally and stores the exact free-ligand structure.
+    Its current structure cites the 1995 Cone et al. paper and lists S. murayamaensis
+    as origin. This corroborates database identity/provenance, not an independent
+    reading of the original isolation paper.
+  snapshot_sha256: 37a9872ff1b5efc558558578bd7644f60707d5d90c043dbde62064e3806d3206
+- evidence_id: ID021-CHEBI
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/29487/
+  locator: /private/tmp/npm-review-work/021/identifiers/chebi-29487.json
+  accessed_at: '2026-10-21T08:53:54.878035Z'
+  support: supports
+  summary: CHEBI:29487 matches the full structure and formula but has two stars and
+    no definition. Its manual KEGG cross-reference is C12114. It is not an eligible
+    three-star replacement under this repository policy.
+  snapshot_sha256: 2c04865e473505b469ffd69db8a6ab7d224dc37130df6faabe216e54821fcd30
+- evidence_id: ID021-CHEBI-MOL
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/29487/
+  locator: /private/tmp/npm-review-work/021/identifiers/chebi-29487.mol
+  accessed_at: '2026-10-21T08:53:55.478225Z'
+  support: supports
+  summary: The official molfile independently regenerates the exact owner full key
+    and neutral C7H6N2O3 formula.
+  snapshot_sha256: d6490f5ce2918665c933d19964d106a05b4343f9ed68320fbdd2e3eb35a30f4d
+- evidence_id: ID021-CHEBI-SEARCH
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=GUWUNALKOAAXJC-UHFFFAOYSA-N&size=100
+  locator: /private/tmp/npm-review-work/021/identifiers/chebi-search.json
+  accessed_at: '2026-10-21T08:53:25.421424Z'
+  support: supports
+  summary: 'The official current complete-InChIKey query returns exactly one result
+    and one page: CHEBI:29487, two-star. No three-star exact match occurs in this
+    bounded query.'
+  snapshot_sha256: 0981835551c9f94bb5e6d8a83120f42a13c495390317e218ed5b397d7f856042
+  search_scope: Official ChEBI exact full InChIKey query GUWUNALKOAAXJC-UHFFFAOYSA-N,
+    size 100; one complete result page inspected on 2026-10-21.
+- evidence_id: ID021-TAXON
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=224537&retmode=xml
+  locator: /private/tmp/npm-review-work/021/identifiers/taxonomy.xml
+  accessed_at: '2026-10-21T08:53:26.132114Z'
+  support: supports
+  summary: NCBITaxon:224537 is the current species-level Streptomyces murayamaensis
+    entry in Streptomycetaceae/Actinomycetota. The deposited locus uses the same taxon.
+    Species identity does not resolve an unspecified culture accession.
+  snapshot_sha256: f03db69f5e17d6f31e47b705f7ec35946304196ceb6b168e4cfc483dac592ac6
+- evidence_id: ID021-GENBANK
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=AB530136.1&rettype=gbwithparts&retmode=text
+  locator: Header, source feature and all 14 CDS annotations; nucleotide sequence
+    not independently retranslated
+  accessed_at: '2026-10-21T08:53:25.147003Z'
+  support: supports
+  summary: AB530136.1 is a 16,706 bp S. murayamaensis nitrosobenzamide gene cluster
+    deposit with taxon 224537 and references PMID 20676084 and PMID 21081952. Its
+    source feature supplies neither strain nor isolate. Native NspI/H/E/F/N proteins
+    are BAJ08171.1/BAJ08172.1/BAJ08173.1/BAJ08174.1/BAJ08175.1, not the homolog accessions
+    shown in primary SI Table S1. The deposited span is not automatically the curated
+    BGC boundary.
+  snapshot_sha256: 17d4e71655845f64a00c6f3d174f5c3500a03e03a5e547646a92c7ac554a00ae
+- evidence_id: ID021-PUBMED
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=20676084&retmode=xml
+  locator: /private/tmp/npm-review-work/021/identifiers/pubmed.xml
+  accessed_at: '2026-10-21T08:53:25.020246Z'
+  support: supports
+  summary: PMID 20676084 is the 2010 Noguchi et al. C-nitrosation paper, DOI 10.1038/nchembio.418,
+    Nature Chemical Biology 6:641–643. Its abstract names exact nitrosobenzamide biosynthesis
+    in S. murayamaensis. Full-method support is evaluated from the separately inspected
+    SI/figures, not inferred from this abstract.
+  snapshot_sha256: ebba96c3f41e5c1f2c1d48664e4540bbb7bcf31bb789ba919670315c6b880936
+- evidence_id: ID021-CROSSREF1995
+  kind: authority
+  reference: https://api.crossref.org/works/10.1016%2F0040-4020(95)00071-F
+  locator: /private/tmp/npm-review-work/021/identifiers/crossref1995.json
+  accessed_at: '2026-10-21T08:53:25.283611Z'
+  support: supports
+  summary: DOI 10.1016/0040-4020(95)00071-F identifies Cone, Melville, Carney, Gore
+    and Gould, Tetrahedron 51(11):3095–3102(1995), on the free nitrosobenzamide and
+    its ferrous chelate. Lowercase-f DOI normalization is the same identifier. Metadata
+    confirms citation identity, not the exact isolation experiment.
+  snapshot_sha256: fb1ec92da972c9c885f50e3e3bbb6cf7ba0f27ae1a646ca2aa7677a89c554ba5
+- evidence_id: ID021-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000885.3/annotations.json
+  locator: /private/tmp/npm-review-work/021/identifiers/mibig-v3.json
+  accessed_at: '2026-10-21T08:53:25.937006Z'
+  support: supports
+  summary: The official version 3 record repeats the exact ligand, NPAtlas/PubChem
+    cross-references, taxon 224537 and AB530136.1; evidence arrays are empty and quality
+    is questionable. Its converted bounds0..0 are not experimental coordinates. The
+    relevant legacy citation is PMID 20676084; an additional malformed-looking legacy
+    token pubmed:21 is not adopted as scientific evidence.
+  snapshot_sha256: 8c5dc9671c5360eb7036255891323e983dca4cac3f4a30253fb8e2a24adab648
+- evidence_id: ID021-1995-ACCESS
+  kind: authority
+  reference: https://api.elsevier.com/content/article/PII:004040209500071F?httpAccept=text/xml
+  locator: Reused actual publisher response /private/tmp/npm-review-work/shared-next/root/nitrosobenzamide1995-elsevier.xml
+  accessed_at: '2026-10-21T08:34:43.845360Z'
+  support: unknown
+  summary: The publisher response is HTTP200 but contains only core bibliographic
+    metadata and no abstract or article body. It marks openaccess false. The original
+    1995 isolation experiment was not available for independent content review through
+    this retrieved route; this does not refute the occurrence citation.
+  snapshot_sha256: f6aa34195cb70d80e808493e9ba7be76fe5dced03cbc96f2bf937cf4aebffe4b
+- evidence_id: ID021-2010-MAIN-ACCESS
+  kind: search
+  reference: https://www.nature.com/articles/nchembio.418
+  locator: Reused actual publisher response /private/tmp/npm-review-work/shared-next/root/nsp2010.html
+  accessed_at: '2026-10-21T08:30:43.792233Z'
+  support: unknown
+  summary: The retrieved HTTP200 HTML is a client-challenge page, not the 2010 main
+    article. Official SI and original figure images are separate successful artifacts.
+    Unread main-body experiments cannot be asserted absent.
+  snapshot_sha256: 32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea
+  search_scope: Bounded direct publisher main-article request; saved response is a
+    client challenge. Separate successful official SI and Figure 2 retrievals are
+    preserved.
+- evidence_id: ID021-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/021/identifiers/comparison.json
+  accessed_at: '2026-10-21T08:55:40.762514Z'
+  support: supports
+  summary: Independent RDKit comparison agrees for six structure encodings. Source-concept
+    identifier and exact full parsed raw-row digest agree with the owner and local
+    source packet. The current grading functions map heterologous/enzyme methods to
+    CLUSTER_DEMONSTRATED while retaining native SOURCE_ASSERTION.
+  snapshot_sha256: 6f4df648e55f4e2b95cd05775f8f27faf62bbe7fbe93664b9328166166e10471
+- evidence_id: ID021-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/021/identifiers/identity-search.txt
+  accessed_at: '2026-10-21T08:55:41.946100Z'
+  support: supports
+  summary: The scoped ignored-inclusive search finds one current owner for this full
+    key, one MIBiG source row, one LOTUS row and the classifier/bioassay inventory
+    entries. It finds no existing matching maintained curation decision in the searched
+    curation directory.
+  snapshot_sha256: 040703f09cfe61ebb2df69a0fc24b9d9cfefcfbf6d78a62512313b232009d30f
+  search_scope: rg -n -i --no-ignore --hidden across data/natural_products, data/raw,
+    curation, conf, src and scripts; complete matching output retained.
+- evidence_id: ID021-GUARDS
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: load_mibig_locus_evidence_overrides/apply_mibig_locus_evidence_override
+    and raw-row load sequence; complete claim_references.py and structure_corrections.py;
+    conf/producer_evidence.tsv and grading.py; snapshot SHA256 refers only to scripts/seed_from_sources.py,
+    with other input files individually pinned in source.inputs
+  accessed_at: '2026-10-21T08:57:45.795861Z'
+  support: supports
+  summary: Method REPLACE requires nonempty known methods and unique override ID but
+    does not enforce expected_* context. WITHDRAW has explicit context guards and
+    is inapplicable to adding absent methods. A paired claim-reference decision checks
+    the complete original row digest before method application; an explicit tested
+    loader extension is an alternative. Structure replacement requires a distinct
+    structured three-star ChEBI target and is not warranted here.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: ID021-IMODULON
+  kind: database
+  reference: https://imodulondb.org/
+  locator: /private/tmp/npm-review-work/010/imodulon-datasets.txt; all 28 dataset
+    rows inspected; original CLI receipt in /private/tmp/npm-review-work/010/imodulon-context-receipts.json
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: The existing complete 28-dataset catalogue has S. albidoflavus and S. coelicolor
+    datasets but no S. murayamaensis dataset. Those species and E. coli datasets cannot
+    be substituted for the exact native producer. This is a bounded catalogue applicability
+    result, not a universal absence of expression evidence.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+assessments:
+- assessment_id: R021-STRUCTURE
+  area: identity
+  topic: Free nitrosoamide versus adjacent products
+  outcome: supported
+  summary: The stored structure agrees with the primary compound-7 drawing and standard-based
+    product assignment. It is neutral and achiral. Acid 8, aminoamide precursor 2
+    and iron complex 15 are distinct substances. External identifier exactness is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+  evidence_ids:
+  - R021-CHEMISTRY
+  - R021-SI-IDENTITY
+  - R021-FIG2
+- assessment_id: R021-ORIGIN
+  area: evidence
+  topic: Native origin and recombinant experimental scope
+  outcome: supported
+  summary: The SI explicitly detects the exact free compound in native S. murayamaensis
+    supernatant. Recombinant TK21 production and purified NspF activity strengthen
+    the locus link without turning TK21 into a native source or demonstrating a native
+    knockout. The supplied native strain lacks a collection accession in the inspected
+    SI.
+  target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+  evidence_ids:
+  - R021-SI-IDENTITY
+  - R021-SI-METHODS
+  - R021-FIG2
+  - R021-GRADING
+- assessment_id: R021-BGC
+  area: evidence
+  topic: Compound-specific locus evidence completeness
+  outcome: concern
+  summary: The existing citation contains exact-product heterologous and enzyme experiments
+    omitted from the source-derived CLUSTER_UNSTATED grade. Capture both supported
+    methods and retain the native SOURCE_ASSERTION grade. No native knockout is established
+    by the inspected source.
+  target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+  evidence_ids:
+  - R021-RAW
+  - R021-SI-METHODS
+  - R021-FIG2
+  - R021-GRADING
+- assessment_id: R021-CLASS
+  area: provenance
+  topic: Computed filing and source assertions
+  outcome: supported
+  summary: The filing prediction, source class, exact-key source concept and three
+    seed events are coherent. SEEDED remains unchanged. No model prediction is treated
+    as experimental pathway proof.
+  target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+  evidence_ids:
+  - R021-OWNER
+  - R021-RAW
+  - R021-CLASSIFICATION
+- assessment_id: R021-OPTIONAL
+  area: completeness
+  topic: Mechanism and bioactivity boundaries
+  outcome: not_applicable
+  summary: No assay, molecular target, pathway or graph is asserted in the complete
+    owner. Optional expansion is not required for this review. Enzyme kinetics are
+    biosynthesis evidence, not antimicrobial potency; NspE and other deduced functions
+    should retain their inferential status if later represented.
+  target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+  evidence_ids:
+  - R021-OWNER
+  - R021-SI-METHODS
+- assessment_id: ID021-A-IDENTITY
+  area: identity
+  topic: Current chemical identities and grounding
+  outcome: supported
+  summary: The exact neutral achiral free ligand matches both stored cross-references
+    and the official ChEBI molfile. The live exact ChEBI match remains two-star. The
+    minted ID correctly hashes MIBIG plus BGC0000885:1, rather than chemical structure
+    or mutable label. No cross-reference or chemical replacement is indicated.
+  target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+  evidence_ids:
+  - ID021-PUBCHEM
+  - ID021-NPATLAS
+  - ID021-CHEBI
+  - ID021-COMPARISON
+- assessment_id: ID021-A-PROVENANCE
+  area: provenance
+  topic: Taxonomic and genomic source context
+  outcome: supported
+  summary: Species, deposited locus and2010 citation are coherent. GenBank names the
+    same pathway and lists native Nsp proteins. Its source has no strain/isolate qualifier,
+    so source-species support should not be expanded to a collection strain. Genomic
+    annotations alone do not establish a native knockout or every encoded protein
+    function.
+  target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+  evidence_ids:
+  - ID021-TAXON
+  - ID021-GENBANK
+  - ID021-PUBMED
+  - ID021-MIBIG
+- assessment_id: ID021-A-1995
+  area: evidence
+  topic: Exact content behind the 1995 LOTUS occurrence citation
+  outcome: unknown
+  summary: The cited paper exists with the correct compound/organism topic, but available
+    publisher metadata does not reveal its exact methods or distinguish all isolation/chelation
+    procedures. This is an access limit, not evidence against the occurrence. The
+    2010 SI native-supernatant observation is a separate primary support path.
+  target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+  evidence_ids:
+  - ID021-CROSSREF1995
+  - ID021-1995-ACCESS
+  - ID021-NPATLAS
+- assessment_id: ID021-A-GUARDS
+  area: ownership
+  topic: Effective source row and correction guards
+  outcome: supported
+  summary: The exact BGC0000885:1 full-row digest is 4bb96f395e1f6c366a49a9270be43acba4e58a216f2991b1d9238a0fc6b68ddb.
+    The paired claim-reference route in the root action enforces that original-row
+    pin before the method overlay. Expected_* fields alone do not guard REPLACE. Heterologous/enzyme
+    grades remain locus-specific.
+  target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+  evidence_ids:
+  - ID021-COMPARISON
+  - ID021-GUARDS
+- assessment_id: ID021-A-IMODULON
+  area: scope
+  topic: Regulatory dataset applicability
+  outcome: not_applicable
+  summary: The existing 28-entry catalogue has no exact producer-species dataset.
+    No S. albidoflavus, S. coelicolor or recombinant E. coli regulatory dataset is
+    transferred to this native S. murayamaensis assertion.
+  target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+  evidence_ids:
+  - ID021-IMODULON
+findings:
+- finding_id: R021-MISSING-METHODS
+  issue_key: bgc0000885-compound1-missing-demonstrated-methods
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The cited study demonstrates the exact product but the locus remains unstated
+  description: BGC0000885:1 has an empty method list despite original nspIHEFN recombinant-host
+    production and purified NspF formation of the exact free nitrosoamide. These experiments
+    support a demonstrated locus link. They do not justify native BGC_CHARACTERIZED
+    or treating enzyme-site variants as genomic knockouts.
+  target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+  field_paths:
+  - biosynthetic_gene_clusters[0].locus_evidence_methods
+  - biosynthetic_gene_clusters[0].link_evidence_basis
+  evidence_ids:
+  - R021-RAW
+  - R021-SI-METHODS
+  - R021-FIG2
+  - R021-GRADING
+  - R021-GUARD
+  rule_id: 'review-yaml-record: exact-compound evidence completeness; conf/producer_evidence.tsv'
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Compound-specific method correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Enforced complete raw-row pin and primary citation
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Method grading and deterministic generation
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Full-row drift enforcement
+actions:
+- action_id: R021-ADD-METHODS
+  description: Add Heterologous expression and Enzymatic assays for BGC0000885:1 through
+    the maintained method overlay. Pair REPLACE with a claim-reference decision enforcing
+    raw-row SHA256 4bb96f395e1f6c366a49a9270be43acba4e58a216f2991b1d9238a0fc6b68ddb
+    and retain PMID:20676084 or its verified DOI for producer, locus and source. The
+    citation rationale must distinguish native supernatant detection, TK21 recombinant
+    production and purified tag-removed NspF. Do not rely on expected_* columns alone;
+    alternatively extend and test the method loader to enforce the full context.
+  finding_ids:
+  - R021-MISSING-METHODS
+  target_ids:
+  - naturalproductmech:mibig-5b76aaeeb1
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Compound-specific method correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Enforced complete raw-row pin and primary citation
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Method grading and deterministic generation
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Full-row drift enforcement
+  generator: scripts/seed_from_sources.py guarded MIBiG overlays
+  acceptance_checks:
+  - Pin version 3, taxon NCBITaxon:224537, AB530136.1, empty original bounds/methods
+    and exact GUWUNALKOAAXJC-UHFFFAOYSA-N through an enforced full raw-row digest;
+    simulated source drift must fail closed.
+  - Reseeding yields CLUSTER_DEMONSTRATED for this compound while the native producer
+    remains SOURCE_ASSERTION; no native knockout method is introduced.
+  - Keep the free compound distinct from nitroso acid and iron complex, preserve source
+    labels and occurrence provenance, and leave unrelated compounds unchanged.
+  - Run focused overlay tests, strict target validation, corpus/reproduction verification
+    and required repository QC.
+limitations:
+- Original source preparations were retrieved before this record intake and reused
+  with their actual access timestamps. The entire 2010 SI and original Figure 2 were
+  inspected; the complete main body was unavailable.
+- The source contains an H39N/H222N versus glutamine wording inconsistency and a product-number
+  mismatch between Figure S1 and Table S3. These do not obscure the chemically named
+  exact product but should not be copied as resolved sequence or numbering facts.
+- No raw spectrum reanalysis, historical expression-construct sequencing, native knockout,
+  purified NspE turnover or complete catalytic-intermediate mechanism is established
+  here.
+- The original 1995 paper was not available beyond publisher/Crossref metadata; no
+  unsupported claim finding follows from this access limit.
+- The 2010 main-body HTTP response is a client challenge. Primary SI and original
+  Figure 2 are available and independently spot-checked for this QA; the complete
+  main body remains unread.
+- GenBank metadata/features and deposited protein accession mappings were inspected,
+  but nucleotide-to-protein translation, experimental constructs and specific producer
+  strain were not independently sequenced or inferred.
+- The iModulon result reuses the actual 07:21:15Z catalogue execution and is limited
+  to those 28 datasets; it is not a new catalogue fetch or a universal claim of no
+  expression data.
+- The configured full identifier-label gate accepts 499 warning-level taxon-label
+  mismatches, 35 explicit exceptions and 4,722 no-adapter pairs across the corpus;
+  its exit 0 is not independent verification of every identifier or of this record's
+  scientific claims.
+- The quality suite skips the optional sibling AntibioticMech checkout comparison
+  because the isolated clone has no sibling checkout, and skips three command-frontmatter
+  cases because their parameter sets are empty. Pinned-hash and network governance
+  checks still ran.
+- Shared native gates assess deterministic corpus consistency and configured invariants.
+  They do not establish biological production, stereochemical specificity, evidence
+  adequacy or literature-level claim support.
+- Baseline reuse concerns the identical committed inputs and original executed checks;
+  it does not claim a fresh network/governance or ontology-cache refresh.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+- Primary source preparations were retrieved earlier in this campaign and reused with
+  their original access times. Independent specialist QA checked the original figure,
+  native detection note and correction guards.
+tags:
+- path-order-campaign
+- batch-003
+- nitrosobenzamide
+- locus-evidence
