@@ -9,6 +9,8 @@
 | `validate-id-labels-post-remediation` | `.venv/bin/python scripts/validate_id_label_correspondence.py --report /tmp/stage5_c2_id_label.tsv` | `0` | `OK_CANONICAL: 13465`, `OK_SYNONYM: 655`, `OK_EXCEPTION: 35`, `MISMATCH: 499`, `ID_NOT_FOUND: 0` (`0` flagged pairs on cohort records). |
 | `unit-tests-post-remediation` | `.venv/bin/python -B -m pytest -o cache_dir=/tmp/pytest_cache -q tests/test_producer_strains.py tests/test_claim_references.py tests/test_lotus_exclusions.py tests/test_structure_corrections.py tests/test_seed_skeleton.py` | `0` | `330 passed in 27.07s`. |
 | `check-docs-post-remediation` | `.venv/bin/python scripts/check_docs.py` | `0` | `README statistics block is current`. |
+| `check-reproduction-post-remediation` | `.venv/bin/python scripts/check_reproduction.py --summary` | `0` | `corpus reproduction OK: 3116 records match data/raw/`. |
+| `render-pages-post-remediation` | `.venv/bin/python scripts/render_pages.py --check` | `0` | `pages/ is in step with the corpus` (`3116` record pages across `8` pathways). |
 | `record-review-check-post-remediation` | `.venv/bin/python scripts/record_review.py check --require-reviews --base main` | `0` | `99` valid structured review bundles verified; append-only immutability preserved. |
 
 ## Fresh Post-Remediation Structured Review
