@@ -1,0 +1,931 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T102716Z-8-oxo-isopentenyladenine
+title: '8-oxo-isopentenyladenine: exact native knockout evidence'
+started_at: '2026-10-21T10:22:01.630538Z'
+finished_at: '2026-10-21T10:27:16.523953Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The current structure, taxonomic ranks and species occurrence are coherent.
+  The cited native FCK1 knockout supports exact compound 4 production, but the record
+  copies an empty method list and omits that experimental evidence. Only Knock-out
+  studies is justified from the inspected exact-compound experiments. The primary
+  Results formula error is resolved by the drawing and mass; unavailable detailed
+  spectra and mutant records keep the review partial. No scientific data was edited.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/8-oxo-isopentenyladenine.yaml
+    sha256: c4248dcc3910533e1deeafc7391eec89990245aaa16efdc15e6b82891db70a8a
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 36, batch 004, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated pending-PR targets.
+    At selection, 84 of 3116 current records had campaign coverage and 3032 remained.
+    The population search included ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-8194ce5f85
+targets:
+- target_id: naturalproductmech:mibig-8194ce5f85
+  path: data/natural_products/alkaloids/8-oxo-isopentenyladenine.yaml
+  label: 8-oxo-isopentenyladenine
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-8194ce5f85
+  command: just validate-strict data/natural_products/alkaloids/8-oxo-isopentenyladenine.yaml
+    --out /private/tmp/npm-review-work/036/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T10:22:04.202871Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Fresh read-only execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. No earlier
+    baseline result is reused.'
+  target_ids:
+  - naturalproductmech:mibig-8194ce5f85
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Fresh read-only execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    No earlier baseline result is reused.'
+  target_ids:
+  - naturalproductmech:mibig-8194ce5f85
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Fresh read-only execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. No earlier
+    baseline result is reused.'
+  target_ids:
+  - naturalproductmech:mibig-8194ce5f85
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Fresh read-only execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. No
+    earlier baseline result is reused.'
+  target_ids:
+  - naturalproductmech:mibig-8194ce5f85
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed against the new main revision.
+    Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). All configured
+    lint, governance, documentation, provenance, source-queue, schema, rendering,
+    reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Fresh read-only execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. No earlier baseline
+    result is reused.'
+  target_ids:
+  - naturalproductmech:mibig-8194ce5f85
+- check_id: R036-C-CHEM
+  name: Exact identity and structure-source equivalence
+  status: passed
+  required: true
+  summary: Independent reconstruction agrees on full identity, neutral formula and
+    lack of stereogenic centres; the NPAtlas link resolves.
+  target_ids:
+  - naturalproductmech:mibig-8194ce5f85
+  evidence_ids:
+  - R036-CHEM
+  - R036-NPATLAS
+- check_id: R036-C-IMODULON
+  name: Applicable producer expression dataset
+  status: not_applicable
+  required: false
+  summary: The retained full catalogue contains no applicable Fusarium dataset.
+  target_ids:
+  - naturalproductmech:mibig-8194ce5f85
+  evidence_ids:
+  - R036-IMODULON
+- check_id: S036-C-GENETICS
+  name: Applicable native experimental method
+  status: failed
+  required: true
+  summary: The exact native FCK1 knockout evidence is absent from the record method
+    list and both resulting grades.
+  target_ids:
+  - naturalproductmech:mibig-8194ce5f85
+  evidence_ids:
+  - S036-GENETICS
+  - S036-RAW
+  - S036-LOCUS
+  - S036-METHODS
+- check_id: S036-C-SOURCE-DETAIL
+  name: Detailed primary structural and mutant verification records
+  status: unavailable
+  required: true
+  summary: The original supplementary structural/PCR files remain inaccessible, and
+    the main paper calls compound 4 HRMS/NMR data not shown. Figure and Methods support
+    the reported identity and native phenotype, but detailed spectra and original
+    mutant gels were not independently inspected.
+  target_ids:
+  - naturalproductmech:mibig-8194ce5f85
+  evidence_ids:
+  - S036-ACCESS
+  - S036-IDENTITY
+  - S036-GENETICS
+evidence:
+- evidence_id: R036-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/8-oxo-isopentenyladenine.yaml
+  locator: Complete owner, resolved view, source concept and both seed-history events
+  accessed_at: '2026-10-21T10:25:23.198189Z'
+  support: supports
+  summary: The owner records neutral achiral 8-oxo-isopentenyladenine, one NPAtlas
+    xref, one species occurrence and the strain-specific CS3096 source producer/locus.
+    It has no pathway, causal graph, referenced component, protein example, molecular
+    target, bioactivity or clinical claim.
+  snapshot_sha256: c4248dcc3910533e1deeafc7391eec89990245aaa16efdc15e6b82891db70a8a
+- evidence_id: R036-CHEM
+  kind: validation
+  reference: /private/tmp/npm-review-work/036/identity/chemical-comparison.json
+  locator: Independent owner/current MIBiG/NPAtlas/official ChEBI MOL/InChI reconstruction
+  accessed_at: '2026-10-21T10:24:40.725935Z'
+  support: supports
+  summary: All five representations reproduce full Standard InChIKey OVXPEDNPPMVUNR-UHFFFAOYSA-N,
+    neutral formula C10H13N5O, and no tetrahedral stereocentre. The owner, MIBiG,
+    NPAtlas and official MOL agree in fixed-H representation. Reconstruction from
+    mobile-H Standard InChI selects another tautomer; it is not evidence of a different
+    compound or a measured solution tautomer.
+  snapshot_sha256: 892fcf169e98c441c7e254607daf2cc46f50dd77bda54a1a2e0409fe0f25b69e
+- evidence_id: R036-NPATLAS
+  kind: database
+  reference: https://www.npatlas.org/api/v1/compound/NPA032867
+  locator: Complete response and exact relevant entry fields read
+  accessed_at: '2026-10-21T10:23:35.114094Z'
+  support: supports
+  summary: NPA032867 resolves to the exact full key OVXPEDNPPMVUNR-UHFFFAOYSA-N, with
+    a single current non-reassigned structure. Its origin is F. pseudograminearum
+    CS3096 and DOI10.1111/mpp.12593/PMID28802024. This database metadata is not an
+    independent isolation experiment.
+  snapshot_sha256: 6de0bf245e38cee8c51e22650176c5db5ef76ac645f4e2f84a6d2ffe0bc4aa86
+- evidence_id: R036-CHEBI
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/220313/
+  locator: Complete response and exact relevant entry fields read
+  accessed_at: '2026-10-21T10:24:14.609825Z'
+  support: supports
+  summary: CHEBI:220313 is released but two-star, with the exact full Standard key
+    and source origin linked to strain taxon1028729 and PMID28802024. It is not eligible
+    as a three-star grounding. Its displayed thiopurine ontology parent is chemically
+    inconsistent with this sulfur-free oxopurine and is not imported or used as evidence
+    for the owner classification.
+  snapshot_sha256: eb5fa20ebb2546241d97e7421fd0c0de2306019b6510f62daa7103d7f9e16d33
+- evidence_id: R036-MOL
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/220313/
+  locator: Complete response and exact relevant entry fields read
+  accessed_at: '2026-10-21T10:24:14.609465Z'
+  support: supports
+  summary: The complete official connection table yields the exact neutral owner chemical
+    graph and fixed-H representation. This graph, rather than a problematic aromatic
+    search string, underlies the independent comparison.
+  snapshot_sha256: 17e0cd28ed696a3c872094e4c7c50ada33be9bcd34f4a01b5d9390ef85ed0d19
+- evidence_id: R036-CHEBI-SEARCH
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=OVXPEDNPPMVUNR-UHFFFAOYSA-N&size=100
+  locator: Complete response and exact relevant entry fields read
+  accessed_at: '2026-10-21T10:23:35.336715Z'
+  support: supports
+  summary: The complete current exact-key search returns one result, two-star CHEBI:220313.
+    The complete committed eligible ChEBI projection has no matching row. The minted
+    identifier remains justified within these bounded sources.
+  snapshot_sha256: 2f71b77ea2a3b4e599afcf180075a6c454d8dfebb3dec8f8184572a243fc691e
+- evidence_id: R036-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0002163.3/annotations.json
+  locator: Complete response and exact relevant entry fields read
+  accessed_at: '2026-10-21T10:23:34.910893Z'
+  support: supports
+  summary: Active version3 retains exact compound 4, named 8-oxo-isopentenyladenine,
+    with the owner structure and NPAtlas xref. The CM003200.1 interval7244202..7253668,
+    CS3096 taxon1028729 and empty locus-method list match the inventory. Source quality
+    is questionable and completeness unknown. Entry-level bibliography includes PMID28802024
+    and PMID31279974; the owner preserves the selected first citation. Exact experimental
+    applicability is assessed separately.
+  snapshot_sha256: a64fffcab4688087861e3f5228093bb20ec68e8f8e646c0c5f04a5e76c022e9d
+- evidence_id: R036-TAXON
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1028729,101028&retmode=xml
+  locator: Both complete top-level Taxon entries, ranks, parents, other names and
+    fungal lineage
+  accessed_at: '2026-10-21T10:23:34.911500Z'
+  support: supports
+  summary: The combined authoritative response identifies NCBI1028729 as strain F.
+    pseudograminearum CS3096, with parent NCBI101028 at species rank. The producer
+    and LOTUS occurrence are deliberately at different ranks. Neither taxonomic inclusion
+    nor a species occurrence generalizes the experiment to every strain.
+  snapshot_sha256: ca96c7bc8730aae41e37758e5245cdc73217ed3cc56a30c455fd8cb1f6f9ca24
+- evidence_id: R036-WIKIDATA
+  kind: database
+  reference: https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q428585%7CQ113958813%7CQ113958814&props=labels%7Cclaims&languages=en&format=json
+  locator: Q428585 taxon claim and exact Q113958814 structure properties only; other
+    entity not used for this target
+  accessed_at: '2026-10-21T10:23:35.113481Z'
+  support: supports
+  summary: The combined response gives Q428585 the NCBI101028 identifier despite an
+    English disease-oriented display label. Structure entity Q113958814 carries the
+    exact full key and InChI. The owner uses the correct NCBI species label; the external
+    display label is not evidence of occurrence or a different taxon.
+  snapshot_sha256: c3ad044301bc18beb788999a599ced518a63a843fd89f2e4da44021be892e838
+- evidence_id: R036-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Complete exact-key BGC0002163:4 row and corresponding LOTUS/NPClassifier/eligible
+    ChEBI projections
+  accessed_at: '2026-10-21T10:25:23.198189Z'
+  support: supports
+  summary: The record faithfully reproduces version3 source identity, strain taxon1028729,
+    locus interval, empty methods and PMID28802024. The separate LOTUS species tuple
+    points to DOI10.1111/MPP.12593 and Q113958814; it does not constitute a second
+    independent study.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: R036-CLASS
+  kind: record_content
+  reference: data/raw/npclassifier.tsv
+  locator: Complete exact-key row and version attribution
+  accessed_at: '2026-10-21T10:25:23.198189Z'
+  support: context_only
+  summary: Alkaloids/Pseudoalkaloids/Purine alkaloids is explicitly the pinned 2026-09-07
+    model output. It is separate from MIBiG OTHER and is not asserted as an experimentally
+    verified biosynthetic reaction.
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: R036-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/036/identity/local-search.txt
+  locator: All exact-target matches inspected; long historical receipt lines limited
+    to matching contexts
+  accessed_at: '2026-10-21T10:24:15.904331Z'
+  support: supports
+  summary: The ignored-inclusive search finds the owner, expected raw/PATHS rows and
+    historical campaign inventories/queue entries. No exact-target maintained correction
+    or validated structured review is present among the searched matches; historical
+    queue entries are not review coverage.
+  snapshot_sha256: f708f2b6786ee6c360d0fe73687528044b9e2c1798a916e5fc91f3aef691ae67
+  search_scope: rg --no-ignore --hidden -n -i naturalproductmech:mibig-8194ce5f85|OVXPEDNPPMVUNR-UHFFFAOYSA-N|8-oxo-isopentenyladenine
+    curation data/raw data/natural_products reviews src scripts
+- evidence_id: R036-IMODULON
+  kind: database
+  reference: https://imodulondb.org/
+  locator: Complete retained 28-dataset catalogue
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: No F. pseudograminearum dataset occurs in the retained catalogue. No unrelated
+    expression dataset is substituted for the reported native genetic intervention.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+- evidence_id: S036-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/8-oxo-isopentenyladenine.yaml
+  locator: Complete owner and resolved content, including all occurrence, producer,
+    locus, classification and history fields
+  accessed_at: '2026-10-21T10:25:51.005707Z'
+  support: supports
+  summary: The owner represents neutral 8-oxo-isopentenyladenine, full key OVXPEDNPPMVUNR-UHFFFAOYSA-N,
+    with one species-level LOTUS occurrence and a CS3096 MIBiG producer/locus. The
+    source methods are empty and grades are SOURCE_ASSERTION/CLUSTER_UNSTATED. No
+    activity, molecular target, biosynthetic step or causal graph is asserted.
+  snapshot_sha256: c4248dcc3910533e1deeafc7391eec89990245aaa16efdc15e6b82891db70a8a
+- evidence_id: S036-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Complete BGC0002163:4 version 3 source row
+  accessed_at: '2026-10-21T10:25:51.005707Z'
+  support: supports
+  summary: The exact source row reproduces the owner and cites PMID:28802024. It has
+    no locus methods. Complete canonical row SHA256 7e9892beedf51c2b3f27d290e22d1b2984b1c0e340f30cd6c88c59da44d450e9.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: S036-MAIN
+  kind: primary_source
+  reference: https://backend.orbit.dtu.dk/ws/files/134658190/S_rensen_et_al_2017_Molecular_Plant_Pathology.pdf
+  locator: DOI:10.1111/mpp.12593; PMID:28802024; complete accepted-manuscript Summary,
+    Introduction, Results, Discussion and Experimental Procedures; printed pages 3–24
+    and original figure captions
+  accessed_at: '2026-10-21T09:30:29.735049Z'
+  support: supports
+  summary: The primary authors identify exact compound 4 in native Fusarium pseudograminearum
+    CS3096, distinguish its genetics from compounds 1–3, and describe extraction and
+    NMR. FCK1 deletion abolishes compound 4; FCK2 deletion retains it. Whole-cluster
+    heterologous production is reported for 1, 2, 3 and a possible 8-oxo-trans-zeatin,
+    without an exact compound 4 claim. Purified FCK1 acts upstream to produce iPRMP
+    and iP. These scopes support native genetic evidence for 4 without transferring
+    congener enzyme or receptor experiments.
+  snapshot_sha256: f263379ae38b126151f491e209bc5e06b3718cec9f5793d14ca42f256019b2e3
+- evidence_id: S036-IDENTITY
+  kind: primary_source
+  reference: https://backend.orbit.dtu.dk/ws/files/134658190/S_rensen_et_al_2017_Molecular_Plant_Pathology.pdf
+  locator: Original Figure 1A pixels, physical PDF page 37 / printed page 36; Results
+    page 7 and structural-elucidation Methods page 21
+  accessed_at: '2026-10-21T09:30:29.735049Z'
+  support: supports
+  summary: 'The drawing of compound 4 is an N6-(3-methylbut-2-en-1-yl) substituent
+    on 8-oxo-adenine and agrees with the owner constitution. The side-chain alkene
+    has equivalent terminal methyl substituents and no E/Z assignment; there are no
+    tetrahedral stereocentres. The Results formula C10H7N5O2 duplicates the formula
+    of compound 3 and is internally inconsistent: the depicted graph and Figure 3
+    ion are consistent with C10H13N5O. The Methods explicitly name 4 and report 1H
+    NMR, HSQC and COSY, but exclude 4 from HMBC; the underlying spectra were not available
+    for independent reanalysis.'
+  snapshot_sha256: f263379ae38b126151f491e209bc5e06b3718cec9f5793d14ca42f256019b2e3
+- evidence_id: S036-OCCURRENCE
+  kind: primary_source
+  reference: https://backend.orbit.dtu.dk/ws/files/134658190/S_rensen_et_al_2017_Molecular_Plant_Pathology.pdf
+  locator: Results page 7; Fungal strains page 17; Production/analyses and Isolation/structural
+    elucidation pages 20–21; Figure 1 caption
+  accessed_at: '2026-10-21T09:30:29.735049Z'
+  support: supports
+  summary: Native CS3096 was grown on yeast extract sucrose agar for two weeks at
+    25 °C in darkness; compounds including 4 were isolated by semi-preparative HPLC
+    from 50 dishes and analysed by NMR. This supports the broader F. pseudograminearum
+    species occurrence as well as the named native producer. The separate wheat experiment
+    used RBG5266; the Figure 1 caption explicitly states that 4 was not searched for
+    in planta. No wheat occurrence or infection concentration is transferred to 4.
+  snapshot_sha256: f263379ae38b126151f491e209bc5e06b3718cec9f5793d14ca42f256019b2e3
+- evidence_id: S036-GENETICS
+  kind: primary_source
+  reference: https://backend.orbit.dtu.dk/ws/files/134658190/S_rensen_et_al_2017_Molecular_Plant_Pathology.pdf
+  locator: Results pages 8–11; Targeted gene deletion page 20; original Figure 3A/B
+    pixels, physical PDF page 39 / printed page 38; Figure S1 caption only
+  accessed_at: '2026-10-21T09:30:29.735049Z'
+  support: supports
+  summary: FCK1 is FPSE_06372. The authors report four independent native deletion
+    mutants; Figure 3B shows representative 96T1096 ΔFCK1 with no compound 4 peak,
+    compared with CS3096 wild type. The 96T1053 ΔFCK2 trace retains iP and 4. Targeted
+    replacement was performed in CS3096 and screened by triplex PCR; original supplementary
+    gels are unread. Figure 3 reports m/z 220.119 ± 0.002 for 4 and zeatin isomers,
+    which are chromatographically distinguished; the shared mass alone is not an identity
+    proof. The diagram leaves the oxygenation route to 4 unresolved, allowing iP oxygenation
+    or an oxidized precursor route.
+  snapshot_sha256: f263379ae38b126151f491e209bc5e06b3718cec9f5793d14ca42f256019b2e3
+- evidence_id: S036-ENZYME
+  kind: primary_source
+  reference: https://backend.orbit.dtu.dk/ws/files/134658190/S_rensen_et_al_2017_Molecular_Plant_Pathology.pdf
+  locator: Biochemical characterisation Methods page 18; Results pages 9–10; original
+    Figure 4 pixels, physical PDF page 40 / printed page 39
+  accessed_at: '2026-10-21T09:30:29.735049Z'
+  support: supports
+  summary: N-terminal His-tagged FCK1 expressed in E. coli converts AMP plus DMAPP
+    to iPRMP and iP; Figure 4 compares two-hour and eighteen-hour enzyme/control traces.
+    The assayed product is iP, not 8-oxo-isopentenyladenine. This does not warrant
+    an exact compound 4 Enzymatic assays method or a resolved final oxidation step.
+  snapshot_sha256: f263379ae38b126151f491e209bc5e06b3718cec9f5793d14ca42f256019b2e3
+- evidence_id: S036-ACTIVITY
+  kind: primary_source
+  reference: https://backend.orbit.dtu.dk/ws/files/134658190/S_rensen_et_al_2017_Molecular_Plant_Pathology.pdf
+  locator: Original Figure 5C pixels, physical PDF page 41 / printed page 40; receptor
+    Methods page 24; Results pages 12–15
+  accessed_at: '2026-10-21T09:30:29.735049Z'
+  support: supports
+  summary: The AHK3 functional β-galactosidase assay in E. coli KMI001/pSTV28 tests
+    fusatin 1, 8-oxo-fusatin 2 and fusatinic acid 3, with BAP and DMSO controls. Compound
+    4 is not a plotted test compound. Leaf senescence and transcriptomic responses
+    concern fusatinic acid 3. Neither receptor activation, binding affinity, host
+    transcriptional effects nor virulence is established for 4 by these experiments.
+  snapshot_sha256: f263379ae38b126151f491e209bc5e06b3718cec9f5793d14ca42f256019b2e3
+- evidence_id: S036-LOCUS
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=CM003200.1&seq_start=7244202&seq_stop=7253668&rettype=gbwithparts&retmode=text
+  locator: Header, source feature, complete annotated gene/CDS features in the requested
+    9,467-bp interval; sequence not independently translated
+  accessed_at: '2026-10-21T10:22:42.692080Z'
+  support: supports
+  summary: The deposited interval is CM003200.1:7244202..7253668 from CS3096, taxon
+    1028729, and contains FPSE_06372/EKJ73454.1, the FCK1 locus tag named in the paper,
+    plus FPSE_06371/EKJ73453.1. The paper explicitly says the original annotation
+    missed FCK2 and FCK4. This bridges the native knockout to the stored interval
+    without inventing absent protein annotations, exact mutant boundaries or verified
+    recombinant sequences.
+  snapshot_sha256: 838325ebd0995255afd93c90cfd69a353039ad5eef9a8d0e2c72ebf396ec0f55
+- evidence_id: S036-CHEMISTRY
+  kind: validation
+  reference: /private/tmp/npm-review-work/036/chemistry.json
+  locator: Independent owner SMILES/InChI/key and formula calculation retained by
+    the review coordinator
+  accessed_at: '2026-10-21T10:22:02.698753Z'
+  support: supports
+  summary: RDKit reproduces the stored Standard InChI and full key, neutral formula
+    C10H13N5O and exact mass 219.112010036, with no chiral centres. This agrees with
+    the original compound 4 drawing and its protonated ion near 220.119; it does not
+    substitute for the uninspected primary spectra.
+  snapshot_sha256: 80e98b0a5f62db7aee33311d249b68de96fcfb5a1ae816d99c9edb924b669c58
+- evidence_id: S036-METHODS
+  kind: validation
+  reference: /private/tmp/npm-review-work/036/method-evaluation.json
+  locator: Read-only evaluation of maintained producer and cluster grading
+  accessed_at: '2026-10-21T10:24:18.683724Z'
+  support: supports
+  summary: For the exact justified method Knock-out studies, the maintained grading
+    function returns BGC_CHARACTERIZED for the native producer and CLUSTER_DEMONSTRATED
+    for the locus. No source inventory or record was changed.
+  snapshot_sha256: 551cf992377d1ce8efa1cb9f77db4bf4e0c63c68802afc6d0e4718946c83d506
+- evidence_id: S036-LOADERS
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: load_mibig_locus_evidence_overrides and apply_mibig_locus_evidence_override;
+    paired claim-reference loader and conf/producer_evidence.tsv
+  accessed_at: '2026-10-21T10:25:51.005707Z'
+  support: context_only
+  summary: REPLACE can carry Knock-out studies for this minted source concept, but
+    its expected_* fields are not enforced as source guards. A paired curation/mibig_claim_references.tsv
+    row validates the complete raw-row SHA, or the override loader must gain and test
+    an equivalent guard. The existing PMID already addresses both native and locus
+    claims; citation replacement is not the scientific defect.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: S036-ACCESS
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch004/fusarium-si/source-notes.json
+  locator: Preserved bounded supplementary access receipts, inventory and read scope;
+    no new retrieval attempted
+  accessed_at: '2026-10-21T09:34:42.606247Z'
+  support: context_only
+  summary: The accepted manuscript is readable, but the supplementary structural and
+    PCR files were not obtained. Wiley direct/alternate supplement routes returned
+    403, the PMC DOCX URL returned challenge HTML, and the exact institutional Figshare
+    metadata had no attached files. Data S1 is titled for compounds 1–3; unread contents
+    cannot establish either presence or absence of compound 4 spectra. The main Results
+    explicitly call compound 4 HRMS/NMR data not shown.
+  snapshot_sha256: 8ab58cb0762771ddd7b37a756b354ee6088d04ec7356ef35a7db4fc03ac18935
+  search_scope: Bounded prior requests for DOI 10.1111/mpp.12593 Data S1, Figures
+    S1/S6 and Methods S1 through official Wiley and PMC links, alternate Wiley downloadSupplement,
+    and the exact institutional Figshare article; actual receipts access-1.json, access-2.json
+    and access-3.json are retained under shared-next-batch004/fusarium-si. No exhaustive
+    absence claim and no new failed-route retries.
+assessments:
+- assessment_id: R036-IDENTITY
+  area: identity
+  topic: Exact neutral chemical identity and form
+  outcome: supported
+  summary: All checked Standard keys match, and four source connection tables agree
+    at the fixed-H level. No missing stereocentre is present. The standardized neutral
+    record is not a claim about experimental tautomer populations or protonation.
+  target_ids:
+  - naturalproductmech:mibig-8194ce5f85
+  evidence_ids:
+  - R036-CHEM
+  - R036-NPATLAS
+  - R036-MOL
+  dimensions:
+  - name: chemical_form
+    value: Neutral achiral C10H13N5O
+    definition: The exact stored graph and charge; experimental solution microstates
+      are not asserted.
+    evidence_ids:
+    - R036-CHEM
+- assessment_id: R036-GROUNDING
+  area: provenance
+  topic: Eligible authority and current database links
+  outcome: supported
+  summary: The exact two-star ChEBI corroboration does not meet the repository three-star
+    rule; minted grounding and the resolving NPAtlas xref are appropriate.
+  target_ids:
+  - naturalproductmech:mibig-8194ce5f85
+  evidence_ids:
+  - R036-CHEBI
+  - R036-CHEBI-SEARCH
+  - R036-NPATLAS
+  - R036-RAW
+- assessment_id: R036-TAXON
+  area: scope
+  topic: Species occurrence versus experimental strain
+  outcome: supported
+  summary: The source producer is already CS3096 at strain rank, while occurrence
+    is species-level. Their taxonomic nesting and source bibliography are coherent.
+    Primary natural origin and method support are assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-8194ce5f85
+  evidence_ids:
+  - R036-TAXON
+  - R036-MIBIG
+  - R036-WIKIDATA
+  - R036-RAW
+  dimensions:
+  - name: producer_taxon_rank
+    value: 'strain: NCBI1028729 (CS3096)'
+    definition: The source experimental strain, parent species NCBI101028.
+    evidence_ids:
+    - R036-TAXON
+  - name: source_version_quality
+    value: BGC0002163 version3, active; questionable/unknown
+    definition: Current source status, quality and completeness, not an experimental
+      evidence grade.
+    evidence_ids:
+    - R036-MIBIG
+- assessment_id: R036-HISTORY
+  area: provenance
+  topic: Classification attribution and seeded audit state
+  outcome: supported
+  summary: The pinned predicted classification is transparent and the two seed events
+    accurately retain SEEDED. This external structured review does not modify native
+    history or status.
+  target_ids:
+  - naturalproductmech:mibig-8194ce5f85
+  evidence_ids:
+  - R036-CLASS
+  - R036-OWNER
+- assessment_id: R036-OPTIONAL
+  area: completeness
+  topic: Unasserted optional mechanisms and activities
+  outcome: not_applicable
+  summary: The complete owner asserts no pathway, graph, target, protein or assay.
+    Missing optional enrichment is not a defect; family-level activity and another
+    congener’s experiment cannot be inherited.
+  target_ids:
+  - naturalproductmech:mibig-8194ce5f85
+  evidence_ids:
+  - R036-OWNER
+- assessment_id: S036-A-IDENTITY
+  area: identity
+  topic: Exact compound 4 identity and the source formula error
+  outcome: supported
+  summary: The reported structure and the owner graph agree as achiral 8-oxo-isopentenyladenine,
+    C10H13N5O. The source Results formula error is not a defect in this record. Detailed
+    primary spectral validation remains bounded by unavailable data.
+  target_ids:
+  - naturalproductmech:mibig-8194ce5f85
+  evidence_ids:
+  - S036-OWNER
+  - S036-IDENTITY
+  - S036-GENETICS
+  - S036-CHEMISTRY
+  - S036-ACCESS
+- assessment_id: S036-A-ORIGIN
+  area: evidence
+  topic: Native isolation and species-level occurrence
+  outcome: supported
+  summary: CS3096 culture isolation directly supports the named producer and the broader
+    LOTUS species occurrence. Species-level occurrence is source-faithful, not an
+    unsupported genus-wide or strain-specific inference. The study supplies no compound
+    4 wheat detection.
+  target_ids:
+  - naturalproductmech:mibig-8194ce5f85
+  evidence_ids:
+  - S036-OWNER
+  - S036-OCCURRENCE
+  - S036-MAIN
+- assessment_id: S036-A-GENETICS
+  area: evidence
+  topic: Native genetic method omitted from the current grades
+  outcome: concern
+  summary: The cited paper and original chromatogram establish FCK1-dependent compound
+    4 production in native CS3096. The record faithfully copies an empty method field
+    but consequently omits applicable experimental evidence for both producer and
+    locus. Only Knock-out studies is justified for this exact congener from the inspected
+    experiments.
+  target_ids:
+  - naturalproductmech:mibig-8194ce5f85
+  evidence_ids:
+  - S036-RAW
+  - S036-GENETICS
+  - S036-LOCUS
+  - S036-METHODS
+  - S036-LOADERS
+- assessment_id: S036-A-ASSAY-SCOPE
+  area: scope
+  topic: Congener and experimental boundaries
+  outcome: supported
+  summary: FCK2 deletion retains 4; its direct oxidation route remains proposed. The
+    cluster-transfer report, purified FCK1 assay and AHK3 activity panel do not establish
+    exact compound 4 heterologous formation, enzyme formation or receptor agonism.
+    The owner currently avoids those claims.
+  target_ids:
+  - naturalproductmech:mibig-8194ce5f85
+  evidence_ids:
+  - S036-OWNER
+  - S036-GENETICS
+  - S036-ENZYME
+  - S036-ACTIVITY
+  - S036-MAIN
+- assessment_id: S036-A-OPTIONAL
+  area: completeness
+  topic: Optional pathways, graphs and activity content
+  outcome: not_applicable
+  summary: The sparse owner makes no detailed mechanism or activity assertion. No
+    optional enzyme, receptor or graph content is required to repair the supported
+    native evidence grades.
+  target_ids:
+  - naturalproductmech:mibig-8194ce5f85
+  evidence_ids:
+  - S036-OWNER
+  - S036-ENZYME
+  - S036-ACTIVITY
+findings:
+- finding_id: S036-F-NATIVE-METHOD
+  issue_key: mibig-bgc0002163-compound4-missing-methods
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Native compound 4 knockout evidence is omitted
+  description: The source PMID demonstrates native CS3096 FCK1-dependent formation
+    of exact compound 4, but the generated producer and locus retain the source empty-method
+    grades. The applicable method is Knock-out studies; experiments on compounds 1–3
+    and on upstream iP must not be copied into this correction. This shares the entry-level
+    method omission with related source products while requiring its own congener-specific
+    method scope.
+  target_ids:
+  - naturalproductmech:mibig-8194ce5f85
+  field_paths:
+  - producer_organisms[0].evidence_basis
+  - producer_organisms[0].notes
+  - biosynthetic_gene_clusters[0].locus_evidence_methods
+  - biosynthetic_gene_clusters[0].link_evidence_basis
+  evidence_ids:
+  - S036-RAW
+  - S036-GENETICS
+  - S036-LOCUS
+  - S036-METHODS
+  - S036-LOADERS
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Consumed exact-source method correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Paired full-source-row SHA guard retaining the appropriate PMID
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Method overlay loading and deterministic generation
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Full-row source guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/grading.py
+    role: Separate native-producer and locus grading
+actions:
+- action_id: S036-A-NATIVE-METHOD
+  description: 'Add a consumed REPLACE decision for naturalproductmech:mibig-8194ce5f85
+    / BGC0002163:4 with the single literal method Knock-out studies and PMID:28802024
+    (DOI:10.1111/mpp.12593), pinning full raw-row SHA256 7e9892beedf51c2b3f27d290e22d1b2984b1c0e340f30cd6c88c59da44d450e9.
+    Because the current REPLACE loader ignores expected_* guards, pair it with a SHA-pinned
+    curation/mibig_claim_references.tsv row retaining PMID:28802024 for both producer
+    and locus, or implement and test an equivalent full-row guard in the override
+    loader. Regenerate the owner with the existing CS3096 taxon and CM003200.1 interval
+    unchanged. Preserve the exact compound 4 limits in the rationale: FCK2 deletion
+    retains it, direct oxidation chemistry is unresolved, and heterologous/enzymatic/receptor
+    evidence for other products is not transferred.'
+  finding_ids:
+  - S036-F-NATIVE-METHOD
+  target_ids:
+  - naturalproductmech:mibig-8194ce5f85
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Consumed exact-source method correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Paired full-source-row SHA guard retaining the appropriate PMID
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Method overlay loading and deterministic generation
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Full-row source guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/grading.py
+    role: Separate native-producer and locus grading
+  generator: scripts/seed_from_sources.py with the consumed method overlay and enforced
+    full-row guard
+  acceptance_checks:
+  - The exact BGC0002163:4 version 3 raw row matches the full pinned SHA; changing
+    its chemistry, strain, citation, interval or source methods fails closed.
+  - A read-only or isolated canary emits only Knock-out studies, BGC_CHARACTERIZED
+    for CS3096 and CLUSTER_DEMONSTRATED for this locus, supported by the native FCK1
+    result.
+  - The molecule, species-level occurrence, native taxon, locus accession/bounds and
+    source provenance remain intact; no heterologous expression, direct compound 4
+    enzyme assay, AHK3 agonism or in planta occurrence is introduced.
+  - Paired claim-reference and method overlays compose without bypassing guards, duplicating
+    scientific citations or silently applying the decision to another compound row.
+  - Strict validation, exact seed reproducibility and repository quality gates pass
+    after the curation implementation.
+limitations:
+- The exact-key authority search is bounded to current ChEBI results and the complete
+  committed eligible table; it is not an assertion about every chemical database.
+- Database graph agreement validates copied identity and identifiers, not purity,
+  assay concentration or independent re-elucidation of the original experimental isolate.
+- The full accepted-manuscript main prose and Methods were read, together with all
+  main figure captions and original Figures 1, 3, 4 and 5 pixels. References were
+  not exhaustively audited and Figure 2 phylogenetic pixels were not required for
+  the target claim.
+- Compound 4 is reported by HRMS/NMR, but detailed spectra were not independently
+  available; the main Methods explicitly exclude it from HMBC. The internal Results
+  formula error is resolved using the depicted structure and consistent mass, not
+  by copying the erroneous formula.
+- Supplementary original mutant gels, detailed LC methods and structural records remain
+  unread after the preserved bounded access attempts. Their absence from the current
+  accessible evidence does not invalidate the directly inspected main-paper phenotype,
+  but the review remains partial.
+- The deposited interval bridges FPSE_06372 to the paper FCK1 gene, but complete mutant
+  alleles and recombinant sequences were not reconstructed or independently translated.
+  The original deposited annotation lacks FCK2 and FCK4 as explained by the paper.
+- No direct enzyme producing exact compound 4, complete final oxidation mechanism,
+  exact compound 4 heterologous product, receptor assay or wheat occurrence was inferred
+  from neighbouring compounds. Current chemical authority and taxonomy resolution
+  are handled in the separate identifier packet.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Shared baseline gates and target strict validation retain their actual fresh command
+  receipts for this base. Scientific failed or unavailable checks are distinct from
+  bundle validation.
+tags:
+- path-order-campaign
+- batch-004
