@@ -150,10 +150,12 @@ biosynthetic_pathway:
 - step_number: 1
   enzyme_label: XiaH aryl-coupling flavoprotein
   proposed: true
-  notes: XiaH catalyzes oxidative N-N bond-forming dimerization of xiamycin A to dixiamycin
-    A and the atropisomeric dixiamycin B in the Streptomyces sp. SCSIO 02999 xia cluster;
-    enzyme_id is grounded to the native GenPept accession NCBIProtein:CCH63734.1 because
-    UniParc UPI0002777695 maps only to retired/obsolete UniProtKB/TrEMBL entries I7JVY9.1
+  notes: This proposed pathway entry captures Streptomyces sp. HKI0576 xiaH/CCH63734.1
+    as the BGC0000665 aryl-coupling flavoprotein that forms the N-N-linked dixiamycin
+    scaffold. The immediate xiamycin monomer and the atropodiastereomer branch between
+    dixiamycin A and B are left unexpanded. XiaH is grounded on enzyme_id and in the
+    causal graph to the native GenPept accession NCBIProtein:CCH63734.1 because UniParc
+    UPI0002777695 maps only to retired/obsolete UniProtKB/TrEMBL entries I7JVY9.1
     and A0A0P0HXR3.1 with no active UniProtKB accession.
   evidence:
   - reference: DOI:10.1002/anie.201303733
@@ -175,16 +177,16 @@ biosynthetic_pathway:
     evidence_type: DATABASE_ASSERTION
     snippet: XiaH protein
     retrieved_on: '2026-09-27'
-    notes: NCBI Protein CCH63734.1 is the 597-aa Streptomyces sp. SCSIO 02999 XiaH
-      flavin-dependent monooxygenase encoded by xiaH on GenBank HE815466.1 (complement
-      16370..18163) and grounds the XiaH step and enzyme node as NCBIProtein:CCH63734.1.
+    notes: NCBI GenPept CCH63734.1 is the 597 aa xiaH coding sequence from the Streptomyces
+      sp. HKI0576 HE815466.1 indolosesquiterpenoid cluster. UniProtKB currently has
+      no exact entry for this GenPept or EMBL accession.
   - reference: https://www.uniprot.org/uniparc/UPI0002777695
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-10-23'
     snippet: CCH63734.1
-    notes: UniParc UPI0002777695 archives the exact 597-aa Streptomyces sp. SCSIO
-      02999 XiaH sequence (EMBL HE815466.1 protein CCH63734.1, gene xiaH) and records
-      that UniProtKB/TrEMBL entries I7JVY9.1 and A0A0P0HXR3.1 are inactive/obsolete,
+    notes: UniParc UPI0002777695 archives the exact 597 aa Streptomyces sp. HKI0576
+      xiaH sequence (EMBL HE815466.1:7534..9327 reverse strand, protein CCH63734.1)
+      and records that UniProtKB/TrEMBL entries I7JVY9.1 and A0A0P0HXR3.1 are inactive/obsolete,
       confirming no active UniProtKB accession resolves for CCH63734.1.
   enzyme_id: NCBIProtein:CCH63734.1
 causal_graphs:
@@ -233,24 +235,22 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       snippet: XiaH protein
       retrieved_on: '2026-09-27'
-      notes: NCBI Protein CCH63734.1 is the 597-aa Streptomyces sp. SCSIO 02999 XiaH
-        flavin-dependent monooxygenase encoded by xiaH on GenBank HE815466.1 (complement
-        16370..18163) and grounds the XiaH step and enzyme node as NCBIProtein:CCH63734.1.
+      notes: NCBI GenPept CCH63734.1 is the 597 aa xiaH coding sequence from the Streptomyces
+        sp. HKI0576 HE815466.1 indolosesquiterpenoid cluster. UniProtKB currently
+        has no exact entry for this GenPept or EMBL accession.
     - reference: https://www.uniprot.org/uniparc/UPI0002777695
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-23'
       snippet: CCH63734.1
-      notes: UniParc UPI0002777695 archives the exact 597-aa Streptomyces sp. SCSIO
-        02999 XiaH sequence (EMBL HE815466.1 protein CCH63734.1, gene xiaH) and records
-        that UniProtKB/TrEMBL entries I7JVY9.1 and A0A0P0HXR3.1 are inactive/obsolete,
+      notes: UniParc UPI0002777695 archives the exact 597 aa Streptomyces sp. HKI0576
+        xiaH sequence (EMBL HE815466.1:7534..9327 reverse strand, protein CCH63734.1)
+        and records that UniProtKB/TrEMBL entries I7JVY9.1 and A0A0P0HXR3.1 are inactive/obsolete,
         confirming no active UniProtKB accession resolves for CCH63734.1.
   - subject: xiah
     predicate: forms N-N-linked
     object: dixiamycin_a
-    notes: XiaH forms both dixiamycin A and atropisomeric dixiamycin B from xiamycin
-      A; the XiaH enzyme node is grounded to the native GenPept accession NCBIProtein:CCH63734.1
-      because UniParc UPI0002777695 maps only to retired/obsolete UniProtKB/TrEMBL
-      entries I7JVY9.1 and A0A0P0HXR3.1.
+    notes: The record represents the Standard InChIKey shared by the MIBiG dixiamycin
+      A and dixiamycin B rows from BGC0000665.
     evidence:
     - reference: DOI:10.1002/anie.201303733
       evidence_type: PRIMARY_EXPERIMENT
@@ -271,16 +271,16 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       snippet: XiaH protein
       retrieved_on: '2026-09-27'
-      notes: NCBI Protein CCH63734.1 is the 597-aa Streptomyces sp. SCSIO 02999 XiaH
-        flavin-dependent monooxygenase encoded by xiaH on GenBank HE815466.1 (complement
-        16370..18163) and grounds the XiaH step and enzyme node as NCBIProtein:CCH63734.1.
+      notes: NCBI GenPept CCH63734.1 is the 597 aa xiaH coding sequence from the Streptomyces
+        sp. HKI0576 HE815466.1 indolosesquiterpenoid cluster. UniProtKB currently
+        has no exact entry for this GenPept or EMBL accession.
     - reference: https://www.uniprot.org/uniparc/UPI0002777695
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-23'
       snippet: CCH63734.1
-      notes: UniParc UPI0002777695 archives the exact 597-aa Streptomyces sp. SCSIO
-        02999 XiaH sequence (EMBL HE815466.1 protein CCH63734.1, gene xiaH) and records
-        that UniProtKB/TrEMBL entries I7JVY9.1 and A0A0P0HXR3.1 are inactive/obsolete,
+      notes: UniParc UPI0002777695 archives the exact 597 aa Streptomyces sp. HKI0576
+        xiaH sequence (EMBL HE815466.1:7534..9327 reverse strand, protein CCH63734.1)
+        and records that UniProtKB/TrEMBL entries I7JVY9.1 and A0A0P0HXR3.1 are inactive/obsolete,
         confirming no active UniProtKB accession resolves for CCH63734.1.
 curation_history:
 - timestamp: '2026-09-10T05:54:04Z'
@@ -298,11 +298,11 @@ curation_history:
     and BIOSYNTHESIS causal graph for dixiamycin A; retained XiaH as UNGROUNDED because
     no exact UniProtKB entry resolves for HE815466.1 GenPept CCH63734.1.
   llm_assisted: true
-- timestamp: '2026-10-23T22:04:51Z'
+- timestamp: '2026-10-23T22:53:33Z'
   curator: antigravity
-  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
-  changes: Grounded the Streptomyces sp. SCSIO 02999 XiaH biosynthetic pathway step
-    and BIOSYNTHESIS causal graph ENZYME node (xiah) to the native GenPept accession
+  action: RECORD_CURATED
+  changes: Grounded the Streptomyces sp. HKI0576 XiaH (BGC0000665) biosynthetic pathway
+    step and BIOSYNTHESIS causal graph ENZYME node (xiah) to the native GenPept accession
     NCBIProtein:CCH63734.1, and added UniParc UPI0002777695 evidence documenting that
     the corresponding UniProtKB/TrEMBL entries I7JVY9.1 and A0A0P0HXR3.1 are retired/obsolete.
   llm_assisted: true

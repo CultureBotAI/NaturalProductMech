@@ -99,11 +99,12 @@ biosynthetic_pathway:
   enzyme_label: PpzM phenazine N-methyltransferase
   product: naturalproductmech:mibig-4acf6c9688
   proposed: true
-  notes: PpzM catalyzes SAM-dependent N-methylation of endophenazine A to endophenazine
-    B in the Streptomyces anulatus 9663 ppz cluster; enzyme_id is grounded to the
-    native GenPept accession NCBIProtein:CAX48665.1 because UniParc UPI0001A648F5
-    maps only to retired/obsolete UniProtKB/TrEMBL entry C4PWB1.1 with no active UniProtKB
-    accession.
+  notes: This partial endophenazine B pathway captures the genetically implicated
+    Streptomyces anulatus 9663 PpzM N-methyltransferase. ppzM deletion abolished endophenazine
+    B production, but purified PpzM did not methylate PCA or dihydro-PCA with S-adenosylmethionine
+    in the inspected in vitro assay; the exact methyl acceptor and any partner protein
+    are unresolved. PpzM enzyme_id is grounded to the native GenPept accession NCBIProtein:CAX48665.1
+    (UniParc UPI0001A648F5 maps only to retired/obsolete UniProtKB/TrEMBL entry C4PWB1.1).
   evidence:
   - reference: DOI:10.3762/BJOC.8.57
     evidence_type: PRIMARY_EXPERIMENT
@@ -123,17 +124,17 @@ biosynthetic_pathway:
     evidence_type: DATABASE_ASSERTION
     snippet: putative phenazine N-methyltransferase
     retrieved_on: '2026-10-01'
-    notes: NCBI Protein CAX48665.1 is the 340-aa Streptomyces anulatus 9663 PpzM phenazine
-      N-methyltransferase encoded by ppzM on GenBank FN178498.1 (14964..15986) and
-      grounds the PpzM step and enzyme node as NCBIProtein:CAX48665.1.
+    notes: NCBI GenPept CAX48665.1 is the 340 aa Streptomyces anulatus 9663 ppzM coding
+      sequence from FN178498.1 and is not represented by a live current UniProtKB
+      accession.
   - reference: https://www.uniprot.org/uniparc/UPI0001A648F5
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-10-23'
     snippet: CAX48665.1
-    notes: UniParc UPI0001A648F5 archives the exact 340-aa Streptomyces anulatus 9663
-      PpzM sequence (EMBL FN178498.1 protein CAX48665.1, gene ppzM) and records that
-      UniProtKB/TrEMBL entry C4PWB1.1 is inactive/obsolete, confirming no active UniProtKB
-      accession resolves for CAX48665.1.
+    notes: UniParc UPI0001A648F5 archives the exact 340 aa Streptomyces anulatus 9663
+      ppzM sequence (EMBL FN178498.1 reverse-strand 10210..11232, protein CAX48665.1)
+      and records that UniProtKB/TrEMBL entry C4PWB1.1 is inactive/obsolete, confirming
+      no active UniProtKB accession resolves for CAX48665.1.
   - reference: https://mibig.secondarymetabolites.org/repository/BGC0001080.5/BGC0001080.gbk
     evidence_type: DATABASE_ASSERTION
     snippet: protein_id="CAX48665.1"
@@ -161,11 +162,10 @@ causal_graphs:
   - subject: ppzm
     predicate: is required for formation of
     object: endophenazine_b
-    notes: PpzM catalyzes SAM-dependent N5-methylation of endophenazine A (in the
-      reduced dihydroendophenazine A state in vitro) to endophenazine B; the PpzM
-      enzyme node is grounded to the native GenPept accession NCBIProtein:CAX48665.1
-      because UniParc UPI0001A648F5 maps only to retired/obsolete UniProtKB/TrEMBL
-      entry C4PWB1.1.
+    notes: The genetic deletion identifies ppzM as required for formation of the N-methylated
+      product. Because the exact methyl acceptor and in vitro coupling partner were
+      not identified, this graph does not assert a direct isolated-substrate reaction
+      or a Rhea ID.
     evidence:
     - reference: DOI:10.3762/BJOC.8.57
       evidence_type: PRIMARY_EXPERIMENT
@@ -185,17 +185,17 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       snippet: putative phenazine N-methyltransferase
       retrieved_on: '2026-10-01'
-      notes: NCBI Protein CAX48665.1 is the 340-aa Streptomyces anulatus 9663 PpzM
-        phenazine N-methyltransferase encoded by ppzM on GenBank FN178498.1 (14964..15986)
-        and grounds the PpzM step and enzyme node as NCBIProtein:CAX48665.1.
+      notes: NCBI GenPept CAX48665.1 is the 340 aa Streptomyces anulatus 9663 ppzM
+        coding sequence from FN178498.1 and is not represented by a live current UniProtKB
+        accession.
     - reference: https://www.uniprot.org/uniparc/UPI0001A648F5
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-23'
       snippet: CAX48665.1
-      notes: UniParc UPI0001A648F5 archives the exact 340-aa Streptomyces anulatus
-        9663 PpzM sequence (EMBL FN178498.1 protein CAX48665.1, gene ppzM) and records
-        that UniProtKB/TrEMBL entry C4PWB1.1 is inactive/obsolete, confirming no active
-        UniProtKB accession resolves for CAX48665.1.
+      notes: UniParc UPI0001A648F5 archives the exact 340 aa Streptomyces anulatus
+        9663 ppzM sequence (EMBL FN178498.1 reverse-strand 10210..11232, protein CAX48665.1)
+        and records that UniProtKB/TrEMBL entry C4PWB1.1 is inactive/obsolete, confirming
+        no active UniProtKB accession resolves for CAX48665.1.
     - reference: https://mibig.secondarymetabolites.org/repository/BGC0001080.5/BGC0001080.gbk
       evidence_type: DATABASE_ASSERTION
       snippet: protein_id="CAX48665.1"
@@ -223,11 +223,11 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
-- timestamp: '2026-10-23T22:04:51Z'
+- timestamp: '2026-10-23T22:53:33Z'
   curator: antigravity
-  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
-  changes: Grounded the Streptomyces anulatus 9663 PpzM biosynthetic pathway step
-    and BIOSYNTHESIS causal graph ENZYME node (ppzm) to the native GenPept accession
-    NCBIProtein:CAX48665.1, and added UniParc UPI0001A648F5 evidence documenting that
-    the corresponding UniProtKB/TrEMBL entry C4PWB1.1 is retired/obsolete.
+  action: RECORD_CURATED
+  changes: Grounded the Streptomyces anulatus 9663 PpzM (BGC0001080) biosynthetic
+    pathway step and BIOSYNTHESIS causal graph ENZYME node (ppzm) to the native GenPept
+    accession NCBIProtein:CAX48665.1, and added UniParc UPI0001A648F5 evidence documenting
+    that the corresponding UniProtKB/TrEMBL entry C4PWB1.1 is retired/obsolete.
   llm_assisted: true

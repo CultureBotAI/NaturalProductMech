@@ -168,9 +168,8 @@ biosynthetic_pathway:
   - reference: https://www.ncbi.nlm.nih.gov/protein/EIM84824.1
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-09-27'
-    notes: NCBI resolves GenPept EIM84824.1 to the 316-aa JH687388.1 coding sequence,
-      locus tag STEHIDRAFT_122776, and JGI model Stehi1_122776, grounding the SteTC1
-      step and enzyme node as NCBIProtein:EIM84824.1.
+    notes: NCBI resolves GenPept EIM84824.1 to the JH687388.1 coding sequence, locus
+      tag STEHIDRAFT_122776, and JGI model Stehi1_122776.
   - reference: https://www.ncbi.nlm.nih.gov/protein/XP_007305993.1
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-09-27'
@@ -226,9 +225,8 @@ causal_graphs:
     - reference: https://www.ncbi.nlm.nih.gov/protein/EIM84824.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
-      notes: NCBI resolves GenPept EIM84824.1 to the 316-aa JH687388.1 coding sequence,
-        locus tag STEHIDRAFT_122776, and JGI model Stehi1_122776, grounding the SteTC1
-        step and enzyme node as NCBIProtein:EIM84824.1.
+      notes: NCBI resolves GenPept EIM84824.1 to the JH687388.1 coding sequence, locus
+        tag STEHIDRAFT_122776, and JGI model Stehi1_122776.
     - reference: https://www.ncbi.nlm.nih.gov/protein/XP_007305993.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
@@ -259,9 +257,8 @@ causal_graphs:
     - reference: https://www.ncbi.nlm.nih.gov/protein/EIM84824.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
-      notes: NCBI resolves GenPept EIM84824.1 to the 316-aa JH687388.1 coding sequence,
-        locus tag STEHIDRAFT_122776, and JGI model Stehi1_122776, grounding the SteTC1
-        step and enzyme node as NCBIProtein:EIM84824.1.
+      notes: NCBI resolves GenPept EIM84824.1 to the JH687388.1 coding sequence, locus
+        tag STEHIDRAFT_122776, and JGI model Stehi1_122776.
     - reference: https://www.ncbi.nlm.nih.gov/protein/XP_007305993.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
@@ -293,9 +290,9 @@ curation_history:
     because the GenPept, RefSeq, JGI, and locus identifiers do not resolve to an exact
     UniProtKB entry; and cited the experimentally characterized RHEA:42992 reaction.
   llm_assisted: true
-- timestamp: '2026-10-23T22:04:53Z'
+- timestamp: '2026-10-23T22:53:35Z'
   curator: antigravity
-  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
+  action: RECORD_CURATED
   changes: Grounded the Stereum hirsutum FP-91666 SS1 SteTC1 biosynthetic pathway
     step and BIOSYNTHESIS causal graph ENZYME node (stetc1) to the native GenPept
     accession NCBIProtein:EIM84824.1, and added UniParc UPI0004449431 evidence documenting

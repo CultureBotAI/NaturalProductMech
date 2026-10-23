@@ -85,14 +85,13 @@ biosynthetic_pathway:
 - step_number: 1
   enzyme_label: LvStA_05069 AfsA-like offloading domain
   proposed: true
-  notes: The C-terminal AfsA-like offloading domain of the Burkholderia gladioli LvStA
-    gladiofungin polyketide synthase GladA (locus tag LvStA_05069, GenPept KAF1058474.1)
-    catalyzes offloading of the polyketide chain with glyceraldehyde 3-phosphate and
-    triggers spontaneous dehydration and rearrangement to the gladiofungin butenolide/maleicanhydride
-    pharmacophore in gladiofungin B biosynthesis; enzyme_id is grounded to the native
-    GenPept accession NCBIProtein:KAF1058474.1 because UniParc UPI00139C1DD8 maps
-    only to retired/obsolete UniProtKB/TrEMBL entry A0A833UU34.1 with no active UniProtKB
-    accession.
+  notes: This curates the terminal AfsA-like offloading domain of the Burkholderia
+    gladioli Lv-StA LvStA_05069/KAF1058474.1 trans-AT PKS as a required contributor
+    to noncanonical chain release and butenolide formation in BGC0002083 gladiofungin
+    B biosynthesis. The exact KAF1058474.1 GenPept accession did not resolve in UniProtKB
+    accession search on 2026-09-27, so enzyme_id is grounded to the native GenPept
+    accession NCBIProtein:KAF1058474.1 (UniParc UPI00139C1DD8 maps only to retired/obsolete
+    UniProtKB/TrEMBL entry A0A833UU34.1).
   evidence:
   - reference: DOI:10.1002/anie.202005711
     evidence_type: PRIMARY_EXPERIMENT
@@ -111,18 +110,17 @@ biosynthetic_pathway:
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-09-27'
     snippet: Polyketide synthase PksN
-    notes: NCBI Protein KAF1058474.1 is the 10,181-aa Burkholderia gladioli LvStA
-      amino acid adenylation domain-containing protein encoded by locus tag LvStA_05069
-      on GenBank WITE01000004.1 (complement 433101..463646) and grounds the GladA/LvStA_05069
-      step and enzyme node as NCBIProtein:KAF1058474.1.
+    notes: NCBI GenPept KAF1058474.1 is the 10,181 aa LvStA_05069 CDS on complement(WITE01000004.1:1156002..1186547)
+      from Burkholderia gladioli Lv-StA. The exact KAF1058474.1 GenPept accession
+      did not resolve in UniProtKB accession search on 2026-09-27.
   - reference: https://www.uniprot.org/uniparc/UPI00139C1DD8
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-10-23'
     snippet: KAF1058474.1
-    notes: UniParc UPI00139C1DD8 archives the exact 10,181-aa Burkholderia gladioli
-      LvStA_05069 sequence (EMBL WITE01000004.1 protein KAF1058474.1) and records
-      that UniProtKB/TrEMBL entry A0A833UU34.1 is inactive/obsolete, confirming no
-      active UniProtKB accession resolves for KAF1058474.1.
+    notes: UniParc UPI00139C1DD8 archives the exact 10,181 aa Burkholderia gladioli
+      Lv-StA LvStA_05069 sequence (EMBL complement(WITE01000004.1:1156002..1186547),
+      protein KAF1058474.1) and records that UniProtKB/TrEMBL entry A0A833UU34.1 is
+      inactive/obsolete, confirming no active UniProtKB accession resolves for KAF1058474.1.
   - reference: https://www.ncbi.nlm.nih.gov/nuccore/WITE01000004.1
     evidence_type: DATABASE_ASSERTION
     retrieved_on: '2026-09-27'
@@ -155,11 +153,10 @@ causal_graphs:
   - subject: lvsta05069_afsa
     predicate: is required for
     object: butenolide_chain_release
-    notes: The C-terminal AfsA-like domain of GladA (LvStA_05069, GenPept KAF1058474.1)
-      condenses the polyketide intermediate with glyceraldehyde 3-phosphate and initiates
-      the cascade forming the gladiofungin B butenolide/maleicanhydride pharmacophore;
-      the enzyme node is grounded to NCBIProtein:KAF1058474.1 because UniParc UPI00139C1DD8
-      maps only to retired/obsolete UniProtKB/TrEMBL entry A0A833UU34.1.
+    notes: CRISPR/Cas deletion inside the AfsA-like terminal domain abolished gladiofungin
+      A/B production without detectable polar effects on the downstream glaF and glaG
+      genes. This edge is scoped to the terminal domain and does not assert a free
+      substrate or the full PKS assembly order.
     evidence:
     - reference: DOI:10.1002/anie.202005711
       evidence_type: PRIMARY_EXPERIMENT
@@ -178,18 +175,18 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
       snippet: Polyketide synthase PksN
-      notes: NCBI Protein KAF1058474.1 is the 10,181-aa Burkholderia gladioli LvStA
-        amino acid adenylation domain-containing protein encoded by locus tag LvStA_05069
-        on GenBank WITE01000004.1 (complement 433101..463646) and grounds the GladA/LvStA_05069
-        step and enzyme node as NCBIProtein:KAF1058474.1.
+      notes: NCBI GenPept KAF1058474.1 is the 10,181 aa LvStA_05069 CDS on complement(WITE01000004.1:1156002..1186547)
+        from Burkholderia gladioli Lv-StA. The exact KAF1058474.1 GenPept accession
+        did not resolve in UniProtKB accession search on 2026-09-27.
     - reference: https://www.uniprot.org/uniparc/UPI00139C1DD8
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-23'
       snippet: KAF1058474.1
-      notes: UniParc UPI00139C1DD8 archives the exact 10,181-aa Burkholderia gladioli
-        LvStA_05069 sequence (EMBL WITE01000004.1 protein KAF1058474.1) and records
-        that UniProtKB/TrEMBL entry A0A833UU34.1 is inactive/obsolete, confirming
-        no active UniProtKB accession resolves for KAF1058474.1.
+      notes: UniParc UPI00139C1DD8 archives the exact 10,181 aa Burkholderia gladioli
+        Lv-StA LvStA_05069 sequence (EMBL complement(WITE01000004.1:1156002..1186547),
+        protein KAF1058474.1) and records that UniProtKB/TrEMBL entry A0A833UU34.1
+        is inactive/obsolete, confirming no active UniProtKB accession resolves for
+        KAF1058474.1.
     - reference: https://www.ncbi.nlm.nih.gov/nuccore/WITE01000004.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
@@ -220,18 +217,18 @@ causal_graphs:
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
       snippet: Polyketide synthase PksN
-      notes: NCBI Protein KAF1058474.1 is the 10,181-aa Burkholderia gladioli LvStA
-        amino acid adenylation domain-containing protein encoded by locus tag LvStA_05069
-        on GenBank WITE01000004.1 (complement 433101..463646) and grounds the GladA/LvStA_05069
-        step and enzyme node as NCBIProtein:KAF1058474.1.
+      notes: NCBI GenPept KAF1058474.1 is the 10,181 aa LvStA_05069 CDS on complement(WITE01000004.1:1156002..1186547)
+        from Burkholderia gladioli Lv-StA. The exact KAF1058474.1 GenPept accession
+        did not resolve in UniProtKB accession search on 2026-09-27.
     - reference: https://www.uniprot.org/uniparc/UPI00139C1DD8
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-10-23'
       snippet: KAF1058474.1
-      notes: UniParc UPI00139C1DD8 archives the exact 10,181-aa Burkholderia gladioli
-        LvStA_05069 sequence (EMBL WITE01000004.1 protein KAF1058474.1) and records
-        that UniProtKB/TrEMBL entry A0A833UU34.1 is inactive/obsolete, confirming
-        no active UniProtKB accession resolves for KAF1058474.1.
+      notes: UniParc UPI00139C1DD8 archives the exact 10,181 aa Burkholderia gladioli
+        Lv-StA LvStA_05069 sequence (EMBL complement(WITE01000004.1:1156002..1186547),
+        protein KAF1058474.1) and records that UniProtKB/TrEMBL entry A0A833UU34.1
+        is inactive/obsolete, confirming no active UniProtKB accession resolves for
+        KAF1058474.1.
     - reference: https://www.ncbi.nlm.nih.gov/nuccore/WITE01000004.1
       evidence_type: DATABASE_ASSERTION
       retrieved_on: '2026-09-27'
@@ -260,12 +257,12 @@ curation_history:
   curator: seed_from_sources
   action: SEEDED_FROM_SOURCES
   changes: Seeded from the committed inventories and curation tables.
-- timestamp: '2026-10-23T22:04:51Z'
+- timestamp: '2026-10-23T22:53:33Z'
   curator: antigravity
-  action: ADDED_UNIPROT_PROTEIN_EXAMPLES
-  changes: Grounded the Burkholderia gladioli LvStA_05069 AfsA-like offloading domain
-    biosynthetic pathway step and BIOSYNTHESIS causal graph ENZYME node (lvsta05069_afsa)
-    in gladiofungin B to the native GenPept accession NCBIProtein:KAF1058474.1, and
-    added UniParc UPI00139C1DD8 evidence documenting that the corresponding UniProtKB/TrEMBL
+  action: RECORD_CURATED
+  changes: Grounded the Burkholderia gladioli Lv-StA LvStA_05069 AfsA-like offloading
+    domain (BGC0002083) biosynthetic pathway step and BIOSYNTHESIS causal graph ENZYME
+    node (lvsta05069_afsa) in gladiofungin B to the native GenPept accession NCBIProtein:KAF1058474.1,
+    and added UniParc UPI00139C1DD8 evidence documenting that the corresponding UniProtKB/TrEMBL
     entry A0A833UU34.1 is retired/obsolete.
   llm_assisted: true
