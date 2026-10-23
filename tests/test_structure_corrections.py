@@ -113,6 +113,124 @@ def test_split_shared_requires_shared_source_with_remaining_owner(inputs):
         apply_structure_corrections(*inputs)
 
 
+def test_replace_shared_requires_shared_source_key(inputs):
+    inputs[1][0]["action"] = "REPLACE_SHARED_WITH_CHEBI"
+    with pytest.raises(ValueError, match="shared structure replacement requires a shared source key"):
+        apply_structure_corrections(*inputs)
+
+
+def test_replace_shared_rejects_partial_group_or_mixed_actions(inputs):
+    rows, corrections, chebi = inputs
+    second_row = {**rows[0], "mibig_accession": "BGC0000025", "compound_index": "1"}
+    rows.append(second_row)
+    corrections[0]["action"] = "REPLACE_SHARED_WITH_CHEBI"
+    with pytest.raises(ValueError, match="must cover all 2 rows"):
+        apply_structure_corrections(rows, corrections, chebi)
+
+    second_correction = {
+        **corrections[0],
+        "action": "SPLIT_SHARED_WITH_CHEBI",
+        "source_id": "BGC0000025:1",
+        "expected_source_row_sha256": row_digest(second_row),
+    }
+    with pytest.raises(ValueError, match="cannot mix structure correction actions"):
+        apply_structure_corrections(rows, [corrections[0], second_correction], chebi)
+
+
+def test_replace_shared_rejects_disagreeing_target_chemistry(inputs):
+    rows, corrections, chebi = inputs
+    second_row = {**rows[0], "mibig_accession": "BGC0000025", "compound_index": "1"}
+    rows.append(second_row)
+    corrections[0]["action"] = "REPLACE_SHARED_WITH_CHEBI"
+    second_correction = {
+        **corrections[0],
+        "source_id": "BGC0000025:1",
+        "expected_source_row_sha256": row_digest(second_row),
+        "stereo_complete": "false",
+    }
+    with pytest.raises(ValueError, match="identical ChEBI target"):
+        apply_structure_corrections(rows, [corrections[0], second_correction], chebi)
+
+
+def test_replace_shared_rejects_target_collision_with_other_source_key(inputs):
+    rows, corrections, chebi = inputs
+    second_row = {**rows[0], "mibig_accession": "BGC0000025", "compound_index": "1"}
+    other_row = {
+        **rows[0],
+        "mibig_accession": "BGC0000026",
+        "compound_index": "1",
+        "standard_inchi_key": "AAAAAAAAAAAAAA-BBBBBBBBBB-N",
+    }
+    rows.extend([second_row, other_row])
+    corrections[0]["action"] = "REPLACE_SHARED_WITH_CHEBI"
+    second_correction = {
+        **corrections[0],
+        "source_id": "BGC0000025:1",
+        "expected_source_row_sha256": row_digest(second_row),
+    }
+    other_correction = {
+        **corrections[0],
+        "action": "REPLACE_WITH_CHEBI",
+        "source_id": "BGC0000026:1",
+        "expected_source_row_sha256": row_digest(other_row),
+    }
+    with pytest.raises(ValueError, match="distinct owners"):
+        apply_structure_corrections(
+            rows, [corrections[0], second_correction, other_correction], chebi
+        )
+
+
+def test_replace_shared_structure_replaces_entire_shared_group_atomically(inputs):
+    rows, corrections, chebi = inputs
+    second_row = {
+        **rows[0],
+        "mibig_accession": "BGC0000025",
+        "compound_index": "1",
+        "taxon_id": "NCBITaxon:1883",
+        "taxon_label": "Streptomyces",
+    }
+    rows.append(second_row)
+    corrections[0]["action"] = "REPLACE_SHARED_WITH_CHEBI"
+    second_correction = {
+        **corrections[0],
+        "source_id": "BGC0000025:1",
+        "expected_source_row_sha256": row_digest(second_row),
+        "reference": "PMID:12345678",
+    }
+    all_corrections = [corrections[0], second_correction]
+    corrected = apply_structure_corrections(rows, all_corrections, chebi)
+    assert [r["standard_inchi_key"] for r in corrected] == [NEW, NEW]
+    assert [r["structure_correction_old_key"] for r in corrected] == [OLD, OLD]
+    assert all(r["database_ids"] == "" for r in corrected)
+
+    doc, = seed.build_records({
+        "mibig_compounds": rows,
+        "chebi_structures": chebi,
+        "mibig_structure_corrections": all_corrections,
+    })
+    assert doc["identifier"] == "CHEBI:80024"
+    assert doc["_previous_standard_inchi_key"] == OLD
+    assert "_split_structure_correction" not in doc
+    assert [c["source_id"] for c in doc["source_concepts"]] == [
+        "BGC0000024",
+        "BGC0000025",
+        "CHEBI:80024",
+    ]
+    assert len(doc["producer_organisms"]) == 2
+    assert len(doc["biosynthetic_gene_clusters"]) == 2
+    corr_discussions = [
+        d for d in doc["discussions"] if d["discussion_id"] == "source-structure-correction"
+    ]
+    assert len(corr_discussions) == 1
+    assert "BGC0000024:1" in corr_discussions[0]["resolution_note"]
+    assert "BGC0000025:1" in corr_discussions[0]["resolution_note"]
+    assert [e["reference"] for e in corr_discussions[0]["evidence"]] == [
+        "DOI:10.1021/ja102751h",
+        "PMID:12345678",
+    ]
+    assert not validate_natural_product({k: v for k, v in doc.items() if not k.startswith("_")})
+
+
 def test_split_shared_structure_creates_desosamine_and_preserves_methymycin():
     mibig_rows = [row for row in seed.read_tsv(ROOT / "data/raw/mibig_compounds.tsv")
                   if row["mibig_accession"] in {"BGC0000094", "BGC0000898", "BGC0000899"}]

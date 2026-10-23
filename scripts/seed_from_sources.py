@@ -1497,20 +1497,22 @@ def build_records(inventories: dict[str, list[dict[str, str]]]) -> list[dict[str
         discussions: list[dict[str, Any]] = [exclusion_discussion(d) for d in excluded_xrefs]
         discussions.extend(bioassay_exclusion_discussion(d) for d in excluded_assays)
         discussions.extend(lotus_exclusion_discussion(d) for d in excluded_lotus)
-        for row in rows:
-            if row.get("structure_correction_note"):
-                discussions.append({
-                    "discussion_id": "source-structure-correction",
-                    "kind": "CONTROVERSY",
-                    "status": "RESOLVED",
-                    "prompt": "Which structure represents the source compound?",
-                    "resolution_note": row["structure_correction_note"],
-                    "evidence": [{
-                        "reference": row["structure_correction_reference"],
-                        "evidence_source": "figure; curator interpretation",
-                        "notes": row["structure_correction_note"],
-                    }],
-                })
+        corrected_rows = [row for row in rows if row.get("structure_correction_note")]
+        if corrected_rows:
+            discussions.append({
+                "discussion_id": "source-structure-correction",
+                "kind": "CONTROVERSY",
+                "status": "RESOLVED",
+                "prompt": "Which structure represents the source compound?",
+                "resolution_note": " ".join(
+                    row["structure_correction_note"] for row in corrected_rows
+                ),
+                "evidence": [{
+                    "reference": row["structure_correction_reference"],
+                    "evidence_source": "figure; curator interpretation",
+                    "notes": row["structure_correction_note"],
+                } for row in corrected_rows],
+            })
 
         # A paper-internal label identifies a structure only relative to one
         # paper's numbering. The name is not invented here — MIBiG's is kept —

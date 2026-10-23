@@ -5,9 +5,15 @@ from __future__ import annotations
 import hashlib
 import json
 import re
-from collections import Counter
+from collections import Counter, defaultdict
 from datetime import date
 from urllib.parse import urlsplit
+
+ALLOWED_ACTIONS = {
+    "REPLACE_WITH_CHEBI",
+    "SPLIT_SHARED_WITH_CHEBI",
+    "REPLACE_SHARED_WITH_CHEBI",
+}
 
 
 def row_digest(row: dict[str, str]) -> str:
@@ -22,7 +28,7 @@ def apply_structure_corrections(
     corrections: list[dict[str, str]],
     chebi_rows: list[dict[str, str]],
 ) -> list[dict[str, str]]:
-    """Replace a uniquely owned structure or split a shared structure onto a pinned ChEBI entry.
+    """Replace a uniquely owned or shared structure group, or split onto a pinned ChEBI entry.
 
     No equivalence is asserted between old and new keys. All old xrefs are
     withheld, and other inventories still join only on their own exact keys.
@@ -32,7 +38,10 @@ def apply_structure_corrections(
     source_keys = Counter(row["standard_inchi_key"] for row in rows)
     remaining_source_keys = Counter(source_keys)
     seen_sources: set[str] = set()
-    seen_targets: set[str] = set()
+    seen_targets: dict[str, tuple[str, str]] = {}
+    actions_by_old_key: dict[str, set[str]] = defaultdict(set)
+    shared_replace_targets: dict[str, tuple[str, str, str, str]] = {}
+    shared_replace_counts: Counter[str] = Counter()
     for correction in corrections:
         required = (
             "source_id", "expected_source_row_sha256", "target_chebi_id",
@@ -44,7 +53,7 @@ def apply_structure_corrections(
             raise ValueError("structure correction requires complete pins, chemistry and attribution")
         source_id = correction["source_id"]
         action = correction.get("action")
-        if action not in {"REPLACE_WITH_CHEBI", "SPLIT_SHARED_WITH_CHEBI"}:
+        if action not in ALLOWED_ACTIONS:
             raise ValueError(f"{source_id}: invalid structure correction action")
         if source_id in seen_sources:
             raise ValueError(f"{source_id}: duplicate structure correction")
@@ -82,18 +91,44 @@ def apply_structure_corrections(
                 or not re.fullmatch(r"CHEBI:\d+", target["chebi_id"])
                 or not re.fullmatch(r"[A-Z]{14}-[A-Z]{10}-[A-Z]", new_key)):
             raise ValueError(f"{source_id}: target must be a structured 3-star ChEBI entry")
-        if (not old_key or new_key in source_keys or new_key in seen_targets
+        target_owner = seen_targets.get(new_key)
+        if (not old_key or new_key in source_keys
+                or (target_owner is not None
+                    and target_owner != ("REPLACE_SHARED_WITH_CHEBI", old_key))
                 or sum(row["standard_inchi_key"] == new_key for row in chebi_rows) != 1):
             raise ValueError(f"{source_id}: structure correction requires unambiguous, distinct owners")
+        actions_by_old_key[old_key].add(action)
+        if len(actions_by_old_key[old_key]) > 1:
+            raise ValueError(f"{source_id}: cannot mix structure correction actions on {old_key}")
         if action == "REPLACE_WITH_CHEBI":
             if source_keys[old_key] != 1:
                 raise ValueError(f"{source_id}: structure correction requires unambiguous, distinct owners")
-        elif source_keys[old_key] <= 1 or remaining_source_keys[old_key] <= 1:
-            raise ValueError(
-                f"{source_id}: split structure correction requires a shared source key with a remaining owner"
+        elif action == "SPLIT_SHARED_WITH_CHEBI":
+            if source_keys[old_key] <= 1 or remaining_source_keys[old_key] <= 1:
+                raise ValueError(
+                    f"{source_id}: split structure correction requires a shared source key "
+                    "with a remaining owner"
+                )
+        else:
+            if source_keys[old_key] <= 1:
+                raise ValueError(
+                    f"{source_id}: shared structure replacement requires a shared source key"
+                )
+            target_sig = (
+                correction["target_chebi_id"],
+                correction["expected_target_row_sha256"],
+                correction["standard_inchi"],
+                correction["stereo_complete"],
             )
+            if old_key in shared_replace_targets and shared_replace_targets[old_key] != target_sig:
+                raise ValueError(
+                    f"{source_id}: shared structure replacement for {old_key} requires an "
+                    "identical ChEBI target across all rows"
+                )
+            shared_replace_targets[old_key] = target_sig
+            shared_replace_counts[old_key] += 1
         remaining_source_keys[old_key] -= 1
-        seen_targets.add(new_key)
+        seen_targets[new_key] = (action, old_key)
         note = (
             f"Curated structure replacement for MIBiG {source_id}, version "
             f"{original['entry_version']}: {old_key} -> {target['chebi_id']} ({new_key}). "
@@ -115,6 +150,12 @@ def apply_structure_corrections(
             "structure_correction_note": note,
             "structure_correction_reference": reference,
         })
-        if action == "REPLACE_WITH_CHEBI":
+        if action in {"REPLACE_WITH_CHEBI", "REPLACE_SHARED_WITH_CHEBI"}:
             result[index]["structure_correction_old_key"] = old_key
+    for old_key, count in shared_replace_counts.items():
+        if count != source_keys[old_key] or remaining_source_keys[old_key] != 0:
+            raise ValueError(
+                f"shared structure replacement for {old_key} must cover all "
+                f"{source_keys[old_key]} rows sharing that key"
+            )
     return result

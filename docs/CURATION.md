@@ -22,13 +22,18 @@ consumer before recording a new decision here.
 
 ## MIBiG structure corrections
 
-`curation/mibig_structure_corrections.tsv` supports two narrow actions:
+`curation/mibig_structure_corrections.tsv` supports three narrow actions:
 `REPLACE_WITH_CHEBI`, which replaces one uniquely owned MIBiG compound structure
-with one unambiguous 3-star ChEBI default structure, and
+with one unambiguous 3-star ChEBI default structure;
 `SPLIT_SHARED_WITH_CHEBI`, which splits one false shared-structure MIBiG row
 onto an unambiguous, unoccupied 3-star ChEBI default structure while leaving at
-least one remaining MIBiG owner on the shared key. Neither action modifies raw
-inventories, merges existing owners, or declares the old and new structures equal.
+least one remaining MIBiG owner on the shared key; and
+`REPLACE_SHARED_WITH_CHEBI`, which atomically replaces every MIBiG row sharing an
+upstream structure key with the same unambiguous, unoccupied 3-star ChEBI default
+structure when all rows in that shared group denote the identical compound (rejecting
+partial group coverage, mixed actions on the same source key, or disagreeing target
+chemistry). None of these actions modifies raw inventories, merges distinct existing
+owners, or declares the old and new structures equal.
 
 The `source_id` is `BGC accession:compound_index`. The two
 `expected_*_row_sha256` values pin the **complete parsed source and target rows**,

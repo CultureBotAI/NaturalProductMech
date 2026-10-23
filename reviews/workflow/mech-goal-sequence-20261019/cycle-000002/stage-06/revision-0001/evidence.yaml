@@ -1,0 +1,44 @@
+schema_version: 1.0.0
+repository_key: naturalproductmech
+github_repository: CultureBotAI/NaturalProductMech
+run_id: mech-goal-sequence-20261019
+cycle: 2
+stage: 6
+revision: 1
+outcome: completed
+summary: >-
+  Froze INFRA_TASKS.md at 2026-10-23T16:39:58Z (SHA-256 9f4566436225fff27bce53bbd6ed8761028b474167e5b9d35a1353946bf9ce96),
+  created a dependency-aware implementation plan for naturalproductmech-infra-0002 (#1015), implemented atomic multi-row
+  REPLACE_SHARED_WITH_CHEBI structure replacement in src/naturalproductmech/curate/structure_corrections.py and consolidated
+  multi-row structure-correction discussions in scripts/seed_from_sources.py, added 5 unit tests in tests/test_structure_corrections.py,
+  documented REPLACE_SHARED_WITH_CHEBI in docs/CURATION.md, updated INFRA_TASKS.md, and passed all repository validation gates.
+source_revision: 3a778f8551119c2a9fc28ca908587b9305c53b6d
+scope_frozen_at: '2026-10-23T16:39:58Z'
+artifacts:
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-06/revision-0001/infra_snapshot.md
+    sha256: 9f4566436225fff27bce53bbd6ed8761028b474167e5b9d35a1353946bf9ce96
+    kind: infra_snapshot
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-06/revision-0001/implementation_plan.md
+    sha256: cfed68843d1ca9b82f447af62bdc60d3c048ebb00a1905b67f3fd852b5267271
+    kind: implementation_plan
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-06/revision-0001/validation.md
+    sha256: 08dea84e543a9dfdfa63f97dec12716d3f8d3caeb0f0779e0724ace41da84212
+    kind: validation
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-06/revision-0001/coverage.json
+    sha256: e91fc16b6eeccc10205fde3f2fc2eef787f588ac7d8c81fafe01780cab8c6d33
+    kind: supporting
+findings: []
+groups: []
+infra_tasks:
+  - task_id: naturalproductmech-infra-0002
+    summary: Support atomic multi-row REPLACE_SHARED_WITH_CHEBI structure replacement in structure_corrections.py
+    status: resolved
+    issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/1015
+    resolution_evidence:
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-06/revision-0001/implementation_plan.md
+      - reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-06/revision-0001/validation.md
+    disposition: >-
+      Resolved in cycle 2 stage 6 (#1015): added REPLACE_SHARED_WITH_CHEBI in src/naturalproductmech/curate/structure_corrections.py
+      and consolidated multi-row structure-correction discussions in scripts/seed_from_sources.py, with 5 unit tests in
+      tests/test_structure_corrections.py and documentation in docs/CURATION.md.
+carry_forward_ids: []
