@@ -39,9 +39,37 @@ producer_organisms:
   notes: 'Locus evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
     this field grades the taxon claim, which is a different question.'
   evidence:
-  - reference: PMID:1368505
+  - reference: DOI:10.1016/j.fgb.2007.03.008
     evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0000405 entry version 5; citation taken from the entry level
+    notes: MIBiG BGC0000405 entry version 5; claim-specific citation selected through
+      a reviewed producer_reference correction. This remains a database assertion,
+      not independently graded experimental evidence.
+  - reference: PMID:1368505
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Citation routing only. The imported entry-level reference PMID:1368505
+      (Smith et al., Bio/Technology 1990;8(1):39-41, DOI:10.1038/nbt0190-39) reports
+      1990 heterologous cosmid pDJB3-G1 expression in Neurospora crassa and Aspergillus
+      niger and predates GenBank EF601124.1 (coordinates 22186..33473) by 17 years.
+      Route the BGC0000405:1 (ACV) producer and locus claims to van den Berg et al.
+      2007 (PMID:17548217, DOI:10.1016/j.fgb.2007.03.008), which sequenced and functionally
+      characterized the 56.8 kb EF601124.1 penicillin cluster in P. chrysogenum Wisconsin
+      54-1255, without altering taxon, structure identity, or evidence grades. See
+      issue #1023. Original imported citation PMID:1368505 (ENTRY) remains in the
+      raw inventory, not as support for this claim. MIBiG source row BGC0000405:1;
+      SHA256 50cbd967cf8076f7cbfa5a77bbb9b2910e1e37593d10edea50ad6c3a83316de1. Curator:
+      antigravity; date: 2026-10-23. Taxon, locus, chemistry and evidence grades are
+      unchanged.'
+  - reference: DOI:10.1016/j.fgb.2007.03.008
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Strain context: Wisconsin 54-1255. Van den Berg et al. 2007 (PMID:17548217,
+      DOI:10.1016/j.fgb.2007.03.008) and GenBank EF601124.1 explicitly identify Penicillium
+      chrysogenum strain Wisconsin 54-1255 as the sequenced and functionally characterized
+      56.8 kb penicillin cluster host for BGC0000405:1 (ACV). Preserve NCBITaxon:5076
+      and existing SOURCE_ASSERTION/CLUSTER_DEMONSTRATED grades. See issue #1022.
+      Taxon identity and evidence grade are unchanged; this is not a species-wide
+      experiment. MIBiG source row BGC0000405:1; SHA256 50cbd967cf8076f7cbfa5a77bbb9b2910e1e37593d10edea50ad6c3a83316de1.
+      Curator: antigravity; date: 2026-10-23.'
+  strain: Wisconsin 54-1255
 biosynthetic_gene_clusters:
 - accession: mibig:BGC0000405
   entry_version: '5'
@@ -49,9 +77,26 @@ biosynthetic_gene_clusters:
   organism_taxon_id: NCBITaxon:5076
   organism_label: Penicillium chrysogenum
   evidence:
-  - reference: PMID:1368505
+  - reference: DOI:10.1016/j.fgb.2007.03.008
     evidence_type: DATABASE_ASSERTION
-    notes: MIBiG BGC0000405 entry version 5; citation taken from the entry level
+    notes: MIBiG BGC0000405 entry version 5; claim-specific citation selected through
+      a reviewed locus_reference correction. This remains a database assertion, not
+      independently graded experimental evidence.
+  - reference: PMID:1368505
+    evidence_type: CURATOR_INFERENCE
+    notes: 'Citation routing only. The imported entry-level reference PMID:1368505
+      (Smith et al., Bio/Technology 1990;8(1):39-41, DOI:10.1038/nbt0190-39) reports
+      1990 heterologous cosmid pDJB3-G1 expression in Neurospora crassa and Aspergillus
+      niger and predates GenBank EF601124.1 (coordinates 22186..33473) by 17 years.
+      Route the BGC0000405:1 (ACV) producer and locus claims to van den Berg et al.
+      2007 (PMID:17548217, DOI:10.1016/j.fgb.2007.03.008), which sequenced and functionally
+      characterized the 56.8 kb EF601124.1 penicillin cluster in P. chrysogenum Wisconsin
+      54-1255, without altering taxon, structure identity, or evidence grades. See
+      issue #1023. Original imported citation PMID:1368505 (ENTRY) remains in the
+      raw inventory, not as support for this claim. MIBiG source row BGC0000405:1;
+      SHA256 50cbd967cf8076f7cbfa5a77bbb9b2910e1e37593d10edea50ad6c3a83316de1. Curator:
+      antigravity; date: 2026-10-23. Taxon, locus, chemistry and evidence grades are
+      unchanged.'
   genome_accession: genbank:EF601124.1
   bgc_class:
   - NRPS
@@ -494,3 +539,7 @@ curation_history:
     graph on ACV (CHEBI:58572) to include downstream IpnA isopenicillin N synthase
     (UniProtKB:B6HLU0, RHEA:22428) converting ACV to isopenicillin N (CHEBI:18165).
   llm_assisted: true
+- timestamp: '2026-10-23T14:34:41Z'
+  curator: seed_from_sources
+  action: SEEDED_FROM_SOURCES
+  changes: Seeded from the committed inventories and curation tables.
