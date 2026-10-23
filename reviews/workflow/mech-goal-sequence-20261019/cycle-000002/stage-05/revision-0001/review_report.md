@@ -11,7 +11,7 @@
 
 ## Summary
 
-Fresh post-remediation category review of the 3-record Penicillium chrysogenum penicillin biosynthetic cohort (CHEBI:58572 n-5s-5-ammonio-5-carboxylatopentanoyl-l-cysteinyl-d-valinate.yaml, CHEBI:18165 isopenicillin-n.yaml, CHEBI:51765 benzylpenicillin-sodium.yaml). Confirms that (1) F-PEN-001 / F-PEN-G-001 (#1022) is resolved: BGC0000404:1 on benzylpenicillin-sodium.yaml carries producer_organisms[0].strain == AS-P-78 (Fierro et al. 2006, DOI:10.1016/j.fgb.2006.03.001) and BGC0000405:1..3 across all three cohort records carry strain == Wisconsin 54-1255 (van den Berg et al. 2007, DOI:10.1016/j.fgb.2007.03.008) via source-pinned rows in curation/mibig_producer_strains.tsv while preserving NCBITaxon:5076, SOURCE_ASSERTION, and SEEDED status; (2) F-PEN-002 / F-PEN-G-002 (#1023) is resolved: BGC0000404:1 producer and locus claims route to DOI:10.1016/j.fgb.2006.03.001 (preserving Chain et al. 1940 DOI:10.1016/s0140-6736(00)87452-8 as source_reference) and BGC0000405:1..3 producer and locus claims route to DOI:10.1016/j.fgb.2007.03.008 (preserving Smith et al. 1990 PMID:1368505 as source_reference) via source-pinned rows in curation/mibig_claim_references.tsv; and (3) F-PEN-003 / F-PEN-G-003 (#1015) remains documented and deferred as an upstream salt/protonation-state representation boundary.
+Fresh post-remediation category review of the 3-record Penicillium chrysogenum penicillin biosynthetic cohort (CHEBI:58572 n-5s-5-ammonio-5-carboxylatopentanoyl-l-cysteinyl-d-valinate.yaml, CHEBI:18165 isopenicillin-n.yaml, CHEBI:51765 benzylpenicillin-sodium.yaml). Confirms that (1) F-PEN-001 / F-BPEN-001 (#1022) is resolved: BGC0000404:1 on benzylpenicillin-sodium.yaml carries producer_organisms[0].strain == AS-P-78 (Fierro et al. 2006, DOI:10.1016/j.fgb.2006.03.001) and BGC0000405:1..3 across all three cohort records carry strain == Wisconsin 54-1255 (van den Berg et al. 2007, DOI:10.1016/j.fgb.2007.03.008) via source-pinned rows in curation/mibig_producer_strains.tsv while preserving NCBITaxon:5076, SOURCE_ASSERTION, and SEEDED status; (2) F-PEN-002 / F-BPEN-002 (#1023) is resolved: BGC0000404:1 producer and locus claims route to DOI:10.1016/j.fgb.2006.03.001 (preserving Chain et al. 1940 DOI:10.1016/s0140-6736(00)87452-8 as source_reference) and BGC0000405:1..3 producer and locus claims route to DOI:10.1016/j.fgb.2007.03.008 (preserving Smith et al. 1990 PMID:1368505 as source_reference) via source-pinned rows in curation/mibig_claim_references.tsv; and (3) F-PEN-003 / F-BPEN-003 (#1015) remains documented and deferred as an upstream salt/protonation-state representation boundary.
 
 ## Scope And Provenance
 
@@ -169,17 +169,17 @@ scientific_review: true
 summary: 'Fresh post-remediation category review of the 3-record Penicillium chrysogenum
   penicillin biosynthetic cohort (CHEBI:58572 n-5s-5-ammonio-5-carboxylatopentanoyl-l-cysteinyl-d-valinate.yaml,
   CHEBI:18165 isopenicillin-n.yaml, CHEBI:51765 benzylpenicillin-sodium.yaml). Confirms
-  that (1) F-PEN-001 / F-PEN-G-001 (#1022) is resolved: BGC0000404:1 on benzylpenicillin-sodium.yaml
+  that (1) F-PEN-001 / F-BPEN-001 (#1022) is resolved: BGC0000404:1 on benzylpenicillin-sodium.yaml
   carries producer_organisms[0].strain == AS-P-78 (Fierro et al. 2006, DOI:10.1016/j.fgb.2006.03.001)
   and BGC0000405:1..3 across all three cohort records carry strain == Wisconsin 54-1255
   (van den Berg et al. 2007, DOI:10.1016/j.fgb.2007.03.008) via source-pinned rows
   in curation/mibig_producer_strains.tsv while preserving NCBITaxon:5076, SOURCE_ASSERTION,
-  and SEEDED status; (2) F-PEN-002 / F-PEN-G-002 (#1023) is resolved: BGC0000404:1
+  and SEEDED status; (2) F-PEN-002 / F-BPEN-002 (#1023) is resolved: BGC0000404:1
   producer and locus claims route to DOI:10.1016/j.fgb.2006.03.001 (preserving Chain
   et al. 1940 DOI:10.1016/s0140-6736(00)87452-8 as source_reference) and BGC0000405:1..3
   producer and locus claims route to DOI:10.1016/j.fgb.2007.03.008 (preserving Smith
   et al. 1990 PMID:1368505 as source_reference) via source-pinned rows in curation/mibig_claim_references.tsv;
-  and (3) F-PEN-003 / F-PEN-G-003 (#1015) remains documented and deferred as an upstream
+  and (3) F-PEN-003 / F-BPEN-003 (#1015) remains documented and deferred as an upstream
   salt/protonation-state representation boundary.'
 source:
   git_revision: 0b02eb3e60e3947bb91bc7c09ddf0dedbc19d928
@@ -216,7 +216,7 @@ source:
     sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
     role: context
   - path: curation/mibig_claim_references.tsv
-    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    sha256: c10933c90b96a3368e1031920787d0ee03700015d589c4abb4ff310fb5434bca
     role: context
   - path: curation/mibig_locus_evidence_overrides.tsv
     sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
@@ -663,7 +663,7 @@ evidence:
     BGC0000405:1..3 -> DOI:10.1016/j.fgb.2007.03.008 (from PMID:1368505)
   accessed_at: '2026-10-23T14:41:33.000000Z'
   support: supports
-  snapshot_sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+  snapshot_sha256: c10933c90b96a3368e1031920787d0ee03700015d589c4abb4ff310fb5434bca
   summary: Source-pinned claim-reference rows route BGC0000404:1 and BGC0000405:1..3
     producer and locus claims to Fierro et al. 2006 and van den Berg et al. 2007 while
     preserving original entry citations in CURATOR_INFERENCE audit notes (#1023).
@@ -832,7 +832,7 @@ findings:
     finding_id: F-PEN-001
   - repository: CultureBotAI/NaturalProductMech
     review_id: 20261023T115935Z-benzylpenicillin-sodium-record-review
-    finding_id: F-PEN-G-001
+    finding_id: F-BPEN-001
   external_issues:
   - https://github.com/CultureBotAI/NaturalProductMech/issues/1022
 - finding_id: F-PEN-002
@@ -914,7 +914,7 @@ findings:
     finding_id: F-PEN-002
   - repository: CultureBotAI/NaturalProductMech
     review_id: 20261023T115935Z-benzylpenicillin-sodium-record-review
-    finding_id: F-PEN-G-002
+    finding_id: F-BPEN-002
   external_issues:
   - https://github.com/CultureBotAI/NaturalProductMech/issues/1023
 - finding_id: F-PEN-003
@@ -993,7 +993,7 @@ findings:
     finding_id: F-PEN-003
   - repository: CultureBotAI/NaturalProductMech
     review_id: 20261023T115935Z-benzylpenicillin-sodium-record-review
-    finding_id: F-PEN-G-003
+    finding_id: F-BPEN-003
   external_issues:
   - https://github.com/CultureBotAI/NaturalProductMech/issues/1015
 actions:
