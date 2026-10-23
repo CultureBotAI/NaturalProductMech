@@ -216,7 +216,7 @@ source:
     sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
     role: context
   - path: curation/mibig_claim_references.tsv
-    sha256: c10933c90b96a3368e1031920787d0ee03700015d589c4abb4ff310fb5434bca
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
     role: context
   - path: curation/mibig_locus_evidence_overrides.tsv
     sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
@@ -663,7 +663,7 @@ evidence:
     BGC0000405:1..3 -> DOI:10.1016/j.fgb.2007.03.008 (from PMID:1368505)
   accessed_at: '2026-10-23T14:41:33.000000Z'
   support: supports
-  snapshot_sha256: c10933c90b96a3368e1031920787d0ee03700015d589c4abb4ff310fb5434bca
+  snapshot_sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
   summary: Source-pinned claim-reference rows route BGC0000404:1 and BGC0000405:1..3
     producer and locus claims to Fierro et al. 2006 and van den Berg et al. 2007 while
     preserving original entry citations in CURATOR_INFERENCE audit notes (#1023).
