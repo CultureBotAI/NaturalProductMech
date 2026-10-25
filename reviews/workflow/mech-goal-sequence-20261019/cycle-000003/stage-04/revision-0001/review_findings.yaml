@@ -1,0 +1,245 @@
+schema_version: 1.0.0
+run_id: mech-goal-sequence-20261019
+cycle: 3
+stage_order: 4
+stage_id: record_review
+revision: 1
+git_commit: d14547bc76e0582aca15eeb073e203d28ea7548e
+native_review_ids:
+- 20261025T055000Z-streptomyces-youssoufiensis-youssoufene-cohort
+- 20261025T055005Z-youssoufene-a1-record-review
+native_review_bundles:
+- review_id: 20261025T055000Z-streptomyces-youssoufiensis-youssoufene-cohort
+  yaml_path: reviews/structured/20261025T055000Z-streptomyces-youssoufiensis-youssoufene-cohort/review.yaml
+  yaml_sha256: f55bc505b5e614cc3732c6abbabb9216a33a3a8fe2310dfc1adfe5846681c120
+  markdown_path: reviews/structured/20261025T055000Z-streptomyces-youssoufiensis-youssoufene-cohort/review.md
+  markdown_sha256: 2b336c1b8dbb49abb7993f789abda2de10f8bb803b9e8446cb6b88e63cd5b9c0
+- review_id: 20261025T055005Z-youssoufene-a1-record-review
+  yaml_path: reviews/structured/20261025T055005Z-youssoufene-a1-record-review/review.yaml
+  yaml_sha256: cd4bed0269fe80314aee0757ab8369985115cedc5607a1520babb6301a2a3cb7
+  markdown_path: reviews/structured/20261025T055005Z-youssoufene-a1-record-review/review.md
+  markdown_sha256: 3f122881a3f3a11eeb2db6a90f74ae76f26e71cfa64923a0528b88c281fff5e5
+findings:
+- id: F-YSF-001
+  title: Missing OUC6819 producer strain qualifications on Streptomyces youssoufiensis (NCBITaxon:654447, BGC0002547:1..5)
+    across all 5 youssoufene records
+  severity: high
+  native_severity: major
+  category: completeness
+  status: open
+  records:
+  - data/natural_products/polyketides/youssoufene-a1.yaml
+  - data/natural_products/unclassified/youssoufene-b1.yaml
+  - data/natural_products/unclassified/youssoufene-b2.yaml
+  - data/natural_products/unclassified/youssoufene-b3.yaml
+  - data/natural_products/unclassified/youssoufene-b4.yaml
+  field_paths:
+  - producer_organisms[0].strain
+  - producer_organisms[0].evidence
+  source_rows:
+  - source: mibig_4.0
+    row_id: BGC0002547:1
+    row_sha256: 1d48b2327fd1ff6df8dacc84f722e6dcef3c298cafc6442b51a0d2190b11547f
+  - source: mibig_4.0
+    row_id: BGC0002547:2
+    row_sha256: acd26c9ce0f501c27e8a2d0097dce5d2fbee8400976c822752702b3b9c486417
+  - source: mibig_4.0
+    row_id: BGC0002547:3
+    row_sha256: ea799308511137361955d15f115be158a232e46e13f06711cf9e271ad1fe89ed
+  - source: mibig_4.0
+    row_id: BGC0002547:4
+    row_sha256: e9c6f5c63380450c1cd78dee862c1662fb8c78e013db12318271be20b551eeae
+  - source: mibig_4.0
+    row_id: BGC0002547:5
+    row_sha256: deba7c35303ec40e78d46bdb947fd45ba3e178c5547f16c8540e2ec60909e553
+  evidence_refs:
+  - PMID:31891272
+  - DOI:10.1021/acs.orglett.9b04559
+  - PMID:33155752
+  - DOI:10.1002/anie.202007777
+  - https://www.ebi.ac.uk/ena/browser/api/embl/MN844187.1
+  description: All five youssoufene records (youssoufene-a1.yaml, youssoufene-b1.yaml, youssoufene-b2.yaml, youssoufene-b3.yaml,
+    youssoufene-b4.yaml) omit producer_organisms[0].strain on Streptomyces youssoufiensis (NCBITaxon:654447, seeded from mibig:BGC0002547,
+    genbank:MN844187.1, 1..20186) because MIBiG 4.0 reports species-level organism_name='Streptomyces youssoufiensis'. Both
+    primary publications (Li et al., Org. Lett. 2020;22(2):704-708, PMID:31891272, DOI:10.1021/acs.orglett.9b04559; Liu et
+    al., Angew. Chem. Int. Ed. 2021;60(1):153-158, PMID:33155752, DOI:10.1002/anie.202007777), GenBank MN844187.1 (/strain="OUC6819"),
+    and each record's own causal_graphs[0].nodes[0..6].protein_examples[0].strain ('OUC6819') identify the sequenced producer
+    strain as Streptomyces youssoufiensis OUC6819.
+  proposed_remediation: Add five source-pinned rows (BGC0002547:1..5) to curation/mibig_producer_strains.tsv with strain='OUC6819'
+    and reference=PMID:31891272, then re-seed in Stage 5 (resolve_review_findings).
+- id: F-YSF-002
+  title: Misattributed author citation ('Deng et al.' instead of 'Liu et al.') across 80 DOI:10.1002/anie.202007777 evidence
+    notes on all 5 youssoufene records
+  severity: medium
+  native_severity: major
+  category: provenance
+  status: open
+  records:
+  - data/natural_products/polyketides/youssoufene-a1.yaml
+  - data/natural_products/unclassified/youssoufene-b1.yaml
+  - data/natural_products/unclassified/youssoufene-b2.yaml
+  - data/natural_products/unclassified/youssoufene-b3.yaml
+  - data/natural_products/unclassified/youssoufene-b4.yaml
+  field_paths:
+  - biosynthetic_pathway[0].evidence[0].notes
+  - biosynthetic_pathway[1].evidence[0].notes
+  - biosynthetic_pathway[2].evidence[0].notes
+  - biosynthetic_pathway[3].evidence[0].notes
+  - causal_graphs[0].edges[0].evidence[0].notes
+  - causal_graphs[0].edges[1].evidence[0].notes
+  - causal_graphs[0].edges[2].evidence[0].notes
+  - causal_graphs[0].edges[3].evidence[0].notes
+  - causal_graphs[0].edges[4].evidence[0].notes
+  - causal_graphs[0].edges[5].evidence[0].notes
+  - causal_graphs[0].edges[6].evidence[0].notes
+  - causal_graphs[0].edges[7].evidence[0].notes
+  - causal_graphs[0].edges[8].evidence[0].notes
+  - causal_graphs[0].edges[9].evidence[0].notes
+  - causal_graphs[0].edges[10].evidence[0].notes
+  - causal_graphs[0].edges[11].evidence[0].notes
+  source_rows:
+  - source: mibig_4.0
+    row_id: BGC0002547:1
+    row_sha256: 1d48b2327fd1ff6df8dacc84f722e6dcef3c298cafc6442b51a0d2190b11547f
+  - source: mibig_4.0
+    row_id: BGC0002547:2
+    row_sha256: acd26c9ce0f501c27e8a2d0097dce5d2fbee8400976c822752702b3b9c486417
+  - source: mibig_4.0
+    row_id: BGC0002547:3
+    row_sha256: ea799308511137361955d15f115be158a232e46e13f06711cf9e271ad1fe89ed
+  - source: mibig_4.0
+    row_id: BGC0002547:4
+    row_sha256: e9c6f5c63380450c1cd78dee862c1662fb8c78e013db12318271be20b551eeae
+  - source: mibig_4.0
+    row_id: BGC0002547:5
+    row_sha256: deba7c35303ec40e78d46bdb947fd45ba3e178c5547f16c8540e2ec60909e553
+  evidence_refs:
+  - PMID:33155752
+  - DOI:10.1002/anie.202007777
+  - PMID:31891272
+  - DOI:10.1021/acs.orglett.9b04559
+  description: Across all 5 youssoufene records, every biosynthetic_pathway[0..3].evidence[0].notes (4 per record) and every
+    causal_graphs[0].edges[0..11].evidence[0].notes (12 per record) citing DOI:10.1002/anie.202007777 (16 notes per record;
+    80 notes total) attributes DOI:10.1002/anie.202007777 (Angew. Chem. Int. Ed. 2021;60(1):153-158, PMID:33155752) to 'Deng
+    et al.'. PubMed (PMID:33155752) and Crossref (DOI:10.1002/anie.202007777) verify that the authors of DOI:10.1002/anie.202007777
+    are Zengzhi Liu, Jing Liu, Tingting Li, Huayue Li, Zirong Liu, Yiqian Dong, and Wenli Li ('Liu et al.'), whereas Zhaoxian
+    Deng was a co-author on the 2020 Org. Lett. paper (PMID:31891272, DOI:10.1021/acs.orglett.9b04559).
+  proposed_remediation: Update all 80 curator-owned evidence notes across the 5 youssoufene records in Stage 5 (resolve_review_findings)
+    to attribute DOI:10.1002/anie.202007777 (PMID:33155752) to 'Liu et al. (Angew. Chem. Int. Ed. 2021, PMID:33155752, DOI:10.1002/anie.202007777)'
+    and regenerate HTML pages.
+- id: F-YSF-003
+  title: Upstream NPClassifier split (POLYKETIDES vs UNCLASSIFIED), PROTEIN_COMPLEX / RHEA grounding boundaries, and unindexed
+    BGC0002510 deposit metadata (MT459140.1 / PMID:32860295)
+  severity: low
+  native_severity: minor
+  category: representation
+  status: open
+  records:
+  - data/natural_products/polyketides/youssoufene-a1.yaml
+  - data/natural_products/unclassified/youssoufene-b1.yaml
+  - data/natural_products/unclassified/youssoufene-b2.yaml
+  - data/natural_products/unclassified/youssoufene-b3.yaml
+  - data/natural_products/unclassified/youssoufene-b4.yaml
+  field_paths:
+  - np_pathway
+  - np_classification.pathway_results
+  - np_classification.superclass_results
+  - producer_organisms[1].taxon_id
+  - producer_organisms[1].strain
+  - biosynthetic_pathway[0].enzyme_id
+  - biosynthetic_pathway[0].reaction_id
+  - biosynthetic_pathway[1].enzyme_id
+  - biosynthetic_pathway[1].reaction_id
+  - biosynthetic_pathway[2].reaction_id
+  - biosynthetic_pathway[3].enzyme_id
+  - biosynthetic_pathway[3].reaction_id
+  - causal_graphs[0].nodes[7].grounding_status
+  - causal_graphs[0].nodes[8].grounding_status
+  - causal_graphs[0].nodes[9].grounding_status
+  source_rows:
+  - source: mibig_4.0
+    row_id: BGC0002510:1
+    row_sha256: c3e0435917bbd397fd24aea07e7c3b9d3ab5e82f9c78ef6da21bb8ea14af03a5
+  - source: mibig_4.0
+    row_id: BGC0002510:2
+    row_sha256: 21a73e5aa35fa5662f80788006a9257f1c9e68dc05f7bde528eeb59e1299ae32
+  - source: mibig_4.0
+    row_id: BGC0002510:3
+    row_sha256: c641bc135402bc0f73b1b4d3b15aad09f0623693626d416a3bb8287887656a4f
+  - source: mibig_4.0
+    row_id: BGC0002510:4
+    row_sha256: 3ee732411d55c6c81ada94e96ccd5ffa512f45c0f9814c8e16799ae118465741
+  - source: mibig_4.0
+    row_id: BGC0002510:5
+    row_sha256: 440036d24978d7e86647f1e21328444c39d2ff1caf96715ffa10e15679c6b67f
+  evidence_refs:
+  - PMID:31891272
+  - PMID:33155752
+  description: 1) NPClassifier (npclassifier.gnps2.org@2026-04-06) classifies dimeric youssoufene-a1.yaml under POLYKETIDES
+    ('Linear polyketides') while returning empty pathway_results=[] (UNCLASSIFIED) for monomeric youssoufene-b1.yaml..youssoufene-b4.yaml.
+    2) Heterodimeric KS/CLF PROTEIN_COMPLEX nodes (ysfbc_ks_clf [nodes[7]], ysfde_ks_clf [nodes[8]], ysfjk_ks_clf [nodes[9]])
+    remain UNGROUNDED at the complex level (while subunit ENZYME nodes nodes[0..3, 5..6] carry grounding.id and protein_examples
+    and connect via 'is subunit of' edges edges[0..5]), omit scalar complex enzyme_id on biosynthetic_pathway steps 1, 2,
+    and 4, and omit RHEA reaction_id on steps 1-4 due to ComplexPortal/RHEA scope boundaries. 3) producer_organisms[1] (NCBITaxon:1931,
+    Streptomyces sp., BGC0002510:1..5, MT459140.1:71..11851, PMID:32860295) remains genus-level without strain because MT459140.1
+    and PMID:32860295 are not indexed in ENA/PubMed.
+  proposed_remediation: Preserve as an explicit source-limited representation boundary in Stage 5 (resolve_review_findings).
+- id: F-PEN-003
+  carried_from: F-PEN-003
+  issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/1015
+  title: Upstream MIBiG salt and protonation-state encoding on CHEBI:51765 (benzylpenicillin sodium vs biological CHEBI:51354)
+    and CHEBI:58572 (monoanion vs neutral ACV CHEBI:28496)
+  severity: low
+  native_severity: minor
+  category: representation
+  status: deferred
+  records:
+  - data/natural_products/amino_acids_and_peptides/benzylpenicillin-sodium.yaml
+  - data/natural_products/amino_acids_and_peptides/n-5s-5-ammonio-5-carboxylatopentanoyl-l-cysteinyl-d-valinate.yaml
+  field_paths:
+  - identifier
+  - label
+  - chemical_structure.standard_inchi_key
+  - chemical_structure.smiles
+  - discussions
+  evidence_refs:
+  - PMID:2102893
+  - PMID:15548609
+  - https://github.com/CultureBotAI/NaturalProductMech/issues/1015
+  description: 'Carried forward from Cycle 2 Stage 5 (reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/evidence.yaml):
+    BGC0000404:1 and BGC0000405:3 encode penicillin G as the pharmaceutical sodium salt (CHEBI:51765) rather than biological
+    benzylpenicillin(1-) (CHEBI:51354), and BGC0000405:1 encodes ACV as the monoanion zwitterion (CHEBI:58572). Cycle 2 Stage
+    6 (#1015) implemented REPLACE_SHARED_WITH_CHEBI in structure_corrections.py; carried forward to Cycle 3 Stage 5 for data-migration
+    vs boundary adjudication.'
+  proposed_remediation: Evaluate in Cycle 3 Stage 5 (resolve_review_findings) whether to apply REPLACE_SHARED_WITH_CHEBI or
+    retain as a documented salt/protonation boundary.
+- id: F-PIK-DES-003
+  carried_from: F-PIK-DES-003
+  issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/1012
+  title: Upstream stereo-incomplete cyclic tautomer on BGC0000899:1 (desosamine.yaml) and unmerged BGC0000094/BGC0000898 cluster
+    split
+  severity: low
+  native_severity: minor
+  category: representation
+  status: deferred
+  records:
+  - data/natural_products/carbohydrates/desosamine.yaml
+  - data/natural_products/carbohydrates/desosamine-2.yaml
+  - data/natural_products/polyketides/methymycin.yaml
+  - data/natural_products/polyketides/pikromycin.yaml
+  - data/natural_products/polyketides/neomethymycin.yaml
+  - data/natural_products/polyketides/narbomycin.yaml
+  field_paths:
+  - chemical_structure.standard_inchi_key
+  - chemical_structure.smiles
+  - biosynthetic_gene_clusters[0].link_evidence_basis
+  - biosynthetic_gene_clusters[0].locus_evidence_methods
+  evidence_refs:
+  - PMID:9770448
+  - https://github.com/CultureBotAI/NaturalProductMech/issues/1012
+  description: 'Carried forward from Cycle 2 Stage 5 (reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/evidence.yaml):
+    upstream tautomeric/stereochemical separation between desosamine.yaml (ZOYWWAGVGBSJDL-UHFFFAOYSA-N) and desosamine-2.yaml
+    (CHEBI:32540, VTJCSBJRQLZNHE-CSMHCCOUSA-N), plus MIBiG 4.0 deposit split of the S. venezuelae ATCC 15439 pik/des cluster
+    across BGC0000094 and BGC0000898.'
+  proposed_remediation: 'Remain deferred under open GitHub issue #1012 until a 3-star stereochemically complete cyclic D-desosamine
+    ChEBI entry and deposit-level AF079762.1/AF079138.1 sequence alignment are available.'

@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "mech-goal-sequence-20261019",
+  "cycle": 3,
+  "stage_order": 4,
+  "stage_id": "record_review",
+  "revision": 1,
+  "git_commit": "d14547bc76e0582aca15eeb073e203d28ea7548e",
+  "frozen_inventory": {
+    "paths_tsv": "data/natural_products/PATHS.tsv",
+    "paths_tsv_sha256": "2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3",
+    "owner_records_total": 3116,
+    "owner_records_with_inline_causal_graphs": 290,
+    "owner_records_with_causal_graph_refs": 27,
+    "causal_graph_components_total": 246,
+    "causal_graph_components_manifest_sha256": "f0db8ac7f96b28947fb53eee86c7e2b4148319cba1742a1a6a75686613972fe7",
+    "eligible_records_total": 3362,
+    "reviewed_records_total": 3362,
+    "curation_status_breakdown": {
+      "SEEDED": 3116
+    },
+    "records_with_reviewed_curation_history_action": 11,
+    "corpus_gates": {
+      "verify_corpus": {
+        "records_verified": 3116,
+        "errors": 0,
+        "output_sha256": "c9bcf7add9c5022125581df2e6b486735cd23803e49b73a4a2d6a60b62eebc5e"
+      },
+      "validate_id_label_correspondence": {
+        "canonical_matches": 12619,
+        "synonym_matches": 567,
+        "documented_exceptions": 35,
+        "id_not_found": 0,
+        "label_mismatch_warn_taxon_labels": 499,
+        "skipped_no_adapter": 4898,
+        "output_sha256": "35423598d9ea0c53a374976d422665d7bfaf789855b7fd3357b97c7bc356f816",
+        "report_tsv_sha256": "fd6b4d6d15cac69220daf9027ac7dcb0a252f509e5bc69d831d181d0d6a6bd6b"
+      },
+      "test_graph_components": {
+        "standalone_components_total": 246,
+        "tests_passed": 40,
+        "tests_failed": 0,
+        "output_sha256": "53e35ce114ca8fbf31b29cd0f5c1bac68a5dc6669944111d81e4323f8136b317"
+      },
+      "curation_worklist_review_records": {
+        "total_worklist_items": 8922,
+        "queues_audited": 12,
+        "queues": {
+          "producer-evidence": 2292,
+          "biosynthesis": 1177,
+          "structure-disagreement": 5,
+          "name-disagreement": 67,
+          "unnamed-producer": 39,
+          "shared-structure": 207,
+          "needs-a-name": 18,
+          "occurrence-only": 12,
+          "pathway-ambiguous": 620,
+          "unresolved-taxa": 3329,
+          "stereo-incomplete": 1124,
+          "record-review": 32
+        },
+        "output_sha256": "2c671a47982350c5968f24b020377eb57b876914d4882d295562790da8f3d330"
+      }
+    }
+  },
+  "deep_review_bundles": [
+    {
+      "review_id": "20261025T055000Z-streptomyces-youssoufiensis-youssoufene-cohort",
+      "kind": "category",
+      "skill_name": "review-yaml-category",
+      "yaml_path": "reviews/structured/20261025T055000Z-streptomyces-youssoufiensis-youssoufene-cohort/review.yaml",
+      "yaml_sha256": "f55bc505b5e614cc3732c6abbabb9216a33a3a8fe2310dfc1adfe5846681c120",
+      "markdown_path": "reviews/structured/20261025T055000Z-streptomyces-youssoufiensis-youssoufene-cohort/review.md",
+      "markdown_sha256": "2b336c1b8dbb49abb7993f789abda2de10f8bb803b9e8446cb6b88e63cd5b9c0",
+      "target_records_count": 5,
+      "targets": [
+        {
+          "record_path": "data/natural_products/polyketides/youssoufene-a1.yaml",
+          "record_id": "naturalproductmech:mibig-78ea4c55fb",
+          "record_sha256": "7bb8f5d4d4bd5e30083973a8a2e41adefe24b1a77f0ad34480e9ba0b15f368a6",
+          "mibig_rows": [
+            "BGC0002510:1",
+            "BGC0002547:1"
+          ],
+          "mibig_row_sha256s": [
+            "c3e0435917bbd397fd24aea07e7c3b9d3ab5e82f9c78ef6da21bb8ea14af03a5",
+            "1d48b2327fd1ff6df8dacc84f722e6dcef3c298cafc6442b51a0d2190b11547f"
+          ],
+          "verdict": "needs_curation",
+          "highest_finding_severity": "major",
+          "native_verdict": "SEEDED retained; 4-step biosynthetic_pathway and 13-node / 12-edge BIOSYNTHESIS graph verified; OUC6819 strain qualification (F-YSF-001) and Liu et al. 2021 evidence note correction (F-YSF-002) queued for Stage 5"
+        },
+        {
+          "record_path": "data/natural_products/unclassified/youssoufene-b1.yaml",
+          "record_id": "naturalproductmech:mibig-ccb60942af",
+          "record_sha256": "ea395342b0f7b1b4b8038e7a731c274e1c1ceb2645f2ea8e94ac5ba8613b7746",
+          "mibig_rows": [
+            "BGC0002510:2",
+            "BGC0002547:2"
+          ],
+          "mibig_row_sha256s": [
+            "21a73e5aa35fa5662f80788006a9257f1c9e68dc05f7bde528eeb59e1299ae32",
+            "acd26c9ce0f501c27e8a2d0097dce5d2fbee8400976c822752702b3b9c486417"
+          ],
+          "verdict": "needs_curation",
+          "highest_finding_severity": "major",
+          "native_verdict": "SEEDED retained; 4-step biosynthetic_pathway and 13-node / 12-edge BIOSYNTHESIS graph verified; OUC6819 strain qualification (F-YSF-001) and Liu et al. 2021 evidence note correction (F-YSF-002) queued for Stage 5"
+        },
+        {
+          "record_path": "data/natural_products/unclassified/youssoufene-b2.yaml",
+          "record_id": "naturalproductmech:mibig-cf5248036e",
+          "record_sha256": "00ec251535ea020620a618880c862ff19eed67e5468f87a65bc227637cdede23",
+          "mibig_rows": [
+            "BGC0002510:3",
+            "BGC0002547:3"
+          ],
+          "mibig_row_sha256s": [
+            "c641bc135402bc0f73b1b4d3b15aad09f0623693626d416a3bb8287887656a4f",
+            "ea799308511137361955d15f115be158a232e46e13f06711cf9e271ad1fe89ed"
+          ],
+          "verdict": "needs_curation",
+          "highest_finding_severity": "major",
+          "native_verdict": "SEEDED retained; 4-step biosynthetic_pathway and 13-node / 12-edge BIOSYNTHESIS graph verified; OUC6819 strain qualification (F-YSF-001) and Liu et al. 2021 evidence note correction (F-YSF-002) queued for Stage 5"
+        },
+        {
+          "record_path": "data/natural_products/unclassified/youssoufene-b3.yaml",
+          "record_id": "naturalproductmech:mibig-f827d9f550",
+          "record_sha256": "65059808b4f28c4fc23f5fbf9b2e4390443c0f59477e4428c998cfee3c0020bc",
+          "mibig_rows": [
+            "BGC0002510:4",
+            "BGC0002547:4"
+          ],
+          "mibig_row_sha256s": [
+            "3ee732411d55c6c81ada94e96ccd5ffa512f45c0f9814c8e16799ae118465741",
+            "e9c6f5c63380450c1cd78dee862c1662fb8c78e013db12318271be20b551eeae"
+          ],
+          "verdict": "needs_curation",
+          "highest_finding_severity": "major",
+          "native_verdict": "SEEDED retained; 4-step biosynthetic_pathway and 13-node / 12-edge BIOSYNTHESIS graph verified; OUC6819 strain qualification (F-YSF-001) and Liu et al. 2021 evidence note correction (F-YSF-002) queued for Stage 5"
+        },
+        {
+          "record_path": "data/natural_products/unclassified/youssoufene-b4.yaml",
+          "record_id": "naturalproductmech:mibig-18ba3c758c",
+          "record_sha256": "f6bf3a389fd5b5f5f60b7d08e922a450cf1409327db785f727b117d4165ff5a7",
+          "mibig_rows": [
+            "BGC0002510:5",
+            "BGC0002547:5"
+          ],
+          "mibig_row_sha256s": [
+            "440036d24978d7e86647f1e21328444c39d2ff1caf96715ffa10e15679c6b67f",
+            "deba7c35303ec40e78d46bdb947fd45ba3e178c5547f16c8540e2ec60909e553"
+          ],
+          "verdict": "needs_curation",
+          "highest_finding_severity": "major",
+          "native_verdict": "SEEDED retained; 4-step biosynthetic_pathway and 13-node / 12-edge BIOSYNTHESIS graph verified; OUC6819 strain qualification (F-YSF-001) and Liu et al. 2021 evidence note correction (F-YSF-002) queued for Stage 5"
+        }
+      ]
+    },
+    {
+      "review_id": "20261025T055005Z-youssoufene-a1-record-review",
+      "kind": "record",
+      "skill_name": "review-yaml-record",
+      "yaml_path": "reviews/structured/20261025T055005Z-youssoufene-a1-record-review/review.yaml",
+      "yaml_sha256": "cd4bed0269fe80314aee0757ab8369985115cedc5607a1520babb6301a2a3cb7",
+      "markdown_path": "reviews/structured/20261025T055005Z-youssoufene-a1-record-review/review.md",
+      "markdown_sha256": "3f122881a3f3a11eeb2db6a90f74ae76f26e71cfa64923a0528b88c281fff5e5",
+      "target_records_count": 1,
+      "targets": [
+        {
+          "record_path": "data/natural_products/polyketides/youssoufene-a1.yaml",
+          "record_id": "naturalproductmech:mibig-78ea4c55fb",
+          "record_sha256": "7bb8f5d4d4bd5e30083973a8a2e41adefe24b1a77f0ad34480e9ba0b15f368a6",
+          "mibig_rows": [
+            "BGC0002510:1",
+            "BGC0002547:1"
+          ],
+          "mibig_row_sha256s": [
+            "c3e0435917bbd397fd24aea07e7c3b9d3ab5e82f9c78ef6da21bb8ea14af03a5",
+            "1d48b2327fd1ff6df8dacc84f722e6dcef3c298cafc6442b51a0d2190b11547f"
+          ],
+          "verdict": "needs_curation",
+          "highest_finding_severity": "major",
+          "native_verdict": "SEEDED retained; OUC6819 producer strain qualification (BGC0002547:1) and Liu et al. 2021 author attribution fix on DOI:10.1002/anie.202007777 evidence notes queued for Stage 5"
+        }
+      ]
+    }
+  ],
+  "open_findings_summary": {
+    "total_open_findings": 3,
+    "total_deferred_carried_forward_findings": 2,
+    "carry_forward_ids": [
+      "F-YSF-001",
+      "F-YSF-002",
+      "F-YSF-003",
+      "F-PEN-003",
+      "F-PIK-DES-003"
+    ]
+  }
+}
