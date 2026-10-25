@@ -8,7 +8,7 @@
   "git_commit": "d14547bc76e0582aca15eeb073e203d28ea7548e",
   "frozen_inventory": {
     "paths_tsv": "data/natural_products/PATHS.tsv",
-    "paths_tsv_sha256": "7b0f3f72d5ebca52abfc04556563b81bb1303f8ef2cb7792917629ebce2e0670",
+    "paths_tsv_sha256": "2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3",
     "owner_records_total": 3116,
     "owner_records_with_inline_causal_graphs": 290,
     "owner_records_with_causal_graph_refs": 27,
@@ -47,7 +47,7 @@
         "queues_audited": 12,
         "queues": {
           "producer-evidence": 2292,
-          "biosynthesis": 1184,
+          "biosynthesis": 1177,
           "structure-disagreement": 5,
           "name-disagreement": 67,
           "unnamed-producer": 39,
@@ -57,7 +57,7 @@
           "pathway-ambiguous": 620,
           "unresolved-taxa": 3329,
           "stereo-incomplete": 1124,
-          "record-review": 25
+          "record-review": 32
         },
         "output_sha256": "2c671a47982350c5968f24b020377eb57b876914d4882d295562790da8f3d330"
       }
@@ -69,90 +69,90 @@
       "kind": "category",
       "skill_name": "review-yaml-category",
       "yaml_path": "reviews/structured/20261025T055000Z-streptomyces-youssoufiensis-youssoufene-cohort/review.yaml",
-      "yaml_sha256": "d818fb3426e94792c6072e382dbec97f2726afda45bac54c060ee232ad35cca9",
+      "yaml_sha256": "f55bc505b5e614cc3732c6abbabb9216a33a3a8fe2310dfc1adfe5846681c120",
       "markdown_path": "reviews/structured/20261025T055000Z-streptomyces-youssoufiensis-youssoufene-cohort/review.md",
-      "markdown_sha256": "63af9a3cf0624d51ccb98acf39b9aa81f4a59de6c6e3a697cab71c78b91a7c94",
+      "markdown_sha256": "2b336c1b8dbb49abb7993f789abda2de10f8bb803b9e8446cb6b88e63cd5b9c0",
       "target_records_count": 5,
       "targets": [
         {
           "record_path": "data/natural_products/polyketides/youssoufene-a1.yaml",
-          "record_id": "NPATLAS:NPA029448",
-          "record_sha256": "37079438f94fa09545861b4e162e59d2957b24c38e0449fa72d586e8969bbbd3",
+          "record_id": "naturalproductmech:mibig-78ea4c55fb",
+          "record_sha256": "7bb8f5d4d4bd5e30083973a8a2e41adefe24b1a77f0ad34480e9ba0b15f368a6",
           "mibig_rows": [
             "BGC0002510:1",
             "BGC0002547:1"
           ],
           "mibig_row_sha256s": [
-            "2c395dc945037f9028922f784805c83c5c0c988a556fa3d485431886f8ed54bf",
-            "5c7822f950efafabcb17c5dd3dd045bf465548f85f27ed316180eb260853eb56"
+            "c3e0435917bbd397fd24aea07e7c3b9d3ab5e82f9c78ef6da21bb8ea14af03a5",
+            "1d48b2327fd1ff6df8dacc84f722e6dcef3c298cafc6442b51a0d2190b11547f"
           ],
           "verdict": "needs_curation",
           "highest_finding_severity": "major",
-          "native_verdict": "SEEDED retained; YsfA..YsfK pathway and causal graph verified; OUC6819 strain qualification (F-YSF-001) and Liu et al. 2021 evidence note correction (F-YSF-002) queued for Stage 5"
+          "native_verdict": "SEEDED retained; 4-step biosynthetic_pathway and 13-node / 12-edge BIOSYNTHESIS graph verified; OUC6819 strain qualification (F-YSF-001) and Liu et al. 2021 evidence note correction (F-YSF-002) queued for Stage 5"
         },
         {
           "record_path": "data/natural_products/unclassified/youssoufene-b1.yaml",
-          "record_id": "NPATLAS:NPA029449",
-          "record_sha256": "be673d3142661bf64d7f7b3e82b4daaf66e1d3679e8e9472617958b94c5145a9",
+          "record_id": "naturalproductmech:mibig-ccb60942af",
+          "record_sha256": "ea395342b0f7b1b4b8038e7a731c274e1c1ceb2645f2ea8e94ac5ba8613b7746",
           "mibig_rows": [
             "BGC0002510:2",
             "BGC0002547:2"
           ],
           "mibig_row_sha256s": [
-            "a3a30df84f4098f94b63761f87141daecbd28c61c1d59326bb28044e348bf2d9",
-            "fc4484d95a6386510ca70877a8b3453852d367cb04b5f5c52b2a4754ab2bc0f1"
+            "21a73e5ac9b76d1786526d9777da8ba9b88dc0aa1a420232f6e13936cf13b838",
+            "acd26c9cf5030b8b06c4534bb1919c878ff432bb8bfdf1d87f7c0476926c81d4"
           ],
           "verdict": "needs_curation",
           "highest_finding_severity": "major",
-          "native_verdict": "SEEDED retained; YsfA..YsfK pathway and causal graph verified; OUC6819 strain qualification (F-YSF-001) and Liu et al. 2021 evidence note correction (F-YSF-002) queued for Stage 5"
+          "native_verdict": "SEEDED retained; 4-step biosynthetic_pathway and 13-node / 12-edge BIOSYNTHESIS graph verified; OUC6819 strain qualification (F-YSF-001) and Liu et al. 2021 evidence note correction (F-YSF-002) queued for Stage 5"
         },
         {
           "record_path": "data/natural_products/unclassified/youssoufene-b2.yaml",
-          "record_id": "NPATLAS:NPA029450",
-          "record_sha256": "6ed1efda48d274e53e6372da3abccdf3f15b910d30ebde17d176ab63b81bc7fb",
+          "record_id": "naturalproductmech:mibig-cf5248036e",
+          "record_sha256": "00ec251535ea020620a618880c862ff19eed67e5468f87a65bc227637cdede23",
           "mibig_rows": [
             "BGC0002510:3",
             "BGC0002547:3"
           ],
           "mibig_row_sha256s": [
-            "ca66021e3f161f0e3929acfc653e52a080ba16106687f7c2b0a09a43d2ecdb85",
-            "3f82114b8bd1ce4ca94132a648ebcb5e8c28d967549844ca90e2bc8ef2a9ff64"
+            "c641bc134e699b6a5725a08aa96bc5245ba988918655e55306d11033a1a3552d",
+            "ea799308305a5d8e5c0a42a0895dc7ee080379a727a26269e01829e6530ffdb7"
           ],
           "verdict": "needs_curation",
           "highest_finding_severity": "major",
-          "native_verdict": "SEEDED retained; YsfA..YsfK pathway and causal graph verified; OUC6819 strain qualification (F-YSF-001) and Liu et al. 2021 evidence note correction (F-YSF-002) queued for Stage 5"
+          "native_verdict": "SEEDED retained; 4-step biosynthetic_pathway and 13-node / 12-edge BIOSYNTHESIS graph verified; OUC6819 strain qualification (F-YSF-001) and Liu et al. 2021 evidence note correction (F-YSF-002) queued for Stage 5"
         },
         {
           "record_path": "data/natural_products/unclassified/youssoufene-b3.yaml",
-          "record_id": "NPATLAS:NPA029451",
-          "record_sha256": "d2db6b397f7c148019450dbca660f47b27262a2ad95e5c7874b686cf92e7af37",
+          "record_id": "naturalproductmech:mibig-f827d9f550",
+          "record_sha256": "65059808b4f28c4fc23f5fbf9b2e4390443c0f59477e4428c998cfee3c0020bc",
           "mibig_rows": [
             "BGC0002510:4",
             "BGC0002547:4"
           ],
           "mibig_row_sha256s": [
-            "5be1663df3c57503f44483f712f2e0f6d083135ec73ce18e2b215ab14046d910",
-            "ff23718d3540a5713726c8c30f3d442343892df03be1d91a03571a7ec1c8f9fa"
+            "3ee732419ebcefc2eb1947c0a3726c2957b24dc9b5c6fa9fb4f16060246049cb",
+            "e9c6f5c63e79b21bdba197184998ff4583f3d324777d335c5047311056715007"
           ],
           "verdict": "needs_curation",
           "highest_finding_severity": "major",
-          "native_verdict": "SEEDED retained; YsfA..YsfK pathway and causal graph verified; OUC6819 strain qualification (F-YSF-001) and Liu et al. 2021 evidence note correction (F-YSF-002) queued for Stage 5"
+          "native_verdict": "SEEDED retained; 4-step biosynthetic_pathway and 13-node / 12-edge BIOSYNTHESIS graph verified; OUC6819 strain qualification (F-YSF-001) and Liu et al. 2021 evidence note correction (F-YSF-002) queued for Stage 5"
         },
         {
           "record_path": "data/natural_products/unclassified/youssoufene-b4.yaml",
-          "record_id": "NPATLAS:NPA029452",
-          "record_sha256": "4b0542c8abbb31b467910035bcfe060d20e75a16a9f3e78a53d09369d6336bc0",
+          "record_id": "naturalproductmech:mibig-18ba3c758c",
+          "record_sha256": "f6bf3a389fd5b5f5f60b7d08e922a450cf1409327db785f727b117d4165ff5a7",
           "mibig_rows": [
             "BGC0002510:5",
             "BGC0002547:5"
           ],
           "mibig_row_sha256s": [
-            "ec2076f98bc4e76fa30e0470c7f232100a2d2f44d8f5d1527c225a198395df42",
-            "09f341de2bd45dc8b57f375890f45646f218c6e0d2e4d3a68dd491deef45d442"
+            "440036d2d8e8c6821c0e40687d768d801b49d888565b9f72765c290bc7eb1c5a",
+            "deba7c3574dc3b75f9d6045232b4f21275bf1a38eddc988bc837e8490db9da00"
           ],
           "verdict": "needs_curation",
           "highest_finding_severity": "major",
-          "native_verdict": "SEEDED retained; YsfA..YsfK pathway and causal graph verified; OUC6819 strain qualification (F-YSF-001) and Liu et al. 2021 evidence note correction (F-YSF-002) queued for Stage 5"
+          "native_verdict": "SEEDED retained; 4-step biosynthetic_pathway and 13-node / 12-edge BIOSYNTHESIS graph verified; OUC6819 strain qualification (F-YSF-001) and Liu et al. 2021 evidence note correction (F-YSF-002) queued for Stage 5"
         }
       ]
     },
@@ -161,26 +161,26 @@
       "kind": "record",
       "skill_name": "review-yaml-record",
       "yaml_path": "reviews/structured/20261025T055005Z-youssoufene-a1-record-review/review.yaml",
-      "yaml_sha256": "9f4b91356099846108b911750728343e7e95f960a4d54d4b3f83bcfe9e07d62f",
+      "yaml_sha256": "cd4bed0269fe80314aee0757ab8369985115cedc5607a1520babb6301a2a3cb7",
       "markdown_path": "reviews/structured/20261025T055005Z-youssoufene-a1-record-review/review.md",
-      "markdown_sha256": "24a4f4ec3ce42f57affef7dab4113d78bb3b348c100309cc1761b5c03908ced5",
+      "markdown_sha256": "3f122881a3f3a11eeb2db6a90f74ae76f26e71cfa64923a0528b88c281fff5e5",
       "target_records_count": 1,
       "targets": [
         {
           "record_path": "data/natural_products/polyketides/youssoufene-a1.yaml",
-          "record_id": "NPATLAS:NPA029448",
-          "record_sha256": "37079438f94fa09545861b4e162e59d2957b24c38e0449fa72d586e8969bbbd3",
+          "record_id": "naturalproductmech:mibig-78ea4c55fb",
+          "record_sha256": "7bb8f5d4d4bd5e30083973a8a2e41adefe24b1a77f0ad34480e9ba0b15f368a6",
           "mibig_rows": [
             "BGC0002510:1",
             "BGC0002547:1"
           ],
           "mibig_row_sha256s": [
-            "2c395dc945037f9028922f784805c83c5c0c988a556fa3d485431886f8ed54bf",
-            "5c7822f950efafabcb17c5dd3dd045bf465548f85f27ed316180eb260853eb56"
+            "c3e0435917bbd397fd24aea07e7c3b9d3ab5e82f9c78ef6da21bb8ea14af03a5",
+            "1d48b2327fd1ff6df8dacc84f722e6dcef3c298cafc6442b51a0d2190b11547f"
           ],
           "verdict": "needs_curation",
           "highest_finding_severity": "major",
-          "native_verdict": "SEEDED retained; YsfA..YsfK pathway and causal graph verified; OUC6819 strain qualification (F-YSF-001) and Liu et al. 2021 evidence note correction (F-YSF-002) queued for Stage 5"
+          "native_verdict": "SEEDED retained; OUC6819 producer strain qualification (BGC0002547:1) and Liu et al. 2021 author attribution fix on DOI:10.1002/anie.202007777 evidence notes queued for Stage 5"
         }
       ]
     }

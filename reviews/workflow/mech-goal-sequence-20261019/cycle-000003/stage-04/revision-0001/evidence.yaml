@@ -9,8 +9,8 @@ outcome: completed
 summary: 'Completed Stage 4 (record_review) for run mech-goal-sequence-20261019, cycle 3 at frozen baseline d14547bc76e0582aca15eeb073e203d28ea7548e
   across all 3,362 eligible YAML records (3,116 natural product owner YAML records, including 290 with inline causal_graphs
   and 27 with causal_graph_refs, plus 246 standalone causal graph components in data/causal_graphs/). Persisted two validated
-  native structured review bundles (20261025T055000Z-streptomyces-youssoufiensis-youssoufene-cohort [d818fb3426e94792c6072e382dbec97f2726afda45bac54c060ee232ad35cca9]
-  and 20261025T055005Z-youssoufene-a1-record-review [9f4b91356099846108b911750728343e7e95f960a4d54d4b3f83bcfe9e07d62f]) plus
+  native structured review bundles (20261025T055000Z-streptomyces-youssoufiensis-youssoufene-cohort [f55bc505b5e614cc3732c6abbabb9216a33a3a8fe2310dfc1adfe5846681c120]
+  and 20261025T055005Z-youssoufene-a1-record-review [cd4bed0269fe80314aee0757ab8369985115cedc5607a1520babb6301a2a3cb7]) plus
   the hash-bound parent workflow review report, machine-readable findings, and coverage ledger, preserving three new open
   findings (F-YSF-001, F-YSF-002, F-YSF-003) and carrying forward two deferred findings (F-PEN-003, #1015; F-PIK-DES-003,
   #1012) for Stage 5 grouped remediation.'
@@ -21,13 +21,13 @@ previous_evidence:
   sha256: 8b791c06d925b39a701c2f9e0919fe64963bbf92461ac850208539f0efdcd3e5
 artifacts:
 - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-04/revision-0001/review_report.md
-  sha256: 7b2c14a473ab6ae982dc2937b0130f6ddc9bcc14e45b9cc8d2bfa0ccb5ea7316
+  sha256: 48f6d01c984b525885d6bda7dd03e52d0b381dc7a59180bfb0b09c30f070a988
   kind: review_report
 - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-04/revision-0001/review_findings.yaml
-  sha256: 59175c236c6cc22581df14287467ab9031023b589dd8989c3edbdb539ba7d23b
+  sha256: 9a3ff84a5512b79dcd4961b01b8381c3fc2d7569a1b286c683b317a1519f5c69
   kind: review_findings
 - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-04/revision-0001/coverage.json
-  sha256: eea1fd4ba3e1f375f77fb870e9d84b35f420298684c4ccb9f20833a21537302e
+  sha256: bb8b1404f63c858daa85fabc1ac6431a9dafdfa83f9c4ed9434606abaaa96f31
   kind: supporting
 findings:
 - finding_id: F-YSF-001

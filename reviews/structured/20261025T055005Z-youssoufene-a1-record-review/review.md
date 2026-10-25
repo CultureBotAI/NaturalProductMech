@@ -11,13 +11,13 @@
 
 ## Summary
 
-Complete single-record scientific review of data/natural_products/polyketides/youssoufene-a1.yaml (naturalproductmech:mibig-78ea4c55fb, youssoufene A1), seeded from MIBiG BGC0002547:1 (MN844187.1) and BGC0002510:1 (MT459140.1). Confirms exact stereochemical structure (PBGNPVWDTRYFBH-GSOXOQHNSA-N), NPClassifier POLYKETIDES (Linear polyketides) classification, and the 5-step YsfA..YsfL (UniProtKB:A0A6B9HE53 through UniProtKB:A0A6B9HFA3) biosynthetic_pathway and 21-node / 22-edge BIOSYNTHESIS causal graph culminating in YsfG (UniProtKB:A0A6B9HED2) radical [4+2] dimerization of youssoufene B1 to youssoufene A1, while identifying three open findings for Stage 5: (1) missing OUC6819 strain qualification on producer_organisms[0] (NCBITaxon:654447, BGC0002547:1, MN844187.1, PMID:31891272 / DOI:10.1021/acs.orglett.9b04559) (F-YSFA1-001), (2) misattributed 'Deng et al.' author citation across all 16 evidence notes citing DOI:10.1002/anie.202007777 (authored by Liu et al. 2021, PMID:33155752) (F-YSFA1-002), and (3) UNGROUNDED ComplexPortal/RHEA status on heterodimeric KS/CLF complexes and genus-level NCBITaxon:1931 on BGC0002510:1 (F-YSFA1-003).
+Complete single-record scientific review of data/natural_products/polyketides/youssoufene-a1.yaml (naturalproductmech:mibig-78ea4c55fb, youssoufene A1), seeded from MIBiG BGC0002547:1 (MN844187.1) and BGC0002510:1 (MT459140.1). Confirms exact stereochemical structure (PBGNPVWDTRYFBH-GSOXOQHNSA-N), NPClassifier POLYKETIDES (Linear polyketides) classification, and the 4-step biosynthetic_pathway (step 1: YsfB/YsfC KS/CLF complex; step 2: YsfD/YsfE KS/CLF complex; step 3: YsfG isomerase [NCBIProtein:QHB92594.1]; step 4: YsfJ/YsfK KS/CLF complex; with exact A1 dimerization and release left unexpanded) and 13-node / 12-edge BIOSYNTHESIS causal graph grounding 7 ENZYME nodes (nodes[0..6]: YsfB NCBIProtein:QHB92589.1 / UniParc:UPI00131FE52F, YsfC NCBIProtein:QHB92590.1 / UniParc:UPI00131FCA94, YsfD NCBIProtein:QHB92591.1 / UniParc:UPI00131FC4C1, YsfE NCBIProtein:QHB92592.1 / UniParc:UPI00131FAF34, YsfG NCBIProtein:QHB92594.1 / UniParc:UPI001320438E, YsfJ NCBIProtein:QHB92597.1 / UniParc:UPI00131F724F, YsfK NCBIProtein:QHB92598.1 / UniParc:UPI0013202848), while identifying three open findings for Stage 5: (1) missing OUC6819 strain qualification on producer_organisms[0] (NCBITaxon:654447, BGC0002547:1, MN844187.1, PMID:31891272 / DOI:10.1021/acs.orglett.9b04559) (F-YSFA1-001), (2) misattributed 'Deng et al.' author citation across all 16 evidence notes citing DOI:10.1002/anie.202007777 (authored by Liu et al. 2021, PMID:33155752) (F-YSFA1-002), and (3) UNGROUNDED ComplexPortal/RHEA status on heterodimeric KS/CLF complexes and genus-level NCBITaxon:1931 on BGC0002510:1 (F-YSFA1-003).
 
 ## Scope And Provenance
 
-Complete single-record scientific review of naturalproductmech:mibig-78ea4c55fb (data/natural_products/polyketides/youssoufene-a1.yaml) across chemical identity, NPClassifier classification, producer organisms, occurrences, biosynthetic gene clusters (BGC0002547 and BGC0002510), 5-step biosynthetic_pathway, 21-node / 22-edge BIOSYNTHESIS causal graph, and curation history.
+Complete single-record scientific review of naturalproductmech:mibig-78ea4c55fb (data/natural_products/polyketides/youssoufene-a1.yaml) across chemical identity, NPClassifier classification, producer organisms, occurrences, biosynthetic gene clusters (BGC0002547 and BGC0002510), 4-step biosynthetic_pathway, 13-node / 12-edge BIOSYNTHESIS causal graph, and curation history.
 
-Selection: Terminal dimeric end-product record of the Streptomyces youssoufiensis OUC6819 youssoufene pathway, selected to audit its 5-step YsfA..YsfL + YsfG radical [4+2] dimerization mechanism graph, producer strain provenance, and claim-level citation accuracy.
+Selection: Terminal dimeric end-product record of the Streptomyces youssoufiensis OUC6819 youssoufene pathway, selected to audit its 4-step biosynthetic_pathway and 13-node / 12-edge BIOSYNTHESIS causal graph (YsfB/YsfC, YsfD/YsfE, YsfG isomerase, YsfJ/YsfK), producer strain provenance, and claim-level citation accuracy.
 Coverage: full; 1 reviewed / 1 in the declared population.
 Source: git_commit at Git base d14547bc76e0582aca15eeb073e203d28ea7548e.
 Working-tree hashes do not imply those bytes were committed.
@@ -32,21 +32,21 @@ Working-tree hashes do not imply those bytes were committed.
 | --- | --- | --- | --- | --- |
 | Strict schema and semantic validation (youssoufene-a1.yaml) | passed | True | naturalproductmech:mibig-78ea4c55fb | youssoufene-a1.yaml passed strict LinkML and semantic validation with 0 ERROR rows. |
 | Full-corpus lockfile and filing verification | passed | True | naturalproductmech:mibig-78ea4c55fb | Confirmed naturalproductmech:mibig-78ea4c55fb is filed at data/natural_products/polyketides/youssoufene-a1.yaml in exact agreement with data/natural_products/PATHS.tsv. |
-| Full-corpus ontology ID-label correspondence | passed | True | naturalproductmech:mibig-78ea4c55fb | All NCBITaxon (NCBITaxon:654447, NCBITaxon:1931), UniProtKB (A0A6B9HE53 through A0A6B9HFA3), GO, and ChEBI (CHEBI:57315) terms on youssoufene-a1.yaml resolve to canonical ontology labels. |
+| Full-corpus ontology ID-label correspondence | passed | True | naturalproductmech:mibig-78ea4c55fb | All NCBITaxon (NCBITaxon:654447, NCBITaxon:1931) and GO (GO:0044550) terms on youssoufene-a1.yaml resolve to canonical ontology labels. |
 
 ## Scientific And Domain Assessments
 
-### Exact dimeric structure, NPClassifier POLYKETIDES filing, and 5-step YsfA..YsfL + YsfG biosynthetic graph
+### Exact dimeric structure, NPClassifier POLYKETIDES filing, and 4-step biosynthetic_pathway / 13-node BIOSYNTHESIS graph
 
 identity: supported. Targets: naturalproductmech:mibig-78ea4c55fb.
 
-naturalproductmech:mibig-78ea4c55fb accurately represents dimeric youssoufene A1 (PBGNPVWDTRYFBH-GSOXOQHNSA-N), files under POLYKETIDES at data/natural_products/polyketides/youssoufene-a1.yaml, and carries a verified 5-step biosynthetic_pathway and 21-node / 22-edge BIOSYNTHESIS causal graph grounding all 12 YsfA..YsfL proteins from Streptomyces youssoufiensis OUC6819.
+naturalproductmech:mibig-78ea4c55fb accurately represents dimeric youssoufene A1 (PBGNPVWDTRYFBH-GSOXOQHNSA-N), files under POLYKETIDES at data/natural_products/polyketides/youssoufene-a1.yaml, and carries a verified 4-step biosynthetic_pathway and 13-node / 12-edge BIOSYNTHESIS causal graph grounding 7 ENZYME nodes (YsfB, YsfC, YsfD, YsfE, YsfG, YsfJ, YsfK; NCBIProtein:QHB92589.1..QHB92592.1, QHB92594.1, QHB92597.1, QHB92598.1) from Streptomyces youssoufiensis OUC6819.
 
 ### Missing OUC6819 strain qualifier on producer_organisms[0] (NCBITaxon:654447, BGC0002547:1)
 
 completeness: concern. Targets: naturalproductmech:mibig-78ea4c55fb.
 
-Because BGC0002547:1 is not yet in curation/mibig_producer_strains.tsv, producer_organisms[0] (mibig:BGC0002547, MN844187.1) omits strain: OUC6819 even though MN844187.1, Li et al. 2020 (PMID:31891272), Liu et al. 2021 (PMID:33155752), and the record's own pathway/graph notes explicitly identify strain OUC6819.
+Because BGC0002547:1 is not yet in curation/mibig_producer_strains.tsv, producer_organisms[0] (mibig:BGC0002547, MN844187.1) omits strain: OUC6819 even though MN844187.1, Li et al. 2020 (PMID:31891272), Liu et al. 2021 (PMID:33155752), and the record's own causal_graphs[0].nodes[0..6].protein_examples[0].strain explicitly identify strain OUC6819.
 
 ### Misattributed 'Deng et al.' citation across 16 evidence notes citing DOI:10.1002/anie.202007777
 
@@ -58,7 +58,7 @@ All 4 evidence notes in biosynthetic_pathway[0..3].evidence[0].notes and 12 evid
 
 representation: concern. Targets: naturalproductmech:mibig-78ea4c55fb.
 
-Heterodimeric PROTEIN_COMPLEX nodes ysfbc_ks_clf, ysfde_ks_clf, and ysfjk_ks_clf remain UNGROUNDED at the complex level (with subunit accessions in protein_examples) and steps 1-5 omit RHEA enzyme_id due to ComplexPortal/RHEA scope limits; producer_organisms[1] (NCBITaxon:1931, BGC0002510:1, MT459140.1, PMID:32860295) remains genus-level without strain.
+Heterodimeric PROTEIN_COMPLEX nodes ysfbc_ks_clf, ysfde_ks_clf, and ysfjk_ks_clf remain UNGROUNDED at the complex level (with subunit ENZYME nodes[0..3, 5..6] carrying grounding.id and protein_examples and connecting via 'is subunit of' edges[0..5]), steps 1, 2, and 4 omit complex enzyme_id and steps 1-4 omit RHEA reaction_id due to ComplexPortal/RHEA scope limits; producer_organisms[1] (NCBITaxon:1931, BGC0002510:1, MT459140.1, PMID:32860295) remains genus-level without strain.
 
 ## Findings
 
@@ -78,7 +78,7 @@ In youssoufene-a1.yaml, biosynthetic_pathway[0..3].evidence[0].notes (4 items) a
 
 minor / open / confirmed; issue key: youssoufene-cohort-npclassifier-ks-clf-and-bgc0002510-boundaries.
 
-Heterodimeric PROTEIN_COMPLEX nodes ysfbc_ks_clf, ysfde_ks_clf, and ysfjk_ks_clf remain UNGROUNDED at the complex level (with subunit proteins grounded in protein_examples), biosynthetic_pathway steps omit RHEA enzyme_id, and producer_organisms[1] (NCBITaxon:1931, BGC0002510:1, MT459140.1, PMID:32860295) remains genus-level without strain due to upstream ComplexPortal/RHEA and INSDC/PubMed coverage boundaries.
+Heterodimeric PROTEIN_COMPLEX nodes ysfbc_ks_clf (nodes[7]), ysfde_ks_clf (nodes[8]), and ysfjk_ks_clf (nodes[9]) remain UNGROUNDED at the complex level (while subunit ENZYME nodes[0..3, 5..6] carry NCBIProtein/UniParc groundings and protein_examples and connect via 'is subunit of' edges[0..5]), biosynthetic_pathway steps 1, 2, and 4 omit complex enzyme_id and steps 1-4 omit RHEA reaction_id, and producer_organisms[1] (NCBITaxon:1931, BGC0002510:1, MT459140.1, PMID:32860295) remains genus-level without strain due to upstream ComplexPortal/RHEA and INSDC/PubMed coverage boundaries.
 
 ## Recommended Actions And Acceptance Checks
 
@@ -98,7 +98,7 @@ Replace 'Deng et al.' with 'Liu et al. (2021)' across all 16 evidence notes citi
 
 ### retain-ysfa1-representation-boundaries
 
-Retain UNGROUNDED PROTEIN_COMPLEX status with subunit protein_examples on ysfbc_ks_clf, ysfde_ks_clf, and ysfjk_ks_clf and retain genus-level NCBITaxon:1931 on BGC0002510:1.
+Retain UNGROUNDED PROTEIN_COMPLEX status on ysfbc_ks_clf (nodes[7]), ysfde_ks_clf (nodes[8]), and ysfjk_ks_clf (nodes[9]) with subunit ENZYME nodes[0..3, 5..6] connected via 'is subunit of' edges[0..5], and retain genus-level NCBITaxon:1931 on BGC0002510:1.
 
 - Do not invent ComplexPortal/RHEA identifiers or unverified BGC0002510 strain names.
 
@@ -109,9 +109,9 @@ Retain UNGROUNDED PROTEIN_COMPLEX status with subunit protein_examples on ysfbc_
 
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
-| owner-yaml | data/natural_products/polyketides/youssoufene-a1.yaml; Full YAML record at d14547bc76e0582aca15eeb073e203d28ea7548e | supports | Identifier naturalproductmech:mibig-78ea4c55fb, grounding_status UNGROUNDED, curation_status SEEDED, Standard InChIKey PBGNPVWDTRYFBH-GSOXOQHNSA-N, np_pathway POLYKETIDES (Linear polyketides), two producer_organisms (NCBITaxon:654447 linked to mibig:BGC0002547 and NCBITaxon:1931 linked to mibig:BGC0002510), two BGCs (BGC0002547 MN844187.1 and BGC0002510 MT459140.1), 5-step biosynthetic_pathway, and 21-node / 22-edge BIOSYNTHESIS causal graph (youssoufene-a1-ysf-biosynthesis). |
-| mibig-bgc0002547-2510 | data/raw/mibig_compounds.tsv; BGC0002547:1 row (sha256 1d48b2327fd1ff6df8dacc84f722e6dcef3c298cafc6442b51a0d2190b11547f) and BGC0002510:1 row (sha256 c3e0435917bbd397fd24aea07e7c3b9d3ab5e82f9c78ef6da21bb8ea14af03a5) | partial | Raw rows BGC0002547:1 (MN844187.1:1..35054, NCBITaxon:654447 Streptomyces youssoufiensis, pubmed:31891272) and BGC0002510:1 (MT459140.1:4196..18312, NCBITaxon:1931 Streptomyces sp., pubmed:32860295) both supply the exact dimeric youssoufene A1 SMILES (PBGNPVWDTRYFBH-GSOXOQHNSA-N) without strain qualifiers. |
-| li-2020-liu-2021-literature | DOI:10.1002/anie.202007777; Li et al., Org. Lett. 2020;22(2):704-708 (DOI:10.1021/acs.orglett.9b04559, PMID:31891272, MN844187.1 strain OUC6819) and Liu et al., Angew. Chem. Int. Ed. 2021;60(1):153-158 (DOI:10.1002/anie.202007777, PMID:33155752, authors Zengzhi Liu, Jing Liu, Tingting Li, Huayue Li, Zirong Liu, Yiqian Dong, and Wenli Li) | supports | Li et al. (2020) establish that MN844187.1 (BGC0002547) was sequenced from Streptomyces youssoufiensis OUC6819 and that ΔysfG abolishes dimeric youssoufene A1 while accumulating monomeric youssoufenes B1-B4; Liu et al. (2021) establish the YsfA..YsfL enzymatic steps in S. youssoufiensis OUC6819. |
+| owner-yaml | data/natural_products/polyketides/youssoufene-a1.yaml; Full YAML record at d14547bc76e0582aca15eeb073e203d28ea7548e | supports | Identifier naturalproductmech:mibig-78ea4c55fb, grounding_status MINTED, curation_status SEEDED, Standard InChIKey PBGNPVWDTRYFBH-GSOXOQHNSA-N, np_pathway POLYKETIDES (Linear polyketides), two producer_organisms (NCBITaxon:654447 linked to mibig:BGC0002547 and NCBITaxon:1931 linked to mibig:BGC0002510), two BGCs (BGC0002547 MN844187.1 and BGC0002510 MT459140.1), 4-step biosynthetic_pathway, and 13-node / 12-edge BIOSYNTHESIS causal graph (youssoufene-a1-ysf-biosynthesis). |
+| mibig-bgc0002547-2510 | data/raw/mibig_compounds.tsv; BGC0002547:1 row (sha256 1d48b2327fd1ff6df8dacc84f722e6dcef3c298cafc6442b51a0d2190b11547f) and BGC0002510:1 row (sha256 c3e0435917bbd397fd24aea07e7c3b9d3ab5e82f9c78ef6da21bb8ea14af03a5) | partial | Raw rows BGC0002547:1 (MN844187.1:1..20186, NCBITaxon:654447 Streptomyces youssoufiensis, pubmed:31891272) and BGC0002510:1 (MT459140.1:71..11851, NCBITaxon:1931 Streptomyces sp., pubmed:32860295) both supply the exact dimeric youssoufene A1 SMILES (PBGNPVWDTRYFBH-GSOXOQHNSA-N) without strain qualifiers. |
+| li-2020-liu-2021-literature | DOI:10.1002/anie.202007777; Li et al., Org. Lett. 2020;22(2):704-708 (DOI:10.1021/acs.orglett.9b04559, PMID:31891272, MN844187.1 strain OUC6819) and Liu et al., Angew. Chem. Int. Ed. 2021;60(1):153-158 (DOI:10.1002/anie.202007777, PMID:33155752, authors Zengzhi Liu, Jing Liu, Tingting Li, Huayue Li, Zirong Liu, Yiqian Dong, and Wenli Li) | supports | Li et al. (2020) establish that MN844187.1 (BGC0002547) was sequenced from Streptomyces youssoufiensis OUC6819 and that ΔysfG abolishes dimeric youssoufene A1 while accumulating monomeric youssoufenes B1-B4; Liu et al. (2021) establish the YsfB/YsfC, YsfD/YsfE, YsfG isomerase, and YsfJ/YsfK enzymatic steps in S. youssoufiensis OUC6819. |
 
 ## Limits And Additional Notes
 
@@ -148,15 +148,21 @@ summary: 'Complete single-record scientific review of data/natural_products/poly
   (naturalproductmech:mibig-78ea4c55fb, youssoufene A1), seeded from MIBiG BGC0002547:1
   (MN844187.1) and BGC0002510:1 (MT459140.1). Confirms exact stereochemical structure
   (PBGNPVWDTRYFBH-GSOXOQHNSA-N), NPClassifier POLYKETIDES (Linear polyketides) classification,
-  and the 5-step YsfA..YsfL (UniProtKB:A0A6B9HE53 through UniProtKB:A0A6B9HFA3) biosynthetic_pathway
-  and 21-node / 22-edge BIOSYNTHESIS causal graph culminating in YsfG (UniProtKB:A0A6B9HED2)
-  radical [4+2] dimerization of youssoufene B1 to youssoufene A1, while identifying
-  three open findings for Stage 5: (1) missing OUC6819 strain qualification on producer_organisms[0]
-  (NCBITaxon:654447, BGC0002547:1, MN844187.1, PMID:31891272 / DOI:10.1021/acs.orglett.9b04559)
-  (F-YSFA1-001), (2) misattributed ''Deng et al.'' author citation across all 16 evidence
-  notes citing DOI:10.1002/anie.202007777 (authored by Liu et al. 2021, PMID:33155752)
-  (F-YSFA1-002), and (3) UNGROUNDED ComplexPortal/RHEA status on heterodimeric KS/CLF
-  complexes and genus-level NCBITaxon:1931 on BGC0002510:1 (F-YSFA1-003).'
+  and the 4-step biosynthetic_pathway (step 1: YsfB/YsfC KS/CLF complex; step 2: YsfD/YsfE
+  KS/CLF complex; step 3: YsfG isomerase [NCBIProtein:QHB92594.1]; step 4: YsfJ/YsfK
+  KS/CLF complex; with exact A1 dimerization and release left unexpanded) and 13-node
+  / 12-edge BIOSYNTHESIS causal graph grounding 7 ENZYME nodes (nodes[0..6]: YsfB
+  NCBIProtein:QHB92589.1 / UniParc:UPI00131FE52F, YsfC NCBIProtein:QHB92590.1 / UniParc:UPI00131FCA94,
+  YsfD NCBIProtein:QHB92591.1 / UniParc:UPI00131FC4C1, YsfE NCBIProtein:QHB92592.1
+  / UniParc:UPI00131FAF34, YsfG NCBIProtein:QHB92594.1 / UniParc:UPI001320438E, YsfJ
+  NCBIProtein:QHB92597.1 / UniParc:UPI00131F724F, YsfK NCBIProtein:QHB92598.1 / UniParc:UPI0013202848),
+  while identifying three open findings for Stage 5: (1) missing OUC6819 strain qualification
+  on producer_organisms[0] (NCBITaxon:654447, BGC0002547:1, MN844187.1, PMID:31891272
+  / DOI:10.1021/acs.orglett.9b04559) (F-YSFA1-001), (2) misattributed ''Deng et al.''
+  author citation across all 16 evidence notes citing DOI:10.1002/anie.202007777 (authored
+  by Liu et al. 2021, PMID:33155752) (F-YSFA1-002), and (3) UNGROUNDED ComplexPortal/RHEA
+  status on heterodimeric KS/CLF complexes and genus-level NCBITaxon:1931 on BGC0002510:1
+  (F-YSFA1-003).'
 source:
   git_revision: d14547bc76e0582aca15eeb073e203d28ea7548e
   state: git_commit
@@ -355,12 +361,12 @@ scope:
   description: Complete single-record scientific review of naturalproductmech:mibig-78ea4c55fb
     (data/natural_products/polyketides/youssoufene-a1.yaml) across chemical identity,
     NPClassifier classification, producer organisms, occurrences, biosynthetic gene
-    clusters (BGC0002547 and BGC0002510), 5-step biosynthetic_pathway, 21-node / 22-edge
+    clusters (BGC0002547 and BGC0002510), 4-step biosynthetic_pathway, 13-node / 12-edge
     BIOSYNTHESIS causal graph, and curation history.
   selection: Terminal dimeric end-product record of the Streptomyces youssoufiensis
-    OUC6819 youssoufene pathway, selected to audit its 5-step YsfA..YsfL + YsfG radical
-    [4+2] dimerization mechanism graph, producer strain provenance, and claim-level
-    citation accuracy.
+    OUC6819 youssoufene pathway, selected to audit its 4-step biosynthetic_pathway
+    and 13-node / 12-edge BIOSYNTHESIS causal graph (YsfB/YsfC, YsfD/YsfE, YsfG isomerase,
+    YsfJ/YsfK), producer strain provenance, and claim-level citation accuracy.
   coverage: full
   population_size: 1
   reviewed_target_ids:
@@ -412,9 +418,8 @@ checks:
   evidence_ids:
   - owner-yaml
   - mibig-bgc0002547-2510
-  summary: All NCBITaxon (NCBITaxon:654447, NCBITaxon:1931), UniProtKB (A0A6B9HE53
-    through A0A6B9HFA3), GO, and ChEBI (CHEBI:57315) terms on youssoufene-a1.yaml
-    resolve to canonical ontology labels.
+  summary: All NCBITaxon (NCBITaxon:654447, NCBITaxon:1931) and GO (GO:0044550) terms
+    on youssoufene-a1.yaml resolve to canonical ontology labels.
   scope_note: 2026-10-25T05:34:49Z..2026-10-25T05:36:50Z; output SHA256 35423598d9ea0c53a374976d422665d7bfaf789855b7fd3357b97c7bc356f816
 evidence:
 - evidence_id: owner-yaml
@@ -424,12 +429,12 @@ evidence:
   accessed_at: '2026-10-25T05:40:00.000000Z'
   support: supports
   snapshot_sha256: 7bb8f5d4d4bd5e30083973a8a2e41adefe24b1a77f0ad34480e9ba0b15f368a6
-  summary: Identifier naturalproductmech:mibig-78ea4c55fb, grounding_status UNGROUNDED,
+  summary: Identifier naturalproductmech:mibig-78ea4c55fb, grounding_status MINTED,
     curation_status SEEDED, Standard InChIKey PBGNPVWDTRYFBH-GSOXOQHNSA-N, np_pathway
     POLYKETIDES (Linear polyketides), two producer_organisms (NCBITaxon:654447 linked
     to mibig:BGC0002547 and NCBITaxon:1931 linked to mibig:BGC0002510), two BGCs (BGC0002547
-    MN844187.1 and BGC0002510 MT459140.1), 5-step biosynthetic_pathway, and 21-node
-    / 22-edge BIOSYNTHESIS causal graph (youssoufene-a1-ysf-biosynthesis).
+    MN844187.1 and BGC0002510 MT459140.1), 4-step biosynthetic_pathway, and 13-node
+    / 12-edge BIOSYNTHESIS causal graph (youssoufene-a1-ysf-biosynthesis).
 - evidence_id: mibig-bgc0002547-2510
   kind: database
   reference: data/raw/mibig_compounds.tsv
@@ -438,8 +443,8 @@ evidence:
   accessed_at: '2026-10-25T05:40:00.000000Z'
   support: partial
   snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
-  summary: Raw rows BGC0002547:1 (MN844187.1:1..35054, NCBITaxon:654447 Streptomyces
-    youssoufiensis, pubmed:31891272) and BGC0002510:1 (MT459140.1:4196..18312, NCBITaxon:1931
+  summary: Raw rows BGC0002547:1 (MN844187.1:1..20186, NCBITaxon:654447 Streptomyces
+    youssoufiensis, pubmed:31891272) and BGC0002510:1 (MT459140.1:71..11851, NCBITaxon:1931
     Streptomyces sp., pubmed:32860295) both supply the exact dimeric youssoufene A1
     SMILES (PBGNPVWDTRYFBH-GSOXOQHNSA-N) without strain qualifiers.
 - evidence_id: li-2020-liu-2021-literature
@@ -454,18 +459,20 @@ evidence:
   summary: Li et al. (2020) establish that MN844187.1 (BGC0002547) was sequenced from
     Streptomyces youssoufiensis OUC6819 and that ΔysfG abolishes dimeric youssoufene
     A1 while accumulating monomeric youssoufenes B1-B4; Liu et al. (2021) establish
-    the YsfA..YsfL enzymatic steps in S. youssoufiensis OUC6819.
+    the YsfB/YsfC, YsfD/YsfE, YsfG isomerase, and YsfJ/YsfK enzymatic steps in S.
+    youssoufiensis OUC6819.
 assessments:
 - assessment_id: identity-and-5step-pathway
   area: identity
-  topic: Exact dimeric structure, NPClassifier POLYKETIDES filing, and 5-step YsfA..YsfL
-    + YsfG biosynthetic graph
+  topic: Exact dimeric structure, NPClassifier POLYKETIDES filing, and 4-step biosynthetic_pathway
+    / 13-node BIOSYNTHESIS graph
   outcome: supported
   summary: naturalproductmech:mibig-78ea4c55fb accurately represents dimeric youssoufene
     A1 (PBGNPVWDTRYFBH-GSOXOQHNSA-N), files under POLYKETIDES at data/natural_products/polyketides/youssoufene-a1.yaml,
-    and carries a verified 5-step biosynthetic_pathway and 21-node / 22-edge BIOSYNTHESIS
-    causal graph grounding all 12 YsfA..YsfL proteins from Streptomyces youssoufiensis
-    OUC6819.
+    and carries a verified 4-step biosynthetic_pathway and 13-node / 12-edge BIOSYNTHESIS
+    causal graph grounding 7 ENZYME nodes (YsfB, YsfC, YsfD, YsfE, YsfG, YsfJ, YsfK;
+    NCBIProtein:QHB92589.1..QHB92592.1, QHB92594.1, QHB92597.1, QHB92598.1) from Streptomyces
+    youssoufiensis OUC6819.
   target_ids:
   - naturalproductmech:mibig-78ea4c55fb
   evidence_ids:
@@ -480,7 +487,8 @@ assessments:
   summary: 'Because BGC0002547:1 is not yet in curation/mibig_producer_strains.tsv,
     producer_organisms[0] (mibig:BGC0002547, MN844187.1) omits strain: OUC6819 even
     though MN844187.1, Li et al. 2020 (PMID:31891272), Liu et al. 2021 (PMID:33155752),
-    and the record''s own pathway/graph notes explicitly identify strain OUC6819.'
+    and the record''s own causal_graphs[0].nodes[0..6].protein_examples[0].strain
+    explicitly identify strain OUC6819.'
   target_ids:
   - naturalproductmech:mibig-78ea4c55fb
   evidence_ids:
@@ -506,10 +514,11 @@ assessments:
     BGC0002510:1
   outcome: concern
   summary: Heterodimeric PROTEIN_COMPLEX nodes ysfbc_ks_clf, ysfde_ks_clf, and ysfjk_ks_clf
-    remain UNGROUNDED at the complex level (with subunit accessions in protein_examples)
-    and steps 1-5 omit RHEA enzyme_id due to ComplexPortal/RHEA scope limits; producer_organisms[1]
-    (NCBITaxon:1931, BGC0002510:1, MT459140.1, PMID:32860295) remains genus-level
-    without strain.
+    remain UNGROUNDED at the complex level (with subunit ENZYME nodes[0..3, 5..6]
+    carrying grounding.id and protein_examples and connecting via 'is subunit of'
+    edges[0..5]), steps 1, 2, and 4 omit complex enzyme_id and steps 1-4 omit RHEA
+    reaction_id due to ComplexPortal/RHEA scope limits; producer_organisms[1] (NCBITaxon:1931,
+    BGC0002510:1, MT459140.1, PMID:32860295) remains genus-level without strain.
   target_ids:
   - naturalproductmech:mibig-78ea4c55fb
   evidence_ids:
@@ -625,18 +634,29 @@ findings:
   certainty: confirmed
   title: UNGROUNDED KS/CLF heterodimer complexes and genus-level NCBITaxon:1931 on
     BGC0002510:1 in youssoufene-a1.yaml
-  description: Heterodimeric PROTEIN_COMPLEX nodes ysfbc_ks_clf, ysfde_ks_clf, and
-    ysfjk_ks_clf remain UNGROUNDED at the complex level (with subunit proteins grounded
-    in protein_examples), biosynthetic_pathway steps omit RHEA enzyme_id, and producer_organisms[1]
-    (NCBITaxon:1931, BGC0002510:1, MT459140.1, PMID:32860295) remains genus-level
-    without strain due to upstream ComplexPortal/RHEA and INSDC/PubMed coverage boundaries.
+  description: Heterodimeric PROTEIN_COMPLEX nodes ysfbc_ks_clf (nodes[7]), ysfde_ks_clf
+    (nodes[8]), and ysfjk_ks_clf (nodes[9]) remain UNGROUNDED at the complex level
+    (while subunit ENZYME nodes[0..3, 5..6] carry NCBIProtein/UniParc groundings and
+    protein_examples and connect via 'is subunit of' edges[0..5]), biosynthetic_pathway
+    steps 1, 2, and 4 omit complex enzyme_id and steps 1-4 omit RHEA reaction_id,
+    and producer_organisms[1] (NCBITaxon:1931, BGC0002510:1, MT459140.1, PMID:32860295)
+    remains genus-level without strain due to upstream ComplexPortal/RHEA and INSDC/PubMed
+    coverage boundaries.
   target_ids:
   - naturalproductmech:mibig-78ea4c55fb
   field_paths:
-  - biosynthetic_pathway[*].enzyme_id
-  - causal_graphs[0].nodes[*].grounding_status
   - producer_organisms[1].taxon_id
   - producer_organisms[1].strain
+  - biosynthetic_pathway[0].enzyme_id
+  - biosynthetic_pathway[0].reaction_id
+  - biosynthetic_pathway[1].enzyme_id
+  - biosynthetic_pathway[1].reaction_id
+  - biosynthetic_pathway[2].reaction_id
+  - biosynthetic_pathway[3].enzyme_id
+  - biosynthetic_pathway[3].reaction_id
+  - causal_graphs[0].nodes[7].grounding_status
+  - causal_graphs[0].nodes[8].grounding_status
+  - causal_graphs[0].nodes[9].grounding_status
   evidence_ids:
   - owner-yaml
   - mibig-bgc0002547-2510
@@ -746,8 +766,9 @@ actions:
     in youssoufene-a1.yaml.
   - Confirm strict validation and verify_corpus pass with 0 errors.
 - action_id: retain-ysfa1-representation-boundaries
-  description: Retain UNGROUNDED PROTEIN_COMPLEX status with subunit protein_examples
-    on ysfbc_ks_clf, ysfde_ks_clf, and ysfjk_ks_clf and retain genus-level NCBITaxon:1931
+  description: Retain UNGROUNDED PROTEIN_COMPLEX status on ysfbc_ks_clf (nodes[7]),
+    ysfde_ks_clf (nodes[8]), and ysfjk_ks_clf (nodes[9]) with subunit ENZYME nodes[0..3,
+    5..6] connected via 'is subunit of' edges[0..5], and retain genus-level NCBITaxon:1931
     on BGC0002510:1.
   finding_ids:
   - F-YSFA1-003

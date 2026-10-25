@@ -11,14 +11,14 @@ native_review_ids:
 native_review_bundles:
 - review_id: 20261025T055000Z-streptomyces-youssoufiensis-youssoufene-cohort
   yaml_path: reviews/structured/20261025T055000Z-streptomyces-youssoufiensis-youssoufene-cohort/review.yaml
-  yaml_sha256: d818fb3426e94792c6072e382dbec97f2726afda45bac54c060ee232ad35cca9
+  yaml_sha256: f55bc505b5e614cc3732c6abbabb9216a33a3a8fe2310dfc1adfe5846681c120
   markdown_path: reviews/structured/20261025T055000Z-streptomyces-youssoufiensis-youssoufene-cohort/review.md
-  markdown_sha256: 63af9a3cf0624d51ccb98acf39b9aa81f4a59de6c6e3a697cab71c78b91a7c94
+  markdown_sha256: 2b336c1b8dbb49abb7993f789abda2de10f8bb803b9e8446cb6b88e63cd5b9c0
 - review_id: 20261025T055005Z-youssoufene-a1-record-review
   yaml_path: reviews/structured/20261025T055005Z-youssoufene-a1-record-review/review.yaml
-  yaml_sha256: 9f4b91356099846108b911750728343e7e95f960a4d54d4b3f83bcfe9e07d62f
+  yaml_sha256: cd4bed0269fe80314aee0757ab8369985115cedc5607a1520babb6301a2a3cb7
   markdown_path: reviews/structured/20261025T055005Z-youssoufene-a1-record-review/review.md
-  markdown_sha256: 24a4f4ec3ce42f57affef7dab4113d78bb3b348c100309cc1761b5c03908ced5
+  markdown_sha256: 3f122881a3f3a11eeb2db6a90f74ae76f26e71cfa64923a0528b88c281fff5e5
 findings:
 - id: F-YSF-001
   title: Missing OUC6819 producer strain qualifications on Streptomyces youssoufiensis (NCBITaxon:654447, BGC0002547:1..5)
@@ -39,19 +39,19 @@ findings:
   source_rows:
   - source: mibig_4.0
     row_id: BGC0002547:1
-    row_sha256: 5c7822f950efafabcb17c5dd3dd045bf465548f85f27ed316180eb260853eb56
+    row_sha256: 1d48b2327fd1ff6df8dacc84f722e6dcef3c298cafc6442b51a0d2190b11547f
   - source: mibig_4.0
     row_id: BGC0002547:2
-    row_sha256: fc4484d95a6386510ca70877a8b3453852d367cb04b5f5c52b2a4754ab2bc0f1
+    row_sha256: acd26c9cf5030b8b06c4534bb1919c878ff432bb8bfdf1d87f7c0476926c81d4
   - source: mibig_4.0
     row_id: BGC0002547:3
-    row_sha256: 3f82114b8bd1ce4ca94132a648ebcb5e8c28d967549844ca90e2bc8ef2a9ff64
+    row_sha256: ea799308305a5d8e5c0a42a0895dc7ee080379a727a26269e01829e6530ffdb7
   - source: mibig_4.0
     row_id: BGC0002547:4
-    row_sha256: ff23718d3540a5713726c8c30f3d442343892df03be1d91a03571a7ec1c8f9fa
+    row_sha256: e9c6f5c63e79b21bdba197184998ff4583f3d324777d335c5047311056715007
   - source: mibig_4.0
     row_id: BGC0002547:5
-    row_sha256: 09f341de2bd45dc8b57f375890f45646f218c6e0d2e4d3a68dd491deef45d442
+    row_sha256: deba7c3574dc3b75f9d6045232b4f21275bf1a38eddc988bc837e8490db9da00
   evidence_refs:
   - PMID:31891272
   - DOI:10.1021/acs.orglett.9b04559
@@ -60,10 +60,11 @@ findings:
   - https://www.ebi.ac.uk/ena/browser/api/embl/MN844187.1
   description: All five youssoufene records (youssoufene-a1.yaml, youssoufene-b1.yaml, youssoufene-b2.yaml, youssoufene-b3.yaml,
     youssoufene-b4.yaml) omit producer_organisms[0].strain on Streptomyces youssoufiensis (NCBITaxon:654447, seeded from mibig:BGC0002547,
-    genbank:MN844187.1) because MIBiG 4.0 reports species-level organism_name='Streptomyces youssoufiensis'. Both primary
-    publications (Li et al., Org. Lett. 2020;22(2):704-708, PMID:31891272, DOI:10.1021/acs.orglett.9b04559; Liu et al., Angew.
-    Chem. Int. Ed. 2021;60(1):153-158, PMID:33155752, DOI:10.1002/anie.202007777) and UniProtKB entries A0A6B9HE60..A0A6B9HIF1
-    from MN844187.1 identify the sequenced producer strain as Streptomyces youssoufiensis OUC6819.
+    genbank:MN844187.1, 1..20186) because MIBiG 4.0 reports species-level organism_name='Streptomyces youssoufiensis'. Both
+    primary publications (Li et al., Org. Lett. 2020;22(2):704-708, PMID:31891272, DOI:10.1021/acs.orglett.9b04559; Liu et
+    al., Angew. Chem. Int. Ed. 2021;60(1):153-158, PMID:33155752, DOI:10.1002/anie.202007777), GenBank MN844187.1 (/strain="OUC6819"),
+    and each record's own causal_graphs[0].nodes[0..6].protein_examples[0].strain ('OUC6819') identify the sequenced producer
+    strain as Streptomyces youssoufiensis OUC6819.
   proposed_remediation: Add five source-pinned rows (BGC0002547:1..5) to curation/mibig_producer_strains.tsv with strain='OUC6819'
     and reference=PMID:31891272, then re-seed in Stage 5 (resolve_review_findings).
 - id: F-YSF-002
@@ -99,19 +100,19 @@ findings:
   source_rows:
   - source: mibig_4.0
     row_id: BGC0002547:1
-    row_sha256: 5c7822f950efafabcb17c5dd3dd045bf465548f85f27ed316180eb260853eb56
+    row_sha256: 1d48b2327fd1ff6df8dacc84f722e6dcef3c298cafc6442b51a0d2190b11547f
   - source: mibig_4.0
     row_id: BGC0002547:2
-    row_sha256: fc4484d95a6386510ca70877a8b3453852d367cb04b5f5c52b2a4754ab2bc0f1
+    row_sha256: acd26c9cf5030b8b06c4534bb1919c878ff432bb8bfdf1d87f7c0476926c81d4
   - source: mibig_4.0
     row_id: BGC0002547:3
-    row_sha256: 3f82114b8bd1ce4ca94132a648ebcb5e8c28d967549844ca90e2bc8ef2a9ff64
+    row_sha256: ea799308305a5d8e5c0a42a0895dc7ee080379a727a26269e01829e6530ffdb7
   - source: mibig_4.0
     row_id: BGC0002547:4
-    row_sha256: ff23718d3540a5713726c8c30f3d442343892df03be1d91a03571a7ec1c8f9fa
+    row_sha256: e9c6f5c63e79b21bdba197184998ff4583f3d324777d335c5047311056715007
   - source: mibig_4.0
     row_id: BGC0002547:5
-    row_sha256: 09f341de2bd45dc8b57f375890f45646f218c6e0d2e4d3a68dd491deef45d442
+    row_sha256: deba7c3574dc3b75f9d6045232b4f21275bf1a38eddc988bc837e8490db9da00
   evidence_refs:
   - PMID:33155752
   - DOI:10.1002/anie.202007777
@@ -140,8 +141,9 @@ findings:
   - data/natural_products/unclassified/youssoufene-b3.yaml
   - data/natural_products/unclassified/youssoufene-b4.yaml
   field_paths:
-  - category
-  - np_classifications[0].pathway_results
+  - np_pathway
+  - np_classification.pathway_results
+  - np_classification.superclass_results
   - producer_organisms[1].taxon_id
   - producer_organisms[1].strain
   - biosynthetic_pathway[0].enzyme_id
@@ -149,36 +151,38 @@ findings:
   - biosynthetic_pathway[1].enzyme_id
   - biosynthetic_pathway[1].reaction_id
   - biosynthetic_pathway[2].reaction_id
+  - biosynthetic_pathway[3].enzyme_id
   - biosynthetic_pathway[3].reaction_id
-  - causal_graphs[0].nodes[2].grounding_status
-  - causal_graphs[0].nodes[3].grounding_status
-  - causal_graphs[0].nodes[4].grounding_status
+  - causal_graphs[0].nodes[7].grounding_status
+  - causal_graphs[0].nodes[8].grounding_status
+  - causal_graphs[0].nodes[9].grounding_status
   source_rows:
   - source: mibig_4.0
     row_id: BGC0002510:1
-    row_sha256: 2c395dc945037f9028922f784805c83c5c0c988a556fa3d485431886f8ed54bf
+    row_sha256: c3e0435917bbd397fd24aea07e7c3b9d3ab5e82f9c78ef6da21bb8ea14af03a5
   - source: mibig_4.0
     row_id: BGC0002510:2
-    row_sha256: a3a30df84f4098f94b63761f87141daecbd28c61c1d59326bb28044e348bf2d9
+    row_sha256: 21a73e5ac9b76d1786526d9777da8ba9b88dc0aa1a420232f6e13936cf13b838
   - source: mibig_4.0
     row_id: BGC0002510:3
-    row_sha256: ca66021e3f161f0e3929acfc653e52a080ba16106687f7c2b0a09a43d2ecdb85
+    row_sha256: c641bc134e699b6a5725a08aa96bc5245ba988918655e55306d11033a1a3552d
   - source: mibig_4.0
     row_id: BGC0002510:4
-    row_sha256: 5be1663df3c57503f44483f712f2e0f6d083135ec73ce18e2b215ab14046d910
+    row_sha256: 3ee732419ebcefc2eb1947c0a3726c2957b24dc9b5c6fa9fb4f16060246049cb
   - source: mibig_4.0
     row_id: BGC0002510:5
-    row_sha256: ec2076f98bc4e76fa30e0470c7f232100a2d2f44d8f5d1527c225a198395df42
+    row_sha256: 440036d2d8e8c6821c0e40687d768d801b49d888565b9f72765c290bc7eb1c5a
   evidence_refs:
   - PMID:31891272
   - PMID:33155752
-  description: 1) NPClassifier (npclassifier.gnps2.org@2026-09-07) classifies dimeric youssoufene-a1.yaml under POLYKETIDES
-    ('Polyphenyl polyketides') while returning empty pathway_results=[] (UNCLASSIFIED) for monomeric youssoufene-b1.yaml..youssoufene-b4.yaml.
-    2) Heterodimeric KS/CLF PROTEIN_COMPLEX nodes (ysfbc_ks_clf, ysfde_ks_clf, ysfjk_ks_clf) remain UNGROUNDED at the complex
-    level (with subunit proteins grounded via protein_examples) and omit scalar enzyme_id on biosynthetic_pathway steps 1-2
-    due to ComplexPortal/RHEA scope boundaries. 3) producer_organisms[1] (NCBITaxon:1931, Streptomyces sp., BGC0002510:1..5,
-    MT459140.1, PMID:32860295) remains genus-level without strain because MT459140.1 and PMID:32860295 are not indexed in
-    ENA/PubMed.
+  description: 1) NPClassifier (npclassifier.gnps2.org@2026-04-06) classifies dimeric youssoufene-a1.yaml under POLYKETIDES
+    ('Linear polyketides') while returning empty pathway_results=[] (UNCLASSIFIED) for monomeric youssoufene-b1.yaml..youssoufene-b4.yaml.
+    2) Heterodimeric KS/CLF PROTEIN_COMPLEX nodes (ysfbc_ks_clf [nodes[7]], ysfde_ks_clf [nodes[8]], ysfjk_ks_clf [nodes[9]])
+    remain UNGROUNDED at the complex level (while subunit ENZYME nodes nodes[0..3, 5..6] carry grounding.id and protein_examples
+    and connect via 'is subunit of' edges edges[0..5]), omit scalar complex enzyme_id on biosynthetic_pathway steps 1, 2,
+    and 4, and omit RHEA reaction_id on steps 1-4 due to ComplexPortal/RHEA scope boundaries. 3) producer_organisms[1] (NCBITaxon:1931,
+    Streptomyces sp., BGC0002510:1..5, MT459140.1:71..11851, PMID:32860295) remains genus-level without strain because MT459140.1
+    and PMID:32860295 are not indexed in ENA/PubMed.
   proposed_remediation: Preserve as an explicit source-limited representation boundary in Stage 5 (resolve_review_findings).
 - id: F-PEN-003
   carried_from: F-PEN-003
