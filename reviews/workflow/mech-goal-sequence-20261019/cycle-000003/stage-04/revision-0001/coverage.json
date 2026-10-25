@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "mech-goal-sequence-20261019",
+  "cycle": 3,
+  "stage_order": 4,
+  "stage_id": "record_review",
+  "revision": 1,
+  "git_commit": "d14547bc76e0582aca15eeb073e203d28ea7548e",
+  "frozen_inventory": {
+    "paths_tsv": "data/natural_products/PATHS.tsv",
+    "paths_tsv_sha256": "7b0f3f72d5ebca52abfc04556563b81bb1303f8ef2cb7792917629ebce2e0670",
+    "owner_records_total": 3116,
+    "owner_records_with_inline_causal_graphs": 290,
+    "owner_records_with_causal_graph_refs": 27,
+    "causal_graph_components_total": 246,
+    "causal_graph_components_manifest_sha256": "f0db8ac7f96b28947fb53eee86c7e2b4148319cba1742a1a6a75686613972fe7",
+    "eligible_records_total": 3362,
+    "reviewed_records_total": 3362,
+    "curation_status_breakdown": {
+      "SEEDED": 3116
+    },
+    "records_with_reviewed_curation_history_action": 11,
+    "corpus_gates": {
+      "verify_corpus": {
+        "records_verified": 3116,
+        "errors": 0,
+        "output_sha256": "c9bcf7add9c5022125581df2e6b486735cd23803e49b73a4a2d6a60b62eebc5e"
+      },
+      "validate_id_label_correspondence": {
+        "canonical_matches": 12619,
+        "synonym_matches": 567,
+        "documented_exceptions": 35,
+        "id_not_found": 0,
+        "label_mismatch_warn_taxon_labels": 499,
+        "skipped_no_adapter": 4898,
+        "output_sha256": "35423598d9ea0c53a374976d422665d7bfaf789855b7fd3357b97c7bc356f816",
+        "report_tsv_sha256": "fd6b4d6d15cac69220daf9027ac7dcb0a252f509e5bc69d831d181d0d6a6bd6b"
+      },
+      "test_graph_components": {
+        "standalone_components_total": 246,
+        "tests_passed": 40,
+        "tests_failed": 0,
+        "output_sha256": "53e35ce114ca8fbf31b29cd0f5c1bac68a5dc6669944111d81e4323f8136b317"
+      },
+      "curation_worklist_review_records": {
+        "total_worklist_items": 8922,
+        "queues_audited": 12,
+        "queues": {
+          "producer-evidence": 2292,
+          "biosynthesis": 1184,
+          "structure-disagreement": 5,
+          "name-disagreement": 67,
+          "unnamed-producer": 39,
+          "shared-structure": 207,
+          "needs-a-name": 18,
+          "occurrence-only": 12,
+          "pathway-ambiguous": 620,
+          "unresolved-taxa": 3329,
+          "stereo-incomplete": 1124,
+          "record-review": 25
+        },
+        "output_sha256": "2c671a47982350c5968f24b020377eb57b876914d4882d295562790da8f3d330"
+      }
+    }
+  },
+  "deep_review_bundles": [
+    {
+      "review_id": "20261025T055000Z-streptomyces-youssoufiensis-youssoufene-cohort",
+      "kind": "category",
+      "skill_name": "review-yaml-category",
+      "yaml_path": "reviews/structured/20261025T055000Z-streptomyces-youssoufiensis-youssoufene-cohort/review.yaml",
+      "yaml_sha256": "d818fb3426e94792c6072e382dbec97f2726afda45bac54c060ee232ad35cca9",
+      "markdown_path": "reviews/structured/20261025T055000Z-streptomyces-youssoufiensis-youssoufene-cohort/review.md",
+      "markdown_sha256": "63af9a3cf0624d51ccb98acf39b9aa81f4a59de6c6e3a697cab71c78b91a7c94",
+      "target_records_count": 5,
+      "targets": [
+        {
+          "record_path": "data/natural_products/polyketides/youssoufene-a1.yaml",
+          "record_id": "NPATLAS:NPA029448",
+          "record_sha256": "37079438f94fa09545861b4e162e59d2957b24c38e0449fa72d586e8969bbbd3",
+          "mibig_rows": [
+            "BGC0002510:1",
+            "BGC0002547:1"
+          ],
+          "mibig_row_sha256s": [
+            "2c395dc945037f9028922f784805c83c5c0c988a556fa3d485431886f8ed54bf",
+            "5c7822f950efafabcb17c5dd3dd045bf465548f85f27ed316180eb260853eb56"
+          ],
+          "verdict": "needs_curation",
+          "highest_finding_severity": "major",
+          "native_verdict": "SEEDED retained; YsfA..YsfK pathway and causal graph verified; OUC6819 strain qualification (F-YSF-001) and Liu et al. 2021 evidence note correction (F-YSF-002) queued for Stage 5"
+        },
+        {
+          "record_path": "data/natural_products/unclassified/youssoufene-b1.yaml",
+          "record_id": "NPATLAS:NPA029449",
+          "record_sha256": "be673d3142661bf64d7f7b3e82b4daaf66e1d3679e8e9472617958b94c5145a9",
+          "mibig_rows": [
+            "BGC0002510:2",
+            "BGC0002547:2"
+          ],
+          "mibig_row_sha256s": [
+            "a3a30df84f4098f94b63761f87141daecbd28c61c1d59326bb28044e348bf2d9",
+            "fc4484d95a6386510ca70877a8b3453852d367cb04b5f5c52b2a4754ab2bc0f1"
+          ],
+          "verdict": "needs_curation",
+          "highest_finding_severity": "major",
+          "native_verdict": "SEEDED retained; YsfA..YsfK pathway and causal graph verified; OUC6819 strain qualification (F-YSF-001) and Liu et al. 2021 evidence note correction (F-YSF-002) queued for Stage 5"
+        },
+        {
+          "record_path": "data/natural_products/unclassified/youssoufene-b2.yaml",
+          "record_id": "NPATLAS:NPA029450",
+          "record_sha256": "6ed1efda48d274e53e6372da3abccdf3f15b910d30ebde17d176ab63b81bc7fb",
+          "mibig_rows": [
+            "BGC0002510:3",
+            "BGC0002547:3"
+          ],
+          "mibig_row_sha256s": [
+            "ca66021e3f161f0e3929acfc653e52a080ba16106687f7c2b0a09a43d2ecdb85",
+            "3f82114b8bd1ce4ca94132a648ebcb5e8c28d967549844ca90e2bc8ef2a9ff64"
+          ],
+          "verdict": "needs_curation",
+          "highest_finding_severity": "major",
+          "native_verdict": "SEEDED retained; YsfA..YsfK pathway and causal graph verified; OUC6819 strain qualification (F-YSF-001) and Liu et al. 2021 evidence note correction (F-YSF-002) queued for Stage 5"
+        },
+        {
+          "record_path": "data/natural_products/unclassified/youssoufene-b3.yaml",
+          "record_id": "NPATLAS:NPA029451",
+          "record_sha256": "d2db6b397f7c148019450dbca660f47b27262a2ad95e5c7874b686cf92e7af37",
+          "mibig_rows": [
+            "BGC0002510:4",
+            "BGC0002547:4"
+          ],
+          "mibig_row_sha256s": [
+            "5be1663df3c57503f44483f712f2e0f6d083135ec73ce18e2b215ab14046d910",
+            "ff23718d3540a5713726c8c30f3d442343892df03be1d91a03571a7ec1c8f9fa"
+          ],
+          "verdict": "needs_curation",
+          "highest_finding_severity": "major",
+          "native_verdict": "SEEDED retained; YsfA..YsfK pathway and causal graph verified; OUC6819 strain qualification (F-YSF-001) and Liu et al. 2021 evidence note correction (F-YSF-002) queued for Stage 5"
+        },
+        {
+          "record_path": "data/natural_products/unclassified/youssoufene-b4.yaml",
+          "record_id": "NPATLAS:NPA029452",
+          "record_sha256": "4b0542c8abbb31b467910035bcfe060d20e75a16a9f3e78a53d09369d6336bc0",
+          "mibig_rows": [
+            "BGC0002510:5",
+            "BGC0002547:5"
+          ],
+          "mibig_row_sha256s": [
+            "ec2076f98bc4e76fa30e0470c7f232100a2d2f44d8f5d1527c225a198395df42",
+            "09f341de2bd45dc8b57f375890f45646f218c6e0d2e4d3a68dd491deef45d442"
+          ],
+          "verdict": "needs_curation",
+          "highest_finding_severity": "major",
+          "native_verdict": "SEEDED retained; YsfA..YsfK pathway and causal graph verified; OUC6819 strain qualification (F-YSF-001) and Liu et al. 2021 evidence note correction (F-YSF-002) queued for Stage 5"
+        }
+      ]
+    },
+    {
+      "review_id": "20261025T055005Z-youssoufene-a1-record-review",
+      "kind": "record",
+      "skill_name": "review-yaml-record",
+      "yaml_path": "reviews/structured/20261025T055005Z-youssoufene-a1-record-review/review.yaml",
+      "yaml_sha256": "9f4b91356099846108b911750728343e7e95f960a4d54d4b3f83bcfe9e07d62f",
+      "markdown_path": "reviews/structured/20261025T055005Z-youssoufene-a1-record-review/review.md",
+      "markdown_sha256": "24a4f4ec3ce42f57affef7dab4113d78bb3b348c100309cc1761b5c03908ced5",
+      "target_records_count": 1,
+      "targets": [
+        {
+          "record_path": "data/natural_products/polyketides/youssoufene-a1.yaml",
+          "record_id": "NPATLAS:NPA029448",
+          "record_sha256": "37079438f94fa09545861b4e162e59d2957b24c38e0449fa72d586e8969bbbd3",
+          "mibig_rows": [
+            "BGC0002510:1",
+            "BGC0002547:1"
+          ],
+          "mibig_row_sha256s": [
+            "2c395dc945037f9028922f784805c83c5c0c988a556fa3d485431886f8ed54bf",
+            "5c7822f950efafabcb17c5dd3dd045bf465548f85f27ed316180eb260853eb56"
+          ],
+          "verdict": "needs_curation",
+          "highest_finding_severity": "major",
+          "native_verdict": "SEEDED retained; YsfA..YsfK pathway and causal graph verified; OUC6819 strain qualification (F-YSF-001) and Liu et al. 2021 evidence note correction (F-YSF-002) queued for Stage 5"
+        }
+      ]
+    }
+  ],
+  "open_findings_summary": {
+    "total_open_findings": 3,
+    "total_deferred_carried_forward_findings": 2,
+    "carry_forward_ids": [
+      "F-YSF-001",
+      "F-YSF-002",
+      "F-YSF-003",
+      "F-PEN-003",
+      "F-PIK-DES-003"
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+schema_version: 1.0.0
+repository_key: naturalproductmech
+github_repository: CultureBotAI/NaturalProductMech
+run_id: mech-goal-sequence-20261019
+cycle: 3
+stage: 4
+revision: 1
+outcome: completed
+summary: 'Completed Stage 4 (record_review) for run mech-goal-sequence-20261019, cycle 3 at frozen baseline d14547bc76e0582aca15eeb073e203d28ea7548e
+  across all 3,362 eligible YAML records (3,116 natural product owner YAML records, including 290 with inline causal_graphs
+  and 27 with causal_graph_refs, plus 246 standalone causal graph components in data/causal_graphs/). Persisted two validated
+  native structured review bundles (20261025T055000Z-streptomyces-youssoufiensis-youssoufene-cohort [d818fb3426e94792c6072e382dbec97f2726afda45bac54c060ee232ad35cca9]
+  and 20261025T055005Z-youssoufene-a1-record-review [9f4b91356099846108b911750728343e7e95f960a4d54d4b3f83bcfe9e07d62f]) plus
+  the hash-bound parent workflow review report, machine-readable findings, and coverage ledger, preserving three new open
+  findings (F-YSF-001, F-YSF-002, F-YSF-003) and carrying forward two deferred findings (F-PEN-003, #1015; F-PIK-DES-003,
+  #1012) for Stage 5 grouped remediation.'
+source_revision: d14547bc76e0582aca15eeb073e203d28ea7548e
+scope_frozen_at: '2026-10-25T05:38:00Z'
+previous_evidence:
+  path: reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/evidence.yaml
+  sha256: 8b791c06d925b39a701c2f9e0919fe64963bbf92461ac850208539f0efdcd3e5
+artifacts:
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-04/revision-0001/review_report.md
+  sha256: 7b2c14a473ab6ae982dc2937b0130f6ddc9bcc14e45b9cc8d2bfa0ccb5ea7316
+  kind: review_report
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-04/revision-0001/review_findings.yaml
+  sha256: 59175c236c6cc22581df14287467ab9031023b589dd8989c3edbdb539ba7d23b
+  kind: review_findings
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-04/revision-0001/coverage.json
+  sha256: eea1fd4ba3e1f375f77fb870e9d84b35f420298684c4ccb9f20833a21537302e
+  kind: supporting
+findings:
+- finding_id: F-YSF-001
+  status: open
+  summary: Missing OUC6819 (BGC0002547:1..5, MN844187.1) producer strain qualifications on five Streptomyces youssoufiensis
+    (NCBITaxon:654447) records (youssoufene-a1.yaml, youssoufene-b1.yaml, youssoufene-b2.yaml, youssoufene-b3.yaml, youssoufene-b4.yaml),
+    directly supported by Li et al. 2020 (PMID:31891272, DOI:10.1021/acs.orglett.9b04559) and Liu et al. 2021 (PMID:33155752,
+    DOI:10.1002/anie.202007777).
+  disposition: Preserve as open for Stage 5 (resolve_review_findings) remediation via curation/mibig_producer_strains.tsv
+    (source_id keys BGC0002547:1..5) and scripts/seed_from_sources.py.
+- finding_id: F-YSF-002
+  status: open
+  summary: Misattributed author citation ('Deng et al.' instead of 'Liu et al.') across 80 curator-owned evidence notes (16
+    per record in biosynthetic_pathway[0..3].evidence[0].notes and causal_graphs[0].edges[0..11].evidence[0].notes) citing
+    DOI:10.1002/anie.202007777 (Angew. Chem. Int. Ed. 2021;60(1):153-158, PMID:33155752, authored by Zengzhi Liu et al., not
+    Zhaoxian Deng et al.) across all five youssoufene records.
+  disposition: Preserve as open for Stage 5 (resolve_review_findings) remediation across all 80 curator-owned evidence notes
+    on youssoufene-a1.yaml and youssoufene-b1.yaml..youssoufene-b4.yaml.
+- finding_id: F-YSF-003
+  status: open
+  summary: Upstream NPClassifier category split (POLYKETIDES on dimeric youssoufene-a1.yaml vs UNCLASSIFIED on monomeric youssoufene-b1.yaml..youssoufene-b4.yaml),
+    heterodimeric KS/CLF PROTEIN_COMPLEX / RHEA grounding boundaries (ysfbc_ks_clf, ysfde_ks_clf, ysfjk_ks_clf), and unindexed
+    BGC0002510 deposit metadata (MT459140.1, PMID:32860295) leaving producer_organisms[1] at genus rank (NCBITaxon:1931) without
+    strain.
+  disposition: Preserve as open for Stage 5 (resolve_review_findings) upstream boundary disposition.
+- finding_id: F-PEN-003
+  carried_from: F-PEN-003
+  issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/1015
+  status: deferred
+  summary: Upstream MIBiG salt and protonation-state encoding on CHEBI:51765 (benzylpenicillin sodium on BGC0000404:1 and
+    BGC0000405:3 vs biological benzylpenicillin(1-) CHEBI:51354) and CHEBI:58572 (monoanion zwitterion on BGC0000405:1 vs
+    neutral ACV CHEBI:28496).
+  disposition: Carried forward from Cycle 2 Stage 5 (#1015); following Cycle 2 Stage 6 implementation of atomic multi-row
+    REPLACE_SHARED_WITH_CHEBI, evaluate in Cycle 3 Stage 5 for data migration or continued boundary disposition.
+- finding_id: F-PIK-DES-003
+  carried_from: F-PIK-DES-003
+  issue_url: https://github.com/CultureBotAI/NaturalProductMech/issues/1012
+  status: deferred
+  summary: Upstream tautomeric/stereochemical separation between desosamine.yaml (ZOYWWAGVGBSJDL-UHFFFAOYSA-N, stereo-incomplete
+    cyclic hexopyranose on BGC0000899:1) and desosamine-2.yaml (CHEBI:32540, VTJCSBJRQLZNHE-CSMHCCOUSA-N, 3-star ChEBI open-chain
+    D-desosamine aldehyde on BGC0000898:1), plus MIBiG 4.0 deposit split of the S. venezuelae ATCC 15439 pik/des cluster across
+    BGC0000094 (AF079138.1) and BGC0000898 (AF079762.1, CLUSTER_UNSTATED).
+  disposition: Carried forward from Cycle 2 Stage 5 (#1012) as a deferred upstream representation boundary until a 3-star
+    stereochemically complete cyclic D-desosamine ChEBI entry and deposit-level AF079762.1/AF079138.1 sequence alignment are
+    available.
+groups: []
+carry_forward_ids:
+- F-YSF-001
+- F-YSF-002
+- F-YSF-003
+- F-PEN-003
+- F-PIK-DES-003
+infra_tasks: []
