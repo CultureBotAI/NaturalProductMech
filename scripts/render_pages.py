@@ -673,6 +673,9 @@ def build_record(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
         "source_concepts": [{**s, "url": source_concept_url(s)}
                             for s in doc.get("source_concepts") or []],
         "history": curation_history(doc),
+        # The record page's own date: when this record last changed, never
+        # the corpus's, so curating one record leaves every other page alone.
+        "updated": latest_event(doc.get("curation_history") or []),
         "record_path": str(path.relative_to(REPO_ROOT)),
         "causal": sum(1 for p in producers if p["causal"]),
         "weak": sum(1 for p in producers if not p["causal"]),
@@ -733,19 +736,23 @@ def corpus_digest(records: list[tuple[Path, dict[str, Any]]]) -> str:
     return h.hexdigest()[:12]
 
 
-def corpus_as_of(records: list[tuple[Path, dict[str, Any]]]) -> str:
-    """The latest curation event across the corpus, as "YYYY-MM-DD HH:MM UTC".
+def latest_event(events: list[Any]) -> str:
+    """The latest of some curation events, as "YYYY-MM-DD HH:MM UTC".
 
     Read from the records, never from the clock, so rendering an unchanged
     corpus twice gives the same bytes and `--check` stays a test of the site.
     Empty when no event carries a usable timestamp: there is then no date to
     claim.
     """
-    moments = [_as_utc(event.get("timestamp"))
-               for _, doc in records for event in doc.get("curation_history") or []
-               if isinstance(event, dict)]
+    moments = [_as_utc(event.get("timestamp")) for event in events if isinstance(event, dict)]
     known = [moment for moment in moments if moment is not None]
     return max(known).strftime("%Y-%m-%d %H:%M UTC") if known else ""
+
+
+def corpus_as_of(records: list[tuple[Path, dict[str, Any]]]) -> str:
+    """The latest curation event across the corpus: the aggregate pages' date."""
+    return latest_event([event for _, doc in records
+                         for event in doc.get("curation_history") or []])
 
 
 #: How the corpus is produced, quoted from README.md's status section rather
@@ -865,7 +872,11 @@ def build(out_dir: Path) -> tuple[int, int]:
     digest = corpus_digest(records)
     gen_on = retrieved_on()
     provenance = f"{len(records)} records · {gen_on} · corpus SHA-256 {digest}"
-    # Every page's footer: the dated version of the corpus it was built from.
+    # The aggregate pages' footer: the dated version of the corpus they list.
+    # Record pages and the not-found page never carry it. A corpus-wide date,
+    # count or digest on every record page would rewrite all of them on each
+    # curation commit, and every concurrent record PR would conflict on them;
+    # a record page states when its own record last changed instead.
     common = {"build_provenance": provenance, "corpus_as_of": corpus_as_of(records)}
     schema = schema_reference()
     statuses = enum_values(schema, "CurationStatusEnum")
@@ -937,7 +948,7 @@ def build(out_dir: Path) -> tuple[int, int]:
     (out_dir / "schema.html").write_text(env.get_template("schema.html").render(
         root="", schema=schema, repo_url=REPO_URL, **common), encoding="utf-8")
     (out_dir / "404.html").write_text(env.get_template("not_found.html").render(
-        root=SITE_BASE, **common), encoding="utf-8")
+        root=SITE_BASE), encoding="utf-8")
 
     # The corpus map, when its JSON has been built. Committed and small, so the
     # site renders it whenever it is there and skips it otherwise — a checkout
@@ -1014,7 +1025,7 @@ def build(out_dir: Path) -> tuple[int, int]:
         for record in pathway["records"]:
             (directory / f"{record['slug']}.html").write_text(
                 record_template.render(root="../", r=record, own_pages=href_by_identifier,
-                                       status_meanings=status_meanings, **common),
+                                       status_meanings=status_meanings),
                 encoding="utf-8")
             written += 1
     return written, len(pathways)

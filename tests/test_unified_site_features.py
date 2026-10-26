@@ -450,15 +450,78 @@ def test_corpus_digest_moves_when_record_content_does():
             != site.corpus_digest([(Path("one.yaml"), curated)]))
 
 
-def test_every_page_type_footer_states_the_corpus_date(loaded):
+def footer(text: str) -> str:
+    return between(text, '<footer class="site">', "</footer>")
+
+
+def test_aggregate_pages_date_the_corpus_and_record_pages_date_their_record(loaded, corpus):
     stamp = site.corpus_as_of(loaded)
     assert re.fullmatch(r"20[0-9]{2}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2} UTC", stamp)
-    pages = ["index.html", "browse.html", "schema.html", "404.html", "map.html",
-             "chemical-map.html", "sequence-map.html", "alkaloids/index.html",
-             "alkaloids/anisomycin.html"]
-    for rel in pages:
-        assert f"Corpus as of {stamp}." in between(page(rel), '<footer class="site">', "</footer>"), rel
-    assert f"Corpus as of {stamp}." in (REPO_ROOT / "404.html").read_text(encoding="utf-8")
+    for rel in ["index.html", "browse.html", "schema.html", "map.html", "chemical-map.html",
+                "sequence-map.html", "alkaloids/index.html"]:
+        assert f"Corpus as of {stamp}." in footer(page(rel)), rel
+        assert "corpus SHA-256" in footer(page(rel)), rel
+    # Nothing corpus-wide on a record page or the not-found page: no corpus
+    # date, record count, retrieval date or digest.
+    for text in [page("404.html"), (REPO_ROOT / "404.html").read_text(encoding="utf-8"),
+                 *(path.read_text(encoding="utf-8") for path in committed_record_pages()[:200])]:
+        assert not re.search(r"Corpus as of|SHA-256|records ·|retrieved", footer(text))
+    dates = {record["href"]: record["updated"] for _path, _doc, record in corpus}
+    for rel in ["alkaloids/anisomycin.html", "polyketides/rabelomycin.html"]:
+        # Records last curated before the corpus date, so the two cannot be confused.
+        assert dates[rel] and dates[rel] != stamp, rel
+        assert f"Record last updated {dates[rel]}, its latest curation event." in footer(page(rel)), rel
+
+
+def test_a_record_page_does_not_change_when_another_record_does(tmp_path, monkeypatch):
+    """Curating one record rewrites that record's page and the aggregate
+    pages, and leaves every other record page byte-identical."""
+    import yaml
+
+    corpus = tmp_path / "data" / "natural_products"
+
+    def record(identifier, label, key, stamp):
+        return {"identifier": identifier, "label": label, "np_pathway": "POLYKETIDES",
+                "chemical_structure": {"standard_inchi_key": key},
+                "grounding_status": "EXACT", "curation_status": "SEEDED",
+                "curation_history": [{"timestamp": stamp, "curator": "seed_from_sources",
+                                      "action": "SEEDED_FROM_SOURCES",
+                                      "changes": "Seeded from the committed inventories."}]}
+
+    def write(doc, slug):
+        path = corpus / "polyketides" / f"{slug}.yaml"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(yaml.safe_dump(doc, sort_keys=False), encoding="utf-8")
+
+    untouched = record("CHEBI:1", "untouched", "AAAAAAAAAAAAAA-BBBBBBBBBB-N", "2026-09-10T05:54:08Z")
+    curated = record("CHEBI:2", "curated", "CCCCCCCCCCCCCC-DDDDDDDDDD-N", "2026-09-11T05:54:08Z")
+    write(untouched, "untouched")
+    write(curated, "curated")
+    schema = site.schema_reference()  # read from the real schema, before the root moves
+    monkeypatch.setattr(site, "schema_reference", lambda: schema)
+    monkeypatch.setattr(site, "REPO_ROOT", tmp_path)
+    monkeypatch.setattr(site, "CORPUS_DIR", corpus)
+    monkeypatch.setattr(site, "CHEMICAL_MAP_ARTIFACT", tmp_path / "no-chemical-map.json")
+    out = tmp_path / "pages"
+
+    def render():
+        site.build(out)
+        return {path.relative_to(out).as_posix(): path.read_bytes() for path in out.rglob("*.html")}
+
+    before = render()
+    curated["occurrences"] = [{"taxon_id": "NCBITaxon:1883", "taxon_label": "Streptomyces",
+                               "evidence": [{"reference": "PMID:1"}]}]
+    curated["curation_history"].append({"timestamp": "2026-10-30T12:00:00Z", "curator": "codex",
+                                        "action": "RECORD_CURATED", "changes": "Added an occurrence."})
+    write(curated, "curated")
+    after = render()
+
+    assert after["polyketides/untouched.html"] == before["polyketides/untouched.html"]
+    assert after["polyketides/curated.html"] != before["polyketides/curated.html"]
+    assert "Record last updated 2026-10-30 12:00 UTC" in after["polyketides/curated.html"].decode()
+    assert "Corpus as of 2026-09-11 05:54 UTC." in before["index.html"].decode()
+    assert "Corpus as of 2026-10-30 12:00 UTC." in after["index.html"].decode()
+    assert after["404.html"] == before["404.html"]
 
 
 # ---------------------------------------------------------------------------

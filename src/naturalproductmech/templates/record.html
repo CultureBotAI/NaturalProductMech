@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 {% block title %}{{ r.label }} — NaturalProductMech{% endblock %}
+{#- The record's own date, never the corpus's: curating another record must
+    leave this page byte-identical. -#}
+{% block provenance %}{% if r.updated %}Record last updated {{ r.updated }}, its latest curation event. {% endif %}Generated from the committed corpus.{% endblock %}
 {#- Source detail is shown as recorded. A string leaf that is an identifier or a
     URL opens its source, and prose keeps its PMIDs, DOIs and URLs followable. -#}
 {% macro source_fields(value) -%}
